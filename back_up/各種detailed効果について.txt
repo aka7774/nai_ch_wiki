@@ -1,0 +1,117 @@
+**high_qualityタグとニッチ性癖絵の関係
+high_qualityなどのqualityタグは一般常識上望ましくないと思われるものも避けるようになるため、ニッチな性癖絵を生成したい時は{high_quality}等のタグ以上にニッチ系のタグを強調した方が良い事もある
+
+**画質向上に役立つdetailedの修飾語による変化
+検証環境
+NAI diffusion anime (Full)
+Add Quality Tags:無し
+UC:LQ+BA
+STEP:28 Scale:11 SEED:3256579105
+基本プロンプト:The gemstone
+[+]
+{| class="nanj_prompt_table edit sort"
+|~w(600):''プロンプト''|''サンプル''|
+|||
+|||
+|なし&#40;The gemstoneのみ)|https://image02.seesaawiki.jp/n/h/nai_ch/ZE2v5wtXkb.png|
+|detailed|https://image02.seesaawiki.jp/n/h/nai_ch/SQruj7zJaW.png|
+|definition|https://image01.seesaawiki.jp/n/h/nai_ch/JzcTjsCATS.png|
+|best quality|https://image01.seesaawiki.jp/n/h/nai_ch/t6Z9Evb998.png|
+|super quality|https://image02.seesaawiki.jp/n/h/nai_ch/I5B2F7IYGR.png|
+|super high quality|https://image02.seesaawiki.jp/n/h/nai_ch/ktHOGjDU1v.png|
+|high quality|https://image02.seesaawiki.jp/n/h/nai_ch/5WjooEcBTm.png|
+|highly quality|https://image01.seesaawiki.jp/n/h/nai_ch/R8o97FgzO5.png|
+|exquisite|https://image01.seesaawiki.jp/n/h/nai_ch/kkt3091j7_.png|
+|intricate|https://image01.seesaawiki.jp/n/h/nai_ch/v4GwMUxJJ7.png|
+|super intricate|https://image02.seesaawiki.jp/n/h/nai_ch/gQX8ukqBwL.png|
+|ultra intricate|https://image02.seesaawiki.jp/n/h/nai_ch/Vpro1Tnadw.png|
+|ultimated intricate|https://image02.seesaawiki.jp/n/h/nai_ch/2q0u9VAl1o.png|
+|ultimate intricate|https://image01.seesaawiki.jp/n/h/nai_ch/lexW3ka2wW.png|
+|extreme intricate|https://image02.seesaawiki.jp/n/h/nai_ch/gb5wn2iXAl.png|
+|extremely intricate|https://image02.seesaawiki.jp/n/h/nai_ch/VQ_ZsZzsSs.png|
+|hyper intricate|https://image02.seesaawiki.jp/n/h/nai_ch/eCG5OQBAMV.png|
+|hyper extreme intricate|https://image02.seesaawiki.jp/n/h/nai_ch/iw8ZJM3OkP.png|
+|supreme intricate|https://image02.seesaawiki.jp/n/h/nai_ch/oeqzfeJMTz.png|
+|supremed intricate|https://image01.seesaawiki.jp/n/h/nai_ch/0fBk7lyHcY.png|
+|supreme quality|https://image01.seesaawiki.jp/n/h/nai_ch/WrIoPCDHUw.png|
+|exquisitely quality|https://image02.seesaawiki.jp/n/h/nai_ch/ZlwZWXXUL5.png|
+|exquisitely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/_wedgLqkHx.png|
+|exquisitely definition|https://image01.seesaawiki.jp/n/h/nai_ch/we1Yb6IoAc.png|
+|super detailed|https://image02.seesaawiki.jp/n/h/nai_ch/rJmVqAE_yQ.png|
+|ultra detailed|https://image02.seesaawiki.jp/n/h/nai_ch/JCMuqDUVtm.png|
+|extreme detailed|https://image01.seesaawiki.jp/n/h/nai_ch/MeGgVej75x.png|
+|extremely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/f1UkoNCYuj.png|
+|ultimate detailed|https://image01.seesaawiki.jp/n/h/nai_ch/Xx8sqfbJmn.png|
+|hyper detailed|https://image02.seesaawiki.jp/n/h/nai_ch/5Q3u2jLLHu.png|
+|hyper extreme detailed|https://image01.seesaawiki.jp/n/h/nai_ch/sdcmO0rUU7.png|
+|extreme hyper detailed|https://image02.seesaawiki.jp/n/h/nai_ch/Xuq8e5iEcQ.png|
+|supreme detailed|https://image01.seesaawiki.jp/n/h/nai_ch/niXAMfQ589.png|
+|hyper supreme detailed|https://image01.seesaawiki.jp/n/h/nai_ch/fqJzgT90gF.png|
+|ultra supreme detailed|https://image02.seesaawiki.jp/n/h/nai_ch/yE_8sXgQo1.png|
+|minute details|https://image01.seesaawiki.jp/n/h/nai_ch/V5cmM7aA3n.png|
+|minute detailed|https://image01.seesaawiki.jp/n/h/nai_ch/m6bde8pv5x.png|
+|minutely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/xLw_Xnev6S.png|
+|finely|https://image01.seesaawiki.jp/n/h/nai_ch/jIjurPBZgE.png|
+|super finely|https://image01.seesaawiki.jp/n/h/nai_ch/lmi15Lhbyn.png|
+|ultimate finely|https://image02.seesaawiki.jp/n/h/nai_ch/QMdMwJtlkR.png|
+|extreme finely|https://image02.seesaawiki.jp/n/h/nai_ch/u2ZuOwB5dL.png|
+|hyper finely|https://image01.seesaawiki.jp/n/h/nai_ch/QqMiRvWAY7.png|
+|finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/jBsUQzO69X.png|
+|super finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/32uHYyMeQh.png|
+|ultra finely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/HNxuVvxDIC.png|
+|extreme finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/NPAHE3fVkE.png|
+|extremely finely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/Hdb8KHewGU.png|
+|hyper finely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/s8lLo5VNHJ.png|
+|ultimate finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/bQ8oVpcBwD.png|
+|hyper extreme finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/KrwRk8Cye9.png|
+|super extreme finely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/ZfPX8ab0Br.png|
+|super extremely finely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/notGfP5p24.png|
+|super intricate finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/5bQ2VbRZtH.png|
+|super exquisite finely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/bTqwUw6bsd.png|
+|hyper exquisite finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/GJ7y9k530R.png|
+|hyper intricate finely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/P7TghKv3tX.png|
+|ultra intricate finely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/EHKlJ0CEvf.png|
+|extreme intricate finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/fwjRSes42B.png|
+|ultimate intricate finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/1bUCVUdcMA.png|
+|excellent intricate finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/QTOCQwzGBz.png|
+|excellenty intricate finely detailed|https://image02.seesaawiki.jp/n/h/nai_ch/hyU0ISEx0M.png|
+|amazing intricate finely detailed|https://image01.seesaawiki.jp/n/h/nai_ch/RZnRY_UYw_.png|
+|super amazing detailed|https://image01.seesaawiki.jp/n/h/nai_ch/ex0kA_TDWd.png|
+|ultra amazing detailed|https://image01.seesaawiki.jp/n/h/nai_ch/u_qBQC7QuS.png|
+|extreme amazing detailed|https://image01.seesaawiki.jp/n/h/nai_ch/jHjpbZLezZ.png|
+|extremely amazing detailed|https://image02.seesaawiki.jp/n/h/nai_ch/oC0mgEIVWA.png|
+|ultimate amazing detailed|https://image02.seesaawiki.jp/n/h/nai_ch/_2ItTC9Tvv.png|
+|hyper amazing detailed|https://image02.seesaawiki.jp/n/h/nai_ch/RDZtUNJm1y.png|
+|hyper extreme amazing detailed|https://image01.seesaawiki.jp/n/h/nai_ch/EbEp6IELY7.png|
+|ultimate highly definition|https://image01.seesaawiki.jp/n/h/nai_ch/45vbXHiIOX.png|
+|ultimate amazing definition|https://image02.seesaawiki.jp/n/h/nai_ch/Nfk_6PUSg8.png|
+|ultimate amazing accuracy definition|https://image01.seesaawiki.jp/n/h/nai_ch/3zdj5_svxW.png|
+|ultimate amazing accuracy detailed|https://image02.seesaawiki.jp/n/h/nai_ch/1zxkc4Da_T.png|
+|super amazing accuracy details|https://image01.seesaawiki.jp/n/h/nai_ch/ajbcEIGFg5.png|
+|hyper amazing accuracy definition|https://image01.seesaawiki.jp/n/h/nai_ch/ojeM39kdvD.png|
+|amazing intricate|https://image01.seesaawiki.jp/n/h/nai_ch/GvA7ExOxz4.png|
+|amazing exquisite|https://image01.seesaawiki.jp/n/h/nai_ch/e68XaRHbQV.png|
+|wonderful definition|https://image01.seesaawiki.jp/n/h/nai_ch/PixtBchz8K.png|
+|wonderful detailed|https://image01.seesaawiki.jp/n/h/nai_ch/YHUvFGiOtD.png|
+|wonder detailed|https://image02.seesaawiki.jp/n/h/nai_ch/OOa1yUaJZX.png|
+|super wonder detailed|https://image02.seesaawiki.jp/n/h/nai_ch/yUrdV9dM_d.png|
+|ultra wonder detailed|https://image02.seesaawiki.jp/n/h/nai_ch/lVK02TDk3M.png|
+|ultimate wonder detailed|https://image02.seesaawiki.jp/n/h/nai_ch/FkXm70JtTv.png|
+|extreme wonder detailed|https://image02.seesaawiki.jp/n/h/nai_ch/1BPPjCVT5C.png|
+|extremely wonder detailed|https://image01.seesaawiki.jp/n/h/nai_ch/FgvTRewBQO.png|
+|hyper wonder detailed|https://image02.seesaawiki.jp/n/h/nai_ch/3iolug5l7H.png|
+|awesome|https://image01.seesaawiki.jp/n/h/nai_ch/bTJBWoIK0r.png|
+|awesome detailed|https://image01.seesaawiki.jp/n/h/nai_ch/e7GFzxAIwc.png|
+|super awesome detailed|https://image01.seesaawiki.jp/n/h/nai_ch/snJZKp9yHu.png|
+|ultra awesome detailed|https://image02.seesaawiki.jp/n/h/nai_ch/h46CchGlp0.png|
+|ultimate awesome detailed|https://image02.seesaawiki.jp/n/h/nai_ch/TKVzngoQ98.png|
+|amazing awesome detailed|https://image02.seesaawiki.jp/n/h/nai_ch/LUrfLn7V7m.png|
+|extremely awesome detailed|https://image02.seesaawiki.jp/n/h/nai_ch/QVIJkoTjKB.png|
+|hyper awesome detailed|https://image01.seesaawiki.jp/n/h/nai_ch/qWOMzyUWmE.png|
+|hyper extreme awesome detailed|https://image02.seesaawiki.jp/n/h/nai_ch/cVcIOB7PTf.png|
+|||
+|}
+
+提供元
+https://fate.5ch.net/test/read.cgi/liveuranus/1666562950/
+ID:YoO3SPRL0

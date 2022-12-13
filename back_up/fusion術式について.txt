@@ -1,0 +1,38 @@
+*fusion of A and B
+でAとBの要素を組み合わせることが可能
+以下は例、プロンプト欄に関しては全文では無い可能性もあるので注意
+[+]
+{| class="nanj_prompt_table edit sort"
+|~w(100):''意味''|w(300):''プロンプト''|w(150):''ネガティブプロンプト''|w(250):''備考''|''サンプル''|
+|男娘|||||
+|孔雀と融合した女の子|{peafowl form of girl},{fusion of girl and peafowl},{{{fusion}}},1girl,solo|||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/c4991390b6572766.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ceb6c90b6f5247ec.png)|
+|イルカと鮫のコスチューム|1girl,dolphin form costume~~1girl,shark form costume|||https://image01.seesaawiki.jp/n/h/nai_ch/_1rawt7L9L.png https://image01.seesaawiki.jp/n/h/nai_ch/4NwArfAE5z.png|
+|人参衣装にフォームした女の子|1girl,carrot form costume||似たような効果がある術式~~下記の成功率を上げるかもしれない方法でも利用|https://image01.seesaawiki.jp/n/h/nai_ch/CdfJDc9Wge.png https://image01.seesaawiki.jp/n/h/nai_ch/QXRL7rGjMn.png|
+|ウサギのフードを被る女の子|fusion of girl and white rabbit hooded|||https://image01.seesaawiki.jp/n/h/nai_ch/t8lnWhPw3t.png|
+|女の子とリンゴ|Fusion of girl and apple|||https://image01.seesaawiki.jp/n/h/nai_ch/XUMjy1Lsa_.jpg　https://image02.seesaawiki.jp/n/h/nai_ch/B2npHC0UEP.png|
+|小さい女の子とパレットとうさぎ|Fusion of &#128103; and &#127912; and &#128048; and {{&#128118;}}||絵文字も対応|https://image01.seesaawiki.jp/n/h/nai_ch/5xHHWzTVMl.png https://image02.seesaawiki.jp/n/h/nai_ch/Ilk7S1egML.png|
+|クラゲと触手とゲーミング|fusion of jellyfish and tentacles and glowing penis|||https://image02.seesaawiki.jp/n/h/nai_ch/YHXGhLKrS_.png https://image02.seesaawiki.jp/n/h/nai_ch/lTRj37ipzi.png|
+|ねことロボット|fusion of cat and robot|||https://image02.seesaawiki.jp/n/h/nai_ch/gXs29Q7kM4.png|
+|光るゲームパッドと女の子|fusion of girl and glowing gamepad|||https://image02.seesaawiki.jp/n/h/nai_ch/dX63mHOZpL.png https://image02.seesaawiki.jp/n/h/nai_ch/Lt3H20cpno.png|
+|ブルーベリーと女の子|fusion of girl and Blueberry|||https://image02.seesaawiki.jp/n/h/nai_ch/FBbdQEs9mB.png https://image01.seesaawiki.jp/n/h/nai_ch/xbUOux1efO.png|
+|人参と女の子|fusion of girl and carrot||発見者|https://image01.seesaawiki.jp/n/h/nai_ch/IgEknYFh7p.png https://image01.seesaawiki.jp/n/h/nai_ch/IYrdswQ4JF.png|
+|}
+[END]
+*俯瞰構図変更テクニック
+{fusion of flat lay photography & {{from 〇〇}}}
+[+]
+{| class="nanj_prompt_table edit sort"
+|~w(100):''意味''|w(300):''プロンプト''|w(150):''ネガティブプロンプト''|w(250):''備考''|''サンプル''|
+||{fusion of flat lay photography & {{from below}}}|||https://image01.seesaawiki.jp/n/h/nai_ch/8wnvF7jH_z.png|
+||{fusion of flat lay photography & {{from behind}}}|||https://image02.seesaawiki.jp/n/h/nai_ch/T2cfUjqF4K.png|
+||{fusion of flat lay photography & {{fro, side}}}|||https://image01.seesaawiki.jp/n/h/nai_ch/1JN4H_5QmL.png|
+||{fusion of flat lay photography & {{from above}}}|||https://image01.seesaawiki.jp/n/h/nai_ch/2Xvt4tZnbL.png|
+|}
+[END]
+*成功率を上げるかもしれない方法
+fusion of girl and ◯◯の他に◯◯ form girlって一緒に入れてやると融合成功確率が心なしか上がる
+あと1girl,solo,{{{fusion}}}てタグを追加でつけてやるといいかも
+発見者
+なんJNVA部★74　ID:Cglx10Bh0
+https://fate.5ch.net/test/read.cgi/liveuranus/1666610718/474
+

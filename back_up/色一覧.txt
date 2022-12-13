@@ -1,0 +1,219 @@
+* テーマ
+数単語以上でいい感じのやつ
+
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|備考|サンプル|
+|{{{{iridescent_color_hair}}}}, red hair, blue hair, green hair,yellow hair, purple hair,Arancione hair,|||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Shw9RLuInF.jpg)|
+|pink oranged|||https://image02.seesaawiki.jp/n/h/nai_ch/Shk2W8YFMw.jpg|
+|light coral red hair|||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tA00NrherS.jpg)|
+|}
+
+* 単語集
+**黒/白系
+[+]
+{| class="sort edit nanj_prompt_table"
+|~サンプル|色|説明|サンプル|
+|bgcolor(#000000):|black|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YqM0U3GnY6.png)|
+|bgcolor(#696969):|dimgray|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/S0Sl792zkS.png)|
+|bgcolor(#808080):|gray|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fRlrFUwl2r.png)|
+|bgcolor(#a9a9a9):|darkgray|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yAHB3Lhwrw.png)|
+|bgcolor(#c0c0c0):|silver|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JL1HbwmBO1.png)|
+|bgcolor(#d3d3d3):|lightgray|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/j55QS2hF04.png)|
+|bgcolor(#dcdcdc):|gainsboro|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ou4XLIBqSt.png)|
+|bgcolor(#f5f5f5):|whitesmoke|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4KUIEgWvrM.png)|
+|bgcolor(#ffffff):|white|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Cu_h8iZYWB.png)|
+|bgcolor(#fffafa):|snow|CSSカラー　ほぼ100%の確率で雪が出現する　服装も寒冷地仕様に変化|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/d1f80nbMNJ.png)|
+|bgcolor(#f8f8ff):|ghostwhite|CSSカラー　ほぼ100%の確率で謎の白い玉(幽霊(ghost))が出現　たまにゴーストに顔が描かれる|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Y5c5KIC48L.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GidfUvushx.png)|
+|bgcolor(#778899):|lightslategray|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/z2Bc50f036.png)|
+|bgcolor(#708090):|slategray|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KUG1a7NOoA.png)|
+|bgcolor(#2f4f4f):|darkslategray|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xUxhSswbNY.png)|
+|}
+[END]
+**赤系
+[+]
+{| class="sort edit nanj_prompt_table"
+|~サンプル|色|説明|サンプル|
+|bgcolor(#ff0000):|red|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7GlYsHWapI.png)|
+|bgcolor(#8b0000):|darkred|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jlJYbWHPIE.png)|
+|bgcolor(#b22222):|firebrick|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kH12_H1Seh.png)|
+|bgcolor(#cd5c5c):|indianred|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/t4ynTjhiB6.png)|
+|bgcolor(#e9967a):|darksalmon|CSSカラー　1割程度の確率で鮭が一緒に生成される|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zZkJOaC2jn.png)　&ref(https://image01.seesaawiki.jp/n/h/nai_ch/h30kJ2TPOI.png)|
+|bgcolor(#f08080):|lightcoral|CSSカラー　２割くらい髪の毛が水色に　１割以下の確率でサンゴ(coral)要素が背景にでる|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Mpje01MeNo.png)|
+|bgcolor(#fa8072):|salmon|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_5AvrkFjqu.png)|
+|bgcolor(#ffa07a):|lightsalmon|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qzPR_8vwaX.png)|
+|bgcolor(#ff7f50):|coral|CSSカラー　まれに髪の毛にサンゴは生える|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N0XTY_oqP3.png)|
+|bgcolor(#ff6347):|tomato|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2lDnWjOGcN.png)|
+|bgcolor(#dc143c):|crimson|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pYyU2edhd2.png)|
+|}
+[END]
+
+**緑系
+[+]
+{| class="sort edit nanj_prompt_table"
+|~サンプル|色|説明|サンプル|
+|bgcolor(#008000):|green|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PT5JnTI4pv.png)|
+|bgcolor(#006400):|darkgreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kJDxbYKr9t.png)|
+|bgcolor(#228b22):|forestgreen|CSSカラー　ほぼ100%背景に森が出現|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lqituQFp3c.png)|
+|bgcolor(#2e8b57):|seagreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LXR8poqmWq.png)|
+|bgcolor(#3cb371):|mediumseagreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/34FmZpbLdg.png)|
+|bgcolor(#66cdaa):|mediumaquamarine|CSSカラー4割くらいの確率で背景が水辺に変化|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/A43c6LcU47.png)|
+|bgcolor(#8fbc8f):|darkseagreen|CSSカラー　8割くらい謎のピチピチのスーツを着た女が生成される|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/APo6S8GsVn.png)|
+|bgcolor(#7fffd4):|aquamarine|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6MuDOc4Dr9.png)|
+|bgcolor(#98fb98):|palegreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3DhpjpPPDQ.png)|
+|bgcolor(#90ee90):|lightgreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dqcx_O9UZX.png)|
+|bgcolor(#00ff7f):|springgreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PLt8yy3SEj.png)|
+|bgcolor(#00fa9a):|mediumspringgreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3Zsu1aykis.png)|
+|bgcolor(#7cfc00):|lawngreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/faj2BWuAA0.png)|
+|bgcolor(#7fff00):|chartreuse|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vvhs1wPjQ1.png)|
+|bgcolor(#adff2f):|greenyellow|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bNA33WoFsl.png)|
+|bgcolor(#00ff00):|lime|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/w_I7emcU4t.png)|
+|bgcolor(#32cd32):|limegreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FDtEMxKJlA.png)|
+|bgcolor(#9acd32):|yellowgreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UKK1aahHuv.png)|
+|bgcolor(#556b2f):|darkolivegreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SN1hAb7wR8.png)|
+|bgcolor(#6b8e23):|olivedrab|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FFheuJhoR_.png)|
+|bgcolor(#f0fff0):|honeydew|CSSカラー　蜜(honeydew)らしき謎の物体が７割くらい出現　髪の毛の色としても5割くらい反映される|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ezg_h4MgtA.png)|
+|bgcolor(#f5fffa):|mintcream|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RGEvCRoaiS.png)|
+|bgcolor(#808000):|olive|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qPEaYmfZBA.png)|
+|bgcolor(#bdb76b):|darkkhaki|CSSカラー　4/10の確率で色がモノトーン風になる|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UKy44FWKPg.png)|
+|}
+[END]
+
+**青系
+[+]
+{| class="sort edit nanj_prompt_table"
+|~サンプル|色|説明|サンプル|
+|bgcolor(#0000ff):|blue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8ZGJA5eqVW.png)|
+|bgcolor(#4682b4):|steelblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bQab7AM3TG.png)|
+|bgcolor(#4169e1):|royalblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/T0K37KWKCR.png)|
+|bgcolor(#191970):|midnightblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8_wJx3ivPP.png)|
+|bgcolor(#000080):|navy|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/srPNGrQlQe.png)|
+|bgcolor(#00008b):|darkblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JgOyIAioX5.png)|
+|bgcolor(#0000cd):|mediumblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bVLfbsuk2j.png)|
+|bgcolor(#1e90ff):|dodgerblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yKEMybUkpo.png)|
+|bgcolor(#6495ed):|cornflowerblue|CSSカラー　２割くらい背景に花(flower)が出現するように|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lE1eoe6v9k.png)|
+|bgcolor(#00bfff):|deepskyblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6RfHmONpD1.png)|
+|bgcolor(#87cefa):|lightskyblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kWmbMGwYU4.png)|
+|bgcolor(#87ceeb):|skyblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5MmUECVM8Q.png)|
+|bgcolor(#add8e6):|lightblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tbBCvnLYxy.png)|
+|bgcolor(#b0e0e6):|powderblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FanpW5WMQU.png)|
+|bgcolor(#afeeee):|paleturquoise|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/K7tlq6jqA1.png)|
+|bgcolor(#e0ffff):|lightcyan|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/In3db1lUZt.png)|
+|bgcolor(#00ffff):|cyan|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/01mvtdc61K.png)|
+|bgcolor(#00ffff):|aqua|CSSカラー　名前の由来に引っ張られることもある。~~初音ミクの髪色に指定されることが多い色。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/D9LteVNn5Y.png)|
+|bgcolor(#40e0d0):|turquoise|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7xXDNeSbE7.png)|
+|bgcolor(#48d1cc):|mediumturquoise|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DFay5CmHJ6.png)|
+|bgcolor(#00ced1):|darkturquoise|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7Qw2I2enq2.png)|
+|bgcolor(#20b2aa):|lightseagreen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pz885n_Czp.png)|
+|bgcolor(#5f9ea0):|cadetblue|CSSカラー　士官候補生(cadet)に服装が引っ張られる|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Q693Z2ZegR.png)|
+|bgcolor(#008b8b):|darkcyan|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/l4qmH0s0Mx.png)|
+|bgcolor(#008080):|teal|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vq5YD4BFN6.png)|
+|bgcolor(#f0ffff):|azure|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/L53Qeh5Fwd.png)|
+|bgcolor(#f0f8ff):|aliceblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/inteG72Mb0.png)|
+|bgcolor(#b0c4de):|lightsteelblue|CSSカラー　8割位服装が(steel製の)鎧になる 着る鎧は様々　パイロットスーツ風になることも|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9tjRxAJKfe.png)|
+|}
+[END]
+
+**黄色系
+[+]
+{| class="sort edit nanj_prompt_table"
+|~サンプル|色|説明|サンプル|
+|bgcolor(#fff8dc):|cornsilk|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/o0sQi6aHy9.png)|
+|bgcolor(#f5f5dc):|beige|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dDJdzbyUPo.png)|
+|bgcolor(#ffffe0):|lightyellow|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lkkhOOwYTU.png)|
+|bgcolor(#fafad2):|lightgoldenrodyellow|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RO_BzPTb6A.png)|
+|bgcolor(#fffacd):|lemonchiffon|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MvjgqoYaBf.png)|
+|bgcolor(#f0e68c):|khaki|カーキ色。私服などに 服が軍服(インド在駐英兵風)になりがち|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Ts_NP5Ci9F.png)|
+|bgcolor(#ffff00):|yellow|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/P7Z8Z1SHLK.png)|
+||blonde|+hairで金髪とか||
+|bgcolor(#eee8aa):|palegoldenrod|CSSカラー　ほぼ100%画面に花が出現 米国ケンタッキー州の州花のアキノキリンソウ(goldenrod)か|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JLuJmox7tO.png)|
+|}
+[END]
+
+**茶色系
+[+]
+{| class="sort edit nanj_prompt_table"
+|~サンプル|色|説明|サンプル|
+|bgcolor(#a52a2a):|brown|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/r9eTRMb5X9.png)|
+|bgcolor(#bc8f8f):|rosybrown|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/w1Ax2UT8Zp.png)|
+|bgcolor(#a0522d):|sienna|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0OjgdtPtbQ.png)|
+|bgcolor(#8b4513):|saddlebrown|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7OY8BseCsH.png)|
+|bgcolor(#800000):|maroon|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/W8rAuOtRVI.png)|
+|bgcolor(#daa520):|goldenrod|CSSカラー　9割以上アキノキリンソウ(goldenrod)が出現|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7xhBA4pil0.png)|
+|bgcolor(#cd853f):|peru|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4mBJ5ARZP3.png)|
+|bgcolor(#b8860b):|darkgoldenrod|CSSカラー　9割以上アキノキリンソウ(goldenrod)が出現 goldenrodより暗くはなる|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/i_JFJ2IsA3.png)|
+|bgcolor(#d2691e):|chocolate|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vHNJ7dg5rr.png)|
+|bgcolor(#d2b48c):|tan|CSSカラー　肌の色が日焼けの小麦色に変化|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/y_VxzHYvJ3.png)|
+|}
+[END]
+
+**オレンジ/肌色系
+[+]
+{| class="sort edit nanj_prompt_table"
+|~サンプル|色|説明|サンプル|
+|bgcolor(#ffd700):|gold|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aM2XDhG3ZV.png)|
+|bgcolor(#ffa500):|orange|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FINVxbskKa.png)|
+|bgcolor(#f4a460):|sandybrown|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ock1mHxixG.png)|
+|bgcolor(#ff8c00):|darkorange|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Slw__CutYw.png)|
+|bgcolor(#ff4500):|orangered|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/beJR1pMRVr.png)|
+|bgcolor(#fffaf0):|floralwhite|CSSカラー　2割位の確率で花(floralのはずだが明らかに別の花も出る)が出現|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zJ1JrxjdrX.png)|
+|bgcolor(#faf0e6):|linen|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/McaL5WczrI.png)|
+|bgcolor(#faebd7):|antiquewhite|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Pn0ucOXj4g.png)|
+|bgcolor(#ffefd5):|papayawhip|CSSカラー　色としてはあまり反映されない　髪が腰まで伸びるように変化 髪が鞭(whip)のようにあらぶる傾向|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kqFdK4Ot7p.png)|
+|bgcolor(#ffebcd):|blanchedalmond|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xSFDS8MbNm.png)|
+|bgcolor(#ffe4c4):|bisque|CSSカラー　名前の由来に引っ張られることもある サンプルの黒は生成ミス　再度生成しても黒くなる　原因不明|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/SR_uyAGzGx.png)|
+|bgcolor(#ffe4b5):|moccasin|CSSカラー　モカシン(moccasin)という靴が由来　靴が変化するが肝心のモカシンにはならず３割位がローファー、残りがボアという靴に近いものを靴を履くようになる　服装にはあまり影響はない|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gx__cWZWNj.png)|
+|bgcolor(#ffdead):|navajowhite|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YRYV4OWaj2.png)|
+|bgcolor(#ffdab9):|peachpuff|CSSカラー　髪の毛がプーフ(puff)という髪型に変化 色はピーチが反映される|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/I5SIhXrZi4.png)|
+|bgcolor(#fff5ee):|seashell|CSSカラー　ほぼ100%貝(shell)が出現 7割くらい背景が海(sea)になる|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JLcp6C_aY9.png)|
+|bgcolor(#fdf5e6):|oldlace|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/J7VCDRMSWk.png)|
+|bgcolor(#fffff0):|ivory|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/z9WrqwHjkX.png)|
+|bgcolor(#f5deb3):|wheat|CSSカラー　5割以上の確率で小麦(wheat)が出現　1割位の確率で髪の毛が編み込まれる|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NMh8DwM71K.png)|
+|bgcolor(#deb887):|burlywood|CSSカラー　髪型に節(burl)？が6割くらい作られるようになる　体格ががっしり(burly)になることはなさげ|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UFPcE5vdGy.png)|
+|}
+[END]
+
+**ピンク/紫系
+[+]
+{| class="sort edit nanj_prompt_table"
+|~サンプル|色|説明|サンプル|
+|bgcolor(#ffc0cb):|pink|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6w0yHPTJ3c.png)|
+|bgcolor(#c71585):|mediumvioletred|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iVuHlj_eG3.png)|
+|bgcolor(#ff1493):|deeppink|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zLVeIs2n98.png)|
+|bgcolor(#ff69b4):|hotpink|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4PsvIXYE6N.png)|
+|bgcolor(#db7093):|palevioletred|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FTQjtjAwNw.png)|
+|bgcolor(#ffb6c1):|lightpink|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0GXHc_GUzZ.png)|
+|bgcolor(#d886a8):|dark pink|妖しい色。乳首やニップレスにどうぞ||
+|bgcolor(#d8bfd8):|thistle|CSSカラー　アザミというトゲトゲの花　明確に色を指定しないと髪型に反映される|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZCHdkY3v0K.png)|
+|bgcolor(#ff00ff):|magenta|CSSカラー　髪の毛がはねやすくなる|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6p1orNLwX9.png)|
+||rosegold||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/997g8_wkYH.jpg)|
+|bgcolor(#ff00ff):|fuchsia|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jnqo7AQSo5.png)|
+|bgcolor(#ffe4e1):|mistyrose|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zTEPVjIEaL.png)|
+|bgcolor(#fff0f5):|lavenderblush|CSSカラー　3割くらいの確率で(lavender)が出現　ほぼ100%表情が赤面(blush)する　|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yyfQHOOf5N.png)|
+|bgcolor(#ee82ee):|violet|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7BkYjADIwT.png)|
+|bgcolor(#dda0dd):|plum|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3bTvgBVlu6.png)|
+|bgcolor(#da70d6):|orchid|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1XxD9cKCvX.png)|
+|bgcolor(#ba55d3):|mediumorchid|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/97WzHfqnJP.png)|
+|bgcolor(#9932cc):|darkorchid|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fMhokKvlY6.png)|
+|bgcolor(#9400d3):|darkviolet|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pnySf0kaZC.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pnySf0kaZC.png)|
+|bgcolor(#8b008b):|darkmagenta|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wBkO5UlJ4v.png)|
+|bgcolor(#800080):|purple|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RAzGzxGqSo.png)|
+|bgcolor(#4b0082):|indigo|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZTHRifBm3w.png)|
+|bgcolor(#483d8b):|darkslateblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ASrbTEpwu5.png)|
+|bgcolor(#8a2be2):|blueviolet|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OAHC06HZf9.png)|
+|bgcolor(#9370db):|mediumpurple|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tJDA8Jp2V9.png)|
+|bgcolor(#6a5acd):|slateblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PKkNfDvrUH.png)|
+|bgcolor(#7b68ee):|mediumslateblue|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RaTtYVgFsq.png)|
+|bgcolor(#9b68a9):|amethyst|いわゆるアメジストの色　色としては比較的安定して薄めの紫色が出るが、宝石が出現しやすい|https://image02.seesaawiki.jp/n/h/nai_ch/iOHQY0HjlW.png|
+||lilac||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MTj3xBXxYg.png)|
+||wisteria|名前の由来に引っ張られることもある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/fJGJq5rZTl.png)|
+|bgcolor(#e6e6fa):|lavender|CSSカラー　名前の由来に引っ張られることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Zhz_RMcY8L.png)|
+|}
+[END]
+*色 patternでのカラーテイストを指定
+[+]
+　　　　　　&size(64){指定無し}　　　　　　　　　　　　　　　　　　　　　　　　&size(64){golden black patterncarp,water flow}　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/37TSLoyTe1.png)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&ref(https://image02.seesaawiki.jp/n/h/nai_ch/mlPDtH_Bu6.png)
+[END]
+
+
+

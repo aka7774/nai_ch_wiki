@@ -1,0 +1,72 @@
+* 概要
+ここではGenerativeAIを活用したプロンプトの生成についてまとめます。
+代表的なものではOpenAIのChatGPTなどです。
+
+* ChatGPT
+
+** 概要
+ChatGPTはOpenAIの開発したチャット形式のAIです。
+「ChatGPT は、大型言語モデルである GPT-3 の拡張版です。GPT-3 は自然言語処理タスクを実行するためにトレーニングされたものですが、ChatGPT はその機能をさらに拡張し、人間の対話をより自然に再現するように設計されています。ChatGPT は、人間が話したように応答することができるようになっています。しかし、ChatGPT は実際の人間ではありません。私たちは、人工知能を使用して人間の対話を模倣することができるようになっています。」
+「私は OpenAI によってトレーニングされた大型言語モデルです。私は人間の対話を模倣することができますが、実際の人間ではありません。私はあなたが知りたいことを教えることができるように、教育されています。どうぞ、お尋ねください。」
+
+** クイックスタートChatGPT
++ https://chat.openai.com/chat
++ Sigh up -> Creat OpenAI Account
+
+** ChatGPTによるプロンプト生成
+
+*** 質問テンプレート(1)
+
+プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
+=|(box=textarea)|
+「(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind」
+||=
+です。囚みにプロンプトでの括弧「()」は中のキーワードを強調する作用を持ちます。
+これを踏まえて、以下のテーマに沿ったプロンプトを150words程度で3パターン書いてください。
+「黒髪の美しい女性が微笑んでこちらを見ているイラスト」
+
+～AIが答える～
+
+※解説がほしいときは以下のように聞くと説明してくれます。
+それぞれのプロンプトについて解説してください。
+～AIが答える～
+
+[+]v1.0
+プロンプトを入力すると、画像を出力するAIがあります。
+例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
+=|BOX|
+「(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind」 
+||=
+
+です。囚みにプロンプトでの括弧「()」は中のキーワードを強調する作用を持ちます。
+ここまでで何か質問はありますか?
+
+～AIが答える～
+では、水の中で泳ぐ少女の美麗な画像を出すプロンプトを3パターン書いてください。
+～AIが答える～
+それぞれのプロンプトについて解説してください。
+～AIが答える～
+
+
+[END]
+
+[+]スレより引用
+ChatGPTにプロンプトを書かせるって奴、あくまでジョークの類だと思ってた。でも試してみたら、完全に認識を改めた。
+以下チャット内容から画像生成まで、チェリーピックは一切していない。シード値他は固定。プロンプトのみ変更。
+１．元素法典より１つプロンプトを借用（生成結果↓）
+https://i.imgur.com/EDPLMqJ.png
+２．ChatGPTに例とお題を与えてプロンプトを考えてもらう
+https://i.imgur.com/1ogiV0B.png
+https://i.imgur.com/udFAhbE.png
+３．教えてもらったプロンプトで生成する
+https://i.imgur.com/7h1O78k.png
+https://i.imgur.com/ild8cPJ.png
+https://i.imgur.com/Hzrg9By.png
+実用的な話として、機械翻訳にかけると直訳になって上手くいかない場合も多々ある。自分で英単語や熟語を調べて組み合わせを考えるより、おそらく早い。
+
+781
+えっ何やこれ凄すぎない？
+こんな事しとるワイがアホみたいやん
+https://i.imgur.com/pdXoWdb.png
+[END]
+

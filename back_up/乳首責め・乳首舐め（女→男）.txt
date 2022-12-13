@@ -1,0 +1,132 @@
+[[未発見のプロンプト>未発見のプロンプト]]>乳首責め・乳首舐め（女→男）
+
+* 求めているテーマ
+女が男の乳首を責めたり舐めたりしている画像
+構図などは問わない
+
+* 調査履歴（乳首責め）
+いずれも特に記述なければFull,portlait(Normal),Steps28、Scale11、LowQuality+Bad Anatomy、uc無、Add Quality Tags→Off
+
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pSoo2DBD9F-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pSoo2DBD9F.png]]
+=|BOX|
+nipple tweak,nsfw
+||=
+nsfw単体と出力がほぼ変わらない気がする
+乳首や手が増えて構図が崩れる場合がある
+
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hJWbivM6xM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/hJWbivM6xM.png]]
+=|BOX|
+1girl,1boy,femdom,{nipple tweak},nsfw
+||=
+裸の女一人と、男は顔つきだったり下半身のみだったりで出力される
+たまにパイズリしようとする
+あと女の乳首の奇形率が高い気がする
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wiyRTXbPIz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/wiyRTXbPIz.png]]
+=|BOX|
+1girl, 1boy, {licking nipples},nsfw
+||=
+なぜかは知らんが割とクオリティの高いパイズリ、フェラチオ
+もしくはパイフェラが高めの打率で生成される（パイズリ＋舌出しが多い）
+パイズリ絵を出力したい人はpaizuriよりもこっちを使った方が良いかも
+ちなみにucにpaizuri,fellatio,penis入れてもパイズリっぽくなる
+
+その他試したもの：
+=|BOX|
+1girl's tongue on boy's chest,nsfw
+||=
+=|BOX|
+1girl tweaking male nipples,nsfw
+||=
+=|BOX|
+girl's face on boy's chest,nsfw
+||=
+等
+sucking・lickingのフェラチオ要素が強すぎるが、penis,fellatioを除外すると最終的に自らの手をしゃぶりだす
+そもそも女の顔が男の胸の上に来ないし、男の乳首も描写すらされない
+乳首責めプロの方、お助け願います。
+
+----
+
+試してみたけど全然できなかった。一部抜粋で
+=|BOX|
+{{{{{{sucking_male_nipple}}}}}}, {{{{{{pectorals}}}}}}, {{{face_to_pecs}}}
+||=
+あたりを使ってみたが、だいたいチンコか手か謎の布を舐めている。
+sucking_male_nipple（男性の乳首を舐める）の画像が200程度しか無い上に、その大半が男性同士の絵である。残った「女性が男性の乳首を舐める」のうち殆どは手コキと同時。純粋に乳首舐めだけの絵は数えるほどで、学習データが少なすぎるのだと思う。
+
+----
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2f43d649530b4d48-s.jpeg)> https://image01.seesaawiki.jp/n/h/nai_ch/2f43d649530b4d48.jpeg]]
+
+=|BOX|
+{{{nsfw}}}, {{{{sole female}}}}, pov,  leaning forward, sex, small breast,  {{{{{{gloves, teasing nipples, nipple tweak, hands on viewer nipple}}}}}}, {{{{{{girl on top}}}}}}
+||=
+
+乳首責め騎乗位ならここまではいけた。
+i2iのペイントで手袋をはめさせると男側の体との境界がハッキリして認識してくれやすくなるかもしれない
+
+&#8212;&#8212;
+プロンプト
+=|BOX|
+nsfw, femdom, from_below, {{{{perspective, fisheye_lens}}}}, {{{{{{{pov ,looking_down, girl_facing_viewer , girl_on_top,  girl_is_looking_at_viewer, girl_small_breasts, girl_feet_out _of _frame, bending_elbows}}}}}}},{{{{{{{{girl_fingers}}}}}}}},  {{{{{{{male_head_is_out_of_frame}}}}}}},{{{{{{{{2_nipples_on_male_pectorals, male_bare_pectorals}}}}}}}}, {{{{{{{girl_reaching_hands_to_male_nipples, girl_tweaking_2_male_nipples, nipple_tweak, girl_tweaking_nipples_with_both_hands}}}}}}}, {{{{{{{girl_is_sitting_on_male,  sex}}}}}}}, spreading_legs, {{{cowgirl_position, straddling}}}, {{{{{{{girl_face_is_close_to_viewer}}}}}}},{{{{{{{girl_fingers_to_male's_nipples}}}}}}}, {{{{{{{{leaning_forward, girl_leaning_to_male_body , straddling}}}}}}}}
+||=
+
+ネガティブプロンプト
+=|BOX|
+Paizuri, fellatio, dutch_angle, {{{{male_arms, pov_hands , from_side}}}}, multiple_males,  {{{{clothed_male, male _chest_out_of_frame}}}}, multiple_girls,  leaning_backward, grab_arms, {holding_hands}, {{hand_on_own_breasts, hand_on_own_body}}, hand_on_face,{{{{hand_on_lower_abdomen, }}}}, hand_on_head, {girl_hand_away_from_body}, arms_behind_back, v_arms , standing, squatting, kneeling, {multiple_penises, extra_penises, disembodied_penis} , {{{{extra arms, extra navels, extra legs,  disembodied_limb, leg lift, extra hands, }}}}{{{{{{{{multiple_breasts,  extra nipples, nipple_on_limb, nipple_on_shoulder}}}}}}}}, {{{{{greyscale, monochrome}}}}}
+||=
+
+でi2iほぼ使わずに下の3枚くらいまではできた。
+画質ボロボロだし指の細かい動きを把握させるのはまだ時間がかかりそうだけど1週間くらい続ければ形になるかもしれない。
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/b0ecd8b5fb3fbe98-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/b0ecd8b5fb3fbe98.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6737c6b3b69c8642-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6737c6b3b69c8642.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/291be83a0306b516-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/291be83a0306b516.png]]
+
+----
+
+乳首責め騎乗位に関してはi2iを使う前提なら割と安定して出せるようになった気がする。
+以下プロンプト
+
+=|BOX|
+nsfw, 1boy 1girl, smile, small breasts girl sex with male, {{girl’s fingers}}, {{perspective}}, symmetric, {{{pov}}}, {{{girl facing  viewer}}},  {{{{{{{girl looking_down_at _viewer}}}}}}}, {{{{{{{{{{{{{{nipples on male body tweaked by girl fingers}}}}}}}}}}}}}}, {{{{{{{girl touches male chests with fingers}}}}}}}, {{{{{{nipple tweak}}}}}},  {male pectorals with nipples}, {{{{{{male is lying on back}}}}}}, {{{{{{{male-nipples are close from viewer}}}}}}}, {{male’s head out of frame}}, {{{{{{{{{girl’s breasts leaning forward}}}}}}}}}, {{cowgirl position}}, {{{girl on top}}}, {{{girl sitting down on male}}}, {girl face forward},{{girl leaning towards viewer}}, {{{closed-up girl hands}}}
+||=
+
+ネガティブプロンプトは
+
+=|BOX|
+Paizuri,{{v}}, {{{{{finger to cheek}}}}}, {{dutch angle}},{{{{{{{{from side}}}}}}}}, {{{{{{{{{{muscular girls}}}}}}}}}}, fellatio, {{{{{{{{{{pov hands}}}}}}}}}}, {{{{male’s legs}}}}, {{{{{{{{{{{{girl on back}}}}}}}}}}}}, foot focus, {{{multiple males}}},  {{{{{{{{{{{{clothed male}}}}}}}}}}}}, {{{v arms}}}, multiple girls,  [[outstretched arms]],  {{{{{missing male's pectorals}}}}},  {{{{{hidden male's nipples}}}}},{{{{{{{hidden girl's hand}}}}}}}, {{{{{{{hidden girl's fingers}}}}}}}, grab arms, {{holding hands}}, hands on own breasts,  {{{{fingers on own chest}}}},{{{{{{{{{{{{finger_to_mouth}}}}}}}}}}}}},  {{hand on own abdomen}}, {{hand on head}}, {{{{{{{arms behind back}}}}}}},arms at side,  {{{{{{{{{{{arm support}}}}}}}}}}}, {{{standing}}},  {multiple penises},  {disembodied penis}, {{extra hands}},  {{{{{{{{{{bad hands}}}}}}}}}}, {{{{{{{{{{bad fingers}}}}}}}}}}, {{{{{{{{{{{{{{extra nipples}}}}}}}}}}}}}}, {{{{{{fused bodies}}}}}}, {{{{{{{{multiple view}}}}}}}}, {{girl’s body leaning backward}}, {{solo}}, {{{{{interlocked fingers}}}}}, join hands, {{{bara}}}, {{{yaoi}}}
+||=
+
+これで入力
+最初の10枚程度は安定しないことも多いけどある程度作画回数を回すと下みたいな乳首責め一歩手前の画像が高確率で出てくる
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/e20c22845f128f73-s.png)> https://image02.seesaawiki.jp/n/h/nai_ch/e20c22845f128f73.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/c9fae4f9df60d4db-s.png)> https://image01.seesaawiki.jp/n/h/nai_ch/c9fae4f9df60d4db.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cc5110bdfe1fb97a-s.png)> https://image02.seesaawiki.jp/n/h/nai_ch/cc5110bdfe1fb97a.png]]
+
+これに下みたいにペイント乳首と腕の位置を調整して何度かi2iを回すと乳首責めが生成された
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4117e9b826ecde1b-s.png)> https://image01.seesaawiki.jp/n/h/nai_ch/4117e9b826ecde1b.png]] → [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/719ea6f90638e36c-s.jpeg)> https://image02.seesaawiki.jp/n/h/nai_ch/719ea6f90638e36c.jpeg]]  → [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6e3d291db7a7abac-s.png)> https://image02.seesaawiki.jp/n/h/nai_ch/6e3d291db7a7abac.png]]
+
+----
+
+上のプロンプトを改造して下のプロンプトで試してみたら、打率は50分の1くらいだけど下に貼ったみたいな画像をimage to image 無しで出してくれるようになった。
+
+=|BOX|
+{{symmetrical}}, nsfw, 1boy 1girl, teasing smile medium breast girl, {{girl’s fingers on pectorals of male}}, [perspective], {{{pov}}}, {{{girl facing  viewer}}},  {{{{{{{girl looking at viewer}}}}}}}, {{{{{{{{{{{{{{girl's fingers get down and touch nipples on male body}}}}}}}}}}}}},  {{{{{foreshortening male pectorals with nipples}}}}}, {{{{{{male is lying on back}}}}}}, {{{{{{{male’s pectorals foreshortening, girl’s finger foreshortening}}}}}}}, {{male’s head out of frame}}, {{{{{{{{{girl leaning forward}}}}}}}}}, {{{cowgirl position}}}, {{{girl on top}}}, {{{{{{girl sitting down on male}}}}}}, girl face foreshortening ,{{girl leaning towards viewer}}
+||=
+
+ネガティブ
+=|BOX|
+Paizuri,{{{{{{{v-sign}}}}}}}, {{{{{{{{finger to cheek}}}}}}}},  {{{{{{{{muscular girl}}}}}}}}, {{dutch angle}}, {{{{{{{{from side}}}}}}}}, {{{{{{{{{{girl have male body}}}}}}}}}}, fellatio, {{{{{{{{{{pov hands}}}}}}}}}}, {{{{male’s legs}}}}, {{{{{{{{{{{{girl on back}}}}}}}}}}}}, foot focus, {{{multiple males}}},  {{{{{{{{{{{{clothed male}}}}}}}}}}}}, selfie, outstretched arms,  {{{v arms}}}, multiple girls,  {{{{{male’s nipples out of frame}}}}}, {{{{{{{"girl's fingers" out of frame}}}}}}}, grab arms, {{holding hands}}, hands on own breasts,  {{{{fingers on own chest}}}},{{{{{{{{{{{{finger_to_mouth}}}}}}}}}}}}},  {{hand on own abdomen}}, {{hand on head}}, {{{{{{{arms behind back}}}}}}},arms at side,  {{{{{{standing}}}}}},  {multiple penises},  {disembodied penis},{{{extra arms}}},  {{extra hands}},  {{{{{{{{{{bad hands}}}}}}}}}}, {{{{{{{{{{bad fingers}}}}}}}}}}, {{{{{{{{{{{{{{extra nipples}}}}}}}}}}}}}}, {{{{{{fused bodies}}}}}}, {{{{{{{{multiple view}}}}}}}},  {{solo}}, {{{{{interlocked fingers}}}}}, join hands, {{{bara}}}, {{{yaoi}}}, {{arm up, arms up}}, {{hand up, hands up}}
+||=
+
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2b0ebef2b5272af1-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/2b0ebef2b5272af1.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fb8ff2b9e69a8493-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fb8ff2b9e69a8493.png]]
+
+
+
+
+* 調査履歴（乳首舐め）
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/27cecb88098b69e7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/27cecb88098b69e7.png]]
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/74df32dc50d14b3d-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/74df32dc50d14b3d.png]]
+=|BOX|
+pov, {{{close face, on stomach}}}, {{{licking nipple on male chest}}}
+||=
+とi2i駆使してここまでは到達したが乳首舐めさせるのは難しい。
+

@@ -1,0 +1,52 @@
+[+]編集用コードテンプレート
+*** リファレンス
+- [[wiki改善]]
+- [[wiki編集方法]]
+- [[Wiki_EditingResources]]
+
+*** テーブルテンプレート
+▼ プロンプト用：汎用
+
+■PromptTable_t1_v1.0.0
+R18呪文全文より引用。Noを追加
+=|BOX|
+{| class="nanj_prompt_table edit sort"
+|~No|~w(100px):意味|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):備考|サンプル|
+|　|　|　|　|　|　|
+|}
+
+----------------------
+||=
+
+
+
+*** 編集用コードテンプレートのページを埋め込み表示
+
+''テーブルを追加したときはこのコードを記載してください''
+=|BOX|
+#include(Wiki_EditingResources)
+||=
+
+
+*** ページテンプレート
+
+▼EditingResources + PromptTable_t1_v1.0.0
+=|BOX|
+#include(Wiki_EditingResources)
+
+{| class="nanj_prompt_table edit sort"
+|~No|~w(100px):意味|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):備考|サンプル|
+|　|　|　|　|　|　|
+|}
+
+----------------------
+||=
+[END]
+
+*** コードの追加方法
+
+=|BOX|
+=|(box=textarea)|
+テキスト
+||=
+||=

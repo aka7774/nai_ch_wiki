@@ -1,0 +1,312 @@
+ここは「Availableタブ→Load from:ボタン」で入れられるやつのページ
+
+1111に追加インストールする拡張機能やでー
+使った人は感想とか書いてって欲しい
+「Install from URLタブ」で入れるやつは[[Extensions_URL]]に書こう
+
+#contents
+
+* 導入方法
+
+インストールがwebで完結するので簡単
+
++ 1111が古かったら新しくする
++ --listenか--shareしてるなら[[ローカルのwebui-user.bat]]も見て
++ Extensionsタブ→Availableタブ→Load from:ボタン
++ 好きなのを選んでInstall
+
+** 使い方
+
+だいたいは、タブが増えてるか、txt2img/img2imgのScriptドロップダウンで選ぶか。
+どっちにも無かったらreadmeとかちゃんと読んだほうがいい。
+
+*** リポジトリへのリンク
+
+AvailableタブのExtension名のリンクから配布元リポジトリに飛べる
+readmeもそこにあるはず
+
+** アップデート方法
+
+InstalledタブのCheck for updates→Applyを押す
+
+** 注意
+
+- インストーラーがついててvenvに何か入れるものも多い
+- 安定とは限らない
+-- アンインストールはフォルダごと消すほうが安全っぽい
+
+* 日本語訳
+
+110スレ274
+
+wuiの拡張機能の日本語訳作った
+https://rentry.co/Extensions-index_ja/raw
+
+使い方
+[+]
+https://i.imgur.com/Wj3ihJd.png
+[END]
+
+deepl無料アカウントでapi制限キツいから更新は週1の予定 
+
+* 一覧
+
+- 「Load from:ボタン」を押して出てくる一覧の順に並んでるやでー
+
+** Aesthetic Gradients
+
+1枚または数枚の写真から埋め込みを作成し、それを使って生成された画像に自分のスタイルを適用することができます。
+
+** Wildcards
+
+サンプル拡張機能です。プロンプトで __name__ 構文を使用し、wildcards ディレクトリにある name.txt というファイルからランダムな行を取得できるようにします。同様の機能については、動的プロンプトも参照してください。
+
+- 後述の「Dynamic Prompts」の前身で機能が少ない。
+
+** Dynamic Prompts
+
+ランダムまたは組み合わせによるプロンプト生成のための表現力豊かなテンプレート言語と、深いワイルドカードディレクトリ構造をサポートする機能を実装しています。
+
+- プロンプトに {flat chest|small breasts|medium breasts|huge breasts} と書くとランダムで乳の大きさが変わる
+- __breasts__ と書いて、WILDCARD_DIR/breasts.txt に改行区切りで乳のサイズを書いても同じ
+- つまりガチャに飽きた時の味変用やね
+- PNG Infoには{}のまま出てくるのでどれが選ばれたかはわからない
+
+** Dreambooth
+
+Shivam Shiaro氏のレポを元に、低VRAMのGPUに最適化したDreamboothのトレーニング。
+
+- NMKDより速くて設定が細かいので主戦力っぽい。
+- 手作業でコマンドからcu116をインストールする必要がある。
+- 環境によってさまざまなエラーが出るので英語読んで自己解決できると捗る
+
+** Smart Process
+
+自動被写体識別、キャプション被写体交換、アップスケーリング/顔復元などのスマートプリプロセスを搭載。
+
+- Extrasの親戚みたいな感じ
+- トリミング、キャプション付け、拡大を順番に実行できる。
+- この通りの手順で処理して欲しい用事が無いと必要ないかも。
+
+** Image browser
+
+作成した画像をWebブラウザで閲覧するためのインターフェイスを提供する。
+
+- 生成した画像の履歴を閲覧したり気に入った画像を登録することができる。
+- 以前に一時期だけ本体に入ってた機能がExtensionsに移動した。
+- txt2imgの履歴からimg2imgとかExtrasしたい時にはすごく便利。
+- Generate Infoも出るのでプロンプト見たり教えたりもできる。
+
+** Inspiration
+
+アーティストやアートジャンルの典型的なスタイルの写真をランダムに表示し、選択後にそのアーティストやジャンルの写真がより多く表示されます。そのため、制作時にアートのスタイルを選択するのが難しいという心配はありません。
+
+** Deforum
+
+- キーフレーム可能なシーケンス、動的な数学パラメータ（プロンプトの内部も）、動的なマスキング、深度推定、ワープをサポートする、2Dおよび3Dアニメーションのための広範囲なスクリプトであるDeforumの公式移植版です。
+
+** Artists to study
+
+アーティストが生成した写真をカテゴリー別にギャラリーとして表示します。
+
+** Aesthetic Image Scorer
+
+Chad ScorerをベースにしたCLIP+MLP Aesthetic Score Forecastorで生成画像の美的スコアを算出。
+
+** Dataset Tag Editor
+
+学習用データセットのキャプションを編集することができます。
+
+** auto-sd-paint-ext
+
+Kritaのプラグインです。
+
+** training-picker
+
+動画からキーフレームを自動抽出し、そのフレームを手動で512x512クロップしてモデル学習に使用できるタブをWebuiに追加しました。
+
+** StylePile
+
+結果のスタイルに影響を与える要素をプロンプトに簡単にミックス＆マッチさせる方法です。
+
+** (削除) Unprompted
+
+- https://github.com/ThereforeGames/unprompted
+
+** Booru tag autocompletion
+
+Danbooruなどの画像ブールボードからのタグの自動補完ヒントを表示します。ローカルのタグCSVファイルを使用し、カスタマイズのためのコンフィグも含まれています。
+
+- プロンプト入力時にDanbooruのタグの候補を表示・補完してくれる。ネガティブプロンプトでも効くので便利。
+
+** novelai-2-local-prompt
+
+NovelAIで使用しているプロンプトをWebUIで使用できるように変換するボタンを追加する。また、以前使用したプロンプトを呼び出すことができるボタンを追加する。
+
+- web版のプロンプトをローカル版向けに変換できる
+- プロンプトとネガティブプロンプトを同時に変換する
+- Quality TagやUC L+Bも付与する
+- HistoryボタンはUndoっぽい
+
+** Tokenizer
+
+CLIPモデルがどのようにテキストをトークン化するかをプレビューできるタブを追加しました。
+
+** ja_JP Localization
+
+- UIを日本語化する
+- 以前に一時期だけ本体に入ってた機能がExtensionsに移動した。
+- 以前はプロンプトの強弱を変えるキーボードショートカットが利かなくなっていたが直ったのか？
+
+** Latent Mirroring
+
+潜像にミラーリングやフリップを施し、微妙なバランスの構図から完璧な反射まで表現することができる
+
+** Embeddings editor
+
+スライダーを使って手動でテキスト反転埋込を編集できるようにします。
+
+** seed travel
+
+AUTOMATIC1111/stable-diffusion-webui 用の、シード間に存在する画像を作成するための小さなスクリプトです。
+
+- としあき曰はく「まあ、簡単にいうとVariation seedでパラパラエロ動画みたいなのが作れます。」
+- https://github.com/yownas/seed_travel
+
+** shift-attention
+
+プロンプトの注意をずらす画像のシーケンスを生成する。このスクリプトを使うと、プロンプト内のトークンの重みに範囲を与えて、最初のものから順にステップしていく一連の画像を生成することができる。
+
+- "photo of (cat:1~0) or (dog:0~1)" と入力すると猫から犬に変化する動画が作れるものらしい？
+
+** Detection Detailer
+
+Stable Diffusion Web UI のためのオブジェクト検出と自動マスクの拡張機能。
+
+- マスクの自動生成っぽい
+
+** prompt travel
+
+AUTOMATIC1111/stable-diffusion-webui の拡張スクリプトで、潜在空間内のプロンプト間を移動できるようにした。
+
+- プロンプトやstepsの細かい差を動画にして見るもの？
+
+** conditioning-highres-fix
+
+これは、実行時にDenoisingの強度に対してInpaintingのコンディショニングマスクの強度の値を書き換えるための拡張機能である。sd-v1-5-inpainting.ckpt のような Inpainting モデルで有効である。
+
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/4530?sort=new
+
+追記│「in paint時の～」と書かれている通り、通常のtext2imgでは高解像度fix時の融合に対する効果は見られませんでした。
+
+Highres fixしたときに人物が融合したりする問題を解決する拡張機能。公式リストに実装済み
+公式から引用した縦軸Denoise、横軸Cond Image mask weightの表。
+クソデカ画像注意：Webp：約3MB：[[https://image01.seesaawiki.jp/n/h/nai_ch/rWnETbnk4z.webp]]
+
+** Randomize
+
+txt2img の生成時にランダムなパラメータを許可します。このスクリプトは、選択されたスクリプトに関係なく、すべての世代で処理されます。つまり、このスクリプトは AUTOMATIC1111/stable-diffusion-webui-wildcards などの他のスクリプトでも機能することになります。
+
+** Auto TLS-HTTPS
+
+HTTPSの利用を簡単に、あるいは完全に自動で開始できるようにします。
+
+** DreamArtist
+
+対照的なプロンプトチューニングによる制御可能な一発画像生成の実現に向けて
+
+- 新しい学習ツールの1111実装
+- 以前は advanced Prompt Tuning method (APT) と呼んでいたもの
+
+** WD 1.4 Tagger
+
+学習済みモデルファイルを使用し、WD 1.4 タグを生成します。モデルリンク - https://mega.nz/file/ptA2jSSB#G4INKHQG2x2pGAVQBn-yd_U5dMgevGF8YYM9CR_R1SY
+
+** booru2prompt
+
+このSD拡張機能は、様々な画像ブーリアンからの投稿を、安定した拡散プロンプトに変えることができます。これは、彼らのAPIからタグのリストを引き出すことによって行われます。欲しい投稿へのリンクを自分でコピーペーストしたり、内蔵の検索機能を使ったりして、SDから離れることなくすべてを行うことができます。
+
+** Marge Board
+
+複数のレーンマージに対応(最大10レーン)マージの組み合わせをレシピとして保存、読み込みが可能。
+
+- 複数マージが簡単にできる。レシピをテキストで共有できる。
+
+** Depth Maps
+
+生成された画像からデプスマップを作成します。生成された画像は、VRヘッドセットやルッキンググラスなどの3Dデバイスやホログラフィックデバイスで表示したり、レンダーエンジンやゲームエンジンで変位補正をした平面上で使用したり、あるいは3Dプリントすることができます。
+
+** multi-subject-render
+
+1枚の画像に複数の複雑な被写体を作成するのに役立つ、深度を意識した拡張機能です。背景を生成し、複数の前景被写体を生成し、深度解析後にそれらの背景を切り出し、背景に貼り付け、最後にimg2imgできれいに仕上げます。
+
+背景と前景を生成して合成するやつ
+現状クソコラ製造機
+研究次第では使えるかもしれない
+
+** depthmap2mask
+
+MiDaSによる深度推定に基づき、img2img用のマスクを作成する。
+
+** Visualize Cross-Attention
+
+入力プロンプトに基づき、送信された入力画像のハイライトされたセクターを生成します。トークナイザー拡張と一緒に使用します。詳しくはReadmeをご覧ください。
+
+** DAAM
+
+DAAMとは、Diffusion Attentive Attribution Mapsの略です。注目テキスト（プロンプトに含まれる文字列でなければなりません）を入力し、実行します。各注目のヒートマップが重なった画像が元の画像と一緒に生成されます。
+
+** Prompt Gallery
+
+キャラクターのプロンプトを含むyamlファイルを作成し、generateを押すと、単語の属性と修飾子によって素早くプレビューすることができます。
+
+* 標準Scripts
+
+** Prompt Matrix
+
+- プロンプトに A | B | C と入れると、以下の2x2の画像を出力する
+-- Bなし、Cなし
+-- Bあり、Cなし
+-- Bなし、Cあり
+-- Bあり、Cあり
+-  A | B | C | D と入れると、BCDの有無全通りの2x4の画像を出力する
+
+** X/Y plot
+
+- [[X/Y Plotについて]]
+
+** Prompt from file or textbox
+
+- 複数のプロンプトで生成する
+- "A","B"と入れると、AのプロンプトとBのプロンプトでそれぞれ出力する
+- 複数行テキストを入力すると1行1プロンプトで出力
+- 以下のような形式でプロンプト以外も指定可能
+=|BOX|
+--prompt "プロンプトA" --negative_prompt "ネガティブプロンプトA" --outpath_samples "outputs/txt2img-images/A" --batch_size 2 --n_iter 5 --sampler_index 0 --cfg_scale 7 --steps 25 --seed 200000000
+--prompt "プロンプトB" --negative_prompt "ネガティブプロンプトB" --outpath_samples "outputs/txt2img-images/B" --batch_size 2 --n_iter 2 --sampler_index 1 --cfg_scale 10 --steps 30 --seed 200000000
+||=
+-- 指定可能な要素
+--- --outpath_samples: string
+--- --outpath_grids: string
+--- --prompt_for_display: string
+--- --prompt: string
+--- --negative_prompt: string
+--- --styles: string
+--- --seed: int
+--- --subseed_strength: float
+--- --subseed: int
+--- --seed_resize_from_h: int
+--- --seed_resize_from_w: int
+--- --sampler_index: int
+--- --batch_size: int
+--- --n_iter: int
+--- --steps: int
+--- --cfg_scale: int
+--- --width: int
+--- --height: int
+--- --restore_faces: boolean
+--- --tiling: boolean
+--- --do_not_save_samples: boolean
+--- --do_not_save_grid: boolean
+
+

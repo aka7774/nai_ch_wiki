@@ -1,0 +1,103 @@
+指示語とは別にパラメータによる指示も可能である。
+数値などの増減で要素の強弱が変化する。
+''%%%ただしローカル環境でのみ有効、公式での利用は不可能%%%。''
+公式で参考にする場合は{}(1.05倍)、[](0.95倍)の数で調整
+※&color(,#ffef00){盛りすぎに注意}
+下記は1girl,例,で検証したもの。※百合及びディティールは別のプロンプト
+
+*&size(32){泣き顔}
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Bk8QLcVrJd.jpg,300)
+[END]
+*&size(32){怒り}
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/F0wvijkLa4.jpg,300)
+[END]
+*&size(32){眠い}
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_nmcWqCrae.jpg,300)
+[END]
+*&size(32){ロングヘアー}
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/paJrsedrXl.jpg,300)
+[END]
+*&size(32){雨}
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HjFPx2MYJK.jpg,300)
+[END]
+*&size(32){バストサイズ}
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5TOJUMVLAW.jpg)
+[END]
+*&size(32){ぽっちゃり}
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yaaaG58quR.jpg)　&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jiimk7AjT7.jpg)
+[END]
+*&size(32){髪飾り}
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4htpo323GU.jpg)
+[END]
+
+*&size(32){百合}
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zp2TYQkdJ4.jpg)
+[END]
+*&size(32){ディティール}
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sQXMQSfWOW.jpg)
+[END]
+*&size(32){邪悪な笑顔}
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/h71INK5mDo.jpg)
+[END]
+*&size(32){アヘ顔&color(#ff0000){※閲覧注意}}
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/17GiEVfqJc.jpg,300)
+[END]
+*&size(32){ミク＆ラブライブ競合試験}
+[+]
+657 名前：名無しで叶える物語(たこやき)[sage] 投稿日：2022/10/16(日) 09:07:33.44 ID:ZtT/jN2s
+ローカル環境ないけどパラメーター検証やってみた
+
+miku
+https://i.imgur.com/ypkq45A.png
+
+miku, &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;love live!]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+https://i.imgur.com/JLNXya5.png
+
+miku, &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;love live!]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+https://i.imgur.com/B3M5wTK.png
+
+miku, &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;love live!]]]]]]]]]]]]]]
+https://i.imgur.com/HqdICDG.png
+
+miku, &#91;&#91;&#91;&#91;&#91;&#91;love live!]]]]]]
+https://i.imgur.com/6O8aU7z.png
+
+miku, love live!
+https://i.imgur.com/JJItHEA.png
+
+miku, {{{{{love live!}}}}}
+https://i.imgur.com/uQ8oTeM.png
+
+miku, {{{{{{{{love live!}}}}}}}}
+https://i.imgur.com/Rwr36KC.png
+
+miku, {{{{{{{{{{{{love live!}}}}}}}}}}}}
+https://i.imgur.com/XKRdnlF.png
+
+miku, {{{{{{{{{{{{{{love live!}}}}}}}}}}}}}}
+https://i.imgur.com/i5WMRB6.png
+
+miku, {{{{{{{{{{{{{{{{{{{love live!}}}}}}}}}}}}}}}}}}}
+https://i.imgur.com/jFJD0yN.png
+[END]
+*&size(32){エッチなエフェクト}
+[+]
+(trembling effect motion lines with sexual climax:1.5)
+って感じかなり強めに入れるとエッチなエフェクトがそこそこ掛かったのでオススス
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CVWxKyzU7W.png)
+[END]
+
+
+

@@ -1,0 +1,69 @@
+*全体
+
+https://gigazine.net/news/20220907-automatic1111-stable-diffusion-webui/
+https://www.python.org/downloads/
+https://git-scm.com/download
+https://huggingface.co/CompVis/stable-diffusion-v1-4
+*PCオフラインで実行する
+以下たたき台です
+----
+*Windows
+**インストール
+***共通
++実行できる環境なのかチェック
++必要なソフトウェアをダウンロードする https://git-scm.com/download https://git-scm.com/download
++ドライバーをダウンロードする https://developer.nvidia.com/cuda-11.3.0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
++ダウンロードに必要なアカウントを作成する　https://huggingface.co/CompVis/stable-diffusion-v1-4
++コマンドプロンプトの起動(cmd.exe OR powershell powershellはコード実行許可の手順も)
++ モデルのダウンロード
+*** cmd.exe
++ フォルダ作成
++ cd %HOMEPATH% C:\Users\【自分のWindowsでのログイン名】に移動
++ git clone sd-v1-4.ckpt model.ckpt モデルの名前変更
++ RENAME   sd-v1-4.ckpt model.ckpt モデルの名前変更
++ MOVE　hoge models　モデルの移動
++ mkdir GFPGAN
++ cd GFPGAN
++ git clone https://github.com/TencentARC/GFPGAN.git ダウンロード
++ cd ..
++ mv hoge hoge GFPGANをStable Diffusion web UIフォルダに入れる
++ call webui-user.bat
+=|SH|
+@echo off
+REM たたき台　未完成
+set INSTALL_DIR=インストールしたいディレクトリ
+set NOVELAI_MODEL_DIR=novelAIの使用したいモデルのディレクトリ
+set NOVELAI_MODEL=使用したいモデルのファイル名
+
+mkdir INSTALL_DIR
+cd /d INSTALL_DIR
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd ./stable-diffusion-webui
+copy NOVELAI_MODEL_DIR\NOVELAI_MODEL .\models
+RENAME models\NOVELAI_MODEL model.ckpt
+webui-user.bat
+firefox -url 127.0.0.1:7860
+echo 次回以降起動はwebui-user.batをクリックしてください
+pause
+||=
+----
+
+*** powershell
+
+**** powershellのスクリプト実行の設定
+**** powershellの手順
+----
+アップデート
+----
+*Linux
+** nvidia
+** Radeon
+----
+*クラウド環境を活用する
+**Google Colab
+
+
+
+
+
+

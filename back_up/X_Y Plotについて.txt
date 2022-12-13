@@ -1,0 +1,94 @@
+* X/Y Plotについて
+webuiで使用できる機能。
+2種類の要素を変動させながら出力した画像をまとめてくれるツール。
+プロンプトの調整や検証用画像の作成にとても便利。
+
+例：ScaleとStepを変動させたときの出力を比較
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UcrCmElUGG-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/UcrCmElUGG.jpg]]
+
+
+** 各軸に設定できる要素
+|~選択肢|入力値の型|動作|備考|
+|Nothing|文字列 (str)|何もしない||
+|Seed|数値 (int)|対応する値の変更|-1でランダムなSeedを設定できる。~~（決定されたシードは軸毎に固定）|
+|Var. seed|数値 (int)|対応する値の変更|ExtraのVariation Seed値~~-1でランダムなSeedを設定できる。~~（決定されたシードは軸毎に固定）|
+|Var. strength|数値 (float)|対応する値の変更|ExtraのVariation強度|
+|Steps|数値 (int)|対応する値の変更||
+|CFG Scale|数値 (float)|対応する値の変更||
+|Prompt S/R|文字列 (str)|プロンプト内文字列の置換|詳細は下記|
+|Prompt order|文字列 (str_permutations)|プロンプト内文字列の入れ替え|詳細は下記|
+|Sampler|文字列 (str)|対応する値の変更|値の一覧は下記|
+|Checkpoint name|文字列 (str)|対応する値の変更|入力値は部分一致でも可っぽい|
+|Hypernetwork|文字列 (str)|対応する値の変更|入力値は部分一致でも可っぽい|
+|Hypernet str.|数値 (float)|対応する値の変更||
+|Sigma Churn|数値 (float)|対応する値の変更||
+|Sigma min|数値 (float)|対応する値の変更||
+|Sigma max|数値 (float)|対応する値の変更||
+|Sigma noise|数値 (float)|対応する値の変更||
+|Eta|数値 (float)|対応する値の変更|設定のDDIMで用いるeta (noise multiplier)|
+|Clip skip|数値 (int)|対応する値の変更|設定のstop…layers of CLIP model|
+|Denoising|数値 (float)|対応する値の変更|img2imgのノイズ強度|
+** 値入力のフォーマットについて
+カンマ区切りで指定する。
+-red, blue, white
+カンマを含む文字列はダブルクオーテーションで括る。
+-"masterpiece, high quality","highly detailed"
+ダブルクォーテーションを含む文字列は二重ダブルクオーテーションでエスケープ。
+-"in ""BIG"" city, cyber","in ""SMALL"" town, rural"
+
+数値はカンマ区切りに加えて以下のフォーマットが使用可能。
+-1-5 = 1, 2, 3, 4, 5
+-1-5 (+2) = 1, 3, 5
+-10-5 (-3) = 10, 7
+-1-3 (+0.5) = 1, 1.5, 2, 2.5, 3
+-1-10 [5] = 1, 3, 5, 7, 10
+-0.0-1.0 [6] = 0.0, 0.2, 0.4, 0.6, 0.8, 1.0
+
+** Prompt S/Rの動作について
+1番目に指定した文字列を2番目以降の文字列で置換していく。
+なので元となるプロンプトに1番目の文字列が含まれていないとエラーとなる。
+置換はプロンプト、ネガティブプロンプト内に出現する''すべての個所''で置換される。
+
+-例
+--元プロンプト : (A girl in the city, portrait ).(her hair is blue).(masterpiece, extremely detailed face)
+---Prompt S/R(X軸) : blue, red,  dark
+---Prompt S/R(Y軸) : hair, eyes, sky
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TShZYm8ym7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TShZYm8ym7.png]]
+
+※処理はX軸→Y軸の順で行う。両方でPrompt S/Rをする場合は気に留めておくとええかも。
+
+** Prompt orderの動作について
+プロンプト内の文字列を指定し並び変えて比較する。
+すべての組み合わせについて行うのですぐ膨大な数になるので注意(5種類の場合は1*2*3*4*5で120パターンとか)
+
+-例
+--元プロンプト : (A girl in the city, portrait ).(her hair is blue).(masterpiece, extremely detailed face)
+---Prompt order(X軸): "(A girl in the city, portrait ).","(her hair is blue).","(masterpiece, extremely detailed face)"
+---Prompt S/R(Y軸): blue, red,  dark
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/t25i_ipNCI-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/t25i_ipNCI.jpg]]
+
+※入れ替え対象と同じ文字列が複数ある場合は一番前の文字列一つについて並び替えを行う。
+※X軸でPrompt S/Rで置換した後にY軸で順番入れ替えようとするとメチャクチャなことになるので順序に注意。
+** Samplerの名称一覧
+表示名と別名のどちらでも使える。
+|~Samplerの表示名|Samplerの別名|
+|Euler a|k_euler_a|
+|Euler|k_euler|
+|LMS|k_lms|
+|Heun|k_heun|
+|DPM2|k_dpm_2|
+|DPM2 a|k_dpm_2_a|
+|DPM fast|k_dpm_fast|
+|DPM adaptive|k_dpm_ad|
+|LMS Karras|k_lms_ka|
+|DPM2 Karras|k_dpm_2_ka|
+|DPM2 a Karras|k_dpm_2_a_ka|
+
+** 検証コピペ用
+*** 構図
+full body, foot focus, face only, pov, turn one's back, from below, from above, ass focus, side profile, close-up photography, close-up, portrait, upper body, cowboy shot, 
+looking at viewer, from behind, from side, looking away, looking back, looking down, looking up, looking to the side, looking afar
+*** サンプラー
+k_euler_a, k_euler, k_lms, k_heun, k_dpm_2, k_dpm_2_a, k_dpm_fast, k_dpm_ad, k_lms_ka, k_dpm_2_ka, k_dpm_2_a_ka
+*** 数値
+0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0

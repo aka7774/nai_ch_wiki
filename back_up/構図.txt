@@ -1,0 +1,83 @@
+#contents
+
+* テーマ
+数単語以上でのいい感じのやつ
+
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|{{realistic urtra details}}, {winning post},horse_riding form,racehorce|motorcycle,bicycle|競馬の騎手の乗り方|競馬ゲームの名前入れたらモンキー乗りになる。但し今度は馬がおかしくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D.png]]|
+|riding_form,horse, horseback riding,||騎乗|馬に乗ってくれる。競馬のモンキー乗りは不明。馬をバイクや自転車に変えることも可能|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti.png]]|
+|〇〇_form||何かをしている構図|〇〇+formで何かをしている姿勢と指定するとだいたいその格好になってくれる上はrunning_form下はcooking_form|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv.png]]|
+|waist armpit navel parted under covers||腋が見える格好でシーツの上に寝転んだポーズ|抱き枕とかピンナップによくある構図。画面の中心が胸元ぐらいになる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ONg9RWJHP8-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ONg9RWJHP8.png]]|
+||||プロンプト、UCともに入力せず、UCでエンターを押すと出る。なぜか額縁多め|https://image01.seesaawiki.jp/n/h/nai_ch/6YebvC02Bw.png|
+|1girl,{&#91;Running with a forward lean]},dutch angle,blurry background, dynamic pose,|{{error}},{{worst quality}}/{normal quality}/{{lowres}},|走ってるポーズ|手足はよくおかしくなる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WZ9OP__EsK-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/WZ9OP__EsK.png]]|
+|{{{{{{{{Kiss the pov}}}}}}}},closing eyes,expressionless||キス顔|視点にキス、閉じた目、無表情の３つ、必要に応じて差し替える|https://image01.seesaawiki.jp/n/h/nai_ch/kHUSM_jO8N.png|
+|authentic face,authentic skin texture,masterpiece,highly detailed, {{1girl}},solo, loli girl,school uniform,head tilt,leaning forward,[embarrassed],incoming kiss,closed eyes,pov,{close up},{{lips focus}},looking at viewer,|teeth,tongue out,extra eyebrows,extra nose, bad face,bad ears,   bad eyes,bad hairs, poorly drawn face,bad anatomy|キス顔|目がずれがち|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jJoE2T2jVp-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/jJoE2T2jVp.jpg]]|
+|flat lay photography,from above||俯瞰視点||https://image01.seesaawiki.jp/n/h/nai_ch/XyIjcdDUQa.png|
+|tachi-e, standing, full body,||立ち絵|tachi-eだけだと安定しにくい|[[https://image01.seesaawiki.jp/n/h/nai_ch/UbgxP7Az6q.png]]|
+|wall,bend over backwards||壁尻||https://i.imgur.com/KvkZ1kN.png|
+|panorama,fisheye lens||魚眼レンズ|写したい範囲が広いなどやや無理のある構図でもfisheye_lensでどうにかなることもある||
+|}
+
+* 単語集
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|wheelchair|車椅子||https://image01.seesaawiki.jp/n/h/nai_ch/dhnXw2Y1eF.png|
+|restrained|大人しい|後ろ手や頭の上で手を拘束された絵ができやすい。基本的にR18用、腋が見える構図が多い|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1ZSHGgFhdr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1ZSHGgFhdr.png]]|
+|symmetry|対称|左右対称の絵になりやすい~~そのため人物一人の場合は真正面の絵になりやすい|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KuR_qKigq5.png)|
+|stereogram|立体視||https://image01.seesaawiki.jp/n/h/nai_ch/GpubLnKFYh.png|
+|dutch angle|ダッチアングル|カメラが水平ではなく傾く|https://image02.seesaawiki.jp/n/h/nai_ch/g4pbIySNKI.png|
+|girls sandwich||キャラクターの距離が縮まり密度が上がる|https://image01.seesaawiki.jp/n/h/nai_ch/DWDhKPRJpG.png|
+|sitting_on_stairs|階段に座る||https://imgur.com/HIEOfEM.png|
+|solo|1人|danbooruの基準では、以下はsoloに含まれない~~ - 同一人物を異なる視点から描いたもの（→multiple views）~~ - 抱き枕の両面 ~~ - 1人以外がモブであり詳細に描かれない（→solo focus） ~~ - 性行為の一方が顔無しや身体一部だけ（→solo focus）||
+|aerial|空中|体の形が崩れやすい|https://image01.seesaawiki.jp/n/h/nai_ch/iADGEl7zt2.png https://image02.seesaawiki.jp/n/h/nai_ch/R1Lrve9AxZ.png|
+|turn one's back|背中を向ける|||
+|cover もしくは comic|表紙のようなレイアウト（nsfwの有無で健全向けか成人向けかに変わる）|レーティングの表示を消したければ、 ~~ UCにdoujin_coverを入れる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YML9wlPROx-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YML9wlPROx.png]]|
+|pov|主観|視線:カメラ~~体:正面|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4ZdWxoNOHr.png)|
+|face only|顔を強調する奴|||
+|dakimakura|抱き枕|assを付け足すと片側がケツを向けてくれやすくなる傾向|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D4RNtzIZKv.png)|
+|foot focus|足(くるぶしから下)フォーカス||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/72c8tESlGp.png)|
+|from below|ローアングル、アオリ、あおり||https://image02.seesaawiki.jp/n/h/nai_ch/7zMjdEI0ZE.png|
+|from above|ハイアングル、俯瞰||https://image01.seesaawiki.jp/n/h/nai_ch/YwiMkqcqoJ.png|
+|ass focus|尻中心の構図|||
+|upskirt|尻中心の構図（主にスカート内部）|||
+|head_out_of_frame|顔があまり写らなくなる|||
+|profile~~もしくは~~side profile|横顔||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/50f20a77475718c8-s.png)|
+|phone screen|スマホ越し視点||https://image01.seesaawiki.jp/n/h/nai_ch/JYD8gPgGs8.png|
+|}
+
+* 被写体サイズ
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|close-up photography|接写（機械翻訳）|キャラとの距離が近くなる||
+|face|顔|頭から肩まで|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/A9zf6KiNkl.png)|
+|close-up|クローズアップ|顔のみ|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/bkOsTRZ8xa.png)|
+|portrait|ポートレート|頭から肩まで|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/un1PhQucd3.png)|
+|upper body|上半身|顔からへそまで|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PYbZo3uySJ.png)|
+|cowboy shot|カウボーイショット|顔から太ももまで|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZZYqTCwpX_.png)|
+|full body|全身|顔アップに比べて顔が崩れやすくなるのは注意。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D8rtVeV8tH.png)|
+|lower body|下半身|腰からつま先まで|https://image01.seesaawiki.jp/n/h/nai_ch/V1D38DXYxc.png|
+|}
+
+* 体、顔、視線の向き
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|from below|下から|ローアングル、looking downはキャラを下に向かせるものだが、こちらはカメラ自体を下からの画角にするもの|https://image02.seesaawiki.jp/n/h/nai_ch/UgygQkyswk.png|
+|from behind|後ろから|体:後ろ向き|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PJqwHs4QjE.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/hxKWcFS5HC.png)|
+|from side|横から|体:横向き|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/H9vUN0IBQK.png) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/I6HXws8R80.png)|
+|looking at viewer |カメラ目線|視線:カメラ|https://image02.seesaawiki.jp/n/h/nai_ch/_eJak6KcS0.png|
+|looking away|よそ見|顔:正面以外(斜め後ろ、後ろが多め)~~視線:顔と同じ向き|https://image01.seesaawiki.jp/n/h/nai_ch/Rx55yJhQQF.png|
+|looking back|振り向く|体:斜め後ろ~~顔:斜め前~~視線:カメラ|https://image02.seesaawiki.jp/n/h/nai_ch/ZaTydoNxmS.png|
+|looking down|下を向く|顔:下を向く|https://image01.seesaawiki.jp/n/h/nai_ch/XgcFUciE9w.png https://image01.seesaawiki.jp/n/h/nai_ch/t5Yn4g8M6r.png|
+|looking up|上を向く|顔:上を向く|https://image02.seesaawiki.jp/n/h/nai_ch/430Nwe5EQf.png https://image01.seesaawiki.jp/n/h/nai_ch/LyvCahHxa9.png|
+|looking to the side|横を向く|顔:横を向く|https://image01.seesaawiki.jp/n/h/nai_ch/GCxwwfImkZ.png https://image02.seesaawiki.jp/n/h/nai_ch/__BQPIM79O.png|
+|looking afar|ぼんやりと遠くを見る|視線:顔の向きと同じになる~~あんまり上手く効いてないのでexpressionlessと併用が必要かも?|https://image02.seesaawiki.jp/n/h/nai_ch/ZMb6CNJEtS.png|
+|}
+
+
+
+
+
+
+
+

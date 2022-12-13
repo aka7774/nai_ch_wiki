@@ -1,0 +1,27 @@
+※ローカル版
+&color(#ff0000){+shiny hage+}　←こんな感じで要素を意味のない記号で区切るとその要素が外に漏れない（っぽい
+この場合「shinyがハゲにだけ掛かって他には影響を及ぼさない」（っぽい
+
+※ただし効果が実感できなかったり、なくても反映されてる可能性もあるのでより検証が必要
+
+例
+「pixel」系の単語を背景と人物で切り離すのに成功した例
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cucTAnDfwd-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cucTAnDfwd.png]]
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5fPJdX8AkH-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/5fPJdX8AkH.png]]
+
+realism, realistic, illustration, +(pixel street:1.5)+, 18 years old &#128171;&#128103;&#128150; wearing [harajuku school uniform:(kawaii pattern on clothes:1):(accessories on clothes:1.5):0.3], (cute accessories on ash brown hair:1.3), long sleeves, attractive smile, small breast, just walking
+
+他にも+glowing 淫紋+で体全体を光らせずに淫紋だけを光らせてる絵もあったので、切り離したい要素がある場合はおまじない程度に入れてもいいかも
+
+**検証結果
+&size(24){''効果なし''}
+いわゆる確証バイアスと思われる。上記の例は偶然であり、区切りを入れても意味のない変化があるだけ。
+試しにglowing puplisに+を大量につけても関係ない部分が光ってしまった。
+もちろん他のプロンプトでも検証したが隔離効果は見られなかった。
+
+検証画像
+[+]
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3Bl8xAv2Sh-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/3Bl8xAv2Sh.jpg]]
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/iTik9D0mxM-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/iTik9D0mxM.jpg]]
+[END]

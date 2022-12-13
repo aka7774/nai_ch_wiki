@@ -1,0 +1,82 @@
+#contents
+
+* 高速化オプションの利用
+
+stable diffusionに用意されているxformersというオプションを利用する。
+理論上、このオプションを付けてるときと付けてないときで絵が変わるらしいが
+少なくともアスカプロンプトでは明確な違いを確認できず、演算時間が2割程度早くなる。
+(明確な違いが出る条件がわかる方がいたらここに新章作って記録していってほしい)
+
+検証ページ作ったので記録はこちらへ
+→「[[xformersの検証]]」
+
+** 対応GPU
+
+- NVIDIA
+- GeForce 1000番台～3000番台(4000番台は後述)
+- GeForce 900番台以前でも動くけど逆効果だったという報告あり
+
+** 方法
+
+stable-diffusion-webuiディレクトリ直下にあるwebui-user.batを修正する。
+
+6行目修正前
+> set COMMANDLINE_ARGS=
+
+6行目修正後
+> set COMMANDLINE_ARGS= --xformers
+
+** 利用するライブラリの更新
+
+4090で高速化する方法。3060でもほんのちょっとだけ早くなったとの報告あり。
+
+なんJNVA部★84 
+http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
+
+> 265 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fb72-iO6U)[sage] 投稿日：2022/11/02(水) 23:51:01.19 ID:n0RTOjsJ0 [5/6] ~~
+> >>239>>240 ~~
+> 俺も2週間ぐらい同じ感じだったけどxformersオプション入れるだけじゃ多分駄目なんよ ~~
+> これから4090買う人のために書いておく こっちはドライバは最新 Win10 CPUは5900X MEM32G ~~
+> webuiのvenv内に入ってから(stable-diffusion-webui\venv\Scripts\activateで入れる) ~~
+> pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116 ~~
+> https://pomf2.lain.la/f/5u34v576.7z ~~
+> ↑のファイルをstable-diffusion-webui\venv\Lib\site-packages\torch\lib ~~
+> にコピペ ~~
+> pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116 ~~
+>  ~~
+> 266 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fb72-iO6U)[sage] 投稿日：2022/11/02(水) 23:51:28.93 ID:n0RTOjsJ0 [6/6] ~~
+> (続き) ~~
+> 起動オプションに追加 ~~
+> --xformers --opt-channelslast ~~
+> これで18it/sぐらい出るようになった ~~
+> Windows ディスプレイ設定→グラフィックの設定→GPUアクセラレータによるGPUスケジューリングをOFFで再起動する ~~
+> これで24it/s出るようになった うまくいったら報告頼む 環境壊れたらすまんvenv消してくれ ~~
+
+* Stepsを減らす
+
+出来るだけ少ないStepsでも期待通りの絵が出る方法を模索する。
+Euler a以外(収束するサンプラー)で再現できないか試す。
+DPM++ 2M Karrasは15Stepsでもそれなりに映えるのでおすすめ。
+
+* Linuxに入れる
+
+仮想化ではなく生で挿入れる
+Windowsと比べて多少高速化するらしい・・・？
+虎の子のゲーミングPCでは厳しいやね
+サブ機とかお古になったら検討してもいいかも
+なおインストールが簡単かは謎
+
+* しばらく使わないときは Dreambooth Extension を削除する
+
+起動時間が劇的に変わる
+UIからオフにするだけではダメ
+フォルダごと別の場所に退避させとくとか、いっそバッサリ消すとか
+
+* venvを作り直す
+
+Windows再インストール並みの最終手段。
+最新の1111に必要なものしか入らなくなるので軽くなる、かも。
+
+* GPUを買い替える
+
+{{{give me money}}}

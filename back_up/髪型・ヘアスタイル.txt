@@ -1,0 +1,28 @@
+とりあえず作った
+・現実のヘアスタイルの名前
+・呪文
+・ネガティブプロンプト
+・備考
+・参考画像
+
+*検証データ
+[+]
+{| class="sort edit nanj_prompt_table"
+|~髪型|呪文|ネガティブプロンプト|説明|備考|サンプル|
+|お団子|1girl,Her hair style is bun cover,white background,|なし|||https://image01.seesaawiki.jp/n/h/nai_ch/bbOVbQ1gIE.png|
+|三つ編み|1girl,Her hair style is  Braid,white background,|なし|||https://image02.seesaawiki.jp/n/h/nai_ch/Htzx4mcIcp.png|
+|ツインテール|1girl, Her hair style is twin tail,white background,|なし|ツインテール||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3l_uj6SNbD.png)|
+|}
+[END]
+*検証完了データ
+シードは0, 2 , 7, 9でお願いします(暫定)
+理想としては0~10まで11個作成してください
+大量生成したので画像をまとめたいというときは以下のコードを参考に改造してスクリプトを回すと楽です
+画像のファイル名はなんかの連番-シード-呪文.拡張子　で行うと大変スムーズに編集できます
+https://pastebin.com/T06UTz9X
+[+]
+{| class="sort edit nanj_prompt_table"
+|~髪型|呪文|ネガティブプロンプト|説明|備考|サンプル(4つ)|
+|}
+----
+

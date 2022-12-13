@@ -1,0 +1,90 @@
+* wiki編集方法
+&size(32){このwikiの編集方法をまとめたページやで}
+&size(32){ここを見ながらwikiにガンガン呪文や情報を追加してくれや}
+
+** コードの追加方法
+
+Wikiがクソなのでコード表示機能が使えません
+代わりに以下を使います
+
+=|BOX|
+=|(box=textarea)|
+テキスト
+||=
+||=
+
+詳細はこちらの「テキストエリア表示する」を参考にしてください：整形済み・AA・ソースコード - Seesaa Wiki　簡単記法リファレンス - https://seesaawiki.jp/w/tag_guide/d/%C0%B0%B7%C1%BA%D1%A4%DF%A1%A6AA%A1%A6%A5%BD%A1%BC%A5%B9%A5%B3%A1%BC%A5%C9
+
+** テーブルの追加方法
+
+参照：[[wiki改善]]
+ページ内にこう書けばプロンプト追加機能がさしこまれる
+=|BOX|
+{| class="nanj_prompt_table edit sort"
+|}
+----------------------
+||=
+
+** 編集用コード一覧
+[[Wiki_EditingResources]]よりinclude表示してます
+
+#include(Wiki_EditingResources)
+
+
+
+** 画像の貼り方
+※方法が新旧二つある
+''新型版：リンクをそのままコピペ''
+まず、''旧式版の画像アップロードまでの手順を実施''する。
+その後表の一番上の行、右端の「画像リンク」と書いてある欄に
+URLを「画像リンク」欄にコピペして右端のAddを押すとそれだけで以下の旧式版手順でリンクを張るのと同じ結果になる。
+文字列を見なくていいので少し便利。
+| 1 |[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pJ3HO4A7yj.png)]] | 画像リンクとAdd | 
+
+''旧式版：普通に編集''
+''１．「編集」ボタンを押す''
+どの編集ボタンや鉛筆ボタンからでも編集できるけど、範囲が違う
+それぞれ押せばわかるけど、編集したい行の横のボタンを押すとその行だけ編集できるんや
+他の人の書き方を参考にしたい時は二番目の画像に映ってるページ右上の「編集」を開くと全体の書き方が見れるで
+| 1 | [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yS8XINa05s.png)]] | サイト全体編集 | 
+| 2 | [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5FHeHv5dvV.png)]] | ページ全体編集 | 
+| 3 | [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pJ3HO4A7yj.png)]] | 該当行編集 | 
+
+''２．画像をアップロードする''
+編集画面を開くと、こんな感じに見れる
+「全画面モードで編集」の少し右下、Twitterアイコンの左にモナリザみたいなアイコンがあるで
+それが画像アップロードボタンや、押すと2の画面に飛ぶからクリックかドロップで手持ちの画像をアップロードするんや
+| 1 | [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/euXKWBBQuK.png,50%)]] |  | 
+| 2 | [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/X5V2kJYUhB.png,50%)]] |  | 
+
+''３．画像リンクを張る''
+Wikiサイト上にアップロードした画像はリンクを貼れるで
+1の画像にある青いURLがアップロード済みの画像リンクや
+これを2の
+=||
+[[https://image01.seesaawiki.jp/n/h/nai_ch/dZmYHlnr7h.png]]
+||=
+か、
+=||
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dZmYHlnr7h.png)]]
+||=
+みたいに
+=||
+[[ ]]や[[&ref( )]]
+||=　
+で囲うとリンクになるで
+
+※Seesaawikiの仕様上はその二つの違いは以下らしい
+　既存の表に入れるだけなら&refだけつけとけば調整されるんや
+>>GIF(拡張子 .gif)、JPEG(拡張子 .jpg)、PNG(拡張子 .png)形式の画像であれば、「&ref(画像のURL)」または「#ref(画像のURL)」で囲まなくても、画像が表示されますが、画像のサイズ指定ができません。
+>>画像のサイズ指定を行なう場合は、「&ref(画像のURL)」または「#ref(画像のURL)」で画像のURLを囲んでください。
+>>&ref(画像のURL,横幅,縦幅)
+>>&ref(画像のURL,%)
+
+| 1 | [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dZmYHlnr7h.png,70%)]]| || 
+| 2 | [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AJXO1wRu1p.png,70%)]] || 
+
+画像の貼り方はこれで以上や。左下の保存ボタンを押して編集を終えればWikiに反映されるで
+
+----
+

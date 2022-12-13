@@ -1,0 +1,86 @@
+※ページ未完成・内容が増えてきたら分割予定
+
+2022年10月16日深夜、中国語(実際には台湾やマカオで使用される繁体字なので台湾産？)のクソ長ネガティブプロンプトを載せた画像が発見される。
+(現時点では「その他」ページに関連検証を収録)
+手打ちで全文入力した者、OCRでテキスト化した者、部分検索し元ネタを発見した者、結果の検証勢などによって「手指を避けない品質向上」「顔面アップ時の品質向上」などのハイグレード化の効果が確認された。一部はいわゆる『神絵師級』と評価される。
+
+その後、日本語圏以外の(現状なんＵ本スレは日本語圏では最大規模)言語圏・各国の呪文開発状況に注目が集まる。
+英語圏の中心地はDiscordの『NovelAI』本家サーバー、中国語圏の本場はbilibili、weibo、QQ、weChatなどと推測。(逆壁越えVPNないと見られないものもある)
+
+そして台湾ユーザーと繋がった一人が「元素法典」を入手。
+それはPDFにして125MB(強引に変換DLした場合。正規版は4MB)もの巨大な検証結果、マニュアル群、魔導書であった。
+
+16日前後に大きな鯖落ちを起こすほどの人数を動員して行われた検証だけに、その成果も膨大。
+かくして文明開化が起こり、NovelAIプロンプト研究の世界にもグローバル化の波が押し寄せつつある。
+
+「元素法典」日本語版(Googleドキュメントで機械翻訳)
+※閲覧数多いけど誰も翻訳ミス修正してくれねぇンゴ！
+https://docs.google.com/document/d/1kepqANPi-U2Pdc6iRzvTJn97HhAJiQpHDJ2_9wCMpLc/edit?usp=sharing
+
+翻訳ノート(5ch関係ないため迷惑をかけずに利用すること)
+https://note.com/sa1p/n/ne71c846326ac
+
+原典のコピー
+https://docs.google.com/document/d/1AZQMOB4vpnWdN9Eap0ZzgcEWdcQXgUFIOgQ60X6Q8qU/edit?usp=sharing
+
+原典
+https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
+
+元素法典の強みと弱み：
+54 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8b28-h7FX)[sage] 投稿日：2022/10/17(月) 09:45:52.78 ID:buIejDSs0
+こっちが目的のキャラを出した上で特定のポーズさせる事に注力してる間に向こうは画風の研究してた感じか
+どっちが凄いとかではなく両方合わせたらより目的のイラストが作りやすくなるだけじゃない？
+ざっと見る限り画風と世界観、キャラ指定してるだけだからここのエロ絵作成で培ったポーズ指定技術合わせたらどうなんや
+
+
+835 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df62-e84p)[sage] 投稿日：2022/10/17(月) 13:01:19.42 ID:hSaOuOKK0 [22/22]
+中国の呪文見て違和感あったから検証してみたけど、extremely detailed, ultra detailed,ってゴミじゃん
+hyper detailed, の方が効果が高い
+これらを組み合わせる場合hyper extreme detailed, が一番効果が高いようだ
+high definition, より効果が高く見える
+ここまで来るとベストクオリティタグなんて全くお呼びじゃない(邪魔になる)
+
+* 用例
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+||lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, &#40;blurry), &#40;&#40;&#40;&#40;&#40;mutated hands and fingers))))), &#40;mutation), 3D character, 3D game scene, 3D game, 3D, anatomical nonsense, bad digit, bad ears, bad eyes, bad face, bad hairs, bad mouth, bad shadow, beard, cloned face, bad mouth, duplicate, extra arms, extra ears, extra eyes, extra legs, extra thighs, fused digit, fused face, fused feet, &#40;fused fingers), &#40;fused hairs), &#40;fused hands),fused mouth, &#40;fused thigh gap), isappearing arms, liquid digit, liquid ears, liquid thigh gap, liquid tongue, &#40;long body), lowers, malformed feet, malformed hands, &#40;malformed limbs), &#40;missing arm), missing digit, missing ears, missing thigh gap, missing thighs, &#40;&#40;one hand with less than 5 digit)), &#40;&#40;one hand with less than 5 fingers)), &#40;&#40;one hand with more than 5 digit)), &#40;&#40;one hand with more than 5 fingers)), &#40;&#40;&#40;&#40;poorly drawn)))), thick lips, unnatural body|中国産(繁体字なので台湾産？)のクソ長詠唱から軽量化ver1||https://i.imgur.com/UZGO3c9.jpg|
+||lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, &#40;blurry), &#40;long body :1.3), &#40;missing arm), &#40;mutated hands and fingers:1.5), &#40;mutation), &#40;poorlydrawn:1.2) , 3D character, 3D game scene, 3D game, 3D, QR code, anatomical nonsense, bad animal ears, bad bad thigh gap, bad collarbone, bad digit, bad ears, bad eyes, bad face, bad feet, bad gloves, bad hairs, bad knee, bad mouth, bad pantie, bad shadow, bad shoes, bad tails, bar code, beard, big face, big mouth, big muscles, black tongue, black-white, blurred, censored, cloned face, colorful tongue, cracked mouth,bad mouth, dirty face, dirty pantie, dirty teeth, disappearing calf, disappearing legs, disappearing thigh, disfigured, duplicate, extra animal ears, extra arms, extra calf, extra ears, extra eyes, extra feet, extra knee, extra legs, extra shoes, extra thighs, fused animal ears, fused calf, fused cloth, fused collarbone, fused digit, fused ears, fused eyes poorly drawn eyes, fused face, fused feet, fused fingers, fused gloves, fused hairs, fused hand, fused mouth, fused pantie, fused shoes, fused tentacles, fused thigh gap, gross proportions. short arm, huge calf, huge haunch, huge thighs, isappearing arms, liquid animal ears, liquid body, liquid collarbone, liquid digit, liquid ears, liquid tentacles, liquid thigh gap, liquid tongue, long face, long neck, lowers, malformed feet, malformed hands, malformed limbs, missing animal ears, missing calf, missing collarbone, missing digit, missing ears, missing feet, missing hand, missing legs, missing limb, missing thigh gap, missing thighs, morbid, more than 1 left hand, more than 1 right hand, more than 2 legs, more than 2 thighs, more than two shoes, obesity, one hand with less than 5 digit, one hand with less than 5 fingers, one hand with more than 5 digit, one hand with more than 5 fingers, poorly drawn animal ears, poorly drawn anus, poorly drawn cloth, poorly drawn ears, poorly drawn face, poorly drawn feet, poorly drawn gloves, poorly drawn hairs, poorly drawn hands, poorly drawn mouth, poorly drawn pantie, poorly drawn shoes, poorly drawn tentacles, poorly drawn thigh gap, safety knickers, safety panties, split tentacles, text font ui, thick lips, ugly, ui, unnatural body|【WIP】中国産(繁体字なので台湾産？)のクソ長詠唱から取り捨て選択したnegative prompt目標はNovelAIに使えるサイズまで落とすこと|-|https://i.imgur.com/bxtHwRy.png|
+|masterpiece, best quality, best quality,Amazing,beautiful detailed eyes,1girl,finely detail,Depth of field,extremely detailed CG unity 8k wallpaper, masterpiece, full body,(vtuber minato aqua),pink hair, blue streaked hair| (mutated hands and fingers:1.5 ), (long body :1.3), (mutation, poorly drawn :1.2) , black-white, bad anatomy, liquid body,liquid tongue, disfigured, malformed, mutated,anatomical nonsense, text font ui, error, malformed hands, long neck, blurred, lowers, lowres, bad anatomy, bad proportions, bad shadow,uncoordinated body, unnatural body, huge haunch, huge thighs, huge calf, bad hands,fused hand, missing hand, isappearing arms,disappearing thigh, disappearing calf, disappearing legs, fused ears, bad ears, poorly drawn ears, extra ears, liquid ears, heavy ears, missing ears, fused animal ears, bad animal ears, poorly drawn animal ears, extra animal ears, liquid animal ears, heavy animal ears,missing animal ears, text, ui, error, missing fingers,missing limb, fused fingers, one hand with more than 5 fingers, one hand with less than 5 fingers, one hand with more than 5 digit, one hand with less than 5 digit,extra digit, fewer digits, fused digit, missing digit, bad digit, liquid digit, colorful tongue, black tongue,cropped, watermark, username, blurry, JPEG artifacts, signature, 3D, 3D game, 3D game scene, 3D character,malformed feet, extra feet, bad feet, poorly drawn feet, fused feet, missing feet, extra shoes, bad shoes,fused shoes, more than two shoes, poorly drawn shoes, bad gloves, poorly drawn gloves, fused gloves,bad hairs,poorly drawn hairs, fused hairs, big muscles, ugly, bad face, fused face, poorly drawn face, cloned face, big face, long face, bad eyes, fused eyes poorly drawn eyes, extra eyes, malformed limbs, gross proportions. short arm,((missing arm), missing thighs, missing calf, missing legs, mutation, duplicate, morbid, mutilated, poorly drawn hands, more than 1 left hand, more than 1 right hand, deformed, (blurry), disfigured, missing legs, extra arms, extra thighs, more than 2 thighs, extra calf,fused calf, extra legs, bad knee, extra knee, more than 2 legs, bad tails, bad mouth, fused mouth, poorly drawn mouth, bad tongue, tongue within mouth, too long tongue, black tongue, big mouth, cracked mouth .bad mouth, dirty face, dirty teeth, dirty pantie, fused pantie, poorly drawn pantie, fused cloth, poorly drawn cloth, bad pantie, yellow teeth, thick lips, bad bad thigh gap, missing thigh gap, fused thigh gap, liquid thigh gap, poorly drawn thigh gap, poorly drawn anus, bad collarbone, fused collarbone, missing collarbone, liquid collarbone, strong girl, obesity, worst quality, low quality, normal quality, liquid tentacles,bad tentacles, poorly drawn tentacles, split tentacles,fused tentacles,&#160; QR code, bar code,censored, safety panties, safety knickers, beard. |中国産(繁体字なので台湾産？)のクソ長詠唱：全文入れれば基礎品質がハイグレード化、顔面アップ時＆指の正常化に特に効果がある、ただし乳首は消える：打ち消し効果が強すぎる場合は全体をカッコで囲った方が元の呪文の持ち味を残せる|出典元(thank a lot):https://www.bilibili.com/read/cv19055658 ~~testis Steps: 40, ~~Sampler: Euler, ~~CFG scale: 12, ~~Seed: 1110158613~~Size: 1024x768おそらくローカル(Web版では全文は入らない)|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QPzN82HYdN-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/QPzN82HYdN.jpg]]|
+|}
+[END]
+*上記ネガティブプロンプトの要素別簡略化版
+[+]
+**全身(奇形回避)
+(long body :1.3), bad anatomy , liquid body, malformed, mutated,anatomical nonsense ,bad proportions, uncoordinated body, unnatural body, disfigured, ugly, gross proportions ,mutation, disfigured, deformed, (mutation, poorlydrawn :1.2)
+**手
+(mutated hands and fingers:1.5 ), malformed hands, bad hands,fused hand ,disappearing arms, missing hand, missing fingers, fused fingers, one hand with more than 5 fingers, one hand with less than 5 fingers, one hand with more than 5 digit, one hand with less than 5 digit,extra digit, fewer digits, fused digit, missing digit, bad digit, liquid digit, bad gloves, poorly drawn gloves, fused gloves, malformed limbs, poorly drawn hands, more than 1 left hand, more than 1 right hand, extra arms,
+&#40&#40one hand with less than 5 fingers)), &#40&#40one hand with more than 5 digit)), &#40&#40one hand with more than 5 fingers)), missing digit, malformed hands, (missing arm), liquid digit ,fused digit, disappearing arms
+**手で持つ武器
+bad weapon, fused weapon, extra weapons, poorly weapon,bad sword, poor sword,
+**上半身
+missing limb, bad collarbone,fused collarbone, missing collarbone, liquid collarbone
+**顔
+liquid tongue, long neck, fused ears, bad ears, poorly drawn ears, extra ears, liquid ears, heavy ears, missing ears, fused animal ears, bad animal ears, poorly drawn animal ears, extra animal ears, liquid animal ears, heavy animal ears,missing animal ears, bad hairs,poorly drawn hairs, fused hairs, bad face, fused face, poorly drawn face, cloned face, big face, long face, bad eyes, fused eyes poorly drawn eyes, extra eyes, bad mouth, fused mouth, poorly drawn mouth, bad tongue, tongue within mouth, too long tongue, big mouth, cracked mouth ,bad mouth, dirty face, dirty teeth, yellow teeth,
+**尻
+huge haunch, bad tails, fused pantie, poorly drawn pantie, bad pantie, poorly drawn anus
+**足
+huge thighs, huge calf,disappearing thigh, disappearing calf, disappearing legs, malformed feet, extra feet, bad feet, poorly drawn feet, fused feet, missing feet, extra shoes, bad shoes,fused shoes, more than two shoes, poorly drawn shoes, missing thighs, missing calf, missing legs, missing legs, extra thighs, more than 2 thighs, extra calf,fused calf, extra legs, bad knee, extra knee, more than 2 legs, bad thigh gap, missing thigh gap, fused thigh gap, liquid thigh gap, poorly drawn thigh gap,
+**服
+fused clothes, poorly drawn clothes
+**ノイズ
+text font ui, error, lowers ,lowres, blurred, text, ui, error, cropped, watermark, username, blurry, JPEG artifacts, signature, QR code, bar code, censored, duplicate,
+**絵柄
+black-white, bad shadow, 3D, 3D game, 3D game scene, 3D character,
+**絵の評価
+worst quality, low quality, normal quality,
+**触手
+liquid tentacles,bad tentacles, poorly drawn tentacles, split tentacles,fused tentacles, 
+**お好み(マニアックな性癖、意味はご自分で)
+colorful tongue, black tongue, dirty pantie , big muscles, strong girl, obesity, safety panties, safety knickers, beard , morbid,mutilated, thick lips
+**出典
+https://fate.5ch.net/test/read.cgi/liveuranus/1665982019/657
+https://fate.5ch.net/test/read.cgi/liveuranus/1665982019/660
+https://fate.5ch.net/test/read.cgi/liveuranus/1665982019/663
+[END]
+

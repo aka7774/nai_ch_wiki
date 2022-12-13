@@ -1,0 +1,267 @@
+Kritaほど本格的ではないけど、
+1111の貧弱なgradioペイントツールよりは魅力的な、
+WebベースのAIペイントツール。
+
+https://github.com/invoke-ai/InvokeAI
+https://invoke-ai.github.io/InvokeAI/installation/
+
+#contents
+
+* インストール
+
+** インストーラー
+
+- あんまりおすすめできないかも
+- Anacondaとgitを勝手にインストールする
+-- gitはともかくAnacondaは環境が汚れる
+- 変なエラーが出たらいったん消して全部やり直したほうがよさげ
+- インストール出来た事例あり
+
+** pipでのマニュアルインストール(Windows)
+
+*** モジュールのインストール
+
+コマンドプロンプトを開いて1行ずつ実行。
+ダメだったらスレか技術部で聞いてください。
+
+python.exeのpathを通してない場合はフルパスに書き換える
+ set PYTHON=python.exe
+git.exeのpathを通してない場合はフルパスに書き換える
+ set GIT=git.exe
+InvokeAIを入れる親フォルダを指定する(任意。あらかじめ作成する)
+ cd C:\SD
+InvokeAIのダウンロード
+ %GIT% clone https://github.com/invoke-ai/InvokeAI.git
+InvokeAIフォルダの中に移動
+ cd InvokeAI
+webページの説明と違うけどこれでいける
+ copy environments-and-requirements\requirements-win-colab-cuda.txt requirements.txt
+venvを作る
+ %PYTHON% -m venv invokeai
+以後はvenvの中のPythonを使う
+ set PYTHON=C:\SD\InvokeAI\invokeai\Scripts\python.exe
+basicsr のインストールで失敗するので対策で入れる(あとで消される)
+ %PYTHON% -m pip install torch
+requirements.txtのインストール
+ %PYTHON% -m pip install --prefer-binary -r requirements.txt
+
+バッチファイル(作成中。未検証)
+[+]
+=|BSH|
+@echo off
+if not defined PYTHON (set PYTHON=python)
+if not defined VENV_DIR (set VENV_DIR=venv)
+if not defined GIT (set GIT=git)
+
+cd C:\SD
+%GIT% clone https://github.com/invoke-ai/InvokeAI.git
+cd InvokeAI
+
+@REM 説明と違うけどたぶんこれでいける
+copy environments-and-requirements\requirements-win-colab-cuda.txt requirements.txt
+
+%PYTHON% -c "" >tmp/stdout.txt 2>tmp/stderr.txt
+if %ERRORLEVEL% == 0 goto :start_venv
+echo Couldn't launch python
+goto :show_stdout_stderr
+
+if [%VENV_DIR%] == [-] goto :skip_venv
+
+dir %VENV_DIR%\Scripts\Python.exe >tmp/stdout.txt 2>tmp/stderr.txt
+if %ERRORLEVEL% == 0 goto :activate_venv
+
+for /f "delims=" %%i in ('CALL %PYTHON% -c "import sys; print(sys.executable)"') do set PYTHON_FULLNAME="%%i"
+echo Creating venv in directory %VENV_DIR% using python %PYTHON_FULLNAME%
+%PYTHON_FULLNAME% -m venv %VENV_DIR% >tmp/stdout.txt 2>tmp/stderr.txt
+if %ERRORLEVEL% == 0 goto :activate_venv
+echo Unable to create venv in directory %VENV_DIR%
+goto :show_stdout_stderr
+
+:activate_venv
+set PYTHON="%~dp0%VENV_DIR%\Scripts\Python.exe"
+echo venv %PYTHON%
+goto :install_requirements
+
+:install_requirements
+@REM basicsr のインストールで失敗するので対策で入れる(あとで消される)
+%~dp0%VENV_DIR%\Scripts\pip.exe install torch
+%~dp0%VENV_DIR%\Scripts\pip.exe install --prefer-binary -r requirements.txt
+goto :set_ckpt
+
+
+:skip_venv
+:set_ckpt
+@REM ckptとvae.pt書き換え
+@REM if not defined CKPT (set CKPT=ここどうしよ・・・)
+@REM if not defined VAE (set VAE=ここどうしよ・・・)
+@REM  書き換えのコード
+@REM まだ書いてない‥
+
+goto :launch
+
+:launch
+%PYTHON% scripts/invoke.py --web %*
+pause
+exit /b
+
+
+
+:show_stdout_stderr
+
+echo.
+echo exit code: %errorlevel%
+
+for /f %%i in ("tmp\stdout.txt") do set size=%%~zi
+if %size% equ 0 goto :show_stderr
+echo.
+echo stdout:
+type tmp\stdout.txt
+
+:show_stderr
+for /f %%i in ("tmp\stderr.txt") do set size=%%~zi
+if %size% equ 0 goto :show_stderr
+echo.
+echo stderr:
+type tmp\stderr.txt
+
+:endofscript
+echo.
+echo Launch unsuccessful. Exiting.
+pause
+
+||=
+[END]
+*** ckptとvaeを追加する
+
+InvokeAI/configs/models.yaml を編集してモデルを追加する。以下は一例。
+[+]
+=||
+Anything-v3:
+  description: Anything-v3
+  weights: C:\SD\stable-diffusion-webui\models\Stable-diffusion\Anything-V3.0-pruned-fp32.ckpt
+  config: configs/stable-diffusion/v1-inference.yaml
+  width: 512
+  height: 512
+  vae: C:\SD\stable-diffusion-webui\models\Stable-diffusion\final-pruned.vae.pt
+  default: true
+||=
+[END]
+
+1111に入れてあるckpt、vae、yamlをそのまま使うためのExtensionを作った
+https://github.com/aka7774/sd_invokeai_models_yaml_maker
+
+インポートスクリプトを試したが動作しなかった。
+[+]
+https://invoke-ai.github.io/InvokeAI/installation/INSTALLING_MODELS/#walk-through
+
+- !import_model の引数ではバックスラッシュ(\)が使えないのでスラッシュ(/)に直す必要がある
+- フォルダの指定やワイルドカードは認識しない
+- Configuration file for this model: から先に進まない
+[END]
+
+*** 設定ウィザードと起動
+
+その後、設定ウィザードを開始する
+内容はこんな感じ
+https://sakusaku-ikiru-aiblog.hatenablog.com/entry/2022/12/04/130048
+
+設定内容は、HOMEに .invokeai ファイルで保存される
+HOMEが汚れるのが嫌なら、以下のコマンドでカレントディレクトリに設定できるかも
+ set USERPROFILE=%CD%
+
+- venvの中にいるときのやりかた
+[+]
+設定
+=||
+python scripts/invoke.py
+||=
+
+設定が終わったら、以下のコマンドで起動
+=||
+python scripts/invoke.py --web
+||=
+[END]
+
+- venvの外に出てるときのやりかた
+[+]
+設定
+=||
+cd C:\SD\InvokeAI\invokeai
+Scripts\python.exe scripts/invoke.py
+||=
+
+設定が終わったら、以下のコマンドで起動
+=||
+cd C:\SD\InvokeAI\invokeai
+Scripts\python.exe scripts/invoke.py --web
+||=
+[END]
+
+起動できたら、ブラウザから、
+http://127.0.0.1:9090/
+にアクセスする。
+
+
+** Docker
+
+- もうDocker使ってる人にはこれが便利かも
+だれかバッチ頼む
+Linuxならこんな感じ
+[+]
+
+=|sh|
+# ~/hoge/のディレクトリにダウンロード
+# ディレクトリに移動
+cd  ~/hoge/
+# ダウンロード
+git clone https://github.com/invoke-ai/InvokeAI.git
+cd InvokeAI
+# Dockerのイメージをビルド 
+#シェルスクリプトだとdashで動くけど実はbashで書いてあるパターン回避のため一応bashを明示して実行
+bash docker-build/build.sh
+||=
+
+2回目以降はrunでいい
+=|sh|
+# Docker実行
+bash docker-build/run.sh
+||=
+
+[END]
+
+** condaでのマニュアルインストール
+Linuxでやったがwindowsでもほとんど同じなはず
+
+とりあえずanaconda promptを開いて適当なディレクトリに行く。
+
+=||
+> git clone https://github.com/invoke-ai/InvokeAI.git
+> cd InvokeAI
+> copy environments-and-requirements/environment-win-cuda.yml environment.yml
+> conda env create -f=environment.yml         # conda環境に入ってる必要がある
+> conda activate invokeai
+> python scripts/invoke.py --web
+||=
+
+invoke.pyは初回、moduleなどのディレクトリを指定する必要があるので、現時点で入ってるディレクトリを指定すると良い。
+safety checkerの確認もあるのでyを打たないように。
+
+modelをhuggin faceからダウンロードする場合は
+ttps://huggingface.co/runwayml/stable-diffusion-v1-5
+ttps://huggingface.co/runwayml/stable-diffusion-inpainting
+などに行ってagreementをクリックしてくる。
+ついでにtokenも必要なので
+ttps://huggingface.co/settings/tokens
+にいってtokenを生成してきてコピペする。
+
+
+
+* 使い方
+
+おっぱい出ない → .invokeai内の--nsfw_checker削除
+ネガティブどこに入れる？ → []で囲む
+プロンプトの構文は他にもあって面白そう https://invoke-ai.github.io/InvokeAI/features/PROMPTS/
+
+誰か任せた
+
+

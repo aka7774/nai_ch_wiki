@@ -1,0 +1,43 @@
+よかったらご参加お願いします。[[GPUによる生成差異の検証]]
+
+* 概要
+xformersを導入したことによる速度や生成画像の差異などの比較検証です
+
+* 生成画像の差異の検証
+
+** 検証(1)
+*** 検証プロンプト
+以下のプロンプトで検証
+
+|(masterpiece:1.3), best quality, masterpiece, best quality, 1girl, solo, amazing awesome highly detailed, (go-toubun no hanayome:1.1), (nakano yotsuba:1.4), orange hair, ([green rabbit short ears hairband:green hairband ribbon:0.25]:1.2), (tareme:1.2), (swept bangs:1.1), upper_teeth, (teen age:1.2), 17yo, blue eyes, bob cut, (sitting:1.1), naruto \(series\) ,ichiraku ramen, (eating ramen noodles:1.0), holding chopsticks and ramen bowl, slurp one's noodles |
+|Negative prompt: pointy ears, umamusume,helmet hair, nakano ichika, nakano nino, nakano miku, nakano itsuki, hair between eyes, blunt bangs, tsurime, loli, petite, child, mature female ,milf, adult, women, middle age, blush, mahou shoujo madoka magica, kaname madoka, (bad_prompt:1.0), 3D, 3Dcubism, pablo picasso, disney, marvel, lowres, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate |
+|Steps: 28, Sampler: DDIM, CFG scale: 7.5, Seed: 991690482, Size: 768x1280, Model hash: 2700c435, Denoising strength: 0.7, Clip skip: 2, ENSD: 31337, First pass size: 0x0|
+|Used embeddings: bad_prompt [1d99]|
+
+*** 生成画像
+図：左側、Xformers ON。右側、Xformers OFF
+それぞれ左側がHighres.fix後、前の画像
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gaGdnogg9X.jpg,800)
+
+*** 結果
+Xformersを使用したときの単一の画像生成下での画像変化は見られませんでした。
+
+* DDIM
+
+{| class="nanj_prompt_table edit sort"
+|~GPU|~生成結果|~備考|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vDucTx7Sxq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/vDucTx7Sxq.png]]||
+|}
+
+* Euler
+
+4回試したが残念ながら?全部違った。
+
+{| class="nanj_prompt_table edit sort"
+|~GPU|~生成結果|~備考|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WfUiAEjdbl-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/WfUiAEjdbl.png]]|4回目|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/p1WtCk2f3n-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/p1WtCk2f3n.png]]|3回目|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/B42vXoKxJE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/B42vXoKxJE.png]]|2回目|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dhTMQ6b0A2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/dhTMQ6b0A2.png]]|1回目|
+|}
+

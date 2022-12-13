@@ -1,0 +1,206 @@
+* 概要
+ここではWebUIの設定の仕方とか、DDIMってなんやねんみたいな基礎的なもののTipsを載せる感じです。
+ローカル版でしかできないような内部的検証、コード周り直接触るようなのは[[ローカルの技術]]を参照してください。
+
+#contents
+
+* コマンドラインオプション
+
+ページが長くなってきたので[[ローカルのwebui-user.bat]]に移動しました。
+
+* 設定(Settings)周り
+
+** 生成中/学習中もネット見たりゲームしたい
+
+おすすめはiGPUつきのCPUにして、モニタやブラウザをiGPUで描画するよう[[グラフィックの設定>https://www.google.com/search?q=windows+10+%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%81%AE%E8%A8%AD%E5%AE%9A]]をいじること。
+要はdGPUを画像生成専用にする。
+アプリごとに設定できるので、軽いゲームと重いゲームで使い分ける。
+あとは、ブラウザでハードウェアアクセラレーションを無効にし、メモリ不足エラーが発生している場合はVRAMを占有している可能性のあるものをすべて閉じ、GFPGAN(存在する場合)を削除してください。
+特にVRAM 8GBの学習は容量ギリギリなのでこういう設定が大事っぽい。
+
+** 簡単に設定切り替えたいンゴ
+
+画面の上にこういうの出せる。
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/rTKIPtT7oU.jpg)
+
+Settingsの「Quicksettings list」に以下の文字列を入力。
+ sd_model_checkpoint,sd_vae,sd_hypernetwork,sd_hypernetwork_strength,CLIP_stop_at_last_layers,eta_noise_seed_delta
+
+** VAEの設定
+
+もうVAEはSettingsで指定できるから、ckptと同じ名前にしてコピーしまくる必要は無くなったんやでー
+
+- auto: 以前と同じ(ckptと同名のvae.ptファイルを読み込む)
+- 指定: ckptにかかわらず指定したvaeを読み込む
+- none: 常にvaeを読み込まない
+
+** PNG infoでText2Imgに送るとckptまで変更されてロード始めるのを回避したい
+設定→UI設定
+When reading generation parameters from text into UI (from PNG info or pasted text), do not change the selected model/checkpoint.
+(テキストからUIに生成パラメータを読み込む場合(PNG情報または貼り付けられたテキストから)、選択されたモデル/チェックポイントは変更しない。)
+これにチェック
+
+* Restore faces
+
+アニメ絵だとオフ推奨(目がリアルになる)
+
+* 高解像度で出力したい
+
+SD1.5以下のモデルは、縦横の両方が512を超えていると破綻しやすくなると言われています。
+NovelAIは基本512x768で、たとえばフルHDで出そうとするとほぼ確実に破綻するでしょう。
+また、所要時間とVRAM消費は解像度に比例して増えていきます(縦横2倍なら4倍)
+
+まず、破綻しない生成サイズを決める。
+そのサイズでガチャする。
+設定が確定したら以下の機能を使う。
+
+** 生成できる解像度の限界を調べる
+
+出したい絵の設定で、縦横をできる限り大きくして、Stepsを1にして、Generateする
+これでエラーが起きるようならStepsを上げてうまくいくことはないはず
+
+*** 縦横サイズの上限を増やす
+
+ui-config.json で変えられる
+
+=||
+ "txt2img/Width/maximum": 2048,
+ "txt2img/Height/maximum": 2048,
+||=
+
+** Highres. fixを使う
+
+最終的に出力したい解像度を出せるだけのGPUがあって、精細な絵を出したいならこれ。
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yjyyJGIPXK.png)
+
+Settings の Upscale latent space image when doing hires. fix も影響するらしい。
+
+VRAM 8GBだとFHD(1920x1088)はギリギリ。
+VRAM不足を補うためには、生成時間が延びるけど--medvramを指定する手があるかも。
+3060買っちゃう手もあるかも。
+
+*** highres.fix機能の使用法: アップスケール&ディテール向上
+
+元の解像度とhighres. fixの解像度の縦横比揃えれば構図はあんまり変わらんで
+例えば768*512でええのあったらhighres. fixオンにして、first passを768*512、解像度を1536*1024にすればええ
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/r0I43fs898.png, 128, 85)
+↓
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/a4j34XsPlE.jpg, 256, 170)
+
+- 単純に解像度倍にするんやなくて縦横比揃えるんやで
+-- 768/512は1.5やから、1536*1024や1920*1280が合うんや
+-- ただしfirst passからはなれるほど描き込み増えて破綻し始めるから注意や
+- denoising strengthは0.5以下だとブロックノイズ増えて0.6以上だと元絵から離れていくからうまく調節してくれや
+- 設定タブのUpscale latent space image when doing hires. fixをチェック
+
+引用元: https://fate.5ch.net/test/read.cgi/liveuranus/1669096981/959 https://fate.5ch.net/test/read.cgi/liveuranus/1669216072/3
+
+
+** Extras の Upscaler を使う
+
+生成できる解像度の限界を超えて拡大することができる。
+VRAMが少ない等で Highres fix. が使えず、出力された画像を綺麗に拡大したいだけならこれ。
+
+* サンプラー
+
+** EulerとかDDIMとか
+
+web版とローカル版で同じになる。
+(ので、ハローアスカでも使われている)
+
+Stepsをあげると収束するのが特徴らしい。
+
+** Euler a と k_euler_ancestral
+
+似ているがちょっと違う。
+
+k_euler_ancestral
+みたいなのを出したかったら、
+「Euler a」を選んで、Settingsの、
+eta (noise multiplier) for ancestral samplers: 
+を0.67にする。
+
+ただし、完全一致させたかったらソースコードを改造する必要あり。
+[[これだったかも。>https://rentry.co/nai_ancestral]]
+
+** ローカル版のサンプラー
+
+増えた。
+
+Heun
+DPM2
+DPM2 a
+DPM++ 2S a
+DPM++ 2M
+DPM fast
+DPM adaptive
+LMS Karras
+DPM2 Karras
+DPM2 a Karras
+DPM++ 2S a Karras
+DPM++ 2M Karras
+
+「DPM++ 2M Karras」は10stepsでも最低限見れる絵を出してくれるのでシード値探しに便利。
+15stepsあれば破綻もそれなりに減らせるので低スぺ民の味方かも知れない。
+
+** Settingsにetaが2つあるけどどっち？
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vxFDkSRIhp-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/vxFDkSRIhp.png]]
+
+DDIMかPLMSが「for DDIM」で、それ以外が「for ancestral samplers」っぽい。
+
+** CLIP_stop_at_last_layersについて
+専門的な事はわからないので数値変えたざっくりとした印象だけ。
+詳しいニキの修正加筆求む。
+
+モデルはanimefull-final-prunedで試した。生成したのはとある版権キャラ。
+1にすると奇形が増えた。だがこれはプロンプトに忠実になるせい？精密な呪文であればいいのかも。
+数値を上げていったところ、版権キャラがどんどん似なくなっていった。プロンプトに縛られなくなるのだろうか？代わりにちゃんと見れる絵が増えた印象。
+
+とりあえずNAIデフォの2で基本的にはいいと思う。
+数値を上げる事で奇形率が減るかもしれないし、プロンプトから離れるのも強調すれば回避できるかも？
+
+* プロンプト記法
+
+** web版とローカル版の違い
+
+- web版は{}で強調1.05相当、[]は強調0.95相当(弱くなる)、()は単なる文字
+- ローカル版は()で強調1.1相当、[]は強調0.9相当(弱くなる)、{}は単なる文字(拡張機能で使うことも)
+- {{}}は1.1ではなく1.05の2乗(なので変換ツールでは細かく計算して端数を丸めている)
+- ローカル版で()を文字として使いたい場合は\(hoge\)のようにエスケープする(作品名などに使う)
+- ローカル版は(hoge:1.2345)で強調の度合いを細かく決められる
+- web版は[[プロンプトミキシング]]が使える
+- ローカル版は[[プロンプトエディティング]]が使える
+- トークン75以上を超えた時の処理が違う
+-- 75ごとに,で区切ると差異を和らげられるらしい？
+
+*** 変換する
+
+{{{masterpiece}}}という書き方はローカルでは強調の意味を持たない。
+
+[[プロンプト変換]]を使うか、
+Extensionsの「novelai-2-local-prompt」を使って()記法に変換するといい。
+
+**プロンプト強弱の簡単な調整方法
+プロンプト入力欄内の単語または強弱を調整したい範囲をドラッグして選択する。
+CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打すると0.1ずつ数値が増え、CTRL+↓を押すと0.1ずつ減る。
+すでに()がついている場合、()の範囲内どこでもよいのでカーソルを置いてCTRL+↑or↓で数値が調整できる。
+
+** プロンプトを真似る
+
+ポジティブプロンプト欄の先頭に「masterpiece, best quality,」をつける(Add Quality Tagsと同じ意味)
+ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name」をつける(UC L+Bと同じ意味)
+
+** Prompt matrix 
+ Prompt matrixは、画像生成の時に入力する文字列(プロンプト)で通常は「,」でキーワードを区切るところを、「|」で区切ることで総組み合わせして画像を生成できる機能です。例えば、通常は「a busy city street in a modern city, illustration ,cinematic lighting(近代都市のせわしない街道、イラスト、映画のような照明)」というプロンプトで画像を生成しますが、Prompt matrixで「a busy city street in a modern city | illustration | cinematic lighting」というように「|」で区切って入力することで、「a busy city street in a modern city」に「illustration」と「cinematic lighting」を組み合わせた画像を生成できます。  ~~　引用：画像生成AI「Stable Diffusion」でプロンプト・呪文やパラメーターを変えるとどういう差が出るか一目でわかる「Prompt matrix」と「X/Y plot」を「Stable Diffusion web UI(AUTOMATIC1111版)」で使う方法まとめ - GIGAZINE - https://gigazine.net/news/20220909-automatic1111-stable-diffusion-webui-prompt-matrix/
+
+* img2img
+
+** 各数値の詳細
+
+- Denoise Strength：リファレンスイメージからどの程度離れて画像を生成するか
+
+

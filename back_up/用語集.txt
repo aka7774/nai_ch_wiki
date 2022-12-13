@@ -1,0 +1,39 @@
+わかんない言葉は検索しましょう。
+
+検索しにくい略称とかを中心に説明していく。
+
+|~略語|名称|説明|
+|SD|Stable Diffusion||
+|WD|Waifu Diffusion|ckptは略称で呼ばれることが多い。https://rentry.org/sdmodelsを探そう。|
+|NAI|NovelAI|単なる略称。|
+|NAIFU|NovelAI AI Image Frontend Ultimate|NovelAIのエミュレーターの一つ。|
+|web版||NovelAIを公式サイト上で利用することを指すことが多い。|
+|webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
+|1111|(webuiと同義)|このページでも1111と表記する。|
+|ローカル版||NovelAIのモデルを1111で利用する形態を指すことが多い。|
+|Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
+|アナル|Anlas|NovelAI公式の課金通貨。|
+|TI|Textual Inversion|学習方法の1つ。|
+|DB|Dreambooth|学習方法の1つ。|
+|HN|Hypernetwork|学習方法の1つ。|
+|t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
+|i2i|img2img|Image to Image 元画像とプロンプトから画像を生成すること。|
+|inpaint||i2iの1形態。元画像の一部を指定して画像を生成すること。|
+|マスピ|masterpiece|傑作。品質向上に使われるプロンプト。絵が似通う。|
+|UC L+B|Undesired Content Low Quality + Bad Anatomy|定型のネガティブプロンプト。|
+|金脈|[[SD RESOURCE GOLDMINE>https://github.com/questianon/sdupdates]]|Stable Diffusionに関連するすべてのリソースとニュースを集めた総合的なサイト。1111を中心としてる。|
+|Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が早い |
+
+* 補足(蛇足かも)
+
+NovelAIも1111もブラウザで動作する(一般用語としてのWebユーザーインターフェースを持つ)し、
+ローカル版をリモートで動作させたり、リモートからのアクセスを受け入れたりできるので、
+「Web版/ローカル版」という呼び分けはそぐわない気もするが、そう呼ばれることが多い。
+(こう言い直すべき、みたいな提案も特に聞かない)
+
+TI/DB/HNのそれぞれの効果や使い分けは研究中の段階であり、
+安易に「こうしたい時はこれを使うと良い」と断言しにくいので、
+ここでは意味の説明までは書かないことにした。
+
+*外部リンク
+・[[基本的な用語の説明>https://rentry.co/953pi]]頻出する用語のそれぞれの意味を説明しており、それぞれの違いなどがわかりやすい。

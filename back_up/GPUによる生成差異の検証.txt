@@ -1,0 +1,82 @@
+結構前にこんな画像が話題になった。
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4xVcrmAHoD-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/4xVcrmAHoD.jpg]]
+
+はえーGPUによって画像変わるんかー、と思ったのと、
+実際にfp16とfp32とcpuでは結果が変わるので、そんなもんだと思い込んでいた。
+
+でも、画像が変わるならハローアスカはテストにならなくね？
+何らかの条件を満たした画像だけが変わるのか？
+[[xformersのせいでもないっぽい>xformersの検証]]し、デマなのかどうなのか気になった。
+
+* この検証の意義
+
+- あるPCで作成した画像を他のPCで再現できるかどうかの確認
+-- 再現可能なら、Infotextを公開することで画像をアップロードせずに絵を渡せる
+- もしあるなら好ましいGPUの発見?
+
+** 途中結果と考察
+
+- まったく同じ生成結果はほぼ無さそう(Euler aのせいなのか?)
+-- ほぼ同じだが誤差があるケースが大半
+- 誤差で済まないほど構図が変化してしまっているケースが若干(原因は?)
+
+まだまだ気になるので、[[生成差異の検証(Sampler編)]]を追加しました。
+特に構図が変化しちゃう環境の人には試して欲しい。
+* レギュレーション
+
+NAIちゃん持ってきただけだから特に根拠はない。
+
+- 設定はハローアスカと同じ(VAEも使う、HNはナシ)
+- 1111本体のソースコードを改造していないこと
+-- 改造している場合は備考に明記してください
+-- あえて古いバージョンで動かしている場合はhashなど
+- --no-half --no-half-vae --medvram --lowvramはいずれもナシ
+-- オンにすると絵が微妙に変わることが明言されています
+-- オンでしか動かせない人は参考記録としてオプションに明記してください
+- --xformersは原則オフ
+-- オンにしたら参考記録としてオプションに明記してください
+-- [[xformersの検証]]はこっちのページでやってる
+- できるだけ2回生成する。もしも異なる絵が出た場合、3回目を出して同じのが2枚出た画像を提出する
+-- 恐らく2枚目と3枚目が同じになるはず?
+-- 全く同じ条件で常に違う絵が出るならそれは環境以前の問題
+
+** infotext
+
+txt2imgのPrompt欄にコピペして、右側にある左下矢印を押してください。
+おそらく、Etaは自動的には反映されないので自分で設定する必要があります。Settingsタブ→Sampler Parametersセクション→eta (noise multiplier) for ancestral samplers
+=||
+silver color schema, masterpiece, best quality, dynamic angle, dynamic pose, (novelAI:1.05), (1girl:1.3), (solo:1.1), holding pen, (painting action), (canvas object), (mechanical hand:1.05), [[cyborg]], metallic mixture, drawing, paintbrush, beret, (glowing_eyes:0.95), (Separate sleeves), silver long_hair, hair_between_eyes, doyagao, happy smile, :d, (cute little monster are floating around:1.5), art studio in magical school, (white border:1.35), (outside border:1.2), dream, art, imagination, yume kawaii, pastel colors, feminine, looking away, (magical girl,:1.1)
+Negative prompt: nsfw, red, purple, Chibi, Severed head, (detached head), (multiple view:1.3), Reference sheet,
+Steps: 50, Sampler: Euler a, CFG scale: 11.5, Seed: 905391353, Size: 1024x512, Model hash: 925997e9, Eta: 0.67, Clip skip: 2, ENSD: 31337
+||=
+* 比較
+
+{| class="nanj_prompt_table edit sort"
+|~GPU|~生成結果|~オプション|~備考|
+|GTX 1080|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/srBZb6Zbzn.05),%20(1girl_1.3),%20(solo_1.1),%20holding%20pe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/srBZb6Zbzn.05),%20(1girl_1.3),%20(solo_1.1),%20holding%20pe.png]]|無し|Commit hash: 44c46f0ed395967cd3830dd481a2db759fda5b3b|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pYDr3wPMrY-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pYDr3wPMrY.png]]||WSL2|
+|RTX2070 Max-Q(Laptop)|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aUVVy5THIT-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/aUVVy5THIT.png]]||44c46f0ed395967cd3830dd481a2db759fda5b3b|
+|Tesla T4|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5rDlPGIdbc-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5rDlPGIdbc.png]]||Colab|
+|RTX 4090|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Um_YUB9mwU-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Um_YUB9mwU.png]]||59c2dfe1e6a29dcf231fa9d894ac238887e40c39|
+|RTX4090|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CBzXRdShIR-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/CBzXRdShIR.png]]|--gradio-img2img-tool=color-sketch --deepdanbooru --opt-channelslast|44c46f0ed395967cd3830dd481a2db759fda5b3b|
+|GTX1660Ti Max-Q|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/njMIns6hEr-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/njMIns6hEr.png]]|--medvram --no-half --xformers|59c2dfe1e6a29dcf231fa9d894ac238887e40c39|
+|GTX1660Ti Max-Q|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ULqc8Xp9Cx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ULqc8Xp9Cx.png]]|なし|59c2dfe1e6a29dcf231fa9d894ac238887e40c39|
+|RTX4090|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/quUbv14PIl-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/quUbv14PIl.png]]|なし|44c46f0ed395967cd3830dd481a2db759fda5b3b|
+|GTX 1070Ti|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jE5AtW0YBA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jE5AtW0YBA.png]]|なし||
+|RTX 3060(12GB)|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TmozSve0Eq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TmozSve0Eq.png]]|なし||
+|RTX 3060 12GB|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/61bjL20KNv-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/61bjL20KNv.png]]|なし||
+|RTX 3090|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nW5aECKCjC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nW5aECKCjC.png]]|なし||
+|RTX 3090|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/L38CNUL_W8-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/L38CNUL_W8.png]]|なし||
+|RTX 4090|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zVGu5wK5uQ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/zVGu5wK5uQ.png]]|なし||
+|RTX 4090|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9U5czmEjV5-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/9U5czmEjV5.png]]|--gradio-img2img-tool=color-sketch --xformers --opt-channelslast --no-half-vae||
+|RTX 4090|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/LPv2s5yVEs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/LPv2s5yVEs.png]]|なし|44c46f0ed395967cd3830dd481a2db759fda5b3b|
+|GTX1660Ti|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/au8YNBq6Ol-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/au8YNBq6Ol.png]]|すべてなし|git pull: 2022-12-6|
+|GTX1660Ti|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/KenI3DurFa-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/KenI3DurFa.png]]|--medvram --no-half --xformers|git pull: 2022-12-6|
+|Radeon 6900XT|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D7m7NWD90S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D7m7NWD90S.png]]|||
+|RTX 2070|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JYMVML4iq3-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/JYMVML4iq3.png]]|||
+|RTX 3070|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/V42DJJ6mbY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/V42DJJ6mbY.png]]|なし|685f9631b56ff8bd43bce24ff5ce0f9a0e9af490~~※Etaの設定間違えてようなので画像差し替え|
+|GTX 1050Ti|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/YeC1FTMl5a-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/YeC1FTMl5a.png]]|なし|commit 685f9631b56ff8bd43bce24ff5ce0f9a0e9af490~~GTX 1050Tiは海外ニキたちが設定をトリプルチェックしてミスがないことを確認したにもかかわらず、~~アスカテストが通らず完全な外れ値になっている|
+|}
+
+

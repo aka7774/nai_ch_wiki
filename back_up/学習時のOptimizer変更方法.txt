@@ -1,0 +1,77 @@
+検証ネタメモ。TI・HN・DBの学習時のoptimizerを変えると、出力される絵、完成までのEpoch数にどこまで影響するか？
+デフォルトではAdamWというSD本体やGPTの学習でも使われている鉄板のOptimizerが使用されている。
+これは外部のライブラリを使うことで比較的容易に差し替え可能。
+
+ 2今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった 2022/12/07(水) 16:36:34.11SLIP:ｱｳｱｳｳｰ Sa08-eZ9H(1/3)ID:5N1MtoTZa(1/1)  
+ ところで学習する人ってオプティマイザー何使ってんの？
+ 
+ https://github.com/jettify/pytorch-optimizer
+ 
+ 一般的にはこれでPyTorchの標準オプティマイザー置き換えるだけで飛躍的に精度上がるけど
+ 
+ 古めのオプティマイザー限定だけどオプティマイザーの違いでここまで変わる 
+
+* Optimizer変更方法
+1111版限定。
+
+
+** 事前準備
+いろんなoptimizerが実装された3rd partyライブラリをインストールする。
+1111をインストールしたPython環境中で下記コマンドを実行
+=|BASH|
+$ pip install torch_optimizer
+||=
+
+ライブラリに実装されているoptimizerは[[公式github>>https://github.com/jettify/pytorch-optimizer]]を見よう。
+
+** TIの変更方法
+textual_inversion/textual_inversion.pyのoptimizer定義部分を任意のoptimizerに差し替えていく。
+具体的な場所はころころアップデートで変わるから、エディタから全文検索した方がええで。5267414319ef89c18061127fab971ffc1b5b24adの時点ではココや
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/5267414319ef89c18061127fab971ffc1b5b24ad/modules/textual_inversion/textual_inversion.py#L287
+
+書換が必要なのは1行だけ。
+ここではデフォルトのAdamWを[[Ranger>>https://github.com/jettify/pytorch-optimizer#ranger]]というoptimizerに変更してみる。
+
+=|PYTHON|
+    # textual_inversion.py#L287
+    # 変更前
+    optimizer = torch.optim.AdamW([embedding.vec], lr=scheduler.learn_rate, weight_decay=0.0)
+
+    # 変更後
+    import torch_optimizer as optim
+    optimizer = optim.Ranger([embedding.vec], lr=scheduler.learn_rate, weight_decay=0.0)
+    print("Use custom optimizer")  # 稼働チェック用のデバッグメッセージ
+||=
+
+基本的に他のoptimizerを変える場合も手順は同様。Ragerの部分を別のものに変えるだけ。
+
+書換えたら1111を再起動しいつもどおり学習を実施するだけ。学習開始後、挿入したデバッグメッセージが出ればOK。
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/veUiLLrOBP-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/veUiLLrOBP.png]]
+
+** HN
+hypernetworks/hypernetwork.pyのoptimizer定義部分を任意のoptimizerに差し替えていく。
+こちらも場所はころころ変わるので手元で検索推奨。5267414319ef89c18061127fab971ffc1b5b24ad時点ではココ付近。
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/5267414319ef89c18061127fab971ffc1b5b24ad/modules/hypernetworks/hypernetwork.py#L447
+
+同じく、AdamW→Rangerに書換えてみる。
+
+=|PYTHON|
+    # textual_inversion.py#L447
+    # 変更前
+    if hypernetwork.optimizer_name in optimizer_dict:
+        optimizer = optimizer_dict[hypernetwork.optimizer_name](params=weights, lr=scheduler.learn_rate)
+
+    # 変更後
+    if hypernetwork.optimizer_name in optimizer_dict:
+        import torch_optimizer as optim
+        optimizer = optim.Ranger(params=weights, lr=scheduler.learn_rate)
+        print("Use custom optimizer")  # 稼働チェック用のデバッグメッセージ
+        # この下のoptimizer_name 変数はstatedict保存時の名称なので変更しなくともOK
+||=
+
+こちらも書換え後、再起動して学習を実施するだけ。挿入したデバッグメッセージが出ればOK。
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/U4q4zrdbKR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/U4q4zrdbKR.png]]
+
+** DB
+DBに詳しいニキ追記頼む
+

@@ -1,0 +1,102 @@
+光や風などの表現をまとめるページです
+
+* テーマ
+数単語以上でのいい感じのやつ
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|wind, {{{{{{{{{{wind lift}}}}}}}}}}, {{{{navel}}}}||突風スカートめくり||https://image02.seesaawiki.jp/n/h/nai_ch/wUcsKfGqgI.png|
+|1girl, full body. outdoors, city, {{alleyway}}, shade||薄暗い路地裏に女の子一人|1girlはなくても機能するが、人がいたりいなかったりと安定しない。逆に薄暗い路地裏の要素だけほしい場合、1girl, full body.まで消せばおそらく人は生成されない|https://image02.seesaawiki.jp/n/h/nai_ch/dTTWXufJBE.%20outdoors,%20city,%20%7B%7Balleyway%7D%7D,%20shade%20s-380654041.png|
+|{{{{{masterpiece}}}}}, one girl on stage, from above, spotlight|||stageと合わせないと失敗|https://image01.seesaawiki.jp/n/h/nai_ch/v6INFbE01x.png|
+|}
+[END]
+* 天候
+以下の画像は天候を極端に強調した例
+例: {{{{{{{{rain}}}}}}}}
+
+{{under the '''&color(#ef007c){天候、空の表現}''' }} でもかなりの効果があるという事例あり いろいろ試してみていい結果が出た方を採用しましょう
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|意味|備考|w(150px):サンプル|
+|sunny|晴れ||https://image01.seesaawiki.jp/n/h/nai_ch/QAK__hRXJ9.%20In%20the%20city%20devas%20s-3309073313%20(28).png|
+|clear sky|晴天||https://image01.seesaawiki.jp/n/h/nai_ch/WUjyvJsBnM.%20In%20the%20city%20devas%20s-3309073313%20(52).png|
+|&#9728;|晴天||https://image01.seesaawiki.jp/n/h/nai_ch/PzUcAcyj32.%20In%20the%20city%20devas%20s-3309073313%20(56).png|
+|overcast|くもり||https://image01.seesaawiki.jp/n/h/nai_ch/bxn_Ucbca9.%20In%20the%20city%20devas%20s-3309073313%20(45).png|
+|gray sky|曇り空||https://image01.seesaawiki.jp/n/h/nai_ch/sDjw3XEIh2.%20In%20the%20city%20devas%20s-3309073313%20(53).png|
+|&#9729;|くもり||https://image02.seesaawiki.jp/n/h/nai_ch/MkEXpLJz65.%20In%20the%20city%20devas%20s-3309073313%20(57).png|
+|&#9925;|くもり||https://image02.seesaawiki.jp/n/h/nai_ch/n_a9lwYu3g.%20In%20the%20city%20devas%20s-3309073313%20(58).png|
+|&#127781;|くもり||https://image02.seesaawiki.jp/n/h/nai_ch/X9vaXYnV6n.%20In%20the%20city%20devas%20s-3309073313%20(59).png|
+|rain|雨||https://image01.seesaawiki.jp/n/h/nai_ch/1SC0WPIxR4.%20In%20the%20city%20devas%20s-3309073313%20(19).png|
+|&#9730;|雨||https://image02.seesaawiki.jp/n/h/nai_ch/sQ3iyPvQ2W.%20In%20the%20city%20devas%20s-3309073313%20(60).png|
+|&#9748;|雨||https://image02.seesaawiki.jp/n/h/nai_ch/2FOZShocHg.%20In%20the%20city%20devas%20s-3309073313%20(61).png|
+|&#127746;|雨||https://image01.seesaawiki.jp/n/h/nai_ch/njPo7tYjeL.%20In%20the%20city%20devas%20s-3309073313%20(63).png|
+|&#127783;|雨||https://image02.seesaawiki.jp/n/h/nai_ch/jY9J8OXlq2.%20In%20the%20city%20devas%20s-3309073313%20(65).png|
+|&#127782;|雨ときどき晴れ||https://image01.seesaawiki.jp/n/h/nai_ch/iKIwK35weM.%20In%20the%20city%20devas%20s-3309073313%20(64).png|
+|lightning, thunder|稲光, 雷||https://image01.seesaawiki.jp/n/h/nai_ch/UaoQe00m1l.%20In%20the%20city%20devas%20s-3309073313%20(47).png|
+|&#9928;|雷雨||https://image01.seesaawiki.jp/n/h/nai_ch/7Gmkg_i3f4.%20In%20the%20city%20devas%20s-3309073313%20(73).png|
+|fog|霧||https://image02.seesaawiki.jp/n/h/nai_ch/oTWLdBeoZN.%20In%20the%20city%20devas%20s-3309073313%20(21).png|
+|&#127745;|霧||https://image02.seesaawiki.jp/n/h/nai_ch/6bWifO_DmF.%20In%20the%20city%20devas%20s-3309073313%20(62).png|
+|&#127787;|霧||https://image02.seesaawiki.jp/n/h/nai_ch/iCoiPrDZl2.%20In%20the%20city%20devas%20s-3309073313%20(75).png|
+|snowy|雪||https://image02.seesaawiki.jp/n/h/nai_ch/LfoZHR4_2r.%20In%20the%20city%20devas%20s-3309073313%20(22).png|
+|rag snow|ぼた雪||https://image02.seesaawiki.jp/n/h/nai_ch/cFNUBWrluA.%20In%20the%20city%20devas%20s-3309073313%20(24).png|
+|&#9731;|雪||https://image02.seesaawiki.jp/n/h/nai_ch/RPBTvZVYCu.%20In%20the%20city%20devas%20s-3309073313%20(66).png|
+|&#10052;|雪||https://image02.seesaawiki.jp/n/h/nai_ch/CeEgH6Lz9P.%20In%20the%20city%20devas%20s-3309073313%20(67).png|
+|&#9924;|雪||https://image02.seesaawiki.jp/n/h/nai_ch/q9E6HXWM5R.%20In%20the%20city%20devas%20s-3309073313%20(68).png|
+|&#127784;|雪||https://image01.seesaawiki.jp/n/h/nai_ch/pYdtbmfNht.%20In%20the%20city%20devas%20s-3309073313%20(69).png|
+|whiteout|ホワイトアウト||https://image01.seesaawiki.jp/n/h/nai_ch/tg8WOjcIGR.%20In%20the%20city%20devas%20s-3309073313%20(25).png|
+|windy|風||https://image02.seesaawiki.jp/n/h/nai_ch/1KCSJmWuss.%20In%20the%20city%20devas%20s-3309073313%20(26).png|
+|&#127788;|風||https://image02.seesaawiki.jp/n/h/nai_ch/brHvmT0peS.%20In%20the%20city%20devas%20s-3309073313%20(70).png|
+|&#127811;|風||https://image01.seesaawiki.jp/n/h/nai_ch/3ZAEN6l3nZ.%20In%20the%20city%20devas%20s-3309073313%20(71).png|
+|storm|嵐||https://image02.seesaawiki.jp/n/h/nai_ch/uOBzVHoNfX.%20In%20the%20city%20devas%20s-3309073313%20(43).png|
+|&#127744;|嵐||https://image02.seesaawiki.jp/n/h/nai_ch/C4H8vb7Tyb.%20In%20the%20city%20devas%20s-3309073313%20(72).png|
+|Typhoon|台風||https://image02.seesaawiki.jp/n/h/nai_ch/9d_AJt8mbh.%20In%20the%20city%20devas%20s-3309073313%20(44).png|
+|&#127786;|竜巻||https://image01.seesaawiki.jp/n/h/nai_ch/TgJPav2kfx.%20In%20the%20city%20devas%20s-3309073313%20(74).png|
+|dust|砂塵||https://image02.seesaawiki.jp/n/h/nai_ch/SETe6A5LjK.%20In%20the%20city%20devas%20s-3309073313%20(27).png|
+|rainbow|虹||https://image02.seesaawiki.jp/n/h/nai_ch/XuYzVI4tBX.%20In%20the%20city%20devas%20s-3309073313%20(18).png|
+|&#127752;|虹||https://image02.seesaawiki.jp/n/h/nai_ch/4bGTIJnXKJ.%20In%20the%20city%20devas%20s-3309073313%20(76).png|
+|sun halos|ハロー(太陽)|人物の頭に光輪が出てしまうので、消せるネガティブプロンプトを考えれば使えそう(強調表現の強弱では変わらなかった) ~~ Negativeにangel_haloを入れて強調すると出現率が低下する。ついでに帽子をかぶせると光輪が消える|https://image01.seesaawiki.jp/n/h/nai_ch/XhYJwuSath.%20In%20the%20city%20devas%20s-3309073313%20(49).png|
+|moon halos|ハロー(月)|人物の頭に光輪が出てしまうので、消せるネガティブプロンプトを考えれば使えそう(強調表現の強弱では変わらなかった)|https://image02.seesaawiki.jp/n/h/nai_ch/fqyisMINwt.%20In%20the%20city%20devas%20s-3309073313%20(48).png|
+|}
+[END]
+* 時間、時間に関連する現象
+以下の画像は時間を極端に強調した例
+例: {{{{{{{{sunset}}}}}}}}
+[+]
+{{under the '''&color(#ef007c){天候、空の表現}''' }} でもかなりの効果があるという事例あり いろいろ試してみていい結果が出た方を採用しましょう
+
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|意味|備考|w(150px):サンプル|
+|magic hour|日没後の薄明の時間|太陽が入りにくい|https://image01.seesaawiki.jp/n/h/nai_ch/NR2dw6kBYH.png|
+|sunlight|日光||https://image02.seesaawiki.jp/n/h/nai_ch/29vtCDFh2a.%20In%20the%20city%20devas%20s-3309073313%20(54).png|
+|sunset|日没||https://image02.seesaawiki.jp/n/h/nai_ch/T1m0SuwGs1.%20In%20the%20city%20devas%20s-3309073313%20(29).png|
+|twilight sky|黄昏||https://image02.seesaawiki.jp/n/h/nai_ch/1g8cOuYID7.%20In%20the%20city%20devas%20s-3309073313%20(32).png|
+|night sky|夜||https://image02.seesaawiki.jp/n/h/nai_ch/L_y_SPyqEc.%20In%20the%20city%20devas%20s-3309073313%20(33).png|
+|midnight sky|深夜||https://image02.seesaawiki.jp/n/h/nai_ch/i4sXTGZ7pR.%20In%20the%20city%20devas%20s-3309073313%20(31).png|
+|star night|星の夜||https://image02.seesaawiki.jp/n/h/nai_ch/RBXiMWvq5E.%20In%20the%20city%20devas%20s-3309073313%20(50).png|
+|moon night|月夜||https://image02.seesaawiki.jp/n/h/nai_ch/JIsh6P2uOk.%20In%20the%20city%20devas%20s-3309073313%20(51).png|
+|aurora|オーロラ||https://image01.seesaawiki.jp/n/h/nai_ch/JG6K1dDlpo.%20In%20the%20city%20devas%20s-3309073313%20(15).png|
+|night sky,aurora borealis, rainbow|オーロラ( aurora 単体より出やすい)||https://image01.seesaawiki.jp/n/h/nai_ch/eeppn03Rjm.%20In%20the%20city%20devas%20s-3309073313%20(36).png|
+|Alpenglow|アルペングロー||https://image01.seesaawiki.jp/n/h/nai_ch/eqkbwGbLvn.%20In%20the%20city%20devas%20s-3309073313%20(39).png|
+|Zodiacal light|黄道光||https://image01.seesaawiki.jp/n/h/nai_ch/nXWHlCs9uo.%20In%20the%20city%20devas%20s-3309073313%20(41).png|
+|Crepuscular Rays|御光、薄明光線|御光の方が出ることもある |https://image02.seesaawiki.jp/n/h/nai_ch/GqK81ZVsx0.%20In%20the%20city%20devas%20s-3309073313%20(42).png https://image02.seesaawiki.jp/n/h/nai_ch/o_1DDwU8XO.%20In%20the%20city%20devas%20s-3309073313%20(17).png|
+|fireworks|花火||https://image02.seesaawiki.jp/n/h/nai_ch/LW5xofNJvY.%20In%20the%20city%20devas%20s-3309073313%20(55).png|
+|}
+[END]
+* 単語集
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|lens 135mm f1.8|写真っぽくなる|カメラの関連情報で写真のイメージを持ってくるらしい~~右が呪文あり|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N9fFSfqGak.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EnGiOcQpw2.png)|
+|bokeh|ボケ（写真）||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fqO04wMsmN.png)|
+|lens flare|レンズフレア||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OHwabWR7WI.png)|
+|below wind|下から吹き上げる風||https://image01.seesaawiki.jp/n/h/nai_ch/ZTzbg0a77b.png|
+|Core shadow|影の表現|あまりにも複雑だと機能しないかも|https://image02.seesaawiki.jp/n/h/nai_ch/p509SZd3yk.png|
+|wind||portraitやfrom aboveを追加しなくても機能する|https://image01.seesaawiki.jp/n/h/nai_ch/yh5rHQTfH3.png|
+|light rayまたはlight shafts|光の筋を表現（可能な限り）||https://image02.seesaawiki.jp/n/h/nai_ch/gXKPhXHvko.png|
+|cinematic light|映画のような光表現||https://image01.seesaawiki.jp/n/h/nai_ch/LciEHzLE9k.png|
+|dynamic light|日差しのような動きのある光表現||https://image01.seesaawiki.jp/n/h/nai_ch/NSyMFz1wRG.png|
+|particle lighting|ファンタジーのようなキラキラしたような光表現||https://image01.seesaawiki.jp/n/h/nai_ch/XOrTjY0hvg.png|
+|}
+[END]
+
+

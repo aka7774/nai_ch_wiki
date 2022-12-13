@@ -1,0 +1,108 @@
+[[ローカルの学習入門]]
+
+----
+=|BOX|
+#@markdown あくまで入門用なので改良やサポートの予定はありません。実行は自己責任で。
+
+#@markdown 最初に Rumtime - Change runtime type で GPU を選ぶ
+
+#@markdown gradioログイン情報(パスワード空白時は自動生成)
+user = "user"#@param {type:"string"}
+password = ""#@param {type:"string"}
+
+# GPUの情報表示
+!nvidia-smi
+!nvcc -V
+
+# RAMとVRAMの容量取得(GiB)
+res = !free -m | grep 'Mem:' | awk '{print $2}'
+if not res:
+   raise ValueError("RAMが取得できない")
+ram = round(float(res[0]) / 1024, 3)
+res = !nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
+if not res:
+   raise ValueError("VRAMが取得できない(GPUに繋がってないかも)")
+vram = round(float(res[0]) / 1024, 3)
+print(f"RAM : {ram}")
+print(f"VRAM: {vram}")
+del res
+
+# condaでPython 3.9からxformersまでインストール
+MINICONDA_SH='Miniconda3-py39_4.12.0-Linux-x86_64.sh' # Miniconda3-latest-Linux-x86_64.sh
+!wget https://repo.anaconda.com/miniconda/{MINICONDA_SH}
+!chmod +x {MINICONDA_SH}
+!./{MINICONDA_SH} -b -f -p /usr/local
+del MINICONDA_SH
+!conda update conda -y
+!conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch -y
+!conda install xformers -c xformers/label/dev -y
+
+# 入ったPythonのバージョン確認
+!python -V
+
+# デフォルトパスワード生成
+import secrets
+import string
+
+def get_password(length: int) -> str:
+    # secretsはrandomとかと違って暗号学的に安全な乱数を生成できる。
+    pass_chars = string.ascii_letters + string.digits
+    password = ''.join(secrets.choice(pass_chars) for i in range(length))
+    return password
+
+default_password = get_password(64)
+
+del secrets
+del string
+del get_password
+
+if not password:
+    password = default_password
+    del default_password
+
+# WEBUIのセットアップ
+%cd /content/
+!git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+%cd stable-diffusion-webui/models/Stable-diffusion
+
+# ダウンロードにトークンの要らないモデルなのでコメントアウト
+##@markdown トークンはここで貰ってきて https://huggingface.co/settings/tokens
+#user_token = ''#@param {type:"string"}
+#user_header = f"\"Authorization: Bearer {user_token}\""
+#@markdown ckptのURLを入れる(自己責任) 容量がでかいほどOOMエラーの可能性あり
+ckpt_url = 'https://huggingface.co/acheong08/Anything/resolve/main/Anything-V3.0-pruned-fp16.ckpt'#@param {type:"string"}
+#!wget -c --header={user_header} "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+!wget -c "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+vae_url = "https://huggingface.co/acheong08/Anything/resolve/main/Anything-V3.0.vae.pt"#@param {type:"string"}
+!wget -c "{vae_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+#del user_header
+
+# @markdown aria2cで落としたいモデルのURL
+aria_url = ''#@param {type:"string"}
+if aria_url:
+    !apt install -y -qq aria2
+    !aria2c --summary-interval=10 -x 3 --allow-overwrite=true -Z {aria_url}
+
+# Extensionsのセットアップ
+%cd /content/stable-diffusion-webui/extensions/
+# Dreambooth (使わないならコメントアウトすると起動が速くなる)
+!git clone https://github.com/d8ahazard/sd_dreambooth_extension.git
+!git clone https://github.com/animerl/novelai-2-local-prompt.git
+!git clone https://github.com/yfszzx/stable-diffusion-webui-images-browser.git
+!git clone https://github.com/aka7774/sd_katanuki.git
+!git clone https://github.com/aka7774/sd_filer.git
+!git clone https://github.com/aka7774/sd_about.git
+!git clone https://github.com/kousw/stable-diffusion-webui-daam.git
+!echo '{"backup_dir":"/content/drive/MyDrive/sd"}' > /content/stable-diffusion-webui/extensions/sd_filer/json/config.json
+
+# Google Driveのマウント(嫌なら許可しなければOK?)
+from google.colab import drive
+drive.mount('/content/drive')
+
+# WEBUIの起動
+%cd /content/stable-diffusion-webui/
+!COMMANDLINE_ARGS="--test-lora --xformers --opt-channelslast --share --gradio-auth {user}:{password}" REQS_FILE="requirements.txt" python launch.py
+||=
+----
+
+- [[バックアップ>https://gist.github.com/aka7774/1a52a5dcaf57a5cdbcf65562552bb04e]]

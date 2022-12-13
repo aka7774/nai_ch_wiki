@@ -1,0 +1,21 @@
+*概要
+Textual Inversion &#183; AUTOMATIC1111/stable-diffusion-webui Wiki - https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Textual-Inversion
+
+TIとは……
+ TI(Textual Inversion)とは、短縮詠唱みたいなものです。
+ 自分の任意の画像を読み込ませると、その画像内に存在する特徴をモデルが知っている範囲でまとめて学習して一つのファイルにしてくれるものです。
+ なので、元々のモデルが知らないことは学習できません。
+ 画風の再現などに優れているらしいです。
+ Textual Inversionとは？ - としあきdiffusion Wiki* - https://wikiwiki.jp/sd_toshiaki/Textual%20Inversion%E3%81%A8%E3%81%AF%EF%BC%9F
+
+AUTOMATIC1111(ローカル版)において使うときは拡張子が.ptのファイルをどっかから入手して/embeddingsディレクトリに配置し、プロンプトでそのファイル名を使用します(これを機能させるためにプログラムを再起動する必要はありません)。
+
+*学習
+学習手順はまだ記載されていません。
+とりあえずとしあき拡散を貼っとく↓
+Textual inversion - としあきdiffusion Wiki* - https://wikiwiki.jp/sd_toshiaki/Textual%20inversion
+
+*応用
+**手を修復する：bad_prompt
+TextualInversionで悪い手の形を学習させて、Embeddingでネガティブプロンプトとして使うことで正しい手の形を生成するやつです。
+→[[大量検証結果]]に検証結果を掲載しました

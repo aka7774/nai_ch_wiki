@@ -1,0 +1,50 @@
+版権画風の再現
+
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|作品名|備考|サンプル|
+||ダンガンロンパ|||
+|granblue fantasy, hatsunemiku, official art,|グランブルーファンタジー|official artを入れると安定しやすい　Add Quality Tagsのチェック外したほうがいいかもしれない|https://image02.seesaawiki.jp/n/h/nai_ch/sfuQWyVlPG.png|
+|ikkitousen,1girl,hatsune miku,official art,|一騎当千|official artを入れると安定しやすい。ハイスクールDxDと似たような絵柄がでやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/gGT915XrGX.png|
+|pripara,big eyes,hatsune miku,1girl,|プリパラ|official artを入れると安定しやすい。絵柄が似ない場合は衣装がそれっぽくなる|https://image01.seesaawiki.jp/n/h/nai_ch/wfIvLgdIKZ.png|
+|aikatsu!,hatsune miku,|アイカツ！||https://image02.seesaawiki.jp/n/h/nai_ch/MI8PZQi75E.png|
+|Takano Yuki|鷹乃ゆき||https://image02.seesaawiki.jp/n/h/nai_ch/SyKYqvqoQs.png|
+|infinite stratos, official art,|インフィニット・ストラトス||https://image02.seesaawiki.jp/n/h/nai_ch/SX5OpzrYZv.png|
+|{{{drawn by アーティスト名}}} または {{{style of 作品名}}}|作者、作品指定|強調必須。サンプルは鳥山明と荒木飛呂彦 Redditユーザーの実験結果 https://www.reddit.com/r/NovelAi/comments/y879x1/i_made_an_experiment_with_different_artists_here/ https://www.reddit.com/r/NovelAi/comments/y7679g/i_made_an_experiment_with_different_styles_here/|https://image01.seesaawiki.jp/n/h/nai_ch/LcNDdzqeO8.png https://image02.seesaawiki.jp/n/h/nai_ch/jYFjRo3du_.png|
+|kill la kill|キルラキル||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dBY5joVAYK.png)|
+|dragon ball|DRAGON BALL|違う絵柄もでやすい。ネガティブにdragon、monster等を入れないとドラゴンが生成される|https://image01.seesaawiki.jp/n/h/nai_ch/FQCfzO7zc5.png|
+|naruto &#40;series),|NARUTO-ナルト-||https://image01.seesaawiki.jp/n/h/nai_ch/lxVRSzgLtn.png|
+|ergo proxy|Ergo Proxy||https://image02.seesaawiki.jp/n/h/nai_ch/eszFTIvHJu.png|
+|kin-iro mosaic|きんいろモザイク|原作風とアニメ風が出る、絵柄が安定しずらい|https://image01.seesaawiki.jp/n/h/nai_ch/KEXQnvZ7GT.png|
+|atelier &#40;series)|アトリエシリーズ||https://image01.seesaawiki.jp/n/h/nai_ch/YilJhf6FHc.png|
+|high school dxd|ハイスクールD×D|下着率高し|https://image02.seesaawiki.jp/n/h/nai_ch/niuKjuUWi6.png|
+|Yabuki kentaro|矢吹 健太郎(漫画家)|胸や足を強調する構図に寄る傾向があるのと、AIが参考にした作品次第で絵柄がやや安定しない|https://image02.seesaawiki.jp/n/h/nai_ch/w2V5sr5Q5K.png|
+|splatoon &#40;series)|スプラトゥーン|(series)に効果があるのかは不明|https://image01.seesaawiki.jp/n/h/nai_ch/h9pMNoSjLf.png|
+|xenoblade chronicles 2|ゼノブレイド２||https://image01.seesaawiki.jp/n/h/nai_ch/TLrXhVGcB_.png|
+|asanagi|朝凪(絵師)|&#129397;|https://image02.seesaawiki.jp/n/h/nai_ch/fPk0Id5x91.png|
+|chainsaw man|チェンソーマン||https://image02.seesaawiki.jp/n/h/nai_ch/VRSf9FTjRB.png|
+|PSYCHO-PASS|PSYCHO-PASS||https://image01.seesaawiki.jp/n/h/nai_ch/R1NWFCK9JD.png|
+|precure|プリキュア||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/h2bolkFqPK.png,160,270)>https://image02.seesaawiki.jp/n/h/nai_ch/h2bolkFqPK.png]]|
+|eureka seven|交響詩篇エウレカセブン||https://image02.seesaawiki.jp/n/h/nai_ch/UGddVkUzIX.png|
+|code geass|コードギアス||https://image02.seesaawiki.jp/n/h/nai_ch/7dTZN4JLPf.png|
+|disgaea|魔界戦記ディスガイア||https://image01.seesaawiki.jp/n/h/nai_ch/EL4GJrZxR3.png|
+|mahou shoujo lyrical nanoha|魔法少女リリカルなのは|初音ミク要素が無くなる場合がある|https://image01.seesaawiki.jp/n/h/nai_ch/oJ_1Xi2fKx.png|
+|gochuumon wa usagi desu ka?|ご注文はうさぎですか？||https://i.imgur.com/nomj4ij.png|
+|love live!|ラブライブ！||https://i.imgur.com/xbyC9Uw.png|
+|urusei yatsura|うる星やつら||https://i.imgur.com/PZXp6Xe.png|
+|doraemon|ドラえもん||https://i.imgur.com/7KGy3qd.png|
+|death note|DEATH NOTE（デスノート）||https://i.imgur.com/tt79RzT.png|
+|persona 5|ペルソナ 5||https://i.imgur.com/XCG8US8.png|
+|senki zesshou symphogear|戦姫絶唱シンフォギア||https://i.imgur.com/yR50mhH.png|
+|suzumiya haruhi no yuuutsu|涼宮ハルヒの憂鬱||https://i.imgur.com/675FZsQ.png|
+|mahou shoujo madoka magica|魔法少女まどか☆マギカ||https://i.imgur.com/1hjImUo.png|
+|boku no hero academia|僕のヒーローアカデミア||https://i.imgur.com/LFEnOA0.png|
+|danganronpa|ダンガンロンパ||https://i.imgur.com/YVhwEzJ.png|
+|nichijou|日常||https://i.imgur.com/0Ynz0wm.png|
+|lucky star|らき☆すた||https://i.imgur.com/PZLWGOt.png|
+|bang dream!|BanG Dream!（バンドリ！）||https://i.imgur.com/6GfEaNH.png|
+|girls und panzer|ガールズ&パンツァー||https://i.imgur.com/csLc9DS.png|
+|strike witches|ストライクウィッチーズ||https://i.imgur.com/sjffrSJ.png|
+|yuruyuri|ゆるゆり||https://i.imgur.com/beNfZHo.png|
+|k-on|けいおん！||https://i.imgur.com/RJWjJxc.png|
+|yurucamp|ゆるキャン△|服装と絵柄がゆるキャン△っぽくなるプロンプト追加でどこまで追従するかは不明|https://i.imgur.com/BY3OcEt.png|
+|}

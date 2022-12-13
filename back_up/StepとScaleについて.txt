@@ -1,0 +1,37 @@
+* StepとScaleについて
+
+Step(Sampling Steps)はノイズ除去(画像の書き込み)を行う回数。Step数に比例して書き込み量が増えるようだが、ある程度のところで飽和傾向にある。
+Scale(CFG Scale)はどの程度プロンプトに従うかの度合いを決める。高すぎると無理に従おうとして破綻しやすい。低いほど創造的な結果になる。
+
+値を変えると出力される画像が変わるため、比較画像を作ってみた。
+
+step数増やすと演算時間が増えるので、NovelAIの初期値28は
+品質と演算時間のバランスをとったものと思われる。
+
+
+scaleは増やしても演算時間は増えないけど、増やしすぎてもダメで、
+ちょうどいい塩梅がNovelAIのデフォルトの11あたりなんかもしれないで。しらんけど。
+あえてscaleを下げて水彩画風の柔らかい画質にするのも流行っとるな。
+
+NovelAIのデフォルト値は
+step : 28.0
+scale : 11.0 (サービス開始初期は12.0だった)
+
+以下共通条件
+> seed : 1~~
+> Prompt : masterpiece,best quality,~~
+> NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
+
+** step違い
+size : 512*768
+scale : 12.0
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cqiku7_oVz.png)
+
+** scale違い
+size : 512*768
+step : 28.0
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/AjewjDAzKu.jpg)
+
+** マトリクス
+size : 256 * 384
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/oDWlFVtTbq.png)

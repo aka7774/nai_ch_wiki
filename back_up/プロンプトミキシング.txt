@@ -1,0 +1,33 @@
+Web版とローカル版では違う
+*Web版
+入力方法
+プロンプトA:プロンプトAの強度数値|プロンプトB:プロンプトBの強度数値|プロンプトC:プロンプトCの強度数値|･･･
+（例）serafuku,red hair:0.5|kimono,blue hair:1|maid,blond hair:0.7
+プロンプトは通常と同じように入れる（カンマやスペースなども）
+強度数値は0.1～100を入れることができる
+強度数値を入れない場合は1となる
+
+[+]
+検証表にはカッコが入っていますが不要です
+{| class="nanj_prompt_table edit sort"
+|''プロンプト''|''サンプル''|
+|(blue hair), (red hair)|https://image01.seesaawiki.jp/n/h/nai_ch/30zrCjhUal.png|
+|&#40;blue hair)&#124;&#40;red hair):-0.1|https://image02.seesaawiki.jp/n/h/nai_ch/oDVVbTWLnB.png|
+|&#40;blue hair)&#124;&#40;red hair):0.1|https://image02.seesaawiki.jp/n/h/nai_ch/rUO3KzFyDV.png|
+|&#40;blue hair)&#124;&#40;red hair):0.3|https://image01.seesaawiki.jp/n/h/nai_ch/UbYftwp3YG.png|
+|&#40;blue hair)&#124;&#40;red hair):0.5|https://image02.seesaawiki.jp/n/h/nai_ch/aCyCyFv13F.png|
+|&#40;blue hair)&#124;&#40;red hair):0.7|https://image01.seesaawiki.jp/n/h/nai_ch/RGiWBKFVab.png|
+|&#40;blue hair)&#124;&#40;red hair):0.9|https://image02.seesaawiki.jp/n/h/nai_ch/a0TG6wCT6I.png|
+|&#40;blue hair)&#124;&#40;red hair):1.1|https://image01.seesaawiki.jp/n/h/nai_ch/K98E0s04zf.png|
+|&#40;blue hair)&#124;&#40;red hair):1.3|https://image02.seesaawiki.jp/n/h/nai_ch/hr6OXP_Cpo.png|
+|&#40;blue hair)&#124;&#40;red hair):1.5|https://image02.seesaawiki.jp/n/h/nai_ch/wihHtpWMtL.png|
+|&#40;blue hair)&#124;&#40;red hair):100|https://image02.seesaawiki.jp/n/h/nai_ch/QHYSuFXawS.png|
+|}
+[END]
+
+提供：なんJNVA部★75　ID:Obw97ovH0
+https://fate.5ch.net/test/read.cgi/liveuranus/1666679778/866-867
+
+公式の解説ページ
+https://docs.novelai.net/image/promptmixing.html
+

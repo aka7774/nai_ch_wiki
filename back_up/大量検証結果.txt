@@ -1,0 +1,302 @@
+※手が足りないため一旦コピペで簡易掲載
+imgurの画像は消える可能性もあるので誰かWiki内に上げ直してくれると安全
+
+*HyperNetworkのX/Yプロット検証
+[+]
+様々なHyperNetworkを適用してみて、画風の変わり具合の検証を行いました。
+
+**検証時使用モデルおよびプロンプト
+
+- モデル：NovelAI animefull-final-pruned [925997e9]
+- Vae：nai.vae
+
+▼プロンプト
+|(masterpiece:1.3), (best quality:1.0), masterpiece, best quality, 1girl, (solo:1.1), amazing awesome highly detailed, (realistic:0.6), ray tracing, DOF, HDR, (full body:1.1), (downtown:1.1), (go-toubun no hanayome:1.1), (nakano yotsuba:1.4), orange hair, ([green rabbit short ears hairband:green hairband ribbon:0.25]:1.2), (tareme:1.2), (bangs:1.2), (swept bangs:1.1), :d, happy smile, joy, upper_teeth, (teen age:1.2), 17yo, blue eyes, bob cut, casual wear, BELSTAFF, BIBA, BUCK MASON, VALENTINO, JAMES LAKELAND, MISSGUIDED, SELECTED FEMME, UNITED ARROWS, YOHJI YAMAMOTO, Hippie Rose, Marc New York,|
+|Negative prompt: (bad_prompt:1.0), parted bangs, green clothes, helmet hair.nakano nino, nakano miku, nakano itsuki, hair between eyes, blunt bangs, tsurime, evil smile, smug_face, naughty smile, loli, petite, child, mature female ,milf, adult, women, middle age, pablo picasso, lowres, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, bad anatomy, bad hands, fewer digits, signature |
+|Steps: 28, Sampler: Euler, CFG scale: 11, Seed: 4035116040, Size: 512x1024, Model hash: 925997e9, Hypernet: ○○○, Hypernet strength: 0.8, Clip skip: 2, ENSD: 31337 |
+
+**検証用HyperNetwork
+
+検証したHyperNetworkは主に韓国で配布されているHyperNetworkです。
+&#44277;&#50976;&#46108; hypernet, embedding &#47784;&#51020; (&#49368;&#54540; 有) - AI&#44536;&#47548; &#54617;&#49845; &#52292;&#45328; - https://arca.live/b/hypernetworks/60940948
+
+ダウンロードは[[ローカルのリソース]]を参照するか、以下のhuggingfaceでまとめてダウンロードすることができます。※Git、またはGithubDesktopでクローンリポジトリしてください。
+https://huggingface.co/WarriorMama777/HyperNetworkCollection_v2/tree/main
+
+
+**検証設定
+XYプロットには以下のコマンドでHyperNetworkを検証しました。
+
+|Misaka12003,misekai_555-40000,mj6wn4,mo1,moisture,momoko-γ,musouduki-50000,nekotoufu,nonomi,Ookuma Nekosuke-65000,oov1wq,oryou,pon1,porunoibuki,porunoibuki-11000,quad-a-43500,rietta-80500,sasugakei,shi1,Someoka,sukamo,sukamo-40000,Uo Denim,WKRY9IE,xfa017,xks8j7,y7reaw,1l52ve,3yj2lz,4urpyj,430rus,aamuk-36500,Aikawa,an1,anime_2,asa 100k+118.5k gen,asanagi(2),asanagi-150500,azusa,banno,bi1,deokho-30000,eimi,euiaok,gweda,h979or,hanako-60000,hanto,Haru,HiiragiYuichi,irohara,j4acm4,je1,JY2-13500-32000-99000,kai1,Kirisaki,kne748,Komori Kuduyu,kyuri-90000,maruzen,meganei,meganei-20000,meganei-21000,meganei-24000,Melon |
+
+
+**結果画像
+
+グリッド画像の概観です。
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DiK2h5sTMY.jpg)
+
+原寸大は以下から閲覧できます。
+Webp:4MB：https://files.catbox.moe/0g37s3.webp
+
+
+
+[END]
+
+*マージモデル検証｜個人的にマージした様々なモデルのX/Yプロット検証
+[+]
+個人的にためした様々なマージモデルを掲載します
+またいい具合だったAnEve.G.N0.3 は「ElderOrangeMix」として、AnythingとNai+Gapeをあわせる定番の(?)モデルは「BloodOrangeMix」としてhuggingfaceにアップしました。別参照：[[ローカルのリソース]]
+
+出力グリッド画像は以下から閲覧できます。※サイズが大きいので注意
+Webp:18MB：https://files.catbox.moe/6kwomv.webp
+サムネイル↓
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o5YMISaUfx.jpg,600)
+
+**モデル一覧表
+雑然としていて申し訳ない
+管理名(旧)と説明を合わせて見ればとりあえずなにをマージしたかはわかると思う
+
+| 管理名(旧) | 管理名(新) | 〃 | 説明 | アップロード | 配布用名称 | ハッシュ値 |
+| --- | --- | --- | --- | --- | --- | --- |
+| ,AN.G-N_AN+(Gape60-Nai)_1.0 | ,AN.G-N1.0 | AN.G-N1.0 | Anything+NAIにGape。定番の(?)やつ | &#128317;https://huggingface.co/WarriorMama777/OrangeMixs　｜　https://pixeldrain.com/u/NHtvQ1zh| BloodOrangeMix | [ffa7b160] |
+| ,Anything-V3.0-pruned | ,An_V3_Pr | An_V3_Pr |  |  |  |  |
+| ,nai | ,nai | nai |  |  |  |  |
+| ,nai_sfw | ,nai_sfw | nai_sfw |  |  |  |  |
+| ,Elysium_Anime_V2 | ,ELY_A_V2 | ELY_A_V2 |  |  |  |  |
+| ,AG__Any+(Gape-Nai)_0.5 | ,AG0.5 | AG0.5 | Anything+Gape |  |  |  |
+| ,NG__Nai+(Gape-Nai)_0.4 | ,NG0.4 | NG0.4 | Nai+Gape |  |  |  |
+| ,NG__Nai+(Gape-Nai)_0.8 | ,NG0.8 | NG0.8 | Nai+Gape |  |  |  |
+| ,gAGN__gAG+(Nai-gAnon)_0.8 | ,gAG.N0.8 | gAG.N0.8 | gA+GapeにNAI足したモデル |  |  | /g/-anon's unnamed mix [e93c3bf7] |
+| ,gAGN__gAG+(Nai-gAnon)_0.55 | ,gAG.N0.55 | gAG.N0.55 | gA+GapeにNAI足したモデル |  |  | /g/-anon's unnamed mix [e93c3bf7] |
+| ,anything+everything-ver1.5 | ,AnEve_V1.5 | AnEve_V1.5 |  |  |  |  |
+| ,gAG__gAnon+(Gape-Nai)_0.55 | ,gAG0.55 | gAG0.55 | gAnonにGape |  |  | /g/-anon's unnamed mix [e93c3bf7] |
+| ,gape60 | ,gape60 | gape60 |  |  |  |  |
+| ,g-anonmix | ,gA | gA |  |  |  |  |
+|  | ,AnEve.G0.5 | AnEve.G0.5 | AnEve_V1.5+(Gape0.5-NaiFull)したモデル |  |  |  |
+|  | ,AnEve.G.N0.3 | AnEve.G.N0.3 | AnEve.G0.5にNai-Naisfw0.3したモデル | &#128317;https://huggingface.co/WarriorMama777/OrangeMixs　｜　https://pixeldrain.com/u/i9tdZsVJ | ElderOrangeMix | [3a46a1e0] |
+
+----
+# Merge Recipes
+
+### ElderOrangeMix [3a46a1e0] ｜anything and everything mix ver.1.5+Gape+Nai(AnEve.G.N0.3)
+
+▼Use Models
+1. anything and everything mix ver.1.5 [5265dcf6]
+2. NovelAI animefull-final-pruned [925997e9]
+3. NovelAI sfw [1d4a34af]
+4. Gape60 [25396b85]
+
+### **Instructions:**
+
+| Step | Interpolation Method | Primary Model | Secondary Model | Tertiary Model | Merge Name |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Add Difference @ 0.5 | anything and everything mix ver.1.5 | Gape60 | NovelAI full | tempmix-part1 [] |
+| 2 | Add Difference @ 0.3 | tempmix-part1 | NovelAI full | NovelAI sfw | ElderOrangeMix  [3a46a1e0] |
+
+----
+
+※[[ローカルのマージ]]にあるAnythingのおすすめマージレシピと同様です。
+### BloodOrangeMix [ffa7b160]｜Anything+Nai+Gape
+
+▼Use Models
+1. AnythingV3.0 huggingface pruned [2700c435]
+2. NovelAI animefull-final-pruned [925997e9]
+3. NovelAI sfw [1d4a34af]
+4. Gape60 [25396b85]
+
+### **Instructions:**
+
+| Step | Interpolation Method | Primary Model | Secondary Model | Tertiary Model | Merge Name |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Add Difference @ 0.3 | AnythingV3.0 | NovelAI animefull | NovelAI sfw  | tempmix-part1 [] |
+| 2 | Add Difference @ 1.0 | tempmix-part1 | Gape60 | NovelAI animefull | BloodOrangeMix [ffa7b160] |
+
+[END]
+
+*TextualInversionで手を修復する：bad_prompt
+[+]
+**手を修復する：bad_prompt
+TextualInversionで悪い手の形を学習させて、Embeddingでネガティブプロンプトとして使うことで正しい手の形を生成するやつです。
+参照：Nerfgun3/bad_prompt &#183; Datasets at Hugging Face - https://huggingface.co/datasets/Nerfgun3/bad_prompt
+
+***検証(1)
+
+以下のプロンプトで(bad_prompt:0.0)の数値をXYプロットで変化させながら、様々な手のポーズを出力した
+
+
+|(masterpiece:1.1), best quality, silver color schema, (cowboy shot,:1.3) (mature female:1.3),(1girl), (solo:1.1), beret, white shirt, silver long_hair, hair_between_eyes, happy smile, :d, (simple background:1.2), beautiful detailed eye, shiny skin, shiny hair, head tilt, (hand:1.3),(open hand:1.2), (hand up:1.2), (naval:1.1) |
+|Negative prompt: nsfw, (bad_prompt:0.0), 3D, 3Dcubism, disney, marvel, lowres, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, loli, petite, child, infant, toddlers,|
+| Steps: 28, Sampler: DPM++ 2M Karras, CFG scale: 8.5, Seed: 3725970099, Size: 1024x1024, Model hash: 2700c435, Denoising strength: 0.7, Clip skip: 2, ENSD: 31337, First pass size: 0x0|
+
+
+XYプロット
+▼X軸
+0.0,0.2,0.4,0.6,0.8,1.0,1.2,1.4
+▼Y軸
+open hand
+akanbe
+bunny pose
+double v
+paw pose
+finger counting
+finger frame
+fist bump
+own hands clasped
+heart hands
+
+----
+
+▼検証結果
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/76m4BdwMrl.jpg,300)
+
+→グリッド画像(.webp形式。でかいので注意：2MBくらい)：https://image02.seesaawiki.jp/n/h/nai_ch/EGsDrF6gBP.webp
+
+公式によると0.8くらいで使ってくださいとのことですが、手の修復の効果が見られるのは1.0～1.4の間でした。1.0未満は数値が上がるごとに改善しているような気がしなくもないですが若干プラシーボ感もあります。もっとも破綻のない手を描けているのは1.4で7枚でした。また1.2では3枚でした。1.0ではどこかしら破綻があったりよけいな指があったりしますが、全体的に整った印象の手になってる気がします。
+ただし手の修復と引き換えに1.0超えてくるとがっつり補正かかってきて絵柄に影響がでてきます。→絵柄に影響を及ぼさないVersion2が開発中らしいです。
+追記：なおVersion2を使用する場合は、bad_prompt_version2とプロンプトを打たないと使用できないので注意です。
+
+[END]
+
+* モデル比較表(1)：元素プロンプト
+[+]
+|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BHSusvNx7T.jpg,400)|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QGMoSpovYu.jpg,400)|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/rwUnG5Rbyu.jpg,400)|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/taFwEi0H6L.jpg,400)
+[END]
+
+* 色見本・色テスト
+[+]
+422 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾗｸｯﾍﾟﾍﾟ MM7f-P/vM)[sage] 投稿日：2022/10/16(日) 21:32:26.25 ID:bKOPY3TkM [14/17]
+色テストかなりうまく言ってるわ
+まれに変なのあるけど基本うまく行ってる
+変なのはこれとかやな
+この色花出てて草
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RIUXkIwCqe.png)
+黄色は背景が黄色い花が出がち
+黄緑みたいな色
+なんか食べられてるやんけ
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tCkP2LsFj5.png)
+他のhoneydew hair
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZUB2nt6eCR.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/69kUU6bamu.png)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DqkhAU9mid.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RwlceZkq0p.png)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/grkKEaKW2O.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9TEVbErIiD.png)
+
+460 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾗｸｯﾍﾟﾍﾟ MM7f-P/vM)[sage] 投稿日：2022/10/16(日) 21:42:18.68 ID:bKOPY3TkM [15/17]
+ライム色なんか草
+この色単体で複数の色出るで
+lime hair 2トーンになりやすい感
+https://i.imgur.com/xQYDaK2.png
+https://i.imgur.com/eztUJaz.png
+https://i.imgur.com/sl39KZr.png
+https://i.imgur.com/ACJkrKb.png
+https://i.imgur.com/IRxygTr.png
+https://i.imgur.com/9Oerkhi.png
+https://i.imgur.com/2H4T3hu.png
+https://i.imgur.com/tgZMn7d.png　https://i.imgur.com/sx82jzf.png　https://i.imgur.com/jFRBGEA.png
+https://i.imgur.com/EkhBI73.png
+[END]
+
+* 設定とseed固定で髪の色だけ変えた実験
+[+]
+419 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4bb0-M5DG)[sage] 投稿日：2022/10/16(日) 13:42:04.60 ID:ul+7auns0
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tDgfmkeLTx.png,600)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/c_d0dY6HmV.png,600)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/mfJOY5i7o3.png,600)
+
+設定とseed固定で髪の色だけ変えた実験
+左上から未指定/黒(black)/紺(dark blue)/青(blue)/紫(purple)/水(light blue)/茶(brown)/薄茶(light brown)/金(bronde)/白金(platinum blonde)/灰(grey)/銀(silver)/白(white)/桃(pink)/橙(orange)/赤(red)/緑(green)
+
+どうやら髪の色が違うと、顔や髪型も微妙に違って来るな
+黒は優等生、茶は同級生、金はギャル、白は無垢・令嬢っぽくなりやすい
+----
+※投稿時に書くのが抜けていたが、金(bronde)と白金(platinum blonde)の間の色は黄(yellow)になっている。
+※呪文は"1girl, long hair, *** hair, school uniform, dress shirt, short sleeves, happy"で、***の部分に色名を入力。
+[END]
+
+* seed値＆highly detailedの微調整231パターンの画像を生成して傾向チェック
+[+]
+ネタ元：ID:8NKTMun30
+なんJnovelAI★44
+https://fate.5ch.net/test/read.cgi/liveuranus/1665818410/
+
+78 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 16:38:37.67 ID:8NKTMun30 [1/12]
+プロンプト研究のためにX/Y plotで色々と一日やったけど
+seed値を0&#65374;20で＋1ずつ変動、highly detailed：1.0&#65374;1.5まで0.5刻みで変動
+合計で231パターンの画像を生成して傾向チェックとかしてたんだけどさ
+エロ絵の研究とかじゃなくて、もはや検品作業になってて本質を見失ってる気がしてきたわ
+
+馬鹿でか画像で大変申し訳ないけど、参考にどうぞ
+[+]
+[[&ref(https://i.imgur.com/todFc7d.jpg,500)]]
+[END]
+
+87 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 16:40:37.28 ID:8NKTMun30 [2/12]
+>>56
+>（とは言ってもローカル版つまりAUTOMATIC1111を再起動するときは全て数値がもどってしまうからいちいち入力するよりはjsonで初期値いれておいたほうがいいのか）
+そういう事や、毎回起動時に手動で設定すると値間違えたりする場合もあるしな
+必須ではないけど、使い込むならやっておく便利ぐらいの認識でええで
+
+101 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 16:43:43.26 ID:8NKTMun30 [3/12]
+>>83
+多分、パラメータ指定で強調するなら
+一単語で完結しつつ、意味が限定的な方が強い気がしてきたわ
+構図が変わってるから、highlyが文字通り「(身長が)高い」とかに解釈されてる気がする
+
+178 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 17:01:05.88 ID:8NKTMun30 [4/12]
+>>166
+詳細はGithubのwikiに乗ってるけど
+(要素：1.0)なら要素に何も付けず、そのまま書いた時と一緒や
+
+早見表的にはこうなる
+their {word} = our (word:1.05)
+their {{word}} = our (word:1.1025)
+their [word] = our (word:0.952) (0.952 = 1/1.05)
+their [[word]] = our (word:0.907) (0.907 = 1/1.05/1.05)
+
+204 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 17:05:37.52 ID:8NKTMun30 [6/12]
+>>196
+Web版でもパラメータ指定は対応してるで
+付ける時は()無しにすりゃええ
+https://docs.novelai.net/image/promptmixing.html
+
+229 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 17:09:40.21 ID:8NKTMun30 [7/12]
+>>201
+1.05^n乗になるからわりと緩やかやけどね(Web版基準で見れば1.5まで検証すりゃ十分っていう判断やし）
+1 1.05
+2 1.1025
+3 1.157625
+4 1.21550625
+5 1.276281563
+6 1.340095641
+7 1.407100423
+8 1.477455444
+9 1.551328216
+10 1.628894627
+[END]
+
+
+* ローカル版：NovelAILeak Checkpoint Merger の事例: NovelAI と Waifu Diffusion のマージ割合と差分出力結果
+[+]
+&color(#ff0000){''ローカル版の使用は自己責任で''}
+
+かなり前にやったので当時はNovelAIのサービス版と絵を合わせるとか考えてなかったのであんまり正確ではないが、参考になれば
+
+{{{masterpiece}}}, {{{posing sketch}}}, A girl {idolmaster}, :(, lies wounded from explosion. Her mechanical arm is half destroyed. In the rubble of a devastated city,  A pipe gun has been thrown out. The girl is looking forward with tears in her eyes.
+Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, {looking at viewer}
+Steps: 28, Sampler: Euler a, CFG scale: 11, Seed: 1464115615, Size: 768x512, Model hash: e1de58a9
+https://image02.seesaawiki.jp/n/h/nai_ch/MdCHX_qgxi.png
+
+{{{masterpiece}}}, {{{posing sketch}}}, A first elderly man lying wounded from explosion. His mechanical arm is half destroyed. In the rubble of a devastated cyberpunk city,  A pipe gun has been thrown out. The man is looking forward with tears in her eyes.
+Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, {looking at viewer}
+Steps: 28, Sampler: Euler a, CFG scale: 11, Seed: 3080153733, Size: 832x512, Model hash: e1de58a9
+https://image02.seesaawiki.jp/n/h/nai_ch/pcSej2zP16.png
+
+{{{masterpiece}}}, {{{posing sketch}}}, a girl {idolmaster} {black hair} confronts her enemy with a machine gun despite her injuries, {firing}, {muzzle flash} In the rubble of a devastated city, Her mechanical arm is half destroyed. The girl is facing the enemy with an angry expression on her face
+Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, {looking at viewer}
+Steps: 28, Sampler: Euler a, CFG scale: 11, Seed: 1359221784, Size: 832x512, Model hash: e1de58a9
+https://image01.seesaawiki.jp/n/h/nai_ch/G3mc_4ieEu.png
+
+{{{masterpiece}}}, {{{posing sketch}}}, a first-generation man is holding a machine gun despite his injuries. In the rubble of a devastated city,  Her mechanical arm is half destroyed. The first-aged man is facing the enemy with an angry expression on his face.
+Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
+Steps: 28, Sampler: Euler a, CFG scale: 11, Seed: 3415035411, Size: 832x512, Model hash: e1de58a9
+https://image01.seesaawiki.jp/n/h/nai_ch/Qqn5_rtcqi.png
+

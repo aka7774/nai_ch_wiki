@@ -1,0 +1,438 @@
+画像生成は経験済みだが、まだ学習をやったことない人が対象。
+
+#contents
+
+* 学習方法の選択
+
+TI, DB, HN, DA, Loraなど。
+どれがいいかは目的に応じて変わるので、当面は全部やって比較検討するのがいい。
+1111以外を使う方法もあるが、1111を使えば全部できる。
+
+ここでは1111を使って、Lora(DB)とHNを試してみた。
+用意した環境は次の2つ。
+
+- VRAM 8GBのNVIDIA GPUを搭載したローカルPC
+- 無料Colab
+
+細かい調整の説明は省き、再現性のある手順を示す。
+* Lora(四国めたん)
+
+Dreamboothのオプションとして利用可能。
+速くて小さいが、完成度についてはまだ未知数。
+
+- 解像度512 %%768に挑戦(来るSD2系時代に備えて)%%
+- 所要時間は全部で2～3時間
+- 実用的(着せ替えなどをして遊べる)
+
+追記
+
+- 2022-12-13アップデートで設定項目が変わった
+- NAI VRAM 8GBでも動作することを確認した
+- 最小限の設定項目で実施する(ひとまずデフォルト値を信じる)
+
+** リンク
+- 公式リポジトリ│https://github.com/cloneofsimo/lora
+- webで使える&#129303;のloraツール│https://huggingface.co/spaces/ysharma/Low-rank-Adaptation
+
+dreambooth使わないから外してて知らなかったけどすでにLORA実装してるらしいじゃん！
+Commits見ると8日にはもう取り入れてるぞ
+引用：ふたばより
+
+** ねらい
+
+- Colabは早いと3時間程度でGPUが使用停止になるので学習時間の短縮も図る
+- できれば一回のセッションで学習を完了させたい
+- Drive容量も含めて無料で済ませたい
+
+** 1. Colabの起動
+
+- Colab [[入門用Notebook]]
+
++ https://www.python.jp/train/experience/colab.html
++ https://www.python.jp/train/experience/exec-python1.html
++ 「1+1」のかわりに[[入門用Notebook]]の内容をコピペして実行
+
+無料ColabだとNAIはなぜか動かなかった。アップデートで直った可能性はある。(後述)
+K80になったことは無いけどT4が引けてるか一応確認するといいかも。
+
+** 1. ローカルの起動
+
+Extensions から Dreambooth をインストールする
+
+コマンドラインオプションを追加する。
+ --test-lora
+
+** 2. 画像の用意
+
+1111の起動に15分+ダウンロード時間ぶんかかるので待ってる間にやる。
+
+ダウンロード
+- https://image02.seesaawiki.jp/n/h/nai_ch/aQEovutlvq.zip skkmtn.zipにリネームする
+- https://image02.seesaawiki.jp/n/h/nai_ch/MHIWw0HVJD.zip touka.zipにリネームする
+
+中身は学習用データセット14枚
+- https://zunko.jp/con_illust.html
+- 16枚からビーチチェアとデフォルメを除いた
+
+解像度768版
+[+]
+中身を解凍して1つに混ぜてskkmtn.zipとして再圧縮してください(5MB制限のため)
+https://image01.seesaawiki.jp/n/h/nai_ch/CTlFvCz0og.zip
+https://image02.seesaawiki.jp/n/h/nai_ch/BH7XXOAncb.zip
+透過画像200枚
+https://image02.seesaawiki.jp/n/h/nai_ch/lh1xkGmvts.zip
+[END]
+
+** 3. 画像のアップロード
+
+ここからは1111の起動後にやる。
+
+- Filerのimagesに2つのzipをドロップする
+-- あるいは webui直下にzipファイル名のディレクトリを作りzipの中身を展開する
+- Image BrowserのOthersで skkmtn と touka を選択する
+-- 画像が見えることを確認する
+** 4. モデルファイル作成
+
+「Dreambooth」タブを開いた後、真ん中の「Create Model」タブが開かれていること確認する。
+
+- Name: skkmtn
+- Source Checkpoint: Anything-V3.0-pruned-fp16.ckpt
+以前の設定
+[+]
+- Scheduler: pndm
+[END]
+
+「Create」ボタンを押す。
+
+animefull-final-pruned.ckpt だと 必ず止まってしまう。
+[+]
+=||
+Loading model from checkpoint.
+Loading checkpoint...
+v1 model loaded.
+Creating scheduler...
+Converting unet...
+Converting vae...
+Converting text encoder...
+^C
+||=
+
+このまま強引にTrainまで進めても結局エラーで動かない。
+
+=||
+Returning result: Exception training model: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/content/stable-diffusion-webui/models/dreambooth/skkmtn/working/tokenizer'. Use `repo_type` argument if needed.
+||=
+[END]
+
+** 5．パラメーター設定
+
+左の「Model」ドロップダウンに「skkmtn」が表示される。
+真ん中の「Parameters」タブを押す。
+
+明記されていない項目は初期値のまま。
+
+Settings
+- 変更なし
+
+以前の設定
+[+]
+Settings
+- Training Steps Per Image (Epochs): 100
+- Max Training Steps: 1400
+- Learning Rate: 1e-3
+- Resolution: 512
+- Apply Horizontal Flip: オフ
+
+Learning Rateは不当に高いかも。この辺の研究参加者が増えることに期待。
+
+Training Steps Per Image (Epochs)はデフォルト値が100になった。
+Learning Rateは3つに分かれて、Lora関係は0.002になった。
+
+Apply Horizontal Flipをオフにするのは左右非対称のキャラをDBする名残なので、左右逆になってもいいキャラではオンでも良さげ。
+[END]
+
+Advanced
+- Use LORA: オン
+
+- Use 8bit Adam: オン
+- Mixed Precision: fp16
+- Memory Attention: xformers
+
+これはVRAM節約と高速化のために設定していると思うのでお好みで。
+つけないとVRAM 8GBでは動かないし、時間は倍近くかかるようになる。
+
+以前の設定
+[+]
+- Train Text Encoder: オフ
+
+Train Text Encoderはオンだとうまくいかない報告がいくつかあり。
+やはりこれは不具合だったらしく修正されたらしい。
+
+[END]
+
+** 6. コンセプト設定
+
+- Classification Dataset Directory: touka
+
+ただし、ローカルでVRAM 8GBで試すときはtoukaは設定しない。
+
+- Dataset directory: skkmtn
+- Instance Prompt: skkmtn
+
+Class Promptも入れたほうが良さそうとか色々あるけどまずは最低限で。
+
+&color(#ff0000){Instance promptはOptionalではなく、入れないとUnable lbuild Concents.エラーが出る。}
+
+** 7. Trainボタンを押す
+
+バグっぽい表示が出るが動く。
+ローカル2070だと20分以内には終わる。
+Colabでも1時間以内には終わるはず。
+
+** 8. 動作確認
+
+- skkmtn_1400_lora.ckpt が出来上がっているはずなので、通常通り Stable Diffusion checkpoint のプルダウンから選ぶ
+- プロンプトを skkmtn にして実行
+
+ masterpiece, best quality,1girl,skkmtn
+
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/V9yqhtWOWZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/V9yqhtWOWZ.png]]
+
+- うまくいってればワードを追加する
+
+ masterpiece, best quality,1girl,skkmtn,school costume
+
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FMxCu3WqiN-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/FMxCu3WqiN.png]]
+
+ masterpiece, best quality,1girl,skkmtn,nude
+
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pPhbIXuQrz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pPhbIXuQrz.png]]
+
+(過学習だと思ったらLearning Rateを下げて再挑戦)
+
+** 9. 煮凝りの取得
+
+- 「Filer」タブの「Loras」タブの「Active」タブで欲しいものにチェックを入れて「Download」
+- 容量が少ないので「Select All」でも大丈夫
+- ダウンロードリンクが表示されるのでクリックする
+
+** 10. 煮凝りの合体
+
+ローカルで動かしたり別の日にColabに上げ直したり。
+
+- ダウンロードしたptファイルを models/lora/ の中に配置する
+- 「Dreambooth」タブで「4. モデルファイル作成」をおこなう
+- 左のModelで「skkmtn」、Lora Modelでptファイルを選び、「Generate Ckpt」ボタンを押す
+- skkmtn_0_lora.ckpt ファイルが保存される(どれを選んでも数字が0なのはバグ?)
+
+** 11. 学習の再開
+
+models/dreambooth/skkmtn を保存しておけば続きから学習できる。
+skkmtn_0_lora.ckpt ファイルに対して追加学習するのとは意味的に異なるはずだけど、
+実際の結果としてどうなのかは不明。
+
+* Hypernetwork(四国めたん)
+
+108スレの571、572、575、576を参考にした。
+
+モデルは skkmtn_1400_lora.ckpt を選択。
+
+** 1. ファイルの用意
+
+画像はLoraと一緒。
+
+以下の内容だけが記載されたファイルを
+C:\stable-diffusion-webui\textual_inversion_templates\mb1f.txt (どこでもいい)に保存
+=|BOX|
+masterpiece, best quality, 1girl, face
+||=
+
+** 2. ptファイル作成
+
+「Train」タブを開いた後、「Create hypernetwork」タブを開きます。
+
+- Name: skkmtn
+- Enter hypernetwork layer structure: 1, 2, 2, 1
+- Select activation function of hypernetwork. Recommended : Swish / Linear(none): mish
+
+** 3. Train
+
+「Train」タブを開く
+
+- Hypernetwork: skkmtn.pt を選択
+- Hypernetwork Learning rate: 0.00001(デフォルト)
+- Dataset directory: skkmtn
+- Prompt template file: C:\stable-diffusion-webui\textual_inversion_templates\mb1f.txt (用意したもの)
+- Gradient accumulatelion steps: 14
+- Max steps: 182
+- shuffle tags by "," when creating prompts: オン
+- Choose latent sampling method: deterministic
+
+スレでの指定は180だったが、14の倍数できりよく182とした。
+プレビュー画像を出すとVRAM不足で落ちるので注意。(今回は500以下だから関係ない)
+
+30分ちょっとかかる。
+
+** 4. 動作確認
+
+- ptが出来上がっているはずなので、通常通り Hypernetwork のプルダウンから選ぶ
+- Generate
+
+ masterpiece, best quality, masterpiece, skkmtn
+
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_2uxhE4HZW-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_2uxhE4HZW.png]]
+
+ masterpiece, best quality, 1girl, face, skkmtn
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5U0aplLM7z-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5U0aplLM7z.png]]
+
+ masterpiece, best quality, 1girl, skkmtn, bikini
+
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8LEogCNweQ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/8LEogCNweQ.png]]
+
+旧バージョン
+[+]
+* 学習元画像の準備
+
+- ハローアスカをして10枚の画像を生成する
+- 「C:\helloasuka」の中に入れる
+
+プロンプトに「helloasuka」を入れることで学習を確認する。
+(学習前はハローアスカは出てこない)
+
+** 学習の事前準備(省略)
+
+- 何らかの方法で背景を透過させてから白背景にする
+-- Photoshopとか、Ralpha(フリーソフト)とか
+-- Webアプリもあるけどあんまり精度が良くないっぽい
+
+* Dreambooth
+
+** 自分のPC
+
+- 画像生成までの環境構築ができていることが前提。
+- Windows
+- 1111を最新にする。
+
+*** インストール
+
+- Extensions から Dreambooth をインストールする
+- stable-diffusion-webui\venv\Scripts\Activate.ps1 (もしくはbat) を開く
+ pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+- 1111を一度終了して起動しなおす
+
+** 無料版Colab
+
+NAIleakの自動インストールコマンドはここに書けないので入門ではAnything v3を使う。
+
++ https://www.python.jp/train/experience/colab.html
++ https://www.python.jp/train/experience/exec-python1.html
++ HuggingFaceのトークンを手に入れる https://huggingface.co/settings/tokens
++ 「1+1」のかわりに[[入門用Notebook]]の内容をコピペして実行
++ gradioのshare URLがログの下のほうに書いてあるのでブラウザで開く
++ パスワードは左の{x}ってとこ押したら書いてある
+
+入門が終わったらNotebookは本格的なものに乗り換えたり、
+自分でカスタマイズして使うとええやでー
+
+** 1. モデルファイル作成
+
+「Dreambooth」タブを開いた後、「Create Model」タブを開きます。
+
+- Name: helloasuka
+- Source Checkpoint: ハローアスカに使ったモデルのckpt
+- Scheduler: ddim
+
+「Model」が「helloasuka」になってればたぶんOK。
+
+** 2．トレーニング設定
+
+「Train Model」タブを開く。
+
+「Training Wizard(Person)」ボタンを押してもいいしデフォルト値のままでもいい。
+
+Settings
+- Dataset directory: C:\helloasuka
+-- Colabなら /content/stable-diffusion-webui/outputs/txt2img-images を指定するとか
+-- 左側のファイルアイコンで、フォルダを作ったり画像をアップロードできる
+- Save Checkpoint Frequency: 0
+- Save Preview(s) Frequency: 0
+- Instance prompt: helloasuka
+
+&color(#ff0000){Instance promptはOptionalではなく、入れないとUnable lbuild Concents.エラーが出る。}
+
+Advanced
+- Auto-Adjust(WIP) ボタンを押す
+
+CPUでやる場合
+- Use CPU Only (SLOW): オン
+- Use 8bit Adam: オフ
+- Mixed Precision: no
+- 1000Stepsで12.5時間かかった(4700U)
+
+** 3. 動作確認
+
+- ckptが出来上がっているはずなので、通常通り Stable Diffusion checkpoint のプルダウンから選ぶ
+- プロンプトを helloasuka にして実行(影響を確認)
+-- うまくいってればワードを追加する(入門では良い変化にならないかも)
+- プロンプトを 1girl など helloasuka 以外にして実行(影響されていないことを確認)
+
+* Hypernetwork
+
+実はCPUでも動く。100倍くらい時間がかかる。
+
+** インストール
+
+*** CPUで動かす場合
+
+ set COMMANDLINE_ARGS=--skip-torch-cuda-test --no-half --no-half-vae
+xformersをオフにしないといけないかも。
+&color(#ff0000){RuntimeError: Input type (torch.FloatTensor) and weight type (torch.cuda.FloatTensor) should be the same}が出るため。
+
+** 1. ptファイル作成
+
+「Train」タブを開いた後、「Create hypernetwork」タブを開きます。
+
+- Name: helloasuka
+- Enter hypernetwork layer structure: 1,1
+- Select activation function of hypernetwork. Recommended : Swish / Linear(none): relu
+- あとはいじらない
+
+** 2. Train
+
+「Train」タブの中の「Train」タブを開く
+
+- Hypernetwork: helloasuka.pt を選択
+- Hypernetwork Learning rate: 0.0005
+- Dataset directory: C:\helloasuka
+- Prompt template file: C:\****\stable-diffusion-webui\textual_inversion_templates\hypernetwork.txt
+- Max steps: 1000
+- Save an image to log directory every N steps, 0 to disable: 1500
+- Save a copy of embedding to log directory every N steps, 0 to disable: 1500
+
+生成中に画像を作るには追加のVRAMが必要。
+VRAM 8GBの環境で生成するとCUDA out of memoryが出て終わり。
+
+Save a copy～を0にするとエラーが起きる。1500ならエラーは起きなかった。
+&color(#ff0000){FileNotFoundError: [Errno 2] No such file or directory: 'textual_inversion\\2022-11-18\\helloasuka\\hypernetwork_loss.csv'}
+
+** 3. 動作確認
+
+- ptが出来上がっているはずなので、通常通り Hypernetwork のプルダウンから選ぶ
+- Generate (入門ではプロンプトによらず影響してしまっているかも)
+
+*** HN適用の一例
+
+masterpiece, best quality, masterpiece, helloasuka
+Seed: 3506376363
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Z685SlIIqs-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Z685SlIIqs.png]]
+
+* Embedding
+
+挑戦者求む
+
+* Dream Artist
+
+挑戦者求む
+[END]
+

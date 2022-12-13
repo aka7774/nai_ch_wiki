@@ -1,0 +1,245 @@
+#contents
+
+* 概要
+ローカル環境で使えるモデル(.ckpt)のマージについてのページです。
+
+* おすすめサイト
+
+- 大抵のモデルは[[https://rentry.org/sdmodels]]にある。
+- カクテル表
+-- STABLE DIFFUSION MIXING EMPORIUM - [[https://rentry.co/LFTBL]]
+-- /hdg/ Stable Diffusion Models Cookbook [[https://rentry.org/hdgrecipes]]
+
+
+* メモリ不足の対策
+
+- マージはCPUとメインメモリで出来る。
+- 1111をCPUで使うと良いかも。[[ローカルの使い方]]
+
+** (Colabのような) VRAM > RAM な環境でVRAMを使わせる改造
+
+=||
+%cd /content/stable-diffusion-webui
+!sed -i "s/'cpu'/devices.get_optimal_device()/g" modules/extras.py
+||=
+* 使い方
+
+** おおまかな流れ
++ Automatic1111のWebUIを起動
++ タブ→Checkpoint Merger
++ 各種設定後、Run
++ \stable-diffusion-webui\models\Stable-diffusion　に「任意の名前.ckpt」が生成されます
++ 完了
+
+** 設定ポイント
+- A: Primary: ベースになるモデル
+- B: Secondary: 補間方法によって働きが変わります
+- C: Tertiary: 同上
+
+- M:  Multiplier: 割合
+
+▼BとCの役割について
+BとC(SecondaryとTertiary)は補間方法：Interpolation Methodによって働きが変わります。
+
+加重合計：Weighted sumのとき
+''A*(1-M)+B*M''です
+
+差分：Add Differenceのとき
+''A+((B-C)*M)''です。
+
+
+以下の場合では
+AにAnything、BにNAI-full(nsfw)、CにNAI-sfwそして、0.3の割合指定、差分にチェック。これでA+((B-C)*M)のマージができます。
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hiZuSdCRNS.jpg,600)
+
+* マージモデルの比較
+
+** 比較のしかた
+
+X/Y Plotで出来る
+
+設定例
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ESIP86zMQv.png)
+
+出力結果
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/j4Sh8E_1Dx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/j4Sh8E_1Dx.png]]
+
+** 106スレ226
+
+%%モデルの比較を作った%%
+%%設定は元素法典の最初から4個%%
+[[大量検証結果]]へ移動しました。
+
+* ローカル版：NovelAILeak Checkpoint Merger の事例: NovelAI と Waifu Diffusion のマージ割合と差分出力結果
+
+[[大量検証結果]]へ移動しました。
+
+*マージレシピ
+安定してると思われる配合術式はこちらへ。
+
+**Anythingをえっちにする
+きれいなAnythingはがっつりとした性器の表現などが苦手ですが、Gape60を配合することで対応できます
++ Anything + (gape - NAI NSFW) × 1.0
+
+または以下の配合。&#11088;おすすめ
++ Anything + (NAI NSFW - NAI SFW) × 0.3
++ 1で出来た奴 + (gape - NAI NSFW) × 1.0
+
+※(gape - NAI SFW)にすると臓器のイデアみたいなのを生成するモデルになっちまうから気をつけるんやで
+
+
+* マージモデル一覧
+
+→スレ民共有モデルの項目を作りました。ダウンロード可能な状態であればなんでも掲載OKです。
+レシピだけの場合は、マージレシピに掲載してください。
+
+** マージモデル
+
+
+** スレ民共有モデル｜なんでも掲載OK
+ニキたちのとっておきのマージモデルとかを軽率に掲載するところ
+
+***BloodOrangeMix
+[[ローカルのマージ]]で紹介されているAnythingおすすめマージモデルを、海外ニキを参考にして適当に名前をつけただけのものです。
+マージめんどくさいとか用に置いときます。
+
+レシピ：huggingfaceを参照
+&#128317;https://huggingface.co/WarriorMama777/OrangeMixs
+&#128317;https://pixeldrain.com/u/nd61VQ2c　※60日でリンク切れます
+他参照：[[大量検証結果]]：〃
+
+***ElderOrangeMix
+anything and everything mix ver.1.5ベースのGape+NAIモデルです。
+レシピ：huggingfaceを参照
+&#128317;https://huggingface.co/WarriorMama777/OrangeMixs
+&#128317;https://pixeldrain.com/u/KKZTKvER　※60日でリンク切れます
+他参照：[[大量検証結果]]：マージモデル検証｜個人的にマージした様々なモデルのX/Yプロット検証 
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nNTKja2ud6.jpg,450)
+
+
+
+
+*叡智/Tips 一覧
+
+**Tips
+
+※マージの順序違いで合成比率は同じの場合生成画像は一致するっぽい
+(A+(B-C))+(D-B)　と　(A+(D-B))+(B-C)　では同じ画像が生成される
+
+つまり最初にNAI-NAI SFWするか、Gape-NAIするかは数値が一緒な以上同じ結果が返される
+
+
+**スレ書き込み保管用
+スレに書かれてたマージ方法をとりあえずメモしとくやつ。
+&size(18){新しい情報は上に追加してな(降順)}
+
+----
+
+インスタとAnythingのマージ、フリルフリルした衣装ならかなり強い気がしたんやけど...微妙やな
+ぶっちゃけ今のところ混ぜる相手はZeipherで良くね感ある
+
+上から(Anything+Gape) + インスタモデルの0.0, 0.25, 0.50, 0.75
+ &ref(https://i.imgur.com/hduAYIE.jpg,600)
+----
+
+=|BOX|
+https://i.imgur.com/uTUMioh.png
+||=
+左1~2がワイがよく使っとるやつや
+前も書いた気がするがAny+(NAINSFW-NAISFW)*0.1~0.3した後に
+マージしたやつ+(gape60-NAINSFW)*1.0しとる
+
+Any+Gapeで安定させるなら断然>>482の一旦(NAINSFW-NAISFW)を経由してからgape足す方式がオススメや
+前々スレ？位で教えてもらってから愛用してるけど、明らかに単にweighted averageするより安定する
+まぁでもやっぱり純正NAIに比べると遥かにじゃじゃ馬やね...
+
+
+
+----
+anyの絵柄でgapeの要素出したいだけならany+(gape-nai NSFW)×1.0とかの方がええで
+絵柄を変えたいんならまた別の問題なんやけど
+----
+194
+Anything-V3.0-pruned-fp32.ckpt
+=|BOX|
+https://i.imgur.com/VrDkEQs.png
+||=
+
+Anything-V3.0-pruned-fp32.ckpt + (animefull-final-pruned.ckpt - animesfw-final-pruned.ckpt) * 1.0
+=|BOX|
+https://i.imgur.com/PATrBSf.png
+||=
+
+これは倍率1.0は大きすぎるってことなんやろか
+
+195
+0.25ぐらいでええで
+
+624
+194やけど、0.25、0.5、0.75で作ってみたわ
+=|BOX|
+https://i.imgur.com/VrDkEQs.png
+https://i.imgur.com/Fc4tNlg.png
+https://i.imgur.com/GHOpki7.png
+https://i.imgur.com/PINpYzl.png
+https://i.imgur.com/PATrBSf.png
+||=
+
+これはこれで面白い表現やな
+----
+AUTOMATIC1111でAにAnything、BにNAI-full(nsfw)、CにNAI-sfwそして、割合指定して、重要なのが差分にチェックポイントを入れるこれで(A+(B-C)）*割合のマージができる。先月は差分の意味が分からんかったけど、考えた中の人神やなAnythingで潰された性器や乳首のエロが復活する感じだよ。割合で絵面にも影響出るの0.5から増やすか減らすか試してみるといい
+
+----
+
+anything+(NAI full-NAI SFW)を0.1で足してその次に足した奴+(gape-NAI full)を1.0で足したで　
+
+----
+
+版権再現は1111DBで画像20枚入れたら解決エロ描写はgape60マージキレイに出すにはanything来月頭にはワイフ1.4
+novelAIはさっさと更新しろ
+anything+(NAI full-NAI SFW)0.,1の後にgape0.1足すとほんと両立出来て良いわ
+----
+gape混ぜると明らかにイケオジのクオリティ上がるんやが一体ナニを学習させたんや...
+| &ref(https://i.imgur.com/xNrsvBE.png,300)|&ref(https://i.imgur.com/YsHjBqd.png,300) | &ref(https://i.imgur.com/iYSgD2y.png,300)|
+
+
+----
+gapeくんとのマージは0.3くらいがバランスいいような気がするな0.1だと崩壊してるのが多い参考画像は上げられないし、上げてもモザイクで見せられないよ
+(hyper extreme detailed uncensored:1.2) (vagina:1.2) and (labia:1.1) and (hymen:1.4) and (pussy:1.2)
+
+----
+2022/11/11(金) 11:44:07.81 ID:5FZPkjim0 [1/9]
+上げたアナル拡げ絵は他の人が出してたけどローカルでgape60にanything混ぜたモデルで出してるで基本text2img一発や
+素のanythingとかリークだとマン汁とかアナルの開き具合とか指定すると構造ぶっ壊れたグロ性器率が上がるからガチャが渋い
+
+前にNovelAI_tecで上げたときより過剰なトークン減らしたでいらないワード消して好きなキャラ容姿と品質ワードを追加してや
+他モデルでも使うから破綻と拡張控えめなspread anusになってるけど
+gapeモデルならpage anusで専用の学習したグッポリアナルが出てくるから一連のリークモデルに使うのに抵抗ない人は試してみてもええんやないか
+
+(grabbing own ass:1.4),(spread ass:1.2),(spread anus:1.2),(squatting:1.2),(wide hips:1.3),solo,1girl,nude,clothing aside,nsfw,(ass focus),from below,looking back,looking at viewer,(smug face:1.0),(smile:1.0),(open mouth:0.7),(blush:1.0),(wet skin:1.0),(breath:1.2),(detailed steam:1.2),(spoken heart:1.2)
+Negative prompt:lying,from behind,(from side0.9),multiple views,hands on the floor,hands on the wall,multiple anus,multiple pussy,long body,
+
+&ref(https://imgur.com/wPyvuoO.png](https://imgur.com/wPyvuoO.png,300)
+----
+Anything-V3.0.ckptそのまま混ぜるとエロ関連出しづらくなったからどっかで出てた画像の設定でリークのエロ要素加算し直したモデル作ってから
+gape60をAに作ったモデルをBに入れて0.3でweighted sumで混ぜた
+&ref(https://imgur.com/vTbBGQg.png](https://imgur.com/vTbBGQg.png,300)
+----
+出力結果を見るとgape60のモロ性器はそのまま全体的に人体の破綻と髪の塗り方とかテイストの振れ幅が収まって質が良くなった印象
+ただガチャとプロンプト次第なところはあるけど1girlだけど複数出てきたり人体パーツが増えたりする確率はやや上がった
+リークを加算したAnythingモデルも合わせて混ぜる比率を変えたモデルを複数用意して同シードで出し比べると面白いかも
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jnIRCHwJP0.png,600)
+----
+
+よくわからないままモデルをマージしてるんだけども
+Weighted sumとAdd differenceって何をしてるんですかね
+単独ではよくわからない絵しか出してこないr34を足すレシピとかあってなおさら混乱してる
+…ペイントソフトでやる加算減算とは違うよね？
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2L3z8nLa4x.png,600)
+----
+
+
+

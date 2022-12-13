@@ -1,0 +1,13 @@
+[[未発見のプロンプト>未発見のプロンプト]] > 複数登場の呪文の作り方
+
+基本的な話かもしれないけど、困ってましてキャラの構図で二人とか出す場合の呪文の作り方を教えて欲しいです
+呪文としては、出したい構図等,{1人目特徴},{2人目特徴}みたいな式になるんですか？
+
+追記　2キャラの出し方についてコメントで中国ニキが説明してくれたので書いておきます！
+
+2girls_A_and_B，A gril_have_blonde twintails_{hair bow}_hotpink eyes_large breasts_{detached collar}_{crease}_{{red chinese clothes}}_white thighhighs，{master piece}, {extremely detailed},highly detailed,B girl_have_large breasts_{crease}__{pantyhose}_{{black_chinese_clothes}}__bare shoulders_{hair flower}_bangs_very long black hair_{green streaked hair}_{{{green eyes}}},
+
+2キャラを登場させる場合、2girls_A_and_Bでまず、AとBのキャラであることを指定し、各特長をA gril_haveの後に_で特徴を書いていくようです。さらに表示されていない箇所では｛｝を使用し強調することで表示できるようです。
+まだ実験はしていませんが、貼ってくれている構文を出力してみるとかなり正確に表示されているので、取り急ぎ書いておきます！
+中国のニキありがとうやで！
+

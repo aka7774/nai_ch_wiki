@@ -1,0 +1,66 @@
+[[GPUによる生成差異の検証]]の追試。
+
+* この検証の意義
+
+くどいけど
+
+- あるPCで作成した画像を他のPCで再現できるかどうかの確認
+-- 再現可能なら、Infotextを公開することで画像をアップロードせずに絵を渡せる
+
+* レギュレーション
+
+- 設定はハローアスカと同じ(VAEも使う、HNはナシ)
+- 1111本体のソースコードを改造していないこと
+- ''--no-half --no-half-vae --medvram --lowvram --xformersはいずれもナシ''固定
+- できるだけ2回生成する。もしも異なる絵が出た場合、3回目を出して同じのが2枚出た画像を提出する
+- ''Euler a以外のSamplerを使って何を使ったかを明記する''
+-- eta (noise multiplier) for DDIM は 0 とする
+-- eta (noise multiplier) for ancestral samplers は 0.67 のまま
+
+** 期待する結果
+
+- 同じ画像が生成されること
+- もし違う画像が生成された場合はできるだけ環境を記載してください
+-- https://github.com/aka7774/sd_about の左側をコピペ
+
+** 途中結果と考察
+- ancestralサンプラー(末尾にaがつくサンプラー)は環境によって結果が変化する可能性がある
+
+** infotext
+
+Samplerを変えただけ。
+
+txt2imgのPrompt欄にコピペして、右側にある左下矢印を押してください。
+
+=||
+silver color schema, masterpiece, best quality, dynamic angle, dynamic pose, (novelAI:1.05), (1girl:1.3), (solo:1.1), holding pen, (painting action), (canvas object), (mechanical hand:1.05), [[cyborg]], metallic mixture, drawing, paintbrush, beret, (glowing_eyes:0.95), (Separate sleeves), silver long_hair, hair_between_eyes, doyagao, happy smile, :d, (cute little monster are floating around:1.5), art studio in magical school, (white border:1.35), (outside border:1.2), dream, art, imagination, yume kawaii, pastel colors, feminine, looking away, (magical girl,:1.1)
+Negative prompt: nsfw, red, purple, Chibi, Severed head, (detached head), (multiple view:1.3), Reference sheet,
+Steps: 50, Sampler: DDIM, CFG scale: 11.5, Seed: 905391353, Size: 1024x512, Model hash: 925997e9, Clip skip: 2, ENSD: 31337
+||=
+
+* DDIM
+
+{| class="nanj_prompt_table edit sort"
+|~GPU|~生成結果|~備考|
+|RTX 2070|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7V4N7Ie3N_-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/7V4N7Ie3N_.png]]|あえて --no-half --no-half-vae をつけて試してみたが1660Tiにも似なかったし2070とも変わらなかった|
+|RTX 2070|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/e6BC_fSAze-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/e6BC_fSAze.png]]|WSL2|
+|Tesla T4|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lYXpp7bXlz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lYXpp7bXlz.png]]|Colab|
+|RTX 4090|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8dOSCPaKTr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/8dOSCPaKTr.png]]||
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/KGOMr42m9U-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/KGOMr42m9U.png]]||
+|GTX 1660Ti Max-Q|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VgaXBvtX88-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/VgaXBvtX88.png]]||
+|}
+
+* Euler
+
+{| class="nanj_prompt_table edit sort"
+|~GPU|~生成結果|~備考|
+|RTX 2070 SUPER|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/iuzxOuVx89-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/iuzxOuVx89.png]]||
+|RTX 2070|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/e6yekbTJJQ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/e6yekbTJJQ.png]]|あえて --no-half --no-half-vae をつけて試してみたが1660Tiにも似なかったし2070とも変わらなかった|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4lQNwDZsX3-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/4lQNwDZsX3.png]]|WSL2|
+|Tesla T4|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yaUYga12ND-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/yaUYga12ND.png]]|Colab|
+|RTX 4090|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BJI2g3IhnN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BJI2g3IhnN.png]]||
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/X9Ahs9wVBb-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/X9Ahs9wVBb.png]]|Reported at 2022-12-10 19:14:45.504747 by github.com/aka7774/sd_aboutPython 3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]GPU NVIDIA GeForce RTX 2070, VRAM: 8.0 GiBargv: stable-diffusion-webui: 59c2dfe1e6a29dcf231fa9d894ac238887e40c39diffusers: 0.3.0torch: 1.12.1+cu116torchvision: 0.13.1+cu116transformers: 4.19.2xformers:  0.0.14.dev0|
+|GTX 1660Ti Max-Q|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xDftbwfYSb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xDftbwfYSb.png]]||
+|}
+
+

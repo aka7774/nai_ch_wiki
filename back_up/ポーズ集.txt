@@ -1,0 +1,56 @@
+* テーマ
+数単語以上でのいい感じのやつ
+
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|a boy carries a girl in his arms||お姫様だっこ||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/hXz7AvF_oS.png)|
+|{arms raised in the air} {{{extend arms straight out}}} 1girl full body||バンザイ~~両手を挙げる||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8p1MRynPtM.png)|
+|back shot, symmetrical twerk dance, upside-down face, full body,|{{{Picasso}}},{{{Cubism}}}, ,realistic, {{{{{long body}}}}}, bad anatomy , liquid body, malformed, mutated,anatomical nonsense ,bad proportions, uncoordinated body, unnatural body, disfigured, ugly, gross proportions ,mutation, disfigured, deformed, {{{{mutation, poorly drawn}}}}|股のぞき||https://image02.seesaawiki.jp/n/h/nai_ch/pGbTQzAFx3.png|
+|}
+
+* 単語集
+
+danbooru のポーズ関係のタグ一覧はこちら https://danbooru.donmai.us/wiki_pages/tag_group%3Aposture
+
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|hensin~~hensin pose|変身~~変身ポーズ|変身ポーズというプロンプトはあるのだが、裸になってくれるわけではない為、画像のように光り輝く演出をしたいのであれば、nudeやglowing neon skinと掛け合わせてネオン色に輝く体というプロンプトを入れる。~~また特定の箇所を光らせたい場合、glowing neon （体の箇所）と言われるとその部分が光りやすくなる。~~{{{{solo}}}}, {{full body}},masterpiece, detailed girl, beautiful detailed hair,  {{{{beautiful detailed face}}}},  {{{{beautiful detailed eyes}}}}, small breast, {{{{{glowing neon skin}}}}}, {{{{{{{hensin}}}}}}}, {{{{{hensin pose}}}}}}, {{nude}}, {{{naked body}}},{{{{glowing nude}}}},  {{{{{beautiful detailed hensin}}}}}}, {{{{light smile}}}},  {{{{glowing neon chest}}}},  {{{{glowing neon  legs}}}},  {{{{glowing neon arms}}}},  {{{{glowing neon body}}}}, {{{{glowing neon hip}}}}, {{{{glowing neon shoulder}}}},|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/crwO4kGdOL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/crwO4kGdOL.png]]|
+|Thumbs up|親指を立てる（グッド）|||
+|doppelganger pose|ドッペルゲンガー|左右対称の2人|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Q3r1urPovN.png)|
+|finger pointing|指さし||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Ld7Z_lnYw3.png)|
+|contrapposto|コントラポスト|コントラポストとは「体重の大部分を片足に乗せた立ちポーズ」を指す美術用語~~特に指定しなくても腰に手を添えることが多い|https://image01.seesaawiki.jp/n/h/nai_ch/3VLk0VA5zU.png|
+|acrobatic pose|アクロバットポーズ|一気に姿勢が崩れる反面、手足の破綻ぶりも強烈|https://image01.seesaawiki.jp/n/h/nai_ch/rQc_YcrHjo.png|
+|fetal position|胎児のように身を丸めた姿勢||https://image01.seesaawiki.jp/n/h/nai_ch/ci9c5sVsxy.png|
+|stylish pose|スタイリッシュポーズ||https://image02.seesaawiki.jp/n/h/nai_ch/pfTA8oW49m.png|
+|gravure pose|グラビアポーズ|fullbodyと相性が良い。画面サイズに応じてポーズが異なる|https://image02.seesaawiki.jp/n/h/nai_ch/e5DhEL5KGk.jpeg|
+|indian style|あぐら|sitと組み合わせる効果的||
+|claw pose|「がおー」ポーズ||https://image01.seesaawiki.jp/n/h/nai_ch/Ndtp3LcZ1S.png|
+|condom_in_mouth|咥えゴム|完全に咥えるのが難しい|https://i.imgur.com/YTVIgFy.png|
+|lying_on_water|水に横たわる||https://imgur.com/9eyNLti.png|
+|public indecency|公然わいせつ|trench coatなどと組み合わせることで服を開くポーズをすることがある|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/hYyOjQd0NR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/hYyOjQd0NR.png]]|
+|squatting, open legs|蹲踞||https://i.imgur.com/bHnIFXM.png|
+|Kneeling|膝立ち||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/W1wdKniIPJ.png,300)|
+|skirt lift|スカートをたくし上げる|lifted by selfと併用してもよし。~~show off pantiesやunderwearと併用することでパンツが見える位置まで上げてくれる~~（併用しないとcurtseyと大差がなかったりスカートの下にスカートを履いていたりする場合がある）|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KsnlNBoVDJ.png)|
+|crotch grab|股を掴む|それなりの確率でくぱぁになる||
+|open stance|足を開く|肩幅に足を開く。高確率でstandingが併発する。|https://image01.seesaawiki.jp/n/h/nai_ch/xVieJDSnAk.png|
+|hugging own legs|体育座り||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iDkIarcMOL.png)|
+|hand between legs|女の子座り|sittingと併用で確率アップ||
+|wariza|割座|膝を崩した正座、いわゆるペタン座りに近い。たまに謎のイスラム風建築が出る|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/atLK8OCjIp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/atLK8OCjIp.png]]|
+|seiza|正座|正座っぽいことをしてくれるがガチャ要素強め||
+|sitting|座る|||
+|curtsey|スカートをつまんで挨拶||https://image01.seesaawiki.jp/n/h/nai_ch/rpQIwQpI4C.png|
+|paw pose|ニャーって感じの手||https://image02.seesaawiki.jp/n/h/nai_ch/xajQWSi43n.png|
+|covering chest by hand|手で胸を隠す|hideよりも安定？現在形のcoverの場合雑誌の表紙っぽくなる(構図集へ記載)|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dJehpEXjFI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dJehpEXjFI.png]]|
+|V|ピース|||
+|hand on hip|腰に手をあてる|||
+|arms up|腕を上げる|||
+|on stomach|うつ伏せ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/f2x8vaBfL_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/f2x8vaBfL_.png]]|
+|head rest|頬杖||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1PyZ0_yicH-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/1PyZ0_yicH.png]]|
+|crossed arms|腕組み||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/76db76c8e75f44bf-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/76db76c8e75f44bf.png]]|
+|leaning forward |前かがみになる |呪文の成功率がかなり不安定~~leaning forwardだけのほうが成功率上がるので「bend down」削除しました。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_OuztzoDUL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_OuztzoDUL.png]] |
+|looking back|見返り||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/12b7bec4fb0a7627-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/12b7bec4fb0a7627.png]]|
+|on all fours|四つん這い|たまにグロテスクな肉の塊みたいな画像がでることがあるので~~ほかのプロンプトとの併用を推奨|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xxIyx_6RJG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xxIyx_6RJG.png]]|
+|spreading legs|股を開く|||
+|salute|敬礼|両手で敬礼したり頭に届いてない為別の単語で補強する必要がある||
+|heart hands|両手でハート|不安定|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3695af6bab8823a5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3695af6bab8823a5.png]]|
+|}
