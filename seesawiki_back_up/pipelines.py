@@ -17,8 +17,8 @@ class SeesawikiBackUpPipeline:
         # 保存先のディレクトリを指定する
         save_dir = spider.save_dir
         # for debug
-        with open(os.path.join(save_dir, "00_got_title_list.txt"), "a+", encoding='utf-8') as f:
-            f.write(item["title"] + "\n")
+        #with open(os.path.join(save_dir, "00_got_title_list.txt"), "a+", encoding='utf-8') as f:
+        #    f.write(item["title"] + "\n")
 
         # ファイルが既に存在する場合は、上書きして保存する
         with open(os.path.join(save_dir, f"{file_name}.txt"), "w", encoding='utf-8') as f:

@@ -1,0 +1,1 @@
+schtasks /Create /SC DAILY /TN nai_ch_wiki /ST 05:30 /TR "H:\Stable Diffusion\nai_ch_wiki\gitpush.bat"
