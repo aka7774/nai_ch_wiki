@@ -12,6 +12,8 @@
 - 設定はハローアスカと同じ(VAEも使う、HNはナシ)
 - 1111本体のソースコードを改造していないこと
 - ''--no-half --no-half-vae --medvram --lowvram --xformersはいずれもナシ''固定
+- ''Batch sizeは1とする''
+-- 2以上では再現性が担保できない(ハローアスカも変わるし)
 - できるだけ2回生成する。もしも異なる絵が出た場合、3回目を出して同じのが2枚出た画像を提出する
 - ''Euler a以外のSamplerを使って何を使ったかを明記する''
 -- eta (noise multiplier) for DDIM は 0 とする
@@ -62,5 +64,6 @@ Steps: 50, Sampler: DDIM, CFG scale: 11.5, Seed: 905391353, Size: 1024x512, Mode
 |RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/X9Ahs9wVBb-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/X9Ahs9wVBb.png]]|Reported at 2022-12-10 19:14:45.504747 by github.com/aka7774/sd_aboutPython 3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]GPU NVIDIA GeForce RTX 2070, VRAM: 8.0 GiBargv: stable-diffusion-webui: 59c2dfe1e6a29dcf231fa9d894ac238887e40c39diffusers: 0.3.0torch: 1.12.1+cu116torchvision: 0.13.1+cu116transformers: 4.19.2xformers:  0.0.14.dev0|
 |GTX 1660Ti Max-Q|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xDftbwfYSb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xDftbwfYSb.png]]||
 |}
+
 
 

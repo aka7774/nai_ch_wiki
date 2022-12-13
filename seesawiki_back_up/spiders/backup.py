@@ -17,7 +17,7 @@ class BackupSpider(scrapy.Spider):
         )
 
     def check_status(self, response, callback_obj, cb_kwargs):
-        if response.status != 200:
+        if response.status != 200 or not len(response.text):
             if cb_kwargs["failed_count"] > 3:
                 # 取得諦め
                 return

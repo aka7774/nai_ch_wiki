@@ -21,6 +21,6 @@ class SeesawikiBackUpPipeline:
             f.write(item["title"] + "\n")
 
         # ファイルが既に存在する場合は、上書きして保存する
-        with open(os.path.join(save_dir, f"{file_name}.txt"), "w") as f:
+        with open(os.path.join(save_dir, f"{file_name}.txt"), "w", encoding='utf-8') as f:
             f.write(item["text"])
         return item
