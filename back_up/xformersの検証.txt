@@ -1,43 +1,43 @@
-‚æ‚©‚Á‚½‚ç‚²ŽQ‰Á‚¨Šè‚¢‚µ‚Ü‚·B[[GPU‚É‚æ‚é¶¬·ˆÙ‚ÌŒŸØ]]
+ã‚ˆã‹ã£ãŸã‚‰ã”å‚åŠ ãŠé¡˜ã„ã—ã¾ã™ã€‚[[GPUã«ã‚ˆã‚‹ç”Ÿæˆå·®ç•°ã®æ¤œè¨¼]]
 
-* ŠT—v
-xformers‚ð“±“ü‚µ‚½‚±‚Æ‚É‚æ‚é‘¬“x‚â¶¬‰æ‘œ‚Ì·ˆÙ‚È‚Ç‚Ì”äŠrŒŸØ‚Å‚·
+* æ¦‚è¦
+xformersã‚’å°Žå…¥ã—ãŸã“ã¨ã«ã‚ˆã‚‹é€Ÿåº¦ã‚„ç”Ÿæˆç”»åƒã®å·®ç•°ãªã©ã®æ¯”è¼ƒæ¤œè¨¼ã§ã™
 
-* ¶¬‰æ‘œ‚Ì·ˆÙ‚ÌŒŸØ
+* ç”Ÿæˆç”»åƒã®å·®ç•°ã®æ¤œè¨¼
 
-** ŒŸØ(1)
-*** ŒŸØƒvƒƒ“ƒvƒg
-ˆÈ‰º‚Ìƒvƒƒ“ƒvƒg‚ÅŒŸØ
+** æ¤œè¨¼(1)
+*** æ¤œè¨¼ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ
+ä»¥ä¸‹ã®ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã§æ¤œè¨¼
 
 |(masterpiece:1.3), best quality, masterpiece, best quality, 1girl, solo, amazing awesome highly detailed, (go-toubun no hanayome:1.1), (nakano yotsuba:1.4), orange hair, ([green rabbit short ears hairband:green hairband ribbon:0.25]:1.2), (tareme:1.2), (swept bangs:1.1), upper_teeth, (teen age:1.2), 17yo, blue eyes, bob cut, (sitting:1.1), naruto \(series\) ,ichiraku ramen, (eating ramen noodles:1.0), holding chopsticks and ramen bowl, slurp one's noodles |
 |Negative prompt: pointy ears, umamusume,helmet hair, nakano ichika, nakano nino, nakano miku, nakano itsuki, hair between eyes, blunt bangs, tsurime, loli, petite, child, mature female ,milf, adult, women, middle age, blush, mahou shoujo madoka magica, kaname madoka, (bad_prompt:1.0), 3D, 3Dcubism, pablo picasso, disney, marvel, lowres, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate |
 |Steps: 28, Sampler: DDIM, CFG scale: 7.5, Seed: 991690482, Size: 768x1280, Model hash: 2700c435, Denoising strength: 0.7, Clip skip: 2, ENSD: 31337, First pass size: 0x0|
 |Used embeddings: bad_prompt [1d99]|
 
-*** ¶¬‰æ‘œ
-}F¶‘¤AXformers ONB‰E‘¤AXformers OFF
-‚»‚ê‚¼‚ê¶‘¤‚ªHighres.fixŒãA‘O‚Ì‰æ‘œ
+*** ç”Ÿæˆç”»åƒ
+å›³ï¼šå·¦å´ã€Xformers ONã€‚å³å´ã€Xformers OFF
+ãã‚Œãžã‚Œå·¦å´ãŒHighres.fixå¾Œã€å‰ã®ç”»åƒ
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/gaGdnogg9X.jpg,800)
 
-*** Œ‹‰Ê
-Xformers‚ðŽg—p‚µ‚½‚Æ‚«‚Ì’Pˆê‚Ì‰æ‘œ¶¬‰º‚Å‚Ì‰æ‘œ•Ï‰»‚ÍŒ©‚ç‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B
+*** çµæžœ
+Xformersã‚’ä½¿ç”¨ã—ãŸã¨ãã®å˜ä¸€ã®ç”»åƒç”Ÿæˆä¸‹ã§ã®ç”»åƒå¤‰åŒ–ã¯è¦‹ã‚‰ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚
 
 * DDIM
 
 {| class="nanj_prompt_table edit sort"
-|~GPU|~¶¬Œ‹‰Ê|~”õl|
+|~GPU|~ç”Ÿæˆçµæžœ|~å‚™è€ƒ|
 |RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vDucTx7Sxq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/vDucTx7Sxq.png]]||
 |}
 
 * Euler
 
-4‰ñŽŽ‚µ‚½‚ªŽc”O‚È‚ª‚ç?‘S•”ˆá‚Á‚½B
+4å›žè©¦ã—ãŸãŒæ®‹å¿µãªãŒã‚‰?å…¨éƒ¨é•ã£ãŸã€‚
 
 {| class="nanj_prompt_table edit sort"
-|~GPU|~¶¬Œ‹‰Ê|~”õl|
-|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WfUiAEjdbl-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/WfUiAEjdbl.png]]|4‰ñ–Ú|
-|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/p1WtCk2f3n-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/p1WtCk2f3n.png]]|3‰ñ–Ú|
-|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/B42vXoKxJE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/B42vXoKxJE.png]]|2‰ñ–Ú|
-|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dhTMQ6b0A2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/dhTMQ6b0A2.png]]|1‰ñ–Ú|
+|~GPU|~ç”Ÿæˆçµæžœ|~å‚™è€ƒ|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WfUiAEjdbl-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/WfUiAEjdbl.png]]|4å›žç›®|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/p1WtCk2f3n-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/p1WtCk2f3n.png]]|3å›žç›®|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/B42vXoKxJE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/B42vXoKxJE.png]]|2å›žç›®|
+|RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dhTMQ6b0A2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/dhTMQ6b0A2.png]]|1å›žç›®|
 |}
 

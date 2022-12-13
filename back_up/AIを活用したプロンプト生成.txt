@@ -1,72 +1,72 @@
-* �T�v
-�����ł�GenerativeAI�����p�����v�����v�g�̐����ɂ��Ă܂Ƃ߂܂��B
-��\�I�Ȃ��̂ł�OpenAI��ChatGPT�Ȃǂł��B
+* 概要
+ここではGenerativeAIを活用したプロンプトの生成についてまとめます。
+代表的なものではOpenAIのChatGPTなどです。
 
 * ChatGPT
 
-** �T�v
-ChatGPT��OpenAI�̊J�������`���b�g�`����AI�ł��B
-�uChatGPT �́A��^���ꃂ�f���ł��� GPT-3 �̊g���łł��BGPT-3 �͎��R���ꏈ���^�X�N�����s���邽�߂Ƀg���[�j���O���ꂽ���̂ł����AChatGPT �͂��̋@�\������Ɋg�����A�l�Ԃ̑Θb����莩�R�ɍČ�����悤�ɐ݌v����Ă��܂��BChatGPT �́A�l�Ԃ��b�����悤�ɉ������邱�Ƃ��ł���悤�ɂȂ��Ă��܂��B�������AChatGPT �͎��ۂ̐l�Ԃł͂���܂���B�������́A�l�H�m�\���g�p���Đl�Ԃ̑Θb��͕킷�邱�Ƃ��ł���悤�ɂȂ��Ă��܂��B�v
-�u���� OpenAI �ɂ���ăg���[�j���O���ꂽ��^���ꃂ�f���ł��B���͐l�Ԃ̑Θb��͕킷�邱�Ƃ��ł��܂����A���ۂ̐l�Ԃł͂���܂���B���͂��Ȃ����m�肽�����Ƃ������邱�Ƃ��ł���悤�ɁA���炳��Ă��܂��B�ǂ����A���q�˂��������B�v
+** 概要
+ChatGPTはOpenAIの開発したチャット形式のAIです。
+「ChatGPT は、大型言語モデルである GPT-3 の拡張版です。GPT-3 は自然言語処理タスクを実行するためにトレーニングされたものですが、ChatGPT はその機能をさらに拡張し、人間の対話をより自然に再現するように設計されています。ChatGPT は、人間が話したように応答することができるようになっています。しかし、ChatGPT は実際の人間ではありません。私たちは、人工知能を使用して人間の対話を模倣することができるようになっています。」
+「私は OpenAI によってトレーニングされた大型言語モデルです。私は人間の対話を模倣することができますが、実際の人間ではありません。私はあなたが知りたいことを教えることができるように、教育されています。どうぞ、お尋ねください。」
 
-** �N�C�b�N�X�^�[�gChatGPT
+** クイックスタートChatGPT
 + https://chat.openai.com/chat
 + Sigh up -> Creat OpenAI Account
 
-** ChatGPT�ɂ��v�����v�g����
+** ChatGPTによるプロンプト生成
 
-*** ����e���v���[�g(1)
+*** 質問テンプレート(1)
 
-�v�����v�g����͂���ƁA�摜���o�͂���AI������܂��B�Ⴆ�΁A���敗�̒��ŘȂޏ����̔���ȉ摜���o���v�����v�g�̗�́A
+プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
 =|(box=textarea)|
-�u(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind�v
+「(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind」
 ||=
-�ł��B���݂Ƀv�����v�g�ł̊��ʁu()�v�͒��̃L�[���[�h�����������p�������܂��B
-����𓥂܂��āA�ȉ��̃e�[�}�ɉ������v�����v�g��150words���x��3�p�^�[�������Ă��������B
-�u�����̔��������������΂�ł���������Ă���C���X�g�v
+です。囚みにプロンプトでの括弧「()」は中のキーワードを強調する作用を持ちます。
+これを踏まえて、以下のテーマに沿ったプロンプトを150words程度で3パターン書いてください。
+「黒髪の美しい女性が微笑んでこちらを見ているイラスト」
 
-�`AI��������`
+〜AIが答える〜
 
-��������ق����Ƃ��͈ȉ��̂悤�ɕ����Ɛ������Ă���܂��B
-���ꂼ��̃v�����v�g�ɂ��ĉ�����Ă��������B
-�`AI��������`
+※解説がほしいときは以下のように聞くと説明してくれます。
+それぞれのプロンプトについて解説してください。
+〜AIが答える〜
 
 [+]v1.0
-�v�����v�g����͂���ƁA�摜���o�͂���AI������܂��B
-�Ⴆ�΁A���敗�̒��ŘȂޏ����̔���ȉ摜���o���v�����v�g�̗�́A
+プロンプトを入力すると、画像を出力するAIがあります。
+例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
 =|BOX|
-�u(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind�v 
+「(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind」 
 ||=
 
-�ł��B���݂Ƀv�����v�g�ł̊��ʁu()�v�͒��̃L�[���[�h�����������p�������܂��B
-�����܂łŉ�������͂���܂���?
+です。囚みにプロンプトでの括弧「()」は中のキーワードを強調する作用を持ちます。
+ここまでで何か質問はありますか?
 
-�`AI��������`
-�ł́A���̒��ŉj�������̔���ȉ摜���o���v�����v�g��3�p�^�[�������Ă��������B
-�`AI��������`
-���ꂼ��̃v�����v�g�ɂ��ĉ�����Ă��������B
-�`AI��������`
+〜AIが答える〜
+では、水の中で泳ぐ少女の美麗な画像を出すプロンプトを3パターン書いてください。
+〜AIが答える〜
+それぞれのプロンプトについて解説してください。
+〜AIが答える〜
 
 
 [END]
 
-[+]�X�������p
-ChatGPT�Ƀv�����v�g������������ēz�A�����܂ŃW���[�N�̗ނ��Ǝv���Ă��B�ł������Ă݂���A���S�ɔF�������߂��B
-�ȉ��`���b�g���e����摜�����܂ŁA�`�F���[�s�b�N�͈�؂��Ă��Ȃ��B�V�[�h�l���͌Œ�B�v�����v�g�̂ݕύX�B
-�P�D���f�@�T���P�v�����v�g���ؗp�i�������ʁ��j
+[+]スレより引用
+ChatGPTにプロンプトを書かせるって奴、あくまでジョークの類だと思ってた。でも試してみたら、完全に認識を改めた。
+以下チャット内容から画像生成まで、チェリーピックは一切していない。シード値他は固定。プロンプトのみ変更。
+１．元素法典より１つプロンプトを借用（生成結果↓）
 https://i.imgur.com/EDPLMqJ.png
-�Q�DChatGPT�ɗ�Ƃ����^���ăv�����v�g���l���Ă��炤
+２．ChatGPTに例とお題を与えてプロンプトを考えてもらう
 https://i.imgur.com/1ogiV0B.png
 https://i.imgur.com/udFAhbE.png
-�R�D�����Ă�������v�����v�g�Ő�������
+３．教えてもらったプロンプトで生成する
 https://i.imgur.com/7h1O78k.png
 https://i.imgur.com/ild8cPJ.png
 https://i.imgur.com/Hzrg9By.png
-���p�I�Șb�Ƃ��āA�@�B�|��ɂ�����ƒ���ɂȂ��ď�肭�����Ȃ��ꍇ�����X����B�����ŉp�P���n��𒲂ׂđg�ݍ��킹���l������A�����炭�����B
+実用的な話として、機械翻訳にかけると直訳になって上手くいかない場合も多々ある。自分で英単語や熟語を調べて組み合わせを考えるより、おそらく早い。
 
 781
-�������₱�ꐦ�����Ȃ��H
-����Ȏ����Ƃ郏�C���A�z�݂������
+えっ何やこれ凄すぎない？
+こんな事しとるワイがアホみたいやん
 https://i.imgur.com/pdXoWdb.png
 [END]
 

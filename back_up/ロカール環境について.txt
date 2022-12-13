@@ -1,39 +1,39 @@
-*‘S‘Ì
+*å…¨ä½“
 
 https://gigazine.net/news/20220907-automatic1111-stable-diffusion-webui/
 https://www.python.org/downloads/
 https://git-scm.com/download
 https://huggingface.co/CompVis/stable-diffusion-v1-4
-*PCƒIƒtƒ‰ƒCƒ“‚ÅÀs‚·‚é
-ˆÈ‰º‚½‚½‚«‘ä‚Å‚·
+*PCã‚ªãƒ•ãƒ©ã‚¤ãƒ³ã§å®Ÿè¡Œã™ã‚‹
+ä»¥ä¸‹ãŸãŸãå°ã§ã™
 ----
 *Windows
-**ƒCƒ“ƒXƒg[ƒ‹
-***‹¤’Ê
-+Às‚Å‚«‚éŠÂ‹«‚È‚Ì‚©ƒ`ƒFƒbƒN
-+•K—v‚Èƒ\ƒtƒgƒEƒFƒA‚ğƒ_ƒEƒ“ƒ[ƒh‚·‚é https://git-scm.com/download https://git-scm.com/download
-+ƒhƒ‰ƒCƒo[‚ğƒ_ƒEƒ“ƒ[ƒh‚·‚é https://developer.nvidia.com/cuda-11.3.0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
-+ƒ_ƒEƒ“ƒ[ƒh‚É•K—v‚ÈƒAƒJƒEƒ“ƒg‚ğì¬‚·‚é@https://huggingface.co/CompVis/stable-diffusion-v1-4
-+ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚Ì‹N“®(cmd.exe OR powershell powershell‚ÍƒR[ƒhÀs‹–‰Â‚Ìè‡‚à)
-+ ƒ‚ƒfƒ‹‚Ìƒ_ƒEƒ“ƒ[ƒh
+**ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+***å…±é€š
++å®Ÿè¡Œã§ãã‚‹ç’°å¢ƒãªã®ã‹ãƒã‚§ãƒƒã‚¯
++å¿…è¦ãªã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ https://git-scm.com/download https://git-scm.com/download
++ãƒ‰ãƒ©ã‚¤ãƒãƒ¼ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ https://developer.nvidia.com/cuda-11.3.0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
++ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã«å¿…è¦ãªã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œæˆã™ã‚‹ã€€https://huggingface.co/CompVis/stable-diffusion-v1-4
++ã‚³ãƒãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã®èµ·å‹•(cmd.exe OR powershell powershellã¯ã‚³ãƒ¼ãƒ‰å®Ÿè¡Œè¨±å¯ã®æ‰‹é †ã‚‚)
++ ãƒ¢ãƒ‡ãƒ«ã®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰
 *** cmd.exe
-+ ƒtƒHƒ‹ƒ_ì¬
-+ cd %HOMEPATH% C:\Users\y©•ª‚ÌWindows‚Å‚ÌƒƒOƒCƒ“–¼z‚ÉˆÚ“®
-+ git clone sd-v1-4.ckpt model.ckpt ƒ‚ƒfƒ‹‚Ì–¼‘O•ÏX
-+ RENAME   sd-v1-4.ckpt model.ckpt ƒ‚ƒfƒ‹‚Ì–¼‘O•ÏX
-+ MOVE@hoge models@ƒ‚ƒfƒ‹‚ÌˆÚ“®
++ ãƒ•ã‚©ãƒ«ãƒ€ä½œæˆ
++ cd %HOMEPATH% C:\Users\ã€è‡ªåˆ†ã®Windowsã§ã®ãƒ­ã‚°ã‚¤ãƒ³åã€‘ã«ç§»å‹•
++ git clone sd-v1-4.ckpt model.ckpt ãƒ¢ãƒ‡ãƒ«ã®åå‰å¤‰æ›´
++ RENAME   sd-v1-4.ckpt model.ckpt ãƒ¢ãƒ‡ãƒ«ã®åå‰å¤‰æ›´
++ MOVEã€€hoge modelsã€€ãƒ¢ãƒ‡ãƒ«ã®ç§»å‹•
 + mkdir GFPGAN
 + cd GFPGAN
-+ git clone https://github.com/TencentARC/GFPGAN.git ƒ_ƒEƒ“ƒ[ƒh
++ git clone https://github.com/TencentARC/GFPGAN.git ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰
 + cd ..
-+ mv hoge hoge GFPGAN‚ğStable Diffusion web UIƒtƒHƒ‹ƒ_‚É“ü‚ê‚é
++ mv hoge hoge GFPGANã‚’Stable Diffusion web UIãƒ•ã‚©ãƒ«ãƒ€ã«å…¥ã‚Œã‚‹
 + call webui-user.bat
 =|SH|
 @echo off
-REM ‚½‚½‚«‘ä@–¢Š®¬
-set INSTALL_DIR=ƒCƒ“ƒXƒg[ƒ‹‚µ‚½‚¢ƒfƒBƒŒƒNƒgƒŠ
-set NOVELAI_MODEL_DIR=novelAI‚Ìg—p‚µ‚½‚¢ƒ‚ƒfƒ‹‚ÌƒfƒBƒŒƒNƒgƒŠ
-set NOVELAI_MODEL=g—p‚µ‚½‚¢ƒ‚ƒfƒ‹‚Ìƒtƒ@ƒCƒ‹–¼
+REM ãŸãŸãå°ã€€æœªå®Œæˆ
+set INSTALL_DIR=ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸã„ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
+set NOVELAI_MODEL_DIR=novelAIã®ä½¿ç”¨ã—ãŸã„ãƒ¢ãƒ‡ãƒ«ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
+set NOVELAI_MODEL=ä½¿ç”¨ã—ãŸã„ãƒ¢ãƒ‡ãƒ«ã®ãƒ•ã‚¡ã‚¤ãƒ«å
 
 mkdir INSTALL_DIR
 cd /d INSTALL_DIR
@@ -43,23 +43,23 @@ copy NOVELAI_MODEL_DIR\NOVELAI_MODEL .\models
 RENAME models\NOVELAI_MODEL model.ckpt
 webui-user.bat
 firefox -url 127.0.0.1:7860
-echo Ÿ‰ñˆÈ~‹N“®‚Íwebui-user.bat‚ğƒNƒŠƒbƒN‚µ‚Ä‚­‚¾‚³‚¢
+echo æ¬¡å›ä»¥é™èµ·å‹•ã¯webui-user.batã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„
 pause
 ||=
 ----
 
 *** powershell
 
-**** powershell‚ÌƒXƒNƒŠƒvƒgÀs‚Ìİ’è
-**** powershell‚Ìè‡
+**** powershellã®ã‚¹ã‚¯ãƒªãƒ—ãƒˆå®Ÿè¡Œã®è¨­å®š
+**** powershellã®æ‰‹é †
 ----
-ƒAƒbƒvƒf[ƒg
+ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ
 ----
 *Linux
 ** nvidia
 ** Radeon
 ----
-*ƒNƒ‰ƒEƒhŠÂ‹«‚ğŠˆ—p‚·‚é
+*ã‚¯ãƒ©ã‚¦ãƒ‰ç’°å¢ƒã‚’æ´»ç”¨ã™ã‚‹
 **Google Colab
 
 

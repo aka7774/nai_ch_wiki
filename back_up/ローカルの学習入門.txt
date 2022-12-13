@@ -1,110 +1,110 @@
-‰æ‘œ¶¬‚ÍŒoŒ±Ï‚İ‚¾‚ªA‚Ü‚¾ŠwK‚ğ‚â‚Á‚½‚±‚Æ‚È‚¢l‚ª‘ÎÛB
+ç”»åƒç”Ÿæˆã¯çµŒé¨“æ¸ˆã¿ã ãŒã€ã¾ã å­¦ç¿’ã‚’ã‚„ã£ãŸã“ã¨ãªã„äººãŒå¯¾è±¡ã€‚
 
 #contents
 
-* ŠwK•û–@‚Ì‘I‘ğ
+* å­¦ç¿’æ–¹æ³•ã®é¸æŠ
 
-TI, DB, HN, DA, Lora‚È‚ÇB
-‚Ç‚ê‚ª‚¢‚¢‚©‚Í–Ú“I‚É‰‚¶‚Ä•Ï‚í‚é‚Ì‚ÅA“––Ê‚Í‘S•”‚â‚Á‚Ä”äŠrŒŸ“¢‚·‚é‚Ì‚ª‚¢‚¢B
-1111ˆÈŠO‚ğg‚¤•û–@‚à‚ ‚é‚ªA1111‚ğg‚¦‚Î‘S•”‚Å‚«‚éB
+TI, DB, HN, DA, Loraãªã©ã€‚
+ã©ã‚ŒãŒã„ã„ã‹ã¯ç›®çš„ã«å¿œã˜ã¦å¤‰ã‚ã‚‹ã®ã§ã€å½“é¢ã¯å…¨éƒ¨ã‚„ã£ã¦æ¯”è¼ƒæ¤œè¨ã™ã‚‹ã®ãŒã„ã„ã€‚
+1111ä»¥å¤–ã‚’ä½¿ã†æ–¹æ³•ã‚‚ã‚ã‚‹ãŒã€1111ã‚’ä½¿ãˆã°å…¨éƒ¨ã§ãã‚‹ã€‚
 
-‚±‚±‚Å‚Í1111‚ğg‚Á‚ÄALora(DB)‚ÆHN‚ğ‚µ‚Ä‚İ‚½B
-—pˆÓ‚µ‚½ŠÂ‹«‚ÍŸ‚Ì2‚ÂB
+ã“ã“ã§ã¯1111ã‚’ä½¿ã£ã¦ã€Lora(DB)ã¨HNã‚’è©¦ã—ã¦ã¿ãŸã€‚
+ç”¨æ„ã—ãŸç’°å¢ƒã¯æ¬¡ã®2ã¤ã€‚
 
-- VRAM 8GB‚ÌNVIDIA GPU‚ğ“‹Ú‚µ‚½ƒ[ƒJƒ‹PC
-- –³—¿Colab
+- VRAM 8GBã®NVIDIA GPUã‚’æ­è¼‰ã—ãŸãƒ­ãƒ¼ã‚«ãƒ«PC
+- ç„¡æ–™Colab
 
-×‚©‚¢’²®‚Ìà–¾‚ÍÈ‚«AÄŒ»«‚Ì‚ ‚éè‡‚ğ¦‚·B
-* Lora(l‘‚ß‚½‚ñ)
+ç´°ã‹ã„èª¿æ•´ã®èª¬æ˜ã¯çœãã€å†ç¾æ€§ã®ã‚ã‚‹æ‰‹é †ã‚’ç¤ºã™ã€‚
+* Lora(å››å›½ã‚ãŸã‚“)
 
-Dreambooth‚ÌƒIƒvƒVƒ‡ƒ“‚Æ‚µ‚Ä—˜—p‰Â”\B
-‘¬‚­‚Ä¬‚³‚¢‚ªAŠ®¬“x‚É‚Â‚¢‚Ä‚Í‚Ü‚¾–¢’m”B
+Dreamboothã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¨ã—ã¦åˆ©ç”¨å¯èƒ½ã€‚
+é€Ÿãã¦å°ã•ã„ãŒã€å®Œæˆåº¦ã«ã¤ã„ã¦ã¯ã¾ã æœªçŸ¥æ•°ã€‚
 
-- ‰ğ‘œ“x512 %%768‚É’§í(—ˆ‚éSD2Œn‘ã‚É”õ‚¦‚Ä)%%
-- Š—vŠÔ‚Í‘S•”‚Å2`3ŠÔ
-- À—p“I(’…‚¹‘Ö‚¦‚È‚Ç‚ğ‚µ‚Ä—V‚×‚é)
+- è§£åƒåº¦512 %%768ã«æŒ‘æˆ¦(æ¥ã‚‹SD2ç³»æ™‚ä»£ã«å‚™ãˆã¦)%%
+- æ‰€è¦æ™‚é–“ã¯å…¨éƒ¨ã§2ã€œ3æ™‚é–“
+- å®Ÿç”¨çš„(ç€ã›æ›¿ãˆãªã©ã‚’ã—ã¦éŠã¹ã‚‹)
 
-’Ç‹L
+è¿½è¨˜
 
-- 2022-12-13ƒAƒbƒvƒf[ƒg‚Åİ’è€–Ú‚ª•Ï‚í‚Á‚½
-- NAI VRAM 8GB‚Å‚à“®ì‚·‚é‚±‚Æ‚ğŠm”F‚µ‚½
-- Å¬ŒÀ‚Ìİ’è€–Ú‚ÅÀ{‚·‚é(‚Ğ‚Æ‚Ü‚¸ƒfƒtƒHƒ‹ƒg’l‚ğM‚¶‚é)
+- 2022-12-13ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã§è¨­å®šé …ç›®ãŒå¤‰ã‚ã£ãŸ
+- NAI VRAM 8GBã§ã‚‚å‹•ä½œã™ã‚‹ã“ã¨ã‚’ç¢ºèªã—ãŸ
+- æœ€å°é™ã®è¨­å®šé …ç›®ã§å®Ÿæ–½ã™ã‚‹(ã²ã¨ã¾ãšãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã‚’ä¿¡ã˜ã‚‹)
 
-** ƒŠƒ“ƒN
-- Œö®ƒŠƒ|ƒWƒgƒŠ„ https://github.com/cloneofsimo/lora
-- web‚Åg‚¦‚é&#129303;‚Ìloraƒc[ƒ‹„ https://huggingface.co/spaces/ysharma/Low-rank-Adaptation
+** ãƒªãƒ³ã‚¯
+- å…¬å¼ãƒªãƒã‚¸ãƒˆãƒªâ”‚https://github.com/cloneofsimo/lora
+- webã§ä½¿ãˆã‚‹&#129303;ã®loraãƒ„ãƒ¼ãƒ«â”‚https://huggingface.co/spaces/ysharma/Low-rank-Adaptation
 
-dreamboothg‚í‚È‚¢‚©‚çŠO‚µ‚Ä‚Ä’m‚ç‚È‚©‚Á‚½‚¯‚Ç‚·‚Å‚ÉLORAÀ‘•‚µ‚Ä‚é‚ç‚µ‚¢‚¶‚á‚ñI
-CommitsŒ©‚é‚Æ8“ú‚É‚Í‚à‚¤æ‚è“ü‚ê‚Ä‚é‚¼
-ˆø—pF‚Ó‚½‚Î‚æ‚è
+dreamboothä½¿ã‚ãªã„ã‹ã‚‰å¤–ã—ã¦ã¦çŸ¥ã‚‰ãªã‹ã£ãŸã‘ã©ã™ã§ã«LORAå®Ÿè£…ã—ã¦ã‚‹ã‚‰ã—ã„ã˜ã‚ƒã‚“ï¼
+Commitsè¦‹ã‚‹ã¨8æ—¥ã«ã¯ã‚‚ã†å–ã‚Šå…¥ã‚Œã¦ã‚‹ã
+å¼•ç”¨ï¼šãµãŸã°ã‚ˆã‚Š
 
-** ‚Ë‚ç‚¢
+** ã­ã‚‰ã„
 
-- Colab‚Í‘‚¢‚Æ3ŠÔ’ö“x‚ÅGPU‚ªg—p’â~‚É‚È‚é‚Ì‚ÅŠwKŠÔ‚Ì’Zk‚à}‚é
-- ‚Å‚«‚ê‚Îˆê‰ñ‚ÌƒZƒbƒVƒ‡ƒ“‚ÅŠwK‚ğŠ®—¹‚³‚¹‚½‚¢
-- Drive—e—Ê‚àŠÜ‚ß‚Ä–³—¿‚ÅÏ‚Ü‚¹‚½‚¢
+- Colabã¯æ—©ã„ã¨3æ™‚é–“ç¨‹åº¦ã§GPUãŒä½¿ç”¨åœæ­¢ã«ãªã‚‹ã®ã§å­¦ç¿’æ™‚é–“ã®çŸ­ç¸®ã‚‚å›³ã‚‹
+- ã§ãã‚Œã°ä¸€å›ã®ã‚»ãƒƒã‚·ãƒ§ãƒ³ã§å­¦ç¿’ã‚’å®Œäº†ã•ã›ãŸã„
+- Driveå®¹é‡ã‚‚å«ã‚ã¦ç„¡æ–™ã§æ¸ˆã¾ã›ãŸã„
 
-** 1. Colab‚Ì‹N“®
+** 1. Colabã®èµ·å‹•
 
-- Colab [[“ü–å—pNotebook]]
+- Colab [[å…¥é–€ç”¨Notebook]]
 
 + https://www.python.jp/train/experience/colab.html
 + https://www.python.jp/train/experience/exec-python1.html
-+ u1+1v‚Ì‚©‚í‚è‚É[[“ü–å—pNotebook]]‚Ì“à—e‚ğƒRƒsƒy‚µ‚ÄÀs
++ ã€Œ1+1ã€ã®ã‹ã‚ã‚Šã«[[å…¥é–€ç”¨Notebook]]ã®å†…å®¹ã‚’ã‚³ãƒ”ãƒšã—ã¦å®Ÿè¡Œ
 
-–³—¿Colab‚¾‚ÆNAI‚Í‚È‚º‚©“®‚©‚È‚©‚Á‚½BƒAƒbƒvƒf[ƒg‚Å’¼‚Á‚½‰Â”\«‚Í‚ ‚éB(Œãq)
-K80‚É‚È‚Á‚½‚±‚Æ‚Í–³‚¢‚¯‚ÇT4‚ªˆø‚¯‚Ä‚é‚©ˆê‰Šm”F‚·‚é‚Æ‚¢‚¢‚©‚àB
+ç„¡æ–™Colabã ã¨NAIã¯ãªãœã‹å‹•ã‹ãªã‹ã£ãŸã€‚ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã§ç›´ã£ãŸå¯èƒ½æ€§ã¯ã‚ã‚‹ã€‚(å¾Œè¿°)
+K80ã«ãªã£ãŸã“ã¨ã¯ç„¡ã„ã‘ã©T4ãŒå¼•ã‘ã¦ã‚‹ã‹ä¸€å¿œç¢ºèªã™ã‚‹ã¨ã„ã„ã‹ã‚‚ã€‚
 
-** 1. ƒ[ƒJƒ‹‚Ì‹N“®
+** 1. ãƒ­ãƒ¼ã‚«ãƒ«ã®èµ·å‹•
 
-Extensions ‚©‚ç Dreambooth ‚ğƒCƒ“ƒXƒg[ƒ‹‚·‚é
+Extensions ã‹ã‚‰ Dreambooth ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 
-ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“ƒIƒvƒVƒ‡ƒ“‚ğ’Ç‰Á‚·‚éB
+ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¿½åŠ ã™ã‚‹ã€‚
  --test-lora
 
-** 2. ‰æ‘œ‚Ì—pˆÓ
+** 2. ç”»åƒã®ç”¨æ„
 
-1111‚Ì‹N“®‚É15•ª+ƒ_ƒEƒ“ƒ[ƒhŠÔ‚Ô‚ñ‚©‚©‚é‚Ì‚Å‘Ò‚Á‚Ä‚éŠÔ‚É‚â‚éB
+1111ã®èµ·å‹•ã«15åˆ†+ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰æ™‚é–“ã¶ã‚“ã‹ã‹ã‚‹ã®ã§å¾…ã£ã¦ã‚‹é–“ã«ã‚„ã‚‹ã€‚
 
-ƒ_ƒEƒ“ƒ[ƒh
-- https://image02.seesaawiki.jp/n/h/nai_ch/aQEovutlvq.zip skkmtn.zip‚ÉƒŠƒl[ƒ€‚·‚é
-- https://image02.seesaawiki.jp/n/h/nai_ch/MHIWw0HVJD.zip touka.zip‚ÉƒŠƒl[ƒ€‚·‚é
+ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰
+- https://image02.seesaawiki.jp/n/h/nai_ch/aQEovutlvq.zip skkmtn.zipã«ãƒªãƒãƒ¼ãƒ ã™ã‚‹
+- https://image02.seesaawiki.jp/n/h/nai_ch/MHIWw0HVJD.zip touka.zipã«ãƒªãƒãƒ¼ãƒ ã™ã‚‹
 
-’†g‚ÍŠwK—pƒf[ƒ^ƒZƒbƒg14–‡
+ä¸­èº«ã¯å­¦ç¿’ç”¨ãƒ‡ãƒ¼ã‚¿ã‚»ãƒƒãƒˆ14æš
 - https://zunko.jp/con_illust.html
-- 16–‡‚©‚çƒr[ƒ`ƒ`ƒFƒA‚ÆƒfƒtƒHƒ‹ƒ‚ğœ‚¢‚½
+- 16æšã‹ã‚‰ãƒ“ãƒ¼ãƒãƒã‚§ã‚¢ã¨ãƒ‡ãƒ•ã‚©ãƒ«ãƒ¡ã‚’é™¤ã„ãŸ
 
-‰ğ‘œ“x768”Å
+è§£åƒåº¦768ç‰ˆ
 [+]
-’†g‚ğ‰ğ“€‚µ‚Ä1‚Â‚É¬‚º‚Äskkmtn.zip‚Æ‚µ‚ÄÄˆ³k‚µ‚Ä‚­‚¾‚³‚¢(5MB§ŒÀ‚Ì‚½‚ß)
+ä¸­èº«ã‚’è§£å‡ã—ã¦1ã¤ã«æ··ãœã¦skkmtn.zipã¨ã—ã¦å†åœ§ç¸®ã—ã¦ãã ã•ã„(5MBåˆ¶é™ã®ãŸã‚)
 https://image01.seesaawiki.jp/n/h/nai_ch/CTlFvCz0og.zip
 https://image02.seesaawiki.jp/n/h/nai_ch/BH7XXOAncb.zip
-“§‰ß‰æ‘œ200–‡
+é€éç”»åƒ200æš
 https://image02.seesaawiki.jp/n/h/nai_ch/lh1xkGmvts.zip
 [END]
 
-** 3. ‰æ‘œ‚ÌƒAƒbƒvƒ[ƒh
+** 3. ç”»åƒã®ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰
 
-‚±‚±‚©‚ç‚Í1111‚Ì‹N“®Œã‚É‚â‚éB
+ã“ã“ã‹ã‚‰ã¯1111ã®èµ·å‹•å¾Œã«ã‚„ã‚‹ã€‚
 
-- Filer‚Ìimages‚É2‚Â‚Ìzip‚ğƒhƒƒbƒv‚·‚é
--- ‚ ‚é‚¢‚Í webui’¼‰º‚Ézipƒtƒ@ƒCƒ‹–¼‚ÌƒfƒBƒŒƒNƒgƒŠ‚ğì‚èzip‚Ì’†g‚ğ“WŠJ‚·‚é
-- Image Browser‚ÌOthers‚Å skkmtn ‚Æ touka ‚ğ‘I‘ğ‚·‚é
--- ‰æ‘œ‚ªŒ©‚¦‚é‚±‚Æ‚ğŠm”F‚·‚é
-** 4. ƒ‚ƒfƒ‹ƒtƒ@ƒCƒ‹ì¬
+- Filerã®imagesã«2ã¤ã®zipã‚’ãƒ‰ãƒ­ãƒƒãƒ—ã™ã‚‹
+-- ã‚ã‚‹ã„ã¯ webuiç›´ä¸‹ã«zipãƒ•ã‚¡ã‚¤ãƒ«åã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œã‚Šzipã®ä¸­èº«ã‚’å±•é–‹ã™ã‚‹
+- Image Browserã®Othersã§ skkmtn ã¨ touka ã‚’é¸æŠã™ã‚‹
+-- ç”»åƒãŒè¦‹ãˆã‚‹ã“ã¨ã‚’ç¢ºèªã™ã‚‹
+** 4. ãƒ¢ãƒ‡ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«ä½œæˆ
 
-uDreamboothvƒ^ƒu‚ğŠJ‚¢‚½ŒãA^‚ñ’†‚ÌuCreate Modelvƒ^ƒu‚ªŠJ‚©‚ê‚Ä‚¢‚é‚±‚ÆŠm”F‚·‚éB
+ã€ŒDreamboothã€ã‚¿ãƒ–ã‚’é–‹ã„ãŸå¾Œã€çœŸã‚“ä¸­ã®ã€ŒCreate Modelã€ã‚¿ãƒ–ãŒé–‹ã‹ã‚Œã¦ã„ã‚‹ã“ã¨ç¢ºèªã™ã‚‹ã€‚
 
 - Name: skkmtn
 - Source Checkpoint: Anything-V3.0-pruned-fp16.ckpt
-ˆÈ‘O‚Ìİ’è
+ä»¥å‰ã®è¨­å®š
 [+]
 - Scheduler: pndm
 [END]
 
-uCreatevƒ{ƒ^ƒ“‚ğ‰Ÿ‚·B
+ã€ŒCreateã€ãƒœã‚¿ãƒ³ã‚’æŠ¼ã™ã€‚
 
-animefull-final-pruned.ckpt ‚¾‚Æ •K‚¸~‚Ü‚Á‚Ä‚µ‚Ü‚¤B
+animefull-final-pruned.ckpt ã ã¨ å¿…ãšæ­¢ã¾ã£ã¦ã—ã¾ã†ã€‚
 [+]
 =||
 Loading model from checkpoint.
@@ -117,88 +117,88 @@ Converting text encoder...
 ^C
 ||=
 
-‚±‚Ì‚Ü‚Ü‹­ˆø‚ÉTrain‚Ü‚Åi‚ß‚Ä‚àŒ‹‹ÇƒGƒ‰[‚Å“®‚©‚È‚¢B
+ã“ã®ã¾ã¾å¼·å¼•ã«Trainã¾ã§é€²ã‚ã¦ã‚‚çµå±€ã‚¨ãƒ©ãƒ¼ã§å‹•ã‹ãªã„ã€‚
 
 =||
 Returning result: Exception training model: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/content/stable-diffusion-webui/models/dreambooth/skkmtn/working/tokenizer'. Use `repo_type` argument if needed.
 ||=
 [END]
 
-** 5Dƒpƒ‰ƒ[ƒ^[İ’è
+** 5ï¼ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼è¨­å®š
 
-¶‚ÌuModelvƒhƒƒbƒvƒ_ƒEƒ“‚Éuskkmtnv‚ª•\¦‚³‚ê‚éB
-^‚ñ’†‚ÌuParametersvƒ^ƒu‚ğ‰Ÿ‚·B
+å·¦ã®ã€ŒModelã€ãƒ‰ãƒ­ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ã«ã€Œskkmtnã€ãŒè¡¨ç¤ºã•ã‚Œã‚‹ã€‚
+çœŸã‚“ä¸­ã®ã€ŒParametersã€ã‚¿ãƒ–ã‚’æŠ¼ã™ã€‚
 
-–¾‹L‚³‚ê‚Ä‚¢‚È‚¢€–Ú‚Í‰Šú’l‚Ì‚Ü‚ÜB
+æ˜è¨˜ã•ã‚Œã¦ã„ãªã„é …ç›®ã¯åˆæœŸå€¤ã®ã¾ã¾ã€‚
 
 Settings
-- •ÏX‚È‚µ
+- å¤‰æ›´ãªã—
 
-ˆÈ‘O‚Ìİ’è
+ä»¥å‰ã®è¨­å®š
 [+]
 Settings
 - Training Steps Per Image (Epochs): 100
 - Max Training Steps: 1400
 - Learning Rate: 1e-3
 - Resolution: 512
-- Apply Horizontal Flip: ƒIƒt
+- Apply Horizontal Flip: ã‚ªãƒ•
 
-Learning Rate‚Í•s“–‚É‚‚¢‚©‚àB‚±‚Ì•Ó‚ÌŒ¤‹†Q‰ÁÒ‚ª‘‚¦‚é‚±‚Æ‚ÉŠú‘ÒB
+Learning Rateã¯ä¸å½“ã«é«˜ã„ã‹ã‚‚ã€‚ã“ã®è¾ºã®ç ”ç©¶å‚åŠ è€…ãŒå¢—ãˆã‚‹ã“ã¨ã«æœŸå¾…ã€‚
 
-Training Steps Per Image (Epochs)‚ÍƒfƒtƒHƒ‹ƒg’l‚ª100‚É‚È‚Á‚½B
-Learning Rate‚Í3‚Â‚É•ª‚©‚ê‚ÄALoraŠÖŒW‚Í0.002‚É‚È‚Á‚½B
+Training Steps Per Image (Epochs)ã¯ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ãŒ100ã«ãªã£ãŸã€‚
+Learning Rateã¯3ã¤ã«åˆ†ã‹ã‚Œã¦ã€Loraé–¢ä¿‚ã¯0.002ã«ãªã£ãŸã€‚
 
-Apply Horizontal Flip‚ğƒIƒt‚É‚·‚é‚Ì‚Í¶‰E”ñ‘ÎÌ‚ÌƒLƒƒƒ‰‚ğDB‚·‚é–¼c‚È‚Ì‚ÅA¶‰E‹t‚É‚È‚Á‚Ä‚à‚¢‚¢ƒLƒƒƒ‰‚Å‚ÍƒIƒ“‚Å‚à—Ç‚³‚°B
+Apply Horizontal Flipã‚’ã‚ªãƒ•ã«ã™ã‚‹ã®ã¯å·¦å³éå¯¾ç§°ã®ã‚­ãƒ£ãƒ©ã‚’DBã™ã‚‹åæ®‹ãªã®ã§ã€å·¦å³é€†ã«ãªã£ã¦ã‚‚ã„ã„ã‚­ãƒ£ãƒ©ã§ã¯ã‚ªãƒ³ã§ã‚‚è‰¯ã•ã’ã€‚
 [END]
 
 Advanced
-- Use LORA: ƒIƒ“
+- Use LORA: ã‚ªãƒ³
 
-- Use 8bit Adam: ƒIƒ“
+- Use 8bit Adam: ã‚ªãƒ³
 - Mixed Precision: fp16
 - Memory Attention: xformers
 
-‚±‚ê‚ÍVRAMß–ñ‚Æ‚‘¬‰»‚Ì‚½‚ß‚Éİ’è‚µ‚Ä‚¢‚é‚Æv‚¤‚Ì‚Å‚¨D‚İ‚ÅB
-‚Â‚¯‚È‚¢‚ÆVRAM 8GB‚Å‚Í“®‚©‚È‚¢‚µAŠÔ‚Í”{‹ß‚­‚©‚©‚é‚æ‚¤‚É‚È‚éB
+ã“ã‚Œã¯VRAMç¯€ç´„ã¨é«˜é€ŸåŒ–ã®ãŸã‚ã«è¨­å®šã—ã¦ã„ã‚‹ã¨æ€ã†ã®ã§ãŠå¥½ã¿ã§ã€‚
+ã¤ã‘ãªã„ã¨VRAM 8GBã§ã¯å‹•ã‹ãªã„ã—ã€æ™‚é–“ã¯å€è¿‘ãã‹ã‹ã‚‹ã‚ˆã†ã«ãªã‚‹ã€‚
 
-ˆÈ‘O‚Ìİ’è
+ä»¥å‰ã®è¨­å®š
 [+]
-- Train Text Encoder: ƒIƒt
+- Train Text Encoder: ã‚ªãƒ•
 
-Train Text Encoder‚ÍƒIƒ“‚¾‚Æ‚¤‚Ü‚­‚¢‚©‚È‚¢•ñ‚ª‚¢‚­‚Â‚©‚ ‚èB
-‚â‚Í‚è‚±‚ê‚Í•s‹ï‡‚¾‚Á‚½‚ç‚µ‚­C³‚³‚ê‚½‚ç‚µ‚¢B
+Train Text Encoderã¯ã‚ªãƒ³ã ã¨ã†ã¾ãã„ã‹ãªã„å ±å‘ŠãŒã„ãã¤ã‹ã‚ã‚Šã€‚
+ã‚„ã¯ã‚Šã“ã‚Œã¯ä¸å…·åˆã ã£ãŸã‚‰ã—ãä¿®æ­£ã•ã‚ŒãŸã‚‰ã—ã„ã€‚
 
 [END]
 
-** 6. ƒRƒ“ƒZƒvƒgİ’è
+** 6. ã‚³ãƒ³ã‚»ãƒ—ãƒˆè¨­å®š
 
 - Classification Dataset Directory: touka
 
-‚½‚¾‚µAƒ[ƒJƒ‹‚ÅVRAM 8GB‚Å‚·‚Æ‚«‚Ítouka‚Íİ’è‚µ‚È‚¢B
+ãŸã ã—ã€ãƒ­ãƒ¼ã‚«ãƒ«ã§VRAM 8GBã§è©¦ã™ã¨ãã¯toukaã¯è¨­å®šã—ãªã„ã€‚
 
 - Dataset directory: skkmtn
 - Instance Prompt: skkmtn
 
-Class Prompt‚à“ü‚ê‚½‚Ù‚¤‚ª—Ç‚³‚»‚¤‚Æ‚©FX‚ ‚é‚¯‚Ç‚Ü‚¸‚ÍÅ’áŒÀ‚ÅB
+Class Promptã‚‚å…¥ã‚ŒãŸã»ã†ãŒè‰¯ã•ãã†ã¨ã‹è‰²ã€…ã‚ã‚‹ã‘ã©ã¾ãšã¯æœ€ä½é™ã§ã€‚
 
-&color(#ff0000){Instance prompt‚ÍOptional‚Å‚Í‚È‚­A“ü‚ê‚È‚¢‚ÆUnable lbuild Concents.ƒGƒ‰[‚ªo‚éB}
+&color(#ff0000){Instance promptã¯Optionalã§ã¯ãªãã€å…¥ã‚Œãªã„ã¨Unable lbuild Concents.ã‚¨ãƒ©ãƒ¼ãŒå‡ºã‚‹ã€‚}
 
-** 7. Trainƒ{ƒ^ƒ“‚ğ‰Ÿ‚·
+** 7. Trainãƒœã‚¿ãƒ³ã‚’æŠ¼ã™
 
-ƒoƒO‚Á‚Û‚¢•\¦‚ªo‚é‚ª“®‚­B
-ƒ[ƒJƒ‹2070‚¾‚Æ20•ªˆÈ“à‚É‚ÍI‚í‚éB
-Colab‚Å‚à1ŠÔˆÈ“à‚É‚ÍI‚í‚é‚Í‚¸B
+ãƒã‚°ã£ã½ã„è¡¨ç¤ºãŒå‡ºã‚‹ãŒå‹•ãã€‚
+ãƒ­ãƒ¼ã‚«ãƒ«2070ã ã¨20åˆ†ä»¥å†…ã«ã¯çµ‚ã‚ã‚‹ã€‚
+Colabã§ã‚‚1æ™‚é–“ä»¥å†…ã«ã¯çµ‚ã‚ã‚‹ã¯ãšã€‚
 
-** 8. “®ìŠm”F
+** 8. å‹•ä½œç¢ºèª
 
-- skkmtn_1400_lora.ckpt ‚ªo—ˆã‚ª‚Á‚Ä‚¢‚é‚Í‚¸‚È‚Ì‚ÅA’Êí’Ê‚è Stable Diffusion checkpoint ‚Ìƒvƒ‹ƒ_ƒEƒ“‚©‚ç‘I‚Ô
-- ƒvƒƒ“ƒvƒg‚ğ skkmtn ‚É‚µ‚ÄÀs
+- skkmtn_1400_lora.ckpt ãŒå‡ºæ¥ä¸ŠãŒã£ã¦ã„ã‚‹ã¯ãšãªã®ã§ã€é€šå¸¸é€šã‚Š Stable Diffusion checkpoint ã®ãƒ—ãƒ«ãƒ€ã‚¦ãƒ³ã‹ã‚‰é¸ã¶
+- ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã‚’ skkmtn ã«ã—ã¦å®Ÿè¡Œ
 
  masterpiece, best quality,1girl,skkmtn
 
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/V9yqhtWOWZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/V9yqhtWOWZ.png]]
 
-- ‚¤‚Ü‚­‚¢‚Á‚Ä‚ê‚Îƒ[ƒh‚ğ’Ç‰Á‚·‚é
+- ã†ã¾ãã„ã£ã¦ã‚Œã°ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ ã™ã‚‹
 
  masterpiece, best quality,1girl,skkmtn,school costume
 
@@ -208,48 +208,48 @@ Colab‚Å‚à1ŠÔˆÈ“à‚É‚ÍI‚í‚é‚Í‚¸B
 
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pPhbIXuQrz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pPhbIXuQrz.png]]
 
-(‰ßŠwK‚¾‚Æv‚Á‚½‚çLearning Rate‚ğ‰º‚°‚ÄÄ’§í)
+(éå­¦ç¿’ã ã¨æ€ã£ãŸã‚‰Learning Rateã‚’ä¸‹ã’ã¦å†æŒ‘æˆ¦)
 
-** 9. Ï‹Ã‚è‚Ìæ“¾
+** 9. ç…®å‡ã‚Šã®å–å¾—
 
-- uFilervƒ^ƒu‚ÌuLorasvƒ^ƒu‚ÌuActivevƒ^ƒu‚Å—~‚µ‚¢‚à‚Ì‚Éƒ`ƒFƒbƒN‚ğ“ü‚ê‚ÄuDownloadv
-- —e—Ê‚ª­‚È‚¢‚Ì‚ÅuSelect Allv‚Å‚à‘åä•v
-- ƒ_ƒEƒ“ƒ[ƒhƒŠƒ“ƒN‚ª•\¦‚³‚ê‚é‚Ì‚ÅƒNƒŠƒbƒN‚·‚é
+- ã€ŒFilerã€ã‚¿ãƒ–ã®ã€ŒLorasã€ã‚¿ãƒ–ã®ã€ŒActiveã€ã‚¿ãƒ–ã§æ¬²ã—ã„ã‚‚ã®ã«ãƒã‚§ãƒƒã‚¯ã‚’å…¥ã‚Œã¦ã€ŒDownloadã€
+- å®¹é‡ãŒå°‘ãªã„ã®ã§ã€ŒSelect Allã€ã§ã‚‚å¤§ä¸ˆå¤«
+- ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ãƒªãƒ³ã‚¯ãŒè¡¨ç¤ºã•ã‚Œã‚‹ã®ã§ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹
 
-** 10. Ï‹Ã‚è‚Ì‡‘Ì
+** 10. ç…®å‡ã‚Šã®åˆä½“
 
-ƒ[ƒJƒ‹‚Å“®‚©‚µ‚½‚è•Ê‚Ì“ú‚ÉColab‚Éã‚°’¼‚µ‚½‚èB
+ãƒ­ãƒ¼ã‚«ãƒ«ã§å‹•ã‹ã—ãŸã‚Šåˆ¥ã®æ—¥ã«Colabã«ä¸Šã’ç›´ã—ãŸã‚Šã€‚
 
-- ƒ_ƒEƒ“ƒ[ƒh‚µ‚½ptƒtƒ@ƒCƒ‹‚ğ models/lora/ ‚Ì’†‚É”z’u‚·‚é
-- uDreamboothvƒ^ƒu‚Åu4. ƒ‚ƒfƒ‹ƒtƒ@ƒCƒ‹ì¬v‚ğ‚¨‚±‚È‚¤
-- ¶‚ÌModel‚ÅuskkmtnvALora Model‚Åptƒtƒ@ƒCƒ‹‚ğ‘I‚ÑAuGenerate Ckptvƒ{ƒ^ƒ“‚ğ‰Ÿ‚·
-- skkmtn_0_lora.ckpt ƒtƒ@ƒCƒ‹‚ª•Û‘¶‚³‚ê‚é(‚Ç‚ê‚ğ‘I‚ñ‚Å‚à”š‚ª0‚È‚Ì‚ÍƒoƒO?)
+- ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸptãƒ•ã‚¡ã‚¤ãƒ«ã‚’ models/lora/ ã®ä¸­ã«é…ç½®ã™ã‚‹
+- ã€ŒDreamboothã€ã‚¿ãƒ–ã§ã€Œ4. ãƒ¢ãƒ‡ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«ä½œæˆã€ã‚’ãŠã“ãªã†
+- å·¦ã®Modelã§ã€Œskkmtnã€ã€Lora Modelã§ptãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸ã³ã€ã€ŒGenerate Ckptã€ãƒœã‚¿ãƒ³ã‚’æŠ¼ã™
+- skkmtn_0_lora.ckpt ãƒ•ã‚¡ã‚¤ãƒ«ãŒä¿å­˜ã•ã‚Œã‚‹(ã©ã‚Œã‚’é¸ã‚“ã§ã‚‚æ•°å­—ãŒ0ãªã®ã¯ãƒã‚°?)
 
-** 11. ŠwK‚ÌÄŠJ
+** 11. å­¦ç¿’ã®å†é–‹
 
-models/dreambooth/skkmtn ‚ğ•Û‘¶‚µ‚Ä‚¨‚¯‚Î‘±‚«‚©‚çŠwK‚Å‚«‚éB
-skkmtn_0_lora.ckpt ƒtƒ@ƒCƒ‹‚É‘Î‚µ‚Ä’Ç‰ÁŠwK‚·‚é‚Ì‚Æ‚ÍˆÓ–¡“I‚ÉˆÙ‚È‚é‚Í‚¸‚¾‚¯‚ÇA
-ÀÛ‚ÌŒ‹‰Ê‚Æ‚µ‚Ä‚Ç‚¤‚È‚Ì‚©‚Í•s–¾B
+models/dreambooth/skkmtn ã‚’ä¿å­˜ã—ã¦ãŠã‘ã°ç¶šãã‹ã‚‰å­¦ç¿’ã§ãã‚‹ã€‚
+skkmtn_0_lora.ckpt ãƒ•ã‚¡ã‚¤ãƒ«ã«å¯¾ã—ã¦è¿½åŠ å­¦ç¿’ã™ã‚‹ã®ã¨ã¯æ„å‘³çš„ã«ç•°ãªã‚‹ã¯ãšã ã‘ã©ã€
+å®Ÿéš›ã®çµæœã¨ã—ã¦ã©ã†ãªã®ã‹ã¯ä¸æ˜ã€‚
 
-* Hypernetwork(l‘‚ß‚½‚ñ)
+* Hypernetwork(å››å›½ã‚ãŸã‚“)
 
-108ƒXƒŒ‚Ì571A572A575A576‚ğQl‚É‚µ‚½B
+108ã‚¹ãƒ¬ã®571ã€572ã€575ã€576ã‚’å‚è€ƒã«ã—ãŸã€‚
 
-ƒ‚ƒfƒ‹‚Í skkmtn_1400_lora.ckpt ‚ğ‘I‘ğB
+ãƒ¢ãƒ‡ãƒ«ã¯ skkmtn_1400_lora.ckpt ã‚’é¸æŠã€‚
 
-** 1. ƒtƒ@ƒCƒ‹‚Ì—pˆÓ
+** 1. ãƒ•ã‚¡ã‚¤ãƒ«ã®ç”¨æ„
 
-‰æ‘œ‚ÍLora‚ÆˆêB
+ç”»åƒã¯Loraã¨ä¸€ç·’ã€‚
 
-ˆÈ‰º‚Ì“à—e‚¾‚¯‚ª‹LÚ‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ğ
-C:\stable-diffusion-webui\textual_inversion_templates\mb1f.txt (‚Ç‚±‚Å‚à‚¢‚¢)‚É•Û‘¶
+ä»¥ä¸‹ã®å†…å®¹ã ã‘ãŒè¨˜è¼‰ã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’
+C:\stable-diffusion-webui\textual_inversion_templates\mb1f.txt (ã©ã“ã§ã‚‚ã„ã„)ã«ä¿å­˜
 =|BOX|
 masterpiece, best quality, 1girl, face
 ||=
 
-** 2. ptƒtƒ@ƒCƒ‹ì¬
+** 2. ptãƒ•ã‚¡ã‚¤ãƒ«ä½œæˆ
 
-uTrainvƒ^ƒu‚ğŠJ‚¢‚½ŒãAuCreate hypernetworkvƒ^ƒu‚ğŠJ‚«‚Ü‚·B
+ã€ŒTrainã€ã‚¿ãƒ–ã‚’é–‹ã„ãŸå¾Œã€ã€ŒCreate hypernetworkã€ã‚¿ãƒ–ã‚’é–‹ãã¾ã™ã€‚
 
 - Name: skkmtn
 - Enter hypernetwork layer structure: 1, 2, 2, 1
@@ -257,25 +257,25 @@ masterpiece, best quality, 1girl, face
 
 ** 3. Train
 
-uTrainvƒ^ƒu‚ğŠJ‚­
+ã€ŒTrainã€ã‚¿ãƒ–ã‚’é–‹ã
 
-- Hypernetwork: skkmtn.pt ‚ğ‘I‘ğ
-- Hypernetwork Learning rate: 0.00001(ƒfƒtƒHƒ‹ƒg)
+- Hypernetwork: skkmtn.pt ã‚’é¸æŠ
+- Hypernetwork Learning rate: 0.00001(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ)
 - Dataset directory: skkmtn
-- Prompt template file: C:\stable-diffusion-webui\textual_inversion_templates\mb1f.txt (—pˆÓ‚µ‚½‚à‚Ì)
+- Prompt template file: C:\stable-diffusion-webui\textual_inversion_templates\mb1f.txt (ç”¨æ„ã—ãŸã‚‚ã®)
 - Gradient accumulatelion steps: 14
 - Max steps: 182
-- shuffle tags by "," when creating prompts: ƒIƒ“
+- shuffle tags by "," when creating prompts: ã‚ªãƒ³
 - Choose latent sampling method: deterministic
 
-ƒXƒŒ‚Å‚Ìw’è‚Í180‚¾‚Á‚½‚ªA14‚Ì”{”‚Å‚«‚è‚æ‚­182‚Æ‚µ‚½B
-ƒvƒŒƒrƒ…[‰æ‘œ‚ğo‚·‚ÆVRAM•s‘«‚Å—‚¿‚é‚Ì‚Å’ˆÓB(¡‰ñ‚Í500ˆÈ‰º‚¾‚©‚çŠÖŒW‚È‚¢)
+ã‚¹ãƒ¬ã§ã®æŒ‡å®šã¯180ã ã£ãŸãŒã€14ã®å€æ•°ã§ãã‚Šã‚ˆã182ã¨ã—ãŸã€‚
+ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”»åƒã‚’å‡ºã™ã¨VRAMä¸è¶³ã§è½ã¡ã‚‹ã®ã§æ³¨æ„ã€‚(ä»Šå›ã¯500ä»¥ä¸‹ã ã‹ã‚‰é–¢ä¿‚ãªã„)
 
-30•ª‚¿‚å‚Á‚Æ‚©‚©‚éB
+30åˆ†ã¡ã‚‡ã£ã¨ã‹ã‹ã‚‹ã€‚
 
-** 4. “®ìŠm”F
+** 4. å‹•ä½œç¢ºèª
 
-- pt‚ªo—ˆã‚ª‚Á‚Ä‚¢‚é‚Í‚¸‚È‚Ì‚ÅA’Êí’Ê‚è Hypernetwork ‚Ìƒvƒ‹ƒ_ƒEƒ“‚©‚ç‘I‚Ô
+- ptãŒå‡ºæ¥ä¸ŠãŒã£ã¦ã„ã‚‹ã¯ãšãªã®ã§ã€é€šå¸¸é€šã‚Š Hypernetwork ã®ãƒ—ãƒ«ãƒ€ã‚¦ãƒ³ã‹ã‚‰é¸ã¶
 - Generate
 
  masterpiece, best quality, masterpiece, skkmtn
@@ -290,119 +290,119 @@ masterpiece, best quality, 1girl, face
 
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8LEogCNweQ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/8LEogCNweQ.png]]
 
-‹Œƒo[ƒWƒ‡ƒ“
+æ—§ãƒãƒ¼ã‚¸ãƒ§ãƒ³
 [+]
-* ŠwKŒ³‰æ‘œ‚Ì€”õ
+* å­¦ç¿’å…ƒç”»åƒã®æº–å‚™
 
-- ƒnƒ[ƒAƒXƒJ‚ğ‚µ‚Ä10–‡‚Ì‰æ‘œ‚ğ¶¬‚·‚é
-- uC:\helloasukav‚Ì’†‚É“ü‚ê‚é
+- ãƒãƒ­ãƒ¼ã‚¢ã‚¹ã‚«ã‚’ã—ã¦10æšã®ç”»åƒã‚’ç”Ÿæˆã™ã‚‹
+- ã€ŒC:\helloasukaã€ã®ä¸­ã«å…¥ã‚Œã‚‹
 
-ƒvƒƒ“ƒvƒg‚Éuhelloasukav‚ğ“ü‚ê‚é‚±‚Æ‚ÅŠwK‚ğŠm”F‚·‚éB
-(ŠwK‘O‚Íƒnƒ[ƒAƒXƒJ‚Ío‚Ä‚±‚È‚¢)
+ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã«ã€Œhelloasukaã€ã‚’å…¥ã‚Œã‚‹ã“ã¨ã§å­¦ç¿’ã‚’ç¢ºèªã™ã‚‹ã€‚
+(å­¦ç¿’å‰ã¯ãƒãƒ­ãƒ¼ã‚¢ã‚¹ã‚«ã¯å‡ºã¦ã“ãªã„)
 
-** ŠwK‚Ì–‘O€”õ(È—ª)
+** å­¦ç¿’ã®äº‹å‰æº–å‚™(çœç•¥)
 
-- ‰½‚ç‚©‚Ì•û–@‚Å”wŒi‚ğ“§‰ß‚³‚¹‚Ä‚©‚ç”’”wŒi‚É‚·‚é
--- Photoshop‚Æ‚©ARalpha(ƒtƒŠ[ƒ\ƒtƒg)‚Æ‚©
--- WebƒAƒvƒŠ‚à‚ ‚é‚¯‚Ç‚ ‚ñ‚Ü‚è¸“x‚ª—Ç‚­‚È‚¢‚Á‚Û‚¢
+- ä½•ã‚‰ã‹ã®æ–¹æ³•ã§èƒŒæ™¯ã‚’é€éã•ã›ã¦ã‹ã‚‰ç™½èƒŒæ™¯ã«ã™ã‚‹
+-- Photoshopã¨ã‹ã€Ralpha(ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆ)ã¨ã‹
+-- Webã‚¢ãƒ—ãƒªã‚‚ã‚ã‚‹ã‘ã©ã‚ã‚“ã¾ã‚Šç²¾åº¦ãŒè‰¯ããªã„ã£ã½ã„
 
 * Dreambooth
 
-** ©•ª‚ÌPC
+** è‡ªåˆ†ã®PC
 
-- ‰æ‘œ¶¬‚Ü‚Å‚ÌŠÂ‹«\’z‚ª‚Å‚«‚Ä‚¢‚é‚±‚Æ‚ª‘O’ñB
+- ç”»åƒç”Ÿæˆã¾ã§ã®ç’°å¢ƒæ§‹ç¯‰ãŒã§ãã¦ã„ã‚‹ã“ã¨ãŒå‰æã€‚
 - Windows
-- 1111‚ğÅV‚É‚·‚éB
+- 1111ã‚’æœ€æ–°ã«ã™ã‚‹ã€‚
 
-*** ƒCƒ“ƒXƒg[ƒ‹
+*** ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
-- Extensions ‚©‚ç Dreambooth ‚ğƒCƒ“ƒXƒg[ƒ‹‚·‚é
-- stable-diffusion-webui\venv\Scripts\Activate.ps1 (‚à‚µ‚­‚Íbat) ‚ğŠJ‚­
+- Extensions ã‹ã‚‰ Dreambooth ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
+- stable-diffusion-webui\venv\Scripts\Activate.ps1 (ã‚‚ã—ãã¯bat) ã‚’é–‹ã
  pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
-- 1111‚ğˆê“xI—¹‚µ‚Ä‹N“®‚µ‚È‚¨‚·
+- 1111ã‚’ä¸€åº¦çµ‚äº†ã—ã¦èµ·å‹•ã—ãªãŠã™
 
-** –³—¿”ÅColab
+** ç„¡æ–™ç‰ˆColab
 
-NAIleak‚Ì©“®ƒCƒ“ƒXƒg[ƒ‹ƒRƒ}ƒ“ƒh‚Í‚±‚±‚É‘‚¯‚È‚¢‚Ì‚Å“ü–å‚Å‚ÍAnything v3‚ğg‚¤B
+NAIleakã®è‡ªå‹•ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚³ãƒãƒ³ãƒ‰ã¯ã“ã“ã«æ›¸ã‘ãªã„ã®ã§å…¥é–€ã§ã¯Anything v3ã‚’ä½¿ã†ã€‚
 
 + https://www.python.jp/train/experience/colab.html
 + https://www.python.jp/train/experience/exec-python1.html
-+ HuggingFace‚Ìƒg[ƒNƒ“‚ğè‚É“ü‚ê‚é https://huggingface.co/settings/tokens
-+ u1+1v‚Ì‚©‚í‚è‚É[[“ü–å—pNotebook]]‚Ì“à—e‚ğƒRƒsƒy‚µ‚ÄÀs
-+ gradio‚Ìshare URL‚ªƒƒO‚Ì‰º‚Ì‚Ù‚¤‚É‘‚¢‚Ä‚ ‚é‚Ì‚Åƒuƒ‰ƒEƒU‚ÅŠJ‚­
-+ ƒpƒXƒ[ƒh‚Í¶‚Ì{x}‚Á‚Ä‚Æ‚±‰Ÿ‚µ‚½‚ç‘‚¢‚Ä‚ ‚é
++ HuggingFaceã®ãƒˆãƒ¼ã‚¯ãƒ³ã‚’æ‰‹ã«å…¥ã‚Œã‚‹ https://huggingface.co/settings/tokens
++ ã€Œ1+1ã€ã®ã‹ã‚ã‚Šã«[[å…¥é–€ç”¨Notebook]]ã®å†…å®¹ã‚’ã‚³ãƒ”ãƒšã—ã¦å®Ÿè¡Œ
++ gradioã®share URLãŒãƒ­ã‚°ã®ä¸‹ã®ã»ã†ã«æ›¸ã„ã¦ã‚ã‚‹ã®ã§ãƒ–ãƒ©ã‚¦ã‚¶ã§é–‹ã
++ ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯å·¦ã®{x}ã£ã¦ã¨ã“æŠ¼ã—ãŸã‚‰æ›¸ã„ã¦ã‚ã‚‹
 
-“ü–å‚ªI‚í‚Á‚½‚çNotebook‚Í–{Ši“I‚È‚à‚Ì‚Éæ‚èŠ·‚¦‚½‚èA
-©•ª‚ÅƒJƒXƒ^ƒ}ƒCƒY‚µ‚Äg‚¤‚Æ‚¦‚¦‚â‚Å[
+å…¥é–€ãŒçµ‚ã‚ã£ãŸã‚‰Notebookã¯æœ¬æ ¼çš„ãªã‚‚ã®ã«ä¹—ã‚Šæ›ãˆãŸã‚Šã€
+è‡ªåˆ†ã§ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºã—ã¦ä½¿ã†ã¨ãˆãˆã‚„ã§ãƒ¼
 
-** 1. ƒ‚ƒfƒ‹ƒtƒ@ƒCƒ‹ì¬
+** 1. ãƒ¢ãƒ‡ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«ä½œæˆ
 
-uDreamboothvƒ^ƒu‚ğŠJ‚¢‚½ŒãAuCreate Modelvƒ^ƒu‚ğŠJ‚«‚Ü‚·B
+ã€ŒDreamboothã€ã‚¿ãƒ–ã‚’é–‹ã„ãŸå¾Œã€ã€ŒCreate Modelã€ã‚¿ãƒ–ã‚’é–‹ãã¾ã™ã€‚
 
 - Name: helloasuka
-- Source Checkpoint: ƒnƒ[ƒAƒXƒJ‚Ég‚Á‚½ƒ‚ƒfƒ‹‚Ìckpt
+- Source Checkpoint: ãƒãƒ­ãƒ¼ã‚¢ã‚¹ã‚«ã«ä½¿ã£ãŸãƒ¢ãƒ‡ãƒ«ã®ckpt
 - Scheduler: ddim
 
-uModelv‚ªuhelloasukav‚É‚È‚Á‚Ä‚ê‚Î‚½‚Ô‚ñOKB
+ã€ŒModelã€ãŒã€Œhelloasukaã€ã«ãªã£ã¦ã‚Œã°ãŸã¶ã‚“OKã€‚
 
-** 2DƒgƒŒ[ƒjƒ“ƒOİ’è
+** 2ï¼ãƒˆãƒ¬ãƒ¼ãƒ‹ãƒ³ã‚°è¨­å®š
 
-uTrain Modelvƒ^ƒu‚ğŠJ‚­B
+ã€ŒTrain Modelã€ã‚¿ãƒ–ã‚’é–‹ãã€‚
 
-uTraining Wizard(Person)vƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚Ä‚à‚¢‚¢‚µƒfƒtƒHƒ‹ƒg’l‚Ì‚Ü‚Ü‚Å‚à‚¢‚¢B
+ã€ŒTraining Wizard(Person)ã€ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ã‚‚ã„ã„ã—ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã®ã¾ã¾ã§ã‚‚ã„ã„ã€‚
 
 Settings
 - Dataset directory: C:\helloasuka
--- Colab‚È‚ç /content/stable-diffusion-webui/outputs/txt2img-images ‚ğw’è‚·‚é‚Æ‚©
--- ¶‘¤‚Ìƒtƒ@ƒCƒ‹ƒAƒCƒRƒ“‚ÅAƒtƒHƒ‹ƒ_‚ğì‚Á‚½‚è‰æ‘œ‚ğƒAƒbƒvƒ[ƒh‚Å‚«‚é
+-- Colabãªã‚‰ /content/stable-diffusion-webui/outputs/txt2img-images ã‚’æŒ‡å®šã™ã‚‹ã¨ã‹
+-- å·¦å´ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚¢ã‚¤ã‚³ãƒ³ã§ã€ãƒ•ã‚©ãƒ«ãƒ€ã‚’ä½œã£ãŸã‚Šç”»åƒã‚’ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã§ãã‚‹
 - Save Checkpoint Frequency: 0
 - Save Preview(s) Frequency: 0
 - Instance prompt: helloasuka
 
-&color(#ff0000){Instance prompt‚ÍOptional‚Å‚Í‚È‚­A“ü‚ê‚È‚¢‚ÆUnable lbuild Concents.ƒGƒ‰[‚ªo‚éB}
+&color(#ff0000){Instance promptã¯Optionalã§ã¯ãªãã€å…¥ã‚Œãªã„ã¨Unable lbuild Concents.ã‚¨ãƒ©ãƒ¼ãŒå‡ºã‚‹ã€‚}
 
 Advanced
-- Auto-Adjust(WIP) ƒ{ƒ^ƒ“‚ğ‰Ÿ‚·
+- Auto-Adjust(WIP) ãƒœã‚¿ãƒ³ã‚’æŠ¼ã™
 
-CPU‚Å‚â‚éê‡
-- Use CPU Only (SLOW): ƒIƒ“
-- Use 8bit Adam: ƒIƒt
+CPUã§ã‚„ã‚‹å ´åˆ
+- Use CPU Only (SLOW): ã‚ªãƒ³
+- Use 8bit Adam: ã‚ªãƒ•
 - Mixed Precision: no
-- 1000Steps‚Å12.5ŠÔ‚©‚©‚Á‚½(4700U)
+- 1000Stepsã§12.5æ™‚é–“ã‹ã‹ã£ãŸ(4700U)
 
-** 3. “®ìŠm”F
+** 3. å‹•ä½œç¢ºèª
 
-- ckpt‚ªo—ˆã‚ª‚Á‚Ä‚¢‚é‚Í‚¸‚È‚Ì‚ÅA’Êí’Ê‚è Stable Diffusion checkpoint ‚Ìƒvƒ‹ƒ_ƒEƒ“‚©‚ç‘I‚Ô
-- ƒvƒƒ“ƒvƒg‚ğ helloasuka ‚É‚µ‚ÄÀs(‰e‹¿‚ğŠm”F)
--- ‚¤‚Ü‚­‚¢‚Á‚Ä‚ê‚Îƒ[ƒh‚ğ’Ç‰Á‚·‚é(“ü–å‚Å‚Í—Ç‚¢•Ï‰»‚É‚È‚ç‚È‚¢‚©‚à)
-- ƒvƒƒ“ƒvƒg‚ğ 1girl ‚È‚Ç helloasuka ˆÈŠO‚É‚µ‚ÄÀs(‰e‹¿‚³‚ê‚Ä‚¢‚È‚¢‚±‚Æ‚ğŠm”F)
+- ckptãŒå‡ºæ¥ä¸ŠãŒã£ã¦ã„ã‚‹ã¯ãšãªã®ã§ã€é€šå¸¸é€šã‚Š Stable Diffusion checkpoint ã®ãƒ—ãƒ«ãƒ€ã‚¦ãƒ³ã‹ã‚‰é¸ã¶
+- ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã‚’ helloasuka ã«ã—ã¦å®Ÿè¡Œ(å½±éŸ¿ã‚’ç¢ºèª)
+-- ã†ã¾ãã„ã£ã¦ã‚Œã°ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ ã™ã‚‹(å…¥é–€ã§ã¯è‰¯ã„å¤‰åŒ–ã«ãªã‚‰ãªã„ã‹ã‚‚)
+- ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã‚’ 1girl ãªã© helloasuka ä»¥å¤–ã«ã—ã¦å®Ÿè¡Œ(å½±éŸ¿ã•ã‚Œã¦ã„ãªã„ã“ã¨ã‚’ç¢ºèª)
 
 * Hypernetwork
 
-À‚ÍCPU‚Å‚à“®‚­B100”{‚­‚ç‚¢ŠÔ‚ª‚©‚©‚éB
+å®Ÿã¯CPUã§ã‚‚å‹•ãã€‚100å€ãã‚‰ã„æ™‚é–“ãŒã‹ã‹ã‚‹ã€‚
 
-** ƒCƒ“ƒXƒg[ƒ‹
+** ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
-*** CPU‚Å“®‚©‚·ê‡
+*** CPUã§å‹•ã‹ã™å ´åˆ
 
  set COMMANDLINE_ARGS=--skip-torch-cuda-test --no-half --no-half-vae
-xformers‚ğƒIƒt‚É‚µ‚È‚¢‚Æ‚¢‚¯‚È‚¢‚©‚àB
-&color(#ff0000){RuntimeError: Input type (torch.FloatTensor) and weight type (torch.cuda.FloatTensor) should be the same}‚ªo‚é‚½‚ßB
+xformersã‚’ã‚ªãƒ•ã«ã—ãªã„ã¨ã„ã‘ãªã„ã‹ã‚‚ã€‚
+&color(#ff0000){RuntimeError: Input type (torch.FloatTensor) and weight type (torch.cuda.FloatTensor) should be the same}ãŒå‡ºã‚‹ãŸã‚ã€‚
 
-** 1. ptƒtƒ@ƒCƒ‹ì¬
+** 1. ptãƒ•ã‚¡ã‚¤ãƒ«ä½œæˆ
 
-uTrainvƒ^ƒu‚ğŠJ‚¢‚½ŒãAuCreate hypernetworkvƒ^ƒu‚ğŠJ‚«‚Ü‚·B
+ã€ŒTrainã€ã‚¿ãƒ–ã‚’é–‹ã„ãŸå¾Œã€ã€ŒCreate hypernetworkã€ã‚¿ãƒ–ã‚’é–‹ãã¾ã™ã€‚
 
 - Name: helloasuka
 - Enter hypernetwork layer structure: 1,1
 - Select activation function of hypernetwork. Recommended : Swish / Linear(none): relu
-- ‚ ‚Æ‚Í‚¢‚¶‚ç‚È‚¢
+- ã‚ã¨ã¯ã„ã˜ã‚‰ãªã„
 
 ** 2. Train
 
-uTrainvƒ^ƒu‚Ì’†‚ÌuTrainvƒ^ƒu‚ğŠJ‚­
+ã€ŒTrainã€ã‚¿ãƒ–ã®ä¸­ã®ã€ŒTrainã€ã‚¿ãƒ–ã‚’é–‹ã
 
-- Hypernetwork: helloasuka.pt ‚ğ‘I‘ğ
+- Hypernetwork: helloasuka.pt ã‚’é¸æŠ
 - Hypernetwork Learning rate: 0.0005
 - Dataset directory: C:\helloasuka
 - Prompt template file: C:\****\stable-diffusion-webui\textual_inversion_templates\hypernetwork.txt
@@ -410,18 +410,18 @@ xformers‚ğƒIƒt‚É‚µ‚È‚¢‚Æ‚¢‚¯‚È‚¢‚©‚àB
 - Save an image to log directory every N steps, 0 to disable: 1500
 - Save a copy of embedding to log directory every N steps, 0 to disable: 1500
 
-¶¬’†‚É‰æ‘œ‚ğì‚é‚É‚Í’Ç‰Á‚ÌVRAM‚ª•K—vB
-VRAM 8GB‚ÌŠÂ‹«‚Å¶¬‚·‚é‚ÆCUDA out of memory‚ªo‚ÄI‚í‚èB
+ç”Ÿæˆä¸­ã«ç”»åƒã‚’ä½œã‚‹ã«ã¯è¿½åŠ ã®VRAMãŒå¿…è¦ã€‚
+VRAM 8GBã®ç’°å¢ƒã§ç”Ÿæˆã™ã‚‹ã¨CUDA out of memoryãŒå‡ºã¦çµ‚ã‚ã‚Šã€‚
 
-Save a copy`‚ğ0‚É‚·‚é‚ÆƒGƒ‰[‚ª‹N‚«‚éB1500‚È‚çƒGƒ‰[‚Í‹N‚«‚È‚©‚Á‚½B
+Save a copyã€œã‚’0ã«ã™ã‚‹ã¨ã‚¨ãƒ©ãƒ¼ãŒèµ·ãã‚‹ã€‚1500ãªã‚‰ã‚¨ãƒ©ãƒ¼ã¯èµ·ããªã‹ã£ãŸã€‚
 &color(#ff0000){FileNotFoundError: [Errno 2] No such file or directory: 'textual_inversion\\2022-11-18\\helloasuka\\hypernetwork_loss.csv'}
 
-** 3. “®ìŠm”F
+** 3. å‹•ä½œç¢ºèª
 
-- pt‚ªo—ˆã‚ª‚Á‚Ä‚¢‚é‚Í‚¸‚È‚Ì‚ÅA’Êí’Ê‚è Hypernetwork ‚Ìƒvƒ‹ƒ_ƒEƒ“‚©‚ç‘I‚Ô
-- Generate (“ü–å‚Å‚Íƒvƒƒ“ƒvƒg‚É‚æ‚ç‚¸‰e‹¿‚µ‚Ä‚µ‚Ü‚Á‚Ä‚¢‚é‚©‚à)
+- ptãŒå‡ºæ¥ä¸ŠãŒã£ã¦ã„ã‚‹ã¯ãšãªã®ã§ã€é€šå¸¸é€šã‚Š Hypernetwork ã®ãƒ—ãƒ«ãƒ€ã‚¦ãƒ³ã‹ã‚‰é¸ã¶
+- Generate (å…¥é–€ã§ã¯ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã«ã‚ˆã‚‰ãšå½±éŸ¿ã—ã¦ã—ã¾ã£ã¦ã„ã‚‹ã‹ã‚‚)
 
-*** HN“K—p‚Ìˆê—á
+*** HNé©ç”¨ã®ä¸€ä¾‹
 
 masterpiece, best quality, masterpiece, helloasuka
 Seed: 3506376363
@@ -429,10 +429,10 @@ Seed: 3506376363
 
 * Embedding
 
-’§íÒ‹‚Ş
+æŒ‘æˆ¦è€…æ±‚ã‚€
 
 * Dream Artist
 
-’§íÒ‹‚Ş
+æŒ‘æˆ¦è€…æ±‚ã‚€
 [END]
 

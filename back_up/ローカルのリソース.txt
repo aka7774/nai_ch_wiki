@@ -1,104 +1,104 @@
 #contents
-*ŠT—v
-ƒ[ƒJƒ‹‚Åg‚¦‚éStable Diffusionü‚è‚ÌƒŠƒ\[ƒXƒf[ƒ^‚Ìî•ñ‚ğ‚Ü‚Æ‚ß‚é‚Æ‚±‚ë‚Å‚·B
+*æ¦‚è¦
+ãƒ­ãƒ¼ã‚«ãƒ«ã§ä½¿ãˆã‚‹Stable Diffusionå‘¨ã‚Šã®ãƒªã‚½ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿ã®æƒ…å ±ã‚’ã¾ã¨ã‚ã‚‹ã¨ã“ã‚ã§ã™ã€‚
 
-&#128317;Fƒ_ƒEƒ“ƒ[ƒhƒŠƒ“ƒN
+&#128317;ï¼šãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ãƒªãƒ³ã‚¯
 
-*ŒfÚ•ûj
-–Ô—…‚Í/sdmodels‚È‚Ç‚É”C‚¹‚é‚Æ‚µ‚ÄAˆÈ‰º‚Ì‚æ‚¤‚È‚à‚Ì‚ğÚ‚¹‚éŠ´‚¶‚ª‚¢‚¢‚©‚à‚µ‚ê‚È‚¢
-+ƒXƒŒ‚Å˜b‘è‚É‚È‚Á‚½‚à‚Ì
-+“Á‚É—L—p‚È‚à‚Ì
+*æ²è¼‰æ–¹é‡
+ç¶²ç¾…ã¯/sdmodelsãªã©ã«ä»»ã›ã‚‹ã¨ã—ã¦ã€ä»¥ä¸‹ã®ã‚ˆã†ãªã‚‚ã®ã‚’è¼‰ã›ã‚‹æ„Ÿã˜ãŒã„ã„ã‹ã‚‚ã—ã‚Œãªã„
++ã‚¹ãƒ¬ã§è©±é¡Œã«ãªã£ãŸã‚‚ã®
++ç‰¹ã«æœ‰ç”¨ãªã‚‚ã®
 
 
-*ƒŠƒ\[ƒX(ˆê——)
-+https://rentry.org/sdmodels ~~‚±‚±Œ©‚Æ‚«‚á‚¢‚¢Š´‚Í‚ ‚éB–c‘å‚È—Ê‚ÌƒŠƒ“ƒNW
+*ãƒªã‚½ãƒ¼ã‚¹(ä¸€è¦§)
++https://rentry.org/sdmodels ~~ã“ã“è¦‹ã¨ãã‚ƒã„ã„æ„Ÿã¯ã‚ã‚‹ã€‚è†¨å¤§ãªé‡ã®ãƒªãƒ³ã‚¯é›†
 +Models - Hugging Face - https://huggingface.co/models?pipeline_tag=text-to-image&sort=modified
-+/hdg/ Stable Diffusion Models Cookbook - https://rentry.org/hdgrecipes#g-anons-unnamed-mix-e93c3bf7 ~~ŠCŠOƒjƒL‚É‚æ‚é—lX‚Èƒ}[ƒWƒ‚ƒfƒ‹‚Ìˆê——
++/hdg/ Stable Diffusion Models Cookbook - https://rentry.org/hdgrecipes#g-anons-unnamed-mix-e93c3bf7 ~~æµ·å¤–ãƒ‹ã‚­ã«ã‚ˆã‚‹æ§˜ã€…ãªãƒãƒ¼ã‚¸ãƒ¢ãƒ‡ãƒ«ã®ä¸€è¦§
 
 
 
-*ƒŠƒ\[ƒX(ŒÂ•Ê)
+*ãƒªã‚½ãƒ¼ã‚¹(å€‹åˆ¥)
 
-**ƒ‚ƒfƒ‹
+**ãƒ¢ãƒ‡ãƒ«
 
 *** Elysium
-ƒAƒjƒƒ‚ƒfƒ‹‚ÌElysium_Anime_V2.ckpt‚ª—Ç‚³‚»‚¤
-Elysium_Anime_V1.ckptbƒZƒ~ƒŠƒAƒ‹Œn
-Elysium_Anime_V2.ckptbƒAƒjƒŒn
-Elysium_V1.ckptbÀÊŒn
+ã‚¢ãƒ‹ãƒ¡ãƒ¢ãƒ‡ãƒ«ã®Elysium_Anime_V2.ckptãŒè‰¯ã•ãã†
+Elysium_Anime_V1.ckptï½œã‚»ãƒŸãƒªã‚¢ãƒ«ç³»
+Elysium_Anime_V2.ckptï½œã‚¢ãƒ‹ãƒ¡ç³»
+Elysium_V1.ckptï½œå®Ÿå†™ç³»
 
 &#128317;hesw23168/SD-Elysium-Model at main - https://huggingface.co/hesw23168/SD-Elysium-Model/tree/main
 
-ƒ‚ƒfƒ‹‚²‚Æ‚Ì”äŠr•\
+ãƒ¢ãƒ‡ãƒ«ã”ã¨ã®æ¯”è¼ƒè¡¨
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5jC0_D0iZy-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/5jC0_D0iZy.jpg]]
-ƒŠƒtƒ@ƒŒƒ“ƒXF“ñŸŒ³ŠGEƒAƒjƒƒ‚ƒfƒ‹‚ªŸX‚Æ“oê - Markdown‚ÆBullet Journal - https://programmingforever.hatenablog.com/entry/2022/11/20/171658
+ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ï¼šäºŒæ¬¡å…ƒçµµãƒ»ã‚¢ãƒ‹ãƒ¡ãƒ¢ãƒ‡ãƒ«ãŒæ¬¡ã€…ã¨ç™»å ´ - Markdownã¨Bullet Journal - https://programmingforever.hatenablog.com/entry/2022/11/20/171658
 
-‚È‚¨Vae‚ÍˆÈ‰º‚Ì‚æ‚¤‚É„§‚³‚ê‚Ä‚¢‚Ü‚·B''¦.ckptŠg’£q‚Å”z•z‚³‚ê‚Ä‚¢‚é‚Ì‚ÅA.vae.pt‚ÉƒŠƒl[ƒ€‚µ‚Äƒ‚ƒfƒ‹‚Æ“¯‚¶êŠ‚É”z’u‚µ‚Ü‚·B''
-- (General model): Clip skip 1, VAE: 'vae-ft-mse-840000' from StabilityAI Fhttps://huggingface.co/stabilityai/sd-vae-ft-mse-original/tree/main
+ãªãŠVaeã¯ä»¥ä¸‹ã®ã‚ˆã†ã«æ¨å¥¨ã•ã‚Œã¦ã„ã¾ã™ã€‚''â€».ckptæ‹¡å¼µå­ã§é…å¸ƒã•ã‚Œã¦ã„ã‚‹ã®ã§ã€.vae.ptã«ãƒªãƒãƒ¼ãƒ ã—ã¦ãƒ¢ãƒ‡ãƒ«ã¨åŒã˜å ´æ‰€ã«é…ç½®ã—ã¾ã™ã€‚''
+- (General model): Clip skip 1, VAE: 'vae-ft-mse-840000' from StabilityAI ï¼šhttps://huggingface.co/stabilityai/sd-vae-ft-mse-original/tree/main
 Sampler: DPM++ 2M Karras
-- (Anime model): Clip skip 1 or 2, VAE: 'kl-f8-anime2.ckpt' from Waifu DiffusionFhttps://huggingface.co/hakurei/waifu-diffusion-v1-4/tree/main/vae
+- (Anime model): Clip skip 1 or 2, VAE: 'kl-f8-anime2.ckpt' from Waifu Diffusionï¼šhttps://huggingface.co/hakurei/waifu-diffusion-v1-4/tree/main/vae
 Sampler: DPM++ 2M Karras
 
 *** EimisAnimeDiffusion
 &#128317;eimiss/EimisAnimeDiffusion_1.0v &#183; Hugging Face - https://huggingface.co/eimiss/EimisAnimeDiffusion_1.0v
-‚•i¿‚ÅÚ×‚ÈƒAƒjƒ‰æ‘œ‚ÅƒgƒŒ[ƒjƒ“ƒO‚³‚ê‚½ƒ‚ƒfƒ‹
+é«˜å“è³ªã§è©³ç´°ãªã‚¢ãƒ‹ãƒ¡ç”»åƒã§ãƒˆãƒ¬ãƒ¼ãƒ‹ãƒ³ã‚°ã•ã‚ŒãŸãƒ¢ãƒ‡ãƒ«
 
 
 *** Gape
-&#128317;(‰{——’ˆÓ)Gaping/Large Insertion model - https://rentry.org/gapemodel
-Danbooru‚É‚ ‚é‹É’[‚ÉNSFW‚ÈƒRƒ“ƒeƒ“ƒc‚Ì‚İ‚ğŠwK‚³‚¹‚½ƒ‚ƒfƒ‹B
-ˆêŒ©‚·‚é‚Æ“Áê‚Èl‚É‚µ‚©•K—v‚È‚¢‚æ‚¤‚É‚İ‚¦‚é‚ªANSFWƒRƒ“ƒeƒ“ƒc‚ªŒŸ‰{‚³‚ê‚½‚èŠwK‚µ‚Ä‚¢‚È‚¢ƒ‚ƒfƒ‹‚Æƒ}[ƒW‚·‚é‚±‚Æ‚Å‹Ç•”•`Ê‚Ì•âŠ®‚Ég‚¦‚é—L—pƒ‚ƒfƒ‹
-QlF[[ƒ[ƒJƒ‹‚Ìƒ}[ƒW]]
+&#128317;(é–²è¦§æ³¨æ„)Gaping/Large Insertion model - https://rentry.org/gapemodel
+Danbooruã«ã‚ã‚‹æ¥µç«¯ã«NSFWãªã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ã¿ã‚’å­¦ç¿’ã•ã›ãŸãƒ¢ãƒ‡ãƒ«ã€‚
+ä¸€è¦‹ã™ã‚‹ã¨ç‰¹æ®Šãªäººã«ã—ã‹å¿…è¦ãªã„ã‚ˆã†ã«ã¿ãˆã‚‹ãŒã€NSFWã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒæ¤œé–²ã•ã‚ŒãŸã‚Šå­¦ç¿’ã—ã¦ã„ãªã„ãƒ¢ãƒ‡ãƒ«ã¨ãƒãƒ¼ã‚¸ã™ã‚‹ã“ã¨ã§å±€éƒ¨æå†™ã®è£œå®Œã«ä½¿ãˆã‚‹æœ‰ç”¨ãƒ¢ãƒ‡ãƒ«
+å‚è€ƒï¼š[[ãƒ­ãƒ¼ã‚«ãƒ«ã®ãƒãƒ¼ã‚¸]]
 
 
 *** Anything-V3.0
 Anime model
 Info https://www.bilibili.com/read/cv19603218
 &#128317;Linaqruf/anything-v3.0 at main - https://huggingface.co/Linaqruf/anything-v3.0/tree/main
-&#128304;FAnything-V3.0-pruned.ckpt‚ª‚¨‚·‚·‚ß
-¦F‚È‚¨—e—ÊíŒ¸”Å(‚½‚¢‚Ä‚¢–¼‘O‚Éuprunedv‚ª‚Â‚¢‚Ä‚¢‚é)‚ÍŠwK‚É‚¨‚¯‚éƒf[ƒ^‚ğíœ‚µ‚½ƒ‚ƒfƒ‹ƒf[ƒ^‚Æ‚Ì‚±‚Æ‚Å‚·B
-o—Í‚É‚Í–â‘è‚ ‚è‚Ü‚¹‚ñ‚ªAŠwKŒn‚Ìì‹Æ‚Ég‚¤ê‡‚Í”ñ„§‚Å‚·B
+&#128304;ï¼šAnything-V3.0-pruned.ckptãŒãŠã™ã™ã‚
+â€»ï¼šãªãŠå®¹é‡å‰Šæ¸›ç‰ˆ(ãŸã„ã¦ã„åå‰ã«ã€Œprunedã€ãŒã¤ã„ã¦ã„ã‚‹)ã¯å­¦ç¿’æ™‚ã«ãŠã‘ã‚‹ãƒ‡ãƒ¼ã‚¿ã‚’å‰Šé™¤ã—ãŸãƒ¢ãƒ‡ãƒ«ãƒ‡ãƒ¼ã‚¿ã¨ã®ã“ã¨ã§ã™ã€‚
+å‡ºåŠ›æ™‚ã«ã¯å•é¡Œã‚ã‚Šã¾ã›ã‚“ãŒã€å­¦ç¿’ç³»ã®ä½œæ¥­ã«ä½¿ã†å ´åˆã¯éæ¨å¥¨ã§ã™ã€‚
 
 
 *** NAI
-—vTorrentƒNƒ‰ƒCƒAƒ“ƒgƒ\ƒtƒg
+è¦Torrentã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã‚½ãƒ•ãƒˆ
 &#128317;
 =|BOX|
 magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 ||=
-ƒ\[ƒXF--GUIDE-- - https://rentry.org/voldy#-novelai-setup-
+ã‚½ãƒ¼ã‚¹ï¼š--GUIDE-- - https://rentry.org/voldy#-novelai-setup-
 
-**ƒ}[ƒWƒ‚ƒfƒ‹
-¨[[ƒ[ƒJƒ‹‚Ìƒ}[ƒW]]‚ÉˆÚ“®‚³‚¹‚Ü‚µ‚½B
+**ãƒãƒ¼ã‚¸ãƒ¢ãƒ‡ãƒ«
+â†’[[ãƒ­ãƒ¼ã‚«ãƒ«ã®ãƒãƒ¼ã‚¸]]ã«ç§»å‹•ã•ã›ã¾ã—ãŸã€‚
 
 ----
 
 ** HyperNetwork
-ƒ[ƒJƒ‹•”„ [[HyperNetwork]]
+ãƒ­ãƒ¼ã‚«ãƒ«éƒ¨â”‚[[HyperNetwork]]
 
-*** ŠØ‘HyperNetworkƒRƒŒƒNƒVƒ‡ƒ“
-&#128317; &#44277;&#50976;&#46108; hypernet, embedding &#47784;&#51020; (&#49368;&#54540; —L) - AI&#44536;&#47548; &#54617;&#49845; &#52292;&#45328; - https://arca.live/b/hypernetworks/60940948?category=%EA%B3%B5%EC%9C%A0&p=1
-ŠØ‘‚ÅŒfÚ‚³‚ê‚Ä‚¢‚éAŠGt‚ÌŠG•¿‚ÌÄŒ»‚ğ–Ú“I‚Æ‚µ‚½‚Æ‚Ä‚Â‚à‚È‚¢—Ê‚ÌHypernetwork‚ÌƒRƒŒƒNƒVƒ‡ƒ“
-ŒÂX‚Éƒ_ƒEƒ“ƒ[ƒh‚Å‚«‚é‚Ù‚©‚Ü‚Æ‚ß‚Äƒ_ƒEƒ“ƒ[ƒh‚Å‚«‚éMegaƒŠƒ“ƒN‚ªˆê‰‚ ‚é(‚½‚¾‚µƒtƒŠ[‚¾‚Æ‘å’ï“r’†‚Å§ŒÀ‚­‚ç‚Á‚Ä‚µ‚Ê)
-Jdownloader“™‚ğg‚Á‚Ä‚±‚Á‚¿‚Åƒ_ƒEƒ“ƒ[ƒh‚·‚é‚ñ‚¾@¨@Link scrape: &#128317;https://pastebin.com/p0F4k98y
+*** éŸ“å›½HyperNetworkã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³
+&#128317; &#44277;&#50976;&#46108; hypernet, embedding &#47784;&#51020; (&#49368;&#54540; æœ‰) - AI&#44536;&#47548; &#54617;&#49845; &#52292;&#45328; - https://arca.live/b/hypernetworks/60940948?category=%EA%B3%B5%EC%9C%A0&p=1
+éŸ“å›½ã§æ²è¼‰ã•ã‚Œã¦ã„ã‚‹ã€çµµå¸«ã®çµµæŸ„ã®å†ç¾ã‚’ç›®çš„ã¨ã—ãŸã¨ã¦ã¤ã‚‚ãªã„é‡ã®Hypernetworkã®ã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³
+å€‹ã€…ã«ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã§ãã‚‹ã»ã‹ã¾ã¨ã‚ã¦ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã§ãã‚‹Megaãƒªãƒ³ã‚¯ãŒä¸€å¿œã‚ã‚‹(ãŸã ã—ãƒ•ãƒªãƒ¼ã ã¨å¤§æŠµé€”ä¸­ã§åˆ¶é™ãã‚‰ã£ã¦ã—ã¬)
+Jdownloaderç­‰ã‚’ä½¿ã£ã¦ã“ã£ã¡ã§ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ã‚“ã ã€€â†’ã€€Link scrape: &#128317;https://pastebin.com/p0F4k98y
 
-¨''huggingface‚ÉƒRƒŒƒNƒVƒ‡ƒ“‚ğ’u‚«‚Ü‚µ‚½B''
+â†’''huggingfaceã«ã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã‚’ç½®ãã¾ã—ãŸã€‚''
 &#128317;https://huggingface.co/WarriorMama777/HyperNetworkCollection_v2/tree/main
 HyperNetwork
-‚Ü‚Æ‚ß‚Äƒ_ƒEƒ“ƒ[ƒh‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B¦GitA‚Ü‚½‚ÍGithubDesktop‚ÅƒNƒ[ƒ“ƒŠƒ|ƒWƒgƒŠ‚µ‚Ä‚­‚¾‚³‚¢B
+ã¾ã¨ã‚ã¦ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚â€»Gitã€ã¾ãŸã¯GithubDesktopã§ã‚¯ãƒ­ãƒ¼ãƒ³ãƒªãƒã‚¸ãƒˆãƒªã—ã¦ãã ã•ã„ã€‚
 
 ----
 
 ** TextualInversion
-ƒ[ƒJƒ‹•”[[TextualInversion]]
+ãƒ­ãƒ¼ã‚«ãƒ«éƒ¨[[TextualInversion]]
 
-*** è‚Ì•â³TI
+*** æ‰‹ã®è£œæ­£TI
 
 &#128317;Nerfgun3/bad_prompt &#183; Datasets at Hugging Face - https://huggingface.co/datasets/Nerfgun3/bad_prompt
-TextualInversion‚Åˆ«‚¢è‚ÌŒ`‚ğŠwK‚³‚¹‚ÄAEmbedding‚ÅƒlƒKƒeƒBƒuƒvƒƒ“ƒvƒg‚Æ‚µ‚Äg‚¤‚±‚Æ‚Å³‚µ‚¢è‚ÌŒ`‚ğ¶¬‚·‚é‚â‚ÂB
-Œø‰Ê‚ ‚è‚»‚¤B
-ŒŸØ‚Íƒ[ƒJƒ‹•”‚Ìƒy[ƒW[[TextualInversion]]‚É‘‚¢‚½‚Å
+TextualInversionã§æ‚ªã„æ‰‹ã®å½¢ã‚’å­¦ç¿’ã•ã›ã¦ã€Embeddingã§ãƒã‚¬ãƒ†ã‚£ãƒ–ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã¨ã—ã¦ä½¿ã†ã“ã¨ã§æ­£ã—ã„æ‰‹ã®å½¢ã‚’ç”Ÿæˆã™ã‚‹ã‚„ã¤ã€‚
+åŠ¹æœã‚ã‚Šãã†ã€‚
+æ¤œè¨¼ã¯ãƒ­ãƒ¼ã‚«ãƒ«éƒ¨ã®ãƒšãƒ¼ã‚¸[[TextualInversion]]ã«æ›¸ã„ãŸã§
 
-**“§–¾³‘¥‰»‰æ‘œ
-512x512A768x768A1024x1024‚Ì“§–¾‰æ‘œ‹l‚ß‡‚í‚¹@Še1000–‡‚¸‚Â
+**é€æ˜æ­£å‰‡åŒ–ç”»åƒ
+512x512ã€768x768ã€1024x1024ã®é€æ˜ç”»åƒè©°ã‚åˆã‚ã›ã€€å„1000æšãšã¤
 https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip

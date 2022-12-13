@@ -1,76 +1,76 @@
 #contents
 
-* Sampling�ɂ���
-�T���v�����O��ς���ƊG�����ς��B
-�̂ŁANAI�őI�ׂ�5��ɂ��Ĕ�r���Ă݂��B
+* Samplingについて
+サンプリングを変えると絵柄が変わる。
+ので、NAIで選べる5種について比較してみた。
 
-�X���Ƃ��Ă͈ȉ���������̂́A�����D��Ă���A�Ƃ����͖̂��m�ɂ͌�������̂��Ȃ��B
-�e���ł��낢�뎎���Ă��������ˁ[�񂶂�ˁH
+傾向としては以下があるものの、何が優れている、というのは明確には言えるものがない。
+各自でいろいろ試していくしかねーんじゃね？
 
--Euler a�ȊO�͍\�}�����₷��
--LMS�APLMS�͔񃊃A���n�G���L�����ŕ���₷��
--PLMS�͂�������Ƃ����G���ɂȂ�₷��
+-Euler a以外は構図が似やすい
+-LMS、PLMSは非リアル系絵柄キャラで崩れやすい
+-PLMSはくっきりとした絵柄になりやすい
 
-���ʐݒ�
+共通設定
 > Step28 Scale11 size 512x768
 
-** ����1
+** その1
 > masterpiece,best quality,{{ultra-detailed}},{{illustration}},{{an extremely delicate and beautiful}}, {beautiful detailed eyes},{hatsune miku},store for rare and old books,
 
 > NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry,
 
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CaLPTxA5wh-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/CaLPTxA5wh.jpg]]
 
-** ����2
+** その2
 > masterpiece,best quality,blonde short hair,wavy hair,eating ramen,outdoor
 
 > NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry,
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DjnLhgV3aD-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/DjnLhgV3aD.jpg]]
 
-** ����3
+** その3
 > {{{{masterpiece}}}},  {{{{{{best quality}}}}}},  {{{{ultra-detailed}}}},  {{{{illustration}}}}, {{cave}},{{{fantasy city}}},night,unexplored region,dynamic angle, Underworld,
 
 > NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry,
 
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VsKOWmkEoS-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/VsKOWmkEoS.jpg]]
 
-** ����4
+** その4
 > realistic,short pants,camisole,blonde short hair,wavy hair,,small breasts,1girl
 
 > NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, denim
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/bjQ6MOBHjW-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/bjQ6MOBHjW.jpg]] 
 
-** ����5
-�o�T) ���f�@�T ���u&#20048; ��ҁFsymb�iQQ 914635985�j
+** その5
+出典) 元素法典 星冰&#20048; 作者：symb（QQ 914635985）
 
 > {{{masterpiece}}},best quality, illustration,{beautiful detailed girl},beautiful detailed glow,detailed ice,beautiful detailed water,{beautiful detailed eyes},expressionless,beautiful detailed white gloves, {floating palaces:1.3},azure hair,disheveled hair,long bangs, hairs between eyes, {skyblue dress},black ribbon,white bowties,midriff,{{{half closed eyes}}},,big forhead,blank stare,flower,large top sleeves,{{{ice crystal texture wings}}}
 
 > NP : multiple breasts, &#x28;mutated hands and fingers:1.5 &#x29;, &#x28;long body :1.3&#x29;, &#x28;mutation, poorly drawn :1.2&#x29; , black-white, bad anatomy, liquid body, liquid tongue, disfigured, malformed, mutated, anatomical nonsense, text font ui, error, malformed hands, long neck, blurred, lowers, lowres, bad anatomy, bad proportions, bad shadow, uncoordinated body, unnatural body, fused breasts, bad breasts, huge breasts, poorly drawn breasts, extra breasts, liquid breasts, heavy breasts, missing breasts, huge haunch, huge thighs, huge calf, bad hands, fused hand, missing hand, disappearing arms, disappearing thigh, disappearing calf, disappearing legs, fused ears, bad ears, poorly drawn ears, extra ears, liquid ears, heavy ears, missing ears, fused animal ears, bad animal ears, poorly drawn animal ears, extra animal ears, liquid animal ears, heavy animal ears, missing animal ears, text, ui, error, missing fingers, missing limb, fused fingers, one hand with more than 5 fingers, one hand with less than 5 fingers, one hand with more than 5 digit, one hand with less than 5 digit, extra digit, fewer digits, fused digit, missing digit, bad digit, liquid digit, colorful tongue, black tongue, cropped, watermark, username, blurry, JPEG artifacts, signature, 3D, 3D game, 3D game scene, 3D character, malformed feet, extra feet, bad feet, poorly drawn feet, fused feet, missing feet, extra shoes, bad shoes, fused shoes, more than two shoes, poorly drawn shoes, bad gloves, poorly drawn gloves, fused gloves, bad cum, poorly drawn cum, fused cum, bad hairs, poorly drawn hairs, fused hairs, big muscles, ugly, bad face, fused face, poorly drawn face, cloned face, big face, long face, bad eyes, fused eyes poorly drawn eyes, extra eyes, malformed limbs, more than 2 nipples, missing nipples, different nipples, fused nipples, bad nipples, poorly drawn nipples, black nipples, colorful nipples, gross proportions. short arm, {{{missing arms}}}, missing thighs, missing calf, missing legs, mutation, duplicate, morbid, mutilated, poorly drawn hands, more than 1 left hand, more than 1 right hand, deformed, &#x28;blurry&#x29;, disfigured, missing legs, extra arms, extra thighs, more than 2 thighs, extra calf, fused calf, extra legs, bad knee, extra knee, more than 2 legs, bad tails, bad mouth, fused mouth, poorly drawn mouth, bad tongue, tongue within mouth, too long tongue, black tongue, big mouth, cracked mouth, bad mouth, dirty face, dirty teeth, dirty pantie, fused pantie, poorly drawn pantie, fused cloth, poorly drawn cloth, bad pantie, yellow teeth, thick lips, bad cameltoe, colorful cameltoe, bad asshole, poorly drawn asshole, fused asshole, missing asshole, bad anus, bad pussy, bad crotch, bad crotch seam, fused anus, fused pussy, fused anus, fused crotch, poorly drawn crotch, fused seam, poorly drawn anus, poorly drawn pussy, poorly drawn crotch, poorly drawn crotch seam, bad thigh gap, missing thigh gap, fused thigh gap, liquid thigh gap, poorly drawn thigh gap, poorly drawn anus, bad collarbone, fused collarbone, missing collarbone, liquid collarbone, strong girl, obesity, worst quality, low quality, normal quality, liquid tentacles, bad tentacles, poorly drawn tentacles, split tentacles, fused tentacles, missing clit, bad clit, fused clit, colorful clit, black clit, liquid clit, QR code, bar code, censored, safety panties, safety knickers, beard, furry ,pony, pubic hair, mosaic, excrement, faeces, shit, futa, testis
 
-> size 768x512 Step28 Scale5.5 (�@�T�ɋL�ڂ̂��̂�Step50�AScale5.5)
+> size 768x512 Step28 Scale5.5 (法典に記載のものはStep50、Scale5.5)
 
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/XGzeViVL_X-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/XGzeViVL_X.jpg]]
 
-** ����5
-�X���̕ۑ����Ă��������K���ɓ\���
+** その5
+スレの保存してあったやつを適当に貼るで
 
 Sampler_Comparison_Stable Diffusion_comp001.jpg
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ki31EV_Zli.jpg,500,)
 
 
-** ����6
-�ŋ߃T���v���[���b��Ȃ�Ń��[�J���̊�{�Z�b�g���ׂĂ݂��A������PLMS�̓G���[�o�����珜�O
-photo background���w�肵�ē����V�[�h�Ől������Ȃ���i�T�C�Y�N�\�f�J���Ӂj
-�V�[�h�ɂ���邩�炠���܂ŃT���v�����Ă��Ƃ�
+** その6
+最近サンプラーが話題なんでローカルの基本セット調べてみた、ただしPLMSはエラー出たから除外
+photo backgroundを指定して同じシードで人物ありなしや（サイズクソデカ注意）
+シードにもよるからあくまでサンプルってことで
 
-�l���Ȃ�
+人物なし
 &ref(https://i.imgur.com/fvER37d.jpg,600)
-�l������i�A�j�����j
+人物あり（アニメ調）
 &ref(https://i.imgur.com/HRegVj7.jpg,600)
 
-�l������̃v�����v�g�i�{��NAI�ɕϊ������炱��Amasterpiece, best quality����j
+人物ありのプロンプト（本家NAIに変換したらこれ、masterpiece, best qualityあり）
 =|BOX|
 integrated, anime,{{selfie of schoolgirl, kawaii}}, [[[close-up full body]]], site-seeing spot, photo background, cinematic angle
 ||=

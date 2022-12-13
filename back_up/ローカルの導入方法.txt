@@ -1,0 +1,614 @@
+#contents
+
+*概要
+ローカル環境の導入ガイドです
+-- &size(14){[[画像付きガイドpdfを作りました。>>https://image01.seesaawiki.jp/n/h/nai_ch/Bh8T7jBTQz.C.pdf]]必要なソフトのインストール方法も記載しています。}
+
+*リファレンス
+- https://rentry.org/voldy
+
+*導入
+**Python 3.10をインストールする
+[[https://www.python.org/ftp/python/3.10.9/python-3.10.9-amd64.exe]]
+&color(#ff0000){3.11は入れても動かないから入れんな!!}
+
+「python-3.10.x-amd64.exe」がダウンロードされるので、ダブルクリックで開く。
+このとき、Add to PATH にチェックをつけてインストールすること。
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/H089Tt3hem.png)
+
+**ステップ1：WebUIのデータをダウンロードする
+
+以下の手段から好きなものを選んでWebUIのデータをダウンロードしてきます。
+��WebUIをZIPでダウンロードする：お試しで環境を構築したい人向け
+��Github Desktopをインストールする：アプデを行いながら使っていきたい人向け：&#128304;おすすめ!
+��Gitをインストールする：アプデしたり差分を確認したりバージョンを戻したりとなんでもしたい人向け
+
+***��WebUIをZIPでダウンロードする場合
+GithubリポジトリからZipでダウンロードするかんたんな方法。アプデとかめんどくさいし、バージョン戻しもできないのでお試し環境構築用として推奨。
++ 以下のURLアクセス ~~ AUTOMATIC1111/stable-diffusion-webui: Stable Diffusion web UI - https://github.com/AUTOMATIC1111/stable-diffusion-webui
++ Code <> →Download ZIP　でダウンロードします
++ 好きなところに配置
++ 完了
+
+***��Github Desktopをインストールする場合：&#128304;おすすめ!
+グラフィックインタフェースで操作できるGitです。
+黒い画面をみなくてすみます。アプデが簡単にできる環境が作れるけど、バージョン戻しには別途Gitをインストールする必要があります。
+
++ Github Desktopをインストールする
++ File　→　Clone Repository
++ タブ「URL」に設定後、以下を記載~~
+=|BOX|
+https://github.com/AUTOMATIC1111/stable-diffusion-webui
+||=
++ Local Pathに配置したい場所を記載してCloneを押す
++ 完了
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/A2FTwb_lRZ.jpg,450)
+
+***��Gitをインストールする場合
+なんでもできる。さいつよ。
+[[Gitをダウンロード>https://git-scm.com/downloads]]
+インストールするときは、「Windowsエクスプローラの統合 - Git Bash」のチェックボックスをオンにしてください
+
+次にWebUI リポジトリを目的の場所にクローンします。
+1. 任意の場所を右クリックし、「Git Bash here」を選択します
+2. ディレクトリにGitで入ったことを確認します
+3. 次のコマンドを打ちリポジトリをダウンロードします
+=|BOX|
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+||=
+
+**ステップ2：NovelAIモデルのダウンロード
+''情報提供、テスト、研究の自由のために掲載します。''
+結果が気に入ったら、[[サブスクリプションを検討してください>https://novelai.net/register]]
+
+次のマグネットリンクからモデルをダウンロードします。
+トレントクライアント(qTorrent, Bitcomet等)がない場合はインストールしておきます。
+=|BOX|
+magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
+||=
+
+モデルの総容量は50GB超ですが、必要なデータは5GBほどです。
+/stableckptのみを選択し、その他は選択解除します。
+※オプション：.ptの拡張子をもつHyperNetwork用のmoduleが/modulesにあるので任意でダウンロードします。
+
+**ステップ3：リネーム
+ダウンロードしたモデルを次のようにリネームします
+animevae.pt >> nai.vae.pt
+config.yaml >> nai.yaml
+model.ckpt>> nai.ckpt
+
+2022/11/22追記
+いつごろからかvaeの読み込ませ方が変更になっている。
+拡張子はptでファイル名どうでもいいので、models/vaeの下にファイルを格納し、
+WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
+先ほど格納したファイルを選択、Apply Settingボタンを押す。
+
+
+**ステップ4：配置
+以下のディレクトリにモデルを配置します。
+/stable-diffusion-webui/models/Stable-diffusion
+
+**ステップ5(※オプション)：環境設定
+[[ローカルのwebui-user.bat]]に移動しました。
+
+ここまで完了したら[[「動作確認：Hello Asuka」>#helloasuka]] へ進みます。
+
+----
+
+*※番外編：導入(WSL2)｜Linux環境でAutomatic1111を導入する
+※Windowsの人は関係ないので飛ばします
+[+]
+
+**概要
+Linux環境でAutomatic1111を導入する手順です。
+雑に書いたんで誰かちゃんと書いちくりー
+
+***利点
+Windows版と比べて15〜25%程早い
+
+***欠点
+多少だがLinuxの知識が必要になる(場合もある)
+
+
+**WSL2 のセットアップ
+Powershellを管理者権限で起動して以下を実行
+=|BOX|
+wsl --install
+||=
+再起動を要求されるので再起動する
+
+
+**Ubuntu 22.04 をインストール
+Microsoft Storeを起動し、ubuntu 22 で検索して Ubuntu 22.04.1 LTS をインストールする(2022/12/07現在の最新)
+※ Ubuntu 22.04 にしておくとデフォルトでPython 3.10.6 が入っているのであとで苦労しなくて済む
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QMSxJb_6Dc.png)
+
+**Ubuntu 22.04 をセットアップ
+Ubuntu 22.04.1 LTSを起動すると初期化とユーザー名、パスワードの設定を要求されるので入力する
+
+**Pythonのアップデート
+2022/12/10現在でPython3.10の最新である Python3.10.9にアップデートする
+
+まず以下コマンドを実行
+=|BOX|
+sudo apt update
+sudo apt upgrade -y
+||=
+初回の sudo 実行時にユーザーのパスワードを聞かれるので入力する
+
+Pythonのビルドに必要な依存ファイルをインストールする
+=|BOX|
+sudo apt install -y build-essential libbz2-dev libdb-dev \
+  libreadline-dev libffi-dev libgdbm-dev liblzma-dev \
+  libncursesw5-dev libsqlite3-dev libssl-dev \
+  zlib1g-dev uuid-dev tk-dev
+||=
+
+Pythonのソースコードを取得し展開
+=|BOX|
+wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tar.xz
+tar xJf Python-3.10.9.tar.xz
+||=
+
+Pythonをビルド(そこそこ時間がかかる)
+=|BOX|
+cd Python-3.10.9
+./configure
+make
+sudo make install
+cd ~
+||=
+
+ここまでやると、以下コマンドを打つと「Python 3.10.9」とバージョンが返ってくる
+=|BOX|
+python3 --version
+||=
+
+
+
+**AUTOMATIC WebUIのインストール
+まず以下コマンドを実行
+=|BOX|
+sudo apt update
+sudo apt upgrade -y
+||=
+初回の sudo 実行時にユーザーのパスワードを聞かれるので入力する
+
+
+
+次に以下コマンドを実行する 
+=|BOX|
+sudo apt install wget git python3 python3-venv -y
+sudo apt install libgl1 -y
+bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+||=
+※ WSL2の場合 https://github.com/AUTOMATIC1111/stable-diffusion-webui#automatic-installation-on-linux に書いてあるコマンドを実行するだけでは足らないため2行目のコマンドを足している
+
+この時点ではまだckptファイルを置いていないため最後のコマンド実行後にエラーが起こるはず
+=|BOX|
+No checkpoints found. When searching for checkpoints, looked at:
+ - file /home/xxx/stable-diffusion-webui/model.ckpt
+ - directory /home/xxx/stable-diffusion-webui/models/Stable-diffusion
+Can't run without a checkpoint. Find and place a .ckpt file into any of those locations. The program will exit.
+||=
+
+**ckptなど置く
+Windowsのエクスプローラで \\wsl$ にアクセスするとWSL2のLinuxが一覧表示されるので、
+https://image01.seesaawiki.jp/n/h/nai_ch/G0zqfPvbtW.png 
+
+\\wsl$\Ubuntu-22.04\home\<Ubuntuのユーザー名>\stable-diffusion-webui\models\Stable-diffusion に ckpt を置く
+※同じやり方でVAEやhypernetworksの下にファイルが置けます
+
+**CUDAのインストール
+CUDA 11.x の最新版である11.8をインストールする 
+''&color(#ff0000){※ CUDA 11.x台をインストールすること! 2022/12/10現在、最新である12.xをインストールするとxformersがビルドできない}''
+
+https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local の 「Download Installer for Linux WSL-Ubuntu 2.0 x86_64」- 「Base Installer」 に書いてあるコマンドを実行する
+
+**cuDNN のインストール
+Windows側で https://developer.nvidia.com/rdp/cudnn-archive から cuDNN v8.6.0 (October 3rd, 2022), for CUDA 11.x の Local Installer for Ubuntu22.04 x86_64 (Deb) をダウンロードし、\\wsl$\Ubuntu-22.04\home\<Ubuntuのユーザー名> に置く
+
+その後Ubuntu側で/home/<Ubuntuのユーザー名>に移動し、以下コマンド実行
+=|BOX|
+sudo dpkg -i cudnn-local-repo-ubuntu2204-8.6.0.163_1.0-1_amd64.deb
+sudo cp /var/cudnn-local-repo-ubuntu2204-8.6.0.163/cudnn-local-FAED14DD-keyring.gpg /usr/share/keyrings/
+sudo apt -y update
+sudo apt install libcudnn8
+sudo apt install libcudnn8-dev
+||=
+
+その後/home//<Ubuntuのユーザー名> にある .bashrc に以下を書き加える
+=|BOX|
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+||=
+
+書き加えたら以下コマンド実行
+=|BOX|
+source .bashrc
+||=
+
+**xformersのビルド
+
+以下コマンドを実行 ビルドにかなりの時間がかかるので待ちましょう
+
+=|BOX|
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+cd repositories
+git clone https://github.com/facebookresearch/xformers.git
+cd xformers
+git submodule update --init --recursive
+pip install -r requirements.txt
+pip install -e .
+||=
+
+xformersのビルドが終わったらついでにtritonをインストールしておく(そのままWebUIを起動すると 「Error caught was: No module named 'triton'」と怒られるので)
+=|BOX|
+pip install triton
+||=
+
+最後にvenvを抜けて終わり
+=|BOX|
+deactivate
+||=
+
+
+**xformers有効化とWebUI起動
+/home/<Ubuntuのユーザー名>/stable-diffusion-webui にある webui-user.sh を開き、以下の行のコメントアウトを外してパラメータを追記する
+
+=|BOX|
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--xformers"
+||=
+
+その後 /home/<Ubuntuのユーザー名>/stable-diffusion-webui にある ./webui.sh を実行
+Windows側で  http://127.0.0.1:7860 にアクセスできます。
+
+***起動するのにUbuntuいちいち立ち上げるのがめんどくさいンゴ
+Windows側で以下のバッチファイルを作成しましょう
+=|BOX|
+wsl cd /home/<Ubuntuのユーザー名>/stable-diffusion-webui; bash webui.sh
+pause
+||=
+バッチファイルを実行すればUbuntuでwebui.shを叩いてくれます
+
+***生成した絵に直でアクセスしたいンゴ
+WebUIのSettingタブで以下のように設定しましょう
+(以下の例はWindowsの C:\stable-diffusion-webui-automatic1111\outputs\ の下にフォルダ分けしてファイルを置きたい場合)
+https://image01.seesaawiki.jp/n/h/nai_ch/16PjLJzYTa.png
+
+**参考サイト
+https://premirea.jp/article/wsl2-stable-diffusion-web-ui
+https://qiita.com/SwitchBlade/items/cac2da388906b6486d69
+https://pythonlinks.python.jp/ja/index.html
+https://github.com/AUTOMATIC1111/stable-diffusion-webui
+
+** やってみた(2022-12-10)
+個人的な意見としてはWSL2未経験かつLinux未経験者にはお勧めできない。
+トラブルを自力解決できる程度の能力があることが望ましい。
+[+]
+インストールは成功。生成は出来る。学習は困難。
+Windows 10 22H2
+RTX 2070
+所要時間 2時間ちょい
+メモリ32GB インストール中に16GBくらい使ってた
+SSDは45.7GB埋まった(C:\Users\****\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu_****\LocalState\ext4.vhdx)
+
+ハローアスカ
+- Windows 42.89
+- WSL2 42.43
+- WSL2+opt-channelslast 39.73
+
+コマンドプロンプトを管理者権限で起動して以下を実行
+=|BOX|
+wsl --install
+||=
+再起動を要求されるので再起動する
+
+再起動後、「Installing, this may take a few minutes...」という窓が出て、
+Ubuntu 22.04 が勝手にインストールされる。
+ユーザー名、パスワードの設定を要求されるので入力する。
+
+まずはrootになる。ユーザーのパスワードを聞かれるので入力する。
+=|BOX|
+sudo su -
+||=
+
+一応、一行ずつ実行してエラーが無いか出力を確認する。
+=|BOX|
+apt update
+apt upgrade -y
+apt install -y build-essential libbz2-dev libdb-dev libreadline-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libsqlite3-dev libssl-dev zlib1g-dev uuid-dev tk-dev
+||=
+
+pythonは確かに3.10.6
+=|BOX|
+python3 -V
+||=
+
+妥協しても良かったけどせっかくなので入れておく。
+=|BOX|
+wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tar.xz
+tar xJf Python-3.10.9.tar.xz
+cd Python-3.10.9
+./configure
+make
+make install
+||=
+
+終わったらsuを抜ける。
+=|BOX|
+ exit
+||=
+
+libgl1はインストールする必要が無さそう。
+ apt install libgl1
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+libgl1 is already the newest version (1.4.0-1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+pythonは確かに3.10.9になった
+=|BOX|
+python3 -V
+||=
+
+一度1111のインストールを実行して空のディレクトリを作成する(結構待たされる)
+=|BOX|
+bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+||=
+エラーで終わればいい。起動してしまったらCtrl-Cで落とす。
+
+エクスプローラーで以下の場所を開いて ckpt を置く
+=|BOX|
+\\wsl$\Ubuntu-22.04\home\<Ubuntuのユーザー名>\stable-diffusion-webui\models\Stable-diffusion
+||=
+
+https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local
+の「Download Installer for Linux WSL-Ubuntu 2.0 x86_64」- 「Base Installer」 に書いてあるコマンドを実行する
+コピペしたら改行が潰れてイラッとする。
+結構待たされる。
+次の行でエラーが出る。
+ sudo dpkg -i&#160;cuda-repo-wsl-ubuntu-11-8-local_11.8.0-1_amd64.deb
+dpkg: error: unknown option -
+このエラーはコマンドを手で打ち直せば動く。(たぶんどこかのハイフンの文字コードが変)
+
+suして作業したら以下のエラーが出たので仕方なくユーザーで作業した。
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package cuda
+
+cudnn 8.6.0を入れる。
+この作業はnvidiaにユーザー登録が必要なため、コマンドで完結できない。
+ダウンロードしたファイルは、
+\\wsl$\Ubuntu\root
+に置いた。
+=|BOX|
+ sudo su -
+ dpkg -i cudnn-local-repo-ubuntu2204-8.6.0.163_1.0-1_amd64.deb
+ cp /var/cudnn-local-repo-ubuntu2204-8.6.0.163/cudnn-local-FAED14DD-keyring.gpg /usr/share/keyrings/
+ apt -y update
+ apt install libcudnn8
+ apt install libcudnn8-dev
+||=
+
+suを抜ける
+=|BOX|
+exit
+||=
+
+その後/home/<Ubuntuのユーザー名> にある .bashrc を開く
+=|BOX|
+vi .bashrc
+||=
+たぶんLinuxわからん人は \\wsl$\Ubuntu\home\<Ubuntuのユーザー名>\.bashrc をメモ帳で開くのがいい。
+先頭に以下を書き加える
+=|BOX|
+ export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+||=
+
+書き加えたら以下コマンド実行
+=|BOX|
+source .bashrc
+||=
+
+xformersのコンパイル(結構待たされる)
+=|BOX|
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+cd repositories
+git clone https://github.com/facebookresearch/xformers.git
+cd xformers
+git submodule update --init --recursive
+pip install -r requirements.txt
+pip install -e .
+||=
+
+tritonをインストール
+=|BOX|
+pip install triton
+||=
+
+venvを抜ける
+=|BOX|
+deactivate
+||=
+
+\\wsl$\Ubuntu\home\<Ubuntuのユーザー名>\stable-diffusion-webui\webui-user.sh メモ帳で開く
+以下の行のコメントアウトを外してパラメータを追記する(お好みで)
+=|BOX|
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--xformers --opt-channelslast --no-half-vae"
+||=
+
+バッチファイル start_1111_wsl2.bat を作成して好きなところに置く
+=|BOX|
+wsl cd /home/<Ubuntuのユーザー名>/stable-diffusion-webui; bash webui.sh
+pause
+||=
+
+Windows側で  http://127.0.0.1:7860 にアクセスできることを確認。
+
+生成でエラーが出た
+Could not load library libcudnn_cnn_infer.so.8. Error: libcuda.so: cannot open shared object file: No such file or directory
+Please make sure libcudnn_cnn_infer.so.8 is in your library path!
+=|BOX|
+sudo ln -s /usr/lib/wsl/lib/libcuda.so.1 /usr/local/cuda/lib64/libcuda.so
+||=
+
+WSLを再起動する
+=|BOX|
+wsl.exe --shutdown
+||=
+
+start_1111_wsl2.bat を起動して、今度こそ正常動作を確認した。
+
+diffusers: unknown
+torch: 1.12.1+cu113
+torchvision: 0.13.1+cu113
+transformers: 4.19.2
+xformers:  0.0.15.dev0+affe4da.d20221210
+
+バージョンを上げてみる
+=|BOX|
+~/stable-diffusion-webui/venv/bin/pip3 install --upgrade torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+||=
+
+diffusers: unknown
+torch: 1.13.0+cu116
+torchvision: 0.14.0+cu116
+transformers: 4.19.2
+xformers:  0.0.15.dev0+affe4da.d20221210
+
+生成が動かなくなった。
+RuntimeError: No such operator xformers::efficient_attention_forward_cutlass - did you forget to build xformers with `python setup.py develop`?
+
+これっぽい。現状未解決。
+https://github.com/TheLastBen/fast-stable-diffusion/issues/904
+
+このアップグレードが出来ないとDreamboothが動かないはずなので、
+現状WSL2化によって学習速度の向上を図るのは困難と結論付ける。
+[END]
+
+[END]
+
+&aname(helloasuka){}
+*動作確認：Hello Asuka
+お疲れ様でした！これで出力する準備が整いました。
+次はNovelAI のデフォルト設定での出力と一致しているかのテストを行います。
+
+''「webui-user.bat」をダブルクリックでWebUIを起動させます。''
+図：これね
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/y4M3qrylYT.jpg)
+
+''''
+
+以下の数値をUIに入力して「Generate」をクリックします。
+参考画像と出力画像が一致していたら環境構築が成功しています。
+→出力した画像が一致していない場合：一般的な "Hello Asuka" エラーのトラブルシューティング (Euler) - Imgur - https://imgur.com/a/DCYJCSX
+
+- サンプラー：Euler (Euler Aではない)
+- 28 Steps
+- CFG Scale：12
+- 解像度: 512x512
+- Seed: 2870305590
+- ポジティブプロンプト欄に「masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair」
+- ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name」
+- Ignore last layers of CLIP modelを「2」にする
+- (Euler-Aも一致させたい場合、ETA Noise Seed Deltaを「31337」にする)
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0ki5ejUnR6.png)
+図：PNGにメタデータが付属したHello Asuka。PNG infoにドラッグ&ドロップするとtext2imgに渡せます
+
+** ※注意
+- プロンプトを正確にコピーしたことを再確認してください！
+- lowvram や xformers などの最適化を使用している場合、わずかな違いが見られる場合がありますが、それでも 95% 類似しているはずです。
+
+図：GPU によるおおよそのレンダリング時間 (50 ステップ)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8lYrJdmZvs.png,660)
+
+* トラブルシューティング
+**rtx4090などが遅い
+　※注※　RTX4090はローカルNAIデフォ環境では速度出てません
+　webuiのvenv内に入ってから(stable-diffusion-webui\venv\Scripts\activateで入れる)
+pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url ttps://download.pytorch.org/whl/cu116
+ttps://pomf2.lain.la/f/5u34v576.7z
+↑のファイルをstable-diffusion-webui\venv\Lib\site-packages\torch\lib
+にコピペ
+pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url ttps://download.pytorch.org/whl/cu116
+(続き)
+　起動オプションに追加　--xformers --opt-channelslast
+これで18it/sぐらい出るようになった
+Windows ディスプレイ設定→グラフィックの設定→GPUアクセラレータによるGPUスケジューリングをOFFで再起動する
+これで24it/s出るようになった
+
+**gtx16xxで必要な設定
+　gtx16xxでは半精度浮動小数点数が扱えないためそのままでは黒や緑の絵しかでない。オプション追加が必要。また、メモリがやや少なめ用設定も追加要
+  webui-user.batに
+=|BOX|
+COMMANDLINE_ARGS=--precision full --no-half --no-half-vae --medvram
+||=
+　を加える
+**その他本家のトラブルシューティングの訳
+- フォルダーのパスにスペースがないことを確認する
+- フラグを使用しようとしたときに launch.py&#8203;&#8203; エラー、認識されない引数が発生した場合は、webui-user.bat で完全な相対パスを使用してみてください。
+例：--ckptCOMMANDLINE_ARGS= --ckpt ./models/Stable-diffusion/nai.ckpt
+- 「私はgitで更新するためにPullして、何かが壊れた!」当然のことながら、多くの新機能が導入されているため、不安定になる可能性があります。[[手順に従って以前のビルドに戻します>https://rentry.org/git_retard]]。
+- インストール中に&#160;winerror&#160;が発生する場合、または何かを壊して最初から再インストールしたい場合は、次のディレクトリを削除して、もう一度やり直してください。`venvrepositories`
+- Pythonがエラーとして見つからない場合は、webui-user.batでPATHを手動で設定する必要があります。
+　　1. python.exeのパスをShift+右クリックでコピー
+　　2. webui-user.batを編集→　PYTHON= にコピーしたパスを追加します。※(""は保持)
+- (img2img)RuntimeError:テンソルのサイズが一致しなければならない場合、入力画像の解像度を変更する必要があります
+- 実行できる最新の[CUDAツールキット](https://developer.nvidia.com/cuda-11.3.0-download-archive?target_os=Windows&target_arch=x86_64)とGPUドライバがあることを確認してください
+- トーチがGPUを使用できない場合は、代わりに[Python 3.7](https://www.python.org/downloads/release/python-370/)をダウンロードする必要があります
+- 起動時に 'Git'がコマンドとして認識されない場合は、次の操作を行います:launch.py 編集で始まるすべての行を削除して保存します`git_clone`
+- あなたのバージョンのPythonがPATHにない場合(または別のバージョンがPATHにある場合)、[webui.settings.bat](http://webui.settings.bat/)フォルダに行セットPYTHON=pythonを追加して、Python実行可能ファイルへのフルパスを言います:Pythonではこれを行うことができますが、gitの場合はできません。`/stable-diffusion-webuiset PYTHON=B:\soft\Python310\python.exe`
+- インストーラはPython仮想環境を作成するので、インストール前にインストールされていたモジュールがあれば、インストールされたモジュールはシステムインストールには影響しません。
+- 仮想環境の作成を防ぎ、システムのPythonを使用するには、webuiを編集し.bat setを`VENV_DIR=venvset VENV_DIR=`
+- webui.bat は、Python 3.10.6 と特に互換性のあるモジュールのバージョンをリストするファイル から要件をインストールします。別のバージョンのPython用にインストールすることを選択した場合は、webuiを編集すると、.bat=REQS_FILEを設定する代わりに.txt=要件を設定することが役立つかもしREQS_FILEません(ただし、推奨バージョンのPythonを使用することをお勧めしますrequirements_versions.txt)。`requirements_versions.txt`
+- 生成された画像の代わりに緑/黒の出力を取得する場合は、半精度浮動小数点数をサポートしていないカードがあります(16xxカードの既知の問題):edit webui-user.bat -追加したい他のフラグと一緒に6行目を変更する.vaeファイルを使用している場合は、残念ながら、モデルはVRAMではるかに多くのスペースを占有しますしたがって、それ`COMMANDLINE_ARGS=--precision full --no-half-no-half-vae-medvram`
+- あなたの出力がごちゃごちゃした虹の混乱である場合、あなたのイメージの解像度は低すぎます
+- CFGレベルが高すぎると色の歪みも発生し、CFGは5〜15
+- 古いシステムでは、次のように変更する必要があります。`cudatoolkit=11.3cudatoolkit=9.0`
+- インストールが C: ドライブにあることを確認します。
+- このガイドは、安定した拡散には cuda コアが必要なため、NVIDIA GPU&#160;*専用*に設計されています。AMDユーザーは[このガイド](https://rentry.org/ayymd-stable-diffustion-v1_4-guide)をお試しください
+
+* Tips
+
+- WebUI 内でダウンロードした .ckpt ファイルをすばやく切り替えることができます。
+- ベースSDとは異なり、NovelAIは歪みなく最大**768x768**の画像をネイティブに生成できます
+- それ以外の場合、SDで512x512よりも大幅に大きい画像を生成する場合は、最良の結果を得るため必ずチェックしてください&#160;Highres, fix&#160;。そうしないと、「複製」歪みが現れ始める可能性があります (複数の顔、腕など)。ノイズ除去強度：denoising strengthを下げると最適に機能するようです (私は 0.5 を使用しました)
+- 利用可能な修正があっても、NovelAI以外のモデルは512x画像でトレーニングされているため、最も正確な結果を得るために512x512で生成することをお勧めします
+- ワイフモデルと通常の.ckptには独自の長所と短所があります。waifu .ckptで行われたアニメ以外のプロンプはアニメのスタイル化に偏り、別のモデルとマージしない限り、現実的な顔や人々をより困難にします
+- トレーニング時に引数や**引数を使用しないでください**!結果は非常に劣るでしょう`-medvram-lowvram`
+- nai.yaml は、NovelAI の結果で 1:1 を達成するために必要ではないかもしれません。
+- キーワードの周囲に( )を使用して強度を高め、[ ] を使用して強度を下げます。
+- 他のサンプラーとは異なり、k_euler_aは低ステップから高品質の結果を生成することができます。
+- プロンプトを**スタイルとして保存**を使用すると、プロンプトを簡単に選択可能な出力として保存できます。最初のスタイルを保存すると、Rollの左側に選択するボックスが表示され、選択することができます。プロンプトはアクセスすることで削除できます(これは、本当に良い画像を生成し、さまざまな被写体で繰り返し使用したい組み合わせを見つけた場合に便利です)。`styles.csv`
+- 右側の出力タブからimg2imgにお気に入りの結果をドラッグ**して、**さらに反復することができます
+- **k_euler_a**と**k_dpm_2_a**のサンプラーは、同じシード&プロンプトから大きく異なる、より複雑な結果をもたらしますが、それらの結果はステップ全体で一貫していません。他のサンプラーは、より多くのステップでより予測可能な線形改良を提供します
+- 生成された各結果のシードは、再訪する場合に出力ファイル名にあります
+- img2imgで生成された画像と同じキーワードを使用すると、興味深いバリアントが生成されます
+- プロンプトは*1*次元で少なくとも512ピクセル、または絶対最小の384x384正方形にすることをお勧めします。
+- CLIP インテロゲーターは多くのスペース (8 GB) を占有します。頻繁に使用する予定がない場合は選択しないでください。
+- 興味深い出力のためにimg2imgで低強度(0.3-0.4)+高CFGを試してみてください
+- プロンプトで日本語の Unicode 文字を使用できます。
+
+
+* バージョンを戻す方法
+アプデしておかしなっても大丈夫やで
+
+** git checkoutを使う方法
+参考：(英文)：Git revert guide - [[https://rentry.org/git_retard]]
+
+** クリーンインストール
++ リソースのダウンロードとかは省いて導入ガイドにそってWebUIを再インストールする。~~ ※フォルダは「StableDiffusion_WebUI_v2」とか名前つけて新しく作ってリポジトリをクローンするんやで
++ もとのディレクトリ*に置いてあった.ckptやvae,nai.yamlを同じディレクトリにコピペする ~~*場所：/stable-diffusion-webui/models/Stable-diffusion
++ 完了
+
+
+
+

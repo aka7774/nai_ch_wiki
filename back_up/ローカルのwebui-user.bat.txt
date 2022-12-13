@@ -1,147 +1,147 @@
-* �T�v
+* 概要
 
-���̃t�@�C�������s�������(webui.bat�ł͂Ȃ�)
-�ȉ��͂��̃t�@�C����ҏW����b�B
+このファイルを実行するんやで(webui.batではない)
+以下はこのファイルを編集する話。
 
 #contents
 
 * PYTHON
 
-���ʂ͋�ł����B
-PATH�̒ʂ��ĂȂ�Python.exe���g��������΃t���p�X�Ŏw�肷�邱�Ƃ��ł���B
+普通は空でいい。
+PATHの通ってないPython.exeを使いたければフルパスで指定することができる。
 
 * GIT
 
-��𐄏��B
-PATH�̒ʂ��ĂȂ�GIT���w�肵�Ă������Ȃ��B(�o�O���Ǝv��)
+空を推奨。
+PATHの通ってないGITを指定しても動かない。(バグだと思う)
 
 * VENV
 
-��𐄏��Bwebui������venv�����B
-���̏ꏊ��ύX���������ɓ����B
+空を推奨。webui直下にvenvを作る。
+この場所を変更したい時に入れる。
 
 * COMMANDLINE_ARGS
 
-set COMMANDLINE_ARGS=�̉E�ɖړI�̃p�����[�^����͂��܂�
-�������鎞�͔��p�X�y�[�X�ŋ�؂�܂��B
+set COMMANDLINE_ARGS=の右に目的のパラメータを入力します
+複数ある時は半角スペースで区切ります。
 
  set COMMANDLINE_ARGS=--xformers --opt-channelslast
 
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings
 
-�ȉ��͂悭�g���I�v�V�����̂ݏЉ�B
+以下はよく使うオプションのみ紹介。
 
-** --xformers (������/VRAM���)
+** --xformers (高速化/VRAM消費減)
 
-�������߁B
-Windows�ł�Python 3.10���K�v���ۂ�(3.9���ƃG���[���o��)
-Colab�ł�conda�œ����Ɠ���₷���B
-�o�͉摜�����������ς��ƌ����Ă��邪�G�r�f���X�Ȃ��B
+おすすめ。
+WindowsではPython 3.10が必要っぽい(3.9だとエラーが出る)
+Colabではcondaで入れると入れやすい。
+出力画像が少しだけ変わると言われているがエビデンスなし。
 
-�o�͂̔�r�������̂ŏڍׂ͂�����ց�
-[[xformers�̌���]]
+出力の比較をしたので詳細はこちらへ↓
+[[xformersの検証]]
 
-** --opt-channelslast (������)
+** --opt-channelslast (高速化)
 
-4000�ԑ�Ō��ʂ���B3000�ԑ�ł�������ƌ��ʂ���B2000�ԑ䂾�ƌ��ʂȂ��H
+4000番台で効果あり。3000番台でもちょっと効果あり。2000番台だと効果なし？
 
-��Ɉȉ��̐ݒ�����B
+先に以下の設定をやる。
 
-�R�}���h�v�����v�g���N��
-stable-diffusion-webui\venv\Scripts\activate.bat �����s
+コマンドプロンプトを起動
+stable-diffusion-webui\venv\Scripts\activate.bat を実行
  pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url ttps://download.pytorch.org/whl/cu116
 
 ttps://pomf2.lain.la/f/5u34v576.7z
-���̃t�@�C����stable-diffusion-webui\venv\Lib\site-packages\torch\lib
-�ɃR�s�y
+↑のファイルをstable-diffusion-webui\venv\Lib\site-packages\torch\lib
+にコピペ
 
  pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url ttps://download.pytorch.org/whl/cu116
 
-** --no-half-vae (�摜�^�����΍�)
+** --no-half-vae (画像真っ黒対策)
 
-VAE���g���Ă��鎞�A���܂ɉ摜���^�����ɂȂ�����C������B
-fp16�ł͂Ȃ�fp32���g���B
-VRAM�s�������łȂ��AAnything+VAE�̊��Ƃ��Ő^�����ɂȂ肪���B
+VAEを使っている時、たまに画像が真っ黒になる問題を修正する。
+fp16ではなくfp32を使う。
+VRAM不足だけでなく、Anything+VAEの環境とかで真っ黒になりがち。
 
-** --no-half (16XX�̍�����)
+** --no-half (16XXの高速化)
 
-�ȑO��1650�A1660�A1660Ti�ŉ摜���K���^�����ɂȂ��Ă��܂���肪����A
-���̑΍�Ƃ��Ă��̃I�v�V������p���Ă����B
-���͂��̃I�v�V�����������Ă��^�����ɂȂ�Ȃ��Ȃ��������x���ቺ���邽�߁A
-�����������̃I�v�V������t�����ق����ǂ�����(���ɂ��̂���)
+以前は1650、1660、1660Tiで画像が必ず真っ黒になってしまう問題があり、
+その対策としてこのオプションを用いていた。
+今はこのオプションが無くても真っ黒にならなくなったが速度が低下するため、
+引き続きこのオプションを付けたほうが良さそう(環境によるのかも)
 
-�Ӗ��Ƃ��ẮA���f����fp16�ł͂Ȃ�fp32���g���B
-�����x���������_��(fp16)�̓n�[�h�E�F�A�ɓ��ڂ���Ă���̂����A
-cuda�̐V�����o�[�W�����ł͋@�\���Ȃ��Ȃ��Ă��܂��Ă���(�����̂�?)
- --precision full ���ꏏ�Ɏg�����ɂȂ��Ă��邪�A���͖����Ă������B
+意味としては、モデルでfp16ではなくfp32を使う。
+半精度浮動小数点数(fp16)はハードウェアに搭載されているのだが、
+cudaの新しいバージョンでは機能しなくなってしまっている(直らんのか?)
+ --precision full も一緒に使う事になっているが、実は無くても動く。
 
-fp16���������Ŏg���Ɨ]�v��VRAM���g���̂ŗv���ӁB
+fp16が動く環境で使うと余計にVRAMを使うので要注意。
 
-** --medvram �������� --lowvram (VRAM�̏��Ȃ�GPU�ł̎��s)
+** --medvram もしくは --lowvram (VRAMの少ないGPUでの実行)
 
-VRAM�̏��Ȃ�GPU�ł͐ݒ�̕ύX���K�v�ȏꍇ������܂��B
-�����̃p�����[�^�́A���傫�ȉ摜��o�b�`�T�C�Y���쐬�������ʏ�̃��[�U�[�ɂ��𗧂��܂�
-�������̕ύX�ɂ��AVRAM�g�p�ʂ�啝�ɍ팸���邱�Ƃ��\�ł��B
+VRAMの少ないGPUでは設定の変更が必要な場合があります。
+これらのパラメータは、より大きな画像やバッチサイズを作成したい通常のユーザーにも役立ちます
+いくつかの変更により、VRAM使用量を大幅に削減することが可能です。
 
-4GB��VRAM������A512x512(�܂��͂���ȏ�)�̉摜���쐬����ꍇ�F--medvram
-2GB��VRAM�̏ꍇ�F--lowvram
-�����̂����ꂩ�Łu�������s���v�G���[���������Ă���ꍇ�́A���̈�����ǉ����܂��F--always-batch-cond-uncond --opt-split-attention
+4GBのVRAMがあり、512x512(またはそれ以上)の画像を作成する場合：--medvram
+2GBのVRAMの場合：--lowvram
+これらのいずれかで「メモリ不足」エラーが発生している場合は、次の引数を追加します：--always-batch-cond-uncond --opt-split-attention
 
-VRAM������Ă�����Ŏg���Ƒ��x��������̂ŗv���ӁB
+VRAMが足りている環境で使うと速度が落ちるので要注意。
 
 ** --gradio-img2img-tool color-sketch
 
-�킴�킴���̃\�t�g�ŕҏW����̂��ʓ|�Ȑl�͋N�������ɂ���𑫂��čċN�������img2img�̉摜�ҏW�ɃJ���[�p���b�g����
-&color(#808080){�X�|�C�g�c�[�������邩�甧�̐F������Ă�����ƕ���h��Ԃ��ĒE�����Ƃ��Ȃ炱��ŏ\�� }
-�X�|�C�g�c�[���͊m�F�������ǌ�������Ȃ��B(���ɂ��?)
-** --share --gradio-auth user:password (Colab�ȂǃN���E�h�p)
+わざわざ他のソフトで編集するのが面倒な人は起動引数にこれを足して再起動するとimg2imgの画像編集にカラーパレットがつく
+&color(#808080){スポイトツールもあるから肌の色を取ってちょっと服を塗りつぶして脱がすとかならこれで十分 }
+スポイトツールは確認したけど見当たらない。(環境による?)
+** --share --gradio-auth user:password (Colabなどクラウド用)
 
---share�ŃC���^�[�l�b�g�����ɃA�N�Z�X�o����URL���쐬����B
---gradio-auth�Ŏg�p���邽�߂̃��[�U�[���ƃp�X���[�h��ݒ肷��B
-user��password�͔C�ӂɕύX����B
+--shareでインターネットごしにアクセス出来るURLを作成する。
+--gradio-authで使用するためのユーザー名とパスワードを設定する。
+userとpasswordは任意に変更する。
 
-** --listen --enable-insecure-extension-access (LAN�p)
+** --listen --enable-insecure-extension-access (LAN用)
 
---listen�Ŏ�����PC�ȊO����̃A�N�Z�X���󂯕t����B
---enable-insecure-extension-access�ŁA������PC�ȊO����̃A�N�Z�X����Extensions�̃C���X�g�[����������B
-�p�r�ɉ�����--share�Ǝg��������Ɨǂ������B
-WiFi�̌q�������X�}�z�Ń|�`�|�`�����������Ȃ炱��ŏ\���B
+--listenで自分のPC以外からのアクセスを受け付ける。
+--enable-insecure-extension-accessで、自分のPC以外からのアクセス時にExtensionsのインストールを許可する。
+用途に応じて--shareと使い分けると良さそう。
+WiFiの繋がったスマホでポチポチしたいだけならこれで十分。
 
-** --skip-torch-cuda-test (GPU�̂�����CPU���g��(�񐄏�))
+** --skip-torch-cuda-test (GPUのかわりにCPUを使う(非推奨))
 
-CPU��fp16���T�|�[�g���Ă��Ȃ��ꍇ�G���[���o��̂ŁA
+CPUがfp16をサポートしていない場合エラーが出るので、
  --no-half --no-half-vae
-���ǉ��Őݒ肷��B
+も追加で設定する。
 
-3060���100�{���炢���Ԃ�����悤�ɂȂ邯�Ǔ����B
+3060比で100倍くらい時間かかるようになるけど動く。
 
-** (�폜) --deepdanbooru
+** (削除) --deepdanbooru
 
-img2img��Deepdanbooru���g���B�摜����Danbooru�^�O�𐄒肷��@�\�B
-�W���@�\�ɂȂ����̂ŃR�}���h���C���I�v�V�����͕s�v�ɂȂ�܂����B
+img2imgでDeepdanbooruを使う。画像からDanbooruタグを推定する機能。
+標準機能になったのでコマンドラインオプションは不要になりました。
 
 * PYTORCH_CUDA_ALLOC_CONF
 
-VRAM�s���̎��Ɏg�����������ǍœK�Ȓl�͂悭�킩���
+VRAM不足の時に使えそうだけど最適な値はよくわからん
 https://pytorch.org/docs/stable/notes/cuda.html#memory-management
 
-108�X����176
+108スレの176
 =||
-����
-�Ebat�t�@�C���Ɂ@set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.6,max_split_size_mb:24 ��ǉ�
-�E�u���E�U�̃n�[�h�E�F�A�A�N�Z�T���[�^���I�t
-�EPC�ċN��
-��train�͂��߂č��u���u������Ă�ŁB 
+結局
+・batファイルに　set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.6,max_split_size_mb:24 を追加
+・ブラウザのハードウェアアクセサレータをオフ
+・PC再起動
+でtrainはじめて今ブンブン回ってるで。 
 ||=
 
-* (�폜) ACCELERATE
+* (削除) ACCELERATE
 
-accelerate���g���B
-�܂����͂̂قǂ͂킩��Ȃ����A
-���̂���fp16/fp32�ɋN������G���[����������A
-�}���`CPU�ɑΉ������肷��̂����m��Ȃ��B
+accelerateを使う。
+まだ実力のほどはわからないが、
+そのうちfp16/fp32に起因するエラーが減ったり、
+マルチCPUに対応したりするのかも知れない。
 
-�����Ə������B����Ɋ��ҁB
+そっと消えた。今後に期待。
 
 
 

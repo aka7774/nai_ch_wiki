@@ -1,26 +1,26 @@
-NovelAI�����T�C�g�Ńu���E�U��R�J���Ď����N���b�N�d�|����̂́A���݂̂�Ȃ��d���č���̂Ŏ��d��
-novelai-api�Ȃ�܂������񂿂Ⴄ��
-���[�J���łȂ�d���Ȃ�͎̂��������Ȃ�Œn���ɗD����
+NovelAI公式サイトでブラウザ沢山開いて自動クリック仕掛けるのは、他のみんなが重くて困るので自重な
+novelai-apiならまあええんちゃうの
+ローカル版なら重くなるのは自分だけなんで地球に優しい
 
 * Generate forever
 
-���[�J����1111�ŃK�`�������Ԃ������@��Generate�{�^�����E�N���b�N���āuGenerate forever�v���邱��
-�L�����Z������Ƃ����E�N���b�N�Łucancel Generate forever�v�ł���
+ローカル版1111でガチャする一番いい方法はGenerateボタンを右クリックして「Generate forever」すること
+キャンセルするときも右クリックで「cancel Generate forever」できる
 
-ui-config.json���������� "txt2img/Batch count/maximum" �𑝂₷������������ǁA
-���ʂ̃O���b�h�\�����߂�����d���Ȃ邩�炱��͂�����������ł�
+ui-config.jsonをいじって "txt2img/Batch count/maximum" を増やす手もあったけど、
+結果のグリッド表示がめっちゃ重くなるからこれはやらん方がええです
 
-* GPU���ׂɂ���
+* GPU負荷について
 
-�Q�Ă�ԂɉƂ��R���Ă����ȐӔC�����ǁA
-Generate forever�́A�ꖇ�������Ă��玟�̐����܂łɈ�u�x�ނ̂ŁA
-�}�C�j���O�̂悤�ȏ펞�����ׂ̏�������GPU���x���オ��ɂ����C������
+寝てる間に家が燃えても自己責任だけど、
+Generate foreverは、一枚生成してから次の生成までに一瞬休むので、
+マイニングのような常時高負荷の処理よりはGPU温度が上がりにくい気がする
 
-���S�ɉ񂷂Ȃ�MSI Afterburner�Ƃ���CPU�N���b�N�������Ďg���̂���������
+安全に回すならMSI AfterburnerとかでCPUクロックを下げて使うのがおすすめ
 
-* ��������Extension
+* おすすめExtension
 
 - Dynamic Prompts
 
-Wildcards�̐i����
-�v�����v�g��{sex|fellatio|handjob}�Ƃ������΂ǂꂩ�������_���ɂ���Ă����
+Wildcardsの進化版
+プロンプトに{sex|fellatio|handjob}とか書けばどれかをランダムにやってくれる

@@ -1,77 +1,77 @@
-ŒŸØƒlƒ^ƒƒ‚BTIEHNEDB‚ÌŠwK‚Ìoptimizer‚ğ•Ï‚¦‚é‚ÆAo—Í‚³‚ê‚éŠGAŠ®¬‚Ü‚Å‚ÌEpoch”‚É‚Ç‚±‚Ü‚Å‰e‹¿‚·‚é‚©H
-ƒfƒtƒHƒ‹ƒg‚Å‚ÍAdamW‚Æ‚¢‚¤SD–{‘Ì‚âGPT‚ÌŠwK‚Å‚àg‚í‚ê‚Ä‚¢‚é“S”Â‚ÌOptimizer‚ªg—p‚³‚ê‚Ä‚¢‚éB
-‚±‚ê‚ÍŠO•”‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚ğg‚¤‚±‚Æ‚Å”äŠr“I—eˆÕ‚É·‚µ‘Ö‚¦‰Â”\B
+æ¤œè¨¼ãƒã‚¿ãƒ¡ãƒ¢ã€‚TIãƒ»HNãƒ»DBã®å­¦ç¿’æ™‚ã®optimizerã‚’å¤‰ãˆã‚‹ã¨ã€å‡ºåŠ›ã•ã‚Œã‚‹çµµã€å®Œæˆã¾ã§ã®Epochæ•°ã«ã©ã“ã¾ã§å½±éŸ¿ã™ã‚‹ã‹ï¼Ÿ
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§ã¯AdamWã¨ã„ã†SDæœ¬ä½“ã‚„GPTã®å­¦ç¿’ã§ã‚‚ä½¿ã‚ã‚Œã¦ã„ã‚‹é‰„æ¿ã®OptimizerãŒä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ã€‚
+ã“ã‚Œã¯å¤–éƒ¨ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ä½¿ã†ã“ã¨ã§æ¯”è¼ƒçš„å®¹æ˜“ã«å·®ã—æ›¿ãˆå¯èƒ½ã€‚
 
- 2¡A“V‰¤¯‚ÌwikiŒ©‚Ä‚«‚½‚ç‹O“¹ŒXÎŠp(i) ‚ª0.774‹‚¾‚Á‚½ 2022/12/07(…) 16:36:34.11SLIP:±³±³³° Sa08-eZ9H(1/3)ID:5N1MtoTZa(1/1)  
- ‚Æ‚±‚ë‚ÅŠwK‚·‚él‚Á‚ÄƒIƒvƒeƒBƒ}ƒCƒU[‰½g‚Á‚Ä‚ñ‚ÌH
+ 2ä»Šã€å¤©ç‹æ˜Ÿã®wikiè¦‹ã¦ããŸã‚‰è»Œé“å‚¾æ–œè§’(i) ãŒ0.774Â°ã ã£ãŸ 2022/12/07(æ°´) 16:36:34.11SLIP:ï½±ï½³ï½±ï½³ï½³ï½° Sa08-eZ9H(1/3)ID:5N1MtoTZa(1/1)  
+ ã¨ã“ã‚ã§å­¦ç¿’ã™ã‚‹äººã£ã¦ã‚ªãƒ—ãƒ†ã‚£ãƒã‚¤ã‚¶ãƒ¼ä½•ä½¿ã£ã¦ã‚“ã®ï¼Ÿ
  
  https://github.com/jettify/pytorch-optimizer
  
- ˆê”Ê“I‚É‚Í‚±‚ê‚ÅPyTorch‚Ì•W€ƒIƒvƒeƒBƒ}ƒCƒU[’u‚«Š·‚¦‚é‚¾‚¯‚Å”ò–ô“I‚É¸“xã‚ª‚é‚¯‚Ç
+ ä¸€èˆ¬çš„ã«ã¯ã“ã‚Œã§PyTorchã®æ¨™æº–ã‚ªãƒ—ãƒ†ã‚£ãƒã‚¤ã‚¶ãƒ¼ç½®ãæ›ãˆã‚‹ã ã‘ã§é£›èºçš„ã«ç²¾åº¦ä¸ŠãŒã‚‹ã‘ã©
  
- ŒÃ‚ß‚ÌƒIƒvƒeƒBƒ}ƒCƒU[ŒÀ’è‚¾‚¯‚ÇƒIƒvƒeƒBƒ}ƒCƒU[‚Ìˆá‚¢‚Å‚±‚±‚Ü‚Å•Ï‚í‚é 
+ å¤ã‚ã®ã‚ªãƒ—ãƒ†ã‚£ãƒã‚¤ã‚¶ãƒ¼é™å®šã ã‘ã©ã‚ªãƒ—ãƒ†ã‚£ãƒã‚¤ã‚¶ãƒ¼ã®é•ã„ã§ã“ã“ã¾ã§å¤‰ã‚ã‚‹ 
 
-* Optimizer•ÏX•û–@
-1111”ÅŒÀ’èB
+* Optimizerå¤‰æ›´æ–¹æ³•
+1111ç‰ˆé™å®šã€‚
 
 
-** –‘O€”õ
-‚¢‚ë‚ñ‚Èoptimizer‚ªÀ‘•‚³‚ê‚½3rd partyƒ‰ƒCƒuƒ‰ƒŠ‚ğƒCƒ“ƒXƒg[ƒ‹‚·‚éB
-1111‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚½PythonŠÂ‹«’†‚Å‰º‹LƒRƒ}ƒ“ƒh‚ğÀs
+** äº‹å‰æº–å‚™
+ã„ã‚ã‚“ãªoptimizerãŒå®Ÿè£…ã•ã‚ŒãŸ3rd partyãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã€‚
+1111ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸPythonç’°å¢ƒä¸­ã§ä¸‹è¨˜ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 =|BASH|
 $ pip install torch_optimizer
 ||=
 
-ƒ‰ƒCƒuƒ‰ƒŠ‚ÉÀ‘•‚³‚ê‚Ä‚¢‚éoptimizer‚Í[[Œö®github>>https://github.com/jettify/pytorch-optimizer]]‚ğŒ©‚æ‚¤B
+ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã«å®Ÿè£…ã•ã‚Œã¦ã„ã‚‹optimizerã¯[[å…¬å¼github>>https://github.com/jettify/pytorch-optimizer]]ã‚’è¦‹ã‚ˆã†ã€‚
 
-** TI‚Ì•ÏX•û–@
-textual_inversion/textual_inversion.py‚Ìoptimizer’è‹`•”•ª‚ğ”CˆÓ‚Ìoptimizer‚É·‚µ‘Ö‚¦‚Ä‚¢‚­B
-‹ï‘Ì“I‚ÈêŠ‚Í‚±‚ë‚±‚ëƒAƒbƒvƒf[ƒg‚Å•Ï‚í‚é‚©‚çAƒGƒfƒBƒ^‚©‚ç‘S•¶ŒŸõ‚µ‚½•û‚ª‚¦‚¦‚ÅB5267414319ef89c18061127fab971ffc1b5b24ad‚Ì“_‚Å‚ÍƒRƒR‚â
+** TIã®å¤‰æ›´æ–¹æ³•
+textual_inversion/textual_inversion.pyã®optimizerå®šç¾©éƒ¨åˆ†ã‚’ä»»æ„ã®optimizerã«å·®ã—æ›¿ãˆã¦ã„ãã€‚
+å…·ä½“çš„ãªå ´æ‰€ã¯ã“ã‚ã“ã‚ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã§å¤‰ã‚ã‚‹ã‹ã‚‰ã€ã‚¨ãƒ‡ã‚£ã‚¿ã‹ã‚‰å…¨æ–‡æ¤œç´¢ã—ãŸæ–¹ãŒãˆãˆã§ã€‚5267414319ef89c18061127fab971ffc1b5b24adã®æ™‚ç‚¹ã§ã¯ã‚³ã‚³ã‚„
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/5267414319ef89c18061127fab971ffc1b5b24ad/modules/textual_inversion/textual_inversion.py#L287
 
-‘Š·‚ª•K—v‚È‚Ì‚Í1s‚¾‚¯B
-‚±‚±‚Å‚ÍƒfƒtƒHƒ‹ƒg‚ÌAdamW‚ğ[[Ranger>>https://github.com/jettify/pytorch-optimizer#ranger]]‚Æ‚¢‚¤optimizer‚É•ÏX‚µ‚Ä‚İ‚éB
+æ›¸æ›ãŒå¿…è¦ãªã®ã¯1è¡Œã ã‘ã€‚
+ã“ã“ã§ã¯ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®AdamWã‚’[[Ranger>>https://github.com/jettify/pytorch-optimizer#ranger]]ã¨ã„ã†optimizerã«å¤‰æ›´ã—ã¦ã¿ã‚‹ã€‚
 
 =|PYTHON|
     # textual_inversion.py#L287
-    # •ÏX‘O
+    # å¤‰æ›´å‰
     optimizer = torch.optim.AdamW([embedding.vec], lr=scheduler.learn_rate, weight_decay=0.0)
 
-    # •ÏXŒã
+    # å¤‰æ›´å¾Œ
     import torch_optimizer as optim
     optimizer = optim.Ranger([embedding.vec], lr=scheduler.learn_rate, weight_decay=0.0)
-    print("Use custom optimizer")  # ‰Ò“­ƒ`ƒFƒbƒN—p‚ÌƒfƒoƒbƒOƒƒbƒZ[ƒW
+    print("Use custom optimizer")  # ç¨¼åƒãƒã‚§ãƒƒã‚¯ç”¨ã®ãƒ‡ãƒãƒƒã‚°ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 ||=
 
-Šî–{“I‚É‘¼‚Ìoptimizer‚ğ•Ï‚¦‚éê‡‚àè‡‚Í“¯—lBRager‚Ì•”•ª‚ğ•Ê‚Ì‚à‚Ì‚É•Ï‚¦‚é‚¾‚¯B
+åŸºæœ¬çš„ã«ä»–ã®optimizerã‚’å¤‰ãˆã‚‹å ´åˆã‚‚æ‰‹é †ã¯åŒæ§˜ã€‚Ragerã®éƒ¨åˆ†ã‚’åˆ¥ã®ã‚‚ã®ã«å¤‰ãˆã‚‹ã ã‘ã€‚
 
-‘Š·‚¦‚½‚ç1111‚ğÄ‹N“®‚µ‚¢‚Â‚à‚Ç‚¨‚èŠwK‚ğÀ{‚·‚é‚¾‚¯BŠwKŠJnŒãA‘}“ü‚µ‚½ƒfƒoƒbƒOƒƒbƒZ[ƒW‚ªo‚ê‚ÎOKB
+æ›¸æ›ãˆãŸã‚‰1111ã‚’å†èµ·å‹•ã—ã„ã¤ã‚‚ã©ãŠã‚Šå­¦ç¿’ã‚’å®Ÿæ–½ã™ã‚‹ã ã‘ã€‚å­¦ç¿’é–‹å§‹å¾Œã€æŒ¿å…¥ã—ãŸãƒ‡ãƒãƒƒã‚°ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒå‡ºã‚Œã°OKã€‚
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/veUiLLrOBP-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/veUiLLrOBP.png]]
 
 ** HN
-hypernetworks/hypernetwork.py‚Ìoptimizer’è‹`•”•ª‚ğ”CˆÓ‚Ìoptimizer‚É·‚µ‘Ö‚¦‚Ä‚¢‚­B
-‚±‚¿‚ç‚àêŠ‚Í‚±‚ë‚±‚ë•Ï‚í‚é‚Ì‚ÅèŒ³‚ÅŒŸõ„§B5267414319ef89c18061127fab971ffc1b5b24ad“_‚Å‚ÍƒRƒR•t‹ßB
+hypernetworks/hypernetwork.pyã®optimizerå®šç¾©éƒ¨åˆ†ã‚’ä»»æ„ã®optimizerã«å·®ã—æ›¿ãˆã¦ã„ãã€‚
+ã“ã¡ã‚‰ã‚‚å ´æ‰€ã¯ã“ã‚ã“ã‚å¤‰ã‚ã‚‹ã®ã§æ‰‹å…ƒã§æ¤œç´¢æ¨å¥¨ã€‚5267414319ef89c18061127fab971ffc1b5b24adæ™‚ç‚¹ã§ã¯ã‚³ã‚³ä»˜è¿‘ã€‚
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/5267414319ef89c18061127fab971ffc1b5b24ad/modules/hypernetworks/hypernetwork.py#L447
 
-“¯‚¶‚­AAdamW¨Ranger‚É‘Š·‚¦‚Ä‚İ‚éB
+åŒã˜ãã€AdamWâ†’Rangerã«æ›¸æ›ãˆã¦ã¿ã‚‹ã€‚
 
 =|PYTHON|
     # textual_inversion.py#L447
-    # •ÏX‘O
+    # å¤‰æ›´å‰
     if hypernetwork.optimizer_name in optimizer_dict:
         optimizer = optimizer_dict[hypernetwork.optimizer_name](params=weights, lr=scheduler.learn_rate)
 
-    # •ÏXŒã
+    # å¤‰æ›´å¾Œ
     if hypernetwork.optimizer_name in optimizer_dict:
         import torch_optimizer as optim
         optimizer = optim.Ranger(params=weights, lr=scheduler.learn_rate)
-        print("Use custom optimizer")  # ‰Ò“­ƒ`ƒFƒbƒN—p‚ÌƒfƒoƒbƒOƒƒbƒZ[ƒW
-        # ‚±‚Ì‰º‚Ìoptimizer_name •Ï”‚Ístatedict•Û‘¶‚Ì–¼Ì‚È‚Ì‚Å•ÏX‚µ‚È‚­‚Æ‚àOK
+        print("Use custom optimizer")  # ç¨¼åƒãƒã‚§ãƒƒã‚¯ç”¨ã®ãƒ‡ãƒãƒƒã‚°ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+        # ã“ã®ä¸‹ã®optimizer_name å¤‰æ•°ã¯statedictä¿å­˜æ™‚ã®åç§°ãªã®ã§å¤‰æ›´ã—ãªãã¨ã‚‚OK
 ||=
 
-‚±‚¿‚ç‚à‘Š·‚¦ŒãAÄ‹N“®‚µ‚ÄŠwK‚ğÀ{‚·‚é‚¾‚¯B‘}“ü‚µ‚½ƒfƒoƒbƒOƒƒbƒZ[ƒW‚ªo‚ê‚ÎOKB
+ã“ã¡ã‚‰ã‚‚æ›¸æ›ãˆå¾Œã€å†èµ·å‹•ã—ã¦å­¦ç¿’ã‚’å®Ÿæ–½ã™ã‚‹ã ã‘ã€‚æŒ¿å…¥ã—ãŸãƒ‡ãƒãƒƒã‚°ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒå‡ºã‚Œã°OKã€‚
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/U4q4zrdbKR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/U4q4zrdbKR.png]]
 
 ** DB
-DB‚ÉÚ‚µ‚¢ƒjƒL’Ç‹L—Š‚Ş
+DBã«è©³ã—ã„ãƒ‹ã‚­è¿½è¨˜é ¼ã‚€
 

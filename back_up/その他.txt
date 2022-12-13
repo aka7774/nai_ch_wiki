@@ -1,0 +1,187 @@
+#contents
+
+* テーマ
+数単語以上でのいい感じのやつ
+
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|&#40;&#40;&#40;head-mounted display ))),&#40;metal skin),&#40;shiny skin),&#40;sliver skin)|&#40;&#40;&#40;&#40;eyes)))),&#40;&#40;&#40;&#40;eye)))),|サイクロップス先輩化|ロボットっぽいのが出る場合ネガティブに適当の強さのrobotを入れるといい|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/j95t8MV9B0.png)|
+||def&#40;inf)degitnum_extendency-beksinskish-style-def&#40;inf)degitnum_extendency:10|一発で美麗に構図が決まるUC|画像は上から��tokyo-city、��food、��kafuu chino,gun shoot,�と�味しいヤミーの構文、�ゥ瀬ぅ淵潺奪�ペインティングNAIちゃん。全て1回目の出力結果(web版、add quality tags使用、steps:28、scales:11）。detailを上げたいときはextendencyの後の数字を増やす。|https://i.imgur.com/ySszfPZ.png https://i.imgur.com/0vBLMLU.png https://i.imgur.com/SaSAjpY.png https://i.imgur.com/YbFuuCD.png https://i.imgur.com/eYFwR7l.png|
+||{mix-fus-of-{mix-fus-of-inclution-and-A-or-B-or-C-or…}-and-{mix-fusion-of-D-and-E-and-F-and-…},|AもしくはBもしくはCの特徴を含むD及びE及びFを除外|例として比較的崩れにくい手と体の構文を記載{mix-fus-of-{mix-fus-of-inclution-and-unexquisite-or-surrealism-or-indistinct-or-unclawed-or-unarticulated-or-incorrect_ length-or-not justdegitor-or-moving-or-far-or-unfocused-or-badanatomy-or-low quality}-and-{mix-fusion-of-hands-and-fingers-and-body parts},|https://i.imgur.com/MxOylFG.png|
+|{{mix-fus-of-A-and-B-and-C-and…}}応用して、mix-fus-of-{{mix-fus-of-A-and-B-and-C-and…}}-and-{{mix-fus-of-D-and-E-and-F-and…}}-and-{{mix-fus-of-G-and-H…}}とすることもできる。R18にしたいときはAとDにnsfwを入れて、B,C…に服装などの描写を、E,F…にシチュエーションの描写を、G,H…に背景の描写を入れる。||ミックスフュージョン|A,B,C,…を兼ね備えたキャラ、シチュエーション、背景の絵を描く。add quality tag使用推奨。画像のプロンプトは{{mix-fus-of-quality-and-illust-and-loli-and-slender-and-flat-and-kafuu chino}},|https://i.imgur.com/IZvKvQx.png|
+||{{{{{{extream-unexquisite-surrealismic-distinct-clawed-articulated-correct_ length-justdegit-moving-far-unfocused-anatomic-quality-appearant-hands-and-fingers-and-body_pairs-only}}}}},|比較的崩れにくい手と体|しばしば崩れるがかなりマシ ※add-quality-tagsを使用するときは、��body_partsをpar-bod-shaに変更する、&#10113;extreamを-100-extreamに変更すると安定する|https://i.imgur.com/MUKAO5H.png　https://i.imgur.com/ai2xaJw.png|
+|{deep-silky-healthy-lackwarm-foundational-soft-skin},|指定なし|質感の良い肌|絵の質感も上がり、弱いとピンクっぽくなるが、強めると絵の奥行き感が増し、ストーリー性も上がる|https://i.imgur.com/oKI5nMU.png|
+|美味しいヤミー&#10071;&#10024;&#129311;&#128513;&#128077;感謝&#10071;&#128588;&#10024;感謝&#10071;&#128588;&#10024;またいっぱい食べたいな&#10071;&#127830;&#128523;&#127860;&#10024;デリシャッ&#8252;&#128591;&#10024;ｼｬ&#8252;&#128591;&#10024; ｼｬ&#8252;&#128591;&#10024; ｼｬ&#8252;&#128591;&#10024; ｼｬ&#8252;&#128591;&#10024; ｼｬｯｯ&#8252;ハッピー&#127775;スマイル&#10071;&#128073;&#128513;&#128072;||美味しいヤミー|おすすめ併用ワード~~Aesthetic|https://image02.seesaawiki.jp/n/h/nai_ch/mF3vxqq3o1.png|
+|transcendental mixture of goodness ever ideal appearance of {so-fusion-of-A-and-B-ever} only at all,|指定なし|AとBをかっこよく合体させる|Aがメインになりやすい��A:loli、B:carrot��A:loli、B：loli��A:car,B：train�す淑犬�3つ並べて、それぞれloli、kafuu_chino、flat、slender、underwear、see-throughを指定し、UCに下記超高画質化を使用�キい�goodnessを全てbadnessに変更��構文をもう一つ追加し、seasonとautumnを指定、see-throughをcoatに変更|https://i.imgur.com/SBv97IS.png https://i.imgur.com/VM93Jou.png https://i.imgur.com/wPIAq7c.png https://i.imgur.com/43locnH.png https://i.imgur.com/r8Q0JiF.png https://i.imgur.com/i3eSDCJ.png|
+|nsfwal〜,|指定なし|nsfwな〜（形容詞化）|形容詞なので名詞が修飾できる。画像はnsfwal face loli（下のtranscendental構文と併用）|https://i.imgur.com/OE3PzdV.png|
+|transcendental mixture of goodness ever 〜 at all,|指定なし|〜を最上級に|〜には単語もしくは文が入る。写真はgirlを入れた場合。|https://i.imgur.com/3UnicFy.png|
+|fusion of girl and carrot||女の子と人参の融合|他のものでもOK~~2枚目は~~fusion of girl and glowing gamepad|https://image01.seesaawiki.jp/n/h/nai_ch/JudUd_A9SM.png https://image01.seesaawiki.jp/n/h/nai_ch/7swTCKYZMj.png|
+|画像の上から��a ten years old girl, kafuu chino, winter, christmas, dinner,feast,��tokyo,winter,snow fall,��ukiyoe,��fusion of cat and girl ,with cat,��{{{{{{{realistic}}}}}}},{{{{{{{{{loli}}}}}}}}},full body,nsfw,see-through,underwear,|less than {surrealism:20.0},low quality body parts,missing body parts,disproportional body parts,indistinguishable body parts,branched  body parts,bent,body parts,rheumatism finers,ugly fingers,melted  fingers,penetration fingers ,too fat,too skiny,low quality female,low quality male,poor colors,{less gradient all color :1000},{less gradient all contrast:1000},low quality clothes,poor　background,without skin color,without shiny skin,unreddish skin,unbluish skin,ungreenish skin,unattractive,unmellow skin,unamorous skin,{less gradient all skin:1000},wholesome,expressionless,no eye expression,unmellow eye,unamorous eye,profound brightness ,profound darkness,3D,CG,{less details:1000.0},{less complexity:1000},unaverage{{realistic:1.0},{unrealistic:1.0}},less than {good anatomy of fingers only:1.0},|超高画質になるUC||https://i.imgur.com/KA9AeBE.png https://i.imgur.com/fCCAuth.png https://i.imgur.com/KuiHDus.png https://i.imgur.com/JVimmkt.png https://i.imgur.com/BH55iRn.png |
+|nishikino maki,Throwing Ramen, Throwing, Throwing, Throwing, Flying, evil smile|nsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry|ミームと化したラーメン真姫ちゃん|制服のprompt:~~nishikino maki,Throwing Ramen, Throwing, Throwing, Throwing, smile,school uniform,|https://image01.seesaawiki.jp/n/h/nai_ch/qP9EyjAuJk.jpg https://image01.seesaawiki.jp/n/h/nai_ch/MTW80i2Y7L.png|
+|wind, {{{{{{{{{{wind lift}}}}}}}}}}, {{{{navel}}}}||胸チラ||https://i.imgur.com/uM1zLdV.png|
+|explosion,{{{{{{cum}}}}},{{{{{steam}}}},penis,{{{{rocket}}}},robot||&align(center){&#128640;ロケット部&#128640;}||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CErlV61qlG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/CErlV61qlG.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Lh3FjzECx7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Lh3FjzECx7.png]]|
+|masterpiece, best quality, masterpiece,highly detailed,1girl,solo,fullbody,lying,chibi,~~huge taco,rolled with taco,inside a taco,wrapped in taco,||&align(center){&#127790;タコス化&#127790;~~基礎呪文}|chibi指定を外してもok~~他の食材や素材にしてもok~~他の要素(髪型や表情,場所等)付け加えてもok~~自由な発想で&#127790;しよう|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HB4CEv_NFn-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/HB4CEv_NFn.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OKHii3YJVC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/OKHii3YJVC.png]]|
+|任意のキャラ, solo, {felt skin doll, felt paper toddlers doll},||フェルト人形化|フェルト化をするキャラによっては強調及び弱体をしないと反映されにくい場合がある|https://image01.seesaawiki.jp/n/h/nai_ch/fOHb30OMBy.png|
+|crotch tattoo, stomach_tatoo, womb tattoo, pubic_tattoo||淫紋||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OFt9knOlbJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/OFt9knOlbJ.png]]|
+|heart tattoo on lower abdomen||淫紋師の呪文||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/AokPQbE7UH-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/AokPQbE7UH.png]]|
+|}
+
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+||most-mix-fus-of-thislesspaint-gettingbecome-as-nihilisticvoidtailpixelsizeresolutepointillismpremiumselectedgreadsuperiorschizophreniabeksinskish-tex-fullwith-nullanatomical-nulluniverse-def(inf)degitnum_extendency-nullexunordinalvacuncy:100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,|異様に高精細で奥行きのあるUC|画像は上から��tokyo-city、��food、��kafuu chino,gun shoot,�と�味しいヤミーの構文、�ゥ瀬ぅ淵潺奪�ペインティングNAIちゃん。��vacuncyの後の数字を1×10^100,000に変更した場合。全て1回目の出力結果。detailを上げたいときはvacuncyの後の数字を増やす。web版では、225文字の上限以上のpromptはカットされる旨の警告が表示されるが、上限を超えて数字の桁を増やすと、より高精細になる。カンマで区切られていない、ひとつながりのpromptは、上限を超えても有効なのかもしれない（要検証）。|https://i.imgur.com/moSh8WP.png https://i.imgur.com/t5xUwvv.png https://i.imgur.com/nJGA2fF.png https://i.imgur.com/mybRHLw.png https://i.imgur.com/ZnkMQEu.png https://i.imgur.com/2FWpj9t.png|
+|}
+
+*コマンド
+
+{| class="sort edit nanj_prompt_table"
+|~コマンド|意味|備考|サンプル|
+|||||
+|||||
+|{}|ワード内強調(複数可)|||
+|[]|ワード内弱体(複数可)|||
+|}
+
+*品質向上ワード
+
+{| class="sort edit nanj_prompt_table"
+|~コマンド|意味|備考|
+|illustration|||
+|stylish|||
+|detail|||
+|great|||
+|amazinig|||
+|best|||
+|highest|||
+|masterpiece|||
+|100-layer|||
+|}
+
+*漫画表現
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|意味|備考|サンプル|
+|flying sweatdrops|飛び散る汗||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WE4sDw2Iuc.png)|
+|trembling|震え|ほぼ出ない|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/J17JddVyHr.png)|
+|spoken musical note|音符マーク||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aSBEXYh4Cx.png)|
+|spoken exclamation mark|ビックリマーク~~エクスクラメーションマーク||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EFSolEFVUE.png)|
+|spoken question mark|ハテナマーク~~クエスチョンマーク||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sbSeC98lvc.png)|
+|spoken heart|ハートマークの吹き出し||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mEf_Nkmdsw.png)|
+|spoken|なにかを話している吹き出し~~黙っている吹き出し|speech bubbleでも同様の効果|https://image02.seesaawiki.jp/n/h/nai_ch/IvhYL_dAgM...,%20white%20background,%20%20s-1385536274.png|
+|}
+
+* 単語集
+
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|Girls sandwich|サンドイッチ|3 girlsとか入れるよりギュッとする|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pvtpA5Lci7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pvtpA5Lci7.png]]|
+|adidas|アディダス|服がスポーツウェアになりやすくなる|https://image01.seesaawiki.jp/n/h/nai_ch/aKtra_9pR8.png|
+|trading card|トレーディングカード風|トレーディングカード風の枠が付く　スレ有識者によるとハイスクールDDのソシャゲのものらしい　（画像はマジカルチンポTCG）|https://image02.seesaawiki.jp/n/h/nai_ch/cMpWXF5nvt.png|
+|Warframe|ウォーフレーム|体がウォーフレームと化す、gold trimを使用するとプライムフレームになる　何故か正座するポーズが多い|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tBml6ges9d-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/tBml6ges9d.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mY8CfPlCwI-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/mY8CfPlCwI.png]]|
+|Monster Energy|モンスターエナジードリンク|モンスターエナジーのマークかモンスターエナジードリンクそのものが出現する|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KQ2hX1EboY.png);&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2K1QeJhwF1.png)|
+|laceration|裂傷|顔を中心に血や古傷が付く|https://image01.seesaawiki.jp/n/h/nai_ch/0VS3c6MlwW.png|
+|soap censor|泡で隠すやつ|||
+|stained panties|||画像なし|
+|mutated 〜|除外ワードに入れることで形の崩壊を防ぐお守り(mutated hands,mutated fingersなど)|||
+|nsfw|R18|||
+|1girl|女一人|||
+|penis|ペニス|||
+|stained panties|濡れたパンツ|||
+|blush|赤面(照れ顔)|||
+|smartphone|スマホ(手持ち)|||
+|wind_lift|パンチラ神風|||
+|bed,on bed, bedroom|ベッド|||
+|attach the penis to her ~~ penis girl|ふたなり化|||
+|steam|蒸れ蒸れ|||
+|cum|射精|||
+|cyborg|機械化|||
+|stabbed|ソフトリョナ|||
+|horror (theme), silhouette|影絵|||
+|big areolae|デカ乳輪|||
+|femdom|女王様気質|||
+|erection, handjob|手コキ?|||
+|virginal blood|破瓜|||
+|white background|背景無し|||
+|undressing|一部脱衣|||
+|stomach_tatoo|腹淫紋|||
+|nipples visible through clothes|主張乳首|||
+|furry suit|獣人?|||
+|expressionless|無表情|||
+|pussy line  |すじ|||
+|cameltoe  |すじ(衣服の上)|||
+|スーパーガールで作ろうとすると露骨に赤面嫌顔になるらしい| |||
+|motorcycle|バイク召喚|||
+|寺田てら|デフォルメ化|||
+|Deepnude|脱衣|||
+|talking head anime|有能サイト|||
+|pregnant|ボテ腹|||
+|evil smile, devilsmile|挑発的な笑み|||
+|thight,thick_thight,spread_legs,|開脚|||
+|puffy nipple|乳首ぷっくり|||
+|Realism,Realistic,Photorealistic|リアル寄り|||
+|submissive|従順|||
+|shyness|照れ|||
+|fellatio+kiss 啄みフェラ→頬張るようなフェラ| |||
+|bowtie|蝶ネクタイ|||
+|dress shirt|Yシャツ|||
+|pleated skirt|プリーツスカート|||
+|Crown Twist Braid?|髪型：三つ編みカチューシャ|||
+|lingerie, underwear|下着|||
+|Dogeza|土下座|||
+|dark-persona|闇落ち|||
+| |人外肌→(好きな色)_skin|||
+|ふたなり生成呪文+skirt→勝手にスカートを持つらしい| |||
+|double_v|ダブルピース|||
+|fellatio_gesture|フェラ素振り|||
+|amputee|切断?|||
+|defiant look|反抗的な目|||
+|cum_in_panties|パンツに射精|||
+|ebony|褐色|||
+|tanlines|日焼け|||
+|dark-skin|黒肌|||
+|mature female|大人の女性|||
+|頭身変更にはアス比を変えるのも良い| |||
+|bandaids on nipples|乳首絆創膏|||
+|爆乳爆根ふたなりで稀にセルフパイズリ| |||
+|Shift+Enterでプロンプト改行| |||
+|magnificent,makoto shinkai|心揺さぶる自然風景(アニメ調)|||
+|phimosis|包茎|||
+|feared, scared eyes|恐れ眼|||
+|pantyshot|下アングル|||
+|pubic hair|陰毛 剛毛|||
+|under hair|柔らかい、少ない|||
+|censored|検閲(モザイクなど)|||
+|neon|サイバーバンク|||
+|露出に使うexhibitionism自体に恥じらいの意味あり| |||
+|huge testicles|巨大金玉|||
+|tongue out|舌出し (高確率で崩れる)|||
+|Variations|似た構図で3枚生成|||
+|Enhance|自然に仕上げる|||
+|inverted nipple|陥没乳首の可能性アリ|||
+|small anus|【ケツを突き出す呪文】|||
+|from behind|同じシードかつ角度を変えるコマンドを追加すると一貫性を保ちつつ絵を変更可能|||
+|armpit_hair|腋毛|||
+|leg grab|I字バランスで足を掴む呪文|||
+|sparkle|目や背景がキラキラする|||
+|saliva|よだれ|||
+|toes|つま先|||
+|frightened|恐怖する|（主観側が）監禁、突き落とし、遭遇、接近される視点が現れる傾向がある。※強調しすぎると青い蝶の様な虫が周囲に現れる場合があるので注意||
+* NovelAI擬人化ちゃん
+
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|&#40;masterpiece:1.2), best quality, masterpiece, &#40;novelAI:1.05), dutch angle, dynamic angle, &#40;dynamic pose:0.6), &#40;1girl:1.3), &#40;solo:1.1), &#40;cowboy shot:1.2), from side,  twisted torso, dark violet colored schema,  big screen, huge computer, open arms forward, &#40;action painting:1.4),&#40;drowing:1.2), &#40;paint Brush:1.1), &#40;mechanical hand:0.95), &#91;&#91;cyborg]] , beret, mechanical hair ornament, &#40;glowing eyes:0.95), violet eyes, medium breasts, Separate sleeves, silver hair, &#40;twintails:1.05), hair between eyes, &#40;evil smile:1.1), &#40;violet cute little monster  are floating around:1.05), violet latex bodysuit, &#40;black body_armour:0.75), &#40;wide sleeves:1.05), indoor, &#40;mana machine laboratory :1.0), Luminous pattern of electronic circuits, holographic interface, art studio in magical school|nsfw, red, Chibi, Severed head, &#40;detached head), &#40;multiple view:1.3),|ダイナミックペインティングローカルNAIちゃん|Anything-V3.0.ckpt。Steps: 28, Sampler: DPM++ 2M Karras, CFG scale: 8.5, Seed: 50044402, Size: 1664x640, Model hash: 6569e224, Denoising strength: 0.7, Clip skip: 2, ENSD: 31337, First pass size: 0x0|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UV54dsytAd.jpg,500)|
+|masterpiece, best quality, masterpiece, &#40;novelAI:1.05), 1girl, holding tablet device \&#40;action\), &#40;robot joints:1.05), cyborg , beret, mechanical hair ornament, &#40;glowing eyes:0.952), violet eyes, double-breasted, detached_sleeves, silver hair, &#40;twintails:1.05), hair_between_eyes, evil smile, &#40;violet mini monster:1.05), violet latex bodysuit, &#40;black body_armour:1.05), &#40;wide sleeves:1.05), indoor,|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name,|ローカルNAIちゃん||https://image01.seesaawiki.jp/n/h/nai_ch/ERWP1RcWsm.05),%201girl,%20holding%20tablet%20device%20_(action_),%20(robot%20joints_1.05),%20cyborg%20,%20b.png|
+|silver color schema, masterpiece, best quality, dynamic angle, dynamic pose, &#40;novelAI:1.05), &#40;1girl:1.3), &#40;solo:1.1), holding pen, &#40;painting action), &#40;canvas object), &#40;mechanical hand:1.05), &#91;&#91;cyborg]], metallic mixture, drawing, paintbrush, beret, &#40;glowing_eyes:0.95), &#40;detached sleeves), silver long_hair, hair_between_eyes, doyagao, happy smile, :d, &#40;cute little monster are floating around:1.5), art studio in magical school|nsfw, red, purple, Chibi, Severed head, &#40;detached head), &#40;multiple view:1.3), Reference sheet,|ダイナミックペインティングNAIちゃん(いい感じのサーヴァント付き)|追記：NAIで出力したNAIちゃんを追加しました。追加プロンプト：(white border:1.35), (outside border:1.2), dream, art, imagination, yume kawaii, pastel colors, feminine, looking away, (magical girl,:1.1) ~~下段：Anything-V3.0.ckpt。Steps: 28, Sampler: DDIM, CFG scale: 11.5。※detached sleeves衣装のときはネガティブに生首：Severed head, (detached head)を入れる必要あり　→代わりにSeparate sleevesを推奨。同じのでました。あと「Robot」を使うとロボットがでるので要らないときはMechanicalを使うとヨシ|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Rs2oGXA9Vd.jpg,400)(&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NeUlXTUcId.jpg,400)|
+|masterpiece, {novelAI}, 1girl, holding_pen, painting_(action), canvas_(object), {robot_joints}, cyborg ,drawing, paintbrush, beret, [glowing_eyes], double-breasted, detached_sleeves, silver long_hair, hair_between_eyes, yellow minion bigbird||NAIちゃん||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wbkPS0mo64-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wbkPS0mo64.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/atXAhUnEZV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/atXAhUnEZV.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/12c8rcmHl0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/12c8rcmHl0.png]]|
+|masterpiece, lewdness,{novelAI}, 1girl, full body, Chibi, {robot_joints}, cyborg , beret, [glowing_eyes], double-breasted, detached_sleeves, silver long_hair, hair_between_eyes,||チビNAIちゃん||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YaPp4eWNYR.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YaPp4eWNYR.png]]|
+|}
+
+
+
+
+
+
+
+
+
+
+

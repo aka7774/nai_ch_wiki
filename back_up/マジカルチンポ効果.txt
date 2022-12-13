@@ -1,14 +1,14 @@
-���y�[�W�������@�摜�グ�����ꕔ�폜
-�}�W�J���`���|���ʂƂ́A�uMagical cock(�}�W�J���`���|)�v�Ƃ����v�����v�g�𗘗p���邱�ƂŋN����ȉ��̌��ہB
-%%%&size(32){&color(#ffaa00){���}�C�i�[�L�����͌������̂Œ��ӁBNovelAI�ŏo�₷���L�����قǐ������������B}}%%%
+※ページ未完成　画像上げ直し一部削除
+マジカルチンポ効果とは、「Magical cock(マジカルチンポ)」というプロンプトを利用することで起きる以下の現象。
+%%%&size(32){&color(#ffaa00){※マイナーキャラは厳しいので注意。NovelAIで出やすいキャラほど成功率が高い。}}%%%
 
-*�ݒ�
-�v�����v�g�FMagical cock,[[�G�t�F�N�g�n�P��>#effect]],girl,�L����i�L�������i�L�������̂݁A���ĂP���[�h���炢�j,
-Image Resolution:768�~512(896x448�ł��A���D�݂�)
-�l�K�e�B�u�v�����v�g�Fpenis,
-Steps�F28 Scale:5
-�قƂ��AI�ɖ��߂��Ȃ��̂ŃN�I���e�B�̃u�������������ǈ���������΂������̂悤�ȉ摜���o��B
-*�摜�ꗗ
+*設定
+プロンプト：Magical cock,[[エフェクト系単語>#effect]],girl,有名作品キャラ名（キャラ名のみ、つけて１ワードくらい）,
+Image Resolution:768×512(896x448でも可、お好みで)
+ネガティブプロンプト：penis,
+Steps：28 Scale:5
+ほとんどAIに命令しないのでクオリティのブレがすごいけど引き続ければいつか下のような画像が出る。
+*画像一覧
 [+]
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/dHC_za7A_y.png)  &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ob8upMpPxk.png)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/YsuVa1qaII.png)  &ref(https://image01.seesaawiki.jp/n/h/nai_ch/6VLTBL8aYU.png)
@@ -23,7 +23,7 @@ Steps�F28 Scale:5
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/Kn48xqEkB2.png)  &ref(https://image01.seesaawiki.jp/n/h/nai_ch/HIb5CWe5ud.png)
 [END]
 
-&aname(effect){��L�摜�Ŏg�p���ꂽ�G�t�F�N�g�ꗗ}
+&aname(effect){上記画像で使用されたエフェクト一覧}
 [+]
 mana light,
 mana prism,
@@ -36,43 +36,43 @@ mana machine,
 
 
 
-�l�^���FID:yx6Zk0FV0
-�Ȃ�JnovelAI��44
+ネタ元：ID:yx6Zk0FV0
+なんJnovelAI★44
 https://fate.5ch.net/test/read.cgi/liveuranus/1665818410/
 
-*�Z�p���
-������ANovelAI�ɂ�Magical cock,�̎������r���������ʁA�������ꂽ�̂����̃C���X�g���B
+*技術解説
+ある日、NovelAIにてMagical cock,の呪文を詠唱した結果、召喚されたのがこのイラストだ。
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/1RXAT2d1v_.png)
-girl������Ă��Ȃ��̂ɉ������̎q����������Ă��邵�A�w�i���������x�B�A���O���̈�a�����Ȃ��B
-����������Ǝ����������܂ňꐶ�����l���Ă���������AI�̋r���������Ă������Ȃ̂ł�? 
-�L���������u�������ĉ\�Ȍ���AI�ɔC�������������̂ł�?
+girlも入れていないのに可愛い女の子が召喚されているし、背景も超高精度。アングルの違和感もない。
+もしかすると私たちが今まで一生懸命考えてた呪文ってAIの脚引っ張ってただけなのでは? 
+キャラだけ置き換えて可能な限りAIに任せた方がいいのでは?
 
-��L�̔��z���琶�܂ꂽ�̂��}�W�J���`���|���ʂł���B
-�܂�A''�R���Z�v�g�Ƃ��Ắu�\�Ȍ���AI�ɃC���X�g�쐬��C����v''�Ƃ������̂��B
-�������ɒ[�ɒZ���̂͂��ꂪ���R�ł���A�A�����W�Ƃ��ď]���ʂ�Ɏ��������Ă��Ēǉ����Ă����ƌ��ʂ���������\��������̂ŔO���ɒu���ė~�����B
+上記の発想から生まれたのがマジカルチンポ効果である。
+つまり、''コンセプトとしては「可能な限りAIにイラスト作成を任せる」''というものだ。
+呪文が極端に短いのはそれが理由であり、アレンジとして従来通りに呪文をごてごて追加していくと効果が半減する可能性があるので念頭に置いて欲しい。
 
-*�`���|�̕K�v���ɂ���
-������x�}�W�J���`���|���ʂ̎����𓾂�ꂽ�l�Ԃ͂����v����������Ȃ��B
+*チンポの必要性について
+ある程度マジカルチンポ効果の実感を得られた人間はこう思うかもしれない。
 
-����`���|����Ȃ��ˁA�ƁB
+これチンポいらなくね、と。
 
-����ȕ��͂܂����̉摜�����ė~�����B
-Magical,prism,girl,�ŏ��������C���X�g���B
+そんな方はまずこの画像を見て欲しい。
+Magical,prism,girl,で召喚したイラストだ。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/gWyNgLYBJt.png)
 
-����Magical cock,prism,girl,�̃C���X�g�B
+次にMagical cock,prism,girl,のイラスト。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/8669nnyvkM.png)
 
-�O�҂ƌ�҂��r����ƑO�҂��ӂ���Ƃ����G�t�F�N�g�Œ���ɕ����C���Ȃ̂ɑ΂��A
-��҂͂����Ԃ̂��鑕���̗ʂ������A�����Ⴒ���Ⴕ�Ă���B
-����͂��܂��܂ł͂Ȃ��A��L�̂Q�̎��������x���r�����Ă݂�΂����������X����
-���邱�Ƃ𗝉��ł��邾�낤�B
+前者と後者を比較すると前者がふわっとしたエフェクトで中空に浮き気味なのに対し、
+後者はより実態のある装飾の量が多く、ごちゃごちゃしている。
+これはたまたまではなく、上記の２つの呪文を何度か詠唱してみればそういった傾向が
+あることを理解できるだろう。
 
 Magical cock,
 
-�l�K�e�B�u�v�����v�g�Ń`���|��ł������Ă���̂ŁA�C���X�g��
-���f����郏�[�h�́u���@�̌{�v�B
-���̂��̃��[�h�ł��̌��ʂɂȂ�̂��͕s�������A�����Ƃ����k���ȃC���X�g��
-�����Ă���̂͂�����Ȃ̂ł���B
+ネガティブプロンプトでチンポを打ち消しているので、イラストに
+反映されるワードは「魔法の鶏」。
+何故このワードでこの結果になるのかは不明だが、事実として緻密なイラストに
+向いているのはこちらなのである。
 
-�܂�A���_�Ƃ��Č����ƃ`���|�͕K�v�ł���B
+つまり、結論として言うとチンポは必要である。

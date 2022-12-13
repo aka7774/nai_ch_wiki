@@ -1,109 +1,109 @@
-�����́uInstall from URL�^�u�v�œ�����̃y�[�W
+ここは「Install from URLタブ」で入れるやつのページ
 
-1111�̌������X�g�ȊO�̊g���@�\��Ł[
-�uAvailable�^�u��Load from:�{�^���v�ŏo�Ă�����[[���[�J����Extensions]]�ɏ�����
+1111の公式リスト以外の拡張機能やでー
+「Availableタブ→Load from:ボタン」で出てくるやつは[[ローカルのExtensions]]に書こう
 
 #contents
 
-* �������@
+* 導入方法
 
-+ 1111���Â�������V��������
-+ Extensions�^�u��Install from URL�^�u
-+ URL����͂���Install
-+ �uLocal directory name�v�͋󔒂̂܂܂ɂ���̂�������!!
++ 1111が古かったら新しくする
++ Extensionsタブ→Install from URLタブ
++ URLを入力してInstall
++ 「Local directory name」は空白のままにするのがお勧め!!
 
-- ���܂�Installed�^�u��Check for updates��Apply�������ƍK���ɂȂ�邩��
+- たまにInstalledタブのCheck for updates→Applyを押すと幸せになれるかも
 
-** �A���C���X�g�[��
+** アンインストール
 
-�t�H���_���Ə����ق������S���ۂ�
+フォルダごと消すほうが安全っぽい
 
-- �g���ĂȂ��Ă�install.py��������s�����̂ŋN�����d���Ȃ�
+- 使ってなくてもinstall.pyが毎回実行されるので起動が重くなる
 
-* �J���e���v���[�g
+* 開発テンプレート
 
 - https://github.com/aka7774/sd_extension_template
-- 1111���L�̎������@�𗝉�����̂ɂ�������
+- 1111特有の実装方法を理解するのにいいかも
 
-* �ꗗ
+* 一覧
 
-** �J�X�^�����f���̃L�[���[�h���������͂���WEBUI�g���@�\
+** カスタムモデルのキーワードを自動入力するWEBUI拡張機能
 mix1009/model-keyword: Automatic1111 WEBUI extension to autofill keyword for custom stable diffusion models. - https://github.com/mix1009/model-keyword
 
-** UnivAICharGen�bUmi AI: A WebUI Wildcard Mod
+** UnivAICharGen｜Umi AI: A WebUI Wildcard Mod
 https://github.com/Klokinator/UnivAICharGen
-�L�����N�^�[�N���G�C�^�[�A�܂��͖����K�`��
-�C���X�g�[�����āA�v�����v�g�Ɉȉ��̂悤�ȃR�}���h��łƁA���������Ƃɂ����Ƀ����_���ȃv�����v�g���ǉ������B
+キャラクタークリエイター、または無限ガチャ
+インストールして、プロンプトに以下のようなコマンドを打つと、生成時ごとにそこにランダムなプロンプトが追加される。
 =|BOX|
-__CORE__  �������SFW�p�i���Ԃ�j
-__NSFW__  �������NSFW�p
+__CORE__  ←これはSFW用（たぶん）
+__NSFW__  ←これはNSFW用
 ||=
 
-PC����u����^�C�~���O�Ŏd�|����ƃo���G�[�V�����L�x�ȉ摜����������Ă��Ċy�����B
+PCを放置するタイミングで仕掛けるとバリエーション豊富な画像が生成されていて楽しい。
 
-�� �Q�l
-- Patreon�ł�Umi AI: The Ultimate Character Creator | Umi, the Cryoverse AI - https://www.patreon.com/posts/umi-ai-ultimate-73560593
-- �K�`���K�`�����o�Ŕ���L�����N�^�[�摜�𐶐����܂����g���@�\�uUnivAICharGen�v�̎g�����܂Ƃ� - GIGAZINE - https://gigazine.net/news/20221115-umi-ai-stable-diffusion/
+▼ 参考
+- PatreonでのUmi AI: The Ultimate Character Creator | Umi, the Cryoverse AI - https://www.patreon.com/posts/umi-ai-ultimate-73560593
+- ガチャガチャ感覚で美麗キャラクター画像を生成しまくれる拡張機能「UnivAICharGen」の使い方まとめ - GIGAZINE - https://gigazine.net/news/20221115-umi-ai-stable-diffusion/
 
 ** Filer
 
-�t�@�C���[
+ファイラー
 
 - https://github.com/aka7774/sd_filer
-- �e�X�g������Ȃ��̂Ńt�@�C�������Ă������Ȃ��l�͎����ė~����
-- �o�b�N�A�b�v����w�肵�āAModels, Hypernetworks, Extensions, Images�����Ƃ�ł���
-- �f�B���N�g����zip�ɂ�����A�b�v���[�h����zip���f�B���N�g���ɓW�J������ł���
+- テストが足りないのでファイル消えても泣かない人は試して欲しい
+- バックアップ先を指定して、Models, Hypernetworks, Extensions, Imagesをやりとりできる
+- ディレクトリをzipにしたりアップロードしたzipをディレクトリに展開したりできる
 
 ** Katanuki
 
-�^����
+型抜き
 
 - https://github.com/aka7774/sd_katanuki
-- �摜�̔w�i�𓧉߂����蔒�w�i�ɂ����肷��
--- anime-segmentation �� 1111 �Ŏg����悤�ɂ������
-- %%������ƕs���肩��?%%
--- %%input��output��ʂ̃f�B���N�g���ɂ���΃}�V����%%
-- �X����3�l���炢���������Č����Ă��̂ł����Ƒ��v
-- �摜�̃t�@�C�����ɓ��{��g���ƃ_���炵��
+- 画像の背景を透過したり白背景にしたりする
+-- anime-segmentation を 1111 で使えるようにしたやつ
+- %%ちょっと不安定かも?%%
+-- %%inputとoutputを別のディレクトリにすればマシかも%%
+- スレで3人くらい動いたって言ってたのできっと大丈夫
+- 画像のファイル名に日本語使うとダメらしい
 
 ** Generate from json
 
-�߁X�啝���C�\��
+近々大幅改修予定
 
 - https://github.com/aka7774/generate_from_json
-- �uPrompt from file or textbox�v���v�����v�g�ȊO���w��ł���悤�ɂ��������̂��
-- json�t�@�C����p�ӂ��Ȃ��Ƃ����Ȃ�
+- 「Prompt from file or textbox」をプロンプト以外も指定できるようにした感じのやつ
+- jsonファイルを用意しないといけない
 
 ** sd_invokeai_models_yaml_maker
 
-Filer�ɂ����Ƃ����@�\�������Ă�̂ł悯��΂��������g���Ă�������
+Filerにもっといい機能が入ってるのでよければそっちを使ってください
 
 - https://github.com/aka7774/sd_invokeai_models_yaml_maker
-- InvokeAI�̃C���X�g�[�����ʓ|�������������
-- 1111�ɓ����Ă�ckpt�A������vae.pt��yaml��InvokeAI��models.yaml�`���ŏo�͂���
+- InvokeAIのインストールが面倒だから作ったやつ
+- 1111に入ってるckpt、同名のvae.ptとyamlをInvokeAIのmodels.yaml形式で出力する
 
 ** Checkpoint Manager
 
 - https://github.com/rvhfxb/checkpoint_manager
-- ckpt�ɃR�����g������
-- �}�[�W���f����X/Y Plot��r�ɂ��֗�
-- �v���_�E�����X�g�͂܂�������Ȃ��炵��
+- ckptにコメントつけたり
+- マージモデルのX/Y Plot比較にも便利
+- プルダウンリストはまだいじれないらしい
 
 ** Dataset Resizer
 
 - https://github.com/hunyaramoke/Dataset-Resizer
-- �f�[�^�Z�b�g���ꊇ�ŏc�����ς����Ƀ��T�C�Y����g���ł��B
-- �T�C�Y�A�w�i�𔒂������Ŏw�肷�鎖���ł��܂��B
+- データセットを一括で縦横比を変えずにリサイズする拡張です。
+- サイズ、背景を白か透明で指定する事ができます。
 
 ** Face-Body-Splitter
 
 - https://github.com/hunyaramoke/Face-Body-Splitter.py
-- ��Ƒ̂��ꊇ�ŕ����Ă����webui�̊g���ł��B
-- padding_rate�͊�{�ς��Ȃ��đ��v�ł����A�������ɍL�����Ă�Ƃ��A���ɏ�ɒ����X�q��p������ꍇ�͓K�X�������Ă��������B
-- CUDA Toolkit�̃C���X�g�[�����K�v����
+- 顔と体を一括で分けてくれるwebuiの拡張です。
+- padding_rateは基本変えなくて大丈夫ですが、髪が横に広がってるとか、頭に上に長い帽子や角がある場合は適宜調整してください。
+- CUDA Toolkitのインストールが必要かも
 ** Generate-TransparentIMG
 
 - https://github.com/hunyaramoke/Generate-TransparentIMG
-- ���������摜�̍쐬�x��
+- 透明正則画像の作成支援
 
 

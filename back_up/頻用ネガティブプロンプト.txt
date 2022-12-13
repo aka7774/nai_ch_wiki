@@ -1,39 +1,39 @@
-�l�K�e�B�u�v�����v�g�ŕp�p���郏�[�h�ꗗ�ł��B
+ネガティブプロンプトで頻用するワード一覧です。
 
 {| class="sort edit nanj_prompt_table"
-|~w(300px):�v�����v�g|�Ӗ�|���l|�T���v��|
-|nipple and  nipples and areola and areolae and teat and tits on stomach|�D�w�̂����ɐ��������|�o����}������x||
-|monochrome|���m�N��|�����ɂȂ�̂�h���B�ʓx���グ����ʂ�����||
-|grayscale|�O���[�X�P�[��|�����ɂȂ�̂�h���B�ʓx���グ����ʂ�����||
-|thighlet|�������Ɋ��������i|||
-|panel layout|�R�}����|�����̖h�~�B4-panel cartoon�i�l�R�}����j�Ȃǂ�����B||
-|tittle|�^�C�g��|text�Ɠ��l�ɕ�������||
-|out of focus|�s���ڂ�|���Ȃ�������g�債�����̏C��||
-|fat|�f�u|�̊i�����ɂ���||
+|~w(300px):プロンプト|意味|備考|サンプル|
+|nipple and  nipples and areola and areolae and teat and tits on stomach|妊婦のお腹に生える乳首|出現を抑える程度||
+|monochrome|モノクロ|白黒になるのを防ぐ。彩度を上げる効果もある||
+|grayscale|グレースケール|白黒になるのを防ぐ。彩度を上げる効果もある||
+|thighlet|太ももに巻く装飾品|||
+|panel layout|コマ割り|分割の防止。4-panel cartoon（四コマ漫画）などもある。||
+|tittle|タイトル|textと同様に文字消し||
+|out of focus|ピンぼけ|居なかったり拡大しすぎの修正||
+|fat|デブ|体格調整につかう||
 |||||
-|tilak,bindi,forehead mark|�q���h�D�[���̏����̔��Ԃ̈�|���ł���������낤��forehead(�z)�^�O���g���ƁAtilak��bindi�����闦���オ��̂ŁA�}�������l�̓l�K�e�B�u�v�����v�g�ɂ����||
-|3d|�O�����A���̓I|���ʓI�E�C���X�g�I�ɕ`�悳���||
-|less than &#40;surrealism:20.0)|��������`��|�\�}���j�]����Ȃ�B���l��20�`50���x�����B100�ȏ�͂܂�Ȃ��\�}���o�₷���B���̃v�����v�g�ƕ��p����ꍇ�́A��ԑO�ɒu���ƌ��ʓI�B|https://i.imgur.com/bv4q9wZ.png|
-|puffy nipples|�Ղ��������|�������Ⴂ����ɂ������ꍇ��||
-|manboobs|�Y���ς�|�j�̋������h�~�p||
-|bara, yaoi|������|�z���摜�h�~�p||
-|���� digit|�w|�����ɂ�extra(����)��fewer(���Ȃ�)������B�w�̖{����5�{�ȊO�Ő��������m�������炷||
-|missing ����|��������|�Z�Z��arm��leg�Ȃǂ̕��ʂ����邱�ƂŁA���蕔�ʂ��`�ʂ���Ȃ����Ƃ�h��||
-|liquid ����|�t�̉�����|�Z�Z��arm��leg�Ȃǂ̕��ʂ�����||
-|fused ����|�Z������|�Z�Z��arm��leg�Ȃǂ̕��ʂ�����||
-|censor,bar censor,mosaic censorship,|(��ɐ���ւ�)�C���A���{�A���U�C�N|����ւ̏C���܂Ŏ�����������Ă��܂��ꍇ�Ƀl�K�e�B�u�ɓ����Ɛ�������������B||
-| bad anatomy |�Ђǂ���U|�l�̍\�����Ђǂ����Ƀl�K�e�B�u�Ŏg���Banatomy��arm��leg�ɒu�������Ă��L�p||
-| mutated �Z�Z |��`�́Z�Z|�Z�Z��arm��leg�Ȃǂ̕��ʂ�����||
-| extra penises |����|���񂿂�2�{�ȏ゠��j�̂���||
-| multiple_penises|�i�摜���Ɂj�����̂��񂿂�|����ʏꏊ�ɂ��񂿂񂪏o�Ă���m������⌸��||
-| disembodied_penis|�g�̂̂Ȃ����񂿂�A���������񂿂�|�g�̂��Ȃ����񂿂�P�̂ŕ��V���Ă����||
-|huge_penis, gigantic_penis|�����A������|���������ăo�����X���������p||
-|extra nipples|1�l�ɕ����̓���|||
-|extra breasts|1�l�ɕ����̓��[|||
-| facing_away, from behind, back|���p|�l�K�e�B�u�ɓ����Ƃ������������悤�ɂȂ�||
-| futanari, full-package_futanari,penis_from_girl, newhalf|�ӂ��Ȃ�A���̎q���炨���񂿂�|�ӂ��Ȃ艻�̖h�~�p||
-| multiple_boys, multiple_male|�j����|�j��1�l�ɍi�肽����||
-|solo_focus|1�l�ɒ���|�����l�𖞕ՂȂ��ڂ��������ɓ����||
-|looking_at_viewer|�������G�����Ă���l�Ɍ����Ă���|�l�K�e�B�u�ɓ����Ƃق��̕������������G���ł�m�������Ȃ荂�܂� ������X�i�b�v�V���b�g�I�ɎB�肽���ꍇ�p||
-|blush|�Ԗ�|�Ԗʂ��������Ȃ��ꍇ||
+|tilak,bindi,forehead mark|ヒンドゥー教の女性の眉間の印|おでこちゃんを作ろうとforehead(額)タグを使うと、tilakやbindiが入る率が上がるので、抑えたい人はネガティブプロンプトにいれる||
+|3d|三次元、立体的|平面的・イラスト的に描画される||
+|less than &#40;surrealism:20.0)|超現実主義に|構図が破綻し難くなる。数値は20〜50程度推奨。100以上はつまらない構図が出やすい。他のプロンプトと併用する場合は、一番前に置くと効果的。|https://i.imgur.com/bv4q9wZ.png|
+|puffy nipples|ぷっくり乳首|ちっちゃい乳首にしたい場合に||
+|manboobs|雄っぱい|男の巨乳化防止用||
+|bara, yaoi|同性愛|ホモ画像防止用||
+|○○ digit|指|○○にはextra(多い)とfewer(少ない)を入れる。指の本数が5本以外で生成される確率を減らす||
+|missing ○○|欠落した|〇〇にarmやlegなどの部位を入れることで、特定部位が描写されないことを防ぐ||
+|liquid ○○|液体化した|〇〇にarmやlegなどの部位を入れる||
+|fused ○○|融合した|〇〇にarmやlegなどの部位を入れる||
+|censor,bar censor,mosaic censorship,|(主に性器への)修正、検閲、モザイク|性器への修正まで自動生成されてしまう場合にネガティブに入れると生成率が下がる。||
+| bad anatomy |ひどい解剖|人体構造がひどい時にネガティブで使う。anatomyはarmやlegに置き換えても有用||
+| mutated 〇〇 |奇形の〇〇|〇〇にarmやlegなどの部位を入れる||
+| extra penises |複根|ちんちんが2本以上ある男のこと||
+| multiple_penises|（画像中に）複数のちんちん|あらぬ場所にちんちんが出てくる確率がやや減る||
+| disembodied_penis|身体のないちんちん、自律式ちんちん|身体がないちんちん単体で浮遊している状況||
+|huge_penis, gigantic_penis|巨根、超巨根|巨根すぎてバランスが悪い時用||
+|extra nipples|1人に複数の乳首|||
+|extra breasts|1人に複数の乳房|||
+| facing_away, from behind, back|後ろ姿|ネガティブに入れるとこっちを向くようになる||
+| futanari, full-package_futanari,penis_from_girl, newhalf|ふたなり、女の子からおちんちん|ふたなり化の防止用||
+| multiple_boys, multiple_male|男複数|男を1人に絞りたい時||
+|solo_focus|1人に注目|複数人を満遍なく移したい時に入れる||
+|looking_at_viewer|視線が絵を見ている人に向いている|ネガティブに入れるとほかの方向を向いた絵がでる確率がかなり高まる 日常をスナップショット的に撮りたい場合用||
+|blush|赤面|赤面させたくない場合||
 |}

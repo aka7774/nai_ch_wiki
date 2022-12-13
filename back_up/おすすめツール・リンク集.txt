@@ -1,0 +1,344 @@
+#contents
+
+* 情報
+** リンク集
+*** Stable Diffusion / NovelAI 関連情報共有サイト
+ここにいけばだいたいなんでも分かる。「今日の事件」など
+毎日更新されるので定期的に見ることを推奨
++https://rentry.org/sdupdates
++https://rentry.org/sdupdates2
++https://rentry.org/sdupdates3
+
+ダウンロードとその他のリンクはこちら
+SD RESOURCE GOLDMINE (Non-News) - https://rentry.org/sdgoldmine
+
+----
+
+*** NovelAI-Prompt Generator
+呪文だけをひたすら集積したExcel共有ファイルの日本語データベース。検索可能。
+https://docs.google.com/spreadsheets/d/1L-B4ixr5yvF60pBSzup0aGAVKGxFZOIgkN4qruwXSus/edit#gid=928788676
+辞書機能特化版
+https://docs.google.com/spreadsheets/d/1gl2kWqj9_DlPdXiboA8PoxCWBXluVX1DBpe_0j5YQG0/edit#gid=795819521
+
+*** NovelAI_tec(技術部discordサーバー)
+%%技術部のdiscordサーバー招待リンク。技術部とは銘打ってるけど普通に画像や呪文投げたりしているので雑に入ってどうぞ。%%
+%%基本的にwikiと同じ方針で運用してるので、このdiscordの内容をwikiにドンドン書いてOK（ただしwiki同様、招待リンクはTwitterとかSNSに貼り付けんでな）。%%
+%%リンク飛んだらAuttajaというbotからDM来るから、そのリンクからreCAPTCHA認証したら入れるで。%%
+しばらく閉鎖中。落ち着いたらまた開くかも。
+
+** 記事
+*** NovelAIの為のDanbooru語翻訳
+https://note.com/nkmonaka/n/n97b26fea1d89
+ここでまだまとめきれてない単語についても書かれてる力作記事や。
+NAIが反応しないワードもまとめてくれてるのでどうやっても出ないって時に一度見るとええで。
+
+----
+
+* ツール
+
+** base64デコードツール
+韓国のAI画像生成サイトとかでDlリンクに使われている暗号を解除する
+base64エンコード/デコードツール｜株式会社エン・ＰＣサービス - https://www.en-pc.jp/tech/base64.php
+
+** 複数の画像を一枚にしたい
+画像結合ツール｜フォトコンバイン - https://photocombine.net/cb/
+
+** モザイクかけるツール
+【WEBツール】画像のモザイク・ぼかし加工 - https://www.oh-benri-tools.com/tools/image-processing/mosaic
+
+** 生成画像の選別がだるい
+
+方法(1)
+PhotoSift を使う
+- リファレンス：PhotoSift - ｋ本的に無料ソフト・フリーソフト - https://www.gigafree.net/utility/classify/PhotoSift.html
+- &#128317;RL Vision :: Download Freeware & Shareware Products - https://www.rlvision.com/downloads.php
+
+以下のようなワークフローで画像を選別できる
++ ドラッグ&ドロップでウィンドウに画像/フォルダを放り込む
++ 画像を見ながら任意のキー(例えばA, S, D)を押す
++ そのキー名のフォルダが自動で作成されて対応するフォルダに画像が振り分けられていく
+※保存ディレクトリは任意で変更可能
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ShhdC3zVtc-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/ShhdC3zVtc.jpg]]
+
+方法(2)
+IrfanVIewを使う
+振り分け機能があって便利らしい
+
+** PNGのテキストデータを編集したい
+以下のソフトを使えばドラッグ&ドロップで内部のPng chunkデータが閲覧/編集できる。
+TweakPNG - https://entropymine.com/jason/tweakpng/
+図：UIのイメージ
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zrf1ecT6Bv-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/zrf1ecT6Bv.jpg]]
+
+** 高画質にしたい
+Real-ESRGAN-GUIを使う（おすすめ）Win/Mac対応ソフト
+https://github.com/tsukumijima/Real-ESRGAN-GUI
+webやスマホならwaifu2xを使う
+http://waifu2x.udp.jp/
+
+** プロンプト入力支援ブラウザ拡張
+AIの画像生成でpromptの編集を支援するためのツール
+管理と編集を一挙に行いたい、ワードの入れ替え、キャラ・構図・プレイなど切り替えを簡易に行いたいという人におすすめ
+https://pastebin.com/Bv8EP0MF
+導入うまく行かんかったってやつ見かけたからドキュメントも用意したで
+https://pastebin.com/1pJfmTm4
+導入サンプル
+|&ref(https://i.imgur.com/eeNmKqE.png,300)|
+
+** プロンプト保存・管理ソフト
+NovelAI Manager
+https://github.com/riku1227/NovelAIManager
+NovelAIのプロンプトなどを良い感じに保存しておけるソフトウェア (Windowsのみ)
+|&ref(https://i.imgur.com/JAWve75.png,300)|
+|&ref(https://i.imgur.com/wVZdhQ5.png,300)|
+
+** NovelAI metadata Viewer v1.0.1
+https://novelai-metadata-viewer.pages.dev/
+生成画像からプロンプト、シード値、スケール等の一通りの情報を出してくれる。
+Twitterやimgurに上げられた画像はmetadataが消失しているので不可。その場合は下のDeepDanbooruなどを使用すると良い
+
+** UnderPillow（Mac用）
+https://github.com/anastasiuspernat/UnderPillow
+Finderで画像を右クリックすると、プロンプト、CFG スケール、解像度などのメタデータを表示してくれる拡張機能。
+
+** DeepDanbooru
+http://dev.kanotype.net:8003/deepdanbooru/
+アップロードした画像からdanbooruでのタグ付けを予想してくれる。
+プロンプト作成補助に。
+
+
+** novelai-api
+
+https://github.com/Aedial/novelai-api
+
+PythonからREST叩いて結果を取得するAPIライブラリ
+使用は自己責任で
+2022/10/19現在、pypi配布版では画像生成は実装されていないがgithubの最新で使える
+2022/10/22現在、githubの最新では[[/novelai_api/_low_level.py:141>https://github.com/Aedial/novelai-api/blob/main/novelai_api/_low_level.py#L141]]でアクセスするURL(https://backend-production-svc.novelai.net)が404になっている。リンク先をhttps://api.novelai.netに変えればアクセスができるが不安な人は更新を待つほうがいいかもしれない
+
+気が付かないうちに Anlas を使い切ったりしないように注意
+一度使い始めるとブラウザから手動で生成するのがアホらしくなる
+
+固定の単語とランダムな単語を組み合わせて画像を100個生成し
+その画像とプロンプトをファイルに保存する例↓
+[+]
+=||
+async def main():
+    async with ClientSession() as session:
+        api = NovelAI_API(session, logger = logger)
+
+        login = await api.high_level.login(username, password)
+        logger.info(login)
+
+        preset = ImagePreset()
+        preset['n_samples'] = 1
+        preset['resolution'] = (512, 512)
+
+        contains_always = ['nsfw', '{{{masterpiece}}}', 'sex']
+        positions = [
+            'reverse cowgirl position',
+            'cowgirl position',
+            'straddling',
+            'amazon position',
+            'spooning',
+            'spitroast',
+            'top-down bottom-up',
+            'missionary',
+            'doggystyle',
+            'girl on top',
+            'boy on top',
+            'kneeling',
+            'lying',
+        ]
+
+        for i in range(100):
+            now = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+            random.shuffle(positions)
+            word = ', '.join(contains_always + positions[:1]) + ','
+            async for img in api.high_level.generate_image(word, ImageModel.Anime_Full, preset):
+                with open(f'{now}.png', 'wb') as f:
+                    f.write(base64.b64decode(img))
+                with open(f'{now}.txt', 'wt') as f:
+                    f.write(word)
+            time.sleep(1)
+||=
+[END]
+seedが0だと毎回違う絵が生成され再現性がなくなるので、preset['seed'] にランダム値を指定して保存などしておくと良い
+
+ちなみにNAIのバックエンドの叩き方は↓に書いてある
+https://api.novelai.net/docs/
+
+** naisgui
+
+https://github.com/dungeonneko/naisgui
+&ref(https://raw.githubusercontent.com/dungeonneko/naisgui/master/ss.png,300)
+novelai-apiライクなGUIツール
+
+NAIユーザーだけどブラウザからの入力がめんどい
+スクリプトでパラメータを変えながら自動でガチャまわしたい人におすすめ
+
+Win版がReleasesページからDLできる
+https://github.com/dungeonneko/naisgui/releases
+
+とりあえず起動してログインしたら左下のRepeatを10とかにしてStartボタンを押すんだ！
+
+
+*** 簡単な使い方
+[+]
+
++ Data欄をいじって基本の入力パラメータを決める（画像サイズやstepsで知らんうちに Anlas 消費しないように注意）
++ Tweak欄に入力パラメータをいじるスクリプトを書く
++ スクリプトに問題がなければPreviewにスクリプト実行後のパラメータの例が表示される
++ Repeatで何回画像生成するのか指定する
++ Startボタンを押して画像が生成されるのを眺める
+
+*** スクリプト例
+
+画像生成毎に服装をランダムで選ぶ
+=||
+import random
+data['input'] += random.choice(['white dress', 'school uniform', 'swimsuit']) + ','
+||=
+
+*** その他
+・メタ情報が入った画像をブラウザやローカルPCからData欄にドロップするとパラメータを自動で入力してくれる（上手くいかない画像も結構ある）
+・入力パラメータはどんなものを渡せばよい？（Full <--> Curatedの切り替え等）
+　→ NAIの本家サイトで画像生成するときにChromeのデバッグツールなどを開いておけば post で何を渡してるかが見れる
+　&ref(https://image01.seesaawiki.jp/n/h/nai_ch/S_BqtiZM7n.PNG,200)
+・バージョン 1.3 で既存画像のバリエーションを作る機能が追加されている（同じ画像の Sampler, Steps, Scale, Seed 違いの画像を簡単に作れる）
+
+[END]
+----
+
+* Webサービス
+
+** MajinAI
+https://majinai.art/ja/
+AIイラスト専用の投稿サイト
+画像をドラッグ&ドロップすることで自動でプロンプト情報などを読み取り、
+他のユーザーがコピーできるようなページを作成して投稿できる。
+画像リンクは「h ttps://majinai.art/i/XXXXXXX''.webp''」で
+画像情報のリンクは「h ttps://majinai.art/i/XXXXXXX」なので
+5chなどの掲示板にも直接リンクで投稿&プロンプト共有が捗る。
+
+** AIBooru
+https://aibooru.online/
+AI生成画像のキュレーションサイト。
+has_prompt のタグで調べるとプロンプトが書いてあったりする。
+投稿自体にもプロンプト掲載推奨。
+
+** 背景を切り抜きたい：Anime Remove Background
+https://huggingface.co/spaces/skytnt/anime-remove-background
+背景画像をWebブラウザ上で切り抜き処理できる。
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/m11XYWr1P1.PNG,512)
+
+** Huggingface
+https://huggingface.co/
+機械学習モデルのプラットフォーム&#129303;
+数ＧＢにもなる巨大な学習モデルでもサクッと上げられて共有することができる
+
+----
+
+
+* Tips
+*** 絵文字は使えるの？
+使える。実例は以下([[絵文字と対応する作例を示したサイト>https://rentry.co/xnpkp]]がありこれが参考になると思う。)
+[+]
+|&ref(https://i.imgur.com/DIitipv.jpg,200)|&ref(https://i.imgur.com/56W3jnB.jpg,300)|&ref(https://i.imgur.com/0a8R4ka.jpg,200)|
+|&ref(https://i.imgur.com/fHJAWvq.jpg,200)|&ref(https://i.imgur.com/GJTigHe.jpg,300)|&ref(https://i.imgur.com/RZxuNvJ.jpg,200)|
+|&ref(https://i.imgur.com/vTTQR1A.jpg,200)|
+[END]
+
+*** モザイクうざい
+モザイクとかに悩んでる奴はUndesired Contentを活用するといいぞ
+適用されないタグをとりあえずぶち込んどけば黒線とかロゴの生成確率を減らせる
+俺がいつも雑に入れてるやつ貼っとくわ(他人の受け売りだけど)
+
+lowres, trademark, watermark, title, text, deformed, bad anatomy, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, extra male, extra female, extra person, extra cock, extra genital, too many people, shemale, futa, trans, tranny, floating cock, censored, bar censor,"
+
+----
+
+** ローカル版：NovelAILeak
+ローカル部の情報と被ってるので整理する。
+[+]
+流出版NovelAI。非正規、非公式、安全である保障なし。利用は自己責任。
+''安易に真似しないこと''
+
+やってること自体は、Stable Diffusion Web UIを構築して、リークモデルを読み込ませて、生成が一致するように設定をしているだけ
+動作環境がWindowsか、GoogleColabか、Ubuntuかの違い
+
+*** Windows+NVIDIA GPUを使う方法（最適解）
+1660Ti以上のゲーミングPCを持っているならばこれ一択
+[+]
+事前に[[Python>https://www.python.jp/install/windows/install.html]]と[[Git>https://gitforwindows.org/]]の導入は済ませておく
+https://pastebin.com/WvEJdpVb
+[END]
+
+*** GoogleColabを使う方法（そこそこ）
+Googleの鯖を借りるため、高性能なPCは不要。無償版には時間制限があるため、継続して使うことは難しい
+（ここ最近GoogleがGPUをケチり始めたとの噂がある）
+[+]
+1. Stable Diffusion Web UIを構築
+https://gigazine.net/news/20220907-automatic1111-stable-diffusion-webui/
+※gradio公式ドキュメントによるとColabは--share固定。
+「--share --gradio-debug」を「--gradio-auth (任意のID):(任意のパスワード)」に置き換える、IDパスは何でもOK＆毎回リセットなので記憶必要なし
+https://www.gradio.app/docs/
+
+2. NovelAlのリークされたモデルを追加
+以下のリンク先のコードを一塊ずつColab上の「+コード」から追加
+https://github.com/JingShing/novelai-colab-ver/blob/main/4chan_ver/NovelAILeaks_API_Backend-EN.ipynb
+Your quick Tunnel 〜の枠で囲まれたURLをクリックすると起動
+3、4番目は追加しなくてもOK
+[END]
+
+*** Ubuntu+AMD製GPU（Radeon）を使う方法（クッソ大変）
+死ぬほど大変。お金の余裕がある人は大人しくNVIDIA製GPUを買った方が幸せになれます
+- [[ローカルをRadeonで]]に移動しました
+
+*** 解説
+��Local環境を導入時に行う、CLIPを2にするとか、根幹部分の設定作業
+（ckptファイルやvae,ptファイルのリネーム、Eta noise seed deltaの値、設定など）
+⇒ここの設定はリーク当時から特に変わってない
+�，瞭各�作業が完了したかを判断するのが、アスカ設定による確認。ここでアスカの画像が崩れてたら、設定でミスしてるか、環境の問題ってのが分かる
+
+��Web版NAIと同一画像を作るための設定
+（プロンプトやネガティブプロンプト、Step数、Scal値、画像サイズの設定）
+⇒ここはWeb版NAIリリース当初と現在でちょっとだけ差がある
+Web版NAIと同じ画像を出力できるのか、っていう確認をするために、Web版側のデフォルト設定に合わせて、ローカル環境を設定するっていう感じや
+
+
+- NovelAIのエミュレーションのまとめ（英語）
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/2017
+
+
+- Waifu-Diffusionを使う
+さすがにリークを使うのは...という人には、Waifu-Diffusionのモデルがおすすめ。
+WebUIの設定から、「Stop At last layers of CLIP model」を2に設定し、上記リンクの通りにプロンプト（呪文）を設定することでより上質なアニメ絵が生成できる
+（NovelAILeakはリークである事が問題なため、Stable-Diffusion公式やWaifu-Diffusionなどの公開データを使うことには問題はない）
+
+[END]
+
+- CLIPなんとかを頻繁に変える人向け(被った)
+[+]
+settings > Quicksettings listにCLIP_stop_at_last_layersを入れてApplyして再起動すると上部に表示される
+https://i.imgur.com/hC1fMu4.png
+プロンプト内でも設定できるらしい
+[END]
+
+- nai2local.js(今ではExtensionsのを使うのがおすすめ)
+[+]
+*** ローカル用ツール
+NAI版の呪文の括弧をローカル版の術式に変換するスクリプト
+入れ子構造の括弧には非対応
+|&ref(https://i.imgur.com/QXFX050.png,300)|&ref(https://i.imgur.com/bKdNBE9.png,300)|
+
+https://firestorage.jp/download/1fd8f574c39affd3a66c6bd97c09641df093bbe8
+DLパス：naij
+or (入れ子構造対応版)
+https://rentry.org/43zdr
+https://github.com/animerl/novelai-2-local-prompt
+
+インストール方法はダウンロードした「nai2local.js」を「javascript」フォルダの中に入れるだけ
+|&ref(https://i.imgur.com/gmLQ6xG.png,300)|
+[END]
+

@@ -1,51 +1,51 @@
-Krita�قǖ{�i�I�ł͂Ȃ����ǁA
-1111�̕n���gradio�y�C���g�c�[�����͖��͓I�ȁA
-Web�x�[�X��AI�y�C���g�c�[���B
+Kritaほど本格的ではないけど、
+1111の貧弱なgradioペイントツールよりは魅力的な、
+WebベースのAIペイントツール。
 
 https://github.com/invoke-ai/InvokeAI
 https://invoke-ai.github.io/InvokeAI/installation/
 
 #contents
 
-* �C���X�g�[��
+* インストール
 
-** �C���X�g�[���[
+** インストーラー
 
-- ����܂肨�����߂ł��Ȃ�����
-- Anaconda��git������ɃC���X�g�[������
--- git�͂Ƃ�����Anaconda�͊��������
-- �ςȃG���[���o���炢����������đS����蒼�����ق����悳��
-- �C���X�g�[���o�������Ⴀ��
+- あんまりおすすめできないかも
+- Anacondaとgitを勝手にインストールする
+-- gitはともかくAnacondaは環境が汚れる
+- 変なエラーが出たらいったん消して全部やり直したほうがよさげ
+- インストール出来た事例あり
 
-** pip�ł̃}�j���A���C���X�g�[��(Windows)
+** pipでのマニュアルインストール(Windows)
 
-*** ���W���[���̃C���X�g�[��
+*** モジュールのインストール
 
-�R�}���h�v�����v�g���J����1�s�����s�B
-�_����������X�����Z�p���ŕ����Ă��������B
+コマンドプロンプトを開いて1行ずつ実行。
+ダメだったらスレか技術部で聞いてください。
 
-python.exe��path��ʂ��ĂȂ��ꍇ�̓t���p�X�ɏ���������
+python.exeのpathを通してない場合はフルパスに書き換える
  set PYTHON=python.exe
-git.exe��path��ʂ��ĂȂ��ꍇ�̓t���p�X�ɏ���������
+git.exeのpathを通してない場合はフルパスに書き換える
  set GIT=git.exe
-InvokeAI������e�t�H���_���w�肷��(�C�ӁB���炩���ߍ쐬����)
+InvokeAIを入れる親フォルダを指定する(任意。あらかじめ作成する)
  cd C:\SD
-InvokeAI�̃_�E�����[�h
+InvokeAIのダウンロード
  %GIT% clone https://github.com/invoke-ai/InvokeAI.git
-InvokeAI�t�H���_�̒��Ɉړ�
+InvokeAIフォルダの中に移動
  cd InvokeAI
-web�y�[�W�̐����ƈႤ���ǂ���ł�����
+webページの説明と違うけどこれでいける
  copy environments-and-requirements\requirements-win-colab-cuda.txt requirements.txt
-venv�����
+venvを作る
  %PYTHON% -m venv invokeai
-�Ȍ��venv�̒���Python���g��
+以後はvenvの中のPythonを使う
  set PYTHON=C:\SD\InvokeAI\invokeai\Scripts\python.exe
-basicsr �̃C���X�g�[���Ŏ��s����̂ő΍�œ����(���Ƃŏ������)
+basicsr のインストールで失敗するので対策で入れる(あとで消される)
  %PYTHON% -m pip install torch
-requirements.txt�̃C���X�g�[��
+requirements.txtのインストール
  %PYTHON% -m pip install --prefer-binary -r requirements.txt
 
-�o�b�`�t�@�C��(�쐬���B������)
+バッチファイル(作成中。未検証)
 [+]
 =|BSH|
 @echo off
@@ -57,7 +57,7 @@ cd C:\SD
 %GIT% clone https://github.com/invoke-ai/InvokeAI.git
 cd InvokeAI
 
-@REM �����ƈႤ���ǂ��Ԃ񂱂�ł�����
+@REM 説明と違うけどたぶんこれでいける
 copy environments-and-requirements\requirements-win-colab-cuda.txt requirements.txt
 
 %PYTHON% -c "" >tmp/stdout.txt 2>tmp/stderr.txt
@@ -83,7 +83,7 @@ echo venv %PYTHON%
 goto :install_requirements
 
 :install_requirements
-@REM basicsr �̃C���X�g�[���Ŏ��s����̂ő΍�œ����(���Ƃŏ������)
+@REM basicsr のインストールで失敗するので対策で入れる(あとで消される)
 %~dp0%VENV_DIR%\Scripts\pip.exe install torch
 %~dp0%VENV_DIR%\Scripts\pip.exe install --prefer-binary -r requirements.txt
 goto :set_ckpt
@@ -91,11 +91,11 @@ goto :set_ckpt
 
 :skip_venv
 :set_ckpt
-@REM ckpt��vae.pt��������
-@REM if not defined CKPT (set CKPT=�����ǂ�����E�E�E)
-@REM if not defined VAE (set VAE=�����ǂ�����E�E�E)
-@REM  ���������̃R�[�h
-@REM �܂������ĂȂ��d
+@REM ckptとvae.pt書き換え
+@REM if not defined CKPT (set CKPT=ここどうしよ・・・)
+@REM if not defined VAE (set VAE=ここどうしよ・・・)
+@REM  書き換えのコード
+@REM まだ書いてない‥
 
 goto :launch
 
@@ -131,9 +131,9 @@ pause
 
 ||=
 [END]
-*** ckpt��vae��ǉ�����
+*** ckptとvaeを追加する
 
-InvokeAI/configs/models.yaml ��ҏW���ă��f����ǉ�����B�ȉ��͈��B
+InvokeAI/configs/models.yaml を編集してモデルを追加する。以下は一例。
 [+]
 =||
 Anything-v3:
@@ -147,121 +147,121 @@ Anything-v3:
 ||=
 [END]
 
-1111�ɓ���Ă���ckpt�Avae�Ayaml�����̂܂܎g�����߂�Extension�������
+1111に入れてあるckpt、vae、yamlをそのまま使うためのExtensionを作った
 https://github.com/aka7774/sd_invokeai_models_yaml_maker
 
-�C���|�[�g�X�N���v�g�������������삵�Ȃ������B
+インポートスクリプトを試したが動作しなかった。
 [+]
 https://invoke-ai.github.io/InvokeAI/installation/INSTALLING_MODELS/#walk-through
 
-- !import_model �̈����ł̓o�b�N�X���b�V��(\)���g���Ȃ��̂ŃX���b�V��(/)�ɒ����K�v������
-- �t�H���_�̎w��⃏�C���h�J�[�h�͔F�����Ȃ�
-- Configuration file for this model: �����ɐi�܂Ȃ�
+- !import_model の引数ではバックスラッシュ(\)が使えないのでスラッシュ(/)に直す必要がある
+- フォルダの指定やワイルドカードは認識しない
+- Configuration file for this model: から先に進まない
 [END]
 
-*** �ݒ�E�B�U�[�h�ƋN��
+*** 設定ウィザードと起動
 
-���̌�A�ݒ�E�B�U�[�h���J�n����
-���e�͂���Ȋ���
+その後、設定ウィザードを開始する
+内容はこんな感じ
 https://sakusaku-ikiru-aiblog.hatenablog.com/entry/2022/12/04/130048
 
-�ݒ���e�́AHOME�� .invokeai �t�@�C���ŕۑ������
-HOME�������̂����Ȃ�A�ȉ��̃R�}���h�ŃJ�����g�f�B���N�g���ɐݒ�ł��邩��
+設定内容は、HOMEに .invokeai ファイルで保存される
+HOMEが汚れるのが嫌なら、以下のコマンドでカレントディレクトリに設定できるかも
  set USERPROFILE=%CD%
 
-- venv�̒��ɂ���Ƃ��̂�肩��
+- venvの中にいるときのやりかた
 [+]
-�ݒ�
+設定
 =||
 python scripts/invoke.py
 ||=
 
-�ݒ肪�I�������A�ȉ��̃R�}���h�ŋN��
+設定が終わったら、以下のコマンドで起動
 =||
 python scripts/invoke.py --web
 ||=
 [END]
 
-- venv�̊O�ɏo�Ă�Ƃ��̂�肩��
+- venvの外に出てるときのやりかた
 [+]
-�ݒ�
+設定
 =||
 cd C:\SD\InvokeAI\invokeai
 Scripts\python.exe scripts/invoke.py
 ||=
 
-�ݒ肪�I�������A�ȉ��̃R�}���h�ŋN��
+設定が終わったら、以下のコマンドで起動
 =||
 cd C:\SD\InvokeAI\invokeai
 Scripts\python.exe scripts/invoke.py --web
 ||=
 [END]
 
-�N���ł�����A�u���E�U����A
+起動できたら、ブラウザから、
 http://127.0.0.1:9090/
-�ɃA�N�Z�X����B
+にアクセスする。
 
 
 ** Docker
 
-- ����Docker�g���Ă�l�ɂ͂��ꂪ�֗�����
-���ꂩ�o�b�`����
-Linux�Ȃ炱��Ȋ���
+- もうDocker使ってる人にはこれが便利かも
+だれかバッチ頼む
+Linuxならこんな感じ
 [+]
 
 =|sh|
-# ~/hoge/�̃f�B���N�g���Ƀ_�E�����[�h
-# �f�B���N�g���Ɉړ�
+# ~/hoge/のディレクトリにダウンロード
+# ディレクトリに移動
 cd  ~/hoge/
-# �_�E�����[�h
+# ダウンロード
 git clone https://github.com/invoke-ai/InvokeAI.git
 cd InvokeAI
-# Docker�̃C���[�W���r���h 
-#�V�F���X�N���v�g����dash�œ������ǎ���bash�ŏ����Ă���p�^�[������̂��߈ꉞbash�𖾎����Ď��s
+# Dockerのイメージをビルド 
+#シェルスクリプトだとdashで動くけど実はbashで書いてあるパターン回避のため一応bashを明示して実行
 bash docker-build/build.sh
 ||=
 
-2��ڈȍ~��run�ł���
+2回目以降はrunでいい
 =|sh|
-# Docker���s
+# Docker実行
 bash docker-build/run.sh
 ||=
 
 [END]
 
-** conda�ł̃}�j���A���C���X�g�[��
-Linux�ł������windows�ł��قƂ�Ǔ����Ȃ͂�
+** condaでのマニュアルインストール
+Linuxでやったがwindowsでもほとんど同じなはず
 
-�Ƃ肠����anaconda prompt���J���ēK���ȃf�B���N�g���ɍs���B
+とりあえずanaconda promptを開いて適当なディレクトリに行く。
 
 =||
 > git clone https://github.com/invoke-ai/InvokeAI.git
 > cd InvokeAI
 > copy environments-and-requirements/environment-win-cuda.yml environment.yml
-> conda env create -f=environment.yml         # conda���ɓ����Ă�K�v������
+> conda env create -f=environment.yml         # conda環境に入ってる必要がある
 > conda activate invokeai
 > python scripts/invoke.py --web
 ||=
 
-invoke.py�͏���Amodule�Ȃǂ̃f�B���N�g�����w�肷��K�v������̂ŁA�����_�œ����Ă�f�B���N�g�����w�肷��Ɨǂ��B
-safety checker�̊m�F������̂�y��ł��Ȃ��悤�ɁB
+invoke.pyは初回、moduleなどのディレクトリを指定する必要があるので、現時点で入ってるディレクトリを指定すると良い。
+safety checkerの確認もあるのでyを打たないように。
 
-model��huggin face����_�E�����[�h����ꍇ��
+modelをhuggin faceからダウンロードする場合は
 ttps://huggingface.co/runwayml/stable-diffusion-v1-5
 ttps://huggingface.co/runwayml/stable-diffusion-inpainting
-�Ȃǂɍs����agreement���N���b�N���Ă���B
-���ł�token���K�v�Ȃ̂�
+などに行ってagreementをクリックしてくる。
+ついでにtokenも必要なので
 ttps://huggingface.co/settings/tokens
-�ɂ�����token�𐶐����Ă��ăR�s�y����B
+にいってtokenを生成してきてコピペする。
 
 
 
-* �g����
+* 使い方
 
-�����ς��o�Ȃ� �� .invokeai����--nsfw_checker�폜
-�l�K�e�B�u�ǂ��ɓ����H �� []�ň͂�
-�v�����v�g�̍\���͑��ɂ������Ėʔ����� https://invoke-ai.github.io/InvokeAI/features/PROMPTS/
+おっぱい出ない → .invokeai内の--nsfw_checker削除
+ネガティブどこに入れる？ → []で囲む
+プロンプトの構文は他にもあって面白そう https://invoke-ai.github.io/InvokeAI/features/PROMPTS/
 
-�N���C����
+誰か任せた
 
 

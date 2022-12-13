@@ -1,38 +1,38 @@
 #contents
 
-* �T�v
-�����ł͓����I���؁A�R�[�h���蒼�ڐG��悤�ȍ��x�Ȍ����̒m�����܂Ƃ߂Ă����Ƃ���ł��B
-������[[���[�J���̓������@]]�AUI�̎g�����̂悤�ȊȒP��Tips��[[���[�J���̎g����]]���Q�Ƃ��Ă��������B
+* 概要
+ここでは内部的検証、コード周り直接触るような高度な研究の知見をまとめておくところです。
+導入は[[ローカルの導入方法]]、UIの使い方のような簡単なTipsは[[ローカルの使い方]]を参照してください。
 
-- Euler a��web�łɍ��킹��b��[[���[�J���̎g����]]�ɏ����܂����B
-- �}�[�W�̌�����[[���[�J���̃}�[�W]]�Ɉڂ��܂����B
-- �g���@�\���g���̂�[[���[�J����Extensions]]�ɏ����܂����B
+- Euler aをweb版に合わせる話は[[ローカルの使い方]]に書きました。
+- マージの研究は[[ローカルのマージ]]に移しました。
+- 拡張機能を使うのは[[ローカルのExtensions]]に書きました。
 
-** [WebUI] Stable Diffusion�x�[�X���f����CLIP�̏d�݂�ǂ���ɕύX����
+** [WebUI] Stable DiffusionベースモデルのCLIPの重みを良いやつに変更する
 
 https://zenn.dev/discus0434/articles/7ada798c5cc87d
 
-�ǉ��w�K�ɕ���p�����邩���B
+追加学習に副作用があるかも。
 
-669���A�V������wiki���Ă�����O���X�Ίp(i) ��0.774�������� (������ Sa5b-Z2Iz)2022/11/29(��) 19:44:01.88ID:qCHx1biqa>>675>>684
+669今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa5b-Z2Iz)2022/11/29(火) 19:44:01.88ID:qCHx1biqa>>675>>684
 >>606
-�r�����p���Ă�O���t�����\��r�̍������ۂ�����
-�����2020�N�̎����Ȃ̂�
-�O���t����ViT-L/14���Ă̂�256�摜�Ŋw�K���Ă�������O�̕�
-ViT-L/14@336px�͂����336�s�N�Z����1epoch�񂵂�����
+途中引用してるグラフが性能比較の根拠っぽいけど
+あれは2020年の資料なので
+グラフ中のViT-L/14ってのは256画像で学習してた数世代前の物
+ViT-L/14@336pxはそれを336ピクセルで1epoch回したもの
 
-SD��ViT-L/14�͂��̌�X�ɍ��𑜓x��512�Ŋw�K��i�߂�����
-���O�������������₱�������Ǒ����O���t��ViT-L/14�Ɣ�r���Ċ��Ⴂ�����񂾂Ǝv��
-�\�}�w��̌����ڂ��ǂ��Ȃ������Ă̂͋C�̂����Ȃ̂ł� 
+SDのViT-L/14はその後更に高解像度の512で学習を進めたもの
+名前が同じだからややこしいけど多分グラフのViT-L/14と比較して勘違いしたんだと思う
+構図指定の効き目が良くなったってのは気のせいなのでは 
 
-** �w�K����Optimizer�ύX���@
+** 学習時のOptimizer変更方法
 
-- [[�w�K����Optimizer�ύX���@]]
+- [[学習時のOptimizer変更方法]]
 ** sd_model_hash
 
-����APNG Info���ƃ��f����HN�����S�Ɉ�v������͓̂���B
+現状、PNG Info等とモデルやHNを完全に一致させるのは難しい。
 
-ckpt��HN��pt�ɂ��Ă�8���̃n�b�V���̓t�@�C���̈ꕔ�݂̂̃n�b�V���ł���B
+ckptやHNのptについてる8桁のハッシュはファイルの一部のみのハッシュである。
 
 [+]
 =||
@@ -50,20 +50,20 @@ def model_hash(filename):
 ||=
 [END]
 
-���̂��߁ADB��HN�Ńt�@�C�����������ꍇ�A�n�b�V�����Փ˂��₷���B
+そのため、DBやHNでファイルが増えた場合、ハッシュが衝突しやすい。
 
-ckpt�́A�ŏ�(cmdr��)�̍��� model.ckpt �ƃt�@�C�������Œ肾�������ƁA
-NAILeak�̃t�@�C���������g�𐄑����ɂ������ƁA
-�}�[�W���f���ɂ��f�t�H���g�̖��O����������Ȃǂ̗��R�ŁA
-���[�U�[���t�@�C������ς���\���������A�t�@�C�������Փˉ���Ɏg���Â炢�B
-���S��sha256����������Ɠǂݍ��݂Ɏ��Ԃ��������Ă��܂����A
-�L���b�V���t�@�C������铙�̒�Ă��s���Ă���B
+ckptは、最初(cmdr版)の頃に model.ckpt とファイル名が固定だったこと、
+NAILeakのファイル名が中身を推測しにくいこと、
+マージモデルにつくデフォルトの名前が長すぎるなどの理由で、
+ユーザーがファイル名を変える可能性が高く、ファイル名を衝突回避に使いづらい。
+完全なsha256を実装すると読み込みに時間がかかってしまうが、
+キャッシュファイルを作る等の提案が行われている。
 
-HN��pt�͓�����name�������Ă��邪�ASteps�����������ꍇ��name�ɔ��f����Ȃ��B
-�t�@�C�������z�z���Ɏ���ꂽ�肷��B
-ckpt�Ɣ�ׂ�ƃt�@�C���T�C�Y�����������A���S��sha256�ɂ͈ڍs���₷���B
+HNのptは内部にnameを持っているが、Stepsを完走した場合はnameに反映されない。
+ファイル名も配布時に失われたりする。
+ckptと比べるとファイルサイズが小さい分、完全なsha256には移行しやすい。
 
-Anything v3�͔z�z�����Ɣz�z���@�ɂ���Đ���ނ̃t�@�C�������݂���炵���B
-(�}���E�F�A���댟�o���ꂽ���Ƃ����R�����m��Ȃ����킩��Ȃ�)
-���̃t�@�C����sd_model_hash���قȂ�̂Ŕ��ʂ͉\�ł���B
+Anything v3は配布時期と配布方法によって数種類のファイルが存在するらしい。
+(マルウェアが誤検出されたことが理由かも知れないがわからない)
+このファイルはsd_model_hashが異なるので判別は可能である。
 

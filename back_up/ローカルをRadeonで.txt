@@ -1,117 +1,117 @@
-���[�J����l�X�Ȋ��œ��������
+ローカルを様々な環境で動かす情報
 
 #contents
 
 * Linux
 
-- %%Ubuntu 20.04(22.04�ł��������R���p�C�����K�v����)%%
-- %%Python 3.9+conda xformers���APython+pip(xformers�Ȃ�)���APython+pip+xformers�R���p�C������3��%%
+- %%Ubuntu 20.04(22.04でも動くがコンパイルが必要そう)%%
+- %%Python 3.9+conda xformersか、Python+pip(xformersなし)か、Python+pip+xformersコンパイルかの3択%%
 - Ubuntu 22.04
 - Python 3.10.6
-- Windows���������������Ȃ�炵��
-- �Q�[���@�����p����Ȃ�f���A���u�[�g���K�v
+- Windows環境よりも多少速くなるらしい
+- ゲーム機を兼用するならデュアルブートが必要
 
 * WSL2
 
 - Ubuntu 22.04
 - Python 3.10.6
-- �f���A���u�[�g�͕s�v�ɂȂ�
-- ���z���ɂ�鑬�x�ቺ����Linux�ɂ�鑬�x����̉��b�̂ق�������ۂ�
-- Windows 10��11�Ŏg�������Ⴄ�B�O��ƂȂ�o�[�W����������
+- デュアルブートは不要になる
+- 仮想化による速度低下よりもLinuxによる速度向上の恩恵のほうが上っぽい
+- Windows 10と11で使い方が違う。前提となるバージョンがある
 * Radeon(Linux)
 
 - https://hub.docker.com/r/rocm/pytorch/tags
 - Linux
-- Python 3.7(3.8�ɏo����?)
+- Python 3.7(3.8に出来る?)
 - PyTorch 1.12.1
 - Docker
-- xformers�͌��y�Ȃ�
+- xformersは言及なし
 
 [+]
-�����ďȓd�͂�VRAM�����ėǂ����ȁARX 7900 XTX�A7900 XT�ł̊w�K�𖲌���
+安くて省電力でVRAM多くて良さげな、RX 7900 XTX、7900 XTでの学習を夢見て
 
-** ���[�J���ł̓���
+** ローカル版の導入
 
 *** Linux+ROCm
 1. https://dolls.tokyo/howto-stablediffusion-on-amdradeon/ 
-�ustable-diffusion�̃C���X�g�[���v�̒��O�܂œǂ݁A2.��
+「stable-diffusionのインストール」の直前まで読み、2.へ
 
-2. docker�R���e�i����Python���A�b�v�f�[�g����
+2. dockerコンテナ内のPythonをアップデートする
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs#updating-python-version-inside-docker
 
 3. https://dolls.tokyo/howto-install-amd-sdwebui/
 
-4.NovelAI�̍Č�
+4.NovelAIの再現
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/2017
 
-�G���[���o���Ƃ��̑Ώ��i�p��j
+エラーが出たときの対処（英語）
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/783
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1220
 
-** �w�K���̍\�z
+** 学習環境の構築
 
-��񋁂�
+情報求む
 [END]
 
 * Radeon(Windows)
 
 - https://dolls.tokyo/howto-amd-sd-win/
 - Onnx
-- SD1.4(1111�̑Ή��ۂ͕s��)
-- Python��3.10
+- SD1.4(1111の対応可否は不明)
+- Pythonは3.10
 - pip
-- xformers�͌��y�Ȃ�
-- �d���炵��
+- xformersは言及なし
+- 重いらしい
 
 * Intel ARC A770
 
 - https://github.com/rahulunair/stable_diffusion_arc
-- SD1.5(1111�̑Ή��ۂ͕s��)
-- Python��3.9
-- conda��pip�𕹗p
-- xformers�͌��y�Ȃ�
+- SD1.5(1111の対応可否は不明)
+- Pythonは3.9
+- condaとpipを併用
+- xformersは言及なし
 
 * Apple M1
 
 - https://github.com/apple/ml-stable-diffusion
 - SD2.0/1.4/1.5
-- 1111�ł̑Ή������́uPyTorch�ŗǂ��Ȃ�?�v�����o�Ă���
+- 1111での対応検討は「PyTorchで良くない?」説が出ている
 -- https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/5309
-- Python��3.8
-- conda��pip�𕹗p
-- xformers�͌��y�Ȃ�
-- iPad Pro��38�b�Ȃ̂�1060���炢��?
+- Pythonは3.8
+- condaとpipを併用
+- xformersは言及なし
+- iPad Proで38秒なので1060くらいか?
 
 * iOS
 
-- ���쌴����M1�̂Ɠ������ۂ�
-- CoreML3�Ή��@��ł���K�v������(iOS13�ȍ~����iPhone 11�ȍ~���ۂ�)
-- ������4GB�ȏ�?
-- �z�z�A�v���̎d�l�ɂ��(1111���̂��͖̂���)
-- �A�v�����[�U�[�ɂ������͋��炭�s�\
-- �摜�����������Đ������x
+- 動作原理はM1のと同じっぽい
+- CoreML3対応機種である必要がある(iOS13以降かつiPhone 11以降っぽい)
+- メモリ4GB以上?
+- 配布アプリの仕様による(1111そのものは無い)
+- アプリユーザーによる改造は恐らく不可能
+- 画像を小さくして数分程度
 
 * Android
 
-- �b��ɂȂ��ĂȂ����������A�v���͂���l�q
-- CoreML�̂悤��MLKit�Ƃ������̂�����
+- 話題になってないがいくつかアプリはある様子
+- CoreMLのようなMLKitというものがある
 
 * Intel CPU(OpenVINO)
 
 - https://github.com/bes-dev/stable_diffusion.openvino
-- SD1.4(1111�̑Ή��ۂ͕s��)
+- SD1.4(1111の対応可否は不明)
 - Docker
 - python:3.9.9
 - pip
-- �������Ԃ͕��P��
-- Ryzen�ł��������ۂ�?
+- 生成時間は分単位
+- Ryzenでも動くっぽい?
 
-* (�Q�l) Colab
+* (参考) Colab
 
-- Python 3.8.15(3.9�ɏo����)
-- Python 3.9+conda xformers���APython+pip(xformers�Ȃ�)���APython+pip+xformers�R���p�C������3��
+- Python 3.8.15(3.9に出来る)
+- Python 3.9+conda xformersか、Python+pip(xformersなし)か、Python+pip+xformersコンパイルかの3択
 
-* (�Q�l) Windows
+* (参考) Windows
 
 - Python 3.10.8
 - Python+pip+xformers

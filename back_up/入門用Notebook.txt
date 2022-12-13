@@ -1,33 +1,33 @@
-[[ƒ[ƒJƒ‹‚ÌŠwK“ü–å]]
+[[ãƒ­ãƒ¼ã‚«ãƒ«ã®å­¦ç¿’å…¥é–€]]
 
 ----
 =|BOX|
-#@markdown ‚ ‚­‚Ü‚Å“ü–å—p‚È‚Ì‚Å‰ü—Ç‚âƒTƒ|[ƒg‚Ì—\’è‚Í‚ ‚è‚Ü‚¹‚ñBŽÀs‚ÍŽ©ŒÈÓ”C‚ÅB
+#@markdown ã‚ãã¾ã§å…¥é–€ç”¨ãªã®ã§æ”¹è‰¯ã‚„ã‚µãƒãƒ¼ãƒˆã®äºˆå®šã¯ã‚ã‚Šã¾ã›ã‚“ã€‚å®Ÿè¡Œã¯è‡ªå·±è²¬ä»»ã§ã€‚
 
-#@markdown Å‰‚É Rumtime - Change runtime type ‚Å GPU ‚ð‘I‚Ô
+#@markdown æœ€åˆã« Rumtime - Change runtime type ã§ GPU ã‚’é¸ã¶
 
-#@markdown gradioƒƒOƒCƒ“î•ñ(ƒpƒXƒ[ƒh‹ó”’Žž‚ÍŽ©“®¶¬)
+#@markdown gradioãƒ­ã‚°ã‚¤ãƒ³æƒ…å ±(ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ç©ºç™½æ™‚ã¯è‡ªå‹•ç”Ÿæˆ)
 user = "user"#@param {type:"string"}
 password = ""#@param {type:"string"}
 
-# GPU‚Ìî•ñ•\Ž¦
+# GPUã®æƒ…å ±è¡¨ç¤º
 !nvidia-smi
 !nvcc -V
 
-# RAM‚ÆVRAM‚Ì—e—ÊŽæ“¾(GiB)
+# RAMã¨VRAMã®å®¹é‡å–å¾—(GiB)
 res = !free -m | grep 'Mem:' | awk '{print $2}'
 if not res:
-   raise ValueError("RAM‚ªŽæ“¾‚Å‚«‚È‚¢")
+   raise ValueError("RAMãŒå–å¾—ã§ããªã„")
 ram = round(float(res[0]) / 1024, 3)
 res = !nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
 if not res:
-   raise ValueError("VRAM‚ªŽæ“¾‚Å‚«‚È‚¢(GPU‚ÉŒq‚ª‚Á‚Ä‚È‚¢‚©‚à)")
+   raise ValueError("VRAMãŒå–å¾—ã§ããªã„(GPUã«ç¹‹ãŒã£ã¦ãªã„ã‹ã‚‚)")
 vram = round(float(res[0]) / 1024, 3)
 print(f"RAM : {ram}")
 print(f"VRAM: {vram}")
 del res
 
-# conda‚ÅPython 3.9‚©‚çxformers‚Ü‚ÅƒCƒ“ƒXƒg[ƒ‹
+# condaã§Python 3.9ã‹ã‚‰xformersã¾ã§ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 MINICONDA_SH='Miniconda3-py39_4.12.0-Linux-x86_64.sh' # Miniconda3-latest-Linux-x86_64.sh
 !wget https://repo.anaconda.com/miniconda/{MINICONDA_SH}
 !chmod +x {MINICONDA_SH}
@@ -37,15 +37,15 @@ del MINICONDA_SH
 !conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch -y
 !conda install xformers -c xformers/label/dev -y
 
-# “ü‚Á‚½Python‚Ìƒo[ƒWƒ‡ƒ“Šm”F
+# å…¥ã£ãŸPythonã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç¢ºèª
 !python -V
 
-# ƒfƒtƒHƒ‹ƒgƒpƒXƒ[ƒh¶¬
+# ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ç”Ÿæˆ
 import secrets
 import string
 
 def get_password(length: int) -> str:
-    # secrets‚Írandom‚Æ‚©‚Æˆá‚Á‚ÄˆÃ†Šw“I‚ÉˆÀ‘S‚È—”‚ð¶¬‚Å‚«‚éB
+    # secretsã¯randomã¨ã‹ã¨é•ã£ã¦æš—å·å­¦çš„ã«å®‰å…¨ãªä¹±æ•°ã‚’ç”Ÿæˆã§ãã‚‹ã€‚
     pass_chars = string.ascii_letters + string.digits
     password = ''.join(secrets.choice(pass_chars) for i in range(length))
     return password
@@ -60,16 +60,16 @@ if not password:
     password = default_password
     del default_password
 
-# WEBUI‚ÌƒZƒbƒgƒAƒbƒv
+# WEBUIã®ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—
 %cd /content/
 !git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 %cd stable-diffusion-webui/models/Stable-diffusion
 
-# ƒ_ƒEƒ“ƒ[ƒh‚Éƒg[ƒNƒ“‚Ì—v‚ç‚È‚¢ƒ‚ƒfƒ‹‚È‚Ì‚ÅƒRƒƒ“ƒgƒAƒEƒg
-##@markdown ƒg[ƒNƒ“‚Í‚±‚±‚Å–á‚Á‚Ä‚«‚Ä https://huggingface.co/settings/tokens
+# ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã«ãƒˆãƒ¼ã‚¯ãƒ³ã®è¦ã‚‰ãªã„ãƒ¢ãƒ‡ãƒ«ãªã®ã§ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆ
+##@markdown ãƒˆãƒ¼ã‚¯ãƒ³ã¯ã“ã“ã§è²°ã£ã¦ãã¦ https://huggingface.co/settings/tokens
 #user_token = ''#@param {type:"string"}
 #user_header = f"\"Authorization: Bearer {user_token}\""
-#@markdown ckpt‚ÌURL‚ð“ü‚ê‚é(Ž©ŒÈÓ”C) —e—Ê‚ª‚Å‚©‚¢‚Ù‚ÇOOMƒGƒ‰[‚Ì‰Â”\«‚ ‚è
+#@markdown ckptã®URLã‚’å…¥ã‚Œã‚‹(è‡ªå·±è²¬ä»») å®¹é‡ãŒã§ã‹ã„ã»ã©OOMã‚¨ãƒ©ãƒ¼ã®å¯èƒ½æ€§ã‚ã‚Š
 ckpt_url = 'https://huggingface.co/acheong08/Anything/resolve/main/Anything-V3.0-pruned-fp16.ckpt'#@param {type:"string"}
 #!wget -c --header={user_header} "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
 !wget -c "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
@@ -77,15 +77,15 @@ vae_url = "https://huggingface.co/acheong08/Anything/resolve/main/Anything-V3.0.
 !wget -c "{vae_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
 #del user_header
 
-# @markdown aria2c‚Å—Ž‚Æ‚µ‚½‚¢ƒ‚ƒfƒ‹‚ÌURL
+# @markdown aria2cã§è½ã¨ã—ãŸã„ãƒ¢ãƒ‡ãƒ«ã®URL
 aria_url = ''#@param {type:"string"}
 if aria_url:
     !apt install -y -qq aria2
     !aria2c --summary-interval=10 -x 3 --allow-overwrite=true -Z {aria_url}
 
-# Extensions‚ÌƒZƒbƒgƒAƒbƒv
+# Extensionsã®ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—
 %cd /content/stable-diffusion-webui/extensions/
-# Dreambooth (Žg‚í‚È‚¢‚È‚çƒRƒƒ“ƒgƒAƒEƒg‚·‚é‚Æ‹N“®‚ª‘¬‚­‚È‚é)
+# Dreambooth (ä½¿ã‚ãªã„ãªã‚‰ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã™ã‚‹ã¨èµ·å‹•ãŒé€Ÿããªã‚‹)
 !git clone https://github.com/d8ahazard/sd_dreambooth_extension.git
 !git clone https://github.com/animerl/novelai-2-local-prompt.git
 !git clone https://github.com/yfszzx/stable-diffusion-webui-images-browser.git
@@ -95,14 +95,14 @@ if aria_url:
 !git clone https://github.com/kousw/stable-diffusion-webui-daam.git
 !echo '{"backup_dir":"/content/drive/MyDrive/sd"}' > /content/stable-diffusion-webui/extensions/sd_filer/json/config.json
 
-# Google Drive‚Ìƒ}ƒEƒ“ƒg(Œ™‚È‚ç‹–‰Â‚µ‚È‚¯‚ê‚ÎOK?)
+# Google Driveã®ãƒžã‚¦ãƒ³ãƒˆ(å«Œãªã‚‰è¨±å¯ã—ãªã‘ã‚Œã°OK?)
 from google.colab import drive
 drive.mount('/content/drive')
 
-# WEBUI‚Ì‹N“®
+# WEBUIã®èµ·å‹•
 %cd /content/stable-diffusion-webui/
 !COMMANDLINE_ARGS="--test-lora --xformers --opt-channelslast --share --gradio-auth {user}:{password}" REQS_FILE="requirements.txt" python launch.py
 ||=
 ----
 
-- [[ƒoƒbƒNƒAƒbƒv>https://gist.github.com/aka7774/1a52a5dcaf57a5cdbcf65562552bb04e]]
+- [[ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—>https://gist.github.com/aka7774/1a52a5dcaf57a5cdbcf65562552bb04e]]

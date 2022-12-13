@@ -1,42 +1,42 @@
-* X/Y Plot‚É‚Â‚¢‚Ä
-webui‚Åg—p‚Å‚«‚é‹@”\B
-2í—Ş‚Ì—v‘f‚ğ•Ï“®‚³‚¹‚È‚ª‚ço—Í‚µ‚½‰æ‘œ‚ğ‚Ü‚Æ‚ß‚Ä‚­‚ê‚éƒc[ƒ‹B
-ƒvƒƒ“ƒvƒg‚Ì’²®‚âŒŸØ—p‰æ‘œ‚Ìì¬‚É‚Æ‚Ä‚à•Ö—˜B
+* X/Y Plotã«ã¤ã„ã¦
+webuiã§ä½¿ç”¨ã§ãã‚‹æ©Ÿèƒ½ã€‚
+2ç¨®é¡ã®è¦ç´ ã‚’å¤‰å‹•ã•ã›ãªãŒã‚‰å‡ºåŠ›ã—ãŸç”»åƒã‚’ã¾ã¨ã‚ã¦ãã‚Œã‚‹ãƒ„ãƒ¼ãƒ«ã€‚
+ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã®èª¿æ•´ã‚„æ¤œè¨¼ç”¨ç”»åƒã®ä½œæˆã«ã¨ã¦ã‚‚ä¾¿åˆ©ã€‚
 
-—áFScale‚ÆStep‚ğ•Ï“®‚³‚¹‚½‚Æ‚«‚Ìo—Í‚ğ”äŠr
+ä¾‹ï¼šScaleã¨Stepã‚’å¤‰å‹•ã•ã›ãŸã¨ãã®å‡ºåŠ›ã‚’æ¯”è¼ƒ
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UcrCmElUGG-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/UcrCmElUGG.jpg]]
 
 
-** Še²‚Éİ’è‚Å‚«‚é—v‘f
-|~‘I‘ğˆ|“ü—Í’l‚ÌŒ^|“®ì|”õl|
-|Nothing|•¶š—ñ (str)|‰½‚à‚µ‚È‚¢||
-|Seed|”’l (int)|‘Î‰‚·‚é’l‚Ì•ÏX|-1‚Åƒ‰ƒ“ƒ_ƒ€‚ÈSeed‚ğİ’è‚Å‚«‚éB~~iŒˆ’è‚³‚ê‚½ƒV[ƒh‚Í²–ˆ‚ÉŒÅ’èj|
-|Var. seed|”’l (int)|‘Î‰‚·‚é’l‚Ì•ÏX|Extra‚ÌVariation Seed’l~~-1‚Åƒ‰ƒ“ƒ_ƒ€‚ÈSeed‚ğİ’è‚Å‚«‚éB~~iŒˆ’è‚³‚ê‚½ƒV[ƒh‚Í²–ˆ‚ÉŒÅ’èj|
-|Var. strength|”’l (float)|‘Î‰‚·‚é’l‚Ì•ÏX|Extra‚ÌVariation‹­“x|
-|Steps|”’l (int)|‘Î‰‚·‚é’l‚Ì•ÏX||
-|CFG Scale|”’l (float)|‘Î‰‚·‚é’l‚Ì•ÏX||
-|Prompt S/R|•¶š—ñ (str)|ƒvƒƒ“ƒvƒg“à•¶š—ñ‚Ì’uŠ·|Ú×‚Í‰º‹L|
-|Prompt order|•¶š—ñ (str_permutations)|ƒvƒƒ“ƒvƒg“à•¶š—ñ‚Ì“ü‚ê‘Ö‚¦|Ú×‚Í‰º‹L|
-|Sampler|•¶š—ñ (str)|‘Î‰‚·‚é’l‚Ì•ÏX|’l‚Ìˆê——‚Í‰º‹L|
-|Checkpoint name|•¶š—ñ (str)|‘Î‰‚·‚é’l‚Ì•ÏX|“ü—Í’l‚Í•”•ªˆê’v‚Å‚à‰Â‚Á‚Û‚¢|
-|Hypernetwork|•¶š—ñ (str)|‘Î‰‚·‚é’l‚Ì•ÏX|“ü—Í’l‚Í•”•ªˆê’v‚Å‚à‰Â‚Á‚Û‚¢|
-|Hypernet str.|”’l (float)|‘Î‰‚·‚é’l‚Ì•ÏX||
-|Sigma Churn|”’l (float)|‘Î‰‚·‚é’l‚Ì•ÏX||
-|Sigma min|”’l (float)|‘Î‰‚·‚é’l‚Ì•ÏX||
-|Sigma max|”’l (float)|‘Î‰‚·‚é’l‚Ì•ÏX||
-|Sigma noise|”’l (float)|‘Î‰‚·‚é’l‚Ì•ÏX||
-|Eta|”’l (float)|‘Î‰‚·‚é’l‚Ì•ÏX|İ’è‚ÌDDIM‚Å—p‚¢‚éeta (noise multiplier)|
-|Clip skip|”’l (int)|‘Î‰‚·‚é’l‚Ì•ÏX|İ’è‚Ìstopclayers of CLIP model|
-|Denoising|”’l (float)|‘Î‰‚·‚é’l‚Ì•ÏX|img2img‚ÌƒmƒCƒY‹­“x|
-** ’l“ü—Í‚ÌƒtƒH[ƒ}ƒbƒg‚É‚Â‚¢‚Ä
-ƒJƒ“ƒ}‹æØ‚è‚Åw’è‚·‚éB
+** å„è»¸ã«è¨­å®šã§ãã‚‹è¦ç´ 
+|~é¸æŠè‚¢|å…¥åŠ›å€¤ã®å‹|å‹•ä½œ|å‚™è€ƒ|
+|Nothing|æ–‡å­—åˆ— (str)|ä½•ã‚‚ã—ãªã„||
+|Seed|æ•°å€¤ (int)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´|-1ã§ãƒ©ãƒ³ãƒ€ãƒ ãªSeedã‚’è¨­å®šã§ãã‚‹ã€‚~~ï¼ˆæ±ºå®šã•ã‚ŒãŸã‚·ãƒ¼ãƒ‰ã¯è»¸æ¯ã«å›ºå®šï¼‰|
+|Var. seed|æ•°å€¤ (int)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´|Extraã®Variation Seedå€¤~~-1ã§ãƒ©ãƒ³ãƒ€ãƒ ãªSeedã‚’è¨­å®šã§ãã‚‹ã€‚~~ï¼ˆæ±ºå®šã•ã‚ŒãŸã‚·ãƒ¼ãƒ‰ã¯è»¸æ¯ã«å›ºå®šï¼‰|
+|Var. strength|æ•°å€¤ (float)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´|Extraã®Variationå¼·åº¦|
+|Steps|æ•°å€¤ (int)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´||
+|CFG Scale|æ•°å€¤ (float)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´||
+|Prompt S/R|æ–‡å­—åˆ— (str)|ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆå†…æ–‡å­—åˆ—ã®ç½®æ›|è©³ç´°ã¯ä¸‹è¨˜|
+|Prompt order|æ–‡å­—åˆ— (str_permutations)|ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆå†…æ–‡å­—åˆ—ã®å…¥ã‚Œæ›¿ãˆ|è©³ç´°ã¯ä¸‹è¨˜|
+|Sampler|æ–‡å­—åˆ— (str)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´|å€¤ã®ä¸€è¦§ã¯ä¸‹è¨˜|
+|Checkpoint name|æ–‡å­—åˆ— (str)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´|å…¥åŠ›å€¤ã¯éƒ¨åˆ†ä¸€è‡´ã§ã‚‚å¯ã£ã½ã„|
+|Hypernetwork|æ–‡å­—åˆ— (str)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´|å…¥åŠ›å€¤ã¯éƒ¨åˆ†ä¸€è‡´ã§ã‚‚å¯ã£ã½ã„|
+|Hypernet str.|æ•°å€¤ (float)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´||
+|Sigma Churn|æ•°å€¤ (float)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´||
+|Sigma min|æ•°å€¤ (float)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´||
+|Sigma max|æ•°å€¤ (float)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´||
+|Sigma noise|æ•°å€¤ (float)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´||
+|Eta|æ•°å€¤ (float)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´|è¨­å®šã®DDIMã§ç”¨ã„ã‚‹eta (noise multiplier)|
+|Clip skip|æ•°å€¤ (int)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´|è¨­å®šã®stopâ€¦layers of CLIP model|
+|Denoising|æ•°å€¤ (float)|å¯¾å¿œã™ã‚‹å€¤ã®å¤‰æ›´|img2imgã®ãƒã‚¤ã‚ºå¼·åº¦|
+** å€¤å…¥åŠ›ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã«ã¤ã„ã¦
+ã‚«ãƒ³ãƒåŒºåˆ‡ã‚Šã§æŒ‡å®šã™ã‚‹ã€‚
 -red, blue, white
-ƒJƒ“ƒ}‚ğŠÜ‚Ş•¶š—ñ‚Íƒ_ƒuƒ‹ƒNƒI[ƒe[ƒVƒ‡ƒ“‚ÅŠ‡‚éB
+ã‚«ãƒ³ãƒã‚’å«ã‚€æ–‡å­—åˆ—ã¯ãƒ€ãƒ–ãƒ«ã‚¯ã‚ªãƒ¼ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ã§æ‹¬ã‚‹ã€‚
 -"masterpiece, high quality","highly detailed"
-ƒ_ƒuƒ‹ƒNƒH[ƒe[ƒVƒ‡ƒ“‚ğŠÜ‚Ş•¶š—ñ‚Í“ñdƒ_ƒuƒ‹ƒNƒI[ƒe[ƒVƒ‡ƒ“‚ÅƒGƒXƒP[ƒvB
+ãƒ€ãƒ–ãƒ«ã‚¯ã‚©ãƒ¼ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å«ã‚€æ–‡å­—åˆ—ã¯äºŒé‡ãƒ€ãƒ–ãƒ«ã‚¯ã‚ªãƒ¼ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¨ã‚¹ã‚±ãƒ¼ãƒ—ã€‚
 -"in ""BIG"" city, cyber","in ""SMALL"" town, rural"
 
-”’l‚ÍƒJƒ“ƒ}‹æØ‚è‚É‰Á‚¦‚ÄˆÈ‰º‚ÌƒtƒH[ƒ}ƒbƒg‚ªg—p‰Â”\B
+æ•°å€¤ã¯ã‚«ãƒ³ãƒåŒºåˆ‡ã‚Šã«åŠ ãˆã¦ä»¥ä¸‹ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆãŒä½¿ç”¨å¯èƒ½ã€‚
 -1-5 = 1, 2, 3, 4, 5
 -1-5 (+2) = 1, 3, 5
 -10-5 (-3) = 10, 7
@@ -44,34 +44,34 @@ webui‚Åg—p‚Å‚«‚é‹@”\B
 -1-10 [5] = 1, 3, 5, 7, 10
 -0.0-1.0 [6] = 0.0, 0.2, 0.4, 0.6, 0.8, 1.0
 
-** Prompt S/R‚Ì“®ì‚É‚Â‚¢‚Ä
-1”Ô–Ú‚Éw’è‚µ‚½•¶š—ñ‚ğ2”Ô–ÚˆÈ~‚Ì•¶š—ñ‚Å’uŠ·‚µ‚Ä‚¢‚­B
-‚È‚Ì‚ÅŒ³‚Æ‚È‚éƒvƒƒ“ƒvƒg‚É1”Ô–Ú‚Ì•¶š—ñ‚ªŠÜ‚Ü‚ê‚Ä‚¢‚È‚¢‚ÆƒGƒ‰[‚Æ‚È‚éB
-’uŠ·‚Íƒvƒƒ“ƒvƒgAƒlƒKƒeƒBƒuƒvƒƒ“ƒvƒg“à‚ÉoŒ»‚·‚é''‚·‚×‚Ä‚ÌŒÂŠ''‚Å’uŠ·‚³‚ê‚éB
+** Prompt S/Rã®å‹•ä½œã«ã¤ã„ã¦
+1ç•ªç›®ã«æŒ‡å®šã—ãŸæ–‡å­—åˆ—ã‚’2ç•ªç›®ä»¥é™ã®æ–‡å­—åˆ—ã§ç½®æ›ã—ã¦ã„ãã€‚
+ãªã®ã§å…ƒã¨ãªã‚‹ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã«1ç•ªç›®ã®æ–‡å­—åˆ—ãŒå«ã¾ã‚Œã¦ã„ãªã„ã¨ã‚¨ãƒ©ãƒ¼ã¨ãªã‚‹ã€‚
+ç½®æ›ã¯ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã€ãƒã‚¬ãƒ†ã‚£ãƒ–ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆå†…ã«å‡ºç¾ã™ã‚‹''ã™ã¹ã¦ã®å€‹æ‰€''ã§ç½®æ›ã•ã‚Œã‚‹ã€‚
 
--—á
---Œ³ƒvƒƒ“ƒvƒg : (A girl in the city, portrait ).(her hair is blue).(masterpiece, extremely detailed face)
----Prompt S/R(X²) : blue, red,  dark
----Prompt S/R(Y²) : hair, eyes, sky
+-ä¾‹
+--å…ƒãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ : (A girl in the city, portrait ).(her hair is blue).(masterpiece, extremely detailed face)
+---Prompt S/R(Xè»¸) : blue, red,  dark
+---Prompt S/R(Yè»¸) : hair, eyes, sky
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TShZYm8ym7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TShZYm8ym7.png]]
 
-¦ˆ—‚ÍX²¨Y²‚Ì‡‚Ås‚¤B—¼•û‚ÅPrompt S/R‚ğ‚·‚éê‡‚Í‹C‚É—¯‚ß‚Ä‚¨‚­‚Æ‚¦‚¦‚©‚àB
+â€»å‡¦ç†ã¯Xè»¸â†’Yè»¸ã®é †ã§è¡Œã†ã€‚ä¸¡æ–¹ã§Prompt S/Rã‚’ã™ã‚‹å ´åˆã¯æ°—ã«ç•™ã‚ã¦ãŠãã¨ãˆãˆã‹ã‚‚ã€‚
 
-** Prompt order‚Ì“®ì‚É‚Â‚¢‚Ä
-ƒvƒƒ“ƒvƒg“à‚Ì•¶š—ñ‚ğw’è‚µ•À‚Ñ•Ï‚¦‚Ä”äŠr‚·‚éB
-‚·‚×‚Ä‚Ì‘g‚İ‡‚í‚¹‚É‚Â‚¢‚Äs‚¤‚Ì‚Å‚·‚®–c‘å‚È”‚É‚È‚é‚Ì‚Å’ˆÓ(5í—Ş‚Ìê‡‚Í1*2*3*4*5‚Å120ƒpƒ^[ƒ“‚Æ‚©)
+** Prompt orderã®å‹•ä½œã«ã¤ã„ã¦
+ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆå†…ã®æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ä¸¦ã³å¤‰ãˆã¦æ¯”è¼ƒã™ã‚‹ã€‚
+ã™ã¹ã¦ã®çµ„ã¿åˆã‚ã›ã«ã¤ã„ã¦è¡Œã†ã®ã§ã™ãè†¨å¤§ãªæ•°ã«ãªã‚‹ã®ã§æ³¨æ„(5ç¨®é¡ã®å ´åˆã¯1*2*3*4*5ã§120ãƒ‘ã‚¿ãƒ¼ãƒ³ã¨ã‹)
 
--—á
---Œ³ƒvƒƒ“ƒvƒg : (A girl in the city, portrait ).(her hair is blue).(masterpiece, extremely detailed face)
----Prompt order(X²): "(A girl in the city, portrait ).","(her hair is blue).","(masterpiece, extremely detailed face)"
----Prompt S/R(Y²): blue, red,  dark
+-ä¾‹
+--å…ƒãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ : (A girl in the city, portrait ).(her hair is blue).(masterpiece, extremely detailed face)
+---Prompt order(Xè»¸): "(A girl in the city, portrait ).","(her hair is blue).","(masterpiece, extremely detailed face)"
+---Prompt S/R(Yè»¸): blue, red,  dark
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/t25i_ipNCI-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/t25i_ipNCI.jpg]]
 
-¦“ü‚ê‘Ö‚¦‘ÎÛ‚Æ“¯‚¶•¶š—ñ‚ª•¡”‚ ‚éê‡‚Íˆê”Ô‘O‚Ì•¶š—ñˆê‚Â‚É‚Â‚¢‚Ä•À‚Ñ‘Ö‚¦‚ğs‚¤B
-¦X²‚ÅPrompt S/R‚Å’uŠ·‚µ‚½Œã‚ÉY²‚Å‡”Ô“ü‚ê‘Ö‚¦‚æ‚¤‚Æ‚·‚é‚Æƒƒ`ƒƒƒNƒ`ƒƒ‚È‚±‚Æ‚É‚È‚é‚Ì‚Å‡˜‚É’ˆÓB
-** Sampler‚Ì–¼Ìˆê——
-•\¦–¼‚Æ•Ê–¼‚Ì‚Ç‚¿‚ç‚Å‚àg‚¦‚éB
-|~Sampler‚Ì•\¦–¼|Sampler‚Ì•Ê–¼|
+â€»å…¥ã‚Œæ›¿ãˆå¯¾è±¡ã¨åŒã˜æ–‡å­—åˆ—ãŒè¤‡æ•°ã‚ã‚‹å ´åˆã¯ä¸€ç•ªå‰ã®æ–‡å­—åˆ—ä¸€ã¤ã«ã¤ã„ã¦ä¸¦ã³æ›¿ãˆã‚’è¡Œã†ã€‚
+â€»Xè»¸ã§Prompt S/Rã§ç½®æ›ã—ãŸå¾Œã«Yè»¸ã§é †ç•ªå…¥ã‚Œæ›¿ãˆã‚ˆã†ã¨ã™ã‚‹ã¨ãƒ¡ãƒãƒ£ã‚¯ãƒãƒ£ãªã“ã¨ã«ãªã‚‹ã®ã§é †åºã«æ³¨æ„ã€‚
+** Samplerã®åç§°ä¸€è¦§
+è¡¨ç¤ºåã¨åˆ¥åã®ã©ã¡ã‚‰ã§ã‚‚ä½¿ãˆã‚‹ã€‚
+|~Samplerã®è¡¨ç¤ºå|Samplerã®åˆ¥å|
 |Euler a|k_euler_a|
 |Euler|k_euler|
 |LMS|k_lms|
@@ -84,11 +84,11 @@ webui‚Åg—p‚Å‚«‚é‹@”\B
 |DPM2 Karras|k_dpm_2_ka|
 |DPM2 a Karras|k_dpm_2_a_ka|
 
-** ŒŸØƒRƒsƒy—p
-*** \}
+** æ¤œè¨¼ã‚³ãƒ”ãƒšç”¨
+*** æ§‹å›³
 full body, foot focus, face only, pov, turn one's back, from below, from above, ass focus, side profile, close-up photography, close-up, portrait, upper body, cowboy shot, 
 looking at viewer, from behind, from side, looking away, looking back, looking down, looking up, looking to the side, looking afar
-*** ƒTƒ“ƒvƒ‰[
+*** ã‚µãƒ³ãƒ—ãƒ©ãƒ¼
 k_euler_a, k_euler, k_lms, k_heun, k_dpm_2, k_dpm_2_a, k_dpm_fast, k_dpm_ad, k_lms_ka, k_dpm_2_ka, k_dpm_2_a_ka
-*** ”’l
+*** æ•°å€¤
 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0

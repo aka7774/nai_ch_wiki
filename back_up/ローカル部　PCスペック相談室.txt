@@ -1,29 +1,29 @@
-�悩�����炲�Q�����肢���܂��B[[GPU�ɂ�鐶�����ق̌���]]
+よかったらご参加お願いします。[[GPUによる生成差異の検証]]
 
-* �͂��߂�
-- &size(28){''&color(#ffef00,#000000){�Q�[�~���O�m�[�g�p�\�R���͐�΂ɔ�����}''}
-�m�[�p�\�p�͂ł���PC�p�̃O���{�ƌ^�Ԃ����������Ă��肷�邯�ǐ��\�͑S�R�Ⴄ�ŁB
-- &size(20){''&color(#ffef00,#000000){�]����RTX4090�Ƃ����߂��}''}
-���l�̈ӌ��ɍ��E���ꂸ�����̊��ɂ������O���{/PC�𔃂��܂��傤�B
+* はじめに
+- &size(28){''&color(#ffef00,#000000){ゲーミングノートパソコンは絶対に買うな}''}
+ノーパソ用はでかいPC用のグラボと型番がすごい似てたりするけど性能は全然違うで。
+- &size(20){''&color(#ffef00,#000000){脳死でRTX4090とか勧めるな}''}
+他人の意見に左右されず自分の環境にあったグラボ/PCを買いましょう。
 
 
 * Hello Asuka Benchmark
-&size(22){AUTOMATIC1111��Stable Diffusion WebUI�p}
+&size(22){AUTOMATIC1111版Stable Diffusion WebUI用}
 
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/c6AXQ9n5B0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/c6AXQ9n5B0.png]]
 
-���̃A�X�J�̉摜��Batch count 10�ɂ���10����C�ɐ���������
-Generate��������''��ʂɃA�X�J���\�������܂�''���v�����Ă��������B100���ɂȂ����u�Ԃł͂���܂���B
-�\�ł���Ύ����ŕҏW�A�����̃R�����g��X���ɕ񍐂��Ă���������Ə�����܂��B
+あのアスカの画像をBatch count 10にして10枚一気に生成させて
+Generateを押して''画面にアスカが表視されるまで''を計測してください。100％になった瞬間ではありません。
+可能であれば自分で編集、ここのコメントやスレに報告していただけると助かります。
 
-�A�X�J�����p�p�����[�^
+アスカ生成用パラメータ
 [+]
-- Setting�^�u
--- Ignore last layers of CLIP model��2
--- eta (noise multiplier) for ancestral samplers��0.67
--- Hypernetwork��None
+- Settingタブ
+-- Ignore last layers of CLIP modelを2
+-- eta (noise multiplier) for ancestral samplersを0.67
+-- HypernetworkをNone
 
--txt2img�^�u
+-txt2imgタブ
 --Sampling Steps: 28
 --Sampling method: Euler
 --Width: 512, height: 512
@@ -38,340 +38,340 @@ Generate��������''��ʂɃA�X�J���\�������܂�''���v�����Ă��������B100���ɂȂ��
 [END]
 
 infotext
-���L�̃e�L�X�g��txt2img��Prompt���ɃR�s�y���āA�E���ɂ��鍶�������������Ƃł����͂ł��܂��B�����炭�AEta�͎����I�ɂ͔��f����Ȃ��̂Ŏ����Őݒ肷��K�v������܂��BSettings�^�u��Sampler Parameters�Z�N�V������eta (noise multiplier) for ancestral samplers
+下記のテキストをtxt2imgのPrompt欄にコピペして、右側にある左下矢印を押すことでも入力できます。おそらく、Etaは自動的には反映されないので自分で設定する必要があります。Settingsタブ→Sampler Parametersセクション→eta (noise multiplier) for ancestral samplers
 =||
 masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair
 Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name
 Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model hash: 925997e9, Eta: 0.67, Clip skip: 2, ENSD: 31337
 ||=
 
-[[���^���t���̃A�X�J�摜��>>https://image02.seesaawiki.jp/n/h/nai_ch/0ki5ejUnR6.png]]
+[[メタ情報付きのアスカ画像や>>https://image02.seesaawiki.jp/n/h/nai_ch/0ki5ejUnR6.png]]
 
-[[����3080,2060,1060,Mobile,������3060�̐l��VRAM�����Ă����Ɗ�����>>https://www.nvidia.com/ja-jp/geforce/graphics-cards/compare/]]
+[[特に3080,2060,1060,Mobile,そして3060の人はVRAM書いてくれると嬉しい>>https://www.nvidia.com/ja-jp/geforce/graphics-cards/compare/]]
 
---����(�v���l)��''Generate�������Ă���A�X�J���\�������܂ł̎���''�ŁATime taken��''�ugradio�ō�낤�v�̏㕔�ɕ\�������Time taken�̒l''�ł��B
--- Time taken�͕b�P�ʂŋL���B�s���ȏꍇ�͎���(�v���l)��]�L���Ė�����.�������B�\�[�g����Ƒ������ɕ���Ŋy�����B
+--時間(計測値)は''Generateを押してからアスカが表視されるまでの時間''で、Time takenは''「gradioで作ろう」の上部に表示されるTime takenの値''です。
+-- Time takenは秒単位で記入。不明な場合は時間(計測値)を転記して末尾に.をつけた。ソートすると速い順に並んで楽しい。
 
-** ���ʈꗗ
+** 結果一覧
 [+]
 {| class="sort edit nanj_prompt_table"
-|~w(120px):GPU|VRAM|w(120px):CPU|����(�v���l)|Time taken(�b)|�I�v�V����|���l|
-|RTX3060|12GB|Core i7-12700K|38�b|37.73|--xformers --opt-channelslast|Windows10�E������32GB WSL2 Ubuntu22.04 ������Windows�ł�43�b�Ȃ̂�11.6%�����Aopt-channelslast��������41�b�E40.53s|
-|RTX3060|12GB|Core i7-12700K|39�b|38.91s|--xformers --opt-channelslast|Windows11�������64GB�WSL2(Ubuntu22.04)�Afterburner��PL58%(44�b�Time taken: 43.85s)���\�z��Wiki�̎菇���Q��|
-|RTX3090|24GB|Core i9-13900KF|19�b|17.51|--deepdanbooru --xformers --opt-channelslast|Windows11�E������128GB�EWSL2(Ubuntu22.04)�E�u���E�U��Win11��Edge��|
-|RTX3090|24GB|Core i9-13900KF|23�b|21.65|--deepdanbooru --xformers --opt-channelslast|Windows11�E������128GB|
-|RTX3090|24GB|Core i9-12900KF|18.6�b|18.19|--xformers --no-half-vae --deepdanbooru --gradio-img2img-tool=color-sketch --opt-channelslast|RAM64GB,cuDNN8.6.0,pcie4.0 x16|
-|RTX 2070 SUPER|8GB|i5 10400F|43�b|43.36|�Ȃ�|������64GB|
-|GTX 1080|8GB|Ryzen 7 3700X|2��26�b|145.58|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|count5 size2�Ȃ�123.25�b�Acount2 size5��118.3�b�A�ӊO��VRAM�g�p�ʂ�5GB�����Ɏ��܂�̂�size���₵�ĉ񂵂�������|
-|RTX 3060|12GB|Core i5-7400|56.55�b|52.60|�Ȃ�|PCI-Express 1x-16x�̃��C�U�[�J�[�h�g�p|
-|RTX A2000|12GB|Core i5-11400|63.85�b|62.73|--xformers --opt-channelslast|Afterburner��GPU��-214MHz,VRAM��-502MHz�N���b�N�_�E��GPU�͍ő�64.5��,VRAM�͍ő�72���ŋ쓮|
-|GTX 750Ti|2GB|Core i5-10400F|23��26�b|1404.15|--lowvram||
-|RTX A2000|12GB|Core i5-11400|50.06�b|48.55|--xformers --opt-channelslast|RAM16GB|
-|RTX 2060|12GB|ryzen 3700x|53.42�b|49.94||������32GB|
-|RTX A2000|12GB|Core i5-11400|51.83�b|50.55|--xformers||
-|RTX A2000|12GB|Core i5-11400|1��4�b|62.83|�Ȃ�||
-|RTX 3060|12GB|Core i7-12700KF|43�b|41.34|--xformers --opt-channelslast|������32GB 2022/11/22git pull���{|
-|RTX 3090|24GB|Core i9-13900KF|23�b|21.42|xformers deepdanbooru||
-|RTX 3060|12GB|Core i7-6700|38.64�b|37.42|xformers opt-channelslast|Linux Mint�Œ�i���Bopt-channelslast������39.57�b�Bnvidia-smi�Ńp���[���~�b�g������100W��40.93�b�B|
-|RX 6900XT|16GB|Ryzen 7 3900X|36�b|34.51|--listen|Debian11(GUI�Ȃ�) rocm-5.2.0 GPU�̓��t�@�E��i|
-|���� ~~ (CPU�����AHD 5500)||Core i5-5200U||12743.36||CPU�Ő����B�O���{�Ȃ��̃m�[�gPC�BRAM12G�B�ȉ��̕ύX��WEBUI���{�B���������G������ƈႤ�B1��������21�������� https://rentry.org/nai-speedrun#cpu-only-steps|
-|���� ~~ (CPU�����AVega 7)|512MB|Ryzen 7 4700U||4624.09|skip-torch-cuda-test no-half no-half-vae|Dreambooth�����Ȃ��������|
-|RTX 2060|12GB|Ryzen 7 5700G|51.51�b|46|--listen --enable-insecure-extension-access --api ~~ --xformers --deepdanbooru --gradio-img2img-tool color-sketch|������32GB|
-|RTX 4090|24GB|Ryzen 7 3700X|18�b|16.09|gradio-img2img-tool=color-sketch deepdanbooru xformers opt-channelslast|21it/s���炢�o�邯��3090Ti�̌��ʂ�菭����������������CPU�̌��E����|
-|RTX 3060|12GB|Core i7-10700|46�b|43.76|--xformers --deepdanbooru||
-|RTX 3090Ti|24GB|Ryzen 7 5700X|19�b|17.71|xformers deepdanbooru|Ryzen 1800X����CPU�ύX|
+|~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX3060|12GB|Core i7-12700K|38秒|37.73|--xformers --opt-channelslast|Windows10・メモリ32GB WSL2 Ubuntu22.04 ※同環境Windowsでは43秒なので11.6%速い、opt-channelslast無しだと41秒・40.53s|
+|RTX3060|12GB|Core i7-12700K|39秒|38.91s|--xformers --opt-channelslast|Windows11･メモリ64GB･WSL2(Ubuntu22.04)･AfterburnerでPL58%(44秒､Time taken: 43.85s)環境構築はWikiの手順を参照|
+|RTX3090|24GB|Core i9-13900KF|19秒|17.51|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境|
+|RTX3090|24GB|Core i9-13900KF|23秒|21.65|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB|
+|RTX3090|24GB|Core i9-12900KF|18.6秒|18.19|--xformers --no-half-vae --deepdanbooru --gradio-img2img-tool=color-sketch --opt-channelslast|RAM64GB,cuDNN8.6.0,pcie4.0 x16|
+|RTX 2070 SUPER|8GB|i5 10400F|43秒|43.36|なし|メモリ64GB|
+|GTX 1080|8GB|Ryzen 7 3700X|2分26秒|145.58|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|count5 size2なら123.25秒、count2 size5で118.3秒、意外とVRAM使用量も5GB未満に収まるのでsize増やして回した方が得|
+|RTX 3060|12GB|Core i5-7400|56.55秒|52.60|なし|PCI-Express 1x-16xのライザーカード使用|
+|RTX A2000|12GB|Core i5-11400|63.85秒|62.73|--xformers --opt-channelslast|AfterburnerでGPUを-214MHz,VRAMを-502MHzクロックダウンGPUは最大64.5℃,VRAMは最大72℃で駆動|
+|GTX 750Ti|2GB|Core i5-10400F|23分26秒|1404.15|--lowvram||
+|RTX A2000|12GB|Core i5-11400|50.06秒|48.55|--xformers --opt-channelslast|RAM16GB|
+|RTX 2060|12GB|ryzen 3700x|53.42秒|49.94||メモリ32GB|
+|RTX A2000|12GB|Core i5-11400|51.83秒|50.55|--xformers||
+|RTX A2000|12GB|Core i5-11400|1分4秒|62.83|なし||
+|RTX 3060|12GB|Core i7-12700KF|43秒|41.34|--xformers --opt-channelslast|メモリ32GB 2022/11/22git pull実施|
+|RTX 3090|24GB|Core i9-13900KF|23秒|21.42|xformers deepdanbooru||
+|RTX 3060|12GB|Core i7-6700|38.64秒|37.42|xformers opt-channelslast|Linux Mintで定格時。opt-channelslast無しで39.57秒。nvidia-smiでパワーリミット下限の100Wで40.93秒。|
+|RX 6900XT|16GB|Ryzen 7 3900X|36秒|34.51|--listen|Debian11(GUIなし) rocm-5.2.0 GPUはリファ板・定格|
+|無し ~~ (CPU内蔵、HD 5500)||Core i5-5200U||12743.36||CPUで生成。グラボなしのノートPC。RAM12G。以下の変更でWEBUI実施。生成される絵ちょっと違う。1枚生成で21分かかる https://rentry.org/nai-speedrun#cpu-only-steps|
+|無し ~~ (CPU内蔵、Vega 7)|512MB|Ryzen 7 4700U||4624.09|skip-torch-cuda-test no-half no-half-vae|Dreambooth動かなかったやつ|
+|RTX 2060|12GB|Ryzen 7 5700G|51.51秒|46|--listen --enable-insecure-extension-access --api ~~ --xformers --deepdanbooru --gradio-img2img-tool color-sketch|メモリ32GB|
+|RTX 4090|24GB|Ryzen 7 3700X|18秒|16.09|gradio-img2img-tool=color-sketch deepdanbooru xformers opt-channelslast|21it/sくらい出るけど3090Tiの結果より少し早いだけだからCPUの限界かも|
+|RTX 3060|12GB|Core i7-10700|46秒|43.76|--xformers --deepdanbooru||
+|RTX 3090Ti|24GB|Ryzen 7 5700X|19秒|17.71|xformers deepdanbooru|Ryzen 1800XからCPU変更|
 |RTX 2070|8GB|Ryzen 7 1700X||39.73|xformers opt-channelslast|WSL2|
 |RTX 2070|8GB|Ryzen 7 1700X||42.43|xformers|WSL2|
 |RTX 2070|8GB|Ryzen 7 1700X||42.89|xformers deepdanbooru||
-|RTX 2070|8GB|Ryzen 7 1700X||59.83|medvram xformers opt-channelslast deepdanbooru|opt-channelslast�͌����ڂȂ���|
-|RTX 3060|12GB|Core i7-12700K|43�b|40.82|xformers deepdanbooru opt-channelslast|������64GB Afterburner��PL75%��(45�b�Time taken: 42.29s)PL58%(49�b�Time taken: 46.10s)opt-channelslast��L���ɂ������ɂ��2�`3�b�Z�k�o���܂���|
-|RTX 4090|24GB|Core i9-13900KF|12�b40|10.79|xformers||
-|RTX 4090|24GB|Core i9-12900K|13�b|11|xformers||
-|RTX 4090|24GB|Core i9-11900|14�b|14.25|xformers|Batch count10 Batch size1 ������64GB PL65|
-|RTX 4090|24GB|Ryzen 9 5900X|14�b|14.10|xformers opt-channelslast||
-|RTX 3090Ti|24GB|Ryzen 7 1800X|24�b|22.60|xformers||
-|RTX 3090|24GB|Ryzen 7 3700X|26�b|26.97|xformers deepdanbooru|�A�t�^�[�o�[�i�[�Ńp���[���~�b�g65%|
-|RTX 3090|24GB|Ryzen 7 3700X|23�b|23.79|xformers deepdanbooru|�A�t�^�[�o�[�i�[�Ńp���[���~�b�g65% Settings��User interface��Show progressbar�̃`�F�b�N���O��Show image creation progress every N sampling steps.��0��|
-|RTX 3090|24GB|Ryzen 7 3700X|20�b|20.85|xformers deepdanbooru|�A�t�^�[�o�[�i�[�Ńp���[���~�b�g100% Settings��User interface��Show progressbar�̃`�F�b�N���O��Show image creation progress every N sampling steps.��0��|
-|RTX 3090|24GB|Core i5-13600K|24�b|23.56|xformers deepdanbooru|�A�t�^�[�o�[�i�[�Ńp���[���~�b�g100% RAM 36GB|
-|RTX 3090|24GB|Core i5-13600K|28�b|27.61|xformers deepdanbooru|�A�t�^�[�o�[�i�[�Ńp���[���~�b�g65% RAM 36GB|
-|RTX 3090|24GB|Core i5-13600K|46�b|46.08|xformers deepdanbooru|�A�t�^�[�o�[�i�[�Ńp���[���~�b�g50% RAM 36GB|
-|RTX 3090|24GB|Core i9-12900KF|20�b|20.||grid�����؂��Ă܂����B|
-|RX 6900XT|16GB|Ryzen 7 5800X|52�b|48||Ubuntu20.04��i�ɂ� 150w�ɉ������ꍇ��1����|
-|RTX 3080Ti|12GB|Core i7-11700F|24�b|22.43||������32GB|
-|RTX 3080|12GB|Ryzen 7 5800X|26�b|26.||RTX 3080 GAMING Z TRIO 12G LHR, ������64GB|
-|RTX 3080|12GB|Ryzen 7 5800X|21�b|21.| Batch size 5, Batch count 2|RTX 3080 GAMING Z TRIO 12G LHR, ������64GB|
-|RTX 3080|10GB|Ryzen 7 5800X3D|24�b|23.93|xformers|������32GB|
-|RTX 3080|10GB|Ryzen 7 5800X3D|30�b|28.06||������32GB|
-|RTX 3080|10GB|Core i7-10700K|32�b|30.35||������32GB|
-|RTX 3080|10GB|Core i9-12900K|25.9�b|23.20|xformers|������32GB�BPL70%�ɂ����27.5�b�Atime taken24.75s|
-|RTX 3080|10GB|Core i9-11900F|28�b|26.25|xformers PL70%|������64GB|
-|RTX 3080|10GB|Core i7-8700K|26�b|24.00|xformers PL70%|ROG STRIX GeForce RTX 3080 GUNDAM EDITION, ������32GB|
-|RTX 3070Ti|8GB|Core i5-7500|32�b|28.93| xformers||
-|RTX 3070Ti|8GB|Core i5-7500|33�b|28.93| xformers PL70%||
-|RTX 3070Ti|8GB|Core i5-7500|58�b|28.93| xformers medvram||
-|RTX 3070|8GB|Core i5-12600K|31.65�b|29.24|xformers|ASUS GeForce RTX 3070 Noctua OC Edition 8GB GDDR6|
-|RTX 3070|8GB|Core i7-10700|31.44�b|30.08|xformers|������32GB|
-|RTX 3070|8GB|Ryzen 5 5600X|43.85�b|41.42|deepdanbooru no-half-vae||
-|RTX 3070 Laptop|8GB|Ryzen 7 5800H|46�b|47.37||TGP95W|
-|RTX 3060Ti|8GB|Core i5-12400|35�b|33.19| xformers||
-|RTX 3060Ti|8GB|Core i5-12400|41�b|39.08|||
+|RTX 2070|8GB|Ryzen 7 1700X||59.83|medvram xformers opt-channelslast deepdanbooru|opt-channelslastは効き目なさげ|
+|RTX 3060|12GB|Core i7-12700K|43秒|40.82|xformers deepdanbooru opt-channelslast|メモリ64GB AfterburnerでPL75%時(45秒､Time taken: 42.29s)PL58%(49秒､Time taken: 46.10s)opt-channelslastを有効にした事により2〜3秒短縮出来ました|
+|RTX 4090|24GB|Core i9-13900KF|12秒40|10.79|xformers||
+|RTX 4090|24GB|Core i9-12900K|13秒|11|xformers||
+|RTX 4090|24GB|Core i9-11900|14秒|14.25|xformers|Batch count10 Batch size1 メモリ64GB PL65|
+|RTX 4090|24GB|Ryzen 9 5900X|14秒|14.10|xformers opt-channelslast||
+|RTX 3090Ti|24GB|Ryzen 7 1800X|24秒|22.60|xformers||
+|RTX 3090|24GB|Ryzen 7 3700X|26秒|26.97|xformers deepdanbooru|アフターバーナーでパワーリミット65%|
+|RTX 3090|24GB|Ryzen 7 3700X|23秒|23.79|xformers deepdanbooru|アフターバーナーでパワーリミット65% Settings→User interfaceのShow progressbarのチェックを外しShow image creation progress every N sampling steps.を0に|
+|RTX 3090|24GB|Ryzen 7 3700X|20秒|20.85|xformers deepdanbooru|アフターバーナーでパワーリミット100% Settings→User interfaceのShow progressbarのチェックを外しShow image creation progress every N sampling steps.を0に|
+|RTX 3090|24GB|Core i5-13600K|24秒|23.56|xformers deepdanbooru|アフターバーナーでパワーリミット100% RAM 36GB|
+|RTX 3090|24GB|Core i5-13600K|28秒|27.61|xformers deepdanbooru|アフターバーナーでパワーリミット65% RAM 36GB|
+|RTX 3090|24GB|Core i5-13600K|46秒|46.08|xformers deepdanbooru|アフターバーナーでパワーリミット50% RAM 36GB|
+|RTX 3090|24GB|Core i9-12900KF|20秒|20.||grid生成切ってました。|
+|RX 6900XT|16GB|Ryzen 7 5800X|52秒|48||Ubuntu20.04定格にて 150wに下げた場合は1分程|
+|RTX 3080Ti|12GB|Core i7-11700F|24秒|22.43||メモリ32GB|
+|RTX 3080|12GB|Ryzen 7 5800X|26秒|26.||RTX 3080 GAMING Z TRIO 12G LHR, メモリ64GB|
+|RTX 3080|12GB|Ryzen 7 5800X|21秒|21.| Batch size 5, Batch count 2|RTX 3080 GAMING Z TRIO 12G LHR, メモリ64GB|
+|RTX 3080|10GB|Ryzen 7 5800X3D|24秒|23.93|xformers|メモリ32GB|
+|RTX 3080|10GB|Ryzen 7 5800X3D|30秒|28.06||メモリ32GB|
+|RTX 3080|10GB|Core i7-10700K|32秒|30.35||メモリ32GB|
+|RTX 3080|10GB|Core i9-12900K|25.9秒|23.20|xformers|メモリ32GB。PL70%にすると27.5秒、time taken24.75s|
+|RTX 3080|10GB|Core i9-11900F|28秒|26.25|xformers PL70%|メモリ64GB|
+|RTX 3080|10GB|Core i7-8700K|26秒|24.00|xformers PL70%|ROG STRIX GeForce RTX 3080 GUNDAM EDITION, メモリ32GB|
+|RTX 3070Ti|8GB|Core i5-7500|32秒|28.93| xformers||
+|RTX 3070Ti|8GB|Core i5-7500|33秒|28.93| xformers PL70%||
+|RTX 3070Ti|8GB|Core i5-7500|58秒|28.93| xformers medvram||
+|RTX 3070|8GB|Core i5-12600K|31.65秒|29.24|xformers|ASUS GeForce RTX 3070 Noctua OC Edition 8GB GDDR6|
+|RTX 3070|8GB|Core i7-10700|31.44秒|30.08|xformers|メモリ32GB|
+|RTX 3070|8GB|Ryzen 5 5600X|43.85秒|41.42|deepdanbooru no-half-vae||
+|RTX 3070 Laptop|8GB|Ryzen 7 5800H|46秒|47.37||TGP95W|
+|RTX 3060Ti|8GB|Core i5-12400|35秒|33.19| xformers||
+|RTX 3060Ti|8GB|Core i5-12400|41秒|39.08|||
 |RTX 3060Ti|8GB|Ryzen 9 5900X||35.94| xformers||
-|RTX 3060Ti|8GB|Ryzen 9 5900X|44�b|42.04|||
-|RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.25|xformers opt-channelslast|�R�A�N���b�N+65, �������N���b�N+1000, PL120%|
-|RTX 2070 SUPER|8GB|Ryzen 7 5800X||32.99| xformers|PL90%,�������N���b�N+1000�ł����l|
-|RTX 2070 SUPER|8GB|Ryzen 7 5800X|41�b|39.33||PL90%,�������N���b�N+1000�ł����l|
-|RTX 2070 SUPER|8GB|Ryzen 7 3700X|38.55�b|35.05| xformers||
-|RTX 2070 SUPER|8GB|Core i9-9900K|41�b|38.02| xformers||
-|RTX 2070|8GB|Core i7-9700K|43�b|40.06| xformers||
-|RTX 3060|12GB|Core i5-12400F|43�b|41.15| xformers||
-|RTX 3060|12GB|Core i7-7700|46�b|43.27| xformers||
-|RTX 3060|12GB|Core i7-6700|48�b|44.63| xformers||
-|RTX 3060|12GB|Core i7-6700|54�b|51.65|||
-|RTX 3060|12GB|Core i7-4790K|53�b|49.72| xformers||
-|RTX 3060|12GB|Core i7-2600K|54�b|50.64|xformers|Sandy��������|
-|RTX 3060|12GB|Core i7-2600K|56�b|52.53||Sandy��������|
-|RTX 3060|12GB|Ryzen 7 5800X|44.91�b|42.82|xformers||
-|RTX 3060|12GB|Ryzen 5 3600|45.34�b|42.48|xformers||
-|RTX 2080Ti|11GB|Core i9-9900K|36�b|32.55| xformers||
-|RTX 2060 SUPER|8GB|Ryzen 9 3900XT|41�b|41.58| xformers||
-|RTX 2060 |6GB|Core i5-6500|1��1�b|58.05| xformers||
-|RTX 3050|8GB|Core i5-8400|1��13�b|70.63|||
-|GTX 1660Ti|6GB|Ryzen 9 3900XT||151.77|--no-half --xformers| --medvram�폜|
-|GTX 1660Ti|6GB|Ryzen 9 3900XT||192.89| --medvram --no-half --xformers| --precision full�폜(1660�n�̖���--no-half�𔲂��Ɛ�������܂���)|
+|RTX 3060Ti|8GB|Ryzen 9 5900X|44秒|42.04|||
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.25|xformers opt-channelslast|コアクロック+65, メモリクロック+1000, PL120%|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||32.99| xformers|PL90%,メモリクロック+1000でも同様|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X|41秒|39.33||PL90%,メモリクロック+1000でも同様|
+|RTX 2070 SUPER|8GB|Ryzen 7 3700X|38.55秒|35.05| xformers||
+|RTX 2070 SUPER|8GB|Core i9-9900K|41秒|38.02| xformers||
+|RTX 2070|8GB|Core i7-9700K|43秒|40.06| xformers||
+|RTX 3060|12GB|Core i5-12400F|43秒|41.15| xformers||
+|RTX 3060|12GB|Core i7-7700|46秒|43.27| xformers||
+|RTX 3060|12GB|Core i7-6700|48秒|44.63| xformers||
+|RTX 3060|12GB|Core i7-6700|54秒|51.65|||
+|RTX 3060|12GB|Core i7-4790K|53秒|49.72| xformers||
+|RTX 3060|12GB|Core i7-2600K|54秒|50.64|xformers|Sandyおじさん|
+|RTX 3060|12GB|Core i7-2600K|56秒|52.53||Sandyおじさん|
+|RTX 3060|12GB|Ryzen 7 5800X|44.91秒|42.82|xformers||
+|RTX 3060|12GB|Ryzen 5 3600|45.34秒|42.48|xformers||
+|RTX 2080Ti|11GB|Core i9-9900K|36秒|32.55| xformers||
+|RTX 2060 SUPER|8GB|Ryzen 9 3900XT|41秒|41.58| xformers||
+|RTX 2060 |6GB|Core i5-6500|1分1秒|58.05| xformers||
+|RTX 3050|8GB|Core i5-8400|1分13秒|70.63|||
+|GTX 1660Ti|6GB|Ryzen 9 3900XT||151.77|--no-half --xformers| --medvram削除|
+|GTX 1660Ti|6GB|Ryzen 9 3900XT||192.89| --medvram --no-half --xformers| --precision full削除(1660系の問題で--no-halfを抜くと生成されません)|
 |GTX 1660Ti|6GB|Ryzen 9 3900XT||357.53| --medvram --precision full --no-half --xformers||
-|GTX 1080Ti|11GB|Core i9-9900K |1��56�b |114.28|||
+|GTX 1080Ti|11GB|Core i9-9900K |1分56秒 |114.28|||
 |GTX 1080|8GB|Core i9-12900||159.39|||
-|GTX 1070Ti|8GB|Core i3-12100F|2��38�b|155.64|xformers|Palit GTX1070 Ti Dual(��i),������32GB|
-|GTX 1070|8GB|Core i7-7700|3��12�b|190.22|||
-|GTX 1070 Laptop|8GB|Core i7-7700HQ|3��16�b|192.85| xformers||
-|GTX 1660Ti(Mobile)|6GB|Core i7-10750H||178.06|--precision full --no-half --xformers|Max-Q�ł͂Ȃ�|
-|GTX 1660Ti(Mobile)|6GB|Core i7-10750H||219.10|--precision full --no-half --xformers --medvram|Max-Q�ł͂Ȃ�|
+|GTX 1070Ti|8GB|Core i3-12100F|2分38秒|155.64|xformers|Palit GTX1070 Ti Dual(定格),メモリ32GB|
+|GTX 1070|8GB|Core i7-7700|3分12秒|190.22|||
+|GTX 1070 Laptop|8GB|Core i7-7700HQ|3分16秒|192.85| xformers||
+|GTX 1660Ti(Mobile)|6GB|Core i7-10750H||178.06|--precision full --no-half --xformers|Max-Qではない|
+|GTX 1660Ti(Mobile)|6GB|Core i7-10750H||219.10|--precision full --no-half --xformers --medvram|Max-Qではない|
 |GTX 1060(OC)|6GB|Ryzen 5 1600||234.97| xformers||
-|GTX 1660Ti(Max-Q)|6GB|Ryzen 7 4800HS||252.26|--precision full --no-half --xformers --medvram|�Q�[�~���O�m�[�g�p�\�R�����!|
-|GTX 1660Ti(Max-Q)|6GB|Ryzen 7 4800HS||464.86|xformers no-half-vae|no-half�s�v�ɂȂ����̂Ŏ����Ă݂�|
-|GTX 1660Ti(Max-Q)|6GB|Ryzen 7 4800HS||197.39|xformers no-half no-half-vae|no-half���Ȃ����Ă݂�|
-|GTX 970|4GB|Core i5 6500|6��17�b|373.70|||
-|GTX 970|4GB|Core i5 6500|4��8�b|244.91|--medvram|medvram�����ق��������B���Ȃ݂�xformer�L���ɂ���Ɣ{���Ԃ�������|
-|RX VEGA 56|8GB|Ryzen 7 1700|2��1�b|118|--precision full --no-half --deepdanbooru|Debian11 rocm-5.2.0 �d���̊֌W��PL=0,1(1150MHz)�ɐ���|
+|GTX 1660Ti(Max-Q)|6GB|Ryzen 7 4800HS||252.26|--precision full --no-half --xformers --medvram|ゲーミングノートパソコンやで!|
+|GTX 1660Ti(Max-Q)|6GB|Ryzen 7 4800HS||464.86|xformers no-half-vae|no-half不要になったので試してみた|
+|GTX 1660Ti(Max-Q)|6GB|Ryzen 7 4800HS||197.39|xformers no-half no-half-vae|no-halfつけなおしてみた|
+|GTX 970|4GB|Core i5 6500|6分17秒|373.70|||
+|GTX 970|4GB|Core i5 6500|4分8秒|244.91|--medvram|medvramつけたほうが速い。ちなみにxformer有効にすると倍時間がかかる|
+|RX VEGA 56|8GB|Ryzen 7 1700|2分1秒|118|--precision full --no-half --deepdanbooru|Debian11 rocm-5.2.0 電源の関係でPL=0,1(1150MHz)に制限|
 |}
 [END]
 
-** �Q�l�l(�{�ƁE�N���E�h�R���s���[�e�B���O)
+** 参考値(本家・クラウドコンピューティング)
 [+]
 {| class="sort edit nanj_prompt_table"
-|~�T�[�r�X��|w(100px):GPU|VRAM|w(120px):CPU|����(�v���l)|Time taken|�I�v�V����|���l|
-|Google Colaboratory|NVIDIA Tesla T4|15GB|||51.66|xformers opt-channelslast|conda Python 3.9.12 ckpt��38c1ebe3(Anyv3-fp16)�ɂ����47.48|
-|Google Compute Engine|NVIDIA Tesla V100|16GB HBM2|n1-standard-4 SkylakeXeon 4C|1��45�b|31.0|--share --gradio-debug --gradio-auth|xformers�����Acount2 size5�Ȃ�19.5�b|
-|Google Compute Engine|NVIDIA Tesla T4|16GB|n1-standard-4 SkylakeXeon 4C|1��5�b|63.11|--share --gradio-debug --gradio-auth|xformers�����C���X�^���X�̓A�����J���C��|
-|Google Colaboratory|NVIDIA Tesla T4|15GB|Xeon 2.20GHz|67�b|64.33s|||
-|NovelAI|-|-|-|25�`28�b|-|xformers|novelAI�̃T�C�g�Ŗ{���̃n���[�A�X�J�������ăV�[�h�������_���ɂ��\�������@���{���Ԃŕ���23:50���Ɏ��s|
-|Kaggle|NVIDIA Tesla T4 x2|30GB(15GB x2)|2�R�ACPU(�ڍוs��)||01:01||���ʂɐݒ�~�X���đ��x�o�ĂȂ��\������|
-|Google Colaboratory|NVIDIA A100|40GB|Xeon @2.20Ghz 6C/12T||00:26||batchsize10�ɂ�����00:06�ł���|
-|Paperspace Gradient|Quadro M4000|8GB|Xeon E5-2623 v4||324.38||�����v����|
-|Paperspace Gradient|NVIDIA A4000|16GB|�s�� 8�R�ACPUs|35�b|||8�h��/���̃v�����ɂ�|
-|Paperspace Gradient|NVIDIA A100|80GB|�s�� 8�R�ACPUs|19�b||xformers|39�h��/���̃v�����ɂ�|
+|~サービス名|w(100px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken|オプション|備考|
+|Google Colaboratory|NVIDIA Tesla T4|15GB|||51.66|xformers opt-channelslast|conda Python 3.9.12 ckptを38c1ebe3(Anyv3-fp16)にすると47.48|
+|Google Compute Engine|NVIDIA Tesla V100|16GB HBM2|n1-standard-4 SkylakeXeon 4C|1分45秒|31.0|--share --gradio-debug --gradio-auth|xformers無し、count2 size5なら19.5秒|
+|Google Compute Engine|NVIDIA Tesla T4|16GB|n1-standard-4 SkylakeXeon 4C|1分5秒|63.11|--share --gradio-debug --gradio-auth|xformers無しインスタンスはアメリカ西海岸|
+|Google Colaboratory|NVIDIA Tesla T4|15GB|Xeon 2.20GHz|67秒|64.33s|||
+|NovelAI|-|-|-|25〜28秒|-|xformers|novelAIのサイトで本物のハローアスカ生成してシードをランダムにし十枚生成　日本時間で平日23:50頃に実行|
+|Kaggle|NVIDIA Tesla T4 x2|30GB(15GB x2)|2コアCPU(詳細不明)||01:01||普通に設定ミスって速度出てない可能性あり|
+|Google Colaboratory|NVIDIA A100|40GB|Xeon @2.20Ghz 6C/12T||00:26||batchsize10にしたら00:06でした|
+|Paperspace Gradient|Quadro M4000|8GB|Xeon E5-2623 v4||324.38||無料プラン|
+|Paperspace Gradient|NVIDIA A4000|16GB|不明 8コアCPUs|35秒|||8ドル/月のプランにて|
+|Paperspace Gradient|NVIDIA A100|80GB|不明 8コアCPUs|19秒||xformers|39ドル/月のプランにて|
 |}
 [END]
 
-* ��������SSD��HDD
+* メモリとSSDとHDD
 
-���f���̃}�[�W�Ƃ�������(VRAM�łȂ����C��������)��H������������̂ŁA�Œ�16GB�A���i�g���ƕ��s����Ȃ�32GB�͗~�����B
+モデルのマージとかメモリ(VRAMでなくメインメモリ)を食う処理もあるので、最低16GB、普段使いと並行するなら32GBは欲しい。
 
-SSD�͏��Ղ�}�������̂͂킩�邯��RamDisk�Ƃ��H�v����Ӗ��͂Ȃ��B��������(TBW)���o�N�򉻂ŉ���ق�������
-500GB�ȏ�̂��̂��g����StableDiffusion�֘A�ł͏\��
+SSDは消耗を抑えたいのはわかるけどRamDiskとか工夫する意味はない。総書込量(TBW)より経年劣化で壊れるほうが多い
+500GB以上のものを使えばStableDiffusion関連では十分
 
-���Ƃ͐F�X�ƕۑ����������̂������Ă����̂�HDD�𑝐݂��Ă����ƈ��S�BUSB�̊O�t���Ƃ��ł������Ǝv���B
+あとは色々と保存したいものが増えていくのでHDDを増設しておくと安心。USBの外付けとかでもいいと思う。
 
-*PC�X�y�b�N�n�T�C�g������Ƃ��̐S�\��
-���������I�ȃl�b�g���e���V�[�̘b�ɂȂ邪�O�[�O�������ŏo�Ă���悤�ȃT�C�g�́A�����Ă��̏��i�����X�X�����Ă�킯����Ȃ�
-''�R���S�z�������Ă��O�ɍL�����甃�킹�悤�Ƃ��Ă�''�A�t�B�J�X�Ȃ��
-�{�g���l�b�N�Ƃ��͍ł�����ȁ@�{�g���l�b�N�ɂȂ邩������Ȃ��ƕs��������Ă邯��
-����ۂǌÂ�CPU�ł��Ȃ�����덷���x�ɂ����ς���
-�����ƌ��؂��ꂽ�f�[�^�𒲂ׂĔ��f����ׂ���
+*PCスペック系サイトを見るときの心構え
+凄く初歩的なネットリテラシーの話になるがグーグル検索で出てくるようなサイトは、決してその商品をおススメしてるわけじゃない
+''嘘八百ホラ吹いてお前に広告から買わせようとしてる''アフィカスなんや
+ボトルネックとかは最たる例やな　ボトルネックになるかもしれないと不安を煽ってるけど
+よっぽど古いCPUでもない限り誤差程度にしか変わらん
+ちゃんと検証されたデータを調べて判断するべきや
 
-** �Q�[�~���O�m�[�g�p�\�R���ɂ���
-Stable Diffusion webUI�̓}�C�j���O���݂Ɏg�p��100�p�[�Z���g�ɒ���t������ԂŃO���{�����g����
-''�m�[�g�p�\�R�����Ƃ��̗�p���\�ł͑S���₦�Ȃ�''��Ƀt�@�������邳��
-�X�y�b�N�����݂�Ύv�������悳�����Ɍ����Ă��܂�(����rtx3080)��������񂯂�
-apex�⃔�@���Ƃ��y���Q�[���ŃC�L���U�炩���Ă邾���̎��p���̂Ȃ��X�y�b�N�Ԓ��ł͖�����
-��قǂ̗��R�������Ă��f�X�N�g�b�v�𔃂�
+** ゲーミングノートパソコンについて
+Stable Diffusion webUIはマイニング並みに使用率100パーセントに張り付いた状態でグラボを酷使する
+''ノートパソコンごときの冷却性能では全く冷えない''上にファンがうるさい
+スペックだけみれば思ったよりよさそうに見えてしまう(特にrtx3080)かもしれんけど
+apexやヴァロとか軽いゲームでイキリ散らかしてるだけの実用性のないスペック番長では無理や
+よほどの理由があってもデスクトップを買え
 
-*�X�y�b�N�Ɛ������x�ɂ���
-��{�I��CUDA�R�A���ƃ������ш敝�������قǐ����������Ȃ�B
-�������ACUDA�R�A���̓������ш敝�قǂ̉e���͂Ȃ��A�������e�ʂ���������ƌ����đ����킯�ł͂Ȃ�(RTX3060���ł����)�B
+*スペックと生成速度について
+基本的にCUDAコア数とメモリ帯域幅が多いほど生成が速くなる。
+しかし、CUDAコア数はメモリ帯域幅ほどの影響はなく、メモリ容量も多いからと言って速いわけではない(RTX3060が最たる例)。
 
-**CPU�{�g���l�b�N�̌��،���
-�������x��18it/s�ȉ��ł͂قƂ�ǉe�����Ȃ����A18it/s�𒴂��������肩��}���ɃV���O���X���b�h���\�ɂ��{�g���l�b�N���o�₷���Ȃ�
-�قƂ�ǉe�����Ȃ��Ƃ����Ă�CPU���x���Ɛ����J�n�E�I�����x���Ȃ�
-�ڈ��Ƃ���Cinebench R23�̃V���O���R�A�̃X�R�A�~0.0176�ł���CPU�̍ő呬�x���킩��
+**CPUボトルネックの検証結果
+処理速度が18it/s以下ではほとんど影響しないが、18it/sを超えたあたりから急激にシングルスレッド性能によるボトルネックが出やすくなる
+ほとんど影響しないといってもCPUが遅いと生成開始・終了が遅くなる
+目安としてCinebench R23のシングルコアのスコア×0.0176でそのCPUの最大速度がわかる
 
-RTX3090�ȏ�̃n�C�G���hGPU���g���Ă��Ȃ���Α�7����Intel Core����2����AMD Ryzen�ȍ~�ł���΂����Ǝv��
-�ł���������Sandy��Haswell����̂悤�ȌÂ�����CPU�͌�������
+RTX3090以上のハイエンドGPUを使っていなければ第7世代Intel Coreか第2世代AMD Ryzen以降であればいいと思う
+でもさすがにSandyやHaswell世代のような古すぎるCPUは厳しいぞ
 
 
-*VRAM�Ɖ摜�T�C�Y�ɂ���
+*VRAMと画像サイズについて
 
-FHD��Highres, fix������������3060���������߂�Ł[
+FHDでHighres, fixしたかったら3060がおすすめやでー
 
-PC�̎g�p�󋵂Ƃ����������[�N������̂ł��������̖ڈ��ł��B
-���Ƃ���V���߂̃��f����--no-half-vae���Ă�Ƃ����Ɨ]�T�Ȃ��Ȃ�B
+PCの使用状況とかメモリリークもあるのでだいたいの目安です。
+あとこれ新しめのモデルで--no-half-vaeしてるともっと余裕なくなる。
 
-|~VRAM|Options|�ő�WxH|
+|~VRAM|Options|最大WxH|
 |4GB|lowvram|512x768|
 |6GB|medvram xformers|1536x1024|
 |8GB|xformers|1920x1088 1472x1472|
-�ő�WxH�𒴂���Əo�͉摜���^�����ɂȂ邩�A�������s���ŃG���[�ɂȂ�B
+最大WxHを超えると出力画像が真っ黒になるか、メモリ不足でエラーになる。
 
-webui-user.bat�́uset COMMANDLINE_ARGS=�v�̌��Ɂu--xformers --opt-channelslast�v������ƁA20%�ȏ�̑��x���P�Ɛ�������VRAM�����}������ʂ�����B
-Embedding��Hypernetwork�̊w�K��VRAM8GB�ł��ł���B
-DreamBooth��11�`12GB�K�v�Ǝv���Ă������B
+webui-user.batの「set COMMANDLINE_ARGS=」の後ろに「--xformers --opt-channelslast」をつけると、20%以上の速度改善と生成中のVRAM消費を抑える効果がある。
+EmbeddingとHypernetworkの学習はVRAM8GBでもできる。
+DreamBoothは11〜12GB必要と思っておこう。
 
-**���摜���o�͂����ۂ̃g���u���V���[�e�B���O
-�܂��͋N�������Ɂu--no-half-vae�v�����Ă݂�B�㏞�Ƃ���VRAM��������������J�n�Ɏ኱�������悤�ɂȂ�B
-�ˑR�^�����ɂȂ肾������ċN������B
+**黒画像が出力される際のトラブルシューティング
+まずは起動引数に「--no-half-vae」をつけてみる。代償としてVRAM消費が増加し生成開始に若干もたつくようになる。
+突然真っ黒になりだしたら再起動する。
 
-- ��ɉ摜���^�����ɂȂ�
-�u--precision full --no-half�v������B�㏞�Ƃ��đ��x���ቺ��VRAM�����������B
-''GTX 16�n�͏�L�̈������K�{�ƂȂ�B''�����ƕK�������Έ�F�ɂȂ��Ă��܂��B
-�t��Radeon�n�ł�VRAM������Ȃ葝���Ă��܂��̂Ŗ�薳���Ȃ�O���̂𐄏��B
+- 常に画像が真っ黒になる
+「--precision full --no-half」をつける。代償として速度が低下しVRAM消費が増加する。
+''GTX 16系は上記の引数が必須となる。''無いと必ず黒か緑一色になってしまう。
+逆にRadeon系ではVRAM消費がかなり増えてしまうので問題無いなら外すのを推奨。
 
-- �����_���ɐ^�����ɂȂ�
-�u--no-half-vae�v������Α��͉��P���邪�A����ł������_���ɐ^�����ɂȂ�Ȃ�ق��̃A�v���̂�����VRAM���ꎞ�I�ɕs�����Ă�\��������B
-�������߂�iGPU����CPU�ɂ��āA���j�^��u���E�U���������ŕ`�悷��悤[[�O���t�B�b�N�̐ݒ�>https://www.google.com/search?q=windows+10+%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%81%AE%E8%A8%AD%E5%AE%9A]]�������邱�ƁB
-�v��dGPU���摜������p�ɂ���B
+- ランダムに真っ黒になる
+「--no-half-vae」をつければ大抵は改善するが、それでもランダムに真っ黒になるならほかのアプリのせいでVRAMが一時的に不足してる可能性がある。
+おすすめはiGPUつきのCPUにして、モニタやブラウザをそっちで描画するよう[[グラフィックの設定>https://www.google.com/search?q=windows+10+%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%81%AE%E8%A8%AD%E5%AE%9A]]をいじること。
+要はdGPUを画像生成専用にする。
 
-����炷�ׂĂ������Ă��_���Ȃ炻��GPU�ł͑��������B�摜�𑜓x�������邩������VRAM������GPU�𔃂�
+これらすべてを試してもダメならそのGPUでは多分無理。画像解像度を下げるかもっとVRAMが多いGPUを買え
 
-*���ۂ̏��ǂꔃ���΂����́H
+*実際の所どれ買えばいいの？
 
-''Intel��GPU�͐�΂ɔ�����''�����������l������炵���̂Ől���ɂȂ��Ă����Ȃ�ǂ���
-AMD��Linux��ł���Γ��삷�邪�ʓ|�Ȃ̂ł������߂��Ȃ�
+''Intel製GPUは絶対に買うな''→動かした人がいるらしいので人柱になってくれるならどうぞ
+AMDはLinux上であれば動作するが面倒なのでおすすめしない
 
-A. ''���O�̗\�Z�����������NVIDIA�̏�ʃ��f���𔃂�''
+A. ''お前の予算が許す限りのNVIDIAの上位モデルを買え''
 
-�ȉ��ڍ�
+以下詳細
 [+]
 - RTX 4090
-3090Ti��1.5�{�ȏ�̐��\����������̉���
-Cyberpunk 2077 4K�E���g���ݒ��72fps(3090��44fps)�Ƃ������|�I���\��
-�p�X�g���[�V���O��8K�����p�������܂Ō�����10�N�͎g����(�ϋv���͍l�����Ȃ�)
-���̃X�y�b�N�����邱�ƂȂ���A�{�̂��ƂĂ��傫�����ߗ�p���\���D��Ă���
-�����ׂłԂ��AI�摜�����Ɣ��ɑ������ǂ��B
-�\�Z�������Ȃ琥��Ƃ��w�����ׂ��B
+3090Tiの1.5倍以上の性能をもつ次世代の化物
+Cyberpunk 2077 4Kウルトラ設定で72fps(3090は44fps)という圧倒的性能で
+パストレーシングか8Kが実用化されるまで向こう10年は使える(耐久性は考慮しない)
+そのスペックもさることながら、本体がとても大きいため冷却性能が優れており
+高負荷でぶん回すAI画像生成と非常に相性が良い。
+予算が許すなら是非とも購入すべき。
 
 - RTX 4080
-3090Ti�Ɠ����̒l�i�A��菭�Ȃ��d�͂�3090Ti�𒴂��鐫�\�𔭊�����
-4090�ɕC�G����傫���ŗ�p���\���D��Ă���A�����ׂłԂ��AI�摜�����Ɣ��ɑ������ǂ�
-4090����������Ȃ炱���炪�I�X�X������VRAM��16GB�Ȃ̂��Y�݂ǂ���
-�Q�[���ړI�Ȃ�R�X�p�̂���RX7900XTX���o��̂�҂����ق�������
+3090Tiと同等の値段、より少ない電力で3090Tiを超える性能を発揮する
+4090に匹敵する大きさで冷却性能が優れており、高負荷でぶん回すAI画像生成と非常に相性が良い
+4090が高すぎるならこちらがオススメだがVRAMは16GBなのが悩みどころ
+ゲーム目的ならコスパのいいRX7900XTXが出るのを待ったほうがいい
 
 - RTX 3090Ti
-���\�ƃ��b�p��RTX 4080�Ƀ{������
-���X����𔃂��Ӗ��͑S������
-4090��4080�𔃂�
+性能とワッパでRTX 4080にボロ負け
+今更これを買う意味は全く無い
+4090か4080を買え
 
 - RTX 3090
-VRAM24GB�̌�����@�̉�����
-�l�i�����̃X�y�b�N�������AVRAM12GB�ȏ��_���Ȃ炱����
-�Q�[���ł�AI�w�K�ł����ł��\���ɂ��Ȃ��D����
-�����l�オ��X���ɂ���̂ŁA�l�i����ł�4090��4080�̂ق��������ꍇ������
+VRAM24GBの現世代機の化け物
+値段相応のスペックを持ち、VRAM12GB以上を狙うならこれ一択
+ゲームでもAI学習でも何でも十分にこなす優等生
+だが値上がり傾向にあるので、値段次第では4090か4080のほうがいい場合もある
 
 - RTX 3080Ti
-3080�̐i���Ƃ�������VRAM�����炵��3090�Ƃ��������ʒu
-�l�i�𒲂ׂ���A�V�i���i��3080�Ƃقړ����ʂ̒l�i�Ŕ����Ă�񂾂��ǂ��Ȃ��Ă񂾂���c
-�ŋ߂͂��܂蔄���ĂȂ����A�w�K���l������Ɗ撣����3090�_����
+3080の進化というよりはVRAMを減らした3090という立ち位置
+値段を調べたら、新品価格で3080とほぼ同じ位の値段で売ってるんだがどうなってんだこれ…
+最近はあまり売ってないし、学習を考慮すると頑張って3090狙おう
 
 - RTX 3080(12GB)
-�����O���{�̃G���g���[���f��
-VRAM�Ɛ��\�𗼗����������Ȃ�R��
-�������AStable Diffusion��Microsoft Flight Simulator�Ȃǃx���`�}�[�N�����̃\�t�g������Ƃ����ƃX�y�b�N���~�����Ȃ���̓���
-�}�C�j���O������10GB�ɒނ���LHR�Ή���12GB�ł̒��Â����Ȃ�����̂�
-�V�i�Ŕ����Ȃ�TI�ŁA���ÂŔ����Ȃ疳��ł��I�X�X������
+高級グラボのエントリーモデル
+VRAMと性能を両立させたいならコレ
+しかし、Stable DiffusionやMicrosoft Flight Simulatorなどベンチマーク紛いのソフトをするともっとスペックが欲しくなる沼の入口
+マイニング落ちの10GBに釣られてLHR対応の12GB版の中古がかなり安いので
+新品で買うならTI版、中古で買うなら無印版をオススメする
 
 - RTX 3080(10GB)
-�����O���{�̃G���g���[���f���A�ƌ�������㩃��f��(AI�����I��)
-�����������Ȃ��łƂ���������������{�^
-DreamBooth�ł̊w�K��������ꍇVRAM�����X�낤���̂ŁA12GB�ł𔃂��������K��
+高級グラボのエントリーモデル、と言う名の罠モデル(AI生成的に)
+メモリが少ない版というかこっちが基本型
+DreamBoothでの学習をさせる場合VRAMが少々危ういので、12GB版を買った方が幸せ
 
-- RTX 3070�ARTX 3070Ti
-4K60fps���\�����ADLSS���Ȃ��ƈ��肵��60fps���o�����A�▭�Ȑ��\�s����������V�[���������B
-���K��4K�Q�[�~���O��VR�ړI�Ȃ�3080�𔃂��������ǂ��B
-AI�̊w�K�͂��Ȃ��A4K��������x�����΂����Ƃ����l���AWQHD���j�^�[�Ŏg���Ȃ�I�X�X��
+- RTX 3070、RTX 3070Ti
+4K60fpsも可能だが、DLSSがないと安定して60fpsを出せず、絶妙な性能不足を感じるシーンが多い。
+快適な4KゲーミングやVR目的なら3080を買った方が良い。
+AIの学習はしない、4Kがある程度動けばいいという人か、WQHDモニターで使うならオススメ
 
 - RTX 3060Ti
-RTX 2080SUPER�����̐��\�BDLSS�������Ă�4K60fps����t���͌�����
-WQHD���j�^�[�ł�������
-AI�̊w�K�����Ȃ��Ȃ炱��ł�����
+RTX 2080SUPER相当の性能。DLSSがあっても4K60fps張り付きは厳しい
+WQHDモニターでおすすめ
+AIの学習をしないならこれでもいい
 
 - RTX 3060(12GB)
-��������Ƃ肠�������ꔃ����
-VRAM��12GB������̂�DreamBooth���g�����萳�ɃN���G�C�^�[�ׂ̈̃X�y�b�N
-�t��HD�ł���΍ŐV�̃Q�[�������K
-���Ȃ݂�PS5�Ƃقړ����ʂ̃X�y�b�N
-��q��8GB�łƊԈႦ�Ĕ���Ȃ��悤�ɒ���
+迷ったらとりあえずこれ買おう
+VRAMが12GBもあるのでDreamBoothが使えたり正にクリエイターの為のスペック
+フルHDであれば最新のゲームも快適
+ちなみにPS5とほぼ同じ位のスペック
+後述の8GB版と間違えて買わないように注意
 
 - RTX 3060(8GB)
-�ŋߏo�Ă����V�^����VRAM8GB�Ƃ��������Ă͂����Ȃ�㩃��f��
-���i��12GB�ł̕��������ƌ����t�]���ۂ��o�Ă�A���݈Ӌ`���s���ȃ~�h�������W���f��
-�Q�[��������Ȃ�3070�n�AAI�쐬�Ȃ�3060(12GB)��������
+最近出てきた新型だがVRAM8GBという買ってはいけない罠モデル
+価格も12GB版の方が安いと言う逆転現象が出てる、存在意義が不明なミドルレンジモデル
+ゲームをするなら3070系、AI作成なら3060(12GB)がお勧め
 
 - RTX 3050
-�������ŐV�Œ��␫�\�O���{���Ǝv������ł���GTX 1660Ti
-�Ƃ肠�����O���{���悹�����l�����B
-�ꎞ���͍�������5���Ȃǂƕ��s�����Ȓl�i�Ŕ����Ă������A3���~��O���Ȃ畁�ʂɃA���B
+自分を最新版超絶性能グラボだと思い込んでいるGTX 1660Ti
+とりあえずグラボを乗せたい人向け。
+一時期は高騰して5万などと分不相応な値段で売られていたが、3万円台前半なら普通にアリ。
 
-- GeForce GTX�V���[�Y�S��
-�Q�[���ł͂����܂ō����Ȃ��Ă��AAI�֘A�ł�RTX�ɐ��{�̍���������قǂɒx��
-���Q�[���p
+- GeForce GTXシリーズ全般
+ゲームではそこまで差がなくても、AI関連ではRTXに数倍の差をつけられるほどに遅い
+専らゲーム用
 
 [END]
 
-A. �ǂ�𔃂����Ŗ����Ă�Ȃ�3060 12GB�𔃂�
+A. どれを買うかで迷ってるなら3060 12GBを買え
 [+]
-���R��5�B
-- �@�O�Ƃ����قǂ̍��z����Ȃ�(���l�̊��z�ł�)
-- VRAM������̃R�X�p�ƃ��b�p�������B650W�d�����炢�œ����B
-- �w�K����̂ɍŒ���K�v������B���͋����Ȃ��Ă���ł������Ȃ邩���m��Ȃ��B
-- �������鎞�ɍ��𑜓x�ŏo�������Ȃ邩���m��Ȃ�����BHighres. fix
-- ���̖���Colab�̊��蓖��VRAM��12GB�����A���ꂪ�_���Ȃ�3090��4080���K�v�ɂȂ邩��B
+理由は5つ。
+- 法外というほどの高額じゃない(※個人の感想です)
+- VRAMあたりのコスパとワッパがいい。650W電源くらいで動く。
+- 学習するのに最低限必要だから。今は興味なくても後でしたくなるかも知れない。
+- 生成する時に高解像度で出したくなるかも知れないから。Highres. fix
+- 今の無料Colabの割り当てVRAMが12GBだし、これがダメなら3090や4080が必要になるから。
 
-�������ASD2.0��WD1.4�ŃX�y�b�N�s������������A
-4070Ti�Ȃǂ̐V���i�����\����Ă������̂ق����ǂ��Ȃ�\���͏\���ɂ���B
+ただし、SD2.0やWD1.4でスペック不足を感じたり、
+4070Tiなどの新製品が発表されてそっちのほうが良くなる可能性は十分にある。
 
-TDP�ȂǃX�y�b�N�̎Q�l��
+TDPなどスペックの参考に
 https://wikiwiki.jp/nvidiavga/GPU%E4%BB%95%E6%A7%98%E4%B8%80%E8%A6%A7%E8%A1%A8
 
-3060����PC�́APC�V���b�v��15���O��Ŕ�����BGPU�P�̂Ȃ�5���O��B
-15���o���Ȃ�L���ȃV���b�v�ŐV�i�������ق��������Ǝv�����B
-�Ԉ����3060 8GB�𔃂�Ȃ��悤�ɁB3060Ti��8GB������_���B
-�������͂Ȃ�Ƃ�����32GB�ɑ��݂����ق������S�B
+3060搭載PCは、PCショップで15万前後で買える。GPU単体なら5万前後。
+15万出すなら有名なショップで新品買ったほうがいいと思うぞ。
+間違って3060 8GBを買わないように。3060Tiも8GBだからダメ。
+メモリはなんとかして32GBに増設したほうが安心。
 
-�����ƃP�`���Ē��Â�^������_���Ȃ�2060 12GB�܂ł̓A���B
-1060�Ƃ�1660�Ƃ��͐��{�x���Ȃ�̂�VRAM�e�ʂ�u���Ƃ��Ă��i�V���ȁB
+もっとケチって中古や型落ちを狙うなら2060 12GBまではアリ。
+1060とか1660とかは数倍遅くなるのでVRAM容量を置いといてもナシかな。
 [END]
 
-�Q�[�~���O�m�[�g�p�\�R���������߂ł��Ȃ����R
+ゲーミングノートパソコンをお勧めできない理由
 [+]
-3050��3060���ڃm�[�g��VRAM�e�ʂ��f�X�N�g�b�v��菭�Ȃ��B
-8GB�����xformers���ĉ𑜓x���グ�邱�Ƃ��o���邪�A
-6GB����medvram���K�v�ɂȂ��đ��x���ቺ���Ă��܂��B
+3050と3060搭載ノートはVRAM容量がデスクトップより少ない。
+8GBあればxformersつけて解像度を上げることが出来るが、
+6GBだとmedvramが必要になって速度が低下してしまう。
 
-3070�Ȃ�VRAM 8GB�Ńf�X�N�g�b�v�Ɠ����ɂȂ邪�A
-�\�Z�Ƃ��Ă�3060 12GB���ڃf�X�N�g�b�v��荂���Ȃ�B
+3070ならVRAM 8GBでデスクトップと同じになるが、
+予算としては3060 12GB搭載デスクトップより高くなる。
 
-3080��3080Ti�ɂ�VRAM 16GB���f�������薣�͓I�����A
-�ǂ�ȂɈ����Ă�30���~��Ȃ̂ŁA��������������3090���ڃf�X�N�g�b�v�Ɏ肪�͂��B
+3080や3080TiにはVRAM 16GBモデルがあり魅力的だが、
+どんなに安くても30万円台なので、もう少し足せば3090搭載デスクトップに手が届く。
 
-��p���\�̈�����m�[�g�p�\�R�����L��GPU���\�ቺ�́A
-�Q�Ă�ԂɊG��ʎY������w�K�Ɋۈ�������Ă����オ�I��������Ƃ������āA
-AI�G�ł͂����܂ő傫�Ȗ��ɂȂ�Ȃ����A�P���ɃR�X�p�͈����B
+冷却性能の悪さやノートパソコン特有のGPU性能低下は、
+寝てる間に絵を量産したり学習に丸一日かけてた時代が終わったこともあって、
+AI絵ではそこまで大きな問題にならないが、単純にコスパは悪い。
 [END]
 
-** RTX40�V���[�Y�̒��ӎ���
-�⏕�d���R�l�N�^�̔��M�ɂ��Z�����邱�Ƃ�����
-[[NVIDIA�����̒�������>>https://nvidia.custhelp.com/app/answers/detail/a_id/5413]]�ɂ��ƁA�R�l�N�^�����S�ɑ}������Ă��Ȃ����Ƃ�����
-�w���҂̓R�l�N�^���������荷�����݁A�m�F���ׂ�
+** RTX40シリーズの注意事項
+補助電源コネクタの発熱により融解することがある
+[[NVIDIA公式の調査結果>>https://nvidia.custhelp.com/app/answers/detail/a_id/5413]]によると、コネクタが完全に挿入されていないことが原因
+購入者はコネクタをしっかり差し込み、確認すべき
 
 
 

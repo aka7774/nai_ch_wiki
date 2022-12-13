@@ -3,19 +3,19 @@
 
 ----------------------
 
-�v�����v�g��ϊ��ł����
-���ȐӔC�Ŏg���Ă�
-�X�}�z�̏ꍇ��PC�T�C�g���J���Ă�
+プロンプトを変換できるで
+自己責任で使ってな
+スマホの場合はPCサイトを開いてな
 
 
-�o�O�񍐁A��āAPR�͂����ɂ�낵����
+バグ報告、提案、PRはここによろしくな
 https://github.com/naisd5ch/novel-ai-5ch-wiki-js
 
-** ���m�o�O
-�ϊ�����webui��":d"�݂����ɃR�������g���Ă���ƁA����
-�ϊ�����webui��"(hoge:1.0)�݂�����1.0������ɋ߂��������ƁA����
+** 既知バグ
+変換元がwebuiで":d"みたいにコロンが使われていると、壊れる
+変換元がwebuiで"(hoge:1.0)みたいに1.0かそれに近い数字だと、壊れる
 
-* ���
+* 解説
 
-�����̋��x�̉���͂�����
+公式の強度の解説はここや
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#attentionemphasis

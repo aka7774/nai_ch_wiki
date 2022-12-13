@@ -1,18 +1,18 @@
-[+]•ÒW—pƒR[ƒhƒeƒ“ƒvƒŒ[ƒg
-*** ƒŠƒtƒ@ƒŒƒ“ƒX
-- [[wiki‰ü‘P]]
-- [[wiki•ÒW•û–@]]
+[+]ç·¨é›†ç”¨ã‚³ãƒ¼ãƒ‰ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ
+*** ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹
+- [[wikiæ”¹å–„]]
+- [[wikiç·¨é›†æ–¹æ³•]]
 - [[Wiki_EditingResources]]
 
-*** ƒe[ƒuƒ‹ƒeƒ“ƒvƒŒ[ƒg
-¥ ƒvƒƒ“ƒvƒg—pF”Ä—p
+*** ãƒ†ãƒ¼ãƒ–ãƒ«ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ
+â–¼ ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆç”¨ï¼šæ±Žç”¨
 
-¡PromptTable_t1_v1.0.0
-R18Žô•¶‘S•¶‚æ‚èˆø—pBNo‚ð’Ç‰Á
+â– PromptTable_t1_v1.0.0
+R18å‘ªæ–‡å…¨æ–‡ã‚ˆã‚Šå¼•ç”¨ã€‚Noã‚’è¿½åŠ 
 =|BOX|
 {| class="nanj_prompt_table edit sort"
-|~No|~w(100px):ˆÓ–¡|~w(300px):ƒvƒƒ“ƒvƒg|~w(300px):ƒlƒKƒeƒBƒuƒvƒƒ“ƒvƒg|~w(100px):”õl|ƒTƒ“ƒvƒ‹|
-|@|@|@|@|@|@|
+|~No|~w(100px):æ„å‘³|~w(300px):ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ|~w(300px):ãƒã‚¬ãƒ†ã‚£ãƒ–ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ|~w(100px):å‚™è€ƒ|ã‚µãƒ³ãƒ—ãƒ«|
+|ã€€|ã€€|ã€€|ã€€|ã€€|ã€€|
 |}
 
 ----------------------
@@ -20,33 +20,33 @@ R18Žô•¶‘S•¶‚æ‚èˆø—pBNo‚ð’Ç‰Á
 
 
 
-*** •ÒW—pƒR[ƒhƒeƒ“ƒvƒŒ[ƒg‚Ìƒy[ƒW‚ð–„‚ßž‚Ý•\Ž¦
+*** ç·¨é›†ç”¨ã‚³ãƒ¼ãƒ‰ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã®ãƒšãƒ¼ã‚¸ã‚’åŸ‹ã‚è¾¼ã¿è¡¨ç¤º
 
-''ƒe[ƒuƒ‹‚ð’Ç‰Á‚µ‚½‚Æ‚«‚Í‚±‚ÌƒR[ƒh‚ð‹LÚ‚µ‚Ä‚­‚¾‚³‚¢''
+''ãƒ†ãƒ¼ãƒ–ãƒ«ã‚’è¿½åŠ ã—ãŸã¨ãã¯ã“ã®ã‚³ãƒ¼ãƒ‰ã‚’è¨˜è¼‰ã—ã¦ãã ã•ã„''
 =|BOX|
 #include(Wiki_EditingResources)
 ||=
 
 
-*** ƒy[ƒWƒeƒ“ƒvƒŒ[ƒg
+*** ãƒšãƒ¼ã‚¸ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ
 
-¥EditingResources + PromptTable_t1_v1.0.0
+â–¼EditingResources + PromptTable_t1_v1.0.0
 =|BOX|
 #include(Wiki_EditingResources)
 
 {| class="nanj_prompt_table edit sort"
-|~No|~w(100px):ˆÓ–¡|~w(300px):ƒvƒƒ“ƒvƒg|~w(300px):ƒlƒKƒeƒBƒuƒvƒƒ“ƒvƒg|~w(100px):”õl|ƒTƒ“ƒvƒ‹|
-|@|@|@|@|@|@|
+|~No|~w(100px):æ„å‘³|~w(300px):ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ|~w(300px):ãƒã‚¬ãƒ†ã‚£ãƒ–ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ|~w(100px):å‚™è€ƒ|ã‚µãƒ³ãƒ—ãƒ«|
+|ã€€|ã€€|ã€€|ã€€|ã€€|ã€€|
 |}
 
 ----------------------
 ||=
 [END]
 
-*** ƒR[ƒh‚Ì’Ç‰Á•û–@
+*** ã‚³ãƒ¼ãƒ‰ã®è¿½åŠ æ–¹æ³•
 
 =|BOX|
 =|(box=textarea)|
-ƒeƒLƒXƒg
+ãƒ†ã‚­ã‚¹ãƒˆ
 ||=
 ||=

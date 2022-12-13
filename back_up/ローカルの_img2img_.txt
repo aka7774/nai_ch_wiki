@@ -1,0 +1,175 @@
+#contents
+
+* 概要
+なんもわからん
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/v3T9mUdjUs.png,300)
+
+※本家にもimg2imgがあると思いますがページ作成者が触れない環境なのと、ローカルのみ可能な機能もあるかと思うのでローカル限定で作成しました。
+※これはAutomatic1111を使用したimg2imgについてのページです。
+
+
+* 使い方
+
+** 1111の設定
+基本的なことは[[ローカルの使い方]]を参照
+
+
+* リファレンスイメージの作成ツール
+手を動かして自分で描く方法のほかに、3Dモデルをポージングさせてリファレンスイメージを作成する手法も有効です。
+
+** Illusionのゲーム(ROOMガール、コイカツ、ハニーセレクト他)
+最近のIllusionのゲームには使われているモデルを召喚してポージングさせることができるSTUDIO機能が備わってます。
+
+*** Room Studio by ROOMガール(Illusion)
+
+&#129392;Room Studioのいいところ
++ グラフィックがよい
++ 学習曲線低め
++ IK/FKマッチや顔の向きをLook at viewerできたりリグが良く出来てる
++ グリーンバックとかもできたりする
++ ベーシックなものからHなやつまでアニメーションがめちゃめちゃある
+&#129314;Room Stusioのわるいところ
++ 決まった服装しか着用させられない
+
+図：RoomガールのRoomStudio
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MFgdvhDHSU.jpg,500)
+
+*** CharaStudio by コイカツ(Illusion)
+
+&#129392;コイカツのいいところ
++ アニメチックなグラフィック
++ 夥しい数のキャラパーツ追加MODがある
++ MODにより、''大体の版権キャラが再現されている''
+&#129314;コイカツのわるいところ
++ MOD前提な環境。バニラではやれる幅が少ない。
++ 有料販売されているデータが多い。沼ると金がどんどん減っていく。&color(#d9d9d9){ローカルNAI使うぐらいならいっそ…}
+
+図：コイカツのCharaStudio（スクショはMOD導入済みの環境）
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/iLL2VQ2DY6.png,500)
+
+
+** カスタムオーダーメイド
+カスタムオーダーメイド3D2とか。
+
+** Blender
+オープンソースで開発されている無料の3DCGソフト。
+全部自分で構築する必要があるが自由高い。
+ポージング用モデルはBoothでVRChat用のモデルがたくさんあるので活用できそう。
+.blend形式のファイルが同梱されているか要確認。
+
+&#129392;Blenderのいいところ
++ 制約なし。なんでもできる
+&#129314;Blenderのわるいところ
++ 学習曲線MAX。ただしBlender2.8からは本当にマシになった。2.7以前を使える人は宇宙人
++ 全部自分で構築する必要がある
+
+図：モデルはレナ・カクテル
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/F2nLkEeCXC.jpg,500)
+
+** DAZ Stusio
+海外のフォトリアル系3DCGソフト。
+「DAZ Studioは3Dアニメーションとデジタルイラストのためのソフトウェアです。3Dモデルやカスタムポーズを作成したり、美術的な作品を作成したりすることができます。」※ChatGPTちゃん解説
+ソフト内で完結してるように思われますが、実は公式に用意されているDAZ to BlenderなどのプラグインでBlenderで編集できるようにしたりもできます。
+
+&#129392;DAZのいいところ
++ Genesis3、Genesis8 などボディが規格化されている
++ 身体の造形がよい
++ モーフ(Blenderでいうシェイプキー)がめちゃめちゃある
++ キャラクター/衣装がめちゃめちゃある
+&#129314;DAZのわるいところ
++ 学習曲線高め
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hhgcFLU1Td.jpg,500)
+
+
+* リファレンスイメージの作成
+
+** Room stusioの場合
+編集時点で一番新しいIllusionのRoomガールに付属しているRoom stusioでリファレンスイメージを作成してみました
+
++ ええ感じにIK/FKとかアニメーション参照とかしてポージング(あとで覚えてたら詳しく書く)
++ F11でスクショ
++ Automatic1111にぶん投げる
+
+図：生成例
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RtPJHPcftY.jpg,500)
+
+
+
+
+* 研究
+
+** 研究(1)｜プロンプトはどこまで指定すればよいのか
+[+]
+
+*** はじめに
+
+リファレンスイメージの時点である程度絵が完成している場合、プロンプトには何もかかなくてよいのか、それともある程度画像の要素をプロンプトで指定する必要があるのかを検証しました。
+
+検証は以下のようなデータで行いました。
+
+プロンプト
+
+=|(box=textarea)|
+|(masterpiece:1.3), best quality, masterpiece, best quality, 1girl, solo, amazing awesome highly detailed, perfect anatomy, perfect lighting, (extremely detailed CG:1.2), (8k:1.1}, (realistic:1.15), | standing, | women, (office lady:1.2), (formal clothes:1.1), ivory sweater, miniskirt, pencil skirt, loafers, short hair, brown hair,| (id card, lanyard:1)
+||=
+
+=|(box=textarea)|
+3D, 3Dcubism, pablo picasso, disney, marvel, mutanted breasts, mutanted nipple, cropped, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, bad anatomy, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, shemale, futa, trans, tranny, floating cock, censored, bar censor,  muscular, teen age, loli, petite, child, infant, toddlers, chibi, sd character, multiple view, Reference sheet, anal sex, cum,cum in pussy, penis, tsurime, helmet_hair, evil smile, smug_face, naughty smile, inflation, overflow, bukkake, cumdrip, cum poo, excessive cum, sex, boy, penis, cock, insert, Fisting, All the way through, Uterine prolapse, Anal prolapse, Birth, 
+||=
+
+図1：リファレンスイメージ
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PG7WEO5acZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/PG7WEO5acZ.png]]
+
+図2：XYプロット
+オリジナル画像：[[&ref(https://files.catbox.moe/euvfhj.jpg,500)]]
+
+*** 結果
+リファレンスイメージの時点である程度絵が完成している場合、なにも指定しなくても大きく破綻したりはせずそれなりに画像の雰囲気を継承して描き込みしてくれるようです。
+ただし首にかけたIDカードのような細かいものがなくなってしまったり、ストッキングが黒のデニムになってしまったりする誤認識がみられました。
+
+** 結論
+img2imgは、プロンプトに何も指定しなくてもリファレンスイメージを見てそこから描き込みをしてくれます。
+また見分けがつきやすいような、ある程度大きな要素は特に指定しなくてもいいかもしれません。
+一方で細かなアクセサリーやあいまいな色や形をしているものは、プロンプトで指定しないと見失ったり誤認識がする可能性が高いようです。
+
+[END]
+
+** 研究(2)｜プロンプトがリファレンスイメージにどこまで影響を及ぼせるのか※NSFW
+
+[+]
+** はじめに
+
+リファレンスイメージを渡したとして、プロンプト側の内容に大きな差をつけた場合、生成される画像はどの程度変更されるのかを検証しました。
+リファレンスイメージからどの程度離れて画像を生成するかの設定は、Denoise Strengthを変えることで制御できます。
+
+検証は以下のようなデータで行いました。
+
+
+Denoising strength｜0.1,0.2,0.3,0.4,0.5,0.6,0.69,0.7,0.71,0.75,0.8,0.9,1.0
+Seed｜2830518132
+
+プロンプト
+=|(box=textarea)|
+(masterpiece:1.3), best quality, masterpiece, best quality, 1girl, solo, amazing awesome highly detailed, perfect anatomy, perfect lighting, (extremely detailed CG:1.2), (8k:1.1},  standing,  female,  short hair, brown hair, completely nude, nsfw, (gigantic breasts:1.5), nipples, areolae, pubic hair, (curvy, voluptuous:1.5),  (realistic:1.15)
+||=
+
+=|(box=textarea)|
+3D, 3Dcubism, pablo picasso, disney, marvel, mutanted breasts, mutanted nipple, cropped, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, bad anatomy, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, shemale, futa, trans, tranny, floating cock, censored, bar censor,  muscular, teen age, loli, petite, child, infant, toddlers, chibi, sd character, multiple view, Reference sheet, anal sex, cum,cum in pussy, penis, tsurime, helmet_hair, evil smile, smug_face, naughty smile, inflation, overflow, bukkake, cumdrip, cum poo, excessive cum, sex, boy, penis, cock, insert, Fisting, All the way through, Uterine prolapse, Anal prolapse, Birth, 
+||=
+
+
+図：XYプロット
+オリジナル画像：[[&ref(https://files.catbox.moe/4swkyv.jpg,500)]]
+
+** 結果
+Denoise Strengthが0.4〜0.5から生成画像がリファレンスいイメージから乖離しはじめ、0.71〜0.75の間から大きく乖離してポージングや顔の雰囲気も変更されて生成されることがわかりました。
+
+** 結論
+リファレンスイメージからポージング変更させずにイラストレーション化させたいときはDenoise Strengthを0.4〜0.7に留めるのが良いみたいです。個人的には0.7がいい感じ。
+雰囲気だけ継承してAIにいい感じに仕上げてもらいたいときは0.75〜0.8がいいかもしれない。
+
+[END]
+
+

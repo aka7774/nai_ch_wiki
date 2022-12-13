@@ -1,96 +1,96 @@
-Git for windows��1111��������
+Git for windowsで1111をいじる
 
 #contents
 
-���̍�����(�R�}���h�v�����v�g)���J���Ă�
+あの黒い窓(コマンドプロンプト)を開いてや
 
-* �C���X�g�[���m�F
+* インストール確認
 
 =||
  git --version
 ||=
 
-�����ĂȂ�������C���X�g�[���B
+入ってなかったらインストール。
 https://git-scm.com/downloads
-���Ԃ�C���X�g�[�����鎞��PATH��ʂ��ݒ肪����͂��B
+たぶんインストールする時にPATHを通す設定があるはず。
 
-** �ɗ̓R�}���h�ł������Ȃ��l����
+** 極力コマンド打ちたくない人向け
 
-�C���X�g�[������Ƃ��ɁuWindows�G�N�X�v���[���̓��� - Git Bash�v�̃`�F�b�N�{�b�N�X���I���ɂ��āA
-�G�N�X�v���[���[�Ńt�H���_�Ɉړ����Ă���E�N���b�N���āuGit Bash here�v��I������ƁA
-�ȍ~�̐����� cd �Ŏn�܂�s�͑ł��Ȃ��čςށB
+インストールするときに「Windowsエクスプローラの統合 - Git Bash」のチェックボックスをオンにして、
+エクスプローラーでフォルダに移動してから右クリックして「Git Bash here」を選択すると、
+以降の説明の cd で始まる行は打たなくて済む。
 
-* 1111�{�̂̎擾(���񂾂�)
+* 1111本体の取得(初回だけ)
 
-C:\SD �݂�����path�̒Z���Ƃ��Ƀt�H���_����̂��������߁B
+C:\SD みたいなpathの短いとこにフォルダつくるのがおすすめ。
 
 =||
  cd C:\SD
  git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 ||=
 
-* 1111�{�̂̍X�V
+* 1111本体の更新
 
 =||
  cd C:\SD\stable-diffusion-webui
  git pull
 ||=
 
-������o�b�`�t�@�C���ɂ��Ƃ��΋N�����邾���ōX�V���Ă���邵�A
-webui-user.bat�ɏ����Ă����Ζ��񋭐��I�ɍX�V���Ă����B
+これをバッチファイルにしとけば起動するだけで更新してくれるし、
+webui-user.batに書いておけば毎回強制的に更新してくれる。
 
-* Extensions�̃C���X�g�[��
+* Extensionsのインストール
 
-sd_dreambooth�̗�
+sd_dreamboothの例
 
 =||
  cd C:\SD\stable-diffusion-webui\extensions 
  git clone https://github.com/d8ahazard/sd_dreambooth_extension.git
 ||=
 
-* Extensions�̍X�V
+* Extensionsの更新
 
 =||
  cd C:\SD\stable-diffusion-webui\extensions\sd_dreambooth_extension
  git pull
 ||=
 
-* 1111���Â��o�[�W�����ɖ߂�
+* 1111を古いバージョンに戻す
 
-** commit hash�̊m�F
+** commit hashの確認
 
 =||
  cd C:\SD\stable-diffusion-webui
  git log
 ||=
 
-1111�N�����̍������ɂ��\������Ă���B
+1111起動時の黒い窓にも表示されている。
 
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/commits/master
-�����̃R�s�[�A�C�R���ł��R�s�[�ł���
+ここのコピーアイコンでもコピーできる
 
-** commithash�Ƀo�[�W������߂�
+** commithashにバージョンを戻す
 
 =||
  cd C:\SD\stable-diffusion-webui
- git checkout �n�b�V��
+ git checkout ハッシュ
 ||=
 
-���Ƃ���
+たとえば
 =||
  git checkout 3596af07493ab7981ef92074f979eeee8fa624c4
 ||=
 
-* 1111�̃\�[�X��������������pull�ł��Ȃ��Ȃ�����
+* 1111のソースを書き換えたらpullできなくなった時
 
-�G���[���O�����Č����̃t�@�C����������ł���ꍇ
+エラーログを見て原因のファイル名が特定できる場合
 
 =||
  cd C:\SD\stable-diffusion-webui
- git checkout �t�@�C����
+ git checkout ファイル名
 ||=
 
-�����킯�킩��Ȃ��Ȃ��đS�������Ă����������蒼�������ꍇ
+もうわけわかんなくなって全部消えてもいいからやり直したい場合
 
 =||
  cd C:\SD\stable-diffusion-webui

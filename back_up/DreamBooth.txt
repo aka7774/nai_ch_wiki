@@ -1,204 +1,204 @@
-* �Ƃ���Z�p���̋L�^
-�摜�\��Ȃ��̂Ń��O�̃R�s�y�����B
+* とある技術部の記録
+画像貼れないのでログのコピペだけ。
 [+]
-�Ӑ}�I�ɉߊw�K�C��DB�B�ꉞ�f�[�^�Z�b�g�ɍ������Ă��Ȃ����͖ڎ��Ŋm�F�����̂ő��v�ȃn�Y
-�f�[�^�Z�b�g�͊�15�S�g25��40���A20000step��1.06e-6�ł�
+意図的に過学習気味DB。一応データセットに酷似していないかは目視で確認したので大丈夫なハズ
+データセットは顔15全身25の40枚、20000stepの1.06e-6です
 
-�ڕW���ォ��
-�E�ߊw�K�Ŋ����ɓ������̂ɂȂ�Ȃ�
-�E�R�C�����R�C���Ƃ��ďo��
-�E���̖т̐F����v������
-�E���̖т̃��{���̐F
-�E���̐F(�΂߂ɂȂ��Ăďオ���F������)
-�E�͗l�̐��m��
+目標を上から
+・過学習で完璧に同じものにならない
+・コイルをコイルとして出す
+・髪の毛の色を一致させる
+・髪の毛のリボンの色
+・服の色(斜めになってて上が黄色下が黒)
+・模様の正確性
 
-�ł����B�͗l�ȊO�͂����ނː����ł�����&#129300;
-DB�Ɍ��炸�ǉ��w�K�S�ʂŁu�ߊw�K�C���ɂ���̂��p�r�Ƃ��ėǂ��v�ƌ����Ă���̂͂��̂��ƂȂ񂾂낤�Ȃ���
+でした。模様以外はおおむね成功ですかね&#129300;
+DBに限らず追加学習全般で「過学習気味にするのが用途として良い」と言われているのはこのことなんだろうなって
 
-���DB���u��̐�����v���ĕ\�L���Ă���̂��u�L����DB�ANSFW�����A�|�[�Y�قڌŒ�v�ł̂��̂ł���
+上のDBを「一つの成功例」って表記しているのが「キャラDB、NSFW無し、ポーズほぼ固定」でのものですし
 
-�甯���Č��ł��Ă�����x�R�X�v���A�V�`���ɑς���ΐ������ȂƎv���Ă܂�
+顔髪が再現できてある程度コスプレ、シチュに耐えれば成功だなと思ってます
 
-20���A20000step�A7.2E-07�AApply horizontal Flip���ł�����̂ł�����10000step���ƕ��G�ȕ������Č����Â炢����20000�Ȃ獂�ŗ��ōČ����������Ń}�X�s�h����E�p�ł��܂��ˁB������Ɛ�������Â炢����
-���E���]�����ŉ摜��500�`1000?�{��step�g�ނ̂�������������Ȃ����Ǌw�K��������100���Ƃ��ɂȂ��Ă���Ƃǂ��Ȃ邩�s�� 
+20枚、20000step、7.2E-07、Apply horizontal Flip無でやったのですけど10000stepだと複雑な服装を再現しづらいけど20000なら高打率で再現したうえでマスピ塗りも脱却できますね。ちょっと制御効きづらいけど
+左右反転無しで画像の500〜1000?倍のstep組むのがいいかもしれないけど学習元枚数が100枚とかになってくるとどうなるか不明 
 
-�E�S�g�Ŏg������̂ƃo�X�g�A�b�v�Ŏg������̂̑I��
-�EPhotoshop�ł��܂��܃A���t�@����
-�E512*512�ɉ��H(+���w�i�ɂ���)
+・全身で使えるものとバストアップで使えるものの選別
+・Photoshopでちまちまアルファ抜き
+・512*512に加工(+白背景にする)
 
-�t�H�g�V�����f�R���x������ł����������߂�����́A�����ĂȂ����Ë�����anime-segmentation�g���Ă܂�
-�ŏI�I�ɐ��x�ǂ��̂�Photoshop�ȋC�����܂��ˁc�cPhotoshop�ł���AI�؂蔲�������s����̂ł���ȊO�̂����x�������Ă̂͂Ȃ��Ȃ��Ȃ�����
+フォトショが断然精度高いんでしたっけ透過させるの、持ってないし妥協してanime-segmentation使ってます
+最終的に精度良いのはPhotoshopな気がしますね……PhotoshopでさえAI切り抜きが失敗するのでそれ以外のが精度高いってのはなかなかなさそう
 
-���K���摜������Ɗw�K���͂��̓s�x���K���̃N���X�摜�Ƃ̔�r���s����
-�L�����̎��ۗ������������o���Ă���
-����ɂ���Đ��x�̌���ɉ����ĉߊw�K�┭�U���������ɂ����A�Ƃ���Ă���
+正規化画像があると学習中はその都度正規化のクラス画像との比較が行われて
+キャラの持つ際立った特徴を覚えていく
+これによって精度の向上に加えて過学習や発散が発生しにくい、とされている
 
-�����A�P��1girl�Ƃ�person�݂�����class word�Ɠ���̃v�����v�g�ŗp�ӂ��Ă��A
-����Ȋ����ɂ��������ו��̓�����ǂݎ��Ȃ����̂�������
-�u���K���摜�ł͔��F�͂����ŁA���̖͗l�͂�����..�L�����͂���ƈ���Ă���������...�v�Ɗw�K�Ɋ�^����m����������(�\�z)
-�����玿�̗ǂ��Z�b�g��p�ӂ��Ȃ�����A�o����͂قږ��Ӗ����A���x���ቺ����܂ł���
+ただ、単に1girlとかpersonみたいなclass wordと同一のプロンプトで用意しても、
+こんな感じにそもそも細部の特徴を読み取れないものが多くて
+「正規化画像では髪色はこうで、服の模様はこうで..キャラはこれと違ってこうだから...」と学習に寄与する確率が下がる(予想)
+だから質の良いセットを用意しない限り、経験上はほぼ無意味か、精度が低下するまである
 
-�������z�Ƃ��Ă͐��K���摜�Ɗw�K�p�L�����摜�Ƃ��Ɂu��̍ו�����������̑��߁A�w�i�𓧉߁v�ł��ƌ����I�Ȃ񂾂낤�� 
+多分理想としては正規化画像と学習用キャラ画像ともに「顔の細部が見られるもの多め、背景を透過」でやると効率的なんだろうね 
 
-�`�������W�̑�ނƂ��ėǂ��C�����Ă��܂����ˁH
-�E�R�C�����R�C���Ƃ��ĔF�����邩
-�E�R�C���̐��x
-�E�����I�ȗm���̍Č��x
-���m���߂���C�����܂�&#129300;
-���Ƃ͂��킢�����烂�`�x���ۂĂ�(�d�v)
+チャレンジの題材として良い気がしてきましたね？
+・コイルをコイルとして認識するか
+・コイルの精度
+・特徴的な洋服の再現度
+を確かめられる気がします&#129300;
+あとはかわいいからモチベも保てる(重要)
 
-Any+(NAInsfw-NAIsfw) * 0.4�i����͕ʂ�NAI�P�̂ł�Anything�P�̂ł������񂶂�Ȃ��H�j
+Any+(NAInsfw-NAIsfw) * 0.4（これは別にNAI単体でもAnything単体でもいいんじゃない？）
 pndm
 10000steps
-�f�[�^�Z�b�g�c�c���w�i��A�b�v50���A���w�i�S�g���o�X�g�A�b�v(�摜�ɂ�肯��)50����100��
-�������摜�Ȃ�
-�𑜓x512
-LR1e-6(�Z�o�w�K������Ȃ���1e-6�ŗǂ��Ȃ��H���ĂȂ����̂�1e-6�ɍŋ߂��Ă�)
-�O�̂���1000step����ckpt�f���o��
+データセット……白背景顔アップ50枚、白背景全身かバストアップ(画像によりけり)50枚の100枚
+正則化画像なし
+解像度512
+LR1e-6(算出学習率じゃなくて1e-6で良くない？ってなったので1e-6に最近してる)
+念のため1000step毎にckpt吐き出し
 
-Don't Cache Latents�I��
-Use 8bit Adam�I��
-Gradient Checkpointing�I��
-Mixed Precision��no����fp16
-Apply Horizontal Flip���I�t
+Don't Cache Latentsオン
+Use 8bit Adamオン
+Gradient Checkpointingオン
+Mixed Precisionをnoからfp16
+Apply Horizontal Flipをオフ
 
-�ł��� 
+でした 
 
-step�͐�����T�Ɍ����Ȃ����Ȃ��čŋ߂Ȃ��Ă܂��B�R�C���ƕ����̍Č��ɑ�����step�����邾���Ŗ{���Ȃ�����������Ȃ��Ă��悳�����ł��ˁB
-�ق炱���c�c�V���v���Ȃ̂���4000�ŉߊw�K�Ƃ��ɂȂ肻���ȗ\��
+stepは正直一概に言えないかなって最近なってます。コイルと服装の再現に多くのstepがいるだけで本来ならもう少し少なくてもよさそうですね。
+ほらこう……シンプルなのだと4000で過学習とかになりそうな予感
 
-��A�b�v�ƃo�X�g�A�b�v���Ă��ꂼ��ʂ̉摜�ł��H�����摜�Ŋ炾���A�b�v�ƑS�̂Ƃ�2���������Ƃ����Ȃ������H
-����͖ړI�Ƃ��āu�ߊw�K�C���ɂȂ������ɓ���̉摜�Ɉ˂�Ȃ��悤�Ɂv���Ă̂��������̂�100���S���o���o���ł�
+顔アップとバストアップってそれぞれ別の画像です？同じ画像で顔だけアップと全体とで2枚作ったりとかしない感じ？
+今回は目的として「過学習気味になった時に特定の画像に依らないように」ってのがあったので100枚全部バラバラです
 
-�摜���H���𗧂����(����)�Ȃ�ł����A�c���̉摜��512�ɂ���Ƃ��Ɉꖇ�ڂ݂����ɂ܂������؂��悤�ȃg���~���O�͂����߂��܂���B�񖇖ڂ݂����ɂ��邱�Ƃ������߂ł��B
-�Ȃ�ł��Ƃ����Ɓu���E�ɗ]���̂���摜�v�Ƃ��ĔF����������Ă���ȕ��ɗ]���𖄂߂Ă��邱�Ƃ������ł���ˁB�̊��ł���
-����full body���ꂽ�ꍇ�͘g�����ς��ł͂��邯�ǎw��Ȃ��̎��悩�t���[���A�E�g���Ȃ��͂Ȃ��Ă܂��B�^�񒆂��Y��ɗ������Ă�̂�
+画像加工お役立ち情報(多分)なんですが、縦長の画像を512にするときに一枚目みたいにまっすぐ切れるようなトリミングはお勧めしません。二枚目みたいにすることがお勧めです。
+なんでかというと「左右に余白のある画像」として認識しちゃってこんな風に余白を埋めてくることがあるんですよね。体感ですが
+あとfull body入れた場合は枠いっぱいではあるけど指定なしの時よかフレームアウトしなくはなってます。真ん中に綺麗に立たせてるので
 
-����ɂ��Ă���DB�̃x���`�}�[�N�Ƃ��ĖŒ��ꒃ�D�G�ł���
-���E��Ώ̃J���[�̃f�U�C���Ɠ��̃R�C���Ƃ����w�K�����ł͍Č����Â炢������������
-���܂������ĂȂ��ƃR�C���������G�ɂȂ邩��ς��ƌ��Ŋw�K���x���킩�邵
-�Ȃɂ�肩�킢��(�d�v) 
+それにしてもはDBのベンチマークとして滅茶苦茶優秀ですね
+左右非対称カラーのデザインと頭のコイルという学習無しでは再現しづらい部分があって
+うまくいってないとコイル部分が雑になるからぱっと見で学習精度がわかるし
+なによりかわいい(重要) 
 
-�|�[�Y�⊆�D�܂߂Ă��̈�ۂ̃L�����ł�����&#129395; �����������Y��ȃf�[�^�Z�b�g���Ȃ���c
+ポーズや恰好含めてこの印象のキャラですしね&#129395; 自分も透過綺麗なデータセット作らなきゃ…
 
-���ꕞ�������o�[�X�[�c���ۂ���evt-v2�̂����ȋC�����Ă��܂����ˁHAnything�ɖ߂����ق����ǂ����ȋC�����܂�
-������evt-v2�͂��傢���傢�u���b�N�A�E�g���܂�(evt-v2�ȊO�Ŕ����������Ƃ͖���)
+これ服装がラバースーツっぽいのevt-v2のせいな気がしてきましたね？Anythingに戻したほうが良さげな気がします
+そしてevt-v2はちょいちょいブラックアウトします(evt-v2以外で発生したことは無い)
 
-�����10000step�ł���10000step���Ƃ��������w�K�����r���[�����Ȃ�
-20000step�����ƕ��ƈ�̂Ŋo���Ă܂���
-����ς�bodypaint�͉ߊw�K���邠��ł���ˁc
-�Č��xMAX�Ȃ̂��ߊw�K�����O���������Ƃ���
+これは10000stepですが10000stepだとそもそも学習が中途半端だしなぁ
+20000stepもやると服と一体で覚えてますね
+やっぱりbodypaintは過学習あるあるですよね…
+再現度MAXなのも過学習一歩手前だから難しいところ
 
-4000step���炢�̃��f�����ƈߑ���uc�ɓ˂����ނƊ��ƒE���ł���܂���
-�̕����͉p�P��Œ�`����̂��ނ����ł��ˁc�c
-DB�ł������Ɠ������v�����v�g�Ŏw������̂͌��ʂ��肻���ł���
+4000stepくらいのモデルだと衣装をucに突っ込むと割と脱いでくれました
+の服装は英単語で定義するのがむずいですね……
+DBでもちゃんと特徴をプロンプトで指示するのは効果ありそうですね
 
-4000step���Ƃ��������̂��Č��ł��Ȃ���ł���ˁc�c�R�C���ƕ��Ɣ��̖т̐F����΂��ł���
-�l�I�ɂ͓h��̃}�X�s������(�Ɍ��炸)1e-6��2000step�̒i�K�ő�̏�����Ǝv���Ă��ł���ˁB��������͍ו����l�߂Ă�����ۂł�
-�ݒ��������
+4000stepだとそもそものが再現できないんですよね……コイルと服と髪の毛の色がやばいですし
+個人的には塗りのマスピ感って(に限らず)1e-6の2000stepの段階で大体消えると思ってるんですよね。そっからは細部を詰めていく印象です
+設定も書くか
 20000steps
-��15���o�X�g�A�b�v���S�g25��(�摜�ɂ���ėǂ������ɒ���)���v40��
+顔15枚バストアップか全身25枚(画像によって良い感じに調整)合計40枚
 0.00000108(1.08e-6)
 Don't Cache Latents
 Use 8bit Adam
 Gradient Checkpointing
-Apply Horizontal Flip���I�t 
+Apply Horizontal Flipをオフ 
 
-1.08e-6�͂ق�Ƃ�30��2000steps�̎Z�o�w�K���Ȃ񂾂��Ǖς��Y��܂���
-���ǌ��ʓI��1e-6�ł����񂶂�c�c�H���ĂȂ��Ă܂��f�[�^�Z�b�g�̖����Ɍ��炸
-Apply Horizontal Flip�̖������͍��E���]������R�C���̐F�܂��邶���ˁH���Ă��ƂŃI�t�ɂ��܂����B�K��l�ł̓I���ł�
+1.08e-6はほんとは30枚2000stepsの算出学習率なんだけど変え忘れました
+けど結果的に1e-6でいいんじゃ……？ってなってますデータセットの枚数に限らず
+Apply Horizontal Flipの無効化は左右反転したらコイルの色まざるじゃんね？ってことでオフにしました。規定値ではオンです
 
-�f�t�H���g��Apply Horizontal FlipON�Ȃ̍�����Ԃ̃V���b�N�c�c
-(����͉\���̘b�ł����A�f�[�^�Z�b�g�̖������ď���Ƀt���b�v���Ă����̂�2�{�Ōv�Z���Ȃ��Ⴂ���Ȃ�������)
-Joe�łŔ��]�摜�����Ɗ����₷���Ĉȍ~����Ȃ��悤�ɂ��Ă��̂�&#128557;
-1epoch�������steps�����ς���Ă��܂��ˁc
+デフォルトでApply Horizontal FlipONなの今日一番のショック……
+(これは可能性の話ですが、データセットの枚数って勝手にフリップしていたので2倍で計算しなきゃいけなかったり)
+Joe版で反転画像入れると顔崩れやすくて以降つかわないようにしてたのに&#128557;
+1epochあたりのsteps数も変わってきますね…
 
-�l�I�ɂ����̂Ƃ����肭�s���Ă�f�[�^�Z�b�g�͊�A�b�vor�o�X�g�A�b�v+�S�g���㉺2�����Ȃ̂ł���ς肱�̕ӂ肪����ȋC�����܂��ˁ[
-���������玟�̓f�[�^�Z�b�g�̐��𑝂₵�ē���̊G�ɂ��߂��Ȃ�(SNS�ɏグ���Ƃ��ɓ���̒N���̂Ǝ������Ă���ƌ����Ȃ�)�̂���邱�Ƃł����ˁB�����č����v�f�̌p�������Ŋ����ɓ����ɂ͂Ȃ��Ă��܂��� 
+個人的にも今のところ上手く行ってるデータセットは顔アップorバストアップ+全身か上下2分割なのでやっぱりこの辺りが安定な気がしますねー
+そうしたら次はデータセットの数を増やして特定の絵により過ぎない(SNSに上げたときに特定の誰かのと似すぎていると言われない)のを作ることですかね。いうて今も要素の継ぎ足しで完璧に同じにはなっていませんが 
 
-���d�r���̌��ʂ���܂��˂���
-�ł���������B����ł��Ȃ������R��ʃJ���I�P�T�O
+多重詠唱の効果ありますねこれ
+できちゃった。昨日できなかった騎乗位カラオケ概念
 [END]
 
 
-* �Ƃ���l�̎G�L
-�X�e�[�^�X�̐ݒ�Ƃ��̉���͂���
+* とある個人の雑記
+ステータスの設定とかの解説はここ
 [+]
-Dreambooth�Ƃ͂Ȃ񂩐����Z�p�ōD���ȃL�����Ƃ����𐳊m�����Y��ɍČ��ł���悤�ɂȂ邩���������̂�
+Dreamboothとはなんか凄い技術で好きなキャラとか物を正確かつ綺麗に再現できるようになるかもしれんものや
 
-�v��
-12GB�ȏ��VRAM
-���ŐV�o�[�W������1111�ł�12GB�ł͑����͗l�E�E�E�g�������ꍇ�̓o�[�W�����������悤
-����12GB�ł͂��Ȃ�M���M���₩���ƒ��͓���Đ��△�ʂȃA�v�����N������̂͂��@�x��
-�܂����ʂȃv���Z�X���c���Ă��Ă��e����邱�Ƃ����邩��g���[�j���O�����O�ɂ͍ċN�������߂��
-12GB�Ȃ�xformers��ON���Y�ꂸ�ɁA���ꂪ����΃f���A�����j�^�ł�400MB�͗]�T���ł��邩�班���Ȃ�u���E�W���O���ł���
-���ŐV�o�[�W�����Ȃ�ݒ荀�ڂ�xformers�̗L�����ړ����Ă遦
-�����ꍇ30MB���炢����VRAM�c��Ȃ����當���ʂ艽���ł����
+要求
+12GB以上のVRAM
+※最新バージョンの1111では12GBでは足りん模様・・・使いたい場合はバージョンを下げよう
+正直12GBではかなりギリギリやから作業中は動画再生や無駄なアプリを起動するのはご法度や
+また無駄なプロセスが残っていても弾かれることがあるからトレーニングをやる前には再起動を勧めるで
+12GBならxformersのONも忘れずに、これがあればデュアルモニタでも400MBは余裕ができるから少しならブラウジングもできる
+※最新バージョンなら設定項目にxformersの有無が移動してる※
+無い場合30MBぐらいしかVRAM残らないから文字通り何もできんで
 
-����
-�܂�webui.bat�ŋN��(�I�v�V�������ז�����ꍇ�����邩���)
-����Extensions��Available��Loard from���|�`��
-���X�g����ׯ�Əo��̂�Dreambooth�Ə����ꂽ����C���X�g�[����
-�C���X�g�[���ł�����ċN������ƃ^�u�̒���Dreambooth�Ƃ����̂��o����
-�X�Ƀp���[�V�F���Ƃ���
+導入
+まずwebui.batで起動(オプションが邪魔する場合があるからな)
+次にExtensionsのAvailableのLoard fromをポチる
+リストがｽﾞﾗｯと出るのでDreamboothと書かれたやつをインストールや
+インストールできたら再起動するとタブの中にDreamboothというのが出来る
+更にパワーシェルとかで
 pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu116
-����͂���pytorch��torchvision���X�V���đ����Ƃ��Ă���
-��paperspace��ƃC���X�g�[���Ɏ��s����Ƃ����񍐂��オ���Ƃ�̂ŃI�v�V������--enable-insecure-extension-access��t���ċN�����Ă���
+を入力してpytorchとtorchvisionを更新して揃えといてくれ
+※paperspaceやとインストールに失敗するという報告が上がっとるのでオプションに--enable-insecure-extension-accessを付けて起動してくれ
 
-�g����
+使い方
 
-���̐����̓n�b�V�����f��725d85ca5485246a430d2f31f624646d061e8104����Ƃ����Â�������
-�V�����o�[�W�����̐����͉��̕��ɂ����Ă���
-�����o�[�W���������킹�����ꍇstable-diffusion-webui/extensions/sd_dreambooth_extension/�ŉE�N���b�N��git bash here��I����git reset --hard 725d85ca5485246a430d2f31f624646d061e8104�Ɠ��͂���ƊY���o�[�W�����ɕύX�ł���
+この説明はハッシュモデル725d85ca5485246a430d2f31f624646d061e8104を基準とした古い説明や
+新しいバージョンの説明は下の方にいってくれ
+もしバージョンを合わせたい場合stable-diffusion-webui/extensions/sd_dreambooth_extension/で右クリック→git bash hereを選択しgit reset --hard 725d85ca5485246a430d2f31f624646d061e8104と入力すると該当バージョンに変更できる
 
 Create Model
-�܂�Create Model�Ƃ����̂Ńg���[�j���O�����郂�m�����
-HN�Ō����Ƃ����Create hypernetwaork�Ǝ����悤�Ȃ�����
-name�͍D���Ȗ��O����͂���Import Model from Huggingface Hub�𖳎����Ď���Source Checkpoint
-Source Checkpoint�ł̓x�[�X�ƂȂ郂�f����I�������₯�ǃ}�[�W���f���ł�OK��
-�Ƃ肠�������p���Ă��郂�f�����L�����ɂȂɂ������������Ńx�[�X��I�Ԋ����ł����Ǝv��
-����Scheduler�A�����̓f�t�H���g�őI������Ă�ddim�̂܂܂�OK��
-�I��������Create����������30�b�`1�����炢�ō쐬��������
-�쐬������������CreateModel�̏������Model�^�u�ɍ쐬�������f�����Z�b�g����Ă��邩�m�F���Ă���
+まずCreate Modelというのでトレーニングさせるモノを作る
+HNで言うところのCreate hypernetwaorkと似たようなもんやな
+nameは好きな名前を入力してImport Model from Huggingface Hubを無視して次はSource Checkpoint
+Source Checkpointではベースとなるモデルを選択するんやけどマージモデルでもOKや
+とりあえず愛用しているモデルかキャラになにをさせたいかでベースを選ぶ感じでええと思う
+次にScheduler、ここはデフォルトで選択されてるddimのままでOKや
+選択完了後Createを押したら30秒〜1分ぐらいで作成完了する
+作成が完了したらCreateModelの少し上のModelタブに作成したモデルがセットされているか確認してくれ
 
 Train Model
-��������̓g���[�j���O�̓��e����͂��Ă���
-Person��Object/Style�̃v���Z�b�g�����邯�ǂ����ł͊�{�L�����Č����l���ď����Ƃ邩��person�������Ƃ���
+ここからはトレーニングの内容を入力していく
+PersonとObject/Styleのプリセットがあるけどここでは基本キャラ再現を考えて書いとるからpersonを押すとええ
 
 Use Concepts List
-OFF��
+OFFで
 
 Instance prompt
-�����͊w�K���������̂��Ăяo�����߂̃v�����v�g��ݒ肷��
-�Ƃ肠�����@�w�K�Ώۂ̖��O/���p�X�y�[�X/�K���Ȍ��t(�w�K�Ώۂ̖��O�𔽓]���������̂��o���₷���ăI�X�X����)�@������Ƃ���
-���w�K�Ώۂ̖��O�����߂���ꍇ�͊Ȍ��ɕ�����₷�����O�ɂ��Ƃ��Ă���
-�K���Ȍ��t�ɂ��闝�R��Class Prompt��
+ここは学習させたものを呼び出すためのプロンプトを設定する
+とりあえず　学習対象の名前/半角スペース/適当な言葉(学習対象の名前を反転させたものが覚えやすくてオススメや)　を入れるとええ
+※学習対象の名前が長過ぎる場合は簡潔に分かりやすい名前にしといてくれ
+適当な言葉にする理由はClass Promptで
 
 Dataset Directory
-�w�K�����邽�߂̉摜���������t�@�C�����w�肷��Ƃ����
-512*512�̑傫���ŗp�ӂ��悤
-�I�X�X��������5�`10��
+学習させるための画像が入ったファイルを指定するところや
+512*512の大きさで用意しよう
+オススメ枚数は5〜10枚
 
-�u�L�������w�K�����邽�߂̉摜�ő�؂Ȃ��Ƃ́H�v
-�Ƃɂ������B���Ȃ������ł��Ȃ�Ƃɂ������B
-���Ƃ̓L�����w�K�Ȃ�w�i�△�ʂȕ�(�Ⴆ�ΉԂт��u���╶��)���狭��Ɋo���Ă��܂����璚�J�ɕs��������菜������w�i�𔒐F�ɂ���̂��厖��
-�s�����╶���̏����Ɋւ��Ă�lama-cleaner�Ƃ������֗��Ȃ��̂����邩�猟�����Ă݂Ă���
+「キャラを学習させるための画像で大切なことは？」
+とにかく質。少ない枚数でやるならとにかく質。
+あとはキャラ学習なら背景や無駄な物(例えば花びらや置物や文字)すら強烈に覚えてしまうから丁寧に不純物を取り除いたり背景を白色にするのが大事や
+不純物や文字の除去に関してはlama-cleanerとかいう便利なものがあるから検索してみてくれ
 
-�u�I��ł͂����Ȃ��摜�Ƃ�����H�v
-����Ɋw�K����֌W��h�A�b�v�̊�摜��^��납��̉摜�͓���̏�ʂŎז��ɂȂ邱�Ƃ�����
-�ł���΃A�b�v�̉摜�ł����ӂ�܂ł��ʂ��Ă�摜���D�܂���
-������̎p�̉摜������ꍇ�ł�1�������A�Ƃ��Ȃ炢��������������������
-from side�Ɠ����Ɠ����悤�ȉ摜���������ꑱ����Ƃ������\�������邩��ł���Ε������p�ӂ�����
-�܂��̂����A���؂�Ă�摜�A�Ȃ񂩂�����Ɋo���邩���΂�NG��
-�����ɂ����full body3���A���̕ӂ肩��オ2���Ƃ�
-full body3���A���̕ӂ肩��オ3���A����(�E)��2���A����(��)��2���Ƃ����
+「選んではいけない画像とかある？」
+強烈に学習する関係上ドアップの顔画像や真後ろからの画像は特定の場面で邪魔になることが多い
+できればアップの画像でも胸辺りまでが写ってる画像が好ましい
+横からの姿の画像を入れる場合でも1枚だけ、とかならいっそ抜いた方がええな
+from sideと入れると同じような画像が生成され続けるとかいう可能性があるからできれば複数枚用意したい
+また体だけ、見切れてる画像、なんかも強烈に覚えるから絶対にNGや
+割合にするとfull body3枚、胸の辺りから上が2枚とか
+full body3枚、胸の辺りから上が3枚、横顔(右)が2枚、横顔(左)が2枚とかやな
 
 Class Prompt
-�������摜(��Ő�������)�̊w�K���ʂ��Ăяo�����߂̃v�����v�g��ݒ肷��ꏊ��
-�����ł�Instance prompt�ŕt�����K���Ȗ��O�̕�������͂��Ă���
+正則化画像(後で説明する)の学習結果を呼び出すためのプロンプトを設定する場所や
+ここではInstance promptで付けた適当な名前の部分を入力してくれ
 
-�u�Ȃ�قǕ������v
-��ɂ����
+「なるほど分からん」
+例にすると
 
 Instance prompt
 nanU Unan
@@ -206,279 +206,279 @@ nanU Unan
 Class Prompt
 Unan
 
-�݂����Ȋ����ɐݒ肷��Ƃ���
-�����ݒ肷��prompt������prompt�ƃo�b�e�B���O����ꍇ�͓K���Ȍ��t�ɕς��Ă���
+みたいな感じに設定するとええ
+もし設定するpromptが他のpromptとバッティングする場合は適当な言葉に変えてくれ
 
-�u�K���Ȍ��t�ɂ��闝�R�́H�v
-�ꕔ�ł�Instance prompt�̑O���𖳈Ӗ��Ȍ��t�ɁAInstance prompt�̌㔼��Class Prompt�̕�����(���̎q���w�K������ꍇ)girl�ɂ��铙�����邪��̕��@�Ɣ�ׂĉ������_������Ƃ��͊m�F�ł��Ȃ�����
-�Ȃ�w�K�����L�����Ƃ͑S�����ĂȂ��L�������ۑ�����錾�t������Ȃ�ׂ����֌W�Ȍ��t�ɂ�������˂Ƃ������R
-����������girl�ɂ����ꍇ�A�ӂ�girl���g�p��������ʂ��o�����ɍ����Ă��܂�
+「適当な言葉にする理由は？」
+一部ではInstance promptの前半を無意味な言葉に、Instance promptの後半とClass Promptの部分を(女の子を学習させる場合)girlにする等があるが上の方法と比べて何か利点があるとかは確認できなかった
+なら学習したキャラとは全く似てないキャラが保存される言葉だからなるべく無関係な言葉にしたいよねという理由
+ここを仮にgirlにした場合、ふとgirlを使用したい場面が出た時に困ってしまう
 
-�uInstance prompt��2��ɂ���Ӗ��́H�v
-nanU Unan��nanU�̕����ɊG����Unan�̕����ɈӖ����t�^�����
-nanU Unan�ŌĂяo���ƊG��+�Ӗ��ŋ��͂ɌĂяo���邯��Unan���ז������ā��������߂��Ă��o�Ă��Ȃ��I�Ƃ��������Ƃ���������
-���̏ꍇUnan��؂藣����nanU�݂̂ɂ���Ɩ��߂���肭������1�ꂾ�Ɛ؂藣�����ł��Ȃ����ߔėp����������
-�܂�1��̏ꍇ2��̎��Ɣ�ׂĉ��̂��w�K���x��������(�Ȃ�JNVA����107>>236�Q��)
-�L���҂̎��_���炷��Ƃ��肦�񂮂炢�Ԉ�������Ƃ������Ă邪���ۂɋN���鋓�����������Ƃ���Ȋ�����E�E�E
+「Instance promptを2語にする意味は？」
+nanU UnanのnanUの部分に絵柄がUnanの部分に意味が付与される
+nanU Unanで呼び出すと絵柄+意味で強力に呼び出せるけどUnanが邪魔をして○○が命令しても出てこない！といったことが発生する
+その場合Unanを切り離してnanUのみにすると命令が上手くいくが1語だと切り離しができないため汎用性が落ちる
+また1語の場合2語の時と比べて何故か学習精度が落ちる(なんJNVA部★107>>236参照)
+有識者の視点からするとありえんぐらい間違ったことを言ってるが実際に起きる挙動を説明するとこんな感じや・・・
 
 Classification Dataset Directory
-�������摜���������t�@�C�����w�肷��Ƃ����
+正則化画像が入ったファイルを指定するところや
 
-�u�������摜�Ƃ́H�v
-�������Ƃ����̂͊ȒP�ɐ�������Ɖߊw�K��}���ăf�[�^�ɔėp�����������邱�Ƃ�
-�܂�Ƃ��낻��������邽�߂̉摜�Ő������摜��
+「正則化画像とは？」
+正則化というのは簡単に説明すると過学習を抑えてデータに汎用性を持たせることや
+つまるところそれをさせるための画像で正則化画像や
 
-�u�������摜�Ƃ����̂͂ǂ��������̂�p�ӂ���΂����́H���Ɖ�������H�v
-�^��������512*512�̉摜���w�K�����邽�߂̉摜��10�{�̖����p�ӂ���B
-�^��������512*512�̉摜���w�K�����邽�߂̉摜��10�{�̖����p�ӂ���B(��F�w�K�����邽�߂̉摜��5����������512*512�摜��50��)
-�悭������񂯂ǃ��C�ɂ��������
-�Ȃ񂩂�������X���Ɍ��،��ʏ����Ă���...
+「正則化画像というのはどういうものを用意すればいいの？あと何枚いる？」
+真っ透明な512*512の画像を学習させるための画像の10倍の枚数用意する。
+真っ透明な512*512の画像を学習させるための画像の10倍の枚数用意する。(例：学習させるための画像が5枚→透明な512*512画像が50枚)
+よく分からんけどワイにも分からん
+なんかあったらスレに検証結果書いてくれ...
 ttps://i.imgur.com/8d6VTjm.png
-�^��������512*512�̉摜��URL���ꉞ�\���Ă���
+真っ透明な512*512の画像のURLを一応貼っておく
 
 [[https://image02.seesaawiki.jp/n/h/nai_ch/brdyJ_m5mJ.png]]
-�����܂ł̗���ł���Ȋ����̓��͂ɂȂ��Ă�͂���
+ここまでの流れでこんな感じの入力になってるはずや
 
 Training Steps
-�����ʂ�g���[�j���O������X�e�b�v����ݒ肷��Ƃ�����
-�����ɂ�邪10���ł�12000�X�e�b�v������Ήߏ肩�������
-5���Ȃ�7000������Ήߏ肩�������
+文字通りトレーニングさせるステップ数を設定するところやな
+枚数によるが10枚でも12000ステップもあれば過剰かもしれん
+5枚なら7000もあれば過剰かもしれん
 
 Total Number of Class/Reg Images
-�p�ӂ����������摜�Ɠ��������ł���(�Ⴆ��Classification Dataset Directory�Ŏw�肵���t�@�C���̒��g��50���Ȃ�50����͂�)
-�������摜����̐��ɂ��邱�ƂŐ������摜�̃t�H���_�ɒǉ��ŉ摜�������s��(����Ȃ�)
-Classification Image Negative Prompt�F�Ƃ肠�����ėp�l�K�ł���
-Classification CFG Scale�F12�ł�����Ƃ��Ⴄ�H
-Classification Steps�F28�ł�����Ƃ��Ⴄ�H
+用意した正則化画像と同じ枚数でいい(例えばClassification Dataset Directoryで指定したファイルの中身が50枚なら50を入力や)
+正則化画像より上の数にすることで正則化画像のフォルダに追加で画像生成を行う(いらない)
+Classification Image Negative Prompt：とりあえず汎用ネガでええ
+Classification CFG Scale：12でええんとちゃう？
+Classification Steps：28でええんとちゃう？
 
 [[https://image02.seesaawiki.jp/n/h/nai_ch/2TWUL3uVkh.png]]
-����Ȋ����̓��͂ɂȂ��Ƃ��납�H
-Total Number of Class/Reg Images�̐��l�͖{���ɒ��ӂ�
-�K��Classification Dataset Directory�Ŏw�肵���t�@�C���̒��g�̖����ƈ�v�����Ă�
+こんな感じの入力になっとるやろか？
+Total Number of Class/Reg Imagesの数値は本当に注意や
+必ずClassification Dataset Directoryで指定したファイルの中身の枚数と一致させてな
 
 Resolution
-�����͊w�K�摜�Ƒ傫�������킹��Ƃ�����512��OK��
-�N�\�o�J�A�z�f�JVRAM�O���{����Ȃ�f�J���w�K�摜�␳�����摜�p�ӂ��Ă��������킹�ăf�J�����Ă��������������H
+ここは学習画像と大きさを合わせるところやな512でOKや
+クソバカアホデカVRAMグラボあるならデカい学習画像や正則化画像用意してここも合わせてデカくしてもええかもしれん？
 
 Pretrained VAE Name or Path
-���������ł���
+何も入れんでええ
 
 Learning Rate
-0.000001��OK�₱��ȏ�傫���Ɣėp���ɖ�肪�o��炵��
-object/style�̃v���Z�b�g���0.000002�ɂȂ邪0.000001�̂�����
+0.000001でOKやこれ以上大きいと汎用性に問題が出るらしい
+object/styleのプリセットやと0.000002になるが0.000001のがええ
 
 Scale Learning Rate
-�X�e�b�v���i�ޖ��Ɏ�����Learning Rate��������loss�l���Y��ɗ��Ƃ��Ă����@�\��
-���ꂪ�Ȃ��Ɖߊw�K�ɓ˂����݂₷������ON�ł�����
+ステップが進む毎に自動でLearning Rateを下げてloss値を綺麗に落としてくれる機能や
+これがないと過学習に突っ込みやすいからONでええよ
 
 Warmup Steps
-�{�ԑO�ɏ����^���������邱�Ƃ��ł���
-�w�K�̏����͖����ꒃ�Ȋw�K�����邩�炻���������邽�߂̋@�\���
-�f�t�H�l��16�ŏ\���₩�炻���OK��
+本番前に準備運動をさせることができる
+学習の初動は無茶苦茶な学習をするからそれを回避するための機能やな
+デフォ値の16で十分やからそれでOKや
 
 Learning Rate Scheduler
-�悭�����ł��Ƃ�񂪃f�t�H��polynomial��OK
+よく理解できとらんがデフォのpolynomialでOK
 
 Save Checkpoint Frequency
-���f���f�[�^���ǂꂮ�炢�̊Ԋu�ŕۑ����邩�̕�����
-���f���f�[�^�͈��2GB�Ƌ���ȃf�[�^�₩��50�Ƃ��ɐݒ肵��10000�X�e�b�v���点���400GB��HDD/SSD���g��
-Hypernetworks�ƈ���ĕω����@�ׂȂ킯�ł͂Ȃ�����ׂ����݂����Ǝv���Ă�500�X�e�b�v�ŏ\�����
+モデルデータをどれぐらいの間隔で保存するかの部分や
+モデルデータは一個2GBと巨大なデータやから50とかに設定して10000ステップ走らせると400GBもHDD/SSDを使う
+Hypernetworksと違って変化が繊細なわけではないから細かくみたいと思っても500ステップで十分やで
 
 Save Preview(s) Frequency
-�v���r���[���ǂꂮ�炢�̊Ԋu�ō쐬���邩�̕�����
-VRAM12GB��Ƃ�����ݒ肷��Ɨ����邩��0������
-���Ȃ݂ɃN�\�f�JVRAM�ł�����ݒ肷��ꍇ�ANumber of Samples to Generate�ɂ͒���E���g��GOD���ӂ�
-������Ⴆ��5000�Ƃ��ɐݒ肷��ƃv���r���[�쐬�n�_�ɓ��B���閈��5000���v���r���[���쐬���悤�Ƃ���(��])
-���ꂽ���̂� stable-diffusion-webui/models/dreambooth/�t�@�C����/samples/ �ɕۑ�������
+プレビューをどれぐらいの間隔で作成するかの部分や
+VRAM12GBやとここを設定すると落ちるから0推奨や
+ちなみにクソデカVRAMでここを設定する場合、Number of Samples to Generateには超絶ウルトラGOD注意や
+ここを例えば5000とかに設定するとプレビュー作成地点に到達する毎に5000枚プレビューを作成しようとする(絶望)
+作られたものは stable-diffusion-webui/models/dreambooth/ファイル名/samples/ に保存されるで
 
 [[https://image01.seesaawiki.jp/n/h/nai_ch/jkrcx6ViW4.png]]
-����Ȋ����ɂȂ��Ƃ�͂���
+こんな感じになっとるはずや
 
 Advanced
-���I�Ȃ��Ƃ�������Ȃ炱���ŐF�X�ݒ肪�ł��邪�悭�������l�p�ɂ�Auto-Adjust(WIP)�Ƃ����̂��p�ӂ���Ă�
-�Ƃ肠��������������ďI���Ǝv�킹��Total Number of Class/Reg Images�̐��l��0�ɂ����̂Ŗ߂��̂�Y�ꂸ��
-���C�͉����������
-Use 8bit Adam�F�i��������������VRAM�����}����炵��3060�Ƃ��Ȃ�c�O�Ȃ���K�{���
-Train EMA�F����VRAM���グ�����ɕi�������コ����炵��3090�Ƃ��p���
-Apply Horizontal Flip�F���E�𔽓]�����Đ��������邱�Ƃ��ł���A���E���厖�ȃL�����͑f�ސ����������邪OFF�ɂ�����������
-���ꂮ�炢�̔F����
+専門的なことが分かるならここで色々設定ができるがよく分からん人用にもAuto-Adjust(WIP)というのが用意されてる
+とりあえずそれを押して終わりと思わせてTotal Number of Class/Reg Imagesの数値が0にされるので戻すのを忘れずに
+ワイは何も分からん
+Use 8bit Adam：品質を下げる代わりにVRAM消費を抑えるらしい3060とかなら残念ながら必須やな
+Train EMA：消費VRAMを上げる代わりに品質を向上させるらしい3090とか用やな
+Apply Horizontal Flip：左右を反転させて水増しすることができる、左右が大事なキャラは素材数が半減するがOFFにする方が無難や
+これぐらいの認識や
 
 [[https://image01.seesaawiki.jp/n/h/nai_ch/7AZPoIuvLi.png]]
-�Q�l�摜��
+参考画像や
 
-�����܂Őݒ肵���炠�Ƃ̓I�����W��Train�������ĊJ�n��
+ここまで設定したらあとはオレンジのTrainを押して開始や
 
-�u���f�ƍĊJ���Ăǂ��Ȃ��Ă�́H�v
-Cancel���������Ƃł��̒n�_�ŃZ�[�u�A�t�@�C���̍쐬�A�v���r���[(stable-diffusion-webui/models/dreambooth/�t�@�C����/samples/�ɂł���)�̍쐬���s���ďI�����邱�Ƃ��ł���
-��������f���������Ȃ�����Z�b�g�������ăg���[�j���O���J�n����ƑO��I�������n�_����w�ݒ肵���X�e�b�v���x�ĊJ�A�i�s�����(HN�Ƃ͈Ⴄ)
-�Z�[�u�����Ԋu�̐ݒ���w��x���f����ƏI�������n�_����ɂȂ�x(������HN�Ƃ͈Ⴄ)
-�����V���ɂ�蒼�������ꍇ�͕ʖ��̂��̂��쐬���ăZ�b�g���邩
-�����̂��̂���肽���ꍇ�A���̃t�@�C��(stable-diffusion-webui/models/dreambooth/�t�@�C����)���폜(���R�����܂Ői�s���Ă����͎̂�����)���č�蒼���K�v������
-HN�ƈ���ăt�@�C�����͌ォ��ς��Ă���ؖ��Ȃ�����(HN�͓����̖��O���쐬���̂��̂ɂȂ�)SSD/HDD�̗e�ʂ��C�ɂȂ�Ȃ��Ȃ�ʖ��̂��̂�����������������
+「中断と再開ってどうなってんの？」
+Cancelを押すことでその地点でセーブ、ファイルの作成、プレビュー(stable-diffusion-webui/models/dreambooth/ファイル名/samples/にできる)の作成を行って終了することができる
+作ったモデルを消さない限りセットし直してトレーニングを開始すると前回終了した地点から『設定したステップ分』再開、進行される(HNとは違う)
+セーブされる間隔の設定も『一度中断すると終了した地点が基準になる』(ここもHNとは違う)
+もし新たにやり直したい場合は別名のものを作成してセットするか
+同名のものを作りたい場合、元のファイル(stable-diffusion-webui/models/dreambooth/ファイル名)を削除(当然そこまで進行してたものは失われる)して作り直す必要がある
+HNと違ってファイル名は後から変えても一切問題ないため(HNは内部の名前が作成時のものになる)SSD/HDDの容量が気にならないなら別名のものを作る方がええかもな
 
-�u�Z�[�u���ꂽ�t�@�C�������������̂₯�ǁH�v
-Stable-diffusion-webui\models\Stable-diffusion�̂Ƃ���(���f���f�[�^������Ƃ���)�ɕۑ�����邩�疳���Ȃ�Ȃ񂩂�������
+「セーブされたファイルが見当たらんのやけど？」
+Stable-diffusion-webui\models\Stable-diffusionのところ(モデルデータがあるところ)に保存されるから無いならなんかおかしい
 
-�u�ł������f���f�[�^���Z�b�g�������ǂǂ�����Ďg���˂�v
-Instance prompt�Őݒ肵�����t�̈Ӗ����ω����Ă邩�炻�����͂��Ă��ΌĂяo�����Ƃ��ł���
-���H���ႠClass Prompt�Ƃ��ǂ��g����H���ĂȂ邪Class Prompt���l�K�ɂ����Ƃ����g�������ł���
-�������������́H����Ȃ����������́H�ƂȂ邪�n�b�L�������Ċw�K���ʂɂ���Ă�肯���
-���ꂽ�������������i�������������Ȃ��������������i���������肵�Ă܂�������ւ�͌������i��łȂ���
-���RInstance prompt������������w�K�Ώۂ̖��O���������Ă��������邱�Ƃ��ł����
-������L�̌Ăяo�����ł��_���ȏꍇ�@�w�K�Ώۂ̖��O/���p�X�y�[�X/�K���Ȗ��O�@�̊w�K�Ώۂ̖��O�̕����݂̂ŌĂяo������l�K��Class Prompt����ꂽ��F�X���Ă݂Ă���
-����ł��_���Ȃ�_����
+「できたモデルデータをセットしたけどどうやって使うねん」
+Instance promptで設定した言葉の意味が変化してるからそれを入力してやれば呼び出すことができる
+え？じゃあClass Promptとかどう使うん？ってなるがClass Promptをネガにいれるという使い方もできる
+入れる方がいいの？入れない方がいいの？となるがハッキリいって学習結果によってよりけりや
+入れた方がいい完成品もあったり入れない方がいい完成品もあったりしてまだここらへんは研究が進んでないな
+当然Instance promptを強調したり学習対象の名前を強調しても調整することができるで
+もし上記の呼び出し方でもダメな場合　学習対象の名前/半角スペース/適当な名前　の学習対象の名前の部分のみで呼び出したりネガにClass Promptを入れたり色々してみてくれ
+それでもダメならダメや
 
 [[https://image02.seesaawiki.jp/n/h/nai_ch/XTUa8JgVxv.png]]
-nanU Unan �ō�����ꍇ�̌Ăяo�����̗��
+nanU Unan で作った場合の呼び出し方の例や
 
-�u�ǂꂮ�炢�Ŋ����Ɣ��f����΂����H�v
-�Ƃ肠����Instance prompt, 1girl(1boy), solo, �A�X�J�e�X�g�̕i���l�K�ł�����Ƃ����ߊw�K��ȁE�E�E���Ďv���̂��s�b�N�A�b�v
-���̂���Instance prompt, 1girl(1boy), solo, �D�݂̕�, �D�݂̏ꏊ, �̎w��ŏo���ĉߊw�K�C���ɂȂ��ĂȂ������犮����
+「どれぐらいで完成と判断すればええ？」
+とりあえずInstance prompt, 1girl(1boy), solo, アスカテストの品質ネガでちょっとだけ過学習やな・・・って思うのをピックアップ
+そのあとInstance prompt, 1girl(1boy), solo, 好みの服, 好みの場所, の指定で出して過学習気味になってなかったら完成や
 
-���͌Â��o�[�W�����̉����������火�ŐV���ȃo�[�W�����̐�����ǋL�����
+↑は古いバージョンの解説やったから↓で新たなバージョンの説明を追記するわ
 
-������11��17���ȍ~�̃o�[�W�����ł̓��f���쐬�ɕK�v��VRAM���������Ă��܂�������
-3060���M���M���ł���Ă�j�L��anything�Ƃ����f�J�����̂��g���Ă�ƍ쐬�Ɏ��s���邩�璍�ӂ��Ă�
-���̏ꍇ�����������E���Ă��ă}�[�W�Ƃ�����蒼���Ă���(�ʓ|�Ȃ�o�[�W�����߂����ȁE�E�E)
-���R�A�v�f�O�ɍ쐬�������f���̓A�v�f��ăg���[�j���O�s�ɂȂ邩�炻�������ӂ�
-3090�Ƃ��N�\�A�z�o�J�f�JVRAM�O���{�̏ꍇ��fix����R����Ƃ邩��ŐV�o�[�W�����g�����������Ǝv����
+※※※11月17日以降のバージョンではモデル作成に必要なVRAMが激増しています※※※
+3060等ギリギリでやってるニキはanythingとかがデカい方のを使ってると作成に失敗するから注意してな
+その場合小さい方を拾ってきてマージとかも作り直してくれ(面倒ならバージョン戻すんやな・・・)
+当然アプデ前に作成したモデルはアプデ後再トレーニング不可になるからそこも注意や
+3090とかクソアホバカデカVRAMグラボの場合はfixが沢山されとるから最新バージョン使う方がええと思うで
 
-�܂�model�̉��ɂ���Half��OFF��
+まずmodelの横にあるHalfはOFFで
 
 Intervals
-Training Steps�F��L�Ɠ������
-Training Epochs�F�����̓G�|�b�N�������߂�Ƃ����(1�G�|�b�N���w�K�̂��߂ɗp�ӂ����摜�̖���or�������摜�̖����̑�����)
-Save Checkpoint Frequency�F��L�Ɠ�����ȁB���f���f�[�^���ǂꂮ�炢�̊Ԋu�ŕۑ����邩�̕�����
-Save Preview(s) Frequency�F��L�Ɠ�����ȃv���r���[���ǂꂮ�炢�̊Ԋu�ō쐬���邩�̕�����
+Training Steps：上記と同じやな
+Training Epochs：ここはエポック数を決めるところや(1エポック＝学習のために用意した画像の枚数or正則化画像の枚数の多い方)
+Save Checkpoint Frequency：上記と同じやな。モデルデータをどれぐらいの間隔で保存するかの部分や
+Save Preview(s) Frequency：上記と同じやなプレビューをどれぐらいの間隔で作成するかの部分や
 
 Learning Rate
-Learning Rate�F��L�Ǝw�萔�l������Ƃ錻�󂱂���0.000001�ɖ߂�����������
-Scale Learning Rate�F��L�Ɠ�����ȁBON�ł�����
-Learning Rate Scheduler�F��L�Ǝw�肪����Ƃ�߂��̂�����B�f�t�H��polynomial��OK
-Learning Rate Warmup Steps�F0�ɐݒ肳��Ƃ邪�Ƃ肠����15���炢������Ƃ���
+Learning Rate：上記と指定数値が違っとる現状ここは0.000001に戻した方がええ
+Scale Learning Rate：上記と同じやな。ONでええよ
+Learning Rate Scheduler：上記と指定が違っとる戻すのが無難。デフォのpolynomialでOK
+Learning Rate Warmup Steps：0に設定されとるがとりあえず15ぐらいを入れるとええ
 
 Instance Image Processing
-Resolution�F��L�Ɠ�����ȁB512��OK��
-Center Crop�F�����ʂ�摜���f�J���ꍇ������ŉ摜��؂����Ă��܂����܂�512*512�őf�ނ͑����Ă�͂��₩��OFF��
-Apply Horizontal Flip�F��L�Ɠ�����(advanced�̏ꏊ�ɏ����Ƃ�)�B�摜���]�����邩�ǂ���
-Pretrained VAE Name or Path�F��L�Ɠ����ŉ��������ł���
-Use Concepts List�F���������������ł�����
+Resolution：上記と同じやな。512でOKや
+Center Crop：文字通り画像がデカい場合中央基準で画像を切り取ってしまうんやまず512*512で素材は揃えてるはずやからOFFや
+Apply Horizontal Flip：上記と同じや(advancedの場所に書いとる)。画像反転させるかどうか
+Pretrained VAE Name or Path：上記と同じで何も入れんでええ
+Use Concepts List：ここも何も入れんでええで
 
 Directories
-Dataset Directory�F�w�K������p�̉摜���������t�@�C�����w�肷��
-Classification Dataset Directory�F�������摜���������t�@�C�����w�肷��
+Dataset Directory：学習させる用の画像が入ったファイルを指定する
+Classification Dataset Directory：正則化画像が入ったファイルを指定する
 
 Prompts
-Existing Prompt Contents�F���܂Œʂ�Ȃ�f�t�H�̂܂܂ł�����
+Existing Prompt Contents：今まで通りならデフォのままでええな
 
-�u����ǂ��������̂Ȃ́H�v
-Dataset Directory��Classification Dataset Directory�ɉ摜�t�@�C���Ɠ�����txt�t�@�C��(HN�ł悭����^�O�t���݂����Ȋ���)������[filewords]���g���ČĂяo������ω������邱�Ƃ��ł���
-�E�E�E��₯�ǃ��[���������ɂ����Ă��Ȃ�߂�ǂ������ɐ���������������C�̔]�݂������肭�`������
-�ڂ����m�肽���I�Ƃ����ꍇ�ɂ�Stable Diffusion �̃t�@�C���`���[���� Tips�ƌ�������dskjal�Ƃ����Ƃ����dreambooth�̉���̂Ƃ����ǂ�ł݂Ă���
+「いやどういうものなの？」
+Dataset DirectoryやClassification Dataset Directoryに画像ファイルと同名のtxtファイル(HNでよくあるタグ付けみたいな感じ)を入れて[filewords]を使って呼び出し方を変化させることができる
+・・・んやけどルールが厳密にあってかなりめんどいうえに正直説明すらもワイの脳みそじゃ上手く伝えられん
+詳しく知りたい！という場合にはStable Diffusion のファインチューンの Tipsと検索してdskjalというところのdreamboothの解説のところを読んでみてくれ
 
-Instance prompt�F��L�Ɠ������
-Class Prompt�F��L�Ɠ������
-Sample Image Prompt�F�v���r���[�𐶐����Ȃ��ꍇ�󔒂�OK��
-Instance Token�F���܂Œʂ�Ȃ疳�L���ł��܂��[filewords]���g�p���Ȃ��ꍇ���͂��Ă����ɈӖ��͔�������
-Class Token�F���܂Œʂ�Ȃ疳�L���ł��܂��[filewords]���g�p���Ȃ��ꍇ���͂��Ă����ɈӖ��͔�������
+Instance prompt：上記と同じやな
+Class Prompt：上記と同じやな
+Sample Image Prompt：プレビューを生成しない場合空白でOKや
+Instance Token：今まで通りなら無記入でかまわん[filewords]を使用しない場合入力しても特に意味は発生せん
+Class Token：今まで通りなら無記入でかまわん[filewords]を使用しない場合入力しても特に意味は発生せん
 
 Class Images
-Total Number of Class/Reg Images�F��L�Ɠ�����ȁB�p�ӂ����������摜�Ɠ��������ł���
+Total Number of Class/Reg Images：上記と同じやな。用意した正則化画像と同じ枚数でいい
 
-Advanced�F(WIP)�������Ă��܂������M��K�v�������
+Advanced：(WIP)を押してもまだ少し弄る必要があるで
 
 Tuning
-Use 8bit Adam�F��L�Ɠ�����
-Mixed Precision�Ffp16��OK��
-Memory Attention�Fxformers��I����
-Train EMA�F��L�Ɠ�����
+Use 8bit Adam：上記と同じや
+Mixed Precision：fp16でOKや
+Memory Attention：xformersを選択や
+Train EMA：上記と同じや
 
 Gradients
-gradient checkpointing�F���x���ቺ���邪VRAM��}���邱�Ƃ��ł���炵��3090�Ƃ��Ȃ�OFF�ɂł����
+gradient checkpointing：速度が低下するがVRAMを抑えることができるらしい3090とかならOFFにできるで
 [END]
 
 
-*�w�K���|�[�g�u����
-�w�K�̗���⌋�ʂ�u���ꏊ��
+*学習レポート置き場
+学習の流れや結果を置く場所や
 [+]
 
-�Ԍ�����1
-DB���f���n�b�V���F725d85ca5485246a430d2f31f624646d061e8104
-�w�K�ΏہF�Ԍ�(�A�Y�[�����[��)
-�g�p�f�ށF�����G�t��pixiv����Q�[�����̃f�t�H���g�̈ߑ��𒅂Ă���摜��9���A�����ߑ���1���g�p
-���H�F�傫�����摜��p�ӂ��G�����̂܂ܓ\��t���A���������o����̂𖳎����G�̑S�̂�������悤�Ɏl�p��ɐ؂���
-�@�@�@���̌�anime-remove-background�̃��[�J���Ő؂蔲���A�؂蔲������肭�����Ȃ��������̂�GIMP�Ŏ��͐؂蔲���A�Ԃт��P�̖_�����̕s���������݂������߂����lama-cleaner�����p������
-�@�@�@�����ߑ��̂ݕ��i�Ƃ͈Ⴄ�ߑ��̂��ߖX�q������{�����͏���
-�@�@�@���H����ʂ�I�������S�Ẳ摜��512*512�ɏk���������̂�p�ӁA���̌�w�K�f�ނ𐅑������邽�߉��H����ʂ�I������f�ނ����p���S�g�C���̉摜�����p��portrait�C���̉摜��4���A�h�A�b�v�摜��1���Acowboy shot�C���̉摜��3���쐬
-���H��f�ޏڍׁF���v18���A�S�g���ʉ摜��3���Acowboy shot�C���̐��ʉ摜��8���Aportrait�C���̐��ʉ摜��4���A�h�A�b�v���ʉ摜��1���A�S�g�w�ʉ摜��1���Acowboy shot�C���̔w�ʉ摜��1���A���̓����������ł����w�K�f�ނ�6��
-�������摜�F��x���L�̃x�[�X���f�����g�p����DB�����p���A�ɒ[�Ɏ��Ă���(�߯�ƌ��ŉԌ��Ɣ��f�ł��邮�炢��)�G���w�K�摜��6�{�����p��
-�x�[�X���f���FNAI5�Aany2.7�Agape2�ASD(1.4)0.3�̊����̂��̂��g�p
-LR���̃X�e�[�^�X�ݒ�FLR0.000001�AScale Learning RateON�A8000Step�AApply Horizontal FlipON�AUse 8bit AdamON�ATrain EMAOFF
-���肵���Ăяo�����FInstance prompt�̊w�K�Ώۂ̖��O�̂�
-���ʁF�߯�ƌ��̏o���͗ǍD�����K���A�����ɂ��鏭������������ԃ��{���̍Č����Â��A�S�g�\���ɂ��Ă��~���y�юP�̍Č��̓T�b�p��������
-�@�@�@�f�ނ̒��Ƀh�A�b�v�̉摜�Ɣw�ʂ̉摜���������Ă������߉����ɏo�͂���Ƃ܂Ƃ��ȉ摜����ؐ�������Ȃ������蓂�˂ɔw�ʂ̊G�������铙��肪��������
-�@�@�@���������ł����w�K�f�ނ�6�����݂����������������������A�L�����̍��E�����؂�铙�̖��͐����Ȃ�����
+花月その1
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104
+学習対象：花月(アズールレーン)
+使用素材：公式絵師のpixivからゲーム内のデフォルトの衣装を着ている画像を9枚、水着衣装を1枚使用
+加工：大きい白画像を用意し絵をそのまま貼り付け、白い縁が出来るのを無視し絵の全体が見えるように四角状に切り取り
+　　　その後anime-remove-backgroundのローカルで切り抜き、切り抜きが上手くいかなかったものはGIMPで自力切り抜き、花びらや傘の棒部分の不純物が存在したためそれをlama-cleanerを活用し除去
+　　　水着衣装のみ普段とは違う衣装のため帽子や青いリボン等は除去
+　　　加工が一通り終わった後全ての画像で512*512に縮小したものを用意、その後学習素材を水増しするため加工が一通り終わった素材を活用し全身気味の画像を活用しportrait気味の画像を4枚、ドアップ画像を1枚、cowboy shot気味の画像を3枚作成
+加工後素材詳細：合計18枚、全身正面画像が3枚、cowboy shot気味の正面画像が8枚、portrait気味の正面画像が4枚、ドアップ正面画像が1枚、全身背面画像が1枚、cowboy shot気味の背面画像が1枚、その内白い縁ができた学習素材が6枚
+正則化画像：一度下記のベースモデルを使用したDBを活用し、極端に似ている(ﾊﾟｯと見で花月と判断できるぐらいの)絵を学習画像の6倍枚数用意
+ベースモデル：NAI5、any2.7、gape2、SD(1.4)0.3の割合のものを使用
+LR等のステータス設定：LR0.000001、Scale Learning RateON、8000Step、Apply Horizontal FlipON、Use 8bit AdamON、Train EMAOFF
+安定した呼び出し方：Instance promptの学習対象の名前のみ
+結果：ﾊﾟｯと見の出来は良好だが尻尾、頭後ろにある少しだけ見える赤リボンの再現が甘い、全身表示にしても艤装及び傘の再現はサッパリだった
+　　　素材の中にドアップの画像と背面の画像が混じっていたため横長に出力するとまともな画像が一切生成されなかったり唐突に背面の絵が混じる等問題が発生した
+　　　白い縁ができた学習素材が6枚存在したが白い縁が生成される、キャラの左右が見切れる等の問題は生じなかった
 
-�Ԍ�����2
-DB���f���n�b�V���F725d85ca5485246a430d2f31f624646d061e8104
-�w�K�ΏہF�Ԍ�(�A�Y�[�����[��)
-�g�p�f�ށF�Ԍ�����1�̊w�K�摜����h�A�b�v���ʉ摜��1���A�S�g�w�ʉ摜��1���Acowboy shot�C���̔w�ʉ摜��1�������������v15�����g�p
-���H�F�Ԍ�����1�̊w�K�摜�𗬗p�������ߏȗ�
-���H��f�ޏڍׁF�������ȗ�
-�������摜�Fmasterpiece,best qualty,1girl,solo,loli,green eyes,pink hair,fox girl,fox ears,fox tail,animal ear fluff,animal ears,(red hairband:1.2),pink kimono,red hakama,(white background:1.5),(simple background:1.5),bow head,hair bow
-�@�@�@�@�@�@�l�K�Flowres, bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,blurry
-�@�@�@�@�@�@�ō쐬�����l�X�Ȋp�x�A�A�b�v��̃s���N�F�̌ϖ��̉摜��6�{�����p�ӁA�g�p���f���̓x�[�X���f���FNAI7�Aany3�̊����̂��̂Ɠ���
-�x�[�X���f���FNAI7�Aany3�̊����̂��̂��g�p
-LR���̃X�e�[�^�X�ݒ�FLR0.000001�AScale Learning RateON�A7000Step�AApply Horizontal FlipON�AUse 8bit AdamON�ATrain EMAOFF
-���肵���Ăяo�����FInstance prompt+Class prompt�l�K
-���ʁF����1�Ƃقړ����̏o���ł��ėp�������߂Ȃ��̂Ɏd�オ����(�ׂ��������Ɣ�����̍Č������㏸�A�P�̍Č������X�ɒቺ�A��̉Ԍ�������Apply Horizontal FlipON�Ȃ̂œ�����̍��E�������ꒃ)
-�@�@�@������͊G�������ɏo�͂����Ă����͔������Ȃ�����
-�@�@�@�G�͂Ȃ�JNVA����102��>>28�ɓ��e
+花月その2
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104
+学習対象：花月(アズールレーン)
+使用素材：花月その1の学習画像からドアップ正面画像が1枚、全身背面画像が1枚、cowboy shot気味の背面画像が1枚を除いた合計15枚を使用
+加工：花月その1の学習画像を流用したため省略
+加工後素材詳細：同じく省略
+正則化画像：masterpiece,best qualty,1girl,solo,loli,green eyes,pink hair,fox girl,fox ears,fox tail,animal ear fluff,animal ears,(red hairband:1.2),pink kimono,red hakama,(white background:1.5),(simple background:1.5),bow head,hair bow
+　　　　　　ネガ：lowres, bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,blurry
+　　　　　　で作成した様々な角度、アップ具合のピンク色の狐娘の画像を6倍枚数用意、使用モデルはベースモデル：NAI7、any3の割合のものと同じ
+ベースモデル：NAI7、any3の割合のものを使用
+LR等のステータス設定：LR0.000001、Scale Learning RateON、7000Step、Apply Horizontal FlipON、Use 8bit AdamON、Train EMAOFF
+安定した呼び出し方：Instance prompt+Class promptネガ
+結果：その1とほぼ同等の出来でより汎用性が高めなものに仕上がった(細かく言うと髪飾りの再現性が上昇、傘の再現性が更に低下、上の花月もだがApply Horizontal FlipONなので頭飾りの左右が無茶苦茶)
+　　　こちらは絵を横長に出力をしても問題は発生しなかった
+　　　絵はなんJNVA部★102の>>28に投稿
 
-�i���W��������1
-DB���f���n�b�V���F725d85ca5485246a430d2f31f624646d061e8104
-�w�K�ΏہF�i���W����(�|�P����)
-�g�p�f�ށFpixiv���炻�������`�Y��ȊG��15���g�p
-���H�F�傫�����摜��p�ӂ��G�����̂܂ܓ\��t���A���������o����̂𖳎����G�̑S�̂�������悤�Ɏl�p��ɐ؂���
-�@�@�@���̌�anime-remove-background�̃��[�J���Ő؂蔲���A�؂蔲������肭�����Ȃ��������̂�GIMP�Ŏ��͐؂蔲���A�d���╶�����̕s���������݂������߂����lama-cleaner�����p������
-�@�@�@���H����ʂ�I�������S�Ẳ摜��512*512�ɏk���Acowboy shot�C����portrait�C���ɂ��邱�Ƃ͈�؂��Ă��Ȃ�
-���H��f�ޏڍׁF�g�p�f�ނ���ς�炸���v15���A�c�ɒ����摜�𔒔w�i�ɓ\��t���l�p���k�����Ă��邽�ߍ��E�ɔ����їL��
-�������摜�F��xDB��ʂ��A���̃��f�����g�p�����̐F�A�R�C���̐F�z�u���������i���W�����̊G���o��
-�@�@�@�@�@�@�����ڂ̂悳�╞�̐F�A�A���O�����͓x�O�����w�K�摜��8�{������p�ӂ���
-�x�[�X���f���FNAI5�Aany2.7�Agape2�ASD(1.4)0.3�̊����̂��̂��g�p
-LR���̃X�e�[�^�X�ݒ�FLR0.000001�AScale Learning RateON�A9500Step�AApply Horizontal FlipON�AUse 8bit AdamON�ATrain EMAOFF
-���肵���Ăяo�����FInstance prompt+Class prompt�l�K�AInstance prompt�̊w�K�Ώۂ̖��O�̂�
-���ʁF�\�������G�Ȃ̂ɑf�ނ̊G������ؓ��ꂳ��Ă��炸Apply Horizontal FlipON�̂��ߌ����ڂ͂������̂��ł��������E���������Ⴎ����
-�@�@�@�܂��R�C�����ȗ�����Ă���f�ފG���������߂����̍Č��������Â��A�ʂ̕��𒅂���Ƃ��c�q�w�A�[�ɂȂ邱�Ƃ�������(���̏ꍇ�Ăяo������ς��ĉ���\�ł͂�����)
-�@�@�@�ėp���͒��̉��ƌ����������ł��|�[�Y���ł��A���̕��𒅂�����R�C�����Ăяo���̂ɋ�J������
-�@�@�@�p�ӂ����w�K�摜�ɔ����č��E�ɔ����т�����G���ʎY�����Ƃ��������ۂ͔������Ȃ�����
-�@�@�@�G�͂Ȃ�JNVA����102��>>801�A�Ȃ�JNVA����103��>>39�ɓ��e
+ナンジャモその1
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104
+学習対象：ナンジャモ(ポケモン)
+使用素材：pixivからそこそこ〜綺麗な絵を15枚使用
+加工：大きい白画像を用意し絵をそのまま貼り付け、白い縁が出来るのを無視し絵の全体が見えるように四角状に切り取り
+　　　その後anime-remove-backgroundのローカルで切り抜き、切り抜きが上手くいかなかったものはGIMPで自力切り抜き、電撃や文字等の不純物が存在したためそれをlama-cleanerを活用し除去
+　　　加工が一通り終わった後全ての画像を512*512に縮小、cowboy shot気味やportrait気味にすることは一切していない
+加工後素材詳細：使用素材から変わらず合計15枚、縦に長い画像を白背景に貼り付け四角く縮小しているため左右に白い帯有り
+正則化画像：一度DBを通し、そのモデルを使用し髪の色、コイルの色配置が正しいナンジャモの絵を出力
+　　　　　　見た目のよさや服の色、アングル等は度外視し学習画像の8倍枚数を用意した
+ベースモデル：NAI5、any2.7、gape2、SD(1.4)0.3の割合のものを使用
+LR等のステータス設定：LR0.000001、Scale Learning RateON、9500Step、Apply Horizontal FlipON、Use 8bit AdamON、Train EMAOFF
+安定した呼び出し方：Instance prompt+Class promptネガ、Instance promptの学習対象の名前のみ
+結果：構造が複雑なのに素材の絵柄が一切統一されておらずApply Horizontal FlipONのため見た目はいいものができたが左右がぐっちゃぐちゃ
+　　　またコイルが省略されている素材絵が多いためここの再現も正直甘く、別の服を着せるとお団子ヘアーになることがあった(その場合呼び出し方を変えて回避可能ではあった)
+　　　汎用性は中の下と言った感じでややポーズが固く、他の服を着せた後コイルを呼び出すのに苦労をした
+　　　用意した学習画像に反して左右に白い帯がある絵が量産されるといった現象は発生しなかった
+　　　絵はなんJNVA部★102の>>801、なんJNVA部★103の>>39に投稿
 
-�i���W��������2
-DB���f���n�b�V���F725d85ca5485246a430d2f31f624646d061e8104
-�w�K�ΏہF�i���W����(�|�P����)
-�g�p�f�ށF��̃i���W��������1�̑f�ނ���R�C���̌`�󂪂܂Ƃ��Ȃ��̂�3���I��
-���H�F��̃i���W��������1�̗��p�Ȃ̂ŏȗ�
-���H��f�ޏڍׁF���p�Ȃ̂ŏȗ�
-�������摜�F�S�ʓ��ߏ��������ꂽ512*512�T�C�Y�̉摜���w�K�摜��10�{�����p��
-�x�[�X���f���FNAI5�Aany2.7�Agape2�ASD(1.4)0.3�̊����̂��̂��g�p
-LR���̃X�e�[�^�X�ݒ�FLR0.000001�AScale Learning RateON�A3000Step�AApply Horizontal FlipOFF�AUse 8bit AdamON�ATrain EMAOFF
-���肵���Ăяo�����FInstance prompt
-���ʁF�S�̂̍Č�����5�����x�Ƃ������㕨�ŃC�}�C�`�ȏo��������
-�@�@�@�������������摜�����������͂���Ɠ����ō쐬�������̂�萸�x�͂��Ȃ荂���A���̃v�����v�g�Ƒg�ݍ��킹�����̗򉻂��኱�}����Ă���
-�@�@�@�G�͂Ȃ�JNVA����105��>>806�ɓ��e
+ナンジャモその2
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104
+学習対象：ナンジャモ(ポケモン)
+使用素材：上のナンジャモその1の素材からコイルの形状がまともなものを3枚選択
+加工：上のナンジャモその1の流用なので省略
+加工後素材詳細：流用なので省略
+正則化画像：全面透過処理がされた512*512サイズの画像を学習画像の10倍枚数用意
+ベースモデル：NAI5、any2.7、gape2、SD(1.4)0.3の割合のものを使用
+LR等のステータス設定：LR0.000001、Scale Learning RateON、3000Step、Apply Horizontal FlipOFF、Use 8bit AdamON、Train EMAOFF
+安定した呼び出し方：Instance prompt
+結果：全体の再現性は5割程度といった代物でイマイチな出来だった
+　　　ただし正則化画像無し他条件はこれと同じで作成したものより精度はかなり高く、他のプロンプトと組み合わせた時の劣化も若干抑えれていた
+　　　絵はなんJNVA部★105の>>806に投稿
 
-�w�K�ΏہF�q�[���[��(���E���̖��{X)
-DB���f���n�b�V���F725d85ca5485246a430d2f31f624646d061e8104
-�g�p�f�ށF�����̃A�[�g�~���[�W�A���{�Ɍf�ڂ���Ă�������G3��(�S�g1���A�㔼�g2��)���g�p
-���H�F���摜��p�ӂ��S�g�G��\��t���G�̑S�̂�������悤�Ɏl�p���؂���512*512�ɏk���A�Y���L�����N�^�[�ȊO�͔��ɓh��Ԃ�����
-�@�@�@������̊G�͓���艺�̕������������߁A���������L�����ƌ�F����Ȃ��悤�ɒ������\��t���Ďl�p���؂���512*512��
-���H��f�ޏڍׁF�g�p�f�ނ���ς�炸���v3��
-�������摜�F�S�ʓ��ߏ��������ꂽ512*512�T�C�Y�̉摜���w�K�摜��10�{�����p��
-�x�[�X���f���FNAI5�Aany2.7�Agape2�ASD(1.4)0.3�̊����̂��̂��g�p
-LR���̃X�e�[�^�X�ݒ�FLR0.000001�AScale Learning RateON�A3000Step�AApply Horizontal FlipON�AUse 8bit AdamON�ATrain EMAOFF
-���肵���Ăяo�����FInstance prompt
-���ʁF���̍Č�����7���A����̍Č�����8���A�h��̍Č�����8�����x��DB�̋��Ȗڂ̍Č����̓C�}�C�`������
-�@�@�@�������ėp�����ɒ[�ɍ����A���̃v�����v�g�Ƒg�ݍ��킹�Ă��򉻂����Ȃ��A�Ăяo������������Ƒf���ɍČ������オ��A������w�肷����Y��ɍ\����⊮�������̂��o���Ƃ������㕨������
-�@�@�@�������A�������摜�����̂��̂��쐬������������̕������m�ɏo�����悩����
-�@�@�@�G�͂Ȃ�JNVA����105��>>720�ɓ��e
+学習対象：ヒーロー♀(世界樹の迷宮X)
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104
+使用素材：公式のアートミュージアム本に掲載されている公式絵3枚(全身1枚、上半身2枚)を使用
+加工：白画像を用意し全身絵を貼り付け絵の全体が見えるように四角く切り取り512*512に縮小、該当キャラクター以外は白に塗りつぶし消去
+　　　胸より上の絵は胴より下の部分が無いため、胴が無いキャラと誤認されないように調整し貼り付けて四角く切り取り512*512に
+加工後素材詳細：使用素材から変わらず合計3枚
+正則化画像：全面透過処理がされた512*512サイズの画像を学習画像の10倍枚数用意
+ベースモデル：NAI5、any2.7、gape2、SD(1.4)0.3の割合のものを使用
+LR等のステータス設定：LR0.000001、Scale Learning RateON、3000Step、Apply Horizontal FlipON、Use 8bit AdamON、Train EMAOFF
+安定した呼び出し方：Instance prompt
+結果：服の再現性は7割、顔回りの再現性は8割、塗りの再現性は8割程度でDBの苦手な目の再現性はイマイチだった
+　　　ただし汎用性が極端に高く、他のプロンプトと組み合わせても劣化が少ない、呼び出し強調をすると素直に再現性が上がる、横顔を指定すると綺麗に構造を補完したものを出すといった代物だった
+　　　同条件、正則化画像無しのものも作成したがこちらの方が明確に出来がよかった
+　　　絵はなんJNVA部★105の>>720に投稿

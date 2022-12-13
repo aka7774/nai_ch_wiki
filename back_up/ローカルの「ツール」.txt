@@ -1,19 +1,19 @@
-* ŠT—v
-Automatic1111‚ÌŠg’£‹@”\ˆÈŠO‚Å“®ì‚·‚éƒ[ƒJƒ‹—p‚Ìƒvƒ‰ƒOƒCƒ“‚âDCCƒc[ƒ‹‚à‚Å‚Í‚¶‚ß‚½‚Ì‚Åƒy[ƒW‚ğì¬‚µ‚Ü‚µ‚½B
+* æ¦‚è¦
+Automatic1111ã®æ‹¡å¼µæ©Ÿèƒ½ä»¥å¤–ã§å‹•ä½œã™ã‚‹ãƒ­ãƒ¼ã‚«ãƒ«ç”¨ã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚„DCCãƒ„ãƒ¼ãƒ«ã‚‚ã§ã¯ã˜ã‚ãŸã®ã§ãƒšãƒ¼ã‚¸ã‚’ä½œæˆã—ã¾ã—ãŸã€‚
 
-* DCCƒc[ƒ‹
+* DCCãƒ„ãƒ¼ãƒ«
 
 ** openOutpaint
-WebUI‚Æ‚Í•Ê‚É‹N“®‚µ‚ÄƒAƒEƒgƒyƒCƒ“ƒg‚·‚éƒc[ƒ‹
+WebUIã¨ã¯åˆ¥ã«èµ·å‹•ã—ã¦ã‚¢ã‚¦ãƒˆãƒšã‚¤ãƒ³ãƒˆã™ã‚‹ãƒ„ãƒ¼ãƒ«
 - zero01101/openOutpaint: local offline javascript and html canvas outpainting gizmo for stable diffusion webUI API &#128032; - https://github.com/zero01101/openOutpaint
-“±“üƒKƒCƒh‚ÍˆÈ‰º‚ğQÆ
+å°å…¥ã‚¬ã‚¤ãƒ‰ã¯ä»¥ä¸‹ã‚’å‚ç…§
 - SBS Guided Example &#183; zero01101/openOutpaint Wiki - https://github.com/zero01101/openOutpaint/wiki/SBS-Guided-Example
 
-* ƒXƒNƒŠƒvƒg
+* ã‚¹ã‚¯ãƒªãƒ—ãƒˆ
 
-- ƒvƒŠƒZƒbƒg’l‚Ì\¬‰Â”\‚Èƒhƒƒbƒvƒ_ƒEƒ“‚ğg—p‚µ‚ÄAWeb UI ‚Ì txt2img ƒ^ƒu‚Æ img2img ƒ^ƒu‚Ìİ’è‚ğ‚·‚Î‚â‚­•ÏXbZyin055/Config-Presets: Script for Automatic1111 - [https://github.com/Zyin055/Config-Presets]
+- ãƒ—ãƒªã‚»ãƒƒãƒˆå€¤ã®æ§‹æˆå¯èƒ½ãªãƒ‰ãƒ­ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ã‚’ä½¿ç”¨ã—ã¦ã€Web UI ã® txt2img ã‚¿ãƒ–ã¨ img2img ã‚¿ãƒ–ã®è¨­å®šã‚’ã™ã°ã‚„ãå¤‰æ›´ï½œZyin055/Config-Presets: Script for Automatic1111 - [https://github.com/Zyin055/Config-Presets]
 
-* ƒvƒ‰ƒOƒCƒ“
+* ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
 
 ** Krita
 
