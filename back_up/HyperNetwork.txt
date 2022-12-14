@@ -1,9 +1,59 @@
 * HyperNetwork
 
-少し前に大きめのアップデートが入って再検証中
-DBやってる人とマンパワーが被ってるので両方同時に進まない
-(技術部はDB使いが多い)
-スレでやってる人いたら書いてくれると嬉しい
+2022年12月14日現在、hypernetworkは以下のExtensionを使用するのがオススメ。
+https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension
 
-前よりはよくなったぽい？
-あと複数HNを適用できるExtensionを誰かが作ってたはず
+このExtensionはWEB UI(AUTOMATIC1111)に含まれているものに機能追加やバグの修正を施したもの。
+
+とりあえず変更点を書きます（学習そのものについては後日追記予定)
+
+** バグ修正
+このExtensionを使う事により以下のバグを回避することが可能
++ 学習中にHypernetwork strengthを1未満にした場合に悪影響がある現象の修正 (学習時は常に1になるようになる)
++ 学習中にプレビューを生成した際に学習に悪影響がある現象の修正
+
+** 拡張機能
+- 複数のhypernetworkをマージし、それを使い画像を生成する機能の追加
+説明は[[ここ>https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/4334]]。
+ただし、モデルのマージと違い｢画像を生成する時に指定したhypernetworkをロードしながら処理を行う｣ために画像1枚生成する時間がもの凄く長くなりあまり実用的ではない。
+- 学習画像のサイズの変更やクロップをしなくても学習出来る機能
+内部的には長辺のサイズを学習の設定で指定したサイズにし学習を行う。''注意点としてはbatch sizeは1にすること''。
+- Optimizerをアンロードしてメモリ不足エラーが発生する可能性を減少。 (VRAM8GBでも学習可能になるっぽい)
+
+** Beta hypernetwork
+*** 可変Dropout rateの追加
+純正では2番目の層にしかdropoutが指定されていなかったため、深い階層のhypernetworkを作成すると3番目以降の層に適応されない問題があった。
+また、dropoutの値が0.3に固定されており、これが大きすぎるのではないかという話があった。
+可変Dropout rateはこれらの問題を解決するもの。
+｢Use dropout. Might improve training when dataset is small / limited.｣のチェックをOnにし、その下のtext入力欄にdropoutの構造を記載する。
+これはhypernetwork layer structureの構造と一致していなければならない。
+例えばlayer structureを ｢1, 2, 2, 1｣で作成した場合、可変dropoutは｢0, 0.3, 0.3, 0｣のようにする。
+推奨値は0〜0.35で最初は0固定、前の方の層ではあまり大きい数字を使わないようにすると安定しやすい。
+
+*** Show advanced optionsの中にWeight initialization seedの固定、レイヤーウェイトの初期化にNormalを選んだ際の初期ウェイトを0.01以外に指定出来る機能の追加
+通常は触る必要はなし。
+hypernetworkは学習する際にランダムなシードが使われることで全く同じ設定・学習素材を使っても同じ結果にならないがそれを固定化する機能。
+
+ なお、この機能で作られたhypernetworkファイルはextension無しでも動作するはずだが上記の機能は適応されてないものとして扱われる(はず。未検証。)
+
+** Train Gamma
+*** Gradient accumulation
+割と最近、本体のHypernetworkにも搭載された機能。
+簡単にいうと｢処理速度や品質への影響を抑えつつ省メモリで動かす｣仕組み。
+4〜8あたりが推奨値。
+この値を変更すると1stepで処理する数が変わるため、学習stepの指定が変わることに注意。
+ 1stepで処理する画像数 = batch size × gradient accumulation。
+ 学習素材が64枚、batch size = 1、 gradient accmulation = 8なら 1stepで8枚の処理が行われ1epochは8stepとなる(端数切り捨て)
+
+*** Cosine annealing learning rate scheduler
+指定したStepの間でlearning rateを上下させる機能。Hypernetwork Learning rateで指定した値を最大値、Minimum learning rate for beta schedulerで指定した値を最小値として上下するようになる。
+- Step for cycle: 1cycleの長さをstepで指定する。目安としては10epochくらい。(学習素材数 ÷  batch size ÷ Gradient accumulation × 10epoch を切り捨てで入力)
+- Step multiplier per cycle: 1のままでOK
+- Warmup step per cycle: Step for cycleの値に合わせ上下させる。どの位が良いのかは調査中。デフォルト値のままでとりあえず問題無い。
+- Decays learning rate every cycle: cycleが進むごとに最大値を減らすようにする。1なら毎回最大値になる。1のままでも問題ないが、学習ステップ数を多くする予定なら0.998など少し減らすと良い。
+- Saves when every cycle finisher, Generates image when every cycle finishes: それぞれ、学習率が最小値に達した時にその時点のハイパーネットワークを保存する、プレビュー画像を保存する設定。
+
+* 学習について
+以下後日記載
+** キャラクターの学習
+** 画風の学習

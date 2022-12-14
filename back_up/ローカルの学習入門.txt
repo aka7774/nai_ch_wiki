@@ -87,6 +87,11 @@ https://image02.seesaawiki.jp/n/h/nai_ch/lh1xkGmvts.zip
 
 ここからは1111の起動後にやる。
 
+- あると便利なExtension(入門用Notebookでは自動インストール)
+-- Image Browser
+-- Filer
+--- https://github.com/aka7774/sd_filer
+
 - Filerのimagesに2つのzipをドロップする
 -- あるいは webui直下にzipファイル名のディレクトリを作りzipの中身を展開する
 - Image BrowserのOthersで skkmtn と touka を選択する
@@ -435,4 +440,5 @@ Seed: 3506376363
 
 挑戦者求む
 [END]
+
 

@@ -3,6 +3,9 @@
 1111の公式リスト以外の拡張機能やでー
 「Availableタブ→Load from:ボタン」で出てくるやつは[[ローカルのExtensions]]に書こう
 
+★不具合報告とか要望は掲示板でもどうぞ
+https://seesaawiki.jp/nai_ch/bbs/39211/
+
 #contents
 
 * 導入方法
@@ -45,7 +48,7 @@ PCを放置するタイミングで仕掛けるとバリエーション豊富な
 - PatreonでのUmi AI: The Ultimate Character Creator | Umi, the Cryoverse AI - https://www.patreon.com/posts/umi-ai-ultimate-73560593
 - ガチャガチャ感覚で美麗キャラクター画像を生成しまくれる拡張機能「UnivAICharGen」の使い方まとめ - GIGAZINE - https://gigazine.net/news/20221115-umi-ai-stable-diffusion/
 
-** Filer
+** Filer ★
 
 ファイラー
 
@@ -54,7 +57,7 @@ PCを放置するタイミングで仕掛けるとバリエーション豊富な
 - バックアップ先を指定して、Models, Hypernetworks, Extensions, Imagesをやりとりできる
 - ディレクトリをzipにしたりアップロードしたzipをディレクトリに展開したりできる
 
-** Katanuki
+** Katanuki ★
 
 型抜き
 
@@ -66,7 +69,7 @@ PCを放置するタイミングで仕掛けるとバリエーション豊富な
 - スレで3人くらい動いたって言ってたのできっと大丈夫
 - 画像のファイル名に日本語使うとダメらしい
 
-** Generate from json
+** Generate from json ★
 
 近々大幅改修予定
 
@@ -74,7 +77,7 @@ PCを放置するタイミングで仕掛けるとバリエーション豊富な
 - 「Prompt from file or textbox」をプロンプト以外も指定できるようにした感じのやつ
 - jsonファイルを用意しないといけない
 
-** sd_invokeai_models_yaml_maker
+** sd_invokeai_models_yaml_maker ★
 
 Filerにもっといい機能が入ってるのでよければそっちを使ってください
 
@@ -82,26 +85,27 @@ Filerにもっといい機能が入ってるのでよければそっちを使っ
 - InvokeAIのインストールが面倒だから作ったやつ
 - 1111に入ってるckpt、同名のvae.ptとyamlをInvokeAIのmodels.yaml形式で出力する
 
-** Checkpoint Manager
+** Checkpoint Manager ★
 
 - https://github.com/rvhfxb/checkpoint_manager
 - ckptにコメントつけたり
 - マージモデルのX/Y Plot比較にも便利
 - プルダウンリストはまだいじれないらしい
 
-** Dataset Resizer
+** Dataset Resizer ★
 
 - https://github.com/hunyaramoke/Dataset-Resizer
 - データセットを一括で縦横比を変えずにリサイズする拡張です。
 - サイズ、背景を白か透明で指定する事ができます。
 
-** Face-Body-Splitter
+** Face-Body-Splitter ★
 
 - https://github.com/hunyaramoke/Face-Body-Splitter.py
 - 顔と体を一括で分けてくれるwebuiの拡張です。
 - padding_rateは基本変えなくて大丈夫ですが、髪が横に広がってるとか、頭に上に長い帽子や角がある場合は適宜調整してください。
 - CUDA Toolkitのインストールが必要かも
-** Generate-TransparentIMG
+
+** Generate-TransparentIMG ★
 
 - https://github.com/hunyaramoke/Generate-TransparentIMG
 - 透明正則画像の作成支援
