@@ -1,5 +1,9 @@
 [[ローカルの学習入門]]
 
+最初に Rumtime - Change runtime type で GPU を選ぶ
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t.jpg]]
+
 ----
 =|BOX|
 #@markdown あくまで入門用なので改良やサポートの予定はありません。実行は自己責任で。
@@ -87,6 +91,7 @@ if aria_url:
 %cd /content/stable-diffusion-webui/extensions/
 # Dreambooth (使わないならコメントアウトすると起動が速くなる)
 !git clone https://github.com/d8ahazard/sd_dreambooth_extension.git
+!git clone https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension.git
 !git clone https://github.com/animerl/novelai-2-local-prompt.git
 !git clone https://github.com/yfszzx/stable-diffusion-webui-images-browser.git
 !git clone https://github.com/aka7774/sd_katanuki.git
