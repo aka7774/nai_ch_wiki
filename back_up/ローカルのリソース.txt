@@ -17,11 +17,32 @@
 
 
 
-*リソース(個別)
+*モデル
 
-**モデル
+** ACertain
 
-*** Elysium
+*** ACertainModel 
+- JosephusCheung/ACertainModel &#183; Hugging Face - https://huggingface.co/JosephusCheung/ACertainModel
+▼このモデル is 何
+要約しちゃえばAnything-3.0ベースの亜種
+AnythingV3はかわいい女の子を生成する用途に最適化されすぎてる問題をどうにかしたかったっぽい
+
+▼詳細
+ Anything-3.0などコミュニティで人気のあるモデルを使って、1プロンプトから自動生成した大量の画像を学習セットに加え、さらに1年以内に手動で選んだdanbooru画像を加えて、ネイティブ学習を実施しました。（中略）著作権コンプライアンスと技術実験のために、少数のアーティスト画像から直接トレーニングされました。コミュニティで人気のあるいくつかの拡散モデルから生成された写真を使用して、Dreamboothでトレーニングされました。チェックポイントは、安定した拡散モデルの重みで初期化され、その後、V100 32GBで2K GPU時間、A100 40GBで600 GPU時間、512Pの動的アスペクト比解像度で微調整され、テキスト反転とハイパーネットワークを備えたコミュニティで人気のあるいくつかの拡散モデルからの教師なし自動生成画像が一定の比率で調整されました。xformersと8ビット最適化に関するいくつかのトリックを知っていますが、品質と安定性を向上させるためにそれらのどれも使用しませんでした。最大15のブランチが同時にトレーニングされ、約20,000ステップごとにチェリーピッキングが行われます。
+とのこと。
+
+*** ACertainThing 
+- JosephusCheung/ACertainThing &#183; Hugging Face - https://huggingface.co/JosephusCheung/ACertainThing
+▼このモデル is 何
+ACertainModelのもっとAnythingV3してるモデル
+
+▼詳細
+AnythingV3は人間の画像や特定のディテール(certain details)を生成する用途に最適化されている。逆に言えばそうではないモチーフを生成する場合に過剰にオーバーフィットしている。
+だけどAnythingは人気だからDreambooth(LoRA統合のアイデア)で作成され、ACertainModelで初期化されたAnything3.0のACertainバージョンを作ったよ、とのこと。
+ このモデルは画像生成でより良い結果をもたらすかもしれませんが、それは2つの大きな問題に基づいて構築されています。第一に、それは常にあなたのプロンプトに忠実であるとは限りません。それは無関係な詳細を追加し、時にはこれらの詳細は非常に均質化されます。第二に、これはAnything3.0と同様に不安定でオーバーフィットしたモデルであり、さらなるトレーニングには適していません。
+
+
+** Elysium
 アニメモデルのElysium_Anime_V2.ckptが良さそう
 Elysium_Anime_V1.ckpt｜セミリアル系
 Elysium_Anime_V2.ckpt｜アニメ系
@@ -39,19 +60,19 @@ Sampler: DPM++ 2M Karras
 - (Anime model): Clip skip 1 or 2, VAE: 'kl-f8-anime2.ckpt' from Waifu Diffusion：https://huggingface.co/hakurei/waifu-diffusion-v1-4/tree/main/vae
 Sampler: DPM++ 2M Karras
 
-*** EimisAnimeDiffusion
+** EimisAnimeDiffusion
 &#128317;eimiss/EimisAnimeDiffusion_1.0v &#183; Hugging Face - https://huggingface.co/eimiss/EimisAnimeDiffusion_1.0v
 高品質で詳細なアニメ画像でトレーニングされたモデル
 
 
-*** Gape
+** Gape
 &#128317;(閲覧注意)Gaping/Large Insertion model - https://rentry.org/gapemodel
 Danbooruにある極端にNSFWなコンテンツのみを学習させたモデル。
 一見すると特殊な人にしか必要ないようにみえるが、NSFWコンテンツが検閲されたり学習していないモデルとマージすることで局部描写の補完に使える有用モデル
 参考：[[ローカルのマージ]]
 
 
-*** Anything-V3.0
+** Anything-V3.0
 Anime model
 Info https://www.bilibili.com/read/cv19603218
 &#128317;Linaqruf/anything-v3.0 at main - https://huggingface.co/Linaqruf/anything-v3.0/tree/main
@@ -60,7 +81,7 @@ Info https://www.bilibili.com/read/cv19603218
 出力時には問題ありませんが、学習系の作業に使う場合は非推奨です。
 
 
-*** NAI
+** NAI
 要Torrentクライアントソフト
 &#128317;
 =|BOX|
@@ -68,15 +89,19 @@ magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 ||=
 ソース：--GUIDE-- - https://rentry.org/voldy#-novelai-setup-
 
-**マージモデル
+*マージモデル
 →[[ローカルのマージ]]に移動させました。
 
 ----
 
-** HyperNetwork
+* HyperNetwork
 ローカル部│[[HyperNetwork]]
 
-*** 韓国HyperNetworkコレクション
+** 騎乗位SEX用HN
+どんだけ騎乗位の呪文設定しても斜め構図と仰け反る頻度が高すぎるから作ったイチャラブ騎乗位SEX用HN
+[[詳細ページ：騎乗位SEX用HN]]
+
+** 韓国HyperNetworkコレクション
 &#128317; &#44277;&#50976;&#46108; hypernet, embedding &#47784;&#51020; (&#49368;&#54540; 有) - AI&#44536;&#47548; &#54617;&#49845; &#52292;&#45328; - https://arca.live/b/hypernetworks/60940948?category=%EA%B3%B5%EC%9C%A0&p=1
 韓国で掲載されている、絵師の絵柄の再現を目的としたとてつもない量のHypernetworkのコレクション
 個々にダウンロードできるほかまとめてダウンロードできるMegaリンクが一応ある(ただしフリーだと大抵途中で制限くらってしぬ)
@@ -89,16 +114,17 @@ HyperNetwork
 
 ----
 
-** TextualInversion
+* TextualInversion
 ローカル部[[TextualInversion]]
 
-*** 手の補正TI
+** 手の補正TI
 
 &#128317;Nerfgun3/bad_prompt &#183; Datasets at Hugging Face - https://huggingface.co/datasets/Nerfgun3/bad_prompt
 TextualInversionで悪い手の形を学習させて、Embeddingでネガティブプロンプトとして使うことで正しい手の形を生成するやつ。
 効果ありそう。
 検証はローカル部のページ[[TextualInversion]]に書いたで
 
-**透明正則化画像
+* 学習系リソース
+** 透明正則化画像
 512x512、768x768、1024x1024の透明画像詰め合わせ　各1000枚ずつ
 https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip

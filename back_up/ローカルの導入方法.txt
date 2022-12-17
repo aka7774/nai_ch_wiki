@@ -97,12 +97,12 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 ----
 
 *※番外編：導入(WSL2)｜Linux環境でAutomatic1111を導入する
-※Windowsの人は関係ないので飛ばします
+※上記のWindows版の人は関係ないので飛ばします
+Windowsでも速度を求める人やLinuxに慣れてる人はこちらがお勧め
 [+]
 
 **概要
-Linux環境でAutomatic1111を導入する手順です。
-雑に書いたんで誰かちゃんと書いちくりー
+WindowsのWSL(Linux)環境でAutomatic1111を導入する手順です。
 
 ***利点
 Windows版と比べて15〜25%程早い
@@ -121,7 +121,6 @@ wsl --install
 
 **Ubuntu 22.04 をインストール
 Microsoft Storeを起動し、ubuntu 22 で検索して Ubuntu 22.04.1 LTS をインストールする(2022/12/07現在の最新)
-※ Ubuntu 22.04 にしておくとデフォルトでPython 3.10.6 が入っているのであとで苦労しなくて済む
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/QMSxJb_6Dc.png)
 
 **Ubuntu 22.04 をセットアップ
@@ -173,7 +172,6 @@ python3 --version
 sudo apt update
 sudo apt upgrade -y
 ||=
-初回の sudo 実行時にユーザーのパスワードを聞かれるので入力する
 
 
 
@@ -256,27 +254,39 @@ deactivate
 
 **xformers有効化とWebUI起動
 /home/<Ubuntuのユーザー名>/stable-diffusion-webui にある webui-user.sh を開き、以下の行のコメントアウトを外してパラメータを追記する
-
 =|BOX|
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
 export COMMANDLINE_ARGS="--xformers"
 ||=
 
 その後 /home/<Ubuntuのユーザー名>/stable-diffusion-webui にある ./webui.sh を実行
+=|BOX|
+cd /home/<Ubuntuのユーザー名>/stable-diffusion-webui
+bash webui.sh
+||=
 Windows側で  http://127.0.0.1:7860 にアクセスできます。
 
+
 ***起動するのにUbuntuいちいち立ち上げるのがめんどくさいンゴ
-Windows側で以下のバッチファイルを作成しましょう
+/home/<Ubuntuのユーザー名> にある .profileに以下を書き加える
 =|BOX|
-wsl cd /home/<Ubuntuのユーザー名>/stable-diffusion-webui; bash webui.sh
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+||=
+Windows側で以下のバッチファイルを作成する
+=|BOX|
+wsl cd /home/<Ubuntuのユーザー名>/stable-diffusion-webui; bash -l webui.sh
 pause
 ||=
 バッチファイルを実行すればUbuntuでwebui.shを叩いてくれます
+※wslから起動したbashはWindowsのbash.exeを呼び出しているが、これは起動時の環境ファイルを読み込まない
+その為、-lオプションで.profileを読み込んで起動するようにする
+
 
 ***生成した絵に直でアクセスしたいンゴ
 WebUIのSettingタブで以下のように設定しましょう
 (以下の例はWindowsの C:\stable-diffusion-webui-automatic1111\outputs\ の下にフォルダ分けしてファイルを置きたい場合)
 https://image01.seesaawiki.jp/n/h/nai_ch/16PjLJzYTa.png
+
 
 **参考サイト
 https://premirea.jp/article/wsl2-stable-diffusion-web-ui
@@ -492,6 +502,117 @@ https://github.com/TheLastBen/fast-stable-diffusion/issues/904
 このアップグレードが出来ないとDreamboothが動かないはずなので、
 現状WSL2化によって学習速度の向上を図るのは困難と結論付ける。
 [END]
+
+** やってみた２(2022-12-17)
+要所でWSL環境のバックアップを取りつつ実施
+所要時間90分程
+[+]
+Windows 11 22H2
+RTX 3090
+所要時間90分程（バックアップ時間含む）
+
+ハローアスカ
+- Windows 21.65
+- WSL2+opt-channelslast 17.51
+
+***1．WSLのインストール(PowerShell操作)
+-WSL2 のセットアップ
+-Ubuntu 22.04 をインストール
+-Ubuntu 22.04 をセットアップ
+
+***2．上記実施後、環境のエクスポート(バックアップ)、ついでにWSL環境のドライブ変更(Cドライブ→Dドライブ)(PowerShell操作)
+=|BOX|
+D:
+md WSL
+wsl --shutdown 
+wsl --export Ubuntu-22.04 D:\WSL\Ubuntu-22.04.tar
+||=
+
+現在のUbuntuを一旦削除(PowerShell操作)
+=|BOX|
+wsl --unregister Ubuntu-22.04
+||=
+
+DドライブにUbuntuをインポート(復元)(PowerShell操作)
+=|BOX|
+wsl --import Ubuntu-22.04 D:\WSL\Ubuntu-22.04 D:\WSL\Ubuntu-22.04.tar --version 2
+||=
+
+ログインユーザーが強制的にrootになるので、作成したユーザに変更(レジストリ操作)
+PowerShellよりregeditを起動
+=|BOX|
+regedit
+||=
+・コンピューター\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\ の中からUbuntu22.04が入っているキーを探す
+DefaultUid を「0」から10進数で「1000」(16進数で「3e8」)に変更
+WindowsターミナルからUbuntu22.04を起動し、ユーザーが作成したものになっている事を確認
+
+***3．環境構築(Ubuntu操作)
+-Pythonのアップデート
+Pythonのインストールは10分程かかる
+
+***4．StableDiffusionのインストール(Ubuntu操作)
+-AUTOMATIC WebUIのインストール
+-ckptなど置く
+-CUDAのインストール
+-cuDNN のインストール
+順番に実施
+.bashrcの書き換えはWindows側からVS Codeで書き換え
+
+***5．xformersのビルド(Ubuntu操作)
+4,50分掛かるので気長に待つ
+
+***6．xformers有効化とWebUI起動(Ubuntu操作)
+起動及びイラスト作成の動作確認実施
+
+***7．WebUIが正常動作する事を確認した上で、環境をバックアップする(PowerShell操作)
+=|BOX|
+wsl --shutdown
+wsl --export Ubuntu-22.04 D:\WSL\Ubuntu-22.04_WebUI_Install.tar
+||=
+
+***8.各種フォルダをWindows側に作成(Ubuntu操作)
+Windows版WebUIをインストールしていたので、必要フォルダをWindows版と共通にする
+対象は「models・embeddings・outputs・textual_inversion」フォルダ
+
+Ubuntuを起動し
+=|BOX|
+cd /home/<作成したユーザーアカウント>/stable-diffusion-webui
+mv models models_
+ln -s /mnt/d/stable-diffusion-webui/models models
+mv embeddings embeddings_
+ln -s /mnt/d/stable-diffusion-webui/embeddings embeddings
+mv outputs outputs_
+ln -s /mnt/d/stable-diffusion-webui/outputs outputs
+mv textual_inversion textual_inversion_
+ln -s /mnt/d/stable-diffusion-webui/textual_inversion textual_inversion
+||=
+mvコマンドでリネーム(正確にはディレクトリ移動だが)、lnコマンドでシンボリックリンクを貼る
+「/mnt/d/」部はWindows版WebUIのインストール場所に合わせる
+
+終わったら /stable-diffusion-webui からWebUIを起動し、イラスト作成の動作確認実施
+
+***9．最後の環境をバックアップする(PowerShell操作)
+=|BOX|
+wsl --shutdown
+wsl --export Ubuntu-22.04 D:\WSL\Ubuntu-22.04_WebUI_Install_finished.tar
+||=
+
+***10．デスクトップに起動用バッチファイルを作成して終了
+
+***雑感
+手順通りにやれば詰まる所は無かった
+またエラーが出た場合でも、2の手順で取ったバックアップをリストアする事で綺麗な環境からやり直せるので安心感が高い
+
+TI、HB、DBの学習に関しては、特に問題無し
+注意点があるとすれば、素材フォルダ等の必要フォルダの指定の方法がUbuntu側から見たpathになる為
+D:\stable-diffusion-webui\training　フォルダを指定する場合は
+/mnt/d/stable-diffusion-webui/training　と指定する必要がある
+
+modelsやoutputsフォルダを外出しにしているので、一度環境を作ってしまえば再インストールも容易
+セットアップ時に何かエラーが出た場合は、あれこれ弄る前にリストアしてやり直す事をお勧めする
+[END]
+
 
 [END]
 
