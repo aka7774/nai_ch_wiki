@@ -10,6 +10,16 @@
 
 * 設定(Settings)周り
 
+** 色がくすんでる気がする
+Vaeが設定されていないときに見られる現象。
+nai.vae.ptやAnything-V3.0.vae.ptなどをモデルファイル(.ckpt)と同じ場所に配置して、WebUIの上部タブのプルダウンから合うものを選びます。
+
+図：左がVaeOFF、右ON
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7e9AhZfv5Y-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/7e9AhZfv5Y.jpg]]
+
+図：Vaeの選択
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/99s3OvA4nB.jpg)
+
 ** 生成中/学習中もネット見たりゲームしたい
 
 おすすめはiGPUつきのCPUにして、モニタやブラウザをiGPUで描画するよう[[グラフィックの設定>https://www.google.com/search?q=windows+10+%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%81%AE%E8%A8%AD%E5%AE%9A]]をいじること。
