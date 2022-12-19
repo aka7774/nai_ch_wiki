@@ -117,9 +117,23 @@ anything and everything mix ver.1.5ベースのGape+NAIモデルです。
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/nNTKja2ud6.jpg,450)
 
+***JNVA109スレ目誕生リアル系モデル
 
+|~配合|~モデルA|~モデルB|~モデルC|
+|0.5|インスタモデル|waifu diffusion1.3||
 
+https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/442
+> 442今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4088-/gh/)2022/12/06(火) 18:14:36.02ID:mrCax/lc0~~
+> リアル系と絵画系モデルを混ぜ混ぜするのも楽しいね　インスタとwd1.3~~
+&ref(https://i.imgur.com/C0GTaxh.jpg,200)
 
+https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/725
+> 725今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 08f7-9yeH)2022/12/07(水) 00:52:03.68ID:AM9XC0ZW0~~
+> >>442~~
+> 同じやり方で0.5:0.5でやってみてるけどこれすげぇわ~~
+> 何もしないでやると基本的に日本人出てくるから、~~
+> blonde hairにしたり、ネガティブにjapanese入れたら外人さん出てくる~~
+&ref(https://i.imgur.com/ocKzRTK.png,200)
 *叡智/Tips 一覧
 
 **Tips
@@ -240,6 +254,7 @@ Weighted sumとAdd differenceって何をしてるんですかね
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/2L3z8nLa4x.png,600)
 ----
+
 
 
 

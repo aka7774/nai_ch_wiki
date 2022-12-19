@@ -1,0 +1,101 @@
+#contents
+
+* 概要
+
+StableDiffusionのU-Netの各層に応じたモデルデータのマージを行う
+
+U-Netは構造がその名の通りU字型しており、浅い層が細かいディテール部分を、深い層が全体の構造を担当している
+このU-Netの深さに応じてマージ比率を変えてマージするのが階層マージ
+詳しくは[[kohya_ss, Stable DiffusionのモデルをU-Netの深さに応じて比率を変えてマージする｜Kohya S.｜note>https://note.com/kohya_ss/n/n9a485a066d5b]]参照
+
+簡単に言うと、3D調(リアル風)を保ったままアニメ風のイラスト作成、などが出来る
+
+* 導入方法
+1111のextentions(拡張機能)-URLからインストールで以下のURLを入れてインストール
+=|BOX|
+https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
+||=
+
+* 使い方
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/GZc1wyVZY7.jpg,540,405)
++1111のMerge Block Weighted タブを選択
++modelA欄とmodelB欄にマージしたいモデルを選択
++各層に対するマージ比率を各種インジゲーターで調整、又は右上のPreset Weightedより選択
++Output Model Nameに出力するモデル名を入力
++Run Margeボタンで実行
+
+* 出力サンプル・設定等
+**AnythingV3とインスタモデルのマージ
+AnythingV3・インスタモデル・AnythingV3インスタ配合モデル・Merge Block Weighted標準プリセットの比較
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UrFJ1MZEjT.jpg,600,2000)
+
+[END]
+**ElyOrangeMixとElysiumのマージ
+=|BOX|
+914 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 3b54-e5AJ)[sage] 投稿日：2022/12/19(月) 20:58:35.46 ID:KPb2Nvxk0 [3/4]
+ワイもElyOrangeMixとElyで層別マージしてみたから共有するわ
+大雑把な方針を得たいからin浅層、in深層、out深層、out浅層の4区画に分けてそれぞれの組み合わせで12個マージモデル作ってみた
+ElyAvR-1100やと1,1,1,1,1,1,1,1,1,1,1,1,0.5,0,0,0,0,0,0,0,0,0,0,0,0みたいな感じで6層1ブロックで設定しとる
+
+汎用性あるかはしらんけどいったん以下みたいな雰囲気っぽい
+in浅層…陰影とか塗り
+in深層…構図、物
+out深層…顔などディティール
+out浅層…質感
+
+987今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-httI)2022/12/19(月) 23:10:26.01ID:qiE3OptN0
+あー分かった気がする
+IN浅層=細部の形状=指等
+IN深層=大枠の形状=構図
+OUT深層=大枠の塗り
+OUT浅層=細部の塗り
+||=
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WU7imTbCr3.jpg,552,1808) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/mIHcA0cMjz.jpg,552,1808)
+
+[END]
+**base alpha設定
+=|BOX|
+948 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-httI)[] 投稿日：2022/12/19(月) 21:58:29.97 ID:qiE3OptN0 [7/7]
+ちなみになんやが層別マージのbase_alpha(エンコーダ配分)は高性能モデル由来100%になる数値使うのがええで
+
+Any+insta, base_alpha = 1 (100%Any) 
+Any+insta, base_alpha = 0 (100%insta) 
+弱いモデルのを混ぜたりする意味はない
+||=
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EFBCxf2EmD.jpg,500,402) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/JeLcMNQdse.png,512,384){Any+insta, base_alpha = 1 (100%Any)} &ref(https://image01.seesaawiki.jp/n/h/nai_ch/9z23W8gD8M.png,512,384){Any+insta, base_alpha = 0 (100%insta)}
+
+**anyとinstaモデルの層別マージ結果
+=|BOX|
+24今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f2f-CLTW)2022/12/19(月) 23:47:13.82ID:55EWgxue0>>28>>33>>34>>41
+前スレ995 サンガツ
+結局jpgだとあらすぎたから自分で小さくした
+
+anyの25層のうち1層をｲﾝｽﾀに置き換えてモデル比較したで
+Layer18が顔を大分リアルにするからここが顔層なんやろな
+ちな24までしかないのはクロップするときに00を入れ忘れたんや
+
+34今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8b1e-CLTW)2022/12/19(月) 23:53:27.19ID:nICEWkdN0
+>>24
+この検証めちゃくちゃ有用やな
+
+なんとなく見て取れるけど、インスタみたいなリアルモデルをIN00にだけ乗せてあげると手指の描画は良くなったで
+1.0にすると流石に影響大きいから0.5超えないくらいがええと思うが
+||=
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/bRVyJToo8V.jpg)
+
+[END]
+
+**インジゲーターの数字
+=|BOX|
+10 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa9f-XlG+)[sage] 投稿日：2022/12/19(月) 23:39:59.39 ID:wLD2pT87a
+これ数値全部0にするとモデルAで
+全部1だとモデルBになるんやな
+逆やと思ってた
+
+12 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f00-MRAL)[sage] 投稿日：2022/12/19(月) 23:41:13.73 ID:kfkiHGjt0
+>>10
+base_alphaは逆やからややこしいな
+||=

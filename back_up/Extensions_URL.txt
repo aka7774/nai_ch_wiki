@@ -30,6 +30,9 @@ https://seesaawiki.jp/nai_ch/bbs/39211/
 
 * 一覧
 
+** Unet階層別マージ
+bbc-mc/sdweb-merge-block-weighted-gui: Merge models with separate rate for each 25 U-Net block (input, middle, output). Extension for Stable Diffusion UI by AUTOMATIC1111 - https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
+
 ** カスタムモデルのキーワードを自動入力するWEBUI拡張機能
 mix1009/model-keyword: Automatic1111 WEBUI extension to autofill keyword for custom stable diffusion models. - https://github.com/mix1009/model-keyword
 

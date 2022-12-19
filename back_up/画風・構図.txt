@@ -5,22 +5,15 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
-|intricate, geometric , abstract|TCG &#39118;|几何&#33402;&#26415;&#39118;格|加&#24378;它，抽象度�甓叩そ螳�&#35753;我&#20204;加&#26597;，以&#36866;&#24212;&#20320;想&#30596;准的方向||
-|intricate, geometric , abstract|TCG &#39118;|几何&#33402;&#26415;&#39118;格|加&#24378;它，抽象度�甓叩そ螳�&#35753;我&#20204;加&#26597;，以&#36866;&#24212;&#20320;想&#30596;准的方向||
-|intricate, geometric , abstract|TCG &#39118;|几何&#33402;&#26415;&#39118;格|加&#24378;它，抽象度�甓叩そ螳�&#35753;我&#20204;加&#26597;，以&#36866;&#24212;&#20320;想&#30596;准的方向|https://image01.seesaawiki.jp/n/h/nai_ch/dgnOD4kL6y.png|
-|提示	意思	&#22791;注	&#26679;品	&#32534;&#36753;&#22270;像&#38142;接Add&#32534;&#36753;card,提示	&#36127;提示	意思	&#22791;注	&#26679;品	&#32534;&#36753;提示	意思	&#22791;注	&#26679;品	&#32534;&#36753;&#22270;像&#38142;接Add&#32534;&#36753;card&#22270;像&#38142;接Add&#32534;&#36753;Professional oil painting of establishing shot of 〇〇, professional {{majestic}} oil painting by Greg Manchess, Atey Ghailan, {{Fenghua Zhong}}, {{{{Jeremy Mann}}}}, {{{{{{{{Greg Rutkowski} }}}}}}}, Antonio Moro, {{{{{{trending on ArtStation}}}}}}, trending on CGSociety, dramatic lighting, {{dawn}}, refraction, {{{{{{{{Unreal Engine 5}}}}}}}}, rule of thirds		midjourney&#39118;	把&#36825;个&#25442;成合&#36866;的	  	&#32534;&#36753;{{{{{masterpiece}}}}}, {{{{best quality}}}}, {{{{{}}}}}, {{{{high colour Value}}}}, needy girl{{colourful hair}}, &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;purple hair]]]]]]]]]]]]]]], &#91;&#91;&#91;&#91;&#91;&#91;blonde hair]]]]]], &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;black hair]]]]]]]]]], &#91;&#91;&#91;&#91;&#91;parted lips]]]]],	lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name	五&#39068;六色	原始提示已&#36716;&#25442;&#20026; NAI（主版本：1.3）、（最佳&#36136;量：1.2）、（：1.3）、（高光&#20540;：1.2）、（女孩：1）、（colourful hair：1.1）、（purple hair：0.472），（ blonde hair:0.738),&#40;black hair:0.6),&#40;parted lips:0.77)	 	&#32534;&#36753;{{masterpiece}}, {{{best quality}}}, {{ultra-detailed}}, {{illustration}}, {{disheveled hair}},India ink,sumi-e,{{{{{{{Ink wash painting sumi-e}}}}}}},{{{ukiyoe}}}{monochrome}, japanese style,Sesshu,water splash,rain,floating hair,pond,Steam,		水墨画（雨和池塘）在&#36825;背后添加&#20320;最喜&#27426;的&#21160;物和什&#20040;？	https://fate.5ch.net/test/read.cgi/liveuranus/1666...		&#32534;&#36753;anime manga	tree	boys	nice		&#32534;&#36753;Banksy,street art,wall art,graffiti		街&#22836;&#33402;&#26415;			&#32534;&#36753;voxel,3D		体素	立方体的&#32452;合，如我的工&#33402;		&#32534;&#36753;Low poly,3D		低多&#36793;形			&#32534;&#36753;French dolls, china, ceramics, porcelain		陶瓷， 陶瓷			&#32534;&#36753;&#32534;&#36753;intricate, geometric , abstract|||||
-||||||
+|masterpiece, best quality, 〇〇, 1girl, high contrast, hyper detailed|grayscale, monochrome, flat shading, low contrast, 3d, realistic|カラフル|〇〇は適当に変えてな ~~ サンプルではcosmicを使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yZZbHI6MKC.png)|
 |Professional oil painting of establishing shot of 〇〇, professional {{majestic}} oil painting by Greg Manchess, Atey Ghailan, {{Fenghua Zhong}}, {{{{Jeremy Mann}}}}, {{{{{{{{Greg Rutkowski}}}}}}}}, Antonio Moro, {{{{{{trending on ArtStation}}}}}}, trending on CGSociety, dramatic lighting, {{dawn}}, refraction, {{{{{{{{Unreal Engine 5}}}}}}}}, rule of thirds||midjourney風|〇〇は適当に変えてな|https://i.imgur.com/sqVN0g4.png https://i.imgur.com/FaZik8q.jpg https://i.imgur.com/oz6kQRP.jpg|
 |{{{{{masterpiece}}}}}, {{{{best quality}}}}, {{{{{CYBERSEX}}}}}, {{{{high colour Value}}}}, needy girl{{colourful hair}}, &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;purple hair]]]]]]]]]]]]]]], &#91;&#91;&#91;&#91;&#91;&#91;blonde hair]]]]]], &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;black hair]]]]]]]]]], &#91;&#91;&#91;&#91;&#91;parted lips]]]]],|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name|カラフル|元のプロンプトはこちらプロンプト欄のはNAI用に変換済み~~(masterpiece:1.3),(best quality:1.2),(CYBERSEX:1.3),(high colour Value:1.2),(needy girl:1),(colourful hair:1.1),(purple hair:0.472),(blonde hair:0.738),(black hair:0.6),(parted lips:0.77)|https://image01.seesaawiki.jp/n/h/nai_ch/1qo0cuNjTv.png https://image02.seesaawiki.jp/n/h/nai_ch/El9aB781cf.png|
 |{{masterpiece}}, {{{best quality}}}, {{ultra-detailed}}, {{illustration}}, {{disheveled hair}},India ink,sumi-e,{{{{{{{Ink wash painting sumi-e}}}}}}},{{{ukiyoe}}}{monochrome},japanese style,Sesshu,water splash,rain,floating hair,pond,Steam,||水墨画(雨や池)この後ろに好きな動物やらなんやらを追加してくれや|https://fate.5ch.net/test/read.cgi/liveuranus/1666411038/|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7AfOtoJ9a4.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UYwsUJzusZ.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IBbVkpx9tZ.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VFiok5ffUf.png)|
-|anime manga|tree|boys|nice||
 |Banksy,street art,wall art,graffiti||ストリートアート||https://image02.seesaawiki.jp/n/h/nai_ch/DF64KKwGMo.png|
 |voxel,3D||ボクセル|マインクラフトのように立方体を組み合わせたもの|https://image01.seesaawiki.jp/n/h/nai_ch/PDAXVwKhsF.png|
 |Low poly,3D||ローポリゴン||https://image02.seesaawiki.jp/n/h/nai_ch/apFs452Gkv.png|
 |French dolls, china, ceramics, porcelain||陶器、陶磁器||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/S8ybgJJaDB-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/S8ybgJJaDB.png]]|
-||||||
 |intricate, geometric , abstract||幾何学模様アート風|強化すると抽象度があがるので目指したい方向性に合わせてガチャしよう|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QbZfBETLwh.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dgnOD4kL6y.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ygKBTXsIbm.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/GuzBin46xE.png)|
-|above|||||
 |monochrome, speech bubble, panel layout||白黒漫画|コマの数が多過ぎると感じた時にはpanel layoutを外すと丁度良い感じになる|https://image01.seesaawiki.jp/n/h/nai_ch/Eb1XChVwWj.png|
 |&#91;&#91;&#91;&#91;&#91;hyper paint, rough design, flat color]]]]]||様々な画風|画風が非常に安定せず、弱体化しなければまともに出力ができない。|https://image01.seesaawiki.jp/n/h/nai_ch/J6hSqJVTS8.png https://image02.seesaawiki.jp/n/h/nai_ch/NB6fnQn5xW.png|
 |game cg, flat color, paper cutting||ゲームCG、フラットテイスト、ペーパーカット||https://image01.seesaawiki.jp/n/h/nai_ch/PmX9gYY_Vo.png|
@@ -86,8 +79,6 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|card|包装|||
-|||||
 |card|TCG風|上でポーズ指定するとその姿勢になる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/A4LkH3Y9Fb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/A4LkH3Y9Fb.png]]|
 |comic|漫画||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/y_X3i_4Zda-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/y_X3i_4Zda.png]]|
 |funko|フンコ|FUNKO POPというフィギュアになる~~ネガに3Dをいれるとフィギュアではなく丸い目の絵になる|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/a37eSNfK1N.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/13ohqxKRx3.png)|
@@ -132,7 +123,6 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|||甜美，猫耳||
 |studio DEEN|スタジオディーン||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fIkkMEfB4d-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fIkkMEfB4d.png]]|
 |ghibli,|ジブリ風||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9JHqsN4sYs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/9JHqsN4sYs.png]]|
 |blue archive|ブルーアーカイブ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9zgHlt_Et5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/9zgHlt_Et5.png]]|
@@ -155,7 +145,6 @@
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
 |absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ 若干書き込みが細かくなる||
-||||美女|
 |official art|公式アート|品質向上系 ~~ ロゴや著作権表記が出る場合あり|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yr8umSOBfB.png)|
 |virtual youtuber|Vチューバ―||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S.png]]|
 |masterpiece|傑作・高クオリティ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|

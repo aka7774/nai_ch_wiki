@@ -98,15 +98,20 @@ if aria_url:
 !git clone https://github.com/aka7774/sd_filer.git
 !git clone https://github.com/aka7774/sd_about.git
 !git clone https://github.com/kousw/stable-diffusion-webui-daam.git
+!git clone https://github.com/bbc-mc/sdweb-merge-board.git
+!git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui.git
 !echo '{"backup_dir":"/content/drive/MyDrive/sd"}' > /content/stable-diffusion-webui/extensions/sd_filer/json/config.json
+
+# 一度起動して必要なものをインストールする
+%cd /content/stable-diffusion-webui/
+!COMMANDLINE_ARGS="--exit" REQS_FILE="requirements.txt" python launch.py
 
 # Google Driveのマウント(嫌なら許可しなければOK?)
 from google.colab import drive
 drive.mount('/content/drive')
 
 # WEBUIの起動
-%cd /content/stable-diffusion-webui/
-!COMMANDLINE_ARGS="--test-lora --xformers --opt-channelslast --share --gradio-auth {user}:{password}" REQS_FILE="requirements.txt" python launch.py
+!COMMANDLINE_ARGS="--xformers --opt-channelslast --share --gradio-auth {user}:{password}" REQS_FILE="requirements.txt" python launch.py
 ||=
 ----
 

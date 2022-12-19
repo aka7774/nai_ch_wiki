@@ -44,14 +44,19 @@ TI, DB, HN, DA, Loraなど。
 * Lora(四国めたん)
 
 Dreamboothのオプションとして利用可能。
-速くて小さいが、完成度についてはまだ未知数。
+DB比で高速、生成されるファイルも小さい。
+完成度については未知数だが、DBほどの再現性が得られていない。要研究。
 
-- 解像度512 %%768に挑戦(来るSD2系時代に備えて)%%
-- 所要時間は全部で2〜3時間
+- 解像度512
+- 所要時間はローカル(2070)だと15分程度、Colabだと全部で1〜2時間くらい
 - 実用的(着せ替えなどをして遊べる)
+
+Colabでは解像度768で動作することも確認済み。
 
 追記
 
+- --test-loraは指定しなくても良くなった
+- ckptは自分でGenerateするまでは出力されなくなった
 - 2022-12-13アップデートで設定項目が変わった
 - NAI VRAM 8GBでも動作することを確認した
 - 最小限の設定項目で実施する(ひとまずデフォルト値を信じる)
@@ -85,12 +90,9 @@ K80になったことは無いけどT4が引けてるか一応確認するとい
 
 Extensions から Dreambooth をインストールする
 
-コマンドラインオプションを追加する。
- --test-lora
-
 ** 2. 画像の用意
 
-1111の起動に15分+ダウンロード時間ぶんかかるので待ってる間にやる。
+Colabだと1111の起動に15分+ダウンロード時間ぶんかかるので待ってる間にやる。
 
 ダウンロード
 - https://image02.seesaawiki.jp/n/h/nai_ch/aQEovutlvq.zip skkmtn.zipにリネームする
@@ -128,6 +130,8 @@ https://image02.seesaawiki.jp/n/h/nai_ch/lh1xkGmvts.zip
 
 - Name: skkmtn
 - Source Checkpoint: Anything-V3.0-pruned-fp16.ckpt
+-- ローカルだと animefull-final-pruned.ckpt でも動くかも
+
 以前の設定
 [+]
 - Scheduler: pndm
@@ -135,8 +139,8 @@ https://image02.seesaawiki.jp/n/h/nai_ch/lh1xkGmvts.zip
 
 「Create」ボタンを押す。
 
-animefull-final-pruned.ckpt だと 必ず止まってしまう。
 [+]
+Colab で animefull-final-pruned.ckpt が止まる例
 =||
 Loading model from checkpoint.
 Loading checkpoint...
@@ -204,25 +208,43 @@ Train Text Encoderはオンだとうまくいかない報告がいくつかあ�
 ** 6. コンセプト設定
 
 - Classification Dataset Directory: touka
-
-ただし、ローカルでVRAM 8GBで試すときはtoukaは設定しない。
-
 - Dataset directory: skkmtn
 - Instance Prompt: skkmtn
 
+Instance Tokenと間違えないように。
 Class Promptも入れたほうが良さそうとか色々あるけどまずは最低限で。
+もしもVRAMが足りなくてエラーになるのならtoukaは外すことが出来る。
 
 &color(#ff0000){Instance promptはOptionalではなく、入れないとUnable lbuild Concents.エラーが出る。}
 
 ** 7. Trainボタンを押す
 
-バグっぽい表示が出るが動く。
-ローカル2070だと20分以内には終わる。
+ローカル2070だと10分程度で終わる。
 Colabでも1時間以内には終わるはず。
 
-** 8. 動作確認
+** 8. ptファイルの合体
 
-- skkmtn_1400_lora.ckpt が出来上がっているはずなので、通常通り Stable Diffusion checkpoint のプルダウンから選ぶ
+左側の「Lora Model」から使いたいptファイルを指定する。
+
+現在の「Stable Diffusion checkpoint」の選択に関係なく、「4. モデルファイル作成」の時に指定したckptがベースになる。
+なので別のckptにLoraを適用することは出来ないはず。
+
+Trainによって以下の6つのファイルが出来ているはず。
+ここでは「skkmtn_1400.pt」を選択する。
+
+skkmtn_1000.pt
+skkmtn_1000_txt.pt
+skkmtn_1400.pt　←これ
+skkmtn_1400_txt.pt
+skkmtn_500.pt
+skkmtn_500_txt.pt
+
+「Generate Ckpt」ボタンを押す
+
+** 9. 動作確認
+
+「Generate Ckpt」が完了してから「Stable Diffusion checkpoint」を更新すると、「skkmtn_1400_lora.ckpt」が追加されている。
+
 - プロンプトを skkmtn にして実行
 
  masterpiece, best quality,1girl,skkmtn
@@ -241,26 +263,24 @@ Colabでも1時間以内には終わるはず。
 
 (過学習だと思ったらLearning Rateを下げて再挑戦)
 
-** 9. 煮凝りの取得
+** 10. ptファイルのダウンロード
+
+models/lora にファイルが出来ている。
+Colabだと消えてしまうのでsd_filerを使ってダウンロードする。(ほかの方法でも良い)
 
 - 「Filer」タブの「Loras」タブの「Active」タブで欲しいものにチェックを入れて「Download」
 - 容量が少ないので「Select All」でも大丈夫
 - ダウンロードリンクが表示されるのでクリックする
 
-** 10. 煮凝りの合体
-
-ローカルで動かしたり別の日にColabに上げ直したり。
-
-- ダウンロードしたptファイルを models/lora/ の中に配置する
-- 「Dreambooth」タブで「4. モデルファイル作成」をおこなう
-- 左のModelで「skkmtn」、Lora Modelでptファイルを選び、「Generate Ckpt」ボタンを押す
-- skkmtn_0_lora.ckpt ファイルが保存される(どれを選んでも数字が0なのはバグ?)
+ダウンロードしたファイルは models/lora に設置すれば「Lora Model」の一覧に表示される。
+sd_filerを使ってアップロードすることも出来る。
 
 ** 11. 学習の再開
 
+再開できていないバグがあるのではないかという話だったけど最新でどうなってるか不明。
+
 models/dreambooth/skkmtn を保存しておけば続きから学習できる。
-skkmtn_0_lora.ckpt ファイルに対して追加学習するのとは意味的に異なるはずだけど、
-実際の結果としてどうなのかは不明。
+skkmtn_1400_lora.ckpt ファイルに対して追いLoraすることもできる。(意味的には異なるはず)
 
 * Hypernetwork(四国めたん)
 
@@ -466,5 +486,6 @@ Seed: 3506376363
 
 挑戦者求む
 [END]
+
 
 

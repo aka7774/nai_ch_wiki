@@ -2,6 +2,11 @@
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|作品名|備考|サンプル|
+|1girl, {{{{machikado mazoku}}}},|まちカドまぞく|Add Quality Tagsは非推奨。左のプロンプトでサンプル画像の画風になるのは1〜2割程度。高確率でまちカドまぞくではない別の作品が混ざってくる（作品名不明）。また、巨乳、茶髪、ピンク髪、八重歯、ドヤ顔の要素が反映されて出てくることも多々ある。こちらもhatsune mikuまで入れるとあまり反映されない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/azlDkdoyj2-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/azlDkdoyj2.png]]|
+|{{{yama no susume}}}|ヤマノススメ|原作風。強調したほうが出やすい。デフォルメ絵や背景のみの絵が生成されることが多々あるので、cowboy shot等の構図に関わるプロンプトの併用がおすすめ。まれにゆるキャン△とごっちゃになる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gk4ui2ZKVj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gk4ui2ZKVj.png]]|
+|hitoribocchi no marumaru seikatsu|一人ぼっちの○○生活|hatsune miku指定でも時々ミク要素が消えるレベルで強い。強調すれば、bocchiだけでも出てくるし、全く違う別作品であるbocchi the rock!指定でも出てくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz.png]]|
+|{{{flower knight girl}}}|フラワーナイトガール(花騎士)|強調とUCに{{{flower}}}指定はほぼ必須。全体的にロリ化＋髪の白色化が起こる。サンプル画像はmiku指定で、こちらもhatsune mikuまで入れるとほぼ混ざらなくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DAnakeXF6a-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/DAnakeXF6a.png]]|
+|{{{puzzle & dragons}}}, official art,|パズル&ドラゴンズ(パズドラ)|強調＋official artを指定しないと出にくい。全体的に衣装や髪が盛られる。たまに、たまドラっぽい何かが付いてきたり、ドラゴンになったりする。puzzle piece, jigsaw puzzle, をネガティブに入れないとジグソーパズルをしている構図が生成されがち。なお、サンプル画像はmiku指定で生成したものだが、hastune miku指定にするとあまり服装と髪に干渉しなくなった。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5DUFrAV3zR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5DUFrAV3zR.png]]|
 ||ダンガンロンパ|||
 |granblue fantasy, hatsunemiku, official art,|グランブルーファンタジー|official artを入れると安定しやすい　Add Quality Tagsのチェック外したほうがいいかもしれない|https://image02.seesaawiki.jp/n/h/nai_ch/sfuQWyVlPG.png|
 |ikkitousen,1girl,hatsune miku,official art,|一騎当千|official artを入れると安定しやすい。ハイスクールDxDと似たような絵柄がでやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/gGT915XrGX.png|

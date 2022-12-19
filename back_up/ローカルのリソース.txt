@@ -5,9 +5,11 @@
 &#128317;：ダウンロードリンク
 
 *掲載方針
-網羅は/sdmodelsなどに任せるとして、以下のようなものを載せる感じがいいかもしれない
-+スレで話題になったもの
-+特に有用なもの
+%%網羅は/sdmodelsなどに任せるとして、以下のようなものを載せる感じがいいかもしれない%%
+%%+スレで話題になったもの%%
+%%+特に有用なもの%%
+sdmodelの更新が滞りがちになったので適当に掲載していい気がする
+
 
 
 *リソース(一覧)
@@ -15,9 +17,31 @@
 +Models - Hugging Face - https://huggingface.co/models?pipeline_tag=text-to-image&sort=modified
 +/hdg/ Stable Diffusion Models Cookbook - https://rentry.org/hdgrecipes#g-anons-unnamed-mix-e93c3bf7 ~~海外ニキによる様々なマージモデルの一覧
 
+* データセット
+
+** Pixiv
+
+- haor/pixiv-yandere &#183; Datasets at Hugging Face - https://huggingface.co/datasets/haor/pixiv-yandere
+- haor/pixiv_month_top50 &#183; Datasets at Hugging Face - https://huggingface.co/datasets/haor/pixiv_month_top50
+
 
 
 *モデル
+
+** Instagram
+さまざまなInstagramアカウント(主に日本語)の合計1.2mの画像で約1.6エポックからトレーニングされています。モデルのトレーニングが不足しているため、そのパフォーマンスはわずかです。パフォーマンスを向上させるために、モデルを混在させることをお勧めします。
+&#128317;instagram-latest-plus-clip-v6e1_50000.safetensors｜cafeai/cafe-instagram-sd-1-5-v6 &#183; Hugging Face - https://huggingface.co/cafeai/cafe-instagram-sd-1-5-v6
+
+
+** EVT（ピクシブ学習モデル)
+
+*** Evt_V3
+EVT_V2を元にして、35467枚の画像を使用して微調整を行ったモデル
+&#128317;haor/Evt_V3 &#183; Hugging Face - https://huggingface.co/haor/Evt_V3
+
+*** Evt_V2
+15,000枚の画像(7,700枚の反転)を用いて追加学習したモデル
+&#128317;haor/Evt_V2 &#183; Hugging Face - https://huggingface.co/haor/Evt_V2
 
 ** ACertain
 

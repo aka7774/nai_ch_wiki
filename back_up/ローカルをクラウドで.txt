@@ -29,8 +29,9 @@ Stable diffusion webui (automatic1111)をColabなどのクラウドGPUで動か�
 
 - https://colab.research.google.com/?hl=ja
 
-Pythonのバージョンは3.7だが、3.10まで上げることができる。
-xformersは今のところ動作未確認。
+Pythonのバージョンは3.8だが、3.10まで上げることができる。
+xformersをコンパイル無しで動かせるcondaがおすすめ。
+[[入門用Notebook]]
 
 RAMが少ないので、でかいモデルのマージでエラーになるらしい。
 (メモリさえ積んであればローカルでやれる)
@@ -38,15 +39,15 @@ RAMが少ないので、でかいモデルのマージでエラーになるら�
 *** 無料版
 
 - メモリ 12GB程度
-- VRAM 12〜16GB程度
+- VRAM 15GB程度(たぶん毎回T4が引けるはず)
 - 基本（起動ごとに消える）ストレージ 60〜100GB程度
 - 永続（起動ごとに消えない）ストレージ なし(Google Driveが使える 無料だと15GB)
 - ノートブックを90分操作しないと切断(定期的にcaptchaあり)
 - 連続12時間使用すると切断(12時間の使用が保証されているわけではない)
 
-画像生成は出来る。
+画像生成は出来る。速度は3060より遅い。
 4GBまでのモデルなら学習もギリギリできる。[[ローカルの学習入門]]
-学習済みのモデルなど、大容量のデータを取り出すにはDrive経由しかない。
+学習済みのモデルなど、大容量のデータはDriveに移すのが定石。
 
 ヘビーに使ってると急に切断される。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/YNWei0mtOm.jpg)
@@ -83,8 +84,38 @@ RAMが少ないので、でかいモデルのマージでエラーになるら�
 - 基本（起動ごとに消える）ストレージ ：不明
 - 永続（起動ごとに消えない）ストレージ：50GB
 
-Paperspace GradientでNovelAIローカル版を月8ドルで快適に動かす
-https://ludela.gitbook.io/paperspace-gradientdenovelairkaruwo8dorudenikasu
+障害が多く、良いGPUを引きにくくなっているのでお勧めしない。
+アフィ経由で登録した人は、紹介者に使い方を聞きましょう。
+
+** Huggingface Hub
+
+ストレージ容量対策。
+
+ckptダウンロードする時に使ってるはずのサイト。
+モデルをアップロードできる。
+マージモデルやDreamboothなどの大容量データに便利。
+数行のコードで出来るのでNotebookにセルを追加するのが便利。
+以下の方法だと1ファイル5GBまで。
+gitを使う方法もある。
+https://huggingface.co/docs/huggingface_hub/how-to-upstream
+
+114スレ625
+
+=|BOX|
+今80gbくらい使ってるけど何も文句言われんで&#9786;
+やり過ぎるとある日突然banされるとかはあるかもしれんけど 
+
+from huggingface_hub import upload_file
+upload_file(path_or_fileobj="アップロードするファイル", path_in_repo="保存名", repo_id="ユーザー名/リポジトリ名", token="トークン")
+
+/tmp/hoge.ckpt を foo ユーザーの bar リポジトリ上の huga ディレクトリにアップロードしたい場合はこうする
+
+from huggingface_hub import upload_file
+upload_file(path_or_fileobj="/tmp/hoge.ckpt", path_in_repo="huga/hoge.ckpt", repo_id="foo/bar", token="トークン")
+
+トークンは書込み可能なものを発行する
+読み込み限定だと404エラーが出る 
+||=
 
 ** 他のサービス
 
