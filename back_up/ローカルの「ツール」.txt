@@ -1,6 +1,14 @@
 * 概要
 Automatic1111の拡張機能以外で動作するローカル用のプラグインやDCCツールもではじめたのでページを作成しました。
 
+* 潜在的に危険な.ckptを安全な.safetensorsに変換するColab用Notebook
+手順1. これをダウンロードする https://75.gigafile.nu/0330-c82660f0f62e26714f340e511377b763c
+　パスワード=スレタイ英4文字
+手順2. Google Driveを開く https://drive.google.com/drive/u/0/my-drive
+　ログイン必須
+手順3. ダウンロードしたものをGoogle Driveにドラッグ&ドロップしてダブルクリック
+　後は中身を読めば分かるようになっている
+
 * DCCツール
 
 ** openOutpaint

@@ -2,7 +2,9 @@
 
 *概要
 ローカル環境の導入ガイドです
--- &size(14){[[画像付きガイドpdfを作りました。>>https://image01.seesaawiki.jp/n/h/nai_ch/Bh8T7jBTQz.C.pdf]]必要なソフトのインストール方法も記載しています。}
+
+-- &size(15){[[画像付きガイドpdfを作りました。>>https://image01.seesaawiki.jp/n/h/nai_ch/Bh8T7jBTQz.C.pdf]](Windows用)}
+必要なソフトのインストール方法とモデルダウンロードについても記載しています。
 
 *リファレンス
 - https://rentry.org/voldy
@@ -652,7 +654,7 @@ modelsやoutputsフォルダを外出しにしているので、一度環境を�
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/8lYrJdmZvs.png,660)
 
 * トラブルシューティング
-**rtx4090などが遅い
+** RTX 4090などが遅い
 　※注※　RTX4090はローカルNAIデフォ環境では速度出てません
 　webuiのvenv内に入ってから(stable-diffusion-webui\venv\Scripts\activateで入れる)
 pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url ttps://download.pytorch.org/whl/cu116
@@ -673,7 +675,7 @@ Windows ディスプレイ設定→グラフィックの設定→GPUアクセラ
 COMMANDLINE_ARGS=--precision full --no-half --no-half-vae --medvram
 ||=
 　を加える
-**その他本家のトラブルシューティングの訳
+**その他本家のトラブルシューティングの訳(機械翻訳)
 - フォルダーのパスにスペースがないことを確認する
 - フラグを使用しようとしたときに launch.py&#8203;&#8203; エラー、認識されない引数が発生した場合は、webui-user.bat で完全な相対パスを使用してみてください。
 例：--ckptCOMMANDLINE_ARGS= --ckpt ./models/Stable-diffusion/nai.ckpt

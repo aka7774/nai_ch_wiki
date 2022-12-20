@@ -5,7 +5,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
-|masterpiece, best quality, 〇〇, 1girl, high contrast, hyper detailed|grayscale, monochrome, flat shading, low contrast, 3d, realistic|カラフル|〇〇は適当に変えてな ~~ サンプルではcosmicを使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yZZbHI6MKC.png)|
+|masterpiece, best quality, 〇〇, 1girl, high contrast, hyper detailed|grayscale, monochrome, flat shading, low contrast, 3d, realistic|カラフル|〇〇は適当に変えてな|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yZZbHI6MKC.png) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/7g9Ryk8uZb.png)|
 |Professional oil painting of establishing shot of 〇〇, professional {{majestic}} oil painting by Greg Manchess, Atey Ghailan, {{Fenghua Zhong}}, {{{{Jeremy Mann}}}}, {{{{{{{{Greg Rutkowski}}}}}}}}, Antonio Moro, {{{{{{trending on ArtStation}}}}}}, trending on CGSociety, dramatic lighting, {{dawn}}, refraction, {{{{{{{{Unreal Engine 5}}}}}}}}, rule of thirds||midjourney風|〇〇は適当に変えてな|https://i.imgur.com/sqVN0g4.png https://i.imgur.com/FaZik8q.jpg https://i.imgur.com/oz6kQRP.jpg|
 |{{{{{masterpiece}}}}}, {{{{best quality}}}}, {{{{{CYBERSEX}}}}}, {{{{high colour Value}}}}, needy girl{{colourful hair}}, &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;purple hair]]]]]]]]]]]]]]], &#91;&#91;&#91;&#91;&#91;&#91;blonde hair]]]]]], &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;black hair]]]]]]]]]], &#91;&#91;&#91;&#91;&#91;parted lips]]]]],|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name|カラフル|元のプロンプトはこちらプロンプト欄のはNAI用に変換済み~~(masterpiece:1.3),(best quality:1.2),(CYBERSEX:1.3),(high colour Value:1.2),(needy girl:1),(colourful hair:1.1),(purple hair:0.472),(blonde hair:0.738),(black hair:0.6),(parted lips:0.77)|https://image01.seesaawiki.jp/n/h/nai_ch/1qo0cuNjTv.png https://image02.seesaawiki.jp/n/h/nai_ch/El9aB781cf.png|
 |{{masterpiece}}, {{{best quality}}}, {{ultra-detailed}}, {{illustration}}, {{disheveled hair}},India ink,sumi-e,{{{{{{{Ink wash painting sumi-e}}}}}}},{{{ukiyoe}}}{monochrome},japanese style,Sesshu,water splash,rain,floating hair,pond,Steam,||水墨画(雨や池)この後ろに好きな動物やらなんやらを追加してくれや|https://fate.5ch.net/test/read.cgi/liveuranus/1666411038/|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7AfOtoJ9a4.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UYwsUJzusZ.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IBbVkpx9tZ.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VFiok5ffUf.png)|
@@ -123,6 +123,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|azur lane|アズールレーン|画風は一定ではない。そのままだと、フォーミダブルとベルファストと一部重桜艦船がやたら強く出る。そして、高確率で胸が盛られ、露出度が高い服を着て、animal hairが生える。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Ik1xAqy2HN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Ik1xAqy2HN.png]]|
 |studio DEEN|スタジオディーン||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fIkkMEfB4d-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fIkkMEfB4d.png]]|
 |ghibli,|ジブリ風||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9JHqsN4sYs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/9JHqsN4sYs.png]]|
 |blue archive|ブルーアーカイブ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9zgHlt_Et5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/9zgHlt_Et5.png]]|

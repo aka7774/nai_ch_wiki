@@ -71,6 +71,15 @@ Hypernetwork strengthで影響の強弱を変えられる。過学習してし�
 wd14のモデル作成のために作られたtagger。deepdanbooruを使用するよりも高い精度でタグ付けが出来るため楽をしたいなら必須。
 - https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor
 学習素材を見ながらタグ一覧の確認が出来る。導入必須ではないがあると便利。
+** 注意すべき設定
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/k6cFiaMt4t.38.14.png)
+まず、WEB UI本体の設定の学習にある｢Saves Optimizer state as...｣にチェックを入れ設定を適応してください。
+この設定を入れない場合、学習を中断し再開した場合にHypernetworkが破壊される可能性があります。(問題無く再開出来る事もあります)
+これはhypernetworkのファイル内にoptimizerの状態を保存していないから発生する問題です。
+Saves Optimizer...の設定を有効にすることで .optim ファイルにOptimizerの状態を保存し、安全に再開できるようになります。
+ なぜ設定として別れているかというと、Optimizerを保存したファイルの容量がhypernetwork本体の容量の2倍であり、ストレージの圧迫の原因になりうるからです。
+ なお.optimファイルは学習再開時やさらに追加で学習を行う場合にのみ使われるものなので、hypernetworkが完成したなら削除してもかまいません。
+
 ** 学習素材の準備
 学習素材を用意します。
 キャラクターなど新しい概念を学習する場合も画風を学習する場合も出来るだけ絵の傾向が似ているものを選びます。

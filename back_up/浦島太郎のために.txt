@@ -2,6 +2,8 @@
 具体的なノウハウとかは専用ページに書いて、ここは紹介程度に。
 上の奴ほど新しいという感じで編集していってください。
 
+#contents
+
 *層別マージ
 automatic1111の拡張機能
 https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
@@ -14,6 +16,9 @@ https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
 ''上層インスタ下層NAI''
 ''''
 ''anygapeのテンプレはもうおわりやね''
+
+特徴としては手の圧倒的なリアルさである。さらにこの技術によって手と指の破綻もだいぶ改善されるのではないかと考えられている。
+もちろん実写系マージの効果は手のみに留まらず、リアルな裸体を求める者にとっては大幅な進歩になるであろう。
 
 **なりすまし騒動で一時混乱も
 
@@ -57,6 +62,33 @@ aiでdepth mapを作った後After EffectとかBlenderとかでいろいろや�
 
 このレス以後投稿者は特にやり方などを説明していない
 
+*WD1.3.5が一瞬出て消えた
+
+遅れに遅れているWD1.4のテストとして作られたモデル。
+TrinArt+Eimisベース。
+EimisがNAIベースだと思われるため批判にあい、NAI公式はOKを出したが公開は中止。
+最初の110k stepsだけ回したモデルを残す。
+SD2.1ベースのWDはリリース時期が実質未定に。
+
+112スレ648
+大松「&#129303;はファイルが消されても過去のコミット履歴からダウンロードできるぞ」
+https://huggingface.co/hakurei/waifu-diffusion-v1-4/blob/9fa4a42a9c4a0948472fa909e6c1a39be0dda699/models/wd-1-4-float32-booru-110k.ckpt 
+
+NAIベースかどうかは自供以外に判断のしようがなく、
+比較ツールと共に登場して他モデルやマージの批判に終始したモデルが出たり、
+Danbooruタグへの反応を根拠にモデル制作者に脅迫まがいのツイートをするモデル制作者が出たりして、
+ポストNAIモデルを狙う界隈は醜く混沌とした戦いが繰り広げられていた。
+
+114スレ831
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dmV2Oj1eoR-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/dmV2Oj1eoR.jpg]]
+
+* Lora
+
+新たな学習法。DreamBoothのオプションとして使用できる。
+学習が速く、必要VRAMが少なく、ファイルサイズが小さい(3MB程度)のが特徴。
+これでVRAM 8GB勢がギリ人権を得た。HNもついでに活発になった。
+
 *メスガキプロンプト消失事件
 
 発端：https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/236
@@ -77,3 +109,18 @@ aiでdepth mapを作った後After EffectとかBlenderとかでいろいろや�
 ''上手く煽れて楽しかったろうな''
 ''''
 ''https://majinai.art/i/moQcFpU.webp https://majinai.art/i/Q5d5w62.webp''
+
+10月頃(NAIブーム初期)にあった内容が今無くなってるみたいな報告はいくつかあるけど、
+それはページ再編の時とかに消しちゃってるかも知れないので、
+今でも有効そうなノウハウを持ってる人は再掲してくれるとありがたいです。
+
+* ちょっとしたクラウドブーム
+
+たぶんDreambooth需要とpaperspaceの宣伝した人のタイミングが噛み合って、
+学習をクラウドで行うブームが起こった。
+paperspace公式も動画を出して宣伝したり、ユーザーが増えて使いにくくなったり。
+WSL2を使って生成速度を上げるネタも出てきて、ローカル勢の環境は多様化した。
+
+
+
+

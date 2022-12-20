@@ -17,7 +17,7 @@ https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
 ||=
 
 * 使い方
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/GZc1wyVZY7.jpg,540,405)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RSkayol514.jpeg,540,405)
 +1111のMerge Block Weighted タブを選択
 +modelA欄とmodelB欄にマージしたいモデルを選択
 +各層に対するマージ比率を各種インジゲーターで調整、又は右上のPreset Weightedより選択
@@ -25,6 +25,10 @@ https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
 +Run Margeボタンで実行
 
 * 出力サンプル・設定等
+**114スレ990(115スレ269)
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wCA5ux_p5M.png)
+[END]
 **AnythingV3とインスタモデルのマージ
 AnythingV3・インスタモデル・AnythingV3インスタ配合モデル・Merge Block Weighted標準プリセットの比較
 [+]
@@ -57,14 +61,34 @@ OUT浅層=細部の塗り
 [END]
 **base alpha設定
 =|BOX|
-948 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-httI)[] 投稿日：2022/12/19(月) 21:58:29.97 ID:qiE3OptN0 [7/7]
-ちなみになんやが層別マージのbase_alpha(エンコーダ配分)は高性能モデル由来100%になる数値使うのがええで
-
-Any+insta, base_alpha = 1 (100%Any) 
-Any+insta, base_alpha = 0 (100%insta) 
-弱いモデルのを混ぜたりする意味はない
+271 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-httI)[] 投稿日：2022/12/20(火) 15:36:57.28 ID:cwtfwuIL0 [5/6]
+base_alpha検証
 ||=
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EFBCxf2EmD.jpg,500,402) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/JeLcMNQdse.png,512,384){Any+insta, base_alpha = 1 (100%Any)} &ref(https://image01.seesaawiki.jp/n/h/nai_ch/9z23W8gD8M.png,512,384){Any+insta, base_alpha = 0 (100%insta)}
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VXZvjYWV9R.png,512,258) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZMGUe39eMI.jpg,480,343) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/v3ZnLt7c6t.jpg,480,343)
+[END]
+=|BOX|
+という訳で base_α=0→Model A, base_α=1→Model B 確定
+||=
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/27D6cWF3gT.jpg,480,270)
+[END]
+
+=|BOX|
+305 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 537b-zlOH)[sage] 投稿日：2022/12/20(火) 16:51:53.08 ID:GPDwMx230 [7/7]
+分かり易いの出来たわ
+
+ModelA：Any　modelB：insta
+パラメータ0000・ba0：Anyと同じ
+パラメータ0000・ba1：Anyだけど解釈がinsta気味？
+パラメータ1111・ba0：instaだけど解釈がany気味？
+パラメータ1111・ba1：instaと同じ
+
+全部のパラメータ、0がmodelA、1がmodelB指してる、でいいと思う
+||=
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5k0tLVJ99I.jpg,736,786)
+[END]
 
 **anyとinstaモデルの層別マージ結果
 =|BOX|
@@ -94,8 +118,6 @@ Layer18が顔を大分リアルにするからここが顔層なんやろな
 これ数値全部0にするとモデルAで
 全部1だとモデルBになるんやな
 逆やと思ってた
-
-12 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f00-MRAL)[sage] 投稿日：2022/12/19(月) 23:41:13.73 ID:kfkiHGjt0
->>10
-base_alphaは逆やからややこしいな
 ||=
+-base alpha含め全部のパラメータは0がmodelAを、1がmodelBを指してる
+

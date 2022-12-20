@@ -28,7 +28,7 @@
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |1girl,{{{{{letty whiterock}}}}},purple hair,medium hair,purple eyes,white headwear,purple tabard,purple skirt,apron,skirt set,white shirt, puffy long sleeves, white scarf||東方Project|レティ・ホワイトロック|衣装が難敵|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7yIrX0ALS2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/7yIrX0ALS2.png]]|
 |1girl,{{{{{chen}}}}},brown hair,cat girl,green cap,cat tail,two tails,red dress,red skirt,puffy sleeves,yellow neck ribbon, mandarin collar, white shirt, earrings, ||東方Project|橙||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0c7tBwMVZK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0c7tBwMVZK.png]]|
-|alice margatroid||東方Project|アリス・マーガトロイド||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BSEOBteLAa-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/BSEOBteLAa.png]]|
+|alice margatroid||東方Project|アリス・マーガトロイド|AI は 2 つの異なる時代のアリスを同時に認識したため、ヘアピンが青くなる可能性があります|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BSEOBteLAa-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/BSEOBteLAa.png]]|
 |1girl,{{{{lily white}}}},blonde hair,blue eyes,white dress,white frilled skirt,fairy wings,red bowtie,white capelet,long sleeves,white hat and red hat ribbon,||東方Project|リリーホワイト|帽子形状・服の柄&#10005;|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/KHMlVTOKwc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/KHMlVTOKwc.png]]|
 |||東方Project|ルナサ・プリズムリバー|||
 |||東方Project|メルラン・プリズムリバー|||
@@ -103,7 +103,7 @@
 |1girl, {{{kaku seiga(touhou)}}}, blue eyes,blue hair,short hair,{{{wavy hair}}}hair stick,hair rings,hyper detailed blue dress,blue  frilled skirt, tangzhuang, ||東方Project|霍青娥|「kaku seiga」だけだと別人になりやすいので、「(touhou)」を付けた方が多少安定度が増す（特に髪型部分）。また服装に同じ青色系である、チルノや小傘の要素が混じりやすい。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1Ji_tcL2Hq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/1Ji_tcL2Hq.png]]|
 |1girl, {{{{{{soga no tojiko}}}}}}, green hair,green eyes,tsurime,{{{{{tate eboshi}}}}},&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;hat]]]]]]]]]],green dress,long sleeves,ghost tail,short hair,{{messy hair}}, ofuda on clothes, long skirt,||東方Project|蘇我屠自古|足がつく模様|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Z2ZNgyLECm-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Z2ZNgyLECm.png]]|
 |1girl, mononobe no futo, grey hair,tate eboshi,japanese clothes,kariginu,||東方Project|物部布都||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vieHaWbtj5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/vieHaWbtj5.png]]|
-|1girl, toyosatomimi no miko, light brown hair, earmuffs, purple cape,||東方Project|豊聡耳神子||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ablOm0dvy_-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ablOm0dvy_.png]]|
+|1girl, toyosatomimi no miko, light brown hair, earmuffs, purple cape,||東方Project|豊聡耳神子|髪型や耳当てはすぐ出るが、服飾の指定が難解|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ablOm0dvy_-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ablOm0dvy_.png]]|
 |1girl, {{{{{futatsuiwa mamizou}}}}}, brown hair, raccoon ears,leaf on head, glasses, racoon tail, green kimono,black checkered scarf,long hair,sidelocks,semi-rimless eyewear||東方Project|二ツ岩マミゾウ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6MZBXeTr7k-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6MZBXeTr7k.png]]|
 |}
 **輝針城
@@ -111,19 +111,19 @@
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |||東方Project|わかさぎ姫|||
 |hair ribbon,{{blue ribbon}},sekibanki,{red capelet},black suit,red skirt,red hair,red eyes, short hair,1girl,|toyosatomimi no miko|東方Project|赤蛮奇|seed:2986353692|https://image02.seesaawiki.jp/n/h/nai_ch/jtIT8WeDDy.png|
-|imaizumi kagerou, 1girl,red dress,white dress,||東方Project|今泉影狼|seed:353568317　似たのが出たので載せるけど、より良いプロンプト発見次第更新してださい。|https://image01.seesaawiki.jp/n/h/nai_ch/D9vmQRTpgs.png|
+|1girl, imaizumi kagerou_(touhou), jewelry red eyes, brown long hair, wolf ears, long sleeve white dress, red skirt||東方Project|今泉影狼|1枚目seed:353568317~~橙や空の要素がたまに混じる（胸のブローチを空の八咫烏アイとして認識される？）。~~花札スカートは服装・色指定無し方が逆に出やすい。ただし、全体的に破綻しやすくもなる。~~このままの構文だとドレスまで赤くなる事が多いが、服の配色を気にしなければ、成功率自体は高め。|[[https://image01.seesaawiki.jp/n/h/nai_ch/D9vmQRTpgs.png]][[https://image01.seesaawiki.jp/n/h/nai_ch/MedlgZw8u5.png]]|
 |||東方Project|九十九弁々|||
 |||東方Project|九十九八橋|||
-|||東方Project|鬼人正邪|||
+|(Kijin Seija:1.2)||東方Project|鬼人正邪|柄と髪型がとても似合…でも服はいつも紫に見える？||
 |||東方Project|少名針妙丸|||
 |||東方Project|堀川雷鼓|||
 |}
 **紺珠伝
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
-|||東方Project|清蘭|||
+|1girl,rabbit ear,(dark blue hair),short wavy hair,blue dress,(star print on dress:1.2),(touhou:1.3)||東方Project|清蘭|AIは彼女を知らないので、可能性は低い||
 |||東方Project|鈴瑚|||
-|||東方Project|ドレミー・スイート|||
+|Doremy sweet||東方Project|ドレミー・スイート|衣類の復元が難しい||
 |{{kishin sagume}},{{{single wing}}}purple dress,red ribbon,white jacket,red eyes,white wing,,1girl,|lingerie,wings,yakumo yukari,|東方Project|稀神サグメ|seed:36552323 服は出やすいが片翼が出ずらい。スカートの矢印部分は全くでない|https://image02.seesaawiki.jp/n/h/nai_ch/3bqURNjnnj.png|
 |1girl, {{clownpiece}}, blonde hair, {red eyes}, american flag dress, american flag legwear, jester cap, polka dot headwear, ||東方Project|クラウンピース|ストライプの服の柄と帽子の玉の数が安定しない|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/SebzILHCLt-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/SebzILHCLt.png]]|
 |1girl,{{junko_(touhou)}},blonde hair,long hair, red eyes, chinese_clothes, black_dress, long_sleeves||東方Project|純狐|服の模様やカラーリングが安定せず、特に模様は原作と同じものはまず出ない（大抵は草花をモチーフにした模様になる）。~~ZUN帽は、模様部分は大抵原作通りになるが、大きさや形状、左右に垂れているポンポン部分などが安定しない。~~髪色・長さ・瞳の色等も変わりがちなので指定を入れた方が安定する。~~ちなみに、「junko」だけでも一応生成されるが、全面的に崩れやすいのでオススメできない。|https://image01.seesaawiki.jp/n/h/nai_ch/r0PEjtMWXC.png|
@@ -160,7 +160,7 @@
 |||東方Project|玉造魅須丸|||
 |||東方Project|菅牧典|||
 |1girl, {{{{iizunamaru megumu}}}}, {{touhou}}, blue tokin hat, long hair, blue hair, red eyes, blue dress, short sleeves,hair between eyes, large breasts, white scarf|hinanawi tenshi, seiran (touhou), kimono, shameimaru aya, hong meiling, haniyasushin keiki,  skadi (arknights)|東方Project|飯綱丸龍|服装が安定しない。特に帽子は赤に変色したり肥大化する。一応、記載しているUCを入れることで、少し安定する。帽子がいらない場合、shameimaru aya以下のUCは削除しても問題ないと思う。その他細かい装飾は生成不可。耳はelf earを入れるとかなり長いのしか出ないので入れていない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zSw95X2HZ4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zSw95X2HZ4.png]]|
-|||東方Project|天弓千亦|||
+|Tenkyu Chimata,(purple short hair:1.2),1girl,(rainbow colorful dress:1.6),(light blue cloak),(colorful headband:1.4),(Touhou),(cyberpunk background:1.4),upper body,purple eyes||東方Project|天弓千亦|完璧な衣装ではダメです... この例はおそらく資格がないでしょうが、とにかくアップロードすることにしました.||
 |||東方Project|姫虫百々世|||
 |}
 **格ゲー・その他ゲーム作品
@@ -170,8 +170,8 @@
 |1girl, {{{{nagae iku}}}}, purple hair,red eyes,hat, frilled shawl,frilled capelet,frilled sleeves,skirt||東方Project|永江衣玖||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/SGqQHa6Zdq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/SGqQHa6Zdq.png]]|
 |1girl, hinanawi tenshi, ||東方Project|比那名居天子||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/x9wWOc6UAz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/x9wWOc6UAz.png]]|
 |||東方Project|姫海棠はたて|||
-|||東方Project|秦こころ|||
-|||東方Project|宇佐見菫子|||
+|1girl, {{{{{hata_no_kokoro(touhou)}}}}}, pink long hair, {{{{{pink empty eyes}}}}}, {{{{{green gingham check_shirt, plaid shirt}}}}}, skirt, long_sleeves, bowtie, {{fox_mask on_head}}, {{{{expressionless}}}} |fox ears, cat ears|東方Project|秦こころ|高難易度。~~独特のカボチャスカートは生成不可能。~~お面の生成成功率が低めで、狐面だと猫耳や狐耳が生成される事も多い~~あらゆる東方キャラの要素が混じって来るので、否定構文に出やすいキャラの名前を入れた方が少しは安定する|[[https://image02.seesaawiki.jp/n/h/nai_ch/vB5m23aWax.png]]|
+|||東方Project|宇佐見菫子|ほとんどの場合「Glasses」が必要です，衣装の復元が難しい||
 |||東方Project|依神女苑|||
 |{{{{{{yorigami shion(touhou)}}}}}}, bare legs,barefoot, jewelry blue eyes ,blue long hair, blue miniskirt, {stuffed_cat}, blue ribbon, gray shirt, midriff, ||東方Project|依神紫苑|要素はあるらしいが、単体単語だけではまず無理。~~他の東方キャラの要素が混じりやすいので、かたっぱしから否定構文に出やすいキャラを入れた方が安定する。特に混ざりやすいのは天子。|https://image01.seesaawiki.jp/n/h/nai_ch/dWr_z3zU8v.png|
 |||東方Project|饕餮尤魔|||
@@ -191,7 +191,7 @@
 |||東方Project|レイセン2号|||
 |1girl,{{ibaraki_kasen_(touhou)}}, tabard, pink_rose, pink_eyes, pink_hair, short_hair, bandage||東方Project|茨木華扇|胸元の薔薇飾りが模様になったり、髪飾りになったりする事多し。~~また、シニヨン（頭の白い饅頭）が紫のZUN帽や、メイドのヘッドドレスになる事も多し。~~包帯を右腕にだけ巻けるようになったら更に安定すると思われる。|https://image01.seesaawiki.jp/n/h/nai_ch/VujN8q60Bh.png|
 |||東方Project|稗田阿求|||
-|||東方Project|本居小鈴|||
+|short orange hair,(green gold kimono:1.4),brown boots,Plaid sleeves,brown eyes,(two hair bells:1.2),two ponytails,(red white chequered sleeve:1.2),loli,stand,touhou,(Motoori Kosuzu:1.5),1girl||東方Project|本居小鈴|実はAIは彼女を知らない，だから服の色合わせは間違えやすい||
 |||東方Project|宮出口瑞霊|||
 |||東方Project|奥野田美宵|||
 |}
@@ -217,6 +217,8 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |}
+
+
 
 
 

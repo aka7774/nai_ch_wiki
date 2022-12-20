@@ -2,6 +2,12 @@
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|作品名|備考|サンプル|
+|kemono friends|けものフレンズ|強調は行っても１段階くらいに抑えること。画風が安定しないがそれっぽい顔が出てくる。当然ながら、animal earはUCに入れない限り確定でついてくる。cowboy shot等の構図に関わるタグはほぼ必須、場合によっては強調した方がいい。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6EjQMxCeWP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/6EjQMxCeWP.png]]|
+|{{urara meirochou}}|うらら迷路帖|強調推奨。アニメ風も原作風もでる。頭にデカリボンがほぼ確定で生成される。ロリ化、黒髪化も高確率で起こる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_MjTebyo2K-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_MjTebyo2K.png]]|
+|gabriel dropout|ガヴリールドロップアウト|強調しないと作風はバラバラになるが、強調するとミクですら要素が消滅する。1〜2段階くらいがおすすめ。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vn9ce9eEm7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Vn9ce9eEm7.png]]|
+|{{{youjo senki}}}|幼女戦記|強調推奨。原作小説風が一番出やすい。ほぼ確定で服が軍服になる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tF434nvXq5-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tF434nvXq5.png]]|
+|kobayashi-san chi no maidragon|小林さんちのメイドラゴン|一番出るのはアニメ風だが、原作風もまた別の作風も出てくる。ミクでも時々要素が消滅する。ドラゴンの角はほぼ確定、帽子も高確率でついてくる。cowboy shot等の構図に関わるタグとの併用を推奨。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FEZKj2dDa6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FEZKj2dDa6.png]]|
+|eromanga sensei|エロマンガ先生|強調しすぎると（4段階以上）ミクですら要素が消えるため注意。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Hywaaqlcb4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Hywaaqlcb4.png]]|
 |1girl, {{{{machikado mazoku}}}},|まちカドまぞく|Add Quality Tagsは非推奨。左のプロンプトでサンプル画像の画風になるのは1〜2割程度。高確率でまちカドまぞくではない別の作品が混ざってくる（作品名不明）。また、巨乳、茶髪、ピンク髪、八重歯、ドヤ顔の要素が反映されて出てくることも多々ある。こちらもhatsune mikuまで入れるとあまり反映されない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/azlDkdoyj2-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/azlDkdoyj2.png]]|
 |{{{yama no susume}}}|ヤマノススメ|原作風。強調したほうが出やすい。デフォルメ絵や背景のみの絵が生成されることが多々あるので、cowboy shot等の構図に関わるプロンプトの併用がおすすめ。まれにゆるキャン△とごっちゃになる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gk4ui2ZKVj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gk4ui2ZKVj.png]]|
 |hitoribocchi no marumaru seikatsu|一人ぼっちの○○生活|hatsune miku指定でも時々ミク要素が消えるレベルで強い。強調すれば、bocchiだけでも出てくるし、全く違う別作品であるbocchi the rock!指定でも出てくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz.png]]|

@@ -28,6 +28,11 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 
 *モデル
 
+- URLのコピーは赤丸を右クリック
+- URLに resolve が入ってるのが正しい
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Sxek2yNsj0-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/Sxek2yNsj0.jpg]]
+
 ** Instagram
 さまざまなInstagramアカウント(主に日本語)の合計1.2mの画像で約1.6エポックからトレーニングされています。モデルのトレーニングが不足しているため、そのパフォーマンスはわずかです。パフォーマンスを向上させるために、モデルを混在させることをお勧めします。
 &#128317;instagram-latest-plus-clip-v6e1_50000.safetensors｜cafeai/cafe-instagram-sd-1-5-v6 &#183; Hugging Face - https://huggingface.co/cafeai/cafe-instagram-sd-1-5-v6
@@ -152,3 +157,4 @@ TextualInversionで悪い手の形を学習させて、Embeddingでネガティ�
 ** 透明正則化画像
 512x512、768x768、1024x1024の透明画像詰め合わせ　各1000枚ずつ
 https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
+
