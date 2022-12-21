@@ -30,7 +30,7 @@ https://seesaawiki.jp/nai_ch/bbs/39211/
 
 * 一覧
 
-** Unet階層別マージ
+** U-Net階層別マージ
 bbc-mc/sdweb-merge-block-weighted-gui: Merge models with separate rate for each 25 U-Net block (input, middle, output). Extension for Stable Diffusion UI by AUTOMATIC1111 - https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
 
 ** カスタムモデルのキーワードを自動入力するWEBUI拡張機能
@@ -51,14 +51,79 @@ PCを放置するタイミングで仕掛けるとバリエーション豊富な
 - PatreonでのUmi AI: The Ultimate Character Creator | Umi, the Cryoverse AI - https://www.patreon.com/posts/umi-ai-ultimate-73560593
 - ガチャガチャ感覚で美麗キャラクター画像を生成しまくれる拡張機能「UnivAICharGen」の使い方まとめ - GIGAZINE - https://gigazine.net/news/20221115-umi-ai-stable-diffusion/
 
+** About ★
+
+システム情報
+
+- https://github.com/aka7774/sd_about
+- 1111とかvenvとかの情報を表示する
+- 「なんか動かないんだけど！」って時は、エラーの内容とこの表示内容をコピペして相談しましょう
+
+** Curly rand ★
+
+- https://github.com/aka7774/sd_curly_rand
+- Dynamic Promptsの機能超限定版
+-- 機能が増えまくってタブがうっとうしくなってきたので作った
+- 1girl, {red|green|blue} hair 構文しか使えない
+- Scriptで選択して使う
+
+*** prompt_nai
+
+{panty} で1.05倍の強調をする。重ねがけも出来る。
+
+- Curly randとの併用不可
+- https://github.com/aka7774/elemental_code/blob/main/tools/prompt_nai.py
+- Extensionじゃなくて、ファイルをScriptにコピペしてインストール
+- Scriptで選択して使う
+- 1111本体のバージョンアップで動かなくなるかも
+-- そんなに頑張って更新する予定はないです
+
 ** Filer ★
 
 ファイラー
 
 - https://github.com/aka7774/sd_filer
 - テストが足りないのでファイル消えても泣かない人は試して欲しい
-- バックアップ先を指定して、Models, Hypernetworks, Extensions, Imagesをやりとりできる
-- ディレクトリをzipにしたりアップロードしたzipをディレクトリに展開したりできる
+- バックアップ先を指定して、Models, DreamBooth, Lora, Hypernetworks, Extensions, Imagesをやりとりできる
+- URLを入力して、Models, Lora, Hypernetworksを一括ダウンロードできる
+- ディレクトリをzipダウンロードしたりアップロードしたzipをディレクトリに展開したりできる
+- 一部のファイルを読み書き出来る
+
+*** sd_invokeai_models_yaml_maker
+
+更新停止。Filerに内蔵された。
+
+- https://github.com/aka7774/sd_invokeai_models_yaml_maker
+- InvokeAIのインストールが面倒だから作ったやつ
+- 1111に入ってるckpt、同名のvae.ptとyamlをInvokeAIのmodels.yaml形式で出力する
+
+** Infotexts ★
+
+話せば長くなるけどPrompts from fileの超強化版みたいなやつ。
+
+- https://github.com/aka7774/sd_infotexts
+- PNGからPNG Infoを取り出してテキストファイルにする
+- テキストファイルをjsonに変換
+-- jsonの各項目を増やした後で複数のテキストファイルに分裂させられる
+- ディレクトリ内の全テキストファイルの一括置換
+- テキストファイルをディレクトリごとGenerate
+-- Infotext Ex形式に対応
+- おまけのwebp出力
+
+*** Infotext Ex
+
+Infotextsに内蔵されている。
+
+- https://github.com/aka7774/sd_infotext_ex
+- PNG Infoにsha256を出力
+- VAEも出力
+- 再現が不完全になる条件を満たしていればその内容を出力
+
+*** Generate from json
+
+更新停止。Infotextsに内蔵された。
+
+- https://github.com/aka7774/generate_from_json
 
 ** Katanuki ★
 
@@ -72,21 +137,13 @@ PCを放置するタイミングで仕掛けるとバリエーション豊富な
 - スレで3人くらい動いたって言ってたのできっと大丈夫
 - 画像のファイル名に日本語使うとダメらしい
 
-** Generate from json ★
+** Merge Numa ★
 
-近々大幅改修予定
+階層マージ沼
 
-- https://github.com/aka7774/generate_from_json
-- 「Prompt from file or textbox」をプロンプト以外も指定できるようにした感じのやつ
-- jsonファイルを用意しないといけない
-
-** sd_invokeai_models_yaml_maker ★
-
-Filerにもっといい機能が入ってるのでよければそっちを使ってください
-
-- https://github.com/aka7774/sd_invokeai_models_yaml_maker
-- InvokeAIのインストールが面倒だから作ったやつ
-- 1111に入ってるckpt、同名のvae.ptとyamlをInvokeAIのmodels.yaml形式で出力する
+- https://github.com/aka7774/sd_merge_numa
+- マージして画像出してマージして...を自動で出来る
+- ハードディスク上でやったほうが精神衛生上いいかも
 
 ** Checkpoint Manager ★
 
@@ -106,11 +163,11 @@ Filerにもっといい機能が入ってるのでよければそっちを使っ
 - https://github.com/hunyaramoke/Face-Body-Splitter.py
 - 顔と体を一括で分けてくれるwebuiの拡張です。
 - padding_rateは基本変えなくて大丈夫ですが、髪が横に広がってるとか、頭に上に長い帽子や角がある場合は適宜調整してください。
-- CUDA Toolkitのインストールが必要かも
+- Microsoft C++ Build Toolsのインストールが必要っぽい
+-- https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
 ** Generate-TransparentIMG ★
 
 - https://github.com/hunyaramoke/Generate-TransparentIMG
 - 透明正則画像の作成支援
-
 

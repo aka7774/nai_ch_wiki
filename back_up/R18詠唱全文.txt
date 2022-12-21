@@ -11,7 +11,7 @@
 
 //[+]
 {| class="nanj_prompt_table edit sort"
-|~w(300px):プロンプト|w(200px):ネガティブプロンプト|意味|備考|サンプル|
+|~w(400):プロンプト|w(400):ネガティブプロンプト|~w(100):意味|~w(200):備考|~w(400):サンプル|
 |{{{{beautiful hymen}}}}, {{open labia}}, vagina, os uterus, virgin, spread legs, {ultra-detailed}, {masterpiece}, ass focus, |sex toys, love juice, pussy juice, pubic hair, |処女膜|Scaleは15で安定だがお好みで。出力してからシードを固定してScaleを変更やプロンプトの強度の変更やプロンプトの構成は変えずに膜に関するサイズの変更をすると膜の周りだけを変更しやすい(small beautiful hymen, short open labiaなど)。膜の形を変えたい場合はtriangles hymen, heart hymenなどにする(あまり成功しない)||
 |||手錠|||
 ||||||
@@ -35,12 +35,4 @@
 |pubic hair transparent pantyhose||パンストから陰毛が透けている|||
 |}
 [END]
-
-
-
-
-
-
-
-
 

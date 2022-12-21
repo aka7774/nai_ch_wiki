@@ -25,10 +25,6 @@ https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
 +Run Margeボタンで実行
 
 * 出力サンプル・設定等
-**114スレ990(115スレ269)
-[+]
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wCA5ux_p5M.png)
-[END]
 **AnythingV3とインスタモデルのマージ
 AnythingV3・インスタモデル・AnythingV3インスタ配合モデル・Merge Block Weighted標準プリセットの比較
 [+]
@@ -90,6 +86,20 @@ ModelA：Any　modelB：insta
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/5k0tLVJ99I.jpg,736,786)
 [END]
 
+=|BOX|
+653今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｴｰ Sae2-l18X)2022/12/21(水) 06:27:06.90ID:BB9aqFM2a>>654
+>>646
+昨日触ってみた体感だが階層マージは6つで1セット+中間層M00の25層で作られている
+浅層00〜05はモデルのベース
+深層06〜11は絵の塗り
+中間層M00は今の所不明>>162の検証を見る限り絵の土台部分だとは思う
+処理はbase_alpha0(ba0)にしたらmodelAをIN00〜11の順に処理→M00→OUT00〜11とモデルを作っていく
+聞いていた数字4列の意味だが1001(ba0)なら
+IN00〜05を1 IN06〜11を0
+OUT00〜05を0 OUT06〜11を1にしている状態で意味としてはAモデルの構図100%貰って塗り100%をBモデルにしている
+M00は書いてないからこれからだと分からないというか何してんのか分からん
+||=
+
 **anyとinstaモデルの層別マージ結果
 =|BOX|
 24今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f2f-CLTW)2022/12/19(月) 23:47:13.82ID:55EWgxue0>>28>>33>>34>>41
@@ -109,7 +119,6 @@ Layer18が顔を大分リアルにするからここが顔層なんやろな
 ||=
 [+]
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/bRVyJToo8V.jpg)
-
 [END]
 
 **インジゲーターの数字
@@ -121,3 +130,40 @@ Layer18が顔を大分リアルにするからここが顔層なんやろな
 ||=
 -base alpha含め全部のパラメータは0がmodelAを、1がmodelBを指してる
 
+**階層マージ設定例
+|モデルA|モデルB|Weight values|base_alpha|備考|
+|NAI:0.6+AnythingV3.0:0.4|instagram50000+(f222-SD1.5):1.0|1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1|1|114スレ990(115スレ269)|
+
+***114スレ990(115スレ269)
+=|BOX|
+990 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a55-hIBn)[sage] 投稿日：2022/12/19(月) 23:14:55.11 ID:+cFYXaW50 [13/13]
+プロンプトマスピNSFWだけでこんな感じ
+指だけじゃなくて足首とかもリアルになってるのがわかる
+||=
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/POczruPMUb.png,512,768) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ipmXdGkRZR.png,512,768)
+[END]
+=|BOX|
+269 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a55-hIBn)[sage] 投稿日：2022/12/20(火) 15:34:32.97 ID:z7FK1nTC0 [1/8]
+前スレ>>990のマージモデル比率載せとくわね
+値が1に近づくほどインスタ要素強くなるから適宜変える感じで
+チナなんでこれで上手くいくのか検討もつかん
+||=
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wCA5ux_p5M.png,935,318)
+[END]
+
+***116スレ43
+=|BOX|
+43今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ea88-e5AJ)2022/12/21(水) 21:21:36.48ID:Szc2uaWf0
+前スレの https://fate.5ch.net/test/read.cgi/liveuranus/1671460483/971 からさらに掘り下げて ACertainThing+ (NAI NSFW - NAI SFW))+gape60 と robotdiffusionの階層マージをやってみたやがこれはさすがにわかりやすい差が出てくるな
+もしかしたら階層マージやない普通のマージモデルを作って出力した絵と階層マージで作ったモデルで出力した絵とを見比べたらどのパラメータがどこに効いてるかとか見えてくるんかもしらんなぁ
+
+左から(ACertainThing+ (NAI NSFW - NAI SFW))+gape60)のマージモデル、IN00~05のみ1, IN06~11のみ1, OUT06~11のみ1, OUT00~05のみ1, 100%robotdiffusionや
+||=
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_bocdZski1.jpg,1000,361)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/olizy9iiYZ.jpg,1000,317)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HBPkUOrqVN.jpg,729,1000)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2YmZShw8am.jpg,540,1000)
+[END]

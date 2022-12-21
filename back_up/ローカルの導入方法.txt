@@ -10,7 +10,10 @@
 - https://rentry.org/voldy
 
 *導入
-**Python 3.10をインストールする
+
+- 説明読んでも全く理解できない人は「A1111 WebUI Easy Installer and Launcher」を試すといいかも。
+
+** 1. Python 3.10をインストールする
 [[https://www.python.org/ftp/python/3.10.9/python-3.10.9-amd64.exe]]
 &color(#ff0000){3.11は入れても動かないから入れんな!!}
 
@@ -18,12 +21,23 @@
 このとき、Add to PATH にチェックをつけてインストールすること。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/H089Tt3hem.png)
 
-**ステップ1：WebUIのデータをダウンロードする
+&color(#ff0000){インストール終わったらPC再起動、絶対に!!}
+
+** 2. Gitをインストールする
+
+入れておかないと色々エラーが出たりして厄介。
+
+[[https://git-scm.com/downloads]]
+64-bit Git for Windows Setup. を選ぶ。
+
+インストールするときは、「Windowsエクスプローラの統合 - Git Bash」のチェックボックスをオンにするのがおすすめ。
+
+** 3. 1111本体のダウンロード
 
 以下の手段から好きなものを選んでWebUIのデータをダウンロードしてきます。
 ��WebUIをZIPでダウンロードする：お試しで環境を構築したい人向け
 ��Github Desktopをインストールする：アプデを行いながら使っていきたい人向け：&#128304;おすすめ!
-��Gitをインストールする：アプデしたり差分を確認したりバージョンを戻したりとなんでもしたい人向け
+��Gitを使う：アプデしたり差分を確認したりバージョンを戻したりとなんでもしたい人向け
 
 ***��WebUIをZIPでダウンロードする場合
 GithubリポジトリからZipでダウンロードするかんたんな方法。アプデとかめんどくさいし、バージョン戻しもできないのでお試し環境構築用として推奨。
@@ -47,20 +61,18 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/A2FTwb_lRZ.jpg,450)
 
-***��Gitをインストールする場合
+***��Gitを使う場合
 なんでもできる。さいつよ。
-[[Gitをダウンロード>https://git-scm.com/downloads]]
-インストールするときは、「Windowsエクスプローラの統合 - Git Bash」のチェックボックスをオンにしてください
 
-次にWebUI リポジトリを目的の場所にクローンします。
-1. 任意の場所を右クリックし、「Git Bash here」を選択します
-2. ディレクトリにGitで入ったことを確認します
-3. 次のコマンドを打ちリポジトリをダウンロードします
+1. エクスプローラーとかでインストールしたいディレクトリを開く
+2. 任意の場所を右クリックし、「Git Bash here」を選択します
+3. 黒い画面が出たらディレクトリのパスが表示されていることを確認します
+4. 次のコマンドを打ちリポジトリをダウンロードします
 =|BOX|
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 ||=
 
-**ステップ2：NovelAIモデルのダウンロード
+**4：NovelAIモデルのダウンロード
 ''情報提供、テスト、研究の自由のために掲載します。''
 結果が気に入ったら、[[サブスクリプションを検討してください>https://novelai.net/register]]
 
@@ -74,7 +86,7 @@ magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 /stableckptのみを選択し、その他は選択解除します。
 ※オプション：.ptの拡張子をもつHyperNetwork用のmoduleが/modulesにあるので任意でダウンロードします。
 
-**ステップ3：リネーム
+**5：リネーム
 ダウンロードしたモデルを次のようにリネームします
 animevae.pt >> nai.vae.pt
 config.yaml >> nai.yaml
@@ -87,14 +99,32 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 先ほど格納したファイルを選択、Apply Settingボタンを押す。
 
 
-**ステップ4：配置
+**6：配置
 以下のディレクトリにモデルを配置します。
 /stable-diffusion-webui/models/Stable-diffusion
 
-**ステップ5(※オプション)：環境設定
+**7.起動確認
+
+ここまでの手順がうまくいってれば起動するはず。
+
+''「webui-user.bat」をダブルクリックでWebUIを起動させます。''
+図：これね
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/y4M3qrylYT.jpg)
+
+**8(※オプション)：環境設定
 [[ローカルのwebui-user.bat]]に移動しました。
 
 ここまで完了したら[[「動作確認：Hello Asuka」>#helloasuka]] へ進みます。
+
+* A1111 WebUI Easy Installer and Launcher
+
+https://github.com/EmpireMediaScience/A1111-Web-UI-Installer
+
+CG板で使ってみた人がいいかもって言ってた。
+スレでも技術部でも誰も試してないので副作用とかは不明。
+一般論としては既にインストール済みのPythonやGitがあるとエラーの原因になりうる。
+上記の方法でダメだったら試してみるのも手なのかも。
+使ってみた人いたら感想書いてね。
 
 ----
 
@@ -622,10 +652,6 @@ modelsやoutputsフォルダを外出しにしているので、一度環境を�
 *動作確認：Hello Asuka
 お疲れ様でした！これで出力する準備が整いました。
 次はNovelAI のデフォルト設定での出力と一致しているかのテストを行います。
-
-''「webui-user.bat」をダブルクリックでWebUIを起動させます。''
-図：これね
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/y4M3qrylYT.jpg)
 
 ''''
 

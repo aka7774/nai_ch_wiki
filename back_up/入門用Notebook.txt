@@ -4,6 +4,10 @@
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t.jpg]]
 
+いくつかのExtensionがインストールされる
+
+- 学習関連とマージ関連は重たいのでチェックボックスで入れるかどうか選べる
+
 モデルを増やしたい時はFilerでダウンロードすることも出来る
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BpmoNSigEj-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BpmoNSigEj.png]]
@@ -119,6 +123,7 @@ use_merge = True #@param {type:"boolean"}
 if use_merge:
    !git clone https://github.com/bbc-mc/sdweb-merge-board.git
    !git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui.git
+   !git clone https://github.com/aka7774/sd_merge_numa.git
 !git clone https://github.com/animerl/novelai-2-local-prompt.git
 !git clone https://github.com/yfszzx/stable-diffusion-webui-images-browser.git
 !git clone https://github.com/aka7774/sd_filer.git

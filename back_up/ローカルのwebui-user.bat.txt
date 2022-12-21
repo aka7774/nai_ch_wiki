@@ -5,6 +5,11 @@
 
 #contents
 
+* うまく動かないとき
+
+webui.batで起動すると、webui-user.batで設定した内容をすべて無視して起動することが出来る。
+もしそれで起動するならwebui-user.batに書いた内容が原因と思われる。
+
 * PYTHON
 
 普通は空でいい。
@@ -134,16 +139,12 @@ https://pytorch.org/docs/stable/notes/cuda.html#memory-management
 でtrainはじめて今ブンブン回ってるで。 
 ||=
 
-* (削除) ACCELERATE
+* (隠し) ACCELERATE
 
-accelerateを使う。
+ SET ACCELERATE="True"
+
+と入れると、accelerateを使う。
+
 まだ実力のほどはわからないが、
 そのうちfp16/fp32に起因するエラーが減ったり、
 マルチCPUに対応したりするのかも知れない。
-
-そっと消えた。今後に期待。
-
-
-
-
-
