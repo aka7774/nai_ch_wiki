@@ -48,7 +48,8 @@ Colabではcondaで入れると入れやすい。
 
 ** --opt-channelslast (高速化)
 
-4000番台で効果あり。3000番台でもちょっと効果あり。2000番台だと効果なし？
+4000番台で効果あり。3000番台でもちょっと効果あり。
+2000番台だと効果なし？ Linuxだと効果あり。
 
 先に以下の設定をやる。
 
@@ -93,6 +94,12 @@ VRAMの少ないGPUでは設定の変更が必要な場合があります。
 これらのいずれかで「メモリ不足」エラーが発生している場合は、次の引数を追加します：--always-batch-cond-uncond --opt-split-attention
 
 VRAMが足りている環境で使うと速度が落ちるので要注意。
+
+** --ckpt-dir
+
+モデルの保存先を指定する。
+デフォルトは models/Stable-diffusion
+マージ沼をRamDiskやHDDで遊ぶお供に。
 
 ** --gradio-img2img-tool color-sketch
 
@@ -148,3 +155,4 @@ https://pytorch.org/docs/stable/notes/cuda.html#memory-management
 まだ実力のほどはわからないが、
 そのうちfp16/fp32に起因するエラーが減ったり、
 マルチCPUに対応したりするのかも知れない。
+

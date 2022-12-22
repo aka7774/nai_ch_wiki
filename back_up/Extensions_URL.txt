@@ -145,6 +145,14 @@ Infotextsに内蔵されている。
 - マージして画像出してマージして...を自動で出来る
 - ハードディスク上でやったほうが精神衛生上いいかも
 
+** Fake X/Y plot ★
+
+X/Y plotっぽい画像を生成する
+
+- https://github.com/aka7774/sd_fake_xyplot
+- 階層マージ沼で得られた画像を後からX/Y plotにするための便利ツール
+- txt2imgに設定された画像は生成しない
+
 ** Checkpoint Manager ★
 
 - https://github.com/rvhfxb/checkpoint_manager

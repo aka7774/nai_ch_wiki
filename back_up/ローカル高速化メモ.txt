@@ -52,11 +52,88 @@ http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
 > Windows ディスプレイ設定→グラフィックの設定→GPUアクセラレータによるGPUスケジューリングをOFFで再起動する ~~
 > これで24it/s出るようになった うまくいったら報告頼む 環境壊れたらすまんvenv消してくれ ~~
 
+* VAEをckptに内蔵する
+
+116スレ559
+
+Checkpoint Mergerでマージすると色が薄くなる問題、Merge Blocvk Weightedで解決できそう
+
+Checkpoint Merger のMultiplierで指定してた値をMerge Block Weightedの IN00〜OUT11まで全部同じ値にして、base_alphaとM00を0にする(=ModelA側に寄せる)と発色がよくなる 
+[+]
+https://i.imgur.com/80TODwE.png
+[END]
+
+出てくる絵は微妙に変わるけど発色よくなってVAEが必要なくなっただけでも満足や
+
+↓のX/Yは上から
+- Checkpoint Mergerでマージしたもの
+- Merge Blocvk Weighted で全部↑のMultiplierと同じ値を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+- Merge Blocvk Weighted でbase_alphaとM00に0を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+[+]
+https://i.imgur.com/7chOcgA.jpg
+https://i.imgur.com/Q6p1jJI.jpg
+[END]
+
+* safetensors変換
+
+116スレ612
+
+>>559法とsafetensors変換を併用したらハローアスカ5秒短縮できたやで！
+
+1-1. 混ぜたいvaeを有効にしておく
+1-2. Merge Block Weightedを開く
+1-3. Model AとModel Bに同じckptを指定する
+1-4. Output Model Nameも何か入れておくと便利
+1-5. Run Merge
+
+2. できたckptをsafetensorsに変換(方法は下記)
+
+3-1. できたsafetensorsを選ぶ
+3-2. vaeをNoneにする
+
+ハローアスカ
+ckpt+vae 42.89
+safetensors 37.87
+多用するモデルで作っとけば普段使いもいけるでー 
+
+** 変換方法いろいろ
+
+- Filerを使う [[Extensions_URL]]
+- Pythonを使う https://pastebin.com/ijApuS6b
+- Colabを使う(今回はまわりくどいけど) [[ローカルの「ツール」]]
+* Exensionsの退避
+
+しばらく使わないときは Dreambooth Extension を削除する
+
+起動時間が劇的に変わる
+UIからオフにするだけではダメ
+フォルダごと別の場所に退避させとくとか、いっそバッサリ消すとか
+
 * Stepsを減らす
 
 出来るだけ少ないStepsでも期待通りの絵が出る方法を模索する。
 Euler a以外(収束するサンプラー)で再現できないか試す。
 DPM++ 2M Karrasは15Stepsでもそれなりに映えるのでおすすめ。
+
+* RamDiskを使う
+
+1111全部RamDiskに突っ込んで高速化するのはおすすめしない。
+必要RAMのわりに恩恵がほとんど無いから。
+
+でもマージなら恩恵あるかも。
+短時間で大量の読み書きを繰り返すから。
+高速化というよりSSD消耗を抑える意味のほうが大きいかも。
+混ぜるモデルと出来たモデルを保存する容量が確保できれば使える。
+
+ImDisk Toolkit が使いやすい。
+https://sourceforge.net/projects/imdisk-toolkit/
+
+stable-diffusion-webui\models\Stable-diffusionにジャンクションをはるか、
+コマンドラインオプションで--ckpt-dirを指定して使う(こっちのが便利かも)
+
+* WSL2で使う
+
+[[1111_WSL2]]
 
 * Linuxに入れる
 
@@ -66,17 +143,15 @@ Windowsと比べて多少高速化するらしい・・・？
 サブ機とかお古になったら検討してもいいかも
 なおインストールが簡単かは謎
 
-* しばらく使わないときは Dreambooth Extension を削除する
-
-起動時間が劇的に変わる
-UIからオフにするだけではダメ
-フォルダごと別の場所に退避させとくとか、いっそバッサリ消すとか
-
 * venvを作り直す
 
 Windows再インストール並みの最終手段。
 最新の1111に必要なものしか入らなくなるので軽くなる、かも。
+Extension試しまくってると肥大化するので月イチくらいでやるといいかも。
 
 * GPUを買い替える
 
 {{{give me money}}}
+
+
+

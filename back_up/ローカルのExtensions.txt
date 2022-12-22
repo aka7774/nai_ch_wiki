@@ -129,7 +129,9 @@ Kritaのプラグインです。
 
 結果のスタイルに影響を与える要素をプロンプトに簡単にミックス＆マッチさせる方法です。
 
-** (削除) Unprompted
+** Unprompted
+
+adsつきなのでフィルタされている。
 
 - https://github.com/ThereforeGames/unprompted
 
@@ -308,5 +310,6 @@ DAAMとは、Diffusion Attentive Attribution Mapsの略です。注目テキス�
 --- --tiling: boolean
 --- --do_not_save_samples: boolean
 --- --do_not_save_grid: boolean
+
 
 

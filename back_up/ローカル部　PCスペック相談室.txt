@@ -83,6 +83,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 |RTX 4090|24GB|Ryzen 7 3700X|18秒|16.09|gradio-img2img-tool=color-sketch deepdanbooru xformers opt-channelslast|21it/sくらい出るけど3090Tiの結果より少し早いだけだからCPUの限界かも|
 |RTX 3060|12GB|Core i7-10700|46秒|43.76|--xformers --deepdanbooru||
 |RTX 3090Ti|24GB|Ryzen 7 5700X|19秒|17.71|xformers deepdanbooru|Ryzen 1800XからCPU変更|
+|RTX 2070|8GB|Ryzen 7 1700X||37.87|xformers opt-channelslast|safetensors vae内蔵|
 |RTX 2070|8GB|Ryzen 7 1700X||39.73|xformers opt-channelslast|WSL2|
 |RTX 2070|8GB|Ryzen 7 1700X||42.43|xformers|WSL2|
 |RTX 2070|8GB|Ryzen 7 1700X||42.89|xformers deepdanbooru||
@@ -412,4 +413,5 @@ AI絵ではそこまで大きな問題にならないが、単純にコスパは
 補助電源コネクタの異常発熱により融解することがある
 [[NVIDIA公式の調査結果>>https://nvidia.custhelp.com/app/answers/detail/a_id/5413]]によると、コネクタが完全に挿入されていないことが原因
 購入者はコネクタをしっかり差し込み、確認すべき
+
 

@@ -1,0 +1,536 @@
+#contents
+
+*※番外編：導入(WSL2)｜Linux環境でAutomatic1111を導入する
+Windowsでも速度を求める人やLinuxに慣れてる人はこちらがお勧め
+
+**概要
+WindowsのWSL(Linux)環境でAutomatic1111を導入する手順です。
+
+***利点
+Windows版と比べて15〜25%程早い
+
+***欠点
+多少だがLinuxの知識が必要になる(場合もある)
+
+
+**WSL2 のセットアップ
+Powershellを管理者権限で起動して以下を実行
+=|BOX|
+wsl --install
+||=
+再起動を要求されるので再起動する
+
+
+**Ubuntu 22.04 をインストール
+Microsoft Storeを起動し、ubuntu 22 で検索して Ubuntu 22.04.1 LTS をインストールする(2022/12/07現在の最新)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QMSxJb_6Dc.png)
+
+**Ubuntu 22.04 をセットアップ
+Ubuntu 22.04.1 LTSを起動すると初期化とユーザー名、パスワードの設定を要求されるので入力する
+
+**Pythonのアップデート
+2022/12/10現在でPython3.10の最新である Python3.10.9にアップデートする
+
+まず以下コマンドを実行
+=|BOX|
+sudo apt update
+sudo apt upgrade -y
+||=
+初回の sudo 実行時にユーザーのパスワードを聞かれるので入力する
+
+Pythonのビルドに必要な依存ファイルをインストールする
+=|BOX|
+sudo apt install -y build-essential libbz2-dev libdb-dev \
+  libreadline-dev libffi-dev libgdbm-dev liblzma-dev \
+  libncursesw5-dev libsqlite3-dev libssl-dev \
+  zlib1g-dev uuid-dev tk-dev
+||=
+
+Pythonのソースコードを取得し展開
+=|BOX|
+wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tar.xz
+tar xJf Python-3.10.9.tar.xz
+||=
+
+Pythonをビルド(そこそこ時間がかかる)
+=|BOX|
+cd Python-3.10.9
+./configure
+make
+sudo make install
+cd ~
+||=
+
+ここまでやると、以下コマンドを打つと「Python 3.10.9」とバージョンが返ってくる
+=|BOX|
+python3 --version
+||=
+
+
+
+**AUTOMATIC WebUIのインストール
+まず以下コマンドを実行
+=|BOX|
+sudo apt update
+sudo apt upgrade -y
+||=
+
+
+
+次に以下コマンドを実行する 
+=|BOX|
+sudo apt install wget git python3 python3-venv -y
+sudo apt install libgl1 -y
+bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+||=
+※ WSL2の場合 https://github.com/AUTOMATIC1111/stable-diffusion-webui#automatic-installation-on-linux に書いてあるコマンドを実行するだけでは足らないため2行目のコマンドを足している
+
+この時点ではまだckptファイルを置いていないため最後のコマンド実行後にエラーが起こるはず
+=|BOX|
+No checkpoints found. When searching for checkpoints, looked at:
+ - file /home/xxx/stable-diffusion-webui/model.ckpt
+ - directory /home/xxx/stable-diffusion-webui/models/Stable-diffusion
+Can't run without a checkpoint. Find and place a .ckpt file into any of those locations. The program will exit.
+||=
+
+**ckptなど置く
+Windowsのエクスプローラで \\wsl$ にアクセスするとWSL2のLinuxが一覧表示されるので、
+https://image01.seesaawiki.jp/n/h/nai_ch/G0zqfPvbtW.png 
+
+\\wsl$\Ubuntu-22.04\home\<Ubuntuのユーザー名>\stable-diffusion-webui\models\Stable-diffusion に ckpt を置く
+※同じやり方でVAEやhypernetworksの下にファイルが置けます
+
+**CUDAのインストール
+CUDA 11.x の最新版である11.8をインストールする 
+''&color(#ff0000){※ CUDA 11.x台をインストールすること! 2022/12/10現在、最新である12.xをインストールするとxformersがビルドできない}''
+
+https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local の 「Download Installer for Linux WSL-Ubuntu 2.0 x86_64」- 「Base Installer」 に書いてあるコマンドを実行する
+
+**cuDNN のインストール
+Windows側で https://developer.nvidia.com/rdp/cudnn-archive から cuDNN v8.6.0 (October 3rd, 2022), for CUDA 11.x の Local Installer for Ubuntu22.04 x86_64 (Deb) をダウンロードし、\\wsl$\Ubuntu-22.04\home\<Ubuntuのユーザー名> に置く
+
+その後Ubuntu側で/home/<Ubuntuのユーザー名>に移動し、以下コマンド実行
+=|BOX|
+sudo dpkg -i cudnn-local-repo-ubuntu2204-8.6.0.163_1.0-1_amd64.deb
+sudo cp /var/cudnn-local-repo-ubuntu2204-8.6.0.163/cudnn-local-FAED14DD-keyring.gpg /usr/share/keyrings/
+sudo apt -y update
+sudo apt install libcudnn8
+sudo apt install libcudnn8-dev
+||=
+
+その後/home//<Ubuntuのユーザー名> にある .bashrc に以下を書き加える
+=|BOX|
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+||=
+
+書き加えたら以下コマンド実行
+=|BOX|
+source .bashrc
+||=
+
+**xformersのビルド
+
+以下コマンドを実行 ビルドにかなりの時間がかかるので待ちましょう
+
+=|BOX|
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+cd repositories
+git clone https://github.com/facebookresearch/xformers.git
+cd xformers
+git submodule update --init --recursive
+pip install -r requirements.txt
+pip install -e .
+||=
+
+xformersのビルドが終わったらついでにtritonをインストールしておく(そのままWebUIを起動すると 「Error caught was: No module named 'triton'」と怒られるので)
+=|BOX|
+pip install triton
+||=
+
+最後にvenvを抜けて終わり
+=|BOX|
+deactivate
+||=
+
+
+**xformers有効化とWebUI起動
+/home/<Ubuntuのユーザー名>/stable-diffusion-webui にある webui-user.sh を開き、以下の行のコメントアウトを外してパラメータを追記する
+=|BOX|
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--xformers"
+||=
+
+その後 /home/<Ubuntuのユーザー名>/stable-diffusion-webui にある ./webui.sh を実行
+=|BOX|
+cd /home/<Ubuntuのユーザー名>/stable-diffusion-webui
+bash webui.sh
+||=
+Windows側で  http://127.0.0.1:7860 にアクセスできます。
+
+
+***起動するのにUbuntuいちいち立ち上げるのがめんどくさいンゴ
+/home/<Ubuntuのユーザー名> にある .profileに以下を書き加える
+=|BOX|
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+||=
+Windows側で以下のバッチファイルを作成する
+=|BOX|
+wsl cd /home/<Ubuntuのユーザー名>/stable-diffusion-webui; bash -l webui.sh
+pause
+||=
+バッチファイルを実行すればUbuntuでwebui.shを叩いてくれます
+※wslから起動したbashはWindowsのbash.exeを呼び出しているが、これは起動時の環境ファイルを読み込まない
+その為、-lオプションで.profileを読み込んで起動するようにする
+
+***バッチファイルから起動はするけど、生成時にエラーが出るンゴ……
+=|BOX|
+Could not load library libcudnn_cnn_infer.so.8. Error: libcuda.so: cannot open shared object file: No such file or directory
+||=
+生成時にこのエラーが出る場合、環境変数が設定されてません。以下を確認して下さい
+-/home/<Ubuntuのユーザー名> にある .bashrc、.profileに以下が記述されているか
+=|BOX|
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+||=
+-記述されている場合、wslの誤作動の可能性があります。(稀に .bashrcを何故か読み込まない現象が出る)
+.bash_profile を作成しましょう
+/home/<Ubuntuのユーザー名>/.bash_profile (無い場合は新規作成)
+=|BOX|
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+if [[ -f ~/.bashrc ]] ; then
+    . ~/.bashrc
+fi
+||=
+バッチファイルを動かせば生成できるようになっているはずです
+
+
+***生成した絵に直でアクセスしたいンゴ
+WebUIのSettingタブで以下のように設定しましょう
+(以下の例はWindowsの C:\stable-diffusion-webui-automatic1111\outputs\ の下にフォルダ分けしてファイルを置きたい場合)
+https://image01.seesaawiki.jp/n/h/nai_ch/16PjLJzYTa.png
+
+
+**参考サイト
+https://premirea.jp/article/wsl2-stable-diffusion-web-ui
+https://qiita.com/SwitchBlade/items/cac2da388906b6486d69
+https://pythonlinks.python.jp/ja/index.html
+https://github.com/AUTOMATIC1111/stable-diffusion-webui
+
+** やってみた(2022-12-10)
+個人的な意見としてはWSL2未経験かつLinux未経験者にはお勧めできない。
+トラブルを自力解決できる程度の能力があることが望ましい。
+[+]
+インストールは成功。生成は出来る。学習は困難。
+Windows 10 22H2
+RTX 2070
+所要時間 2時間ちょい
+メモリ32GB インストール中に16GBくらい使ってた
+SSDは45.7GB埋まった(C:\Users\****\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu_****\LocalState\ext4.vhdx)
+
+ハローアスカ
+- Windows 42.89
+- WSL2 42.43
+- WSL2+opt-channelslast 39.73
+
+コマンドプロンプトを管理者権限で起動して以下を実行
+=|BOX|
+wsl --install
+||=
+再起動を要求されるので再起動する
+
+再起動後、「Installing, this may take a few minutes...」という窓が出て、
+Ubuntu 22.04 が勝手にインストールされる。
+ユーザー名、パスワードの設定を要求されるので入力する。
+
+まずはrootになる。ユーザーのパスワードを聞かれるので入力する。
+=|BOX|
+sudo su -
+||=
+
+一応、一行ずつ実行してエラーが無いか出力を確認する。
+=|BOX|
+apt update
+apt upgrade -y
+apt install -y build-essential libbz2-dev libdb-dev libreadline-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libsqlite3-dev libssl-dev zlib1g-dev uuid-dev tk-dev
+||=
+
+pythonは確かに3.10.6
+=|BOX|
+python3 -V
+||=
+
+妥協しても良かったけどせっかくなので入れておく。
+=|BOX|
+wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tar.xz
+tar xJf Python-3.10.9.tar.xz
+cd Python-3.10.9
+./configure
+make
+make install
+||=
+
+終わったらsuを抜ける。
+=|BOX|
+ exit
+||=
+
+libgl1はインストールする必要が無さそう。
+ apt install libgl1
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+libgl1 is already the newest version (1.4.0-1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+pythonは確かに3.10.9になった
+=|BOX|
+python3 -V
+||=
+
+一度1111のインストールを実行して空のディレクトリを作成する(結構待たされる)
+=|BOX|
+bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+||=
+エラーで終わればいい。起動してしまったらCtrl-Cで落とす。
+
+エクスプローラーで以下の場所を開いて ckpt を置く
+=|BOX|
+\\wsl$\Ubuntu-22.04\home\<Ubuntuのユーザー名>\stable-diffusion-webui\models\Stable-diffusion
+||=
+
+https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local
+の「Download Installer for Linux WSL-Ubuntu 2.0 x86_64」- 「Base Installer」 に書いてあるコマンドを実行する
+コピペしたら改行が潰れてイラッとする。
+結構待たされる。
+次の行でエラーが出る。
+ sudo dpkg -i&#160;cuda-repo-wsl-ubuntu-11-8-local_11.8.0-1_amd64.deb
+dpkg: error: unknown option -
+このエラーはコマンドを手で打ち直せば動く。(たぶんどこかのハイフンの文字コードが変)
+
+suして作業したら以下のエラーが出たので仕方なくユーザーで作業した。
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package cuda
+
+cudnn 8.6.0を入れる。
+この作業はnvidiaにユーザー登録が必要なため、コマンドで完結できない。
+ダウンロードしたファイルは、
+\\wsl$\Ubuntu\root
+に置いた。
+=|BOX|
+ sudo su -
+ dpkg -i cudnn-local-repo-ubuntu2204-8.6.0.163_1.0-1_amd64.deb
+ cp /var/cudnn-local-repo-ubuntu2204-8.6.0.163/cudnn-local-FAED14DD-keyring.gpg /usr/share/keyrings/
+ apt -y update
+ apt install libcudnn8
+ apt install libcudnn8-dev
+||=
+
+suを抜ける
+=|BOX|
+exit
+||=
+
+その後/home/<Ubuntuのユーザー名> にある .bashrc を開く
+=|BOX|
+vi .bashrc
+||=
+たぶんLinuxわからん人は \\wsl$\Ubuntu\home\<Ubuntuのユーザー名>\.bashrc をメモ帳で開くのがいい。
+先頭に以下を書き加える
+=|BOX|
+ export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+||=
+
+書き加えたら以下コマンド実行
+=|BOX|
+source .bashrc
+||=
+
+xformersのコンパイル(結構待たされる)
+=|BOX|
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+cd repositories
+git clone https://github.com/facebookresearch/xformers.git
+cd xformers
+git submodule update --init --recursive
+pip install -r requirements.txt
+pip install -e .
+||=
+
+tritonをインストール
+=|BOX|
+pip install triton
+||=
+
+venvを抜ける
+=|BOX|
+deactivate
+||=
+
+\\wsl$\Ubuntu\home\<Ubuntuのユーザー名>\stable-diffusion-webui\webui-user.sh メモ帳で開く
+以下の行のコメントアウトを外してパラメータを追記する(お好みで)
+=|BOX|
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--xformers --opt-channelslast --no-half-vae"
+||=
+
+バッチファイル start_1111_wsl2.bat を作成して好きなところに置く
+=|BOX|
+wsl cd /home/<Ubuntuのユーザー名>/stable-diffusion-webui; bash webui.sh
+pause
+||=
+
+Windows側で  http://127.0.0.1:7860 にアクセスできることを確認。
+
+生成でエラーが出た
+Could not load library libcudnn_cnn_infer.so.8. Error: libcuda.so: cannot open shared object file: No such file or directory
+Please make sure libcudnn_cnn_infer.so.8 is in your library path!
+=|BOX|
+sudo ln -s /usr/lib/wsl/lib/libcuda.so.1 /usr/local/cuda/lib64/libcuda.so
+||=
+
+WSLを再起動する
+=|BOX|
+wsl.exe --shutdown
+||=
+
+start_1111_wsl2.bat を起動して、今度こそ正常動作を確認した。
+
+diffusers: unknown
+torch: 1.12.1+cu113
+torchvision: 0.13.1+cu113
+transformers: 4.19.2
+xformers:  0.0.15.dev0+affe4da.d20221210
+
+バージョンを上げてみる
+=|BOX|
+~/stable-diffusion-webui/venv/bin/pip3 install --upgrade torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+||=
+
+diffusers: unknown
+torch: 1.13.0+cu116
+torchvision: 0.14.0+cu116
+transformers: 4.19.2
+xformers:  0.0.15.dev0+affe4da.d20221210
+
+生成が動かなくなった。
+RuntimeError: No such operator xformers::efficient_attention_forward_cutlass - did you forget to build xformers with `python setup.py develop`?
+
+これっぽい。現状未解決。
+https://github.com/TheLastBen/fast-stable-diffusion/issues/904
+
+このアップグレードが出来ないとDreamboothが動かないはずなので、
+現状WSL2化によって学習速度の向上を図るのは困難と結論付ける。
+[END]
+
+** やってみた２(2022-12-17)
+要所でWSL環境のバックアップを取りつつ実施
+所要時間90分程
+[+]
+Windows 11 22H2
+RTX 3090
+所要時間90分程（バックアップ時間含む）
+
+ハローアスカ
+- Windows 21.65
+- WSL2+opt-channelslast 17.51
+
+***1．WSLのインストール(PowerShell操作)
+-WSL2 のセットアップ
+-Ubuntu 22.04 をインストール
+-Ubuntu 22.04 をセットアップ
+
+***2．上記実施後、環境のエクスポート(バックアップ)、ついでにWSL環境のドライブ変更(Cドライブ→Dドライブ)(PowerShell操作)
+=|BOX|
+D:
+md WSL
+wsl --shutdown 
+wsl --export Ubuntu-22.04 D:\WSL\Ubuntu-22.04.tar
+||=
+
+現在のUbuntuを一旦削除(PowerShell操作)
+=|BOX|
+wsl --unregister Ubuntu-22.04
+||=
+
+DドライブにUbuntuをインポート(復元)(PowerShell操作)
+=|BOX|
+wsl --import Ubuntu-22.04 D:\WSL\Ubuntu-22.04 D:\WSL\Ubuntu-22.04.tar --version 2
+||=
+
+ログインユーザーが強制的にrootになるので、作成したユーザに変更(レジストリ操作)
+PowerShellよりregeditを起動
+=|BOX|
+regedit
+||=
+・コンピューター\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\ の中からUbuntu22.04が入っているキーを探す
+DefaultUid を「0」から10進数で「1000」(16進数で「3e8」)に変更
+WindowsターミナルからUbuntu22.04を起動し、ユーザーが作成したものになっている事を確認
+
+***3．環境構築(Ubuntu操作)
+-Pythonのアップデート
+Pythonのインストールは10分程かかる
+
+***4．StableDiffusionのインストール(Ubuntu操作)
+-AUTOMATIC WebUIのインストール
+-ckptなど置く
+-CUDAのインストール
+-cuDNN のインストール
+順番に実施
+.bashrcの書き換えはWindows側からVS Codeで書き換え
+
+***5．xformersのビルド(Ubuntu操作)
+4,50分掛かるので気長に待つ
+
+***6．xformers有効化とWebUI起動(Ubuntu操作)
+起動及びイラスト作成の動作確認実施
+
+***7．WebUIが正常動作する事を確認した上で、環境をバックアップする(PowerShell操作)
+=|BOX|
+wsl --shutdown
+wsl --export Ubuntu-22.04 D:\WSL\Ubuntu-22.04_WebUI_Install.tar
+||=
+
+***8.各種フォルダをWindows側に作成(Ubuntu操作)
+Windows版WebUIをインストールしていたので、必要フォルダをWindows版と共通にする
+対象は「models・embeddings・outputs・textual_inversion」フォルダ
+
+Ubuntuを起動し
+=|BOX|
+cd /home/<作成したユーザーアカウント>/stable-diffusion-webui
+mv models models_
+ln -s /mnt/d/stable-diffusion-webui/models models
+mv embeddings embeddings_
+ln -s /mnt/d/stable-diffusion-webui/embeddings embeddings
+mv outputs outputs_
+ln -s /mnt/d/stable-diffusion-webui/outputs outputs
+mv textual_inversion textual_inversion_
+ln -s /mnt/d/stable-diffusion-webui/textual_inversion textual_inversion
+||=
+mvコマンドでリネーム(正確にはディレクトリ移動だが)、lnコマンドでシンボリックリンクを貼る
+「/mnt/d/」部はWindows版WebUIのインストール場所に合わせる
+
+終わったら /stable-diffusion-webui からWebUIを起動し、イラスト作成の動作確認実施
+
+***9．最後の環境をバックアップする(PowerShell操作)
+=|BOX|
+wsl --shutdown
+wsl --export Ubuntu-22.04 D:\WSL\Ubuntu-22.04_WebUI_Install_finished.tar
+||=
+
+***10．デスクトップに起動用バッチファイルを作成して終了
+
+***雑感
+手順通りにやれば詰まる所は無かった
+またエラーが出た場合でも、2の手順で取ったバックアップをリストアする事で綺麗な環境からやり直せるので安心感が高い
+
+TI、HB、DBの学習に関しては、特に問題無し
+注意点があるとすれば、素材フォルダ等の必要フォルダの指定の方法がUbuntu側から見たpathになる為
+D:\stable-diffusion-webui\training　フォルダを指定する場合は
+/mnt/d/stable-diffusion-webui/training　と指定する必要がある
+
+modelsやoutputsフォルダを外出しにしているので、一度環境を作ってしまえば再インストールも容易
+セットアップ時に何かエラーが出た場合は、あれこれ弄る前にリストアしてやり直す事をお勧めする
+[END]

@@ -12,6 +12,8 @@
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BpmoNSigEj-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BpmoNSigEj.png]]
 
+Google Driveのマウントはしなくても動かせるのでお好みで
+
 ----
 =|BOX|
 #@markdown 実行は自己責任で。
@@ -126,6 +128,8 @@ if use_merge:
    !git clone https://github.com/aka7774/sd_merge_numa.git
 !git clone https://github.com/animerl/novelai-2-local-prompt.git
 !git clone https://github.com/yfszzx/stable-diffusion-webui-images-browser.git
+!git clone https://github.com/aka7774/sd_fake_xyplot.git
+!git clone https://github.com/aka7774/sd_curly_rand.git
 !git clone https://github.com/aka7774/sd_filer.git
 !git clone https://github.com/aka7774/sd_infotexts.git
 !git clone https://github.com/aka7774/sd_about.git

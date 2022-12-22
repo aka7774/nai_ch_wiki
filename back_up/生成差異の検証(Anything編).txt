@@ -1,0 +1,63 @@
+* この検証の意義
+
+2000番台以降は一緒の絵が出せると思うんやが
+出せないとか高解像度だと無理って情報がネットにあったり
+スレでもニキの再現が難しいという報告があったので確認がしたい
+* レギュレーション
+
+** プロンプト
+SFWでええ感じのニキのやつ探してきました。
+これをレギュ画像でWikiにおんなじようにテーブル作ってやってみる感じで暇な人はやろう
+
+https://majinai.art/ja/i/gQu8H26
+&ref(https://majinai.art/i/gQu8H26.png,500)
+
+- PNG infoにレギュ画像をドラッグ&ドロップしてText2imgに送って生成してください
+
+** モデル
+WarriorMama777/OrangeMixs at main - https://huggingface.co/WarriorMama777/OrangeMixs/tree/main
+→BloodNightOrangeMix.ckpt
+
+これを使用します。
+
+BloodOrangeMixとハッシュ同じだから間違えんでなー
+このへんだいたい ffa7b160
+
+BloodNightOrangeMix.ckpt sha256: f8aff727ba3da0358815b1766ed232fd1ef9682ad165067cac76e576d19689e0　←使うのこれや!!
+BloodOrangeMix.ckpt sha256: 25cece3fe303ea8e3ad40c3dca788406dbd921bcf3aa8e3d1c7c5ac81f208a4f
+BloodOrangeMix_half.ckpt sha256: b2168aaa59fa91229b8add21f140ac9271773fe88a387276f3f0c7d70f726a83
+
+** Vae
+Anything-V3.0.vae　を使います。
+
+** 検証にあたって
+- 1111本体のソースコードを改造していないこと
+-- 改造している場合は備考に明記してください
+-- あえて古いバージョンで動かしている場合はhashなど
+-- xformers medvram等のオプションは参考記録として明記してください
+- 2回生成したり、WebUIを落としてから生成したりと検証してくれるとなお良い
+- HyperNetworkがONになってないか要確認!
+
+-- Upscale latent spaceは設定のUpscalingのところにある
+-- Enable quantization in K samplersは設定のStable Diffusionのところにある
+
+
+* 比較
+
+{| class="nanj_prompt_table edit sort"
+|~w(100px):GPU|~w(300px):生成結果|~w(300px):webui-user.bat|~Upscale latent space|Enable quantization in K samplers|~w(300px):備考|
+|GeForce RTX 3060|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gjfxxOoS1Y.png)|--xformers|OFF|OFF|完全ではないが似てる|
+|GeForce RTX 2070 SUPER|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FFtE0xzZr7.png)|--xformers --opt-channelslast|OFF|OFF|完全ではないが似ている ~~ 画像右側が変化した|
+|GeForce RTX 2070 SUPER|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/H_hpDW8Fkj.png)||OFF|OFF|完全ではないが似ている|
+|GeForce RTX 2070 SUPER|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NhJu9rCBMJ.png)||ON|OFF|似てない|
+|GeForce RTX 3090|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Ppx8i9LBQx.png)|--xformers --opt-channelslast|ON|OFF|完全ではないが似てる|
+|GeForce RTX 3090|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Ppx8i9LBQx.png)|--xformers --opt-channelslast|ON|OFF|完全ではないが似てる|
+|GeForce RTX 3090|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_iHjhbQdfa.png)|なし|ON|OFF|完全ではないが似てる|
+|GeForce RTX 2070|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qfQ1mrgZtK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qfQ1mrgZtK.png]]|なし|　ON　|　OFF　|完全ではないが似てる|
+|GeForce RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lYBOw_C13Y-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lYBOw_C13Y.png]]|--xformers --no-half-vae|　ON　|　OFF　|完全ではないが似てる|
+|GeForce RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tTRH81Z46Y-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/tTRH81Z46Y.png]]|なし|　ON　|　OFF　|モデル違う例 Clip Skip 2|
+|GeForce RTX 2070|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/c45CfzoNtz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/c45CfzoNtz.png]]|なし|　ON　|　OFF　|モデル違う例 似てない|
+|}
+
+----------------------
+
