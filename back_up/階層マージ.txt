@@ -130,30 +130,31 @@ Layer18が顔を大分リアルにするからここが顔層なんやろな
 ||=
 -base alpha含め全部のパラメータは0がmodelAを、1がmodelBを指してる
 
-**階層マージ設定例
+**114スレ990(115スレ269)設定例
 |モデルA|モデルB|Weight values|base_alpha|備考|
 |NAI:0.6+AnythingV3.0:0.4|instagram50000+(f222-SD1.5):1.0|1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1|1|114スレ990(115スレ269)|
 
-***114スレ990(115スレ269)
 =|BOX|
 990 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a55-hIBn)[sage] 投稿日：2022/12/19(月) 23:14:55.11 ID:+cFYXaW50 [13/13]
 プロンプトマスピNSFWだけでこんな感じ
 指だけじゃなくて足首とかもリアルになってるのがわかる
-||=
-[+]
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/POczruPMUb.png,512,768) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ipmXdGkRZR.png,512,768)
-[END]
-=|BOX|
+
 269 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a55-hIBn)[sage] 投稿日：2022/12/20(火) 15:34:32.97 ID:z7FK1nTC0 [1/8]
 前スレ>>990のマージモデル比率載せとくわね
 値が1に近づくほどインスタ要素強くなるから適宜変える感じで
 チナなんでこれで上手くいくのか検討もつかん
 ||=
 [+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/POczruPMUb.png,512,768) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ipmXdGkRZR.png,512,768)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/wCA5ux_p5M.png,935,318)
 [END]
 
-***116スレ43
+**116スレ43設定例
+|モデルA|モデルB|Weight values|base_alpha|備考|
+|ACertainThing+ (NAI NSFW - NAI SFW))+gape60|robotdiffusion|1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0||IN00~05のみ1|
+|ACertainThing+ (NAI NSFW - NAI SFW))+gape60|robotdiffusion|0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0||IN06~11のみ1|
+|ACertainThing+ (NAI NSFW - NAI SFW))+gape60|robotdiffusion|0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1||OUT06~11のみ1|
+|ACertainThing+ (NAI NSFW - NAI SFW))+gape60|robotdiffusion|0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0||OUT00~05のみ1|
 =|BOX|
 43今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ea88-e5AJ)2022/12/21(水) 21:21:36.48ID:Szc2uaWf0
 前スレの https://fate.5ch.net/test/read.cgi/liveuranus/1671460483/971 からさらに掘り下げて ACertainThing+ (NAI NSFW - NAI SFW))+gape60 と robotdiffusionの階層マージをやってみたやがこれはさすがにわかりやすい差が出てくるな
@@ -166,4 +167,123 @@ Layer18が顔を大分リアルにするからここが顔層なんやろな
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/olizy9iiYZ.jpg,1000,317)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/HBPkUOrqVN.jpg,729,1000)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/2YmZShw8am.jpg,540,1000)
+[END]
+
+**116スレ649設定例
+|モデルA|モデルB|Weight values|base_alpha|備考|
+|ElysiumAnimeV3|ElysiumV1|1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0|1||
+|↑の合成品|Gape60|0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25|1||
+=|BOX|
+649今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 53c3-ZR1D)2022/12/23(金) 02:48:55.23ID:3M4wvqj10
+触発されて狂ったように層状マージやりまくったんやがほとんどアカン奴で一番マシな感じなのが
+ElysiumAnimeV3とElysiumV1を1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+上の合成品とGape60で0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25
+base_alphaは常に1
+の面白味のない組み合わせやったわ(ElysiumAnimeV3と比べてかなり落ち着いた構図で破綻少な目やった)
+100回位言われてそうやけど層状マージはIN(構図)は全部A、OUT(塗り)は全部B、Mはメインにしたいほう全振りみたいなのが(用途限られるけど)安定しそうやな。これなら通常のマージの素材にも使えそうな気がしてきたで
+||=
+
+**116スレ652設定例
+|モデルA|モデルB|Weight values|base_alpha|備考|
+|ACertainThing+ (NAI NSFW - NAI SFW))+gape60|instaとf222混ぜたやつ|0.2,0.3,0.2,0.2,0.3,0.3,0.2,0.3,0.3,0.1,0.1,0.1,0,0.25,0.25,0.25,0.1,0.1,0.1,0.1,0.1,0.25,0.25,0.1,0.1||モデルマージ比率、base alphaは不明|
+=|BOX|
+652今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6a11-CLTW)2022/12/23(金) 03:24:07.94ID:PF9X6rgq0
+一旦マージは止めや言うたが気を取り直してここの検証を参考にチャレンジしてみたで
+あんまリアル寄りになるのは好みではないので弱く混ぜた感じや
+ACertainThingの色味は残せてる気がする。そしてgapeの肛門拡張を確認すんの忘れてたわ…
+
+短めプロンプト
+https://majinai.art/i/-qfc-HK.png
+https://majinai.art/i/gYWe44Q.png
+
+長めのプロンプト
+https://majinai.art/i/hoqxfIv.png
+https://majinai.art/i/dWml3fL.png
+
+参考にならんと思うが一応
+ACertainThing+ (NAI NSFW - NAI SFW))+gape60ベースにinstaとf222混ぜたやつをここの検証画像参考に薄く強弱付けてみた
+0.2,0.3,0.2,0.2,0.3,0.3,0.2,0.3,0.3,0.1,0.1,0.1,0,0.25,0.25,0.25,0.1,0.1,0.1,0.1,0.1,0.25,0.25,0.1,0.1
+||=
+
+**116スレ741設定例
+|モデルA|モデルB|Weight values|base_alpha|備考|
+|AnyThing-V3.0[6569e224]|gape60-fp16[25396b85]|1,1,1,1,1,1,1,1,1,1,1,1,0.5,0,0,0,0,0,0,0,0,0,0,0,0|1||
+=|BOX|
+741今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-PSnz)2022/12/23(金) 14:14:06.93ID:sq9ELIgG0>
+層別マージよく解らんが塗りをGAPEにするだけでも結構良いわ
+
+746今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-PSnz)2022/12/23(金) 14:28:10.01ID:sq9ELIgG0>
+>>743
+Any3.0とgape60をINを全部１、OUTを全部0にしただけの雑マージやで
+||=
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0LPAbUK4_u.png,1000,596)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/55HzRFaC8x.png)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4e4Y_3Fjo5.png)
+[END]
+
+**116スレ754設定例
+|モデルA|モデルB|Weight values|base_alpha|備考|
+|BloodOrangeMix|instagram50000+(f222-SD1.5):1.0|1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1|0|114スレ990(115スレ269)設定例と同数値設定、モデルAとbase_alphaが違う|
+=|BOX|
+754今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ af20-PniU)2022/12/23(金) 15:14:32.11ID:gQ/lkNW20
+https://majinai.art/i/vB0xuKv.png
+https://majinai.art/i/qajA30b.png
+https://majinai.art/i/Eo3HBCw.png
+BloodOrangeMixとInsta+f222を階層マージしたやつ
+ほんまたまらん
+
+770今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ af20-PniU)2022/12/23(金) 15:50:23.51ID:gQ/lkNW20
+>>762
+モデルAにBloodOrangeMix
+モデルBにinstagram50000+(f222-SD1.5):1.0
+
+重みは
+1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1
+baは0
+
+モデルAをBloodOrangeにしてる以外は
+wikiの丸パクリやで
+
+785今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ af20-PniU)2022/12/23(金) 16:12:54.38ID:gQ/lkNW20
+>>783
+あとプロンプトもかなり重要な気がする
+Negative promptは余計なもの入れないで
+(worst quality:1.4), (low quality:1.4)
+くらいにしておいた方がワイは安定した
+||=
+
+*Checkpoint Merger(通常のマージ)でマージすると色が薄くなる問題、Merge Block Weighted(階層マージ)による解決法
+=|BOX|
+559今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ea88-e5AJ)2022/12/22(木) 22:37:07.48ID:eV+I6f+P0
+Checkpoint Mergerでマージすると色が薄くなる問題、Merge Blocvk Weightedで解決できそう
+
+Checkpoint Merger のMultiplierで指定してた値をMerge Block Weightedの IN00〜OUT11まで全部同じ値にして、base_alphaとM00を0にする(=ModelA側に寄せる)と発色がよくなる 
+
+出てくる絵は微妙に変わるけど発色よくなってVAEが必要なくなっただけでも満足や
+
+↓のX/Yは上から
+- Checkpoint Mergerでマージしたもの
+- Merge Blocvk Weighted で全部↑のMultiplierと同じ値を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+- Merge Blocvk Weighted でbase_alphaとM00に0を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+
+
+612今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7b88-z22/)2022/12/23(金) 00:51:07.68ID:S9OoH/yv0
+>>559法とsafetensors変換を併用したらハローアスカ5秒短縮できたやで！
+1. naiとnaiで階層マージ vae有効にしておく
+2. できたckptをsafetensorsに変換
+3. vae無しでハローアスカ
+ckpt+vae 42.89
+safetensors 37.87
+多用するモデルで作っとけば普段使いもいけるでー
+||=
+
+※safetensorsに変換する方法は[[こちら>ローカル高速化メモ#content_3]]参照
+
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/90U2NMDE01.png,1000,618)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HDaMMYynMM.jpg,1000,384)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sAsawc6owS.jpg,1000,338)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kmGxXh5SO1.jpg,1000,693)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/16_L3pnRTF.jpg,298,1000)
 [END]
