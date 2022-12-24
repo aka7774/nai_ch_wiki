@@ -88,7 +88,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |1girl, nazrin,capelet||東方Project|ナズーリン||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Tocr8J0MQl-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Tocr8J0MQl.png]]|
-|1girl, tatara kogasa,{{alternate eye color}},red eyes and blue eyes,||東方Project|多々良小傘|眼の色ガチャ|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qwfgoT_dOe-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qwfgoT_dOe.png]]|
+|1girl, tatara kogasa,{{alternate eye color}},red eyes and blue eyes,||東方Project|多々良小傘|眼の色ガチャ~~「heterochromia」の単語を入れると瞳が安定しやすいが、左右どっちになるかはガチャ|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qwfgoT_dOe-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qwfgoT_dOe.png]]|
 |1girl, {{{{{kumoi ichirin,unzan}}}}}, blue hair,middle hair,{{blown bangs}},blue eyes,blue hood,hoop,kesa,blue capelet,forehead,{{parted bangs}},white dress,||東方Project|雲居一輪|unzan を入れたほうが雰囲気出る|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Pv4a0QL14X-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Pv4a0QL14X.png]]|
 |1girl, {{{{murasa minamitsu}}}}, fushion of black & green hair,short hair,messy hair,parted bangs,hair between eyes,green eyes,red neckerchief, white sailor dress, white sailor cap,pants||東方Project|村紗水蜜||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UNHbS8s6_1-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/UNHbS8s6_1.png]]|
 |||東方Project|寅丸星|||
@@ -190,6 +190,7 @@
 |||東方Project|綿月豊姫|||
 |||東方Project|レイセン2号|||
 |1girl,{{ibaraki_kasen_(touhou)}}, tabard, pink_rose, pink_eyes, pink_hair, short_hair, {{two chignons on the head}}, {{{whole right arm bandage}}}, ||東方Project|茨木華扇|胸元の薔薇飾りが模様になったり、髪飾りになったりする事多し。~~また、シニヨン（頭の白い饅頭）が紫のZUN帽や、メイドのヘッドドレスになる事も多し。~~包帯を右腕のみに指定しても、左腕や脚等に巻いてしまう事も多い。|https://image01.seesaawiki.jp/n/h/nai_ch/VujN8q60Bh.png|
+|1 girl, {{ibaraki_kasen_(touhou)}}, {{{{black tabard}}}}, pink rose, {{{white long skirt}}}, {{{sleeveless}}}, jewelry pink_eyes, red eyeshadow, pink {{{long_hair}}}, floating hair, {{{{two horns in head}}}}, fangs, sharp_teeth, metal {{shackles}}, chain, evil smirk, provocation, femdom,||東方Project|鬼華扇|高難易度~~色指定に強調を入れまくっても、服が元の赤色のままになりやすい。~~袖がそのままだったり、シニヨンも角と一緒に生成される。~~髪が長髪ではなく、短髪のままになる。~~腕の金属枷が生成されない~~といった具合に、元々の「茨木華扇」としての要素が発現しやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/OWgDXo671T.png|
 |||東方Project|稗田阿求|||
 |short orange hair,(green gold kimono:1.4),brown boots,Plaid sleeves,brown eyes,(two hair bells:1.2),two ponytails,(red white chequered sleeve:1.2),loli,stand,touhou,(Motoori Kosuzu:1.5),1girl||東方Project|本居小鈴|実はAIは彼女を知らない，だから服の色合わせは間違えやすい||
 |||東方Project|宮出口瑞霊|||

@@ -209,6 +209,32 @@ WebUIのSettingタブで以下のように設定しましょう
 (以下の例はWindowsの C:\stable-diffusion-webui-automatic1111\outputs\ の下にフォルダ分けしてファイルを置きたい場合)
 https://image01.seesaawiki.jp/n/h/nai_ch/16PjLJzYTa.png
 
+***Windows版と同じようにフォルダアイコンからエクスプローラーを開きたいンゴ(2022/12/24現在)
+本体改造の必要があります
+間違えるとエラーで起動しなくなる可能性も有ります
+また、将来の本体の更新で変わる可能性があります
+
+改造する場合、その点を十分注意してください
+誰も責任を取ってくれません
+[+]
+wsl-open をインストール
+=|BOX|
+sudo apt-get install -yqq npm
+sudo npm install -g wsl-open
+||=
+
+本体を書き換え
+/home/<Ubuntuのユーザー名>/stable-diffusion-webui/modules/ui.py を「xdg-open」で検索(2022/12/24現在、561行目)
+=|BOX|
+sp.Popen(["xdg-open", path])
+||=
+以下のように書き換え
+=|BOX|
+sp.Popen(["wsl-open", path])
+||=
+
+※判らない場合は手を付けないでください
+[END]
 
 **参考サイト
 https://premirea.jp/article/wsl2-stable-diffusion-web-ui

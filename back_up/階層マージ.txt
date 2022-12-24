@@ -1,14 +1,18 @@
 #contents
 
 * 概要
-
 StableDiffusionのU-Netの各層に応じたモデルデータのマージを行う
 
 U-Netは構造がその名の通りU字型しており、浅い層が細かいディテール部分を、深い層が全体の構造を担当している
 このU-Netの深さに応じてマージ比率を変えてマージするのが階層マージ
-詳しくは[[kohya_ss, Stable DiffusionのモデルをU-Netの深さに応じて比率を変えてマージする｜Kohya S.｜note>https://note.com/kohya_ss/n/n9a485a066d5b]]参照
-
 簡単に言うと、3D調(リアル風)を保ったままアニメ風のイラスト作成、などが出来る
+詳しくはリンク参照
+
+* リンク
+-[[kohya_ss, Stable DiffusionのモデルをU-Netの深さに応じて比率を変えてマージする｜Kohya S.｜note>>https://note.com/kohya_ss/n/n9a485a066d5b]]
+-[[実験レポート Model Block Merge で、U-Net の各レイヤーの影響を調べる　1>>https://note.com/bbcmc/n/n2d4765b4bd47]]
+
+-[[OrangeMixs>>https://huggingface.co/WarriorMama777/OrangeMixs]] AbyssOrangeMixが階層マージを利用して作成されたモデル
 
 * 導入方法
 1111のextentions(拡張機能)-URLからインストールで以下のURLを入れてインストール
@@ -23,6 +27,8 @@ https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
 +各層に対するマージ比率を各種インジゲーターで調整、又は右上のPreset Weightedより選択
 +Output Model Nameに出力するモデル名を入力
 +Run Margeボタンで実行
+
+より効率的に多数の階層マージと結果出力をまわしたいときは、[[Merge Numaエクステンション>Extensions_URL#content_3_10]]を使用するとよい。
 
 * 出力サンプル・設定等
 **AnythingV3とインスタモデルのマージ
@@ -185,7 +191,7 @@ base_alphaは常に1
 
 **116スレ652設定例
 |モデルA|モデルB|Weight values|base_alpha|備考|
-|ACertainThing+ (NAI NSFW - NAI SFW))+gape60|instaとf222混ぜたやつ|0.2,0.3,0.2,0.2,0.3,0.3,0.2,0.3,0.3,0.1,0.1,0.1,0,0.25,0.25,0.25,0.1,0.1,0.1,0.1,0.1,0.25,0.25,0.1,0.1||モデルマージ比率、base alphaは不明|
+|ACertainThing+ (NAI NSFW - NAI SFW))+gape60|cafe-insta+f222_f222|0.2,0.3,0.2,0.2,0.3,0.3,0.2,0.3,0.3,0.1,0.1,0.1,0,0.25,0.25,0.25,0.1,0.1,0.1,0.1,0.1,0.25,0.25,0.1,0.1|0|モデルマージ比率は不明|
 =|BOX|
 652今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6a11-CLTW)2022/12/23(金) 03:24:07.94ID:PF9X6rgq0
 一旦マージは止めや言うたが気を取り直してここの検証を参考にチャレンジしてみたで
@@ -252,6 +258,25 @@ Negative promptは余計なもの入れないで
 (worst quality:1.4), (low quality:1.4)
 くらいにしておいた方がワイは安定した
 ||=
+
+**117スレ73設定例
+|モデルA|モデルB|Weight values|base_alpha|備考|
+|HentaiDiffusion17(HD-17)|NAI NSFW|0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5|0|※書き込み内容からの推定|
+|↑でマージしたもの|instagram50000+(f222-SD1.5):1.0|1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1|0|negative promptはクソ長いHD製のを使用|
+=|BOX|
+73今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 5155-aH43)2022/12/24(土) 00:17:17.80ID:6faiCFti0
+https://imgur.com/a/dJdPdoh
+無理やり感あるが安定してきた
+modelA:HD17:0.5+N〇I:0.5(M00=0,ba=0),modelB:instagram50000+(f222-SD1.5):1.0
+Weight values:1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1
+(ba=0)(negative promptはクソ長いHD製のを使用)
+５枚出してこんな感じHDはウイルスの噂あるので注意
+rtx4090はいいぞ
+||=
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SdFY_bzAEl.png,1000,1000)
+
+[END]
 
 *Checkpoint Merger(通常のマージ)でマージすると色が薄くなる問題、Merge Block Weighted(階層マージ)による解決法
 =|BOX|

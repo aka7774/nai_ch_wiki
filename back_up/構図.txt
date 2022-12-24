@@ -22,6 +22,7 @@
 * 単語集
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|triptych|三連祭壇画||https://image02.seesaawiki.jp/n/h/nai_ch/z2JKT7HNyZ.png|
 |letterboxed, pillarboxed|画像の下部と上部にバーが表示されます。映画の黒帯。~~pillarboxedで左右に帯ができます|||
 |border, または「色名 border」&#40;black border など)|4つの辺すべてに単純な単色の余白ができます。~~outside borderでキャラなどが枠に重なるようにはみ出して描かれます||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cMY8HOk4rE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cMY8HOk4rE.png]]|
 |wheelchair|車椅子||https://image01.seesaawiki.jp/n/h/nai_ch/dhnXw2Y1eF.png|
