@@ -57,6 +57,13 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX A4000|16GB|Ryzen 7 3700X|24.32秒|23.57|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|Batch Count 2、Batch Size 5|
+|RTX A4000|16GB|Ryzen 7 3700X|29.31秒|28.49|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|下のGTX1080から載せ替え　A4000はRTX3070Tiのダウンクロック版|
+|RTX 4090|24GB|Core i9-13900K|9秒|7.83|xformers opt-channelslast|Batch Count 2、Batch Size 5|
+|RTX 4090|24GB|Core i9-13900K|9秒|8.18|xformers opt-channelslast|Batch Count 5、Batch Size 2|
+|RTX 4090|24GB|Ryzen 9 7950X|10秒|9.33|xformers opt-channelslast|Batch Count 2、Batch Size 5　並列処理サイズを大きくしてもあまり意味がない？|
+|RTX 4090|24GB|Ryzen 9 7950X|10秒|9.58|xformers opt-channelslast|Batch Count 5、Batch Size 2|
+|RTX 4090|24GB|Ryzen 9 7950X|12秒|11.81|xformers opt-channelslast||
 |RTX 4090|24GB|Core i9-13900K|11秒|9.41|xformers opt-channelslast||
 |RTX 4080|16GB|Core i9-13900KF|13秒75|13.23|xformers opt-channelslast|Windows10 Batch count10 Batch size1 メモリはDDR5|
 |RTX3060|12GB|Core i7-12700K|38秒|37.73|--xformers --opt-channelslast|Windows10・メモリ32GB WSL2 Ubuntu22.04 ※同環境Windowsでは43秒なので11.6%速い、opt-channelslast無しだと41秒・40.53s|

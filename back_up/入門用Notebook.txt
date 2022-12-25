@@ -1,20 +1,39 @@
-[[ローカルの学習入門]]
+- [[ローカルをクラウドで]]
+- [[ローカルの学習入門]]
 
-最初に Rumtime - Change runtime type で GPU を選ぶ
+#contents
+
+* 初心者向け手順
+
++ Googleアカウントを用意する(普段使いとは分けるのがおすすめ)
++ 次のページを読んで基礎を理解する
+++ https://www.python.jp/train/experience/colab.html
+++ https://www.python.jp/train/experience/exec-python1.html
++ 「1+1」のかわりに以下の黄色い枠内の内容をコピペして実行
+
+** 注意
+
+*** Notebookを新規作成できたら、最初に Rumtime - Change runtime type で GPU を選ぶ
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t.jpg]]
 
-いくつかのExtensionがインストールされる
+*** このNotebookではいくつかのExtensionが自動インストールされる
 
 - 学習関連とマージ関連は重たいのでチェックボックスで入れるかどうか選べる
 
-モデルを増やしたい時はFilerでダウンロードすることも出来る
+*** モデルを増やしたい時はFilerでダウンロードすることも出来る
+
+ダウンロードしたいモデルのURLを用意しましょう(自己責任で)
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BpmoNSigEj-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BpmoNSigEj.png]]
 
-Google Driveのマウントはしなくても動かせるのでお好みで
+*** Google Driveのマウントはしなくても動かせるのでお好みで
 
-----
+- マウントしないと全部消えるので後腐れが無い
+- マウントするとデータの保存が楽になる
+
+* 入門用Notebook
+
 =|BOX|
 #@markdown 実行は自己責任で。
 
@@ -155,7 +174,11 @@ if use_drive:
 # --enable-insecure-extension-access
 
 ||=
-----
+
+** 更新について
+
+需要ありそうな変更は手が空いたらするけど、個別のトラブルには対応できないので、
+動かなかったり、機能に不満があったら、いろんな人のNotebookを探しに行くと良いでしょう。
 
 ** 更新履歴
 

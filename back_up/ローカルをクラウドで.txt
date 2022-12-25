@@ -29,9 +29,10 @@ Stable diffusion webui (automatic1111)をColabなどのクラウドGPUで動か�
 
 - https://colab.research.google.com/?hl=ja
 
+無料版で使える [[入門用Notebook]] があるので試してみてください。
+
 Pythonのバージョンは3.8だが、3.10まで上げることができる。
 xformersをコンパイル無しで動かせるcondaがおすすめ。
-[[入門用Notebook]]
 
 RAMが少ないので、でかいモデルのマージでエラーになるらしい。
 (メモリさえ積んであればローカルでやれる)
@@ -122,3 +123,4 @@ upload_file(path_or_fileobj="/tmp/hoge.ckpt", path_in_repo="huga/hoge.ckpt", rep
 - runpod: 最初のころ少し話題になった安価なクラウドGPUサイト。有料。値上げした?
 - vast.ai: 個人のGPU/Storageを貸し借りできる。他の同等のサービスと比較して安価。
 - AWSとかAzureとか: 値段が凄く高くなるので非推奨。
+

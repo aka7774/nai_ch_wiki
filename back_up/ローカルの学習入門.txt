@@ -79,10 +79,6 @@ Commits見ると8日にはもう取り入れてるぞ
 
 - Colab [[入門用Notebook]]
 
-+ https://www.python.jp/train/experience/colab.html
-+ https://www.python.jp/train/experience/exec-python1.html
-+ 「1+1」のかわりに[[入門用Notebook]]の内容をコピペして実行
-
 無料ColabだとNAIはなぜか動かなかった。アップデートで直った可能性はある。(後述)
 K80になったことは無いけどT4が引けてるか一応確認するといいかも。
 
@@ -486,6 +482,7 @@ Seed: 3506376363
 
 挑戦者求む
 [END]
+
 
 
 

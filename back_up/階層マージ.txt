@@ -278,6 +278,22 @@ rtx4090はいいぞ
 
 [END]
 
+**119スレ447設定例(写実系モデルに2次元タグを解釈させる)
+|モデルA|モデルB|Weight values|base_alpha|備考|
+|Cafe Unofficial Instagram TEST Model[50b987ae]|Waifu Diffusion v1.3|0.5|-|層別ではなく通常のマージ|
+|↑でマージしたもの|NAI NSFW|1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0|0||
+
+Instaモデル、WDモデルともに最新版ではないことに注意。
+最新版を使ってもよいが、リアルになりすぎたり(要するにかわいくない)、
+2次元系タグを入れると急にリアルさが減ったりと扱いづらい。
+旧版を使っていてもrealisticを盛ればだいぶリアルにできるので旧版がおすすめ。
+
+[+]
+味付け程度のrealisticの例
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aR03lZGCfo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aR03lZGCfo.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Bvnds1dDoG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Bvnds1dDoG.png]]
+realisticを盛った例
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ehi5d3CGGC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ehi5d3CGGC.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/u4NrKuK2oA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/u4NrKuK2oA.png]]
+[END]
 *Checkpoint Merger(通常のマージ)でマージすると色が薄くなる問題、Merge Block Weighted(階層マージ)による解決法
 =|BOX|
 559今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ea88-e5AJ)2022/12/22(木) 22:37:07.48ID:eV+I6f+P0
@@ -312,3 +328,4 @@ safetensors 37.87
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/kmGxXh5SO1.jpg,1000,693)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/16_L3pnRTF.jpg,298,1000)
 [END]
+

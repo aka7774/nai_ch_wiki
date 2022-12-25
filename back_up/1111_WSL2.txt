@@ -233,6 +233,13 @@ sp.Popen(["xdg-open", path])
 sp.Popen(["wsl-open", path])
 ||=
 
+書き換え後に1111がアップデートしてgit pullでエラーが出る場合、チェックアウトしてください
+[[1111のソースを書き換えたらpullできなくなった時>>ローカルのgit#content_7]]を参照
+=|BOX|
+git checkout modules/ui.py
+||=
+git pull 後に再度書き換えて下さい
+
 ※判らない場合は手を付けないでください
 [END]
 
