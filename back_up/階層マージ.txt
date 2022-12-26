@@ -8,6 +8,8 @@ U-Netは構造がその名の通りU字型しており、浅い層が細かい�
 簡単に言うと、3D調(リアル風)を保ったままアニメ風のイラスト作成、などが出来る
 詳しくはリンク参照
 
+''※2022/12/25現在 merge-block-weighted-gui拡張機能のアップデートにより、より詳細なマージ比率を指定できるモード(MBW Each)が追加されていますが、このページに記載している比率数値は特段の表記がない限り従来モード(MBW)用です。''
+
 * リンク
 -[[kohya_ss, Stable DiffusionのモデルをU-Netの深さに応じて比率を変えてマージする｜Kohya S.｜note>>https://note.com/kohya_ss/n/n9a485a066d5b]]
 -[[実験レポート Model Block Merge で、U-Net の各レイヤーの影響を調べる　1>>https://note.com/bbcmc/n/n2d4765b4bd47]]
@@ -137,7 +139,7 @@ Layer18が顔を大分リアルにするからここが顔層なんやろな
 -base alpha含め全部のパラメータは0がmodelAを、1がmodelBを指してる
 
 **114スレ990(115スレ269)設定例
-|モデルA|モデルB|Weight values|base_alpha|備考|
+|モデルA|モデルB|Weight values(MBW)|base_alpha|備考|
 |NAI:0.6+AnythingV3.0:0.4|instagram50000+(f222-SD1.5):1.0|1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1|1|114スレ990(115スレ269)|
 
 =|BOX|
@@ -156,7 +158,7 @@ Layer18が顔を大分リアルにするからここが顔層なんやろな
 [END]
 
 **116スレ43設定例
-|モデルA|モデルB|Weight values|base_alpha|備考|
+|モデルA|モデルB|Weight values(MBW)|base_alpha|備考|
 |ACertainThing+ (NAI NSFW - NAI SFW))+gape60|robotdiffusion|1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0||IN00~05のみ1|
 |ACertainThing+ (NAI NSFW - NAI SFW))+gape60|robotdiffusion|0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0||IN06~11のみ1|
 |ACertainThing+ (NAI NSFW - NAI SFW))+gape60|robotdiffusion|0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1||OUT06~11のみ1|
@@ -176,7 +178,7 @@ Layer18が顔を大分リアルにするからここが顔層なんやろな
 [END]
 
 **116スレ649設定例
-|モデルA|モデルB|Weight values|base_alpha|備考|
+|モデルA|モデルB|Weight values(MBW)|base_alpha|備考|
 |ElysiumAnimeV3|ElysiumV1|1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0|1||
 |↑の合成品|Gape60|0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25|1||
 =|BOX|
@@ -190,7 +192,7 @@ base_alphaは常に1
 ||=
 
 **116スレ652設定例
-|モデルA|モデルB|Weight values|base_alpha|備考|
+|モデルA|モデルB|Weight values(MBW)|base_alpha|備考|
 |ACertainThing+ (NAI NSFW - NAI SFW))+gape60|cafe-insta+f222_f222|0.2,0.3,0.2,0.2,0.3,0.3,0.2,0.3,0.3,0.1,0.1,0.1,0,0.25,0.25,0.25,0.1,0.1,0.1,0.1,0.1,0.25,0.25,0.1,0.1|0|モデルマージ比率は不明|
 =|BOX|
 652今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6a11-CLTW)2022/12/23(金) 03:24:07.94ID:PF9X6rgq0
@@ -212,7 +214,7 @@ ACertainThing+ (NAI NSFW - NAI SFW))+gape60ベースにinstaとf222混ぜたや�
 ||=
 
 **116スレ741設定例
-|モデルA|モデルB|Weight values|base_alpha|備考|
+|モデルA|モデルB|Weight values(MBW)|base_alpha|備考|
 |AnyThing-V3.0[6569e224]|gape60-fp16[25396b85]|1,1,1,1,1,1,1,1,1,1,1,1,0.5,0,0,0,0,0,0,0,0,0,0,0,0|1||
 =|BOX|
 741今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-PSnz)2022/12/23(金) 14:14:06.93ID:sq9ELIgG0>
@@ -229,7 +231,7 @@ Any3.0とgape60をINを全部１、OUTを全部0にしただけの雑マージ�
 [END]
 
 **116スレ754設定例
-|モデルA|モデルB|Weight values|base_alpha|備考|
+|モデルA|モデルB|Weight values(MBW)|base_alpha|備考|
 |BloodOrangeMix|instagram50000+(f222-SD1.5):1.0|1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1|0|114スレ990(115スレ269)設定例と同数値設定、モデルAとbase_alphaが違う|
 =|BOX|
 754今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ af20-PniU)2022/12/23(金) 15:14:32.11ID:gQ/lkNW20
@@ -260,7 +262,7 @@ Negative promptは余計なもの入れないで
 ||=
 
 **117スレ73設定例
-|モデルA|モデルB|Weight values|base_alpha|備考|
+|モデルA|モデルB|Weight values(MBW)|base_alpha|備考|
 |HentaiDiffusion17(HD-17)|NAI NSFW|0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5|0|※書き込み内容からの推定|
 |↑でマージしたもの|instagram50000+(f222-SD1.5):1.0|1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1|0|negative promptはクソ長いHD製のを使用|
 =|BOX|
@@ -279,7 +281,7 @@ rtx4090はいいぞ
 [END]
 
 **119スレ447設定例(写実系モデルに2次元タグを解釈させる)
-|モデルA|モデルB|Weight values|base_alpha|備考|
+|モデルA|モデルB|Weight values(MBW)|base_alpha|備考|
 |Cafe Unofficial Instagram TEST Model[50b987ae]|Waifu Diffusion v1.3|0.5|-|層別ではなく通常のマージ|
 |↑でマージしたもの|NAI NSFW|1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0|0||
 
@@ -290,9 +292,9 @@ Instaモデル、WDモデルともに最新版ではないことに注意。
 
 [+]
 味付け程度のrealisticの例
-[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aR03lZGCfo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aR03lZGCfo.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Bvnds1dDoG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Bvnds1dDoG.png]]
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aR03lZGCfo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aR03lZGCfo.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Bvnds1dDoG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Bvnds1dDoG.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/igNBEmqc8C-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/igNBEmqc8C.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/L0IEvbgUlf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/L0IEvbgUlf.png]]
 realisticを盛った例
-[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ehi5d3CGGC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ehi5d3CGGC.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/u4NrKuK2oA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/u4NrKuK2oA.png]]
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ehi5d3CGGC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ehi5d3CGGC.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/u4NrKuK2oA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/u4NrKuK2oA.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yv6iaW0KFw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/yv6iaW0KFw.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/J0SlqmE12A-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/J0SlqmE12A.png]]
 [END]
 *Checkpoint Merger(通常のマージ)でマージすると色が薄くなる問題、Merge Block Weighted(階層マージ)による解決法
 =|BOX|
@@ -328,4 +330,6 @@ safetensors 37.87
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/kmGxXh5SO1.jpg,1000,693)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/16_L3pnRTF.jpg,298,1000)
 [END]
+
+
 

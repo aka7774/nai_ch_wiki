@@ -51,6 +51,25 @@ PCを放置するタイミングで仕掛けるとバリエーション豊富な
 - PatreonでのUmi AI: The Ultimate Character Creator | Umi, the Cryoverse AI - https://www.patreon.com/posts/umi-ai-ultimate-73560593
 - ガチャガチャ感覚で美麗キャラクター画像を生成しまくれる拡張機能「UnivAICharGen」の使い方まとめ - GIGAZINE - https://gigazine.net/news/20221115-umi-ai-stable-diffusion/
 
+** Push to &#129303; Hugging Face
+
+Hugging Faceアップローダー
+
+- https://github.com/camenduru/stable-diffusion-webui-huggingface
+- 容量無制限? でモデルを上げまくれる
+- モデルは公開される
+- pip install huggingface-hub は手動っぽい
+
+*** install.py
+
+黄色い枠の中をコピペした install.py を extensions/stable-diffusion-webui-huggingface/ の中に入れるといいかも。
+
+=|BOX|
+import launch
+
+if not launch.is_installed("huggingface-hub"):
+    launch.run_pip("install huggingface-hub", desc='Installing huggingface-hub')
+||=
 ** About ★
 
 システム情報
@@ -130,12 +149,17 @@ Infotextsに内蔵されている。
 型抜き
 
 - https://github.com/aka7774/sd_katanuki
-- 画像の背景を透過したり白背景にしたりする
+- 画像の背景を透過したり白背景にしたりマスク画像を出力する
 -- anime-segmentation を 1111 で使えるようにしたやつ
-- %%ちょっと不安定かも?%%
--- %%inputとoutputを別のディレクトリにすればマシかも%%
-- スレで3人くらい動いたって言ってたのできっと大丈夫
 - 画像のファイル名に日本語使うとダメらしい
+
+** ABG_extension
+
+Katanukiの生成画像版みたいなやつ。
+
+- https://github.com/KutsuyaYuki/ABG_extension
+- Scriptで選択して使う
+- imgとmaskを追加で保存してくれる
 
 ** Merge Numa ★
 
@@ -178,4 +202,6 @@ X/Y plotっぽい画像を生成する
 
 - https://github.com/hunyaramoke/Generate-TransparentIMG
 - 透明正則画像の作成支援
+
+
 
