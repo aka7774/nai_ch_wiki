@@ -59,6 +59,7 @@ Hugging Faceアップローダー
 - 容量無制限? でモデルを上げまくれる
 - モデルは公開される
 - pip install huggingface-hub は手動っぽい
+-- huggingface-hub>=0.11.1
 
 *** install.py
 
@@ -202,6 +203,7 @@ X/Y plotっぽい画像を生成する
 
 - https://github.com/hunyaramoke/Generate-TransparentIMG
 - 透明正則画像の作成支援
+
 
 
 

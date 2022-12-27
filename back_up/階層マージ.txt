@@ -16,6 +16,16 @@ U-Netは構造がその名の通りU字型しており、浅い層が細かい�
 
 -[[OrangeMixs>>https://huggingface.co/WarriorMama777/OrangeMixs]] AbyssOrangeMixが階層マージを利用して作成されたモデル
 
+** AbyssOrangeMix
+
+118スレ389
+=||
+脱がせたくないときはAbyssじゃなくAbyss_baseを使うんや
+
+baseにNAINSFWのエロを足したのがNight
+それに更にgapeを足したのが無印や
+(halfはgaoeを弱めた版) 
+||=
 * 導入方法
 1111のextentions(拡張機能)-URLからインストールで以下のURLを入れてインストール
 =|BOX|
@@ -330,6 +340,8 @@ safetensors 37.87
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/kmGxXh5SO1.jpg,1000,693)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/16_L3pnRTF.jpg,298,1000)
 [END]
+
+
 
 
 

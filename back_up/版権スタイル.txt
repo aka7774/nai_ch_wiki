@@ -2,6 +2,13 @@
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|作品名|備考|サンプル|
+|sword art online,official art,|ソードアート・オンライン||https://image02.seesaawiki.jp/n/h/nai_ch/kXv6SUMiiU.png|
+|idolmaster cinderella girls,official art,,|アイドルマスターシンデレラガールズ|キャラ要素（初音ミク）が消えがちになるが、official artがほぼ必須。|https://image02.seesaawiki.jp/n/h/nai_ch/sqd3_qQTju.png|
+|idolmaster million live!,{highres official art,},|アイドルマスター（アイドルマスター ミリオンライブ!）|official art,を付けると絵柄がそれっぽくなるが髪の毛がほぼ溶ける。　[[idolmaster shiny colorsを1〜2段強調したほうが髪が溶けにくいアイマス絵が出来るが背景が星関連になる。 >https://majinai.art/ja/i/ud6U-qG]]|https://image01.seesaawiki.jp/n/h/nai_ch/SvRBpLjMNK.png|
+|neon genesis evangelion,1girl,|新世紀エヴァンゲリオン|成功率やや低め、プロンプト単体だとneonが強くなり人が生成されない。|https://image02.seesaawiki.jp/n/h/nai_ch/WuSacT_zzg.png|
+|digimon|デジタルモンスター(デジモン)|絵柄が変わったから掲載した程度です。精査願います。|https://image01.seesaawiki.jp/n/h/nai_ch/c6HxNKb3XH.png|
+|bishoujo senshi sailor moon|美少女戦士セーラームーン|衣装は大体セーラー戦士のものになる。"sailormoonchallenge"の影響か上半身だけが出やすく、[[プロンプトのみでsquareにするとまんまの画像が生成されることもある。>https://majinai.art/ja/i/gxGAI1p]]|https://image02.seesaawiki.jp/n/h/nai_ch/xICzi_9um4.png|
+|yuyushiki|ゆゆ式|アニメ画風が一番出やすい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/isMMU3lwH6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/isMMU3lwH6.png]]|
 |kemono friends|けものフレンズ|強調は行っても１段階くらいに抑えること。画風が安定しないがそれっぽい顔が出てくる。当然ながら、animal earはUCに入れない限り確定でついてくる。cowboy shot等の構図に関わるタグはほぼ必須、場合によっては強調した方がいい。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6EjQMxCeWP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/6EjQMxCeWP.png]]|
 |{{urara meirochou}}|うらら迷路帖|強調推奨。アニメ風も原作風もでる。頭にデカリボンがほぼ確定で生成される。ロリ化、黒髪化も高確率で起こる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_MjTebyo2K-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_MjTebyo2K.png]]|
 |gabriel dropout|ガヴリールドロップアウト|強調しないと作風はバラバラになるが、強調するとミクですら要素が消滅する。1〜2段階くらいがおすすめ。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vn9ce9eEm7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Vn9ce9eEm7.png]]|
@@ -10,10 +17,9 @@
 |eromanga sensei|エロマンガ先生|強調しすぎると（4段階以上）ミクですら要素が消えるため注意。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Hywaaqlcb4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Hywaaqlcb4.png]]|
 |1girl, {{{{machikado mazoku}}}},|まちカドまぞく|Add Quality Tagsは非推奨。左のプロンプトでサンプル画像の画風になるのは1〜2割程度。高確率でまちカドまぞくではない別の作品が混ざってくる（作品名不明）。また、巨乳、茶髪、ピンク髪、八重歯、ドヤ顔の要素が反映されて出てくることも多々ある。こちらもhatsune mikuまで入れるとあまり反映されない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/azlDkdoyj2-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/azlDkdoyj2.png]]|
 |{{{yama no susume}}}|ヤマノススメ|原作風。強調したほうが出やすい。デフォルメ絵や背景のみの絵が生成されることが多々あるので、cowboy shot等の構図に関わるプロンプトの併用がおすすめ。まれにゆるキャン△とごっちゃになる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gk4ui2ZKVj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gk4ui2ZKVj.png]]|
-|hitoribocchi no marumaru seikatsu|一人ぼっちの○○生活|hatsune miku指定でも時々ミク要素が消えるレベルで強い。強調すれば、bocchiだけでも出てくるし、全く違う別作品であるbocchi the rock!指定でも出てくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz.png]]|
+|hitoribocchi no marumaru seikatsu|ひとりぼっちの○○生活|hatsune miku指定でも時々ミク要素が消えるレベルで強い。強調すれば、bocchiだけでも出てくるし、全く違う別作品であるbocchi the rock!指定でも出てくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz.png]]|
 |{{{flower knight girl}}}|フラワーナイトガール(花騎士)|強調とUCに{{{flower}}}指定はほぼ必須。全体的にロリ化＋髪の白色化が起こる。サンプル画像はmiku指定で、こちらもhatsune mikuまで入れるとほぼ混ざらなくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DAnakeXF6a-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/DAnakeXF6a.png]]|
 |{{{puzzle & dragons}}}, official art,|パズル&ドラゴンズ(パズドラ)|強調＋official artを指定しないと出にくい。全体的に衣装や髪が盛られる。たまに、たまドラっぽい何かが付いてきたり、ドラゴンになったりする。puzzle piece, jigsaw puzzle, をネガティブに入れないとジグソーパズルをしている構図が生成されがち。なお、サンプル画像はmiku指定で生成したものだが、hastune miku指定にするとあまり服装と髪に干渉しなくなった。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5DUFrAV3zR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5DUFrAV3zR.png]]|
-||ダンガンロンパ|||
 |granblue fantasy, hatsunemiku, official art,|グランブルーファンタジー|official artを入れると安定しやすい　Add Quality Tagsのチェック外したほうがいいかもしれない|https://image02.seesaawiki.jp/n/h/nai_ch/sfuQWyVlPG.png|
 |ikkitousen,1girl,hatsune miku,official art,|一騎当千|official artを入れると安定しやすい。ハイスクールDxDと似たような絵柄がでやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/gGT915XrGX.png|
 |pripara,big eyes,hatsune miku,1girl,|プリパラ|official artを入れると安定しやすい。絵柄が似ない場合は衣装がそれっぽくなる|https://image01.seesaawiki.jp/n/h/nai_ch/wfIvLgdIKZ.png|

@@ -88,9 +88,9 @@ magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 
 **5：リネーム
 ダウンロードしたモデルを次のようにリネームします
-animevae.pt >> nai.vae.pt
-config.yaml >> nai.yaml
-model.ckpt>> nai.ckpt
+stableckpt\animevae.pt >> nai.vae.pt
+stableckpt\animefull-final-pruned\config.yaml >> nai.yaml
+stableckpt\animefull-final-pruned\model.ckpt >> nai.ckpt
 
 2022/11/22追記
 いつごろからかvaeの読み込ませ方が変更になっている。
@@ -310,6 +310,7 @@ COMMANDLINE_ARGS=--precision full --no-half --no-half-vae --medvram
 + リソースのダウンロードとかは省いて導入ガイドにそってWebUIを再インストールする。~~ ※フォルダは「StableDiffusion_WebUI_v2」とか名前つけて新しく作ってリポジトリをクローンするんやで
 + もとのディレクトリ*に置いてあった.ckptやvae,nai.yamlを同じディレクトリにコピペする ~~*場所：/stable-diffusion-webui/models/Stable-diffusion
 + 完了
+
 
 
 

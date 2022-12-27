@@ -1,5 +1,50 @@
+#contents
+
 * 概要
 Automatic1111の拡張機能以外で動作するローカル用のプラグインやDCCツールもではじめたのでページを作成しました。
+
+* アップローダー
+
+** Huggingface Hub
+
+https://huggingface.co/models
+
+- モデル用なら最強
+- Private設定も出来るけど基本的には公開される(検索対象になる)
+
+** ギガファイル便
+
+https://gigafile.nu/
+
+- 遅いのでモデルには向かない。
+- 日数制限があって消える。
+
+** MEGA
+
+https://mega.io/
+
+- ダウンロード5GB制限がある。
+- 速度はわりといい。
+
+** Civitai
+
+https://civitai.com/
+
+- いろんなモデルがある
+- ダウンロードに会員登録が必要
+
+** kioskloud
+
+https://kioskloud.xyz/
+
+kioskloudがオススメやけど最初が面倒か
+
+** pixeldrain
+
+https://pixeldrain.com/
+
+海外ではこのアップローダーなんかモデル配布で使われてたりするやな
+制限は週に20GBまでだから問題ないだろう 
 
 * 潜在的に危険な.ckptを安全な.safetensorsに変換するColab用Notebook
 手順1. これをダウンロードする https://75.gigafile.nu/0330-c82660f0f62e26714f340e511377b763c

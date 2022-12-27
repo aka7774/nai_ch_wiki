@@ -122,7 +122,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|||||
+|bamboo grove|竹林||https://image01.seesaawiki.jp/n/h/nai_ch/SBSj0pT77a.png|
 |tropical rain forest|熱帯雨林|中央に川が流れ、川岸を密林が覆う景色が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/NGmXDsKpcu.png|
 |jungle|ジャングル|熱帯の密林。大きな葉を持つ下草が描写されることが多い。tropical forestよりそれらしい雰囲気。|https://image02.seesaawiki.jp/n/h/nai_ch/gYG_G2gDpc.png|
 |broadleaf forest|広葉樹林|温帯域の広葉樹の林。|https://image02.seesaawiki.jp/n/h/nai_ch/qLFbn0ZmFC.png|
@@ -186,6 +186,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|St. Basil's Cathedral|聖ワシリイ大聖堂|モスクワの赤の広場に立つロシア正教会の大聖堂。|https://image02.seesaawiki.jp/n/h/nai_ch/hs_nLbRFiF.%20Basil's%20Cathedral,%20s-1099325675.png|
+|Neuschwanstein Castle|ノイシュヴァンシュタイン城|シンデレラ城のモデルにもなった有名なドイツの城。|https://image01.seesaawiki.jp/n/h/nai_ch/D9UlnNYzcr.png|
+|The White House|ホワイトハウス|誰もが知っている米国大統領の官邸兼公邸。「The」を付けないと成功率が下がります。|https://image01.seesaawiki.jp/n/h/nai_ch/90EaNMF90B.png|
+|Opera house (Sydney)|シドニー・オペラハウス|オーストラリアの最大都市（首都ではない）シドニーにある著名なランドマーク。|https://image02.seesaawiki.jp/n/h/nai_ch/4bnZ9zu1TI.png|
 |Houses of Parliament|国会議事堂|英国議会が議事堂として使用する、ウェストミンスター宮殿が描写される。時計塔のBig Benは著名なランドマーク。非常に安定している。|https://image02.seesaawiki.jp/n/h/nai_ch/YKJZvCUhxk.png|
 |Mont Saint Michel|モン・サン＝ミシェル|フランス西海岸にある著名な修道院。|https://image02.seesaawiki.jp/n/h/nai_ch/BFucxiIsh3.png|
 |St. Peter's Basilica|サン・ピエトロ寺院|実際の内装よりシンプル。outsideを追加するとドーム構造の屋根を頂く有名な建物が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/HPuUMuEs5v.%20Peter's%20Basilica,%20s-4125400626.png|
