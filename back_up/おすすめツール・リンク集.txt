@@ -75,6 +75,10 @@ Real-ESRGAN-GUIを使う（おすすめ）Win/Mac対応ソフト
 https://github.com/tsukumijima/Real-ESRGAN-GUI
 webやスマホならwaifu2xを使う
 http://waifu2x.udp.jp/
+Automatic1111 WebUI上のExtras（その他）タブからもアップスケール処理は可能、
+下記リンクから.pthファイルダウンロードして、ローカルのESRGANフォルダに突っ込んで再起動で使える
+ライセンスよーわからん怖いってのならCC0かWTFPLのやつにしとけばライセンス的には安全、ファイルが安全かとかどのフィルタがどんな効果かは知らんけど
+https://upscale.wiki/wiki/Model_Database
 
 ** プロンプト入力支援ブラウザ拡張
 AIの画像生成でpromptの編集を支援するためのツール
@@ -341,4 +345,5 @@ https://github.com/animerl/novelai-2-local-prompt
 インストール方法はダウンロードした「nai2local.js」を「javascript」フォルダの中に入れるだけ
 |&ref(https://i.imgur.com/gmLQ6xG.png,300)|
 [END]
+
 

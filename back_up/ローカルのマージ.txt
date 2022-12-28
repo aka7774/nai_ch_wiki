@@ -7,7 +7,7 @@
 
 - モデルは以下を参照
 -- [[https://rentry.org/sdmodels]] 2022/12現在、更新止まってる？
--- [[https://economylife.net/ai-models-list/#toc8]] 日本で纏めてくれてるページ
+-- [[https://economylife.net/ai-models-list/]] 日本で纏めてくれてるページ
 - カクテル表
 -- STABLE DIFFUSION MIXING EMPORIUM - [[https://rentry.co/LFTBL]]
 -- /hdg/ Stable Diffusion Models Cookbook [[https://rentry.org/hdgrecipes]]
@@ -136,6 +136,55 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/725
 > 何もしないでやると基本的に日本人出てくるから、~~
 > blonde hairにしたり、ネガティブにjapanese入れたら外人さん出てくる~~
 &ref(https://i.imgur.com/ocKzRTK.png,200)
+
+***117スレ398 AbyssOrangeMix
+レシピ：huggingfaceを参照
+&#128317;https://huggingface.co/WarriorMama777/OrangeMixs
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/398
+>398今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8f7b-64l5)2022/12/25(日) 00:34:06.40ID:rF62obFG0~~
+https://huggingface.co/WarriorMama777/OrangeMixs
+>階層マージを取り入れたモデルをアップしたで。名前は途中のレスから引用させてもらってAbyssOrangeMixにした~~
+>今の段階でのNVA部の成果みたいな感じで使ってもらってさらなる叡智を目指そう~~
+
+***117スレ459 etr_odyssey 
+https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/459
+>459今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cd62-s0Sd)2022/12/25(日) 06:46:56.73ID:ZMY24xyo0~~
+>ttps://mega.nz/file/GVRTQJKI#Y5Bn826c_H6O4o9r9GT474Sa_AEhuqfX5Wvw5fGrDC0~~
+>クリスマスやし今日いっぱい枕元にこれ置いとくわ絵柄DB2つを階層マージで混ぜて軽めのDBとNAIで更に階層マージして少しだけ過学習抜きしたモデルや~~
+>スパゲッティコードみたいになっとるから呼び出し方は適宜変えてくれ・・・普通に使うとおっさんとかは出ん~~
+>あと塗りとかが気に食わん場合は付属のHN(呼び出しプロンプト無し)を薄っすらかけると補強できるかもしれんな~~
+>拡大する場合は過学習しとる関係上ハイレゾはほぼ必須や~~
+&ref(https://i.imgur.com/OETKVK1.png,200)
+&ref(https://i.imgur.com/OkujSyk.png,200)
+>ほな・・・~~
+
+***117スレ472 abyss_7th_layer
+https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/472
+>472今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 911e-s0Sd)2022/12/25(日) 08:34:16.55ID:WNKzo2la0~~
+>名付けてabyss_7th_layerモデル~~
+>ttps://63.gigafile.nu/0101-g464cd14712603de668ae14ff053322f4~~
+>ちなi2i以外のタイミングだとほとんどアビスオレンジと変わらん~~
+>あとインスタを優先した副次効果でほんの少しだけマジで気のせいレベルで指が破綻しづらい~~
+>t2iで一回出したあとi2iでメチャクチャ詰めた勝負をする奴用や~~
+
+***117スレ516 El-Diablo
+https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/516
+
+***117スレ705 bw-merge-bw-merge-ACertainModel-half-bw-merge-Elysium_V1-f222-0-0-bw-merge-EimisAnimeDiffusion_1-0v-gape60-fp16-0-1.ckpt
+https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/705
+
+***117スレ884 abyss_7th_layerG1
+https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/884
+
+***118スレ584 abyss_7th_anime
+https://fate.5ch.net/test/read.cgi/liveuranus/1672034918/584
+
+***119スレ375,417 cinnamon_mix
+https://fate.5ch.net/test/read.cgi/liveuranus/1672160740/375
+https://fate.5ch.net/test/read.cgi/liveuranus/1672160740/417
+
+
 *叡智/Tips 一覧
 
 **Tips
@@ -256,6 +305,7 @@ Weighted sumとAdd differenceって何をしてるんですかね
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/2L3z8nLa4x.png,600)
 ----
+
 
 
 

@@ -109,7 +109,7 @@
 **輝針城
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
-|||東方Project|わかさぎ姫|||
+|1girl, wakasagihime_(touhou), jewelry blue eyes ,{{blue}} wavy short_hair, fin_ear, green_kimono, purple sash, frills, long_sleeves, mermaid, monster_girl, full body, underwater||東方Project|わかさぎ姫|耳のヒレがリボン飾りになったりする事が多い。~~魚体部分が異形化しやすい（人魚キャラを生成するとありがちな現象）。~~また、着物が魚体へと変化していくような感じで、一体化して描写される事が多い。|https://image02.seesaawiki.jp/n/h/nai_ch/E0G3JsGNvP.png|
 |hair ribbon,{{blue ribbon}},sekibanki,{red capelet},black suit,red skirt,red hair,red eyes, short hair,1girl,|toyosatomimi no miko|東方Project|赤蛮奇|seed:2986353692|https://image02.seesaawiki.jp/n/h/nai_ch/jtIT8WeDDy.png|
 |1girl, imaizumi kagerou_(touhou), jewelry red eyes, brown long hair, wolf ears, long sleeve white dress, red skirt||東方Project|今泉影狼|1枚目seed:353568317~~橙や空の要素がたまに混じる（胸のブローチを空の八咫烏アイとして認識される？）。~~花札スカートは服装・色指定無し方が逆に出やすい。ただし、全体的に破綻しやすくもなる。~~このままの構文だとドレスまで赤くなる事が多いが、服の配色を気にしなければ、成功率自体は高め。|[[https://image01.seesaawiki.jp/n/h/nai_ch/D9vmQRTpgs.png]][[https://image01.seesaawiki.jp/n/h/nai_ch/MedlgZw8u5.png]]|
 |||東方Project|九十九弁々|||
@@ -189,7 +189,7 @@
 |||東方Project|綿月依姫|||
 |||東方Project|綿月豊姫|||
 |||東方Project|レイセン2号|||
-|1girl,{{ibaraki_kasen_(touhou)}}, tabard, pink_rose, pink_eyes, pink_hair, short_hair, {{two chignons on the head}}, {{{whole right arm bandage}}}, ||東方Project|茨木華扇|胸元の薔薇飾りが模様になったり、髪飾りになったりする事多し。~~また、シニヨン（頭の白い饅頭）が紫のZUN帽や、メイドのヘッドドレスになる事も多し。~~包帯を右腕のみに指定しても、左腕や脚等に巻いてしまう事も多い。|https://image01.seesaawiki.jp/n/h/nai_ch/VujN8q60Bh.png|
+|1girl, {{ibaraki_kasen_(touhou)}}, red_tabard, green_skirt, pink rose, jewelry pink_eyes, pink_hair, short_hair, two chignons on the head, double bun, {{{whole right arm bandage}}}, ||東方Project|茨木華扇|胸元の薔薇飾りが模様になったり、髪飾りになったりする事多し。~~そのままだとシニヨン（頭の白い饅頭）が紫のZUN帽や、メイドのヘッドドレスになる事が多いが、「double bun（お団子頭）」を入れるとシニヨンが生成されやすくなる。~~包帯を右腕のみに指定しても、左腕や脚等に巻いてしまう事も多い。|[[https://image01.seesaawiki.jp/n/h/nai_ch/VujN8q60Bh.png]][[https://image01.seesaawiki.jp/n/h/nai_ch/Ua7F_C4uyH.png]]|
 |1 girl, {{ibaraki_kasen_(touhou)}}, {{{{black tabard}}}}, pink rose, {{{white long skirt}}}, {{{sleeveless}}}, jewelry pink_eyes, red eyeshadow, pink {{{long_hair}}}, floating hair, {{{{two horns in head}}}}, fangs, sharp_teeth, metal {{shackles}}, chain, evil smirk, provocation, femdom,||東方Project|鬼華扇|高難易度~~色指定に強調を入れまくっても、服が元の赤色のままになりやすい。~~袖がそのままだったり、シニヨンも角と一緒に生成される。~~髪が長髪ではなく、短髪のままになる。~~腕の金属枷が生成されない~~といった具合に、元々の「茨木華扇」としての要素が発現しやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/OWgDXo671T.png|
 |||東方Project|稗田阿求|||
 |short orange hair,(green gold kimono:1.4),brown boots,Plaid sleeves,brown eyes,(two hair bells:1.2),two ponytails,(red white chequered sleeve:1.2),loli,stand,touhou,(Motoori Kosuzu:1.5),1girl||東方Project|本居小鈴|実はAIは彼女を知らない，だから服の色合わせは間違えやすい||

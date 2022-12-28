@@ -15,7 +15,28 @@ ChatGPTはOpenAIの開発したチャット形式のAIです。
 
 ** ChatGPTによるプロンプト生成
 
-*** 質問テンプレート(1)
+*** 質問テンプレート(v1.2)
+コメ欄のやつを参考に調整。数値や（）による強調は、ワードごとにやたらと付けられることが多いので除外しました。以下テンプレ
+
+----
+
+プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
+=|(box=textarea)|
+「masterpiece, best quality, ultra-detailed, illustration, 1girl, solo, sitting, an extremcly delicate and beautiful, beautiful detailed sky, eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer, breeze,Fying splashes,Fying petals, wind」
+||=
+です。
+プロンプトには以下の要素が必要です。
+�／綺眠茲簗�絵など描写方法を説明するための単語
+��外見的特徴や装飾物や持ち物の(色や模様も指定)を説明するための単語
+�Ｇ�齢、髪色、髪型、髪の長さ、目の色、目の形、表情、胸の大きさ、服装を説明するための単語
+�で愀覆両楮戮弊睫世鬚垢襪燭瓩涼姥�
+�ゥ檗璽困鯑�からつま先まで指示するための単語もプロントに加えられます。
+プロンプトの文頭には「masterpiece, best quality, ultra-detailed, illustration, 1girl, solo,」を必ず含めてください。回答には「""」や改行は使わず、平文でお願いします。
+プロンプトはdanbooruのタグを使うことができます。これらを踏まえて、以下のテーマに沿ったイラストを生成できるプロンプトを150要素で教えて下さい。
+「」
+
+
+*** 質問テンプレート(v1.1)
 
 プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
 =|(box=textarea)|

@@ -202,8 +202,10 @@ CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打�
 ** プロンプトを真似る
 
 ポジティブプロンプト欄の先頭に「masterpiece, best quality,」をつける(Add Quality Tagsと同じ意味)
-ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name」をつける(UC L+Bと同じ意味)
+ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry」をつける(UC L+Bと同じ意味)
 
+コメントも参考に。
+(たぶんartist nameは結構最初の頃に削除されたか何かで揺れてるんだと思う)
 ** Prompt matrix 
  Prompt matrixは、画像生成の時に入力する文字列(プロンプト)で通常は「,」でキーワードを区切るところを、「|」で区切ることで総組み合わせして画像を生成できる機能です。例えば、通常は「a busy city street in a modern city, illustration ,cinematic lighting(近代都市のせわしない街道、イラスト、映画のような照明)」というプロンプトで画像を生成しますが、Prompt matrixで「a busy city street in a modern city | illustration | cinematic lighting」というように「|」で区切って入力することで、「a busy city street in a modern city」に「illustration」と「cinematic lighting」を組み合わせた画像を生成できます。  ~~　引用：画像生成AI「Stable Diffusion」でプロンプト・呪文やパラメーターを変えるとどういう差が出るか一目でわかる「Prompt matrix」と「X/Y plot」を「Stable Diffusion web UI(AUTOMATIC1111版)」で使う方法まとめ - GIGAZINE - https://gigazine.net/news/20220909-automatic1111-stable-diffusion-webui-prompt-matrix/
 
@@ -212,5 +214,6 @@ CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打�
 ** 各数値の詳細
 
 - Denoise Strength：リファレンスイメージからどの程度離れて画像を生成するか
+
 
 

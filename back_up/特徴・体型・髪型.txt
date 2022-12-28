@@ -115,9 +115,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|double bun~~topknot|お団子頭|シニヨン（中華系の白饅頭っぽい髪飾り）になる事も|https://image02.seesaawiki.jp/n/h/nai_ch/APiTjuLoiV.png|
 |bedhead|寝癖|髪が横に跳ねるようになる|https://image01.seesaawiki.jp/n/h/nai_ch/b9W6KuFZq_.png|
-|cleavage hair|分け目の見える髪型|胸の谷間も一緒に強調されやすい||
-|pompadourhair|リーゼント|||
 |french braid|高い位置から結ぶタイプの編み込み||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AwJztlAvin-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/AwJztlAvin.png]]|
 |braided bun|編み込んだお団子頭||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/c5flCXQQSG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/c5flCXQQSG.png]]|
 |crown braid|編み込みを頭の上に通す|ネガティブにcrown|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Dd8SzpTDTo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Dd8SzpTDTo.png]]|
@@ -136,7 +135,6 @@
 |boston terrier hair|分け目のある黒髪|犬のボストンテリアのように分け目のある黒髪が出る|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/F0MGQNjrnu-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/F0MGQNjrnu.png]]|
 |afro twin tail|アフロツインテール|髪量の多いツインテール|https://image01.seesaawiki.jp/n/h/nai_ch/8waBGnjiLL.png|
 |sidelock|耳の前の毛||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/U1NTbNs_2F-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/U1NTbNs_2F.png]]|
-|Various hairstyles|様々な髪型|髪型がランダムになる||
 |pixie cut|ピクシーカット|側頭部と後頭部が短い髪型~~ショートになる確率が高いがたまに出る|https://image01.seesaawiki.jp/n/h/nai_ch/L8FHZxd5ut.png|
 |low twintails|いわゆるカントリースタイル？|生成頻度は微妙。また、long hairで使用すると~~なぜか何回か束ねる感じになることが多い。~~繰り返し生成が必要。low low twintailsにすると生成頻度は結構上がる。|https://image02.seesaawiki.jp/n/h/nai_ch/kJLEoHf0om.png|
 |blunt bangs|ぱっつん前髪||https://image02.seesaawiki.jp/n/h/nai_ch/nzVNwvlVVw.png|
@@ -152,42 +150,43 @@
 |spiralcurl|渦巻き状のカール||https://image02.seesaawiki.jp/n/h/nai_ch/zJLKTxF8o0.png|
 |drill hair|縦ロール|ドリル状|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kpZSP6DJnz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/kpZSP6DJnz.png]]|
 |hair up|長い後ろ髪を後頭部にまとめ上げる|ポニテなどで後ろの髪の量が増える|https://image01.seesaawiki.jp/n/h/nai_ch/ajn0NT0Oao.png|
-|hair|色や髪型と併用が基本|||
-|straight hair|ストレートヘアー|||
-|shiny hair|艶のかかった髪|||
 |wavy hair|ウェーブがかった髪|ツインテールなどと組み合わせることも可能(右下画像)|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VkxYcsGvYG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/VkxYcsGvYG.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jyPP10b926-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/jyPP10b926.png]]|
-|flowing hair|流れた髪|||
 |hair intakes|エアインテーク|もともとこのタグを入れなくても描写されることがあり、入れても効果を実感しづらい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/umH843krg9-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/umH843krg9.png]]|
-|crossed bangs|前髪がクロスするやつ|||
-|hair between eyes|M字バング|||
 |twintails|ツインテール||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/84G9rOIjlp-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/84G9rOIjlp.png]]|
 |hair over one eye|片目が髪で隠れるやつ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/j21wPAvieV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/j21wPAvieV.png]]|
 |&#91;one eye visible through hair]|片眼が髪から透けて見える|目の見えるメカクレ。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8P2YCDsHh4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/8P2YCDsHh4.png]]|
 |antenna hair|アホ毛|数本出てくることが多い|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wS8OgBsYuh-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wS8OgBsYuh.png]]|
 |ahoge|アホ毛||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RGIBkht2O2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/RGIBkht2O2.png]]|
-|sideburns|もみあげ|横髪が伸びる？ 強調しまくると横髪というより、横顔と耳ともみあげを見せる髪型になる。||
 |sidelocks|横髪。耳の前の髪|強調すると短髪でも横髪は長くなる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/U1NTbNs_2F-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/U1NTbNs_2F.png]]|
-|bob cut|ボブヘア|||
-|long hair|ロングヘアー|||
 |bangs|前髪|おでこにサラッとした感じに前髪がかかる~~(パッツンではない)~~目と目の間に入るのとはまた別|https://image02.seesaawiki.jp/n/h/nai_ch/8OXqIyG92u.png|
 |blunt bangs|前髪パッツン|前髪を真横に切ったような感じになる|https://image01.seesaawiki.jp/n/h/nai_ch/7pAjgYRvfR.png|
 |hime cut~~blunt bangs bob cut|前髪パッツンのロングヘアー|効果が薄め+重ねまくると人物が幼くなる~~blunt bangs+long hairのほうが効きが強いらしい|https://image01.seesaawiki.jp/n/h/nai_ch/k6DhjyJgDy.png|
+|messy hair|ぼさぼさ髪、寝ぐせ|ベッドに寝て乱れてる髪もこれでいける(右下画像)。強調しすぎると顔に謎の汚れが出る|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kaQjSNCr2Q.png)[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/c5ZmqG5yDC-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/c5ZmqG5yDC.png]]|
+|spiked hair|ツンツン頭|短い髪型だけでなくスーパーサイヤ人的な長いツンツンもこれ|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oEZpeGNKgz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oEZpeGNKgz.png]]|
+|twin braids|おさげ, 三つ編み, short hairと組み合わせることも可能||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_uLZUkcrS9-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_uLZUkcrS9.png]]|
+|gradient hair|グラデーションのある髪||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/n1zy_meYob-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/n1zy_meYob.png]]|
+|floating hair|風などにより髪がそよいでいる感じ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ozg9viHn5J-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ozg9viHn5J.png]]|
+|sideburns|もみあげ|横髪が伸びる？ 強調しまくると横髪というより、横顔と耳ともみあげを見せる髪型になる。||
+|hair|色や髪型と併用が基本|||
+|straight hair|ストレートヘアー|||
+|shiny hair|艶のかかった髪|||
+|flowing hair|流れた髪|||
+|crossed bangs|前髪がクロスするやつ|||
+|hair between eyes|M字バング|||
+|cleavage hair|分け目の見える髪型|胸の谷間も一緒に強調されやすい||
+|pompadourhair|リーゼント|||
+|bob cut|ボブヘア|||
+|long hair|ロングヘアー|||
 |short hair with long locks|ショートヘアー + 長い髪の房|||
 |two side up|ツーサイドアップ※ワンサイドになることも|||
 |frizzy hair|くせっ毛|||
 |tired hair|ぼさぼさ髪|強調しすぎると疲れた顔に変化する||
-|messy hair|ぼさぼさ髪、寝ぐせ|ベッドに寝て乱れてる髪もこれでいける(右下画像)。強調しすぎると顔に謎の汚れが出る|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kaQjSNCr2Q.png)[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/c5ZmqG5yDC-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/c5ZmqG5yDC.png]]|
 |disheveled  hair|髪が乱れる。|強調しまくるとぼさぼさ、寝ぐせ||
 |hairy hair (flipped hair)|毛深い。はねっ毛。|強調しまくると物凄いはねっ毛に。ただしnudeと併用するとファーをつけたみたいになったり、ギャランドゥ周辺が毛深くなる。(「flipped」は自ら髪を束ねたり引っ張る動作をする)||
 |shaggy hair|はねっ毛|外はねボブヘアー？shaggy単体だと髪が緑色になるため特定のキャラと結びついている可能性||
-|spiked hair|ツンツン頭|短い髪型だけでなくスーパーサイヤ人的な長いツンツンもこれ|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oEZpeGNKgz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oEZpeGNKgz.png]]|
 |short with long locks|触角付きショートヘア|||
 |bowl cut hair~~blunt bangs+bob cut|おかっぱ|blunt bangs+bob cutの方が効きが強い||
-|bun head|お団子|||
-|topknot|お団子2|||
-|twin braids|おさげ, 三つ編み, short hairと組み合わせることも可能||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_uLZUkcrS9-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_uLZUkcrS9.png]]|
-|gradient hair|グラデーションのある髪||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/n1zy_meYob-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/n1zy_meYob.png]]|
-|floating hair|風などにより髪がそよいでいる感じ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ozg9viHn5J-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ozg9viHn5J.png]]|
+|Various hairstyles|様々な髪型|髪型がランダムになる||
 |}
 [END]
 

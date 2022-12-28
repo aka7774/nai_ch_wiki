@@ -46,6 +46,9 @@ Anything-V3.0.vae　を使います。
 
 {| class="nanj_prompt_table edit sort"
 |~w(100px):GPU|~w(300px):生成結果|~w(300px):webui-user.bat|~Upscale latent space|Enable quantization in K samplers|~w(300px):備考|
+|GeForce RTX 4090|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QQqsc85PCL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/QQqsc85PCL.png]]|--no-half-vae --xformers --opt-channelslast|OFF|OFF||
+|GeForce RTX 3080Ti|https://image02.seesaawiki.jp/n/h/nai_ch/tgiCrpNPI4.png|なし|OFF|OFF|Docker版WebUI使用。完全ではないが似てる、3090のUpscale latent spaceのみONの結果とほぼ同じだが細部が違う|
+|GeForce RTX 3080Ti|https://image01.seesaawiki.jp/n/h/nai_ch/SDbhOpVssB.png|--medvram --xformers|OFF|ON|Docker版WebUI使用。完全ではないが似てる、3090の各種結果の中間くらいな感じになっている|
 |GTX1660Ti 6GB|https://image01.seesaawiki.jp/n/h/nai_ch/tN_EKV2ykA.png|--medvram --no-half --xformers|ON|OFF|ほぼ似ているが、細部が違う|
 |GeForce RTX 3060|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gjfxxOoS1Y.png)|--xformers|OFF|OFF|完全ではないが似てる|
 |GeForce RTX 2070 SUPER|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FFtE0xzZr7.png)|--xformers --opt-channelslast|OFF|OFF|完全ではないが似ている ~~ 画像右側が変化した|

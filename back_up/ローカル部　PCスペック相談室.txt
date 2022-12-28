@@ -57,6 +57,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3080Ti|12GB|Core i5-1135G7|41秒|39.19|--listen --port 7860 --allow-code --deepdanbooru --xformers --enable-insecure-extension-access --api|Windows11 メモリ32GB Docker版WebUI WSL2(Ubuntu22.04)からの起動 ノートPC＋USB4経由のegpuとか言う変態仕様なので参考レベルに(真似は強く非推奨)、egpuはおま環との戦い|
 |RTX A4000|16GB|Ryzen 7 3700X|24.32秒|23.57|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|Batch Count 2、Batch Size 5|
 |RTX A4000|16GB|Ryzen 7 3700X|29.31秒|28.49|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|下のGTX1080から載せ替え　A4000はRTX3070Tiのダウンクロック版|
 |RTX 4090|24GB|Core i9-13900K|9秒|7.83|xformers opt-channelslast|Batch Count 2、Batch Size 5|
@@ -352,6 +353,13 @@ VRAMが12GBもあるのでDreamBoothが使えたり正にクリエイターの�
 ゲームではそこまで差がなくても、AI関連ではRTXに数倍の差をつけられるほどに遅い
 専らゲーム用
 
+- (番外編)RTX A4000
+''VRAM16GB''で実売価格でRTX 3080Ti程度(?)で手に入る(3DCG等の)''クリエイター向けGPU''。
+実売価格の割にゲーム用途ではやや弱い(概ねRTX 3060〜3060Tiの間くらい)が''1スロット''且つ''140Wという驚異のワッパ''を兼ね備える。
+''元々ゲーム・一般ユーザ向けじゃない''ためパーツ屋に行っても置いてないのが基本。買うなら通販など調べよう。
+一般的なゲームとの相性はあまり良くないがVRCなどではVRMのお陰で快適らしい。
+繰り返すが''元々ゲーム・一般ユーザ向けじゃない''。入手手段から固有の問題まで自己解決できる自信のある上級者向け。
+
 [END]
 
 ** A. どれを買うかで迷ってるなら3060 12GBを買え
@@ -420,5 +428,4 @@ AI絵ではそこまで大きな問題にならないが、単純にコスパは
 補助電源コネクタの異常発熱により融解することがある
 [[NVIDIA公式の調査結果>>https://nvidia.custhelp.com/app/answers/detail/a_id/5413]]によると、コネクタが完全に挿入されていないことが原因
 購入者はコネクタをしっかり差し込み、確認すべき
-
 
