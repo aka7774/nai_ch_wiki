@@ -116,6 +116,15 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 
 ここまで完了したら[[「動作確認：Hello Asuka」>#helloasuka]] へ進みます。
 
+* スタンドアローンセットアップ法・改
+
+https://note.com/uunin/n/n715256399038
+
+スレでたまに紹介されている。
+Python公式以外からのバイナリ入手が安全とは断言できないので、
+ベストな手段としてはお勧めできない。ほかの方法でダメならどうぞ。
+トラブルがあってもwikiでは対応できないので、noteのコメントで相談しましょう。
+
 * A1111 WebUI Easy Installer and Launcher
 
 https://github.com/EmpireMediaScience/A1111-Web-UI-Installer
@@ -123,7 +132,7 @@ https://github.com/EmpireMediaScience/A1111-Web-UI-Installer
 CG板で使ってみた人がいいかもって言ってた。
 スレでも技術部でも誰も試してないので副作用とかは不明。
 一般論としては既にインストール済みのPythonやGitがあるとエラーの原因になりうる。
-上記の方法でダメだったら試してみるのも手なのかも。
+ほかの方法でダメだったら試してみるのも手なのかも。
 使ってみた人いたら感想書いてね。
 
 *※番外編：導入(WSL2)｜Linux環境でAutomatic1111を導入する
@@ -311,13 +320,24 @@ COMMANDLINE_ARGS=--precision full --no-half --no-half-vae --medvram
 + もとのディレクトリ*に置いてあった.ckptやvae,nai.yamlを同じディレクトリにコピペする ~~*場所：/stable-diffusion-webui/models/Stable-diffusion
 + 完了
 
+* 移動する方法
 
+SSDを増設したとかで、
+C:\stable-diffusion-webui
+から
+D:\stable-diffusion-webui
+に移動したいとする。
 
+基本的にはフォルダごと移動して大丈夫。
+PythonとGitがCドライブに残ったままならこれでいけるはず。
 
+Pythonの置き場所も変わる場合、
+D:\stable-diffusion-webui\venv\pyvenv.cfg
+を開いて、homeを変える必要がある。
 
+* 削除する方法
 
+C:\stable-diffusion-webui
+ごと削除する。
 
-
-
-
-
+PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
