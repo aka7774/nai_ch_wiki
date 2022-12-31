@@ -1,3 +1,5 @@
+#contents
+
 よかったらご参加お願いします。[[GPUによる生成差異の検証]]
 
 * はじめに
@@ -183,8 +185,13 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 |Kaggle|NVIDIA Tesla T4 x2|30GB(15GB x2)|2コアCPU(詳細不明)||01:01||普通に設定ミスって速度出てない可能性あり|
 |Google Colaboratory|NVIDIA A100|40GB|Xeon @2.20Ghz 6C/12T||00:26||batchsize10にしたら00:06でした|
 |Paperspace Gradient|Quadro M4000|8GB|Xeon E5-2623 v4||324.38||無料プラン|
-|Paperspace Gradient|NVIDIA A4000|16GB|不明 8コアCPUs|35秒|||8ドル/月のプランにて|
-|Paperspace Gradient|NVIDIA A100|80GB|不明 8コアCPUs|19秒||xformers|39ドル/月のプランにて|
+|Paperspace Gradient|NVIDIA RTX4000|8GB|Xeon @3.20GHz 8C/8T|42秒|40.27|xformers|8ドル/月プラン|
+|Paperspace Gradient|NVIDIA RTX5000|16GB|Xeon @3.20GHz 8C/8T|38秒|36.65|xformers|8ドル/月プラン|
+|Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T|38秒|||8ドル/月プラン|
+|Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T|31秒||xformers|8ドル/月プラン|
+|Paperspace Gradient|NVIDIA A5000|24GB|Xeon @3.20GHz 8C/8T|24秒||xformers|39ドル/月プラン|
+|Paperspace Gradient|NVIDIA A6000|48GB|Xeon @3.20GHz 8C/8T|22秒||xformers|39ドル/月プラン|
+|Paperspace Gradient|NVIDIA A100|80GB|Xeon @3.20GHz 8C/8T|19秒||xformers|39ドル/月プラン|
 |}
 [END]
 

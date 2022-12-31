@@ -26,6 +26,34 @@ baseにNAINSFWのエロを足したのがNight
 それに更にgapeを足したのが無印や
 (halfはgaoeを弱めた版) 
 ||=
+
+** 7th
+
+最初は Abyss_7th という名前だったが紛らわしいので 7th だけになった。
+
+https://huggingface.co/syaimu/7th_Layer
+https://huggingface.co/syaimu/7th_anime_v2
+
+119スレ873
+[+]
+・メスガキ
+https://i.imgur.com/fgDNVCU.jpg
+
+・タオル一枚部
+https://i.imgur.com/ul4ljod.jpg
+
+・日本人形
+https://i.imgur.com/U8PfHD0.jpg
+
+・オスガキ
+https://i.imgur.com/XPtRYYv.jpg
+[END]
+
+どのモデルがいい？
+・7th_anime_test01 よりアニメに寄せたものでブロンプトへの応答がいい
+・7th_anime_test02 漫画風に
+・7th_anime_test02 より漫画風に、ただし少しだけ破綻しやすい 
+
 * 導入方法
 1111のextentions(拡張機能)-URLからインストールで以下のURLを入れてインストール
 =|BOX|
