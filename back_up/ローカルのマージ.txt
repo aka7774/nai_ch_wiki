@@ -89,7 +89,22 @@ X/Y Plotで出来る
 
 ※(gape - NAI SFW)にすると臓器のイデアみたいなのを生成するモデルになっちまうから気をつけるんやで
 
+**任意のモデルをinpaintingモデル化
+Runwayのinpaintingモデルはinpaint/outpaint時に使用すると継ぎ目が目立ちにくくなる特徴がある
+このモデルに普段使用するモデルとSD1.5との差分を加えるとこの特性を保ったまま目的のモデルの画風に寄せる事が出来る
 
+具体的には、
+Primary model(A)
+https://huggingface.co/runwayml/stable-diffusion-inpainting/blob/main/sd-v1-5-inpainting.ckpt
+Secondary model(B)
+目的のモデル(任意)
+Tertiary model(C)
+https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/v1-5-pruned.ckpt
+
+を指定し、Multiplier(M)を1にしてAdd differenceでマージする
+
+注意点は、ファイル名の末尾がinpainting.ckptになってないと実行時にエラーが出ること(safetensorsはNG)
+このモデルを使用してinpaintをする場合は、Masked contentをlatent noiseにしてDenoising strengthを1にするといい
 * マージモデル一覧
 
 →スレ民共有モデルの項目を作りました。ダウンロード可能な状態であればなんでも掲載OKです。
@@ -157,9 +172,22 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/459
 >拡大する場合は過学習しとる関係上ハイレゾはほぼ必須や~~
 &ref(https://i.imgur.com/OETKVK1.png,200)
 &ref(https://i.imgur.com/OkujSyk.png,200)
->ほな・・・~~
 
-***117スレ472 abyss_7th_layer
+***117スレ472 7th_Layer (abyss_7th_layer)
+https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/134
+>116スレの754のAをナイトオレンジと取り替えたら出来結構いいままでブロンプトとかめっちゃ効きやすくなったからおすすめするで~~
+>高解像度補助とネガにワーストクオリティとロークオリティ(あと一応バッドブロンプト)おすすめや~~
+https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/467
+>134やけど一応だれかモデル要る？~~
+>ほぼアビスオレンジと同じだけどちょっとだけ116スレ754に寄せてあって ~~
+>i2iしたときに質感がそのまま出しやすくなってるバージョン ~~
+> ~~
+>研究：~~
+>インスタを優先するとNAIブロンプトが効きづらく、解像度を上げたときに1Girlとかが破綻して大量のキャラが出るとかが起こりやすい~~
+>逆にNAIブロンプトを強く効くようにするとi2iの時にNAI（とエニシング）が優先されて質感が悪くなる~~
+> ~~
+>結果：~~
+>ギリギリ両方成り立つ真ん中のラインで出す~~
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/472
 >472今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 911e-s0Sd)2022/12/25(日) 08:34:16.55ID:WNKzo2la0~~
 >名付けてabyss_7th_layerモデル~~
@@ -167,22 +195,64 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/472
 >ちなi2i以外のタイミングだとほとんどアビスオレンジと変わらん~~
 >あとインスタを優先した副次効果でほんの少しだけマジで気のせいレベルで指が破綻しづらい~~
 >t2iで一回出したあとi2iでメチャクチャ詰めた勝負をする奴用や~~
+https://huggingface.co/syaimu/7th_Layer/tree/main
 
 ***117スレ516 El-Diablo
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/516
+>マージモデルにはカッコいい名前付けなあかんのか~~
+>ならワイのAnyNaiにdanbooruタグの効くインスタ2とDreamlikeを階層マージしたモデルは”El†Diablo〜漆黒の悪魔〜"って名乗るわ~~
+&ref(https://i.imgur.com/NptulYJ.png,200)
+&ref(https://i.imgur.com/X9Lyn2h.png,200)
+&ref(https://i.imgur.com/mPJLXyG.png,200)
 
 ***117スレ705 bw-merge-bw-merge-ACertainModel-half-bw-merge-Elysium_V1-f222-0-0-bw-merge-EimisAnimeDiffusion_1-0v-gape60-fp16-0-1.ckpt
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/705
+>ワイはとりあえず実写マージでインスタ使うとぼやけるから別のでやってみたわ~~
+>そこそこくっきりしてると思う~~
+&ref(https://majinai.art/i/3zKiZqD.png,200)
+&ref(https://majinai.art/i/8kLUKWM.png,200)
+>abyssほどええのじゃないけどサンプル~~
 
-***117スレ884 abyss_7th_layerG1
+***117スレ884 7th_Layer_G1 (abyss_7th_layerG1)
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/884
+https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/885
+https://huggingface.co/syaimu/7th_Layer/tree/main
+>Gape60塗りを採用した深界7層モデルや~~
+>ちなみに、こちらはですねリアルさが少し抑えられてアニメ塗りに近づく…これ近づくんかな？~~
+>いや近づかんかもしれへんわ、紹介すんのやめとくわ、確信がないわ~~
+&ref(https://i.imgur.com/7WqIJBL.jpg,200)
+&ref(https://i.imgur.com/fRWIMb1.jpg,200)
 
-***118スレ584 abyss_7th_anime
+
+***118スレ584 7th_Layer_anime(abyss_7th_anime)
 https://fate.5ch.net/test/read.cgi/liveuranus/1672034918/584
+https://fate.5ch.net/test/read.cgi/liveuranus/1672034918/637
+https://huggingface.co/syaimu/7th_Layer/tree/main
+>Abyss_7th_animeについて~~
+>デフォの絵柄がアニメ調になってアウトラインがつく~~
+&ref(https://i.imgur.com/dR10sPA.png,200)
+>ついでにrealisticを入れるとすごいうまいエロイラストレーターみたいな絵になる~~
+&ref(https://i.imgur.com/XZhqrvQ.png,200)
+&ref(https://i.imgur.com/W8Ewd2y.jpg,200)
+>萌えキャラの理解力が多少上がる代わりに深界7層の構図や指の完成度が多少エロに寄って落ちる感じや~~
+>他のアニメ塗りモデルやOUT11層を弄ったらマシになるかもしれん~~
+>研究中や~~
 
 ***119スレ375,417 cinnamon_mix
 https://fate.5ch.net/test/read.cgi/liveuranus/1672160740/375
 https://fate.5ch.net/test/read.cgi/liveuranus/1672160740/417
+https://huggingface.co/nuigurumi/cinnamon_mix
+>>375のモデル上げといたで~~
+>あんまりリアルすぎないこれくらいの質感が好きな人もいると信じてるで~~
+>操作性もそこそこ高い気がする~~
+&ref(https://i.imgur.com/j7lIDyI.png,200)
+
+***122スレ226 YuzuLemonTea
+https://fate.5ch.net/test/read.cgi/liveuranus/1672654440/226
+https://huggingface.co/thiros/YuzuLemonTea
+>諸事情でhuggingfaceにマージモデルあげることになったんで折角だからニキたちも見てやってくれや~~
+>majinaiのプロンプトそのまま引っ張ってきてこんな感じ~~
+&ref(https://i.imgur.com/Jsxv99B.jpg,200)　&ref(https://i.imgur.com/MSIKW3B.jpg,200)　&ref(https://i.imgur.com/IkDciao.jpg,200)　&ref(https://i.imgur.com/OAzY1jj.jpg,200)　&ref(https://i.imgur.com/DXiwmaM.jpg,200)　&ref(https://i.imgur.com/4O2Its6.jpg,200)　&ref(https://i.imgur.com/Lt6puNq.jpg,200)
 
 
 *叡智/Tips 一覧
@@ -305,6 +375,7 @@ Weighted sumとAdd differenceって何をしてるんですかね
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/2L3z8nLa4x.png,600)
 ----
+
 
 
 

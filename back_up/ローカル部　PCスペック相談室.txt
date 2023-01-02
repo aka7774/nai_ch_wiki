@@ -59,6 +59,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3050|8GB|Core i5-8400|1分5秒|65.21|xformers||
 |RTX A4000|16GB|Ryzen 7 3700X|23.56秒|22.83|--xformers --opt-channelslast --opt-split-attention|WSL2環境でBatch Count 2、Batch Size 5、Windowsよりちょっと速くなる|
 |RTX A4000|16GB|Ryzen 7 3700X|29.25秒|28.76|--xformers --opt-channelslast --opt-split-attention|WSL2環境、特に速度変わらず。|
 |RTX 3080Ti|12GB|Core i5-1135G7|41秒|39.19|--listen --port 7860 --allow-code --deepdanbooru --xformers --enable-insecure-extension-access --api|Windows11 メモリ32GB Docker版WebUI WSL2(Ubuntu22.04)からの起動 ノートPC＋USB4経由のegpuとか言う変態仕様なので参考レベルに(真似は強く非推奨)、egpuはおま環との戦い|
@@ -399,16 +400,11 @@ RTX 3060(12GB)搭載PCは、PCショップで15万前後で買える。GPU単体
 -- LoraとHNの学習結果は容量が少ないのでクラウドからダウンロードしやすい
 -- 学習中は生成もゲームも出来なくなるし電気代もかかるのでクラウド化は合理的
 -- GPU買う前にまず無料Colabを試してみよう [[ローカルの学習入門]]
-- xformersつけたらアスカベンチ1分切れるんじゃないか説(検証求む)
--- 3060の1.5倍待てば済むんなら待てる・・・待てない？
--- 8GBあればmedvram無しでも1024x768くらいは余裕
+- 3060の1.5倍待てば済むんなら待てる・・・待てない？
+- 8GBあればmedvram無しでも1024x768くらいは余裕
+- 生成される画像が違う？(検証求む)
 - 新品の2000番台は無くなりつつあるので3050が最下限になる
  NVIDIAは、GeForce GTX 1660、GTX 1660 SUPER、RTX 2060、RTX 2060 SUPERの4製品の製造を終了した。
-
-某所の情報によると、
-- 生成速度は3050→3060で所要時間が60%ぐらいまで減る
-- 生成される画像が違う
-らしいので、想定より厳しいかも知れない。
 
 中古なら2060 12GB、2060S(8GB)もアリ。
 1060とか1660Tiは数倍遅くなるのでVRAM容量を置いといてもナシかな。
@@ -436,5 +432,6 @@ AI絵ではそこまで大きな問題にならないが、単純にコスパは
 補助電源コネクタの異常発熱により融解することがある
 [[NVIDIA公式の調査結果>>https://nvidia.custhelp.com/app/answers/detail/a_id/5413]]によると、コネクタが完全に挿入されていないことが原因
 購入者はコネクタをしっかり差し込み、確認すべき
+
 
 

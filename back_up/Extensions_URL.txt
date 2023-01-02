@@ -30,6 +30,12 @@ https://seesaawiki.jp/nai_ch/bbs/39211/
 
 * 一覧
 
+** stable-diffusion-webui-dumpunet
+
+- https://github.com/hnmr293/stable-diffusion-webui-dumpunet
+- 122スレ166
+- 沼が見える
+
 ** U-Net階層別マージ
 bbc-mc/sdweb-merge-block-weighted-gui: Merge models with separate rate for each 25 U-Net block (input, middle, output). Extension for Stable Diffusion UI by AUTOMATIC1111 - https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
 
@@ -117,6 +123,13 @@ if not launch.is_installed("huggingface-hub"):
 - InvokeAIのインストールが面倒だから作ったやつ
 - 1111に入ってるckpt、同名のvae.ptとyamlをInvokeAIのmodels.yaml形式で出力する
 
+** Gimai ★
+
+- https://github.com/aka7774/sd_gimai
+- Game Talk Scenes Builder
+- イラストとセリフと音声をあわせた作品をつくるためのツールです。
+- 素材の用意自体はセルフサービス
+
 ** Infotexts ★
 
 話せば長くなるけどPrompts from fileの超強化版みたいなやつ。
@@ -203,7 +216,3 @@ X/Y plotっぽい画像を生成する
 
 - https://github.com/hunyaramoke/Generate-TransparentIMG
 - 透明正則画像の作成支援
-
-
-
-

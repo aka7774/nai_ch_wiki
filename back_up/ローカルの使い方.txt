@@ -34,7 +34,7 @@ nai.vae.ptやAnything-V3.0.vae.ptなどをモデルファイル(.ckpt)と同じ�
 
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/rTKIPtT7oU.jpg)
 
-Settingsの「Quicksettings list」に以下の文字列を入力。
+Settingsの「Quicksettings list」(日本語化してる場合「設定タブ＞クイック設定」)に以下の文字列を入力。
  sd_model_checkpoint,sd_vae,sd_hypernetwork,sd_hypernetwork_strength,CLIP_stop_at_last_layers,eta_noise_seed_delta
 
 ** VAEの設定
@@ -214,6 +214,7 @@ CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打�
 ** 各数値の詳細
 
 - Denoise Strength：リファレンスイメージからどの程度離れて画像を生成するか
+
 
 
 
