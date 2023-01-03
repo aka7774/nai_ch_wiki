@@ -46,13 +46,24 @@ https://pixeldrain.com/
 海外ではこのアップローダーなんかモデル配布で使われてたりするやな
 制限は週に20GBまでだから問題ないだろう 
 
-* 潜在的に危険な.ckptを安全な.safetensorsに変換するColab用Notebook
+* 任意の.ckptと.safetensorsを相互変換するやつ_v3
+巨大モデル対応.…..標準の~12GBランタイムの場合~10GBまでのモデルが変換可能や
+fp16化対応.…..fp16として保存することでRAMとストレージを節約(学習には不向きやけど生成画像は同一)
+簡単DL.…..Driveや&#129303;からカンマ区切りで任意個のモデルを取得できる
+簡単Save.…..直接Google Driveに保存可能
+SD2.x系モデル用のyamlも同時に {ckpt用/safetensors用/それぞれのfp16版用} へ変換できる
+
+[[ここ>>https://colab.research.google.com/drive/1SIJaNrt-LzBWgDY44vPvuvUlwnjJ9a5-]]にアクセスしてログインするだけで使えるで
+中身を改造したい場合は、リンク先画面上部の【ファイル】>【ドライブにコピーを保存】で好きなだけ弄れるようになるで
+
+[+](旧バージョン)潜在的に危険な.ckptを安全な.safetensorsに変換するColab用Notebook
 手順1. これをダウンロードする https://75.gigafile.nu/0330-c82660f0f62e26714f340e511377b763c
 　パスワード=スレタイ英4文字
 手順2. Google Driveを開く https://drive.google.com/drive/u/0/my-drive
 　ログイン必須
 手順3. ダウンロードしたものをGoogle Driveにドラッグ&ドロップしてダブルクリック
 　後は中身を読めば分かるようになっている
+[END]
 
 * DCCツール
 
@@ -71,3 +82,4 @@ WebUIとは別に起動してアウトペイントするツール
 ** Krita
 
 ** Photoshop
+

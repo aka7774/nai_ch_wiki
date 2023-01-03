@@ -14,10 +14,8 @@ U-Netは構造がその名の通りU字型しており、浅い層が細かい�
 -[[kohya_ss, Stable DiffusionのモデルをU-Netの深さに応じて比率を変えてマージする｜Kohya S.｜note>>https://note.com/kohya_ss/n/n9a485a066d5b]]
 -[[実験レポート Model Block Merge で、U-Net の各レイヤーの影響を調べる　1>>https://note.com/bbcmc/n/n2d4765b4bd47]]
 
--[[OrangeMixs>>https://huggingface.co/WarriorMama777/OrangeMixs]] AbyssOrangeMixが階層マージを利用して作成されたモデル
-
 ** AbyssOrangeMix
-
+-[[OrangeMixs>>https://huggingface.co/WarriorMama777/OrangeMixs]] AbyssOrangeMixが階層マージを利用して作成されたモデル
 118スレ389
 =||
 脱がせたくないときはAbyssじゃなくAbyss_baseを使うんや
@@ -28,7 +26,6 @@ baseにNAINSFWのエロを足したのがNight
 ||=
 
 ** 7th
-
 最初は Abyss_7th という名前だったが紛らわしいので 7th だけになった。
 
 https://huggingface.co/syaimu/7th_Layer
@@ -37,22 +34,19 @@ https://huggingface.co/syaimu/7th_anime_v2
 119スレ873
 [+]
 ・メスガキ
-https://i.imgur.com/fgDNVCU.jpg
-
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/31sa1ZR5sV.jpg,1000,563)
 ・タオル一枚部
-https://i.imgur.com/ul4ljod.jpg
-
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iDjc2XuELk.jpg,1000,563)
 ・日本人形
-https://i.imgur.com/U8PfHD0.jpg
-
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Db4Aw_DK7d.jpg,1000,563)
 ・オスガキ
-https://i.imgur.com/XPtRYYv.jpg
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FTw18vHHNe.jpg,1000,563)
 [END]
 
 どのモデルがいい？
-・7th_anime_test01 よりアニメに寄せたものでブロンプトへの応答がいい
-・7th_anime_test02 漫画風に
-・7th_anime_test02 より漫画風に、ただし少しだけ破綻しやすい 
+・7th_anime_test01(7th_anime_v2.0A) よりアニメに寄せたものでブロンプトへの応答がいい
+・7th_anime_test02(7th_anime_v2.0B) 漫画風に
+・7th_anime_test02(7th_anime_v2.0C) より漫画風に、ただし少しだけ破綻しやすい 
 
 * 導入方法
 1111のextentions(拡張機能)-URLからインストールで以下のURLを入れてインストール
@@ -387,4 +381,5 @@ safetensors 37.87
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/kmGxXh5SO1.jpg,1000,693)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/16_L3pnRTF.jpg,298,1000)
 [END]
+
 
