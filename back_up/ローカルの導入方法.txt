@@ -3,15 +3,15 @@
 *概要
 ローカル環境の導入ガイドです
 
--- &size(15){[[画像付きガイドpdfを作りました。>>https://image01.seesaawiki.jp/n/h/nai_ch/Bh8T7jBTQz.C.pdf]](Windows用)}
-必要なソフトのインストール方法とモデルダウンロードについても記載しています。
-
-*リファレンス
-- https://rentry.org/voldy
-
 *導入
 
-- 説明読んでも全く理解できない人は「A1111 WebUI Easy Installer and Launcher」を試すといいかも。
+- &size(15){[[画像付きガイドpdfを作りました。>>https://image01.seesaawiki.jp/n/h/nai_ch/Bh8T7jBTQz.C.pdf]](Windows用)}
+必要なソフトのインストール方法とモデルダウンロードについても記載しています。
+
+- リファレンス
+-- https://rentry.org/voldy
+
+- 説明読んでも全く理解できない人は「簡易インストール」を試すといいかも。
 
 ** 1. Python 3.10をインストールする
 [[https://www.python.org/ftp/python/3.10.9/python-3.10.9-amd64.exe]]
@@ -116,7 +116,20 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 
 ここまで完了したら[[「動作確認：Hello Asuka」>#helloasuka]] へ進みます。
 
-* スタンドアローンセットアップ法・改
+* 簡易インストール
+
+** あかちゃんインストーラー
+
+うまくいけば一発でインストールできる。環境を汚さないのでいくつでも入れられる。
+
+- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_1111.bat
+-- 右クリックでインストールしたいフォルダに保存して実行
+-- あとは待つだけ
+-- 2回目からは start.bat を起動
+
+モデルのインストールは別途必要。
+
+** スタンドアローンセットアップ法・改
 
 https://note.com/uunin/n/n715256399038
 
@@ -125,7 +138,7 @@ Python公式以外からのバイナリ入手が安全とは断言できない�
 ベストな手段としてはお勧めできない。ほかの方法でダメならどうぞ。
 トラブルがあってもwikiでは対応できないので、noteのコメントで相談しましょう。
 
-* A1111 WebUI Easy Installer and Launcher
+** A1111 WebUI Easy Installer and Launcher
 
 https://github.com/EmpireMediaScience/A1111-Web-UI-Installer
 
@@ -341,3 +354,4 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+

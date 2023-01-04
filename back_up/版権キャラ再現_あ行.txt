@@ -9,6 +9,7 @@
 ***　アークナイツ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|high quality, best quality, {{{{perfect anatomy}}}}, solo, {{{1girl}}}, {{{arknights}}},  {{{{blaze &#40;arknights)}}}, animal ears, {{{{black cat ears}}}}, cat ears, cat girl, blue eyes, black hair, long hair, large breasts, {{{twenty years old}}}, parka, white jacket,  {{{elbow pads}}}, {{{white tank top}}}, {{{{{single thighhigh}}}}}, {{grey legwear}}, {{{black skirt}}},  {{{city}}}, street, happy, {{{{red hairband}}}},|{{{{{bad anatomy}}}}}, {{{{{bad hands}}}}}, {{{{{missing fingers}}}}}, {{{{{{{{mutated hands andfingers}}}}}}}}, {{{{{{{{extra digit}}}}}}}}, {{{{{{fewer digits}}}}}}, {{{{{deformed}}}}}, {{{{{disfigured}}}}}, {{{{{mutation}}}}}, {{{{{mutated}}}}}, {{{{{extra limb}}}}}, {{{{{extra legs}}}}}, {{{{missing limb}}}}, {{{{{floating limbs,}}}}} {{{{{disconnected limbs}}}}}, {{{{{{malformed hands}}}}}}, {{{{{long neck}}}}, {{{{long body}}}},{{{fused face}}}.{{{monochrome}}},{{{{fused arms}}}}},{{{worst quality}}},{{{{low quality}}}},{{{normal quality}}},{{{error}}},|アークナイツ|ブレイズ|時々猫や猫型のクリーチャーが生成されることがあります。ネガティブプロンプトは特に腕や指に関するものは必ず入れないと異形化します。|https://image01.seesaawiki.jp/n/h/nai_ch/HMPimQu900.png|
 |high quality, best quality, masterpiece, {{{{perfect anatomy}}}}, solo, {{{1girl}}}, {{{arknights}}}, {{{amiya &#40;arknights)}}}, animal ears, brown rabbit ears, rabbit girl, blue eyes, brown hair, long ponytail,  small breasts, {{{fourteen years old}}}, {{{black parka}}}, black hooded jacket, {{{blue ascot}}}, {{{white dress shirt}}}, black pantyhose, {{{plaid skirt}}}, {{{pleated skirt}}}, {{{blue skirt}}}, white sweater,|{{{{{bad anatomy}}}}}, {{{{{bad hands}}}}}, {{{{{missing fingers}}}}}, {{{{{{{{mutated hands andfingers}}}}}}}}, {{{{{{{{extra digit}}}}}}}}, {{{{{{fewer digits}}}}}}, {{{{{deformed}}}}}, {{{{{disfigured}}}}}, {{{{{mutation}}}}}, {{{{{mutated}}}}}, {{{{{extra limb}}}}}, {{{{missing limb}}}}, {{{{{floating limbs,}}}}} {{{{{disconnected limbs}}}}}, {{{{{{malformed hands}}}}}}, {{{{{long neck}}}}, {{{{long body}}}},|アークナイツ|アーミヤ||https://image02.seesaawiki.jp/n/h/nai_ch/P5jDmZrh20.png|
 |1girl, solo, teasing, paw pose, smile, naughty smile, &#40;open mouth:0.90703), &#40;fang:0.85), &#40;light_skin:1.15), &#40;shiny_skin:1.15763), &#40;Feater \&#40;arknights\):1.1025), panda girl, animal ears, bear ears, pink eyes, half-closed eyes, &#40;beautiful detailed eyes:1.3401), &#40;silver hair:1.05), &#40;hair over one eye:1.25), tight medium hair, &#40;twin tails:1.05), &#40;two_side_up :1.05), &#40;eyewear on head:0.9), &#40;black Chinese dress:1.05), oversized jacket, open jacket, long sleeves, &#40;v:1.1025), large breasts, cleavage cutout, thigh_strap,||アークナイツ|エフイーター||https://image01.seesaawiki.jp/n/h/nai_ch/8yHk1N4bHF.png|
 |||||||
@@ -73,6 +74,7 @@
 |Shin satou,1 girl,solo,light smile,white skin,shiny skin,beautiful detailed eyes,green eyes,tareme,golden brown hair, pink blonde hair,hime cut, {{{twintail}}},loose fluffy bob cut,medium breasts,tracksuit,pink ribbon,duck mouth,grin, &#40;&#40;&#40;masterpiece))),&#40;&#40;&#40;best quality))), &#40;&#40;ultra-detailed)), &#40;illustration),&#40;&#40;an extremely delicate and beautiful))||アイドルマスターシンデレラガールズ|佐藤心||https://image01.seesaawiki.jp/n/h/nai_ch/3P5rkOpkEg.png|
 |{{tachibana arisu}}, idolmaster Cinderella Girls, 1girl, solo, 12 years old,  little girl, light blue one piece, blue big hair bow, long hair, full body|FUMIKA SAGISAWA, RIN SHIBUYA, MINAMI NITTA, twin tails, two ribbons,sharp eyes |アイドルマスターシンデレラガールズ|橘ありす|似てるアイマスの子をNegativeに入れると良さげ|[[https://image01.seesaawiki.jp/n/h/nai_ch/rq350M9SOp.png]]|
 |yumemi riamu||アイドルマスターシンデレラガールズ|夢見りあむ||https://image02.seesaawiki.jp/n/h/nai_ch/iGX7eudSTj.png|
+|solo, {{yumemi riamu}},  short pink wavy hair, fang, red eyes, big breasts, collar, ahoge, pill earrings, earrings, hair intakes, ||^|^|↑のプロンプト増やした安定版|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TQxFFroL5b-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TQxFFroL5b.png]]|
 |idolmaster cinderella girls, {{{koshimizu sachiko}}},purple hair, brown eyes, short hair,bangs,{{{tareme,small eyes}}},kind smile, cowboy shot|empty eyes, big eyes,over one eye,parted bangs, tsurime,slanted eyes,sharp eyes,slanted eyes,slit pupils, |アイドルマスターシンデレラガールズ|輿水幸子||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LatvlywxZE.png)|
 |idolmaster cinderella girls,{{{mimura kanako}}}, brown eyes, brown hair, short hair, hair ornament,plump,smile,game cg, cowboy shot||アイドルマスターシンデレラガールズ|三村かな子|髪飾り再現できず改良求む|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WWBygJhFa7.png)|
 |solo, {{{{ichinose shiki}}}}, &#91;&#91;&#91;&#91;idolmaster cinderella girls&#93;&#93;&#93;&#93;, deep brown hair, wavy long messy hair, blue eyes, medium breasts, ahoge, smile,||アイドルマスターシンデレラガールズ|一ノ瀬志希||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pxe3ovVO_k-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pxe3ovVO_k.png]]|
@@ -166,6 +168,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |solo,large breasts,{fusion of {&#128563;} &&#128164;&&#91;&#91;&#91;closed eye]]]}, {{single braid}},gray hair,naked towel|汎用ネガ|宇崎ちゃんは遊びたい！|宇崎月|naked towelを{{fusion of bikini & &#128004;}}に置き換えると牛柄ビキニになる(hornをネガティブに追加すると角消える)|https://image01.seesaawiki.jp/n/h/nai_ch/13d13d365ea5d50c.PNG|
+|solo, {{{{uzaki hana}}}}, {{uzaki-chan wa asobitai}}, dark silver short hair curl inwards, unified hair, bang, blush, open mouth, :D, smile, fang, blue eyes, big breasts, official artwork,|flipped hair, blunt bangs, swept bangs, crossed hair,|宇崎ちゃんは遊びたい！|宇崎花|いまいち似ない。改善求む|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HiyFwR9TzM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HiyFwR9TzM.png]]|
 |}
 
 ***　奪う者　奪われる者
@@ -200,6 +203,8 @@
 |{{{{{aragaki_ayase}}}}},ore_no_imouto_ga_konna_ni_kawaii_wake_ga_nai,Navy blue long straight hair,Navy blue eyes,16 years old,serafuku,||俺の妹がこんなに可愛いわけがない|新垣あやせ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vexqnH_8gr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/vexqnH_8gr.png]]|
 |gokou ruri, Gothic & Lolita, ore no imouto ga konna ni kawaii wake ga nai, best_quality,ultra-detailed,illustration,perfect_detailed,shiny,||俺の妹がこんなに可愛いわけがない|五更瑠璃||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ewWQWTLojX-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ewWQWTLojX.png]]|
 |}
+
+
 
 
 
