@@ -13,6 +13,7 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 
 
 *リソース(一覧)
++Civitai | Every model in one place｜https://civitai.com/　~~モデルアップロードプラットフォーム。見やすくてよき
 +https://rentry.org/sdmodels ~~ここ見ときゃいい感はある。膨大な量のリンク集
 +Models - Hugging Face - https://huggingface.co/models?pipeline_tag=text-to-image&sort=modified
 +/hdg/ Stable Diffusion Models Cookbook - https://rentry.org/hdgrecipes#g-anons-unnamed-mix-e93c3bf7 ~~海外ニキによる様々なマージモデルの一覧
@@ -153,8 +154,23 @@ TextualInversionで悪い手の形を学習させて、Embeddingでネガティ�
 効果ありそう。
 検証はローカル部のページ[[TextualInversion]]に書いたで
 
+** Finding embeddings online
+
+- huggingface concepts library - a lot of different embeddings, but
+-- https://cyberes.github.io/stable-diffusion-textual-inversion-models/
+- 16777216c - NSFW, anime artist styles by a mysterious stranger.
+-- https://gitlab.com/16777216c/stable-diffusion-embeddings
+- cattoroboto - some anime embeddings by anon.
+-- https://gitlab.com/cattoroboto/waifu-diffusion-embeds
+- viper1 - NSFW, furry girls.
+-- https://gitgud.io/viper1/stable-diffusion-embeddings
+- anon's embeddings - NSFW, anime artists.
+-- https://mega.nz/folder/7k0R2arB#5_u6PYfdn-ZS7sRdoecD2A
+- rentry - a page with links to embeddings from many sources.
+-- https://rentry.org/embeddings
 * 学習系リソース
 ** 透明正則化画像
 512x512、768x768、1024x1024の透明画像詰め合わせ　各1000枚ずつ
 https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
+
 

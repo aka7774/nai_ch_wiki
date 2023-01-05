@@ -201,16 +201,13 @@ https://huggingface.co/syaimu/7th_Layer/tree/main
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/516
 >マージモデルにはカッコいい名前付けなあかんのか~~
 >ならワイのAnyNaiにdanbooruタグの効くインスタ2とDreamlikeを階層マージしたモデルは”El†Diablo〜漆黒の悪魔〜"って名乗るわ~~
-&ref(https://i.imgur.com/NptulYJ.png,200)
-&ref(https://i.imgur.com/X9Lyn2h.png,200)
-&ref(https://i.imgur.com/mPJLXyG.png,200)
+&ref(https://i.imgur.com/NptulYJ.png,200) &ref(https://i.imgur.com/X9Lyn2h.png,200) &ref(https://i.imgur.com/mPJLXyG.png,200)
 
 ***117スレ705 bw-merge-bw-merge-ACertainModel-half-bw-merge-Elysium_V1-f222-0-0-bw-merge-EimisAnimeDiffusion_1-0v-gape60-fp16-0-1.ckpt
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/705
 >ワイはとりあえず実写マージでインスタ使うとぼやけるから別のでやってみたわ~~
 >そこそこくっきりしてると思う~~
-&ref(https://majinai.art/i/3zKiZqD.png,200)
-&ref(https://majinai.art/i/8kLUKWM.png,200)
+&ref(https://majinai.art/i/3zKiZqD.png,200) &ref(https://majinai.art/i/8kLUKWM.png,200)
 >abyssほどええのじゃないけどサンプル~~
 
 ***117スレ884 7th_Layer_G1 (abyss_7th_layerG1)
@@ -220,8 +217,7 @@ https://huggingface.co/syaimu/7th_Layer/tree/main
 >Gape60塗りを採用した深界7層モデルや~~
 >ちなみに、こちらはですねリアルさが少し抑えられてアニメ塗りに近づく…これ近づくんかな？~~
 >いや近づかんかもしれへんわ、紹介すんのやめとくわ、確信がないわ~~
-&ref(https://i.imgur.com/7WqIJBL.jpg,200)
-&ref(https://i.imgur.com/fRWIMb1.jpg,200)
+&ref(https://i.imgur.com/7WqIJBL.jpg,200) &ref(https://i.imgur.com/fRWIMb1.jpg,200)
 
 
 ***118スレ584 7th_Layer_anime(abyss_7th_anime)
@@ -232,8 +228,7 @@ https://huggingface.co/syaimu/7th_Layer/tree/main
 >デフォの絵柄がアニメ調になってアウトラインがつく~~
 &ref(https://i.imgur.com/dR10sPA.png,200)
 >ついでにrealisticを入れるとすごいうまいエロイラストレーターみたいな絵になる~~
-&ref(https://i.imgur.com/XZhqrvQ.png,200)
-&ref(https://i.imgur.com/W8Ewd2y.jpg,200)
+&ref(https://i.imgur.com/XZhqrvQ.png,200) &ref(https://i.imgur.com/W8Ewd2y.jpg,200)
 >萌えキャラの理解力が多少上がる代わりに深界7層の構図や指の完成度が多少エロに寄って落ちる感じや~~
 >他のアニメ塗りモデルやOUT11層を弄ったらマシになるかもしれん~~
 >研究中や~~
@@ -253,6 +248,19 @@ https://huggingface.co/thiros/YuzuLemonTea
 >諸事情でhuggingfaceにマージモデルあげることになったんで折角だからニキたちも見てやってくれや~~
 >majinaiのプロンプトそのまま引っ張ってきてこんな感じ~~
 &ref(https://i.imgur.com/Jsxv99B.jpg,200)　&ref(https://i.imgur.com/MSIKW3B.jpg,200)　&ref(https://i.imgur.com/IkDciao.jpg,200)　&ref(https://i.imgur.com/OAzY1jj.jpg,200)　&ref(https://i.imgur.com/DXiwmaM.jpg,200)　&ref(https://i.imgur.com/4O2Its6.jpg,200)　&ref(https://i.imgur.com/Lt6puNq.jpg,200)
+
+***123スレ280 basil_mix
+https://fate.5ch.net/test/read.cgi/liveuranus/1672807546/280
+https://huggingface.co/nuigurumi/basil_mix
+>年末辺りに画像貼った気がするモデルを公開したで~~
+>インスタ顔を維持しながら、プロンプトへの反応性を良くした実写系不気味の谷モデルや~~
+>そのまま使うより更にマージ素材にしたほうがええかもしれん~~
+&ref(https://i.imgur.com/pHQFuih.png,200) &ref(https://i.imgur.com/jocyRLk.png,200) &ref(https://i.imgur.com/2gJQ4AG.png,200)
+
+>cinnamon mixも気に入ってくれる人が時々いて嬉しいで~~
+&ref(https://i.imgur.com/ws0MIKp.png,200)
+https://huggingface.co/nuigurumi/cinnamon_mix
+
 
 
 *叡智/Tips 一覧

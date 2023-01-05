@@ -120,14 +120,21 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 
 ** あかちゃんインストーラー
 
-うまくいけば一発でインストールできる。環境を汚さないのでいくつでも入れられる。
+うまくいけば一発でインストールできる。
 
-- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_1111.bat
--- 右クリックでインストールしたいフォルダに保存して実行
--- あとは待つだけ
--- 2回目からは start.bat を起動
+- GitGUD版
+-- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_1111_gitgud.bat
+- 手元のクローン版(Cloned at 2023-01-05 09:25:00 JST)
+-- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_7774.bat
+- GitHub版(死亡)
+-- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_1111.bat
 
-モデルのインストールは別途必要。
+- リンクを右クリックでインストールしたいフォルダに保存して実行
+-- C:\SD みたいな短くて英語でスペースのないとこがおすすめ
+- あとは待つだけ
+- 2回目からは start.bat を起動
+- 環境を汚さないのでいくつでも入れられる
+- モデルのインストールは別途必要
 
 ** スタンドアローンセットアップ法・改
 
@@ -354,4 +361,9 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+
+
+
+
+
 
