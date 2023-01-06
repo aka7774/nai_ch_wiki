@@ -209,39 +209,17 @@ WebUIのSettingタブで以下のように設定しましょう
 (以下の例はWindowsの C:\stable-diffusion-webui-automatic1111\outputs\ の下にフォルダ分けしてファイルを置きたい場合)
 https://image01.seesaawiki.jp/n/h/nai_ch/16PjLJzYTa.png
 
-***Windows版と同じようにフォルダアイコンからエクスプローラーを開きたいンゴ(2022/12/24現在)
-本体改造の必要があります
-間違えるとエラーで起動しなくなる可能性も有ります
-また、将来の本体の更新で変わる可能性があります
+***Windows版と同じようにフォルダアイコンからエクスプローラーを開きたいンゴ
+%%本体改造の必要があります%%
 
-改造する場合、その点を十分注意してください
-誰も責任を取ってくれません
-[+]
+1111本体にマージされました。
+
 wsl-open をインストール
 =|BOX|
 sudo apt-get install -yqq npm
 sudo npm install -g wsl-open
 ||=
 
-本体を書き換え
-/home/<Ubuntuのユーザー名>/stable-diffusion-webui/modules/ui.py を「xdg-open」で検索(2022/12/24現在、561行目)
-=|BOX|
-sp.Popen(["xdg-open", path])
-||=
-以下のように書き換え
-=|BOX|
-sp.Popen(["wsl-open", path])
-||=
-
-書き換え後に1111がアップデートしてgit pullでエラーが出る場合、チェックアウトしてください
-[[1111のソースを書き換えたらpullできなくなった時>>ローカルのgit#content_7]]を参照
-=|BOX|
-git checkout modules/ui.py
-||=
-git pull 後に再度書き換えて下さい
-
-※判らない場合は手を付けないでください
-[END]
 
 **参考サイト
 https://premirea.jp/article/wsl2-stable-diffusion-web-ui
@@ -567,3 +545,4 @@ D:\stable-diffusion-webui\training　フォルダを指定する場合は
 modelsやoutputsフォルダを外出しにしているので、一度環境を作ってしまえば再インストールも容易
 セットアップ時に何かエラーが出た場合は、あれこれ弄る前にリストアしてやり直す事をお勧めする
 [END]
+

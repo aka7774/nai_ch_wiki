@@ -48,6 +48,11 @@ https://huggingface.co/syaimu/7th_anime_v2
 ・7th_anime_test02(7th_anime_v2.0B) 漫画風に
 ・7th_anime_test02(7th_anime_v2.0C) より漫画風に、ただし少しだけ破綻しやすい 
 
+** fp16.safetensors
+
+ここで補完してます。
+- https://huggingface.co/aka7774/fp16_safetensors
+
 * 導入方法
 1111のextentions(拡張機能)-URLからインストールで以下のURLを入れてインストール
 =|BOX|

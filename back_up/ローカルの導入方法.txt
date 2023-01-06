@@ -122,20 +122,18 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 
 うまくいけば一発でインストールできる。
 
-- GitGUD版
--- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_1111_gitgud.bat
-- 手元のクローン版(Cloned at 2023-01-05 09:25:00 JST)
--- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_7774.bat
-- GitHub版(死亡)
--- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_1111.bat
-
+- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_1111.bat
 - リンクを右クリックでインストールしたいフォルダに保存して実行
 -- C:\SD みたいな短くて英語でスペースのないとこがおすすめ
 - あとは待つだけ
-- 2回目からは start.bat を起動
+- &color(#ff0000){2回目からは start.bat を起動}
 - 環境を汚さないのでいくつでも入れられる
-- モデルのインストールは別途必要
 
+*** モデルのインストール
+
++ 「Filer」「Checkpoints」「Download」タブを順に開いていく
++ ダウンロードしたいモデルのURLを入力
++ 「Download to Active Dir」ボタンを押す
 ** スタンドアローンセットアップ法・改
 
 https://note.com/uunin/n/n715256399038
@@ -361,6 +359,10 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+
+
+
+
 
 
 

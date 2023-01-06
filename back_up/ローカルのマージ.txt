@@ -282,8 +282,6 @@ https://huggingface.co/nuigurumi/cinnamon_mix
 インスタとAnythingのマージ、フリルフリルした衣装ならかなり強い気がしたんやけど...微妙やな
 ぶっちゃけ今のところ混ぜる相手はZeipherで良くね感ある
 
-上から(Anything+Gape) + インスタモデルの0.0, 0.25, 0.50, 0.75
- &ref(https://i.imgur.com/hduAYIE.jpg,600)
 ----
 
 =|BOX|
@@ -383,10 +381,4 @@ Weighted sumとAdd differenceって何をしてるんですかね
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/2L3z8nLa4x.png,600)
 ----
-
-
-
-
-
-
 

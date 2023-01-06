@@ -96,3 +96,22 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/commits/master
  cd C:\SD\stable-diffusion-webui
  git reset --hard HEAD
 ||=
+
+* 1111のリポジトリが移転した場合
+
+stable-diffusion-webuiのある場所で
+=|BOX|
+git remote set-url origin https://gitgud.io/AUTOMATIC1111/stable-diffusion-webui
+||=
+すればgit pullできるようになる
+
+* リポジトリの同期コピーを取る
+
+** 準備
+
+- https://qiita.com/oohira/items/175f68b4febd7b0342c0
+
+** 定期実行
+
+git remote update
+git push --mirror
