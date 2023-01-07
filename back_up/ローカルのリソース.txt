@@ -84,7 +84,7 @@ Elysium_V1.ckpt｜実写系
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5jC0_D0iZy-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/5jC0_D0iZy.jpg]]
 リファレンス：二次元絵・アニメモデルが次々と登場 - MarkdownとBullet Journal - https://programmingforever.hatenablog.com/entry/2022/11/20/171658
 
-なおVaeは以下のように推奨されています。''※.ckpt拡張子で配布されているので、.vae.ptにリネームしてモデルと同じ場所に配置します。''
+なおVaeは以下のように推奨されています。''※.ckpt拡張子で配布されているので、~~~.ptにリネームしてmodels/VAEフォルダに配置します。''
 - (General model): Clip skip 1, VAE: 'vae-ft-mse-840000' from StabilityAI ：https://huggingface.co/stabilityai/sd-vae-ft-mse-original/tree/main
 Sampler: DPM++ 2M Karras
 - (Anime model): Clip skip 1 or 2, VAE: 'kl-f8-anime2.ckpt' from Waifu Diffusion：https://huggingface.co/hakurei/waifu-diffusion-v1-4/tree/main/vae
@@ -121,6 +121,16 @@ magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 
 *マージモデル
 →[[ローカルのマージ>ローカルのマージ#content_8]]に移動させました。
+
+* VAE
+&aname(resource_vae)
+Anything, NAIに同梱されているもの以外に、以下のvaeがある。
+拡張子が.ckptなので、.ptに変えてmodels/VAEフォルダに置くことで認識可能
+
+| kl-f8-anime.vae.pt | https://huggingface.co/hakurei/waifu-diffusion-v1-4/resolve/main/vae/kl-f8-anime.ckpt |
+| kl-f8-anime2.vae.pt | https://huggingface.co/hakurei/waifu-diffusion-v1-4/resolve/main/vae/kl-f8-anime2.ckpt |
+| autoencoder_fix_kl-f8-trinart_characters.vae.pt | https://huggingface.co/naclbit/trinart_derrida_characters_v2_stable_diffusion/resolve/main/autoencoder_fix_kl-f8-trinart_characters.ckpt |
+| vae-ft-mse-840000-ema-pruned.vae.pt | https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt |
 
 ----
 
@@ -172,5 +182,6 @@ TextualInversionで悪い手の形を学習させて、Embeddingでネガティ�
 ** 透明正則化画像
 512x512、768x768、1024x1024の透明画像詰め合わせ　各1000枚ずつ
 https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
+
 
 

@@ -12,7 +12,8 @@
 
 ** 色がくすんでる気がする
 Vaeが設定されていないときに見られる現象。
-nai.vae.ptやAnything-V3.0.vae.ptなどをモデルファイル(.ckpt)と同じ場所に配置して、WebUIの上部タブのプルダウンから合うものを選びます。
+nai.vae.ptやAnything-V3.0.vae.ptなどをmodels/VAEフォルダ内に配置して、WebUIの上部タブのプルダウンから合うものを選びます。
+[[VAE一覧>ローカルのリソース#resource_vae]]も参照。
 
 図：左がVaeOFF、右ON
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7e9AhZfv5Y-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/7e9AhZfv5Y.jpg]]
@@ -214,6 +215,7 @@ CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打�
 ** 各数値の詳細
 
 - Denoise Strength：リファレンスイメージからどの程度離れて画像を生成するか
+
 
 
 

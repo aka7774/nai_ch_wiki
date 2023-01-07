@@ -54,6 +54,16 @@ BとC(SecondaryとTertiary)は補間方法：Interpolation Methodによって働
 AにAnything、BにNAI-full(nsfw)、CにNAI-sfwそして、0.3の割合指定、差分にチェック。これでA+((B-C)*M)のマージができます。
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/hiZuSdCRNS.jpg,600)
 
+** モデルの破損
+Elysium_Anime_V3はプロンプトの一語目が無視される。例えば「a skelton girl」ではガイコツ女が出るが、「skelton girl」だと普通の女の子が出る。これはモデルのtext_encoderが破損しているからである。
+モデルが破損する原因はAdd differenceでマージしたモデルを、さらに別のモデルとWeighted sumでマージする事で起こるらしい。
+
+修復方法としては
+・モデルをfp16化する。マージでAとB両方に壊れたモデルを突っ込んで、(M)を0にしてsave as float16する
+・層別マージで正常なモデル(A)と壊れたモデル(B)を入れ、ALL_Bでbase_alphaだけ0に指定してマージする
+とのこと。
+ただし修復前と修復後のモデルは全く同じ条件でも生成される絵は変わってしまう。
+
 * マージモデルの比較
 
 ** 比較のしかた

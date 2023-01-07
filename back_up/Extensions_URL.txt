@@ -30,6 +30,12 @@ https://seesaawiki.jp/nai_ch/bbs/39211/
 
 * 一覧
 
+** sdweb-clip-changer
+
+- https://github.com/bbc-mc/sdweb-clip-changer
+- Stable DiffusionベースモデルのCLIPの重みを良いやつに変更する
+- (良いとは言ってない)
+
 ** stable-diffusion-webui-dumpunet
 
 - https://github.com/hnmr293/stable-diffusion-webui-dumpunet

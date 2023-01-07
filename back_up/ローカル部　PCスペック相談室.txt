@@ -59,6 +59,8 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.35|--xformers --opt-channelslast|ライブラリ更新(torch1.12.1+cu116,torchvision0.13.1+cu116) ~~ Batch count 5, Batch size 2|
+|RTX 2060|12GB|Core i7-8700K|38秒|38|xformers|Windows11　ﾒﾓﾘ32GB　anaconda3|
 |Radeon VII|16GB|Ryzen 9 3900X|57秒|56.24||ubuntu 22.04, ROCm 5.2|
 |RTX 3050|8GB|Core i5-8400|1分5秒|65.21|xformers||
 |RTX A4000|16GB|Ryzen 7 3700X|23.56秒|22.83|--xformers --opt-channelslast --opt-split-attention|WSL2環境でBatch Count 2、Batch Size 5、Windowsよりちょっと速くなる|

@@ -30,9 +30,20 @@ stable-diffusion-webuiディレクトリ直下にあるwebui-user.batを修正�
 
 4090で高速化する方法。3060でもほんのちょっとだけ早くなったとの報告あり。
 
-なんJNVA部★84 
-http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
+- 更新手順(Windows用)
+1.エクスプローラーでstable-diffusion-webui/venv/Scriptsフォルダを開き、右クリック→ターミナルで開く(多分Win10ではPowershellで開く)でPowershellを開く
+2.以下のコマンドを実行
+> .\Activate.ps1
+3.以下のコマンドを実行
+> pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+4.https://pomf2.lain.la/f/5u34v576.7zをDLして中身を「stable-diffusion-webui\venv\Lib\site-packages\torch\lib」にコピーする
+5.以下のコマンドを実行
+> pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+5.Powershellウィンドウは閉じて、webuiフォルダ直下のwebui-user.batを開き、set COMMANDLINE_ARGS=の後ろに--xformers --opt-channelslastを追加して保存する
 
+ソース:なんJNVA部★84 
+http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
+[+]
 > 265 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fb72-iO6U)[sage] 投稿日：2022/11/02(水) 23:51:01.19 ID:n0RTOjsJ0 [5/6] ~~
 > >>239>>240 ~~
 > 俺も2週間ぐらい同じ感じだったけどxformersオプション入れるだけじゃ多分駄目なんよ ~~
@@ -52,6 +63,7 @@ http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
 > Windows ディスプレイ設定→グラフィックの設定→GPUアクセラレータによるGPUスケジューリングをOFFで再起動する ~~
 > これで24it/s出るようになった うまくいったら報告頼む 環境壊れたらすまんvenv消してくれ ~~
 
+[END]
 * VAEをckptに内蔵する
 
 116スレ559
@@ -152,6 +164,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
 
 
 
