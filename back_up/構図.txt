@@ -5,6 +5,7 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|skirt lift|||||
 |{{realistic urtra details}}, {winning post},horse_riding form,racehorce|motorcycle,bicycle|競馬の騎手の乗り方|競馬ゲームの名前入れたらモンキー乗りになる。但し今度は馬がおかしくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D.png]]|
 |riding_form,horse, horseback riding,||騎乗|馬に乗ってくれる。競馬のモンキー乗りは不明。馬をバイクや自転車に変えることも可能|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti.png]]|
 |〇〇_form||何かをしている構図|〇〇+formで何かをしている姿勢と指定するとだいたいその格好になってくれる上はrunning_form下はcooking_form|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv.png]]|

@@ -2,6 +2,7 @@
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|作品名|備考|サンプル|
+||ぼっち|||
 |ryuuou no oshigoto!,official art,|りゅうおうのおしごと！|漫画版の絵柄が多く出る。|https://image01.seesaawiki.jp/n/h/nai_ch/DDZKp4zXWJ.png|
 |style of macross frontier,official art,1girl,|マクロスフロンティア|macrossをネガティブに入れても荒い画質のものが生成されることがある。|https://image01.seesaawiki.jp/n/h/nai_ch/fK43PJKUkB.png|
 |style of azumanga daioh,official art,pupils,1girl,|あずまんが大王|成功率若干低め、漫画っぽい(?)絵柄になる|https://image01.seesaawiki.jp/n/h/nai_ch/vrBvSbL7hU.png|
@@ -11,7 +12,7 @@
 |{bleach},official art,1girl,|ブリーチ|official art、1girlがないと光のほうのブリーチが優先されがちになる。成功率が低め。|https://image02.seesaawiki.jp/n/h/nai_ch/f6IqrghIYh.png|
 |sword art online,official art,|ソードアート・オンライン||https://image02.seesaawiki.jp/n/h/nai_ch/kXv6SUMiiU.png|
 |idolmaster cinderella girls,official art,,|アイドルマスターシンデレラガールズ|キャラ要素（初音ミク）が消えがちになるが、official artがほぼ必須。|https://image02.seesaawiki.jp/n/h/nai_ch/sqd3_qQTju.png|
-|idolmaster million live!,{highres official art,},|アイドルマスター（アイドルマスター ミリオンライブ!）|official art,を付けると絵柄がそれっぽくなるが髪の毛がほぼ溶ける。　[[idolmaster shiny colorsを1〜2段強調したほうが髪が溶けにくいアイマス絵が出来るが背景が星関連になる。 >https://majinai.art/ja/i/ud6U-qG]]|https://image01.seesaawiki.jp/n/h/nai_ch/SvRBpLjMNK.png|
+|idolmaster million live!,{highres official art,},|アイドルマスター（アイドルマスター ミリオンライブ!）|official art,を付けると絵柄がそれっぽくなるが髪の毛がほぼ溶ける為perfect hair等で補助する必要あり。　[[idolmaster shiny colorsを1〜2段強調したほうが髪が溶けにくいアイマス絵が出来るが背景が星関連になる。 >https://majinai.art/ja/i/ud6U-qG]]|https://image01.seesaawiki.jp/n/h/nai_ch/SvRBpLjMNK.png|
 |neon genesis evangelion,1girl,|新世紀エヴァンゲリオン|成功率やや低め、プロンプト単体だとneonが強くなり人が生成されない。|https://image02.seesaawiki.jp/n/h/nai_ch/WuSacT_zzg.png|
 |digimon|デジタルモンスター(デジモン)|絵柄が変わったから掲載した程度です。精査願います。|https://image01.seesaawiki.jp/n/h/nai_ch/c6HxNKb3XH.png|
 |bishoujo senshi sailor moon|美少女戦士セーラームーン|衣装は大体セーラー戦士のものになる。"sailormoonchallenge"の影響か上半身だけが出やすく、[[プロンプトのみでsquareにするとまんまの画像が生成されることもある。>https://majinai.art/ja/i/gxGAI1p]]|https://image02.seesaawiki.jp/n/h/nai_ch/xICzi_9um4.png|

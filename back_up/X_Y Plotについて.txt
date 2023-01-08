@@ -92,3 +92,22 @@ looking at viewer, from behind, from side, looking away, looking back, looking d
 k_euler_a, k_euler, k_lms, k_heun, k_dpm_2, k_dpm_2_a, k_dpm_fast, k_dpm_ad, k_lms_ka, k_dpm_2_ka, k_dpm_2_a_ka
 *** 数値
 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0
+
+** モデルやVAEをチェックボックスで選択する
+モデルやVAEをX/Y plotに通す場合、ファイル名を手打ちする必要があり、間違いも起きやすく、非常に面倒だった。
+そこで[[有志>https://fate.5ch.net/test/read.cgi/liveuranus/1673176819/217]]によってこれをチェックボックスで選択できるようにするスクリプトが開発された。
+
+https://github.com/hako-mikan/stable-diffusion-webui/blob/hako-mikan-patch-1/scripts/eazy_xy.py
+
+1. ↑のページのコードの上のRawボタンを押し、表示されたページでCtrl+Sで保存する
+（もちろんコード全てコピペしてテキスト保存でもよい）
+2. scriptsフォルダ内に入れる
+3. Settings > Reload UI
+4. Dynamic Prompts > Scriptでeazy XYを選択
+5. 必要な設定を行ってGenerate
+
+例）
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pwgcY36jWM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pwgcY36jWM.png]]
+
+※注意点：公式のスクリプトの状態に依存するので、最新、またはスクリプト作成日時に近い状態のwebuiでないとエラーで上手くいかない可能性がある
+

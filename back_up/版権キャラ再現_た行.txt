@@ -12,6 +12,7 @@
 ***　だがしかし
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|endou_saya,&#91&#91&#91dagashi kashi&#93&#93&#93,blonde hair,hairclip, ear piercing, small breasts,||だがしかし|遠藤サヤ|点のような瞳の再現は、誰か呪文を補完してください|https://image01.seesaawiki.jp/n/h/nai_ch/7j4ua4dHJ1.png|
 |{{{shidare hotaru}}},{dagashi kashi},{ringed eyes},hairband,purple hair,blue eyes, large breasts,tsurime,evil smile,high-waist skirt, white blouse,frilled shirt,black skirt,long skirt, pantyhose,suspenders,black rose,red bowtie,||だがしかし|枝垂ほたる|ringed eyesだけでは瞳を再現できず|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/t3QqETy9UO.png)|
 |}
 
@@ -20,6 +21,13 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |raphtalia||盾の勇者の成り上がり|ラフタリア|獣耳を間違えがちなので、raccoon ears も入れるとより良い。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/w5AgXNp1OW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/w5AgXNp1OW.png]]|
+|}
+
+***　ダンジョンに出会いを求めるのは間違っているだろうか
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|solo, hestia, &#91;&#91;&#91;&#91;dungeon ni deai wo motomeru no wa machigatteiru darou ka]]]], black hair, long twintails, blue eyes, tareme, blue ribbon, white cloth, big breasts,||ダンジョンに出会いを求めるのは間違っているだろうか|ヘスティア|キャラ名を強調するとなぜかクオリティが下がる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UQAM881QsG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/UQAM881QsG.png]]|
+
 |}
 
 ***　ダンベル何キロ持てる？
@@ -119,6 +127,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
+
 
 
 

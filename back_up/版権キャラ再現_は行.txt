@@ -43,6 +43,8 @@
 |rias gremory, high school dxd, ahoge,blue eyes, official alternate costume,||ハイスクールD×D|リアス・グレモリー|制服は再現できず|https://image01.seesaawiki.jp/n/h/nai_ch/xCB6SwHAYd.png|
 |}
 
+***　化物語
+→[[物語シリーズ>版権キャラ再現/ま行#hanken_monogatari]]
 ***　はたらく細胞
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -84,7 +86,7 @@
 |1girl, hikawa sayo, bang dream!, long hair, green hair, green eyes, medium breasts,||BanG Dream!|氷川紗夜|バンドリキャラの中で最も出しやすい。hikawa sayo, bang dream!だけでも、それっぽい人が出るが、体型、目の色が安定しない。なお、''他のバンドリキャラは氷川紗夜と氷川日菜に髪や顔つきが吸われる傾向がある''。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3EFWQ8vCcB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3EFWQ8vCcB.png]]|
 |1 girl,{{hikawa hina}},{bang dream!},emerald blue hair, medium hair,Pale yellow-green eyes,|||氷川日菜||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QGYM1T8aDU.jpeg)|
 |1 girl,{{maruyama aya}},{bang dream!},pink hair, twin side tails,pink eyes|||丸山彩||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wDHmW76qUF.jpeg)|
-|masterpiece, best quality, perfect detailed, solo, {{{1girl}}}, {{{imai lisa}}}, {{{bang dream!}}}, 	brown hair, green eyes, ponytail, long hair, bangs, {parted bangs}, {{sideburns}}, {long locks}, side locks,{{{{denim shorts}}}},  salmon pink shirt, groin, &#91;&#91;&#91;off shoulder]]], necklace, short sleeves, medium breasts, wide hips, :3, smile|akigumo &#40;kancolle), {{{{{{forehead}}}}}}, {{{{{{hairline}}}}}}, lisa &#40;genshin impact),  ichinose shiki, lolicon,  pink hair, gold hair, tareme,  fang,  miyamoto frederica, himesaka noa,|BanG Dream!|今井リサ|上手く生成できる確率は友希那より低い。艦これの秋雲が何故か吸ってくるのでUCに入れる。他は適宜UCに入れる。「:3」は表情が近くなるものの、吸ってくる人を増やす原因にもなるので入れないほうがいい。foreheadとhairlineは強調してUCに入れないとデコ出ししか生成されない（原因不明）。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ubB3PucGU5.png)|
+|1girl, {{{imai lisa}}}, {{{bang dream!}}}, brown hair, green eyes, ponytail, long hair, bangs, {parted bangs}, {{sideburns}}, {long locks}, side locks, medium breasts, {{{{denim shorts}}}}, salmon pink shirt, groin, [off shoulder], necklace, short sleeves, |milf, {{{{{forehead}}}}, {{{{hair line}}}}, {{{{{loli}}}}, lipstick|BanG Dream!|今井リサ|AIの学習が進んだのか秋雲や原神リサと混ざらなくなった。デコ出しをするのでforeheadとhair lineをUCに入れること。高確率で口紅をするが、やや不安定であるため、lipstickをUCに入れるのをお勧めする。服装に関しては正確なものは出ない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Yt63XYyv9A-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Yt63XYyv9A.png]]|
 |1girl, {{{minato yukina}}}, yellow eyes, grey hair, {{bang dream!}}, long hair,| minato aqua, [emilia (re:zero)],{{{hikawa sayo}}},  {{{{blunt bangs}}}}, ahoge, {{{{{{loli}}}}}}, {tsurumaki kokoro}, parted bangs, bandana, large breasts, half up do,  ribbon, hair between eyes, [smile], |BanG Dream!|湊友希那|安定しない。特に(UCに入れようとも)ロリ化とぱっつん髪化しやすい。前髪は原作通りのものはほぼ出ない。氷川紗夜(強調必須)、リゼロのエミリア(弱化しないとロリ化する可能性が高まる)、湊あくあに服や髪が吸われるのでそれぞれUCに入れる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tEhENzenfh-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tEhENzenfh.png]]|
 |}
 
@@ -276,6 +278,7 @@
 ***　ポケットモンスターシリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|solo, {{{{gardevoir}}}}, &#91;&#91;&#91;&#91;pokemon&#93;&#93;&#93;&#93;, green arms, white dress,||ポケモン|サーナイト||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xeYyc0M4it-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xeYyc0M4it.png]]|
 |{hex maniac &#40;pokemon),official art},ahoge,{{@ @}},dark purple eyes,hair between eyes,large breasts,black dress,purple hairband,very long hair,1girl,|汎用ネガティブプロンプト|ポケモン　XY|オカルトマニア(XY)|hex maniac (pokemon)だけでもおおよその特徴が出る。|https://image01.seesaawiki.jp/n/h/nai_ch/6JdmBv1QjB.png|
 |{masterpiece},game cg,{{1boy}},brown eyes,{{tired hair}},forehead,11-years-old,red&#40;pokemon),red {{{cap}}},brim,red vest,Wear a vest over a shirt,{{{{{{{open vest}}}}}}}, black shirt,jeans,badmood,|{blush},large eyes,{{{{{{breats}}}}}},{{{{{{female}}}}}},{{{{{{woman}}}}}},{{{{{{{girl}}}}}}},pokemon,fat,{{{{{short pants}}}}},{{{{{brimless hat}}}}},{{{{{{{{mutated hands and fingers}}}}}}}}, malformed hands, bad hands,fused hand ,disappearing arms, missing hand, missing fingers, fused fingers, one hand with more than 5 fingers, one hand with less than 5 fingers, one hand with more than 5 digit, one hand with less than 5 digit,extra digit, fewer digits, fused digit, missing digit, bad digit, liquid digit,bad gloves,extra arms,liquid digitfused digit, disappearing arms,unnatural body,||レッド||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_qkwWYySqP.png)|
 |{{{masterpiece}}},{{{{erika (pokemon)}}}}, 1girl,solo,bangs,black hair,short hair, bob cut, straight hair,slender,midium breasts,{{{yellow kimono,yellow upper body}}},{{{red hairband, not wide hairband, red hakama}}},long sleeves, wide sleeves,holding poke ball,looking at viewer,petals,|may (pokemon),messy,wavy,curl,white hairband, cap,hat,ribbon,troubled eyebrows,pikachu,|ポケモン|エリカ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mRQ2NzvkOl-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/mRQ2NzvkOl.png]]|
@@ -288,6 +291,7 @@
 |{{cynthia &#40;pokemon)}} ,very long hair,{blonde hair},long hair,hair ornament,hair over one eye,slender,gray eyes,midium breasts,20 years old,1girl,||ポケモン　ダイヤモンドパール|シロナ|服は難しい、特に胸元の銀の雫のようなアクセサリーは無理に近い|https://image02.seesaawiki.jp/n/h/nai_ch/isBW4Nhmt0.png|
 |{{{{rosa (pokemon)}}}}, dark brown hair, long twintails with sidelocks, double bun topknot, sun visor, aquablue eyes,||ポケモン|メイ|特徴的なためかキャラ名だけでも割と安定|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1ryL4m7vr0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/1ryL4m7vr0.png]]|
 |{{{{hilda (pokemon)}}}}, dark brown hair, bow ponytail, pokemon cap, aquablue eyes, standing,|bun, chibi,|ポケモン|トウコ|なぜか画質の低い絵柄やちびキャラが出やすい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cyc6bOdRrR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cyc6bOdRrR.png]]|
+|solo, {{{{dawn}}}} &#91;&#91;(pokemon)&#93;&#93;, white pokemon knit cap, dark blue hair, medium hair, pink scarf, blue eyes, {{tareme}}, black tops, bare shoulders, pink miniskirt, |blue miniskirt, black miniskirt, white shirt, short hair,|ポケモン|ヒカリ|服はガチャ。(pokemon)まで強調すると、モンスターのほうにひきずられて画質が下がる可能性あり？|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BH5VpgkNMi-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BH5VpgkNMi.png]]|
 |}
 
 ***　星のカービィ
@@ -310,6 +314,9 @@
 |{{{cat ears, fox tail, yellow eyes, blue hairs,loli}}}, large breasts,blunt bangs+bob cut,sharp eyes,slanted eyes,slit pupils,{{{school cap,black capelet,long jacket,black skirt, Sailor uniform,katana}}}, angry||ボンバーガール|アサギ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4IqF5g_LW4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4IqF5g_LW4.png]]|
 |beautiful detailed eye, from behind, 1girl, {{{{{{{{{{ecstacy climax eyes}}}}}}}}}}, naughty face, evil {{{small breasts}}}, {{{{short stature}}}}, absurdly long hair, {{{large amount of hair}}}, white hair, silver twintails, {{{red}}} cheerleader costume, bikini, {{{{{{{{have cheer pompom}}}}}}}}, hands on hips, hands on knee, skin fang, small demon horn, {{{{{large demon wing}}}}}, demon tail, red eyes, {bent over}||ボンバーガール|グリムアロエ（サキュバスチアコス）|恍惚としたメスガキ顔が出るか、大きいツインテールが出るかはほぼガチャ|https://image01.seesaawiki.jp/n/h/nai_ch/OiluV6GQHN.png|
 |}
+
+
+
 
 
 

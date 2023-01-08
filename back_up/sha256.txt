@@ -6,14 +6,20 @@ BloodOrangeMixも微妙に違うものがあるらしい。
 
 調べるにはFilerが便利 [[Extensions_URL]]
 
-|Filename|hash|sha256|
+|~Filename|hash|sha256|
 |512-base-ema.ckpt|09dd2ae4|d635794c1fedfdfa|
 |768-v-ema.ckpt|2c02b20a|bfcaf0755797b0c3|
+|7th_anime_v2_A.ckpt|8bcc83d5|f58ad055c308417e|
+|7th_anime_v2_B.ckpt|6de72325|20f4fc435f89a2ee|
+|7th_anime_v2_C.ckpt|40b94898|1e75fe6bb137ebcd|
 |AbyssOrangeMix.safetensors|cc44dbff|6bb3a5a3b1eadd32|
 |AbyssOrangeMix_base.ckpt|ffa7b160|bbd2621f3ec4fad7|
 |AbyssOrangeMix_half.safetensors|cf8527ef|468d1b5038c4fbd3|
 |AbyssOrangeMix_Night.safetensors|de2f2560|167cd104699dd98d|
+|abyss_7th_anime.ckpt|46aeccd6|44c6b3500ed899a1|
+|Abyss_7th_anime_v1.1.ckpt|4a4a52c4|44c6b3500ed899a1|
 |abyss_7th_layer.ckpt|ffa7b160|9b1907931854c70c|
+|abyss_7th_layerG1.ckpt|ffa7b160|9b1907931854c70c|
 |ACertainModel-half.ckpt|abaf1da6|57ca9c40280a8fd1|
 |ACertainModel.ckpt|0ea1c8b4|c40e679337c4131f|
 |ACertainThing.safetensors|591e1705|5e81aa0fc6a3cd2d|
@@ -28,6 +34,7 @@ BloodOrangeMixも微妙に違うものがあるらしい。
 |autoencoder_kl-f8-trinart_characters.ckpt|6dd0d260|d2dd1c82220e31a7|
 |Baka-DiffusionV1(Fp16).safetensors|3e7d1b89|db63359a4eea3fa7|
 |Baka-DiffusionV1(Fp32).safetensors|de2f2560|f8dbc95b7fae19f9|
+|basil mix.ckpt|4de704d8|bbf07e3a1c3482c1|
 |BerryMix.ckpt|19810fe6|d9691ffffee21e2f|
 |bf_fb_v3_t4_b16_noadd-ema-pruned-fp16.ckpt|03e33bb4|9af4c3a48370286e|
 |BloodNightOrangeMix.ckpt|ffa7b160|f8aff727ba3da035|
@@ -38,12 +45,14 @@ BloodOrangeMixも微妙に違うものがあるらしい。
 |bp_1024_with_vae_te.ckpt|47bb3b77|d5d6e1898fbc0962|
 |bukkake_20_training_images_2020_max_training_steps_woman_class_word.ckpt|b4a14787|1963616104fbc707|
 |cafe-instagram-unofficial-test-epoch-9-140k-images-fp32.ckpt|50b987ae|892cdbb138581f99|
+|cinnamon mix.ckpt|4de704d8|264b0ee316fcb893|
 |Cyberpunk-Anime-Diffusion.safetensors|60851177|ab55b3722e7484e2|
 |Danimaru_step_2000.ckpt|feabb19b|3c8883602224485b|
 |DB-ryza-v1.safetensors|5ec42e28|44dfd378d0ad1fa8|
 |DBNilou01_3002.ckpt|6d3afaf2|e2b57489baca137b|
 |derrida_final.ckpt|eee110cb|42d3f359b02c944c|
 |EimisAnimeDiffusion_1-0v.ckpt|4f828a15|39ee30561fb851b6|
+|EimisSemiRealistic_1-0v.ckpt|aa5943db|26aa17511537f9e9|
 |El-Diablo.safetensors|17be0e58|eca2870384989c7d|
 |ElderOrangeMix.ckpt|3a46a1e0|e9e578f4ee371928|
 |ElyNightOrangeMix.ckpt|6b508e59|c3cdb41298569169|
@@ -73,6 +82,7 @@ BloodOrangeMixも微妙に違うものがあるらしい。
 |latest.ckpt|e6e8e1fc|a7529df02340e5b4|
 |sfw-model.ckpt|1d4a34af|22fa233c2dfd7748|
 |NightOrangeMix.ckpt|ffa7b160|f8aff727ba3da035|
+|pfg.safetensors|e2bc6c56|ca42a7a0094e112f|
 |r34_e4.ckpt|6e45cf2c|182b9a620161dcae|
 |stable-diffusion-1.4.ckpt|7460a6fa|fe4efff1e174c627|
 |trinart_characters_it4_v1.ckpt|d64dab7f|d58058f2c71612aa|
@@ -91,6 +101,9 @@ BloodOrangeMixも微妙に違うものがあるらしい。
 |wd-v1-3-float32.ckpt|4470c325|9dade826203c7ee3|
 |Yaju-senpai-q1-6500.ckpt|b6a25334|dae8b53e1e94588d|
 |yiffy-e18.ckpt|50ad914b|64e242ae67cb1fc8|
+|YuzuLemonChaiLatte_v3.safetensors|0ad90288|68f1c9bb138d9acd|
+|YuzuLemonChaiLatte_v3_fp16.safetensors|fd294ceb|225186d6c6025242|
+|YuzuLemonMilk.safetensors|9ccc4fe2|928d4fbb0e259b40|
 |Zack3D_Kinky-v1.ckpt|1a75d5c6|3fd17af06c610990|
 |Zeipher_bb.ckpt|e02601f3|5841314e270df439|
 |Zeipher_f111.ckpt|7eac8788|6138f9c13c4caaae|
