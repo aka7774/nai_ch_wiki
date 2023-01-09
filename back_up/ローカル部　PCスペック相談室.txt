@@ -59,6 +59,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 2060|12GB|Xeon E5-2650 v2|37.13|36.24|xformers gradio-img2img-tool color-sketch deepdanbooru autolaunch|Batch Count 2, Batch Size 5|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.35|--xformers --opt-channelslast|ライブラリ更新(torch1.12.1+cu116,torchvision0.13.1+cu116) ~~ Batch count 5, Batch size 2|
 |RTX 2060|12GB|Core i7-8700K|38秒|38|xformers|Windows11　ﾒﾓﾘ32GB　anaconda3|
 |Radeon VII|16GB|Ryzen 9 3900X|57秒|56.24||ubuntu 22.04, ROCm 5.2|

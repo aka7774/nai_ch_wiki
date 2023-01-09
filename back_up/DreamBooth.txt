@@ -489,7 +489,16 @@ LR等のステータス設定：LR0.000001、Scale Learning RateON、3000Step、
 
 * パラメーター(?)などの説明
 Google翻訳で
-Training Stable Diffusion with Dreambooth using Diffusers https://huggingface.co/blog/dreambooth#tldr-recommended-settings
-Dreambooth Extension for Stable-Diffusion-WebUI README.md https://github.com/d8ahazard/sd_dreambooth_extension#readme
+Training Stable Diffusion with Dreambooth using Diffusers [[https://huggingface.co/blog/dreambooth#tldr-recommended-settings>>https://huggingface.co/blog/dreambooth#tldr-recommended-settings]]
+Dreambooth Extension for Stable-Diffusion-WebUI README.md [[https://github.com/d8ahazard/sd_dreambooth_extension#readme>>https://github.com/d8ahazard/sd_dreambooth_extension#readme]]
 
-SD Dreambooth Extension についての議論(バグとか動かんとか) https://github.com/d8ahazard/sd_dreambooth_extension/discussions
+SD Dreambooth Extension についての議論(バグとか動かんとか) [[https://github.com/d8ahazard/sd_dreambooth_extension/discussions>>https://github.com/d8ahazard/sd_dreambooth_extension/discussions]]
+
+* DiffuserベースのDreamBooth (Kohya版)
+Automatic1111版web UI とは別に環境つくらなあかんで CUIとGUIも別や
+CUI [[https://github.com/kohya-ss/sd-scripts>>https://github.com/kohya-ss/sd-scripts]]
+GUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
+日本語の説明がある [[https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md]]
+[[https://note.com/kohya_ss/n/nba4eceaa4594>>>https://note.com/kohya_ss/n/nba4eceaa4594]]
+
+出力ファイルは last.ckpt か last.safetensors やで
