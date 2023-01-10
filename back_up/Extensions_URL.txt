@@ -17,6 +17,11 @@ https://seesaawiki.jp/nai_ch/bbs/39211/
 
 - たまにInstalledタブのCheck for updates→Applyを押すと幸せになれるかも
 
+** リスト(一部)
+
+Availableタブ→Extension index URLに以下を入力→Load from:ボタン
+https://gist.githubusercontent.com/aka7774/bb306094dae726a32fbb6c617ddce2c0/raw/d6a3a340e500573444efef061d31ac280dd2370a/1111_Extensions.json
+
 ** アンインストール
 
 フォルダごと消すほうが安全っぽい
@@ -173,13 +178,6 @@ Infotextsに内蔵されている。
 -- anime-segmentation を 1111 で使えるようにしたやつ
 - 画像のファイル名に日本語使うとダメらしい
 - 複数の画像を重ねられる Layer 機能
-** ABG_extension
-
-Katanukiの生成画像版みたいなやつ。
-
-- https://github.com/KutsuyaYuki/ABG_extension
-- Scriptで選択して使う
-- imgとmaskを追加で保存してくれる
 
 ** Merge Numa ★
 

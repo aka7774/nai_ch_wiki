@@ -99,6 +99,31 @@ X/Y Plotで出来る
 
 ※(gape - NAI SFW)にすると臓器のイデアみたいなのを生成するモデルになっちまうから気をつけるんやで
 
+**JNVA109スレ目誕生リアル系モデル
+
+|~配合|~モデルA|~モデルB|~モデルC|
+|0.5|インスタモデル|waifu diffusion1.3||
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/442
+> 442今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4088-/gh/)2022/12/06(火) 18:14:36.02ID:mrCax/lc0~~
+> リアル系と絵画系モデルを混ぜ混ぜするのも楽しいね　インスタとwd1.3~~
+&ref(https://i.imgur.com/C0GTaxh.jpg,200)
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/725
+> 725今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 08f7-9yeH)2022/12/07(水) 00:52:03.68ID:AM9XC0ZW0~~
+> >>442~~
+> 同じやり方で0.5:0.5でやってみてるけどこれすげぇわ~~
+> 何もしないでやると基本的に日本人出てくるから、~~
+> blonde hairにしたり、ネガティブにjapanese入れたら外人さん出てくる~~
+&ref(https://i.imgur.com/ocKzRTK.png,200)
+
+**126スレ799 柚子BASIL
+https://fate.5ch.net/test/read.cgi/liveuranus/1673176819/799,803,818,827,832,833
+>柚子バジルや~~
+>true cubicかtrue reverse cuvicで混ぜたやつ~~
+&ref(https://majinai.art/i/fO12jv-.png,200)
+
+
 **任意のモデルをinpaintingモデル化
 Runwayのinpaintingモデルはinpaint/outpaint時に使用すると継ぎ目が目立ちにくくなる特徴がある
 このモデルに普段使用するモデルとSD1.5との差分を加えるとこの特性を保ったまま目的のモデルの画風に寄せる事が出来る
@@ -144,23 +169,6 @@ anything and everything mix ver.1.5ベースのGape+NAIモデルです。
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/nNTKja2ud6.jpg,450)
 
-***JNVA109スレ目誕生リアル系モデル
-
-|~配合|~モデルA|~モデルB|~モデルC|
-|0.5|インスタモデル|waifu diffusion1.3||
-
-https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/442
-> 442今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4088-/gh/)2022/12/06(火) 18:14:36.02ID:mrCax/lc0~~
-> リアル系と絵画系モデルを混ぜ混ぜするのも楽しいね　インスタとwd1.3~~
-&ref(https://i.imgur.com/C0GTaxh.jpg,200)
-
-https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/725
-> 725今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 08f7-9yeH)2022/12/07(水) 00:52:03.68ID:AM9XC0ZW0~~
-> >>442~~
-> 同じやり方で0.5:0.5でやってみてるけどこれすげぇわ~~
-> 何もしないでやると基本的に日本人出てくるから、~~
-> blonde hairにしたり、ネガティブにjapanese入れたら外人さん出てくる~~
-&ref(https://i.imgur.com/ocKzRTK.png,200)
 
 ***117スレ398 AbyssOrangeMix
 レシピ：huggingfaceを参照
@@ -273,17 +281,35 @@ https://huggingface.co/nuigurumi/cinnamon_mix
 
 ***125スレ696 FruitsMix
 https://fate.5ch.net/test/read.cgi/liveuranus/1673029370/696-n
+https://huggingface.co/poyo23/FruitsMix
 >自分用にマージモデル62個huggingfaceにぶちこんだからついでに公開設定にした~~
 >全然整理できないわ~~
-https://huggingface.co/poyo23/FruitsMix
 
 ***125スレ843 AbyssOrangeMix2
 https://fate.5ch.net/test/read.cgi/liveuranus/1673029370/843-n
+https://huggingface.co/WarriorMama777/OrangeMixs
 >AbyssOrangeMix2をアップロードしました~~
 >階層マージの素材にインスタF222ではなくBasilMixを使用したのと、IN深層を追加したモデル~~
 >それからElysiumAnimeV2ベースで従来の階層マージの手法でマージしたモデルもちょっと前にアップロードしてた（EerieOrangeMixってやつ）~~
 >詳細は全部huggingfaceに書いてる。例によって英語だけど翻訳したらええ感じになるようにしてるからたぶん大丈夫なはず~~
-https://huggingface.co/WarriorMama777/OrangeMixs
+
+
+***126スレ835 tanpopo_mix
+https://fate.5ch.net/test/read.cgi/liveuranus/1673176819/835-n
+https://huggingface.co/Inu-Fuguri/tanpopo_mix/
+>誰かワイのマージモデル使ってみてクレメンス~~
+>線の細さとちょっとロリが出やすい感じを目指してみたで~~
+&ref(https://i.imgur.com/lopxkZA.png,200) &ref(https://i.imgur.com/QVtffLK.png,200) &ref(https://i.imgur.com/5490hdX.png,200)
+
+***127スレ490 Almond_mix
+https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/490
+https://huggingface.co/nuigurumi/Almond_mix
+>新しいマージモデル(作ったのはだいぶ前だけど)を公開にしたで~~
+>Anyの可愛い顔をそのまま、もうちょっと汎用性と細部の精細さを持たせようとしたモデルや~~
+&ref(https://i.imgur.com/60oq3v0.png,200) &ref(https://i.imgur.com/LN1vnQd.png,200)
+
+>前貼ったけどえっちなやつ~~
+&ref(https://i.imgur.com/8C8BIHC.jpg,200)
 
 
 *叡智/Tips 一覧
