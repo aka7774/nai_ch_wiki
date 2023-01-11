@@ -170,6 +170,19 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|ariake|有明|これにcityを付けた場合、東京都江東区の有明（レインボーブリッジやビッグサイトみたいなものが併設される）。countrysideを付けた場合、長野県安曇野市の有明（北アルプスと田園が合わさった安曇野の景色みたいなもの）。seaを付けた場合、長崎県の有明海が出る。強さは長野県有明＞東京有明＞有明海。東京有明にはたまに北アルプスが附属してくる。有明海には北アルプスに加え、たまにレインボーブリッジが附属してくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_boKkaUv85-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_boKkaUv85.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RDkRprZ9uc-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/RDkRprZ9uc.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yXD9Z36H2F-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yXD9Z36H2F.png]]|
+|enoshima|江の島|一般的な島の風景か、島から見た都市部みたいな風景が出る。なお、人物とともに生成する際、画風が青春ブタ野郎にほぼ固定される。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N6qwANCQtS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/N6qwANCQtS.png]]|
+|tsukiji, city,|築地|右の画像のような古民家と都市が融合したものか市場ぽいものが出る。上空写真の場合はお台場や豊洲のような臨海副都心の風景が出る。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RANpNOS17O-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/RANpNOS17O.png]]|
+|futenma|普天間|沖縄の風景が出るが、時々アメリカ（米軍）要素も付いてくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1lONGqitc3-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1lONGqitc3.png]]|
+|tateyama, sea, city,|館山|seaとcityと入れることで館山と認識し、それっぽい景色になる。ただし立山の要素も時々混ざる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/621ByWglfg-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/621ByWglfg.png]]|
+|tateyama|立山|山の中の景色が生成される。道もよく附属してくる。たまに館山とごっちゃになり海も附属される。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3Kl1tq9TOn-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3Kl1tq9TOn.png]]|
+|himeji, city,|姫路|城っぽい何かが生成される。inuyamaやhikoneでも同じような街がでるが城までは出ない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/i0YzxpBeRl-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/i0YzxpBeRl.png]]|
+|urawa, city,|浦和|看板や人物等が赤くなる。上空写真の場合はサッカー場みたいなものが附属される。cityを入れないと風景として生成されにくくなるが、赤色の何かが生成される。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vGg_HvwbDS-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/vGg_HvwbDS.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zl6fASlePx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/zl6fASlePx.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eoz5nwng2h-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/eoz5nwng2h.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Ddoj8DSdC4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Ddoj8DSdC4.png]]|
+|kusatsu|群馬県草津町（草津温泉）|温泉っぽいもの（ただの池）か、旅館ぽいものが出る。cityを入れると滋賀県草津市と融合することがある。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Kv4lspIH2J-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Kv4lspIH2J.png]]|
+|matsumoto, city,|松本|城下町風なものが出るが、そのままだと横長縦長関わらず上空写真が非常に出やすい。サンプル画像はnightを足したもの。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yIg0eGh1sd-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/yIg0eGh1sd.png]]|
+|kabukicho|歌舞伎町|新宿の繁華街がshinjuku指定よりも強く出る。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WXbE2yt46y-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/WXbE2yt46y.png]]|
+|kawagoe|川越|小江戸の街並み|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IxZoDOOEWN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IxZoDOOEWN.png]]|
+|hannou, city,|飯能|%%飯能ではない%%北欧風の風景が出る。おそらく、飯能→ムーミンバレーパーク→フィンランド→北欧。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DNqGll5QIa-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/DNqGll5QIa.png]]|
 |iriomote|西表島||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RrIHEIr4On.png)|
 |okinawa|沖縄||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/teNG4TrIcr.png)|
 |taketomi|竹富島|時々地図が出る|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jbhG9rDji9.png)|

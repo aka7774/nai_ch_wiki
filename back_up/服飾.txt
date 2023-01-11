@@ -273,6 +273,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|hanbok|韓服|forehead, hair pulled backを合わせている。日中韓の民族服が混じっている気がする。若干仙女っぽい|https://i.imgur.com/z4bQBvW.png|
+|hanfu|漢服|twintails ,　double bun , flower ornament on hair等を追加している。白地の服に黒帯の服装になりやすい|https://i.imgur.com/jfzslRb.png|
 |{bellydancer},veil, {{mouth visible through veil}},{covered  mouth_veil},sheer_face,sheer_form|ベリーダンサー（改修中）|ネガティブに,surgical mask,[hold mouth],hair ribbon, condom, tongue,{put into mouth},pregnant,food,cigarettes,mouth lift,hood　改修受付中|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pmlCBznLMy-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pmlCBznLMy.png]]|
 |niqab|ム〇リム女性が着る黒い衣装|取り合えず変な検索にひっかからないよう伏字に。問題あったら編集しといてください|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8J4heokxTQ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/8J4heokxTQ.png]]|
 |bellydancer,veil|ベリーダンサー|フェイスヴェール(face veil)は機能しなかった、情報求。妊娠しがちになるからネガティブにpregnant推奨|https://image02.seesaawiki.jp/n/h/nai_ch/oySy4aJgKJ.png|
