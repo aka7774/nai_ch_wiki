@@ -17,6 +17,7 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 +https://rentry.org/sdmodels ~~ここ見ときゃいい感はある。膨大な量のリンク集
 +Models - Hugging Face - https://huggingface.co/models?pipeline_tag=text-to-image&sort=modified
 +/hdg/ Stable Diffusion Models Cookbook - https://rentry.org/hdgrecipes#g-anons-unnamed-mix-e93c3bf7 ~~海外ニキによる様々なマージモデルの一覧
++https://rentry.org/hdgfaq ~~スレでよく話題に出るCondom Belt(Embed)とか各種有用Embed＆HyperNetwork等
 
 * データセット
 
@@ -153,6 +154,12 @@ HyperNetwork
 まとめてダウンロードすることができます。※Git、またはGithubDesktopでクローンリポジトリしてください。
 
 ----
+
+** 128スレ184 SD着ぐるみパジャマ部
+https://huggingface.co/gyungyun/mist-sd/tree/main
+https://majinai.art/i/2UnRCMI.webp
+&ref(https://imgur.com/nfnfsaP.png,200) &ref(https://imgur.com/CVaJ4eK.png,200) &ref(https://imgur.com/sSjW0K4.png,200)
+>hn公開したから使ってみてや~~
 
 * TextualInversion
 ローカル部[[TextualInversion]]

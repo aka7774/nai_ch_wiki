@@ -140,18 +140,16 @@ https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/v1-5-pruned.ckpt
 
 注意点は、ファイル名の末尾がinpainting.ckptになってないと実行時にエラーが出ること(safetensorsはNG)
 このモデルを使用してinpaintをする場合は、Masked contentをlatent noiseにしてDenoising strengthを1にするといい
-* マージモデル一覧
 
+* マージモデル一覧
 →スレ民共有モデルの項目を作りました。ダウンロード可能な状態であればなんでも掲載OKです。
 レシピだけの場合は、マージレシピに掲載してください。
 
-** マージモデル
-
-
-** スレ民共有モデル｜なんでも掲載OK
+* スレ民共有モデル｜なんでも掲載OK
 ニキたちのとっておきのマージモデルとかを軽率に掲載するところ
 
-***BloodOrangeMix
+**BloodOrangeMix
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cB3pMiSVRd.jpg,450)
 [[ローカルのマージ]]で紹介されているAnythingおすすめマージモデルを、海外ニキを参考にして適当に名前をつけただけのものです。
 マージめんどくさいとか用に置いときます。
 
@@ -160,7 +158,7 @@ https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/v1-5-pruned.ckpt
 &#128317;https://pixeldrain.com/u/nd61VQ2c　※60日でリンク切れます
 他参照：[[大量検証結果]]：〃
 
-***ElderOrangeMix
+**ElderOrangeMix
 anything and everything mix ver.1.5ベースのGape+NAIモデルです。
 レシピ：huggingfaceを参照
 &#128317;https://huggingface.co/WarriorMama777/OrangeMixs
@@ -170,7 +168,8 @@ anything and everything mix ver.1.5ベースのGape+NAIモデルです。
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/nNTKja2ud6.jpg,450)
 
 
-***117スレ398 AbyssOrangeMix
+**117スレ398 AbyssOrangeMix
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aznCql7C_8.jpg,450)
 レシピ：huggingfaceを参照
 &#128317;https://huggingface.co/WarriorMama777/OrangeMixs
 
@@ -180,7 +179,7 @@ https://huggingface.co/WarriorMama777/OrangeMixs
 >階層マージを取り入れたモデルをアップしたで。名前は途中のレスから引用させてもらってAbyssOrangeMixにした~~
 >今の段階でのNVA部の成果みたいな感じで使ってもらってさらなる叡智を目指そう~~
 
-***117スレ459 etr_odyssey 
+**117スレ459 etr_odyssey 
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/459
 >459今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cd62-s0Sd)2022/12/25(日) 06:46:56.73ID:ZMY24xyo0~~
 >ttps://mega.nz/file/GVRTQJKI#Y5Bn826c_H6O4o9r9GT474Sa_AEhuqfX5Wvw5fGrDC0~~
@@ -191,7 +190,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/459
 &ref(https://i.imgur.com/OETKVK1.png,200)
 &ref(https://i.imgur.com/OkujSyk.png,200)
 
-***117スレ472 7th_Layer (abyss_7th_layer)
+**117スレ472 7th_Layer (abyss_7th_layer)
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/134
 >116スレの754のAをナイトオレンジと取り替えたら出来結構いいままでブロンプトとかめっちゃ効きやすくなったからおすすめするで~~
 >高解像度補助とネガにワーストクオリティとロークオリティ(あと一応バッドブロンプト)おすすめや~~
@@ -215,20 +214,20 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/472
 >t2iで一回出したあとi2iでメチャクチャ詰めた勝負をする奴用や~~
 https://huggingface.co/syaimu/7th_Layer/tree/main
 
-***117スレ516 El-Diablo
+**117スレ516 El-Diablo
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/516
 >マージモデルにはカッコいい名前付けなあかんのか~~
 >ならワイのAnyNaiにdanbooruタグの効くインスタ2とDreamlikeを階層マージしたモデルは”El†Diablo〜漆黒の悪魔〜"って名乗るわ~~
 &ref(https://i.imgur.com/NptulYJ.png,200) &ref(https://i.imgur.com/X9Lyn2h.png,200) &ref(https://i.imgur.com/mPJLXyG.png,200)
 
-***117スレ705 bw-merge-bw-merge-ACertainModel-half-bw-merge-Elysium_V1-f222-0-0-bw-merge-EimisAnimeDiffusion_1-0v-gape60-fp16-0-1.ckpt
+**117スレ705 bw-merge-bw-merge-ACertainModel-half-bw-merge-Elysium_V1-f222-0-0-bw-merge-EimisAnimeDiffusion_1-0v-gape60-fp16-0-1.ckpt
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/705
 >ワイはとりあえず実写マージでインスタ使うとぼやけるから別のでやってみたわ~~
 >そこそこくっきりしてると思う~~
 &ref(https://majinai.art/i/3zKiZqD.png,200) &ref(https://majinai.art/i/8kLUKWM.png,200)
 >abyssほどええのじゃないけどサンプル~~
 
-***117スレ884 7th_Layer_G1 (abyss_7th_layerG1)
+**117スレ884 7th_Layer_G1 (abyss_7th_layerG1)
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/884
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/885
 https://huggingface.co/syaimu/7th_Layer/tree/main
@@ -238,7 +237,7 @@ https://huggingface.co/syaimu/7th_Layer/tree/main
 &ref(https://i.imgur.com/7WqIJBL.jpg,200) &ref(https://i.imgur.com/fRWIMb1.jpg,200)
 
 
-***118スレ584 7th_Layer_anime(abyss_7th_anime)
+**118スレ584 7th_Layer_anime(abyss_7th_anime)
 https://fate.5ch.net/test/read.cgi/liveuranus/1672034918/584
 https://fate.5ch.net/test/read.cgi/liveuranus/1672034918/637
 https://huggingface.co/syaimu/7th_Layer/tree/main
@@ -251,7 +250,7 @@ https://huggingface.co/syaimu/7th_Layer/tree/main
 >他のアニメ塗りモデルやOUT11層を弄ったらマシになるかもしれん~~
 >研究中や~~
 
-***119スレ375,417 cinnamon_mix
+**119スレ375,417 cinnamon_mix
 https://fate.5ch.net/test/read.cgi/liveuranus/1672160740/375
 https://fate.5ch.net/test/read.cgi/liveuranus/1672160740/417
 https://huggingface.co/nuigurumi/cinnamon_mix
@@ -260,14 +259,23 @@ https://huggingface.co/nuigurumi/cinnamon_mix
 >操作性もそこそこ高い気がする~~
 &ref(https://i.imgur.com/j7lIDyI.png,200)
 
-***122スレ226 YuzuLemonTea
+**122スレ226 YuzuLemonTea
 https://fate.5ch.net/test/read.cgi/liveuranus/1672654440/226
 https://huggingface.co/thiros/YuzuLemonTea
 >諸事情でhuggingfaceにマージモデルあげることになったんで折角だからニキたちも見てやってくれや~~
 >majinaiのプロンプトそのまま引っ張ってきてこんな感じ~~
 &ref(https://i.imgur.com/Jsxv99B.jpg,200)　&ref(https://i.imgur.com/MSIKW3B.jpg,200)　&ref(https://i.imgur.com/IkDciao.jpg,200)　&ref(https://i.imgur.com/OAzY1jj.jpg,200)　&ref(https://i.imgur.com/DXiwmaM.jpg,200)　&ref(https://i.imgur.com/4O2Its6.jpg,200)　&ref(https://i.imgur.com/Lt6puNq.jpg,200)
 
-***123スレ280 basil_mix
+**122スレ560 7th_anime_v2
+https://fate.5ch.net/test/read.cgi/liveuranus/1672654440/560
+https://huggingface.co/syaimu/7th_Layer
+>比較画像とTest系のやつをV2としてアップしたで~~
+>7th_anime_test01→7th_anime_v2.0A~~
+>7th_anime_test02→7th_anime_v2.0B~~
+>7th_anime_test03→7th_anime_v2.0C~~
+>とりあえず中身は同じや~~
+
+**123スレ280 basil_mix
 https://fate.5ch.net/test/read.cgi/liveuranus/1672807546/280
 https://huggingface.co/nuigurumi/basil_mix
 >年末辺りに画像貼った気がするモデルを公開したで~~
@@ -279,13 +287,16 @@ https://huggingface.co/nuigurumi/basil_mix
 &ref(https://i.imgur.com/ws0MIKp.png,200)
 https://huggingface.co/nuigurumi/cinnamon_mix
 
-***125スレ696 FruitsMix
+**125スレ696 FruitsMix
 https://fate.5ch.net/test/read.cgi/liveuranus/1673029370/696-n
 https://huggingface.co/poyo23/FruitsMix
 >自分用にマージモデル62個huggingfaceにぶちこんだからついでに公開設定にした~~
 >全然整理できないわ~~
 
-***125スレ843 AbyssOrangeMix2
+**125スレ843 AbyssOrangeMix2,EerieOrangeMix
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EKBJ6I99P_.jpg,450)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rr7RC5cE5g.jpg,450)
+
 https://fate.5ch.net/test/read.cgi/liveuranus/1673029370/843-n
 https://huggingface.co/WarriorMama777/OrangeMixs
 >AbyssOrangeMix2をアップロードしました~~
@@ -293,15 +304,23 @@ https://huggingface.co/WarriorMama777/OrangeMixs
 >それからElysiumAnimeV2ベースで従来の階層マージの手法でマージしたモデルもちょっと前にアップロードしてた（EerieOrangeMixってやつ）~~
 >詳細は全部huggingfaceに書いてる。例によって英語だけど翻訳したらええ感じになるようにしてるからたぶん大丈夫なはず~~
 
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xzQFh_q6oT.jpg,450)
 
-***126スレ835 tanpopo_mix
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AzqoY9DEAK.jpg,450)
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Vt6tcqQ8JA.jpg,450)
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/rFF0e8obLM.jpg,450)
+
+
+**126スレ835 tanpopo_mix
 https://fate.5ch.net/test/read.cgi/liveuranus/1673176819/835-n
 https://huggingface.co/Inu-Fuguri/tanpopo_mix/
 >誰かワイのマージモデル使ってみてクレメンス~~
 >線の細さとちょっとロリが出やすい感じを目指してみたで~~
 &ref(https://i.imgur.com/lopxkZA.png,200) &ref(https://i.imgur.com/QVtffLK.png,200) &ref(https://i.imgur.com/5490hdX.png,200)
 
-***127スレ490 Almond_mix
+**127スレ490 Almond_mix
 https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/490
 https://huggingface.co/nuigurumi/Almond_mix
 >新しいマージモデル(作ったのはだいぶ前だけど)を公開にしたで~~
@@ -311,21 +330,37 @@ https://huggingface.co/nuigurumi/Almond_mix
 >前貼ったけどえっちなやつ~~
 &ref(https://i.imgur.com/8C8BIHC.jpg,200)
 
-***127スレ357,409,555 7th_test
-https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/357,409,555,655
-https://huggingface.co/syaimu/7th_test
+**127スレ357,409,555,655 7th_test
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/n1R2SZsutM.png,450)
 
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xjNtiap3oU-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xjNtiap3oU.png]]
+https://huggingface.co/syaimu/7th_test
+https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/357
 &ref(https://i.imgur.com/LsG12FL.jpg,200)
 >非常に難しい判断を要求されている~~
 >どうや~~
-
+https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/409
 >どうや？　デカチチ選別版やで~~
 &ref(https://i.imgur.com/1dwL1aa.jpg,200)
-
+https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/555
 >a4bmo0_nai81140_o0 →7th_anime_v3_testA~~
 >a4bmo0_nai8o0_o0 →7th_anime_v3_testB~~
 >ano_3_o0 →7th_anime_v3_testC~~
 >って名前で今アップしとるからテストで使ってみてくれればええで~~
+https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/655
+>あげたテストモデルのリンク張っとくで~~
+https://huggingface.co/syaimu/7th_test
+
+**129スレ185 7th_anime_v2.5_B
+https://huggingface.co/syaimu/7th_Layer
+https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/185
+>7th_anime_v2.5_B~~
+>https://i.imgur.com/xEBcnvV.png~~
+>https://i.imgur.com/gISak4v.png~~
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/77r_UdHMXq.png,450) 
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UKmtELxY36.png,450)
+
 
 
 *叡智/Tips 一覧

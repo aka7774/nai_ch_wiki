@@ -17,7 +17,7 @@ https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension
 説明は[[ここ>https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/4334]]。
 ただし、モデルのマージと違い｢画像を生成する時に指定したhypernetworkをロードしながら処理を行う｣ために画像1枚生成する時間がもの凄く長くなりあまり実用的ではない。
 - 学習画像のサイズの変更やクロップをしなくても学習出来る機能
-内部的には長辺のサイズを学習の設定で指定したサイズにし学習を行う。''注意点としてはbatch sizeは1にすること''。
+内部的には長辺のサイズを学習の設定で指定したサイズにし学習を行う。%%''注意点としてはbatch sizeは1にすること''%%。 (2023-01-12現在、この制限はなくなりました)
 - Optimizerをアンロードしてメモリ不足エラーが発生する可能性を減少。 (VRAM8GBでも学習可能になるっぽい)
 
 ** Beta hypernetwork

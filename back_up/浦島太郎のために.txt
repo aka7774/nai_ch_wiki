@@ -16,7 +16,7 @@
 現在は復旧した。
 - https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
-原因はご本人がどっかのディスコで語ってた気がする(ソース失念)
+原因はご本人曰く、[[wikiに掲載されていたリンクにアダルトなコンテンツがあったため>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Textual-Inversion#finding-embeddings-online]]。
 
 一次避難先だったところ。
 GitHubをメインに使っててGitGUDは古いまま放置されている様子。

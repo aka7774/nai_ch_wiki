@@ -140,8 +140,8 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 
 https://note.com/uunin/n/n715256399038
 
-スレでたまに紹介されている。こちらも環境を汚さずに独立した環境でインストール出来る模様。
-Python公式以外からのバイナリ入手が安全とは断言できないので、ベストな手段としてはお勧めできないが、ほかの方法でダメならどうぞ。
+スレでたまに紹介されている。こちらも環境を汚さずに独立した環境でインストール出来る模様。初心者向け(？)の解説付き。
+ただ、Python公式以外からのバイナリ入手が安全とは断言できないので、ベストな手段としてはお勧めできないが、ほかの方法でダメならどうぞ。
 トラブルがあってもwikiでは対応できないので、noteのコメントで相談しましょう。
 
 ** A1111 WebUI Easy Installer and Launcher
@@ -177,7 +177,7 @@ CG板で使ってみた人がいいかもって言ってた。
 - Seed: 2870305590
 - ポジティブプロンプト欄に「masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair」
 - ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name」
-- Ignore last layers of CLIP modelを「2」にする
+- Clip skipを「2」にする ※古いWEBUIの場合は(Ignore last layers of CLIP modelを「2」にする
 - (Euler-Aも一致させたい場合、ETA Noise Seed Deltaを「31337」にする)
 
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/0ki5ejUnR6.png)
@@ -326,6 +326,18 @@ COMMANDLINE_ARGS=--precision full --no-half --no-half-vae --medvram
 - CLIP インテロゲーターは多くのスペース (8 GB) を占有します。頻繁に使用する予定がない場合は選択しないでください。
 - 興味深い出力のためにimg2imgで低強度(0.3-0.4)+高CFGを試してみてください
 - プロンプトで日本語の Unicode 文字を使用できます。
+
+**UIの日本語化
++画面上部メニューの「Extension」タブをクリック
++Installed,Avaliable,Install from URLと書かれた中の「Avaliable」をクリック
++「localization」の左側のチェックマークをクリック（チェックを外す）
++「Load from:」ボタンをクリックしてしばらく待つ
++表示されたExtensionリストの中から「ja_JP Localization」を探して、右側にあるInstallボタンをクリック
++画面上部メニューの「Settings」タブをクリック
++画面左のメニューの中から「User Interface」を探してクリック
++画面右側に表示された各種設定の下の方にある「Localization (requires restart)」の「None」の所をクリックして「ja_JP」にする。
++画面上の方にある「Apply settings」を押す。
++1 settings changed: localization.　と表示が出たら画面上の方にある「Reload UI」を押す。
 
 
 * バージョンを戻す方法

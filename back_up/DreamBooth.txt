@@ -1,6 +1,53 @@
 * 概要
 読解不明の謎文しかないので、今はとりあえず[[ローカルの学習入門]]かとしあきDiffusionを参照することを推奨。
+* Dreambooth Extension for Stable-Diffusion-WebUI
+2023-01-12版説明
+アップデートでいろいろ変わるので stable-diffusion-webui\models\dreambooth\モデル名\db_config.jsonをよく見ような
+設定項目多いけど落ち着いて 画像も貼りたいけどクソ長でうまいやり方が思いつかん
+とりあえず動く数値だけ
 
+**学習させるモデルを選ぶ
+Dreembooth タブの Input > Create タブで
+名称 名前を付ける
+Source Checkpoint モデルを選ぶ
+
+Create Model を押す
+**学習の設定 その1
+Imput > Concepts タブで
+-Directories
+--Dataset Directory: 学習用画像のあるディレクトリを指定する
+--Classification Dataset Directory: 正則化画像のあるディレクトリを指定する
+-プロンプト
+--Instance Prompt: 
+--Class Prompt: 
+-Image Genaration
+--Class Images Per Instance Image: 0
+**学習の設定 その2
+Input > 設定 タブで
+***Basic
+-General
+--Use LORA: LORAを使用する場合はオン
+--Train Imagic Only: 画像1枚のときはチェック(未検証)
+--Generate Classification Images Using txt2img: オフ
+-Intervals
+--Training Steps Per Image (Epochs): 100 
+--Save Model Frequency (Epochs): 適宜
+--Save Preview(s) Frequency (Epochs): エラーが出る場合は0
+-Learning Rate
+--Learning Rate Scheduler: constant_with_warmup
+--Learning Rate: 0.000002
+***Advanced
+-*Tuning
+--Use EMA: マージモデルを使う場合オン
+--Use 8bit Adam: オン
+--Mixed Precision: fp16
+--Memory Attention: xformers
+**学習の設定 その3
+Input > Saving タブで
+-Generate a .ckpt file when training completes.: オン
+
+全部設定できたら
+学習 ボタンをクリック
 * とある技術部の記録
 画像貼れないのでログのコピペだけ。
 [+]

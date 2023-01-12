@@ -4,6 +4,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|意味|備考|サンプル|
+|1girl, {{{urawa}}},||浦和レッズっぽい服|髪色と目の色を指定しないと、版権キャラでも赤髪赤眼になることがあるので指定。出にくい場合はこれにred shirtを追加すること。cityも入れた方がいいかもしれない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jMhezpLN6t-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/jMhezpLN6t.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JCK6gVBlbo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/JCK6gVBlbo.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kHgfGCbzHV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/kHgfGCbzHV.png]]|
 |ballgown, sweet lolita, puffy sleeves|cleavage, cleavage cutout, bare shoulders|甘ロリ、姫ロリ|かなり安定して甘くなる|https://image01.seesaawiki.jp/n/h/nai_ch/pVEl6E3Nfr.png|
 |Sexy Swashbuckler Captain||女海賊風||https://image02.seesaawiki.jp/n/h/nai_ch/YmgBZmtAFJ.png|
 |{{fusion shinny paraphilia and latex corset leotard garter_straps long gloves long boots belt collar}}||コルセットボンデージ装束|「leotard」の傍に「corset」を配置する事で、レオタードとコルセットが一体化したようなデザインになる。勿論、レオタードの上にコルセットを巻いたデザインになる事もある|https://image02.seesaawiki.jp/n/h/nai_ch/wkv0LYmzUP.png|
@@ -29,7 +30,6 @@
 |school swimsuit,sleeveless,||袖なしスクール水着|水着を生成している時に出現しがちなシャツの袖のような表現が有意に減る。||
 |frills, white shirt, {{black corset}}, {sleeveless}, &#91;lolita fashion], pleated skirt, {{{{{pink skirt}}}, mini skirt, black thighhighs,garter belt,||アイドル衣装||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0KDC0JqzCp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/0KDC0JqzCp.png]]|
 |{lens 135mm f1.8} ,{{{beautiful detailed background}}}, {{{Night in Park bench}}} ,{heavy rain},~~outdoor, reflective,{{{{enlarged breasts}}}},{{{{{beautiful detailed showing face}}}}}~~,nsfw,looking at viewer,looking away, {{{{glare at}}}},{{{despise}}} ,cowboy shot,wet,night,{{blush}},~~{{{{{{Close the front of your raincoat}}}}}},baggy clothes,~~{{{loose}}}, {{{beautiful detailed enameled material}}}, {{{high transmittance black raincoat}}},~~{{{{{large cleanness black raincoat}}}}}, {{{{{see through}}}}},{{{{{see through large black raincoat}}}}},~~ {{{{upturned small breasts}}}},{{{half-open mouth}}},{{{become frightened}}}, {{{{excitement}}}},{{{ecstasy}}},~~{{beautiful detailed very short hair&#40;wavy)}},{{{{{beautiful detailed dark eyes}}}}},{evil eyes},~~&#91;evil smile],&#91;&#91;half-closed eyes]],drooling,{salivation},many line in hair,shiny skin,&#91;&#91;oily skin]], {{{wet hair}}}~~,dampness,{puffy nipples},&#91;beautiful detailed realistic], squatting,|{{{{{tights}}}}},{{{clothes}}},{{{white shirt}}},{{{black shirt}}},~~shirt, {{Cutter shirt}},panties,{{{bodysuit}}},~~{{{{It fits perfectly}}}~,pussy,{{nipple}},parting of the hair, inner,~~{{{{snugly}}}}}},Clothes stick together,{{{{{{{take off your clothes}}}}}}}~~,loli,{{{text}}}, {{{multiple views}}}, costume chart, {{{variations}}},collapse,~~covering chest by hand,lowres, bad anatomy,~~bad hands, error, missing fingers, extra digit, fewer digits,worst quality,~~ low quality, normal quality,blurry,thick eyebrows,pubic hair,male pubic hair,jpeg artifacts,~~signature,watermark,username,artist name,boy,1boy|全裸透けレインコート||https://image01.seesaawiki.jp/n/h/nai_ch/T1VeTwDMWO.jpg|
-||||||
 |shiny black  jump suits, unbuttoned,||峰不二子スーツ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xcvRaMw2kZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xcvRaMw2kZ.png]]|
 |1girl, solo, hyper paint, rough design, flat color, mechanical body, 8k,||ハイパーマシンスーツ||https://image01.seesaawiki.jp/n/h/nai_ch/0V60Xvdwr5.png|
 |nsfw &#40;masterpiece:1.77) highres best quality~~ &#40;glitter anime &#40;detailed eyes:1.2)) hair ornament open mouth fang~~ adult comic standing pose lingerie &#40;frills:1.2) &#40;body writing:1.4) &#40;cupless bla)~~ &#40;areolae) &#40;areola slip) &#40;see through:1.2) oiled shiny skin outdoors gothic lolita face|worst quality low quality censored~~ ahegao alternative text|エロ下着||https://image01.seesaawiki.jp/n/h/nai_ch/vF4s7vtSCM.png|
@@ -118,6 +118,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|mini body con|ミニボディコン|ボデイコンにはなりますが、スカートにならなかったり、セパレートドレスになったりガチャ要素が増します（普通に下二つみたいな感じになることが多いです）。|https://image01.seesaawiki.jp/n/h/nai_ch/NL7Fa_47OG.png　https://image02.seesaawiki.jp/n/h/nai_ch/Cth0ImXGU1.png|
+|bare top mini dress, tube top,|チューブトップのボディコン|これでも肩紐が出る場合があります。|https://image02.seesaawiki.jp/n/h/nai_ch/0Npbo3shBX.png　https://image01.seesaawiki.jp/n/h/nai_ch/r6PSzSek_D.png|
+|bare top mini dress|ベアトップミニドレス（いわゆるボディコン）|ベアトップのはずなのに肩紐とか描写されてしまいます。latexを追加するとテカリが出てエロさが増します。|https://image01.seesaawiki.jp/n/h/nai_ch/LKVSkP4NQt.png　https://image02.seesaawiki.jp/n/h/nai_ch/T85CUP0RrI.png|
 |ballgown|舞踏会ドレス、お姫様ドレス|ball（舞踏会）用のgown（婦人の正装）。いわゆる「お姫様ドレス」。ballとgownの間に空白は不要。Danbooruタグには存在しない単語だからか、版権タグと併用すると打率が低くなりがちかも。|https://image01.seesaawiki.jp/n/h/nai_ch/hND7GyfEbY.png|
 |gothic lolita|ゴシックロリータ|ロリータ系はゴシックに寄りがち。甘ロリ（sweet lolita）と指定してもモノトーンになることが多い。肩出しになるかはランダムだが、胸元が露出するのは共通している。強調するとフリルが増える傾向がある。|https://image01.seesaawiki.jp/n/h/nai_ch/qqN6v11vGf.png|
 |party dress,cocktail_dress|パーティドレス||https://image01.seesaawiki.jp/n/h/nai_ch/DSxQUkqmy7.png|
@@ -181,7 +184,7 @@
 |cleavage, {{breasts_bandages}}, navel|晒|手足を露出してると取り合えず包帯ぐるぐるにするのでなんらかの指定をした方が良い。ネガティブにhalter,bra,leotard,ribbons,bikini,corset,{arm _bandages}, knot,sport bra|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/szTXaItwP_-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/szTXaItwP_.png]]|
 |thin ribbed_panties|リブ生地パンツ|紐パンを回避するならcottonを追加する|https://image01.seesaawiki.jp/n/h/nai_ch/rfGHpUqttW.png|
 |{,chunked  wide print diaper},&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;nsfw]]]]]]]]]]]]]]|腰までしっかりと履くタイプのパンツ（おばパン・お子様パンツ）|toplessあたりを付けないと結構な確率で水着のようなものが出てくる。nsfwの[]はこれぐらいつけないと普通のパンツにされたりします。逆にnsfwをつけないとデニムパンツのお尻画像になったりします。flat chestをつけることでお子様パンツ感が出てきてくれます。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/R50Ld09TeM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/R50Ld09TeM.png]]|
-|full back panties|フルバックショーツ|negativeにback辺りを入れないと高確率で後ろ向き|https://image01.seesaawiki.jp/n/h/nai_ch/KaB2FIh4Kv.png|
+|{{{{{full panties}}}}}|フルバックショーツ|色や形状を変更したいならblue frilled {{{{{full panties}}}}}などと入力する。パンツ系のご多分に漏れずsquattingやlie proneと相性がいい。UCは{{{{{wedgie}}}}},{{{thong}}},{{{g string}}},{{side tie panties}}|https://image01.seesaawiki.jp/n/h/nai_ch/KaB2FIh4Kv.png|
 |bloomers|ドロワーズ|UC：panties|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FSnpgqtYag-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FSnpgqtYag.png]]|
 |print elasticized cotton panties|ピコゴム付きプリントパンツ|printの前に柄や色を入れて指定する事も可能。クロッチ部分を柄無しにしたいなら「Unpatterned crotch seam」を追加。|https://image01.seesaawiki.jp/n/h/nai_ch/HbrDR0R8p7.png|
 |diaper|おむつ|女児ショーツに近いものがよく出る||
@@ -233,7 +236,6 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-|||||
 |crotch seam~~panties under pantyhose|パンスト越しのパンツ|パンツとパンストの組み合わせが安定する|https://image01.seesaawiki.jp/n/h/nai_ch/nAUwnFIeY2.png|
 |thighband pantyhose|ランガードの入ったパンスト|確定で出現するが弱体させないと二重三重になることが多い~~これを除外に入れるとランガードがほぼ確定で消える|https://image01.seesaawiki.jp/n/h/nai_ch/ZrhDezvR_m.png|
 |slouch socks|足首に段のあるはき方||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/64eoSBJ_gw.png)|
@@ -333,7 +335,6 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
 |harness|ハーネス||https://image02.seesaawiki.jp/n/h/nai_ch/tjSbgVV6u_.png|
-|||||
 |A dressed as B |AにBの服を着せる|今回、{{({{asuna (sao)}} dressed as megumin)}}で実施。特定キャラの服を別のキャラクターに着せる事が可能。今回、知名度が高そうな「SAO」のアスナに「このすば」のめぐみんの服を着せてみた。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/U42H4j3hmY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/U42H4j3hmY.png]]|
 |naked_shirt|裸シャツ||https://image02.seesaawiki.jp/n/h/nai_ch/bLT3ixFBbi.jpg|
 |ZENTAI|全身タイツ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ELoIahGNRD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ELoIahGNRD.png]]|
@@ -481,8 +482,6 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-|||||
-|||||
 |sukebe|スケベになる|頬を染めて下着姿になったりする||
 |midriff|へそ出し|取り合えずへそ出し衣装にしてくれる便利なやつ~~画像は1girl,armor,midriff|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/s6mTm5FXeW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/s6mTm5FXeW.png]]|
 |fur trim|ファートリム|襟、裾、袖の端に毛皮が付く|https://image02.seesaawiki.jp/n/h/nai_ch/lKFNGRtFdL.png|

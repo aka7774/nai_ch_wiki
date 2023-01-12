@@ -14,8 +14,8 @@ danbooru のポーズ関係のタグ一覧はこちら https://danbooru.donmai.u
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|armpit crease|脇のシワ|単体使用だと「armpits」と同じ効果だが、ネガティブプロンプトに入れる事で、不自然な脇のシワを抑える事ができる。画像は↓のarmpits画像と同じプロンプト、シード値にネガティブプロンプトに{{armpit crease}}を追加したもの。|https://image01.seesaawiki.jp/n/h/nai_ch/zsQf1uKAuR.png|
-|armpits|脇|「arms up」のように腕を上げるが、こちらは「脇」を見せる。服装が袖無しや水着になる。「armpit」で１つの脇となるが、両脇を見せる構図になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/z0KT9bFFBO.png|
+|armpit crease|脇のシワ|単体使用だと「armpits」と同じ効果だが、ネガティブプロンプトに入れる事で、不自然な脇のシワを抑える事ができる。~~画像は↓のarmpits画像と同じプロンプト、シード値にネガティブプロンプトに{{armpit crease}}を追加したもの。|https://image01.seesaawiki.jp/n/h/nai_ch/zsQf1uKAuR.png|
+|armpits|脇|「arms up」のように腕を上げるが、こちらは「脇」を見せる。~~服装が袖無しや水着になる。「armpit」で１つの脇となるが、両脇を見せる構図になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/z0KT9bFFBO.png|
 |sitting chair, gaming chair|ゲーミングチェアに座る|一応、それっぽいものに座ってくれる。デザインは安定しない。たまに右の画像のようにゲームのコントローラーを持つ|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DYGq90QW5J-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/DYGq90QW5J.jpg]]|
 |, symmetry, front elevation, reference sheet, &#40;T-pose:1.4), &#40;Spread arms horizontally:1.3), &#40;airplane_arms:1.1), standing , &#40;1girl:1.2), solo, &#40;blueprint:1.2), &#40;full body:1.2),|Tポーズを取らせる|airplane_armsがいい仕事してる感(いわゆる⊂二二（ ＾ω＾）二⊃ﾌﾞｰﾝ)|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hnfIKYrtbh-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/hnfIKYrtbh.jpg]]|
 |holding 〇〇|〇〇を持つ|指が破綻したり、ちゃんと持てていなかったり、物理的におかしな持ち方になる事も多い~~サンプル画像は「cup」|[[https://image02.seesaawiki.jp/n/h/nai_ch/qZxbelkiOo.png]][[https://image01.seesaawiki.jp/n/h/nai_ch/i6sQPw6Avy.png]]|
