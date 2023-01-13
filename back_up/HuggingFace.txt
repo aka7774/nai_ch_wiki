@@ -1,0 +1,67 @@
+&#129303;
+
+#contents
+
+* Hugging Face
+
+- https://huggingface.co/
+
+謎のAI企業。潤沢な資金と無限のストレージを持っている。
+
+Stable Diffusionモデルを公式からダウンロードした人ならアカウントを持っているはず。
+
+以下、&#129303;と記載する。
+
+** アカウント作成
+
+- メールアドレスが必要。
+
+** Models
+
+*** アップロード
+
+自作のマージモデルを公開する手段としておすすめ。
+
+- ブラウザかgitが使える。
+-- ブラウザはChromeが良さそう。
+- PublicかPrivateが選択できる。
+- gitを使うにはwrite権限のあるtokenが必要。ブラウザから発行できる。
+- gitを使う前にHuggingface Hub(pythonモジュール)のインストールが必要。
+- 容量無制限。
+- 永遠に無料。ほんまかいな。
+
+*** ダウンロード
+
+- URLかgit(&#129303;Hub)経由で出来る。
+- Privateだとログイン済みのブラウザか&#129303;Hubでread権限のtokenが必要。
+- gitだと大量のファイルに便利だが.gitのせいでストレージ容量を最低2倍食う。
+-- できればSSD上でgit cloneしてファイルだけHDDに移動して消すのが吉。
+-- あるいは数個程度ならgitを使わないとか。
+
+*** コピー(fork)
+
+- https://huggingface.co/spaces/osanseviero/repo_duplicator
+- 秒で終わる
+- 公開設定がPublicになるのでPrivateにしたかったら設定で変える
+** Datasets
+
+- まだ試してないけどデータセットを置いていいはず。
+
+** Spaces
+
+あくまでデモ用で、実用ツールはColabで動かしたほうが良さそう。
+
+- &#129303;にデモアプリが置ける。
+-- CPUは無料。16GBのメモリと2コアのCPUらしい。
+-- GPUは有料。月額+従量課金らしい。
+- gradio(python)で実装するNotebookって感じ。
+- バックエンドは共有なので順番待ちが必要。
+** Organization
+
+- Teamを作れる。
+- Organization ModelsをPrivate設定するとTeamメンバーだけで共有できる。
+- write権限のあるtokenが発行できない
+-- 所属している個人がwrite権限を持っていれば個人のwriteトークンで代用できます
+
+
+

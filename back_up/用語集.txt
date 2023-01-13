@@ -18,6 +18,7 @@
 |HN|Hypernetwork|学習方法の1つ。|
 |DA|DreamArtist|学習方法の1つ。|
 |Lora||学習方法の1つ。1111ではDB内で使える。|
+|ST|Stable Tuner|学習方法の1つ。|
 |t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
 |i2i|img2img|Image to Image 元画像とプロンプトから画像を生成すること。|
 |inpaint||i2iの1形態。元画像の一部を指定して画像を生成すること。|
@@ -26,7 +27,7 @@
 |金脈|[[SD RESOURCE GOLDMINE>https://github.com/questianon/sdupdates]]|Stable Diffusionに関連するすべてのリソースとニュースを集めた総合的なサイト。1111を中心としてる。|
 |Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が早い |
 |マージ||Checkpoint Mergerで2〜3つのモデルを組み合わせること。|
-|層別マージ/階層マージ||Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
+|層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
 |風船||閲覧注意やで(詳しくは123スレ250-)|
 
 * スレの言葉について

@@ -20,6 +20,9 @@ Imput > Concepts タブで
 -プロンプト
 --Instance Prompt: 
 --Class Prompt: 
+キーワードみたいなもの。使われていない言葉がいい。例として nanU とすると 設定のパターンとしては以下のようなものがある。
+|Instance Prompt |無し　　|nanU　　|nanU girl |nanU Unan |
+|Class Prompt|無し　　|無し　　|girl　　|Unan　 |
 -Image Genaration
 --Class Images Per Instance Image: 0
 **学習の設定 その2
@@ -27,7 +30,6 @@ Input > 設定 タブで
 ***Basic
 -General
 --Use LORA: LORAを使用する場合はオン
---Train Imagic Only: 画像1枚のときはチェック(未検証)
 --Generate Classification Images Using txt2img: オフ
 -Intervals
 --Training Steps Per Image (Epochs): 100 

@@ -59,6 +59,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|GTX 1060|6GB|Core i7-12700K|6分34秒|394.|--xformers --no-half --no-half-vae||
 |GTX 1060|6GB|Core i7-12700K|7分51秒|471.|--xformers||
 |RTX 2060|12GB|Xeon E5-2650 v2|37.13|36.24|xformers gradio-img2img-tool color-sketch deepdanbooru autolaunch|Batch Count 2, Batch Size 5|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.35|--xformers --opt-channelslast|ライブラリ更新(torch1.12.1+cu116,torchvision0.13.1+cu116) ~~ Batch count 5, Batch size 2|
@@ -424,6 +425,29 @@ RTX 3060(12GB)搭載PCは、PCショップで15万前後で買える。GPU単体
 中古なら2060 12GB、2060S(8GB)もアリ。
 1060とか1660Tiは数倍遅くなるのでVRAM容量を置いといてもナシかな。
 とはいえ1060とか1660Tiから3050に買い換えるのも悲しいけど。
+[END]
+
+** A. 学習するかどうかから考えて買え
+[+]
+-学習は絶対しない
+VRAM8GBのモデルのうち予算内の上位モデルを狙おう
+候補：3070系
+
+-学習にちょっと興味がある
+VRAM12GBのモデルを選ぼう
+候補：3060(12GB)・3080(12GB)・4070Ti
+
+-学習に大変興味がある
+VRAM24GBのモデルを選ぼう
+候補：3090・4090
+[END]
+
+** 中古のグラボ買っても大丈夫？
+[+]
+基本的には推奨しない。
+中古に流れているグラボの大半は、マイニングに使われてたと言われている。
+マイニングはグラボの性能を全力で使う為、コンデンサや他のパーツが劣化してる可能性があり、つまり故障の原因になりやすい。
+マイニングに不向きなLHR版(Lite Hash Rate)のグラボもあるので、そちらを買うと多少マシと言われている。
 [END]
 
 ** ゲーミングノートパソコンをお勧めできない理由
