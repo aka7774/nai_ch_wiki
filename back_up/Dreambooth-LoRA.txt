@@ -1,0 +1,32 @@
+* 概要
+Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
+雑に言うとDreamboothの小さくて速いやつ
+*参考URL
+https://rentry.org/lora_train
+クラウドGPUを使う場合はリンク先の下の方に Collab Instructions がある
+
+上より引用
++ git で https://github.com/kohya-ss/sd-scripts をインストール
++ https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から lora_train_popup.py, lora_train_command_line.py をダウンロード
+注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
++スクリプトを sd-scripts フォルダにコピー
++sd-scripts フォルダ でターミナルとかpowershellを開いて .\venv\Scripts\activate と入力
++次のコマンドどちらかを入力
+accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
+accelerate launch --num_cpu_threads_per_process 12 lora_train_popup.py
+
+
++画像を置くフォルダをを作成します。
+-フォルダの配置例:
+[-]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8v9xToIuUR.png)
+[END]
+-同時に10まで概念を学習できるが、少なくとも1つはフォルダが必要。
+-フォルダの名前は <繰り返し回数>_<インスタンスプロンプト>
+--<繰り返し回数> 繰り返し回数×学習用画像の枚数を1セット(1 epoch)として学習する 
+※注 学習用の画像が50枚ある場合、繰り返し回数を20 にすると 20 x 50 = 1000 ステップ学習する
+--<インスタンスプロンプト> 呼び出し用のキーワード 英単語にない意味のないワードがよい 
+--キャプション ファイルは必須です。そうでない場合、LoRA は概念名をキャプションとして使用してトレーニングを行います。
+--キャプション ファイルの作成方法については、こちらを参照してください。
+
+力尽きたので続きはまた

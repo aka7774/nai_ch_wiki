@@ -3,7 +3,7 @@
 * Dreambooth Extension for Stable-Diffusion-WebUI
 2023-01-12版説明
 アップデートでいろいろ変わるので stable-diffusion-webui\models\dreambooth\モデル名\db_config.jsonをよく見ような
-設定項目多いけど落ち着いて 画像も貼りたいけどクソ長でうまいやり方が思いつかん
+設定項目多いけど落ち着いて くそデカサンプル画像あり
 とりあえず動く数値だけ
 
 **学習させるモデルを選ぶ
@@ -12,6 +12,9 @@ Dreembooth タブの Input > Create タブで
 Source Checkpoint モデルを選ぶ
 
 Create Model を押す
+[+]画像
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/I9qJIohb0w.png,right)
+[END]
 **学習の設定 その1
 Imput > Concepts タブで
 -Directories
@@ -25,6 +28,9 @@ Imput > Concepts タブで
 |Class Prompt|無し　　|無し　　|girl　　|Unan　 |
 -Image Genaration
 --Class Images Per Instance Image: 0
+[+]画像
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ABudhUleIH.png,right)
+[END]
 **学習の設定 その2
 Input > 設定 タブで
 ***Basic
@@ -44,10 +50,15 @@ Input > 設定 タブで
 --Use 8bit Adam: オン
 --Mixed Precision: fp16
 --Memory Attention: xformers
+[+]画像
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/C6FSRG9WDy.png,right)
+[END]
 **学習の設定 その3
 Input > Saving タブで
 -Generate a .ckpt file when training completes.: オン
-
+[+]画像
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/l6F33fzRET.png)
+[END]
 全部設定できたら
 学習 ボタンをクリック
 * とある技術部の記録

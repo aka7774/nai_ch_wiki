@@ -299,4 +299,24 @@ https://image01.seesaawiki.jp/n/h/nai_ch/G3mc_4ieEu.png
 Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
 Steps: 28, Sampler: Euler a, CFG scale: 11, Seed: 3415035411, Size: 832x512, Model hash: e1de58a9
 https://image01.seesaawiki.jp/n/h/nai_ch/Qqn5_rtcqi.png
+[END]
 
+*one-piece_tanが綺麗に出なくて不気味な紋様になってしまう問題
+[+]
+129スレ830
+https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/830
+
+830今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 2986-wtyD)2023/01/14(土) 04:23:09.35ID:Fd8b7j6v0
+NAIでone-piece_tanが綺麗に出なくて不気味な紋様になってしまう問題を解決できているモデルが無いものかと再学習や過学習解消や非NAIをコンセプトにしてるモデル中心に検証してみたけどなかなか厳しい
+NAISFW &ref(https://i.imgur.com/frjXb48.png,450)
+anything3 &ref(https://i.imgur.com/fyDNcha.png,450)
+acertainthing &ref(https://i.imgur.com/ZvzXJAY.png,450)
+acertainmodel &ref(https://i.imgur.com/KQwPfTj.png,450)
+waif1.4 &ref(https://i.imgur.com/FJNtaZV.png,450)
+8258d &ref(https://i.imgur.com/oD79vdQ.png,450)
+CJD2.1.1β &ref(https://i.imgur.com/keKrKpF.png,450)
+almondmix &ref(https://i.imgur.com/yPtZMHL.png,450)
+basilmix &ref(https://i.imgur.com/BQhmaa5.png,450)
+ElysiumAnimev3 &ref(https://i.imgur.com/WqF52pt.png,450)
+shirayuki &ref(https://i.imgur.com/sq9sTWS.png,450)
+[END]

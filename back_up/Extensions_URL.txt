@@ -35,6 +35,15 @@ https://gist.githubusercontent.com/aka7774/bb306094dae726a32fbb6c617ddce2c0/raw/
 
 * 一覧
 
+** sd-webui-model-converter
+
+- https://github.com/Akegarasu/sd-webui-model-converter
+- fp16やsafetensors変換をするやつ
+- no-ema(prune)もある
+- VAE内蔵もやってくれればいいのになー
+-- https://note.com/kohya_ss/n/nf5893a2e719c
+-- 手元では動かなかった
+
 ** sdweb-clip-changer
 
 - https://github.com/bbc-mc/sdweb-clip-changer
@@ -88,6 +97,13 @@ import launch
 if not launch.is_installed("huggingface-hub"):
     launch.run_pip("install huggingface-hub", desc='Installing huggingface-hub')
 ||=
+** Images Browser ★
+
+- https://github.com/aka7774/sd_images_browser
+- 公式の yfszzx/stable-diffusion-webui-images-browser が音沙汰無いので不具合を修正した
+-- ついでにプルリクを全部反映しといた
+- タブ名を勝手に Images に変えといたので適用されたかどうかはここで見分けて
+
 ** About
 
 更新停止。1111本体のフッターに同等機能がついたので不要になりました。
@@ -96,6 +112,14 @@ if not launch.is_installed("huggingface-hub"):
 - システム情報
 - 1111とかvenvとかの情報を表示する
 - 「なんか動かないんだけど！」って時は、エラーの内容とこの表示内容をコピペして相談しましょう
+
+** Copyguard ★
+
+- https://github.com/aka7774/sd_copyguard
+- 地球に優しくないコピーを防止する画期的なExtension(誇大広告)
+- 3回同じInfotextで生成していたら勝手にシードを-1にする
+- Scriptとかで選ぶ必要は無くて勝手に適用される
+
 ** Curly rand ★
 
 - https://github.com/aka7774/sd_curly_rand

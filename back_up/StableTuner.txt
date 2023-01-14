@@ -1,0 +1,102 @@
+#contents
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xUnYk_3IsC.png,551,309)
+
+*概要
+DreamBoothと同様に、学習内容をモデルデータに埋め込む
+設定が簡単で高性能、あと処理速度がわりと速いのが特徴
+
+公式　https://github.com/devilismyfriend/StableTuner
+
+*導入方法
+
+** conda無し版(非公式)
+
+- https://github.com/aka7774/elemental_code/blob/main/tools/install_StableTuner_noconda.bat
+- インストールしたいフォルダで実行する(中に自動的にStableTunerフォルダを作る)
+- うまくいかんかったら何回か実行するとそのうちうまくいくかも
+- &color(#ff0000){起動はstart.batから}
+- pythonとgitにPATH通ってない人は要編集
+
+** conda環境での構築(公式手順)
+
+***conda(Anaconda/Miniconda)環境のインストール
+ここではminicondaを例に説明
+
+Conda 公式サイトの Miniconda のページからインストーラーをダウンロード
+https://docs.conda.io/en/latest/miniconda.html より
+Windows Miniconda3 Windows 64-bit をダウンロードし、インストール
+
+***StableTuner のインストール
+=|BOX|
+git clone https://github.com/devilismyfriend/StableTuner
+||=
+
+***StableTuner 初期設定
+condaのインストール時にインストールpathを変更した場合
+[+]
+StableTunerのフォルダに下記ファイルを作成
+=|BOX|
+custom-conda-path.txt
+||=
+中身はcondaのパスを記載
+=|BOX|
+D:\miniconda3 
+||=
+例はD:\miniconda3 にインストールした場合
+[END]
+
+インストールバッチを実行
+=|BOX|
+install_stabletuner.bat
+||=
+
+***StableTuner の実行
+実行ファイルを起動
+=|BOX|
+StableTuner.cmd
+||=
+
+*StableTuner の設定
+基本はデフォルト値で良い
+
+**General Settings タブ
+|Input Model / HuggingFace Repo|学習元となるモデルファイルのpathを入力~~ファイル選択時にSD2形式か問われるので「はい」か「いいえ」を選択|
+|VAE model path / HuggingFace Repo|空欄でも良い|
+|Output Path|作成したモデルの出力path|
+|Comvert to CKPT after training|トレーニング後にモデルをckptに変換する|
+|Cloud Training Export|ONにすると下の Start Training! ボタンが Export for Cloud! に変わる~~クラウドで学習してる場合に使用出来る？（未確認）|
+
+**Trainer Setting タブ
+|Train Batch Size|大きくすると一度に学習する枚数が増えるが、必要以上に大きくすると物凄く処理に時間が掛かる~~RTX 3090 ならデフォルトの24で動くが多少下げた方がいいかも~~VRAMが少ない場合は1や2まで下げる事|
+|Train Epochs|学習回数を何セット廻すか~~基本はデフォルトの100で良い~~学習データにも寄るが300も廻すと過学習になる|
+|Train Text Encoder|OFFにすると精度は下がるが処理速度があがる|
+
+**Dataset Setting タブ
+基本はデフォルトのままでOK
+
+**Sampling Settings タブ
+|Save and sample Every N Epochs|学習結果のデータを何Epoch毎に出力するか~~Train Epochsを増やしてる場合などは、適度に調整|
+
+**Data タブ
+学習元データの設定
+Add Conceptボタンから作成し、クリックで設定
+|Dataset Token/Name|学習セットの名前|
+|Data Path|学習用画像のあるディレクトリを指定する|
+|Class Name|正則化Classの名前|
+|Class Path|正則化画像のあるディレクトリを指定する|
+設定したらsaveで保存する
+
+*学習の開始
+Start Training! ボタンで学習開始
+
+*その他項目
+**Model Playground タブ
+作成したデータの確認やckptへの変換が出来る
+**Toolbox タブ
+作成データをckptやSafetensorsに変換する場合に使用
+
+
+
+
+

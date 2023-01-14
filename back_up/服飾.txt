@@ -163,7 +163,7 @@
 |playboy bunny |バニー服||https://image01.seesaawiki.jp/n/h/nai_ch/ZHQKvC4KnC.png|
 |priest|司祭、聖職者|priestessもほぼ同義|https://image01.seesaawiki.jp/n/h/nai_ch/LiroxR9qei.png|
 |nurse|ナース|コスプレのやつ|https://image02.seesaawiki.jp/n/h/nai_ch/DDVlDA0BoI.png|
-|nun|シスター~~修道女|なぜかR18絵を作ると顔が雑になるのでconvent sistersなどで補強するか、~~convent clothesなどと入力すればいい|https://image02.seesaawiki.jp/n/h/nai_ch/YjAfDadnn5.png|
+|nun~~cassock clothing|シスター~~修道女|なぜかR18絵を作ると顔が雑になるのでconvent sistersなどで補強するか、~~convent clothesなどと入力すればいい~~cassockは「司祭・牧師」の平服の意味なので装飾が増えやすくなる|https://image02.seesaawiki.jp/n/h/nai_ch/YjAfDadnn5.png|
 |military or naval uniform|軍服||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/q6WwrKeiub-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/q6WwrKeiub.png]]|
 |camouflage uniform|迷彩服|fieldgear,helmet,military boots,glove,など~~軍装品関係の単語を入れると装備品も付け足しできる|https://image02.seesaawiki.jp/n/h/nai_ch/fHVWznqTw5.png|
 |police uniform|警察官の制服|アメリカンポリス風の制服が作れる~~下はpants,skirtで変更可能|https://image01.seesaawiki.jp/n/h/nai_ch/R5qUiZCJjW.png|
@@ -399,6 +399,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|satin|サテン生地|朱子織りで織った織物の総称。滑らかな光沢を持つ高級感のある衣装となる。|https://image02.seesaawiki.jp/n/h/nai_ch/l9ATAASvO4.png　https://image02.seesaawiki.jp/n/h/nai_ch/iG2YjvGZ2x.png|
+|lame|ラメ|金銀糸などメタリックな糸を織り込んだ織物。gold lameと指定すると金色のゴージャスな衣装になります。それ以外の場合は刺繍が入った衣装として解釈されます。|https://image02.seesaawiki.jp/n/h/nai_ch/ARqvrIOodc.png　https://image02.seesaawiki.jp/n/h/nai_ch/no5JuiDydd.png|
+|sequin|スパンコール|衣装の頭に付けると衣装がキラキラ輝くスパンコールになります。強化しないとあまり輝きません（サンプルは{{{{ぐらい強化しています）|https://image02.seesaawiki.jp/n/h/nai_ch/bYvt5J0d6h.png　https://image02.seesaawiki.jp/n/h/nai_ch/N8GquB06v0.png|
 |camouflage|迷彩柄||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/GqeYL4KQH8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/GqeYL4KQH8.png]]|
 |polka dot|水玉模様|ドット柄も良く出る|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/T9k8kTW2u6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/T9k8kTW2u6.png]]|
 |houndstooth|千鳥格子||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nPQe0CD3iA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nPQe0CD3iA.png]]|

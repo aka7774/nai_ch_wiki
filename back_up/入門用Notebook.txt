@@ -145,13 +145,19 @@ if use_merge:
    !git clone https://github.com/bbc-mc/sdweb-merge-board.git
    !git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui.git
    !git clone https://github.com/aka7774/sd_merge_numa.git
+   !git clone https://github.com/Akegarasu/sd-webui-model-converter.git
+   !git clone https://github.com/camenduru/stable-diffusion-webui-huggingface.git
+#@markdown 義妹(あとでffmpegとmoe-ttsを足したい)
+use_gimai = True #@param {type:"boolean"}
+if use_gimai:
+   !git clone https://github.com/aka7774/sd_gimai.git
 !git clone https://github.com/animerl/novelai-2-local-prompt.git
-!git clone https://github.com/yfszzx/stable-diffusion-webui-images-browser.git
+!git clone https://github.com/aka7774/sd_images_browser.git
+!git clone https://github.com/aka7774/sd_copyguard.git
 !git clone https://github.com/aka7774/sd_fake_xyplot.git
 !git clone https://github.com/aka7774/sd_curly_rand.git
 !git clone https://github.com/aka7774/sd_filer.git
 !git clone https://github.com/aka7774/sd_infotexts.git
-!git clone https://github.com/aka7774/sd_about.git
 !git clone https://github.com/kousw/stable-diffusion-webui-daam.git
 !echo '{"backup_dir":"/content/drive/MyDrive/sd"}' > /content/stable-diffusion-webui/extensions/sd_filer/json/config.json
 
@@ -181,6 +187,11 @@ if use_drive:
 動かなかったり、機能に不満があったら、いろんな人のNotebookを探しに行くと良いでしょう。
 
 ** 更新履歴
+
+*** 2023-01-14
+
+- images_browserを修正版に取り替えた
+- その他こまごまとExtensions追加
 
 *** 2022-12-20
 
