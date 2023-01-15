@@ -60,6 +60,11 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3080|10GB|Core i7-8700K|19秒|19.31|--xformers --opt-channelslast|BatchCount 2 BatchSize 5 RAM 24GB PL80%|
+|RTX 4090|24GB|Ryzen 9 3900X|16秒|15.47|xformers opt-channelslast|GPUを電力制限70％で実行してもTime takenはほぼ変わらず誤差の範囲。|
+|RTX 4090|24GB|Ryzen 9 3900X|10.8秒|10.17|xformers opt-channelslast|Batch Count 5、Batch Size 2|
+|RTX 4090|24GB|Ryzen 9 3900X|10秒|9.11|xformers opt-channelslast|Batch Count 2、Batch Size 5|
+|RTX 4090|24GB|Ryzen 7 5800X|12.29秒|10|xformers opt-channelslast|Batch Count 2、Batch Size 5|
 |RTX 2080Ti|11GB|Core i9-9900K|28.09秒|26.79|--xformers --opt-channelslast|WSL2|
 |GTX 1060|6GB|Core i7-12700K|6分34秒|394.|--xformers --no-half --no-half-vae||
 |GTX 1060|6GB|Core i7-12700K|7分51秒|471.|--xformers||
@@ -206,6 +211,97 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 |~時間(計測値)|備考|
 |25〜28秒|アスカを生成してシードをランダムにし十枚生成　日本時間で平日23:50頃に実行|
 [END]
+
+* ローコストお絵かきAIPCを組む：中古相場とPC自作を使って
+高みを目指すのもいいけど、俺と一緒にチープなスリルを味わおうぜ!
+
+[+]
+(1)オークションやフリマアプリ等を使って、適当に以下を調達する
+- グラボ(アスカベンチ表を見て好きなのを選ぶ)
+- マザボ(CPUの規格に合うもの)
+- CPU
+(2)Amazon、Tsukumo等で新品のパーツを調達する
+- PCケース(規格はATX対応のもの)｜￥5,000
+- CPUクーラー(CPUの規格に合うもの)｜￥3,000
+- ストレージ(OS & 学習モデル配置用)：SSD 1TB｜￥6,000
+- ストレージ(データ保管用)：4TBのHDD｜￥10,000
+- メモリ(32GB)｜￥10,000
+- 電源(750W, GOLD)｜￥15,000
+
+※以下パーツのサンプル
+
+▼グラボ
+(1)GTX1070またはGTX1660 ｜￥15,000前後
+GTX16xx系は浮動小数点演算がどうたらこうたらという問題があるけど「--medvram --no-half --xformers」すれば別に普通に使える。RTX系の人と生成結果が微妙に一致しないけど細かいことは気にしない。
+Highres.fixで1536x1024出すと1枚3分とかかかるがプレビューを眺めながら茶を頂くのも乙。
+
+(2)RTX2060 12GB｜￥27,000前後
+AI板で人権が得られるらしい
+
+▼CPU
+Ryzen5 2600X｜￥6,000
+
+▼マザボ
+ROG CROSSHAIR VI HERO AM4 マザーボード｜￥12,500 (ブランドは適当)
+
+----
+
+▼サンプル価格：俺のチープなスリルPC(RTX2060 12GB版)
+※一般人
+- RTX2060 12GB(中古)｜￥27,000前後
+- ROG CROSSHAIR VI HERO AM4 マザーボード(中古)｜￥12,500
+- Ryzen5 2600X(中古)｜￥6,000
+- PCケース(規格はATX対応のもの)｜￥5,000
+- CPUクーラー(CPUの規格に合うもの)｜￥3,000
+- ストレージ(OS & 学習モデル配置用)：SSD 1TB｜￥6,000
+- ストレージ(データ保管用)：4TBのHDD｜￥10,000
+- メモリ(32GB)｜￥10,000
+- 電源(750W, GOLD)｜￥15,000
+合計：￥94,500
+
+
+▼サンプル価格：俺のチープなスリルPC(GTX1070またはGTX1660版)
+※土台はしっかりAIエンジョイ派
+- GTX1070またはGTX1660(中古) ｜￥15,000前後
+- ROG CROSSHAIR VI HERO AM4 マザーボード(中古)｜￥12,500
+- Ryzen5 2600X(中古)｜￥6,000
+- PCケース(規格はATX対応のもの)｜￥5,000
+- CPUクーラー(CPUの規格に合うもの)｜￥3,000
+- ストレージ(OS & 学習モデル配置用)：SSD 1TB｜￥6,000
+- ストレージ(データ保管用)：4TBのHDD｜￥10,000
+- メモリ(32GB)｜￥10,000
+- 電源(750W, GOLD)｜￥15,000
+合計：￥82,500
+
+▼俺のチープなスリルPC v2　(RTX2060 12GB版)
+※節約堅実派
+- マザーボード(B450 AM4)(中古)｜￥5,000
+- RTX2060 12GB(中古)｜￥27,000前後
+- Ryzen5 2600X(中古)｜￥6,000
+- メモリ(16GB)｜￥5,000
+- 電源(750W, BRONZE)｜￥10,000
+- ストレージ(OS & 学習モデル配置用 & データ保管用)：1TBのSSD(SUNEAST)｜￥6,000
+- PCケース(規格はATX対応のもの)｜￥5,000
+- CPUクーラー(CPUの規格に合うもの)｜￥3,000
+合計：￥67,000
+
+▼俺のチープなスリルPC v2 極み (GTX1070 8GB版)
+※漢
+- マザーボード(B450 AM4)(中古)｜￥5,000
+- GTX1070 8GB(中古)｜￥15,000
+- Ryzen5 2600X(中古)｜￥6,000
+- メモリ(16GB)｜￥5,000
+- 電源(Antec 650W電源 NE650C 80PLUS BRONZE)｜￥7,830
+- ストレージ(OS & 学習モデル配置用 & データ保管用)：1TBのSSD(SUNEAST)｜￥6,000
+- PCケース(規格はATX対応のもの)｜￥5,000
+- CPUクーラー(CPUの規格に合うもの)｜￥3,000
+合計：￥52,830
+
+▼備考
+スリルを高めるにはすべてHDDでもいい。モデル読み込みが激遅いけど、「俺はNAIしか使わないぜ!」という漢気があれば何も問題はない。
+
+[END]
+
 
 * メモリとSSDとHDD
 

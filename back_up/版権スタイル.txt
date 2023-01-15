@@ -2,6 +2,9 @@
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|作品名|備考|サンプル|
+|kimetsu no yaiba,1girl,|鬼滅の刃|kimetsu no yaiba単体だと伊之助風の男性がでやすい。サンプルはdemon slayer uniformを追加したもの。|https://image01.seesaawiki.jp/n/h/nai_ch/7glLvJXl9B.png|
+|kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~,1girl|かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜|初音ミクプロンプトを含めても出力されない。サンプルは初音ミクを1段階強調したもの。基本的に四宮かぐや、藤原千花、早坂愛っぽい、または要素のある人が生成される。|https://image02.seesaawiki.jp/n/h/nai_ch/YlQa6rCh1L.png|
+|style of shirobako,1girl,,official art,|SHIROBAKO|白目部分だけ似る、必ず絵柄が似るわけではないが何かが引っかかっているっぽいです。邪魔なら消してださい。|https://image01.seesaawiki.jp/n/h/nai_ch/9Hbt604Acv.png|
 |ryuuou no oshigoto!,official art,|りゅうおうのおしごと！|漫画版の絵柄が多く出る。|https://image01.seesaawiki.jp/n/h/nai_ch/DDZKp4zXWJ.png|
 |style of macross frontier,official art,1girl,|マクロスフロンティア|macrossをネガティブに入れても荒い画質のものが生成されることがある。|https://image01.seesaawiki.jp/n/h/nai_ch/fK43PJKUkB.png|
 |style of azumanga daioh,official art,pupils,1girl,|あずまんが大王|成功率若干低め、漫画っぽい(?)絵柄になる|https://image01.seesaawiki.jp/n/h/nai_ch/vrBvSbL7hU.png|

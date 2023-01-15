@@ -1,22 +1,116 @@
 * 概要
 Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
 雑に言うとDreamboothの小さくて速いやつ
-*参考URL
+*参考資料
 https://rentry.org/lora_train
 クラウドGPUを使う場合はリンク先の下の方に Collab Instructions がある
 
 上より引用
-+ git で https://github.com/kohya-ss/sd-scripts をインストール
-+ https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から lora_train_popup.py, lora_train_command_line.py をダウンロード
-注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
-+スクリプトを sd-scripts フォルダにコピー
+*準備
+- git で https://github.com/kohya-ss/sd-scripts をコピー
+- https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から lora_train_popup.py, lora_train_command_line.py をダウンロード 注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
+- スクリプトを sd-scripts フォルダにコピー
+- README-ja.md に日本語の詳しい説明が書いてある
+- 初回セットアップ
+--sd-scripts フォルダで PowerShellかターミナルを開く (Shiftを押しながら右クリック)
+--以下のコマンドを順番に入力する(コピペでOK)
+=|PERL|
+python -m venv --system-site-packages venv
+.\venv\Scripts\activate
+ 
+pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+pip install --upgrade -r requirements.txt
+pip install -U -I --no-deps https://github.com/C43H66N12O12S2/stable-diffusion-webui/releases/download/f/xformers-0.0.14.dev0-cp310-cp310-win_amd64.whl
+
+cp .\bitsandbytes_windows\*.dll .\venv\Lib\site-packages\bitsandbytes\
+cp .\bitsandbytes_windows\cextension.py .\venv\Lib\site-packages\bitsandbytes\cextension.py
+cp .\bitsandbytes_windows\main.py .\venv\Lib\site-packages\bitsandbytes\cuda_setup\main.py
+ 
+accelerate config
+||=
+--accelerate config のあとに質問が出るので以下のように答える
+=|PERL|
+- This machine
+- No distributed training
+- NO
+- NO
+- NO
+- all
+- fp16
+||=
+--初回セットアップ完了
+*学習の手順
 +sd-scripts フォルダ でターミナルとかpowershellを開いて .\venv\Scripts\activate と入力
 +次のコマンドどちらかを入力
-accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
+=|PERL|
 accelerate launch --num_cpu_threads_per_process 12 lora_train_popup.py
-
-
-+画像を置くフォルダをを作成します。
+accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
+||=
++ポップアップにパラメーターを入力する(lora_train_command_line.py にはあらかじめパラメーターを書いとく)
++出来上がりを待つ
++WebUIで使うには 「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール
+-stable-diffusion-webui\extensions\sd-webui-additional-networks\models に lora フォルダを作成して 出来上がった .pt や .safetensorsをコピー ~~(Web UI の 「設定」> 「Additional Nerwoek」タブでフォルダの場所は変えられる)
+-「txt2img」や「img2img」の画面の左下の方に「Additional Networks ▼」が追加されているので~~Enable を押してmodelを選びmerge倍率をweightのスライダーで調整する
+**手順の画像
+クリックして展開 アップデートなどで内容は変わる
+[+]
+**ターミナルとかパワーシェルにコマンドを打つ
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yVzXCg9crC.png)
+----
+**学習元のモデルを選ぶ
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jxCNF4YB2L.png)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6tebwsnoiv.png)
+----
+**学習用画像のフォルダを選ぶ
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QsMm7_wdmg.png)
+数字_名前 フォルダが見えるように
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BC_G2nQ6O4.png)
+----
+**出力先のフォルダを選ぶ
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/d_LHSt9yQv.png)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Pm3ilZIP1a.png)
+----
+**正則化画像のあるフォルダを選ぶ 使わないときは「いいえ」
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KXO6r5NWEn.png)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/e99bPUOmNk.png)
+数字_名前 フォルダが見えるように
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OYsxnrbqxq.png)
+----
+**バッチサイズ:一度に何枚処理するか つよつよGPU以外なら1で
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xcTV3i_Lbh.png)
+**何エポック学習させるか: 1エポックは 繰り返し回数(フォルダの先頭の数字)×学習用画像の枚数 ステップ
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DWVNJ2DpMd.png)
+**dimサイズ: みんな128をつかっとるらしい
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/I75XLmK3_t.png)
+**学習の解像度: 512で。RTX4090か超強クラウドGPUなら 768 もいける
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ttb3qyi0Ya.png)
+----
+**学習率(Learning Rate): 1e-4 (= 0.0001) これより上げることはあんまりない。 5e-5 (=0.000005)くらいでもいいかも
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DkV4RQ4ZnK.png)
+**スケジューラー: cosine_with_restart で(よく分からんのでいじらない) 学習率を途中で上げ下げするやり方
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0jBUxX8eVo.png)
+**エポック単位でセーブする?: 2エポック以上学習させるなら
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/M6Jh5Uc7cL.png)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZCqzxdoZWw.png)
+----
+**キャプションをシャッフルする?: する
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IEAf9r1tqK.png)
+**キャプションの最初のトークンを保持する?: よく分からん
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kMrIwfMsJE.png)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/SKOgINqr6w.png)
+**warmup ratio 使う?: 学習の最初だけ学習率を下げる機能
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WaHG0v8I5O.png)
+----
+**学習の様子 縦横の比率は自動で振り分けしてくれる
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9VizQs0l1c.png)
+**出来上がり
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/y3w3sgkzGd.png)
+last.safetensors というファイルができる
+このスクリプトではログは一切残らないのでわかりやすい名前にリネームしておく
+追加学習するときはこのファイルを指定する
+[END]
+*学習用画像を置くフォルダの配置
+-作者の解説が詳しい [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
 -フォルダの配置例:
 [-]
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/8v9xToIuUR.png)
@@ -27,6 +121,45 @@ accelerate launch --num_cpu_threads_per_process 12 lora_train_popup.py
 ※注 学習用の画像が50枚ある場合、繰り返し回数を20 にすると 20 x 50 = 1000 ステップ学習する
 --<インスタンスプロンプト> 呼び出し用のキーワード 英単語にない意味のないワードがよい 
 --キャプション ファイルは必須です。そうでない場合、LoRA は概念名をキャプションとして使用してトレーニングを行います。
---キャプション ファイルの作成方法については、こちらを参照してください。
+--キャプションについては以下
 
-力尽きたので続きはまた
+*キャプションを付ける
+作者の詳しい画像付き説明 [[https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md]]
+自動でつけてくれる・・・のではなく一応コマンド打たないとダメらしい。詳しくは上記
+**WD1.4 Taggerで作成
+先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)
+[+]画像
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kbCJ6oEi6E.png)
+[END]
+Web UI に拡張機能 stable-diffusion-webui-wd14-tagger [[https://github.com/toriato/stable-diffusion-webui-wd14-tagger>>https://github.com/toriato/stable-diffusion-webui-wd14-tagger]]をインストール
+「Tagger」タブの「Batch from directly」
+-入力ファイル:学習用画像の入っているフォルダ
+-Interrogator:wd-14convnext
+-アンダースコアの代わりにスペースを使用する:オン
+-括弧をエスケープする:オン
+[+]画像
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DGlOwfa65F.png)
+[END]
+Interrogateを押すと学習用画像のフォルダにタグの付いた .txt ファイルが生成される
+[+]画像
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vrFirugtW9.png)
+[END]
+**キャプションの細かい加工
+https://github.com/starik222/BooruDatasetTagManager や スレ130の>>346のツールで
+余計なタグを削ったりこだわりのタグ追加をする
+*そもそも学習用画像ってどうやって加工するの
+本文で説明している kohya_ss 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
+背景の切り抜きは・・・画像の大きさが揃ってないとめんどくさいなどうしよう・・・
+*正則化画像
+キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが
+詳しくはわからないので誰か書いてクレメンス
+**透明のpngを正則化画像にする
+Web UI に拡張機能をインストールする [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
+Generate TransparentIMG タブで
+出力フォルダ:正則化画像の保存先
+number_of_generation:作成する枚数
+を入力して実行
+[+]画像
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/l8x2Fjrdz7.png)
+[END]
+原文が下に行くほど分かりやすくなっているらしいので変な構成ですまんこ

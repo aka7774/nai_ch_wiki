@@ -21,17 +21,22 @@
 - 大抵はモデルの配布元が配っている。
 -- 無い場合は SD2.xのyamlを使ってみるとか。
 
+** インペイント専用モデル
+
+inpaint.ckptは普通のckptとは違うらしい。
+
 ** ハッシュ
 
 [[Model hashとsha256の対応表はここ>sha256]]
 
-- Model hashはファイルの一部のみを対象とするため衝突が頻発している
-- プルリクは送られているが1111氏は対応しない意思がある
+- Model hash(shorthash)はファイルの一部のみを対象とするため衝突が頻発している
+- 2023-01-15の更新でとうとうModel hashが10桁の完全なsha256に更新された
+-- 新旧の見分け方はたぶん桁数だけ
+-- VAEとHypernetworkに対応していないのは実用上(まだ)問題が出ていないからだと思われる
 - 完全なファイルのsha256を取ることで衝突回避は可能
 -- https://github.com/aka7774/sd_filer
 -- https://github.com/aka7774/sd_infotext_ex
 -- https://github.com/aka7774/sd_infotexts
-
 ** ファイル形式
 
 拡張子で判別する。
@@ -80,15 +85,22 @@
 - Exponential Moving Average(指数移動平均)の略
 - モデルのトレーニング中に、トレーニングしたパラメータの移動平均を維持すると有益らしい([[TensorFlow API>https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage]])
 
+- どっちが学習向きなの？
+- 容量は変わらんやつがあるけどなんなん？
+
 *** emaあり
 
 - モデルにトレーニング中のemaが付いている
-- 学習用らしい。
 
-*** emaなし(no-ema, pruned)
+*** emaなし(no-ema)
 
-- 学習用データを取り除いて生成に特化させたものらしい。
-- 容量が小さい。
+- 容量が小さくなるの？
+
+** prune
+
+- 生成に不要なデータを削除することで容量を削減すること
+- ファイル名に pruned をつけて一緒に配布されていることがある
+- 学習時には prune してないファイルがいいの？ 大差ないの？
 
 * VAE
 
@@ -96,6 +108,33 @@
 -- Quicksetting listにsd_vaeを追加する
 - モデルファイルに内蔵することが出来る
 -- というか元々内蔵されているものを上書きするらしい
+
+* モデル作成
+
+モデルファイルを得られる方法
+
+- Dreambooth
+- マージ
+
+** Dreambooth
+
+- 狭義では、finetuneと追加学習とDreamboothは別の意味らしいけどようわからん。
+- Extension版が正月のアップデート不具合と時代遅れによりツールは戦国時代に戻った。
+- Loraもまたツールが分かれてバラバラになった。
+- [[StableTuner]]
+
+** マージ
+
+標準Checkpoint Mergerにバグがあり、Add Differenceを使うとモデルが壊れていた。
+n番目のトークンが無視されたり効果が弱まったりする。nは不定(1や76以外もありうる)
+これは2023-01-15に修正された。(層別マージニキがプルリク送ってくれた)
+今までに作られたマージモデルはほぼバグの影響を受けていると思われるので要修正。
+
+詳しい説明と修正方法はこちら。
+https://note.com/bbcmc/n/n12c05bf109cc
+
+- [[Checkpoint Merger>ローカルのマージ]]
+- [[層別マージ>階層マージ]]
 
 * モデル配布
 
@@ -109,6 +148,13 @@
 - 学習用は、 fp32, ema が理想的。
 - ファイル名には日本語やスペースが無いほうがトラブルが減るかも。
 
-** マージ方法
+*** 作成方法
 
-- Add Differenceを使う場合は注意が必要・・・
+決定版みたいなツールはまだ無い。
+StableTunerが最も理想に近そうだけど学習しないと出力できない？
+
+- https://github.com/Akegarasu/sd-webui-model-converter
+-- EMAが壊れてるらしい
+- https://note.com/kohya_ss/n/nf5893a2e719c
+-- 古くてsafetensors未対応だしうまく動かない
+

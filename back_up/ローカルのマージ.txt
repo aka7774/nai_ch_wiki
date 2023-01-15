@@ -55,14 +55,13 @@ AにAnything、BにNAI-full(nsfw)、CにNAI-sfwそして、0.3の割合指定、
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/hiZuSdCRNS.jpg,600)
 
 ** モデルの破損
-Elysium_Anime_V3はプロンプトの一語目が無視される。例えば「a skelton girl」ではガイコツ女が出るが、「skelton girl」だと普通の女の子が出る。これはモデルのtext_encoderが破損しているからである。
-モデルが破損する原因はAdd differenceでマージしたモデルを、さらに別のモデルとWeighted sumでマージする事で起こるらしい。
+破損しているモデルとして有名なのはElysium_Anime_V3。プロンプトの一語目が無視される。「a skelton girl」ではガイコツ女が出るが、「skelton girl」だと普通の女の子が出る。
+モデルが破損する原因は標準Checkpoint Mergerにバグがあった模様だが、2023-01-15に修正された。
 
-修復方法としては
-・モデルをfp16化する。マージでAとB両方に壊れたモデルを突っ込んで、(M)を0にしてsave as float16する
-・層別マージで正常なモデル(A)と壊れたモデル(B)を入れ、ALL_Bでbase_alphaだけ0に指定してマージする
-とのこと。
-ただし修復前と修復後のモデルは全く同じ条件でも生成される絵は変わってしまう。
+詳しい説明と修正方法はこちら。
+https://note.com/bbcmc/n/n12c05bf109cc
+
+修復前と修復後のモデルは全く同じ条件でも生成される絵が変わってしまう事には注意。
 
 * マージモデルの比較
 
@@ -372,7 +371,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/280
 https://huggingface.co/syaimu/7th_furry
 
 
-**129スレ659 Almond grape, Almond,basil_mix,cinammon_mix(safetensors版)
+**129スレ659 Almond grape, Almond_mix, basil_mix, cinammon_mix(safetensors版)
 https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/659
 >cinnamonとかにsafetensors版を追加したで~~
 >一応チェックしたけど問題なく使えるはず~~
@@ -384,6 +383,36 @@ https://huggingface.co/nuigurumi/Almond_mix
 https://huggingface.co/nuigurumi/basil_mix
 https://huggingface.co/nuigurumi/cinnamon_mix
 
+**131スレ107 YuzuGinger_v1, YuzuLemonChaiLatte_v3.5, YuzuLemonChaiLatte_v9.5, YuzuLemonMilk_v1.5
+https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/107
+https://huggingface.co/thiros/YuzuLemonTea
+>107今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ b57b-NFgX)2023/01/15(日) 22:35:42.63ID:2u9yBrOR0~~
+>YuzuLemonの修正版アップしたので一応伝えとくで~~
+>ついでにアニメモデル追加した（リアル系1モデル中間2モデルアニメ系1モデル）~~
+&ref(https://i.imgur.com/qYK8DKn.jpg,450)
+
+&ref(https://i.imgur.com/Tim9BZK.jpg,450) 
+
+&ref(https://i.imgur.com/4vc4HSL.jpg,450)
+
+**131スレ212,228 doll774, 666doll774
+https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/212
+>212今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 5988-7DGa)2023/01/16(月) 01:33:13.60ID:9rHSB27P0~~
+>>>176~~
+>えらい時間かかってしまったけどほい~~
+>https://huggingface.co/doll774/doll774~~
+>いちおう人力XYplotとfix_position_ids.pyの両方でプロンプト不具合無しと確認済み~~
+>ワイはわざとvae無しでぼやけたエロ人形量産してるけど一番相性いいvaeはNAI用だと思う（それ以外はちょっとケバい？）~~
+>このモデルでワイがやってるのはこんなんだから動きのあるポーズや複数人の絡みは多分苦手~~
+>https://majinai.art/i/b-OvKzl.png~~
+>https://majinai.art/i/7Hh7CJv.png~~
+>https://majinai.art/i/nvjOE0-.png~~
+>https://majinai.art/i/eOwMcVF.png~~
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/f3ksLs2diz.png,200) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/bg4Uw4uCLl.png,200) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/MdebjpdN9x.png,200) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/mChIqp2I1K.png,200)
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/228
+>ちなみに今666doll774ってファイルも上げたけどただのワイのバックアップ用の全然絵柄違うモデルだから気にせんでな~~
+>韓国製のとらいし666再現DBにdoll774混ぜたらなんかめっちゃ下品になったやつだからドギツイロリビッチが出続けるだけのモデルや~~
 
 
 *叡智/Tips 一覧

@@ -199,6 +199,33 @@ Windowsの設定→グラフィックからGPUスケジューリングをオフ
 NVIDIAコントロールパネルの3D設定の管理から電源設定をパフォーマンス優先に変更
 　→電源消費が気になるならPythonだけ変更すればよい
 
+*** launch.pyを編集し、torchvision・xformersのバージョンを上げる方法
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449
+
+1:git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+でWEBUIをインストール
+
+2:launch.pyを以下のように編集する
+176行目
+>torch_command = os.environ.get('TORCH_COMMAND', "pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu117")~~
+184行目
+>xformers_windows_package = os.environ.get('XFORMERS_WINDOWS_PACKAGE', 'https://github.com/C43H66N12O12S2/stable-diffusion-webui/releases/download/torch13/xformers-0.0.14.dev0-cp310-cp310-win_amd64.whl')~~
+
+3:webui-user.batを実行（VENVフォルダ以下が生成される）
+
+4:nVidiaのサイトからCUDNN 8.7をダウンロードする
+https://developer.download.nvidia.com/compute/redist/cudnn/v8.7.0/local_installers/11.8/cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip
+ZIPファイルを解凍し、/bin にあるdllファイルを "stable-diffusion-main\venv\Lib\site-packages\torch\lib"に上書きコピー　
+
+5:web-user.bat を編集して、COMMANDLINE_ARGSに　--xformers to を追加
+
+6:ENJOY!!
+
+※RTX3060勢なんだが上記の手法で若干速度向上した。
+旧情報の手作業でxformersのバージョンを上げたりビルドする手法だと各種モジュール間バージョン依存の関係でハマることがあるので新手法おすすめ
+
+旧情報
+[+]
 ・xformersの対応しているtorchバージョンを確認
 結局xformersが動く動かないの差は大きいので、これがちゃんと動作する環境を作る
 下記githubで最新バージョンのwhlファイル名を確認
@@ -274,6 +301,7 @@ Time taken: 3.05s Torch active/reserved: 2518/2684 MiB, Sys VRAM: 5358/24564 MiB
 // これで18it/sぐらい出るようになった
 // Windows ディスプレイ設定→グラフィックの設定→GPUアクセラレータによるGPUスケジューリングをOFFで再起動する
 // これで24it/s出るようになった
+[END]
 
 **gtx16xxで必要な設定
 　gtx16xxでは半精度浮動小数点数が扱えないためそのままでは黒や緑の絵しかでない。オプション追加が必要。また、メモリがやや少なめ用設定も追加要
