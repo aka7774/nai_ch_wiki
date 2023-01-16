@@ -3,7 +3,8 @@ Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
 雑に言うとDreamboothの小さくて速いやつ
 *参考資料
 https://rentry.org/lora_train
-クラウドGPUを使う場合はリンク先の下の方に Collab Instructions がある
+クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
+フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
 
 上より引用
 *準備
@@ -85,7 +86,7 @@ accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
 **学習の解像度: 512で。RTX4090か超強クラウドGPUなら 768 もいける
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ttb3qyi0Ya.png)
 ----
-**学習率(Learning Rate): 1e-4 (= 0.0001) これより上げることはあんまりない。 5e-5 (=0.000005)くらいでもいいかも
+**学習率(Learning Rate): 1e-4 (= 0.0001) これより上げることはあんまりない。 5e-5 (=0.00005)くらいでもいいかも
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/DkV4RQ4ZnK.png)
 **スケジューラー: cosine_with_restart で(よく分からんのでいじらない) 学習率を途中で上げ下げするやり方
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/0jBUxX8eVo.png)
@@ -95,7 +96,7 @@ accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
 ----
 **キャプションをシャッフルする?: する
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/IEAf9r1tqK.png)
-**キャプションの最初のトークンを保持する?: よく分からん
+**キャプションの最初のトークンを保持する?: コメント欄を参照
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/kMrIwfMsJE.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/SKOgINqr6w.png)
 **warmup ratio 使う?: 学習の最初だけ学習率を下げる機能
@@ -162,4 +163,7 @@ number_of_generation:作成する枚数
 [+]画像
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/l8x2Fjrdz7.png)
 [END]
-原文が下に行くほど分かりやすくなっているらしいので変な構成ですまんこ
+*慣れたら
+lora_train_command_line.py をコピーしてパラメーターを直書き
+GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
+「Tools」タブにフォルダ配置補助機能がある 

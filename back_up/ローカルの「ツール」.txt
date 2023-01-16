@@ -46,6 +46,7 @@ https://pixeldrain.com/
 海外ではこのアップローダーなんかモデル配布で使われてたりするやな
 制限は週に20GBまでだから問題ないだろう 
 
+
 * 任意の.ckptと.safetensorsを相互変換するやつ_v3
 巨大モデル対応.…..標準の~12GBランタイムの場合~10GBまでのモデルが変換可能や
 fp16化対応.…..fp16として保存することでRAMとストレージを節約(学習には不向きやけど生成画像は同一)
@@ -75,6 +76,25 @@ WebUIとは別に起動してアウトペイントするツール
 
 * スクリプト
 
+** fix_postion_ids.py：マージモデルの破損修復
+マージされたモデルが破損する問題を修復するスクリプト。階層マージ拡張機能の作者製
+こんな感じで調査したり、修復してモデルを出力できる。
+https://files.catbox.moe/ez1pqp.webp
+pytorchとsafetensors.torchをpipで入れてないと動かない。osとargparseはPythonの標準ライブラリ。
+
+コマンド例：調査
+=|(box=textarea)|
+python fix_position_ids.py --model E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3.safetensors --verbose
+||=
+
+コマンド例：修復
+=|(box=textarea)|
+python fix_position_ids.py --model E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3.safetensors --out E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3_fix.safetensors
+||=
+
+ちなみにマージモデルの破損問題は、マージするときにflloat16のチェックを入れてモデルを生成すると回避できるらしい。
+
+** Config-Preset
 - プリセット値の構成可能なドロップダウンを使用して、Web UI の txt2img タブと img2img タブの設定をすばやく変更｜Zyin055/Config-Presets: Script for Automatic1111 - [https://github.com/Zyin055/Config-Presets]
 
 * プラグイン

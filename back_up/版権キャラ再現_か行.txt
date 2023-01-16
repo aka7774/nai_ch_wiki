@@ -9,6 +9,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |||||||
 |zest_&#40;lossol), cardcaptor_sakura, kero, kinomoto_sakura, 1girl, blush, bow, brown_hair, card, closed_mouth, gloves, green_eyes, holding, holding_card, holding_wand, magical_girl, open_mouth, pink_headwear, red_bow, smile, star_&#40;symbol), wand, white_gloves, wings||カードキャプターさくら|木之本桜(Sakura Kinomoto)||https://i.imgur.com/NCjcbOp.png|
+|kinomoto sakura, cardcaptor sakura, loli, child,  green eyes, antenna hair, light brown hair, hair intakes, bangs, ||^|^|服を指定しない簡易版|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DtEBwpchKp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/DtEBwpchKp.png]]|
 |}
 
 ***　ガールズ＆パンツァー
@@ -51,7 +52,7 @@
 ***　艦隊これくしょん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|{{{masterpiece}}},{{{high quality}}},{{{high detailed}}},{{{ hatsuharu &#40;kancolle)}}},{{ purple short sthick eyebrows}},{{{small breasts}}}, slender,{{loli}}, tsurime,{{{parted bangs}}}, hair pulled back,very long hair,{{ high ponytail}},{{{{{{hair up}}}}}}, {{purple hair}}, beautiful detailed hair, small breasts, zettai ryouiki, purple eyes, {{{white sailor micro dress}}}, {{jet black plain thighhighs}}, {{jet black plain footwear}}, {skindentation},{jet black long gloves} ,white Clothes,||艦隊これくしょん|初春|名前だけだと、別人になるため、髪の色や眉毛を設定するとそれらしくなる||
+|{{{masterpiece}}},{{{high quality}}},{{{high detailed}}},{{{ hatsuharu &#40;kancolle)}}},{{ purple short sthick eyebrows}},{{{small breasts}}}, slender,{{loli}}, tsurime,{{{parted bangs}}}, hair pulled back,very long hair,{{ high ponytail}},{{{{{{hair up}}}}}}, {{purple hair}}, beautiful detailed hair, small breasts, zettai ryouiki, purple eyes, {{{white sailor micro dress}}}, {{jet black plain thighhighs}}, {{jet black plain footwear}}, {skindentation},{jet black long gloves} ,white Clothes,||艦隊これくしょん|初春|名前だけだと、別人になるため、髪の色や眉毛を設定するとそれらしくなる|https://image02.seesaawiki.jp/n/h/nai_ch/njIiyq275T.png|
 |solo, {{{{hibiki (kancolle)}}}}, loli, child, long hair, silver hair, dark blue eyes, tsurime, expressionless, flat chest, school uniform, cowboy shot, beret,||艦隊これくしょん|響|学習データセットには十分な数が含まれているので、あまりキャラ名は強調しなくてもいいかもしれない|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5odedD0Bk3-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5odedD0Bk3.png]]|
 |masterpiece,high quality,high detailed,ikazuchi &#40;kancolle),strong smile,skin fang,loli, brown hair, flat chest, school uniform, miniskirt|less than &#40;surrealism:30.0),lowres, bad anatomy, five fingers,bad hands, text, error, missing fingers, too many fingers, missing arms, missing legs, more than two legs, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name|艦隊これくしょん|雷|strong smile,skin fangを入れることにより、より雷らしさを出せます。これがないと困惑顔になりがちになってしまいます|https://image01.seesaawiki.jp/n/h/nai_ch/p3Jh2ew_R6.jpg|
 |{{{{ro-500 &#40;kancolle)}}}}, school swimsuit,,{{{{{{{dark_skin}}}}},small breasts,long hair,{{{sailor_suit}}},sakura hair ornament,school swimsuit tan,darkblue eyes, platinum blonde hair,|white skin,pure skin|艦隊これくしょん|呂500||https://image01.seesaawiki.jp/n/h/nai_ch/xYPEh3NCw3.png|
@@ -203,13 +204,8 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |wiz &#40;konosuba),brown hair,ahoge,hair over one eye,long hair,yellow eyes,{{purple long coat}},purple long skirt,|{{{{{aqua}}}}}|この素晴らしい世界に祝福を|ウィズ|ネガティブプロンプトを入れないとめぐみん以外はどのキャラもアクアになる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9HTt2ZyGcJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/9HTt2ZyGcJ.png]]|
 |megumin||この素晴らしい世界に祝福を|めぐみん||https://image02.seesaawiki.jp/n/h/nai_ch/qOkoi98bLP.png|
+|megumin, witch hat, red eyes, black brown hair, short hair with long locks, ||^|^|プロンプト増やした版。顔以外がぼやけやすい？|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/IGkPk3KvHu-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/IGkPk3KvHu.png]]|
 |aqua &#40;konosuba)||この素晴らしい世界に祝福を|アクア||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/I2SURr6rQA-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/I2SURr6rQA.png]]|
+|aqua_(konosuba), blue eyes, bow, hair ornament, blue hair, very long hair, medium breasts, detached sleeves, thigh boots, ||^|^|プロンプト増やした安定版|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD.png]]|
+|darkness_(&#91;&#91;&#91;&#91;&#91;&#91;konosuba]]]]]]), long hair, yellow hair, blue eyes, ponytail, medium breasts, {{x}} hair ornaments, black gloves,  |hair intakes, aqua, megumin,  evil, blue hair, sphere, hair bow, horn, blue hair ornament, |この素晴らしい世界に祝福を|ダクネス|どうしてもアクアの髪留めが出やすい。hair ornamentsがアクアの髪留めを誘発しているので、ダクネスの髪留めを諦めていいなら外すのもあり。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia.png]]|
 |}
-
-
-
-
-
-
-
-

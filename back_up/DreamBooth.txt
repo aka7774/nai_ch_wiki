@@ -562,3 +562,35 @@ GUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss
 [[https://note.com/kohya_ss/n/nba4eceaa4594>>>https://note.com/kohya_ss/n/nba4eceaa4594]]
 
 出力ファイルは last.ckpt か last.safetensors やで
+
+*Instance promptとInstance Tokenのどちらが呼び出しキーなのか？
+正則化画像アリ学習のついでに「本当はどっちなん？」という疑問から検証してみた。ただし古いwebuiとDBでの結果です…
+結論から言えば
+・Existing Prompt Contentsが「Description」の場合、Instance promptに[filewords]のみなら、タグ付けテキスト内にClass Token(例:cpcにしたならcpc)が記述されていれば、Instance Tokenに入力した語(例:shs)が呼び出しキーとして機能する。
+・Instance promptに[filewords]を使わない場合、Instance promptに入力した語が呼び出しキーとなる。
+[+]
+
+・検証1
+1.とあるキャラA（茶髪の一般女子）の学習画像3枚（一枚絵を顔、上半身、下半身に分割）、正則化画像30枚（金髪姫騎士の絵）で学習。学習画像の名前はただの数字。同名のテキストファイルに「1girl,適当な特徴」を記述し同フォルダへ。
+2.Instance promptには[filewords]、Class Promptは未入力、Instance Tokenは「shs」、Class Tokenは「1girl」、Existing Prompt Contentsは「Description」と入力し学習を行った。1e-6で600ステップ。
+3.プロンプトに「1girl」で出力すると、学習元のキャラAとは似ていない絵が出る。いくつか[filewords]に記述した単語やAの特徴も入力したが結果は同じで再現性は低かった。
+4.しかし「shs 1girl」で出力すると、明らかにAの特徴が強く出た。
+5.今回の設定では呼び出しキーは「shs」=Instance Tokenだった。
+
+・検証2
+1.検証1との違いはタグ付けしたテキストを使用せず、Instance promptには「nanU」、Class Promptは「Unan」、Instance Tokenは「shs」、Class Tokenは「cpc」、1e-5で300ステップ。
+2.1girlのみで生成するとプロンプトに特徴を記述していないにも関わらず正則化画像（金髪姫騎士）の絵が出て来た。正則化画像が学習結果に影響を与えるというのは事実らしい。Aっぽい絵も低確率で出るがほぼ姫騎士の絵が出る。これは学習率を検証1より10倍にしたせいか？
+3.プロンプトにUnanやcpcでもAの絵は出ない。
+4.検証1では呼び出しキーだった「shs」だとAの特徴が出始めた。しかしまだ金髪姫騎士要素も強い。shsを複数記述、強調するとAの特徴も強く出た。
+5.「nanU」は上記3つのワードよりも一番Aの特徴が強く出た。今回の呼び出しキーと認識していいだろう。
+
+・検証3
+1.検証1はそもそもInstance promptは[filewords]である。Existing Prompt Contentsが「Description」の場合、[filewords]にClass Token(=1girl)が記述されていれば、語の前の位置にInstance Token(=shs)を自動で挿入してくれるらしい。それによって呼び出しキーとしてshsが機能したのかもしれない。Class Tokenを「1girl」以外にしても自動挿入してくれるのだろうか？　
+2.Class Tokenは「cpc」にしてあとは検証1と同じ設定で学習。タグ付けテキスト内に「cpc」という語は無いのを確認。
+3.Instance Token「shs」で生成してもキャラAとは似ていない絵が出力された。
+4.今回の検証ではshsは呼び出しキーとして機能しなかった。
+
+・疑問
+
+検証2では「nanU」が明らかに呼び出しキーとして機能していたが、「shs」も呼び出しキーとして少し機能しているように感じた。Instance promptとInstance Tokenが異なる語の場合、Instance prompt > Instance Token という事なのだろうか？
+[END]

@@ -36,7 +36,6 @@
 ***　ゆるゆり
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
 |{yuru yuri,game cg},{{toshinou_kyouko}},{nanamori school uniform,sailor_dress,short over long sleeves,layered sleeves}, blonde hair,blue eyes,long hair, hair bow,hairband,solo,|lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality|ゆるゆり|歳納京子|Scale:7|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/s8FCw6jwpv.png)|
 |{yuru yuri,game cg},{{furutani himawari}},{nanamori school uniform,sailor_dress,short over long sleeves,layered sleeves}, dark blue hair, brown eyes, hairband,{low low twintails,twin braids},large breasts,solo,|sunflower, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality|ゆるゆり|古谷向日葵|Scale:7|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N721kNNbr5.png)|
 |{yuru yuri,game cg},{{{yoshikawa chinatsu}}},{nanamori school uniform,sailor_dress,short over long sleeves,layered sleeves},short hair, pink hair, blunt bangs, green eyes, {tareme}, hair bobbles,small breasts,{{{{{afro twintails,huge puffs,huge twintails}}}}},solo,loli,|{{{afro,wavy hair}}},anime,{tsurime},akaza akari,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,|ゆるゆり|吉川ちなつ|Scale:7|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/h4Lz0wkxMb.png)|
@@ -48,5 +47,6 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |}
+
 
 

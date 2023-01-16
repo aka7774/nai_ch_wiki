@@ -186,10 +186,10 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/459
 >スパゲッティコードみたいになっとるから呼び出し方は適宜変えてくれ・・・普通に使うとおっさんとかは出ん~~
 >あと塗りとかが気に食わん場合は付属のHN(呼び出しプロンプト無し)を薄っすらかけると補強できるかもしれんな~~
 >拡大する場合は過学習しとる関係上ハイレゾはほぼ必須や~~
-&ref(https://i.imgur.com/OETKVK1.png,200)
-&ref(https://i.imgur.com/OkujSyk.png,200)
+&ref(https://i.imgur.com/OETKVK1.png,200) &ref(https://i.imgur.com/OkujSyk.png,200)
 
 **117スレ472 7th_Layer (abyss_7th_layer)
+&#128317;https://huggingface.co/syaimu/7th_Layer/
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/134
 >116スレの754のAをナイトオレンジと取り替えたら出来結構いいままでブロンプトとかめっちゃ効きやすくなったからおすすめするで~~
 >高解像度補助とネガにワーストクオリティとロークオリティ(あと一応バッドブロンプト)おすすめや~~
@@ -214,10 +214,12 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/472
 https://huggingface.co/syaimu/7th_Layer/tree/main
 
 **117スレ516 El-Diablo
+&#128317;https://huggingface.co/deadman44/SD_Anime_Merged_Models
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/516
 >マージモデルにはカッコいい名前付けなあかんのか~~
 >ならワイのAnyNaiにdanbooruタグの効くインスタ2とDreamlikeを階層マージしたモデルは”El†Diablo〜漆黒の悪魔〜"って名乗るわ~~
 &ref(https://i.imgur.com/NptulYJ.png,200) &ref(https://i.imgur.com/X9Lyn2h.png,200) &ref(https://i.imgur.com/mPJLXyG.png,200)
+
 
 **117スレ705 bw-merge-bw-merge-ACertainModel-half-bw-merge-Elysium_V1-f222-0-0-bw-merge-EimisAnimeDiffusion_1-0v-gape60-fp16-0-1.ckpt
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/705
@@ -227,6 +229,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/705
 >abyssほどええのじゃないけどサンプル~~
 
 **117スレ884 7th_Layer_G1 (abyss_7th_layerG1)
+&#128317;https://huggingface.co/syaimu/7th_Layer/
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/884
 https://fate.5ch.net/test/read.cgi/liveuranus/1671803055/885
 https://huggingface.co/syaimu/7th_Layer/tree/main
@@ -237,9 +240,9 @@ https://huggingface.co/syaimu/7th_Layer/tree/main
 
 
 **118スレ584 7th_Layer_anime(abyss_7th_anime)
+&#128317;https://huggingface.co/syaimu/7th_Layer/tree/main
 https://fate.5ch.net/test/read.cgi/liveuranus/1672034918/584
 https://fate.5ch.net/test/read.cgi/liveuranus/1672034918/637
-https://huggingface.co/syaimu/7th_Layer/tree/main
 >Abyss_7th_animeについて~~
 >デフォの絵柄がアニメ調になってアウトラインがつく~~
 &ref(https://i.imgur.com/dR10sPA.png,200)
@@ -252,7 +255,7 @@ https://huggingface.co/syaimu/7th_Layer/tree/main
 **119スレ375,417 cinnamon_mix
 https://fate.5ch.net/test/read.cgi/liveuranus/1672160740/375
 https://fate.5ch.net/test/read.cgi/liveuranus/1672160740/417
-https://huggingface.co/nuigurumi/cinnamon_mix
+&#128317;https://huggingface.co/nuigurumi/cinnamon_mix
 >>375のモデル上げといたで~~
 >あんまりリアルすぎないこれくらいの質感が好きな人もいると信じてるで~~
 >操作性もそこそこ高い気がする~~
@@ -260,14 +263,14 @@ https://huggingface.co/nuigurumi/cinnamon_mix
 
 **122スレ226 YuzuLemonTea
 https://fate.5ch.net/test/read.cgi/liveuranus/1672654440/226
-https://huggingface.co/thiros/YuzuLemonTea
+&#128317;https://huggingface.co/thiros/YuzuLemonTea
 >諸事情でhuggingfaceにマージモデルあげることになったんで折角だからニキたちも見てやってくれや~~
 >majinaiのプロンプトそのまま引っ張ってきてこんな感じ~~
 &ref(https://i.imgur.com/Jsxv99B.jpg,200)　&ref(https://i.imgur.com/MSIKW3B.jpg,200)　&ref(https://i.imgur.com/IkDciao.jpg,200)　&ref(https://i.imgur.com/OAzY1jj.jpg,200)　&ref(https://i.imgur.com/DXiwmaM.jpg,200)　&ref(https://i.imgur.com/4O2Its6.jpg,200)　&ref(https://i.imgur.com/Lt6puNq.jpg,200)
 
 **122スレ560 7th_anime_v2
 https://fate.5ch.net/test/read.cgi/liveuranus/1672654440/560
-https://huggingface.co/syaimu/7th_Layer
+&#128317;https://huggingface.co/syaimu/7th_Layer
 >比較画像とTest系のやつをV2としてアップしたで~~
 >7th_anime_test01→7th_anime_v2.0A~~
 >7th_anime_test02→7th_anime_v2.0B~~
@@ -276,7 +279,7 @@ https://huggingface.co/syaimu/7th_Layer
 
 **123スレ280 basil_mix
 https://fate.5ch.net/test/read.cgi/liveuranus/1672807546/280
-https://huggingface.co/nuigurumi/basil_mix
+&#128317;https://huggingface.co/nuigurumi/basil_mix
 >年末辺りに画像貼った気がするモデルを公開したで~~
 >インスタ顔を維持しながら、プロンプトへの反応性を良くした実写系不気味の谷モデルや~~
 >そのまま使うより更にマージ素材にしたほうがええかもしれん~~
@@ -284,11 +287,11 @@ https://huggingface.co/nuigurumi/basil_mix
 
 >cinnamon mixも気に入ってくれる人が時々いて嬉しいで~~
 &ref(https://i.imgur.com/ws0MIKp.png,200)
-https://huggingface.co/nuigurumi/cinnamon_mix
+&#128317;https://huggingface.co/nuigurumi/cinnamon_mix
 
 **125スレ696 FruitsMix
 https://fate.5ch.net/test/read.cgi/liveuranus/1673029370/696-n
-https://huggingface.co/poyo23/FruitsMix
+&#128317;https://huggingface.co/poyo23/FruitsMix
 >自分用にマージモデル62個huggingfaceにぶちこんだからついでに公開設定にした~~
 >全然整理できないわ~~
 
@@ -297,7 +300,7 @@ https://huggingface.co/poyo23/FruitsMix
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/rr7RC5cE5g.jpg,450)
 
 https://fate.5ch.net/test/read.cgi/liveuranus/1673029370/843-n
-https://huggingface.co/WarriorMama777/OrangeMixs
+&#128317;https://huggingface.co/WarriorMama777/OrangeMixs
 >AbyssOrangeMix2をアップロードしました~~
 >階層マージの素材にインスタF222ではなくBasilMixを使用したのと、IN深層を追加したモデル~~
 >それからElysiumAnimeV2ベースで従来の階層マージの手法でマージしたモデルもちょっと前にアップロードしてた（EerieOrangeMixってやつ）~~
@@ -314,14 +317,14 @@ https://huggingface.co/WarriorMama777/OrangeMixs
 
 **126スレ835 tanpopo_mix
 https://fate.5ch.net/test/read.cgi/liveuranus/1673176819/835-n
-https://huggingface.co/Inu-Fuguri/tanpopo_mix/
+&#128317;https://huggingface.co/Inu-Fuguri/tanpopo_mix/
 >誰かワイのマージモデル使ってみてクレメンス~~
 >線の細さとちょっとロリが出やすい感じを目指してみたで~~
 &ref(https://i.imgur.com/lopxkZA.png,200) &ref(https://i.imgur.com/QVtffLK.png,200) &ref(https://i.imgur.com/5490hdX.png,200)
 
 **127スレ490 Almond_mix
 https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/490
-https://huggingface.co/nuigurumi/Almond_mix
+&#128317;https://huggingface.co/nuigurumi/Almond_mix
 >新しいマージモデル(作ったのはだいぶ前だけど)を公開にしたで~~
 >Anyの可愛い顔をそのまま、もうちょっと汎用性と細部の精細さを持たせようとしたモデルや~~
 &ref(https://i.imgur.com/60oq3v0.png,200) &ref(https://i.imgur.com/LN1vnQd.png,200)
@@ -333,7 +336,7 @@ https://huggingface.co/nuigurumi/Almond_mix
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/n1R2SZsutM.png,450)
 
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xjNtiap3oU-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xjNtiap3oU.png]]
-https://huggingface.co/syaimu/7th_test
+&#128317;https://huggingface.co/syaimu/7th_test
 https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/357
 &ref(https://i.imgur.com/LsG12FL.jpg,200)
 >非常に難しい判断を要求されている~~
@@ -348,10 +351,10 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/555
 >って名前で今アップしとるからテストで使ってみてくれればええで~~
 https://fate.5ch.net/test/read.cgi/liveuranus/1673292474/655
 >あげたテストモデルのリンク張っとくで~~
-https://huggingface.co/syaimu/7th_test
+&#128317;https://huggingface.co/syaimu/7th_test
 
 **129スレ185 7th_anime_v2.5_B
-https://huggingface.co/syaimu/7th_Layer
+&#128317;https://huggingface.co/syaimu/7th_Layer
 https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/185
 >7th_anime_v2.5_B~~
 >https://i.imgur.com/xEBcnvV.png~~
@@ -368,7 +371,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/185
 https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/280
 >ケモモデルも一応上げといたで~~
 >かなりピーキーや~~
-https://huggingface.co/syaimu/7th_furry
+&#128317;https://huggingface.co/syaimu/7th_furry
 
 
 **129スレ659 Almond grape, Almond_mix, basil_mix, cinammon_mix(safetensors版)
@@ -379,13 +382,13 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/659
 >ついでに、Almondにちょっと追加マージしたAlmond grapeってモデルも追加~~
 >gape系を少しだけ混ぜ込んだモデルで、NSFWに強い可能性があるモデルや 詳しくはテストしてないから分からんけど、興味があったら試してみてくれると嬉しい~~
 
-https://huggingface.co/nuigurumi/Almond_mix
-https://huggingface.co/nuigurumi/basil_mix
-https://huggingface.co/nuigurumi/cinnamon_mix
+&#128317;https://huggingface.co/nuigurumi/Almond_mix
+&#128317;https://huggingface.co/nuigurumi/basil_mix
+&#128317;https://huggingface.co/nuigurumi/cinnamon_mix
 
 **131スレ107 YuzuGinger_v1, YuzuLemonChaiLatte_v3.5, YuzuLemonChaiLatte_v9.5, YuzuLemonMilk_v1.5
 https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/107
-https://huggingface.co/thiros/YuzuLemonTea
+&#128317;https://huggingface.co/thiros/YuzuLemonTea
 >107今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ b57b-NFgX)2023/01/15(日) 22:35:42.63ID:2u9yBrOR0~~
 >YuzuLemonの修正版アップしたので一応伝えとくで~~
 >ついでにアニメモデル追加した（リアル系1モデル中間2モデルアニメ系1モデル）~~
@@ -397,10 +400,11 @@ https://huggingface.co/thiros/YuzuLemonTea
 
 **131スレ212,228 doll774, 666doll774
 https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/212
+&#128317;https://huggingface.co/doll774/doll774
 >212今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 5988-7DGa)2023/01/16(月) 01:33:13.60ID:9rHSB27P0~~
 >>>176~~
 >えらい時間かかってしまったけどほい~~
->https://huggingface.co/doll774/doll774~~
+>&#128317;https://huggingface.co/doll774/doll774~~
 >いちおう人力XYplotとfix_position_ids.pyの両方でプロンプト不具合無しと確認済み~~
 >ワイはわざとvae無しでぼやけたエロ人形量産してるけど一番相性いいvaeはNAI用だと思う（それ以外はちょっとケバい？）~~
 >このモデルでワイがやってるのはこんなんだから動きのあるポーズや複数人の絡みは多分苦手~~
@@ -414,6 +418,22 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/228
 >ちなみに今666doll774ってファイルも上げたけどただのワイのバックアップ用の全然絵柄違うモデルだから気にせんでな~~
 >韓国製のとらいし666再現DBにdoll774混ぜたらなんかめっちゃ下品になったやつだからドギツイロリビッチが出続けるだけのモデルや~~
 
+**130スレ572,131スレ566,590 SD_Photoreal_Merged_Models
+&#128317;https://huggingface.co/deadman44/SD_Photoreal_Merged_Models
+https://fate.5ch.net/test/read.cgi/liveuranus/1673668284/572
+>572今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ade8-f6s+)2023/01/15(日) 09:28:12.06ID:LCPrY6IZ0~~
+>リアル系~~
+&ref(https://i.imgur.com/gEn4boE.png,200) &ref(https://i.imgur.com/YbYwSPw.png,200) &ref(https://i.imgur.com/cuymbqi.png,200) &ref(https://i.imgur.com/jui7sCB.png,200)
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/566
+>566今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ade8-f6s+)2023/01/16(月) 17:11:18.43ID:dXlUMdW90~~
+>ワイの実写モデル見向きもされなくて悲しい~~
+>やっぱインスタっぽいからかツイプラスなんだが？（変わらん）~~
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/590
+>590今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ade8-f6s+)2023/01/16(月) 17:25:31.23ID:dXlUMdW90~~
+>>>582~~
+>ググるでEl Zipang_test01 検索してくれ今回は††なしや~~
 
 *叡智/Tips 一覧
 
