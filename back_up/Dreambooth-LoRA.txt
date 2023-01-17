@@ -96,7 +96,8 @@ accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
 ----
 **キャプションをシャッフルする?: する
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/IEAf9r1tqK.png)
-**キャプションの最初のトークンを保持する?: コメント欄を参照
+**キャプションの最初のトークンを保持する?: 
+キャプションを付けた場合フォルダ名のインスタンスプロンプトが無効になる~~のでキャプションファイルの先頭にインスタンスプロンプトを自分で書く必要がある。~~インスタンスプロンプトが消費するトークン数を次のkeep at front? に入力するとシャッフルされないらしい。 コメント欄に詳しく書いてある  
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/kMrIwfMsJE.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/SKOgINqr6w.png)
 **warmup ratio 使う?: 学習の最初だけ学習率を下げる機能
@@ -146,7 +147,7 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/vrFirugtW9.png)
 [END]
 **キャプションの細かい加工
-https://github.com/starik222/BooruDatasetTagManager や スレ130の>>346のツールで
+https://github.com/starik222/BooruDatasetTagManager や スレ130の>>346>>949のツールで
 余計なタグを削ったりこだわりのタグ追加をする
 *そもそも学習用画像ってどうやって加工するの
 本文で説明している kohya_ss 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
@@ -166,4 +167,4 @@ number_of_generation:作成する枚数
 *慣れたら
 lora_train_command_line.py をコピーしてパラメーターを直書き
 GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
-「Tools」タブにフォルダ配置補助機能がある 
+「Tools」タブにフォルダ配置補助機能がある。スクリプト版のパラメータの一部は設定出来ないかも？

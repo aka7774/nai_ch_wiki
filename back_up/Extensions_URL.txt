@@ -35,6 +35,11 @@ https://gist.githubusercontent.com/aka7774/bb306094dae726a32fbb6c617ddce2c0/raw/
 
 * 一覧
 
+** stable-diffusion-webui-model-toolkit
+
+- https://github.com/arenatemp/stable-diffusion-webui-model-toolkit
+- fp16, safetensors, pruned, VAE内蔵すべてに対応してそう
+
 ** sd-webui-model-converter
 
 - https://github.com/Akegarasu/sd-webui-model-converter

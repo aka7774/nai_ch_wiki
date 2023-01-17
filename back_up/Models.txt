@@ -150,9 +150,9 @@ https://note.com/bbcmc/n/n12c05bf109cc
 
 *** 作成方法
 
-決定版みたいなツールはまだ無い。
-StableTunerが最も理想に近そうだけど学習しないと出力できない？
-
+- StableTunerが最も理想に近そうだけど学習しないと出力できない？
+- https://github.com/arenatemp/stable-diffusion-webui-model-toolkit
+-- これが決定版かも(未確認)
 - https://github.com/Akegarasu/sd-webui-model-converter
 -- EMAが壊れてるらしい
 - https://note.com/kohya_ss/n/nf5893a2e719c

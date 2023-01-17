@@ -9,11 +9,19 @@ TIとは……
  Textual Inversionとは？ - としあきdiffusion Wiki* - https://wikiwiki.jp/sd_toshiaki/Textual%20Inversion%E3%81%A8%E3%81%AF%EF%BC%9F
 
 AUTOMATIC1111(ローカル版)において使うときは拡張子が.ptのファイルをどっかから入手して/embeddingsディレクトリに配置し、プロンプトでそのファイル名を使用します(これを機能させるためにプログラムを再起動する必要はありません)。
+基本的にファイル名が呼び出しキーとなるため、ファイル名を変更しても機能する。
 
 *学習
 学習手順はまだ記載されていません。
 とりあえずとしあき拡散を貼っとく↓
 Textual inversion - としあきdiffusion Wiki* - https://wikiwiki.jp/sd_toshiaki/Textual%20inversion
+
+** Number of vectors per token
+作成するptファイルのtoken数。どれだけの情報を埋め込むかを指定する。Shondoit氏曰く
+「多すぎると柔軟性に欠けます。少なすぎると細部が失われる可能性があります。通常、1〜4個で十分です。それ以上だと、他のプロンプトを圧倒し始めます。」
+とのこと。人物の顔だけなら1〜4で十分という事らしい。複雑な服装や装飾のキャラの再現性を高めたい場合は増やしていくといいのかもしれない。
+学習画像、学習率、ステップ数との兼ね合いも考慮する必要はある。
+
 
 *応用
 **手を修復する：bad_prompt

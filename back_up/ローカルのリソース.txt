@@ -185,10 +185,31 @@ TextualInversionで悪い手の形を学習させて、Embeddingでネガティ�
 -- https://mega.nz/folder/7k0R2arB#5_u6PYfdn-ZS7sRdoecD2A
 - rentry - a page with links to embeddings from many sources.
 -- https://rentry.org/embeddings
+- 中華TI
+--https://github.com/autumn-moon-py/aimodel-embeddings
+
 * 学習系リソース
 ** 透明正則化画像
 512x512、768x768、1024x1024の透明画像詰め合わせ　各1000枚ずつ
 https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
+
+*LORA
+
+**131スレ762 足コキの構図
+https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/762
+>762今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ eaf1-PB+X)2023/01/16(月) 22:00:45.77ID:MngOQSNC0~~
+>https://majinai.art/i/PI6Lo4j.png~~
+>https://majinai.art/i/49GHmfS.png~~
+>https://majinai.art/i/8Rp1Ta0.png~~
+>やっと安定してきたぜぇ…素材の種類が足りなくて足裏絶対見せるLoRAになりつつあるが~~
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9EM1Qk5dEU-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/9EM1Qk5dEU.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ST_8VmQInO-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ST_8VmQInO.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VHc_TWPVZb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/VHc_TWPVZb.png]]
+> ~~
+>795今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ eaf1-PB+X)2023/01/16(月) 22:44:43.39ID:MngOQSNC0~~
+>>>762~~
+>ttps://kioskloud.xyz/d/63c553d166df55c2a59e2de6-YR6TB2VOB5DGETLQG5EUESDOIM2S2VSJ~~
+>アップしておいた~~
+
+
 
 
 

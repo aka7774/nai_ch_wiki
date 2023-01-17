@@ -36,6 +36,10 @@ NAIが反応しないワードもまとめてくれてるのでどうやって�
 
 * ツール
 
+** DanTagCopy: Danbooru tag一覧をプロンプト形式にコピー
+MichinariNukazawa/DanTagCopy_diffusion_tags_clipboard_webextension - https://github.com/MichinariNukazawa/DanTagCopy_diffusion_tags_clipboard_webextension
+ブラウザ拡張。イラストページで右クリック→コピーすると、左のDanbooru tag一覧をプロンプト形式にコピーしてくれる。
+
 ** base64デコードツール
 韓国のAI画像生成サイトとかでDlリンクに使われている暗号を解除する
 base64エンコード/デコードツール｜株式会社エン・ＰＣサービス - https://www.en-pc.jp/tech/base64.php

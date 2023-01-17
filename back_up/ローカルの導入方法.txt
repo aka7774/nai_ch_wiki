@@ -74,6 +74,27 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 ||=
 
+**4：モデルのダウンロードと配置
+
+- ここで検索する
+-- https://huggingface.co/models
+- モデルについては[[Models]]ページに詳しく書いてある。
+- [[ローカルのマージ]]、[[階層マージ]]にスレ発のモデルがあって質もいいのでおすすめ。
+- ダウンロードしたファイルは以下のディレクトリに配置する
+-- stable-diffusion-webui/models/Stable-diffusion
+
+**5：VAEのダウンロードと配置(任意だけど推奨)
+
+- VAEがないと色が薄くなったりするので補正するために使う
+- [[ローカルのリソース]]に、Anything-v3.0と、それ以外のVAE一覧がある
+-- 拡張子を.vae.ptに変える
+- 配置方法は2通り
+-- stable-diffusion-webui/models/Stable-diffusion に、モデル名と同名で配置して「Automatic」で適用する
+-- stable-diffusion-webui/models/models/VAE に配置して、ファイル名を選択して適用する
+- 設定の場所は、Settingsタブの[Stable Diffusion]-[SD VAE]
+
+**6：NovelAI(ハローアスカには使うけど必須ではない)
+[+]
 **4：NovelAIモデルのダウンロード
 ''情報提供、テスト、研究の自由のために掲載します。''
 結果が気に入ったら、[[サブスクリプションを検討してください>https://novelai.net/register]]
@@ -100,10 +121,10 @@ stableckpt\animefull-final-pruned\model.ckpt >> nai.ckpt
 WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 先ほど格納したファイルを選択、Apply Settingボタンを押す。
 
-
 **6：配置
 以下のディレクトリにモデルを配置します。
 /stable-diffusion-webui/models/Stable-diffusion
+[END]
 
 **7.起動確認
 
@@ -112,6 +133,14 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 ''「webui-user.bat」をダブルクリックでWebUIを起動させます。''
 図：これね
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/y4M3qrylYT.jpg)
+
+webui-user.batを実行するとコマンドプロンプトのWindowが開き、モデルデータや色々な必要モジュールの読み込み状況が文字で表示される。
+初回起動時は様々なプログラムのセットアップ作業が行われるのでしばらく待つ。
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yiFEf9KQqg.png)
+Running on local URL: http://127.0.0.1:7860
+と表示されたら、インターネットブラウザ（Chrome,Edge,Firefox等）のアドレス欄にhttp://127.0.0.1:7860と打ち込む。
+WEBUIの操作画面が表示されたらここまでの手順は成功。おつかれさまでした。
+
 
 **8(※オプション)：環境設定
 [[ローカルのwebui-user.bat]]に移動しました。
@@ -128,6 +157,7 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 - リンクを右クリックでインストールしたいフォルダに保存して実行
 -- C:\SD みたいな短くて英語でスペースのないとこがおすすめ
 - あとは待つだけ
+-- ブラウザも勝手に立ち上がるようにしました
 - &color(#ff0000){2回目からは start.bat を起動}
 - 環境を汚さないのでいくつでも入れられる
 
@@ -400,6 +430,9 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+
+
+
 
 
 

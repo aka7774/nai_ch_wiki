@@ -55,14 +55,19 @@ Colabではcondaで入れると入れやすい。
 
 コマンドプロンプトを起動
 stable-diffusion-webui\venv\Scripts\activate.bat を実行
- pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url ttps://download.pytorch.org/whl/cu116
+=|BOX|
+pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+||=
 
-ttps://pomf2.lain.la/f/5u34v576.7z
-↑のファイルをstable-diffusion-webui\venv\Lib\site-packages\torch\lib
+=|BOX|
+https://pomf2.lain.la/f/5u34v576.7z
+||=
+このファイルをstable-diffusion-webui\venv\Lib\site-packages\torch\lib
 にコピペ
 
- pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url ttps://download.pytorch.org/whl/cu116
-
+=|BOX|
+pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+||=
 ** --no-half-vae (画像真っ黒対策)
 
 VAEを使っている時、たまに画像が真っ黒になる問題を修正する。
@@ -127,6 +132,13 @@ CPUがfp16をサポートしていない場合エラーが出るので、
 
 3060比で100倍くらい時間かかるようになるけど動く。
 
+** --autolaunch (自動的にブラウザを立ち上げる)
+
+既定のブラウザで1111が開く。
+
+http://127.0.0.1:7860/
+をブラウザにコピペする手間が省ける。
+
 ** (削除) --deepdanbooru
 
 img2imgでDeepdanbooruを使う。画像からDanbooruタグを推定する機能。
@@ -155,4 +167,5 @@ https://pytorch.org/docs/stable/notes/cuda.html#memory-management
 まだ実力のほどはわからないが、
 そのうちfp16/fp32に起因するエラーが減ったり、
 マルチCPUに対応したりするのかも知れない。
+
 
