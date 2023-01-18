@@ -60,6 +60,8 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3090|24GB|Core i9-10900K|19秒|17.74|xformers opt-channelslast no-half-vae|Batch Count 5 Batch Size 2, Windows10 WSL2 RAM 32GB AfterBurnerで低電圧化 1620MHz @0.7v|
+|RTX 3090|24GB|Core i9-10900K|20秒|19.88|xformers opt-channelslast no-half-vae|Batch Count 10 Batch Size 1, Windows10 WSL2 RAM 32GB AfterBurnerで低電圧化 1620MHz @0.7v|
 |RTX 3080|10GB|Core i7-8700K|19秒|19.31|--xformers --opt-channelslast|BatchCount 2 BatchSize 5 RAM 24GB PL80%|
 |RTX 4090|24GB|Ryzen 9 3900X|16秒|15.47|xformers opt-channelslast|GPUを電力制限70％で実行してもTime takenはほぼ変わらず誤差の範囲。|
 |RTX 4090|24GB|Ryzen 9 3900X|10.8秒|10.17|xformers opt-channelslast|Batch Count 5、Batch Size 2|

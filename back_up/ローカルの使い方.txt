@@ -35,8 +35,24 @@ nai.vae.ptやAnything-V3.0.vae.ptなどをmodels/VAEフォルダ内に配置し�
 
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/rTKIPtT7oU.jpg)
 
-Settingsの「Quicksettings list」(日本語化してる場合「設定タブ＞クイック設定」)に以下の文字列を入力。
+Settings>User Interface>「Quicksettings list」(日本語化してる場合「設定タブ＞クイック設定」)に以下の文字列を入力。
  sd_model_checkpoint,sd_vae,sd_hypernetwork,sd_hypernetwork_strength,CLIP_stop_at_last_layers,eta_noise_seed_delta
+
+** 出力する絵のファイル名パターンを設定したい
+
+Setting>saving images/grids>「Images filename pattern」で以下のタグを設定する。
+
+設定できるタグ（複数組み合わせ可能）
+[steps], [cfg], [prompt], [prompt_no_styles], [prompt_spaces], [width], [height], [styles], [sampler], [seed], [model_hash], [prompt_words], [date], [datetime], [job_timestamp]
+
+例：[seed]-[steps]-[cfg]-[sampler]-[prompt_spaces]
+
+ "Images filename pattern" 上にマウスカーソルを乗せると表示が出る
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/r1ZnBOGeXB.png)
+
+フォルダ名もSetting>Saving to a directory>「Directory name pattern」で同じように設定できる
+Windowsにはファイル名/フォルダ名は異本的に256文字までという制限があるので長すぎると途中で端折られる
+
 
 ** VAEの設定
 
@@ -215,6 +231,17 @@ CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打�
 ** 各数値の詳細
 
 - Denoise Strength：リファレンスイメージからどの程度離れて画像を生成するか
+
+* TIPS
+
+** ダークモードで表示
+
+http://127.0.0.1:7860/?__theme=dark
+
+** 画像生成が終了したら音を鳴らす
+
+stable-diffusion-webuiフォルダにmp3の音楽ファイルを　notification.mp3　というファイル名で置く
+
 
 * トラブルシューティング
 

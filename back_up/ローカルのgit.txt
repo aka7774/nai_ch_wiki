@@ -6,7 +6,7 @@ Git for windowsで1111をいじる
 
 * インストール確認
 
-=||
+=|SH|
  git --version
 ||=
 
@@ -24,14 +24,14 @@ https://git-scm.com/downloads
 
 C:\SD みたいなpathの短いとこにフォルダつくるのがおすすめ。
 
-=||
+=|SH|
  cd C:\SD
  git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 ||=
 
 * 1111本体の更新
 
-=||
+=|SH|
  cd C:\SD\stable-diffusion-webui
  git pull
 ||=
@@ -43,14 +43,14 @@ webui-user.batに書いておけば毎回強制的に更新してくれる。
 
 sd_dreamboothの例
 
-=||
+=|SH|
  cd C:\SD\stable-diffusion-webui\extensions 
  git clone https://github.com/d8ahazard/sd_dreambooth_extension.git
 ||=
 
 * Extensionsの更新
 
-=||
+=|SH|
  cd C:\SD\stable-diffusion-webui\extensions\sd_dreambooth_extension
  git pull
 ||=
@@ -59,7 +59,7 @@ sd_dreamboothの例
 
 ** commit hashの確認
 
-=||
+=|SH|
  cd C:\SD\stable-diffusion-webui
  git log
 ||=
@@ -71,13 +71,13 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/commits/master
 
 ** commithashにバージョンを戻す
 
-=||
+=|SH|
  cd C:\SD\stable-diffusion-webui
  git checkout ハッシュ
 ||=
 
 たとえば
-=||
+=|SH|
  git checkout 3596af07493ab7981ef92074f979eeee8fa624c4
 ||=
 
@@ -85,14 +85,14 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/commits/master
 
 エラーログを見て原因のファイル名が特定できる場合
 
-=||
+=|SH|
  cd C:\SD\stable-diffusion-webui
  git checkout ファイル名
 ||=
 
 もうわけわかんなくなって全部消えてもいいからやり直したい場合
 
-=||
+=|SH|
  cd C:\SD\stable-diffusion-webui
  git reset --hard HEAD
 ||=
@@ -100,7 +100,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/commits/master
 * 1111のリポジトリが移転した場合
 
 stable-diffusion-webuiのある場所で
-=|BOX|
+=|SH|
 git remote set-url origin https://gitgud.io/AUTOMATIC1111/stable-diffusion-webui
 ||=
 すればgit pullできるようになる
@@ -113,5 +113,7 @@ git remote set-url origin https://gitgud.io/AUTOMATIC1111/stable-diffusion-webui
 
 ** 定期実行
 
+=|SH|
 git remote update
 git push --mirror
+||=

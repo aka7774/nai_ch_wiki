@@ -230,6 +230,7 @@ NVIDIAコントロールパネルの3D設定の管理から電源設定をパフ
 　→電源消費が気になるならPythonだけ変更すればよい
 
 *** launch.pyを編集し、torchvision・xformersのバージョンを上げる方法
+[+]
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449
 
 1:git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
@@ -253,6 +254,7 @@ ZIPファイルを解凍し、/bin にあるdllファイルを "stable-diffusion
 
 ※RTX3060勢なんだが上記の手法で若干速度向上した。
 旧情報の手作業でxformersのバージョンを上げたりビルドする手法だと各種モジュール間バージョン依存の関係でハマることがあるので新手法おすすめ
+※launch.pyのファイル不一致でgit pullできなくなったりした時は、launch.pyをリネームもしくは削除してからgit pull
 
 旧情報
 [+]
@@ -331,6 +333,7 @@ Time taken: 3.05s Torch active/reserved: 2518/2684 MiB, Sys VRAM: 5358/24564 MiB
 // これで18it/sぐらい出るようになった
 // Windows ディスプレイ設定→グラフィックの設定→GPUアクセラレータによるGPUスケジューリングをOFFで再起動する
 // これで24it/s出るようになった
+[END]
 [END]
 
 **gtx16xxで必要な設定

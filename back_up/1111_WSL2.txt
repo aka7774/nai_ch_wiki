@@ -128,9 +128,31 @@ export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 source .bashrc
 ||=
 
-**xformersのビルド
+**xformersの導入
+ビルドしなくても
+=|BOX|
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+pip install https://github.com/C43H66N12O12S2/stable-diffusion-webui/releases/download/linux/xformers-0.0.14.dev0-cp310-cp310-linux_x86_64.whl
+||=
+にてインストールできる。こちらのほうがお手軽でDreamboothも動く模様
+Dreambooth中にシャットダウンして挙動がおかしくなったときは
+=|BOX|
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+pip uninstall xformers
+||=
+でいっぺん削除してもう一度入れ直したらええらしいで、しらんけど
 
+ビルドするにしても可能なら
+=|BOX|
+sudo apt install ninja-build
+||=
+にて早くなるらしい？(ただし早くなっても時間自体はかかるので注意)
+
+[+]ビルドするときの手順
 以下コマンドを実行 ビルドにかなりの時間がかかるので待ちましょう
+Dreambooth使う予定がある人は少し後に補足があるので「pip install -e .」のところはやらずにもう少し読み進めること
 
 =|BOX|
 cd ~/stable-diffusion-webui
@@ -142,6 +164,23 @@ git submodule update --init --recursive
 pip install -r requirements.txt
 pip install -e .
 ||=
+最後の「pip install -e .」で
+=|BOX|
+error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+||=
+とエラーが出てる場合一度コンソールを閉じて開き直して
+=|BOX|
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+||=
+をしてから(git cloneはスキップして)手順をやり直せばうまく動く…かも知れない
+
+ついでにDreamboothを動かす予定の人は最後の「pip install -e .」の代わりに
+=|BOX|
+#一度「pip install -e .」を動かしてる場合先に「python setup.py clean --all」をする
+CC=gcc-11 pip install -e . --install-option develop
+||=
+で動くかもしれない
+[END]
 
 xformersのビルドが終わったらついでにtritonをインストールしておく(そのままWebUIを起動すると 「Error caught was: No module named 'triton'」と怒られるので)
 =|BOX|
@@ -227,6 +266,33 @@ https://qiita.com/SwitchBlade/items/cac2da388906b6486d69
 https://pythonlinks.python.jp/ja/index.html
 https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
+**WSL2のちょっとした補足
+Linux単体では陥らないようなWSL2固有のもろもろのメモ
+-Q:ファイル消してもディスクの容量減らない
+--A:「wsl2 ディスクサイズ 減らす」とかでググれ、中のファイルを消してもディストリ格納してる仮想ディスクは勝手には縮まない。仮想ディスクファイルの格納場所もググれ。ちょこちょこ書くには内容が長すぎる
+-Q:WSL2側がメモリを食いすぎるorWSL2にメモリを使わせたい
+--A:全部のWSL2に適用したいなら「C:\Users\{ユーザー名}\.wslconfig」、指定のディストロだけメモリ量指定したいならディストリの中で「/etc/wsl.conf」に以下の内容をかけ
+=|BOX|
+[wsl2]
+memory=(お前が指定したいメモリサイズ)GB
+||=
+-Q:WSL2のメモリ足りないからWSL2に多めに指定したらWindows側のメモリを使ってない時まで取られる
+--A:定期的に「sudo sh -c "echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a && swapon -a"」でもやるスクリプトでも書いとけ。毎分cronでおとすんならこう
+=|BOX|
+crontab -eとかで起動して
+* * * * * sh -c "echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a && swapon -a"
+||=
+-Q:そもそもcronもsystemd.timerタイマーも起動してないンゴ…
+--上で書いたメモリと同じように「.wslconfig」か「wsl.conf」でこう書いてsystemd起動しとけ。ベータらしいから副作用とかあっても知らん
+=|BOX|
+[boot]
+systemd=true
+||=
+-Q:ネットワークドライブが見えないンゴ…
+--A:一時的なら「mount -t drvfs {デバイス名} {マウントポイント}」、毎回起動したい(NASに画像出力するなど)場合は/etc/fstabに下記のように書いとけ
+=|BOX|
+\\{NASのIPとか}\{残りのパスとか}   /mnt/{マウントに使う他と被らない任意の名前}        drvfs   defaults       0 0
+||=
 ** やってみた(2022-12-10)
 個人的な意見としてはWSL2未経験かつLinux未経験者にはお勧めできない。
 トラブルを自力解決できる程度の能力があることが望ましい。
@@ -545,4 +611,21 @@ D:\stable-diffusion-webui\training　フォルダを指定する場合は
 modelsやoutputsフォルダを外出しにしているので、一度環境を作ってしまえば再インストールも容易
 セットアップ時に何かエラーが出た場合は、あれこれ弄る前にリストアしてやり直す事をお勧めする
 [END]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

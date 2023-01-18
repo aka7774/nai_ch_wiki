@@ -7,6 +7,8 @@
 とりあえず動く数値だけ
 Instance Prompt について詳しく知りたい場合はこのページをくまなくよむとええで。日本語で分かりやすく説明してあってタダで見れるのはここくらいや。
 
+一応補足やけど、このextensionのDreamBoothは他のDreamBoothツールやらと違って(？)stepとか正規化画像生成とかは「学習元1枚に対してなんぼか」で設定するから、「なんか15枚で4000ステップ学習したらええらしいで」みたいなの見かけてそのまま4000入れると合計60,000step学習しおるからよう注意やで。(この例やと合計4000stepやりたかったら4000÷15≒266step指定になるで)
+
 **学習させるモデルを選ぶ
 Dreembooth タブの Input > Create タブで
 名称 名前を付ける
@@ -28,7 +30,7 @@ Imput > Concepts タブで
 |Instance Prompt |無し　　|nanU　　|nanU girl |nanU Unan |
 |Class Prompt|無し　　|無し　　|girl　　|Unan　 |
 -Image Genaration
---Class Images Per Instance Image: 0
+--Class Images Per Instance Image: 0 ここも「学習元画像一枚に対しての枚数」なのであんまり巨大な数字を入れないように
 [+]画像
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/ABudhUleIH.png,right)
 [END]
@@ -39,7 +41,15 @@ Input > 設定 タブで
 --Use LORA: LORAを使用する場合はオン
 --Generate Classification Images Using txt2img: オフ
 -Intervals
---Training Steps Per Image (Epochs): 100 
+--Training Steps Per Image (Epochs): 100(デフォ) ここの値は対象画像一枚ごとに何Step学習するかを設定する、学習元の枚数が多いと合計が非常に多くなるので注意(例えば400を指定して学習元が20枚なら8000step合計で学習する)。
+[+]
+施行回数が少ない＆元モデルと学習対象によるので断定できないものの、大体15枚前後の画像で学習する前提で、1画像あたり
+-モデルにない新規のキャラ(オリキャラや2022夏以降の版権、デフォルメなど標準的なキャラから遠いデザイン)を覚えさせるには270〜350stepほど必要
+-モデルにいそうなキャラ(2022春以前の知名度のある版権キャラ等)は135〜170stepほどで大体特徴を覚えてくれる
+ような傾向はみられる…ような気はする。
+また同じ学習済みモデルでも「学習プロンプトで立ち絵を出すには過学習気味」だが「masterpieceとかのクオリティタグを盛る」「学習してないアクションさせる」等するとキャラ要素が抜け落ちたりして学習が足りてない感じになることもある。
+学習時間に余裕があるなら「過学習気味でもマージして薄める」ことは可能なのでほんのりstep数を盛っておいてもいいかもしれない。
+[END]
 --Save Model Frequency (Epochs): 適宜
 --Save Preview(s) Frequency (Epochs): エラーが出る場合は0
 -Learning Rate
@@ -564,6 +574,14 @@ GUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss
 
 出力ファイルは last.ckpt か last.safetensors やで
 
+* DreamBooth環境すぐ壊れてむずかしいンゴ……
+予めDocker-Desktop入れとく必要あるが比較的簡単なGUIで動くやつがあるで、ただしWSL2を有効にせなあかんから、基本的には[[1111_WSL2]]を見て「Ubuntu 22.04 をセットアップ」までは済ませなあかんで。
+設定周りは上記のextensionと違ってstep数が全画像の合計を指定する形(2023/1/3頃確認時点のバージョン)やったり数字の指定がちょっとちゃうから気をつけや。
+あとこいつは''VRAM10GB程''は必要なんと''SD_V2系モデルに非対応''やからそこも注意せなあかん。
+GUI:[[https://github.com/smy20011/dreambooth-gui]]
+Docker-Desktop使いたくないんやったら同じ作者さんがDocker向けCUI版だしとるから頑張ったらええんちゃうかな？まじ知らんけど。(こっちはSD_V2系対応済みらしいで？しらんけど)
+CUI版:[[https://github.com/smy20011/dreambooth-docker]]
+
 *Instance promptとInstance Tokenのどちらが呼び出しキーなのか？
 正則化画像アリ学習のついでに「本当はどっちなん？」という疑問から検証してみた。ただし古いwebuiとDBでの結果です…
 結論から言えば
@@ -595,3 +613,10 @@ GUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss
 
 検証2では「nanU」が明らかに呼び出しキーとして機能していたが、「shs」も呼び出しキーとして少し機能しているように感じた。Instance promptとInstance Tokenが異なる語の場合、Instance prompt > Instance Token という事なのだろうか？
 [END]
+
+
+
+
+
+
+

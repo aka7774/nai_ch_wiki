@@ -35,6 +35,20 @@ https://gist.githubusercontent.com/aka7774/bb306094dae726a32fbb6c617ddce2c0/raw/
 
 * 一覧
 
+** sd-webui-supermerger
+
+- https://github.com/hako-mikan/sd-webui-supermerger/
+- ネ申
+
+133スレ184
+=|BOX|
+新しいマージエクステンション作った
+マージしたモデルを保存せず直接画像生成用として読み込める
+web-uiのキャッシュ機能を使えば1秒でマージの切り替えができる
+連続生成機能もつけたのでマージ率を0.01ずつ変えながら100枚生成とかもできる
+これでSSDの消耗を心配する必要はなくなった 
+||=
+
 ** stable-diffusion-webui-model-toolkit
 
 - https://github.com/arenatemp/stable-diffusion-webui-model-toolkit
@@ -212,7 +226,9 @@ Infotextsに内蔵されている。
 - 画像のファイル名に日本語使うとダメらしい
 - 複数の画像を重ねられる Layer 機能
 
-** Merge Numa ★
+** Merge Numa
+
+更新停止。supermergerが超おすすめ。
 
 階層マージ沼
 

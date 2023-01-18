@@ -6,6 +6,16 @@ https://rentry.org/lora_train
 クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
 フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
 
+*他人の作ったモデルの導入
+[[学習の手順の最後>#apply_lora]]だけやればOK
+
+*あかちゃんLoraインストーラー(みかんせい)
+- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts.bat
+- あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
+- うちの環境ではMemoryErrorが出て動かなかった
+- lora_train_popup.pyもワイの知能では使いこなせなかった
+- だれかなおちて
+
 上より引用
 *準備
 - git で https://github.com/kohya-ss/sd-scripts をコピー
@@ -49,7 +59,7 @@ accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
 ||=
 +ポップアップにパラメーターを入力する(lora_train_command_line.py にはあらかじめパラメーターを書いとく)
 +出来上がりを待つ
-+WebUIで使うには 「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール
++WebUIで使うには 「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール &aname(apply_lora)
 -stable-diffusion-webui\extensions\sd-webui-additional-networks\models に lora フォルダを作成して 出来上がった .pt や .safetensorsをコピー ~~(Web UI の 「設定」> 「Additional Nerwoek」タブでフォルダの場所は変えられる)
 -「txt2img」や「img2img」の画面の左下の方に「Additional Networks ▼」が追加されているので~~Enable を押してmodelを選びmerge倍率をweightのスライダーで調整する
 **手順の画像
@@ -152,6 +162,9 @@ https://github.com/starik222/BooruDatasetTagManager や スレ130の>>346>>949�
 *そもそも学習用画像ってどうやって加工するの
 本文で説明している kohya_ss 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
 背景の切り抜きは・・・画像の大きさが揃ってないとめんどくさいなどうしよう・・・
+
+キャラの切り出しだけやったら3Dペイント(Win10なら標準、11では標準からリストラされたけどストアにおるで)のマジック選択でええ感じに切り抜きやすいからそこからgimpなりで微調整。
+一枚一枚やんのめんどくさい言うんやったらとしあきdiffusionの学習用画像の加工でもみたらええんとちゃうかな、しらんけど
 *正則化画像
 キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが
 詳しくはわからないので誰か書いてクレメンス
@@ -168,3 +181,5 @@ number_of_generation:作成する枚数
 lora_train_command_line.py をコピーしてパラメーターを直書き
 GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
 「Tools」タブにフォルダ配置補助機能がある。スクリプト版のパラメータの一部は設定出来ないかも？
+
+
