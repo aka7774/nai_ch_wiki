@@ -51,7 +51,7 @@
 ***　魔法少女リリカルなのは
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|masterpiece, best quality, {{ultra-detailed}}, {{illustration}},anime, 1girl, {{{fate_testarossa}}}, {mahou shoujo lyrical nanoha}, {detailed CG}, {{{best quality}}}, {{ultra-detailed}}, &#91;alicia_testarossa], {{younger}}, very long hair, hair bow, bangs, twintails, blonde hair, red eyes,smile,|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, {{low quality}}, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, &#91;fate/stay_night], &#91;fate_&#40;series)]|魔法少女リリカルなのは|フェイト・テスタロッサ|顔の作画の崩壊率がひどかったので顔の特徴だけに絞って他は作品名にぶん投げたらちょっとはましになった…ただしStS版と無印＆A's版のどっちが出るかもランダムになった。あと衣装もランダムなので知らん服を着てくる||
 |anime, tachi-e, full body, white background, mahou shoujo lyrical nanoha, boy,blonde hair, very short hair, flipped hair, blunt bangs, sidelocks, hair between eyes,ahoge,green eyes, tan cloak, shorts, black gloves,||魔法少女リリカルなのは|ユーノ・スクライア？（子供）|似ているようでなんか違うので推敲必要||
 |anime, tachi-e, full body, &#91;&#91;white background]],1girl,mahou shoujo lyrical nanoha,girl, takamachi nanoha, {{younger}},middle hair,twintails, brown hair,white ribbon,white skirt,  long skirt,{chest ribbon},{red ribbon}, magical girl, blue eyes,smile,  &#91;shoulder pads],arm guard, standing||魔法少女リリカルなのは|高町なのは（子供）|衣装側はそれっぽいようなのが出来上がるので推敲必要||
 |1girl, {{{ yagami hayate }}},dark brown hair,{mahou shoujo lyrical nanoha strikers, yagami hayate }, a yellow x hair ornament, medium hair, blush, shiny hair, blue eyes, {{{{ yagami hayate }}}, huge breasts,seductive smile, zettai ryouiki, open mouth, game cg,realistic, {{{ yagami hayate }}},{{{ yagami hayate }}},{{{ yagami hayate }}}{{{ yagami hayate }}}{{{ yagami hayate }}}, full body, {{{ yagami hayate }}}, {{{navy blue military uniform}}}}, salute,|less than &#40;surrealism:20.0),fate testarossa,fate testarossa, fate, ,takamachi nanoha, vivio, subaru nakajima,  teana lanster, yagami taichi, yagami hikari, yagami light, hayate no gotoku!, ayasaki hayate,  heterochromia,blonde hair, long hair, purple eyes, blue hair, very long hair, green eyes,  fate testarossa hair, wavy hair, hair ribbon, ahoge, huge ahoge, animal ,yuuno scrya, ahoge,erio mondial,  takamachi nanoha, yellow hair,material-s, material-l, material-d,antenna hair,  suzumiya haruhi,|魔法少女リリカルなのは|八神はやて|髪飾りはうまく出にくいため複数回試行が必要|https://image02.seesaawiki.jp/n/h/nai_ch/bnk7EQ0O8H.png|
@@ -122,4 +122,5 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |solo, {{{{oshino shinobu}}}}, &#91;&#91;bakemonogatari&#93;&#93;, loli, child, long hair, yellow hair, yellow eyes, {{tareme}}, flat chest, smile, blush stickers, fang, white dress, cowboy shot,|ponytail,|化物語|忍野忍||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/A8GG0D9vVB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/A8GG0D9vVB.png]]|
 |}
+
 

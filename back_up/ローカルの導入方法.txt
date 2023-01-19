@@ -160,6 +160,13 @@ WEBUIの操作画面が表示されたらここまでの手順は成功。おつ
 -- ブラウザも勝手に立ち上がるようにしました
 - &color(#ff0000){2回目からは start.bat を起動}
 - 環境を汚さないのでいくつでも入れられる
+-通常の手順途中までやってPythonもGITも入ったけど上手くいかなかったのでこっち使ったけどやっぱり動かんンゴ…って時には下記の行を消してstart.bat動かすと動くかも、しらんけど
+=|BOX|
+echo set PATH=%%PATH%%;%INSTALL_DIR%python310\Scripts;%INSTALL_DIR%PortableGit\bin
+echo set PYTHON=%INSTALL_DIR%python310\python.exe
+echo set GIT=%GIT%.exe
+echo set VENV_DIR=
+||=
 
 *** モデルのインストール
 
@@ -229,9 +236,9 @@ Windowsの設定→グラフィックからGPUスケジューリングをオフ
 NVIDIAコントロールパネルの3D設定の管理から電源設定をパフォーマンス優先に変更
 　→電源消費が気になるならPythonだけ変更すればよい
 
-*** launch.pyを編集し、torchvision・xformersのバージョンを上げる方法
+*** launch.pyを編集し、torch・xformersのバージョンを上げる方法
 [+]
-https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment-1382123974
 
 1:git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 でWEBUIをインストール
@@ -433,6 +440,7 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+
 
 
 

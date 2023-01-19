@@ -81,6 +81,12 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/commits/master
  git checkout 3596af07493ab7981ef92074f979eeee8fa624c4
 ||=
 
+**古いバージョンに戻した1111を解除して最新の状態にする場合
+
+=|SH|
+cd C:\SD\stable-diffusion-webui
+git checkout master
+||=
 * 1111のソースを書き換えたらpullできなくなった時
 
 エラーログを見て原因のファイル名が特定できる場合

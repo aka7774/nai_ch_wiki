@@ -4,6 +4,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|意味|備考|サンプル|
+|1girl, samurai girl, {holding katana}, standing, young girl, blonde shiny hair, ponytail hair, blue eyes, medium breasts, indoor, {Japanese room}, facing the front, cowboy shot, solo focus, from outside, perfect anatomy, intricate, (highly detailed),||サムライガール|刀はまずまともに描写されません。くノ一より露出度は下がります。|https://image01.seesaawiki.jp/n/h/nai_ch/IZn3MpgcgX.png　https://image02.seesaawiki.jp/n/h/nai_ch/og9lpPiP0N.png|
+|1girl, ninja costume, fishnet tights, standing, young girl, blonde shiny hair, ponytail hair, green eyes, medium breasts, outdoor, {{Japanese castle}}, facing the front, cowboy shot, solo focus, from outside, perfect face, perfect arms, perfect legs, perfect anatomy, intricate, (highly detailed),||くノ一、ニンジャガール|足が露出した和装になります。網タイツを入れないと生足になります。|https://image02.seesaawiki.jp/n/h/nai_ch/2vde3iRpDT.png　https://image01.seesaawiki.jp/n/h/nai_ch/BwawzNBGw2.png|
 |{{fusion of robe and wave}}, 1 girl, {{frill}}, {{{{wave blue robe}}}}, {{{{wave splash}}}}, teenage, slender, blonde shiny hair, long hair, green eyes, medium breasts, outdoor, forest, cowboy shot, {{facing the front}}, from outside, {{solo focus}}, {{perfect face}}, {{perfect anatomy}}, intricate, (highly detailed),|wave, water,|水のはごろも|Undesired Contentで周りが洪水になるのを抑えていますが、抑え過ぎると雰囲気が損なわれます。|https://image01.seesaawiki.jp/n/h/nai_ch/6Q91qqFRmA.png|
 |{{fusion of armor and dragon}}, 1 girl, {{{{dragon scale armor}}}}, teenage, slender, blonde shiny hair, long hair, green eyes, medium breasts, indoor, {{Entrance}}, cowboy shot, {{facing the front}}, from outside, {{solo focus}}, {{perfect face}}, {{perfect anatomy}}, intricate, (highly detailed),||ドラゴンメイル||https://image01.seesaawiki.jp/n/h/nai_ch/MKEQeq0oyG.png|
 |1girl, {{{urawa}}},||浦和レッズっぽい服|髪色と目の色を指定しないと、版権キャラでも赤髪赤眼になることがあるので指定。出にくい場合はこれにred shirtを追加すること。cityも入れた方がいいかもしれない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jMhezpLN6t-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/jMhezpLN6t.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JCK6gVBlbo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/JCK6gVBlbo.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kHgfGCbzHV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/kHgfGCbzHV.png]]|
@@ -238,6 +240,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|fishnet tights|網タイツ||https://image01.seesaawiki.jp/n/h/nai_ch/6ubQS59ZWr.png|
 |stockings|ストッキング||https://image02.seesaawiki.jp/n/h/nai_ch/tSVasexQdR.png|
 |over knee socks|オーバーニーソックス|強化詠唱しないと出ません。|https://image01.seesaawiki.jp/n/h/nai_ch/dKQTw24xvU.png|
 |high socks|ハイソックス||https://image02.seesaawiki.jp/n/h/nai_ch/WdMKXOFpuP.png|

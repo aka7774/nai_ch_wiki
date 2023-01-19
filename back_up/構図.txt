@@ -5,7 +5,6 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
-|skirt lift|||||
 |{{realistic urtra details}}, {winning post},horse_riding form,racehorce|motorcycle,bicycle|競馬の騎手の乗り方|競馬ゲームの名前入れたらモンキー乗りになる。但し今度は馬がおかしくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D.png]]|
 |riding_form,horse, horseback riding,||騎乗|馬に乗ってくれる。競馬のモンキー乗りは不明。馬をバイクや自転車に変えることも可能|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti.png]]|
 |〇〇_form||何かをしている構図|〇〇+formで何かをしている姿勢と指定するとだいたいその格好になってくれる上はrunning_form下はcooking_form|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv.png]]|
@@ -17,7 +16,7 @@
 |flat lay photography,from above||俯瞰視点||https://image01.seesaawiki.jp/n/h/nai_ch/XyIjcdDUQa.png|
 |tachi-e, standing, full body,||立ち絵|tachi-eだけだと安定しにくい|[[https://image01.seesaawiki.jp/n/h/nai_ch/UbgxP7Az6q.png]]|
 |wall,bend over backwards||壁尻||https://i.imgur.com/KvkZ1kN.png|
-|panorama, fisheye lens|| &#50612;&#50504; &#47116;&#51592;| &#52237;&#44256; &#49910;&#51008; &#48276;&#50948;&#44032; &#45331;&#51008; &#46321; &#45796;&#49548; &#47924;&#47532; &#51080;&#45716; &#44396;&#46020;&#50640;&#49436;&#46020; fisheye_lens&#50640;&#49436; &#50612;&#46523;&#44172; &#46112; &#49688;&#46020; &#51080;&#45716;|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sP0j8hl3KJ.png)|
+|panorama, fisheye lens|| &#50612;&#50504; &#47116;&#51592;~~ (魚眼レンズ)| &#52237;&#44256; &#49910;&#51008; &#48276;&#50948;&#44032; &#45331;&#51008; &#46321; &#45796;&#49548; &#47924;&#47532; &#51080;&#45716; &#44396;&#46020;&#50640;&#49436;&#46020; fisheye_lens&#50640;&#49436; &#50612;&#46523;&#44172; &#46112; &#49688;&#46020; &#51080;&#45716;~~ (撮りたい範囲が広いなど多少無理ある構図でもfisheye_lensでどうなることもある)|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sP0j8hl3KJ.png)|
 |}
 
 * 単語集
