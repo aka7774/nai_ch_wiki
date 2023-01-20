@@ -98,7 +98,7 @@ accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
 ----
 **学習率(Learning Rate): 1e-4 (= 0.0001) これより上げることはあんまりない。 5e-5 (=0.00005)くらいでもいいかも
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/DkV4RQ4ZnK.png)
-**スケジューラー: cosine_with_restart で(よく分からんのでいじらない) 学習率を途中で上げ下げするやり方
+**スケジューラー: cosine_with_restarts で(よく分からんのでいじらない) 学習率を途中で上げ下げするやり方
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/0jBUxX8eVo.png)
 **エポック単位でセーブする?: 2エポック以上学習させるなら
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/M6Jh5Uc7cL.png)
@@ -164,7 +164,7 @@ https://github.com/starik222/BooruDatasetTagManager や スレ130の>>346>>949�
 背景の切り抜きは・・・画像の大きさが揃ってないとめんどくさいなどうしよう・・・
 
 キャラの切り出しだけやったら3Dペイント(Win10なら標準、11では標準からリストラされたけどストアにおるで)のマジック選択でええ感じに切り抜きやすいからそこからgimpなりで微調整。
-一枚一枚やんのめんどくさい言うんやったらとしあきdiffusionの学習用画像の加工でもみたらええんとちゃうかな、しらんけど
+一枚一枚やんのめんどくさい言うんやったらABG_extension言うのが出たんでつこてみたらええんとちゃうかな…？しらんけど
 *正則化画像
 キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが
 詳しくはわからないので誰か書いてクレメンス
@@ -181,5 +181,6 @@ number_of_generation:作成する枚数
 lora_train_command_line.py をコピーしてパラメーターを直書き
 GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
 「Tools」タブにフォルダ配置補助機能がある。スクリプト版のパラメータの一部は設定出来ないかも？
+
 
 

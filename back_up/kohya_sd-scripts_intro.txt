@@ -1,0 +1,155 @@
+無料Colabと&#129303;で学習を体験してみよう的な
+高いGPUが無くても頑張って768x768で学習するぞ的な
+なお筆者はよくわかってない
+
+#contents
+
+旧バージョンはこちら→[[ローカルの学習入門]]
+
+* すること
+
+- kohya版sd-scripts(コマンドラインツール)を実行する
+- DBでの学習(いじればLoraとHNには対応できるはず)
+- サンプルは東北ずん子(サンプル画像は最後に掲載)
+
+* 1. Googleのアカウントを作成する
+
+- Colabで使う用
+- https://accounts.google.com/signup
+
+Google Driveは使わないので、リークモデルとか使わないなら本垢でもたぶん大丈夫だと思うけど自己責任で。
+* 2. Huggingfaceのアカウントを作成する
+
+- 要メールアドレス(さっき作ったGoogleので良い)
+- https://huggingface.co/
+
+既に取得済みのを使いまわすなら名前とかメールアドレスとかが見られてもいいものか要チェック。
+* 3. アクセストークンを追加する
+
+- https://huggingface.co/settings/tokens
+- 「New Token」を押す
+- Name: 任意
+- Role: write
+
+使う時にコピペするので文字列の中身は気にしなくていい。
+
+* 4. 学習用画像を用意する
+
+手順4から9はサンプルを用意してあるので省略できます。
+
+- 解像度768x768想定
+- 「7_Zunko 1girl」フォルダを作る
+- ファイル名は任意
+- 拡張子は png
+- 枚数は24枚
+
+* 5. キャプションを用意する
+
+- [[Dreambooth-LoRA]]の「キャプションを付ける」を参照
+- 画像ファイル名の拡張子が txt になったファイルを用意する
+- 「7_Zunko 1girl」フォルダに入れる
+
+* 6. 正則化画像を用意する
+
+- 解像度768x768想定
+- 「1_1girl」フォルダを作る
+- ファイル名は任意
+- 拡張子は png
+- 枚数は100枚
+
+* 7. 画像をzipにする
+
+- 「7_Zunko 1girl」フォルダごと圧縮して 7_Zunko 1girl.zip を作成する
+- 「1_1girl」フォルダごと圧縮して 1_1girl.zip を作成する
+- いずれも解凍するとフォルダが出来るようにする
+
+* 8. zipを&#129303;にアップロードする
+
+** Datasetを作る
+
+- https://huggingface.co/new-dataset
+- Dataset name: Zunko
+- 他はいじらない
+- 「Create dataset」を押す
+
+** zipをアップロードする
+
+- 「Files」タブ
+- 「Add File」を押す
+- 「Upload Files」を押す
+- 2つのzipをドロップかクリックで選択
+- 「Commit changes to main」を押す
+- アップロードされたファイルの行にある「↓」を右クリックしてURLをコピーしてメモっておく
+
+* 9. 学習ベースモデルのURLを用意
+
+- モデルをダウンロードして学習します。
+- ここから検索
+-- https://huggingface.co/models
+- 上記と同じ方法でモデルのURLをコピーしてメモっておく
+- なければ&#129303;にアップロードしましょう。
+
+* 10. 学習済みモデル置き場の用意
+
+- https://huggingface.co/new-model
+- Model name: Zunko
+- 他はいじらない
+- 「Create model」を押す
+
+* 11. Notebookを用意する
+
+ここを開きます。
+https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scrollTo=NL_Xhpp8yfTd
+
+以下の手順通りに設定する。
+
+** 自分のDriveにNotebookをコピーする
+
+- File
+-- Save a copy in Drive
+
+** GPUを使う
+
+- Rumtime
+-- Change runtime type
+- Hardware accelerator
+-- GPU
+
+* 12. 基本設定
+
+用意したURLを入力します。
+あらかじめ、東北ずん子のサンプルが設定してあります。
+
+- 「venvのURL」はそのままにしておくのがおすすめ
+-- 空白にするとxformersのコンパイルを始めます(所要時間2時間弱)
+- 「モデルのアップロード先」には、手順10で作成したリポジトリを指定します
+-- 例: yourname/Zunko
+
+三角ボタンを押します。
+
+&#129303;へのログインを促されるので、手順3で用意したトークンをコピペします。
+
+* 13. 詳細設定
+
+(慣れてきたら色々いじってみましょう)
+
+ここでは解説しないので、そのまま三角ボタンを押します。
+
+** 学習の実行
+
+学習は40分程度で終わります。
+アップロードも含めて1時間くらいで終わると思います。
+
+** 結果の確認
+
+終わったら&#129303;にログインしてモデルがアップロードされていることを確認します。
+
+モデルをダウンロードして、手元の1111などで動作確認しましょう。
+
+ masterpiece, best quality, 1girl, zunko
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/L2cQM9y4QV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/L2cQM9y4QV.png]]
+
+ masterpiece, best quality, 1girl, zunko, naked
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wRXYG0MRdA-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wRXYG0MRdA.png]]
+
+

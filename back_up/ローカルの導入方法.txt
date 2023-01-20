@@ -79,7 +79,7 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 - ここで検索する
 -- https://huggingface.co/models
 - モデルについては[[Models]]ページに詳しく書いてある。
-- [[ローカルのマージ]]、[[階層マージ]]にスレ発のモデルがあって質もいいのでおすすめ。
+- [[スレ民共有モデル]]が質もいいのでおすすめ。
 - ダウンロードしたファイルは以下のディレクトリに配置する
 -- stable-diffusion-webui/models/Stable-diffusion
 
@@ -136,6 +136,7 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 
 webui-user.batを実行するとコマンドプロンプトのWindowが開き、モデルデータや色々な必要モジュールの読み込み状況が文字で表示される。
 初回起動時は様々なプログラムのセットアップ作業が行われるのでしばらく待つ。
+&color(#ff0000){結構時間かかるんで気長に待ちましょう}
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/yiFEf9KQqg.png)
 Running on local URL: http://127.0.0.1:7860
 と表示されたら、インターネットブラウザ（Chrome,Edge,Firefox等）のアドレス欄にhttp://127.0.0.1:7860と打ち込む。
@@ -440,6 +441,7 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+
 
 
 

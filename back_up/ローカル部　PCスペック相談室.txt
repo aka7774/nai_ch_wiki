@@ -60,6 +60,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|GT 1030|2GB|Ryzen 5 5600G|26分|1550.21|--lowvram|マザボ側HDMIから画面出力、GT1030はGDDR5でファンレス|
 |RX 6700XT|12GB|Core i5-13600KF|47.6秒|47.09||ubuntu22.04, ROCm 5.2, RAM32GB, GPU定格, CPU電力制限@160W|
 |RTX 3090|24GB|Core i9-10900K|19秒|17.74|xformers opt-channelslast no-half-vae|Batch Count 5 Batch Size 2, Windows10 WSL2 RAM 32GB AfterBurnerで低電圧化 1620MHz @0.7v|
 |RTX 3090|24GB|Core i9-10900K|20秒|19.88|xformers opt-channelslast no-half-vae|Batch Count 10 Batch Size 1, Windows10 WSL2 RAM 32GB AfterBurnerで低電圧化 1620MHz @0.7v|
