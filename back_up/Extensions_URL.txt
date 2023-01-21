@@ -127,15 +127,6 @@ if not launch.is_installed("huggingface-hub"):
 COMMANDLINE_ARGS=--administrator
 ||=
 
-** About
-
-更新停止。1111本体のフッターに同等機能がついたので不要になりました。
-
-- https://github.com/aka7774/sd_about
-- システム情報
-- 1111とかvenvとかの情報を表示する
-- 「なんか動かないんだけど！」って時は、エラーの内容とこの表示内容をコピペして相談しましょう
-
 ** Copyguard ★
 
 - https://github.com/aka7774/sd_copyguard
@@ -151,17 +142,6 @@ COMMANDLINE_ARGS=--administrator
 - 1girl, {red|green|blue} hair 構文しか使えない
 - Scriptで選択して使う
 
-*** prompt_nai
-
-{panty} で1.05倍の強調をする。重ねがけも出来る。
-
-- Curly randとの併用不可
-- https://github.com/aka7774/elemental_code/blob/main/tools/prompt_nai.py
-- Extensionじゃなくて、ファイルをScriptにコピペしてインストール
-- Scriptで選択して使う
-- 1111本体のバージョンアップで動かなくなるかも
--- そんなに頑張って更新する予定はないです
-
 ** Filer ★
 
 ファイラー
@@ -173,48 +153,12 @@ COMMANDLINE_ARGS=--administrator
 - ディレクトリをzipダウンロードしたりアップロードしたzipをディレクトリに展開したりできる
 - 一部のファイルを読み書き出来る
 
-*** sd_invokeai_models_yaml_maker
-
-更新停止。Filerに内蔵された。
-
-- https://github.com/aka7774/sd_invokeai_models_yaml_maker
-- InvokeAIのインストールが面倒だから作ったやつ
-- 1111に入ってるckpt、同名のvae.ptとyamlをInvokeAIのmodels.yaml形式で出力する
-
 ** Gimai ★
 
 - https://github.com/aka7774/sd_gimai
 - Game Talk Scenes Builder
 - イラストとセリフと音声をあわせた作品をつくるためのツールです。
 - 素材の用意自体はセルフサービス
-
-** Infotexts ★
-
-話せば長くなるけどPrompts from fileの超強化版みたいなやつ。
-
-- https://github.com/aka7774/sd_infotexts
-- PNGからPNG Infoを取り出してテキストファイルにする
-- テキストファイルをjsonに変換
--- jsonの各項目を増やした後で複数のテキストファイルに分裂させられる
-- ディレクトリ内の全テキストファイルの一括置換
-- テキストファイルをディレクトリごとGenerate
--- Infotext Ex形式に対応
-- おまけのwebp出力
-
-*** Infotext Ex
-
-Infotextsに内蔵されている。
-
-- https://github.com/aka7774/sd_infotext_ex
-- PNG Infoにsha256を出力
-- VAEも出力
-- 再現が不完全になる条件を満たしていればその内容を出力
-
-*** Generate from json
-
-更新停止。Infotextsに内蔵された。
-
-- https://github.com/aka7774/generate_from_json
 
 ** Katanuki ★
 
@@ -225,16 +169,6 @@ Infotextsに内蔵されている。
 -- anime-segmentation を 1111 で使えるようにしたやつ
 - 画像のファイル名に日本語使うとダメらしい
 - 複数の画像を重ねられる Layer 機能
-
-** Merge Numa
-
-更新停止。supermergerが超おすすめ。
-
-階層マージ沼
-
-- https://github.com/aka7774/sd_merge_numa
-- マージして画像出してマージして...を自動で出来る
-- ハードディスク上でやったほうが精神衛生上いいかも
 
 ** Fake X/Y plot ★
 
@@ -270,4 +204,81 @@ X/Y plotっぽい画像を生成する
 - https://github.com/hunyaramoke/Generate-TransparentIMG
 - 透明正則画像の作成支援
 
+* 更新停止
 
+新規インストールは非推奨です。
+
+** Merge Numa
+
+更新停止。supermergerが超おすすめ。
+supermerger用に更新しようかとも思ったけど忙しいので一旦ナシ。
+
+階層マージ沼
+
+- https://github.com/aka7774/sd_merge_numa
+- マージして画像出してマージして...を自動で出来る
+- ハードディスク上でやったほうが精神衛生上いいかも
+
+** prompt_nai
+
+{panty} で1.05倍の強調をする。重ねがけも出来る。
+
+- Curly randとの併用不可
+- https://github.com/aka7774/elemental_code/blob/main/tools/prompt_nai.py
+- Extensionじゃなくて、ファイルをScriptにコピペしてインストール
+- Scriptで選択して使う
+- 1111本体のバージョンアップで動かなくなるかも
+-- そんなに頑張って更新する予定はないです
+
+** Infotexts
+
+更新停止。Filerに合併しました。
+話せば長くなるけどPrompts from fileの超強化版みたいなやつ。
+
+- https://github.com/aka7774/sd_infotexts
+- PNGからPNG Infoを取り出してテキストファイルにする
+- テキストファイルをjsonに変換
+-- jsonの各項目を増やした後で複数のテキストファイルに分裂させられる
+- ディレクトリ内の全テキストファイルの一括置換
+- テキストファイルをディレクトリごとGenerate
+-- Infotext Ex形式に対応
+- おまけのwebp出力
+
+** Infotext Ex
+
+Filerには内蔵されていません。
+
+Modelのsha256は本体で対応。
+VAEはプルリク送った人がいるので対応待ち。
+HN/Loraは仕様が変わったので削除。
+
+というわけでVAEさえ本体で対応してくれれば要らなくなる見込み。
+
+- https://github.com/aka7774/sd_infotext_ex
+- PNG Infoにsha256を出力
+- VAEも出力
+- 再現が不完全になる条件を満たしていればその内容を出力
+
+** sd_invokeai_models_yaml_maker
+
+更新停止。Filerに内蔵された。
+
+- https://github.com/aka7774/sd_invokeai_models_yaml_maker
+- InvokeAIのインストールが面倒だから作ったやつ
+- 1111に入ってるckpt、同名のvae.ptとyamlをInvokeAIのmodels.yaml形式で出力する
+
+** Generate from json
+
+更新停止。Infotextsに内蔵された。
+
+- https://github.com/aka7774/generate_from_json
+
+** About
+
+更新停止。Filerに内蔵された。
+1111本体のフッターに同等機能がついたので不要になりました。
+
+- https://github.com/aka7774/sd_about
+- システム情報
+- 1111とかvenvとかの情報を表示する
+- 「なんか動かないんだけど！」って時は、エラーの内容とこの表示内容をコピペして相談しましょう

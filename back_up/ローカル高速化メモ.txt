@@ -64,6 +64,11 @@ http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
 > これで24it/s出るようになった うまくいったら報告頼む 環境壊れたらすまんvenv消してくれ ~~
 
 [END]
+* torchのバージョンとcudaのdllを入れ替える
+4090が主だけど、3090でも早くなった報告あり。
+自分の環境では2倍速近く早くなった。
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment-1320800317
+
 * VAEをckptに内蔵する
 
 116スレ559
@@ -164,6 +169,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
 
 
 

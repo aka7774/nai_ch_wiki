@@ -1,4 +1,8 @@
 * HyperNetwork
+2023年1月21日現在、
+学習やなくて使用する方やけど、アップデートでhypernetworkを標準UIからの指定が変わったが、現状正常に動作していない模様。
+治るまでの間はMultiple Hypernetworks Extensionで指定してやってや
+https://github.com/antis0007/sd-webui-multiple-hypernetworks
 
 2022年12月14日現在、hypernetworkは以下のExtensionを使用するのがオススメ。
 https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension
@@ -259,3 +263,5 @@ HNの前処理で512×512、512×768、768×512を分けて3フォルダ作っ�
 【Leru】今のところ無難な感じ。
 【Mish】絵柄を似せるのはシビアな調整がいるが回してれば雰囲気は似る。これで1,2,2,1と合わせると結果的に一番似る。ただしなんかi2iとの相性がメチャクチャ悪い。
 ||=
+
+

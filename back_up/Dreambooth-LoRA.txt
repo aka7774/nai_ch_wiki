@@ -39,6 +39,7 @@ cp .\bitsandbytes_windows\main.py .\venv\Lib\site-packages\bitsandbytes\cuda_set
  
 accelerate config
 ||=
+エラーが出て進めないときは python -m venv venv と書き換えてもう一回やってみる コメント欄参照
 --accelerate config のあとに質問が出るので以下のように答える
 =|PERL|
 - This machine

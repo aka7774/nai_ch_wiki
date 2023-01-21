@@ -178,9 +178,9 @@ echo set VENV_DIR=
 
 https://note.com/uunin/n/n715256399038
 
-スレでたまに紹介されている。こちらも環境を汚さずに独立した環境でインストール出来る模様。初心者向け(？)の解説付き。
+スレでもたまに紹介されている。Pythonやgitのインストール作業無しでセットアップするのでWindows環境を汚さずに導入出来るのがウリ。わりと初心者向け(？)の解説付き。
 ただ、Python公式以外からのバイナリ入手が安全とは断言できないので、ベストな手段としてはお勧めできないが、ほかの方法でダメならどうぞ。
-トラブルがあってもwikiでは対応できないので、noteのコメントで相談しましょう。
+セットアップに関してのトラブルはwikiでは対応できないので、noteのコメントで相談しましょう。
 
 ** A1111 WebUI Easy Installer and Launcher
 
@@ -256,7 +256,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment
 https://developer.download.nvidia.com/compute/redist/cudnn/v8.7.0/local_installers/11.8/cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip
 ZIPファイルを解凍し、/bin にあるdllファイルを "stable-diffusion-main\venv\Lib\site-packages\torch\lib"に上書きコピー　
 
-5:web-user.bat を編集して、COMMANDLINE_ARGSに　--xformers to を追加
+5:web-user.bat を編集して、COMMANDLINE_ARGSに　--xformers を追加
 
 6:ENJOY!!
 

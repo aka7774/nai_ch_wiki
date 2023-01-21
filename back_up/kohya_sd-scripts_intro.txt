@@ -9,7 +9,7 @@
 * すること
 
 - kohya版sd-scripts(コマンドラインツール)を実行する
-- DBでの学習(いじればLoraとHNには対応できるはず)
+- DBでの学習(Loraにも対応可能)
 - サンプルは東北ずん子(サンプル画像は最後に掲載)
 
 * 1. Googleのアカウントを作成する
@@ -140,7 +140,7 @@ https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scroll
 学習は40分程度で終わります。
 アップロードも含めて1時間くらいで終わると思います。
 
-** 結果の確認
+* 14. 結果の確認
 
 終わったら&#129303;にログインしてモデルがアップロードされていることを確認します。
 
@@ -152,4 +152,25 @@ https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scroll
  masterpiece, best quality, 1girl, zunko, naked
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wRXYG0MRdA-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wRXYG0MRdA.png]]
 
+* 15. モデルの共有
 
+良いモデルが出来たらURLをスレに貼ってみんなで楽しもう！
+&#129303;にはNSFW画像は貼ってはいけないのでそういう画像はこっちで。
+
+* オプション: LoRaを作成する
+
+残念ながら用意したNotebookではxformersがうまく動いていないので時間がかかります。
+1時間強くらい。
+
+- 手順12までは同じ。
+-- 古いNotebook使ってたら最新のをコピーしなおしてください
+- 手順13の詳細設定で下のほうにある項目を変更
+-- 「train_db」のチェックを外す
+-- 「train_network」のチェックを入れる
+-- output_name をわかりやすく変更するのがおすすめ Zunko-lora など
+
+結果の確認には専用の Extension が必要です。
+
+- https://github.com/kohya-ss/sd-webui-additional-networks
+- stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora に Zunko-lora.safetensorsをコピー
+- 使い方はチョットヨクワカリマセン

@@ -1,6 +1,19 @@
 * 概要
 読解不明の謎文しかないので、今はとりあえず[[ローカルの学習入門]]かとしあきDiffusionを参照することを推奨。
 * Dreambooth Extension for Stable-Diffusion-WebUI
+2023-01-21版追記事項
+DreamBoothエクステンションいれとると起動せえへん問題が発生中らしいで。
+対応方法だけ抜粋すると
+extensions\sd_dreambooth_extension
+にある
+requirements.txt
+に
+gradio==3.16.2
+って追加してからWebUI起動してや。
+
+詳しくは下記のissuesみてや。
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/6876
+
 2023-01-12版説明
 アップデートでいろいろ変わるので stable-diffusion-webui\models\dreambooth\モデル名\db_config.jsonをよく見ような
 設定項目多いけど落ち着いて くそデカサンプル画像あり
@@ -613,6 +626,7 @@ CUI版:[[https://github.com/smy20011/dreambooth-docker]]
 
 検証2では「nanU」が明らかに呼び出しキーとして機能していたが、「shs」も呼び出しキーとして少し機能しているように感じた。Instance promptとInstance Tokenが異なる語の場合、Instance prompt > Instance Token という事なのだろうか？
 [END]
+
 
 
 
