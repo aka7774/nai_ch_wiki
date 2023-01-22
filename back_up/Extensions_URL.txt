@@ -116,6 +116,13 @@ import launch
 if not launch.is_installed("huggingface-hub"):
     launch.run_pip("install huggingface-hub", desc='Installing huggingface-hub')
 ||=
+** LamaCleaner ★
+
+- https://github.com/aka7774/sd_lama_cleaner
+- インストールは楽(なんかエラーでるけど気にしない)
+- 特に連携機能がついてたりするわけではない(改造は難しそう)
+- Windows専用(startコマンドを使うのとwebサーバが立ち上がる)
+
 ** Images Browser ★
 
 - https://github.com/aka7774/sd_images_browser

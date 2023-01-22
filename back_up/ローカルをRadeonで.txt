@@ -53,7 +53,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1220
 情報求む
 [END]
 
-* Radeon(Windows)
+* Radeon(Windows onnx)
 
 - https://dolls.tokyo/howto-amd-sd-win/
 - Onnx
@@ -62,6 +62,13 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1220
 - pip
 - xformersは言及なし
 - 重いらしい
+
+* Radeon(Windows pytorch-directml)
+
+- https://gist.github.com/reid3333/541fab0eb29d4c9558de748ef91a8238
+- 1111
+- torch 1.13.1
+- 4700Uは無事死亡
 
 * Intel ARC A770
 

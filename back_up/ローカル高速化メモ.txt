@@ -69,6 +69,21 @@ http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
 自分の環境では2倍速近く早くなった。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment-1320800317
 
+* torchを2.0にする
+生成が5%以上速くなるが、''いくつかの機能が動作しなくなる可能性あり''
+↓に更新方法が書いてある。
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
+※TorchとAccelerateはvenvと通常環境の両方にインストールするように
+
+** 補足
+WindowsではIntallセクションのステップ5がうまくいかない。ステップ4まで進めたら、gitでxformersをクローンしてビルドする必要あり。
+[[ここの手順>>https://michyo.net/sempetit/install-xformers-windows/]]の「xFormers のダウンロード」まで進めた後、
+xformersフォルダ内で以下のコマンドを実行する。
+> python setup.py build
+ビルドされるのでしばらく待つ。その後xformersフォルダ内で以下のコマンドを実行する。
+> python setup.py bdist_wheel
+その後xfomers/distにwhlファイルができるので、それをvenv/Scriptsにコピーしてvenv側のpyhtonでpip install ファイル名.whlでインストールする。
+
 * VAEをckptに内蔵する
 
 116スレ559
@@ -169,6 +184,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
 
 
 
