@@ -2,11 +2,10 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|tsurime,smirk,|ツリ目|さらに通常プロンプトにtareme,smileでツリ目がかなり出にくくなる(出ないとは言っていない)。ネガティブにsmirkを入れるだけでも効果あり||
 |middle age,adult,mother,mature female, milf|おとな|特にリアル系のモデルで多い、「なぜか顔だけが急に老け込む現象」の対策として、大人系の単語をネガティブにいれる。左記プロンプトをまとめて2.0倍くらいで入れちゃって、あとは通常のプロンプトにbeautiful faceを入れて強度を調整すれば大抵は対処できる。||
-|||||
 |lipstick|口紅|一部の版権キャラ（特に名前を指定するだけで大体出てくるキャラ）を生成する際、口まわりが赤くなるのを抑える用||
 |mature female, milf|熟女|特にwide hipや huge breast、foreheadを指定すると熟女が出やすいので、それを抑える用。||
-|||||
 |nipple and  nipples and areola and areolae and teat and tits on stomach|妊婦のお腹に生える乳首|出現を抑える程度||
 |monochrome|モノクロ|白黒になるのを防ぐ。彩度を上げる効果もある||
 |grayscale|グレースケール|白黒になるのを防ぐ。彩度を上げる効果もある||

@@ -7,7 +7,7 @@ https://rentry.org/lora_train
 フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
 
 *他人の作ったモデルの導入
-[[学習の手順の最後>#apply_lora]]だけやればOK
+[[Loraの使用方法>#apply_lora]]だけやればOK
 
 *あかちゃんLoraインストーラー(みかんせい)
 - https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts.bat
@@ -16,12 +16,17 @@ https://rentry.org/lora_train
 - lora_train_popup.pyもワイの知能では使いこなせなかった
 - だれかなおちて
 
-上より引用
+
 *準備
 - git で https://github.com/kohya-ss/sd-scripts をコピー
 - https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から lora_train_popup.py, lora_train_command_line.py をダウンロード 注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
 - スクリプトを sd-scripts フォルダにコピー
 - README-ja.md に日本語の詳しい説明が書いてある
+=|PERL|
+ train_network_README-ja.md: LoRAの学習について
+ train_db_README-ja.md:DreamBoothのガイドです。LoRA等の追加ネットワークの学習にも同じ手順を使います。
+ fine_tune_README_ja.md:キャプションとか
+||=
 - 初回セットアップ
 --sd-scripts フォルダで PowerShellかターミナルを開く (Shiftを押しながら右クリック)
 --以下のコマンドを順番に入力する(コピペでOK)
@@ -61,13 +66,20 @@ accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
 ||=
 -2 ポップアップにパラメーターを入力する(lora_train_command_line.py にはあらかじめパラメーターを書いとく)
 -3 出来上がりを待つ
--4 WebUIで使うには 「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール &aname(apply_lora)~~
-stable-diffusion-webui\models\lora フォルダに 出来上がった .pt や .safetensorsをコピー ~~(Web UI の 「設定」> 「Additional Nerwork」タブでフォルダの場所を追加出来る)
--使い方1「txt2img」や「img2img」の画面の左下の方に「Additional Networks ▼」が追加されているので~~Enable を押してmodelを選びmerge倍率をweightのスライダーで調整する
--使い方2「txt2img」や「img2img」の「生成」ボタンの下の花札みたいなマークを押すと
+*Loraの使用方法&aname(apply_lora)
+**使い方その1 WebUIに拡張機能をインストールして使う
+-「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール )~~
+H:\stablediffusion\stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora フォルダに 出来上がった .pt や .safetensorsをコピーする
+(Web UI の 「設定」> 「Additional Nerwork」タブでフォルダの場所を追加出来る)
+「txt2img」や「img2img」の画面の左下の方に「Additional Networks ▼」が追加されているので~~Enable を押してmodelを選びmerge倍率をweightのスライダーで調整する
+
+**使い方その2 WebUIの本体機能のみで使う
+-H:\stablediffusion\stable-diffusion-webui\models\lora に拾った .pt や .safetensorsをコピーする
+「txt2img」や「img2img」の「生成」ボタンの下の花札みたいなマークを押すと
 Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
-一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される 
-**手順の画像
+一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される
+最新のLoraで作ったやつ(2023/1/22以降)はこの方法は今使えない。アプデ待ち 
+**Lora作成手順の画像 (Windows) 参考程度 (2023-1-16時点)
 クリックして展開 アップデートなどで内容は変わる
 わからんパラメータが出たらcancelを押しとけばデフォルト値が入る。抜けがあったらスレで質問よろ。
 [+]
@@ -187,6 +199,7 @@ number_of_generation:作成する枚数
 lora_train_command_line.py をコピーしてパラメーターを直書き
 GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
 「Tools」タブにフォルダ配置補助機能がある。スクリプト版のパラメータの一部は設定出来ないかも？
+
 
 
 

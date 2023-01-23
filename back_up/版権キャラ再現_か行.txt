@@ -51,7 +51,7 @@
 ***　艦隊これくしょん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|hamakaze (kancolle), silver hair,blue eyes, short hair,hair over one eye,tsurime, hairclip,serafuku,pantyhose,yellow neckwear,white gloves,gray skirt,||艦隊これくしょん|浜風|hamakaze (kancolle)だけでも出る。~~hair over one eyeはキャラ再現と引き換えに右目を作画崩壊させる曲者(1枚目)。これをネガティブに入れると両目がしっかり描写されるが再現性は犠牲になる(2枚目)。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/z5oDTE83tq.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N2hz9OwSZu.png)|
 |{{{{kirishima &#40;kancolle)}}}},black hair,short hair, bob cut, black eyes,{{tareme}},green frame glasses, {{large breasts}},red japanese miko clothes, black skirt, pantyhose,||艦隊これくしょん|霧島||https://image01.seesaawiki.jp/n/h/nai_ch/NPfqLToo6d.png|
 |ooyodo&#40;kancolle),||艦隊これくしょん|大淀|名前のみで再現可能|https://image02.seesaawiki.jp/n/h/nai_ch/8x9zjV4o8x.png|
 |{{{masterpiece}}},{{{high quality}}},{{{high detailed}}},{{{ hatsuharu &#40;kancolle)}}},{{ purple short sthick eyebrows}},{{{small breasts}}}, slender,{{loli}}, tsurime,{{{parted bangs}}}, hair pulled back,very long hair,{{ high ponytail}},{{{{{{hair up}}}}}}, {{purple hair}}, beautiful detailed hair, small breasts, zettai ryouiki, purple eyes, {{{white sailor micro dress}}}, {{jet black plain thighhighs}}, {{jet black plain footwear}}, {skindentation},{jet black long gloves} ,white Clothes,||艦隊これくしょん|初春|名前だけだと、別人になるため、髪の色や眉毛を設定するとそれらしくなる|https://image02.seesaawiki.jp/n/h/nai_ch/njIiyq275T.png|
@@ -212,6 +212,7 @@
 |aqua_(konosuba), blue eyes, bow, hair ornament, blue hair, very long hair, medium breasts, detached sleeves, thigh boots, ||^|^|プロンプト増やした安定版|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD.png]]|
 |darkness_(&#91;&#91;&#91;&#91;&#91;&#91;konosuba]]]]]]), long hair, yellow hair, blue eyes, ponytail, medium breasts, {{x}} hair ornaments, black gloves,  |hair intakes, aqua, megumin,  evil, blue hair, sphere, hair bow, horn, blue hair ornament, |この素晴らしい世界に祝福を|ダクネス|どうしてもアクアの髪留めが出やすい。hair ornamentsがアクアの髪留めを誘発しているので、ダクネスの髪留めを諦めていいなら外すのもあり。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia.png]]|
 |}
+
 
 
 

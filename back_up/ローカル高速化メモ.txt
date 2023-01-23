@@ -27,7 +27,19 @@ stable-diffusion-webuiディレクトリ直下にあるwebui-user.batを修正�
 > set COMMANDLINE_ARGS= --xformers
 
 ** 利用するライブラリの更新
+2023/01/23時点の最新版(7ff1ef77dd22f7b38612f91b389237a5dbef2474)で本体に取り込まれた
+旧バージョンのtorchとxformersを使用している場合はアップグレードを促すアナウンスメッセージが表示される
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1sa2Wev7W4.png)
 
+コマンドラインオプションに再インストールオプションを追加して起動すると更新される
+> COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers ~~
+
+アップデート完了した場合、WebUIの下部の表示が以下のようになる
+(torch・xformers欄)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xh_WFZyBHE.png)
+
+
+[+]以前の方法
 4090で高速化する方法。3060でもほんのちょっとだけ早くなったとの報告あり。
 
 - 更新手順(Windows用)
@@ -68,24 +80,38 @@ http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
 4090が主だけど、3090でも早くなった報告あり。
 自分の環境では2倍速近く早くなった。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment-1320800317
+[END]
 
 * torchを2.0にする
-生成が5%以上速くなるが、''いくつかの機能が動作しなくなる可能性あり''
+生成が5%以上速くなるが、''いくつかの機能が動作しなくなる可能性があるため非推奨''
+(txt2img,img2img,TextualInversionの学習は動作確認済。DBとHNの学習は未確認)
 ↓に更新方法が書いてある。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
 ※TorchとAccelerateはvenvと通常環境の両方にインストールするように
 
 ** 補足
+- パッケージ名について
+Installセクションステップ3のpip3はtritonのパッケージ名が変わっているため失敗する。代わりに以下のコマンドを実行する。
+> pip3 install --pre torch torchvision torchaudio pytorch-triton --extra-index-url https://download.pytorch.org/whl/nightly/cu118 --force
+
+
+- Windowsの補足事項
 WindowsではIntallセクションのステップ5がうまくいかない。ステップ4まで進めたら、gitでxformersをクローンしてビルドする必要あり。
 [[ここの手順>>https://michyo.net/sempetit/install-xformers-windows/]]の「xFormers のダウンロード」まで進めた後、
 xformersフォルダ内で以下のコマンドを実行する。
 > python setup.py build
 ビルドされるのでしばらく待つ。その後xformersフォルダ内で以下のコマンドを実行する。
 > python setup.py bdist_wheel
-その後xfomers/distにwhlファイルができるので、それをvenv/Scriptsにコピーしてvenv側のpyhtonでpip install ファイル名.whlでインストールする。
+その後xfomers\dist\にwhlファイルができるので、それをvenv/Scriptsにコピーしてvenv側のpythonでpip install ファイル名.whlでインストールする。
+インストール後、venv\Lib\site-packages\tritonフォルダを消去する。
 
 * VAEをckptに内蔵する
 
+1111に標準で入っているCheckpoint Mergerでもできるようになっている
+マージ対象Aに内蔵先モデルを指定して、Interpolation Method を No interpolation 指定
+Bake in VAEで内蔵するVAEを選択してマージする
+
+[+]以前の方法
 116スレ559
 
 Checkpoint Mergerでマージすると色が薄くなる問題、Merge Blocvk Weightedで解決できそう
@@ -105,9 +131,15 @@ https://i.imgur.com/80TODwE.png
 https://i.imgur.com/7chOcgA.jpg
 https://i.imgur.com/Q6p1jJI.jpg
 [END]
+[END]
 
 * safetensors変換
 
+1111に標準で入っているCheckpoint Mergerでもできるようになっている
+マージ対象Aに変換したいモデルを指定して、Interpolation Method を No interpolation 指定
+Checkpoint formatをsafetensorにしてマージする
+
+[+]以前の方法
 116スレ612
 
 >>559法とsafetensors変換を併用したらハローアスカ5秒短縮できたやで！
@@ -127,6 +159,7 @@ https://i.imgur.com/Q6p1jJI.jpg
 ckpt+vae 42.89
 safetensors 37.87
 多用するモデルで作っとけば普段使いもいけるでー 
+[END]
 
 ** 変換方法いろいろ
 
@@ -184,6 +217,9 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
+
+
 
 
 

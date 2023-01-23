@@ -60,6 +60,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3090|24GB|Core i7-12700K|18秒|17.16|--xformers --opt-channelslast --administrator|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境~~torch: 1.13.1+cu117,xformers: 0.0.16rc425|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.77|xformers opt-channelslast|pytorch2.0に更新したが言うほど速くならなかった。OCすると26.22s ~~ batch count 5 batch size 2|
 |GT 1030|2GB|Ryzen 5 5600G|26分|1550.21|--lowvram|マザボ側HDMIから画面出力、GT1030はGDDR5でファンレス|
 |RX 6700XT|12GB|Core i5-13600KF|47.6秒|47.09||ubuntu22.04, ROCm 5.2, RAM32GB, GPU定格, CPU電力制限@160W|

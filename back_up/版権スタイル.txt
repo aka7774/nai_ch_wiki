@@ -2,7 +2,7 @@
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|作品名|備考|サンプル|
-||JOJO|||
+|{musaigen no phantom world},1girl,|無彩限のファントム・ワールド|サンプルの様な画像風の絵柄が出やすい。他プロンプトに負ける場合が多いためその都度強調が必要。|https://image01.seesaawiki.jp/n/h/nai_ch/_cz9CbyjMs.png|
 |helltaker,1girl,|HELLTAKER|目が赤くなるか版権風絵になる、1girlがないと悪魔の絵が生成され易い。helltaker要素が弱いのか、二段階強調しhatsune mikuを一段階弱くしたうえで20回程回してサンプルが出せるのが精いっぱいで、Helltaker風の顔を出すなら他のキャラプロンプトは入れないほうがよさそう。（[[入れていない場合の一例>https://majinai.art/ja/i/-e_C9pi]]）|https://image02.seesaawiki.jp/n/h/nai_ch/bMZL8s7blU.png|
 |kimetsu no yaiba,1girl,|鬼滅の刃|kimetsu no yaiba単体だと伊之助風の男性がでやすい。サンプルはdemon slayer uniformを追加したもの。|https://image01.seesaawiki.jp/n/h/nai_ch/7glLvJXl9B.png|
 |kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~,1girl|かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜|初音ミクプロンプトを含めても出力されない。サンプルは初音ミクを1段階強調したもの。基本的に四宮かぐや、藤原千花、早坂愛っぽい、または要素のある人が生成される。|https://image02.seesaawiki.jp/n/h/nai_ch/YlQa6rCh1L.png|
