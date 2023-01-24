@@ -2,6 +2,8 @@
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|作品名|備考|サンプル|
+|{style of Fairy Tail},official art,1girl,|FAIRY TAIL|fairyをネガティブへ。似るときはアニメ寄りになり易い。まれに漫画？っぽいキャラが生成される|https://image01.seesaawiki.jp/n/h/nai_ch/pzlkSJn89m.png|
+|style of panty & stocking with garterbelt,1girl|パンティ&ストッキングwithガーターベルト|原作同様カートゥーン味のある絵が出力される。panty,stocking,garterbeltが含まれている為下着になる時がある。ネガティブに入れた方がいい。お好みで"Add Quality Tags"スイッチを入れるといい感じになる。|https://image02.seesaawiki.jp/n/h/nai_ch/r7FqqscBv8.png|
 |{musaigen no phantom world},1girl,|無彩限のファントム・ワールド|サンプルの様な画像風の絵柄が出やすい。他プロンプトに負ける場合が多いためその都度強調が必要。|https://image01.seesaawiki.jp/n/h/nai_ch/_cz9CbyjMs.png|
 |helltaker,1girl,|HELLTAKER|目が赤くなるか版権風絵になる、1girlがないと悪魔の絵が生成され易い。helltaker要素が弱いのか、二段階強調しhatsune mikuを一段階弱くしたうえで20回程回してサンプルが出せるのが精いっぱいで、Helltaker風の顔を出すなら他のキャラプロンプトは入れないほうがよさそう。（[[入れていない場合の一例>https://majinai.art/ja/i/-e_C9pi]]）|https://image02.seesaawiki.jp/n/h/nai_ch/bMZL8s7blU.png|
 |kimetsu no yaiba,1girl,|鬼滅の刃|kimetsu no yaiba単体だと伊之助風の男性がでやすい。サンプルはdemon slayer uniformを追加したもの。|https://image01.seesaawiki.jp/n/h/nai_ch/7glLvJXl9B.png|

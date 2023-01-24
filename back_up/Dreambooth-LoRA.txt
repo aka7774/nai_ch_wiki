@@ -1,3 +1,4 @@
+#contents
 * 概要
 Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
 雑に言うとDreamboothの小さくて速いやつ
@@ -18,10 +19,10 @@ https://rentry.org/lora_train
 
 
 *準備
-- git で https://github.com/kohya-ss/sd-scripts をコピー
-- https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から lora_train_popup.py, lora_train_command_line.py をダウンロード 注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
-- スクリプトを sd-scripts フォルダにコピー
-- README-ja.md に日本語の詳しい説明が書いてある
++ git で https://github.com/kohya-ss/sd-scripts をコピー
++ https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から~~ lora_train_popup.py~~ lora_train_command_line.py~~ run_popup.bat~~ run_command_line.bat~~をダウンロード~~注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
++ スクリプトを sd-scripts フォルダにコピー
++ README-ja.md に日本語の詳しい説明が書いてある
 =|PERL|
  train_network_README-ja.md: LoRAの学習について
  train_db_README-ja.md:DreamBoothのガイドです。LoRA等の追加ネットワークの学習にも同じ手順を使います。
@@ -57,29 +58,32 @@ accelerate config
 ||=
 --初回セットアップ完了
 *学習の手順
--1. sd-scripts フォルダのrun_popup.batを実行
--1' linuxやクラウドGPUニキは
-sd-scripts ディレクトリ で venv/bin/activate~~次のコマンドどちらかを入力
-=|PERL|
-accelerate launch --num_cpu_threads_per_process 12 lora_train_popup.py
-accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py
-||=
--2 ポップアップにパラメーターを入力する(lora_train_command_line.py にはあらかじめパラメーターを書いとく)
--3 出来上がりを待つ
-*Loraの使用方法&aname(apply_lora)
-**使い方その1 WebUIに拡張機能をインストールして使う
--「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール )~~
-H:\stablediffusion\stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora フォルダに 出来上がった .pt や .safetensorsをコピーする
-(Web UI の 「設定」> 「Additional Nerwork」タブでフォルダの場所を追加出来る)
-「txt2img」や「img2img」の画面の左下の方に「Additional Networks ▼」が追加されているので~~Enable を押してmodelを選びmerge倍率をweightのスライダーで調整する
+**Windowsの場合
+***ポップアップ版を使う場合
++ run_popup.batを実行
++ ポップアップにパラメーターを入力する
++ 出来上がりを待つ
 
-**使い方その2 WebUIの本体機能のみで使う
--H:\stablediffusion\stable-diffusion-webui\models\lora に拾った .pt や .safetensorsをコピーする
-「txt2img」や「img2img」の「生成」ボタンの下の花札みたいなマークを押すと
-Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
-一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される
-最新のLoraで作ったやつ(2023/1/22以降)はこの方法は今使えない。アプデ待ち 
-**Lora作成手順の画像 (Windows) 参考程度 (2023-1-16時点)
+***コマンドライン版を使う場合
++ lora_train_command_line.py にパラメーターを書く
++ run_command_line.batを実行
++ 出来上がりを待つ
+
+**Linux(wslやクラウドGPUニキ)の場合
+
+***ポップアップ版を使う場合
++ source venv/bin/activate と入力
++ accelerate launch --num_cpu_threads_per_process 12 lora_train_popup.py と入力
++ ポップアップにパラメーターを入力する
++ 出来上がりを待つ
+
+***コマンドライン版を使う場合
++ lora_train_command_line.py にパラメーターを書く
++ source venv/bin/activate と入力
++ accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py　と入力
++ 出来上がりを待つ
+
+**Lora作成手順の画像 (ポップアップ版) 参考程度 (2023-1-16時点)
 クリックして展開 アップデートなどで内容は変わる
 わからんパラメータが出たらcancelを押しとけばデフォルト値が入る。抜けがあったらスレで質問よろ。
 [+]
@@ -139,6 +143,11 @@ last.safetensors というファイルができる
 このスクリプトではログは一切残らないのでわかりやすい名前にリネームしておく
 追加学習するときはこのファイルを指定する
 [END]
+動画(2023-01-24) すぐにアプデで役に立たなくなるが一応
+わからんパラメータは キャンセルでデフォルト値が入る
+[+]
+&video(https://image01.seesaawiki.jp/n/h/nai_ch/ypwjUxQC6D.webm)
+[END]
 *学習用画像を置くフォルダの配置
 -作者の解説が詳しい [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
 -フォルダの配置例:
@@ -186,6 +195,7 @@ https://github.com/starik222/BooruDatasetTagManager や スレ130の>>346>>949�
 *正則化画像
 キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが
 詳しくはわからないので誰か書いてクレメンス
+
 **透明のpngを正則化画像にする
 Web UI に拡張機能をインストールする [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
 Generate TransparentIMG タブで
@@ -195,11 +205,24 @@ number_of_generation:作成する枚数
 [+]画像
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/l8x2Fjrdz7.png)
 [END]
-*慣れたら
-lora_train_command_line.py をコピーしてパラメーターを直書き
+
+*その他
+lora_train_command_line.py のパラメータ記入の補助ツール
 GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
-「Tools」タブにフォルダ配置補助機能がある。スクリプト版のパラメータの一部は設定出来ないかも？
+「Tools」タブにフォルダ配置補助機能がある。
+スクリプト版のパラメータの一部は設定出来ないかも？
 
+*Loraの使用方法&aname(apply_lora)
+**使い方その1 WebUIに拡張機能をインストールして使う
+-「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール )~~
+H:\stablediffusion\stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora フォルダに 出来上がった .pt や .safetensorsをコピーする
+(Web UI の 「設定」> 「Additional Nerwork」タブでフォルダの場所を追加出来る)
+「txt2img」や「img2img」の画面の左下の方に「Additional Networks ▼」が追加されているので~~Enable を押してmodelを選びmerge倍率をweightのスライダーで調整する
 
-
+**使い方その2 WebUIの本体機能のみで使う
+-H:\stablediffusion\stable-diffusion-webui\models\lora に拾った .pt や .safetensorsをコピーする
+「txt2img」や「img2img」の「生成」ボタンの下の花札みたいなマークを押すと
+Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
+一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される
+最新のLora(0.4.0)で作ったやつも使える
 

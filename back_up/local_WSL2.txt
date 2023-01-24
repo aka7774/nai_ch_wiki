@@ -1,0 +1,286 @@
+#contents
+
+* 概要
+
+前よりは簡単になったけどまだ細かいところでめんどくさい。
+
+- WindowsのWSL2(Linux)環境
+- 普段使いのほかに16GB以上の空きメモリが必要
+- ファイルの操作や編集はWindows上でおこなう
+- Colab版に近い手順
+-- コンパイルは行わない
+-- この環境ではSD関連以外を使わない
+- 使いこなすにはLinuxの知識が必要
+
+* WSL2 のセットアップ
+
+Powershellを管理者権限で起動して以下を実行
+=|BOX|
+wsl --install
+||=
+再起動を要求されるので再起動する
+
+** WSL2 に Ubuntu 22.04 をインストール
+
+最初からUbuntuが入ってる。なければインストールする。
+リセットできないときもアンインストールして入れ直す。
+
+- Microsoft Storeを起動
+- ubuntu 22 で検索
+- Ubuntu 22.04.1 LTS を選んでインストール(2023/01/25現在の最新)
+
+* Ubuntu 22.04 をセットアップ
+
+基本的には黄色い枠の中をコピペしてってください
+
+** ユーザー名とパスワードの設定
+
+Ubuntu 22.04.1 LTSを起動する
+
+初期化(数分)
+
+- Enter new UNIX username: user(なんでもいいけど)
+- New password: (任意)
+- Retype new password: (同じパスワードをもう一回入力)
+
+** aptを最新にする
+
+初回の sudo 実行時にユーザーのパスワードを聞かれるので入力する
+
+- password for user: (同じパスワードをもう一回入力)
+
+=|BOX|
+sudo apt update
+sudo apt upgrade -y
+||=
+
+** Python 3.10.xのインストール
+
+3.10.6でいいことにする。
+
+=|BOX|
+sudo apt autoremove
+sudo apt-get -y update
+sudo apt-get -y install python3.10
+sudo cp `which python3.10` /usr/local/bin/python
+sudo apt install git libgl1 python3.10-venv -y
+python -V
+||=
+
+*** pipを最新にする
+
+=|BOX|
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+||=
+
+* AUTOMATIC1111 stable-diffusion-webui
+
+- (現状では)速度向上効果はあまり期待できません
+
+** 1111本体の設置
+
+=|BOX|
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd stable-diffusion-webui
+||=
+
+** venvの作成
+
+=|BOX|
+python -m venv venv
+||=
+
+** torchとxformersのインストール
+
+1111で推奨されるバージョンを使う。
+
+=|BOX|
+venv/bin/pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+venv/bin/pip install -U --pre triton
+venv/bin/pip install xformers==0.0.16rc425
+||=
+
+** モデルの設置
+
+Windowsエクスプローラーで以下の場所を開いて入れる
+=|BOX|
+\\wsl$\Ubuntu\home\user\stable-diffusion-webui\models\Stable-diffusion
+||=
+
+Ubuntu-22.04を入れたならここ(以下同)
+
+=|BOX|
+\\wsl$\Ubuntu-22.04\home\user\stable-diffusion-webui\models\Stable-diffusion
+||=
+
+もしくはダウンロードしてくる
+
+=|BOX|
+wget -c "https://huggingface.co/aka7774/fp16_safetensors/resolve/main/7th_anime_v3_A-fp16-1833-2982-0018.safetensors" -P `pwd`/models/Stable-diffusion/
+||=
+
+** コマンドラインオプションの編集
+
+Windowsエクスプローラーで以下の場所をメモ帳などで開く
+=|BOX|
+\\wsl$\Ubuntu\home\user\stable-diffusion-webui\webui-user.sh
+||=
+
+=|BOX|
+#export COMMANDLINE_ARGS=""
+||=
+の行を任意に変更する。以下は一例。
+=|BOX|
+export COMMANDLINE_ARGS="--xformers --opt-split-attention"
+||=
+
+** 生成時のエラー対策
+
+設定しないとこんなエラーが出る。
+
+=|BOX|
+Could not load library libcudnn_cnn_infer.so.8. Error: libcuda.so: cannot open shared object file: No such file or directory
+||=
+
+Windowsエクスプローラーで以下の場所をメモ帳などで開く
+=|BOX|
+\\wsl$\Ubuntu\home\user\.bashrc
+||=
+
+ファイルの先頭に以下の行を追加する
+
+=|BOX|
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+||=
+
+Ubuntu側で編集した内容を読み込む
+
+=|BOX|
+source ~/.bashrc
+||=
+
+** フォルダアイコンからエクスプローラーを開きたいンゴ
+
+=|BOX|
+sudo apt-get install -yqq npm
+sudo npm install -g wsl-open
+||=
+
+手元の環境ではうまく動いていない。
+
+** 1111の起動
+
+初回は時間かかるので気長に待つ。
+
+=|BOX|
+~/stable-diffusion-webui/webui.sh
+||=
+
+Windows側で http://127.0.0.1:7860 にアクセスできます。
+
+** Windowsから1111を起動する
+
+Windows側で以下のバッチファイルを作成する
+=|BOX|
+wsl bash -l /home/user/stable-diffusion-webui/webui.sh
+pause
+||=
+
+* kohya sd-scripts
+
+VRAM 8GBでかろうじて解像度768のLoraがbatch_size=1なら動く。
+(Windowsネイティブだと動かない環境なのでWSL2の導入メリットがあった)
+
+** インストール
+
+=|BOX|
+cd ~
+git clone https://github.com/kohya-ss/sd-scripts.git
+cd sd-scripts
+
+python -m venv venv
+venv/bin/pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+venv/bin/pip install -U --pre triton
+venv/bin/pip install xformers==0.0.16rc425
+venv/bin/pip install --upgrade -r requirements.txt
+||=
+
+** 学習入門を体験する
+
+=|BOX|
+sudo apt install unzip
+
+wget -c "https://huggingface.co/JosephusCheung/ACertainModel/resolve/main/ACertainModel-half.ckpt"
+wget -c "https://huggingface.co/datasets/aka7774/zunko/resolve/main/7_Zunko%201girl.zip"
+wget -c "https://huggingface.co/datasets/aka7774/zunko/resolve/main/1_1girl.zip"
+
+unzip "7_Zunko 1girl.zip" -d train
+unzip "1_1girl.zip" -d reg_data
+||=
+
+** 学習入門Loraの作成
+
+オプションを追加することで accelerate config 作業を省略している。
+
+この設定でうちの2070だと30分くらいで仕上がる。
+元が人に教えて貰ったDB用の設定なので適切かどうかはわからない。
+
+=|BOX|
+venv/bin/accelerate launch --num_cpu_threads_per_process 8 --mixed_precision fp16 train_network.py \
+   --pretrained_model_name_or_path=ACertainModel-half.ckpt \
+   --train_data_dir=train \
+   --output_dir=output \
+   --output_name=Zunko-lora \
+   --reg_data_dir=reg_data \
+   --prior_loss_weight=1.0 \
+   --resolution=768 \
+   --train_batch_size=1 \
+   --learning_rate=3e-6 \
+   --max_data_loader_n_workers=8 \
+   --max_train_epochs=5 \
+   --gradient_checkpointing \
+   --xformers \
+   --mixed_precision=fp16 \
+   --save_precision=fp16 \
+   --logging_dir=logs \
+   --enable_bucket \
+   --min_bucket_reso=384 \
+   --max_bucket_reso=1024 \
+   --save_model_as=safetensors \
+   --clip_skip=2 \
+   --seed=17283378 \
+   --lr_scheduler=cosine \
+   --caption_extension=txt \
+   --color_aug \
+   --network_dim=128 \
+   --network_module=networks.lora
+||=
+
+** Loraファイルの取得
+
+=|BOX|
+\\wsl$\Ubuntu\home\user\sd-scripts\output
+||=
+
+Zunko-lora.safetensors が出来てるはず。
+
+** 備考
+
+=|BOX|
+   --use_8bit_adam \
+||=
+をつけてるとエラーが出て動かなかったので外した。
+
+=|BOX|
+NameError: name 'str2optimizer8bit_blockwise' is not defined
+||=
+
+バージョンを sd-scripts 推奨まで下げても同じエラー。
+xformers 0.0.14のインストール方法は調べてない。
+
+=|BOX|
+venv/bin/pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+venv/bin/pip install -U --pre triton
+||=
+

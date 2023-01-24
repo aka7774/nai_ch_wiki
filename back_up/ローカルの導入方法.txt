@@ -1,7 +1,8 @@
 #contents
 
 *概要
-ローカル環境の導入ガイドです
+ローカル環境の導入ガイドです。
+''&color(#FF0000){注意} Stable Diffusion WEBUI AUTOMATIC1111はアップデート頻度が非常に高く、新機能の実装や仕様変更が頻繁に行われる為、Wikiの更新が追いついていません。''
 
 *導入
 
@@ -238,6 +239,8 @@ NVIDIAコントロールパネルの3D設定の管理から電源設定をパフ
 　→電源消費が気になるならPythonだけ変更すればよい
 
 *** launch.pyを編集し、torch・xformersのバージョンを上げる方法
+2023/01/23の更新で本体に取り込まれた
+[+]旧情報
 [+]
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment-1382123974
 
@@ -343,6 +346,7 @@ Time taken: 3.05s Torch active/reserved: 2518/2684 MiB, Sys VRAM: 5358/24564 MiB
 // これで24it/s出るようになった
 [END]
 [END]
+[END]
 
 **gtx16xxで必要な設定
 　gtx16xxでは半精度浮動小数点数が扱えないためそのままでは黒や緑の絵しかでない。オプション追加が必要。また、メモリがやや少なめ用設定も追加要
@@ -441,6 +445,7 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+
 
 
 

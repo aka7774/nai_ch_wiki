@@ -14,12 +14,13 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 
 *リソース(一覧)
 +Civitai | Every model in one place｜https://civitai.com/　~~モデルアップロードプラットフォーム。見やすくてよき
-+https://rentry.org/sdmodels ~~ここ見ときゃいい感はある。膨大な量のリンク集
-+Models - Hugging Face - https://huggingface.co/models?pipeline_tag=text-to-image&sort=modified
++https://rentry.org/sdmodels ~~%%ここ見ときゃいい感はある。膨大な量のリンク集%% 残念ながら2022年11月以降更新されていない。
++Models - Hugging Face - https://huggingface.co/models?pipeline_tag=text-to-image&sort=modified　~~自然言語処理関連のライブラリ開発や人工知能のコミュニティを運営しているアメリカ企業のサイト。充実。爆速。無料。
 +/hdg/ Stable Diffusion Models Cookbook - https://rentry.org/hdgrecipes#g-anons-unnamed-mix-e93c3bf7 ~~海外ニキによる様々なマージモデルの一覧
 +https://rentry.org/hdgfaq ~~スレでよく話題に出るCondom Belt(Embed)とか各種有用Embed＆HyperNetwork等
 
 * データセット
+- 学習に使用するデータセット
 
 ** Pixiv
 
@@ -29,7 +30,7 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 
 
 *モデル
-
+- 初期にスレで話題になった代表的なモデルを紹介。
 - URLのコピーは赤丸を右クリック
 - URLに resolve が入ってるのが正しい
 
@@ -103,14 +104,19 @@ Danbooruにある極端にNSFWなコンテンツのみを学習させたモデ�
 参考：[[ローカルのマージ]]
 
 
-** Anything-V3.0
+** Anything-V4.0
+
+https://huggingface.co/andite/anything-v4.0
+
+- Anything-V3.0(故)
+[+]
 Anime model
 Info https://www.bilibili.com/read/cv19603218
 &#128317;Linaqruf/anything-v3.0 at main - https://huggingface.co/Linaqruf/anything-v3.0/tree/main
 &#128304;：Anything-V3.0-pruned.ckptがおすすめ
 ※：なお容量削減版(たいてい名前に「pruned」がついている)は学習時におけるデータを削除したモデルデータとのことです。
 出力時には問題ありませんが、学習系の作業に使う場合は非推奨です。
-
+[END]
 
 ** NAI
 要Torrentクライアントソフト
@@ -121,13 +127,14 @@ magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 ソース：--GUIDE-- - https://rentry.org/voldy#-novelai-setup-
 
 *マージモデル
-→[[スレ民共有モデル]]ページに移動させました。
+- 複数のモデルを混合させて作られたモデル。上記リソースのリンク先サイト等から入手が可能。
+- スレ住民によって開発・配布されたモデルについては→[[スレ民共有モデル]]ページにまとめている。
 
 * VAE
 &aname(resource_vae)
-Anything, NAIに同梱されているもの以外に、以下のvaeがある。
-拡張子が.ckptなので、.ptに変えてmodels/VAEフォルダに置くことで認識可能
+拡張子が.ckptのやつは、.ptに変えてmodels/VAEフォルダに置くことで認識可能
 
+| anything-v4.0.vae.pt | https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.0.vae.pt |
 | kl-f8-anime.vae.pt | https://huggingface.co/hakurei/waifu-diffusion-v1-4/resolve/main/vae/kl-f8-anime.ckpt |
 | kl-f8-anime2.vae.pt | https://huggingface.co/hakurei/waifu-diffusion-v1-4/resolve/main/vae/kl-f8-anime2.ckpt |
 | autoencoder_fix_kl-f8-trinart_characters.vae.pt | https://huggingface.co/naclbit/trinart_derrida_characters_v2_stable_diffusion/resolve/main/autoencoder_fix_kl-f8-trinart_characters.ckpt |
@@ -136,7 +143,7 @@ Anything, NAIに同梱されているもの以外に、以下のvaeがある。
 ----
 
 * HyperNetwork
-ローカル部│[[HyperNetwork]]
+→ローカル部│[[HyperNetwork]]
 
 ** 騎乗位SEX用HN
 どんだけ騎乗位の呪文設定しても斜め構図と仰け反る頻度が高すぎるから作ったイチャラブ騎乗位SEX用HN
@@ -162,7 +169,7 @@ https://majinai.art/i/2UnRCMI.webp
 >hn公開したから使ってみてや~~
 
 * TextualInversion
-ローカル部[[TextualInversion]]
+→ローカル部[[TextualInversion]]
 
 ** 手の補正TI
 
@@ -194,6 +201,7 @@ TextualInversionで悪い手の形を学習させて、Embeddingでネガティ�
 https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
 
 *LORA
+→ローカル部[[Dreambooth-LoRA]]
 
 **131スレ762 足コキの構図
 https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/762

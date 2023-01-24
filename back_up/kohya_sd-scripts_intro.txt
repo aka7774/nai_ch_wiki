@@ -159,9 +159,6 @@ https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scroll
 
 * オプション: LoRaを作成する
 
-残念ながら用意したNotebookではxformersがうまく動いていないので時間がかかります。
-1時間強くらい。
-
 - 手順12までは同じ。
 -- 古いNotebook使ってたら最新のをコピーしなおしてください
 - 手順13の詳細設定で下のほうにある項目を変更
@@ -169,8 +166,10 @@ https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scroll
 -- 「train_network」のチェックを入れる
 -- output_name をわかりやすく変更するのがおすすめ Zunko-lora など
 
-結果の確認には専用の Extension が必要です。
+768のbatch_size=2は30分くらい。5にも出来るけど時間は変わらなかった。
+試しにresolutionを1024にしてみたけど動いている。時間は1時間半らしい。
 
-- https://github.com/kohya-ss/sd-webui-additional-networks
-- stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora に Zunko-lora.safetensorsをコピー
-- 使い方はチョットヨクワカリマセン
+accelerate config の設定内容は
+ accelerate launch --mixed_precision=fp16
+と等価
+

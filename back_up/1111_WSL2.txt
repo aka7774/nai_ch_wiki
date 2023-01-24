@@ -1,5 +1,11 @@
 #contents
 
+* 更新版(2023-01-25作成)
+
+- [[local_WSL2]]
+- 手順が簡単になった
+- kohya sd-scripts対応
+
 *※番外編：導入(WSL2)｜Linux環境でAutomatic1111を導入する
 Windowsでも速度を求める人やLinuxに慣れてる人はこちらがお勧め
 
