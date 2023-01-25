@@ -38,6 +38,13 @@ stable-diffusion-webuiディレクトリ直下にあるwebui-user.batを修正�
 (torch・xformers欄)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/xh_WFZyBHE.png)
 
+***RTX4000シリーズを使っている場合
+標準でインストールされるcudnn関係のDLLが古い(4000シリーズ未対応)為、対応版(cudnn8.7.0)に置き換える
+
++https://developer.nvidia.com/rdp/cudnn-download より Local Installer for Windows (Zip) をダウンロードする~~※メールアドレス登録が必要かもしれない
++ダウンロードしたzipファイル(cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip)を展開し、binフォルダ内の7ファイルを取り出す
++stable-diffusion-main\venv\Lib\site-packages\torch\lib 内に上書きコピーする
+
 
 [+]以前の方法
 4090で高速化する方法。3060でもほんのちょっとだけ早くなったとの報告あり。
@@ -84,7 +91,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment
 
 * torchを2.0にする
 生成が5%以上速くなるが、''いくつかの機能が動作しなくなる可能性があるため非推奨''
-(txt2img,img2img,TextualInversionの学習は動作確認済。DBとHNの学習は未確認)
+(txt2img,img2img,TI,HNは動作確認済。DBは未確認)
 ↓に更新方法が書いてある。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
 ※TorchとAccelerateはvenvと通常環境の両方にインストールするように
@@ -217,6 +224,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
 
 
 

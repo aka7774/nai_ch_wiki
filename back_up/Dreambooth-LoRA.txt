@@ -150,8 +150,15 @@ last.safetensors というファイルができる
 [END]
 *学習用画像を置くフォルダの配置
 -作者の解説が詳しい [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
+
 -フォルダの配置例:
 [-]
+※要するに<繰り返し回数>_<インスタンスプロンプト>にリネームした学習画像データのフォルダは直接指定しないでねって話
+例えば↓こういうこと
+&#10060;E:\kohya_ss\TrainDatas\001\img\40_kdy 1girl
+&#128994;E:\kohya_ss\TrainDatas\001\img
+間違うと画像が見つかりませんと怒られる
+
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/8v9xToIuUR.png)
 [END]
 -同時に10まで概念を学習できるが、少なくとも1つはフォルダが必要。

@@ -60,7 +60,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
-|RTX 3060|12GB|Ryzen 9 3900XT||42.47s|--opt-channelslast --xformers|プレビュー：Approx cheap。4Stepごと。Torch active/reserved: 2521/2868 MiB,&#160;Sys VRAM: 5173/12288 MiB。プレビューなしで41.11s。--xformersのみで45.65s(--opt-channelslast効き目あり?)|
+|RTX 3060|12GB|Ryzen 9 3900XT||42.47|--opt-channelslast --xformers|プレビュー：Approx cheap。4Stepごと。Torch active/reserved: 2521/2868 MiB,&#160;Sys VRAM: 5173/12288 MiB。プレビューなしで41.11s。--xformersのみで45.65s(--opt-channelslast効き目あり?)|
 |RTX 3090|24GB|Core i7-12700K|18秒|17.16|--xformers --opt-channelslast --administrator|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境~~torch: 1.13.1+cu117,xformers: 0.0.16rc425|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.77|xformers opt-channelslast|pytorch2.0に更新したが言うほど速くならなかった。OCすると26.22s ~~ batch count 5 batch size 2|
 |GT 1030|2GB|Ryzen 5 5600G|26分|1550.21|--lowvram|マザボ側HDMIから画面出力、GT1030はGDDR5でファンレス|
@@ -93,7 +93,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 |RTX 4090|24GB|Core i9-13900K|11秒|9.41|xformers opt-channelslast||
 |RTX 4080|16GB|Core i9-13900KF|13秒75|13.23|xformers opt-channelslast|Windows10 Batch count10 Batch size1 メモリはDDR5|
 |RTX3060|12GB|Core i7-12700K|38秒|37.73|--xformers --opt-channelslast|Windows10・メモリ32GB WSL2 Ubuntu22.04 ※同環境Windowsでは43秒なので11.6%速い、opt-channelslast無しだと41秒・40.53s|
-|RTX3060|12GB|Core i7-12700K|39秒|38.91s|--xformers --opt-channelslast|Windows11･メモリ64GB･WSL2(Ubuntu22.04)･AfterburnerでPL58%(44秒､Time taken: 43.85s)環境構築はWikiの手順を参照|
+|RTX3060|12GB|Core i7-12700K|39秒|38.91|--xformers --opt-channelslast|Windows11･メモリ64GB･WSL2(Ubuntu22.04)･AfterburnerでPL58%(44秒､Time taken: 43.85s)環境構築はWikiの手順を参照|
 |RTX3090|24GB|Core i9-13900KF|19秒|17.51|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境|
 |RTX3090|24GB|Core i9-13900KF|23秒|21.65|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB|
 |RTX3090|24GB|Core i9-12900KF|18.6秒|18.19|--xformers --no-half-vae --deepdanbooru --gradio-img2img-tool=color-sketch --opt-channelslast|RAM64GB,cuDNN8.6.0,pcie4.0 x16|

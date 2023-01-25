@@ -13,10 +13,11 @@ Windowsでも速度を求める人やLinuxに慣れてる人はこちらがお�
 WindowsのWSL(Linux)環境でAutomatic1111を導入する手順です。
 
 ***利点
-Windows版と比べて15〜25%程早い
+-Windows版と比べて15〜25%程早い
+-環境のバックアップが取りやすい~~(OSごとバックアップが取れるので何かあったときに戻すのが楽)
 
 ***欠点
-多少だがLinuxの知識が必要になる(場合もある)
+-多少だがLinuxの知識が必要になる
 
 
 **WSL2 のセットアップ
@@ -135,6 +136,8 @@ source .bashrc
 ||=
 
 **xformersの導入
+2023/01/23時点で1111標準でインストールされるようになった
+[+]旧情報
 ビルドしなくても
 =|BOX|
 cd ~/stable-diffusion-webui
@@ -197,7 +200,7 @@ pip install triton
 =|BOX|
 deactivate
 ||=
-
+[END]
 
 **xformers有効化とWebUI起動
 /home/<Ubuntuのユーザー名>/stable-diffusion-webui にある webui-user.sh を開き、以下の行のコメントアウトを外してパラメータを追記する

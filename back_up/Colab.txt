@@ -1,0 +1,261 @@
+* Google Colaboratory
+
+ノートブックの改造ネタなど。
+Colabってなーにって話は[[ローカルをクラウドで]]に書いてある。
+完成したノートブックは以下の場所に置いてある。
+
+- [[入門用Notebook]] 1111用
+- [[kohya_sd-scripts_intro]] Loraとか学習用
+
+#contents
+
+* ねらい
+
+- 無料版に対応する(Driveも)
+- ローカル版が使えない人も対象
+- PC利用
+- CPUで済ませられる作業はGPUを割り当てないノートブックで済ませる
+- できるだけGUIを使わない(設定はノートブックで済ませる)
+- できるだけシンプルな方法を採用する(コンパイルは極力控える)
+
+* Google Drive
+
+** マウント
+
+毎回承認が必要。面倒だけど勝手にマウントされないので安全。
+
+=|BOX|
+from google.colab import drive
+drive.mount('/content/drive')
+||=
+
+/content/drive/MyDrive 以下を使う
+
+** ファイル
+
+モデルやconfig.jsonとか。
+
+*** バックアップ
+
+=|BOX|
+src_path = "/content/hoge.piyo" #@param {type:"string"}
+dst_path = "/content/drive/MyDrive/hoge.piyo" #@param {type:"string"}
+
+!cp {src_path} {dst_path}
+||=
+
+*** リストア
+
+=|BOX|
+dst_path = "/content/drive/MyDrive/hoge.piyo" #@param {type:"string"}
+src_path = "/content/hoge.piyo" #@param {type:"string"}
+
+!cp {dst_path} {src_path}
+||=
+
+** ディレクトリ
+
+*** バックアップ
+
+高速に処理したいのでZStandardを使う。
+
+stable-diffusion-webui ごとバックアップする手と、
+venvだけバックアップする手が考えられる。
+前者はgithubが急に無くなっても動作させられるが、
+ダウンロードするだけのものを再圧縮するので時間と容量は余計にかかる。
+
+1111は初回起動が終わった後でバックアップしたほうが良い。
+以下は /content/hoge/venv の例。
+
+=|BOX|
+zip_path = "/content/hoge_venv.zst" #@param {type:"string"}
+
+%cd /content/hoge
+
+!pip install zipfile-zstd
+import os
+import zipfile_zstd as zipfile
+from glob import glob
+with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_ZSTANDARD, compresslevel=3) as zip_f:
+  for path in glob("venv/**", recursive=True):
+    zip_f.write(path)
+||=
+
+** リストア
+
+zst にフォルダが内包されていることが必須(上記の方法ならOK)
+
+=|BOX|
+zip_path = "/content/hoge_venv.zst" #@param {type:"string"}
+dst_path = "/content/hoge" #@param {type:"string"}
+
+!pip install zipfile-zstd
+import zipfile_zstd as zipfile
+with zipfile.ZipFile(zip_path, 'r', zipfile.ZIP_ZSTANDARD) as zObject:
+    zObject.extractall(path=dst_path)
+||=
+
+pythonが実行できない時はパーミッションを設定する
+
+=|BOX|
+!chmod +x "{dst_path}/venv/bin/python"
+!chmod +x "{dst_path}/venv/bin/pip"
+!chmod +x "{dst_path}/venv/bin/accelerate"
+||=
+
+* Python
+
+諸悪の根源はだいたいこいつ。
+最近は3.8が最初に入っている。
+
+** 3.10のインストール
+
+Python本体をノートブックにバックアップする方法は不明。
+
+=|BOX|
+!sudo apt autoremove
+!sudo apt-get -y update
+!sudo apt-get -y install python3.10
+||=
+
+*** 「python」と打てば python3.10 が動くようにする
+
+=|BOX|
+!sudo cp `which python3.10` /usr/local/bin/python
+||=
+
+古いバージョンのpythonに依存した何かが動かなくなる可能性があるので、
+常時起動のサーバとか多目的用途の環境ではやらないほうがいい。
+
+** 3.9のインストール
+
+=|BOX|
+MINICONDA_SH='Miniconda3-py39_4.12.0-Linux-x86_64.sh' # Miniconda3-latest-Linux-x86_64.sh
+!wget https://repo.anaconda.com/miniconda/{MINICONDA_SH}
+!chmod +x {MINICONDA_SH}
+!./{MINICONDA_SH} -b -f -p /usr/local
+del MINICONDA_SH
+||=
+** pipを最新にする
+
+どの環境でもこの方法がよさげ。
+
+=|BOX|
+!wget https://bootstrap.pypa.io/get-pip.py
+!sudo python get-pip.py
+||=
+
+** venvを導入する
+
+この方法では既にvenvが使えるので不要。
+(venvが無い環境ではインストール方法が用意されているはず)
+
+* venv
+
+** 新規作成
+
+ファイル数が多いのでDrive内に作ってはいけない。
+
+=|BOX|
+%cd お目当てのディレクトリ
+python -v venv venv
+||=
+
+以下は お目当てのディレクトリ 上での作業を前提とする。
+
+** activate
+
+実はactivateしなくてもvenvの中のpythonを叩けば実行できる。
+出たり入ったりするのがややこしいのでこのページでは使わない。
+
+** torchとxformersのインストール
+
+*** torch==1.13.1+cu117 と xformers==0.0.16rc425
+
+今までの苦労はなんだったんだって感じで、この3行だけですんなり入る。
+
+=|BOX|
+!venv/bin/pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+!venv/bin/pip install -U --pre triton
+!venv/bin/pip install xformers==0.0.16rc425
+||=
+
+*** condaで入れる場合(Python 3.9でvenvを使わない)
+
+=|BOX|
+!conda update conda -y
+!conda install pytorch==1.13.1 torchvision==0.14.1 cudatoolkit=11.7 -c pytorch -y
+!conda install xformers -c xformers/label/dev -y
+||=
+
+*** xformers==0.0.15.dev0(Python 3.8)
+
+sd-scriptsがこのバージョンじゃないと正常動作してても学習出来てない不具合があるとかなんとか。
+Pythonのバージョンを上げることは出来ない。
+
+=|BOX|
+!venv/bin/pip install -q https://github.com/camenduru/stable-diffusion-webui-colab/releases/download/0.0.15/xformers-0.0.15.dev0+189828c.d20221207-cp38-cp38-linux_x86_64.whl
+||=
+
+* ファイルのダウンロード
+
+** wget
+
+&#129303;にあるものはwgetで十分な速度が出る。
+
+=|BOX|
+ckpt_url = 'https://huggingface.co/aka7774/fp16_safetensors/resolve/main/7th_anime_v3_A-fp16-1833-2982-0018.safetensors'#@param {type:"string"}
+!wget -c "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+||=
+
+** aria2c
+
+&#129303;にないものは&#129303;にアップロードして&#129303;からダウンロードしたほうが良い。
+
+=|BOX|
+aria_url = ''#@param {type:"string"}
+if aria_url:
+    !apt install -y -qq aria2
+    !aria2c --summary-interval=10 -x 3 --allow-overwrite=true -Z {aria_url}
+||=
+
+* ファイルのアップロード
+
+** &#129303;へのログイン
+
+writeトークンはリンク先のページで作れる。
+
+=|BOX|
+!pip install --upgrade huggingface_hub
+from huggingface_hub import login, HfApi
+login()
+||=
+
+** アップロード
+
+repo_type が空白だとモデル
+dataset は画像など用
+
+=|BOX|
+filepath = "" #@param {type:"string"}
+path_in_repo = "" #@param {type:"string"}
+repo_id = "" #@param {type:"string"}
+repo_type = "" #@param {type:"string"}
+
+import os
+if os.path.exists(filepath):
+  api = HfApi()
+  api.upload_file(path_or_fileobj=filepath,
+    path_in_repo=path_in_repo,
+    repo_id=repo_id,
+    repo_type=repo_type,
+  )
+||=
+
+* git
+
+=|BOX|
+!git clone https://github.com/kohya-ss/sd-scripts.git
+%cd sd-scripts
+||=
+
