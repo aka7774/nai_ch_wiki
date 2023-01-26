@@ -1,13 +1,14 @@
 #contents
 
 *概要
-ローカル環境の導入ガイドです。
+ローカル環境(AUTOMATIC1111版Stable Diffusion WebUI)の導入ガイドです。
 ''&color(#FF0000){注意} Stable Diffusion WEBUI AUTOMATIC1111はアップデート頻度が非常に高く、新機能の実装や仕様変更が頻繁に行われる為、Wikiの更新が追いついていません。''
+
 
 *導入
 
 - &size(15){[[画像付きガイドpdfを作りました。>>https://image01.seesaawiki.jp/n/h/nai_ch/Bh8T7jBTQz.C.pdf]](Windows用)}
-必要なソフトのインストール方法とモデルダウンロードについても記載しています。
+※NovelAIの再現をしないなら「NAIモデルのダウンロードと配置」の項目は飛ばしてOK
 
 - リファレンス
 -- https://rentry.org/voldy
@@ -16,7 +17,7 @@
 
 ** 1. Python 3.10をインストールする
 [[https://www.python.org/ftp/python/3.10.9/python-3.10.9-amd64.exe]]
-&color(#ff0000){3.11は入れても動かないから入れんな!!}
+&color(#ff0000){3.11は入れても動かんから入れるな!!!}
 
 「python-3.10.x-amd64.exe」がダウンロードされるので、ダブルクリックで開く。
 このとき、Add to PATH にチェックをつけてインストールすること。
@@ -147,9 +148,15 @@ WEBUIの操作画面が表示されたらここまでの手順は成功。おつ
 **8(※オプション)：環境設定
 [[ローカルのwebui-user.bat]]に移動しました。
 
-ここまで完了したら[[「動作確認：Hello Asuka」>#helloasuka]] へ進みます。
+NovelAIの再現をする場合は[[「動作確認：Hello Asuka」>#helloasuka]] へ進みます。
 
 * 簡易インストール
+**公式のやつ
+-https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/tag/v1.0.0-pre
+--もうこいつ一人でいいんじゃないかな？
+--…と言いたいところやけどまだプレリリースやからかほんの少しごみが残ったりちょっと安定しないとの報告もある。
+--とはいえ基本難しいこと考えずにインストールしたいならこれを使うのが最初になるんちゃうかな？
+--おおむね後者のあかちゃんインストーラーとやっとることも同じみたいやで？
 
 ** あかちゃんインストーラー
 
@@ -226,8 +233,8 @@ CG板で使ってみた人がいいかもって言ってた。
 - プロンプトを正確にコピーしたことを再確認してください！
 - lowvram や xformers などの最適化を使用している場合、わずかな違いが見られる場合がありますが、それでも 95% 類似しているはずです。
 
-図：GPU によるおおよそのレンダリング時間 (50 ステップ)
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8lYrJdmZvs.png,660)
+参考資料：GPU によるおおよその生成速度
+https://www.tomshardware.com/news/stable-diffusion-gpu-benchmarks
 
 * トラブルシューティング
 **RTX4090で画像生成した際、速度が遅い問題を解決する
@@ -445,6 +452,7 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+
 
 
 

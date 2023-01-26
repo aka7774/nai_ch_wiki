@@ -10,19 +10,27 @@ https://rentry.org/lora_train
 *他人の作ったモデルの導入
 [[Loraの使用方法>#apply_lora]]だけやればOK
 
-*あかちゃんLoraインストーラー(みかんせい)
-- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts.bat
-- あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
-- うちの環境ではMemoryErrorが出て動かなかった
-- lora_train_popup.pyもワイの知能では使いこなせなかった
-- だれかなおちて
+*あかちゃんLoraインストーラー
 
+あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
+start.batと同じフォルダに入れて実行してください
+
+- コマンドライン用
+-- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts.bat
+-- https://github.com/aka7774/elemental_code/blob/main/tools/run_sd_scripts.bat
+- ダイアログ用(みかんせい)
+-- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts_easy_training.bat
+-- lora_train_popup.pyはワイの知能では使いこなせなかった
 
 *準備
-+ git で https://github.com/kohya-ss/sd-scripts をコピー
-+ https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から~~ lora_train_popup.py~~ lora_train_command_line.py~~ run_popup.bat~~ run_command_line.bat~~をダウンロード~~注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
-+ スクリプトを sd-scripts フォルダにコピー
-+ README-ja.md に日本語の詳しい説明が書いてある
+1. エクスプローラーを開き、適当なフォルダ内で右クリック→git bash hereでgitのターミナルを開き、以下のコマンドを実行する
+> git clone https://github.com/kohya-ss/sd-scripts.git
+2. https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から~~ lora_train_popup.py~~ lora_train_command_line.py~~ run_popup.bat~~ run_command_line.bat~~をダウンロード~~注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
+あるいはCode→Download zipでダウンロードして解凍する(zipに入ってる.gitignore、LICENSE、README.mdは不要)
+
+3. スクリプトを sd-scripts フォルダにコピー
+
+4. README-ja.md に日本語の詳しい説明が書いてあるので読む
 =|PERL|
  train_network_README-ja.md: LoRAの学習について
  train_db_README-ja.md:DreamBoothのガイドです。LoRA等の追加ネットワークの学習にも同じ手順を使います。
@@ -45,6 +53,8 @@ cp .\bitsandbytes_windows\main.py .\venv\Lib\site-packages\bitsandbytes\cuda_set
  
 accelerate config
 ||=
+なお、python -m venv〜の行で「python」とだけ表示された場合、py -m venv〜のようにpythonをpyに変更してください。
+
 エラーが出て進めないときは python -m venv venv と書き換えてもう一回やってみる コメント欄参照
 --accelerate config のあとに質問が出るので以下のように答える
 =|PERL|

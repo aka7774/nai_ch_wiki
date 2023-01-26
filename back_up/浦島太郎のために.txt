@@ -9,6 +9,9 @@
 NAI全盛期に登場して一世を風靡したモデルが作者によって削除された。
 https://twitter.com/linaqruf_/status/1616821313804570624?s=61&t=Gdc6UnwYcwE0IwLakkvoMw
 
+1/26に復活したがVAEは無かった。
+https://huggingface.co/Linaqruf/anything-v3.0
+
 VAEが必要ならAnything-v4.0同梱のものを使おう。
 https://huggingface.co/andite/anything-v4.0
 
@@ -441,6 +444,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

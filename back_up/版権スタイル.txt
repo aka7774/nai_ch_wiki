@@ -2,6 +2,7 @@
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|作品名|備考|サンプル|
+|{gundam build fighters},1girl|ガンダムビルドファイターズ|gundam seed,gundam 00,を残すと影響が残るのでネガティブ入れた方がいいかも。|https://image01.seesaawiki.jp/n/h/nai_ch/bvskI_0Op_.png|
 |{style of Fairy Tail},official art,1girl,|FAIRY TAIL|fairyをネガティブへ。似るときはアニメ寄りになり易い。まれに漫画？っぽいキャラが生成される|https://image01.seesaawiki.jp/n/h/nai_ch/pzlkSJn89m.png|
 |style of panty & stocking with garterbelt,1girl|パンティ&ストッキングwithガーターベルト|原作同様カートゥーン味のある絵が出力される。panty,stocking,garterbeltが含まれている為下着になる時がある。ネガティブに入れた方がいい。お好みで"Add Quality Tags"スイッチを入れるといい感じになる。|https://image02.seesaawiki.jp/n/h/nai_ch/r7FqqscBv8.png|
 |{musaigen no phantom world},1girl,|無彩限のファントム・ワールド|サンプルの様な画像風の絵柄が出やすい。他プロンプトに負ける場合が多いためその都度強調が必要。|https://image01.seesaawiki.jp/n/h/nai_ch/_cz9CbyjMs.png|

@@ -3,8 +3,9 @@
 * スレ民共有モデル｜なんでも掲載OK
 ニキたちのとっておきのマージモデルとかを軽率に掲載するところ
 
-→スレ民共有モデルのページを作りました。ダウンロード可能な状態であればなんでも掲載OKです。
+スレ民共有モデルのページを作りました。スレ内で発表されたモデルを掲載しています。
 レシピだけの場合は、[[ローカルのマージ]]内のマージレシピ、または[[階層マージ]]ページ内の設定例、に掲載してください。
+自薦他薦モデルの場合は[[ローカルのリソース]]に掲載してください。
 
 **BloodOrangeMix
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/cB3pMiSVRd.jpg,450)
@@ -377,3 +378,32 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1674488413/44
 >学習元の関係でネガティブに入れないと高頻度で乳首や性器を出してくるしポーズ指定しなきゃ大体エロ蹲踞~~
 >布面積はギリギリ~~
 >猫耳もたまに出てくる~~
+
+**137スレ117 pclora, pclora2, ppct1, ppct2, ppct3
+https://fate.5ch.net/test/read.cgi/liveuranus/1674660572/117
+&#128317;https://huggingface.co/2vXpSwA7/kirie_model_lora/
+>117今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff7e-j5s0)2023/01/26(木) 08:38:14.47ID:mWDJkEZm0~~
+>Lora＆マージで作った奴置いとくよ、なんか切り絵みたいな感じ？~~
+>https://huggingface.co/2vXpSwA7/kirie_model_lora/tree/main ~~
+>サンプル↓プロンプトに1girl、papercut ネガティブに(worst quality, low quality:1.4),monochrome ~~
+>https://imgur.com/a/R9jD2YF
+>使用時はプロンプトに「papercut」入れる、ネガティブに「monochrome」入れたほうがいいかも~~
+>ppct2はppct1よりはプロンプトの言うこと聞くかもしれん、ppct3はよく分からんやつ~~
+>サンプルのはanyに適用した、pcloraはプロンプト不要で適用だけでおｋ、pclora2は崩壊しがちでプロンプトに「papercut」必要~~
+> ~~
+>…まぁ、需要あるか知らんが好きに使ってくれ~~
+pclora
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5DQcPZcFh_-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/5DQcPZcFh_.jpg]]
+
+pclora2
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kc9VZ5Dr80-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/kc9VZ5Dr80.jpg]]
+
+ppct1
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Iz1hQjEq1Q-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/Iz1hQjEq1Q.jpg]]
+
+ppct2
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0_C0V66UFp-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/0_C0V66UFp.jpg]]
+
+ppct3
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xQ_sxmR4gd-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/xQ_sxmR4gd.jpg]]
+
