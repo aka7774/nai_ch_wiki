@@ -110,7 +110,7 @@ xformersフォルダ内で以下のコマンドを実行する。
 ビルドされるのでしばらく待つ。その後xformersフォルダ内で以下のコマンドを実行する。
 > python setup.py bdist_wheel
 その後xfomers\dist\にwhlファイルができるので、それをvenv/Scriptsにコピーしてvenv側のpythonでpip install ファイル名.whlでインストールする。
-インストール後、venv\Lib\site-packages\tritonフォルダを消去する。
+インストール後、venv\Lib\site-packages\tritonフォルダを消去する。ついでにグローバル環境のpythonからaccelerate、torch、torchvisionはアンインストールしたほうがいいかもしれない。
 
 * VAEをckptに内蔵する
 
@@ -224,6 +224,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
 
 
 

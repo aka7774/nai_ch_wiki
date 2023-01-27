@@ -110,7 +110,7 @@ pythonが実行できない時はパーミッションを設定する
 
 ** 3.10のインストール
 
-Python本体をノートブックにバックアップする方法は不明。
+Python本体をDriveにバックアップする方法は不明。
 
 =|BOX|
 !sudo apt autoremove
@@ -258,4 +258,5 @@ if os.path.exists(filepath):
 !git clone https://github.com/kohya-ss/sd-scripts.git
 %cd sd-scripts
 ||=
+
 

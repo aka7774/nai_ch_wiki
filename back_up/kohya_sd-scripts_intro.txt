@@ -169,7 +169,9 @@ https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scroll
 768のbatch_size=2は30分くらい。5にも出来るけど時間は変わらなかった。
 試しにresolutionを1024にしてみたけど動いている。時間は1時間半らしい。
 
+&color(#ff0000){バグがあって正常終了に見えても学習していないので、直るまでは、--xformersを消してbatch_size=1にしたほうが良さそう。}
+どうせすぐ直るだろうと思って様子見してたけどそんなことはなかった・・・。
+
 accelerate config の設定内容は
  accelerate launch --mixed_precision=fp16
 と等価
-
