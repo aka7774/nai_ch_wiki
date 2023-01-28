@@ -5,6 +5,12 @@
 * 版権キャラ再現/は行
 **は
 
+***　バイオハザードシリーズ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|jill_valentine,large breasts,||バイオハザードシリーズ|ジル・バレンタイン|「jill_valentine」を認識しているが、リベレーションズが強くでる。頻繁にバイオ３が混ざり、髪型や服装は不安定なので、指定する事を推奨。|https://image02.seesaawiki.jp/n/h/nai_ch/fYM1CW3gqq.png https://image02.seesaawiki.jp/n/h/nai_ch/z4LKXMV7Zw.png|
+|}
+
 ***　ハイスクールD×D
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -31,7 +37,7 @@
 ***  　BanG Dream!（バンドリ！）
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|1girl, {{{{toyama kasumi}}}}, {{bang dream!}}, red brown hair, {{medium hair}}, double bun, purple eyes, bangs, |{{{{{{{{{{nakasu kasumi}}}}}}}}}}, ushigome rimi, pated bangs, arashi chisato, maruyama aya, hair ornament,  scrunchie, |BanG Dream!|戸山香澄|''UCにいくら強調しようとも、中須かすみに髪が5割強の確率で吸われる。''また、彼女の一番の特徴である猫耳髪(Danbooruでは"corn hair bangs"という名前)は再現不可。普通のお団子で妥協しても生成率は1割に満たない|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uQlDBSmvMI-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/uQlDBSmvMI.png]]|
 |||||||
 |1girl, {{{{hanazono tae}}}}, {{bang dream!}}, long hair, black hair, green eyes,|lipstick, blunt bangs, hikawa sayo,|BanG Dream!|花園たえ|打率はバンドリキャラの中ではかなり高い。UCにlipstickを入れないと、口紅をする。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/R_qltAMfDB-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/R_qltAMfDB.png]]|
 |1girl, {{{{ichigaya arisa}}}}, {{{bang dream!}}}, gold hair, twin tails, blonde eyes, bangs, medium breasts, looking at viewer, cowboy shot, smile, happy, [open mouth], |{{{tsurumaki kokoro}}}, {{{toyama kasumi}}}, maruyama aya,  afro, fang, {ribbon}, scrunchie, straight hair, hair rubber, up twin tail, {{tareme}}, |BanG Dream!|市ヶ谷有咲|顔つきが本当に出にくい。バンドリキャラじゃない誰かに吸われている可能性大。ツインテールも有咲本人のものは出ないので加筆再生成が必須。Xの髪飾りを入れるとさらにガチャ要素が深まる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/emu320o7Ys-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/emu320o7Ys.png]]|
@@ -63,8 +69,8 @@
 |||||||
 |1girl, {{{{kurata mashiro}}}}, {{bang dream!}}, short hair, light blue hair, bangs, aqua eyes, {{{hair between eyes}}}, {{bangs}}}, looking at viewer, small breasts, {{{tareme}}}, |hikawa hina, hikawa sayo, &#91;wavy hair], {{loli}}, {{{{{tsurime}}}}}, bloude hair, braid|BanG Dream!|倉田ましろ|打率１割未満。顔つきは出にくく、髪が4〜6割くらいの確率で変色する。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qV2e2UobLu-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qV2e2UobLu.png]]|
 |1girl, {{{{futaba tsukushi}}}}, {{bang dream!}}, {{tareme}}, {{twin tails}}, bangs, orange eyes, {{black hair}}, small breasts,  |{{{{{{{{futaba anzu}}}}}}}},  {{{{{{uehara himari}}}}}}},{straight hair}}, troubled, hairpin, hair ornaments, hair intakes, forehead, afro, hairline, maruyama aya, |BanG Dream!|双葉つくし|''UCにいくら強調して入れようともお構い無しに髪が双葉杏子と上原ひまりに高確率で吸われる。'' 吸われない時があっても、二葉つくし本人のツインテールはほぼ出ない(100枚で1枚程度)。そのため、顔つきがある程度出たら、Edit Imageでツインテの形を整えて再生成するのがおすすめ。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cP9OTr2ucS-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cP9OTr2ucS.png]]|
-|||||||
-|||||||
+|1girl, solo, {{{hiromachi nanami}}}, {bang dream!}, [pink hair], orange hair, medium hair, {{{{two side up}}}}, pink eyes, bangs,  light smile, [open mouth], [[[:3]]], {{looking at viewer}}, cowboy shot, |{{{tsurime}}}, smirk, {{{{wavy hair}}}, maruyama aya, bob cut, blunt bangs,|BanG Dream!|広町七深|前髪と彼女の一番大事な要素ともいえる特徴的な口が再現不可。それ以外は1割程度で出る。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FmGQd0enOD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FmGQd0enOD.png]]|
+|1girl, solo, {{{{yashio rui}}}}, {bang dream!}, black hair, {{{very short hair}}}, violet eyes, {{{{{{{{sharp eyes,  tsurime}}}}}}}, {half-closed eyes}, clear face, expressionless, {{{hair over one eyes}}, [[earrings]], medium breasts, parted bangs, cowboy shot, looking at viewer, closed mouth, |{{{{loli, smile, boy, blush,  sad, happy, :o, teeth}}}}, bob cut, {{forehead, hair line}}, {{{panel layout}}}, medium hair, frown, purple hair, disheveled hair, messy hair, [seta kaoru], {{{milf}}}, |BanG Dream!|八潮瑠唯|100枚で１,2枚程度出ればいい方。前髪は逆になりやすい。medium hairとpanel layoutはいくら強調してUCに入れようとも出てくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ow3ApW0FCo-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/ow3ApW0FCo.jpg]]|
 |||||||
 |}
 

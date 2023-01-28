@@ -4,6 +4,33 @@
 
 #contents
 
+* 2023-01-28 HNのドロップダウンが復活した（ついでにLoRAも付いた）
+2023-01-22の仕様変更により消えたHNのドロップダウンが復活した
+同時にLoraのドロップダウンも付けれるようになった
+
+設定方法は Settings → User interface → Quicksettings list に追加する
+-sd_hypernetwork
+-sd_lora
+-extra_networks_default_multiplier~~以前のsd_hypernetwork_strengthの替わりでHNとLoRA共通
+
+* 2023-01-28 pix2pixモデルマージが実装された
+extensionsのstable-diffusion-webui-instruct-pix2pixの登場から2日、任意のモデルをpix2pixモデルにマージする機能が実装された
+これにより好きなモデルでpix2pixが使えるようになった
+
+pix2pixとは簡単に言えば構図をそのままで中の絵を替える技術
+img2imgと違い、変更指示を文章で入力し元の要素を残したままで出来る事
+
+サンプルはこんな感じ
+[+]
+|元絵|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4_kVo3EKNV.png,256,256)|
+|プロンプト~~Change from night to day|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kcnPmUj5bi.png,256,256)|
+|プロンプト~~Change from human to cat|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fPWwMn1FsO.png,256,256)|
+|プロンプト~~Changed from black hair to blonde hair|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wFu2vCo98R.png,256,256)|
+|||
+|元絵|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nWfmnlLg8J.png,384,456)|
+|プロンプト~~add sepia|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PD0wLWzm7R.png,384,456)|
+[END]
+
 * 2023-01-24 Anything-v3.0が消えた
 
 NAI全盛期に登場して一世を風靡したモデルが作者によって削除された。
@@ -38,6 +65,7 @@ Linux(やwsl)環境の人がvenvを削除しての再インストール、又は
 > venv/bin/activate~~
 > pip install xformers==0.0.16RC425~~
 > deactivate~~
+
 * 2023-01-22 HNとLoraの生成仕様変更
 
 - HNのドロップダウンは廃止になった。(またExtension作者が対応に追われた)

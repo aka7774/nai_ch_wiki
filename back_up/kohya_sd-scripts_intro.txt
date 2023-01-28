@@ -6,6 +6,17 @@
 
 旧バージョンはこちら→[[ローカルの学習入門]]
 
+* 注意
+
+この記事の内容は既に古いです。(2023-01-20作成)
+kohyaの更新によって動いたり動かなかったりします。(オプションの内容や意味がころころ変わるため)
+2023-01-28時点では動くようですが将来はわかりません。
+動くバージョンを使いたいならリポジトリのハッシュを指定しましょう。
+常に最新機能を追いたいなら更新のたびにオプションの見直しと動作チェックをしましょう。
+
+自分でコマンドラインオプションを入れる用の新しいノートブック(2023-01-28作成)
+- https://colab.research.google.com/drive/1vU8SRWeTU8w89xl9jA2nivIqHzr7HBiU
+
 * すること
 
 - kohya版sd-scripts(コマンドラインツール)を実行する
@@ -160,6 +171,7 @@ https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scroll
 * オプション: LoRaを作成する
 
 - 手順12までは同じ。
+-- learning rateは1e-4にするといいかも
 -- 古いNotebook使ってたら最新のをコピーしなおしてください
 - 手順13の詳細設定で下のほうにある項目を変更
 -- 「train_db」のチェックを外す
@@ -167,10 +179,8 @@ https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scroll
 -- output_name をわかりやすく変更するのがおすすめ Zunko-lora など
 
 768のbatch_size=2は30分くらい。5にも出来るけど時間は変わらなかった。
-試しにresolutionを1024にしてみたけど動いている。時間は1時間半らしい。
-
-&color(#ff0000){バグがあって正常終了に見えても学習していないので、直るまでは、--xformersを消してbatch_size=1にしたほうが良さそう。}
-どうせすぐ直るだろうと思って様子見してたけどそんなことはなかった・・・。
+試しにresolutionを1024にしてみたけど動いている。時間は45分くらい。
+学習されていない不具合があったが直っていた。
 
 accelerate config の設定内容は
  accelerate launch --mixed_precision=fp16

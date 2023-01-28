@@ -145,6 +145,7 @@ accelerate config
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/IEAf9r1tqK.png)
 **キャプションの最初のトークンを保持する?: 
 キャプションを付けた場合フォルダ名のインスタンスプロンプトが無効になる~~のでキャプションファイルの先頭にインスタンスプロンプトを自分で書く必要がある。~~インスタンスプロンプトが消費するトークン数を次のkeep at front? に入力するとシャッフルされないらしい。 コメント欄に詳しく書いてある  
+1111を起動せずにトークン数を調べたいならNovelAIの[[Tokenizer>>https://novelai.net/tokenizer]]を使うと便利。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/kMrIwfMsJE.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/SKOgINqr6w.png)
 **warmup ratio 使う?: 学習の最初だけ学習率を下げる機能
