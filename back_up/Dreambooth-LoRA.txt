@@ -2,6 +2,7 @@
 * 概要
 Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
 雑に言うとDreamboothの小さくて速いやつ
+''作成方法はいろいろある。''ここでは kohya_ss版とそのフロントエンドについて雑に書いてある
 *参考資料
 https://rentry.org/lora_train
 クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
@@ -102,8 +103,11 @@ accelerate config
 クリックして展開 アップデートなどで内容は変わる
 わからんパラメータが出たらcancelを押しとけばデフォルト値が入る。抜けがあったらスレで質問よろ。
 [+]
-**ターミナルとかパワーシェルにコマンドを打つ
+**ターミナルとかパワーシェルにコマンドを打つか、run_popup.batから実行する
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/yVzXCg9crC.png)
+----
+**設定ファイルを読み込む?
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ceVWQWf9Uj.png)
 ----
 **学習元のモデルを選ぶ
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/jxCNF4YB2L.png)
@@ -118,11 +122,17 @@ accelerate config
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/d_LHSt9yQv.png)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/Pm3ilZIP1a.png)
 ----
+**設定をjson形式で保存する?
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1LwRQpGmTB.png)
+----
 **正則化画像のあるフォルダを選ぶ 使わないときは「いいえ」
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/KXO6r5NWEn.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/e99bPUOmNk.png)
 数字_名前 フォルダが見えるように
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/OYsxnrbqxq.png)
+----
+**学習を再開する?
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7Vg8xAPetT.png)
 ----
 **バッチサイズ:一度に何枚処理するか つよつよGPU以外なら1で
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/xcTV3i_Lbh.png)
@@ -130,6 +140,8 @@ accelerate config
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/DWVNJ2DpMd.png)
 **dimサイズ: みんな128をつかっとるらしい
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/I75XLmK3_t.png)
+**アルファ: dimサイズと同じがいいらしい
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vZVRRTw9ES.png)
 **学習の解像度: 512で。RTX4090か超強クラウドGPUなら 768 もいける
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ttb3qyi0Ya.png)
 ----
@@ -144,8 +156,7 @@ accelerate config
 **キャプションをシャッフルする?: する
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/IEAf9r1tqK.png)
 **キャプションの最初のトークンを保持する?: 
-キャプションを付けた場合フォルダ名のインスタンスプロンプトが無効になる~~のでキャプションファイルの先頭にインスタンスプロンプトを自分で書く必要がある。~~インスタンスプロンプトが消費するトークン数を次のkeep at front? に入力するとシャッフルされないらしい。 コメント欄に詳しく書いてある  
-1111を起動せずにトークン数を調べたいならNovelAIの[[Tokenizer>>https://novelai.net/tokenizer]]を使うと便利。
+キャプションを付けた場合フォルダ名のインスタンスプロンプトが無効になる~~のでキャプションファイルの先頭にインスタンスプロンプトを自分で書く必要がある。~~作者のnoteによると「数値を指定するとキャプションの先頭から、指定した数だけのトークン（カンマ区切りの文字列）をシャッフルせず固定します。」~~キャプションの先頭からカンマ区切りで判定されるので 「zkz, 1girl, condom, ass, solo, black panties, one side up,」なら1でおk
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/kMrIwfMsJE.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/SKOgINqr6w.png)
 **warmup ratio 使う?: 学習の最初だけ学習率を下げる機能

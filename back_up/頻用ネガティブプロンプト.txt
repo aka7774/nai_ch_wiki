@@ -2,6 +2,7 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|bad anatomy,disfigured,poorly drawn,deformed,mutation|悪い解剖学、変形、不十分な描画、変形、突然変異|身体の形を不格好にさせないために使う。身体の部位と組み合わせて使っても良い||
 |tsurime,smirk,|ツリ目|さらに通常プロンプトにtareme,smileでツリ目がかなり出にくくなる(出ないとは言っていない)。ネガティブにsmirkを入れるだけでも効果あり||
 |middle age,adult,mother,mature female, milf|おとな|特にリアル系のモデルで多い、「なぜか顔だけが急に老け込む現象」の対策として、大人系の単語をネガティブにいれる。左記プロンプトをまとめて2.0倍くらいで入れちゃって、あとは通常のプロンプトにbeautiful faceを入れて強度を調整すれば大抵は対処できる。||
 |lipstick|口紅|一部の版権キャラ（特に名前を指定するだけで大体出てくるキャラ）を生成する際、口まわりが赤くなるのを抑える用||
@@ -40,4 +41,11 @@
 |solo_focus|1人に注目|複数人を満遍なく移したい時に入れる||
 |looking_at_viewer|視線が絵を見ている人に向いている|ネガティブに入れるとほかの方向を向いた絵がでる確率がかなり高まる 日常をスナップショット的に撮りたい場合用||
 |blush|赤面|赤面させたくない場合||
+|missing fingers,missing limb,missing digit,missing legs,disappearing arms|指の欠落、手足の欠落、指の欠落、脚の欠落、腕の消失|手足が消えにくくなる||
+|extra limb,extra limbs|余分な手足|余分な手足が増えにくくなる||
+|worst quality,low quality,lowres|最悪の品質、低品質、低解像度|画像の品質が良くなりやすくなる high qualityタグの反対||
+|fused fingers,fused limb,bad hands,|融合した指、融合した四肢,悪い手|手足が癒着しにくくなる||
+|long neck,long body|長い首、長い胴体|身体の長さを適切にすることで、顔が見切れにくくなる||
+|text,title,signature,watermark|テキスト、タイトル、署名、透かし|画像に文字ができにくくなる||
+|jpeg artifacts,blurry|jpeg アーティファクト、ぼやけ|画像にボヤけやつぶつぶが出にくくなる||
 |}

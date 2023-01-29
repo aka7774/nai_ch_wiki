@@ -146,10 +146,16 @@ http://127.0.0.1:7860/
 と指定することで xformers を再インストールできる。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Troubleshooting#cuda-error-no-kernel-image-is-available-for-execution-on-the-device-after-enabling-xformers
 
+** --disable-nan-check
+NaNチェックを無効にして生成時に出るNansExceptionで画像生成が止まらないようにする。
+おそらく従来どおりの黒画像が出るようになると思う。
+
 ** (削除) --deepdanbooru
 
 img2imgでDeepdanbooruを使う。画像からDanbooruタグを推定する機能。
 標準機能になったのでコマンドラインオプションは不要になりました。
+
+
 * PYTORCH_CUDA_ALLOC_CONF
 
 VRAM不足の時に使えそうだけど最適な値はよくわからん

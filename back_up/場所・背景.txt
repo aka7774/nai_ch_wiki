@@ -36,6 +36,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|sewer|下水道|下水道となっているが、画像のようにパイプを入れないと真面な画像が出ない。その為、別のプロンプトとしてindustrial pipeを入れる事を推奨する|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/76l7jUqItB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/76l7jUqItB.png]]|
 |shopping mall|ショッピングモール||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9sKLWeCjoV.png)|
 |prison|刑務所|単体だけでは出てこない事が多い|[[https://image02.seesaawiki.jp/n/h/nai_ch/JrlrUTbbzR.png]] [[https://image02.seesaawiki.jp/n/h/nai_ch/SyZmx9y73o.png]] [[https://image01.seesaawiki.jp/n/h/nai_ch/iwSz0ktKtt.png]]|
 |President's office|社長室|組織で一番偉い人の執務室の雰囲気。ファンタジー系でも結構いけると思う。|https://image01.seesaawiki.jp/n/h/nai_ch/tMyKhMV_77.png|
@@ -171,6 +172,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|sapporo|札幌||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hJRdBr8zUi-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/hJRdBr8zUi.png]]|
 |ariake|有明|これにcityを付けた場合、東京都江東区の有明（レインボーブリッジやビッグサイトみたいなものが併設される）。countrysideを付けた場合、長野県安曇野市の有明（北アルプスと田園が合わさった安曇野の景色みたいなもの）。seaを付けた場合、長崎県の有明海が出る。強さは長野県有明＞東京有明＞有明海。東京有明にはたまに北アルプスが附属してくる。有明海には北アルプスに加え、たまにレインボーブリッジが附属してくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_boKkaUv85-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_boKkaUv85.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RDkRprZ9uc-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/RDkRprZ9uc.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yXD9Z36H2F-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yXD9Z36H2F.png]]|
 |enoshima|江の島|一般的な島の風景か、島から見た都市部みたいな風景が出る。なお、人物とともに生成する際、画風が青春ブタ野郎にほぼ固定される。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N6qwANCQtS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/N6qwANCQtS.png]]|
 |tsukiji, city,|築地|右の画像のような古民家と都市が融合したものか市場ぽいものが出る。上空写真の場合はお台場や豊洲のような臨海副都心の風景が出る。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RANpNOS17O-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/RANpNOS17O.png]]|
@@ -203,6 +205,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+| statue of liberty|自由の女神|ほぼ確実にニューヨークにある有名な像が描写されますが、outdoorなどで補強しないと室内にある絵になることがあります。|https://image01.seesaawiki.jp/n/h/nai_ch/76GiXa51q2.png|
 |St. Basil's Cathedral|聖ワシリイ大聖堂|モスクワの赤の広場に立つロシア正教会の大聖堂。|https://image02.seesaawiki.jp/n/h/nai_ch/hs_nLbRFiF.%20Basil's%20Cathedral,%20s-1099325675.png|
 |Neuschwanstein Castle|ノイシュヴァンシュタイン城|シンデレラ城のモデルにもなった有名なドイツの城。|https://image01.seesaawiki.jp/n/h/nai_ch/D9UlnNYzcr.png|
 |The White House|ホワイトハウス|誰もが知っている米国大統領の官邸兼公邸。「The」を付けないと成功率が下がります。|https://image01.seesaawiki.jp/n/h/nai_ch/90EaNMF90B.png|

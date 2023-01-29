@@ -1,10 +1,10 @@
 #contents
-*概要
+* 概要
 ローカルで使えるStable Diffusion周りのリソースデータの情報をまとめるところです。
 
 &#128317;：ダウンロードリンク
 
-*掲載方針
+* 掲載方針
 %%網羅は/sdmodelsなどに任せるとして、以下のようなものを載せる感じがいいかもしれない%%
 %%+スレで話題になったもの%%
 %%+特に有用なもの%%
@@ -12,7 +12,7 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 
 
 
-*リソース(一覧)
+*リソース(リンク集)
 +Civitai | Every model in one place｜https://civitai.com/　~~モデルアップロードプラットフォーム。見やすくてよき
 +https://rentry.org/sdmodels ~~%%ここ見ときゃいい感はある。膨大な量のリンク集%% 残念ながら2022年11月以降更新されていない。
 ++ githubに最新のソースが有りました https://github.com/questianon/sdupdates
@@ -21,7 +21,16 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 +https://rentry.org/hdgfaq ~~スレでよく話題に出るCondom Belt(Embed)とか各種有用Embed＆HyperNetwork等
 +https://gitgud.io/gayshit/makesomefuckingporn ~~スレでよく話題に出る4chanニキ達によるLoRa集
 
-* データセット
+* リソースコレクション
+- 240GB 1,400 LoRA files ほか
+4ちゃんのくそデカ学習モデルパック
+152: Anonymous  2023/01/27(金) 22:20:38.00   No.7147235
+"Oh! Were you that anon who ordered the 1,400 LoRA files? Here you are, sir."
+https://files.catbox.moe/st8j8e.torrent
+magnet:?xt=urn:btih:XFDFHICCEVQ6IXQXRSBBT7SN5SC6RWSI&amp;dn=lora-torrent&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce
+
+
+*データセット
 - 学習に使用するデータセット
 
 ** Pixiv
@@ -31,7 +40,7 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 
 
 
-*モデル
+* モデル
 - 初期にスレで話題になった代表的なモデルを紹介。
 - URLのコピーは赤丸を右クリック
 - URLに resolve が入ってるのが正しい
@@ -367,3 +376,62 @@ https://majinai.art/i/Bpd9J6P.png
 とはいえ手コキ系なんで指回り安定せんし、POV構図以外はあんまし有用やないかもしれへんから、適当に遊んでくれよな！
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/IHsCi1MS17-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/IHsCi1MS17.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6h4RoyRT4x-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6h4RoyRT4x.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aZkH0oMggB-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/aZkH0oMggB.png]]
+
+**138スレ585 足コキLoRA 最新版
+https://fate.5ch.net/test/read.cgi/liveuranus/1674833233/585
+https://13.gigafile.nu/0204-k0540b866f5d8c7fa0477f3420aee904c
+=|BOX|
+585今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a788-fqdE)2023/01/28(土) 22:45:20.07ID:DKpM3FzX0
+前回お試しに作ったときに何人かレス付けてくれたから需要あると見て後ろから足コキLoRA最新版上げとくやで
+ちなみに後ろからと言っても女の子が男の体の上に乗ったり、普通の足コキになることもある
+重みは0.8推奨や、デフォだとだいぶ絵柄崩れるで
+後はmaginaiのサンプル参考にしてくれや
+
+https://13.gigafile.nu/0204-k0540b866f5d8c7fa0477f3420aee904c
+
+https://majinai.art/i/MckojgK
+https://majinai.art/i/hBkQk2z
+https://majinai.art/i/-cuu2cI
+https://majinai.art/i/paaebVz
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SIUyY0GzBZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SIUyY0GzBZ.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cfTUWosNZd-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cfTUWosNZd.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kBhsQHRXyF-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/kBhsQHRXyF.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gznZzVbMsK-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gznZzVbMsK.png]]
+
+**138スレ662,663,670,690 kitanaidorodoro
+https://fate.5ch.net/test/read.cgi/liveuranus/1674833233/662-690
+https://files.catbox.moe/ccxeqw.zip
+=|BOX|
+663今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 2b1e-+rQD)2023/01/29(日) 00:37:15.16ID:4jNn/7LP0
+画像の貼り方間違えたすまんやで…
+v2A
+https://imgur.com/ooYF1AN.png
+https://imgur.com/04JLFHu.png
+v3C
+https://imgur.com/td6FnsJ.png
+https://imgur.com/unAGMRn.png
+||=
+
+&ref(https://imgur.com/ooYF1AN.png,200) &ref(https://imgur.com/04JLFHu.png,200)
+
+&ref(https://imgur.com/td6FnsJ.png,200) &ref(https://imgur.com/unAGMRn.png,200)
+
+=|BOX|
+690今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 2b1e-+rQD)2023/01/29(日) 01:21:16.55ID:4jNn/7LP0
+axfcなんかアップロード失敗してたから教えてもらったcatboxにアップしたで
+https://files.catbox.moe/ccxeqw.zip
+
+Loraまだあんまり慣れてないから出来は良くないと思う
+一応使い方のtxt入れといたけどもし良い使い方とかあったら教えてクレメンス
+||=
+
+**139スレ35 ピロテースLoRa
+https://fate.5ch.net/test/read.cgi/liveuranus/1674974603/35
+https://huggingface.co/nanashisan/LoRa_pirotess
+=|BOX|
+35今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa47-AirN)2023/01/29(日) 16:52:12.81ID:AsbRkRLIa
+正則化画像検証に作ったloRAアップしとくでー
+https://huggingface.co/nanashisan/LoRa_pirotess/tree/main
+https://majinai.art/i/qUUmaoi.png
+
+今日は&#129303;の機嫌が良えんで普通にアップロード出来たで
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/iYHXzIT0Z6-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/iYHXzIT0Z6.png]]

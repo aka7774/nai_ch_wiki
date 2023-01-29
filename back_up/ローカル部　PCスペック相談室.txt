@@ -60,6 +60,8 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4090|24GB|Core i7-12700K|8|8.73|--xformers --opt-channelslast --no-half-vae|PL70% + Core clock+150MHz, Batch count 2, Batch size 5, live preview&gridなし, torch: 1.13.1+cu117, cudnn 8.6|
+|RTX 3080|10GB|Core i7-12700K|17|17.95|--xformers --opt-channelslast --no-half-vae|PL85% + Core clock+120MHz, Batch count 2, Batch size 5, gridなし, torch: 1.13.1+cu117とcudnn 8.6で早くなったかもしれない|
 |RTX 3060|12GB|Ryzen 9 3900XT||42.47|--opt-channelslast --xformers|プレビュー：Approx cheap。4Stepごと。Torch active/reserved: 2521/2868 MiB,&#160;Sys VRAM: 5173/12288 MiB。プレビューなしで41.11s。--xformersのみで45.65s(--opt-channelslast効き目あり?)|
 |RTX 3090|24GB|Core i7-12700K|18秒|17.16|--xformers --opt-channelslast --administrator|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境~~torch: 1.13.1+cu117,xformers: 0.0.16rc425|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.77|xformers opt-channelslast|pytorch2.0に更新したが言うほど速くならなかった。OCすると26.22s ~~ batch count 5 batch size 2|
