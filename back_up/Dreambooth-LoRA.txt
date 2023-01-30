@@ -82,6 +82,7 @@ accelerate config
 
 ***コマンドライン版を使う場合
 + lora_train_command_line.py にパラメーターを書く
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/C1tEUj_9N8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/C1tEUj_9N8.png]]
 + run_command_line.batを実行
 + 出来上がりを待つ
 
@@ -170,10 +171,11 @@ last.safetensors というファイルができる
 このスクリプトではログは一切残らないのでわかりやすい名前にリネームしておく
 追加学習するときはこのファイルを指定する
 [END]
-動画(2023-01-24) すぐにアプデで役に立たなくなるが一応
+動画(2023-01-30) すぐにアプデで役に立たなくなるが一応
+字幕がめんどいのでそのうちテキストで書く・・・とおもう
 わからんパラメータは キャンセルでデフォルト値が入る
 [+]
-&video(https://image01.seesaawiki.jp/n/h/nai_ch/ypwjUxQC6D.webm)
+&video(https://image02.seesaawiki.jp/n/h/nai_ch/Kr6H7y5ZXq.webm)&video(https://image01.seesaawiki.jp/n/h/nai_ch/ypwjUxQC6D.webm)
 [END]
 *学習用画像を置くフォルダの配置
 -作者の解説が詳しい [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
