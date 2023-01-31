@@ -3,13 +3,27 @@
 Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
 雑に言うとDreamboothの小さくて速いやつ
 ''作成方法はいろいろある。''ここでは kohya_ss版とそのフロントエンドについて雑に書いてある
+
 *参考資料
-https://rentry.org/lora_train
-クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
-フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
+LoRA Training Guide　https://rentry.org/lora_train
+- 4chan有志によるLoRAトレーニング法ガイド（英語）
+LoRA 学習メモ　https://rentry.co/i5ynb
+- Lain・よしなが先生・野原ひろしLoRA作成者によるLoRAガイド（日本語）
+ソウリンちゃんLoRAの作成記録 https://rentry.co/sourin_chan
+- マルゼン式で作成したLoRA作成記録（日本語）
+　
+- クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
+- フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
 
 *他人の作ったモデルの導入
 [[Loraの使用方法>#apply_lora]]だけやればOK
+
+*エクステンション版もあるWebUI版
+ddPn08ニキが作ってくれた中身はkohya版WebUIがでたで。
+- エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
+- 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
+- WebUI割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
+-- https://github.com/ddPn08/kohya-sd-scripts-webui
 
 *あかちゃんLoraインストーラー
 
@@ -73,6 +87,72 @@ accelerate config
 - fp16
 ||=
 --初回セットアップ完了
+
+*学習用画像を置くフォルダの配置
+-作者の解説が詳しい [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
+
+-フォルダの配置例:
+[-]
+※要するに<繰り返し回数>_<インスタンスプロンプト>にリネームした学習画像データのフォルダは直接指定しないでねって話
+例えば↓こういうこと
+&#10060;E:\kohya_ss\TrainDatas\001\img\40_kdy 1girl
+&#128994;E:\kohya_ss\TrainDatas\001\img
+間違うと画像が見つかりませんと怒られる
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8v9xToIuUR.png)
+[END]
+-同時に10まで概念を学習できるが、少なくとも1つはフォルダが必要。
+-フォルダの名前は <繰り返し回数>_<インスタンスプロンプト>
+--<繰り返し回数> 繰り返し回数×学習用画像の枚数を1セット(1 epoch)として学習する 
+※注 学習用の画像が50枚ある場合、繰り返し回数を20 にすると 20 x 50 = 1000 ステップ学習する
+--<インスタンスプロンプト> 呼び出し用のキーワード 英単語にない意味のないワードがよい 
+--キャプション ファイルは必須です。そうでない場合、LoRA は概念名をキャプションとして使用してトレーニングを行います。
+--キャプションについては以下
+
+*キャプションを付ける
+作者の詳しい画像付き説明 [[https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md]]
+自動でつけてくれる・・・のではなく一応コマンド打たないとダメらしい。詳しくは上記
+**WD1.4 Taggerで作成
+先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)
+[+]画像
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kbCJ6oEi6E.png)
+[END]
+Web UI に拡張機能 stable-diffusion-webui-wd14-tagger [[https://github.com/toriato/stable-diffusion-webui-wd14-tagger>>https://github.com/toriato/stable-diffusion-webui-wd14-tagger]]をインストール
+「Tagger」タブの「Batch from directly」
+-入力ファイル:学習用画像の入っているフォルダ
+-Interrogator:wd-14convnext
+-アンダースコアの代わりにスペースを使用する:オン
+-括弧をエスケープする:オン
+[+]画像
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DGlOwfa65F.png)
+[END]
+Interrogateを押すと学習用画像のフォルダにタグの付いた .txt ファイルが生成される
+[+]画像
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vrFirugtW9.png)
+[END]
+**キャプションの細かい加工
+https://github.com/starik222/BooruDatasetTagManager や スレ130の>>346>>949のツールで
+余計なタグを削ったりこだわりのタグ追加をする
+*そもそも学習用画像ってどうやって加工するの
+本文で説明している kohya_ss 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
+背景の切り抜きは・・・画像の大きさが揃ってないとめんどくさいなどうしよう・・・
+
+キャラの切り出しだけやったら3Dペイント(Win10なら標準、11では標準からリストラされたけどストアにおるで)のマジック選択でええ感じに切り抜きやすいからそこからgimpなりで微調整。
+一枚一枚やんのめんどくさい言うんやったらABG_extension言うのが出たんでつこてみたらええんとちゃうかな…？しらんけど
+*正則化画像
+キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが
+詳しくはわからないので誰か書いてクレメンス
+
+**透明のpngを正則化画像にする
+Web UI に拡張機能をインストールする [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
+Generate TransparentIMG タブで
+出力フォルダ:正則化画像の保存先
+number_of_generation:作成する枚数
+を入力して実行
+[+]画像
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/l8x2Fjrdz7.png)
+[END]
+
 *学習の手順
 **Windowsの場合
 ***ポップアップ版を使う場合
@@ -177,70 +257,6 @@ last.safetensors というファイルができる
 [+]
 &video(https://image02.seesaawiki.jp/n/h/nai_ch/Kr6H7y5ZXq.webm)&video(https://image01.seesaawiki.jp/n/h/nai_ch/ypwjUxQC6D.webm)
 [END]
-*学習用画像を置くフォルダの配置
--作者の解説が詳しい [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
-
--フォルダの配置例:
-[-]
-※要するに<繰り返し回数>_<インスタンスプロンプト>にリネームした学習画像データのフォルダは直接指定しないでねって話
-例えば↓こういうこと
-&#10060;E:\kohya_ss\TrainDatas\001\img\40_kdy 1girl
-&#128994;E:\kohya_ss\TrainDatas\001\img
-間違うと画像が見つかりませんと怒られる
-
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8v9xToIuUR.png)
-[END]
--同時に10まで概念を学習できるが、少なくとも1つはフォルダが必要。
--フォルダの名前は <繰り返し回数>_<インスタンスプロンプト>
---<繰り返し回数> 繰り返し回数×学習用画像の枚数を1セット(1 epoch)として学習する 
-※注 学習用の画像が50枚ある場合、繰り返し回数を20 にすると 20 x 50 = 1000 ステップ学習する
---<インスタンスプロンプト> 呼び出し用のキーワード 英単語にない意味のないワードがよい 
---キャプション ファイルは必須です。そうでない場合、LoRA は概念名をキャプションとして使用してトレーニングを行います。
---キャプションについては以下
-
-*キャプションを付ける
-作者の詳しい画像付き説明 [[https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md]]
-自動でつけてくれる・・・のではなく一応コマンド打たないとダメらしい。詳しくは上記
-**WD1.4 Taggerで作成
-先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)
-[+]画像
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kbCJ6oEi6E.png)
-[END]
-Web UI に拡張機能 stable-diffusion-webui-wd14-tagger [[https://github.com/toriato/stable-diffusion-webui-wd14-tagger>>https://github.com/toriato/stable-diffusion-webui-wd14-tagger]]をインストール
-「Tagger」タブの「Batch from directly」
--入力ファイル:学習用画像の入っているフォルダ
--Interrogator:wd-14convnext
--アンダースコアの代わりにスペースを使用する:オン
--括弧をエスケープする:オン
-[+]画像
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DGlOwfa65F.png)
-[END]
-Interrogateを押すと学習用画像のフォルダにタグの付いた .txt ファイルが生成される
-[+]画像
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vrFirugtW9.png)
-[END]
-**キャプションの細かい加工
-https://github.com/starik222/BooruDatasetTagManager や スレ130の>>346>>949のツールで
-余計なタグを削ったりこだわりのタグ追加をする
-*そもそも学習用画像ってどうやって加工するの
-本文で説明している kohya_ss 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
-背景の切り抜きは・・・画像の大きさが揃ってないとめんどくさいなどうしよう・・・
-
-キャラの切り出しだけやったら3Dペイント(Win10なら標準、11では標準からリストラされたけどストアにおるで)のマジック選択でええ感じに切り抜きやすいからそこからgimpなりで微調整。
-一枚一枚やんのめんどくさい言うんやったらABG_extension言うのが出たんでつこてみたらええんとちゃうかな…？しらんけど
-*正則化画像
-キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが
-詳しくはわからないので誰か書いてクレメンス
-
-**透明のpngを正則化画像にする
-Web UI に拡張機能をインストールする [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
-Generate TransparentIMG タブで
-出力フォルダ:正則化画像の保存先
-number_of_generation:作成する枚数
-を入力して実行
-[+]画像
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/l8x2Fjrdz7.png)
-[END]
 
 *その他
 lora_train_command_line.py のパラメータ記入の補助ツール
@@ -261,4 +277,6 @@ H:\stablediffusion\stable-diffusion-webui\extensions\sd-webui-additional-network
 Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
 一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される
 最新のLora(0.4.0)で作ったやつも使える
+
+
 

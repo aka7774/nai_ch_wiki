@@ -222,6 +222,8 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 |25〜28秒|アスカを生成してシードをランダムにし十枚生成　日本時間で平日23:50頃に実行|
 [END]
 
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qkFzlFhZ4r-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qkFzlFhZ4r.png]]
+
 * 注意
 
 ** RTX40シリーズの注意事項

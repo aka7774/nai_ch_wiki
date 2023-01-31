@@ -35,10 +35,15 @@ https://gist.githubusercontent.com/aka7774/bb306094dae726a32fbb6c617ddce2c0/raw/
 
 * 一覧
 
-** sd-webui-supermerger
+** sd-webui-lora-block-weight
+- https://github.com/hako-mikan/sd-webui-lora-block-weight
+- Loraを適用する際、強さを階層ごとに設定できます
+- Loraは強力なツールですが、時に扱いが難しく、影響してほしくないところにまで影響がでたりします。このスクリプトではLoraを適用する際、適用度合いをU-Netの階層ごとに設定することができます。これを使用することで求める画像に近づけることができるかもしれません。
 
+** sd-webui-supermerger
 - https://github.com/hako-mikan/sd-webui-supermerger
 - ネ申
+- このextentionではモデルをマージした際、保存せずに画像生成用のモデルとして読み込むことができます。 これまでマージしたモデルはいったん保存して気に入らなければ削除するということが必要でしたが、このextentionを使うことでHDDやSSDの消耗を防ぐことができます。
 
 133スレ184
 =|BOX|
@@ -53,6 +58,10 @@ web-uiのキャッシュ機能を使えば1秒でマージの切り替えがで�
 
 - https://github.com/arenatemp/stable-diffusion-webui-model-toolkit
 - fp16, safetensors, pruned, VAE内蔵すべてに対応してそう
+- モデルデータのチェック
+- クリーニング（配布されている多くのモデルは非常に肥大化しており、そのサイズのほとんどは冗長または役に立たないデータです。たとえば、Anything-v3.0 は 7.7 GB で、別の 800 MB VAE が必要です。これらを組み合わせて、正しい VAE を含む2.1GB スタンドアロン モデルに統合できます。）
+- モデルデータ内のコンポーネントの置換・抽出
+- マージ問題の破損モデルデータの修復も出来る
 
 ** sd-webui-model-converter
 
@@ -77,6 +86,8 @@ web-uiのキャッシュ機能を使えば1秒でマージの切り替えがで�
 
 ** U-Net階層別マージ
 bbc-mc/sdweb-merge-block-weighted-gui: Merge models with separate rate for each 25 U-Net block (input, middle, output). Extension for Stable Diffusion UI by AUTOMATIC1111 - https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
+- →[[階層マージ]]
+- 公式Extensionsになりました→[[ローカルのExtensions]]
 
 ** カスタムモデルのキーワードを自動入力するWEBUI拡張機能
 mix1009/model-keyword: Automatic1111 WEBUI extension to autofill keyword for custom stable diffusion models. - https://github.com/mix1009/model-keyword

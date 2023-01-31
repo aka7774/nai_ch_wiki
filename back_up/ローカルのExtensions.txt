@@ -49,118 +49,6 @@ https://i.imgur.com/Wj3ihJd.png
 
 deepl無料アカウントでapi制限キツいから更新は週1の予定 
 
-* 一覧(新着順)
-
-** Kohya-ss Additional Networks
-
-script 	Web UIで、そのスクリプトで学習させたネットワーク（LoRA）を使って画像を生成できるようにする。
-
-Added: 2023-01-06
-	
-** Model Converter
-
-script, tab 	fp16/bf16のノーエマ/エマ専用セーフティセンサに機種変更する。
-
-Added: 2023-01-05
-	
-** Add image number to grid
-
-script 	画像の番号をグリッド内の画像に追加します。
-
-Added: 2023-01-01
-	
-** Prompt Generator
-
-script, tab 	distilgpt2 を使用して、小さなベースプロンプトからプロンプトを生成する。モデルの追加制御を行うタブを追加する。
-
-Added: 2022-12-30
-	
-** quick-css
-
-script, tab 	カスタム.cssファイルを素早く選択して適用し、uiの外観や要素の配置をカスタマイズするための拡張機能です。
-
-Added: 2022-12-30
-	
-** model-keyword
-
-script 	一致するキーワードをプロンプトに自動的に挿入します。この拡張機能を更新すると、最新のモデル＋キーワードのマッピングを取得できます。
-
-Added: 2022-12-28
-	
-** ABG_extension
-
-script 	背景を自動で除去します。アニメ画像用に微調整されたonnxモデルを使用。GPUで動作します。
-
-Added: 2022-12-24
-	
-- Scriptで選択して使う
-- imgとmaskを追加で保存してくれる
-
-** openOutpaint extension
-
-script, tab 	openOutpaintのフルUIが表示されるタブです。apiフラグ付きで実行。
-
-Added: 2022-12-23
-	
-** Save Intermediate Images
-
-script 	PR参照 https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/5464
-
-Added: 2022-12-22
-	
-** Gelbooru Prompt
-
-script 	AUTOMATIC1111のStable Diffusion webuiに保存されたゲルボーイイメージのタグを取得する拡張機能
-
-Added: 2022-12-20
-	
-** Diffusion Defender
-
-script 	セミプライベートおよびパブリックインスタンスのプロンプトブラックリスト、検索、置換。
-
-Added: 2022-12-20
-	
-** Preset Utilities
-
-script 	ui用プリセットユーティリティツール。カスタムスクリプトとの互換性を提供します。(制限あり)
-
-Added: 2022-12-19
-	
-** Riffusion
-
-script, tab 	Riffusionモデルを使って、gradioで音楽を制作する。オリジナルの補間技法を再現するには、プロンプトの旅行延長出力フレームをriffusionタブに入力します。
-
-Added: 2022-12-19
-	
-** DH Patch
-
-script 	D8ahazardによるランダムパッチ。v2、2.1モデル用の設定YAMLファイルの自動ロード、2.1モデルでの注意を修正するlatent-diffusionのパッチ（no-halfなしの黒い箱）、その他思いついたものすべて。
-
-Added: 2022-12-16
-	
-** Config-Presets
-
-script 	txt2imgとimg2imgタブのUIプリセット設定を変更できるように、設定可能なドロップダウンを追加しました。
-
-Added: 2022-12-13
-	
-** NSFW checker
-
-script 	NSFW画像を黒に置き換えます。
-
-Added: 2022-12-10
-	
-** Infinity Grid Generator
-
-script 	パラメータを指定したyamlファイルを構築し、無限次元のグリッドを生成する。フィールドに説明テキストを追加する機能を内蔵。使い方の詳細はreadmeを参照。
-
-Added: 2022-12-09
-	
-** embedding-inspector
-
-script, tab 	任意のトークン(単語)やTextual-Inversionの埋め込みを検査し、どの埋め込みが類似しているかを調べることができます。エンベッディングの混合、修正、作成は数秒でできます。
-
-Added: 2022-12-06
 
 * 一覧(順不同)
 
@@ -218,6 +106,10 @@ Shivam Shiaro氏のレポを元に、低VRAMのGPUに最適化したDreambooth�
 
 - キーフレーム可能なシーケンス、動的な数学パラメータ（プロンプトの内部も）、動的なマスキング、深度推定、ワープをサポートする、2Dおよび3Dアニメーションのための広範囲なスクリプトであるDeforumの公式移植版です。
 
+** Animator
+
+- 
+
 ** Artists to study
 
 アーティストが生成した写真をカテゴリー別にギャラリーとして表示します。
@@ -237,6 +129,9 @@ Kritaのプラグインです。
 ** training-picker
 
 動画からキーフレームを自動抽出し、そのフレームを手動で512x512クロップしてモデル学習に使用できるタブをWebuiに追加しました。
+
+** Unprompted
+
 
 ** StylePile
 
@@ -267,19 +162,32 @@ NovelAIで使用しているプロンプトをWebUIで使用できるように�
 
 CLIPモデルがどのようにテキストをトークン化するかをプレビューできるタブを追加しました。
 
+** Embeddings editor
+
+スライダーを使って手動でテキスト反転埋込を編集できるようにします。
+
+** Randomize
+
+txt2img の生成時にランダムなパラメータを許可します。このスクリプトは、選択されたスクリプトに関係なく、すべての世代で処理されます。つまり、このスクリプトは AUTOMATIC1111/stable-diffusion-webui-wildcards などの他のスクリプトでも機能することになります。
+
 ** ja_JP Localization
 
 - UIを日本語化する
 - 以前に一時期だけ本体に入ってた機能がExtensionsに移動した。
 - 以前はプロンプトの強弱を変えるキーボードショートカットが利かなくなっていたが直ったのか？
 
+** embedding-inspector
+
+script, tab 	任意のトークン(単語)やTextual-Inversionの埋め込みを検査し、どの埋め込みが類似しているかを調べることができます。エンベッディングの混合、修正、作成は数秒でできます。
+
+Added: 2022-12-06
+
+
+** Asymmetric Tiling
+
 ** Latent Mirroring
 
 潜像にミラーリングやフリップを施し、微妙なバランスの構図から完璧な反射まで表現することができる
-
-** Embeddings editor
-
-スライダーを使って手動でテキスト反転埋込を編集できるようにします。
 
 ** seed travel
 
@@ -294,17 +202,22 @@ AUTOMATIC1111/stable-diffusion-webui 用の、シード間に存在する画像�
 
 - "photo of (cat:1~0) or (dog:0~1)" と入力すると猫から犬に変化する動画が作れるものらしい？
 
-** Detection Detailer
-
-Stable Diffusion Web UI のためのオブジェクト検出と自動マスクの拡張機能。
-
-- マスクの自動生成っぽい
-
 ** prompt travel
 
 AUTOMATIC1111/stable-diffusion-webui の拡張スクリプトで、潜在空間内のプロンプト間を移動できるようにした。
 
 - プロンプトやstepsの細かい差を動画にして見るもの？
+
+** Sonar
+
+** Detection Detailer
+
+Stable Diffusion Web UI のためのオブジェクト検出と自動マスクの拡張機能。
+
+- マスクの自動生成っぽい
+- i2i等で役立つマスク自動生成。顔だけ、または人物のみに自動生成したマスクで処理ができる。
+
+** Batch Face Swap
 
 ** conditioning-highres-fix
 
@@ -317,10 +230,6 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/4530?sort=ne
 Highres fixしたときに人物が融合したりする問題を解決する拡張機能。公式リストに実装済み
 公式から引用した縦軸Denoise、横軸Cond Image mask weightの表。
 クソデカ画像注意：Webp：約3MB：[[https://image01.seesaawiki.jp/n/h/nai_ch/rWnETbnk4z.webp]]
-
-** Randomize
-
-txt2img の生成時にランダムなパラメータを許可します。このスクリプトは、選択されたスクリプトに関係なく、すべての世代で処理されます。つまり、このスクリプトは AUTOMATIC1111/stable-diffusion-webui-wildcards などの他のスクリプトでも機能することになります。
 
 ** Auto TLS-HTTPS
 
@@ -340,6 +249,14 @@ HTTPSの利用を簡単に、あるいは完全に自動で開始できるよう
 ** booru2prompt
 
 このSD拡張機能は、様々な画像ブーリアンからの投稿を、安定した拡散プロンプトに変えることができます。これは、彼らのAPIからタグのリストを引き出すことによって行われます。欲しい投稿へのリンクを自分でコピーペーストしたり、内蔵の検索機能を使ったりして、SDから離れることなくすべてを行うことができます。
+
+** Gelbooru Prompt
+
+script 	AUTOMATIC1111のStable Diffusion webuiに保存されたゲルボーイイメージのタグを取得する拡張機能
+
+Added: 2022-12-20
+
+
 
 ** Marge Board
 
@@ -363,6 +280,18 @@ HTTPSの利用を簡単に、あるいは完全に自動で開始できるよう
 
 MiDaSによる深度推定に基づき、img2img用のマスクを作成する。
 
+** ABG_extension
+
+script 	背景を自動で除去します。アニメ画像用に微調整されたonnxモデルを使用。GPUで動作します。
+
+Added: 2022-12-24
+	
+- Scriptで選択して使う
+- imgとmaskを追加で保存してくれる
+
+
+** Depth Image I/O
+
 ** Visualize Cross-Attention
 
 入力プロンプトに基づき、送信された入力画像のハイライトされたセクターを生成します。トークナイザー拡張と一緒に使用します。詳しくはReadmeをご覧ください。
@@ -374,6 +303,145 @@ DAAMとは、Diffusion Attentive Attribution Mapsの略です。注目テキス�
 ** Prompt Gallery
 
 キャラクターのプロンプトを含むyamlファイルを作成し、generateを押すと、単語の属性と修飾子によって素早くプレビューすることができます。
+
+** Infinity Grid Generator
+
+script 	パラメータを指定したyamlファイルを構築し、無限次元のグリッドを生成する。フィールドに説明テキストを追加する機能を内蔵。使い方の詳細はreadmeを参照。
+
+Added: 2022-12-09
+
+
+** NSFW checker
+
+script 	NSFW画像を黒に置き換えます。
+
+Added: 2022-12-10
+
+
+** Diffusion Defender
+
+script 	セミプライベートおよびパブリックインスタンスのプロンプトブラックリスト、検索、置換。
+
+Added: 2022-12-20
+
+
+** Config-Presets
+
+script 	txt2imgとimg2imgタブのUIプリセット設定を変更できるように、設定可能なドロップダウンを追加しました。
+
+Added: 2022-12-13
+	
+
+
+** Preset Utilities
+
+script 	ui用プリセットユーティリティツール。カスタムスクリプトとの互換性を提供します。(制限あり)
+
+Added: 2022-12-19
+
+
+** DH Patch
+
+script 	D8ahazardによるランダムパッチ。v2、2.1モデル用の設定YAMLファイルの自動ロード、2.1モデルでの注意を修正するlatent-diffusionのパッチ（no-halfなしの黒い箱）、その他思いついたものすべて。
+
+Added: 2022-12-16
+	
+
+
+** Riffusion
+
+script, tab 	Riffusionモデルを使って、gradioで音楽を制作する。オリジナルの補間技法を再現するには、プロンプトの旅行延長出力フレームをriffusionタブに入力します。
+
+Added: 2022-12-19
+
+
+** Save Intermediate Images
+
+script 	PR参照 https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/5464
+
+Added: 2022-12-22
+
+
+** openOutpaint extension
+
+script, tab 	openOutpaintのフルUIが表示されるタブです。apiフラグ付きで実行。
+
+Added: 2022-12-23
+
+
+** model-keyword
+
+script 	一致するキーワードをプロンプトに自動的に挿入します。この拡張機能を更新すると、最新のモデル＋キーワードのマッピングを取得できます。
+
+Added: 2022-12-28
+
+
+** Prompt Generator
+
+script, tab 	distilgpt2 を使用して、小さなベースプロンプトからプロンプトを生成する。モデルの追加制御を行うタブを追加する。
+
+Added: 2022-12-30
+
+
+** quick-css
+
+script, tab 	カスタム.cssファイルを素早く選択して適用し、uiの外観や要素の配置をカスタマイズするための拡張機能です。
+
+Added: 2022-12-30
+
+** Add image number to grid
+
+script:	画像の番号をグリッド内の画像に追加します。
+
+Added: 2023-01-01
+
+
+** Model Converter
+
+script, tab 	fp16/bf16のノーエマ/エマ専用セーフティセンサに機種変更する。
+
+Added: 2023-01-05
+
+** Kohya-ss Additional Networks
+
+script:	Web UIで、そのスクリプトで学習させたネットワーク（LoRA）を使って画像を生成できるようにする。
+
+Added: 2023-01-06
+
+** Ultimate SD Upscale
+
+** Stable Horde Worker
+
+** Stable Horde Client
+
+** Hypernetwork-Monkeypatch-Extension
+
+** Multiple Hypernetworks
+
+** Merge Block Weighted
+
+** haku-img
+
+** Promptgen
+
+** Discord Rich Presence
+
+** Steps Animation
+
+** Aesthetic Scorer
+
+** System Info
+
+** Pixelization
+
+** Instruct-pix2pix
+
+** Custom Diffusion
+
+** Fusion
+
+** cafe-aesthetic
+
 
 * 標準Scripts
 
