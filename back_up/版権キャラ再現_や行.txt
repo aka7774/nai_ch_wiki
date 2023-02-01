@@ -43,9 +43,10 @@
 ***　ゆるゆり
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|{yuru yuri,game cg},{{toshinou_kyouko}},{nanamori school uniform,sailor_dress,short over long sleeves,layered sleeves}, blonde hair,blue eyes,long hair, hair bow,hairband,solo,|lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality|ゆるゆり|歳納京子|Scale:7|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/s8FCw6jwpv.png)|
+|yuru yuri,{akaza akari}, double bun, red hair,bob cut,  short hair, purple eyes,tareme,solo,smile,~~{nanamori school uniform},sailor dress,short sleeve white jacket, short over long sleeves,layered sleeves, pleated skirt,tatami, shouji|anime,megami magazine,smirk,tsurime|ゆるゆり|赤座あかり||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/f2PmlCpSTH.png)|
+|{yuru yuri},{{toshinou_kyouko}},{game cg},official art, blonde hair,blue eyes,long hair,{bow hairband},solo,v-shaped eyebrows,smile,{nanamori school uniform,sailor dress,short sleeve white jacket, short over long sleeves,layered sleeves, pleated skirt}, |anime,megami magazine,smug,loli,|^|歳納京子|かなり不安定|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/YNoMytpj4S.png)|
+|{yuru yuri},{{yoshikawa chinatsu}},{{game cg}},{official art}, pink hair, blunt bangs, green eyes, hair bobbles,short hair,{{{huge afro twintails}}},solo,smile,~~{nanamori school uniform,sailor_dress,short sleeve white jacket,short over long sleeves,layered sleeves,pleated skirt}, tatami,shouji, |anime,megami magazine,large breasts,child,toddler,plump,drill hair, afro,wavy hair,|ゆるゆり|吉川ちなつ|ツインテを一発で出すのは困難~~seed値を取ってからhuge afro twintailsとネガティブのafro,wavy hairにそれぞれ強弱をつけて調整|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pX1O_b0zdO.png)|
 |{yuru yuri,game cg},{{furutani himawari}},{nanamori school uniform,sailor_dress,short over long sleeves,layered sleeves}, dark blue hair, brown eyes, hairband,{low low twintails,twin braids},large breasts,solo,|sunflower, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality|ゆるゆり|古谷向日葵|Scale:7|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N721kNNbr5.png)|
-|{yuru yuri,game cg},{{{yoshikawa chinatsu}}},{nanamori school uniform,sailor_dress,short over long sleeves,layered sleeves},short hair, pink hair, blunt bangs, green eyes, {tareme}, hair bobbles,small breasts,{{{{{afro twintails,huge puffs,huge twintails}}}}},solo,loli,|{{{afro,wavy hair}}},anime,{tsurime},akaza akari,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,|ゆるゆり|吉川ちなつ|Scale:7|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/h4Lz0wkxMb.png)|
 |{{{yuru yuri}}}, {{{oomuro sakurako}}}, &#91;fang], blonde hair, wavy hair, medium hair, blunt bangs, brown eyes,flat chest,{game cg},nanamori school uniform,sailor_dress,short over long sleeves,|longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,|ゆるゆり|大室櫻子|Scale:7|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DfqNB4CVYi.png)|
 |{yuru yuri}, {{{sugiura ayano}}},{high ponytail}, purple hair,long hair, &#91;&#91;ahoge]], brown eyes,{game cg},nanamori school uniform,sailor dress,short over long sleeves,|longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,|ゆるゆり|杉浦綾乃|Scale:7|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/n4hS4CwuuN.png)|
 |}
@@ -54,6 +55,8 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |}
+
+
 
 
 

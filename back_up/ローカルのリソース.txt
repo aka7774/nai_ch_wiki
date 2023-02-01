@@ -211,8 +211,8 @@ TextualInversionで悪い手の形を学習させて、Embeddingでネガティ�
 512x512、768x768、1024x1024の透明画像詰め合わせ　各1000枚ずつ
 https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
 
-*LORA
-→ローカル部[[Dreambooth-LoRA]]
+*スレ住民作成LoRA
+→LpRAとはなんぞや→ローカル部[[Dreambooth-LoRA]]
 
 **131スレ762 足コキの構図
 https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/762
@@ -552,4 +552,38 @@ https://mega.nz/folder/XJNQlQAT#cBAGRf5bJ4yJpVDOpUTQNg
 一応生成時の設定とか（今見たら微妙なのも混じってるけど）も置いといたで
 画像は勘弁な
 ||=
+
+**140スレ639 ガッフェlora
+https://fate.5ch.net/test/read.cgi/liveuranus/1675113816/639
+https://mega.nz/file/qdoz2B7S#NzplqEvFMFJkbDcJQ8Ts5DhEEHmZ9xYqtdnUzQc74g4
+=|BOX|
+639 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e79e-DkTl)[sage] 投稿日：2023/02/01(水) 12:03:22.09 ID:/LP0ULkm0
+ガッフェlora配布するで
+キャラloraと併用
+https://mega.nz/file/qdoz2B7S#NzplqEvFMFJkbDcJQ8Ts5DhEEHmZ9xYqtdnUzQc74g4
+
+huge breasts
+https://i.imgur.com/etL5lP3.png
+
+flat chest
+https://i.imgur.com/jRYDTXq.png
+https://i.imgur.com/buya0Ux.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TLm4jQphEK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TLm4jQphEK.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YUzYAjebIq-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YUzYAjebIq.png]]
+
+**140スレ859 ビースト衣装loRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1675113816/859
+https://huggingface.co/nanashisan/DGB
+=|BOX|
+859今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa47-AirN)2023/02/01(水) 22:17:52.05ID:pLBSKGDza
+ビースト衣装loRAアップしといたでー
+https://huggingface.co/nanashisan/DGB
+
+Cinnamon、7thAあたりアニメ調モデルが合うと思うで
+https://majinai.art/i/gwxsear.png
+https://majinai.art/i/9DHYuex.png
+https://majinai.art/i/ZYrxzCc.png
+https://majinai.art/i/bYmKn6C.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8i56aFdv5i-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/8i56aFdv5i.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/w8JyNVnNht-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/w8JyNVnNht.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5cGmMtA1MC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5cGmMtA1MC.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/q1IgAo12aM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/q1IgAo12aM.png]]
 

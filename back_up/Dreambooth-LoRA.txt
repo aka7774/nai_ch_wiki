@@ -1,8 +1,12 @@
 #contents
 * 概要
 Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
-雑に言うとDreamboothの小さくて速いやつ
-''作成方法はいろいろある。''ここでは kohya_ss版とそのフロントエンドについて雑に書いてある
+Dreamboothで広まった学習法。小さくて速いやつ。''作成方法はいろいろある。''
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png,400)>https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png]]
+他の学習法とどう違うねん？　reddit民によればこんな感じのイメージらしい。
+https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/
+VRAMが少なくても学習可能なkohya_ss版sd-scripts登場以来、sd-scriptsが主流となっている。
+このページではsd-scripts関連の情報について雑に書いてある
 
 *参考資料
 LoRA Training Guide　https://rentry.org/lora_train
@@ -11,6 +15,12 @@ LoRA 学習メモ　https://rentry.co/i5ynb
 - Lain・よしなが先生・野原ひろしLoRA作成者によるLoRAガイド（日本語）
 ソウリンちゃんLoRAの作成記録 https://rentry.co/sourin_chan
 - マルゼン式で作成したLoRA作成記録（日本語）
+Genshin Impact LoRA作成メモ https://rentry.org/genshin_lora
+- kohya-ss氏制作のSDスクリプト(https://github.com/kohya-ss/sd-scripts )で次のキャラのLoRAを作成した。ポップアップ版使用。（日本語）
+https://rentry.org/lora-tag-faq
+- lora training tagging faq（英語）
+https://rentry.org/dsvqnd
+- キャラクター学習のタグ付け一例（日本語）
 　
 - クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
 - フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
@@ -18,26 +28,7 @@ LoRA 学習メモ　https://rentry.co/i5ynb
 *他人の作ったモデルの導入
 [[Loraの使用方法>#apply_lora]]だけやればOK
 
-*エクステンション版もあるWebUI版
-ddPn08ニキが作ってくれた中身はkohya版WebUIがでたで。
-- エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
-- 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
-- WebUI割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
--- https://github.com/ddPn08/kohya-sd-scripts-webui
-
-*あかちゃんLoraインストーラー
-
-あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
-start.batと同じフォルダに入れて実行してください
-
-- コマンドライン用
--- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts.bat
--- https://github.com/aka7774/elemental_code/blob/main/tools/run_sd_scripts.bat
-- ダイアログ用(みかんせい)
--- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts_easy_training.bat
--- lora_train_popup.pyはワイの知能では使いこなせなかった
-
-*準備
+*インストール、初回セットアップ編
 1. エクスプローラーを開き、適当なフォルダ内で右クリック→git bash hereでgitのターミナルを開き、以下のコマンドを実行する
 > git clone https://github.com/kohya-ss/sd-scripts.git
 2. https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から~~ lora_train_popup.py~~ lora_train_command_line.py~~ run_popup.bat~~ run_command_line.bat~~をダウンロード~~注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
@@ -88,6 +79,18 @@ accelerate config
 ||=
 --初回セットアップ完了
 
+*あかちゃんLoraインストーラー
+
+あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
+start.batと同じフォルダに入れて実行してください
+
+- コマンドライン用
+-- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts.bat
+-- https://github.com/aka7774/elemental_code/blob/main/tools/run_sd_scripts.bat
+- ダイアログ用(みかんせい)
+-- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts_easy_training.bat
+
+
 *学習用画像を置くフォルダの配置
 -作者の解説が詳しい [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
 
@@ -105,11 +108,12 @@ accelerate config
 -フォルダの名前は <繰り返し回数>_<インスタンスプロンプト>
 --<繰り返し回数> 繰り返し回数×学習用画像の枚数を1セット(1 epoch)として学習する 
 ※注 学習用の画像が50枚ある場合、繰り返し回数を20 にすると 20 x 50 = 1000 ステップ学習する
---<インスタンスプロンプト> 呼び出し用のキーワード 英単語にない意味のないワードがよい 
+--<インスタンスプロンプト> クラス 呼び出し用のキーワード クラスは''英単語にない意味のないワード''がよい 
+-- 上記kohya氏のサンプルだと「20_sls frog」　脳死で真似するなら 繰り返し回数_意味のないワード WEBUIでプロンプトとして書きたい単語 で設定しておく
 --キャプション ファイルは必須です。そうでない場合、LoRA は概念名をキャプションとして使用してトレーニングを行います。
 --キャプションについては以下
 
-*キャプションを付ける
+*キャプション・タグを付ける
 作者の詳しい画像付き説明 [[https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md]]
 自動でつけてくれる・・・のではなく一応コマンド打たないとダメらしい。詳しくは上記
 **WD1.4 Taggerで作成
@@ -130,15 +134,45 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 [+]画像
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/vrFirugtW9.png)
 [END]
+
 **キャプションの細かい加工
-https://github.com/starik222/BooruDatasetTagManager や スレ130の>>346>>949のツールで
-余計なタグを削ったりこだわりのタグ追加をする
+BooruDatasetTagManager 
+https://github.com/starik222/BooruDatasetTagManager 
+学習用タグの入力を速く楽にするやつJPG対応版
+https://fate.5ch.net/test/read.cgi/liveuranus/1674833233/669
+https://uploader.cc/s/5da3211bjrywdkestr26wr4z8v0ch6n233k4aw4qhgj4iag6dh7x2vzyd00y3wws.zip
+等のツールで余計なタグを削ったりこだわりのタグ追加をする
+
+- タグは順序に影響を受けるので、一番最初に有効化したいタグを記述する
+- taggerで生成したタグの順序のままでも良い。コマンドライン版（lora_train_command_line.py ）の場合、
+>        self.shuffle_captions: bool = False  # OPTIONAL, False to ignore ~~
+>        self.keep_tokens: Union[int, None] = None  # OPTIONAL, None to ignore ~~
+の上の行は True にすればタグの順番は適当にシャッフルして学習する。同時に次の行を 1とか2に設定すれば先頭から指定した数のタグは重要視して残りをシャッフルするように出来る。
+
+**キャプションの付け方・考え方の参考サイト
+-[[lora training tagging faq>https://rentry.org/lora-tag-faq]]
+英語サイトだがブラウザの翻訳で読もう
+-[[キャラクター学習のタグ付け一例>https://rentry.org/dsvqnd]]
+実例を挙げての解説
+
+一言で言えば「呼び出しキーワード」＋「学習から外したいもの」をタグに書く
+
 *そもそも学習用画像ってどうやって加工するの
 本文で説明している kohya_ss 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
 背景の切り抜きは・・・画像の大きさが揃ってないとめんどくさいなどうしよう・・・
 
 キャラの切り出しだけやったら3Dペイント(Win10なら標準、11では標準からリストラされたけどストアにおるで)のマジック選択でええ感じに切り抜きやすいからそこからgimpなりで微調整。
 一枚一枚やんのめんどくさい言うんやったらABG_extension言うのが出たんでつこてみたらええんとちゃうかな…？しらんけど
+
+ABG_extension
+https://github.com/KutsuyaYuki/ABG_extension
+WEBUI公式extension 背景を自動で除去します。アニメ画像用に微調整されたonnxモデルを使用。GPUで動作します。
+
+katanuki
+https://github.com/aka7774/sd_katanuki
+WEBUI用exntension anime-segmentation を 1111 で使えるようにしたやつ。画像の背景を透過したり白背景にしたりマスク画像を出力する
+
+
 *正則化画像
 キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが
 詳しくはわからないので誰か書いてクレメンス
@@ -258,11 +292,18 @@ last.safetensors というファイルができる
 &video(https://image02.seesaawiki.jp/n/h/nai_ch/Kr6H7y5ZXq.webm)&video(https://image01.seesaawiki.jp/n/h/nai_ch/ypwjUxQC6D.webm)
 [END]
 
-*その他
+*GUI版
 lora_train_command_line.py のパラメータ記入の補助ツール
 GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
 「Tools」タブにフォルダ配置補助機能がある。
 スクリプト版のパラメータの一部は設定出来ないかも？
+
+*WebUIエクステンション版
+ddPn08ニキが作ってくれた中身はkohya版 sd-scripts WebUIがでたで。
+- エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
+- 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
+- WebUI割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
+-- https://github.com/ddPn08/kohya-sd-scripts-webui
 
 *Loraの使用方法&aname(apply_lora)
 **使い方その1 WebUIに拡張機能をインストールして使う
@@ -277,6 +318,7 @@ H:\stablediffusion\stable-diffusion-webui\extensions\sd-webui-additional-network
 Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
 一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される
 最新のLora(0.4.0)で作ったやつも使える
+
 
 
 
