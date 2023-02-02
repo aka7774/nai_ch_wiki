@@ -12,11 +12,11 @@ Stable Diffusionモデルを公式からダウンロードした人ならアカ�
 
 以下、&#129303;と記載する。
 
-** アカウント作成
+* アカウント作成
 
 - メールアドレスが必要。
 
-*** フリーメール推奨
+** フリーメール推奨
 
 以下の条件を満たすと登録メールアドレスがリポジトリの履歴に残ってしまうらしいので注意。
 
@@ -24,21 +24,40 @@ Stable Diffusionモデルを公式からダウンロードした人ならアカ�
 2. (ブラウザではなくPythonの)Huggingface Hubでlogin()する
 3. ログイン後にgitに認証情報を流用する
 4. gitでpushする
-** Models
+* Models
 
-*** アップロード
+** アップロード
 
 自作のマージモデルを公開する手段としておすすめ。
 
-- ブラウザかgitが使える。
--- ブラウザはChromeが良さそう。
 - PublicかPrivateが選択できる。
-- gitを使うにはwrite権限のあるtokenが必要。ブラウザから発行できる。
-- gitを使う前にHuggingface Hub(pythonモジュール)のインストールが必要。
 - 容量無制限。
 - 永遠に無料。ほんまかいな。
 
-*** ダウンロード
+*** ブラウザでやる方法(容量不問)
+
++ https://huggingface.co/new をブラウザで開く
++ ownerを選ぶ(自分とか所属のOrgとか)
++ repo_id を決める
++ 自分/Orgメンバーだけに公開するならPrivateにする
++ Files の Upload Files(画像参照)
++ ドラッグしてボタン押して待つ
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DNaD1kWzii.png)
+
+*** hubでやる方法(5GB以下の場合)
+
+- write権限のあるtokenが必要。ブラウザから発行できる。
+- Huggingface Hub(pythonモジュール)のインストールが必要。
+- [[Colab]]の「ファイルのアップロード」に書いてあるのでそっちを参照
+
+*** gitでやる方法(5GB以上の場合)
+
+- write権限のあるtokenが必要。ブラウザから発行できる。
++ lfsファイル以外をcloneしてくる
++ ファイルをaddしてcommitしてpush
+
+** ダウンロード
 
 - URLかgit(&#129303;Hub)経由で出来る。
 - Privateだとログイン済みのブラウザか&#129303;Hubでread権限のtokenが必要。
@@ -46,16 +65,22 @@ Stable Diffusionモデルを公式からダウンロードした人ならアカ�
 -- できればSSD上でgit cloneしてファイルだけHDDに移動して消すのが吉。
 -- あるいは数個程度ならgitを使わないとか。
 
-*** コピー(fork)
+** コピー(fork)
 
 - https://huggingface.co/spaces/osanseviero/repo_duplicator
 - 秒で終わる
 - 公開設定がPublicになるのでPrivateにしたかったら設定で変える
-** Datasets
+* Datasets
 
-- まだ試してないけどデータセットを置いていいはず。
+- 画像とかキャプションテキストとかを置く
+- 規約に明記されてないけどNSFW画像は置いてる人がいない
+- zipは勝手にプレビュー用に展開される
 
-** Spaces
+** アップロードとダウンロード方法
+
+- Modelと同じ
+
+* Spaces
 
 あくまでデモ用で、実用ツールはColabで動かしたほうが良さそう。
 
@@ -64,13 +89,9 @@ Stable Diffusionモデルを公式からダウンロードした人ならアカ�
 -- GPUは有料。月額+従量課金らしい。
 - gradio(python)で実装するNotebookって感じ。
 - バックエンドは共有なので順番待ちが必要。
-** Organization
+* Organization
 
 - Teamを作れる。
 - Organization ModelsをPrivate設定するとTeamメンバーだけで共有できる。
 - write権限のあるtokenが発行できない
 -- 所属している個人がwrite権限を持っていれば個人のwriteトークンで代用できます
-
-
-
-

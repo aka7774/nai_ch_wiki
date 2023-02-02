@@ -8,15 +8,50 @@
 
 * 注意
 
-この記事の内容は既に古いです。(2023-01-20作成)
-kohyaの更新によって動いたり動かなかったりします。(オプションの内容や意味がころころ変わるため)
-2023-01-28時点では動くようですが将来はわかりません。
-動くバージョンを使いたいならリポジトリのハッシュを指定しましょう。
+kohyaのコードは急に動かなくなります。
+(ほとんどテストしないでリリースされているものと思われる)
+
+- 検証用修正版(2023-02-03作成)
+-- https://colab.research.google.com/drive/1MyZTE7z_HXIsQhDLCkocx2HDwKVpMDpI
+- 自分でコマンドラインオプションを入れる版(2023-01-28作成,2023-02-03更新)
+-- https://colab.research.google.com/drive/1vU8SRWeTU8w89xl9jA2nivIqHzr7HBiU
+- 初期版(2023-01-20作成,動きません,requirements.txtが壊れている,lr低すぎ)
+-- https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf
+
+確実に動くバージョンを使いたいならリポジトリのハッシュを指定しましょう。
 常に最新機能を追いたいなら更新のたびにオプションの見直しと動作チェックをしましょう。
 
-自分でコマンドラインオプションを入れる用の新しいノートブック(2023-01-28作成)
-- https://colab.research.google.com/drive/1vU8SRWeTU8w89xl9jA2nivIqHzr7HBiU
+** 検証用修正版について
 
+Colabでは簡単にLora出来ないという誤解を払拭するために作りました。
+作ってみたらエラーで止まったので誤解ではなかったことを理解しました。(直しました)
+
+*** 修正点
+
+- requirements.txtのインストールに失敗するので使わないように回避した
+- accelerate configで設定する内容をすべてコマンドラインオプションに盛り込んで警告も出ないようにした
+- learning_rate を 1e-3 (最近の推奨値)まで上げて、学習された事がわかりやすいようにした
+- xformers==0.0.16rc425をインストールする(このバージョンだと学習できないという噂がありますが動作するので確認してください)
+- モデルをDBする機能を削ってLoRA専用にしてわかりやすくした
+- 環境確認、環境構築、トレーニングとアップロードのセルを分けてエラー時にリトライしやすくした
+- caption_extensionの指定はドットを付けるのが正しいらしいので直しました
+
+*** 使い方
+
++ 基本設定を実行(&#129303;にログイン) ここを変えれば他の学習も出来るはず
++ 環境確認を実行(しなくてもいい)
++ 環境構築を実行
++ トレーニングとアップロードを実行 細かい設定はここで変える
+
+学習時間は40分程度です。解像度768、batch_size=2、840Steps。
+
+*** 学習結果
+
+ masterpiece, best quality, 1girl, zunko <lora:Zunko-lora:1>
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TUCZCDUo4Q-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TUCZCDUo4Q.png]]
+
+まあ、似てなくはない・・・かな・・・
 * すること
 
 - kohya版sd-scripts(コマンドラインツール)を実行する
@@ -109,8 +144,7 @@ Google Driveは使わないので、リークモデルとか使わないなら�
 
 * 11. Notebookを用意する
 
-ここを開きます。
-https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scrollTo=NL_Xhpp8yfTd
+このページの冒頭にある動きそうなノートブックを開きます。
 
 以下の手順通りに設定する。
 
@@ -170,18 +204,10 @@ https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf#scroll
 
 * オプション: LoRaを作成する
 
+- ノートブックは検証用修正版を使いましょう。
 - 手順12までは同じ。
--- learning rateは1e-4にするといいかも
--- 古いNotebook使ってたら最新のをコピーしなおしてください
-- 手順13の詳細設定で下のほうにある項目を変更
--- 「train_db」のチェックを外す
--- 「train_network」のチェックを入れる
 -- output_name をわかりやすく変更するのがおすすめ Zunko-lora など
 
-768のbatch_size=2は30分くらい。5にも出来るけど時間は変わらなかった。
-試しにresolutionを1024にしてみたけど動いている。時間は45分くらい。
-学習されていない不具合があったが直っていた。
+768のbatch_sizeは5にも出来るけど時間は変わらなかった。
+試しにresolutionを1024にしてみたけど動いている。
 
-accelerate config の設定内容は
- accelerate launch --mixed_precision=fp16
-と等価
