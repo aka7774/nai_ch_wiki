@@ -120,10 +120,11 @@
 ***　きんいろモザイク
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|masterpiece, best quality, {{{{masterpiece}}}},{{{{{{best quality}}}}}}, {{{{ultra-detailed}}}}, {{{{illustration}}}},{{{{style of kin-iro_mosaic}}}},{{{{drawn by hara_yui}}}},{{{{ oomiya shinobu}}}} , morning,16 years old,girl, {{dark green hair}},{{{{{bob hair}}}}} black eyes, blunt bangs,{{tareme}},|nsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, nsfw,{{{{{{ugly}}}}}}, long hair,{{{{{{duplicate}}}}}}, {{{{morbid}}}}, 4koma,{{{{mutilated}}}}, lowres,bad anatomy,bad hands,missing fingers,lose finger,{{{{{{bad proportions}}}}}}, pubic hair,extra digit,fewer digits,cropped,worst quality,low quality,{{{{{{{{{{fused fingers}}}}}}}}}}, {{{{{{{{{{too many fingers}}}}}}}}}}, {{{{too many legs}}}}, malformed hands,long neck,missing limb,1.3tranny,cloned face,{{{{{{disfigured}}}}}}, {{{{{{more than 2 nipples}}}}}}, {{{{{{missing arms}}}}}}, {{{{{{extra legs}}}}}},1.2disfigured,malformed mutated,{{{{{{unclear eyes}}}}}}, large breasts,multiple breasts,{{{{fshemale}}}}, yaoi,{{{{text}}}}, {{{{pablo picasso}}}}, {{{{surrealism}}}},|きんいろモザイク|大宮忍|打率は低すぎです。目の色がちょっと違う気がしなくもない|https://image01.seesaawiki.jp/n/h/nai_ch/4WylHnk8qD.png|
 |{oomiya shinobu},in kin-iro_mosaic style, solo,dark green hair, blunt bangs, bob cut, red eyes, brown eyes, tareme, cowboy shot,  lolita fashion,smile,|tsurime,smirk,evil_smile,|きんいろモザイク|大宮忍|低打率。なんとか雰囲気だけ再現。ネガティブの表情操作はツリ目対策|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LWfbMlMv6K.png)|
 |{alice cartelet},{in kin-iro_mosaic style}, solo,blonde hair,high twintails,afro twintails,medium hair,bangs, blue eyes,tareme,pink cardigan,white shirt, striped bowtie, blue skirt,white thighhighs,kind smile,|afro,tsurime,kujou_karen, {{{alice_margatroid,alice_in_wonderland,alice_(alice_in_wonderland)}}},parted bangs,blunt bangs,hairband,long hair,flipped hair,smirk,evil smile,naughty smile,grin,plump,milf,mature female,|きんいろモザイク|アリス・カータレット|「alice」に反応して他作品のキャラクターが混ざって出力されていたのでネガティブ送りにした。ネガティブの表情操作はツリ目対策。これでも打率は低いのでガチャを。ロリさが欲しければloliではなくchildを追加。簪は断念。セーター腰巻もさらに打率が下がるので断念(jacket around waistで挑戦可能だが・・・)。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kxWx4acqLO.png)|
-|{{{style of kin-iro_mosaic}}},{{{drawn by hara_yui}}},{{{kujou karen}}}, blonde hair,single side bun,long hair,x hair ornament,hairpin, purple eyes,shiny hair, {tsurime},smile,{{game cg}}, {union jack}|longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,|きんいろモザイク|九条カレン|打率低めなのでガチャ必須~~ユニオンジャックパーカーの出し方教えて|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0Xm11bSS7Q-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0Xm11bSS7Q.png]]|
+|{{komichi aya}},in kin-iro_mosaic style, dark blue hair,long hair,twintails,hair between eyes,blue eyes, tareme,school uniform,dark blue sweater,red striped bowtie,blue skirt,pantyhose, cowboy shot, solo,|tsurime,smirk,frown,tedeza rize, hair ribbon,|きんいろモザイク|小路綾|根気よくガチャ|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JFbsXWDB3F.png)|
+|{{inokuma youko}},in kin-iro_mosaic style, brown hair,&#91;&#91;red hair]],medium hair,hair spread out,brown eyes, tareme,fang, school uniform,blue pinafore dress,blouse, blue skirt, medium breasts,solo,cowboy shot, |tsurime,smirk,frown,forehead, neck ribbon,bowtie,long hair,|きんいろモザイク|猪熊陽子|髪型や髪色の再現が難しいのでガチャになる|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PHjwPxhzMS.png)|
+|{{{kujou karen}}},in kin-iro_mosaic style, blonde hair,{single side bun},long hair,parted bangs, x hair ornament,hairpin, purple eyes,tsurime,dress shirt, {open hoodie},{blue hoodie},red striped bowtie,blue skirt, pleated skirt, open clothes,game cg,  cowboy shot,smile, solo,|anime,megami magazine,forehead, multiple buns,jpeg artifacts,blurry,|きんいろモザイク|九条カレン|相変わらず打率は低い。t2i(1枚目)でのユニオンジャックは断念。i2i(S:0.5 , N:0)で適当に塗ったのが2枚目。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CCW139uurv.png)~~&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VJ1iMr4lsd.png)|
 |}
 
 **く
@@ -214,6 +215,11 @@
 |aqua_(konosuba), blue eyes, bow, hair ornament, blue hair, very long hair, medium breasts, detached sleeves, thigh boots, ||^|^|プロンプト増やした安定版|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD.png]]|
 |darkness_(&#91;&#91;&#91;&#91;&#91;&#91;konosuba]]]]]]), long hair, yellow hair, blue eyes, ponytail, medium breasts, {{x}} hair ornaments, black gloves,  |hair intakes, aqua, megumin,  evil, blue hair, sphere, hair bow, horn, blue hair ornament, |この素晴らしい世界に祝福を|ダクネス|どうしてもアクアの髪留めが出やすい。hair ornamentsがアクアの髪留めを誘発しているので、ダクネスの髪留めを諦めていいなら外すのもあり。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia.png]]|
 |}
+
+
+
+
+
 
 
 

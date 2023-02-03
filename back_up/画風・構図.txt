@@ -147,6 +147,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ドット絵の多くが該当する ~~ ぼやけたりjpegノイズが生成されたりする||
+|masterpiece|傑作|NovelAIが独自につけたタグ。quality tagsに入っている。いわゆるマスピ顔になる。||
 |absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ 若干書き込みが細かくなる||
 |official art|公式アート|品質向上系 ~~ ロゴや著作権表記が出る場合あり|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yr8umSOBfB.png)|
 |virtual youtuber|Vチューバ―||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S.png]]|

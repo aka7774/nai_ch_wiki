@@ -41,15 +41,15 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Argume
 おすすめ。
 WindowsではPython 3.10が必要っぽい(3.9だとエラーが出る)
 Colabではcondaで入れると入れやすい。
-出力画像が少しだけ変わると言われているがエビデンスなし。
+出力画像がごくわずかに変化するといわれるが、有意な変化はないし根拠もない。
 
 出力の比較をしたので詳細はこちらへ↓
 [[xformersの検証]]
 
 ** --opt-channelslast (高速化)
 
-4000番台で効果あり。3000番台でもちょっと効果あり。
-2000番台だと効果なし？ Linuxだと効果あり。
+1111のWikiのよると、Tensor Coreを搭載したNVIDIA製GPU(GTX16以上)で高速化が期待できるとのこと。
+NVIDIA RTX系のグラボは速くなることを確認済み。
 
 先に以下の設定をやる。
 
@@ -70,7 +70,7 @@ pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url https://
 ||=
 ** --no-half-vae (画像真っ黒対策)
 
-VAEを使っている時、たまに画像が真っ黒になる問題を修正する。
+VAEやVAE埋め込みモデルを使っている時、たまに画像が真っ黒になる問題を修正する。
 fp16ではなくfp32を使う。
 VRAM不足だけでなく、Anything+VAEの環境とかで真っ黒になりがち。
 
@@ -99,7 +99,7 @@ VRAMの少ないGPUでは設定の変更が必要な場合があります。
 これらのいずれかで「メモリ不足」エラーが発生している場合は、次の引数を追加します：--always-batch-cond-uncond --opt-split-attention
 
 VRAMが足りている環境で使うと速度が落ちるので要注意。
-
+medvramをつけると生成開始/終了に時間がかかるようになるのでBatch sizeを増やすと速度低下をある程度相殺できる。
 ** --ckpt-dir
 
 モデルの保存先を指定する。
@@ -148,7 +148,8 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Troubleshooting#cud
 
 ** --disable-nan-check
 NaNチェックを無効にして生成時に出るNansExceptionで画像生成が止まらないようにする。
-おそらく従来どおりの黒画像が出るようになると思う。
+Batch Count上げて連続生成してる時に勝手に止まらなくなるので便利。
+有効にすると、従来どおりの黒画像が出る。
 
 ** (削除) --deepdanbooru
 
@@ -179,6 +180,7 @@ https://pytorch.org/docs/stable/notes/cuda.html#memory-management
 まだ実力のほどはわからないが、
 そのうちfp16/fp32に起因するエラーが減ったり、
 マルチCPUに対応したりするのかも知れない。
+
 
 
 

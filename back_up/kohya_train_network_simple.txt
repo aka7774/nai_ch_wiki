@@ -1,0 +1,166 @@
+あかちゃんLoRAノートブック
+
+#contents
+
+- [[ローカルの学習入門]]
+- [[kohya_sd-scripts_intro]]
+
+* ねらい
+
+- LoRAの雰囲気を味わえる手順書です
+-- なんとなくおおまかなキャラ再現が出来る程度です
+- PCの性能や課金は不要です(1111で生成できることが前提)
+- 学習画像は自分で用意します
+- &#129303;を活用します
+
+** しなくていいこと
+
+- kohyaのバージョンは20230129版に固定しました
+-- requirements.txtは修正しました
+-- aptやpipが壊れない限り動くはず
+- コマンドラインオプションは勝手に決めます
+-- カスタマイズしたい人はこのページを卒業して巣立っておくれ
+- 正則化画像は使いません
+- キャプションテキストは使いません
+- 背景処理(Katanuki等)はしません
+- LoRAを作る以外の機能はありません
+
+* 1. Googleのアカウントを作成する
+
+- Colabで使う用
+- https://accounts.google.com/signup
+
+Google Driveもリークモデルも使わないので、本垢でもたぶん大丈夫だと思うけど自己責任で。
+
+* 2. Huggingfaceのアカウントを作成する
+
+- 要メールアドレス(さっき作ったGoogleので良い)
+- https://huggingface.co/
+
+ユーザー名はあとで使うのでメモっておきましょう。
+
+既に取得済みのを使いまわすなら名前とかメールアドレスとかが見られてもいいものか要チェック。
+
+* 3. アクセストークンを追加する
+
+- https://huggingface.co/settings/tokens
+- 「New Token」を押す
+- Name: 任意
+- Role: write
+
+追加したトークンはあとで使うのでメモっておきましょう。
+(必要になった時にこのページを開いてコピペするほうが安全だけど)
+
+* 4. 名前を決める
+
+プロンプトに入れる単語になり、モデルの名前になります。
+たとえば zunko
+
+* 5. 学習用画像を用意する
+
+25枚くらいを目標に頑張って用意しましょう。
+
+長方形でも良いですが、縦横の差が2倍を超えないようにしましょう。
+解像度は平均768くらいはあったほうがいいです。(512x1024とかでも可)
+大きいのは勝手に縮小されるので大丈夫です。
+
+ファイル名はなんでもいいけど長いと読み取れなくなるので、
+長い名前や日本語などがあったら全選択してF2を押して短く改名しましょう。
+
+* 6. 画像のフォルダ分け
+
+画像は品質ごとの3種類にフォルダ分けすることができます。
+(分けなくてもいいです)
+
+a. 高品質、とても良い画像、特に学習したい画像
+b. 中品質
+c. 低品質、ちょっとだけ学習してくれればいい画像
+
+* 7. 画像をzipにする
+
+a. b. cをそれぞれzipで圧縮します。
+右クリックで「送る」「圧縮(zip)フォルダー」
+
+名前はなんでもいいのでわかりやすくしましょう。
+たとえば zunko_a.zip zunko_b.zip zunko_c.zip
+
+* 8. &#129303;にDatasetを作る
+
+- https://huggingface.co/new-dataset
+- Dataset name: nva-Zunko (決めた名前の頭にnva-をつける)
+- 他はいじらない
+- 「Create dataset」を押す
+
+** 9. zipを&#129303;にアップロードする
+
+- 「Files」タブの「Add File」の「Upload Files」
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DNaD1kWzii.png)
+
+- 3つのzipをドロップかクリックで選択して「Commit changes to main」を押す
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4sWcoxXmcF.jpg)
+
+- アップロードされたファイルの行にある「↓」を右クリックしてURLをコピーしてメモっておく
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Sxek2yNsj0.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/Sxek2yNsj0.jpg]]
+
+* 10. Notebookを自分のDriveにコピーする
+
+- https://colab.research.google.com/drive/1XBDdsczuDdK_v60Vz7aX1DClQUf55nIy
+- File
+-- Save a copy in Drive
+
+* 11. 設定
+
+いままでの手順で用意した内容を入力します
+
+- Huggingfaceのユーザー名 手順2
+- Huggingfaceのwriteトークン 手順3
+- モデルにつける名前 手順4
+- 学習画像zip(品質A〜C)のURL 手順6〜9
+
+* 12. 学習
+
+三角ボタンを押します。
+
+学習は40分程度で終わります。
+アップロード完了まで1時間くらいで終わると思います。
+
+* 13. LoRAのダウンロード
+
+&#129303;の自分のモデルページを開きます。
+モデル名が zunko なら、
+https://huggingface.co/ユーザー名/nva-zunko/tree/main
+が出来ているはずです。
+
+↓を押して zunko.safetensors をダウンロードします。
+stable-diffusion-webui/models/lora に設置します。
+
+* 14. 結果の確認
+
+手元の1111で動作確認しましょう。
+
+好きなモデルで試すことが出来ますが、学習元のモデルは ACertainty です。
+https://huggingface.co/aka7774/fp16_safetensors/resolve/main/ACertainty-fp16.safetensors
+
+ぐちゃぐちゃな絵が出てきたら、おそらく過学習です。
+モデルページにあった -000009 から -000001 までのファイルを試してみましょう。
+(数字はepochで、数字の無いモデルはepoch 10です)
+
+あるいは、プロンプトにある
+ <lora:zunko:1>
+の数字を0.1ずつ下げてみましょう。
+
+全然似てない絵が出てくる場合は、学習不足か強度不足です。
+ (zunko:1.1)
+の数字を0.1ずつ上げてみましょう。
+
+うまくいったら naked などのキーワードを追加して学習の度合いが適切か確認しましょう。
+
+ masterpiece, best quality, 1girl, zunko <lora:zunko:1>
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zBAkKQapxo-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zBAkKQapxo.png]]
+
+ masterpiece, best quality, 1girl, zunko, naked <lora:zunko:1>
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N15iJ9qoI7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/N15iJ9qoI7.png]]
+

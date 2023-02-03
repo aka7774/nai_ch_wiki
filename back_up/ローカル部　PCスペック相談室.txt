@@ -60,6 +60,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4080|16GB|Core i7-13700F|13|12.35|xformers opt-channelslast|Batch Count 2、Batch Size 5　cudnn8.7.0に置き換える前は21秒くらいだった|
 |RTX3080Laptop|16GB|Ryzen9 5900HX||29.29|--xformers|ノートPC Lenovo Legion760 2021年モデル Windows10 メモリ32gb|
 |RTX 3090TI|24GB|Ryzen 9 7950X||17.95|--xformers --autolaunch --opt-channelslast --no-half-vae|WIN 10, mem 64gb, torch: 1.13.1+cu117,xformers: 0.0.16rc425|
 |RTX 3060|12GB|Core i5-7200U|36|36.36|--xformers --no-half-vae --optchannelslast|Core clock+223MHz, Memory clock+400MHz, Batch count 2, Batch size 5, live preview&gridなし, torch: 1.13.1+cu117 eGPU環境でRAM 8GB。おま環との戦いだが、生成速度はCPU関係ないらしい。モデル読み込み時にCPUとメモリの不足により30秒以上を要する。|

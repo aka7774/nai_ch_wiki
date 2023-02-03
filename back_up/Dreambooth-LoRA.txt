@@ -1,14 +1,15 @@
 #contents
 * 概要
 Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
-Dreamboothで広まった学習法。小さくて速いやつ。''作成方法はいろいろある。''
+簡単に言えば「省メモリで高速に学習できて容量も小さくて済む追加学習法」。''作成方法はいろいろある。''
+
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png,400)>https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png]]
 他の学習法とどう違うねん？　reddit民によればこんな感じのイメージらしい。
 https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/
-VRAMが少なくても学習可能なkohya_ss版sd-scripts登場以来、sd-scriptsが主流となっている。
+kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツールが人気となっている。
 このページではsd-scripts関連の情報について雑に書いてある
 
-*参考資料
+*参考資料・スレ住民による学習ガイド
 LoRA Training Guide　https://rentry.org/lora_train
 - 4chan有志によるLoRAトレーニング法ガイド（英語）
 LoRA 学習メモ　https://rentry.co/i5ynb
@@ -23,12 +24,14 @@ https://rentry.org/dsvqnd
 - スレ住民によるキャラクター学習のタグ付け一例（日本語）
 https://rentry.org/lora_namakubi
 - スレ住民によるLoRAでのキャラ学習素材の検証
-　
+あかちゃんLoRAノートブック [[kohya_train_network_simple]]
+- 全然スレに書き込めないけどけなげに頑張っている
+
 - クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
 - フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
 
-*他人の作ったモデルの導入
-[[Loraの使用方法>#apply_lora]]だけやればOK
+*他人の作ったモデルを使いたい。
+最新版のWEBUIが既に使用可能な状態ならセットアップ不要→[[LoRAの使用方法>https://seesaawiki.jp/nai_ch/d/Dreambooth-LoRA#content_13]]へ
 
 *インストール、初回セットアップ編
 1. エクスプローラーを開き、適当なフォルダ内で右クリック→git bash hereでgitのターミナルを開き、以下のコマンドを実行する
@@ -116,8 +119,10 @@ start.batと同じフォルダに入れて実行してください
 --キャプションについては以下
 
 *キャプション・タグを付ける
-作者の詳しい画像付き説明 [[https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md]]
-自動でつけてくれる・・・のではなく一応コマンド打たないとダメらしい。詳しくは上記
+- 作者の詳しい画像付き説明 [[https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md]]
+- 学習用の素材画像それぞれに内容を説明するテキストファイルを作る。このテキストファイルには画像生成時のプロンプトと同じようにタグを記載する。
+- テキストエディターやメモ帳で１つずつ作っても良いのだが、WD1.4Tagger等のツールを使えば一気に自動生成できて捗る
+
 **WD1.4 Taggerで作成
 先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)
 [+]画像
@@ -137,19 +142,18 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/vrFirugtW9.png)
 [END]
 
-**キャプションの細かい加工
-BooruDatasetTagManager 
-https://github.com/starik222/BooruDatasetTagManager 
-学習用タグの入力を速く楽にするやつJPG対応版
-https://fate.5ch.net/test/read.cgi/liveuranus/1674833233/669
-https://uploader.cc/s/5da3211bjrywdkestr26wr4z8v0ch6n233k4aw4qhgj4iag6dh7x2vzyd00y3wws.zip
-等のツールで余計なタグを削ったりこだわりのタグ追加をする
-
+**キャプション・タグの編集
 - タグは順序に影響を受けるので、一番最初に有効化したいタグを記述する
-- taggerで生成したタグの順序のままでも良い。コマンドライン版（lora_train_command_line.py ）の場合、
->        self.shuffle_captions: bool = False  # OPTIONAL, False to ignore ~~
->        self.keep_tokens: Union[int, None] = None  # OPTIONAL, None to ignore ~~
-の上の行は True にすればタグの順番は適当にシャッフルして学習する。同時に次の行を 1とか2に設定すれば先頭から指定した数のタグは重要視して残りをシャッフルするように出来る。
+- WD1.4Tagger等で自動生成したファイルには不要なタグが含まれたり誤認識されたタグが記載されたりするので編集する。
+
+- BooruDatasetTagManager https://github.com/starik222/BooruDatasetTagManager 
+- 学習用タグの入力を速く楽にするやつ →[[ローカルの「ツール」]] https://uploader.cc/s/rdw0k6qd2766czgdwwwjtn2xtmhiay6c1ky0s7dui4o5yaz0pkgfesef18n9nngm.zip
+等の便利なツールを使えば捗る。必要なタグを追加、不要なタグの削除、順序の入れ替え等の編集をやる
+
+- taggerで生成したタグの順序のままでも構わないが、重要なタグだけ各ファイルの先頭の方に記載する。例えばコマンドライン版（lora_train_command_line.py ）の場合、
+>        self.shuffle_captions: bool = True  # OPTIONAL, False to ignore ~~
+>        self.keep_tokens: Union[int, None] = 3  # OPTIONAL, None to ignore ~~
+上記のように設定すれば先頭から3つのタグは順序固定として残りはタグの適当にシャッフルして学習できる。
 
 **キャプションの付け方・考え方の参考サイト
 -[[lora training tagging faq>https://rentry.org/lora-tag-faq]]
@@ -160,11 +164,10 @@ https://uploader.cc/s/5da3211bjrywdkestr26wr4z8v0ch6n233k4aw4qhgj4iag6dh7x2vzyd0
 一言で言えば「呼び出しキーワード」＋「学習から外したいもの」をタグに書く
 
 *そもそも学習用画像ってどうやって加工するの
-本文で説明している kohya_ss 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
-背景の切り抜きは・・・画像の大きさが揃ってないとめんどくさいなどうしよう・・・
-
-キャラの切り出しだけやったら3Dペイント(Win10なら標準、11では標準からリストラされたけどストアにおるで)のマジック選択でええ感じに切り抜きやすいからそこからgimpなりで微調整。
-一枚一枚やんのめんどくさい言うんやったらABG_extension言うのが出たんでつこてみたらええんとちゃうかな…？しらんけど
+- 本文で説明している kohya_ss 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
+- 背景の切り抜きは・・・画像の大きさが揃ってないとめんどくさいなどうしよう・・・
+- キャラの切り出しだけやったら3Dペイント(Win10なら標準、11では標準からリストラされたけどストアにおるで)のマジック選択でええ感じに切り抜きやすいからそこからgimpなりで微調整。
+- 一枚一枚やんのめんどくさい言うんやったらABG_extension言うのが出たんでつこてみたらええんとちゃうかな…？しらんけど
 
 ABG_extension
 https://github.com/KutsuyaYuki/ABG_extension
@@ -176,8 +179,9 @@ WEBUI用exntension anime-segmentation を 1111 で使えるようにしたやつ
 
 
 *正則化画像
-キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが
-詳しくはわからないので誰か書いてクレメンス
+- キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが詳しくはわからないので誰か書いてクレメンス
+- 間違っとる可能性大なのやが、例えばAIちゃんが知らない「鳥獣戯画のカエルちゃん」のイメージを教えるとする。学習用画像には「鳥獣戯画のカエルちゃん」画像を用意する。正則化画像にはありふれた「蛙の画像」を用意する。これでAIちゃんには「鳥獣戯画のカエルちゃん覚えようね！でも正則化画像フォルダにある普通の蛙とかは違うやつやから覚えなくていいよ」という感じで伝わる。イメージを覚えてもらうのに言葉では説明しづらいから画像で説明する感じ？多分。知らんけど。
+- 正則化画像は必須ではないので用意しなくても学習はできる。とりあえず一度学習動かしてみたいとかなら用意しなくてもいい。
 
 **透明のpngを正則化画像にする
 Web UI に拡張機能をインストールする [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
@@ -223,7 +227,7 @@ number_of_generation:作成する枚数
 **ターミナルとかパワーシェルにコマンドを打つか、run_popup.batから実行する
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/yVzXCg9crC.png)
 ----
-**設定ファイルを読み込む?
+**設定ファイルを読み込む? (前と同じ設定を使いたければ次でjsonファイルを読み込む)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ceVWQWf9Uj.png)
 ----
 **学習元のモデルを選ぶ
@@ -248,21 +252,21 @@ number_of_generation:作成する枚数
 数字_名前 フォルダが見えるように
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/OYsxnrbqxq.png)
 ----
-**学習を再開する?
+**学習を再開する? (以前の続きをやるときはsafetensorファイルなどを次で読み込む)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/7Vg8xAPetT.png)
 ----
-**バッチサイズ:一度に何枚処理するか つよつよGPU以外なら1で
+**バッチサイズ:一度に何枚処理するか VRAM12Gなら8くらいいける(解像度512に限る)で
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/xcTV3i_Lbh.png)
 **何エポック学習させるか: 1エポックは 繰り返し回数(フォルダの先頭の数字)×学習用画像の枚数 ステップ
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/DWVNJ2DpMd.png)
-**dimサイズ: みんな128をつかっとるらしい
+**dimサイズ: ケモナーは128推奨
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/I75XLmK3_t.png)
-**アルファ: dimサイズと同じがいいらしい
+**アルファ: dimサイズと同じがいいらしい。下げたら学習率に注意
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/vZVRRTw9ES.png)
-**学習の解像度: 512で。RTX4090か超強クラウドGPUなら 768 もいける
+**学習の解像度: 512が速い, 768ならRTX3060やColabで10000ステップ4~5時間コース
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ttb3qyi0Ya.png)
 ----
-**学習率(Learning Rate): 1e-4 (= 0.0001) これより上げることはあんまりない。 5e-5 (=0.00005)くらいでもいいかも
+**学習率(Learning Rate): 1e-4 (= 0.0001)くらいで。alphaを1にした場合dimの分学習率が割られるらしいので上げ目にする 1e-3程度
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/DkV4RQ4ZnK.png)
 **スケジューラー: cosine_with_restarts で(よく分からんのでいじらない) 学習率を途中で上げ下げするやり方
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/0jBUxX8eVo.png)
@@ -276,7 +280,7 @@ number_of_generation:作成する枚数
 キャプションを付けた場合フォルダ名のインスタンスプロンプトが無効になる~~のでキャプションファイルの先頭にインスタンスプロンプトを自分で書く必要がある。~~作者のnoteによると「数値を指定するとキャプションの先頭から、指定した数だけのトークン（カンマ区切りの文字列）をシャッフルせず固定します。」~~キャプションの先頭からカンマ区切りで判定されるので 「zkz, 1girl, condom, ass, solo, black panties, one side up,」なら1でおk
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/kMrIwfMsJE.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/SKOgINqr6w.png)
-**warmup ratio 使う?: 学習の最初だけ学習率を下げる機能
+**warmup ratio 使う?: 学習の最初だけ学習率をあげる機能
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/WaHG0v8I5O.png)
 ----
 **学習の様子 縦横の比率は自動で振り分けしてくれる
@@ -284,7 +288,6 @@ number_of_generation:作成する枚数
 **出来上がり
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/y3w3sgkzGd.png)
 last.safetensors というファイルができる
-このスクリプトではログは一切残らないのでわかりやすい名前にリネームしておく
 追加学習するときはこのファイルを指定する
 [END]
 動画(2023-01-30) すぐにアプデで役に立たなくなるが一応
@@ -352,6 +355,7 @@ H:\stablediffusion\stable-diffusion-webui\extensions\sd-webui-additional-network
 Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
 一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される
 最新のLora(0.4.0)で作ったやつも使える
+
 
 
 

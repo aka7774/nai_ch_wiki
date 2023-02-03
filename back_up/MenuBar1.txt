@@ -159,7 +159,7 @@
 + [[モデル比較]]
 [END]
 [-] [[ローカルの学習]]
-+ [[学習入門II>kohya_sd-scripts_intro]]
++ [[学習入門III>kohya_train_network_simple]]
 + [[HyperNetwork]]
 + [[DreamBooth]]
 ++[[LoRA>Dreambooth-LoRA]]
