@@ -425,3 +425,39 @@ https://i.imgur.com/HyKeiG9.jpg
 そういう絵柄の反応性がいいモデルということででして
 ||=
 &ref(https://i.imgur.com/fAb2gcm.jpg,200) &ref(https://i.imgur.com/WjHRank.jpg,200) &ref(https://i.imgur.com/HyKeiG9.jpg,200)
+
+**141スレ944 Chilloutmix
+https://fate.5ch.net/test/read.cgi/liveuranus/1675289546/944
+https://civitai.com/models/6424/chilloutmix
+=|BOX|
+944 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｽｯﾌﾟ Sd5f-9sAx)[] 投稿日：2023/02/04(土) 09:44:25.21 ID:km+wGICVd
+リアル系好きな人
+ワイのこっそり楽しんでたマージ
+civitaiにのっけてみたから使ってみてくれん？
+感想聞きたいんや
+Chilloutmixていうやつなんやけど
+なんかURL載っけたら書き込み上手くいかんので検索してもらえると。。。
+||=
+
+**142スレ78 maaji
+https://fate.5ch.net/test/read.cgi/liveuranus/1675476156/78
+Lora　https://huggingface.co/saayu/tkmc_style/
+ベースモデル　https://huggingface.co/saayu/maaji
+=|BOX|
+78 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cf29-ltBo)[sage] 投稿日：2023/02/04(土) 13:14:17.59 ID:d85kdfyW0
+サンプルできたけど1e3と1e4で完全に別物になった
+nocapはcaptionなしで作ったからまたちょっと違う結果やと思う
+トリガーはtkmc styleでcapありはそれにtaggerとかで付いたの抜かずに作った
+Lora　https://huggingface.co/saayu/tkmc_style/
+ベースモデル　https://huggingface.co/saayu/maaji
+
+ベースモデル
+1e3　https://i.imgur.com/WDmikOf.jpg　1e4　https://i.imgur.com/qAXMG5U.jpg
+doll774
+1e3　https://i.imgur.com/cR2McJt.jpg　1e4　https://i.imgur.com/HX05JQy.jpg
+etr odyssey V2 fix
+1e3　https://i.imgur.com/b9iGpRY.jpg　1e4　https://i.imgur.com/XcjZnpg.jpg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/llDcboAP66-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/llDcboAP66.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6hjTjxPs_5-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/6hjTjxPs_5.jpg]]
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZJsUN09MkK-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/ZJsUN09MkK.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/IqDGu5QuV9-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/IqDGu5QuV9.jpg]]
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6hjTjxPs_5-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/6hjTjxPs_5.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rExYO9hIuy-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/rExYO9hIuy.jpg]]

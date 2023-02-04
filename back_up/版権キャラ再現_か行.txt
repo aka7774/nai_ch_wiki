@@ -27,7 +27,8 @@
 ***　ガールフレンド(仮)
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|{{{girlfriend (kari)}}},{chloe lemaire},blonde hair,long hair,swept bangs,blue eyes, straight hair,shiny hair, medium breasts,loli face,{{{tareme}}},:D,loli, cowboy shot,|tsurime,slanted eyes,sharp eyes,slanted eyes,slit pupils,lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet|ガールフレンド(仮)|クロエ・ルメール||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/djsC9GsCzS.png)|
+|{{{girlfriend (kari)}}},{chloe lemaire},blonde hair,long hair,swept bangs,blue eyes, shiny hair, medium breasts,loli face,tareme,:D,loli,smile|tsurime,smirk,wavy hair,forehead,|ガールフレンド(仮)|クロエ・ルメール||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/djsC9GsCzS.png)|
+|{{{girlfriend (kari)}}},{{{shigino mutsumi}}},{{{{official art}}}},game cg,grey hair,&#91;&#91;brown hair]], short hair,blunt bangs,low twintails,short twintails, red eyes,solo, cowboy shot, school uniform, dress shirt, green bowtie,green skirt, plaid skirt, pleated skirt, tucked in,frilled skirt,small breasts, child,|anime,megami magazine,sidelocks,forehead,milf,mature female,|ガールフレンド(仮)|鴫野睦|かなり低打率|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ERWPSbGPDz.png)|
 |}
 
 ***　ガヴリールドロップアウト
@@ -51,6 +52,7 @@
 ***　艦隊これくしょん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{{{{{choukai &#40;kancolle)}}}}}},black hair, long hair, straight hair,blunt bangs,{{{darkred eyes}}}, glasses, {{{{emeraldgreen jacket}}}},{{white skir}}, large breasts,||艦隊これくしょん|鳥海|服装の再現はガチャ頼み。|https://image01.seesaawiki.jp/n/h/nai_ch/R3oTWLFrJL.png|
 |masterpiece,high quality,high detailed,{ z1 leberecht maass &#40;kancolle)}, silver short hair, light blue eyes,small breasts,loli,dark blue clothes:2.0,long sleeve sailor micro dress:2.5,tight clothes:2.0,jet black Plain socks,navy blue beret,||艦隊これくしょん|z1 レーベレヒト・マース|z1 leberecht maass (kancolle)だけでも出るが、別のキャラになる可能性が大きい。服はmicro dressかsailor shirtとbottomlessにしてやると出やすいが、ガチャ要素が高い。模様はまず出ないので、Edit imageで書き足して、生成しなおすのが確実。|https://image01.seesaawiki.jp/n/h/nai_ch/Kowu4XExH3.png|
 |{{{gangut &#40;kancolle)}}}, long hair, hair between eyes, orange eyes,  medium breasts, red dress shirts, short sleeves, {{{black skirt}}}, {{{tights}}}, hairpin,  &#91;&#91;smirk]],|{{{{{forehead, hairline}}}}}, {{{{{loli}}}}}, lipstick, bismarck, graf zeppelin, headgear, necktie, hairband|艦隊これくしょん|ガングート|現状はそれっぽい人が限界。コートや帽子を付けると、他の艦これキャラ（主にドイツ艦）に顔と服が吸われまくる。顔の傷は出ない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xtfYSt9bXM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xtfYSt9bXM.png]]|
 |hamakaze (kancolle), silver hair,blue eyes, short hair,hair over one eye,tsurime, hairclip,serafuku,pantyhose,yellow neckwear,white gloves,gray skirt,||艦隊これくしょん|浜風|hamakaze (kancolle)だけでも出る。~~hair over one eyeはキャラ再現と引き換えに右目を作画崩壊させる曲者(1枚目)。これをネガティブに入れると両目がしっかり描写されるが再現性は犠牲になる(2枚目)。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/z5oDTE83tq.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N2hz9OwSZu.png)|
@@ -215,6 +217,7 @@
 |aqua_(konosuba), blue eyes, bow, hair ornament, blue hair, very long hair, medium breasts, detached sleeves, thigh boots, ||^|^|プロンプト増やした安定版|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD.png]]|
 |darkness_(&#91;&#91;&#91;&#91;&#91;&#91;konosuba]]]]]]), long hair, yellow hair, blue eyes, ponytail, medium breasts, {{x}} hair ornaments, black gloves,  |hair intakes, aqua, megumin,  evil, blue hair, sphere, hair bow, horn, blue hair ornament, |この素晴らしい世界に祝福を|ダクネス|どうしてもアクアの髪留めが出やすい。hair ornamentsがアクアの髪留めを誘発しているので、ダクネスの髪留めを諦めていいなら外すのもあり。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia.png]]|
 |}
+
 
 
 

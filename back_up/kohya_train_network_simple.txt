@@ -5,6 +5,14 @@
 - [[ローカルの学習入門]]
 - [[kohya_sd-scripts_intro]]
 
+* 更新情報
+
+品質はそのままに、2倍速くなったので、kohyaを20230204に更新しました。
+学習は20分で終わるので、全体でも40分以内には終わると思います。
+
+ masterpiece, best quality, 1girl, skkmtn, 1boy,breastfeeding handjob,nursing handjob,breast sucking,penis,nipples,lactation, cum <lora:breastfeeding_handjob:1> <lora:skkmtn:1>
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/af86RgYY_d-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/af86RgYY_d.png]]
+
 * ねらい
 
 - LoRAの雰囲気を味わえる手順書です
@@ -15,8 +23,8 @@
 
 ** しなくていいこと
 
-- kohyaのバージョンは20230129版に固定しました
--- requirements.txtは修正しました
+- kohyaのバージョンは20230204版に固定しました
+-- requirements.txtはNotebook上のsedで修正します
 -- aptやpipが壊れない限り動くはず
 - コマンドラインオプションは勝手に決めます
 -- カスタマイズしたい人はこのページを卒業して巣立っておくれ
@@ -123,10 +131,8 @@ a. b. cをそれぞれzipで圧縮します。
 * 12. 学習
 
 三角ボタンを押します。
-
-学習は40分程度で終わります。
-アップロード完了まで1時間くらいで終わると思います。
-
+進捗表示が出るので終わるまで待ちましょう。
+勝手にアップロードして勝手に終了するので寝ても構いません。
 * 13. LoRAのダウンロード
 
 &#129303;の自分のモデルページを開きます。
