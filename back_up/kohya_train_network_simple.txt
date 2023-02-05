@@ -7,6 +7,15 @@
 
 * 更新情報
 
+** 20230206
+
+- 繰り返し回数が被る時のリネームをファイル単位の移動にしました
+-- 3つのzipの中にある画像ファイルはみんな別々の名前にしといてや
+- 同じRuntimeで2回実行する時は古い画像を消すようにしました
+- (フォローはしないけど) batch_sizeには余裕があるので4とかに上げても動くかも
+
+** 20230205
+
 品質はそのままに、2倍速くなったので、kohyaを20230204に更新しました。
 学習は20分で終わるので、全体でも40分以内には終わると思います。
 
@@ -169,4 +178,5 @@ https://huggingface.co/aka7774/fp16_safetensors/resolve/main/ACertainty-fp16.saf
 
  masterpiece, best quality, 1girl, zunko, naked <lora:zunko:1>
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N15iJ9qoI7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/N15iJ9qoI7.png]]
+
 
