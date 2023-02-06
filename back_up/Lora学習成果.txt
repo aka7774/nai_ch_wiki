@@ -547,8 +547,108 @@ https://i.imgur.com/CjlaD0R.jpg
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/e9y9XImRq_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/e9y9XImRq_.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ODYTxE0WYN-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/ODYTxE0WYN.jpg]]
 
+**142スレ676 魔物ハンターのloRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1675476156/676
+https://huggingface.co/nanashisan/LoRa_MH-Yohko
+=|BOX|
+676 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa93-BST8)[] 投稿日：2023/02/05(日) 13:56:55.29 ID:5SEae212a [1/2]
+魔物ハンターのloRAあげるで
+サンプルは全部dim128で生成しとるで
+https://huggingface.co/nanashisan/LoRa_MH-Yohko
 
+https://majinai.art/i/cIynU-S.png
+https://majinai.art/i/Tq3KLwS.png
+https://majinai.art/i/Ae6lqxb.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8JmHYdzOin-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/8JmHYdzOin.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/um7xeIdru8-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/um7xeIdru8.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xjaxXwm9zi-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xjaxXwm9zi.png]]
+=|BOX|
+678 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa93-BST8)[] 投稿日：2023/02/05(日) 13:59:18.46 ID:5SEae212a [2/2]
+>>676
+インスタンスは共通でmh-yk
+chinese clothとschool uniformで衣装変わるで
+https://majinai.art/i/PCyNMtK.png
+https://majinai.art/i/I-4ZTXh.png
+https://majinai.art/i/uHP1M4u.png
+||= 
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fMThr_p13T-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fMThr_p13T.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lUFN4cVD3a-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lUFN4cVD3a.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IYa5a8HktE-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IYa5a8HktE.png]]
 
+**142スレ651,690 ヤムチャLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1675476156/651
+https://fate.5ch.net/test/read.cgi/liveuranus/1675476156/690
+https://mega.nz/file/yF4jFDpC#S4viGQ5154YT5X2ZersFZHrG00t82riH_3UMvfrMTbA
+=|BOX|
+651 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4f54-Srvf)[sage] 投稿日：2023/02/05(日) 13:01:08.11 ID:yhJjxIUI0 [1/5]
+暇つぶしで作ったヤムチャLoRA草
+https://i.imgur.com/Ut1HDHK.png
 
+690 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4f54-Srvf)[sage] 投稿日：2023/02/05(日) 14:15:43.71 ID:yhJjxIUI0 [2/5]
+ヤムチャLoRAあげてみたで
+yamchaで呼び出しや
 
+https://mega.nz/file/yF4jFDpC#S4viGQ5154YT5X2ZersFZHrG00t82riH_3UMvfrMTbA
 
+696 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4f54-Srvf)[sage] 投稿日：2023/02/05(日) 14:24:13.96 ID:yhJjxIUI0 [3/5]
+>>690
+Majinaiも一応
+https://majinai.art/ja/i/kdQ5nBW
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Wd0hymycoQ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Wd0hymycoQ.png]]
+https://majinai.art/ja/i/kdQ5nBW
+
+**143スレ66 sybian_LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1675607115/66
+https://huggingface.co/hakuto/sybian_LoRA/tree/main
+=|BOX|
+66 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cf28-4osW)[sage] 投稿日：2023/02/06(月) 00:27:46.49 ID:XE/Hxpq50
+sd1.5で学習させたLoRAをnaiで使う実験
+顔や絵柄への影響を抑えて構図だけ取り出せそう
+
+https://huggingface.co/hakuto/sybian_LoRA/tree/main
+
+NAI https://majinai.art/i/5kFLJ7q.webp
+BOM https://majinai.art/i/BEj6HOh.webp
+AOM2 https://majinai.art/i/TIbyzNM.webp
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/i3iPvJXuE3-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/i3iPvJXuE3.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KDzKaz7r4Y-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/KDzKaz7r4Y.png]]  [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Q4XSfecaOV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Q4XSfecaOV.png]]
+
+**143スレ109 ルールカLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1675607115/109
+https://huggingface.co/dawchan929/GundamZ_ru-ruka_LoRA/tree/main
+=|BOX|
+109 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4fbf-EOzK)[sage] 投稿日：2023/02/06(月) 03:17:26.64 ID:/8bA1juM0
+マイナーだけどガンダムZZのルールカLoRA作った　まだまだ未完成だけどそこそこ出る https://huggingface.co/dawchan929/GundamZ_ru-ruka_LoRA/tree/main
+512×968とかの縦長で出すと安定しやすい　出すのにモデルはElyOrangemix&Elysium1101_base0.5_M00_0.5使った　
+https://imgur.com/bthljaR.png
+https://imgur.com/Jot5g9M.png
+https://imgur.com/GRkkyfX.png
+https://imgur.com/Gv2a4p8.png
+https://imgur.com/YwgvrkY.png
+アビス系列でも出る https://imgur.com/3XF1wjR.png
+
+112 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4fbf-qZl6)[sage] 投稿日：2023/02/06(月) 03:25:44.03 ID:/8bA1juM0
+>>109
+これインスタンスプロンプト忘れてたわruruka176や
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kBwSmfEUgS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/kBwSmfEUgS.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/oNLLx6jVRI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/oNLLx6jVRI.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TuN60jGgpT-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TuN60jGgpT.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/duMck5QIPa-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/duMck5QIPa.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/x_mzJjvSBX-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/x_mzJjvSBX.png]]
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iBLSenyXGL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/iBLSenyXGL.png]]
+
+**143スレ295 backpack
+https://fate.5ch.net/test/read.cgi/liveuranus/1675607115/295
+https://huggingface.co/SenY/LoRA/resolve/main/backpack.safetensors
+=|BOX|
+295 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f86-v2wi)[] 投稿日：2023/02/06(月) 14:21:08.00 ID:O/3xFXtY0
+ヨシ！
+https://i.imgur.com/d54qokC.png
+https://i.imgur.com/PMRzOmv.png
+https://i.imgur.com/m4WHMWA.png
+https://i.imgur.com/4n1ADMR.png
+https://i.imgur.com/HmGfGud.png
+https://i.imgur.com/rmVdfXp.png
+https://i.imgur.com/Uh2NKow.png
+https://i.imgur.com/KtoT4cV.png
+https://i.imgur.com/lrkVggt.png
+https://i.imgur.com/wcphMjA.jpg
+https://huggingface.co/SenY/LoRA/resolve/main/backpack.safetensors
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4_wNJnohn4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4_wNJnohn4.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/owWNKKpj7U-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/owWNKKpj7U.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8o8OMrsOi8-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/8o8OMrsOi8.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BOjDvXjloL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BOjDvXjloL.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZDHgz6doRf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ZDHgz6doRf.png]] 
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TZrRkPC3Bz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TZrRkPC3Bz.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lFmUiXb2xo-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/lFmUiXb2xo.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/F02j5fBLb3-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/F02j5fBLb3.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dsEcVcsMaN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dsEcVcsMaN.png]] 

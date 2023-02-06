@@ -74,39 +74,6 @@ python3 --version
 ||=
 
 
-
-**AUTOMATIC WebUIのインストール
-まず以下コマンドを実行
-=|BOX|
-sudo apt update
-sudo apt upgrade -y
-||=
-
-
-
-次に以下コマンドを実行する 
-=|BOX|
-sudo apt install wget git python3 python3-venv -y
-sudo apt install libgl1 -y
-bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
-||=
-※ WSL2の場合 https://github.com/AUTOMATIC1111/stable-diffusion-webui#automatic-installation-on-linux に書いてあるコマンドを実行するだけでは足らないため2行目のコマンドを足している
-
-この時点ではまだckptファイルを置いていないため最後のコマンド実行後にエラーが起こるはず
-=|BOX|
-No checkpoints found. When searching for checkpoints, looked at:
- - file /home/xxx/stable-diffusion-webui/model.ckpt
- - directory /home/xxx/stable-diffusion-webui/models/Stable-diffusion
-Can't run without a checkpoint. Find and place a .ckpt file into any of those locations. The program will exit.
-||=
-
-**ckptなど置く
-Windowsのエクスプローラで \\wsl$ にアクセスするとWSL2のLinuxが一覧表示されるので、
-https://image01.seesaawiki.jp/n/h/nai_ch/G0zqfPvbtW.png 
-
-\\wsl$\Ubuntu-22.04\home\<Ubuntuのユーザー名>\stable-diffusion-webui\models\Stable-diffusion に ckpt を置く
-※同じやり方でVAEやhypernetworksの下にファイルが置けます
-
 **CUDAのインストール
 CUDA 11.x の最新版である11.8をインストールする 
 ''&color(#ff0000){※ CUDA 11.x台をインストールすること! 2022/12/10現在、最新である12.xをインストールするとxformersがビルドできない}''
@@ -134,6 +101,45 @@ export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 =|BOX|
 source .bashrc
 ||=
+
+**WSL2の再起動
+Windows側でコマンドプロンプトかPowerShellを開き、以下のコマンドを実行
+=|BOX|
+wsl --shutdown
+||=
+コマンドが完了したらUbuntuを再度開く
+
+
+**AUTOMATIC WebUIのインストール
+まず以下コマンドを実行
+=|BOX|
+sudo apt update
+sudo apt upgrade -y
+||=
+
+次に以下コマンドを実行する 
+=|BOX|
+sudo apt install wget git python3 python3-venv -y
+sudo apt install libgl1 -y
+bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+||=
+※ WSL2の場合 https://github.com/AUTOMATIC1111/stable-diffusion-webui#automatic-installation-on-linux に書いてあるコマンドを実行するだけでは足らないため2行目のコマンドを足している
+
+この時点ではまだckptファイルを置いていないため最後のコマンド実行後にエラーが起こるはず
+=|BOX|
+No checkpoints found. When searching for checkpoints, looked at:
+ - file /home/xxx/stable-diffusion-webui/model.ckpt
+ - directory /home/xxx/stable-diffusion-webui/models/Stable-diffusion
+Can't run without a checkpoint. Find and place a .ckpt file into any of those locations. The program will exit.
+||=
+
+**ckptなど置く
+Windowsのエクスプローラで \\wsl$ にアクセスするとWSL2のLinuxが一覧表示されるので、
+https://image01.seesaawiki.jp/n/h/nai_ch/G0zqfPvbtW.png 
+
+\\wsl$\Ubuntu-22.04\home\<Ubuntuのユーザー名>\stable-diffusion-webui\models\Stable-diffusion に ckpt を置く
+※同じやり方でVAEやhypernetworksの下にファイルが置けます
+
 
 **xformersの導入
 2023/01/23時点で1111標準でインストールされるようになった

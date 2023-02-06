@@ -78,7 +78,7 @@
 ***　ひだまりスケッチ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|(masterpiece, best quality,hyper extreme detailed,high definition, illustration), ({{{yuno (hidamari sketch)}}},{{{aoki ume}}},{wide face},brown eyes, brown hair, short hair, x hair ornament,small breasts),(&#91;&#91;red apron]],&#91;&#91;&#91;&#91;school uniform]]]],&#91;&#91;white shirt]],red skirt),|sketch,gasai yuno, frown,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,|ひだまりスケッチ|ゆの|クオリティ上昇系プロンプトは必須になるが、その分バラつきが出る|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WOQAQb_LJB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/WOQAQb_LJB.png]]|
+|{yuno_(hidamari_sketch),hidamari_sketch},[game cg],brown eyes, brown hair,frizzy hair, x hair ornament,school uniform, red pinafore dress,dress shirt, red skirt, loli face,solo,|frown,sketch,glowing eyes,wavy hair,|ひだまりスケッチ|ゆの|あの特徴的な絵柄が再現されないので仕上がりがかなりブレる|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/a4tCwYVEY5.png)|
 |}
 
 ***　干物妹！うまるちゃん
