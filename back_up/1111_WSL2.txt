@@ -73,7 +73,6 @@ cd ~
 python3 --version
 ||=
 
-
 **CUDAのインストール
 CUDA 11.x の最新版である11.8をインストールする 
 ''&color(#ff0000){※ CUDA 11.x台をインストールすること! 2022/12/10現在、最新である12.xをインストールするとxformersがビルドできない}''
@@ -92,14 +91,9 @@ sudo apt install libcudnn8
 sudo apt install libcudnn8-dev
 ||=
 
-その後/home//<Ubuntuのユーザー名> にある .bashrc に以下を書き加える
+その後/home/<Ubuntuのユーザー名> にある .bashrc と .profile に以下を書き加える
 =|BOX|
 export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
-||=
-
-書き加えたら以下コマンド実行
-=|BOX|
-source .bashrc
 ||=
 
 **WSL2の再起動
@@ -108,7 +102,6 @@ Windows側でコマンドプロンプトかPowerShellを開き、以下のコマ
 wsl --shutdown
 ||=
 コマンドが完了したらUbuntuを再度開く
-
 
 **AUTOMATIC WebUIのインストール
 まず以下コマンドを実行

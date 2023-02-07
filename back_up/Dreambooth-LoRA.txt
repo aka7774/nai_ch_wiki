@@ -206,100 +206,15 @@ number_of_generation:作成する枚数
 + 出来上がりを待つ
 
 ***コマンドライン版を使う場合
-+ lora_train_command_line.py にパラメーターを書く
+1. lora_train_command_line.py にパラメーターを書く
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/C1tEUj_9N8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/C1tEUj_9N8.png]]
 設定を書き込むのはlora_train_command_line.pyの最初の方あたり。学習ベースになるモデル、学習素材フォルダの場所、出力先は必ず設定する。わからんところはそのままにしとく。
 以下lora_train_command_line.py冒頭あたりの設定部分の雑な日本語訳
 [+]
-=|BOX|
-class ArgStore:
-    # sd スクリプトのすべての可能な入力全体を表します。 重要度の高いものから順に並べられています
-    def __init__(self):
-        # 重要 このあたりは変更する可能性が最も高いやつ
-        self.base_model: str = r""  # 学習させるベースモデルの場所を右みたいに書いてな r"E:\sd\stable-diffusion-webui\models\Stable-diffusion\nai.ckpt"
-        self.img_folder: str = r""  # 学習させる素材画像フォルダの場所書いてな　下記のガイドラインに添って配置してな
-                                    # これがフォルダ配置ガイドや: https://rentry.org/2chAI_LoRA_Dreambooth_guide_english#for-kohyas-script
-        self.output_folder: str = r""  # 出力先のフォルダをここに設定するやで。学習途中のやつも最終結果もここに出すで
-        self.change_output_name: Union[str, None] = None  # 出力ファイル名を変更する？
-        self.save_json_folder: Union[str, None] = None  # オプション、設定の json フォルダーをここで設定した場所に保存します。
-        self.load_json_path: Union[str, None] = None  # オプション、json ファイルをロードすると、構成が一致するように部分的に変更されます。
-        self.json_load_skip_list: Union[list[str], None] = None  # ユーザーがjsonをロードするときにスキップするものを定義できるようにします,
-                                                                 # 重要: デフォルトでは、すべてのパスを含むすべてをロードします。
-                                                                 # 除外する形式は次のようになります: ["base_model", "img_folder", "output_folder"]
-        self.multi_run_folder: Union[str, None] = None  # オプション、スクリプトによって生成された json を含むフォルダーに設定すると、それらのスクリプトを使用してトレーニングが開始されます。
-                                                        # すべてが確実にロードされるように、json_load_skip_list を無視することに注意してください。
-                                                        # 重要: これにより、ここで設定されたすべてのパラメーターも無視され、代わりに json ファイル内のすべてのパラメーターが使用されます。
-        self.save_json_only: bool = False  # トレーニングを行わずに json を生成したい場合は true に設定
-
-        self.net_dim: int = 128  # ネットワーク dim、128 が最も一般的ですが、これよりも少ない値で動作する可能性があります
-        self.alpha: float = 64  # 学習用のスカラーを表す。アルファ値が低いほど、1ステップあたりの学習量は少なくなる
-                                # 旧来の方法で学習させたい場合は、dimと同じ数値に設定する
-        # スケジューラのリスト: linear, cosine, cosine_with_restarts, polynomial, constant, constant_with_warmup
-        self.scheduler: str = "cosine_with_restarts"  # 学習率に関するスケジューラ。それぞれ特定の処理を行う
-        self.cosine_restarts: Union[int, None] = 1  # オプション,  再起動する回数を表す. cosine_with_restartsを使っている場合のみ重要。
-        self.scheduler_power: Union[float, None] = 1  # オプション, 多項式のべき乗を表します。多項式を使用している場合のみ重要。
-        self.warmup_lr_ratio: Union[float, None] = None  # オプション, 与えられた比率に基づいて，ウォームアップのステップ数を計算する．
-                                                         # constant_with_warmupを使用している場合は必ず設定してください。
-                                                         # 
-        self.learning_rate: Union[float, None] = 1e-4  # オプション,  設定しない場合、adamWのようにlrは1e-3に設定される。個人的には、lrが低い方が少し良さそうなので、実際に設定することをお勧めします。
-        self.text_encoder_lr: Union[float, None] = None  # オプション, テキストエンコーダの特定のlrを設定する、これはベースlrを上書きすると思う。
-        self.unet_lr: Union[float, None] = None  # オプション, unetに特定のlrを設定、これはベースlrを上書きすると思います。 無視する場合はNone
-        self.num_workers: int = 1  # 画像の読み込みに使用されるスレッドの数、低いと高速化される。
-                                   # エポックの開始は速くなるが、データのロードは遅くなる。ここでの仮定は
-                                   # この値を小さくすると学習時間が長くなる # と想定している。
-        self.persistent_workers: bool = True  # ワーカーを永続化させ、エポック間の遅延をさらに減らす/なくす。
-
-        self.batch_size: int = 1  # 一度に処理される画像の枚数。
-                                  # 12gbのVRAMで512レゾの場合、最大6バッチサイズになります。
-        self.num_epochs: int = 1  # エポック数、もし最大ステップ数を設定した場合、この値はステップ数を計算しないので無視される。
-        self.save_at_n_epochs: Union[int, None] = 1  # オプション, エポックごとに保存する頻度を設定、Noneと書くと保存しない。
-        self.keep_tokens: Union[int, None] = None  # オプション, 先頭に書いたトークンをキープするかどうか。Noneと書くと何もしない
-        self.max_steps: Union[int, None] = None  # オプション, ステップ数を決めている場合、直接設定することができる。設定しない場合はNoneと書く
-
-        # このあたりからは猛者は変えるかもしれない設定
-        self.train_resolution: int = 512
-        self.min_bucket_resolution: int = 320
-        self.max_bucket_resolution: int = 960
-        self.lora_model_for_resume: Union[str, None] = None  # オプション, 学習を継続するための入力ローラを受け取る。
-                                                             # 正確にはそうあるべきでないが、動作する。
-        self.save_state: bool = False  # OPTIONAL, 学習状態を保存して学習を継続するためのもの, Falseは無視する。
-        self.load_previous_save_state: Union[str, None] = None  # オプション, トレーニングの状態をロードして継続的なトレーニングに利用する、設定しないならNone
-        self.training_comment: Union[str, None] = None  # オプション, アクティベーショントークンのようなものを
-                                                        # メタデータに入れるには最適な方法。
-        self.unet_only: bool = False  # OPTIONAL, unetだけを学習させるように設定する。
-        self.text_only: bool = False  # OPTIONAL, テキストエンコーダの学習のみを行うように設定する。
-
-        # ここからはマジでガチ勢向けの設定
-        self.reg_img_folder: Union[str, None] = None  # オプション, 設定しない場合はNoneと書く
-        self.clip_skip: int = 2  # アニメ系のモデルで学習する場合は、ほとんどのモデルがそのように設計されているので、この値を2にしておく。
-        self.test_seed: int = 23  # これは「再現可能なシード」であり、基本的にこのシードに設定すれば、
-                                  # 学習用画像からプロンプトを入力し、それに近い表現を得ることができるはずである。
-        self.prior_loss_weight: float = 1  # これはDreamboothと同じように、LoRAの学習に必要な損失重み付けである。
-        self.gradient_checkpointing: bool = False  # オプション, グラデーションのチェックポイントを有効にする．
-        self.gradient_acc_steps: Union[int, None] = None  # オプション, ワイも実際何かわからんけど設定できるようにしといた
-        self.mixed_precision: str = "fp16"  # もしbf16を使えるなら使ったほうがいい。
-        self.save_precision: str = "fp16"  # bf16でも保存できるが、汎用的ではないので、fp16で保存しておくことをお勧めします。
-        self.save_as: str = "safetensors"  # pt, ckpt, safetensorsのどれかで保存できるよ
-        self.caption_extension: str = ".txt"  # .captions,形式も使えるけどwd1.4taggerはtxtで出力するから、txtをデフォルトとする。
-        self.max_clip_token_length = 150  #  75, 150, または225にすることができると思う。
-        self.buckets: bool = True
-        self.xformers: bool = True
-        self.use_8bit_adam: bool = True
-        self.cache_latents: bool = True
-        self.color_aug: bool = False  #  重要: ccache_latents と衝突するので、どちらか一方だけをオンにすること!
-        self.flip_aug: bool = False
-        self.vae: Union[str, None] = None  #  特定のVAEを使わない場合、結果を悪化させるだけのようなので、おそらく使用しない方がよいでしょう。
-        self.no_meta: bool = False  # safetensorsに保存されるメタデータが削除されます(これは残しておく必要があります)。
-        self.log_dir: Union[str, None] = None  # ログ出力する？ほとんどの人にとって有益なものではありません。.
-
-    # 残りのコードで使用される dict を作成し、json の保存と読み込みを容易にします。
-    @staticmethod
-    def convert_args_to_dict():
-        return ArgStore().__dict__
-||=
+#include(lora_train_command_line.py)
 [END]
-+ run_command_line.batを実行
-+ 出来上がりを待つ
+2. run_command_line.batを実行
+3. 出来上がりを待つ
 
 **Linux(wslやクラウドGPUニキ)の場合
 
@@ -450,6 +365,8 @@ H:\stablediffusion\stable-diffusion-webui\extensions\sd-webui-additional-network
 Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
 一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される
 最新のLora(0.4.0)で作ったやつも使える
+
+
 
 
 

@@ -13,10 +13,10 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 
 
 *リソース(リンク集)
-+Civitai | Every model in one place｜https://civitai.com/　~~モデルアップロードプラットフォーム。見やすくてよき
 +https://rentry.org/sdmodels ~~%%ここ見ときゃいい感はある。膨大な量のリンク集%% 残念ながら2022年11月以降更新されていない。
 ++ githubに最新のソースが有りました https://github.com/questianon/sdupdates
 +Models - Hugging Face - https://huggingface.co/models?pipeline_tag=text-to-image&sort=modified　~~自然言語処理関連のライブラリ開発や人工知能のコミュニティを運営しているアメリカ企業のサイト。充実。爆速。無料。
++Civitai | Every model in one place｜https://civitai.com/　~~モデルアップロードプラットフォーム。見やすくてよき
 +/hdg/ Stable Diffusion Models Cookbook - https://rentry.org/hdgrecipes#g-anons-unnamed-mix-e93c3bf7 ~~海外ニキによる様々なマージモデルの一覧
 +https://rentry.org/hdgfaq ~~スレでよく話題に出るCondom Belt(Embed)とか各種有用Embed＆HyperNetwork等
 +https://gitgud.io/gayshit/makesomefuckingporn ~~スレでよく話題に出る4chanニキ達によるLoRa集
@@ -214,3 +214,5 @@ https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
 *スレ住民作成LoRA
 →LoRAとはなんぞや→ローカル部[[Dreambooth-LoRA]]
 →スレ住民制作LoRA集→移動しました[[Lora学習成果]]
+
+
