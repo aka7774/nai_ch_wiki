@@ -91,9 +91,17 @@ sudo apt install libcudnn8
 sudo apt install libcudnn8-dev
 ||=
 
-その後/home/<Ubuntuのユーザー名> にある .bashrc と .profile に以下を書き加える
+その後/home/<Ubuntuのユーザー名> にある 「.bashrc」「.profile」に以下を書き加える
 =|BOX|
 export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+||=
+
+/home/<Ubuntuのユーザー名>/.bash_profile (無い場合は新規作成)に以下を書き加える
+=|BOX|
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+if [[ -f ~/.bashrc ]] ; then
+    . ~/.bashrc
+fi
 ||=
 
 **WSL2の再起動

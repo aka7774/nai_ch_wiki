@@ -31,42 +31,42 @@ class ArgStore:
                                  # 旧来の方法で学習させたい場合は、dimと同じ数値に設定する
         # スケジューラのリスト: linear, cosine, cosine_with_restarts, polynomial, constant, constant_with_warmup
         self.scheduler: str = "cosine_with_restarts"     # 学習率に関するスケジューラ。それぞれ特定の処理を行う
-        self.cosine_restarts: Union[int, None] = 1       # オプション,  再起動する回数を表す. cosine_with_restartsを使っている場合のみ重要。
-        self.scheduler_power: Union[float, None] = 1     # オプション, 多項式のべき乗を表します。多項式を使用している場合のみ重要。
+        self.cosine_restarts: Union[int, None] = 1       # オプション, 再起動回数を表す. cosine_with_restartsを使っている場合のみ重要。
+        self.scheduler_power: Union[float, None] = 1     # オプション, 多項式の累乗を表します。多項式を使用している場合のみ重要。
         self.warmup_lr_ratio: Union[float, None] = None  # オプション, 与えられた比率に基づいて，ウォームアップのステップ数を計算する．
                                                          # constant_with_warmupを使用している場合は必ず設定してください。
-                                                         # 
-        self.learning_rate: Union[float, None] = 1e-4    # オプション,  設定しない場合、adamWのようにlrは1e-3に設定される。個人的には、lrが低い方が少し良さそうなので、実際に設定することをお勧めします。
+                                                         # Noneと書くと設定しない
+        self.learning_rate: Union[float, None] = 1e-4    # オプション,  設定しない場合lrはadamWに従って1e-3に設定される。個人的にはlrが低い方が少し良さそうなのでそう設定することをお勧めします。
         self.text_encoder_lr: Union[float, None] = None  # オプション, テキストエンコーダの特定のlrを設定する、これはベースlrを上書きすると思う。
         self.unet_lr: Union[float, None] = None          # オプション, unetに特定のlrを設定、これはベースlrを上書きすると思います。 無視する場合はNone
-        self.num_workers: int = 3  # 画像の読み込みに使用されるスレッドの数、低いと高速化される。
+        self.num_workers: int = 1  # 画像の読み込みに使用されるスレッドの数、低いと高速化される。
                                    # エポックの開始は速くなるが、データのロードは遅くなる。ここでの仮定は
-                                   # この値を小さくすると学習時間が長くなる # と想定している。
-        self.persistent_workers: bool = True  # ワーカーを永続化させ、エポック間の遅延をさらに減らす/なくす。
+                                   # この値を小さくすると学習時間が長くなると想定している。
+        self.persistent_workers: bool = True  # ワーカーを永続化させ、エポック間の遅延をさらに減らす/なくす。ただし、メモリ使用量が増加する可能性があります
 
-        self.batch_size: int = 5  # 一度に処理される画像の枚数。
-                                  # 12gbのVRAMで512レゾの場合、最大6バッチサイズになります。
-        self.num_epochs: int = 2  # エポック数、もし最大ステップ数を設定した場合、この値はステップ数を計算しないので無視される。
+        self.batch_size: int = 1  # 一度に処理される画像の枚数。
+                                  # 12GBのVRAMで512の場合、最大6バッチサイズになります。
+        self.num_epochs: int = 1  # エポック数、もし最大ステップ数を設定した場合、この値はステップ数を計算しないので無視される。
         self.save_at_n_epochs: Union[int, None] = 1  # オプション, エポックごとに保存する頻度を設定、Noneと書くと保存しない。
-        self.shuffle_captions: bool = True           # オプション,キャプションをシャッフルして学習させる。Trueで有効、Falseで無効
-        self.keep_tokens: Union[int, None] = 3       # オプション, 先頭に書いたトークンをキープするかどうか。Noneと書くと何もしない
+        self.shuffle_captions: bool = True           # オプション, キャプションをシャッフルして学習させる。Trueで有効、Falseで無効
+        self.keep_tokens: Union[int, None] = 1       # オプション, 先頭に書いたトークンをキープするかどうか。Noneと書くと何もしない
         self.max_steps: Union[int, None] = None      # オプション, ステップ数を決めている場合、直接設定することができる。設定しない場合はNoneと書く
 
         # このあたりからは猛者は変えるかもしれない設定
         self.train_resolution: int = 512
         self.min_bucket_resolution: int = 320
         self.max_bucket_resolution: int = 960
-        self.lora_model_for_resume: Union[str, None] = None  # オプション, 学習を継続するための入力ローラを受け取る。
-                                                             # 正確にはそうあるべきでないが、動作する。
-        self.save_state: bool = False  # OPTIONAL, 学習状態を保存して学習を継続するためのもの, Falseは無視する。
+        self.lora_model_for_resume: Union[str, None] = None  # オプション, 入力LoRAから学習を継続する。
+                                                             # 正確には”そうあるべき”方法でないが動作します。
+        self.save_state: bool = False  # オプション, 学習状態を保存して学習を継続するためのもの, Falseは無視する。
         self.load_previous_save_state: Union[str, None] = None  # オプション, トレーニングの状態をロードして継続的なトレーニングに利用する、設定しないならNone
         self.training_comment: Union[str, None] = None  # オプション, アクティベーショントークンのようなものを
-                                                        # メタデータに入れるには最適な方法。
+                                                        # メタデータに入れるには最適な方法。現時点では機能していないようです
         self.unet_only: bool = False  # OPTIONAL, unetだけを学習させるように設定する。
         self.text_only: bool = False  # OPTIONAL, テキストエンコーダの学習のみを行うように設定する。
 
-        # ここからはマジでガチ勢向けの設定
-        self.reg_img_folder: Union[str, None] = None  # オプション, 正則化画像フォルダ　設定しない場合はNoneと書く 
+        # これらは、変更する可能性が最も低いものです
+        self.reg_img_folder: Union[str, None] = None  # オプション, 正則化画像フォルダの場所を設定　設定しない場合はNoneと書く 
         self.clip_skip: int = 2   # アニメ系のモデルで学習する場合は、ほとんどのモデルがそのように設計されているので、この値を2にしておく。
         self.test_seed: int = 23  # これは「再現可能なシード」であり、基本的にこのシードに設定すれば、
                                   # 学習用画像からプロンプトを入力し、それに近い表現を得ることができるはずである。
@@ -74,7 +74,7 @@ class ArgStore:
         self.gradient_checkpointing: bool = False  # オプション, グラデーションのチェックポイントを有効にする．
         self.gradient_acc_steps: Union[int, None] = None  # オプション, ワイも実際何かわからんけど設定できるようにしといた
         self.mixed_precision: str = "fp16"    # もしbf16を使えるなら使ったほうがいい。
-        self.save_precision: str = "fp16"     # bf16でも保存できるが、汎用的ではないので、fp16で保存しておくことをお勧めします。
+        self.save_precision: str = "fp16"     # bf16でも保存できるが、汎用的ではないのでfp16で保存しておくことをお勧めします。
         self.save_as: str = "safetensors"     # pt, ckpt, safetensorsのどれかで保存できるよ
         self.caption_extension: str = ".txt"  # .captions,形式も使えるけどwd1.4taggerはtxtで出力するから、txtをデフォルトとする。
         self.max_clip_token_length = 150      #  75, 150, または225にすることができると思う。
@@ -86,7 +86,7 @@ class ArgStore:
         self.flip_aug: bool = False
         self.vae: Union[str, None] = None      #  特定のVAEを使わない場合、結果を悪化させるだけのようなので、おそらく使用しない方がよいでしょう。
         self.no_meta: bool = False             # safetensorsに保存されるメタデータが削除されます(これは残しておく必要があります)。
-        self.log_dir: Union[str, None] = None  # ログ出力する？ほとんどの人にとって有益なものではありません。.
+        self.log_dir: Union[str, None] = None  # ログ出力する。ほとんどの人にとって有益なものではありません。.
 
     # 残りのコードで使用される dict を作成し、json の保存と読み込みを容易にします。
     @staticmethod

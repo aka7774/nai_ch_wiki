@@ -285,7 +285,8 @@ https://huggingface.co/2vXpSwA7/iroiro-lora
 
 **140スレ292 背景LoRA カラオケ屋
 https://fate.5ch.net/test/read.cgi/liveuranus/1675113816/292
-&#128317;https://50.gigafile.nu/0207-p660d189bdcde855461d31f847600ab9d
+%%&#128317;https://50.gigafile.nu/0207-p660d189bdcde855461d31f847600ab9d%%
+&#128317;https://huggingface.co/morisato/scenery_LoRA_01
 =|BOX|
 292今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ b3f4-2biX)2023/01/31(火) 19:32:09.71ID:Z9fY/2w+0
 キャラ学習勢の再現度や熱意はマジですげぇなと思いつつ
@@ -695,7 +696,7 @@ https://i.imgur.com/TBT6YKF.png
 
 **145スレ317 【pet bowl】Lora
 https://fate.5ch.net/test/read.cgi/liveuranus/1675709429/317
-http://jump.5ch.net/?https://mega.nz/folder/RZAUkRRZ#M4_4hb6sXxKfr2X3SS1vLQ
+https://mega.nz/folder/RZAUkRRZ#M4_4hb6sXxKfr2X3SS1vLQ
 =|BOX|
 317今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f8a-MLn2)2023/02/07(火) 23:48:22.33ID:F2ZEzgHB0>>350
 まだ調整中だけど、普段情報貰ってばかりなのでLoraをあげてみる
@@ -745,4 +746,26 @@ LoRAのfine tuningで作ってるから設定の参考に1mmぐらいはなる�
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lIA2gSeQQc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lIA2gSeQQc.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/stbQTaW5xr-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/stbQTaW5xr.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/XuAipKj0T2-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/XuAipKj0T2.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/m5t2wqqE8_-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/m5t2wqqE8_.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0T2UG4TNo5-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/0T2UG4TNo5.jpg]]
 
+**145スレ722 印象派風背景Lora
+https://fate.5ch.net/test/read.cgi/liveuranus/1675709429/722
+https://fate.5ch.net/test/read.cgi/liveuranus/1675709429/733
+https://files.catbox.moe/f963n6.safetensors
+=|BOX|
+722 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4f7b-ZnxP)[] 投稿日：2023/02/09(木) 00:25:23.05 ID:Wkxctnuc0 [1/3]
+印象派風背景Lora作ってみた
+欲しい奴おる？
+
+https://i.imgur.com/TFcXlYp.png
+https://i.imgur.com/wqyRy4p.png
+https://i.imgur.com/m0Vnlms.jpg
+https://i.imgur.com/e11je67.png
+733 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4f7b-ZnxP)[] 投稿日：2023/02/09(木) 00:46:03.38 ID:Wkxctnuc0 [2/3]
+>>725
+>>727
+https://files.catbox.moe/f963n6.safetensors
+
+インスタンスプロンプトはmpr、ネガティブにriver, seaあたりを入れんと水場しか出ないから注意や
+人物への影響を減らせるように<lora:○○:2〜3:OUTALL>の形で使うのがオススメやで
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/uP1QXiugkh-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/uP1QXiugkh.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/g_ux8IU4Dw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/g_ux8IU4Dw.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_6QT1vLJ6F-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/_6QT1vLJ6F.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iXFS_KxV16-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/iXFS_KxV16.png]]
 

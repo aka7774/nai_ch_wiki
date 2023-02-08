@@ -116,7 +116,7 @@ a. b. cをそれぞれzipで圧縮します。
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/4sWcoxXmcF.jpg)
 
-- アップロードされたファイルの行にある「↓」を右クリックしてURLをコピーしてメモっておく
+- アップロードされたファイルの行にある&color(#ff0000){ファイル名ではなく}「↓」を右クリックしてURLをコピーしてメモっておく
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Sxek2yNsj0.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/Sxek2yNsj0.jpg]]
 
@@ -148,12 +148,19 @@ https://huggingface.co/ユーザー名/nva-zunko/tree/main
 が出来ているはずです。
 
 ↓を押して zunko.safetensors をダウンロードします。
-stable-diffusion-webui/models/lora に設置します。
 
 * 14. 結果の確認
-
 手元の1111で動作確認しましょう。
-&color(#ff0000){Clip Skipは2にしといてね}
+1111起動後ColabのNotebookに戻り、左端の&#128193;を押して
+stable-diffusion-webui\models\Lora　を右クリックしてアップロードを押す
+手順13.でダウンロードした zunko.safetensors を選択
+
+1111のsettingタブ→stable diffusion→
+&color(#ff0000){Clip Skipを2にしといてね}
+
+txt2imgタブから&#127924;を押してLoRAを選択後Refreshを押して
+ダウンロードしたモデル zunko を選択するとプロンプトに <lora:zunko:1> が追加される。(もう一度押すと解除)
+
 
 好きなモデルで試すことが出来ますが、学習元のモデルは ACertainty です。
 https://huggingface.co/aka7774/fp16_safetensors/resolve/main/ACertainty-fp16.safetensors
