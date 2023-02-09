@@ -9,12 +9,23 @@ https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_compari
 kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツールが人気となっている。
 このページではsd-scripts関連の情報について雑に書いてある
 
+*公式情報
+
+**sd-scripts (kohya)
+一番はじめは作者が詳しく書いてくれている公式READMEを見よう！話はそれからだ！
+
+- ★公式LoRAガイド：sd-scripts/train_network_README-ja.md at main &#183; kohya-ss/sd-scripts | https://github.com/kohya-ss/sd-scripts/blob/main/train_network_README-ja.md
+- 公式タグ付けガイド：sd-scripts/fine_tune_README_ja.md at main &#183; kohya-ss/sd-scripts | https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md
+- 公式DreamBoothガイド：sd-scripts/train_db_README-ja.md at main &#183; kohya-ss/sd-scripts | https://github.com/kohya-ss/sd-scripts/blob/main/train_db_README-ja.md
+
+
+
 *参考資料・スレ住民による学習ガイド
 LoRA Training Guide　https://rentry.org/lora_train
 - 4chan有志によるLoRAトレーニング法ガイド（英語）
-LoRA 学習メモ　https://rentry.co/i5ynb
-- スレ住民によるLain・よしなが先生・野原ひろしLoRA作成者によるLoRAガイド（日本語）
-ソウリンちゃんLoRAの作成記録 https://rentry.co/sourin_chan
+LoRA 学習メモ　https://rentry.org/i5ynb
+- スレ住民によるLain・よしなが先生・野原ひろしLoRA作成者によるLoRAガイド（日本語）~~更新：2023-02-09｜低リソース学習(NIKKE)、低dim学習(ゆるキャン 犬山あおい)などを追加しました。
+ソウリンちゃんLoRAの作成記録 https://rentry.org/sourin_chan
 - スレ住民によるマルゼン式(ふたば有志のタグ付け手法の1つ)で作成したLoRA作成記録（日本語）
 Genshin Impact LoRA作成メモ https://rentry.org/genshin_lora
 - スレ住民によるkohya-ss氏制作のSDスクリプト(https://github.com/kohya-ss/sd-scripts )で次のキャラのLoRAを作成した。ポップアップ版使用。（日本語）
@@ -365,6 +376,7 @@ H:\stablediffusion\stable-diffusion-webui\extensions\sd-webui-additional-network
 Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
 一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される
 最新のLora(0.4.0)で作ったやつも使える
+
 
 
 

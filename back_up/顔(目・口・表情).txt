@@ -71,7 +71,7 @@
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
 |squinting eyes|細めた目|強調するといわゆる糸目になる。~~一枚目は強調なし、二枚目はカッコ五重で強調 ~~キツネ系糸目キャラに引っ張られるのか、顔に赤い模様が出ることがある。~~negativeにface paintとかを入れよう|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Hqcxw7JwEX-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Hqcxw7JwEX.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/T7TL3HsoPB-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/T7TL3HsoPB.png]]|
-|sleep|寝る|close eyes だとまつ毛が上向き( ^ω^ )になることが多いので~~まつ毛を下向き( &#728;ω&#728; )にしたい場合|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FVIH5SKnfc.png)|
+|sleep|寝る|close eyes だとまつ毛が上向き( ^ω^ )になることが多いので~~まつ毛を下向き( &#728;ω&#728; )にしたい場合~~目の色を指定している場合は目を閉じない|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FVIH5SKnfc.png)|
 |sharp eyes,slanted eyes,slit pupils|鋭い目つき|tsurime は効果が無いかもしれない(要検証)|https://image01.seesaawiki.jp/n/h/nai_ch/ic0pxwWX0S.png|
 |{{{{flame symbol in the pupils and iris}}}}|目の中の炎|瞳孔の変化の安定性向上バージョン顔のアップじゃないとあまり使えないflameをheartに変えればハート目など応用が効く|https://image02.seesaawiki.jp/n/h/nai_ch/rzJCjv5lnA.png|
 |devil eyes|悪魔の目|縦長の瞳孔を生成したいとき~~「snake pupils」だと白い瞳孔になりがちだったので黒い瞳孔を作りたいとき用~~「devil eyes」で黒い縦長の瞳孔が出やすくなる。~~「devil pupils」はsnakeと同様白い瞳孔が生成される。~~「snake eyes」はそもそも瞳孔が描かれないことがあるため打率はかなり低くなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/awsbTDlZnm-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/awsbTDlZnm.png]]|
