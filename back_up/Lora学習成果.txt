@@ -1,7 +1,7 @@
 #contents
 
 *スレ住民作成LoRA
-→LoRAとはなんぞや→ローカル部[[Dreambooth-LoRA]]
+→LoRA is 何？→追加学習の手法の一つ。小さくて速くてすごい差分→ローカル部[[Dreambooth-LoRA]]
 
 **131スレ762 足コキの構図
 https://fate.5ch.net/test/read.cgi/liveuranus/1673783208/762
@@ -768,4 +768,40 @@ https://files.catbox.moe/f963n6.safetensors
 人物への影響を減らせるように<lora:○○:2〜3:OUTALL>の形で使うのがオススメやで
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/uP1QXiugkh-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/uP1QXiugkh.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/g_ux8IU4Dw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/g_ux8IU4Dw.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_6QT1vLJ6F-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/_6QT1vLJ6F.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iXFS_KxV16-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/iXFS_KxV16.png]]
+
+**146スレ283 ぼかし・ポスタリゼーション・ノイズ・ネガ・モノクロ・拡散・モザイク・三角iroiro-LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1675934502/283
+https://huggingface.co/2vXpSwA7/iroiro-lora
+=|BOX|
+283 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 3f7e-F1up)[sage] 投稿日：2023/02/10(金) 16:05:10.98 ID:KoNAu3Yk0
+昨日の人形Loraをくっきりさせる実験の時に作ったぼかしLora…とその他色々、置いとく
+https://huggingface.co/2vXpSwA7/iroiro-lora
+ぼかしLoraをマージしたモデルで学習すると、出力がくっきりするLoraができる
+ただ、ディティールが失われがち、弱めにモデルにマージした方がいいと思う
+その他のLoraはまぁ…お遊びだよ、なにに使えるのかは分からん
+あとはこれはアップしてないけど実験中な物があるんだが
+ゆがみLora
+https://i.imgur.com/kV4iJUA.jpg
+てかてかLora
+https://i.imgur.com/g9fYVeR.jpg
+どうかね？
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yDYdTxNKDX-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/yDYdTxNKDX.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hBvoqDv4Ii-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/hBvoqDv4Ii.jpg]]
+
+**146スレ500 PANTORI
+https://fate.5ch.net/test/read.cgi/liveuranus/1675934502/500
+https://huggingface.co/NSKN/LORA
+=|BOX|
+500 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff61-8lmq)[sage] 投稿日：2023/02/11(土) 02:32:01.49 ID:5k81Dn9l0
+https://i.imgur.com/LjPNBO9.jpg
+https://i.imgur.com/pFLWKyo.jpg
+https://i.imgur.com/nqExOLX.png
+https://i.imgur.com/LWZsKwZ.png
+https://huggingface.co/NSKN/LORA
+
+指がかなり破綻するから根気よくガチャるか修正できる人用
+画風影響軽減する方法は見つけたけど手の安定はどうしようもなくてギブアップ供養や
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cBeqVl_F2N-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/cBeqVl_F2N.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/W5f6HeWqhs-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/W5f6HeWqhs.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qjsfXDT1OC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qjsfXDT1OC.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PnDzgOa7PR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/PnDzgOa7PR.png]]
+
 

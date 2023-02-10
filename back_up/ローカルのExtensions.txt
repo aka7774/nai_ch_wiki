@@ -77,9 +77,10 @@ deepl無料アカウントでapi制限キツいから更新は週1の予定
 
 Shivam Shiaro氏のレポを元に、低VRAMのGPUに最適化したDreamboothのトレーニング。
 
-- NMKDより速くて設定が細かいので主戦力っぽい。
+- %%NMKDより速くて設定が細かいので主戦力っぽい。%%最近はKohya版にお株を奪われ気味。
 - 手作業でコマンドからcu116をインストールする必要がある。
 - 環境によってさまざまなエラーが出るので英語読んで自己解決できると捗る
+- エラーや衝突を起こしやすいらしいので、画像生成用のwebUIとは別に専用の環境構築をしておくと無難。
 
 ** Smart Process
 
@@ -465,8 +466,8 @@ Added: 2023-01-06
 - 複数行テキストを入力すると1行1プロンプトで出力
 - 以下のような形式でプロンプト以外も指定可能
 =|BOX|
---prompt "プロンプトA" --negative_prompt "ネガティブプロンプトA" --outpath_samples "outputs/txt2img-images/A" --batch_size 2 --n_iter 5 --sampler_index 0 --cfg_scale 7 --steps 25 --seed 200000000
---prompt "プロンプトB" --negative_prompt "ネガティブプロンプトB" --outpath_samples "outputs/txt2img-images/B" --batch_size 2 --n_iter 2 --sampler_index 1 --cfg_scale 10 --steps 30 --seed 200000000
+--prompt "プロンプトA" --negative_prompt "ネガティブプロンプトA" --outpath_samples "outputs/txt2img-images/A" --batch_size 2 --n_iter 5 --sampler_name "Euler a" --cfg_scale 7 --steps 25 --seed 200000000
+--prompt "プロンプトB" --negative_prompt "ネガティブプロンプトB" --outpath_samples "outputs/txt2img-images/B" --batch_size 2 --n_iter 2 --sampler_name "Euler" --cfg_scale 10 --steps 30 --seed 200000000
 ||=
 -- 指定可能な要素
 --- --outpath_samples: string
@@ -481,6 +482,7 @@ Added: 2023-01-06
 --- --seed_resize_from_h: int
 --- --seed_resize_from_w: int
 --- --sampler_index: int
+--- --sampler_name: string
 --- --batch_size: int
 --- --n_iter: int
 --- --steps: int
@@ -491,6 +493,7 @@ Added: 2023-01-06
 --- --tiling: boolean
 --- --do_not_save_samples: boolean
 --- --do_not_save_grid: boolean
+
 
 
 
