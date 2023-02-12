@@ -45,57 +45,20 @@ https://rentry.org/lora_namakubi
 最新版のWEBUIが既に使用可能な状態ならセットアップ不要→[[LoRAの使用方法>https://seesaawiki.jp/nai_ch/d/Dreambooth-LoRA#content_13]]へ
 
 *インストール、初回セットアップ編
-1. エクスプローラーを開き、適当なフォルダ内で右クリック→git bash hereでgitのターミナルを開き、以下のコマンドを実行する
-> git clone https://github.com/kohya-ss/sd-scripts.git
-2. https://github.com/derrian-distro/LoRA_Easy_Training_Scripts から~~ lora_train_popup.py~~ lora_train_command_line.py~~ run_popup.bat~~ run_command_line.bat~~をダウンロード~~注) 「リンク先をファイルに保存」 ではなく リンク先に飛んでコードの右上の RAW ボタンを押してメモ帳みたいなテキストばっかりの画面を出して 「名前をつけてページを保存」
-あるいはCode→Download zipでダウンロードして解凍する(zipに入ってる.gitignore、LICENSE、README.mdは不要)
-
-3. スクリプトを sd-scripts フォルダにコピー
-
-4. README-ja.md に日本語の詳しい説明が書いてあるので読む
-=|PERL|
- train_network_README-ja.md: LoRAの学習について
- train_db_README-ja.md:DreamBoothのガイドです。LoRA等の追加ネットワークの学習にも同じ手順を使います。
- fine_tune_README_ja.md:キャプションとか
-||=
-- 初回セットアップ
---Python初めての場合、PowerShell初めての場合
-=|PERL|
-PowerShellを管理者として開きます。
-「Set-ExecutionPolicy Unrestricted」と入力し、Yと答えます。
-管理者のPowerShellを閉じます。
-||=
---sd-scripts フォルダで PowerShellかターミナルを開く (Shiftを押しながら右クリック)
---以下のコマンドを順番に入力する(コピペでOK)
-=|PERL|
-python -m venv venv
-.\venv\Scripts\activate
- 
-pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
-pip install --upgrade -r requirements.txt
-pip install -U -I --no-deps https://github.com/C43H66N12O12S2/stable-diffusion-webui/releases/download/f/xformers-0.0.14.dev0-cp310-cp310-win_amd64.whl
-
-cp .\bitsandbytes_windows\*.dll .\venv\Lib\site-packages\bitsandbytes\
-cp .\bitsandbytes_windows\cextension.py .\venv\Lib\site-packages\bitsandbytes\cextension.py
-cp .\bitsandbytes_windows\main.py .\venv\Lib\site-packages\bitsandbytes\cuda_setup\main.py
- 
-accelerate config
-||=
-なお、python -m venv〜の行で「python」とだけ表示された場合、py -m venv〜のようにpythonをpyに変更してください。
-
---accelerate config のあとに質問が出るので以下のように答える
-=|PERL|
-- This machine
-- No distributed training
-- NO
-- NO
-- NO
-- all
-- fp16
-||=
---初回セットアップ完了
-
-*あかちゃんLoraインストーラー
+**1.LoRA_Easy_Training_Scripts Installers
+-https://github.com/derrian-distro/LoRA_Easy_Training_Scripts/
+下記の学習の手順ので使うEasyTrainScriptsの人が作った簡易インストールスクリプト
+画面右の Releases の下の Installers をクリック > 下にスクロールして install_sd_scripts_v3.bat をダウンロードする
+右クリックして 管理者として実行すると
+sd-scripts本体とEasy_Train_Scriptsの両方をインストールして、インストール後の初期設定までやってくれる。
+うまくいかなかったら [[Gitをインストール>>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%c6%b3%c6%fe%ca%fd%cb%a1#content_2_2]] してリトライ
+わからないとき用画像↓
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/D_lYBs46Kx.png)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lKDWlTHI_G.png)
+&video(https://image01.seesaawiki.jp/n/h/nai_ch/9crBKdm8fu.webm)
+[END]
+**2.あかちゃんLoraインストーラー
 
 あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
 start.batと同じフォルダに入れて実行してください
@@ -106,12 +69,22 @@ start.batと同じフォルダに入れて実行してください
 - ダイアログ用(みかんせい)
 -- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts_easy_training.bat
 
-*LoRA_Easy_Training_Scripts Installers v1
--https://github.com/derrian-distro/LoRA_Easy_Training_Scripts/releases/tag/installers-v1
-EasyTrainScriptsの人が作った簡易インストールスクリプト
-sd-scripts用とkohya-ss用の2種がある。gitがセットアップ済みなら右クリック＞管理者として実行するだけ。
-sd-scripts用の場合、sd-scripts本体とEasy_Train_Scriptsの両方をインストールして、インストール後の初期設定までやってくれる。
+**3.GUI
+GUIといっても作者のsd-scriptsにパラメータを渡すだけや。性能は変わらん。一部パラメータ非対応のこともある。
+[+]
+-bmaltais版 GUI
+GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
+「Tools」タブにフォルダ配置補助機能がある。
+スクリプト版のパラメータの一部は設定出来ないかも？
+LoRA_Easy_Training_Scripts にインストールスクリプトがある。
 
+-ddPn08版 GUI - AUTOMATIC1111 SD WebUI エクステンション対応版
+WebUIのエクステンションに対応。スタンドアロンで動かすと上記のbmaltais版と似たような感じ
+- エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
+- 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
+- WebUI割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
+-- https://github.com/ddPn08/kohya-sd-scripts-webui
+[END]
 *学習用画像を置くフォルダの配置
 -作者の解説が詳しい [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
 
@@ -349,19 +322,6 @@ last.safetensors というファイルができる
 ||エポック毎に出力ファイルの名前を変える?|||
 |What do you want your output name to be?|出力ファイルの名前|省略時はオリジナルと一緒||
 [END]
-
-*GUI版
-lora_train_command_line.py のパラメータ記入の補助ツール
-GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
-「Tools」タブにフォルダ配置補助機能がある。
-スクリプト版のパラメータの一部は設定出来ないかも？
-
-*WebUIエクステンション版
-ddPn08ニキが作ってくれた中身はkohya版 sd-scripts WebUIがでたで。
-- エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
-- 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
-- WebUI割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
--- https://github.com/ddPn08/kohya-sd-scripts-webui
 
 *Loraの使用方法&aname(apply_lora)
 **使い方その1 WebUIに拡張機能をインストールして使う

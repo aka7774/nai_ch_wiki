@@ -151,6 +151,44 @@ magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 | autoencoder_fix_kl-f8-trinart_characters.vae.pt | https://huggingface.co/naclbit/trinart_derrida_characters_v2_stable_diffusion/resolve/main/autoencoder_fix_kl-f8-trinart_characters.ckpt |
 | vae-ft-mse-840000-ema-pruned.vae.pt | https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt |
 
+**146スレ903
+https://fate.5ch.net/test/read.cgi/liveuranus/1675934502/903
+https://3.gigafile.nu/0226-k9d4f1abb28e7772f9b4a443a0f2b6c09
+=|BOX|
+903 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8b62-t1ev)[sage] 投稿日：2023/02/12(日) 05:32:09.80 ID:+vhcFy+F0
+エラーが出るか出ないかギリギリにNAIのVAEを学習させたのを投下してみる
+https://3.gigafile.nu/0226-k9d4f1abb28e7772f9b4a443a0f2b6c09
+VAEフォルダ内に入れて再起動すれば出ると思うわ
+https://i.imgur.com/8g8a3Cw.jpg
+https://i.imgur.com/VQUnR4A.jpg
+モデルは上が7th_anime_v3_Cで下はetr_odysseyV2Fixを改良してる途中のもの
+特徴としては赤系の発色が強いのとNAIより細かい部分の描写が気持ち程度に変わる
+学習元が似ていれば相乗効果があるのかと思ったけど違うみたいでう&#65374;ん・・・
+色味の補正用にチューンするぐらいでしか手を出す意味はなさそう？
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2FozRbbNhy-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/2FozRbbNhy.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UhEvWI1z_e-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/UhEvWI1z_e.jpg]]
+
+**1147スレ7
+https://fate.5ch.net/test/read.cgi/liveuranus/1676175319/7
+https://13.gigafile.nu/0219-g5889812f354abd6e477960b6be9d941c
+ダウンロード期限  2023年2月19日(日)
+=|BOX|
+7今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8b62-t1ev)2023/02/12(日) 13:29:34.63ID:+vhcFy+F0>>29>>161
+サンイチ
+VAEってふりかけ未満の味の素程度の違いしか出ないじゃん・・・わざわざ使い分ける？って自分でも思ったんで需要がありそうなの作ってみたわ
+https://i.imgur.com/hffMiNQ.jpg
+https://i.imgur.com/CFeUHxU.jpg
+>>903と中身は同じなA(これいる？)
+NAIより薄くしたいがAnything-v3.0は薄すぎるから丁度いいのが欲しい用のB
+ガンマ値を高くした時のような感じになるHighGamma
+AnyVAEが色あせるのを逆手に取って作ったセピア風になるSepia
+中には--no-half-vaeがいるVAEがあるかもしれん
+その時はすまん・・・
+https://13.gigafile.nu/0219-g5889812f354abd6e477960b6be9d941c
+anything-v3.0の色あせるVAEってどこで手に入れるんだよってのもあると思うんで入れておいた(extensionのtoolkitで抽出)
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/63BIZEIWgz-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/63BIZEIWgz.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JrFhvC7dN3-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/JrFhvC7dN3.jpg]]
+
 ----
 
 * HyperNetwork

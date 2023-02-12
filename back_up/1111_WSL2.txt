@@ -81,6 +81,7 @@ https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target
 
 **cuDNN のインストール
 Windows側で https://developer.nvidia.com/rdp/cudnn-archive から cuDNN v8.6.0 (October 3rd, 2022), for CUDA 11.x の Local Installer for Ubuntu22.04 x86_64 (Deb) をダウンロードし、\\wsl$\Ubuntu-22.04\home\<Ubuntuのユーザー名> に置く
+※DLするにはNVIDIAの開発者アカウントが必要
 
 その後Ubuntu側で/home/<Ubuntuのユーザー名>に移動し、以下コマンド実行
 =|BOX|
@@ -627,6 +628,7 @@ D:\stable-diffusion-webui\training　フォルダを指定する場合は
 modelsやoutputsフォルダを外出しにしているので、一度環境を作ってしまえば再インストールも容易
 セットアップ時に何かエラーが出た場合は、あれこれ弄る前にリストアしてやり直す事をお勧めする
 [END]
+
 
 
 

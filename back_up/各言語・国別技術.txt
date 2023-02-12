@@ -51,6 +51,8 @@ high definition, より効果が高く見える
 [END]
 *上記ネガティブプロンプトの要素別簡略化版
 [+]
+**元素法典V1+V2の冒頭で汎用ネガティブとして紹介されているもの
+longbody,lowres,bad anatomy,bad hands,missing fingers,pubic hair,extra digit,fewer digits,cropped,worst quality,low quality,text,error,normal quality,jpeg artifacts,signature,watermark,username,blurry,bad feet,
 **全身(奇形回避)
 (long body :1.3), bad anatomy , liquid body, malformed, mutated,anatomical nonsense ,bad proportions, uncoordinated body, unnatural body, disfigured, ugly, gross proportions ,mutation, disfigured, deformed, (mutation, poorlydrawn :1.2)
 **手
