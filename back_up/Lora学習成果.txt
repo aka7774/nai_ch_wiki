@@ -754,8 +754,44 @@ https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MsCw0wLw5f-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/MsCw0wLw5f.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nxcDfSJCCf-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/nxcDfSJCCf.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/G2nD_XXD2g-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/G2nD_XXD2g.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BYc1foEehj-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/BYc1foEehj.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ycv4Z7WhO3-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/ycv4Z7WhO3.jpg]] 
 
+***147スレ272仰け反りLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1676175319/272
+https://huggingface.co/NSKN/LORA
+=|BOX|
+272 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff61-8lmq)[sage] 投稿日：2023/02/12(日) 21:03:17.21 ID:muk6BWN50
+https://huggingface.co/NSKN/LORA
+前スレ>>746の方だけど昨日話題にした仰け反り上げといたで
+りどみに書いてある階層指定適用したら殆ど画質影響受けずに仰け反ってくれるはずや
+手はすまん
 
+https://i.imgur.com/Q5hdbz5.jpg
+https://i.imgur.com/bfzH3l0.jpg
+https://i.imgur.com/ylOzJFu.png
+https://i.imgur.com/N7pxjEK.png
+https://i.imgur.com/AxZvxhj.png
+https://i.imgur.com/u1Rot6W.jpg
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/grB9zDnEB6-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/grB9zDnEB6.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0ZiRJLK3a6-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/0ZiRJLK3a6.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/X0ZjyBXS6z-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/X0ZjyBXS6z.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/849XZLE4SV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/849XZLE4SV.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/SNvrZpP9Gv-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/SNvrZpP9Gv.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8Bhc2Xckoy-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/8Bhc2Xckoy.jpg]]
 
+*** 148スレ118 人形
+https://fate.5ch.net/test/read.cgi/liveuranus/1676292962/118
+https://huggingface.co/2vXpSwA7/iroiro-lora
+
+=|BOX|
+拙作Lora置き場に人形Lora追加したぞー
+https://huggingface.co/2vXpSwA7/iroiro-lora
+でまぁサンプルなんだが、これが素のAOM2な（プロンプトはmasterpiece,1girlだけ）
+https://i.imgur.com/LaVe98y.jpg
+dollfie1はこうなる（上1、下0.5適用）
+https://i.imgur.com/qYrgn8r.jpg
+https://i.imgur.com/rvdDOcR.jpg
+dollfie2でこうなって
+https://i.imgur.com/2UFgZ3W.jpg
+https://i.imgur.com/mzlCSD8.jpg
+1と2を0.25づつ適用してこんな感じ
+https://i.imgur.com/0Q9SKbk.jpg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qzExqsRT_r-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/qzExqsRT_r.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D9GOtZlBiP-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/D9GOtZlBiP.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/rXRneKoJuQ-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/rXRneKoJuQ.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RxU9g4I0KI-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/RxU9g4I0KI.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IjK5JJpcu7-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/IjK5JJpcu7.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/285gPWVCP4-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/285gPWVCP4.jpg]] 
 ** アートスタイル・画風
 ***139スレ340 切り絵lora 萌え系lora
 https://fate.5ch.net/test/read.cgi/liveuranus/1674974603/340
@@ -906,25 +942,6 @@ https://i.imgur.com/g9fYVeR.jpg
 
 ----
 
-**新規追加分（後ほど各ジャンルに振り分ける）
-***147スレ272仰け反りLoRA
-https://fate.5ch.net/test/read.cgi/liveuranus/1676175319/272
-https://huggingface.co/NSKN/LORA
-=|BOX|
-272 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff61-8lmq)[sage] 投稿日：2023/02/12(日) 21:03:17.21 ID:muk6BWN50
-https://huggingface.co/NSKN/LORA
-前スレ>>746の方だけど昨日話題にした仰け反り上げといたで
-りどみに書いてある階層指定適用したら殆ど画質影響受けずに仰け反ってくれるはずや
-手はすまん
-
-https://i.imgur.com/Q5hdbz5.jpg
-https://i.imgur.com/bfzH3l0.jpg
-https://i.imgur.com/ylOzJFu.png
-https://i.imgur.com/N7pxjEK.png
-https://i.imgur.com/AxZvxhj.png
-https://i.imgur.com/u1Rot6W.jpg
-||=
-[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/grB9zDnEB6-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/grB9zDnEB6.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0ZiRJLK3a6-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/0ZiRJLK3a6.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/X0ZjyBXS6z-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/X0ZjyBXS6z.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/849XZLE4SV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/849XZLE4SV.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/SNvrZpP9Gv-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/SNvrZpP9Gv.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8Bhc2Xckoy-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/8Bhc2Xckoy.jpg]]
 
 
 

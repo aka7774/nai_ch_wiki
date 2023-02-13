@@ -201,6 +201,10 @@ https://huggingface.co/aka7774/fp16_safetensors/resolve/main/ACertainty-fp16.saf
 
 一応コードにコメント書くようにはしているつもり。
 
+正則化画像とキャプションテキストへの対応は古いノートブックが参考になるかも。
+古いのでそのまま実行しても動きません(そっちはもう直さない)
+[[kohya_sd-scripts_intro]]
+
 - Huggingfaceに最初にログインする
 -- get-pipとhuggingface-hubの相性が悪くて、先にログインしないとエラーになる(というバグが最近増えた。いずれ直るかも)
 - 環境の情報表示

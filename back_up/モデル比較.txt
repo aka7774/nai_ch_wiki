@@ -1,19 +1,57 @@
-** モデル比較
-- 同一プロンプトでモデルごとの出力画像の違いを見る。
-- ※XYプロットでCheckpointを変数に設定したようなもの。XYプロットだとクソデカ縦長画像になって見づらいのでページにした。
-- 目的：モデルごとの傾向や特徴を知る。理解する。
-- 注意：モデルにあわせたプロンプト記述法があったりするので、同一プロンプトで比べるのはかなり無理がある。プロンプトはモデルにあわせた使いこなしが大事。
-- 注意：これはモデルごとの特徴や傾向を知るために作った資料であって、モデルの優劣を判断しようというものではない。ここ重要。テストに出ます。いいね？
-- xformersの有効無効やGPUの種類、VAEの有無等、環境によって生成画像に差異が出る場合があるので、ここにあるのは参考例と考えること。
+** 概要
+- 同一プロンプトでモデルごとの出力画像の違いを見てみよう企画。
+- ※XYプロットでCheckpointを変数に設定したようなもの。XYプロットだとクソデカ縦長画像になってとても見づらいのでページにしてみた。
+- 目的：モデルごとの傾向や特徴を知ろう。
+- 注意：モデルにあわせたプロンプト記述法があったりするので、同一プロンプトで比べるのはかなり無理があります。プロンプトはモデルにあわせた使いこなしが大事。
+- 注意：これはモデルごとの特徴や傾向を知るために作った資料であって、モデルの優劣を判断しようというものではありません。ここ重要。テストに出ます。いいね？
+- xformersの有効無効やGPUの種類、VAEの有無等、環境によって生成画像に差異が出る場合があるので、ここにあるのは参考例と考えてください。
+-- ここでの比較ではxfomersは有効で、VAE sha256はdf3c506e51b7ee1dです。
 - 更にデータを追加しようとする猛者がいるなら、右方向にプロンプト例を追加、下方向にモデルを追加してください。
-- 猛者・勇者ニキに向けたTIPS（SettingでImages fileename patternを[model_name]にすると捗る。XYプロットを利用して複数Checkpointo選択して画像生成。Wikiは「添付」メニューからだと一度に10ファイルまでアップ可能）
+- 猛者・勇者ニキに向けたTIPS（SettingでImages filename patternを[model_name]にすると捗る。XYプロットを利用して複数Checkpointo選択して画像生成。Wikiは「添付」メニューからだと一度に10ファイルまでアップ可能）
 - 賢者へ。Wiki掲載を楽にする良いツールありませんか…？
+- 検索窓があったほうが良さそうなので付けました。
 
+** 生成パラメータ
+サンプルA
+[+]
+Prompt:
+>young woman, black hoodie, blonde hair, blue eyes, neutral background, 1girl, solo, masterpiece portrait
+Negative Prompt:
+>(low quality, worst quality:1.4)
+Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 8, Seed: 774, Size: 512x768, Clip skip: 2, ENSD: 31337
+[END]
 
-{| class="sort edit nanj_prompt_table"|
-|~w(400):モデル名 |~w(300):young woman, black hoodie, blonde hair, blue eyes, neutral background, 1girl, solo, masterpiece portrait ~~ Negative prompt: (low quality, worst quality:1.4) ~~ Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 8, Seed: 774, Size: 512x768, Clip skip: 2, ENSD: 31337, VAE sha256: df3c506e51b7ee1d, Options: xformers|~w(300):solo, 1girl, teen, school uniform, brown hair, brown eyes, small breasts, sitting, living room, waving hand ~~ Negative prompt: (worst quality, low quality:1.0), (inaccurate limb:1.0), (cubism:1.0) ~~ Steps: 28, Sampler: DPM++ 2M Karras, CFG scale: 11, Seed: 774, Size: 512x768, Clip skip: 2, ENSD: 31337, VAE sha256: df3c506e51b7ee1d, Options: xformers |~w(300):a teenage woman, clear face, insanely excess frilled white dress, small breasts, small tiara, absurdly long brown hair, kind smile ~~ Negative prompt: (low quality, worst quality:1.4), maid, selfie, freckles, (off-shoulder dress:1.2), simple background, dutch angle, (nsfw:1.1) ~~ Steps: 24, Sampler: DPM++ SDE Karras, CFG scale: 8, Seed: 0, Size: 768x768, Clip skip: 2, ENSD: 31337, VAE sha256: df3c506e51b7ee1d, Options: xformers|~w(300):1girl, solo, sitting, reading, book, sofa, (cat:1.2), (large window:1.2), (oceanview:1.2), room, interior, bookshelf, plant, green, calm, smile, cozy, long hair, glasses, calm expression, sophisticated, dress, knee-length, floral pattern, bare foot, armchair, room decor, wall art, comfortable, serene, warm lighting, homely, domestic, indoor. ~~ Negative prompt: (worst quality,low quality:1.4),(bad_prompt_version2:0.8), (monochrome:1.1), ~~ Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 6, Seed: 774, Size: 600x400, Denoising strength: 0.6, Clip skip: 2, ENSD: 31337, Hires upscale: 2, Hires steps: 20, Hires upscaler: Latent, VAE sha256: df3c506e51b7ee1d, Options: xformers|~w(300):|
-|7th||||||
-|||||||
+サンプルB
+[+]
+Prompt:
+>solo, 1girl, teen, school uniform, brown hair, brown eyes, small breasts, sitting, living room, waving hand
+Negative Prompt:
+>(worst quality, low quality:1.0), (inaccurate limb:1.0), (cubism:1.0)
+Steps: 28, Sampler: DPM++ 2M Karras, CFG scale: 11, Seed: 774, Size: 512x768, Clip skip: 2, ENSD: 31337, 
+[END]
+
+サンプルC
+[+]
+Prompt:
+>a teenage woman, clear face, insanely excess frilled white dress, small breasts, small tiara, absurdly long brown hair, kind smile
+Negative Prompt:
+>(low quality, worst quality:1.4), maid, selfie, freckles, (off-shoulder dress:1.2), simple background, dutch angle, (nsfw:1.1)
+Steps: 24, Sampler: DPM++ SDE Karras, CFG scale: 8, Seed: 0, Size: 768x768, Clip skip: 2, ENSD: 31337
+[END]
+
+サンプルD
+[+]
+Prompt:
+>1girl, solo, sitting, reading, book, sofa, (cat:1.2), (large window:1.2), (oceanview:1.2), room, interior, bookshelf, plant, green, calm, smile, cozy, long hair, glasses, calm expression, sophisticated, dress, knee-length, floral pattern, bare foot, armchair, room decor, wall art, comfortable, serene, warm lighting, homely, domestic, indoor.
+Negative Prompt:
+>(worst quality,low quality:1.4),(bad_prompt_version2:0.8), (monochrome:1.1),
+Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 6, Seed: 774, Size: 600x400, Denoising strength: 0.6, Clip skip: 2, ENSD: 31337, Hires upscale: 2, Hires steps: 20, Hires upscaler: Latent
+[END]
+
+** 比較
+
+{| class="sort edit filter"
+|~w(400):モデル名 |~w(300):サンプルA|~w(300):サンプルB |~w(300):サンプルC|~w(300):サンプルD|~w(300):|
 |nai.ckpt [89d59c3dde]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/uJaphHFbwj-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/uJaphHFbwj.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/neSFOx40DS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/neSFOx40DS.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LdO01fVsoH-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/LdO01fVsoH.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fELy1RoXks-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fELy1RoXks.png]]||
 |Anything-V3.0.ckpt [543bcbc212]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/afyAXfHOki-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/afyAXfHOki.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/avjWBzem3Z-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/avjWBzem3Z.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eS_yM7MR9j-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/eS_yM7MR9j.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/sryCD_WoGZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/sryCD_WoGZ.png]]||
 |Anything-V3.0.safetensors [10f0bd7ade]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LYd5vIuDAe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/LYd5vIuDAe.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/t7RrIkT500-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/t7RrIkT500.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/e70vQ2GNrV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/e70vQ2GNrV.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qLtigRPKgN-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/qLtigRPKgN.png]]||

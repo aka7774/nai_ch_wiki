@@ -55,18 +55,23 @@ deepl無料アカウントでapi制限キツいから更新は週1の予定
 - 「Load from:ボタン」を押して出てくる一覧の順に並んでるやでー
 
 ** Aesthetic Gradients
-
+https://github.com/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients.git
+added: 2022-11-01
 1枚または数枚の写真から埋め込みを作成し、それを使って生成された画像に自分のスタイルを適用することができます。
+tags: [script training]
 
 ** Wildcards
-
+https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards.git
 サンプル拡張機能です。プロンプトで __name__ 構文を使用し、wildcards ディレクトリにある name.txt というファイルからランダムな行を取得できるようにします。同様の機能については、動的プロンプトも参照してください。
-
+added: 2022-11-01
 - 後述の「Dynamic Prompts」の前身で機能が少ない。
+tags: [script]
 
 ** Dynamic Prompts
-
+https://github.com/adieyal/sd-dynamic-prompts.git
+added: 2022-11-01
 ランダムまたは組み合わせによるプロンプト生成のための表現力豊かなテンプレート言語と、深いワイルドカードディレクトリ構造をサポートする機能を実装しています。
+tags: [script]
 
 - プロンプトに {flat chest|small breasts|medium breasts|huge breasts} と書くとランダムで乳の大きさが変わる
 - __breasts__ と書いて、WILDCARD_DIR/breasts.txt に改行区切りで乳のサイズを書いても同じ
@@ -74,374 +79,526 @@ deepl無料アカウントでapi制限キツいから更新は週1の予定
 - PNG Infoには{}のまま出てくるのでどれが選ばれたかはわからない
 
 ** Dreambooth
-
+https://github.com/d8ahazard/sd_dreambooth_extension.git
+added: 2022-11-07
 Shivam Shiaro氏のレポを元に、低VRAMのGPUに最適化したDreamboothのトレーニング。
-
 - %%NMKDより速くて設定が細かいので主戦力っぽい。%%最近はKohya版にお株を奪われ気味。
 - 手作業でコマンドからcu116をインストールする必要がある。
 - 環境によってさまざまなエラーが出るので英語読んで自己解決できると捗る
 - エラーや衝突を起こしやすいらしいので、画像生成用のwebUIとは別に専用の環境構築をしておくと無難。
+tags: [script tab training]
 
 ** Smart Process
-
+https://github.com/d8ahazard/sd_smartprocess.git
+added: 2022-11-12
 自動被写体識別、キャプション被写体交換、アップスケーリング/顔復元などのスマートプリプロセスを搭載。
-
 - Extrasの親戚みたいな感じ
 - トリミング、キャプション付け、拡大を順番に実行できる。
 - この通りの手順で処理して欲しい用事が無いと必要ないかも。
+tags: [script tab]
 
 ** Image browser
-
+https://github.com/AlUlkesh/stable-diffusion-webui-images-browser.git
+added: 2022-11-01
 作成した画像をWebブラウザで閲覧するためのインターフェイスを提供する。
 
 - 生成した画像の履歴を閲覧したり気に入った画像を登録することができる。
 - 以前に一時期だけ本体に入ってた機能がExtensionsに移動した。
 - txt2imgの履歴からimg2imgとかExtrasしたい時にはすごく便利。
 - Generate Infoも出るのでプロンプト見たり教えたりもできる。
+tags: [script tab UI related]
 
 ** Inspiration
-
+https://github.com/yfszzx/stable-diffusion-webui-inspiration.git
+added: 2022-11-01
 アーティストやアートジャンルの典型的なスタイルの写真をランダムに表示し、選択後にそのアーティストやジャンルの写真がより多く表示されます。そのため、制作時にアートのスタイルを選択するのが難しいという心配はありません。
+tags: [script tab UI related]
 
 ** Deforum
-
+https://github.com/deforum-art/deforum-for-automatic1111-webui.git
+added: 2022-11-01
 - キーフレーム可能なシーケンス、動的な数学パラメータ（プロンプトの内部も）、動的なマスキング、深度推定、ワープをサポートする、2Dおよび3Dアニメーションのための広範囲なスクリプトであるDeforumの公式移植版です。
+tags: [script tab UI related]
 
 ** Animator
+https://github.com/Animator-Anon/animator_extension.git
+added: 2023-01-11
+tags: [script tab]
 
-- 
+** gif2gif
+https://github.com/LonicaMewinsky/gif2gif.git
+added: 2023-02-09
+tags: [script]
 
 ** Artists to study
-
+https://github.com/camenduru/stable-diffusion-webui-artists-to-study.git
 アーティストが生成した写真をカテゴリー別にギャラリーとして表示します。
+added: 2022-11-01
+tags: [script tab]
 
 ** Aesthetic Image Scorer
-
-Chad ScorerをベースにしたCLIP+MLP Aesthetic Score Forecastorで生成画像の美的スコアを算出。
+https://github.com/camenduru/stable-diffusion-webui-artists-to-study.git
+Chad ScorerをベースにしたCLIP+MLP Aesthetic Score Forecastorで生成画像の美的スコアを算出
+added: 2022-11-01
+tags: [script integrations]
 
 ** Dataset Tag Editor
-
+https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor.git
 学習用データセットのキャプションを編集することができます。
+added: 2022-11-01
+tags: [script tab training]
 
 ** auto-sd-paint-ext
-
+https://github.com/Interpause/auto-sd-paint-ext.git
 Kritaのプラグインです。
+added: 2022-11-04
+tags: [script integrations]
 
 ** training-picker
-
+https://github.com/Maurdekye/training-picker.git
 動画からキーフレームを自動抽出し、そのフレームを手動で512x512クロップしてモデル学習に使用できるタブをWebuiに追加しました。
+added: 2022-11-06
+tags: [script tab training]
 
 ** Unprompted
-
+https://github.com/ThereforeGames/unprompted.git
+description: Allows you to include various shortcodes in your prompts. You can pull text from files, set up your own variables, process text through conditional functions, and so much more - it's like wildcards on steroids. It now includes integrations like hard-prompts made easy, ControlNet, txt2img2img and txt2mask.
+adsつきなのでフィルタされている。
+added: 2022-11-04
+tags: [script integrations ads]
 
 ** StylePile
-
+https://github.com/some9000/StylePile.git
 結果のスタイルに影響を与える要素をプロンプトに簡単にミックス＆マッチさせる方法です。
-
-** Unprompted
-
-adsつきなのでフィルタされている。
-
-- https://github.com/ThereforeGames/unprompted
+added: 2022-11-24
+tags: [script]
 
 ** Booru tag autocompletion
-
+https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git
 Danbooruなどの画像ブールボードからのタグの自動補完ヒントを表示します。ローカルのタグCSVファイルを使用し、カスタマイズのためのコンフィグも含まれています。
-
 - プロンプト入力時にDanbooruのタグの候補を表示・補完してくれる。ネガティブプロンプトでも効くので便利。
+added: 2022-11-04
+tags: [script]
 
 ** novelai-2-local-prompt
-
+https://github.com/animerl/novelai-2-local-prompt.git
 NovelAIで使用しているプロンプトをWebUIで使用できるように変換するボタンを追加する。また、以前使用したプロンプトを呼び出すことができるボタンを追加する。
-
 - web版のプロンプトをローカル版向けに変換できる
 - プロンプトとネガティブプロンプトを同時に変換する
 - Quality TagやUC L+Bも付与する
 - HistoryボタンはUndoっぽい
+added: 2022-11-05
+tags: [script]
 
 ** Tokenizer
-
+https://github.com/AUTOMATIC1111/stable-diffusion-webui-tokenizer.git
 CLIPモデルがどのようにテキストをトークン化するかをプレビューできるタブを追加しました。
+added: 2022-11-05
+tags: [script tab]
 
 ** Embeddings editor
-
+https://github.com/CodeExplode/stable-diffusion-webui-embedding-editor.git
 スライダーを使って手動でテキスト反転埋込を編集できるようにします。
+added: 2022-11-06
+tags: [script tab models]
 
 ** Randomize
-
+https://github.com/innightwolfsleep/stable-diffusion-webui-randomize.git
 txt2img の生成時にランダムなパラメータを許可します。このスクリプトは、選択されたスクリプトに関係なく、すべての世代で処理されます。つまり、このスクリプトは AUTOMATIC1111/stable-diffusion-webui-wildcards などの他のスクリプトでも機能することになります。
+added: 2022-11-11
+tags: [script]
 
 ** ja_JP Localization
-
 - UIを日本語化する
 - 以前に一時期だけ本体に入ってた機能がExtensionsに移動した。
 - 以前はプロンプトの強弱を変えるキーボードショートカットが利かなくなっていたが直ったのか？
 
 ** embedding-inspector
-
-script, tab 	任意のトークン(単語)やTextual-Inversionの埋め込みを検査し、どの埋め込みが類似しているかを調べることができます。エンベッディングの混合、修正、作成は数秒でできます。
-
-Added: 2022-12-06
+https://github.com/tkalayci71/embedding-inspector.git
+任意のトークン(単語)やTextual-Inversionの埋め込みを検査し、どの埋め込みが類似しているかを調べることができます。エンベッディングの混合、修正、作成は数秒でできます。
+added: 2022-12-06
+tags: [script tab models]
 
 
 ** Asymmetric Tiling
+https://github.com/tjm35/asymmetric-tiling-sd-webui.git
+description: An always visible script extension to configure seamless image tiling independently for the X and Y axes.
+added: 2023-01-13
+tags: [script]
 
 ** Latent Mirroring
-
+https://github.com/dfaker/SD-latent-mirroring.git
 潜像にミラーリングやフリップを施し、微妙なバランスの構図から完璧な反射まで表現することができる
+added: 2022-11-06
+tags: [script]
 
 ** seed travel
-
+https://github.com/yownas/seed_travel.git
 AUTOMATIC1111/stable-diffusion-webui 用の、シード間に存在する画像を作成するための小さなスクリプトです。
-
 - としあき曰はく「まあ、簡単にいうとVariation seedでパラパラエロ動画みたいなのが作れます。」
 - https://github.com/yownas/seed_travel
+added: 2022-11-09
+tags: [script]
 
 ** shift-attention
-
+https://github.com/yownas/shift-attention.git
 プロンプトの注意をずらす画像のシーケンスを生成する。このスクリプトを使うと、プロンプト内のトークンの重みに範囲を与えて、最初のものから順にステップしていく一連の画像を生成することができる。
-
 - "photo of (cat:1~0) or (dog:0~1)" と入力すると猫から犬に変化する動画が作れるものらしい？
+added: 2022-11-09
+tags: [script]
 
 ** prompt travel
-
+https://github.com/Kahsolt/stable-diffusion-webui-prompt-travel.git
 AUTOMATIC1111/stable-diffusion-webui の拡張スクリプトで、潜在空間内のプロンプト間を移動できるようにした。
-
 - プロンプトやstepsの細かい差を動画にして見るもの？
+added: 2022-11-11
+tags: [script]
 
 ** Sonar
+https://github.com/Kahsolt/stable-diffusion-webui-sonar.git
+description: Improve the generated image quality, searches for similar (yet even better!) images in the neighborhood of some known image, focuses on single prompt optimization rather than traveling between multiple prompts.
+added: 2023-01-12
+tags: [script]
 
 ** Detection Detailer
-
+https://github.com/dustysys/ddetailer.git
+description: An object detection and auto-mask extension for Stable Diffusion web UI.
 Stable Diffusion Web UI のためのオブジェクト検出と自動マスクの拡張機能。
-
 - マスクの自動生成っぽい
 - i2i等で役立つマスク自動生成。顔だけ、または人物のみに自動生成したマスクで処理ができる。
+added: 2022-11-09
+tags: [script]
 
 ** Batch Face Swap
+https://github.com/kex0/batch-face-swap.git
+description: Automatically detects faces and replaces them.
+added: 2023-01-13
+tags: [script]
 
 ** conditioning-highres-fix
-
+https://github.com/klimaleksus/stable-diffusion-webui-conditioning-highres-fix.git
 これは、実行時にDenoisingの強度に対してInpaintingのコンディショニングマスクの強度の値を書き換えるための拡張機能である。sd-v1-5-inpainting.ckpt のような Inpainting モデルで有効である。
-
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/4530?sort=new
-
 追記│「in paint時の〜」と書かれている通り、通常のtext2imgでは高解像度fix時の融合に対する効果は見られませんでした。
-
 Highres fixしたときに人物が融合したりする問題を解決する拡張機能。公式リストに実装済み
 公式から引用した縦軸Denoise、横軸Cond Image mask weightの表。
 クソデカ画像注意：Webp：約3MB：[[https://image01.seesaawiki.jp/n/h/nai_ch/rWnETbnk4z.webp]]
+added: 2022-11-11
+tags: [script]
 
 ** Auto TLS-HTTPS
-
+https://github.com/papuSpartan/stable-diffusion-webui-auto-tls-https.git
 HTTPSの利用を簡単に、あるいは完全に自動で開始できるようにします。
+added: 2022-11-14
+tags: [script integrations]
+
 
 ** DreamArtist
-
+https://github.com/7eu7d7/DreamArtist-sd-webui-extension.git
 対照的なプロンプトチューニングによる制御可能な一発画像生成の実現に向けて
-
 - 新しい学習ツールの1111実装
 - 以前は advanced Prompt Tuning method (APT) と呼んでいたもの
+added: 2022-11-15
+tags: [script training]
 
 ** WD 1.4 Tagger
-
+https://github.com/toriato/stable-diffusion-webui-wd14-tagger.git
 学習済みモデルファイルを使用し、WD 1.4 タグを生成します。モデルリンク - https://mega.nz/file/ptA2jSSB#G4INKHQG2x2pGAVQBn-yd_U5dMgevGF8YYM9CR_R1SY
+added: 2022-11-20
+tags: [script tab training]
 
 ** booru2prompt
-
+https://github.com/Malisius/booru2prompt.git
 このSD拡張機能は、様々な画像ブーリアンからの投稿を、安定した拡散プロンプトに変えることができます。これは、彼らのAPIからタグのリストを引き出すことによって行われます。欲しい投稿へのリンクを自分でコピーペーストしたり、内蔵の検索機能を使ったりして、SDから離れることなくすべてを行うことができます。
+added: 2022-11-21
+tags: [script tab]
 
 ** Gelbooru Prompt
-
-script 	AUTOMATIC1111のStable Diffusion webuiに保存されたゲルボーイイメージのタグを取得する拡張機能
-
-Added: 2022-12-20
-
-
+https://github.com/antis0007/sd-webui-gelbooru-prompt.git
+AUTOMATIC1111のStable Diffusion webuiに保存されたゲルボーイイメージのタグを取得する拡張機能
+added: 2022-12-20
+tags: [script]
 
 ** Marge Board
-
+https://github.com/bbc-mc/sdweb-merge-board.git
 複数のレーンマージに対応(最大10レーン)マージの組み合わせをレシピとして保存、読み込みが可能。
-
 - 複数マージが簡単にできる。レシピをテキストで共有できる。
+added: 2022-11-21
+tags: [script tab models]
 
 ** Depth Maps
-
+https://github.com/thygate/stable-diffusion-webui-depthmap-script.git
 生成された画像からデプスマップを作成します。生成された画像は、VRヘッドセットやルッキンググラスなどの3Dデバイスやホログラフィックデバイスで表示したり、レンダーエンジンやゲームエンジンで変位補正をした平面上で使用したり、あるいは3Dプリントすることができます。
+added: 2022-11-30
+tags: [script]
 
 ** multi-subject-render
-
+https://github.com/Extraltodeus/multi-subject-render.git
 1枚の画像に複数の複雑な被写体を作成するのに役立つ、深度を意識した拡張機能です。背景を生成し、複数の前景被写体を生成し、深度解析後にそれらの背景を切り出し、背景に貼り付け、最後にimg2imgできれいに仕上げます。
 
 背景と前景を生成して合成するやつ
 現状クソコラ製造機
 研究次第では使えるかもしれない
+added: 2022-11-24
+tags: [script]
 
 ** depthmap2mask
-
+https://github.com/Extraltodeus/depthmap2mask.git
 MiDaSによる深度推定に基づき、img2img用のマスクを作成する。
+added: 2022-11-26
+tags: [script]
 
 ** ABG_extension
-
+https://github.com/KutsuyaYuki/ABG_extension.git
 script 	背景を自動で除去します。アニメ画像用に微調整されたonnxモデルを使用。GPUで動作します。
-
-Added: 2022-12-24
-	
 - Scriptで選択して使う
 - imgとmaskを追加で保存してくれる
-
+added: 2022-12-24
+tags: [script]
 
 ** Depth Image I/O
+https://github.com/AnonymousCervine/depth-image-io-for-SDWebui.git
+description: An extension to allow managing custom depth inputs to Stable Diffusion depth2img models.
+added: 2023-01-17
+tags: [script]
 
 ** Visualize Cross-Attention
-
+https://github.com/benkyoujouzu/stable-diffusion-webui-visualize-cross-attention-extension.git
 入力プロンプトに基づき、送信された入力画像のハイライトされたセクターを生成します。トークナイザー拡張と一緒に使用します。詳しくはReadmeをご覧ください。
+added: 2022-11-25
+tags: [script tab integrations]
 
 ** DAAM
-
+https://github.com/kousw/stable-diffusion-webui-daam.git
 DAAMとは、Diffusion Attentive Attribution Mapsの略です。注目テキスト（プロンプトに含まれる文字列でなければなりません）を入力し、実行します。各注目のヒートマップが重なった画像が元の画像と一緒に生成されます。
+added: 2022-12-02
+tags: [script integrations]
 
 ** Prompt Gallery
-
+https://github.com/dr413677671/PromptGallery-stable-diffusion-webui.git
 キャラクターのプロンプトを含むyamlファイルを作成し、generateを押すと、単語の属性と修飾子によって素早くプレビューすることができます。
+added: 2022-12-02
+tags: [script tab UI related]
 
 ** Infinity Grid Generator
-
+https://github.com/mcmonkeyprojects/sd-infinity-grid-generator-script.git
 script 	パラメータを指定したyamlファイルを構築し、無限次元のグリッドを生成する。フィールドに説明テキストを追加する機能を内蔵。使い方の詳細はreadmeを参照。
-
-Added: 2022-12-09
-
+added: 2022-12-09
+tags: [script]
 
 ** NSFW checker
-
-script 	NSFW画像を黒に置き換えます。
-
-Added: 2022-12-10
-
+https://github.com/AUTOMATIC1111/stable-diffusion-webui-nsfw-censor.git
+NSFW画像を黒に置き換えます。
+added: 2022-12-10
+tags: [script integrations]
 
 ** Diffusion Defender
-
+https://github.com/WildBanjos/DiffusionDefender.git
 script 	セミプライベートおよびパブリックインスタンスのプロンプトブラックリスト、検索、置換。
-
-Added: 2022-12-20
-
+added: 2022-12-20
+tags: [script]
 
 ** Config-Presets
-
-script 	txt2imgとimg2imgタブのUIプリセット設定を変更できるように、設定可能なドロップダウンを追加しました。
-
-Added: 2022-12-13
-	
-
+https://github.com/Zyin055/Config-Presets.git
+txt2imgとimg2imgタブのUIプリセット設定を変更できるように、設定可能なドロップダウンを追加しました。
+added: 2022-12-13
+tags: [script UI related]
 
 ** Preset Utilities
-
+https://github.com/Gerschel/sd_web_ui_preset_utils.git
 script 	ui用プリセットユーティリティツール。カスタムスクリプトとの互換性を提供します。(制限あり)
-
-Added: 2022-12-19
-
+added: 2022-12-19
+tags: [script UI related]
 
 ** DH Patch
-
+https://github.com/d8ahazard/sd_auto_fix.git
 script 	D8ahazardによるランダムパッチ。v2、2.1モデル用の設定YAMLファイルの自動ロード、2.1モデルでの注意を修正するlatent-diffusionのパッチ（no-halfなしの黒い箱）、その他思いついたものすべて。
-
-Added: 2022-12-16
-	
-
+added: 2022-12-16
+tags: [script integrations]
 
 ** Riffusion
-
+https://github.com/enlyth/sd-webui-riffusion.git
 script, tab 	Riffusionモデルを使って、gradioで音楽を制作する。オリジナルの補間技法を再現するには、プロンプトの旅行延長出力フレームをriffusionタブに入力します。
-
-Added: 2022-12-19
-
+added: 2022-12-19
+tags: [script tab]
 
 ** Save Intermediate Images
-
+https://github.com/zero01101/openOutpaint-webUI-extension.git
 script 	PR参照 https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/5464
-
-Added: 2022-12-22
-
+added: 2022-12-23
+tags: [script tab integrations]
 
 ** openOutpaint extension
-
-script, tab 	openOutpaintのフルUIが表示されるタブです。apiフラグ付きで実行。
-
-Added: 2022-12-23
-
+https://github.com/zero01101/openOutpaint-webUI-extension.git
+openOutpaintのフルUIが表示されるタブです。apiフラグ付きで実行。
+added: 2022-12-23
+tags: [script tab integrations]
 
 ** model-keyword
-
-script 	一致するキーワードをプロンプトに自動的に挿入します。この拡張機能を更新すると、最新のモデル＋キーワードのマッピングを取得できます。
-
-Added: 2022-12-28
-
+https://github.com/mix1009/model-keyword.git
+一致するキーワードをプロンプトに自動的に挿入します。この拡張機能を更新すると、最新のモデル＋キーワードのマッピングを取得できます。
+added: 2022-12-28
+tags: [script]
 
 ** Prompt Generator
+https://github.com/imrayya/stable-diffusion-webui-Prompt_Generator.git
+distilgpt2 を使用して、小さなベースプロンプトからプロンプトを生成する。モデルの追加制御を行うタブを追加する。
+added: 2022-12-30
+tags: [script tab]
 
-script, tab 	distilgpt2 を使用して、小さなベースプロンプトからプロンプトを生成する。モデルの追加制御を行うタブを追加する。
+** Promptgen
+https://github.com/AUTOMATIC1111/stable-diffusion-webui-promptgen.git
+description: Use transformers models to generate prompts.
+added: 2023-01-18
+tags: [script tab]
 
-Added: 2022-12-30
+** text2prompt
+https://github.com/toshiaki1729/stable-diffusion-webui-text2prompt.git
+description: Generates anime tags using databases and models for tokenizing.
+added: 2023-2-11
+tags: [script tab]
+
+** Prompt Translator
+https://github.com/butaixianran/Stable-Diffusion-Webui-Prompt-Translator
+description: A integrated translator for translating prompts to English using Deepl or Baidu.
+added: 2023-02-11
+tags: [script tab]
 
 
 ** quick-css
-
-script, tab 	カスタム.cssファイルを素早く選択して適用し、uiの外観や要素の配置をカスタマイズするための拡張機能です。
-
-Added: 2022-12-30
+https://github.com/Gerschel/sd-web-ui-quickcss.git
+カスタム.cssファイルを素早く選択して適用し、uiの外観や要素の配置をカスタマイズするための拡張機能です。
+added: 2022-12-30
+tags: [script tab UI related]
 
 ** Add image number to grid
-
-script:	画像の番号をグリッド内の画像に追加します。
-
-Added: 2023-01-01
-
+https://github.com/AlUlkesh/sd_grid_add_image_number.git
+画像の番号をグリッド内の画像に追加します。
+added: 2023-01-01
+tags: [script]
 
 ** Model Converter
-
-script, tab 	fp16/bf16のノーエマ/エマ専用セーフティセンサに機種変更する。
-
-Added: 2023-01-05
+https://github.com/Akegarasu/sd-webui-model-converter.git
+fp16/bf16のノーエマ/エマ専用セーフティセンサに機種変更する。
+added: 2023-01-05
+tags: [script tab models]
 
 ** Kohya-ss Additional Networks
-
-script:	Web UIで、そのスクリプトで学習させたネットワーク（LoRA）を使って画像を生成できるようにする。
-
-Added: 2023-01-06
+https://github.com/kohya-ss/sd-webui-additional-networks.git
+Web UIで、そのスクリプトで学習させたネットワーク（LoRA）を使って画像を生成できるようにする。
+added: 2023-01-06
+tags: [script models]
 
 ** Ultimate SD Upscale
+https://github.com/Coyote-A/ultimate-upscale-for-automatic1111.git
+description: More advanced options for SD Upscale, less artifacts than original using higher denoise ratio (0.3-0.5).
+added: 2023-01-10
+tags: [script]
 
 ** Stable Horde Worker
+https://github.com/sdwebui-w-horde/sd-webui-stable-horde-worker.git
+description": "Worker Client for Stable Horde. Generate pictures for other users with your PC. Please see readme for additional instructions.
+added": "2023-01-10
 
 ** Stable Horde Client
+https://github.com/natanjunges/stable-diffusion-webui-stable-horde.git
+description": "Stable Horde Client. Generate pictures using other user's PC. Useful if u have no GPU.
+added": "2023-01-11
 
 ** Hypernetwork-Monkeypatch-Extension
+https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension.git
+description": "Extension that provides additional training features for hypernetwork training. Also supports using multiple hypernetworks for inference.
+added": "2023-01-12
 
 ** Multiple Hypernetworks
+https://github.com/antis0007/sd-webui-multiple-hypernetworks.git
+description": "Adds the ability to apply multiple hypernetworks at once. Apply multiple hypernetworks sequentially, with different weights.
+added": "2023-01-13
 
 ** Merge Block Weighted
+https://github.com/bbc-mc/sdweb-merge-block-weighted-gui.git
+description": "Merge models with separate rate for each 25 U-Net block (input, middle, output).
+added": "2023-01-13
 
 ** haku-img
-
-** Promptgen
+https://github.com/KohakuBlueleaf/a1111-sd-webui-haku-img.git
+description": "Image utils extension. Allows blending, layering, hue and color adjustments, blurring and sketch effects, and basic pixelization.
+added": "2023-01-17
 
 ** Discord Rich Presence
+https://github.com/kabachuha/discord-rpc-for-automatic1111-webui.git
+description": "Provides connection to Discord RPC, showing a fancy table in the user profile.
+added": "2023-01-20
 
 ** Steps Animation
+https://github.com/vladmandic/sd-extension-steps-animation.git
+description": "Create animation sequence from denoised intermediate steps.
+added": "2023-01-21
 
 ** Aesthetic Scorer
+https://github.com/vladmandic/sd-extension-aesthetic-scorer.git
+description": "Uses existing CLiP model with an additional small pretrained model to calculate perceived aesthetic score of an image.
+added": "2023-01-21
 
 ** System Info
+https://github.com/vladmandic/sd-extension-system-info.git
+description": "System Info tab for WebUI which shows realtime information of the server.
+added": "2023-01-21
 
 ** Pixelization
+https://github.com/AUTOMATIC1111/stable-diffusion-webui-pixelization.git
+description": "Using pre-trained models, produce pixel art out of images in the extras tab.
+added": "2023-01-23
 
 ** Instruct-pix2pix
+https://github.com/Klace/stable-diffusion-webui-instruct-pix2pix.git
+description": "Adds a tab for doing img2img editing with the instruct-pix2pix model. Note: No longer required. Author has integrated code to webui, use in img2img.
+added": "2023-01-25
 
 ** Custom Diffusion
+https://github.com/guaneec/custom-diffusion-webui.git
+description": "Custom Diffusion is, in short, finetuning-lite with TI, instead of tuning the whole model. Similar speed and memory requirements to TI and supposedly gives better results in less steps.
+added": "2023-01-28
 
 ** Fusion
+https://github.com/ljleb/prompt-fusion-extension.git
+description": "Adds prompt-travel and shift-attention-like interpolations (see exts), but during/within the sampling steps. Always-on + works w/ existing prompt-editing syntax. Various interpolation modes. See their wiki for more info.
+added": "2023-01-28
 
 ** cafe-aesthetic
+https://github.com/p1atdev/stable-diffusion-webui-cafe-aesthetic.git
+description": "Pre-trained model, determines if aesthetic/non-aesthetic, does 5 different style recognition modes, and Waifu confirmation. Also has a tab with Batch processing.
+added": "2023-01-28
+
+** Dynamic Thresholding
+https://github.com/mcmonkeyprojects/sd-dynamic-thresholding.git
+description": "Adds customizable dynamic thresholding to allow high CFG Scale values without the burning / 'pop art' effect.
+added": "2023-02-01
+
+** Aspect Ratio selector
+https://github.com/alemelis/sd-webui-ar.git
+Adds image aspect ratio selector buttons.
+added": "2023-02-04"
+
+** Catppuccin Theme
+https://github.com/catppuccin/stable-diffusion-webui.git
+description": "Adds various custom themes
+added": "2023-02-04
+
+** Embedding Merge
+https://github.com/klimaleksus/stable-diffusion-webui-embedding-merge.git
+description": "Merging Textual Inversion embeddings at runtime from string literals.
+added": "2023-02-09
+
+** anti-burn
+https://github.com/klimaleksus/stable-diffusion-webui-anti-burn.git
+description": "Smoothing generated images by skipping a few very last steps and averaging together some images before them
+added": "2023-02-09
+
+** mine-diffusion
+https://github.com/fropych/mine-diffusion.git
+description": "This extension converts images into blocks and creates schematics for easy importing into Minecraft using the Litematica mod.
+added": "2023-02-11
 
 
 * 標準Scripts
