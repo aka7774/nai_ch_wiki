@@ -1,0 +1,95 @@
+音声AIまとめ。MoeGoeとか。
+
+148スレ583
+=|BOX|
+ここに詳しいニキがおるのかわからんがエロ絵も何だけど
+
+声の方ってなんかある？ローカルとかで生成できないんかな…？ 
+||=
+
+#contents
+
+* VITS界隈
+
+2021年頃にVITSという音声合成エンジンが流行った。
+それ用に作られたモデルがVITSモデル。SDとckptみたいなもん。
+学習するためのツール(SDで言うkohya)はESPNetという。
+
+VITSをgradioで使えるようにしたのがmoe-tts。SDで言う1111。
+これをWindowsに移植したのがMoeGoe(CLI)とMoeGoe GUI。SDで言うNMKD。
+
+別の実装としてCOEIROINKというのがあって、これはオモテで商売する人向け。
+これはVOICEVOXというオープンソースのソフトのGUI部分を流用している。
+
+* ローカルでVITSを動かす
+
+MoeGoeは毎回(accelerate configのような)対話が必要なので使いにくく、
+CPU版しか無いのでGPUを活用することも出来ない。
+
+moe-ttsはpyopenjtalkというライブラリに依存しており、
+Windowsでは簡単にインストールすることが出来ない。
+コンパイラのダウンロードから始めないといけないし手元では成功してない。
+WSL2のほうなら何とか入った。
+
+=|BOX|
+git lfs install
+git clone https://huggingface.co/spaces/skytnt/moe-tts
+cd moe-tts/
+python -m venv venv
+. ./venv/bin/activate
+pip install --upgrade pip
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+sudo apt install python3.10-dev
+sudo apt install cmake
+sudo apt-get install libsndfile1-dev
+pip install cmake
+pip install pyopenjtalk
+pip install -r requirements.txt
+||=
+
+手元では from cmake import cmake でcmakeが無いと騒がれたので、
+venv/bin/cmake内に次の行を足すことで誤魔化した。
+=|BOX|
+sys.path.append('/home/user/moe-tts/venv/lib/python3.10/site-packages')
+||=
+
+実行時にはコマンドラインオプションでGPUを指定する。
+=|BOX|
+python app.py --device cuda:0
+||=
+
+これで、20文字の出力が2秒台だったのが0.3〜0.7秒くらいに縮まった。
+
+TTSはText to Speech(t2iの音声版みたいなもん)
+STSはSpeech to Speechだけどテキストを介さないのでmeituみたいなイメージ。
+
+** COEIROINK/VOICEVOXを使う
+
+COEIROINKはVITSを実装しているが制限がかかっているため、
+MYCOEIROINK(モデル)をmoe-ttsで使うことや、
+moe-tts/saved_modelをCOEIROINKで使うことは出来ない。
+
+いずれも内部的にはREST APIを呼び出す仕組みなので、
+GUIを操作して手作業で調教してもいいし、
+HTTPクライアントを用意してテキストからwavを生成できる。
+
+* VITS界隈の過去と現在
+
+日本では下火になっている。
+過去には嫌儲の人たちが一番盛り上げていたっぽい。
+
+キャラ再現が主体になっているのでオモテに出しにくい。
+また、中国での研究が盛んだったせいか、中国語訛りを起こしやすい。
+
+MoeGoeは3.0.1で更新が止まっている。
+日本人有志による日本語対応版も存在するけど、そっちも止まってるはず。
+MoeGoeの作者はほとんどのVITSモデルの作者でもある。
+
+moe-tts/saved_modelは中国語の方言や、ご禁制のウを最後に音沙汰がない。
+
+COEIROINKはオープンではない。ライセンス表記を求める文化でもある。
+MYCOEIROINKを提供している有志はVTuberみたいな人が多くて、
+声にキャラクターが付随している(というかキャラの声を提供している)。
+
+VITSモデルが使えるVOICEVOXコアをオープンに作れる余地はありそう。
+技術的にはCOEIROINKの再発明になるが・・・。

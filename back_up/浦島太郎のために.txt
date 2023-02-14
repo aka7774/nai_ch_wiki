@@ -4,6 +4,22 @@
 
 #contents
 
+* 2023-02-13 WD1.5βが出たりControlNetに対応したりと大変な一日
+午前
+NAIリークの血を持たない純粋なモデル、且つSD2.1系という事で注目を浴びていたWaifuDeffusion1.5β(epoch1)がようやく[[リリース>https://huggingface.co/waifu-diffusion/wd-1-5-beta]]された
+完成までには3,4epoch掛かるとの話だが、epoch1の時点でかなり綺麗な絵を出力出来ており、完全版に期待が高まる
+尚、今までのプロンプトで生成すると怖い絵になりがちなので、新たなプロンプト構成が求められる
+日本語解説はこちら　[[WD 1.5 ベータ版 - リリースノート>https://cafeai.notion.site/WD-1-5-232cfa9443fc4661b469e7d1df8b7dd8]]
+
+午後
+ControlNetが1111のextensionsに登場(それも2種類がほぼ同時に)
+ControlNetとは、写真からポーズを抽出して描いたり、イラストから線画を抽出して描いたりする新技術(https://github.com/lllyasviel/ControlNet )
+この論文の発表から3日で1111のextensionsに実装されて、スレが驚異と歓喜の悲鳴に包まれた
+[[unprompted Extension版>https://github.com/ThereforeGames/unprompted]]と[[Mikubill/sd-webui-controlnet版>https://github.com/Mikubill/sd-webui-controlnet]]の2種類があるが、導入の容易さや使い方の簡便さからMikubill版sd-webui-controlnetの方が人気
+当初VRAM8GBでは動作が厳しいと思われたが、即日LowVRAM対応版が出てVRAM8GBユーザーでも使えるようになった
+
+これにより数日で浦島太郎どころか、半日で浦島太郎になる人が続出した
+
 * 2023-02-06 スクリプト爆撃
 本スレ143の中盤から連投荒らしにあって落とされていた。145でとりあえず復活。
 
@@ -495,6 +511,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

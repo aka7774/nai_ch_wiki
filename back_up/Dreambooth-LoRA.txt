@@ -42,7 +42,7 @@ https://rentry.org/lora_namakubi
 - フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
 
 *他人の作ったモデルを使いたい。
-最新版のWEBUIが既に使用可能な状態ならセットアップ不要→[[LoRAの使用方法>https://seesaawiki.jp/nai_ch/d/Dreambooth-LoRA#content_13]]へ
+最新版のWEBUIが既に使用可能な状態ならセットアップ不要→[[LoRAの使用方法>#apply_lora]]へ
 
 *インストール、初回セットアップ編
 **1.LoRA_Easy_Training_Scripts Installers
@@ -329,13 +329,19 @@ last.safetensors というファイルができる
 H:\stablediffusion\stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora フォルダに 出来上がった .pt や .safetensorsをコピーする
 (Web UI の 「設定」> 「Additional Nerwork」タブでフォルダの場所を追加出来る)
 「txt2img」や「img2img」の画面の左下の方に「Additional Networks ▼」が追加されているので~~Enable を押してmodelを選びmerge倍率をweightのスライダーで調整する
-
+[+]わからんとき用画像
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xl2vcs_kBK.png)
+[END]
 **使い方その2 WebUIの本体機能のみで使う
 -H:\stablediffusion\stable-diffusion-webui\models\lora に拾った .pt や .safetensorsをコピーする
 「txt2img」や「img2img」の「生成」ボタンの下の花札みたいなマーク(&#127924;)を押すと
 Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
 一覧から選ぶと <lora:ファイル名:倍率>みたいなタグがプロンプトに追加される
-最新のLora(0.4.0)で作ったやつも使える
+むかーしに作られたloraは動かんことがある
+[+]わからんとき用画像
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Gje_zP3vzL.png)
+[END]
+WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 
 
 
