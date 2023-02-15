@@ -1,7 +1,7 @@
 学習は別のでやる流れだけど生成には便利に使えるはず。
 
 - [[ローカルをクラウドで]]
-- [[ローカルの学習入門]]
+- [[学習用Notebook>kohya_train_network_simple]]
 
 #contents
 
@@ -10,6 +10,41 @@
 今後はNotebookを更新していきます。
 
 - https://colab.research.google.com/drive/1GhvterZebPlZU4P7RcUK-U-4Y23rZpQO
+
+** 更新について
+
+pipの問題で動かなくなりがちなのでコメント等を見るといいかも。
+
+** 更新履歴
+
+*** 2023-02-15
+
+- ControlNet(fp16)に対応しました
+- 学習は[[kohya_train_network_simple]]で出来るのでExtensionを外しました
+- fastapiのバージョンを0.90.1に固定しました
+- Pythonが3.10.10になってました(悪影響は無いはず)
+
+segがエラーで動かんなあ。prettytableは入れたつもりなんだけど。
+ ModuleNotFoundError: No module named 'lib2to3'
+
+*** 2023-01-24
+
+- Python 3.10にきちんと対応(xformersがすんなり入るよ、やったね)
+- モジュールのバージョンをあげました
+- 流行りのExtensionsに入れ替え(面倒なので今後はやらんかも)
+- モデルのURLをVAE内蔵の7th3Aにしました(ダウンロードが早く済むはず)
+
+*** 2023-01-14
+
+- images_browserを修正版に取り替えた
+- その他こまごまとExtensions追加
+
+*** 2022-12-20
+
+- condaかpipか選べるようにした。エラー出た時の予備になるかも？
+- 階層マージ遊びが出来るExtensionをインストールできるようにした(たぶん4GBのモデルならいける)
+- モデルのURLを3つまで入れられるようにした(もっと入れたければ改造して)
+- SD2.0系は未対応(需要あれば対応する)
 
 * 初心者向け手順
 
@@ -22,6 +57,8 @@
 ** 注意
 
 *** Notebookを新規作成できたら、最初に Rumtime - Change runtime type で GPU を選ぶ
+
+もう最初っから選ばれてるかも。
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t.jpg]]
 
@@ -42,6 +79,7 @@
 
 * 入門用Notebook(旧バージョン)
 
+[+]
 =|BOX|
 #@markdown 実行は自己責任で。
 
@@ -188,29 +226,4 @@ if use_drive:
 # --enable-insecure-extension-access
 
 ||=
-
-** 更新について
-
-需要ありそうな変更は手が空いたらするけど、個別のトラブルには対応できないので、
-動かなかったり、機能に不満があったら、いろんな人のNotebookを探しに行くと良いでしょう。
-
-** 更新履歴
-
-*** 2023-01-24
-
-- Python 3.10にきちんと対応(xformersがすんなり入るよ、やったね)
-- モジュールのバージョンをあげました
-- 流行りのExtensionsに入れ替え(面倒なので今後はやらんかも)
-- モデルのURLをVAE内蔵の7th3Aにしました(ダウンロードが早く済むはず)
-
-*** 2023-01-14
-
-- images_browserを修正版に取り替えた
-- その他こまごまとExtensions追加
-
-*** 2022-12-20
-
-- condaかpipか選べるようにした。エラー出た時の予備になるかも？
-- 階層マージ遊びが出来るExtensionをインストールできるようにした(たぶん4GBのモデルならいける)
-- モデルのURLを3つまで入れられるようにした(もっと入れたければ改造して)
-- SD2.0系は未対応(需要あれば対応する)
+[END]

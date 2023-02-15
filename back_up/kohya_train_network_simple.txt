@@ -7,6 +7,16 @@
 
 * 更新情報
 
+** 20230215
+
+- 学習画像が一つもない場合にエラーで停止するようにした(calc_repeatが無限ループを起こすので)
+- 以下のコメントに対応して動作を確認。Thanks!
+=|BOX|
+/bin/bash: accelerate: command not found が発生するようになったので、お困りの方は環境構築の上あたりで
+!pip install --upgrade nni --ignore-installed
+とやってみて下さい。当方環境ではこれでOKでした。
+||=
+
 ** 20230210
 
 - pip先の更新によって壊れてたみたいなのでkohyaを更新しました
@@ -267,6 +277,7 @@ https://huggingface.co/aka7774/fp16_safetensors/resolve/main/ACertainty-fp16.saf
 --- あとから変換ツールで下げることは出来るらしいので高めで良いかなと
 - アップロード
 -- ほんとは1epochごとにアップロードしたかったけど全体が速くなったんでまあいいかって感じ
+
 
 
 
