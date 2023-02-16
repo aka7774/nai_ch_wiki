@@ -4,6 +4,72 @@
 
 #contents
 
+* ControlNetの機能いろいろ判明
+直に専用ページがつくられると思われるが（→[[作られた>https://seesaawiki.jp/nai_ch/d/ControlNet]]）とりあえず浦島で使えそうな機能を紹介
+[[ここ>https://note.com/ddpn08/n/n7fce838499e7]]とか見るともっと分かるかも。
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1676292962/432
+''432今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｵｯﾍﾟｹ Sra3-3pHG)2023/02/14(火) 15:25:37.08ID:F0rs948kr''
+''Canny Edge　輪郭線を検出して取り出す''
+''M-LSD　直線の輪郭だけ取り出す　曲線のない人工的な構図をノイズ無く取り出せる''
+''HED Boundary　いわゆる「描き込み」的な部分を取り出す　タッチを引き継ぎやすい''
+''User Scribbles　マウス入力の落書き　線を絶対的なものとしては扱わず、いい感じに仕上げる''
+''Fake Scribbles　画像を一端落書き風にして↑に投入する''
+''Human Pose　おなじみの棒人間''
+''Semantic Segmentation　領域に分類を持たせる''
+''Depth　深度情報を引き継ぐ　立体的な位置関係を処理できる''
+''Normal Map　法線情報を引き継ぐ　深度情報よりも細部の立体感に沿いやすい''
+''Anime Line Drawing　線画に色を塗る　非公開''
+
+''初期実装でこれだけある上に別にこれらだけではなく別の制御情報にも応用できるのが恐ろしいわ''
+
+**seg使用例
+https://fate.5ch.net/test/read.cgi/liveuranus/1676292962/634
+''634今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1e28-Ja3i)2023/02/14(火) 20:35:13.04ID:AF4ZJii10>>655>>666>>677>>699''
+''segで2人構図いけたかもや''
+''''
+''&ref(https://i.imgur.com/S5SSXKP.png, 10%)''
+''&ref(https://i.imgur.com/SZ8zwq1.png, 10%)''
+
+**depth使用例
+https://fate.5ch.net/test/read.cgi/liveuranus/1676415295/449
+''449今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 068c-t1ev)2023/02/15(水) 17:26:26.82ID:MqZleO5p0>>453>>476>>480>>483>>485>>500''
+''EROPOSE MATERIALってサイトで拾った足コキ画像からdepth作って''
+''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0mMFj0LK9Z.png, 30%)''
+''ここから''
+''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pDgQxc6xyp.png, 30%)''
+''''
+''7th_anime_v2_Bでもかなり立体的に出るんで下はネガにrealistic, 3dを追加''
+''weight下げてもかなり元画像に引っ張られるのでアニメ系には工夫が必要やけど''
+''リアル系に使うならかなりヤバイんちゃうかな''
+''''
+''488今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 068c-t1ev)2023/02/15(水) 18:08:05.91ID:MqZleO5p0>>507>>533>>542''
+''よう推敲せんで送ったから「かなり」連発で変な文になってたけど''
+''好評だったからまあええか''
+''''
+''>>480''
+''最新の[[ミクビル版>https://github.com/Mikubill/sd-webui-controlnet]]でできるで''
+
+''742今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a70e-8lmq)2023/02/15(水) 22:22:59.35ID:uyU+lpBX0>>751>>754''
+''これが''
+''&ref(https://imgur.com/8Y3bXqm.png, 10%)''
+''こうなって''
+''&ref(https://imgur.com/FIp6CjN.png, 10%)''
+''こう''
+''&ref(https://imgur.com/NeK7EpN.png, 10%)''
+''構図は再現できるけど男の書き込みがメインになってまうなあ''
+
+**scribble使用例
+https://fate.5ch.net/test/read.cgi/liveuranus/1676504558/378
+''378今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa4f-CrHb)2023/02/16(木) 18:12:49.36ID:R1GOdUDZa>>395>>403>>414>>424>>480''
+''t2iだとどんなプロンプトでも絶対に出てこなかった上向きボテ腹壁尻がControlNetのscribbleだと簡単に出せるやん！''
+''モデル内にあるポーズの組み合わせならなんでも作れそう''
+''''
+''この落書きが''
+''&ref(https://imgur.com/Me8yLfH.png, 10%)''
+''こうなる''
+''&ref(https://majinai.art/i/DjzWKXU.png, 10%)''
+''''
 * 2023-02-13 WD1.5βが出たりControlNetに対応したりと大変な一日
 午前
 NAIリークの血を持たない純粋なモデル、且つSD2.1系という事で注目を浴びていたWaifuDeffusion1.5β(epoch1)がようやく[[リリース>https://huggingface.co/waifu-diffusion/wd-1-5-beta]]された
@@ -511,6 +577,27 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

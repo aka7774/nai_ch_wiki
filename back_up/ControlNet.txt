@@ -31,6 +31,89 @@ txt2imgタブの下にControlNetができてるので▼をクリック
 |openpose_hand|||||
 |scribble|マウス入力の落書き　線を絶対的なものとしては扱わず、いい感じに仕上げる||||
 |fake_scribble|画像を一回落書き風に変換してscribbleに投入する||||
-|segmentation|'ADE20K'という規格で塗り絵 領域に分類を持たせる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc.png]]||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228.png]]|
+|segmentation|'ADE20K'という規格で塗り絵 領域に分類を持たせる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228.png]]|
 とりあえずスレにある画像使ったんであかんかったら消すわ
 
+*** segmentationについて
+一番直感的に分かりにくそうやけど、構図と描くもの（人や道や木など150種類の概念から選べる）を完全にコントロールできる、すごそうなやつや。
+スレ（なんJNVA部★150）におった詳しいニキの解説をメモしとくで。誰かそのうち編集してな。
+
+基本
+=|BOX|
+229今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 15:33:50.21ID:g7tc6IYz0
+>>226
+まずsegに必要なのはADE20Kっていう画像内のオブジェクトをクラスごとに色分けしたやつや
+各色とオブジェクトの紐づけはこのページとひとまとめにした画像を参照
+基本は150色
+https://github.com/CSAILVision/sceneparsing/tree/master/visualizationCode/color150
+https://i.imgur.com/XXryPUX.png
+すでに学習済みのデータセットやから残念ながら自分で色足したり設定変えたりはできん
+ただしこのクラス分けもさらに細分化されたり混ぜ合わせたりが可能みたいや
+詳しくは後述
+
+236今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 15:43:14.25ID:g7tc6IYz0>>239
+>>226
+ほんで写真やイラストを変換したいときはここ使う
+https://huggingface.co/spaces/shi-labs/OneFormer
+segで使うにはthe task is semantic、ADE20K、DiNAT-Lを選ぶ(ワイもADE20K以外は選ぶ意味が分かってない)
+https://i.imgur.com/Sc2gMxV.png
+で変換すると右に二枚画像が出てくる
+https://i.imgur.com/Bh7dOLM.pngこっちは「この色分がこのオブジェクトなんやで〜」って説明
+これを見ると分かると思うが明らかに基本の150色には無いオブジェクト名や色が出てくる
+この辺がさっき話したほんとはもっと細かいという話やね
+ADE20Kでググると細かいツリー画像出てくるからまぁそういうことなんやろ
+https://i.imgur.com/nam6pNp.pngほんでこっちがwebUIに入れる色分け画像
+プロンプトなしで色分けルールに沿ったもの大体出てくる
+
+260今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 16:00:12.39ID:g7tc6IYz0>>363
+>>226
+後はちょっとした応用で、色分けで生成されるものが決まるので色の一覧表や欲しい要素がある画像を変換器に入れて出てきた色をスポイト抽出して
+適当にペイントツールで塗り塗りしてその画像をsegに入れると好きな要素を好きな構図で出せるようになるわけ
+これは前スレに貼ったskyとかmountainとかwaterの色塗って作った奥行きのあるなんか壮大そうな景色を出すやつ
+landscapeとネガティブの(low quality,worst quality:1.4),(monochrome:1.1)のみ
+https://i.imgur.com/Da7bWWv.png
+https://i.imgur.com/mOB9khp.png
+https://i.imgur.com/74r2uZx.png
+欠点としては人の形もシルエットになるから腕や足が体に重なったポーズはうまく認識できなかったり、ありえんボリュームの髪のシルエットに無理やり引っ張られて奇形になったりすること
+||=
+
+複数人を塗り分けて描画する方法
+=|BOX|
+578今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 22:20:25.69ID:g7tc6IYz0>>580
+まず複数人が登場する画像を用意する
+今回はワイが以前AIで生成した画像やが相性的に実写寄りの絵か写真のほうが好ましい
+>>236でsemanticを選べと言ったがこの方法だと何人いようが体が重なってようが離れていようがpersonは一色しか出てこないんや
+https://i.imgur.com/q1n8yln.png
+なので画像変換の時にpanopticを選ぶと色々と認識ガバガバになる代わりに人数分だけpersonの色を用意してくれるんや
+https://i.imgur.com/nYCNpRB.png
+その複数出てきたpersonの色で塗るとそれぞれ別人と認識してくれるんや
+ただしこの通りのガバガバ色分けやからsemanticみたいに変換した画像を直にwebuiに入れるのはまず無理やね
+
+580今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 22:23:04.48ID:g7tc6IYz0>>582
+>>578
+例えば抽出したそれぞれのperson色を使ってhttps://i.imgur.com/fIUQSnI.pngを作る
+これをsegに突っ込むとhttps://i.imgur.com/u8A3WmX.png
+狙ったのとはちょっと違うんやけどまぁそれぞれの色を別の人間と認識して融けたりしてないというのが大事や
+重なり合った部分をちゃんとさせたいならレイヤー分けぐらいはできるペイントツールがあったほうがええやろな
+割とダイレクトにシルエットの形状が体型に影響するのであんまり適当やと肩幅や顔のデカさがすごいことになったりする(というかなった)
+手描き苦手ニキはデザインドールとかでポーズ取らせた画像に塗るのがええと思うで
+
+591今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 22:35:11.73ID:g7tc6IYz0
+ちゃんと変換に入れる人数が増えるとその分の色が出てくるので3人の画像使えば3色使って
+https://i.imgur.com/HE9FtVa.pngこんなんを描いて
+https://i.imgur.com/ja6fzus.pngちゃんと左が一番手前で右が一番奥な画像が出せる
+こんなマウスで適当に引いた絵じゃなければ変な袖とか出ないでもっと綺麗に出るはずやで
+何なら指とかも書き込めばちゃんと認識してくれる
+逆に言えばこのレベルの絵でも融け合わないで位置関係把握してくれるんや
+ちなみに体が重なってないなら色分ける必要ないで
+一色でそれぞれ人型描いてもええしsemantic変換した画像そのまんま突っ込んでもええ
+この通り複数人をあまり混ざらず出せるのがメリットやが
+オリジナルの構図にしたかったらなんやかんや結構な技量とセンスが問われるのがデメリットやと思う
+労力割かずに複雑なポーズ一発出しならそこは断然openposeや
+使い分けていこう
+||=
+
+
+*サンプル
+**動画
+外人ニキやけど早送りでもだいたい分かる [[https://www.youtube.com/watch?v=ci7NfTsifd0>>>https://www.youtube.com/watch?v=ci7NfTsifd0]]

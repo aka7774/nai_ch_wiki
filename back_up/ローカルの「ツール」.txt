@@ -132,6 +132,9 @@ AUTOMATIC WebUI の auto-sd-paint-ext Guide/Panel に書かれている手順に
 + エクスプローラのアドレスバーで C:\Users\<windowsユーザー名>\AppData\Roaming\krita\pykrita のフルパスをコピーする
 + AUTOMATIC WebUI の auto-sd-paint-ext Guide/Panel で、「Pykrita Folder Location」に↑のフルパスをペーストする https://image01.seesaawiki.jp/n/h/nai_ch/OW0k5iagOj.png
 + コマンドプロンプトを「管理者として実行」し、↑の画面の下に表示されている2行のコマンドを1行ずつペーストして実行する
+[+]基本的にはWindows版Webui+Windows版Krita(もしくはLinux版Webui+Linux版Krita)が前提、そうでない場合はそれなりに面倒
++ 「シンボリックリンクではなくファイルの実体をコピーする」「WSL2のファイルへWindwos側からシンボリックリンクを貼る(要PowerShell操作)」などで一応は接続できるようだ。前者はプラグインアップデートごとに反映が必要となり、後者はかなりややこしいコマンドが必要となるためあまりオススメはできない。
+[END]
 **** プラグインを有効化する
 + Kritaを再起動する
 + Kritaのメニューから「設定」-「Kritaの設定を変更」を選択
