@@ -6,10 +6,21 @@
 - コンセプトは「制服(ポートレイト)」「巨乳(体型の自由度)」「Dynamic Pose(動き)」「複数人」「てきとう」や
 - なるべく公式のイメージに近い画像になるよう努めたけどここの画像がモデルの全てっちゅう訳ではないで
 - 世に出回ってるリアル系モデルのほんの一部やからあとは君の目で確かめて欲しい
-- 呪文は画像クリック先に書いてるので.png削ってな
+- 呪文は画像を新しいタブやなんかで開いたら書いてあるで。画像のみが表示されるなら.png削ってな
 - 色々間違いあるかもしれんから生暖かい目で見たってや
 - 追加や編集はご自由に行ってください
 
+[+]追加履歴
+- 2023/02/17
+[[RealEldenApocalypse_AnalogSexKnoll_4CandyPureSimp+FEET>#RELD]]を追加
+[[GrapeLikeDreamFruit>#GRLK]]を追加
+[[Lomo Diffusion>#LOMO]]を追加
+[[Ares Mix>#ARES]]を追加
+[[GenericFemaleMix_GeFeMi>#GEFE]]を修正
+[[HRL Hyper Realistic Looking 2.7>#HRL]]を追加
+[[L.O.F.I>#LOFI]]を追加
+[[Sunshinemix>#SUNM]]を追加
+[END]
 
 *一覧
 [+]雑感の判断基準
@@ -48,6 +59,18 @@ NSFWは省いてるとのことでエロはSD系のが出るだけやな
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(ARES)
+**[[Ares Mix>>https://civitai.com/models/6931/ares-mix]]
+後述の[[GrapeLikeDreamFruit>#GRLK]]がウケたのでもっと汎用的なの作ったでってモデルや
+ハードNSFWもイケるモデルってことでめっちゃ脱ぐわ
+場所と服装が強く結び付いてるらしくサウナとかやと全く服着てくれん
+英文もダンボールタグも使える両刀モデルやな。複数人は出難いで
+西洋系のお姉さんを得意としとる印象や
+|&ref(https://i.imgur.com/9MtFVYP.png,256,384)|&ref(https://i.imgur.com/00gOtBd.png,256,384)|&ref(https://i.imgur.com/T2FCBOw.png,256,384)|&ref(https://i.imgur.com/ATv6skB.png,256,384)|&ref(https://i.imgur.com/mcwInRW.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(ARTE)
 **[[Art & Eros (aEros) - A tribute to beauty>>https://civitai.com/models/3950/art-and-eros-aeros-a-tribute-to-beauty]]
 名前の通りアート系の綺麗なお姉さんが出てくるモデルやな
 3枚目のようなイラスト系に近い出力になりやすいんやが、ネガティブ盛ればリアル系も行けるで
@@ -83,6 +106,7 @@ NSFWは省いてるとのことでエロはSD系のが出るだけやな
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(CHILO)
 **[[Chilloutmix>>https://huggingface.co/TASUKU2023/Chilloutmix]]
 basilベースと言うことで素直な挙動のモデルや
 日本人も出しやすく脱ぎやすいで
@@ -94,7 +118,7 @@ basilベースと言うことで素直な挙動のモデルや
 **[[Deliberate>>https://civitai.com/models/4823/deliberate]]
 半リアルモデルやけどリアル調も出せるで。頑張れば
 アート系のお姉さんはいい感じ
-NSFWはArt & Erosに似てる。まあこの界隈血が混ざってること多いから姉妹かもしれんな
+NSFWは[[Art & Eros>#ARTE]]に似てる。まあこの界隈血が混ざってること多いから姉妹かもしれんな
 |&ref(https://i.imgur.com/OWwBHIh.png,256,384)|&ref(https://i.imgur.com/QWpwed3.png,256,384)|&ref(https://i.imgur.com/LPLjK8V.png,256,384)|&ref(https://i.imgur.com/mfQNr4z.png,256,384)|&ref(https://i.imgur.com/hU1qbQu.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
@@ -142,12 +166,24 @@ Cafe InstagramがインスタならこちらはTwitter少女が出てくるモ�
 |&ref(https://i.imgur.com/uxjKlRK.png,256,384)|&ref(https://i.imgur.com/AwPPx9V.png,256,384)|&ref(https://i.imgur.com/cR8IHXI.png,256,384)|&ref(https://i.imgur.com/yx2AXAx.png,256,384)|&ref(https://i.imgur.com/4QgRLNA.png,256,384)|
 
 ----
+&aname(GEFE)
 **[[GenericFemaleMix_GeFeMi>>https://civitai.com/models/4190/genericfemalemixgefemi]]
-色んなモデルをマージしつつ自然なNSFWを目指したモデル
-すまん公式のプロンプトを真似たんやけど扱いが難しすぎて断念
-あとは君の目で確かめてくれ
-|&ref(https://i.imgur.com/ewYXkCU.png,256,384)|&ref(https://i.imgur.com/fur4qPm.png,256,384)|
-|center:school uniform|center:large breasts|
+色んなモデルをマージしつつ自然なNSFWを目指したモデルやな
+5枚目のような濡れた肌とか汚れた肌の表現はなかなか凄いで
+ただ複数人がめっちゃ出難かったのとプロンプトが英文タイプやからちょっと面倒やな
+インペイント用モデルもあるから間違えんといてな（ワイは最初間違っとったわ）
+|&ref(https://i.imgur.com/lQhfnbN.png,256,384)|&ref(https://i.imgur.com/Sgh7deT.png,256,384)|&ref(https://i.imgur.com/XQQJAIh.png,256,384)|&ref(https://i.imgur.com/6jWbvk5.png,256,384)|&ref(https://i.imgur.com/R2hm5fQ.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(GRLK)
+**[[GrapeLikeDreamFrui>>https://civitai.com/models/4922/grapelikedreamfruit]]
+写実的でありながら質感とかポーズをアーティスティックに仕上げたモデルや。公式によると
+ポジを盛って綺麗なお姉さんを出すタイプやけど盛らんでもいい感じや
+その辺は公式を参考にしてな。ちなみにこの欄の2枚目からは盛っとらん画像やで。悪く無いやろ？
+西洋系が得意なモデルやけど日本人も可愛い子出るで
+|&ref(https://i.imgur.com/FSdv0Xj.png,256,384)|&ref(https://i.imgur.com/VOn2uNF.png,256,384)|&ref(https://i.imgur.com/JtAaXex.png,256,384)|&ref(https://i.imgur.com/WPpFUJH.png,256,384)|&ref(https://i.imgur.com/Rs0OHvQ.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
 **[[Izumi>>https://civitai.com/models/1364/izumi]]
@@ -162,7 +198,18 @@ K-POP系のお姉さんをNSFWで出す時が本当の実力だと思うので�
 NSFW系では老舗の有名モデルや
 どんだけNSFWかっていうと衣服の指定を忘れようものならｵﾊﾟｰｲﾎﾞｰﾝ下半身ﾏﾙﾀﾞｼｰは当たり前、衣服を指定しても衣を突き破ってﾄﾞｰﾝ、1girlなのに絡みがﾕﾘｰ、呼んでもないのにロリ系がﾛﾘｰしてくる程
 ようやく全年齢で見られる画が出てきてもそれは微妙な出来って言うくらいNSFWモデル
-|&ref(https://i.imgur.com/L3vGucF.png,256,384)|&ref(https://i.imgur.com/3KRbTbp.png,256,384)|&ref(https://i.imgur.com/LMi7Tfj.png,256,384)|&ref(https://i.imgur.com/Vyo4U0y.png,256,384)|&ref(https://i.imgur.com/1FBmyVk.png,256,384)|
+4枚目の画像間違っとったから差し替えたですまんこ
+|&ref(https://i.imgur.com/L3vGucF.png,256,384)|&ref(https://i.imgur.com/3KRbTbp.png,256,384)|&ref(https://i.imgur.com/LMi7Tfj.png,256,384)|&ref(https://i.imgur.com/ByynHns.png,256,384)|&ref(https://i.imgur.com/1FBmyVk.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(HRL)
+**[[HRL Hyper Realistic Looking 2.7>>https://civitai.com/models/8616/hrl-hyper-realistic-looking-27]]
+リアリスティックに拘ったモデルや
+たまに二次っぽくなるからそういうモデルかイラスト系がマージされとるんかもな
+破綻が多い気がしたのとvictorian dress着せたらほぼ複数人出て来ない等ちょっと癖強めかもしれん
+あとお姉さんモデルのはずなんやが1girlがロリ祭りになるのはなんやろな
+|&ref(https://i.imgur.com/Hb6juRV.png,256,384)|&ref(https://i.imgur.com/vE8grPA.png,256,384)|&ref(https://i.imgur.com/wNiagL8.png,256,384)|&ref(https://i.imgur.com/l2YWdCl.png,256,384)|&ref(https://i.imgur.com/p0T6zh2.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -180,6 +227,25 @@ VAEが内蔵されてるので別個のVAE使うなって書いてるのには�
 プロンプトに癖あるんで公式を参考にしてな
 ポーズに関しては全然言う事聞いてくれんしポートレート特化な印象やな
 |&ref(https://i.imgur.com/nJiVgfS.png,256,384)|&ref(https://i.imgur.com/Vq20zBa.png,256,384)|&ref(https://i.imgur.com/qfazEYt.png,256,384)|&ref(https://i.imgur.com/KfRpHhF.png,256,384)|&ref(https://i.imgur.com/nlSjHnX.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(LOFI)
+**[[L.O.F.I>>https://civitai.com/models/9052/lofi]]
+正式名称はLimitless Originality Free from Interferenceらしいで
+ネガで禁止してもｵﾊﾟｰｲ放り出してくる暴れん坊♂や
+アジア系のお姉さんの描写が綺麗やな
+たまにイラストCGっぽくなるからそういう血を引いとるんやろな
+|&ref(https://i.imgur.com/LTWREFv.png,256,384)|&ref(https://i.imgur.com/vv2ufRW.png,256,384)|&ref(https://i.imgur.com/8V38gI6.png,256,384)|&ref(https://i.imgur.com/sCmee0t.png,256,384)|&ref(https://i.imgur.com/TTfaBeh.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(LOMO)
+**[[Lomo Diffusion>>https://huggingface.co/wavymulder/lomo-diffusion]]
+lomo style portrait of〜（映画俳優等の有名人）でキャラクターを呼び出すタイプのモデルやな
+そんなモデルに汎用的な少女を要求したのはまあ無茶振りやったな
+ここでは実在人物とか版権とか載せんからあとは君の目で確かめてくれ
+|&ref(https://i.imgur.com/QIWeAy7.png,256,384)|&ref(https://i.imgur.com/AF3GMcM.png,256,384)|&ref(https://i.imgur.com/ACH1jxO.png,256,384)|&ref(https://i.imgur.com/Jwi4p5a.png,256,384)|&ref(https://i.imgur.com/vehP2S7.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -249,6 +315,15 @@ NSFWモデルやけどそこまで主張してこないモデルやな
 |&ref(https://i.imgur.com/Y1G0Lrs.png,256,384)|&ref(https://i.imgur.com/2HGoB1C.png,256,384)|&ref(https://i.imgur.com/NTXIXGK.png,256,384)|&ref(https://i.imgur.com/iN1dhGA.png,256,384)|&ref(https://i.imgur.com/CTGq73v.png,256,384)|
 
 ----
+&aname(RELD)
+**[[RealEldenApocalypse_AnalogSexKnoll_4CandyPureSimp+FEET>>https://civitai.com/models/6925/realdosmix]]
+やたら長い名前やけど[[Art&Eros>#ARTE]]の作者のより実写に近付けたモデルやな
+NSFW味が強いのですぐ脱ぐで
+ポーズの引き出しは多そうやけど破綻もそれなりな感じやな
+アーティスティックな画に向いとるんやないかな
+|&ref(https://i.imgur.com/NUBmNFf.png,256,384)|&ref(https://i.imgur.com/epDHfbe.png,256,384)|&ref(https://i.imgur.com/xomLDiF.png,256,384)|&ref(https://i.imgur.com/9EaGk3H.png,256,384)|&ref(https://i.imgur.com/Drx6s14.png,256,384)|
+
+----
 **[[Realistic Vision V1.3>>https://civitai.com/models/4201/realistic-vision-v13]]
 美女からおっさんや幼女まで幅広くフォトリアルなモデルや
 プロンプトは公式を参考にしてな
@@ -270,6 +345,16 @@ redshift style〜でキャラクターを呼び出すタイプのモデルやな
 前バージョンから徹底的にNSFWを排除した全年齢に優しいモデルやな
 まあ先祖は敬えってことや
 |&ref(https://i.imgur.com/kWxLLe5.png,256,384)|&ref(https://i.imgur.com/7pr2A8I.png,256,384)|&ref(https://i.imgur.com/zzYqNQh.png,256,384)|&ref(https://i.imgur.com/awWIzpX.png,256,384)|&ref(https://i.imgur.com/P402CMP.png,256,384)|
+
+----
+&aname(SUNM)
+**[[Sunshinemix>>https://civitai.com/models/9291/sunshinemix]]
+[[chillout>#CHILO]]作者による、より2.5次元に近付けたミックスモデルや
+挙動の素直さと日本人好みの造形はそのままに、よりアーティスティックな画が出せるで
+複数人は出難く感じたけどリアル系は元々そんなもんやな
+イラストよりの実写が好みなﾆｷたちにおすすめや
+|&ref(https://i.imgur.com/k3HeNvR.png,256,384)|&ref(https://i.imgur.com/bOB13VC.png,256,384)|&ref(https://i.imgur.com/89UvTMU.png,256,384)|&ref(https://i.imgur.com/nrHjqHU.png,256,384)|&ref(https://i.imgur.com/ScLM3mR.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
 **[[Sygil-Diffusion>>https://huggingface.co/Sygil/Sygil-Diffusion]]
@@ -305,7 +390,7 @@ NSFWが得意なだけあってそういう画が映えるで
 **[[Uncanny Valley>>https://huggingface.co/deadman44/Miscellaneous_test_models]]
 わりとCGよりのモデルやな
 複数人がちょっと出辛かったけど挙動も素直でええ感じやった
-和風は得意ではなさそうやけど洋系は綺麗や
+和風は得意ではなさそうやけど洋系は綺麗や。あとロリが出やすいな
 ファンタジー系と合いそうやな
 |&ref(https://i.imgur.com/5Eu8bMr.png,256,384)|&ref(https://i.imgur.com/0j3jdZM.png,256,384)|&ref(https://i.imgur.com/apVNjfk.png,256,384)|&ref(https://i.imgur.com/sazScLn.png,256,384)|&ref(https://i.imgur.com/HwdCWK5.png,256,384)|
 
@@ -320,6 +405,6 @@ WDと言えばイラスト系で有名やけどプロンプトにreal lifeを入
 ----
 **[[Zeipher f222>>https://www.google.com/search?q=f111+f222]]
 今は亡き、女体のみを学習した旧female nudeモデルや
-自由度はほぼなくて、ﾆｮﾀｰｲのスペシャリストと言うことで当時でも良くマージに使われとった
+自由度はほぼないけど、ﾆｮﾀｰｲのスペシャリストと言うことで当時でも良くマージに使われとった
 とか古そげに語っとるけどたった数ヶ月前のことなんやがな
 |&ref(https://i.imgur.com/lUOPAa6.png,256,384)|&ref(https://i.imgur.com/sQfXjgU.png,256,384)|&ref(https://i.imgur.com/1KwdERv.png,256,384)|&ref(https://i.imgur.com/BvQcbmF.png,256,384)|&ref(https://i.imgur.com/ZhkdiV0.png,256,384)|

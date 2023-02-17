@@ -4,11 +4,14 @@
 
 |~略語|名称|説明|
 |SD|Stable Diffusion||
-|WD|Waifu Diffusion|ckptは略称で呼ばれることが多い。https://rentry.org/sdmodelsを探そう。|
+|WD|Waifu Diffusion|ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
+|NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつや|
+|SFW|Safe for work|こっちはNがついてなくて全年齢や|
 |NAI|NovelAI|単なる略称。|
 |NAIFU|NovelAI AI Image Frontend Ultimate|NovelAIのエミュレーターの一つ。|
 |web版||NovelAIを公式サイト上で利用することを指すことが多い。|
 |webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
+|AUTOMATIC1111||人名。でもツールの名前として呼ばれがち。|
 |1111|(webuiと同義)|このページでも1111と表記する。|
 |ローカル版||NovelAIのモデルを1111で利用する形態を指すことが多い。|
 |Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
@@ -17,8 +20,10 @@
 |DB|Dreambooth|学習方法の1つ。|
 |HN|Hypernetwork|学習方法の1つ。|
 |DA|DreamArtist|学習方法の1つ。|
-|Lora||学習方法の1つ。1111ではDB内で使える。|
-|ST|Stable Tuner|学習方法の1つ。|
+|Lora||学習方法の1つ。1111のDB拡張で使うやつとkohyaで使うやつがある。|
+|kohya||人名。でもツール(kohya-ss/sd-scripts)の名前として呼ばれがち。|
+|ST|Stable Tuner|学習方法の1つ。kohya系。|
+|CN|ControlNet|また新しいやつや|
 |t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
 |i2i|img2img|Image to Image 元画像とプロンプトから画像を生成すること。|
 |inpaint||i2iの1形態。元画像の一部を指定して画像を生成すること。|
@@ -28,7 +33,10 @@
 |Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が早い |
 |マージ||Checkpoint Mergerで2〜3つのモデルを組み合わせること。|
 |層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
-|風船||閲覧注意やで(詳しくは123スレ250-) 「浦島太郎のために」を参照 |
+|風船||閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
+
+あと説明するまでもないと思うけど、
+赤ちゃんは初心者、浦島太郎は復帰者のことやで
 
 * スレの言葉について
 

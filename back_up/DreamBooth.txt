@@ -51,7 +51,7 @@ Imput > Concepts タブで
 Input > 設定 タブで
 ***Basic
 -General
---Use LORA: LORAを使用する場合はオン
+--Use LORA: LORAを使用する場合はオン ''sd-scripts (kohya)で出来るLoraとは別物(kohyaのほうが拡張版でkohya版がデファクトになってる)なんで要注意''
 --Generate Classification Images Using txt2img: オフ
 -Intervals
 --Training Steps Per Image (Epochs): 100(デフォ) ここの値は対象画像一枚ごとに何Step学習するかを設定する、学習元の枚数が多いと合計が非常に多くなるので注意(例えば400を指定して学習元が20枚なら8000step合計で学習する)。
@@ -587,6 +587,7 @@ GUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss
 
 出力ファイルは last.ckpt か last.safetensors やで
 
+環境構築とかその辺は[[Lora>Dreambooth-LoRA]]のページ読みや。
 * DreamBooth環境すぐ壊れてむずかしいンゴ……
 予めDocker-Desktop入れとく必要あるが比較的簡単なGUIで動くやつがあるで、ただしWSL2を有効にせなあかんから、基本的には[[1111_WSL2]]を見て「Ubuntu 22.04 をセットアップ」までは済ませなあかんで。
 設定周りは上記のextensionと違ってstep数が全画像の合計を指定する形(2023/1/3頃確認時点のバージョン)やったり数字の指定がちょっとちゃうから気をつけや。
@@ -626,6 +627,9 @@ CUI版:[[https://github.com/smy20011/dreambooth-docker]]
 
 検証2では「nanU」が明らかに呼び出しキーとして機能していたが、「shs」も呼び出しキーとして少し機能しているように感じた。Instance promptとInstance Tokenが異なる語の場合、Instance prompt > Instance Token という事なのだろうか？
 [END]
+
+
+
 
 
 
