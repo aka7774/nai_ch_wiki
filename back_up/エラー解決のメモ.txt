@@ -1,0 +1,14 @@
+#contents
+*エラー解決のメモ
+としあきdiffusion Wiki > エラー解決メモ https://wikiwiki.jp/sd_toshiaki/%E3%82%A8%E3%83%A9%E3%83%BC%E8%A7%A3%E6%B1%BA%E3%83%A1%E3%83%A2
+上のリスペクト
+
+**Cannot add middleware after an application has started
+Fastapiが原因。stable-diffusionのフォルダを参照して、
+.\venv\Scripts\python.exe -m pip install --upgrade fastapi==0.90.1
+のコマンドを実行すれば起動できるはず
+
+**modules.devices.NansException: A tensor with all NaNs was produced in VAE
+xformersで掛け算が0になっているらしい。
+loraを作るときにbf16にすると壊れにくいらしい？？？
+とりあえず webui-user.bat の起動オプションに --disable-nan-check を追記するとエラーが無視される

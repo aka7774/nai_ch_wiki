@@ -6,7 +6,7 @@
 
 {| class="nanj_prompt_table sort edit"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
-|1girl, smile, singing, heart shaped pupils, naughty face, open mouth, {{laughing}}, seductive smile,||壊れた顔|複数顔表示されることが多いため、1girlを入れることを推奨|https://image01.seesaawiki.jp/n/h/nai_ch/at4GTPGa0V.png|
+|1girl, smile, singing, shaped pupils, naughty face, open mouth, {{laughing}}, seductive smile,||壊れた顔|複数顔表示されることが多いため、1girlを入れることを推奨|https://image01.seesaawiki.jp/n/h/nai_ch/at4GTPGa0V.png|
 |eye_drawing_unclearly,{{{{{{{{fire_aura_symbols transparent eyes}}}}}}}},fire hair,hyper extreme detailed, close-up,upperbody,burning_symbol_on_eyes,fire_effect_symbol_on_pupils,1girl,kawaii,fire pupils,容姿指定&#40;モンスターが生まれがちなので細かい方が良い)|clear_eyes_line,eyes_sharp_outline,{{{{{{{{around_eyes}}}}}}}},{{{{{{{{{{{{{{eyes}}}}}}}}}}}}}},eyelines,{{{pupils}}},background_fire,flame on hair,fire on hair,簡易中華|燃えた瞳||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BPuZxNPtxK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BPuZxNPtxK.png]]|
 |tongue out, smirk||舌なめずり|2つ同時に使用することで高確率でメスガキっぽい舌なめずりをしてくれる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ovPCDjuo4j-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ovPCDjuo4j.png]]|
 |{{black eyes}},{{empty eyes}},{{unconscious}},{{mind control}},{{blank stare}},frighten,scared||黒目|frightenとscaredの影響で雰囲気が暗くなる為背景等を指定しよう|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FRzD6osCsU-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FRzD6osCsU.png]]|

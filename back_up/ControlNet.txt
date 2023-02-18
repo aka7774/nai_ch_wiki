@@ -1,7 +1,26 @@
+現在Mikubill版はすごい勢いで更新されているので、定期的にアプデするのがいいと思うで。
+
 * ControlNetについて
-流行りの拡張機能
-概要(英語)google翻訳でよんでな
-[[https://github.com/lllyasviel/ControlNet>https://github.com/lllyasviel/ControlNet>]]&aname(lllyasviel)
+流行りの拡張機能。
+従来のプロンプトでの画像制御に加えて、輪郭線・奥行き・人のポーズなどの「画像情報」を追加で入力することで、より思い通りに画像を制御できる。
+その制御方法（Model）は複数ある（詳しくはcannyやhedやsegなど、下記参照）。
+
+実際の実装では、
++元画像Aを与える
++その画像を「必要ならば」処理して（Preprocessor）、新しい画像Bを生成する
++画像Bと、選んだモデル（Model）を使って、画像を生成する。
+という処理が行われるので、「Preprocessor」と「Model」の2つを選んであげる必要がある。
+2番目が不要な場合は、Preprocessorとしてnoneを選択すると、画像AがそのままModelに与えられる。
+（例えば最初から棒人間ツールなどで作った画像を与えたり、本拡張機能より優秀なプロセッサーで既に画像Aを画像Bに変換している場合など。）
+
+例えばイラストから線画を抽出して画像を生成する（canny）の場合の処理の流れは、PreprocessorとModelにともにcannyを指定し、
++イラストを与える
++Preprocessor（canny）が、イラストから線画の画像を作る
++その線画を用いて、Model（canny）が画像を生成する
+という流れになる。
+
+参考(英語)google翻訳でよんでな
+[[https://github.com/lllyasviel/ControlNet>https://github.com/lllyasviel/ControlNet]]&aname(lllyasviel)
 *インストール
 **Mikubill版
 -https://github.com/Mikubill/sd-webui-controlnet
@@ -9,6 +28,12 @@
 -https://huggingface.co/webui/ControlNet-modules-safetensors/tree/main
 8つの.safetensors ファイルをダウンロードして (わかるやつは右上の<>how to clone押してgit)
 stable-diffusion-webui\extensions\sd-webui-controlnet\models にコピー
+
+モデル亜種
+- kohya氏によるモデル改良版（何か応答がよくなるらしい？）：https://huggingface.co/kohya-ss/ControlNet-diff-modules/tree/main
+- もともとのControlNetでのモデル（ただし1つ5.71GB）：https://huggingface.co/lllyasviel/ControlNet/tree/main/models
+- %%Abyss Orange Mix2用のモデル（？？誰か検証してクレメンス）：https://civitai.com/models/9557/abyssorangemix2-controlnets%% ←これは上のkohya氏のものとハッシュ値が一致するので同一のようです。
+
 
 **unpronpt版
 -https://github.com/ThereforeGames/unprompted
@@ -22,15 +47,15 @@ txt2imgタブの下にControlNetができてるので▼をクリック
 -Preprocessor と同じ名前のモデルを選ぶ
 
 詳しい例は[[上>#lllyasviel]]のやつ読んで
-|canny|輪郭線を検出して取り出す|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/CP88CJvYfv-s.jpeg)>https://image02.seesaawiki.jp/n/h/nai_ch/CP88CJvYfv.jpeg]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NUTIu7ajx_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/NUTIu7ajx_.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tgLvlHsWDK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tgLvlHsWDK.png]]|
+|canny|輪郭線を検出して取り出す|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X.png]]|
 |depth|深度情報を引き継ぐ 立体的な位置関係を処理できる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh.png]]|
 |hed|いわゆる「描き込み」的な部分を取り出す タッチを引き継ぎやすい||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw.png]]|
 |mlsd|直線の輪郭だけ取り出す 曲線のない人工的な構図をノイズ無く取り出せる||||
 |normal_map|法線情報を引き継ぐ　深度情報よりも細部の立体感に沿いやすい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iyHkyJEFHf-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/iyHkyJEFHf.jpg]]|
-|openpose|おなじみの棒人間|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/54wJ6bZ4OA-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/54wJ6bZ4OA.jpg]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6NvroNtmdB-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/6NvroNtmdB.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YPspdJYGbY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YPspdJYGbY.png]]|
-|openpose_hand|||||
-|scribble|マウス入力の落書き　線を絶対的なものとしては扱わず、いい感じに仕上げる||||
-|fake_scribble|画像を一回落書き風に変換してscribbleに投入する||||
+|openpose|おなじみの棒人間|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WTbFDdTOT7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/WTbFDdTOT7.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5WaCsMlIST-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/5WaCsMlIST.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RwFNDeU88I-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/RwFNDeU88I.png]]|
+|openpose_hand|棒人間に手が追加されたやつ||||
+|scribble|マウス入力の落書き　線を絶対的なものとしては扱わず、いい感じに仕上げる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5tsjNQTbfT-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/5tsjNQTbfT.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qhknh2I97S-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/qhknh2I97S.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/v7ZV5VrtYc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/v7ZV5VrtYc.png]]|
+|fake_scribble|画像を一回落書き風に変換してscribbleに投入する|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4uQiYf6rzq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/4uQiYf6rzq.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Zun19XTTDJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Zun19XTTDJ.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9PeZWztrlG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/9PeZWztrlG.png]]|
 |segmentation|'ADE20K'という規格で塗り絵 領域に分類を持たせる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228.png]]|
 とりあえずスレにある画像使ったんであかんかったら消すわ
 
@@ -121,3 +146,4 @@ https://i.imgur.com/ja6fzus.pngちゃんと左が一番手前で右が一番奥�
 *サンプル
 **動画
 外人ニキやけど早送りでもだいたい分かる [[https://www.youtube.com/watch?v=ci7NfTsifd0>>>https://www.youtube.com/watch?v=ci7NfTsifd0]]
+
