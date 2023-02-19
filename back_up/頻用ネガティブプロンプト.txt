@@ -1,5 +1,8 @@
 ネガティブプロンプトで頻用するワード一覧です。
 
+#contents
+
+*キーワード
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
 |anime,megami magazine,|アニメ絵柄|キャラ再現時、作品名によってはアニメ絵柄が強くなってしまうのでその対策に。official artも活かしやすくなる。効果が強すぎる場合はanimeのみに||
@@ -49,4 +52,19 @@
 |long neck,long body|長い首、長い胴体|身体の長さを適切にすることで、顔が見切れにくくなる||
 |text,title,signature,watermark|テキスト、タイトル、署名、透かし|画像に文字ができにくくなる||
 |jpeg artifacts,blurry|jpeg アーティファクト、ぼやけ|画像にボヤけやつぶつぶが出にくくなる||
+|}
+
+*Embedding版 (ローカル版のみ使用可能、要ptファイル)
+どれも取得したptファイルを stable-diffusion-webui/embeddings ディレクトリ下に置けば使用可能 
+置いたptファイルの名前と同じ値をネガティブプロンプトとして書けばよい
+以下の表ではptファイルのデフォルト名(ダウンロードしたときの名前)で書いてます
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|意味|備考|サンプル|
+|bad_prompt|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://huggingface.co/datasets/Nerfgun3/bad_prompt||
+|bad_prompt_version2|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 bad_promptよりもいいとは作者談 要ptファイル https://huggingface.co/datasets/Nerfgun3/bad_prompt||
+|bad-artist|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://huggingface.co/NiXXerHATTER59/bad-artist||
+|bad-artist-anime|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 bad-artistの方が推奨されている 要ptファイル https://huggingface.co/NiXXerHATTER59/bad-artist||
+|bad-image-v2-39000|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://huggingface.co/Xynon/models/tree/main/experimentals/TI||
+|bad-hands-5|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://huggingface.co/yesyeahvh/bad-hands-5||
+|EasyNegative|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://huggingface.co/datasets/gsdf/EasyNegative||
 |}

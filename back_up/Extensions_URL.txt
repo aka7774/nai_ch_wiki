@@ -35,6 +35,10 @@ https://gist.githubusercontent.com/aka7774/bb306094dae726a32fbb6c617ddce2c0/raw/
 
 * 一覧
 
+** Posex
+- https://github.com/hnmr293/posex
+- 1111上で棒人間を動かすやつ。同様の拡張やツールがいくつかある。
+
 ** sd-webui-lora-block-weight
 - https://github.com/hako-mikan/sd-webui-lora-block-weight
 - Loraを適用する際、強さを階層ごとに設定できます

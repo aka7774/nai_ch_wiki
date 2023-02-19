@@ -211,17 +211,17 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 |Google Colaboratory|NVIDIA Tesla T4|15GB|||51.66|xformers opt-channelslast|conda Python 3.9.12 ckptを38c1ebe3(Anyv3-fp16)にすると47.48|
 |Google Compute Engine|NVIDIA Tesla V100|16GB HBM2|n1-standard-4 SkylakeXeon 4C|1分45秒|31.0|--share --gradio-debug --gradio-auth|xformers無し、count2 size5なら19.5秒|
 |Google Compute Engine|NVIDIA Tesla T4|16GB|n1-standard-4 SkylakeXeon 4C|1分5秒|63.11|--share --gradio-debug --gradio-auth|xformers無しインスタンスはアメリカ西海岸|
-|Google Colaboratory|NVIDIA Tesla T4|15GB|Xeon 2.20GHz|67秒|64.33s|||
-|Kaggle|NVIDIA Tesla T4 x2|30GB(15GB x2)|2コアCPU(詳細不明)||01:01||普通に設定ミスって速度出てない可能性あり|
-|Google Colaboratory|NVIDIA A100|40GB|Xeon @2.20Ghz 6C/12T||00:26||batchsize10にしたら00:06でした|
+|Google Colaboratory|NVIDIA Tesla T4|15GB|Xeon 2.20GHz|67秒|64.33|||
+|Kaggle|NVIDIA Tesla T4 x2|30GB(15GB x2)|2コアCPU(詳細不明)||61||普通に設定ミスって速度出てない可能性あり|
+|Google Colaboratory|NVIDIA A100|40GB|Xeon @2.20Ghz 6C/12T||26||batchsize10にしたら00:06でした|
 |Paperspace Gradient|Quadro M4000|8GB|Xeon E5-2623 v4||324.38||無料プラン|
 |Paperspace Gradient|NVIDIA RTX4000|8GB|Xeon @3.20GHz 8C/8T|42秒|40.27|xformers|8ドル/月プラン|
 |Paperspace Gradient|NVIDIA RTX5000|16GB|Xeon @3.20GHz 8C/8T|38秒|36.65|xformers|8ドル/月プラン|
-|Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T|38秒|||8ドル/月プラン|
-|Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T|31秒||xformers|8ドル/月プラン|
-|Paperspace Gradient|NVIDIA A5000|24GB|Xeon @3.20GHz 8C/8T|24秒||xformers|39ドル/月プラン|
-|Paperspace Gradient|NVIDIA A6000|48GB|Xeon @3.20GHz 8C/8T|22秒||xformers|39ドル/月プラン|
-|Paperspace Gradient|NVIDIA A100|80GB|Xeon @3.20GHz 8C/8T|19秒||xformers|39ドル/月プラン|
+|Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T|38秒|38.||8ドル/月プラン|
+|Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T|31秒|31.|xformers|8ドル/月プラン|
+|Paperspace Gradient|NVIDIA A5000|24GB|Xeon @3.20GHz 8C/8T|24秒|24.|xformers|39ドル/月プラン|
+|Paperspace Gradient|NVIDIA A6000|48GB|Xeon @3.20GHz 8C/8T|22秒|22.|xformers|39ドル/月プラン|
+|Paperspace Gradient|NVIDIA A100|80GB|Xeon @3.20GHz 8C/8T|19秒|19.|xformers|39ドル/月プラン|
 |}
 
 &size(18){NovelAI}
@@ -592,4 +592,6 @@ PCの使用状況とかメモリリークもあるのでだいたいの目安で
 medvramはだいたい所要時間1.5倍くらい
 lowvramはさらに4倍くらい
 [END]
+
+
 

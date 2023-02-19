@@ -19,6 +19,16 @@
 +その線画を用いて、Model（canny）が画像を生成する
 という流れになる。
 
+** i2iとの違い
+i2iは元画像の全ての情報（とくに色込み）を読み込むので、線画からの着色はほぼ無理だったり、元画像に新たに適切な色を塗ってやる必要があった。
+それと比べて、ControlNetは「元画像が持っている特定の情報のみ」を取り出し、その情報とプロンプトを使って画像を生成する。例えば：
+- 色情報が無い白黒の線画からでも着色できる
+- 画像から線画を作るプリプロセッサーを噛ませれば、画像→線画→再着色により、元画像から色だけを変えるなどができる。
+- 線画以外にも、画像からポーズだけを抽出して、プロンプトでは作るのが困難なポーズを取らせることができる
+- 構図や領域分けだけ抽出して、どこに何を描くかという構図を完全に固定することもできる
+という利点がある。
+もちろん、色などの情報が落ちる分、完全にi2iの上位互換というわけではないことに注意。
+
 参考(英語)google翻訳でよんでな
 [[https://github.com/lllyasviel/ControlNet>https://github.com/lllyasviel/ControlNet]]&aname(lllyasviel)
 *インストール
@@ -31,6 +41,7 @@ stable-diffusion-webui\extensions\sd-webui-controlnet\models にコピー
 
 モデル亜種
 - kohya氏によるモデル改良版（何か応答がよくなるらしい？）：https://huggingface.co/kohya-ss/ControlNet-diff-modules/tree/main
+上の軽量化とは違う方法での軽量化で（diff版）、原理的にはこっちのほうがいいらしいが、上の方がいい場合もあるらしい（[[ここ参照>https://github.com/Mikubill/sd-webui-controlnet#extraction]]）。検証求む。
 - もともとのControlNetでのモデル（ただし1つ5.71GB）：https://huggingface.co/lllyasviel/ControlNet/tree/main/models
 - %%Abyss Orange Mix2用のモデル（？？誰か検証してクレメンス）：https://civitai.com/models/9557/abyssorangemix2-controlnets%% ←これは上のkohya氏のものとハッシュ値が一致するので同一のようです。
 

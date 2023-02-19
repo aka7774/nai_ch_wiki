@@ -36,7 +36,7 @@ Microsoft Storeを起動し、ubuntu 22 で検索して Ubuntu 22.04.1 LTS を�
 Ubuntu 22.04.1 LTSを起動すると初期化とユーザー名、パスワードの設定を要求されるので入力する
 
 **Pythonのアップデート
-2022/12/10現在でPython3.10の最新である Python3.10.9にアップデートする
+2023/02/19現在でPython3.10の最新である Python3.10.10にアップデートする
 
 まず以下コマンドを実行
 =|BOX|
@@ -55,13 +55,13 @@ sudo apt install -y build-essential libbz2-dev libdb-dev \
 
 Pythonのソースコードを取得し展開
 =|BOX|
-wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tar.xz
-tar xJf Python-3.10.9.tar.xz
+wget https://www.python.org/ftp/python/3.10.10/Python-3.10.10.tar.xz
+tar xJf Python-3.10.10.tar.xz
 ||=
 
 Pythonをビルド(そこそこ時間がかかる)
 =|BOX|
-cd Python-3.10.9
+cd Python-3.10.10
 ./configure
 make
 sudo make install

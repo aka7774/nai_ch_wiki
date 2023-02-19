@@ -11,6 +11,12 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+- 2023/02/19
+[[DDosMix>#DDOS]]を追加
+[[Bigger Girls Photorealism>#BGGP]]を追加
+[[epi_hyperphotogodes>#EPIH]]を追加
+[[NeverEnding Dream>#NED]]を追加
+[[Z_phyr Mix>#ZPHM]]を追加
 - 2023/02/18
 [[Babylon>#BABY]]を追加
 [[Gravy Mix>#GRVY]]を追加
@@ -111,6 +117,17 @@ NSFWは省いてるとのことでエロはSD系のが出るだけやな
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(BGGP)
+**[[Bigger Girls Photorealism>>https://civitai.com/models/10380/bigger-girls-photorealism]]
+名称通りchubbyな女の子に特化したモデルや
+chubbyやfatでぽっちゃり系、そのままで普通体型も作れるで
+まあそのままでも太くなりがちなんやけどな
+公式にはAnythingのVAE使えって書いとるけどvae-ft-mse-840000のがいいと思うで
+そういう趣味のニキ達には垂涎のモデルなんやろな
+|&ref(https://i.imgur.com/AOhGRBy.png,256,384)|&ref(https://i.imgur.com/P9Sj5Bz.png,256,384)|&ref(https://i.imgur.com/goR4td0.png,256,384)|&ref(https://i.imgur.com/Ua80P35.png,256,384)|&ref(https://i.imgur.com/n7dim5I.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 **[[Cafe Unofficial Instagram TEST Model>>https://huggingface.co/NoCrypt/cafe-instagram-unofficial]]
 日本人が出せるリアル系モデルの元祖やな
 名前の通りインスタ系女子が出せるで
@@ -129,6 +146,17 @@ basilベースと言うことで素直な挙動のモデルや
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(DDOS)
+**[[DDosMix>>https://civitai.com/models/8437/ddosmix]]
+プロンプトが多くてLoRAを強制するようなモデルに辟易して作られたモデルや
+単純なプロンプトでリアル出せるで
+複数人がやたら出らんかったけど反応も素直やし造形も整ってるしで良モデルやな
+何もせんでもｵﾊﾟｰｲ大きくなるんやがワイの気のせいかもしれん
+指の破綻が多く感じたんやが試行回数少ないから評価には繋げんといてな
+|&ref(https://i.imgur.com/SBIv3rb.png,256,384)|&ref(https://i.imgur.com/lxFbLQy.png,256,384)|&ref(https://i.imgur.com/ROpv8yA.png,256,384)|&ref(https://i.imgur.com/hPdOJBS.png,256,384)|&ref(https://i.imgur.com/7X12AcE.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 **[[Deliberate>>https://civitai.com/models/4823/deliberate]]
 半リアルモデルやけどリアル調も出せるで。頑張れば
 アート系のお姉さんはいい感じ
@@ -143,6 +171,16 @@ SD1.5ベースに768x768で学習されたリアル系モデルや
 解像度を活かした多彩な人物や風景の繊細な描写が得意や。たぶん
 ワイのプロンプトが悪いんか上手い絵は描けんかった
 |&ref(https://i.imgur.com/BuWxGGk.png,256,384)|&ref(https://i.imgur.com/dAFXRiI.png,256,384)|&ref(https://i.imgur.com/uQCpKsh.png,256,384)|&ref(https://i.imgur.com/dQIp63u.png,256,384)|&ref(https://i.imgur.com/yD0Paw9.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(EPIH)
+**[[epi_hyperphotogodes>>https://civitai.com/models/7863/epihyperphotogodess]]
+何をマージしたか作者が忘れるくらい色々マージしたモデルや
+やからここに載ってるモデルのただの焼き直しで雰囲気マージって印象や
+何のモデルからどの特徴を取り込んだか憶えてないとかコンセプトが曖昧や
+マージ沼はそんなに甘いもんちゃうで
+|&ref(https://i.imgur.com/EeADooB.png,256,384)|&ref(https://i.imgur.com/K2QL3DD.png,256,384)|&ref(https://i.imgur.com/QEG7BgB.png,256,384)|&ref(https://i.imgur.com/FsAKAdt.png,256,384)|&ref(https://i.imgur.com/YKKCvNq.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -193,7 +231,7 @@ Cafe InstagramがインスタならこちらはTwitter少女が出てくるモ�
 
 ----
 &aname(GRLK)
-**[[GrapeLikeDreamFrui>>https://civitai.com/models/4922/grapelikedreamfruit]]
+**[[GrapeLikeDreamFruit>>https://civitai.com/models/4922/grapelikedreamfruit]]
 写実的でありながら質感とかポーズをアーティスティックに仕上げたモデルや。公式によると
 ポジを盛って綺麗なお姉さんを出すタイプやけど盛らんでもいい感じや
 その辺は公式を参考にしてな。ちなみにこの欄の2枚目からは盛っとらん画像やで。悪く無いやろ？
@@ -280,6 +318,16 @@ lomo style portrait of〜（映画俳優等の有名人）でキャラクター�
 それ以外は全然や
 そこそこ人気あるモデルみたいなんやけど正直使い方がわからんので堪忍してな
 |&ref(https://i.imgur.com/1b6TBke.png,256,384)|&ref(https://i.imgur.com/TykunKM.png,256,384)|&ref(https://i.imgur.com/wmpa5D9.png,256,384)|&ref(https://i.imgur.com/bxXIL01.png,256,384)|&ref(https://i.imgur.com/jIM59h5.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(NED)
+**[[NeverEnding Dream>>https://civitai.com/models/10028/neverending-dream]]
+アーティスティックでLoRAとの親和性も高いモデルを目指したらしいで
+ソフトな印象の2.5次元で造形もええな
+ただどこかで見た顔になるのはこの界隈仕方ないことなんやろな
+NSFWが強くてclose-upが効かんかったから撮影には苦労したで
+|&ref(https://i.imgur.com/SzJvfu9.png,256,384)|&ref(https://i.imgur.com/ARCKaIq.png,256,384)|&ref(https://i.imgur.com/9HaCdZa.png,256,384)|&ref(https://i.imgur.com/2Rr9yWn.png,256,384)|&ref(https://i.imgur.com/jCem7mZ.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -388,6 +436,7 @@ redshift style〜でキャラクターを呼び出すタイプのモデルやな
 挙動の素直さと日本人好みの造形はそのままに、よりアーティスティックな画が出せるで
 複数人は出難く感じたけどリアル系は元々そんなもんやな
 イラストよりの実写が好みなﾆｷたちにおすすめや
+リアル系モデルでは難しかった瞳の色を赤とかのアニメ色に出来るらしいで
 |&ref(https://i.imgur.com/k3HeNvR.png,256,384)|&ref(https://i.imgur.com/bOB13VC.png,256,384)|&ref(https://i.imgur.com/89UvTMU.png,256,384)|&ref(https://i.imgur.com/nrHjqHU.png,256,384)|&ref(https://i.imgur.com/ScLM3mR.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
@@ -449,4 +498,14 @@ WDと言えばイラスト系で有名やけどプロンプトにreal lifeを入
 自由度はほぼないけど、ﾆｮﾀｰｲのスペシャリストと言うことで当時でも良くマージに使われとった
 とか古そげに語っとるけどたった数ヶ月前のことなんやがな
 |&ref(https://i.imgur.com/lUOPAa6.png,256,384)|&ref(https://i.imgur.com/sQfXjgU.png,256,384)|&ref(https://i.imgur.com/1KwdERv.png,256,384)|&ref(https://i.imgur.com/BvQcbmF.png,256,384)|&ref(https://i.imgur.com/ZhkdiV0.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(ZPHM)
+**[[Z_phyr Mix>>https://civitai.com/models/10214/zphyr-mix]]
+ゲームキャラの再現をコンセプトとしたマージ＋学習モデルや
+普通の人物も出せるで
+学習元の影響か雪のシーンが多くてさらにすぐ脱ぐから寒そうでたまらん
+突然絵画調になったりポーズや服装も反応良くないしちょっと扱い難いモデルかもしれん
+|&ref(https://i.imgur.com/2QGO8jD.png,256,384)|&ref(https://i.imgur.com/973vJyt.png,256,384)|&ref(https://i.imgur.com/mH1gf90.png,256,384)|&ref(https://i.imgur.com/zluNcUT.png,256,384)|&ref(https://i.imgur.com/si9s9cq.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
