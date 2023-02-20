@@ -35,6 +35,25 @@ Be sure to include "masterpiece, best quality, ultra-detailed, illustration, 1gi
 Prompts may use danbooru tags. Based on these, please tell me a 150-element prompt that can generate illustrations for the following themes.
 「」
 
+***AIによるプロンプト生成用質問テンプレート(v1.3)
+クオリティータグは付与済みの前提です。以下テンプレート
+
+----
+
+プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
+=|(box=textarea)|
+「1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind」
+です。
+||=
+プロンプトには以下の要素が必要です。
+�／綺眠茲簗�絵など描写方法を説明するための単語
+��外見的特徴や装飾物や持ち物の(色、模様、形も指定)を説明するための単語
+�Ｇ�齢、髪色、髪型、髪の長さ、髪に付けたアクセサリ、目の色、目の形、表情、胸の大きさ、服装を説明するための単語
+�ど�屋の中、星空、森、川辺など背景の詳細な説明をするための単語
+�ゥ檗璽困鯑�からつま先まで指示するための単語もプロンプトに加えてください。
+プロンプトの文頭には「1girl, solo,」を必ず含めてください。回答には「""」や改行は使わず、平文でお願いします。プロンプトを提案した後には、プロンプトの各要素を説明してください。
+プロンプトはdanbooruのタグを使うことができます。これらを踏まえて、以下のテーマに沿ったイラストを生成できるプロンプトを150要素で教えて下さい。
+「」
 
 
 *** AIによるプロンプト生成用質問テンプレート(v1.2)

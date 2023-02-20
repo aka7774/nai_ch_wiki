@@ -1,10 +1,11 @@
 現在Mikubill版はすごい勢いで更新されているので、定期的にアプデするのがいいと思うで。
 
 * ControlNetについて
-流行りの拡張機能。
+ポーズや構図等を指定して画像生成できるようにする拡張機能。
 従来のプロンプトでの画像制御に加えて、輪郭線・奥行き・人のポーズなどの「画像情報」を追加で入力することで、より思い通りに画像を制御できる。
 その制御方法（Model）は複数ある（詳しくはcannyやhedやsegなど、下記参照）。
 
+* 詳細
 実際の実装では、
 +元画像Aを与える
 +その画像を「必要ならば」処理して（Preprocessor）、新しい画像Bを生成する
@@ -31,24 +32,71 @@ i2iは元画像の全ての情報（とくに色込み）を読み込むので�
 
 参考(英語)google翻訳でよんでな
 [[https://github.com/lllyasviel/ControlNet>https://github.com/lllyasviel/ControlNet]]&aname(lllyasviel)
+
+*基本
+
+- ControlNet now available in the WebUI! &#183; Discussion #7784 &#183; AUTOMATIC1111/stable-diffusion-webui - https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/7784
+- Mikubill/sd-webui-controlnet: ControlNet の WebUI 拡張機能 - https://github.com/Mikubill/sd-webui-controlnet
+
 *インストール
 **Mikubill版
 -https://github.com/Mikubill/sd-webui-controlnet
 上のurlをStable Diffusion Web UI の「拡張機能」タブ > 「URLからインストール」
--https://huggingface.co/webui/ControlNet-modules-safetensors/tree/main
-8つの.safetensors ファイルをダウンロードして (わかるやつは右上の<>how to clone押してgit)
-stable-diffusion-webui\extensions\sd-webui-controlnet\models にコピー
 
-モデル亜種
+▼モデル配置場所
+%%-https://huggingface.co/webui/ControlNet-modules-safetensors/tree/main%%
+%%8つの.safetensors ファイルをダウンロードして (わかるやつは右上の<>how to clone押してgit)%%
+下記の「モデル」の項目から適宜ダウンロードして以下のフォルダに配置
+=||
+stable-diffusion-webui\extensions\sd-webui-controlnet\models
+||=
+
+
+
+* モデル
+
 - kohya氏によるモデル改良版（何か応答がよくなるらしい？）：https://huggingface.co/kohya-ss/ControlNet-diff-modules/tree/main
 上の軽量化とは違う方法での軽量化で（diff版）、原理的にはこっちのほうがいいらしいが、上の方がいい場合もあるらしい（[[ここ参照>https://github.com/Mikubill/sd-webui-controlnet#extraction]]）。検証求む。
 - もともとのControlNetでのモデル（ただし1つ5.71GB）：https://huggingface.co/lllyasviel/ControlNet/tree/main/models
 - %%Abyss Orange Mix2用のモデル（？？誰か検証してクレメンス）：https://civitai.com/models/9557/abyssorangemix2-controlnets%% ←これは上のkohya氏のものとハッシュ値が一致するので同一のようです。
 
 
-**unpronpt版
+** unpronpt版
 -https://github.com/ThereforeGames/unprompted
 試したけどうまくいかんかったんで誰か書いて・・・
+
+* モデルの変換とか
+
+Controlnetのpthとかsafetensorsって各マージモデル用に最適化した方がええんか
+モデル専用のそれらがうｐされとるな
+> 968
+指示画像に生成画像が従うように後付けのネットワークが訓練されとるのがControlNetや
+今の公式版はSD1.5の生成画像を操作するように学習されとるから別のモデルに適用すると当然ズレがあって最良の結果にはならん
+
+なのでモデルにはそれぞれのControlNetが本来は必要で専用のがあるのはおかしい話やないんやけど
+その専用のがどういう風に作られてるのかは知らん
+
+↓
+
+> 980
+それもう古い話やで
+わざわざ専用版作らなくてもマージでそれっぽく動いたでという初期の報告や
+
+それと同じことをミクビル版はその場でやっとる(やからモデルの切り替えがやけに重かったりする)
+- [実験]他のSD1に制御を移します。X モデル &#183;ディスカッション #12 &#183;lllyasviel/ControlNet - [https://github.com/lllyasviel/ControlNet/discussions/12](https://github.com/lllyasviel/ControlNet/discussions/12)
+
+* ツール
+
+▼ツール
+
+- Openpose rig：Character bones that look like Openpose for blender - https://toyxyz.gumroad.com/l/ciojz?layout=profile
+- PoseMaker - a Hugging Face Space by jonigata - (https://huggingface.co/spaces/jonigata/PoseMaker
+huggingface上で2Dで某人形を操作
+- webuiで棒人間いじれる拡張出とるやで
+https://github.com/fkunn1326/openpose-editor
+- Posex
+https://github.com/hnmr293/posex
+1111上で棒人間を動かすやつ。同様の拡張やツールがいくつかある。
 
 *使い方
 **Mikubill版
@@ -58,6 +106,8 @@ txt2imgタブの下にControlNetができてるので▼をクリック
 -Preprocessor と同じ名前のモデルを選ぶ
 
 詳しい例は[[上>#lllyasviel]]のやつ読んで
+
+* Preprocessorの種類と特徴
 |canny|輪郭線を検出して取り出す|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X.png]]|
 |depth|深度情報を引き継ぐ 立体的な位置関係を処理できる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh.png]]|
 |hed|いわゆる「描き込み」的な部分を取り出す タッチを引き継ぎやすい||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw.png]]|
@@ -70,10 +120,50 @@ txt2imgタブの下にControlNetができてるので▼をクリック
 |segmentation|'ADE20K'という規格で塗り絵 領域に分類を持たせる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228.png]]|
 とりあえずスレにある画像使ったんであかんかったら消すわ
 
-*** segmentationについて
-一番直感的に分かりにくそうやけど、構図と描くもの（人や道や木など150種類の概念から選べる）を完全にコントロールできる、すごそうなやつや。
-スレ（なんJNVA部★150）におった詳しいニキの解説をメモしとくで。誰かそのうち編集してな。
+**得意不得意
 
+ちょっと試した感じこんな感じでした
+- %%OpenPose: 奥行き苦手%%
+- NomalMap: 奥行き得意 ただし背景が消失する(?)
+- DepthMap: 奥行き得意 背景も死なない
+
+Normal & Depth
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pDOEL4rMst.2_comp001.png,600)
+
+OpenPoseは実写/イラストで検出精度が変わるみたいです
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/M09ux9A9R1.3_comp001.png,600)
+
+
+
+** segmentation
+塗り絵から構図と描くもの（人や道や木など150種類の概念から選べる）をコントロール・・・できそうなやつや。
+
+ADE20Kって規格で塗り絵するで
+物と事で色分けが違うらしい。雑に言うと「人間」は数えられるので「物」、「空」は数えられないので「事」 
+色分けの決まりは下の画像参照
+-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/edkUvJLYzQ.png)
+-https://github.com/CSAILVision/sceneparsing/tree/master/visualizationCode/color150
+-ADE20Kのオブジェクト-RGB対応表スプレッドシート
+https://docs.google.com/spreadsheets/d/1se8YEtb2detS7OuPE86fXGyD269pMycAWe2mtKUj2W8/edit#gid=0
+
+こんなん人力では無理やという場合は元画像を用意してWebで
+https://huggingface.co/spaces/shi-labs/OneFormer
+the task is semantic, ADE20K, DiNAT-L
+にチェック入れて送信すると右下に塗り分けられて出力される。
+あとは適当なペイントツールで好きなように修正する。
+***めんどくさい！ようわからん！
+とりあえず参考にしたい画像をドロップして
+Preprocessor:segmentation, model:~_segにして出力してみる
+出てきた塗り絵を適当なペイントツールで修正する。
+ちなみに元画像はアニメ塗りより実写がいいらしい(って4chanで見た)→openposeの話やったすまん
+
+***複数人を塗り分けるには
+https://huggingface.co/spaces/shi-labs/OneFormer
+%%%the task is panoptic%%%, ADE20K, DiNAT-L
+にチェック入れて送信すると
+判定がゆるくなる代わりに人数分だけpersonの色が増えるので
+適当なペイントツールで色分けして塗る。(人間が重なっていなければ塗り分けなくていい)
+[+]
 基本
 =|BOX|
 229今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 15:33:50.21ID:g7tc6IYz0
@@ -152,7 +242,19 @@ https://i.imgur.com/ja6fzus.pngちゃんと左が一番手前で右が一番奥�
 労力割かずに複雑なポーズ一発出しならそこは断然openposeや
 使い分けていこう
 ||=
-
+[END]
+***輪郭線を白で描くことで、腕組の表現の打率を上げる
+=|BOX|
+701今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cb28-BTrK)2023/02/20(月) 01:04:22.35ID:WCL0iJ9f0
+>>690
+なるほど、人物とかくっきり輪郭線付いてるね
+試しに腕組seg作ってみたら重なる表現は相変わらず苦手だけどなかなか良さそうだった
+色分けと上手く使い分けたいね
+https://i.imgur.com/DUfpcSL.png
+https://i.imgur.com/N9pdqX1.png
+https://i.imgur.com/2H4eWAU.png
+https://i.imgur.com/nPccccl.png
+||=
 
 *サンプル
 **動画

@@ -11,6 +11,12 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+- 2023/02/20
+[[Colorful>#COLO]]を追加
+[[HRL Hyper Realistic Looking 3>#HRL3]]を追加
+[[Unvail AI 3DKX v2>#3DKX2]]を追加
+[[verisimilitude>#VERIT]]を追加
+
 - 2023/02/19
 [[DDosMix>#DDOS]]を追加
 [[Bigger Girls Photorealism>#BGGP]]を追加
@@ -146,6 +152,16 @@ basilベースと言うことで素直な挙動のモデルや
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(COLO)
+**[[Colorful>>https://civitai.com/models/7279/colorful]]
+VAE無くてもカラフルだよモデルや
+それVAE埋め込んでるだけ…とは言わぬが花やな
+作者曰くｴﾁｰは苦手らしいがそんなことないしなんなら脱ぎやすいまであるで
+若干ロリ顔が出やすいけど身体が大人なのでその辺が苦手な所以なのかもしれん
+|&ref(https://i.imgur.com/EbdDZ3h.png,256,384)|&ref(https://i.imgur.com/xFGymfP.png,256,384)|&ref(https://i.imgur.com/h6AR7Yb.png,256,384)|&ref(https://i.imgur.com/tXKi2oj.png,256,384)|&ref(https://i.imgur.com/oF30Oo1.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(DDOS)
 **[[DDosMix>>https://civitai.com/models/8437/ddosmix]]
 プロンプトが多くてLoRAを強制するようなモデルに辟易して作られたモデルや
@@ -277,6 +293,18 @@ NSFW系では老舗の有名モデルや
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(HRL3)
+**[[HRL Hyper Realistic Looking 3>>https://civitai.com/models/8616/hrl-hyper-realistic-looking-3]]
+↑のHRLのバージョン3や
+どこが変わったのか書いとらんからわからん
+イラストっぽくならないし破綻が目に見えて減って確実にバージョンアップしとる印象やな
+japaneseがチャイナっぽくなるのは仕方ないとしてロリ祭りは継続中や
+なんか全員顔（特に眉）が似とるんやがたまたまやろか
+|&ref(https://i.imgur.com/BOFW3QW.png,256,384)|&ref(https://i.imgur.com/fviRmu5.png,256,384)|&ref(https://i.imgur.com/BBXklet.png,256,384)|&ref(https://i.imgur.com/PIX1RTd.png,256,384)|&ref(https://i.imgur.com/BWrIkd3.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(3DKX1)
 **[[H&A 3DKX Model>>https://huggingface.co/HavoAloe/3DKX_1.0b]]
 カートゥーン系とCGレンダリング系を使い分けられるモデルや
 非NSFWとして使う場合はネガにnsfw,nudity,eroticaを入れることが推奨されとるけど割と抜けてくるで
@@ -481,6 +509,24 @@ NSFWが得意なだけあってそういう画が映えるで
 和風は得意ではなさそうやけど洋系は綺麗や。あとロリが出やすいな
 ファンタジー系と合いそうやな
 |&ref(https://i.imgur.com/5Eu8bMr.png,256,384)|&ref(https://i.imgur.com/0j3jdZM.png,256,384)|&ref(https://i.imgur.com/apVNjfk.png,256,384)|&ref(https://i.imgur.com/sazScLn.png,256,384)|&ref(https://i.imgur.com/HwdCWK5.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(3DKX2)
+**[[Unvail AI 3DKX v2>>https://civitai.com/models/2504/unvail-ai-3dkx-v2]]
+↑の方の[[3DKX>#3DKX1]]のバージョン2やな。アカウント違うけど仕様が一緒なので多分あっとるやろ
+a 3d render of〜でCG系の絵柄を出すのは共通や
+コンセプト通りなるほど3DCGって絵柄やで
+本来は有名3Dキャラ（バットマンとかララ・クロフトとか2Bとか）出力用やろから汎用的な子はこんなもんやな
+|&ref(https://i.imgur.com/Kpda2UH.png,256,384)|&ref(https://i.imgur.com/0PmP5OK.png,256,384)|&ref(https://i.imgur.com/fXgk93U.png,256,384)|&ref(https://i.imgur.com/Uqb1tDY.png,256,384)|&ref(https://i.imgur.com/bfxjreH.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(VERIT)
+**[[verisimilitude>>https://civitai.com/models/10540/verisimilitude]]
+色んなジャンルでリアルなポートレイトを出すことを目的にマージされたモデルやな
+公式がプロンプト隠しとるから適正がわからんのと、dreamlikeやprotogenといった面倒なライセンスのモデルを取り込んどるからちょっと扱いが面倒そうや
+|&ref(https://i.imgur.com/uykCHJY.png,256,384)|&ref(https://i.imgur.com/3SjSqGO.png,256,384)|&ref(https://i.imgur.com/tixiFrp.png,256,384)|&ref(https://i.imgur.com/nN2ikGN.png,256,384)|&ref(https://i.imgur.com/BQNcfzh.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----

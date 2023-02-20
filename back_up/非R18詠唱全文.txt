@@ -5,15 +5,12 @@
 [+]
 {| class="nanj_prompt_table edit sort"
 |~w(100px):意味|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):備考|サンプル|
-||||||
-||||||
 |tennis girl blonde|beautiful girl,high detailed,{{{{{{realistic}}}}}}},school uniform,short sleeves,{{{loli,child}}},small breasts|&#91;&#91;&#91;&#91;&#91;flat chest]]]]] nsfw|||
 |テニス少女|beautiful girl,high detailed,{{{{{{{realistic}}}}}}},tennis uniform,short sleeves,dark short hair,brown eyes,{{{loli,child}}},small breasts,from side,looking at viewer,steam,blush,sweat,bokeh|&#91;&#91;&#91;&#91;&#91;flat chest]]]]]|どうでもいいけど弊社胸の調整にはこだわっております。横からの構図なのも胸の大きさが分かりやすいように。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vemo92IoY3-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/vemo92IoY3.png]]|
 |バレリーナ銀髪少女|{{{{{{{{ultra high detail}}}}}}}}}, {{{{{{{{{{{realistic photorealistic}}}}}}}}}}}, {{{{{{loli}}}}}} , {{{{{{{child}}}}}}}, silver hair , green eyes ,{{{small eyes}}}, {{rc eyes}}, {{realistic eyes}} , {{{{healistialf-closed_eyes}}}} ,{{{{{{{mini_pupil }}}}}}}, silver hair , green eyes , {{{{{small eyes}}}}},　jh {{{{{ballerina}}}}} , {{{{{{ballet}}}}}} , {{{{{{barre}}}}}} , {{{{tutu}}}} , {{{{{{white_leotard}}}}}}  , {{{tutu}}} , {{{white_dress}}} , {{{{{dance_studio}}}}} ,|{{{big eyes}}} ,{{{{{big pupil }}}}},|リアル系でもここまで行けるんだ・・・あとcosplay_photoはリアルに近づけるならいらない感じ|https://image02.seesaawiki.jp/n/h/nai_ch/EHy0LUvW6d.png|
 |プレーンな美少女|{{{{{{little girl}}}}}},{{{loli}}}, {{{kawaii}}}, {beautiful brown eyes},shiny eyes,{{{{{{{{{{{{realistic}}}}}}}}}}}},black hair,{{{raytrace}}}, cinematic lighting , bokeh,shiny lips,shiny skin,forest,woods,tree, closed mouth,|||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EUOnOTcFqT.png)|
 |銀髪ロリ|{ultra high detail}},{{realistic photorealistic}}, {{cosplay_photo}} ,  loli, child , silver hair , green eyes ,|{{{big eyes}}} ,{{{{{big pupil }}}}},|瞳が大きめになって,現実的には違和感のある子が生成されることが多い。pupil（瞳）は認識されていないように思える。解決求む。|https://image02.seesaawiki.jp/n/h/nai_ch/Exgpd19FWb.png|
 |雪山よいね|{{American Comics}}, {{{shadow}}},{{{{{{{realistic}}}}}}},135mm f1.8,portrait,best quality, {{{portrait}}},{{3girl}},{{{{{all in profile}}}}}, all equally spaced,{{all looking left up}},{{{{{Look up}}}}}, floating, beautiful detailed sky,blue sky, cinematic lighting,{{chromatic aberration}}, {{caustic}}, lens flare,beautiful detailed glow,dynamic angle,depth of field,anime,Snowy mountains in Japan, children in winter gear, moving, skiing, anger,smile,instances clones, open mouth,{{{{{{{{unsharp}}}}}}}},{{{{{{{{dynamic angle}}}}}}}}|nsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry|Step 28　Scale 5　Seed 495253558|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/J3EBbO2C7C.png)|
-||||||
 |}
 [END]
 
@@ -30,7 +27,6 @@
 |メカ娘|paper cutting, limited palette, dynamic angle, kawaii, &#91;&#91;nude]],{{{Cyborg}}}, 1girl, solo, {{mechanical body}}, black body, middle hair, white hair,  messy hair, lone nape hair, short hair with long locks, locks, blue eyes, slit eyes, Her body is like a machine, God gave her a machine body, |ghost in the shell| |[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gziTwQ2gO3-s.jpeg)>https://image02.seesaawiki.jp/n/h/nai_ch/gziTwQ2gO3.jpeg]]|
 |武器少女|{{{{shimadafumikane}}}},{{{{15 years old}}}},{{{girl}}}, sharp mechanical head with black butterfly pattern,~~ {{{sharp mechanical body with black butterfly pattern}}}, {{{sharp mechanical skirt with black rose pattern}}}, gold,~~ black sharp left-hand atomic cannon, multi-level,~~ multi-level heavy machine gun configuration, black mechanical leg,white hair,straight hair, red eyes,||追加の戦場プロンプト(プロンプト前後に入れる)~~hiten_1, ,best quality, illustration,beautiful detailed glow,{beautiful detailed eyes}~~,big forhead,flower,Floating ashes, ~~Beautiful and detailed explosion, red moon, fire, a cloudy sky, smoke of gunpowder, burning, beautiful detailed eyes,~~expressionless,beautiful detailed white gloves, (floating cloud:1.2),~~azure hair,disheveled hair,long bangs|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dzjYQ8wQQN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dzjYQ8wQQN.png]]|
 |武器少女一般隊員セット|{{{girl}}}, sharp mechanical head with black butterfly pattern, sharp mechanical body with black butterfly pattern, ~~gold, black sharp left-hand atomic cannon, multi-level, multi-level heavy machine gun configuration,~~ black mechanical leg|||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/enKU8MMj8s-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/enKU8MMj8s.png]]|
-||||||
 |}
 [END]
 
@@ -50,7 +46,6 @@
 |褐色ケモミミ|1girl, {{{wolf girl}}},cat eyes,slit pupils, {dark skin}, {groin}, {bob cut},{hairy hair &#40;flipped hair),ahoge, ~~floating hair, hair bow,{{{{grey hair}}}},&#91;&#91;&#91;&#91;&#91;blonde hair]]]]], {{{{{{{front-tie top}}}}}}},{{{{{{messy hair}}}}}},~~{{{{{{{{hair intakes}}}}}}}}, flipped hair, medium hair, shiny hair,{{{{blunt bangs}}}},~~green eyes,&#91;slit pupils], medium breasts, {{wolf ears}}, sarashi, chest sarashi,{{bandages}}, {{{bandages arm}}}~~,{{wolf tails}}, cleavage, &#91;&#91;&#91;&#91;loli]]]], &#91;&#91;&#91;&#91;&#91;nude]]]]], :d, smile|:Pablo Picasso, Disney, large bleasts, panties, black-white, bad shadow,~~ 3D, 3D game, 3D game scene, 3D character,||https://image01.seesaawiki.jp/n/h/nai_ch/WDM7VS6K53.png|
 |魔法少女|masterpiece Animated painting,highest detail illustlation,a girl.{{ideal ratio body propotions}}, {{manga face}}, {{{{{teenager magical girl transformation}}}}}, ribbon,skirt,|&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;Cubism]]]]]]]]]]]]]]]], {{{{drawn}}}}, {{{{comic}}}}, &#91;&#91;abstract Painting,]], malformation,{{nose}}, {{ugry face}}, {{morbid body}}, long body,portrait face,fat,{{disfigured body}}, monochrome,blurry|おまけの触手※R18~~{{{{tentacles Licking nipple}}}}, {{breasts on cream and cum}}, wet pussy,vomiting cum,embarrassed or ahegao|https://image02.seesaawiki.jp/n/h/nai_ch/remrUTChPT.png|
 |ペスト医師|{{detailed background}},{{intricate detail}},{{{masterpiece}}},{{{best quality}}},{{{hyper extreme detailed}}}, &#40;illustration),{{post-apocalypse}}, concept art,{{an extremely delicate and beautiful}},{{{depth of field}}},wide shot,crows,,dynamic angle, lighting, beautifully detailed sky,mid night,{{post-apocalypse}},{{hyper extreme detailed}},{detailed 8k wallpaper},{1 girl, {{plague doctor}},with hidden face, In a dilapidated alley,With a crow on har shoulder,}yellow eyes,glowing  eyes,{beautiful detailed eyes},top hat,white labcoat ,{{{masterpiece}}},black deaths mask,,holding staff ,fog,bloom,{{hyper extreme detailed}},|hair||https://image02.seesaawiki.jp/n/h/nai_ch/NFy4Hey9vs.png|
-||||||
 |}
 [END]
 
@@ -63,7 +58,6 @@
 ||old tough guy|||https://image02.seesaawiki.jp/n/h/nai_ch/K1LWoeMcIy.png|
 |おばあさん|&#91;&#91;&#91;&#91;realistic]]]],{{old mrs}}, 70yo, 1female, solo, stylish pose, black suits, white shirts, fine hair, dry skin, sunglasses, {{wrinkled face}}|pablo picasso,Disney,monochrome,&#91;&#91;realistic]],anime painting,huge breasts||https://image01.seesaawiki.jp/n/h/nai_ch/GE_sEDdjbc.png https://image02.seesaawiki.jp/n/h/nai_ch/OFnCbGIP2G.png|
 |小汚いおじさん|masterpiece, best quality, illustration, original,extreme detailed, old male, hyper dirty male, super fat|gay||https://image02.seesaawiki.jp/n/h/nai_ch/zL8uztAilF.png|
-||||||
 |}
 [END]
 
@@ -73,7 +67,6 @@
 |~w(100px):意味|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):備考|サンプル|
 |BBAコイン|Maple Tree Coin,&#91;&#91;&#91;&#91;realistic]]]],{{old mrs}},sunglasses,female,70yo,{{wrinkled face}}, no humans, engraving,{{{gold coin}}}|tree,pablo picasso,Disney,monochrome,&#91;&#91;realistic]],anime painting,huge breasts,humans,human,colorful||https://image02.seesaawiki.jp/n/h/nai_ch/8EcWDC549N.png|
 |酒ラベル|A bottle of sake only,{{{{{{picture of nishikino maki is printed on the label}}}}}},|||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/j5i3SbcG04.png)|
-||||||
 |}
 [END]
 
@@ -87,7 +80,6 @@
 |縁側|{{{{japanese old women}}}},realistic,drinking green tea,Japanese Housing,outdoor,wooden floor,engawa|&#91;&#91;&#91;&#91;tatami]]]]||https://image01.seesaawiki.jp/n/h/nai_ch/4xksWMVwBf.png|
 |縁側でお茶をすするおばあちゃん|{{{{japanese old women}}}},realistic,tatami,drinking green tea,porch,outdoor|||https://image02.seesaawiki.jp/n/h/nai_ch/y3JUFZ1w7M.png|
 |凄いの|stained glass, hyper detailed,{transparent},{{{fusion of glass and stone and girl and dress and hair}}}, {{fragment of glass}}, broken glass, {{{{{{{{{glitch}}}}}}}}}, {{{{{{{{gorgeous}}}}}}}}, aurora, golden, celestial sphere, galaxy, galaxy vortex, Solo,Beautiful detailed eyes, beautiful detailed hair, Aerial, moon, {bubble effect}, weightlessness, 1girl, &#40;&#40;masterpiece)), &#40;&#40;&#40;best quality))),&#40;&#40;ultra-detailed)), {{{{{Cyber punk}}}}}, {{{Steam punk}}}, &#40;&#40;masterpiece)), &#40;&#40;&#40;best quality))), &#40;&#40;ultra-detailed)), underwater, city, fantasy, jewelry, dungeon, raw crystal stone, fantasy, night, unexplored region, broken glass, dynamic angle, crystal rain, divine, Underworld, night, unexplored region, dynamic angle, night, Underworld, unexplored region, great labyrinth, {{{fusion of magic and luminous}}}, beautiful detailed luminous,Star trail,star Nebula,beautiful detailed sky|||https://image01.seesaawiki.jp/n/h/nai_ch/W4YEtuysmb.jpg|
-||||||
 |}
 [END]
 
