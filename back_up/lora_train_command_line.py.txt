@@ -1,15 +1,16 @@
 sd-scriptsに追加して使うEasy Training Scriptsのlora_train_command_line.pyの雑な日本語コメント入りバージョン
 本家はここ→https://github.com/derrian-distro/LoRA_Easy_Training_Scripts
 
-以下、設定に必要な箇所（13行目〜110行目付近）のみ記載（2023.02.10現在Ver）
+以下、設定に必要な箇所（31行目〜126行目付近）のみ記載（2023.02.20現在Ver）
 設定箇所は
 -self.base_model: str =
 から
--self.v_parameterization: bool =
+-self.lowram: bool =
 まで
+&aname(commandline_config)
 =|BOX|
 class ArgStore:
-    # sd スクリプトのすべての可能な入力全体を表します。 重要度の高いものから順に並べられています（2023.02.10）
+    # sd スクリプトのすべての可能な入力全体を表します。 重要度の高いものから順に並べられています（2023.02.20）
     def __init__(self):        
         # 重要 このあたりは変更する可能性が最も高いやつ
         self.base_model: str = r"C:\stable-diffusion-webui\models\Stable-diffusion\nai.ckpt"  # 学習させるベースモデルの場所を右みたいに書く r"E:\sd\stable-diffusion-webui\models\Stable-diffusion\nai.ckpt"
@@ -30,6 +31,9 @@ class ArgStore:
         self.caption_dropout_every_n_epochs: Union[int, None] = None  # どの程度の頻度でエポックが完全に無視されるかを定義する
                                                                       # 3 はエポック 3, 6, 9 でのキャプションを無視することを意味します。
         self.caption_tag_dropout_rate: Union[float, None] = None  # キャプションファイル全体ではなく、タグが削除される割合を設定します。
+        self.noise_offset: Union[float, None] = None  # オプション, SDがより良い黒と白を生成するのに役立つと思われる。
+                                                      # Kohyaは、0.1を使用することを推奨しています。
+                                                      # どれくらい高い値を設定できるかは不明。
 
         self.net_dim: int = 128  # ネットワーク dim、128 が最も一般的ですが、これよりも少ない値で動作する可能性があります
         self.alpha: float = 64   # 学習用のスカラーを表す。アルファ値が低いほど、1ステップあたりの学習量は少なくなる
@@ -56,9 +60,10 @@ class ArgStore:
         self.shuffle_captions: bool = True             # オプション, キャプションをシャッフルして学習させる。Trueで有効、Falseで無効
         self.keep_tokens: Union[int, None] = 1         # オプション, 先頭に書いたトークンをキープするかどうか。Noneと書くと何もしない
         self.max_steps: Union[int, None] = None        # オプション, ステップ数を決めている場合、直接設定することができる。設定しない場合はNoneと書く
-        self.tag_occurrence_txt_file: bool = False     # オプション, あなたのデータセットに含まれる全てのタグの出現回数を記録したtxtファイルを作成する。
-                                                       # メタデータがある限り、メタデータにもこれが含まれるので、デフォルトでこれをオンにする必要はない。
-                                                       # 出力チェックポイントと同じフォルダーに自動的に出力されます。
+        self.tag_occurrence_txt_file: bool = True  # オプション,あなたのデータセットに含まれる全てのタグの出現回数を記録したtxtファイルを作成します。
+                                                   # 出力チェックポイントと同じフォルダーに自動的に出力されます。
+        self.sort_tag_occurrence_alphabetically: bool = False  # オプション, tag_occurrence_txt_file が true の場合のみ適用されます。
+                                                               # 発生ベースではなく、アルファベット順に出力するように変更します
 
         # このあたりからは猛者は変えるかもしれない設定
         self.train_resolution: int = 512
@@ -88,6 +93,8 @@ class ArgStore:
         self.max_clip_token_length = 150      #  75, 150, または225にすることができると思う。
         self.buckets: bool = True
         self.xformers: bool = True
+        self.use_lion: bool = False  # 最近追加された新しいオプティマイザで、8bit_adamとは併用できないので、1つだけオンにしてください。
+                                     # 8bit_adamが優先されます。
         self.use_8bit_adam: bool = True
         self.cache_latents: bool = True
         self.color_aug: bool = False    # 重要: cache_latents と衝突するので、どちらか一方だけをオンにすること!
@@ -101,5 +108,6 @@ class ArgStore:
         self.bucket_no_upscale: bool = False   # バケット内の画像のアップスケーリングを無効にする
         self.v2: bool = False                  # SD2.1のトレーニングを設定
         self.v_parameterization: bool = False  # v2も設定されており、768倍速版のv2を使用している場合のみ使用します
+        self.lowram: bool = False  #  RAMは少ないがVRAMは多い場合にONにします。
 
 ||=

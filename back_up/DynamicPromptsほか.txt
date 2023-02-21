@@ -1,0 +1,53 @@
+* DynamicPrompts
+
+** 概要
+DynamicPrompt用の構文と拡張性のあるワイルドカードの機能を使用することで、ランダム要素やコメントアウトなどの便利な機能がプロンプトで使えるようになります。
+
+https://github.com/adieyal/sd-dynamic-prompts
+
+** サンプル
+以下のようなコードめいたプロンプトで生成できるようになります。
+
+
+=|(box=textarea)|
+# CharacterDesignPromptCode_v1
+    (full body:1.4), 
+        ( { 1furry girl, , furry, __Tags/Body/Body parts/Ears tags/AnimalEars__ , __Umi/REFS/BODY/Animal Tail__ ,small breasts, | 1girl , teen age, 18yo, small breasts, | 1old man, elder, grey hair, goatee, | 1boy, | 1mature male, muscular, | 1mature female, women, 28yo, medium breasts, }, solo :1.35),    # 人種ランダム
+        ( { grenade launcher, | gun, | handgun, | bullpup, |sniper rifle | assault rifle | katana, wakizashi }:1.0) ,       # 武器設定
+         (__Tags/ImageStyle/Image composition/Colors/Color_Mix_simple__ hair:1.1) , # カラー設定
+         (__Tags/ImageStyle/Image composition/Colors/Color_Mix_simple__ clothes:1.1) , # カラー設定
+        (__Tags/ImageStyle/Symbols/ss_Symbol_All__:1.1), # シンボル設定
+        __Umi/REFS/CLOTHING/Misc-Earrings__ ,
+        __Umi/REFS/CLOTHING/Misc-Gloves__ ,
+        __Umi/REFS/CLOTHING/Misc-Neckwear__,
+        __Umi/REFS/CLOTHING/Misc-Shoes__,
+        __Umi/REFS/BODY/Hair Lengths__,
+        __Tags/Body/Body parts/Hair/Hair styles/Hair_Style__,
+        __Tags/Body/Body parts/Hair/Hair styles/Hair_Front__,
+        __Tags/Body/Body parts/Hair/Hair styles/Hair_Texture__,
+        __Tags/Body/Body parts/Hair/Hair styles/Hair_Accessories__ , # 詳細衣装設定
+(tactical clothes:1.25), (japanese armor, japanese clothes ,:1.2),samurai, # 世界観設定
+ best quality, highly amazing awesome detailed, (white background:1.1), (turnaround, blue print, reference sheet:1.1), # 生成設定
+# comment
+||=
+
+** サポートされる構文
+- ワイルドカードで.txtを読み込み
+例):
+=|(box=textarea)|
+ __Tags/Wildcards__
+||=
+
+- 要素のランダム選択
+例):
+=|(box=textarea)|
+{1girl | 1boy | 1furry}
+||=
+
+- コメントアウト
+例:
+=|(box=textarea)|
+ 1girl, red hair color #色指定
+||=
+
+

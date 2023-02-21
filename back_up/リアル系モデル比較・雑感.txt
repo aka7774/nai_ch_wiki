@@ -11,6 +11,10 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+- 2023/02/21
+[[3DMDT1 - Generalist Model>#3DMDT]]を追加
+[[DucHaitenSuperCute>#DUCH]]を追加
+
 - 2023/02/20
 [[Colorful>#COLO]]を追加
 [[HRL Hyper Realistic Looking 3>#HRL3]]を追加
@@ -23,9 +27,11 @@
 [[epi_hyperphotogodes>#EPIH]]を追加
 [[NeverEnding Dream>#NED]]を追加
 [[Z_phyr Mix>#ZPHM]]を追加
+
 - 2023/02/18
 [[Babylon>#BABY]]を追加
 [[Gravy Mix>#GRVY]]を追加
+
 - 2023/02/17
 [[RealEldenApocalypse_AnalogSexKnoll_4CandyPureSimp+FEET>#RELD]]を追加
 [[GrapeLikeDreamFruit>#GRLK]]を追加
@@ -65,6 +71,16 @@
 　　そこを知りたければあとは君の目でっちゅうやつやな
 　　ちなみにここで言うNSFWはせいぜい裸体の体つきと足のﾊﾟｶﾊﾟｶ具合くらいや。それ以上ハードなのは知らん
 [END]
+
+&aname(3DMDT)
+**[[3DMDT1 - Generalist Model>>https://civitai.com/models/10915/3dmdt1-generalist-model-high-skill-in-3d-21-768x]]
+3Dレンダリングを駆使して作成された、3Dから写実的、イラストなど幅広い画の出せるジェネラルモデルや
+公式にサンプルないから手探りでこんな絵しか出せんかった
+photo系プロンプトで写実に、CG系プロンプトでイラスト系になるで
+|&ref(https://i.imgur.com/NP0fBZx.png,256,384)|&ref(https://i.imgur.com/HPYAZWO.png,256,384)|&ref(https://i.imgur.com/ivv9f7X.png,256,384)|&ref(https://i.imgur.com/ovmYlFh.png,256,384)|&ref(https://i.imgur.com/HJyrKOG.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 **[[Analog-Diffusion>>https://huggingface.co/wavymulder/Analog-Diffusion]]
 基本的にはanalog style closeup portrait of レトロな有名人(ワシントンとか)でポートレイトを描くタイプやな
 人物は見ての通り西洋系で、当たり前やが日本人出そうとするとアジアンになる
@@ -190,6 +206,17 @@ SD1.5ベースに768x768で学習されたリアル系モデルや
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(DUCH)
+**[[DucHaitenSuperCute>>https://civitai.com/models/11080/duchaitensupercute]]
+アジア人の美的感覚に合わせて作られたモデルや
+ネガに重点を置いてるのでプロンプトは公式を参考にするとええんちゃうかな
+ちなみに公式の画像はLoRA入っとるんで絵自体は参考にならんで
+画は3Dよりのリアルで[[Elysium>#ELYS]]入ってそうな造形はなるほどアジア人好みやないかな
+試行回数少ない中で手の打率は高いと感じたで
+|&ref(https://i.imgur.com/ixpVxpZ.png,256,384)|&ref(https://i.imgur.com/lWwOPLH.png,256,384)|&ref(https://i.imgur.com/1lTyWrC.png,256,384)|&ref(https://i.imgur.com/sQul9tq.png,256,384)|&ref(https://i.imgur.com/8aZoz48.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(EPIH)
 **[[epi_hyperphotogodes>>https://civitai.com/models/7863/epihyperphotogodess]]
 何をマージしたか作者が忘れるくらい色々マージしたモデルや
@@ -208,6 +235,7 @@ SD1.5ベースに768x768で学習されたリアル系モデルや
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(ELYS)
 **[[Elysium V1>>https://huggingface.co/hesw23168/SD-Elysium-Model]]
 リアル系アニメ系とバージョンが分かれてる人気のモデルや
 リアル系はV1や。といってもイラストCG風の半リアルやな

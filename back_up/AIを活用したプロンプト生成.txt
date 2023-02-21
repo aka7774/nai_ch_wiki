@@ -1,10 +1,11 @@
 * 概要
 ここではGenerativeAIを活用したプロンプトの生成についてまとめます。
-代表的なものではOpenAIのChatGPTなどです。
+代表的なものではOpenAIのChatGPTやMicrosoftのBingチャットなどです。
+
+#contents
 
 * ChatGPT
-
-** 概要
+** ChatGPTとは
 ChatGPTはOpenAIの開発したチャット形式のAIです。
 「ChatGPT は、大型言語モデルである GPT-3 の拡張版です。GPT-3 は自然言語処理タスクを実行するためにトレーニングされたものですが、ChatGPT はその機能をさらに拡張し、人間の対話をより自然に再現するように設計されています。ChatGPT は、人間が話したように応答することができるようになっています。しかし、ChatGPT は実際の人間ではありません。私たちは、人工知能を使用して人間の対話を模倣することができるようになっています。」
 「私は OpenAI によってトレーニングされた大型言語モデルです。私は人間の対話を模倣することができますが、実際の人間ではありません。私はあなたが知りたいことを教えることができるように、教育されています。どうぞ、お尋ねください。」
@@ -15,7 +16,28 @@ ChatGPTはOpenAIの開発したチャット形式のAIです。
 
 ** ChatGPTによるプロンプト生成
 
-*** Question template for AI prompt generation(v1.2)
+*** Question template for AI prompt generation(v1.3)
+Global Version.
+Use the following template to ask questions to ChatGPT. Qualiy Tags for Image Generative AI should be checked already before asking to ChatGPT. If it is not needed, please delete describe part.
+----
+
+Suppose I use an AI that outputs an image when I enter a prompt. For example, here is an example of a prompt that produces a beautiful image of a girl standing in a gentle breeze.
+=|(box=textarea)|
+「1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind」
+||=
+The prompt requires the following elements.
+(1) Words to describe the method of depiction, such as watercolor or oil painting
+(2) Words to describe external features, ornaments and belongings (also specify colors, patterns, shapes)
+(3) Words to describe age, hair color, hairstyle, hair length, hair accessory, eye color, eye shape, facial expression, breast size, and clothing
+(4) Words to describe background details, such as inside room, starry sky, forest, riverside.
+(5) Words to direct the pose from head to toe can also be added to the prompt.
+
+Be sure to include "1girl, solo," at the beginning of the prompt. Please use plain text in your response, no use of "" or line breaks. Please describe each elemets of the prompt after you have suggested your prompt.
+Prompts may use danbooru tags. Based on these, please tell me a 150-element prompt that can generate illustrations for the following themes.
+「」
+
+
+[+]English v1.2
 Global Version.
 Use the following template to ask questions to ChatGPT.
 ----
@@ -28,15 +50,16 @@ The prompt requires the following elements.
 (1) Words to describe the method of depiction, such as watercolor or oil painting
 (2) Words to describe external features, ornaments and belongings (also specify colors and patterns)
 (3) Words to describe age, hair color, hairstyle, hair length, eye color, eye shape, facial expression, breast size, and clothing
-(4) Words to describe background details
+(4) Words to describe background details.
 (5) Words to direct the pose from head to toe can also be added to the prompt.
 
-Be sure to include "masterpiece, best quality, ultra-detailed, illustration, 1girl, solo," at the beginning of the prompt. Please use plain text in your response, no "" or line breaks.
+Be sure to include "masterpiece, best quality, ultra-detailed, illustration, 1girl, solo," at the beginning of the prompt. Please use plain text in your response, "" or line breaks.
 Prompts may use danbooru tags. Based on these, please tell me a 150-element prompt that can generate illustrations for the following themes.
 「」
+[END]
 
 ***AIによるプロンプト生成用質問テンプレート(v1.3)
-クオリティータグは付与済みの前提です。以下テンプレート
+クオリティータグは付与済みの前提です。プロンプトを後から編集しやすいように説明させる部分が入っていますので、不要なら消してください。以下テンプレート
 
 ----
 
@@ -56,7 +79,7 @@ Prompts may use danbooru tags. Based on these, please tell me a 150-element prom
 「」
 
 
-*** AIによるプロンプト生成用質問テンプレート(v1.2)
+[+]v1.2
 コメ欄のやつを参考に調整。数値や（）による強調は、ワードごとにやたらと付けられることが多いので除外しました。以下テンプレ
 
 ----
@@ -75,9 +98,10 @@ Prompts may use danbooru tags. Based on these, please tell me a 150-element prom
 プロンプトの文頭には「masterpiece, best quality, ultra-detailed, illustration, 1girl, solo,」を必ず含めてください。回答には「""」や改行は使わず、平文でお願いします。
 プロンプトはdanbooruのタグを使うことができます。これらを踏まえて、以下のテーマに沿ったイラストを生成できるプロンプトを150要素で教えて下さい。
 「」
+[END]
 
 
-*** 質問テンプレート(v1.1)
+[+]v1.1
 
 プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
 =|(box=textarea)|
@@ -92,6 +116,7 @@ Prompts may use danbooru tags. Based on these, please tell me a 150-element prom
 ※解説がほしいときは以下のように聞くと説明してくれます。
 それぞれのプロンプトについて解説してください。
 〜AIが答える〜
+[END]
 
 [+]v1.0
 プロンプトを入力すると、画像を出力するAIがあります。
@@ -131,5 +156,42 @@ https://i.imgur.com/Hzrg9By.png
 こんな事しとるワイがアホみたいやん
 https://i.imgur.com/pdXoWdb.png
 [END]
+
+*Bingチャット
+**Bingチャットとは
+OpenAIの大規模言語処理モデル「Prometheus」をベースにしたAIチャットで、Microsoftの検索エンジン・Bingに組み込まれている。
+特徴としては検索専用のAIモデルであり、インターネットの検索結果に基づいて回答し、回答時に情報源のリンクを付与する。
+
+** クイックスタート Bingチャット
++ https://www.bing.com/new
++ 「順番待ちリストに参加」というボタンをクリック
++ 申請が通れば使用可能(数日〜1週間ほど掛かる)
+
+** Bingチャットによるプロンプト生成
+=|BOX|
+こんにちは。Stable Diffusionで遊びませんか？以下がルールです。
+まず私が作ってほしい画像のイメージを教えます。
+BingはPromptとNegativePromptを教えてください。
+以下は、PromptとNegativePromptを作成する際のルールです。
+このルールは遊びの重要な要素ですので、必ず守りましょう。
+1.「元素法典」というサイトの最新情報と「NovelAI 5ch Wiki」というサイトの最新情報からPromptとNegativePromptを学んでください。
+2.PromptとNegativePromptは75単語以上で具体的に指定してください。
+  特に人の顔、髪型、服装、服飾については詳細に指定してください。
+3.PromptはStable Diffusionに作成する画像のイメージを表す文章としてください。
+  NegativePromptはStable Diffusionに作成してほしくない画像のイメージを表す文章としてください。
+  つまり、NegativePromptはPromptの正反対の意味を持った文章を作りましょう。
+4.PromptとNegativePromptはは英文とし、ファイル名に使えない記号も使用禁止とします。
+5.教えるイメージには固有名詞を使えますが、PromptやNegativePromptには固有名詞を入れることを禁止します。
+  教えるイメージに固有名詞があった場合はインターネットで特徴を検索し、固有名詞の代わりにその特徴を分析して間接的にPromptとNegativePromptを生成してください。
+6.Promptの開始には Masterpiece, Best Quality, ultra detailed, illustration, を付加してください
+それでは始めましょう。
+
+-AIの返答-
+
+画像のテーマです。「○○○○を△△△△する××××」
+
+-AIの返答-
+||=
+
 
 
