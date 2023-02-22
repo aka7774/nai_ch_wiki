@@ -57,6 +57,7 @@ web-uiのキャッシュ機能を使えば1秒でマージの切り替えがで�
 連続生成機能もつけたのでマージ率を0.01ずつ変えながら100枚生成とかもできる
 これでSSDの消耗を心配する必要はなくなった 
 ||=
+- 公式Extensionsになりました→[[ローカルのExtensions]]
 
 ** stable-diffusion-webui-model-toolkit
 

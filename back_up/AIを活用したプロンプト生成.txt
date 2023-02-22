@@ -184,14 +184,9 @@ BingはPromptとNegativePromptを教えてください。
 5.教えるイメージには固有名詞を使えますが、PromptやNegativePromptには固有名詞を入れることを禁止します。
   教えるイメージに固有名詞があった場合はインターネットで特徴を検索し、固有名詞の代わりにその特徴を分析して間接的にPromptとNegativePromptを生成してください。
 6.Promptの開始には Masterpiece, Best Quality, ultra detailed, illustration, を付加してください
-それでは始めましょう。
+テーマは「○○○○を△△△△する××××」です。
 
 -AIの返答-
 
-画像のテーマです。「○○○○を△△△△する××××」
-
--AIの返答-
 ||=
-
-
 

@@ -125,7 +125,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-|||||
+|sleeveless dress|袖なしのドレス||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gjL01ViL7L-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gjL01ViL7L.png]]|
+|evening gown|パーティドレス？||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_Jfa6XOGno-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_Jfa6XOGno.png]]|
 |mini body con|ミニボディコン|ボデイコンにはなりますが、スカートにならなかったり、セパレートドレスになったりガチャ要素が増します（普通に下二つみたいな感じになることが多いです）。|https://image01.seesaawiki.jp/n/h/nai_ch/NL7Fa_47OG.png　https://image02.seesaawiki.jp/n/h/nai_ch/Cth0ImXGU1.png|
 |bare top mini dress, tube top,|チューブトップのボディコン|これでも肩紐が出る場合があります。|https://image02.seesaawiki.jp/n/h/nai_ch/0Npbo3shBX.png　https://image01.seesaawiki.jp/n/h/nai_ch/r6PSzSek_D.png|
 |bare top mini dress|ベアトップミニドレス（いわゆるボディコン）|ベアトップのはずなのに肩紐とか描写されてしまいます。latexを追加するとテカリが出てエロさが増します。|https://image01.seesaawiki.jp/n/h/nai_ch/LKVSkP4NQt.png　https://image02.seesaawiki.jp/n/h/nai_ch/T85CUP0RrI.png|
@@ -294,6 +295,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|miko|巫女|原神の八重神子の影響をうけるので、ネガにyae_mikoとgenshin_impactを入れるといい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JwTCQbNii7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/JwTCQbNii7.png]]|
 |hanbok|韓服|forehead, hair pulled backを合わせている。日中韓の民族服が混じっている気がする。若干仙女っぽい|https://i.imgur.com/z4bQBvW.png|
 |hanfu|漢服|twintails ,　double bun , flower ornament on hair等を追加している。白地の服に黒帯の服装になりやすい|https://i.imgur.com/jfzslRb.png|
 |{bellydancer},veil, {{mouth visible through veil}},{covered  mouth_veil},sheer_face,sheer_form|ベリーダンサー（改修中）|ネガティブに,surgical mask,[hold mouth],hair ribbon, condom, tongue,{put into mouth},pregnant,food,cigarettes,mouth lift,hood　改修受付中|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pmlCBznLMy-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pmlCBznLMy.png]]|
@@ -512,68 +514,6 @@
 |fluffy|もこもこ|服やブーツなどがもこもこになったりする|https://image02.seesaawiki.jp/n/h/nai_ch/Ee9MpqUswE.png|
 |latex|ラテックス|光沢が出る~~テカる|https://image02.seesaawiki.jp/n/h/nai_ch/QVziwMMaHf.png|
 |tight|きつい、ぴっちりした||https://image01.seesaawiki.jp/n/h/nai_ch/BDU4EaQX6w.png|
-|}
-[END]
-
-
-
-* ファッションブランド
-[+] 編集中
-ブランド名を入れるだけで服飾に影響のあるプロンプトをまとめる感じ
-▼リファレンス
-1.  NovelAIの為のファッションブランド（女性編）｜にきもなか｜note - https://note.com/nkmonaka/n/ne486aafe4c93
-
-** ロマンチック
-リボンやフリル、夢見る少女
-パステルカラー
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|意味|備考|サンプル|
-|||||
-|}
-** マニッシュ
-メンズスーツなどの男性的なイメージ
-ネイビーブルー、ダークカラー
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|意味|備考|サンプル|
-|}
-** エスニック
-キリスト教以外の民族衣装風
-素朴、土着的
-スパイシーカラー
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|意味|備考|サンプル|
-|}
-** モダン
-現代的
-モノトーン、白黒
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|意味|備考|サンプル|
-|||||
-|}
-** カントリー
-田舎、イギリス田園生活、ウエスタン
-アースカラー、ナチュラルカラー
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|意味|備考|サンプル|
-|}
-** ソフィティケート
-洗練、都会、大人っぽい
-黒、グレイ、ベージュ
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|意味|備考|サンプル|
-|大人っぽい||||
-|}
-** アクティブ
-スポーティ、機能的、明るい、活動的
-ビビッドカラー、コントラストのあるカラー
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|意味|備考|サンプル|
-|}
-** エレガント
-上品、優雅、洗練、柔らかい
-グレイッシュパステルカラー
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|意味|備考|サンプル|
 |}
 [END]
 

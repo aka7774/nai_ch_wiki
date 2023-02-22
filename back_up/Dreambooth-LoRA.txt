@@ -22,6 +22,19 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 
 
 *&aname(loraguide){参考資料・スレ住民による学習ガイド}
+=|BOX|
+初めてのLoRA学習素材準備
+枚数10〜20　成功するまでそれでいい
+エポック　もう5でいいや
+ステップ　500以上にするな　成功するまで回転は速く
+サイズ　2048x2048以上とかでなければそのまま放り込め
+キャプション/タグ　編集無しでも何かしら覚えるまず回せ
+正則化→なしでやれ　失敗の原因は多分そこじゃない
+学習元と出力モデルは揃えろ
+||=
+LoRA学習用サンプルデータ https://note.com/kohya_ss/n/nb20c5187e15a
+- 作者本人によるサンプル。
+
 LoRA Training Guide　https://rentry.org/lora_train
 - 4chan有志によるLoRAトレーニング法ガイド（英語）
 
@@ -37,18 +50,19 @@ LoRA 学習メモ　https://rentry.org/i5ynb
 
 https://rentry.org/lora-tag-faq
 - lora training tagging faq（英語）
-
 https://rentry.org/dsvqnd
-- スレ住民によるキャラクター学習のタグ付け一例（日本語）
 
+- スレ住民によるキャラクター学習のタグ付け一例（日本語）
 https://rentry.org/lora_namakubi
 - スレ住民によるLoRAでのキャラ学習素材の検証
+
+LAZY TRAINING GUIDE https://rentry.org/LazyTrainingGuide
+- loraをいっぱい作ってる海外ニキの打率9割学習ガイド
 
 あかちゃんLoRAノートブック [[kohya_train_network_simple]]
 - 全然スレに書き込めないけどけなげに頑張っている
 - クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
 - フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
-
 *他人の作ったモデルを使いたい。
 最新版のWEBUIが既に使用可能な状態ならセットアップ不要→[[LoRAの使用方法>#apply_lora]]へ
 
@@ -391,4 +405,5 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
 

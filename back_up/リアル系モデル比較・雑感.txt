@@ -11,6 +11,15 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+- 2023/02/22
+[[Doctor Diffusion>#DOCD]]を追加
+[[HARDblend>#HARDB]]を追加
+[[HMD Mix>#HMDM]]を追加
+[[LazyMix+ (Real Amateur Nudes)>#LAZYMR]]を追加
+[[Liberty>#LIBTY]]を追加
+[[OrangeChillMix>#OCMX]]を追加
+[[WoopWoop-Photo>#WOOPP]]を追加
+
 - 2023/02/21
 [[3DMDT1 - Generalist Model>#3DMDT]]を追加
 [[DucHaitenSuperCute>#DUCH]]を追加
@@ -197,6 +206,16 @@ NSFWは[[Art & Eros>#ARTE]]に似てる。まあこの界隈血が混ざって�
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(DOCD)
+**[[Doctor Diffusion>>https://civitai.com/models/11509/doctor-diffusion]]
+独自学習の自己モデルと多数マージで構成されたモデルやな
+ネガも短くプロンプトも柔軟らしいで
+和風苦手モデルやけど確かにプロンプトの反応良かったで
+loli入れると急にアニメ出る時あるで
+|&ref(https://i.imgur.com/CpAVzb7.png,256,384)|&ref(https://i.imgur.com/C99veuI.png,256,384)|&ref(https://i.imgur.com/RYAgGFN.png,256,384)|&ref(https://i.imgur.com/QUgCdtV.png,256,384)|&ref(https://i.imgur.com/1htdJdl.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 **[[Dreamlike Photoreal 2.0>>https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0]]
 SD1.5ベースに768x768で学習されたリアル系モデルや
 1.0は昔からあってリアル系なのにdanbooruタグに対応しとるっちゅうのをウリにしとった
@@ -294,11 +313,13 @@ NSFWはそれなり。loliやら強調するとドールっぽくなるで
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
-**[[Izumi>>https://civitai.com/models/1364/izumi]]
-日本っぽい名称だけど韓国系モデルかな
-すぐにNSFWに持っていこうとするのでここで紹介するのは難し過ぎや
-K-POP系のお姉さんをNSFWで出す時が本当の実力だと思うのでここは適当に流しといてや
-|&ref(https://i.imgur.com/tM9tTiD.png,256,384)|&ref(https://i.imgur.com/psYFclS.png,256,384)|&ref(https://i.imgur.com/p3FIIeK.png,256,384)|&ref(https://i.imgur.com/G55qJId.png,256,384)|&ref(https://i.imgur.com/e6Gqmmc.png,256,384)|
+&aname(HARDB)
+**[[HARDblend>>https://huggingface.co/theintuitiveye/HARDblend]]
+高品質ポートレイトに特化したモデルや
+和風は苦手やがアップも綺麗やしポートレイトにはええんやないやろか
+プロンプトに写真系を使うといいそうやからこの欄の画像とか公式参考にしてな
+一応NSFWも行けるで
+|&ref(https://i.imgur.com/vpGruy9.png,256,384)|&ref(https://i.imgur.com/wzuANae.png,256,384)|&ref(https://i.imgur.com/3q6Lozt.png,256,384)|&ref(https://i.imgur.com/QKMBr82.png,256,384)|&ref(https://i.imgur.com/KEZPa5U.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -308,6 +329,15 @@ NSFW系では老舗の有名モデルや
 ようやく全年齢で見られる画が出てきてもそれは微妙な出来って言うくらいNSFWモデル
 4枚目の画像間違っとったから差し替えたですまんこ
 |&ref(https://i.imgur.com/L3vGucF.png,256,384)|&ref(https://i.imgur.com/3KRbTbp.png,256,384)|&ref(https://i.imgur.com/LMi7Tfj.png,256,384)|&ref(https://i.imgur.com/ByynHns.png,256,384)|&ref(https://i.imgur.com/1FBmyVk.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(HMDM)
+**[[HMD Mix>>https://civitai.com/models/11497/hmd-mix]]
+「憶えてないないけど適当にあれこれ個人的にマージしたモデル」だそうや
+雰囲気マージやけど一応コンセプトとしてレトロスタイルを目指しとるらしい
+確かにそんな感じの画が出る気はするわ
+|&ref(https://i.imgur.com/GHZktdc.png,256,384)|&ref(https://i.imgur.com/yvlZHP1.png,256,384)|&ref(https://i.imgur.com/qMqVNre.png,256,384)|&ref(https://i.imgur.com/qgcOHVC.png,256,384)|&ref(https://i.imgur.com/JrZijjC.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -350,6 +380,34 @@ VAEが内蔵されてるので別個のVAE使うなって書いてるのには�
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+**[[Izumi>>https://civitai.com/models/1364/izumi]]
+日本っぽい名称だけど韓国系モデルかな
+すぐにNSFWに持っていこうとするのでここで紹介するのは難し過ぎや
+K-POP系のお姉さんをNSFWで出す時が本当の実力だと思うのでここは適当に流しといてや
+|&ref(https://i.imgur.com/tM9tTiD.png,256,384)|&ref(https://i.imgur.com/psYFclS.png,256,384)|&ref(https://i.imgur.com/p3FIIeK.png,256,384)|&ref(https://i.imgur.com/G55qJId.png,256,384)|&ref(https://i.imgur.com/e6Gqmmc.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(LAZYMR)
+**[[LazyMix+ (Real Amateur Nudes)>>https://civitai.com/models/10961/lazymix-real-amateur-nudes]]
+NSFW味の強いマージモデルらしいで
+公式のサンプルにLoRA適用するのは参考にならんから止めてくれへんかな
+トリガーワードとかあるらしいんでプロンプトは公式を参考にしてな
+NSFW特化だけあって普通の画を出すのに一苦労や
+|&ref(https://i.imgur.com/p15JCM0.png,256,384)|&ref(https://i.imgur.com/kj1Q2Eq.png,256,384)|&ref(https://i.imgur.com/zpGNL7r.png,256,384)|&ref(https://i.imgur.com/j7gzPom.png,256,384)|&ref(https://i.imgur.com/nMnmkDa.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(LIBTY)
+**[[Liberty>>https://civitai.com/models/5935/liberty]]
+なんと23を超えるモデルをマージして作られたNSFWモデルや。%%多けりゃ良いっちゅうもんでも%%
+プロンプトは非常に難しいので公式を参考にしてなって事や
+実際公式のユーザー欄では色んな絵柄が混在しててカオスや
+%%マージし過ぎでどの要素が出てくるかギャンブルになってるだけちゃうん%%
+|&ref(https://i.imgur.com/aWeWPQm.png,256,384)|&ref(https://i.imgur.com/TDNteIM.png,256,384)|&ref(https://i.imgur.com/JhvAOUg.png,256,384)|&ref(https://i.imgur.com/qALd9Jc.png,256,384)|&ref(https://i.imgur.com/M0Gzu8X.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(LOFI)
 **[[L.O.F.I>>https://civitai.com/models/9052/lofi]]
 正式名称はLimitless Originality Free from Interferenceらしいで
@@ -384,6 +442,16 @@ lomo style portrait of〜（映画俳優等の有名人）でキャラクター�
 ただどこかで見た顔になるのはこの界隈仕方ないことなんやろな
 NSFWが強くてclose-upが効かんかったから撮影には苦労したで
 |&ref(https://i.imgur.com/SzJvfu9.png,256,384)|&ref(https://i.imgur.com/ARCKaIq.png,256,384)|&ref(https://i.imgur.com/9HaCdZa.png,256,384)|&ref(https://i.imgur.com/2Rr9yWn.png,256,384)|&ref(https://i.imgur.com/jCem7mZ.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(OCMX)
+**[[OrangeChillMix>>https://civitai.com/models/9486/orangechillmix]]
+イラスト系人気モデルとリアル系人気モデルをミックスしたモデルや
+ベースが良いだけ合ってCGよりではあるけれど綺麗なお姉さんフェスティバルや
+複数人が全く出らんかったがドレスやアーマーとかファンタジー系ともマッチするな
+knee upやlegs upは聞いてくれんかったからポーズは苦手なんかもしれん
+|&ref(https://i.imgur.com/VZ7k15a.png,256,384)|&ref(https://i.imgur.com/gG87FdI.png,256,384)|&ref(https://i.imgur.com/AdWWewY.png,256,384)|&ref(https://i.imgur.com/TaMK2FI.png,256,384)|&ref(https://i.imgur.com/XYMBdzJ.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -508,8 +576,7 @@ SD1.x系をベースに学習したモデルやな
 **[[test_no_zipang>>https://huggingface.co/deadman44/SD_Photoreal_Merged_Models]]
 ジパングからジパングを抜いてジパングとマージ前提に（ややこしい）追加学習されたモデルやな
 CG味の無い実写系には珍しく挙動が素直な印象や
-洋炉も可愛いし単体でも十分実用……このモデルはアカン
-何がアカンのかは言えんけど素直にマージしとき
+洋炉も可愛いし単体でも十分実用的やけどマージ用モデルなんやしマージするんが本来の使い方やろな
 |&ref(https://i.imgur.com/66T96qA.png,256,384)|&ref(https://i.imgur.com/fW3ogHl.png,256,384)|&ref(https://i.imgur.com/cU5xYZL.png,256,384)|&ref(https://i.imgur.com/aLwqBy0.png,256,384)|&ref(https://i.imgur.com/BrK8pn5.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
@@ -564,6 +631,16 @@ WDと言えばイラスト系で有名やけどプロンプトにreal lifeを入
 プロンプトは煩雑なので公式を見てな
 これはβであってまだ進化を残してるから期待しかないわ
 |&ref(https://i.imgur.com/TWJxuXK.png,256,384)|&ref(https://i.imgur.com/KhDve7s.png,256,384)|&ref(https://i.imgur.com/Dljp9pY.png,256,384)|&ref(https://i.imgur.com/9BIMFpu.png,256,384)|&ref(https://i.imgur.com/xCGYfwv.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(WOOPP)
+**[[WoopWoop-Photo>>https://civitai.com/models/4041/woopwoop-photo]]
+解剖学的に正確な画が出るように学習されたモデルや
+効果を発揮するためには幾つかプロンプトが必要ってことやから公式を参考にしてな
+試行回数少ないんで効果は実感できんかったが画は綺麗やと思うで
+まだテストモデルって事やからもっと進化するんやろな
+|&ref(https://i.imgur.com/FTZuyKI.png,256,384)|&ref(https://i.imgur.com/BHCVXT7.png,256,384)|&ref(https://i.imgur.com/qXIdFGA.png,256,384)|&ref(https://i.imgur.com/0WHRdwk.png,256,384)|&ref(https://i.imgur.com/K9CVBQR.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----

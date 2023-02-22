@@ -1,5 +1,5 @@
 * AND
-1111のwikiより引用:
+[[1111のwiki>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#composable-diffusion]]より引用:
 A method to allow the combination of multiple prompts. combine prompts using an uppercase AND
 (複数のプロンプトを一纏めにする機能。大文字でANDと入力することで使用可能)
 つまり、複数単語のトークン数を減らす効果があり、75トークン制限に引っ掛かりにくくなる。
@@ -8,7 +8,7 @@ A method to allow the combination of multiple prompts. combine prompts using an 
 プロンプトに"BREAK"と書くと、通常75トークン目で区切られる箇所を明示的に指定できるらしい。
 これによって色移りなどを防止できるらしい。なおWebUI(Automatic1111)をわりと新しめにしないと使用できないかもしれない(?)
 
-1111のwikiによると、
+[[1111のwiki>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#break-keyword]]によると、
 Adding a BREAK keyword (must be uppercase) fills the current chunks with padding characters. Adding more text after BREAK text will start a new chunk.
 (BREAK(大文字)キーワードを追加すると、現在のチャンクをパディング文字で埋める。BREAKの後にテキストを追加すると新たにチャンクを開始する。)
 

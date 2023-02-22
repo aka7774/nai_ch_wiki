@@ -1,0 +1,23 @@
+ハローカエル
+
+#contents
+
+* 学習ベンチマーク
+
+- [[https://note.com/kohya_ss/n/nb20c5187e15a]] これで比べる
+- [[https://huggingface.co/aka7774/frog_bench]] バッチを用意した
+
+accelerate launchの実行時間を測る。
+Windowsだとちょっと大変。
+Linuxだと頭にtimeをつければ出てくる。
+
+厳密にレギュレーションに従うなら tag v0.4.0(サンプル用意時) で計測するのがお勧め。
+
+* 結果
+
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|time(秒)|オプション|バージョン|備考|
+|GTX 1080Ti|11GB|i9 9900K|27m27.76s||08ae46b|事前にbitsandbytesのGTX10シリーズ対応を実施済み|
+|RTX 2070|8GB|Ryzen 1700X|15m26.935s|batch_size=3 use-8bit-adamなし gradient_checkpointing|08ae46b|WSL2|
+||||||||
+|}

@@ -144,11 +144,8 @@ Running on local URL: http://127.0.0.1:7860
 と表示されたら、インターネットブラウザ（Chrome,Edge,Firefox等）のアドレス欄にhttp://127.0.0.1:7860と打ち込む。
 WEBUIの操作画面が表示されたらここまでの手順は成功。おつかれさまでした。
 
-
 **8(※オプション)：環境設定
 [[ローカルのwebui-user.bat]]に移動しました。
-
-NovelAIの再現をする場合は[[「動作確認：Hello Asuka」>#helloasuka]] へ進みます。
 
 * 簡易インストール
 **公式のやつ
@@ -199,42 +196,6 @@ CG板で使ってみた人がいいかもって言ってた。
 一般論としては既にインストール済みのPythonやGitがあるとエラーの原因になりうる。
 ほかの方法でダメだったら試してみるのも手なのかも。
 使ってみた人いたら感想書いてね。
-
-*※番外編：導入(WSL2)｜Linux環境でAutomatic1111を導入する
-
-※上記のWindows版の人は関係ないので飛ばします
-[[1111_WSL2]]に移動しました。
-
-&aname(helloasuka){}
-*動作確認：Hello Asuka
-お疲れ様でした！これで出力する準備が整いました。
-次はNovelAI のデフォルト設定での出力と一致しているかのテストを行います。
-
-''''
-
-以下の数値をUIに入力して「Generate」をクリックします。
-参考画像と出力画像が一致していたら環境構築が成功しています。
-→出力した画像が一致していない場合：一般的な "Hello Asuka" エラーのトラブルシューティング (Euler) - Imgur - https://imgur.com/a/DCYJCSX
-
-- サンプラー：Euler (Euler Aではない)
-- 28 Steps
-- CFG Scale：12
-- 解像度: 512x512
-- Seed: 2870305590
-- ポジティブプロンプト欄に「masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair」
-- ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name」
-- Clip skipを「2」にする ※古いWEBUIの場合は(Ignore last layers of CLIP modelを「2」にする
-- (Euler-Aも一致させたい場合、ETA Noise Seed Deltaを「31337」にする)
-
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0ki5ejUnR6.png)
-図：PNGにメタデータが付属したHello Asuka。PNG infoにドラッグ&ドロップするとtext2imgに渡せます
-
-** ※注意
-- プロンプトを正確にコピーしたことを再確認してください！
-- lowvram や xformers などの最適化を使用している場合、わずかな違いが見られる場合がありますが、それでも 95% 類似しているはずです。
-
-参考資料：GPU によるおおよその生成速度
-https://www.tomshardware.com/news/stable-diffusion-gpu-benchmarks
 
 * トラブルシューティング
 **RTX4090で画像生成した際、速度が遅い問題を解決する
