@@ -36,6 +36,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|||||
 |sewer|下水道|下水道となっているが、画像のようにパイプを入れないと真面な画像が出ない。その為、別のプロンプトとしてindustrial pipeを入れる事を推奨する|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/76l7jUqItB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/76l7jUqItB.png]]|
 |shopping mall|ショッピングモール||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9sKLWeCjoV.png)|
 |prison|刑務所|単体だけでは出てこない事が多い|[[https://image02.seesaawiki.jp/n/h/nai_ch/JrlrUTbbzR.png]] [[https://image02.seesaawiki.jp/n/h/nai_ch/SyZmx9y73o.png]] [[https://image01.seesaawiki.jp/n/h/nai_ch/iwSz0ktKtt.png]]|

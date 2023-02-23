@@ -89,13 +89,13 @@ http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment-1320800317
 [END]
 
-* torchを2.0にする
+* torchを2.0にする(非推奨)
 生成が5%以上速くなるが、''いくつかの機能が動作しなくなる可能性があるため非推奨''
 Linuxであればさらに高速化するが、モデル、解像度、Batch sizeの変更の度にコンパイルでかなり待たされるのでやる価値は低い。
 (txt2img,img2img,TI,HNは動作確認済。DBは未確認)
 ↓に更新方法が書いてある。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
-※TorchとAccelerateはvenvと通常環境の両方にインストールするように
+※xformersはvenvでのビルドを推奨(xfomersフォルダ内でpython -m venv venv)
 
 ** 補足
 - パッケージ名について
@@ -111,7 +111,6 @@ xformersフォルダ内で以下のコマンドを実行する。
 ビルドされるのでしばらく待つ。その後xformersフォルダ内で以下のコマンドを実行する。
 > python setup.py bdist_wheel
 その後xfomers\dist\にwhlファイルができるので、それをvenv/Scriptsにコピーしてvenv側のpythonでpip install ファイル名.whlでインストールする。
-インストール後、venv\Lib\site-packages\tritonフォルダを消去する。ついでにグローバル環境のpythonからaccelerate、torch、torchvisionはアンインストールしたほうがいいかもしれない。
 
 - Linuxの補足事項
 torch.compile()を利用するとdynamoのエラーで生成ができないため、stable-diffusion-webui\repositories\stable-diffusion-stability-ai\ldm\modules\diffusionmodules\util.pyの113-114行目を次のコードで置き換える。
@@ -231,6 +230,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
 
 
 

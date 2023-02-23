@@ -22,16 +22,8 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 
 
 *&aname(loraguide){参考資料・スレ住民による学習ガイド}
-=|BOX|
-初めてのLoRA学習素材準備
-枚数10〜20　成功するまでそれでいい
-エポック　もう5でいいや
-ステップ　500以上にするな　成功するまで回転は速く
-サイズ　2048x2048以上とかでなければそのまま放り込め
-キャプション/タグ　編集無しでも何かしら覚えるまず回せ
-正則化→なしでやれ　失敗の原因は多分そこじゃない
-学習元と出力モデルは揃えろ
-||=
+
+** 記事
 LoRA学習用サンプルデータ https://note.com/kohya_ss/n/nb20c5187e15a
 - 作者本人によるサンプル。
 
@@ -63,8 +55,19 @@ LAZY TRAINING GUIDE https://rentry.org/LazyTrainingGuide
 - 全然スレに書き込めないけどけなげに頑張っている
 - クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
 - フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
-*他人の作ったモデルを使いたい。
-最新版のWEBUIが既に使用可能な状態ならセットアップ不要→[[LoRAの使用方法>#apply_lora]]へ
+
+** メモ
+
+=|BOX|
+初めてのLoRA学習素材準備
+枚数10〜20　成功するまでそれでいい
+エポック　もう5でいいや
+ステップ　500以上にするな　成功するまで回転は速く
+サイズ　2048x2048以上とかでなければそのまま放り込め
+キャプション/タグ　編集無しでも何かしら覚えるまず回せ
+正則化→なしでやれ　失敗の原因は多分そこじゃない
+学習元と出力モデルは揃えろ
+||=
 
 *インストール、初回セットアップ編
 **1.LoRA_Easy_Training_Scripts Installers
@@ -378,6 +381,53 @@ last.safetensors というファイルができる
 //|What do you want your output name to be?|出力ファイルの名前|省略時はオリジナルと一緒||
 //[END]
 
+**直接指定の場合
+以下は一例(OptimizerにAdaFactorを使った場合の例)
+venvをactivate して
+=|BOX|
+venv/source/activate
+||=
+accelerate launch の行を入力して実行
+※長いので改行しているが、''&color(#ff0000){改行を取って全てを1行で書く}''事！
+=|BOX|
+accelerate launch --num_cpu_threads_per_process 1 train_network.py 
+ --pretrained_model_name_or_path=D:\stable-diffusion-webui\models\Stable-diffusion\model.safetensors 
+ --train_data_dir=D:\sd-scripts\training 
+ --output_dir=D:\sd-scripts\outputs 
+ --reg_data_dir=D:\sd-scripts\seisoku 
+ --resolution=512,512 
+ --save_every_n_epochs=1 
+ --save_model_as=safetensors 
+ --clip_skip=2 --seed=42 
+ --color_aug 
+ --min_bucket_reso=320 
+ --max_bucket_reso=1024 
+ --network_module=networks.lora 
+ --lr_scheduler=cosine_with_restarts 
+ --lr_warmup_steps=500 
+ --keep_tokens=1 
+ --shuffle_caption 
+ --network_dim=128 
+ --network_alpha=64 
+ --enable_bucket 
+ --mixed_precision=fp16 
+ --xformers 
+ --lr_scheduler_num_cycles=4 
+ --caption_extension=.txt  
+ --persistent_data_loader_workers 
+ --bucket_no_upscale 
+ --caption_dropout_rate=0.05 
+ --optimizer_type=AdaFactor 
+ --optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True" 
+ --train_batch_size=4 
+ --max_train_epochs=10
+||=
+-メモ帳などにコピペして
+-必要部分を書き換えて
+-最後に改行を取って1行にして
+-ターミナル(Powershell等)に貼り付けて
+-実行
+-メモ帳で保存しておけば次回からコピペで使い回せる
 *Loraの使用方法&aname(apply_lora)
 **使い方その1 WebUIに拡張機能をインストールして使う
 -「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール )~~
@@ -405,5 +455,9 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
+
+
+
 
 

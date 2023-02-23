@@ -12,6 +12,9 @@
 
 [+]追加履歴
 - 2023/02/22
+[[Duskfall-Alters-Portrait-Plus>#DUSKA]]を追加
+
+- 2023/02/22
 [[Doctor Diffusion>#DOCD]]を追加
 [[HARDblend>#HARDB]]を追加
 [[HMD Mix>#HMDM]]を追加
@@ -233,6 +236,15 @@ SD1.5ベースに768x768で学習されたリアル系モデルや
 画は3Dよりのリアルで[[Elysium>#ELYS]]入ってそうな造形はなるほどアジア人好みやないかな
 試行回数少ない中で手の打率は高いと感じたで
 |&ref(https://i.imgur.com/ixpVxpZ.png,256,384)|&ref(https://i.imgur.com/lWwOPLH.png,256,384)|&ref(https://i.imgur.com/1lTyWrC.png,256,384)|&ref(https://i.imgur.com/sQul9tq.png,256,384)|&ref(https://i.imgur.com/8aZoz48.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(DUSKA)
+**[[Duskfall-Alters-Portrait-Plus>>https://huggingface.co/Duskfallcrew/duskfall-alters-portrait-plus]]
+改善中のテストモデルやな
+なんやコレめっちゃ崩れるわ。公式のサンプル入れても崩れるわ
+テスト載せるのはええけどせめてまともな画が出るようになってからにしてや
+|&ref(https://i.imgur.com/xv9o1el.png,256,384)|&ref(https://i.imgur.com/ZlVMBfA.png,256,384)|&ref(https://i.imgur.com/m1fl574.png,256,384)|&ref(https://i.imgur.com/9e4nvdc.png,256,384)|&ref(https://i.imgur.com/zkRnzLD.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----

@@ -52,7 +52,9 @@ segがエラーで動かんなあ。prettytableは入れたつもりなんだけ
 + 次のページを読んで基礎を理解する
 ++ https://www.python.jp/train/experience/colab.html
 ++ https://www.python.jp/train/experience/exec-python1.html
-+ 「1+1」のかわりに以下の黄色い枠内の内容をコピペして実行
++ 「1+1」のかわりに %%以下の黄色い枠内の内容をコピペして%% 上のリンク先のnotebook内容をコピーして実行
++ 実行結果に「Running on public URL: https://xxxxx.gradio.live」と出てくるのでそこに飛んで、usernameとpasswordを入力する
+++ usernameはデフォルト実行ならuser。passwordは自動生成されているので「Launching Web UI with arguments:」の行を参照
 
 ** 注意
 
@@ -227,3 +229,4 @@ if use_drive:
 
 ||=
 [END]
+

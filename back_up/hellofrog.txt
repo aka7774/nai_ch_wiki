@@ -11,12 +11,17 @@ accelerate launchの実行時間を測る。
 Windowsだとちょっと大変。
 Linuxだと頭にtimeをつければ出てくる。
 
+バッチの時間が変だったら100%になった時の所要時間も併記してくれるといいかも・・・。
+環境によるけど30秒から1分くらいの準備時間が別途かかってるはず。
+
 厳密にレギュレーションに従うなら tag v0.4.0(サンプル用意時) で計測するのがお勧め。
 
 * 結果
 
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|time(秒)|オプション|バージョン|備考|
+|RTX 3060|12GB|Ryzen 3700X|25m2.20s||71b728d5fcfe16f4434e2bf61e75cdfb76f93e14|16h25m2.20s ってテキストには書いてあった Windows11 pro|
+|RTX 3080Ti|12GB|i7 11700F|6m10.22s||||
 |GTX 1080Ti|11GB|i9 9900K|27m27.76s||08ae46b|事前にbitsandbytesのGTX10シリーズ対応を実施済み|
 |RTX 2070|8GB|Ryzen 1700X|15m26.935s|batch_size=3 use-8bit-adamなし gradient_checkpointing|08ae46b|WSL2|
 ||||||||
