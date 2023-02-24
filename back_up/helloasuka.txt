@@ -80,6 +80,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4070 Ti|12GB|Ryzen 9 3900||16.80|--xformers  --no-half-vae --opt-channelslast  --autolaunch --theme dark|Batch Count 2、Batch Size 5 Windows11 Memory:32G|
 |RTX 3050 LAPTOP|4GB|Core i5-11400H||74.69|--xformers|CPU低電圧可、メインメモリは24GB（8+16）|
 |RTX 4070 ti|12GB|Core i5-13700K||14.51|--xformers --|なし|
 |RTX 4070 Ti|12GB|Ryzen 7 7700X||16.52|--xformers --opt-channelslast|Batch Count 2、Batch Size 5|

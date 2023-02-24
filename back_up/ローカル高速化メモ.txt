@@ -176,7 +176,6 @@ safetensors 37.87
 
 ** 変換方法いろいろ
 
-- Filerを使う [[Extensions_URL]]
 - Pythonを使う https://pastebin.com/ijApuS6b
 - Colabを使う(今回はまわりくどいけど) [[ローカルの「ツール」]]
 * Exensionsの退避
@@ -230,6 +229,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
 
 
 

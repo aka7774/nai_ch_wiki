@@ -1,113 +1,257 @@
-sd-scriptsに追加して使うEasy Training Scriptsのlora_train_command_line.pyの雑な日本語コメント入りバージョン
-本家はここ→https://github.com/derrian-distro/LoRA_Easy_Training_Scripts
+sd-scriptsに追加して使うEasy Training Scriptsの ArgsList.py の雑な日本語コメント入りバージョン
+注）2024/02/24版から、設定は lora_train_command_line.py から ArgsList.py に変更されています。
 
-以下、設定に必要な箇所（31行目〜126行目付近）のみ記載（2023.02.20現在Ver）
+以下、設定に必要な箇所(16行目から149行目)のみ記載（2023.02.24現在Ver）
 設定箇所は
 -self.base_model: str =
 から
--self.lowram: bool =
+-self.network_module: str =
 まで
 &aname(commandline_config)
 =|BOX|
 class ArgStore:
-    # sd スクリプトのすべての可能な入力全体を表します。 重要度の高いものから順に並べられています（2023.02.20）
-    def __init__(self):        
-        # 重要 このあたりは変更する可能性が最も高いやつ
-        self.base_model: str = r"C:\stable-diffusion-webui\models\Stable-diffusion\nai.ckpt"  # 学習させるベースモデルの場所を右みたいに書く r"E:\sd\stable-diffusion-webui\models\Stable-diffusion\nai.ckpt"
-        self.img_folder: str = r"D:\train\images"    # 学習させる素材画像フォルダの場所書く　下記のガイドラインに添って配置してな
-                                                     # これがフォルダ配置ガイドや: https://rentry.org/2chAI_LoRA_Dreambooth_guide_english#for-kohyas-script
-        self.output_folder: str = r"D:\output\LoRA"  # 出力先のフォルダをここで設定する。学習途中のやつも最終結果もここに出す
-        self.change_output_name: Union[str, None] = None  # 出力ファイル名を変更する
-        self.save_json_folder: Union[str, None] = None    # オプション、設定の json フォルダーをここで設定した場所に保存します。
-        self.load_json_path: Union[str, None] = None      # オプション、json ファイルをロードすると、構成が一致するように部分的に変更されます。
-        self.json_load_skip_list: Union[list[str], None] = None  # ユーザーがjsonをロードするときにスキップするものを定義できるようにします,
-                                                                 # 重要: デフォルトでは、すべてのパスを含むすべてをロードします。
-                                                                 # 除外する形式は次のようになります: ["base_model", "img_folder", "output_folder"]
-        self.multi_run_folder: Union[str, None] = None  # オプション、スクリプトによって生成された json を含むフォルダーに設定すると、それらのスクリプトを使用してトレーニングが開始されます。
-                                                        # すべてが確実にロードされるように、json_load_skip_list を無視することに注意してください。
-                                                        # 重要: これにより、ここで設定されたすべてのパラメーターも無視され、代わりに json ファイル内のすべてのパラメーターが使用されます。
-        self.save_json_only: bool = False  # トレーニングを行わずに json を生成したい場合は true に設定
-        self.caption_dropout_rate: Union[float, None] = None  # ファイルのキャプションがドロップされる率.
-        self.caption_dropout_every_n_epochs: Union[int, None] = None  # どの程度の頻度でエポックが完全に無視されるかを定義する
-                                                                      # 3 はエポック 3, 6, 9 でのキャプションを無視することを意味します。
-        self.caption_tag_dropout_rate: Union[float, None] = None  # キャプションファイル全体ではなく、タグが削除される割合を設定します。
-        self.noise_offset: Union[float, None] = None  # オプション, SDがより良い黒と白を生成するのに役立つと思われる。
-                                                      # Kohyaは、0.1を使用することを推奨しています。
-                                                      # どれくらい高い値を設定できるかは不明。
+    def __init__(self):
+        # パス引数はr""を使って設定するようにしてください。そうすれば\\が不要になります。
+        self.base_model: str = r""    # 学習元ベースモデルのパスを指定します。例： r"E:\sd\stable-diffusion-webui\models\Stable-diffusion\nai.ckpt"
+        self.img_folder: str = r""    # 学習させる素材画像フォルダの場所を指定します。こちらを参照: https://rentry.org/2chAI_LoRA_Dreambooth_guide_english#for-kohyas-script
+        self.output_folder: str = r"" # 出力先のフォルダをここで設定します。学習途中のやつも最終結果もここに出す
+        self.save_json_folder: Union[str, None] = None   # 設定の json フォルダーをここで設定した場所に保存します。
+        self.load_json_path: Union[str, None] = None     # json ファイルをロードすると、構成が一致するように部分的に変更されます。
+        self.multi_run_folder: Union[str, None] = None   # スクリプトによって生成された json を含むフォルダーに設定すると、それらのスクリプトを使用してトレーニングが開始されます
+        self.reg_img_folder: Union[str, None] = None     # 正則化画像のフォルダの場所を指定します。
+        self.change_output_name: Union[str, None] = None # 作成された出力ファイル名を指定します。
+        self.json_load_skip_list: Union[list[str], None] = None  # オプションです。ユーザーがJSONを読み込むときにスキップするものを定義できます
+                                                                 # 重要：デフォルトではすべてを読み込みますが
+                                                                 # スキップするものは次のように指定します
+                                                                 # [“base_model”, “img_folder”, “output_folder”]
+        self.training_comment: Union[str, None] = None  # オプションです。アクティベーショントークンなどを入れるのに便利です。
+        self.save_json_only: bool = False  # トレーニングをしたくない場合や、JSONを生成したいだけの場合は
+                                           # Trueに設定します。
+        self.tag_occurrence_txt_file: bool = True  # オプションです。データセット内のすべてのタグの出現回数を記録した
+                                                   # テキストファイルを作成します
+                                                   # 出力チェックポイントと同じフォルダに自動的に出力されます
+        self.sort_tag_occurrence_alphabetically: bool = False  # オプションです。
+                                                               # tag_occurrence_txt_fileがtrueの場合にのみ適用されます
+                                                               # 出力を出現順ではなくアルファベット順に変更します
 
-        self.net_dim: int = 128  # ネットワーク dim、128 が最も一般的ですが、これよりも少ない値で動作する可能性があります
-        self.alpha: float = 64   # 学習用のスカラーを表す。アルファ値が低いほど、1ステップあたりの学習量は少なくなる
-                                 # 旧来の方法で学習させたい場合は、dimと同じ数値に設定する
-        # スケジューラのリスト: linear, cosine, cosine_with_restarts, polynomial, constant, constant_with_warmup
-        self.scheduler: str = "cosine_with_restarts"     # 学習率に関するスケジューラ。それぞれ特定の処理を行う
-        self.cosine_restarts: Union[int, None] = 1       # オプション, 再起動回数を表す. cosine_with_restartsを使っている場合のみ重要。
-        self.scheduler_power: Union[float, None] = 1     # オプション, 多項式の累乗を表します。多項式を使用している場合のみ重要。
-        self.warmup_lr_ratio: Union[float, None] = None  # オプション, 与えられた比率に基づいて，ウォームアップのステップ数を計算する．
-                                                         # constant_with_warmupを使用している場合は必ず設定してください。
-                                                         # Noneと書くと設定しない
-        self.learning_rate: Union[float, None] = 1e-4    # オプション,  設定しない場合lrはadamWに従って1e-3に設定される。個人的にはlrが低い方が少し良さそうなのでそう設定することをお勧めします。
-        self.text_encoder_lr: Union[float, None] = None  # オプション, テキストエンコーダの特定のlrを設定する、これはベースlrを上書きすると思う。
-        self.unet_lr: Union[float, None] = None          # オプション, unetに特定のlrを設定、これはベースlrを上書きすると思います。 無視する場合はNone
-        self.num_workers: int = 1  # 画像の読み込みに使用されるスレッドの数、低いと高速化される。
-                                   # エポックの開始は速くなるが、データのロードは遅くなる。ここでの仮定は
-                                   # この値を小さくすると学習時間が長くなると想定している。
-        self.persistent_workers: bool = True  # ワーカーを永続化させ、エポック間の遅延をさらに減らす/なくす。ただし、メモリ使用量が増加する可能性があります
+        # オプティマイザー引数
+        self.optimizer_type: str = "AdamW"  # 選択肢は AdamW, AdamW8bit, Lion, SGDNesterov,
+                                            # SGDNesterov8bit, DAdaptation, AdaFactor です
 
-        self.batch_size: int = 1  # 一度に処理される画像の枚数。
-                                  # 12GBのVRAMで512の場合、最大6バッチサイズになります。
-        self.num_epochs: int = 1  # エポック数、もし最大ステップ数を設定した場合、この値はステップ数を計算しないので無視される。
-        self.save_every_n_epochs: Union[int, None] = 1 # オプション, エポックごとに保存する頻度を設定、Noneと書くと保存しない。
-        self.shuffle_captions: bool = True             # オプション, キャプションをシャッフルして学習させる。Trueで有効、Falseで無効
-        self.keep_tokens: Union[int, None] = 1         # オプション, 先頭に書いたトークンをキープするかどうか。Noneと書くと何もしない
-        self.max_steps: Union[int, None] = None        # オプション, ステップ数を決めている場合、直接設定することができる。設定しない場合はNoneと書く
-        self.tag_occurrence_txt_file: bool = True  # オプション,あなたのデータセットに含まれる全てのタグの出現回数を記録したtxtファイルを作成します。
-                                                   # 出力チェックポイントと同じフォルダーに自動的に出力されます。
-        self.sort_tag_occurrence_alphabetically: bool = False  # オプション, tag_occurrence_txt_file が true の場合のみ適用されます。
-                                                               # 発生ベースではなく、アルファベット順に出力するように変更します
+        # ここでweight_decayなどのオプションを追加できます
+        # ここで設定された値は、AdamWやAdamW8bitを使用する場合のデフォルト値です
+        self.optimizer_args: Union[dict[str:str], None] = {"weight_decay": "0.1",
+                                                           "betas": "0.9,0.99"}  # オプティマイザーに使用できるオプション要素のリストです
 
-        # このあたりからは猛者は変えるかもしれない設定
+        # スケジューラー引数
+        # スケジューラーのリスト: linear, cosine, cosine_with_restarts, polynomial, constant, constant_with_warmup
+        self.scheduler: str = "cosine"
+        self.cosine_restarts: Union[int, None] = 1  # オプションです。再起動する回数を表します。
+                                                    # cosine_with_restartsを使用する場合にのみ関係します
+        self.scheduler_power: Union[float, None] = 1  # オプションです。多項式の次数を表します。
+                                                      # polynomialを使用する場合にのみ関係します
+
+        # 学習率引数
+        self.learning_rate: Union[float, None] = 1e-4  # AdamWはこれを必要としませんが、他のオプティマイザーは必要とする場合があります。
+        self.unet_lr: Union[float, None] = None  # オプションです。unet用に特定のlrを設定します。
+                                                 #これはAdamW内のベースlrを上書きします。
+        self.text_encoder_lr: Union[float, None] = None  # オプションです。テキストエンコーダー用に特定のlrを設定します。 
+                                                         # これはAdamW内のベースlrを上書きします。
+        self.warmup_lr_ratio: Union[float, None] = None  # オプションです。与えられた比率に基づいてウォームアップステップ数を計算します。
+                                                         # constant_with_warmup を使用する場合は必ず設定してください。
+                                                         # Noneで無視できます。
+        self.unet_only: bool = False  # オプションです。unetだけをトレーニングするように設定します。
+
+        # 一般的な必須の引数
+        self.net_dim: int = 32  # ネットワークdim、32がデフォルトですが、高い次元でトレーニングする人もいます。
+        self.alpha: float = 16  # トレーニング時のスカラーを表します。デフォルトはdim の半分です。
+                                # 古い方法でトレーニングしたい場合は、これをdimと同じに設定してください。
         self.train_resolution: int = 512
+        self.batch_size: int = 1  # T一度に処理される画像数であり、VRAMや解像度と直接比例します。
+                                  # VRAMが12GBで解像度が512ピクセルの場合
+                                  # 最大6バッチサイズまで可能です。
+
+        self.clip_skip: int = 2  # アニメベースのモデルでトレーニングしている場合は、
+                                 # ほとんどのモデルがそのように設計されているので、これを2にしてください
+        self.test_seed: int = 23  # これは「再現可能なシード」ですが、基本的にはシードをこれに設定すると、
+                                  # トレーニング画像の一つからプロンプトを入力して
+                                  # 近い表現を得ることができるはずです
+        self.mixed_precision: str = "fp16"  # bf16を使える能力があれば、それを使ってください。それがより良いです
+        self.save_precision: str = "fp16"   # bf16で保存することもできますが、普遍的にサポートされていないので、
+                                            # fp16で保存し続けることをお勧めします
+
+        # ステップ引数
+        self.num_epochs: int = 1  # エポック数ですが、max_stepsを設定するとこの値は無視されます。
+                                  # ステップ数は計算されません。
+        self.save_every_n_epochs: Union[int, None] = None  # オプションです。エポックごとにどのくらい頻繁に保存するか。Noneなら無視します。
+        self.save_n_epoch_ratio: Union[int, None] = None   # オプションです。保存するエポック数。可能な限り均等に分割したエポックを保存しようとします。
+                                                           # save_every_n_epochsより優先されます
+        self.save_last_n_epochs: Union[int, None] = None  #  最後のnエポックだけ保存する。上記の2つで上書きされます。
+        self.max_steps: Union[int, None] = None  # オプションです。特定のステップ数を指定したい場合は、直接設定することができます。
+                                                 # Noneなら無視します
+
+        # バケット引数
+        self.buckets: bool = True
         self.min_bucket_resolution: int = 320
         self.max_bucket_resolution: int = 960
-        self.lora_model_for_resume: Union[str, None] = None  # オプション, 入力LoRAから学習を継続する。
-                                                             # 正確には”そうあるべき”方法でないが動作します。
-        self.save_state: bool = False  # オプション, 学習状態を保存して学習を継続するためのもの, Falseは無視する。
-        self.load_previous_save_state: Union[str, None] = None  # オプション, トレーニングの状態をロードして継続的なトレーニングに利用する、設定しないならNone
-        self.training_comment: Union[str, None] = None  # オプション, アクティベーショントークンのようなものを
-                                                        # メタデータに入れるには最適な方法。現時点では機能していないようです
-        self.unet_only: bool = False  # OPTIONAL, unetだけを学習させるように設定する。
-        self.text_only: bool = False  # OPTIONAL, テキストエンコーダの学習のみを行うように設定する。
+        self.bucket_reso_steps: Union[int, None] = None  # バケット作成時に取られるステップ数です。
+                                                         # 1以上の任意の正の値になります。
+        self.bucket_no_upscale: bool = False  # バケット内の画像のアップスケーリングを無効化します。
 
-        # これらは、変更する可能性が最も低いものです
-        self.reg_img_folder: Union[str, None] = None  # オプション, 正則化画像フォルダの場所を設定　設定しない場合はNoneと書く 
-        self.clip_skip: int = 2   # アニメ系のモデルで学習する場合は、ほとんどのモデルがそのように設計されているので、この値を2にしておく。
-        self.test_seed: int = 23  # これは「再現可能なシード」であり、基本的にこのシードに設定すれば、
-                                  # 学習用画像からプロンプトを入力し、それに近い表現を得ることができるはずである。
-        self.prior_loss_weight: float = 1          # これはDreamboothと同じように、LoRAの学習に必要な損失重み付けである。
-        self.gradient_checkpointing: bool = False  # オプション, グラデーションのチェックポイントを有効にする．
-        self.gradient_acc_steps: Union[int, None] = None  # オプション, ワイも実際何かわからんけど設定できるようにしといた
-        self.mixed_precision: str = "fp16"    # もしbf16を使えるなら使ったほうがいい。
-        self.save_precision: str = "fp16"     # bf16でも保存できるが、汎用的ではないのでfp16で保存しておくことをお勧めします。
-        self.save_as: str = "safetensors"     # pt, ckpt, safetensorsのどれかで保存できるよ
-        self.caption_extension: str = ".txt"  # .captions,形式も使えるけどwd1.4taggerはtxtで出力するから、txtをデフォルトとする。
-        self.max_clip_token_length = 150      #  75, 150, または225にすることができると思う。
-        self.buckets: bool = True
+        # タグ引数
+        self.shuffle_captions: bool = False  # オプションです。Falseなら無視します。
+        self.keep_tokens: Union[int, None] = None  # オプションです。Noneなら無視します。
+
+        # 他にも役に立つ引数
         self.xformers: bool = True
-        self.use_lion: bool = False  # 最近追加された新しいオプティマイザで、8bit_adamとは併用できないので、1つだけオンにしてください。
-                                     # 8bit_adamが優先されます。
-        self.use_8bit_adam: bool = True
         self.cache_latents: bool = True
-        self.color_aug: bool = False    # 重要: cache_latents と衝突するので、どちらか一方だけをオンにすること!
         self.flip_aug: bool = False
-        self.random_crop: bool = False  # 重要: cache_latents と衝突するので、どちらか一方だけをオンにすること!
-        self.vae: Union[str, None] = None      #  特定のVAEを使わない場合、結果を悪化させるだけのようなので、おそらく使用しない方がよいでしょう。
-        self.no_meta: bool = False             # safetensorsに保存されるメタデータが削除されます(これは残しておく必要があります)。
-        self.log_dir: Union[str, None] = None  # ログ出力する。ほとんどの人にとって有益なものではありません。.
-        self.bucket_reso_steps: Union[int, None] = None  # バケットを作るときに取られる手順で、任意のものにすることができます。
-                                                         # 1以上の任意の正の値であることができます
-        self.bucket_no_upscale: bool = False   # バケット内の画像のアップスケーリングを無効にする
-        self.v2: bool = False                  # SD2.1のトレーニングを設定
-        self.v_parameterization: bool = False  # v2も設定されており、768倍速版のv2を使用している場合のみ使用します
-        self.lowram: bool = False  #  RAMは少ないがVRAMは多い場合にONにします。
+        self.v2: bool = False  #  SD2.1のトレーニングをセットアップします
+        self.v_parameterization: bool = False  # v2も設定されていて、v2の768xバージョンを使っている場合にのみ使用されます。
+        self.gradient_checkpointing: bool = False  # オプション：勾配チェックポイントを有効化します。
+        self.gradient_acc_steps: Union[int, None] = None  # オプション：これが正確に何を意味するのかわかりません。
+        self.noise_offset: Union[float, None] = None  # オプション：SDがより良い黒と白を生成できるようにするのに役立つようです
+                                                      # Kohyaは、設定している場合は0.1を使うことをお勧めしますが、どれくらい
+                                                      # 高い値にできるのかはわかりません。最大値は1だと仮定します。
+                                                      # ノイズオフセットを使った2つのLoRAでは出力にベーキングが発生する原因となります。
+        self.mem_eff_attn: bool = False
+
+        # 実用的ではない無意味な引数
+        self.lora_model_for_resume: Union[str, None] = None  # LoRAは十分に速くトレーニングできるので、これは必要ありません。
+        self.save_state: bool = False  # LoRAは十分に速くトレーニングできるので、これは必要ありません。
+        self.resume: Union[str, None] = None
+        self.text_only: bool = False  # これを使った人を見たことがありません。unet_onlyは少し使われていますが。
+        self.vae: Union[str, None] = None  # 出力を台無しにすることが多いので、使用しないでください。
+        self.log_dir: Union[str, None] = None  # 出力を台無しにすることが多いので、使用しないでください。
+        self.log_prefix: Union[str, None] = None  # ログ出力にプレフィックスを追加して見つけやすくします。
+        self.lowram: bool = False  # colabを使っている人向けに作られたもので、私のスクリプトでは使いません。
+        self.no_meta: bool = False  # データ保存にとって有害です。
+        self.color_aug: bool = False   # cache latents をオフにする必要があります。
+        self.random_crop: bool = False # cache latents をオフにする必要があります。
+        self.use_8bit_adam: bool = False  # 廃止されました。
+        self.use_lion: bool = False       # 廃止されました。
+        self.caption_dropout_rate: Union[float, None] = None  # 使われていません。
+        self.caption_dropout_every_n_epochs: Union[int, None] = None  # 使われていません。
+        self.caption_tag_dropout_rate: Union[float, None] = None  # 使われていません。
+        self.prior_loss_weight: float = 1  # この値は 1 のままにする必要があります。
+        self.max_grad_norm: float = 1  # この値は 1 のままにする必要があります。
+        self.save_as: str = "safetensors"  # この値は safetensors のままにする必要があります。
+        self.caption_extension: str = ".txt"  #.caption ファイルを使う理由がない限り、この値は .txt のままにする必要があります。
+        self.max_clip_token_length: Union[int, None] = 150  # txt ファイル内のプロンプトがこの値を超えることはほとんどないでしょう。
+        self.save_last_n_epochs_state: Union[int, None] = None  #  役に立つと思われる場面はありません。
+        self.num_workers: int = 8  # イメージをロードするためのスレッド数です。
+                                   # 低くするとエポックの開始が速くなりますが、データのロードが遅くなります。
+                                   # ここでは、この値を減らすと訓練時間も増えると仮定しています。
+        self.persistent_workers: bool = True  # スレッドを永続的にします。これにより、エポック間のラグも減少/消滅します。
+                                              # ただし、メモリ使用量も増える可能性があります
+        self.face_crop_aug_range: Union[str, None] = None
+        self.network_module: str = 'sd_scripts.networks.lora'
 
 ||=
+
+//　旧設定
+//　2023/02/20Ver(lora_train_command_line.py)
+//
+//=|BOX|
+//class ArgStore:
+//    # sd スクリプトのすべての可能な入力全体を表します。 重要度の高いものから順に並べられています（2023.02.20）
+//    def __init__(self):        
+//        # 重要 このあたりは変更する可能性が最も高いやつ
+//        self.base_model: str = r"C:\stable-diffusion-webui\models\Stable-diffusion\nai.ckpt"  # 学習させるベースモデルの場所を右みたいに書く r"E:\sd\stable-diffusion-webui\models\Stable-diffusion\nai.ckpt"
+//        self.img_folder: str = r"D:\train\images"    # 学習させる素材画像フォルダの場所書く　下記のガイドラインに添って配置してな
+//                                                     # これがフォルダ配置ガイドや: https://rentry.org/2chAI_LoRA_Dreambooth_guide_english#for-kohyas-script
+//        self.output_folder: str = r"D:\output\LoRA"  # 出力先のフォルダをここで設定する。学習途中のやつも最終結果もここに出す
+//        self.change_output_name: Union[str, None] = None  # 出力ファイル名を変更する
+//        self.save_json_folder: Union[str, None] = None    # オプション、設定の json フォルダーをここで設定した場所に保存します。
+//        self.load_json_path: Union[str, None] = None      # オプション、json ファイルをロードすると、構成が一致するように部分的に変更されます。
+//        self.json_load_skip_list: Union[list[str], None] = None  # ユーザーがjsonをロードするときにスキップするものを定義できるようにします,
+//                                                                 # 重要: デフォルトでは、すべてのパスを含むすべてをロードします。
+//                                                                 # 除外する形式は次のようになります: ["base_model", "img_folder", "output_folder"]
+//        self.multi_run_folder: Union[str, None] = None  # オプション、スクリプトによって生成された json を含むフォルダーに設定すると、それらのスクリプトを使用してトレーニングが開始されます。
+//                                                        # すべてが確実にロードされるように、json_load_skip_list を無視することに注意してください。
+//                                                        # 重要: これにより、ここで設定されたすべてのパラメーターも無視され、代わりに json ファイル内のすべてのパラメーターが使用されます。
+//        self.save_json_only: bool = False  # トレーニングを行わずに json を生成したい場合は true に設定
+//        self.caption_dropout_rate: Union[float, None] = None  # ファイルのキャプションがドロップされる率.
+//        self.caption_dropout_every_n_epochs: Union[int, None] = None  # どの程度の頻度でエポックが完全に無視されるかを定義する
+//                                                                      # 3 はエポック 3, 6, 9 でのキャプションを無視することを意味します。
+//        self.caption_tag_dropout_rate: Union[float, None] = None  # キャプションファイル全体ではなく、タグが削除される割合を設定します。
+//        self.noise_offset: Union[float, None] = None  # オプション, SDがより良い黒と白を生成するのに役立つと思われる。
+//                                                      # Kohyaは、0.1を使用することを推奨しています。
+//                                                      # どれくらい高い値を設定できるかは不明。
+//
+//        self.net_dim: int = 128  # ネットワーク dim、128 が最も一般的ですが、これよりも少ない値で動作する可能性があります
+//        self.alpha: float = 64   # 学習用のスカラーを表す。アルファ値が低いほど、1ステップあたりの学習量は少なくなる
+//                                 # 旧来の方法で学習させたい場合は、dimと同じ数値に設定する
+//        # スケジューラのリスト: linear, cosine, cosine_with_restarts, polynomial, constant, constant_with_warmup
+//        self.scheduler: str = "cosine_with_restarts"     # 学習率に関するスケジューラ。それぞれ特定の処理を行う
+//        self.cosine_restarts: Union[int, None] = 1       # オプション, 再起動回数を表す. cosine_with_restartsを使っている場合のみ重要。
+//        self.scheduler_power: Union[float, None] = 1     # オプション, 多項式の累乗を表します。多項式を使用している場合のみ重要。
+//        self.warmup_lr_ratio: Union[float, None] = None  # オプション, 与えられた比率に基づいて，ウォームアップのステップ数を計算する．
+//                                                         # constant_with_warmupを使用している場合は必ず設定してください。
+//                                                         # Noneと書くと設定しない
+//        self.learning_rate: Union[float, None] = 1e-4    # オプション,  設定しない場合lrはadamWに従って1e-3に設定される。個人的にはlrが低い方が少し良さそうなのでそう設定することをお勧めします。
+//        self.text_encoder_lr: Union[float, None] = None  # オプション, テキストエンコーダの特定のlrを設定する、これはベースlrを上書きすると思う。
+//        self.unet_lr: Union[float, None] = None          # オプション, unetに特定のlrを設定、これはベースlrを上書きすると思います。 無視する場合はNone
+//        self.num_workers: int = 1  # 画像の読み込みに使用されるスレッドの数、低いと高速化される。
+//                                   # エポックの開始は速くなるが、データのロードは遅くなる。ここでの仮定は
+//                                   # この値を小さくすると学習時間が長くなると想定している。
+//        self.persistent_workers: bool = True  # ワーカーを永続化させ、エポック間の遅延をさらに減らす/なくす。ただし、メモリ使用量が増加する可能性があります
+//
+//        self.batch_size: int = 1  # 一度に処理される画像の枚数。
+//                                  # 12GBのVRAMで512の場合、最大6バッチサイズになります。
+//        self.num_epochs: int = 1  # エポック数、もし最大ステップ数を設定した場合、この値はステップ数を計算しないので無視される。
+//        self.save_every_n_epochs: Union[int, None] = 1 # オプション, エポックごとに保存する頻度を設定、Noneと書くと保存しない。
+//        self.shuffle_captions: bool = True             # オプション, キャプションをシャッフルして学習させる。Trueで有効、Falseで無効
+//        self.keep_tokens: Union[int, None] = 1         # オプション, 先頭に書いたトークンをキープするかどうか。Noneと書くと何もしない
+//        self.max_steps: Union[int, None] = None        # オプション, ステップ数を決めている場合、直接設定することができる。設定しない場合はNoneと書く
+//        self.tag_occurrence_txt_file: bool = True  # オプション,あなたのデータセットに含まれる全てのタグの出現回数を記録したtxtファイルを作成します。
+//                                                   # 出力チェックポイントと同じフォルダーに自動的に出力されます。
+//        self.sort_tag_occurrence_alphabetically: bool = False  # オプション, tag_occurrence_txt_file が true の場合のみ適用されます。
+//                                                               # 発生ベースではなく、アルファベット順に出力するように変更します
+//
+//        # このあたりからは猛者は変えるかもしれない設定
+//        self.train_resolution: int = 512
+//        self.min_bucket_resolution: int = 320
+//        self.max_bucket_resolution: int = 960
+//        self.lora_model_for_resume: Union[str, None] = None  # オプション, 入力LoRAから学習を継続する。
+//                                                             # 正確には”そうあるべき”方法でないが動作します。
+//        self.save_state: bool = False  # オプション, 学習状態を保存して学習を継続するためのもの, Falseは無視する。
+//        self.load_previous_save_state: Union[str, None] = None  # オプション, トレーニングの状態をロードして継続的なトレーニングに利用する、設定しないならNone
+//        self.training_comment: Union[str, None] = None  # オプション, アクティベーショントークンのようなものを
+//                                                        # メタデータに入れるには最適な方法。現時点では機能していないようです
+//        self.unet_only: bool = False  # OPTIONAL, unetだけを学習させるように設定する。
+//        self.text_only: bool = False  # OPTIONAL, テキストエンコーダの学習のみを行うように設定する。
+//
+//        # これらは、変更する可能性が最も低いものです
+//        self.reg_img_folder: Union[str, None] = None  # オプション, 正則化画像フォルダの場所を設定　設定しない場合はNoneと書く 
+//        self.clip_skip: int = 2   # アニメ系のモデルで学習する場合は、ほとんどのモデルがそのように設計されているので、この値を2にしておく。
+//        self.test_seed: int = 23  # これは「再現可能なシード」であり、基本的にこのシードに設定すれば、
+//                                  # 学習用画像からプロンプトを入力し、それに近い表現を得ることができるはずである。
+//        self.prior_loss_weight: float = 1          # これはDreamboothと同じように、LoRAの学習に必要な損失重み付けである。
+//        self.gradient_checkpointing: bool = False  # オプション, グラデーションのチェックポイントを有効にする．
+//        self.gradient_acc_steps: Union[int, None] = None  # オプション, ワイも実際何かわからんけど設定できるようにしといた
+//        self.mixed_precision: str = "fp16"    # もしbf16を使えるなら使ったほうがいい。
+//        self.save_precision: str = "fp16"     # bf16でも保存できるが、汎用的ではないのでfp16で保存しておくことをお勧めします。
+//        self.save_as: str = "safetensors"     # pt, ckpt, safetensorsのどれかで保存できるよ
+//        self.caption_extension: str = ".txt"  # .captions,形式も使えるけどwd1.4taggerはtxtで出力するから、txtをデフォルトとする。
+//        self.max_clip_token_length = 150      #  75, 150, または225にすることができると思う。
+//        self.buckets: bool = True
+//        self.xformers: bool = True
+//        self.use_lion: bool = False  # 最近追加された新しいオプティマイザで、8bit_adamとは併用できないので、1つだけオンにしてください。
+//                                     # 8bit_adamが優先されます。
+//        self.use_8bit_adam: bool = True
+//        self.cache_latents: bool = True
+//        self.color_aug: bool = False    # 重要: cache_latents と衝突するので、どちらか一方だけをオンにすること!
+//        self.flip_aug: bool = False
+//        self.random_crop: bool = False  # 重要: cache_latents と衝突するので、どちらか一方だけをオンにすること!
+//        self.vae: Union[str, None] = None      #  特定のVAEを使わない場合、結果を悪化させるだけのようなので、おそらく使用しない方がよいでしょう。
+//        self.no_meta: bool = False             # safetensorsに保存されるメタデータが削除されます(これは残しておく必要があります)。
+//        self.log_dir: Union[str, None] = None  # ログ出力する。ほとんどの人にとって有益なものではありません。.
+//        self.bucket_reso_steps: Union[int, None] = None  # バケットを作るときに取られる手順で、任意のものにすることができます。
+//                                                         # 1以上の任意の正の値であることができます
+//        self.bucket_no_upscale: bool = False   # バケット内の画像のアップスケーリングを無効にする
+//        self.v2: bool = False                  # SD2.1のトレーニングを設定
+//        self.v_parameterization: bool = False  # v2も設定されており、768倍速版のv2を使用している場合のみ使用します
+//        self.lowram: bool = False  #  RAMは少ないがVRAMは多い場合にONにします。
+//
+//||=

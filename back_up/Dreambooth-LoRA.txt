@@ -39,6 +39,7 @@ LoRA 学習メモ　https://rentry.org/i5ynb
 原神LoRA作成メモ・検証 https://rentry.org/genshin_lora
 - スレ住民によるkohya-ss氏制作のSDスクリプト(https://github.com/kohya-ss/sd-scripts )で次のキャラのLoRAを作成した。ポップアップ版使用。（日本語）
 -- 02/10:繰り返し数の検証結果を追加。
+-- 02/23:AdaFactorの簡易的な検証結果を追加
 
 https://rentry.org/lora-tag-faq
 - lora training tagging faq（英語）
@@ -73,7 +74,7 @@ LAZY TRAINING GUIDE https://rentry.org/LazyTrainingGuide
 **1.LoRA_Easy_Training_Scripts Installers
 -https://github.com/derrian-distro/LoRA_Easy_Training_Scripts/
 下記の学習の手順ので使うEasyTrainScriptsの人が作った簡易インストールスクリプト
-画面右の Releases の下の Installers をクリック > 下にスクロールして install_sd_scripts_v3.bat をダウンロードする
+画面右の Releases の下の Installers をクリック > 下にスクロールして install_sd_scripts_v5.bat をダウンロードする
 右クリックして 管理者として実行すると
 sd-scripts本体とEasy_Train_Scriptsの両方をインストールして、インストール後の初期設定までやってくれる。
 うまくいかなかったら [[Gitをインストール>>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%c6%b3%c6%fe%ca%fd%cb%a1#content_2_2]] してリトライ
@@ -222,10 +223,11 @@ number_of_generation:作成する枚数
 + 出来上がりを待つ
 
 ***コマンドライン版を使う場合
-1. lora_train_command_line.py にパラメーターを書く
-設定を書き込むのはlora_train_command_line.pyの最初の方あたり。学習ベースになるモデル、学習素材フォルダの場所、出力先は必ず設定する。わからんところはそのままにしとく。
+1. ArgsList.pyにパラメーターを書く
+※2023/02/24版から設定ファイルがlora_train_command_line.pyからArgsList.pyに変更されているので注意
+設定を書き込むのはArgsList.pyの最初の方あたり。学習ベースになるモデル、学習素材フォルダの場所、出力先は必ず設定する。わからんところはそのままにしとく。
 記法は以下を参考に、文字列(str)は r"c:\hogehoge"　のように入力、数値(float,int)はそのまま数値を入力、Falseとなっている部分はTrueで有効になる。
-以下lora_train_command_line.py冒頭あたりの設定部分の雑な日本語訳
+以下ArgsList.pyの日本語訳
 [+]
 #include(lora_train_command_line.py)
 [END]
@@ -236,14 +238,14 @@ number_of_generation:作成する枚数
 
 ***ポップアップ版を使う場合
 + source venv/bin/activate と入力
-+ accelerate launch --num_cpu_threads_per_process 12 lora_train_popup.py と入力
++ accelerate launch main.py --popup と入力
 + ポップアップにパラメーターを入力する
 + 出来上がりを待つ
 
 ***コマンドライン版を使う場合
-+ lora_train_command_line.py にパラメーターを書く
++ ArgsList.py にパラメーターを書く
 + source venv/bin/activate と入力
-+ accelerate launch --num_cpu_threads_per_process 12 lora_train_command_line.py　と入力
++ accelerate launch main.py　と入力
 + 出来上がりを待つ
 
 **Lora作成手順の画像 (ポップアップ版) 参考程度 (2023-2-21時点)
@@ -428,6 +430,178 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 -ターミナル(Powershell等)に貼り付けて
 -実行
 -メモ帳で保存しておけば次回からコピペで使い回せる
+
+
+- 備考
+学習開始時に次のメッセージが出ても気にしなくていい。そもそもTritonはWindowsに対応してない。
+> A matching Triton is not available, some optimizations will not be enabled. ~~ Error caught was: No module named 'Triton'
+
+
+** オプティマイザー
+
+*** Adafactor
+
+Adなんとかを使って学習してみたらなんも学習してないのができて悲しかったので、スレでマークしておいたものを記録しておきます。
+
+----
+
+396: としあき  2023/02/22(水) 00:56:16.00
+>>Adafactorって簡単に言うとどういうものなの？
+Optimizerと呼ばれるものの一種（LoRAデフォルトはAdamW）
+Optimizerはネットワークの最適なパラメータを探す手法だけど
+Optimizerがやってる内容的には例えば足元が1寸先しか見えない状況で最も高い場所探すにはどうすればいいかみたいな感じの計算してる
+Adafactorは学習率とかを自動調整する機能が優秀だから調整に頭悩ませなくて済むメリットがある
+分かり易い解説をありがとう
+
+
+----
+
+NVA部157あたり：https://fate.5ch.net/test/read.cgi/liveuranus/1677145939/661
+
+
+264: 
+AdaFactorを使った学習で1repeats50epochと10repeats5epochでどちらが良いのか調べてみました！！
+&ref(https://i.imgur.com/wJfpJPj.jpg,400)
+結果、よく分かりませんでした・・・
+いかがでしたでしょうか？
+
+1rp50epの方が再現度は高い気がする
+が、epochの切り替わりに時間がかかるので、10rp5pに比べて3倍ぐらい時間がかかる
+
+
+269: 
+AdaFactorとAdamW8bitの違いを凝光で検証したのでLoRA作成メモ更新したで
+AdaFactorは少し遅い代わりにいい感じに過学習を抑えながら再現できるっぽい
+https://rentry.org/genshin_lora
+&ref(https://i.imgur.com/0KUdTD1.jpg,600)
+
+ついでに凝光とかのlora上げとくわ
+https://huggingface.co/RedRayz/genshin_lora_set
+
+
+
+488: 
+1e-4で2500回回すのと
+5e-5で5000回回すの
+なんとなく後者でやった方が過学習なさそうで後者でやってるけど実際1e-4で少ないステップでもええの？
+
+
+507: 
+Adafactor君、再現度確保するためにはかなりステップ回さないとダメっぽいな
+それだけ過学習がしづらいということなんだろうけどこれだったら別にAdamWのままでも良さそう・・・
+
+
+509: 
+AdaFactor学習進まんのはalphaが何か悪さしとる気がしないでもない
+あれを1にするとLR以前の問題で学習のフィードバックががた落ちするからな
+イージースクリプトやとdimの半分が推奨値やし
+今試しとるところや
+
+
+575: 
+AdaFactorのオプション --optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True"
+でラーニングレート1e-3から1.0に変えてalpha1から128に変えたらいい感じになったで
+今から壊れるまでSTEPぶん回してくる
+
+
+646:
+AdaFactorで学習進まんのはやっぱりalphaが低すぎるのが主要因やと思うわ
+alphaをdimの半分の64でやったら数千ステップで普通に学習されたから
+alpha1でうまくいかん奴がおったらワイ個人としてはAdaFactor使用時はalphaをdimの半分で運用するのを勧めるで
+
+
+658:
+AdaFactor、前と同じステップにするとなんも学習してないようなのができるよな
+時間かかっても精度上げるためのオプティマイザらしいが、そんなに精度に差があるかはまだようわからんな…
+
+
+659: 
+https://paperswithcode.com/method/adafactor
+これがAdafactorや
+本格的に深層学習やるなら魚本買って学習した方が手っ取り早いかもしれんな
+いよいよ数学の話になってもうた
+
+
+745: 
+ワイもAdaFactor使って学習してみたらなんも学習してなくて悲しかったわ
+これが　&ref(https://i.imgur.com/I70kfcQ.jpg,200)
+こうや!　&ref(https://i.imgur.com/S55G1KI.jpg,200)
+
+
+785:
+>>774
+これはsdじゃなくてcraiyonで使われてるDall-e-miniモデルの比較みたいやが
+adamの最適値が1e-4に対してadafactorの最適値は1e-3なんでもう少しlr上げてもええかもしれんね
+&ref(https://i.imgur.com/gwaFVBw.jpg,800)
+
+770: 
+バッチ4で回したけどバッチ1に換算して表示しとるで
+これ見ると2000ステップは門前払い、4000でようやく要素が似てきて、6000でやっとという感じやな
+&ref(https://i.imgur.com/yQqusU7.jpg,600)
+
+res 512
+dim 128
+alpha 64
+batch 4
+LR none
+relative True
+scale True
+warmup True
+
+
+869: 
+adafactorのオプションのwarmup_init=Trueすると>>770のいう通り相当回さんと学習せんで
+結果はいいのかもしれんけど時間かかりすぎるからワイは無効にしとる
+adafactor使用時はlr=1e-3でaddmWの1e-4と同じような学習になる気がする
+
+
+876:
+Adafactorスクリプト版で>>774を見よう見まねで試してみたけど何一つ学習してなくて草枯れる…
+と思って前スレ（>>981）見たら
+＞AdaFactorは"warmup_init=True"すると学習しなくなる。ワイの設定の仕方のせいかもしれんけど
+＞"relative_step=True" "scale_parameter=True"はデフォで有効だから--optimizer_type=AdaFactorでええ
+こんなんあってoptimizer_args消したらとりあえず学習してくれたわ
+
+
+897:
+AdaFactorとLion、収束遅い割にそこまで画質向上した感無くて辛くない？結局使い慣れたAdamW+Cosineに戻ってきちゃった
+昔スレニキが言ってた、色んなOptimizerが出てはAdamに勝てず消えていくって言ってた意味が何カ月ぶりかにようやく理解できたわ...
+
+905: 
+>>770の続きで今度はAdaFactorのwarmup有無やで
+&ref(https://i.imgur.com/ly0AEs5.jpg,600)
+これを見るにwarmupが無ければ2000でもほぼ写し取りが完了していて
+warmupはどっかをいじって立ち上げ角度変えんと邪魔にしかならんことが分かる
+
+ただ↑のはベースモデルの出力でwarmup無しでいかにも過学習が起きにくいように見えとるけど
+これを7th3.1Cに持って行くとこうや
+&ref(https://i.imgur.com/JfdD4eX.jpg,600)
+学習が進むにつれベースモデルへの依存が増すのかモデル間の持ち運びが破綻しとる
+
+8bitAdamが無ければ省メモリダントツの革命的なオプティマイザなんやけど使い方の研究が進まんと今のところは好みの問題やな
+
+
+
+907: 
+おもかげ宿し始めてんのワロス
+&ref(https://i.imgur.com/QVOGR2F.jpg,200) &ref(https://i.imgur.com/cERqQbw.jpg,200)
+>>876
+--optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True" をまるごと削除して通ったわ
+シャイニングショルダー飽きたからポプ子とピピ美でやってみる
+
+
+
+973: 
+オプティマイザーをAdfactorで学習したやつ：ポプテピ
+--optimizer_type=AdaFactor --save_every_n_epochs=1 --learning_rate=1e-3 --network_dim=64 --network_alpha=32
+2080ステップ/1epoch目のやつだけど学習は十分な感じはある
+なんか混ざっちゃうのはワイがタグ付け&#128118;だからだと思う
+ちなモデルはリアル系は合わなくてHXDCにしたらかわいくなってしまった、クソアニメなのに
+&ref(https://i.imgur.com/9VaR1jC.jpg,300) &ref(https://i.imgur.com/sii4OxP.jpg,300)
+
+
+
+
 *Loraの使用方法&aname(apply_lora)
 **使い方その1 WebUIに拡張機能をインストールして使う
 -「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール )~~
@@ -447,6 +621,8 @@ Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/Gje_zP3vzL.png)
 [END]
 WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
+
+
 **注意点やで
 - 基本的にLoraは元々「DreamBoothみたいに学習した差分ファイルをモデルにマージするための差分パッチみたいなもんとして使う」事が前提で作られとるから、今の個別適用は元々の設計と違う使い方なんや、なんで色々制限事項がある。
 -- Loraは''原則「作ったモデルと同じ系統(SD-v1.x系 or SD-v2.x)」でしか適用できへん''で。要するにAnyとかで作ったLoraはWD1.4以降とかには使われへんし、その逆もしかりや。
@@ -455,7 +631,6 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
-
 
 
 
