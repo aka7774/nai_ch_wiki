@@ -1,3 +1,6 @@
+* 目次
+
+#contents
 
 * ControlNetについて
 ポーズや構図等を指定して画像生成できるようにする拡張機能。
@@ -104,6 +107,18 @@ https://github.com/hnmr293/posex
 
 あとsegに食わせるセグメント画像簡易ペイントツールがとしあきのところのwikiにあるで。
 
+
+* アセット
+** Openpose
+Openposeリグの画像をシェアすることで、手軽にポーズアセットとして配布できるようです。
+使用時はプリプロセッサ：None、Model：Openposeにしてポーズ画像をImageにドラッグ&ドロップします。
+
+・キャラクター設計図
+いわゆるキャラデザ：Turnaround資料を生成できるやつ
+とりあえずRTX3060 12GBでHires. fix resize: from 1024x512 to 2201x1100ぐらいまで生成できました。
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ldUUiyjvpT.TurnDesign_Openpose.png,600)
+
+
 *使い方
 **Mikubill版
 txt2imgタブの下にControlNetができてるので▼をクリック
@@ -113,7 +128,7 @@ txt2imgタブの下にControlNetができてるので▼をクリック
 
 詳しい例は[[上>#lllyasviel]]のやつ読んで
 
-* Preprocessorの種類と特徴
+** Preprocessorの種類と特徴
 |canny|輪郭線を検出して取り出す|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X.png]]|
 |depth|深度情報を引き継ぐ 立体的な位置関係を処理できる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh.png]]|
 |hed|いわゆる「描き込み」的な部分を取り出す タッチを引き継ぎやすい||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw.png]]|
@@ -126,7 +141,7 @@ txt2imgタブの下にControlNetができてるので▼をクリック
 |segmentation|'ADE20K'という規格で塗り絵 領域に分類を持たせる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228.png]]|
 とりあえずスレにある画像使ったんであかんかったら消すわ
 
-**得意不得意
+***得意不得意
 
 ちょっと試した感じこんな感じでした
 - %%OpenPose: 奥行き苦手%%
@@ -261,6 +276,8 @@ https://i.imgur.com/N9pdqX1.png
 https://i.imgur.com/2H4eWAU.png
 https://i.imgur.com/nPccccl.png
 ||=
+
+
 
 *サンプル
 **動画

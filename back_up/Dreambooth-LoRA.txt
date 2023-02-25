@@ -440,101 +440,80 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 ** オプティマイザー
 
 *** Adafactor
-
 Adなんとかを使って学習してみたらなんも学習してないのができて悲しかったので、スレでマークしておいたものを記録しておきます。
-
 ----
-
-396: としあき  2023/02/22(水) 00:56:16.00
+-396: としあき  2023/02/22(水) 00:56:16.00
 >>Adafactorって簡単に言うとどういうものなの？
 Optimizerと呼ばれるものの一種（LoRAデフォルトはAdamW）
 Optimizerはネットワークの最適なパラメータを探す手法だけど
 Optimizerがやってる内容的には例えば足元が1寸先しか見えない状況で最も高い場所探すにはどうすればいいかみたいな感じの計算してる
 Adafactorは学習率とかを自動調整する機能が優秀だから調整に頭悩ませなくて済むメリットがある
 分かり易い解説をありがとう
-
-
 ----
-
 NVA部157あたり：https://fate.5ch.net/test/read.cgi/liveuranus/1677145939/661
-
-
-264: 
+-264: 
 AdaFactorを使った学習で1repeats50epochと10repeats5epochでどちらが良いのか調べてみました！！
 &ref(https://i.imgur.com/wJfpJPj.jpg,400)
 結果、よく分かりませんでした・・・
 いかがでしたでしょうか？
-
 1rp50epの方が再現度は高い気がする
 が、epochの切り替わりに時間がかかるので、10rp5pに比べて3倍ぐらい時間がかかる
 
-
-269: 
+-269: 
 AdaFactorとAdamW8bitの違いを凝光で検証したのでLoRA作成メモ更新したで
 AdaFactorは少し遅い代わりにいい感じに過学習を抑えながら再現できるっぽい
 https://rentry.org/genshin_lora
 &ref(https://i.imgur.com/0KUdTD1.jpg,600)
-
 ついでに凝光とかのlora上げとくわ
 https://huggingface.co/RedRayz/genshin_lora_set
 
-
-
-488: 
+-488: 
 1e-4で2500回回すのと
 5e-5で5000回回すの
 なんとなく後者でやった方が過学習なさそうで後者でやってるけど実際1e-4で少ないステップでもええの？
 
-
-507: 
+-507: 
 Adafactor君、再現度確保するためにはかなりステップ回さないとダメっぽいな
 それだけ過学習がしづらいということなんだろうけどこれだったら別にAdamWのままでも良さそう・・・
 
-
-509: 
+-509: 
 AdaFactor学習進まんのはalphaが何か悪さしとる気がしないでもない
 あれを1にするとLR以前の問題で学習のフィードバックががた落ちするからな
 イージースクリプトやとdimの半分が推奨値やし
 今試しとるところや
 
-
-575: 
+-575: 
 AdaFactorのオプション --optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True"
 でラーニングレート1e-3から1.0に変えてalpha1から128に変えたらいい感じになったで
 今から壊れるまでSTEPぶん回してくる
 
-
-646:
+-646:
 AdaFactorで学習進まんのはやっぱりalphaが低すぎるのが主要因やと思うわ
 alphaをdimの半分の64でやったら数千ステップで普通に学習されたから
 alpha1でうまくいかん奴がおったらワイ個人としてはAdaFactor使用時はalphaをdimの半分で運用するのを勧めるで
 
-
-658:
+-658:
 AdaFactor、前と同じステップにするとなんも学習してないようなのができるよな
 時間かかっても精度上げるためのオプティマイザらしいが、そんなに精度に差があるかはまだようわからんな…
 
-
-659: 
+-659: 
 https://paperswithcode.com/method/adafactor
 これがAdafactorや
 本格的に深層学習やるなら魚本買って学習した方が手っ取り早いかもしれんな
 いよいよ数学の話になってもうた
 
-
-745: 
+-745: 
 ワイもAdaFactor使って学習してみたらなんも学習してなくて悲しかったわ
 これが　&ref(https://i.imgur.com/I70kfcQ.jpg,200)
 こうや!　&ref(https://i.imgur.com/S55G1KI.jpg,200)
 
-
-785:
+-785:
 >>774
 これはsdじゃなくてcraiyonで使われてるDall-e-miniモデルの比較みたいやが
 adamの最適値が1e-4に対してadafactorの最適値は1e-3なんでもう少しlr上げてもええかもしれんね
 &ref(https://i.imgur.com/gwaFVBw.jpg,800)
 
-770: 
+-770: 
 バッチ4で回したけどバッチ1に換算して表示しとるで
 これ見ると2000ステップは門前払い、4000でようやく要素が似てきて、6000でやっとという感じやな
 &ref(https://i.imgur.com/yQqusU7.jpg,600)
@@ -548,26 +527,23 @@ relative True
 scale True
 warmup True
 
-
-869: 
+-869: 
 adafactorのオプションのwarmup_init=Trueすると>>770のいう通り相当回さんと学習せんで
 結果はいいのかもしれんけど時間かかりすぎるからワイは無効にしとる
 adafactor使用時はlr=1e-3でaddmWの1e-4と同じような学習になる気がする
 
-
-876:
+-876:
 Adafactorスクリプト版で>>774を見よう見まねで試してみたけど何一つ学習してなくて草枯れる…
 と思って前スレ（>>981）見たら
 ＞AdaFactorは"warmup_init=True"すると学習しなくなる。ワイの設定の仕方のせいかもしれんけど
 ＞"relative_step=True" "scale_parameter=True"はデフォで有効だから--optimizer_type=AdaFactorでええ
 こんなんあってoptimizer_args消したらとりあえず学習してくれたわ
 
-
-897:
+-897:
 AdaFactorとLion、収束遅い割にそこまで画質向上した感無くて辛くない？結局使い慣れたAdamW+Cosineに戻ってきちゃった
 昔スレニキが言ってた、色んなOptimizerが出てはAdamに勝てず消えていくって言ってた意味が何カ月ぶりかにようやく理解できたわ...
 
-905: 
+-905: 
 >>770の続きで今度はAdaFactorのwarmup有無やで
 &ref(https://i.imgur.com/ly0AEs5.jpg,600)
 これを見るにwarmupが無ければ2000でもほぼ写し取りが完了していて
@@ -577,21 +553,16 @@ warmupはどっかをいじって立ち上げ角度変えんと邪魔にしか�
 これを7th3.1Cに持って行くとこうや
 &ref(https://i.imgur.com/JfdD4eX.jpg,600)
 学習が進むにつれベースモデルへの依存が増すのかモデル間の持ち運びが破綻しとる
-
 8bitAdamが無ければ省メモリダントツの革命的なオプティマイザなんやけど使い方の研究が進まんと今のところは好みの問題やな
 
-
-
-907: 
+-907: 
 おもかげ宿し始めてんのワロス
 &ref(https://i.imgur.com/QVOGR2F.jpg,200) &ref(https://i.imgur.com/cERqQbw.jpg,200)
 >>876
 --optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True" をまるごと削除して通ったわ
 シャイニングショルダー飽きたからポプ子とピピ美でやってみる
 
-
-
-973: 
+-973: 
 オプティマイザーをAdfactorで学習したやつ：ポプテピ
 --optimizer_type=AdaFactor --save_every_n_epochs=1 --learning_rate=1e-3 --network_dim=64 --network_alpha=32
 2080ステップ/1epoch目のやつだけど学習は十分な感じはある
@@ -631,6 +602,7 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
 
 
 

@@ -11,6 +11,11 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+- 2023/02/25
+[[dalcefo_painting>#DALCP]]を追加
+[[PHC>#PHC]]を追加
+[[VisionGen - Realism Reborn>#VISIG]]を追加
+
 - 2023/02/24
 [[Brits out for the lads>#BRITS]]を追加
 [[BunnyFox Mix>#BUNNYF]]を追加
@@ -214,6 +219,16 @@ VAE無くてもカラフルだよモデルや
 作者曰くｴﾁｰは苦手らしいがそんなことないしなんなら脱ぎやすいまであるで
 若干ロリ顔が出やすいけど身体が大人なのでその辺が苦手な所以なのかもしれん
 |&ref(https://i.imgur.com/EbdDZ3h.png,256,384)|&ref(https://i.imgur.com/xFGymfP.png,256,384)|&ref(https://i.imgur.com/h6AR7Yb.png,256,384)|&ref(https://i.imgur.com/tXKi2oj.png,256,384)|&ref(https://i.imgur.com/oF30Oo1.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(DALCP)
+**[[dalcefo_painting>>https://civitai.com/models/5396/dalcefopainting]]
+名称通りリアルよりの絵画系モデルや
+このページの趣旨には若干合わんのやけど似たようなモデルばっかに飽き飽きしとったんや
+プロンプトは最低限で良いけどリアル系で盛ればもっと良くなるんやないかな
+絵画調のソフトなタッチが心地ええな
+|&ref(https://i.imgur.com/4qozJtF.png,256,384)|&ref(https://i.imgur.com/S45WBDX.png,256,384)|&ref(https://i.imgur.com/TFJMPmx.png,256,384)|&ref(https://i.imgur.com/qa1rk8v.png,256,384)|&ref(https://i.imgur.com/vCpSgSf.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -523,6 +538,16 @@ knee upやlegs upは聞いてくれんかったからポーズは苦手なんか
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(PHC)
+**[[PHC>>https://civitai.com/models/12637/phc]]
+リアル系の有名どこをマージしたミックスモデルや
+コンセプトも何もない雰囲気マージやな
+元モデルが良いと適当にブレンドしても良い結果が出て自分が凄いと錯覚するんや
+元の何が気に入らなくて何を取り入れて何が変わったのか言語化せい
+|&ref(https://i.imgur.com/UMG8w3p.png,256,384)|&ref(https://i.imgur.com/E3ZuEnd.png,256,384)|&ref(https://i.imgur.com/Mztgiaq.png,256,384)|&ref(https://i.imgur.com/9OJZuGG.png,256,384)|&ref(https://i.imgur.com/mcE02RR.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 **[[photorealistic-fuen-v1>>https://huggingface.co/claudfuen/photorealistic-fuen-v1]]
 モデルカードは空欄なのに何故かそこそこ人気のある謎のモデルや
 若干ロリ系が出やすいように感じたけど偏る訳でなく、さりとてNSFWに突き抜けてる訳でもなく
@@ -691,6 +716,16 @@ a 3d render of〜でCG系の絵柄を出すのは共通や
 色んなジャンルでリアルなポートレイトを出すことを目的にマージされたモデルやな
 公式がプロンプト隠しとるから適正がわからんのと、dreamlikeやprotogenといった面倒なライセンスのモデルを取り込んどるからちょっと扱いが面倒そうや
 |&ref(https://i.imgur.com/uykCHJY.png,256,384)|&ref(https://i.imgur.com/3SjSqGO.png,256,384)|&ref(https://i.imgur.com/tixiFrp.png,256,384)|&ref(https://i.imgur.com/nN2ikGN.png,256,384)|&ref(https://i.imgur.com/BQNcfzh.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(VISIG)
+**[[VisionGen - Realism Reborn>>https://civitai.com/models/4834/visiongen-realism-reborn]]
+色々なモデルを公開してる作者がさらに簡単にトリガーワードなしで綺麗な画を出せるようにしたモデルや
+オプションでトリガーは残ってるのでその辺は公式を参考にしてや
+しかし公式サンプルにLoRAとかTi入のサンプル載せるのどうにかしてくれへんか
+親和性とか何か一言あるならわかるけど何もなしに当然のように使われててイメージと違う画が出て「んんっ？？」ってなるから困るわ
+|&ref(https://i.imgur.com/NO6Z3Gy.png,256,384)|&ref(https://i.imgur.com/0vJPZk2.png,256,384)|&ref(https://i.imgur.com/3Tjepwr.png,256,384)|&ref(https://i.imgur.com/jbzHa3Z.png,256,384)|&ref(https://i.imgur.com/X7L40Ok.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----

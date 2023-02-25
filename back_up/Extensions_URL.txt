@@ -87,6 +87,23 @@ https://i.imgur.com/ZwJ5q7o.png
 - Loraを適用する際、強さを階層ごとに設定できます
 - Loraは強力なツールですが、時に扱いが難しく、影響してほしくないところにまで影響がでたりします。このスクリプトではLoraを適用する際、適用度合いをU-Netの階層ごとに設定することができます。これを使用することで求める画像に近づけることができるかもしれません。
 
+158スレ161
+https://fate.5ch.net/test/read.cgi/liveuranus/1677263179/161
+=|BOX|
+161 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7628-W5vA)[sage] 投稿日：2023/02/25(土) 11:26:06.87 ID:KuD13PsO0
+>>115
+階層loraの使い方や
+scriptsフォルダに直接ぶち込む。Extensionsタブからのインストールではないで
+そしてlbwpresets.txtに　TEST:1,1,1,1,1,1,1,1,1,1,1,1,1,0.5,0.5,0,0　みたいに設定を追記する
+https://i.imgur.com/O7ky191.jpg
+LoRA Block Weightの設定欄でActiveにチェックを入れて、Reload Presetsボタンを押して先ほど編集したtxtファイルを再読み込みする
+https://i.imgur.com/U5huiPi.jpg
+プロンプトのloraのところに以下の例のように追記する
+例：<lora:イオリ768v2:0.6>に上で作った階層loraの設定を反映させる場合→<lora:イオリ768v2:0.6:TEST>
+https://i.imgur.com/X2VncQ7.jpg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Hqj6czNBiN-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/Hqj6czNBiN.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OKjc6bx16l-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/OKjc6bx16l.jpg]]
+
 ** sd-webui-supermerger
 - https://github.com/hako-mikan/sd-webui-supermerger
 - ネ申

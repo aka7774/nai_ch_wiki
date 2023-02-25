@@ -16,11 +16,28 @@ ChatGPTはOpenAIの開発したチャット形式のAIです。
 
 ** ChatGPTによるプロンプト生成
 
-*** Question template for AI prompt generation(v1.3)
+*** Question template for AI prompt generation(v1.4)
 Global Version.
-Use the following template to ask questions to ChatGPT. Qualiy Tags for Image Generative AI should be checked already before asking to ChatGPT. If it is not needed, please delete describe part.
+Use the following template to ask questions to ChatGPT. Quality Tags for Image Generative AI should be checked already before asking to ChatGPT. If it is not needed, please delete describe part.
 ----
+=|BOX|
+Suppose I use an AI that outputs an image when I enter a prompt. For example, here is an example of a prompt that produces a beautiful image of a girl standing in a gentle breeze.
+1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind
+The prompt requires the following elements.
+(1) Words to describe the method of depiction, such as watercolor or oil painting.
+(2) Words to describe external features, ornaments and belongings (also specify colors, patterns, shapes).
+(3) Words to describe age, hair color, hairstyle, hair length, hair accessory, eye color, eye shape, facial expression, breast size, and clothing.
+(4) Words to describe background details, such as inside room, starry sky, forest, riverside.
+(5) Words to direct the pose from head to toe can also be added to the prompt.
 
+Be sure to include "1girl, solo," at the beginning of the prompt. Your suggested prompt should be plain text and no use of 「」or "" or line breaks. Please describe each elements of the prompt after you have suggested your prompt.
+Prompts may use danbooru tags. Based on these, please tell me a 150-element prompt that can generate illustrations for the following themes.
+||=
+
+[+]English v1.3
+Global Version.
+Use the following template to ask questions to ChatGPT. Quality Tags for Image Generative AI should be checked already before asking to ChatGPT. If it is not needed, please delete describe part.
+----
 Suppose I use an AI that outputs an image when I enter a prompt. For example, here is an example of a prompt that produces a beautiful image of a girl standing in a gentle breeze.
 =|(box=textarea)|
 「1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind」
@@ -35,7 +52,7 @@ The prompt requires the following elements.
 Be sure to include "1girl, solo," at the beginning of the prompt. Please use plain text in your response, no use of "" or line breaks. Please describe each elemets of the prompt after you have suggested your prompt.
 Prompts may use danbooru tags. Based on these, please tell me a 150-element prompt that can generate illustrations for the following themes.
 「」
-
+[END]
 
 [+]English v1.2
 Global Version.
@@ -58,11 +75,26 @@ Prompts may use danbooru tags. Based on these, please tell me a 150-element prom
 「」
 [END]
 
-***AIによるプロンプト生成用質問テンプレート(v1.3)
+***AIによるプロンプト生成用質問テンプレート(v1.4)
 クオリティータグは付与済みの前提です。プロンプトを後から編集しやすいように説明させる部分が入っていますので、不要なら消してください。以下テンプレート
-
 ----
+=|BOX|
+プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
+1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind
+です。
+プロンプトには以下の要素が必要です。
+�／綺眠茲簗�絵など描写方法を説明するための単語
+��外見的特徴や装飾物や持ち物の(色、模様、形も指定)を説明するための単語
+�Ｇ�齢、髪色、髪型、髪の長さ、髪に付けたアクセサリ、目の色、目の形、表情、胸の大きさ、服装を説明するための単語
+�ど�屋の中、星空、森、川辺など背景の詳細な説明をするための単語
+�ゥ檗璽困鯑�からつま先まで指示するための単語もプロンプトに加えてください。
+プロンプトの文頭には"1girl, solo,"を必ず含めてください。プロンプトは「」や""で囲んだり改行を使うのは禁止です。プロンプトは平文でお願いします。プロンプトを提案した後には、プロンプトの各要素を説明してください。
+プロンプトはdanbooruのタグを使うことができます。これらを踏まえて、以下のテーマに沿ったイラストを生成できるプロンプトを150要素で教えて下さい。
+||=
 
+[+]v1.3
+クオリティータグは付与済みの前提です。プロンプトを後から編集しやすいように説明させる部分が入っていますので、不要なら消してください。以下テンプレート
+----
 プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
 =|(box=textarea)|
 「1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind」
@@ -77,13 +109,11 @@ Prompts may use danbooru tags. Based on these, please tell me a 150-element prom
 プロンプトの文頭には「1girl, solo,」を必ず含めてください。回答には「""」や改行は使わず、平文でお願いします。プロンプトを提案した後には、プロンプトの各要素を説明してください。
 プロンプトはdanbooruのタグを使うことができます。これらを踏まえて、以下のテーマに沿ったイラストを生成できるプロンプトを150要素で教えて下さい。
 「」
-
+[END]
 
 [+]v1.2
 コメ欄のやつを参考に調整。数値や（）による強調は、ワードごとにやたらと付けられることが多いので除外しました。以下テンプレ
-
 ----
-
 プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
 =|(box=textarea)|
 「masterpiece, best quality, ultra-detailed, illustration, 1girl, solo, sitting, an extremcly delicate and beautiful, beautiful detailed sky, eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer, breeze,Fying splashes,Fying petals, wind」
@@ -100,9 +130,7 @@ Prompts may use danbooru tags. Based on these, please tell me a 150-element prom
 「」
 [END]
 
-
 [+]v1.1
-
 プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
 =|(box=textarea)|
 「(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind」
@@ -110,9 +138,7 @@ Prompts may use danbooru tags. Based on these, please tell me a 150-element prom
 です。囚みにプロンプトでの括弧「()」は中のキーワードを強調する作用を持ちます。
 これを踏まえて、以下のテーマに沿ったプロンプトを150words程度で3パターン書いてください。
 「黒髪の美しい女性が微笑んでこちらを見ているイラスト」
-
 〜AIが答える〜
-
 ※解説がほしいときは以下のように聞くと説明してくれます。
 それぞれのプロンプトについて解説してください。
 〜AIが答える〜
@@ -124,17 +150,13 @@ Prompts may use danbooru tags. Based on these, please tell me a 150-element prom
 =|BOX|
 「(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind」 
 ||=
-
 です。囚みにプロンプトでの括弧「()」は中のキーワードを強調する作用を持ちます。
 ここまでで何か質問はありますか?
-
 〜AIが答える〜
 では、水の中で泳ぐ少女の美麗な画像を出すプロンプトを3パターン書いてください。
 〜AIが答える〜
 それぞれのプロンプトについて解説してください。
 〜AIが答える〜
-
-
 [END]
 
 [+]スレより引用
@@ -150,7 +172,6 @@ https://i.imgur.com/7h1O78k.png
 https://i.imgur.com/ild8cPJ.png
 https://i.imgur.com/Hzrg9By.png
 実用的な話として、機械翻訳にかけると直訳になって上手くいかない場合も多々ある。自分で英単語や熟語を調べて組み合わせを考えるより、おそらく早い。
-
 781
 えっ何やこれ凄すぎない？
 こんな事しとるワイがアホみたいやん
