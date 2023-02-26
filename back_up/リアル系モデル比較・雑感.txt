@@ -11,6 +11,15 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+- 2023/02/26
+[[ChikMix>#CHIKM]]を追加
+[[clockwork Oranges v7>#CLWO]]を追加
+[[Experience>#COEXP]]を追加
+[[fking_civitai>#FKCIV]]を追加
+[[Lucky Strike Mix>#LCSM]]を追加
+[[StablyDiffused's Magnum Opus>#SDMO]]を追加
+[[UnrealityMix v10>#UNREM10]]を追加
+
 - 2023/02/25
 [[dalcefo_painting>#DALCP]]を追加
 [[PHC>#PHC]]を追加
@@ -203,12 +212,32 @@ chubbyやfatでぽっちゃり系、そのままで普通体型も作れるで
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(CHIKM)
+**[[ChikMix>>https://civitai.com/models/9871/chikmix]]
+2.5次元vaeいらんK-dollスタイルモデルらしいで
+K-dollっちゅうんはLoRAにある奴かな。ワイよう知らんから各自調べてな
+[[bad-artist>>https://huggingface.co/NiXXerHATTER59/bad-artist]]等のembeddings推奨しとるけどこの欄では無しで行くで
+画としてはまたコレ系かって感じやから顔で決めればええよ
+|&ref(https://i.imgur.com/NwOjTgY.png,256,384)|&ref(https://i.imgur.com/wY5t1Qw.png,256,384)|&ref(https://i.imgur.com/vy8tqT8.png,256,384)|&ref(https://i.imgur.com/lmWhbrS.png,256,384)|&ref(https://i.imgur.com/T6juxRv.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(CHILO)
 **[[Chilloutmix>>https://huggingface.co/TASUKU2023/Chilloutmix]]
 basilベースと言うことで素直な挙動のモデルや
 日本人も出しやすく脱ぎやすいで
 言いたいことはbasilの項で言うとるからあとは顔の好みで選ぶといいで
 |&ref(https://i.imgur.com/7Afpn4f.png,256,384)|&ref(https://i.imgur.com/cBqrGFR.png,256,384)|&ref(https://i.imgur.com/SHn3NxK.png,256,384)|&ref(https://i.imgur.com/Jp4LGWw.png,256,384)|&ref(https://i.imgur.com/xXsBKgx.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(CLWO)
+**[[clockwork Oranges v7>>https://civitai.com/models/12632/clockwork-oranges-v7]]
+2.5次元「チンクシャ」モデルや
+チンクシャってのは「顔パーツが中央に寄った」って悪口なんやがこのモデルでは二次元のようなロリ顔って意味っぽいな
+これ系のモデルは大体似通うんやけどちょっと違ったそんな顔が出てくるわ
+NSFWがそこそこ強くてポーズの反応もいいし良モデルやないかな
+|&ref(https://i.imgur.com/A5i8J7Q.png,256,384)|&ref(https://i.imgur.com/TEXIwPB.png,256,384)|&ref(https://i.imgur.com/Zs6Onwk.png,256,384)|&ref(https://i.imgur.com/dqEhRRM.png,256,384)|&ref(https://i.imgur.com/Tyk5dTs.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -328,6 +357,16 @@ SD1.5ベースに768x768で学習されたリアル系モデルや
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(COEXP)
+**[[Experience>>https://huggingface.co/coreml/coreml-Experience]]
+コンセプトアートや人体が得意な3Dレンダーモデルやな
+すぐに乳放り出してくるしあんま言う事聞かん感じ
+短プロンプトやと微妙なんで公式の長プロンプト参考にしてな
+公式サンプル見る限りSF系に合うんかもな
+|&ref(https://i.imgur.com/KuOgKiq.png,256,384)|&ref(https://i.imgur.com/ZgKgtmY.png,256,384)|&ref(https://i.imgur.com/eo2kJ0O.png,256,384)|&ref(https://i.imgur.com/rSzK5lQ.png,256,384)|&ref(https://i.imgur.com/IU7ywta.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(ZIPA)
 **[[El Zipang_test1.3>>https://huggingface.co/deadman44/SD_Photoreal_Merged_Models]]
 Cafe InstagramがインスタならこちらはTwitter少女が出てくるモデルや
@@ -335,6 +374,16 @@ Cafe InstagramがインスタならこちらはTwitter少女が出てくるモ�
 まさにツイッターに居そうな娘でロリ系が出やすい感じやな
 ポートレート特化らしく現実的な肖像画以外は苦手な印象や
 |&ref(https://i.imgur.com/JemIvCE.png,256,384)|&ref(https://i.imgur.com/sG1y2dt.png,256,384)|&ref(https://i.imgur.com/fdBeYUW.png,256,384)|&ref(https://i.imgur.com/tO9lJGb.png,256,384)|&ref(https://i.imgur.com/xcOmH79.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(FKCIV)
+**[[fking_civitai>>https://civitai.com/models/12270/fkingcivitai]]
+[[Civitai>>https://civitai.com/]]にあるサンプル画像から学習されたっちゅうなんや面白い試みのモデルや
+なのでイラスト系リアル系ごちゃ混ぜやからプロンプトは公式を参考にしてな
+あと公式サンプルのネガはなんかおかしいから注意な
+yamlが必要らしいから一緒に「Config」も落としてファイル名合わせるんやで
+|&ref(https://i.imgur.com/o6FDFYi.png,256,384)|&ref(https://i.imgur.com/EY1Gm8I.png,256,384)|&ref(https://i.imgur.com/PlTuK86.png,256,384)|&ref(https://i.imgur.com/ULsidJU.png,256,384)|&ref(https://i.imgur.com/gKqbyEz.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -491,6 +540,16 @@ lomo style portrait of〜（映画俳優等の有名人）でキャラクター�
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(LCSM)
+**[[Lucky Strike Mix>>https://civitai.com/models/13034/lucky-strike-mix]]
+スレンダー系に特化させたモデルらしいで
+なるほど細身な感じや。この欄やとわかりにくいけど
+公式参考にしてもボヤけるな思っとったがCFGスケール少し高めなの見落としとった
+完全スレンダーは立ち絵だけらしいけど細身好きには良いモデルやないかな
+|&ref(https://i.imgur.com/1Oj1N5F.png,256,384)|&ref(https://i.imgur.com/4L0VaC2.png,256,384)|&ref(https://i.imgur.com/Yg3vnze.png,256,384)|&ref(https://i.imgur.com/4XGH6pk.png,256,384)|&ref(https://i.imgur.com/gyUQJSL.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(LUNAA)
 **[[Luna's Angels- A realism model with Ethnicity support>>https://civitai.com/models/12330/lunas-angels-a-realism-model-with-ethnicity-support]]
 色んな人種を出せるように高解像度で学習されたモデルや
@@ -638,6 +697,16 @@ redshift style〜でキャラクターを呼び出すタイプのモデルやな
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(SDMO)
+**[[StablyDiffused's Magnum Opus>>https://civitai.com/models/12862/stablydiffuseds-magnum-opus]]
+なんや色々ミックスされたモデルや
+公式曰く人体はまともらしいで
+反応も悪くないように感じたしええモデルなんやないかな
+ワイの言う反応は大体ここに貼るための施行回数が少なくて楽できたって意味やからアテにはならんけどな！
+|&ref(https://i.imgur.com/k2xcsZ9.png,256,384)|&ref(https://i.imgur.com/qhE0kDJ.png,256,384)|&ref(https://i.imgur.com/BqIqiaX.png,256,384)|&ref(https://i.imgur.com/5CMq57k.png,256,384)|&ref(https://i.imgur.com/zQ4AEdF.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(SUNM)
 **[[Sunshinemix>>https://civitai.com/models/9291/sunshinemix]]
 [[chillout>#CHILO]]作者による、より2.5次元に近付けたミックスモデルや
@@ -698,6 +767,16 @@ NSFWが得意なだけあってそういう画が映えるで
 和風は得意ではなさそうやけど洋系は綺麗や。あとロリが出やすいな
 ファンタジー系と合いそうやな
 |&ref(https://i.imgur.com/5Eu8bMr.png,256,384)|&ref(https://i.imgur.com/0j3jdZM.png,256,384)|&ref(https://i.imgur.com/apVNjfk.png,256,384)|&ref(https://i.imgur.com/sazScLn.png,256,384)|&ref(https://i.imgur.com/HwdCWK5.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(UNREM10)
+**[[UnrealityMix v10>>https://civitai.com/models/12967/unrealitymix-v10]]
+「これ実写やないんやで？ワイが信じられん？まあ試してみ」モデルらしいで
+言うほど凄くない気がしたらそれはリアル系見過ぎなだけや。一般的には十分実写ライクなんやで？特にワイ
+画については今更特筆すべきものはないんで置いといて作者がなんや面白そうなもん作っとったからURL貼っとくで
+[[TikTokDiffusion>>https://github.com/TingTingin/TikTokDiffusion]]
+|&ref(https://i.imgur.com/zjjW0gk.png,256,384)|&ref(https://i.imgur.com/ygCrlZY.png,256,384)|&ref(https://i.imgur.com/4WVYZQy.png,256,384)|&ref(https://i.imgur.com/JfrSBEC.png,256,384)|&ref(https://i.imgur.com/X0lI6oI.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----

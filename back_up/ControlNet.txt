@@ -7,7 +7,7 @@
 従来のプロンプトでの画像制御に加えて、輪郭線・奥行き・人のポーズなどの「画像情報」を追加で入力することで、より思い通りに画像を制御できる。
 その制御方法（Model）は複数ある（詳しくはcannyやhedやsegなど、下記参照）。
 
-* 詳細
+** 詳細
 実際の実装では、
 +元画像Aを与える
 +その画像を「必要ならば」処理して（Preprocessor）、新しい画像Bを生成する
@@ -35,8 +35,7 @@ i2iは元画像の全ての情報（とくに色込み）を読み込むので�
 参考(英語)google翻訳でよんでな
 [[https://github.com/lllyasviel/ControlNet>https://github.com/lllyasviel/ControlNet]]&aname(lllyasviel)
 
-*基本
-
+**基本
 現在Mikubill版はすごい勢いで更新されているので、定期的にアプデするのがいいと思うで。
 ちなみに入門自体は拡張機能インストールしたりしたことあるなら楽勝だからあんまり焦らんでもええで
 難しそうに見えるのはたぶん「こんなポーズにしてや」と渡した画像を下処理する手法(Preprocessor)がたくさんあるせいや(棒人間化とか奥行き情報を白黒で表現とか)
@@ -53,71 +52,36 @@ i2iは元画像の全ての情報（とくに色込み）を読み込むので�
 %%-https://huggingface.co/webui/ControlNet-modules-safetensors/tree/main%%
 %%8つの.safetensors ファイルをダウンロードして (わかるやつは右上の<>how to clone押してgit)%%
 下記の「モデル」の項目から適宜ダウンロードして以下のフォルダに配置
-=||
+=|PERL|
 stable-diffusion-webui\extensions\sd-webui-controlnet\models
 ||=
 
-
-
-* モデル
-
+** モデル
 - 標準的な軽量モデル：https://huggingface.co/webui/ControlNet-modules-safetensors/tree/main
 - kohya氏によるモデル改良版（何か応答がよくなるらしい？）：https://huggingface.co/kohya-ss/ControlNet-diff-modules/tree/main
 上の軽量化とは違う方法での軽量化で（diff版）、原理的にはこっちのほうがいいらしいが、上の方がいい場合もあるらしい（[[ここ参照>https://github.com/Mikubill/sd-webui-controlnet#extraction]]）。検証求む。
 - もともとのControlNetでのモデル（ただし1つ5.71GB）：https://huggingface.co/lllyasviel/ControlNet/tree/main/models
 - %%Abyss Orange Mix2用のモデル（？？誰か検証してクレメンス）：https://civitai.com/models/9557/abyssorangemix2-controlnets%% ←これは上のkohya氏のものとハッシュ値が一致するので同一のようです。
 
-
+** モデルの変換とか
+[+]
+-Controlnetのpthとかsafetensorsって各マージモデル用に最適化した方がええんか
+モデル専用のそれらがうｐされとるな
+-> 968
+指示画像に生成画像が従うように後付けのネットワークが訓練されとるのがControlNetや
+今の公式版はSD1.5の生成画像を操作するように学習されとるから別のモデルに適用すると当然ズレがあって最良の結果にはならん
+なのでモデルにはそれぞれのControlNetが本来は必要で専用のがあるのはおかしい話やないんやけど
+その専用のがどういう風に作られてるのかは知らん
+↓
+-> 980
+それもう古い話やで
+わざわざ専用版作らなくてもマージでそれっぽく動いたでという初期の報告や
+それと同じことをミクビル版はその場でやっとる(やからモデルの切り替えがやけに重かったりする)
+- [実験]他のSD1に制御を移します。X モデル &#183;ディスカッション #12 &#183;lllyasviel/ControlNet - [https://github.com/lllyasviel/ControlNet/discussions/12](https://github.com/lllyasviel/ControlNet/discussions/12)
+[END]
 ** unpronpt版
 -https://github.com/ThereforeGames/unprompted
 試したけどうまくいかんかったんで誰か書いて・・・
-
-* モデルの変換とか
-
-Controlnetのpthとかsafetensorsって各マージモデル用に最適化した方がええんか
-モデル専用のそれらがうｐされとるな
-> 968
-指示画像に生成画像が従うように後付けのネットワークが訓練されとるのがControlNetや
-今の公式版はSD1.5の生成画像を操作するように学習されとるから別のモデルに適用すると当然ズレがあって最良の結果にはならん
-
-なのでモデルにはそれぞれのControlNetが本来は必要で専用のがあるのはおかしい話やないんやけど
-その専用のがどういう風に作られてるのかは知らん
-
-↓
-
-> 980
-それもう古い話やで
-わざわざ専用版作らなくてもマージでそれっぽく動いたでという初期の報告や
-
-それと同じことをミクビル版はその場でやっとる(やからモデルの切り替えがやけに重かったりする)
-- [実験]他のSD1に制御を移します。X モデル &#183;ディスカッション #12 &#183;lllyasviel/ControlNet - [https://github.com/lllyasviel/ControlNet/discussions/12](https://github.com/lllyasviel/ControlNet/discussions/12)
-
-* ツール
-
-▼ツール
-
-- Openpose rig：Character bones that look like Openpose for blender - https://toyxyz.gumroad.com/l/ciojz?layout=profile
-- PoseMaker - a Hugging Face Space by jonigata - (https://huggingface.co/spaces/jonigata/PoseMaker
-huggingface上で2Dで某人形を操作
-- webuiで棒人間いじれる拡張出とるやで
-https://github.com/fkunn1326/openpose-editor
-- Posex
-https://github.com/hnmr293/posex
-1111上で棒人間を動かすやつ。同様の拡張やツールがいくつかある。
-
-あとsegに食わせるセグメント画像簡易ペイントツールがとしあきのところのwikiにあるで。
-
-
-* アセット
-** Openpose
-Openposeリグの画像をシェアすることで、手軽にポーズアセットとして配布できるようです。
-使用時はプリプロセッサ：None、Model：Openposeにしてポーズ画像をImageにドラッグ&ドロップします。
-
-・キャラクター設計図
-いわゆるキャラデザ：Turnaround資料を生成できるやつ
-とりあえずRTX3060 12GBでHires. fix resize: from 1024x512 to 2201x1100ぐらいまで生成できました。
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ldUUiyjvpT.TurnDesign_Openpose.png,600)
-
 
 *使い方
 **Mikubill版
@@ -141,7 +105,7 @@ txt2imgタブの下にControlNetができてるので▼をクリック
 |segmentation|'ADE20K'という規格で塗り絵 領域に分類を持たせる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228.png]]|
 とりあえずスレにある画像使ったんであかんかったら消すわ
 
-***得意不得意
+**得意不得意
 
 ちょっと試した感じこんな感じでした
 - %%OpenPose: 奥行き苦手%%
@@ -153,8 +117,6 @@ Normal & Depth
 
 OpenPoseは実写/イラストで検出精度が変わるみたいです
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/M09ux9A9R1.3_comp001.png,600)
-
-
 
 ** segmentation
 塗り絵から構図と描くもの（人や道や木など150種類の概念から選べる）をコントロール・・・できそうなやつや。
@@ -186,7 +148,7 @@ https://huggingface.co/spaces/shi-labs/OneFormer
 適当なペイントツールで色分けして塗る。(人間が重なっていなければ塗り分けなくていい)
 [+]
 基本
-=|BOX|
+=|PERL|
 229今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 15:33:50.21ID:g7tc6IYz0
 >>226
 まずsegに必要なのはADE20Kっていう画像内のオブジェクトをクラスごとに色分けしたやつや
@@ -201,7 +163,7 @@ https://i.imgur.com/XXryPUX.png
 ADE20Kのオブジェクト-RGB対応表スプシ
 https://docs.google.com/spreadsheets/d/1se8YEtb2detS7OuPE86fXGyD269pMycAWe2mtKUj2W8/edit#gid=0
 
-=|BOX|
+=|PERL|
 236今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 15:43:14.25ID:g7tc6IYz0>>239
 >>226
 ほんで写真やイラストを変換したいときはここ使う
@@ -229,7 +191,7 @@ https://i.imgur.com/74r2uZx.png
 ||=
 
 複数人を塗り分けて描画する方法
-=|BOX|
+=|PERL|
 578今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 22:20:25.69ID:g7tc6IYz0>>580
 まず複数人が登場する画像を用意する
 今回はワイが以前AIで生成した画像やが相性的に実写寄りの絵か写真のほうが好ましい
@@ -265,7 +227,7 @@ https://i.imgur.com/ja6fzus.pngちゃんと左が一番手前で右が一番奥�
 ||=
 [END]
 ***輪郭線を白で描くことで、腕組の表現の打率を上げる
-=|BOX|
+=|PERL|
 701今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cb28-BTrK)2023/02/20(月) 01:04:22.35ID:WCL0iJ9f0
 >>690
 なるほど、人物とかくっきり輪郭線付いてるね
@@ -279,7 +241,86 @@ https://i.imgur.com/nPccccl.png
 
 
 
+* ツール
+- Openpose rig：Character bones that look like Openpose for blender - https://toyxyz.gumroad.com/l/ciojz?layout=profile
+- PoseMaker - a Hugging Face Space by jonigata - (https://huggingface.co/spaces/jonigata/PoseMaker
+huggingface上で2Dで某人形を操作
+- webuiで棒人間いじれる拡張出とるやで
+https://github.com/fkunn1326/openpose-editor
+- Posex
+https://github.com/hnmr293/posex
+1111上で棒人間を動かすやつ。同様の拡張やツールがいくつかある。
+- Design Doll
+https://terawell.net/ja/
+体験版ではポースをセーブできない。使用感は↓
+https://twitter.com/Zuntan03/status/1629501963913285633
+あとsegに食わせるセグメント画像簡易ペイントツールがとしあきのところのwikiにあるで。
+* アセット
+** Openpose
+Openposeリグの画像をシェアすることで、手軽にポーズアセットとして配布できるようです。
+使用時はプリプロセッサ：None、Model：Openposeにしてポーズ画像をImageにドラッグ&ドロップします。
+
+**キャラクター設計図
+いわゆるキャラデザ：Turnaround資料を生成できるやつ
+とりあえずRTX3060 12GBでHires. fix resize: from 1024x512 to 2201x1100ぐらいまで生成できました。
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ldUUiyjvpT.TurnDesign_Openpose.png,600)
+
+
 *サンプル
+**活用例
+***Scribble と Openpose 同時使用
+=|PERL|
+Scribble と Openpose を Multi CN で適用すると、ワイのクソヘボ落書きでも姿勢の打率爆上がりするな
+Openpose のみやとなんか姿勢固くなっちゃうし、Scribble でサポートするのもいいかもしれん
+棒人間はとしあきさんとこのツールを使わせてもろてるで
+半透明モードがあるのでキャンバスの上から関節位置を調整してる
+CN 設定はこんな感じ
+一回 t2i で構図決めてから i2i で Step と CFG を上げて高画質化しとる 
+||=
+&ref(https://i.imgur.com/AmH8iF5.jpeg,400) &ref(https://i.imgur.com/pSIRWTD.png,400) &ref(https://i.imgur.com/r0RdrQZ.png,400)
+***ずらしハメパンツ修正メソッド（t2i簡単超高打率）
+=|PERL|
+t2iのプロンプトpanties asideで出したずらしハメ…しかし結果はそうじゃない違うんだよ…それが許されるのはブルマとパンツだけなんだ…そんな時に有効な方法
+1.画像をControlnetのCannyを通して出力された線画をドラッグ＆ドロップでローカルに保存
+2.パンツの不要部分をペイントアプリで除去（白で塗りつぶす）
+3.修正した線画をControlnetにドラッグ&ドロップ
+4.Preprosessor:Canny、Model:Canny、Weight:0.7±0.2程度
+5.プロンプトpanties asideの強度を0にする(panties aside:1.5) → (panties aside:0)
+メリット:超高打率でガチャほぼ不要　デメリット:色が少し薄くなる、細部がちょっと変わる
+なお、hedでも同様のことが可能。hedの場合は4のPreprosessorをnoneにする。こちらは出力が濃くなる。お好みでどうぞ。
+||=
+&ref(https://i.imgur.com/eZYJiin.png,400) &ref(https://i.imgur.com/U5YsOp1.png,400) &ref(https://i.imgur.com/Q7ohq3S.png,400)
+***depth と hed 併用
+https://twitter.com/Zuntan03/status/1629362974547906566
+***Scribble + Normal, Depth
+=|PERL|
+1. Scribble でゴミのような線画をいい感じのリファレンスにしてもらう
+2. Daz で用意したなんとなくそれっぽいモデルを Blender に持ち込んで髪の毛だけ別に配置する
+3. Normal, Depth を出力してそれぞれ ControlNet で使用してみる。Prompt はある程度具体的に指定しておいた方がよさそう
+
+Normal はちゃんと背景まで作りこんでおかないといけなそう
+Depth は背景は勝手にいい感じにしてくれるけど後ろ髪をあんまり髪として認識してくれなかった
+
+ちな Blender から Normal 出力するときは Viewport Shading から Matcap Normal を適用して、Viewport Render Image で書き出す
+Outline は無効にしておいた方がエイリアスがなくてよさそう
+ControlNet での使用時は RGB to BGR にチェック
+Depth は Depth Pass を Normalize + Invert して書き出す
+マテリアルに半透明があると Depth にノイズが乗っちゃうので、不透明なマテリアルで Override しておく
+||=
+&ref(https://i.imgur.com/23smCZI.png,400) &ref(https://i.imgur.com/TeZ0Wf7.png,400) &ref(https://i.imgur.com/KlJmWta.jpeg,400)
+
+***inpaint
+=|PERL|
+inpaintのcontrolnetでもできるで
+一つの方法としては
+元画像をt2iのcanyに通して線画を出力する。線画はドラックアンドドロップで適当なフォルダに落とせば保存できる
+胸のところの線画を加工して雑でもいいからおっぱいにする
+それをcontrolnetに置いて、Preprocessorをnoneにしてmodelをcanyにする
+元絵は上半身をインペイントで黒くする
+プロンプトはshirt lift, breasts, underwearとか描きたい要素を入れる
+加工が面倒ならdepth画像無加工でWeight落とすだけでもいけるかも
+||=
+&ref(https://i.imgur.com/MgC72PR.png,400)
 **動画
 外人ニキやけど早送りでもだいたい分かる [[https://www.youtube.com/watch?v=ci7NfTsifd0>>>https://www.youtube.com/watch?v=ci7NfTsifd0]]
 

@@ -54,6 +54,15 @@ magnet:?xt=urn:btih:XFDFHICCEVQ6IXQXRSBBT7SN5SC6RWSI&amp;dn=lora-torrent&amp;tr=
 
 ** EVT（ピクシブ学習モデル)
 
+
+*** Evt_M
+Evt_V4 EP06を元にして学習方法を変えることで表現をより柔軟にしたモデル
+&#128317;https://huggingface.co/haor/Evt_M
+
+*** Evt_V4-preview 
+ACertaintyをベースに550000枚の画像を用いて追加学習したモデル
+&#128317;https://huggingface.co/haor/Evt_V4-preview
+
 *** Evt_V3
 EVT_V2を元にして、35467枚の画像を使用して微調整を行ったモデル
 &#128317;haor/Evt_V3 &#183; Hugging Face - https://huggingface.co/haor/Evt_V3
@@ -252,5 +261,7 @@ https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
 *スレ住民作成LoRA
 →LoRAとはなんぞや→ローカル部[[Dreambooth-LoRA]]
 →スレ住民制作LoRA集→移動しました[[Lora学習成果]]
+
+
 
 

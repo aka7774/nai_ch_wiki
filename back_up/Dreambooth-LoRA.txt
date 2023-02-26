@@ -14,48 +14,47 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 **sd-scripts (kohya)
 一番はじめは作者が詳しく書いてくれている公式READMEを見よう！話はそれからだ！
 
-- ★公式導入ガイド：sd-scripts/README-ja.md at main &#183; kohya-ss/sd-scripts | https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md
-- ★公式LoRAガイド：sd-scripts/train_network_README-ja.md at main &#183; kohya-ss/sd-scripts | https://github.com/kohya-ss/sd-scripts/blob/main/train_network_README-ja.md
-- 公式タグ付けガイド：sd-scripts/fine_tune_README_ja.md at main &#183; kohya-ss/sd-scripts | https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md
-- 公式DreamBoothガイド：sd-scripts/train_db_README-ja.md at main &#183; kohya-ss/sd-scripts | https://github.com/kohya-ss/sd-scripts/blob/main/train_db_README-ja.md
 
-
+: ★公式導入ガイド |  https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md
+: ★公式LoRAガイド | https://github.com/kohya-ss/sd-scripts/blob/main/train_network_README-ja.md
+: 公式タグ付けガイド | https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md
+: 公式DreamBoothガイド | https://github.com/kohya-ss/sd-scripts/blob/main/train_db_README-ja.md
 
 *&aname(loraguide){参考資料・スレ住民による学習ガイド}
 
 ** 記事
-LoRA学習用サンプルデータ https://note.com/kohya_ss/n/nb20c5187e15a
+: LoRA学習用サンプルデータ | https://note.com/kohya_ss/n/nb20c5187e15a
 - 作者本人によるサンプル。
 
-LoRA Training Guide　https://rentry.org/lora_train
+: LoRA Training Guide | https://rentry.org/lora_train
 - 4chan有志によるLoRAトレーニング法ガイド（英語）
 
-LoRA 学習メモ　https://rentry.org/i5ynb
+: LoRA 学習メモ | https://rentry.org/i5ynb
 - スレ住民によるLain・よしなが先生・野原ひろしLoRA作成者によるLoRAガイド（日本語）~~更新：2023-02-09｜低リソース学習(NIKKE)、低dim学習(ゆるキャン 犬山あおい)などを追加しました。
 
-ソウリンちゃんLoRAの作成記録 https://rentry.org/sourin_chan
+: ソウリンちゃんLoRAの作成記録 | https://rentry.org/sourin_chan
 - スレ住民によるマルゼン式(ふたば有志のタグ付け手法の1つ)で作成したLoRA作成記録（日本語）
 
-原神LoRA作成メモ・検証 https://rentry.org/genshin_lora
+: 原神LoRA作成メモ・検証 | https://rentry.org/genshin_lora
 - スレ住民によるkohya-ss氏制作のSDスクリプト(https://github.com/kohya-ss/sd-scripts )で次のキャラのLoRAを作成した。ポップアップ版使用。（日本語）
 -- 02/10:繰り返し数の検証結果を追加。
 -- 02/23:AdaFactorの簡易的な検証結果を追加
 
-https://rentry.org/lora-tag-faq
-- lora training tagging faq（英語）
-https://rentry.org/dsvqnd
+: lora training tagging faq（英語） | https://rentry.org/lora-tag-faq
+- 現在はリンク切れ
 
-- スレ住民によるキャラクター学習のタグ付け一例（日本語）
-https://rentry.org/lora_namakubi
-- スレ住民によるLoRAでのキャラ学習素材の検証
+: スレ住民によるキャラクター学習のタグ付け一例（日本語） | https://rentry.org/dsvqnd
 
-LAZY TRAINING GUIDE https://rentry.org/LazyTrainingGuide
+: スレ住民によるLoRAでのキャラ学習素材の検証 | https://rentry.org/lora_namakubi
+
+: LAZY TRAINING GUIDE | https://rentry.org/LazyTrainingGuide
 - loraをいっぱい作ってる海外ニキの打率9割学習ガイド
 
-あかちゃんLoRAノートブック [[kohya_train_network_simple]]
+: あかちゃんLoRAノートブック | [[kohya_train_network_simple]]
 - 全然スレに書き込めないけどけなげに頑張っている
 - クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
 - フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
+
 
 ** メモ
 
@@ -71,12 +70,10 @@ LAZY TRAINING GUIDE https://rentry.org/LazyTrainingGuide
 ||=
 
 *インストール、初回セットアップ編
-**1.LoRA_Easy_Training_Scripts Installers
--https://github.com/derrian-distro/LoRA_Easy_Training_Scripts/
-下記の学習の手順ので使うEasyTrainScriptsの人が作った簡易インストールスクリプト
+**1. LoRA_Easy_Training_Scripts Installers
+: https://github.com/derrian-distro/LoRA_Easy_Training_Scripts/ | 下記の学習の手順で使うEasyTrainScriptsの人が作った簡易インストールスクリプト
 画面右の Releases の下の Installers をクリック > 下にスクロールして install_sd_scripts_v5.bat をダウンロードする
-右クリックして 管理者として実行すると
-sd-scripts本体とEasy_Train_Scriptsの両方をインストールして、インストール後の初期設定までやってくれる。
+右クリックして管理者として実行すると sd-scripts 本体と Easy_Train_Scripts の両方をインストールして、インストール後の初期設定までやってくれる。
 うまくいかなかったら [[Gitをインストール>>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%c6%b3%c6%fe%ca%fd%cb%a1#content_2_2]] してリトライ
 わからないとき用画像↓
 [+]
@@ -84,8 +81,8 @@ sd-scripts本体とEasy_Train_Scriptsの両方をインストールして、イ�
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/lKDWlTHI_G.png)
 &video(https://image01.seesaawiki.jp/n/h/nai_ch/9crBKdm8fu.webm)
 [END]
-**2.あかちゃんLoraインストーラー
 
+**2. あかちゃんLoraインストーラー
 あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
 start.batと同じフォルダに入れて実行してください
 
@@ -95,28 +92,29 @@ start.batと同じフォルダに入れて実行してください
 - ダイアログ用(みかんせい)
 -- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts_easy_training.bat
 
-**3.GUI
-GUIといっても作者のsd-scriptsにパラメータを渡すだけや。性能は変わらん。一部パラメータ非対応のこともある。
+**3. GUI
+GUI といっても作者の sd-scripts にパラメータを渡すだけや。性能は変わらん。一部パラメータ非対応のこともある。
 [+]
--bmaltais版 GUI
-GradioベースのGUI [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
-「Tools」タブにフォルダ配置補助機能がある。
-スクリプト版のパラメータの一部は設定出来ないかも？
-LoRA_Easy_Training_Scripts にインストールスクリプトがある。
+: bmaltais版 GUI | [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
+-GradioベースのGUI。
+-「Tools」タブにフォルダ配置補助機能がある。
+-スクリプト版のパラメータの一部は設定出来ないかも？
+-LoRA_Easy_Training_Scripts にインストールスクリプトがある。
 
--ddPn08版 GUI - AUTOMATIC1111 SD WebUI エクステンション対応版
-WebUIのエクステンションに対応。スタンドアロンで動かすと上記のbmaltais版と似たような感じ
+: ddPn08版 GUI - AUTOMATIC1111 SD WebUI エクステンション対応版 | https://github.com/ddPn08/kohya-sd-scripts-webui
+WebUIのエクステンションに対応。スタンドアロンで動かすと上記のbmaltais版と似たような感じ。
 - エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
 - 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
-- WebUI割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
--- https://github.com/ddPn08/kohya-sd-scripts-webui
+- WebUI 割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
 [END]
-**4.その他補助スクリプト
+
+**4. その他補助スクリプト
 としあきbatや4chan製のスクリプトがある
 kohya-ss/sd-scripts を自分でインストールできるなら
 
 *学習用画像を置くフォルダの配置
--作者の解説が詳しい [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
+-作者の解説が詳しい
+-- [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
 
 -フォルダの配置例:
 [-]
@@ -138,9 +136,9 @@ kohya-ss/sd-scripts を自分でインストールできるなら
 --キャプションについては以下
 
 *キャプション・タグを付ける
-- 作者の詳しい画像付き説明 [[https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md]]
+: 作者の詳しい画像付き説明 | [[https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md]]
 - 学習用の素材画像それぞれに内容を説明するテキストファイルを作る。このテキストファイルには画像生成時のプロンプトと同じようにタグを記載する。
-- テキストエディターやメモ帳で１つずつ作っても良いのだが、WD1.4Tagger等のツールを使えば一気に自動生成できて捗る
+- テキストエディターやメモ帳で１つずつ作っても良いのだが、WD1.4 Tagger 等のツールを使えば一気に自動生成できて捗る
 
 **WD1.4 Taggerで作成
 先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)
@@ -148,7 +146,7 @@ kohya-ss/sd-scripts を自分でインストールできるなら
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/kbCJ6oEi6E.png)
 [END]
 Web UI に拡張機能 stable-diffusion-webui-wd14-tagger [[https://github.com/toriato/stable-diffusion-webui-wd14-tagger>>https://github.com/toriato/stable-diffusion-webui-wd14-tagger]]をインストール
-「Tagger」タブの「Batch from directly」
+「Tagger」タブの「Batch from directory」
 -入力ファイル:学習用画像の入っているフォルダ
 -Interrogator:wd-14convnext
 -アンダースコアの代わりにスペースを使用する:オン
@@ -164,22 +162,21 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 **キャプション・タグの編集
 - タグは順序に影響を受けるので、一番最初に有効化したいタグを記述する
 - WD1.4Tagger等で自動生成したファイルには不要なタグが含まれたり誤認識されたタグが記載されたりするので編集する。
+: BooruDatasetTagManager | https://github.com/starik222/BooruDatasetTagManager
 
-- BooruDatasetTagManager https://github.com/starik222/BooruDatasetTagManager 
-- 学習用タグの入力を速く楽にするやつ →[[ローカルの「ツール」]] https://uploader.cc/s/rdw0k6qd2766czgdwwwjtn2xtmhiay6c1ky0s7dui4o5yaz0pkgfesef18n9nngm.zip
+: 学習用タグの入力を速く楽にするやつ | →[[ローカルの「ツール」]] https://uploader.cc/s/rdw0k6qd2766czgdwwwjtn2xtmhiay6c1ky0s7dui4o5yaz0pkgfesef18n9nngm.zip
 等の便利なツールを使えば捗る。必要なタグを追加、不要なタグの削除、順序の入れ替え等の編集をやる
 
-- taggerで生成したタグの順序のままでも構わないが、重要なタグだけ各ファイルの先頭の方に記載する。例えばコマンドライン版（lora_train_command_line.py ）の場合、
->        self.shuffle_captions: bool = True  # OPTIONAL, False to ignore ~~
->        self.keep_tokens: Union[int, None] = 3  # OPTIONAL, None to ignore ~~
+- taggerで生成したタグの順序のままでも構わないが、重要なタグだけ各ファイルの先頭の方に記載する。例えばコマンドライン版（lora_train_command_line.py）の場合、
+=|PY|
+        self.shuffle_captions: bool = True  # OPTIONAL, False to ignore ~~
+        self.keep_tokens: Union[int, None] = 3  # OPTIONAL, None to ignore ~~
+||=
 上記のように設定すれば先頭から3つのタグは順序固定として残りはタグの適当にシャッフルして学習できる。
 
 **キャプションの付け方・考え方の参考サイト
--[[lora training tagging faq>https://rentry.org/lora-tag-faq]]
-英語サイトだがブラウザの翻訳で読もう
--[[キャラクター学習のタグ付け一例>https://rentry.org/dsvqnd]]
-実例を挙げての解説
-
+: [[lora training tagging faq>https://rentry.org/lora-tag-faq]] | 英語サイトだがブラウザの翻訳で読もう
+: [[キャラクター学習のタグ付け一例>https://rentry.org/dsvqnd]] | 実例を挙げての解説
 一言で言えば「呼び出しキーワード」＋「学習から外したいもの」をタグに書く
 
 *そもそも学習用画像ってどうやって加工するの
@@ -188,14 +185,11 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 - キャラの切り出しだけやったら3Dペイント(Win10なら標準、11では標準からリストラされたけどストアにおるで)のマジック選択でええ感じに切り抜きやすいからそこからgimpなりで微調整。
 - 一枚一枚やんのめんどくさい言うんやったらABG_extension言うのが出たんでつこてみたらええんとちゃうかな…？しらんけど
 
-ABG_extension
-https://github.com/KutsuyaYuki/ABG_extension
-WEBUI公式extension 背景を自動で除去します。アニメ画像用に微調整されたonnxモデルを使用。GPUで動作します。
+: ABG_extension | https://github.com/KutsuyaYuki/ABG_extension
+WebUI公式extension。背景を自動で除去します。アニメ画像用に微調整されたonnxモデルを使用。GPUで動作します。
 
-katanuki
-https://github.com/aka7774/sd_katanuki
-WEBUI用exntension anime-segmentation を 1111 で使えるようにしたやつ。画像の背景を透過したり白背景にしたりマスク画像を出力する
-
+: katanuki | https://github.com/aka7774/sd_katanuki
+WebUI用extension。anime-segmentation を 1111 で使えるようにしたやつ。画像の背景を透過したり白背景にしたりマスク画像を出力する
 
 *正則化画像
 - ChatGPTたん曰く「過学習を抑えるためのもの」
@@ -205,18 +199,16 @@ WEBUI用exntension anime-segmentation を 1111 で使えるようにしたやつ
 - 正則化画像は必須ではないので用意しなくても学習はできる。とりあえず一度学習動かしてみたいとかなら用意しなくてもいい。透明正則化も効果は不明瞭（良い影響があるとしても悪影響がないとも言えない）なので面倒ならやらなくてもいい。
 
 
-**透明のpngを正則化画像にする
-Web UI に拡張機能をインストールする [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
-Generate TransparentIMG タブで
-出力フォルダ:正則化画像の保存先
-number_of_generation:作成する枚数
-を入力して実行
+**透明のPNGを正則化画像にする
+Web UI に拡張機能 Generate-TransparentIMG をインストールする
+[[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
+Generate TransparentIMG タブで、「出力フォルダ」には正則化画像の保存先を、「number_of_generation」には作成する枚数を入力して実行
 [+]画像
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/l8x2Fjrdz7.png)
 [END]
 
 *学習の手順
-**Windowsの場合
+**Windows の場合
 ***ポップアップ版を使う場合
 + run_popup.batを実行
 + ポップアップにパラメーターを入力する

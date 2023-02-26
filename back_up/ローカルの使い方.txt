@@ -100,30 +100,59 @@ ui-config.json で変えられる
 
 最終的に出力したい解像度を出せるだけのGPUがあって、精細な絵を出したいならこれ。
 
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yjyyJGIPXK.png)
-
-Settings の Upscale latent space image when doing hires. fix も影響するらしい。
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/e5VuAv8MAb.png)
 
 VRAM 8GBだとFHD(1920x1088)はギリギリ。
 VRAM不足を補うためには、生成時間が延びるけど--medvramを指定する手があるかも。
-3060買っちゃう手もあるかも。
+3060か4070Ti買っちゃう手もあるかも。
 
-*** highres.fix機能の使用法: アップスケール&ディテール向上
+*** highres.fixのUpscalerの比較
+[+]
+画像をクリック/タップで拡大表示
+- Hires.fix無し
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JHAiRoOnKK-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/JHAiRoOnKK.png]]
 
-元の解像度とhighres. fixの解像度の縦横比揃えれば構図はあんまり変わらんで
-例えば768*512でええのあったらhighres. fixオンにして、first passを768*512、解像度を1536*1024にすればええ
+- Latent
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3hm0qvgxQW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/3hm0qvgxQW.png]]
 
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/r0I43fs898.png, 128, 85)
-↓
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/a4j34XsPlE.jpg, 256, 170)
+- Latent(antialiased)
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WspzWo_pgx-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/WspzWo_pgx.png]]
 
-- 単純に解像度倍にするんやなくて縦横比揃えるんやで
--- 768/512は1.5やから、1536*1024や1920*1280が合うんや
--- ただしfirst passからはなれるほど描き込み増えて破綻し始めるから注意や
-- denoising strengthは0.5以下だとブロックノイズ増えて0.6以上だと元絵から離れていくからうまく調節してくれや
-- 設定タブのUpscale latent space image when doing hires. fixをチェック
+- Latent(bicubic)
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/df6mazcJu_-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/df6mazcJu_.png]]
 
-引用元: https://fate.5ch.net/test/read.cgi/liveuranus/1669096981/959 https://fate.5ch.net/test/read.cgi/liveuranus/1669216072/3
+- Latent(bicubic antialiased)
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/56hBMzsnYf-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/56hBMzsnYf.png]]
+
+- Latent(nearest)
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Pn3ZgrqeCl-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Pn3ZgrqeCl.png]]
+
+- Latent(nearest-exact)
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lWHgqNFOJ6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/lWHgqNFOJ6.png]]
+
+- None
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/G6eZwi3g8O-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/G6eZwi3g8O.png]]
+
+- Lanczos
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jD6qs5qN9F-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/jD6qs5qN9F.png]]
+
+- Nearest
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1EEXd7YaWs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1EEXd7YaWs.png]]
+
+- ESRGAN_4x
+初回使用時にモデルがダウンロードされる。すぐに終わる。
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jvX3LP4T6Y-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/jvX3LP4T6Y.png]]
+
+- LDSR
+初回使用時に1.9GBのモデルがダウンロードされる。だいたい9分かかる。ドイツの鯖遅すぎ!!
+''普通に生成→モデル切り替え→DDIMで5倍のstep数で生成→拡大後の生成''といった過程があるため''とても遅い''
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HcsDsuHoBa-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/HcsDsuHoBa.png]]
+
+- SwinIR 4x
+初回使用時にモデルがダウンロードされる。すぐに終わる。
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jfj3XKXsfN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jfj3XKXsfN.png]]
+
+[END]
 
 
 ** Extras の Upscaler を使う
@@ -215,6 +244,7 @@ Extensionsの「novelai-2-local-prompt」を使って()記法に変換すると�
 プロンプト入力欄内の単語または強弱を調整したい範囲をドラッグして選択する。
 CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打すると0.1ずつ数値が増え、CTRL+↓を押すと0.1ずつ減る。
 すでに()がついている場合、()の範囲内どこでもよいのでカーソルを置いてCTRL+↑or↓で数値が調整できる。
+このとき、エラーが出る場合があるが、気にしなくていい。
 
 ** プロンプトを真似る
 
