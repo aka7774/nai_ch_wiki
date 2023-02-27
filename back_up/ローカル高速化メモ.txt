@@ -178,7 +178,7 @@ safetensors 37.87
 
 - Pythonを使う https://pastebin.com/ijApuS6b
 - Colabを使う(今回はまわりくどいけど) [[ローカルの「ツール」]]
-* Exensionsの退避
+* Extensionsの退避
 
 しばらく使わないときは Dreambooth Extension を削除する
 
@@ -193,21 +193,18 @@ Euler a以外(収束するサンプラー)で再現できないか試す。
 DPM++ 2M Karrasは15Stepsでもそれなりに映えるのでおすすめ。
 
 * RamDiskを使う
+1111 全部 RamDisk に突っ込んで高速化するのは、必要RAMのわりに恩恵がほとんど無いからおすすめしない。
 
-1111全部RamDiskに突っ込んで高速化するのはおすすめしない。
-必要RAMのわりに恩恵がほとんど無いから。
+以前はモデルをマージする際に RamDisk が有用であるとされてきたが、RamDisk にあずかる恩恵はさらに少なくなっているかもしれない。
+2023年2月現在はモデルをメモリ上でマージしてくれる SuperMerger が公式で使えるようになっているので。
 
-でもマージなら恩恵あるかも。
-短時間で大量の読み書きを繰り返すから。
-高速化というよりSSD消耗を抑える意味のほうが大きいかも。
-混ぜるモデルと出来たモデルを保存する容量が確保できれば使える。
+詳しくは [[ローカルのExtensions]] の SuperMerger を参照。
 
-ImDisk Toolkit が使いやすい。
+もし何らかの形で RamDisk を使うのであれば ImDisk Toolkit が使いやすい。
 https://sourceforge.net/projects/imdisk-toolkit/
 
 stable-diffusion-webui\models\Stable-diffusionにジャンクションをはるか、
 コマンドラインオプションで--ckpt-dirを指定して使う(こっちのが便利かも)
-
 *チェックポイントをRAMに保持する
 Settings->Stable Diffusion->Checkpoints to cache in RAM
 の値を変更すると、最後に読み込まれたチェックポイントをRAMに保持します。
@@ -242,6 +239,8 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
+
 
 
 

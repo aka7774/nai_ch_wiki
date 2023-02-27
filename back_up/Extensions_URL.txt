@@ -192,7 +192,7 @@ import launch
 if not launch.is_installed("huggingface-hub"):
     launch.run_pip("install huggingface-hub", desc='Installing huggingface-hub')
 ||=
-** LamaCleaner ★
+** LamaCleaner ★&aname(lamacleaner)
 
 - https://github.com/aka7774/sd_lama_cleaner
 - インストールは楽(なんかエラーでるけど気にしない)
@@ -365,3 +365,4 @@ HN/Loraは仕様が変わったので削除。
 - システム情報
 - 1111とかvenvとかの情報を表示する
 - 「なんか動かないんだけど！」って時は、エラーの内容とこの表示内容をコピペして相談しましょう
+

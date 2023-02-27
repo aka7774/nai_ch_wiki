@@ -51,17 +51,20 @@ https://pixeldrain.com/
 
 最新版はこれ
 https://colab.research.google.com/drive/1KUz8TLKRtRzO7GyJNzQsE_wgD-TzDoqU
-改良点:
-- 破損したCLIPを修復する機能を追加しました
-- VAEをモデルにマージする機能を追加しました
-- モデルをpruneして更に軽量化する機能を追加しました
-これらの機能を利用してAnything-V3.0.ckptをAnything-V3.0-pruned-fp16.safetensorsに変換することができます（生成結果は本家と完全に一致します）
 
-巨大モデル対応.…..標準の~12GBランタイムの場合~10GBまでのモデルが変換可能や
-fp16化対応.…..fp16として保存することでRAMとストレージを節約(学習には不向きやけど生成画像は同一)
-簡単DL.…..Driveや&#129303;からカンマ区切りで任意個のモデルを取得できる
-簡単Save.…..直接Google Driveに保存可能
-SD2.x系モデル用のyamlも同時に {ckpt用/safetensors用/それぞれのfp16版用} へ変換できる
+改良点
+- 破損した CLIP を修復する機能を追加しました
+- VAE をモデルにマージする機能を追加しました
+- モデルを prune して更に軽量化する機能を追加しました
+
+これらの機能を利用して Anything-V3.0.ckpt を Anything-V3.0-pruned-fp16.safetensors に変換することができます（生成結果は本家と完全に一致します）
+
+
+: 巨大モデル対応 | 標準の ~12GB ランタイムの場合 ~10GB までのモデルが変換可能や
+: fp16化対応 | fp16 として保存することで RAM とストレージを節約 (学習には不向きやけど生成画像は同一)
+: 簡単DL | Drive や&#129303;からカンマ区切りで任意個のモデルを取得できる
+: 簡単Save | 直接 Google Drive に保存可能
+: SD2.x対応 | SD2.x系モデル用の yaml も同時に {ckpt 用 / safetensors 用 / それぞれの fp16 版用} へ変換できる
 
 [[ここ>>https://colab.research.google.com/drive/1SIJaNrt-LzBWgDY44vPvuvUlwnjJ9a5-]]にアクセスしてログインするだけで使えるで
 中身を改造したい場合は、リンク先画面上部の【ファイル】>【ドライブにコピーを保存】で好きなだけ弄れるようになるで
@@ -78,30 +81,29 @@ SD2.x系モデル用のyamlも同時に {ckpt用/safetensors用/それぞれのf
 * DCCツール
 
 ** openOutpaint
-WebUIとは別に起動してアウトペイントするツール
+Web UI とは別に起動してアウトペイントするツール
 - zero01101/openOutpaint: local offline javascript and html canvas outpainting gizmo for stable diffusion webUI API &#128032; - https://github.com/zero01101/openOutpaint
 導入ガイドは以下を参照
 - SBS Guided Example &#183; zero01101/openOutpaint Wiki - https://github.com/zero01101/openOutpaint/wiki/SBS-Guided-Example
 
 * スクリプト
 
-** fix_postion_ids.py：マージモデルの破損修復
+** fix_postion_ids.py: マージモデルの破損修復
 マージされたモデルが破損する問題を修復するスクリプト。階層マージ拡張機能の作者製
 こんな感じで調査したり、修復してモデルを出力できる。
 https://files.catbox.moe/ez1pqp.webp
-pytorchとsafetensors.torchをpipで入れてないと動かない。osとargparseはPythonの標準ライブラリ。
+pytorch と safetensors.torch を pip で入れてないと動かない。os と argparse は Python の標準ライブラリ。
 
-コマンド例：調査
-=|(box=textarea)|
+***コマンド例
+調査
+=|BSH|
 python fix_position_ids.py --model E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3.safetensors --verbose
 ||=
-
-コマンド例：修復
-=|(box=textarea)|
+修復
+=|BSH|
 python fix_position_ids.py --model E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3.safetensors --out E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3_fix.safetensors
 ||=
-
-ちなみにマージモデルの破損問題は、マージするときにflloat16のチェックを入れてモデルを生成すると回避できるらしい。
+ちなみにマージモデルの破損問題は、マージするときに float16 のチェックを入れてモデルを生成すると回避できるらしい。
 
 ** Config-Preset
 - プリセット値の構成可能なドロップダウンを使用して、Web UI の txt2img タブと img2img タブの設定をすばやく変更｜Zyin055/Config-Presets: Script for Automatic1111 - [https://github.com/Zyin055/Config-Presets]
@@ -109,89 +111,13 @@ python fix_position_ids.py --model E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3
 * プラグイン
 
 ** Krita
-インストールは原則 https://github.com/Interpause/auto-sd-paint-ext/wiki/Install-Guide のとおりにやればいけるはず
-以下は↑とほぼ同じことが書いてある 
-※AUTOMATIC WebUIがインストール済みであることを前提とする
-*** Extentionのインストール
-**** AUTOMATIC WebUIにExtentionをインストールする
-AUTOMATIC WebUI の Extentions タブで auto-sd-paint-ext を探してinstallボタンを押す 
-https://image01.seesaawiki.jp/n/h/nai_ch/6Ody5DyiA0.png
-**** webui-user.bat の編集
-webui-user.bat を開き、COMMANDLINE_ARGSに --api を加えて保存する
-**** webui-user.bat の再実行
-起動していたwebui-user.batを終了し、再度webui-user.bat を実行する
-*** プラグインのインストール
-**** Kritaのインストール
-[[Kritaをダウンロード>https://krita.org/jp/download-jp/krita-desktop-jp/]]し、インストールする バージョン5以上が必須
-**** プラグインにリンク(ジャンクション)を張る
-AUTOMATIC WebUI の auto-sd-paint-ext Guide/Panel に書かれている手順に従う
-+ Kritaを起動する
-+ Kritaのメニューから「設定」-「リソースを管理」を選択
-+ ダイアログが表示されるので「リソースフォルダを開く」ボタンを押す
-+ エクスプローラで C:\Users\<windowsユーザー名>\AppData\Roaming\krita のフォルダが開かれるので、その下の「pykrita」フォルダを開く(pykritaフォルダがない場合は作成する)
-+ エクスプローラのアドレスバーで C:\Users\<windowsユーザー名>\AppData\Roaming\krita\pykrita のフルパスをコピーする
-+ AUTOMATIC WebUI の auto-sd-paint-ext Guide/Panel で、「Pykrita Folder Location」に↑のフルパスをペーストする https://image01.seesaawiki.jp/n/h/nai_ch/OW0k5iagOj.png
-+ コマンドプロンプトを「管理者として実行」し、↑の画面の下に表示されている2行のコマンドを1行ずつペーストして実行する
-[+]基本的にはWindows版Webui+Windows版Krita(もしくはLinux版Webui+Linux版Krita)が前提、そうでない場合はそれなりに面倒
-+ 「シンボリックリンクではなくファイルの実体をコピーする」「WSL2のファイルへWindwos側からシンボリックリンクを貼る(要PowerShell操作)」などで一応は接続できるようだ。前者はプラグインアップデートごとに反映が必要となり、後者はかなりややこしいコマンドが必要となるためあまりオススメはできない。
-[END]
-**** プラグインを有効化する
-+ Kritaを再起動する
-+ Kritaのメニューから「設定」-「Kritaの設定を変更」を選択
-+ ダイアログが表示されるので「Python プラグインマネージャー」を選択
-+ リストで「Stable Diffusion Plugin」を探してチェックを入れる
-+ Kritaを再起動する(設定を反映させるため)
-画面左側にSD Plugin関連のパネルが表示される 表示されない場合はKritaのメニューから「設定」-「ドッキングパネル」を選択して以下にチェックを入れる
-- Img2Img
-- Inpaint
-- SD Common Options
-- SD Plugin Config
-- Txt2Img
-- Upscale
-https://image02.seesaawiki.jp/n/h/nai_ch/YteQTbEtOP.png
+インストールは原則 Install Guide のとおりにやればいけるはず
+- https://github.com/Interpause/auto-sd-paint-ext/wiki/Install-Guide 
 
-*** Inpaintingのやり方
-https://github.com/Interpause/auto-sd-paint-ext/wiki/Usage-Guide は若干古い
+以下は↑とほぼ同じことが書いてあるが、詳細なインストール方法については別記事を参照
+※ AUTOMATIC Web UI がインストール済みであることを前提とする
 
-1. (オプション)レイヤーパネルで右クリックして「表示レイヤーから新しいレイヤー」を選択する 
-https://image02.seesaawiki.jp/n/h/nai_ch/ALUnWhIiLG.png
-
-2. (オプション)新しく追加したレイヤーに対して修正を加え、Inpaintの成功率を上げる 
-この例は余計な指を消しているが、元絵の状態によっては指を増やしたり手の形を作ったりということが必要になるだろう 
-https://image02.seesaawiki.jp/n/h/nai_ch/pQeixd6tlC.png
-
-3. レイヤーを追加する(レイヤーパネル左下の + ボタンを押すとかInsertキーを叩くとかいろいろやり方がある)
-
-4. 追加したレイヤーでInpaintのマスクを書く 色はなんでもよい 
-https://image02.seesaawiki.jp/n/h/nai_ch/WInRlXlJty.png 
-マスクのぼかしを行うには、エアブラシなどの「ぼかし」ブラシを使用して書くか、マスクを書き終わったあとにレイヤーにぼかしを適用する(「フィルタ」-「ぼかし」-「ガウシアンぼかし」など) 
-https://image02.seesaawiki.jp/n/h/nai_ch/bXeRqihdPa.png
-
-5. Inpaint時にモデルに食わせたい画像領域を矩形選択ツールで選択する
-矩形選択ツールのオプションでサイズの幅と高さを固定しておくとやりやすい(512px, 768px,1024pxとか)
-手をInpaintする場合は手だけが入るような矩形選択をせず、人物の上半身(少なくとも顔)を含めると成功率が高い、気はする
-https://image01.seesaawiki.jp/n/h/nai_ch/BL0yyVddsW.png
-
-6.SD Pluginのパネルでいろいろ設定してInpaintを実行する (Start inpaintボタンを押してもよいし、キーボードショートカットを使ってもよい デフォルトだとCtrl+Alt+Rキー)
-※ レイヤパネルでマスクを描いたレイヤーを選択していることを確認してから実行すること!
-https://image01.seesaawiki.jp/n/h/nai_ch/_mW3Ch862L.png
-SD Common Optionsも設定する 
-Base size と Max size は下記「[[Base size, Max size is 何>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%a1%d6%a5%c4%a1%bc%a5%eb%a1%d7#content_6_8_10]]」を参考に、矩形選択のサイズと得たいInpaint結果の画質、生成スピード(Batch sizeで何枚並列出力したいか)のバランスで決める
-https://image02.seesaawiki.jp/n/h/nai_ch/cdxy4DETf_.png
-
-7. Inpaint結果がレイヤー出力される 目のマークをクリックすると表示/非表示を切り替えられるが、キーボードショートカットを設定しておくのが楽
-https://image01.seesaawiki.jp/n/h/nai_ch/N26kxfxafg.png
-https://image01.seesaawiki.jp/n/h/nai_ch/rDyAOlmlyE.png
-
-
-
-**** Base size, Max size is 何
-これは AUTOMATIC WebUI の highres fix に代わるもので、txt2img だけでなく、すべてのモードで動作します。
-
-選択範囲は、短い方の寸法が base_size になるようにリサイズされる。リサイズによって長い方の寸法が max_size を超えた場合、短い方の寸法は base_size 未満にリサイズされる。base_size と max_size を高く設定すると、より高解像度の画像を生成するために使用できる。
-
-
-
+[[auto-sd-paint-ext のインストール]]
 
 ** Photoshop
 

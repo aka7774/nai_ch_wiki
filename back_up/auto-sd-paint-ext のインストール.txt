@@ -1,0 +1,112 @@
+#contents
+
+* Extention のインストール
+
+** 1. AUTOMATIC Web UI  に Extention をインストールする
+AUTOMATIC Web UI  の Extentions タブで auto-sd-paint-ext を探して install ボタンを押す 
+
+https://image01.seesaawiki.jp/n/h/nai_ch/6Ody5DyiA0.png
+
+** 2. webui-user.bat の編集
+webui-user.bat を開き、COMMANDLINE_ARGSに --api を加えて保存する
+
+** 3. webui-user.bat の再実行
+起動していた webui-user.bat を終了し、再度 webui-user.bat を実行する
+
+
+* プラグインのインストール
+
+** 1. Krita のインストール
+Krita をダウンロードし、インストールする バージョン5以上が必須
+https://krita.org/jp/download-jp/krita-desktop-jp/
+
+** 2. プラグインにリンク(ジャンクション)を張る
+AUTOMATIC Web UI  の auto-sd-paint-ext Guide/Panel に書かれている手順に従う
+
++ Kritaを起動する
++ Kritaのメニューから「設定」-「リソースを管理」を選択
++ ダイアログが表示されるので「リソースフォルダを開く」ボタンを押す
++ エクスプローラで C:\Users\<windowsユーザー名>\AppData\Roaming\krita のフォルダが開かれるので、その下の「pykrita」フォルダを開く (pykrita フォルダがない場合は作成する)
++ エクスプローラのアドレスバーで C:\Users\<windowsユーザー名>\AppData\Roaming\krita\pykrita のフルパスをコピーする
++ AUTOMATIC Web UI  の auto-sd-paint-ext Guide/Panel で、「Pykrita Folder Location」に↑のフルパスをペーストする ~~ ~~ https://image01.seesaawiki.jp/n/h/nai_ch/OW0k5iagOj.png
++ コマンドプロンプトを「管理者として実行」し、↑の画面の下に表示されている2行のコマンドを1行ずつペーストして実行する
+
+[+]基本的には Windows 版 Web UI + Windows 版 Krita (もしくは Linux 版 Web UI + Linux 版 Krita) が前提、そうでない場合はそれなりに面倒
++ 「シンボリックリンクではなくファイルの実体をコピーする」「WSL2のファイルへWindwos側からシンボリックリンクを貼る(要PowerShell操作)」などで一応は接続できるようだ。前者はプラグインアップデートごとに反映が必要となり、後者はかなりややこしいコマンドが必要となるためあまりオススメはできない。
+[END]
+
+** 3. プラグインを有効化する
+
++ Kritaを再起動する
++ Kritaのメニューから「設定」-「Kritaの設定を変更」を選択
++ ダイアログが表示されるので「Python プラグインマネージャー」を選択
++ リストで「Stable Diffusion Plugin」を探してチェックを入れる
++ Kritaを再起動する(設定を反映させるため)
+
+画面左側にSD Plugin関連のパネルが表示される 表示されない場合はKritaのメニューから「設定」-「ドッキングパネル」を選択して以下にチェックを入れる
+
+- Img2Img
+- Inpaint
+- SD Common Options
+- SD Plugin Config
+- Txt2Img
+- Upscale
+
+https://image02.seesaawiki.jp/n/h/nai_ch/YteQTbEtOP.png
+
+* Inpainting のやり方
+
+https://github.com/Interpause/auto-sd-paint-ext/wiki/Usage-Guide は若干古い
+
+** 1. (オプション) レイヤーパネルで右クリックして「表示レイヤーから新しいレイヤー」を選択する 
+
+https://image02.seesaawiki.jp/n/h/nai_ch/ALUnWhIiLG.png
+
+** 2. (オプション) 新しく追加したレイヤーに対して修正を加え、Inpaint の成功率を上げる 
+この例は余計な指を消しているが、元絵の状態によっては指を増やしたり手の形を作ったりということが必要になるだろう 
+
+https://image02.seesaawiki.jp/n/h/nai_ch/pQeixd6tlC.png
+
+** 3. レイヤーを追加する
+レイヤーパネル左下の + ボタンを押すとか Insert キーを叩くとかいろいろやり方がある
+
+** 4. 追加したレイヤーで Inpaint のマスクを書く
+色はなんでもよい 
+
+https://image02.seesaawiki.jp/n/h/nai_ch/WInRlXlJty.png 
+
+マスクのぼかしを行うには、エアブラシなどの「ぼかし」ブラシを使用して書くか、マスクを書き終わったあとにレイヤーにぼかしを適用する(「フィルタ」-「ぼかし」-「ガウシアンぼかし」など) 
+
+https://image02.seesaawiki.jp/n/h/nai_ch/bXeRqihdPa.png
+
+** 5. Inpaint 時にモデルに食わせたい画像領域を矩形選択ツールで選択する
+矩形選択ツールのオプションでサイズの幅と高さを固定しておくとやりやすい (512px, 768px, 1024px とか)
+手をInpaintする場合は手だけが入るような矩形選択をせず、人物の上半身(少なくとも顔)を含めると成功率が高い、気はする
+
+https://image01.seesaawiki.jp/n/h/nai_ch/BL0yyVddsW.png
+
+** 6.SD Plugin のパネルでいろいろ設定して Inpaint を実行する
+(Start inpaint ボタンを押してもよいし、キーボードショートカットを使ってもよい デフォルトだと Ctrl + Alt + R キー)
+
+※ レイヤパネルでマスクを描いたレイヤーを選択していることを確認してから実行すること！
+
+https://image01.seesaawiki.jp/n/h/nai_ch/_mW3Ch862L.png
+
+SD Common Optionsも設定する 
+
+Base size と Max size は下記「Base size, Max size is 何」を参考に、矩形選択のサイズと得たい Inpaint 結果の画質、生成スピード (Batch size で何枚並列出力したいか) のバランスで決める
+
+https://image02.seesaawiki.jp/n/h/nai_ch/cdxy4DETf_.png
+
+*** Base size, Max size is 何
+これは AUTOMATIC Web UI  の highres fix に代わるもので、txt2img だけでなく、すべてのモードで動作します。
+
+選択範囲は、短い方の寸法が base_size になるようにリサイズされる。リサイズによって長い方の寸法が max_size を超えた場合、短い方の寸法は base_size 未満にリサイズされる。base_size と max_size を高く設定すると、より高解像度の画像を生成するために使用できる。
+
+** 7. Inpaint 結果がレイヤー出力される
+目のマークをクリックすると表示/非表示を切り替えられるが、キーボードショートカットを設定しておくのが楽
+
+https://image01.seesaawiki.jp/n/h/nai_ch/N26kxfxafg.png
+
+https://image01.seesaawiki.jp/n/h/nai_ch/rDyAOlmlyE.png
+

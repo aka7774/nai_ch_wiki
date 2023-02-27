@@ -11,6 +11,12 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+- 2023/02/27
+[[Adobi's Real Flexible Mix (aah!)>#ARFM]]を追加
+[[KitchenSinkVer1.8>#ASDBA]]を追加
+[[porn model merge>#PORNMM]]を追加
+[[Realistic Asia doll (peeing) (Lora merge)>#RADP]]を追加
+
 - 2023/02/26
 [[ChikMix>#CHIKM]]を追加
 [[clockwork Oranges v7>#CLWO]]を追加
@@ -111,6 +117,16 @@
 公式にサンプルないから手探りでこんな絵しか出せんかった
 photo系プロンプトで写実に、CG系プロンプトでイラスト系になるで
 |&ref(https://i.imgur.com/NP0fBZx.png,256,384)|&ref(https://i.imgur.com/HPYAZWO.png,256,384)|&ref(https://i.imgur.com/ivv9f7X.png,256,384)|&ref(https://i.imgur.com/ovmYlFh.png,256,384)|&ref(https://i.imgur.com/HJyrKOG.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(ARFM)
+**[[Adobi's Real Flexible Mix (aah!)>>https://civitai.com/models/7386/adobis-real-flexible-mix-aah]]
+リアリスティックを追求したマージモデルや
+推奨プロンプトは公式に細かく書いてくれてる親切設計や
+シネマティックな画が幻想的で良い感じや
+短プロンプトでもイケるで（5枚目）
+|&ref(https://i.imgur.com/zuFwshB.png,256,384)|&ref(https://i.imgur.com/m6QDObk.png,256,384)|&ref(https://i.imgur.com/eHgmsSu.png,256,384)|&ref(https://i.imgur.com/R0hNmqi.png,256,384)|&ref(https://i.imgur.com/w4FEyv2.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -501,6 +517,16 @@ K-POP系のお姉さんをNSFWで出す時が本当の実力だと思うので�
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(ASDBA)
+**[[KitchenSinkVer1.8>>https://civitai.com/models/13003/kitchensinkver18]]
+SD2.1ベースにマージされたモデルや
+Config(yaml)ファイルが必要やから一緒にダウンロードしとくんやで
+公式曰くネガもvaeもいらんらしい
+まあSD2.1やなあって感じの絵柄や
+|&ref(https://i.imgur.com/Q9oQW6I.png,256,384)|&ref(https://i.imgur.com/pYevhZy.png,256,384)|&ref(https://i.imgur.com/SkgD4lP.png,256,384)|&ref(https://i.imgur.com/ZpWkw61.png,256,384)|&ref(https://i.imgur.com/TBzsKdA.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(LAZYMR)
 **[[LazyMix+ (Real Amateur Nudes)>>https://civitai.com/models/10961/lazymix-real-amateur-nudes]]
 NSFW味の強いマージモデルらしいで
@@ -624,6 +650,16 @@ poolsuite styleを付けることであたかもプールサイドに居るか�
 |center:school uniform|
 
 ----
+&aname(PORNMM)
+**[[porn model merge>>https://civitai.com/models/13458/porn-model-merge]]
+名称そのまんまのポルノモデルをマージしたものや
+いっそ潔いわ
+絵柄としてはまたコレ系かって感じで目新しさはないけどNSFWを追求する姿勢は嫌いやないで
+ロリ系出やすいけどNSFWでは出なくなる安心設計や
+|&ref(https://i.imgur.com/QLXu1Jl.png,256,384)|&ref(https://i.imgur.com/BPnAnps.png,256,384)|&ref(https://i.imgur.com/N4STbKH.png,256,384)|&ref(https://i.imgur.com/QvWunVA.png,256,384)|&ref(https://i.imgur.com/fJk5Jjv.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 **[[Portrait+>>https://huggingface.co/wavymulder/portraitplus]]
 portrait+ style〜で人物を呼び出すタイプのモデルやな
 それを無視して出力したのがこの欄や
@@ -668,6 +704,16 @@ NSFW味が強いのですぐ脱ぐで
 ポーズの引き出しは多そうやけど破綻もそれなりな感じやな
 アーティスティックな画に向いとるんやないかな
 |&ref(https://i.imgur.com/NUBmNFf.png,256,384)|&ref(https://i.imgur.com/epDHfbe.png,256,384)|&ref(https://i.imgur.com/xomLDiF.png,256,384)|&ref(https://i.imgur.com/9EaGk3H.png,256,384)|&ref(https://i.imgur.com/Drx6s14.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(RADP)
+**[[Realistic Asia doll (peeing) (Lora merge)>>https://civitai.com/models/13252/realistic-asia-doll-peeing-lora-merge]]
+人気LoRAをマージした放尿フェチ用モデルや
+ここではSFWしかお見せせんけどな
+けど服の下はﾋﾞｼｮﾋﾞｼｮなんやって考えたら興奮するやん？
+SFWでもすぐにしゃがんで出そうとしたり流石フェティッシュ極めとるだけあるで
+|&ref(https://i.imgur.com/WJd0eRC.png,256,384)|&ref(https://i.imgur.com/AGaSrZT.png,256,384)|&ref(https://i.imgur.com/nzPz3ey.png,256,384)|&ref(https://i.imgur.com/EtPMZ1o.png,256,384)|&ref(https://i.imgur.com/qYIx83y.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----

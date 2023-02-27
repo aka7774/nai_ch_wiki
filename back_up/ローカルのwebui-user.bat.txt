@@ -38,11 +38,10 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Argume
 
 ** --xformers (高速化/VRAM消費減)
 
-おすすめ。
-WindowsではPython 3.10が必要っぽい(3.9だとエラーが出る)
+おすすめ。20%以上高速化する。
+WindowsではPython 3.10が必要
 Colabではcondaで入れると入れやすい。
-出力画像がごくわずかに変化するといわれるが、有意な変化はないし根拠もない。
-
+出力画像が毎回ごくわずかに変化するが、品質が変化するわけではない。
 出力の比較をしたので詳細はこちらへ↓
 [[xformersの検証]]
 
@@ -180,6 +179,7 @@ https://pytorch.org/docs/stable/notes/cuda.html#memory-management
 まだ実力のほどはわからないが、
 そのうちfp16/fp32に起因するエラーが減ったり、
 マルチCPUに対応したりするのかも知れない。
+
 
 
 

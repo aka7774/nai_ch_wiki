@@ -191,6 +191,9 @@ WebUI公式extension。背景を自動で除去します。アニメ画像用に
 : katanuki | https://github.com/aka7774/sd_katanuki
 WebUI用extension。anime-segmentation を 1111 で使えるようにしたやつ。画像の背景を透過したり白背景にしたりマスク画像を出力する
 
+: Lama-Cleaner | https://github.com/Sanster/lama-cleaner
+AIで不純物とかを消してでっち上げるやつ。割と重い。windows用インストーラーあり。
+WebUI用extensionもある [[Extensions_URL>https://seesaawiki.jp/nai_ch/d/Extensions%5fURL#content_3_15]]
 *正則化画像
 - ChatGPTたん曰く「過学習を抑えるためのもの」
 - キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが詳しくはわからないので誰か書いてクレメンス
@@ -594,6 +597,7 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
 
 
 
