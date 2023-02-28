@@ -11,6 +11,10 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+- 2023/02/28
+[[3D Thick coated>#3DTC]]を追加
+[[Avalon TRUvision>#ATUV]]を追加
+
 - 2023/02/27
 [[Adobi's Real Flexible Mix (aah!)>#ARFM]]を追加
 [[KitchenSinkVer1.8>#ASDBA]]を追加
@@ -120,6 +124,16 @@ photo系プロンプトで写実に、CG系プロンプトでイラスト系に�
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(3DTC)
+**[[3D Thick coated>>https://civitai.com/models/13747/3d-thick-coated]]
+3DCG調のモデルやで
+反応もイラスト調の塩梅もええな
+指ガチャに成功せんやったが試行回数少なすぎるから気にせんといて
+NSFWもイケるし良いモデルやと思うわ
+|&ref(https://i.imgur.com/cS0r2G3.png,256,384)|&ref(https://i.imgur.com/LQAPSwV.png,256,384)|&ref(https://i.imgur.com/yS8e8pi.png,256,384)|&ref(https://i.imgur.com/B6zNEBa.png,256,384)|&ref(https://i.imgur.com/embLmSI.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(ARFM)
 **[[Adobi's Real Flexible Mix (aah!)>>https://civitai.com/models/7386/adobis-real-flexible-mix-aah]]
 リアリスティックを追求したマージモデルや
@@ -157,6 +171,17 @@ NSFWは省いてるとのことでエロはSD系のが出るだけやな
 ロリ系は顔だけで身体は垂れ気味お姉さんになるのがちょっと残念やが肌とかめっちゃ綺麗
 複数人だったりspread legs入れても破綻が少ないのは驚嘆や
 |&ref(https://i.imgur.com/EP8QyHk.png,256,384)|&ref(https://i.imgur.com/05nMHNF.png,256,384)|&ref(https://i.imgur.com/kJh37Ex.png,256,384)|&ref(https://i.imgur.com/EaeWig6.png,256,384)|&ref(https://i.imgur.com/sSEf3V6.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(ATUV)
+**[[Avalon TRUvision>>https://civitai.com/models/13020/avalon-truvision]]
+ポラロイドやアナログ写真調に特化したマージモデルらしいで
+プロンプトにpolaroid, analog, film grainとか入れるといいみたいやで
+アナログ調の画風がええ感じや
+写真枠やビネット（四隅が暗くなるやつ）入りやすいで
+マージモデルでここまで特化出来るんやなあ
+|&ref(https://i.imgur.com/gTxHW9D.png,256,384)|&ref(https://i.imgur.com/AiPsCXM.png,256,384)|&ref(https://i.imgur.com/yeGWa0j.png,256,384)|&ref(https://i.imgur.com/TeG8HNw.png,256,384)|&ref(https://i.imgur.com/l74OM8O.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -239,7 +264,7 @@ K-dollっちゅうんはLoRAにある奴かな。ワイよう知らんから各�
 
 ----
 &aname(CHILO)
-**[[Chilloutmix>>https://huggingface.co/TASUKU2023/Chilloutmix]]
+**%%Chilloutmix%% &size(12){&color(red){消滅}}
 basilベースと言うことで素直な挙動のモデルや
 日本人も出しやすく脱ぎやすいで
 言いたいことはbasilの項で言うとるからあとは顔の好みで選ぶといいで
@@ -691,8 +716,7 @@ NSFWモデルやけどそこまで主張してこないモデルやな
 挙動も素直やし綺麗な画を作りやすい良モデルや
 特にアップの画像なんかは造形の細かさに目を見張るで
 造形自体は整い過ぎたリアルでCG系やけどソフトな絵面が綺麗やな
-複数人はちょっと出にくかった印象や
-サンプラーのkarrasは使うなって事やのでDDIMで出力してるで
+複数人はちょっと出にくかった印象やった
 |&ref(https://i.imgur.com/Y1G0Lrs.png,256,384)|&ref(https://i.imgur.com/2HGoB1C.png,256,384)|&ref(https://i.imgur.com/NTXIXGK.png,256,384)|&ref(https://i.imgur.com/iN1dhGA.png,256,384)|&ref(https://i.imgur.com/CTGq73v.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
@@ -754,7 +778,7 @@ redshift style〜でキャラクターを呼び出すタイプのモデルやな
 
 ----
 &aname(SUNM)
-**[[Sunshinemix>>https://civitai.com/models/9291/sunshinemix]]
+**%%Sunshinemix%% &size(12){&color(red){消滅}}
 [[chillout>#CHILO]]作者による、より2.5次元に近付けたミックスモデルや
 挙動の素直さと日本人好みの造形はそのままに、よりアーティスティックな画が出せるで
 複数人は出難く感じたけどリアル系は元々そんなもんやな
