@@ -4,6 +4,17 @@
 
 #contents
 
+* 2023-02-28 chilloutmix公開停止
+
+Civitaiでダウンロードランキング1位を取っていたリアル系モデル。
+マージ元モデルのライセンスによって商用利用に制限があり、商用利用禁止を告知したところ、
+商用利用の要望が相次いだため、勝手に商用利用可にした類似モデルが登場したタイミングでモデルを削除。
+Civitai運営からも非難されるという異例の事態となったが、
+話し合いの末、Civitai運営の責任においてモデルを再掲する事になった様子。
+
+https://speakerdeck.com/nhamanasu/diffusionniyorutext2imagenoxi-pu-tosheng-cheng-hua-xiang-gadong-kichu-sumade?slide=116 より
+ ChilloutMix 日本・韓国・中国風なアジア人女性の写実的画像に特化したマージモデル。これに加え、 人形のように整った相貌の韓国人風写実生成に特化したLoRAモデルである Korean Doll Likeness、アズールレーンの特定キャラクタに特化したLoRAモデル HMS Cheshire を 組み合わせることで、アニメテイストな衣装を纏いつつ極めて写実的な女性の画像生成 を実現したユーザーも現れ、一時期「AIコスプレイヤー」として賛否を呼んだ。 作者は重要な免責事項として、実在する人物を再現することに用いたり、実在する人物 の名を冠した派生モデルを作成・公開しないよう呼びかけていたが、実際に生成の写実 性が上がったことで一部の過激な表現や商用目的で利用されてしまうケースが散見され、 Feb 28, 2023 に制作者判断で公開停止措置が講じられた。
+
 * ControlNetの機能いろいろ判明
 直に専用ページがつくられると思われるが（→[[作られた>https://seesaawiki.jp/nai_ch/d/ControlNet]]）とりあえず浦島で使えそうな機能を紹介
 [[ここ>https://note.com/ddpn08/n/n7fce838499e7]]とか見るともっと分かるかも。
@@ -576,6 +587,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

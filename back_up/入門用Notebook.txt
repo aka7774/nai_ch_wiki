@@ -79,6 +79,27 @@ segがエラーで動かんなあ。prettytableは入れたつもりなんだけ
 - マウントしないと全部消えるので後腐れが無い
 - マウントするとデータの保存が楽になる
 
+
+* 赤ちゃん用Notebook
+グラボもねえ!知識もねえ!金もそれほど持ってねえ!
+でもローカル使ってみたいンゴ・・・！という人でも使える(かもしれない)Notebookが公開されている
+上記の入門用Notebookですらうまくいかなかった人用
+[+]
+camenduruという人が公開しているNotebookを使用する
+Colabを使う関係上Googleアカウントは必須。それ以外は特に不要
++Googleアカウントを取得
++https://github.com/camenduru/stable-diffusion-webui-colabにアクセス
+++ページを下にスクロールしColabの項を見つける
+++多数のNotebookが用意されているので使いたいものをOpen in Colabで開く。AOMに7th、実写スキー御用達のchilloutなどなど
+++好きなものを選べばいいのだが、とりあえず例としてabyss_orange_mix_3_webui_colabを選択する(分かりやすく綺麗なイラストが出るモデルなので)
++Open in ColabをクリックするとColabの画面に移動する。RuntimeをGPUに変更し、コード上の再生ボタンを押すとインストールが始まるので放置(当方ではAOM3のインストールに10分くらいかかった)
++インストールが完了すると最終行付近に3つのURLが表示される。Running on ''public'' URLを開くとついにローカル起動!
++左上のチェックポイントから使いたいモデルを選ぶ(とりあえずAOM3A1がおすすめ)。あとはsettingsタブのSD VAEでorangemixを選びAplly Settings
++あとはプロンプト入力で赤ちゃんから妖精さんに進化するだけ
+++設定や推奨クオリティプロンプトや記述方式なんかは他のローカルと共通だからwiki読み込んで調べてください
+++ローカルUIが開いたからってColabは閉じちゃだめよ。画像生成の進捗状況はColab上で出る。Generate押すとColabにパーセンテージが表示されるよ
+[END]
+
 * 入門用Notebook(旧バージョン)
 
 [+]
@@ -229,4 +250,5 @@ if use_drive:
 
 ||=
 [END]
+
 

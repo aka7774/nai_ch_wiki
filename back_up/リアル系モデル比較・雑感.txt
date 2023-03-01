@@ -11,6 +11,12 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+- 2023/03/01
+[[BlueberryMix>#BLBM]]を追加
+[[CherryMix>#CERM]]を追加
+[[Mars Mix>#MARSM]]を追加
+[[MIDSD Realistic II>#MIDRII]]を追加
+
 - 2023/02/28
 [[3D Thick coated>#3DTC]]を追加
 [[Avalon TRUvision>#ATUV]]を追加
@@ -216,6 +222,16 @@ chubbyやfatでぽっちゃり系、そのままで普通体型も作れるで
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(BLBM)
+**[[BlueberryMix>>https://civitai.com/models/14323/blueberrymix]]
+2.5次元系マージモデルや
+姉妹品に[[CherryMix>#CERM]]があるで
+CherryMixに比べると少しリアルでアジア系が出にくいらしいで
+もうこれ系マージはお腹いっぱいや
+|&ref(https://i.imgur.com/AWmLr6P.png,256,384)|&ref(https://i.imgur.com/9HSY5u7.png,256,384)|&ref(https://i.imgur.com/lR6Sqrd.png,256,384)|&ref(https://i.imgur.com/Y7CSD4E.png,256,384)|&ref(https://i.imgur.com/krvFnhH.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(BRITS)
 **[[Brits out for the lads>>https://civitai.com/models/11920/brits-out-for-the-lads]]
 80〜90s英国のアマチュア雑誌風の画を目標とした学習モデルや
@@ -250,6 +266,16 @@ chubbyやfatでぽっちゃり系、そのままで普通体型も作れるで
 手の改善を目的としたイラスト系マージにも大体入っとる有名モデルや
 なおマージ用モデルであり単体使用は考えられてないので画像がイマイチなのはあまり気にせんといてな（初期のモデルはプロンプト難しいんや）
 |&ref(https://i.imgur.com/HD5P1zX.png,256,384)|&ref(https://i.imgur.com/2Cl3mLR.png,256,384)|&ref(https://i.imgur.com/OPPPolz.png,256,384)|&ref(https://i.imgur.com/yu1o6Bx.png,256,384)|&ref(https://i.imgur.com/zMV1Rh0.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(CERM)
+**[[CherryMix>>https://civitai.com/models/14318/cherrymix]]
+2.5次元系マージモデルや
+姉妹品の[[BlueberryMix>#BLBM]]に比べてアジア系が出やすいで
+ロリ出やすい感じで画は良いで
+元モデルが良いんやろけど
+|&ref(https://i.imgur.com/bficSaH.png,256,384)|&ref(https://i.imgur.com/7h0rEh3.png,256,384)|&ref(https://i.imgur.com/ognWZUR.png,256,384)|&ref(https://i.imgur.com/yeV9S9h.png,256,384)|&ref(https://i.imgur.com/kRDwjZO.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -611,6 +637,23 @@ NSFWは学習しとらんらしいけど普通に出るからネガやらで調�
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(MARSM)
+**[[Mars Mix>>https://civitai.com/models/14324/mars-mix]]
+[[Ares Mix>#ARES]]にアニメモデルを取り入れつつ調整して更にスゴくしたらしいマージモデルや
+破綻多く感じたし1枚目みたいなドールになりやすいわ
+正直Aresで良くね？って思うけどこういうのが好みの人にはええんちゃう
+|&ref(https://i.imgur.com/ttqTduV.png,256,384)|&ref(https://i.imgur.com/0c7OtAo.png,256,384)|&ref(https://i.imgur.com/7AwVjZp.png,256,384)|&ref(https://i.imgur.com/CAOXGjy.png,256,384)|&ref(https://i.imgur.com/d1sRK0P.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(MIDRII)
+**[[MIDSD Realistic II>>https://civitai.com/models/14321/midsd-realistic-ii]]
+ようわからんけどスーパーヒーロー系のお姉さんに特化したモデルなんやないかな
+洋モノお姉さんはええ感じやけどプロンプトによっては3枚目みたいにイラストしか出らんことあるな
+脱がすとﾆｭｰﾘﾝがでっかくなりがち感
+|&ref(https://i.imgur.com/nu1M4Cy.png,256,384)|&ref(https://i.imgur.com/ip95Sba.png,256,384)|&ref(https://i.imgur.com/guQz8us.png,256,384)|&ref(https://i.imgur.com/l5N55kU.png,256,384)|&ref(https://i.imgur.com/xEL6goV.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
 **[[Modelshoot>>https://huggingface.co/wavymulder/modelshoot]]
 公式によるとmodelshoot style〜で有名人？を出すタイプのモデルやな
 それ以外は全然や
