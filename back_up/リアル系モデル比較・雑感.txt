@@ -11,6 +11,14 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+-2023/03/02
+[[ABS_Dreams>#ABSD]]を追加
+[[Good Asian Girl Face>#GAGF]]を追加
+[[SPYBG's Toolkit for Digital Artists>#SPYT]]を追加
+
+[[ChilloutMix>#CHILO]]を変更
+[[SunshineMix>#SUNM]]を変更
+
 - 2023/03/01
 [[BlueberryMix>#BLBM]]を追加
 [[CherryMix>#CERM]]を追加
@@ -137,6 +145,16 @@ photo系プロンプトで写実に、CG系プロンプトでイラスト系に�
 指ガチャに成功せんやったが試行回数少なすぎるから気にせんといて
 NSFWもイケるし良いモデルやと思うわ
 |&ref(https://i.imgur.com/cS0r2G3.png,256,384)|&ref(https://i.imgur.com/LQAPSwV.png,256,384)|&ref(https://i.imgur.com/yS8e8pi.png,256,384)|&ref(https://i.imgur.com/B6zNEBa.png,256,384)|&ref(https://i.imgur.com/embLmSI.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(ABSD)
+**[[ABS_Dreams>>https://civitai.com/models/14452/absdreams]]
+作者自身の写真を学習させたモデルやな
+なので何やってもこの人しか出てこんで
+まあニキらの中にも自分のﾃｨﾑﾃｨﾑを学習させたモデルをこっそり放出しとるの少なくないやろ
+いやいや隠さんでええ。ニキのﾃｨﾑﾎﾟが世界に羽ばたくんや
+|&ref(https://i.imgur.com/br0PAp7.png,256,384)|&ref(https://i.imgur.com/2ZqFqAe.png,256,384)|&ref(https://i.imgur.com/gFx47Q3.png,256,384)|&ref(https://i.imgur.com/nfzaQKf.png,256,384)|&ref(https://i.imgur.com/u6li92Q.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -290,7 +308,8 @@ K-dollっちゅうんはLoRAにある奴かな。ワイよう知らんから各�
 
 ----
 &aname(CHILO)
-**%%Chilloutmix%% &size(12){&color(red){消滅}}
+**[[ChilloutMix>>https://civitai.com/models/6424/chilloutmix]]
+作者が削除したものをcivitai本営が復活させたものやな
 basilベースと言うことで素直な挙動のモデルや
 日本人も出しやすく脱ぎやすいで
 言いたいことはbasilの項で言うとるからあとは顔の好みで選ぶといいで
@@ -470,6 +489,15 @@ yamlが必要らしいから一緒に「Config」も落としてファイル名�
 ただ複数人がめっちゃ出難かったのとプロンプトが英文タイプやからちょっと面倒やな
 インペイント用モデルもあるから間違えんといてな（ワイは最初間違っとったわ）
 |&ref(https://i.imgur.com/lQhfnbN.png,256,384)|&ref(https://i.imgur.com/Sgh7deT.png,256,384)|&ref(https://i.imgur.com/XQQJAIh.png,256,384)|&ref(https://i.imgur.com/6jWbvk5.png,256,384)|&ref(https://i.imgur.com/R2hm5fQ.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(GAGF)
+**[[Good Asian Girl Face>>https://civitai.com/models/5726/good-asian-girl-face]]
+アジア顔に特化した学習＆マージモデルやな
+確かにアジアンな感じや
+日本やないアジアやけど好きな人にはええんちゃう
+|&ref(https://i.imgur.com/EY41VE5.png,256,384)|&ref(https://i.imgur.com/Je8tSRl.png,256,384)|&ref(https://i.imgur.com/0TAFvkT.png,256,384)|&ref(https://i.imgur.com/sZdlVru.png,256,384)|&ref(https://i.imgur.com/RNMfcoL.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -802,6 +830,16 @@ redshift style〜でキャラクターを呼び出すタイプのモデルやな
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(SPYT)
+**[[SPYBG's Toolkit for Digital Artists>>https://civitai.com/models/4118/spybgs-toolkit-for-digital-artists]]
+コンセプトアートみたいな絵面を作るモデルやな
+何もせんでも前後左右の立ち絵が出てきやすいわ
+もっとちゃんとした画を出すにはLoRAとか組み合わせてややこしそうなんで詳しくは公式を見てな
+コンセプトアートを学習しとるせいかサインとかロゴが入りやすいで
+|&ref(https://i.imgur.com/0uUCP7M.png,256,384)|&ref(https://i.imgur.com/D6lXBkS.png,256,384)|&ref(https://i.imgur.com/j8cu8cJ.png,256,384)|&ref(https://i.imgur.com/CGJISEM.png,256,384)|&ref(https://i.imgur.com/rsJK3Gp.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 **[[Stable Diffusion v2-1>>https://huggingface.co/stabilityai/stable-diffusion-2-1]]
 今あるモデルの祖とも言えるStable Diffusionの最新版や
 前バージョンから徹底的にNSFWを排除した全年齢に優しいモデルやな
@@ -821,7 +859,8 @@ redshift style〜でキャラクターを呼び出すタイプのモデルやな
 
 ----
 &aname(SUNM)
-**%%Sunshinemix%% &size(12){&color(red){消滅}}
+**[[SunshineMix＆SunlightMix>>https://civitai.com/models/9291/sunshinemixsunlightmix]]
+作者が削除したものをcivitai本営が復活させたものやな
 [[chillout>#CHILO]]作者による、より2.5次元に近付けたミックスモデルや
 挙動の素直さと日本人好みの造形はそのままに、よりアーティスティックな画が出せるで
 複数人は出難く感じたけどリアル系は元々そんなもんやな

@@ -243,7 +243,7 @@ https://i.imgur.com/nPccccl.png
 
 * ツール
 - Openpose rig：Character bones that look like Openpose for blender - https://toyxyz.gumroad.com/l/ciojz?layout=profile
-- PoseMaker - a Hugging Face Space by jonigata - (https://huggingface.co/spaces/jonigata/PoseMaker
+- PoseMaker - a Hugging Face Space by jonigata - https://huggingface.co/spaces/jonigata/PoseMaker2
 huggingface上で2Dで某人形を操作
 - webuiで棒人間いじれる拡張出とるやで
 https://github.com/fkunn1326/openpose-editor
@@ -323,4 +323,5 @@ inpaintのcontrolnetでもできるで
 &ref(https://i.imgur.com/MgC72PR.png,400)
 **動画
 外人ニキやけど早送りでもだいたい分かる [[https://www.youtube.com/watch?v=ci7NfTsifd0>>>https://www.youtube.com/watch?v=ci7NfTsifd0]]
+
 

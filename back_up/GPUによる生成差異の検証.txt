@@ -54,6 +54,7 @@ Steps: 50, Sampler: Euler a, CFG scale: 11.5, Seed: 905391353, Size: 1024x512, M
 
 {| class="nanj_prompt_table edit sort"
 |~GPU|~生成結果|~オプション|~備考|
+|rtx||||
 |||||
 |GTX 1080|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/srBZb6Zbzn.05),%20(1girl_1.3),%20(solo_1.1),%20holding%20pe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/srBZb6Zbzn.05),%20(1girl_1.3),%20(solo_1.1),%20holding%20pe.png]]|無し|Commit hash: 44c46f0ed395967cd3830dd481a2db759fda5b3b|
 |RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pYDr3wPMrY-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pYDr3wPMrY.png]]||WSL2|
