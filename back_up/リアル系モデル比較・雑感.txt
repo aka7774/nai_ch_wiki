@@ -11,6 +11,13 @@
 - 追加や編集はご自由に行ってください
 
 [+]追加履歴
+-2023/03/03
+[[Biloutte Dream>#BITD]]を追加
+[[CyberRealistic>#CYBR]]を追加
+[[Fidelity>#FIDLT]]を追加
+[[RL115>#RL115]]を追加
+[[Super Girl DC comics (Kara-el)>#SGDC]]を追加
+
 -2023/03/02
 [[ABS_Dreams>#ABSD]]を追加
 [[Good Asian Girl Face>#GAGF]]を追加
@@ -240,6 +247,17 @@ chubbyやfatでぽっちゃり系、そのままで普通体型も作れるで
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(BITD)
+**[[Biloutte Dream>>https://civitai.com/models/14946/biloutte-dream]]
+なんかサイケデリックになるモデルや
+トリガーにa psychedelic dream vision of〜, (psychedelic patterns)で使うみたいや
+トリガー入れなくても肌がサイケになりやすいんで集合体恐怖症の人は要注意かもしれん
+プロンプトによってはイラスト調になるのとNSFWがそこそこ強いな
+操作性もあんまり良くないけど面白いモデルやな
+|&ref(https://i.imgur.com/zdfdB0E.png,256,384)|&ref(https://i.imgur.com/JtVXx08.png,256,384)|&ref(https://i.imgur.com/BecnSvY.png,256,384)|&ref(https://i.imgur.com/yFzQ7hG.png,256,384)|&ref(https://i.imgur.com/mN71rKm.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(BLBM)
 **[[BlueberryMix>>https://civitai.com/models/14323/blueberrymix]]
 2.5次元系マージモデルや
@@ -334,6 +352,16 @@ VAE無くてもカラフルだよモデルや
 作者曰くｴﾁｰは苦手らしいがそんなことないしなんなら脱ぎやすいまであるで
 若干ロリ顔が出やすいけど身体が大人なのでその辺が苦手な所以なのかもしれん
 |&ref(https://i.imgur.com/EbdDZ3h.png,256,384)|&ref(https://i.imgur.com/xFGymfP.png,256,384)|&ref(https://i.imgur.com/h6AR7Yb.png,256,384)|&ref(https://i.imgur.com/tXKi2oj.png,256,384)|&ref(https://i.imgur.com/oF30Oo1.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(CYBR)
+**[[CyberRealistic>>https://civitai.com/models/15003/cyberrealistic]]
+何をミックスしたか憶えてない雰囲気マージモデルや
+まあ良くあるマージ品と違う顔やったから紹介や
+操作性はイマイチっぽいからポートレイト向きやないかな
+短プロンプトやとイラストになることあるから公式プロンプトを参考にしてな
+|&ref(https://i.imgur.com/zMHJb40.png,256,384)|&ref(https://i.imgur.com/Sw9p2aq.png,256,384)|&ref(https://i.imgur.com/OEcBdlZ.png,256,384)|&ref(https://i.imgur.com/9xU8Mjz.png,256,384)|&ref(https://i.imgur.com/5ufuNzA.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -443,6 +471,16 @@ SD1.5ベースに768x768で学習されたリアル系モデルや
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(ZIPA)
+**[[El Zipang_test1.3>>https://huggingface.co/deadman44/SD_Photoreal_Merged_Models]]
+Cafe InstagramがインスタならこちらはTwitter少女が出てくるモデルや
+ジパングって名前やけどjapaneseで和洋切り替え出来るで
+まさにツイッターに居そうな娘でロリ系が出やすい感じやな
+ポートレート特化らしく現実的な肖像画以外は苦手な印象や
+|&ref(https://i.imgur.com/JemIvCE.png,256,384)|&ref(https://i.imgur.com/sG1y2dt.png,256,384)|&ref(https://i.imgur.com/fdBeYUW.png,256,384)|&ref(https://i.imgur.com/tO9lJGb.png,256,384)|&ref(https://i.imgur.com/xcOmH79.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(COEXP)
 **[[Experience>>https://huggingface.co/coreml/coreml-Experience]]
 コンセプトアートや人体が得意な3Dレンダーモデルやな
@@ -453,13 +491,12 @@ SD1.5ベースに768x768で学習されたリアル系モデルや
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
-&aname(ZIPA)
-**[[El Zipang_test1.3>>https://huggingface.co/deadman44/SD_Photoreal_Merged_Models]]
-Cafe InstagramがインスタならこちらはTwitter少女が出てくるモデルや
-ジパングって名前やけどjapaneseで和洋切り替え出来るで
-まさにツイッターに居そうな娘でロリ系が出やすい感じやな
-ポートレート特化らしく現実的な肖像画以外は苦手な印象や
-|&ref(https://i.imgur.com/JemIvCE.png,256,384)|&ref(https://i.imgur.com/sG1y2dt.png,256,384)|&ref(https://i.imgur.com/fdBeYUW.png,256,384)|&ref(https://i.imgur.com/tO9lJGb.png,256,384)|&ref(https://i.imgur.com/xcOmH79.png,256,384)|
+&aname(FIDLT)
+**[[Fidelity>>https://civitai.com/models/14979/fidelity]]
+美的で用途が広く正確でアニメになり過ぎない2.5次元を目指したモデルや
+試行回数の少ない中での印象として破綻も少ないし反応も良いしで悪くない感じや
+ちょっとイラスト系が強い気がしたんでもっとフォト系のプロンプト盛った方が良いかもしれん
+|&ref(https://i.imgur.com/1iTJ7Q4.png,256,384)|&ref(https://i.imgur.com/EHpDk8n.png,256,384)|&ref(https://i.imgur.com/G253MWX.png,256,384)|&ref(https://i.imgur.com/1OmNILC.png,256,384)|&ref(https://i.imgur.com/WeKjciv.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -830,6 +867,15 @@ redshift style〜でキャラクターを呼び出すタイプのモデルやな
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
+&aname(RL115)
+**[[RL115>>https://civitai.com/models/8440/rl115]]
+NSFW特化のマージモデルやな
+同じプロンプトでイラスト調になったりリアル調になったりするからプロンプトは公式を参考にしてな
+あとはさして言うこともない量産マージ品って印象や
+|&ref(https://i.imgur.com/02jme97.png,256,384)|&ref(https://i.imgur.com/kGk4nMf.png,256,384)|&ref(https://i.imgur.com/8bQlirP.png,256,384)|&ref(https://i.imgur.com/PH8MtgV.png,256,384)|&ref(https://i.imgur.com/hLcqyEC.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
 &aname(SPYT)
 **[[SPYBG's Toolkit for Digital Artists>>https://civitai.com/models/4118/spybgs-toolkit-for-digital-artists]]
 コンセプトアートみたいな絵面を作るモデルやな
@@ -867,6 +913,16 @@ redshift style〜でキャラクターを呼び出すタイプのモデルやな
 イラストよりの実写が好みなﾆｷたちにおすすめや
 リアル系モデルでは難しかった瞳の色を赤とかのアニメ色に出来るらしいで
 |&ref(https://i.imgur.com/k3HeNvR.png,256,384)|&ref(https://i.imgur.com/bOB13VC.png,256,384)|&ref(https://i.imgur.com/89UvTMU.png,256,384)|&ref(https://i.imgur.com/nrHjqHU.png,256,384)|&ref(https://i.imgur.com/ScLM3mR.png,256,384)|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(SGDC)
+**[[Super Girl DC comics (Kara-el)>>https://civitai.com/models/15009/super-girl-dc-comics-kara-el]]
+スーパーガールになれるモデルや。クリプトン星から来たと主張しとる
+…すまん洋コミに詳しくないんでようわからん
+おそらく[[DucHaitenSuperCute>#DUCH]]にスーパーマンLoRAをマージしただけやないかな
+そんなんあるかは知らんが多分あるやろ
+|&ref(https://i.imgur.com/md5l7EY.png,256,384)|&ref(https://i.imgur.com/1nWYWWl.png,256,384)|&ref(https://i.imgur.com/yvarlht.png,256,384)|&ref(https://i.imgur.com/qsPhY95.png,256,384)|&ref(https://i.imgur.com/hGkVrbY.png,256,384)|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----

@@ -81,7 +81,7 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/lKDWlTHI_G.png)
 &video(https://image01.seesaawiki.jp/n/h/nai_ch/9crBKdm8fu.webm)
 [END]
-
+アップデートはupdate.bat (大きなバージョンアップのときは入れ直し)
 **2. あかちゃんLoraインストーラー
 あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
 start.batと同じフォルダに入れて実行してください
@@ -99,19 +99,26 @@ GUI といっても作者の sd-scripts にパラメータを渡すだけや。�
 -GradioベースのGUI。
 -「Tools」タブにフォルダ配置補助機能がある。
 -スクリプト版のパラメータの一部は設定出来ないかも？
--LoRA_Easy_Training_Scripts にインストールスクリプトがある。
+-アップデートは upgrade.ps1 をpowershellで実行
 
 : ddPn08版 GUI - AUTOMATIC1111 SD WebUI エクステンション対応版 | https://github.com/ddPn08/kohya-sd-scripts-webui
 WebUIのエクステンションに対応。スタンドアロンで動かすと上記のbmaltais版と似たような感じ。
 - エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
 - 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
 - WebUI 割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
+- アップデートは update.bat
 [END]
 
 **4. その他補助スクリプト
 としあきbatや4chan製のスクリプトがある
 kohya-ss/sd-scripts を自分でインストールできるなら
-
+アップデートは
+=|(box=textarea)|
+cd sd-scripts
+git pull
+.\venv\Scripts\activate
+pip install --use-pep517 --upgrade -r requirements.txt
+||=
 *学習用画像を置くフォルダの配置
 -作者の解説が詳しい
 -- [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
@@ -597,6 +604,7 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
 
 
 

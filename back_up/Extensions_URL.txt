@@ -261,13 +261,6 @@ X/Y plotっぽい画像を生成する
 - 階層マージ沼で得られた画像を後からX/Y plotにするための便利ツール
 - txt2imgに設定された画像は生成しない
 
-** Checkpoint Manager ★
-
-- https://github.com/rvhfxb/checkpoint_manager
-- ckptにコメントつけたり
-- マージモデルのX/Y Plot比較にも便利
-- プルダウンリストはまだいじれないらしい
-
 ** Dataset Resizer ★
 
 - https://github.com/hunyaramoke/Dataset-Resizer
@@ -287,6 +280,10 @@ X/Y plotっぽい画像を生成する
 - https://github.com/hunyaramoke/Generate-TransparentIMG
 - 透明正則画像の作成支援
 
+** ChatGPT
+
+- https://github.com/rvhfxb/sd_chatgpt
+- ChatGPTにプロンプトの続きを考えて貰う
 * 更新停止
 
 新規インストールは非推奨です。
@@ -365,4 +362,5 @@ HN/Loraは仕様が変わったので削除。
 - システム情報
 - 1111とかvenvとかの情報を表示する
 - 「なんか動かないんだけど！」って時は、エラーの内容とこの表示内容をコピペして相談しましょう
+
 

@@ -102,9 +102,17 @@ ui-config.json で変えられる
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/e5VuAv8MAb.png)
 
-VRAM 8GBだとFHD(1920x1088)はギリギリ。
-VRAM不足を補うためには、生成時間が延びるけど--medvramを指定する手があるかも。
+VRAM 8GBだとFHD(1920x1088)はギリギリ。UpscalerによってはCUDA OOMでアウト。
+VRAM不足を補うためには、生成時間が延びるけど--medvramを指定する手がある。
 3060か4070Ti買っちゃう手もあるかも。
+
+*** Upscalerについて
+Latent系はとても精細な絵になるが、時々全く違う構図になったり崩れたりする。とくにLoRAを使ってると発生しやすい。
+例えばこれが
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jCIwDrvPXf-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jCIwDrvPXf.png]]
+
+こうなる
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UTVr1uI6dp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/UTVr1uI6dp.png]]
 
 *** highres.fixのUpscalerの比較
 [+]
@@ -264,6 +272,10 @@ CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打�
 
 * TIPS
 
+** グラボをリセットする
+ctrl+windows+shift+b のショートカットでグラフィックドライバをリセットできる
+WEBUIを起動する前におまじないとして行っているニキもいるようである
+
 ** UIをリロードするとプロンプトが消えて辛い
 →画面更新したりUIリロードしたりしても、「&#8601;」を押すと直前のプロンプト設定周りが復元できます。
 
@@ -292,4 +304,5 @@ stable-diffusion-webuiフォルダにmp3の音楽ファイルを　notification.
 ・CPU内蔵グラフィックがあるなら、マザーボードの映像出力端子にケーブルをつなぐ。
 ・ブラウザのタブを大量に開くな!!WebUIに関係ないサイトは全部閉じろ!!
 ・VRAMの多いGPUに買い替える。
+
 

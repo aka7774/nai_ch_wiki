@@ -82,6 +82,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|GTX 1050Ti|4GB|Pentium G3258|5分58秒|358.20|--xformers|archlinux, GUIなし, sshとブラウザでリモート~~CPUはOC:3.6GHz, main memory:16GB|
 |RTX 3050 LAPTOP|4GB|Core i5-11400H||74.69|--xformers|CPU低電圧可、メインメモリは24GB（8+16）|
 |RTX 4070 ti|12GB|Core i5-13700K||14.51|--xformers --|なし|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||26.93|--xformers --opt-channelslast|WSL2, Torch2.0, モデルコンパイル有効 ~~ WSL2にしてもコンパイル無しでは早くならない上コンパイルが遅いので無意味|
