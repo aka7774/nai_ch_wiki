@@ -14,11 +14,10 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 **sd-scripts (kohya)
 一番はじめは作者が詳しく書いてくれている公式READMEを見よう！話はそれからだ！
 
-
-: ★公式導入ガイド |  https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md
-: ★公式LoRAガイド | https://github.com/kohya-ss/sd-scripts/blob/main/train_network_README-ja.md
-: 公式タグ付けガイド | https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md
-: 公式DreamBoothガイド | https://github.com/kohya-ss/sd-scripts/blob/main/train_db_README-ja.md
+|''&color(#ff0000){★公式導入ガイド}''|https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md|
+|''&color(#ff0000){★公式LoRAガイド}''|https://github.com/kohya-ss/sd-scripts/blob/main/train_network_README-ja.md|
+|''公式タグ付けガイド''|https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md|
+|''公式DreamBoothガイド''|https://github.com/kohya-ss/sd-scripts/blob/main/train_db_README-ja.md|
 
 *&aname(loraguide){参考資料・スレ住民による学習ガイド}
 
@@ -70,6 +69,7 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 ||=
 
 *インストール、初回セットアップ編
+最初はまっさらなフォルダにインストールするんやで
 **1. LoRA_Easy_Training_Scripts Installers
 : https://github.com/derrian-distro/LoRA_Easy_Training_Scripts/ | 下記の学習の手順で使うEasyTrainScriptsの人が作った簡易インストールスクリプト
 画面右の Releases の下の Installers をクリック > 下にスクロールして install_sd_scripts_v5.bat をダウンロードする
@@ -93,7 +93,8 @@ start.batと同じフォルダに入れて実行してください
 -- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts_easy_training.bat
 
 **3. GUI
-GUI といっても作者の sd-scripts にパラメータを渡すだけや。性能は変わらん。一部パラメータ非対応のこともある。
+GUI といっても作者の sd-scripts にパラメータを渡すだけや。性能は変わらん。セットアップがちょっとだけ楽。
+GUIのほうが更新が数日遅れるのが常やから我慢してや。
 [+]
 : bmaltais版 GUI | [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
 -GradioベースのGUI。
@@ -111,6 +112,7 @@ WebUIのエクステンションに対応。スタンドアロンで動かすと
 
 **4. その他補助スクリプト
 としあきbatや4chan製のスクリプトがある
+C#のgui https://github.com/RedRayz/Kohya_lora_param_gui
 kohya-ss/sd-scripts を自分でインストールできるなら
 アップデートは
 =|(box=textarea)|
@@ -119,6 +121,13 @@ git pull
 .\venv\Scripts\activate
 pip install --use-pep517 --upgrade -r requirements.txt
 ||=
+**5. クラウド
+[[あかちゃんLoraノートブック>https://seesaawiki.jp/nai_ch/d/kohya_train_network_simple]]
+海外ニキのjupyter notebook
+リンクのみ紹介。その都度最新版を取ってくるので動かなくても泣かない。
+https://github.com/Linaqruf/kohya-trainer
+**6. 作者のkohya-ss/sd-scripts
+最新機能を使いたいなら
 *学習用画像を置くフォルダの配置
 -作者の解説が詳しい
 -- [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
@@ -344,11 +353,10 @@ Stable Diffusion V2のモデルで学習する? 「いいえ」
 last.safetensors というファイルができる
 追加学習するときはこのファイルを指定する
 [END]
-動画(2023-01-30) すぐにアプデで役に立たなくなるが一応
-字幕がめんどいのでそのうちテキストで書く・・・とおもう
+動画(2023-03-04) すぐにアプデで役に立たなくなるが一応 2時間でゴミになりました。
 わからんパラメータは キャンセルでデフォルト値が入る
 [+]
-&video(https://image02.seesaawiki.jp/n/h/nai_ch/Kr6H7y5ZXq.webm)&video(https://image01.seesaawiki.jp/n/h/nai_ch/ypwjUxQC6D.webm)
+&video(https://image02.seesaawiki.jp/n/h/nai_ch/OXhMCWcV4H.webm)
 [END]
 研究心旺盛ニキはコマンドラインの訳を読むとええで [[lora_train_command_line.py>lora_train_command_line.py]]
 //コマンドライン版の説明が詳しいのでコメントアウトしました
@@ -572,7 +580,13 @@ warmupはどっかをいじって立ち上げ角度変えんと邪魔にしか�
 ちなモデルはリアル系は合わなくてHXDCにしたらかわいくなってしまった、クソアニメなのに
 &ref(https://i.imgur.com/9VaR1jC.jpg,300) &ref(https://i.imgur.com/sii4OxP.jpg,300)
 
+** LoConについて
+https://github.com/KohakuBlueleaf/LoCon
 
+LoRAの新しい学習手法。通常のLoRAより性能がいいかもしれない。学習速度(it/s)は遅い。
+sd-scriptsのvenvでpip install loconでインストールすることで使用可能。
+学習時に使用するにはnetwork_moduleにlocon.locon_kohyaを指定する。
+生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]とkohya-ss氏作成の[[sd-webui-addtional-networks>>https://github.com/kohya-ss/sd-webui-additional-networks]]のインストールが必要。
 
 
 *Loraの使用方法&aname(apply_lora)
@@ -604,6 +618,11 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
+
+
+
+
 
 
 

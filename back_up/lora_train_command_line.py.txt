@@ -1,7 +1,7 @@
 sd-scriptsに追加して使うEasy Training Scriptsの ArgsList.py の雑な日本語コメント入りバージョン
 注）2024/02/24版から、設定は lora_train_command_line.py から ArgsList.py に変更されています。
 
-以下、設定に必要な箇所(16行目から149行目)のみ記載（2023.02.24現在Ver）
+以下、設定に必要な箇所(13行目から172行目)のみ記載（2023.03.03現在Ver）
 設定箇所は
 -self.base_model: str =
 から
@@ -16,9 +16,13 @@ class ArgStore:
         self.img_folder: str = r""    # 学習させる素材画像フォルダの場所を指定します。こちらを参照: https://rentry.org/2chAI_LoRA_Dreambooth_guide_english#for-kohyas-script
         self.output_folder: str = r"" # 出力先のフォルダをここで設定します。学習途中のやつも最終結果もここに出す
         self.save_json_folder: Union[str, None] = None   # 設定の json フォルダーをここで設定した場所に保存します。
-        self.load_json_path: Union[str, None] = None     # json ファイルをロードすると、構成が一致するように部分的に変更されます。
-        self.multi_run_folder: Union[str, None] = None   # スクリプトによって生成された json を含むフォルダーに設定すると、それらのスクリプトを使用してトレーニングが開始されます
-        self.reg_img_folder: Union[str, None] = None     # 正則化画像のフォルダの場所を指定します。
+        self.save_json_name: Union[str, None] = None
+        self.load_json_path: Union[str, None] = None   # json ファイルをロードすると、構成が一致するように部分的に変更されます。
+        self.multi_run_folder: Union[str, None] = None # スクリプトによって生成された json を含むフォルダーに設定すると、それらのスクリプトを使用してトレーニングが開始されます
+        self.reg_img_folder: Union[str, None] = None   # 正則化画像のフォルダの場所を指定します。
+        self.sample_prompts: Union[str, None] = None # すべてのサンプルプロンプトを含むTXTファイルへのパス、
+                                                     # 1 行に 1 つ。75トークンにのみ行き、残りをカットします。プロンプトを行ごとにtxtファイルに配置するだけです
+                                                     # そしてそれはそれらのプロンプトを使用して生成します
         self.change_output_name: Union[str, None] = None # 作成された出力ファイル名を指定します。
         self.json_load_skip_list: Union[list[str], None] = None  # オプションです。ユーザーがJSONを読み込むときにスキップするものを定義できます
                                                                  # 重要：デフォルトではすべてを読み込みますが
@@ -70,7 +74,6 @@ class ArgStore:
         self.batch_size: int = 1  # T一度に処理される画像数であり、VRAMや解像度と直接比例します。
                                   # VRAMが12GBで解像度が512ピクセルの場合
                                   # 最大6バッチサイズまで可能です。
-
         self.clip_skip: int = 2  # アニメベースのモデルでトレーニングしている場合は、
                                  # ほとんどのモデルがそのように設計されているので、これを2にしてください
         self.test_seed: int = 23  # これは「再現可能なシード」ですが、基本的にはシードをこれに設定すると、
@@ -79,6 +82,13 @@ class ArgStore:
         self.mixed_precision: str = "fp16"  # bf16を使える能力があれば、それを使ってください。それがより良いです
         self.save_precision: str = "fp16"   # bf16で保存することもできますが、普遍的にサポートされていないので、
                                             # fp16で保存し続けることをお勧めします
+
+        # アーキテクチャ引数
+        self.locon: bool = False  # 新しい locon アーキテクチャを使用する場合はオンにします
+        self.locon_dim: Union[int, None] = None  # locon のdimサイズ.
+                                                 # デフォルトを提案するのに十分なテストがありません
+        self.locon_alpha: Union[int, None] = None  # locon のalphaサイズ。そこにあるようにデフォルトを提案することはできません
+                                                   # 十分なテストが行われていません
 
         # ステップ引数
         self.num_epochs: int = 1  # エポック数ですが、max_stepsを設定するとこの値は無視されます。
@@ -89,6 +99,16 @@ class ArgStore:
         self.save_last_n_epochs: Union[int, None] = None  #  最後のnエポックだけ保存する。上記の2つで上書きされます。
         self.max_steps: Union[int, None] = None  # オプションです。特定のステップ数を指定したい場合は、直接設定することができます。
                                                  # Noneなら無視します
+
+        # サンプル引数
+        # 選択するサンプラーのリスト:
+        # 'ddim', 'pndm', 'lms', 'euler', 'euler_a', 'heun', 'dpm_2', 'dpm_2_a', 'dpmsolver', 'dpmsolver++',
+        # 'dpmsingle', 'k_lms', 'k_euler', 'k_euler_a', 'k_dpm_2', 'k_dpm_2_a'
+        self.sample_sampler: Union[str, None] = None  # トレーニング中に画像を生成するために使用するサンプラー、
+                                                      # デフォルトは ddim です。
+        self.sample_every_n_steps: Union[int, None] = None   # nステップごとにトレーニングしながらサンプル画像を生成する
+        self.sample_every_n_epochs: Union[int, None] = None  # nエポックごとにトレーニングしながらサンプル画像を生成する,
+                                                             # ステップを上書きします
 
         # バケット引数
         self.buckets: bool = True
@@ -124,6 +144,9 @@ class ArgStore:
         self.vae: Union[str, None] = None  # 出力を台無しにすることが多いので、使用しないでください。
         self.log_dir: Union[str, None] = None  # 出力を台無しにすることが多いので、使用しないでください。
         self.log_prefix: Union[str, None] = None  # ログ出力にプレフィックスを追加して見つけやすくします。
+        self.tokenizer_cache_dir: Union[str, None] = None  # Doesn't seem to help in a majority of cases
+        self.dataset_config: Union[str, None] = None  # 私はまだjsonをtomlに変換するシステムを実装していません。
+                                                      # 確実に作成し、既存のjsonファイルから変換できるようになったら、tomlをデフォルトにします
         self.lowram: bool = False  # colabを使っている人向けに作られたもので、私のスクリプトでは使いません。
         self.no_meta: bool = False  # データ保存にとって有害です。
         self.color_aug: bool = False   # cache latents をオフにする必要があります。
@@ -145,7 +168,7 @@ class ArgStore:
         self.persistent_workers: bool = True  # スレッドを永続的にします。これにより、エポック間のラグも減少/消滅します。
                                               # ただし、メモリ使用量も増える可能性があります
         self.face_crop_aug_range: Union[str, None] = None
-        self.network_module: str = 'sd_scripts.networks.lora'
+        self.network_module: str = 'sd_scripts.networks.lora' # loconを使う場合は locon.locon.locon_kohya と設定
 
 ||=
 

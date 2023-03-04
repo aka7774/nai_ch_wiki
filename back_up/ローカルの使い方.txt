@@ -153,7 +153,7 @@ Latent系はとても精細な絵になるが、時々全く違う構図にな�
 
 - LDSR
 初回使用時に1.9GBのモデルがダウンロードされる。だいたい9分かかる。ドイツの鯖遅すぎ!!
-''普通に生成→モデル切り替え→DDIMで5倍のstep数で生成→拡大後の生成''といった過程があるため''とても遅い''
+''普通に生成→モデル切り替え→DDIMで5倍のstep数で生成→モデル切り替え→拡大後の生成''といった過程があるため''とても遅い''
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HcsDsuHoBa-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/HcsDsuHoBa.png]]
 
 - SwinIR 4x
@@ -304,5 +304,6 @@ stable-diffusion-webuiフォルダにmp3の音楽ファイルを　notification.
 ・CPU内蔵グラフィックがあるなら、マザーボードの映像出力端子にケーブルをつなぐ。
 ・ブラウザのタブを大量に開くな!!WebUIに関係ないサイトは全部閉じろ!!
 ・VRAMの多いGPUに買い替える。
+
 
 
