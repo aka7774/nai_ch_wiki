@@ -259,92 +259,132 @@ Generate TransparentIMG タブで、「出力フォルダ」には正則化画�
 + accelerate launch main.py　と入力
 + 出来上がりを待つ
 
-**Lora作成手順の画像 (ポップアップ版) 参考程度 (2023-2-21時点)
+**Lora作成手順の画像 (ポップアップ版) 参考程度 (2023-03-04時点)
 クリックして展開 アップデートなどで内容は変わる
 わからんパラメータが出たらcancelを押しとけばデフォルト値が入る。
 [+]
 **ターミナルとかパワーシェルにコマンドを打つか、run_popup.batから実行する
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/yVzXCg9crC.png)
 ----
-**設定ファイルを読み込む? (前と同じ設定を使いたければ次でjsonファイルを読み込む)
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ceVWQWf9Uj.png)
+**設定ファイル関係
+設定ファイルをまとめて読み込んでバッチ処理しますか？「いいえ」
+(あらかじめ作っておいた)設定ファイルを読み込みますか？「いいえ」
+設定ファイルを保存しますか？「はい」
+設定ファイルの保存場所を選んでください
+設定ファイルの名前をつけてください
+設定ファイルの保存だけして学習はしないですか「いいえ」
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EnnOPYPWpz-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/EnnOPYPWpz.jpg]]
 ----
-**学習元のモデルを選ぶ
+**入力
+学習元のモデルを選んでください
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/jxCNF4YB2L.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/6tebwsnoiv.png)
 ----
-**学習用画像のフォルダを選ぶ
+学習用画像のフォルダを選んでください
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/QsMm7_wdmg.png)
 数字_名前 フォルダが見えるように
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/BC_G2nQ6O4.png)
 ----
-**出力先のフォルダを選ぶ
+**出力
+出力先のフォルダを選んでください
+出力モデルに名前をつけますか？「はい」
+出力モデルに名前をつけてください
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/d_LHSt9yQv.png)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/Pm3ilZIP1a.png)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TgS0LdaNq_.png)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DUzNjAiBHz.png)
 ----
-**設定をjson形式で保存する? 保存先フォルダを選ぶ
-----
-**省メモリモード使う? VRAM8GB未満とか1024で学習したいなら「はい」
-**optimizerどれにする? デフォルトは8bit_adam 詳しくは作者README
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/YMGOPgwZyO.png)
+**タグ、キャプション
+学習用画像のタグを全部まとめたファイルを出力しますか？「はい」
+タグを並べ替えをどうしますか？そのまま「occurrence-ly」
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yMW3voD3gc.png)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OkrJFdEvhE.png)
+**学習モデル別微調整
 Stable Diffusion V2のモデルで学習する? 「いいえ」
 実写(っぽい)モデルで学習する? 実写風モデルなら「はい」アニメ風モデルなら「いいえ」
 ----
-**正則化画像のあるフォルダを選ぶ 使わないときは「いいえ」
+**正則化画像
+正則化画像を使いますか？使わないときは「いいえ」
+正則化画像のあるフォルダを選んでください
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/KXO6r5NWEn.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/e99bPUOmNk.png)
 数字_名前 フォルダが見えるように
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/OYsxnrbqxq.png)
 ----
-**学習を再開する? (以前の続きをやるときはsafetensorファイルなどを次で読み込む)
-**学習画像を左右反転して2倍に水増しする? 髪の毛の分け目とかオッドアイが逆になってもいいなら「はい」
+**optimizer
+どのオプティマイザーを使いますか？ デフォルトはAdamW8bit 詳しくは作者README
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Mwxd8fadST.png)
+**LoRA設定 各自いじって
+network dim 次元数: デフォルト値は32
+network alpha アルファ: dimの半分がデフォルト値
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9BxUs0JJhS.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VlKOhNLhCY.png)
+**LoCon設定 各自いじって (編注:なんかおかしい気がするがよくわからん)
+LoConの次元数: デフォルト値はnetwork dimと同じ
+LoConのアルファ: デフォルト値はLoCon dim と同じ
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/T_2kLlHDS7.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oe0Fpwo_9L.png)
 ----
-**バッチサイズ:一度に何枚処理するか VRAM12Gなら4〜6くらいいける(解像度512に限る)で、動かんかったら1で
+**学習率の設定
+学習率(Learning Rate): 1e-4 (= 0.0001)くらいで。alphaを1にした場合dimの分学習率が割られるらしいので上げ目にする
+U-Netの学習率:よくわからんときはキャンセルで。
+テキストエンコーダの学習率:よくわからんときはキャンセルで。学習率の50分の1くらいがいいって言うとる海外ニキもおる
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DkV4RQ4ZnK.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/I3USsDCepb.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/I__fvgugVG.png)
+学習率について具体的な例は [[参考資料・スレ住民による学習ガイド>#loraguide]]
+----
+**スケジューラ
+どのスケジューラを使いますか？ 学習率を途中で上げ下げするやり方。詳しくはぐぐって。
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cDPsMBCQT7.png)
+**学習の解像度
+解像度をいくつにしますか？デフォルトは512
+512が速い, 768ならRTX3060やColabで10000ステップ4~5時間コース
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0I6Xi5Edzq.png)
+----
+**バッチサイズ:一度に何枚処理するか VRAM12Gなら4〜6くらいいける(解像度512の場合)で、動かんかったら1で
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/O0bJN0I8s4.png)
-**何エポック学習させるか: 1エポックは 繰り返し回数(フォルダの先頭の数字)×学習用画像の枚数 ステップ
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DWVNJ2DpMd.png)
-**dimサイズ: ケモナーは128推奨 デフォルト値は32
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/I75XLmK3_t.png)
-**アルファ: dimサイズの半分がデフォルト値
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vZVRRTw9ES.png)
-**学習の解像度: 512が速い, 768ならRTX3060やColabで10000ステップ4~5時間コース
 ----
-**学習率(Learning Rate): 1e-4 (= 0.0001)くらいで。alphaを1にした場合dimの分学習率が割られるらしいので上げ目にする
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DkV4RQ4ZnK.png)
-**テキストエンコーダの学習率:よくわからんときはキャンセルで。学習率の50分の1くらいがいいって言うとる海外ニキもおる
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/I__fvgugVG.png)
-**U-Netの学習率:よくわからんときはキャンセルで。
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/I3USsDCepb.png)
-この辺の3つの学習率が秘伝のタレ的な事になっとるかも? [[参考資料・スレ住民による学習ガイド>#loraguide]]
+**ステップとエポック
+ステップ数の計算をエポック単位にしますか？
+何エポック学習させますか？: 1エポックは 繰り返し回数(フォルダの先頭の数字)×学習用画像の枚数 ステップ
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HYqExu2pMY.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DWVNJ2DpMd.png)
+学習中エポックごとにloraを保存しますか？
+何エポックごとに保存しますか？
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/M6Jh5Uc7cL.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZCqzxdoZWw.png)
 ----
-**スケジューラー: cosine_with_restarts 学習率を途中で上げ下げするやり方。詳しくはぐぐって。
-[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xtBYW757rL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xtBYW757rL.png]]
-**この後にcosine with restartの回数を聞かれたりする
-**エポック単位でセーブする?: 2エポック以上学習させるなら
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/M6Jh5Uc7cL.png)
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZCqzxdoZWw.png)
+**cosine with restartの回数を決めてください
+**warmup ratio を使いますか？使う場合の比率を決めてください: 学習の最初だけ学習率をあげる機能
 ----
-**キャプションをシャッフルする?: する
-**キャプションの最初のトークンを保持する?: 
+**シャッフルキャプションの設定
+キャプションをシャッフルしますか？:「はい」
+キャプションの最初のトークンを保持する？「はい」
 キャプションを付けた場合フォルダ名のインスタンスプロンプトが無効になる~~のでキャプションファイルの先頭にインスタンスプロンプトを自分で書く必要がある。~~作者のnoteによると「数値を指定するとキャプションの先頭から、指定した数だけのトークン（カンマ区切りの文字列）をシャッフルせず固定します。」~~キャプションの先頭からカンマ区切りで判定されるので 「zkz, 1girl, condom, ass, solo, black panties, one side up,」なら1でおk
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kMrIwfMsJE.png)
-**warmup ratio 使う?: 学習の最初だけ学習率をあげる機能
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QKUhVMReO3.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Jrj2Ubei84.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/H7aQQo0LQ1.png)
 ----
-**出来上がりのloraファイルの名前変える? 設定しない場合 last.safetensors
-[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6BKI5GGw1y-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/6BKI5GGw1y.png]]
-**メタデータを埋め込む? Addtional Networksで読めるメモを書いてもいい
-[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HtWSYSwelC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/HtWSYSwelC.png]]
-**U-netかテキストエンコーダどっちか片方だけ学習する? 上級者向けなので「いいえ」
-[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ehZbMERXmn-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ehZbMERXmn.png]]
+**U-netとテキストエンコーダのどれを学習しますか？ 普通は「both」
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Aq2qiEHm3a.png)
 ----
-**学習に使ったタグを全部まとめてtxtファイルに保存する? するなら保存場所を選ぶ
-**タグの並べ替えする? アルファベット順 書いてある順
-**キャプションをわざと抜く? 詳しくは作者README
-**Noise offset入れる? よくわかりません デフォルト値は0.1
-**画像の拡大をやめる? 小さな画像を無理やり拡大してガビガビにならんようにする
-----
-**次の学習も仕込む? このあと一連の手順を追記して別の学習を予約できる
+**学習画像を左右反転して2倍に水増ししますか？ 髪の毛の分け目とかオッドアイが逆になってもいいなら「はい」
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/S9IKM82sNS.png)
+**メタデータを埋め込みますか？ Addtional Networksで読めるメモを書いてもいい
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eLB_Or0EYB.png)
 
+----
+**画像の拡大をやめますか？ 小さな画像を無理やり拡大してガビガビにならんようにする
+
+**mixed precision
+fp16で。 RTX3000以降ならbf16を使うとNaNsエラーが出にくくなるらしい。
+**cacha latent と random crop
+cacha latentは学習前に画像をキャッシュして速くする方法
+random cropは自動的にランダムに学習用画像を切り抜きすることで少ない画像でも効果が上がるかもしれない方法
+どちらか片方しか使えないのでここで選ぶ
+**テストイメージ
+dreamboothとかでできてた学習の様子を画像で出すやつ
+力尽きたので割愛
+txtファイルにプロンプトを書いて用意しておく必要がある
+デフォルトでは200stepごとに1枚生成 (編注:回してみたら画像は作られてなかったのでもっと設定がいるかもしれない)
+//**キャプションをわざと抜く? 詳しくは作者README
+//**Noise offset入れる? よくわかりません デフォルト値は0.1
+//----
+//**次の学習も仕込む? このあと一連の手順を追記して別の学習を予約できる
+//
 ----
 **学習の様子 縦横の比率は自動で振り分けしてくれる
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/9VizQs0l1c.png)
@@ -586,9 +626,8 @@ https://github.com/KohakuBlueleaf/LoCon
 LoRAの新しい学習手法。通常のLoRAより性能がいいかもしれない。学習速度(it/s)は遅い。
 sd-scriptsのvenvでpip install loconでインストールすることで使用可能。
 学習時に使用するにはnetwork_moduleにlocon.locon_kohyaを指定する。
-生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]とkohya-ss氏作成の[[sd-webui-addtional-networks>>https://github.com/kohya-ss/sd-webui-additional-networks]]のインストールが必要。
-
-
+生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]のインストールが必要。
+標準のExtra Networksおよびkohya-ss氏作成の[[sd-webui-addtional-networks>>https://github.com/kohya-ss/sd-webui-additional-networks]]で使用できる。
 *Loraの使用方法&aname(apply_lora)
 **使い方その1 WebUIに拡張機能をインストールして使う
 -「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール )~~
@@ -618,6 +657,11 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
+
+
+
+
 
 
 

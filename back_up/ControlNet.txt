@@ -105,6 +105,11 @@ txt2imgタブの下にControlNetができてるので▼をクリック
 |segmentation|'ADE20K'という規格で塗り絵 領域に分類を持たせる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228.png]]|
 とりあえずスレにある画像使ったんであかんかったら消すわ
 
+元画像から加工されたcannyやdepthなどの画像はデフォルトでは 
+=|PERL|
+stable-diffusion-webui\extensions\sd-webui-controlnet\detected_maps
+||=
+に保存されているのでいいやつができたら取っておこう
 **得意不得意
 
 ちょっと試した感じこんな感じでした
@@ -238,7 +243,13 @@ https://i.imgur.com/N9pdqX1.png
 https://i.imgur.com/2H4eWAU.png
 https://i.imgur.com/nPccccl.png
 ||=
-
+***Guess Mode (実験的機能)
+WebUIの設定 > Enable CFG-Based guidance をオン
+ControlNet使用時に Guess Mode を有効にすると
+cannyやdepthを使ってプロンプト無しでも%%いい感じにでっち上げる%%柔軟に推論する機能
+サンプリング回数 50, CFGスケール 3 〜 5 を推奨
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/G2yrqX6Tvk-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/G2yrqX6Tvk.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N4L7ONuBoC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N4L7ONuBoC.png]]
+例)NSFW, 1girl, NC: (worst quality:1.4), (low quality:1.4) , (monochrome:1.1), のみ 
 
 
 * ツール
@@ -265,6 +276,12 @@ Openposeリグの画像をシェアすることで、手軽にポーズアセッ
 とりあえずRTX3060 12GBでHires. fix resize: from 1024x512 to 2201x1100ぐらいまで生成できました。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/ldUUiyjvpT.TurnDesign_Openpose.png,600)
 
+BlenderのOpenposeRigで作成。
+キャラデザ用
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aGVolQf_rN.jpg,400)　&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4HHXZAsdLF.jpg,400)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EvnQDcUJyj.jpg,400)　&ref(https://image01.seesaawiki.jp/n/h/nai_ch/anE_vIs97x.jpg,400)
+生成例
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qmOjTfkh0x.png,400)
 
 *サンプル
 **活用例
@@ -323,5 +340,7 @@ inpaintのcontrolnetでもできるで
 &ref(https://i.imgur.com/MgC72PR.png,400)
 **動画
 外人ニキやけど早送りでもだいたい分かる [[https://www.youtube.com/watch?v=ci7NfTsifd0>>>https://www.youtube.com/watch?v=ci7NfTsifd0]]
+
+
 
 

@@ -150,11 +150,13 @@ WEBUIの操作画面が表示されたらここまでの手順は成功。おつ
 * 簡易インストール
 **公式のやつ
 -https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/tag/v1.0.0-pre
---もうこいつ一人でいいんじゃないかな？
---…と言いたいところやけどまだプレリリースやからかほんの少しごみが残ったりちょっと安定しないとの報告もある。
---とはいえ基本難しいこと考えずにインストールしたいならこれを使うのが最初になるんちゃうかな？
---おおむね後者のあかちゃんインストーラーとやっとることも同じみたいやで？
---後述のスタンドアローンの作者も『自身の方法とほぼ同じ』と発言していたので利用者はこっちに乗り換えて大丈夫かも
+zipを解凍→update.batを実行→run.batを実行でインストールされる。学習モデルはStable Diffusion公式の1.5が自動でダウンロードされる
+-もうこいつ一人でいいんじゃないかな？
+-…と言いたいところやけどまだプレリリースやからかほんの少しごみが残ったりちょっと安定しないとの報告もある。
+-とはいえ基本難しいこと考えずにインストールしたいならこれを使うのが最初になるんちゃうかな？
+-おおむね後者のあかちゃんインストーラーとやっとることも同じみたいやで？
+-後述のスタンドアローンの作者も『自身の方法とほぼ同じ』と発言していたので利用者はこっちに乗り換えて大丈夫かも
+-一部の拡張機能はPythonを入れないと動かないという話も（入れ方は上を参照）
 
 ** あかちゃんインストーラー
 
@@ -198,123 +200,21 @@ CG板で使ってみた人がいいかもって言ってた。
 使ってみた人いたら感想書いてね。
 
 * トラブルシューティング
-**RTX4090で画像生成した際、速度が遅い問題を解決する
-・Stable Diffusion外の設定
-Windowsの設定→グラフィックからGPUスケジューリングをオフ
-ブラウザ等のハードウェアアクセラレートをオフ
-　→discordもハードウェアアクセラレート設定があるので、必要であればオフ
-NVIDIAコントロールパネルの3D設定の管理から電源設定をパフォーマンス優先に変更
-　→電源消費が気になるならPythonだけ変更すればよい
+**RTX40シリーズで画像生成した際、速度が遅い問題を解決する
+標準でインストールされるcudnn関係のDLLが古い(4000シリーズ未対応)為、対応版(cudnn8.7.0)に置き換える
+
++https://developer.nvidia.com/rdp/cudnn-download より Local Installer for Windows (Zip) をダウンロードする~~※アカウント登録が必要
++ダウンロードしたzipファイル(cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip)を展開し、binフォルダ内の7ファイルを取り出す
++stable-diffusion-main\venv\Lib\site-packages\torch\lib 内に上書きコピーする
 
 *** launch.pyを編集し、torch・xformersのバージョンを上げる方法
-2023/01/23の更新で本体に取り込まれた
-[+]旧情報
-[+]
-https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment-1382123974
+2023/01/23時点の最新版(7ff1ef77dd22f7b38612f91b389237a5dbef2474)で本体に取り込まれた
+旧バージョンのtorchとxformersを使用している場合はアップグレードを促すアナウンスメッセージが表示される
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1sa2Wev7W4.png)
 
-1:git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
-でWEBUIをインストール
+コマンドラインオプションに再インストールオプションを追加して起動すると更新される
+> COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers
 
-2:launch.pyを以下のように編集する
-176行目
->torch_command = os.environ.get('TORCH_COMMAND', "pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu117")~~
-184行目
->xformers_windows_package = os.environ.get('XFORMERS_WINDOWS_PACKAGE', 'https://github.com/C43H66N12O12S2/stable-diffusion-webui/releases/download/torch13/xformers-0.0.14.dev0-cp310-cp310-win_amd64.whl')~~
-
-3:webui-user.batを実行（VENVフォルダ以下が生成される）
-
-4:nVidiaのサイトからCUDNN 8.7をダウンロードする
-https://developer.download.nvidia.com/compute/redist/cudnn/v8.7.0/local_installers/11.8/cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip
-ZIPファイルを解凍し、/bin にあるdllファイルを "stable-diffusion-main\venv\Lib\site-packages\torch\lib"に上書きコピー　
-
-5:web-user.bat を編集して、COMMANDLINE_ARGSに　--xformers を追加
-
-6:ENJOY!!
-
-※RTX3060勢なんだが上記の手法で若干速度向上した。
-旧情報の手作業でxformersのバージョンを上げたりビルドする手法だと各種モジュール間バージョン依存の関係でハマることがあるので新手法おすすめ
-※launch.pyのファイル不一致でgit pullできなくなったりした時は、launch.pyをリネームもしくは削除してからgit pull
-
-旧情報
-[+]
-・xformersの対応しているtorchバージョンを確認
-結局xformersが動く動かないの差は大きいので、これがちゃんと動作する環境を作る
-下記githubで最新バージョンのwhlファイル名を確認
-　https://github.com/C43H66N12O12S2/stable-diffusion-webui/releases
-たとえば
-　xformers-0.0.14.dev0-cp310-cp310-win_amd64.whl
-なら、cp310の記載があるため、Pyhon3.10に対応している
-かつ、タグ名がtorch13なので、torch1.3に最適化されている
-（torchはズレてても動きそう）
-
-・パッケージ更新
-1. venvに入る
-Stable Diffusionが起動しているなら落とす
-コマンドプロンプトを起動し、stable-diffusion-webuiと同階層まで移動
-下記コマンドを実行
-　stable-diffusion-webui\venv\Scripts\activate
-
-2. パッケージを確認
-下記コマンドを実行
-　pip list
-コマンドの結果、torchが1.13ならパッケージ更新は不要
-　e.g) torch                   1.13.1+cu116
-
-3. パッケージ更新
-セットアップツールをアップデート
-　python -m pip install --upgrade pip setuptools
-torchインストール
-　pip3 install torch==1.13.1+cu116 torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
-別バージョンがあってもアンインストール→インストールしてくれるので気にしない
-
-4. 起動確認
-試しにStable Diffusionを起動してみる
-xformersでエラーが出た場合、手動でインストールする
-確認したgithubからwhlを落としてきてカレントに配置
-下記コマンドを実行
-　pip install xformers-0.0.14.dev0-cp310-cp310-win_amd64.whl
-
-5. ライブラリ更新
-Stable Diffusionを落とす
-cuDNNをダウンロード
-　https://developer.download.nvidia.com/compute/redist/cudnn/v8.7.0/local_installers/11.8/
-githubでは8.6でやってる人がいたので、気になるなら8.6を落とす
-階層を上がっていけば別バージョンがある
-ダウンロードしたファイルのbinフォルダ内にあるファイルをtorch\libに上書き
-　stable-diffusion-webui\venv\Lib\site-packages\torch\lib
-
-6. webui-user.bat編集
-下記内容に書き換え
-　set COMMANDLINE_ARGS=--xformers --opt-channelslast
-githubでは下記オプションも人気の模様
-　--force-enable-xformers
-ちゃんと動く環境があるならつけてもつけなくても一緒
-つけてエラーが出るならxformersが動く環境が出来ていないとわかるので、
-つけるほうが人気があるんじゃないかな
-
-7. パフォーマンスチェック
-アスカテストを実施
-ここ↓を見る
-Time taken: 3.05s Torch active/reserved: 2518/2684 MiB, Sys VRAM: 5358/24564 MiB (21.81%)
-
-参考
-[[RTX 4090 performance &#183; Issue #2449 &#183; AUTOMATIC1111/stable-diffusion-webui &#183; GitHub>>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449]]
-// ** RTX 4090などが遅い
-// 　※注※　RTX4090はローカルNAIデフォ環境では速度出てません
-// 　webuiのvenv内に入ってから(stable-diffusion-webui\venv\Scripts\activateで入れる)
-// pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url ttps://download.pytorch.org/whl/cu116
-// ttps://pomf2.lain.la/f/5u34v576.7z
-// ↑のファイルをstable-diffusion-webui\venv\Lib\site-packages\torch\lib
-// にコピペ
-// pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url ttps://download.pytorch.org/whl/cu116
-// (続き)
-// 　起動オプションに追加　--xformers --opt-channelslast
-// これで18it/sぐらい出るようになった
-// Windows ディスプレイ設定→グラフィックの設定→GPUアクセラレータによるGPUスケジューリングをOFFで再起動する
-// これで24it/s出るようになった
-[END]
-[END]
-[END]
 
 **gtx16xxで必要な設定
 　gtx16xxでは半精度浮動小数点数が扱えないためそのままでは黒や緑の絵しかでない。オプション追加が必要。また、メモリがやや少なめ用設定も追加要
@@ -413,6 +313,9 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+
+
+
 
 
 
