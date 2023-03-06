@@ -648,8 +648,31 @@ Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を
 [END]
 WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 
+* LoRAのメタデータの閲覧/編集
 
-**注意点やで
+[[Additional-networks拡張機能>>https://github.com/kohya-ss/sd-webui-additional-networks]]をインストールすると増えるタブ(Additional-networks)からメタデータ編集とかトレーニングデータとか見れる
+
+** メタデータの閲覧
++ タブ(Additional-networks)に移動する
++ Model path filterに探したいLoRAの名前を入れてフィルタリングしておく
++ Model から該当するLoRAを選ぶと情報が読み込まれます
+
+図1：UIのサンプル
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9qfbpGdMR5.png,650)
+
+図2：トレーニングデータのサンプル。最新のsd-scriptsで学習されたLoRAは、Taggerで付けられたタグとそのタグがどれぐらい含まれているかがグラフで閲覧できるようです。
+インターネッツの奥底で入手したり いつダウンロードしたか忘れた謎のLoRAもこれでタグを確認してプロンプトに入れれば使えるかもしれない。便利。
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sLdm0Bovhq.png,,650)
+
+** メタデータの編集
++ 編集したいLoRAを読み込んだうえで、まんなかの下のほうにある「Editing Enabled」にチェックを入れる
++ メタデータを編集する。~~ とりあえずKeyword欄にトリガープロンプト、Descriptionに雑多な説明文、CoverImageにサムネ用画像を設定しておくと良いかと思う
++ 「Save Metadata」でLoRAが保存されます。ちなみに編集前のものは「○○.safetensors.backup」で保存しておいてくれるようです。
+
+なおLoRAはテキストエディタでふつうに開くことができ、トレーニングの設定等(network_dim":"16"とか) も一応確認することができます。
+ただ仕様見る限りDescription等を直で編集するのはむずかしそうなので、GUIから設定するのが無難っぽいです。
+
+*注意点やで
 - 基本的にLoraは元々「DreamBoothみたいに学習した差分ファイルをモデルにマージするための差分パッチみたいなもんとして使う」事が前提で作られとるから、今の個別適用は元々の設計と違う使い方なんや、なんで色々制限事項がある。
 -- Loraは''原則「作ったモデルと同じ系統(SD-v1.x系 or SD-v2.x)」でしか適用できへん''で。要するにAnyとかで作ったLoraはWD1.4以降とかには使われへんし、その逆もしかりや。
 --- よく似た使い方するHyperNetworkは系統またいでも一応反映はされとるみたいやで？しらんけど。
