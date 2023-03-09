@@ -96,7 +96,7 @@ NovelAIのプロンプトなどを良い感じに保存しておけるソフト�
 
 ** NovelAI metadata Viewer v1.0.1
 https://novelai-metadata-viewer.pages.dev/
-生成画像からプロンプト、シード値、スケール等の一通りの情報を出してくれる。
+生成画像からプロンプト、シード値、スケール等の一通りの情報を出してくれる。※ローカルで生成した画像には非対応。
 Twitterやimgurに上げられた画像はmetadataが消失しているので不可。その場合は下のDeepDanbooruなどを使用すると良い
 
 ** UnderPillow（Mac用）
@@ -350,5 +350,6 @@ https://github.com/animerl/novelai-2-local-prompt
 インストール方法はダウンロードした「nai2local.js」を「javascript」フォルダの中に入れるだけ
 |&ref(https://i.imgur.com/gmLQ6xG.png,300)|
 [END]
+
 
 

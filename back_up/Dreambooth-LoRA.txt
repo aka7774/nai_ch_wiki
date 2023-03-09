@@ -36,8 +36,7 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 
 : 原神LoRA作成メモ・検証 | https://rentry.org/genshin_lora
 - スレ住民によるkohya-ss氏制作のSDスクリプト(https://github.com/kohya-ss/sd-scripts )で次のキャラのLoRAを作成した。ポップアップ版使用。（日本語）
--- 02/10:繰り返し数の検証結果を追加。
--- 02/23:AdaFactorの簡易的な検証結果を追加
+-- 02/10:繰り返し数の検証結果を追加。 02/23:簡易的な検証結果を追加。 03/04:LoConの検証結果を追加。
 
 : lora training tagging faq（英語） | https://rentry.org/lora-tag-faq
 - 現在はリンク切れ
@@ -669,7 +668,7 @@ warmupはどっかをいじって立ち上げ角度変えんと邪魔にしか�
 &ref(https://i.imgur.com/9VaR1jC.jpg,300) &ref(https://i.imgur.com/sii4OxP.jpg,300)
 
 ** LoConについて
-https://github.com/KohakuBlueleaf/LoCon
+https://github.com/KohakuBlueleaf/LyCORIS/tree/locon-archive
 
 LoRAの新しい学習手法。通常のLoRAより性能がいいかもしれない。学習速度(it/s)は遅い。
 sd-scriptsのvenvでpip install loconでインストールすることで使用可能。
@@ -728,6 +727,7 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
 
 
 

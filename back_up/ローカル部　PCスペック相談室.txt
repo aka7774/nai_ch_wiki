@@ -49,6 +49,8 @@ Radeon、Intel Arc、Macでも動作はするが新規購入はお勧めしな�
 
 ちなみにGeForce GTX 600番台(一部の780番等も該当)やTesla K80等のKeplerアーキテクチャより前はCUDAがサポート対象外で使えないので注意。(誰もいないと思うが...)
 
+検証記事 [[【Stable Diffusion】AIイラストにおすすめなグラボをガチで検証【GPU別の生成速度】>>https://chimolog.co/bto-gpu-stable-diffusion-specs/]]
+
 ** RAM(メインメモリ)
 
 モデルのマージ、WSL2、学習のいずれかに手を出すなら32GB以上が推奨。

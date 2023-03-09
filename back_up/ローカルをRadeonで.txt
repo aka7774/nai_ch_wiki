@@ -1,5 +1,9 @@
 ローカルを様々な環境で動かす情報
 
+まとめ
+- Pythonのバージョンは 3.9 3.10 の両対応が良さそう。
+- 3.10ではcondaとpipの併用が一応可能そう。
+
 #contents
 
 * Linux
@@ -8,6 +12,7 @@
 - %%Python 3.9+conda xformersか、Python+pip(xformersなし)か、Python+pip+xformersコンパイルかの3択%%
 - Ubuntu 22.04
 - Python 3.10.6
+-- 3.10.10はコンパイル必要
 - Windows環境よりも多少速くなるらしい
 - ゲーム機を兼用するならデュアルブートが必要
 
@@ -15,9 +20,27 @@
 
 - Ubuntu 22.04
 - Python 3.10.6
+-- 3.10.10はコンパイル必要
 - デュアルブートは不要になる
 - 仮想化による速度低下よりもLinuxによる速度向上の恩恵のほうが上っぽい
 - Windows 10と11で使い方が違う。前提となるバージョンがある
+
+* Radeon
+
+PyTorch-DirectMLが楽なので速度的に不利でもそっちを使うようになってきたのかも(エアプ)
+
+- https://gist.github.com/reid3333/541fab0eb29d4c9558de748ef91a8238
+- 1111
+- Python 3.10.10
+- torch 1.13.1
+
+** 検証記録
+
+- VRAMを512MBしか割り当てられないiGPUではブルスクで動かない(4700U)
+- G型番でもRadeonのドライバが当たらない環境がある(GeForce搭載だとダメ?)
+
+[+]
+
 * Radeon(Linux)
 
 - https://hub.docker.com/r/rocm/pytorch/tags
@@ -27,7 +50,6 @@
 - Docker
 - xformersは言及なし
 
-[+]
 安くて省電力でVRAM多くて良さげな、RX 7900 XTX、7900 XTでの学習を夢見て
 
 ** ローカル版の導入
@@ -51,7 +73,6 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1220
 ** 学習環境の構築
 
 情報求む
-[END]
 
 * Radeon(Windows onnx)
 
@@ -63,12 +84,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1220
 - xformersは言及なし
 - 重いらしい
 
-* Radeon(Windows pytorch-directml)
-
-- https://gist.github.com/reid3333/541fab0eb29d4c9558de748ef91a8238
-- 1111
-- torch 1.13.1
-- 4700Uは無事死亡
+[END]
 
 * Intel ARC A770
 
@@ -79,6 +95,13 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1220
 - xformersは言及なし
 
 * Apple M1
+
+** PyTorch
+
+- 1111
+- CoreMLより速いらしい?
+
+** CoreML
 
 - https://github.com/apple/ml-stable-diffusion
 - SD2.0/1.4/1.5
@@ -115,14 +138,17 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1220
 
 * (参考) Colab
 
-- Python 3.8.15(3.9に出来る)
-- Python 3.9+conda xformersか、Python+pip(xformersなし)か、Python+pip+xformersコンパイルかの3択
+- Python 3.9.16 (2023-03-09から)
+- miniconda Python 3.10.10
+- pip Python 3.10.10
+- xformers 0.14はcondaかPythonのバージョンに対応するwhlが必要
+- xformers 0.16はpipでインストール可能(だがkohyaでは避けられることも)
+
+* (参考) paperspace
+
+- Python 3.9らしい(伝聞)
 
 * (参考) Windows
 
-- Python 3.10.8
+- Python 3.10.10
 - Python+pip+xformers
-
-
-
-
