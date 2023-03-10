@@ -5,6 +5,128 @@
 
 #contents
 
+* 書き方
+サンプルを置いとく
+
+=|(box=textarea)|
+
+@echo off
+
+set PYTHON=
+set GIT=
+set VENV_DIR=
+set COMMANDLINE_ARGS=--xformers --opt-channelslast --skip-version-check --no-download-sd-model "--lora-dir=H:\Resources\Resources_AI\Models\Lola" "--ckpt-dir=C:\Program\GenerativeAI\StableDiffusionModels"
+
+call webui.bat
+||=
+
+* 公式
+公式Wiki, コマンド ラインの引数と設定(英語)
+- https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings
+
+** 公式wiki翻訳版｜コマンドライン引数表
+※翻訳は不正確な可能性があります。
+
+出典：公式Wiki, Command Line Arguments and Settings(英語)
+
+| 引数コマンド｜Argument Command | 値｜Value | 既定値｜Default | 説明 | Description |
+| --- | --- | --- | --- | --- |
+| ▼設定｜CONFIGURATION |  |  |  |  |
+| -h, --help | None | False | このヘルプメッセージを表示して終了する | show this help message and exit |
+| --exit |  |  | インストール後に終了する | Terminate after installation |
+| --data-dir | DATA_DIR | ./ | すべてのユーザーデータが格納される基本パス | base path where all user data is stored |
+| --config | CONFIG | configs/stable-diffusion/v1-inference.yaml | モデルのconfigのパス | path to config which constructs model |
+| --ckpt | CKPT | model.ckpt | デフォルトで読み込むモデルの指定（SDモデルのチェックポイントへのパス。指定した場合、このチェックポイントはチェックポイントの一覧に追加され、読み込まれます） | path to checkpoint of stable diffusion model; if specified, this checkpoint will be added to the list of checkpoints and loaded |
+| --ckpt-dir | CKPT_DIR | None | モデルのディレクトリへのパス | Path to directory with stable diffusion checkpoints |
+| --no-download-sd-model | None | False | モデルが見つからない場合でもSD1.5モデルをダウンロードしない | don't download SD1.5 model even if no model is found |
+| --vae-dir | VAE_PATH | None | VAEへのパス | Path to Variational Autoencoders model |
+| --gfpgan-dir | GFPGAN_DIR | GFPGAN/ | GFPGANのディレクトリ | GFPGAN directory |
+| --gfpgan-model | GFPGAN_MODEL | GFPGAN model file name | GFPGANのデフォルトモデルの指定 |  |
+| --codeformer-models-path | CODEFORMER_MODELS_PATH | models/Codeformer/ | codeformerモデルファイルを含むディレクトリへのパス | Path to directory with codeformer model file(s). |
+| --gfpgan-models-path | GFPGAN_MODELS_PATH | models/GFPGAN | GFPGANモデルファイルを含むディレクトリへのパス | Path to directory with GFPGAN model file(s). |
+| --esrgan-models-path | ESRGAN_MODELS_PATH | models/ESRGAN | ESRGANモデルファイルを含むディレクトリへのパス | Path to directory with ESRGAN model file(s). |
+| --bsrgan-models-path | BSRGAN_MODELS_PATH | models/BSRGAN | BSRGANモデルファイルを含むディレクトリへのパス | Path to directory with BSRGAN model file(s). |
+| --realesrgan-models-path | REALESRGAN_MODELS_PATH | models/RealESRGAN | RealESRGANモデルファイルを含むディレクトリへのパス | Path to directory with RealESRGAN model file(s). |
+| --scunet-models-path | SCUNET_MODELS_PATH | models/ScuNET | ScuNETモデルファイルを含むディレクトリへのパス | Path to directory with ScuNET model file(s). |
+| --swinir-models-path | SWINIR_MODELS_PATH | models/SwinIR | SwinIR および SwinIR v2 モデル ファイルを含むディレクトリへのパス | Path to directory with SwinIR and SwinIR v2 model file(s). |
+| --ldsr-models-path | LDSR_MODELS_PATH | models/LDSR | LDSRモデルファイルを含むディレクトリへのパス。 | Path to directory with LDSR model file(s). |
+| --lora-dir | LORA_DIR | models/Lora | Loraネットワークのあるディレクトリへのパス (デフォルト: lora) | Path to directory with Lora networks. |
+| --clip-models-path | CLIP_MODELS_PATH | None | CLIPモデルファイルを含むディレクトリへのパス。 | Path to directory with CLIP model file(s). |
+| --embeddings-dir | EMBEDDINGS_DIR | embeddings/ | textual inversion用のembeddingを入れるディレクトリ (デフォルトはembeddings) | embeddings directory for textual inversion (default: embeddings) |
+| --textual-inversion-templates-dir | TEXTUAL_INVERSION_TEMPLATES_DIR | textual_inversion_templates | textual inversionテンプレートを含むディレクトリへのパス | directory with textual inversion templates |
+| --hypernetwork-dir | HYPERNETWORK_DIR | models/hypernetworks/ | hypernetworkディレクトリ | hypernetwork directory |
+| --localizations-dir | LOCALIZATIONS_DIR | localizations/ | ローカライズディレクトリ | localizations directory |
+| --styles-file | STYLES_FILE | styles.csv | スタイルに使用するファイル名 | filename to use for styles |
+| --ui-config-file | UI_CONFIG_FILE | ui-config.json | UI 設定に使用するファイル名 | filename to use for ui configuration |
+| --no-progressbar-hiding | None | False | gradio UIでプログレスバーを非表示にしない(ブラウザでハードウェアアクセラレーションを使用している時にMLの速度が低下するため非表示にしてる) | do not hide progressbar in gradio UI (we hide it because it slows down ML if you have hardware acceleration in browser) |
+| --max-batch-count | MAX_BATCH_COUNT | 16 | UIの最大Batch count | maximum batch count value for the UI |
+| --ui-settings-file | UI_SETTINGS_FILE | config.json | UI設定に使用するファイル名 | filename to use for ui settings |
+| --allow-code | None | False | WebUIからのカスタムスクリプト実行を許可する | allow custom script execution from webui |
+| --share | None | False | share=Trueを使用し、gradioのサイトからUIにアクセスできるようにする。 | use share=True for gradio and make the UI accessible through their site (doesn't work for me but you might have better luck) |
+| --listen | None | False | サーバー名として0.0.0.0でgradioを起動し、ネットワークのリクエストに応答できるようにする。 | launch gradio with 0.0.0.0 as server name, allowing to respond to network requests |
+| --port | PORT | 7860 | 指定したポートでgradioを起動する。1024未満のポートはroot/管理者権限が必要。デフォルトは7860(利用可能な場合) | launch gradio with given server port, you need root/admin rights for ports < 1024, defaults to 7860 if available |
+| --hide-ui-dir-config | None | False | WebUIからディレクトリ構成を隠す | hide directory configuration from webui |
+| --freeze-settings | None | False | 設定の編集を無効にする | disable editing settings |
+| --enable-insecure-extension-access | None | False | 他のオプションに関係なくExtensionタブを有効にする | enable extensions tab regardless of other options |
+| --gradio-debug | None | False | --debugオプションを指定してgradioを起動する | launch gradio with --debug option |
+| --gradio-auth | GRADIO_AUTH | None | 「username:password」のようにgradio認証を設定します。または「u1:p1,u2:p2,u3:p3」のようにカンマ区切りで複数指定 | set gradio authentication like "username:password"; or comma-delimit multiple like "u1:p1,u2:p2,u3:p3" |
+| --gradio-auth-path | GRADIO_AUTH_PATH | None | radio認証ファイルパスを「/path/to/auth/file」のように設定する。--gradio-authと同じフォーマット。 | set gradio authentication file path ex. "/path/to/auth/file" same auth format as&#160;--gradio-auth |
+| --disable-console-progressbars | None | False | プログレスバーをコンソールに表示しない | do not output progressbars to console |
+| --enable-console-prompts | None | False | txt2imgおよびimg2imgで生成するときにプロンプトをコンソールに出力する | print prompts to console when generating with txt2img and img2img |
+| --api | None | False | APIを使用してWebUIを起動する | launch webui with API |
+| --api-auth | API_AUTH | None | APIの認証を「ユーザー名:パスワード」または「u1:p1,u2:p2,u3:p3」 のようにコンマ区切りの複数で設定する。 | Set authentication for API like "username:password"; or comma-delimit multiple like "u1:p1,u2:p2,u3:p3" |
+| --api-log | None | False | すべてのAPIリクエストのロギングをする | enable logging of all API requests |
+| --nowebui | None | False | UIなしでAPIのみを起動する | only launch the API, without the UI |
+| --ui-debug-mode | None | False | UIの起動高速化するためにモデルを読み込まない | Don't load model to quickly launch UI |
+| --device-id | DEVICE_ID | None | 使用するデフォルトのCUDAデバイスを選択する(export CUDA_VISIBLE_DEVICES=0,1などが必要になる場合あり) | Select the default CUDA device to use (export CUDA_VISIBLE_DEVICES=0,1,etc might be needed before) |
+| --administrator | None | False | 管理者権限 | Administrator rights |
+| --cors-allow-origins | CORS_ALLOW_ORIGINS | None | コンマ区切りリスト(空白無し)で許可されたCORSオリジン(?) | Allowed CORS origin(s) in the form of a comma-separated list (no spaces) |
+| --cors-allow-origins-regex | CORS_ALLOW_ORIGINS_REGEX | None | 正規表現で許可されたCORSオリジン(?) | Allowed CORS origin(s) in the form of a single regular expression |
+| --tls-keyfile | TLS_KEYFILE | None | 一部TLSを有効にする。全機能を動作させるには--tls-certfileが必要 | Partially enables TLS, requires --tls-certfile to fully function |
+| --tls-certfile | TLS_CERTFILE | None | 一部TLSを有効にする。 全機能を動作させるには--tls-keyfileが必要 | Partially enables TLS, requires --tls-keyfile to fully function |
+| --server-name | SERVER_NAME | None | サーバーのホスト名を設定する | Sets hostname of server |
+| --gradio-queue | None | False | gradioキューを使用する。試験的オプション。Restart UIボタンが動作しなくなる。 | Uses gradio queue; experimental option; breaks restart UI button |
+| --skip-version-check | None | False | Torchとxformersのバージョンを確認しない | Do not check versions of torch and xformers |
+| --no-hashing | None | False | チェックポイントのSHA256ハッシュ計算を無効にして、読み込み速度を向上させる | disable sha256 hashing of checkpoints to help loading performance |
+| ▼パフォーマンス｜PERFORMANCE |  |  |  |  |
+| --xformers | None | False | クロスアテンションレイヤーのxformersを有効にする | enable xformers for cross attention layers |
+| --reinstall-xformers | None | False | xformersを強制的に再インストールする。アップグレードには便利だが、作業が完了したら引数を削除しよう(繰り返し再インストールされる) | force reinstall xformers. Useful for upgrading - but remove it after upgrading or you'll reinstall xformers perpetually. |
+| --force-enable-xformers | None | False | 確認用コードが実行可能と判断するかどうかに関係なく、クロスアテンションレイヤーでxformersを有効にする。これが機能しなくてもバグを報告しないでね | enable xformers for cross attention layers regardless of whether the checking code thinks you can run it;&#160;do not make bug reports if this fails to work |
+| --xformers-flash-attention | None | False | Flash Attentionでxformersを有効にして再現性を向上させる(SD2.x系モデルで利用可能) | enable xformers with Flash Attention to improve reproducibility (supported for SD2.x or variant only) |
+| --opt-split-attention | None | False | Doggettxのクロスアテンションレイヤーの最適化を強制的に有効にする。CUDA対応システムではデフォルトで有効。 | force-enables Doggettx's cross-attention layer optimization. By default, it's on for cuda enabled systems. |
+| --opt-split-attention-invokeai | None | False | InvokeAI のクロスアテンションレイヤー最適化を強制的に有効にする。デフォルトではCUDAが利用できないときに有効化される。 | force-enables InvokeAI's cross-attention layer optimization. By default, it's on when cuda is unavailable. |
+| --opt-split-attention-v1 | None | False | 検出できるすべてのVRAMを消費しない古いバージョンのスプリットアテンション最適化を有効にする | enable older version of split attention optimization that does not consume all the VRAM it can find |
+| --opt-sub-quad-attention | None | False | メモリ効率の高いサブ2次クロスアテンション層の最適化を実現 | enable memory efficient sub-quadratic cross-attention layer optimization |
+| --sub-quad-q-chunk-size | SUB_QUAD_Q_CHUNK_SIZE | 1024 | 使用するサブ 2 次クロスアテンション層最適化のクエリチャンクサイズ | query chunk size for the sub-quadratic cross-attention layer optimization to use |
+| --sub-quad-kv-chunk-size | SUB_QUAD_KV_CHUNK_SIZE | None | 使用するサブ2次クロスアテンション層最適化のkVチャンクサイズ | kv chunk size for the sub-quadratic cross-attention layer optimization to use |
+| --sub-quad-chunk-threshold | SUB_QUAD_CHUNK_THRESHOLD | None | チャンクを使用するためのサブ2次クロスアテンション層最適化のVRAMしきい値の割合 | the percentage of VRAM threshold for the sub-quadratic cross-attention layer optimization to use chunking |
+| --opt-channelslast | None | False | 4Dテンソルの代替レイアウトを有効にする。Tensorコア(16xx以上)を搭載したNVIDIA製GPUでのみ推論が速くなる可能性がある。 | Enable alternative layout for 4d tensors, may result in faster inference&#160;only&#160;on Nvidia cards with Tensor cores （16xx and higher） |
+| --disable-opt-split-attention | None | False | クロスアテンションレイヤーの最適化を強制的に無効にします | force-disables cross-attention layer optimization |
+| --disable-nan-check | None | False | 生成された画像/潜在空間でNaNが発生したか確認しない。CIでチェックポイントなしで実行するのに便利 | do not check if produced images/latent spaces have nans; useful for running without a checkpoint in CI |
+| --use-cpu | {all, sd, interrogate, gfpgan, bsrgan, esrgan, scunet, codeformer} | None | 指定されたモジュールのTorchデバイスとしてCPUを使用 | use CPU as torch device for specified modules |
+| --no-half | None | False | モデルをfp16に切り替えない | do not switch the model to 16-bit floats |
+| --precision | {full,autocast} | autocast | 指定した精度で推論する | evaluate at this precision |
+| --no-half-vae | None | False | VAEモデルをfp16に変換しない。 | do not switch the VAE model to 16-bit floats |
+| --upcast-sampling | None | False | アップキャストサンプリング。--no-halfでは効果なし。通常、--no-halfと同様の結果を生成し、より少ないメモリで動作しパフォーマンスが向上する。 | upcast sampling. No effect with --no-half. Usually produces similar results to --no-half with better performance while using less memory. |
+| --medvram | None | False | Stable Diffusionモデルの最適化を有効にし、若干の速度低下と引き換えにVRAM消費量を減らす | enable stable diffusion model optimizations for sacrificing a little speed for low VRM usage |
+| --lowvram | None | False | Stable Diffusionモデルの最適化を有効にし、大幅な速度低下と引き換えにVRAM消費量を大幅に減らす | enable stable diffusion model optimizations for sacrificing a lot of speed for very low VRM usage |
+| --lowram | None | False | Stable DiffusionチェックポイントのウェイトをRAMの代わりにVRAMに読み込む | load stable diffusion checkpoint weights to VRAM instead of RAM |
+| --always-batch-cond-uncond | None | False | --medvram または --lowvram でメモリを節約するために有効になっている cond/uncond バッチ処理を無効にする | disables cond/uncond batching that is enabled to save memory with --medvram or --lowvram |
+| ▼外観ほか｜FEATURES |  |  |  |  |
+| --autolaunch | None | False | 起動時にシステムのデフォルトブラウザでwebuiを開く | open the webui URL in the system's default browser upon launch |
+| --theme | None | Unset | 指定したテーマ(「ライト」または「ダーク」)でWebUIを開く。指定しない場合は、ブラウザ既定のテーマを使用する。 | open the webui with the specified theme ("light" or "dark"). If not specified, uses the default browser theme |
+| --use-textbox-seed | None | False | UIのシードにテキストボックスを使用します(アップ/ダウンはありませんが、長いシードを入力することは可能です) | use textbox for seeds in UI (no up/down, but possible to input long seeds) |
+| --disable-safe-unpickle | None | False | PyTorchモデルに悪意のあるコードが含まれていないかどうかのチェックを無効にする | disable checking pytorch models for malicious code |
+| --ngrok | NGROK | None | ngrok authToken, gradioの--shareの代替 | ngrok authtoken, alternative to gradio --share |
+| --ngrok-region | NGROK_REGION | us | ngrokを開始するリージョン。 | The region in which ngrok should start. |
+| ▼廃止されたオプション｜DEFUNCT OPTIONS |  |  |  |  |
+| --show-negative-prompt | None | False | 何もしない | does not do anything |
+| --deepdanbooru | None | False | 何もしない | does not do anything |
+| --unload-gfpgan | None | False | 何もしない | does not do anything. |
+| --gradio-img2img-tool | GRADIO_IMG2IMG_TOOL | None | 何もしない | does not do anything |
+| --gradio-inpaint-tool | GRADIO_INPAINT_TOOL | None | 何もしない | gdoes not do anything |
+
+
 * うまく動かないとき
 
 webui.batで起動すると、webui-user.batで設定した内容をすべて無視して起動することが出来る。
@@ -179,6 +301,7 @@ https://pytorch.org/docs/stable/notes/cuda.html#memory-management
 まだ実力のほどはわからないが、
 そのうちfp16/fp32に起因するエラーが減ったり、
 マルチCPUに対応したりするのかも知れない。
+
 
 
 

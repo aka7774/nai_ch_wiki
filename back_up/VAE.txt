@@ -1,0 +1,100 @@
+#contents
+
+* VAE is なに
+
+StableDiffusionにおけるVAEとは、画像と潜在空間を相互に変換する役割を持つニューラルネットワークの一部です&#185;&#178;。VAEはVariational Auto Encoderの略で、画像を小さな潜在空間にエンコードしてデコードすることで、計算を高速化します&#185;。VAEは数種類あり、差し替えることで出力画像が変化します&#178;&#179;。
+ソース: Bing との会話 2023/3/11
+(1) How to use VAE to improve eyes and faces - Stable Diffusion Art. https://stable-diffusion-art.com/how-to-use-vae/ アクセス日時 2023/3/11.
+(2) 【Stable Diffusion】VAEを変更して画質を上げる | ジコログ. https://self-development.info/%e3%80%90stable-diffusion%e3%80%91vae%e3%82%92%e5%a4%89%e6%9b%b4%e3%81%97%e3%81%a6%e7%94%bb%e8%b3%aa%e3%82%92%e4%b8%8a%e3%81%92%e3%82%8b/ アクセス日時 2023/3/11.
+(3) AUTOMATIC1111版Stable Diffusion web UI上でVAE Mergerを .... https://note.com/mayu_hiraizumi/n/n136bd7b3a156 アクセス日時 2023/3/11.
+(4) 画像生成AI「Stable Diffusion」が実はかなり優秀な画像圧縮を .... https://gigazine.net/news/20220921-stable-diffusion-image-compression/ アクセス日時 2023/3/11.
+
+とのことでおおまかに以下のような役割があります
+- 彩度や明度等のイメージ調整
+- 目の書き込みの細部とか輪郭線など非常にこまかい部分の描写
+
+* VAE
+2023年3月現在はほとんどがnai.vaeかAnything.vaeを使っている感じする。
+一方でスレニキが共有してくれたカスタムVAEが色彩や細部描写において良い結果をだすことが確認でき※1、VAE学習が広まることが期待される。
+※1: 検証：「VAE比較/検証」の見出しを参照
+
+** 一般のVAE
+
+NAIのVAE
+(1)リークのものをTorrentで入手する
+(2)orangemix.vae.ptはnaiのVAEを入手性を考慮してリネームして置いただけものです。Torrentめんどくさい用に一応貼っておきます
+https://huggingface.co/WarriorMama777/OrangeMixs/tree/main/VAEs
+nai.vae.pt
+
+AnythingのVAE
+https://huggingface.co/andite/anything-v3.0/tree/main
+anything-v4.0.vae.pt
+
+Stability AIのVAE
+https://huggingface.co/stabilityai/sd-vae-ft-ema-original
+vae-ft-ema-560000-ema-pruned.ckpt
+https://huggingface.co/stabilityai/sd-vae-ft-mse-original
+vae-ft-mse-840000-ema-pruned.ckpt
+
+Waifu DiffusionのVAE
+https://huggingface.co/hakurei/waifu-diffusion-v1-4/tree/main/vae
+kl-f8-anime.ckpt
+kl-f8-anime2.ckpt
+
+naclbit(TrinArt)のVAE
+https://huggingface.co/naclbit/trinart_derrida_characters_v2_stable_diffusion/tree/main
+autoencoder_fix_kl-f8-trinart_characters.ckpt
+
+参照：AUTOMATIC1111版Stable Diffusion web UI上でVAE Mergerを利用する手順｜まゆひら｜note - https://note.com/mayu_hiraizumi/n/n136bd7b3a156
+
+** NVA部のVAE
+
+なんJNVA部★146 - 5ch.net liveuranus
+903: 2023/02/12(日) 
+エラーが出るか出ないかギリギリにNAIのVAEを学習させたのを投下してみる
+
+&ref(https://i.imgur.com/8g8a3Cw.jpg,700)
+&ref(https://i.imgur.com/VQUnR4A.jpg,700)
+モデルは上が7th_anime_v3_Cで下はetr_odysseyV2Fixを改良してる途中のもの
+特徴としては赤系の発色が強いのとNAIより細かい部分の描写が気持ち程度に変わる
+学習元が似ていれば相乗効果があるのかと思ったけど違うみたいでう〜ん・・・
+色味の補正用にチューンするぐらいでしか手を出す意味はなさそう？
+
+なんJNVA部★147 - 5ch.net liveuranus
+7: 2023/02/12(日)
+&ref(https://i.imgur.com/hffMiNQ.jpg,700)
+&ref(https://i.imgur.com/CFeUHxU.jpg,700)
+>>903と中身は同じなA
+NAIより薄くしたいがAnything-v3.0は薄すぎるから丁度いいのが欲しい用のB
+ガンマ値を高くした時のような感じになるHighGamma
+AnyVAEが色あせるのを逆手に取って作ったセピア風になるSepia
+中には--no-half-vaeがいるVAEがあるかもしれん
+その時はすまん・・・
+anything-v3.0の色あせるVAEってどこで手に入れるんだよってのもあると思うんで入れておいた(extensionのtoolkitで抽出)
+
+&#128317;: https://mega.nz/file/2B4nVRDD#ujydCsTLubu0PrNcXehSER92aF-M94r4bEs6O2Lo_aQ
+
+* VAE比較/検証
+
+キャラ：ポケモン、背景：garden, で比較検証
+eCustomAがはっきりした色彩とぼけの少ない細部描写で優れている感じがあった(キャラの輪郭や背景の花に注目すると分かる)。
+(Anything-v3のVAEはもっとくすんでるはずなので参考からは除外してください)
+
+モデル: AOM3A1B(orangemixs)
+&#128279;原寸大：https://files.catbox.moe/d80bpe.webp
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pQ79OEN1_M.jpg,800)
+
+
+別モデル: AOM3(orangemixs)
+&#128279;原寸大：https://files.catbox.moe/rczw9t.webp
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4Ij1UMTzXB.jpg,800)
+
+
+1girlテスト
+モデル: AOM3A1B(orangemixs)
+&#128279;原寸大：https://files.catbox.moe/mmbhc9.webp
+
+若干、eCustomAは色飽和気味かもしれない? ぱきっとした描写はよき
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/b1mEKLGJae.jpg,800)
