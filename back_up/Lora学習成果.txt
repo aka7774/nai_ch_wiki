@@ -1474,7 +1474,7 @@ https://i.imgur.com/xRS88SE.png
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sxfQ4K70Oy-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/sxfQ4K70Oy.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PTBxoV8vci-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/PTBxoV8vci.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cNhEDLE5J4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cNhEDLE5J4.png]]
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BotvJnmrCG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BotvJnmrCG.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/McA8xwK5s4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/McA8xwK5s4.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/L8whMqc1LD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/L8whMqc1LD.png]]
 
-***176スレ210 Fakemon (Pok&#233;mon LORA) Beta
+***166スレ210 Fakemon (Pok&#233;mon LORA) Beta
 https://fate.5ch.net/test/read.cgi/liveuranus/1678367246/210
 &#128317;https://civitai.com/models/17342/fakemon-pokemon-lora-beta
 =|BOX|
@@ -1489,4 +1489,44 @@ https://i.imgur.com/wwPgFZ1.png
 https://i.imgur.com/0MqPmu2.png
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/KGvhGWRKnn-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/KGvhGWRKnn.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JWa48t3ac9-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/JWa48t3ac9.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/XrqjlSZgxL-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/XrqjlSZgxL.png]]
+
+***169スレ9 裸リボンloha
+https://fate.5ch.net/test/read.cgi/liveuranus/1678476722/9
+&#128317;https://huggingface.co/SenY/LoRA/resolve/main/naked_ribbon.safetensors
+=|BOX|
+9 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c186-KLgp)[] 投稿日：2023/03/11(土) 04:38:09.87 ID:Og2rhP5d0
+裸リボンloha公開した
+https://i.imgur.com/fDrEEoV.jpg
+https://huggingface.co/SenY/LoRA/resolve/main/naked_ribbon.safetensors
+
+前スレでプロンプトで出るって話あったけどプロンプトでも出る奴のLoRA作るのは基本的に
+&#9312;打率が低かったり思いっきり強調しないと出ない
+&#9313;tokenが他のタグと汚染しあってて意図しないもの呼び出しがち
+&#9314;単純にクオリティが低い
+辺りだね
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ew3ynE0USY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ew3ynE0USY.png]]
+
+***169スレ110 ランジェリーショップ
+https://fate.5ch.net/test/read.cgi/liveuranus/1678476722/110
+&#128317;https://civitai.com/models/18098/lingerieshopbackground
+=|BOX|
+110 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ce49-tQAe)[sage] 投稿日：2023/03/11(土) 11:14:20.10 ID:3SkPwJm40 [1/2]
+初めて背景学習？してみたけどどうよ
+偶に後ろ2枚みたいになっちゃうけど
+
+https://i.imgur.com/jE5qHNu.png
+https://i.imgur.com/LiItJjj.png
+https://i.imgur.com/oYciBC9.png
+https://i.imgur.com/xgcvAQQ.png
+https://i.imgur.com/OOHDk7E.png
+
+135 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ce49-tQAe)[sage] 投稿日：2023/03/11(土) 12:06:32.42 ID:3SkPwJm40 [2/2]
+とりあえず>>110のLoraをCivitaiに上げてみた
+よかったらわいのために下着屋さんのエッチな画像世にばら撒いてくれや
+初めてやから不手際あったらスマン
+https://civitai.com/models/18098/lingerieshopbackground
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/x3VtJbRbzL-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/x3VtJbRbzL.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/84B9LApRdi-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/84B9LApRdi.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/x0EtAHF9fv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/x0EtAHF9fv.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0brQZqX_bs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0brQZqX_bs.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/69aiTlCnjH-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/69aiTlCnjH.png]]
+
 

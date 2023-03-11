@@ -3,6 +3,10 @@
 上の奴ほど新しいという感じで編集していってください。
 
 #contents
+* 2023-03-11 新しいサンプラーUniPC
+以下のコミットでAuto1111に新しいサンプラーが実装
++ Merge pull request #7710 from space-nuko/unipc &#183; AUTOMATIC1111/stable-diffusion-webui@a11ce2b - https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/a11ce2b96cc933ebb9e10d46603a89457ddcb9df
++ サンプラー側のリポジトリ：wl-zhao/UniPC: UniPC: A Unified Predictor-Corrector Framework for Fast Sampling of Diffusion Models - https://github.com/wl-zhao/UniPC
 
 * 2023-03-09 スクリプト爆撃再来
 今回は手動かつNVA部だけを荒らしてる模様。
@@ -668,6 +672,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

@@ -16,9 +16,9 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 
 |''&color(#ff0000){★公式導入ガイド}''|https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md|
 |''&color(#ff0000){★公式LoRAガイド}''|https://github.com/kohya-ss/sd-scripts/blob/main/train_network_README-ja.md|
-|''公式タグ付けガイド''|https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md|
+|''公式学習データガイド''|https://github.com/kohya-ss/sd-scripts/blob/main/train_README-ja.md|
 |''公式DreamBoothガイド''|https://github.com/kohya-ss/sd-scripts/blob/main/train_db_README-ja.md|
-
+|''公式Finetuneガイド''|https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md|
 *&aname(loraguide){参考資料・スレ住民による学習ガイド}
 
 ** 記事
@@ -598,11 +598,6 @@ https://paperswithcode.com/method/adafactor
 これがAdafactorや
 本格的に深層学習やるなら魚本買って学習した方が手っ取り早いかもしれんな
 いよいよ数学の話になってもうた
-
--745: 
-ワイもAdaFactor使って学習してみたらなんも学習してなくて悲しかったわ
-これが　&ref(https://i.imgur.com/I70kfcQ.jpg,200)
-こうや!　&ref(https://i.imgur.com/S55G1KI.jpg,200)
 
 -785:
 >>774

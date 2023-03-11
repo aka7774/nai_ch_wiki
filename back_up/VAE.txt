@@ -15,14 +15,13 @@ StableDiffusionにおけるVAEとは、画像と潜在空間を相互に変換�
 
 * VAE
 2023年3月現在はほとんどがnai.vaeかAnything.vaeを使っている感じする。
-一方でスレニキが共有してくれたカスタムVAEが色彩や細部描写において良い結果をだすことが確認でき※1、VAE学習が広まることが期待される。
 ※1: 検証：「VAE比較/検証」の見出しを参照
 
 ** 一般のVAE
 
 NAIのVAE
 (1)リークのものをTorrentで入手する
-(2)orangemix.vae.ptはnaiのVAEを入手性を考慮してリネームして置いただけものです。Torrentめんどくさい用に一応貼っておきます
+(2)orangemix.vae.ptはnaiのVAEを入手性を考慮してリネームして置いただけものです。Torrentめんどくさい用に一応貼っておく
 https://huggingface.co/WarriorMama777/OrangeMixs/tree/main/VAEs
 nai.vae.pt
 
