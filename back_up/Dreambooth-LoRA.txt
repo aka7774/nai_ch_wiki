@@ -671,6 +671,9 @@ sd-scriptsのvenvでpip install loconでインストールすることで使用�
 生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]のインストールが必要。
 標準のExtra Networksおよびkohya-ss氏作成の[[sd-webui-addtional-networks>>https://github.com/kohya-ss/sd-webui-additional-networks]]で使用できる。
 *Loraの使用方法&aname(apply_lora)
+
+''使い方その1とその2で、配置するフォルダが違うので注意！''
+
 **使い方その1 WebUIに拡張機能をインストールして使う
 -「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール )~~
 stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora フォルダに 出来上がった .pt や .safetensorsをコピーする
@@ -722,6 +725,7 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
 
 
 

@@ -1529,4 +1529,51 @@ https://civitai.com/models/18098/lingerieshopbackground
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/x3VtJbRbzL-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/x3VtJbRbzL.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/84B9LApRdi-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/84B9LApRdi.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/x0EtAHF9fv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/x0EtAHF9fv.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0brQZqX_bs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0brQZqX_bs.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/69aiTlCnjH-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/69aiTlCnjH.png]]
 
+***169スレ542 test-noline 
+https://fate.5ch.net/test/read.cgi/liveuranus/1678476722/542
+&#128317;https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test/test-noline.safetensors
+=|BOX|
+542 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fa7e-S+nL)[sage] 投稿日：2023/03/12(日) 04:17:58.53 ID:g3CSBnn50
+現在試作中のLoraの出力だよ
+https://i.imgur.com/5W273dv.png
+https://i.imgur.com/gFigja6.png
+https://i.imgur.com/zF1UrUG.png
+https://i.imgur.com/3XKQIpp.png
+https://i.imgur.com/wfnFDZf.png
+先日上げた線太くするLoraの逆やってみようかなーて思ってさ…
+まだちょっと問題点が有るんだけど、一応は上げとくから自由に使ってくれ
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test/test-noline.safetensors
+なんかロリ化しやすいのと、シンプル化しやすいなーって、層別適用でマシにはなるだろうけど
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/CWKbs2OWVP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/CWKbs2OWVP.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RIV6LD7x8v-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/RIV6LD7x8v.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/T1vHYCsLlb-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/T1vHYCsLlb.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/t7x2lIR8PL-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/t7x2lIR8PL.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ExuUDblFT7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ExuUDblFT7.png]]
+
+***169スレ619 少女漫画LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1678476722/619
+&#128317;https://huggingface.co/SenY/shoujo/tree/main
+=|BOX|
+619 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c186-KLgp)[] 投稿日：2023/03/12(日) 12:03:48.35 ID:mew+bx7B0
+まだ調整や動作確認が不十分な気がするから予告なく消したり差し替えたりするかもしれないけど少女漫画LoRA公開した
+https://huggingface.co/SenY/shoujo/tree/main
+https://i.imgur.com/M4PH5l0.jpg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/sUfq6XnoCA-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/sUfq6XnoCA.jpg]]
+
+***169スレ714 ボディペイント服
+https://fate.5ch.net/test/read.cgi/liveuranus/1678476722/714
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+=|BOX|
+714 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7a14-22dE)[sage] 投稿日：2023/03/12(日) 16:20:43.63 ID:Llq/kaNp0
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+週末のボディペイント服Loconの共有や（painted_clothes）
+主に水着やボディスーツ向けで溶けてるのも溶けてないのもイケる、ただ巨乳のビキニは胸の線に影が落ちやすくて失敗多い
+LoRAで作ったり色々試してたけどLoconのが一番マシかなって感じやね
+ただ層別適用しても結構副作用あって、背景や竿役がかなり溶けやすいから注意な
+https://i.imgur.com/oaHDM5M.png
+https://i.imgur.com/4OoWmX8.jpg
+https://i.imgur.com/4ksxdev.jpg
+https://i.imgur.com/UkHtoRO.jpg
+https://i.imgur.com/SxAiKvi.jpg
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xHQFMQuW0I-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xHQFMQuW0I.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uB5gIPowgT-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/uB5gIPowgT.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9NsFpN0WLm-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/9NsFpN0WLm.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/52ai8tf8j1-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/52ai8tf8j1.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/uH4fqAA19v-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/uH4fqAA19v.jpg]]
+
 

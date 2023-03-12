@@ -1,11 +1,11 @@
 sd-scriptsに追加して使うEasy Training Scriptsの ArgsList.py の雑な日本語コメント入りバージョン
 注）2024/02/24版から、設定は lora_train_command_line.py から ArgsList.py に変更されています。
 
-以下、設定に必要な箇所(13行目から172行目)のみ記載（2023.03.03現在Ver）
+以下、設定に必要な箇所(13行目から178行目)のみ記載（2023.03.11現在Ver）
 設定箇所は
 -self.base_model: str =
 から
--self.network_module: str =
+-self.locon: bool =
 まで
 &aname(commandline_config)
 =|BOX|
@@ -71,7 +71,7 @@ class ArgStore:
         self.alpha: float = 16  # トレーニング時のスカラーを表します。デフォルトはdim の半分です。
                                 # 古い方法でトレーニングしたい場合は、これをdimと同じに設定してください。
         self.train_resolution: int = 512
-        self.batch_size: int = 1  # T一度に処理される画像数であり、VRAMや解像度と直接比例します。
+        self.batch_size: int = 1  # 一度に処理される画像数であり、VRAMや解像度と直接比例します。
                                   # VRAMが12GBで解像度が512ピクセルの場合
                                   # 最大6バッチサイズまで可能です。
         self.clip_skip: int = 2  # アニメベースのモデルでトレーニングしている場合は、
@@ -83,12 +83,15 @@ class ArgStore:
         self.save_precision: str = "fp16"   # bf16で保存することもできますが、普遍的にサポートされていないので、
                                             # fp16で保存し続けることをお勧めします
 
-        # アーキテクチャ引数
-        self.locon: bool = False  # 新しい locon アーキテクチャを使用する場合はオンにします
-        self.locon_dim: Union[int, None] = None  # locon のdimサイズ.
-                                                 # デフォルトを提案するのに十分なテストがありません
-        self.locon_alpha: Union[int, None] = None  # locon のalphaサイズ。そこにあるようにデフォルトを提案することはできません
-                                                   # 十分なテストが行われていません
+        # ネットワーク引数
+        self.lyco: bool = False  # 新しいloconアーキテクチャを使いたい場合にオンにする
+
+        # 有効な引数は、使用するモードによって若干異なります。
+        # もしあなたが新しいlycoセットアップを使っているなら、conv_dim, conv_alpha, dropout, algoにアクセスできます。
+        # ドロップアウトは今のところloconのみですが、これを設定することで何かが壊れるということはないと思っています。
+        # algoはlora（loconのこと）かloha（リリースされたばかりの新しいalgo）のどちらかです。
+        # もしそうでなければ、Kohyaが実装しているように、conv_dimとconv_alphaにアクセスすることができます。
+        self.network_args: Union[dict[str:str], None] = None
 
         # ステップ引数
         self.num_epochs: int = 1  # エポック数ですが、max_stepsを設定するとこの値は無視されます。
@@ -168,8 +171,10 @@ class ArgStore:
         self.persistent_workers: bool = True  # スレッドを永続的にします。これにより、エポック間のラグも減少/消滅します。
                                               # ただし、メモリ使用量も増える可能性があります
         self.face_crop_aug_range: Union[str, None] = None
-        self.network_module: str = 'sd_scripts.networks.lora' # loconを使う場合は locon.locon.locon_kohya と設定
-
+        self.network_module: str = 'sd_scripts.networks.lora'
+        self.locon_dim: Union[int, None] = None  # 廃止されました
+        self.locon_alpha: Union[int, None] = None  # 廃止されました
+        self.locon: bool = False  # 廃止されました
 ||=
 
 //　旧設定
