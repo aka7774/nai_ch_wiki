@@ -14,11 +14,12 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 **sd-scripts (kohya)
 一番はじめは作者が詳しく書いてくれている公式READMEを見よう！話はそれからだ！
 
-|''&color(#ff0000){★公式導入ガイド}''|https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md|
-|''&color(#ff0000){★公式LoRAガイド}''|https://github.com/kohya-ss/sd-scripts/blob/main/train_network_README-ja.md|
-|''公式学習データガイド''|https://github.com/kohya-ss/sd-scripts/blob/main/train_README-ja.md|
-|''公式DreamBoothガイド''|https://github.com/kohya-ss/sd-scripts/blob/main/train_db_README-ja.md|
-|''公式Finetuneガイド''|https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md|
+- &color(#ff0000){★公式導入ガイド}：https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md
+- &color(#ff0000){★公式LoRAガイド}：https://github.com/kohya-ss/sd-scripts/blob/main/train_network_README-ja.md
+- 公式学習データガイド：https://github.com/kohya-ss/sd-scripts/blob/main/train_README-ja.md
+- 公式DreamBoothガイド：https://github.com/kohya-ss/sd-scripts/blob/main/train_db_README-ja.m
+- 公式Finetuneガイド：https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md
+
 *&aname(loraguide){参考資料・スレ住民による学習ガイド}
 
 ** 記事
@@ -29,7 +30,7 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 - 4chan有志によるLoRAトレーニング法ガイド（英語）
 
 : LoRA 学習メモ | https://rentry.org/i5ynb
-- スレ住民によるLain・よしなが先生・野原ひろしLoRA作成者によるLoRAガイド（日本語）~~更新：2023-02-09｜低リソース学習(NIKKE)、低dim学習(ゆるキャン 犬山あおい)などを追加しました。
+- スレ住民によるLain・よしなが先生・野原ひろしLoRA作成者によるLoRAガイド（日本語）~~更新：2023-03-15｜"--caption_extension=.txt"の引数を追加して明示的に指定しないとタグファイル(.txt)を読みにいかない仕様の注意喚起を追加しました。~~更新：2023-02-09｜低リソース学習(NIKKE)、低dim学習(ゆるキャン 犬山あおい)などを追加しました。
 
 : ソウリンちゃんLoRAの作成記録 | https://rentry.org/sourin_chan
 - スレ住民によるマルゼン式(ふたば有志のタグ付け手法の1つ)で作成したLoRA作成記録（日本語）
@@ -80,7 +81,7 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/lKDWlTHI_G.png)
 &video(https://image01.seesaawiki.jp/n/h/nai_ch/9crBKdm8fu.webm)
 [END]
-アップデートはupdate.bat (大きなバージョンアップのときは入れ直し)
+アップデートはupdate.bat からの upgrade.bat (大きなバージョンアップのときは入れ直し)
 **2. あかちゃんLoraインストーラー
 あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
 start.batと同じフォルダに入れて実行してください
@@ -721,10 +722,13 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 - 基本的にLoraは元々「DreamBoothみたいに学習した差分ファイルをモデルにマージするための差分パッチみたいなもんとして使う」事が前提で作られとるから、今の個別適用は元々の設計と違う使い方なんや、なんで色々制限事項がある。
 -- Loraは''原則「作ったモデルと同じ系統(SD-v1.x系 or SD-v2.x)」でしか適用できへん''で。要するにAnyとかで作ったLoraはWD1.4以降とかには使われへんし、その逆もしかりや。
 --- よく似た使い方するHyperNetworkは系統またいでも一応反映はされとるみたいやで？しらんけど。
+--- Extra Netrowksで間違えてSD1.x用のLoRAをSD2.xで使うとWebUIを再起動するまでエラーで二度と使えなくなるから注意やで
 -- また、Loraを複数1倍で重ねて使うと絵が崩壊しやすくなる。適用したい階層が違う場合、階層適用出来るエクステンションとかでずらしたらええんとちゃうかなしらんけど。
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
+
 
 
 

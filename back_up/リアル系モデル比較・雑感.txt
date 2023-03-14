@@ -11,6 +11,10 @@
 - 追加や編集はご自由に行ってください
 - wikiがBANされるので本人または本人から許可得た人物以外が作成した特定の実在する人物のもの、学習素材が明らかに児童ポルノであるもの、人の誹謗中傷などを悪意を第一目的として作成されたのもは載せないでな
 [+]追加履歴
+-2023/03/14
+[[7th_realJP_A>#7THJPT]]を追加
+[[El Zipang>#ELZIP]]を追加
+
 -2023/03/05
 [[CharHelper Fine-Tuned>#CRHFT]]を追加
 //mix元のがアウトっぽいのか元ファイ削除されたのでコメントアウト
@@ -161,6 +165,17 @@ photo系プロンプトで写実に、CG系プロンプトでイラスト系に�
 指ガチャに成功せんやったが試行回数少なすぎるから気にせんといて
 NSFWもイケるし良いモデルやと思うわ
 |[[&ref(https://i.imgur.com/cS0r2G3l.jpg,256,384)>>https://imgur.com/cS0r2G3]]|[[&ref(https://i.imgur.com/LQAPSwVl.jpg,256,384)>>https://imgur.com/LQAPSwV]]|[[&ref(https://i.imgur.com/yS8e8pil.jpg,256,384)>>https://imgur.com/yS8e8pi]]|[[&ref(https://i.imgur.com/B6zNEBal.jpg,256,384)>>https://imgur.com/B6zNEBa]]|[[&ref(https://i.imgur.com/embLmSIl.jpg,256,384)>>https://imgur.com/embLmSI]]|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(7THJPT)
+**[[7th_realJP_A>>https://huggingface.co/syaimu/7th_JP_test]]
+イラスト系人気モデルAbyss 7th Layerシリーズの作者によるリアル系マージテストモデルや
+流石実績ある手管でマージはお手の物やな
+CG系やけど造形良し反応良しの紛うことなき良モデルや
+少し手の融合とか崩壊とか気になったけど、簡単に良い絵面が出るせいで試行回数めっちゃ少ないから偶々かもしれん
+これはAバージョンの方やが、少し画風の違うBバージョンもあるからお好みで使い分けてな
+|[[&ref(https://i.imgur.com/mK2mSx6l.jpg,256,384)>>https://i.imgur.com/mK2mSx6]]|[[&ref(https://i.imgur.com/SXJJWFEl.jpg,256,384)>>https://i.imgur.com/SXJJWFE]]|[[&ref(https://i.imgur.com/7k3ipeTl.jpg,256,384)>>https://i.imgur.com/7k3ipeT]]|[[&ref(https://i.imgur.com/xoWBk2Ql.jpg,256,384)>>https://i.imgur.com/xoWBk2Q]]|[[&ref(https://i.imgur.com/P2yAMbNl.jpg,256,384)>>https://i.imgur.com/P2yAMbN]]|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----
@@ -499,6 +514,17 @@ SD1.5ベースに768x768で学習されたリアル系モデルや
 割と古いモデルやけど反応と造形の良さから色んなモデルにマージされとる優秀なモデルや
 ただ複数人は苦手な感じやな
 |[[&ref(https://i.imgur.com/1E3y3QIl.jpg,256,384)>>https://imgur.com/1E3y3QI]]|[[&ref(https://i.imgur.com/9FipSe1l.jpg,256,384)>>https://imgur.com/9FipSe1]]|[[&ref(https://i.imgur.com/mNgZdZdl.jpg,256,384)>>https://imgur.com/mNgZdZd]]|[[&ref(https://i.imgur.com/CRZHhFWl.jpg,256,384)>>https://imgur.com/CRZHhFW]]|[[&ref(https://i.imgur.com/B07cds0l.jpg,256,384)>>https://imgur.com/B07cds0]]|
+|center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
+
+----
+&aname(ELZIP)
+**[[El Zipang>>https://huggingface.co/deadman44/SD_Photoreal_Merged_Models]]
+↓に載せてるTwitter学習モデルEl Zipangの最新版や
+testがとれて実写系なのに操作性の良い良モデルになっとるで
+プロンプトにjapaneseで日本人なのは相変わらず、ただし「普通」の顔が出やすいので美形狙いはガチャや
+新サンプラーのUniPCとの相性も良さそうやけどコントラスト高くなりがちなんで、CFGスケールは2〜3に抑えた方が良いかもしれん
+japanese入れん洋モノがめっちゃ刺さるんは個人の感想や
+|[[&ref(https://i.imgur.com/Mn38PkSl.jpg,256,384)>>https://i.imgur.com/Mn38PkS]]|[[&ref(https://i.imgur.com/7BTPnugl.jpg,256,384)>>https://i.imgur.com/7BTPnug]]|[[&ref(https://i.imgur.com/YV2O8Oxl.jpg,256,384)>>https://i.imgur.com/YV2O8Ox]]|[[&ref(https://i.imgur.com/xoM9bujl.jpg,256,384)>>https://i.imgur.com/xoM9buj]]|[[&ref(https://i.imgur.com/GCsFbeRl.jpg,256,384)>>https://i.imgur.com/GCsFbeR]]|
 |center:school uniform|center:large breasts|center:dynamic pose|center:multiple girls||
 
 ----

@@ -1,7 +1,7 @@
 sd-scriptsに追加して使うEasy Training Scriptsの ArgsList.py の雑な日本語コメント入りバージョン
 注）2024/02/24版から、設定は lora_train_command_line.py から ArgsList.py に変更されています。
 
-以下、設定に必要な箇所(13行目から178行目)のみ記載（2023.03.11現在Ver）
+以下、設定に必要な箇所(13行目から179行目)のみ記載（2023.03.14現在Ver）
 設定箇所は
 -self.base_model: str =
 から
@@ -39,8 +39,8 @@ class ArgStore:
                                                                # 出力を出現順ではなくアルファベット順に変更します
 
         # オプティマイザー引数
-        self.optimizer_type: str = "AdamW"  # 選択肢は AdamW, AdamW8bit, Lion, SGDNesterov,
-                                            # SGDNesterov8bit, DAdaptation, AdaFactor です
+        self.optimizer_type: str = "AdamW8bit"  # 選択肢は AdamW, AdamW8bit, Lion, SGDNesterov,
+                                                # SGDNesterov8bit, DAdaptation, AdaFactor です
 
         # ここでweight_decayなどのオプションを追加できます
         # ここで設定された値は、AdamWやAdamW8bitを使用する場合のデフォルト値です
@@ -71,6 +71,7 @@ class ArgStore:
         self.alpha: float = 16  # トレーニング時のスカラーを表します。デフォルトはdim の半分です。
                                 # 古い方法でトレーニングしたい場合は、これをdimと同じに設定してください。
         self.train_resolution: int = 512
+        self.height_resolution: Union[int, None] = None  # 非スクエアな解像度でトレーニングしたい場合用
         self.batch_size: int = 1  # 一度に処理される画像数であり、VRAMや解像度と直接比例します。
                                   # VRAMが12GBで解像度が512ピクセルの場合
                                   # 最大6バッチサイズまで可能です。

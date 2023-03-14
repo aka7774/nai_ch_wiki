@@ -1,0 +1,33 @@
+#contents
+
+* 概要
+LoRAの特定の層だけを抽出してキレイなLoRAを作ったりするやつ
+
+* ツール
+** 拡張機能
+
+- hako-mikan/sd-webui-supermerger: model merge extention for stable diffusion web ui
+https://github.com/hako-mikan/sd-webui-supermerger
+- hako-mikan/sd-webui-lora-block-weight
+https://github.com/hako-mikan/sd-webui-lora-block-weight
+
+
+* LoRAの特定の層だけを抽出してキレイなLoRAを作る
+
+** やり方
+(1)sd-webui-lora-block-weightを使ってLoRAのどの層を切る/残すのかをテストする。キャラLoRAならOUT04あたりは残さなくちゃ、みたいな作業。
+くわしくは[[LoRA階層]]を参照。ここでいい感じのウェイトプリセットを見つけたり、オリジナルのカスタムプリセットを作る。
+プリセットファイルは「\stable-diffusion-webui\scripts\lbwpresets.txt」にある。
+なおsd-webui-lora-block-weightはふつうにText2imgするときにLoRAで階層適用する拡張機能だけど、このときのウェイトプリセットをSuperMergerで流用できる。
+
+(2)SuperMerger
++ SuperMerger→LoRAタブに移動
++ 下のloraリストからチェックをつけて選ぶ
++ lora名:1.0:MIDD みたいな感じでloraを1個と層の識別子を書いてmerge LoRAs
+
+たとえばF:0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0のようなウェイトプリセットがあって、以下のようにすると顔の情報が多く含まれる層だけが残ったLoRAができる。
+=|(box=textarea)|
+lora_HappyFace:1.0:F
+||=
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/uR6QYToSMT.png,1000)

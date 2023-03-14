@@ -53,3 +53,39 @@ https://github.com/adieyal/sd-dynamic-prompts
 ||=
 
 
+* DynamicPromptsチュートリアル
+https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/tutorial.md を適当に翻訳
+
+** インストール
+
+Extentionタブからインストールできるよ（元のドキュメントを参照）
+
+** 複数プロンプトの組み合わせ
+
+*** 変化型のプロンプト Variants
+*** 入れ子にした変化型 Nested variant
+*** ワイルドカード Wildcards
+
+*** Combinatorial Generation
+Dynamic Promptsのデフォルト設定では、テンプレートからランダムなプロンプトが生成される。
+プロンプトの候補全てを生成したい場合は、Combinatorial Generationのチェックを入れれば良い。
+
+*** Wildcard Collection
+
+dynamic promptの内部に、既にセットされたWildcard一覧があるのでそれを使うこともできるよ。
+
+** インスピレーション用のツール
+
+*** マジックプロンプト Magic Prompts
+オンラインに投稿されているプロンプトを見ると、照明、解像度、カメラの種類などに関するいくつかの設定項目がある。マジックプロンプト機能は、プロンプトに自動的に設定項目をモディファイアを追加する。まずはシンプルなプロンプトを使うのがおすすめです。
+
+> A mech-warrior in a post-apocalyptic setting.
+
+これだけだと画像は少し質素なので、マジックプロンプトで華やかにしてみよう。
+
+プロンプトが自動生成され、例えば以下のようになる。
+
+> A mech-warrior in a post-apocalyptic setting. Digital illustration, Artstation. 8k resolution, Concept art, Detailed digital art
+
+## I'm feeling lucky
+## ランダムにウェイト変更 Attention grabber

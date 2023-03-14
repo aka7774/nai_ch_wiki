@@ -92,10 +92,10 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment
 * torchを2.0にする(非推奨)
 生成が5%以上速くなるが、''いくつかの機能が動作しなくなる可能性があるため非推奨''
 Linuxであればさらに高速化するが、モデル、解像度、Batch sizeの変更の度にコンパイルでかなり待たされるのでやる価値は低い。
-(txt2img,img2img,TI,HNは動作確認済。DBは未確認)
+(txt2img,img2img,Extra network, ControlNetは動作確認済)
 ↓に更新方法が書いてある。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
-※xformersはvenvでのビルドを推奨(xfomersフォルダ内でpython -m venv venv)
+※xformersはvenvでのビルドはエラーで動作しないかも
 
 ** 補足
 - パッケージ名について
@@ -239,6 +239,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
+
 
 
 
