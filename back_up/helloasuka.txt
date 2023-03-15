@@ -82,6 +82,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX3080|10GB|Core i5-13600K|24秒|22.72|xformers|RAM32GB, Win11|
 |RTX 3080Ti|12GB|Core i7-12700||20.56|--xformers|Windows11Pro 64bit,ROG STRIX GeForceRTX3080Ti,DDR4メモリ64GB|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||31.32|--xformers --opt-channelslast|PL70%3060と同じ消費電力でこれなので意外とワッパいい|
 |RTX 2080|8GB|Core i7-8700||35.62|--xformers|Windows10 メモリ64GB|

@@ -25,5 +25,7 @@ Linuxだと頭にtimeをつければ出てくる。
 |RTX 3080Ti|12GB|i7 11700F|6m10.22s||||
 |GTX 1080Ti|11GB|i9 9900K|27m27.76s||08ae46b|事前にbitsandbytesのGTX10シリーズ対応を実施済み|
 |RTX 2070|8GB|Ryzen 1700X|15m26.935s|batch_size=3 use-8bit-adamなし gradient_checkpointing|08ae46b|WSL2|
+|GTX 1660|6GB|i5 12400|1h17m40.38s|batch_size=1 mixed_precision=no gradient_checkpointing|7c1cf7f4eaf011e3c90e163049f85bdbadb75ef2|GetStartTimeラベルだけ認識されないのでサブルーチンを前に持ってきた Windows11|
 ||||||||
 |}
+

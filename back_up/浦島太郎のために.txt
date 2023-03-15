@@ -1,12 +1,13 @@
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PE97wdqgIk.png,800)
+&size(12){浦島イラスト｜参考プロンプト：https://majinai.art/ja/i/LmVqyND}
+
 * はじめに
 新技術とか流行りとか歴史とかをメモしておくページ
 具体的なノウハウとかは専用ページに書いて、ここは紹介程度に。
 上の奴ほど新しいという感じで編集していってください。
 
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PE97wdqgIk.png,800)
-&size(12){浦島イラスト｜参考プロンプト：https://majinai.art/ja/i/LmVqyND}
-
 #contents
+
 * 2023-03-11 新しいサンプラーUniPC
 以下のコミットでAuto1111に新しいサンプラーが実装
 + Merge pull request #7710 from space-nuko/unipc &#183; AUTOMATIC1111/stable-diffusion-webui@a11ce2b - https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/a11ce2b96cc933ebb9e10d46603a89457ddcb9df

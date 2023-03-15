@@ -108,6 +108,13 @@ WebUIのエクステンションに対応。スタンドアロンで動かすと
 - 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
 - WebUI 割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
 - アップデートは update.bat
+
+: Kohya_lora_param_gui | https://github.com/RedRayz/Kohya_lora_param_gui
+https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定してコマンドラインに渡すGUIです。
+- accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
+- kohya-ssやEasyTrainScriptsとは違い、sd-scriptsを標準の方法でインストールしておくことが前提。
+- としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。
+
 [END]
 
 **4. その他補助スクリプト
@@ -152,9 +159,9 @@ https://github.com/Linaqruf/kohya-trainer
 --キャプションについては以下
 
 *キャプション・タグを付ける
-: 作者の詳しい画像付き説明 | [[https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md]]
+: 作者の詳しい画像付き説明 | [[https://github.com/kohya-ss/sd-scripts/blob/main/train_README-ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/train_README-ja.md]]
 - 学習用の素材画像それぞれに内容を説明するテキストファイルを作る。このテキストファイルには画像生成時のプロンプトと同じようにタグを記載する。
-- テキストエディターやメモ帳で１つずつ作っても良いのだが、WD1.4 Tagger 等のツールを使えば一気に自動生成できて捗る
+- テキストエディターやメモ帳で1つずつ作っても良いのだが、WD1.4 Tagger 等のツールを使えば一気に自動生成できて捗る
 
 **WD1.4 Taggerで作成
 先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)
@@ -179,10 +186,9 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 - タグは順序に影響を受けるので、一番最初に有効化したいタグを記述する
 - WD1.4Tagger等で自動生成したファイルには不要なタグが含まれたり誤認識されたタグが記載されたりするので編集する。
 : BooruDatasetTagManager | https://github.com/starik222/BooruDatasetTagManager
-
 : 学習用タグの入力を速く楽にするやつ | →[[ローカルの「ツール」]] https://uploader.cc/s/rdw0k6qd2766czgdwwwjtn2xtmhiay6c1ky0s7dui4o5yaz0pkgfesef18n9nngm.zip
+: WebUI用拡張機能 Dataset Tag Editor | https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor 日本語READMEに使い方が書いてある
 等の便利なツールを使えば捗る。必要なタグを追加、不要なタグの削除、順序の入れ替え等の編集をやる
-
 - taggerで生成したタグの順序のままでも構わないが、重要なタグだけ各ファイルの先頭の方に記載する。例えばコマンドライン版（lora_train_command_line.py）の場合、
 =|PY|
         self.shuffle_captions: bool = True  # OPTIONAL, False to ignore ~~
@@ -192,7 +198,7 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 
 **キャプションの付け方・考え方の参考サイト
 : [[lora training tagging faq>https://rentry.org/lora-tag-faq]] | 英語サイトだがブラウザの翻訳で読もう
-: [[キャラクター学習のタグ付け一例>https://rentry.org/dsvqnd]] | 実例を挙げての解説
+: [[キャラクター学習のタグ付け一例>https://rentry.org/dsvqnd]] | 実例を挙げての解説(現在リンク切れ)
 一言で言えば「呼び出しキーワード」＋「学習から外したいもの」をタグに書く
 
 *そもそも学習用画像ってどうやって加工するの
@@ -692,11 +698,12 @@ Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を
 [+]わからんとき用画像
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/Gje_zP3vzL.png)
 [END]
+画像にマウスオーバーして出る(i)をクリックするとloraの作成パラメータや使われたタグが表示される(埋め込んであれば)
 WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 
 * LoRAのメタデータの閲覧/編集
-
-[[Additional-networks拡張機能>>https://github.com/kohya-ss/sd-webui-additional-networks]]をインストールすると増えるタブ(Additional-networks)からメタデータ編集とかトレーニングデータとか見れる
+-WebUIのExtra Networks > Lora タブで 画像にマウスオーバーして出る(i)をクリックするとloraの作成パラメータや使われたタグが表示される(埋め込んであれば)
+-[[Additional-networks拡張機能>>https://github.com/kohya-ss/sd-webui-additional-networks]]をインストールすると増えるタブ(Additional-networks)からメタデータ編集とかトレーニングデータとか見れる
 
 ** メタデータの閲覧
 + タブ(Additional-networks)に移動する
@@ -727,6 +734,10 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
+
+
+
 
 
 
