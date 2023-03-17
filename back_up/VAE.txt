@@ -19,15 +19,13 @@ StableDiffusionにおけるVAEとは、画像と潜在空間を相互に変換�
 
 ** 一般のVAE
 
-NAIのVAE
+NovelAIのVAE
 (1)リークのものをTorrentで入手する
 (2)orangemix.vae.ptはnaiのVAEを入手性を考慮してリネームして置いただけものです。Torrentめんどくさい用に一応貼っておく
 https://huggingface.co/WarriorMama777/OrangeMixs/tree/main/VAEs
 nai.vae.pt
 
-AnythingのVAE
-https://huggingface.co/andite/anything-v3.0/tree/main
-anything-v4.0.vae.pt
+- Anything3,4およびevt2のVAEはNovelAIのものと一緒(ファイルサイズ、生成結果、MD5ハッシュの一致を確認済み)
 
 Stability AIのVAE
 https://huggingface.co/stabilityai/sd-vae-ft-ema-original
@@ -97,3 +95,4 @@ eCustomAがはっきりした色彩とぼけの少ない細部描写で優れて
 
 若干、eCustomAは色飽和気味かもしれない? ぱきっとした描写はよき
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/b1mEKLGJae.jpg,800)
+

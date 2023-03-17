@@ -1,0 +1,80 @@
+* 概要
+
+ノードベースでStableDiffusionできるやつ。
+DTMとか3DCGさわったことがあるならすんなり操作できるかもしれない。
+
+* リンク
+
+- ComfyUI : https://github.com/comfyanonymous/ComfyUI
+
+* 導入
+
+** ローカル
+
+*** 方法(1)
+https://fate.5ch.net/test/read.cgi/liveuranus/1678984030/337
+より抜粋
+
+----
+
+ComfyUIの導入説明を雑にやるやでー
+ちな、Windowsの場合やで　あとWebUI普通に動いてるけど細かいところはよくわからんニキ（python3.10入ってる）向けの雑な説明や。
+とりあえず試すだけならPaperspaceやColabも用意してくれとるみたいやから、
+そっちで触るのもええんやないか
+https://colab.research.google.com/github/comfyanonymous/ComfyUI/blob/master/notebooks/comfyui_colab.ipynb
+
+1.
+まず、ComfyUI導入したいフォルダでShift押しながら右クリック、
+「Powershell ウインドウをここで開く(s)」を押すで
+
+Powershell（青い画面）が開くはずやで
+
+2.
+青い画面が出たら以下のコマンドを順番に入れてこか
+
+=|(box=textarea)|
+git clone https://github.com/comfyanonymous/ComfyUI
+cd .\ComfyUI\
+py -m venv venv
+.\venv\Scripts\activate
+
+pip install -r requirements.txt
+||=
+
+https://i.imgur.com/JQdQs2l.jpg
+https://i.imgur.com/CvoKaCB.jpg
+
+
+3.
+ここまで入れたら準備は終わりや。実行にはmodelファイルが要るでな、いったんエクスプローラーで
+「\ComfyUI\models」配下のフォルダに必要なブツを置く。checkpointsにckpt/Safetensors、lorasにlora、controlnetにCN用の……っちゅう具合やな
+WebUIと同じの使いたいニキはシンボリックリンク切ってもええで　問題なく動くわ
+必要なモデルやらLoRAやらの配置が終わったら、さっきの青い画面に戻って下のコマンドぶち込む
+
+=|(box=textarea)|
+py .\main.py
+||=
+
+
+そしたらこんな画面が出るでな、WebUI同様に指示のあるアドレスをブラウザで開けばええな
+https://i.imgur.com/f5SQzMf.jpg
+WebUIと違って複数起動は現状でけんみたいやから注意や
+https://i.imgur.com/f5SQzMf.jpg
+
+4.
+二回目以降は
+(1)ComfyUIのフォルダで右クリックしてPowershellウィンドウ開く
+(2)以下のコマンド入れる
+
+=|(box=textarea)|
+.\venv\Scripts\activate
+py .\main.py
+||=
+
+で起動できると思うで
+
+https://i.imgur.com/4xrhDzi.jpg
+こんな感じの画面が出るからモデル選んで、「Queue Prompt」で生成実行や！
+あとはいじれ　ワイもこれからいじる
+
+

@@ -36,8 +36,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|||||
-|||||
+|indoor pool|屋内プール|例のプールに似たようなプールが描写されることがある。|https://image01.seesaawiki.jp/n/h/nai_ch/EVvat5gy3g.png|
+|conference hall|会議場|大学の講義場みたいな感じで描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/7vGZdOD8Ul.png|
 |sewer|下水道|下水道となっているが、画像のようにパイプを入れないと真面な画像が出ない。その為、別のプロンプトとしてindustrial pipeを入れる事を推奨する|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/76l7jUqItB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/76l7jUqItB.png]]|
 |shopping mall|ショッピングモール||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9sKLWeCjoV.png)|
 |prison|刑務所|単体だけでは出てこない事が多い|[[https://image02.seesaawiki.jp/n/h/nai_ch/JrlrUTbbzR.png]] [[https://image02.seesaawiki.jp/n/h/nai_ch/SyZmx9y73o.png]] [[https://image01.seesaawiki.jp/n/h/nai_ch/iwSz0ktKtt.png]]|
@@ -210,6 +210,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|Great Barrier Reef,|グレートバリアリーフ|オーストラリア大陸北東岸に広がる世界最大のサンゴ礁地帯であり、全長は2,600km以上に及ぶ。世界自然遺産。単独だと海中からの絵になるが、from aboveを追加すると空撮イメージになる。|https://image01.seesaawiki.jp/n/h/nai_ch/jpkzpWg7fo.png　https://image02.seesaawiki.jp/n/h/nai_ch/Cr2IdAaE94.png|
 | statue of liberty|自由の女神|ほぼ確実にニューヨークにある有名な像が描写されますが、outdoorなどで補強しないと室内にある絵になることがあります。|https://image01.seesaawiki.jp/n/h/nai_ch/76GiXa51q2.png|
 |St. Basil's Cathedral|聖ワシリイ大聖堂|モスクワの赤の広場に立つロシア正教会の大聖堂。|https://image02.seesaawiki.jp/n/h/nai_ch/hs_nLbRFiF.%20Basil's%20Cathedral,%20s-1099325675.png|
 |Neuschwanstein Castle|ノイシュヴァンシュタイン城|シンデレラ城のモデルにもなった有名なドイツの城。|https://image01.seesaawiki.jp/n/h/nai_ch/D9UlnNYzcr.png|
