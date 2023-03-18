@@ -1,0 +1,23 @@
+情報求む。
+
+これ。
+https://github.com/ddPn08/Lsmith
+
+導入目的は高速生成。
+
+TensorRTというNVIDIAのツールで推論を高速化できる。
+
+高速化には事前にモデルの作成が必要で、
+safetensors→onnx→tensorrtという変換をかます。
+解像度が固定される。
+LoRAは未対応(事前にモデルにマージするしかない)
+
+導入は(筆者の所感では)Dockerも含めて非常に不安定。
+pipで入れるもののバージョンがシビアなのかも。
+
+Lsmith用のControlNet extensionは無く、
+ControlNetをTensorRTで動かした事例なども見かけない。
+
+GPUの対応も狭くて、まずRTXじゃないと動作しない。
+(低スぺ民の救済にはならない)
+逆に4090にもまだ対応していないかも知れない。

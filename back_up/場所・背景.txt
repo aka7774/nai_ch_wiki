@@ -78,6 +78,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|slums|スラム街|都市部で極貧層が密集して居住する地区のこと。|https://image02.seesaawiki.jp/n/h/nai_ch/QiskV3pDsj.png|
 |Tower of Babel|バベルの塔|旧約聖書の創世記第11章に登場する巨塔。モチーフとなる絵画が多いためか比較的安定したイメージが出力される。|https://image01.seesaawiki.jp/n/h/nai_ch/g28JsKjHQM.png|
 |artifact|アーティファクト(人工物)|ファンタジーな世界にありがちな構造物や物体が出てくる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wkzGLwpbjw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wkzGLwpbjw.png]]|
 |palace|宮殿|ベルサイユ宮殿に代表される、平地に立つ壮麗な建造物が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/PqMdLu8Vi5.png|
@@ -161,6 +162,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|Kowloon Walled City|九龍城砦|香港にかつて存在した巨大スラム街。|https://image01.seesaawiki.jp/n/h/nai_ch/XzwpxOkOPy.png|
+|Hong Kong|香港|at nightを追加すると「100万ドルの夜景」で有名なヴィクトリア・ピークからの夜景が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/ryE5V5EnZy.png|
 |Rio de Janeiro|リオデジャネイロ|南米初の五輪開催地となった、ブラジル有数の大都市。ポン・ヂ・アスーカルと呼ばれる特徴的な奇岩が１／２ぐらいの確率で描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/_vMstUk9e6.png|
 |Dubrovnik old town|ドゥブロブニク旧市街（クロアチアの都市）||https://image01.seesaawiki.jp/n/h/nai_ch/mXJwF1hhan.png|
 |Las Vegas|ラスベガス|夜景になりやすい|https://image02.seesaawiki.jp/n/h/nai_ch/5N0ToYi9if.png|

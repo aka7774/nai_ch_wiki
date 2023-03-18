@@ -118,6 +118,34 @@ torch.compile()を利用するとdynamoのエラーで生成ができないた�
 
 ※Windowsは非対応なのでtorch.compile()があっても速くならない
 
+* torch2.0+cu118+SDP(要検証)
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/8691
+torchが正式に2.0となったため使用できるようになった技術
+上記の「torchを2.0にする」と「利用するライブラリの更新」を同時に適用し、
+更にSDPというxformersと似た技術を適用することで高速化を図る
+4000番台、3000番台にて効果を確認したが、1000番台ではxformers適用の方が速いらしい?
+(txt2img,hires.fixで動作確認済)
+
+1.venvフォルダ削除
+2.git pullしてwebuiを最新版にする
+3.webui-user.batを以下に書き換えて実行。--xformersはつけないこと!
+=|BOX|
+@echo off
+
+set PYTHON=
+set GIT=
+set COMMANDLINE_ARGS=--opt-sdp-no-mem-attention --opt-channelslast
+set TORCH_COMMAND=pip install torch==2.0.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
+
+call webui.bat
+||=
+5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.0+cu118"と記載があれば成功
+
+- SDPについて
+2023年3月上旬にcommitされたらしい
+xformersと特徴は同じで、--opt-sdp-no-mem-attentionをつけるとほんのちょっと絵が変化する代わりに2割程度速くなる
+xformersと併用、共存はできない
+
 * VAEをckptに内蔵する
 
 1111に標準で入っているCheckpoint Mergerでもできるようになっている

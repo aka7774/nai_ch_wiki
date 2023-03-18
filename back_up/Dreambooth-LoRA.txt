@@ -17,6 +17,7 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 - &color(#ff0000){★公式導入ガイド}：https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md
 - &color(#ff0000){★公式LoRAガイド}：https://github.com/kohya-ss/sd-scripts/blob/main/train_network_README-ja.md
 - 公式学習データガイド：https://github.com/kohya-ss/sd-scripts/blob/main/train_README-ja.md
+- 公式コマンドライン引数表：https://github.com/kohya-ss/sd-scripts/blob/main/config_README-ja.md
 - 公式DreamBoothガイド：https://github.com/kohya-ss/sd-scripts/blob/main/train_db_README-ja.m
 - 公式Finetuneガイド：https://github.com/kohya-ss/sd-scripts/blob/main/fine_tune_README_ja.md
 
@@ -55,22 +56,22 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 - フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
 
 
-** メモ
-
-=|BOX|
-初めてのLoRA学習素材準備
-枚数10〜20　成功するまでそれでいい
-エポック　もう5でいいや
-ステップ　500以上にするな　成功するまで回転は速く
-サイズ　2048x2048以上とかでなければそのまま放り込め
-キャプション/タグ　編集無しでも何かしら覚えるまず回せ
-正則化→なしでやれ　失敗の原因は多分そこじゃない
-学習元と出力モデルは揃えろ
-||=
 
 *インストール、初回セットアップ編
+
+** sd-scripts (作: kohya)
+
+純正のsd-scripts。コマンドプロンプトとか黒い画面にコマンドを打って使うやつや
++ 最新機能を使いたい
++ 安定した動作をのぞむ
+こういう場合はこれを最初に試してな
+インストールは下記を参考に
+- &color(#ff0000){★公式導入ガイド}：https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md
+ちなみにこれ以降のものは純正のsd-scriptsをかんたんに使えるようにしたものやで
+
+
+** LoRA_Easy_Training_Scripts Installers
 最初はまっさらなフォルダにインストールするんやで
-**1. LoRA_Easy_Training_Scripts Installers
 : https://github.com/derrian-distro/LoRA_Easy_Training_Scripts/ | 下記の学習の手順で使うEasyTrainScriptsの人が作った簡易インストールスクリプト
 画面右の Releases の下の Installers をクリック > 下にスクロールして install_sd_scripts_v5.bat をダウンロードする
 右クリックして管理者として実行すると sd-scripts 本体と Easy_Train_Scripts の両方をインストールして、インストール後の初期設定までやってくれる。
@@ -82,7 +83,8 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 &video(https://image01.seesaawiki.jp/n/h/nai_ch/9crBKdm8fu.webm)
 [END]
 アップデートはupdate.bat からの upgrade.bat (大きなバージョンアップのときは入れ直し)
-**2. あかちゃんLoraインストーラー
+
+** あかちゃんLoraインストーラー
 あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
 start.batと同じフォルダに入れて実行してください
 
@@ -92,7 +94,7 @@ start.batと同じフォルダに入れて実行してください
 - ダイアログ用(みかんせい)
 -- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts_easy_training.bat
 
-**3. GUI
+** bmaltais GUI
 GUI といっても作者の sd-scripts にパラメータを渡すだけや。性能は変わらん。セットアップがちょっとだけ楽。
 GUIのほうが更新が数日遅れるのが常やから我慢してや。
 [+]
@@ -101,15 +103,17 @@ GUIのほうが更新が数日遅れるのが常やから我慢してや。
 -「Tools」タブにフォルダ配置補助機能がある。
 -スクリプト版のパラメータの一部は設定出来ないかも？
 -アップデートは upgrade.ps1 をpowershellで実行
+[END]
 
-: ddPn08版 GUI - AUTOMATIC1111 SD WebUI エクステンション対応版 | https://github.com/ddPn08/kohya-sd-scripts-webui
+** AUTOMATIC1111 SD WebUI 拡張機能版 (作: ddPn08 GUI)
+https://github.com/ddPn08/kohya-sd-scripts-webui
 WebUIのエクステンションに対応。スタンドアロンで動かすと上記のbmaltais版と似たような感じ。
 - エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
 - 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
 - WebUI 割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
 - アップデートは update.bat
 
-: Kohya_lora_param_gui | https://github.com/RedRayz/Kohya_lora_param_gui
+** Kohya_lora_param_gui | https://github.com/RedRayz/Kohya_lora_param_gui
 https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定してコマンドラインに渡すGUIです。
 - accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
 - kohya-ssやEasyTrainScriptsとは違い、sd-scriptsを標準の方法でインストールしておくことが前提。
@@ -117,7 +121,7 @@ https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定し�
 
 [END]
 
-**4. その他補助スクリプト
+** その他補助スクリプト
 としあきbatや4chan製のスクリプトがある
 C#のgui https://github.com/RedRayz/Kohya_lora_param_gui
 kohya-ss/sd-scripts を自分でインストールできるなら
@@ -128,14 +132,14 @@ git pull
 .\venv\Scripts\activate
 pip install --use-pep517 --upgrade -r requirements.txt
 ||=
-**5. クラウド
+
+** クラウド
 [[あかちゃんLoraノートブック>https://seesaawiki.jp/nai_ch/d/kohya_train_network_simple]]
 海外ニキのjupyter notebook
 リンクのみ紹介。その都度最新版を取ってくるので動かなくても泣かない。
 https://github.com/Linaqruf/kohya-trainer
-**6. 作者のkohya-ss/sd-scripts
-最新機能を使いたいなら
-*学習用画像を置くフォルダの配置
+
+* 学習用画像を置くフォルダの配置
 -作者の解説が詳しい
 -- [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
 
@@ -280,7 +284,79 @@ Generate TransparentIMG タブで、「出力フォルダ」には正則化画�
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/l8x2Fjrdz7.png)
 [END]
 
-*学習の手順
+* 学習の手順：sd-scripts (直接指定)の場合
+
+以下は一例(OptimizerにAdaFactorを使った場合の例)
+venvをactivate して
+=|BOX|
+.\venv\Scripts\activate
+||=
+accelerate launch の行を入力して実行
+※長いので改行しているが、''&color(#ff0000){改行を取って全てを1行で書く}''事！
+もしくは行末に ^ 記号を付けると ^直後の改行が無視され、複数行に分けたまま入力できる
+=|BOX|
+accelerate launch --num_cpu_threads_per_process 1 train_network.py 
+ --pretrained_model_name_or_path=D:\stable-diffusion-webui\models\Stable-diffusion\model.safetensors 
+ --train_data_dir=D:\sd-scripts\training 
+ --output_dir=D:\sd-scripts\outputs 
+ --reg_data_dir=D:\sd-scripts\seisoku 
+ --resolution=512,512 
+ --save_every_n_epochs=1 
+ --save_model_as=safetensors 
+ --clip_skip=2 --seed=42 
+ --color_aug 
+ --min_bucket_reso=320 
+ --max_bucket_reso=1024 
+ --network_module=networks.lora 
+ --lr_scheduler=cosine_with_restarts 
+ --lr_warmup_steps=500 
+ --keep_tokens=1 
+ --shuffle_caption 
+ --network_dim=128 
+ --network_alpha=64 
+ --enable_bucket 
+ --mixed_precision=fp16 
+ --xformers 
+ --lr_scheduler_num_cycles=4 
+ --caption_extension=.txt  
+ --persistent_data_loader_workers 
+ --bucket_no_upscale 
+ --caption_dropout_rate=0.05 
+ --optimizer_type=AdaFactor 
+ --optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True" 
+ --train_batch_size=4 
+ --max_train_epochs=10
+||=
+-メモ帳などにコピペして
+-必要部分を書き換えて
+-最後に改行を取って1行にして
+-ターミナル(Powershell等)に貼り付けて
+-実行
+-メモ帳で保存しておけば次回からコピペで使い回せる
+
+
+** 備考
+
+- .txt拡張子のタグファイルを読ませる
+"--caption_extension=.txt"の引数を追加して明示的に指定しないとタグファイル(.txt)を読みにいかない仕様があるっぽい。wd tagger等でタグ付けした.txt拡張子のタグファイルがを読ませたい場合、必ずaccelerate launch〜のコマンドに次の引数を追加しておこう
+=|BOX|
+--caption_extension=.txt
+||=
+なお学習したLoRAがタグファイルを読んでいるかは、Aditional network拡張機能をWEBUIにインストールして、Trainning infoのトグルを開いてタグリストの有無で判別できる。
+詳しくは[[LoRAのメタデータの閲覧/編集の欄を参照>#howto_check_metadata]]
+
+- 'Triton'エラー
+学習開始時に次のメッセージが出ても気にしなくていい。そもそもTritonはWindowsに対応してない。
+> A matching Triton is not available, some optimizations will not be enabled. ~~ Error caught was: No module named 'Triton'
+
+
+
+*学習の手順：LoRA_Easy_Training_Scriptsの場合(?)
+
+=||
+※編集メモ：おそらくLoRA_Easy_Training_Scriptsを使う際の学習手順だと思います。詳しい人添削してください。
+||=
+
 **Windows の場合
 ***ポップアップ版を使う場合
 + run_popup.batを実行
@@ -487,65 +563,16 @@ last.safetensors というファイルができる
 //|What do you want your output name to be?|出力ファイルの名前|省略時はオリジナルと一緒||
 //[END]
 
-**直接指定の場合
-以下は一例(OptimizerにAdaFactorを使った場合の例)
-venvをactivate して
-=|BOX|
-venv/source/activate
-||=
-accelerate launch の行を入力して実行
-※長いので改行しているが、''&color(#ff0000){改行を取って全てを1行で書く}''事！
-=|BOX|
-accelerate launch --num_cpu_threads_per_process 1 train_network.py 
- --pretrained_model_name_or_path=D:\stable-diffusion-webui\models\Stable-diffusion\model.safetensors 
- --train_data_dir=D:\sd-scripts\training 
- --output_dir=D:\sd-scripts\outputs 
- --reg_data_dir=D:\sd-scripts\seisoku 
- --resolution=512,512 
- --save_every_n_epochs=1 
- --save_model_as=safetensors 
- --clip_skip=2 --seed=42 
- --color_aug 
- --min_bucket_reso=320 
- --max_bucket_reso=1024 
- --network_module=networks.lora 
- --lr_scheduler=cosine_with_restarts 
- --lr_warmup_steps=500 
- --keep_tokens=1 
- --shuffle_caption 
- --network_dim=128 
- --network_alpha=64 
- --enable_bucket 
- --mixed_precision=fp16 
- --xformers 
- --lr_scheduler_num_cycles=4 
- --caption_extension=.txt  
- --persistent_data_loader_workers 
- --bucket_no_upscale 
- --caption_dropout_rate=0.05 
- --optimizer_type=AdaFactor 
- --optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True" 
- --train_batch_size=4 
- --max_train_epochs=10
-||=
--メモ帳などにコピペして
--必要部分を書き換えて
--最後に改行を取って1行にして
--ターミナル(Powershell等)に貼り付けて
--実行
--メモ帳で保存しておけば次回からコピペで使い回せる
-
-
-- 備考
-学習開始時に次のメッセージが出ても気にしなくていい。そもそもTritonはWindowsに対応してない。
-> A matching Triton is not available, some optimizations will not be enabled. ~~ Error caught was: No module named 'Triton'
-
 
 ** オプティマイザー
 
 *** Adafactor
 再現度はAdamW以下なのでおすすめしない。
 Adなんとかを使って学習してみたらなんも学習してないのができて悲しかったので、スレでマークしておいたものを記録しておきます。
+
+[+]2023/02/22あたりのAdafactorの話題メモ
+
+
 ----
 -396: としあき  2023/02/22(水) 00:56:16.00
 >>Adafactorって簡単に言うとどういうものなの？
@@ -670,6 +697,8 @@ warmupはどっかをいじって立ち上げ角度変えんと邪魔にしか�
 ちなモデルはリアル系は合わなくてHXDCにしたらかわいくなってしまった、クソアニメなのに
 &ref(https://i.imgur.com/9VaR1jC.jpg,300) &ref(https://i.imgur.com/sii4OxP.jpg,300)
 
+[END]
+
 ** LoConについて
 https://github.com/KohakuBlueleaf/LyCORIS/tree/locon-archive
 
@@ -703,6 +732,7 @@ Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を
 WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 
 * LoRAのメタデータの閲覧/編集
+&aname(howto_check_metadata){}
 -WebUIのExtra Networks > Lora タブで 画像にマウスオーバーして出る(i)をクリックするとloraの作成パラメータや使われたタグが表示される(埋め込んであれば)
 -[[Additional-networks拡張機能>>https://github.com/kohya-ss/sd-webui-additional-networks]]をインストールすると増えるタブ(Additional-networks)からメタデータ編集とかトレーニングデータとか見れる
 
@@ -725,6 +755,20 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 
 なおLoRAはテキストエディタでふつうに開くことができ、トレーニングの設定等(network_dim":"16"とか) も一応確認することができます。
 ただ仕様見る限りDescription等を直で編集するのはむずかしそうなので、GUIから設定するのが無難っぽいです。
+
+* メモ / Tips
+
+=|BOX|
+初めてのLoRA学習素材準備
+枚数10〜20　成功するまでそれでいい
+エポック　もう5でいいや
+ステップ　500以上にするな　成功するまで回転は速く
+サイズ　2048x2048以上とかでなければそのまま放り込め
+キャプション/タグ　編集無しでも何かしら覚えるまず回せ
+正則化→なしでやれ　失敗の原因は多分そこじゃない
+学習元と出力モデルは揃えろ
+||=
+
 
 *注意点やで
 - 基本的にLoraは元々「DreamBoothみたいに学習した差分ファイルをモデルにマージするための差分パッチみたいなもんとして使う」事が前提で作られとるから、今の個別適用は元々の設計と違う使い方なんや、なんで色々制限事項がある。
