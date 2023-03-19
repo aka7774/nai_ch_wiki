@@ -215,6 +215,24 @@ CG板で使ってみた人がいいかもって言ってた。
 コマンドラインオプションに再インストールオプションを追加して起動すると更新される
 > COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers
 
+*** webui-user.batを編集し、torch・cuDNNのバージョンを上げる方法
+torch2.0とcu118(cudnn8.8.0)は共にRTX40シリーズのアーキテクチャに対応しているので、それを適用する
+xformersが使えない代わりに同等技術のSDPを使用する(生成結果もほぼ同じ)
+1.venv,repositoriesフォルダ削除 あるいはvenv上で pip uninstall torch torchvision -y
+2.git pullしてwebuiを最新版にする
+3.webui-user.batを以下に書き換えて実行。--xformersはつけないこと!
+=|BOX|
+@echo off
+
+set PYTHON=
+set GIT=
+set COMMANDLINE_ARGS=--opt-sdp-no-mem-attention --opt-channelslast
+set TORCH_COMMAND=pip install torch==2.0.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
+
+call webui.bat
+||=
+5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.0+cu118"と記載があれば成功
+
 
 **gtx16xxで必要な設定
 　gtx16xxでは半精度浮動小数点数が扱えないためそのままでは黒や緑の絵しかでない。オプション追加が必要。また、メモリがやや少なめ用設定も追加要
@@ -317,6 +335,9 @@ PythonとGitをインストーラーで入れた場合はアンインストー�
 * 環境の移行
 新しくWebUIをクリーンインストールして古い環境の設定だけをもってくる方法。
 ※編集中。だれか詳しい人いたら追記して、どうぞ。
+
+
+
 
 
 

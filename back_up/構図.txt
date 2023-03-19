@@ -9,7 +9,7 @@
 |riding_form,horse, horseback riding,||騎乗|馬に乗ってくれる。競馬のモンキー乗りは不明。馬をバイクや自転車に変えることも可能|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti.png]]|
 |〇〇_form||何かをしている構図|〇〇+formで何かをしている姿勢と指定するとだいたいその格好になってくれる上はrunning_form下はcooking_form|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv.png]]|
 |waist armpit navel parted under covers||腋が見える格好でシーツの上に寝転んだポーズ|抱き枕とかピンナップによくある構図。画面の中心が胸元ぐらいになる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ONg9RWJHP8-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ONg9RWJHP8.png]]|
-||||プロンプト、UCともに入力せず、UCでエンターを押すと出る。なぜか額縁多め|https://image01.seesaawiki.jp/n/h/nai_ch/6YebvC02Bw.png|
+||||プロンプト、UCともに入力せず、UCでエンターを押すと出る。なぜか額縁多め ~~ Quality tagsが有効時にmasterpiece, best qualityというプロンプトが入るため起こる|https://image01.seesaawiki.jp/n/h/nai_ch/6YebvC02Bw.png|
 |1girl,{&#91;Running with a forward lean]},dutch angle,blurry background, dynamic pose,|{{error}},{{worst quality}}/{normal quality}/{{lowres}},|走ってるポーズ|手足はよくおかしくなる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WZ9OP__EsK-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/WZ9OP__EsK.png]]|
 |{{{{{{{{Kiss the pov}}}}}}}},closing eyes,expressionless||キス顔|視点にキス、閉じた目、無表情の３つ、必要に応じて差し替える|https://image01.seesaawiki.jp/n/h/nai_ch/kHUSM_jO8N.png|
 |authentic face,authentic skin texture,masterpiece,highly detailed, {{1girl}},solo, loli girl,school uniform,head tilt,leaning forward,[embarrassed],incoming kiss,closed eyes,pov,{close up},{{lips focus}},looking at viewer,|teeth,tongue out,extra eyebrows,extra nose, bad face,bad ears,   bad eyes,bad hairs, poorly drawn face,bad anatomy|キス顔|目がずれがち|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jJoE2T2jVp-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/jJoE2T2jVp.jpg]]|
@@ -22,6 +22,7 @@
 * 単語集
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|yuri|百合|女性同士の絡み合い ~~ ネガにnudeやnsfwを入れないとR18になりやすいので注意 ~~ danbooruのwikiによるとふたなりとバイセクシャルは百合には含まれない|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/L2FrIRvKX2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/L2FrIRvKX2.png]]|
 |triptych|三連祭壇画||https://image02.seesaawiki.jp/n/h/nai_ch/z2JKT7HNyZ.png|
 |letterboxed, pillarboxed|画像の下部と上部にバーが表示されます。映画の黒帯。~~pillarboxedで左右に帯ができます|||
 |border, または「色名 border」&#40;black border など)|4つの辺すべてに単純な単色の余白ができます。~~outside borderでキャラなどが枠に重なるようにはみ出して描かれます||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cMY8HOk4rE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cMY8HOk4rE.png]]|

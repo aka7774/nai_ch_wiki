@@ -1,5 +1,96 @@
 #contents
 
+* 注意
+
+torch2化、torch.compile改造ともにVRAMの消費量が増えます。
+高解像度生成などでVRAMがカツカツな人は取捨選択が必要かも。
+
+* モジュールによる高速化
+
+2023-03-19現在、たぶんこの順で速い。
+
+1. torch2 cu118 --opt-sdp-no-mem-attention torch.compile(不安定)(Linux限定)
+2. torch2 cu118 --opt-sdp-no-mem-attention
+3. torch1 cu117 xformers cudnnのバージョンアップ
+
+** torch2 cu118 --opt-sdp-no-mem-attention
+
+RTX(2000〜4000番台)で高速化するらしい。
+
+手順
+1.venv,repositoriesフォルダ削除 あるいはvenv上で pip uninstall torch torchvision -y
+2.git pullしてwebuiを最新版にする
+3.webui-user.batを以下に書き換えて実行。--xformersはつけないこと!
+=|BOX|
+@echo off
+
+set PYTHON=
+set GIT=
+set COMMANDLINE_ARGS=--opt-sdp-no-mem-attention --opt-channelslast
+set TORCH_COMMAND=pip install torch==2.0.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
+
+call webui.bat
+||=
+5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.0+cu118"と記載があれば成功
+
+[+]詳細説明
+* torch2.0+cu118+SDP(要検証)
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/8691
+torchが正式に2.0となったため使用できるようになった技術
+上記の「torchを2.0にする」と「利用するライブラリの更新(cu118=cuDNN8.8.0)」を同時に適用し、
+更にSDPというxformersと似た技術を適用することで高速化を図る
+4000番台、3000番台にて効果を確認したが、1000番台ではxformers適用の方が速いらしい?
+(txt2img,hires.fixで動作確認済)
+
+- SDPについて
+2023年3月上旬にcommitされたらしい
+xformersと特徴は同じで、--opt-sdp-no-mem-attentionをつけるとほんのちょっと絵が変化する代わりに2割程度速くなる
+xformersと併用、共存はできない
+xformersよりVRAM使用量が増えるため、学習や高解像度生成時には注意
+[END]
+
+[+]以前の方法(xformersをtorch2用にビルドする)
+* torchを2.0にする(非推奨)
+生成が5%以上速くなるが、''いくつかの機能が動作しなくなる可能性があるため非推奨''
+Linuxであればさらに高速化するが、モデル、解像度、Batch sizeの変更の度にコンパイルでかなり待たされるのでやる価値は低い。
+(txt2img,img2img,Extra network, ControlNetは動作確認済)
+↓に更新方法が書いてある。
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
+※xformersはvenvでのビルドはエラーで動作しないかも
+
+** 補足
+- パッケージ名について
+Installセクションステップ3のpip3はtritonのパッケージ名が変わっているため失敗する。代わりに以下のコマンドを実行する。
+> pip3 install --pre torch torchvision torchaudio pytorch-triton --extra-index-url https://download.pytorch.org/whl/nightly/cu118 --force
+
+
+- Windowsの補足事項
+WindowsではIntallセクションのステップ5がうまくいかない。ステップ4まで進めたら、gitでxformersをクローンしてビルドする必要あり。
+[[ここの手順>>https://michyo.net/sempetit/install-xformers-windows/]]の「xFormers のダウンロード」まで進めた後、
+xformersフォルダ内で以下のコマンドを実行する。
+> python setup.py build
+ビルドされるのでしばらく待つ。その後xformersフォルダ内で以下のコマンドを実行する。
+> python setup.py bdist_wheel
+その後xfomers\dist\にwhlファイルができるので、それをvenv/Scriptsにコピーしてvenv側のpythonでpip install ファイル名.whlでインストールする。
+
+- Linuxの補足事項
+torch.compile()を利用するとdynamoのエラーで生成ができないため、stable-diffusion-webui\repositories\stable-diffusion-stability-ai\ldm\modules\diffusionmodules\util.pyの113-114行目を次のコードで置き換える。
+> return CheckpointFunction.apply(func, len(inputs), *inputs, *params)
+
+※Windowsは非対応なのでtorch.compile()があっても速くならない
+[END]
+
+** xformers
+
+xformersのインストールは1111の標準機能で簡単にできる。
+
+初めて導入する場合
+ set COMMANDLINE_ARGS= --xformers
+
+古い環境から更新する場合
+ set COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers
+
+[+]以前の方法
 * 高速化オプションの利用
 
 stable diffusionに用意されているxformersというオプションを利用する。
@@ -37,9 +128,81 @@ stable-diffusion-webuiディレクトリ直下にあるwebui-user.batを修正�
 アップデート完了した場合、WebUIの下部の表示が以下のようになる
 (torch・xformers欄)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/xh_WFZyBHE.png)
+[END]
 
-***RTX4000シリーズを使っている場合
+* torch.compile
+
+(TensorRTみたいな感じで)モデルの事前コンパイルを行うことによって、
+生成処理を高速化する仕組みがtorch2には実装されている。
+これを1111で使えるように改造する。
+
+Windowsには対応していない(WSL2で動かすことになる)
+
+参考
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
+
+前提として、torch2で1111が動作できていること。
+
+1. modules/sd_hijack.pyのself.optimization_method = apply_optimizations()の前に次のコードを入れる(L171-172)
+インデントの位置が前後と揃うようにする。
+
+=|BOX|
+        try:
+            import torch._dynamo as dynamo
+            torch._dynamo.config.verbose = True
+            torch.backends.cudnn.benchmark = True
+            m.model = torch.compile(m.model, mode="reduce-overhead", fullgraph=False)
+            print("Model compiled set")
+        except Exception as err:
+            print(f"Model compile not supported: {err}")
+||=
+
+modeはdefault, reduce-overhead, max-autotuneから選べます
+max-autotuneは10分以上かかる割に効果が薄かった
+defaultだとコンパイル半分くらいで済む。こっちでも良いかも？
+
+なお、残念ながら8GBの環境ではcompile完了前にCUDA OOMで死にました・・・。
+reduce-overheadだとVRAMを食っていくけどdefaultだと消費しないので完走できる。だけど速さは感じない。
+3060でreduce-overheadを試したら9.6GBだったので10GBあれば使えるかも。速さは劇的ってほどではない。
+samplerは変えても再コンパイルは走らなかった。
+
+2. repositories/stable-diffusion-stability-ai/ldm/modules/diffusionmodules/util.pyのcheckpointメソッドを編集(L113-114)
+(これをしないとエラーになる)
+
+=|BOX|
+- return CheckpointFunction.apply(func, len(inputs), *args)
++ return CheckpointFunction.apply(func, len(inputs), *inputs, *params)
+||=
+
+バッチサイズ等を変えた後にGenerateを押すと返ってこなくなることがあります。リロードすると直る。この辺動作が怪しいです。
+
+xformersは必要ない。
+以下の警告が出るけど無視しても動く。
+
+=|BOX|
+/home/user/stable-diffusion-webui/venv/lib/python3.10/site-packages/torchvision/transforms/functional_tensor.py:5: UserWarning: The torchvision.transforms.functional_tensor module is deprecated in 0.15 and will be **removed in 0.17**. Please don't rely on it. You probably just need to use APIs in torchvision.transforms.functional or in torchvision.transforms.v2.functional.
+  warnings.warn(
+||=
+
+- torch2用にビルドされたxformersは現状存在しない
+- xformersのビルドは茨の道
+
+必要なかったこと
+- 1111標準のaccelerate==0.12.0を少なくとも0.15.0以上に更新する必要がある
+-- この類の問題を克服するためにsd_dreambooth_extensionをpip更新ツールとして使う手がある
+
+出来ればやりたいこと
+- コンパイルしたいモデルとしたくないモデルを選択したくなる気がする
+* --opt-channelslast
+
+これはつけるだけ。
+ --xformers や --opt-sdp-no-mem-attention と併用できる。
+環境によっては効果が無かったり逆に遅くなったりするらしいので比較検討しましょう。
+
+* cudnnのバージョンアップ(RTX4000シリーズでは必須)
+
 標準でインストールされるcudnn関係のDLLが古い(4000シリーズ未対応)為、対応版(cudnn8.7.0)に置き換える
+最新版(2023-03-19現在だと8.8.1)に置き換えることでさらなる高速化が期待できるかも。
 
 +https://developer.nvidia.com/rdp/cudnn-download より Local Installer for Windows (Zip) をダウンロードする~~※メールアドレス登録が必要かもしれない
 +ダウンロードしたzipファイル(cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip)を展開し、binフォルダ内の7ファイルを取り出す
@@ -89,63 +252,6 @@ http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment-1320800317
 [END]
 
-* torchを2.0にする(非推奨)
-生成が5%以上速くなるが、''いくつかの機能が動作しなくなる可能性があるため非推奨''
-Linuxであればさらに高速化するが、モデル、解像度、Batch sizeの変更の度にコンパイルでかなり待たされるのでやる価値は低い。
-(txt2img,img2img,Extra network, ControlNetは動作確認済)
-↓に更新方法が書いてある。
-https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
-※xformersはvenvでのビルドはエラーで動作しないかも
-
-** 補足
-- パッケージ名について
-Installセクションステップ3のpip3はtritonのパッケージ名が変わっているため失敗する。代わりに以下のコマンドを実行する。
-> pip3 install --pre torch torchvision torchaudio pytorch-triton --extra-index-url https://download.pytorch.org/whl/nightly/cu118 --force
-
-
-- Windowsの補足事項
-WindowsではIntallセクションのステップ5がうまくいかない。ステップ4まで進めたら、gitでxformersをクローンしてビルドする必要あり。
-[[ここの手順>>https://michyo.net/sempetit/install-xformers-windows/]]の「xFormers のダウンロード」まで進めた後、
-xformersフォルダ内で以下のコマンドを実行する。
-> python setup.py build
-ビルドされるのでしばらく待つ。その後xformersフォルダ内で以下のコマンドを実行する。
-> python setup.py bdist_wheel
-その後xfomers\dist\にwhlファイルができるので、それをvenv/Scriptsにコピーしてvenv側のpythonでpip install ファイル名.whlでインストールする。
-
-- Linuxの補足事項
-torch.compile()を利用するとdynamoのエラーで生成ができないため、stable-diffusion-webui\repositories\stable-diffusion-stability-ai\ldm\modules\diffusionmodules\util.pyの113-114行目を次のコードで置き換える。
-> return CheckpointFunction.apply(func, len(inputs), *inputs, *params)
-
-※Windowsは非対応なのでtorch.compile()があっても速くならない
-
-* torch2.0+cu118+SDP(要検証)
-https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/8691
-torchが正式に2.0となったため使用できるようになった技術
-上記の「torchを2.0にする」と「利用するライブラリの更新」を同時に適用し、
-更にSDPというxformersと似た技術を適用することで高速化を図る
-4000番台、3000番台にて効果を確認したが、1000番台ではxformers適用の方が速いらしい?
-(txt2img,hires.fixで動作確認済)
-
-1.venvフォルダ削除
-2.git pullしてwebuiを最新版にする
-3.webui-user.batを以下に書き換えて実行。--xformersはつけないこと!
-=|BOX|
-@echo off
-
-set PYTHON=
-set GIT=
-set COMMANDLINE_ARGS=--opt-sdp-no-mem-attention --opt-channelslast
-set TORCH_COMMAND=pip install torch==2.0.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
-
-call webui.bat
-||=
-5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.0+cu118"と記載があれば成功
-
-- SDPについて
-2023年3月上旬にcommitされたらしい
-xformersと特徴は同じで、--opt-sdp-no-mem-attentionをつけるとほんのちょっと絵が変化する代わりに2割程度速くなる
-xformersと併用、共存はできない
-
 * VAEをckptに内蔵する
 
 1111に標準で入っているCheckpoint Mergerでもできるようになっている
@@ -174,13 +280,29 @@ https://i.imgur.com/Q6p1jJI.jpg
 [END]
 [END]
 
-* safetensors変換
+* モデルを軽量化する
+
+- ckptをsafetensorsに変換する
+-- 最近はモデルをsafetensorsで配布するほうが主流になった。
+- pruneする
+-- VRAMの節約になるかも?
+- fp16化する
+
+fp16化の副作用として、modules.devices.NansException が発生する。
+特にVAEで発生しやすい。
+
+対策としては、fp32で計算するように強制する。
+ --no-half や--no-half-vae を追加する。速度は落ちる。
+
+たまに真っ黒画像が出てもいいから高速化したいのであれば、
+ &#8211;disable-nan-check を追加する手もある。
+
+[+]以前の方法
 
 1111に標準で入っているCheckpoint Mergerでもできるようになっている
 マージ対象Aに変換したいモデルを指定して、Interpolation Method を No interpolation 指定
 Checkpoint formatをsafetensorにしてマージする
 
-[+]以前の方法
 116スレ612
 
 >>559法とsafetensors変換を併用したらハローアスカ5秒短縮できたやで！
@@ -200,17 +322,21 @@ Checkpoint formatをsafetensorにしてマージする
 ckpt+vae 42.89
 safetensors 37.87
 多用するモデルで作っとけば普段使いもいけるでー 
-[END]
 
 ** 変換方法いろいろ
 
 - Pythonを使う https://pastebin.com/ijApuS6b
 - Colabを使う(今回はまわりくどいけど) [[ローカルの「ツール」]]
+[END]
+
 * Extensionsの退避
 
-しばらく使わないときは Dreambooth Extension を削除する
-
+しばらく使わないときは Dreambooth Extension を削除する(もう使ってない?)
 起動時間が劇的に変わる
+
+Extensionにはinstall.pyが同梱されていて毎回起動するので、
+不要なExtensionが沢山入ってるなら消すだけでだいぶ速くなるはず。
+
 UIからオフにするだけではダメ
 フォルダごと別の場所に退避させとくとか、いっそバッサリ消すとか
 
@@ -219,8 +345,13 @@ UIからオフにするだけではダメ
 出来るだけ少ないStepsでも期待通りの絵が出る方法を模索する。
 Euler a以外(収束するサンプラー)で再現できないか試す。
 DPM++ 2M Karrasは15Stepsでもそれなりに映えるのでおすすめ。
+UniPCはもっと良い感じ。
 
 * RamDiskを使う
+
+あんまり恩恵が無いと思う。
+
+[+]以前の方法
 1111 全部 RamDisk に突っ込んで高速化するのは、必要RAMのわりに恩恵がほとんど無いからおすすめしない。
 
 以前はモデルをマージする際に RamDisk が有用であるとされてきたが、RamDisk にあずかる恩恵はさらに少なくなっているかもしれない。
@@ -245,6 +376,7 @@ Settings->Stable Diffusion->Checkpoints to cache in RAM
 メモリにキャッシュされていないファイルを読み込み、総容量が20GBを超えると、
 メモリにキャッシュされたファイルのうち一番古いファイルがキャッシュメモリから破棄されるので、
 再度HDD/SSD等から読み込む作業が発生します。
+[END]
 
 * WSL2で使う
 
@@ -258,7 +390,12 @@ Windowsと比べて多少高速化するらしい・・・？
 サブ機とかお古になったら検討してもいいかも
 なおインストールが簡単かは謎
 
-* venvを作り直す
+* TensorRT(Lsmith)を使う
+
+- [[Lsmith]]
+- 使いこなすのは大変
+
+* venvをいったん消して作り直す
 
 Windows再インストール並みの最終手段。
 最新の1111に必要なものしか入らなくなるので軽くなる、かも。
@@ -267,20 +404,5 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 * GPUを買い替える
 
 {{{give me money}}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

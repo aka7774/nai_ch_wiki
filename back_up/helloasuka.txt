@@ -82,6 +82,18 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3060|12GB|Core i5-13600KF|40.88秒|40.09|--xformers --opt-channelslast --administrator|Windows11 torch: 1.13.1+cu117 xformers: 0.0.16rc425  cuDNN 8.8.1 Afterburner PowerLimit80%|
+|RTX 3060|12GB|Core i5-6500|49秒|48.49|なし|Windows10 torch: 1.13.1+cu117|
+|RTX 3060|12GB|Core i5-6500|42秒|41.61|--xformers --opt-channelslast|Windows10 torch: 1.13.1+cu117,xformers: 0.0.16rc425|
+|RTX 3060|12GB|Core i5-6500|41秒|40.27|--xformers --opt-channelslast|Windows10 torch: 1.13.1+cu117,xformers: 0.0.16rc425|
+|RTX 3060|12GB|Core i5-6500|51秒|50.60|なし|Windows10 torch: 2.0.0+cu118|
+|RTX 3060|12GB|Core i5-6500|42秒|41.83|--opt-sdp-no-mem-attention --opt-channelslast|Windows10 torch: 2.0.0+cu118|
+|RTX 3060|12GB|Core i5-6500|43秒|42.49|--opt-sdp-attention --opt-channelslast|Windows10 torch: 2.0.0+cu118|
+|RTX 3060|12GB|Core i5-6500|42秒|41.65|--xformers --opt-channelslast|Windows10 torch: 2.0.0+cu118 xformers: 0.0.17+c36468d.d20230319(独自ビルド)|
+|RTX 4090|24GB|Ryzen 7 5800X|14秒|13.14|--api --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118 cuddn 8.8.1 OS起動直後|
+|RTX 4090|24GB|Ryzen 7 5800X|16秒|14.54|xformers opt-channelslast|torch: 1.13.1+cu117 cudnn 8.8.1 OS起動直後|
+|RTX 4090|24GB|Ryzen 7 5800X|16秒|15.62|xformers opt-channelslast|torch: 1.13.1+cu117 cudnn 8.8.1|
+|RTX 4090|24GB|Core i9-13900k||10.17|--xformers --no-half-vae|cudnn 8.8.0|
 |RTX 2060|6GB|Core i7-9700k||46.34|xformers opt-channelslast|メモリ16gb|
 |RTX3080|10GB|Core i5-13600K|24秒|22.72|xformers|RAM32GB, Win11|
 |RTX 3080Ti|12GB|Core i7-12700||20.56|--xformers|Windows11Pro 64bit,ROG STRIX GeForceRTX3080Ti,DDR4メモリ64GB|
@@ -230,6 +242,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4090|24GB|Core i9-13900k||7.16|--xformers --no-half-vae|cudnn 8.8.0|
 |RTX 4090|24GB|Ryzen 9 5900X||11.85|--xformers --opt-channelslast --disable-nan-check --no-half-vae --vae-dir  --ckpt-dir|BatchCount2、BatchSize5 ckptはHDDに配置python:3.10.10　torch: 1.13.1+cu117　xformers: 0.0.16　cudnn 8.8.0GPU：afterburnerによる電力制限(PL40の180wぐらい)　CPU：低電圧化+周波数固定4.0GHz|
 |RTX 4070 Ti|12GB|Ryzen 9 3900||16.80|--xformers  --no-half-vae --opt-channelslast  --autolaunch --theme dark|Batch Count 2、Batch Size 5 Windows11 Memory:32G|
 |RTX 4070 Ti|12GB|Ryzen 7 7700X||16.52|--xformers --opt-channelslast|Batch Count 2、Batch Size 5|
@@ -255,6 +268,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4090|24GB|Core i9-13900k||6.97|--xformers --no-half-vae|cudnn 8.8.0|
 ||||||||
 |参考)Google ColaboratoryA100|40GB|Xeon @2.20Ghz 6C/12T|6秒|6.||↓のクラウド参考地から転載|
 |}
@@ -263,6 +277,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~サービス名|w(100px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken|オプション|備考|
+|Google Colaboratory|NVIDIA Tesla T4|15GB|||44.93|--opt-sdp-no-mem-attention --opt-channelslast|conda Python 3.10.9torch 2.0.0xformersなし|
 |Google Colaboratory|NVIDIA Tesla T4|15GB|||51.66|xformers opt-channelslast|conda Python 3.9.12 ckptを38c1ebe3(Anyv3-fp16)にすると47.48|
 |Google Compute Engine|NVIDIA Tesla V100|16GB HBM2|n1-standard-4 SkylakeXeon 4C|1分45秒|31.0|--share --gradio-debug --gradio-auth|xformers無し、count2 size5なら19.5秒|
 |Google Compute Engine|NVIDIA Tesla T4|16GB|n1-standard-4 SkylakeXeon 4C|1分5秒|63.11|--share --gradio-debug --gradio-auth|xformers無しインスタンスはアメリカ西海岸|
