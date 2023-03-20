@@ -82,6 +82,9 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4070Ti|12GB|Core i7-9700K|19|19.36|--xformers|torch: 1.13.1+cu117 cudnn 8.8.1 OS起動直後|
+|RTX 4090|24GB|Ryzen 7 5800X|14秒|13.05|xformers opt-channelslast|torch: 2.1.0.dev20230320+cu118 xformers: 0.0.17+c36468d.d20230320 (自分でビルド)|
+|RTX 3090|24GB|Ryzen 5 3600|18秒|17.56|--opt-sdp-no-mem-attention --opt-channelslast --no-half-vae|Windows11 torch: 2.0.0+cu118|
 |RTX 3060|12GB|Core i5-13600KF|40.88秒|40.09|--xformers --opt-channelslast --administrator|Windows11 torch: 1.13.1+cu117 xformers: 0.0.16rc425  cuDNN 8.8.1 Afterburner PowerLimit80%|
 |RTX 3060|12GB|Core i5-6500|49秒|48.49|なし|Windows10 torch: 1.13.1+cu117|
 |RTX 3060|12GB|Core i5-6500|42秒|41.61|--xformers --opt-channelslast|Windows10 torch: 1.13.1+cu117,xformers: 0.0.16rc425|

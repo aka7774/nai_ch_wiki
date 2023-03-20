@@ -253,6 +253,21 @@ TextualInversionで悪い手の形を学習させて、Embeddingでネガティ�
 - 中華TI
 --https://github.com/autumn-moon-py/aimodel-embeddings
 
+**173スレ786 Low ponytail TI
+https://fate.5ch.net/test/read.cgi/liveuranus/1679155226/786
+https://huggingface.co/SenY/embeddings/resolve/main/low%20ponytail.safetensors
+=|BOX|
+786今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e986-o10k)2023/03/20(月) 16:29:48.54ID:QGM6Fydu0
+素だもlow ponytailが全然効かんくて困ってたのでTI作ったの公開します
+https://huggingface.co/SenY/embeddings/resolve/main/low%20ponytail.safetensors
+https://huggingface.co/SenY/embeddings/resolve/main/low%20ponytail.preview.png
+
+https://i.imgur.com/Hi5YnvE.jpg
+https://i.imgur.com/8F8xMWY.jpg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ytshUw5zGx-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/ytshUw5zGx.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/W5ZC8bbOZJ-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/W5ZC8bbOZJ.jpg]]
+
+
 * 学習系リソース
 ** 透明正則化画像
 512x512、768x768、1024x1024の透明画像詰め合わせ　各1000枚ずつ

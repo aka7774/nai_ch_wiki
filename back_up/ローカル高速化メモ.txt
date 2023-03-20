@@ -8,6 +8,12 @@ torch2化、torch.compile改造ともにVRAMの消費量が増えます。
 * モジュールによる高速化
 
 2023-03-19現在、たぶんこの順で速い。
+なお、''Torch2.0にしてもわずかに速くなるだけ''なので無理に2.0にしなくてもいい。
+torch.compile()でさらに高速化するが、以下の欠点があるのでお勧めしない。
+- コンパイルそのものに時間がかかる
+- モデル、解像度、Batch size変更の度にコンパイルされる
+- WebUIにとって想定外の処理のため不安定。
+- Linuxのみ対応
 
 1. torch2 cu118 --opt-sdp-no-mem-attention torch.compile(不安定)(Linux限定)
 2. torch2 cu118 --opt-sdp-no-mem-attention
@@ -49,35 +55,18 @@ xformersと併用、共存はできない
 xformersよりVRAM使用量が増えるため、学習や高解像度生成時には注意
 [END]
 
-[+]以前の方法(xformersをtorch2用にビルドする)
-* torchを2.0にする(非推奨)
-生成が5%以上速くなるが、''いくつかの機能が動作しなくなる可能性があるため非推奨''
-Linuxであればさらに高速化するが、モデル、解像度、Batch sizeの変更の度にコンパイルでかなり待たされるのでやる価値は低い。
-(txt2img,img2img,Extra network, ControlNetは動作確認済)
-↓に更新方法が書いてある。
-https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
-※xformersはvenvでのビルドはエラーで動作しないかも
+[+]オプション:xformersをtorch2用にビルドする(赤ちゃんには難しい)
+- ビルド方法(Windows)
+1.以下のコマンドを実行する。
+※venvは使うな! 終わった後はtorch,torchvision,torchaudio,pytorch-tritonのアンインストール推奨
+> pip3 install torch==2.0.0 torchaudio pytorch-triton --extra-index-url https://download.pytorch.org/whl/cu118 --force
 
-** 補足
-- パッケージ名について
-Installセクションステップ3のpip3はtritonのパッケージ名が変わっているため失敗する。代わりに以下のコマンドを実行する。
-> pip3 install --pre torch torchvision torchaudio pytorch-triton --extra-index-url https://download.pytorch.org/whl/nightly/cu118 --force
-
-
-- Windowsの補足事項
-WindowsではIntallセクションのステップ5がうまくいかない。ステップ4まで進めたら、gitでxformersをクローンしてビルドする必要あり。
-[[ここの手順>>https://michyo.net/sempetit/install-xformers-windows/]]の「xFormers のダウンロード」まで進めた後、
+2.[[ここの手順>>https://michyo.net/sempetit/install-xformers-windows/]]の「xFormers のビルド」の「xFormers が依存しているライブラリをインストール」まで進めた後、
 xformersフォルダ内で以下のコマンドを実行する。
 > python setup.py build
 ビルドされるのでしばらく待つ。その後xformersフォルダ内で以下のコマンドを実行する。
-> python setup.py bdist_wheel
-その後xfomers\dist\にwhlファイルができるので、それをvenv/Scriptsにコピーしてvenv側のpythonでpip install ファイル名.whlでインストールする。
-
-- Linuxの補足事項
-torch.compile()を利用するとdynamoのエラーで生成ができないため、stable-diffusion-webui\repositories\stable-diffusion-stability-ai\ldm\modules\diffusionmodules\util.pyの113-114行目を次のコードで置き換える。
-> return CheckpointFunction.apply(func, len(inputs), *inputs, *params)
-
-※Windowsは非対応なのでtorch.compile()があっても速くならない
+> python setup.py bdist
+その後xfomers\dist\にzipファイルができるので、それの中身のxformersとxformers-〇〇-egg-infoを1111のvenv/Scriptsにコピーする。
 [END]
 
 ** xformers
@@ -180,11 +169,13 @@ xformersは必要ない。
 以下の警告が出るけど無視しても動く。
 
 =|BOX|
-/home/user/stable-diffusion-webui/venv/lib/python3.10/site-packages/torchvision/transforms/functional_tensor.py:5: UserWarning: The torchvision.transforms.functional_tensor module is deprecated in 0.15 and will be **removed in 0.17**. Please don't rely on it. You probably just need to use APIs in torchvision.transforms.functional or in torchvision.transforms.v2.functional.
+/home/user/stable-diffusion-webui/venv/lib/python3.10/site-packages/torchvision/transforms/functional_tensor.py:5: 
+UserWarning: The torchvision.transforms.functional_tensor module is deprecated in 0.15 and will be **removed in 0.17**. 
+Please don't rely on it. You probably just need to use APIs in torchvision.transforms.functional or in torchvision.transforms.v2.functional.
   warnings.warn(
 ||=
 
-- torch2用にビルドされたxformersは現状存在しない
+- torch2用にビルドされたxformersは現状存在しない(自前でビルドが必要)
 - xformersのビルドは茨の道
 
 必要なかったこと
@@ -200,90 +191,14 @@ xformersは必要ない。
 環境によっては効果が無かったり逆に遅くなったりするらしいので比較検討しましょう。
 
 * cudnnのバージョンアップ(RTX4000シリーズでは必須)
-
 標準でインストールされるcudnn関係のDLLが古い(4000シリーズ未対応)為、対応版(cudnn8.7.0)に置き換える
 最新版(2023-03-19現在だと8.8.1)に置き換えることでさらなる高速化が期待できるかも。
 
-+https://developer.nvidia.com/rdp/cudnn-download より Local Installer for Windows (Zip) をダウンロードする~~※メールアドレス登録が必要かもしれない
++https://developer.nvidia.com/rdp/cudnn-download より Local Installer for Windows (Zip) をダウンロードする~~※NVIDIA開発者アカウントが必要
 +ダウンロードしたzipファイル(cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip)を展開し、binフォルダ内の7ファイルを取り出す
 +stable-diffusion-main\venv\Lib\site-packages\torch\lib 内に上書きコピーする
 
-
-[+]以前の方法
-4090で高速化する方法。3060でもほんのちょっとだけ早くなったとの報告あり。
-
-- 更新手順(Windows用)
-1.エクスプローラーでstable-diffusion-webui/venv/Scriptsフォルダを開き、右クリック→ターミナルで開く(多分Win10ではPowershellで開く)でPowershellを開く
-2.以下のコマンドを実行
-> .\Activate.ps1
-3.以下のコマンドを実行
-> pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
-4.https://pomf2.lain.la/f/5u34v576.7zをDLして中身を「stable-diffusion-webui\venv\Lib\site-packages\torch\lib」にコピーする
-5.以下のコマンドを実行
-> pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
-5.Powershellウィンドウは閉じて、webuiフォルダ直下のwebui-user.batを開き、set COMMANDLINE_ARGS=の後ろに--xformers --opt-channelslastを追加して保存する
-
-ソース:なんJNVA部★84 
-http://fate.5ch.net/test/read.cgi/liveuranus/1667387353/
-[+]
-> 265 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fb72-iO6U)[sage] 投稿日：2022/11/02(水) 23:51:01.19 ID:n0RTOjsJ0 [5/6] ~~
-> >>239>>240 ~~
-> 俺も2週間ぐらい同じ感じだったけどxformersオプション入れるだけじゃ多分駄目なんよ ~~
-> これから4090買う人のために書いておく こっちはドライバは最新 Win10 CPUは5900X MEM32G ~~
-> webuiのvenv内に入ってから(stable-diffusion-webui\venv\Scripts\activateで入れる) ~~
-> pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116 ~~
-> https://pomf2.lain.la/f/5u34v576.7z ~~
-> ↑のファイルをstable-diffusion-webui\venv\Lib\site-packages\torch\lib ~~
-> にコピペ ~~
-> pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116 ~~
->  ~~
-> 266 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fb72-iO6U)[sage] 投稿日：2022/11/02(水) 23:51:28.93 ID:n0RTOjsJ0 [6/6] ~~
-> (続き) ~~
-> 起動オプションに追加 ~~
-> --xformers --opt-channelslast ~~
-> これで18it/sぐらい出るようになった ~~
-> Windows ディスプレイ設定→グラフィックの設定→GPUアクセラレータによるGPUスケジューリングをOFFで再起動する ~~
-> これで24it/s出るようになった うまくいったら報告頼む 環境壊れたらすまんvenv消してくれ ~~
-
-[END]
-* torchのバージョンとcudaのdllを入れ替える
-4090が主だけど、3090でも早くなった報告あり。
-自分の環境では2倍速近く早くなった。
-https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/2449#issuecomment-1320800317
-[END]
-
-* VAEをckptに内蔵する
-
-1111に標準で入っているCheckpoint Mergerでもできるようになっている
-マージ対象Aに内蔵先モデルを指定して、Interpolation Method を No interpolation 指定
-Bake in VAEで内蔵するVAEを選択してマージする
-
-[+]以前の方法
-116スレ559
-
-Checkpoint Mergerでマージすると色が薄くなる問題、Merge Blocvk Weightedで解決できそう
-
-Checkpoint Merger のMultiplierで指定してた値をMerge Block Weightedの IN00〜OUT11まで全部同じ値にして、base_alphaとM00を0にする(=ModelA側に寄せる)と発色がよくなる 
-[+]
-https://i.imgur.com/80TODwE.png
-[END]
-
-出てくる絵は微妙に変わるけど発色よくなってVAEが必要なくなっただけでも満足や
-
-↓のX/Yは上から
-- Checkpoint Mergerでマージしたもの
-- Merge Blocvk Weighted で全部↑のMultiplierと同じ値を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
-- Merge Blocvk Weighted でbase_alphaとM00に0を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
-[+]
-https://i.imgur.com/7chOcgA.jpg
-https://i.imgur.com/Q6p1jJI.jpg
-[END]
-[END]
-
 * モデルを軽量化する
-
-- ckptをsafetensorsに変換する
--- 最近はモデルをsafetensorsで配布するほうが主流になった。
 - pruneする
 -- VRAMの節約になるかも?
 - fp16化する
@@ -295,42 +210,11 @@ fp16化の副作用として、modules.devices.NansException が発生する。
  --no-half や--no-half-vae を追加する。速度は落ちる。
 
 たまに真っ黒画像が出てもいいから高速化したいのであれば、
- &#8211;disable-nan-check を追加する手もある。
+disable-nan-checkを追加する手もある。
 
-[+]以前の方法
-
-1111に標準で入っているCheckpoint Mergerでもできるようになっている
-マージ対象Aに変換したいモデルを指定して、Interpolation Method を No interpolation 指定
-Checkpoint formatをsafetensorにしてマージする
-
-116スレ612
-
->>559法とsafetensors変換を併用したらハローアスカ5秒短縮できたやで！
-
-1-1. 混ぜたいvaeを有効にしておく
-1-2. Merge Block Weightedを開く
-1-3. Model AとModel Bに同じckptを指定する
-1-4. Output Model Nameも何か入れておくと便利
-1-5. Run Merge
-
-2. できたckptをsafetensorsに変換(方法は下記)
-
-3-1. できたsafetensorsを選ぶ
-3-2. vaeをNoneにする
-
-ハローアスカ
-ckpt+vae 42.89
-safetensors 37.87
-多用するモデルで作っとけば普段使いもいけるでー 
-
-** 変換方法いろいろ
-
-- Pythonを使う https://pastebin.com/ijApuS6b
-- Colabを使う(今回はまわりくどいけど) [[ローカルの「ツール」]]
-[END]
+ちなみに、safetensor化とVAE埋め込みでは速くならない。
 
 * Extensionsの退避
-
 しばらく使わないときは Dreambooth Extension を削除する(もう使ってない?)
 起動時間が劇的に変わる
 
@@ -341,49 +225,15 @@ UIからオフにするだけではダメ
 フォルダごと別の場所に退避させとくとか、いっそバッサリ消すとか
 
 * Stepsを減らす
-
 出来るだけ少ないStepsでも期待通りの絵が出る方法を模索する。
 Euler a以外(収束するサンプラー)で再現できないか試す。
 DPM++ 2M Karrasは15Stepsでもそれなりに映えるのでおすすめ。
 UniPCはもっと良い感じ。
 
-* RamDiskを使う
-
-あんまり恩恵が無いと思う。
-
-[+]以前の方法
-1111 全部 RamDisk に突っ込んで高速化するのは、必要RAMのわりに恩恵がほとんど無いからおすすめしない。
-
-以前はモデルをマージする際に RamDisk が有用であるとされてきたが、RamDisk にあずかる恩恵はさらに少なくなっているかもしれない。
-2023年2月現在はモデルをメモリ上でマージしてくれる SuperMerger が公式で使えるようになっているので。
-
-詳しくは [[ローカルのExtensions]] の SuperMerger を参照。
-
-もし何らかの形で RamDisk を使うのであれば ImDisk Toolkit が使いやすい。
-https://sourceforge.net/projects/imdisk-toolkit/
-
-stable-diffusion-webui\models\Stable-diffusionにジャンクションをはるか、
-コマンドラインオプションで--ckpt-dirを指定して使う(こっちのが便利かも)
-*チェックポイントをRAMに保持する
-Settings->Stable Diffusion->Checkpoints to cache in RAM
-の値を変更すると、最後に読み込まれたチェックポイントをRAMに保持します。
-
-ちなみに、ほとんどのOS(Android等も)は一度読み込まれたファイルをRAMに保持する
-キャッシュ/スタンバイ領域というものがあり、
-このキャッシュ領域はメモリの空き容量に応じて可変します。
-(OSコアやプログラムで使用中のメモリ-総容量=キャッシュ/スタンバイメモリの最大値)
-例えば、メモリが32GBで10GB使用中の場合のキャッシュメモリは20GBですが、
-メモリにキャッシュされていないファイルを読み込み、総容量が20GBを超えると、
-メモリにキャッシュされたファイルのうち一番古いファイルがキャッシュメモリから破棄されるので、
-再度HDD/SSD等から読み込む作業が発生します。
-[END]
-
 * WSL2で使う
-
 [[1111_WSL2]]
 
 * Linuxに入れる
-
 仮想化ではなく生で挿入れる
 Windowsと比べて多少高速化するらしい・・・？
 虎の子のゲーミングPCでは厳しいやね
@@ -391,18 +241,18 @@ Windowsと比べて多少高速化するらしい・・・？
 なおインストールが簡単かは謎
 
 * TensorRT(Lsmith)を使う
-
 - [[Lsmith]]
 - 使いこなすのは大変
 
 * venvをいったん消して作り直す
-
 Windows再インストール並みの最終手段。
 最新の1111に必要なものしか入らなくなるので軽くなる、かも。
 Extension試しまくってると肥大化するので月イチくらいでやるといいかも。
 
 * GPUを買い替える
+ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。
+場合によっては他のパーツの買い替えも必要になるが、最も効果的。
+(give me money:3000.0)
 
-{{{give me money}}}
 
 

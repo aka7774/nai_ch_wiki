@@ -8,6 +8,35 @@
 
 #contents
 
+* 2023-03-20 Windows DefenderがVAEを脅威とみなす
+
+誤検出っぽい。safetensorsに変換して回避できる。
+
+173スレ577
+=|BOX|
+Checkpoint Mergerでvaeをsafetensorsにで変換する方法
+合ってるかどうか知らんが変換後も同様に機能はする
+一旦、vaeの拡張子をckptまたはsafetensorsに変更し、\stable-diffusion-webui\models\Stable-diffusion フォルダに置く
+※変更しないとCheckpoint Mergerで選択できないため
+例 nai.vae.pt → nai.ckpt
+画像の様な設定でMergeボタンをクリック
+https://i.imgur.com/E0YOXca.png
+nai.vae.safetensors (395,100KB)が生成される
+最初に一旦変更した拡張子を元に戻す
+||=
+
+https://huggingface.co/aka7774/fp16_safetensors/blob/main/anything-v4.0.vae.safetensors
+
+* 2023-03-18 torch2.0で高速化
+
+3/16頃に、nightlyではないtorch 2.0.0が公開された。
+172スレ908が言及している。
+※筆者が本スレを全部読み切れてないので、補足等あればお願いします。
+1111のissueや4chan、redditでも話題になっていた。
+
+導入するとVRAMの消費増大と引き換えに高速化の恩恵がある。
+詳しくは[[ローカル高速化メモ]]にまとめた。
+
 * 2023-03-11 新しいサンプラーUniPC
 以下のコミットでAuto1111に新しいサンプラーが実装
 + Merge pull request #7710 from space-nuko/unipc &#183; AUTOMATIC1111/stable-diffusion-webui@a11ce2b - https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/a11ce2b96cc933ebb9e10d46603a89457ddcb9df

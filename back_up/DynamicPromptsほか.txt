@@ -63,8 +63,24 @@ Extentionタブからインストールできるよ（元のドキュメント�
 ** 複数プロンプトの組み合わせ
 
 *** 変化型のプロンプト Variants
+
+=|BOX|
+A diamond ring set on a {gold|platinum} band
+||=
+
+と書くと、それは以下2通りのいずれかになるよ
+
+=|BOX|
+A diamond ring set on a gold band
+A diamond ring set on a platinum band
+||=
+
+
 *** 入れ子にした変化型 Nested variant
+
 *** ワイルドカード Wildcards
+
+（ここよく分かっていないので誰かお願いします）
 
 *** Combinatorial Generation
 Dynamic Promptsのデフォルト設定では、テンプレートからランダムなプロンプトが生成される。
@@ -87,5 +103,6 @@ dynamic promptの内部に、既にセットされたWildcard一覧があるの�
 
 > A mech-warrior in a post-apocalyptic setting. Digital illustration, Artstation. 8k resolution, Concept art, Detailed digital art
 
-## I'm feeling lucky
-## ランダムにウェイト変更 Attention grabber
+*** I'm feeling lucky
+*** ランダムにウェイト変更 Attention grabber
+
