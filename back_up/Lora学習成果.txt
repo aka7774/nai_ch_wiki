@@ -1816,6 +1816,55 @@ http://imgur.com/6jrY3q3.png
 あとBOMの作者ニキもこちらに？
 あっさり目の絵柄でエロが出来て最高や、愛用してるやでー
 ||=
+【StableDiffusion】AIｴﾛ画像情報交換17【NovelAI】 
+https://mercury.bbspink.com/test/read.cgi/erocg/1678721634/445
+=|BOX|
+445 名前：ブルマ卿 (ﾜｯﾁｮｲ f2e1-QDb6)[sage] 投稿日：2023/03/17(金) 17:41:29.09 ID:oXWTCOIQ0
+ブルマLoRAをアップデートしました。
+バージョンtrue_buruma230317d-burumaonly
+https://huggingface.co/kanaejun/true_buruma
+
+内容：
+・学習画像セットからブルマと下半身のものだけを取り出し再学習。Epoch: 20
+・体操服の学習は切り捨て。ターゲットワードはburumaで変更なし
+改善した点：
+・上半身の自由度が高まった
+・体型への影響が無くなった。腿はあるかも
+悪くなった点：
+・ブルマの品質が下がった（ただし学習画像を増やす事で改善する余地あり）
+・当然ながら本体Checkpointの中に体操服が無いと体操服が出ない
+
+＜大前提＞
+下着系（ブラも）、スカート系のプロンプト（LoRAもか）と激しく干渉するので
+それらとの併用は無理ゲーと思って下さい
+またそれらが邪魔する事が多いのでネガにそれらを仕込むと
+良いブルマ（ローライズではないなど）が出やすくなります
+
+majinAIに上げたのでInfoを参照下さい
+https://majinai.art/ja/i/tL6fQv7
+||=
+【StableDiffusion】AIｴﾛ画像情報交換18【NovelAI】 
+https://mercury.bbspink.com/test/read.cgi/erocg/1679322640/57
+=|BOX|
+57 名前：ブルマ卿 (ﾜｯﾁｮｲ bfe1-a1qf)[sage] 投稿日：2023/03/21(火) 16:26:11.20 ID:I5qDrL3W0
+ブルマLoRAをアップデートしました。これを正式バージョンといたします
+buruma_gym_uniform_TrueBuruma10.safetensors
+https://huggingface.co/kanaejun/true_buruma
+
+・学習画像を倍の80点に。目に見えて品質が上がりました
+・エッチなやつも数点（手マンぐらいですが）乳首も
+・ブルマに寄った画像にはNSFWを入れた（ちんちん描写率が上がった模様）
+・2girlsも少々入れた
+・体操服の情報を増やした
+・前スレのLoRA Block Weightをいじる技は有効（配布ドキュメント参照）
+欠点
+・色違いブルマがより一層出ない（我慢して）
+
+マニア的には、ブルマの腰のゴム紐が描写できる様になったのと
+股下のクロッチ線が２重にならなくなったので満足です
+
+検証勢の皆様ありがとうございました！コーヒー代も引き続き募集ー
+||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1oJ79JcIvv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1oJ79JcIvv.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/GoaACzlP5j-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/GoaACzlP5j.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vlMNGtpo6S-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/vlMNGtpo6S.png]]
 
 ***171スレ896 学校LoRA
@@ -1912,7 +1961,9 @@ https://i.imgur.com/KQJdLk8.png
 
 ***173スレ260 ぶっかけLora
 https://fate.5ch.net/test/read.cgi/liveuranus/1679155226/260
-&#128317;https://huggingface.co/GeorgePan/bukkake
+https://fate.5ch.net/test/read.cgi/liveuranus/1679155226/923
+%%&#128317;https://huggingface.co/GeorgePan/bukkake%%
+&#128317;https://huggingface.co/GeorgePan/cum_on_any/tree/main
 =|BOX|
 260 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4154-F0re)[sage] 投稿日：2023/03/19(日) 18:37:22.68 ID:0zAEqYnc0
 試作段階やが、ワイ好みのぶっかけLora作ったんで共有してみるやで。「cum on &#65374;&#65374;」で機能するはずや。
@@ -1920,6 +1971,14 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1679155226/260
 https://huggingface.co/GeorgePan/bukkake
 https://i.imgur.com/NGwnpP1.png　https://i.imgur.com/eWYHIlM.png
 https://i.imgur.com/QtLJKK3.png　https://i.imgur.com/4pRgNml.png
+
+923 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4154-F0re)[sage] 投稿日：2023/03/20(月) 20:59:07.51 ID:wJkROuZa0 [2/3]
+ぶっかけLoraの構図事故がちょっとマシになったやで。あとトリガーワード分かりやすいようにファイル名変えたわ。
+今回適用した階層は「　1,1,1,1,0,0,0,1,0,0,1,1,1,1,1,1,1　」や。学習素材の影響で構図が引っ張られがちなLoraの助けになるかもしれん。
+https://huggingface.co/GeorgePan/cum_on_any/tree/main
+
+ちなhuggingfaceで古いファイル削除するのはどうしたらええんやろか・・・。
+
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/t7tr_9MBuq-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/t7tr_9MBuq.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0W2pQEwcsM-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0W2pQEwcsM.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xz0GQbPxSa-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xz0GQbPxSa.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TkC2pAU8EL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TkC2pAU8EL.png]]
 
@@ -1953,8 +2012,61 @@ https://civitai.com/models/21765/korean-ponytail-lora
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3oFuHIpRJn-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3oFuHIpRJn.png]]
 
+***173スレ961 slingshot-swimsuit
+https://fate.5ch.net/test/read.cgi/liveuranus/1679155226/961
+&#128317;https://civitai.com/models/21948/slingshot-swimsuit
+=|BOX|
+890 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ d160-7LVk)[] 投稿日：2023/03/20(月) 19:44:36.18 ID:puTMkAwV0
+https://i.imgur.com/dpR7hI6.jpg
+https://i.imgur.com/akQekm5.jpg
+https://i.imgur.com/UWm9Sjq.jpg
+https://i.imgur.com/xVUuPJh.jpg
+ギャルニキのおかげでスリングショットLoraと合わせて無限に生成できてまう
+>>495ニキサンガツやで！ニキみたいに色々なプロンプト扱えるように精進するで
+しかしdanbooruにないようなプロンプトはどこから学んでるんやろか
 
+>>869
+そういやベンチ回したことなかったわ
+FFベンチ回してみるわ
 
+961 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ d160-7LVk)[] 投稿日：2023/03/20(月) 23:10:16.78 ID:puTMkAwV0
+とりあえず貼っとくで、雰囲気でLoraやってるから変なパラメータとか見つけたら教えてｸﾚﾒﾝｽ
+正面からだけやが、貧乳から爆乳まで学習素材に混ぜたからどの胸の大きさでも出ると思う…
+slingshot swimsuitがトリガーやが、(red slingshot swimsuit:1.1)とかで強度強めで色指定すればその色が出やすい希ガス
+https://civitai.com/models/21948/slingshot-swimsuit
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kFX47xlBLx-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/kFX47xlBLx.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0lApZ9ZJvr-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/0lApZ9ZJvr.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OJUHSBY_K4-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/OJUHSBY_K4.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/o9kct_Sqd1-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/o9kct_Sqd1.jpg]]
 
+***174スレ353 ブルマ体操服LoRAアップデート
+https://fate.5ch.net/test/read.cgi/liveuranus/1679326948/353
+&#128317;https://huggingface.co/kanaejun/true_buruma
+=|BOX|
+353 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 13cb-w2xp)[sage] 投稿日：2023/03/21(火) 16:55:46.10 ID:D78qG4Wx0
+ブルマ体操服LoRAアップデートしたで
+学習画像80点に倍増、ユーザーモデル側の画風を侵食しなくなった
+https://huggingface.co/kanaejun/true_buruma
+
+ロリ巨乳モデルと相性が悪いという情報をもろたんだけど
+LoRA block weightでOUT04を弱めると上半身の効果が薄まって共存可能や
+なのでセラブルも可能
+http://imgur.com/klpXIll.png
+sweatで透けチクも(LBWなし)
+http://imgur.com/OlKZz1D.png
+
+あとポジ側プロンプトにnsfwを入れるとブルマが出ないというのもあった(ユーザー側モデル依存だと思う)ので学習タグにnsfwを入れといた
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8t1HbblwXk-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/8t1HbblwXk.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SNXPeO4Htz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SNXPeO4Htz.png]]
+
+***174スレ449 ラーメンを正しく食べるLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1679326948/449
+&#128317;https://civitai.com/models/22359/betterrameneating
+=|BOX|
+449 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6b38-RGcQ)[] 投稿日：2023/03/21(火) 21:03:05.44 ID:muLgoGZm0 [3/3]
+マージVAEとラーメンを正しく食べるLoRA作ったで
+VAEのほうは彩度はNAIより若干高くてkl-f8-anime2みたいににじまずにNAIよりくっきりした絵になるで
+https://civitai.com/models/22354/clearvae
+https://civitai.com/models/22359/betterrameneating
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2gsfegvcMp-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2gsfegvcMp.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/I_WDKi0DVI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/I_WDKi0DVI.png]]
 
 

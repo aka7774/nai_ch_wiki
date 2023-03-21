@@ -160,18 +160,26 @@ mix1009/model-keyword: Automatic1111 WEBUI extension to autofill keyword for cus
 ** UnivAICharGen｜Umi AI: A WebUI Wildcard Mod
 https://github.com/Klokinator/UnivAICharGen
 キャラクタークリエイター、または無限ガチャ
+Dynamic Promptsを強化したような拡張機能、Dynamic Prompts,Unpromptedと競合する
 インストールして、プロンプトに以下のようなコマンドを打つと、生成時ごとにそこにランダムなプロンプトが追加される。
 =|BOX|
-__CORE__  ←これはSFW用（たぶん）
-__NSFW__  ←これはNSFW用
+<[AIOGirl]> 完全ランダム
+<[Preset]> プリセットの中からランダム
+<[AIOGirl][SFW|--NSFW]> えっちじゃないやつのみ
+<[Preset][--Male|Female][Robots]> メカ娘のみ
 ||=
-
+タグの詳しい解説：https://github.com/Klokinator/Umi-AI/wiki/Umi-AI's-Tagging-System
+Dynamic Promptsの機能もそのまま使える
+=|BOX|
+プロンプトに {flat chest|small breasts|medium breasts|huge breasts} と書くとランダムで乳の大きさが変わる
+__breasts__ と書いて、extensions/UnivAICharGen/wildcards/breasts.txt に改行区切りで乳のサイズを書いても同じ
+||=
+Dynamic Promptsと違い、PNG Infoにどのプロンプトが選ばれたか表示される
 PCを放置するタイミングで仕掛けるとバリエーション豊富な画像が生成されていて楽しい。
-
 ▼ 参考
 - PatreonでのUmi AI: The Ultimate Character Creator | Umi, the Cryoverse AI - https://www.patreon.com/posts/umi-ai-ultimate-73560593
-- ガチャガチャ感覚で美麗キャラクター画像を生成しまくれる拡張機能「UnivAICharGen」の使い方まとめ - GIGAZINE - https://gigazine.net/news/20221115-umi-ai-stable-diffusion/
-
+//- ガチャガチャ感覚で美麗キャラクター画像を生成しまくれる拡張機能「UnivAICharGen」の使い方まとめ - GIGAZINE - https://gigazine.net/news/20221115-umi-ai-stable-diffusion/
+//古い情報なのでコメントアウト
 ** Push to &#129303; Hugging Face
 
 Hugging Faceアップローダー
@@ -362,5 +370,6 @@ HN/Loraは仕様が変わったので削除。
 - システム情報
 - 1111とかvenvとかの情報を表示する
 - 「なんか動かないんだけど！」って時は、エラーの内容とこの表示内容をコピペして相談しましょう
+
 
 

@@ -24,6 +24,7 @@ NovelAIのVAE
 (2)orangemix.vae.ptはnaiのVAEを入手性を考慮してリネームして置いただけものです。Torrentめんどくさい用に一応貼っておく
 https://huggingface.co/WarriorMama777/OrangeMixs/tree/main/VAEs
 nai.vae.pt
+''Windows Defenderがマルウェアの誤検出で勝手に消去するので注意!safetensor変換か除外するとええで''
 
 - Anything3,4およびevt2のVAEはNovelAIのものと一緒(ファイルサイズ、生成結果、MD5ハッシュの一致を確認済み)
 
@@ -95,4 +96,5 @@ eCustomAがはっきりした色彩とぼけの少ない細部描写で優れて
 
 若干、eCustomAは色飽和気味かもしれない? ぱきっとした描写はよき
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/b1mEKLGJae.jpg,800)
+
 

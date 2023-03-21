@@ -1,7 +1,7 @@
 sd-scriptsに追加して使うEasy Training Scriptsの ArgsList.py の雑な日本語コメント入りバージョン
 注）2024/02/24版から、設定は lora_train_command_line.py から ArgsList.py に変更されています。
 
-以下、設定に必要な箇所(13行目から179行目)のみ記載（2023.03.14現在Ver）
+以下、設定に必要な箇所(13行目から181行目)のみ記載（2023.03.21現在Ver）
 設定箇所は
 -self.base_model: str =
 から
@@ -54,6 +54,8 @@ class ArgStore:
                                                     # cosine_with_restartsを使用する場合にのみ関係します
         self.scheduler_power: Union[float, None] = 1  # オプションです。多項式の次数を表します。
                                                       # polynomialを使用する場合にのみ関係します
+        self.lr_scheduler_type: Union[str, None] = None  # カスタムスケジューラーを指定するための変数
+        self.lr_scheduler_args: Union[dict[str:str], None] = None  # カスタムスケジューラーに付随する引数
 
         # 学習率引数
         self.learning_rate: Union[float, None] = 1e-4  # AdamWはこれを必要としませんが、他のオプティマイザーは必要とする場合があります。
@@ -166,7 +168,7 @@ class ArgStore:
         self.caption_extension: str = ".txt"  #.caption ファイルを使う理由がない限り、この値は .txt のままにする必要があります。
         self.max_clip_token_length: Union[int, None] = 150  # txt ファイル内のプロンプトがこの値を超えることはほとんどないでしょう。
         self.save_last_n_epochs_state: Union[int, None] = None  #  役に立つと思われる場面はありません。
-        self.num_workers: int = 8  # イメージをロードするためのスレッド数です。
+        self.num_workers: int = 1  # イメージをロードするためのスレッド数です。
                                    # 低くするとエポックの開始が速くなりますが、データのロードが遅くなります。
                                    # ここでは、この値を減らすと訓練時間も増えると仮定しています。
         self.persistent_workers: bool = True  # スレッドを永続的にします。これにより、エポック間のラグも減少/消滅します。

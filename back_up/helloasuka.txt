@@ -82,6 +82,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4090|24GB|Core i9-13900K||9.51|--api --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
+|RTX 4070 Ti|12GB|Ryzen 7 5700X|21秒|20.31|--xformers|torch1.13.1+cu117 cuDNN8.8.1|
 |RTX 4070Ti|12GB|Core i7-9700K|19|19.36|--xformers|torch: 1.13.1+cu117 cudnn 8.8.1 OS起動直後|
 |RTX 4090|24GB|Ryzen 7 5800X|14秒|13.05|xformers opt-channelslast|torch: 2.1.0.dev20230320+cu118 xformers: 0.0.17+c36468d.d20230320 (自分でビルド)|
 |RTX 3090|24GB|Ryzen 5 3600|18秒|17.56|--opt-sdp-no-mem-attention --opt-channelslast --no-half-vae|Windows11 torch: 2.0.0+cu118|
@@ -245,6 +247,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX3060|||||||
 |RTX 4090|24GB|Core i9-13900k||7.16|--xformers --no-half-vae|cudnn 8.8.0|
 |RTX 4090|24GB|Ryzen 9 5900X||11.85|--xformers --opt-channelslast --disable-nan-check --no-half-vae --vae-dir  --ckpt-dir|BatchCount2、BatchSize5 ckptはHDDに配置python:3.10.10　torch: 1.13.1+cu117　xformers: 0.0.16　cudnn 8.8.0GPU：afterburnerによる電力制限(PL40の180wぐらい)　CPU：低電圧化+周波数固定4.0GHz|
 |RTX 4070 Ti|12GB|Ryzen 9 3900||16.80|--xformers  --no-half-vae --opt-channelslast  --autolaunch --theme dark|Batch Count 2、Batch Size 5 Windows11 Memory:32G|

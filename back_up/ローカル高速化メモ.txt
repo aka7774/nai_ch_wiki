@@ -55,6 +55,48 @@ xformersと併用、共存はできない
 xformersよりVRAM使用量が増えるため、学習や高解像度生成時には注意
 [END]
 
+[+]導入した人たちの感想（ある程度集まったらまとめます）
+=||
+297今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ d112-SwXs)2023/03/19(日) 20:04:41.62ID:pGBhW2el0
+ワイも
+torch: 2.0.0+cu118
+にして、xformersじゃなくsdpっていうのにしたんやけど
+30it/sが35it/sになったから効果はあったと思うわ
+
+ただし生成結果が変わって前の絵を全て捨てる事になる諸刃の剣やな
+
+336今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a1c3-7LVk)2023/03/19(日) 20:55:05.01ID:Mipkannl0>>345
+torch2.0にしたらなんかVRAMの消費量上がる？
+なんかすぐにメモリアウトするし、生成後にメモリ使用率が下がらんくなった
+当方3060TI　vram8Gや
+
+459今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1154-CSnB)2023/03/20(月) 01:02:56.60ID:fmUx+vru0
+>>449
+起動時のコマンドラインに--opt-sdp-no-mem-attention付けた？x-formerの代わりや
+--opt-sdp-attentionの方が速いとか言うけどこっちは生成する度に結果が微妙に違うガバガバやし上とほぼ速度差なかったわ
+
+467今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 13ba-2lPJ)2023/03/20(月) 01:26:42.72ID:0uuy3D7h0>>516
+torch2にしたらddetailer使えなくなってた
+
+488今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1154-BQ3C)2023/03/20(月) 02:09:36.21ID:mGnI1SHN0>>493
+>>449だが、ちゃんとアスカベンチ回して全部計測してきた
+RTX4070ti
+　38.1s torch1.13.1+cu117
+　22.2s torch1.13.1+cu117+cudnn更新
+　19.9s torch2.0.0.1+cu118
+元々cudnnは更新済みだったけどそこから少しだけ早くなってたけど思ったほどではなかった
+こんなもんかな？
+
+583今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e17b-CSnB)2023/03/20(月) 10:47:01.35ID:zgEqc5Jw0
+torch2入れたけどlora使った時の生成速度上がって幸せになれた
+
+379今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c97b-DkPe)2023/03/21(火) 18:53:37.44ID:R54ixFAd0
+GTX1080でtorch2+cu118にxformerビルドして入れてみたが
+大体5秒くらいしか早くならんな
+RTX4090ほちい
+||=
+[END]
+
 [+]オプション:xformersをtorch2用にビルドする(赤ちゃんには難しい)
 - ビルド方法(Windows)
 1.以下のコマンドを実行する。
@@ -66,7 +108,7 @@ xformersフォルダ内で以下のコマンドを実行する。
 > python setup.py build
 ビルドされるのでしばらく待つ。その後xformersフォルダ内で以下のコマンドを実行する。
 > python setup.py bdist
-その後xfomers\dist\にzipファイルができるので、それの中身のxformersとxformers-〇〇-egg-infoを1111のvenv/Scriptsにコピーする。
+その後xfomers\dist\にzipファイルができるので、それの中身のxformersとxformers-〇〇-egg-infoを1111のvenv/Lib/site-packages/にコピーする。
 [END]
 
 ** xformers
@@ -198,6 +240,11 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
 +ダウンロードしたzipファイル(cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip)を展開し、binフォルダ内の7ファイルを取り出す
 +stable-diffusion-main\venv\Lib\site-packages\torch\lib 内に上書きコピーする
 
+* ハードウェアアクセラレーションによるGPUスケジューリング を無効にする
+やり方は[[こちら>>https://win11lab.info/win11-gpu-scheduling/#:~:text=%E6%9C%89%E5%8A%B9%E3%80%81%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95&text=%E5%B7%A6%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%88%E3%82%8A%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92,%E3%82%AA%E3%83%B3%E3%80%81%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%AA%E3%83%95%E3%81%AB%E3%81%97%E3%81%BE%E3%81%99%E3%80%82]]
+[[公式wiki>>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Optimizations]]にも記載がある
+[[redditによれば>>https://www.reddit.com/r/StableDiffusion/comments/y71q5k/4090_cudnn_performancespeed_fix_automatic1111/jcx2jx5/?context=8&depth=9]]速度が30%くらいかわることがあるとかないとか
+
 * モデルを軽量化する
 - pruneする
 -- VRAMの節約になるかも?
@@ -253,6 +300,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。
 場合によっては他のパーツの買い替えも必要になるが、最も効果的。
 (give me money:3000.0)
+
 
 
 

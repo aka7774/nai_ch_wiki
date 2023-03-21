@@ -100,6 +100,8 @@ call webui.bat
 | --sub-quad-q-chunk-size | SUB_QUAD_Q_CHUNK_SIZE | 1024 | 使用するサブ 2 次クロスアテンション層最適化のクエリチャンクサイズ | query chunk size for the sub-quadratic cross-attention layer optimization to use |
 | --sub-quad-kv-chunk-size | SUB_QUAD_KV_CHUNK_SIZE | None | 使用するサブ2次クロスアテンション層最適化のkVチャンクサイズ | kv chunk size for the sub-quadratic cross-attention layer optimization to use |
 | --sub-quad-chunk-threshold | SUB_QUAD_CHUNK_THRESHOLD | None | チャンクを使用するためのサブ2次クロスアテンション層最適化のVRAMしきい値の割合 | the percentage of VRAM threshold for the sub-quadratic cross-attention layer optimization to use chunking |
+| --opt-sdp-attention | None | False | スケールドドットプロダクトによるクロスアテンションレイヤー最適化を有効にする PyTorch 2.*が必要 | enable scaled dot product cross-attention layer optimization; requires PyTorch 2.* |
+| --opt-sdp-no-mem-attention | None | False | メモリ効率の良いアテンションをせず、スケールドドットプロダクトによるクロスアテンションレイヤーの最適化を有効にする 画像生成を決定論的にする（同シードで繰り返し生成しても同じ画像を生成する） PyTorch 2.*が必要 | enable scaled dot product cross-attention layer optimization without memory efficient attention, makes image generation deterministic; requires PyTorch 2.* |
 | --opt-channelslast | None | False | 4Dテンソルの代替レイアウトを有効にする。Tensorコア(16xx以上)を搭載したNVIDIA製GPUでのみ推論が速くなる可能性がある。 | Enable alternative layout for 4d tensors, may result in faster inference&#160;only&#160;on Nvidia cards with Tensor cores （16xx and higher） |
 | --disable-opt-split-attention | None | False | クロスアテンションレイヤーの最適化を強制的に無効にします | force-disables cross-attention layer optimization |
 | --disable-nan-check | None | False | 生成された画像/潜在空間でNaNが発生したか確認しない。CIでチェックポイントなしで実行するのに便利 | do not check if produced images/latent spaces have nans; useful for running without a checkpoint in CI |
