@@ -140,6 +140,8 @@ pip install --use-pep517 --upgrade -r requirements.txt
 https://github.com/Linaqruf/kohya-trainer
 
 * 学習用画像を置くフォルダの配置
+%%%sd-scripts で --dataset_config で設定ファイルを渡す場合は異なる%%%
+%%%https://github.com/kohya-ss/sd-scripts/blob/main/config_README-ja.md を読んで%%%
 -作者の解説が詳しい
 -- [[https://note.com/kohya_ss/n/nba4eceaa4594>>https://note.com/kohya_ss/n/nba4eceaa4594]]
 
@@ -186,6 +188,18 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/vrFirugtW9.png)
 [END]
 
+** Dataset Tag Editorで作成/編集
+たぶんとしあきがつくったやつ。サブディレクトリまで読んで一括でタグ付けしたり、慣れればかなり快適にタグ付けできる。
+
+*** タグ付け
++ まずフォルダ指定してLoad なんちゃら2つチェックでOverwrite選択してInterrogatorsを好みのやつ選択
++ Interrogator Settingsの下の閾値チェックしたら上のLoadで画像読み込みや
++ ほんで画像読み込みと同時にタグも内部で生成しとるから終わったら次は右上のタブFile by Selectionでどの画像に適用するか選択や
++ とりあえず右のAdd ALL Displayedですべての画像選択して下のApply selection filterで適用して最後に左上のSave all changeですべて適用や
+これでタグテキストが生成される
+空の000ファイルが出てくるのは編集前のテキストファイルのバックアップや
+
+
 **キャプション・タグの編集
 - タグは順序に影響を受けるので、一番最初に有効化したいタグを記述する
 - WD1.4Tagger等で自動生成したファイルには不要なタグが含まれたり誤認識されたタグが記載されたりするので編集する。
@@ -208,7 +222,7 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 *そもそも学習用画像ってどうやって加工するの
 - 本文で説明している kohya 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
 - あまりにも小さい画像(200pxとか)はUpscaylなどで拡大しておくか bucket_no_upscale をオンにする
-- 背景の切り抜きは・・・画像の大きさが揃ってないとめんどくさいなどうしよう・・・
+- 背景の切り抜きは画像の大きさを揃えて下記のツールでやると楽。
 - 切り抜く場合の背景色について (折りたたみ)
 [+]
 165スレ>>602
@@ -231,7 +245,22 @@ WebUI公式extension。背景を自動で除去します。アニメ画像用に
 
 : katanuki | https://github.com/aka7774/sd_katanuki
 WebUI用extension。anime-segmentation を 1111 で使えるようにしたやつ。画像の背景を透過したり白背景にしたりマスク画像を出力する
-
+: stable-diffusion-webui-rembg | https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg
+WebUI用extension。[[rembg>>https://github.com/danielgatis/rembg]] を 1111 で使えるようにしたやつ。動かんときはvenv消してみる。
+u2net_human_seg あたりがちょうど良さげ
+: 切り抜きノイズ除去ツール | https://12.gigafile.nu/0629-bc2ae51e82ab361567d60e0af3df9ef49
+174スレ>>294 切り抜きで残った半透明のノイズを削除したり白背景にしたりするツールを作ったで
+[+]
+機能は羅列するとこんな感じや
+(1)rembgやkatanukiで出力したマスク画像で画像を切り抜く
+(2)切り抜き済み画像の背景を白・黒・指定色に変更して出力
+ここからはノイズ消し機能
+(3)半透明を不透明にすることで切り抜き残しやノイズを可視化
+(4)(3)の半透明を薄い色から順番に削除した画像を出力することでノイズが消える設定を見つける
+(5)(4)の画像の設定を使うことでノイズを削除したうえで背景を白などに変更して出力
+(6)(5)のままだと半透明を削除したことで色の境目がはっきりしすぎてしまうので色の濃さに補正をかける
+例 アルファ値(透明度)が10以下を削除すると0の隣に11が来てしまうため、11を6くらいの色の濃さとする補正をかける、これが50%での補正で0&#65374;100％に変更可能
+[END]
 : Lama-Cleaner | https://github.com/Sanster/lama-cleaner
 AIで不純物とかを消してでっち上げるやつ。割と重い。windows用インストーラーあり。
 WebUI用extensionもある [[Extensions_URL>https://seesaawiki.jp/nai_ch/d/Extensions%5fURL#content_3_15]]
@@ -779,6 +808,8 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
+
 
 
 

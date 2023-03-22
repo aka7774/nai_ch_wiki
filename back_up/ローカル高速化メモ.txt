@@ -4,16 +4,17 @@
 
 torch2化、torch.compile改造ともにVRAMの消費量が増えます。
 高解像度生成などでVRAMがカツカツな人は取捨選択が必要かも。
+何倍も速くなるわけではない。xformersよりは良いかなってくらい。
 
-* モジュールによる高速化
-
-2023-03-19現在、たぶんこの順で速い。
-なお、''Torch2.0にしてもわずかに速くなるだけ''なので無理に2.0にしなくてもいい。
 torch.compile()でさらに高速化するが、以下の欠点があるのでお勧めしない。
 - コンパイルそのものに時間がかかる
 - モデル、解像度、Batch size変更の度にコンパイルされる
 - WebUIにとって想定外の処理のため不安定。
 - Linuxのみ対応
+
+* モジュールによる高速化
+
+2023-03-19現在、たぶんこの順で速い。
 
 1. torch2 cu118 --opt-sdp-no-mem-attention torch.compile(不安定)(Linux限定)
 2. torch2 cu118 --opt-sdp-no-mem-attention
@@ -115,11 +116,28 @@ xformersフォルダ内で以下のコマンドを実行する。
 
 xformersのインストールは1111の標準機能で簡単にできる。
 
+*** torch1の場合
+
 初めて導入する場合
  set COMMANDLINE_ARGS= --xformers
 
 古い環境から更新する場合
  set COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers
+
+*** torch2の場合
+
+ pip install --pre -U xformers
+でコンパイル無しで導入できるようになったらしい。
+
+=|BOX|
+アスカテストのtime token
+--xformers --opt-sdp-attention　18.50
+--xformers　20.30
+--opt-sdp-attention　18.47
+--opt-sdp-no-mem-attention　18.40
+--xformers --opt-sdp-no-mem-attention　18.60
+両方指定の場合はsdpが有効になってる雰囲気です
+||=
 
 [+]以前の方法
 * 高速化オプションの利用
@@ -246,21 +264,66 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
 [[redditによれば>>https://www.reddit.com/r/StableDiffusion/comments/y71q5k/4090_cudnn_performancespeed_fix_automatic1111/jcx2jx5/?context=8&depth=9]]速度が30%くらいかわることがあるとかないとか
 
 * モデルを軽量化する
+
+- ckptとvae.ptをsafetensorsに変換する
+-- 最近はckptよりsafetensorsで配布するほうが主流になった。
+-- vae.ptはWindows Defenderが誤検出を起こすので回避のためにも変換するのが良さそう
+--- 変換すると場合によって容量が約半分になる
 - pruneする
 -- VRAMの節約になるかも?
 - fp16化する
 
-fp16化の副作用として、modules.devices.NansException が発生する。
-特にVAEで発生しやすい。
+fp16化の副作用として、modules.devices.NansException が発生する。特にVAEで発生しやすい。
 
-対策としては、fp32で計算するように強制する。
+対策としては、fp32で計算するように強制する。(高速化としては本末転倒だけど)
  --no-half や--no-half-vae を追加する。速度は落ちる。
 
 たまに真っ黒画像が出てもいいから高速化したいのであれば、
 disable-nan-checkを追加する手もある。
 
-ちなみに、safetensor化とVAE埋め込みでは速くならない。
+** VAEをckptに内蔵する
 
+1111に標準で入っているCheckpoint Mergerでもできるようになっている
+マージ対象Aに内蔵先モデルを指定して、Interpolation Method を No interpolation 指定
+Bake in VAEで内蔵するVAEを選択してマージする
+
+fp16化したモデルにマージするとVAE部分もfp16になる。
+それによる高速化も起こりうるかも。
+高速化しないと言っている人もいるので検証できたら追記お願いします。
+
+ということでお気持ち表明に反証するで
+[+]
+複数のモデル、VAEで速度を計測したが誤差の範囲でしか変わらんかった。
+masterpiece, best quality,
+Negative prompt: lowres, low quality, bad anatomy, signature
+Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 11, Size: 512x512, Clip skip: 2, ENSD: 31337
+Batch size 2, Batch count 5
+
+-Counterfeit
+None:22.69s,21.73s
+kl-f8-anime2.pt:21.40s,21.72s
+kl-f8-anime2(fp16化):21.38s,21.70s
+novelai:21.58s,21.81s
+kl-f8のFP16化を埋め込んで生成:21.65s,21.61s
+kl-f8のFP16化を埋め込んでモデルをfp16化して生成:21.56s,21.68s
+
+-PastelMixPrunedFp16
+None:21.49s,21.54s
+kl-f8-anime2.pt:21.35s,21.67s
+kl-f8-anime2(fp16化):21.38s,21.70s
+novelai:21.45s,21.80s
+kl-f8のFP16化を埋め込んで生成:21.34s,21.68s
+
+-NovalAI
+None:21.66s,21.89s
+kl-f8-anime2.pt:21.29s,21.88s
+kl-f8-anime2(fp16化):21.51s,21.62s
+novelai:21.45s,21.80s
+kl-f8のFP16化を埋め込んで生成:21.55s,21.67s
+kl-f8のFP16化を埋め込んでモデルをfp16化して生成:21.45s,21.86s
+
+no-half系の引数つけてない限り''モデルもVAEも内部ではfloat16(half)で処理してる''から変わるはずがない。
+[END]
 * Extensionsの退避
 しばらく使わないときは Dreambooth Extension を削除する(もう使ってない?)
 起動時間が劇的に変わる
@@ -277,9 +340,41 @@ Euler a以外(収束するサンプラー)で再現できないか試す。
 DPM++ 2M Karrasは15Stepsでもそれなりに映えるのでおすすめ。
 UniPCはもっと良い感じ。
 
-* WSL2で使う
-[[1111_WSL2]]
+* メインメモリを使う
 
+モデルのロード時間を短縮するために、あらかじめRAMに読みこんでおくことが出来る。
+
+Settings - Stable Diffusion
+- Checkpoints to cache in RAM
+- VAE Checkpoints to cache in RAM
+
+SuperMergeでもモデル3つのトリプルマージまでRamで高速化できるようになった。
+詳しくは [[ローカルのExtensions]] の SuperMerger を参照。
+
+新しい機能などのために RamDisk が使いたくなったら ImDisk Toolkit が使いやすい。
+https://sourceforge.net/projects/imdisk-toolkit/
+
+1111 全部 RamDisk に突っ込んで高速化するのは、必要RAMのわりに恩恵がほとんど無いからおすすめしない。
+
+[+]
+ちなみに、ほとんどのOS(Android等も)は一度読み込まれたファイルをRAMに保持する
+キャッシュ/スタンバイ領域というものがあり、
+このキャッシュ領域はメモリの空き容量に応じて可変します。
+(OSコアやプログラムで使用中のメモリ-総容量=キャッシュ/スタンバイメモリの最大値)
+例えば、メモリが32GBで10GB使用中の場合のキャッシュメモリは20GBですが、
+メモリにキャッシュされていないファイルを読み込み、総容量が20GBを超えると、
+メモリにキャッシュされたファイルのうち一番古いファイルがキャッシュメモリから破棄されるので、
+再度HDD/SSD等から読み込む作業が発生します。
+[END]
+
+* WSL2で使う
+
+- [[1111_WSL2]]
+
+以前はLinuxにするだけで1〜2割速くなると言われていたが、
+cudnnのDLL差し替えや、
+Windows上で新しいバージョンのxformers等の導入がしやすくなったこともあり、
+どっちが速いか比較検討してみるのが良さそう。
 * Linuxに入れる
 仮想化ではなく生で挿入れる
 Windowsと比べて多少高速化するらしい・・・？
@@ -300,6 +395,8 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。
 場合によっては他のパーツの買い替えも必要になるが、最も効果的。
 (give me money:3000.0)
+
+
 
 
 

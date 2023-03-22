@@ -1,0 +1,120 @@
+* はじめに
+生成した画像をさらに高解像度に拡大する方法のまとめページ
+Automatic1111のHires.fixとその他さまざまな拡張機能がメインになりそうだけど単体で動作するツールもあるのでページはわけてある。
+
+* Automatic1111まわり
+
+** Hires.fix
+ビルトインのアップスケーリング機能
+
+- みんな雰囲気で使ってる
+- 沼が深い
+- 人体を破綻させる天才
+
+*** アップスケーラー
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1674833233/778
+778: 2023/01/29(日) 07:22:10.14 
+hires.fix 3倍とか空白に変なもん書き込みまくって使い物にならんだろ
+横長画像自体が破綻の元だし512×768のhires 2倍で良い
+重いサンプラー使って前後どっちも50stepで3060でも3分
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1674833233/782
+782:2023/01/29(日) 07:33:44.49 
+>>776
+ステップは20でじゅうぶんやで
+CFGは7
+これでクオリティ落とさずに速度改善するで
+サンプラーはDPM++2Mkarrasが速くてクオリティも良いで
+DDIMも独特な描き込みが増えて良い、DDIMの場合ステップ少し増やしてや
+SDEカラスはハイレゾで極端に遅くなる時があるのとハイレゾらしい書き込み量増加が物足りん時があるので
+ハイレゾの時は使わんくていいかな
+拡大後ってのはhires stepのことやろか？
+これはゼロでええで、いうほどディテール増えん
+アップスケールは描き込み増やしたいならlatent１択や
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1675113816/716
+716: 2023/02/01(水) 14:32:23.56 
+>>712
+というかt2iのアップスケーラーでもnone選べばi2iと一緒や
+いや正確には出力条件違うから細部は異なってくるんやけど拡大の方向性は一緒でグチャったりはしない
+あとは二次元系ならanime6Bはいい感じに絵を保ちながら線や陰影をはっきりさせて拡大してくれる
+
+というかアップスケーラーとしてはt2iのデフォのLatentがちょっと異質
+ノイズも潜在要素も拾いまくって再描写するから美麗系のモデルでうまくいくとゴージャスになるけどクリーチャー生まれまくるしシンプルアニメ系のモデルだと服融けたり線ぼやけるだけ
+
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1676865326/423
+423: 2023/02/20(月) 21:52:46.12 
+アップスケーラーは「Latent」がつくのとそれ以外で傾向が違う
+「Latent」は拡大時にディテールアップしてくれるがノイズ除去強度を下げるとボケたり絵が破綻したりする
+それ以外はディテールアップはほどほど、ノイズ除去強度を下げて元絵と変えずにスケールアップもできる
+ESRGAN_4xとSwinIR_4xがよく使われている気がする
+
+
+図：4chanあたりで作られた図表をだれかが翻訳した熱い図表
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xJv0Z46m82.png,600)
+
+
+207: 2023/03/03(金) 09:26:19.24
+>>45
+ちょうど良い画像だから使わせてもらうけど
+少し前のスレで話題にした後処理（その他タブ）アップスケーラーの違い
+
+元の絵
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/rW83XQ7x4c.png,500)
+
+Real「CUGAN」は良くも悪くも元絵のまま拡大するから細かい部分は維持できるけどノイズとかもそのまま
+質感を保ちたいリアル系と相性が良い
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nnBeSMBMzJ.jpg,500)
+
+*** Tile
+
+605: 2023/03/20(月) 11:27:02.22 
+hires 1.8倍なら2分で済むのに
+1.9倍だと終了間際に急にメモリ最大に張り付いて固まって4分かかるのって普通なんかな
+ワイのGPUのメモリ使い切る壁がここにあるんやろか
+
+638: 2023/03/20(月) 12:51:10.16 
+>>605
+重複部分のドット数はアップスケーラーや手法によって変わるけど
+ざっくりいうとこんな感じで回数が増えるイメージかな(色の塗方が適当ですまん)
+512の2倍近辺っていうのはものスゲー効率が悪いのだけは伝わるといいな
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BptDpMwlGZ.jpg,500)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fwj4rHSUqK.jpg,500)
+
+*** 
+
+
+** MultiDiffusion
+pkuliyi2015/multidiffusion-upscaler-for-automatic1111: MultiDiffusion implementation with VAE VRAM optimize - https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
+
+* ツール
+単体で動くやつら
+
+** Waifu2x-Caffe
+
+- Web｜waifu2x - https://waifu2x.udp.jp/index.ja.html
+- Windows｜lltcggie/waifu2x-caffe: waifu2xのCaffe版 - https://github.com/lltcggie/waifu2x-caffe
+深層畳み込みニューラルネットワークによる二次元画像のための超解像システム。
+いにしえ(2015年くらい)からあるアップスケーリングツール
+でも今でも比較的良い結果が得られて十分使える(個人的見解)
+
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/MBKsJA7VA8.jpg,600)
+
+** PixSr4x
+PixSr4x - イラスト向け4倍超解像Windowsアプリケーション - https://kohya.devel.jp/pix_sr_4x/
+LoRA用学習スクリプトでお世話になってる人も多いkohyaニキがむかし作ってたやつとのこと
+
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/J6M74Q3RRZ.jpg,400)
+
+*** Sample
+192: としあき  2023/03/04(土) 
+kohya氏が昔作ったというPixSr4xっていうツールが使いやすくてよく使ってますな
+横からだけどこれスゴいね
+512x512で出力したのをアップスケールしてみたけど潰れてた汗表現とかよだれまでちゃんと綺麗にしてくれたわ
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6guMzrdlCp.png,500)

@@ -25,8 +25,8 @@ call webui.bat
 - https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings
 
 ** 公式wiki翻訳版｜コマンドライン引数表
-※翻訳は不正確な可能性があります。
-
+※翻訳は基本的には機械翻訳に通しだけなのでざっと意味を把握するのにどうぞ。
+正確な意味を求める場合は英語欄を参照してな
 出典：公式Wiki, Command Line Arguments and Settings(英語)
 
 | 引数コマンド｜Argument Command | 値｜Value | 既定値｜Default | 説明 | Description |

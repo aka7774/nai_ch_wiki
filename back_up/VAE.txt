@@ -47,7 +47,7 @@ autoencoder_fix_kl-f8-trinart_characters.ckpt
 
 ** NVA部のVAE
 
-なんJNVA部★146 - 5ch.net liveuranus
+- なんJNVA部★146 - 5ch.net liveuranus
 903: 2023/02/12(日) 
 エラーが出るか出ないかギリギリにNAIのVAEを学習させたのを投下してみる
 
@@ -58,7 +58,7 @@ autoencoder_fix_kl-f8-trinart_characters.ckpt
 学習元が似ていれば相乗効果があるのかと思ったけど違うみたいでう〜ん・・・
 色味の補正用にチューンするぐらいでしか手を出す意味はなさそう？
 
-なんJNVA部★147 - 5ch.net liveuranus
+- なんJNVA部★147 - 5ch.net liveuranus
 7: 2023/02/12(日)
 &ref(https://i.imgur.com/hffMiNQ.jpg,700)
 &ref(https://i.imgur.com/CFeUHxU.jpg,700)
@@ -71,6 +71,12 @@ AnyVAEが色あせるのを逆手に取って作ったセピア風になるSepia
 anything-v3.0の色あせるVAEってどこで手に入れるんだよってのもあると思うんで入れておいた(extensionのtoolkitで抽出)
 
 &#128317;: https://mega.nz/file/2B4nVRDD#ujydCsTLubu0PrNcXehSER92aF-M94r4bEs6O2Lo_aQ
+
+- v449: 2023/03/21(火) 21:03:05.44
+ 彩度はNAIより若干高くてkl-f8-anime2みたいににじまずにNAIよりくっきりした絵になるで 
+https://civitai.com/models/22354/clearvae
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RE0V8OdTrq.jpg,700)
+
 
 * VAE比較/検証
 

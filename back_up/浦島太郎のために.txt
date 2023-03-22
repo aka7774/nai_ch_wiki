@@ -6,6 +6,20 @@
 具体的なノウハウとかは専用ページに書いて、ここは紹介程度に。
 上の奴ほど新しいという感じで編集していってください。
 
+[+]編集にあたってのお約束
+- 嘘松はあかん
+事実だけを掲載する。うわさなら裏をとってからや
+- ポジティブな話題をメインに
+革新的な技術やスレで話題になったおもしろい出来事などを優先して掲載する
+技術的なことならネガティブな話題でもOK
+例：「●●が使えなくなった」とか「●●が実は壊れていた」等
+- お気持ち表明にならないようにする
+ある程度自由な作風がゆるされてるけど個人のお気持ちが混ざってないか推敲してから編集しよう
+
+※改定の提案はこちら：[[運用方針など>https://seesaawiki.jp/nai_ch/bbs/39146/l50]]
+[END]
+
+
 #contents
 
 * 2023-03-20 Windows DefenderがVAEを脅威とみなす
@@ -72,7 +86,7 @@ https://speakerdeck.com/nhamanasu/diffusionniyorutext2imagenoxi-pu-tosheng-cheng
 * ControlNetの機能いろいろ判明
 直に専用ページがつくられると思われるが（→[[作られた>https://seesaawiki.jp/nai_ch/d/ControlNet]]）とりあえず浦島で使えそうな機能を紹介
 [[ここ>https://note.com/ddpn08/n/n7fce838499e7]]とか見るともっと分かるかも。
-
+[+]
 https://fate.5ch.net/test/read.cgi/liveuranus/1676292962/432
 ''432今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｵｯﾍﾟｹ Sra3-3pHG)2023/02/14(火) 15:25:37.08ID:F0rs948kr''
 ''Canny Edge　輪郭線を検出して取り出す''
@@ -134,6 +148,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1676504558/378
 ''こうなる''
 ''&ref(https://majinai.art/i/DjzWKXU.png, 10%)''
 ''''
+[END]
 * 2023-02-13 WD1.5βが出たりControlNetに対応したりと大変な一日
 午前
 NAIリークの血を持たない純粋なモデル、且つSD2.1系という事で注目を浴びていたWaifuDeffusion1.5β(epoch1)がようやく[[リリース>https://huggingface.co/waifu-diffusion/wd-1-5-beta]]された
@@ -327,7 +342,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/325
 ''https://github.com/AUTOMATIC1111/stable-diffusion-webui''
 ''WebUIよ永遠に''
 ''''
-''https://image01.seesaawiki.jp/n/h/nai_ch/3AJ1ZS_W4b.jpg''
+''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3AJ1ZS_W4b.jpg, 10%)''
 
 現在は復旧した。
 - https://github.com/AUTOMATIC1111/stable-diffusion-webui
@@ -710,6 +725,9 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
 
 
 
