@@ -5,6 +5,7 @@
 *キーワード
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|||||
 ||アニメ|||
 |anime,megami magazine,|アニメ絵柄|キャラ再現時、作品名によってはアニメ絵柄が強くなってしまうのでその対策に。official artも活かしやすくなる。効果が強すぎる場合はanimeのみに||
 |bad anatomy,disfigured,poorly drawn,deformed,mutation|悪い解剖学、変形、不十分な描画、変形、突然変異|身体の形を不格好にさせないために使う。身体の部位と組み合わせて使っても良い||
