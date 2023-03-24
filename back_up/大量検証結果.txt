@@ -320,3 +320,14 @@ basilmix &ref(https://i.imgur.com/BQhmaa5.png,450)
 ElysiumAnimev3 &ref(https://i.imgur.com/WqF52pt.png,450)
 shirayuki &ref(https://i.imgur.com/sq9sTWS.png,450)
 [END]
+*ねんどろいど化させるときに良さげなモデルを探した検証結果
+[+]
+手持ちのモデルと自作マージしたモデルでやってみたけどしっくりと来るやつがあまりないかも。
+ねんどろいどモデルがアレばまた話が違うんだろうけど・・・どなたか神様モデル作っていただけませんか？
+あとプロンプトの指定順番がかなり重要っぽくって「作りたいキャラ＞ねんどろいどのロラ指定」にしないとなかなかできなかったです。
+あと512ｘ512以外では全然作れなかったのでなにか対策があったらアドバイスほしいです。
+1girl, <lora:RosaPokemon_v10:0.8> ,nendoroid, rosa (pokemon), figure, <hypernet:sdHypernetNendroid_10:0.7>, 8k,4k,(highres:1.1),best quality,(masterpiece:1.3)
+Negative prompt: ng_deepnegative_v1_75t,bad_prompt_version2,bad-image-v2-39000,bad-hands-5,bad-artist,bad-artist-anime,EasyNegative, negativeembed
+Steps: 60, Sampler: DPM++ 2S a Karras, CFG scale: 7, Seed: 1343738147, Size: 512x512, Model hash: f758fffcb9, Model: 06Counterfeitv25025_V10, Clip skip: 2
+https://i.imgur.com/ljEPo2I.jpg
+[END]

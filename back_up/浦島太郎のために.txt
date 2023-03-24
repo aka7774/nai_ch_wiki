@@ -21,40 +21,35 @@
 
 
 #contents
-* 2023-03-23 なんJnovelAI部再びの分裂か？
+* 2023-03-23 画像生成AIサービス総合スレの誕生(ネットサービス板)
 
-紆余曲折（このページの[[「ローカル勢とweb公式勢が袂を別つ」>https://seesaawiki.jp/nai_ch/d/%b1%ba%c5%e7%c2%c0%cf%ba%a4%ce%a4%bf%a4%e1%a4%cb#content_33]]を参照のこと）があったものの、画像貼りとプロンプト研究報告で少しずつスレを重ねていたなんJnovelAI部スレ。
-スレに頻繁に迷い込むローカル民や他AIイラストWEBサービス利用者との諍いが絶えず…新スレは「ウェブ専用」だと分かりやすいスレタイにしようという提案がなされた。
-しかしNovelAI専用を貫きたいスレ民と他のAIイラストWEBサービス利用者も取り込んで活性化を図りたいスレ民との間で再び分裂騒動が起こっている模様だ。
-
-なんJnovelAI部★68 
-https://fate.5ch.net/test/read.cgi/liveuranus/1679488101/
-（即落ち）
+紆余曲折の末に、「なんJnovelAI部」から「画像生成AIサービス総合スレ」(ネットサービス板)が誕生した
+-NovelAIの話題は「なんJnovelAI部」に
+-その他の画像生成AIサービスは「NovelAI,Holara,TrinArt等画像生成AIサービス総合スレ」に
+-「なんJNVA部」は今まで通りなんでもあり(でも主にローカルの内容)に
+と、それぞれに特徴を持ったスレに育っていった
 
 なんJnovelAI部ウェブ専★68 
 https://fate.5ch.net/test/read.cgi/liveuranus/1679488956/
-（後継スレ）
 
 NovelAI,Holara,TrinArt等画像生成AIサービス総合 
 https://mevius.5ch.net/test/read.cgi/esite/1679527005/
-（ネットサービス板）
 
-現在はすっかりローカル環境・NVA部住人である筆者にとっても「なんJnovelAI部」は生まれ故郷のふるさとのようなスレであり、当WikiにとってはNVA部もNovelAI部も本スレである。プロンプト技術の研究を続けている姿勢にはリスペクトとも言える思いを抱いている。故郷の混乱がスムーズに収まり各スレが活性化・発展していくことを祈っている。
+なんJNVA部★176 
+https://fate.5ch.net/test/read.cgi/liveuranus/1679571571/
 
-[+]
-完全に余談になるが、良い機会なので5ch内に立っているAIイラスト関連スレを紹介したい。
-
-BBSPINK【お絵描き・創作】板に立ったAIエロ画像情報交換スレは既に18スレに突入している。
-【StableDiffusion】AIｴﾛ画像情報交換18【NovelAI】 
+[+]その他のAI画像関係スレ
+BBSPINK板：【StableDiffusion】AIｴﾛ画像情報交換18【NovelAI】 
 https://mercury.bbspink.com/test/read.cgi/erocg/1679322640/
-BBSPINK板からはTrue Buruma LoRAを作成したブルマ卿がNVA部にも研究成果を報告して頂けたり両スレ住民の交流が続いている。
 
-CG板に立った質問スレは4スレまで進んでいる。
-【StableDiffusion】画像生成AI質問ｽﾚ4【NovelAI】 
-https://mevius.5ch.net/test/read.cgi/cg/1678970566/
-質問解答の際に当Wikiの内容を紹介されることが多々あり、5ch内の姉妹スレ・関連スレとして皆様にも周知していただき各スレが活性化・活用されれば幸いに思う次第だ。
+CG板：【StableDiffusion】画像生成AI質問ｽﾚ5【NovelAI】 
+https://mevius.5ch.net/test/read.cgi/cg/1679654631/
+
+CG板：【StableDiffusion】AI画像生成技術16【NovelAI】 
+https://mevius.5ch.net/test/read.cgi/cg/1679058984/
+
+他にもあるので探してみるのもよし
 [END]
-
 * 2023-03-20 Windows DefenderがVAEを脅威とみなす
 
 誤検出っぽい。safetensorsに変換して回避できる。
@@ -757,6 +752,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

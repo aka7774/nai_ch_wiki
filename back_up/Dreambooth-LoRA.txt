@@ -216,7 +216,7 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 
 **キャプションの付け方・考え方の参考サイト
 : [[lora training tagging faq>https://rentry.org/lora-tag-faq]] | 英語サイトだがブラウザの翻訳で読もう
-: [[キャラクター学習のタグ付け一例>https://rentry.org/dsvqnd]] | 実例を挙げての解説(現在リンク切れ)
+: [[キャラクター学習のタグ付け一例>https://rentry.org/dsvqnd]] | 実例を挙げての解説
 一言で言えば「呼び出しキーワード」＋「学習から外したいもの」をタグに書く
 
 *そもそも学習用画像ってどうやって加工するの
@@ -728,14 +728,36 @@ warmupはどっかをいじって立ち上げ角度変えんと邪魔にしか�
 
 [END]
 
-** LoConについて
-https://github.com/KohakuBlueleaf/LyCORIS/tree/locon-archive
+** LoCon(LyCORIS)について
+https://github.com/KohakuBlueleaf/LyCORIS
 
 LoRAの新しい学習手法。通常のLoRAより性能がいいかもしれない。学習速度(it/s)は遅い。
-sd-scriptsのvenvでpip install loconでインストールすることで使用可能。
-学習時に使用するにはnetwork_moduleにlocon.locon_kohyaを指定する。
+名前が変わって LyCORIS に統合された
+
+sd-scriptsのvenvで
+=|BOX|
+pip install lycoris_lora
+||=
+でインストールすることで使用可能。
+学習時に使用するにはnetwork_moduleに lycoris.kohya を指定する。
+=|BOX|
+python3 sd-scripts/train_network.py 
+  --network_module lycoris.kohya 
+  --network_dim ○○ --network_alpha ○○
+  --network_args "conv_dim=○○" "conv_alpha=○○" "dropout=○○" "algo=lora"
+||=
+注：1行で入力する事
+
+○○は数値を入力
+指定の例
+=|BOX|
+--network_module lycoris.kohya 
+--network_dim 64 --network_alpha 32
+--network_args "conv_dim=64" "conv_alpha=32" "dropout=0.05" "algo=lora"
+||=
 生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]のインストールが必要。
 標準のExtra Networksおよびkohya-ss氏作成の[[sd-webui-addtional-networks>>https://github.com/kohya-ss/sd-webui-additional-networks]]で使用できる。
+
 *Loraの使用方法&aname(apply_lora)
 
 ''使い方その1とその2で、配置するフォルダが違うので注意！''
@@ -818,6 +840,7 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
 
 
 
