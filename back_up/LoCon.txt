@@ -1,6 +1,17 @@
-
 *概要
 LoRAでは学習できていない領域まで拡張して学習するちょっと新しいやつ
+最初はLoConというリポジトリで開始されたが、のちのLoHaなど新しい概念が追加されたため作者がLyCORISというリポジトリで各種の概念をまとめることにしたらしい。
+『LyCORIS』
+┣ Locon
+┗ LoHa
+みたいな感じ
 
 *情報
-公式リポジトリ: https://github.com/KohakuBlueleaf/LoCon
+%%公式リポジトリ: https://github.com/KohakuBlueleaf/LoCon%%
+公式リポジトリ：https://github.com/KohakuBlueleaf/LyCORIS
+
+
+** 使用
+拡張を入れる必要がある。またAutomatic1111を最新にしておく(=ビルトインのLoRA機能に対応している必要がある)。
+https://github.com/KohakuBlueleaf/a1111-sd-webui-locon
+

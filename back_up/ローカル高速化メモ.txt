@@ -20,9 +20,10 @@ torch.compile()でさらに高速化するが、以下の欠点があるので�
 2. torch2 cu118 --opt-sdp-no-mem-attention
 3. torch1 cu117 xformers cudnnのバージョンアップ
 
-** torch2 cu118 --opt-sdp-no-mem-attention
+** torch2 cu118 --opt-sdp-no-mem-attention/--opt-sdp-attention
 
 RTX(2000〜4000番台)で高速化するらしい。
+環境によっては--opt-sdp-attentionのほうが高速?
 
 手順
 1.venv,repositoriesフォルダ削除 あるいはvenv上で pip uninstall torch torchvision -y

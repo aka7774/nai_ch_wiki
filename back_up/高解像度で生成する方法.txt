@@ -2,6 +2,9 @@
 生成した画像をさらに高解像度に拡大する方法のまとめページ
 Automatic1111のHires.fixとその他さまざまな拡張機能がメインになりそうだけど単体で動作するツールもあるのでページはわけてある。
 
+#contents
+
+
 * Automatic1111まわり
 
 ** Hires.fix
@@ -85,11 +88,81 @@ hires 1.8倍なら2分で済むのに
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/BptDpMwlGZ.jpg,500)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/fwj4rHSUqK.jpg,500)
 
-*** 
-
 
 ** MultiDiffusion
 pkuliyi2015/multidiffusion-upscaler-for-automatic1111: MultiDiffusion implementation with VAE VRAM optimize - https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
+出力画像を細かく分割し、それぞれにアップスケールを掛けたものを1枚に合成してくれる
+それにより低VRAMユーザーでも4k画像などの高解像度にアップスケールする事が可能
+横幅32000とかの超ワイド画像も出来る
+
+難点はその処理方法故に生成時間が膨れあがる事と、小人(妖精さん)が発生しやすくなる事
+
+*** アップ&ダウンをして描き込みを増やす方法
+https://fate.5ch.net/test/read.cgi/liveuranus/1679734218/452
+452 2023/03/26(日) 
+>>446
+1. extensionsでmultidiffusion-upscaler-for-automatic1111 をインストール
+2. i2iのTiled DiffusionでEnableにチェック、MethodはMultiDiffusion、Upscalerを好きなのに設定してScale Factorで拡大率を設定。Keep input image sizeにもチェック。あとはとりあえずデフォルト値でよし
+3. 大抵の場合VRAMが足りないので、Tiled VAEの方もEnableにチェック
+4. Generateクリックしてi2iでアップスケール実行！やで
+
+あとは、アップスケールされたのを縮小してもう一度アップスケールかけるもよし、縮小なしでアップスケールするもよし
+縮小しない方が描き込み量増える感じがするけど、実行時間はガンガン増えていくで
+
+>>446
+あっとそうだ、プロンプトはクオリティタグだけにせよってREADMEに書いてあるけど、適当に補完した方がアップスケールの出来は良くなる
+あとは……CFGは10くらい、denoisingは0.3 - 0.5くらいがいいで
+
+
+*** 小人の発生を防ぐ方法
+
+タイルを何枚もつぎ足しして生成する関係上アップスケーラーによってはいたるところに1girlを描こうとするため小人が多数発生し、さながらウォーリーを探せ状態になる。
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1679571571/540
+540:  2023/03/24(金) 
+>>524
+絵を借りてやってみたがこんなんでどうや?
+&ref(https://i.imgur.com/UjbRbK8.jpg,500)
+パラメータ等はpastebinに置いた https://pastebin.com/PiGMstfE
+CFG Scalleを上げる、Denoising Strengthを若干下げる、tile width を64に下げる あたりが聞いてそうな感じがするがワイもこのへん適当や
+なおtile widthの値を下げると生成時間が長くなる、この設定だと4090で6:46ほどかかっとる
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1679571571/544
+544: 
+>>535
+やってみたで
+背景プロンプトのみ＋no humans　denoise0.4
+&ref(https://i.imgur.com/vO8DyVr.jpg,500)
+タグ全残し　denoise0.4
+&ref(https://i.imgur.com/DFC3Nia.jpg,500)
+たしかに小人出なくなったがキャラ属性が消えてしまうわな
+
+
+その他
+>>524
+CNでイラストをある程度固定した方がいい
+俺もハイレゾ化瞬間に崩れるのはモデルとprompt次第でよく見る
+それでも崩れる時は崩れるけど・・・
+
+
+[+]ネタ
+ ４ｋはわりとマシになってきたわ
+小人の発生が巧妙になってきてる気がするが
+元絵
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FeDJHywUiP.jpg,300)
+４ｋ
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/42RJ26rd55.jpg,300)
+
+
+>>623
+磔にされててワロタ
+>>624 >>623
+気付いてヒエッ…ってなったわ草
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vXlUu0kSnZ.jpg,100)
+[END]
+
+
+
 
 * ツール
 単体で動くやつら
@@ -118,3 +191,4 @@ kohya氏が昔作ったというPixSr4xっていうツールが使いやすく�
 512x512で出力したのをアップスケールしてみたけど潰れてた汗表現とかよだれまでちゃんと綺麗にしてくれたわ
 
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/6guMzrdlCp.png,500)
+

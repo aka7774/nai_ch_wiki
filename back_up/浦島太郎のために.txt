@@ -21,6 +21,18 @@
 
 
 #contents
+
+* 2023-03-25 更新
+1111に大幅更新が入り、各種ツールがエラーを起こしたりするようになった
+
+
+* 2023-03-25 MultiDiffusion
+4Kや8Kなど超巨大な画像を生成できるとうたう拡張MultiDiffusionがちょっと話題になる。
+ pkuliyi2015/multidiffusion-upscaler-for-automatic1111: MultiDiffusion implementation with VAE VRAM optimize - https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
+ただしタイルを何枚もつぎ足しして生成する関係上アップスケーラーによってはいたるところに1girlを描こうとするため小人が多数発生し、さながらウォーリーを探せ状態に。またかわいらしい絵柄のモデルなら「妖精さん」ですむが、リアル気味なモデルで使用するととうとつに生首が置かれたりオブジェクトの表面に人体らしきものが大量に発生したり(シテ……殺シテ……)と人によってはへたなグロよりくるものがあるようである。
+詳しくは[[高解像度で生成する方法]]のMultiDiffusionの項目を参照
+
+
 * 2023-03-23 画像生成AIサービス総合スレの誕生(ネットサービス板)
 
 紆余曲折の末に、「なんJnovelAI部」から「画像生成AIサービス総合スレ」(ネットサービス板)が誕生した
