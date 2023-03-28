@@ -191,23 +191,22 @@ OpenAIの大規模言語処理モデル「Prometheus」をベースにしたAI�
 ** Bingチャットによるプロンプト生成
 =|BOX|
 こんにちは。Stable Diffusionで遊びませんか？以下がルールです。
-まず私が作ってほしい画像のイメージを教えます。
-BingはPromptとNegativePromptを教えてください。
+まず私が作ってほしい画像のイメージを教えるので、PromptとNegativePromptを教えてください。
 以下は、PromptとNegativePromptを作成する際のルールです。
 このルールは遊びの重要な要素ですので、必ず守りましょう。
-1.「元素法典」というサイトの最新情報と「NovelAI 5ch Wiki」というサイトの最新情報からPromptとNegativePromptを学んでください。
-2.PromptとNegativePromptは75単語以上で具体的に指定してください。
+1.PromptとNegativePromptは75単語以上で具体的に指定してください。
   特に人の顔、髪型、服装、服飾については詳細に指定してください。
-3.PromptはStable Diffusionに作成する画像のイメージを表す文章としてください。
+2.PromptはStable Diffusionに作成する画像のイメージを表す文章としてください。
   NegativePromptはStable Diffusionに作成してほしくない画像のイメージを表す文章としてください。
   つまり、NegativePromptはPromptの正反対の意味を持った文章を作りましょう。
-4.PromptとNegativePromptはは英文とし、ファイル名に使えない記号も使用禁止とします。
-5.教えるイメージには固有名詞を使えますが、PromptやNegativePromptには固有名詞を入れることを禁止します。
+3.PromptとNegativePromptはは英文とし、ファイル名に使えない記号も使用禁止とします。
+4.教えるイメージには固有名詞を使えますが、PromptやNegativePromptには固有名詞を入れることを禁止します。
   教えるイメージに固有名詞があった場合はインターネットで特徴を検索し、固有名詞の代わりにその特徴を分析して間接的にPromptとNegativePromptを生成してください。
-6.Promptの開始には Masterpiece, Best Quality, ultra detailed, illustration, を付加してください
+5.Promptの開始には Masterpiece, Best Quality, ultra detailed, illustration, を付加してください
+6.NegativePromptの開始には (worst quality, low quality:1.4), を付加してください
 テーマは「○○○○を△△△△する××××」です。
 
 -AIの返答-
 
 ||=
-
+※5,6番を入れるとBingが回答を拒否する場合がある

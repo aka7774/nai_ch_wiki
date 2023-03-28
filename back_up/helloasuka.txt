@@ -82,6 +82,9 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX 6650XT|8GB|Ryzen 5 5600G||59.52|--opt-sdp-attention|torch:2.0.0+rocm5.4.2 Ubuntu20.04.6 RAM16GB
+|4070|||||||
+|RTX 4070 Ti|12GB|Ryzen 7 3700X||18.57|--opt-sdp-no-mem-attention --opt-channelslast --no-half-vae|torch: 2.0.0+cu118|
 |RTX 2060|6GB|Ryzen 5 5600X|50秒|50.66|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
 |RTX A4000|16GB|Ryzen7 3700X|27.40|26.48|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
 |RTX 4090|24GB|Core i9-13900K||9.51|--api --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
@@ -235,6 +238,8 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4090|24GB|Core i7-12700K|7|7.93|--opt-sdp-no-mem-attention|pytorch2.0, batch count 5, batch size 2,live previewなし, WSL2 ubuntu22.04|
+|RTX 4090|24GB|Core i7-12700K|7|7.93|--opt-sdp-no-mem-attention|pytorch2.0, batch count 5, batch size 2,live previewなし, WSL2 ubuntu22.04|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||23.63|--xformers --opt-channelslast|WSL2, Torch2.0, モデルコンパイル有効 ~~ Batch Count5, Batch size 2 OCすると22.83s|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.77|xformers opt-channelslast|pytorch2.0に更新したが言うほど速くならなかった。OCすると26.22s ~~ batch count 5 batch size 2|
 |RTX 3090|24GB|Core i9-10900K|19秒|17.74|xformers opt-channelslast no-half-vae|Batch Count 5 Batch Size 2, Windows10 WSL2 RAM 32GB AfterBurnerで低電圧化 1620MHz @0.7v|
@@ -249,6 +254,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4090|24GB|Core i7-12700K|6|7.08|--opt-sdp-no-mem-attention|誤りがあったので修正。pytorch2.0, batch count 2, batch size 5,live previewなし, WSL2 ubuntu22.04|
 |RTX 4070 Ti|12GB|Core i9-9900K|15|15.17|--xformers --no-half-vae|Batch Count 2、Batch Size 5|
 |RTX A4000|16GB|Ryzen7 3700X|23.73|23.56|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
 |RTX3060|||||||
