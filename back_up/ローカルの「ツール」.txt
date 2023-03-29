@@ -131,3 +131,15 @@ tagger通さずに画像に対応した空のテキスト欲しかったから�
 他は更新してないんでそんなんいらんて人は無視してや
 https://i.imgur.com/dyatwXB.jpg
 ||=
+
+**Kohya_lora_param_gui
+https://github.com/RedRayz/Kohya_lora_param_gui
+- sd-scriptsのパラメーター設定をGUIで出来るようにするもの。
+https://fate.5ch.net/test/read.cgi/liveuranus/1680004431/740
+=|BOX|
+740 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0638-Ahwc)[] 投稿日：2023/03/30(木) 02:00:06.00 ID:5Q8D9xj/0
+GUIにベンチマークモードとLoraのConv2dの学習オプション追加したで
+単にaccelerateのコマンド打ってから終わるまで時間計るだけやが
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.2.1
+||=
+

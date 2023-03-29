@@ -20,6 +20,7 @@ Linuxだと頭にtimeをつければ出てくる。
 
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|time(秒)|オプション|バージョン|備考|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X|12m16.307s|--xformers batch_size=3||torch2.1,xformers0.17|
 |RX 6900 XT|16GB|Ryzen 5950X|11m32.561s|--xformersなし --mem_eff_attn追加 環境変数'PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.9,max_split_size_mb:512''||tensorflow-rocmとbitsandbytes-rocm(本家のissue#107にリンクあり)を使用する。bitsandbytesのモジュールは自動でビルドされないので、別にクローンしてビルドし、出来たものを'venv/lib/python3.10/site-packages/bitsandbytes/'に入れる。|
 |RTX 3060|12GB|Ryzen 3700X|25m2.20s||71b728d5fcfe16f4434e2bf61e75cdfb76f93e14|16h25m2.20s ってテキストには書いてあった Windows11 pro|
 |RTX 3080Ti|12GB|i7 11700F|6m10.22s||||
