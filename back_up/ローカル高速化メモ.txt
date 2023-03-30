@@ -8,7 +8,7 @@ torch2化、torch.compile改造ともにVRAMの消費量が増えます。
 
 torch.compile()でさらに高速化するが、以下の欠点があるのでお勧めしない。
 - コンパイルそのものに時間がかかる
-- モデル、解像度、Batch size変更の度にコンパイルされる
+- モデル、解像度、Batch size変更の度にコンパイルされる ~~ &size(12){キャッシュされるので毎回コンパイルされるわけではない}
 - WebUIにとって想定外の処理のため不安定。
 - Linuxのみ対応
 
@@ -41,18 +41,22 @@ call webui.bat
 ||=
 5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.0+cu118"と記載があれば成功
 
+*** プレビュー版のインストール方法
+あらかじめ古いバージョンをアンインストールしてから、venv内で以下のコマンドを実行する。
+> pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
+
 [+]詳細説明
 * torch2.0+cu118+SDP(要検証)
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/8691
 torchが正式に2.0となったため使用できるようになった技術
 上記の「torchを2.0にする」と「利用するライブラリの更新(cu118=cuDNN8.8.0)」を同時に適用し、
-更にSDPというxformersと似た技術を適用することで高速化を図る
-4000番台、3000番台にて効果を確認したが、1000番台ではxformers適用の方が速いらしい?
+更にSDPというxformersと似た技術を適用することで高速化を図る。環境によっては変化が無いかも。
+RTX30,40にて効果を確認したが、1000番台ではxformers適用の方が速い可能性あり。
 (txt2img,hires.fixで動作確認済)
 
 - SDPについて
 2023年3月上旬にcommitされたらしい
-xformersと特徴は同じで、--opt-sdp-no-mem-attentionをつけるとほんのちょっと絵が変化する代わりに2割程度速くなる
+xformersと特徴は同じで、--opt-sdp-no-mem-attentionまたは--opt-sdp-attentionをつけるとほんのちょっと絵が変化する代わりに2割程度速くなる
 xformersと併用、共存はできない
 xformersよりVRAM使用量が増えるため、学習や高解像度生成時には注意
 [END]
@@ -260,6 +264,7 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
 +stable-diffusion-main\venv\Lib\site-packages\torch\lib 内に上書きコピーする
 
 * ハードウェアアクセラレーションによるGPUスケジューリング を無効にする
+VRAM消費を減らす効果がある。速度も向上するかも。
 やり方は[[こちら>>https://win11lab.info/win11-gpu-scheduling/#:~:text=%E6%9C%89%E5%8A%B9%E3%80%81%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95&text=%E5%B7%A6%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%88%E3%82%8A%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92,%E3%82%AA%E3%83%B3%E3%80%81%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%AA%E3%83%95%E3%81%AB%E3%81%97%E3%81%BE%E3%81%99%E3%80%82]]
 [[公式wiki>>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Optimizations]]にも記載がある
 [[redditによれば>>https://www.reddit.com/r/StableDiffusion/comments/y71q5k/4090_cudnn_performancespeed_fix_automatic1111/jcx2jx5/?context=8&depth=9]]速度が30%くらいかわることがあるとかないとか
@@ -269,7 +274,7 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
 - ckptとvae.ptをsafetensorsに変換する
 -- 最近はckptよりsafetensorsで配布するほうが主流になった。
 -- vae.ptはWindows Defenderが誤検出を起こすので回避のためにも変換するのが良さそう
---- 変換すると場合によって容量が約半分になる
+--- 変換すると場合によって容量が約半分になる(NAIはそうだった)
 - pruneする
 -- VRAMの節約になるかも?
 - fp16化する
@@ -396,9 +401,3 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。
 場合によっては他のパーツの買い替えも必要になるが、最も効果的。
 (give me money:3000.0)
-
-
-
-
-
-

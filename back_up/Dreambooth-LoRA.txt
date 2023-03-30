@@ -9,9 +9,9 @@ https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_compari
 kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツールが人気となっている。
 このページではsd-scripts関連の情報について雑に書いてある
 
-*公式情報
+* 公式情報
 
-**sd-scripts (kohya)
+** sd-scripts (kohya)
 一番はじめは作者が詳しく書いてくれている公式READMEを見よう！話はそれからだ！
 
 - &color(#ff0000){★公式導入ガイド}：https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md
@@ -57,7 +57,7 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 
 
 
-*インストール、初回セットアップ編
+* インストール、初回セットアップ編
 
 ** sd-scripts (作: kohya)
 
@@ -97,13 +97,11 @@ start.batと同じフォルダに入れて実行してください
 ** bmaltais GUI
 GUI といっても作者の sd-scripts にパラメータを渡すだけや。性能は変わらん。セットアップがちょっとだけ楽。
 GUIのほうが更新が数日遅れるのが常やから我慢してや。
-[+]
 : bmaltais版 GUI | [[https://github.com/bmaltais/kohya_ss>>https://github.com/bmaltais/kohya_ss]]
 -GradioベースのGUI。
 -「Tools」タブにフォルダ配置補助機能がある。
 -スクリプト版のパラメータの一部は設定出来ないかも？
 -アップデートは upgrade.ps1 をpowershellで実行
-[END]
 
 ** AUTOMATIC1111 SD WebUI 拡張機能版 (作: ddPn08 GUI)
 https://github.com/ddPn08/kohya-sd-scripts-webui
@@ -119,12 +117,9 @@ https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定し�
 - kohya-ssやEasyTrainScriptsとは違い、sd-scriptsを標準の方法でインストールしておくことが前提。
 - としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。
 
-[END]
-
 ** その他補助スクリプト
 としあきbatや4chan製のスクリプトがある
-C#のgui https://github.com/RedRayz/Kohya_lora_param_gui
-kohya-ss/sd-scripts を自分でインストールできるなら
+
 アップデートは
 =|(box=textarea)|
 cd sd-scripts
@@ -164,12 +159,12 @@ https://github.com/Linaqruf/kohya-trainer
 --キャプション ファイルは必須です。そうでない場合、LoRA は概念名をキャプションとして使用してトレーニングを行います。
 --キャプションについては以下
 
-*キャプション・タグを付ける
+* キャプション・タグを付ける
 : 作者の詳しい画像付き説明 | [[https://github.com/kohya-ss/sd-scripts/blob/main/train_README-ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/train_README-ja.md]]
 - 学習用の素材画像それぞれに内容を説明するテキストファイルを作る。このテキストファイルには画像生成時のプロンプトと同じようにタグを記載する。
 - テキストエディターやメモ帳で1つずつ作っても良いのだが、WD1.4 Tagger 等のツールを使えば一気に自動生成できて捗る
 
-**WD1.4 Taggerで作成
+** WD1.4 Taggerで作成
 先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)
 [+]画像
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/kbCJ6oEi6E.png)
@@ -200,7 +195,7 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 空の000ファイルが出てくるのは編集前のテキストファイルのバックアップや
 
 
-**キャプション・タグの編集
+** キャプション・タグの編集
 - タグは順序に影響を受けるので、一番最初に有効化したいタグを記述する
 - WD1.4Tagger等で自動生成したファイルには不要なタグが含まれたり誤認識されたタグが記載されたりするので編集する。
 : BooruDatasetTagManager | https://github.com/starik222/BooruDatasetTagManager
@@ -214,12 +209,12 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 ||=
 上記のように設定すれば先頭から3つのタグは順序固定として残りはタグの適当にシャッフルして学習できる。
 
-**キャプションの付け方・考え方の参考サイト
+** キャプションの付け方・考え方の参考サイト
 : [[lora training tagging faq>https://rentry.org/lora-tag-faq]] | 英語サイトだがブラウザの翻訳で読もう
 : [[キャラクター学習のタグ付け一例>https://rentry.org/dsvqnd]] | 実例を挙げての解説
 一言で言えば「呼び出しキーワード」＋「学習から外したいもの」をタグに書く
 
-*そもそも学習用画像ってどうやって加工するの
+* 学習用画像の加工
 - 本文で説明している kohya 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
 - あまりにも小さい画像(200pxとか)はUpscaylなどで拡大しておくか bucket_no_upscale をオンにする
 - 背景の切り抜きは画像の大きさを揃えて下記のツールでやると楽。
@@ -264,16 +259,16 @@ u2net_human_seg あたりがちょうど良さげ
 : Lama-Cleaner | https://github.com/Sanster/lama-cleaner
 AIで不純物とかを消してでっち上げるやつ。割と重い。windows用インストーラーあり。
 WebUI用extensionもある [[Extensions_URL>https://seesaawiki.jp/nai_ch/d/Extensions%5fURL#content_3_15]]
-*正則化画像
+* 正則化画像
 - ChatGPTたん曰く「過学習を抑えるためのもの」
 - キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが詳しくはわからないので誰か書いてクレメンス
 - 間違っとる可能性大なのやが、例えばAIちゃんが知らない「鳥獣戯画のカエルちゃん」のイメージを教えるとする。学習用画像には「鳥獣戯画のカエルちゃん」画像を用意する。正則化画像にはありふれた「蛙の画像」を用意する。これでAIちゃんには「鳥獣戯画のカエルちゃん覚えようね！でも正則化画像フォルダにある普通の蛙とかは違うやつやから覚えなくていいよ」という感じで伝わる。イメージを覚えてもらうのに言葉では説明しづらいから画像で説明する感じ？多分。知らんけど。
 - 他所のノートブックを利用しているので確かな事は言えないが、正則化画像を同じような画像で学習させすぎると正則化画像につけたクラストークンで正則化画像の内容を生成するようになる。これは上の「普通の蛙は覚えなくていいよ」というよりも、単に「学習画像と正則画像を二つとも学習する」という挙動のように思われる。
 - 正則化画像は必須ではないので用意しなくても学習はできる。とりあえず一度学習動かしてみたいとかなら用意しなくてもいい。透明正則化も効果は不明瞭（良い影響があるとしても悪影響がないとも言えない）なので面倒ならやらなくてもいい。
-**正則化画像検証 (クリックして展開)
+** 正則化画像検証 (クリックして展開)
 [+]
 
-***キャプションつけて正則化画像指定以外完全同条件のLoCon使った比較
+*** キャプションつけて正則化画像指定以外完全同条件のLoCon使った比較
 165スレ>>529〜より要約
 -536
 Dim/NW=128/64(LoCon:32/16) 元画像38枚*20回 10epoch Adafactor
@@ -305,7 +300,7 @@ Dim/NW=128/64(LoCon:32/16) 元画像38枚*20回 10epoch Adafactor
 正則化画像なしの学習でもある程度の妥協点(たとえば>>537でいう000006列)は見つかるので、速度を重視するなら正則化画像を使わないという選択肢もある
 
 [END]
-**透明のPNGを正則化画像にする
+** 透明のPNGを正則化画像にする
 Web UI に拡張機能 Generate-TransparentIMG をインストールする
 [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
 Generate TransparentIMG タブで、「出力フォルダ」には正則化画像の保存先を、「number_of_generation」には作成する枚数を入力して実行
@@ -313,9 +308,8 @@ Generate TransparentIMG タブで、「出力フォルダ」には正則化画�
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/l8x2Fjrdz7.png)
 [END]
 
-* 学習の手順：sd-scripts (直接指定)の場合
-
-以下は一例(OptimizerにAdaFactorを使った場合の例)
+* 学習の手順 sd-scripts (直接指定)の場合
+以下は一例(OptimizerにAdamW8bitを使った場合の例)
 venvをactivate して
 =|BOX|
 .\venv\Scripts\activate
@@ -330,31 +324,31 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
  --output_dir=D:\sd-scripts\outputs 
  --reg_data_dir=D:\sd-scripts\seisoku 
  --resolution=512,512 
- --save_every_n_epochs=1 
  --save_model_as=safetensors 
  --clip_skip=2 --seed=42 
  --color_aug 
  --min_bucket_reso=320 
  --max_bucket_reso=1024 
- --network_module=networks.lora 
  --lr_scheduler=cosine_with_restarts 
  --lr_warmup_steps=500 
  --keep_tokens=1 
  --shuffle_caption 
- --network_dim=128 
- --network_alpha=64 
  --enable_bucket 
  --mixed_precision=fp16 
  --xformers 
  --lr_scheduler_num_cycles=4 
- --caption_extension=.txt  
+ --caption_extension=.txt 
  --persistent_data_loader_workers 
  --bucket_no_upscale 
  --caption_dropout_rate=0.05 
- --optimizer_type=AdaFactor 
- --optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True" 
- --train_batch_size=4 
- --max_train_epochs=10
+ --optimizer_type=AdamW8bit 
+ --learning_rate=1e-4 
+ --network_module=networks.lora 
+ --network_dim=128 
+ --network_alpha=64 
+ --max_train_epochs=10 
+ --save_every_n_epochs=1 
+ --train_batch_size=2 
 ||=
 -メモ帳などにコピペして
 -必要部分を書き換えて
@@ -380,52 +374,20 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 
 
 
-*学習の手順：LoRA_Easy_Training_Scriptsの場合(?)
-
-=||
-※編集メモ：おそらくLoRA_Easy_Training_Scriptsを使う際の学習手順だと思います。詳しい人添削してください。
-||=
-
-**Windows の場合
-***ポップアップ版を使う場合
+* 学習の手順 LoRA_Easy_Training_Scriptsの場合
+** ポップアップ版を使う場合
 + run_popup.batを実行
-+ ポップアップにパラメーターを入力する
++ ポップアップにパラメーターを順次入力する
 + 出来上がりを待つ
-
-***コマンドライン版を使う場合
-1. ArgsList.pyにパラメーターを書く
-※2023/02/24版から設定ファイルがlora_train_command_line.pyからArgsList.pyに変更されているので注意
-設定を書き込むのはArgsList.pyの最初の方あたり。学習ベースになるモデル、学習素材フォルダの場所、出力先は必ず設定する。わからんところはそのままにしとく。
-記法は以下を参考に、文字列(str)は r"c:\hogehoge"　のように入力、数値(float,int)はそのまま数値を入力、Falseとなっている部分はTrueで有効になる。
-以下ArgsList.pyの日本語訳
-[+]
-#include(lora_train_command_line.py)
-[END]
-2. run_command_line.batを実行
-3. 出来上がりを待つ
-
-**Linux(wslやクラウドGPUニキ)の場合
-
-***ポップアップ版を使う場合
-+ source venv/bin/activate と入力
-+ accelerate launch main.py --popup と入力
-+ ポップアップにパラメーターを入力する
-+ 出来上がりを待つ
-
-***コマンドライン版を使う場合
-+ ArgsList.py にパラメーターを書く
-+ source venv/bin/activate と入力
-+ accelerate launch main.py　と入力
-+ 出来上がりを待つ
-
-**Lora作成手順の画像 (ポップアップ版) 参考程度 (2023-03-04時点)
+*** LoRA_Easy_Training_Scripts ポップアップ版の手順画像 参考程度 (2023-03-04時点)
 クリックして展開 アップデートなどで内容は変わる
 わからんパラメータが出たらcancelを押しとけばデフォルト値が入る。
+英語がわからんときはスクリーンショット撮ってスレで聞いてクレメンス。動かしとるやつなら誰かわかるやろ。
 [+]
-**ターミナルとかパワーシェルにコマンドを打つか、run_popup.batから実行する
+** ターミナルとかパワーシェルにコマンドを打つか、run_popup.batから実行する
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/yVzXCg9crC.png)
 ----
-**設定ファイル関係
+** 設定ファイル関係
 設定ファイルをまとめて読み込んでバッチ処理しますか？「いいえ」
 (あらかじめ作っておいた)設定ファイルを読み込みますか？「いいえ」
 設定ファイルを保存しますか？「はい」
@@ -434,7 +396,7 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 設定ファイルの保存だけして学習はしないですか「いいえ」
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EnnOPYPWpz-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/EnnOPYPWpz.jpg]]
 ----
-**入力
+** 入力
 学習元のモデルを選んでください
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/jxCNF4YB2L.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/6tebwsnoiv.png)
@@ -444,7 +406,7 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 数字_名前 フォルダが見えるように
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/BC_G2nQ6O4.png)
 ----
-**出力
+** 出力
 出力先のフォルダを選んでください
 出力モデルに名前をつけますか？「はい」
 出力モデルに名前をつけてください
@@ -453,16 +415,16 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/TgS0LdaNq_.png)
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/DUzNjAiBHz.png)
 ----
-**タグ、キャプション
+** タグ、キャプション
 学習用画像のタグを全部まとめたファイルを出力しますか？「はい」
 タグを並べ替えをどうしますか？そのまま「occurrence-ly」
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/yMW3voD3gc.png)
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/OkrJFdEvhE.png)
-**学習モデル別微調整
+** 学習モデル別微調整
 Stable Diffusion V2のモデルで学習する? 「いいえ」
 実写(っぽい)モデルで学習する? 実写風モデルなら「はい」アニメ風モデルなら「いいえ」
 ----
-**正則化画像
+** 正則化画像
 正則化画像を使いますか？使わないときは「いいえ」
 正則化画像のあるフォルダを選んでください
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/KXO6r5NWEn.png)
@@ -470,37 +432,37 @@ Stable Diffusion V2のモデルで学習する? 「いいえ」
 数字_名前 フォルダが見えるように
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/OYsxnrbqxq.png)
 ----
-**optimizer
+** optimizer
 どのオプティマイザーを使いますか？ デフォルトはAdamW8bit 詳しくは作者README
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/Mwxd8fadST.png)
-**LoRA設定 各自いじって
+** LoRA設定 各自いじって
 network dim 次元数: デフォルト値は32
 network alpha アルファ: dimの半分がデフォルト値
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/9BxUs0JJhS.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VlKOhNLhCY.png)
-**LoCon設定 各自いじって (編注:なんかおかしい気がするがよくわからん)
+** LoCon設定 各自いじって (編注:なんかおかしい気がするがよくわからん)
 LoConの次元数: デフォルト値はnetwork dimと同じ
 LoConのアルファ: デフォルト値はLoCon dim と同じ
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/T_2kLlHDS7.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oe0Fpwo_9L.png)
 ----
-**学習率の設定
+** 学習率の設定
 学習率(Learning Rate): 1e-4 (= 0.0001)くらいで。alphaを1にした場合dimの分学習率が割られるらしいので上げ目にする
 U-Netの学習率:よくわからんときはキャンセルで。
 テキストエンコーダの学習率:よくわからんときはキャンセルで。学習率の50分の1くらいがいいって言うとる海外ニキもおる
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/DkV4RQ4ZnK.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/I3USsDCepb.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/I__fvgugVG.png)
 学習率について具体的な例は [[参考資料・スレ住民による学習ガイド>#loraguide]]
 ----
-**スケジューラ
+** スケジューラ
 どのスケジューラを使いますか？ 学習率を途中で上げ下げするやり方。詳しくはぐぐって。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/cDPsMBCQT7.png)
-**学習の解像度
+** 学習の解像度
 解像度をいくつにしますか？デフォルトは512
 512が速い, 768ならRTX3060やColabで10000ステップ4~5時間コース
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/0I6Xi5Edzq.png)
 ----
-**バッチサイズ:一度に何枚処理するか VRAM12Gなら4〜6くらいいける(解像度512の場合)で、動かんかったら1で
+** バッチサイズ:一度に何枚処理するか VRAM12Gなら4〜6くらいいける(解像度512の場合)で、動かんかったら1で
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/O0bJN0I8s4.png)
 ----
-**ステップとエポック
+** ステップとエポック
 ステップ数の計算をエポック単位にしますか？
 何エポック学習させますか？: 1エポックは 繰り返し回数(フォルダの先頭の数字)×学習用画像の枚数 ステップ
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/HYqExu2pMY.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DWVNJ2DpMd.png)
@@ -508,46 +470,46 @@ U-Netの学習率:よくわからんときはキャンセルで。
 何エポックごとに保存しますか？
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/M6Jh5Uc7cL.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZCqzxdoZWw.png)
 ----
-**cosine with restartの回数を決めてください
-**warmup ratio を使いますか？使う場合の比率を決めてください: 学習の最初だけ学習率をあげる機能
+** cosine with restartの回数を決めてください
+** warmup ratio を使いますか？使う場合の比率を決めてください: 学習の最初だけ学習率をあげる機能
 ----
-**シャッフルキャプションの設定
+** シャッフルキャプションの設定
 キャプションをシャッフルしますか？:「はい」
 キャプションの最初のトークンを保持する？「はい」
 キャプションを付けた場合フォルダ名のインスタンスプロンプトが無効になる~~のでキャプションファイルの先頭にインスタンスプロンプトを自分で書く必要がある。~~作者のnoteによると「数値を指定するとキャプションの先頭から、指定した数だけのトークン（カンマ区切りの文字列）をシャッフルせず固定します。」~~キャプションの先頭からカンマ区切りで判定されるので 「zkz, 1girl, condom, ass, solo, black panties, one side up,」なら1でおk
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/QKUhVMReO3.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Jrj2Ubei84.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/H7aQQo0LQ1.png)
 ----
-**U-netとテキストエンコーダのどれを学習しますか？ 普通は「both」
+** U-netとテキストエンコーダのどれを学習しますか？ 普通は「both」
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/Aq2qiEHm3a.png)
 ----
-**学習画像を左右反転して2倍に水増ししますか？ 髪の毛の分け目とかオッドアイが逆になってもいいなら「はい」
+** 学習画像を左右反転して2倍に水増ししますか？ 髪の毛の分け目とかオッドアイが逆になってもいいなら「はい」
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/S9IKM82sNS.png)
-**メタデータを埋め込みますか？ Addtional Networksで読めるメモを書いてもいい
+** メタデータを埋め込みますか？ Addtional Networksで読めるメモを書いてもいい
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/eLB_Or0EYB.png)
 
 ----
-**画像の拡大をやめますか？ 小さな画像を無理やり拡大してガビガビにならんようにする
+** 画像の拡大をやめますか？ 小さな画像を無理やり拡大してガビガビにならんようにする
 
-**mixed precision
+** mixed precision
 fp16で。 RTX3000以降ならbf16を使うとNaNsエラーが出にくくなるらしい。
-**cacha latent と random crop
+** cacha latent と random crop
 cacha latentは学習前に画像をキャッシュして速くする方法
 random cropは自動的にランダムに学習用画像を切り抜きすることで少ない画像でも効果が上がるかもしれない方法
 どちらか片方しか使えないのでここで選ぶ
-**テストイメージ
+** テストイメージ
 dreamboothとかでできてた学習の様子を画像で出すやつ
 力尽きたので割愛
 txtファイルにプロンプトを書いて用意しておく必要がある
 デフォルトでは200stepごとに1枚生成 (編注:回してみたら画像は作られてなかったのでもっと設定がいるかもしれない)
-//**キャプションをわざと抜く? 詳しくは作者README
-//**Noise offset入れる? よくわかりません デフォルト値は0.1
+//** キャプションをわざと抜く? 詳しくは作者README
+//** Noise offset入れる? よくわかりません デフォルト値は0.1
 //----
-//**次の学習も仕込む? このあと一連の手順を追記して別の学習を予約できる
+//** 次の学習も仕込む? このあと一連の手順を追記して別の学習を予約できる
 //
 ----
-**学習の様子 縦横の比率は自動で振り分けしてくれる
+** 学習の様子 縦横の比率は自動で振り分けしてくれる
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/9VizQs0l1c.png)
-**出来上がり
+** 出来上がり
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/y3w3sgkzGd.png)
 last.safetensors というファイルができる
 追加学習するときはこのファイルを指定する
@@ -558,6 +520,20 @@ last.safetensors というファイルができる
 &video(https://image02.seesaawiki.jp/n/h/nai_ch/OXhMCWcV4H.webm)
 [END]
 研究心旺盛ニキはコマンドラインの訳を読むとええで [[lora_train_command_line.py>lora_train_command_line.py]]
+*** コマンドライン版を使う場合
++ ArgsList.pyにパラメーターを書く
+※2023/02/24版から設定ファイルがlora_train_command_line.pyからArgsList.pyに変更されているので注意
+設定を書き込むのはArgsList.pyの最初の方あたり。学習ベースになるモデル、学習素材フォルダの場所、出力先は必ず設定する。わからんところはそのままにしとく。
+記法は以下を参考に、文字列(str)は r"c:\hogehoge"　のように入力、数値(float,int)はそのまま数値を入力、Falseとなっている部分はTrueで有効になる。
+以下ArgsList.pyの日本語訳
+[+]
+#include(lora_train_command_line.py)
+[END]
++ run_command_line.batを実行
++ 出来上がりを待つ
+
+
+
 //コマンドライン版の説明が詳しいのでコメントアウトしました
 //ポップアップの質問と答えの例
 //[+]
@@ -758,11 +734,11 @@ python3 sd-scripts/train_network.py
 生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]のインストールが必要。
 標準のExtra Networksおよびkohya-ss氏作成の[[sd-webui-addtional-networks>>https://github.com/kohya-ss/sd-webui-additional-networks]]で使用できる。
 
-*Loraの使用方法&aname(apply_lora)
+* Loraの使用方法&aname(apply_lora)
 
 ''使い方その1とその2で、配置するフォルダが違うので注意！''
 
-**使い方その1 WebUIに拡張機能をインストールして使う
+** 使い方その1 WebUIに拡張機能をインストールして使う
 -「拡張機能」タブの「URLからインストール」に https://github.com/kohya-ss/sd-webui-additional-networks を入力してインストール )~~
 stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora フォルダに 出来上がった .pt や .safetensorsをコピーする
 (Web UI の 「設定」> 「Additional Nerwork」タブでフォルダの場所を追加出来る)
@@ -770,7 +746,7 @@ stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora フ�
 [+]わからんとき用画像
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/xl2vcs_kBK.png)
 [END]
-**使い方その2 WebUIの本体機能のみで使う
+** 使い方その2 WebUIの本体機能のみで使う
 -stable-diffusion-webui\models\lora に拾った .pt や .safetensorsをコピーする
 「txt2img」や「img2img」の「生成」ボタンの下の花札みたいなマーク(&#127924;)を押すと
 Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して
@@ -834,45 +810,15 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 VRAM8GBでは512x512、Batch size2は余裕で動く。
 mem_eff_attenとgradient_checkpointingを有効にすれば1024x1024もギリギリできる。5-6倍遅くなるが。
 ただ、解像度を上げることで品質向上する可能性は低いので現時点ではお勧めしない。要検証。
+瞬間的に物理メモリを20GB消費するので16GB以上あったほうが安心。
+仮想メモリはtorchバージョンによるが、40-60GB消費する。
+
 *注意点やで
 - 基本的にLoraは元々「DreamBoothみたいに学習した差分ファイルをモデルにマージするための差分パッチみたいなもんとして使う」事が前提で作られとるから、今の個別適用は元々の設計と違う使い方なんや、なんで色々制限事項がある。
 -- Loraは''原則「作ったモデルと同じ系統(SD-v1.x系 or SD-v2.x)」でしか適用できへん''で。要するにAnyとかで作ったLoraはWD1.4以降とかには使われへんし、その逆もしかりや。
 --- よく似た使い方するHyperNetworkは系統またいでも一応反映はされとるみたいやで？しらんけど。
 --- Extra Netrowksで間違えてSD1.x用のLoRAをSD2.xで使うとWebUIを再起動するまでエラーで二度と使えなくなるから注意やで
--- また、Loraを複数1倍で重ねて使うと絵が崩壊しやすくなる。適用したい階層が違う場合、階層適用出来るエクステンションとかでずらしたらええんとちゃうかなしらんけど。
+-- また、Loraを複数1倍で重ねて使うと絵が崩壊しやすくなる。適用したい階層が違う場合、階層適用出来るエクステンションとかでずらしたらええんとちゃうかな？しらんけど。
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
