@@ -52,7 +52,8 @@ deepl無料アカウントでapi制限キツいから更新は週1の予定
 
 * 一覧(順不同)
 
-- 「Load from:ボタン」を押して出てくる一覧の順に並んでるやでー
+- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui-extensions/master/index.json　
+- 上のJSONを基本として公式Extension採用順（古→新）で並べた。新規採用分を下に追加していく。
 
 ** Aesthetic Gradients
 https://github.com/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients.git
@@ -639,7 +640,7 @@ added: 2023-02-11
 ** sd-webui-controlnet
 url: https://github.com/Mikubill/sd-webui-controlnet.git
 description: WebUI extension for ControlNet. Note: (WIP), so don't expect seed reproducibility - as updates may change things
-ControlNetのWebUI拡張。注：（WIP）なので、種子の再現性は期待しないでください - アップデートで変更される可能性があるため。
+ControlNetのWebUI拡張。注：（作成途中）アップデートによって状況が変わる可能性があるため、シードによる再現性を期待しないでください。
 - 話題のControlNet 詳しくは別ページに→[[ControlNet]]
 added: 2023-02-18
 tags: [script]
@@ -692,12 +693,26 @@ description: Custom Theme.
 added: 2023-02-28
 tags: [UI related]
 
+** LoRA Block Weight
+url: https://github.com/hako-mikan/sd-webui-lora-block-weight.git
+LoRAの強度を、ブロックごとにオンザフライで適用します。プリセット、重量分析、ランダム化、XYプロットが含まれます。
+description: Applies LoRA strength; block by block on the fly. Includes presets weight analysis randomization XY plot.
+added: 2023-02-28
+tags: [models]
+
 ** ebsynth_utility
 url: https://github.com/s9roll7/ebsynth_utility.git
 説明: img2img と ebsynth を使用してビデオを作成するための拡張機能。 ebsynth を使用して編集したビデオを出力します。 ControlNet 拡張で動作します。
 description: Extension for creating videos using img2img and ebsynth. Output edited videos using ebsynth. Works with ControlNet extension.
 added: 2023-03-04
 tags: [tab animation]
+
+** a1111-sd-webui-locon
+url: https://github.com/KohakuBlueleaf/a1111-sd-webui-locon.git
+LoConネットワークをwebuiで読み込むための拡張機能です。
+description: An extension for loading LoCon networks in webui.
+added: 2023-03-04
+tags: [script]
 
 ** CFG-Schedule-for-Automatic1111-SD
 url: https://github.com/guzuligo/CFG-Schedule-for-Automatic1111-SD.git
@@ -755,12 +770,19 @@ description: Generate hallways with the depth-to-image model at 512 resolution. 
 added: 2023-03-11
 tags: [tab]
 
-** 3D Model Loader
+** 3D Model&Pose Loader
 url: https://github.com/jtydhr88/sd-3dmodel-loader.git
 説明: 3D モデル/アニメーションを webui 内にロードし、スクリーンショットを txt2img に、または img2img を ControlNet に送信します。
 description: Load your 3D model/animation inside webui then send screenshot to txt2img or img2img to ControlNet.
 added: 2023-03-11
 tags: [tab]
+
+** stable-diffusion-webui-rembg
+url: https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg.git
+画像から背景を削除します。
+description: Removes backgrounds from pictures.
+added: 2023-03-12
+tags: [script extras]
 
 ** db-storage1111
 url: https://github.com/takoyaro/db-storage1111.git
@@ -768,6 +790,77 @@ url: https://github.com/takoyaro/db-storage1111.git
 description: Allows to store pictures and their metadata in a database. (supports MongoDB)
 added: 2023-03-12
 tags: [script]
+
+** sd-webui-tunnels
+url: https://github.com/Bing-su/sd-webui-tunnels.git
+デフォルトのトンネリングメソッドに代わるものを追加します(Cloudflaredを含む)。
+description: Add alternatives to the default tunneling methods. (including cloudflared)
+added: 2023-03-13
+tags: [script online]
+
+** 3D Openpose Editor
+url: https://github.com/nonnonstop/sd-webui-3d-open-pose-editor.git
+説明: WebUI で 3D モデルのポーズを編集し、ControlNet 用の Openpose/Depth/Normal/Canny マップを生成します。
+description: Edit the pose of 3D models in the WebUI and generate Openpose/Depth/Normal/Canny maps for ControlNet.
+added: 2023-03-16
+tags: [tab]
+
+** ModelScope text2video
+url: https://github.com/deforum-art/sd-webui-modelscope-text2video.git
+説明: Auto1111 WebUI 依存関係のみを使用した ModelScope text2video の実装。
+description: Implementation of ModelScope text2video using only Auto1111 webui dependencies.
+added: 2023-03-19
+tags: [tab animation]
+
+** stable-diffusion-webui-state
+url: https://github.com/ilian6806/stable-diffusion-webui-state.git
+リロード/再起動後にUI状態を保持します。
+description: Preserves the UI state after reload/restart.
+added: 2023-03-19
+tags: [script]
+
+** sd-webui-enable-checker
+url: https://github.com/shirayu/sd-webui-enable-checker.git
+WebUIで「有効」になっている機能の背景に色を付けて分かりやすくする
+description: Switch background color by clicking the Enable buttons in SD Web UI
+added: 2023-03-19
+tags: [script]
+
+** Aspect Ratio Helper
+url: https://github.com/thomasasfk/sd-webui-aspect-ratio-helper.git
+同じアスペクト比を維持しながら簡単に拡大できます。
+description: Easily scale dimensions while retaining the same aspect ratio.
+added: 2023-03-20
+tags: [script dropdown UI related]
+
+** Auto Translate
+url: https://github.com/hyd998877/stable-diffusion-webui-auto-translate-language
+言語の拡張機能により、設定ファイルを手動でダウンロードすることなく、母国語でプロンプトを記述し、UIを自動的に翻訳することができます。新しいプラグインも翻訳できます。
+description: Language extension allows users to write prompts in their native language and automatically translate UI without the need to manually download configuration files. New plugins can also be translated.
+added: 2023-03-24
+tags: [UI related]
+
+** Regional Prompter
+url: https://github.com/hako-mikan/sd-webui-regional-prompter.git
+エリア別に異なるプロンプトを適用する。latent coupleとは異なる方法を使っており、改善できる可能性がある。
+description: Specify different prompts for different regions; an alternative method and potential improvement to latent couple.
+added: 2023-03-26
+tags: [manipulations]
+
+** Canvas Zoom
+url : https://github.com/richrobber2/canvas-zoom.git
+Inpaint SketchとInpaint Sketchを拡大縮小する機能を追加しました。便利なホットキーの追加
+description: Added the ability to scale Inpaint Sketch and Inpaint Sketch. Adds useful hotkeys
+added: 2023-03-27
+tags: [UI related]
+
+** Prompt Translator
+url: https://github.com/butaixianran/Stable-Diffusion-Webui-Prompt-Translator
+DeeplやBaiduを使ってプロンプトを英語に翻訳するための統合トランスレーターです
+description: A integrated translator for translating prompts to English using Deepl or Baidu.
+added: 2023-02-11
+tags: [tab prompting online]
+
 
 * 標準Scripts
 

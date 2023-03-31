@@ -82,6 +82,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX 5700X|8GB|Ryzen 7 3700X||236.26|--skip-torch-cuda-test --no-half --no-half-vae --medvram|7th3A torch 1.13.1 xformers無し 改造手順10未適用|
 |RX 6650XT|8GB|Ryzen 5 5600G||59.52|--opt-sdp-attention|torch:2.0.0+rocm5.4.2 Ubuntu20.04.6 RAM16GB|
 |4070|||||||
 |RTX 4070 Ti|12GB|Ryzen 7 3700X||18.57|--opt-sdp-no-mem-attention --opt-channelslast --no-half-vae|torch: 2.0.0+cu118|
