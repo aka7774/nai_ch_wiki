@@ -62,13 +62,14 @@ PhotoSift を使う
 IrfanVIewを使う
 振り分け機能があって便利らしい
 
-** PNGのテキストデータを編集したい
+** PNGのテキストデータを閲覧/編集したい
 以下のソフトを使えばドラッグ&ドロップで内部のPng chunkデータが閲覧/編集できる。
+右クリックからのコンテキストメニューから開くこともできる。
 TweakPNG - https://entropymine.com/jason/tweakpng/
 図：UIのイメージ
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zrf1ecT6Bv-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/zrf1ecT6Bv.jpg]]
 
-** 高画質にしたい
+** 高画質/高解像度にしたい
 Real-ESRGAN-GUIを使う（おすすめ）Win/Mac対応ソフト
 https://github.com/tsukumijima/Real-ESRGAN-GUI
 webやスマホならwaifu2xを使う
@@ -77,6 +78,8 @@ Automatic1111 WebUI上のExtras（その他）タブからもアップスケー�
 下記リンクから.pthファイルダウンロードして、ローカルのESRGANフォルダに突っ込んで再起動で使える
 ライセンスよーわからん怖いってのならCC0かWTFPLのやつにしとけばライセンス的には安全、ファイルが安全かとかどのフィルタがどんな効果かは知らんけど
 https://upscale.wiki/wiki/Model_Database
+
+くわしくは[[高解像度で生成する方法]]を参照のこと
 
 ** プロンプト入力支援ブラウザ拡張
 AIの画像生成でpromptの編集を支援するためのツール

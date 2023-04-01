@@ -101,6 +101,7 @@ GUIのほうが更新が数日遅れるのが常やから我慢してや。
 -GradioベースのGUI。
 -「Tools」タブにフォルダ配置補助機能がある。
 -スクリプト版のパラメータの一部は設定出来ないかも？
+-2回目以降の起動は、powershellならactivate.ps1、gui.ps1を順番に呼ぶのが早い（自動でブラウザも立ち上がる）
 -アップデートは upgrade.ps1 をpowershellで実行
 
 ** AUTOMATIC1111 SD WebUI 拡張機能版 (作: ddPn08 GUI)
