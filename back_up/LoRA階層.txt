@@ -3,6 +3,12 @@ sd-webui-lora-block-weightとか導入すると使えます
 Loraを適用する際、強さを階層ごとに設定できます。
 顔層だけ適用させるとか、塗りや陰影はいらないから切るとかできるので便利です。
 
+* 参考資料とか
+*** LoRA-Block-Weight 層別メモ
+https://rentry.org/lora-bw-memo
+LyCORISのLBWの検証記事。
+
+
 * 導入：sd-webui-lora-block-weight
 AUTOMATIC1111's stable-diffusion-webui 用のスクリプト
 公式リポジトリのReadmeを読んで導入

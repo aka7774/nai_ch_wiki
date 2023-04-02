@@ -4,6 +4,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|意味|備考|サンプル|
+|{{vector trace}}, 1 girl, fast food restaurant crew, red visor, polo shirt, tight skirt, {{{{younger}}}}, {{slender}}, black shiny hair, long hair, yellow eyes, medium breasts, indoor, fast food restaurant, front view, {cowboy shot}, {{facing the front}}, from outside, {{solo focus}}, {{perfect face}}, {{perfect anatomy}}, intricate (highly detailed)||ファストフード店クルー|指定しなくてもハンバーガーやドリンクなどを持って描写されることが多いです。|https://image02.seesaawiki.jp/n/h/nai_ch/33bsLmpZSs.png https://image01.seesaawiki.jp/n/h/nai_ch/F3SimOi1zn.png|
 |nsfw, 1 girl, {{slave}}, {{{{{{dirty clothes}}}}}},  {torn clothes}, {{{{white clothes, Ancient Greek clothes}}}}, both arms bound, collar, chain leash, handcuffs, shackles, wet, nose blush, {{sad}}, {{tearful}}, sweat, younger, black messy hair, blue eyes, medium breasts, outdoor, {{ancient times}},  facing the front, cowboy shot, from outside, perfect anatomy, intricate, (highly detailed),||奴隷||https://image01.seesaawiki.jp/n/h/nai_ch/iJeAr2Fymf.png　https://image02.seesaawiki.jp/n/h/nai_ch/zUpkFrLYZy.png|
 |1 girl, {{{{caveman, leopard far bikini, fur trim}}}}, club (weapon) , holding club , younger, blonde medium hair, green eyes, medium breasts, outdoor, {{ancient times}},  facing the front, cowboy shot, from outside, perfect anatomy, intricate, (highly detailed),||原始人||https://image02.seesaawiki.jp/n/h/nai_ch/gfLJcuLBrG.png　https://image02.seesaawiki.jp/n/h/nai_ch/EaKrkxgD6i.png|
 |1 girl, {{{{native american dress}}}}, hairband, {{{{plumage feathers on head}}}}, bare shoulders, {{fringe trim costume}}, fringe skirt, boots, younger, sitting, gray twin braids hair, yellow eyes, medium breasts, outdoor, {{Prairie}},  facing the front, cowboy shot, from outside, perfect anatomy, intricate, (highly detailed),||ネイティブアメリカン風|フリンジが毛皮になることがあります。|https://image01.seesaawiki.jp/n/h/nai_ch/RLStyqRcGX.png https://image01.seesaawiki.jp/n/h/nai_ch/EEwvXAFVk0.png|
@@ -465,6 +466,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|visor|サンバイザー|この単語だけでは弱いので他のプロンプトで補強した方がいいです。|https://image02.seesaawiki.jp/n/h/nai_ch/MEVNigm2m1.png|
 |bun cover|シニヨンキャップ|シニヨンに被せる布製カバーのこと。|https://image01.seesaawiki.jp/n/h/nai_ch/H3Mp8zWH7y.png|
 |anklet|アンクレット（足輪）||https://image01.seesaawiki.jp/n/h/nai_ch/zRSw5p4Ai6.png|
 |peaked cap|官帽|軍隊や警察などの制帽として広く採用されている帽子。英語では組織や用途で他に様々な呼称が使い分けられている。|https://image01.seesaawiki.jp/n/h/nai_ch/atmdEXK_ce.png|

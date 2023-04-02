@@ -101,7 +101,7 @@ GUIのほうが更新が数日遅れるのが常やから我慢してや。
 -GradioベースのGUI。
 -「Tools」タブにフォルダ配置補助機能がある。
 -スクリプト版のパラメータの一部は設定出来ないかも？
--2回目以降の起動は、powershellならactivate.ps1、gui.ps1を順番に呼ぶのが早い（自動でブラウザも立ち上がる）
+-起動は、powershellならactivate.ps1、gui-user.ps1を順番に呼ぶのが早い（自動でブラウザも立ち上がる）
 -アップデートは upgrade.ps1 をpowershellで実行
 
 ** AUTOMATIC1111 SD WebUI 拡張機能版 (作: ddPn08 GUI)
@@ -117,7 +117,11 @@ https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定し�
 - accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
 - kohya-ssやEasyTrainScriptsとは違い、sd-scriptsを標準の方法でインストールしておくことが前提。
 - としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。
-
+** sd-webui-train-tools | https://github.com/liasece/sd-webui-train-tools
+AUTOMATIC1111 SD WebUI 用の 拡張機能
+画像をドロップしてパラメータを程よく埋めると出来る。簡単
+動かんときは別にWebUIをセットアップして学習専用にしたほうがいい。
+ReadMEが中国語なのでgoogle翻訳頑張れるなら 
 ** その他補助スクリプト
 としあきbatや4chan製のスクリプトがある
 
@@ -380,7 +384,7 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 + run_popup.batを実行
 + ポップアップにパラメーターを順次入力する
 + 出来上がりを待つ
-*** LoRA_Easy_Training_Scripts ポップアップ版の手順画像 参考程度 (2023-03-04時点)
+*** LoRA_Easy_Training_Scripts ポップアップ版の手順画像 参考程度 (2023-04-02時点)
 クリックして展開 アップデートなどで内容は変わる
 わからんパラメータが出たらcancelを押しとけばデフォルト値が入る。
 英語がわからんときはスクリーンショット撮ってスレで聞いてクレメンス。動かしとるやつなら誰かわかるやろ。
@@ -440,6 +444,8 @@ Stable Diffusion V2のモデルで学習する? 「いいえ」
 network dim 次元数: デフォルト値は32
 network alpha アルファ: dimの半分がデフォルト値
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/9BxUs0JJhS.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VlKOhNLhCY.png)
+LoRAタイプ LoRA,LoCon,LoHa から選ぶ
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zCQ3fKlsIm.png)
 ** LoCon設定 各自いじって (編注:なんかおかしい気がするがよくわからん)
 LoConの次元数: デフォルト値はnetwork dimと同じ
 LoConのアルファ: デフォルト値はLoCon dim と同じ
@@ -455,10 +461,14 @@ U-Netの学習率:よくわからんときはキャンセルで。
 ** スケジューラ
 どのスケジューラを使いますか？ 学習率を途中で上げ下げするやり方。詳しくはぐぐって。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/cDPsMBCQT7.png)
+----
+** cosine with restartの回数を決めてください
+----
 ** 学習の解像度
 解像度をいくつにしますか？デフォルトは512
 512が速い, 768ならRTX3060やColabで10000ステップ4~5時間コース
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/0I6Xi5Edzq.png)
+この後横の解像度も聞かれる。キャンセルを押せば正方形になる
 ----
 ** バッチサイズ:一度に何枚処理するか VRAM12Gなら4〜6くらいいける(解像度512の場合)で、動かんかったら1で
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/O0bJN0I8s4.png)
@@ -471,7 +481,6 @@ U-Netの学習率:よくわからんときはキャンセルで。
 何エポックごとに保存しますか？
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/M6Jh5Uc7cL.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZCqzxdoZWw.png)
 ----
-** cosine with restartの回数を決めてください
 ** warmup ratio を使いますか？使う場合の比率を決めてください: 学習の最初だけ学習率をあげる機能
 ----
 ** シャッフルキャプションの設定
@@ -490,18 +499,23 @@ U-Netの学習率:よくわからんときはキャンセルで。
 
 ----
 ** 画像の拡大をやめますか？ 小さな画像を無理やり拡大してガビガビにならんようにする
-
+----
 ** mixed precision
 fp16で。 RTX3000以降ならbf16を使うとNaNsエラーが出にくくなるらしい。
 ** cacha latent と random crop
 cacha latentは学習前に画像をキャッシュして速くする方法
 random cropは自動的にランダムに学習用画像を切り抜きすることで少ない画像でも効果が上がるかもしれない方法
 どちらか片方しか使えないのでここで選ぶ
+----
+min SNR gamma training を使いますか？ 新機能 よくわからん
+----
 ** テストイメージ
 dreamboothとかでできてた学習の様子を画像で出すやつ
-力尽きたので割愛
-txtファイルにプロンプトを書いて用意しておく必要がある
-デフォルトでは200stepごとに1枚生成 (編注:回してみたら画像は作られてなかったのでもっと設定がいるかもしれない)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VX_bsaoUGp.png)
+txtファイルにプロンプトを1行で書いて用意しておく必要がある
+プロンプト --n ネガティブプロンプト --w 768 --h 768 --d 1 --l 7.5 --s 28
+など
+デフォルトでは200stepごとに1枚生成
 //** キャプションをわざと抜く? 詳しくは作者README
 //** Noise offset入れる? よくわかりません デフォルト値は0.1
 //----
@@ -532,9 +546,6 @@ last.safetensors というファイルができる
 [END]
 + run_command_line.batを実行
 + 出来上がりを待つ
-
-
-
 //コマンドライン版の説明が詳しいのでコメントアウトしました
 //ポップアップの質問と答えの例
 //[+]
@@ -568,17 +579,11 @@ last.safetensors というファイルができる
 //||エポック毎に出力ファイルの名前を変える?|||
 //|What do you want your output name to be?|出力ファイルの名前|省略時はオリジナルと一緒||
 //[END]
-
-
 ** オプティマイザー
-
 *** Adafactor
 再現度はAdamW以下なのでおすすめしない。
-Adなんとかを使って学習してみたらなんも学習してないのができて悲しかったので、スレでマークしておいたものを記録しておきます。
-
+Adなんとかを使って学習してみたらなんも学習してないのができて悲しかったので、スレでマークしておいたものを記録しておきます。クリックして展開
 [+]2023/02/22あたりのAdafactorの話題メモ
-
-
 ----
 -396: としあき  2023/02/22(水) 00:56:16.00
 >>Adafactorって簡単に言うとどういうものなの？
@@ -702,15 +707,11 @@ warmupはどっかをいじって立ち上げ角度変えんと邪魔にしか�
 なんか混ざっちゃうのはワイがタグ付け&#128118;だからだと思う
 ちなモデルはリアル系は合わなくてHXDCにしたらかわいくなってしまった、クソアニメなのに
 &ref(https://i.imgur.com/9VaR1jC.jpg,300) &ref(https://i.imgur.com/sii4OxP.jpg,300)
-
 [END]
-
 ** LoCon(LyCORIS)について
 https://github.com/KohakuBlueleaf/LyCORIS
-
 LoRAの新しい学習手法。通常のLoRAより性能がいいかもしれない。学習速度(it/s)は遅い。
 名前が変わって LyCORIS に統合された
-
 sd-scriptsのvenvで
 =|BOX|
 pip install lycoris_lora
@@ -823,3 +824,6 @@ mem_eff_attenとgradient_checkpointingを有効にすれば1024x1024もギリギ
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
+
+
