@@ -132,7 +132,7 @@ tagger通さずに画像に対応した空のテキスト欲しかったから�
 https://i.imgur.com/dyatwXB.jpg
 ||=
 
-**Kohya_lora_param_gui
+** Kohya_lora_param_gui
 https://github.com/RedRayz/Kohya_lora_param_gui
 - sd-scriptsのパラメーター設定をGUIで出来るようにするもの。
 https://fate.5ch.net/test/read.cgi/liveuranus/1680004431/740
@@ -143,3 +143,18 @@ GUIにベンチマークモードとLoraのConv2dの学習オプション追加�
 https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.2.1
 ||=
 
+* その他
+
+** PNG Infoを維持したままPNGをJPEGに変換するツール
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/148
+https://mega.nz/folder/uY42VJZa#7Hh0vTvhpa3poL_gNgzipg
+=|BOX|
+148 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f04-CAqR)[sage] 投稿日：2023/04/03(月) 15:34:05.12 ID:CsCA9lKv0
+前スレでリクエストのあった
+PNG Infoを維持したままPNGをJPEGに変換するツール
+公開したで
+フォルダごとダウンロードして使ってくれ
+半分ChatGPTに聞きながら作ったけど間違ってるソースをドヤ顔で提示してくるから困ったもんやで
+https://mega.nz/folder/uY42VJZa#7Hh0vTvhpa3poL_gNgzipg
+
+||=

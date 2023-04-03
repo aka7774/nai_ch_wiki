@@ -4,6 +4,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|意味|備考|サンプル|
+|{{vector trace}}, 1 girl, {{flight attendant}}, {garrison cap}, silk scarf, orange jacket, pencil skirt, standing, smile, {{{{younger}}}}, {{slender}}, blonde shiny hair, chignon head, green eyes, medium breasts, indoor, airplane interior, front view, {cowboy shot}, {{facing the front}}, from outside, {{solo focus}}, {{perfect face}}, {{perfect anatomy}}, intricate (highly detailed)||キャビンアテンダント|キャビンアテンダントは和製英語。flight attendantかcabin crewが一般的。|https://image01.seesaawiki.jp/n/h/nai_ch/Od1ApMaqcb.png https://image01.seesaawiki.jp/n/h/nai_ch/6faq6Z9FD3.png|
 |{{vector trace}}, 1 girl, fast food restaurant crew, red visor, polo shirt, tight skirt, {{{{younger}}}}, {{slender}}, black shiny hair, long hair, yellow eyes, medium breasts, indoor, fast food restaurant, front view, {cowboy shot}, {{facing the front}}, from outside, {{solo focus}}, {{perfect face}}, {{perfect anatomy}}, intricate (highly detailed)||ファストフード店クルー|指定しなくてもハンバーガーやドリンクなどを持って描写されることが多いです。|https://image02.seesaawiki.jp/n/h/nai_ch/33bsLmpZSs.png https://image01.seesaawiki.jp/n/h/nai_ch/F3SimOi1zn.png|
 |nsfw, 1 girl, {{slave}}, {{{{{{dirty clothes}}}}}},  {torn clothes}, {{{{white clothes, Ancient Greek clothes}}}}, both arms bound, collar, chain leash, handcuffs, shackles, wet, nose blush, {{sad}}, {{tearful}}, sweat, younger, black messy hair, blue eyes, medium breasts, outdoor, {{ancient times}},  facing the front, cowboy shot, from outside, perfect anatomy, intricate, (highly detailed),||奴隷||https://image01.seesaawiki.jp/n/h/nai_ch/iJeAr2Fymf.png　https://image02.seesaawiki.jp/n/h/nai_ch/zUpkFrLYZy.png|
 |1 girl, {{{{caveman, leopard far bikini, fur trim}}}}, club (weapon) , holding club , younger, blonde medium hair, green eyes, medium breasts, outdoor, {{ancient times}},  facing the front, cowboy shot, from outside, perfect anatomy, intricate, (highly detailed),||原始人||https://image02.seesaawiki.jp/n/h/nai_ch/gfLJcuLBrG.png　https://image02.seesaawiki.jp/n/h/nai_ch/EaKrkxgD6i.png|
@@ -156,7 +157,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-|gym uniform|体操服|背景がフィットネスジムになってダンベルが出てくることがある。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5oF6sm1K8f.png)|
+|gym uniform|体操服|背景がフィットネスジムになってバーベルが出てくることがある。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5oF6sm1K8f.png)|
 |pinafore dress|ブレザー制服の下に着てるエプロン的なオーバーオール的なアレ|日本語での正式名称がわからん。ジャンパースカート?|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5b7Ep6sc4u.png)|
 |gyaru , tied blouse ,open blouse , cleavage , wearing school girl|アメスク|ネガ: tie , long tie , bow tie , &#128084;, collar ,ribbon tie|https://i.imgur.com/2Lg7H3A.png|
 |marching band uniform|マーチングバンドの制服|スカートの指定がない場合ズボンになることもある。帽子（シャコー帽）は指定しないと出ないことが多い。|https://image02.seesaawiki.jp/n/h/nai_ch/LoS5AJciPQ.png|

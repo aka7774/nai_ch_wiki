@@ -239,7 +239,14 @@ Stable Diffusionのモデルを共有できるサイト。ローカル版ユー�
 
 *** 注意
 +画像を上げるとき、promptに年齢指定があるか、少しでも子供っぽく見えると規約違反で消される。欧米諸国はそういうのに超厳しいから仕方ない。 ~~ 消されるのが怖いなら被写体をおっさんにして回避しよう。
-+とても重いので、学習中に開かないように！ブラウザも学習もかなり遅くなる。
++サーバーが不安定か遅いときが多い。
+
+** Rentry.co - Markdown Pastebin
+https://rentry.co/
+https://rentry.org/
+匿名で記事を投稿できる。ノート代わりになる。メモや検証成果を載せるのにいい。
+orgの方はミラーサイトで、内容は共通。
+.rgのほうにつながらないときはcoの方にアクセスしよう。
 
 ** 背景を切り抜きたい：Anime Remove Background
 https://huggingface.co/spaces/skytnt/anime-remove-background
@@ -264,6 +271,7 @@ https://ai-booth.com/novelai/
 * Tips
 *** 絵文字は使えるの？
 使える。実例は以下([[絵文字と対応する作例を示したサイト>https://rentry.co/xnpkp]]がありこれが参考になると思う。)
+他に日本語なども使える。ほとんど反応しないが。
 [+]
 |&ref(https://i.imgur.com/DIitipv.jpg,200)|&ref(https://i.imgur.com/56W3jnB.jpg,300)|&ref(https://i.imgur.com/0a8R4ka.jpg,200)|
 |&ref(https://i.imgur.com/fHJAWvq.jpg,200)|&ref(https://i.imgur.com/GJTigHe.jpg,300)|&ref(https://i.imgur.com/RZxuNvJ.jpg,200)|
@@ -271,7 +279,7 @@ https://ai-booth.com/novelai/
 [END]
 
 *** モザイクうざい
-モザイクとかに悩んでる奴はUndesired Contentを活用するといいぞ
+モザイクとかに悩んでる奴はNegative Prompt/Undesired Contentを活用するといいぞ
 適用されないタグをとりあえずぶち込んどけば黒線とかロゴの生成確率を減らせる
 俺がいつも雑に入れてるやつ貼っとくわ(他人の受け売りだけど)
 
@@ -282,7 +290,8 @@ lowres, trademark, watermark, title, text, deformed, bad anatomy, disfigured, mu
 ** ローカル版：NovelAILeak
 ローカル部の情報と被ってるので整理する。
 [+]
-流出版NovelAI。非正規、非公式、安全である保障なし。利用は自己責任。
+流出版NovelAI。非正規、非公式、安全である保障なし。
+なにかしら問題を聞いたことはないし当たり前のように使用されているが、利用は自己責任で。
 ''安易に真似しないこと''
 
 やってること自体は、Stable Diffusion Web UIを構築して、リークモデルを読み込ませて、生成が一致するように設定をしているだけ
