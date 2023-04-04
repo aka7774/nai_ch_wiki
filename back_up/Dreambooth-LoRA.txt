@@ -736,6 +736,11 @@ python3 sd-scripts/train_network.py
 生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]のインストールが必要。
 標準のExtra Networksおよびkohya-ss氏作成の[[sd-webui-addtional-networks>>https://github.com/kohya-ss/sd-webui-additional-networks]]で使用できる。
 
+* LoRA層別学習
+U-Netの階層別に学習率やDim/Alphaを指定できるようになった。
+まだ出たばかりで詳細不明。とりあえず作者の説明書を読もう。
+加筆求む
+
 * Loraの使用方法&aname(apply_lora)
 
 ''使い方その1とその2で、配置するフォルダが違うので注意！''
