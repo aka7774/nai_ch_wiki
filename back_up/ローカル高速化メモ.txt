@@ -56,8 +56,9 @@ RTX30,40にて効果を確認したが、1000番台ではxformers適用の方が
 
 - SDPについて
 2023年3月上旬にcommitされたらしい
-xformersと特徴は同じで、--opt-sdp-no-mem-attentionまたは--opt-sdp-attentionをつけるとほんのちょっと絵が変化する代わりに2割程度速くなる
-xformersと併用、共存はできない
+xformersと特徴は同じで、--opt-sdp-no-mem-attentionまたは--opt-sdp-attentionをつけるとわずかに絵が変化する代わりに2割程度速くなる。
+opt-sdp-attentionのほうは出力の揺らぎが大きいかもしれない。
+xformersと併用、共存はできない。
 xformersよりVRAM使用量が増えるため、学習や高解像度生成時には注意
 [END]
 

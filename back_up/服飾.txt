@@ -104,6 +104,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|||||
 |denim shorts|デニム地のショートパンツ|jeans hotpantsよりだとジーンズになる事が多いのでローライズなのは出やすい模様||
 |hotpants|ホットパンツ|普通に指定するとデニムホットパンツが出てくる率が高いので、それが嫌な方はNCにdenim指定をどうぞ|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA.png]]|
 |short shorts|→ホットパンツ|学習元データでの仕分けの関係上、ホットパンツと同義|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA.png]]|

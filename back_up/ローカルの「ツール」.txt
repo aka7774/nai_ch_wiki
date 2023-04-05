@@ -123,14 +123,20 @@ python fix_position_ids.py --model E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3
 
 * 学習
 
-**学習用タグの入力を速く楽にするやつ<最新>
-https://uploader.cc/s/q62eid7t5ny492rd6hazwv1shqzy66zpu23h0oxlr8kpht34cc0wruck16qfhlk8.zip
+**学習用タグの入力を速く楽にするやつ
+https://fate.5ch.net/test/read.cgi/liveuranus/1680673605/124
+https://uploader.cc/s/facw8gzhellfpv56b8unz3iprmql5wyjfy7atxiy9xnx23284x2ut1836vwqwa5u.zip
 =|BOX|
-186 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 3fe8-4osW)[sage] 投稿日：2023/02/10(金) 11:11:02.35 ID:qj344kaT0
-tagger通さずに画像に対応した空のテキスト欲しかったから学習用タグの編集を速く楽にするやつにその機能付けたで
-他は更新してないんでそんなんいらんて人は無視してや
-https://i.imgur.com/dyatwXB.jpg
+122 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff2b-ejsh)[sage] 投稿日：2023/04/05(水) 18:01:31.11 ID:FWEn7wkM0
+「学習用タグの入力を速く楽にするやつ」がロダから消えてリンク切れになっとる
+へるぷみー
+124 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ dfe8-kVuH)[sage] 投稿日：2023/04/05(水) 18:13:41.49 ID:hvtBrqzV0
+>>122
+消えんとこにあげればええんやろけど取り敢えず
+ファイル名の途中にjpgとか入ってるとエラー出てたの修正版
+https://uploader.cc/s/facw8gzhellfpv56b8unz3iprmql5wyjfy7atxiy9xnx23284x2ut1836vwqwa5u.zip
 ||=
+
 
 ** Kohya_lora_param_gui
 https://github.com/RedRayz/Kohya_lora_param_gui
@@ -141,6 +147,20 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1680004431/740
 GUIにベンチマークモードとLoraのConv2dの学習オプション追加したで
 単にaccelerateのコマンド打ってから終わるまで時間計るだけやが
 https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.2.1
+||=
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/744
+=|BOX|
+744 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff38-P8lD)[] 投稿日：2023/04/04(火) 21:39:07.50 ID:qkV98myi0 [2/3]
+LoRA学習GUIで層別学習できるようにしたで
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.3.0
+||=
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/784
+=|BOX|
+784 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff38-P8lD)[] 投稿日：2023/04/04(火) 23:27:55.07 ID:qkV98myi0 [3/3]
+>>761
+>>763
+バーの行間詰めてシャットダウン機能の追加した
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.3.1
 ||=
 
 * その他
