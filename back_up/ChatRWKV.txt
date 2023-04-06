@@ -1,0 +1,71 @@
+https://github.com/karaage0703/ChatRWKV
+ルワクフって読むらしい。
+
+AIとエロい会話ができる。
+技術部のチャンネルで研究している。
+このwikiにそぐわないようなら引っ越すのでご指摘ください。
+
+#contents
+
+* LLMについて
+
+大規模言語モデル。文章を生成するAIや。
+NovelAIの本業みたいなやつ？
+ChatGPTとかが流行ってる。が、規制とかで使い続けられるか怪しい。
+
+2023-04-06現在、
+ローカルにインストール出来て日本語が満足に使えるのは、
+vicuna 13b(VRAMを28GB使うかCPUで10分くらい待つ)か、
+このChatRWKVくらいだと思う。他にもあったら教えて欲しい。
+Alpaca Japanese LoRAに追加学習させる手もあるっぽい。
+
+* インストール
+
+筆者はWSL2を使っているがWindowsでも動作できている人がいる。
+
+=|BOX|
+sudo apt-get install ninja-build
+
+git clone https://github.com/BlinkDL/ChatRWKV.git
+cd ChatRWKV/
+python3 -m venv venv
+venv/bin/python -m pip install ninja rwkv
+venv/bin/python -m pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+venv/bin/python -m pip install -r requirements.txt
+||=
+
+* コンバート
+
+strategyでGPU+VRAMとCPU+RAMで処理させる割合を決めてモデルをコンバートできる。
+
+この作業には64GB以上のRAMがあると良い(96GB以上だとスワップアウトしなさそう)。
+仮想メモリを大量に割り当てても動くかも。
+この作業にはGPUは必要無さそう。
+
+7Bはi8にすれば8GB未満のVRAMで全部収まる。
+
+=|BOX|
+wget https://huggingface.co/BlinkDL/rwkv-4-raven/resolve/main/RWKV-4-Raven-7B-v7-EngAndMore-20230404-ctx4096.pth
+venv/bin/python  ./v2/convert_model.py --in ./RMKV-4-Raven-7B-v7-EngAndMore-20230404-ctx4096.pth --out 7bfp16i8.pth --strategy 'cuda fp16i8'
+||=
+
+14BはVRAM 12GBに全部収めるのは無理そうなので細かく調整する。
+4090 24GBがあればChatGPT並みの速度で動かせるらしい・・・。
+
+* v2/chat.py
+
+# モデルによって変える。fp16i8ならこれ。
+args.strategy = 'cuda fp16i8'
+
+# CUDAを使う。Windowsだとreadmeに書いてる手順通りにinstallしてx64 Native Tools Command Prompt for VS 2022コンソールから起動する
+os.environ["RWKV_CUDA_ON"] = '1'
+
+# 使いたいモデルのpath
+args.MODEL_NAME = './7bfp16i8.pth'
+
+そのほかにも細かい設定項目がある。
+
+* v2/prompt/default/English-2.py
+
+ここに初期プロンプトが記述されているので書き換える。
+日本語で書いておけばたぶん会話も日本語で返してくれる。
