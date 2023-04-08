@@ -12,6 +12,23 @@
 ダウンロードとその他のリンクはこちら
 SD RESOURCE GOLDMINE (Non-News) - https://rentry.org/sdgoldmine
 
+** 海外の情報
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/722
+>>707
+699じゃないけど勝手に海外のおすすめ貼ってみるで。
+
+韓: ゲーム情報とかも扱ってる掲示板サイト。HowToとかもまとまってる印象。
+ttps://arca.live/b/aiartreal/63790877?p=1 (実写モデル情報＆チャンネルガイド)
+ttps://aigall.kr/
+
+露: イラスト全般扱ってるサイトの一カテゴリ。作品寄りなものが多いのでお口直しに。
+ttps://pikabu.ru/community/artneuro
+
+英: エッチな実写の金髪ねーちゃん・タトゥー多め。(二次もあるにはある)
+ttps://www.reddit.com/r/sdnsfw/ , ttps://www.reddit.com/r/AIpornhub/
+
+
 ----
 
 *** NovelAI-Prompt Generator
@@ -238,7 +255,7 @@ Stable Diffusionのモデルを共有できるサイト。ローカル版ユー�
 アップロードされたモデルの評価とコメントができる。
 
 *** 注意
-+画像を上げるとき、promptに年齢指定があるか、少しでも子供っぽく見えると規約違反で消される。欧米諸国はそういうのに超厳しいから仕方ない。 ~~ 消されるのが怖いなら被写体をおっさんにして回避しよう。
++画像をアップロードするとき、promptに年齢指定があるか、少しでも子供っぽく見えるか子供を連想させる服とかは規約違反で消される。欧米諸国はそういうのに超厳しいから仕方ない。 ~~ 画像のメタデータを消してアップロードしたほうが安全かも
 +サーバーが不安定か遅いときが多い。
 
 ** Rentry.co - Markdown Pastebin
@@ -246,7 +263,7 @@ https://rentry.co/
 https://rentry.org/
 匿名で記事を投稿できる。ノート代わりになる。メモや検証成果を載せるのにいい。
 orgの方はミラーサイトで、内容は共通。
-.rgのほうにつながらないときはcoの方にアクセスしよう。
+orgのほうにつながらないときはcoの方にアクセスしよう。
 
 ** 背景を切り抜きたい：Anime Remove Background
 https://huggingface.co/spaces/skytnt/anime-remove-background

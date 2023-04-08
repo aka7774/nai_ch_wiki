@@ -21,6 +21,21 @@
 
 
 #contents
+
+* 2023-04-08 顔を推定するControlnetがでる
+顔を推定するControlnetがでる
+https://fate.5ch.net/test/read.cgi/liveuranus/1680673605/931
+https://huggingface.co/CrucibleAI/ControlNetMediaPipeFace
+これ試してみた
+何となく顔がその位置にきて、指定のほう向く感じ
+目と口に関してはプロンプトありきで、あんま効いてないように思える
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/W0c_mC9Kyv.png)
+
+トレーニング方法もあるらしい
+https://fate.5ch.net/test/read.cgi/liveuranus/1680673605/344
+
+
 * 2023-04-07 ネガティブプロンプトエディティング
 =|BOX|
 790今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 5f88-icd+)2023/04/07(金) 05:36:38.53ID:0N3FVRMd0
@@ -36,6 +51,90 @@ Prompt Editingをnegativeに使っとる
 [[プロンプトエディティング>プロンプトエディティング]]をネガティブプロンプトに使用するという手法が紹介された。
 最初からネガティブを指定せず生成の最後にのみ適用させることで、構図に幅を持たせることが出来るようだ。
 
+* 2023/04/04(火)：LoRA学習GUIで層別学習、 Stable Diffusion XL
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/744
+LoRA学習GUIで層別学習できるようにしたで
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.3.0
+
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/535
+Stable Diffusion XLってのが出たらしいがどうなんやろね
+2.系はあんま話題にならんかったけど
+
+* 2023/04/03(月)｜ポエム、韓国ニキの層別マージの表日本語訳
+
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/989
+989: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ dfbf-kVuH) sage 2023/04/03(月) 11:21:40.69 ID:B8m75gQR0 
+&align(center){>>972}
+&align(center){居場所は与えられるものではなく作るもの}
+&align(center){孤立って言葉をネガティブに使っとるけど立てとるだけマシ}
+&align(center){立っとる姿を見せられとるだけマシなんやで}
+&align(center){膝をつき人の森に埋もれ顔も見えずそのまま倒れ立ち上がれない人間がどれだけおるか}
+&align(center){ドヤ顔しとるお子様には分からんやろな}
+&align(center){}
+&align(center){孤立せよ・・・孤立せよ・・・って福本伸行もなんかの漫画で描いてたやろ}
+&align(center){まああれは孤立ではなく個立、無暗に群れず個人として屹立しろって意味やったように記憶しとるけど}
+&align(center){お前も股間ばっか立ててないで個を立ててもっとぶつかり合えよ}
+
+（補足）違法DLを勧めていた人間が周囲から批難されたあげくに残した碑文である　良い子は弁えような
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8ly5wpcNey-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/8ly5wpcNey.jpg]]
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/7
+サンイチ
+これは前スレのポエム
+
+>>7
+草
+
+●韓国ニキの層別マージの表日本語訳
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/103
+前スレの>>772の韓国ニキの層別マージの表を日本語訳にしたで
+直訳だけじゃなくて意訳もあるから誤訳があったら教えてくれや
+=|BOX|
+https://i.imgur.com/pBycwjt.jpg
+||=
+
+あと前スレの>>804ニキがLoConの層別マージをまとめてくれてるからこの表と見比べてみてほしいで
+https://rentry.org/lora-bw-memo
+
+*  2023/04/02(日) 階層別学習率/階層別dim(rank)が追加、韓国コミュで層別マージの資料
+フルモデルの25個のブロックで学習のウェイトやdimが指定できるようになった。
+https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/796
+階層別dimの追加まじかkohya氏有能過ぎる
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/491
+>>458>>481
+韓国コミュで層別マージの資料があったからこっちも参考にしてほしい
+=|BOX|
+https://i.imgur.com/vlB9XCs.jpg
+||=
+
+
+* 2023/03/31(金)：ToMe (Token Merging for Stable Diffusion)
+https://fate.5ch.net/test/read.cgi/liveuranus/1680160046/637
+https://github.com/dbolya/tomesd
+なんか早くなるっぽい？
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680160046/682
+
+1111にToMe適用してアスカベンチやったら29秒台が26秒台になったわ
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/399
+tomeは解像度が高いほど速くなるかわりに描き込みが減るで
+=|BOX|
+ToMeなし
+https://i.imgur.com/39P0lYJ.jpg
+ToMeあり(ratio=0.6)
+https://i.imgur.com/cNwAYk9.jpg
+||=
+
+
+
+* 2023/03/28(火) 学習解像度聖戦｜512で十分学派 VS 1024最高だぜ学派
+https://fate.5ch.net/test/read.cgi/liveuranus/1679896401/570
+このへん
+(争え……もっと争え……)
 
 * 2023-03-27 なんJNVAチラ裏部の誕生
 02/26に荒らしが立てたなんJNVA159の重複スレ
@@ -788,6 +887,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 

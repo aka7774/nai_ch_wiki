@@ -30,6 +30,9 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 : LoRA Training Guide | https://rentry.org/lora_train
 - 4chan有志によるLoRAトレーニング法ガイド（英語）
 
+: いろいろLoRA作成記録 | https://rentry.co/irir_lora
+- 512,768,1024の違い、小物、シチュエーション、背景、画風とかいろいろ
+
 : LoRA 学習メモ | https://rentry.org/i5ynb
 - スレ住民によるLain・よしなが先生・野原ひろしLoRA作成者によるLoRAガイド（日本語）~~更新：2023-03-15｜"--caption_extension=.txt"の引数を追加して明示的に指定しないとタグファイル(.txt)を読みにいかない仕様の注意喚起を追加しました。~~更新：2023-02-09｜低リソース学習(NIKKE)、低dim学習(ゆるキャン 犬山あおい)などを追加しました。
 

@@ -4,6 +4,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|意味|備考|サンプル|
+|{{game cg}}, {{vector trace}}, 1 girl, {{pierrot}}, white skin, {{{{cox comb hat, clown nose, clown makeup, polka dot clothes, clown costume}}}}, smile, teenage, blonde shiny hair, medium hair, green eyes, medium breasts, indoor, front view, facing the front, looking at viewer, from outside, cowboy shot, solo focus, perfect anatomy, intricate, (highly detailed),||道化師／ピエロ||https://image01.seesaawiki.jp/n/h/nai_ch/LmC8wPq0Fo.png https://image01.seesaawiki.jp/n/h/nai_ch/RdR5jpJVZk.png|
 |{{vector trace}}, 1 girl, {{flight attendant}}, {garrison cap}, silk scarf, orange jacket, pencil skirt, standing, smile, {{{{younger}}}}, {{slender}}, blonde shiny hair, chignon head, green eyes, medium breasts, indoor, airplane interior, front view, {cowboy shot}, {{facing the front}}, from outside, {{solo focus}}, {{perfect face}}, {{perfect anatomy}}, intricate (highly detailed)||キャビンアテンダント|キャビンアテンダントは和製英語。flight attendantかcabin crewが一般的。|https://image01.seesaawiki.jp/n/h/nai_ch/Od1ApMaqcb.png https://image01.seesaawiki.jp/n/h/nai_ch/6faq6Z9FD3.png|
 |{{vector trace}}, 1 girl, fast food restaurant crew, red visor, polo shirt, tight skirt, {{{{younger}}}}, {{slender}}, black shiny hair, long hair, yellow eyes, medium breasts, indoor, fast food restaurant, front view, {cowboy shot}, {{facing the front}}, from outside, {{solo focus}}, {{perfect face}}, {{perfect anatomy}}, intricate (highly detailed)||ファストフード店クルー|指定しなくてもハンバーガーやドリンクなどを持って描写されることが多いです。|https://image02.seesaawiki.jp/n/h/nai_ch/33bsLmpZSs.png https://image01.seesaawiki.jp/n/h/nai_ch/F3SimOi1zn.png|
 |nsfw, 1 girl, {{slave}}, {{{{{{dirty clothes}}}}}},  {torn clothes}, {{{{white clothes, Ancient Greek clothes}}}}, both arms bound, collar, chain leash, handcuffs, shackles, wet, nose blush, {{sad}}, {{tearful}}, sweat, younger, black messy hair, blue eyes, medium breasts, outdoor, {{ancient times}},  facing the front, cowboy shot, from outside, perfect anatomy, intricate, (highly detailed),||奴隷||https://image01.seesaawiki.jp/n/h/nai_ch/iJeAr2Fymf.png　https://image02.seesaawiki.jp/n/h/nai_ch/zUpkFrLYZy.png|
@@ -333,6 +334,11 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|black cat costume|黒猫コスプレ|サンプルはblack cat ears katyusha, ear fluff, collar, bell, lingerie, bra, panties, cat tail, garter straps, garterを追加しています。|https://image02.seesaawiki.jp/n/h/nai_ch/1xg1qB_uGW.png|
+|micro-bikini maid costume|ビキニメイド||https://image02.seesaawiki.jp/n/h/nai_ch/ne97FbJyJJ.png|
+|miniskirt maid costume|コスプレメイド|frilled clothesを追加すると、フリルでゴテゴテしている感じになりコスプレ感が出ます。|https://image01.seesaawiki.jp/n/h/nai_ch/yFRVy4p8eN.png|
+|miniskirt nurse costume|ミニスカナース|ミニスカにするとコスプレ感が出ます。nurse capは入れた方がいいです。|https://image02.seesaawiki.jp/n/h/nai_ch/MdCf1DxGPo.png|
+|miniskirt police costume|ミニスカポリス|police hatを追加すると帽子を被ります。|https://image02.seesaawiki.jp/n/h/nai_ch/7qgGab5elj.png|
 |santa costume|サンタコス|reindeer antlersを加えるとトナカイの角が生える。画像は他にbuckle,christmas treeを指定|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/J7imtDStkv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/J7imtDStkv.png]]|
 |}
 [END]
@@ -468,6 +474,21 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|mortarboard cap|卒業帽|（主に欧米の）大学の卒業式で被る帽子。服装もアカデミックガウンぽくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/4smtbPTXhM.png|
+|pith helmet|ピスヘルメット（サファリヘルメット） |探検家が被る帽子。元々は暑熱から頭を守るために被るもの。|https://image01.seesaawiki.jp/n/h/nai_ch/M9f8bUHu3n.png|
+|sailor hat|水兵帽|副作用で服装がセーラー服になります。gob hatでも出ますが安定しません。|https://image01.seesaawiki.jp/n/h/nai_ch/0xk6bQR0Tr.png|
+|babushka|バブーシュカ|本来は頭に被るスカーフ（三角巾のような感じ）を意味している。描写上はゆったりしたフードとなる。言葉で修飾することで質感などを調節できる（サンプルはcrochetを追加している）。|https://image01.seesaawiki.jp/n/h/nai_ch/P1bgcbnI3j.png|
+|bonnet hat|ボンネット|18〜19世紀ごろの婦人が着用した帽子。現代では赤ちゃんの帽子やロリータファッションで着用される。本来は顎紐で固定するが描写されない。hatをhairbandとするとヘアバンド風になる。|https://image01.seesaawiki.jp/n/h/nai_ch/KzHtV5he5k.png|
+|deerstalker cap|鹿撃ち帽|シャーロックホームズの小説挿絵でホームズが着用していたため、探偵の帽子として定着した。チェック柄は指定しないと出ない。|https://image01.seesaawiki.jp/n/h/nai_ch/NsE_T6U1De.png|
+|floppy hat|フロッピー・ハット|極端に広い円形のプリムを持つ帽子。|https://image02.seesaawiki.jp/n/h/nai_ch/sbaTJmSVvk.png|
+|tamo shanter hat|タモシャンター|頂部にボンボンのついたベレー帽。出現率は低い。|https://image01.seesaawiki.jp/n/h/nai_ch/wB3hWj6HrT.png|
+|boater hat|カンカン帽|頂部が平らな円筒形のクラウンに水平のプリムがつく帽子。ほとんどが麦わら帽子だが描写はそうならない。|https://image01.seesaawiki.jp/n/h/nai_ch/zC6wBL1VEa.png|
+|casquette hat|キャスケット帽|キャスケットとするとつばの広いキャスケット帽になります。|https://image02.seesaawiki.jp/n/h/nai_ch/EJL3s6RDfD.png|
+|capelin hat|キャスケット帽|キャペリンと入れると何故かキャスケット帽が描写されます。つばは小さく描写されます。|https://image01.seesaawiki.jp/n/h/nai_ch/6rvQgCtV5R.png|
+|bucket hat|バケットハット||https://image01.seesaawiki.jp/n/h/nai_ch/EuQl02PAIE.png|
+|crochet hat|毛糸の帽子||https://image02.seesaawiki.jp/n/h/nai_ch/geNVlpmK9z.png|
+|bowler hat|山高帽||https://image02.seesaawiki.jp/n/h/nai_ch/WkWsiPhp0E.png|
+|fedora hat|中折れ帽||https://image01.seesaawiki.jp/n/h/nai_ch/VquIjDNxng.png|
 |visor|サンバイザー|この単語だけでは弱いので他のプロンプトで補強した方がいいです。|https://image02.seesaawiki.jp/n/h/nai_ch/MEVNigm2m1.png|
 |bun cover|シニヨンキャップ|シニヨンに被せる布製カバーのこと。|https://image01.seesaawiki.jp/n/h/nai_ch/H3Mp8zWH7y.png|
 |anklet|アンクレット（足輪）||https://image01.seesaawiki.jp/n/h/nai_ch/zRSw5p4Ai6.png|
