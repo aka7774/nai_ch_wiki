@@ -1711,5 +1711,26 @@ AOM3だと結構劣化凄かったのでアニメ二次元特化のモデル向�
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/x8Jntj0NUg-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/x8Jntj0NUg.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/k9GRvKp4H3-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/k9GRvKp4H3.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vpPGMk_fmg-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/vpPGMk_fmg.png]]
 
+***184スレ640 複数衣装実験の続き　ターゲット衣装6種
+https://fate.5ch.net/test/read.cgi/liveuranus/1680854356/640
+&#128317;https://53.gigafile.nu/0415-ca1466e097689cb08fc09aed89154328e
+=|BOX|
+640 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8228-CwwB)[sage] 投稿日：2023/04/09(日) 00:12:15.25 ID:f6Jc+GWu0
+複数衣装実験の続きやで今回はターゲット衣装6種
+https://imgur.com/R7ZNwrX.png
+（パピーマーリンも入れた！）
+
+同一シード別モデルでの比較
+https://imgur.com/uGkieM1.png
+https://imgur.com/QnyxfjV.png
+感想解説とかはファイル内参照
+https://53.gigafile.nu/0415-ca1466e097689cb08fc09aed89154328e
+
+なんとなくやけど呼び出しシングルトークンとtextencoderLR上げる（0.00001）のは効果あった気がする派に転向や
+ワイは普段リアル系作らないからサンプルがへちょいけどもっと高画質で試してみてほしい
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OjEkUx90WQ-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/OjEkUx90WQ.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hT7DPBJInd-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/hT7DPBJInd.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gIWeVKqM20-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gIWeVKqM20.png]]
 
 
+
+ 
