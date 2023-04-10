@@ -1,0 +1,58 @@
+#contents
+
+* このページは何?
+
+どこのページに書こうか悩むようなこともあるし、スレの有益な議論が埋もれていってしまうは惜しいので、
+雑多なTips系を拾って保存していこうと思います。
+（カテゴリー分けについては何も考えていない。分量が多くなったら考えます）
+
+* Tips一覧
+
+** Regional Prompter （★185）
+
+336今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6e02-q4if)2023/04/10(月) 15:15:45.42ID:5HSQKLwT0
+ワイの中でRegional Prompterが１番熱い拡張機能や １番自然な仕上がりになる
+
+ただ肝心のプロンプトが合ってるのか不安になる 他に使ってる奴おらん？
+masterpiece, (best quality:1.2), 2girls ADDCOMM
+1girl, (lifted by self:1.2), skirt, underwear, panties,indoors, looking at viewer, standing, (embarrassed:1.2),red eyes, black hair, ADDCOL
+1girl, (lifted by self:1.2), skirt, underwear, panties,indoors, looking at viewer, standing, (serious:1.2), purple eyes, white hair
+
+NP:(worst quality, low quality:1.4),NG_DeepNegative_V1_75T ADDCOL
+(worst quality, low quality:1.4),NG_DeepNegative_V1_75T
+
+https://i.imgur.com/06cyKBm.png
+
+339今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa05-O+PF)2023/04/10(月) 15:22:37.48ID:tCE+3uHSa
+>>336
+ｳﾞｫｰｽｯｹﾞ
+表情いっこずつ指定できるのはええな、試してみるわ
+
+** LoRA作成初心者向けサイト（★185）
+
+383今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜﾝﾄﾝｷﾝ MMed-3XwG)2023/04/10(月) 17:27:08.61ID:9mqqi2OTM
+loRa作ってみたい園児向けの懇切丁寧なサイトってなんかないんかね
+うまく作れるとかそういうのじゃなくてとにかくまずは学習やらをさせてみたいって感じの
+
+386今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 49cd-ISVW)2023/04/10(月) 17:30:10.14ID:w6xN7RUd0
+>>383
+wikiがかなり詳しく説明してない？情報古いページもあるけど
+
+394今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9102-juPV)2023/04/10(月) 17:34:21.87ID:2vZOCzs70
+>>383
+kohyaのreadmeわかりやすいと思う
+ドリームブースのキャプションありの方法でやってみては
+
+395今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e188-Rzwh)2023/04/10(月) 17:42:20.37ID:o/N2SaPY0
+>>383
+情報が古くなってる可能性があるし不正確な箇所が多いけど
+とりあえずで流れを掴みたいなら
+https://economylife.net/kohya-lora-install-use/
+
+ただ上でも書かれてるけどkohya-ssのreadmeが結局はいいと思う
+
+414今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4291-q5Ag)2023/04/10(月) 18:20:50.20ID:yIsPI0Eb0
+>>383
+わいはコレやったわ
+https://note.com/uunin/n/n3f09b93df575
+
