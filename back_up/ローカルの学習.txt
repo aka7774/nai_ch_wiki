@@ -7,3 +7,28 @@
 + [[DreamBooth]]
 + [[DreamArtist]]
 + [[TextualInversion]]
++ [[Dreambooth-LoRA]]
+
+* それぞれの特徴
+** TextualInversion
+- 学習が遅い
+- 再現度は普通
+- Negative Promptに適用できる
+- モデルが知らないものは描けない
+
+** HyperNetwork
+- 学習がやや遅い
+- 画風再現が得意(キャラなどの再現が苦手)
+- 設定が難しく、Dying Reluといった問題がある
+
+** Dreambooth
+- 学習は速め?
+- 再現度が高い
+- モデルにマージする必要あり
+- VRAM消費が多い
+
+** LoRA
+Dreamboothから派生。軽量、高性能、省メモリなため現在主流となっている。
+- 再現度が高い
+- 学習が速い
+- モデルにマージせずに使える

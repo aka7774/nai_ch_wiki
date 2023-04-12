@@ -82,6 +82,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3080TI|12GB|Core i5-12600K|19秒70|18.96|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.1.0.dev20230330+cu118 WSL2 ubuntu22.04|
 |RTX 4080|32GB|Core i7-13700F||13.21|--xformers --opt-channelslast|ubuntu22.04, torch2.0.0+cu118, xformers0.0.18|
 |RTX 4080|32GB|Core i7-13700F||13.53|--xformers|ubuntu22.04, torch2.0.0+cu118, xformers0.0.18|
 |無し(表示はdGPU)|無し|Ryzen 9 5900X|3080|3080|--skip-torch-cuda-test --use-cpu all --no-half --no-half-vae|PPT88W制限torch: 1.13.1+cu117|
