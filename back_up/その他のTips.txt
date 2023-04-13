@@ -8,6 +8,26 @@
 
 * Tips一覧
 
+** AssertionError: extension access disabled because of command line flags （★130）
+241今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ b57b-PB+X)2023/01/14(土) 19:20:26.50ID:c1xVtsTU0
+すいません
+loraの拡張機能がエラー出て導入できないんでどうしたらええか教えて欲しい
+colab使ってる勢なのでコード正直分からんから分かりやすくお願いします
+258今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ b57b-PB+X)2023/01/14(土) 19:39:10.15ID:c1xVtsTU0
+時間かかってすいませんが、エラーコードこちらになります
+AssertionError: extension access disabled because of command line flags
+
+274今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 2146-VufU)2023/01/14(土) 20:15:07.36ID:XuMIN2Te0
+>>258
+いったん次の引数をつけてwebui を起動してみたらどうだろ？
+--enable-insecure-extension-access
+
+277今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4a88-f6s+)2023/01/14(土) 20:30:16.73ID:osvZO/in0
+>>276
+調べたんやけど >>274 で解決するっぽいわ
+--share と --listen を書いてるとextensionsを入れられへんかったのをオプション追加したみたいやな
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/ccf1a15412ef6b518f9f54cc26a0ee5edf458108
+
 ** Regional Prompter （★185）
 
 336今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6e02-q4if)2023/04/10(月) 15:15:45.42ID:5HSQKLwT0
