@@ -1703,3 +1703,50 @@ http://imgur.com/iWbIJY2.png
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pZjcjh1s8m-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/pZjcjh1s8m.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/L5ChOOE3JX-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/L5ChOOE3JX.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/peNMB2xuT1-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/peNMB2xuT1.png]]
 
+***186スレ882 パフィーちっぱいLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1681213742/882
+&#128317;https://civitai.com/models/38622?modelVersionId=44545
+=|BOX|
+882 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 42ba-Ay2p)[sage] 投稿日：2023/04/13(木) 19:11:28.14 ID:qGEePhXB0 [2/3]
+朝にパフィーちっぱいLoRAで抜いてた者やで
+civitaiにアップしといたからよかったら使ってや
+削除対策で巨乳とか普乳にしとるけど、名前通り貧乳も尖りまくるから心配無用やで
+アニメ系実写系どのモデルでも普通に出ると思うけど
+うにゅほニキのLoRAとかloliニキのモデル使うと素晴らしいちっぱいが出るからワイは好きや！
+https://civitai.com/models/38622?modelVersionId=44545
+https://i.imgur.com/IjHeqN3.png
+https://i.imgur.com/uYaDU0X.png
+https://i.imgur.com/CR436y4.png
+https://i.imgur.com/9h0QjXU.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YaqaBZJ0TQ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YaqaBZJ0TQ.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FTrHOKpe3j-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/FTrHOKpe3j.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Nju_t8cKBV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Nju_t8cKBV.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uvfZyrFBeg-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/uvfZyrFBeg.png]]
+
+***186スレ898 ハイポリ LoRA の ver.2 
+https://fate.5ch.net/test/read.cgi/liveuranus/1681213742/898
+&#128317;https://civitai.com/models/8730/hipoly-3d-model-lora
+=|BOX|
+898 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6e3f-NwXk)[sage] 投稿日：2023/04/13(木) 19:41:56.76 ID:uwl1e0zf0 
+>>897
+合わせてハイポリ LoRA の ver.2 も公開
+https://civitai.com/models/8730/hipoly-3d-model-lora
+https://majinai.art/i/rRLVlJv.png
+https://majinai.art/i/QSf5gD9.png
+https://majinai.art/i/8nItVar.png
+https://majinai.art/i/wNzOouX.png
+
+より 3D 感のある表現ができるようになってるはず
+リアル化の問題も緩和されてるはずやので使いやすくなってるといいな
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fi8PGFmxqx-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fi8PGFmxqx.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gQohFJwpu2-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/gQohFJwpu2.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lUo7s9Rimf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lUo7s9Rimf.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ywMEu7_Fk5-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ywMEu7_Fk5.png]]
+
+https://note.com/takumi__ncr/n/n2fb9d265ffa9
+=||
+899 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6e3f-NwXk)[sage] 投稿日：2023/04/13(木) 19:42:28.15 ID:uwl1e0zf0 
+>>897
+ハイポリ LoRA ver.2 作成時の知見もまとめた
+https://note.com/takumi__ncr/n/n2fb9d265ffa9
+
+特に学習解像度について検証してる
+結論としては、学習解像度を上げることは結果に影響がありそうやけども、余計なものまで学習しちゃうこともあるのでケースバイケースで実験、といったところ
+あくまで一事例でしか無いので今後のさらなる検証を待ってる
+||=

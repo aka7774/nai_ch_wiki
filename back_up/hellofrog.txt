@@ -20,6 +20,7 @@ Linuxだと頭にtimeをつければ出てくる。
 
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|time(秒)|オプション|バージョン|備考|
+|RTX 2060|6GB|Ryzen 5600X|18m15.98s|--xformers batch_size=2|||
 |RX 6650 XT|8GB|Ryzen 5 5600G|24m18.670s|max_data_loader_n_workers=8 num_cpu_threads_per_process 12 xformers使えないのでmem_eff_attn|5050971ac687dca70ba0486a583d283e8ae324e2|torch: 2.0.0+rocm5.4.2 Ubuntu20.04 python3.10 VRAM節約のために画面出力はiGPU|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X|12m16.307s|--xformers batch_size=3||torch2.1,xformers0.17|
 |RX 6900 XT|16GB|Ryzen 5950X|11m32.561s|--xformersなし --mem_eff_attn追加 環境変数'PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.9,max_split_size_mb:512''||tensorflow-rocmとbitsandbytes-rocm(本家のissue#107にリンクあり)を使用する。bitsandbytesのモジュールは自動でビルドされないので、別にクローンしてビルドし、出来たものを'venv/lib/python3.10/site-packages/bitsandbytes/'に入れる。|

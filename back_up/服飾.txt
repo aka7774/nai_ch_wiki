@@ -119,6 +119,17 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|hipbone skirt|ヒップボーン・スカート|ウエストではなく腰骨に引っ掛けて履くスカートの総称。|https://image01.seesaawiki.jp/n/h/nai_ch/lTAi5Ylo7c.png|
+|wrap skirt|ラップ・スカート|長方形の一枚の布を巻き付けるように着用するスカート。強調するとスリットが広がる。|https://image01.seesaawiki.jp/n/h/nai_ch/hlIQhBI9MS.png|
+|sarong skirt|サロン・スカート|布を巻き付けたような筒状のスカート。|https://image01.seesaawiki.jp/n/h/nai_ch/KU4HfjumKf.png|
+|ruffle skirt|ラッフル・スカート|ひだやギャザーによる装飾を施したスカート。|https://image02.seesaawiki.jp/n/h/nai_ch/41b5tTQi3Y.png|
+|apron skirt|エプロン・スカート|これだけで衣装がウェイトレス風になる。|https://image02.seesaawiki.jp/n/h/nai_ch/mXrvH3Gihp.png|
+|tulle skirt|チュール・スカート|チュールレースやチュール素材を用いたスカート。|https://image01.seesaawiki.jp/n/h/nai_ch/x1UVfzbhmp.png|
+|tutu skirt|チュチュ|ballet dancerとの組み合わせでクラシック・バレエのチュチュになる。単独で使うとチュール・スカートになる。|https://image01.seesaawiki.jp/n/h/nai_ch/MLCRMZ5gR8.png|
+|swing skirt|スイング・スカート|しなやかにヒラヒラと揺れるスカート。スカート全般にミニスカートの描写になりやすいので、ロングを出したい場合はきちんと指示する必要あり。|https://image02.seesaawiki.jp/n/h/nai_ch/fh7SQqCXVB.png|
+|leaf skirt|葉っぱのスカート|単独では弱い。サンプルはlarge leafを追加している。|https://image02.seesaawiki.jp/n/h/nai_ch/rasbpnFxZz.png|
+|hoop skirt|フープ・スカート|中世以降の上流階級婦人が着用した、フープ（輪）で張り広げたスカートの総称。単独では弱いのでprincess dressを追加するとらしくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/Sw0xd0D31f.png|
+|suspender skirt|サスペンダー・スカート||https://image01.seesaawiki.jp/n/h/nai_ch/ornXA6HeQ8.png|
 |waist-cape|後ろが長くて前がミニスカのスカート|ネガティブに,{{{cape}}},{cloak}, {holding cape}　呪文改修中|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pPJpowdLOC-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pPJpowdLOC.png]]|
 |pleated skirt|プレーティングスカート|折り目のついたスカート。セーラー服とかのスカート|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qffYsQ41ms-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qffYsQ41ms.png]]|
 |layered skirt|レイヤードスカート|生地が複数あるタイプのスカート。重ね着しがち|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/mZ3m4qcoaK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/mZ3m4qcoaK.png]]|
@@ -341,6 +352,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|{{{{satin_blue _suit with gold line pattern}}}}, {{{Vault_jumpsuit&#40;Fall out)}}},|Vaultスーツ|||
+|{{{{satin_blue _suit with gold line pattern}}}}, {{{Vault_jumpsuit&#40;Fall out)}}},|Vaultスーツ|||
 |black cat costume|黒猫コスプレ|サンプルはblack cat ears katyusha, ear fluff, collar, bell, lingerie, bra, panties, cat tail, garter straps, garterを追加しています。|https://image02.seesaawiki.jp/n/h/nai_ch/1xg1qB_uGW.png|
 |micro-bikini maid costume|ビキニメイド||https://image02.seesaawiki.jp/n/h/nai_ch/ne97FbJyJJ.png|
 |miniskirt maid costume|コスプレメイド|frilled clothesを追加すると、フリルでゴテゴテしている感じになりコスプレ感が出ます。|https://image01.seesaawiki.jp/n/h/nai_ch/yFRVy4p8eN.png|
