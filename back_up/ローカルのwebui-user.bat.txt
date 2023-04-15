@@ -173,9 +173,11 @@ Colabではcondaで入れると入れやすい。
 
 1111のWikiのよると、Tensor Coreを搭載したNVIDIA製GPU(GTX16以上)で高速化が期待できるとのこと。
 NVIDIA RTX系のグラボは速くなることを確認済み。
+環境によっては効果が無かったり逆に遅くなったりするらしいので比較検討しましょう。
 
-先に以下の設定をやる。
-
+%%先に以下の設定をやる。%%
+''（2023/04/14 確認）現在はwebui-user.batに付けるだけでよくなった模様''
+[+] 旧・設定
 コマンドプロンプトを起動
 stable-diffusion-webui\venv\Scripts\activate.bat を実行
 =|BOX|
@@ -185,12 +187,12 @@ pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url https://downlo
 =|BOX|
 https://pomf2.lain.la/f/5u34v576.7z
 ||=
-このファイルをstable-diffusion-webui\venv\Lib\site-packages\torch\lib
-にコピペ
+ファイルを stable-diffusion-webui\venv\Lib\site-packages\torch\lib にコピペ
 
 =|BOX|
 pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
 ||=
+[END]
 ** --no-half-vae (画像真っ黒対策)
 
 VAEやVAE埋め込みモデルを使っている時、たまに画像が真っ黒になる問題を修正する。
@@ -309,3 +311,5 @@ https://pytorch.org/docs/stable/notes/cuda.html#memory-management
 **  --deepdanbooru
 img2imgでDeepdanbooruを使う。画像からDanbooruタグを推定する機能。
 標準機能になったので指定しても何も起こらない。
+
+
