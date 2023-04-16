@@ -4,6 +4,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|意味|備考|サンプル|
+|{{thick outline}}, {{black outline}}, {{game cg}}, {{vector trace}}, 1 girl, white [[[wedding dress]]], {{nightgown}}, smile, teenage, blonde shiny hair, medium hair, green eyes, medium breasts, indoor, studio, front view, facing the front, looking at viewer, from outside, full body standing, sharp focus, perfect anatomy, intricate, (highly detailed),|Pablo Picasso,{{3d}},bad anatomy, disfigured, poorly drawn, deformed, mutation, grayscale,{{longbody}}, lowres, bad hands, missing fingers, pubic hair, extra digit, fewer digits, cropped, worst quality, low quality, nsfw, boy, sculpture, luster,Smooth skin, flexible ,body, {blush},{{{{futanari}}}}, {{{{ full-package futanari}}}},{{penis from girl}}, newhalf, disembodied penis, pregnant, surgical mask, fused arms, fused legs, hused boy and girl, multiple legs, multiple boys, multiple girls, huge thighs, huge calf, disappearing thigh, disappearing calf, disappearing legs, malformed feet, extra feet, bad feet, poorly drawn feet, fused feet, missing feet,{{extra breasts}}, extra nipples, {{{{pencil}}}}|ウエディングドレス（エンパイアライン）|疑似的に再現しているので安定していません。|https://image01.seesaawiki.jp/n/h/nai_ch/bgYzK4hZ44.png https://image01.seesaawiki.jp/n/h/nai_ch/JJ2pu7l00B.png|
+|{{thick outline}}, {{black outline}}, {{game cg}}, {{vector trace}}, 1 girl, model, rubber clothes, {{red body con dress, pencil long skirt}}, tight dress, open stance, smile, female, blonde shiny hair, medium hair, green eyes, medium breasts, indoor, studio, front view, facing the front, looking at viewer, from outside, full body standing, sharp focus, perfect anatomy, intricate, (highly detailed),|Pablo Picasso,{{3d}},bad anatomy, disfigured, poorly drawn, deformed, mutation, grayscale,{{longbody}}, lowres, bad hands, missing fingers, pubic hair, extra digit, fewer digits, cropped, worst quality, low quality, nsfw, boy, sculpture, luster,Smooth skin, flexible ,body, {blush},{{{{futanari}}}}, {{{{ full-package futanari}}}},{{penis from girl}}, newhalf, disembodied penis, pregnant, surgical mask, fused arms, fused legs, hused boy and girl, multiple legs, multiple boys, multiple girls, huge thighs, huge calf, disappearing thigh, disappearing calf, disappearing legs, malformed feet, extra feet, bad feet, poorly drawn feet, fused feet, missing feet,{{extra breasts}}, extra nipples, {{{{pencil}}}}|ホッブル・スカートのドレス||https://image01.seesaawiki.jp/n/h/nai_ch/tSRJ_0y8W8.png https://image02.seesaawiki.jp/n/h/nai_ch/suLMq3B4VU.png|
 |{{thick outline}}, {{black outline}}, {{game cg}}, {{vector trace}}, 1 girl, {{Hawaiian natives, hula dancer}}, dark skin, {{{{hair ornament, hair hibiscus, flower neck garland, {{Hawaiian lei}}, tube top bra, flower print long skirt, bare foots}}}}, dancing, smile, teenage, black shiny hair, long hair, yellow eyes, medium breasts, outdoor, {{Hawaii, beach}}, front view, facing the front, looking at viewer, from outside, full body standing, solo focus, perfect anatomy, intricate, (highly detailed),||フラダンサー|レイは出にくいです。|https://image01.seesaawiki.jp/n/h/nai_ch/jOISqSzqNm.png https://image01.seesaawiki.jp/n/h/nai_ch/9ZYHoPQdCt.png|
 |{{game cg}}, {{vector trace}}, 1 girl, {{pierrot}}, white skin, {{{{cox comb hat, clown nose, clown makeup, polka dot clothes, clown costume}}}}, smile, teenage, blonde shiny hair, medium hair, green eyes, medium breasts, indoor, front view, facing the front, looking at viewer, from outside, cowboy shot, solo focus, perfect anatomy, intricate, (highly detailed),||道化師／ピエロ||https://image01.seesaawiki.jp/n/h/nai_ch/LmC8wPq0Fo.png https://image01.seesaawiki.jp/n/h/nai_ch/RdR5jpJVZk.png|
 |{{vector trace}}, 1 girl, {{flight attendant}}, {garrison cap}, silk scarf, orange jacket, pencil skirt, standing, smile, {{{{younger}}}}, {{slender}}, blonde shiny hair, chignon head, green eyes, medium breasts, indoor, airplane interior, front view, {cowboy shot}, {{facing the front}}, from outside, {{solo focus}}, {{perfect face}}, {{perfect anatomy}}, intricate (highly detailed)||キャビンアテンダント|キャビンアテンダントは和製英語。flight attendantかcabin crewが一般的。|https://image01.seesaawiki.jp/n/h/nai_ch/Od1ApMaqcb.png https://image01.seesaawiki.jp/n/h/nai_ch/6faq6Z9FD3.png|
@@ -119,6 +121,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|crinoline|クリノリン|スカートを膨らませるために発明された鯨ひげや針金を輪状にして重ねた骨組みの下着。スカートやドレス系の単語と組み合わせるとスカートが膨らむ。|https://image01.seesaawiki.jp/n/h/nai_ch/iUIZ_8vUE4.png|
+|straight skirt|ストレート・スカート|ほぼプリーツスカートになる。|https://image01.seesaawiki.jp/n/h/nai_ch/SQCGJvyClb.png|
+|tight skirt|タイト・スカート|ウエストから裾にかけてぴったりと絞ったシルエットラインを持つスカート。|https://image01.seesaawiki.jp/n/h/nai_ch/RKkF3YC5YH.png|
+|kilt skirt|キルト・スカート|タータンチェック柄のスカートになる。制服になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/TQVOoGPnzN.png|
 |side-tie skirt|サイドタイ・スカート|横に結び目のあるスカート。あまり強くはない。|https://image02.seesaawiki.jp/n/h/nai_ch/4Do7XCddMp.png|
 |ultra micro-mini skirt|ウルトラマイクロミニ・スカート|このレベルになるとnsfwsでshowing pantiesとかで補強した方が出やすい。|https://image02.seesaawiki.jp/n/h/nai_ch/Pt9Ks1y21s.png|
 |micro-mini skirt|マイクロミニ・スカート||https://image02.seesaawiki.jp/n/h/nai_ch/PMERQoEkao.png|
@@ -157,6 +163,18 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|gown|ガウン|裾が地面に達するほど長いドレス。|https://image01.seesaawiki.jp/n/h/nai_ch/8CKOSZoYJQ.png|
+|denim dress|デニムのワンピース||https://image02.seesaawiki.jp/n/h/nai_ch/ear4c3UnwL.png|
+|pencil dress|ペンシルドレス|ボディにフィットしたドレス。ボディコンほど性的にはならない。|https://image02.seesaawiki.jp/n/h/nai_ch/LmsCuytlIH.png|
+|short dress|ミニスカワンピ||https://image01.seesaawiki.jp/n/h/nai_ch/ZhdCoq8HCu.png|
+|plunging neckline evening dress|プランジングネックラインのドレス||https://image01.seesaawiki.jp/n/h/nai_ch/H1y2Iot0aS.png|
+|backless dress|オープンバックのドレス|背中がパックリ空いたドレス。他のドレス系単語と組み合わせて使う。|https://image01.seesaawiki.jp/n/h/nai_ch/Nxl1bhnwrt.png|
+|halter dress|ホルタードレス|ホルターネックのドレス。単独だとボディコンになりやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/sb8a7j0Tot.png|
+|wedding dress, high-waist skirt|ウェディングドレス（Aライン）|ウエストラインが高い位置にあり、スカートは裾にかけて直線的に広がるデザインのウェディングドレス。|https://image01.seesaawiki.jp/n/h/nai_ch/kpmTg3NPqV.png|
+|wedding dress, ball gown|ウェディングドレス（プリンセスライン）|ウエストの切り替えからスカートがふわっと広がるウェディングドレス。|https://image02.seesaawiki.jp/n/h/nai_ch/cWatRdAOJ2.png|
+|wedding dress, slender line|ウェディングドレス（スレンダーライン）|全体的なシルエットが細く、すっきりした印象のウェディングドレス。|https://image02.seesaawiki.jp/n/h/nai_ch/s6jHwAtlPC.png|
+|wedding dress, [[[mermaid]]]-line, |ウェディングドレス（マーメイドライン）|膝下から人魚の尾鰭のように裾が広がるデザイン。mermaidは弱化必須。|https://image01.seesaawiki.jp/n/h/nai_ch/bHdXkO3huv.png|
+|Ball gown|ボール・ガウン|西洋文化圏において公式の場で着用される女性の礼服。大体、床に届くぐらいの丈があるスカートになる。イブニングドレスの１種なのでドレス系の単語と組み合わせると良い。|https://image01.seesaawiki.jp/n/h/nai_ch/KZlREk6ceX.png|
 |sleeveless dress|袖なしのドレス||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gjL01ViL7L-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gjL01ViL7L.png]]|
 |evening gown|パーティドレス？||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_Jfa6XOGno-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_Jfa6XOGno.png]]|
 |mini body con|ミニボディコン|ボデイコンにはなりますが、スカートにならなかったり、セパレートドレスになったりガチャ要素が増します（普通に下二つみたいな感じになることが多いです）。|https://image01.seesaawiki.jp/n/h/nai_ch/NL7Fa_47OG.png　https://image02.seesaawiki.jp/n/h/nai_ch/Cth0ImXGU1.png|
@@ -177,6 +195,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|coveralls, all-in-one work clothes, |つなぎの作業着|オーバーオールが出ることもある。|https://image02.seesaawiki.jp/n/h/nai_ch/hIcBzJz1OD.png https://image01.seesaawiki.jp/n/h/nai_ch/01yq1m6Lx8.png|
+|pilot suit / rider suit / driver suit|パイロットスーツ|試した限りではこの３つのどれでも大差は無い。乗り物を指定する（F1 carやmotorcycleなど）と合うように描写するが、基本的に近未来的なロボットパイロットのスーツとして描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/K8NI0xrQpz.png https://image02.seesaawiki.jp/n/h/nai_ch/wBOMG2HUmp.png|
 |wet suit|ウェットスーツ||https://image01.seesaawiki.jp/n/h/nai_ch/BUy9bZnHAY.png https://image01.seesaawiki.jp/n/h/nai_ch/8FTfJrIrA6.png|
 |space suit|宇宙服|full face helmetを入れないと宇宙空間に居てもヘルメットを着用しません。|https://image01.seesaawiki.jp/n/h/nai_ch/N0GtQ9ZWF4.png　https://image01.seesaawiki.jp/n/h/nai_ch/v3hmy0pL5l.png|
 |overall|オーバーオール|red capも追加するとどっかで見たキャラに…|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/C_lzxEXpSL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/C_lzxEXpSL.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wyNcFTZ4AV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/wyNcFTZ4AV.png]]|
@@ -402,6 +422,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|funeral dress|喪服||https://image01.seesaawiki.jp/n/h/nai_ch/KyaUI9LTFQ.png|
 |undertaker|葬儀人|魔女帽子に銀髪が良く出る。witchより魔女っぽい。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jNUVSGpDmL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jNUVSGpDmL.png]]|
 |executioner|処刑人|黒系統でチョーカーやホルターネック多め|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Eu0Zuus399-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Eu0Zuus399.png]]|
 |kawaii|カワイイ|ゴスロリ率高め|https://image01.seesaawiki.jp/n/h/nai_ch/XM2Hd57sq1.png|
