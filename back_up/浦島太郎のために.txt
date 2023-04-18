@@ -22,6 +22,16 @@
 
 #contents
 
+* basilmixの商用利用が禁止される
+
+basilmixの配布者である[[ぬいぐるみ氏>https://twitter.com/nuigurumi1_KR]]によって以下のようなツイートが投稿された。
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VnA98wVSM_.png, 30%)
+
+ぬいぐるみ氏は層別マージを最初に開拓した人物でもあり、現在のトレンドを作った人物といってもよいであろう。
+これまで惜しみなく技術や成果を公開してきた氏のbasilmix商用利用禁止は、理解を示す者もいる一方で、少なからず反感を買った。
+理由は主にchillout mixの配布者である[[タスク氏>https://twitter.com/TASUKU2023]]が寄付を募っていることを嫌ったため。
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8audLPVO08.png, 50%)
 * 2023-04-12 AI音声スレ：なんJRBC部が立つ
 RVC(Retrieval-based-Voice-Conversion)等の音声系の話題を扱うスレが立つ
 なんJRBC部
@@ -894,6 +904,10 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
+
 
 
 

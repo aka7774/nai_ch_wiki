@@ -39,9 +39,11 @@ i2iは元画像の全ての情報（とくに色込み）を読み込むので�
 
 *インストール
 +Stable Diffusion Web UI の「拡張機能 (Extensions)」タブ > 「URLからインストール (Install from URL)」に、以下のURLを入れてインストールします。~~https://github.com/Mikubill/sd-webui-controlnet
-+以下からモデルファイル（.safetensorsファイル）をダウンロードして「stable-diffusion-webui\extensions\sd-webui-controlnet\models」に置きます。
++以下からモデルファイル（.safetensorsファイルもしくは.pth）をダウンロードして「stable-diffusion-webui\extensions\sd-webui-controlnet\models」に置きます。
 --標準的な軽量モデル：https://huggingface.co/webui/ControlNet-modules-safetensors/tree/main
 --kohya氏によるモデル改良版（何か応答がよくなるらしい？）：https://huggingface.co/kohya-ss/ControlNet-diff-modules/tree/main
+--有志の人が作った顔の向きや目や口の状態がわかるControlNetMediaPipeFace: https://huggingface.co/CrucibleAI/ControlNetMediaPipeFace
+--2023年4月中旬ごろに発表されたControlNet 1.1: https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main
 
 *使い方
 txt2img・img2imgタブの下にControlNetができてるので▼をクリック
@@ -58,10 +60,15 @@ txt2img・img2imgタブの下にControlNetができてるので▼をクリッ�
 |mlsd|直線の輪郭だけ取り出す 曲線のない人工的な構図をノイズ無く取り出せる||||
 |normal_map|法線情報を引き継ぐ　深度情報よりも細部の立体感に沿いやすい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iyHkyJEFHf-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/iyHkyJEFHf.jpg]]|
 |openpose|おなじみの棒人間|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WTbFDdTOT7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/WTbFDdTOT7.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5WaCsMlIST-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/5WaCsMlIST.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RwFNDeU88I-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/RwFNDeU88I.png]]|
-|openpose_hand|棒人間に手が追加されたやつ||||
+|openpose_hand|棒人間に手が追加されたやつ．現状あまり認識精度が良くない印象．|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/M_hgU7B_w4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/M_hgU7B_w4.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/KXfa2TXD1v-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/KXfa2TXD1v.png]]||
+|openpose_face|棒人間に顔の特徴点(face landmarks)が追加されたもの(v1.1追加)．棒人間では表現しきれなかった目や口の状態や顔の大きさなどが表現できるようになった|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/E6S8XJhMVs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/E6S8XJhMVs.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/54sGEq1RMY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/54sGEq1RMY.png]]||
+|openpose_full|openpose+openpose_hand+openpose_faceの処理すべてを行う(v1.1追加)．|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/M_hgU7B_w4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/M_hgU7B_w4.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EEuwFyryhs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/EEuwFyryhs.png]]||
+|mediapipe_face|ControlNetの発案者とは異なる人が作ったControlNetMediaPipeFaceというモデル用の前処理．目・口・顔の形や向きがわかる画像が生成される．|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/s__vnHPyjK-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/s__vnHPyjK.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4f_HWDwlcr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4f_HWDwlcr.png]]|
 |scribble|マウス入力の落書き　線を絶対的なものとしては扱わず、いい感じに仕上げる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5tsjNQTbfT-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/5tsjNQTbfT.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qhknh2I97S-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/qhknh2I97S.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/v7ZV5VrtYc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/v7ZV5VrtYc.png]]|
 |fake_scribble|画像を一回落書き風に変換してscribbleに投入する|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4uQiYf6rzq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/4uQiYf6rzq.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Zun19XTTDJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Zun19XTTDJ.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9PeZWztrlG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/9PeZWztrlG.png]]|
 |segmentation|'ADE20K'という規格で塗り絵 領域に分類を持たせる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228.png]]|
+|lineart_realistic|写真を線画に変換するやつ(v1.1追加)．cannyだとしきい値(threshold)をうまくやらないとボケている箇所の輪郭が抽出されないことがあったが，この処理ではその辺をいい感じの塩梅にして線を引いてくれる印象がある．|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0JdyomiTxY-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/0JdyomiTxY.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/SesY98LleX-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/SesY98LleX.png]]|
+|lineart_coarse|写真を線画に変換するものだが，lineart_realisticよりも粗い(雑な)線画になる(v1.1追加)|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zQelhADe1Y-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/zQelhADe1Y.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wqzlpCDJVX-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/wqzlpCDJVX.png]]|
 とりあえずスレにある画像使ったんであかんかったら消すわ
 
 元画像から加工されたcannyやdepthなどの画像はデフォルトでは 
