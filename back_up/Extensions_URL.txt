@@ -292,6 +292,12 @@ X/Y plotっぽい画像を生成する
 
 - https://github.com/rvhfxb/sd_chatgpt
 - ChatGPTにプロンプトの続きを考えて貰う
+
+** dddetailer
+- https://github.com/Bing-su/dddetailer.git
+Detection Detailerのフォーク版。
+特定の領域を再描画してデティールを改善する。顔を自動的に検出して崩れていたのをある程度修正してくれる。
+
 * 更新停止
 
 新規インストールは非推奨です。
