@@ -1,5 +1,8 @@
 学習は別のでやる流れだけど生成には便利に使えるはず。
 
+&color(#ff0000){Remote UI(1111を含む)の利用が禁止になりました。}
+以後、ブラウザで操作するタイプのソフトウェアは使わないでください。
+
 - [[ローカルをクラウドで]]
 - [[学習用Notebook>kohya_train_network_simple]]
 
@@ -7,9 +10,237 @@
 
 * 最新版はこちら
 
-今後はNotebookを更新していきます。
+今後の更新はありません。
 
-- https://colab.research.google.com/drive/1GhvterZebPlZU4P7RcUK-U-4Y23rZpQO
+最終版のセル(参考)
+=|BOX|
+#@title ↓再生ボタンを押してね
+
+#@markdown 実行は自己責任で。
+
+#@markdown gradioログイン情報(パスワード空白時は自動生成)
+user = "user"#@param {type:"string"}
+password = ""#@param {type:"string"}
+
+
+
+#@markdown 環境調査(2回目以降は飛ばしてもいい)
+use_envcheck = True #@param {type:"boolean"}
+if use_envcheck:
+  # Ubuntu
+  !uname -m && cat /etc/*release
+  res = !cat /etc/*release | grep 'VERSION_ID' | grep -o '[0-9.]*'
+  if not res[0].startswith('20.04'):
+    raise RuntimeError("Ubuntuのバージョンが変わった " + res[0])
+
+  # Python
+  res = !python -V | grep -o '[0-9.]*'
+  if not res[0].startswith('3.9.'):
+    raise RuntimeError("Pythonのバージョンが変わった " + res[0])
+
+  # GPU/CUDA
+  !nvidia-smi
+  res = !nvcc -V | grep 'Cuda compilation tools, release' | grep -o '[0-9.]*'
+  if not res[0].startswith('11.8'):
+    raise RuntimeError("CUDAのバージョンが変わった " + res[0])
+
+  # RAMの容量取得(GiB)
+  res = !free -m | grep 'Mem:' | awk '{print $2}'
+  if not res:
+    raise ValueError("RAMが取得できない")
+  ram = round(float(res[0]) / 1024, 3)
+  if ram < 12:
+    raise ValueError("RAMが思ったより少ない" + ram)
+  print(f"RAM : {ram}")
+
+  # VRAMの容量取得(GiB)
+  res = !nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
+  if not res:
+    raise ValueError("VRAMが取得できない(GPUに繋がってないかも)")
+  vram = round(float(res[0]) / 1024, 3)
+  if vram < 14:
+    raise ValueError("VRAMが思ったより少ない " + vram)
+  print(f"VRAM: {vram}")
+  del res
+
+### セットアップ
+
+%cd /content
+
+#@markdown # Pythonインストール
+
+#@markdown miniconda 3.10.9
+use_conda = False #@param {type:"boolean"}
+#@markdown apt-get 3.10.10 こっちは最近調子悪いみたい
+use_apt = False #@param {type:"boolean"}
+
+if use_conda and use_apt:
+   raise ValueError("どっちやねん")
+
+if use_conda:
+   !wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   !bash Miniconda3-latest-Linux-x86_64.sh -b -f -p /usr/local
+
+if use_apt:
+  !sudo apt autoremove
+  !sudo apt-get -y update
+  !sudo apt-get -y install python3.10
+  !sudo cp `which python3.10` /usr/local/bin/python
+
+# Pythonのバージョン確認
+!python -V
+
+# pipを最新に
+!wget https://bootstrap.pypa.io/get-pip.py -O - | sudo python
+
+#@markdown xformersインストール(当面torch1のみ)
+use_xformers = False #@param {type:"boolean"}
+
+#@markdown torch2インストール(use_conda必須)
+use_torch2 = False #@param {type:"boolean"}
+if use_torch2:
+  !pip install --upgrade torch torchvision --extra-index-url https://download.pytorch.org/whl/cu118
+# torch1をアップデート(Python 3.10の時だけ)
+elif use_conda or use_apt:
+  !pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+
+if use_xformers:
+  !pip install -U --pre triton
+  !pip install xformers==0.0.16rc425
+
+# これが無いと動かないので
+!pip install fastapi==0.90.1
+
+### パスワード関連
+
+# デフォルトパスワード生成
+import secrets
+import string
+
+def get_password(length: int) -> str:
+    # secretsはrandomとかと違って暗号学的に安全な乱数を生成できる。
+    pass_chars = string.ascii_letters + string.digits
+    password = ''.join(secrets.choice(pass_chars) for i in range(length))
+    return password
+
+if not password:
+    password = get_password(64)
+
+del secrets
+del string
+del get_password
+
+### WEBUIのセットアップ
+
+%cd /content/
+!git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+%cd stable-diffusion-webui/models/Stable-diffusion
+
+#@markdown モデルのURL(複数いるならFilerでダウンロードしましょう)
+ckpt_url = 'https://huggingface.co/aka7774/fp16_safetensors/resolve/main/7th_anime_v3_A-fp16-1833-2982-0018.safetensors'#@param {type:"string"}
+# ダウンロードにトークンの要らないモデルなのでコメントアウト
+##@markdown トークンはここで貰ってきて https://huggingface.co/settings/tokens
+#user_token = ''#@param {type:"string"}
+#user_header = f"\"Authorization: Bearer {user_token}\""
+#!wget -c --header={user_header} "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+#del user_header
+if ckpt_url:
+   !wget -c "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+
+# @markdown aria2cで落としたいモデルのURL(なければ空白)
+aria_url = ''#@param {type:"string"}
+if aria_url:
+    !apt install -y -qq aria2
+    !aria2c --summary-interval=10 -x 3 --allow-overwrite=true -Z {aria_url}
+
+import os
+
+#@markdown # Extensions
+%cd /content/stable-diffusion-webui/extensions/
+
+#@markdown --enable-insecure-extension-access
+use_eiea = False #@param {type:"boolean"}
+
+#@markdown ImagesとFilerはColabで便利なので入れましょう
+use_filer = True #@param {type:"boolean"}
+if use_filer:
+    #!git clone https://github.com/aka7774/sd_images_browser.git
+    !git clone https://github.com/AlUlkesh/stable-diffusion-webui-images-browser.git
+    !git clone https://github.com/aka7774/sd_filer.git
+
+#@markdown 型抜き系(Katanuki rembg PBRemTools)
+use_katanuki = False #@param {type:"boolean"}
+if use_katanuki:
+    !git clone https://github.com/mattyamonaca/PBRemTools.git
+    !git clone https://github.com/aka7774/sd_katanuki.git
+    !git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg.git
+
+#@markdown 学習関連(dreambooth, Hypernetwork-MonkeyPatch)
+use_train = False #@param {type:"boolean"}
+if use_train:
+    !git clone https://github.com/d8ahazard/sd_dreambooth_extension.git
+    !git clone https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension.git
+
+#@markdown マージ関連(supermerger, MBW)とモデル変換(toolkit)
+use_merge = False #@param {type:"boolean"}
+if use_merge:
+    !git clone https://github.com/hako-mikan/sd-webui-supermerger.git
+    !git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui.git
+    !git clone https://github.com/aka7774/sd_merge_numa.git
+    !git clone https://github.com/arenatemp/stable-diffusion-webui-model-toolkit.git
+
+#@markdown LoRA関連(additional-networks, locon, two-shot)
+use_lora = False #@param {type:"boolean"}
+if use_lora:
+    !git clone https://github.com/kohya-ss/sd-webui-additional-networks.git
+    !git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-locon.git
+    !git clone https://github.com/opparco/stable-diffusion-webui-two-shot.git
+
+#@markdown ControlNet(fp16モデルつき)
+use_controlnet = False #@param {type:"boolean"}
+if use_controlnet:
+  !pip install prettytable
+  !git clone https://github.com/Mikubill/sd-webui-controlnet.git
+  %cd sd-webui-controlnet
+  !git clone https://huggingface.co/webui/ControlNet-modules-safetensors.git
+  for fi in os.listdir("ControlNet-modules-safetensors"):
+    os.rename(f"ControlNet-modules-safetensors/{fi}", f"models/{fi}")
+  %cd ..
+  !git clone https://github.com/gogodr/sd-webui-stopmotion.git
+
+#@markdown aka: fake_xyplot, curly_rand, copyguard
+use_aka = False #@param {type:"boolean"}
+if use_aka:
+    !git clone https://github.com/aka7774/sd_fake_xyplot.git
+    !git clone https://github.com/aka7774/sd_curly_rand.git
+    !git clone https://github.com/aka7774/sd_copyguard.git
+
+#@markdown aka: Gimai(ゲームの会話シーン制作)
+use_gimai = False #@param {type:"boolean"}
+if use_gimai:
+  !sudo apt install ffmpeg
+  !ffmpeg -version
+  !git clone https://github.com/aka7774/sd_gimai.git
+  %cd sd_gimai
+  !git clone https://huggingface.co/spaces/skytnt/moe-tts.git
+  %cd ..
+
+# 一度起動して必要なものをインストールする
+%cd /content/stable-diffusion-webui/
+!COMMANDLINE_ARGS="--exit" REQS_FILE="requirements.txt" python launch.py
+
+#@markdown ## Google Driveのマウント(任意)
+use_drive = False #@param {type:"boolean"}
+if use_drive:
+  from google.colab import drive
+  drive.mount('/content/drive')
+  # filerのデフォルトバックアップ先を設定
+  !mkdir -m 0777 /content/stable-diffusion-webui/extensions/sd_filer/config
+  !echo '{"backup_dir":"/content/drive/MyDrive/sd"}' > /content/stable-diffusion-webui/extensions/sd_filer/config/config.json
+
+# WEBUIの起動
+!COMMANDLINE_ARGS="{'--xformers' if use_xformers else ''} {'--opt-sdp-no-mem-attention' if use_torch2 else ''} --opt-channelslast {'--enable-insecure-extension-access' if use_eiea else ''} --share --gradio-auth {user}:{password}" REQS_FILE="requirements.txt" python launch.py
+||=
 
 ** 更新について
 

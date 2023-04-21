@@ -13,5 +13,6 @@ LoRAでは学習できていない領域まで拡張して学習するちょっ�
 
 ** 使用
 拡張を入れる必要がある。またAutomatic1111を最新にしておく(=ビルトインのLoRA機能に対応している必要がある)。
-https://github.com/KohakuBlueleaf/a1111-sd-webui-locon
+-LoRAフォルダにモデルを入れる場合~~https://github.com/KohakuBlueleaf/a1111-sd-webui-locon
+-LyCORISフォルダにモデルを入れる場合~~https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris
 

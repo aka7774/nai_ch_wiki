@@ -22,8 +22,31 @@
 
 #contents
 
-* basilmixの商用利用が禁止される
+* 2023-04-21 Google Colab の無料プランでAutomatic1111の利用が禁止になる
+利用規約の改定により、無料プランでのremote UI のノートブックの使用が禁止された
+(注：2023/04/21 09:00現在、英語ページのみで日本語faqは旧表記のまま)
 
+これによりAutomatic1111が禁止となり、利用者が路頭に迷う事になった
+尚、有料プランの利用者にはwebuisの利用を制限する予定はありません、とColab技術者がツイートしている
+
+もしそのまま利用し続けた場合はアカウントのBANも有り得る為、無料プランの利用者は注意が必要
+GoogleアカウントがBANになる為、GmailやGoogleドライブ、Youtubeといった他サービスまで影響を受ける
+過去には他サービスでサブアカウントがBANされると同時に、本アカウントまで連鎖BANされたケースもある
+
+paperspace等他サービスに移るにせよGoogleに続く恐れも無いとは言えず、有料版に移行又はローカルの環境構築が推奨される
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gzOPi6aR1P.png, 30%)
+
+* 2023-04-20 imgurの投稿が会員制に、nsfwが禁止になる
+
+施行は5月15日から。
+
+Imgur Terms of Service Update [April 19, 2023]
+https://help.imgur.com/hc/en-us/articles/14415587638029-Imgur-Terms-of-Service-Update-April-19-2023-
+
+過去スレとwikiのimgur画像はバックアップしといたけど、
+wikiのリンク切れを直すんならseesaawikiに全部再アップしなおす必要があって大変。
+
+* 2023-04-17 basilmixの商用利用が禁止される
 basilmixの配布者である[[ぬいぐるみ氏>https://twitter.com/nuigurumi1_KR]]によって以下のようなツイートが投稿された。
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/VnA98wVSM_.png, 30%)
 
@@ -32,6 +55,9 @@ basilmixの配布者である[[ぬいぐるみ氏>https://twitter.com/nuigurumi1
 理由は主にchillout mixの配布者である[[タスク氏>https://twitter.com/TASUKU2023]]が寄付を募っていることを嫌ったため。
 
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/8audLPVO08.png, 50%)
+
+その後、氏はbasilmixのマージレシピを公開した。
+https://archive.md/lTfHl
 * 2023-04-12 AI音声スレ：なんJRBC部が立つ
 RVC(Retrieval-based-Voice-Conversion)等の音声系の話題を扱うスレが立つ
 なんJRBC部
@@ -904,6 +930,12 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
+
+
+
 
 
 

@@ -713,10 +713,13 @@ warmupはどっかをいじって立ち上げ角度変えんと邪魔にしか�
 &ref(https://i.imgur.com/9VaR1jC.jpg,300) &ref(https://i.imgur.com/sii4OxP.jpg,300)
 [END]
 
-** LoCon(LyCORIS)について
+*LoRAの種類とLoCon・LyCORISについて
+LoCon(LyCORIS)について
 https://github.com/KohakuBlueleaf/LyCORIS
 LoRAの新しい学習手法。通常のLoRAより性能がいいかもしれない。学習速度(it/s)は遅い。
 名前が変わって LyCORIS に統合された
+
+**LyCORIS のインストールと使用方法
 sd-scriptsのvenvで
 =|BOX|
 pip install lycoris_lora
@@ -738,22 +741,45 @@ python3 sd-scripts/train_network.py
 --network_dim 64 --network_alpha 32
 --network_args "conv_dim=64" "conv_alpha=32" "dropout=0.05" "algo=lora"
 ||=
-生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]のインストールが必要。
+生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]、又は[[a1111-sd-webui-lycoris>https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris]]のインストールが必要。
 標準のExtra Networksおよびkohya-ss氏作成の[[sd-webui-addtional-networks>>https://github.com/kohya-ss/sd-webui-additional-networks]]で使用できる。
 
+**LoRAの種類
+LoRAはその種類によって、次のように分けられる
+
+|NO|LoRAの種類|LoRAの名称|使用ネットワークモジュール~~(network_module)|使用パラメータ~~(network_args)|モデルマージ|備考|
+|��|LoRA|LierLa/リエラ~~(kohya版LoRA)|networks.lora|(なし)|可~~kohya版マージスクリプト使用|狭義の意味でのLoRAでこれが大元|
+|��|LoCon|旧版LoCon|locon.locon_kohya|network_args 'conv_dim=XXX' 'conv_alpha=XXX'|可~~LyCORIS版マージスクリプト使用|元祖LoCon~~LyCORISになる前のLoCon|
+|��|^|C3Lier/セリア~~(kohya版LoCon)|networks.lora|network_args 'conv_dim=XXX' 'conv_alpha=XXX'|可~~kohya版マージスクリプト使用|kohya版LoCon|
+|��|^|LyCORIS版LoCon|lycoris.kohya|network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=lora' 又は~~network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=locon'|可~~LyCORIS版マージスクリプト使用~~'disable_conv_cp=True' で作成したものはマージ不可|LyCORIS版LoCon|
+|��|その他LyCORIS|LoHa|lycoris.kohya|network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=loha'|不可|容量を小さく出来る|
+|��|^|(IA)^3|lycoris.kohya|network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=ia3'|可~~LyCORIS版マージスクリプト使用||
+|��|^|LoKR|lycoris.kohya|network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=lokr'|不可||
+|��|^|DyLoRA|lycoris.kohya|network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=dylora'|||
+
+**画像生成する時の指定方法や使用extensions
+|&#127924;指定(プロンプト指定)|必要extensions|対応LoRA|TEnc/UNet等のパラメータ指定|階層LoRA指定|標準のファイル設定フォルダ~~(変更は可能)|備考|
+|<lora:>|(無し)|LoRA(��)|不可|可|models\LoRA|1111標準機能を使用|
+|^|[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]|LoRA(��)~~LoCon(��,��,��)~~LyCORIS(��,��,��)|不可|可|models\LoRA|最新のLyCORISアルゴリズム(dyLoRA)には非対応~~階層LoRAを使う場合はこちら|
+|<lyco:>|[[a1111-sd-webui-lycoris>https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris]]|LoRA(��)~~LoCon(��,��,��)~~LyCORIS(��,��,��,��)|可|不可|models\LyCORIS|a1111-sd-webui-loconの機能更新版でLyCORISの全アルゴリズムに対応~~&#127924;ボタンにLyCORISタブが新たに出来、<lora:>と同じように自動入力出来る~~フォルダ位置に注意|
+|プロンプト指定なし|[[Additional Networks>https://github.com/kohya-ss/sd-webui-additional-networks]]|LoRA(��)~~LoCon(��,��,��)|可|不可|extensions\sd-webui-additional-networks\models\lora|プロンプト入力ではなく拡張タブで指定|
+
+**<lora:>と<lyco:>の使い分けについて
+<lora:>と<lyco:>では生成画像に差は出ない
+その為
+-階層LoRAを使いたい場合　→　<lora:>
+-dyLoRAのような新しいアルゴリズムを使いたい場合　→　<lyco:>
+-Additional NetworksのようなTEnc、UNetの細かい調整をプロンプトでしたい・LoHaなどのLyCORISでしたい場合　→ 　<lyco:>
+-LoRA・LoConしか使わない場合　→　<lora:>
+が安定と思われる
+
+尚、起動オプションに --lyco-dir でmodels\LoRAフォルダを指定すればファイルのコピーや移動をする必要は無いし、シンボリックリンクを張っても使える
+models\LoRAにファイルを置いてオプション指定やシンボリックリンクでLyCORISフォルダを指定しておけば、管理が楽になるしSSDやHDDの容量にも優しい
+必要に応じて<lora:>と<lyco:>を使い分ければよい
 * LoRA層別学習
 U-Netの階層別に学習率やDim/Alphaを指定できるようになった。
 まだ出たばかりで詳細不明。とりあえず作者の説明書を読もう。
 加筆求む
-
-* LoRAの名称について
-いろいろ名称が増えてわけわからんことになってるのでここに記しておく。間違ってるかも。
-
-- LierLa(リエラ)
-従来のLoRA。
-
-- C3Lier(セリア)
-Conv2d拡張を行ったLoRA。いわゆるLoCon。
 
 * Loraの使用方法&aname(apply_lora)
 
@@ -843,6 +869,26 @@ mem_eff_attenとgradient_checkpointingを有効にすれば1024x1024もギリギ
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

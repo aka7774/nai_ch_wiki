@@ -14,3 +14,20 @@ nsfw,{{{masterpiece}}}, {{{best quality}}}, {{ultra-detailed}}, {illustration}, 
 たまにこのような一、二枚だけ乗っている画像の生成がありますが安定しませんし数が盛れません
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oDIWLYplfy.png)]]
 
+面白そうなのでやってみました。
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/d5p4s_0HmN.png)]]
+=|BOX|
+使用したプロンプト
+armpit,spread legs,spread arms,perfect anatomy,{{ultra-detailed}},{{{{{lying}}}}}, arms behind back,nude,anime colored,{{{{{1girl}}}}},{{{{{{{intricate sashimi}}}}}}},
+{{{{{{human on the plate}}}}}},{{{{{{{put sashimi on a person}}}}}}},[[[fish]]],[[[guro]]],[[[[nsfw]]]],solo,smile,black long hair,medium breasts,[[[plate]]],
+{{scatter sashimi_{{{{{around breasts}}}}}}},{{scatter sashimi_{{{{{around stomachs}}}}}}}, {{scatter sashimi_{{{{{around west}}}}}}},
+{{scatter sashimi_{{{{{around body}}}}}}},{{scatter sashimi_{{{{{around chest}}}}}}},{{sashimi bra}},{sashimi art}
+||=
+
+=|BOX|
+ネガティブ
+pot,[[[fish]]],no human,nude,[[[[nsfw]]]],[[[guro]]],[[[plate]]],monochrome,rope
+||=
+
+打率は相当低いです。
+sashimi braは単体では動作しないのに他呪文と合わせると結構な確率でブラが刺し身になる謎。
