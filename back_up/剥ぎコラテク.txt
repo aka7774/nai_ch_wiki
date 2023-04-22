@@ -67,25 +67,25 @@ i2iで元のプロンプトにgray scaleを追加、denoising strengthを0.7&#65
 たぶんクオリティ系のタグならなんでもええで。これの肝はプロンプトやなくて、noise=0, strength=0.65〜0.7くらいの高めでガチャることと、体の姿勢や服装、余計なプロンプトを除去することや
 例えば、ミクさんに片足をあげてもらいたいとする。これでも悪くないんやけど全身を入れると目のディテールが甘くなる
 {ZEISS Planer 50mm F1.4}, Hatsune Miku, one leg standing, leg up, holding own foot, full body, {{masterpiece, best quality}},
-https://i.imgur.com/oJmy7ez.png
+1&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FRHPf0GA7n.png)
 
 4倍にアップスケールして
-https://i.imgur.com/5u6jZDy.jpg
+2&ref(https://image01.seesaawiki.jp/n/h/nai_ch/f0g0yoweZJ.jpg)
 512x512の顔を切り出す
-https://i.imgur.com/10NBdk1.png
+3&ref(https://image01.seesaawiki.jp/n/h/nai_ch/66h7ec_5CZ.png)
 ここで、プロンプトから余計なのを削ってnoise=0, strength=0.7でガチャる。ええ感じや
 {ZEISS Planer 50mm F1.4}, Hatsune Miku, {{masterpiece, best quality}},　
-https://i.imgur.com/R87mQOy.png
+4&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YP6UQzsfHR.png)
 このとき、one leg standing, leg up, holding own foot, full body,を取り除かないと奇形量産するので注意
-失敗例 https://i.imgur.com/gpOUlug.png
+失敗例 5&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YIdNPqFOvw.png)
 
 生成された画像をそのまま貼り付けても当然ずれるので、消しゴムで削っていく
-https://i.imgur.com/d5C1SxG.png
-https://i.imgur.com/i0XmC6c.png
+
+7&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Z6pNuelpkV.png)
 このときレイヤーを透過させて確認するとやりやすいはずや
-https://i.imgur.com/o1LDzTX.png
+8&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MCbvyNQT5h.png)
 まだ輪郭に違和感があるので、最後は軽ゴムを透明度70%くらいにして周囲を丁寧に削っていく
 今回は背景の輪郭がはみ出たので、生成した目の大きさを少し大きめに変形して、ベースのレイヤーの輪郭を指先ツールでなじませた
-https://i.imgur.com/vD7e0p1.png
+9&ref(https://image02.seesaawiki.jp/n/h/nai_ch/mNpsirOvKr.png)
 適度に縮小して完成や
-https://i.imgur.com/vkh2QDX.png
+10&ref(https://image01.seesaawiki.jp/n/h/nai_ch/XZB8tJFNhP.png)
