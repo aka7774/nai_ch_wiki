@@ -62,7 +62,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-|||||
+|white cook coat|コック・コート|洋食のシェフが着用する仕事着。色指定しないと白にならない。コック帽はcock chef hatで出る。|https://image01.seesaawiki.jp/n/h/nai_ch/0d_LD7oper.png|
 |waist-coat|腰の絞られた上着|胸元が強調されがち。waistcoatだと高確率で男性が出る|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aTbG2MBXF3-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aTbG2MBXF3.png]]|
 |bulletproof vest|弾帯付きのベスト|銃のマガジンやポケットのたくさんついてるベスト。転じてbullet単体だとこれをつけてるとおっぱいが強調されるので乳袋のある服になる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GWR1E4TEC0-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/GWR1E4TEC0.png]]|
 |leather jacket|ダブルライダースジャケット|leather jacketの指定でほぼダブルライダースが出てくる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PPl4DjLGXX-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/PPl4DjLGXX.png]]|
@@ -86,6 +86,20 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|rash guard shirt|ラッシュガード|マリンスポーツ愛好家が肌を保護するため、ウェットスーツと肌の摩擦を軽減するために着用するトップス。|https://image02.seesaawiki.jp/n/h/nai_ch/ZKIQ3N9T2W.png|
+|priest shirt|ローマンカラー・シャツ (クラージマン・シャツ)|カトリックの聖職者が着用する、単色（黒が多い）のクレリカル・カラーが付いたシャツ。|https://image02.seesaawiki.jp/n/h/nai_ch/ypN53SMicM.png|
+|sailor shirt|ミディ・ブラウス (セーラー・シャツ)|セーラー・カラーの付いたトップスの総称。|https://image01.seesaawiki.jp/n/h/nai_ch/wqyxVuWNDk.png|
+|polo shirt|ポロ・シャツ|プルオーバー・タイプの、２、３個のボタンで留める襟付きのシャツ。|https://image02.seesaawiki.jp/n/h/nai_ch/jGroU7DE5R.png|
+|scrub shirt|スクラブ|医療従事者が着用する半袖Vネックのシャツ。|https://image01.seesaawiki.jp/n/h/nai_ch/Bqpkf5LGYL.png|
+|sleeveless shirt|サーフ・シャツ|袖のないプルオーバータイプのニットシャツ。サーファーの愛用者が多いことからこの名称で呼ばれることが多い。|https://image02.seesaawiki.jp/n/h/nai_ch/BRzePy2I78.png|
+|cropped shirt|クロップドシャツ|裾丈を普通のものより短くカットしたシャツ。|https://image01.seesaawiki.jp/n/h/nai_ch/y3GuUxwt1T.png|
+|barong tagalog shirt|バロン・タガログ|フィリピンで男性が着用する民族衣装のシャツ。刺繍の入ったシャツになることが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/bkvQOJ_j9t.png|
+|hibiscus print aloha shirt|アロハシャツ|ハワイ原産のカラフルな柄のシャツ。シャツの柄を指定しないと無地で描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/7av_SIajEA.png|
+|baseball shirt|ベースボール・シャツ|野球のユニフォームをモチーフにしたシャツ。|https://image01.seesaawiki.jp/n/h/nai_ch/Uv79phDD9t.png|
+|bowling shirt|ボウリング・シャツ|オープン・カラー（開襟）とコントラストが強い大胆なカラーリングが特徴のシャツ。|https://image02.seesaawiki.jp/n/h/nai_ch/4sPzBhLBRX.png|
+|safari jacket shirt|サファリ・シャツ|サファリ・ジャケットを模したシャツ。|https://image02.seesaawiki.jp/n/h/nai_ch/xfLFoyUHE1.png|
+|bib front shirt|ビブフロント・シャツ|本来は前立てに胸当ての布があるシャツのこと。胸の部分にロゴの入ったTシャツとして描写されることが多い。|https://image02.seesaawiki.jp/n/h/nai_ch/hdFHqiHTiM.png|
+|flannel shirt, red plaid, |ネル・シャツ (フランネル・シャツ)|起毛した面素材で作られたシャツ。チェック柄が多いが、指定しなければ出ない。|https://image02.seesaawiki.jp/n/h/nai_ch/sUlqUzto0H.png|
 |{{{ribbed sweater}}},bare arms,bare back,|童貞を殺すセーター|打率低め|https://image02.seesaawiki.jp/n/h/nai_ch/nU9NWdjN6f.png|
 |puffy sleeves|パフスリーブ|本格メイドの肩の丸い部分のこと。Novel AIでは鎖骨や胸周りが露出したドレス風の衣装が出やすい。パフスリーブは単体では半袖のものなので、長袖を出したい場合はbishop sleeveを指定すると良い|https://image02.seesaawiki.jp/n/h/nai_ch/QVPQK517Dx.png|
 |strapless|ストラップなし|画像みたいなやつ。へそ出しになったりならなかったりする。へそ出したくなかったらnavelをUCに入れればたぶん行ける。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cMwQAL_W7h-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cMwQAL_W7h.png]]|
@@ -164,6 +178,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|maternity dress|マタニティ・ドレス|ほぼ妊娠描写になる。|https://image01.seesaawiki.jp/n/h/nai_ch/BtQQTem5u4.png|
 |gown|ガウン|裾が地面に達するほど長いドレス。|https://image01.seesaawiki.jp/n/h/nai_ch/8CKOSZoYJQ.png|
 |denim dress|デニムのワンピース||https://image02.seesaawiki.jp/n/h/nai_ch/ear4c3UnwL.png|
 |pencil dress|ペンシルドレス|ボディにフィットしたドレス。ボディコンほど性的にはならない。|https://image02.seesaawiki.jp/n/h/nai_ch/LmsCuytlIH.png|
@@ -505,6 +520,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|bicolor(A and B)|バイカラー|一つのアイテムに二つの色を使用していること。配色はお任せ。サンプルはbowling shirtに適用。A=blue、B=white。|https://image02.seesaawiki.jp/n/h/nai_ch/Vs97e_AlNr.png https://image01.seesaawiki.jp/n/h/nai_ch/vcVLv70Rea.png|
 |satin|サテン生地|朱子織りで織った織物の総称。滑らかな光沢を持つ高級感のある衣装となる。|https://image02.seesaawiki.jp/n/h/nai_ch/l9ATAASvO4.png　https://image02.seesaawiki.jp/n/h/nai_ch/iG2YjvGZ2x.png|
 |lame|ラメ|金銀糸などメタリックな糸を織り込んだ織物。gold lameと指定すると金色のゴージャスな衣装になります。それ以外の場合は刺繍が入った衣装として解釈されます。|https://image02.seesaawiki.jp/n/h/nai_ch/ARqvrIOodc.png　https://image02.seesaawiki.jp/n/h/nai_ch/no5JuiDydd.png|
 |sequin|スパンコール|衣装の頭に付けると衣装がキラキラ輝くスパンコールになります。強化しないとあまり輝きません（サンプルは{{{{ぐらい強化しています）|https://image02.seesaawiki.jp/n/h/nai_ch/bYvt5J0d6h.png　https://image02.seesaawiki.jp/n/h/nai_ch/N8GquB06v0.png|
