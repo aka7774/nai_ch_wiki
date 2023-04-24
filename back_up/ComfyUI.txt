@@ -41,8 +41,8 @@ py -m venv venv
 pip install -r requirements.txt
 ||=
 
-https://i.imgur.com/JQdQs2l.jpg
-https://i.imgur.com/CvoKaCB.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/Z4wxsMtbIA.png
+https://image01.seesaawiki.jp/n/h/nai_ch/q99q4zhwsJ.png
 
 
 3.
@@ -57,9 +57,9 @@ py .\main.py
 
 
 そしたらこんな画面が出るでな、WebUI同様に指示のあるアドレスをブラウザで開けばええな
-https://i.imgur.com/f5SQzMf.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/0DpzZ64byS.png
 WebUIと違って複数起動は現状でけんみたいやから注意や
-https://i.imgur.com/f5SQzMf.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/0DpzZ64byS.png
 
 4.
 二回目以降は
@@ -73,7 +73,7 @@ py .\main.py
 
 で起動できると思うで
 
-https://i.imgur.com/4xrhDzi.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/yRflVS4EQv.png
 こんな感じの画面が出るからモデル選んで、「Queue Prompt」で生成実行や！
 あとはいじれ　ワイもこれからいじる
 

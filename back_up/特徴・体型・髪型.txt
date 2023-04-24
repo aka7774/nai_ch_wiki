@@ -28,7 +28,7 @@
 二つの設定の中間の大きさがいいなぁ、というときは  
 二つの単語を記載して、さらに強弱をつけることで対応する。
 例）smallとmediumの中間にしたい。でもちょっとmedium寄りにする場合。(以下2単語を両方記載する)
-[[small breasts&rsqb;&rsqb;, medium breasts
+&lsqb;&lsqb;small breasts&rsqb;&rsqb;, medium breasts
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
 |||||
@@ -144,7 +144,7 @@
 |Jinx hair|ジンクスの髪型|LOLのジンクスに似た前髪になる|https://image02.seesaawiki.jp/n/h/nai_ch/X9DoRaEsnW.png https://image01.seesaawiki.jp/n/h/nai_ch/2r6n6tYwUu.png|
 |Large amount of hair|髪のボリュームが増える||https://image02.seesaawiki.jp/n/h/nai_ch/gf4YXBINUX.png|
 |{{{gradation hair}}}, black hair, green hair,…|髪にグラデーションがかかる。髪全体で色の傾向を作る場合に使えるかも。例では緑と黒指定|||
-|{{{gradation hair}}}, 髪の色 hair,別の髪の色 hair,…|髪の毛の色をグラデーションさせられる|4,5色ぐらいまでは描画可能だが、色が多くなると色ごとに調整しないと特定の色ばかり出てくるので注意|https://i.imgur.com/3r5WmHD.png|
+|{{{gradation hair}}}, 髪の色 hair,別の髪の色 hair,…|髪の毛の色をグラデーションさせられる|4,5色ぐらいまでは描画可能だが、色が多くなると色ごとに調整しないと特定の色ばかり出てくるので注意|https://image02.seesaawiki.jp/n/h/nai_ch/4LETvnGnF0.png|
 |parted bangs|分かれた前髪|7.3ぐらいになる|https://image01.seesaawiki.jp/n/h/nai_ch/Ud2Nmmx_en.png|
 |iridescent color hair|玉虫色の髪色|サンプルの呪文は{{{{iridescent_color_hair}}}}, red hair, blue hair, green hair,yellow hair, purple hair,Arancione hair,~~少し試した感じ色の組み合わせは変えられそう|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CA4s_gWj13.png)|
 |hijiri byakuren|髪色のグラデーションカラー化|Scale 8 程度で使用。髪の色が途中で変わり、毛先が別の色になる。Scaleが高いと元ネタに引っ張られて色が固定される。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/g9cD1rE0bi-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/g9cD1rE0bi.png]]|

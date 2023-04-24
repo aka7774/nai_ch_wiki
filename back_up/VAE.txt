@@ -55,8 +55,8 @@ autoencoder_fix_kl-f8-trinart_characters.ckpt
 903: 2023/02/12(日) 
 エラーが出るか出ないかギリギリにNAIのVAEを学習させたのを投下してみる
 
-&ref(https://i.imgur.com/8g8a3Cw.jpg,700)
-&ref(https://i.imgur.com/VQUnR4A.jpg,700)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dCwvVTYZxX.png,700)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/b8rb2ZtjGz.png,700)
 モデルは上が7th_anime_v3_Cで下はetr_odysseyV2Fixを改良してる途中のもの
 特徴としては赤系の発色が強いのとNAIより細かい部分の描写が気持ち程度に変わる
 学習元が似ていれば相乗効果があるのかと思ったけど違うみたいでう〜ん・・・
@@ -64,8 +64,8 @@ autoencoder_fix_kl-f8-trinart_characters.ckpt
 
 - なんJNVA部★147 - 5ch.net liveuranus
 7: 2023/02/12(日)
-&ref(https://i.imgur.com/hffMiNQ.jpg,700)
-&ref(https://i.imgur.com/CFeUHxU.jpg,700)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lcWGMEGDF6.png,700)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4BGjT6Ftvq.png,700)
 >>903と中身は同じなA
 NAIより薄くしたいがAnything-v3.0は薄すぎるから丁度いいのが欲しい用のB
 ガンマ値を高くした時のような感じになるHighGamma

@@ -600,7 +600,7 @@ Adafactorは学習率とかを自動調整する機能が優秀だから調整�
 NVA部157あたり：https://fate.5ch.net/test/read.cgi/liveuranus/1677145939/661
 -264: 
 AdaFactorを使った学習で1repeats50epochと10repeats5epochでどちらが良いのか調べてみました！！
-&ref(https://i.imgur.com/wJfpJPj.jpg,400)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4Z3sZrWgqR.png,400)
 結果、よく分かりませんでした・・・
 いかがでしたでしょうか？
 1rp50epの方が再現度は高い気がする
@@ -610,7 +610,7 @@ AdaFactorを使った学習で1repeats50epochと10repeats5epochでどちらが�
 AdaFactorとAdamW8bitの違いを凝光で検証したのでLoRA作成メモ更新したで
 AdaFactorは少し遅い代わりにいい感じに過学習を抑えながら再現できるっぽい
 https://rentry.org/genshin_lora
-&ref(https://i.imgur.com/0KUdTD1.jpg,600)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aq9ohRdc_N.png,600)
 ついでに凝光とかのlora上げとくわ
 https://huggingface.co/RedRayz/genshin_lora_set
 
@@ -653,12 +653,12 @@ https://paperswithcode.com/method/adafactor
 >>774
 これはsdじゃなくてcraiyonで使われてるDall-e-miniモデルの比較みたいやが
 adamの最適値が1e-4に対してadafactorの最適値は1e-3なんでもう少しlr上げてもええかもしれんね
-&ref(https://i.imgur.com/gwaFVBw.jpg,800)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uWChTGnwqi.png,800)
 
 -770: 
 バッチ4で回したけどバッチ1に換算して表示しとるで
 これ見ると2000ステップは門前払い、4000でようやく要素が似てきて、6000でやっとという感じやな
-&ref(https://i.imgur.com/yQqusU7.jpg,600)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iGXh4EJBq2.png,600)
 
 res 512
 dim 128
@@ -687,19 +687,19 @@ AdaFactorとLion、収束遅い割にそこまで画質向上した感無くて�
 
 -905: 
 >>770の続きで今度はAdaFactorのwarmup有無やで
-&ref(https://i.imgur.com/ly0AEs5.jpg,600)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cZJP9bXMen.png,600)
 これを見るにwarmupが無ければ2000でもほぼ写し取りが完了していて
 warmupはどっかをいじって立ち上げ角度変えんと邪魔にしかならんことが分かる
 
 ただ↑のはベースモデルの出力でwarmup無しでいかにも過学習が起きにくいように見えとるけど
 これを7th3.1Cに持って行くとこうや
-&ref(https://i.imgur.com/JfdD4eX.jpg,600)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aiMuRlUtzp.png,600)
 学習が進むにつれベースモデルへの依存が増すのかモデル間の持ち運びが破綻しとる
 8bitAdamが無ければ省メモリダントツの革命的なオプティマイザなんやけど使い方の研究が進まんと今のところは好みの問題やな
 
 -907: 
 おもかげ宿し始めてんのワロス
-&ref(https://i.imgur.com/QVOGR2F.jpg,200) &ref(https://i.imgur.com/cERqQbw.jpg,200)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5XUVQYndRl.png,200) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/zYU6SA1jpz.png,200)
 >>876
 --optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True" をまるごと削除して通ったわ
 シャイニングショルダー飽きたからポプ子とピピ美でやってみる
@@ -710,7 +710,7 @@ warmupはどっかをいじって立ち上げ角度変えんと邪魔にしか�
 2080ステップ/1epoch目のやつだけど学習は十分な感じはある
 なんか混ざっちゃうのはワイがタグ付け&#128118;だからだと思う
 ちなモデルはリアル系は合わなくてHXDCにしたらかわいくなってしまった、クソアニメなのに
-&ref(https://i.imgur.com/9VaR1jC.jpg,300) &ref(https://i.imgur.com/sii4OxP.jpg,300)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VugkNJtYkU.png,300) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/bfo1MDtv05.png,300)
 [END]
 
 *LoRAの種類とLoCon・LyCORISについて

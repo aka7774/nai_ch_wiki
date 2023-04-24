@@ -125,7 +125,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1679571571/540
 540:  2023/03/24(金) 
 >>524
 絵を借りてやってみたがこんなんでどうや?
-&ref(https://i.imgur.com/UjbRbK8.jpg,500)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tKphFcGldd.png,500)
 パラメータ等はpastebinに置いた https://pastebin.com/PiGMstfE
 CFG Scalleを上げる、Denoising Strengthを若干下げる、tile width を64に下げる あたりが聞いてそうな感じがするがワイもこのへん適当や
 なおtile widthの値を下げると生成時間が長くなる、この設定だと4090で6:46ほどかかっとる
@@ -135,9 +135,9 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1679571571/544
 >>535
 やってみたで
 背景プロンプトのみ＋no humans　denoise0.4
-&ref(https://i.imgur.com/vO8DyVr.jpg,500)
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yqcNZ9Jskm.png,500)
 タグ全残し　denoise0.4
-&ref(https://i.imgur.com/DFC3Nia.jpg,500)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mCNX00qIOg.png,500)
 たしかに小人出なくなったがキャラ属性が消えてしまうわな
 
 

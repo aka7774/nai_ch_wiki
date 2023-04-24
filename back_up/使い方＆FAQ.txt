@@ -31,11 +31,11 @@ A.生成処理はweb上で行われるためグラボのないPCやスマホで�
 ** 課金方法
 
 [+]←登録手順
-&size(64){��}https://i.imgur.com/CcghCoK.jpg
+&size(64){��}https://image02.seesaawiki.jp/n/h/nai_ch/S5_4m1FRfx.png
 
-&size(64){��}https://i.imgur.com/ZLee8xJ.jpg
+&size(64){��}https://image01.seesaawiki.jp/n/h/nai_ch/fhkDe9o6De.png
 
-&size(64){��}https://i.imgur.com/bavMhQG.jpg
+&size(64){��}https://image02.seesaawiki.jp/n/h/nai_ch/xs4i0UnBUx.png
 [END]
 [+]←使えるカード
 Paddle経由で課金され、VISA/Mastercard/JCB/AMEX/Dinersが利用可能。
@@ -114,7 +114,7 @@ A.[[おすすめツール・リンク集>https://seesaawiki.jp/nai_ch/d/%a4%aa%a
 
 Q.ネガティブプロンプトってどこ？
 画像右下赤四角で囲ったundesired contentの箇所
-https://imgur.com/tFUxNZd
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/sV6dz3EUMG.png, 400)
 
 ''&size(16){StepsとScaleの使用例}''
 Steps=AIが調整する試行回数。Scale=AIによる解釈度。
