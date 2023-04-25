@@ -82,6 +82,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|GTX 1080|8GB|Core i3-12100F||152.84|--xformers|torch: 1.13.1+cu117|
+|RTX 4070|12GB|Core i3-12100F||18.66|--opt-sdp-no-mem-attention|torch: 2.0.0+cu118|
 |RTX 3090|24GB|i7-6700k|28秒|28.26|--opt-sdp-attention|torch: 2.0.0+cu118　Show live previews of the created imageのチェックをオフ　GPU以外が古すぎるかな|
 |RTX3060|12GB|Ryzen 7 3700X|41|42.15|--xformers --disable-nan-check --opt-channelslast --opt-sub-quad-attention|Windows11 mem:64GBtorch: 2.0.0+cu118,xformers: 0.0.19.dev516|
 |RTX4070|12GB|Ryzen 7 5700X|20秒|19.78|--opt-sdp-attention --opt-channelslast|torch: 2.0.0 + cu118　Tiではない|

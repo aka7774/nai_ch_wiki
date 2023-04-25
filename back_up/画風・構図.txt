@@ -7,7 +7,7 @@
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
 |{{{perfect masterpiece}}}, {{{perfect best quality}}}, solo, 1girl, looking back {kawaii} face, &#91;lens flare], &#91;&#91;photorealistic]] {vector_trace} anime, 8K hdr||大作アニメ風|サンプルはWeb版NAIにてDPM++ 2M, SMEAで生成　"perfect"はおまじないレベル、なくても可|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xPQIvARcGN.png) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ywp08puOSU.png) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/3dsYA3J1jp.png) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/oTjcl0ru25.png)|
 |masterpiece, best quality, 〇〇, 1girl, high contrast, hyper detailed|grayscale, monochrome, flat shading, low contrast, 3d, realistic|カラフル|〇〇は適当に変えてな|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yZZbHI6MKC.png) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/7g9Ryk8uZb.png) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/aO2f2_YhY4.png)|
-|Professional oil painting of establishing shot of 〇〇, professional {{majestic}} oil painting by Greg Manchess, Atey Ghailan, {{Fenghua Zhong}}, {{{{Jeremy Mann}}}}, {{{{{{{{Greg Rutkowski}}}}}}}}, Antonio Moro, {{{{{{trending on ArtStation}}}}}}, trending on CGSociety, dramatic lighting, {{dawn}}, refraction, {{{{{{{{Unreal Engine 5}}}}}}}}, rule of thirds||midjourney風|〇〇は適当に変えてな|https://i.imgur.com/sqVN0g4.png https://i.imgur.com/FaZik8q.jpg https://i.imgur.com/oz6kQRP.jpg|
+|Professional oil painting of establishing shot of 〇〇, professional {{majestic}} oil painting by Greg Manchess, Atey Ghailan, {{Fenghua Zhong}}, {{{{Jeremy Mann}}}}, {{{{{{{{Greg Rutkowski}}}}}}}}, Antonio Moro, {{{{{{trending on ArtStation}}}}}}, trending on CGSociety, dramatic lighting, {{dawn}}, refraction, {{{{{{{{Unreal Engine 5}}}}}}}}, rule of thirds||midjourney風|〇〇は適当に変えてな|https://image02.seesaawiki.jp/n/h/nai_ch/DuBSbp3eqs.png https://image01.seesaawiki.jp/n/h/nai_ch/XP8DHi43ls.png https://image01.seesaawiki.jp/n/h/nai_ch/b03oD2Qr76.png|
 |{{{{{masterpiece}}}}}, {{{{best quality}}}}, {{{{{CYBERSEX}}}}}, {{{{high colour Value}}}}, needy girl{{colourful hair}}, &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;purple hair]]]]]]]]]]]]]]], &#91;&#91;&#91;&#91;&#91;&#91;blonde hair]]]]]], &#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;black hair]]]]]]]]]], &#91;&#91;&#91;&#91;&#91;parted lips]]]]],|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name|カラフル|元のプロンプトはこちらプロンプト欄のはNAI用に変換済み~~(masterpiece:1.3),(best quality:1.2),(CYBERSEX:1.3),(high colour Value:1.2),(needy girl:1),(colourful hair:1.1),(purple hair:0.472),(blonde hair:0.738),(black hair:0.6),(parted lips:0.77)|https://image01.seesaawiki.jp/n/h/nai_ch/1qo0cuNjTv.png https://image02.seesaawiki.jp/n/h/nai_ch/El9aB781cf.png|
 |{{masterpiece}}, {{{best quality}}}, {{ultra-detailed}}, {{illustration}}, {{disheveled hair}},India ink,sumi-e,{{{{{{{Ink wash painting sumi-e}}}}}}},{{{ukiyoe}}}{monochrome},japanese style,Sesshu,water splash,rain,floating hair,pond,Steam,||水墨画(雨や池)この後ろに好きな動物やらなんやらを追加してくれや|https://fate.5ch.net/test/read.cgi/liveuranus/1666411038/|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7AfOtoJ9a4.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UYwsUJzusZ.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IBbVkpx9tZ.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VFiok5ffUf.png)|
 |Banksy,street art,wall art,graffiti||ストリートアート||https://image02.seesaawiki.jp/n/h/nai_ch/DF64KKwGMo.png|
@@ -31,13 +31,13 @@
 |isometric|クウォータービュー|背景のみ~~人物を入れるのは不可|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GsQLk4asdB.png)|
 |zentangle|ゼンタングル|白黒幾何学模様のアート|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zYKTcdPj0x.png)|
 |hyper paint|カラフルな絵||https://image01.seesaawiki.jp/n/h/nai_ch/RPXIbXkzpQ.png|
-|Ink wash painting~~sumi-e|水墨画風||https://i.imgur.com/gV9Ij4a.png|
-|Gouache|不透明水彩画風||https://i.imgur.com/LAC9oiu.png|
-|aquatint|銅版画風(アクアチント)||https://i.imgur.com/TPTkejl.png|
-|soft-ground etching~~lift-ground etching~~etching|銅版画風(エッチング)|etchingはsoft-ground etchingに比べ影響が弱い傾向|https://i.imgur.com/4zwodIl.png|
+|Ink wash painting~~sumi-e|水墨画風||https://image02.seesaawiki.jp/n/h/nai_ch/EUb7VXGYcf.png|
+|Gouache|不透明水彩画風||https://image02.seesaawiki.jp/n/h/nai_ch/m3qnwTFTPt.png|
+|aquatint|銅版画風(アクアチント)||https://image02.seesaawiki.jp/n/h/nai_ch/qWWKxt_RLM.png|
+|soft-ground etching~~lift-ground etching~~etching|銅版画風(エッチング)|etchingはsoft-ground etchingに比べ影響が弱い傾向|https://image01.seesaawiki.jp/n/h/nai_ch/g9jq04WV5X.png|
 |pixel art|ドット絵風||https://image02.seesaawiki.jp/n/h/nai_ch/uQzPGn3lcA.png|
-|Linocut|リノリウム版風||https://i.imgur.com/f6h79yz.png|
-|woodcut|木版画風||https://i.imgur.com/DAkBVPq.png|
+|Linocut|リノリウム版風||https://image02.seesaawiki.jp/n/h/nai_ch/iyvlVRORf_.png|
+|woodcut|木版画風||https://image02.seesaawiki.jp/n/h/nai_ch/piJl39CwRx.png|
 |posca|水性サインペン||https://image01.seesaawiki.jp/n/h/nai_ch/o0VhQdCvsJ.png|
 |silhouette|シルエット||https://image02.seesaawiki.jp/n/h/nai_ch/FLBcVE3cNU.png|
 |digital|デジタル塗り？||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/YoGqMp2VKF-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/YoGqMp2VKF.png]]|
@@ -52,7 +52,7 @@
 |acrylic paint &#40;medium)|アクリル風||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZyCzhzht_T-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ZyCzhzht_T.png]]|
 |detailed~~highly detailed~~perfect detailed~~hyper detaied|ディテール|4chanで使われてたの一通り試したで|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JZmVTEZGpo-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/JZmVTEZGpo.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9wW_zDAnpe-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/9wW_zDAnpe.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HYbjggLy2a-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HYbjggLy2a.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NdqtPcSW5G-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NdqtPcSW5G.png]]|
 |cyberpunk|サイバーパンク||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/uFzIg8pC49-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/uFzIg8pC49.png]]|
-|tarot|タロットのような絵CLANNADのような絵|童話みたいな絵柄量産できる欠点は背景書き込むせいか目と手が崩壊しまくる https://fate.5ch.net/test/read.cgi/liveuranus/1665501510/|https://i.imgur.com/80AS8J2.jpg https://i.imgur.com/agFjJPF.jpg https://i.imgur.com/EzBlmvR.jpg https://i.imgur.com/NP717rF.jpg https://i.imgur.com/fGqW8i5.jpg|
+|tarot|タロットのような絵CLANNADのような絵|童話みたいな絵柄量産できる欠点は背景書き込むせいか目と手が崩壊しまくる https://fate.5ch.net/test/read.cgi/liveuranus/1665501510/|https://image01.seesaawiki.jp/n/h/nai_ch/V8oS3NJDBo.png https://image01.seesaawiki.jp/n/h/nai_ch/voIvG8Hil4.png https://image01.seesaawiki.jp/n/h/nai_ch/UoNbQS36Br.png https://image02.seesaawiki.jp/n/h/nai_ch/iBXOoyvVQA.png https://image02.seesaawiki.jp/n/h/nai_ch/gCAFDkQuDP.png|
 |ascii art|アスキーアート||https://image02.seesaawiki.jp/n/h/nai_ch/kgE02ObCQV.png|
 |acrylic|アクリル||https://image01.seesaawiki.jp/n/h/nai_ch/SMn5FSlkfq.png|
 |limited palette|モノクロ、白黒||https://image01.seesaawiki.jp/n/h/nai_ch/W93TXYu4kI.png|
@@ -89,9 +89,9 @@
 |movie poster|映画のポスター風||https://image01.seesaawiki.jp/n/h/nai_ch/ZoRrO6by7A.png|
 |cover page|表紙||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vKg6G1onMl.png)|
 |figure|人形||https://image02.seesaawiki.jp/n/h/nai_ch/vbjDIHWke_.png|
-|election poster~~campaign poster|選挙ポスター風|propagandaを加えても効果的|https://i.imgur.com/sGZKTYt.png|
-|war poster~~propaganda poster~~WWII poster|戦時ポスター風||https://i.imgur.com/manwHB2.png|
-|soviet poster|共産主義プロパガンダポスター風||https://i.imgur.com/kjo9qSP.png|
+|election poster~~campaign poster|選挙ポスター風|propagandaを加えても効果的|https://image02.seesaawiki.jp/n/h/nai_ch/FPY_Sy0I9Y.png|
+|war poster~~propaganda poster~~WWII poster|戦時ポスター風||https://image01.seesaawiki.jp/n/h/nai_ch/IIGFi53Gaf.png|
+|soviet poster|共産主義プロパガンダポスター風||https://image02.seesaawiki.jp/n/h/nai_ch/LMRDkfRp92.png|
 |paper puppets|ペーパークラフト||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KuOWuMJZoM-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/KuOWuMJZoM.png]]|
 |plastic model|プラモデル||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Nc5ZbxbvRD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Nc5ZbxbvRD.png]]|
 |nendroid|ねんどろいど||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wDqGwW5IsP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/wDqGwW5IsP.png]]|
@@ -161,7 +161,7 @@
 |occultic|オカルト||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3XBUL4iMa0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3XBUL4iMa0.png]]|
 |magical|魔法||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1g0O1OP06V-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1g0O1OP06V.png]]|
 |best quality|クオリティ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI.png]]|
-|intricate|複雑な||https://i.imgur.com/FwS6MKy.png|
+|intricate|複雑な||https://image02.seesaawiki.jp/n/h/nai_ch/O7iISG8jEL.png|
 |taylor swift||女優|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98.png]]|
 |multiple view|マルチビュー|||
 |motion lines|集中線|||

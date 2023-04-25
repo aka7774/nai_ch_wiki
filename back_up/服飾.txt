@@ -123,7 +123,15 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-|||||
+|cropped pants|クロップド・パンツ|丈が七分ほどで膝下の裾を切り落としたようなデザインのパンツ。|https://image02.seesaawiki.jp/n/h/nai_ch/gN8Ofq8TOZ.png|
+|bell bottoms pants|ベルボトム・パンツ|膝から下に広がりがあり、釣鐘（ベル）の形に似ているパンツ。|https://image01.seesaawiki.jp/n/h/nai_ch/zc24DdD321.png|
+|palazzo pants|パラッツォ・パンツ (スカーチョ、スカンツ)|広がりのある丈が長めのワイドパンツ。|https://image01.seesaawiki.jp/n/h/nai_ch/sEG1fns1b2.png|
+|bike shorts|スパッツ|一般的にイメージするスパッツはこれで出る。spatsだとレギンス寄りになる。スカートの下に履かせたい場合はnsfwを追加＋スカートのプロンプトをやや強化すると良い。|https://image02.seesaawiki.jp/n/h/nai_ch/KqrQyNc5OA.png https://image02.seesaawiki.jp/n/h/nai_ch/2tnzQc66Cz.png|
+|leggings pants|レギンス|脚にぴったりとする伸縮性のある素材の、足首までをおおうタイツ状のパンツ。スパッツよりはアウター的。pantsは無くても良い。|https://image02.seesaawiki.jp/n/h/nai_ch/0yMjtD37sl.png|
+|damaged denim pants|ダメージ・ジーンズ (ダメージ・デニム)|意図的に糸切れや穴、裂け目などのダメージ加工を施して、使用感やビンテージ感を加えたデニム・パンツ。強化詠唱しないとただのジーンズになる。|https://image01.seesaawiki.jp/n/h/nai_ch/OY_Vqculkp.png|
+|ripped jeans|リップド・ジーンズ|太ももや膝周りに意図的に裂け目をいれたジーンズ。裂け目や穴があいた部分が強調されたものが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/H1GxL5ZMMs.png|
+|destroyed denim pants|デストロイド・ジーンズ|ダメージ・ジーンズとほぼ同意。ダメージ加工を施して使用感を加えたデニム・パンツだが、よりダメージ感が高い。|https://image02.seesaawiki.jp/n/h/nai_ch/1viLZOUNd1.png|
+|chino pants|チノ・パンツ (チノパン)||https://image02.seesaawiki.jp/n/h/nai_ch/7g33r5WUb5.png|
 |denim shorts|デニム地のショートパンツ|jeans hotpantsよりだとジーンズになる事が多いのでローライズなのは出やすい模様||
 |hotpants|ホットパンツ|普通に指定するとデニムホットパンツが出てくる率が高いので、それが嫌な方はNCにdenim指定をどうぞ|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA.png]]|
 |short shorts|→ホットパンツ|学習元データでの仕分けの関係上、ホットパンツと同義|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA.png]]|
