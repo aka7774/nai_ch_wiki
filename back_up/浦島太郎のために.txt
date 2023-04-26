@@ -46,6 +46,10 @@ https://help.imgur.com/hc/en-us/articles/14415587638029-Imgur-Terms-of-Service-U
 過去スレとwikiのimgur画像はバックアップしといたけど、
 wikiのリンク切れを直すんならseesaawikiに全部再アップしなおす必要があって大変。
 
+4/26 追記
+"リアル系モデル比較・雑感"以外のページのimgur画像はwikiに再アップした．
+imgurの画像リンク→wikiの画像リンクの対応表( data/new_link.json )と，作業に使ったスクリプトを一応知見として共有する．
+[スクリプトおよび対応表>https://image01.seesaawiki.jp/n/h/nai_ch/NrjDjRzPR3.zip]
 * 2023-04-17 basilmixの商用利用が禁止される
 basilmixの配布者である[[ぬいぐるみ氏>https://twitter.com/nuigurumi1_KR]]によって以下のようなツイートが投稿された。
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/VnA98wVSM_.png, 30%)
@@ -930,6 +934,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 

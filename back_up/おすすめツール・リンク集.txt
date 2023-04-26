@@ -105,14 +105,14 @@ https://pastebin.com/Bv8EP0MF
 導入うまく行かんかったってやつ見かけたからドキュメントも用意したで
 https://pastebin.com/1pJfmTm4
 導入サンプル
-|&ref(https://i.imgur.com/eeNmKqE.png,300)|
+|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aLWoE6yfBY.png,300)|
 
 ** プロンプト保存・管理ソフト
 NovelAI Manager
 https://github.com/riku1227/NovelAIManager
 NovelAIのプロンプトなどを良い感じに保存しておけるソフトウェア (Windowsのみ)
-|&ref(https://i.imgur.com/JAWve75.png,300)|
-|&ref(https://i.imgur.com/wVZdhQ5.png,300)|
+|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Lw6RWit7Zv.png,300)|
+|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/A4ZqX4YZ4x.png,300)|
 
 ** NovelAI metadata Viewer v1.0.1
 https://novelai-metadata-viewer.pages.dev/
@@ -290,9 +290,9 @@ https://ai-booth.com/novelai/
 使える。実例は以下([[絵文字と対応する作例を示したサイト>https://rentry.co/xnpkp]]がありこれが参考になると思う。)
 他に日本語なども使える。ほとんど反応しないが。
 [+]
-|&ref(https://i.imgur.com/DIitipv.jpg,200)|&ref(https://i.imgur.com/56W3jnB.jpg,300)|&ref(https://i.imgur.com/0a8R4ka.jpg,200)|
-|&ref(https://i.imgur.com/fHJAWvq.jpg,200)|&ref(https://i.imgur.com/GJTigHe.jpg,300)|&ref(https://i.imgur.com/RZxuNvJ.jpg,200)|
-|&ref(https://i.imgur.com/vTTQR1A.jpg,200)|
+|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/a0bY9KMZGn.png,200)|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rYjoeKPjvs.png,300)|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NNCzlDdt9Z.png,200)|
+|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4sHAi0qq9x.png,200)|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/L6QEaOl8q7.png,300)|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jVH09x6UBj.png,200)|
+|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/M9W3DWbZmU.png,200)|
 [END]
 
 *** モザイクうざい
@@ -368,7 +368,7 @@ WebUIの設定から、「Stop At last layers of CLIP model」を2に設定し�
 - CLIPなんとかを頻繁に変える人向け(被った)
 [+]
 settings > Quicksettings listにCLIP_stop_at_last_layersを入れてApplyして再起動すると上部に表示される
-https://i.imgur.com/hC1fMu4.png
+https://image01.seesaawiki.jp/n/h/nai_ch/VvKNF090oD.png
 プロンプト内でも設定できるらしい
 [END]
 
@@ -377,7 +377,7 @@ https://i.imgur.com/hC1fMu4.png
 *** ローカル用ツール
 NAI版の呪文の括弧をローカル版の術式に変換するスクリプト
 入れ子構造の括弧には非対応
-|&ref(https://i.imgur.com/QXFX050.png,300)|&ref(https://i.imgur.com/bKdNBE9.png,300)|
+|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Ubc_0LdR9W.png,300)|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vc3IFLm1Gj.png,300)|
 
 https://firestorage.jp/download/1fd8f574c39affd3a66c6bd97c09641df093bbe8
 DLパス：naij
@@ -386,7 +386,7 @@ https://rentry.org/43zdr
 https://github.com/animerl/novelai-2-local-prompt
 
 インストール方法はダウンロードした「nai2local.js」を「javascript」フォルダの中に入れるだけ
-|&ref(https://i.imgur.com/gmLQ6xG.png,300)|
+|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qksM3eTMmt.png,300)|
 [END]
 
 

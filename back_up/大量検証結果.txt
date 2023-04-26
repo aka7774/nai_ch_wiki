@@ -184,15 +184,15 @@ heart hands
 ライム色なんか草
 この色単体で複数の色出るで
 lime hair 2トーンになりやすい感
-https://i.imgur.com/xQYDaK2.png
-https://i.imgur.com/eztUJaz.png
-https://i.imgur.com/sl39KZr.png
-https://i.imgur.com/ACJkrKb.png
-https://i.imgur.com/IRxygTr.png
-https://i.imgur.com/9Oerkhi.png
-https://i.imgur.com/2H4T3hu.png
-https://i.imgur.com/tgZMn7d.png　https://i.imgur.com/sx82jzf.png　https://i.imgur.com/jFRBGEA.png
-https://i.imgur.com/EkhBI73.png
+https://image02.seesaawiki.jp/n/h/nai_ch/i_b6ZWlEMX.png
+https://image01.seesaawiki.jp/n/h/nai_ch/ZwSQhZELP4.png
+https://image02.seesaawiki.jp/n/h/nai_ch/j9PvNbtrYr.png
+https://image02.seesaawiki.jp/n/h/nai_ch/pWYvtuNbSR.png
+https://image02.seesaawiki.jp/n/h/nai_ch/OWhdTBp3ub.png
+https://image02.seesaawiki.jp/n/h/nai_ch/DWt7tE1XoD.png
+https://image02.seesaawiki.jp/n/h/nai_ch/zpNfN4sn1f.png
+https://image01.seesaawiki.jp/n/h/nai_ch/y_1InRKBRp.png　https://image02.seesaawiki.jp/n/h/nai_ch/JTSVtfbhy7.png　https://image02.seesaawiki.jp/n/h/nai_ch/uSTJlEbm45.png
+https://image02.seesaawiki.jp/n/h/nai_ch/CbkE3h533k.png
 [END]
 
 * 設定とseed固定で髪の色だけ変えた実験
@@ -226,7 +226,7 @@ seed値を0&#65374;20で＋1ずつ変動、highly detailed：1.0&#65374;1.5ま�
 
 馬鹿でか画像で大変申し訳ないけど、参考にどうぞ
 [+]
-[[&ref(https://i.imgur.com/todFc7d.jpg,500)]]
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3qDBtvMkRx.png,500)]]
 [END]
 
 87 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 16:40:37.28 ID:8NKTMun30 [2/12]
@@ -308,17 +308,17 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/830
 
 830今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 2986-wtyD)2023/01/14(土) 04:23:09.35ID:Fd8b7j6v0
 NAIでone-piece_tanが綺麗に出なくて不気味な紋様になってしまう問題を解決できているモデルが無いものかと再学習や過学習解消や非NAIをコンセプトにしてるモデル中心に検証してみたけどなかなか厳しい
-NAISFW &ref(https://i.imgur.com/frjXb48.png,450)
-anything3 &ref(https://i.imgur.com/fyDNcha.png,450)
-acertainthing &ref(https://i.imgur.com/ZvzXJAY.png,450)
-acertainmodel &ref(https://i.imgur.com/KQwPfTj.png,450)
-waif1.4 &ref(https://i.imgur.com/FJNtaZV.png,450)
-8258d &ref(https://i.imgur.com/oD79vdQ.png,450)
-CJD2.1.1β &ref(https://i.imgur.com/keKrKpF.png,450)
-almondmix &ref(https://i.imgur.com/yPtZMHL.png,450)
+NAISFW &ref(https://image01.seesaawiki.jp/n/h/nai_ch/hLytja1xL2.png,450)
+anything3 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/og03gPGUaJ.png,450)
+acertainthing &ref(https://image01.seesaawiki.jp/n/h/nai_ch/bZrWWmbOhh.png,450)
+acertainmodel &ref(https://image01.seesaawiki.jp/n/h/nai_ch/BQZpfOIUB9.png,450)
+waif1.4 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/EBpvaO4BvP.png,450)
+8258d &ref(https://image02.seesaawiki.jp/n/h/nai_ch/OhZO8ymveC.png,450)
+CJD2.1.1β &ref(https://image02.seesaawiki.jp/n/h/nai_ch/0KKg4yPuYy.png,450)
+almondmix &ref(https://image02.seesaawiki.jp/n/h/nai_ch/0fr2ApKuh6.png,450)
 basilmix &ref(https://i.imgur.com/BQhmaa5.png,450)
-ElysiumAnimev3 &ref(https://i.imgur.com/WqF52pt.png,450)
-shirayuki &ref(https://i.imgur.com/sq9sTWS.png,450)
+ElysiumAnimev3 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/9U0rZCuIax.png,450)
+shirayuki &ref(https://image02.seesaawiki.jp/n/h/nai_ch/tieRegIrNE.png,450)
 [END]
 *ねんどろいど化させるときに良さげなモデルを探した検証結果
 [+]
@@ -329,5 +329,5 @@ shirayuki &ref(https://i.imgur.com/sq9sTWS.png,450)
 1girl, <lora:RosaPokemon_v10:0.8> ,nendoroid, rosa (pokemon), figure, <hypernet:sdHypernetNendroid_10:0.7>, 8k,4k,(highres:1.1),best quality,(masterpiece:1.3)
 Negative prompt: ng_deepnegative_v1_75t,bad_prompt_version2,bad-image-v2-39000,bad-hands-5,bad-artist,bad-artist-anime,EasyNegative, negativeembed
 Steps: 60, Sampler: DPM++ 2S a Karras, CFG scale: 7, Seed: 1343738147, Size: 512x512, Model hash: f758fffcb9, Model: 06Counterfeitv25025_V10, Clip skip: 2
-https://i.imgur.com/ljEPo2I.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/gUc56HnxA5.png
 [END]

@@ -1,4 +1,3 @@
-
 あまりにクソながなので別ページに分離した。
 親ページ：[[階層マージ]]
 
@@ -30,7 +29,7 @@ https://www.wpeebles.com/DiT
 層別マージ検証
 AnyとRiffusion(灰色画像しか出ない)のマージでパラメータは全て0
 但し指定されている箇所のみ0.5
-https://i.imgur.com/gRk7sZj.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/7RuGkLfLfl.png
 どの層のどの部分が何に影響を与えているかの参考にしてくれ
 
 うーん？層別マージが雰囲気は変わるが指の制度とかの改善に至ったかと言われると・・・単に得意不得意がずれただけな予感。
@@ -54,7 +53,7 @@ OUTの10と11が色への影響大
 OUT3〜OUT8までのはHighres.fixなし低Scale高解像度に似とる&表面ぐちゃぐちゃやが構図は割と保たれとる
 指の非破綻率はIN浅層→IN深層→中間層→OUT深層→OUT浅層の順で(riff混ぜが)In浅層に近いほど破綻が少ない
 こんな傾向がある気がするで
-https://i.imgur.com/PmFQj2m.png
+https://image01.seesaawiki.jp/n/h/nai_ch/PG82GCc7Jx.png
 https://13.gigafile.nu/1229-c62385bc24705a78ac6609e4275a9f769 フル解像度115MB
 
 
@@ -70,7 +69,7 @@ INの08が構図に与える影響が増えとる
 IN00にriffusionを混ぜた方が素Anyより結果が良いのは意外やった
 指修復効果はinstaが優秀なわけやなくて、変なモデルを混ぜること自体に意味があるんやろか
 (riffusionは灰色スペクトログラム専用モデルで人その他動物等意味のある物はどう頑張っても出ない)
-https://i.imgur.com/hLm2wTM.png
+https://image01.seesaawiki.jp/n/h/nai_ch/i2Z0wMqhyn.png
 https://13.gigafile.nu/1229-c62385bc24705a78ac6609e4275a9f769
 
 >>387
@@ -107,31 +106,31 @@ IN01が服を上手くかけなくなってるし、IN02が乳首を出さなく
 
 
 anyの一部の層にnaiを混ぜるとエロい事聞いてくれるようになったけど絵柄NAIとあんまり変わらんやんけ
-https://i.imgur.com/L3p3y5z.png
-https://i.imgur.com/mru1OV6.png
+https://image02.seesaawiki.jp/n/h/nai_ch/uOu6pcNLOG.png
+https://image01.seesaawiki.jp/n/h/nai_ch/bkpFt6Hi4e.png
 
 
 559 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ea88-e5AJ) sage 2022/12/22(木) 22:37:07.48 ID:eV+I6f+P0
 Checkpoint Mergerでマージすると色が薄くなる問題、Merge Blocvk Weightedで解決できそう
 
-Checkpoint Merger のMultiplierで指定してた値をMerge Block Weightedの IN00〜OUT11まで全部同じ値にして、base_alphaとM00を0にする(=ModelA側に寄せる)と発色がよくなる https://i.imgur.com/80TODwE.png
+Checkpoint Merger のMultiplierで指定してた値をMerge Block Weightedの IN00〜OUT11まで全部同じ値にして、base_alphaとM00を0にする(=ModelA側に寄せる)と発色がよくなる https://image01.seesaawiki.jp/n/h/nai_ch/sKC3J42w8k.png
 出てくる絵は微妙に変わるけど発色よくなってVAEが必要なくなっただけでも満足や
 
 ↓のX/Yは上から
 - Checkpoint Mergerでマージしたもの
 - Merge Blocvk Weighted で全部↑のMultiplierと同じ値を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
 - Merge Blocvk Weighted でbase_alphaとM00に0を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
-https://i.imgur.com/7chOcgA.jpg https://i.imgur.com/Q6p1jJI.jpg https://i.imgur.com/vJ7JddV.jpg https://i.imgur.com/ryzsTbO.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/kCegQRajSd.png https://image01.seesaawiki.jp/n/h/nai_ch/tj5p2qBXx1.png https://image01.seesaawiki.jp/n/h/nai_ch/YztOS6WGqO.png https://image02.seesaawiki.jp/n/h/nai_ch/GRI5n6g04S.png
 
 
 同級生のあの子が売りを....脳破壊展開作った
 毎回上げてて思ったんやがアナルは修正しなくてええんよな？
-https://imgur.com/yWY7azU.png
-https://imgur.com/sxjxp9h.png
-https://imgur.com/RuTW4zZ.png
-https://imgur.com/jSu4z3G.png
-https://imgur.com/YRq4mnu.png
-https://imgur.com/j0tWx17.png
+https://image02.seesaawiki.jp/n/h/nai_ch/vuPl6TnZt_.png
+https://image01.seesaawiki.jp/n/h/nai_ch/kn0c9KsWlM.png
+https://image01.seesaawiki.jp/n/h/nai_ch/JbnbFnSkGI.png
+https://image02.seesaawiki.jp/n/h/nai_ch/AjtxTKxmxN.png
+https://image01.seesaawiki.jp/n/h/nai_ch/_jVS5Z89h2.png
+https://image02.seesaawiki.jp/n/h/nai_ch/Y83Y6duDIM.png
 
 
 色々なｃｐｋｔ落として階層マージして一通り試したけど
@@ -274,16 +273,16 @@ https://drive.google.com/file/d/1fIav6vU9Q4dT0rh8rIGBrKmw1wer3kGq/view
 
 
 脇好きだから脇を強調しまくったら脇が赤く光り始めた
-https://i.imgur.com/L83asu5.jpg
-https://i.imgur.com/jIKIOSC.jpg
-https://i.imgur.com/0iQrtpm.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/EYpKwb0HEL.png
+https://image02.seesaawiki.jp/n/h/nai_ch/mQQVZzG5Sj.png
+https://image01.seesaawiki.jp/n/h/nai_ch/7Cb8gC2WaQ.png
 
 
 
 917 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1acf-ZR1D) sage 2022/12/23(金) 20:51:08.65 ID:LPM2GlCI0
 >>40なんやが、>>746みたいな比較的単純なマージでも絵柄再現できん...
 プロンプト書いてないだけで、プロンプト色々練った結果この絵柄になってるんか？
-https://i.imgur.com/fYH40iJ.png
+https://image01.seesaawiki.jp/n/h/nai_ch/mGZ4ZAwXj5.png
 
 
 
@@ -349,8 +348,8 @@ https://twitter.com/forasteran/status/1606300856768266240?s=20&t=uKokOXHdxopIYR9
 
 グラビア画像学習させたやつらしいけどエロでない代わりに奇形も少なくてよさげ
 手はやっぱり怪しいけど
-https://imgur.com/XAkzVre.png
-https://imgur.com/0Cwh3P5.png
+https://image01.seesaawiki.jp/n/h/nai_ch/6f8c8iI31k.png
+https://image02.seesaawiki.jp/n/h/nai_ch/5FddL8JlER.png
 https://imgur.com/undefined.png
 https://imgur.com/undefined.png
 https://twitter.com/5chan_nel (5ch newer account)
@@ -360,9 +359,9 @@ https://twitter.com/5chan_nel (5ch newer account)
 マージでリアルになりすぎたらDBを使えばいいんだよね
 同seedの生成画像
 層別マージモデル
-https://i.imgur.com/duwbtQI.png
+https://image02.seesaawiki.jp/n/h/nai_ch/I7AGvNwlnk.png
 層別マージモデルを元にしたDB
-https://i.imgur.com/azOz3Vy.png
+https://image02.seesaawiki.jp/n/h/nai_ch/w8NWp8YWqB.png
 
 
 huggingやらの海外コミュニティだとエロ強化や身体のリアル化に使われるのはf222とr34が主流でgapeとかあまり使われてないけどここではgapeとインスタが人気になったのどこで流れが分岐したんだろう
@@ -377,10 +376,10 @@ huggingやらの海外コミュニティだとエロ強化や身体のリアル�
 前貼り触手部ワイ
 数日ぶりに前貼りHN触ってたんやけど何故か今回触手がめっちゃ鮮やかにイキイキし始めた
 食わせたデータには触手が入ってるのもあるけどこんな鮮やかなのは無いんやけどな…
-https://i.imgur.com/IqcgDE6.png
-https://i.imgur.com/zyTaKDA.png
-https://i.imgur.com/nuvauUo.png
-https://i.imgur.com/sbgNWYf.png
+https://image02.seesaawiki.jp/n/h/nai_ch/ahrIs1rbEw.png
+https://image01.seesaawiki.jp/n/h/nai_ch/adQSDOU3Dc.png
+https://image01.seesaawiki.jp/n/h/nai_ch/M0iOZgOG9W.png
+https://image01.seesaawiki.jp/n/h/nai_ch/R5DwFul71r.png
 やった事と言えば枚数増やすのとトリミングとタグ操作諦めてTrain_GammaとTaggerに丸投げした程度なんよなぁ
 こうなるとシチュ強化にHN極めたくなってくるな
 172 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0314-s0Sd) sage 2022/12/24(土) 10:57:00.47 ID:GYW443lo0
@@ -397,7 +396,7 @@ https://i.imgur.com/sbgNWYf.png
 189 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4be8-6zRx) sage 2022/12/24(土) 12:15:12.97 ID:9PXWSEZ50
 マージする実写風モデル変えたらもっといい絵が出るんじゃね？
 と思ってやってみたがそんなに変わらないな
-https://i.imgur.com/cpvHOph.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/jlB859skXc.png
 >>239
 pfgはこれや
 https://civitai.com/models/1227/pfg
@@ -408,8 +407,8 @@ https://huggingface.co/AmethystVera/SimpMaker-3K1
 354 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4be8-6zRx) sage 2022/12/24(土) 22:30:11.06 ID:9PXWSEZ50
 >>189やけどbase_alphaを実写モデルのほうにしたらどうなるかも試したで
 こっちはモデルごとにけっこう変わるな
-https://i.imgur.com/5lWSIhB.jpg
-https://i.imgur.com/fuqjEMo.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/oN27zU_K6k.png
+https://image01.seesaawiki.jp/n/h/nai_ch/45_CpDeblY.png
 >>354
 やっぱPFGがええな
 anyそのままに背景がええ感じになりよる
@@ -420,11 +419,11 @@ PFG試してみたけど、これええな
 バニー部からの逆バニー部できたで、逆バニーの難易度えぐすぎてずっと調整してたわ
 プロンプトもりもりにしがちだけど、難しい衣装に関しては絞らんと出てこんな
 https://majinai.art/i/WH4WdGV.webp
-https://i.imgur.com/4nsWNYg.jpg
-https://i.imgur.com/BcXsFDh.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/bktQVTY_7E.png
+https://image02.seesaawiki.jp/n/h/nai_ch/sP5XA9FkoH.png
 https://majinai.art/i/2Bp5Ymh.webp
-https://i.imgur.com/SamN8KR.jpg
-https://i.imgur.com/zEOqYqT.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/rzxRRV2nqR.png
+https://image01.seesaawiki.jp/n/h/nai_ch/Sve36T5Xn7.png
 https://majinai.art/i/s7rd8CO.webp
 
 
@@ -436,7 +435,7 @@ https://i.imgur.com/ba6xasZ.png
 wikiの配合にClipを1にするとかなり体は3Dモデルに近づく
 顔を固定できるからエロいと感じれる人間には刺さると思う
 BLOODnightorangeにインスタ50000や
-https://i.imgur.com/DBKkHz6.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/k4QlYLMsJX.png
 >>245
 多分インスタのカメラ効果だと思ってる
 二次系は全然出ないから
@@ -496,10 +495,10 @@ OUT05〜11：0
 まー、ラーメンが絵っぽいけど
 なんか初心に帰った気分だ
 
-https://i.imgur.com/ar3ZGkT.png
-https://i.imgur.com/TyyMHti.png
-https://i.imgur.com/FQRH3y3.png
-https://i.imgur.com/jvsa1Jw.png
+https://image02.seesaawiki.jp/n/h/nai_ch/tb2WNzqpQj.png
+https://image01.seesaawiki.jp/n/h/nai_ch/BTdWJLXEhF.png
+https://image02.seesaawiki.jp/n/h/nai_ch/SzQzoPLDvU.png
+https://image01.seesaawiki.jp/n/h/nai_ch/VUlAcgUbvG.png
 
 
 449 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜﾝﾐﾝｸﾞｸ MMff-+Dix)  2022/12/25(日) 05:13:24.65 ID:Q67WvrYPM
@@ -536,9 +535,9 @@ Abyssはエンドコンテンツ感あってええ名前やね
 また大切に使わせてもらうで！
 >>398
 AbyssOrangeMixデフォルメ絵にも強くていいね
-https://i.imgur.com/aDrBv3E.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/LgPoklmfi5.png
 比較：同条件でのAnything
-https://i.imgur.com/oZ0DkxI.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/CtuS91yoH5.png
 >>398
 ザンガツ
 早速ダウンロードさせていただきます
@@ -579,25 +578,25 @@ BloodOrangeMix.ckptは「9bfc5d93718dd504cff07c54cf7316a6284a11e4d10eb596c223479
 >>398
 想像以上にやべえものが出てきたよ…
 
-https://i.imgur.com/pLoIbDz.jpg
-https://i.imgur.com/mnfcOIy.jpg
-https://i.imgur.com/nKQHRtF.jpg
-https://i.imgur.com/3S60QvM.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/4rrKNfC9U0.png
+https://image02.seesaawiki.jp/n/h/nai_ch/iaWB7yK5AJ.png
+https://image01.seesaawiki.jp/n/h/nai_ch/gCRt8nJuAg.png
+https://image01.seesaawiki.jp/n/h/nai_ch/ccA7WLThdu.png
 >>398
 謝謝
 讓我馬上使用
 >>398
 サンキューガッツ
-https://i.imgur.com/gqYQRbR.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/yUDc5uPj9D.png
 深淵を覗く時、深淵を覗いているのだ状態だもんな
 答えがないパズルや
 
 
 418 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7920-ahWI)  2022/12/25(日) 01:55:05.31 ID:tQE/SXjK0
 ワイがマージしたモデル
-https://i.imgur.com/RYvgLKw.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/guZabmeU29.png
 AbyssOrange
-https://i.imgur.com/Iq6N8he.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/h8LNW1sK8p.png
 
 質感もほぼ一緒やね
 このモデルに適したプロンプトをみんなで見つけていきたい
@@ -605,16 +604,16 @@ https://i.imgur.com/Iq6N8he.jpg
 
 Abyssでタグにchild入れだすと子供抱っこし始めるのはInstagramを食わせてる影響か
 これまでのモデルには無かった症例だ
-https://i.imgur.com/1GJVAzV.png
+https://image02.seesaawiki.jp/n/h/nai_ch/vNiKHD1IT_.png
 
 
 
 Abyssはインスタ混ざってるだけあってインスタにありそうな構図の方が破綻しにくいか
 Night以降のモデルだと指示してもいないのに勝手に乳首出したがったりするからBaseとの使い分けも必要そうだな
-https://i.imgur.com/JIAcJDL.png
-https://i.imgur.com/Vz63OPW.png
-https://i.imgur.com/OmRHv1c.png
-https://i.imgur.com/Q12zfgM.png
+https://image01.seesaawiki.jp/n/h/nai_ch/pNxB4zzTSG.png
+https://image01.seesaawiki.jp/n/h/nai_ch/8YghBnUUoz.png
+https://image01.seesaawiki.jp/n/h/nai_ch/Sv__P2WExX.png
+https://image02.seesaawiki.jp/n/h/nai_ch/71cikUWlTs.png
 
 
 
@@ -624,8 +623,8 @@ ttps://mega.nz/file/GVRTQJKI#Y5Bn826c_H6O4o9r9GT474Sa_AEhuqfX5Wvw5fGrDC0
 スパゲッティコードみたいになっとるから呼び出し方は適宜変えてくれ・・・普通に使うとおっさんとかは出ん
 あと塗りとかが気に食わん場合は付属のHN(呼び出しプロンプト無し)を薄っすらかけると補強できるかもしれんな
 拡大する場合は過学習しとる関係上ハイレゾはほぼ必須や
-https://i.imgur.com/OETKVK1.png
-https://i.imgur.com/OkujSyk.png
+https://image01.seesaawiki.jp/n/h/nai_ch/KrWliUSGwq.png
+https://image01.seesaawiki.jp/n/h/nai_ch/yymo8PB424.png
 ほな・・・
 
 
@@ -677,7 +676,7 @@ AbyssOrangeでもたまたま線の太い描画出たんやけど
 
 494 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜﾝﾐﾝｸﾞｸ MMff-+Dix)  2022/12/25(日) 09:43:09.32 ID:Q67WvrYPM
 なんか見抜きさせてくれるとのことでせっかくだから二刀流で挑むことにした
-https://i.imgur.com/5xIsc6D.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/0O2Jm_xktw.png
 
 >>490
 有るとも無いとも言える
@@ -695,15 +694,15 @@ NAIでほんの少し学習させて持ち込んだほうがいい結果出た�
 
 
 サンタさんのabyssのお陰でワイの好きな画風と塗りが出来たわ
-https://i.imgur.com/JiJm0zK.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/B00VcHLS10.png
 
 
 516 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 5be8-dxp0) sage 2022/12/25(日) 10:24:27.69 ID:DyivLEt/0
 マージモデルにはカッコいい名前付けなあかんのか
 ならワイのAnyNaiにdanbooruタグの効くインスタ2とDreamlikeを階層マージしたモデルは”El†Diablo〜漆黒の悪魔〜"って名乗るわ
-https://i.imgur.com/NptulYJ.png
-https://i.imgur.com/X9Lyn2h.png
-https://i.imgur.com/mPJLXyG.png
+https://image02.seesaawiki.jp/n/h/nai_ch/iZXDrfwysV.png
+https://image02.seesaawiki.jp/n/h/nai_ch/Kz5DEh8dPN.png
+https://image02.seesaawiki.jp/n/h/nai_ch/YaAwCfY3w6.png
 >>520
 ほぼネタみたいなもんなんやけど
 any-instaよりイラストに近いからこっち使うとるけど性能は劣るで多分
@@ -745,7 +744,7 @@ https://majinai.art/i/awDXFFD.png
 HN上手くいかんから結局DBで作り直したで！
 
 ガチャは必要やけどだいぶ打率上がっとる
-https://i.imgur.com/uIWIhE6.jpeg
+https://image01.seesaawiki.jp/n/h/nai_ch/FGgnzQg7xV.png
 588 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa71-gme7)  2022/12/25(日) 14:31:24.66 ID:okrCGVAda
 https://majinai.art/i/46udM5K.png
 >>581のモデルをクリスマスプレゼントに公開するで
@@ -781,10 +780,10 @@ huggingで公開されたモデルが探しやすくなる
 ハイレゾガイジ久しぶりに満足したわ
 abyssモデルは神やな、ええプレゼントやったで
 
-https://i.imgur.com/CgqAY2Q.png
-https://i.imgur.com/e4wDzw5.png
-https://i.imgur.com/tx6UwXf.png
-https://i.imgur.com/qRH785I.png
+https://image01.seesaawiki.jp/n/h/nai_ch/uUgyjJJb_L.png
+https://image02.seesaawiki.jp/n/h/nai_ch/pm5oruAkUS.png
+https://image01.seesaawiki.jp/n/h/nai_ch/r7TdrPSZRu.png
+https://image01.seesaawiki.jp/n/h/nai_ch/z9w64uLity.png
 アビスミックスすげーわ
 自分がマージしたのが以下に下手だったのが認識したわw
 自由度高いし綺麗な絵が出やすいし
@@ -804,25 +803,25 @@ anyもnaiもvaeは同じだからどっちでもいいんやで
 619 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cd12-Auze) sage 2022/12/25(日) 15:57:48.29 ID:rF55Pdju0
 クソデブ生成してるとイライラしてくるのは何故なのか
 
-https://i.imgur.com/qc49LmG.png
-https://i.imgur.com/4mMDHYu.png
-https://i.imgur.com/ygD6C34.png
-https://i.imgur.com/XeBnxmz.png
+https://image02.seesaawiki.jp/n/h/nai_ch/GR2Cx585e_.png
+https://image02.seesaawiki.jp/n/h/nai_ch/8AM1Ap5Ce2.png
+https://image01.seesaawiki.jp/n/h/nai_ch/0iO8x84peR.png
+https://image02.seesaawiki.jp/n/h/nai_ch/wT2lhBsxjO.png
 ﾑｯﾁｨｨｨｨﾝ　ﾑｩｯﾁ　ﾑﾁｨ　ﾑｩﾝって擬音が見える
 
 
 解像度高めで生成した時にデスピサロになるのって何が原因なんやろ　何かの設定変えたら改善された記憶があるんやけど
-https://i.imgur.com/BNckdJO.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/R7k9Ukc5lI.png
 >>624
 ファーストパス？だっけ？サイズ指定しないで　hires.fix
 最初は強さ０．７のままで試すといいで
 
 リアル系と陰毛の相性が良すぎる
 好き嫌い結構分かれそうだけど
-https://i.imgur.com/EYcdGnb.jpg
-https://i.imgur.com/4xWeqxP.jpg
-https://i.imgur.com/ED9BhKs.jpg
-https://i.imgur.com/4tTIJJJ.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/g8tEw6Y8xM.png
+https://image01.seesaawiki.jp/n/h/nai_ch/RC3T64xt6l.png
+https://image01.seesaawiki.jp/n/h/nai_ch/qcqDsMDtiD.png
+https://image02.seesaawiki.jp/n/h/nai_ch/65mAApNihz.png
 
 https://majinai.art/i/s2pUB8R.png
 &#128151;流凜乃(Rurino)&#128151;JS5&#128157;親管理&#127872;
@@ -847,7 +846,7 @@ DMは事務所管理です
 664 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a129-6zRx) sage 2022/12/25(日) 17:50:28.19 ID:93dnRRO00
 OUT11と10が塗りなんだからそこだけ最後にマージ足せばええんやないの
 体はぶっ壊れてるけど指はこういうことやろ
-https://i.imgur.com/OpiPZEU.png
+https://image01.seesaawiki.jp/n/h/nai_ch/8MZnbClSaf.png
 >>665
 塗りはEimisAnimeV1とgape60のマージや
 
@@ -855,7 +854,7 @@ https://i.imgur.com/OpiPZEU.png
 
 今Abyssに降りて色々検証してるがえぐいわ…、今までもやばかったが更にちんこ爆発しそう
 とりあえず偶然出てきた芸術的な美尻見て欲しい
-https://i.imgur.com/08FU2yl.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/jGlgXYMh80.png
 VAEAnyで出してるがやっぱリアル寄りになると彩度落ちるな
 自分でリアルの方もう少し抑えたマージしてみるべきか
 
@@ -893,13 +892,13 @@ https://37.gigafile.nu/0101-od65315d21e614c4542fa0065c63ee308
 ふともも錬金術師の使ってみた報告サンガツやで
 AbyssOrange用のVAE試してみたけどWDのkl-f8-anime2かSD公式のvae-ft-mse-840000-ema-prunedがAnything-V3.0より発色良い感じやな
 
-https://i.imgur.com/zEABZ2G.jpeg
+https://image02.seesaawiki.jp/n/h/nai_ch/PQ1AVKaNrx.png
 
 ニキ達サンガツやで！とりあえず色々検証したがネガとvaeの両面で発色良くなったわ、後は調整してみる
 Anythingv3.vae
-https://i.imgur.com/l7rhSyo.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/i7cIXKu_g0.png
 kl-f8-anime2.vae
-https://i.imgur.com/DwWx1aP.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/eipmrQXw2P.png
 kl-f8-anime2が満足いかなければAnyvaeでネガ強めにする感じかね、ともかくほんまサンキューや！
 
 ついにTwitterでマージモデル情報売ろうとするガイジ出てきたか
@@ -959,22 +958,22 @@ i2iでもlatent upscaleするとおかしくなる
 >>757
 
 majinaiに書いてある条件で3枚目のやつ実行してみたが少し違う
-https://i.imgur.com/xrCb0MK.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/KGVGwou7MW.png
 
 白くぼやっとした感じがScale足りない感じしたから
 Scaleを15くらいにしてみた
-https://i.imgur.com/ohSDH3m.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/E5LSgn5vDI.png
 
 モザイクみたいなノイズが乗ったから
 latent upscaleのチェック外したら綺麗になった
-https://i.imgur.com/G1w9Ldd.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/KZ88niKU8F.png
 
 >>749
 ファンタジーでもハイファンタジー路線ちゅうかなんつうか等身高めな絵だとインスタ層別マージモデルめっちゃ映えるで
 衣装の書き込みが明確に良くなる。これは(BloodOrange*0.5+ElyOrange0.5)*0.5 + Abyss7th*0.5と昔スレニキに教えてもらったMMORPGプロンプト
 https://majinai.art/i/NyZ6_-t.png
-https://i.imgur.com/odrg1yY.png
-https://i.imgur.com/fJG4NDT.png
+https://image02.seesaawiki.jp/n/h/nai_ch/HeXwhQxM4o.png
+https://image01.seesaawiki.jp/n/h/nai_ch/UR4PV1OFlR.png
 
 
 abyssの動作確認ついでに同じプロンプトでF222、インスタ、加算マージも見て見たけど
@@ -987,7 +986,7 @@ Abyss系比較してみたわ
 グリッドの作成にはfake XY plotのエクステンション使った、有志ニキサンガツ
 ABはワイが普段使ってるやつで、インスタの比率をちょいいじっただけ
 大分リアル系に近いモデルなのね
-https://i.imgur.com/cOLYMh1.jpeg
+https://image02.seesaawiki.jp/n/h/nai_ch/iPGQcte5ck.png
 
 
 792 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8f7b-gB2L) sage 2022/12/26(月) 00:54:21.04 ID:BkcZMZbt0
@@ -1004,26 +1003,26 @@ AbyssOrangeってもしかして複数人の絡みがほとんどでなくない
 
 理想の魅音目指してたらもうこんな時間なんだが
 罪な女すぎる
-https://imgur.com/AqKjm0U.png
-https://imgur.com/mkrUV27.png
-https://imgur.com/FSFwr5U.png
-https://imgur.com/2WEW1uW.png
-https://imgur.com/tIWWRg4.png
-https://imgur.com/OY1dKAz.png
+https://image01.seesaawiki.jp/n/h/nai_ch/HmiGncJrvC.png
+https://image01.seesaawiki.jp/n/h/nai_ch/KoenC32iyd.png
+https://image02.seesaawiki.jp/n/h/nai_ch/M_hK1ZsWm1.png
+https://image02.seesaawiki.jp/n/h/nai_ch/BxLd8fY81l.png
+https://image02.seesaawiki.jp/n/h/nai_ch/eHNOJkvcXc.png
+https://image02.seesaawiki.jp/n/h/nai_ch/9QCC3gtISz.png
 
 AbyssOrangeと自作前貼りHN入れたら他のモデルより前貼り生成率圧倒的に高くて草生えますよこれがアビスの恩恵かぁ
 HNによる絵柄のコテコテ感もAbyssで中和されて他よりマシになったわ
-https://imgur.com/RlAfNbN.jpg
-https://imgur.com/EsFUIub.jpg
-https://imgur.com/qOdK8Kd.jpg
-https://imgur.com/7QDQulE.jpg
-https://imgur.com/A4RU3z6.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/IzqAYOcWC1.png
+https://image01.seesaawiki.jp/n/h/nai_ch/TUFXbCuXFP.png
+https://image02.seesaawiki.jp/n/h/nai_ch/XoSQ5kKB6C.png
+https://image01.seesaawiki.jp/n/h/nai_ch/jE4glxMO7s.png
+https://image01.seesaawiki.jp/n/h/nai_ch/W3j5rXJYql.png
 ただみんな言ってた色が暗くなる問題はやっぱあるんやね…特に触手が黒すぎる
 同じプロンプト同じHNでも他モデルだと起きないからモデルの問題やろかねぇ
 
 既に解決法はあったんやねありがたい
 kl-f8-anime2.vae.ptにしたら色合いはまだまだ黒いけどマシにはなったわ
-https://i.imgur.com/2rxQPD3.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/p8hkAGlHuQ.png
 
 abyss系弄ってると汗とか水滴が白濁したスライムみたいな描写になりがちやったから素晴らしい透明感ある液体描写をワイは評価するで
 
@@ -1043,17 +1042,17 @@ Gape60塗りを採用した深界7層モデルや
 漫画を描ける可能性が高まる
 ものすごくいい知見だった
 
-https://i.imgur.com/oPLlk9k.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/087YaIuTPU.png
 >>905
 いや間違えて上書きしたせいや
 5:5の通常マージやで
 >>907
 たしかにアウトライン効いてて漫画っぽい感じになってええな
 SQニキには頭上がらんわ
-https://i.imgur.com/zkwdrgS.png
-https://i.imgur.com/uRV2wex.png
-https://i.imgur.com/sJjpozc.png
-https://i.imgur.com/teM0ADn.png
+https://image01.seesaawiki.jp/n/h/nai_ch/cHOHX2ZKTE.png
+https://image02.seesaawiki.jp/n/h/nai_ch/y77goyZd8_.png
+https://image02.seesaawiki.jp/n/h/nai_ch/H4JfnD9Q4V.png
+https://image02.seesaawiki.jp/n/h/nai_ch/9355nbQQRi.png
 >>963
 これやけど再現性全くないで
 https://majinai.art/i/3bCtWm5.webp
@@ -1089,20 +1088,20 @@ https://space.bilibili.com/13450091
 朝から性癖のお披露目していいと聞いて常識改変催眠部やで
 色々出してみたが、結局ワイはAnyNAIのエロゲ塗りみたいののほうが興奮するんやなって再確認したわ
 Abyssだといいリアルさなんやがもうちょいテカテカしてた方がエロ映えするし、表情が硬くなる気がしてな
-https://i.imgur.com/DwWx1aP.jpg
-https://i.imgur.com/l7rhSyo.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/eipmrQXw2P.png
+https://image01.seesaawiki.jp/n/h/nai_ch/i7cIXKu_g0.png
 ただギャルとかメスガキ、地雷系とかリアルっぽい感じだと相性いいから、たまに使ってみる
 マージモデル提供してくれるニキ達にはほんと感謝やで
-https://i.imgur.com/KD1Vnc6.jpg
-https://i.imgur.com/02b9LUp.jpg
-https://i.imgur.com/fyzUnY9.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/B4GNASs53f.png
+https://image02.seesaawiki.jp/n/h/nai_ch/JqXHj4mB8z.png
+https://image02.seesaawiki.jp/n/h/nai_ch/DEaAewGQ3P.png
 
 >>925
 上二つ間違ったわ…
 AnyNAI
-https://i.imgur.com/po5q9Pa.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/d6g7jC_Vln.png
 Abyss_7th_layer
-https://i.imgur.com/hSOc9w9.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/AYX4kuyZg7.png
 
 
 なんで挿入してくれへんのや
@@ -1111,9 +1110,9 @@ https://i.imgur.com/hSOc9w9.jpg
 挿入単語絞れば結構いけると思うんだがな、ちなAnyNAI
 サキュバスにしてうまくいくかわからんが正常位のプロンプトは置いとくで
 https://majinai.art/i/th72ehH.webp
-https://i.imgur.com/TO6VP30.png
-https://i.imgur.com/2sgNNOo.jpg
-https://i.imgur.com/zhP7R4R.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/On26AoKmBV.png
+https://image01.seesaawiki.jp/n/h/nai_ch/PE4iceYJYq.png
+https://image02.seesaawiki.jp/n/h/nai_ch/gfVcZnv7Bu.png
 
 intercourceとpenisを詰めば余裕で挿入すると思うけどどうなんすかね
 後男はmaleよりもboyで出してboy is XXXで特徴を付けたほうが出やすいと体感では思う
@@ -1137,11 +1136,11 @@ f222の派生コミュから新しいモデル3DKX_1.0bがでた
 https://huggingface.co/HavoAloe/3DKX_1.0b
 
 のでwikiのanygapeマージと階層マージしてみた
-https://i.imgur.com/0YBo8wI.jpg
-https://i.imgur.com/6KYLc08.jpg
+https://image02.seesaawiki.jp/n/h/nai_ch/is1jwRXoSh.png
+https://image02.seesaawiki.jp/n/h/nai_ch/Ck8S3EVvE_.png
 >>972
-https://i.imgur.com/C9TssYe.png
-https://i.imgur.com/jVqAvBc.png
+https://image01.seesaawiki.jp/n/h/nai_ch/dXfeZua2fH.png
+https://image02.seesaawiki.jp/n/h/nai_ch/_SHVqdcO8o.png
 
 H&A 3DKX Modelでとりあえず安定力に定評のある初音ミクさんを表示してみたら
 こんなんばっかりで笑う
@@ -1153,14 +1152,14 @@ H&A 3DKX Modelでとりあえず安定力に定評のある初音ミクさんを
 970 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7920-s0Sd)  2022/12/26(月) 14:03:10.36 ID:jvy82phD0
 Abyss 7th layerとetr odysseyのWeighted sumの比率比較してみた
 
-https://i.imgur.com/TuaLVLk.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/R4vlnpMZyJ.png
 
 どちらも優秀なモデルだからどの絵柄もいいね
 ※世界樹モデル
 >>970
 階層マージも検証してみた
 
-https://i.imgur.com/ZzRf8bi.jpg
+https://image01.seesaawiki.jp/n/h/nai_ch/CjKF5bGJhv.png
 
 どのモデルを採用するか悩ましい・・・
 

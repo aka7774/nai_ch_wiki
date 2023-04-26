@@ -602,3 +602,21 @@ DorayakiMixっていうかわいらしいキャラデのモデルと混ぜたら
 https://i.imgur.com/uf077C2.jpg　https://i.imgur.com/4LV3fra.jpg　https://i.imgur.com/6YqVeby.jpg
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/b9URp7A2xj-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/b9URp7A2xj.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZjJO2iVYgB-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/ZjJO2iVYgB.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/clNZTTvULb-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/clNZTTvULb.jpg]]
+
+https://70.gigafile.nu/0503-e1c38015ce4c03032d44892232f0d757f
+=|BOX|
+231 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｵｯﾍﾟｹ Srbd-nqj1)[] 投稿日：2023/04/26(水) 21:26:23.70 ID:eVqlsYl6r
+https://img86.pixhost.to/images/22/349219457_01.png
+
+前スレの妖精ニキおるかー？
+
+マジで頼む教えてもらったレシピ通りやっても微妙なんしか出ないんや
+civitaiがgigaにアップしてクレメンス
+
+251 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c57b-ASru)[sage] 投稿日：2023/04/26(水) 22:23:27.39 ID:5+2iE9hl0
+>>231
+https://70.gigafile.nu/0503-e1c38015ce4c03032d44892232f0d757f
+あげたで
+animeScreenshotlikeMix_fp16.safetensors と Nostalyakimix_v10.safetensors をシンプルにM0.5で混ぜたヤツなんやけどな
+その画像のプロンプトの注意点は、全身像やから強めのhiresかけた方がええ事と、ちょっときわどいeditting使っとるからサンプル数は大きく弄らん方がええくらいやろか……
+||=
