@@ -180,6 +180,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|background only, {{in street}}, {{fictitious city in Tokushima prefecture-Japan}}, {{{{midnight}}}}, {{hydrogen gas blue flame lampposts}}, {{tram rails}}, {{tram rail  turnouts}}, {{future tram dieselcar}},|徳島県にある架空の都市|なんで徳島県なのかはお察し。&color(#bfbfbf,){ヒントはトラムにパンタグラフがない。__((一応補足すると路面気動車は過去に存在し札幌市交通局が導入した事がある他、同じ四国の伊予鉄軌道線で運転されている「坊っちゃん列車」もそれである。))__}|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Oa9c3zfSWc-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Oa9c3zfSWc.png]]|
 |sapporo|札幌||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hJRdBr8zUi-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/hJRdBr8zUi.png]]|
 |ariake|有明|これにcityを付けた場合、東京都江東区の有明（レインボーブリッジやビッグサイトみたいなものが併設される）。countrysideを付けた場合、長野県安曇野市の有明（北アルプスと田園が合わさった安曇野の景色みたいなもの）。seaを付けた場合、長崎県の有明海が出る。強さは長野県有明＞東京有明＞有明海。東京有明にはたまに北アルプスが附属してくる。有明海には北アルプスに加え、たまにレインボーブリッジが附属してくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_boKkaUv85-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_boKkaUv85.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RDkRprZ9uc-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/RDkRprZ9uc.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yXD9Z36H2F-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yXD9Z36H2F.png]]|
 |enoshima|江の島|一般的な島の風景か、島から見た都市部みたいな風景が出る。なお、人物とともに生成する際、画風が青春ブタ野郎にほぼ固定される。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N6qwANCQtS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/N6qwANCQtS.png]]|

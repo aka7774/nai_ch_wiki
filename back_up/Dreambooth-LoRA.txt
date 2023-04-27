@@ -221,7 +221,7 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
 : [[lora training tagging faq>https://rentry.org/lora-tag-faq]] | 英語サイトだがブラウザの翻訳で読もう
 : [[キャラクター学習のタグ付け一例>https://rentry.org/dsvqnd]] | 実例を挙げての解説
 一言で言えば「呼び出しキーワード」＋「学習から外したいもの」をタグに書く
-: [[LoRAキャプション編集の話>https://rentry.co/burumalorav2]] | 住人作ブルマ体操服LoRAのタグ付けを解説
+: [[LoRAキャプション編集の話>https://rentry.co/burumalorav2]] | 住民作ブルマ体操服LoRAのタグ付けを解説
 * 学習用画像の加工
 - 本文で説明している kohya 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)
 - あまりにも小さい画像(200pxとか)はUpscaylなどで拡大しておくか bucket_no_upscale をオンにする
