@@ -22,6 +22,12 @@
 
 #contents
 
+* 2023-04-30 フラットカラーLoRAをネガに適用すると書き込みが増える
+なんJNVA部194の911がカラーをフラット化するLoRAを公開、
+さらにこのLoRAを「マイナスで通常のプロンプトに適用すると精細な絵になる」ことを発表。
+ 例) <lora:flat:-1>
+ほかの画風LoRAもマイナス値を入れると様々な効果を得られるかもとスレ民が調査中。
+注：上記LoRA文をネガティブプロンプトに入れても動きません
 * 2023-04-21 Google Colab の無料プランでAutomatic1111の利用が禁止になる
 利用規約の改定により、無料プランでのremote UI のノートブックの使用が禁止された
 (注：2023/04/21 09:00現在、英語ページのみで日本語faqは旧表記のまま)
@@ -46,10 +52,13 @@ https://help.imgur.com/hc/en-us/articles/14415587638029-Imgur-Terms-of-Service-U
 過去スレとwikiのimgur画像はバックアップしといたけど、
 wikiのリンク切れを直すんならseesaawikiに全部再アップしなおす必要があって大変。
 
-4/26 追記
+2023/04/26 追記
 "リアル系モデル比較・雑感"以外のページのimgur画像はwikiに再アップした．
 imgurの画像リンク→wikiの画像リンクの対応表( data/new_link.json )と，作業に使ったスクリプトを一応知見として共有する．
-[スクリプトおよび対応表>https://image01.seesaawiki.jp/n/h/nai_ch/NrjDjRzPR3.zip]
+[[スクリプトおよび対応表>https://image01.seesaawiki.jp/n/h/nai_ch/NrjDjRzPR3.zip]]
+2023/05/01 追記
+wikiに画像として表示されているimgur画像はすでに削除されたリンクを除いてすべて置き換えた．最終的な新旧リンクの対応表を共有する．
+[[最終的な対応表>https://image02.seesaawiki.jp/n/h/nai_ch/MUScDjoi8h.zip]]
 * 2023-04-17 basilmixの商用利用が禁止される
 basilmixの配布者である[[ぬいぐるみ氏>https://twitter.com/nuigurumi1_KR]]によって以下のようなツイートが投稿された。
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/VnA98wVSM_.png, 30%)
@@ -934,6 +943,9 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
 
 
 
