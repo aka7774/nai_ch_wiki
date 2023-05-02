@@ -23,7 +23,7 @@
 #contents
 
 * 2023-04-30 フラットカラーLoRAをネガに適用すると書き込みが増える
-なんJNVA部194の911がカラーをフラット化するLoRAを公開、
+なんJNVA部194の911が[[カラーをフラット化するLoRAを公開>https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test2]]、
 さらにこのLoRAを「マイナスで通常のプロンプトに適用すると精細な絵になる」ことを発表。
  例) <lora:flat:-1>
 ほかの画風LoRAもマイナス値を入れると様々な効果を得られるかもとスレ民が調査中。
