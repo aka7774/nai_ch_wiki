@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 版権画風の再現
 
 {| class="sort edit nanj_prompt_table"
@@ -84,3 +85,91 @@
 |k-on|けいおん！||https://image01.seesaawiki.jp/n/h/nai_ch/mF3fbsUdgp.png|
 |yurucamp|ゆるキャン△|服装と絵柄がゆるキャン△っぽくなるプロンプト追加でどこまで追従するかは不明|https://image02.seesaawiki.jp/n/h/nai_ch/0av9diFZsI.png|
 |}
+=======
+版権画風の再現
+
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|作品名|備考|サンプル|
+|tamako market,1girl|たまこまーけっと||https://image01.seesaawiki.jp/n/h/nai_ch/lhxqcCvl4V.png|
+|{{style of tiger & bunny}},1girl|TIGER ＆ BUNNY||https://image01.seesaawiki.jp/n/h/nai_ch/D0uwHgu_eZ.png|
+|nisekoi,1girl,|ニセコイ|桐崎千棘の影響が強め、金髪になる傾向あり。|https://image01.seesaawiki.jp/n/h/nai_ch/qMou_b5ulb.png|
+|hibike! euphonium,1girl|響け! ユーフォニアム||https://image01.seesaawiki.jp/n/h/nai_ch/Y2pTfi_Pyy.png|
+|{gundam build fighters},1girl|ガンダムビルドファイターズ|gundam seed,gundam 00,を残すと影響が残るのでネガティブ入れた方がいいかも。|https://image01.seesaawiki.jp/n/h/nai_ch/bvskI_0Op_.png|
+|{style of Fairy Tail},official art,1girl,|FAIRY TAIL|fairyをネガティブへ。似るときはアニメ寄りになり易い。まれに漫画？っぽいキャラが生成される|https://image01.seesaawiki.jp/n/h/nai_ch/pzlkSJn89m.png|
+|style of panty & stocking with garterbelt,1girl|パンティ&ストッキングwithガーターベルト|原作同様カートゥーン味のある絵が出力される。panty,stocking,garterbeltが含まれている為下着になる時がある。ネガティブに入れた方がいい。お好みで"Add Quality Tags"スイッチを入れるといい感じになる。|https://image02.seesaawiki.jp/n/h/nai_ch/r7FqqscBv8.png|
+|{musaigen no phantom world},1girl,|無彩限のファントム・ワールド|サンプルの様な画像風の絵柄が出やすい。他プロンプトに負ける場合が多いためその都度強調が必要。|https://image01.seesaawiki.jp/n/h/nai_ch/_cz9CbyjMs.png|
+|helltaker,1girl,|HELLTAKER|目が赤くなるか版権風絵になる、1girlがないと悪魔の絵が生成され易い。helltaker要素が弱いのか、二段階強調しhatsune mikuを一段階弱くしたうえで20回程回してサンプルが出せるのが精いっぱいで、Helltaker風の顔を出すなら他のキャラプロンプトは入れないほうがよさそう。（[[入れていない場合の一例>https://majinai.art/ja/i/-e_C9pi]]）|https://image02.seesaawiki.jp/n/h/nai_ch/bMZL8s7blU.png|
+|kimetsu no yaiba,1girl,|鬼滅の刃|kimetsu no yaiba単体だと伊之助風の男性がでやすい。サンプルはdemon slayer uniformを追加したもの。|https://image01.seesaawiki.jp/n/h/nai_ch/7glLvJXl9B.png|
+|kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~,1girl|かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜|初音ミクプロンプトを含めても出力されない。サンプルは初音ミクを1段階強調したもの。基本的に四宮かぐや、藤原千花、早坂愛っぽい、または要素のある人が生成される。|https://image02.seesaawiki.jp/n/h/nai_ch/YlQa6rCh1L.png|
+|style of shirobako,1girl,,official art,|SHIROBAKO|白目部分だけ似る、必ず絵柄が似るわけではないが何かが引っかかっているっぽいです。邪魔なら消してださい。|https://image01.seesaawiki.jp/n/h/nai_ch/9Hbt604Acv.png|
+|ryuuou no oshigoto!,official art,|りゅうおうのおしごと！|漫画版の絵柄が多く出る。|https://image01.seesaawiki.jp/n/h/nai_ch/DDZKp4zXWJ.png|
+|style of macross frontier,official art,1girl,|マクロスフロンティア|macrossをネガティブに入れても荒い画質のものが生成されることがある。|https://image01.seesaawiki.jp/n/h/nai_ch/fK43PJKUkB.png|
+|style of azumanga daioh,official art,pupils,1girl,|あずまんが大王|成功率若干低め、漫画っぽい(?)絵柄になる|https://image01.seesaawiki.jp/n/h/nai_ch/vrBvSbL7hU.png|
+|{fire emblem: three houses},1girl,hatsune miku,|ファイアーエムブレム 風花雪月|目元と服が変わるだけのことが多く、成功率が低い。|https://image02.seesaawiki.jp/n/h/nai_ch/ypT84J8Rk_.png|
+|one piece,|ワンピース|1girlがないほうがいい。成功率若干低め。|https://image02.seesaawiki.jp/n/h/nai_ch/SqBqgIGzaI.png|
+|tengen toppa gurren lagann|天元突破グレンラガン|1girlがあったほうがいいかも？|https://image01.seesaawiki.jp/n/h/nai_ch/5ADIun0tfN.png|
+|{bleach},official art,1girl,|ブリーチ|official art、1girlがないと光のほうのブリーチが優先されがちになる。成功率が低め。|https://image02.seesaawiki.jp/n/h/nai_ch/f6IqrghIYh.png|
+|sword art online,official art,|ソードアート・オンライン||https://image02.seesaawiki.jp/n/h/nai_ch/kXv6SUMiiU.png|
+|idolmaster cinderella girls,official art,,|アイドルマスターシンデレラガールズ|キャラ要素（初音ミク）が消えがちになるが、official artがほぼ必須。|https://image02.seesaawiki.jp/n/h/nai_ch/sqd3_qQTju.png|
+|idolmaster million live!,{highres official art,},|アイドルマスター（アイドルマスター ミリオンライブ!）|official art,を付けると絵柄がそれっぽくなるが髪の毛がほぼ溶ける為perfect hair等で補助する必要あり。　[[idolmaster shiny colorsを1〜2段強調したほうが髪が溶けにくいアイマス絵が出来るが背景が星関連になる。 >https://majinai.art/ja/i/ud6U-qG]]|https://image01.seesaawiki.jp/n/h/nai_ch/SvRBpLjMNK.png|
+|neon genesis evangelion,1girl,|新世紀エヴァンゲリオン|成功率やや低め、プロンプト単体だとneonが強くなり人が生成されない。|https://image02.seesaawiki.jp/n/h/nai_ch/WuSacT_zzg.png|
+|digimon|デジタルモンスター(デジモン)|絵柄が変わったから掲載した程度です。精査願います。|https://image01.seesaawiki.jp/n/h/nai_ch/c6HxNKb3XH.png|
+|bishoujo senshi sailor moon|美少女戦士セーラームーン|衣装は大体セーラー戦士のものになる。"sailormoonchallenge"の影響か上半身だけが出やすく、[[プロンプトのみでsquareにするとまんまの画像が生成されることもある。>https://majinai.art/ja/i/gxGAI1p]]|https://image02.seesaawiki.jp/n/h/nai_ch/xICzi_9um4.png|
+|yuyushiki|ゆゆ式|アニメ画風が一番出やすい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/isMMU3lwH6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/isMMU3lwH6.png]]|
+|kemono friends|けものフレンズ|強調は行っても１段階くらいに抑えること。画風が安定しないがそれっぽい顔が出てくる。当然ながら、animal earはUCに入れない限り確定でついてくる。cowboy shot等の構図に関わるタグはほぼ必須、場合によっては強調した方がいい。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6EjQMxCeWP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/6EjQMxCeWP.png]]|
+|{{urara meirochou}}|うらら迷路帖|強調推奨。アニメ風も原作風もでる。頭にデカリボンがほぼ確定で生成される。ロリ化、黒髪化も高確率で起こる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_MjTebyo2K-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_MjTebyo2K.png]]|
+|gabriel dropout|ガヴリールドロップアウト|強調しないと作風はバラバラになるが、強調するとミクですら要素が消滅する。1〜2段階くらいがおすすめ。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vn9ce9eEm7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Vn9ce9eEm7.png]]|
+|{{{youjo senki}}}|幼女戦記|強調推奨。原作小説風が一番出やすい。ほぼ確定で服が軍服になる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tF434nvXq5-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tF434nvXq5.png]]|
+|kobayashi-san chi no maidragon|小林さんちのメイドラゴン|一番出るのはアニメ風だが、原作風もまた別の作風も出てくる。ミクでも時々要素が消滅する。ドラゴンの角はほぼ確定、帽子も高確率でついてくる。cowboy shot等の構図に関わるタグとの併用を推奨。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FEZKj2dDa6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FEZKj2dDa6.png]]|
+|eromanga sensei|エロマンガ先生|強調しすぎると（4段階以上）ミクですら要素が消えるため注意。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Hywaaqlcb4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Hywaaqlcb4.png]]|
+|1girl, {{{{machikado mazoku}}}},|まちカドまぞく|Add Quality Tagsは非推奨。左のプロンプトでサンプル画像の画風になるのは1〜2割程度。高確率でまちカドまぞくではない別の作品が混ざってくる（作品名不明）。また、巨乳、茶髪、ピンク髪、八重歯、ドヤ顔の要素が反映されて出てくることも多々ある。こちらもhatsune mikuまで入れるとあまり反映されない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/azlDkdoyj2-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/azlDkdoyj2.png]]|
+|{{{yama no susume}}}|ヤマノススメ|原作風。強調したほうが出やすい。デフォルメ絵や背景のみの絵が生成されることが多々あるので、cowboy shot等の構図に関わるプロンプトの併用がおすすめ。まれにゆるキャン△とごっちゃになる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gk4ui2ZKVj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gk4ui2ZKVj.png]]|
+|hitoribocchi no marumaru seikatsu|ひとりぼっちの○○生活|hatsune miku指定でも時々ミク要素が消えるレベルで強い。強調すれば、bocchiだけでも出てくるし、全く違う別作品であるbocchi the rock!指定でも出てくる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Vti84_DNWz.png]]|
+|{{{flower knight girl}}}|フラワーナイトガール(花騎士)|強調とUCに{{{flower}}}指定はほぼ必須。全体的にロリ化＋髪の白色化が起こる。サンプル画像はmiku指定で、こちらもhatsune mikuまで入れるとほぼ混ざらなくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DAnakeXF6a-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/DAnakeXF6a.png]]|
+|{{{puzzle & dragons}}}, official art,|パズル&ドラゴンズ(パズドラ)|強調＋official artを指定しないと出にくい。全体的に衣装や髪が盛られる。たまに、たまドラっぽい何かが付いてきたり、ドラゴンになったりする。puzzle piece, jigsaw puzzle, をネガティブに入れないとジグソーパズルをしている構図が生成されがち。なお、サンプル画像はmiku指定で生成したものだが、hastune miku指定にするとあまり服装と髪に干渉しなくなった。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5DUFrAV3zR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5DUFrAV3zR.png]]|
+|granblue fantasy, hatsunemiku, official art,|グランブルーファンタジー|official artを入れると安定しやすい　Add Quality Tagsのチェック外したほうがいいかもしれない|https://image02.seesaawiki.jp/n/h/nai_ch/sfuQWyVlPG.png|
+|ikkitousen,1girl,hatsune miku,official art,|一騎当千|official artを入れると安定しやすい。ハイスクールDxDと似たような絵柄がでやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/gGT915XrGX.png|
+|pripara,big eyes,hatsune miku,1girl,|プリパラ|official artを入れると安定しやすい。絵柄が似ない場合は衣装がそれっぽくなる|https://image01.seesaawiki.jp/n/h/nai_ch/wfIvLgdIKZ.png|
+|aikatsu!,hatsune miku,|アイカツ！||https://image02.seesaawiki.jp/n/h/nai_ch/MI8PZQi75E.png|
+|Takano Yuki|鷹乃ゆき||https://image02.seesaawiki.jp/n/h/nai_ch/SyKYqvqoQs.png|
+|infinite stratos, official art,|インフィニット・ストラトス||https://image02.seesaawiki.jp/n/h/nai_ch/SX5OpzrYZv.png|
+|{{{drawn by アーティスト名}}} または {{{style of 作品名}}}|作者、作品指定|強調必須。サンプルは鳥山明と荒木飛呂彦 Redditユーザーの実験結果 https://www.reddit.com/r/NovelAi/comments/y879x1/i_made_an_experiment_with_different_artists_here/ https://www.reddit.com/r/NovelAi/comments/y7679g/i_made_an_experiment_with_different_styles_here/|https://image01.seesaawiki.jp/n/h/nai_ch/LcNDdzqeO8.png https://image02.seesaawiki.jp/n/h/nai_ch/jYFjRo3du_.png|
+|kill la kill|キルラキル||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dBY5joVAYK.png)|
+|dragon ball|DRAGON BALL|違う絵柄もでやすい。ネガティブにdragon、monster等を入れないとドラゴンが生成される|https://image01.seesaawiki.jp/n/h/nai_ch/FQCfzO7zc5.png|
+|naruto &#40;series),|NARUTO-ナルト-||https://image01.seesaawiki.jp/n/h/nai_ch/lxVRSzgLtn.png|
+|ergo proxy|Ergo Proxy||https://image02.seesaawiki.jp/n/h/nai_ch/eszFTIvHJu.png|
+|kin-iro mosaic|きんいろモザイク|原作風とアニメ風が出る、絵柄が安定しずらい|https://image01.seesaawiki.jp/n/h/nai_ch/KEXQnvZ7GT.png|
+|atelier &#40;series)|アトリエシリーズ||https://image01.seesaawiki.jp/n/h/nai_ch/YilJhf6FHc.png|
+|high school dxd|ハイスクールD×D|下着率高し|https://image02.seesaawiki.jp/n/h/nai_ch/niuKjuUWi6.png|
+|Yabuki kentaro|矢吹 健太郎(漫画家)|胸や足を強調する構図に寄る傾向があるのと、AIが参考にした作品次第で絵柄がやや安定しない|https://image02.seesaawiki.jp/n/h/nai_ch/w2V5sr5Q5K.png|
+|splatoon &#40;series)|スプラトゥーン|(series)に効果があるのかは不明|https://image01.seesaawiki.jp/n/h/nai_ch/h9pMNoSjLf.png|
+|xenoblade chronicles 2|ゼノブレイド２||https://image01.seesaawiki.jp/n/h/nai_ch/TLrXhVGcB_.png|
+|asanagi|朝凪(絵師)|&#129397;|https://image02.seesaawiki.jp/n/h/nai_ch/fPk0Id5x91.png|
+|chainsaw man|チェンソーマン||https://image02.seesaawiki.jp/n/h/nai_ch/VRSf9FTjRB.png|
+|PSYCHO-PASS|PSYCHO-PASS||https://image01.seesaawiki.jp/n/h/nai_ch/R1NWFCK9JD.png|
+|precure|プリキュア||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/h2bolkFqPK.png,160,270)>https://image02.seesaawiki.jp/n/h/nai_ch/h2bolkFqPK.png]]|
+|eureka seven|交響詩篇エウレカセブン||https://image02.seesaawiki.jp/n/h/nai_ch/UGddVkUzIX.png|
+|code geass|コードギアス||https://image02.seesaawiki.jp/n/h/nai_ch/7dTZN4JLPf.png|
+|disgaea|魔界戦記ディスガイア||https://image01.seesaawiki.jp/n/h/nai_ch/EL4GJrZxR3.png|
+|mahou shoujo lyrical nanoha|魔法少女リリカルなのは|初音ミク要素が無くなる場合がある|https://image01.seesaawiki.jp/n/h/nai_ch/oJ_1Xi2fKx.png|
+|gochuumon wa usagi desu ka?|ご注文はうさぎですか？||https://image02.seesaawiki.jp/n/h/nai_ch/lCTO5kxpys.png|
+|love live!|ラブライブ！||https://image01.seesaawiki.jp/n/h/nai_ch/_i3Wm_x0Qw.png|
+|urusei yatsura|うる星やつら||https://image02.seesaawiki.jp/n/h/nai_ch/bVlo_Gl4cU.png|
+|doraemon|ドラえもん||https://image01.seesaawiki.jp/n/h/nai_ch/Mex6vvs2lW.png|
+|death note|DEATH NOTE（デスノート）||https://image01.seesaawiki.jp/n/h/nai_ch/FUXEH_CEEh.png|
+|persona 5|ペルソナ 5||https://image02.seesaawiki.jp/n/h/nai_ch/pIqIYP8IUD.png|
+|senki zesshou symphogear|戦姫絶唱シンフォギア||https://image01.seesaawiki.jp/n/h/nai_ch/v6TyU9HKsT.png|
+|suzumiya haruhi no yuuutsu|涼宮ハルヒの憂鬱||https://image01.seesaawiki.jp/n/h/nai_ch/zBB5_v3jEN.png|
+|mahou shoujo madoka magica|魔法少女まどか☆マギカ||https://image01.seesaawiki.jp/n/h/nai_ch/ZnyoVn0Y3D.png|
+|boku no hero academia|僕のヒーローアカデミア||https://image01.seesaawiki.jp/n/h/nai_ch/_EuAtFn2Qk.png|
+|danganronpa|ダンガンロンパ||https://image01.seesaawiki.jp/n/h/nai_ch/YiTbMgChPz.png|
+|nichijou|日常||https://image01.seesaawiki.jp/n/h/nai_ch/pfqQ18PpSf.png|
+|lucky star|らき☆すた||https://image02.seesaawiki.jp/n/h/nai_ch/lJou8VRsxy.png|
+|bang dream!|BanG Dream!（バンドリ！）||https://image01.seesaawiki.jp/n/h/nai_ch/FqzP6dr_z5.png|
+|girls und panzer|ガールズ&パンツァー||https://image01.seesaawiki.jp/n/h/nai_ch/Cgz3Bf6AYR.png|
+|strike witches|ストライクウィッチーズ||https://image01.seesaawiki.jp/n/h/nai_ch/WrN7wr3YFD.png|
+|yuruyuri|ゆるゆり||https://image02.seesaawiki.jp/n/h/nai_ch/hjovCSYjmb.png|
+|k-on|けいおん！||https://image01.seesaawiki.jp/n/h/nai_ch/mF3fbsUdgp.png|
+|yurucamp|ゆるキャン△|服装と絵柄がゆるキャン△っぽくなるプロンプト追加でどこまで追従するかは不明|https://image02.seesaawiki.jp/n/h/nai_ch/0av9diFZsI.png|
+|}
+>>>>>>> 04ee015699518104ef58d72d6fca9c7613ed2a2a

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/PE97wdqgIk.png,800)
 &size(12){浦島イラスト｜参考プロンプト：https://majinai.art/ja/i/LmVqyND}
 
@@ -1037,3 +1038,1044 @@ https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_
 
 
 
+=======
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PE97wdqgIk.png,800)
+&size(12){浦島イラスト｜参考プロンプト：https://majinai.art/ja/i/LmVqyND}
+
+* はじめに
+新技術とか流行りとか歴史とかをメモしておくページ
+具体的なノウハウとかは専用ページに書いて、ここは紹介程度に。
+上の奴ほど新しいという感じで編集していってください。
+
+[+]編集にあたってのお約束
+- 嘘松はあかん
+事実だけを掲載する。うわさなら裏をとってからや
+- ポジティブな話題をメインに
+革新的な技術やスレで話題になったおもしろい出来事などを優先して掲載する
+技術的なことならネガティブな話題でもOK
+例：「●●が使えなくなった」とか「●●が実は壊れていた」等
+- お気持ち表明にならないようにする
+ある程度自由な作風がゆるされてるけど個人のお気持ちが混ざってないか推敲してから編集しよう
+
+※改定の提案はこちら：[[運用方針など>https://seesaawiki.jp/nai_ch/bbs/39146/l50]]
+[END]
+
+
+#contents
+
+* 2023-04-30 フラットカラーLoRAをネガに適用すると書き込みが増える
+なんJNVA部194の911がカラーをフラット化するLoRAを公開、
+さらにこのLoRAを「マイナスで通常のプロンプトに適用すると精細な絵になる」ことを発表。
+ 例) <lora:flat:-1>
+ほかの画風LoRAもマイナス値を入れると様々な効果を得られるかもとスレ民が調査中。
+注：上記LoRA文をネガティブプロンプトに入れても動きません
+* 2023-04-21 Google Colab の無料プランでAutomatic1111の利用が禁止になる
+利用規約の改定により、無料プランでのremote UI のノートブックの使用が禁止された
+(注：2023/04/21 09:00現在、英語ページのみで日本語faqは旧表記のまま)
+
+これによりAutomatic1111が禁止となり、利用者が路頭に迷う事になった
+尚、有料プランの利用者にはwebuisの利用を制限する予定はありません、とColab技術者がツイートしている
+
+もしそのまま利用し続けた場合はアカウントのBANも有り得る為、無料プランの利用者は注意が必要
+GoogleアカウントがBANになる為、GmailやGoogleドライブ、Youtubeといった他サービスまで影響を受ける
+過去には他サービスでサブアカウントがBANされると同時に、本アカウントまで連鎖BANされたケースもある
+
+paperspace等他サービスに移るにせよGoogleに続く恐れも無いとは言えず、有料版に移行又はローカルの環境構築が推奨される
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gzOPi6aR1P.png, 30%)
+
+* 2023-04-20 imgurの投稿が会員制に、nsfwが禁止になる
+
+施行は5月15日から。
+
+Imgur Terms of Service Update [April 19, 2023]
+https://help.imgur.com/hc/en-us/articles/14415587638029-Imgur-Terms-of-Service-Update-April-19-2023-
+
+過去スレとwikiのimgur画像はバックアップしといたけど、
+wikiのリンク切れを直すんならseesaawikiに全部再アップしなおす必要があって大変。
+
+2023/04/26 追記
+"リアル系モデル比較・雑感"以外のページのimgur画像はwikiに再アップした．
+imgurの画像リンク→wikiの画像リンクの対応表( data/new_link.json )と，作業に使ったスクリプトを一応知見として共有する．
+[[スクリプトおよび対応表>https://image01.seesaawiki.jp/n/h/nai_ch/NrjDjRzPR3.zip]]
+2023/05/01 追記
+wikiに画像として表示されているimgur画像はすでに削除されたリンクを除いてすべて置き換えた．最終的な新旧リンクの対応表を共有する．
+[[最終的な対応表>https://image02.seesaawiki.jp/n/h/nai_ch/MUScDjoi8h.zip]]
+* 2023-04-17 basilmixの商用利用が禁止される
+basilmixの配布者である[[ぬいぐるみ氏>https://twitter.com/nuigurumi1_KR]]によって以下のようなツイートが投稿された。
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VnA98wVSM_.png, 30%)
+
+ぬいぐるみ氏は層別マージを最初に開拓した人物でもあり、現在のトレンドを作った人物といってもよいであろう。
+これまで惜しみなく技術や成果を公開してきた氏のbasilmix商用利用禁止は、理解を示す者もいる一方で、少なからず反感を買った。
+理由は主にchillout mixの配布者である[[タスク氏>https://twitter.com/TASUKU2023]]が寄付を募っていることを嫌ったため。
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8audLPVO08.png, 50%)
+
+その後、氏はbasilmixのマージレシピを公開した。
+https://archive.md/lTfHl
+* 2023-04-12 AI音声スレ：なんJRBC部が立つ
+RVC(Retrieval-based-Voice-Conversion)等の音声系の話題を扱うスレが立つ
+なんJRBC部
+https://fate.5ch.net/test/read.cgi/liveuranus/1681272307/
+なんJRBC wiki
+https://seesaawiki.jp/rvc_ch/
+
+* 2023-04-08 顔を推定するControlnetがでる
+顔を推定するControlnetがでる
+https://fate.5ch.net/test/read.cgi/liveuranus/1680673605/931
+https://huggingface.co/CrucibleAI/ControlNetMediaPipeFace
+これ試してみた
+何となく顔がその位置にきて、指定のほう向く感じ
+目と口に関してはプロンプトありきで、あんま効いてないように思える
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/W0c_mC9Kyv.png)
+
+トレーニング方法もあるらしい
+https://fate.5ch.net/test/read.cgi/liveuranus/1680673605/344
+
+
+* 2023-04-07 ネガティブプロンプトエディティング
+=|BOX|
+790今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 5f88-icd+)2023/04/07(金) 05:36:38.53ID:0N3FVRMd0
+EasyNegativeやらng_deepnegative_v1_75tやらがいいのかと思って入れてみたんやが、なんだかんだ自前で培ってきたネガティブプロンプトのがいい気がしてきたわ
+とは言え強度の問題かもしれんし、ニキたちのおすすめネガプロ教えてくれんか
+試してみたいんや
+
+793今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7fc5-wedF)2023/04/07(金) 06:14:57.84ID:f6FbAY2j0
+>>790
+Prompt Editingをnegativeに使っとる
+最初にガバガバnegative入れて構図力上げてからラスト10パー以下でモデルの要求する規定(worst quality, lower quality:1.4)とかにしてシメると最近のマージ繰り返したモデルでも構図に幅が出る
+||=
+[[プロンプトエディティング>プロンプトエディティング]]をネガティブプロンプトに使用するという手法が紹介された。
+最初からネガティブを指定せず生成の最後にのみ適用させることで、構図に幅を持たせることが出来るようだ。
+
+* 2023/04/04(火)：LoRA学習GUIで層別学習、 Stable Diffusion XL
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/744
+LoRA学習GUIで層別学習できるようにしたで
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.3.0
+
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/535
+Stable Diffusion XLってのが出たらしいがどうなんやろね
+2.系はあんま話題にならんかったけど
+
+* 2023/04/03(月)｜ポエム、韓国ニキの層別マージの表日本語訳
+
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/989
+989: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ dfbf-kVuH) sage 2023/04/03(月) 11:21:40.69 ID:B8m75gQR0 
+&align(center){>>972}
+&align(center){居場所は与えられるものではなく作るもの}
+&align(center){孤立って言葉をネガティブに使っとるけど立てとるだけマシ}
+&align(center){立っとる姿を見せられとるだけマシなんやで}
+&align(center){膝をつき人の森に埋もれ顔も見えずそのまま倒れ立ち上がれない人間がどれだけおるか}
+&align(center){ドヤ顔しとるお子様には分からんやろな}
+&align(center){}
+&align(center){孤立せよ・・・孤立せよ・・・って福本伸行もなんかの漫画で描いてたやろ}
+&align(center){まああれは孤立ではなく個立、無暗に群れず個人として屹立しろって意味やったように記憶しとるけど}
+&align(center){お前も股間ばっか立ててないで個を立ててもっとぶつかり合えよ}
+
+（補足）違法DLを勧めていた人間が周囲から批難されたあげくに残した碑文である　良い子は弁えような
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8ly5wpcNey-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/8ly5wpcNey.jpg]]
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/7
+サンイチ
+これは前スレのポエム
+
+>>7
+草
+
+●韓国ニキの層別マージの表日本語訳
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/103
+前スレの>>772の韓国ニキの層別マージの表を日本語訳にしたで
+直訳だけじゃなくて意訳もあるから誤訳があったら教えてくれや
+=|BOX|
+https://i.imgur.com/pBycwjt.jpg
+||=
+
+あと前スレの>>804ニキがLoConの層別マージをまとめてくれてるからこの表と見比べてみてほしいで
+https://rentry.org/lora-bw-memo
+
+*  2023/04/02(日) 階層別学習率/階層別dim(rank)が追加、韓国コミュで層別マージの資料
+フルモデルの25個のブロックで学習のウェイトやdimが指定できるようになった。
+https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/796
+階層別dimの追加まじかkohya氏有能過ぎる
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/491
+>>458>>481
+韓国コミュで層別マージの資料があったからこっちも参考にしてほしい
+=|BOX|
+https://i.imgur.com/vlB9XCs.jpg
+||=
+
+
+* 2023/03/31(金)：ToMe (Token Merging for Stable Diffusion)
+https://fate.5ch.net/test/read.cgi/liveuranus/1680160046/637
+https://github.com/dbolya/tomesd
+なんか早くなるっぽい？
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680160046/682
+
+1111にToMe適用してアスカベンチやったら29秒台が26秒台になったわ
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/399
+tomeは解像度が高いほど速くなるかわりに描き込みが減るで
+=|BOX|
+ToMeなし
+https://i.imgur.com/39P0lYJ.jpg
+ToMeあり(ratio=0.6)
+https://i.imgur.com/cNwAYk9.jpg
+||=
+
+
+
+* 2023/03/28(火) 学習解像度聖戦｜512で十分学派 VS 1024最高だぜ学派
+https://fate.5ch.net/test/read.cgi/liveuranus/1679896401/570
+このへん
+(争え……もっと争え……)
+
+* 2023-03-27 なんJNVAチラ裏部の誕生
+02/26に荒らしが立てたなんJNVA159の重複スレ
+レス20越えた為に静かに埋めようとチラ裏で画像投稿されていたが、荒れることなく平穏に1000レスまで付いてその役目を終えた
+しかし淡々と生成画像やネタ画像を貼れる場は魅力的という事で、この度チラ裏部として新スレが誕生した
+技術的な会話も多い本スレに貼るにはちょっと、と抵抗が有る人でも気軽に貼れる場として運用される事となった
+
+なんJNVAチラ裏部 
+https://fate.5ch.net/test/read.cgi/liveuranus/1679891659/
+
+* 2023-03-25 更新
+1111に大幅更新が入り、各種ツールがエラーを起こしたりするようになった
+
+
+* 2023-03-25 MultiDiffusion
+4Kや8Kなど超巨大な画像を生成できるとうたう拡張MultiDiffusionがちょっと話題になる。
+ pkuliyi2015/multidiffusion-upscaler-for-automatic1111: MultiDiffusion implementation with VAE VRAM optimize - https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
+ただしタイルを何枚もつぎ足しして生成する関係上アップスケーラーによってはいたるところに1girlを描こうとするため小人が多数発生し、さながらウォーリーを探せ状態に。またかわいらしい絵柄のモデルなら「妖精さん」ですむが、リアル気味なモデルで使用するととうとつに生首が置かれたりオブジェクトの表面に人体らしきものが大量に発生したり(シテ……殺シテ……)と人によってはへたなグロよりくるものがあるようである。
+詳しくは[[高解像度で生成する方法]]のMultiDiffusionの項目を参照
+
+
+* 2023-03-23 画像生成AIサービス総合スレの誕生(ネットサービス板)
+
+紆余曲折の末に、「なんJnovelAI部」から「画像生成AIサービス総合スレ」(ネットサービス板)が誕生した
+-NovelAIの話題は「なんJnovelAI部」に
+-その他の画像生成AIサービスは「NovelAI,Holara,TrinArt等画像生成AIサービス総合スレ」に
+-「なんJNVA部」は今まで通りなんでもあり(でも主にローカルの内容)に
+と、それぞれに特徴を持ったスレに育っていった
+
+なんJnovelAI部ウェブ専★68 
+https://fate.5ch.net/test/read.cgi/liveuranus/1679488956/
+
+NovelAI,Holara,TrinArt等画像生成AIサービス総合 
+https://mevius.5ch.net/test/read.cgi/esite/1679527005/
+
+なんJNVA部★176 
+https://fate.5ch.net/test/read.cgi/liveuranus/1679571571/
+
+[+]その他のAI画像関係スレ
+BBSPINK板：【StableDiffusion】AIｴﾛ画像情報交換18【NovelAI】 
+https://mercury.bbspink.com/test/read.cgi/erocg/1679322640/
+
+CG板：【StableDiffusion】画像生成AI質問ｽﾚ5【NovelAI】 
+https://mevius.5ch.net/test/read.cgi/cg/1679654631/
+
+CG板：【StableDiffusion】AI画像生成技術16【NovelAI】 
+https://mevius.5ch.net/test/read.cgi/cg/1679058984/
+
+他にもあるので探してみるのもよし
+[END]
+* 2023-03-20 Windows DefenderがVAEを脅威とみなす
+
+誤検出っぽい。safetensorsに変換して回避できる。
+
+173スレ577
+=|BOX|
+Checkpoint Mergerでvaeをsafetensorsにで変換する方法
+合ってるかどうか知らんが変換後も同様に機能はする
+一旦、vaeの拡張子をckptまたはsafetensorsに変更し、\stable-diffusion-webui\models\Stable-diffusion フォルダに置く
+※変更しないとCheckpoint Mergerで選択できないため
+例 nai.vae.pt → nai.ckpt
+画像の様な設定でMergeボタンをクリック
+https://i.imgur.com/E0YOXca.png
+nai.vae.safetensors (395,100KB)が生成される
+最初に一旦変更した拡張子を元に戻す
+||=
+
+https://huggingface.co/aka7774/fp16_safetensors/blob/main/anything-v4.0.vae.safetensors
+
+* 2023-03-18 torch2.0で高速化
+
+3/16頃に、nightlyではないtorch 2.0.0が公開された。
+スレでも話題になり、172スレ908が簡易な方法を示した。
+1111のissueや4chan、redditでも話題になっていた。
+
+導入するとVRAMの消費増大と引き換えに高速化の恩恵がある。
+詳しくは[[ローカル高速化メモ]]にまとめた。
+
+* 2023-03-11 新しいサンプラーUniPC
+以下のコミットでAuto1111に新しいサンプラーが実装
++ Merge pull request #7710 from space-nuko/unipc &#183; AUTOMATIC1111/stable-diffusion-webui@a11ce2b - https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/a11ce2b96cc933ebb9e10d46603a89457ddcb9df
++ サンプラー側のリポジトリ：wl-zhao/UniPC: UniPC: A Unified Predictor-Corrector Framework for Fast Sampling of Diffusion Models - https://github.com/wl-zhao/UniPC
+
+* 2023-03-09 スクリプト爆撃再来
+今回は手動かつNVA部だけを荒らしてる模様。
+すぐに止まる時もあれば、ずっと動いてる時もあってよくわからん。
+
+* 2023-03-09 ColabのデフォルトPythonが3.9.16に
+
+色々動かなくなってるので要修正もしくは対応待ちが必要。
+
+* 2023-03-05 LoCon
+
+技術的な面ではLoConというLoRAを拡張したような学習法があらたにリリースされたことで検証が盛んに行われるようになった。→https://github.com/KohakuBlueleaf/LoCon
+スレではLoRAやControlnetも履修し終わってないのにまた新しい概念が登場してもうついていけないという声もちらほら見られるようになった。
+
+
+
+
+* 2023-02-28 chilloutmix公開停止
+
+Civitaiでダウンロードランキング1位を取っていたリアル系モデル。
+マージ元モデルのライセンスによって商用利用に制限があり、商用利用禁止を告知したところ、
+商用利用の要望が相次いだため、勝手に商用利用可にした類似モデルが登場したタイミングでモデルを削除。
+Civitai運営から直々に再公開を要求される異例の事態となったが、
+話し合いの末、Civitai運営の責任においてモデルを再掲する事になった様子。
+
+https://speakerdeck.com/nhamanasu/diffusionniyorutext2imagenoxi-pu-tosheng-cheng-hua-xiang-gadong-kichu-sumade?slide=116 より
+ ChilloutMix 日本・韓国・中国風なアジア人女性の写実的画像に特化したマージモデル。これに加え、 人形のように整った相貌の韓国人風写実生成に特化したLoRAモデルである Korean Doll Likeness、アズールレーンの特定キャラクタに特化したLoRAモデル HMS Cheshire を 組み合わせることで、アニメテイストな衣装を纏いつつ極めて写実的な女性の画像生成 を実現したユーザーも現れ、一時期「AIコスプレイヤー」として賛否を呼んだ。 作者は重要な免責事項として、実在する人物を再現することに用いたり、実在する人物 の名を冠した派生モデルを作成・公開しないよう呼びかけていたが、実際に生成の写実 性が上がったことで一部の過激な表現や商用目的で利用されてしまうケースが散見され、 Feb 28, 2023 に制作者判断で公開停止措置が講じられた。
+
+* ControlNetの機能いろいろ判明
+直に専用ページがつくられると思われるが（→[[作られた>https://seesaawiki.jp/nai_ch/d/ControlNet]]）とりあえず浦島で使えそうな機能を紹介
+[[ここ>https://note.com/ddpn08/n/n7fce838499e7]]とか見るともっと分かるかも。
+[+]
+https://fate.5ch.net/test/read.cgi/liveuranus/1676292962/432
+''432今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｵｯﾍﾟｹ Sra3-3pHG)2023/02/14(火) 15:25:37.08ID:F0rs948kr''
+''Canny Edge　輪郭線を検出して取り出す''
+''M-LSD　直線の輪郭だけ取り出す　曲線のない人工的な構図をノイズ無く取り出せる''
+''HED Boundary　いわゆる「描き込み」的な部分を取り出す　タッチを引き継ぎやすい''
+''User Scribbles　マウス入力の落書き　線を絶対的なものとしては扱わず、いい感じに仕上げる''
+''Fake Scribbles　画像を一端落書き風にして↑に投入する''
+''Human Pose　おなじみの棒人間''
+''Semantic Segmentation　領域に分類を持たせる''
+''Depth　深度情報を引き継ぐ　立体的な位置関係を処理できる''
+''Normal Map　法線情報を引き継ぐ　深度情報よりも細部の立体感に沿いやすい''
+''Anime Line Drawing　線画に色を塗る　非公開''
+
+''初期実装でこれだけある上に別にこれらだけではなく別の制御情報にも応用できるのが恐ろしいわ''
+
+**seg使用例
+https://fate.5ch.net/test/read.cgi/liveuranus/1676292962/634
+''634今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1e28-Ja3i)2023/02/14(火) 20:35:13.04ID:AF4ZJii10>>655>>666>>677>>699''
+''segで2人構図いけたかもや''
+''''
+''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LvOAYKMBiZ.png, 10%)''''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tNCgS5pUKL.png, 10%)''
+
+**depth使用例
+https://fate.5ch.net/test/read.cgi/liveuranus/1676415295/449
+''449今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 068c-t1ev)2023/02/15(水) 17:26:26.82ID:MqZleO5p0>>453>>476>>480>>483>>485>>500''
+''EROPOSE MATERIALってサイトで拾った足コキ画像からdepth作って''
+''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0mMFj0LK9Z.png, 30%)''
+''ここから''
+''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pDgQxc6xyp.png, 30%)''
+''''
+''7th_anime_v2_Bでもかなり立体的に出るんで下はネガにrealistic, 3dを追加''
+''weight下げてもかなり元画像に引っ張られるのでアニメ系には工夫が必要やけど''
+''リアル系に使うならかなりヤバイんちゃうかな''
+''''
+''488今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 068c-t1ev)2023/02/15(水) 18:08:05.91ID:MqZleO5p0>>507>>533>>542''
+''よう推敲せんで送ったから「かなり」連発で変な文になってたけど''
+''好評だったからまあええか''
+''''
+''>>480''
+''最新の[[ミクビル版>https://github.com/Mikubill/sd-webui-controlnet]]でできるで''
+
+''742今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a70e-8lmq)2023/02/15(水) 22:22:59.35ID:uyU+lpBX0>>751>>754''
+''これが''
+''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Ko7Rv04X_e.png, 10%)''
+''こうなって''
+''&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eJxvKJy5pW.png, 10%)''
+''こう''
+''&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gJBv8DOpP3.png, 10%)''
+''構図は再現できるけど男の書き込みがメインになってまうなあ''
+
+**scribble使用例
+https://fate.5ch.net/test/read.cgi/liveuranus/1676504558/378
+''378今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa4f-CrHb)2023/02/16(木) 18:12:49.36ID:R1GOdUDZa>>395>>403>>414>>424>>480''
+''t2iだとどんなプロンプトでも絶対に出てこなかった上向きボテ腹壁尻がControlNetのscribbleだと簡単に出せるやん！''
+''モデル内にあるポーズの組み合わせならなんでも作れそう''
+''''
+''この落書きが''
+''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xZ5SnSLDUl.png, 10%)''
+''こうなる''
+''&ref(https://majinai.art/i/DjzWKXU.png, 10%)''
+''''
+[END]
+* 2023-02-13 WD1.5βが出たりControlNetに対応したりと大変な一日
+午前
+NAIリークの血を持たない純粋なモデル、且つSD2.1系という事で注目を浴びていたWaifuDeffusion1.5β(epoch1)がようやく[[リリース>https://huggingface.co/waifu-diffusion/wd-1-5-beta]]された
+完成までには3,4epoch掛かるとの話だが、epoch1の時点でかなり綺麗な絵を出力出来ており、完全版に期待が高まる
+尚、今までのプロンプトで生成すると怖い絵になりがちなので、新たなプロンプト構成が求められる
+日本語解説はこちら　[[WD 1.5 ベータ版 - リリースノート>https://cafeai.notion.site/WD-1-5-232cfa9443fc4661b469e7d1df8b7dd8]]
+
+午後
+ControlNetが1111のextensionsに登場(それも2種類がほぼ同時に)
+ControlNetとは、写真からポーズを抽出して描いたり、イラストから線画を抽出して描いたりする新技術(https://github.com/lllyasviel/ControlNet )
+この論文の発表から3日で1111のextensionsに実装されて、スレが驚異と歓喜の悲鳴に包まれた
+[[unprompted Extension版>https://github.com/ThereforeGames/unprompted]]と[[Mikubill/sd-webui-controlnet版>https://github.com/Mikubill/sd-webui-controlnet]]の2種類があるが、導入の容易さや使い方の簡便さからMikubill版sd-webui-controlnetの方が人気
+当初VRAM8GBでは動作が厳しいと思われたが、即日LowVRAM対応版が出てVRAM8GBユーザーでも使えるようになった
+
+これにより数日で浦島太郎どころか、半日で浦島太郎になる人が続出した
+
+* 2023-02-06 スクリプト爆撃
+本スレ143の中盤から連投荒らしにあって落とされていた。145でとりあえず復活。
+
+念のためお知らせしときますが、個人的に毎日バックアップとってます。
+- 本スレは別の方がとってる
+- https://github.com/aka7774/nai_ch_wiki
+- https://github.com/aka7774/stable-diffusion-webui
+-- wikiはローカルバックアップのみ取っている
+* 2023-02-05 スレ民日報補足
+やぁ、久しぶりだな。　こっち？　こちらのみんなは相変わらず元気さ
+そうだな、最近はLoRaという新しい学習方法が流行していて色々な学習モデルをうｐするニキが増えたな
+ロードス、アナルゼリー、触手…、&#128039;、ガッフェ、授乳手コキ、日焼け…　最高だろ？
+ここに[[Lora学習成果]]ページも出来たんだぞ
+
+最近AIイラスト作成に興味を持ってやってきた新しい民も多いみたいだ
+「動かん」「エラー出た」「xformers入らん」「わからん」「&#127880;」
+そう、そうだ。いつも通りだよ
+
+それにしても、新作絵の供給が望めないかつての懐かしいキャラを令和最新版のスレで見るとは思わなかったよ。
+俺が浦島太郎になった気分だ
+お前もたまにはこっちに帰ってこいよ？　みんな待ってるぞ
+
+
+* 2023-01-28 HNのドロップダウンが復活した（ついでにLoRAも付いた）
+2023-01-22の仕様変更により消えたHNのドロップダウンが復活した
+同時にLoraのドロップダウンも付けれるようになった
+
+設定方法は Settings → User interface → Quicksettings list に追加する
+-sd_hypernetwork
+-sd_lora
+-extra_networks_default_multiplier~~以前のsd_hypernetwork_strengthの替わりでHNとLoRA共通
+
+* 2023-01-28 pix2pixモデルマージが実装された
+extensionsのstable-diffusion-webui-instruct-pix2pixの登場から2日、任意のモデルをpix2pixモデルにマージする機能が実装された
+これにより好きなモデルでpix2pixが使えるようになった
+
+pix2pixとは簡単に言えば構図をそのままで中の絵を替える技術
+img2imgと違い、変更指示を文章で入力し元の要素を残したままで出来る事
+
+サンプルはこんな感じ
+[+]
+|元絵|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4_kVo3EKNV.png,256,256)|
+|プロンプト~~Change from night to day|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kcnPmUj5bi.png,256,256)|
+|プロンプト~~Change from human to cat|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fPWwMn1FsO.png,256,256)|
+|プロンプト~~Changed from black hair to blonde hair|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wFu2vCo98R.png,256,256)|
+|||
+|元絵|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nWfmnlLg8J.png,384,456)|
+|プロンプト~~add sepia|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PD0wLWzm7R.png,384,456)|
+[END]
+
+* 2023-01-24 Anything-v3.0が消えた
+
+NAI全盛期に登場して一世を風靡したモデルが作者によって削除された。
+https://twitter.com/linaqruf_/status/1616821313804570624?s=61&t=Gdc6UnwYcwE0IwLakkvoMw
+
+1/26に復活したがVAEは無かった。
+https://huggingface.co/Linaqruf/anything-v3.0
+
+VAEが必要ならAnything-v4.0同梱のものを使おう。
+https://huggingface.co/andite/anything-v4.0
+
+* 2023-01-23 torchとxformersの推奨バージョン更新とkohya版LoRAの正式対応
+
+-torch:1.13.1+cu117 xformers:0.0.16rc425 に推奨バージョンが上がった(RTX4000シリーズの対応版)
+-kohya版LoRAの0.4.0とそれ以前が正式対応された(0.4.0はα版対応)
+
+この為、スレ内では4000ユーザーやLoRAに期待する者が本体の更新とtorch・xformersの更新を一斉にかけたが……
+-無事起動する人
+-xformersのインストールに失敗して環境が壊れた人
+-対処法を聞いても上手く動かない人
+-起動はしたが4090の高速化していたのが高速化が動かず速度低下に見舞われる人
+-元のバージョンに戻そうにもgit checkout で対応出来る物では無い為に再インストールを余儀なくされる人
+-venvを削除してやり直そうとしても失敗する人
+-そもそも更新の仕方が判らない人
+-人柱は他人に任せて情報収集で「見」に徹する人
+が入り乱れて阿鼻叫喚の地獄と化した
+
+''更新前にバックアップを取っておきましょう''
+
+Linux(やwsl)環境の人がvenvを削除しての再インストール、又はクリーンインストールをする場合、何故か1111がxformersが0.0.13を入れようとして失敗する
+この為、手動でxformersをインストールする必要がある
+> venv/bin/activate~~
+> pip install xformers==0.0.16RC425~~
+> deactivate~~
+
+* 2023-01-22 HNとLoraの生成仕様変更
+
+- HNのドロップダウンは廃止になった。(またExtension作者が対応に追われた)
+- プロンプト内に &lt;hypernet:ファイル名:1.0&gt; &lt;lora:ファイル名:1.0&gt; と指定する
+-- 複数指定できる
+-- kohya版にも対応してるらしい?
+- Generateボタン下の赤いアイコンで選択してプロンプトに挿入することも出来る
+
+HNがおかしい場合は旧設定をクリアしたら直る模様
+>69 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cf71-XiKU)[sage] 投稿日：2023/01/22(日) 13:05:46.16 ID:OK6KChyN0~~
+>あんまりおらんとは思うが一応~~
+>アプデ後に絵柄がゴミになったりhyperNetworkが効かなかった人らは上でも出てる通り旧バージョンのhyperNetworkの設定が残ってて新しい読み込み方式と衝突してるせいや~~
+>config.jsonをメモ帳で開けてsd_hypernetworkをnullに、sd_hypernetwork_strengthを0.0に書き換えたら直るで~~
+※nullじゃなくてnoneなので正しくはこう書き換える(63〜64行目辺り)
+>    "sd_hypernetwork": "None",~~
+>    "sd_hypernetwork_strength": 0.0,~~
+* 2023-01-14 モデルマージ問題続報
+
+昨年末に話題になった「1token目が無視される」問題、各所の有識者がその後も研究・調査を進めた結果、モデル内部データの破損・汚損のメカニズムがある程度解明されてきた。
+fp16にすれば解決、そんな話ではなかった。
+
+https://note.com/bbcmc/n/n12c05bf109cc
+[調査] Smile Test: Elysium_Anime_V3 問題を調べる #3
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1673668284/353
+>353今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ca14-PB+X)2023/01/14(土) 22:31:53.53ID:pwfG6ymh0~~
+>技術部の方で特定トークンだけ効きが弱くなるデータ問題が見つかってるみたいやね（昏睡幼女に近い別な問題）~~
+>髪の色が無茶苦茶になる時に,入れたら改善してた事あったけど、それの可能性があるのか…恐ろしいやで~~
+
+>397今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 2961-7DGa)2023/01/15(日) 00:18:05.61ID:oxzRJQgt0~~
+>https://seesaawiki.jp/nai_ch/d/Models~~
+>技術部の人たちが更新してくれてるから頭にだけは入れといたほうがええかもな~~
+
+>>405今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ dd1e-hn8B)2023/01/15(日) 00:40:33.18ID:eNiHgcBj0~~
+>上にも言及してくれとるニキがおるけど、モデルの特定tokenが機能しにくい問題について共有しとくで~~
+>マージextensionの作者さんが、Ely3の1token無視問題について研究してくれとったのを、実用範囲で追試した感じや~~
+>元記事 https://note.com/bbcmc/n/n12c05bf109cc~~
+> ~~
+>記事にあるextensionでの修正をかけてから出力~~
+>https://majinai.art/i/zMw-3YY~~
+> ~~
+>&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Adip8_kPDM.png,450)~~
+> ~~
+>cinnamonは前から41tokenに異常tokenがあるらしく、ちょうどhand on hipのプロンプトにそれが該当してる~~
+>force resetで修正したモデルはhand on hipが効きやすくなってるし、修正前のcinnamonでhand on hip hipっていうプロンプトにすると効くようになった~~
+> ~~
+>この問題は「add differenceのマージが関係するモデル」に起こるから、いま流通してる数多くのモデルに起こってる可能性があるんや…~~
+
+上記noteにてチェックツールも発表され、これまでマージモデルを生成・活用してきたスレ民の間で動揺が走っている。
+
+https://note.com/bbcmc/n/n12c05bf109cc
+''それでも残る問題点''
+''修正を施した場合、プロンプトの効き方が変わるため、これまでとは絵柄が変わったと感じる可能性がある。''
+''また、特に training/fine-tune している場合、この狂った CLIP 前提で学習が進んでいた場合、モデルの描画性能の変化を引き起こす可能性がある。''
+
+早速、修正モデルデータを公開する作者も相次いだ。
+しかし、当然ながら「保存しておいたプロンプトで同じ絵が再現できなくなった」
+解決方法としては新旧両方のモデルを保存しておいて用途で使い分けるしかなく、俺達のストレージの空き容量が益々少なくなる問題の方が切実かもしれない。
+
+
+* 2023-01-11 StableTuner
+
+https://github.com/devilismyfriend/StableTuner
+
+最近はやっているらしい新しい追加学習。
+早い、UI整ってて設定ミスしない、精度良いのいい事だらけ(129スレ319)。
+
+初出？：https://fate.5ch.net/test/read.cgi/liveuranus/1673418720/167
+''167今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 611e-K0Bq)2023/01/11(水) 19:05:29.78ID:J3TotN+o0>>174>>275''
+''＞＞163''
+''同じようなエラーでどうやってもまともに動かなかったから、extensionが悪いんやなってなった''
+''3090ならstable tuner使うのオススメやで''
+
+現在使用例などはほとんどないが以下のような意見もある。
+
+''309今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa85-TcZo)2023/01/13(金) 12:24:01.28ID:JvPRbxiDa>>318''
+''[検閲済]のやつはGUI対応してない時点でうんこだわ''
+''純粋に学習するならstable tuner一択だし、わざわざLoraするより TIでよくねって4側もなりつつある''
+
+vram24gb推奨なので富豪向けであるが、設定次第では12gbで動くという話もある。
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/325
+''325今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1991-tb1I)2023/01/13(金) 12:45:53.77ID:majIue8q0>>338''
+''12GBはtextencoder切れば普通に行けるよ''
+''DBは現状これ以外の選択肢ないと思う''
+* 2023-01-05 1111消失事件
+&aname(moved_1111){}
+異変：https://fate.5ch.net/test/read.cgi/liveuranus/1672807546/893
+''893今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｻｻｸｯﾃﾛﾗ Spbb-mKYw)2023/01/05(木) 18:32:56.80ID:Nw26Fgbzp&#8942;''
+''https://github.com/AUTOMATIC1111/stable-diffusion-webui''
+''WebUIよ永遠に''
+''''
+''&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3AJ1ZS_W4b.jpg, 10%)''
+
+現在は復旧した。
+- https://github.com/AUTOMATIC1111/stable-diffusion-webui
+
+原因はご本人曰く、[[wikiに掲載されていたリンクにアダルトなコンテンツがあったため>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Textual-Inversion#finding-embeddings-online]]。
+
+一次避難先だったところ。
+GitHubをメインに使っててGitGUDは古いまま放置されている様子。
+- https://gitgud.io/AUTOMATIC1111/stable-diffusion-webui
+
+年末年始の動きもあわせて、クラウド民が影響を受けやすいので、
+永続ストレージに安定版をとっといたほうがいいのかも。
+
+* 2023-01-05 赤ちゃん
+
+[[ローカルの導入方法]]として、「あかちゃんインストーラー」が発表される。
+(日付はもうちょっと後だったかも)
+バッチファイルをクリックするだけで1111を自動インストールして起動するのが特徴。
+これなら赤ちゃんでも出来る、と、一定の評価を得る。
+
+転じて、簡易インストーラー全般を赤ちゃんと呼ぶようになった。
+(例: としあきの赤ちゃんLoRAバッチ)
+また、初心者のことを赤ちゃんと呼ぶようになった。
+
+最近ではいろんな人が赤ちゃんグッズを開発してくれてるので、
+便利なやつを見つけたら、どの赤ちゃんグッズか具体的に言ってくれると助かる。
+
+* 2023-01-04 風船事件
+
+NVAスレにおいてスカトロ（特に&#128169;大便&#128169;）の隠語として風船が用いられるようになったきっかけとなる事件をさす。
+風船&#127880;注意などの警告がレスについていた場合は覚悟して見るようにしよう。
+
+経緯：https://fate.5ch.net/test/read.cgi/liveuranus/1672807546/250
+当初は風船をinpaintする方法を尋ねるという普通の相談内容だったのだが、徐々に会話がかみ合わなくなっていき…
+=|BOX|
+250今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sac7-e/aH)2023/01/04(水) 19:57:31.68ID:7QCJRhmka&#8942;>>261>>290
+例えばinpain使って風船出して背景と雰囲気合わせたいとする。t2iとかで普通にプロンプトで画像作る。これが風船なしの元の画像。
+
+
+まず、元の画像に風船の画像を貼り付ける、この時点では超雑コラ
+次に、その画像をinpaintに持っていく
+ここで色調を合わせられるってのがinpaintの価値だと思うんだけど、ここでやらないといけないのって以下で合ってる？
+
+1.風船とその周りを塗り潰す
+2.元のプロンプトに風船をキーワードとして入れる
+inpaint開始
+
+上のやり方だと結局ブレンドしたいアイテムのキーワードをSDが認識できるものじゃないといけないし、自分もその英単語を知ってなきゃいけないよね
+||=
+ついに本当の目的を白状したと思われたが…
+=|BOX|
+293今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sac7-e/aH)2023/01/04(水) 21:02:12.09ID:nxWl5dxRa&#8942;>>296
+>>290
+風船とか都合いいこと言ったけど、要するにぶっかけたいんや
+
+その場合はまずはcumとかキーワードやって、精子の透過画像を貼ってinpaintに戻して体全体をマスキングしてgenerate?
+||=
+実際はそれすらも囮であり、真の目的はうんこ沢山であった。
+=|BOX|
+305今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sac7-e/aH)2023/01/04(水) 21:14:31.70ID:nxWl5dxRa&#8942;>>309>>315>>332>>342>>353>>406>>409
+>>296
+すまん、ぶっかけとか普通なこと言ったけど、本当はうんこ沢山乗せたいんや
+
+だから困ってた
+||=
+
+''315今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sac7-j4Lu)2023/01/04(水) 21:24:10.80ID:gxM4KjZda>>318&#8942;''
+''>>305''
+''オブラートに包んで風船って言ったけど本当は精液でした''
+''↓''
+''精液もオブラートで本当の本当はウンコでした''
+''''
+''&#128517;''
+
+これに刺激を受けたスカトロジストがどこからともなく現れスカトロ画像を張り付けていったため、多くのスレ民にトラウマを植え付けた。
+
+''135今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 078a-1D2s)2023/01/05(木) 22:25:56.69ID:JT9GZ0bb0&#8942;''
+''例える……風船……、うっ……頭が……''
+''''
+''136今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ bb7b-d25T)2023/01/05(木) 22:27:01.33ID:JzIWT9pR0&#8942;''
+''>>133''
+''昨夜の事警戒してて草''
+''いやワイもそれ連想したけど''
+
+さらに翌日のpixivにおけるお題が風船になるという奇跡も起きてしまった。
+
+''385今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜﾝﾐﾝｸﾞｸ MM8a-1R73)2023/01/06(金) 08:12:14.72ID:c3FFjjFgM&#8942;>>390>>397''
+''pixivの今日のお題が風船らしいから風船のInpaintのテクニックを駆使した絵を投稿しましょう''
+https://image01.seesaawiki.jp/n/h/nai_ch/Z5mmF1Sf9S.jpg
+
+なお当人はこの事件を広めてほしくないようなので気を付けよう。
+ただしこの記事は風船&#127880;の意味を知らない浦島とスレ初心者に注意を促す意味でも記録しておくことにする。水に流せないものもある。
+
+''503今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9311-MUzp)2023/01/09(月) 14:48:27.65ID:Ds/FFlY40&#8942;>>511''
+''>>494''
+''取り急ぎ''
+''風船＝うんこ　って理解で間違いないで''
+''あとでwikiの浦島に風船事件追加せにゃならんな…''
+''''
+''511今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa85-mr8z)2023/01/09(月) 14:55:06.90ID:5XoRgcv4a&#8942;>>514>>518>>519''
+''>>503''
+''元祖風船オジやけど恥ずかしいから辞めてくれw''
+
+上記の事件から数日後、huggingfaceにナゾのモデルがアップロードされた。
+説明もなく、詳細は誰にもわからない。わからないんだ、いいね
+https://huggingface.co/unkounko/BalloonMix
+
+*年末年始の動き
+
+年末年始はこれまでの沈黙を破ったかのような怒涛の更新ラッシュ。
+gradioのバージョンが上がったりしてExtension作者は対応に追われまくった。
+
+* 2022-12-28 コピー機
+
+元は生成あるあるネタ。
+
+119スレ394
+=|BOX|
+朝からまわしてたエロがシード固定やった&#128546;
+||=
+
+同395
+=|BOX|
+>>394
+よう、コピー機！ 
+||=
+
+同419
+=|BOX|
+なんで同じのばっかり…
+https://imgur.com/frsXfIg.png
+||=
+
+&#127880;のようなインパクトは無かったが記憶に残る言葉に。
+
+130スレ229
+=|BOX|
+シード固定してて6時間同じ画像作ってたwwwww
+
+はあ 
+||=
+
+同243
+=|BOX|
+>>229
+コピー機再来 
+||=
+
+同311
+=|BOX|
+コピー機防止Extension作ったやでー
+https://github.com/aka7774/sd_copyguard 
+||=
+
+転じて、過学習などで故意に類似画像を量産する手法として語が使われるようになった。
+
+*クリスマスプレゼント
+
+クリスマスから年末にかけて、
+層別マージの成果をはじめとするマージモデルが大量配布される。
+噂によるとtwitterやDiscordも配布モデル一色になったとか。
+
+配布には Huggingface Hubを使うのが推奨。たぶん容量無制限。
+ここで配布することで作成者や公開日も明確になる。
+
+12スレ889
+=|BOX|
+転載が嫌とかじゃなくて感想が聞けんのが悲しいだけや
+ワイも100%の自信で出しとる訳じゃないからな
+どれが評判がいいか見られれば改善できるやろ？ 
+||=
+
+というわけで7thシリーズの感想はスレに書くのがおすすめ。
+
+*マージのバグ発覚
+
+119スレ905のリンク先より引用
+=|BOX|
+注意喚起です。
+現在、text encoderが壊れたモデルが出回っていて、壊れたモデルはプロンプトの最初の部分を無視します。
+壊れたモデルをマージの素材に使用すると、出力されたモデルも壊れます。
+自分のモデルに症状が出ていないか確認することをおすすめします。
+||=
+
+75n+1番目のトークンも無視するらしい。
+詳しくは元レスのリンク先で。
+
+119スレ914
+=|BOX|
+大半は問題なかったわ
+7th_animeだけあかんかった
+
+Sleepy cute loli
+
+これのみで生成して、ロリが寝なかったらアウトやで 
+||=
+
+一時期昏睡ロリ画像が大量に生成されたのはこの発言のせい。
+
+120スレ39
+=|BOX|
+やっと一次検証終わったやで
+
+アウトは　Abyss_7th_anime.ckpt (V1.1で修正済)、Elysium_Anime_V3.safetensors、etr_odyssey.ckpt
+グレーは　mdjrny-v4.ckpt
+一応寝てる？が　sd-v1-4.ckpt、sd-v1-4-full-ema.ckpt、v1-5-pruned.ckpt
+
+複数シードで見ないとsdちゃんは判断に悩むのを出してくれる 
+||=
+
+**修正方法
+120スレ47
+=|BOX|
+よし、直った
+
+直し方は　モデルAに壊れてる奴、モデルBに正常な奴
+層別パラメータをALL 0、base alphaを1 にして生成
+||=
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9mzH_30ZZE.png,589,219) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/JVP3hhzQh7.png,495,271)
+[END]
+*層別マージ
+automatic1111の拡張機能
+https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
+
+くわしくは[[階層マージ]]参照
+
+初出：https://fate.5ch.net/test/read.cgi/liveuranus/1671291043/468
+''468今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ &color(#ff0000){Sa9f-jh29})2022/12/18(日) 23:31:59.96ID:SnVtaxLOa''
+''https://image02.seesaawiki.jp/n/h/nai_ch/Zfpg99B77d.png''
+''''
+''''
+''上層インスタ下層NAI''
+''''
+''anygapeのテンプレはもうおわりやね''
+
+特徴としては手の圧倒的なリアルさである。さらにこの技術によって手と指の破綻もだいぶ改善されるのではないかと考えられている。
+もちろん実写系マージの効果は手のみに留まらず、リアルな裸体を求める者にとっては大幅な進歩になるであろう。
+
+**なりすまし騒動で一時混乱も
+
+''493今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ &color(#0060a2){8b1e-CLTW})2022/12/19(月) 00:51:39.39ID:nICEWkdN0''
+''468は誰かわからんけど違う人やで''
+''手はなんかいかガチャしてるけど、まあまあ打率高めやな''
+''なんでこうなるのかはさっぱり分からんで''
+
+''511今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ &color(#ff0000){Sa9f-jh29})2022/12/19(月) 01:28:31.57ID:L+4DHmw0a''
+''まだ設定煮詰めてないし、貰ったら別場所に拡散させようとしてる乞食がディスコードで既に見えてるから公開する気はあんまないで''
+
+''512今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ &color(#0060a2){8b1e-CLTW})2022/12/19(月) 01:33:53.93ID:nICEWkdN0''
+''＞＞511''
+''なんとなく言ってることは合ってるけど、騙って適当な情報言うのはやめておいてくれ''
+''ディスコに貼られてたり、どこかに既に上がってる以外の画像は君には貼れんやろ''
+
+つまり&color(#0060a2){8b1e-CLTW}=ぬいぐるみであって、&color(#ff0000){Sa9f-jh29}は転載したあげく非公開宣言をしているのであろうか。
+
+https://image02.seesaawiki.jp/n/h/nai_ch/bJRR0sumGW.png
+https://image02.seesaawiki.jp/n/h/nai_ch/xsh70GBAOD.png
+
+''531今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ be28-0o0D)2022/12/19(月) 02:08:33.23ID:bfypsCrG0''
+''え？人の画像パクって公開する気はない〜とか抜かしてるんか？ そんな無様なことある？''
+
+なぜ&color(#ff0000){Sa9f-jh29}はこのような不可解な行動をしたのか。
+考えられる目的としては
+�｜噂磴砲舛笋曚笋気譴燭�った
+�⊆�分ではぬいぐるみ氏の絵柄を再現できなかったのでなんU民にマージの研究をうながしてその成果を盗もうとした
+などであろうか。
+仮に�△�目的だったとすると、468以降のスレの流れは層別マージ一色であり、まんまとその目的は達成されてしまったことになる。
+
+*深度推定
+aiでdepth mapを作った後After EffectとかBlenderとかでいろいろやるとできる
+
+初出：https://fate.5ch.net/test/read.cgi/liveuranus/1671058902/581
+''581今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0fed-ZR1D)2022/12/17(土) 00:07:51.88ID:ZqNYEP3K0''
+''深度推定したおっぱい''
+''https://i.imgur.com/2kEfJEv.mp4''
+''https://i.imgur.com/oIlw2Bf.mp4''
+''https://i.imgur.com/26cXt93.mp4''
+
+このレス以後投稿者は特にやり方などを説明していない
+
+*WD1.3.5が一瞬出て消えた
+
+遅れに遅れているWD1.4のテストとして作られたモデル。
+TrinArt+Eimisベース。
+EimisがNAIベースだと思われるため批判にあい、NAI公式はOKを出したが公開は中止。
+最初の110k stepsだけ回したモデルを残す。
+SD2.1ベースのWDはリリース時期が実質未定に。
+
+112スレ648
+大松「&#129303;はファイルが消されても過去のコミット履歴からダウンロードできるぞ」
+https://huggingface.co/hakurei/waifu-diffusion-v1-4/blob/9fa4a42a9c4a0948472fa909e6c1a39be0dda699/models/wd-1-4-float32-booru-110k.ckpt 
+
+NAIベースかどうかは自供以外に判断のしようがなく、
+比較ツールと共に登場して他モデルやマージの批判に終始したモデルが出たり、
+Danbooruタグへの反応を根拠にモデル制作者に脅迫まがいのツイートをするモデル制作者が出たりして、
+ポストNAIモデルを狙う界隈は醜く混沌とした戦いが繰り広げられていた。
+
+114スレ831
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dmV2Oj1eoR-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/dmV2Oj1eoR.jpg]]
+
+* Lora
+
+新たな学習法。DreamBoothのオプションとして使用できる。
+学習が速く、必要VRAMが少なく、ファイルサイズが小さい(3MB程度)のが特徴。
+これでVRAM 8GB勢がギリ人権を得た。HNもついでに活発になった。
+
+*メスガキプロンプト消失事件
+
+発端：https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/236
+''236今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa08-YHv1)2022/12/06(火) 11:50:24.42ID:oyNbIv5ha''
+''プロンプトは金産む価値あるから秘蔵するやつは出るわな''
+''wikiのメスガキ関連いつのまにか全部消えてたし露骨すぎて草''
+
+スレ民に動揺が走ったが、現在はメスガキニキへの嫉妬が生んだ被害妄想であったというのが有力説である。
+
+''528今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ f611-Znoa)2022/12/06(火) 20:31:38.66ID:AgAxETaY0''
+''＞＞236　(ｱｳｱｳｳｰ Sa08-YHv1)oyNbIv5ha''
+''＞＞258　(ｱｳｱｳｳｰ Sa08-YHv1)''
+''＞＞243,248　(ﾜｯﾁｮｲ 9a61-R4o2)5gwb9arR0''
+''''
+''ちょっと探せば''
+''整理倉庫にメスガキ　部室一覧にロリ濡れ透けマイクロビキニ野外露出部''
+''あるし作ろうと思えばどうとでもなるのに単発ＩＤコロコロで対立煽りって''
+''上手く煽れて楽しかったろうな''
+''''
+''https://majinai.art/i/moQcFpU.webp https://majinai.art/i/Q5d5w62.webp''
+
+10月頃(NAIブーム初期)にあった内容が今無くなってるみたいな報告はいくつかあるけど、
+それはページ再編の時とかに消しちゃってるかも知れないので、
+今でも有効そうなノウハウを持ってる人は再掲してくれるとありがたいです。
+
+*ローカル勢とweb公式勢が袂を別つ
+
+いつの間にかスレはローカル勢が大半を占めることとなり、話題の大半は追加学習などローカルでしかできないことになった。その結果web公式勢は肩身の狭い思いをすることとなり、何を言っているのか分からない、といった苦情がちらほらと見えるようになった。
+そこでとある理由により本スレであるなんJNVA部と分離した[[なんJnovelAI部★64>https://fate.5ch.net/test/read.cgi/liveuranus/1666193928/]]というスレを再利用し、web公式専用のスレにしようという意見が持ち上がった。
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1666193928/955
+''955今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9ff2-tmyp)2022/12/01(木) 12:50:32.04ID:ZEiSyf820''
+''ローカルとwebサービスとで分けたらいいんちゃうか？''
+
+その結果建てられたのが[[なんJnovelAI部★65>https://fate.5ch.net/test/read.cgi/liveuranus/1670412212/]]である。
+こうしてスレは分離した。
+そしてなんJNVA部ではプロンプトの研究はかなり数を減らしたのであった。
+* ちょっとしたクラウドブーム
+
+たぶんDreambooth需要とpaperspaceの宣伝した人のタイミングが噛み合って、
+学習をクラウドで行うブームが起こった。
+paperspace公式も動画を出して宣伝したり、ユーザーが増えて使いにくくなったり。
+WSL2を使って生成速度を上げるネタも出てきて、ローカル勢の環境は多様化した。
+
+* 2022-10-17 ウマシコDiscord爆破+技術部爆誕
+
+162スレ451
+=||
+そういう経緯があったからウマシコDiscordが出来てTwitterにそれ晒すガイジが出て崩壊したから爆破して今の技術部Discordがウマシコ禁止で立ち上がったんやけど
+スレ9月くらいからおらなら誰でもわかると思うわ
+wikiは爆破されたらガチで困る 
+||=
+
+別のウマシコDiscordもどっかにあるやで
+
+* 歴史
+
+- 11月は???
+- 2022/10/16 中華クソ長ネガが発掘される 元素法典の発見がこのへん
+- 2022/10/15 マジカルチンポ
+- 2022/10/08 wiki誕生
+https://fate.5ch.net/test/read.cgi/liveuranus/1665212241/653
+>wikiつくってみたで~~
+>今手動でスプシのデータを移してるとこや~~
+>https://seesaawiki.jp/nai_ch/ ~~
+- 2022/10/04 1スレ目が立つ
+https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
+- 2022/10/03 NovelAIが画像生成サービスを開始
+- 2022/09/14 Waifu-Diffusionが某ニュースサイトで取り上げられる
+- 2022/09/07 Stable Diffusion web UI(AUTOMATIC1111版）が某ニュースサイトで取り上げられ話題に
+- 2022/09/04 Stable Diffusion web UIが某ニュースサイトで取り上げられる
+- 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
+https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
+- 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 04ee015699518104ef58d72d6fca9c7613ed2a2a

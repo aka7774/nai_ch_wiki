@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #contents
 * テーマ
 数単語以上でのいい感じのやつ
@@ -282,3 +283,289 @@
 |}
 [END]
 
+=======
+#contents
+* テーマ
+数単語以上でのいい感じのやつ
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|1girl, puffy nipples, huge nipples, dark nipples , {{{{{{black nipple}}}}}}, {{{{{{brown nipple}}}}}}, {{{{{{black colored nipple}}}}}}, {{{{{{black colored nipples}}}}}}, {{{{{{brown colored nipples}}}}}}, small breasts, purple eyes, messy hair, [nude], nsfw|dark skin, dark skin female, colored skin, clothes, pink nipples, limited palette, {{huge breasts}}, {{large breasts}}, |貧乳黒乳首|Sampling Steps:40~~目色(purple eyes)と髪型(messy hair)の欄は変更しても大丈夫そう~~組み合わせによっては胸周辺の肌にインナーの様な汚い薄い黒が掛かってしまう(追記:ネガティブにblack liquidで修正が効く場合がある)が、nudeの強度を変えることで対応可能(1に近ければ近い程貧乳化・loli化が顕著になる、場合によっては外すのもアリ)|https://image01.seesaawiki.jp/n/h/nai_ch/Q7oJ2NqxY4.png|
+|colored nipples ,〇〇 nipples|colored skin(肌の色を特別に変えたくない場合)|色乳首|〇〇には色を指定~~極稀に出る|https://image01.seesaawiki.jp/n/h/nai_ch/W1x2Gmi014.png|
+|realistic, flat chest,|realistic|大人の女性で貧乳|プロンプトとネガティブ両方にrealisticを入れる|https://image02.seesaawiki.jp/n/h/nai_ch/cCdKwSfVSc.png|
+|hyper extreme detailed,{1girl},{{girl focus}},&#91;&#91;love live!]],{{{nendroid}}},{{{chibi}}},{{months old}},chubby,flat chest,{{diaper}},{{{{{{{{{{{small legs}}}}}}}}}}},long socks,skirt,{{short arms}},{{{{short body}}}},baby cloth,bib,pacifier,happy,tilt head,lying,{{{baby cradle}}},{{nursery}},|bald,no hair,prosthetic leg,cross her legs,{{{{{{leg focus}}}}}},face out of frame,doll,figure,ball joint,text,number,alphabet,mother,comic,dwarf,pigmy,panty,panties,bar censor,mosaic censorship,disembodied_penis,&#40;mutated hands and fingers:1.5 ), &#40;long body :1.3), &#40;mutation :1.2) , missing fingers,missing limb, fused fingers, one hand with more than 5 fingers, one hand with less than 5 fingers, one hand with more than 5 digit, one hand with less than 5 digit,extra digit, fewer digits, fused digit, missing digit, bad digit, liquid digit,multiple arms, multiple legs,|赤ちゃん化プロンプト。数単語では困難な赤ちゃんを安定召喚出来るほか、キャラ名などのタグと混ぜるとそのキャラを赤ちゃんに出来る。portrait(縦長)以外だと作画崩壊しやすい。また単語同士が牽制しあってバランスを取っているので、アクションや状況の柔軟性は低い。(今後の研究求む)|【仕組み】赤ちゃんにするにあたりbabyはあまり効かない。そのためmonths oldを起点にchibiで更に体型を縮め、nendroidとlovelive!(薄め)で体型を維持しつつ画風を安定化。いっぽう体型も縮める方向でタグ指定。これらの単語の副作用としての各種作画崩壊をネガティブプロンプトで抑制している。|https://image02.seesaawiki.jp/n/h/nai_ch/JRzkSeZxYN.PNG|
+|}
+[END]
+
+* ロリ化プロンプト効果比較（1girl,solo+プロンプト）
+一覧画像（長いので折り畳み）
+[+]
+[[https://image02.seesaawiki.jp/n/h/nai_ch/Cs6kGIf1FU.jpg]]
+[END]
+
+* 単語集
+
+** ''胸の大きさ''
+[+]
+※参考画像
+[+]
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/y5FCq21zpF.jpg)
+[END]
+二つの設定の中間の大きさがいいなぁ、というときは  
+二つの単語を記載して、さらに強弱をつけることで対応する。
+例）smallとmediumの中間にしたい。でもちょっとmedium寄りにする場合。(以下2単語を両方記載する)
+&lsqb;&lsqb;small breasts&rsqb;&rsqb;, medium breasts
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|flat chest||||
+|||||
+|huge breasts||||
+|sagging  breasts|垂れ乳|||
+|flat chest|平らなお腹・貧乳|||
+|small breasts|小さい胸・微乳|||
+|medium breasts|中くらいの胸・並乳|danbooruの分類上思ったより大きくなる||
+|large breasts|大きい胸・巨乳|||
+|huge breasts|爆乳|||
+|bombshell|爆乳|{best quality}, {{masterpiece}}, {highres}, original, extremely detailed wallpaper, 1girl，{an extremely delicate and beautiful}，extremely detailed CG  8k wallpaper, {nsfw},medium_breasts,between legs,head chain, jewelry,full body,ahegao,myned,beautiful detailed eyes,emerald green eyes,Chinese red hair,gold headdress,slim,double ponytail,light blue gradually changed nail polish,beautifully designed golden toe band sandals,hair down to waist,gold grown with black double corners,gold ring on the leg,arms up,arms behind head,crystal butterflies with different colors,pussy,clitoris,vagina,|https://image02.seesaawiki.jp/n/h/nai_ch/cidepTdUdo.png|
+|gigantic breasts|超乳|||
+|}
+[END]
+
+** ''年齢''
+''※備考の≒〜 years oldの部分は筆者が〜 years oldの画像と見比べて~~このあたりに近いなって個人的印象に基づいた数値になります。あくまで目安としてください。''
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|{baby}|赤ん坊|下記と同じseed値ではこれだけ強調なしでは女性のままだった|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OR6D5nld6A-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/OR6D5nld6A.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/C1wSqVNFXX-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/C1wSqVNFXX.png]]|
+|loli|子供,ロリ|≒5 years old~~childに近いが恐らく年齢以外の要素(かわいくなる要素?)が追加される|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pC5QPkZ77j-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pC5QPkZ77j.png]]|
+|child|子供|≒5 years old|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/b8NS9u6X7z-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/b8NS9u6X7z.png]]|
+|minor|未成年|≒young girl~~≒11 years old|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cfiGvumsz3-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cfiGvumsz3.png]]|
+|young girl|若い女の子|≒12 years old~~girlに近いが恐らく年齢以外の要素(かわいくなる要素?)が追加される|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zc0_0UjhyJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/zc0_0UjhyJ.png]]|
+|young age|若い世代|≒12 years old|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BjmzSQ_ajH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BjmzSQ_ajH.png]]|
+|girl|女の子、少女|≒12 years old|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3rlFcTCZR0-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/3rlFcTCZR0.png]]|
+|teenage|10代|≒14 years old|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/i6xTnQfZZ7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/i6xTnQfZZ7.png]]|
+|teen age|10代|≒16 years old~~半角スペース足すと少し印象が変わる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/P5ZJROKQno-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/P5ZJROKQno.png]]|
+|woman|女性|≒21 years old|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_Gayi_xh2r-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_Gayi_xh2r.png]]|
+|lady|婦人|≒26 years old~~femaleに近いが恐らく年齢以外の要素(意思の強い印象?)が追加される|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lIFnCuYMwJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lIFnCuYMwJ.png]]|
+|female|雌|≒adult~~≒30 years old|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0dMmha1srH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0dMmha1srH.png]]|
+|adult|大人|≒female~~≒30 years old|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hERnifanTW-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/hERnifanTW.png]]|
+|middle age|中年|≒33 years old|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HcDr_5w7du-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/HcDr_5w7du.png]]|
+|mature female|熟女|≒33 years old~~femaleに大差はないがエッチなお姉さん感が増える？|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0rdIFPilQO-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0rdIFPilQO.png]]|
+|old lady|老婦人||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sVKlLX_Jly-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/sVKlLX_Jly.png]]|
+|old age|おばあちゃん|seed値同じなのにこれだけなぜかおじいちゃんになった|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NRoecUZleM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/NRoecUZleM.png]]|
+|〜 years old|〜歳|5歳以下と50歳以上辺りになると効果がなくなる|以下折り畳み参照|
+|}
+
+[+]〜 years old（0歳〜100歳までサンプルを載せているため画像量多いため省略）
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+||||https://image02.seesaawiki.jp/n/h/nai_ch/3K3RGFcozT.png|
+|〜 years old|〜歳|5歳以下と50歳以上辺りになると効果がなくなる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GndwTVK2VY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/GndwTVK2VY.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3K3RGFcozT-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/3K3RGFcozT.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fMCk42MQmD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fMCk42MQmD.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DGcNU5qQZP-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/DGcNU5qQZP.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/I2WtZa6Twh-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/I2WtZa6Twh.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/y8gC_5pt1_-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/y8gC_5pt1_.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/etD2rvXge4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/etD2rvXge4.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/A97VwAdYIa-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/A97VwAdYIa.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zwZ_qhhfkG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zwZ_qhhfkG.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tVbNiUdueb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tVbNiUdueb.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BGoiPYZyzz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BGoiPYZyzz.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iCZegYW5kW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/iCZegYW5kW.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zI6DqXFAZm-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zI6DqXFAZm.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JE2SOPk_Ig-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/JE2SOPk_Ig.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/I_ga9bHrCr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/I_ga9bHrCr.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/v1RcdJPeZf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/v1RcdJPeZf.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/eZLlLOKo7T-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/eZLlLOKo7T.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TYIEZAmxeb-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TYIEZAmxeb.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/hgfoBKg517-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/hgfoBKg517.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2i8p9rdufc-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2i8p9rdufc.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/oHnkNJNj0O-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/oHnkNJNj0O.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/oAcKCEEkJY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/oAcKCEEkJY.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Ko_tlOR_Na-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Ko_tlOR_Na.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3sW3UstPac-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3sW3UstPac.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/50Ruq7Gl8T-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/50Ruq7Gl8T.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PDqKMnzhFp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/PDqKMnzhFp.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_5WyRmq9sE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_5WyRmq9sE.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nd6e5iJrkV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nd6e5iJrkV.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/35Yeueiazk-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/35Yeueiazk.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/hdIZG9mOVA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/hdIZG9mOVA.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EX0tqtOVl0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EX0tqtOVl0.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QZSbjbOYdi-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/QZSbjbOYdi.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qgIfQcNRCf-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qgIfQcNRCf.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HQf7wbbSv6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/HQf7wbbSv6.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/klwQcKQwX6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/klwQcKQwX6.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/u325fa5cJ6-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/u325fa5cJ6.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zsWvF42cw9-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zsWvF42cw9.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zfzdGZFmNW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zfzdGZFmNW.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0BeuwkZRRt-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0BeuwkZRRt.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VPYMDlfAy7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/VPYMDlfAy7.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Ma423AULdi-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Ma423AULdi.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/rfDMhBC6_M-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/rfDMhBC6_M.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0rzMNOV1kB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/0rzMNOV1kB.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/J12YR13gGh-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/J12YR13gGh.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Nk0bYBH1XN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Nk0bYBH1XN.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/m_lEcxFB17-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/m_lEcxFB17.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SuJ9Q3EbaW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SuJ9Q3EbaW.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_JAOwfBcf0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_JAOwfBcf0.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/a2YaRGrzva-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/a2YaRGrzva.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JK1qJK6cXM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/JK1qJK6cXM.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/IrfIJqdRFH-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/IrfIJqdRFH.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/f7EYU4h3xZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/f7EYU4h3xZ.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Bw9g1ZiYPf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Bw9g1ZiYPf.png]]|
+|}
+[END]
+[END]
+
+** ''体形''
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|voluptuous|むちむち~~グラマラス||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5JyT0FpKAx.png)|
+|Weight:〇〇kg|体重|〇〇には数値を入れる||
+|belly|腹が太くなる|おなかの露出度も上がるっぽい|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WMPPZzD1qE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/WMPPZzD1qE.png]]|
+|thicc|胸と尻から太ももを盛る||https://image02.seesaawiki.jp/n/h/nai_ch/3Csv2iUAPo.png|
+|plump|むちむち~~ぽっちゃり||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DROjzlo68p.png)|
+|chubby|むちむち~~ぽっちゃり||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Z3HgqqC58v.png)|
+|curvy|むっちり、肉体的な||https://image01.seesaawiki.jp/n/h/nai_ch/XlNJiC6AZ9.png|
+|fat|デブ||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JSdYeUP3JJ.png)|
+|pregnant~~maternity|ボテ腹　崩壊しやすい|womb implantation,impregnating,implied pregnant,conceive a child,Expecting a child belly~~など取り合えず妊娠を意味する言葉を入れておけばpregnant単体よりも安定する。||
+|slender,slim,skinny|スレンダー|あまり実感はない。爆乳に釣られてムチムチ化するのを軽減するぐらい|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/AqQyXlbLjT-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/AqQyXlbLjT.png]]|
+|chibi|SD化|ロリにもなる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YhY2H2lFSl-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YhY2H2lFSl.png]]|
+|child~~toddler|小さくなる|ＳＤ化無しでロリなら||
+|muscularまたはabs|マッチョ|ここまでは求めてないという方はbicepsかexposed muscleを使おう~~腹筋だけ欲しい時はobliquesを使う|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZXGhLWizW9-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ZXGhLWizW9.png]]|
+|oppai loli|ロリ巨乳|強調すると更に巨乳化||
+|loli face and big boobs|ロリ巨乳|oppai loliよりも強力。bigをhugeに変えると更に盛れる。loliやchildと併せて使おう||
+|}
+[END]
+
+** タトゥー、ボディペイント
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|a girl with extremely dirty back and arms by rainbow liquid, her body is the canvas of the art, eastern dragon tattoo picture is full of her back, naked, ultra-detailed tattoo, gigantic quality tattoo, ultra colourful with vivid red floral accented tattoo, stylized dragon face, colourful art|モンモン|クオリティ補助なし, PLMS & 低Scale でやるのが重要~~Steps: 23, Sampler: PLMS, CFG scale: 5, Size: 512x512|https://image02.seesaawiki.jp/n/h/nai_ch/zQF6vVW4LY.png|
+|tribal tattoo on body|部族娘||https://image02.seesaawiki.jp/n/h/nai_ch/vJEkhRfGfO.png|
+|henna tattoo on body|中東風||https://image02.seesaawiki.jp/n/h/nai_ch/gXgVlxK_Cq.png|
+|highlighter painting tattoo on body|蛍光ペン||https://image01.seesaawiki.jp/n/h/nai_ch/MFvGjHovVS.png|
+|}
+[END]
+
+** ''髪型''
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|bald|ハゲ|薄毛ではなく完全にはげる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zQtgPLdE9S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zQtgPLdE9S.png]]|
+|chignon| シニヨン|束ねた髪を横や後頭部でまとめた髪型となる。効いてない場合は強化詠唱してください。|https://image01.seesaawiki.jp/n/h/nai_ch/txk9qS0BwE.png　https://image02.seesaawiki.jp/n/h/nai_ch/BiB8eg_wHG.png|
+|double bun~~topknot|お団子頭|シニヨン（中華系の白饅頭っぽい髪飾り）になる事も|https://image02.seesaawiki.jp/n/h/nai_ch/APiTjuLoiV.png|
+|bedhead|寝癖|髪が横に跳ねるようになる|https://image01.seesaawiki.jp/n/h/nai_ch/b9W6KuFZq_.png|
+|french braid|高い位置から結ぶタイプの編み込み||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AwJztlAvin-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/AwJztlAvin.png]]|
+|braided bun|編み込んだお団子頭||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/c5flCXQQSG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/c5flCXQQSG.png]]|
+|crown braid|編み込みを頭の上に通す|ネガティブにcrown|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Dd8SzpTDTo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Dd8SzpTDTo.png]]|
+|hair_slicked_all_back, very short hair|オールバック|偶に後ろで結んでるので、気になる人はネガティブにポニテやtiedを入れよう|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ctfbT1Zn7p-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ctfbT1Zn7p.png]]|
+|hair spread out|分けられて広がった髪|実際は肩などで伸びた前髪と後ろ髪が分離した絵が出がち。前髪もよくわかれる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Zg2fVachNT-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Zg2fVachNT.png]]|
+|hair pulled back, Folded tied hair|後ろ髪を折りたたむ|生成頻度は低い。お団子髪や髪を結んでる途中の絵になりがち。艦これの電やかぐやさまみたいに綺麗な髪型にはならない。改良求む|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nYnh6AeNGZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nYnh6AeNGZ.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MHNdH4Ugro-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/MHNdH4Ugro.png]]|
+|severed hair|耳の出る髪型|組み合わせて使った方が良いかも|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9ACukZ69hC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/9ACukZ69hC.png]]|
+|hair slicked back|後ろに撫でつける|hair_pulled_backよりも前髪含めて後ろに強く流してる印象。オールバックに近いが、結構多彩な髪型が出る|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aIWArsPKMd-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aIWArsPKMd.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2Y5VOUqplR-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/2Y5VOUqplR.png]]|
+|braided ponytail|編み込みのあるポニーテール|しっぽ部分が編み込まれることもある|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nOj7Kn7sac-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/nOj7Kn7sac.png]]|
+|multiple braids|複数個所を編んだ髪型||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BQUroXEW0m-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/BQUroXEW0m.png]]|
+|hair_pulled_back|髪を後ろに流す|後ろで髪を結んだり、前髪を耳の後ろに流したりするときに使う。片方のおでこが出やすい|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MdO3E0k8RQ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/MdO3E0k8RQ.png]]|
+|diagonal bangs|斜めの前髪|これ単体だとbangsと混ざりやすい。他の髪型と組み合わせて使った方がいいかも|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/22XfEBjqnK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/22XfEBjqnK.png]]|
+|Husky hair|M字バング+sidelocks+long hair|犬のハスキーの特徴が出る。黒髪が多い。whiteを組み合わせると白くなる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/E5PrwJD08l-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/E5PrwJD08l.png]]|
+|retriever hair|もさもさのロングヘア|犬のレトリバーの特徴が出る。goldenをつけると金髪で安定する|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8DZT6IuPzK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/8DZT6IuPzK.png]]|
+|beagle hair|肩までの長さの茶髪|犬のビーグルのような特徴が出る|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/El3u7hvO1Y-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/El3u7hvO1Y.png]]|
+|boston terrier hair|分け目のある黒髪|犬のボストンテリアのように分け目のある黒髪が出る|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/F0MGQNjrnu-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/F0MGQNjrnu.png]]|
+|afro twin tail|アフロツインテール|髪量の多いツインテール|https://image01.seesaawiki.jp/n/h/nai_ch/8waBGnjiLL.png|
+|sidelock|耳の前の毛||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/U1NTbNs_2F-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/U1NTbNs_2F.png]]|
+|pixie cut|ピクシーカット|側頭部と後頭部が短い髪型~~ショートになる確率が高いがたまに出る|https://image01.seesaawiki.jp/n/h/nai_ch/L8FHZxd5ut.png|
+|low twintails|いわゆるカントリースタイル？|生成頻度は微妙。また、long hairで使用すると~~なぜか何回か束ねる感じになることが多い。~~繰り返し生成が必要。low low twintailsにすると生成頻度は結構上がる。|https://image02.seesaawiki.jp/n/h/nai_ch/kJLEoHf0om.png|
+|blunt bangs|ぱっつん前髪||https://image02.seesaawiki.jp/n/h/nai_ch/nzVNwvlVVw.png|
+|goku hair|||https://image02.seesaawiki.jp/n/h/nai_ch/PUyZZC06lO.png|
+|Jinx hair|ジンクスの髪型|LOLのジンクスに似た前髪になる|https://image02.seesaawiki.jp/n/h/nai_ch/X9DoRaEsnW.png https://image01.seesaawiki.jp/n/h/nai_ch/2r6n6tYwUu.png|
+|Large amount of hair|髪のボリュームが増える||https://image02.seesaawiki.jp/n/h/nai_ch/gf4YXBINUX.png|
+|{{{gradation hair}}}, black hair, green hair,…|髪にグラデーションがかかる。髪全体で色の傾向を作る場合に使えるかも。例では緑と黒指定|||
+|{{{gradation hair}}}, 髪の色 hair,別の髪の色 hair,…|髪の毛の色をグラデーションさせられる|4,5色ぐらいまでは描画可能だが、色が多くなると色ごとに調整しないと特定の色ばかり出てくるので注意|https://image02.seesaawiki.jp/n/h/nai_ch/4LETvnGnF0.png|
+|parted bangs|分かれた前髪|7.3ぐらいになる|https://image01.seesaawiki.jp/n/h/nai_ch/Ud2Nmmx_en.png|
+|iridescent color hair|玉虫色の髪色|サンプルの呪文は{{{{iridescent_color_hair}}}}, red hair, blue hair, green hair,yellow hair, purple hair,Arancione hair,~~少し試した感じ色の組み合わせは変えられそう|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CA4s_gWj13.png)|
+|hijiri byakuren|髪色のグラデーションカラー化|Scale 8 程度で使用。髪の色が途中で変わり、毛先が別の色になる。Scaleが高いと元ネタに引っ張られて色が固定される。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/g9cD1rE0bi-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/g9cD1rE0bi.png]]|
+|forehead/hairline|でこだし|forehead jewell,forehead mark,を除外しておくと、おでこからなんか生えてくるのを回避できる|https://image02.seesaawiki.jp/n/h/nai_ch/e0GLRkyb6C.png|
+|spiralcurl|渦巻き状のカール||https://image02.seesaawiki.jp/n/h/nai_ch/zJLKTxF8o0.png|
+|drill hair|縦ロール|ドリル状|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kpZSP6DJnz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/kpZSP6DJnz.png]]|
+|hair up|長い後ろ髪を後頭部にまとめ上げる|ポニテなどで後ろの髪の量が増える|https://image01.seesaawiki.jp/n/h/nai_ch/ajn0NT0Oao.png|
+|wavy hair|ウェーブがかった髪|ツインテールなどと組み合わせることも可能(右下画像)|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VkxYcsGvYG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/VkxYcsGvYG.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jyPP10b926-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/jyPP10b926.png]]|
+|hair intakes|エアインテーク|もともとこのタグを入れなくても描写されることがあり、入れても効果を実感しづらい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/umH843krg9-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/umH843krg9.png]]|
+|twintails|ツインテール||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/84G9rOIjlp-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/84G9rOIjlp.png]]|
+|hair over one eye|片目が髪で隠れるやつ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/j21wPAvieV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/j21wPAvieV.png]]|
+|&#91;one eye visible through hair]|片眼が髪から透けて見える|目の見えるメカクレ。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8P2YCDsHh4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/8P2YCDsHh4.png]]|
+|antenna hair|アホ毛|数本出てくることが多い|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wS8OgBsYuh-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wS8OgBsYuh.png]]|
+|ahoge|アホ毛||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RGIBkht2O2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/RGIBkht2O2.png]]|
+|sidelocks|横髪。耳の前の髪|強調すると短髪でも横髪は長くなる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/U1NTbNs_2F-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/U1NTbNs_2F.png]]|
+|bangs|前髪|おでこにサラッとした感じに前髪がかかる~~(パッツンではない)~~目と目の間に入るのとはまた別|https://image02.seesaawiki.jp/n/h/nai_ch/8OXqIyG92u.png|
+|blunt bangs|前髪パッツン|前髪を真横に切ったような感じになる|https://image01.seesaawiki.jp/n/h/nai_ch/7pAjgYRvfR.png|
+|hime cut~~blunt bangs bob cut|前髪パッツンのロングヘアー|効果が薄め+重ねまくると人物が幼くなる~~blunt bangs+long hairのほうが効きが強いらしい|https://image01.seesaawiki.jp/n/h/nai_ch/k6DhjyJgDy.png|
+|messy hair|ぼさぼさ髪、寝ぐせ|ベッドに寝て乱れてる髪もこれでいける(右下画像)。強調しすぎると顔に謎の汚れが出る|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kaQjSNCr2Q.png)[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/c5ZmqG5yDC-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/c5ZmqG5yDC.png]]|
+|spiked hair|ツンツン頭|短い髪型だけでなくスーパーサイヤ人的な長いツンツンもこれ|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oEZpeGNKgz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oEZpeGNKgz.png]]|
+|twin braids|おさげ, 三つ編み, short hairと組み合わせることも可能||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_uLZUkcrS9-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_uLZUkcrS9.png]]|
+|gradient hair|グラデーションのある髪||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/n1zy_meYob-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/n1zy_meYob.png]]|
+|floating hair|風などにより髪がそよいでいる感じ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ozg9viHn5J-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ozg9viHn5J.png]]|
+|sideburns|もみあげ|横髪が伸びる？ 強調しまくると横髪というより、横顔と耳ともみあげを見せる髪型になる。||
+|hair|色や髪型と併用が基本|||
+|straight hair|ストレートヘアー|||
+|shiny hair|艶のかかった髪|||
+|flowing hair|流れた髪|||
+|crossed bangs|前髪がクロスするやつ|||
+|hair between eyes|M字バング|||
+|cleavage hair|分け目の見える髪型|胸の谷間も一緒に強調されやすい||
+|pompadourhair|リーゼント|||
+|bob cut|ボブヘア|||
+|long hair|ロングヘアー|||
+|short hair with long locks|ショートヘアー + 長い髪の房|||
+|two side up|ツーサイドアップ※ワンサイドになることも|||
+|frizzy hair|くせっ毛|||
+|tired hair|ぼさぼさ髪|強調しすぎると疲れた顔に変化する||
+|disheveled  hair|髪が乱れる。|強調しまくるとぼさぼさ、寝ぐせ||
+|hairy hair (flipped hair)|毛深い。はねっ毛。|強調しまくると物凄いはねっ毛に。ただしnudeと併用するとファーをつけたみたいになったり、ギャランドゥ周辺が毛深くなる。(「flipped」は自ら髪を束ねたり引っ張る動作をする)||
+|shaggy hair|はねっ毛|外はねボブヘアー？shaggy単体だと髪が緑色になるため特定のキャラと結びついている可能性||
+|short with long locks|触角付きショートヘア|||
+|bowl cut hair~~blunt bangs+bob cut|おかっぱ|blunt bangs+bob cutの方が効きが強い||
+|Various hairstyles|様々な髪型|髪型がランダムになる||
+|}
+[END]
+
+** ''耳・しっぽ・角・人外風パーツ''
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|cat||||
+|animal_ear_fluff|耳毛|動物耳の中に生えてるもさもさ|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OiQLuzvNRM-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/OiQLuzvNRM.png]]|
+|coyote ears|コヨーテ耳|あまりリカオン耳と変わらない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/404m0PnlCg-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/404m0PnlCg.png]]|
+|Tapir ears|バク耳|ツチブタ耳とオポッサム耳が混ざったような耳|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TVglX6TNRd-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TVglX6TNRd.png]]|
+|polar bear ears|シロクマ耳|ヘアバンド付け耳みたいになることがよくある。また後ろにホッキョクグマが生成されがち。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lGLue6gKn5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lGLue6gKn5.png]]|
+|bear ears|クマ耳|黒髪や茶髪で生成すると、ピンクの部分が消えて、某夢の国のネズミみたいな耳が生成されがち|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2phovOfTGT-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/2phovOfTGT.png]]|
+|{{{Aardvark ears}}}|ツチブタ耳|強調しないと出にくい、大きさと広がり具合が不安定|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZvZhNiGqay-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ZvZhNiGqay.png]]|
+|{{{Lycaon ears}}}|リカオン耳|強調しないと出にくい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OYCOspx2o9-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/OYCOspx2o9.png]]|
+|opossum ears|オポッサム耳||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ARt72YpM3x-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ARt72YpM3x.png]]|
+|hare ears|ウサギ耳|bunny ears/rabbit earsよりも立ったウサギ耳が生成される。elfを除外しないと、エルフ耳になりがち。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cBHt3bN9zi-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cBHt3bN9zi.png]]|
+|miqo'te|ミコッテ|猫耳と尻尾（たまに）が生成される||
+|succubus|サキュバス|||
+|cow girl|牛娘|耳と角としっぽが生成されます、牛柄ビキニはcow print||
+|cat tail|ねこしっぽ|正しく尾てい骨から1本だけで出力されないことがある、multiple tailsを除外したらマシになる？||
+|wolf ears|狼耳|||
+|cat ears|ねこみみ|||
+|succubus|女夢魔|||
+|rabbit ears|うさみみ|バニー風衣装が出やすくなる気がする|画像なし|
+|horse ears|馬耳|||
+|cow ears|牛耳　※角も生えやすい|||
+|elf|エルフ耳|||
+|pointy_ears|とがった耳。エルフ耳よりは短くなる|||
+|fangs|牙|||
+|horse tail|馬しっぽ|||
+|demon tail|悪魔風しっぽ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/97067c434e27079f-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/97067c434e27079f.png]]|
+|mermaid|人魚|||
+|}
+[END]
+
+** 肌
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|&#40;masterpiece:0.2), &#40;megami magazine:0.8) best quality, solo, 1girl &#40;dark skin:1.3) shiny wet sweat oily skin, cinematic rim lighting, realistic, unreal engine|濃いめに焼けた肌||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/K9jrrn61Lu-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/K9jrrn61Lu.png]]|
+|glistening skin|テカテカ肌|shiny skinより強めになる||
+|skin|肌の色|色と組み合わせて使う。||
+|dark skin,cocoa skin|小麦色|黒ギャルを作ろう！darkの方が黒人女性っぽくなりやすい。逆にcocoaは日焼け肌と分からないほど薄い時もある。またcocoaの方はたまにココアの粉が混ざる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kSWOH_95rM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/kSWOH_95rM.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1SAp1tvJYE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/1SAp1tvJYE.png]]|
+|〇〇 tanned|水着跡|こっちの方が安定して水着の形で出る。この呪文の前にブラやパンティを入れて水着姿ではないと強調が必要。ネガティブに出したい水着の形を強めに消しておくことを推奨。bikiniとone-pieceしか検証してないので他の水着で出るか要検証。裸で出したい時は末尾にskinをつければ日焼け肌と認識してくれる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/bMGfaoHzj2-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/bMGfaoHzj2.png]]|
+|tan|日焼け|||
+|tanlines|日焼け跡|残念ながらまともな日焼け跡にはならない。複数の水着跡が混ざる。分割方法や、形の特定情報求む||
+|shiny|ツヤツヤ|shiny単体で使うと体全体がつやつやに。光らしたい場所と合わせて使うこともできる。shiny skinなら肌がツヤツヤに、shiny clothsならボディスーツ感が出る。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/v0a0bqDsOT-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/v0a0bqDsOT.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DcyDOTaxwO-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/DcyDOTaxwO.png]]|
+|}
+[END]
+
+** ''その他''
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|意味|備考|サンプル|
+|butt crack|お尻の割れ目|お尻を強調した構図になりやすい||
+|missing limbs,limb deficiencies,cripple|義肢の人|ロボットアームをつけがち||
+|ganguro|ガングロ||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TvnriJDqoM.png)|
+|malebody female|男の体の女性|penis・pussyは必要。girlとかboyでも可。強調次第で体型が変わる||
+|groin|鼠径部~~腹部と太ももが交わる、下腹部にある線状のくぼみ|薄着でのみ可能|https://image01.seesaawiki.jp/n/h/nai_ch/G_fL_PLXaK.png https://image02.seesaawiki.jp/n/h/nai_ch/jgbfQPg4PN.png|
+|attractive older woman, mature woman, MILF,curvy,{masterpiece} , {highly_detailed},{disheveled hair}|熟女系|MILFとかmature womanじゃあ物足りないぜ！って方向けに。アラフォーチックなお姉さんが生まれてくれます。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_kZ7CI_A1u-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_kZ7CI_A1u.png]]|
+|trapezius|僧帽筋|back of body と併用で後ろ向きにすると効果的|https://image01.seesaawiki.jp/n/h/nai_ch/cGhnhuITcU.jpg|
+|groinnether region|股間|||
+|long legs|モデル体型になり脚が強調された構図になりやすくなる|体位によっては下半身が崩れやすくなる|https://image01.seesaawiki.jp/n/h/nai_ch/uDlcxbb6e8.png|
+|sideboob|横乳|||
+|underboob|下乳|||
+|pubic hair|陰毛|||
+|bulge|パンツなどの股間を膨らませる|||
+|cervix, vaginal|子宮頚部|局部の精度が上がるが、高確率で挿入シーンになる||
+|nipple|乳首|||
+|puffy nipple|ぷっくりした乳首|Undesired Contentに登録すると標準より小さい乳首が出るようになる||
+|areolae|乳輪|||
+|barefoot|裸足|足指数不安定||
+|vaginal|膣、おま〇こ|||
+|navel|へそ|お腹が見える構図や衣装にしたいときに||
+|cleft of venus|割れ目、すじ|広げられているときには不使用 ※服の上から透けているときはcameltoe||
+|skindentation|衣服が肌に食い込む様子|fat, big breasts, thighhighsあたりと相性が良さそう。股の食い込みならwedgie推奨|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2cbb0d150c5d245f-s.png)> https://image01.seesaawiki.jp/n/h/nai_ch/2cbb0d150c5d245f.png]]|
+|ass visible through thighs|前から見えるお尻|||
+|bare legs|生脚|||
+|soles|足裏|作画崩壊しやすい||
+|pussy|女性器、おま◯こ|||
+|cleavage|胸の谷間|||
+|love juice|愛液|||
+|breasts|danbooru分類上は ・ぺたんこの場合には付けない ・衣服を着た場合も含む|||
+|armpits|脇(hairを足すと毛が増加)|||
+|sweat~~sweating~~sweatdrop|汗|||
+|dark persona|闇堕ち|||
+|thick eyebrows|麻呂眉|たいてい髪色と一致してくれない||
+|forehead|でこだし|||
+|}
+[END]
+
+>>>>>>> 04ee015699518104ef58d72d6fca9c7613ed2a2a

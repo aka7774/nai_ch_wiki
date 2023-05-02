@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #contents
 
 * Hello Asuka
@@ -340,3 +341,347 @@ Batch Count 1、Batch Size 10
 
 
 
+=======
+#contents
+
+* Hello Asuka
+
+&size(22){AUTOMATIC1111版Stable Diffusion WebUI用}
+
+NovelAI のデフォルト設定での出力と一致しているかのテストを行います。
+
+以下の数値をUIに入力して「Generate」をクリックします。
+参考画像と出力画像が一致していたら環境構築が成功しています。
+→出力した画像が一致していない場合：一般的な "Hello Asuka" エラーのトラブルシューティング (Euler) - Imgur - https://imgur.com/a/DCYJCSX
+
+- サンプラー：Euler (Euler Aではない)
+- 28 Steps
+- CFG Scale：12
+- 解像度: 512x512
+- Seed: 2870305590
+- ポジティブプロンプト欄に「masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair」
+- ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name」
+- Clip skipを「2」にする ※古いWEBUIの場合は(Ignore last layers of CLIP modelを「2」にする
+- (Euler-Aも一致させたい場合、ETA Noise Seed Deltaを「31337」にする)
+
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0ki5ejUnR6.png)
+図：PNGにメタデータが付属したHello Asuka。PNG infoにドラッグ&ドロップするとtext2imgに渡せます
+
+** ※注意
+- プロンプトを正確にコピーしたことを再確認してください！
+- lowvram や xformers などの最適化を使用している場合、わずかな違いが見られる場合がありますが、それでも 95% 類似しているはずです。
+
+参考資料：GPU によるおおよその生成速度
+https://www.tomshardware.com/news/stable-diffusion-gpu-benchmarks
+
+* Hello Asuka Benchmark
+
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/c6AXQ9n5B0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/c6AXQ9n5B0.png]]
+
+あのアスカの画像をBatch count 10にして10枚一気に生成させて
+Generateを押して''画面にアスカが表視されるまで''を計測してください。100％になった瞬間ではありません。
+可能であれば自分で編集、ここのコメントやスレに報告していただけると助かります。
+
+アスカ生成用パラメータ
+[+]
+- Settingタブ
+-- Clip skip を2にする ※旧バージョンでは(Ignore last layers of CLIP model)を2に設定する。
+-- eta (noise multiplier) for ancestral samplersを0.67
+-- HypernetworkをNone
+
+-txt2imgタブ
+--Sampling Steps: 28
+--Sampling method: Euler
+--Width: 512, height: 512
+--CFG Scale: 12
+--Seed: 2870305590
+
+--Prompt
+> masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair 
+
+--Negative Prompt
+> lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name
+[END]
+
+infotext
+下記のテキストをコピーして、txt2imgタブのPromptとNegative Promptが空欄の状態で右側にある左下矢印を押すことでも入力できます。
+おそらく、Etaは自動的には反映されないので自分で設定する必要があります。Settingsタブ→Sampler Parametersセクション→eta (noise multiplier) for ancestral samplers
+=||
+masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair
+Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name
+Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model hash: 925997e9, Eta: 0.67, Clip skip: 2, ENSD: 31337
+||=
+
+[[メタ情報付きのアスカ画像や>>https://image02.seesaawiki.jp/n/h/nai_ch/0ki5ejUnR6.png]]
+
+[[特に3080,2060,1060,Mobile,そして3060の人はVRAM書いてくれると嬉しい>>https://www.nvidia.com/ja-jp/geforce/graphics-cards/compare/]]
+
+--時間(計測値)は''Generateを押してからアスカが表視されるまでの時間''で、Time takenはWebUI中央下部に表示される値です。
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/d9JQSJo0XK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/d9JQSJo0XK.png]]
+-- Time takenは秒単位で記入。不明な場合は時間(計測値)を転記して末尾に.をつけた。ソートすると速い順に並んで楽しい。
+
+** 結果一覧
+
+Batch Count 10、Batch Size 1
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4090|24GB|Core i7-13700K|10.66|10.58|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslas|Automatic1111 ver.1.1.0 まっさらから導入直後|
+|RTX 4070|12GB|Core i5-10400|22.50|22.05|--opt-sdp-attention --autolaunch|Windows10 torch: 2.0.0+cu118 RAM:64GB CPUが弱すぎる|
+|4070|||||||
+|RX 6700XT|12GB|Core i5-13600KF|45.6|45.15|--opt-sdp-attention|torch: 2.0.0+rocm5.4.2,Ubuntu22.04,RAM32GB,GPU定格,CPU電力制限@160W --opt-sdp-no-mem-attentionもほぼ同じタイムだった。|
+|GTX 1080|8GB|Core i3-12100F||152.84|--xformers|torch: 1.13.1+cu117|
+|RTX 4070|12GB|Core i3-12100F||18.66|--opt-sdp-no-mem-attention|torch: 2.0.0+cu118|
+|RTX 3090|24GB|i7-6700k|28秒|28.26|--opt-sdp-attention|torch: 2.0.0+cu118　Show live previews of the created imageのチェックをオフ　GPU以外が古すぎるかな|
+|RTX3060|12GB|Ryzen 7 3700X|41|42.15|--xformers --disable-nan-check --opt-channelslast --opt-sub-quad-attention|Windows11 mem:64GBtorch: 2.0.0+cu118,xformers: 0.0.19.dev516|
+|RTX4070|12GB|Ryzen 7 5700X|20秒|19.78|--opt-sdp-attention --opt-channelslast|torch: 2.0.0 + cu118　Tiではない|
+|RTX 2060|6GB|Ryzen 5 5600X|48秒|47.08|--autolaunch --theme=dark --xformers|torch: 2.0.0+cu118,xformers0.0.19.dev505|
+|RTX4090|24GB|Core i7-13700K|11.02|11.69|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118Powe Limit 60%|
+|RTX 3080TI|12GB|Core i5-12600K|19秒70|18.96|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.1.0.dev20230330+cu118 WSL2 ubuntu22.04|
+|RTX 4080|32GB|Core i7-13700F||13.21|--xformers --opt-channelslast|ubuntu22.04, torch2.0.0+cu118, xformers0.0.18|
+|RTX 4080|32GB|Core i7-13700F||13.53|--xformers|ubuntu22.04, torch2.0.0+cu118, xformers0.0.18|
+|無し(表示はdGPU)|無し|Ryzen 9 5900X|3080|3080|--skip-torch-cuda-test --use-cpu all --no-half --no-half-vae|PPT88W制限torch: 1.13.1+cu117|
+|RTX 4080|16GB|Core i7-13700||14.10|--xformers --opt-channelslast|RAM16GB パワーリミット70%|
+|RTX 4080|16GB|Core i7-13700||13.02|--xformers --opt-channelslast|RAM16GB パワーリミット100%|
+|RTX 3060 Laptop|6GB|Core i7-11800H||47.93|--opt-sdp-attention --opt-sdp-no-mem-attention|torch: 2.0.0+cu118 memory:64GB|
+|RX 5700X|8GB|Ryzen 7 3700X||236.26|--skip-torch-cuda-test --no-half --no-half-vae --medvram|7th3A torch 1.13.1 xformers無し 改造手順10未適用|
+|RX 6650XT|8GB|Ryzen 5 5600G||59.52|--opt-sdp-attention|torch: 2.0.0+rocm5.4.2 Ubuntu20.04.6 RAM16GB Sapphire Pulse定格 PCIe3.0|
+|RTX 4070 Ti|12GB|Ryzen 7 3700X||18.57|--opt-sdp-no-mem-attention --opt-channelslast --no-half-vae|torch: 2.0.0+cu118|
+|RTX 2060|6GB|Ryzen 5 5600X|50秒|50.66|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
+|RTX A4000|16GB|Ryzen7 3700X|27.40|26.48|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
+|RTX 4090|24GB|Core i9-13900K||9.51|--api --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
+|RTX 4070 Ti|12GB|Ryzen 7 5700X|21秒|20.31|--xformers|torch1.13.1+cu117 cuDNN8.8.1|
+|RTX 4070Ti|12GB|Core i7-9700K|19|19.36|--xformers|torch: 1.13.1+cu117 cudnn 8.8.1 OS起動直後|
+|RTX 4090|24GB|Ryzen 7 5800X|14秒|13.05|xformers opt-channelslast|torch: 2.1.0.dev20230320+cu118 xformers: 0.0.17+c36468d.d20230320 (自分でビルド)|
+|RTX 3090|24GB|Ryzen 5 3600|18秒|17.56|--opt-sdp-no-mem-attention --opt-channelslast --no-half-vae|Windows11 torch: 2.0.0+cu118|
+|RTX 3060|12GB|Core i5-13600KF|40.88秒|40.09|--xformers --opt-channelslast --administrator|Windows11 torch: 1.13.1+cu117 xformers: 0.0.16rc425  cuDNN 8.8.1 Afterburner PowerLimit80%|
+|RTX 3060|12GB|Core i5-6500|49秒|48.49|なし|Windows10 torch: 1.13.1+cu117|
+|RTX 3060|12GB|Core i5-6500|42秒|41.61|--xformers --opt-channelslast|Windows10 torch: 1.13.1+cu117,xformers: 0.0.16rc425|
+|RTX 3060|12GB|Core i5-6500|41秒|40.27|--xformers --opt-channelslast|Windows10 torch: 1.13.1+cu117,xformers: 0.0.16rc425|
+|RTX 3060|12GB|Core i5-6500|51秒|50.60|なし|Windows10 torch: 2.0.0+cu118|
+|RTX 3060|12GB|Core i5-6500|42秒|41.83|--opt-sdp-no-mem-attention --opt-channelslast|Windows10 torch: 2.0.0+cu118|
+|RTX 3060|12GB|Core i5-6500|43秒|42.49|--opt-sdp-attention --opt-channelslast|Windows10 torch: 2.0.0+cu118|
+|RTX 3060|12GB|Core i5-6500|42秒|41.65|--xformers --opt-channelslast|Windows10 torch: 2.0.0+cu118 xformers: 0.0.17+c36468d.d20230319(独自ビルド)|
+|RTX 4090|24GB|Ryzen 7 5800X|14秒|13.14|--api --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118 cuddn 8.8.1 OS起動直後|
+|RTX 4090|24GB|Ryzen 7 5800X|16秒|14.54|xformers opt-channelslast|torch: 1.13.1+cu117 cudnn 8.8.1 OS起動直後|
+|RTX 4090|24GB|Ryzen 7 5800X|16秒|15.62|xformers opt-channelslast|torch: 1.13.1+cu117 cudnn 8.8.1|
+|RTX 4090|24GB|Core i9-13900k||10.17|--xformers --no-half-vae|cudnn 8.8.0|
+|RTX 2060|6GB|Core i7-9700k||46.34|xformers opt-channelslast|メモリ16gb|
+|RTX3080|10GB|Core i5-13600K|24秒|22.72|xformers|RAM32GB, Win11|
+|RTX 3080Ti|12GB|Core i7-12700||20.56|--xformers|Windows11Pro 64bit,ROG STRIX GeForceRTX3080Ti,DDR4メモリ64GB|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||31.32|--xformers --opt-channelslast|PL70%3060と同じ消費電力でこれなので意外とワッパいい|
+|RTX 2080|8GB|Core i7-8700||35.62|--xformers|Windows10 メモリ64GB|
+|GTX 1050Ti|4GB|Pentium G3258|5分58秒|358.20|--xformers|archlinux, GUIなし, sshとブラウザでリモート~~CPUはOC:3.6GHz, main memory:16GB|
+|RTX 3050 LAPTOP|4GB|Core i5-11400H||74.69|--xformers|CPU低電圧可、メインメモリは24GB（8+16）|
+|RTX 4070 ti|12GB|Core i5-13700K||14.51|--xformers --|なし|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||26.93|--xformers --opt-channelslast|WSL2, Torch2.0, モデルコンパイル有効 ~~ WSL2にしてもコンパイル無しでは早くならない上コンパイルが遅いので無意味|
+|RTX3080Laptop|16GB|Ryzen9 5900HX||29.29|--xformers|ノートPC Lenovo Legion760 2021年モデル Windows10 メモリ32gb|
+|RTX 3090TI|24GB|Ryzen 9 7950X||17.95|--xformers --autolaunch --opt-channelslast --no-half-vae|WIN 10, mem 64gb, torch: 1.13.1+cu117,xformers: 0.0.16rc425|
+|RTX 3060|12GB|Ryzen 9 3900XT||42.47|--opt-channelslast --xformers|プレビュー：Approx cheap。4Stepごと。Torch active/reserved: 2521/2868 MiB,&#160;Sys VRAM: 5173/12288 MiB。プレビューなしで41.11s。--xformersのみで45.65s(--opt-channelslast効き目あり?)|
+|RTX 3090|24GB|Core i7-12700K|18秒|17.16|--xformers --opt-channelslast --administrator|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境~~torch: 1.13.1+cu117,xformers: 0.0.16rc425|
+|GT 1030|2GB|Ryzen 5 5600G|26分|1550.21|--lowvram|マザボ側HDMIから画面出力、GT1030はGDDR5でファンレス|
+|RX 6700XT|12GB|Core i5-13600KF|47.6秒|47.09||ubuntu22.04, ROCm 5.2, RAM32GB, GPU定格, CPU電力制限@160W|
+|RTX 3090|24GB|Core i9-10900K|20秒|19.88|xformers opt-channelslast no-half-vae|Batch Count 10 Batch Size 1, Windows10 WSL2 RAM 32GB AfterBurnerで低電圧化 1620MHz @0.7v|
+|RTX 4090|24GB|Ryzen 9 3900X|16秒|15.47|xformers opt-channelslast|GPUを電力制限70％で実行してもTime takenはほぼ変わらず誤差の範囲。|
+|RTX 2080Ti|11GB|Core i9-9900K|28.09秒|26.79|--xformers --opt-channelslast|WSL2|
+|GTX 1060|6GB|Core i7-12700K|6分34秒|394.|--xformers --no-half --no-half-vae||
+|GTX 1060|6GB|Core i7-12700K|7分51秒|471.|--xformers||
+|RTX 2060|12GB|Core i7-8700K|38秒|38|xformers|Windows11　ﾒﾓﾘ32GB　anaconda3|
+|Radeon VII|16GB|Ryzen 9 3900X|57秒|56.24||ubuntu 22.04, ROCm 5.2|
+|RTX 3050|8GB|Core i5-8400|1分5秒|65.21|xformers||
+|RTX A4000|16GB|Ryzen 7 3700X|29.25秒|28.76|--xformers --opt-channelslast --opt-split-attention|WSL2環境、特に速度変わらず。|
+|RTX 3080Ti|12GB|Core i5-1135G7|41秒|39.19|--listen --port 7860 --allow-code --deepdanbooru --xformers --enable-insecure-extension-access --api|Windows11 メモリ32GB Docker版WebUI WSL2(Ubuntu22.04)からの起動 ノートPC＋USB4経由のegpuとか言う変態仕様なので参考レベルに(真似は強く非推奨)、egpuはおま環との戦い|
+|RTX A4000|16GB|Ryzen 7 3700X|29.31秒|28.49|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|下のGTX1080から載せ替え　A4000はRTX3070Tiのダウンクロック版|
+|RTX 4090|24GB|Ryzen 9 7950X|12秒|11.81|xformers opt-channelslast||
+|RTX 4090|24GB|Core i9-13900K|11秒|9.41|xformers opt-channelslast||
+|RTX 4080|16GB|Core i9-13900KF|13秒75|13.23|xformers opt-channelslast|Windows10 Batch count10 Batch size1 メモリはDDR5|
+|RTX3060|12GB|Core i7-12700K|38秒|37.73|--xformers --opt-channelslast|Windows10・メモリ32GB WSL2 Ubuntu22.04 ※同環境Windowsでは43秒なので11.6%速い、opt-channelslast無しだと41秒・40.53s|
+|RTX3060|12GB|Core i7-12700K|39秒|38.91|--xformers --opt-channelslast|Windows11･メモリ64GB･WSL2(Ubuntu22.04)･AfterburnerでPL58%(44秒､Time taken: 43.85s)環境構築はWikiの手順を参照|
+|RTX3090|24GB|Core i9-13900KF|19秒|17.51|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境|
+|RTX3090|24GB|Core i9-13900KF|23秒|21.65|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB|
+|RTX3090|24GB|Core i9-12900KF|18.6秒|18.19|--xformers --no-half-vae --deepdanbooru --gradio-img2img-tool=color-sketch --opt-channelslast|RAM64GB,cuDNN8.6.0,pcie4.0 x16|
+|RTX 2070 SUPER|8GB|i5 10400F|43秒|43.36|なし|メモリ64GB|
+|GTX 1080|8GB|Ryzen 7 3700X|2分26秒|145.58|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|count5 size2なら123.25秒、count2 size5で118.3秒、意外とVRAM使用量も5GB未満に収まるのでsize増やして回した方が得|
+|RTX 3060|12GB|Core i5-7400|56.55秒|52.60|なし|PCI-Express 1x-16xのライザーカード使用|
+|RTX A2000|12GB|Core i5-11400|63.85秒|62.73|--xformers --opt-channelslast|AfterburnerでGPUを-214MHz,VRAMを-502MHzクロックダウンGPUは最大64.5℃,VRAMは最大72℃で駆動|
+|GTX 750Ti|2GB|Core i5-10400F|23分26秒|1404.15|--lowvram||
+|RTX A2000|12GB|Core i5-11400|50.06秒|48.55|--xformers --opt-channelslast|RAM16GB|
+|RTX 2060|12GB|ryzen 3700x|53.42秒|49.94||メモリ32GB|
+|RTX A2000|12GB|Core i5-11400|51.83秒|50.55|--xformers||
+|RTX A2000|12GB|Core i5-11400|1分4秒|62.83|なし||
+|RTX 3060|12GB|Core i7-12700KF|43秒|41.34|--xformers --opt-channelslast|メモリ32GB 2022/11/22git pull実施|
+|RTX 3090|24GB|Core i9-13900KF|23秒|21.42|xformers deepdanbooru||
+|RTX 3060|12GB|Core i7-6700|38.64秒|37.42|xformers opt-channelslast|Linux Mintで定格時。opt-channelslast無しで39.57秒。nvidia-smiでパワーリミット下限の100Wで40.93秒。|
+|RX 6900XT|16GB|Ryzen 7 3900X|36秒|34.51|--listen|Debian11(GUIなし) rocm-5.2.0 GPUはリファ板・定格|
+|無し ~~ (CPU内蔵、HD 5500)||Core i5-5200U||12743.36||CPUで生成。グラボなしのノートPC。RAM12G。以下の変更でWEBUI実施。生成される絵ちょっと違う。1枚生成で21分かかる https://rentry.org/nai-speedrun#cpu-only-steps|
+|無し ~~ (CPU内蔵、Vega 7)|512MB|Ryzen 7 4700U||4624.09|skip-torch-cuda-test no-half no-half-vae|Dreambooth動かなかったやつ|
+|RTX 2060|12GB|Ryzen 7 5700G|51.51秒|46|--listen --enable-insecure-extension-access --api ~~ --xformers --deepdanbooru --gradio-img2img-tool color-sketch|メモリ32GB|
+|RTX 4090|24GB|Ryzen 7 3700X|18秒|16.09|gradio-img2img-tool=color-sketch deepdanbooru xformers opt-channelslast|21it/sくらい出るけど3090Tiの結果より少し早いだけだからCPUの限界かも|
+|RTX 3060|12GB|Core i7-10700|46秒|43.76|--xformers --deepdanbooru||
+|RTX 3090Ti|24GB|Ryzen 7 5700X|19秒|17.71|xformers deepdanbooru|Ryzen 1800XからCPU変更|
+|RTX 2070|8GB|Ryzen 7 1700X||37.87|xformers opt-channelslast|safetensors vae内蔵|
+|RTX 2070|8GB|Ryzen 7 1700X||39.73|xformers opt-channelslast|WSL2|
+|RTX 2070|8GB|Ryzen 7 1700X||42.43|xformers|WSL2|
+|RTX 2070|8GB|Ryzen 7 1700X||42.89|xformers deepdanbooru||
+|RTX 2070|8GB|Ryzen 7 1700X||59.83|medvram xformers opt-channelslast deepdanbooru|opt-channelslastは効き目なさげ|
+|RTX 3060|12GB|Core i7-12700K|43秒|40.82|xformers deepdanbooru opt-channelslast|メモリ64GB AfterburnerでPL75%時(45秒､Time taken: 42.29s)PL58%(49秒､Time taken: 46.10s)opt-channelslastを有効にした事により2〜3秒短縮出来ました|
+|RTX 4090|24GB|Core i9-13900KF|12秒40|10.79|xformers||
+|RTX 4090|24GB|Core i9-12900K|13秒|11|xformers||
+|RTX 4090|24GB|Core i9-11900|14秒|14.25|xformers|Batch count10 Batch size1 メモリ64GB PL65|
+|RTX 4090|24GB|Ryzen 9 5900X|14秒|14.10|xformers opt-channelslast||
+|RTX 3090Ti|24GB|Ryzen 7 1800X|24秒|22.60|xformers||
+|RTX 3090|24GB|Ryzen 7 3700X|26秒|26.97|xformers deepdanbooru|アフターバーナーでパワーリミット65%|
+|RTX 3090|24GB|Ryzen 7 3700X|23秒|23.79|xformers deepdanbooru|アフターバーナーでパワーリミット65% Settings→User interfaceのShow progressbarのチェックを外しShow image creation progress every N sampling steps.を0に|
+|RTX 3090|24GB|Ryzen 7 3700X|20秒|20.85|xformers deepdanbooru|アフターバーナーでパワーリミット100% Settings→User interfaceのShow progressbarのチェックを外しShow image creation progress every N sampling steps.を0に|
+|RTX 3090|24GB|Core i5-13600K|24秒|23.56|xformers deepdanbooru|アフターバーナーでパワーリミット100% RAM 36GB|
+|RTX 3090|24GB|Core i5-13600K|28秒|27.61|xformers deepdanbooru|アフターバーナーでパワーリミット65% RAM 36GB|
+|RTX 3090|24GB|Core i5-13600K|46秒|46.08|xformers deepdanbooru|アフターバーナーでパワーリミット50% RAM 36GB|
+|RTX 3090|24GB|Core i9-12900KF|20秒|20.||grid生成切ってました。|
+|RX 6900XT|16GB|Ryzen 7 5800X|52秒|48||Ubuntu20.04定格にて 150wに下げた場合は1分程|
+|RTX 3080Ti|12GB|Core i7-11700F|24秒|22.43||メモリ32GB|
+|RTX 3080|12GB|Ryzen 7 5800X|26秒|26.||RTX 3080 GAMING Z TRIO 12G LHR, メモリ64GB|
+|RTX 3080|10GB|Ryzen 7 5800X3D|24秒|23.93|xformers|メモリ32GB|
+|RTX 3080|10GB|Ryzen 7 5800X3D|30秒|28.06||メモリ32GB|
+|RTX 3080|10GB|Core i7-10700K|32秒|30.35||メモリ32GB|
+|RTX 3080|10GB|Core i9-12900K|25.9秒|23.20|xformers|メモリ32GB。PL70%にすると27.5秒、time taken24.75s|
+|RTX 3080|10GB|Core i9-11900F|28秒|26.25|xformers PL70%|メモリ64GB|
+|RTX 3080|10GB|Core i7-8700K|26秒|24.00|xformers PL70%|ROG STRIX GeForce RTX 3080 GUNDAM EDITION, メモリ32GB|
+|RTX 3070Ti|8GB|Core i5-7500|32秒|28.93| xformers||
+|RTX 3070Ti|8GB|Core i5-7500|33秒|28.93| xformers PL70%||
+|RTX 3070Ti|8GB|Core i5-7500|58秒|28.93| xformers medvram||
+|RTX 3070|8GB|Core i5-12600K|31.65秒|29.24|xformers|ASUS GeForce RTX 3070 Noctua OC Edition 8GB GDDR6|
+|RTX 3070|8GB|Core i7-10700|31.44秒|30.08|xformers|メモリ32GB|
+|RTX 3070|8GB|Ryzen 5 5600X|43.85秒|41.42|deepdanbooru no-half-vae||
+|RTX 3070 Laptop|8GB|Ryzen 7 5800H|46秒|47.37||TGP95W|
+|RTX 3060Ti|8GB|Core i5-12400|35秒|33.19| xformers||
+|RTX 3060Ti|8GB|Core i5-12400|41秒|39.08|||
+|RTX 3060Ti|8GB|Ryzen 9 5900X||35.94| xformers||
+|RTX 3060Ti|8GB|Ryzen 9 5900X|44秒|42.04|||
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.25|xformers opt-channelslast|コアクロック+65, メモリクロック+1000, PL120%|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||32.99| xformers|PL90%,メモリクロック+1000でも同様|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X|41秒|39.33||PL90%,メモリクロック+1000でも同様|
+|RTX 2070 SUPER|8GB|Ryzen 7 3700X|38.55秒|35.05| xformers||
+|RTX 2070 SUPER|8GB|Core i9-9900K|41秒|38.02| xformers||
+|RTX 2070|8GB|Core i7-9700K|43秒|40.06| xformers||
+|RTX 3060|12GB|Core i5-12400F|43秒|41.15| xformers||
+|RTX 3060|12GB|Core i7-7700|46秒|43.27| xformers||
+|RTX 3060|12GB|Core i7-6700|48秒|44.63| xformers||
+|RTX 3060|12GB|Core i7-6700|54秒|51.65|||
+|RTX 3060|12GB|Core i7-4790K|53秒|49.72| xformers||
+|RTX 3060|12GB|Core i7-2600K|54秒|50.64|xformers|Sandyおじさん|
+|RTX 3060|12GB|Core i7-2600K|56秒|52.53||Sandyおじさん|
+|RTX 3060|12GB|Ryzen 7 5800X|44.91秒|42.82|xformers||
+|RTX 3060|12GB|Ryzen 5 3600|45.34秒|42.48|xformers||
+|RTX 2080Ti|11GB|Core i9-9900K|36秒|32.55| xformers||
+|RTX 2060 SUPER|8GB|Ryzen 9 3900XT|41秒|41.58| xformers||
+|RTX 2060 |6GB|Core i5-6500|1分1秒|58.05| xformers||
+|RTX 3050|8GB|Core i5-8400|1分13秒|70.63|||
+|GTX 1660Ti|6GB|Ryzen 9 3900XT||151.77|--no-half --xformers| --medvram削除|
+|GTX 1660Ti|6GB|Ryzen 9 3900XT||192.89| --medvram --no-half --xformers| --precision full削除(1660系の問題で--no-halfを抜くと生成されません)|
+|GTX 1660Ti|6GB|Ryzen 9 3900XT||357.53| --medvram --precision full --no-half --xformers||
+|GTX 1080Ti|11GB|Core i9-9900K |1分56秒 |114.28|||
+|GTX 1080|8GB|Core i9-12900||159.39|||
+|GTX 1070Ti|8GB|Core i3-12100F|2分38秒|155.64|xformers|Palit GTX1070 Ti Dual(定格),メモリ32GB|
+|GTX 1070|8GB|Core i7-7700|3分12秒|190.22|||
+|GTX 1070 Laptop|8GB|Core i7-7700HQ|3分16秒|192.85| xformers||
+|GTX 1660Ti(Mobile)|6GB|Core i7-10750H||178.06|--precision full --no-half --xformers|Max-Qではない|
+|GTX 1660Ti(Mobile)|6GB|Core i7-10750H||219.10|--precision full --no-half --xformers --medvram|Max-Qではない|
+|GTX 1060(OC)|6GB|Ryzen 5 1600||234.97| xformers||
+|GTX 1660Ti(Max-Q)|6GB|Ryzen 7 4800HS||252.26|--precision full --no-half --xformers --medvram|ゲーミングノートパソコンやで!|
+|GTX 1660Ti(Max-Q)|6GB|Ryzen 7 4800HS||464.86|xformers no-half-vae|no-half不要になったので試してみた|
+|GTX 1660Ti(Max-Q)|6GB|Ryzen 7 4800HS||197.39|xformers no-half no-half-vae|no-halfつけなおしてみた|
+|GTX 970|4GB|Core i5 6500|6分17秒|373.70|||
+|GTX 970|4GB|Core i5 6500|4分8秒|244.91|--medvram|medvramつけたほうが速い。ちなみにxformer有効にすると倍時間がかかる|
+|RX VEGA 56|8GB|Ryzen 7 1700|2分1秒|118|--precision full --no-half --deepdanbooru|Debian11 rocm-5.2.0 電源の関係でPL=0,1(1150MHz)に制限|
+|}
+[END]
+
+Batch Count 5、Batch Size 2
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4090|24GB|Core i7-12700K|7|7.93|--opt-sdp-no-mem-attention|pytorch2.0, batch count 5, batch size 2,live previewなし, WSL2 ubuntu22.04|
+|RTX 4090|24GB|Core i7-12700K|7|7.93|--opt-sdp-no-mem-attention|pytorch2.0, batch count 5, batch size 2,live previewなし, WSL2 ubuntu22.04|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||23.63|--xformers --opt-channelslast|WSL2, Torch2.0, モデルコンパイル有効 ~~ Batch Count5, Batch size 2 OCすると22.83s|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.77|xformers opt-channelslast|pytorch2.0に更新したが言うほど速くならなかった。OCすると26.22s ~~ batch count 5 batch size 2|
+|RTX 3090|24GB|Core i9-10900K|19秒|17.74|xformers opt-channelslast no-half-vae|Batch Count 5 Batch Size 2, Windows10 WSL2 RAM 32GB AfterBurnerで低電圧化 1620MHz @0.7v|
+|RTX 4090|24GB|Ryzen 9 3900X|10.8秒|10.17|xformers opt-channelslast|Batch Count 5、Batch Size 2|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X||28.35|--xformers --opt-channelslast|ライブラリ更新(torch1.12.1+cu116,torchvision0.13.1+cu116) ~~ Batch count 5, Batch size 2|
+|RTX 4090|24GB|Core i9-13900K|9秒|8.18|xformers opt-channelslast|Batch Count 5、Batch Size 2|
+|RTX 4090|24GB|Ryzen 9 7950X|10秒|9.58|xformers opt-channelslast|Batch Count 5、Batch Size 2|
+|}
+[END]
+
+Batch Count 2、Batch Size 5
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX 6650XT|8GB|Ryzen 5 5600G||45.84|--opt-sdp-no-mem-attention|torch: 2.0.0+rocm5.4.2 Ubuntu20.04 RAM16GB ToMe(0.5)オン。ToMeオフだと1m 5.93s|
+|RTX 4090|24GB|Core i7-12700K|6|7.08|--opt-sdp-no-mem-attention|誤りがあったので修正。pytorch2.0, batch count 2, batch size 5,live previewなし, WSL2 ubuntu22.04|
+|RTX 4070 Ti|12GB|Core i9-9900K|15|15.17|--xformers --no-half-vae|Batch Count 2、Batch Size 5|
+|RTX A4000|16GB|Ryzen7 3700X|23.73|23.56|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
+|RTX3060|||||||
+|RTX 4090|24GB|Core i9-13900k||7.16|--xformers --no-half-vae|cudnn 8.8.0|
+|RTX 4090|24GB|Ryzen 9 5900X||11.85|--xformers --opt-channelslast --disable-nan-check --no-half-vae --vae-dir  --ckpt-dir|BatchCount2、BatchSize5 ckptはHDDに配置python:3.10.10　torch: 1.13.1+cu117　xformers: 0.0.16　cudnn 8.8.0GPU：afterburnerによる電力制限(PL40の180wぐらい)　CPU：低電圧化+周波数固定4.0GHz|
+|RTX 4070 Ti|12GB|Ryzen 9 3900||16.80|--xformers  --no-half-vae --opt-channelslast  --autolaunch --theme dark|Batch Count 2、Batch Size 5 Windows11 Memory:32G|
+|RTX 4070 Ti|12GB|Ryzen 7 7700X||16.52|--xformers --opt-channelslast|Batch Count 2、Batch Size 5|
+|RTX 4070 Ti|12GB|Ryzen7 5800X||15.65|--xformers --opt-channelslast|Batch Count 2、Batch Size 5|
+|RTX 4090|24GB|Core i5-13600KF|9|9.14|--xformers --opt-channelslast --no-half-vae|Batch Count 2、Batch Size 5|
+|RTX 4080|16GB|Core i7-13700F|13|12.35|xformers opt-channelslast|Batch Count 2、Batch Size 5　cudnn8.7.0に置き換える前は21秒くらいだった|
+|RTX 3060|12GB|Core i5-7200U|36|36.36|--xformers --no-half-vae --optchannelslast|Core clock+223MHz, Memory clock+400MHz, Batch count 2, Batch size 5, live preview&gridなし, torch: 1.13.1+cu117 eGPU環境でRAM 8GB。おま環との戦いだが、生成速度はCPU関係ないらしい。モデル読み込み時にCPUとメモリの不足により30秒以上を要する。|
+|RTX 4090|24GB|Core i7-12700K|8|8.73|--xformers --opt-channelslast --no-half-vae|PL70% + Core clock+150MHz, Batch count 2, Batch size 5, live preview&gridなし, torch: 1.13.1+cu117, cudnn 8.6|
+|RTX 3080|10GB|Core i7-12700K|17|17.95|--xformers --opt-channelslast --no-half-vae|PL85% + Core clock+120MHz, Batch count 2, Batch size 5, gridなし, torch: 1.13.1+cu117とcudnn 8.6で早くなったかもしれない|
+|RTX 3080|10GB|Core i7-8700K|19秒|19.31|--xformers --opt-channelslast|BatchCount 2 BatchSize 5 RAM 24GB PL80%|
+|RTX 4090|24GB|Ryzen 9 3900X|10秒|9.11|xformers opt-channelslast|Batch Count 2、Batch Size 5|
+|RTX 4090|24GB|Ryzen 7 5800X|12.29秒|10|xformers opt-channelslast|Batch Count 2、Batch Size 5|
+|RTX 2060|12GB|Xeon E5-2650 v2|37.13|36.24|xformers gradio-img2img-tool color-sketch deepdanbooru autolaunch|Batch Count 2, Batch Size 5|
+|RTX A4000|16GB|Ryzen 7 3700X|23.56秒|22.83|--xformers --opt-channelslast --opt-split-attention|WSL2環境でBatch Count 2、Batch Size 5、Windowsよりちょっと速くなる|
+|RTX A4000|16GB|Ryzen 7 3700X|24.32秒|23.57|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|Batch Count 2、Batch Size 5|
+|RTX 4090|24GB|Core i9-13900K|9秒|7.83|xformers opt-channelslast|Batch Count 2、Batch Size 5|
+|RTX 4090|24GB|Ryzen 9 7950X|10秒|9.33|xformers opt-channelslast|Batch Count 2、Batch Size 5　並列処理サイズを大きくしてもあまり意味がない？|
+|RTX 3080|12GB|Ryzen 7 5800X|21秒|21.| Batch size 5, Batch count 2|RTX 3080 GAMING Z TRIO 12G LHR, メモリ64GB|
+|}
+[END]
+
+Batch Count 1、Batch Size 10
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX A4000|16GB|Ryzen7 3700X|23.16|22.64|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
+|RTX 4090|24GB|Core i9-13900k||6.97|--xformers --no-half-vae|cudnn 8.8.0|
+||||||||
+|参考)Google ColaboratoryA100|40GB|Xeon @2.20Ghz 6C/12T|6秒|6.||↓のクラウド参考地から転載|
+|}
+[END]
+** 参考値(本家・クラウドコンピューティング)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~サービス名|w(100px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken|オプション|備考|
+|Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T||24.85|--opt-sdp-attention --opt-channelslast|8ドル/月プラン|
+|Google Colaboratory|NVIDIA Tesla T4|15GB|||44.93|--opt-sdp-no-mem-attention --opt-channelslast|conda Python 3.10.9torch 2.0.0xformersなし|
+|Google Colaboratory|NVIDIA Tesla T4|15GB|||51.66|xformers opt-channelslast|conda Python 3.9.12 ckptを38c1ebe3(Anyv3-fp16)にすると47.48|
+|Google Compute Engine|NVIDIA Tesla V100|16GB HBM2|n1-standard-4 SkylakeXeon 4C|1分45秒|31.0|--share --gradio-debug --gradio-auth|xformers無し、count2 size5なら19.5秒|
+|Google Compute Engine|NVIDIA Tesla T4|16GB|n1-standard-4 SkylakeXeon 4C|1分5秒|63.11|--share --gradio-debug --gradio-auth|xformers無しインスタンスはアメリカ西海岸|
+|Google Colaboratory|NVIDIA Tesla T4|15GB|Xeon 2.20GHz|67秒|64.33|||
+|Kaggle|NVIDIA Tesla T4 x2|30GB(15GB x2)|2コアCPU(詳細不明)||61||普通に設定ミスって速度出てない可能性あり|
+|Google Colaboratory|NVIDIA A100|40GB|Xeon @2.20Ghz 6C/12T||26||batchsize10にしたら00:06でした|
+|Paperspace Gradient|Quadro M4000|8GB|Xeon E5-2623 v4||324.38||無料プラン|
+|Paperspace Gradient|NVIDIA RTX4000|8GB|Xeon @3.20GHz 8C/8T|42秒|40.27|xformers|8ドル/月プラン|
+|Paperspace Gradient|NVIDIA RTX5000|16GB|Xeon @3.20GHz 8C/8T|38秒|36.65|xformers|8ドル/月プラン|
+|Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T|38秒|38.||8ドル/月プラン|
+|Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T|31秒|31.|xformers|8ドル/月プラン|
+|Paperspace Gradient|NVIDIA A5000|24GB|Xeon @3.20GHz 8C/8T|24秒|24.|xformers|39ドル/月プラン|
+|Paperspace Gradient|NVIDIA A6000|48GB|Xeon @3.20GHz 8C/8T|22秒|22.|xformers|39ドル/月プラン|
+|Paperspace Gradient|NVIDIA A100|80GB|Xeon @3.20GHz 8C/8T|19秒|19.|xformers|39ドル/月プラン|
+|}
+
+&size(18){NovelAI}
+|~時間(計測値)|備考|
+|25〜28秒|アスカを生成してシードをランダムにし十枚生成　日本時間で平日23:50頃に実行|
+[END]
+
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qkFzlFhZ4r-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qkFzlFhZ4r.png]]
+
+
+
+>>>>>>> 04ee015699518104ef58d72d6fca9c7613ed2a2a
