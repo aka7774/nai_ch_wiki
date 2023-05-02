@@ -365,7 +365,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-|||||
+|slippers|スリッパ|ファートリムのスリッパになりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/xAEv6U20Bz.png|
+|thong sandal|トング・サンダル|足の親指と人差し指で鼻緒を挟む形状の下駄や草履のようなつま先を持つ（主に素足で履く）サンダル。|https://image02.seesaawiki.jp/n/h/nai_ch/tlTX_XcbXe.png|
+|sandal|サンダル|足の全体的な覆いがなく、かけ紐やバンドなどで固定するつま先や指等の露出部分が多い靴の総称。|https://image02.seesaawiki.jp/n/h/nai_ch/YmpOm4kX4k.png|
 |loafers|ローファー||https://image02.seesaawiki.jp/n/h/nai_ch/6ocYW6IZKl.png|
 |platform footwear|厚底靴|靴のディテールは甘い|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1Pvfl5M5P5-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1Pvfl5M5P5.png]]|
 |heels, high heels|ヒール|heelが含まれた単語は脚が長くなる|https://image02.seesaawiki.jp/n/h/nai_ch/DJ6pMXpHGp.png|
@@ -528,6 +530,30 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|American flag|星条旗柄||https://image01.seesaawiki.jp/n/h/nai_ch/bnV9WS4vVX.png|
+|sakura pattern print|桜柄|桜花の柄が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/1AYq1iz9RX.png|
+|foliage scroll print|紅葉柄|foliage scrollは唐草模様を指す言葉だが、指定すると紅葉柄が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/c_qOcSIw27.png|
+|Mondrian pattern print|モンドリアン柄|抽象画家ピート・モンドリアンの代表作「コンポジション」に見られる幾何学模様をモチーフにした柄。そのものズバリは出てこない。|https://image02.seesaawiki.jp/n/h/nai_ch/ln8vaO5Qz_.png|
+|python skin print|蛇柄|skinを入れないと柄として反映されない。|https://image01.seesaawiki.jp/n/h/nai_ch/9WEpTbJ70P.png|
+|cow print|牛柄|ダルメシアン柄のように黒白反転することは無い。|https://image02.seesaawiki.jp/n/h/nai_ch/0n1Y6tgLCk.png|
+|dalmatian print|ダルメシアン柄|黒白反転することがある。|https://image01.seesaawiki.jp/n/h/nai_ch/IuFyX_mBK3.png|
+|giraffe print|キリン柄||https://image02.seesaawiki.jp/n/h/nai_ch/KPoAcpxGHs.png|
+|leopard print|ヒョウ柄||https://image01.seesaawiki.jp/n/h/nai_ch/aLGycOFSmn.png|
+|tropical print|トロピカル・プリント|熱帯のジャングルやリゾート地を連想させる柄。|https://image02.seesaawiki.jp/n/h/nai_ch/usYKbjYqFt.png|
+|tribal print|トライバル柄|アフリカなどの部族や種族に固有の民族的な紋様風になる。|https://image02.seesaawiki.jp/n/h/nai_ch/p11wJ7aSCt.png|
+|zebra pattern / zebra print|シマウマ模様|綺麗なシマウマ柄になることは少ない。黒白以外になることはないはず。|https://image02.seesaawiki.jp/n/h/nai_ch/ylMKsD8M52.png|
+|tiger pattern / tiger stripe|虎柄|stripeだと黄色から大きくかけ離れた地色になることがある。|https://image01.seesaawiki.jp/n/h/nai_ch/Yjno4N5lwK.png https://image01.seesaawiki.jp/n/h/nai_ch/PnSOU5CSnc.png|
+|jailhouse stripe / prison stripe|ジェイルハウス・ストライプ (プリズン・ストライプ)|囚人服を連想させる太めの横縞模様。どちらでも大差は無い。|https://image01.seesaawiki.jp/n/h/nai_ch/q3J6N3QYmU.png|
+|ombre stripe|オンブレ・ストライプ|濃淡のある縞模様。|https://image01.seesaawiki.jp/n/h/nai_ch/R4uvoyUkyF.png|
+|candy stripe|キャンディ・ストライプ|マルチカラーのカラフルな縞模様。キャンディが描写されやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/3lmvRQCGt7.png|
+|London stripe|ロンドン・ストライプ|地と縞の比率が同じ縦縞。通常のストライプより太めの縞模様になる。|https://image02.seesaawiki.jp/n/h/nai_ch/vddYd3P_ZF.png|
+|star(symbol) print pattern|星柄|(symbol)を入れないと星が暗色で描写される傾向がある。|https://image01.seesaawiki.jp/n/h/nai_ch/a1SRN6PgHd.png|
+|dot pattern|ドット・パターン|小さな点で構成される水玉模様。|https://image01.seesaawiki.jp/n/h/nai_ch/FErMHZxAaQ.png|
+|coin dot pattern|コイン・ドット|ポルカ・ドットより大きめの水玉模様。強調した方が出やすい。|https://image02.seesaawiki.jp/n/h/nai_ch/DQAkl2S7eN.png|
+|○○ print|○○が印刷された|衣服などを指定した柄にすることができる。指定したものによっては背景に影響が出る。サンプルはsnowflakes patternとrose flower。|https://image02.seesaawiki.jp/n/h/nai_ch/wHqOkOhOd1.png https://image01.seesaawiki.jp/n/h/nai_ch/RDTe2jYkb5.png|
+|argyle plaid pattern|アーガイル・チェック |複数の菱形と斜めに入れた枠線とで構成された格子柄。ハーリキン・チェックみたいな感じで描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/jKVsL2QlwC.png|
+|checkered pattern|市松模様|濃淡２色を交互に配した構成の織り柄。|https://image01.seesaawiki.jp/n/h/nai_ch/UmU1ihRGO_.png|
+|red tartan check pattern|タータンチェック|縦横の縞割が均等になっている多色使いの格子柄。頭に付ける色で基本的な色調を調整できる。|https://image01.seesaawiki.jp/n/h/nai_ch/7esSxqni6H.png|
 |bicolor(A and B)|バイカラー|一つのアイテムに二つの色を使用していること。配色はお任せ。サンプルはbowling shirtに適用。A=blue、B=white。|https://image02.seesaawiki.jp/n/h/nai_ch/Vs97e_AlNr.png https://image01.seesaawiki.jp/n/h/nai_ch/vcVLv70Rea.png|
 |satin|サテン生地|朱子織りで織った織物の総称。滑らかな光沢を持つ高級感のある衣装となる。|https://image02.seesaawiki.jp/n/h/nai_ch/l9ATAASvO4.png　https://image02.seesaawiki.jp/n/h/nai_ch/iG2YjvGZ2x.png|
 |lame|ラメ|金銀糸などメタリックな糸を織り込んだ織物。gold lameと指定すると金色のゴージャスな衣装になります。それ以外の場合は刺繍が入った衣装として解釈されます。|https://image02.seesaawiki.jp/n/h/nai_ch/ARqvrIOodc.png　https://image02.seesaawiki.jp/n/h/nai_ch/no5JuiDydd.png|
