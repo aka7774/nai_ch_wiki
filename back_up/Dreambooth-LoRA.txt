@@ -216,6 +216,14 @@ Interrogateを押すと学習用画像のフォルダにタグの付いた .txt 
         self.keep_tokens: Union[int, None] = 3  # OPTIONAL, None to ignore ~~
 ||=
 上記のように設定すれば先頭から3つのタグは順序固定として残りはタグの適当にシャッフルして学習できる。
+- Dataset Tag Editorを使った簡単タグ整理法
+　1.WD1.4Taggerなどを使用してタグ付けを実施。
+　2.Dataset Tag EditorでBatch Edit Captionsを選択し、さらにRemoveを選択。
+　3.誤検出で生じる完全に不要なタグを選択し削除する。
+　4.学習タグおよびそれに類するタグを一度削除する。
+　5.RemoveからEdit tagsへ項目を移動、Common Tagsを空欄にしEdit Tagsに学習タグを記載。
+　6.Prepend additional tagsにチェックを入れてApply Changes to filtered imagesを選択。
+　このように作業すればどのファイルも学習タグを先頭に持ってこられている状態であるため、タグに学習内容を関連付けしやすくなる。
 
 ** キャプションの付け方・考え方の参考サイト
 : [[lora training tagging faq>https://rentry.org/lora-tag-faq]] | 英語サイトだがブラウザの翻訳で読もう

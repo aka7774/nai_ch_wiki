@@ -78,6 +78,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|Japanese garden|日本庭園|兼六園や足立美術館など海外でも知られている日本庭園ぽくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/VoW0zKR0tS.png|
+|garden|庭園|西洋風の庭園になる。|https://image01.seesaawiki.jp/n/h/nai_ch/BlzXxdKGuN.png|
 |slums|スラム街|都市部で極貧層が密集して居住する地区のこと。|https://image02.seesaawiki.jp/n/h/nai_ch/QiskV3pDsj.png|
 |Tower of Babel|バベルの塔|旧約聖書の創世記第11章に登場する巨塔。モチーフとなる絵画が多いためか比較的安定したイメージが出力される。|https://image01.seesaawiki.jp/n/h/nai_ch/g28JsKjHQM.png|
 |artifact|アーティファクト(人工物)|ファンタジーな世界にありがちな構造物や物体が出てくる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wkzGLwpbjw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wkzGLwpbjw.png]]|
@@ -214,6 +216,11 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|Etoile arc de triomphe|エトワール凱旋門|フランスを代表する著名なランドマーク。パリのシャンゼリゼ通りの西端、シャルル・ド・ゴール広場にある戦勝記念碑。単に凱旋門と言えばこの建造物を指すほど有名。|https://image02.seesaawiki.jp/n/h/nai_ch/DLdA7Fyubq.png|
+|Notre Dame Cathedral|ノートルダム大聖堂|世界文化遺産「パリのセーヌ河岸」を構成する建造物。2019年に火災で焼け落ちた。|https://image02.seesaawiki.jp/n/h/nai_ch/y40w9sY71f.png|
+|cologne cathedral|ケルン大聖堂|ドイツにある世界最大のゴシック建築（40階建のビルに相当する大きさがある）。世界文化遺産。外観はあまり忠実に描写されない。|https://image01.seesaawiki.jp/n/h/nai_ch/LwHmLkfWXO.png https://image01.seesaawiki.jp/n/h/nai_ch/7GGQmPDX3P.png|
+|yellowstone national park|イエローストーン国立公園|世界最古の国立公園。最初に登録された12件の世界遺産の内の一つ。雄大な自然と温泉が作り出した地形が有名。|https://image01.seesaawiki.jp/n/h/nai_ch/SRU777V1SX.png|
+|Stonehenge|ストーンヘンジ|イギリスにある環状列石の遺跡。世界文化遺産。紀元前2000年〜2500年ごろに建造されたと考えられているが、何のために造られたのか未だに結論が出ていない。|https://image02.seesaawiki.jp/n/h/nai_ch/dsdTiInT3c.png|
 |Great Barrier Reef,|グレートバリアリーフ|オーストラリア大陸北東岸に広がる世界最大のサンゴ礁地帯であり、全長は2,600km以上に及ぶ。世界自然遺産。単独だと海中からの絵になるが、from aboveを追加すると空撮イメージになる。|https://image01.seesaawiki.jp/n/h/nai_ch/jpkzpWg7fo.png　https://image02.seesaawiki.jp/n/h/nai_ch/Cr2IdAaE94.png|
 | statue of liberty|自由の女神|ほぼ確実にニューヨークにある有名な像が描写されますが、outdoorなどで補強しないと室内にある絵になることがあります。|https://image01.seesaawiki.jp/n/h/nai_ch/76GiXa51q2.png|
 |St. Basil's Cathedral|聖ワシリイ大聖堂|モスクワの赤の広場に立つロシア正教会の大聖堂。|https://image02.seesaawiki.jp/n/h/nai_ch/hs_nLbRFiF.%20Basil's%20Cathedral,%20s-1099325675.png|
