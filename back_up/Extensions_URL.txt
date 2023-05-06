@@ -57,24 +57,6 @@ https://github.com/Zuntan03/LatentCoupleHelper/releases/download/v1.0.0/LatentCo
 
 https://i.imgur.com/ZwJ5q7o.png
 
-773 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 83b2-h1Ka)[sage] 投稿日：2023/02/23(木) 14:51:59.48 ID:AoWTs5Vi0 [1/16]
-「画面を分割しているようじゃダメだな」
-「ん？そー思わんか？」
-
-「プロンプトを!」
-「置いてくる!!!」
-
-https://i.imgur.com/krCM9lw.png
-
-774 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 83b2-h1Ka)[sage] 投稿日：2023/02/23(木) 14:52:44.18 ID:AoWTs5Vi0 [2/16]
->> 773
-というわけでLatent Couple 拡張で好きな位置にプロンプトを置くツール作ったで
-スクリプトなんで安心して試してな
-
-https://github.com/Zuntan03/LatentCoupleHelper
-https://github.com/Zuntan03/LatentCoupleHelper/releases/download/v1.0.0/LatentCoupleHelper-v1.0.0.zip
-
-https://i.imgur.com/ZwJ5q7o.png
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dTpc5Mc6EB-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dTpc5Mc6EB.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9JlEkPik47-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/9JlEkPik47.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hrREhj2sax-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/hrREhj2sax.png]]
 
@@ -376,6 +358,7 @@ HN/Loraは仕様が変わったので削除。
 - システム情報
 - 1111とかvenvとかの情報を表示する
 - 「なんか動かないんだけど！」って時は、エラーの内容とこの表示内容をコピペして相談しましょう
+
 
 
 

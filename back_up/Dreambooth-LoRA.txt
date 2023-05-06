@@ -820,6 +820,10 @@ flat式のLora作成工程ってこんな感じであってる？
 
 その他にどのようなLoRAが作れるかは https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main をみると良い
 
+
+コピー機学習法はこちらも参考になる。
+https://rentry.co/kopiki_lora
+
 * Loraの使用方法&aname(apply_lora)
 
 ''使い方その1とその2で、配置するフォルダが違うので注意！''
