@@ -274,6 +274,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|○○behinds her|後ろにいる○○|サンプルはcreature(dragon)。注意点はdistanceと同様。|https://image02.seesaawiki.jp/n/h/nai_ch/hXbr0d6HbJ.png|
+|○○ in the distance|遠くにいる○○|サンプルはcreature(lion) 。混ざりやすいもの（tigerなど）はガチャるしかない（UCにtiger patternなど出したくないものを入れることで確率は下がるが、混ざるのは完全に防げない）。landscapeにした方が圧倒的に出やすい。|https://image02.seesaawiki.jp/n/h/nai_ch/ZwO90y7klU.png|
 |cat ''infront of'' her|手前に猫||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oG9ddhb2UU.png,40%)|
 |mouse ''on'' her head|頭の上にネズミ|上に触れている状態|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lMEhOwA46o.png,40%)|
 |UFO ''above'' her head|頭の上空にUFO|上、対象との間が空いている|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pc40rEnR4w.png,40%)|
