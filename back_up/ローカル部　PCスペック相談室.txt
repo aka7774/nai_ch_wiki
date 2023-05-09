@@ -390,6 +390,6 @@ PCの使用状況やライブラリ,ドライバのバージョンによって�
 Unetが原因でNansExceptionが出るなら多分VRAMが足りてない。
 
 medvramはだいたい所要時間1.5倍くらい
-lowvramはさらに4倍くらい
+lowvramはさらに4〜10倍くらい
 [END]
 
