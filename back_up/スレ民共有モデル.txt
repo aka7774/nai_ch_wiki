@@ -620,3 +620,42 @@ https://70.gigafile.nu/0503-e1c38015ce4c03032d44892232f0d757f
 animeScreenshotlikeMix_fp16.safetensors と Nostalyakimix_v10.safetensors をシンプルにM0.5で混ぜたヤツなんやけどな
 その画像のプロンプトの注意点は、全身像やから強めのhiresかけた方がええ事と、ちょっときわどいeditting使っとるからサンプル数は大きく弄らん方がええくらいやろか……
 ||=
+
+**200スレ515 DefbeaCF3AR_mix_v1
+https://fate.5ch.net/test/read.cgi/liveuranus/1683436784/515
+&#128317;https://civitai.com/models/56544/defbeacf3armixv1
+=|BOX|
+515 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a754-x+Zz)[sage] 投稿日：2023/05/08(月) 00:23:08.78 ID:iIdEcDMj0
+GWはモデルマージした遊んでた
+色々弄ったけど結局AOMのマージ比率参考にするのが1番良かったわ
+https://civitai.com/models/56544/defbeacf3armixv1
+マージモデル公開してる奴は覚えてないとか言わずにAOM見習ってマージ元やマージ比率公開して欲しいね
+||=
+
+**202スレ497 Closs mix SIERRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1683672268/497
+&#128317;https://mega.nz/file/pBsXwZjR#tr9spG907OnrlJGaV_0Mx-rtm0AWFRIN4hjdDP3AeTA
+=|BOX|
+497 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ef88-O5MS)[sage] 投稿日：2023/05/10(水) 23:03:27.10 ID:J/41iEBa0 [5/9]
+>>493
+Closs mix SIERRA
+https://mega.nz/file/pBsXwZjR#tr9spG907OnrlJGaV_0Mx-rtm0AWFRIN4hjdDP3AeTA
+
+素直でエロも行ける子や
+遊んでやってくれい
+
+505 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾃﾃﾝﾃﾝﾃﾝ MMde-O5MS)[sage] 投稿日：2023/05/10(水) 23:13:24.71 ID:zqBYb3+qM
+>>497
+ありがたく頂戴するで
+
+ClossmixのKとCCCを使わせてもろてるが
+よければSIERRAの特徴というか、ニキのこだわりを聞かせてくれたら捗るで
+
+509 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ef88-O5MS)[sage] 投稿日：2023/05/10(水) 23:21:22.38 ID:J/41iEBa0 
+>>505
+せやなあ
+QUEBEC-Kは神絵系かつ優等生なモデルなんやが、すこしNSFW系プロンプトに弱いところがあってな
+NSFW系LoRAに対する反応もいまいち悪かったりしたんや
+SIERRAは、QUEBEC-Kの元となったモデルのひとつにTreebarkを秘密の配合で混ぜることで、精液とNSFWに強くなっとる
+SFWで行くならQUEBEC-Kでええが、NSFWを出力したいときにはSIERRAがいいかもな
+||=

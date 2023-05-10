@@ -171,6 +171,23 @@ lokrとia3とDyLoRAを選択できるようになったで
 https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.4.1
 ||=
 
+* ハードウェア関係
+** HWMonitor
+https://www.cpuid.com/softwares/hwmonitor.html
+
+GPUの温度が高くなりすぎると性能劣化や故障の原因になるので、それを監視できるツール。
+タスクマネージャーでもGPU温度は表示されるが、グラボの中央など1か所固定の温度しか表示されない。
+このソフトならhot spot（グラボ全体で一番高熱になっている場所）の温度が取れるので、この数値を基準に考えるべき。
+[[GPU-Z>https://www.techpowerup.com/gpuz/]] でも同じ情報が得られる。
+
+** MSI Afterburner
+https://www.msi.com/Landing/afterburner/graphics-cards
+
+高熱になりすぎないようにパワーリミットをかけられるなど、グラボの挙動を変更できるツール。
+また、最近のグラボは高々数%の性能向上のために電力をドカ食いする傾向があるので、節電ツールとしても使える。
+（人によっては50%まで落としても数%のパフォーマンス低下で済んだという報告もあり。各自で測ってみよう）
+パワーリミットをかけるには、FAN欄のPOWER LIMITの数値を変更して使用する。適用ボタンを押すのを忘れずに。
+
 * その他
 
 ** PNG Infoを維持したままPNGをJPEGに変換するツール
