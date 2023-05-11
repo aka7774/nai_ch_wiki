@@ -82,6 +82,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|4080|||||||
 |4090|||||||
 |RTX 4070Ti|12GB|Core i7-8700||25.23s|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
 |RTX 3060|12GB|Core i7-8700||51.96s|--xformers||

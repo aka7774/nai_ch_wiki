@@ -170,6 +170,18 @@ LoRA学習GUI更新した
 lokrとia3とDyLoRAを選択できるようになったで
 https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.4.1
 ||=
+https://fate.5ch.net/test/read.cgi/liveuranus/1683672268/533
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.3
+=|BOX|
+533 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1e38-b2Jm)[] 投稿日：2023/05/10(水) 23:54:46.82 ID:RYete8yh0
+LoRA学習GUIの更新したよ
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.3
+新オプティマイザ、Min-SNR Gamma、Multiresなんとかの指定できるようになった
+
+https://i.imgur.com/98tvN60.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rzmSrqybw8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/rzmSrqybw8.png]]
+
 
 * ハードウェア関係
 ** HWMonitor
@@ -203,3 +215,4 @@ PNG Infoを維持したままPNGをJPEGに変換するツール
 https://mega.nz/folder/uY42VJZa#7Hh0vTvhpa3poL_gNgzipg
 
 ||=
+
