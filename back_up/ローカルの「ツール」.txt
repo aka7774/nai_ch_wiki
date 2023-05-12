@@ -141,6 +141,11 @@ https://uploader.cc/s/facw8gzhellfpv56b8unz3iprmql5wyjfy7atxiy9xnx23284x2ut1836v
 ** Kohya_lora_param_gui
 https://github.com/RedRayz/Kohya_lora_param_gui
 - sd-scriptsのパラメーター設定をGUIで出来るようにするもの。
+
+train_network.pyでのLoRA学習専用。
+あと更新してもスレで報告しない時あるんで悪しからず。
+
+[+]
 https://fate.5ch.net/test/read.cgi/liveuranus/1680004431/740
 =|BOX|
 740 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0638-Ahwc)[] 投稿日：2023/03/30(木) 02:00:06.00 ID:5Q8D9xj/0
@@ -181,7 +186,23 @@ https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.3
 https://i.imgur.com/98tvN60.png
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rzmSrqybw8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/rzmSrqybw8.png]]
+[END]
+https://fate.5ch.net/test/read.cgi/liveuranus/1683672268/910
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.31
+=|BOX|
+887 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｵｯﾍﾟｹ Src7-zOeB)[sage] 投稿日：2023/05/11(木) 15:18:33.22 ID:3R90fCCOr [1/2]
+>>533
+いつも使わせて貰っています
+https://i.imgur.com/8WISrKt.png
+ある条件下でconv_block_dimsの前にスペースが入らずにエラーになってしまうことあるので見ていただけ無いでしょうか？
+恐らくTrainForm.csのUseBlockWeightとUseBlockDimが共にTrueの際にスペースが入らなくなるような気がしています
 
+910 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1e38-b2Jm)[] 投稿日：2023/05/11(木) 15:52:14.93 ID:ljDhH31T0 [2/2]
+>>887
+修正した
+すまんやで
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.31
+||=
 
 * ハードウェア関係
 ** HWMonitor
