@@ -177,6 +177,14 @@ echo set GIT=%GIT%.exe
 echo set VENV_DIR=
 ||=
 
+*** あかちゃんインストーラーでコマンドを使えるやつ.bat
+
+絶対パスじゃなくても python とか git とか打ったら動くようになる。
+
+https://github.com/aka7774/elemental_code/blob/main/tools/1111_activate.bat
+
+Thanks bro!
+
 *** モデルのインストール
 
 + 「Filer」「Checkpoints」「Download」タブを順に開いていく
@@ -335,6 +343,8 @@ PythonとGitをインストーラーで入れた場合はアンインストー�
 * 環境の移行
 新しくWebUIをクリーンインストールして古い環境の設定だけをもってくる方法。
 ※編集中。だれか詳しい人いたら追記して、どうぞ。
+
+
 
 
 
