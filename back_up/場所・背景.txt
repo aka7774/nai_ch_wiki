@@ -78,6 +78,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|scenery|景色|natureより広い範囲が描写される傾向がある。描かれるものは自然物でランダム。|https://image01.seesaawiki.jp/n/h/nai_ch/_u25233o0A.png https://image02.seesaawiki.jp/n/h/nai_ch/AGjN4VGiMs.png|
+|nature|自然|ランダムに自然の景色が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/M5pmF2Dr1Z.png https://image01.seesaawiki.jp/n/h/nai_ch/Apf8VACWTC.png|
+|landscape|風景|大体山並みになる。|https://image02.seesaawiki.jp/n/h/nai_ch/Dwq8pjhwK1.png https://image01.seesaawiki.jp/n/h/nai_ch/avuZAQ2CK4.png|
+|cityscape|街並|sunsetと組み合わせると日没の街並になる。|https://image01.seesaawiki.jp/n/h/nai_ch/vI0x_7cRLy.png https://image01.seesaawiki.jp/n/h/nai_ch/KjoUXYimvs.png|
 |Japanese garden|日本庭園|兼六園や足立美術館など海外でも知られている日本庭園ぽくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/VoW0zKR0tS.png|
 |garden|庭園|西洋風の庭園になる。|https://image01.seesaawiki.jp/n/h/nai_ch/BlzXxdKGuN.png|
 |slums|スラム街|都市部で極貧層が密集して居住する地区のこと。|https://image02.seesaawiki.jp/n/h/nai_ch/QiskV3pDsj.png|
@@ -252,6 +256,22 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|multiple monochrome|モノクロ＋差し色|モノクロ絵に１色ないし数色の差し色を入れた描写。|https://image01.seesaawiki.jp/n/h/nai_ch/5b3oJLTSAX.png https://image02.seesaawiki.jp/n/h/nai_ch/KxJnoBGXiJ.png|
+|motion blur|被写体ブレ（モーションブラー）|動いている対象をカメラで撮影する時に生じるブレ。被写体ブレを発生させたい動作、背景に隣接して配置すると対象がブレて描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/Y49HsIg20n.png https://image01.seesaawiki.jp/n/h/nai_ch/tU20W1YWyU.png|
+|lens flare|レンズフレア|画角内に極めて明るい光源が存在する場合に生じる、暗部への光の漏れ。|https://image02.seesaawiki.jp/n/h/nai_ch/d0zux2xsKX.png|
+|halftone|網点（ハーフトーン）|背景が網点のグラデーションで描画される。|https://image01.seesaawiki.jp/n/h/nai_ch/aFHYMGhZ4e.png|
+|diffraction spikes|回折スパイク|光の点から放射する複数のスパイク状の光。|https://image02.seesaawiki.jp/n/h/nai_ch/qRTPJJj5Ep.png|
+|chromatic aberration|色収差|レンズ類で像をつくるときに、レンズ材料の分散が原因で発生する収差。像の色ずれとして表現される。|https://image02.seesaawiki.jp/n/h/nai_ch/C8rgCXfPBL.png|
+|chiaroscuro|明暗法|明暗を利用して対象物を立体的に描く手法。陰影のはっきりした絵になる。|https://image02.seesaawiki.jp/n/h/nai_ch/rX0Pfr7KDy.png|
+|fluctuations on the surface of the water, caustics|コースティクス|曲面またはオブジェクトによって反射または屈折した光線の集まり（包絡線）、またはそれを別の表面に投影したときにできる独特の模様。プールなどの水面が揺らぐ様を表現できる。|https://image01.seesaawiki.jp/n/h/nai_ch/jLoC9qNcop.png|
+|bokeh|ボケ|日本語のボケが語源。夜景と合わせると幻想的な雰囲気になる。|https://image02.seesaawiki.jp/n/h/nai_ch/skLkr61slX.png|
+|backlighting|逆光|カメラのレンズが光源の方向か、それに近い方向に向けられた状態。|https://image01.seesaawiki.jp/n/h/nai_ch/_UVLHUM2tE.png|
+|partially underwater shot|部分水中撮影|水面視点での撮影。被写体に対する水面の位置はランダムだが股下から膝上になることが多い。|https://image02.seesaawiki.jp/n/h/nai_ch/M3EoAK_NOC.png https://image01.seesaawiki.jp/n/h/nai_ch/UUjNhUEfwx.png|
+|mosaic art|モザイクアート|強めてもキャラがモザイク絵にならない。他の背景指定を無視してランダムなモザイク背景になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/gVZe5ub6G5.png https://image01.seesaawiki.jp/n/h/nai_ch/_ZValwO2sj.png|
+|perspective, vanishing point, |透視図法|一点透視図法で描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/ZN2iWUxX6a.png|
+|foreshortening|短縮法|斜めに置かれた物体は，実長よりも短く見える。このような，実際より短く見える人体や物体を二次元平面に描くこと。|https://image01.seesaawiki.jp/n/h/nai_ch/UYPkfPTeNS.png|
+|bad perspective|悪い遠近法（直訳）|適切に遠近法が用いられてない状態。|https://image02.seesaawiki.jp/n/h/nai_ch/0GpinTqYvO.png|
+|atmospheric perspective|空気遠近法|屋外では大気の持つ性質により遠くの景色ほど青味がかり、同時に輪郭が不明瞭に霞んで見える。この大気の性質を利用して絵に奥行きを持たせる手法。背景のプロンプトに付与して使う。|https://image02.seesaawiki.jp/n/h/nai_ch/X5iHgUraBA.png|
 |Fluttering Petals|花びらが舞う|||
 |perspective|パース（遠近）|立体的な奥行きのある絵になる||
 |big family|大家族|親戚一同の集合写真のような大人数の家族写真が出る.組み合わせでクラスのアルバム写真みたいな画像も作れる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KP9wZwr3z_-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/KP9wZwr3z_.png]]|

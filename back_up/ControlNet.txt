@@ -332,6 +332,24 @@ inpaintのcontrolnetでもできるで
 加工が面倒ならdepth画像無加工でWeight落とすだけでもいけるかも
 ||=
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/i0DPvwztHh.png,400)
+
+*** 同じ構図で別のモデルに書かせる
+=|PERL|
+同じ構図で別のモデルに書いてほしい場合はControlNet 1.1のTile使うとええな
+img2imgに比べてCN Tileは全モデルでスカートちゃんとたくし上げてくれとる
+
+img2img(ノイズ除去=0.7)
+（画像1枚目）
+
+ControlNet Tile
+（画像2枚目）
+設定
+（画像3枚目）
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aNDE6NBScc-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/aNDE6NBScc.jpg]]
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/M7GUkZbqB1-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/M7GUkZbqB1.jpg]]
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/T6ygwL4ia5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/T6ygwL4ia5.png]]
+
 **動画
 外人ニキやけど早送りでもだいたい分かる [[https://www.youtube.com/watch?v=ci7NfTsifd0>>>https://www.youtube.com/watch?v=ci7NfTsifd0]]
 

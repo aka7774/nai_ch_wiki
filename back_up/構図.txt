@@ -70,6 +70,7 @@
 * 体、顔、視線の向き
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|straight-on|まっすぐ|正面向きの構図になりやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/xr2jBFU4vz.png|
 |from below|下から|ローアングル、looking downはキャラを下に向かせるものだが、こちらはカメラ自体を下からの画角にするもの|https://image02.seesaawiki.jp/n/h/nai_ch/UgygQkyswk.png|
 |from behind|後ろから|体:後ろ向き|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PJqwHs4QjE.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/hxKWcFS5HC.png)|
 |from side|横から|体:横向き|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/H9vUN0IBQK.png) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/I6HXws8R80.png)|
