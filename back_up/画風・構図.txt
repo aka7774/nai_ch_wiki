@@ -27,6 +27,13 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|photorealistic|写実的|よりリアルな描写になる。|https://image01.seesaawiki.jp/n/h/nai_ch/cWWOi1VWt8.png https://image01.seesaawiki.jp/n/h/nai_ch/rhsVM9METl.png|
+|realistic|現実的|ディフォルメを排除して写実的な描写になる。|https://image02.seesaawiki.jp/n/h/nai_ch/ppfknfD7OV.png https://image01.seesaawiki.jp/n/h/nai_ch/6PTL9P3o0z.png|
+|Ligne Claire|リーニュクレール|力強い黒の輪郭、平坦な色、被写体と背景のコントラストがほとんどない詳細な背景を特徴とするアート スタイル。|https://image02.seesaawiki.jp/n/h/nai_ch/aB7AqxZ6hB.png https://image01.seesaawiki.jp/n/h/nai_ch/F_Ow_4aBm0.png|
+|impressionism|印象派|19世紀後半のフランス・パリで起こった芸術運動。明るい色彩を用いて、外の建物や人物などをふんわりと空気で包まれた“印象”として表現しているのが特徴。キャラはあまり影響を受けない。|https://image01.seesaawiki.jp/n/h/nai_ch/EKIkkZn8jT.png https://image02.seesaawiki.jp/n/h/nai_ch/WJImXlD21A.png|
+|fine art parody|有名絵画のパロディ|プロンプトに続けて絵画名を入れると指定した絵画のパロディ風になる。|https://image01.seesaawiki.jp/n/h/nai_ch/Act2z_shwQ.png https://image01.seesaawiki.jp/n/h/nai_ch/ZYyJ5jzOua.png|
+|art nouveau|アール・ヌーヴォー|19世紀末から20世紀初頭にかけてヨーロッパを中心に開花した国際的な美術運動で建築・工芸他多くの分野に影響を与えた。本の表紙や挿絵、ポスターなど商業イラストにも多くの足跡を残している。花や植物の自然に見られる形状や構造、および緩やかな曲線に影響を受けているのが共通した表現方法である。|https://image01.seesaawiki.jp/n/h/nai_ch/drR6pNy5IH.png https://image02.seesaawiki.jp/n/h/nai_ch/gSJ0vfoi7r.png|
+|art deco|アール・デコ|1910年代半ばから1930年代にかけて世界的に流行した装飾様式。建築や工芸など多くの分野に影響を与えた。ポスターなどの商業デザインを通して絵画にも影響を与えている。絵画としては平面的、柄のないシンプルな無地、色調が濁色といった特徴がある。|https://image01.seesaawiki.jp/n/h/nai_ch/j3MQeewAz7.png https://image02.seesaawiki.jp/n/h/nai_ch/_owEbX8SuX.png|
 |abstract|抽象的|強化するほど抽象的な描写となる。|https://image01.seesaawiki.jp/n/h/nai_ch/Ov8EBvxVVe.png https://image02.seesaawiki.jp/n/h/nai_ch/n0lVrr5jCb.png|
 |manga time kirara|まんがタイムきらら|サンプルの様な目が共通する。mangaが入っているので絵柄は漫画、二次絵寄り|https://image01.seesaawiki.jp/n/h/nai_ch/1gPCkf3k6Q.png|
 |isometric|クウォータービュー|背景のみ~~人物を入れるのは不可|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GsQLk4asdB.png)|
@@ -150,21 +157,20 @@
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
 |lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ドット絵の多くが該当する ~~ ぼやけたりjpegノイズが生成されたりする||
-|masterpiece|傑作|NovelAIが独自につけたタグ。quality tagsに入っている。いわゆるマスピ顔になる。||
-|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ 若干書き込みが細かくなる||
-|official art|公式アート|品質向上系 ~~ ロゴや著作権表記が出る場合あり|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yr8umSOBfB.png)|
-|virtual youtuber|Vチューバ―||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S.png]]|
-|masterpiece|傑作・高クオリティ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|
+|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ SD1.Xの学習解像度が512x512なので誤差レベルで精細になる程度の効果||
+|official art|公式アート|品質が向上する ~~ ロゴや著作権表記が出る場合あり|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yr8umSOBfB.png)|
+|virtual youtuber|バーチャルユーチューバー||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S.png]]|
+|masterpiece|傑作|NovelAIが独自につけたタグ。quality tagsに入っている。画風のブレを抑えるがいわゆるマスピ顔になる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|
 |magnificent|素晴らしい||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4PMOq8x7wv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4PMOq8x7wv.png]]|
 |jewel-like eyes|宝石のような目|画風で合ってるのか怪しいが雰囲気変わるんでおいとくで|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0aqGHWqC0w-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0aqGHWqC0w.png]]|
 |beautiful|美しい||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/udkFbngBev-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/udkFbngBev.png]]|
 |secret|秘密？||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/COJILQ0I1J-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/COJILQ0I1J.png]]|
 |occultic|オカルト||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3XBUL4iMa0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3XBUL4iMa0.png]]|
 |magical|魔法||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1g0O1OP06V-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1g0O1OP06V.png]]|
-|best quality|クオリティ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI.png]]|
+|best quality|最高品質|品質が向上することはない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI.png]]|
 |intricate|複雑な||https://image02.seesaawiki.jp/n/h/nai_ch/O7iISG8jEL.png|
 |taylor swift||女優|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98.png]]|
-|multiple view|マルチビュー|||
+|multiple views|マルチビュー|||
 |motion lines|集中線|||
 |extremely detailed CG unity 8k wallpaper|8K超精細CG||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e.png]]|
 |}
