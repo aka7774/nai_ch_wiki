@@ -256,8 +256,10 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
  --xformers や --opt-sdp-no-mem-attention と併用できる。
 環境によっては効果が無かったり逆に遅くなったりするらしいので比較検討しましょう。
 
-* cudnnのバージョンアップ(RTX4000シリーズでは必須)
-標準でインストールされるcudnn関係のDLLが古い(4000シリーズ未対応)為、対応版(cudnn8.7.0)に置き換える
+* cudnnのバージョンアップ(torch1系の場合、RTX4000シリーズでは必須)
+※torch2系の場合、バンドルされているcudnnが8.7になったため、この手順は不要。webuiの画面の一番下でtorchのバージョンが確認できる
+
+torch1系の場合、標準でインストールされるcudnn関係のDLLが古い(4000シリーズ未対応)為、対応版(cudnn8.7.0)に置き換える
 最新版(2023-03-19現在だと8.8.1)に置き換えることでさらなる高速化が期待できるかも。
 
 +https://developer.nvidia.com/rdp/cudnn-download より Local Installer for Windows (Zip) をダウンロードする~~※NVIDIA開発者アカウントが必要
@@ -402,3 +404,5 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。
 場合によっては他のパーツの買い替えも必要になるが、最も効果的。
 (give me money:3000.0)
+
+
