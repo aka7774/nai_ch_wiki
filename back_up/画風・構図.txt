@@ -27,6 +27,13 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|canvas (medium)|キャンバス|主に油絵で使われる絵の支持体。|https://image01.seesaawiki.jp/n/h/nai_ch/dlnmcpZcW_.png https://image02.seesaawiki.jp/n/h/nai_ch/YbLJwD5W_B.png|
+|charcoal (medium)|木炭|デッサン用の画材。広い面積に綺麗なトーンを重ねる表現に長けている。そのためか、鉛筆画より画面が面的にトーンを付けた感じになりやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/xsr52FOynQ.png https://image01.seesaawiki.jp/n/h/nai_ch/7HENNrZASR.png|
+|coupy pencil (medium)|クーピーペンシル|サクラクレパスの商品。クレヨンと色鉛筆の中間の特性を持つ芯だけの色鉛筆。|https://image02.seesaawiki.jp/n/h/nai_ch/VL_07hPtM3.png https://image01.seesaawiki.jp/n/h/nai_ch/5BvlUj6xtQ.png|
+|gouache (medium)|不透明水彩|不透明水彩は隠蔽力（下地の色を覆い隠す力）が強い特性がある。描画する上では重ね塗りによる修正がやりやすい。仕上がった絵は油絵寄りのイメージになる。|https://image02.seesaawiki.jp/n/h/nai_ch/AO7R59QDEK.png https://image01.seesaawiki.jp/n/h/nai_ch/NYuas6FCma.png|
+|graphite (medium)|鉛筆画|鉛筆で仕上げた画。線が柔らかい雰囲気になる。|https://image01.seesaawiki.jp/n/h/nai_ch/nu0O5styKD.png https://image01.seesaawiki.jp/n/h/nai_ch/ZDxNcIerQ0.png|
+|nib pen (medium)|付けペン、万年筆|水彩の様に強く効くプロンプトではない。キャラが万年筆を持つ描写になることも多い。|https://image01.seesaawiki.jp/n/h/nai_ch/FQuSqliZf_.png https://image02.seesaawiki.jp/n/h/nai_ch/Fvd5Xuwawy.png|
+|pastel (medium)|パステル|パステルは乾燥させた顔料を粉末状にし粘着材で固めた、チョークのような見た目の画材のこと。プロンプトの効きが悪い場合は「traditional media」を追加するとよい。|https://image01.seesaawiki.jp/n/h/nai_ch/f4mky_W4Gj.png https://image02.seesaawiki.jp/n/h/nai_ch/3Q0eurBQ6V.png|
 |tempera (medium)|テンペラ画|顔料に接着剤となる材料（生卵がよく使われた）を混合したテンペラ絵具により描かれた絵画。15世紀に油絵具が発明されるまでは西洋絵画でよく使われた画材である。絵具の伸びがなく、ぼかしの技法は使えない。|https://image02.seesaawiki.jp/n/h/nai_ch/yasNlvdHEi.png https://image01.seesaawiki.jp/n/h/nai_ch/4AHEGNMx38.png|
 |watercolor pencil (medium)|水彩色鉛筆|水彩絵の具のように水に溶かして色を伸ばせる色鉛筆。水彩画のタッチでより繊細な描写ができる。|https://image01.seesaawiki.jp/n/h/nai_ch/b3ItQSAKEj.png https://image01.seesaawiki.jp/n/h/nai_ch/qRKyi9rJe3.png|
 |Schmincke(water color)|シュミンケ（絵具メーカー）|ドイツの最高級絵具メーカー。ホルベインの10倍ぐらいの値段で売られている。|https://image02.seesaawiki.jp/n/h/nai_ch/f4Qjj_cnn8.png https://image02.seesaawiki.jp/n/h/nai_ch/JTjLKw98Ww.png|

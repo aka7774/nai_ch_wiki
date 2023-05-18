@@ -164,7 +164,37 @@ CNでイラストをある程度固定した方がいい
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/vXlUu0kSnZ.jpg,100)
 [END]
 
+**Controlnet 1.1 のCN tile(tile_resample)を併用
+Controlnetに追加された数々の機能の1つ、CNtileをMultiDiffusionと併用して高解像度にする
 
+-メリット
+--Denoising strengthを最大の1にしても小人さんが発生しない
+--元絵にほぼ忠実な状態で高解像度化が出来る
+-デメリット
+--処理時間が数倍かかる(4k化に20分等)
+
+1. extensionsで [[sd-webui-controlnet>https://github.com/Mikubill/sd-webui-controlnet]] をインストール
+2. ControlNet 1.1の[[model>https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main]]をダウンロードし、\extensions\sd-webui-controlnet\models にセット
+　 必要なのは control_v11f1e_sd15_tile.pth と control_v11f1e_sd15_tile.yaml
+3. Controlnetを有効にし、プリプロセッサに tile_resample　モデルに control_v11f1e_sd15_tile を選択
+3. MultiDiffusion の設定を入れる
+5. Generateクリックしてi2iでアップスケール実行
+
+スレ207の868ニキ推奨設定
+=|BOX|
+868 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6312-keRw)[sage] 投稿日：2023/05/18(木) 14:49:53.98 ID:woSwpoup0
+ニキ達、tile diffusionの公式見てないんか？　Denoising strength０．５　ってのはもう昔の話やぞ
+小人出さんように恐る恐るdenoise調整する時代はCNtileの登場で終わったんや
+
+最新の推奨設定は
+・Denoising strength１　（最大値ってことや）
+・Method　Mixture of Diffusers　（デフォのmulti diffusionちゃうで）
+・Noise Inversion　Inversion steps２００　（最大値や）
+・Renoise strength０　（ゼロにしてええんや）
+・CNtile使用　（タイル有効にしたら何もいじらん画像も貼らんでいい）
+
+これや
+||=
 
 
 * ツール

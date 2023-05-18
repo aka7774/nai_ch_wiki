@@ -5,6 +5,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|nuclear explosion, mushroom cloud, sonic boom,||核爆発||https://image02.seesaawiki.jp/n/h/nai_ch/qyyJ52A7vf.png https://image01.seesaawiki.jp/n/h/nai_ch/x0RPnmWICl.png|
 |in the square of the castle town, outdoor, in medieval main street,||ファンタジー風の街並み|中世ファンタジー風ではなく、少し古風な現代ヨーロッパ風っぽくなる事もある。~~城が教会くらいのサイズ感になる事も多い。~~適宜街に関する単語を追加・削除してカスタマイズ可能。|[[https://image01.seesaawiki.jp/n/h/nai_ch/63ymYGvozd.png]][[https://image02.seesaawiki.jp/n/h/nai_ch/w7LMpYA0lt.png]][[https://image01.seesaawiki.jp/n/h/nai_ch/XF77YUjoPQ.png]]|
 |&size(10){detailed,definition,best quality,super quality,high quality,high quality,highly quality,exquisite,intricate,super intricate,ultra intricate,ultimated intricate,ultimate intricate,extreme intricate,extremely intricate,hyper intricate,hyper extreme intricate,supreme intricate,supremed intricate,supreme quality,exquisitely quality,exquisitely detailed,exquisitely definition,super detailed,ultra detailed,extreme detailed,extremely detailed,ultimate detailed,hyper detailed,hyper extreme detailed,extreme hyper detailed,supreme detailed,hyper supreme detailed,ultra supreme detailed,minute details,minute detailed,minutely detailed,finely,super finely,ultimate finely,extreme finely,hyper finely,finely detailed,super finely detailed,ultra finely detailed,extreme finely detailed,extremely finely detailed,hyper finely detailed,ultimate finely detailed,hyper extreme finely detailed,super extreme finely detailed,super extremely finely detailed,super intricate finely detailed,super exquisite finely detailed,hyper exquisite finely detailed,hyper intricate finely detailed,ultra intricate finely detailed,extreme intricate finely detailed,ultimate intricate finely detailed,excellent intricate finely detailed,excellenty intricate finely detailed,amazing intricate finely detailed,super amazing detailed,ultra amazing detailed,extreme amazing detailed,extremely amazing detailed,ultimate amazing detailed,hyper amazing detailed,hyper extreme amazing detailed,ultimate highly definition,ultimate amazing definition,ultimate amazing accuracy definition,ultimate amazing accuracy detailed,super amazing accuracy details,hyper amazing accuracy definition,amazing intricate,amazing exquisite,wonderful definition,wonderful detailed,wonder detailed,super wonder detailed,ultra wonder detailed,ultimate wonder detailed,extreme wonder detailed,extremely wonder detailed,hyper wonder detailed,awesome,awesome detailed,	super awesome detailed,ultra awesome detailed,	ultimate awesome detailed,amazing awesome detailed,extremely awesome detailed,hyper awesome detailed,hyper extreme awesome detailed}||神聖そうな場所|detailed系プロンプト全つっぱ女の子を同時に出力すると高級感のある部屋にグレードダウンする|https://image01.seesaawiki.jp/n/h/nai_ch/NYkqeH9cBS.png|
 |witch house,medicinal plants,vial,medieval age,||魔女の家||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HLDg6hk2uV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/HLDg6hk2uV.png]]|
@@ -78,6 +79,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|supermarket|スーパーマーケット||https://image01.seesaawiki.jp/n/h/nai_ch/6HqSTgcPyH.png https://image01.seesaawiki.jp/n/h/nai_ch/GP6G08lokV.png|
 |scenery|景色|natureより広い範囲が描写される傾向がある。描かれるものは自然物でランダム。|https://image01.seesaawiki.jp/n/h/nai_ch/_u25233o0A.png https://image02.seesaawiki.jp/n/h/nai_ch/AGjN4VGiMs.png|
 |nature|自然|ランダムに自然の景色が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/M5pmF2Dr1Z.png https://image01.seesaawiki.jp/n/h/nai_ch/Apf8VACWTC.png|
 |landscape|風景|大体山並みになる。|https://image02.seesaawiki.jp/n/h/nai_ch/Dwq8pjhwK1.png https://image01.seesaawiki.jp/n/h/nai_ch/avuZAQ2CK4.png|
@@ -220,6 +222,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|Uyuni salt lake, sky, cloud, reflection,|ウユニ塩湖|南米ボリビアにある広大な塩の平原。岐阜県の面積とほぼ同じ広さがある。乾季には干上がった塩の平原だが、雨季には冠水して湖になる。このとき、高低差50cm以内という極めて平らな平原に波も立たないほど薄く水が広がり、「天空の鏡」と形容される巨大な水鏡が出現する。アニメのOP、EDでそれっぽい背景が結構な頻度で出てくる。|https://image02.seesaawiki.jp/n/h/nai_ch/SZnA45Q3AR.png https://image01.seesaawiki.jp/n/h/nai_ch/_lsU1s9uSR.png|
 |Etoile arc de triomphe|エトワール凱旋門|フランスを代表する著名なランドマーク。パリのシャンゼリゼ通りの西端、シャルル・ド・ゴール広場にある戦勝記念碑。単に凱旋門と言えばこの建造物を指すほど有名。|https://image02.seesaawiki.jp/n/h/nai_ch/DLdA7Fyubq.png|
 |Notre Dame Cathedral|ノートルダム大聖堂|世界文化遺産「パリのセーヌ河岸」を構成する建造物。2019年に火災で焼け落ちた。|https://image02.seesaawiki.jp/n/h/nai_ch/y40w9sY71f.png|
 |cologne cathedral|ケルン大聖堂|ドイツにある世界最大のゴシック建築（40階建のビルに相当する大きさがある）。世界文化遺産。外観はあまり忠実に描写されない。|https://image01.seesaawiki.jp/n/h/nai_ch/LwHmLkfWXO.png https://image01.seesaawiki.jp/n/h/nai_ch/7GGQmPDX3P.png|
