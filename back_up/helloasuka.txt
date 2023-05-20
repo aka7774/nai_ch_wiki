@@ -82,15 +82,13 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4070|12G|Core i7-13700F||27.61|--xformers||
 |RTX 3080|10GB|Ryzen 9 5900X||20.22s|--allow-code --opt-sdp-no-mem-attention --enable-insecure-extension-access --api --no-half-vae --disable-nan-check|Ubuntu Server 22.4 メモリ32GB stable-diffusion-webui-dockerを使用 torch: 2.0.0+cu118 操作は別PCからリモート|
-|4080|||||||
-|4090|||||||
 |RTX 4070Ti|12GB|Core i7-8700||25.23s|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
 |RTX 3060|12GB|Core i7-8700||51.96s|--xformers||
 |RTX 3090|24GB|Ryzen 5 5500|20秒|19.82|--opt-sdp-attention|torch: 2.0.0+cu118　Show live previews of the created imageのチェックをオフ。i7-6000kから換装。28秒から劇的改善。|
 |RTX 4090|24GB|Core i7-13700K|10.66|10.58|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslas|Automatic1111 ver.1.1.0 まっさらから導入直後|
 |RTX 4070|12GB|Core i5-10400|22.50|22.05|--opt-sdp-attention --autolaunch|Windows10 torch: 2.0.0+cu118 RAM:64GB CPUが弱すぎる|
-|4070|||||||
 |RX 6700XT|12GB|Core i5-13600KF|45.6|45.15|--opt-sdp-attention|torch: 2.0.0+rocm5.4.2,Ubuntu22.04,RAM32GB,GPU定格,CPU電力制限@160W --opt-sdp-no-mem-attentionもほぼ同じタイムだった。|
 |GTX 1080|8GB|Core i3-12100F||152.84|--xformers|torch: 1.13.1+cu117|
 |RTX 4070|12GB|Core i3-12100F||18.66|--opt-sdp-no-mem-attention|torch: 2.0.0+cu118|
@@ -343,6 +341,4 @@ Batch Count 1、Batch Size 10
 [END]
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qkFzlFhZ4r-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qkFzlFhZ4r.png]]
-
-
 

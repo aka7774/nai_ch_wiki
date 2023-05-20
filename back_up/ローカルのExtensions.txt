@@ -340,6 +340,9 @@ tags: [prompting]
 https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git
 Danbooruなどの画像ブールボードからのタグの自動補完ヒントを表示します。ローカルのタグCSVファイルを使用し、カスタマイズのためのコンフィグも含まれています。
 - プロンプト入力時にDanbooruのタグの候補を表示・補完してくれる。ネガティブプロンプトでも効くので便利。
+- "<"に続けて入力することで、TIやLoRAの自動補完もしてくれる
+- 表示候補はデフォルトでは5つだが、Settings > Tag Autocomplete > Maximum Resultsから変更可
+
 added: 2022-11-04
 tags: [prompting]
 
@@ -1126,6 +1129,7 @@ added": "2023-01-25
 --- --tiling: boolean
 --- --do_not_save_samples: boolean
 --- --do_not_save_grid: boolean
+
 
 
 
