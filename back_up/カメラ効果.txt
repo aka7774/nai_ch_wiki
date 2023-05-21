@@ -94,13 +94,16 @@ ISO感度も弄れるんか？
 
 [END]
 
-* &size(32){}
+* 単語集
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(200px):ネガティブプロンプト|意味|備考|サンプル|
-||||||
-|depth of field||被写界深度||https://image01.seesaawiki.jp/n/h/nai_ch/SwHBvYT1lb.png|
-|hate|||||
-|portraitなし||カメラ呪文はportraitを入れると効果が強くなる|サルベージしておきました|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/LzAM1YOD6U-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/LzAM1YOD6U.png]]|
+|motion blur||被写体ブレ（モーションブラー）|動いている対象をカメラで撮影する時に生じるブレ。被写体ブレを発生させたい動作、背景に隣接して配置すると対象がブレて描写される。pan focusをつけると効果アップ？|https://image02.seesaawiki.jp/n/h/nai_ch/Y49HsIg20n.png https://image01.seesaawiki.jp/n/h/nai_ch/tU20W1YWyU.png|
+|lens flare||レンズフレア|画角内に極めて明るい光源が存在する場合に生じる、暗部への光の漏れ。|https://image02.seesaawiki.jp/n/h/nai_ch/d0zux2xsKX.png|
+|diffraction spikes||回折スパイク|光の点から放射する複数のスパイク状の光。|https://image02.seesaawiki.jp/n/h/nai_ch/qRTPJJj5Ep.png|
+|chromatic aberration||色収差|写真の隅が赤や青ににじむやつ|https://image02.seesaawiki.jp/n/h/nai_ch/C8rgCXfPBL.png|
+|bokeh||ボケ|日本語のボケが語源。夜景と合わせると幻想的な雰囲気になる。|https://image02.seesaawiki.jp/n/h/nai_ch/skLkr61slX.png|
+|depth of field||被写界深度|背景をぼかす。bokehのような玉ボケにはならない|https://image01.seesaawiki.jp/n/h/nai_ch/SwHBvYT1lb.png|
+|portraitなし||カメラ呪文はportraitを入れると効果が強くなる|サルベージしておきましたが元と違う絵になりました|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/LzAM1YOD6U-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/LzAM1YOD6U.png]]|
 |portraitあり||カメラ呪文はportraitを入れると効果が強くなる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/M7wekYTBOp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/M7wekYTBOp.png]]|
-|lens 135mm f1.8|||||
+|lens 135mm f1.8||レンズのスペック|これ単体では効果が薄い。絞りの値はほとんど効果なし||
 |}

@@ -76,6 +76,9 @@
 *** 眉毛
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
+|eyebrows|眉毛（指定した場合の印象）|eyebrowsと入れるだけで眉毛が太くなる傾向がある。４弱ぐらいで細めになる（上サンプル）。強めると太く短くなる傾向（下サンプル）。thick eyebrowsだと太すぎて使いづらい場合はeyebrowsの強弱で調整した方がいい。|https://image01.seesaawiki.jp/n/h/nai_ch/oLqkXtL2Fy.png https://image02.seesaawiki.jp/n/h/nai_ch/3gQLaczUpW.png|
+|thick eyebrows|太眉|強調しなくてもかなり太い。|https://image02.seesaawiki.jp/n/h/nai_ch/_YYG1w00wF.png https://image01.seesaawiki.jp/n/h/nai_ch/8uZTmhAdnr.png|
+|short eyebrows|短い眉毛|強調すると麻呂眉ぽくなる。|https://image02.seesaawiki.jp/n/h/nai_ch/FkfDwaOmrv.png https://image02.seesaawiki.jp/n/h/nai_ch/VLXkNw5Dxx.png|
 |troubled eyebrows|ハの字の眉|Undesired Content にこれを追加すると無表情の時の普通の眉になる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EWftzjkVeJ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/EWftzjkVeJ.png]]|
 |V-shaped eyebrows|逆八の字の眉|太くもなる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zzK4qlROjb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zzK4qlROjb.png]]|
 |}
