@@ -9,6 +9,8 @@
 * Tips一覧
 
 ** AssertionError: extension access disabled because of command line flags （★130）
+
+=|BOX|
 241今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ b57b-PB+X)2023/01/14(土) 19:20:26.50ID:c1xVtsTU0
 すいません
 loraの拡張機能がエラー出て導入できないんでどうしたらええか教えて欲しい
@@ -27,6 +29,7 @@ AssertionError: extension access disabled because of command line flags
 調べたんやけど >>274 で解決するっぽいわ
 --share と --listen を書いてるとextensionsを入れられへんかったのをオプション追加したみたいやな
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/ccf1a15412ef6b518f9f54cc26a0ee5edf458108
+||=
 
 ** Regional Prompter （★185）
 
@@ -50,6 +53,7 @@ https://image02.seesaawiki.jp/n/h/nai_ch/DEJBHnjQCQ.png
 
 ** LoRA作成初心者向けサイト（★185）
 
+=|BOX|
 383今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜﾝﾄﾝｷﾝ MMed-3XwG)2023/04/10(月) 17:27:08.61ID:9mqqi2OTM
 loRa作ってみたい園児向けの懇切丁寧なサイトってなんかないんかね
 うまく作れるとかそういうのじゃなくてとにかくまずは学習やらをさせてみたいって感じの
@@ -75,6 +79,8 @@ https://economylife.net/kohya-lora-install-use/
 >>383
 わいはコレやったわ
 https://note.com/uunin/n/n3f09b93df575
+
+||=
 
 ** 文字入れ、テキスト追加
 

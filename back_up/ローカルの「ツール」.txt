@@ -186,7 +186,7 @@ https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.3
 https://i.imgur.com/98tvN60.png
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rzmSrqybw8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/rzmSrqybw8.png]]
-[END]
+
 https://fate.5ch.net/test/read.cgi/liveuranus/1683672268/910
 https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.31
 =|BOX|
@@ -202,6 +202,15 @@ https://i.imgur.com/8WISrKt.png
 修正した
 すまんやで
 https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.31
+||=
+[END]
+https://fate.5ch.net/test/read.cgi/liveuranus/1684555065/224
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.6.0
+=|BOX|
+224 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0638-Q1+R)[] 投稿日：2023/05/20(土) 17:45:00.13 ID:RLt5u+9j0 [1/3]
+LoRA学習GUIの更新したで
+sd-scriptsの簡易インストール機能とDimリサイズでCUDAを使用するオプション追加
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.6.0
 ||=
 
 * ハードウェア関係

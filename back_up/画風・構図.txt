@@ -179,8 +179,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ドット絵の多くが該当する ~~ ぼやけたりjpegノイズが生成されたりする||
-|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ SD1.Xの学習解像度が512x512なので誤差レベルで精細になる程度の効果||
+|bad anatomy|悪い解剖|人体構造が破綻している画像につけられるdanbooruタグ。Quality tagsとしてUCに入ってる。 ~~ なお、これの逆の意味のperfect anatomyは解剖図を出そうとするだけで品質向上効果はない。||
+|lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ぼやけたりjpegノイズが生成されたりする ~~ ネガに入れると絵がシャープになる||
+|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ わずかに精細になる気がする||
 |official art|公式アート|品質が向上する ~~ ロゴや著作権表記が出る場合あり|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yr8umSOBfB.png)|
 |virtual youtuber|バーチャルユーチューバー||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S.png]]|
 |masterpiece|傑作|NovelAIが独自につけたタグ。quality tagsに入っている。画風のブレを抑えるがいわゆるマスピ顔になる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|
@@ -190,9 +191,9 @@
 |secret|秘密？||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/COJILQ0I1J-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/COJILQ0I1J.png]]|
 |occultic|オカルト||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3XBUL4iMa0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3XBUL4iMa0.png]]|
 |magical|魔法||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1g0O1OP06V-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1g0O1OP06V.png]]|
-|best quality|最高品質|品質が向上することはない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI.png]]|
+|best quality|最高品質|Quality tagsに入ってる。品質が向上することはない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/LcSz38YymI.png]]|
 |intricate|複雑な||https://image02.seesaawiki.jp/n/h/nai_ch/O7iISG8jEL.png|
-|taylor swift||女優|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98.png]]|
+|taylor swift|テイラースウィフト|女優|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98.png]]|
 |multiple views|マルチビュー|||
 |motion lines|集中線|||
 |extremely detailed CG unity 8k wallpaper|8K超精細CG||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e.png]]|
