@@ -98,7 +98,7 @@ ISO感度も弄れるんか？
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(200px):ネガティブプロンプト|意味|備考|サンプル|
 |motion blur||被写体ブレ（モーションブラー）|動いている対象をカメラで撮影する時に生じるブレ。被写体ブレを発生させたい動作、背景に隣接して配置すると対象がブレて描写される。pan focusをつけると効果アップ？|https://image02.seesaawiki.jp/n/h/nai_ch/Y49HsIg20n.png https://image01.seesaawiki.jp/n/h/nai_ch/tU20W1YWyU.png|
-|lens flare||レンズフレア|画角内に極めて明るい光源が存在する場合に生じる、暗部への光の漏れ。|https://image02.seesaawiki.jp/n/h/nai_ch/d0zux2xsKX.png|
+|lens flare||レンズフレア|画角内に極めて明るい光源が存在する場合に生じる、暗部への光の漏れ。つまり、光源の周りが白くなって放射状に線が出るやつのこと。ゴースト(レンズの反射による緑や紫の丸い像)も同時に生成される。|https://image02.seesaawiki.jp/n/h/nai_ch/d0zux2xsKX.png|
 |diffraction spikes||回折スパイク|光の点から放射する複数のスパイク状の光。|https://image02.seesaawiki.jp/n/h/nai_ch/qRTPJJj5Ep.png|
 |chromatic aberration||色収差|写真の隅が赤や青ににじむやつ|https://image02.seesaawiki.jp/n/h/nai_ch/C8rgCXfPBL.png|
 |bokeh||ボケ|日本語のボケが語源。夜景と合わせると幻想的な雰囲気になる。|https://image02.seesaawiki.jp/n/h/nai_ch/skLkr61slX.png|

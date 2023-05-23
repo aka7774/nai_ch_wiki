@@ -82,6 +82,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX A4500|20GB|i7-10700k||23.28|--xformers|torch: 2.0.1+cu118　パワーリミット70%にすると26.57s|
+|RTX 3060|12&#13191;|i5-12400F||54.94|xformers||
 |GTX 1060(OC)|6GB|Core i5-4570S||247.73|--no-half-vae --medvram|version:v1.2.1&#8226;python:3.10.6&#8226;torch:2.0.0+cu118&#8226;xformers:N/A&#8226;gradio:3.29.0&#8226;checkpoint:ba08a37426|
 |RTX 4070|12G|Core i7-13700F||27.61|--xformers||
 |RTX 3080|10GB|Ryzen 9 5900X||20.22s|--allow-code --opt-sdp-no-mem-attention --enable-insecure-extension-access --api --no-half-vae --disable-nan-check|Ubuntu Server 22.4 メモリ32GB stable-diffusion-webui-dockerを使用 torch: 2.0.0+cu118 操作は別PCからリモート|
