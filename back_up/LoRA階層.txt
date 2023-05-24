@@ -168,3 +168,43 @@ https://image01.seesaawiki.jp/n/h/nai_ch/ZnfO_8CAUs.png
 使用後
 https://image01.seesaawiki.jp/n/h/nai_ch/Rq3kB9Qgb7.png
 [END]
+
+* bimo.txt - 最適な層別適用を効率よく探すためのプリセット
+層別適用をガチで突き詰めるのは手間がかかるため、より手軽に探索するためのプリセットが開発された。
+https://github.com/Zuntan03/SdWebUiTutorial/raw/main/_/SdWebUi-Installer/LoraBlockWeight/bimo.txt
+↑の内容をlbwpresets.txtに追記する。
+"BIMO"ならすべて1、"bimo"ならすべて0、など、層別出力の1と0を、プリセット名の大文字と小文字でコントロールする仕様
+詳細な使い方は作者の[[github>https://github.com/Zuntan03/SdWebUiTutorial/blob/main/_/doc/BimoLoraBlockWeight/BimoLoraBlockWeight.md]]または[[Twitter>https://twitter.com/Zuntan03/status/1661202375884046336]]で。 
+
+以下は作者ニキの本スレへの書き込み
+https://fate.5ch.net/test/read.cgi/liveuranus/1684057555/567
+=|BOX|
+そういやニキらに興味持ってもらえるかもな話として
+>>412 のガチャ環境の整備ついでに手抜きLoRA層別適用のテンプレート作っといたで
+適当にlbwpresets.txtの末尾にでも入れたらどの環境でも使えるはずや
+https://raw.githubusercontent.com/Zuntan03/SdWebUiTutorial/main/_/SdWebUi-Installer/LoraBlockWeight/bimo.txt
+大文字が1で小文字が0でBase In Mid OutでInとOutは文字数増やすと分割数が増える
+量が多いなら上のほうのBIIMOOを雑に使うだけでも便利やったで
+ガチャでは<lora:flat2:-1:biimoO>や<lora:konyconiAI:1:BIimOO>とかしとる
+
+層調査は「<lora:lora_name:1:BIIMOO>」のXYZプロットで「BIIMOO,bIIMOO,BiIMOO,BIiMOO,BIImOO,BIIMoO,BIIMOo,biimoo」として小文字を増やしてったり
+「BIIMOO,Biimoo,bIimoo,biImoo,biiMoo,biimOo,biimoO,biimoo」から大文字を増やしたりや
+ええかんじに「biIMOo」とかが決まったら同値の「biiIIMOOoo」に展開してさらに微調整とかやね
+まだやるなら https://twitter.com/Zuntan03/status/1645603234801926144
+||=
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1684756133/802
+=|BOX|
+先週ここで紹介してたBIMOプリセットの解説を公開したで
+画像で「あー そーゆーことね 完全に理解した」なニキ向けや
+
+https://twitter.com/Zuntan03/status/1661202375884046336
+
+先週の紹介やのに6スレ前やで
+https://fate.5ch.net/test/read.cgi/liveuranus/1684057555/567
+
+解説: https://github.com/Zuntan03/SdWebUiTutorial/blob/main/_/doc/BimoLoraBlockWeight/BimoLoraBlockWeight.md
+BIMOプリセット本体: https://github.com/Zuntan03/SdWebUiTutorial/raw/main/_/SdWebUi-Installer/LoraBlockWeight/bimo.txt
+
+https://i.imgur.com/NsdKzZS.png
+||=

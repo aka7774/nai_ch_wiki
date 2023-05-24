@@ -210,6 +210,55 @@ https://civitai.com/models/22359/betterrameneating
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/r_AJKql1Jh-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/r_AJKql1Jh.jpg]]
 
+**212スレ125 ClearVAE 更新
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/125
+https://civitai.com/models/22354?modelVersionId=79615
+=|BOX|
+125 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7a38-a+t/)[] 投稿日：2023/05/24(水) 17:51:59.63 ID:x+w1S/7n0
+ClearVAE更新したよ
+ハイライトの黄ばみと謎の黒ずみを減らした
+黒ずみはシャープネス維持のために完全に消せなかった すまん
+https://civitai.com/models/22354?modelVersionId=79615
+https://majinai.art/i/nUZpqBL.webp
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DmpVrjr7Td-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/DmpVrjr7Td.png]]
+
+**212スレ271 ClearVAE V2.1 (5%明るいバージョン）
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/271
+https://civitai.com/models/22354?modelVersionId=79831
+=|BOX|
+256 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 637b-OTzP)[sage] 投稿日：2023/05/24(水) 21:52:29.86 ID:4tKTMMs10 [4/4]
+新しいClearVAEめっちゃ暗く感じるんやけどワイだけやろか？
+DDIM clearvae clearvaeV2 kl-f8-anime2
+https://i.imgur.com/G5WqXGT.jpg
+https://i.imgur.com/XZL6Pn0.jpg
+https://i.imgur.com/qvRWKPk.jpg
+2M Karras clearvae clearvaeV2
+https://i.imgur.com/GTbUGzl.jpg
+https://i.imgur.com/xwNtBxp.jpg
+DDIM clearvae clearvaeV2
+https://i.imgur.com/UyJR1xq.jpg
+https://i.imgur.com/dYNdfNf.jpg
+
+271 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7a38-a+t/)[] 投稿日：2023/05/24(水) 22:26:20.17 ID:x+w1S/7n0 [4/5]
+>>256
+ということで5%明るいバージョン作ったで
+https://civitai.com/models/22354?modelVersionId=79831
+https://majinai.art/i/g9mjR_k.webp
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jLvsBIQtK0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/jLvsBIQtK0.png]]
+
+**212スレ299 ClearVAE (コントラスト5%上げたバージョン）
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/299
+https://civitai.com/models/22354?modelVersionId=79888
+=|BOX|
+299 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7a38-a+t/)[] 投稿日：2023/05/24(水) 23:42:44.00 ID:x+w1S/7n0
+>>283
+とりあえずコントラスト5%上げたバージョンも置いとくわ
+https://civitai.com/models/22354?modelVersionId=79888
+||=
+
+
 ----
 
 * HyperNetwork
