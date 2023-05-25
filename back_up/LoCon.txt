@@ -7,12 +7,18 @@ LoRAでは学習できていない領域まで拡張して学習するちょっ�
 みたいな感じ
 
 *情報
-%%公式リポジトリ: https://github.com/KohakuBlueleaf/LoCon%%
+
+**学習
+%%公式リポジトリ: https://github.com/KohakuBlueleaf/LoCon%% ←LyCORISに統合されました
 公式リポジトリ：https://github.com/KohakuBlueleaf/LyCORIS
 
 
 ** 使用
 拡張を入れる必要がある。またAutomatic1111を最新にしておく(=ビルトインのLoRA機能に対応している必要がある)。
--LoRAフォルダにモデルを入れる場合~~https://github.com/KohakuBlueleaf/a1111-sd-webui-locon
--LyCORISフォルダにモデルを入れる場合~~https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris
+%%LoRAフォルダにモデルを入れる場合は https://github.com/KohakuBlueleaf/a1111-sd-webui-locon%%
+C3Lier(LoCon)は1111が対応したので不要になった。
+
+-LyCORISフォルダにモデルを入れる場合
+https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris
+LyCORIS固有のアルゴリズム(LoHa,ia3,lokr)を使用したLoRAはこっち
 
