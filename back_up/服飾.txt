@@ -373,6 +373,12 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|combat boots|コンバット・ブーツ|脹脛付近まであるハイカットと靴紐が特徴のブーツ。軍隊の戦闘用ブーツとして用いられたためこの名称で呼ばれる。|https://image02.seesaawiki.jp/n/h/nai_ch/n5QBnRYS0C.png|
+|ankle boots|アンクル・ブーツ|くるぶしあたり、あるいはそれよりやや上までの短い丈のブーツ。|https://image01.seesaawiki.jp/n/h/nai_ch/cFII7v8NOk.png|
+|mary janes|ストラップ・シューズ|ストラップとバックルで足首や甲を固定する靴のデザインの総称。|https://image02.seesaawiki.jp/n/h/nai_ch/dvn5Dr9Gzm.png|
+|high tops|ハイトップ・シューズ（スニーカー）|足首が完全に覆われるスニーカー。|https://image01.seesaawiki.jp/n/h/nai_ch/M93gag95ox.png|
+|sneakers|スニーカー|ゴム底で、主にスポーツ用の布製、または革製のシューズ。|https://image01.seesaawiki.jp/n/h/nai_ch/SoxH4d_56z.png|
+|lace-up boots|編み上げブーツ||https://image02.seesaawiki.jp/n/h/nai_ch/hRpJCeKb8t.png|
 |slippers|スリッパ|ファートリムのスリッパになりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/xAEv6U20Bz.png|
 |thong sandal|トング・サンダル|足の親指と人差し指で鼻緒を挟む形状の下駄や草履のようなつま先を持つ（主に素足で履く）サンダル。|https://image02.seesaawiki.jp/n/h/nai_ch/tlTX_XcbXe.png|
 |sandal|サンダル|足の全体的な覆いがなく、かけ紐やバンドなどで固定するつま先や指等の露出部分が多い靴の総称。|https://image02.seesaawiki.jp/n/h/nai_ch/YmpOm4kX4k.png|
@@ -595,6 +601,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|mask on head, oni mask,|鬼面|狐面より安定性が低い。|https://image01.seesaawiki.jp/n/h/nai_ch/TYGv0dWlKz.png|
+|mask on head, fox mask,|狐面|mask on headと組み合わせるとサージカルマスクにならない。強化すると２つ付けたりするので強化しない方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/9eT9NPLUnT.png|
 |aviator sunglasses|アビエーター・サングラス|サングラスを代表するブランドであるレイバンの「アビエーター」は元々パイロットの眼を保護するために米軍の依頼で製作された。普通にsunglasses とするより格好良く決まる。|https://image01.seesaawiki.jp/n/h/nai_ch/V9Xr_52jmA.png https://image02.seesaawiki.jp/n/h/nai_ch/RYUvB6whlg.png|
 |ski goggles|スキーゴーグル||https://image01.seesaawiki.jp/n/h/nai_ch/0tI17sLYvx.png https://image01.seesaawiki.jp/n/h/nai_ch/ztqCzma11r.png|
 |safety glasses|保護眼鏡|サンプルみたいなものや、ゴーグルとほぼ同じものが出る。|https://image01.seesaawiki.jp/n/h/nai_ch/qeX5MIM9FB.png https://image01.seesaawiki.jp/n/h/nai_ch/CocnsZjWja.png|

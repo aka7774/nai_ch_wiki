@@ -350,6 +350,21 @@ ControlNet Tile
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/M7GUkZbqB1-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/M7GUkZbqB1.jpg]]
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/T6ygwL4ia5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/T6ygwL4ia5.png]]
 
+*** 3Dモデルの動画から作成
+=|PERL|
+＜3Dモデルの元動画準備＞
+VRoid＋Unity/BlenderなりMMDなりコイカツなりで動画撮る→なんかのソフトで連番画像に変換
+＜基本設定＞
+・Control Netは2つ使えるようにSettingsで設定しておく
+→i2iで、CNのlineart anime+tileでシード適当に固定
+→好きなプロンプト入れて、index（WebUIの○○/75とか右上に出ている奴）をメモ
+→MasaのForeground Indexesにその数字を入力、「LOGGING」をクリック
+＜メイン処理＞
+・連番画像の最初の1枚目を処理、問題なさそうならLOGGINGをRECONに変え全部画像処理
+||=
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/539
+
 **動画
 外人ニキやけど早送りでもだいたい分かる [[https://www.youtube.com/watch?v=ci7NfTsifd0>>>https://www.youtube.com/watch?v=ci7NfTsifd0]]
 
