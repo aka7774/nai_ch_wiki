@@ -34,7 +34,7 @@
 |missing ○○|欠落した|〇〇にarmやlegなどの部位を入れることで、特定部位が描写されないことを防ぐ||
 |liquid ○○|液体化した|〇〇にarmやlegなどの部位を入れる||
 |fused ○○|融合した|〇〇にarmやlegなどの部位を入れる||
-|censor,bar censor,mosaic censorship,|(主に性器への)修正、検閲、モザイク|性器への修正まで自動生成されてしまう場合にネガティブに入れると生成率が下がる。||
+|censor, bar censor, mosaic censorship,|(主に性器への)修正、検閲、モザイク|性器への修正まで自動生成されてしまう場合にネガティブに入れると生成率が下がる。||
 | bad anatomy |ひどい解剖|人体構造がひどい時にネガティブで使う。anatomyはarmやlegに置き換えても有用||
 | mutated 〇〇 |奇形の〇〇|〇〇にarmやlegなどの部位を入れる||
 | extra penises |複根|ちんちんが2本以上ある男のこと||

@@ -82,6 +82,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4070|12G|Core i7-13700F||19.41|--opt-sdp-no-mem-|torch: 2.0.1+cu118|
 |RX6650xt|8GB|Ryzen 5 5600|82.04|||ubuntu 20.04.06|
 |RTX 3060Ti|8GB|Ryzen 5 3600|38.52|37.16|--xformers||
 |RTX A4500|20GB|i7-10700k||23.28|--xformers|torch: 2.0.1+cu118　パワーリミット70%にすると26.57s|

@@ -259,6 +259,55 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/299
 https://civitai.com/models/22354?modelVersionId=79888
 ||=
 
+**213スレ556 EO_VAE
+https://mega.nz/file/rY5DjaBQ#8oLSS8b_mt6fYKh56k06pGw2oZ7UzVah0snnzlGt2A4
+https://fate.5ch.net/test/read.cgi/liveuranus/1685050275/555-556
+=|BOX|
+555今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cb62-S+HU)2023/05/27(土) 07:56:47.56ID:ogGJd1vY0
+つーことで細部の書き込みが一番強いと思われるkl-f8-anime2をベースに学習させたVAEや
+学習に使ったモデルは自作モデル、かつ学習データはそれの学習元と同じやな
+ttps://mega.nz/file/2B4nVRDD#ujydCsTLubu0PrNcXehSER92aF-M94r4bEs6O2Lo_aQ
+特徴としては
+・kl-f8-anime2よりも更に色がハッキリしてる
+・3Dモデルに使用するとある程度2D化させる
+・輪郭線が太く濃くなる
+色味は多分刺さる人がいると思うけど細部の書き込みは未知数やな
+
+556今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cb62-S+HU)2023/05/27(土) 08:00:49.03ID:ogGJd1vY0
+ああ！別のリンク貼ってしもうた！これは古いVAEセットや・・・
+ttps://mega.nz/file/rY5DjaBQ#8oLSS8b_mt6fYKh56k06pGw2oZ7UzVah0snnzlGt2A4
+正しいリンクはこっちやすまん・・・赤面やわ
+
+563今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cb62-S+HU)2023/05/27(土) 08:35:08.98ID:ogGJd1vY0
+一応 sushi, 1girl, eating, で比較画像
+https://files.catbox.moe/i79z04.png
+https://files.catbox.moe/prhxpp.png
+7thv3Cだと黄色味が強い程度であとはまぁ誤差ですんでるけど
+Basilmixだと3D感をかなり消して2Dイラスト化させてしまってる
+>>561
+許してクレメンス...
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/asv0D5cfCQ-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/asv0D5cfCQ.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/y6X9rjHtOA-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/y6X9rjHtOA.jpg]]
+
+**213スレ616 eCustomMix
+https://mega.nz/file/DFYE3SqB#3s9_VdPWA9q-8wa1FlNTcRddhlpflTwHoJRhlpt-Z14
+https://fate.5ch.net/test/read.cgi/liveuranus/1685050275/615-616
+=|BOX|
+615今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cb62-S+HU)2023/05/27(土) 10:51:07.56ID:ogGJd1vY0
+>>555のeCustomAと>>556のEO_VAEやけどHires. fixを多重にかけるとその部分だけ色味が濃くなるダメダメな部分があるな
+ttps://mega.nz/file/TVIVzZjC#3s9_VdPWA9q-8wa1FlNTcRddhlpflTwHoJRhlpt-Z14
+のでそれが起きないeCutomBをベースにfl-k anime2とマージを行った使えそうなものも上げるわ
+特徴は青味が強い、3Dリアル調を打ち消す、細部表現が有名なVAEとは異なるって感じか
+https://files.catbox.moe/4qiuzv.png
+
+616今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cb62-S+HU)2023/05/27(土) 10:53:48.39ID:ogGJd1vY0>>620
+すまんマージしたのはkl-f8-anime2や・・・なんかコピペミスって変な名前になってしもうた
+しかもまたリンク貼り間違えてるしガイジかいなこいつ(自戒)
+ttps://mega.nz/file/DFYE3SqB#3s9_VdPWA9q-8wa1FlNTcRddhlpflTwHoJRhlpt-Z14
+これやすまんな・・・
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5QZbqoPhqh-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5QZbqoPhqh.png]]
+
 
 ----
 
@@ -358,6 +407,7 @@ https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
 *スレ住民作成LoRA
 →LoRAとはなんぞや→ローカル部[[Dreambooth-LoRA]]
 →スレ住民制作LoRA集→移動しました[[Lora学習成果]]
+
 
 
 
