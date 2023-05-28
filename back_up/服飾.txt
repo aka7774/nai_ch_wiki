@@ -603,6 +603,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|masquerade mask|マスカレードマスク（ベネチアンマスク）|身分・素性を隠して交流する仮面舞踏会で着用する仮面。ベネチアのカーニバルが発祥とされるためベネチアンマスクとも呼ばれる。detailedやintricateなど複雑に詳細に記述するプロンプトと組み合わせた方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/aPnihUrH_W.png https://image02.seesaawiki.jp/n/h/nai_ch/y9N5O5KKRK.png|
 |mask on head, oni mask,|鬼面|狐面より安定性が低い。|https://image01.seesaawiki.jp/n/h/nai_ch/TYGv0dWlKz.png|
 |mask on head, fox mask,|狐面|mask on headと組み合わせるとサージカルマスクにならない。強化すると２つ付けたりするので強化しない方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/9eT9NPLUnT.png|
 |aviator sunglasses|アビエーター・サングラス|サングラスを代表するブランドであるレイバンの「アビエーター」は元々パイロットの眼を保護するために米軍の依頼で製作された。普通にsunglasses とするより格好良く決まる。|https://image01.seesaawiki.jp/n/h/nai_ch/V9Xr_52jmA.png https://image02.seesaawiki.jp/n/h/nai_ch/RYUvB6whlg.png|
