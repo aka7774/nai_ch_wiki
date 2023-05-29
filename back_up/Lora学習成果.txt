@@ -1399,3 +1399,64 @@ https://files.catbox.moe/l33h1w.jpg
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iKLUUhRfjP-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/iKLUUhRfjP.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/94LYINfxPs-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/94LYINfxPs.jpg]]
 
+*** 213スレ902 鏡写しバックLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685050275/902
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+=|BOX|
+902 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9f14-ZJ5B)[sage] 投稿日：2023/05/27(土) 22:15:39.84 ID:ekLM3DgS0 [6/7]
+一度作り直したらまあまあ精度上がったので鏡写しバックLoRAの公開や
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+sex_from_behind_reflectionやで
+https://majinai.art/i/lIp0Y7Y.png
+https://files.catbox.moe/4i28ol.jpg
+https://files.catbox.moe/veoexw.jpg
+https://files.catbox.moe/0a3wye.jpg
+https://files.catbox.moe/4jvqgw.jpg
+https://files.catbox.moe/vfyxhw.jpg
+最終的にはガチャになるのは避けられんし細かい破綻は出るけど楽しんでや
+聖女の献身とかワイも好きなの出されてついやる気が出てしまったやで
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Nj_inIlmhe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Nj_inIlmhe.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WQQ2oe61nx-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/WQQ2oe61nx.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Z4ZutmSJE2-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/Z4ZutmSJE2.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Jer55k35dX-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/Jer55k35dX.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kUrEXP4n9Q-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/kUrEXP4n9Q.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eA1Z7MQ5rh-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/eA1Z7MQ5rh.jpg]]
+
+*** 213スレ956 背景だけに影響を与えるflatみたいなの
+https://fate.5ch.net/test/read.cgi/liveuranus/1685050275/956
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/release/flatBG.safetensors
+=|BOX|
+956 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9f7e-EdO8)[sage] 投稿日：2023/05/27(土) 23:35:37.83 ID:1iziL2CX0
+背景だけに影響を与えるflatみたいなのが出来たんで置いとく
+https://i.imgur.com/bOKmWil.jpg
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/release/flatBG.safetensors
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jL8p9qPVIR-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/jL8p9qPVIR.jpg]]
+
+
+***214スレ140 瞳の描き込みを減らすLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685198953/140
+https://mega.nz/folder/9admhCxA#UZnE3qnQk4jUjKrmnQ8e7Q
+=|BOX|
+140 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7b88-S+HU)[sage] 投稿日：2023/05/28(日) 01:33:50.68 ID:5vDqnGmc0 [2/13]
+瞳の描き込みを減らすLoRA smpleyeを作ったから置いておくで 正直同じようなLoRAがあった気がするで
+ついでに瞳を細くするLoRA nekomeも教師画像変えたやつ置いておくやで
+eye>smpleye1_8,smpleye2_8,smpleye1+2_8_0406,nekome4_8,nekome2+4_8_0505
+https://mega.nz/folder/9admhCxA#UZnE3qnQk4jUjKrmnQ8e7Q
+https://i.imgur.com/qGGt1gM.png https://i.imgur.com/QGg4RCf.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wozr8jELV3-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/wozr8jELV3.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8uDflez_bz-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/8uDflez_bz.jpg]]
+
+***214スレ543 取り返しのつかないことをやらかしてしまった時の顔LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685198953/543
+https://civitai.com/models/78651/hawawaconcept-lora
+=|BOX|
+543 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ bb81-G56H)[] 投稿日：2023/05/28(日) 19:16:13.22 ID:MLBMnn6R0 [4/4]
+取り返しのつかないことをやらかしてしまった時の顔LoRAできたんでよかったら使ってクレメンス
+ギャグ要素強くてエロには向いてないかもしれん
+
+小銭を自販機の下に落としてしまった時の顔
+https://i.imgur.com/DhxfpIx.png
+ギップルしたらSDが動かなくなった時の顔
+https://i.imgur.com/Ywg3Fz6.png
+
+https://civitai.com/models/78651/hawawaconcept-lora
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0eIqe0yU0R-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/0eIqe0yU0R.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Tg_IxW0Pzp-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/Tg_IxW0Pzp.jpg]]
+

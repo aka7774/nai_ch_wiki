@@ -115,7 +115,8 @@ WebUIのエクステンションに対応。スタンドアロンで動かすと
 - WebUI 割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
 - アップデートは update.bat
 
-** Kohya_lora_param_gui | https://github.com/RedRayz/Kohya_lora_param_gui
+** Kohya_lora_param_gui (スレ住民作)
+https://github.com/RedRayz/Kohya_lora_param_gui
 https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定してコマンドラインに渡すGUIです。
 - accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
 - kohya-ssやEasyTrainScriptsとは違い、sd-scriptsを標準の方法でインストールしておくことが前提。

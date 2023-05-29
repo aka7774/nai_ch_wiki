@@ -211,6 +211,12 @@ added: 2022-11-01
 - Generate Infoも出るのでプロンプト見たり教えたりもできる。
 tags: [tab UI related]
 
+** Infinite image browsing,
+https://github.com/zanllp/sd-webui-infinite-image-browsing.git
+ページングなしですべての画像を閲覧でき、画像パラメータによる共同検索をサポートする、VS Codeに似たレイアウトの高速画像ブラウザです。
+A fast image browser that allows browsing all images without paging, and supports joint search using image parameters, with a layout similar to VS Code.
+added: 2023-04-16,
+tags: [tab, UI related]
 
 ** Inspiration
 https://github.com/yfszzx/stable-diffusion-webui-inspiration.git
@@ -275,6 +281,12 @@ Adds image aspect ratio selector buttons.
 added: 2023-02-04
 tags: [UI related]
 
+** Nevysha's Cozy Nest
+https://github.com/Nevysha/Cozy-Nest.git
+UI/UXを改善するための拡張機能です。Auto1111のwebuiで居心地の良い場所を探してみてください!
+Extension for an improved UI/UX. Find your cozy spot on Auto1111's webui!
+added: 2023-05-02
+tags: [UI related]
 
 ** Catppuccin Theme
 https://github.com/catppuccin/stable-diffusion-webui.git
@@ -545,6 +557,12 @@ script 	背景を自動で除去します。アニメ画像用に微調整され
 added: 2022-12-24
 tags: [editing]
 
+** Pixel
+https://github.com/Leodotpy/sd-pixel.git
+エクストラタブで、ダウンスケールやカラーパレット制限など、便利なピクセルアートエフェクトを素早く簡単に実行できます。
+Quickly and easily perform downscaling color palette limiting and other useful pixel art effects through the extras tab.
+added: 2023-05-05
+tags: [editing extras]
 
 ** Pixelization
 https://github.com/AUTOMATIC1111/stable-diffusion-webui-pixelization.git
@@ -1057,6 +1075,14 @@ added: 2023-04-13
 tags: [tab animation]
 
 
+** Eye Mask
+https://github.com/ilian6806/stable-diffusion-webui-eyemask.git
+目を自動的に識別して再描画することで、描画不良に終止符を打つことができます。
+Puts an end to poorly drawn eyes by automatically identifying and redrawing them.
+added: 2023-05-11
+tags: [script dropdown manipulations]
+
+
 ** ja_JP Localization
 url: https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP
 description: Japanese localization
@@ -1076,7 +1102,132 @@ instruct-pix2pix "モデルでimg2img編集を行うためのタブを追加し�
 added": "2023-01-25
 
 
+** Model Organizer
+https://github.com/alexandersokol/sd-model-organizer.git
+モデルのコレクションを保存し、管理することができます。モデルの情報ノート、プレビュー、ダウンロードリンクを追加することができます。外部のダイレクトリンクやGoogle Driveの共有ファイルリンクから簡単にダウンロードすることができます。モデルコレクションをjsonファイルで共有したり、リモートのFirestoreデータベースを使用して、複数のデバイスで利用できるようにしたり、同期させることができます。
+Allows to store and manage own model collections add information notes previews download links of model. Easily download from any external direct link or shared file link from Google Drive. Share own models collection with json file or use remote Firestore database to make it available and synced on several devices.
+added: 2023-05-05
+tags: [tab UI related online]
 
+
+** Model Preset Manager
+https://github.com/rifeWithKaiju/model_preset_manager.git
+すべての生成データに対して、モデルごとにプリセットを作成し、適用することができます（例：プロンプト・ネガティブ・プロンプト cfg_scale resolution sampler clip skip steps など）。また、モデルのトリガーワードやサムネイルをCivitaiから自動的に取得します。
+Lets you create and apply presets per model for all generation data (e.g. prompt negative prompt cfg_scale resolution sampler clip skip steps etc). Also automatically fetches model trigger words and thumbnails from Civitai.
+added: 2023-05-15
+tags: [online prompting tab]
+
+
+** Stable Diffusion Webui Civitai Helper
+https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper.git
+civitai.comからメタデータとプレビュー画像をダウンロードまたはモデルに入力する
+Download or populate models with metadata and preview image from civitai.com
+added: 2023-05-16
+tags: [tab UI related online]
+
+
+** SD-CN-Animation
+https://github.com/volotat/SD-CN-Animation.git
+任意のSDモデルをバックボーンとして、video2videoやtext2videoのアニメーションを作成することができるようになります。拡張機能「sd-webui-controlnet」がインストールされていることを確認してください。
+Allows users to create video2video and text2video animations using any SD models as a backbone. Please make sure that 'sd-webui-controlnet' extension is also installed.
+added: 2023-05-06
+tags: [tab animation]
+
+
+** Model toolkit
+https://github.com/arenasys/stable-diffusion-webui-model-toolkit.git
+モデルの軽量化や修正を行うための多目的ツールキットです。
+A Multipurpose toolkit for pruning editing and fixing models.
+added: 2023-05-10
+tags: [tab models]
+
+
+** sd-webui-prompt-all-in-one
+https://github.com/Physton/sd-webui-prompt-all-in-one
+プロンプト／ネガプロンプト入力ボックスのユーザーエクスペリエンスを向上させました。翻訳履歴の自動記録やお気に入りなどの機能を提供し、より直感的で強力な入力インターフェースを実現しました。
+Improve the user experience of the prompt/negative prompt input box. It has a more intuitive and powerful input interface that offers features such as automatic translation history records and favorites.
+added: 2023-05-08
+tags: [UI related prompting online]
+
+
+** sd-model-preview-xd
+https://github.com/CurtisDS/sd-model-preview-xd
+LoRAとembeddingのプレビューをUIに追加し、プレビュー画像の説明とLoRAプロンプトリストを追加しました。
+Adds model LoRA and embedding previews to the UI including preview images descriptions and LoRA prompt lists.
+added: 2023-05-12
+tags: [tab UI related]
+
+
+** !After Detailer
+https://github.com/Bing-su/adetailer.git
+細部の自動検出マスキング・インペイントツール
+Automatic detection masking and inpainting tool for details
+added: 2023-05-12
+tags: [manipulations]
+
+
+** Weight Gradient
+https://github.com/DingoBite/weight_gradient
+生成中にトークンの重みを動的に変更できるようにする。モーフィングに有効です。
+Allows you to dynamically change the weights of tokens during generation. Useful in morphing.
+added: 2023-05-11
+tags: [prompting]
+
+
+** One Button Prompt
+https://github.com/AIrjen/OneButtonPrompt
+One Button Promptは、プロンプト全体をゼロから生成する、初心者から上級者までのためのスクリプトです。ランダムに生成されますが、制御されています。スクリプトを読み込んで、生成ボタンを押すだけで、あなたのインスピレーションを刺激します。
+One Button Prompt is a script for beginners and advanced users that generates an entire prompt from scratch. It is random but controlled. You simply load up the script and press generate and let it inspire you.
+added: 2023-05-14
+tags: [scriptprompting]
+
+
+** Miaoshouai Assistant
+https://github.com/miaoshouai/miaoshouai-assistant.git
+ミャウショウアイ・アシスタントは、1つのタブで起動設定の更新やモデルプロンプトの管理、ダウンロードなど、automatic1111 webuiのユーザー体験を向上させることができます。
+Miaoshouai Assistant allows you to enhance your automatic1111 webui user experience including updating boot settings managing and downloading your models prompts from a single tab.
+added: 2023-05-18
+tags: [tab models UI related online ads]
+
+
+** miniPaint
+https://github.com/0Tick/a1111-mini-paint
+miniPaintエクステンションは、より良い画像編集機能を提供します。Webuiの中で直接、画像を編集することができます！
+The miniPaint extension allows for better image editing capabilites. Edit images simply direct inside the webui!
+added: 2023-05-16
+tags: [tabediting]
+
+
+** StableSR
+https://github.com/pkuliyi2015/sd-webui-stablesr.git
+リアルな映像からアニメ映像まで対応する強力なアップスケーラー「StableSR」用WebUI拡張機能
+WebUI extension for StableSR - a powerful upscaler for both realistic and anime images
+added: 2023-05-22
+tags: [manipulations]
+
+
+** Web UI client queue
+https://github.com/Kryptortio/SDAtom-WebUi-client-queue-ext.git
+WebUiにキュー機能を追加し、設定のセットを1回以上処理し、別の設定のセットを読み込むことができるようにします。
+Adds a queue function to the web ui that processes a set of settings one or more times it can then load a different set of settings and so on.
+added: 2023-05-23
+tags: [script UI related prompting]
+
+
+** Distributed
+https://github.com/papuSpartan/stable-diffusion-webui-distributed.git
+別々のWebuiインスタンスを連結して、より迅速にバッチを生成する。
+Generate batches more quickly by chaining together separate webui instances
+added: 2023-05-23
+tags: [script]
+
+
+** StableStudio Adapter
+https://github.com/jtydhr88/sd-webui-StableStudio.git
+StableStudioでレストAPIを拡張し、ローカルな操作を行うためのwebui用カスタムエクステンションです。
+A custom extension for webui to extend rest APIs to do some local operations using in StableStudio.
+added: 2023-05-24
+tags: [script]
 
 
 * 標準Scripts

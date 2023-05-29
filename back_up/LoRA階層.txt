@@ -138,6 +138,18 @@ back:1,1,1,1,1,1,0.2,1,0.2,0,0,0.8,1,1,1,0,0
 soft:1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
 ||=
 
+** カスタムプリセット 214スレ185
+https://fate.5ch.net/test/read.cgi/liveuranus/1685198953/185
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/lbw-presets.txt
+=|BOX|
+185 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9f7e-EdO8)[sage] 投稿日：2023/05/28(日) 07:41:44.31 ID:koRtKWSu0 [3/5]
+てことで改めて…
+層別適用雑プリセットだよ
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/lbw-presets.txt
+まぁ見たらどういうものかはわかるじゃろ？
+INとOUTの範囲指定は1つだけだぞ、流石に全パターン網羅まではしてないよ、それやるとファイルサイズが大変なことになるからな
+||=
+
 ** デフォルトプリセット
 識別子: OUTD
 OUTD:0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0

@@ -82,6 +82,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4080|16|Core i7-13700KF||14.09|--xformers --opt-channelslast|Windows11 torch: 2.0.1+cu118|
+|2070|||||||
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||19.19||TensorRT有効 ~~ v1.3.0-72-gb957dcfe|
 |RTX 4070|12G|Core i7-13700F||19.41|--opt-sdp-no-mem-|torch: 2.0.1+cu118|
 |RX6650xt|8GB|Ryzen 5 5600|82.04|||ubuntu 20.04.06|
