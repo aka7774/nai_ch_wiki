@@ -27,6 +27,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|monochrome, black and salmon(color) printing|２色刷印刷|指定した２色で構成された絵になる。背景、キャラの髪色などにどの色を当てるかは指定する必要がある。その昔、フルカラー印刷のコストが高かった時代の漫画では２色印刷カラーがよくあった。|https://image01.seesaawiki.jp/n/h/nai_ch/W3XxpKKzGb.png https://image01.seesaawiki.jp/n/h/nai_ch/FzRey1u4Ue.png|
+|monochrome two-tone|モノクロ二階調|画像を白と黒の2色(2階調)のみで表現したもの。|https://image02.seesaawiki.jp/n/h/nai_ch/B90POJGFNF.png https://image02.seesaawiki.jp/n/h/nai_ch/NYHS1Hza3I.png|
+|ancient fresco(medium)|古代のフレスコ画|フレスコ画の前にキャラが立っている描写になることがほとんどだが、たまにキャラがフレスコ画と一体化することがある。|https://image01.seesaawiki.jp/n/h/nai_ch/SNK7sTjj33.png https://image02.seesaawiki.jp/n/h/nai_ch/F65f11b0Nn.png|
+|ancient egyptian murals|古代エジプト壁画|服装指定を無視してキャラの服装が古代エジプト風になりやすくなる。背景に象形文字が出やすくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/UlfLXPwewG.png https://image02.seesaawiki.jp/n/h/nai_ch/FlJ34YiMwd.png|
 |colored pencil &#40;medium)|色鉛筆(画風)|||
 |multiple monochrome|モノクロ＋差し色|モノクロ絵に１色ないし数色の差し色を入れた描写。|https://image01.seesaawiki.jp/n/h/nai_ch/5b3oJLTSAX.png https://image02.seesaawiki.jp/n/h/nai_ch/KxJnoBGXiJ.png|
 |canvas (medium)|キャンバス|主に油絵で使われる絵の支持体。|https://image01.seesaawiki.jp/n/h/nai_ch/dlnmcpZcW_.png https://image02.seesaawiki.jp/n/h/nai_ch/YbLJwD5W_B.png|
@@ -105,6 +109,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|blueprint, monochrome blue line art|青焼き印刷（ジアゾ式複写技法）|芳香族ジアゾニウム塩の光による分解反応を利用した複写技法。青色の濃淡により文字などを表現するため青焼き印刷と呼ばれることが多い。建築製図など図面の複写でよく用いられていたためか、背景に図面のような意匠が出ることがある。|https://image01.seesaawiki.jp/n/h/nai_ch/K4QebLIBYW.png https://image01.seesaawiki.jp/n/h/nai_ch/htmPAVZlNF.png|
+|mimeograph, monochrome line art|謄写版印刷（ガリ版印刷）|米国の発明王、トーマス・エジソンが19世記後半に考案した印刷手法。mimeographはエジソンの特許を元に製作・販売された印刷機の製品名。装置があれば特別な知識やスキルが不要であり、コピー機が普及する前は小部数の印刷物によく用いられていた。|https://image01.seesaawiki.jp/n/h/nai_ch/ABfBbfksAj.png https://image01.seesaawiki.jp/n/h/nai_ch/md20pNvwMR.png|
 |silkscreen printing|シルクスクリーン|微細な穴が開いているスクリーンと呼ばれる版板にインクをつけて印刷する技法。元々、スクリーンには絹が使われていたためシルクスクリーンという名称になった。|https://image02.seesaawiki.jp/n/h/nai_ch/H3rkL6KiVh.png https://image02.seesaawiki.jp/n/h/nai_ch/SL69sFzqBN.png|
 |Chromolithography|クロモリトグラフ|リトグラフを改良・発展させた印刷技術。最大１６色の多色刷り印刷であり、今日の４色オフセット印刷の原型となった。|https://image02.seesaawiki.jp/n/h/nai_ch/Gz2LYmsyYV.png https://image01.seesaawiki.jp/n/h/nai_ch/pHp3YLojaf.png|
 |aquatint printing, monochrome line art|アクアチント|凹版印刷の技法の一つ。金属板に粉末状の防食剤を散布して定着させた後に腐蝕させることで砂目状の版を作成する。微細なトーンの表現が可能である。|https://image01.seesaawiki.jp/n/h/nai_ch/392UDVA426.png https://image01.seesaawiki.jp/n/h/nai_ch/ZXbGBrKJvB.png|

@@ -34,6 +34,15 @@ PyTorch-DirectMLが楽なので速度的に不利でもそっちを使うよう�
 - Python 3.10.10
 - torch 1.13.1
 
+* Radeon(Windows)
+
+DirectML版
+
+- https://github.com/lshqqytiger/stable-diffusion-webui-directml
+- Python 3.10.6？
+- torch 2.0.0
+- torch-DirectML 0.2.0.dev230426
+
 ** 検証記録
 
 - VRAMを512MBしか割り当てられないiGPUではブルスクで動かない(4700U)
