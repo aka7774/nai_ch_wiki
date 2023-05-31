@@ -158,6 +158,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|horizon|水平線|英語では水平線も地平線もhorizonだが、ほぼ水平線の描写になる。|https://image01.seesaawiki.jp/n/h/nai_ch/3r5buqJy3Y.png https://image01.seesaawiki.jp/n/h/nai_ch/T5qnrflBw0.png|
 |scenery|景色|natureより広い範囲が描写される傾向がある。描かれるものは自然物でランダム。|https://image01.seesaawiki.jp/n/h/nai_ch/_u25233o0A.png https://image02.seesaawiki.jp/n/h/nai_ch/AGjN4VGiMs.png|
 |nature|自然|ランダムに自然の景色が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/M5pmF2Dr1Z.png https://image01.seesaawiki.jp/n/h/nai_ch/Apf8VACWTC.png|
 |landscape|風景|大体山並みになる。|https://image02.seesaawiki.jp/n/h/nai_ch/Dwq8pjhwK1.png https://image01.seesaawiki.jp/n/h/nai_ch/avuZAQ2CK4.png|
@@ -193,6 +194,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|macau|澳門（マカオ）|旧ポルトガル海外領土。世界最大のカジノがあり、indoorを追加するとカジノが描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/tW_ZgZiPpe.png|
 |Kowloon Walled City|九龍城砦|香港にかつて存在した巨大スラム街。|https://image01.seesaawiki.jp/n/h/nai_ch/XzwpxOkOPy.png|
 |Hong Kong|香港|at nightを追加すると「100万ドルの夜景」で有名なヴィクトリア・ピークからの夜景が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/ryE5V5EnZy.png|
 |Rio de Janeiro|リオデジャネイロ|南米初の五輪開催地となった、ブラジル有数の大都市。ポン・ヂ・アスーカルと呼ばれる特徴的な奇岩が１／２ぐらいの確率で描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/_vMstUk9e6.png|
