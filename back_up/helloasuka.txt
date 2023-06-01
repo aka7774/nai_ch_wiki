@@ -82,13 +82,14 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
-|4090|||||||
+|RTX 4070|12G|ryzen 5 2100G||44.06s|--xformers|python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17|
+|RTX 4070|12G|ryzen 5 2100G||44.06s|--xformers|python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17|
+|RTX 4090|24GB|Core i9-13900k|12.4|10.33|--xformers --no-half-vae|version: v1.3.0 / python: 3.10.11 / torch: 2.0.1+cu118 / xformers: 0.0.17 /|
 |RTX 3060|12GB|Core i7-12700||49.81|--xformers --opt-sdp-attention|version: v1.3.0 torch:2.0.1+cu118|
 |RTX 4080|16|Core i7-13700KF||14.09|--xformers --opt-channelslast|Windows11 torch: 2.0.1+cu118|
-|2070|||||||
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||19.19||TensorRT有効 ~~ v1.3.0-72-gb957dcfe|
 |RTX 4070|12G|Core i7-13700F||19.41|--opt-sdp-no-mem-|torch: 2.0.1+cu118|
-|RX6650xt|8GB|Ryzen 5 5600|82.04|||ubuntu 20.04.06|
+|RX 6650xt|8GB|Ryzen 5 5600|82.04|||ubuntu 20.04.06|
 |RTX 3060Ti|8GB|Ryzen 5 3600|38.52|37.16|--xformers||
 |RTX A4500|20GB|i7-10700k||23.28|--xformers|torch: 2.0.1+cu118　パワーリミット70%にすると26.57s|
 |RTX 3060|12&#13191;|i5-12400F||54.94|xformers||
@@ -104,10 +105,10 @@ Batch Count 10、Batch Size 1
 |GTX 1080|8GB|Core i3-12100F||152.84|--xformers|torch: 1.13.1+cu117|
 |RTX 4070|12GB|Core i3-12100F||18.66|--opt-sdp-no-mem-attention|torch: 2.0.0+cu118|
 |RTX 3090|24GB|i7-6700k|28秒|28.26|--opt-sdp-attention|torch: 2.0.0+cu118　Show live previews of the created imageのチェックをオフ　GPU以外が古すぎるかな|
-|RTX3060|12GB|Ryzen 7 3700X|41|42.15|--xformers --disable-nan-check --opt-channelslast --opt-sub-quad-attention|Windows11 mem:64GBtorch: 2.0.0+cu118,xformers: 0.0.19.dev516|
-|RTX4070|12GB|Ryzen 7 5700X|20秒|19.78|--opt-sdp-attention --opt-channelslast|torch: 2.0.0 + cu118　Tiではない|
+|RTX 3060|12GB|Ryzen 7 3700X|41|42.15|--xformers --disable-nan-check --opt-channelslast --opt-sub-quad-attention|Windows11 mem:64GBtorch: 2.0.0+cu118,xformers: 0.0.19.dev516|
+|RTX 4070|12GB|Ryzen 7 5700X|20秒|19.78|--opt-sdp-attention --opt-channelslast|torch: 2.0.0 + cu118　Tiではない|
 |RTX 2060|6GB|Ryzen 5 5600X|48秒|47.08|--autolaunch --theme=dark --xformers|torch: 2.0.0+cu118,xformers0.0.19.dev505|
-|RTX4090|24GB|Core i7-13700K|11.02|11.69|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118Powe Limit 60%|
+|RTX 4090|24GB|Core i7-13700K|11.02|11.69|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118Powe Limit 60%|
 |RTX 3080TI|12GB|Core i5-12600K|19秒70|18.96|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.1.0.dev20230330+cu118 WSL2 ubuntu22.04|
 |RTX 4080|32GB|Core i7-13700F||13.21|--xformers --opt-channelslast|ubuntu22.04, torch2.0.0+cu118, xformers0.0.18|
 |RTX 4080|32GB|Core i7-13700F||13.53|--xformers|ubuntu22.04, torch2.0.0+cu118, xformers0.0.18|
@@ -138,7 +139,7 @@ Batch Count 10、Batch Size 1
 |RTX 4090|24GB|Ryzen 7 5800X|16秒|15.62|xformers opt-channelslast|torch: 1.13.1+cu117 cudnn 8.8.1|
 |RTX 4090|24GB|Core i9-13900k||10.17|--xformers --no-half-vae|cudnn 8.8.0|
 |RTX 2060|6GB|Core i7-9700k||46.34|xformers opt-channelslast|メモリ16gb|
-|RTX3080|10GB|Core i5-13600K|24秒|22.72|xformers|RAM32GB, Win11|
+|RTX 3080|10GB|Core i5-13600K|24秒|22.72|xformers|RAM32GB, Win11|
 |RTX 3080Ti|12GB|Core i7-12700||20.56|--xformers|Windows11Pro 64bit,ROG STRIX GeForceRTX3080Ti,DDR4メモリ64GB|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||31.32|--xformers --opt-channelslast|PL70%3060と同じ消費電力でこれなので意外とワッパいい|
 |RTX 2080|8GB|Core i7-8700||35.62|--xformers|Windows10 メモリ64GB|
@@ -146,7 +147,7 @@ Batch Count 10、Batch Size 1
 |RTX 3050 LAPTOP|4GB|Core i5-11400H||74.69|--xformers|CPU低電圧可、メインメモリは24GB（8+16）|
 |RTX 4070 ti|12GB|Core i5-13700K||14.51|--xformers --|なし|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||26.93|--xformers --opt-channelslast|WSL2, Torch2.0, モデルコンパイル有効 ~~ WSL2にしてもコンパイル無しでは早くならない上コンパイルが遅いので無意味|
-|RTX3080Laptop|16GB|Ryzen9 5900HX||29.29|--xformers|ノートPC Lenovo Legion760 2021年モデル Windows10 メモリ32gb|
+|RTX 3080Laptop|16GB|Ryzen9 5900HX||29.29|--xformers|ノートPC Lenovo Legion760 2021年モデル Windows10 メモリ32gb|
 |RTX 3090TI|24GB|Ryzen 9 7950X||17.95|--xformers --autolaunch --opt-channelslast --no-half-vae|WIN 10, mem 64gb, torch: 1.13.1+cu117,xformers: 0.0.16rc425|
 |RTX 3060|12GB|Ryzen 9 3900XT||42.47|--opt-channelslast --xformers|プレビュー：Approx cheap。4Stepごと。Torch active/reserved: 2521/2868 MiB,&#160;Sys VRAM: 5173/12288 MiB。プレビューなしで41.11s。--xformersのみで45.65s(--opt-channelslast効き目あり?)|
 |RTX 3090|24GB|Core i7-12700K|18秒|17.16|--xformers --opt-channelslast --administrator|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境~~torch: 1.13.1+cu117,xformers: 0.0.16rc425|
@@ -167,11 +168,11 @@ Batch Count 10、Batch Size 1
 |RTX 4090|24GB|Core i9-13900K|11秒|9.41|xformers opt-channelslast||
 |RX 7900XTX|24GB|Ryzen 7 5700X| |20.33||Ubuntu 22.04, ROCm 5.5, torch-v2.0.1, PCIe3, 電力制限なし|
 |RTX 4080|16GB|Core i9-13900KF|13秒75|13.23|xformers opt-channelslast|Windows10 Batch count10 Batch size1 メモリはDDR5|
-|RTX3060|12GB|Core i7-12700K|38秒|37.73|--xformers --opt-channelslast|Windows10・メモリ32GB WSL2 Ubuntu22.04 ※同環境Windowsでは43秒なので11.6%速い、opt-channelslast無しだと41秒・40.53s|
-|RTX3060|12GB|Core i7-12700K|39秒|38.91|--xformers --opt-channelslast|Windows11･メモリ64GB･WSL2(Ubuntu22.04)･AfterburnerでPL58%(44秒､Time taken: 43.85s)環境構築はWikiの手順を参照|
-|RTX3090|24GB|Core i9-13900KF|19秒|17.51|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境|
-|RTX3090|24GB|Core i9-13900KF|23秒|21.65|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB|
-|RTX3090|24GB|Core i9-12900KF|18.6秒|18.19|--xformers --no-half-vae --deepdanbooru --gradio-img2img-tool=color-sketch --opt-channelslast|RAM64GB,cuDNN8.6.0,pcie4.0 x16|
+|RTX 3060|12GB|Core i7-12700K|38秒|37.73|--xformers --opt-channelslast|Windows10・メモリ32GB WSL2 Ubuntu22.04 ※同環境Windowsでは43秒なので11.6%速い、opt-channelslast無しだと41秒・40.53s|
+|RTX 3060|12GB|Core i7-12700K|39秒|38.91|--xformers --opt-channelslast|Windows11･メモリ64GB･WSL2(Ubuntu22.04)･AfterburnerでPL58%(44秒､Time taken: 43.85s)環境構築はWikiの手順を参照|
+|RTX 3090|24GB|Core i9-13900KF|19秒|17.51|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB・WSL2(Ubuntu22.04)・ブラウザはWin11のEdge環境|
+|RTX 3090|24GB|Core i9-13900KF|23秒|21.65|--deepdanbooru --xformers --opt-channelslast|Windows11・メモリ128GB|
+|RTX 3090|24GB|Core i9-12900KF|18.6秒|18.19|--xformers --no-half-vae --deepdanbooru --gradio-img2img-tool=color-sketch --opt-channelslast|RAM64GB,cuDNN8.6.0,pcie4.0 x16|
 |RTX 2070 SUPER|8GB|i5 10400F|43秒|43.36|なし|メモリ64GB|
 |GTX 1080|8GB|Ryzen 7 3700X|2分26秒|145.58|--xformers --opt-channelslast --opt-split-attention --gradio-img2img-tool=color-sketch|count5 size2なら123.25秒、count2 size5で118.3秒、意外とVRAM使用量も5GB未満に収まるのでsize増やして回した方が得|
 |RTX 3060|12GB|Core i5-7400|56.55秒|52.60|なし|PCI-Express 1x-16xのライザーカード使用|
@@ -292,7 +293,6 @@ Batch Count 2、Batch Size 5
 |RTX 4090|24GB|Core i7-12700K|6|7.08|--opt-sdp-no-mem-attention|誤りがあったので修正。pytorch2.0, batch count 2, batch size 5,live previewなし, WSL2 ubuntu22.04|
 |RTX 4070 Ti|12GB|Core i9-9900K|15|15.17|--xformers --no-half-vae|Batch Count 2、Batch Size 5|
 |RTX A4000|16GB|Ryzen7 3700X|23.73|23.56|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
-|RTX3060|||||||
 |RTX 4090|24GB|Core i9-13900k||7.16|--xformers --no-half-vae|cudnn 8.8.0|
 |RTX 4090|24GB|Ryzen 9 5900X||11.85|--xformers --opt-channelslast --disable-nan-check --no-half-vae --vae-dir  --ckpt-dir|BatchCount2、BatchSize5 ckptはHDDに配置python:3.10.10　torch: 1.13.1+cu117　xformers: 0.0.16　cudnn 8.8.0GPU：afterburnerによる電力制限(PL40の180wぐらい)　CPU：低電圧化+周波数固定4.0GHz|
 |RTX 4070 Ti|12GB|Ryzen 9 3900||16.80|--xformers  --no-half-vae --opt-channelslast  --autolaunch --theme dark|Batch Count 2、Batch Size 5 Windows11 Memory:32G|
@@ -353,4 +353,6 @@ Batch Count 1、Batch Size 10
 [END]
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qkFzlFhZ4r-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qkFzlFhZ4r.png]]
+
+
 
