@@ -4,7 +4,6 @@
 数単語以上でのいい感じのやつ
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|意味|備考|サンプル(人あり)|サンプル(人なし)|
-|||星空||||
 |}
 
 * 単語集
@@ -13,7 +12,7 @@
 |~プロンプト|意味|備考|サンプル(人あり)|サンプル(人なし)|
 |banana|バナナ|皮を剥かずにそのまま食べてしまいます。|https://image02.seesaawiki.jp/n/h/nai_ch/4Zo7sRBLUC.png|https://image02.seesaawiki.jp/n/h/nai_ch/nlLMSMak1g.png|
 |popsicle|アイスキャンディ|こっちのほうが打率が高い。 ~~ holdingをつけないと高確率で棒を持たずに食べる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jR5mNCa0lo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/jR5mNCa0lo.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5bahk91NBt-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/5bahk91NBt.png]]|
-|ice candy|アイスキャンディ|Danbooruに無いタグのため打率は低い|https://image01.seesaawiki.jp/n/h/nai_ch/7ImVQTTza6.png|https://image01.seesaawiki.jp/n/h/nai_ch/IjWOUsUTCE.png|
+|ice candy|アイスキャンディ|Danbooruに無いのでやや不安定|https://image01.seesaawiki.jp/n/h/nai_ch/7ImVQTTza6.png|https://image01.seesaawiki.jp/n/h/nai_ch/IjWOUsUTCE.png|
 |donut|ドーナツ|単体だと蓮コラみたいなものが生成されるので注意|https://image01.seesaawiki.jp/n/h/nai_ch/u8tT7E925b.png|https://image02.seesaawiki.jp/n/h/nai_ch/XgVwVLeU2F.png|
 |ice cream|アイスクリーム|たまにクリームを掴んだり頭にのせたりする。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4rwIMhnVuw.png)|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aUK829rirJ.png)|
 |large serving of fried rice|大盛りの炒飯|large serving of で大盛りのになる傾向がある。なくても大盛りになることもあるが、普通サイズのは出にくい。|https://image02.seesaawiki.jp/n/h/nai_ch/LzkNS94Zol.png||

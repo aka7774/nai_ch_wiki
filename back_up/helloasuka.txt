@@ -329,6 +329,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~サービス名|w(100px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken|オプション|備考|
+||4090|||||||
 |Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T||24.85|--opt-sdp-attention --opt-channelslast|8ドル/月プラン|
 |Google Colaboratory|NVIDIA Tesla T4|15GB|||44.93|--opt-sdp-no-mem-attention --opt-channelslast|conda Python 3.10.9torch 2.0.0xformersなし|
 |Google Colaboratory|NVIDIA Tesla T4|15GB|||51.66|xformers opt-channelslast|conda Python 3.9.12 ckptを38c1ebe3(Anyv3-fp16)にすると47.48|
