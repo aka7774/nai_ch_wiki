@@ -117,6 +117,24 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|twist updo|後頭部でまとめたお団子|緩く巻いたシニヨンになることが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/GEhSDP1Rey.png https://image01.seesaawiki.jp/n/h/nai_ch/XTTAHGaIEM.png|
+| twin braids hair, {{slicked back hair}},|デコ出しの三つ編み|前髪が一本程度前に出ることがある。|https://image02.seesaawiki.jp/n/h/nai_ch/H05Zk0RBpu.png https://image02.seesaawiki.jp/n/h/nai_ch/fGlTDdBl5U.png|
+|twin tails hair, {{slicked back hair}}, |デコ出しのツインテール|ポニーテールとは違い、前髪が残ることはほぼ無い。|https://image01.seesaawiki.jp/n/h/nai_ch/pp2I2qpPVe.png https://image02.seesaawiki.jp/n/h/nai_ch/CEWKxVfNjN.png|
+|ponytail hair, {{slicked back hair}}, |デコ出しのポニーテール|デコ出しにはなるが、前髪が残ることもある。|https://image01.seesaawiki.jp/n/h/nai_ch/1O0KqdCesI.png https://image02.seesaawiki.jp/n/h/nai_ch/nLRMLb8mM3.png|
+|long hair, {{slicked back hair}}, |デコ出しのロングヘアー|forehead無しでおでこが出る。|https://image02.seesaawiki.jp/n/h/nai_ch/bB_ECjcYXJ.png https://image01.seesaawiki.jp/n/h/nai_ch/fBa_KuCtO4.png|
+|extra short hair, {{slicked back hair}}, |オールバック|綺麗にオールバックになることは少ない。|https://image02.seesaawiki.jp/n/h/nai_ch/yacspWTLR8.png https://image02.seesaawiki.jp/n/h/nai_ch/TN1jQrk8dl.png|
+|extra short hair, {{flattop hair, shaved sidelocks, shaved side section hair, shaved nape section hair, undercut hair}},|角刈り（女）|同じプロンプトでも女子に適用しようとすると髪が長めになる。|https://image01.seesaawiki.jp/n/h/nai_ch/a4mTWkbT0u.png https://image01.seesaawiki.jp/n/h/nai_ch/nmV6PfdxCN.png|
+|extra short hair, {{flattop hair, shaved sidelocks, shaved side section hair, shaved nape section hair, undercut hair}}, |角刈り（男）|flattopだけでは弱い。横を剃り上げていることを強調する必要がある。flattopだがストリートファイターのガイルのような真っ平にはほぼならない。|https://image01.seesaawiki.jp/n/h/nai_ch/HynEl9_qU_.png https://image01.seesaawiki.jp/n/h/nai_ch/DqZtUpMsD4.png|
+|extra short hair, {{faux hawk hair, shaved sidelocks, shaved side section hair, shaved nape section hair, undercut hair}}, |ソフトモヒカン|モヒカンのように横を完全に剃り上げた感じにならない。|https://image01.seesaawiki.jp/n/h/nai_ch/rVfZJmZHRg.png https://image02.seesaawiki.jp/n/h/nai_ch/A97qNKuBf3.png|
+|extra short hair, {{mohawk hair, shaved sidelocks, shaved side section hair, shaved nape section hair, undercut hair}},|モヒカン|mohawk hairだけでは効かない。剃っていることを強調しないとモヒカンにならない。顔付きが男っぽくなることや耳にピアスが付くことも多い。|https://image01.seesaawiki.jp/n/h/nai_ch/l_P_WTG_Vv.png https://image01.seesaawiki.jp/n/h/nai_ch/sGzuAEnyHX.png|
+|extra short hair, mohawk hair, |少年漫画の主人公的な髪型|ザ・少年漫画の主人公なギザギザ頭になる。|https://image01.seesaawiki.jp/n/h/nai_ch/QeGkT21_AX.png https://image01.seesaawiki.jp/n/h/nai_ch/5_aJJtmON8.png|
+|A-line bob cut hair|Aラインボブ|シルエットがAの形になる裾広がりのボブカット。|https://image01.seesaawiki.jp/n/h/nai_ch/ZFJNmgY5WO.png https://image01.seesaawiki.jp/n/h/nai_ch/Y0QGrDuazs.png|
+|one length bob cut hair, {{forehead, hair intakes}}, |ワンレンボブ|ストレートヘアで前から後ろまで同じ長さで切りそろえたボブカット。エアインテークの効きが一定ではないため、そこでバリエーションが出る。one lengthは非常に弱いのでおまじない程度。|https://image01.seesaawiki.jp/n/h/nai_ch/5Q5PfVZc0C.png https://image01.seesaawiki.jp/n/h/nai_ch/jOFCD0xSY_.png|
+|extra short hair, mushroom cut hair, {{shaved sidelocks, shaved side section hair, shaved nape section hair, undercut hair}}, |マッシュルームカット|プロンプトの効きはやや悪い感じがする。時々、ボブカットになる。|https://image02.seesaawiki.jp/n/h/nai_ch/HAn9OG_ZWL.png https://image02.seesaawiki.jp/n/h/nai_ch/1JZGLvH4kt.png|
+|mushroom cut|マッシュルームカット(プロンプト単独の効果）|ほぼbowl cutやbob cutと同じになる。blunt bangsを入れなくても前髪ぱっつんになる。|https://image02.seesaawiki.jp/n/h/nai_ch/0MJW_kjhU0.png https://image01.seesaawiki.jp/n/h/nai_ch/LLyYn_drIz.png|
+|extra short hair, buzz cut|ショートヘア（ピクシーカット）|forehead無しだとこんな感じで丸刈りにならず襟足の短いショートヘアになる。|https://image02.seesaawiki.jp/n/h/nai_ch/9I5zLgqKz9.png https://image02.seesaawiki.jp/n/h/nai_ch/yBr8lNcxK9.png|
+|forehead, buzz cut|丸刈り|buzz cutとforeheadの合わせ技で丸刈りになる。下サンプル程度の長さの髪になることもあるので完璧を期すなら、extra short hairも追加する方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/ngs0Wcliu2.png https://image02.seesaawiki.jp/n/h/nai_ch/Hm5IuG9k2F.png|
+|straight perm hair|緩い内巻きカール|ワンカールっぽい緩く内巻きしたカールになる。|https://image01.seesaawiki.jp/n/h/nai_ch/rs2KiPzsrO.png https://image01.seesaawiki.jp/n/h/nai_ch/0lFa_hbMuE.png|
 |curly hair|巻き毛|wavyより強く巻いた感じになる。|https://image01.seesaawiki.jp/n/h/nai_ch/1ySJBBG2e4.png https://image02.seesaawiki.jp/n/h/nai_ch/CZVg82EPLi.png|
 |streaked hair|メッシュ|髪にメッシュが入る。メッシュは和製英語。streakedは筋を付けるという意味。|https://image02.seesaawiki.jp/n/h/nai_ch/XmJ3f_7fIS.png https://image02.seesaawiki.jp/n/h/nai_ch/wb7yU8fnR8.png|
 |medium hair, one curl (inner roll)|内巻きカール|後ろ髪をカールさせた髪型になる。カールの度合いはランダム。|https://image01.seesaawiki.jp/n/h/nai_ch/Ct_v3S9AXg.png https://image01.seesaawiki.jp/n/h/nai_ch/IGBAF9a0cA.png|
