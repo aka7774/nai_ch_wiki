@@ -103,6 +103,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|festival|祭典／祭り／催し物|元々は謝肉祭以外の祭典を指す言葉。転じて催し物のこと。ロックフェスの会場ぽいものが描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/lDsG33QHfx.png|
+|carnival|謝肉祭|キリスト教には四旬節という食事の節制（肉食の禁止など）を実践する期間があり、その前に肉に別れを告げる宴が謝肉祭である。この時に仮装行列など様々な催しも行われたことから、現在では宗教的な背景を持たない祭りもカーニバルと呼ばれるようになった。|https://image02.seesaawiki.jp/n/h/nai_ch/w7A1ajhBWO.png|
 |cityscape|街並|sunsetと組み合わせると日没の街並になる。|https://image01.seesaawiki.jp/n/h/nai_ch/vI0x_7cRLy.png https://image01.seesaawiki.jp/n/h/nai_ch/KjoUXYimvs.png|
 |Japanese garden|日本庭園|兼六園や足立美術館など海外でも知られている日本庭園ぽくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/VoW0zKR0tS.png|
 |garden|庭園|西洋風の庭園になる。|https://image01.seesaawiki.jp/n/h/nai_ch/BlzXxdKGuN.png|
@@ -158,6 +160,13 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|altocumulus, mackerel sky,|高積雲|やや再現度が低い。|https://image02.seesaawiki.jp/n/h/nai_ch/vuq48rCkG8.png|
+|altostratus, gray sky, [[sun]],|高層雲|空に広く薄く広がる雲。太陽の光は通すが形がぼんやりするためおぼろ雲ともいう。|https://image01.seesaawiki.jp/n/h/nai_ch/E256WV89d9.png|
+|nimbostratus, gray sky,|乱層雲|空全体を覆い、厚さや色にムラが無く一様で暗灰色をした雲。雨雲や雪雲とも呼ばれ、どんよりと空を覆う雲になる。|https://image01.seesaawiki.jp/n/h/nai_ch/gW1xoc8Hok.png|
+|stratus|層雲|地上から最も近い場所に発生する雲。霧雲とも呼ばれ、地上で発生すると霧になる。|https://image02.seesaawiki.jp/n/h/nai_ch/FUJCWWFzhD.png|
+|stratocumulus|層積雲|白または灰色の雲が群れをなし集まった雲のこと。曇り雲ともいう。|https://image02.seesaawiki.jp/n/h/nai_ch/UaKXFxCDGV.png|
+|cumulus|積雲|晴れた日によく発生する綿のような形をした雲。綿雲ともいう。|https://image02.seesaawiki.jp/n/h/nai_ch/XePi0QbMjo.png|
+|cumulonimbus|積乱雲／入道雲|強い上昇気流により鉛直方向に著しく発達した雲。夏によく発生する雲。|https://image01.seesaawiki.jp/n/h/nai_ch/vf6A6tEf5R.png|
 |horizon|水平線|英語では水平線も地平線もhorizonだが、ほぼ水平線の描写になる。|https://image01.seesaawiki.jp/n/h/nai_ch/3r5buqJy3Y.png https://image01.seesaawiki.jp/n/h/nai_ch/T5qnrflBw0.png|
 |scenery|景色|natureより広い範囲が描写される傾向がある。描かれるものは自然物でランダム。|https://image01.seesaawiki.jp/n/h/nai_ch/_u25233o0A.png https://image02.seesaawiki.jp/n/h/nai_ch/AGjN4VGiMs.png|
 |nature|自然|ランダムに自然の景色が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/M5pmF2Dr1Z.png https://image01.seesaawiki.jp/n/h/nai_ch/Apf8VACWTC.png|

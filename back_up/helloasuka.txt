@@ -82,8 +82,9 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
-|RTX 4070|12G|ryzen 5 2100G||44.06s|--xformers|python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17|
-|RTX 4070|12G|ryzen 5 2100G||44.06s|--xformers|python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17|
+|RTX 3060|12GB|Ryzen9 3900XT|51.254|50.36|--xformers --no-half-vae --opt-channelslast --disable-nan-check --opt-sdp-no-mem-attention --opt-sdp-attention|version: v1.2.1 / python: 3.10.11 / torch: 2.0.1+cu118 / xformers: 0.0.17 / gradio: 3.29.0|
+|RTX 4070|12G|ryzen 5 2100G||44.06|--xformers|python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17|
+|RTX 4070|12G|ryzen 5 2100G||44.06|--xformers|python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17|
 |RTX 4090|24GB|Core i9-13900k|12.4|10.33|--xformers --no-half-vae|version: v1.3.0 / python: 3.10.11 / torch: 2.0.1+cu118 / xformers: 0.0.17 /|
 |RTX 3060|12GB|Core i7-12700||49.81|--xformers --opt-sdp-attention|version: v1.3.0 torch:2.0.1+cu118|
 |RTX 4080|16|Core i7-13700KF||14.09|--xformers --opt-channelslast|Windows11 torch: 2.0.1+cu118|
@@ -329,6 +330,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~サービス名|w(100px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken|オプション|備考|
+||4090|24GB|i9-13900k|||||
 ||4090|||||||
 |Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T||24.85|--opt-sdp-attention --opt-channelslast|8ドル/月プラン|
 |Google Colaboratory|NVIDIA Tesla T4|15GB|||44.93|--opt-sdp-no-mem-attention --opt-channelslast|conda Python 3.10.9torch 2.0.0xformersなし|

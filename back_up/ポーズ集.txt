@@ -16,6 +16,10 @@ danbooru のポーズ関係のタグ一覧はこちら https://danbooru.donmai.u
 
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|stroking own chin|自分の顎を撫でる|頬杖をついているようなポーズになることもある。|https://image01.seesaawiki.jp/n/h/nai_ch/tsaZZQQa3S.png|
+|standing, v arms|後ろで手を組んで立つ|両手を後ろで組んで立ったポーズになる。|https://image01.seesaawiki.jp/n/h/nai_ch/dGhZ2xHFJJ.png|
+|bent over|かがむ|足を垂直に伸ばしたまま、胴体を水平に曲げお尻を突き出したポーズになる。|https://image02.seesaawiki.jp/n/h/nai_ch/R6FsEuWZJM.png|
+|lotus position|蓮華座|両足を太腿に乗せる座り方だが、出力結果は胡座とほぼ同じ感じになる。単独でも効くプロンプトだがsittingと併用した方が確実。|https://image02.seesaawiki.jp/n/h/nai_ch/YKb30JUrAJ.png|
 |pretzel pose|まんぐりがえし|　|https://image02.seesaawiki.jp/n/h/nai_ch/2XsEl8WnRw.png|
 |jack-o' challenge pose|ジャックオーチャレンジ|top-down bottom-upやwide spread legsを追加するとハズレの確率がやや減る。 |https://image02.seesaawiki.jp/n/h/nai_ch/_4GbEImPxa.png|
 |double biceps pose|ダブルバイセップス・フロント|ボディビルのポージング。両腕の上腕二頭筋（バイセップス）を強調するポーズ。女性もマッチョになる。|https://image01.seesaawiki.jp/n/h/nai_ch/CcPylUnQ8A.png|
