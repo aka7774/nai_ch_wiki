@@ -211,7 +211,14 @@ https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.6.0
 LoRA学習GUIの更新したで
 sd-scriptsの簡易インストール機能とDimリサイズでCUDAを使用するオプション追加
 https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.6.0
+
+692 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0238-PJtz)[] 投稿日：2023/06/07(水) 17:01:17.11 ID:N+nQd+Bl0
+LoRA学習GUIの更新報告
+6月3日にsd-scriptsになんか機能が追加されてたからそれに対応したで
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.7.0
+https://i.imgur.com/UpCrKxO.png
 ||=
+
 
 * ハードウェア関係
 ** HWMonitor
