@@ -1,17 +1,23 @@
 #contents
 
 * 概要
-ローカル環境で使えるモデル(.ckpt)のマージについてのページです。
+ローカル環境で使えるモデル(.ckpt、.safetensors)のマージについてのページです。
 
 * おすすめサイト
 
 - モデルは以下を参照
+-- [[https://civitai.com/]] ここにもう全部ある。
 -- [[https://rentry.org/sdmodels]] 2022/12現在、更新止まってる？
--- [[https://economylife.net/ai-models-list/]] 日本で纏めてくれてるページ
+-- [[https://economylife.net/ai-models-list/]] 日本で纏めてくれてるページ ここも2023/6現在更新止まってるかな？ モデル多すぎてしょうがないね
 - カクテル表
 -- STABLE DIFFUSION MIXING EMPORIUM - [[https://rentry.co/LFTBL]]
 -- /hdg/ Stable Diffusion Models Cookbook [[https://rentry.org/hdgrecipes]]
 
+Civitaiに1日数十個モデルが新規追加されていくので、もはやまとめサイトが作れない状況。
+あなたが作ろうとしているモデルに似たものもCivitai探せば多分あると思う。
+マージすることにこだわらないのであればCivitaiで落としてしまおう。
+ちなみに未ログインだとNSFWモデルは表示されない。
+ログインし、フィルター設定を全表示に変更しないとNSFWモデルは表示されないので注意。
 
 * メモリ不足の対策
 

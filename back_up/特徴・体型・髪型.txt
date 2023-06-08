@@ -106,7 +106,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|facial tattoo||||
+|facepaint|フェイスペイント|目の下や頬に模様が描かれる。フェイスタトゥーのような複雑な形状は描かれない。また、顔以外には模様が入らない。|https://image02.seesaawiki.jp/n/h/nai_ch/hJke0lcQyZ.png|
+|facial tattoo|顔の刺青|額や目の下から頬に刺青が入る。色指定しない場合、黒色で描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/XQqBksSC2f.png|
 |a girl with extremely dirty back and arms by rainbow liquid, her body is the canvas of the art, eastern dragon tattoo picture is full of her back, naked, ultra-detailed tattoo, gigantic quality tattoo, ultra colourful with vivid red floral accented tattoo, stylized dragon face, colourful art|モンモン|クオリティ補助なし, PLMS & 低Scale でやるのが重要~~Steps: 23, Sampler: PLMS, CFG scale: 5, Size: 512x512|https://image02.seesaawiki.jp/n/h/nai_ch/zQF6vVW4LY.png|
 |tribal tattoo on body|部族娘||https://image02.seesaawiki.jp/n/h/nai_ch/vJEkhRfGfO.png|
 |henna tattoo on body|中東風||https://image02.seesaawiki.jp/n/h/nai_ch/gXgVlxK_Cq.png|
@@ -118,6 +119,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|braid pig tails|三つ編みツインテール|サンプルのように根本から三つ編みにした感じになりやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/2uAr3RShWG.png https://image02.seesaawiki.jp/n/h/nai_ch/zsjIiTMlFk.png|
 |double bun and ○○ twin tails|お団子＋ツインテール|セーラームーンの月野うさぎみたいな髪型。○○はlongかmediumを指定する（shortだとツインテが無くなることがある）。|https://image01.seesaawiki.jp/n/h/nai_ch/QqT0kGKCmh.png https://image01.seesaawiki.jp/n/h/nai_ch/yv5Alnnudx.png|
 |twist updo|後頭部でまとめたお団子|緩く巻いたシニヨンになることが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/GEhSDP1Rey.png https://image01.seesaawiki.jp/n/h/nai_ch/XTTAHGaIEM.png|
 | twin braids hair, {{slicked back hair}},|デコ出しの三つ編み|前髪が一本程度前に出ることがある。|https://image02.seesaawiki.jp/n/h/nai_ch/H05Zk0RBpu.png https://image02.seesaawiki.jp/n/h/nai_ch/fGlTDdBl5U.png|
