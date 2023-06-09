@@ -604,6 +604,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|dog tag|ドッグ・タグ|元々は軍隊で個人識別に用いられたプレート状のネックレスのこと。首からぶら下げる身分証みたいな感じで描写されることがある。|https://image02.seesaawiki.jp/n/h/nai_ch/b9r8Z6wDKk.png https://image01.seesaawiki.jp/n/h/nai_ch/UU1J3PXn76.png|
+|choker|チョーカー|首にぴったりと巻きつく装身具。ペンダント風に宝石がつくことがある。|https://image02.seesaawiki.jp/n/h/nai_ch/GWDGgWlDgT.png https://image02.seesaawiki.jp/n/h/nai_ch/wLtCMhcmMs.png|
+|necklace|ネックレス|チェーンを含む首回りに着けるアクセサリー。|https://image02.seesaawiki.jp/n/h/nai_ch/NN9TIBloRU.png https://image01.seesaawiki.jp/n/h/nai_ch/i8N0NXUE5t.png|
+|earrings|イヤリング|宝石の付いたイヤリングが描写される。宝石の種類（rubyやsapphireなど）の指定はある程度は効く。|https://image01.seesaawiki.jp/n/h/nai_ch/5ONHtcd94J.png https://image01.seesaawiki.jp/n/h/nai_ch/fCSr4ONzqi.png|
 |masquerade mask|マスカレードマスク（ベネチアンマスク）|身分・素性を隠して交流する仮面舞踏会で着用する仮面。ベネチアのカーニバルが発祥とされるためベネチアンマスクとも呼ばれる。detailedやintricateなど複雑に詳細に記述するプロンプトと組み合わせた方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/aPnihUrH_W.png https://image02.seesaawiki.jp/n/h/nai_ch/y9N5O5KKRK.png|
 |mask on head, oni mask,|鬼面|狐面より安定性が低い。|https://image01.seesaawiki.jp/n/h/nai_ch/TYGv0dWlKz.png|
 |mask on head, fox mask,|狐面|mask on headと組み合わせるとサージカルマスクにならない。強化すると２つ付けたりするので強化しない方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/9eT9NPLUnT.png|
