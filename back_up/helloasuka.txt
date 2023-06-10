@@ -82,6 +82,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4070|12GB|Ryzen 7 5700x||17.83|--skip-torch-cuda-test --opt-sdp-no-mem-attention --opt-sdp-attention --opt-channelslast --no-half-vae|torch: 2.0.0+cu118|
+|RTX 4070 Ti|12GB|Core i7-10700KF||20.77|--xformers --opt-channelslast|python: 3.10.9 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17 &#8192;&#8226;&#8192; gradio: 3.31.0|
 |RTX 3060|12GB|Ryzen9 3900XT|51.254|50.36|--xformers --no-half-vae --opt-channelslast --disable-nan-check --opt-sdp-no-mem-attention --opt-sdp-attention|version: v1.2.1 / python: 3.10.11 / torch: 2.0.1+cu118 / xformers: 0.0.17 / gradio: 3.29.0|
 |RTX 4070|12G|ryzen 5 2100G||44.06|--xformers|python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17|
 |RTX 4070|12G|ryzen 5 2100G||44.06|--xformers|python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17|
