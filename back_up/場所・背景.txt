@@ -103,6 +103,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|highway, interchange,|インターチェンジ|分岐点、ランプウェイのある高速道路が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/p7mCoaig9S.png|
+|main thoroughfare|大通り／幹線道路|街中の並木道が描写されることが多い。|https://image02.seesaawiki.jp/n/h/nai_ch/xzRvBAFxXY.png|
+|Highway, heavy traffic,|交通量の多い高速道路| heavy trafficは渋滞という意味で使われることが多い。Highwayに追記すると車線数が増えて描写される。おそらく交通量の多い高速道路と解釈されている。|https://image01.seesaawiki.jp/n/h/nai_ch/ZsjVacoEGB.png|
+|highway|高速道路|歩道の無い自動車専用道路が描写される。自動車が描写されることもある。|https://image02.seesaawiki.jp/n/h/nai_ch/q7mhJQMDj2.png|
 |festival|祭典／祭り／催し物|元々は謝肉祭以外の祭典を指す言葉。転じて催し物のこと。ロックフェスの会場ぽいものが描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/lDsG33QHfx.png|
 |carnival|謝肉祭|キリスト教には四旬節という食事の節制（肉食の禁止など）を実践する期間があり、その前に肉に別れを告げる宴が謝肉祭である。この時に仮装行列など様々な催しも行われたことから、現在では宗教的な背景を持たない祭りもカーニバルと呼ばれるようになった。|https://image02.seesaawiki.jp/n/h/nai_ch/w7A1ajhBWO.png|
 |cityscape|街並|sunsetと組み合わせると日没の街並になる。|https://image01.seesaawiki.jp/n/h/nai_ch/vI0x_7cRLy.png https://image01.seesaawiki.jp/n/h/nai_ch/KjoUXYimvs.png|
@@ -160,6 +164,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|total eclipse, red moon,|皆既月食|red moonだけだと空も赤くなる。|https://image01.seesaawiki.jp/n/h/nai_ch/cdtuMQqRzS.png|
+|crescent moon|三日月|綺麗なものが描写されにくい。|https://image02.seesaawiki.jp/n/h/nai_ch/2RUYBEzsnK.png|
+|full moon|満月|たまに月が二つになることがある。|https://image02.seesaawiki.jp/n/h/nai_ch/grZRFfuDXx.png|
 |total solar eclipse, black sun, [[solar corona]],|皆既日食|太陽が月に完全に覆われて見えない状態の日食。綺麗なものはなかなか描写されない。|https://image01.seesaawiki.jp/n/h/nai_ch/gctiQeIkC2.png https://image02.seesaawiki.jp/n/h/nai_ch/9XCiPARaMa.png|
 |blizzard, snow storm, {{strong wind}}, whiteout,|吹雪|強風で地表に積もった雪（積雪）が舞い上がると同時に、降雪で見通しが悪くなっている気象状態。|https://image01.seesaawiki.jp/n/h/nai_ch/zGWvnmI0jN.png|
 |storm, heavy rain, thunder,|嵐|強い雨を伴う暴風。|https://image02.seesaawiki.jp/n/h/nai_ch/mzO8F5R1fG.png|
