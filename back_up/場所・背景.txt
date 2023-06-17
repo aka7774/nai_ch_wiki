@@ -103,6 +103,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|suspension bridge|吊り橋|塔の間に渡したメインケーブルから垂らしたハンガーロープで横桁を吊る形式の橋梁。あまり出ない。|https://image01.seesaawiki.jp/n/h/nai_ch/dlPbDL1hT6.png|
+|cable-stayed bridge|斜張橋|塔から斜めに張ったケーブルを横桁に直接接続して支える形式の橋梁。吊り橋と混同されやすい。サンプルでも右半分が吊り橋になっている。|https://image01.seesaawiki.jp/n/h/nai_ch/UcibzbxTuG.png|
+|arch bridge|アーチ橋|石造りのアーチ橋が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/iVAc9rVtPB.png|
 |highway, interchange,|インターチェンジ|分岐点、ランプウェイのある高速道路が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/p7mCoaig9S.png|
 |main thoroughfare|大通り／幹線道路|街中の並木道が描写されることが多い。|https://image02.seesaawiki.jp/n/h/nai_ch/xzRvBAFxXY.png|
 |Highway, heavy traffic,|交通量の多い高速道路| heavy trafficは渋滞という意味で使われることが多い。Highwayに追記すると車線数が増えて描写される。おそらく交通量の多い高速道路と解釈されている。|https://image01.seesaawiki.jp/n/h/nai_ch/ZsjVacoEGB.png|
@@ -272,6 +275,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|golden gate bridge|ゴールデンゲートブリッジ（金門橋）|サンフランシスコ湾の湾口に架かる吊り橋。インターナショナル・オレンジの色を維持するため、橋のどこかで常に塗装工事が行われている。|https://image01.seesaawiki.jp/n/h/nai_ch/b8VhrURT1o.png|
+|brooklyn bridge|ブルックリン橋|ニューヨークのマンハッタンとブルックリンを結ぶ橋。吊り橋と斜張橋の複合構造であり、18世記に建造されたアメリカで最も古い橋の一つ。同時代に建造された吊り橋のほとんどが強度不足で廃棄されたが、本橋は当時必要とされた強度より6倍頑丈に設計されたため今日までその姿を残している。|https://image01.seesaawiki.jp/n/h/nai_ch/_AT4VrTNnJ.png|
+|sydney harbour bridge|シドニー・ハーバーブリッジ|シドニーにある中路アーチ橋。鋼トラスアーチの中間に８車線の道路と鉄道、自転車専用道路と歩道まである車線が世界一多い橋。2012年にカナダのバンクーバーにポートマン橋が完成するまでは「最も幅の広い橋」としてギネス世界記録の認定を受けていた。|https://image01.seesaawiki.jp/n/h/nai_ch/X1lW5ZwiLM.png|
 |Uyuni salt lake, sky, cloud, reflection,|ウユニ塩湖|南米ボリビアにある広大な塩の平原。岐阜県の面積とほぼ同じ広さがある。乾季には干上がった塩の平原だが、雨季には冠水して湖になる。このとき、高低差50cm以内という極めて平らな平原に波も立たないほど薄く水が広がり、「天空の鏡」と形容される巨大な水鏡が出現する。アニメのOP、EDでそれっぽい背景が結構な頻度で出てくる。|https://image02.seesaawiki.jp/n/h/nai_ch/SZnA45Q3AR.png https://image01.seesaawiki.jp/n/h/nai_ch/_lsU1s9uSR.png|
 |Etoile arc de triomphe|エトワール凱旋門|フランスを代表する著名なランドマーク。パリのシャンゼリゼ通りの西端、シャルル・ド・ゴール広場にある戦勝記念碑。単に凱旋門と言えばこの建造物を指すほど有名。|https://image02.seesaawiki.jp/n/h/nai_ch/DLdA7Fyubq.png|
 |Notre Dame Cathedral|ノートルダム大聖堂|世界文化遺産「パリのセーヌ河岸」を構成する建造物。2019年に火災で焼け落ちた。|https://image02.seesaawiki.jp/n/h/nai_ch/y40w9sY71f.png|

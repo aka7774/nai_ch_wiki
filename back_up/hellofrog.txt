@@ -20,11 +20,11 @@ Linuxだと頭にtimeをつければ出てくる。
 
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|time(秒)|オプション|バージョン|備考|
-|RX 6650XT|8GB|Ryzen 5 5600G|18m6.079s|--sdpa --train_batch_size=4 --cache_latents --gradient_checkpoint export PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.8,max_split_size_mb:256'|449ad7502cb0f36cd8b94b2c7d98ec204af234a9|torch: 2.0.1+rocm5.4.2 bitsandbytes-rocm3.7 origin/original-u-net|
+|RX 6650XT|8GB|Ryzen 5 5600G|18m6.079s|--sdpa --cache_latents --gradient_checkpoint export PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.8,max_split_size_mb:256'|449ad7502cb0f36cd8b94b2c7d98ec204af234a9|torch: 2.0.1+rocm5.4.2 bitsandbytes-rocm3.7 origin/original-u-net|
 |RX 6650XT|8GB|Ryzen 5 5600G|15m49.325s|--sdpa --train_batch_size=1 --cache_latents|449ad7502cb0f36cd8b94b2c7d98ec204af234a9|torch:2.0.1+rocm5.4.2 bitsandbytes-rocm3.7 origin/original-u-net|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X|7m24.127s|--xformers --batch_size 2 --cache_latents||torch2.1,xformers0.0.19 cache_latentsオンで低解像度で大幅に高速化|
 |RTX 2060|6GB|Ryzen 5600X|18m15.98s|--xformers batch_size=2|||
-|RX 6650 XT|8GB|Ryzen 5 5600G|24m18.670s|--max_data_loader_n_workers=8 --num_cpu_threads_per_process 12 --mem_eff_attn|5050971ac687dca70ba0486a583d283e8ae324e2|torch: 2.0.0+rocm5.4.2 Ubuntu20.04 python3.10 bitsandbytes-rocm3.7 画面出力はiGPU|
+|RX 6650 XT|8GB|Ryzen 5 5600G|24m18.670s|--mem_eff_attn --max_data_loader_n_workers=8 --num_cpu_threads_per_process 12|5050971ac687dca70ba0486a583d283e8ae324e2|torch: 2.0.0+rocm5.4.2 Ubuntu20.04 python3.10 bitsandbytes-rocm3.7 画面出力iGPU|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X|12m16.307s|--xformers batch_size=3||torch2.1,xformers0.17|
 |RX 6900 XT|16GB|Ryzen 5950X|11m32.561s|--xformersなし --mem_eff_attn追加 環境変数'PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.9,max_split_size_mb:512''||tensorflow-rocmとbitsandbytes-rocm(本家のissue#107にリンクあり)を使用する。bitsandbytesのモジュールは自動でビルドされないので、別にクローンしてビルドし、出来たものを'venv/lib/python3.10/site-packages/bitsandbytes/'に入れる。|
 |RTX 3060|12GB|Ryzen 3700X|25m2.20s||71b728d5fcfe16f4434e2bf61e75cdfb76f93e14|16h25m2.20s ってテキストには書いてあった Windows11 pro|

@@ -82,6 +82,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX 7900 XT|20GB|Ryzen 5 7600X|22.52|21.29|--opt-sdp-no-mem-attention --opt-sdp-attention|Lubuntu 22.04 LTS , ROCm 5.5.0 , Python 3.10.6 , Pytorch 2.0.1|
 |RTX 2060|6GB|Core i7-9700K||46.95|--xformers --disable-nan-check --autolaunch|version: v1.2.1, python: 3.10.10, torch: 2.0.1+cu118, xformers: 0.0.17, gradio: 3.29.0, checkpoint: 89d59c3dde|
 |RTX 4070 Ti|12GB|Core i7-13700K||16.60|--xformers --opt-sdp-attention --autolaunch||
 |RTX 4090|24GB|Core i9-13900KF||13|--opt-sdp-no-mem-attention --deepdanbooru --disable-nan-check|win11 Version:v1.3.2-241-g59419bd6/python: 3.10.11/torch: 2.0.1+cu118 平均27.32it/s|
@@ -280,6 +281,7 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX 7900 XT|20GB|Ryzen 5 7600X|21.00|20.24|--opt-sdp-no-mem-attention --opt-sdp-attention|Lubuntu 22.04 LTS , ROCm 5.5.0 , Python 3.10.6 , Pytorch 2.0.1|
 |RTX 4090|24GB|Core i7-12700K|7|7.93|--opt-sdp-no-mem-attention|pytorch2.0, batch count 5, batch size 2,live previewなし, WSL2 ubuntu22.04|
 |RTX 4090|24GB|Core i7-12700K|7|7.93|--opt-sdp-no-mem-attention|pytorch2.0, batch count 5, batch size 2,live previewなし, WSL2 ubuntu22.04|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X||23.63|--xformers --opt-channelslast|WSL2, Torch2.0, モデルコンパイル有効 ~~ Batch Count5, Batch size 2 OCすると22.83s|
@@ -296,6 +298,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX 7900 XT|20GB|Ryzen 5 7600X|33.13|32.22|--opt-sdp-no-mem-attention --opt-sdp-attention|Lubuntu 22.04 LTS , ROCm 5.5.0 , Python 3.10.6 , Pytorch 2.0.1|
 |RX 6650XT|8GB|Ryzen 5 5600G||45.84|--opt-sdp-no-mem-attention|torch: 2.0.0+rocm5.4.2 Ubuntu20.04 RAM16GB ToMe(0.5)オン。ToMeオフだと1m 5.93s|
 |RTX 4090|24GB|Core i7-12700K|6|7.08|--opt-sdp-no-mem-attention|誤りがあったので修正。pytorch2.0, batch count 2, batch size 5,live previewなし, WSL2 ubuntu22.04|
 |RTX 4070 Ti|12GB|Core i9-9900K|15|15.17|--xformers --no-half-vae|Batch Count 2、Batch Size 5|
