@@ -37,6 +37,16 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|tavern|酒場|単独だとこんな感じになる。|https://image02.seesaawiki.jp/n/h/nai_ch/mrC7e7nc2Q.png|
+|medieval tavern|中世の酒場|tavernには酒場・居酒屋、旅籠などの意味合いがある。|https://image02.seesaawiki.jp/n/h/nai_ch/W3eoWn0YNj.png|
+|proscenium theater|プロセニアム型劇場|舞台と客席がプロセニアムと呼ばれる額縁状の構造物で仕切られた構造の劇場。今日では一般的な劇場のスタイル。|https://image01.seesaawiki.jp/n/h/nai_ch/OEnjXlWtfH.png|
+|arena|アリーナ|スタンド（傾斜がある階段状の観客席）に全周を囲まれた競技場または劇場などの施設。屋内競技場として描写される方が多い。|https://image02.seesaawiki.jp/n/h/nai_ch/_oJIHtnAey.png|
+|entrance hall, stairway,|ホール階段のあるエントランス|階段がある方が大きな屋敷ぽくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/Cm1zE_k2dP.png|
+|entrance hall|出入口広間|大きなお屋敷のロビーとして描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/jUQVFHiWny.png|
+|dance hall|ダンスホール|ダンスを楽しむための場所。大人数で踊れるような広い空間が中央にあり、周りに休憩するためのスペースが配置されていることが多い。|https://image02.seesaawiki.jp/n/h/nai_ch/Zvs6LRcxT4.png|
+|japanese bar|日本風居酒屋|木製のカウンターや椅子で日本風。どちらかと言うとお寿司屋っぽい。|https://image01.seesaawiki.jp/n/h/nai_ch/0X64HKpwiK.png|
+|concert hall|コンサートホール|クラシックの演奏会場として描写される方が多い。|https://image01.seesaawiki.jp/n/h/nai_ch/qUTJ7ZgoxE.png|
+|hall|大広間|英語のホールには幅広い意味合いがある（劇場や宴会場など）。意図するものを出したい場合は言葉を付け加えた方がいい。|https://image01.seesaawiki.jp/n/h/nai_ch/0cgGB3Yzpp.png|
 |hostess club|キャバクラ|女性従業員との飲食や会話に主に男性が対価を払う接待型風俗営業店のこと。|https://image02.seesaawiki.jp/n/h/nai_ch/dZhXyifs5z.png https://image01.seesaawiki.jp/n/h/nai_ch/OIrhpAw3vZ.png|
 |night club|ナイトクラブ|夜間に人々が集い、酒を飲みながら踊る場所を提供する店舗のこと。|https://image01.seesaawiki.jp/n/h/nai_ch/sHsBS4wGVZ.png https://image01.seesaawiki.jp/n/h/nai_ch/SU8zoMUeZP.png|
 |cabaret club|キャバレー|ダンスやコメディなどパフォーマンスをする舞台のあるレストラン、ナイトクラブのこと。日本における接待飲食店としては描写されない。|https://image01.seesaawiki.jp/n/h/nai_ch/9Lepr1O3Uy.png https://image02.seesaawiki.jp/n/h/nai_ch/1081oLsBQu.png|
@@ -167,6 +177,14 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|supernova|超新星|恒星や白色矮星の大規模な爆発によって輝く天体。|https://image01.seesaawiki.jp/n/h/nai_ch/UFgw_Z6EHH.png|
+|earth (planet) |地球|地球が描写されるが、宇宙に描写されるとは限らない。|https://image02.seesaawiki.jp/n/h/nai_ch/G_ApHZBY_C.png|
+|mars (planet) |火星|何故か地球が描写されることがある。|https://image01.seesaawiki.jp/n/h/nai_ch/RWJ4wYPwNV.png|
+| saturn (planet) , rings of saturn|土星|特徴的な輪が上手く描写されないことが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/2OUrhG8aXj.png|
+| jupiter (planet)|木星| (planet)は必須。|https://image02.seesaawiki.jp/n/h/nai_ch/ejWs2zt5ZF.png|
+|Halley's Comet|ハレー彗星|75.32年周期で地球に接近する短周期彗星。古来より多くの文献に記録されている最も有名な彗星である。cometはプロンプトとしては弱く、あまり出ない。|https://image01.seesaawiki.jp/n/h/nai_ch/CuWlSVFo9w.png|
+|shooting star|流れ星|隕石的な描写はされない。|https://image02.seesaawiki.jp/n/h/nai_ch/06r9KEt0hb.png|
+|meteor|流星／隕石|大気圏に突入する隕石として描写されることもある。|https://image01.seesaawiki.jp/n/h/nai_ch/3upyMtEyJe.png https://image02.seesaawiki.jp/n/h/nai_ch/ILJzB9jmjX.png|
 |total eclipse, red moon,|皆既月食|red moonだけだと空も赤くなる。|https://image01.seesaawiki.jp/n/h/nai_ch/cdtuMQqRzS.png|
 |crescent moon|三日月|綺麗なものが描写されにくい。|https://image02.seesaawiki.jp/n/h/nai_ch/2RUYBEzsnK.png|
 |full moon|満月|たまに月が二つになることがある。|https://image02.seesaawiki.jp/n/h/nai_ch/grZRFfuDXx.png|
