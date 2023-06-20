@@ -37,6 +37,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|museum|美術館|博物館の意味もあるが、ほぼ美術館の描写になる。|https://image01.seesaawiki.jp/n/h/nai_ch/DHvaiJsNxA.png|
+|library|図書館|両サイドに書架がある空間が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/wRNaedkKYf.png|
+|stairs|階段|屋内の階段を指して使われる言葉だが、プロンプトとして使う場合は必ずしもそうではない。他のプロンプトで補強したい。|https://image01.seesaawiki.jp/n/h/nai_ch/DgSJzwkxCw.png|
 |staircase|階段|手摺も含んだ建物内の階段を指して使う言葉。|https://image02.seesaawiki.jp/n/h/nai_ch/tbdWTPAszv.png|
 |tavern|酒場|単独だとこんな感じになる。|https://image02.seesaawiki.jp/n/h/nai_ch/mrC7e7nc2Q.png|
 |medieval tavern|中世の酒場|tavernには酒場・居酒屋、旅籠などの意味合いがある。|https://image02.seesaawiki.jp/n/h/nai_ch/W3eoWn0YNj.png|
@@ -114,6 +117,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|subway station platform|地下鉄駅のプラットフォーム|東京メトロや山手線の駅に似た雰囲気になる。|https://image02.seesaawiki.jp/n/h/nai_ch/aXSPNAJw2o.png|
+|train station platform|駅のプラットフォーム|電車が部分的に描写されることがある。田舎の駅に似た雰囲気で描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/b7N1SfXq9p.png|
+|steps|階段|外にある（数段程度の）階段。緩やかな階段道になる。|https://image02.seesaawiki.jp/n/h/nai_ch/G0f6JEA7ED.png|
+|stairway|階段道|屋外の階段道が描写されることが多いが、室内の階段になることもある。|https://image02.seesaawiki.jp/n/h/nai_ch/N3_09KGnXB.png|
 |suspension bridge|吊り橋|塔の間に渡したメインケーブルから垂らしたハンガーロープで横桁を吊る形式の橋梁。あまり出ない。|https://image01.seesaawiki.jp/n/h/nai_ch/dlPbDL1hT6.png|
 |cable-stayed bridge|斜張橋|塔から斜めに張ったケーブルを横桁に直接接続して支える形式の橋梁。吊り橋と混同されやすい。サンプルでも右半分が吊り橋になっている。|https://image01.seesaawiki.jp/n/h/nai_ch/UcibzbxTuG.png|
 |arch bridge|アーチ橋|石造りのアーチ橋が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/iVAc9rVtPB.png|
@@ -294,6 +301,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|rialto bridge|リアルト橋|イタリアのヴェネチアにある石造の単独アーチ橋。1591年の完成当時、その独創的な形状から将来的に崩壊するだろうと思われていた。大まかな形しか再現されない。|https://image01.seesaawiki.jp/n/h/nai_ch/62cLYUX0dA.png|
+|Ponte Vecchio|ヴェッキオ橋|イタリアのフィレンツエにある石造の三連アーチ橋。1345年に建造されたフィレンツエで最も古い橋である。橋の上に店が立ち並ぶ独特の景観はあまり再現されない。|https://image01.seesaawiki.jp/n/h/nai_ch/ZRGTMWitUA.png|
+|tower bridge|タワーブリッジ|ロンドンのテムズ川に架かる跳開橋。橋の上流側にある港への通行を確保するため、下段の車道部が船舶の通行時に跳ね上がる構造になっている。民謡で知られるロンドン橋とは別の橋である。|https://image01.seesaawiki.jp/n/h/nai_ch/eVx3jGWdwp.png|
 |golden gate bridge|ゴールデンゲートブリッジ（金門橋）|サンフランシスコ湾の湾口に架かる吊り橋。インターナショナル・オレンジの色を維持するため、橋のどこかで常に塗装工事が行われている。|https://image01.seesaawiki.jp/n/h/nai_ch/b8VhrURT1o.png|
 |brooklyn bridge|ブルックリン橋|ニューヨークのマンハッタンとブルックリンを結ぶ橋。吊り橋と斜張橋の複合構造であり、18世記に建造されたアメリカで最も古い橋の一つ。同時代に建造された吊り橋のほとんどが強度不足で廃棄されたが、本橋は当時必要とされた強度より6倍頑丈に設計されたため今日までその姿を残している。|https://image01.seesaawiki.jp/n/h/nai_ch/_AT4VrTNnJ.png|
 |sydney harbour bridge|シドニー・ハーバーブリッジ|シドニーにある中路アーチ橋。鋼トラスアーチの中間に８車線の道路と鉄道、自転車専用道路と歩道まである車線が世界一多い橋。2012年にカナダのバンクーバーにポートマン橋が完成するまでは「最も幅の広い橋」としてギネス世界記録の認定を受けていた。|https://image01.seesaawiki.jp/n/h/nai_ch/X1lW5ZwiLM.png|
