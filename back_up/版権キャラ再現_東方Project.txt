@@ -7,9 +7,10 @@
 **主人公
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
+|||||水着||
 |hakurei reimu||||||
 |||||||
-|hakurei reimu||東方project|博麗霊夢||https://image02.seesaawiki.jp/n/h/nai_ch/HgHbGZFvyT.png|
+|hakurei reimu||東方project|博麗霊夢||https://image02.seesaawiki.jp/n/h/nai_ch/HgHbGZFvyT.png|mizugi
 |kirisame marisa||東方projec|霧雨魔理沙||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_kAZkjbqno-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_kAZkjbqno.png]]|
 |}
 **紅魔郷
@@ -36,7 +37,7 @@
 |||東方Project|ルナサ・プリズムリバー|||
 |||東方Project|メルラン・プリズムリバー|||
 |||東方Project|リリカ・プリスムリバー|||
-|konpaku youmu||東方Project|魂魄妖夢||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/llZuvgFTT0-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/llZuvgFTT0.png]]|
+|konpaku youmu||東方Project|魂魄妖夢||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/llZuvgFTT0-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/llZuvgFTT0.png]]|osinokio
 |{best quality}, {masterpiece}, saigyouji yuyuko, blue sash, blue kimono, {{sakura print}}, frills, long sleeves, hat, cowboy shot,black ribbon,||東方project|西行寺幽々子|西行寺幽々子を強調すると絵柄が偏る？~~厳密には桜の柄があるけど入れるとガチャ要素強すぎるので省いてもいいかも|[[https://image02.seesaawiki.jp/n/h/nai_ch/jlHMKyXXSD.png]]|
 |yakumo ran, tabard, fox girl, cap||東方Project|八雲藍||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6Ri1iaKa1t-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/6Ri1iaKa1t.png]]|
 |yakumo yukari_(touhou), tabard||東方Project|八雲紫|名前だけでは出なくなりつつあるので「touhou」の一文があった方が安定する。~~「purple one piece dress」で妖々夢等でのドレス衣装版。~~ZUN帽がうまく出ない場合は「mob_cap, hat_ribbon」を入れると安定しやすくなる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/151qAO0jTm-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/151qAO0jTm.png]]|
@@ -71,7 +72,7 @@
 |1girl,{{{{{{kagiyama hina}}}}}},green hair,green eyes,red dress,long hair,long skirt,puffy short sleeves||東方Project|鍵山雛|胸元で髪をリボンで結んでいるのが解けていたり、衣装の胸元飾りになっている事が多い。~~左腕にリボンを巻いてくれず、スカートに厄の模様が入らないのが難点。~~構文のどこかに「touhou」の単語無い状態で高品質構文を入れると、関係ないお姫様やお嬢様キャラっぽい衣装になる（特徴的なリボンは出やすい）|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IBH7PsccYZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IBH7PsccYZ.png]][[https://image02.seesaawiki.jp/n/h/nai_ch/xCP9GFUZd_.png]]|
 |kawashiro nitori,hat,blue hair,||東方Project|河城にとり||https://image01.seesaawiki.jp/n/h/nai_ch/RvZM5gKljP.png|
 |1girl, {inubashiri momiji}, white hair, short hair, fusion of red {tokin} hat & pom pom (clothes), white animal ears, white shirt, midriff, fusion of bare shoulders & miko, {{{black skirt}}},||東方Project|犬走椛|スカートの模様の再現が不可能 & 白い玉が安定しない~~また黒スカートも時々白くなる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oAz47Y3shp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oAz47Y3shp.png]]|
-|{{kochiya sanae}}, frog hair ornament, sleeveless, detached sleeves, skirt,||東方project|東風谷早苗|名前だけでも大体は再現可能だけど微妙に安定しないのでいくつか追加。~~カエルの髪飾りの作画が安定しない。~~snake hair ornamentを追加するとヘビが多すぎることがあるので付けてない。|[[https://image02.seesaawiki.jp/n/h/nai_ch/1cza4iOqsf-s.png]]|
+|{{kochiya sanae}}, frog hair ornament, sleeveless, detached sleeves, skirt,||東方project|東風谷早苗|名前だけでも大体は再現可能だけど微妙に安定しないのでいくつか追加。~~カエルの髪飾りの作画が安定しない。~~snake hair ornamentを追加するとヘビが多すぎることがあるので付けてない。|[[https://image02.seesaawiki.jp/n/h/nai_ch/1cza4iOqsf-s.png]]|naked
 |yasaka kanako,purple hair,red eye,shimenawa,white sleeves,red clothes,hair ornament,1girl,|aki minoriko,aki shizuha,moriya suwako,kochiya sanae,|東方Project|八坂神奈子|胸元の鏡、裏のしめ縄は再現できず。|https://image01.seesaawiki.jp/n/h/nai_ch/eieVt3vOf5.png|
 |moriya suwako,||東方Project|洩矢諏訪子||https://image01.seesaawiki.jp/n/h/nai_ch/P1GesaXUmD.png|
 |}
