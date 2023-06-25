@@ -37,6 +37,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|orangery|オランジェリー|17世紀から19世紀にかけて、寒さに弱い果樹などを冬の間養生するために建てられた温室。大きな窓がある建物が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/7uhk2kO2sP.png https://image02.seesaawiki.jp/n/h/nai_ch/Z2rAg35uhK.png|
 |museum|美術館|博物館の意味もあるが、ほぼ美術館の描写になる。|https://image01.seesaawiki.jp/n/h/nai_ch/DHvaiJsNxA.png|
 |library|図書館|両サイドに書架がある空間が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/wRNaedkKYf.png|
 |stairs|階段|屋内の階段を指して使われる言葉だが、プロンプトとして使う場合は必ずしもそうではない。他のプロンプトで補強したい。|https://image01.seesaawiki.jp/n/h/nai_ch/DgSJzwkxCw.png|
@@ -117,6 +118,14 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|canal|運河|静水をたたえた水路が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/0LVKndpu0o.png|
+|cascade|滝|落差の小さい滝、規模の小さい滝が描写される傾向がある。|https://image01.seesaawiki.jp/n/h/nai_ch/abcN3VHRV0.png|
+|waterfall|滝|落差の大きい滝が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/0e3pKWKLAj.png|
+|gazebo|ガゼボ|園内に造られた装飾的な小さい建物。arbourより装飾的な建造物になる。|https://image02.seesaawiki.jp/n/h/nai_ch/JaTT8N8Gbq.png|
+|obelisk|オベリスク|古代エジプトで神殿の門前に建てられた石柱のこと。上に行くほど細くなり先が尖った形状が特徴。古代ローマ以降は広場にモニュメントとして建てられるようになった。|https://image01.seesaawiki.jp/n/h/nai_ch/aXama4x9aW.png|
+|espalier|エスパリエ|果樹などの枝を壁面や塀沿いに誘引する緑化手法。|https://image01.seesaawiki.jp/n/h/nai_ch/JMr2NSvYfn.png|
+|water front|水辺|河岸や海岸などの水辺がランダムに描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/he8Af1lUBd.png|
+|fountain|噴水|噴水の形はランダム。|https://image01.seesaawiki.jp/n/h/nai_ch/jlUfmyLFkY.png|
 |wall fountain|噴水壁|壁面に固定されたオブジェなどから水が吹き出る仕掛けがある庭園工作物のこと。|https://image01.seesaawiki.jp/n/h/nai_ch/0tklfsEZXT.png|
 |water garden|ウォーターガーデン|滝と池のある庭園が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/TERBvZh7fR.png|
 |avenue|通り|並木のある大通りのことを指して使われることが多いが、大通りのイメージにはならない。|https://image01.seesaawiki.jp/n/h/nai_ch/j5FlUHE5AP.png|
