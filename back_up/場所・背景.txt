@@ -118,6 +118,11 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|mud swamp|泥沼||https://image01.seesaawiki.jp/n/h/nai_ch/sod1HWRpHO.png|
+|lake|湖|四方を陸地に囲まれた水たまりで池より大きなもの。swampより水深があり、面積も広いイメージになる。|https://image02.seesaawiki.jp/n/h/nai_ch/OMR7eG3dJx.png|
+|swamp|沼地|親水植物の生茂る自然の沼が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/y9jiAEs6Ob.png|
+|pool|プール|英語でpoolという場合、pondより小さい池を指すことがある。プロンプトで指定すると人間が泳ぐためのプール以外が描写されることはない。|https://image02.seesaawiki.jp/n/h/nai_ch/Fua80WbwTi.png|
+|pond|池|洋風の庭で見られる人工の小池が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/MOZM0zDdeI.png|
 |canal|運河|静水をたたえた水路が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/0LVKndpu0o.png|
 |cascade|滝|落差の小さい滝、規模の小さい滝が描写される傾向がある。|https://image01.seesaawiki.jp/n/h/nai_ch/abcN3VHRV0.png|
 |waterfall|滝|落差の大きい滝が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/0e3pKWKLAj.png|
