@@ -1,0 +1,48 @@
+* 概要
+細かい個別のエラーに対する解決法をまとめるページ
+
+まず見よう：[[エラーが出て困ったときは？]]
+
+* エラー一覧
+
+** SuperMergerを使ったLoRAマージ等でエラー
+
+2023年6月27日
+
+重要: LoRA の作成/抽出
+次のエラーに遭遇した場合、ディフューザーのバージョンが間違っています。0.14.0 にダウングレードします。ダウングレード方法は、環境によって異なります。自分で検索してください。
+
+AssertionError: duplicated lora name: lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_q
+
+ https://github.com/hako-mikan/sd-webui-supermerger
+
+↓
+
+>現時点で私が使用している回避策は、pip install "diffusers==0.14.0" を使用して 0.14.0 にダウングレードすることです。
+
+
+https://github.com/kohya-ss/sd-scripts/issues/402
+
+↓
+◆現在のWebui仮想環境にインストールされているパッケージを確認
+1. .\venv\Scripts\activate
+2. pip list
+3. diffusers               0.16.1
+
+↓
+◆ダウングレード
+=|(box=textarea)|
+pip install "diffusers==0.14.0"
+||=
+
+ログ
+  Attempting uninstall: diffusers
+    Found existing installation: diffusers 0.16.1
+    Uninstalling diffusers-0.16.1:
+      Successfully uninstalled diffusers-0.16.1
+Successfully installed diffusers-0.14.0
+
+↓
+◆LoRAマージのテスト
+LoRA weights are saved
+完了。

@@ -118,6 +118,12 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|pagoda|仏塔|仏舎利（または法舎利）を安置するために建造される宗教的建築物のこと。日本ではビルマ様式の仏塔をパゴダと呼ぶが、プロンプトで指定して出るのは五重塔みたいな建造物になる。屋根が何重になるかはランダム。|https://image02.seesaawiki.jp/n/h/nai_ch/etmSKGAo7q.png|
+|cave|洞窟|自然の洞窟が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/ANsNyoj4up.png|
+|grotto|坑道|自然にできた洞窟ではなく、人間が掘削した坑道のイメージになる。|https://image01.seesaawiki.jp/n/h/nai_ch/dI46Fvt3sg.png|
+|brick pavement|レンガ舗装|煉瓦を敷き詰めた舗装。|https://image02.seesaawiki.jp/n/h/nai_ch/V9VKrql6JE.png|
+|stone pavement|石張り舗装|道に天然石を隙間なく敷き詰めた舗装。|https://image02.seesaawiki.jp/n/h/nai_ch/w2XtTkCSY4.png|
+|pavement|舗装|アスファルト舗装が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/3AuoR5ag4d.png|
 |mud swamp|泥沼||https://image01.seesaawiki.jp/n/h/nai_ch/sod1HWRpHO.png|
 |lake|湖|四方を陸地に囲まれた水たまりで池より大きなもの。swampより水深があり、面積も広いイメージになる。|https://image02.seesaawiki.jp/n/h/nai_ch/OMR7eG3dJx.png|
 |swamp|沼地|親水植物の生茂る自然の沼が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/y9jiAEs6Ob.png|
