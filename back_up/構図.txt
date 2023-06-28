@@ -5,6 +5,7 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|multiple knights, knights in line,||整列した騎士|適度に強調を混ぜることで主題に生成するものの背景にすることも可能|https://image02.seesaawiki.jp/n/h/nai_ch/f6VeAgVmRx.png|
 ||||||
 |顔をわずかに左向き|||||
 |顔をわずかに左向き|||||

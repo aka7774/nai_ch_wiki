@@ -99,6 +99,8 @@ ADE20Kって規格で塗り絵するで
 // これは違う色分けや。下の2つとは違う。この画像の色が何準拠なのかは分からんで……
 -https://github.com/CSAILVision/sceneparsing/tree/master/visualizationCode/color150
 -ADE20Kのオブジェクト-RGB対応表スプレッドシート https://docs.google.com/spreadsheets/d/1se8YEtb2detS7OuPE86fXGyD269pMycAWe2mtKUj2W8/edit#gid=0
+　↑スプレッドシートの色分けで上手くいかない場合はこちらを参照　https://github.com/Mikubill/sd-webui-controlnet/discussions/503
+
 
 こんなん人力では無理やという場合は元画像（''実写が望ましい''）を用意してWebで
 https://huggingface.co/spaces/shi-labs/OneFormer
