@@ -37,6 +37,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|kiosk|自動券売機|大きなディスプレイのある自動発券装置が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/J54D16hV1T.png|
+|penthouse|ペントハウス|マンションの最上階にある高額で特別な仕様の部屋のこと。窓から街並みが見える部屋になる。|https://image02.seesaawiki.jp/n/h/nai_ch/dYBN20I8WJ.png|
+|conservatory|温室、サンルーム|greenhouseより装飾性の高い温室、建物から張り出したサンルームを指して使う。|https://image01.seesaawiki.jp/n/h/nai_ch/qgKpqNguZM.png|
 |orangery|オランジェリー|17世紀から19世紀にかけて、寒さに弱い果樹などを冬の間養生するために建てられた温室。大きな窓がある建物が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/7uhk2kO2sP.png https://image02.seesaawiki.jp/n/h/nai_ch/Z2rAg35uhK.png|
 |museum|美術館|博物館の意味もあるが、ほぼ美術館の描写になる。|https://image01.seesaawiki.jp/n/h/nai_ch/DHvaiJsNxA.png|
 |library|図書館|両サイドに書架がある空間が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/wRNaedkKYf.png|
@@ -118,6 +121,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|pergola|パーゴラ|蔓性植物を絡ませて育成するための棚を持つ造園工作物。日本だと藤棚がイメージしやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/f5hP8_QTAw.png|
+|porch|ポーチ|屋根付きの玄関のこと。張り出した屋根が柱で支えられた構造。|https://image01.seesaawiki.jp/n/h/nai_ch/3Zl4qHvOtr.png|
 |pagoda|仏塔|仏舎利（または法舎利）を安置するために建造される宗教的建築物のこと。日本ではビルマ様式の仏塔をパゴダと呼ぶが、プロンプトで指定して出るのは五重塔みたいな建造物になる。屋根が何重になるかはランダム。|https://image02.seesaawiki.jp/n/h/nai_ch/etmSKGAo7q.png|
 |cave|洞窟|自然の洞窟が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/ANsNyoj4up.png|
 |grotto|坑道|自然にできた洞窟ではなく、人間が掘削した坑道のイメージになる。|https://image01.seesaawiki.jp/n/h/nai_ch/dI46Fvt3sg.png|
