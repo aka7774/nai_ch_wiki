@@ -367,6 +367,23 @@ VRoid＋Unity/BlenderなりMMDなりコイカツなりで動画撮る→なん�
 
 https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/539
 
+*** lineart_anime+tileで大量bukkake
+=|PERL|
+冗談みたいな量のbukkakeをどんな構図でも安定して出すことに成功したんやで
+png info https://files.catbox.moe/kw9t5u.png
+https://files.catbox.moe/9a4wxk.jpg
+https://files.catbox.moe/cnau87.jpg
+https://files.catbox.moe/ml99vm.jpg
+
+ControlNetを2つ用意して、1つ目をlineart_anime, weight0.3くらい, Start0.1, Ending0.7くらいに設定してこのテクスチャを指定
+https://files.catbox.moe/87gvo4.png
+2つ目をtileにしてWeight1.0, Start0.0, Ending0.1くらいに設定してこっちのテクスチャを指定（↑のテクスチャでもいい）でOKや
+https://files.catbox.moe/teinah.png
+プロンプトでcumを意識させて、lineartとかで精液の輪郭を誘導して、tileとかで精液の色を埋め込んで、3重に指定するのがこだわりポイントや
+weightやstrengthを弄ればimg2imgやinpaintでも使えるから応用してみてや。テクスチャ変えれば血まみれとかも作れるかもしれへんし
+||=
+https://fate.5ch.net/test/read.cgi/liveuranus/1687953737/768
+
 **動画
 外人ニキやけど早送りでもだいたい分かる [[https://www.youtube.com/watch?v=ci7NfTsifd0>>>https://www.youtube.com/watch?v=ci7NfTsifd0]]
 

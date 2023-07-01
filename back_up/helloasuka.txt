@@ -1,44 +1,23 @@
 #contents
 
-* Hello Asuka
+* Hello Asuka Benchmark
 
 &size(22){AUTOMATIC1111版Stable Diffusion WebUI用}
-
-NovelAI のデフォルト設定での出力と一致しているかのテストを行います。
-
-以下の数値をUIに入力して「Generate」をクリックします。
-参考画像と出力画像が一致していたら環境構築が成功しています。
-→出力した画像が一致していない場合：一般的な "Hello Asuka" エラーのトラブルシューティング (Euler) - Imgur - https://imgur.com/a/DCYJCSX
-
-- サンプラー：Euler (Euler Aではない)
-- 28 Steps
-- CFG Scale：12
-- 解像度: 512x512
-- Seed: 2870305590
-- ポジティブプロンプト欄に「masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair」
-- ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name」
-- Clip skipを「2」にする ※古いWEBUIの場合は(Ignore last layers of CLIP modelを「2」にする
-- (Euler-Aも一致させたい場合、ETA Noise Seed Deltaを「31337」にする)
-
-** ※注意
-- プロンプトを正確にコピーしたことを再確認してください！
-- lowvram や xformers などの最適化を使用している場合、わずかな違いが見られる場合がありますが、それでも 95% 類似しているはずです。
-
-参考資料：GPU によるおおよその生成速度
-https://www.tomshardware.com/news/stable-diffusion-gpu-benchmarks
-
-* Hello Asuka Benchmark
+githubのディスカッションに貼られてたあのアスカを10枚生成させたときの所要時間から性能を測定します。
 
 あのアスカの画像をBatch count 10にして10枚一気に生成させて
 Generateを押して''画面にアスカが表視されるまで''を計測してください。100％になった瞬間ではありません。
 可能であれば自分で編集、ここのコメントやスレに報告していただけると助かります。
 
+参考資料：GPU によるおおよその生成速度
+https://www.tomshardware.com/news/stable-diffusion-gpu-benchmarks
+
 アスカ生成用パラメータ
 [+]
-- Settingタブ
--- Clip skip を2にする ※旧バージョンでは(Ignore last layers of CLIP model)を2に設定する。
--- eta (noise multiplier) for ancestral samplersを0.67
--- HypernetworkとLoRAは使用しない
+- Setting->Sampler parametersタブ
+-- Clip skipを2
+-- Eta for ancestral samplersを0.67
+-- Eta noise seed deltaを31337
 
 -txt2imgタブ
 --Sampling Steps: 28
@@ -55,7 +34,7 @@ Generateを押して''画面にアスカが表視されるまで''を計測し�
 [END]
 
 infotext
-下記のテキストをコピーして、txt2imgタブのPromptとNegative Promptが空欄の状態で右側にある左下矢印を押すことでも入力できます。
+下記のテキストをコピーして、txt2imgタブのPromptとNegative Promptが空欄の状態で右側にある左下矢印を押すことでも入力できます。これは機能しない場合があります。
 おそらく、Etaは自動的には反映されないので自分で設定する必要があります。Settingsタブ→Sampler Parametersセクション→eta (noise multiplier) for ancestral samplers
 =||
 masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair
@@ -64,12 +43,14 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 ||=
 
 [[特に3080,2060,1060,Mobile,そして3060の人はVRAM書いてくれると嬉しい>>https://www.nvidia.com/ja-jp/geforce/graphics-cards/compare/]]
+AMD勢はrocm版かdirectml版かによって速度が大きく変わるのでそれも書いてくれると嬉しい
 
 --時間(計測値)は''Generateを押してからアスカが表視されるまでの時間''で、Time takenはWebUI中央下部に表示される値です。
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/d9JQSJo0XK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/d9JQSJo0XK.png]]
 -- Time takenは秒単位で記入。不明な場合は時間(計測値)を転記して末尾に.をつけた。ソートすると速い順に並んで楽しい。
 
 ** 結果一覧
+
 
 Batch Count 10、Batch Size 1
 [+]
@@ -340,8 +321,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~サービス名|w(100px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken|オプション|備考|
-||4090|24GB|i9-13900k|||||
-||4090|||||||
+|Paperspace Gradient|NVIDIA A100|80GB|Xeon @3.20GHz 8C/8T||8.61|--opt-sdp-attention --opt-channelslast|39ドル/月プラン|
 |Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T||24.85|--opt-sdp-attention --opt-channelslast|8ドル/月プラン|
 |Google Colaboratory|NVIDIA Tesla T4|15GB|||44.93|--opt-sdp-no-mem-attention --opt-channelslast|conda Python 3.10.9torch 2.0.0xformersなし|
 |Google Colaboratory|NVIDIA Tesla T4|15GB|||51.66|xformers opt-channelslast|conda Python 3.9.12 ckptを38c1ebe3(Anyv3-fp16)にすると47.48|
