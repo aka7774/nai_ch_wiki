@@ -131,6 +131,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|micro shorts|マイクロショーツ|low-leg shortsと比較した時に若干短めのホットパンツが出ることが多いぐらいしか違いがない。|https://image01.seesaawiki.jp/n/h/nai_ch/2ISxgkQ1mX.png|
+|low-leg shorts|ローレグパンツ|nsfwでmidriff、hipboneと併用した方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/LXWxWGYkdG.png|
+|gym shorts|ジムショーツ|サイドにラインが入ったホットパンツになる。|https://image02.seesaawiki.jp/n/h/nai_ch/yFM8aecZdo.png|
+|dolphin shorts|ドルフィンパンツ|水着を得意とするスポーツ用品メーカー、ドルフィン社の製品のようなデザインの短めのショートパンツ。普通は部屋着として着用されることが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/ClbZJI6HvM.png|
 |cropped pants|クロップド・パンツ|丈が七分ほどで膝下の裾を切り落としたようなデザインのパンツ。|https://image02.seesaawiki.jp/n/h/nai_ch/gN8Ofq8TOZ.png|
 |bell bottoms pants|ベルボトム・パンツ|膝から下に広がりがあり、釣鐘（ベル）の形に似ているパンツ。|https://image01.seesaawiki.jp/n/h/nai_ch/zc24DdD321.png|
 |palazzo pants|パラッツォ・パンツ (スカーチョ、スカンツ)|広がりのある丈が長めのワイドパンツ。|https://image01.seesaawiki.jp/n/h/nai_ch/sEG1fns1b2.png|
@@ -140,7 +144,7 @@
 |ripped jeans|リップド・ジーンズ|太ももや膝周りに意図的に裂け目をいれたジーンズ。裂け目や穴があいた部分が強調されたものが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/H1GxL5ZMMs.png|
 |destroyed denim pants|デストロイド・ジーンズ|ダメージ・ジーンズとほぼ同意。ダメージ加工を施して使用感を加えたデニム・パンツだが、よりダメージ感が高い。|https://image02.seesaawiki.jp/n/h/nai_ch/1viLZOUNd1.png|
 |chino pants|チノ・パンツ (チノパン)||https://image02.seesaawiki.jp/n/h/nai_ch/7g33r5WUb5.png|
-|denim shorts|デニム地のショートパンツ|jeans hotpantsよりだとジーンズになる事が多いのでローライズなのは出やすい模様||
+|denim shorts|デニム地のショートパンツ|jeans hotpantsよりだとジーンズになる事が多いのでローライズなのは出やすい模様|https://image02.seesaawiki.jp/n/h/nai_ch/hjNxAkTYsj.png|
 |hotpants|ホットパンツ|普通に指定するとデニムホットパンツが出てくる率が高いので、それが嫌な方はNCにdenim指定をどうぞ|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA.png]]|
 |short shorts|→ホットパンツ|学習元データでの仕分けの関係上、ホットパンツと同義|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA.png]]|
 |jeans hotpants|ホットパンツ(ジーンズ)||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SoS3nLzpxA.png]]|
@@ -450,6 +454,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|pelvic curtain（nsfwでの効果）|前垂れ衣装|露出度を上げるためにはnsfwでmidriffやupper cleavageとか追加すると良い感じになる。|https://image01.seesaawiki.jp/n/h/nai_ch/OHawxHXimy.png https://image02.seesaawiki.jp/n/h/nai_ch/DRyy53Yfun.png|
+|pelvic curtain|前掛け|medieval townなど中世を示すプロンプト と組み合わせることでサンプルのような服装になる。|https://image02.seesaawiki.jp/n/h/nai_ch/nTGfABbm_U.png https://image02.seesaawiki.jp/n/h/nai_ch/XTiSu6vrYF.png|
 |white hood, white robe, mace|白魔導士風||https://image01.seesaawiki.jp/n/h/nai_ch/tbdxP3BcGJ.png https://image02.seesaawiki.jp/n/h/nai_ch/Ts3aqZQ728.png|
 |layered skirt armor|レイヤードスカート　アーマー|スカート系、下着系はほとんどが対象物＋鎧を纏った姿になる。鎧化はしないようだ。|https://image02.seesaawiki.jp/n/h/nai_ch/cQ86BLnW2d.png|
 |waist-cape armor|ウエストケープ　アーマー||https://image02.seesaawiki.jp/n/h/nai_ch/2XeWXQtu3X.png|

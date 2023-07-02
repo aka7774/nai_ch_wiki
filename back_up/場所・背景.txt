@@ -5,6 +5,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|brilliant diamond dust, morning, winter, forest, [[lens flare]], ||ダイヤモンドダスト|大気中の水蒸気が微細な氷となって浮遊・降下する気象現象。|https://image02.seesaawiki.jp/n/h/nai_ch/9SYajOTmlf.png https://image02.seesaawiki.jp/n/h/nai_ch/Vqo5rkmcdQ.png|
 |nuclear explosion, mushroom cloud, sonic boom,||核爆発||https://image02.seesaawiki.jp/n/h/nai_ch/qyyJ52A7vf.png https://image01.seesaawiki.jp/n/h/nai_ch/x0RPnmWICl.png|
 |in the square of the castle town, outdoor, in medieval main street,||ファンタジー風の街並み|中世ファンタジー風ではなく、少し古風な現代ヨーロッパ風っぽくなる事もある。~~城が教会くらいのサイズ感になる事も多い。~~適宜街に関する単語を追加・削除してカスタマイズ可能。|[[https://image01.seesaawiki.jp/n/h/nai_ch/63ymYGvozd.png]][[https://image02.seesaawiki.jp/n/h/nai_ch/w7LMpYA0lt.png]][[https://image01.seesaawiki.jp/n/h/nai_ch/XF77YUjoPQ.png]]|
 |&size(10){detailed,definition,best quality,super quality,high quality,high quality,highly quality,exquisite,intricate,super intricate,ultra intricate,ultimated intricate,ultimate intricate,extreme intricate,extremely intricate,hyper intricate,hyper extreme intricate,supreme intricate,supremed intricate,supreme quality,exquisitely quality,exquisitely detailed,exquisitely definition,super detailed,ultra detailed,extreme detailed,extremely detailed,ultimate detailed,hyper detailed,hyper extreme detailed,extreme hyper detailed,supreme detailed,hyper supreme detailed,ultra supreme detailed,minute details,minute detailed,minutely detailed,finely,super finely,ultimate finely,extreme finely,hyper finely,finely detailed,super finely detailed,ultra finely detailed,extreme finely detailed,extremely finely detailed,hyper finely detailed,ultimate finely detailed,hyper extreme finely detailed,super extreme finely detailed,super extremely finely detailed,super intricate finely detailed,super exquisite finely detailed,hyper exquisite finely detailed,hyper intricate finely detailed,ultra intricate finely detailed,extreme intricate finely detailed,ultimate intricate finely detailed,excellent intricate finely detailed,excellenty intricate finely detailed,amazing intricate finely detailed,super amazing detailed,ultra amazing detailed,extreme amazing detailed,extremely amazing detailed,ultimate amazing detailed,hyper amazing detailed,hyper extreme amazing detailed,ultimate highly definition,ultimate amazing definition,ultimate amazing accuracy definition,ultimate amazing accuracy detailed,super amazing accuracy details,hyper amazing accuracy definition,amazing intricate,amazing exquisite,wonderful definition,wonderful detailed,wonder detailed,super wonder detailed,ultra wonder detailed,ultimate wonder detailed,extreme wonder detailed,extremely wonder detailed,hyper wonder detailed,awesome,awesome detailed,	super awesome detailed,ultra awesome detailed,	ultimate awesome detailed,amazing awesome detailed,extremely awesome detailed,hyper awesome detailed,hyper extreme awesome detailed}||神聖そうな場所|detailed系プロンプト全つっぱ女の子を同時に出力すると高級感のある部屋にグレードダウンする|https://image01.seesaawiki.jp/n/h/nai_ch/NYkqeH9cBS.png|
@@ -228,6 +229,12 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|moment the avalanche occurred|雪崩||https://image02.seesaawiki.jp/n/h/nai_ch/xlVcmVgsLm.png|
+|drift ice|流氷||https://image01.seesaawiki.jp/n/h/nai_ch/OnJrQJbYi5.png|
+|frost covered trees|樹氷|0度以下に冷却された水の粒が冷えた樹木に付着して凍りつき成長した氷のこと。|https://image01.seesaawiki.jp/n/h/nai_ch/yaLg3MvS7U.png|
+|iceberg|氷山||https://image02.seesaawiki.jp/n/h/nai_ch/YwMxejoKJm.png|
+|Icicle, ice cave,|氷の洞窟||https://image02.seesaawiki.jp/n/h/nai_ch/JnAkxVUJXC.png|
+|glacier, cirque, alpin,|氷河|山などに積もった万年雪が重力により流動しているもの。|https://image02.seesaawiki.jp/n/h/nai_ch/BH_ccI0IPW.png|
 |supernova|超新星|恒星や白色矮星の大規模な爆発によって輝く天体。|https://image01.seesaawiki.jp/n/h/nai_ch/UFgw_Z6EHH.png|
 |earth (planet) |地球|地球が描写されるが、宇宙に描写されるとは限らない。|https://image02.seesaawiki.jp/n/h/nai_ch/G_ApHZBY_C.png|
 |mars (planet) |火星|何故か地球が描写されることがある。|https://image01.seesaawiki.jp/n/h/nai_ch/RWJ4wYPwNV.png|
