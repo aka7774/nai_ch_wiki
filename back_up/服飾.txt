@@ -70,6 +70,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|fleece jacket|フリース・ジャケット||https://image02.seesaawiki.jp/n/h/nai_ch/6OQ7dGbZuJ.png|
+|varsity jacket|スタジアム・ジャンパー（スタジャン）|スタジアム・ジャンパーは和製英語。|https://image02.seesaawiki.jp/n/h/nai_ch/p_sbwfsJR7.png|
 |white cook coat|コック・コート|洋食のシェフが着用する仕事着。色指定しないと白にならない。コック帽はcock chef hatで出る。|https://image01.seesaawiki.jp/n/h/nai_ch/0d_LD7oper.png|
 |waist-coat|腰の絞られた上着|胸元が強調されがち。waistcoatだと高確率で男性が出る|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aTbG2MBXF3-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aTbG2MBXF3.png]]|
 |bulletproof vest|弾帯付きのベスト|銃のマガジンやポケットのたくさんついてるベスト。転じてbullet単体だとこれをつけてるとおっぱいが強調されるので乳袋のある服になる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GWR1E4TEC0-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/GWR1E4TEC0.png]]|
@@ -94,6 +96,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|sweat shirt|スウェットシャツ|sweatに反応して汗をかいた描写になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/p60o7GTrcu.png|
 |rash guard shirt|ラッシュガード|マリンスポーツ愛好家が肌を保護するため、ウェットスーツと肌の摩擦を軽減するために着用するトップス。|https://image02.seesaawiki.jp/n/h/nai_ch/ZKIQ3N9T2W.png|
 |priest shirt|ローマンカラー・シャツ (クラージマン・シャツ)|カトリックの聖職者が着用する、単色（黒が多い）のクレリカル・カラーが付いたシャツ。|https://image02.seesaawiki.jp/n/h/nai_ch/ypN53SMicM.png|
 |sailor shirt|ミディ・ブラウス (セーラー・シャツ)|セーラー・カラーの付いたトップスの総称。|https://image01.seesaawiki.jp/n/h/nai_ch/wqyxVuWNDk.png|
@@ -131,6 +134,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|sweat pants|スウェットパンツ|シャツと同じく汗かき描写になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/rDKNrNsP94.png|
 |micro shorts|マイクロショーツ|low-leg shortsと比較した時に若干短めのホットパンツが出ることが多いぐらいしか違いがない。|https://image01.seesaawiki.jp/n/h/nai_ch/2ISxgkQ1mX.png|
 |low-leg shorts|ローレグパンツ|nsfwでmidriff、hipboneと併用した方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/LXWxWGYkdG.png|
 |gym shorts|ジムショーツ|サイドにラインが入ったホットパンツになる。|https://image02.seesaawiki.jp/n/h/nai_ch/yFM8aecZdo.png|
@@ -156,6 +160,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|overall skirt|サロペットスカート|オーバーオールと似ているが、背中に当て布が無くストラップがクロスしている点が異なる。|https://image02.seesaawiki.jp/n/h/nai_ch/EYF_rv7DXz.png|
 |crinoline|クリノリン|スカートを膨らませるために発明された鯨ひげや針金を輪状にして重ねた骨組みの下着。スカートやドレス系の単語と組み合わせるとスカートが膨らむ。|https://image01.seesaawiki.jp/n/h/nai_ch/iUIZ_8vUE4.png|
 |straight skirt|ストレート・スカート|ほぼプリーツスカートになる。|https://image01.seesaawiki.jp/n/h/nai_ch/SQCGJvyClb.png|
 |tight skirt|タイト・スカート|ウエストから裾にかけてぴったりと絞ったシルエットラインを持つスカート。|https://image01.seesaawiki.jp/n/h/nai_ch/RKkF3YC5YH.png|
@@ -243,6 +248,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|white gym shirt, buruma, |ブルマの体操着|buruma単独ではこちらが期待する物はほぼ出ない。white gym shirtと組み合わせると、ある程度安定して出る。|https://image01.seesaawiki.jp/n/h/nai_ch/Q6MvOMxKRC.png|
 |gakuran|学ラン|uniformなど付け足すと女子制服の要素が入ることが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/0WnXW4ReBh.png|
 |helmet, fireman uniform|消防士の制服|helmetを入れないと無帽になります。|https://image01.seesaawiki.jp/n/h/nai_ch/GRQPCH6gxu.png|
 |gym uniform|体操服|背景がフィットネスジムになってバーベルが出てくることがある。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5oF6sm1K8f.png)|
@@ -317,6 +323,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|sarong|パレオ|プロンプトで指定する場合はpareoよりこちらを使う方が良い。ほぼ確実に出る。|https://image02.seesaawiki.jp/n/h/nai_ch/o4xoQB6zk1.png|
 |competition swimsuit(bike shorts)|競技用水着|公式競技で着用する水着に近い感じになる。|https://image02.seesaawiki.jp/n/h/nai_ch/HhSVfilj8y.png|
 |competition swimsuit|競泳水着|swimsuitでも競泳水着になるが、こちらの方がより競技用水着らしく描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/9Y8NHfhWP4.png|
 |bikini skirt|ビキニ・スカート|アンダーがスカート（だいたいミニ）のビキニ。|https://image02.seesaawiki.jp/n/h/nai_ch/IdCB8mDlzA.png|
@@ -454,6 +461,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|cloak|マント|ヘソだしとかはきちんと指定する必要あり。|https://image01.seesaawiki.jp/n/h/nai_ch/6Id0OVFVbI.png https://image01.seesaawiki.jp/n/h/nai_ch/Z82Qm3ecYz.png|
 |pelvic curtain（nsfwでの効果）|前垂れ衣装|露出度を上げるためにはnsfwでmidriffやupper cleavageとか追加すると良い感じになる。|https://image01.seesaawiki.jp/n/h/nai_ch/OHawxHXimy.png https://image02.seesaawiki.jp/n/h/nai_ch/DRyy53Yfun.png|
 |pelvic curtain|前掛け|medieval townなど中世を示すプロンプト と組み合わせることでサンプルのような服装になる。|https://image02.seesaawiki.jp/n/h/nai_ch/nTGfABbm_U.png https://image02.seesaawiki.jp/n/h/nai_ch/XTiSu6vrYF.png|
 |white hood, white robe, mace|白魔導士風||https://image01.seesaawiki.jp/n/h/nai_ch/tbdxP3BcGJ.png https://image02.seesaawiki.jp/n/h/nai_ch/Ts3aqZQ728.png|
@@ -474,6 +482,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|casual|何気ない、軽快な|日常生活で着用する普段着になる。|https://image02.seesaawiki.jp/n/h/nai_ch/SpOGTz36kK.png|
+|formal|公式、正規|公式の場で着用する正装になる。|https://image02.seesaawiki.jp/n/h/nai_ch/41u0miaDEu.png|
 |funeral dress|喪服||https://image01.seesaawiki.jp/n/h/nai_ch/KyaUI9LTFQ.png|
 |undertaker|葬儀人|魔女帽子に銀髪が良く出る。witchより魔女っぽい。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jNUVSGpDmL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jNUVSGpDmL.png]]|
 |executioner|処刑人|黒系統でチョーカーやホルターネック多め|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Eu0Zuus399-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Eu0Zuus399.png]]|
