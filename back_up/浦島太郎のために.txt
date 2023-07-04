@@ -92,6 +92,37 @@ NVA部以降でスクリプト以外で勢いが前スレより3割以上程度�
 209…やたら態度のデカい初心者質問ニキ
 いかがでしたか？皆さん素晴らしい話題で盛り上がっていますね！
 
+* 2023-06-18 風船を持つLoRAが人気を博す
+
+[[なんJNVA部★223#969>https://fate.5ch.net/test/read.cgi/liveuranus/1686836346/969]]
+
+=|BOX|
+969 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9214-Qzqc)[sage] 投稿日：2023/06/18(日) 17:57:33.16 ID:Dvbj1tvg0
+風　船　注　意
+https://i.imgur.com/zGGB6a7.png
+そういえばガチ風船のLoRAって見かけたこと無いなと思って作ってみたやで
+||=
+&ref(https://i.imgur.com/zGGB6a7.png,300)
+
+[[なんJNVA部★224#46>https://fate.5ch.net/test/read.cgi/liveuranus/1687079922/46]]
+
+=|BOX|
+46 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9214-Qzqc)[sage] 投稿日：2023/06/18(日) 19:12:42.73 ID:Dvbj1tvg0
+SFW風船手持ちLoRAの配布するやで
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+holding_balloonに置いてあるで
+https://i.imgur.com/AJABFZa.png
+https://i.imgur.com/gSK79Ak.png
+https://i.imgur.com/6UHmBxH.png
+https://i.imgur.com/Xok79Iq.png
+
+NSFW風船出しながらSFW風船で空飛んでもええんやで
+お絵かきAIは自由なんだ
+||=
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+&ref(https://i.imgur.com/AJABFZa.png,300) &ref(https://i.imgur.com/gSK79Ak.png,300) &ref(https://i.imgur.com/6UHmBxH.png,300) &ref(https://i.imgur.com/Xok79Iq.png,300)
+
+
 * 2023-04-30 フラットカラーLoRAをネガに適用すると書き込みが増える
 なんJNVA部194の911が[[カラーをフラット化するLoRAを公開>https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test2]]、
 さらにこのLoRAを「マイナスで通常のプロンプトに適用すると精細な絵になる」ことを発表。
@@ -1014,6 +1045,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 
