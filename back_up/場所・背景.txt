@@ -38,6 +38,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|mosque|モスク|イスラムの礼拝堂。|https://image02.seesaawiki.jp/n/h/nai_ch/ReTtiZR5Of.png|
+|church|教会||https://image02.seesaawiki.jp/n/h/nai_ch/3qvhx2VyKT.png|
+|synagogue|シナゴーグ|ユダヤ教の会堂。キリスト教における教会の前身であり、ぱっと見は似ている。|https://image02.seesaawiki.jp/n/h/nai_ch/gbYaQ8Hbjn.png|
 |kiosk|自動券売機|大きなディスプレイのある自動発券装置が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/J54D16hV1T.png|
 |penthouse|ペントハウス|マンションの最上階にある高額で特別な仕様の部屋のこと。窓から街並みが見える部屋になる。|https://image02.seesaawiki.jp/n/h/nai_ch/dYBN20I8WJ.png|
 |conservatory|温室、サンルーム|greenhouseより装飾性の高い温室、建物から張り出したサンルームを指して使う。|https://image01.seesaawiki.jp/n/h/nai_ch/qgKpqNguZM.png|
@@ -122,6 +125,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|mosque, outdoor,|モスク|イスラムにおける礼拝堂。outdoorなど外観を描写するように指示しないと内部が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/5Xk28gvBM5.png|
+|roman temple|ローマ神殿|柱の構造などにギリシャ神殿と差異が見られる。|https://image02.seesaawiki.jp/n/h/nai_ch/hDiW87YU9R.png|
+|egyptian temple|エジプト神殿|ルクソール神殿に似た巨石の柱が林立する神殿になる。|https://image02.seesaawiki.jp/n/h/nai_ch/AD8boXOSQB.png|
+|greek temple|ギリシャ神殿|白亜のギリシャ神殿が描写される。遺跡的な描写になることもある。|https://image02.seesaawiki.jp/n/h/nai_ch/HpNseb2Tff.png|
 |pastoral|田園|欧米的な意味での田園、羊飼いが羊を放牧しているような場所が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/LnvBeWKdrW.png|
 |tunnel|地下道、隧道|grottoとは違い、人間の通行用に整備された地下道やトンネルのイメージになる。|https://image02.seesaawiki.jp/n/h/nai_ch/ZlgD5RBqsj.png|
 |pergola|パーゴラ|蔓性植物を絡ませて育成するための棚を持つ造園工作物。日本だと藤棚がイメージしやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/f5hP8_QTAw.png|
@@ -229,6 +236,20 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|tsunami|津波|大きな波として描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/4p83b6QpRP.png|
+|ripples|さざ波|水面に水滴が落ちた時に発生する波紋が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/Hc630uNz9v.png|
+|swells|うねり|波よりも水面自体が盛り上がった感じになる。UCにsurferが必須。無いとほぼ確実にサーファーが描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/fGLjXzzXYr.png|
+|wave|波|UCにsurferを入れない時にサーファーが描写されることがある。|https://image02.seesaawiki.jp/n/h/nai_ch/aQZBUZOwk1.png|
+|surf|磯波／陸地に打ち寄せる波|UCにsurferが必須。無いとほぼ確実にサーファーが描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/CutP_DHrSi.png|
+|flood|洪水|cityなど浸水する対象を追記することで、対象が浸水描写になる。|https://image02.seesaawiki.jp/n/h/nai_ch/j7fysbaf3Q.png https://image01.seesaawiki.jp/n/h/nai_ch/Q4kGwb1iTK.png|
+|debris flow|土石流|土砂や石が河川水と混合して河川や沢を流下する現象。|https://image02.seesaawiki.jp/n/h/nai_ch/fWVmypPMnl.png|
+|volcano plumes|噴煙|火口から噴き上がる噴煙が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/zYX6HWjdSj.png|
+|pyroclastic material／pyroclastic flow|火山砕屑物／火砕流|火砕流で焼き払われた黒焦げの大地が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/oK4rreBqPJ.png|
+|volcanic vent|噴火口||https://image02.seesaawiki.jp/n/h/nai_ch/fY4OBnhgbJ.png|
+|fissure eruption|割れ目噴火|地面に発生した割れ目からマグマなどが噴出する形態の噴火。|https://image02.seesaawiki.jp/n/h/nai_ch/pB_Oc8Y3te.png|
+|lava|溶岩|流れ落ちる溶岩とともに炎が描写されることがある。|https://image02.seesaawiki.jp/n/h/nai_ch/5caQya75wp.png|
+|volcano|火山|噴火している火山が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/1kPaBvPPBg.png|
+|eruption|噴火|ストロンボリ式の噴火が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/F4iDYrIMig.png|
 |moment the avalanche occurred|雪崩||https://image02.seesaawiki.jp/n/h/nai_ch/xlVcmVgsLm.png|
 |drift ice|流氷||https://image01.seesaawiki.jp/n/h/nai_ch/OnJrQJbYi5.png|
 |frost covered trees|樹氷|0度以下に冷却された水の粒が冷えた樹木に付着して凍りつき成長した氷のこと。|https://image01.seesaawiki.jp/n/h/nai_ch/yaLg3MvS7U.png|
@@ -351,6 +372,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|Angkor Wat|アンコール・ワット|カンボジアの上座部仏教寺院。世界文化遺産。17世紀前半の朱印船貿易が盛んな時期に日本からも多くの巡礼者が訪れており、その存在が知られていた。当時の日本人はここを祇園精舎（釈迦在世時に存在した５つの寺院の１つ）だと誤って認識していた。|https://image01.seesaawiki.jp/n/h/nai_ch/_QAqg8A2ID.png|
 |rialto bridge|リアルト橋|イタリアのヴェネチアにある石造の単独アーチ橋。1591年の完成当時、その独創的な形状から将来的に崩壊するだろうと思われていた。大まかな形しか再現されない。|https://image01.seesaawiki.jp/n/h/nai_ch/62cLYUX0dA.png|
 |Ponte Vecchio|ヴェッキオ橋|イタリアのフィレンツエにある石造の三連アーチ橋。1345年に建造されたフィレンツエで最も古い橋である。橋の上に店が立ち並ぶ独特の景観はあまり再現されない。|https://image01.seesaawiki.jp/n/h/nai_ch/ZRGTMWitUA.png|
 |tower bridge|タワーブリッジ|ロンドンのテムズ川に架かる跳開橋。橋の上流側にある港への通行を確保するため、下段の車道部が船舶の通行時に跳ね上がる構造になっている。民謡で知られるロンドン橋とは別の橋である。|https://image01.seesaawiki.jp/n/h/nai_ch/eVx3jGWdwp.png|
