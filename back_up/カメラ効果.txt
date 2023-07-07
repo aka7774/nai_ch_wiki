@@ -96,14 +96,16 @@ ISO感度も弄れるんか？
 
 * 単語集
 {| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|w(200px):ネガティブプロンプト|意味|備考|サンプル|
-|motion blur||被写体ブレ（モーションブラー）|動いている対象をカメラで撮影する時に生じるブレ。被写体ブレを発生させたい動作、背景に隣接して配置すると対象がブレて描写される。pan focusをつけると効果アップ？|https://image02.seesaawiki.jp/n/h/nai_ch/Y49HsIg20n.png https://image01.seesaawiki.jp/n/h/nai_ch/tU20W1YWyU.png|
-|lens flare||レンズフレア|画角内に極めて明るい光源が存在する場合に生じる、暗部への光の漏れ。つまり、光源の周りが白くなって放射状に線が出るやつのこと。ゴースト(レンズの反射による緑や紫の丸い像)も同時に生成される。|https://image02.seesaawiki.jp/n/h/nai_ch/d0zux2xsKX.png|
-|diffraction spikes||回折スパイク|光の点から放射する複数のスパイク状の光。|https://image02.seesaawiki.jp/n/h/nai_ch/qRTPJJj5Ep.png|
-|chromatic aberration||色収差|%%写真の隅が赤や青ににじむやつ%%　光は様々な色の組み合わせで出来ているが、屈折率は色ごとに異なっている。そのため、カメラレンズを通った光が結像する際に１点に集まらずに結像位置がずれてしまう。この現象により像の縁に色の滲みが発生する。赤にピントが合えば青が滲み、青にピントが合えば赤が滲む。|https://image02.seesaawiki.jp/n/h/nai_ch/C8rgCXfPBL.png|
-|bokeh||ボケ|日本語のボケが語源。夜景と合わせると幻想的な雰囲気になる。|https://image02.seesaawiki.jp/n/h/nai_ch/skLkr61slX.png|
-|depth of field||被写界深度|背景をぼかす。bokehのような玉ボケにはならない|https://image01.seesaawiki.jp/n/h/nai_ch/SwHBvYT1lb.png|
-|portraitなし||カメラ呪文はportraitを入れると効果が強くなる|サルベージしました|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Q7A6SSX1CZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Q7A6SSX1CZ.png]]|
-|portraitあり||カメラ呪文はportraitを入れると効果が強くなる||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZC5nMzmGmJ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ZC5nMzmGmJ.png]]|
-|lens 135mm f1.8||レンズのスペック|これ単体では効果が薄い。絞りの値はほとんど効果なし||
+|~w(300px):プロンプト|意味|備考|サンプル|
+|vignetting|ヴィネット(周辺減光)|画面隅が暗くなる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JpN539JMuC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/JpN539JMuC.png]]|
+|lens distortion|歪曲収差|レンズの歪みでぼやけたりひずんだりする現象。効果はいまいち||
+|motion blur|被写体ブレ（モーションブラー）|動いている対象をカメラで撮影する時に生じるブレ。被写体ブレを発生させたい動作、背景に隣接して配置すると対象がブレて描写される。pan focusをつけると効果アップ？|https://image02.seesaawiki.jp/n/h/nai_ch/Y49HsIg20n.png https://image01.seesaawiki.jp/n/h/nai_ch/tU20W1YWyU.png|
+|lens flare|レンズフレア|画角内に極めて明るい光源が存在する場合に生じる、暗部への光の漏れ。つまり、光源の周りが白くなって放射状に線が出るやつのこと。ゴースト(レンズ自体の反射による緑や紫の丸い像)も同時に生成される。|https://image02.seesaawiki.jp/n/h/nai_ch/d0zux2xsKX.png|
+|diffraction spikes|回折スパイク|光の点から放射する複数のスパイク状の光。|https://image02.seesaawiki.jp/n/h/nai_ch/qRTPJJj5Ep.png|
+|chromatic aberration|色収差|光は様々な色の組み合わせで出来ているが、屈折率は色ごとに異なっている。そのため、カメラレンズを通った光が結像する際に１点に集まらずに結像位置がずれてしまう。この現象により像の縁に色の滲みが発生する。赤にピントが合えば青が滲み、青にピントが合えば赤が滲む。画像の隅に出やすい|https://image02.seesaawiki.jp/n/h/nai_ch/C8rgCXfPBL.png|
+|bokeh|ボケ|日本語のボケが語源。夜景と合わせると幻想的な雰囲気になる。|https://image02.seesaawiki.jp/n/h/nai_ch/skLkr61slX.png|
+|depth of field|被写界深度|背景をぼかす。bokehのような玉ボケにはならない|https://image01.seesaawiki.jp/n/h/nai_ch/SwHBvYT1lb.png|
+|portraitなし|カメラ呪文はportraitを入れると効果が強くなる|サルベージしました|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Q7A6SSX1CZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Q7A6SSX1CZ.png]]|
+|portraitあり|カメラ呪文はportraitを入れると効果が強くなる||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZC5nMzmGmJ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ZC5nMzmGmJ.png]]|
+|lens 135mm f1.8|レンズのスペック|これ単体では効果が薄い。絞りの値はほとんど効果なし||
 |}

@@ -27,6 +27,16 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|toon rendering|トゥーン・レンダリング|セルシェーディングと同様な意味で使われることが多い。セルシェーディングのようなアニメ塗りな感じにならない。|https://image01.seesaawiki.jp/n/h/nai_ch/mAbi_y2xpf.png https://image01.seesaawiki.jp/n/h/nai_ch/82uN_iW5mB.png|
+|cel-shading|セルシェーディング|3DCGをセル画調に見せるレンダリング技法。|https://image01.seesaawiki.jp/n/h/nai_ch/dS3b2Yn2uC.png https://image02.seesaawiki.jp/n/h/nai_ch/qoRxLLJhO0.png|
+|Unity|ユニティ|unreal engineと勢力を二分するゲームエンジン。|https://image02.seesaawiki.jp/n/h/nai_ch/9N9tZclIwX.png https://image01.seesaawiki.jp/n/h/nai_ch/JYTecIOErH.png|
+|Maya, arnold, |マヤのレンダラー（アーノルド）|ArnoldはMayaの標準レンダラーであり、「SolidAngle」と「SonyPicturesImageworks」によって共同開発された。|https://image01.seesaawiki.jp/n/h/nai_ch/5vf0DqaAxB.png https://image01.seesaawiki.jp/n/h/nai_ch/SYihXghDIJ.png|
+|blender, eevee, |ブレンダー|Eeveeはブレンダー標準搭載のレンダリングエンジンで軽い動作を特徴とする。動作を軽くするためリアル度はほどほどに抑えられる。|https://image02.seesaawiki.jp/n/h/nai_ch/AzwPkVMgRy.png https://image02.seesaawiki.jp/n/h/nai_ch/gTU5FgQLaO.png|
+|blender, cycles, |ブレンダー|ブレンダーはフリーのオープンソース３Dグラフィックソフト。Cyclesは標準搭載のレンダリングエンジンでフォトリアルな絵を得意とする。反面、緻密な計算を行うため動作が重くなる。|https://image02.seesaawiki.jp/n/h/nai_ch/OQWBKNMx1q.png https://image01.seesaawiki.jp/n/h/nai_ch/uj2DygclNM.png|
+|renderman|レンダーマン|ピクサー・アニメーション・スタジオによって開発されたレンダリング用のソフトの一群。|https://image01.seesaawiki.jp/n/h/nai_ch/nBkwX1ThIF.png https://image02.seesaawiki.jp/n/h/nai_ch/rLlkBs36a2.png|
+|octane render|オクタン・レンダー|アメリカのソフトウェアデベロッパー「OTOY」が販売しているサードパーティGPUレンダラー。|https://image02.seesaawiki.jp/n/h/nai_ch/u8OcgoJioS.png https://image01.seesaawiki.jp/n/h/nai_ch/vDkbSEKaty.png|
+|unreal engine 5|アンリアル・エンジン５|FortniteをリリースしているEpic Gamesによって開発されているゲームエンジン。|https://image01.seesaawiki.jp/n/h/nai_ch/Aef8DHotXf.png https://image02.seesaawiki.jp/n/h/nai_ch/izeLG_Rn51.png|
+|2d cel anime|セルアニメ|セルアニメ調に陰影を付けたフラットな絵になる。|https://image01.seesaawiki.jp/n/h/nai_ch/hpo_C7YQ0Q.png https://image02.seesaawiki.jp/n/h/nai_ch/5rd6j1bT2a.png|
 |monochrome, black and salmon(color) printing|２色刷印刷|指定した２色で構成された絵になる。背景、キャラの髪色などにどの色を当てるかは指定する必要がある。その昔、フルカラー印刷のコストが高かった時代の漫画では２色印刷カラーがよくあった。|https://image01.seesaawiki.jp/n/h/nai_ch/W3XxpKKzGb.png https://image01.seesaawiki.jp/n/h/nai_ch/FzRey1u4Ue.png|
 |monochrome two-tone|モノクロ二階調|画像を白と黒の2色(2階調)のみで表現したもの。|https://image02.seesaawiki.jp/n/h/nai_ch/B90POJGFNF.png https://image02.seesaawiki.jp/n/h/nai_ch/NYHS1Hza3I.png|
 |ancient fresco(medium)|古代のフレスコ画|フレスコ画の前にキャラが立っている描写になることがほとんどだが、たまにキャラがフレスコ画と一体化することがある。|https://image01.seesaawiki.jp/n/h/nai_ch/SNK7sTjj33.png https://image02.seesaawiki.jp/n/h/nai_ch/F65f11b0Nn.png|

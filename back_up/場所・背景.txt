@@ -38,8 +38,14 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|cathedral|カテドラル（司教座教会）|カソリックの教区を管轄する司教の椅子がある聖堂。|https://image01.seesaawiki.jp/n/h/nai_ch/6kFBmy654o.png|
+|basilica|バシリカ（大聖堂）|カソリックにおいてローマ教皇より特権を与えられた教会をいう。司教座教会以外で、比肩する規模の格式を持つ聖堂。|https://image01.seesaawiki.jp/n/h/nai_ch/MktwHbRPtt.png|
+|apse|アプス|キリスト教会で最も神聖な場所。祭壇の後背部。俯瞰で建物を見た時に十字架の頭となる部分にある半円形のドーム型をした空間。|https://image02.seesaawiki.jp/n/h/nai_ch/7exxuILLkk.png|
+|coffin|棺|棺のような四角い箱が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/WpHnGMSQcp.png https://image01.seesaawiki.jp/n/h/nai_ch/Jy_7u9EmPN.png|
+|altar|祭壇|キリスト教会の祭壇が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/d4G8e7Pi84.png|
+|shrine|聖堂・霊廟|崇拝する対象が安置された祭壇、祠が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/6x31tYe7xD.png https://image02.seesaawiki.jp/n/h/nai_ch/MhsbjvL1TQ.png|
 |mosque|モスク|イスラムの礼拝堂。|https://image02.seesaawiki.jp/n/h/nai_ch/ReTtiZR5Of.png|
-|church|教会||https://image02.seesaawiki.jp/n/h/nai_ch/3qvhx2VyKT.png|
+|church/chapel|教会／小礼拝堂|キリスト教においては規模の小さい礼拝堂を指して使う言葉。|https://image02.seesaawiki.jp/n/h/nai_ch/3qvhx2VyKT.png|
 |synagogue|シナゴーグ|ユダヤ教の会堂。キリスト教における教会の前身であり、ぱっと見は似ている。|https://image02.seesaawiki.jp/n/h/nai_ch/gbYaQ8Hbjn.png|
 |kiosk|自動券売機|大きなディスプレイのある自動発券装置が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/J54D16hV1T.png|
 |penthouse|ペントハウス|マンションの最上階にある高額で特別な仕様の部屋のこと。窓から街並みが見える部屋になる。|https://image02.seesaawiki.jp/n/h/nai_ch/dYBN20I8WJ.png|
@@ -125,6 +131,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|chinese temple|中国の寺|細かな意匠に中国らしさが表れる。日本の寺より派手なイメージになる。|https://image02.seesaawiki.jp/n/h/nai_ch/l0ATBoOdf4.png https://image02.seesaawiki.jp/n/h/nai_ch/PRBEuqnWuc.png|
+|Japanese temple|日本の寺|templeは祈りを捧げる場所のこと（仏教の寺に限定されない）。柱が朱塗りになりがち。|https://image01.seesaawiki.jp/n/h/nai_ch/2jr45uMFvV.png https://image01.seesaawiki.jp/n/h/nai_ch/EPL0ZdMiDd.png|
+|Japanese shrine|神社|shrineは神聖なものを祀る場所のことをいう（日本の神社に限定されない）。一般的にイメージされる神社にはなるが、しめ縄など描写されないものがある。|https://image02.seesaawiki.jp/n/h/nai_ch/RFKqrPuzZ4.png|
 |mosque, outdoor,|モスク|イスラムにおける礼拝堂。outdoorなど外観を描写するように指示しないと内部が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/5Xk28gvBM5.png|
 |roman temple|ローマ神殿|柱の構造などにギリシャ神殿と差異が見られる。|https://image02.seesaawiki.jp/n/h/nai_ch/hDiW87YU9R.png|
 |egyptian temple|エジプト神殿|ルクソール神殿に似た巨石の柱が林立する神殿になる。|https://image02.seesaawiki.jp/n/h/nai_ch/AD8boXOSQB.png|
@@ -372,6 +381,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|golden temple|ハリマンディル・サーヒブ（黄金寺院）|インドにあるシク教の総本山。四角い池の中心部に黄金の寺院が浮かぶように建っている。|https://image02.seesaawiki.jp/n/h/nai_ch/rN7L7ehKF3.png|
+|prambanan temple|プランバナン寺院|インドネシアのジャワ島中心部にあるヒンドゥー教の寺院遺跡。周辺の寺院遺跡とあわせてプランバナン寺院群として世界文化遺産に登録されている。|https://image02.seesaawiki.jp/n/h/nai_ch/jI77eOUS8z.png|
+|temple of heaven|天壇|中国の北京にある世界文化遺産。中華文明圏で至高の存在とされる天に対して、天命を受けた天子（皇帝）が祭祀を行なった神聖な場所。現在の建物は明の永楽帝が建立したとされる。|https://image02.seesaawiki.jp/n/h/nai_ch/PFI6zBNxL3.png|
+|shwedagon pagoda|シュエダゴン・パゴダ|ミャンマーのヤンゴン中心部にある仏教寺院。仏陀の聖髪が納められている重要な聖地。100mある黄金の仏塔の頂上には76カラットのダイヤが取り付けられている。|https://image02.seesaawiki.jp/n/h/nai_ch/lDVuzXv2yf.png|
 |sagrada familia, outdoor,|サグラダ・ファミリア（聖家族教会）|スペインのカタルーニャ州バルセロナに建造されているカソリックのバシリカ。アントニオ・ガウディが設計し、1882年に着工してから141年経つ現在も完成していない（2026年には完成するらしい）。|https://image02.seesaawiki.jp/n/h/nai_ch/kMnNKIq4LX.png|
 |borobudur temple|ボロブドゥール寺院|インドネシアのジャワ島にある世界最大の仏教寺院遺跡。世界文化遺産。寺院であるが内部空間は存在しない。ストゥーパと呼ばれる72基の独特な形状の仏塔が特徴的。|https://image02.seesaawiki.jp/n/h/nai_ch/4uMcmvbIzn.png|
 |Angkor Wat|アンコール・ワット|カンボジアの上座部仏教寺院。世界文化遺産。17世紀前半の朱印船貿易が盛んな時期に日本からも多くの巡礼者が訪れており、その存在が知られていた。当時の日本人はここを祇園精舎（釈迦在世時に存在した５つの寺院の１つ）だと誤って認識していた。|https://image01.seesaawiki.jp/n/h/nai_ch/_QAqg8A2ID.png|
