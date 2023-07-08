@@ -27,7 +27,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|toon rendering|トゥーン・レンダリング|セルシェーディングと同様な意味で使われることが多い。セルシェーディングのようなアニメ塗りな感じにならない。|https://image01.seesaawiki.jp/n/h/nai_ch/mAbi_y2xpf.png https://image01.seesaawiki.jp/n/h/nai_ch/82uN_iW5mB.png|
+|path tracing|パストレーシング|レイトレーシングの発展技法で、光線の反射方向を確率で決めることで拡散反射を考慮している。間接光の表現が可能である。|https://image02.seesaawiki.jp/n/h/nai_ch/c4KQZ050Xc.png https://image02.seesaawiki.jp/n/h/nai_ch/uAeAkdsntX.png|
+|ray tracing|レイトレーシング|視点に入る光を視点から逆算することで、視点に映る像をシミュレーションする技法。拡散反射は考慮されないため、間接光の表現ができない。|https://image01.seesaawiki.jp/n/h/nai_ch/qBK_Rfp9My.png https://image01.seesaawiki.jp/n/h/nai_ch/Nw6NicY8F7.png|
+|toon rendering|トゥーン・レンダリング|セルシェーディングと同様な意味で使われることが多い。セルシェーディングのようなアニメ塗りにならない。|https://image01.seesaawiki.jp/n/h/nai_ch/mAbi_y2xpf.png https://image01.seesaawiki.jp/n/h/nai_ch/82uN_iW5mB.png|
 |cel-shading|セルシェーディング|3DCGをセル画調に見せるレンダリング技法。|https://image01.seesaawiki.jp/n/h/nai_ch/dS3b2Yn2uC.png https://image02.seesaawiki.jp/n/h/nai_ch/qoRxLLJhO0.png|
 |Unity|ユニティ|unreal engineと勢力を二分するゲームエンジン。|https://image02.seesaawiki.jp/n/h/nai_ch/9N9tZclIwX.png https://image01.seesaawiki.jp/n/h/nai_ch/JYTecIOErH.png|
 |Maya, arnold, |マヤのレンダラー（アーノルド）|ArnoldはMayaの標準レンダラーであり、「SolidAngle」と「SonyPicturesImageworks」によって共同開発された。|https://image01.seesaawiki.jp/n/h/nai_ch/5vf0DqaAxB.png https://image01.seesaawiki.jp/n/h/nai_ch/SYihXghDIJ.png|

@@ -389,6 +389,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|wellies|長靴|welliesはイギリス英語。rain boots（アメリカ英語）よりも再現度が高い。NovelAIは英国に関することはやたらと再現度が高い傾向がある。|https://image02.seesaawiki.jp/n/h/nai_ch/wjhHlPwULA.png|
 |combat boots|コンバット・ブーツ|脹脛付近まであるハイカットと靴紐が特徴のブーツ。軍隊の戦闘用ブーツとして用いられたためこの名称で呼ばれる。|https://image02.seesaawiki.jp/n/h/nai_ch/n5QBnRYS0C.png|
 |ankle boots|アンクル・ブーツ|くるぶしあたり、あるいはそれよりやや上までの短い丈のブーツ。|https://image01.seesaawiki.jp/n/h/nai_ch/cFII7v8NOk.png|
 |mary janes|ストラップ・シューズ|ストラップとバックルで足首や甲を固定する靴のデザインの総称。|https://image02.seesaawiki.jp/n/h/nai_ch/dvn5Dr9Gzm.png|
@@ -497,6 +498,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|umbrella|雨傘||https://image02.seesaawiki.jp/n/h/nai_ch/auUCaXeqjr.png|
 |exercise ball|バランスボール|トレーニング用のサイズの大きいゴムボール。|https://image02.seesaawiki.jp/n/h/nai_ch/vG2QnJx0fT.png|
 |harness|ハーネス||https://image02.seesaawiki.jp/n/h/nai_ch/tjSbgVV6u_.png|
 |A dressed as B |AにBの服を着せる|今回、{{({{asuna (sao)}} dressed as megumin)}}で実施。特定キャラの服を別のキャラクターに着せる事が可能。今回、知名度が高そうな「SAO」のアスナに「このすば」のめぐみんの服を着せてみた。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/U42H4j3hmY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/U42H4j3hmY.png]]|
