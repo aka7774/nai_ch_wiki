@@ -41,11 +41,11 @@ RTX(2000〜4000番台)で高速化するらしい。
 set PYTHON=
 set GIT=
 set COMMANDLINE_ARGS=--opt-sdp-no-mem-attention --opt-channelslast
-set TORCH_COMMAND=pip install torch==2.0.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
+set TORCH_COMMAND=pip install torch==2.0.1 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
 
 call webui.bat
 ||=
-5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.0+cu118"と記載があれば成功
+5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.1+cu118"と記載があれば成功
 
 *** プレビュー版のインストール方法
 あらかじめ古いバージョンをアンインストールしてから、venv内で以下のコマンドを実行する。
