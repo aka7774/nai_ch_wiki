@@ -883,6 +883,9 @@ https://github.com/p1atdev/LECO
 プロンプトから特定の概念を消したり強くしたりできる。
 例えば、mikoが原神のyae mikoに汚染されているのを取り除くといったことができる。
 
+** 注意
+学習時の精度のbfloat16はNVIDIAのAmpere世代(RTX30)以降のGPUのみ使用可能。それ以外のGPUではfloat32推奨。
+
 * メモ / Tips
 
 ** 途中から学習を再開したい
