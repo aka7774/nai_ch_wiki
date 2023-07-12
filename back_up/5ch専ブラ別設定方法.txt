@@ -1,0 +1,164 @@
+（''浦島太郎のために ＞ 2023-07-11 スレを読み書きするさまざまな方法が提案される''　を新規ページへ移行・整形したものです）
+
+前日の騒動を経て、未明のうちに5chをWebブラウザ、PCの専ブラ、スマホの専ブラで閲覧・書き込みする方法が提案された。
+=|BOX|
+5chの専ブラ・APIを取り巻く状況は今後も変化する可能性が高いため、このページに載っている情報が古くなっている場合があります。
+常に専門板の各専ブラスレで最新の情報を手に入れるように心がけましょう。
+
+ソフトウェア板
+https://egg.5ch.net/software/
+||=
+#contents
+* Webブラウザ（Chrome）
+Webブラウザでの閲覧時に見やすくする拡張機能やスタイルシートを導入する。
+=|BOX|
+なんJNVA部★233（https://fate.5ch.net/test/read.cgi/liveuranus/1688887977/711）
+
+711 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ d70d-knyK)[] 投稿日：2023/07/11(火) 00:57:12.46 ID:1Xnph/oM0
+公開した
+
+使い方
+5ch style formatをインストールする
+https://chrome.google.com/webstore/detail/5ch-style-format/aidnencnedgaflbgacmcbcokcpancdac
+tampermonkeyなどユーザースクリプトが動かせる拡張機能をインストールする
+https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
+greasyforkから5ch style formatのポップアップ表示をサムネ表示に書き換えるスクリプトをインストールする
+https://greasyfork.org/ja/scripts/470545-5ch-style-thumbnailer
+||=
+
+イメージ
+&ref(https://imgur.com/HeKBwhE.png,300)
+
+* Jane Style（PC版）
+起動する前に「account.cfg」を削除する、という対処法が見つかる。
+=|BOX|
+265 名前：ジェーン使いの名無しさん[] 投稿日：2023/07/11(火) 02:50:47 ID:CLjNQ34E0 [14/17]
+新規にtxtファイルを作成
+以下の四行をコピペして保存
+@echo off
+del /Q account.cfg
+cmd.exe /c start Jane2ch.exe
+Exit
+
+ファイル名を　山下(笑).bat　に変更　※ファイル名は何でもいいが後で分かりやすくするため
+この山下(笑).batをJaneStyaleの入っているフォルダに移動
+さらにこの「batファイルへのショートカット」を任意の場所へ作成
+これでJaneの起動前にaccount.cfgが毎回削除される
+※Janeファイル名指定をフルパスにしてないのは人によってインスコ先が異なる可能性があるため
+これ大事
+||=
+
+Jane2ch.exeをバイナリエディタで直接編集する方法が紹介される。
+
+【StableDiffusion】AIｴﾛ画像情報交換28 
+https://mercury.bbspink.com/test/read.cgi/erocg/1688731408/178
+
+=|BOX|
+178 名前：...φ(・ω・`c⌒っ (ﾜｯﾁｮｲ cf7a-kkOg)[sage] 投稿日：2023/07/11(火) 21:23:51.68 ID:g9+/198I0
+【JaneStyle4.23改造まとめ】
+バイナリエディタを管理者権限で起動してJane2ch.exeを開く
+
+account.cfg内のパラメータ「Mode=」を参照しないようにする
+0029A7DC 04→01
+
+アプデ警告消す
+001FD398 75→EB
+
+広告なくす
+0020B3F8 53→C3
+||=
+
+【StableDiffusion】AI画像生成技術24【NovelAI】 
+https://mevius.5ch.net/test/read.cgi/cg/1688259397/491
+
+=|BOX|
+491 名前：名無しさん＠お腹いっぱい。 (ﾜｯﾁｮｲ d71e-2BtO)[sage] 投稿日：2023/07/12(水) 14:57:33.16 ID:JyX7sgLq0
+>>484には続きがあるんよ
+
+[4.23]janesoft.neetへのアクセス禁止+API強制無効化
+001FC8EC 29→01
+001FD264 29→01
+001FD2D1 0F859D000000→909090909090
+001FD338 95→94
+
+今はやらなくとも良いんだけど、
+そのうちに山下が何か仕掛けてきそうなので、その為の対策
+理由は以下を読んでね
+Jane Style (Windows版) Part235
+https://egg.5ch.net/test/read.cgi/software/1689041238/216,444
+||=
+
+
+* Siki
+汎用掲示板ビューア Siki（https://sikiapp.net/）
+PC用。5chやふたば、4chanなどの掲示板をSikiだけでそのまま見られる。
+=|BOX|
+なんJNVA部★234 
+https://fate.5ch.net/test/read.cgi/liveuranus/1689057599/7
+
+7 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9fc5-0W2a)[sage] 投稿日：2023/07/11(火) 15:47:31.74 ID:OfHgJgFx0
+>>4
+sikiでURLはろうとすると書けないンゴ
+↓
+現状nuts(APIプラグイン)入れないとURL貼れない
+https://egg.5ch.net/test/read.cgi/software/1686475201/29
+----
+↓
+nuts 1.11
+axfc.net/u/4066419
+
+新しいread.cgiへ対応
+||=
+* chmate
+なんJNVA部★防弾U（https://sannan.nl/test/read.cgi/liveuranus/1679606639/116-117）
+=|BOX|
+116 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった：2023/07/11(火) 04:10:18.60 ID:zMgMTW6Z0 
+【新API再稼働までの暫定】chmateで5ch.netのスレを見る方法
+
+1. APIMateRをインストール: https://wangel.aioilight.space/?p=699
+2. スマホ本体の設定
+アプリ→apimater→標準のアプリとして設定→対応するアドレス→5ch.net　が入っていることを確認
+3. mateの右下の3点マークから
+設定→実験的→検索に使うURL
+に↓入れる
+APIMateR apimater:https://{$host}/test/read.cgi/{$bbs}/{$key}/{$host[match:\.([25]ch\.net|bbspink\.com)$]}
+||=
+&ref(https://i.imgur.com/BbJkhqs.png,300)
+
+&ref(https://i.imgur.com/RyxiAT2.png,300)
+=|BOX|
+スレを開き↑のAPIMateRの欄をクリックしてスレッド更新
+||=
+=|BOX|
+117 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった：2023/07/11(火) 04:48:14.29 ID:591315dG0 
+もうちょい簡単な方法
+スレタイまではmateで見れる
+コピーでスレのURL取る
+右下&#65049;メニューから、URLを指定して開くを選ぶ
+さっきのURLがすでに入ってるので
+URLの5chを5Chに直す
+これで開く
+||=
+
+* twinkle
+2023/7/12 11時ごろ
+twinkleアップデートあり。アップデート後は下の外部板追加を行うと読み書きが可能になるとのこと（未検証）
+
+【速報】チンクル、アップデートしたら書き込めるぞ！！！
+https://nova.5ch.net/test/read.cgi/livegalileo/1689126676/
+=|BOX|
+0875今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 17c3-ZVLm)
+2023/07/11(火) 10:50:00.19ID:CRHb+zXb0
+>>872
+チンクルからみられるようにはなるやで
+外部板管理で
+||=
+&ref(https://i.imgur.com/QqVIv0v.png,300)
+=|BOX|
+こうや
+||=
+&ref(https://i.imgur.com/ubzKCF8.png,300)
+* mae2ch
+iOS向け。
+Talk対応を宣言しているが、実際には5ch対応のアプデを7月11日に入れる2枚舌外交。
+外部板の追加→2ch形式→bbsmenu形式→https://menu.5ch.net/bbsmenu.htmlで完了する。

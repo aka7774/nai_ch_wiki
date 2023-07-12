@@ -57,6 +57,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX7970XTX|24GB|Ryzen 9 7950X||46.57|--disable-nan-check --opt-sdp-no-mem-attention --upcast-sampling --no-half|Windows11 / DirectML / RAM64GB / Adrenalin Edition 23.7.1 / version: 1.4.0 / python: 3.10.11 / torch: 2.0.0+cpu / xformers: N/A|
+|RX6700XT|12GB|Ryzen 3 3100|46.92|||ubuntu 22.04.2 version: v1.3.2 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+rocm5.4.2 &#8192;&#8226;&#8192; xformers: N/A 200W|
 |RTX 4070|12GB|Ryzen 5 5600X||20.41|--opt-sdp-attention --opt-channelslast|Windows11 / GeForce Game Ready ドライバー 536.40 / version: v1.4.0 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118GPU電力制限70%時:20.69秒 60%時:21.58秒 512x512では小さすぎてGPU以外のボトルネックが出ている。|
 |RX 7900XTX|24GB|Ryzen 9 7900X|66.25|65.56|--disable-nan-check --no-half-vae --autolaunch --update-check|version: &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.0+cpu &#8192;&#8226;&#8192; xformers: N/A &#8192;&#8226;&#8192; gradio: 3.32.0 &#8192;&#8226;&#8192; checkpoint: 7f96a1a9ca、Windows11環境|
 |RTX 3060|12GB|Core i5-13400F||57.78|--xformers --xformers-flash-attention --disable-nan-check --medvram --lyco-dir models/lora --theme dark|version: v1.2.1 &#8192;&#8226;&#8192; python: 3.10.10 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.17 &#8192;&#8226;&#8192; gradio: 3.29.0 &#8192;&#8226;&#8192; checkpoint: cf84c7f86aPYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.6, max_split_size_mb:128GPU=70%|

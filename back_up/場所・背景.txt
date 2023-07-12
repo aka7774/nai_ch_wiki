@@ -131,6 +131,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|abandoned amusement park|放棄された遊園地|abandonedをつけるといい感じに廃墟感が出る。|https://image01.seesaawiki.jp/n/h/nai_ch/ocuBPvC0cB.png https://image02.seesaawiki.jp/n/h/nai_ch/K0ca64ZqkS.png|
 |chinese temple|中国の寺|細かな意匠に中国らしさが表れる。日本の寺より派手なイメージになる。|https://image02.seesaawiki.jp/n/h/nai_ch/l0ATBoOdf4.png https://image02.seesaawiki.jp/n/h/nai_ch/PRBEuqnWuc.png|
 |Japanese temple|日本の寺|templeは祈りを捧げる場所のこと（仏教の寺に限定されない）。柱が朱塗りになりがち。|https://image01.seesaawiki.jp/n/h/nai_ch/2jr45uMFvV.png https://image01.seesaawiki.jp/n/h/nai_ch/EPL0ZdMiDd.png|
 |Japanese shrine|神社|shrineは神聖なものを祀る場所のことをいう（日本の神社に限定されない）。一般的にイメージされる神社にはなるが、しめ縄など描写されないものがある。|https://image02.seesaawiki.jp/n/h/nai_ch/RFKqrPuzZ4.png|
@@ -432,6 +433,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|glitch effect|グリッチエフェクト|本来のグリッチエフェクトは故意に画像・映像にエラーを発生させることで画像にノイズを入れることを指す。プロンプトで使用すると背景にノイズが乗り、ザラついた感じで描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/l7wffBWusb.png|
 |halftone|網点（ハーフトーン）|背景が網点のグラデーションで描画される。|https://image01.seesaawiki.jp/n/h/nai_ch/aFHYMGhZ4e.png|
 |chiaroscuro|明暗法|明暗を利用して対象物を立体的に描く手法。陰影のはっきりした絵になる。|https://image02.seesaawiki.jp/n/h/nai_ch/rX0Pfr7KDy.png|
 |fluctuations on the surface of the water, caustics|コースティクス|曲面またはオブジェクトによって反射または屈折した光線の集まり（包絡線）、またはそれを別の表面に投影したときにできる独特の模様。プールなどの水面が揺らぐ様を表現できる。|https://image01.seesaawiki.jp/n/h/nai_ch/jLoC9qNcop.png|

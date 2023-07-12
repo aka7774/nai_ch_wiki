@@ -22,119 +22,64 @@
 
 #contents
 
-* 2023-07-11 スレを読み書きするさまざまな方法が提案される
-
-前日の騒動を経て、未明のうちに5chをWebブラウザ、PCの専ブラ、スマホの専ブラで閲覧・書き込みする方法が提案された。
-
-** Webブラウザ（Chrome）
-
-なんJNVA部★233（https://fate.5ch.net/test/read.cgi/liveuranus/1688887977/711）
-
-711 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ d70d-knyK)[] 投稿日：2023/07/11(火) 00:57:12.46 ID:1Xnph/oM0
-公開した
-
-使い方
-5ch style formatをインストールする
-https://chrome.google.com/webstore/detail/5ch-style-format/aidnencnedgaflbgacmcbcokcpancdac
-tampermonkeyなどユーザースクリプトが動かせる拡張機能をインストールする
-https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
-greasyforkから5ch style formatのポップアップ表示をサムネ表示に書き換えるスクリプトをインストールする
-https://greasyfork.org/ja/scripts/470545-5ch-style-thumbnailer
-
-イメージ
-&ref(https://imgur.com/HeKBwhE.png,300)
-
-** Jane Style（PC版）
-
-起動する前に「account.cfg」を削除する、という対処法が見つかる。
-
-265 名前：ジェーン使いの名無しさん[] 投稿日：2023/07/11(火) 02:50:47 ID:CLjNQ34E0 [14/17]
-新規にtxtファイルを作成
-以下の四行をコピペして保存
-@echo off
-del /Q account.cfg
-cmd.exe /c start Jane2ch.exe
-Exit
-
-ファイル名を　山下(笑).bat　に変更　※ファイル名は何でもいいが後で分かりやすくするため
-この山下(笑).batをJaneStyaleの入っているフォルダに移動
-さらにこの「batファイルへのショートカット」を任意の場所へ作成
-これでJaneの起動前にaccount.cfgが毎回削除される
-※Janeファイル名指定をフルパスにしてないのは人によってインスコ先が異なる可能性があるため
-これ大事
-
-** siki
-
-汎用掲示板ビューア Siki（https://sikiapp.net/）
-
-PC用。5chをそのまま見られる。
-
-なんJNVA部★234 
-https://fate.5ch.net/test/read.cgi/liveuranus/1689057599/7
-
-7 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9fc5-0W2a)[sage] 投稿日：2023/07/11(火) 15:47:31.74 ID:OfHgJgFx0
->>4
-sikiでURLはろうとすると書けないンゴ
-↓
-現状nuts(APIプラグイン)入れないとURL貼れない
-https://egg.5ch.net/test/read.cgi/software/1686475201/29
-↓
-nuts 1.11
-axfc.net/u/4066419
-
-新しいread.cgiへ対応
-
-** chmate
-
-なんJNVA部★防弾U（https://sannan.nl/test/read.cgi/liveuranus/1679606639/116-117）
-
-116 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった：2023/07/11(火) 04:10:18.60 ID:zMgMTW6Z0 
-【新API再稼働までの暫定】chmateで5ch.netのスレを見る方法
-
-1. APIMateRをインストール: https://wangel.aioilight.space/?p=699
-2. スマホ本体の設定
-アプリ→apimater→標準のアプリとして設定→対応するアドレス→5ch.net　が入っていることを確認
-3. mateの右下の3点マークから
-設定→実験的→検索に使うURL
-に↓入れる
-APIMateR apimater:https://{$host}/test/read.cgi/{$bbs}/{$key}/{$host[match:\.([25]ch\.net|bbspink\.com)$]}
-
-&ref(https://i.imgur.com/BbJkhqs.png,300)
-
-&ref(https://i.imgur.com/RyxiAT2.png,300)
-
-スレを開き↑のAPIMateRの欄をクリックしてスレッド更新
-
-117 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった：2023/07/11(火) 04:48:14.29 ID:591315dG0 
-もうちょい簡単な方法
-スレタイまではmateで見れる
-コピーでスレのURL取る
-右下&#65049;メニューから、URLを指定して開くを選ぶ
-さっきのURLがすでに入ってるので
-URLの5chを5Chに直す
-これで開く
-
-** twinkle (スレ読み込みのみ)
-0875今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 17c3-ZVLm)
-2023/07/11(火) 10:50:00.19ID:CRHb+zXb0
->>872
-チンクルからみられるようにはなるやで
-外部板管理で
-&ref(https://i.imgur.com/QqVIv0v.png,300)
-こうや
-&ref(https://i.imgur.com/ubzKCF8.png,300)
-
-** mae2ch
-iOS向け
-Talk対応を宣言しているが、実際には5ch対応のアプデを7月11日に入れる2枚舌外交。
-外部板の追加→2ch形式→bbsmenu形式→https://menu.5ch.net/bbsmenu.htmlで完了する。 
+* 2023-07-12 現在の本スレの状況
+各種専ブラで5chを閲覧・書き込みが出来る方法が知れ渡った事やtalkがスレを3ヶ月しか保存しない事、またtalk運営への不信感も相まってか
+2023/07/12現在は5chのスレに住民が戻ってきており、5ch側が本スレとなっている。
+talk側のスレは殆ど書き込みが見当たらない状態。
 
 
+* 2023-07-12 5chに関するジェーン社の声明
+
+遅ればせながらジェーン社(JaneStyleの開発元・API鯖運営など5chの一部業務委託)から声明が発表された。
+http://janesoft.net/news/20230712.html
+
+3行に纏めると
+-広告収入に関して5ch.netとのビジネス上の問題
+-2ch・5chの商標権侵害裁判の問題(5ch側が敗訴して上告中)
+-5ch運営が8kunサービス(Qアノン関係)を提供しようとしていた
+これらが原因で袂を分かつ事になった、との事。
+
+しかし事前の説明なしでtalkにユーザを強制移行させた事やAPI無効化で専ブラを使用不可にした事などに対する説明は一切書かれていない。
+
+5ch運営の声明とジェーン社の声明、どちらを信用するかは各自で判断すべし。
+
+
+* 2023-07-11 Janestyleに関する5ch運営の声明
+
+前日のJanestyleの開発元が突然5chをサポート終了、talkという掲示板に強制移行+API無効化で専ブラからすべてのスレが開けない点に関して5ch公式が声明を出した。
+[+]
+=|BOX|
+★ 5ちゃんねるから新しいお知らせです
+https://fate.5ch.net/test/read.cgi/liveuranus/9240230711/
+
+1: ５ちゃんねる ★  2023/07/11(火) 00:00:00.00 ID:LokiTech 
+Janestyleはもう5ch.netと提携していません。
+Janestyle以外の専用ブラウザをご利用ください。
+旧バージョンの5chブラウザ（API前）は近く再度利用可能となります。
+5chのAPIは現在公開しており、開発者は誰でも5chのブラウザを作成できます。
+全ての5chブラウザは自身の広告SDKを使用でき、収益を分配する必要はありません。
+もしJaneを通じてRoninを購入した場合は、ジェーンに対して返金を請求してください。
+Roninは8月まで無料で利用可能となります。
+
+この度はいろいろとご不便ご心配をお掛けしまして大変申し訳ありませんでした。
+今後とも5ちゃんねるをよろしくお願いいたします。
+||=
+[END]
+これにより、Janestyle開発・5ch運営双方から''&color(#ff0000){『Janestyleで5chにアクセスできなくなった』}''ことが決定的に。
+同時に声明にある通り、Janestyle以外の専ブラ（過去にAPI導入で使用不可となったものも含む）、ChromeなどのWebブラウザで5chにアクセスが可能となった。
+『Janestyleから引っ越したい』『専ブラの○○に替えたけど書き込みできない』などは専門板の各専ブラスレへ。
+
+''ソフトウェア板''
+[[https://egg.5ch.net/software/]]
+
+''騒動中の本スレの読み書き方法まとめ''
+[[5ch専ブラ別設定方法]]
+（2023-07-11 スレを読み書きするさまざまな方法が提案される　が長文になったため別ページへ移行）
 * 2023-07-10 専ブラでスレを開けなくなる
 
 Janestyleの開発元が突然5chをサポート終了、talkという掲示板に強制移行+API無効化で専ブラからすべてのスレが開けない。
 避難先も決まっておらず阿鼻叫喚の事態になっている。
-現在、webブラウザとごく一部の専ブラなら表示できる。
+%%現在、webブラウザとごく一部の専ブラなら表示できる。%%
 
 * 2023-06-30 カムカム法が紹介される
 
@@ -1159,6 +1104,13 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
+
+
+
+
 
 
 
