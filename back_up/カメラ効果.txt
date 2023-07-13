@@ -97,6 +97,7 @@ ISO感度も弄れるんか？
 * 単語集
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|halation|ハレーション|レンズから太陽などの強い光が直接入射し、画面の一部がぼやけて写ってしまう現象。|https://image01.seesaawiki.jp/n/h/nai_ch/hoarjEe1r3.png https://image02.seesaawiki.jp/n/h/nai_ch/pxJjfagGyQ.png|
 |vignetting|ヴィネット(周辺減光)|画面隅が暗くなる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/JpN539JMuC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/JpN539JMuC.png]]|
 |lens distortion|歪曲収差|レンズの歪みでぼやけたりひずんだりする現象。効果はいまいち||
 |motion blur|被写体ブレ（モーションブラー）|動いている対象をカメラで撮影する時に生じるブレ。被写体ブレを発生させたい動作、背景に隣接して配置すると対象がブレて描写される。pan focusをつけると効果アップ？|https://image02.seesaawiki.jp/n/h/nai_ch/Y49HsIg20n.png https://image01.seesaawiki.jp/n/h/nai_ch/tU20W1YWyU.png|

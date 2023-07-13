@@ -9,7 +9,8 @@
 https://egg.5ch.net/software/
 ||=
 #contents
-* Webブラウザ（Chrome）
+* PC用
+** Webブラウザ（Chrome）
 Webブラウザでの閲覧時に見やすくする拡張機能やスタイルシートを導入する。
 =|BOX|
 なんJNVA部★233（https://fate.5ch.net/test/read.cgi/liveuranus/1688887977/711）
@@ -29,8 +30,9 @@ https://greasyfork.org/ja/scripts/470545-5ch-style-thumbnailer
 イメージ
 &ref(https://imgur.com/HeKBwhE.png,300)
 
-* Jane Style（PC版）
-起動する前に「account.cfg」を削除する、という対処法が見つかる。
+** Jane Style（PC版）
+起動する前に「account.cfg」を削除する、という対処法が見つかる。（古くなったため折りたたみ）
+[+]
 =|BOX|
 265 名前：ジェーン使いの名無しさん[] 投稿日：2023/07/11(火) 02:50:47 ID:CLjNQ34E0 [14/17]
 新規にtxtファイルを作成
@@ -47,12 +49,13 @@ Exit
 ※Janeファイル名指定をフルパスにしてないのは人によってインスコ先が異なる可能性があるため
 これ大事
 ||=
+[END]
 
-Jane2ch.exeをバイナリエディタで直接編集する方法が紹介される。
+Jane2ch.exeをバイナリエディタで直接編集する方法が紹介される。（ファイルのバックアップをとってから自己責任でお願いします）
 
 【StableDiffusion】AIｴﾛ画像情報交換28 
 https://mercury.bbspink.com/test/read.cgi/erocg/1688731408/178
-
+[+]
 =|BOX|
 178 名前：...φ(・ω・`c⌒っ (ﾜｯﾁｮｲ cf7a-kkOg)[sage] 投稿日：2023/07/11(火) 21:23:51.68 ID:g9+/198I0
 【JaneStyle4.23改造まとめ】
@@ -67,10 +70,11 @@ account.cfg内のパラメータ「Mode=」を参照しないようにする
 広告なくす
 0020B3F8 53→C3
 ||=
+[END]
 
 【StableDiffusion】AI画像生成技術24【NovelAI】 
 https://mevius.5ch.net/test/read.cgi/cg/1688259397/491
-
+[+]
 =|BOX|
 491 名前：名無しさん＠お腹いっぱい。 (ﾜｯﾁｮｲ d71e-2BtO)[sage] 投稿日：2023/07/12(水) 14:57:33.16 ID:JyX7sgLq0
 >>484には続きがあるんよ
@@ -87,9 +91,44 @@ https://mevius.5ch.net/test/read.cgi/cg/1688259397/491
 Jane Style (Windows版) Part235
 https://egg.5ch.net/test/read.cgi/software/1689041238/216,444
 ||=
+[END]
 
+Jane Style (Windows版) Part236
+https://egg.5ch.net/test/read.cgi/software/1689074564/314
 
-* Siki
+=|BOX|
+[4.23]広告除去
+0020B3F8 53→C3
+
+[4.23]アプデ警告停止
+001FD398 75→EB
+
+[4.23]account.cfgのパラメータ「Mode=」参照禁止 (※浪人の人はやってはいけない)
+0029A7DC 04→01
+
+[4.23]dat取得のAPI強制無効化 (http://janesoft.net/janestyle/setting.php アクセス禁止)
+001FD21E: 75→EB
+00285F9B: 75→EB
+
+[4.23]最新バージョン確認無効化 (http://janesoft.net/janestyle/version.txt アクセス禁止)
+001FC8EC 29→01
+
+貼り付け用
+0020B3F8 53→C3
+001FD398 75→EB
+0029A7DC 04→01
+001FD21E 75→EB
+00285F9B 75→EB
+001FC8EC 29→01
+||=
+
+「[4.23]dat取得のAPI強制無効化」は現在必須ではない。事情は以下のリンクを参照とのこと
+Jane Style (Windows版) Part235
+https://egg.5ch.net/test/read.cgi/software/1689041238/216,444
+
+「貼り付け用」は「[[らくらくパッチ | NAGAOKA STATION>>https://nstjp.com/soft/77.html]]」で利用するもの
+
+** Siki
 汎用掲示板ビューア Siki（https://sikiapp.net/）
 PC用。5chやふたば、4chanなどの掲示板をSikiだけでそのまま見られる。
 =|BOX|
@@ -109,7 +148,26 @@ axfc.net/u/4066419
 
 新しいread.cgiへ対応
 ||=
-* chmate
+
+** Live5ch
+５ちゃんねる用ブラウザ「Live5ch」part171
+https://egg.5ch.net/test/read.cgi/software/1689180434/140
+=|BOX|
+140: 名無しさん＠お腹いっぱい。 sage 2023/07/13(木) 14:29:17.73 ID:f8uuMtxh0 
+はい
+
+[1.59]5chに書き込めるようになる
+001C4290 53568B74 → 31C0EB41
+||=
+
+
+
+*Android
+** chmate
+最新版で5chに正式対応
+
+以下、旧バージョンの方法
+[+]
 なんJNVA部★防弾U（https://sannan.nl/test/read.cgi/liveuranus/1679606639/116-117）
 =|BOX|
 116 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった：2023/07/11(火) 04:10:18.60 ID:zMgMTW6Z0 
@@ -139,8 +197,10 @@ APIMateR apimater:https://{$host}/test/read.cgi/{$bbs}/{$key}/{$host[match:\.([2
 URLの5chを5Chに直す
 これで開く
 ||=
+[END]
 
-* twinkle
+*iOS
+** twinkle
 2023/7/12 11時ごろ
 twinkleアップデートあり。アップデート後は下の外部板追加を行うと読み書きが可能になるとのこと（未検証）
 
@@ -158,7 +218,11 @@ https://nova.5ch.net/test/read.cgi/livegalileo/1689126676/
 こうや
 ||=
 &ref(https://i.imgur.com/ubzKCF8.png,300)
-* mae2ch
+
+** mae2ch
 iOS向け。
 Talk対応を宣言しているが、実際には5ch対応のアプデを7月11日に入れる2枚舌外交。
 外部板の追加→2ch形式→bbsmenu形式→https://menu.5ch.net/bbsmenu.htmlで完了する。
+
+** BB2C
+浪人アカウントを設定すればスレの読み込み・書き込みが可能

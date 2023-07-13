@@ -72,9 +72,10 @@ Roninは8月まで無料で利用可能となります。
 ''ソフトウェア板''
 [[https://egg.5ch.net/software/]]
 
+* 2023-07-11 スレを読み書きするさまざまな方法が提案される
+
 ''騒動中の本スレの読み書き方法まとめ''
-[[5ch専ブラ別設定方法]]
-（2023-07-11 スレを読み書きするさまざまな方法が提案される　が長文になったため別ページへ移行）
+→[[5ch専ブラ別設定方法]]へ移動しました
 * 2023-07-10 専ブラでスレを開けなくなる
 
 Janestyleの開発元が突然5chをサポート終了、talkという掲示板に強制移行+API無効化で専ブラからすべてのスレが開けない。
@@ -1104,6 +1105,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
