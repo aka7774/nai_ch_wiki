@@ -38,6 +38,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|||||
+|abandoned factory|廃工場||https://image02.seesaawiki.jp/n/h/nai_ch/vT77Z24H3Z.png|
 |cathedral|カテドラル（司教座教会）|カソリックの教区を管轄する司教の椅子がある聖堂。|https://image01.seesaawiki.jp/n/h/nai_ch/6kFBmy654o.png|
 |basilica|バシリカ（大聖堂）|カソリックにおいてローマ教皇より特権を与えられた教会をいう。司教座教会以外で、比肩する規模の格式を持つ聖堂。|https://image01.seesaawiki.jp/n/h/nai_ch/MktwHbRPtt.png|
 |apse|アプス|キリスト教会で最も神聖な場所。祭壇の後背部。俯瞰で建物を見た時に十字架の頭となる部分にある半円形のドーム型をした空間。|https://image02.seesaawiki.jp/n/h/nai_ch/7exxuILLkk.png|
@@ -251,7 +253,7 @@
 |swells|うねり|波よりも水面自体が盛り上がった感じになる。UCにsurferが必須。無いとほぼ確実にサーファーが描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/fGLjXzzXYr.png|
 |wave|波|UCにsurferを入れない時にサーファーが描写されることがある。|https://image02.seesaawiki.jp/n/h/nai_ch/aQZBUZOwk1.png|
 |surf|磯波／陸地に打ち寄せる波|UCにsurferが必須。無いとほぼ確実にサーファーが描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/CutP_DHrSi.png|
-|flood|洪水|cityなど浸水する対象を追記することで、対象が浸水描写になる。|https://image02.seesaawiki.jp/n/h/nai_ch/j7fysbaf3Q.png https://image01.seesaawiki.jp/n/h/nai_ch/Q4kGwb1iTK.png|
+|flood|洪水|delugeでも可能。cityなど浸水する対象を追記することで、対象が浸水描写になる。|https://image02.seesaawiki.jp/n/h/nai_ch/j7fysbaf3Q.png https://image01.seesaawiki.jp/n/h/nai_ch/Q4kGwb1iTK.png|
 |debris flow|土石流|土砂や石が河川水と混合して河川や沢を流下する現象。|https://image02.seesaawiki.jp/n/h/nai_ch/fWVmypPMnl.png|
 |volcano plumes|噴煙|火口から噴き上がる噴煙が描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/zYX6HWjdSj.png|
 |pyroclastic material／pyroclastic flow|火山砕屑物／火砕流|火砕流で焼き払われた黒焦げの大地が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/oK4rreBqPJ.png|
