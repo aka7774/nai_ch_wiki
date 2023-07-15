@@ -38,8 +38,6 @@ magnet:?xt=urn:btih:XFDFHICCEVQ6IXQXRSBBT7SN5SC6RWSI&amp;dn=lora-torrent&amp;tr=
 - haor/pixiv-yandere &#183; Datasets at Hugging Face - https://huggingface.co/datasets/haor/pixiv-yandere
 - haor/pixiv_month_top50 &#183; Datasets at Hugging Face - https://huggingface.co/datasets/haor/pixiv_month_top50
 
-
-
 * モデル
 - 初期にスレで話題になった代表的なモデルを紹介。
 - URLのコピーは赤丸を右クリック
@@ -51,9 +49,7 @@ magnet:?xt=urn:btih:XFDFHICCEVQ6IXQXRSBBT7SN5SC6RWSI&amp;dn=lora-torrent&amp;tr=
 さまざまなInstagramアカウント(主に日本語)の合計1.2mの画像で約1.6エポックからトレーニングされています。モデルのトレーニングが不足しているため、そのパフォーマンスはわずかです。パフォーマンスを向上させるために、モデルを混在させることをお勧めします。
 &#128317;instagram-latest-plus-clip-v6e1_50000.safetensors｜cafeai/cafe-instagram-sd-1-5-v6 &#183; Hugging Face - https://huggingface.co/cafeai/cafe-instagram-sd-1-5-v6
 
-
 ** EVT（ピクシブ学習モデル)
-
 
 *** Evt_M
 Evt_V4 EP06を元にして学習方法を変えることで表現をより柔軟にしたモデル
@@ -124,21 +120,13 @@ Danbooruにある極端にNSFWなコンテンツのみを学習させたモデ�
 参考：[[ローカルのマージ]]
 
 
-** Anything-V4.0
-
-https://huggingface.co/andite/anything-v4.0
-
-- Anything-V3.0(故)
-[+]
-Anime model
-Info https://www.bilibili.com/read/cv19603218
-&#128317;Linaqruf/anything-v3.0 at main - https://huggingface.co/Linaqruf/anything-v3.0/tree/main
-&#128304;：Anything-V3.0-pruned.ckptがおすすめ
-※：なお容量削減版(たいてい名前に「pruned」がついている)は学習時におけるデータを削除したモデルデータとのことです。
-出力時には問題ありませんが、学習系の作業に使う場合は非推奨です。
-[END]
+** Anything
+3.0も4.0も&#129303;から消えました。
+最新版のV5: https://civitai.com/models/9409
+なお、オリジナルの作者かどうかは不明
 
 ** NAI
+リークなので自己責任でどうぞ
 要Torrentクライアントソフト
 &#128317;
 =|BOX|
@@ -154,7 +142,6 @@ magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 &aname(resource_vae)
 拡張子が.ckptのやつは、.ptに変えてmodels/VAEフォルダに置くことで認識可能
 
-| anything-v4.0.vae.pt | https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.0.vae.pt |
 | kl-f8-anime.vae.pt | https://huggingface.co/hakurei/waifu-diffusion-v1-4/resolve/main/vae/kl-f8-anime.ckpt |
 | kl-f8-anime2.vae.pt | https://huggingface.co/hakurei/waifu-diffusion-v1-4/resolve/main/vae/kl-f8-anime2.ckpt |
 | autoencoder_fix_kl-f8-trinart_characters.vae.pt | https://huggingface.co/naclbit/trinart_derrida_characters_v2_stable_diffusion/resolve/main/autoencoder_fix_kl-f8-trinart_characters.ckpt |
@@ -248,16 +235,6 @@ https://majinai.art/i/g9mjR_k.webp
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jLvsBIQtK0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/jLvsBIQtK0.png]]
 
-**212スレ299 ClearVAE (コントラスト5%上げたバージョン）※削除済み
-V2.2を使ってください。
-https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/299
-%%https://civitai.com/models/22354?modelVersionId=79888%%
-=|BOX|
-299 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7a38-a+t/)[] 投稿日：2023/05/24(水) 23:42:44.00 ID:x+w1S/7n0
->>283
-とりあえずコントラスト5%上げたバージョンも置いとくわ
-https://civitai.com/models/22354?modelVersionId=79888
-||=
 
 **213スレ556 EO_VAE
 https://mega.nz/file/rY5DjaBQ#8oLSS8b_mt6fYKh56k06pGw2oZ7UzVah0snnzlGt2A4

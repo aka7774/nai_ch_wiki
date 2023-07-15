@@ -4,11 +4,7 @@
 ローカル環境(AUTOMATIC1111版Stable Diffusion WebUI)の導入ガイドです。
 ''&color(#FF0000){注意} Stable Diffusion WEBUI AUTOMATIC1111はアップデート頻度が非常に高く、新機能の実装や仕様変更が頻繁に行われる為、Wikiの更新が追いついていません。''
 
-
 *導入
-
-- &size(15){[[画像付きガイドpdfを作りました。>>https://image01.seesaawiki.jp/n/h/nai_ch/Bh8T7jBTQz.C.pdf]](Windows用)}
-※NovelAIの再現をしないなら「NAIモデルのダウンロードと配置」の項目は飛ばしてOK
 
 - リファレンス
 -- https://rentry.org/voldy
@@ -16,10 +12,12 @@
 - 説明読んでも全く理解できない人は「簡易インストール」を試すといいかも。
 
 ** 1. Python 3.10をインストールする
-[[https://www.python.org/ftp/python/3.10.10/python-3.10.10-amd64.exe]]
+&color(#ff0000){Anaconda入れてたら先にアンインストールしろ!!!}
+
+[[https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe]]
 &color(#ff0000){3.11は入れても動かんから入れるな!!!}
 
-「python-3.10.x-amd64.exe」がダウンロードされるので、ダブルクリックで開く。
+「python-3.10.11-amd64.exe」がダウンロードされるので、ダブルクリックで開く。
 このとき、Add to PATH にチェックをつけてインストールすること。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/H089Tt3hem.png)
 
@@ -82,25 +80,24 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 -- https://huggingface.co/models
 - モデルについては[[Models]]ページに詳しく書いてある。
 - [[スレ民共有モデル]]が質もいいのでおすすめ。
+- [[civitai>>https://civitai.com/]]もモデルが沢山あるのでおすすめ。
 - ダウンロードしたファイルは以下のディレクトリに配置する
 -- stable-diffusion-webui/models/Stable-diffusion
 
 **5：VAEのダウンロードと配置(任意だけど推奨)
 
 - VAEがないと色が薄くなったりするので補正するために使う
-- [[ローカルのリソース]]に、Anything-v3.0と、それ以外のVAE一覧がある
--- 拡張子を.vae.ptに変える
+- [[ローカルのリソース]]に、NovelAIと、それ以外のVAE一覧がある
+-- 拡張子を.vae.ptに変える ※VAEフォルダに入れるなら変更不要
 - 配置方法は2通り
 -- stable-diffusion-webui/models/Stable-diffusion に、モデル名と同名で配置して「Automatic」で適用する
 -- stable-diffusion-webui/models/models/VAE に配置して、ファイル名を選択して適用する
 - 設定の場所は、Settingsタブの[Stable Diffusion]-[SD VAE]
 
-**6：NovelAI(ハローアスカには使うけど必須ではない)
+**6：NovelAIリーク(任意、非推奨)
+グレーゾーンなので自己責任で。
 [+]
-**4：NovelAIモデルのダウンロード
-''情報提供、テスト、研究の自由のために掲載します。''
-結果が気に入ったら、[[サブスクリプションを検討してください>https://novelai.net/register]]
-
+**4：NovelAIリークモデルのダウンロード
 次のマグネットリンクからモデルをダウンロードします。
 トレントクライアント(qTorrent, Bitcomet等)がない場合はインストールしておきます。
 =|BOX|
@@ -112,20 +109,15 @@ magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 ※オプション：.ptの拡張子をもつHyperNetwork用のmoduleが/modulesにあるので任意でダウンロードします。
 
 **5：リネーム
-ダウンロードしたモデルを次のようにリネームします
-stableckpt\animevae.pt >> nai.vae.pt
-stableckpt\animefull-final-pruned\config.yaml >> nai.yaml
-stableckpt\animefull-final-pruned\model.ckpt >> nai.ckpt
-
-2022/11/22追記
-いつごろからかvaeの読み込ませ方が変更になっている。
-拡張子はptでファイル名どうでもいいので、models/vaeの下にファイルを格納し、
-WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
-先ほど格納したファイルを選択、Apply Settingボタンを押す。
+ダウンロードしたモデルをわかりやすい名前にします。
+stableckpt\animefull-final-pruned\model.ckpt >> nai-pruned.ckpt
 
 **6：配置
 以下のディレクトリにモデルを配置します。
+ckpt:
 /stable-diffusion-webui/models/Stable-diffusion
+VAE:
+/stable-diffusion-webui/models/VAE
 [END]
 
 **7.起動確認
@@ -136,7 +128,7 @@ WEB UIを起動後、Settingタブ、[Stable Diffusion]-[SD VAE]の項目で
 図：これね
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/y4M3qrylYT.jpg)
 
-webui-user.batを実行するとコマンドプロンプトのWindowが開き、モデルデータや色々な必要モジュールの読み込み状況が文字で表示される。
+webui-user.batを実行するとターミナルが開き、モデルデータや色々な必要モジュールの読み込み状況が文字で表示される。
 初回起動時は様々なプログラムのセットアップ作業が行われるのでしばらく待つ。
 &color(#ff0000){結構時間かかるんで気長に待ちましょう}
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/yiFEf9KQqg.png)
@@ -208,40 +200,6 @@ CG板で使ってみた人がいいかもって言ってた。
 使ってみた人いたら感想書いてね。
 
 * トラブルシューティング
-**RTX40シリーズで画像生成した際、速度が遅い問題を解決する
-標準でインストールされるcudnn関係のDLLが古い(4000シリーズ未対応)為、対応版(cudnn8.7.0)に置き換える
-
-+https://developer.nvidia.com/rdp/cudnn-download より Local Installer for Windows (Zip) をダウンロードする~~※アカウント登録が必要
-+ダウンロードしたzipファイル(cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip)を展開し、binフォルダ内の7ファイルを取り出す
-+stable-diffusion-main\venv\Lib\site-packages\torch\lib 内に上書きコピーする
-
-*** launch.pyを編集し、torch・xformersのバージョンを上げる方法
-2023/01/23時点の最新版(7ff1ef77dd22f7b38612f91b389237a5dbef2474)で本体に取り込まれた
-旧バージョンのtorchとxformersを使用している場合はアップグレードを促すアナウンスメッセージが表示される
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1sa2Wev7W4.png)
-
-コマンドラインオプションに再インストールオプションを追加して起動すると更新される
-> COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers
-
-*** webui-user.batを編集し、torch・cuDNNのバージョンを上げる方法
-torch2.0とcu118(cudnn8.8.0)は共にRTX40シリーズのアーキテクチャに対応しているので、それを適用する
-xformersが使えない代わりに同等技術のSDPを使用する(生成結果もほぼ同じ)
-1.venv,repositoriesフォルダ削除 あるいはvenv上で pip uninstall torch torchvision -y
-2.git pullしてwebuiを最新版にする
-3.webui-user.batを以下に書き換えて実行。--xformersはつけないこと!
-=|BOX|
-@echo off
-
-set PYTHON=
-set GIT=
-set COMMANDLINE_ARGS=--opt-sdp-no-mem-attention --opt-channelslast
-set TORCH_COMMAND=pip install torch==2.0.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
-
-call webui.bat
-||=
-5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.0+cu118"と記載があれば成功
-
-
 **gtx16xxで必要な設定
 　gtx16xxでは半精度浮動小数点数が扱えないためそのままでは黒や緑の絵しかでない。オプション追加が必要。また、メモリがやや少なめ用設定も追加要
   webui-user.batに
@@ -315,7 +273,7 @@ COMMANDLINE_ARGS=--precision full --no-half --no-half-vae --medvram
 
 ** クリーンインストール
 + リソースのダウンロードとかは省いて導入ガイドにそってWebUIを再インストールする。~~ ※フォルダは「StableDiffusion_WebUI_v2」とか名前つけて新しく作ってリポジトリをクローンするんやで
-+ もとのディレクトリ*に置いてあった.ckptやvae,nai.yamlを同じディレクトリにコピペする ~~*場所：/stable-diffusion-webui/models/Stable-diffusion
++ もとのディレクトリ*に置いてあったモデルを同じディレクトリにコピペする ~~*場所：/stable-diffusion-webui/models/Stable-diffusion
 + 完了
 
 * 移動する方法
@@ -339,6 +297,7 @@ C:\stable-diffusion-webui
 ごと削除する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
+Pythonの残骸がC:\Users\ユーザー名\AppData\Local\Programs\Pythonにあるので消す。
 
 * 環境の移行
 新しくWebUIをクリーンインストールして古い環境の設定だけをもってくる方法。
