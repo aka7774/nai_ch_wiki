@@ -1921,7 +1921,449 @@ https://civitai.com/models/61053/hair-with-scenery-reflection
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kCiAahdDs_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/kCiAahdDs_.png]]
 
+*** 201スレ845 背面駅弁
+https://fate.5ch.net/test/read.cgi/liveuranus/1683546068/845
+https://civitai.com/models/61843?modelVersionId=66338
+=|BOX|
+845 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7760-tcUg)[] 投稿日：2023/05/09(火) 23:26:53.81 ID:hnHovWRr0 [3/3]
+セックスしてる背面駅弁無かったから作ってアップしたで
+AOMみたいなエロモデルでしか動かんし雰囲気で作ってるから精度はあまり期待しないでくれ
+https://civitai.com/models/61843?modelVersionId=66338
+||=
 
+*** 202スレ656 セクシー殺人スライディングLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1683672268/656
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+=|BOX|
+656 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1214-AYRz)[sage] 投稿日：2023/05/11(木) 03:54:55.57 ID:R+5OtrrF0 
+セクシー殺人スライディングLoRAを置いたわ
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+sexy_killer_slidingやな意味不明なLoRAやで
+https://i.imgur.com/Fg3KEU4.png
+車で来たわ
+https://i.imgur.com/LMVxSzm.png
+電車で来たわ
+https://i.imgur.com/iqFrtVC.png
+多人数スライディングも一応可能やな当然のように破綻するけど
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gB5ah3eECS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gB5ah3eECS.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/O7nNvYY8AC-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/O7nNvYY8AC.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wCBtY6IMIR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/wCBtY6IMIR.png]]
+
+***203スレ893 幸せな寝顔になるLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1683796148/893
+https://civitai.com/models/64238/angel-sleepeace
+=|BOX|
+893今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ de81-NA9X)2023/05/12(金) 23:22:39.34ID:s3TW9FUW0>>896>>898>>899>>900>>902>>903>>905>>907>>908>>914>>916>>925>>943>>944
+あほ面もとい幸せなら寝顔になるLoRAやっと納得行く出来になったから公開させてもらったで
+どんな娘もほぼ強制的にベッドであほ面になる
+https://i.imgur.com/nniNRY3.png
+https://i.imgur.com/k0cBB7Q.png
+https://i.imgur.com/FztAyRF.png
+https://i.imgur.com/Kx4fhNE.png
+https://civitai.com/models/64238/angel-sleepeace
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/75aUGvj5_o-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/75aUGvj5_o.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NL7kExX5T6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NL7kExX5T6.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jYLsVEl6oU-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jYLsVEl6oU.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qmdhHUYTk6-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/qmdhHUYTk6.png]]
+
+*** 204スレ586 しいたけ目 LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1683921260/586
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test
+=|BOX|
+586 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff7e-Phjm)[sage] 投稿日：2023/05/14(日) 01:33:48.30 ID:anti31iv0 [1/4]
+えー、LoRAの差分抽出法が確立されました
+コピー機学習法は画像-Aを学習したLoRA-Aを元モデルにマージしてモデルＡを作り、それをベースに画像-Bで学習するという方法でした
+が、コレって画像-Aを学習したLoRA-Aと画像-Bを学習したLoRA-Bからsvdマージで差分を取れば同じこと出来るんじゃね？
+と思って検証のために学習を回していたら、どうやらkohyaさんも同じ発想に至っていたらしく、同様に検証で学習回してたようです
+そしてkohyaさん側でも、私の方でも検証結果として、差分抽出で問題なくLoRA作成可能だということが分かりました
+ということで、差分抽出法で作ったしいたけ目
+https://i.imgur.com/bXZx3RX.png
+コピー機学習法で作ったLoRAとは、出力に対する影響のしかたも異なるので、一概にはどちらの方が良いとは言えませんが
+この手法により、コピー機モデルを作る手間を省くことが出来そうです、あとモデルによる容量圧迫を抑えられますね
+
+あ、ちなみにkohyaさんの方では、光る眼鏡LoRAなるものを作っているそうです、明日公開だそうで
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jpxbzYEAgp-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jpxbzYEAgp.png]]
+
+*** 207スレ82 髪だけ描きこみUPさせるLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684249737/82
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/release/hairdetailer.safetensors
+=|BOX|
+76 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff7e-Phjm)[sage] 投稿日：2023/05/17(水) 02:28:42.52 ID:CZVoFSb/0
+髪だけ描きこみUPさせるLoRA作ったのでお知らせです
+https://files.catbox.moe/b1damd.jpg
+
+82 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff7e-Phjm)[sage] 投稿日：2023/05/17(水) 03:08:59.58 ID:CZVoFSb/0 
+>>78
+ほい、これじゃ
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/release/hairdetailer.safetensors
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/c9_RNBHuzA-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/c9_RNBHuzA.jpg]]
+
+*** 207スレ680 おめめぐるぐるLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684249737/82
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test
+=|BOX|
+680 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff7e-Phjm)[sage] 投稿日：2023/05/18(木) 02:02:56.42 ID:yAN9DzB70
+おめめぐるぐるLoRA作った
+https://files.catbox.moe/6vy2kh.jpg
+しいたけ目の所に置いたよ
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AU1psmjZt6-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/AU1psmjZt6.jpg]]
+
+***208スレ756 猫目というか瞳を縦長にするLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684399957/745
+https://mega.nz/folder/9admhCxA#UZnE3qnQk4jUjKrmnQ8e7Q
+=|BOX|
+745今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6f88-FIIW)2023/05/20(土) 00:20:01.02ID:VMvowJGU0
+猫目というか瞳を縦長にするLoRAを差分抽出で作る実験をしてみたやで ファイル名の末尾はnew_rankで指定した数字やで
+最初画風変わりすぎておかしいと思ったらコピー機の方のtrainデータディレクトリ名前が100_1girlだった＆network_train_unet_onlyつけとらんかったというオチやったで 2枚目:コピー機用 3枚目:差分用
+https://i.imgur.com/BURmNZE.png
+https://i.imgur.com/KjGWCn3.png https://i.imgur.com/TlJruw2.png
+画像編集が赤ちゃんな上に雑すぎた気はするで
+
+756今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6f88-FIIW)2023/05/20(土) 00:40:06.79ID:VMvowJGU0
+>>750
+せやった書き忘れたわ　あまりに雑いから教師画像512x512→256x256に縮小してbucket_no_upscale外して学習したんやった　そしたら絵の変化が少し減ったやで
+問題は正面顔しか学習してないから横向きになると効果が減ることやわ
+現状でも使えなくはないからmegaに置いておくやで nekome2_4,nekome2_8,nekome2_16
+https://mega.nz/folder/9admhCxA#UZnE3qnQk4jUjKrmnQ8e7Q
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qgzdZUjC8Z-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/qgzdZUjC8Z.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aUjE1vcz4P-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aUjE1vcz4P.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aWbYmQ7Xqi-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/aWbYmQ7Xqi.png]]
+
+***208スレ882 胸のサイズだけを調整するLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684399957/745
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+=|BOX|
+882今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c388-xpLh)2023/05/20(土) 09:52:33.78ID:h9bsal9j0
+胸のサイズだけを調整するLoRAを作ってみたで
+shrinking breastsフォルダに入ってるから使ってみてや
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+
+トリガーは無しで、Weightをプラスにすると小さく、マイナスにすると大きくなるで
+ただ特定の大きさを狙えるわけじゃないので、同じWeightでもSeedとかPrompt次第でサイズは変わるで
+調整用として使ってや
+https://i.imgur.com/gAZaCv8.png
+https://i.imgur.com/SxIX4vd.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1kXYxvgubP-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/1kXYxvgubP.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cuRMS9bhqk-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cuRMS9bhqk.png]]
+ 
+***208スレ929 乳輪のサイズ調整LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684399957/929
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+=|BOX|
+929今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c388-xpLh)2023/05/20(土) 11:38:47.90ID:h9bsal9j0
+>>891 に良いアイデアもらったから作ってきたわ、乳輪のサイズ調整LoRAや
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+Large Auroraフォルダに突っ込んだ
+さすがにrank=4だと学習してくれんからrank=8になってもうた
+https://files.catbox.moe/1vpatk.png
+https://files.catbox.moe/u2g6vk.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TPIEiRwEto-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TPIEiRwEto.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BI6N0PeYh9-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BI6N0PeYh9.png]]
+
+***209スレ34 太もも周辺を細くするLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684555065/34
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+=|BOX|
+974 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c388-xpLh)2023/05/20(土) 12:36:40.06ID:h9bsal9j0
+とりあえず太ももを細くしてきたんやが、これのプラス方向であっとるか
+それともhiresかけたときにシワというか肉感が増えるのがアカンって話か
+https://files.catbox.moe/6ym7v5.png
+https://files.catbox.moe/i9hyi7.png
+
+34 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c388-xpLh)[sage] 投稿日：2023/05/20(土) 13:17:25.67 ID:h9bsal9j0 [1/5]
+前スレ974でサンプル出した太もも周辺を細くするLoRAをとりあえずMEGAに置いといた
+ただおっぱいスライダーと違ってちょっと効果が薄いかもしれん
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+shrinking thighフォルダに入れとる
+
+ところで、サンプルに肌色画像入りがちだからhugging face避けとったんやが、
+サンプル置かずにLoRAのファイルだけ置くならセーフなんかな？
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cHKLH5hEBk-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cHKLH5hEBk.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FDB1B6k3rH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FDB1B6k3rH.png]]
+
+***209スレ686 ブラシ触手lora
+https://fate.5ch.net/test/read.cgi/liveuranus/1684555065/686
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+=|BOX|
+686 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ca14-0BN8)[sage] 投稿日：2023/05/21(日) 01:17:47.66 ID:ngEic6di0
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+ブラシ触手loraをアップしたやでbrush_tentaclesや
+先月作ってからクオリティアップ狙ってたけど全然クオリティ超えられなかったので諦めて先月のを公開や
+Flatマイナス適用との組み合わせがバツグンなので楽しんでな
+https://files.catbox.moe/58iy48.png
+https://files.catbox.moe/2504mp.png
+https://files.catbox.moe/fkqofe.png
+
+>>675
+ワイのアナルビーズlora使ってもええんやで
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bBHet7scK8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/bBHet7scK8.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TT0Srbw1ii-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TT0Srbw1ii.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OIDRNUKqeN-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/OIDRNUKqeN.png]]
+
+***209スレ836 頭サイズ調整LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684555065/836
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+=|BOX|
+836 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c388-xpLh)[sage] 投稿日：2023/05/21(日) 12:04:43.29 ID:LKAi/z+r0
+昨日作った頭サイズ調整LoRAがイマイチだったんで作り直したから置いとくで
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+Small Headフォルダに入っとる
+https://files.catbox.moe/ehx0mx.png
+https://files.catbox.moe/a8q2x6.png
+
+ちなみにデータセットの一部が↓みたいな感じなんやが、キャプ翼くらいの等身にしないと効果薄かったわ
+差分抽出する時は大げさに差つけた方がええな
+https://files.catbox.moe/kjzoe1.png
+https://files.catbox.moe/6y89ma.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/phaxOH0CDB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/phaxOH0CDB.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/k78VtLfkdi-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/k78VtLfkdi.png]]
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HqJlX7qAHp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HqJlX7qAHp.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/naYHYI3pUO-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/naYHYI3pUO.png]]
+
+***211スレ615 首スライダー
+https://fate.5ch.net/test/read.cgi/liveuranus/1684756133/615
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+=|BOX|
+603 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c388-xpLh)[sage] 投稿日：2023/05/23(火) 21:36:13.24 ID:S4cbFcI20
+昨日のろくろっ首大喜利で笑顔になったから首スライダーに再挑戦してきたで
+見てるかわからんけど、頭小さくしたら首も細長くしてくれって言ってたニキはこういうことでええんよな？
+あとついでに素材用意する時のライティングミスで肌が暗くなってたのも直したわ
+https://i.imgur.com/NNowg0k.png
+https://i.imgur.com/bnPhuJe.png
+https://i.imgur.com/si6mr05.png
+
+615 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c388-xpLh)[sage] 投稿日：2023/05/23(火) 21:59:52.31 ID:S4cbFcI20 [2/2]
+>>603
+MEGAのリンク貼り忘れてた
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+「Small Head v2」フォルダに入れたで
+首の補正いらんって人は無印使ってや
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/eDG3I_w8pW-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/eDG3I_w8pW.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/a19JMCvq4O-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/a19JMCvq4O.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TnrXMRvHLJ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TnrXMRvHLJ.png]]]
+
+***211スレ762 日焼け跡
+https://fate.5ch.net/test/read.cgi/liveuranus/1684756133/762
+https://81.gigafile.nu/0723-b2ae9b6b943fc4b5dc3afde939766a5ed
+=|BOX|
+762 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4a28-cNEn)[sage] 投稿日：2023/05/24(水) 08:59:22.37 ID:B/KaT58n0
+日焼け跡にチャレンジしてみたで！
+ちょっと安定しないけど色んなモデルやキャラloraで試してみてほしい
+顔が若干変わる…気もする
+https://files.catbox.moe/ah3435.jpg
+https://files.catbox.moe/bxsjlc.jpg
+https://81.gigafile.nu/0723-b2ae9b6b943fc4b5dc3afde939766a5ed
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_bEcj2o5Hg-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/_bEcj2o5Hg.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yZFC5EToB3-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/yZFC5EToB3.jpg]]
+
+***212スレ188 age_slider（年齢変更LoRA）
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/188
+https://mega.nz/folder/tA0DVIKR#Kqma9dDucFeTrZM_SHt82w
+=|BOX|
+188 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1b88-owa4)[sage] 投稿日：2023/05/24(水) 19:46:13.55 ID:y4WptoWh0 [2/6]
+なんか欲しがってた人がいた気がしたんで、年齢変更スライダーLoRAを作ったで
+
+age_slider（年齢変更LoRA）
+https://mega.nz/folder/tA0DVIKR#Kqma9dDucFeTrZM_SHt82w
+https://i.imgur.com/ACYi6KZ.jpg
+
+ワイはまだ幼稚園児なので、flatニキみたいに構図や背景の完全制御はできんかった
+でもま、実用には問題ないやろたぶん知らんけど
+いろいろ試して遊んでみてくれや
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5f2PH3sHIX-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/5f2PH3sHIX.jpg]]
+
+***212スレ827 妖精さんを掴むためのLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/827
+https://mega.nz/folder/QTtl0awL#TbXtxPybSs0-S6T0bY_BMA
+=|BOX|
+827 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a91-FIIW)[sage] 投稿日：2023/05/25(木) 21:34:08.01 ID:sluU+ZAq0 [7/8]
+Civiに出そうかとも思ったんやが改善余地あるし消されるかもやしで、需要あるかは知らんけどひとまずここで共有してみるわ
+妖精さんを掴むためのLoRAやでー
+そもそもSDが苦手な指系なんで指グロ系の破損生成や指と腕の溶けが特に出やすいんでそこは勘弁やで　controlnet使えば多少は打率あがるとは思う
+
+https://mega.nz/folder/QTtl0awL#TbXtxPybSs0-S6T0bY_BMA
+https://litter.catbox.moe/649ay1.png　https://litter.catbox.moe/pwwhiq.png　https://litter.catbox.moe/lqbooy.png　https://litter.catbox.moe/wfh7bn.png　https://litter.catbox.moe/knopsh.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IbuyRwbYOn-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IbuyRwbYOn.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/op2Kwe_V1b-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/op2Kwe_V1b.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4CGHCP_NbP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4CGHCP_NbP.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TXPbJ5OgDI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TXPbJ5OgDI.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EhH7pM4B0q-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EhH7pM4B0q.png]]
+
+***212スレ925 pncr LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/925
+https://civitai.com/models/76149
+=|BOX|
+925 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 67f4-owa4)[sage] 投稿日：2023/05/26(金) 01:47:17.50 ID:5a1EdFmV0
+様々な調整が可能な高性能LoRAの発表が相次ぐ中…侘び寂び感の薄いLoRAを奉納
+https://civitai.com/models/76149
+https://majinai.art/i/gv0lPf-.png
+https://majinai.art/i/JbkGOyv.png
+https://majinai.art/i/D-1DGN1.png
+https://majinai.art/i/3Z9PjwB.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/06rAVp8za_-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/06rAVp8za_.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/B6YiqS1x_M-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/B6YiqS1x_M.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/erXv0HywOe-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/erXv0HywOe.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oEwWSseCMF-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oEwWSseCMF.png]]
+
+***212スレ928 skbr LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/928
+https://civitai.com/models/76129/
+=|BOX|
+928 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 67f4-owa4)[sage] 投稿日：2023/05/26(金) 01:50:19.85 ID:5a1EdFmV0
+梅雨の季節も近づいてきたので…季語のようなLoRAを奉納
+https://civitai.com/models/76129/
+https://majinai.art/i/-QYNXJ4.png
+https://majinai.art/i/h4laJDn.png
+https://majinai.art/i/1_iWICf.png
+https://majinai.art/i/TKt-SIY.png
+蒸し暑いのはマジ苦手だけど…こういうのは嫌いじゃない…
+趣味があうニキに楽しんで頂ければ幸いですわ
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Quxl5Gh8HS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Quxl5Gh8HS.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/i_Vz2_YaBW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/i_Vz2_YaBW.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rGrYMWqDb1-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/rGrYMWqDb1.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/O10jLLChnL-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/O10jLLChnL.png]]
+
+*** 213スレ902 鏡写しバックLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685050275/902
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+=|BOX|
+902 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9f14-ZJ5B)[sage] 投稿日：2023/05/27(土) 22:15:39.84 ID:ekLM3DgS0 [6/7]
+一度作り直したらまあまあ精度上がったので鏡写しバックLoRAの公開や
+https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
+sex_from_behind_reflectionやで
+https://majinai.art/i/lIp0Y7Y.png
+https://files.catbox.moe/4i28ol.jpg
+https://files.catbox.moe/veoexw.jpg
+https://files.catbox.moe/0a3wye.jpg
+https://files.catbox.moe/4jvqgw.jpg
+https://files.catbox.moe/vfyxhw.jpg
+最終的にはガチャになるのは避けられんし細かい破綻は出るけど楽しんでや
+聖女の献身とかワイも好きなの出されてついやる気が出てしまったやで
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Nj_inIlmhe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Nj_inIlmhe.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WQQ2oe61nx-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/WQQ2oe61nx.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Z4ZutmSJE2-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/Z4ZutmSJE2.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Jer55k35dX-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/Jer55k35dX.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kUrEXP4n9Q-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/kUrEXP4n9Q.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eA1Z7MQ5rh-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/eA1Z7MQ5rh.jpg]]
+
+*** 213スレ956 背景だけに影響を与えるflatみたいなの
+https://fate.5ch.net/test/read.cgi/liveuranus/1685050275/956
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/release/flatBG.safetensors
+=|BOX|
+956 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9f7e-EdO8)[sage] 投稿日：2023/05/27(土) 23:35:37.83 ID:1iziL2CX0
+背景だけに影響を与えるflatみたいなのが出来たんで置いとく
+https://i.imgur.com/bOKmWil.jpg
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/release/flatBG.safetensors
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jL8p9qPVIR-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/jL8p9qPVIR.jpg]]
+
+***214スレ140 瞳の描き込みを減らすLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685198953/140
+https://mega.nz/folder/9admhCxA#UZnE3qnQk4jUjKrmnQ8e7Q
+=|BOX|
+140 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7b88-S+HU)[sage] 投稿日：2023/05/28(日) 01:33:50.68 ID:5vDqnGmc0 [2/13]
+瞳の描き込みを減らすLoRA smpleyeを作ったから置いておくで 正直同じようなLoRAがあった気がするで
+ついでに瞳を細くするLoRA nekomeも教師画像変えたやつ置いておくやで
+eye>smpleye1_8,smpleye2_8,smpleye1+2_8_0406,nekome4_8,nekome2+4_8_0505
+https://mega.nz/folder/9admhCxA#UZnE3qnQk4jUjKrmnQ8e7Q
+https://i.imgur.com/qGGt1gM.png https://i.imgur.com/QGg4RCf.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wozr8jELV3-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/wozr8jELV3.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8uDflez_bz-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/8uDflez_bz.jpg]]
+
+***214スレ543 取り返しのつかないことをやらかしてしまった時の顔LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685198953/543
+https://civitai.com/models/78651/hawawaconcept-lora
+=|BOX|
+543 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ bb81-G56H)[] 投稿日：2023/05/28(日) 19:16:13.22 ID:MLBMnn6R0 [4/4]
+取り返しのつかないことをやらかしてしまった時の顔LoRAできたんでよかったら使ってクレメンス
+ギャグ要素強くてエロには向いてないかもしれん
+
+小銭を自販機の下に落としてしまった時の顔
+https://i.imgur.com/DhxfpIx.png
+ギップルしたらSDが動かなくなった時の顔
+https://i.imgur.com/Ywg3Fz6.png
+
+https://civitai.com/models/78651/hawawaconcept-lora
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0eIqe0yU0R-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/0eIqe0yU0R.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Tg_IxW0Pzp-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/Tg_IxW0Pzp.jpg]]
+
+***214スレ828 おっぱい調整用スライダーLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685198953/828
+https://civitai.com/models/79256
+=|BOX|
+815 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (JP 0H8f-S+HU)[sage] 投稿日：2023/05/29(月) 05:10:44.12 ID:xbgirrfEH
+おっぱい調整用スライダーLoRAが一通り完成した。
+本体サイズも画像は用意したけどプロンプトでいくらでも調整できるから要らんよな。
+
+https://files.catbox.moe/fqyp71.jpg
+
+828 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (JP 0H8f-S+HU)[sage] 投稿日：2023/05/29(月) 06:09:12.32 ID:xbgirrfEH
+ほい。
+https://civitai.com/models/79256
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cNakLjoHfW-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/cNakLjoHfW.jpg]]
+
+***214スレ852 パンツの中に風船が出るLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685198953/852
+https://mega.nz/folder/YtwAHKob#3uyRs8v12yj8gm7atRTjyw
+=|BOX|
+852 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ efba-S+HU)[sage] 投稿日：2023/05/29(月) 08:11:58.74 ID:qBBv7tju0 [1/2]
+>>783
+>>799
+フフ……へただなぁ、ニキくん……欲望の解放のさせ方がへた……っ！ニキが本当にほしいのはこっち……！　
+これを好きなモデルやキャラLoRAでチンして……ホッカホカ（意味深）にして……おかずにしたい……！だろ……？こういうのは小出しにしちゃダメなんだ……！
+
+画像は朝からアップするものではないな……という理性がワイにも残ってたのでmegaのサンプル見てくれ
+redome読めば普通に使えると思うで
+
+ちなもうだいたいわかってると思うけど風船注意やで
+https://mega.nz/folder/YtwAHKob#3uyRs8v12yj8gm7atRTjyw
+||=
+
+***215スレ315 スク水、ビキニ、マイクロビキニ、競泳水着の日焼け跡lora ver1.1
+https://fate.5ch.net/test/read.cgi/liveuranus/1685341329/315
+https://33.gigafile.nu/0728-bf1f562ab78996c1d9eeb43b40dcd47e2
+=|BOX|
+315 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9f28-HzZj)[sage] 投稿日：2023/05/29(月) 22:40:41.20 ID:Z+suBk7r0 [2/2]
+学習の実験がてら日焼け跡loraにずっとチャレンジしてるんやけどなかなかうまくいかんのよ…
+しゃーないからとりあえずアップするわ
+今回はハイレグも追加してみた
+https://33.gigafile.nu/0728-bf1f562ab78996c1d9eeb43b40dcd47e2
+
+サンプル画像がimgurもcatboxも瞬殺されるから
+ファイルの中に学習メモとかと一緒に入れてるで試してみてや
+||=
+
+***215スレ737 高乳圧LoRAアップデート
+https://fate.5ch.net/test/read.cgi/liveuranus/1685341329/737
+https://civitai.com/models/22736/udeoshizuri
+=|BOX|
+737 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4b44-S+HU)[sage] 投稿日：2023/05/30(火) 20:13:58.62 ID:H0uLsJi80
+お久しぶりですパイズリ研究部の者です
+遥か昔に上げた高乳圧LoRAをアプデしたので置きにきました(v4)
+世界中のズリキチの為に活用していただけると幸いです
+
+https://civitai.com/models/22736/udeoshizuri
+https://i.imgur.com/nZ8DdmO.png
+https://i.imgur.com/Xo7IzwV.png
+https://i.imgur.com/VCfNxpd.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/CtyLFQ93cj-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/CtyLFQ93cj.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bp4o6Xl93m-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/bp4o6Xl93m.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ljYmKg2UXB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ljYmKg2UXB.png]]
+
+***215スレ778 妖精掴み
+https://fate.5ch.net/test/read.cgi/liveuranus/1685341329/778
+https://civitai.com/models/80557?modelVersionId=85439
+=|BOX|
+778 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9f91-S+HU)[sage] 投稿日：2023/05/30(火) 21:06:27.93 ID:xDer72yx0 [6/11]
+まあギリ許される範囲やろかなーということで投稿画像えいえいして妖精掴みciviのほうにあげたわ
+バージョン内容的には説明文以外Megaで配った内容と変わらんのでもう落としとるニキは気にせんでええで
+
+https://civitai.com/models/80557?modelVersionId=85439
+https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4e38e4a6-e592-4aff-b254-858a3d924e51/width=896/Concept_SizeDiffGrab_v1r4-MP.jpeg
+https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c90ba780-c524-4195-b2e9-4a7a49ad7ecc/width=1200/00307-1674043740.jpeg
+https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0d53879b-84ec-465c-b825-573daf4fcf80/width=1024/00204-1646230340.jpeg
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/c1SgOb095S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/c1SgOb095S.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GBeVR1mgnb-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/GBeVR1mgnb.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N3uf_MpKMX-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/N3uf_MpKMX.jpg]]
+
+***215スレ904 垂れ目LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685341329/904
+https://civitai.com/models/80690
+=|BOX|
+904 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9fcb-a4n+)[sage] 投稿日：2023/05/31(水) 01:14:35.03 ID:Fl2XLTvG0 [1/2]
+ほいよ垂れ目LoRA。マイナス適用でつり目ね
+https://civitai.com/models/80690
+
+層別学習させたら試作よりもだいぶ安定したで。斜め顔だとデッサン崩れがちなのは堪忍してや。あと色指定が少々トリッキーや。説明読んでなー
+タレ目の人いつも困ってそう問題(だがそれがいい)
+http://imgur.com/J2j60QA.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/kAuWHCV7sW-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/kAuWHCV7sW.jpg]]
 
 
 ** アートスタイル・画風
@@ -2041,9 +2483,111 @@ https://civitai.com/models/22828/pitch-black-shadow
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RYLkvxMuLA-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/RYLkvxMuLA.jpg]]
 
+***211スレ37 やわらかた画風変更LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684756133/37
+https://mega.nz/folder/tA0DVIKR#Kqma9dDucFeTrZM_SHt82w
+=|BOX|
+37 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1b88-owa4)[sage] 投稿日：2023/05/22(月) 21:17:36.42 ID:12qVBudG0 
+プラス適用でふんわり柔らかな画風へ、マイナス適用でパッキリ固めの画風へ変更できるスライダー型LoRAを配布するで
+具体的に何に使うかわからんし、効果も地味やが、まあなんかに使えるやろたぶん
 
+yawara-kata（やわらかた画風変更LoRA）
+https://mega.nz/folder/tA0DVIKR#Kqma9dDucFeTrZM_SHt82w
 
+サンプルうにゅほはこちら
+https://i.imgur.com/8pCBjdO.jpg
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tesdJ9AjAc-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/tesdJ9AjAc.jpg]]
 
+***211スレ110 rapid punches3
+https://fate.5ch.net/test/read.cgi/liveuranus/1684756133/110
+https://mega.nz/folder/9admhCxA#UZnE3qnQk4jUjKrmnQ8e7Q
+=|BOX|
+110 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6f88-FIIW)[sage] 投稿日：2023/05/22(月) 23:18:10.12 ID:NCTUrLWg0 [2/3]
+((((hyper extreme ultra high speed super sonico countless rapid punches))))
+https://majinai.art/i/7EftW8q.png
+rapid punches3
+https://mega.nz/folder/9admhCxA#UZnE3qnQk4jUjKrmnQ8e7Q
+RX6650XTで7m48.219sで焼き上がったくそLoRAですがよかったらネタにどうぞ
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ES8qGA43Go-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ES8qGA43Go.png]]
+
+***212スレ113 イラストを3DっぽくするLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/113
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test
+=|BOX|
+113 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4a7e-xpLh)[sage] 投稿日：2023/05/24(水) 17:19:28.40 ID:AqsAkrUF0
+イラストを3DっぽくするLoRA作ってみたんで置いときます
+https://i.imgur.com/uWQnK3s.jpg
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/bxIvlYCQ7E-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/bxIvlYCQ7E.jpg]]
+
+***212スレ154 エロ漫画LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/154
+https://huggingface.co/hidari/B/tree/main
+=|BOX|
+154 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1b28-owa4)[sage] 投稿日：2023/05/24(水) 18:46:49.82 ID:a4Gpt47F0
+https://majinai.art/i/uVf9JoS.png
+https://huggingface.co/hidari/B/tree/main
+||=
+
+***212スレ246 洒落た構図？になるLoRAとlora学習用のコイカツ画風モデル
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/246
+https://huggingface.co/RedRayz/MyLora
+=|BOX|
+246 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7a38-a+t/)[] 投稿日：2023/05/24(水) 21:40:55.70 ID:x+w1S/7n0
+ちょっとだけ洒落た構図？になるLoRAとlora学習用のコイカツ画風モデル作ったので&#63767;に置いとくわ
+https://huggingface.co/RedRayz/MyLora
+https://majinai.art/i/jx9HLNs.webp
+画風モデルはコイカツのスクショだけでキャラ学習するときに使うとええで
+画風まで学習するのを抑えられる
+https://majinai.art/i/fGQEwGy.webp
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AJjfv6TyS8-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/AJjfv6TyS8.jpg]]
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1HEC8xphlL-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/1HEC8xphlL.jpg]]
+
+***213スレ694 エロ漫画LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685050275/694
+https://huggingface.co/hidari/B/tree/main
+=|BOX|
+684 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0b28-/RYi)[sage] 投稿日：2023/05/27(土) 13:36:15.82 ID:TnyRax/+0 [1/2]
+前にも貼ったけど、もう一回貼っとくわ
+エロ漫画LoRAや
+https://huggingface.co/hidari/B/tree/main
+||=
+
+***213スレ727 携帯画質LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1685050275/727
+https://mega.nz/folder/scQWyZJQ#MKp3KLq1KiBcFQETihLaUA
+=|BOX|
+727 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fbe8-S+HU)[sage] 投稿日：2023/05/27(土) 15:32:39.61 ID:f000uHRA0 [3/4]
+自分でも用途のわからん携帯画質LoRAが完成した
+https://mega.nz/folder/scQWyZJQ#MKp3KLq1KiBcFQETihLaUA
+
+そこそこ小綺麗な画像が
+https://files.catbox.moe/xw1o61.jpg
+劣化するで
+https://files.catbox.moe/l33h1w.jpg
+
+何に使うんやろな…
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iKLUUhRfjP-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/iKLUUhRfjP.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/94LYINfxPs-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/94LYINfxPs.jpg]]
+
+*** 215スレ938 塗り系LoRA3種
+https://fate.5ch.net/test/read.cgi/liveuranus/1685341329/938
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test
+=|BOX|
+938 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9f7e-EdO8)[sage] 投稿日：2023/05/31(水) 03:58:36.85 ID:YkVI8+Eg0 [2/2]
+おっと、コレ結構需要あるのだな……
+OKOK上げたぞ、塗り系LoRA3種追加入りまーす
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test
+https://files.catbox.moe/r38vlh.jpg
+https://files.catbox.moe/ejru3m.jpg
+hadanuriは名前の通り肌の塗りを変えるLoRA、さっきのはhadanuri1の方だな
+yawanuriは肌以外の塗りにも使えるLoRAだ。コレ実はflat学習時に、塗りの硬さ軽減用として作ったやつだったりする、今更の公開だよ
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/adrbNqa3Rq-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/adrbNqa3Rq.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3h4zyCl8Sh-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/3h4zyCl8Sh.jpg]]
 
 
 ** 画面効果
@@ -2303,8 +2847,66 @@ https://i.imgur.com/b7KJw7d.png
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4GykPDyXF6-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/4GykPDyXF6.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lTF9MA2F0Q-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lTF9MA2F0Q.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4Iac9mJYU4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4Iac9mJYU4.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yCxfUUulCL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yCxfUUulCL.png]]
 
+*** 201スレ964 光沢調整LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1683546068/946
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test2
+=|BOX|
+964 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 927e-tcUg)[sage] 投稿日：2023/05/10(水) 02:32:58.90 ID:K5km/Fa70 
+スペキュラーLoRAに感銘を受け、とある実験も兼ねて自分でも似たようなの作ってみたのだ
+https://i.imgur.com/ZVBdFvN.jpg
+https://i.imgur.com/tbJPEVV.jpg
+普通に使うとつや消しLoRAな感じ、目のハイライトも消えるよ
+全体に効果のある光沢調整LoRAだね、構図への影響が割と少なく仕上がった感
+層別でout04からout11にだけ適用すれば、さらに影響を減らせるよ
+ちなみに-3で適用してみたらこうなった、すっごいテカテカしてるよねぇ？
+https://i.imgur.com/QVjolv6.jpg
+………要る
 
+965 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 927e-tcUg)[sage] 投稿日：2023/05/10(水) 02:38:22.53 ID:K5km/Fa70 [2/2]
+おっと、ミスった
+一応、さっきのつや消しLoRAはflatと同じ所に置いといたよ
+deluster1とdeluster2で2つあるけど、彩度への影響がちょっと違う感じ
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Bivw26Ldqr-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/Bivw26Ldqr.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TlWG9CxVPQ-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/TlWG9CxVPQ.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2hw8ij0C9m-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/2hw8ij0C9m.jpg]]
 
+***209スレ802 H擬音LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1684555065/802
+https://civitai.com/models/71321?modelVersionId=76018
+=|BOX|
+802 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6f7b-FIIW)[sage] 投稿日：2023/05/21(日) 10:39:52.70 ID:iBlfYYIP0
+赤ちゃん学習だが、H擬音Lora作ったので試してみてほしい。
+一枚絵に謎テキスト＋ハート擬音がだせるので、なんか使えそうな気がした。
+Weight:1.5ぐらいから、キャラや画風Loraとの兼ね合いで調整してあげてほしい。
+推奨プロンプト：speech bubble, text focus, heart, <lora:hgion:1.5>
+https://civitai.com/models/71321?modelVersionId=76018
+
+健全なハート擬音の使い方https://imgur.com/Uhi1fGV.png
+https://imgur.com/Uhi1fGV.png　https://imgur.com/mKwC2SN.png
+健全なエロ擬音の使い方
+https://imgur.com/9qgWLmv.png　https://imgur.com/pYuBChf.png　https://imgur.com/N6jkyK6.png　https://imgur.com/F8hXZ9T.png　https://imgur.com/WPxxIlW.png　https://imgur.com/4AIvaeZ.png　https://imgur.com/1nY0RCk.png　https://imgur.com/RRIsXZy.png　https://imgur.com/dazPSz8.png
+NG集
+https://imgur.com/h15smE4.png　https://imgur.com/MbdL2gB.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Lj95WyN7SY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Lj95WyN7SY.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/97U9Pqd0qr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/97U9Pqd0qr.png]]
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/K1K9xv0fZj-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/K1K9xv0fZj.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/CkHu4L6gY8-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/CkHu4L6gY8.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EgBA8riiDN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/EgBA8riiDN.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/q68plLWPc7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/q68plLWPc7.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AONwcA8Zrz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/AONwcA8Zrz.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pA4UomGmbd-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pA4UomGmbd.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Ym2bJpVaH2-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Ym2bJpVaH2.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lKFm5kigWT-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lKFm5kigWT.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mdwNMgNQtW-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/mdwNMgNQtW.png]]
+
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UJFXMgblMq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/UJFXMgblMq.png]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/McIvnk4Ikn-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/McIvnk4Ikn.png]]
+
+***212スレ272 Depth of Field（背景ぼかし）的なもの
+https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/272
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+=|BOX|
+272 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c388-xpLh)[sage] 投稿日：2023/05/24(水) 22:27:05.07 ID:iuyrcw/40
+Depth of Field（背景ぼかし）的なものを作ってみたで
+マイナスで使うと背景がハッキリするはずやが、flatマイナスみたいな精細さが上がる効果は多分無いで
+https://mega.nz/folder/wDs2WCRB#F_LT9gLaGAWos7A4ZPIclw
+DoFフォルダに入っとる
+
+https://i.imgur.com/eUA6WEp.png
+https://i.imgur.com/Zttvz97.png
+劇的な効果は無いんやが、お試し感覚で使ってくれたら嬉しいで
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VIqcFzlsEI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/VIqcFzlsEI.png]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_kGBgPBAaG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_kGBgPBAaG.png]]
 
 
 
