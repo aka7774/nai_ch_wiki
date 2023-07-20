@@ -21,6 +21,12 @@
 
 
 #contents
+* 2023-07-19 Waifu Diffusion XL(WDXL)がリリース/SDXL 1.0のリリースが延期
+[[Stable Diffusion XL(SDXL) 0.9>https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9]]をファインチューニングした[[Waifu Diffusion XL(WDXL)>https://huggingface.co/hakurei/waifu-diffusion-xl]]がリリースされた
+1111webuiはまだdevブランチではあるが、[[1.5.0からSDXLに対応>https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/11862]]しており試すことができる
+スレ民の感想としてはまだSD1.5系のほうが良い、乗り換えるほどではないという意見が多いものの、今後の動向に期待してLoraなどを作り始めているニキも観測されている
+7月中旬リリースを予定していた[[SDXL 1.0はリリースが1週間ほど延期される>https://www.reddit.com/r/StableDiffusion/comments/153907z/sdxl_will_be_out_in_a_week_or_so_phew/]]ようだが、こちらも注視していきたい
+
 * 2023-07-14 カムカム法解説記事
 2023-06-30に紹介されたテクニックの解説記事が発表された。
 =|BOX|
@@ -1115,6 +1121,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

@@ -20,6 +20,8 @@ Linuxだと頭にtimeをつければ出てくる。
 
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|time(秒)|オプション|バージョン|備考|
+|RTX 3090|24GB|Ryzen9 5950X|2m38.367s|--xformers --batch_size 4|0cfcb5a49cf813547d728101cc05edf1a9b7d06c|torch:2.0.1 xformers:0.0.20 Ubuntu:22.04 Python:3.10.6  3090を2つ使った場合 accelerate configでmulti-gpuを選択|
+|RTX 3090|24GB|Ryzen9 5950X|4m31.047s|--xformers --batch_size 4|0cfcb5a49cf813547d728101cc05edf1a9b7d06c|torch:2.0.1 xformers:0.0.20 Ubuntu:22.04 Python:3.10.6  PyTorch1系&xformers0.0.16だとlossがnanになる|
 |RX 6650XT|8GB|Ryzen 5 5600G|18m6.079s|--sdpa --cache_latents --gradient_checkpoint export PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.8,max_split_size_mb:256'|449ad7502cb0f36cd8b94b2c7d98ec204af234a9|torch: 2.0.1+rocm5.4.2 bitsandbytes-rocm3.7 origin/original-u-net|
 |RX 6650XT|8GB|Ryzen 5 5600G|15m49.325s|--sdpa --train_batch_size=1 --cache_latents|449ad7502cb0f36cd8b94b2c7d98ec204af234a9|torch:2.0.1+rocm5.4.2 bitsandbytes-rocm3.7 origin/original-u-net|
 |RTX 2070 SUPER|8GB|Ryzen 7 5800X|7m24.127s|--xformers --batch_size 2 --cache_latents||torch2.1,xformers0.0.19 cache_latentsオンで低解像度で大幅に高速化|
