@@ -12,7 +12,7 @@
 
 ** 色がくすんでる気がする
 Vaeが設定されていないときに見られる現象。
-nai.vae.ptやAnything-V3.0.vae.ptなどをmodels/VAEフォルダ内に配置して、WebUIの上部タブのプルダウンから合うものを選びます。
+nai.vae.ptなどをmodels/VAEフォルダ内に配置して、WebUIの上部タブのプルダウンから合うものを選びます。
 [[VAE一覧>ローカルのリソース#resource_vae]]も参照。
 
 図：左がVaeOFF、右ON
@@ -29,7 +29,7 @@ nai.vae.ptやAnything-V3.0.vae.ptなどをmodels/VAEフォルダ内に配置し�
 あとは、ブラウザでハードウェアアクセラレーションを無効にし、メモリ不足エラーが発生している場合はVRAMを占有している可能性のあるものをすべて閉じ、GFPGAN(存在する場合)を削除してください。
 特にVRAM 8GBの学習は容量ギリギリなのでこういう設定が大事っぽい。
 
-** 簡単に設定切り替えたいンゴ
+** 簡単に設定切り替えたい
 
 画面の上にこういうの出せる。
 
@@ -60,7 +60,7 @@ Windowsにはファイル名/フォルダ名は異本的に256文字までとい
 
 - auto: 以前と同じ(ckptと同名のvae.ptファイルを読み込む)
 - 指定: ckptにかかわらず指定したvaeを読み込む
-- none: 常にvaeを読み込まない
+- none: モデル埋め込みのものを使用
 
 ** PNG infoでText2Imgに送るとckptまで変更されてロード始めるのを回避したい
 設定→UI設定
@@ -102,12 +102,15 @@ ui-config.json で変えられる
 
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/e5VuAv8MAb.png)
 
-VRAM 8GBだとFHD(1920x1088)はギリギリ。UpscalerによってはCUDA OOMでアウト。
+VRAM 8GBだとFHD(1920x1088)はギリギリ。UpscalerによってはVRAMが一瞬溢れて共有メモリを使用する。
 VRAM不足を補うためには、生成時間が延びるけど--medvramを指定する手がある。
 3060か4070Ti買っちゃう手もあるかも。
 
 *** Upscalerについて
-Latent系はとても精細な絵になるが、時々全く違う構図になったり崩れたりする。とくにLoRAを使ってると発生しやすい。
+Upscalerによってデティールが大きく異なる。
+4x-UltraSharpなどの追加のUpscalerはmodels/ESRGANに入れる。
+
+Latent系はとても精細な絵になるが、内容が大きく変化したり崩れたりする。モデルによっては塗りが変化して相性が悪いものもある。
 例えばこれが
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jCIwDrvPXf-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jCIwDrvPXf.png]]
 
@@ -217,8 +220,7 @@ DPM++ 2M Karras
 DDIMかPLMSが「for DDIM」で、それ以外が「for ancestral samplers」っぽい。
 
 ** CLIP_stop_at_last_layersについて
-専門的な事はわからないので数値変えたざっくりとした印象だけ。
-詳しいニキの修正加筆求む。
+数値を上げると文章の解釈が大雑把になる。イラストは2が良いとされる。
 
 モデルはanimefull-final-prunedで試した。生成したのはとある版権キャラ。
 1にすると奇形が増えた。だがこれはプロンプトに忠実になるせい？精密な呪文であればいいのかも。

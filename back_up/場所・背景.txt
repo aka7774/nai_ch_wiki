@@ -38,6 +38,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|cage|籠・檻|日本語でもそのまま「ケージ」と呼ぶことも多い。よく間違う人がいるが「ゲ」ージではない。|https://image02.seesaawiki.jp/n/h/nai_ch/oe_CIxnY0v.png|
 |workshop|工房||https://image02.seesaawiki.jp/n/h/nai_ch/1wSpL8fTY9.png|
 |abandoned house|廃屋||https://image01.seesaawiki.jp/n/h/nai_ch/raMgSJFQDE.png https://image02.seesaawiki.jp/n/h/nai_ch/Az7ma9UpPz.png|
 |abandoned factory|廃工場||https://image02.seesaawiki.jp/n/h/nai_ch/vT77Z24H3Z.png|
@@ -134,8 +135,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|valley|谷|山や丘陵地帯に取り囲まれた低地のこと。|https://image01.seesaawiki.jp/n/h/nai_ch/Agk4zQcv6E.png|
-|cliff|崖|垂直に切り立った峡谷、もしくは海辺が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/Yw1Z5JG9FW.png|
+|monument|記念碑|大型の台座の上に立つ彫像が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/EW22ygPci_.png|
+|pedestrian deck|ペデストリアンデッキ|公共の場所に設けられる大型の歩廊。|https://image02.seesaawiki.jp/n/h/nai_ch/6PmyjcSir4.png|
+|terrace|テラス|家屋の母屋から突き出した部分。|https://image01.seesaawiki.jp/n/h/nai_ch/EYiSunQuLX.png|
 |lighthouse|灯台|灯台が単独で描写されることが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/N5beTVWB0e.png|
 |abandoned amusement park|放棄された遊園地|abandonedをつけるといい感じに廃墟感が出る。|https://image01.seesaawiki.jp/n/h/nai_ch/ocuBPvC0cB.png https://image02.seesaawiki.jp/n/h/nai_ch/K0ca64ZqkS.png|
 |chinese temple|中国の寺|細かな意匠に中国らしさが表れる。日本の寺より派手なイメージになる。|https://image02.seesaawiki.jp/n/h/nai_ch/l0ATBoOdf4.png https://image02.seesaawiki.jp/n/h/nai_ch/PRBEuqnWuc.png|
@@ -252,6 +254,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|valley|谷|山や丘陵地帯に取り囲まれた低地のこと。|https://image01.seesaawiki.jp/n/h/nai_ch/Agk4zQcv6E.png|
+|cliff|崖|垂直に切り立った峡谷、もしくは海辺が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/Yw1Z5JG9FW.png|
 |tsunami|津波|大きな波として描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/4p83b6QpRP.png|
 |ripples|さざ波|水面に水滴が落ちた時に発生する波紋が描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/Hc630uNz9v.png|
 |swells|うねり|波よりも水面自体が盛り上がった感じになる。UCにsurferが必須。無いとほぼ確実にサーファーが描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/fGLjXzzXYr.png|
