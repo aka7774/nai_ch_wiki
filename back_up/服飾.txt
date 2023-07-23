@@ -137,6 +137,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|baggy pants|バギーパンツ|袋のようにゆったりとした、腰から裾までのストレートラインが特徴的なパンツ。|https://image01.seesaawiki.jp/n/h/nai_ch/o29ynz_xtf.png|
 |yoga pants|ヨガ・パンツ（レギンス）|ヨガ用のスポーツウェアのこと。着やすさからカジュアルウェアとして着用する人も増えた。ただ、欧米でもラフすぎるとの認識があるようで、相応しくない状況での着用を禁止・制限しているところも多い。|https://image01.seesaawiki.jp/n/h/nai_ch/cbf491pTmM.png|
 |trousers|ズボン|イギリス英語での呼称。|https://image01.seesaawiki.jp/n/h/nai_ch/GpsITLXFat.png|
 |sweat pants|スウェットパンツ|シャツと同じく汗かき描写になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/rDKNrNsP94.png|
@@ -241,6 +242,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|protect gear|プロテクトギア|スパンデックスより装甲が強化された戦闘服になる。|https://image02.seesaawiki.jp/n/h/nai_ch/fymuxXZwtX.png https://image02.seesaawiki.jp/n/h/nai_ch/rriUS2OPYm.png|
 |spandex|スパンデックス|ポリウレタン弾性糸で、繊維自体がゴムのように５〜8倍も伸びる伸縮性の高い素材。プロンプトで使うとボディにフィットした戦闘服みたいな感じで描写される。ガンツスーツやプラグスーツみたいな感じになる。|https://image02.seesaawiki.jp/n/h/nai_ch/1iBuSZUmXV.png https://image02.seesaawiki.jp/n/h/nai_ch/_EqvXY3mHN.png|
 |coveralls, all-in-one work clothes, |つなぎの作業着|オーバーオールが出ることもある。|https://image02.seesaawiki.jp/n/h/nai_ch/hIcBzJz1OD.png https://image01.seesaawiki.jp/n/h/nai_ch/01yq1m6Lx8.png|
 |pilot suit / rider suit / driver suit|パイロットスーツ|試した限りではこの３つのどれでも大差は無い。乗り物を指定する（F1 carやmotorcycleなど）と合うように描写するが、基本的に近未来的なロボットパイロットのスーツとして描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/K8NI0xrQpz.png https://image02.seesaawiki.jp/n/h/nai_ch/wBOMG2HUmp.png|
@@ -395,6 +397,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|trainers|スニーカー|イギリス英語での呼称。|https://image01.seesaawiki.jp/n/h/nai_ch/JIiy8e_k3L.png|
 |wellies|長靴|welliesはイギリス英語。rain boots（アメリカ英語）よりも再現度が高い。NovelAIは英国に関することはやたらと再現度が高い傾向がある。|https://image02.seesaawiki.jp/n/h/nai_ch/wjhHlPwULA.png|
 |combat boots|コンバット・ブーツ|脹脛付近まであるハイカットと靴紐が特徴のブーツ。軍隊の戦闘用ブーツとして用いられたためこの名称で呼ばれる。|https://image02.seesaawiki.jp/n/h/nai_ch/n5QBnRYS0C.png|
 |ankle boots|アンクル・ブーツ|くるぶしあたり、あるいはそれよりやや上までの短い丈のブーツ。|https://image01.seesaawiki.jp/n/h/nai_ch/cFII7v8NOk.png|
