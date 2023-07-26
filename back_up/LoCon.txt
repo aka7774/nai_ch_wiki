@@ -1,24 +1,26 @@
 *概要
-LoRAでは学習できていない領域まで拡張して学習するちょっと新しいやつ
+LoRAでは学習できていない領域まで拡張して学習するちょっと新しいやつ。なお、LoCon(C3Lier)はsd-scripts単体でできるようになっている。
 最初はLoConというリポジトリで開始されたが、のちのLoHaなど新しい概念が追加されたため作者がLyCORISというリポジトリで各種の概念をまとめることにしたらしい。
 『LyCORIS』
 ┣ Locon
-┗ LoHa
+┠ LoHa
+┠ LoKR
+┗ (IA)^3
 みたいな感じ
 
 *情報
 
 **学習
-%%公式リポジトリ: https://github.com/KohakuBlueleaf/LoCon%% ←LyCORISに統合されました
 公式リポジトリ：https://github.com/KohakuBlueleaf/LyCORIS
 
 
 ** 使用
-拡張を入れる必要がある。またAutomatic1111を最新にしておく(=ビルトインのLoRA機能に対応している必要がある)。
-%%LoRAフォルダにモデルを入れる場合は https://github.com/KohakuBlueleaf/a1111-sd-webui-locon%%
-C3Lier(LoCon)は1111が対応したので不要になった。
+1111 WebUIを最新にしておく(=ビルトインのLoRA機能に対応している必要がある)。
 
--LyCORISフォルダにモデルを入れる場合
+*** WebUI1.4.x以前
+次のExtensionをインストールし、models/LyCORISにファイルを入れる。
 https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris
-LyCORIS固有のアルゴリズム(LoHa,ia3,lokr)を使用したLoRAはこっち
+
+*** WebUI1.5.0以降
+標準対応しているためExtensionは不要。通常のLoRAと同じ扱いでよく、モデルはmodels/loraに入れる。
 
