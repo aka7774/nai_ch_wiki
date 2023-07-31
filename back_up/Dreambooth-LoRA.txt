@@ -769,29 +769,19 @@ LoRAはその種類によって、次のように分けられる
 
 **画像生成する時の指定方法や使用extensions
 |&#127924;指定(プロンプト指定)|必要extensions|対応LoRA|TEnc/UNet等の個別パラメータ指定|階層LoRA|標準のファイル設定フォルダ~~(変更は可能)|備考|
-|<lora:>|(無し)|LoRA(��)~~LoCon(��,��,��)|不可(一括の強度指定のみ)|可|models\LoRA|1111標準機能を使用~~LoConにも対応した|
-|^|[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]|LoRA(��)~~LoCon(��,��,��)~~LyCORIS(��,��,��)|不可(一括の強度指定のみ)|可|models\LoRA|最新のLyCORISアルゴリズム(dyLoRA)には非対応~~作者曰く使用は好ましくなく、代わりにa1111-sd-webui-lycorisを使用して欲しいとの事|
-|<lyco:>|[[a1111-sd-webui-lycoris>https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris]]|LoRA(��)~~LoCon(��,��,��)~~LyCORIS(��,��,��,��)|可|可 (指定の仕方に注意)|models\LyCORIS|a1111-sd-webui-loconの機能更新版でLyCORISの全アルゴリズムに対応~~&#127924;ボタンにLyCORISタブが新たに出来、<lora:>と同じように自動入力出来る~~フォルダ位置に注意|
+|<lora:>|(無し)|LoRA(��)~~LoCon(��,��,��)~~LyCORIS(��,��,��,��)|不可(一括の強度指定のみ)|可|models\LoRA|1111標準機能を使用~~v1.5.0以降でLyCORISにも対応|
+|<lyco:>|[[a1111-sd-webui-lycoris>https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris]]|LoRA(��)~~LoCon(��,��,��)~~LyCORIS(��,��,��,��)|可|可 (指定の仕方に注意)|models\LyCORIS|v1.5.0から標準機能で生成出来るため、基本的に使う必要が無くなった~~a1111-sd-webui-loconの機能更新版でLyCORISの全アルゴリズムに対応~~&#127924;ボタンにLyCORISタブが新たに出来、<lora:>と同じように自動入力出来る~~フォルダ位置に注意|
 |プロンプト指定なし|[[Additional Networks>https://github.com/kohya-ss/sd-webui-additional-networks]]|LoRA(��)~~LoCon(��,��,��)|可|不可|extensions\sd-webui-additional-networks\models\lora|プロンプト入力ではなく拡張タブで指定|
-
 **階層LoRAの指定の方法
+v1.5.0以降では指定の仕方が変わっているので注意
+LoRAの場合でも ''lbw='' を指定するようになった
 |種類|>|指定例(IN02を指定する場合)|解説|
-|<lora:>||<lora:"lora name":1:IN02>|"lora name"の後に　LoRAの強度　を指定してから階層指定|
+|<lora:>||<lora:"lora name":1:1:lbw=IN02>|"lora name"の後に　TEnc:UNet の強度を指定してから　lbw=　で階層指定|
 |<lyco:>|DyLORAの場合|<lyco:"lora name":1:1:1:lbw=IN02>|"lora name"の後に　TEnc:UNet:Dyn　の強度を指定してから　lbw=　で階層指定|
 |^|DyLORA以外|<lyco:"lora name":1:1:lbw=IN02>|"lora name"の後に　TEnc:UNet　の強度を指定してから　lbw=　で階層指定~~省略したDynはデフォルト値としてNoneが内部セットされる|
-|^|^|<lyco:"lora name":1:lbw=IN02>|"lora name"の後に　TEnc　の強度を指定してから　lbw=　で階層指定~~Unetは省略すると、TEncと同じ値がセットされる(この例だと1指定)~~省略したDynはデフォルト値としてNoneが内部セットされる|
 **<lora:>と<lyco:>の使い分けについて
-<lora:>と<lyco:>では生成画像に差は出ない
-その為
--LoRA(リエラ)・LoConしか使わない場合　→　extensionsなしで <lora:>
--LoHa等、LoCon以外のアルゴリズムを使う場合　→　a1111-sd-webui-lycoris を導入して <lyco:>
--どの種類か調べるのが面倒くさい場合　→　全部 models\LyCORISに入れて <lyco:> 
-が安定と思われる
-
-尚、起動オプションに --lyco-dir でmodels\LoRAフォルダを指定すればファイルのコピーや移動をする必要は無いし、シンボリックリンクを張っても使える
-models\LoRAにファイルを置いてオプション指定やシンボリックリンクでLyCORISフォルダを指定しておけば、管理が楽になるしSSDやHDDの容量にも優しい
-必要に応じて<lora:>と<lyco:>を使い分ければよい
-
+v1.5.0以降では、lycorisプラグインが不要になり、1111の内蔵のLoRAで生成が出来る用になった。
+その為 a1111-sd-webui-lycoris を導入する必要はなく、<lyco:>を使う必要も無くなった
 * LoRA層別学習
 U-Netの階層別に学習率やDim/Alphaを指定できるようになった。
 まだ出たばかりで詳細不明。とりあえず作者の説明書を読もう。
@@ -924,3 +914,6 @@ mem_eff_attnとgradient_checkpointingを有効にすれば1024x1024もギリギ�
 -- 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。
 -- 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
 ---拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。
+
+
+
