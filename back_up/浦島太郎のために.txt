@@ -21,6 +21,13 @@
 
 
 #contents
+* 2023-07-28 SDXL 1.0がリリース
+stability.aiから満を持してSDXL 1.0がリリースされた([[SDXL 1.0リリース記事>https://ja.stability.ai/blog/sdxl10]])
+masterpieceなどのタグを付けたりしなくてもシンプルなプロンプトでまともな画像がでるようになった．
+現段階ではControlNetが使えないが，リリース記事によれば開発は行っているらしく，後ほどリリースするとのこと．
+[[civitaiではSDXL 1.0のコンテスト>https://civitai.com/articles/1462]]が開かれているそうで，クリーンで使い勝手の良いモデルが作られることが期待される
+
+
 * 2023-07-19 Waifu Diffusion XL(WDXL)がリリース/SDXL 1.0のリリースが延期
 [[Stable Diffusion XL(SDXL) 0.9>https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9]]をファインチューニングした[[Waifu Diffusion XL(WDXL)>https://huggingface.co/hakurei/waifu-diffusion-xl]]がリリースされた
 1111webuiはまだdevブランチではあるが、[[1.5.0からSDXLに対応>https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/11862]]しており試すことができる
@@ -1121,6 +1128,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
