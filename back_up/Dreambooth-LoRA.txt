@@ -119,7 +119,8 @@ WebUIのエクステンションに対応。スタンドアロンで動かすと
 https://github.com/RedRayz/Kohya_lora_param_gui
 https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定してコマンドラインに渡すGUIです。
 - accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
-- kohya-ssやEasyTrainScriptsとは違い、sd-scriptsを標準の方法でインストールしておくことが前提。
+- 単体でsd-scriptsのインストール・更新ができるようになった。
+- LECOの学習もできる。
 - としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。
 ** sd-webui-train-tools | https://github.com/liasece/sd-webui-train-tools
 AUTOMATIC1111 SD WebUI 用の 拡張機能
