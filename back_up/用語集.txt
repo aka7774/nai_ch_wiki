@@ -5,6 +5,7 @@
 |~略語|名称|説明|
 |SD|Stable Diffusion||
 |WD|Waifu Diffusion|ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
+|XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。なおそのテスト版のSDXL 0.9を指す場合もある|
 |NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつや|
 |SFW|Safe for work|こっちはNがついてなくて全年齢や|
 |NAI|NovelAI|単なる略称。|
