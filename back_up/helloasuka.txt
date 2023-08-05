@@ -113,7 +113,7 @@ Batch Count 10、Batch Size 1
 |RTX 4080|16GB|Core i7-13700||13.02|--xformers --opt-channelslast|RAM16GB パワーリミット100%|
 |RTX 3060 Laptop|6GB|Core i7-11800H||47.93|--opt-sdp-attention --opt-sdp-no-mem-attention|torch: 2.0.0+cu118 memory:64GB|
 |RX 5700X|8GB|Ryzen 7 3700X||236.26|--skip-torch-cuda-test --no-half --no-half-vae --medvram|7th3A torch 1.13.1 xformers無し 改造手順10未適用|
-|RX 6650XT|8GB|Ryzen 5 5600G||59.52|--opt-sdp-attention|torch: 2.0.0+rocm5.4.2 Ubuntu20.04.6 RAM16GB Sapphire Pulse定格 PCIe3.0|
+|RX 6650XT|8GB|Ryzen 5 5600G||59.52|--opt-sdp-attention|torch: 2.0.0+rocm5.4.2 Ubuntu20.04.6 RAM16GB MAX143.0W PCIe3.0|
 |RTX 4070 Ti|12GB|Ryzen 7 3700X||18.57|--opt-sdp-no-mem-attention --opt-channelslast --no-half-vae|torch: 2.0.0+cu118|
 |RTX 2060|6GB|Ryzen 5 5600X|50秒|50.66|--opt-sdp-attention --opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
 |RTX A4000|16GB|Ryzen7 3700X|27.40|26.48|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
