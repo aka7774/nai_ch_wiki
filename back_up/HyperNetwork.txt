@@ -2,25 +2,7 @@
 ** 概要
 HyperNetworkとは、Stable Diffusionのファインチューニング方式の一つ。NovelAIリークが基になっているらしい。
 学習が遅く設定も難しいし大した成果が無いためか、現在は5ch本スレで話題を全く見かけないほどに廃れた。本当にこの界隈の進化は速い。
-強いて言えば画風調整に有用。
-
-
-2023年1月21日現在、
-学習やなくて使用する方やけど、アップデートでhypernetworkを標準UIからの指定が変わったが、現状正常に動作していない模様。
-治るまでの間はMultiple Hypernetworks Extensionで指定してやってや
-https://github.com/antis0007/sd-webui-multiple-hypernetworks
-
-2022年12月14日現在、hypernetworkは以下のExtensionを使用するのがオススメ。
-https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension
-
-このExtensionはWEB UI(AUTOMATIC1111)に含まれているものに機能追加やバグの修正を施したもの。
-
-とりあえず変更点を書きます。
-
-** バグ修正
-このExtensionを使う事により以下のバグを回避することが可能
-+ 学習中にHypernetwork strengthを1未満にした場合に悪影響がある現象の修正 (学習時は常に1になるようになる)
-+ 学習中にプレビューを生成した際に学習に悪影響がある現象の修正
+LoRAのほうが早くて高性能なため、正直言って使う価値なし。
 
 ** 拡張機能
 - 複数のhypernetworkをマージし、それを使い画像を生成する機能の追加

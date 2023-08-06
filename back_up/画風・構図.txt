@@ -5,6 +5,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|{{{{children's doodles drawing}}}}, {{scribble, crayon(medium), traditional media, crayon sketch, clumsy art, awkward art, poor art}}, 1 cute girl, serafuku, school uniform, standing, light smile, blonde shiny hair, long hair, green eyes, medium breasts, outdoor, cityscape, straight-on, cowboy shot, facing the front, ||子供の落書き風|Add Quality Tags:OFF、Undesired Content Preset:Noneは必須。Add Quality TagsがONだと顔だけは整った感じになりやすい。絵の上手い人がそれっぽく描いた絵になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/hOPe_Trmg4.png https://image01.seesaawiki.jp/n/h/nai_ch/Ch60kHvOJj.png|
 |{{{perfect masterpiece}}}, {{{perfect best quality}}}, solo, 1girl, looking back {kawaii} face, &#91;lens flare], &#91;&#91;photorealistic]] {vector_trace} anime, 8K hdr||大作アニメ風|サンプルはWeb版NAIにてDPM++ 2M, SMEAで生成　"perfect"はおまじないレベル、なくても可|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xPQIvARcGN.png) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ywp08puOSU.png) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/3dsYA3J1jp.png) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/oTjcl0ru25.png)|
 |masterpiece, best quality, 〇〇, 1girl, high contrast, hyper detailed|grayscale, monochrome, flat shading, low contrast, 3d, realistic|カラフル|〇〇は適当に変えてな|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yZZbHI6MKC.png) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/7g9Ryk8uZb.png) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/aO2f2_YhY4.png)|
 |Professional oil painting of establishing shot of 〇〇, professional {{majestic}} oil painting by Greg Manchess, Atey Ghailan, {{Fenghua Zhong}}, {{{{Jeremy Mann}}}}, {{{{{{{{Greg Rutkowski}}}}}}}}, Antonio Moro, {{{{{{trending on ArtStation}}}}}}, trending on CGSociety, dramatic lighting, {{dawn}}, refraction, {{{{{{{{Unreal Engine 5}}}}}}}}, rule of thirds||midjourney風|〇〇は適当に変えてな|https://image02.seesaawiki.jp/n/h/nai_ch/DuBSbp3eqs.png https://image01.seesaawiki.jp/n/h/nai_ch/XP8DHi43ls.png https://image01.seesaawiki.jp/n/h/nai_ch/b03oD2Qr76.png|
@@ -154,6 +155,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|Georges Seurat|ジョルジュ・スーラ|新印象派に分類される19世期フランスの画家。印象派の画家たちが用いた筆触分割の技法を更に推し進め、光学理論を取り入れた点描により描かれる絵が特徴的である。私生活について他人に語ることは全く無い内向的な性格であったとされる。亡くなる1年ほど前に内縁関係の女性と１子をもうけるが、そのことをスーラの母親すらしばらくの間知らなかったほどである。|https://image01.seesaawiki.jp/n/h/nai_ch/ksSNw9gv8z.png|
+|Paul Gauguin|ポール・ゴーギャン|フランスの後期印象派画家。輪郭線と明確な形態を強調し、平坦な色面を装飾的に構成する「綜合主義」というジャンルの開拓者でもある。目に見えない内面や神秘の世界、理念や思想の表現を志向し、外面しか描かないとして印象派に批判的な立場を取った。|https://image02.seesaawiki.jp/n/h/nai_ch/8011bEHyTY.png|
+|Camille Pissarro|カミーユ・ピサロ|印象派・後期印象派のフランスの画家。1874年から1886年の間に8度開催された印象派展すべてに参加した唯一の画家。最年長で温厚な性格のピサロは「印象派画家の学長」とも呼ばれ、若き印象派画家の良き相談役であった。|https://image02.seesaawiki.jp/n/h/nai_ch/Y_NleXTGog.png|
 |Paul C&#233;zanne|ポール・セザンヌ|ポスト印象派の画家で、20世期の絵画に多大な影響を与えた「近代絵画の父」とされる。静物画と水浴画で有名だが、一つの絵の中に複数の視点が混在している絵はキュビズムの誕生に影響を与えた。|https://image01.seesaawiki.jp/n/h/nai_ch/pVTIFI6ijG.png|
 |Edgar Degas|エドガー・ドガ|フランス印象派の画家。バレエ好きでオペラ座の席を年単位で購入する定期会員であった。当時の定期会員は稽古場や楽屋に自由に出入りできる特権があり、ドガのバレエ絵画はその特権をフルに生かして製作された。|https://image01.seesaawiki.jp/n/h/nai_ch/ufIdr_JsVk.png|
 |Claude Monet|クロード・モネ|印象派を代表するフランスの画家。代表作「睡蓮」を始めとした睡蓮の連作はジヴェルニーの自宅の隣に造成した「水の庭」を描いたものである。自宅の「花の庭」と合わせてモネの庭園として一般に公開されている。|https://image01.seesaawiki.jp/n/h/nai_ch/jW_WGRI8Mj.png|
