@@ -663,3 +663,44 @@ https://mega.nz/folder/069gXAiD#BvLgAeHA0LvCu4lO34b2KQ
 >>586
 そう。前は「jyojipan」にしとったけど、概念乗っ取った方が安定した。
 ||=
+
+***242スレ712 crowds LECO
+https://fate.5ch.net/test/read.cgi/liveuranus/1690549794/712
+https://yyy.wpx.jp/m/20230720/crowds.safetensors
+=|BOX|
+712: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cbb2-Xk46)  2023/07/30(日) 15:58:07.35 ID:su6DmR/X0 
+>>532 でいれたerase LECOの学習ブーストやがこれまで効果でないなーってなっとったプロンプトの効果をゴリッいけるね
+https://colab.research.google.com/drive/1Y2jDIFRTWqE4H_xzwX-rEbWjnDPTp1Sk
+
+>>647 みてcrowdsをブースト付き(alpha=dim)で消してみたら他のプロンプト積んでてもしっかり群衆でとるわ
+https://yyy.wpx.jp/m/20230720/crowds.safetensors
+https://i.imgur.com/oB0p4u8.jpg https://i.imgur.com/natGlus.jpg
+https://i.imgur.com/zcAQtXr.jpg https://i.imgur.com/yH7BcnX.jpg
+
+ついでにビキニをひとつまみや
+https://i.imgur.com/hYbgJKc.jpg
+Crowds of small short kawaii cute young (bikini girls:1.8) solicit prostitution on the streets of Akihabara Tokyo <lora:crowds:-1> <lora:bikini:1>
+(worst quality, low quality, handheld signs,  monochrome:1.4)
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3lJgks5YU8-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/3lJgks5YU8.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2FIEGK5_lq-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/2FIEGK5_lq.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pIHZI7xpr1-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/pIHZI7xpr1.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zWBHSTwdA2-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/zWBHSTwdA2.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kGBOAh5CYN-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/kGBOAh5CYN.jpg]]
+
+***242スレ794 bikini （マイクロビキニ） LECO
+https://fate.5ch.net/test/read.cgi/liveuranus/1690549794/794
+https://yyy.wpx.jp/m/20230720/bikini.safetensors
+=|BOX|
+788: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 73c3-mipx) sage 2023/07/30(日) 19:26:08.33 ID:RlDkph8S0 
+マイクロビキニがプロンプトで出来ない
+なんでや？
+出たり出なかったりする
+
+794: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cbb2-Xk46)  2023/07/30(日) 19:45:18.40 ID:su6DmR/X0 
+>>788
+>>712 で使ってたやつで良ければどうぞ
+https://yyy.wpx.jp/m/20230720/bikini.safetensors
+
+bikini<lora:bikini:1>で:2>とかに強めると布面積が減る
+
+使ってるモデルに合わせたければ
+https://colab.research.google.com/drive/1Y2jDIFRTWqE4H_xzwX-rEbWjnDPTp1Sk
+を使ってもらえれば
+||=
