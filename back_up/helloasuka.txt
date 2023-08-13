@@ -57,6 +57,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|rtx 3060 ti|||||||
 |A750|8GB|Core i5 12400||55.81|--use-ipex|Windows11/WSL2/Ubuntu22.04/RAM32GB/vladmandic版automatic(SD.next)OneAPI動作/commit 2a259a8455579556ed3affa028c111f5d24afd50/python3.10.6/torch=1.13.0/ドライバー31.0.101.4575|
 |A750|8GB|Core i5 12400||269.6||Windows11/DirectML/RAM32GB/lshqqytiger版stable-diffusion-webui-directml/version: 1.5.0・python: 3.10.7・torch: 2.0.0+cpu・xformers: N/A・gradio: 3.32.0/ドライバー31.0.101.4575|
 |RX7970XTX|24GB|Ryzen 9 7950X||46.57|--disable-nan-check --opt-sdp-no-mem-attention --upcast-sampling --no-half|Windows11 / DirectML / RAM64GB / Adrenalin Edition 23.7.1 / version: 1.4.0 / python: 3.10.11 / torch: 2.0.0+cpu / xformers: N/A|
