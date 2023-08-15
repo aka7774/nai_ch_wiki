@@ -213,6 +213,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|incredibly absurdres|信じられないほどの高解像度|SDの仕様上効果があるとは思えない||
 |bad anatomy|悪い解剖|人体構造が破綻している画像につけられるdanbooruタグ。Quality tagsとしてUCに入ってる。 ~~ なお、これの逆の意味のperfect anatomyは解剖図を出そうとするだけで品質向上効果はない。||
 |lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ぼやけたりjpegノイズが生成されたりする ~~ ネガに入れると絵がシャープになる||
 |absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ わずかに精細になる気がする||
