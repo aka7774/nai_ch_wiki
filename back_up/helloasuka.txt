@@ -57,6 +57,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3060|12GB|Ryzen 5 5600X||38.6|"--ui-config-file ../ui-config.json"	"--ui-settings-file ../config.json"	"--styles-file ../styles.csv"	"--skip-torch-cuda-test"	"--autolaunch"	"--no-half-vae"	"--xformers"	"--opt-split-attention"	"--opt-sub-quad-attention"	"--opt-channelslast"	"--upcast-sampling"|v1.5.1 @ WSL2|
 |rtx 3060 ti|||||||
 |A750|8GB|Core i5 12400||55.81|--use-ipex|Windows11/WSL2/Ubuntu22.04/RAM32GB/vladmandic版automatic(SD.next)OneAPI動作/commit 2a259a8455579556ed3affa028c111f5d24afd50/python3.10.6/torch=1.13.0/ドライバー31.0.101.4575|
 |A750|8GB|Core i5 12400||269.6||Windows11/DirectML/RAM32GB/lshqqytiger版stable-diffusion-webui-directml/version: 1.5.0・python: 3.10.7・torch: 2.0.0+cpu・xformers: N/A・gradio: 3.32.0/ドライバー31.0.101.4575|
@@ -319,6 +320,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3060|12GB|Ryzen 5 5600X||35.0|"--ui-config-file ../ui-config.json" "--ui-settings-file ../config.json" "--styles-file ../styles.csv" "--skip-torch-cuda-test" "--autolaunch" "--no-half-vae" "--xformers" "--opt-split-attention" "--opt-sub-quad-attention" "--opt-channelslast" "--upcast-sampling"|v1.5.1 @ WSL2|
 |RTX A4000|16GB|Ryzen7 3700X|23.16|22.64|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
 |RTX 4090|24GB|Core i9-13900k||6.97|--xformers --no-half-vae|cudnn 8.8.0|
 ||||||||
