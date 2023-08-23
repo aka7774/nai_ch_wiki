@@ -57,6 +57,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|Apple M1|16GB|Apple M1||680.10|--skip-torch-cuda-test --autolaunch --upcast-sampling --no-half-vae --use-cpu interrogate|macではRAMはCPUとGPUで共用される|
 |RTX 3060|12GB|Ryzen 5 5600X||38.6|"--ui-config-file ../ui-config.json"	"--ui-settings-file ../config.json"	"--styles-file ../styles.csv"	"--skip-torch-cuda-test"	"--autolaunch"	"--no-half-vae"	"--xformers"	"--opt-split-attention"	"--opt-sub-quad-attention"	"--opt-channelslast"	"--upcast-sampling"|v1.5.1 @ WSL2|
 |rtx 3060 ti|||||||
 |A750|8GB|Core i5 12400||55.81|--use-ipex|Windows11/WSL2/Ubuntu22.04/RAM32GB/vladmandic版automatic(SD.next)OneAPI動作/commit 2a259a8455579556ed3affa028c111f5d24afd50/python3.10.6/torch=1.13.0/ドライバー31.0.101.4575|
