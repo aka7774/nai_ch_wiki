@@ -6,6 +6,9 @@
 - [[kohya_sd-scripts_intro]]
 
 * 更新情報
+** 202302825(beta)
+-- https://colab.research.google.com/drive/1TW1D4Z4ni6TWKsPJbyraa4weDa5sYsXS
+- 2023-08-25状態の現状に最適化されたヴァージョンです。
 
 ** 20230316(beta)
 
@@ -304,6 +307,9 @@ https://huggingface.co/aka7774/fp16_safetensors/resolve/main/ACertainty-fp16.saf
 --- あとから変換ツールで下げることは出来るらしいので高めで良いかなと
 - アップロード
 -- ほんとは1epochごとにアップロードしたかったけど全体が速くなったんでまあいいかって感じ
+
+
+
 
 
 

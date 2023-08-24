@@ -57,6 +57,9 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3060|12GB|Ryzen5 5600G||53.7||メモリ64GB ↓にグラボだけ追加|
+|Ryzen5 5600G|33.9GB|Ryzen5 5600G||1190.9||メモリ64GB　専用4.0GB,　共有29.9GB|
+|RTX 4090|24GB|Core i5 13500||9.1|--xformer|Ubuntu 22.04LTSで新規に環境構築 DDR4-2133(PC4-17000)と言う足枷が付いた状態でこのスコア|
 |Apple M1|16GB|Apple M1||680.10|--skip-torch-cuda-test --autolaunch --upcast-sampling --no-half-vae --use-cpu interrogate|macではRAMはCPUとGPUで共用される|
 |RTX 3060|12GB|Ryzen 5 5600X||38.6|"--ui-config-file ../ui-config.json"	"--ui-settings-file ../config.json"	"--styles-file ../styles.csv"	"--skip-torch-cuda-test"	"--autolaunch"	"--no-half-vae"	"--xformers"	"--opt-split-attention"	"--opt-sub-quad-attention"	"--opt-channelslast"	"--upcast-sampling"|v1.5.1 @ WSL2|
 |rtx 3060 ti|||||||
