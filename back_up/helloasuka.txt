@@ -59,13 +59,11 @@ Batch Count 10、Batch Size 1
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
 |A750|8GB|Ryzen9 5900X||56.29|--use-ipex|電力設定をデフォルト180Wの70%減、126Wに変更・他設定は変わらずWindows11/WSL未使用・vladmandic/automatic・commit48c0ce9b2b46aec36a0c722eef92733a4a21793d ・ドライバ31.0.101.4644|
 |A750|8GB|Ryzen9 5900X||56.04|--use-ipex|初期化やモデル変更時の長い待ち時間は含まず。Windows11/WSL未使用・vladmandic/automatic・commit48c0ce9b2b46aec36a0c722eef92733a4a21793d ・ドライバ31.0.101.4644|
-|rx|||||||
 |RTX 3060|12GB|Ryzen5 5600G||53.7||メモリ64GB ↓にグラボだけ追加|
 |Ryzen5 5600G|33.9GB|Ryzen5 5600G||1190.9||メモリ64GB　専用4.0GB,　共有29.9GB|
 |RTX 4090|24GB|Core i5 13500||9.1|--xformer|Ubuntu 22.04LTSで新規に環境構築 DDR4-2133(PC4-17000)と言う足枷が付いた状態でこのスコア|
 |Apple M1|16GB|Apple M1||680.10|--skip-torch-cuda-test --autolaunch --upcast-sampling --no-half-vae --use-cpu interrogate|macではRAMはCPUとGPUで共用される|
 |RTX 3060|12GB|Ryzen 5 5600X||38.6|"--ui-config-file ../ui-config.json"	"--ui-settings-file ../config.json"	"--styles-file ../styles.csv"	"--skip-torch-cuda-test"	"--autolaunch"	"--no-half-vae"	"--xformers"	"--opt-split-attention"	"--opt-sub-quad-attention"	"--opt-channelslast"	"--upcast-sampling"|v1.5.1 @ WSL2|
-|rtx 3060 ti|||||||
 |A750|8GB|Core i5 12400||55.81|--use-ipex|Windows11/WSL2/Ubuntu22.04/RAM32GB/vladmandic版automatic(SD.next)OneAPI動作/commit 2a259a8455579556ed3affa028c111f5d24afd50/python3.10.6/torch=1.13.0/ドライバー31.0.101.4575|
 |A750|8GB|Core i5 12400||269.6||Windows11/DirectML/RAM32GB/lshqqytiger版stable-diffusion-webui-directml/version: 1.5.0・python: 3.10.7・torch: 2.0.0+cpu・xformers: N/A・gradio: 3.32.0/ドライバー31.0.101.4575|
 |RX7970XTX|24GB|Ryzen 9 7950X||46.57|--disable-nan-check --opt-sdp-no-mem-attention --upcast-sampling --no-half|Windows11 / DirectML / RAM64GB / Adrenalin Edition 23.7.1 / version: 1.4.0 / python: 3.10.11 / torch: 2.0.0+cpu / xformers: N/A|
@@ -330,14 +328,13 @@ Batch Count 1、Batch Size 10
 |RTX 3060|12GB|Ryzen 5 5600X||35.0|"--ui-config-file ../ui-config.json" "--ui-settings-file ../config.json" "--styles-file ../styles.csv" "--skip-torch-cuda-test" "--autolaunch" "--no-half-vae" "--xformers" "--opt-split-attention" "--opt-sub-quad-attention" "--opt-channelslast" "--upcast-sampling"|v1.5.1 @ WSL2|
 |RTX A4000|16GB|Ryzen7 3700X|23.16|22.64|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
 |RTX 4090|24GB|Core i9-13900k||6.97|--xformers --no-half-vae|cudnn 8.8.0|
-||||||||
 |参考)Google ColaboratoryA100|40GB|Xeon @2.20Ghz 6C/12T|6秒|6.||↓のクラウド参考地から転載|
 |}
 [END]
 ** 参考値(本家・クラウドコンピューティング)
+[+]
 {| class="sort edit nanj_prompt_table"
 |~サービス名|w(100px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken|オプション|備考|
-||3060|||||||
 |Paperspace Gradient|NVIDIA A100|80GB|Xeon @3.20GHz 8C/8T||8.61|--opt-sdp-attention --opt-channelslast|39ドル/月プラン|
 |Paperspace Gradient|NVIDIA A4000|16GB|Xeon @3.20GHz 8C/8T||24.85|--opt-sdp-attention --opt-channelslast|8ドル/月プラン|
 |Google Colaboratory|NVIDIA Tesla T4|15GB|||44.93|--opt-sdp-no-mem-attention --opt-channelslast|conda Python 3.10.9torch 2.0.0xformersなし|

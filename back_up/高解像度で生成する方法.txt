@@ -16,6 +16,8 @@ Automatic1111のHires.fixとその他さまざまな拡張機能がメインに�
 
 *** アップスケーラー
 
+使用上の注意：''Latentで始まるやつはdenoising strengthの値が低い（おおよそ0.5以下）とギザギザになってぼやけるので不適切''。
+
 https://fate.5ch.net/test/read.cgi/liveuranus/1674833233/778
 778: 2023/01/29(日) 07:22:10.14 
 hires.fix 3倍とか空白に変なもん書き込みまくって使い物にならんだろ
@@ -224,4 +226,5 @@ kohya氏が昔作ったというPixSr4xっていうツールが使いやすく�
 512x512で出力したのをアップスケールしてみたけど潰れてた汗表現とかよだれまでちゃんと綺麗にしてくれたわ
 
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/6guMzrdlCp.png,500)
+
 
