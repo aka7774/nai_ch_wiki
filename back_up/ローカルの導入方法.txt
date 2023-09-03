@@ -189,7 +189,7 @@ https://note.com/uunin/n/n715256399038
 スレでもたまに紹介されている。Pythonやgitのインストール作業無しでセットアップするのでWindows環境を汚さずに導入出来るのがウリ。わりと初心者向け(？)の解説付き。
 セットアップに関してのトラブルはwikiでは対応できないので、noteのコメントで相談しましょう。
 
-** A1111 WebUI Easy Installer and Launcher
+** %%A1111 WebUI Easy Installer and Launcher%%(2023/08/22 更新停止)
 
 https://github.com/EmpireMediaScience/A1111-Web-UI-Installer
 
@@ -198,6 +198,12 @@ CG板で使ってみた人がいいかもって言ってた。
 一般論としては既にインストール済みのPythonやGitがあるとエラーの原因になりうる。
 ほかの方法でダメだったら試してみるのも手なのかも。
 使ってみた人いたら感想書いてね。
+
+** StabilityMatrix
+
+https://github.com/LykosAI/StabilityMatrix
+
+WebUI Easy Installer and Launcherの代わりになるかもしれない。
 
 * トラブルシューティング
 **gtx16xxで必要な設定
