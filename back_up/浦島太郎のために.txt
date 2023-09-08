@@ -21,6 +21,16 @@
 
 
 #contents
+* 2023-09-08 ギャルゲー風のスクリーンショットを作るツール
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1693910349/736
+
+ ギャルゲー風のスクリーンショットを作るエディターを公開したので良かったら使ってください
+
+https://huggingface.co/spaces/SenY/GalGameUI
+
+&ref(https://i.imgur.com/slMHdbd.png,350) &ref(https://i.imgur.com/YLE80Df.jpg,450)
+
 * 2023-08-10 SDXL専用フロントエンド「Fooocus」公開
 https://github.com/lllyasviel/Fooocus
 シンプルなプロンプトと画風のスタイルを選択するだけで高品質な画像が生成されることを目指している。
