@@ -320,6 +320,7 @@ Batch Count 2、Batch Size 5
 |RTX 4090|24GB|Core i9-13900K|9秒|7.83|xformers opt-channelslast|Batch Count 2、Batch Size 5|
 |RTX 4090|24GB|Ryzen 9 7950X|10秒|9.33|xformers opt-channelslast|Batch Count 2、Batch Size 5　並列処理サイズを大きくしてもあまり意味がない？|
 |RTX 3080|12GB|Ryzen 7 5800X|21秒|21.| Batch size 5, Batch count 2|RTX 3080 GAMING Z TRIO 12G LHR, メモリ64GB|
+|RTX 4060 Ti|16GB|Core i5-13500||22.4|--xformers --opt-channelslast|PL121%にしてWSL2で実行。PL70%だと24.1 sec.|
 |}
 [END]
 
