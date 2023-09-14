@@ -1464,3 +1464,65 @@ https://i.imgur.com/IThlwnK.jpg
 https://i.imgur.com/5jlKJJs.jpg
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PRdPPb62wd-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/PRdPPb62wd.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/t216hZGtU8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/t216hZGtU8.png]]
+
+***264スレ153 下半身をスライムにするlora
+https://fate.5ch.net/test/read.cgi/liveuranus/1694478908/153
+https://mega.nz/folder/fFNgiQqT#HegLJDGr6_Ue8eBmXShsfA
+=|BOX|
+55: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cea4-MmH2)  2023/09/12(火) 11:23:06.51 ID:aFJ7rZyE0 
+>>43
+下半身をスライムにするlora(自作)とコイカツで撮ったスライム娘のスクショや
+loraはウェブNAI時代からi2iしてたやつを蒸留しまくったやつとコピー機学習で作ったやつ
+そして困ったことに昨日は徹夜でハイになっててgif作ってたときの設定なんも覚えてないんや
+今日いろいろやってるけど再現しない
+可能性としてFastNegativeV2 EasyNegativeV2 badhandv4のネガTE三点盛が効いているような、いないような
+
+102: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cea4-MmH2)  2023/09/12(火) 13:12:50.26 ID:aFJ7rZyE0 
+>>87
+画像はすまん、猫箱繋がらんかったからLitterboxに適当に置いてたから消えたみたいや
+loraは構わんがトリガーとか気の利いたもんはないぞ、それでもよければ少し待たれよ
+
+上げ直し
+https://files.catbox.moe/uq4ihs.gif
+https://files.catbox.moe/c4g79o.gif
+https://files.catbox.moe/hmjivi.gif
+https://files.catbox.moe/mq1mtd.gif
+
+147: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cea4-MmH2)  2023/09/12(火) 14:59:25.27 ID:aFJ7rZyE0 
+う〜ん？再現性は取れなかったけどこれの設定を残させてもらう
+https://files.catbox.moe/58qg00.gif
+まずモデルがこれ https://civitai.com/models/52780/aingexp
+pnginfoにこれ入れてt2iへ https://files.catbox.moe/rh4gvl.png
+CN0 https://files.catbox.moe/48fdop.png, CN1 https://files.catbox.moe/hm280r.png
+CN設定は両方これ
+tile_resample, Control Weight 2,  Starting Control Step 0, Ending Control Step 1, Down Sampling Rate 1, My prompt is more important, Crop and Resize
+AnimateDiff設定が
+Motion module mm_sd_v15_v2.ckpt, Number of frames 16, FPS 60(この設定は自分環境では生きていないので無視してよい)
+mm_sd_v15_v2の対応版のやつは入れてないはず
+誰か試してみて
+
+153: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cea4-MmH2)  2023/09/12(火) 15:13:26.96 ID:aFJ7rZyE0 
+loraはとりあえずこれで事足りるはず
+トリガーはイマイチ機能してるか怪しいので読み込んだうえで自然言語でUNETに語り掛けてほしい
+https://mega.nz/folder/fFNgiQqT#HegLJDGr6_Ue8eBmXShsfA
+
+変身スライム部はあなた方の入部を切望しております
+10年後くらいにはTSやケモみたいな一般性癖の地位を狙いたいので若い世代に見えるところに積極的にチラ見せしてください
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6MHOcd9DWA-s.gif)>https://image01.seesaawiki.jp/n/h/nai_ch/6MHOcd9DWA.gif]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7eQNRRxgqj-s.gif)>https://image02.seesaawiki.jp/n/h/nai_ch/7eQNRRxgqj.gif]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/IIrU9THhnl-s.gif)>https://image01.seesaawiki.jp/n/h/nai_ch/IIrU9THhnl.gif]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BPBOv7Nt62-s.gif)>https://image02.seesaawiki.jp/n/h/nai_ch/BPBOv7Nt62.gif]]
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HfmQq8tOi7-s.gif)>https://image01.seesaawiki.jp/n/h/nai_ch/HfmQq8tOi7.gif]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pwn8ZtpsL5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pwn8ZtpsL5.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Ofz6jzXB6n-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Ofz6jzXB6n.png]]
+
+***264スレ728 Kintamani-Bali dogs
+https://fate.5ch.net/test/read.cgi/liveuranus/1694478908/728
+https://civitai.com/models/144458/kintamani-bali-dogs
+=|BOX|
+728: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ ff3d-R7ud)  2023/09/13(水) 23:35:37.56 ID:Zvk/LC7m0 
+ケツ側キンタマ配置mob男くんの出来があんまりよくないが
+獣姦用やないのにその方面にワクテカされても困るから
+いつものように誤った使用例を載せとくやで
+https://majinai.art/i/iAJoreE.png
+https://majinai.art/i/J6vBa_J.png
+リアル系に導入すると頻繁にケツ妹子化するから注意やで
+https://civitai.com/models/144458/kintamani-bali-dogs
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/97cqLMnRXB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/97cqLMnRXB.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nNZXhBNYzz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/nNZXhBNYzz.png]]
