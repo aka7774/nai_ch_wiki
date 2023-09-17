@@ -57,6 +57,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3060|||||||
 |RTX4070|12GB|Core i5 13400F||20.2|--opt-sdp-attention --opt-channelslast|version: v1.6.0 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.20|
 |RTX4070|12GB|Core i5 13400F||20.8|--opt-sdp-attention|version: v1.6.0 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.20|
 |RTX4070|12GB|Core i5 13400F||25.2|--xformers|version: v1.6.0 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.20|
@@ -66,7 +67,7 @@ Batch Count 10、Batch Size 1
 |A750|8GB|Ryzen9 5900X||56.04|--use-ipex|初期化やモデル変更時の長い待ち時間は含まず。Windows11/WSL未使用・vladmandic/automatic・commit48c0ce9b2b46aec36a0c722eef92733a4a21793d ・ドライバ31.0.101.4644|
 |RTX 3060|12GB|Ryzen5 5600G||53.7||メモリ64GB ↓にグラボだけ追加|
 |Ryzen5 5600G|33.9GB|Ryzen5 5600G||1190.9||メモリ64GB　専用4.0GB,　共有29.9GB|
-|RTX 4090|24GB|Core i5 13500||9.1|--xformer|Ubuntu 22.04LTSで新規に環境構築 DDR4-2133(PC4-17000)と言う足枷が付いた状態でこのスコア|
+|RTX 4090|24GB|Core i5 13500||9.1|--xformers|Ubuntu 22.04LTS|
 |Apple M1|16GB|Apple M1||680.10|--skip-torch-cuda-test --autolaunch --upcast-sampling --no-half-vae --use-cpu interrogate|macではRAMはCPUとGPUで共用される|
 |RTX 3060|12GB|Ryzen 5 5600X||38.6|"--ui-config-file ../ui-config.json"	"--ui-settings-file ../config.json"	"--styles-file ../styles.csv"	"--skip-torch-cuda-test"	"--autolaunch"	"--no-half-vae"	"--xformers"	"--opt-split-attention"	"--opt-sub-quad-attention"	"--opt-channelslast"	"--upcast-sampling"|v1.5.1 @ WSL2|
 |A750|8GB|Core i5 12400||55.81|--use-ipex|Windows11/WSL2/Ubuntu22.04/RAM32GB/vladmandic版automatic(SD.next)OneAPI動作/commit 2a259a8455579556ed3affa028c111f5d24afd50/python3.10.6/torch=1.13.0/ドライバー31.0.101.4575|
