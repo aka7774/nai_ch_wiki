@@ -22,6 +22,37 @@
 
 #contents
 
+* 2023-09-18 簡単プロンプトアニメ
+
+★266
+https://fate.5ch.net/test/read.cgi/liveuranus/1694948061/229
+https://fate.5ch.net/test/read.cgi/liveuranus/1694948061/230
+
+=|BOX|
+229 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8fb2-xbk3)[] 投稿日：2023/09/18(月) 16:40:42.77 ID:u/gM0xJC0
+連休使って誰でもプロンプトだけで動画作成できるようにしたで
+https://twitter.com/Zuntan03/status/1703674198101803268
+急造なんで不具合あったら教えてな
+
+WebUIは使ってないんで今のところ規約違反ではないはずや
+画像や動画をGoogle Driveに保存したくない場合はoutput_to_google_driveをDisableにしてな
+||=
+https://twitter.com/Zuntan03/status/1703674198101803268
+作例
+-https://yyy.wpx.jp/m/202309/nadenadesitai_v10.mp4
+-https://yyy.wpx.jp/m/202309/xxmix9realistic_v40.mp4
+-https://yyy.wpx.jp/m/202309/onigiriMix_v10.mp4
+-https://yyy.wpx.jp/m/202309/mistoonAnime_v20.mp4
+
+=|BOX|
+230 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8fb2-xbk3)[] 投稿日：2023/09/18(月) 16:51:44.23 ID:u/gM0xJC0
+>>229
+Colabのリンク書き忘れとった
+https://colab.research.google.com/drive/1QVxBjAamxOIAAlSohQklZltRPx8WsxEN
+||=
+
+https://colab.research.google.com/drive/1QVxBjAamxOIAAlSohQklZltRPx8WsxEN
+
 * 2023-09-12 Animatediff
 
 ★264の>>960を引用。
