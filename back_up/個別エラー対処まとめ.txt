@@ -1,3 +1,5 @@
+#contents
+
 * 概要
 細かい個別のエラーに対する解決法をまとめるページ
 
@@ -46,3 +48,75 @@ Successfully installed diffusers-0.14.0
 ◆LoRAマージのテスト
 LoRA weights are saved
 完了。
+
+** controlnetの最新版をインストールしようとしたときに"RuntimeError: Couldn't install sd-webui-controlnet requirement: mediapipe"と出る
+
+以下のようなエラーが出た場合
+=|BOX|
+*** Error running install.py for extension \extensions\sd-webui-controlnet. [00:01<00:00, 21.38it/s]
+*** Command: "\venv\Scripts\python.exe" "\extensions\sd-webui-controlnet\install.py"
+*** Error code: 1
+*** stdout: Installing sd-webui-controlnet requirement: mediapipe
+***
+*** stderr: Traceback (most recent call last):
+***   File "\extensions\sd-webui-controlnet\install.py", line 35, in <module>
+***     launch.run_pip(f"install {package}", f"sd-webui-controlnet requirement: {package}")
+***   File "\modules\launch_utils.py", line 138, in run_pip
+***     return run(f'"{python}" -m pip {command} --prefer-binary{index_url_line}', desc=f"Installing {desc}", errdesc=f"Couldn't install {desc}", live=live)
+***   File "\modules\launch_utils.py", line 115, in run
+***     raise RuntimeError("\n".join(error_bits))
+*** RuntimeError: Couldn't install sd-webui-controlnet requirement: mediapipe.
+*** Command: "\venv\Scripts\python.exe" -m pip install mediapipe --prefer-binary
+*** Error code: 1
+*** stdout: Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+*** Collecting mediapipe
+***   Downloading mediapipe-0.10.5-cp310-cp310-win_amd64.whl (50.3 MB)
+***      --------------------------------------- 50.3/50.3 MB 10.9 MB/s eta 0:00:00
+*** Requirement already satisfied: absl-py in \venv\lib\site-packages (from mediapipe) (2.0.0)
+*** Requirement already satisfied: numpy in \venv\lib\site-packages (from mediapipe) (1.23.5)
+*** Collecting opencv-contrib-python
+***   Downloading opencv_contrib_python-4.8.0.76-cp37-abi3-win_amd64.whl (44.8 MB)
+***      --------------------------------------- 44.8/44.8 MB 11.1 MB/s eta 0:00:00
+*** Requirement already satisfied: matplotlib in \venv\lib\site-packages (from mediapipe) (3.8.0)
+*** Requirement already satisfied: protobuf<4,>=3.11 in \venv\lib\site-packages (from mediapipe) (3.20.0)
+*** Collecting flatbuffers>=2.0
+***   Downloading flatbuffers-23.5.26-py2.py3-none-any.whl (26 kB)
+*** Collecting sounddevice>=0.4.4
+***   Downloading sounddevice-0.4.6-py3-none-win_amd64.whl (199 kB)
+***      -------------------------------------- 199.7/199.7 kB 4.0 MB/s eta 0:00:00
+*** Requirement already satisfied: attrs>=19.1.0 in \venv\lib\site-packages (from mediapipe) (23.1.0)*** Collecting CFFI>=1.0
+***   Downloading cffi-1.15.1-cp310-cp310-win_amd64.whl (179 kB)
+***      ------------------------------------- 179.1/179.1 kB 10.6 MB/s eta 0:00:00
+*** Requirement already satisfied: kiwisolver>=1.0.1 in \venv\lib\site-packages (from matplotlib->mediapipe) (1.4.5)
+*** Requirement already satisfied: fonttools>=4.22.0 in \venv\lib\site-packages (from matplotlib->mediapipe) (4.42.1)
+*** Requirement already satisfied: packaging>=20.0 in \venv\lib\site-packages (from matplotlib->mediapipe) (23.1)
+*** Requirement already satisfied: python-dateutil>=2.7 in \venv\lib\site-packages (from matplotlib->mediapipe) (2.8.2)
+*** Requirement already satisfied: cycler>=0.10 in \venv\lib\site-packages (from matplotlib->mediapipe) (0.11.0)
+*** Requirement already satisfied: contourpy>=1.0.1 in \venv\lib\site-packages (from matplotlib->mediapipe) (1.1.1)
+*** Requirement already satisfied: pillow>=6.2.0 in \venv\lib\site-packages (from matplotlib->mediapipe) (9.5.0)
+*** Requirement already satisfied: pyparsing>=2.3.1 in \venv\lib\site-packages (from matplotlib->mediapipe) (3.1.1)
+*** Collecting pycparser
+***   Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+***      -------------------------------------- 118.7/118.7 kB 6.8 MB/s eta 0:00:00
+*** Requirement already satisfied: six>=1.5 in \venv\lib\site-packages (from python-dateutil>=2.7->matplotlib->mediapipe) (1.16.0)
+*** Installing collected packages: flatbuffers, pycparser, opencv-contrib-python, CFFI, sounddevice, mediapipe
+***
+*** stderr: ERROR: Could not install packages due to an OSError: [WinError 5] ANZX\u06c2\u0702B: '\\venv\\Lib\\site-packages\\cv2\\cv2.pyd'
+*** Check the permissions.
+***
+***
+*** [notice] A new release of pip available: 22.3.1 -> 23.2.1
+*** [notice] To update, run: \venv\Scripts\python.exe -m pip install --upgrade pip
+***
+***
+*** During handling of the above exception, another exception occurred:
+***
+*** Traceback (most recent call last):
+***   File "\extensions\sd-webui-controlnet\install.py", line 37, in <module>
+***     print(e)
+*** UnicodeEncodeError: 'cp932' codec can't encode character '\u06c2' in position 3185: illegal multibyte sequence
+||=
+
+"Check the permissions"とある通り、権限が足りてない。
+webui-user.batの"set COMMANDLINE_ARGS=" の行に"--administrator" を追加するとadmin権限で実行でき、このエラーを回避できる
+
