@@ -29,7 +29,7 @@ Stable diffusion webui (automatic1111)をColabなどのクラウドGPUで動か�
 
 - https://colab.research.google.com/?hl=ja
 
-- ''&color(#ff0000){4月21日以降、無料プランでのstable-diffusion使用が禁止になりました。}''
+- ''&color(#ff0000){2023年4月21日以降、無料プランでのstable-diffusion使用が禁止になりました。}''
 -- &color(#ff0000){有料プランでは動きます。したがってcolabを使用する場合は課金必須になりました。}
 
 %%無料版で使える%%[[入門用Notebook]] があるので試してみてください。
