@@ -943,6 +943,85 @@ https://files.catbox.moe/phw4b7.png
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/XDF7SIc1rK-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/XDF7SIc1rK.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oUUdE8YXLU-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oUUdE8YXLU.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FazXXqebWt-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FazXXqebWt.png]]
 
+**265スレ690 Onigiri Mix
+https://fate.5ch.net/test/read.cgi/liveuranus/1694688867/690
+https://civitai.com/models/146434
+=|BOX|
+690: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cff7-mUcE) sage 2023/09/16(土) 23:40:02.52 ID:zoQYdo2+0 
+今更AnimeDiffusionでもSDXLでもない話題なんやがまた宣伝に来たで
+
+Manmaruがどうしても背景とか指が苦手で、結局大した改善は出来へんかった
+しかしそこに現れた救世主、CookieCutter(の最新版）！
+
+色々試した結果、CookieCutterとFeaturelessMix混ぜたら可愛らしいキャラデなのに
+書き込み量多く背景得意、指もManmaruに比べたらだいぶましという結構面白いモデルができたんや
+
+Manmaruとはキャラデの方向性がちょっとちゃうのでManmaruつこうてくれてた人が
+これも気に入るかわ分からんけども、ちょっと試してみてくださいや
+
+https://civitai.com/models/146434
+
+615: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cff7-mUcE) sage 2023/09/19(火) 16:29:28.27 ID:NspPkRgI0 
+>>224
+https://i.imgur.com/1Y4GEDq.jpg
+こういうのじゃあかんか？
+つい最近公開したonigiriっていう二次元系モデルやが、小物にはめっぽう強いと思うで
+タグはこんなん
+masterpiece,best quality,1girl,bikini,magnificent,jewelry,ring,waistchain,leg chain,pearl,standing,
+
+https://civitai.com/models/146434/
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5CGHHkt1h2-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/5CGHHkt1h2.jpg]]
+
+**266スレ425 GuchaMIX_XL
+https://fate.5ch.net/test/read.cgi/liveuranus/1694948061/425
+https://huggingface.co/okibaV/TEKITOU/tree/main
+=|BOX|
+425: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(JP 0H63-xbk3)  2023/09/19(火) 07:09:20.42 ID:/Oh5MK+rH 
+https://i.imgur.com/Q9eAdaP.png
+https://i.imgur.com/San4LXo.png
+https://i.imgur.com/w7TUNoO.png
+https://i.imgur.com/01ogJ3u.png
+https://i.imgur.com/Ly2f9Sd.png
+https://i.imgur.com/jxxUHiO.png
+https://i.imgur.com/2X74aEf.png
+今までにないタイプのSDXLモデルだし配布してみる(civitaiは恐怖が勝って置けなかった)
+https://huggingface.co/okibaV/TEKITOU/tree/main
+使い方はhuggingfaceのページ参照
+手がかなりぐちゃりやすい、SDXLにしてはプロンプトの言う事をろくに効かないのと、場面によっては特定アーティスト味が強くなるor絵柄がマスピに寄るから期待は一切せんといてくれ
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PUTKrs0fqt-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/PUTKrs0fqt.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vh7mnsYNUY-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/vh7mnsYNUY.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/17ZVRclJBU-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/17ZVRclJBU.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/SrLhfhXExI-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/SrLhfhXExI.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZX_augvJxD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ZX_augvJxD.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wJ9IdoAyXm-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/wJ9IdoAyXm.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/F00cgEgdq8-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/F00cgEgdq8.png]]
+
+**267スレ785 Featureless Cute Mix
+https://fate.5ch.net/test/read.cgi/liveuranus/1695210992/785
+https://civitai.com/models/149907/featureless-cute-mix
+=|BOX|
+785: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 6ff7-cGEq) sage 2023/09/23(土) 17:43:40.19 ID:zhBSLa9g0 
+品質の高いモデルたくさんマージしたら「品質が高くて絵柄に特徴が無いモデル」ができて、
+それをFeatureless MixとしてCivitaiで公開しとるんやが、今度はそれの"Cuteモデル限定版"を作ってみたで
+https://civitai.com/models/149907/featureless-cute-mix
+
+やっぱり複数のモデルを平等にマージすると特徴がない絵柄になるのは同じやね
+そしてCute版は頭身が低く目がでかい
+Featureless Mixと同じ絵柄で頭身だけが違う感じなので、
+この二つのモデルの混ぜ具合で頭身ある程度いじれるかも
+
+ところで自分で作っといてなんやけど、特徴のない絵柄って、それはそれでよい特徴だよね
+
+788: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 6ff7-cGEq) sage 2023/09/23(土) 17:55:49.50 ID:zhBSLa9g0 
+>>785
+ちなみに欠点を書くと、キャラLoRAはあまり向かん
+ほとんどのキャラで目が大きくなってしまうので違和感がすごいで
+元々目が大きいキャラなら合う
+キャラLoRAはFeatureless Mixの方が断然ええな
+
+あと背景とか演出性が高いのはCivitaiに書いた通りなんやが
+ぶっちゃけ先週公開したOnigiriのが高い
+
+まぁ、Onigiriは交通事故的に発生した偶然の産物に近いんやが・・・
+なんであんなに背景や演出性がよいのか良く分からん
+||=
+
 * 現在リンク切れのモデル
 [+]
 **133スレ104,573 NO133_104 ※リンク切れ
