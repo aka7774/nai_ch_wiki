@@ -244,6 +244,38 @@ https://i.imgur.com/JPjTFwg.jpg
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1QjN72rSE6-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/1QjN72rSE6.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9sr6pz0O76-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/9sr6pz0O76.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VJbKRLPwDG-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/VJbKRLPwDG.jpg]] [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/bWQIjSA7LE-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/bWQIjSA7LE.jpg]] [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/siDz5r1Xmd-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/siDz5r1Xmd.jpg]]
 
+***228スレ884 little nuns_delete
+https://fate.5ch.net/test/read.cgi/liveuranus/1687953737/884
+https://mega.nz/file/zAIEWSTR#Cm7vnKWIvd1ONFXhz4gqeVxGDKNZkR_RS5Aq6nXdM8c
+https://civitai.com/models/102702/
+=|BOX|
+882: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ f762-hRAP) sage 2023/07/01(土) 02:00:32.82 ID:iBUMpnz60 
+おっしゃー色んなモデルで使えるnunの服装をlittle nunsの画風に影響させずに正確に出す概念削除loraできたでー発想くれた>>785はサンガツや
+https://i.imgur.com/QJQKMkN.png
+NAI、概念消去lora有り↑↓無し
+https://i.imgur.com/jap7QsA.png
+
+https://i.imgur.com/LYgUTj3.png
+7th anime v3C、概念消去lora有り↑↓無し
+https://i.imgur.com/DCBOr3B.png
+
+https://i.imgur.com/VrTYUWv.png
+配布モデル、概念消去lora有り↑↓無し
+https://i.imgur.com/JvWn9Lk.png
+
+884: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ f762-hRAP) sage 2023/07/01(土) 02:09:32.71 ID:iBUMpnz60 
+https://mega.nz/file/zAIEWSTR#Cm7vnKWIvd1ONFXhz4gqeVxGDKNZkR_RS5Aq6nXdM8c
+little nuns_deleteや作者のdivaさんには謝っとくで
+設定は
+target: "traditional nun"
+positive: "clumsy_nun_(diva),diva_(hyxpk),froggy_nun_(diva),leaf leaf_nun_(diva),little_nuns_(diva),nun poster_(object),spicy_nun_(diva),nude,nipples,traditional,blonde hair,cross-eyed"
+や
+traditional nunがターゲットやけどnunのプロンプトの方が正確に機能するようになる
+使う場合はウエイトは1でプロンプトとしてtraditional nunではなくnunを使ってくれ
+>>882の画像はそれぞれシード100で固定して、(nun:1.3)のプロンプトを使っとる(概念消去の方はウエイト1)
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/b2YvbIeGGm-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/b2YvbIeGGm.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/O0Lnt5Zjo8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/O0Lnt5Zjo8.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/v_cQMaO092-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/v_cQMaO092.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bCyOr3NyBP-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/bCyOr3NyBP.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/x1lpYyGSUi-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/x1lpYyGSUi.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jcXDhxOQej-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jcXDhxOQej.png]]
+
 ***229スレ758 LECO_LessMuscularity
 https://fate.5ch.net/test/read.cgi/liveuranus/1688173275/758
 https://huggingface.co/MayonakaManic/LoRA/tree/main/LECO
@@ -1615,6 +1647,28 @@ squatから垂直に下山するルートはうまくいかんと思うが
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hPT5RLFGF1-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/hPT5RLFGF1.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/oF9b14E7nN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/oF9b14E7nN.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/05x2T_o5zV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/05x2T_o5zV.png]]
 
+***267スレ409 上目遣い(画面上方に視線を向ける)lora
+https://fate.5ch.net/test/read.cgi/liveuranus/1695210992/409
+https://huggingface.co/hhpoo/looking-up
+=|BOX|
+365: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ｱｳｱｳｳｰ Sa53-CMSY) sage 2023/09/21(木) 22:48:24.37 ID:aC7QgzsZa 
+上目遣い(画面上方に視線を向ける)loraならアヘェみたいな表情作りたかったのとコピー機学習の習熟も兼ねて作ったことあるけど
+https://i.imgur.com/pRV0Onj.png
+https://i.imgur.com/eqgEiOq.png
+https://i.imgur.com/H4Q4oLv.png
+https://i.imgur.com/MVHdWsV.png
+こういうの、とは違うんかな
+似たようなloraとかciviにもうありそうだけど
+
+409: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 3fd2-CMSY) sage 2023/09/22(金) 02:13:36.94 ID:XS8y6U600 
+>>380
+READMEの書き方全然分からへんねんな…
+loraの出来不出来よりアップロードの仕方これで問題ないかどうか誰かジャッジしてくれ
+まずい部分あったら消すか修正するかする
+https://huggingface.co/hhpoo/looking-up
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tf_ZGDEphH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tf_ZGDEphH.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5qNUbcSO99-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/5qNUbcSO99.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vH8z_DfiiP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/vH8z_DfiiP.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/iTTOYtbfTe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/iTTOYtbfTe.png]]
+
 ***267スレ508 Cotylorhiza tuberculata
 https://fate.5ch.net/test/read.cgi/liveuranus/1695210992/508
 https://civitai.com/models/149422
@@ -1711,3 +1765,187 @@ https://i.imgur.com/qfPoL58.jpg
 後関係ない質問なんやが最近A1111でGenerateForeverしてる時、他の作業してて非アクティブにしてると止まってしまうんだがこういう症例出てるニキおるやろか…？
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GmxbOqX8FI-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/GmxbOqX8FI.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QrtbZ_zX5G-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/QrtbZ_zX5G.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DnYtq7f2qo-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/DnYtq7f2qo.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_5DofSDPIY-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/_5DofSDPIY.jpg]]
+
+***268スレ253 裸リボンLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/253
+https://civitai.com/models/151045/red-bowtienudeandunderwear
+=|BOX|
+253: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 0af7-/va4)  2023/09/25(月) 02:17:29.05 ID:Evy/NOwA0 
+LoRA作成慣れてきたんでちょっと前に作って放置した裸リボンLoRA作り直したで
+red bowtieのみ再現でnudeでも下着姿でも変わらず出るように調整済みや、よかったら試してくれやで〜
+https://civitai.com/models/151045/red-bowtienudeandunderwear
+https://ul.h3z.jp/vPtv8Voy.png
+https://ul.h3z.jp/1L05qFzO.png
+https://ul.h3z.jp/973kExjP.png
+https://ul.h3z.jp/38BAQcCH.png
+https://ul.h3z.jp/qD4B9fB4.png
+
+前回ここでもらったアドバイス参考にさせてもろた、サンガツや
+リボンタイだけで制服を示す表現できるのほんと最高やで！
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JhvwR2X3kb-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/JhvwR2X3kb.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eC_9C2NwQU-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/eC_9C2NwQU.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sGw7ILVPK7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/sGw7ILVPK7.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2JRZIGqjyt-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/2JRZIGqjyt.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HXj4i6Vnhb-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HXj4i6Vnhb.png]]
+
+***268スレ300 Graffiti Slider-LECO
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/300
+https://civitai.com/models/151224
+=|BOX|
+300: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 273d-H5qF) sage 2023/09/25(月) 11:09:42.31 ID:tErvdT1e0 
+>>280
+素材どおりに出ないなら、modelがタグにどんな反応をするのか調べて
+タグ付けを修正する必要があるかもしれん。
+既存の概念があまりにも強力な場合は乗っ取れずに混ざるから
+独自のトリガーワードで棲み分けする必要がある。
+
+x/y/zプロットで数値変えながら確かめると何が混ざってるかわかると思うで
+https://majinai.art/i/0k5Cl5N.png
+graffiti関係で思いつく英単語を説明に書いておいたからよければ使ってや
+https://civitai.com/models/151224
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/w_9wDLHYjj-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/w_9wDLHYjj.jpg]]
+
+***268スレ305 Eptatretus_okinoseanus
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/305
+https://civitai.com/models/151210
+=|BOX|
+180: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ a7d7-Ai87)  2023/09/24(日) 20:38:49.21 ID:MzcFFCOW0 
+だれか目隠れモブLoRAとか作っとらん？
+
+305: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 273d-H5qF) sage 2023/09/25(月) 11:19:23.41 ID:tErvdT1e0 
+>>180
+あんまり似てないが目の退化した生物なら作ったで
+https://civitai.com/models/151210
+
+
+mekakure, hair over eyes
+https://majinai.art/i/Dnz03Jc.png
+yamamura_sadako型
+https://majinai.art/i/vW9UjEq.png
+Tesse Lombrozo型
+https://majinai.art/i/veezVsv.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/EK4YVeJD6H-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/EK4YVeJD6H.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/t4qk6fsrp5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/t4qk6fsrp5.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ebmilYjotW-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ebmilYjotW.png]]
+
+***268スレ338 ぶっかけLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/338
+https://civitai.com/models/151301?modelVersionId=169185
+=|BOX|
+338: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 0af7-/va4)  2023/09/25(月) 14:05:04.06 ID:Evy/NOwA0 
+自分なりにぶっかけLoRA作ってみたんだが、男が絡むと一気にむずくなるな、あんまりうまくないわ…
+射精の瞬間の教師画像集めたつもりなんだが、あんまり勢いよく出てる感がない
+https://civitai.com/models/151301?modelVersionId=169185
+https://ul.h3z.jp/ukMsqytL.png
+https://ul.h3z.jp/S6ekTAFN.png
+https://ul.h3z.jp/wHvj9Hei.png
+https://ul.h3z.jp/aY1dZaNW.png
+https://ul.h3z.jp/cfcCVabb.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Jqs5mVNEMv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Jqs5mVNEMv.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4BKNRxwyiu-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/4BKNRxwyiu.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1RQoZ0a_6K-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1RQoZ0a_6K.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/At3F0MgwVC-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/At3F0MgwVC.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WkqlOscOp4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/WkqlOscOp4.png]]
+
+***268スレ570 SDXL用toddler LECO、infant LECO
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/570
+https://mega.nz/folder/cOtCDTDI#klkKVzZ7ptOMSJpbu1mLLg
+=|BOX|
+194: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ ab88-ClgD) sage 2023/09/24(日) 21:19:23.34 ID:BG8oO1M40 
+SDXL全然prompt効かないンゴ
+toddler LECOが欲しいで
+
+570: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 5354-+EvS)  2023/09/26(火) 10:29:17.10 ID:DhYsOYXH0 
+>>200
+
+ホイ
+https://mega.nz/folder/cOtCDTDI#klkKVzZ7ptOMSJpbu1mLLg
+
+SDXLのLECO作るには LECO の sdxl ブランチをマージしてアレコレ必要やで
+localでしか作ったことないから Colab の事情は分からんが…
+||=
+
+***268スレ648 freckles-LECO（そばかすのLECO）
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/648
+https://civitai.com/models/151775
+=|BOX|
+648: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 273d-1qed) sage 2023/09/26(火) 15:43:57.47 ID:6ImT1Yxy0 
+そばかすのLECOやで
+https://civitai.com/models/151775
+濃さと密度がうまくかみ合わんかったからシミと同居させたで
+<lora:freckles-LECO_v1:-0.3>, (freckles:0.5)くらいやとおもう。上げすぎるとホタルイカになるで
+https://majinai.art/i/434qaH4.png
+https://majinai.art/i/ozHg1SX.png
+
+ノイズ除去0.7でlatent2倍にアプスケしても描きたいものとして残る。
+https://majinai.art/i/GfqRXI6.png
+
+がっつり他の部分に影響を及ぼしてることがわかったから
+次は生姜のLECOを作ることになりそうや…
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zDffzR2tVE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/zDffzR2tVE.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/isSf4n9lSf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/isSf4n9lSf.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7EDOfDyQup-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/7EDOfDyQup.png]]
+
+***268スレ722 チンポビンビンパンティー
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/722
+https://mega.nz/file/j35CDaJI#KITSCuL87t6toDUok9JJxmcSe2tx-a2o09Ppq8RCqu0
+=|BOX|
+722: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 0a22-YVwM) sage 2023/09/26(火) 20:40:57.31 ID:aw5TGPK60 
+キムタカLoRAとドラクエLoRAの新しいの作ってみとる
+https://i.imgur.com/eGhhdvJ.png
+https://files.catbox.moe/xx1lju.png
+
+>>718 ひょっとしてワイが太古の昔にふたばで出したチンポビンビンパンティーやろか
+なつかしい　ひびき…
+https://mega.nz/file/j35CDaJI#KITSCuL87t6toDUok9JJxmcSe2tx-a2o09Ppq8RCqu0
+https://files.catbox.moe/vd217f.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3BDi5k7LFy-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3BDi5k7LFy.png]]
+
+***268スレ776 Ginger-LECO for Gingerbread Man
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/776
+https://civitai.com/models/152044
+=|BOX|
+776: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 273d-H5qF) sage 2023/09/26(火) 23:11:59.30 ID:6ImT1Yxy0 
+生姜のLECOやで
+https://civitai.com/models/152044
+
+わかったことを共有しておくで…
+gingerタグは赤毛のアン（緑の妻切屋根のアン）のような顔にする効果がかなり強い。
+danbooru語にはないが、red hairとfrecklesを強くすると引っ張られて出てくる。
+
+ジンジャーブレッドマンはロンパース（幼児が着る上下つながったやつ）を呼んでくるのか
+AIには未成年として判定される。
+https://i.imgur.com/CQ5HZEs.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/m9cMcoJlLF-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/m9cMcoJlLF.png]]
+
+***268スレ861 Architeuthis Giant Squid
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/861
+https://civitai.com/models/152125
+=|BOX|
+861: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 273d-H5qF) sage 2023/09/27(水) 11:17:35.24 ID:kdqoqzli0 
+イカやで
+https://civitai.com/models/152125
+
+触手とイカ娘はモデル自体に入っとると思うが、反応しやすいワードやで。
+純粋にイカを出したい人はこれらのワードは避けるんやで
+
+運ぶ
+https://majinai.art/i/KyCJIDT.png
+戦う
+https://majinai.art/i/bidDlTC.png
+増える
+https://majinai.art/i/OTKAY_E.png
+そして食べられる
+https://majinai.art/i/Bg_M4_D.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Kc8umFQAl6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Kc8umFQAl6.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZnMYeOtg8f-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ZnMYeOtg8f.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dZLDxgYZXm-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dZLDxgYZXm.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IrYHjMP7lY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IrYHjMP7lY.png]]
+
+***268スレ889 乳テント
+https://fate.5ch.net/test/read.cgi/liveuranus/1695528231/889
+https://civitai.com/models/152518/locon-overhang-locon
+=|BOX|
+880: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cf9e-NZrY) sage 2023/09/27(水) 13:00:12.20 ID:NtydxqZ10 
+急遽乳テントlora作りました
+https://i.imgur.com/tmnhLtS.jpg
+https://i.imgur.com/Jbn3I2W.jpg
+
+889: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ cf9e-NZrY) sage 2023/09/27(水) 13:25:11.00 ID:NtydxqZ10 
+乳テントアップしました
+https://civitai.com/models/152518/locon-overhang-locon
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/57IM7utOGi-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/57IM7utOGi.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OmHcd2Tk2x-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/OmHcd2Tk2x.png]]
