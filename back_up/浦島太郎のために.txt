@@ -22,6 +22,30 @@
 
 #contents
 
+* 2023-10-01 DALLE-3でBing Image Creatorが進化
+[[Bing Image Creator>https://www.bing.com/images/create?FORM=GENILP]]はエロ規制が強く、生成される画像もあまりパッとしなかったため注目されていなかったが、9月22日ごろに大幅アップデートが入った模様([[Bing Image Creatorのアップデートに関する記事>https://forest.watch.impress.co.jp/docs/news/1533405.html]])。
+9月30日ごろからスレ民が気づき出した模様．100回分は無料・30秒程度の短い生成時間からお手軽に試すことができ、10月1日現在その話で持ちきりである。
+
+大きく変わったのはプロンプトの高い読解能力である。
+「アニメ風の画像で、テレビのリモコンを操作するサルと、それを見つめる犬」
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/y6SyRYIbt0-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/y6SyRYIbt0.jpg]]
+
+プロンプトが混ざってしまうことが少ないように感じるほか、実写風の画像の中にイラスト風の画像を挿し込むことも可能なようである。
+「アニメを見る実写風の若い男性」
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/XLVUhk3Njn-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/XLVUhk3Njn.jpg]]
+
+崩れやすいが、文字を挿し込むことも可能である(少し試したが日本語は無理そう)。
+「ちびキャラで、「Big Brother Watching You」と書かれた看板を掲げる女性」
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4VXAWlRVh4-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/4VXAWlRVh4.jpg]]
+
+問題点としては
+1. 規制が厳しすぎること(かわいいアニメ風の女の子は高確率で「プロンプトがブロックされました」と表示される。もちろんエロは不可)
+2. モデルが公開されているわけではないため、新たに版権キャラを覚えさせることは現状不可能(ポケモン、けいおん等著名なキャラは出てくる)
+3. ControlNet的なものはない
+
+などである。i2iの元画像としてなら使えるかもしれないなど使い道が模索されている。
+
+
 * 2023-09-18 「簡単プロンプトアニメ」が公開される
 
 ★266
@@ -1200,6 +1224,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

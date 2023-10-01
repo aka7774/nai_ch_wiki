@@ -442,6 +442,7 @@ https://note.com/mitsukinozomi/n/ne735cc59afd1
 気の利いた構図をお手軽に錬成できて便利やね
 https://i.imgur.com/DIj2Nbk.jpg
 https://i.imgur.com/aYTaeFN.jpg
+
 0416今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f17-ATpV)
 設定はこんな感じや、CNに読ませる画像はなんでもええと思う
 Control Modeは必ずMy prompt is more importantにしすること（これ以外は元画像が浮き出てくる）
@@ -470,8 +471,12 @@ https://i.imgur.com/uo97wer.png　https://i.imgur.com/kXFgB0P.png
 
 ||=
 
-https://i.imgur.com/DIj2Nbk.jpg
-https://i.imgur.com/aYTaeFN.jpg
+下記は>>414の画像
+
+>&ref(https://i.imgur.com/DIj2Nbk.jpg,20%)
+>&ref(https://i.imgur.com/aYTaeFN.jpg,20%)
+
+
 **動画
 外人ニキやけど早送りでもだいたい分かる [[https://www.youtube.com/watch?v=ci7NfTsifd0>>>https://www.youtube.com/watch?v=ci7NfTsifd0]]
 
@@ -501,5 +506,6 @@ unpronpt版
 
 
 [END]
+
 
 
