@@ -11,14 +11,14 @@
 * 設定(Settings)周り
 
 ** 色がくすんでる気がする
-Vaeが設定されていないときに見られる現象。
+VAEが設定されていない(=モデル埋め込みのを使用)ときに見られる現象。
 nai.vae.ptなどをmodels/VAEフォルダ内に配置して、WebUIの上部タブのプルダウンから合うものを選びます。
 [[VAE一覧>ローカルのリソース#resource_vae]]も参照。
 
-図：左がVaeOFF、右ON
+図：左がVAE未指定、右指定
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7e9AhZfv5Y-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/7e9AhZfv5Y.jpg]]
 
-図：Vaeの選択
+図：VAEの選択
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/99s3OvA4nB.jpg)
 
 ** 生成中/学習中もネット見たりゲームしたい
@@ -58,8 +58,8 @@ Windowsにはファイル名/フォルダ名は異本的に256文字までとい
 
 もうVAEはSettingsで指定できるから、ckptと同じ名前にしてコピーしまくる必要は無くなったんやでー
 
-- auto: 以前と同じ(ckptと同名のvae.ptファイルを読み込む)
-- 指定: ckptにかかわらず指定したvaeを読み込む
+- auto: 以前と同じ(モデル名と同名のvae.ptファイルを読み込む)
+- 指定: モデルにかかわらず指定したvaeを読み込む
 - none: モデル埋め込みのものを使用
 
 ** PNG infoでText2Imgに送るとckptまで変更されてロード始めるのを回避したい
@@ -69,7 +69,6 @@ When reading generation parameters from text into UI (from PNG info or pasted te
 これにチェック
 
 * Restore faces
-
 アニメ絵だとオフ推奨(目がリアルになる)
 
 * 高解像度で出力したい
@@ -100,7 +99,7 @@ ui-config.json で変えられる
 
 最終的に出力したい解像度を出せるだけのGPUがあって、精細な絵を出したいならこれ。
 
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/e5VuAv8MAb.png)
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oOliqVlRmz.png)
 
 VRAM 8GBだとFHD(1920x1088)はギリギリ。UpscalerによってはVRAMが一瞬溢れて共有メモリを使用する。
 VRAM不足を補うためには、生成時間が延びるけど--medvramを指定する手がある。
@@ -175,10 +174,10 @@ VRAMが少ない等で Highres fix. が使えず、出力された画像を綺�
 
 ** EulerとかDDIMとか
 
-web版とローカル版で同じになる。
+NovelAIとWebUIで同じ結果になる。
 (ので、ハローアスカでも使われている)
 
-Stepsをあげると収束するのが特徴らしい。
+末尾にaがついてないものはStepsをあげると収束する。
 
 ** Euler a と k_euler_ancestral
 
@@ -190,28 +189,47 @@ k_euler_ancestral
 eta (noise multiplier) for ancestral samplers: 
 を0.67にする。
 
-ただし、完全一致させたかったらソースコードを改造する必要あり。
+ただし、完全一致させたかったらソースコードを改造する必要あり。%%いまさらNAIを再現する必要はないと思うが・・・%%
 [[これだったかも。>https://rentry.co/nai_ancestral]]
 
 ** ローカル版のサンプラー
 
-増えた。
-
+DPM++ 2M Karras
+DPM++ SDE Karras
+DPM++ 2M SDE Exponential
+DPM++ 2M SDE Karras
+Euler a
+Euler
+LMS
 Heun
 DPM2
 DPM2 a
 DPM++ 2S a
 DPM++ 2M
+DPM++ SDE
+DPM++ 2M SDE
+DPM++ 2M SDE Heun
+DPM++ 2M SDE Heun Karras
+DPM++ 2M SDE Heun Exponential
+DPM++ 3M SDE
+DPM++ 3M SDE Karras
+DPM++ 3M SDE Exponential
 DPM fast
 DPM adaptive
 LMS Karras
 DPM2 Karras
 DPM2 a Karras
 DPM++ 2S a Karras
-DPM++ 2M Karras
+Restart
+DDIM
+PLMS
+UniPC
 
 「DPM++ 2M Karras」は10stepsでも最低限見れる絵を出してくれるのでシード値探しに便利。
 15stepsあれば破綻もそれなりに減らせるので低スぺ民の味方かも知れない。
+PLMS、LMSやHeunは遅い。
+
+ちなみに、Settings->Sampler parametersで特定のサンプラーを非表示にできる。
 
 ** Settingsにetaが2つあるけどどっち？
 
@@ -219,7 +237,7 @@ DPM++ 2M Karras
 
 DDIMかPLMSが「for DDIM」で、それ以外が「for ancestral samplers」っぽい。
 
-** CLIP_stop_at_last_layersについて
+** CLIP Skipについて
 数値を上げると文章の解釈が大雑把になる。イラストは2が良いとされる。
 
 モデルはanimefull-final-prunedで試した。生成したのはとある版権キャラ。
@@ -231,15 +249,15 @@ DDIMかPLMSが「for DDIM」で、それ以外が「for ancestral samplers」っ
 
 * プロンプト記法
 
-** web版とローカル版の違い
+** NovelAIとAUTOMATIC1111 WebUIの違い
 
-- web版は{}で強調1.05相当、[]は強調0.95相当(弱くなる)、()は単なる文字
-- ローカル版は()で強調1.1相当、[]は強調0.9相当(弱くなる)、{}は単なる文字(拡張機能で使うことも)
+- NovelAIは{}で強調1.05相当、[]は強調0.95相当(弱くなる)、()は単なる文字
+- WebUIは()で強調1.1相当、[]は強調0.9相当(弱くなる)、{}は単なる文字(拡張機能で使うことも)
 - {{}}は1.1ではなく1.05の2乗(なので変換ツールでは細かく計算して端数を丸めている)
-- ローカル版で()を文字として使いたい場合は\(hoge\)のようにエスケープする(作品名などに使う)
-- ローカル版は(hoge:1.2345)で強調の度合いを細かく決められる
-- web版は[[プロンプトミキシング]]が使える
-- ローカル版は[[プロンプトエディティング]]が使える
+- WebUIで()を文字として使いたい場合は\(hoge\)のようにエスケープする(作品名などに使う)
+- WebUIは(hoge:1.2345)で強調の度合いを細かく決められる
+- NovelAIは[[プロンプトミキシング]]が使える
+- WebUIは[[プロンプトエディティング]]が使える
 - トークン75以上を超えた時の処理が違う
 -- 75ごとに,で区切ると差異を和らげられるらしい？
 
@@ -256,7 +274,7 @@ CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打�
 すでに()がついている場合、()の範囲内どこでもよいのでカーソルを置いてCTRL+↑or↓で数値が調整できる。
 このとき、エラーが出る場合があるが、気にしなくていい。
 
-** プロンプトを真似る
+** NovelAIのプロンプトを真似る
 
 ポジティブプロンプト欄の先頭に「masterpiece, best quality,」をつける(Add Quality Tagsと同じ意味)
 ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry」をつける(UC L+Bと同じ意味)
@@ -279,7 +297,7 @@ ctrl+windows+shift+b のショートカットでグラフィックドライバ�
 WEBUIを起動する前におまじないとして行っているニキもいるようである
 
 ** UIをリロードするとプロンプトが消えて辛い
-→画面更新したりUIリロードしたりしても、「&#8601;」を押すと直前のプロンプト設定周りが復元できます。
+→画面更新したりUIリロードしたりしても、Generateボタンに下にある「&#8601;」を押すと直前のプロンプト設定周りが復元できます。
 
 ** ダークモードで表示
 
