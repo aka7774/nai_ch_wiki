@@ -5,6 +5,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|extremely detailed CG unity 8k wallpaper||8K超精細CG||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e.png]]|
 |{{unreal engine 5, computer graphics, 100-layer, hyper-detailed, high resolution, textile shading, beautiful detailed eyes, 4k, 8k, 16k, stunning, sharp, smooth, realistic, intricate, overall detail}}, 1girl, solo, {{chibi}}, white sundress, light smile, hyper deformed face, younger, blonde shiny hair, long hair, green eyes, medium breasts, simple background, facing the front, from outside, full body, solo focus, perfect face, perfect anatomy, intricate, (highly detailed),|{{3d}}, bad anatomy, disfigured, poorly drawn, lowers, worst quality, low quality, censor, bar censor, mosaic censorship, |SDキャラ|２〜３頭身ぐらいのSDキャラになる。|https://image02.seesaawiki.jp/n/h/nai_ch/lW0EpsXbg6.png https://image02.seesaawiki.jp/n/h/nai_ch/nTkgibPrZ7.png|
 |{{{{children's doodles drawing}}}}, {{scribble, crayon(medium), traditional media, crayon sketch, clumsy art, awkward art, poor art}}, 1 cute girl, serafuku, school uniform, standing, light smile, blonde shiny hair, long hair, green eyes, medium breasts, outdoor, cityscape, straight-on, cowboy shot, facing the front, ||子供の落書き風|Add Quality Tags:OFF、Undesired Content Preset:Noneは必須。Add Quality TagsがONだと顔だけは整った感じになりやすい。絵の上手い人がそれっぽく描いた絵になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/hOPe_Trmg4.png https://image01.seesaawiki.jp/n/h/nai_ch/Ch60kHvOJj.png|
 |{{{perfect masterpiece}}}, {{{perfect best quality}}}, solo, 1girl, looking back {kawaii} face, &#91;lens flare], &#91;&#91;photorealistic]] {vector_trace} anime, 8K hdr||大作アニメ風|サンプルはWeb版NAIにてDPM++ 2M, SMEAで生成　"perfect"はおまじないレベル、なくても可|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xPQIvARcGN.png) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/ywp08puOSU.png) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/3dsYA3J1jp.png) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/oTjcl0ru25.png)|
@@ -213,13 +214,13 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|incredibly absurdres|信じられないほどの高解像度|縦横どちらかが10000ピクセル以上の画像に自動でつけられるDanbooruタグ~~SDの仕様上効果があるとは思えない||
-|bad anatomy|悪い解剖|人体構造が破綻している画像につけられるdanbooruタグ。Quality tagsとしてUCに入ってる。 ~~ なお、これの逆の意味のperfect anatomyは解剖図を出そうとするだけで品質向上効果はない。||
-|lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ぼやけたりjpegノイズが生成されたりする ~~ ネガに入れると絵がシャープになる||
-|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ わずかに精細になる気がする||
+|worst quality|最低品質|NovelAIがDanbooruスコアの低い画像につけたタグ？NPに入れると品質向上する||
+|bad anatomy|悪い解剖|解剖学的に不正確な身体描写を意味するdanbooruタグ。Quality tagsとしてUCに入ってるが、Danbooruを見る限り、よく見ると不自然だったりするだけで絵の品質が低いわけではない模様。 ~~ なお、perfect anatomyは解剖図が出るだけで品質向上効果なし。||
+|lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ぼやけたりjpegノイズが生成されたりする ~~ モデルによるがネガに入れると絵がシャープになる||
+|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ SD1.5は512x512で学習するため効果は多分ない||
 |official art|公式アート|品質が向上する ~~ ロゴや著作権表記が出る場合あり|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yr8umSOBfB.png)|
 |virtual youtuber|バーチャルユーチューバー||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S.png]]|
-|masterpiece|傑作|NovelAIが独自につけたタグ。quality tagsに入っている。画風のブレを抑えるがいわゆるマスピ顔になる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|
+|masterpiece|傑作|NovelAIが独自につけたタグ。quality tagsに入っている。画風のブレを抑えるがいわゆるマスピ顔になって顔に影がかかる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|
 |magnificent|素晴らしい||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4PMOq8x7wv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4PMOq8x7wv.png]]|
 |jewel-like eyes|宝石のような目|画風で合ってるのか怪しいが雰囲気変わるんでおいとくで|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0aqGHWqC0w-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0aqGHWqC0w.png]]|
 |beautiful|美しい||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/udkFbngBev-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/udkFbngBev.png]]|
@@ -230,8 +231,7 @@
 |intricate|複雑な||https://image02.seesaawiki.jp/n/h/nai_ch/O7iISG8jEL.png|
 |taylor swift|テイラースウィフト|女優|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/FPGd956t98.png]]|
 |multiple views|マルチビュー|||
-|motion lines|集中線|||
-|extremely detailed CG unity 8k wallpaper|8K超精細CG||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e.png]]|
+|motion linesまたはemphasis lines|集中線|||
 |}
 [END]
 
