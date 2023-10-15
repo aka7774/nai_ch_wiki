@@ -214,10 +214,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|worst quality|最低品質|NovelAIがDanbooruスコアの低い画像につけたタグ？NPに入れると品質向上する||
-|bad anatomy|悪い解剖|解剖学的に不正確な身体描写を意味するdanbooruタグ。Quality tagsとしてUCに入ってるが、Danbooruを見る限り、よく見ると不自然だったりするだけで絵の品質が低いわけではない模様。 ~~ なお、perfect anatomyは解剖図が出るだけで品質向上効果なし。||
-|lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ぼやけたりjpegノイズが生成されたりする ~~ モデルによるがネガに入れると絵がシャープになる||
-|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ SD1.5は512x512で学習するため効果は多分ない||
+|worst quality|最低品質|NovelAIがDanbooruスコアの低い画像につけたタグ？NPに入れると品質向上する(NovelAIではQuality TagsとしてUCに入ってる)|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gnyOeyIBpK.jpg)|
+|bad anatomy|悪い解剖|解剖学的に不正確な身体描写を意味するdanbooruタグ。Quality tagsとしてUCに入ってるが、Danbooruを見る限り、よく見ると不自然だったりするだけで絵の品質が低いわけではない模様。 ~~ なお、perfect anatomyは解剖図が出るだけで品質向上効果なし。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HKYzuw9ZHp.jpg)|
+|lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ぼやけたりjpegノイズが生成されたりする ~~ モデルによるがネガに入れると絵がシャープになる|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wl4oe9os3h.jpg)|
+|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ SDの仕様上効果は多分ない||
 |official art|公式アート|品質が向上する ~~ ロゴや著作権表記が出る場合あり|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yr8umSOBfB.png)|
 |virtual youtuber|バーチャルユーチューバー||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S.png]]|
 |masterpiece|傑作|NovelAIが独自につけたタグ。quality tagsに入っている。画風のブレを抑えるがいわゆるマスピ顔になって顔に影がかかる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|
