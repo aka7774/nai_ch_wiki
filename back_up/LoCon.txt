@@ -1,12 +1,14 @@
 *概要
 LoRAでは学習できていない領域まで拡張して学習するちょっと新しいやつ。なお、LoCon(C3Lier)はsd-scripts単体でできるようになっている。
 最初はLoConというリポジトリで開始されたが、のちのLoHaなど新しい概念が追加されたため作者がLyCORISというリポジトリで各種の概念をまとめることにしたらしい。
-『LyCORIS』
-┣ Locon
-┠ LoHa
-┠ LoKR
-┗ (IA)^3
-みたいな感じ
+
+** LyCORISのアルゴリズム
+Locon(いわゆるC3Lier)
+LoHa
+LoKR
+(IA)^3
+Full(Native Fine-tuning、いわゆるDreambooth)
+GLoRA(開発中)
 
 *情報
 
