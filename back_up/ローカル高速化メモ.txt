@@ -288,13 +288,15 @@ VRAM消費を減らす効果がある。速度も向上するかも。
 -- VRAMの節約になるかも?
 - fp16化する
 
-fp16化の副作用として、modules.devices.NansException が発生する。特にVAEで発生しやすい。
+fp16化の副作用として、modules.devices.NansException が発生する。
+特にNovelAI系のVAEで発生しやすい(NovelAI,ClearVAE1.0,Nenhanceなどが該当)。
 
 対策としては、fp32で計算するように強制する。(高速化としては本末転倒だけど)
  --no-half や--no-half-vae を追加する。速度は落ちる。
 
 たまに真っ黒画像が出てもいいから高速化したいのであれば、
 disable-nan-checkを追加する手もある。
+それと、黒画像は大体VAEが原因なのでNovelAI系VAEを使わない手もある。
 
 ** VAEをckptに内蔵する
 
@@ -397,9 +399,17 @@ Windowsと比べて多少高速化するらしい・・・？
 サブ機とかお古になったら検討してもいいかも
 なおインストールが簡単かは謎
 
-* TensorRT(Lsmith)を使う
-- [[Lsmith]]
-- 使いこなすのは大変
+* TensorRTを使う
+https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT
+最適化で大幅に高速化するもので最大2倍速くなるらしい。NVIDIA専用。
+1111のExtensionから導入できる。
+
+けど以下の重大な欠点があるのでベンチ以外で使い道はないかな
+-あらかじめ設定した解像度のみ使用可能
+-TensorRTモデル変換に時間がかかるしVRAM消費が激しい
+-LoRAはTensorRT変換で埋め込んで使えるが1つしか使えない
+-ControlNetのようなU-netに干渉するものは一切使えない
+-Extensionのインストールが不安定で失敗しやすい
 
 * venvをいったん消して作り直す
 Windows再インストール並みの最終手段。
