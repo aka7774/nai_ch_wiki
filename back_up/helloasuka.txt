@@ -57,6 +57,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3060|12GB|Ryzen 5500||39.1|--xformers --autolaunch --opt-channelslast --enable-insecure-extension-access|Ubuntu22.04.3LTS@WSL2@Windows11 PL70% / version:v1.6.0 / python:3.10.10 / torch:2.0.1+cu118 / xformers:0.0.23+b73c0f2.d20231011 / gradio: 3.41.2|
 |RTX3071ti|8GB|Ryzen 7 5700X||27.7|--xformers --no-half-vae --disable-nan-check|version: v1.6.0 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.20 &#8192;&#8226;&#8192; gradio: 3.41.2　/tensorRT不使用|
 |RTX3071ti|8GB|Ryzen 7 5700X||16.7|--xformers --no-half-vae --disable-nan-check|version: v1.6.0 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.0.1+cu118 &#8192;&#8226;&#8192; xformers: 0.0.20 &#8192;&#8226;&#8192; gradio: 3.41.2 /tensorRT使用|
 |RTX4070|12GB|Core i5 13400F||18.7|--xformers --opt-channelslast|version: v1.6.0 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.1.0+cu121 &#8192;&#8226;&#8192; xformers: 0.0.22.post4　/Flash Attention2対応のxformersお試し|
@@ -306,6 +307,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 3060|12GB|Ryzen 5500||36.2|--xformers --autolaunch --opt-channelslast --enable-insecure-extension-access|Ubuntu22.04.3LTS@WSL2@Windows11 PL70% / version:v1.6.0 / python:3.10.10 / torch:2.0.1+cu118 / xformers:0.0.23+b73c0f2.d20231011 / gradio: 3.41.2|
 |RTX4090|24GB|Core i7-12700K||6.1|--xformers|TensorRT Windows11|
 |RTX 4070 Ti|12GB|Core i5-9400F||16.5|--opt-sdp-no-mem-attention --opt-channelslast|version: 1.6.0 python: 3.10.6 torch: 2.0.1+cu118  xformers: N/A gradio: 3.41.2 checkpoint: 89d59c3dde|
 |RX7900XTX|24GB|Ryzen7 5800X||18.74||version:v1.3.2 python:3.10.6 torch:2.1.0.dev20230620+rocm5.5 xformers:N/A gradio:3.32.0 checkpoint: 89d59c3dde|
@@ -349,7 +351,7 @@ Batch Count 1、Batch Size 10
 [END]
 ** 参考値(本家・クラウドコンピューティング)
 [+]
-|RTX3060|12GB|Ryzen 5 5500|44.1|--xformers|Windows11 / version: v1.6.0&#8192;/ python: 3.10.6&#8192;/ torch: 2.0.1+cu118&#8192;/ xformers: 0.0.20&#8192;/&#8192;gradio: 3.41.2 / Power Limit=70%|
+{| class="sort edit nanj_prompt_table"
 |~サービス名|w(100px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken|オプション|備考|
 |Paperspace Gradient|NVIDIA A100|80GB|Intel Xeon Gold 5317 @3.00GHz 12C/24T||7.0|--opt-sdp-attention --opt-channelslast --disable-safe-unpickle --no-half-vae --gradio-queue|torch==2.2.0.dev20231007|
 |Paperspace Gradient|NVIDIA A100|80GB|Xeon @3.20GHz 8C/8T||8.61|--opt-sdp-attention --opt-channelslast|39ドル/月プラン|
