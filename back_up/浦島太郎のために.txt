@@ -22,6 +22,36 @@
 
 #contents
 
+*2023-10-29 姫騎士プロンプトが公表される
+なんJNVA部★279 https://fate.5ch.net/test/read.cgi/liveuranus/1698559380/126
+
+126: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 1314-CP9B)  2023/10/29(日) 20:17:13.22 ID:to5BfwrK0
+初手陰謀論なお客さんに優しいスレやね
+
+前スレ>>977
+ワイの姫騎士ちゃんにはLoRAは無いで…プロンプトで簡単に出るお手軽子や
+シチュのために色々LoRA乗せるからLoRA使わんでも出せるところはLoRA使わないのがワイの運用
+ポジ：young girl ,tiara , white hair ,twintails , 13 years old,big blue eyes ,gold accent cape, embroidery breastplate ,thighhighs
+ネガ：elf,aminal ear,forehead ,pubic hair, asymmetrical thighhighs,heterochromia
+これが最近のベース姫騎士ちゃんでこっからモデルやLoRAに合わせてtiaraやwhite hairの強調度合い調整したり着せ替えしたりする
+
+これにより姫騎士ちゃんが活動範囲(および後ろの穴)を大幅にひろげた
+※姫騎士ちゃんはフリー素材です
+
+* 2023-10-21 NovelAIが新モデルNovelAI Diffusion Anime V2を発表
+NovelAI社が新たに学習させた新しい画像生成モデルNovelAI Diffusion Anime V2を発表した([[Introducing NovelAI Diffusion Anime V2>>https://blog.novelai.net/introducing-novelai-diffusion-anime-v2-dc668ebca34b]])
+V3も開発中であることも同時に発表され、続報が待たれる。
+モデル構造はStable Diffusionをもとにしているとしか書かれていないため、どのモデル構造を採用しているのかは不明である。
+
+プロンプトが従来よりもよく効くとか、手の描写力が向上しているなどと言われており純粋に質が高くなっているようである。
+(参考：[[なんJNVA部★277>>https://fate.5ch.net/test/read.cgi/liveuranus/1697877317/]])
+
+質の向上にとどまらず、機能面での変化もある。従来使われていたmasterpieceタグに代わり、段階的なクオリティタグ(quality tag)と美学タグ(aesthetics tag)というものが採用された。
+クオリティタグと美学タグの違いはわかりにくいが、発表記事を見る限りではクオリティタグは服の皺や塗りなどミクロ的な点に大きく影響を与えており、美学タグはどちらかといえば構図や輪郭などのマクロ的な点に影響を与えているようである。
+違いなんて考えず"masterpiece"の代わりに"very aesthetic, best quality"と入れておけばいいんだろという気持ちにはなるが、輪郭や構図をそのままに細部の調整をタグでできるのは有用かもしれない。
+
+DALLE-3が組み込まれたBing Image CreatorとかGPT-4Vのニュースに比べるとインパクトが薄かったため放置していたのだが、NovelAI 5ch WikiというタイトルなのにNovel AIのアップデートが書かれていないのは問題なのでは？と思い慌てて追記したのは秘密である。
+
 * 2023-10-01 DALLE-3でBing Image Creatorが進化
 [[Bing Image Creator>https://www.bing.com/images/create?FORM=GENILP]]はエロ規制が強く、生成される画像もあまりパッとしなかったため注目されていなかった。
 9月22日ごろに大幅アップデートが入った模様([[Bing Image Creatorのアップデートに関する記事>https://forest.watch.impress.co.jp/docs/news/1533405.html]])。
@@ -1226,6 +1256,9 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
 
 
 
