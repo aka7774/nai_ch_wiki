@@ -280,6 +280,13 @@
 |king dedede,fur trim red royal robe ,blue skin,fat|||デデデ大王||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Rtz2Nd0MHF.png)|
 |}
 
+***　ポプテピピック
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, okawa bkub (style), {{pipimi, poptepipic}}, very aesthetic, best quality, intricate, overall detail, 1 girl, blue hair, long hair, blue eyes, {{long head}}, hair bow, serafuku, school uniform, flip the bird, standing, :3, simple background, front view, full body, facing the front, straight-on, {solo focus}, close-up, depth of field, highly detailed,|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ポプテピピック|ピピ美|V2使用。ポプ子より効きが弱いのでプロンプトで補強する必要あり。|https://image01.seesaawiki.jp/n/h/nai_ch/C7zqfSCUPk.png|
+| official style, okawa bkub (style), {{popuko, poptepipic}}, very aesthetic, best quality, intricate, overall detail, 1 girl, serafuku, school uniform, flip the bird, standing, :3, simple background, front view, full body, facing the front, straight-on, {solo focus}, close-up, depth of field, highly detailed,|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ポプテピピック|ポプ子|V2使用。指定すると髪型が固定化するので効いているが、絵柄は変わりにくい。ディフォルメにすると絵が安定しなくなる。|https://image02.seesaawiki.jp/n/h/nai_ch/kTtQmcsBws.png|
+|}
+
 ***  　ぼっち・ざ・ろっく！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
