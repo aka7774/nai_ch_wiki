@@ -56,6 +56,30 @@
 |official style, 1990s (style), 2d cel anime, {{sakuraba aoi)}}, {{ai yori aoshi}}, very aesthetic, best quality, intricate, overall detail, 1 girl, blue hair, {{short hair}}, bowl cut hair, short bangs, sidelocks, cropped back hair, blue eyes, Japanese clothes, {{patternless clothes}}, blue kimono, long sleeves, own hands together, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, hair intakes, bowl,|藍より青し|桜庭葵|V2使用。今風の絵柄でまぁまぁ似てれば良しとした。|https://image01.seesaawiki.jp/n/h/nai_ch/CsjPZW6Q01.png|
 |}
 
+***　青の祓魔師
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{moriyama shiemi}}, {{ao no exorcist}}, very aesthetic, best quality, intricate, overall detail, 1 girl, green eyes, school uniform, thighhighs, standing, contemptuous, disdain, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |青の祓魔師|杜山しえみ|V2使用。目の色が安定しないので指定している。|https://image01.seesaawiki.jp/n/h/nai_ch/LmpkJAwURm.png|
+|}
+
+***　アカメが斬る！
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{akame (akame ga kill!))}}, {{akame ga kill!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, black hair, long hair, black dress, red tie, holding sword, standing, clear face, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, elf,|アカメが斬る！|アカメ|V2使用。似た人になる程度。|https://image02.seesaawiki.jp/n/h/nai_ch/8qWtQMgsn5.png|
+|}
+
+***　アクセル・ワールド
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{kuroyukihime}}, {{accel world}}, very aesthetic, best quality, intricate, overall detail, 1 girl, ahoge, small breasts, black gown, bare shoulders, standing, clear face, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, elf,|アクセル・ワールド|黒雪姫|V2使用。black gown, bare shoulders,　と指定するとローカルネットアバター風の衣装が再現される。|https://image02.seesaawiki.jp/n/h/nai_ch/zGowMLz_zB.png|
+|}
+
+***　アサルトリリィ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{hitotsuyanagi riri}}, {{assault lily}}, very aesthetic, best quality, intricate, overall detail, 1 girl, pink hair,  medium hair, one side up, four-leaf clover hair ornament, pink eyes, double-breasted school uniform, sailer collar, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, elf, serafuku,|アサルトリリィ|一柳梨璃|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/vxVhWC3f2z.png|
+|}
+
 ***　アズールレーン
 {| class="sort edit nanj_prompt_table"
 |~w(235px):プロンプト|~w(235px):ネガティブプロンプト|~w(59px):作品|~w(59px):キャラ|~w(116px):備考|サンプル|
@@ -84,6 +108,21 @@
 |solo, 1girl, [full body], azur lane, {a girl_have_({{crescent (azul lane)}}, {{{loli}}}, slender, {{middle-small breasts}}, {{blonde hair}}, long two side up, super-long hair, {{wine-red eyes}}, {{white blouse}}, {{dark blue corset}}, tie, {{{pink mini skirt}}}, black socks, white small sailor cap, standing)}, {{beautiful detailed face}}, {{{perfect  detailed}}},|{{{{monochrome}}}}, {{{{{stone}}}}}, {{{{{grayscale}}}}}, {{{{{sloppy}}}}}, {{{3 or more panels}}}, {{crop}}, {{from below}}, {{{{{{chibi}}}}}}, {{{{{heterochromia}}}}, {{{{odd-eye}}}}, {{{color shift}}}, {{{loss of colour instructions}}}, {{{{{blue skirt}}}}}, {{{{{dark blue skirt}}}}}, {{{{{sailor skirt}}}}},|アズールレーン|クレセント|開発中につき安定せず。人物の方は割と簡単に再現してくれるのだが、衣装についてはガチャ要素。ここまで「青系のスカートを描くんじゃねぇ」と言っても、艦これの駆逐艦の影響なのか高い確率で描く。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/R4k_vCNhGr.png)|
 |}
 
+***　あずまんが大王
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{mihama chiyo)}}, {{azumanga daioh}}, very aesthetic, best quality, intricate, overall detail, 1 girl, child, orange hair, {short twintails}, orange eyes, azumanga daioh's school uniform, standing, c:, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, low twintails, back hair,|あずまんが大王|美浜ちよ|V2使用。ツインテールが安定しない。難しい。|https://image01.seesaawiki.jp/n/h/nai_ch/wnyCPhPxIK.png|
+|official style, 2d cel anime, {{kasuga ayumu)}}, {{azumanga daioh}}, very aesthetic, best quality, intricate, overall detail, 1 girl, black hair, medium hair, pink school uniform, standing, light smile, :d, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, elf, serafuku,|あずまんが大王|春日歩（大阪さん）|V2使用。|https://image01.seesaawiki.jp/n/h/nai_ch/jAXIlq3xnR.png|
+|official style, 2d cel anime, {{kagura (azumanga daioh)}}, {{azumanga daioh}}, very aesthetic, best quality, intricate, overall detail, 1 girl, short hair, large breasts, tan, pink school uniform, standing, grin, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, elf, serafuku,|あずまんが大王|神楽|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Nd5w83lWQK.png|
+|}
+
+***　安達としまむら
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{shimamura hougetsu)}}, {{adachi and shimamura}}, very aesthetic, best quality, intricate, overall detail, 1 girl, light blonde hair, hairclip, purple eyes, blazer, school uniform, red scarf, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |安達としまむら|島村抱月|V2使用。何となく似ている程度。|https://image01.seesaawiki.jp/n/h/nai_ch/DRI09BOSvI.png|
+|official style, 2d cel anime, {{adachi sakura)}}, {{adachi and shimamura}}, very aesthetic, best quality, intricate, overall detail, 1 girl, black hair, short hair, asymmetrical bangs, hair intake, blue eyes, blazer, school uniform, green scarf, covering mouth, standing, clear face, frown, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |安達としまむら|安達桜|V2使用。髪の分け目がどちらになるかがランダム。|https://image02.seesaawiki.jp/n/h/nai_ch/ztTK5bqjGc.png|
+|}
+
 ***　アトリエシリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -96,12 +135,24 @@
 |solo,atelier ryza,{{{red shorts}}}, short hair,white hat,black bow, necklace, thigh boots, brown boots, strapless shirt, white shirt,brown belt||ライザのアトリエ|ライザリン&#183;シュタウト||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7Hcg4NXHOX-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/7Hcg4NXHOX.png]]|
 |}
 
+***　あの日見た花の名前を僕達はまだ知らない。 
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{honma meiko)}}, {{ano hi mita hana no namae wo bokutachi wa mada shiranai.}}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |あの日見た花の名前を僕達はまだ知らない。 |本間芽衣子|V2使用。ほぼ完全再現。|https://image02.seesaawiki.jp/n/h/nai_ch/d4Mg1vmKgz.png|
+|}
+
+***　阿波連さんははかれない
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{aharen reina)}}, {{aharen-san wa hakarenai}}, very aesthetic, best quality, intricate, overall detail, 1 girl, loli, light purple hair, long hair, blunt bang, cardigan, pleated skirt, pantyhose, school uniform, standing, clear face, expressionless, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |阿波連さんははかれない |阿波連れいな|V2使用。絵柄が影響を受けるが原作絵というわけでもない。|https://image02.seesaawiki.jp/n/h/nai_ch/gEx63s_x4N.png|
+|}
+
 ***　アマガミ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, game cg, {{ayatsuji tsukasa)}}, {{amagami}}, very aesthetic, best quality, intricate, overall detail, 1 girl, black hair, long hair, strait hair, school uniform, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |アマガミ|絢辻詞|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/k2jjY5ZQPV.png|
 |{{{{nanasaki ai}}}}, &#91;&#91;&#91;&#91;amagami]]]], black hair, short hair, dark purple eyes, kibito high school uniform, black jacket, sweater vest, blazer, smile, solo, cowboy shot, ||アマガミ|七咲逢||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ywLBLnPIWs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ywLBLnPIWs.png]]|
 |}
-
 
 ***　甘城ブリリアントパーク
 {| class="sort edit nanj_prompt_table"
