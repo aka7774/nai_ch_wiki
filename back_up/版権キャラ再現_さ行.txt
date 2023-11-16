@@ -34,6 +34,12 @@
 |}
 
 **し
+***　地獄少女
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{enma ai}}, {{jigoku shoujo }}, very aesthetic, best quality, intricate, overall detail, 1 girl, younger, black serafuku, standing, expressionless, clear face, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |地獄少女|閻魔あい|V2使用。オリジナルよりホラーな感じになりやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/5zvajjMQDg.png|
+|}
+
 ***　地獄先生ぬ〜べ〜
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -79,6 +85,12 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |{{{{yano Erika}}}}, shirobako, {{highly detailed}, 1girl, {{loli}}, hair clip, {{{pig tail}}}, swept bangs,very short hair, tsurine, smile, yellow  hair, black ribbon, t-shirt, |sidelocks, medium hair, long hair, short hair, bob cut, pig,animal ears|SHIROBAKO|矢野エリカ|髪型はtwintailやtwo side upだといまいち近づかない事が多い。~~pig tailでもたまにドリルになるので髪型ガチャは必須|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/stKcSvX0i7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/stKcSvX0i7.png]]|
+|}
+
+***　シャーマンキング
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{kyouyama anna}}, {{shaman king}}, very aesthetic, best quality, intricate, overall detail, 1 girl, blonde hair, pearl medium hair, forehead, yellow eyes, red bandana, necklace, black dress, standing, expressionless, clear face, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |シャーマンキング|恐山アンナ|V3使用（上）。V2（下）と同じプロンプトでこれだけ出力結果が違う。|https://image02.seesaawiki.jp/n/h/nai_ch/Uk1lJwV5uQ.png https://image01.seesaawiki.jp/n/h/nai_ch/_gr0Z7Cyes.png|
 |}
 
 ***　勝利の女神:NIKKE
@@ -248,4 +260,6 @@
 |2d cel anime, {{ikaros (sora no otoshimono), sora no otoshimono}}, very aesthetic, best quality, intricate, overall detail, 1 girl, angel wings, collar, chain, white leotard, gauntlet, {mini-skirt}, bare shoulder, upper cleavage, navel, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed,|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, halo, |そらのおとしもの|戦略（戦術戦略用）エンジェロイド　タイプα　Ikaros（イカロス）|V2使用。顔の造形は揺るがないが、コスチュームはあまり再現しない。|https://image01.seesaawiki.jp/n/h/nai_ch/1WtcUfBeXN.png|
 |solo, 1girl, masterpiece, high quality, {{{nymph &#40;sora no otoshimono)}}},  {{{sora no otoshimono}}}, blue hair, long hair, twin tails, {white robot ears}, black thighhighs, garter straps,  {{{fairy wing}}},   {{{collar}}}, chain, white leotard, bare shoulders,  white gloves, {{small}} breast, smile, cowboy shot, no pants, loli|cat ears, skirt, bird wings, robot|そらのおとしもの|電子戦用エンジェロイド・タイプβ ニンフ|ロボット耳と羽が安定しない服とアーマーは再現困難|https://image02.seesaawiki.jp/n/h/nai_ch/elDHAbO4Gf.png|
 |}
+
+
 

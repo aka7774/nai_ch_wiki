@@ -58,11 +58,22 @@
 |{{{shinomiya kaguya}}},{{{kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~}}},folded ponytail,parted bangs,forehead,red eyes,black hair,hair ribbon,red ribbon,short hair,tsurime,skinny,small breast,shuuchiin academy school uniform, black dress,collared dress,neck ribbon,long sleeves,  |{hair between eyes},blunt bangs,tilak,bindi,forehead mark,crown,hair_ornament,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,|かぐや様は告らせたい|四宮かぐや||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qPrUet56rt.png)|
 |}
 
+***　彼女、お借りします
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{yaemori mini}}, {{kanojo okarishimasu}}, very aesthetic, best quality, intricate, overall detail, 1 girl, black and blue hair, long hair, streaked hair, blunt bangs, ahoge, purple eyes, fang, open mouth, sundress, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body,|彼女、お借りします|八重森みに|V3使用。ブルーのメッシュが安定しない。|https://image01.seesaawiki.jp/n/h/nai_ch/smKla2zl6y.png|
+|official style, 2d cel anime, {{sarashina ruka}}, {{kanojo okarishimasu}}, very aesthetic, best quality, intricate, overall detail, 1 girl, sundress, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body,|彼女、お借りします|更科瑠夏|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/zXN2hABuzQ.png|
+|official style, 2d cel anime, {{sakurasawa sumi}}, {{kanojo okarishimasu}}, very aesthetic, best quality, intricate, overall detail, 1 girl, sundress, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body,|彼女、お借りします|桜沢墨|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/ehKpBeu9yK.png|
+|official style, 2d cel anime, {{nanami mami}}, {{kanojo okarishimasu}}, very aesthetic, best quality, intricate, overall detail, 1 girl, sundress, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |彼女、お借りします|七海麻美|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/fhmxkjenfI.png|
+|official style, 2d cel anime, {{mizuhara chizuru}}, {{kanojo okarishimasu}}, very aesthetic, best quality, intricate, overall detail, 1 girl, sundress, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |彼女、お借りします|水原千鶴|V3使用。V2で出なかったキャラがあっさり再現される。|https://image02.seesaawiki.jp/n/h/nai_ch/yo9VCLIYc3.png|
+|}
+
 ***　からかい上手の高木さん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |{{takagi san}}, 1girl, solo, forehead, light brown hair , long hair, school uniform, sailor uniform, {{{tareme}}}, brown eyes, {{{round eyes}}}, 13 years old,kind smile, round face, {{{ringed eyes}}}, one length, {{{flat chest}}}, {{{round face}}}, slender, classroom, {{{flat_chest}}}, {{{facial}}}, ||からかい上手の高木さん|高木さん||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gNrizNWkvk-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/gNrizNWkvk.png]]|
 |}
+
 ***　艦隊これくしょん
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |open mouth,seaside,1girl,{{{10years old,5heads high}}}, satsuki &#40;kancolle),black clothes, blond hair,{{{low twintails}}},thin and long twintails,black sailor dress,black sailor collar, white tie, small breasts, golden eyes||艦隊これくしょん|皐月|少なくとも髪の色とツインテールは指定必要。ツインテールは下側にならないことも多い。５頭身は効いている気がするレベルなので、いらなければ外してよし。|https://image02.seesaawiki.jp/n/h/nai_ch/ZsbDQHdNA2.png|
@@ -337,6 +348,12 @@
 |||五等分の花嫁|五月|||
 |}
 
+***　琴浦さん
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{kotoura haruka}}, {{kotoura-san}}, very aesthetic, best quality, intricate, overall detail, 1 girl, slender, orange hair, short hair, orange eyes, serafuku, school uniform, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |琴浦さん|琴浦春香|V2使用。それほど似ない。|https://image02.seesaawiki.jp/n/h/nai_ch/FbiKk6Mo8W.png|
+|}
+
 ***　この素晴らしい世界に祝福を
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -348,10 +365,30 @@
 |darkness_(&#91;&#91;&#91;&#91;&#91;&#91;konosuba]]]]]]), long hair, yellow hair, blue eyes, ponytail, medium breasts, {{x}} hair ornaments, black gloves,  |hair intakes, aqua, megumin,  evil, blue hair, sphere, hair bow, horn, blue hair ornament, |この素晴らしい世界に祝福を|ダクネス|どうしてもアクアの髪留めが出やすい。hair ornamentsがアクアの髪留めを誘発しているので、ダクネスの髪留めを諦めていいなら外すのもあり。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia.png]]|
 |}
 
+***　小林さんちのメイドラゴン
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{ilulu (maidragon)}}, {{kobayashi-san chi no maidragon}}, very aesthetic, best quality, intricate, overall detail, 1 girl, loli, huge  breasts, black costume, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |小林さんちのメイドラゴン|イルル|V2使用。ロリキャラとして出力されがちなので、胸の大きさは指定した方が安定する。|https://image01.seesaawiki.jp/n/h/nai_ch/yMEewWjTg8.png|
+|official style, 2d cel anime, {{lucoa (maidragon)}}, {{kobayashi-san chi no maidragon}}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |小林さんちのメイドラゴン|ルコア（ケツァルコアトル）|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/n2lNBvz0rZ.png|
+|official style, 2d cel anime, {{elma (maidragon)}}, {{kobayashi-san chi no maidragon}}, very aesthetic, best quality, intricate, overall detail, 1 girl, horn, black hair, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |小林さんちのメイドラゴン|エルマ|V2使用。髪色、目の色、角を指定すると安定する。|https://image02.seesaawiki.jp/n/h/nai_ch/ZTZHex4LBP.png|
+|official style, 2d cel anime, {{kanna kamui}}, {{kobayashi-san chi no maidragon}}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |小林さんちのメイドラゴン|カンナカムイ|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/DzfsP9F02t.png|
+|official style, 2d cel anime, {{tohru (maidragon)}}, {{kobayashi-san chi no maidragon }}, very aesthetic, best quality, intricate, overall detail, 1 girl, maid costume, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |小林さんちのメイドラゴン|トール|V2使用。|https://image01.seesaawiki.jp/n/h/nai_ch/5eRD7Jf7v2.png|
+|}
+
 ***　ゴブリンスレイヤー
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |{2d cel anime, high elf archer (goblin slayer!), goblin slayer!}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, priestess (goblin slayer!),|ゴブリンスレイヤー|妖精弓手|V2使用。服の再現度が女神官より低い。|https://image02.seesaawiki.jp/n/h/nai_ch/xLvSY4EIps.png|
 |{2d cel anime, priestess (goblin slayer!), goblin slayer!}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, |ゴブリンスレイヤー|女神官|V2使用。|https://image01.seesaawiki.jp/n/h/nai_ch/QH2y9I5mxi.png|
 |}
+
+***　古見さんは、コミュ症です。
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{komi shouko}}, {{komi-san wa komyushou desu}}, very aesthetic, best quality, intricate, overall detail, 1 girl, playboy bunny, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |古見さんは、コミュ症です。|古見硝子|V2使用。|https://image01.seesaawiki.jp/n/h/nai_ch/UZWnDZcJQp.png|
+|}
+
+
+
+
 
