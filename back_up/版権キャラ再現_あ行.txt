@@ -23,15 +23,18 @@
 |1girl, {{{{{mostima (arknights)}}}}}, white shirt, black hooded jacket, fur-trimmed jacket, long sleeves, black short pants, long hair, dark blue hair, aqua eyes, black horns, demon horns, demon tails, halo, black wings, energy wings, smug, closed mouth|blush, hair ornament, demon wings|アークナイツ|モスティマ||https://image02.seesaawiki.jp/n/h/nai_ch/MDG8yXdRqO.png|
 |1girl, lappland (arknights), small breasts, black coat, long sleeves, &#91;&#91;wide sleeves]], black short pants, long hair, {white hair}, hair ornament, wolf ears, {{{scar across}}} eye, gray eyes, empty eyes, evil smile, grin, wide-eyed|blush, demon horns, demon wings, demon tail, {{{{{open jacket}}}}}, white shirt, white clothes, wolf, belt|アークナイツ|ラップランド||https://image01.seesaawiki.jp/n/h/nai_ch/pfP4bVQryl.png|
 |}
+
 ***　あぁ女神様！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |{1girl}, {{{{belldandy}}}},{{aa_megami-sama}},(antenna hair),(brown hair),(long hair),(facial mark),(forehead mark),(jewelry),(large breasts),(ponytail),(nude), (bracelet),(blue eyes),(collarbone),(floating hair), (((urtra Quality))), ((Ultra-Detailed)), ((Extremely)), ((Beautiful Detailed Skin)), (Beautiful Detailed Eyes),(gently smile)||あぁ女神様！|ベルダンディー|現状髪型だけ|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Nh1LPkzBRp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Nh1LPkzBRp.png]]|
+|}
 
 ***　アイカツ！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||アイカツ！||||
+|1girl, sakuraba rola, aikatsu stars!, {{{{{{lightcyanblue school uniform, lightcyanblue skirt}}}}}}, cowboy shot, yotuboshi academy school uniform, blue ribbon, |aikatsu!, navy blue skirt, starlight academy school uniform|アイカツスターズ！|桜庭ローラ|V3使用。ノーマルの制服より幹部服（2年目の衣装）の方が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/OuhvUS6uI4.png|
+|1girl, nijino yume, aikatsu stars!, {{{{{{lightcyanblue school uniform, lightcyanblue skirt}}}}}}, cowboy shot, yotuboshi academy school uniform, blue short tie|aikatsu!, navy blue school uniform, navy blue skirt, starlight academy school uniform|アイカツスターズ！|虹野ゆめ|V3使用。四ツ星学園の制服の再現はほぼガチャの運頼み。高確率でスターライト学園のデザインが混ざってくる。|https://image01.seesaawiki.jp/n/h/nai_ch/ymF3ACmD02.png|
 |aikatsu!, todo yurika, spiralcurl, pale_blond short hair, twin tails, red eyes, blunt bangs, light blue thin ribbon on head, fang, cowboy shot, official art,||アイカツ！|藤堂ユリカ|ツインテールのリボンが出にくい|https://image01.seesaawiki.jp/n/h/nai_ch/OF0__xPLkp.png|
 |aikatsu!, hikami sumire, light purple hair, blunt bangs, semi_long hair, purple eyes, official art, cowboy shot||アイカツ！|氷上スミレ||https://image02.seesaawiki.jp/n/h/nai_ch/u6rld9pF6H.png|
 | aikatsu!, hoshimiya ichigo,hair ribbon,red ribbon,red eyes,full body,official art,||アイカツ！|星宮いちご|リボンがセンターに来る確率が低い|https://image02.seesaawiki.jp/n/h/nai_ch/LHMVzHWZhW.png|
@@ -66,6 +69,13 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, 2d cel anime, {{akame (akame ga kill!))}}, {{akame ga kill!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, black hair, long hair, black dress, red tie, holding sword, standing, clear face, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, elf,|アカメが斬る！|アカメ|V2使用。似た人になる程度。|https://image02.seesaawiki.jp/n/h/nai_ch/8qWtQMgsn5.png|
+|}
+
+***　アクエリオンシリーズ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, mikono suzushiro, aquarion evol, very aesthetic, best quality, intricate, overall detail, 1 girl, purple hair, single hair bun, green eyes, uniform, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |アクエリオンEVOL|ミコノ・スズシロ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/aJd6ZUd924.png|
+|official style, silvia de alisia, sousei no aquarion, very aesthetic, best quality, intricate, overall detail, 1 girl, blonde hair, hair rings, sidelocks, blue eyes, pink uniform, mini-skirt, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |創聖のアクエリオン|シルヴィア・ド・アリシア|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/fiRYi7LSCU.png|
 |}
 
 ***　アクセル・ワールド
@@ -176,6 +186,7 @@
 ***　痛いのは嫌なので防御力に極振りしたいと思います。
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 2d cel anime, {{maple (bofuri)}}, {{bofuri}}, very aesthetic, best quality, intricate, overall detail, 1 girl, medium hair, ahoge, purple eyes, hair ornament, black dress, mini-skirt, huge shield, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |痛いのは嫌なので防御力に極振りしたいと思います。|メイプル（本条楓）|V3使用。髪飾りとかは出る。相変わらず巨大な盾は再現できそうにない。|https://image01.seesaawiki.jp/n/h/nai_ch/5BGUGb2YSt.png|
 |official style, 2d cel anime, {{maple (bofuri))}}, {bofuri}}, very aesthetic, best quality, intricate, overall detail, 1 girl, black hair, small ahoge, purple eyes, black bikini, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |痛いのは嫌なので防御力に極振りしたいと思います。|メイプル（本条楓）|V2使用。似た感じになる程度。巨大な盾は再現できそうにない。|https://image02.seesaawiki.jp/n/h/nai_ch/wzIkJ9wQfY.png|
 |}
 
@@ -321,4 +332,6 @@
 |{{{{{aragaki_ayase}}}}},ore_no_imouto_ga_konna_ni_kawaii_wake_ga_nai,Navy blue long straight hair,Navy blue eyes,16 years old,serafuku,||俺の妹がこんなに可愛いわけがない|新垣あやせ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vexqnH_8gr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/vexqnH_8gr.png]]|
 |gokou ruri, Gothic & Lolita, ore no imouto ga konna ni kawaii wake ga nai, best_quality,ultra-detailed,illustration,perfect_detailed,shiny,||俺の妹がこんなに可愛いわけがない|五更瑠璃||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ewWQWTLojX-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ewWQWTLojX.png]]|
 |}
+
+
 

@@ -41,3 +41,15 @@ UC:ass, pov hand, 2girl, {{{bra}}}, mutated hands and fingers, malformed hands, 
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dr6aExlw_C-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dr6aExlw_C.png]]
 
+2023/11/19編集
+　novelAIがV3になったので、2022/10/23追記のプロンプトをもとに試してみた。
+=|BOX|
+2d,[nsfw],solo,cel anime,arle nadja(puyopuyo), brown hair,loli,{cat's cradle,holding panties},put both hands together,open arms forward,hands forward, very aesthetic, best quality, intricate,no panties,nose blush,{{closed mouth,wavy mouth}},sexually suggestive ,{looking at viewer}
+||=
+ネガティブ
+=|BOX|
+{cat's cradle,string,rope}, poorly drawn, lowers, blurry, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship,  extra digits, {{skirt}},text,title,signature,watermark, school uniform, {{{large breast}}},rulue(puyopuyo),
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Fth2DrMV2M-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Fth2DrMV2M.png]]
+　cat's cradleであやとりの判定がされるので、そこにパンツの表示を重ねる感じ。
+　広げた手にパンツが引っかかるまではそこそこ出るが、あやとりの微調整はi2iでやった方がいいかもしれない（参考画像のはi2iなし）
