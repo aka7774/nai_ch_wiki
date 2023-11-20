@@ -230,7 +230,7 @@
 |1girl,solo,{{{pink hair}}},{{very long hair}},hair between eyes,[red eyes],{{{{{large amount of hair}}}}},straight hair,big eyes,{small breasts},{{{flipped hair}}},{messy hair},hair intakes,crossed bangs,white frilled dress,sleeves,&#91;&#91;cleavage]],plunking neckline,bare shoulders,{expressionless},[sleepy],|strapless dress, sleeveless,necklace,ahoge,loli,little girl,{{{{blush}}}},{{{{cheek}}}},malformed hands,worst quality,low quality,{{{{ugly}}}},{{{duplicate}}},{{{trans}}},{{trannsexual}},{out of frame},extra fingers,mutated hands,out of frame,extra limbs,{bad anatomy},grossproportions,{malformed limbs},{{missing arms}},{{missinglegs}},{{{extra arms}}},{{{extra legs}}},mutated hands,{fusedfingers},{{{long neck}}},fingers,extra digit,cropped,bad feet,{{poorly drawnhands}},{{poorly drawn face}},{{{mutation}}},{{deformed}},{blurry},{{bad anatomy}},{{{bad proportions}}},{{extra_limbs}},{{{disfigured}}}, bad anatomy disfigured,malformed mutated,missing limb,normal quality,too many fingers,long neck,bad finglegs,cropped, bad feet,bad anatomy disfigured,malformed mutated,{{morbid}},{{mutilated}},{{{tranny}}},missing limb,malformed hands,|精霊幻想記|アイシア|malformed hands以降は画質向上用|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eLO3_hNJHZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/eLO3_hNJHZ.png]]|
 |}
 
-***　聖闘士星矢Ω
+***　聖闘士星矢シリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, aquila yuna, saint seiya omega, very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, white armor, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |聖闘士星矢Ω|鷲座のユナ|V3使用。キャラは再現されるが、聖衣は再現されない。|https://image02.seesaawiki.jp/n/h/nai_ch/uedkxUuRCo.png|
@@ -320,15 +320,23 @@
 |sword art online, {{{{{asada_shino, }}}}}, 1girl, {{black hair}}, brown eyes, glasses, short hair with long locks, school uniform, black scarf, [sinon]| green scarf, green hair |ソードアート・オンライン|朝田詩乃| |[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WXBJVpgW3y-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/WXBJVpgW3y.png]]|
 |}
 
+***　ソウルイーター
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, maka albarn, soul eater, very aesthetic, best quality, intricate, overall detail, 1 girl, green eyes, holding scythe, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ソウルイーター|マカ・アルバーン|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/PB5oJ_fCOk.png|
+|}
+
 ***　ソウルワーカー
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece, best quality, purple eyes ,hair between eyes,ponytail,very long hair,white hair, black one-piece swimsuit ,fur-trimmed jacket,white jacket ,green necktie,bare shoulders,gloves, smirk, | |ソウルワーカー|エフネル| |[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dw3Zx1eqF1-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/dw3Zx1eqF1.png]]|
+|}
 
 ***　その着せ替え人形は恋をする
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece, best quality, Kitagawa Marin, medium breasts, contact lenses, colored contact lens, pink eyes, gyaru, gradient hair, yellow hair, very long hair, long eyelashes, nails, choker, piece sign, one side off shoulder | |着せ恋|喜多川 海夢| |[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qbQIzGHmQ6-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/qbQIzGHmQ6.png]]|
+|}
 
 ***　そらのおとしもの
 {| class="sort edit nanj_prompt_table"
@@ -339,31 +347,12 @@
 |solo, 1girl, masterpiece, high quality, {{{nymph &#40;sora no otoshimono)}}},  {{{sora no otoshimono}}}, blue hair, long hair, twin tails, {white robot ears}, black thighhighs, garter straps,  {{{fairy wing}}},   {{{collar}}}, chain, white leotard, bare shoulders,  white gloves, {{small}} breast, smile, cowboy shot, no pants, loli|cat ears, skirt, bird wings, robot|そらのおとしもの|電子戦用エンジェロイド・タイプβ ニンフ|ロボット耳と羽が安定しない服とアーマーは再現困難|https://image02.seesaawiki.jp/n/h/nai_ch/elDHAbO4Gf.png|
 |}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+***　ゾンビランドサガ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, nikaidou saki, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, orange eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body,|ゾンビランドサガ|二階堂サキ(通常Ver.)|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/zr534v7XMH.png|
+|official style, nikaidou saki, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|二階堂サキ(ゾンビVer.)|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/13QX0bl4qH.png|
+|official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(通常Ver.)|V3使用。zombieと指定しなくても肌が青くなることはある。悪しからず。|https://image01.seesaawiki.jp/n/h/nai_ch/rKT9oVAXUb.png|
+|official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
+|}
 
