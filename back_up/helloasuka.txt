@@ -34,7 +34,7 @@ https://www.tomshardware.com/news/stable-diffusion-gpu-benchmarks
 [END]
 
 infotext
-下記のテキストをコピーして、txt2imgタブのPromptとNegative Promptが空欄の状態で右側にある左下矢印を押すことでも入力できます。これは機能しない場合があります。
+下記のテキストをコピーして、txt2imgタブのPromptとNegative Promptが空欄の状態で右側にある左下矢印（&#8601;）ボタンをクリックすることでも入力できます。これは機能しない場合があります。
 おそらく、Etaは自動的には反映されないので自分で設定する必要があります。Settingsタブ→Sampler Parametersセクション→eta (noise multiplier) for ancestral samplers
 =||
 masterpiece, best quality, masterpiece, asuka langley sitting cross legged on a chair

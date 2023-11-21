@@ -29,6 +29,7 @@
 * 単語集
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|isolated on 色の名前 background|isolated on white backgroundで白背景になる。white backgroundだけだと謎オブジェクトが出現するときに使うといいかもしれない|SD がトレーニングに使ったデータセット内には「isolated on *token* background」というラベルがついた画像が大量にあるらしいhttps://www.reddit.com/r/StableDiffusion/comments/yc1osj/easily_prompt_for_generating_pure_background/|https://image01.seesaawiki.jp/n/h/nai_ch/OcMpYUdUCp.5_comp001.jpg|
 |mirror|鏡に映る|selfieを付けると自撮り風になる（画像下）|[[https://image01.seesaawiki.jp/n/h/nai_ch/lIaa7C_kHv.png]][[https://image02.seesaawiki.jp/n/h/nai_ch/8M4vGtvLND.png]]|
 | supine|仰向け||https://image02.seesaawiki.jp/n/h/nai_ch/B1Y7SEBM5z.png|
 |yuri|百合|女性同士の絡み合い ~~ ネガにnudeやnsfwを入れないとR18になりやすいので注意 ~~ danbooruのwikiによるとふたなりとバイセクシャルは百合には含まれない|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/L2FrIRvKX2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/L2FrIRvKX2.png]]|

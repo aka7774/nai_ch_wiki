@@ -20,6 +20,20 @@
 [END]
 
 #contents
+
+*2023-11-20 LCM LoRAの解説記事が紹介される
+LCM LoRAはより少ないステップ数で画像を収束させる技術のこと。
+細部の描写が甘くなる傾向があるものの、今までの1/3ほどのステップ数＝約3倍の速度で画像を生成できる。
+
+なんJNVA部★288 https://fate.5ch.net/test/read.cgi/liveuranus/1700342207/797
+=|BOX|
+797 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a5a4-jMfl)[] 投稿日：2023/11/20(月) 14:26:31.02 ID:ve33UeCg0
+【西川和久の不定期コラム】Stable Diffusion高速化の決定版登場！？品質落とさず制限もほぼなしで2〜3倍速に - PC Watch
+https://pc.watch.impress.co.jp/docs/column/nishikawa/1547611.html
+
+LCM LoRAは1週間前に試したときは「早いけど品質はイマイチ」と感じたけど今は従来手法と遜色なくなったみたい?
+||=
+https://pc.watch.impress.co.jp/docs/column/nishikawa/1547611.html
 *2023-11-16 NovelAIバージョン3が公開
 NovelAIの画像生成サービスのバージョン3が一般に公開された。
 SDXLベースのモデルに、おそらくかつてと同じようにDanbooruタグベースで学習されたようで、Danbooruタグでの指定と自然文での指定が使用できる。
@@ -1267,6 +1281,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
