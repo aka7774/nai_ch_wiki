@@ -168,6 +168,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |1girl, momoyama mirai, kiratto pri chan, pink hair, ponytail, pink frilled stage dress, lightcyanblue head big ribbon, cowboy shot, smile,||キラッとプリ☆チャン|桃山みらい|V3使用。画像はスイートハニーキラッとコーデっぽいコーデを着用させているが、ガチャ次第でその他のコーデも出てくる。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/unzyuk8n_Z.png)|
+|1girl, moegi emo, {{{{{{{{kiratto pri chan}}}}}}}}, yellow hair, green cheerleader, lightblue eyes, cowboy shot, grin, raise one leg,|ahoge|キラッとプリ☆チャン|萌黄えも|V3使用。なぜか高確率でアホ毛が出てくるので、ネガティブプロンプトに設定しておいた方が良い。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2T1TzLvtkD.png)|
 |}
 
 ***　GUILTY GEAR (ギルティギア)

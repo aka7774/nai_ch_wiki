@@ -12,7 +12,12 @@ Automatic1111のHires.fixとその他さまざまな拡張機能がメインに�
 
 - みんな雰囲気で使ってる
 - 沼が深い
-- 人体を破綻させる天才
+- 人体を破綻させる天才(Latent系のみ)
+
+※v1.6.0あたりから有効化する方法がチェック方式からトグル方式に変わった
+Hires.fixしたいときはトグルを展開した状態で生成するとアップスケールされる
+参照：https://www.reddit.com/r/StableDiffusion/comments/1674cwb/the_checkboxes_face_fix_hires_fix_disappeared/
+
 
 *** アップスケーラー
 

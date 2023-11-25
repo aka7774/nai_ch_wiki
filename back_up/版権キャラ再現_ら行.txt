@@ -29,7 +29,13 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |||||||
-|officail style,1girl,{{kawai rie}}, {{kawai rie (Lovers Koi Ni Ochitara...)}}, {{style of Taki Minashika}},school uniform,hair intakes, medium hair,big eyes,big pupil,shirt,green tie,pleated skirt, 2000s_(style),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body,|LOVERS〜恋に落ちたら・・・〜|河合理恵|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/PE3ZoouxC4.png|
+|officail style, 1girl, kawai rie, kawai rie (Lovers Koi Ni Ochitara), style of Taki Minashika, school uniform, hair intakes, medium hair, shirt, green tie, pleated skirt, 2000s_(style),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body,|LOVERS〜恋に落ちたら・・・〜|河合理恵|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/PE3ZoouxC4.png|
+|}
+
+***　ラ・ピュセル 光の聖女伝説
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|prier (la pucelle),|blue hair, |ラ・ピュセル 光の聖女伝説|プリエ|V3使用。名前だけで出るが、青髪になりがちなのでUC。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rP2tZ1y_Tg-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/rP2tZ1y_Tg.png]]|
 |}
 
 ***　[[ラブライブ系>版権キャラ再現/ラブライブ系]]
@@ -116,5 +122,4 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official art, {{deedlit}}, {{record of lodoss war}}, very aesthetic, best quality, intricate, overall detail, 1 cute girl, standing, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed)|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ロードス島戦記|ディードリット|V2使用。公式絵には似ないがキャラの特徴は反映される。公式より幼いイメージになる。|https://image02.seesaawiki.jp/n/h/nai_ch/2d60awmNBi.png|
 |}
-
 
