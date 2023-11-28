@@ -33,9 +33,6 @@
 ***　アイカツ！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|1girl, yuuki aine, aikatsu friends!, cowboy shot, pink stage dress, |aikatsu!|アイカツフレンズ！|友希あいね|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/V75s2tLNcO.png|
-|1girl, minato mio, aikatsu friends!, cowboy shot, blue stage dress, |aikatsu!|アイカツフレンズ！|湊みお|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/mtUPigmud8.png|
-|1girl, shirayuri kaguya, aikatsu friends!, lavender dress, cowboy shot, |aikatsu!|アイカツフレンズ！|白百合かぐや|V3使用。姉の白百合さくやの方は出ないが、妹のかぐやの方はなぜか出る。|https://image02.seesaawiki.jp/n/h/nai_ch/e1MfReqNRb.png|
 |1girl, hoshimiya ichigo, aikatsu!, blue school uniform, white skirt, cowboy shot,||アイカツ！|星宮いちご|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/IxKzTh4Qic.png|
 |1girl, kiriya aoi, aikatsu!, blue school uniform, white skirt, cowboy shot,||アイカツ！|霧矢あおい|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/_TMHNee1eN.png|
 |1girl, shibuki ran, aikatsu!, blue school uniform, white skirt, cowboy shot,||アイカツ！|紫吹蘭|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Ucyotq7M0X.png|
@@ -44,12 +41,29 @@
 |1girl, kitaooji sakura, aikatsu!, blue school uniform, white skirt, cowboy shot, pink hair,||アイカツ！|北大路さくら|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/WcwtH8ZkNb.png|
 |1girl, ichinose kaede, aikatsu!, blue school uniform, white skirt, cowboy shot, short red hair, :>,||アイカツ！|一ノ瀬かえで|V3使用。表情の設定をした方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/OqIhoLiASf.png|
 |1girl, kanzaki mizuki, aikatsu!, blue school uniform, white skirt, cowboy shot,||アイカツ！|神崎美月|V3使用。「kanzaki miduki」だと出てこない。|https://image02.seesaawiki.jp/n/h/nai_ch/1N0N5Nug2I.png|
-|1girl, sakuraba rola, aikatsu stars!, {{{{{{lightcyanblue school uniform, lightcyanblue skirt}}}}}}, cowboy shot, yotuboshi academy school uniform, blue ribbon, |aikatsu!, navy blue skirt, starlight academy school uniform|アイカツスターズ！|桜庭ローラ|V3使用。ノーマルの制服より幹部服（2年目の衣装）の方が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/OuhvUS6uI4.png|
-|1girl, nijino yume, aikatsu stars!, {{{{{{lightcyanblue school uniform, lightcyanblue skirt}}}}}}, cowboy shot, yotuboshi academy school uniform, blue short tie|aikatsu!, navy blue school uniform, navy blue skirt, starlight academy school uniform|アイカツスターズ！|虹野ゆめ|V3使用。四ツ星学園の制服の再現はほぼガチャの運頼み。高確率でスターライト学園のデザインが混ざってくる。|https://image01.seesaawiki.jp/n/h/nai_ch/ymF3ACmD02.png|
 |aikatsu!, todo yurika, spiralcurl, pale_blond short hair, twin tails, red eyes, blunt bangs, light blue thin ribbon on head, fang, cowboy shot, official art,||アイカツ！|藤堂ユリカ|ツインテールのリボンが出にくい|https://image01.seesaawiki.jp/n/h/nai_ch/OF0__xPLkp.png|
 |aikatsu!, hikami sumire, light purple hair, blunt bangs, semi_long hair, purple eyes, official art, cowboy shot||アイカツ！|氷上スミレ||https://image02.seesaawiki.jp/n/h/nai_ch/u6rld9pF6H.png|
 | aikatsu!, hoshimiya ichigo,hair ribbon,red ribbon,red eyes,full body,official art,||アイカツ！|星宮いちご|リボンがセンターに来る確率が低い|https://image02.seesaawiki.jp/n/h/nai_ch/LHMVzHWZhW.png|
 |aikatsu!,kiriya aoi,hair scrunchie,blue scrunchie,blue hair,blue eyes,left sidetail,full body,official art,||アイカツ！|霧矢あおい||https://image01.seesaawiki.jp/n/h/nai_ch/Ra7pGCpn3p.png|
+|}
+
+***　アイカツスターズ！
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1girl, nijino yume, aikatsu stars!, {{{{{{lightcyanblue school uniform, lightcyanblue skirt}}}}}}, cowboy shot, yotsuboshi academy school uniform, blue short tie|aikatsu!, navy blue school uniform, navy blue skirt, starlight academy school uniform|アイカツスターズ！|虹野ゆめ|V3使用。四ツ星学園の制服の再現はほぼガチャの運頼み。高確率でスターライト学園のデザインが混ざってくる。|https://image01.seesaawiki.jp/n/h/nai_ch/ymF3ACmD02.png|
+|1girl, sakuraba rola, aikatsu stars!, {{{{{{lightcyanblue school uniform, lightcyanblue skirt}}}}}}, cowboy shot, yotsuboshi academy school uniform, blue ribbon, |aikatsu!, navy blue skirt, starlight academy school uniform|アイカツスターズ！|桜庭ローラ|V3使用。ノーマルの制服より幹部服（2年目の衣装）の方が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/OuhvUS6uI4.png|
+|1girl, shiratori hime, aikatsu stars!, red blazer, white skirt, big blue ribbon, s4 uniform, {{blonde hair}}, lightcyanblue ribbon hair, cowboy shot, |aikatsu!, pink hair, gradation hair|アイカツスターズ！|白鳥ひめ|V3使用。髪の色とリボンが安定しない。S4制服にもスターライト学園制服のデザインが紛れ込んでくる。|https://image02.seesaawiki.jp/n/h/nai_ch/DEMrca62Xy.png|
+|1girl, kisaragi tsubasa, aikatsu stars!, red blazer, white skirt, big blue ribbon, s4 uniform, cowboy shot, {{{{{blue ponytail hair}}}}}, yellow eyes, |aikatsu!|アイカツスターズ！|如月ツバサ|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/QDnCGzK5TD.png|
+|1girl, kasumi yozora, aikatsu stars!, red blazer, white skirt, big blue ribbon, s4 uniform, cowboy shot, seductive smile, |aikatsu!|アイカツスターズ！|香澄夜空|V3使用。。|https://image02.seesaawiki.jp/n/h/nai_ch/KJrPwetjqS.png|
+|1girl, nikaidou yuzu, aikatsu stars!, twintails, red blazer, white skirt, big blue ribbon, s4 uniform, cowboy shot, |aikatsu!|アイカツスターズ！|二階堂ゆず|V3使用。アイカツ要素が強くなると、冴草きいっぽくなる。|https://image02.seesaawiki.jp/n/h/nai_ch/OIMeiZEuUy.png|
+|}
+***　アイカツフレンズ！
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1girl, yuuki aine, aikatsu friends!, cowboy shot, pink stage dress, ||アイカツフレンズ！|友希あいね|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/V75s2tLNcO.png|
+|1girl, minato mio, aikatsu friends!, cowboy shot, blue stage dress, ||アイカツフレンズ！|湊みお|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/mtUPigmud8.png|
+|1girl, chouno maika, aikatsu friends!, cowboy shot, seductive smile, purple stage dress, long hair, lighrblue eyes, side bun hair, ||アイカツフレンズ！|蝶野舞花|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/nwSI9k14ma.png|
+|1girl, shirayuri kaguya, aikatsu friends!, lavender dress, cowboy shot, ||アイカツフレンズ！|白百合かぐや|V3使用。姉の白百合さくやの方は出ないが、妹のかぐやの方はなぜか出る。|https://image02.seesaawiki.jp/n/h/nai_ch/e1MfReqNRb.png|
 |}
 
 ***　[[アイドルマスター>版権キャラ再現/アイドルマスター系#hanken_imas_classic]]
@@ -296,6 +310,15 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |blonde hair, short hair, {disheveled hair},hair between eyes,ahoge,flipped hair,blue eyes,{{black trilby}}, frilled skirt, black skirt,holding  staff, black cloak,short stature, {{long long skirt}}, white socks,{expressionless}, |witch hat,white trilby,{tall stature},{{barefoot}},{miniskirt}, short skirt,{slender},chibi, {disgust},{disdain},{embarrassed},{trembling},malformed hands,worst quality,low quality,{{{{ugly}}}},{{{duplicate}}},{{{trans}}},{{trannsexual}},extra fingers,mutated hands,extra limbs,{bad anatomy},grossproportions,{malformed limbs},{{missing arms}},{{missinglegs}},{{{extra arms}}},{{{extra legs}}},{fusedfingers},{{{long neck}}},fingers,extra digit,cropped,bad feet,{{poorly drawnhands}},{{poorly drawn face}},{{{mutation}}},{{deformed}},{blurry},{{{bad proportions}}},{{{disfigured}}},bad anatomy disfigured,malformed mutated,missing limb,normal quality,too many fingers,heterochromia,bad finglegs,{{morbid}},{{mutilated}},{{{tranny}}},|奪う者　奪われる者|レナ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rUwg6GVJ8c-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/rUwg6GVJ8c.png]]|
 |1girl,{{10 years old}},red eyes,red hair,{{medium hair}},sideburns,sidelocks,{{{crossed bangs}}},{flipped hair},{{{{messy hair}}}},ahoge,navel,{{groin}},medium breasts,slender,&#91;&#91;&#91;&#91;&#91;&#91;abs]]]]]],{fur trim hood_down}, hotpants,{sleeveless},long sleeves, belt buckle,{sweater},^ ^,hand up|ponytail,{{{{blush}}}},{{{{cheek}}}},malformed hands,worst quality,low quality,{{{{ugly}}}},{{{duplicate}}},{{{trans}}},{{trannsexual}},{out of frame},extra fingers,mutated hands,out of frame,extra limbs,{bad anatomy},grossproportions,{malformed limbs},{{missing arms}},{{missinglegs}},{{{extra arms}}},{{{extra legs}}},mutated hands,{fusedfingers},{{{long neck}}},fingers,extra digit,cropped,bad feet,{{poorly drawnhands}},{{poorly drawn face}},{{{mutation}}},{{deformed}},{blurry},{{bad anatomy}},{{{bad proportions}}},{{extra_limbs}},{{{disfigured}}}, bad anatomy disfigured,malformed mutated,missing limb,normal quality,too many fingers,long neck,bad finglegs,cropped, bad feet,bad anatomy disfigured,malformed mutated,{{morbid}},{{mutilated}},{{{tranny}}},missing limb,malformed hands,|奪う者　奪われる者|ニーナ|NGはほぼ画質向上用|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QFwMujSpl2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/QFwMujSpl2.png]]|
+|}
+
+***　うみねこのなく頃に
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1girl, beatrice (umineko), umineko no naku koro ni, cowboy shot, ||うみねこのなく頃に|ベアトリーチェ|V3使用。黄金の蝶がほぼセットで出てくる。|https://image02.seesaawiki.jp/n/h/nai_ch/q7Yj1qukP6.png|
+|1girl, eva beatrice (umineko), umineko no naku koro ni, cowboy shot, |beatrice (umineko)|うみねこのなく頃に|エヴァ・ベアトリーチェ|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/fTVq3EHPha.png|
+|1girl, ushiromiya natsuhi, umineko no naku koro ni, cowboy shot, ||うみねこのなく頃に|右代宮夏妃|V3使用。一応この人、50歳を超えている設定です。|https://image02.seesaawiki.jp/n/h/nai_ch/6iIU8Y5nxZ.png|
+|1girl, ushiromiya jessica, umineko no naku koro ni, cowboy shot, ||うみねこのなく頃に|右代宮朱志香|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/NjDahaSiEu.png|
 |}
 ***　うる星やつら
 {| class="sort edit nanj_prompt_table"

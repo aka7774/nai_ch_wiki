@@ -21,6 +21,11 @@
 
 #contents
 
+*2023-11-28 WebUIのGenerate（生成）ボタンに機能つきの生成ボタンを追加する方法が提案される
+
+Generateボタンの横に&#127922;（ランダムシードで生成）、&#9851;（直前のシードで生成）、+1（前回のシードに+1したシードで生成）の各ボタンを追加するもの。
+詳細は「[[機能つきの生成ボタンを追加する方法]]」を参照。
+
 *2023-11-20 LCM LoRAの解説記事が紹介される
 LCM LoRAはより少ないステップ数で画像を収束させる技術のこと。
 細部の描写が甘くなる傾向があるものの、今までの1/3ほどのステップ数＝約3倍の速度で画像を生成できる。
@@ -62,6 +67,11 @@ https://nvidia.custhelp.com/app/answers/detail/a_id/5490
 ||=
 これにより姫騎士ちゃんが活動範囲(および後ろの穴)を大幅にひろげた
 ※姫騎士ちゃんはフリー素材です
+
+''※カンマの前後のスペースを調整し、スペルを修正（aminal→animal）したもの''
+- young girl, tiara, white hair, twintails, 13 years old, big blue eyes, gold accent cape, embroidery breastplate, thighhighs
+- elf, animal ear, forehead, pubic hair, asymmetrical thighhighs, heterochromia
+
 
 * 2023-10-21 NovelAIが新モデルNovelAI Diffusion Anime V2を発表
 NovelAI社が新たに学習させた新しい画像生成モデルNovelAI Diffusion Anime V2を発表した([[Introducing NovelAI Diffusion Anime V2>>https://blog.novelai.net/introducing-novelai-diffusion-anime-v2-dc668ebca34b]])
@@ -1281,6 +1291,9 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
 
 
 

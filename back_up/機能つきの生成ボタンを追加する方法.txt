@@ -1,0 +1,131 @@
+#contents
+
+*開発のいきさつ
+
+プロンプトやパラメータを調整しつつ画像を生成していると、シード値を「&#127922;」（ランダム）と「&#9851;」（前回と同じ）の間で頻繁に変更することになる。しかしこれを切り替えるのを忘れて画像を生成してしまうミスをどうしても減らすことができない。
+
+そこで生成ボタンに「&#127922;」「&#9851;」「+1」のボタンを追加することを考えた。
+
+- &#127922;ボタン…ランダムなシードで生成
+- &#9851;ボタン…シード欄が−1のとき前回と同じシード、それ以外のときはシード欄のシード値で生成
+- +1ボタン…前回のシードに＋1して生成
+
+*インストール方法
+
+**ブックマークレット
+
++ 任意のページをブックマークする
++ そのブックマークを編集する
+
+- ブックマークの名称：任意（&#127922;&#9851;+1など）
+- ブックマークのURL：以下のコードを貼り付ける
+
+javascript:&#40;() => {function addButtons(txt2img) {function createElementFromHTML(html, callback) {const tempEl = document.createElement('div'); tempEl.innerHTML = html; const child = tempEl.firstElementChild; child.addEventListener('click', callback); return child}const generateButton = document.querySelector(`#${txt2img}_generate%60); const reuseSeedButton = document.querySelector(%60#${txt2img}_reuse_seed%60);const seedInput = document.querySelector(%60#${txt2img}_seed > label > input%60); const box = document.querySelector(%60#${txt2img}_generate_box%60); box.style.gap = '2px'; box.append(createElementFromHTML('<button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0; ">&#127922;</button>',() => {seedInput.value = -1; seedInput.dispatchEvent(new Event('input')); generateButton.click(); })); box.append(createElementFromHTML('<button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0; ">&#9851;</button>',() => {reuseSeedButton.click(); setTimeout&#40;() => {generateButton.click(); }, 1000); })); box.append(createElementFromHTML('<button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0; ">+1</button>',() => {seedInput.value = parseInt(seedInput.value) + 1; seedInput.dispatchEvent(new Event('input')); generateButton.click(); })); }addButtons('txt2img'); addButtons('img2img'); })();
+
+**開発者ツール（Chrome）
+
++ WebUIのタブで［F12］キーを押す
++ 開発者ツールのメニューから「コンソール」をクリック
++ 「>」をクリックしてカーソルが表示されたら下のコードを貼り付けて「Enter」キーを押す
+
+(() => {
+&nbsp;&nbsp;function addButtons(txt2img) {
+&nbsp;&nbsp;&nbsp;&nbsp;// generateボタン消すなら下の行コメントアウト解除
+&nbsp;&nbsp;&nbsp;&nbsp;// document.querySelector(`#${txt2img}_generate`).style.display = 'none';
+
+&nbsp;&nbsp;&nbsp;&nbsp;function createElementFromHTML(html, callback) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const tempEl = document.createElement('div');
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempEl.innerHTML = html;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const child = tempEl.firstElementChild;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;child.addEventListener('click', callback);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return child
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;const generateButton = document.querySelector(`#${txt2img}_generate`);
+&nbsp;&nbsp;&nbsp;&nbsp;const reuseSeedButton = document.querySelector(`#${txt2img}_reuse_seed`);
+&nbsp;&nbsp;&nbsp;&nbsp;const seedInput = document.querySelector(`#${txt2img}_seed > label > input`);
+
+&nbsp;&nbsp;&nbsp;&nbsp;const box = document.querySelector(`#${txt2img}_generate_box`);
+&nbsp;&nbsp;&nbsp;&nbsp;box.style.gap = '2px';
+&nbsp;&nbsp;&nbsp;&nbsp;box.append(createElementFromHTML(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'<button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0;">&#127922;</button>',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;() => {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seedInput.value = -1;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seedInput.dispatchEvent(new Event('input'));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generateButton.click();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;));
+&nbsp;&nbsp;&nbsp;&nbsp;box.append(createElementFromHTML(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'<button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0;">&#9851;</button>',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;() => {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reuseSeedButton.click();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// うまく動作しない場合は1000の部分を大きくする
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(() => {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generateButton.click();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, 1000);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;));
+&nbsp;&nbsp;&nbsp;&nbsp;box.append(createElementFromHTML(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'<button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0;">+1</button>',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;() => {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seedInput.value = parseInt(seedInput.value) + 1;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seedInput.dispatchEvent(new Event('input'));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generateButton.click();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;));
+&nbsp;&nbsp;}
+&nbsp;&nbsp;addButtons('txt2img');
+&nbsp;&nbsp;addButtons('img2img');
+})();
+
+*スレ上でのやりとり
+
+**なんJNVA部★293 https://fate.5ch.net/test/read.cgi/liveuranus/1700978222/221
+
+====
+221 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a7a4-1+JT)[] 投稿日：2023/11/26(日) 21:18:22.97 ID:MZWQ+VQu0
+Python使えてこれ↓に興味あるニキおらんかのう。プログラミングはBASICとちょっとだけPerlで止まっとるんや
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1700342207/80
+シード欄の&#127922;や&#9851;を押し忘れて生成するミスをどうしても根絶できない
+ミス防止のためにGenerateボタンを3分割して【&#127922;｜&#9851;｜+1】にできないかなあ
+
+&#127922;ボタン…ランダムなシードで生成
+&#9851;ボタン…シード欄が−1のとき前回と同じシード、それ以外のときはシード欄のシード値で生成
++1ボタン…前回のシードに＋1して生成
+
+みたいなの
+設定でボタンの順番や各ボタンの幅を調整できるとなお嬉しい
+====
+
+すると翌日には動作するコードが提案された。
+
+**なんJNVA部★294 https://fate.5ch.net/test/read.cgi/liveuranus/1701137688/129
+
+====
+129 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e747-GgRN)[sage] 投稿日：2023/11/28(火) 16:08:23.00 ID:GNc61kk70
+>>93
+http://fate.5ch.net/test/read.cgi/liveuranus/1700978222/221
+とりあえずこんな感じでいいんじゃないか？
+https://rentry.org/u9g6u
+
+開発者ツールで実行すれば各種ボタンが追加される
+GenerateボタンはXYZとか使うときにやっぱり必要そうだから残しておいた
+ローカルの拡張機能にすればわざわざ開発者ツールで実行しなくてもwebui開いたときに勝手にボタン増やしてくれるようにもできると思う(面倒だからやらない)
+====
+
+**なんJNVA部★294 https://fate.5ch.net/test/read.cgi/liveuranus/1701137688/162
+
+====
+162 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e747-GgRN)[sage] 投稿日：2023/11/28(火) 17:49:07.75 ID:GNc61kk70
+シード再利用するところは雑なことしてるから飽くまでとりあえずレベルのものってことに注意やで
+====
+
+**なんJNVA部★294 https://fate.5ch.net/test/read.cgi/liveuranus/1701137688/208
+
+====
+208 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e747-GgRN)[sage] 投稿日：2023/11/28(火) 20:08:56.11 ID:GNc61kk70
+>>196
+好きに改変・再配布してええで
+====
+
