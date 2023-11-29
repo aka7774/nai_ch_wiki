@@ -21,8 +21,16 @@
 
 #contents
 
-*2023-11-28 WebUIのGenerate（生成）ボタンに機能つきの生成ボタンを追加する方法が提案される
+*2023-11-29 SDXL Turbo公開
+[[公式サイト>https://ja.stability.ai/blog/sdxl-turbo]]
+[[モデル>https://huggingface.co/stabilityai/sdxl-turbo]]
+最近話題となっていたLCMによる高速化とは別の技術(以下引用)を用いたSDXLの高速モデルがStability AI公式より発表された。
+ 敵対的拡散蒸留（Adversarial Diffusion Distillation：ADD）と呼ばれる新しい蒸留技術に基づいています。この技術により、SDXL Turbo は1つのステップで画像出力を合成し、高いサンプリング忠実度を維持しながらリアルタイムでテキストから画像への出力を生成することができます
+また、発表から数時間後にはLoraが作成され、LCMと同じように既存のモデルに対して高速化を適用できるようになった
+[[Turbo SDXL-LoRA-Stable Diffusion XL faster than light(Civitai)>https://civitai.com/models/215485]]
+これにより、公式のモデルで1STEP、Lora適用で4STEPでSDXLモデルによる画像生成が可能となった。
 
+*2023-11-28 WebUIのGenerate（生成）ボタンに機能つきの生成ボタンを追加する方法が提案される
 Generateボタンの横に&#127922;（ランダムシードで生成）、&#9851;（直前のシードで生成）、+1（前回のシードに+1したシードで生成）の各ボタンを追加するもの。
 詳細は「[[機能つきの生成ボタンを追加する方法]]」を参照。
 
