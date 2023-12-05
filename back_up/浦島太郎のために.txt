@@ -21,6 +21,22 @@
 
 #contents
 
+* 2023-12-05 人物画像を動かす技術が続々登場
+人物の静止画を動かすことに特化したモデルが続々と登場している。
+
+Animate Anyoneはアリババグループによって開発されたモデルである([[Animate Anyoneの概要>>https://humanaigc.github.io/animate-anyone/]])。
+静止画像とさせたい動きをopenposeの形式で与えることで、静止画像の写った人物を動かすことができる。
+ちらつきがなく、動画全体の一貫性もよく保たれているため話題になっている。。
+2023/12/05現在、ソースコードなどは公開されていないが、公開することを明言しておりGitHubのサイトが用意されている([[AnimateAnyoneのGitHub>>https://github.com/HumanAIGC/AnimateAnyone]]。)
+
+MagicAnimateもAnimate Anyoneと同様のモデルで、ちらつきのない一貫性のある動画を作成できるモデルである([[MagicAnimateの概要>>https://showlab.github.io/magicanimate/]])。
+Animate Anyoneとは違い、人物の動きをopenposeではなくdenseposeという形式で指定する。
+Hugging Faceで試すことができるだけでなく、すでにソースコードなどが公開されているためローカル環境で試せる([[MagicAnimateデモサイト>>https://huggingface.co/spaces/zcxu-eric/magicanimate]]、[[MagicAnimateのGitHub>>https://github.com/magic-research/magic-animate]])。
+こちらは試したものがTwitterなどで流れているが
+・「入力画像とぜんぜん違う顔になってる」
+・「(denseposeが人の輪郭を保存するためか)ガタイのいい女の子になってしまった」
+など一筋縄では行かないようではある。
+
 *2023-11-29 SDXL Turbo公開
 [[公式サイト>https://ja.stability.ai/blog/sdxl-turbo]]
 [[モデル>https://huggingface.co/stabilityai/sdxl-turbo]]
@@ -1325,6 +1341,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

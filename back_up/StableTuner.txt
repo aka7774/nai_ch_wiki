@@ -37,7 +37,7 @@ condaのインストール時にインストールpathを変更した場合
 [+]
 StableTunerのフォルダに下記ファイルを作成
 =|BOX|
-custom-conda-path.txt
+custom_conda_path.txt
 ||=
 中身はcondaのパスを記載
 =|BOX|
