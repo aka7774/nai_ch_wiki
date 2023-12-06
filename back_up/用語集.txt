@@ -2,44 +2,53 @@
 
 検索しにくい略称とかを中心に説明していく。
 
-|~略語|名称|説明|
-|SD|Stable Diffusion||
-|WD|Waifu Diffusion|ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
-|XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。なおそのテスト版のSDXL 0.9を指す場合もある|
-|NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつや|
-|SFW|Safe for work|こっちはNがついてなくて全年齢や|
-|NAI|NovelAI|単なる略称。|
-|NAIFU|NovelAI AI Image Frontend Ultimate|NovelAIのエミュレーターの一つ。|
-|web版||NovelAIを公式サイト上で利用することを指すことが多い。|
-|webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
-|AUTOMATIC1111||人名。でもツールの名前として呼ばれがち。|
-|1111|(webuiと同義)|このページでも1111と表記する。|
-|ローカル版||NovelAIのモデルを1111で利用する形態を指すことが多い。|
-|Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
-|アナル|Anlas|NovelAI公式の課金通貨。|
-|TI|Textual Inversion|学習方法の1つ。|
-|DB|Dreambooth|学習方法の1つ。|
-|HN|Hypernetwork|学習方法の1つ。|
-|DA|DreamArtist|学習方法の1つ。|
-|Lora||学習方法の1つ。1111のDB拡張で使うやつとkohyaで使うやつがある。|
-|kohya||人名。でもツール(kohya-ss/sd-scripts)の名前として呼ばれがち。|
-|ST|Stable Tuner|学習方法の1つ。kohya系。|
+|~用語|正式名称|説明|
+|AUTOMATIC1111||人名。でもAUTOMATIC1111氏が作ったツール「Stable Diffusion web UI」を指して呼ばれがち。|
+|A1111|AUTOMATIC1111|webuiと同義。人名だけどツールの名前として呼ばれがち。|
+|1111|AUTOMATIC1111|webuiと同義。このページでも1111と表記する。|
+|Any|Anything|二次イラスト系の有名モデル|
+|Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が早い |
 |CN|ControlNet|専用のモデルを使用して構図を制御する仕組み。|
-|LoCon||LoRAでは学習できていない領域まで拡張して学習するちょっと新しいやつ。|
-|t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
+|Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
+|DB|Dreambooth|学習方法の1つ。|
+|DA|DreamArtist|学習方法の1つ。|
+|HF|Hugging Face|研究者がモデルやソースコードの置き場として使っているサイト。GitHubみたいなもの。|
+|HN|Hypernetwork|学習方法の1つ。|
 |i2i|img2img|Image to Image 元画像とプロンプトから画像を生成すること。|
 |inpaint||i2iの1形態。元画像の一部を指定して画像を生成すること。|
-|マスピ|masterpiece|傑作。品質向上に使われるプロンプト。顔が特徴的。マスピ絵、マスピ顔とか言う。|
+|kohya||人名。でもツール(kohya-ss/sd-scripts)の名前として呼ばれがち。|
+|LCM|Latent Consistency Model|Stable Diffusionの亜種で、高速サンプリングができるモデル|
+|LoCon|LoRA for Convolutional Network|LoRAでは学習できていない領域まで拡張して学習するちょっと新しいやつ。|
+|LoRA|Low-Rank Adaptation|学習方法の1つ。1111のDB拡張で使うやつとkohyaで使うやつがある。|
+|LR|Learning Rate|学習率。学習のきめ細やかさ。|
+|m2m|movie to movie|動画から動画を作る技術|
+|NAI|NovelAI|単なる略称。|
+|NAIFU|NovelAI AI Image Frontend Ultimate|NovelAIのエミュレーターの一つ。|
+|NP|Negative Prompt|Promptとは反対に出したくない要素を指定する|
+|NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつや|
+|PEFT|Parameter Efficient Fine Tuning|LoRA・LoCon・LoRA-FAその他様々な亜種のように、少ないパラメーターで全体を学習するような仕組みのこと|
+|SD|Stable Diffusion||
+|SFW|Safe for work|こっちはNがついてなくて全年齢や|
+|ST|Stable Tuner|学習方法の1つ。kohya系。|
+|TI|Textual Inversion|学習方法の1つ。|
+|t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
+|uc|unconditional conditioning|Negative Promptと同義|
 |UC L+B|Undesired Content Low Quality + Bad Anatomy|定型のネガティブプロンプト。|
+|WD|Waifu Diffusion|ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
+|webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
+|web版||NovelAIを公式サイト上で利用することを指すことが多い。|
+|XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。なおそのテスト版のSDXL 0.9を指す場合もある|
+|赤ちゃん||初心者など難しい設定が困難であること。簡易インストーラー全般。由来は[[浦島太郎のために]]を参照 |
+|アナル|Anlas|NovelAI公式の課金通貨。|
+|浦島太郎||長期間離れてて遅れた人を指すのだが、技術革新が速すぎるので一晩で浦島太郎になったりする。 |
 |金脈|[[SD RESOURCE GOLDMINE>https://github.com/questianon/sdupdates]]|Stable Diffusionに関連するすべてのリソースとニュースを集めた総合的なサイト。1111を中心としてる。|
-|Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が早い |
-|マージ||Checkpoint Mergerで2〜3つのモデルを組み合わせること。|
+|コピー機||シード値固定や過学習などによって似たような絵を連続出力すること。由来は[[浦島太郎のために]]を参照 |
 |層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
 |風船||閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
-|コピー機||シード値固定や過学習などによって似たような絵を連続出力すること。由来は[[浦島太郎のために]]を参照 |
-|赤ちゃん||初心者など難しい設定が困難であること。簡易インストーラー全般。由来は[[浦島太郎のために]]を参照 |
-|浦島太郎||長期間離れてて遅れた人を指すのだが、技術革新が速すぎるので一晩で浦島太郎になったりする。 |
+|マージ||Checkpoint Mergerで2〜3つのモデルを組み合わせること。|
+|マスピ|masterpiece|傑作。品質向上に使われるプロンプト。顔が特徴的。マスピ絵、マスピ顔とか言う。|
 |妖精さん||1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
+|ローカル版||NovelAIのモデルを1111で利用する形態を指すことが多い。|
 
 * スレの言葉について
 
