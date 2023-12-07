@@ -254,3 +254,17 @@ https://mega.nz/folder/uY42VJZa#7Hh0vTvhpa3poL_gNgzipg
 ||=
 
 
+https://fate.5ch.net/test/read.cgi/liveuranus/1701916128/240
+https://mega.nz/folder/fVYhCLZa#ZDKcdjMxmjYGtRLvNDRwtA
+=|BOX|
+240 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a04-QDDZ)  2023/12/08(金) 05:15:54.76 ID:xRAxWwTe0
+以前公開したPNG Infoを維持したままJPGに一括変換するツールの改良版
+従来通りAutomatic1111生成画像はJPG変換後もAutomatic1111に取り込み可能
+これに加えてNovelAI生成画像にも一部対応を追加
+NovelAIの生成画像はJPGのExifコメントに情報を残すことが可能（ただし、NovelAIやAutomatic1111への取り込みは不可）
+Automatic1111でのPNG Infoやエクスプローラ等のでの参照は可能
+
+png2jpg改
+https://mega.nz/folder/fVYhCLZa#ZDKcdjMxmjYGtRLvNDRwtA
+
+||=
