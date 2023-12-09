@@ -117,7 +117,21 @@
 |{{{best quality, masterpiece, high quality, illustration}}}, 1girl, solo, {{{{ruby rose}}}}, &#91;rwby], blue eyes, black hair, disheveled hair, black dress, red cloak,|{{{realistic}}}, {{sharp eyes, smirk}}, lipstick, hairline,  forehead, weiss schnee,|RWBY|ルビー・ローズ|服装は指定しないと出ないし、出たとしても完全再現は不可能。rwbyを入れないと、髪や顔つきが再現できないが、入れると画風がかなり不安定になるので、画質向上タグは必須。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/U6A7LmGgm7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/U6A7LmGgm7.png]]|
 |1girl, weiss schnee, white hair, ponytail, blue eyes, parted bangs,||RWBY|ワイス・シュニー|服装（髪飾り含む）と髪量はガチャ。たまに背景に雪が降る。目の傷は生成不可。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/g2h3eC1NFd-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/g2h3eC1NFd.png]]|
 |}
+
+***　りゅうおうのおしごと!
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{{sora ginko}}}, ryuuou no oshigoto!, light lavender hair, bob hair, hair between eyes, black hairband, air intake hair, blue eyes, tsurime, medium breasts, slender,  shiny skin, ,  {{{white sailor collar}}}, white sailor shirt, long sleeves, blue neckerchief, black pantyhose, pleated skirt, navy skirt,, simple background, white background, , 1girl, solo, , cowboy shot,, from front, facing the front, looking at viewer, straight-on, close to viewer,, year 2023,, very aesthetic, best quality, amazing quality, , curated, illustration, highly detailed, ||りゅうおうのおしごと!|空銀子||https://image01.seesaawiki.jp/n/h/nai_ch/_7mNShyPsg.png|
+|}
+
+
 **れ
+***　RAIL WARS!(レールウォーズ)
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, sakurai aoi, RAIL WARS!, anime coloring, 1 girl, skirt, necktie, belt, white shirt, hair ornament, blue jacket, mini skirt, pencil skirt, pantyhose, red hair folded ponytail, ||RAIL WARS!(レールウォーズ)|桜井あおい|V3使用。再現可だが衣装が荒ぶり気味。|https://image02.seesaawiki.jp/n/h/nai_ch/RxiOzwJYkm.png|
+|}
+
 ***　レンタルマギカ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
