@@ -54,6 +54,7 @@ txt2img・img2imgタブの下にControlNetができてるので▼をクリッ�
 詳しい例は[[上>#lllyasviel]]のやつ読んで
 
 ** Preprocessorの種類と特徴
+|名前|説明|元画像|プリプロセッサ処理後画像|出力画像|
 |canny|輪郭線を検出して取り出す|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X.png]]|
 |depth|深度情報を引き継ぐ 立体的な位置関係を処理できる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j.png]]|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh.png]]|
 |hed|いわゆる「描き込み」的な部分を取り出す タッチを引き継ぎやすい||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7.png]]|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw.png]]|

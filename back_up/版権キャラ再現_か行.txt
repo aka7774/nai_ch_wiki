@@ -389,7 +389,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |wiz &#40;konosuba),brown hair,ahoge,hair over one eye,long hair,yellow eyes,{{purple long coat}},purple long skirt,|{{{{{aqua}}}}}|この素晴らしい世界に祝福を|ウィズ|ネガティブプロンプトを入れないとめぐみん以外はどのキャラもアクアになる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9HTt2ZyGcJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/9HTt2ZyGcJ.png]]|
-|megumin||この素晴らしい世界に祝福を|めぐみん||https://image02.seesaawiki.jp/n/h/nai_ch/qOkoi98bLP.png|
+|{{{megumin}}}, umber hair, long sideburns, short hair with long locks, red eyes, small medium breasts, black choker,,(red shirt, long sleeve, fingerless gloves, black thighhighs, bare sholders),,simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer,,year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed,  ||この素晴らしい世界に祝福を|めぐみん|マント・ハット必要ならwitch hat, black capelet追加、bare sholders除外|https://image01.seesaawiki.jp/n/h/nai_ch/NqZ0ohi2m1.png|
 |megumin, witch hat, red eyes, black brown hair, short hair with long locks, ||^|^|プロンプト増やした版。顔以外がぼやけやすい？|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/IGkPk3KvHu-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/IGkPk3KvHu.png]]|
 |aqua &#40;konosuba)||この素晴らしい世界に祝福を|アクア||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/I2SURr6rQA-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/I2SURr6rQA.png]]|
 |aqua_(konosuba), blue eyes, bow, hair ornament, blue hair, very long hair, medium breasts, detached sleeves, thigh boots, ||^|^|プロンプト増やした安定版|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/nBfBOb2gaD.png]]|
@@ -418,4 +418,5 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, 2d cel anime, {{komi shouko}}, {{komi-san wa komyushou desu}}, very aesthetic, best quality, intricate, overall detail, 1 girl, playboy bunny, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |古見さんは、コミュ症です。|古見硝子|V2使用。|https://image01.seesaawiki.jp/n/h/nai_ch/UZWnDZcJQp.png|
 |}
+
 

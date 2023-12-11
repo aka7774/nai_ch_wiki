@@ -18,6 +18,9 @@ torch.compile()でさらに高速化するが、以下の欠点があるので�
 （これを確認する場合、Win11なら、GPUスケジューリングをオフにしてタスクマネージャーで項目をクリックしてCudaに切り替えるのが簡単）
 このページにある対策を行ってもアスカベンチで期待したパフォーマンスが出ない、という場合でも、高解像度やHires fixした場合は512x512単体生成よりもCUDAがフルに使われやすい傾向があるので、
 もしそっちでCUDA使用率が100%近くなってて、そういう生成方法がメインだという場合は、アスカベンチで劣っていても気にしなくていい可能性もある。
+
+ちなみに、速度が速いほどCPUのシングル性能の影響が大きくなる。旧世代CPUを使っているなら最新世代のCPUに買い替えるのもあり。
+
 * モジュールによる高速化
 
 2023-03-19現在、たぶんこの順で速い。
@@ -31,6 +34,9 @@ torch.compile()でさらに高速化するが、以下の欠点があるので�
 RTX(2000〜4000番台)で高速化するらしい。
 環境によっては--opt-sdp-attentionのほうが高速?
 
+&size(16){WebUIのTorchバージョンが2になったので以下の手順は不要になりました。}
+Attentionの最適化はWebUIの設定から有効化できます。
+[+]
 手順
 1.venv,repositoriesフォルダ削除 あるいはvenv上で pip uninstall torch torchvision -y
 2.git pullしてwebuiを最新版にする
@@ -46,7 +52,7 @@ set TORCH_COMMAND=pip install torch==2.0.1 torchvision --extra-index-url https:/
 call webui.bat
 ||=
 5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.1+cu118"と記載があれば成功
-
+[END]
 *** プレビュー版のインストール方法
 あらかじめ古いバージョンをアンインストールしてから、venv内で以下のコマンドを実行する。
 > pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
@@ -110,39 +116,37 @@ RTX4090ほちい
 ||=
 [END]
 
-[+]オプション:xformersをtorch2用にビルドする(赤ちゃんには難しい)
-- ビルド方法(Windows)
-1.以下のコマンドを実行する。
-※venvは使うな! 終わった後はtorch,torchvision,torchaudio,pytorch-tritonのアンインストール推奨
-> pip3 install torch==2.0.0 torchaudio pytorch-triton --extra-index-url https://download.pytorch.org/whl/cu118 --force
-
-2.[[ここの手順>>https://michyo.net/sempetit/install-xformers-windows/]]の「xFormers のビルド」の「xFormers が依存しているライブラリをインストール」まで進めた後、
-xformersフォルダ内で以下のコマンドを実行する。
-> python setup.py build
-ビルドされるのでしばらく待つ。その後xformersフォルダ内で以下のコマンドを実行する。
-> python setup.py bdist
-その後xfomers\dist\にzipファイルができるので、それの中身のxformersとxformers-〇〇-egg-infoを1111のvenv/Lib/site-packages/にコピーする。
-[END]
 
 ** xformers
+Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減少効果がある。
+インストールは1111の標準機能で簡単にできる。
+このオプションをつけるとわずかに出力内容が変化し、常に同じ結果にならない。
+とはいえ体感できるか難しいほど小さい変化のため気にする必要はない。
 
-xformersのインストールは1111の標準機能で簡単にできる。
+変化の検証ページ作ったので記録はこちらへ
+→「[[xformersの検証]]」
 
-*** torch1の場合
+*** 対応GPU
 
+- NVIDIA
+- GeForce 1000番台〜4000番台
+- GeForce 900番台以前でも動くけど逆効果だったという報告あり
+
+*** 導入方法
 初めて導入する場合
  set COMMANDLINE_ARGS= --xformers
 
 古い環境から更新する場合
  set COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers
+venvを削除してからWebUIを起動する手もあり
 
-*** torch2の場合
-
+*** 開発版をインストールする
  pip install --pre -U xformers
 でコンパイル無しで導入できるようになったらしい。
+なお、対応するTorchバージョンが入っている必要がある。
 
 =|BOX|
-アスカテストのtime token
+アスカテストのtime taken
 --xformers --opt-sdp-attention　18.50
 --xformers　20.30
 --opt-sdp-attention　18.47
@@ -151,54 +155,17 @@ xformersのインストールは1111の標準機能で簡単にできる。
 両方指定の場合はsdpが有効になってる雰囲気です
 ||=
 
-[+]以前の方法
-* 高速化オプションの利用
-
-stable diffusionに用意されているxformersというオプションを利用する。
-理論上、このオプションを付けてるときと付けてないときで絵が変わるらしいが
-少なくともアスカプロンプトでは明確な違いを確認できず、演算時間が2割程度早くなる。
-(明確な違いが出る条件がわかる方がいたらここに新章作って記録していってほしい)
-
-検証ページ作ったので記録はこちらへ
-→「[[xformersの検証]]」
-
-** 対応GPU
-
-- NVIDIA
-- GeForce 1000番台〜3000番台(4000番台は後述)
-- GeForce 900番台以前でも動くけど逆効果だったという報告あり
-
-** 方法
-
-stable-diffusion-webuiディレクトリ直下にあるwebui-user.batを修正する。
-
-6行目修正前
-> set COMMANDLINE_ARGS=
-
-6行目修正後
-> set COMMANDLINE_ARGS= --xformers
-
-** 利用するライブラリの更新
-2023/01/23時点の最新版(7ff1ef77dd22f7b38612f91b389237a5dbef2474)で本体に取り込まれた
-旧バージョンのtorchとxformersを使用している場合はアップグレードを促すアナウンスメッセージが表示される
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1sa2Wev7W4.png)
-
-コマンドラインオプションに再インストールオプションを追加して起動すると更新される
-> COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers ~~
-
-アップデート完了した場合、WebUIの下部の表示が以下のようになる
-(torch・xformers欄)
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xh_WFZyBHE.png)
-[END]
 
 * torch.compile
+NVIDIAがTensorRTを使えるようにするExtensionを公開したのでそちらを推奨。改造不要でTensorRTが使える。
 
+以下は上級者向け。
 (TensorRTみたいな感じで)モデルの事前コンパイルを行うことによって、
 生成処理を高速化する仕組みがtorch2には実装されている。
 これを1111で使えるように改造する。
 
 Windowsには対応していない(WSL2で動かすことになる)
-
+[+]手順
 参考
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
 
@@ -247,8 +214,6 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
   warnings.warn(
 ||=
 
-- torch2用にビルドされたxformersは現状存在しない(自前でビルドが必要)
-- xformersのビルドは茨の道
 
 必要なかったこと
 - 1111標準のaccelerate==0.12.0を少なくとも0.15.0以上に更新する必要がある
@@ -256,6 +221,8 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
 
 出来ればやりたいこと
 - コンパイルしたいモデルとしたくないモデルを選択したくなる気がする
+[END]
+
 * --opt-channelslast
 
 これはつけるだけ。
@@ -263,6 +230,10 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
 環境によっては効果が無かったり逆に遅くなったりするらしいので比較検討しましょう。
 
 * cudnnのバージョンアップ(torch1系の場合、RTX4000シリーズでは必須)
+最近のWebUIはTorch2が標準でインストールされるためこの手順は不要です。
+RTX4000シリーズで古いWebUIを使用している場合のみ必要。
+
+[+]手順
 ※torch2系の場合、バンドルされているcudnnが8.7になったため、この手順は不要。webuiの画面の一番下でtorchのバージョンが確認できる
 
 torch1系の場合、標準でインストールされるcudnn関係のDLLが古い(4000シリーズ未対応)為、対応版(cudnn8.7.0)に置き換える
@@ -271,6 +242,7 @@ torch1系の場合、標準でインストールされるcudnn関係のDLLが古
 +https://developer.nvidia.com/rdp/cudnn-download より Local Installer for Windows (Zip) をダウンロードする~~※NVIDIA開発者アカウントが必要
 +ダウンロードしたzipファイル(cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip)を展開し、binフォルダ内の7ファイルを取り出す
 +stable-diffusion-main\venv\Lib\site-packages\torch\lib 内に上書きコピーする
+[END]
 
 * ハードウェアアクセラレーションによるGPUスケジューリング を無効にする
 VRAM消費を減らす効果がある。速度も向上するかも。
@@ -356,6 +328,7 @@ UIからオフにするだけではダメ
 Euler a以外(収束するサンプラー)で再現できないか試す。
 DPM++ 2M Karrasは15Stepsでもそれなりに映えるのでおすすめ。
 UniPCはもっと良い感じ。
+LCMやTurboはさらに速い。10steps未満でまともな絵がでる。
 
 * メインメモリを使う
 
@@ -388,9 +361,7 @@ https://sourceforge.net/projects/imdisk-toolkit/
 
 - [[1111_WSL2]]
 
-以前はLinuxにするだけで1〜2割速くなると言われていたが、
-cudnnのDLL差し替えや、
-Windows上で新しいバージョンのxformers等の導入がしやすくなったこともあり、
+以前はLinuxにするだけで1〜2割速くなると言われていたが、ドライバやTorchの最適化が進んで速度やメモリ消費の差が小さくなった。
 どっちが速いか比較検討してみるのが良さそう。
 * Linuxに入れる
 仮想化ではなく生で挿入れる
