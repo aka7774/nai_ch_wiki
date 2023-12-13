@@ -25,6 +25,14 @@
 外部記事 [[新清士の「メタバース・プレゼンス」 第46回 画像生成AIが爆速で進化した2023年をまとめて振り返る>https://ascii.jp/elem/000/004/174/4174570/]]
 スレとは関係ないが、2023年の画像生成AIに関する情報がコンパクトにまとめられているので、浦島が読むのにちょうど良い。
 
+* 2023-12-10 WebUIやNAIで出力した画像のメタデータを維持したままPNGをJPEGに変換するツールがGitHubに公開される
+
+- なんJNVA部★299 https://fate.5ch.net/test/read.cgi/liveuranus/1702131079/284
+- https://github.com/Takenoko3333?tab=repositories
+-- png2jpg-for-a1111-and-NAI（メタデータを維持してPNGをJPEGに変換 旧名称:png2jpg改）
+-- jpg2png-for-NAI（JPEG変換したNAI画像をPNGに変換）
+-- jpg2jpg-bugfix-metadata（バグ対応 変換済みJPEG修正用）
+
 * 2023-12-05 人物画像を動かす技術が続々登場
 人物の静止画を動かすことに特化したモデルが続々と登場している。
 
