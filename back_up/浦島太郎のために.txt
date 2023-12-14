@@ -23,9 +23,10 @@
 
 *2023-12-12 外部記事による2023画像生成AIまとめ
 外部記事 [[新清士の「メタバース・プレゼンス」 第46回 画像生成AIが爆速で進化した2023年をまとめて振り返る>https://ascii.jp/elem/000/004/174/4174570/]]
+外部記事[[生成AIグラビアをグラビアカメラマンが作るとどうなる？第14回：2023年下半期まとめ+α　13回分を振り返る (西川和久)>https://www.techno-edge.net/article/2023/12/14/2454.html]]
 スレとは関係ないが、2023年の画像生成AIに関する情報がコンパクトにまとめられているので、浦島が読むのにちょうど良い。
 
-* 2023-12-10 WebUIやNAIで出力した画像のメタデータを維持したままPNGをJPEGに変換するツールがGitHubに公開される
+* 2023-12-10 PNGで出力した画像のメタデータを維持したままJPEGに変換するツールがGitHubに公開される
 
 - なんJNVA部★299 https://fate.5ch.net/test/read.cgi/liveuranus/1702131079/284
 - https://github.com/Takenoko3333?tab=repositories
@@ -1353,6 +1354,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
