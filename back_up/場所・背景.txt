@@ -461,6 +461,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|{{{{scanlines, glitch, static}}}}, |走査線ノイズ再現（走査線、グリッチ、スノーノイズ）|V3使用。scanlinesだけだと効果が低い。合わせ技でサンプルぐらいにはなる。|https://image01.seesaawiki.jp/n/h/nai_ch/XeJi5uLaFP.png|
 |glitch effect|グリッチエフェクト|本来のグリッチエフェクトは故意に画像・映像にエラーを発生させることで画像にノイズを入れることを指す。プロンプトで使用すると背景にノイズが乗り、ザラついた感じで描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/l7wffBWusb.png|
 |halftone|網点（ハーフトーン）|背景が網点のグラデーションで描画される。|https://image01.seesaawiki.jp/n/h/nai_ch/aFHYMGhZ4e.png|
 |chiaroscuro|明暗法|明暗を利用して対象物を立体的に描く手法。陰影のはっきりした絵になる。|https://image02.seesaawiki.jp/n/h/nai_ch/rX0Pfr7KDy.png|

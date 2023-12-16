@@ -5,7 +5,8 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
-||||||
+|{{{{picture frame, polaroid, white border}}}}, |{{{{outside border}}}},|ポラロイド写真|V3使用。四隅が綺麗に縁取られなかったり、足などがはみ出ることはある。|https://image02.seesaawiki.jp/n/h/nai_ch/h60DiIf6a6.png|
+|{{iPhone, smartphone screen, camera app frame}}, viewfinder, |{{{{camera}}}},|スマホのカメラ越し撮影|絵柄と画面描写の間ぐらいに挿入することでサンプルみたいなスマホ撮影風になる。|https://image01.seesaawiki.jp/n/h/nai_ch/yhFVIN3LKt.png|
 |multiple knights, knights in line,||整列した騎士|適度に強調を混ぜることで主題に生成するものの背景にすることも可能|https://image02.seesaawiki.jp/n/h/nai_ch/f6VeAgVmRx.png|
 ||||||
 |顔をわずかに左向き|||||
@@ -29,6 +30,8 @@
 * 単語集
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|YouTube screen|YouTube動画|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/3X3axRx18h.png|
+|viewfinder|カメラの撮影画面（ビューファインダー）||https://image02.seesaawiki.jp/n/h/nai_ch/tOoNvVnoei.png|
 |Live streaming|ネット配信|tiktokとか付けるとそれっぽくなる|https://image02.seesaawiki.jp/n/h/nai_ch/4rXHoz2XIw.png|
 |Instagram|インスタグラム||https://image02.seesaawiki.jp/n/h/nai_ch/qEoQ4kHOVa.png|
 |isolated on 色の名前 background|isolated on white backgroundで白背景になる。white backgroundだけだと謎オブジェクトが出現するときに使うといいかもしれない|SD がトレーニングに使ったデータセット内には「isolated on *token* background」というラベルがついた画像が大量にあるらしいhttps://www.reddit.com/r/StableDiffusion/comments/yc1osj/easily_prompt_for_generating_pure_background/|https://image01.seesaawiki.jp/n/h/nai_ch/OcMpYUdUCp.5_comp001.jpg|
