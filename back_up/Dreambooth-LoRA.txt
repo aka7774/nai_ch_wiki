@@ -7,7 +7,9 @@ Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
 他の学習法とどう違うねん？　reddit民によればこんな感じのイメージらしい。
 https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/
 kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツールが人気となっている。
-このページではsd-scripts関連の情報について雑に書いてある
+このページではsd-scripts関連の情報について雑に書いてある。
+2023年12月現在、ページの更新がほとんどされておらず、古くなっていることに留意。
+''ここの情報はSD1.5に関するもの。現時点でSDXLの情報は無い。''
 
 * 公式情報
 
@@ -43,12 +45,13 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 - スレ住民によるkohya-ss氏制作のSDスクリプト(https://github.com/kohya-ss/sd-scripts )で次のキャラのLoRAを作成した。ポップアップ版使用。（日本語）
 -- 02/10:繰り返し数の検証結果を追加。 02/23:簡易的な検証結果を追加。 03/04:LoConの検証結果を追加。
 
-: lora training tagging faq（英語） | https://rentry.org/lora-tag-faq
-- 現在はリンク切れ
+: lora training tagging faq（英語） | %%ttps://rentry.org/lora-tag-faq%%
+- リンク切れ
 
 : スレ住民によるキャラクター学習のタグ付け一例（日本語） | https://rentry.org/dsvqnd
 
-: スレ住民によるLoRAでのキャラ学習素材の検証 | https://rentry.org/lora_namakubi
+: スレ住民によるLoRAでのキャラ学習素材の検証 | %%ttps://rentry.org/lora_namakubi%%
+- 削除しました。
 
 : LAZY TRAINING GUIDE | https://rentry.org/LazyTrainingGuide
 - loraをいっぱい作ってる海外ニキの打率9割学習ガイド
@@ -281,10 +284,9 @@ WebUI用extensionもある [[Extensions_URL>https://seesaawiki.jp/nai_ch/d/Exten
 * 正則化画像
 - ChatGPTたん曰く「過学習を抑えるためのもの」
 - キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが詳しくはわからないので誰か書いてクレメンス
-- 間違っとる可能性大なのやが、例えばAIちゃんが知らない「鳥獣戯画のカエルちゃん」のイメージを教えるとする。学習用画像には「鳥獣戯画のカエルちゃん」画像を用意する。正則化画像にはありふれた「蛙の画像」を用意する。これでAIちゃんには「鳥獣戯画のカエルちゃん覚えようね！でも正則化画像フォルダにある普通の蛙とかは違うやつやから覚えなくていいよ」という感じで伝わる。イメージを覚えてもらうのに言葉では説明しづらいから画像で説明する感じ？多分。知らんけど。
--- あるいは「鳥獣戯画のカエルちゃん」を覚える代わりに普通のカエルを忘れて書けなくなるのを防ぐために学習時に普通のカエルの画像を渡しておく感じ？
-- 他所のノートブックを利用しているので確かな事は言えないが、正則化画像を同じような画像で学習させすぎると正則化画像につけたクラストークンで正則化画像の内容を生成するようになる。これは上の「普通の蛙は覚えなくていいよ」というよりも、単に「学習画像と正則画像を二つとも学習する」という挙動のように思われる。
-- 正則化画像は必須ではないので用意しなくても学習はできる。とりあえず一度学習動かしてみたいとかなら用意しなくてもいい。透明正則化も効果は不明瞭（良い影響があるとしても悪影響がないとも言えない）なので面倒ならやらなくてもいい。
+- 「鳥獣戯画のカエルちゃん」を覚える代わりに普通のカエルを忘れて書けなくなるのを防ぐために学習時に普通のカエルの画像を渡しておく感じ？
+- 他所のノートブックを利用しているので確かな事は言えないが、正則化画像を同じような画像で学習させすぎると正則化画像につけたクラストークンで正則化画像の内容を生成するようになる。単に「学習画像と正則画像を二つとも学習する」という挙動のように思われる。
+- 正則化画像は任意。基本的に用意しなくていい。なお、透明正則化の効果は無いと思われる。
 ** 正則化画像検証 (クリックして展開)
 [+]
 
@@ -321,6 +323,7 @@ Dim/NW=128/64(LoCon:32/16) 元画像38枚*20回 10epoch Adafactor
 
 [END]
 ** 透明のPNGを正則化画像にする
+透明正則化は効果を確認できないため、やる必要性はない。
 Web UI に拡張機能 Generate-TransparentIMG をインストールする
 [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
 Generate TransparentIMG タブで、「出力フォルダ」には正則化画像の保存先を、「number_of_generation」には作成する枚数を入力して実行
@@ -389,7 +392,7 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 詳しくは[[LoRAのメタデータの閲覧/編集の欄を参照>#howto_check_metadata]]
 
 - 'Triton'エラー
-学習開始時に次のメッセージが出ても気にしなくていい。そもそもTritonはWindowsに対応してない。
+学習開始時に次のメッセージが出ても気にしなくていい。なくても問題なし。そもそもTritonはWindowsに対応してない。
 > A matching Triton is not available, some optimizations will not be enabled. ~~ Error caught was: No module named 'Triton'
 
 
@@ -481,7 +484,7 @@ U-Netの学習率:よくわからんときはキャンセルで。
 ----
 ** 学習の解像度
 解像度をいくつにしますか？デフォルトは512
-512が速い, 768ならRTX3060やColabで10000ステップ4~5時間コース
+512が速い, 768ならRTX3060やColabで10000ステップ4~5時間コース。cache_latentsを使えばもっと早い。
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/0I6Xi5Edzq.png)
 この後横の解像度も聞かれる。キャンセルを押せば正方形になる
 ----
@@ -848,7 +851,7 @@ WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず
 -WebUIのExtra Networks > Lora タブで 画像にマウスオーバーして出る(i)をクリックするとloraの作成パラメータや使われたタグが表示される(埋め込んであれば)
 -[[Additional-networks拡張機能>>https://github.com/kohya-ss/sd-webui-additional-networks]]をインストールすると増えるタブ(Additional-networks)からメタデータ編集とかトレーニングデータとか見れる
 
-** メタデータの閲覧
+** メタデータの閲覧(Additionak Networks Extension)
 + タブ(Additional-networks)に移動する
 + Model path filterに探したいLoRAの名前を入れてフィルタリングしておく
 + Model から該当するLoRAを選ぶと情報が読み込まれます
@@ -902,7 +905,7 @@ https://github.com/p1atdev/LECO
 
 ** スペックに関するTips
 VRAM8GBでは512x512、Batch size2は余裕で動く。
-mem_eff_attnとgradient_checkpointingを有効にすれば1024x1024もギリギリできる。5-6倍遅くなるが。
+gradient_checkpointingを有効にすればVRAM8GBで1024x1024もできる。
 瞬間的に物理メモリを20GB消費するので16GB以上あったほうが安心。
 仮想メモリはtorchバージョンやmax_data_loader_n_workersの値によるが、20-60GB消費する。
 
