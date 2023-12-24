@@ -3,7 +3,7 @@
 &size(24){添付[[&color(#ffb3b3){URLはこちら。}>https://seesaawiki.jp/nai_ch/e/attachment?id=4977753]]}
 * テーマ
 数単語以上でのいい感じのやつ
-
+[+]
 {| class="nanj_prompt_table sort edit"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
 |blush {{{{{smug}}}}} {{squinting eyes}} fang open mouth||メスガキ|顔が崩れがち|https://image02.seesaawiki.jp/n/h/nai_ch/XKoOq9YZj7.png|
@@ -22,11 +22,12 @@
 |One eye closed,tongue out,closed mouth,troubled eyebrows|long tongue|てへぺろ☆||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HiUv3CSO_Q-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HiUv3CSO_Q.png]]|
 |crying with eyes open||泣き顔|||
 |}
+[END]
 
 * 単語集
 
 ** 表情全般
-
+[+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
 |cackle|ケラケラ笑う|gigglingみたいな蔑んだ感じになりにくいで。|https://image01.seesaawiki.jp/n/h/nai_ch/oUgaEzfZcE.png https://image01.seesaawiki.jp/n/h/nai_ch/OK8mNA95V7.png|
@@ -74,10 +75,12 @@
 |clear face,~~expressionless | すまし顔| 両方組み合わせることで無表情感が増す~~眉含め完全な真顔にするにはネガティブプロンプトに~~troubled eyebrowsを入力| [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4EIOmksvhD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4EIOmksvhD.png]]|
 |smug face|ドヤ顔||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/A7idsJHxsJ.png)>https://image02.seesaawiki.jp/n/h/nai_ch/A7idsJHxsJ.png]]|
 |}
+[END]
 
 ** パーツごとの指定
 
 *** 眉毛
+[+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
 |eyebrows|眉毛（指定した場合の印象）|eyebrowsと入れるだけで眉毛が太くなる傾向がある。４弱ぐらいで細めになる（上サンプル）。強めると太く短くなる傾向（下サンプル）。thick eyebrowsだと太すぎて使いづらい場合はeyebrowsの強弱で調整した方がいい。|https://image01.seesaawiki.jp/n/h/nai_ch/oLqkXtL2Fy.png https://image02.seesaawiki.jp/n/h/nai_ch/3gQLaczUpW.png|
@@ -86,8 +89,10 @@
 |troubled eyebrows|ハの字の眉|Undesired Content にこれを追加すると無表情の時の普通の眉になる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EWftzjkVeJ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/EWftzjkVeJ.png]]|
 |V-shaped eyebrows|逆八の字の眉|太くもなる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zzK4qlROjb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zzK4qlROjb.png]]|
 |}
+[END]
 
 *** 目
+[+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
 |^_^, closed eyes|目を閉じて物思いに耽る||https://image01.seesaawiki.jp/n/h/nai_ch/n1BxRTaBV0.png|
@@ -114,15 +119,19 @@
 |star-shaped pupils|星形の瞳孔|☆もしくは&#10024;|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Jz07Qyy692-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Jz07Qyy692.png]]|
 |heart-shaped pupils|ハート形の瞳孔||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sp8UFvGnUq-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/sp8UFvGnUq.png]]|
 |}
+[END]
 
 *** 頬
+[+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
 |blush|頬赤染め||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qXwQZxImIw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/qXwQZxImIw.png]]|
 |blush_stickers|チークステッカー|チビキャラによくある頬の赤い楕円|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lxf51YDcNr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/lxf51YDcNr.png]]|
 |}
+[END]
 
 *** 口
+[+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
 |[mouth drool, drooling], :o, [open mouth], hunger,|涎を垂らす|ちょうど良い塩梅にするのが難しい。|https://image02.seesaawiki.jp/n/h/nai_ch/inwAWQ79ts.png https://image01.seesaawiki.jp/n/h/nai_ch/S39aBVdTHf.png|
@@ -150,8 +159,10 @@
 |open mouth|口を開ける||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/r_xWnrBgmK-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/r_xWnrBgmK.png]]|
 |close mouth|口を閉じる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/w7xbMNHOLf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/w7xbMNHOLf.png]]|
 |}
-** 部位名称
+[END]
 
+** 部位名称
+[+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
 |||||
@@ -161,5 +172,5 @@
 |eyeball|目玉|色と組み合わせ可能(red_eyeballなど)。~~"eyes"はまつ毛と瞳孔合わせた色だが、~~eyeballは黒目のみの指定||
 |eyelashes|まつ毛|色と組み合わせ可能。強調すると色が濃くなりまつ毛がでかくなる。~~NCに登録するとまつ毛の描写がシンプルになりアニメ風に近づく||
 |}
-
+[END]
 
