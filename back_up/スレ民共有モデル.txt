@@ -1360,6 +1360,37 @@ https://huggingface.co/fcski/otokonoko
 https://civitai.com/models/238282?modelVersionId=268683
 ||=
 
+**308スレ371 FeaturelessMix（更新）
+https://fate.5ch.net/test/read.cgi/liveuranus/1703859855/371
+https://civitai.com/models/65202/featureless-mix
+=|BOX|
+371: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ d1f7-pFp4) sage 2023/12/31(日) 05:35:27.17 ID:wuCenF4U0 
+FeaturelessMix新バージョン出した
+以前のV2は自分で言うのもなんやけど結構いいモデルだったとは思うんやが、
+使用するタグによっては下書きっぽい荒い線が出てきてしまうねんな
+今回のV3はその下書きっぽさを払拭するのが目的で、まぁまぁ達成できたと思うやで
+
+https://civitai.com/models/65202/featureless-mix
+||=
+
+**308スレ646 VividOrangeMix
+https://fate.5ch.net/test/read.cgi/liveuranus/1703859855/646
+https://civitai.com/models/196585?modelVersionId=221033
+https://huggingface.co/WarriorMama777/OrangeMixs
+=|BOX|
+646: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ dd7b-JKp6)  2023/12/31(日) 23:55:37.43 ID:30HAdDC60 
+VividOrangeMixっていうモデルをCivitaiにアップロードしました
+リアルすぎる形状や影は極力なくして、鮮やかでフラットなアニメ風のイラストを生成できるようにマージしたやつです(※SD1.5)
+huggingfaceのほうは不具合でアップロードできんかったのでCivitaiを見てくれ
+良いお年を!
+https://civitai.com/models/196585?modelVersionId=221033
+https://huggingface.co/WarriorMama777/OrangeMixs
+https://i.imgur.com/5B5SdAV.jpg
+https://i.imgur.com/HaAnOTu.jpg
+https://i.imgur.com/OoRdFUy.jpg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7FezxTlt5y-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/7FezxTlt5y.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9qxBSx8SiO-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/9qxBSx8SiO.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iTx2vmERF9-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/iTx2vmERF9.jpg]]
+
 * 現在リンク切れのモデル
 [+]
 **133スレ104,573 NO133_104 ※リンク切れ
