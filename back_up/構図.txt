@@ -31,7 +31,7 @@
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
 |YouTube screen|YouTube動画|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/3X3axRx18h.png|
-|viewfinder|カメラの撮影画面（ビューファインダー）||https://image02.seesaawiki.jp/n/h/nai_ch/tOoNvVnoei.png|
+|viewfinder|カメラの撮影画面（ビューファインダー）|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/tOoNvVnoei.png|
 |Live streaming|ネット配信|tiktokとか付けるとそれっぽくなる|https://image02.seesaawiki.jp/n/h/nai_ch/4rXHoz2XIw.png|
 |Instagram|インスタグラム||https://image02.seesaawiki.jp/n/h/nai_ch/qEoQ4kHOVa.png|
 |isolated on 色の名前 background|isolated on white backgroundで白背景になる。white backgroundだけだと謎オブジェクトが出現するときに使うといいかもしれない|SD がトレーニングに使ったデータセット内には「isolated on *token* background」というラベルがついた画像が大量にあるらしいhttps://www.reddit.com/r/StableDiffusion/comments/yc1osj/easily_prompt_for_generating_pure_background/|https://image01.seesaawiki.jp/n/h/nai_ch/OcMpYUdUCp.5_comp001.jpg|
