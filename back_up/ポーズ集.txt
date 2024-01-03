@@ -3,6 +3,11 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|attack, {{round kicking}}, standing on one leg, ||回し蹴り|V3使用。関節があらぬ方向に曲がったりするので試行は必要。|https://image02.seesaawiki.jp/n/h/nai_ch/xXvyAg1jVW.png|
+|attack, {{side kicking}}, standing on one leg, ||横蹴り|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/6NsjdzHAWp.png|
+|attack, {{drop kick}}, ||ドロップキック|V3使用。多少のガチャは必要。|https://image02.seesaawiki.jp/n/h/nai_ch/77Tj9dB3VZ.png|
+|high kick, leg up, ||ハイキック|V3使用。かかと落とし（axe kick）でも良さそう。axe kickだと斧を振り回してしまうので使いにくい。|https://image02.seesaawiki.jp/n/h/nai_ch/cyLZ0KkMaQ.png|
+|{{caramelldansen}}, rabbit pose, bouncing breasts, shake hip, dancing, ^ ^, :d, ||ウッーウッーウマウマ(&#12442;∀&#12442;)（キャラメルダンセン）|過去に流行ったflash動画の踊りみたいなポーズになる。|https://image01.seesaawiki.jp/n/h/nai_ch/rUTryE3st8.png|
 |butterfly sitting position, v arms|{{{{butterfly wing, butterfly}}}},|ぺたん座り／女の子座り／あひる座り／内股座り|v armsと組み合わせることでポーズが安定します。|https://image01.seesaawiki.jp/n/h/nai_ch/WcH0lYOQeb.png|
 |sitting on ground, holding her knees with her arms,||体育座り|座り方自体を示す単語が無いので説明的なプロンプトになります。|https://image02.seesaawiki.jp/n/h/nai_ch/UIashgKHP0.png|
 |breasts one's chest on the table||机の上に胸を乗せる|collapseを付けると重量感が増すかも|https://image02.seesaawiki.jp/n/h/nai_ch/vspi6CzqKs.png|
@@ -80,4 +85,5 @@ danbooru のポーズ関係のタグ一覧はこちら https://danbooru.donmai.u
 |on all fours|四つん這い|たまにグロテスクな肉の塊みたいな画像がでることがあるので~~ほかのプロンプトとの併用を推奨|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xxIyx_6RJG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xxIyx_6RJG.png]]|
 |heart hands|両手でハート|不安定|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3695af6bab8823a5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3695af6bab8823a5.png]]|
 |}
+
 
