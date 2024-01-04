@@ -3,6 +3,10 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|fighting stance, {{kung fu}}, leg up, ||カンフーの構え|V3使用。カンフーみたいな片足を上げた構えが出やすくなる。|https://image02.seesaawiki.jp/n/h/nai_ch/Kxe6Q_Irnp.png|
+|attack, {{punching at viewer}}, ||正拳突き|V3使用。正面に向かって殴りかかる絵になりやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/OqGmvVlI3A.png|
+|attack, {{punching}}, ||パンチ|V3使用。サンプルのように指定なしでグローブを付けることがある。|https://image02.seesaawiki.jp/n/h/nai_ch/msLu485d4n.png|
+|attack, {{kicking}}, standing on one leg, ||蹴り|V3使用。正面に蹴りを入れるポーズになりやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/HNySBlF68R.png|
 |attack, {{round kicking}}, standing on one leg, ||回し蹴り|V3使用。関節があらぬ方向に曲がったりするので試行は必要。|https://image02.seesaawiki.jp/n/h/nai_ch/xXvyAg1jVW.png|
 |attack, {{side kicking}}, standing on one leg, ||横蹴り|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/6NsjdzHAWp.png|
 |attack, {{drop kick}}, ||ドロップキック|V3使用。多少のガチャは必要。|https://image02.seesaawiki.jp/n/h/nai_ch/77Tj9dB3VZ.png|
