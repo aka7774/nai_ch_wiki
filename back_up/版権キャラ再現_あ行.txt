@@ -313,6 +313,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |solo,large breasts,{fusion of {&#128563;} &&#128164;&&#91;&#91;&#91;closed eye]]]}, {{single braid}},gray hair,naked towel|汎用ネガ|宇崎ちゃんは遊びたい！|宇崎月|naked towelを{{fusion of bikini & &#128004;}}に置き換えると牛柄ビキニになる(hornをネガティブに追加すると角消える)|https://image01.seesaawiki.jp/n/h/nai_ch/13d13d365ea5d50c.PNG|
 |solo, {{{{uzaki hana}}}}, {{uzaki-chan wa asobitai}}, dark silver short hair curl inwards, unified hair, bang, blush, open mouth, :D, smile, fang, blue eyes, big breasts, official artwork,|flipped hair, blunt bangs, swept bangs, crossed hair,|宇崎ちゃんは遊びたい！|宇崎花|いまいち似ない。改善求む|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HiyFwR9TzM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HiyFwR9TzM.png]]|
+|{{{{uzaki hana}}}}, {{uzaki-chan wa asobitai}}, silver short hair, blush, open mouth, :D, smile, fang, blue eyes, large breasts, official art, solo, cowboy shot, ||^|^|ほぼ同じプロンプトをV3で。結構いけそう|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cIpCXq2Oi8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cIpCXq2Oi8.png]]|
 |}
 
 ***　うたの☆プリンスさまっ♪
@@ -451,12 +452,17 @@
 ***　俺の妹がこんなに可愛いわけがない
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|{{{{{aragaki_ayase}}}}},2010s,sketch,ore_no_imouto_ga_konna_ni_kawaii_wake_ga_nai,official,{{{{{blue}}}}} long straight hair,Navy blue eyes,summer serafuku&#40;red_tie,white shirt,gray collar),gray skirt,|{blush},{{{blue_archive}}},2020s||新垣あやせ||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2uzoAlhyzW.png)|
+|{{aragaki_ayase}},2010s,sketch,ore no imouto ga konna ni kawaii wake ga nai,official,{blue} long straight hair, Navy blue eyes, summer serafuku, red tie, white shirt, gray collar, gray skirt,|{blush},{{{blue_archive}}},2020s||新垣あやせ||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2uzoAlhyzW.png)|
 |masterpiece,best quality,1girl,looking up, ore no imouto ga konna ni kawaii wake ga nai,1girl, kousaka_kirino ,crossed arms,orange hair&#124;brown hair,long hair,floating hair,shiny hair,blue eyes&#124;aqua eyes,&#40;pink hairclip),badmood,white shirt,&#40;gray sailor collar&#124;blue sailor collar),red ascot,|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name,ribbon,bow tie,|俺の妹がこんなに可愛いわけがない|高坂桐乃|looking up,crossed arms,badmoodはお好みで変えてください|https://image01.seesaawiki.jp/n/h/nai_ch/zixCyOm1eT.png|
-|{{{{{aragaki_ayase}}}}},ore_no_imouto_ga_konna_ni_kawaii_wake_ga_nai,Navy blue long straight hair,Navy blue eyes,16 years old,serafuku,||俺の妹がこんなに可愛いわけがない|新垣あやせ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vexqnH_8gr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/vexqnH_8gr.png]]|
+|{{{{{aragaki_ayase}}}}},ore no imouto ga konna nikawaii wake ga na, Navy blue long straight hair, Navy blue eyes, 16 years old, serafuku,||俺の妹がこんなに可愛いわけがない|新垣あやせ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vexqnH_8gr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/vexqnH_8gr.png]]|
 |gokou ruri, Gothic & Lolita, ore no imouto ga konna ni kawaii wake ga nai, best_quality,ultra-detailed,illustration,perfect_detailed,shiny,||俺の妹がこんなに可愛いわけがない|五更瑠璃||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ewWQWTLojX-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ewWQWTLojX.png]]|
 |}
 
+***　終わりのセラフ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
+|}
 
 
 
