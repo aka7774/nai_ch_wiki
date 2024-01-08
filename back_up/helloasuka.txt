@@ -57,7 +57,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
-|RTX 4070 Ti|12GB|Ryzen 5 5600G||16.8|--xformers|Windows10、NVIDIA DriverはOS標準のv536.23、WebUI:1.7.0(commit:cf2772fa..) / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 / gradio:3.41.2、他のオプションも計測(誤差の範囲かな)「--opt-sdp-attention」は17.2s、「--opt-sdp-attention --opt-channelslast」は17.5s、「--xformers --opt-channelslast」は17.6s、ライブプレビューは切ってもプラマイで誤差レベルだった。あと、俺環ではWindows11はOSクリーンインストから構築し直しても20秒前半までしか詰められなかった|
+|RTX 4070 Ti|12GB|Ryzen 5 5600G||15.3|--xformers|Windows10、NVIDIA DriverはOS標準のv536.23、WebUI:1.7.0(commit:cf2772fa..) / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 / gradio:3.41.2、cudnnを8.9.7.29に差し替えても変わらず。俺環ではWindows11はOSクリーンインストから構築し直しても20秒前半までしか出なかった。|
 |GT 1030|2GB|Ryzen 5 5600G||1278.0|--lowvram|1550.21 のときと同HW環境 v1.6.0 546.17WHQL 最適化が進んでVRAM使用量が減って若干速くなった。--medvramやオプション無しでも動くようになったが、メインメモリへのスワップでかえって遅い。|
 |RTX 3050 laptop|4GB|Ryzen7 6700HS||133.7|--medvram --xformers|version:v1.6.0-2-g4afaaf8a python:3.11.6 torch:2.0.1+cu118 xformers:0.0.20 GV301RC メインメモリ32GB Armoury Crateの手動設定にて電力制限をCPU最低・GPU最高（右端）、ファンスピード最大に設定。テントモードにて設置|
 |GTX 1060|3GB|Core i5 8500|12分 55.5秒|779.5|--xformers --medvram||

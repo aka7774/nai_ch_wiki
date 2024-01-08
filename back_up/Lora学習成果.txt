@@ -3692,3 +3692,72 @@ https://majinai.art/i/0dsR8Bj.png
 https://majinai.art/i/qneom8m.png
 ||=
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/mb6HNeejUW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/mb6HNeejUW.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6M7M2B_jUx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6M7M2B_jUx.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HbhGYoDtuV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HbhGYoDtuV.png]]
+
+
+
+***311スレ193 ペルソナ3のポーズ、妖精さん（艦これ）、滅・昇龍拳、陥没乳首
+https://fate.5ch.net/test/read.cgi/liveuranus/1704540632/193
+https://huggingface.co/pomu-zoo/lora/tree/main
+=|BOX|
+98: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 7f6a-4jqT) sage 2024/01/07(日) 00:23:13.87 ID:gAGaCrJG0 
+軽い気持ちでCIVITAIにGunToHeadポーズ置いてみたで 消されたら笑ってもろて
+https://civitai.com/models/256122
+
+https://files.catbox.moe/phfhjn.png
+https://files.catbox.moe/rg272a.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/iwZ29SRiej-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/iwZ29SRiej.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4sESh4v0Hu-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4sESh4v0Hu.png]]
+
+=|BOX|
+193: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 7f30-4jqT) sage 2024/01/07(日) 09:44:16.56 ID:gAGaCrJG0 
+https://files.catbox.moe/vd6i68.png
+
+>>185
+いい機会やからhuggingに移したわ
+ついでに発掘したやつ(何も覚えてない)とクオリティがど〜しようもないやつも置いといたで
+https://huggingface.co/pomu-zoo/lora/tree/main
+https://files.catbox.moe/lc80yo.png https://files.catbox.moe/8gios8.png
+
+>>189
+あくまでP3のポーズとして出したんやが あそこの削除は通報ベースなの忘れとったわ
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/_8bft57AMO-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/_8bft57AMO.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/agES4Y2CQz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/agES4Y2CQz.png]]
+
+***311スレ544 半透明化LoRA（SDXL用、1.5用）
+https://fate.5ch.net/test/read.cgi/liveuranus/1704540632/526
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test2
+=|BOX|
+526: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ dfcf-JApz)  2024/01/08(月) 01:33:19.80 ID:JkIGLh+T0 
+なぜか急にTwitter凍結されたんで久々にこっち見に来たぞ
+SDXL用の半透明化LoRA試作1号、どうだろうコレ？
+https://files.catbox.moe/d7j2b9.jpg
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/sdxl-testlora-transparentbody_01.safetensors
+他の質感系LoRAとかと組み合わせても面白いなって…
+https://files.catbox.moe/nas2x4.jpg
+https://files.catbox.moe/v0gl8f.jpg
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8IcmfICF_q-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/8IcmfICF_q.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RAgDP_OdTC-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/RAgDP_OdTC.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BwRr0MQY1s-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/BwRr0MQY1s.jpg]]
+
+=|BOX|
+544: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ dfcf-JApz)  2024/01/08(月) 02:04:52.93 ID:JkIGLh+T0 
+うーむ、異議申し立て送っといたけど復旧されるのはいつになるのやら……
+とりあえず1.5用の透明化LoRAとスライム娘LoRAもhuggingfaceに上げた、ltp-〜てのが1.5用な
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test2
+1.5の方も透明感はあるけど透過はあんまりしてない気がする
+こっちも他のLoRAと組み合わせて使うのがいいんじゃないかな多分
+
+あと今、Googleドライブに置いてたLoRAをhuggingfaceにもアップする作業してる
+||=
+=|BOX|
+554: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ dfcf-JApz)  2024/01/08(月) 02:38:53.61 ID:JkIGLh+T0 
+1.5でもある程度は透明感出せる、でも透過はあんましない
+https://files.catbox.moe/dytlt2.jpg
+https://files.catbox.moe/bkfpxu.jpg
+https://files.catbox.moe/z4idsx.jpg
+スライム娘LoRAはこんな感じになる
+https://files.catbox.moe/exjcga.jpg
+https://files.catbox.moe/gr3h0q.jpg
+https://files.catbox.moe/2w8sk1.jpg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HLiozyWds6-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/HLiozyWds6.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uLx2xIQYIQ-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/uLx2xIQYIQ.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8nGxKw2BPy-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/8nGxKw2BPy.jpg]]
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/v9_A6Bps_C-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/v9_A6Bps_C.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vGYpqIKdvi-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/vGYpqIKdvi.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RylnJ3j5AK-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/RylnJ3j5AK.jpg]]
