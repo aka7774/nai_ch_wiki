@@ -3761,3 +3761,61 @@ https://files.catbox.moe/2w8sk1.jpg
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HLiozyWds6-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/HLiozyWds6.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uLx2xIQYIQ-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/uLx2xIQYIQ.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8nGxKw2BPy-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/8nGxKw2BPy.jpg]]
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/v9_A6Bps_C-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/v9_A6Bps_C.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vGYpqIKdvi-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/vGYpqIKdvi.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RylnJ3j5AK-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/RylnJ3j5AK.jpg]]
+
+***312スレ122 羽根突き
+https://fate.5ch.net/test/read.cgi/liveuranus/1704729279/122
+https://civitai.com/models/257442
+=|BOX|
+122: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ ff3d-WKm5)  2024/01/09(火) 11:10:00.88 ID:JKQSu7Zq0 
+羽根突きのLoRAやで
+https://civitai.com/models/257442
+
+羽根突き後のボーナスゲームも一応出せるで
+https://majinai.art/i/jMRkR3t.png
+https://majinai.art/i/ks01dfg.png
+||=
+
+
+***312スレ129 noline（更新）
+https://fate.5ch.net/test/read.cgi/liveuranus/1704729279/129
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/ltp-testlora-noline_02.safetensors
+=|BOX|
+129: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ dfac-JApz)  2024/01/09(火) 11:28:45.38 ID:23c5BAAl0 
+nolineのバージョン2を作った
+アレ強度上げると三白眼になったり絵がシンプル化しがちだったんだけど、その辺が多少マシになった
+https://files.catbox.moe/mwyosh.jpg
+https://files.catbox.moe/1555jh.jpg
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/ltp-testlora-noline_02.safetensors
+マイナスで使って線をはっきりさせるのもアリ
+ちょい前に公開したアニメ絵化LoRA＋水彩境界効果LoRAの組合せにnoline_02マイナスも入れたらこうなった
+https://files.catbox.moe/bv2cw1.jpg
+https://files.catbox.moe/6ibf3s.jpg
+こういう線、なんか好き
+||=
+
+***312スレ389 angel's 24 uniform 
+https://fate.5ch.net/test/read.cgi/liveuranus/1704729279/389
+https://civitai.com/models/259164
+=|BOX|
+389: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ dfe5-Qq59)  2024/01/09(火) 21:47:12.71 ID:WQ/jg2SU0 
+需要は謎やがangel's 24 uniformのLoRA作ったで
+https://civitai.com/models/259164
+https://files.catbox.moe/nybncm.jpg
+||=
+
+***312スレ597 MtUウイルス
+https://fate.5ch.net/test/read.cgi/liveuranus/1704729279/597
+https://mega.nz/folder/azhAXDaD#TDNEa4hl3kVuIJxSaksQfw
+=|BOX|
+597: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ df98-ipwt)  2024/01/10(水) 14:33:33.25 ID:Yk2RAjFl0 
+昨夜寝る前に仕込んだ奴だけど服や顔など指定無しで出るインスタントポン出しLora
+融通は効かない粗悪品だが強度１〜0.8なら高打率で出てくれるんでこの構図大好きなマニア専用になるピンポイントLora
+キャラLoraとの併用はキャラLoraが0.6〜0.4位で行けるやつなら相性がいいと思う
+まぁ1発勝負の暇つぶしLoraなんで勘弁な！しかもいつものクセでXL用で作ってしまってる
+
+https://files.catbox.moe/ul7ixk.png
+https://files.catbox.moe/p4x8vj.png
+https://files.catbox.moe/cg5n8b.png
+https://files.catbox.moe/zs584y.png
+https://mega.nz/folder/azhAXDaD#TDNEa4hl3kVuIJxSaksQfw
+||=
