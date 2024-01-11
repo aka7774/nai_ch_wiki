@@ -23,9 +23,10 @@
 
 *2024-01-11 Animagine XL 3.0が公開
 https://huggingface.co/cagliostrolab/animagine-xl-3.0
-Linaqurf氏がSDXLベースのアニメモデル「Animagine XL 3.0」を公開した。
-NovelAI V3に匹敵する性能を誇り、Quality TagsなどもありNAI3に近い感覚で使用できるかも。
-
+https://cagliostrolab.net/posts/animagine-xl-v3-release/
+Linaqurf氏らがSDXLベースのアニメモデル「Animagine XL 3.0」を公開した。
+NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感覚で使用できるかも。
+これでもsd-scriptsの不具合で学習がうまくいってないらしく、今後の更なる進化に期待できる。
 
 *2023-12-12 外部記事による2023画像生成AIまとめ
 外部記事 [[新清士の「メタバース・プレゼンス」 第46回 画像生成AIが爆速で進化した2023年をまとめて振り返る>https://ascii.jp/elem/000/004/174/4174570/]]
