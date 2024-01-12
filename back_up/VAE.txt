@@ -48,6 +48,10 @@ naclbit(TrinArt)のVAE
 https://huggingface.co/naclbit/trinart_derrida_characters_v2_stable_diffusion/tree/main
 autoencoder_fix_kl-f8-trinart_characters.ckpt
 
+SDXL-VAE-FP16-Fix
+StabilityAIのSDXL VAEの修正版。fp16でNaN演算が発生する不具合を修正して黒画像やエラーが出ないようにしたもの
+https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
+
 参照：AUTOMATIC1111版Stable Diffusion web UI上でVAE Mergerを利用する手順｜まゆひら｜note - https://note.com/mayu_hiraizumi/n/n136bd7b3a156
 
 ** NVA部のVAE
