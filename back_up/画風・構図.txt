@@ -31,6 +31,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|ai-generated|AI生成物|ローカルのSD1.5でありがちな画風になる。やけに背景を描きこんで人物がてかって筋肉が強調される。NovelAI V3およびAnimagine XL 3.0で効果あり||
 |path tracing|パストレーシング|レイトレーシングの発展技法で、光線の反射方向を確率で決めることで拡散反射を考慮している。間接光の表現が可能である。|https://image02.seesaawiki.jp/n/h/nai_ch/c4KQZ050Xc.png https://image02.seesaawiki.jp/n/h/nai_ch/uAeAkdsntX.png|
 |ray tracing|レイトレーシング|視点に入る光を視点から逆算することで、視点に映る像をシミュレーションする技法。拡散反射は考慮されないため、間接光の表現ができない。|https://image01.seesaawiki.jp/n/h/nai_ch/qBK_Rfp9My.png https://image01.seesaawiki.jp/n/h/nai_ch/Nw6NicY8F7.png|
 |toon rendering|トゥーン・レンダリング|セルシェーディングと同様な意味で使われることが多い。セルシェーディングのようなアニメ塗りにならない。|https://image01.seesaawiki.jp/n/h/nai_ch/mAbi_y2xpf.png https://image01.seesaawiki.jp/n/h/nai_ch/82uN_iW5mB.png|

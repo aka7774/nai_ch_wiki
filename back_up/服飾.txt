@@ -102,7 +102,6 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-|polo||||
 |knitted vest|ニットベスト|フロントボタンがあるベストになる。|https://image01.seesaawiki.jp/n/h/nai_ch/wt9nQOs492.png|
 |sweater vest|セーターベスト|フロントボタンは付かない。|https://image02.seesaawiki.jp/n/h/nai_ch/ai5BYuIZ4t.png|
 |jumper|セーター|イギリス英語での呼称。|https://image01.seesaawiki.jp/n/h/nai_ch/fLMRsTIOfv.png|
@@ -121,6 +120,7 @@
 |safari jacket shirt|サファリ・シャツ|サファリ・ジャケットを模したシャツ。|https://image02.seesaawiki.jp/n/h/nai_ch/xfLFoyUHE1.png|
 |bib front shirt|ビブフロント・シャツ|本来は前立てに胸当ての布があるシャツのこと。胸の部分にロゴの入ったTシャツとして描写されることが多い。|https://image02.seesaawiki.jp/n/h/nai_ch/hdFHqiHTiM.png|
 |flannel shirt, red plaid, |ネル・シャツ (フランネル・シャツ)|起毛した面素材で作られたシャツ。チェック柄が多いが、指定しなければ出ない。|https://image02.seesaawiki.jp/n/h/nai_ch/sUlqUzto0H.png|
+|virgin killer sweater|童貞を殺すセーター(V3)|打率100％|https://image02.seesaawiki.jp/n/h/nai_ch/RYGwU5Xafv.png|
 |{{{ribbed sweater}}},bare arms,bare back,|童貞を殺すセーター|打率低め|https://image02.seesaawiki.jp/n/h/nai_ch/nU9NWdjN6f.png|
 |puffy sleeves|パフスリーブ|本格メイドの肩の丸い部分のこと。Novel AIでは鎖骨や胸周りが露出したドレス風の衣装が出やすい。パフスリーブは単体では半袖のものなので、長袖を出したい場合はbishop sleeveを指定すると良い|https://image02.seesaawiki.jp/n/h/nai_ch/QVPQK517Dx.png|
 |strapless|ストラップなし|画像みたいなやつ。へそ出しになったりならなかったりする。へそ出したくなかったらnavelをUCに入れればたぶん行ける。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cMwQAL_W7h-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cMwQAL_W7h.png]]|
@@ -754,6 +754,7 @@
 |tight|きつい、ぴっちりした||https://image01.seesaawiki.jp/n/h/nai_ch/BDU4EaQX6w.png|
 |}
 [END]
+
 
 
 

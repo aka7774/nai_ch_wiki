@@ -58,6 +58,14 @@
 |1girl,solo, {{tougou mimori}},{{{{low ponytail}}}},black hair,{long hair},aqua eyes,{{sideburns}},hair between eyes,Large amount of hair,blunt bangs,school uniform,blazer,large breasts,{{{shiny hair}}},|{{{{{{{{{{ponytail}}}}}}}}}},wavy hair,{{side ponytail}},{hair bun},short hair,|結城友奈は勇者である|東郷美森|のせといてなんだけど全く生成できない。low ponytailの生成率が異常に低い(tougou mimoriタグ自身がlow ponytailを阻む要素っぽい)。逆にそれっぽいの作るならtougou mimori抜いたほうが早いかもしれない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Gj_9u_dsdN.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Gj_9u_dsdN.png]]|
 |}
 
+***　ゆゆ式
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|nonohara yuzuko, yuyushiki, pink hair, pink eyes, short hair, ahoge, open mouth, smile, serafuku, blue sailor collar, pleated skirt, arms up, yellow neckwear, solo, cowboy shot,  ||ゆゆ式|野々原ゆずこ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BO3cRp3o9F-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/BO3cRp3o9F.png]]|
+|ichii yui, yuyushiki, yellow eyes, blonde hair, low twintails, serafuku, hand on hip, open mouth, pleated skirt, yellow neckwear, blue sailor collar, hair tie, smile, hand on own face, solo, cowboy shot, ||ゆゆ式|櫟井唯|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/G9IaNdiURI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/G9IaNdiURI.png]]|
+|hinata yukari, yuyushiki, purple hair, purple eyes, long hair, blue skirt, serafuku, yellow neckwear, smile, open mouth, pleated skirt, blue sailor collar, long sleeves, arms behind back, solo, cowboy shot, ||ゆゆ式|日向緑|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dDyM50BYpV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dDyM50BYpV.png]]|
+|}
+
 ***　ゆるキャン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -110,5 +118,6 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, game cg, kasugano sora, yosuga no sora, best quality, intricate, overall detail, 1 girl, long hair, twin tails, gray eyes, school uniform, standing, happy, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, highly detailed,|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, {{{{POV hands}}}}, cubism, |ヨスガノソラ|春日野穹|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/vLVBakmrDO.png|
 |}
+
 
 
