@@ -134,6 +134,15 @@ magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 ||=
 ソース：--GUIDE-- - https://rentry.org/voldy#-novelai-setup-
 
+** Animagine XL
+SDXLベースのアニメモデル。
+Animagine XL 3.0
+https://huggingface.co/cagliostrolab/animagine-xl-3.0
+
+Animagine XL 3.0 Base
+https://huggingface.co/cagliostrolab/animagine-xl-3.0-base
+Baseは学習向け。推論用途には非推奨。
+
 *マージモデル
 - 複数のモデルを混合させて作られたモデル。上記リソースのリンク先サイト等から入手が可能。
 - スレ住民によって開発・配布されたモデルについては→[[スレ民共有モデル]]ページにまとめている。
