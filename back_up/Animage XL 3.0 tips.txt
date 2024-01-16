@@ -1,0 +1,37 @@
+*AnimagineV3どこ？
+標準版(通常はこっちを使う)
+https://huggingface.co/cagliostrolab/animagine-xl-3.0
+
+Base(推論目的では非推奨)
+https://huggingface.co/cagliostrolab/animagine-xl-3.0-base
+
+*プロンプトの書き方
+今までと違う独特のプロンプトルールあり
+https://cagliostrolab.net/posts/animagine-xl-v3-release
+
+*推奨事項
+CFG Scaleは5〜7、Euler Aで30ステップ未満。VAEは内蔵してるのか指定しなくても(1111だとNone)動く。
+解像度は1024x1024以上(画素数が1024x1024=1048576画素前後)を強く推奨。
+推奨ネガnsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
+worst quality, low qualityだけでもいいかも
+
+*指定できる解像度
+|~解像度|縦横比|
+|1024×1024|1:1|
+|1152×896|9:7|
+|896×1152|7:9|
+|1216×832|19:13|
+|832×1216|13:19|
+|1344×768|7:4|
+|768×1344|4:7|
+|1536×640|12:5|
+|640×1536|5:12|
+
+*SDXLどうやって使うの？
+webUI1111ならモデル落としていつもの場所に入れるだけ、fooocusやComfyUIも軽くて人気
+
+*プロンプトだけで出せるキャラ
+https://huggingface.co/spaces/Linaqruf/animagine-xl/blob/main/wildcard/character.txt
+
+*なんか絵がマスピっぽくて好きじゃない
+クォリティタグのmasterpieceやbest qualityを入れると露骨に絵が変わるからどれを使うか抜くか色々試してみよう
