@@ -1,0 +1,47 @@
+* 概要
+Stable Diffusion XL（以下「SDXL」と略）。
+※SD1.5と異なる点が多いためとりあえず項立て。追記及び編集求む。
+
+* ドキュメント
+Stability.ai公式
+[[SDXL 1.0 をリリースしました>>https://ja.stability.ai/blog/sdxl10]]
+
+* SDXLの動作環境
+>~~SDXL 1.0は、8GBのVRAMを搭載したコンシューマー向けGPUや、すぐに利用可能なクラウドインスタンスで問題なく動作するはずです。
+[[SDXL 1.0 をリリースしました(公式)>>https://ja.stability.ai/blog/sdxl10]]
+
+* SDXLの特徴
+内部構造がSD1.5と違う
+[[https://image02.seesaawiki.jp/n/h/nai_ch/1xVsFL84go.png>https://image02.seesaawiki.jp/n/h/nai_ch/1xVsFL84go.png]]
+基本解像度が1024×1024で精細
+パラメータ数が3倍になったため''SD1.5よりかなり重い''
+
+* SDXLのUI
+編集時点で本スレで上がっているUIは下記の通り
+>~~0004今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f7d-dc3M)~~2024/01/13(土) 16:35:47.39ID:DvXS/pgj0~~(略)~~&#9724;&#65038;SDXLどうやって使うの？~~webUI1111ならモデル落としていつもの場所に入れるだけ、fooocusやComfyUIも軽くて人気~~(略)
+
+AUTOMATIC 1111
+>~~0968今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f04-Qq59)~~2024/01/13(土) 16:29:32.33ID:8PpvN4mG0~~もう一度貼っときますね~~a1111 SDXL 低VRAM民向け3点セット~~1.webui-user.batのset COMMANDLINE_ARGSに「--medvram-sdxl」を追加（低VRAM対策・高速化）~~2.webui-user.batに「set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.6, max_split_size_mb:128」を追加（OutOfMemoryError対策）~~3.NVIDIAコンパネの3D設定で「CUDA - Sysmem Fall Back Policy」を「Prefer No Sysmem Fallback」にする（メモリ溢れ激遅対策）~~ ~~ワイ環3060参考値~~Animagine3公式サンプル:約28秒~~Animagine3公式サンプルハイレゾ2倍:約2分30秒
+
+Fooocus
+[[https://github.com/lllyasviel/Fooocus>>https://github.com/lllyasviel/Fooocus]]
+導入が簡単で軽い。とっつきは良いが機能性が低いため凝ったことはやりにくい。
+>~~0852今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff8c-SkRo)~~2024/01/11(木) 05:44:07.32ID:kLv98tzD0~~SDXLちょっと触りたいけどローカル使い方忘れたってやつはFooocusに乗り換えを勧めるわ~~novelAI並みにユーザーインターフェースを簡素化してるからめちゃめちゃ扱いやすいしSDXLにいきなり対応してる~~https://pc.watch.impress.co.jp/docs/column/nishikawa/1523904.html
+
+ComfyUI
+[[https://github.com/comfyanonymous/ComfyUI>>https://github.com/comfyanonymous/ComfyUI]]
+多機能で軽い。&color(#ff0000){''「ComfyUIでないとできない」ことが多い。''}やる気がある人にはComfyUIを強く推奨。本スレの上級者はほとんどComfyUIのはず(ソース無し)。
+>~~0139今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df8e-Xueq)~~2024/01/13(土) 18:32:22.34ID:pvPKwx5u0~~(略)~~一時の恥で聞くわ…~~誰かComfyUIでfp8モード起動のやり方教えて下さい！&#128557;&#128166;~~ ~~0145今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f48-4jqT)~~2024/01/13(土) 18:38:58.17ID:+aLVvCTx0~~>>139~~python main.py --use-quad-cross-attention --fp8_e4m3fn-unet~~か~~python main.py --use-quad-cross-attention --fp8_e4m3fn-text-enc~~　--use-quad-cross-attentionはなくてもおけ~~　loraの効きが悪くなるのが嫌なら--force_fp16 
+ 
+* SDXLのモデル
+SDXLのモデルにはBaseとRefinerの2種類あることに注意。Refinerは任意。
+[[Animagine XL 3.0 tips>https://seesaawiki.jp/nai_ch/d/Animage%20XL%203%2e0%20tips]]
+本スレでSDXLが普及する発端となったモデル
+* SDXLの学習
+[[ローカルの学習>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac]]
+※SDXL学習特有の問題点については編集時点で本スレで試行錯誤中
+本スレの頻出質問
+[[https://github.com/RedRayz/Kohya_lora_param_gui>>https://github.com/RedRayz/Kohya_lora_param_gui]]
+Kohya_LoRA_GUI使用時のVRAM8GB対策
+GUI作者からの追記:8GB用のプリセットでVRAM不足になる場合はsd-scriptsを更新してください。VRAM消費が多いバグが修正されています。
+>~~0574今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 868c-Jm4m)~~2024/01/15(月) 18:08:10.63ID:vI2UfoaK0~~>>573~~8GB学習行けたんか？~~差しつかえなければ設定教えてほしいで~~ ~~0586今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fee7-h3fU)~~2024/01/15(月) 19:12:32.30ID:K9MCdvrk0~~>>574~~313スレ39のプリセットに8GB用あるで~~ ~~0039今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df30-Qq59)~~2024/01/11(木) 10:12:37.38ID:Zvz0VIQ60~~LoRA学習GUI用のサンプルプリセットにXL向けも置いてるで~~https://mega.nz/folder/ILdnzaxT#gTGQmcPUgdxKlLpIl9x__g
