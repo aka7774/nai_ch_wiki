@@ -1,6 +1,8 @@
 * 概要
 Stable Diffusion XL（以下「SDXL」と略）。
 ※SD1.5と異なる点が多いためとりあえず項立て。追記及び編集求む。
+Stable Diffusionの新バージョン。品質が大幅に向上した。
+SD1.5でろくに生成できなかった指や文字などもある程度生成できる。
 
 * ドキュメント
 Stability.ai公式
@@ -15,6 +17,9 @@ Stability.ai公式
 [[https://image02.seesaawiki.jp/n/h/nai_ch/1xVsFL84go.png>https://image02.seesaawiki.jp/n/h/nai_ch/1xVsFL84go.png]]
 基本解像度が1024×1024で精細
 パラメータ数が3倍になったため''SD1.5よりかなり重い''
+
+[[誰でもわかるStable Diffusion　新バージョン「SDXL」の概要>>https://hoshikat.hatenablog.com/entry/2023/08/16/205955]]
+このブログ（外部リンク）の解説記事が大変わかりやすい
 
 * SDXLのUI
 編集時点で本スレで上がっているUIは下記の通り

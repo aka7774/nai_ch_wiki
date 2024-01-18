@@ -111,6 +111,7 @@ https://nvidia.custhelp.com/app/answers/detail/a_id/5490
 これが最近のベース姫騎士ちゃんでこっからモデルやLoRAに合わせてtiaraやwhite hairの強調度合い調整したり着せ替えしたりする
 ||=
 これにより姫騎士ちゃんが活動範囲(および後ろの穴)を大幅にひろげた
+//後ろの穴は元々大幅に広いだろ
 ※姫騎士ちゃんはフリー素材です
 
 ''※カンマの前後のスペースを調整し、スペルを修正（aminal→animal）したもの''
@@ -1362,6 +1363,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
