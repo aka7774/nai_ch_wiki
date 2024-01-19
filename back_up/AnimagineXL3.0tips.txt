@@ -1,8 +1,3 @@
-*こちらに移動しました
-→[[AnimagineXL3.0tips]]
-
-*以下は古い内容です
-
 *AnimagineV3どこ？
 標準版(通常はこっちを使う)
 https://huggingface.co/cagliostrolab/animagine-xl-3.0
@@ -15,7 +10,7 @@ https://huggingface.co/cagliostrolab/animagine-xl-3.0-base
 https://cagliostrolab.net/posts/animagine-xl-v3-release
 
 *推奨事項
-CFG Scaleは5〜7、Euler Aで30ステップ未満。VAEは内蔵してるのか指定しなくても(1111だとNone)動く。
+CFG Scaleは5〜7、Euler Aで30ステップ未満。VAEは内蔵してるのか指定しなくても(1111だとNone)動く。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
 解像度は1024x1024以上(画素数が1024x1024=1048576画素前後)を強く推奨。
 推奨ネガnsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 worst quality, low qualityだけでもいいかも
@@ -37,12 +32,13 @@ worst quality, low qualityだけでもいいかも
 |~解像度|縦横比|備考|
 |1280x768|5:3|16:9(ワイドスクリーン)に近い|
 |768x1280|3:5|9:16(縦のワイドスクリーン)に近い|
+
 *SDXLどうやって使うの？
 webUI1111ならモデル落としていつもの場所に入れるだけ、fooocusやComfyUIも軽くて人気
 
 *プロンプトだけで出せるキャラ
 https://huggingface.co/spaces/Linaqruf/animagine-xl/blob/main/wildcard/character.txt
-
+ワイルドカードにぶっこむとキャラガチャがはかどる。（1boyもいるからnsfwの絵を出すときは注意。事前にgrep -v boy）
 *なんか絵がマスピっぽくて好きじゃない
 クォリティタグのmasterpieceやbest qualityを入れると露骨に絵が変わるからどれを使うか抜くか色々試してみよう
 
@@ -51,6 +47,6 @@ https://huggingface.co/spaces/Linaqruf/animagine-xl/blob/main/wildcard/character
 プロンプトの組み合わせでもまれに破綻する模様。
 
 *学習モデルが学習ミス（ソフトのバグ）により欠陥持ち
-稀に黒い画像やノイズ画像が生成されてしまう事がある。
+稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
 トークン（タグ）プロンプトの並び順や組み合わせで発生するので調整すれば回避できる。
 ※hair等の部位プロンプトを近くに連続して羅列すると発生しやすいか？トークンの位置でも影響が強い。

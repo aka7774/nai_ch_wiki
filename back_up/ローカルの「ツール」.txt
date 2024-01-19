@@ -219,6 +219,30 @@ https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.7.0
 https://i.imgur.com/UpCrKxO.png
 ||=
 
+** caption_ordering_for_LoRA
+[[https://github.com/K4gtuTi/caption_ordering_for_LoRA>>https://github.com/K4gtuTi/caption_ordering_for_LoRA]]
+NovelAIV3やAnimagineXLで利用されたというキャプションのグループ化/固定化がLoRA学習にどのような影響を与えることができるのか。
+これを調べるために一括でキャプションの組み合わせを変更できる簡易的なものを実装
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1705131095/
+https://fate.5ch.net/test/read.cgi/liveuranus/1705230822/
+=|BOX|
+0432今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff7b-JApz)
+2024/01/13(土) 23:59:33.78ID:uv3iwHzF0
+https://cagliostrolab.net/posts/animagine-xl-v3-release#tag-ordering
+これで言われてたタグを順序付けて学習させるやつってLoRA学習にも使えるんじゃねってことで
+簡易的に.txtファイルに書き込まれた内容を組み替えるpythonコード書いたんだけど誰か試す？
+extentionsじゃないけど、python3.10なら使えるからstable diffusion入ってるなら使えるはずではある
+wd-14-taggerとかで出力した後でとりあえずぶち込むだけだから難しくはないと思うけど
+最初だけは自分で.txtファイルに必要なタグを記入する手間はある
+
+0243今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 867b-0zjl)
+2024/01/15(月) 01:10:18.77ID:7XoC8yNM0
+前スレの432だけど、LoRA作るときのタグ入れ替える簡易的なpythonコード
+WebUIのExtentionsじゃないからgit cloneする場所だけ気を付けてな
+詳しくはreadme.txtと前スレ432を見ればわかるはず
+基本スレではROMってるから、なんかあったら言ってくれれば反応できると思う
+||=
 
 * ハードウェア関係
 ** HWMonitor

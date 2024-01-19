@@ -40,7 +40,7 @@ ComfyUI
  
 * SDXLのモデル
 SDXLのモデルにはBaseとRefinerの2種類あることに注意。Refinerは任意。
-[[Animagine XL 3.0 tips>https://seesaawiki.jp/nai_ch/d/Animage%20XL%203%2e0%20tips]]
+[[Animagine XL 3.0 tips>https://seesaawiki.jp/nai_ch/d/AnimagineXL3%2e0tips]]
 本スレでSDXLが普及する発端となったモデル
 * SDXLの学習
 [[ローカルの学習>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac]]
