@@ -211,6 +211,7 @@ Controlnetに追加された数々の機能の1つ、CNtileをMultiDiffusionと�
 
 - Web｜waifu2x - https://waifu2x.udp.jp/index.ja.html
 - Windows｜lltcggie/waifu2x-caffe: waifu2xのCaffe版 - https://github.com/lltcggie/waifu2x-caffe
+- Windows｜nagadomi/nunif: waifu2xの新モデルが使える - https://github.com/nagadomi/nunif/blob/master/waifu2x/docs/gui_ja.md
 深層畳み込みニューラルネットワークによる二次元画像のための超解像システム。
 いにしえ(2015年くらい)からあるアップスケーリングツール
 でも今でも比較的良い結果が得られて十分使える(個人的見解)

@@ -4088,3 +4088,83 @@ https://files.catbox.moe/iujr8a.jpg
 https://files.catbox.moe/a5uuwe.jpg
 ||=
 [[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lQDu87U3BL-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/lQDu87U3BL.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1QhqmYRO1R-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/1QhqmYRO1R.jpg]]
+
+***319スレ528 SDXL用LoRA27個
+https://fate.5ch.net/test/read.cgi/liveuranus/1705639223/528
+https://mega.nz/folder/6I8GmAIb#Tu41BGE7whvONP4CSvQekQ
+=|BOX|
+528: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 0214-6zsj)  2024/01/19(金) 23:13:58.90 ID:ubBqogq20 
+前回から一週間経ったし作成してそこそこの出来のワイ作各LoRAを置いたわ
+https://mega.nz/folder/6I8GmAIb#Tu41BGE7whvONP4CSvQekQ
+なんか27個あるで…全部200MBなのはワイの横着やすまんな
+https://ul.h3z.jp/m2Obsa8k.txt
+内容はこちら（フォルダ内のreadmeと同じファイル）
+触手とアナルと特殊エロシチュが多めやね
+||=
+
+***319スレ705 フィギュアっぽい質感にするLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1705639223/705
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/sdxl-testlora-pvcstyle_01.safetensors
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/sdxl-testlora-pvcstyle_02.safetensors
+=|BOX|
+705: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 79bb-0zjl)  2024/01/20(土) 10:05:24.94 ID:cS78/EnK0 
+>>258 のねんどろいどLoRA良いねぇ……
+
+私もフィギュアっぽい質感にするLoRA上げたよ、あくまで「っぽい」なんだけどね
+https://files.catbox.moe/58gwfc.jpg
+フィギュアとか3D系のプロンプト無しでコレなので効果強めかもしれん、まぁ適当に調整して使ってくれ
+01はanimagineXLv3用、02はanimaPencilXL用にって感じ、まぁanimaPencilXLに01使うとかでも別に問題はないけど
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/sdxl-testlora-pvcstyle_01.safetensors
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/sdxl-testlora-pvcstyle_02.safetensors
+…3Dとかフィギュアとか人形とかの立体感要る方向性のはanimaPencilXLの方が出しやすいよね
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TzSJyPRA5B-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/TzSJyPRA5B.jpg]]
+
+***319スレ855 カヌレのLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1705639223/855
+https://civitai.com/models/268830
+=|BOX|
+855: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 463d-ljEG)  2024/01/20(土) 14:55:18.48 ID:5hIY0WID0 
+https://civitai.com/models/268830
+カヌレのLoRAやで
+
+一応、ケーキ以外にも蜜ろうやシロップかけられると思うで
+https://majinai.art/i/sPik6sH.png
+https://majinai.art/i/U2NRoR-.png
+https://majinai.art/i/yc_a8OG.png
+https://majinai.art/i/rqFYLzv.png
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/g5bfUQWneF-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/g5bfUQWneF.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YJWXXAFOQR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YJWXXAFOQR.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GTG56slfXq-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/GTG56slfXq.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wnP_7SjbTw-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/wnP_7SjbTw.png]]
+
+***319スレ881 電マLoRAと手マンLoRAのXL版
+https://fate.5ch.net/test/read.cgi/liveuranus/1705639223/881
+https://mega.nz/folder/SdEF2RrR#xEc0OXqfh4TN21GEi1Zxcw
+=|BOX|
+881: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 497b-kv8s) sage 2024/01/20(土) 15:54:10.94 ID:+5TaeEGW0 
+電マLoRAと手マンLoRAのXL版上げたで
+SDXLフォルダの中に入ってるで
+https://mega.nz/folder/SdEF2RrR#xEc0OXqfh4TN21GEi1Zxcw
+https://files.catbox.moe/qj169t.png
+https://files.catbox.moe/c444to.png
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ucecuAFloJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ucecuAFloJ.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wQdE6A6uYA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/wQdE6A6uYA.png]]
+
+***319スレ942 胴長スライダーのXL版
+https://fate.5ch.net/test/read.cgi/liveuranus/1705639223/942
+https://civitai.com/models/112135/anti-long-torso-or-sdxlsd15-lora
+=|BOX|
+942: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 7253-s/Ai) sage 2024/01/20(土) 17:35:58.15 ID:uWpypNBq0 
+魔神ちゃんには不要な気もするんやけど胴長スライダーのXL版置いておいたわ
+https://files.catbox.moe/38jikr.jpg
+https://civitai.com/models/112135/anti-long-torso-or-sdxlsd15-lora
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/XhXYunUhB4-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/XhXYunUhB4.jpg]]
+
+***319スレ974 ehoumaki_sushiV01
+https://fate.5ch.net/test/read.cgi/liveuranus/1705639223/974
+https://mega.nz/file/XbpCHJRK#uNu-wIub7RPJG5GyP8NaFfVP9V92jsp55PShni0xHyM
+=|BOX|
+974: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 455b-l2AN)  2024/01/20(土) 18:59:32.25 ID:Qzdqp74h0 
+TESTで作ってみたけど打率わる・・・
+https://mega.nz/file/XbpCHJRK#uNu-wIub7RPJG5GyP8NaFfVP9V92jsp55PShni0xHyM
+||=
