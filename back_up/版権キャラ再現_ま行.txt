@@ -197,6 +197,12 @@
 |}
 
 **む
+***　ムーミン
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1boy, moomintroll, moomin, tail, no humans, creature, blue eyes, comic, animal ears, solo, full body,| |ムーミン|ムーミン|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/RfaP590c2i-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/RfaP590c2i.png]]|
+|}
+
 ***　無彩限のファントム・ワールド
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -272,6 +278,7 @@
 &aname(hanken_monogatari)
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|hachikuji mayoi, monogatari, loli, twintails, red eyes, hair ribbon, green ribbon, black hair, long hair, hairband, backpack, star, suspender skirt, bracelet, fang, white shirt, bag charm, black skirt, solo, cowboy shot,||化物語|八九寺真宵|V3使用|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dfoQKK2Uza-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dfoQKK2Uza.png]]|
 |official style, full-color,{{Hanekawa Tsubasa,bakemonogatari}},very aesthetic, best quality, intricate, overall detail, school uniform,standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, &#40;highly detailed),|3d,head_out_of_frame,multiple angle,blurry,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,text,error,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,missing fingers,bad hands,missing arms,|化物語|羽川翼|V3使用|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DUX872eF6g.png )]]|
 |official style, full-color,{{Senjougahara Hitagi,bakemonogatari}},very aesthetic, best quality, intricate, overall detail, school uniform,standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, &#40;highly detailed),|3d,head_out_of_frame,multiple angle,blurry,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,text,error,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,missing fingers,bad hands,missing arms,|化物語|戦場ヶ原ひたぎ|V3使用|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5yx0qXuMwp.png )]]|
 |solo, {{{{oshino shinobu}}}}, &#91;&#91;bakemonogatari&#93;&#93;, loli, child, long hair, yellow hair, yellow eyes, {{tareme}}, flat chest, smile, blush stickers, fang, white dress, cowboy shot,|ponytail,|化物語|忍野忍||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/A8GG0D9vVB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/A8GG0D9vVB.png]]|
@@ -283,4 +290,12 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |suu (monster musume), monster musume no iru nichijou, monster girl, ahoge, blue skin, green eyes, coat, green hair, sparkle, slime girl, long hair, blue slime, huge ahoge, tentacle hair, naked coat, smile, solo, cowboy shot, ||モンスター娘のいる日常|スー|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nnxha8avLp-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nnxha8avLp.png]]|
 |}
+
+***　もんむす・くえすと!
+&aname(hanken_monogatari)
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|alipheese fateburn xvi, mon-musu quest!, monster girl, lamia, very long hair, large breasts, yellow eyes, hair ornament, hair flower, pointy ears, tattoo, purple skin, black elbow gloves, crossed arms, solo, ||もんむす・くえすと!|アリスフィーズ・フェイタルベルン|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xSFh7x0LBW-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xSFh7x0LBW.png]]|
+|}
+
 

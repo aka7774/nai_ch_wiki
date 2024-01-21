@@ -4168,3 +4168,64 @@ https://mega.nz/file/XbpCHJRK#uNu-wIub7RPJG5GyP8NaFfVP9V92jsp55PShni0xHyM
 TESTで作ってみたけど打率わる・・・
 https://mega.nz/file/XbpCHJRK#uNu-wIub7RPJG5GyP8NaFfVP9V92jsp55PShni0xHyM
 ||=
+
+***320スレ31 デーモンコアLoRAのXL版
+https://fate.5ch.net/test/read.cgi/liveuranus/1705745253/31
+https://civitai.com/models/271262
+=|BOX|
+31: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 11bc-HXAs)  2024/01/20(土) 19:33:58.07 ID:8UX2bduc0 
+ねんどろいどの次はデーモンコアLoRAのXL版や
+教師画像が少なすぎて画風に悪影響があるけど許してくれ…
+https://civitai.com/models/271262
+
+https://files.catbox.moe/i2ol9q.jpg
+https://files.catbox.moe/gcoahl.jpg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yn60BAw0oU-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/yn60BAw0oU.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rE90ikFHXi-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/rE90ikFHXi.jpg]]
+
+***320スレ233 光沢感強化LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1705745253/233
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/sdxl-testlora-luster_03.safetensors
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/sdxl-testlora-luster_04.safetensors
+=|BOX|
+233: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ c757-EFyZ)  2024/01/21(日) 01:22:53.15 ID:Od/0V81q0 
+光沢感強化LoRAを2つ追加したよ
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/sdxl-testlora-luster_03.safetensors
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test2/sdxl-testlora-luster_04.safetensors
+これが：https://files.catbox.moe/v4wzou.jpg
+03：https://files.catbox.moe/xvjbby.jpg
+04：https://files.catbox.moe/buz05t.jpg
+マイナス適用も可：https://files.catbox.moe/6o3ctp.jpg
+でまぁ、朝に上げたフィギュア風LoRAとかとlusterを使うとな…こういうのが出せるんじゃよ
+animaPencilXL:https://files.catbox.moe/lzfx7m.jpg
+animagineXLv3:https://files.catbox.moe/rvwh3j.jpg
+あとlusterとかpvcもだけど、出力が崩れちゃうときはIN層切るとか調整して使ってくれな
+||=
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o0wKxP27NI-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/o0wKxP27NI.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/McCJsAj6yM-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/McCJsAj6yM.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KCYfd75Fp5-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/KCYfd75Fp5.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5XIHK9a0ss-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/5XIHK9a0ss.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VQ0NlGf8Wp-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/VQ0NlGf8Wp.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OXKJyjj8JS-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/OXKJyjj8JS.jpg]]
+
+***320スレ682 あばら消しのXL LoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1705745253/682
+https://civitai.com/models/110838?modelVersionId=307008
+=|BOX|
+682: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ df95-Okof) sage 2024/01/21(日) 18:37:05.32 ID:tkKlJps/0 
+あばら消しのXL LoRA置いておいたで ai-generatedって書く時しかいらんと思うけど
+
+筋肉フェチで腹筋は残したいけどアバラ目立つのイヤなワイみたいなヤツ用
+ぷにっとしたのがええ場合はLECOでmuscular消したほうがいいのはSD1.5と同じやと思うで
+https://civitai.com/models/110838?modelVersionId=307008
+https://files.catbox.moe/eci12s.jpg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FhbUk9_qtF-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/FhbUk9_qtF.jpg]]
+
+***320スレ780 脇チラlora XL版
+https://fate.5ch.net/test/read.cgi/liveuranus/1705745253/780
+https://civitai.com/models/272468
+=|BOX|
+780: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 7f72-5jDG) sage 2024/01/21(日) 20:49:36.19 ID:x6bnkVNB0 
+脇チラlora XL版上げたで
+https://civitai.com/models/272468
+ポーズを無理に弄ってない分破綻はしづらくなったけど胸チラしそうにないポーズだとbreast out状態になるんで注意やで
+あにまじん用のキャラloraなら問題なく使えるはず
+https://ul.h3z.jp/nAPpNvoo.jpeg https://ul.h3z.jp/u6QMzb9d.jpeg
+||=
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oD49nA6toE-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/oD49nA6toE.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/95JThvYdib-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/95JThvYdib.jpg]]
