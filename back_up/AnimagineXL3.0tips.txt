@@ -8,9 +8,11 @@ https://huggingface.co/cagliostrolab/animagine-xl-3.0-base
 *プロンプトの書き方
 今までと違う独特のプロンプトルールあり
 https://cagliostrolab.net/posts/animagine-xl-v3-release
+推奨だが必ずしも従う必要はない。
 
 *推奨事項
-CFG Scaleは5〜7、Euler Aで30ステップ未満。VAEは内蔵してるのか指定しなくても(1111だとNone)動く。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
+CFG Scaleは5〜7、Euler Aで30ステップ未満。
+VAEは内蔵してるのか指定しなくても(1111だとNone)動く。未指定ならNo-half VAEは不要。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
 解像度は1024x1024以上(画素数が1024x1024=1048576画素前後)を強く推奨。
 推奨ネガnsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
 worst quality, low qualityだけでもいいかも
@@ -34,7 +36,7 @@ worst quality, low qualityだけでもいいかも
 |768x1280|3:5|9:16(縦のワイドスクリーン)に近い|
 
 *SDXLどうやって使うの？
-webUI1111ならモデル落としていつもの場所に入れるだけ、fooocusやComfyUIも軽くて人気
+1111のWebUIならモデル落としていつもの場所に入れるだけ、FooocusやComfyUIも軽くて人気
 
 *プロンプトだけで出せるキャラ
 https://huggingface.co/spaces/Linaqruf/animagine-xl/blob/main/wildcard/character.txt
@@ -43,10 +45,11 @@ https://huggingface.co/spaces/Linaqruf/animagine-xl/blob/main/wildcard/character
 クォリティタグのmasterpieceやbest qualityを入れると露骨に絵が変わるからどれを使うか抜くか色々試してみよう
 
 *ノイズみたいな絵ばかり出る
-プロンプトの強度を少し上げただけで破綻するので強度指定はおすすめしない。
+プロンプトの強度を少し上げただけで破綻する場合があるので強度指定はおすすめしない。
 プロンプトの組み合わせでもまれに破綻する模様。
 
 *学習モデルが学習ミス（ソフトのバグ）により欠陥持ち
 稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
 トークン（タグ）プロンプトの並び順や組み合わせで発生するので調整すれば回避できる。
 ※hair等の部位プロンプトを近くに連続して羅列すると発生しやすいか？トークンの位置でも影響が強い。
+WebUIの設定のPad prompt/negative prompt to be same lengthをオフにするかトークン数を150以下にすると解消するかも。

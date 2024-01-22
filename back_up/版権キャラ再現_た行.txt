@@ -100,7 +100,6 @@
 ***　超時空要塞マクロス（その後の派生作品もここで）
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
 |official style, lynn minmay, choujikuu yousai macross, very aesthetic, best quality, intricate, overall detail, 1 girl, idol costume, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |超時空要塞マクロス|リン・ミンメイ|V3使用。キャラデザに忠実だが、絵柄がやや今風になる。|https://image01.seesaawiki.jp/n/h/nai_ch/Jp4beKyico.png|
 |official style, hayase misa, choujikuu yousai macross, very aesthetic, best quality, intricate, overall detail, 1 girl, green eyes, uniform, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |超時空要塞マクロス|早瀬未沙|V3使用。キャラデザに忠実。V3特有だと思うが眼の色を指定しないと閉じ目で出力される傾向がある。眼の色を指定しているのはそのため。|https://image01.seesaawiki.jp/n/h/nai_ch/sMxypZbC5l.png|
 |}
@@ -327,19 +326,9 @@
 |official style, game cg, sorceress(dragon's crown), dragon's crown, very aesthetic, best quality, intricate, overall detail, 1 girl, large breasts, magic, close to viewer, cowboy shot, white background,  (highly detailed)|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body,|ドラゴンズクラウン|ソーサレス|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/diNMKfYWMC.png|
 |}
 
-***　ドルフィンウェーブ
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
-|||||||
-|}
-
 ***　どん兵衛
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
-
-
-
 
