@@ -57,6 +57,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX 7800XT|16GB|Ryzen7 5700X||25.7||OS:ubuntu22.04LTS/version: v1.7.0/python: 3.10.12/torch: 2.2.0+rocm5.7/xformers: N/A/gradio: 3.41.2|
 |RTX 3060|12GB|Ryzen 5 5600G||37.2|--xformers|Windows10 / WebUI:1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 / gradio:3.41.2|
 |RTX 4070 Ti|12GB|Ryzen 5 5600G||15.3|--xformers|Windows10、NVIDIA DriverはOS標準のv536.23、WebUI:1.7.0(commit:cf2772fa..) / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 / gradio:3.41.2、cudnnを8.9.7.29に差し替えても変わらず。俺環ではWindows11はOSクリーンインストから構築し直しても20秒前半までしか出なかった。|
 |GT 1030|2GB|Ryzen 5 5600G||1278.0|--lowvram|1550.21 のときと同HW環境 v1.6.0 546.17WHQL 最適化が進んでVRAM使用量が減って若干速くなった。--medvramやオプション無しでも動くようになったが、メインメモリへのスワップでかえって遅い。|
@@ -295,6 +296,7 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4080|16GB|Ryzen 5 5600G||10.3|--xformers|version:v1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 /&#8192;gradio: 3.41.2 / Windows10|
 |RTX4090|24GB|Core i7-12700K||6.6|--xformers|TensorRT, Windows11|
 |RX 7900 XT|20GB|Ryzen 5 7600X|21.00|20.24|--opt-sdp-no-mem-attention --opt-sdp-attention|Lubuntu 22.04 LTS , ROCm 5.5.0 , Python 3.10.6 , Pytorch 2.0.1|
 |RTX 4090|24GB|Core i7-12700K|7|7.93|--opt-sdp-no-mem-attention|pytorch2.0, batch count 5, batch size 2,live previewなし, WSL2 ubuntu22.04|
@@ -313,6 +315,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4080|16GB|Ryzen 5 5600G||9.4|--xformers|version:v1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 /&#8192;gradio: 3.41.2 / Windows10|
 |RTX 3060|12GB|Ryzen 5500||36.2|--xformers --autolaunch --opt-channelslast --enable-insecure-extension-access|Ubuntu22.04.3LTS@WSL2@Windows11 PL70% / version:v1.6.0 / python:3.10.10 / torch:2.0.1+cu118 / xformers:0.0.23+b73c0f2.d20231011 / gradio: 3.41.2|
 |RTX4090|24GB|Core i7-12700K||6.1|--xformers|TensorRT Windows11|
 |RTX 4070 Ti|12GB|Core i5-9400F||16.5|--opt-sdp-no-mem-attention --opt-channelslast|version: 1.6.0 python: 3.10.6 torch: 2.0.1+cu118  xformers: N/A gradio: 3.41.2 checkpoint: 89d59c3dde|
@@ -349,6 +352,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4080|16GB|Ryzen 5 5600G||9.3|--xformers|version:v1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 /&#8192;gradio: 3.41.2 / Windows10|
 |RTX 3060|12GB|Ryzen 5 5600X||35.0|"--ui-config-file ../ui-config.json" "--ui-settings-file ../config.json" "--styles-file ../styles.csv" "--skip-torch-cuda-test" "--autolaunch" "--no-half-vae" "--xformers" "--opt-split-attention" "--opt-sub-quad-attention" "--opt-channelslast" "--upcast-sampling"|v1.5.1 @ WSL2|
 |RTX A4000|16GB|Ryzen7 3700X|23.16|22.64|--opt-sdp-no-mem-attention --opt-channelslast|torch: 2.0.0+cu118|
 |RTX 4090|24GB|Core i9-13900k||6.97|--xformers --no-half-vae|cudnn 8.8.0|
