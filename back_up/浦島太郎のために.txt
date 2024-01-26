@@ -21,6 +21,36 @@
 
 #contents
 
+*2024-01-19 Pony Diffusion V6 XLが話題になる
+https://civitai.com/models/257749/pony-diffusion-v6-xl
+スレがAnimagine XL 3.0の話題で持ちきりになる中、数日前にCivitaiにアップロードされていたモデル。
+かなり独特なクオリティタグとnegative promptの使用が必要で、上手くチューニングしないとバタ臭い絵が生成されるが、
+ハマった場合の質の高さにスレは盛り上がった。
+loraの学習モデルとしても優秀で、Animagineよりも特殊性癖への理解が強い(小並)
+クオリティタグ、negative promptはスレで共有された一例を以下に記すが、civitaiのサンプル等から各々探ってほしい。
+そして良いものがあればスレで共有してほしい。
+
+クオリティタグ一例
+=|BOX|
+0229今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a7b0-OBZN)
+2024/01/26(金) 11:50:33.13ID:HD6WR8TC0
+ponyちゃん先頭にこれいれとけばええやろ感がすごい
+score_9, score_8_up, score_7_up, BREAK source_anime, rating_explicit, best quality, masterpiece, uncensored, 1girl,
+||=
+
+negative prompt一例(姫騎士ニキ)
+
+=|BOX|
+0077今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 5f14-zQB7)
+2024/01/25(木) 22:47:04.32ID:qJvUoh9O0
+>>75
+キャラ設定用の奴を抜くと↓やね
+Ponyは背景弱いしdepth of fieldとかのネガは抜いて背景ボヤかせたほうがええかもなぁという気もしているわ
+censored, mosaic censoring, bar censor ,border, worst quality, low quality, simple background, white background, realistic, sketch ,muscle , normal quality, jpeg artifacts, depth of field, blurry, messy drawing, amateur drawing, lowres, bad anatomy, bad hands, text, error, missing fingers, fewer digits, extra digits,cropped , greyscale, monochrome, source_furry, source_pony, source_cartoon, comic ,source filmmaker,video ,3d
+||=
+
+
+
 *2024-01-11 Animagine XL 3.0が公開
 https://huggingface.co/cagliostrolab/animagine-xl-3.0
 https://cagliostrolab.net/posts/animagine-xl-v3-release/
