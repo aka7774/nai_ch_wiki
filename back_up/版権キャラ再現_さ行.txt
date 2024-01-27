@@ -277,6 +277,13 @@
 |}
 
 
+***　ステルラエクエス
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kodama izayoi, stellula eques, blue eyes, pink hair, hair ribbon, white ribbon, very long hair, twintails, elbow gloves, detached collar, armlet, pleated skirt, blue skirt, hair intakes, smile, solo, cowboy shot, game cg,||ステルラエクエス|児珠十六夜|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dr4LfULNk7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/dr4LfULNk7.png]]|
+|}
+
+
 ***　ストライクウィッチーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -359,6 +366,8 @@
 ***　セーラームーン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{{1girl is sailor mercury,mizuno ami, Sailor Moon}}},Inner thigh,{white sailor suit,blue sailor collar,mini skirt, small breasts, blue hair},||セーラームーン|セーラーマーキュリー|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/NyrpdWWfZn.png|
+|{{{1girl is sailor chibi moon,chibi usa, Sailor Moon}}},{loli,flat chest},parted bangs ,{short twintails},pink hair,pink eyes,red_ribbon,{white sailor suit,light pink sailor collar,mini skirt},||セーラームーン|セーラーちびムーン|super sailor chibi moonにすればスーパーになる。文章は削れるが少なくとも、loliは入れないと頭身は高くなる|https://image02.seesaawiki.jp/n/h/nai_ch/cpvxffBL4_.png|
 |official style, taxedo kamen, {{chiba mamoru}}, sailor moon, very aesthetic, best quality, 1 boy, top hat, white mask, white bowtie, cloak, tuxedo, holding red rose, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |セーラームーン|タキシード仮面|V3使用。思いのほか難しい。オペラ座の怪人みたいになったり安定しない。|https://image02.seesaawiki.jp/n/h/nai_ch/3_OFphWa9P.png|
 |princess serenity, sailor moon, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body,|セーラームーン|プリンセスセレニティ|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/aiIk8ijz4c.png|
 |queen serenity, sailor moon, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |セーラームーン|クィーンセレニティ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/vtA4R2hQH1.png|
@@ -371,9 +380,13 @@
 |{{1990s (style)}}, {{sailor venus, sailor moon}}, very aesthetic, best quality, realistic, intricate, overall detail, 1 cute girl, {{younger, slender}}, hair red-ribbon, long hair, uniform, standing, light smile, simple background, front view, cowboy shot, {facing the front, straight-on}, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, {sailor moon}, venus(goddess),|セーラームーン|セーラービーナス|V2使用。非常にセーラームーンが混ざりやすい。venus(goddess)は絵柄への影響排除（無いと写実的な描写になる）のためにUCに入れている。|https://image02.seesaawiki.jp/n/h/nai_ch/lxZeCMkovw.png|
 |1990s (style), {{sailor jupiter, sailor moon}}, very aesthetic, best quality, realistic, intricate, overall detail, 1 cute girl, {{younger, slender}}, ponytail hair, pink ribbon, uniform, standing, light smile, simple background, front view, cowboy shot, {facing the front, straight-on}, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, sailor moon,|セーラームーン|セーラージュピター|V2使用。セーラームーンが混ざりやすいのでUCに入れている。|https://image02.seesaawiki.jp/n/h/nai_ch/ychaZPRbD3.png|
 |1990s (style), {{sailor mars, sailor moon}}, very aesthetic, best quality, realistic, intricate, overall detail, 1 cute girl, {{younger, slender}}, uniform, standing, light smile, simple background, front view, cowboy shot, {facing the front, straight-on}, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, |セーラームーン|セーラーマーズ|V2使用。{{younger, slender}}, を付与しないと作中年齢より大人な感じになる。|https://image02.seesaawiki.jp/n/h/nai_ch/ADBthERmgg.png|
-|large oval eyes,Inner thigh,gold plaque,1girl,{{{indoor,brothel}}},{{{masterpiece}}},{{{high quality}}},{{{high detailed}}},{{{1girl is sailor mercury}}},{{{{{{13 years old}}}}}},{{{white sailor suit,blue sailor collar,mini skirt, small breasts, blue hair}}},||セーラームーン|セーラーマーキュリー|違和感は目ですが、改善点あれば変えてください|https://image01.seesaawiki.jp/n/h/nai_ch/jZZqCJDM0z.png|
-|{{{super sailor chibi moon}}},{{{{{sailor moon}}}}},{{{loli,5 years old,short body,flat chest}}},parted bangs ,{{{short twintails}}}, pink hair,big pink eyes,red_ribbon,{{{white sailor suit,light pink sailor collar,mini skirt}}},||セーラームーン|ちびうさ|名前だけだと別人になるため、補助が必要。比較的高い確率で月野うさぎが混ざる。|https://image02.seesaawiki.jp/n/h/nai_ch/0lJkLLqbic.png|
 |solo, {{{{tsukino usagi}}}}, &#91;&#91;&#91;&#91;sailor moon&#93;&#93;&#93;&#93;, blonde hair, very long twintails, double buns, blue eyes, sailor school uniform, sailor collar, brooch, crescent earrings, red heart choker, hairpin, forehead crescent, ||セーラームーン|月野うさぎ|公式絵をDeepDanbooruにかけて有効そうなのを上から順に並べてみた。順序を変えると再現率落ちる？|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/741Uvo3zW4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/741Uvo3zW4.png]]|
+|}
+
+***　セキレイ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|tsukiumi, sekirei, thighhighs, blonde hair, long hair, blue eyes, large breasts, hair intakes, wavy hair, choker, long sleeves, puffy sleeves, garter straps, solo, cowboy shot,||セキレイ|月海|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FHX7fLUvjY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FHX7fLUvjY.png]]|
 |}
 
 ***　ゼノギアス
@@ -500,6 +513,13 @@
 |masterpiece, best quality, Kitagawa Marin, medium breasts, contact lenses, colored contact lens, pink eyes, gyaru, gradient hair, yellow hair, very long hair, long eyelashes, nails, choker, piece sign, one side off shoulder | |着せ恋|喜多川 海夢| |[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qbQIzGHmQ6-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/qbQIzGHmQ6.png]]|
 |}
 
+***　その花びらにくちづけを
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kawamura reo, sono hanabira ni kuchizuke wo, black thighhighs, long hair, blonde hair, blue eyes, school uniform, white sailor collar, red dress, colo, cowboy shot, | |その花びらにくちづけを|川村玲緒|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_vTcS5_qWC-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_vTcS5_qWC.png]]|
+|sawaguchi mai, sono hanabira ni kuchizuke wo, black hair, medium hair, red eyes, school uniform, white sailor collar, red dress, solo, cowboy shot,| |その花びらにくちづけを|沢口麻衣|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HWn4G4lYRi-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HWn4G4lYRi.png]]|
+|}
+
 ***　そらのおとしもの
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -517,6 +537,9 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(通常Ver.)|V3使用。zombieと指定しなくても肌が青くなることはある。悪しからず。|https://image01.seesaawiki.jp/n/h/nai_ch/rKT9oVAXUb.png|
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
+
+
+
 
 
 
