@@ -79,6 +79,12 @@
 |official style, 2d cel anime, {{mizuhara chizuru}}, {{kanojo okarishimasu}}, very aesthetic, best quality, intricate, overall detail, 1 girl, sundress, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |彼女、お借りします|水原千鶴|V3使用。V2で出なかったキャラがあっさり再現される。|https://image02.seesaawiki.jp/n/h/nai_ch/yo9VCLIYc3.png|
 |}
 
+***　Kanon
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{1girl is tsukimiya ayu, kanon}},yellow coat, white turtleneck sweater,||Knon|月宮あゆ|V3版。服は指定なくても行けるが、水着などが混ざる。必要ならblue shortsなどもいれて|https://image01.seesaawiki.jp/n/h/nai_ch/xtsEv8xrEG.png|
+|}
+
 ***　神風怪盗ジャンヌ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -94,6 +100,7 @@
 ***　艦隊これくしょん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{1girl is z1 leberecht maass &#40;kancolle)},blue eyes,long sleeve sailor micro dress||艦隊これくしょん|z1 レーベレヒト・マース|V3版。服は指定しなくても出てくれるが、海などでは水着が優先するため、指定してある。以前は出なかった模様まで再現されている。|https://image01.seesaawiki.jp/n/h/nai_ch/eamTfvSrPF.png|
 |{hatsuharu &#40;kancolle)},{purple hair,long hair}, zettai ryouiki, purple eyes, {{{short sleeve,white sailor micro dress}}},{black long gloves} ,white clothes,||艦隊これくしょん|初春|V３版。zettai ryouikiを外すと黒ニーソは消える。short sleeveを外すとノースリーブになる。dressにしないと、スカートが出る。名前だけでも大体出るが、村雲が混ざる|https://image02.seesaawiki.jp/n/h/nai_ch/yRFCl2gdBa.png|
 |shigure &#40;kancolle), {{shigure kai san &#40;kancolle)}}, blue eyes, black hair, single braid, hair flaps, hair over shoulder, ahoge, medium breasts, slender, 16 years old, chest harness,   &#40;two-tone shirt, black shirt, white shirt, {sleeveless shirt} ) black pleated skirt, red necktie, black thighhighs, narrow thighs, , simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer,,{{{game cg}}},year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed,||艦隊これくしょん|時雨(改三)||https://image02.seesaawiki.jp/n/h/nai_ch/Q02PflVOLm.png|
 |{{kashima &#40;kancolle)}}, blue eyes, medium &#91;&#91;&#91;large]]] breasts, twintails, wavy grey hair,{official alternate costume}, lawson, blue vertical-striped shirt, name tag, black beret, black pleated skirt, black socks, ,simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer,,{{{game cg}}},year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed,"||艦隊これくしょん|鹿島_ローソン||https://image01.seesaawiki.jp/n/h/nai_ch/JLonZ34OER.png|
@@ -107,7 +114,6 @@
 |open mouth,seaside,1girl,{{{10years old,5heads high}}}, satsuki &#40;kancolle),black clothes, blond hair,{{{low twintails}}},thin and long twintails,black sailor dress,black sailor collar, white tie, small breasts, golden eyes||艦隊これくしょん|皐月|少なくとも髪の色とツインテールは指定必要。ツインテールは下側にならないことも多い。５頭身は効いている気がするレベルなので、いらなければ外してよし。|https://image02.seesaawiki.jp/n/h/nai_ch/ZsbDQHdNA2.png|
 |z3 max schultz &#40;kancolle),dark red short hair,sidelocks,blunt bangs,yellow eyes,tsurime,small breasts,loli,dark blue clothes,long sleeve sailor micro dress,tight clothes,jet black Plain socks,navy blue,slender,bottomless,jet black Plain socks,dark blue beret,slender||艦隊これくしょん|z3 マックス・シュルツ|服の模様は書き足すしかないと思う。|https://image02.seesaawiki.jp/n/h/nai_ch/rQCXkv96tF.png|
 |{{{{{{choukai &#40;kancolle)}}}}}},black hair, long hair, straight hair,blunt bangs,{{{darkred eyes}}}, glasses, {{{{emeraldgreen jacket}}}},{{white skir}}, large breasts,||艦隊これくしょん|鳥海|服装の再現はガチャ頼み。|https://image01.seesaawiki.jp/n/h/nai_ch/R3oTWLFrJL.png|
-|masterpiece,high quality,high detailed,{ z1 leberecht maass &#40;kancolle)}, silver short hair, light blue eyes,small breasts,loli,dark blue clothes,long sleeve sailor micro dress,tight clothes,jet black Plain socks,dark blue beret,||艦隊これくしょん|z1 レーベレヒト・マース|z1 leberecht maass (kancolle)だけでも出るが、別のキャラになる可能性が大きい。服はmicro dressかsailor shirtとbottomlessにしてやると出やすいが、ガチャ要素が高い。模様はまず出ないので、Edit imageで書き足して、生成しなおすのが確実。|https://image01.seesaawiki.jp/n/h/nai_ch/Kowu4XExH3.png|
 |{{{gangut &#40;kancolle)}}}, long hair, hair between eyes, orange eyes,  medium breasts, red dress shirts, short sleeves, {{{black skirt}}}, {{{tights}}}, hairpin,  &#91;&#91;smirk]],|{{{{{forehead, hairline}}}}}, {{{{{loli}}}}}, lipstick, bismarck, graf zeppelin, headgear, necktie, hairband|艦隊これくしょん|ガングート|現状はそれっぽい人が限界。コートや帽子を付けると、他の艦これキャラ（主にドイツ艦）に顔と服が吸われまくる。顔の傷は出ない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xtfYSt9bXM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xtfYSt9bXM.png]]|
 |hamakaze (kancolle), silver hair,blue eyes, short hair,hair over one eye,tsurime, hairclip,serafuku,pantyhose,yellow neckwear,white gloves,gray skirt,||艦隊これくしょん|浜風|hamakaze (kancolle)だけでも出る。~~hair over one eyeはキャラ再現と引き換えに右目を作画崩壊させる曲者(1枚目)。これをネガティブに入れると両目がしっかり描写されるが再現性は犠牲になる(2枚目)。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/z5oDTE83tq.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N2hz9OwSZu.png)|
 |{{{{kirishima &#40;kancolle)}}}},black hair,short hair, bob cut, black eyes,{{tareme}},green frame glasses, {{large breasts}},red japanese miko clothes, black skirt, pantyhose,||艦隊これくしょん|霧島||https://image01.seesaawiki.jp/n/h/nai_ch/NPfqLToo6d.png|
@@ -225,7 +231,7 @@
 ***　巨乳ファンタジー
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|{{{{shamsiel shahar}}}}, kyonyuu fantasy, wavy hair, demon horns, yellow eyes, demon girl, red hair, demon tail, demon wings, short hair, red hair, fang, huge breasts, antenna hair, navel, white thighhighs, low wings, garter straps, jewelry, lace-trimmed legwear, naughty face, detached sleeves, black gloves, slingshot bikini, smile, head tilt, solo, cowboy shot, game cg,||巨乳ファンタジー|シャムシェル|V3[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ygEqTsjXdf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ygEqTsjXdf.png]]|
+|{{{{shamsiel shahar}}}}, kyonyuu fantasy, wavy hair, demon horns, yellow eyes, demon girl, red hair, demon tail, demon wings, short hair, red hair, fang, huge breasts, antenna hair, navel, white thighhighs, low wings, garter straps, jewelry, lace-trimmed legwear, naughty face, detached sleeves, black gloves, slingshot bikini, smile, head tilt, solo, cowboy shot, game cg,||巨乳ファンタジー|シャムシェル|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ygEqTsjXdf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ygEqTsjXdf.png]]|
 |}
 
 ***　キラッとプリ☆チャン
@@ -472,8 +478,6 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |{{victorica de blois}}, gosick, {gothic lolita}, {{very long hair}}, solo,green eyes,black dress, black footwear, blonde hair, blunt bangs, bonnet, bowtie, cross-laced clothes, dress, frilled dress,{loli},sitting,||ＧＯＳＩＣＫ−ゴシック−|ヴィクトリカ・ド・ブロワ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/MUZyr8KPHw-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/MUZyr8KPHw.png]]|
-
-ヴィクトリカ・ド・ブロワ
 ***　ご注文はうさぎですか？
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -554,6 +558,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |style of  mitsumi misato, 2000s (style), game cg, takase mizuki, comic party, very aesthetic, best quality, intricate, overall detail, 1 girl, red hair, ponytail, blue eyes, yellow ribbon, serafuku, green pleated shirt, grey skirt, white thighhighs, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, bow tie,|こみっくパーティー|高瀬瑞希|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/nLw8710sYq.png|
 |}
+
 
 
 
