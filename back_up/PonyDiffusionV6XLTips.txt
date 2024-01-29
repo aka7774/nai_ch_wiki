@@ -1,0 +1,60 @@
+*PonyXLどこ？
+https://civitai.com/models/257749?modelVersionId=290640
+
+*プロンプトの書き方
+Animajinと同様に独特のプロンプトルールがある。詳細は上記civitaiを参照
+ケモナー御用達なのでかなり癖がある。
+
+日本人向けのアニメ絵を出すには以下majinaiのPony使用画像を参考にしてほしい。
+https://majinai.art/ja/index.php?model=67ab2fd8ec
+
+おそらく重要なのはポジにsource_anime,ネガにsource_pony, source_furry, source_cartoon,を入れること。
+また、効きの良い絵師タグを入れると安定する。絵師タグを入れないと絵柄のばらつきが激しい。
+
+公式の記載法
+
+=|BOX|
+score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up, just describe what you want, tag1, tag2
+||=
+
+スレで共有されたもの
+=|BOX|
+score_9, score_8_up, score_7_up, BREAK source_anime, rating_explicit, best quality, masterpiece, uncensored, 1girl,
+||=
+
+**negative prompt
+
+ケモいのやバタ臭い(洋風っぽい)のを目指さないならとりあえず入れとけ
+=|BOX|
+source_pony,source_furry,source_cartoon
+||=
+
+姫騎士ニキ
+=|BOX|
+censored, mosaic censoring, bar censor ,border, worst quality, low quality, simple background, white background, realistic, sketch ,muscle , normal quality, jpeg artifacts, depth of field, blurry, messy drawing, amateur drawing, lowres, bad anatomy, bad hands, text, error, missing fingers, fewer digits, extra digits,cropped , greyscale, monochrome, source_furry, source_pony, source_cartoon, comic ,source filmmaker,video ,3d
+||=
+
+上記を軽量化。とりあえずこの辺から始めてもいいかも
+=|BOX|
+low quality , bad anatomy, bad proportions, extra legs, deformed anatomy, messy color, deformed fingers, bad, distracted, hyperrealistic,source_furry, source_pony, source_cartoon
+||=
+
+3d, video, source filmmakerも入れるのもアリ。
+https://civitai.com/models/257749?dialog=commentThread&commentId=334380
+ネガのXY Plotによる比較もある。
+https://civitai.com/posts/1267427
+
+western artist,disney,marvelなどを入れるのも効果がある。
+
+*推奨事項
+Euler Aで25ステップ。
+VAEは内蔵してるので必要ない。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
+解像度は1024x1024以上(画素数が1024x1024=1048576画素前後)を強く推奨。
+
+*プロンプトだけで出せるキャラ、絵師タグ
+海外の有志が調べたこちらを参照
+https://rentry.org/ponyxl_loras_n_stuff
+
+* バグ
+AnimagineXL3.0と同様のバグがあるらしく、不明な条件でノイズ画像が出る。
+プロンプトのトークン数を少なくしたり書き方を工夫して調整すべし。

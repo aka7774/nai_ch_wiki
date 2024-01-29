@@ -203,6 +203,12 @@
 |ayanami rei||新世紀エヴァンゲリオン|綾波レイ|頭にパーツがついてくることが多い。|https://image01.seesaawiki.jp/n/h/nai_ch/DKIXvBRJY7.png|
 |}
 
+***　神羅万象
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|astaroth (shinrabanshou), demon tail, heart earrings, low wings, demon horns, demon girl, blue skin, black sclera, long hair, yellow eyes, large breasts, demon wings, blue hair, pointy ears, navel cutout, bridal gauntlets, detached collar, bracelet, choker, highleg, solo, cowboy shot, | |神羅万象|アスタロット|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/H6KTisdatS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/H6KTisdatS.png]]|
+|}
+
 ***　侵略!イカ娘
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -544,4 +550,5 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(通常Ver.)|V3使用。zombieと指定しなくても肌が青くなることはある。悪しからず。|https://image01.seesaawiki.jp/n/h/nai_ch/rKT9oVAXUb.png|
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
+
 

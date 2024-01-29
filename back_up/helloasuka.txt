@@ -57,6 +57,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4070 Ti SUPER|16G|13700KF||19.4|||
 |RX 7800XT|16GB|Ryzen7 5700X||25.7||OS:ubuntu22.04LTS/version: v1.7.0/python: 3.10.12/torch: 2.2.0+rocm5.7/xformers: N/A/gradio: 3.41.2|
 |RTX 3060|12GB|Ryzen 5 5600G||37.2|--xformers|Windows10 / WebUI:1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 / gradio:3.41.2|
 |RTX 4070 Ti|12GB|Ryzen 5 5600G||15.3|--xformers|Windows10、NVIDIA DriverはOS標準のv536.23、WebUI:1.7.0(commit:cf2772fa..) / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 / gradio:3.41.2、cudnnを8.9.7.29に差し替えても変わらず。俺環ではWindows11はOSクリーンインストから構築し直しても20秒前半までしか出なかった。|

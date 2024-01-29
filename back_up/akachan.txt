@@ -130,6 +130,11 @@ AOM3が出てる(未評価)
 - https://huggingface.co/nuigurumi/basil_mix
 - リアル系モデルの傑作。Almond/cinnamonとプロンプトが使いまわしやすいのがいいところ。
 
+** Animagine XL 3.0
+- https://huggingface.co/cagliostrolab/animagine-xl-3.0
+- SDXLベースで高品質
+現在本スレで人気なのはこれ。
+
 * 技術の使い分け
 
 ** 学習成果の使用(難しさ:★☆☆☆☆)
