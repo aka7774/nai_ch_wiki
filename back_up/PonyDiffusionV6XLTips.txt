@@ -44,8 +44,14 @@ https://civitai.com/models/257749?dialog=commentThread&commentId=334380
 ネガのXY Plotによる比較もある。
 https://civitai.com/posts/1267427
 
+バタ臭くなりそうな作品名、
 western artist,disney,marvelなどを入れるのも効果がある。
 
+以下は
+ポジ側に source_anime, score_9,
+ネガ側に source_cartoon, source_furry, source_pony
+を基本とし、バタ臭くなりそうな作品を追加してみたサンプル
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dnVmnrLPnt-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/dnVmnrLPnt.jpg]]
 *推奨事項
 Euler Aで25ステップ。
 VAEは内蔵してるので必要ない。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
@@ -55,6 +61,13 @@ VAEは内蔵してるので必要ない。SD1.5用のVAEを適用すると露骨
 海外の有志が調べたこちらを参照
 https://rentry.org/ponyxl_loras_n_stuff
 
+こちらのキャラリストは公式のものではないため学習されていないキャラも多く含まれているようだ。
 * バグ
 AnimagineXL3.0と同様のバグがあるらしく、不明な条件でノイズ画像が出る。
 プロンプトのトークン数を少なくしたり書き方を工夫して調整すべし。
+
+* Animagineとの連携方法
+Ponyはプロンプトからの構図を生み出しが良いが、Animagineの方が絵柄が好きと言うときに、AnimagineをRefinerとして使用する方法がある。
+WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可)を指定し数値を指定する。
+全体のステップのうち指定した数値%まではPonyで、それ以降はAnimagineで描画することになるので、Ponyの構図を生かしてAnimagineで仕上げという処理が可能。
+
