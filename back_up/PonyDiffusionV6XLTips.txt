@@ -38,7 +38,7 @@ censored, mosaic censoring, bar censor ,border, worst quality, low quality, simp
 =|BOX|
 low quality , bad anatomy, bad proportions, extra legs, deformed anatomy, messy color, deformed fingers, bad, distracted, hyperrealistic,source_furry, source_pony, source_cartoon
 ||=
-
+----
 3d, video, source filmmakerも入れるのもアリ。
 https://civitai.com/models/257749?dialog=commentThread&commentId=334380
 ネガのXY Plotによる比較もある。
@@ -52,11 +52,18 @@ western artist,disney,marvelなどを入れるのも効果がある。
 ネガ側に source_cartoon, source_furry, source_pony
 を基本とし、バタ臭くなりそうな作品を追加してみたサンプル
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dnVmnrLPnt-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/dnVmnrLPnt.jpg]]
+----
+ポジに score_9, score_8_up, score_7_up ネガに score_6, score_5
+ポジに score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up ネガに score_4, score_5, score_6
+このような書き方でクオリティが上がるとの報告もあるが、うまく調整しないと高確率でバタ臭くなるようだ。
+https://civitai.com/models/257749/pony-diffusion-v6-xl?modelVersionId=290640&dialog=commentThread&commentId=343166
 *推奨事項
-Euler Aで25ステップ。
+Euler aで25ステップ。
 VAEは内蔵してるので必要ない。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
 解像度は1024x1024以上(画素数が1024x1024=1048576画素前後)を強く推奨。
 
+サンプラーにEuler aの代わりにRestartを使うと人体の精度が上がるという報告がある。
+https://civitai.com/models/257749?modelVersionId=290640&dialog=commentThread&commentId=343921
 *プロンプトだけで出せるキャラ、絵師タグ
 海外の有志が調べたこちらを参照
 https://rentry.org/ponyxl_loras_n_stuff
@@ -70,4 +77,3 @@ AnimagineXL3.0と同様のバグがあるらしく、不明な条件でノイズ
 Ponyはプロンプトからの構図を生み出しが良いが、Animagineの方が絵柄が好きと言うときに、AnimagineをRefinerとして使用する方法がある。
 WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可)を指定し数値を指定する。
 全体のステップのうち指定した数値%まではPonyで、それ以降はAnimagineで描画することになるので、Ponyの構図を生かしてAnimagineで仕上げという処理が可能。
-
