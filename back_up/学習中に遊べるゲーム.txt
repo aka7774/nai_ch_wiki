@@ -1,0 +1,31 @@
+*概要
+実は学習中はほぼCUDAしか動いとらんからVRAMが余っとったらPCゲームが遊べるんや
+SDXLが増えてきて学習時間が伸びたおかげで暇持て余しとるニキもおるやろ（主にワイ）ってことで情報共有とか出来たらええなってページや
+幾つか挙げとくんで真似てどしどし追加してってや
+あ、&color(#ff0000){''VRAM使用量''}はマストやで。設定とかmodの有無で変わったりするからタスクマネージャーで見た大凡でええで
+編集出来んニキもコメントとか書いてくれたらタスカルで
+
+*おすすめゲーム
+~~
+// ここから
+|bgcolor(#ddddff):[[''Monster Sanctuary''>>https://store.steampowered.com/app/814370/Monster_Sanctuary/?l=japanese]]|bgcolor(#ddddff):ジャンル：''RPG''|bgcolor(#ddddff):VRAM使用量：''0.2GB''|
+|>|>|>|横スクロール2DRPG。モンスターを育てて戦わせるで！~~戦闘はコマンド式のポケモンやけどフィールドはアクション要素あるんで苦手な人は注意~~スキル選択の自由度が高いんでバフ特化型とかdotダメ特化とか自分好みに出来るのが楽しいで|
+~~
+//ここまでをコピペして使ってや。テーブル内は一行で書くこと。改行は~~や
+|bgcolor(#ddddff):[[''Darkest Dungeon''>>https://store.steampowered.com/app/262060/Darkest_Dungeon/?l=japanese]]|bgcolor(#ddddff):ジャンル：''RPG''|bgcolor(#ddddff):VRAM使用量：''1.5GB''|
+|>|>|>|ダークな雰囲気の横スクロール2DローグライクRPGや~~すぐ死ぬしめっちゃシビアやけどハマる人にハマる本格派や~~modでえっちにしたり出来るらしいで|
+~~
+|bgcolor(#ddddff):[[''ASTLIBRA Revision''>>https://store.steampowered.com/app/1718570/ASTLIBRA_Revision/?l=japanese]]|bgcolor(#ddddff):ジャンル：''アクションRPG''|bgcolor(#ddddff):VRAM使用量：''0.5GB''|
+|>|>|>|今までやった中で一番面白い横スクロール2DアクションRPGや~~ストーリーよしバランスよし~~武器防具も豊富で組み合わせでアクションが変わって飽きずに続けられるで|
+~~
+|bgcolor(#ddddff):[[''Vampire Survivors''>>https://store.steampowered.com/app/1794680/Vampire_Survivors/?l=japanese]]|bgcolor(#ddddff):ジャンル：''アクション''|bgcolor(#ddddff):VRAM使用量：''0.1GB''|
+|>|>|>|今更紹介せんでもええくらい有名2Dローグライトゲームやな~~ウジャウジャ迫ってくるモンスターから逃げて倒してパワーアップして死んだらまた一から逃げての繰り返しや~~なんでこんなシンプルなんがハマるんやろな|
+~~
+|bgcolor(#ddddff):[[''Noita''>>https://store.steampowered.com/app/881100/Noita/?l=japanese]]|bgcolor(#ddddff):ジャンル：''アクション''|bgcolor(#ddddff):VRAM使用量：''0.2GB''|
+|>|>|>|これまた有名な横スクロール2Dアクションローグライトゲームやな~~とにかく潜って敵を倒して死んだらまた潜っての繰り返しや~~魔法の杖を好きなようにカスタム出来て派手やし楽しいで。大抵自爆死するけどな！|
+~~
+|bgcolor(#ddddff):[[''Cookie Clicker''>>https://store.steampowered.com/app/1454400/Cookie_Clicker/?l=japanese]]|bgcolor(#ddddff):ジャンル：''クリッカー''|bgcolor(#ddddff):VRAM使用量：''0.2GB''|
+|>|>|>|かつて一世を風靡したクリッカーゲームの元祖やな~~ひたすらクッキーを増やすだけやけどやりこみ要素が恐ろしく奥深い~~ミニゲーム要素も豊富やで|
+~~
+|bgcolor(#ddddff):[[''Pizza Tower''>>https://store.steampowered.com/app/2231450/Pizza_Tower/]]|bgcolor(#ddddff):ジャンル：''アクション''|bgcolor(#ddddff):VRAM使用量：''0.2GB''|
+|>|>|>|ワリオとソニックをオマージュしたコミカルな2Dアクションや~~グラフィックもBGMも最高、遊んでるだけで気分が上がるで~~ただでさえ難しいのに最高ランクを狙うと凄まじい難易度や|
