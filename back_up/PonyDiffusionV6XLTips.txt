@@ -63,6 +63,7 @@ VAEは内蔵してるので必要ない。SD1.5用のVAEを適用すると露骨
 解像度は1024x1024以上(画素数が1024x1024=1048576画素前後)を強く推奨。
 
 サンプラーにEuler aの代わりにRestartを使うと人体の精度が上がるという報告がある。
+Restartはやや癖が強い。ガサガサした絵柄になりやすい感じ。
 https://civitai.com/models/257749?modelVersionId=290640&dialog=commentThread&commentId=343921
 *プロンプトだけで出せるキャラ、絵師タグ
 海外の有志が調べたこちらを参照
@@ -79,4 +80,5 @@ AnimagineXL3.0と同様のバグがあるらしく、不明な条件でノイズ
 Ponyはプロンプトからの構図を生み出しが良いが、Animagineの方が絵柄が好きと言うときに、AnimagineをRefinerとして使用する方法がある。
 WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可)を指定し数値を指定する。
 全体のステップのうち指定した数値%まではPonyで、それ以降はAnimagineで描画することになるので、Ponyの構図を生かしてAnimagineで仕上げという処理が可能。
+
 
