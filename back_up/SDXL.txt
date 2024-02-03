@@ -39,7 +39,7 @@ Stability.ai公式
 >~~0139今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df8e-Xueq)~~2024/01/13(土) 18:32:22.34ID:pvPKwx5u0~~(略)~~一時の恥で聞くわ…~~誰かComfyUIでfp8モード起動のやり方教えて下さい！&#128557;&#128166;~~ ~~0145今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f48-4jqT)~~2024/01/13(土) 18:38:58.17ID:+aLVvCTx0~~>>139~~python main.py --use-quad-cross-attention --fp8_e4m3fn-unet~~か~~python main.py --use-quad-cross-attention --fp8_e4m3fn-text-enc~~　--use-quad-cross-attentionはなくてもおけ~~　loraの効きが悪くなるのが嫌なら--force_fp16 
  
 * SDXLのモデル
-SDXLのモデルにはBaseとRefinerの2種類あることに注意。Refinerは任意。
+SDXLのモデルにはBaseとRefinerの2種類あることに注意。Refinerは任意で基本的に不要。
 [[Animagine XL 3.0 tips>https://seesaawiki.jp/nai_ch/d/AnimagineXL3%2e0tips]]
 本スレでSDXLが普及する発端となったモデル
 
