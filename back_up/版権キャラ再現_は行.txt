@@ -79,11 +79,6 @@
 
 ***　化物語
 →[[物語シリーズ>版権キャラ再現/ま行#hanken_monogatari]]
-***　はたらく細胞
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|{{{platelet}}}, {{{hataraku saibou, hataraku kessyoubanchan}}}, &#40;flat chest, infant, loli), &#40;smile), &#40;light blue short sleeves shorts, baggy clothes, one shoulder slip), &#40;short pants, white cap, boots), &#40;brown hair, very long hair, brown eyes), {masterpiece, best quality, awesome detailed}||はたらく細胞|血小板ちゃん|旗は断念|https://image01.seesaawiki.jp/n/h/nai_ch/Jibol8XQHq.png|
-|}
 
 ***　パズル＆ドラゴンズ
 {| class="sort edit nanj_prompt_table"
@@ -94,6 +89,12 @@
 |{{karin(puzzle & dragons)}}, 1girl, {{{{ai-generated}}}}, blue eyes, black hair, white dress, china dress, dragon horns, dragon tail, long hair,  short sleeves, head fins, blue footwear, blue thighhighs, gauntlets, ||パズドラ|カリン|V3使用。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dcByIbu0EZ.png)|
 |}
 
+***　はたらく細胞
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{{platelet}}}, {{{hataraku saibou, hataraku kessyoubanchan}}}, &#40;flat chest, infant, loli), &#40;smile), &#40;light blue short sleeves shorts, baggy clothes, one shoulder slip), &#40;short pants, white cap, boots), &#40;brown hair, very long hair, brown eyes), {masterpiece, best quality, awesome detailed}||はたらく細胞|血小板ちゃん|旗は断念|https://image01.seesaawiki.jp/n/h/nai_ch/Jibol8XQHq.png|
+|}
+
 ***　はたらく魔王さま!
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -102,6 +103,14 @@
 |official style, 2d cel anime, {{sasaki chiho}}, {{hataraku maou-sama!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, twin tails, fast food uniform, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, holding fast-food,|はたらく魔王さま!|佐々木千穂（マグロナルド制服）|V3使用。マグロナルドの制服も再現されるが、制服を指定するとつまみ食いしてしまう。UCにholding fast-foodを入れればそうならない。|https://image01.seesaawiki.jp/n/h/nai_ch/ZljWuF58dg.png|
 |official style, 2d cel anime, {{emilia justina}}, {{hataraku maou-sama!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, silver hair, long hair, braid, ahoge, red eyes, armor, skirt, bike shorts, holding sword, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |はたらく魔王さま!|エミリア・ユスティーナ|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/XqMEKv2Dr9.png|
 |official style, 2d cel anime, {{yusa emi}}, {{hataraku maou-sama!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, office lady, red hair, yellow eyes, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |はたらく魔王さま!|遊佐恵美|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/XCtu7sJAEk.png|
+|}
+
+***　ハッカドール
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|hacka doll 3, otoko no ko, long hair, blue hair, purple eyes, wrist cuffs, solo, cowboy shot,|  |ハッカドール|ハッカドール3号|V3。学習元の影響なのか、バニースーツ、メイド服、ビキニが出やすく、公式の衣装が出にくい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9ve5Yj8_A8-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/9ve5Yj8_A8.png]]|
+|hacka doll 2, pink hair, pink eyes, long hair, hair ornament, elbow gloves, thigh boots, smile, solo, cowboy shot, ||ハッカドール|ハッカドール2号|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6mx2kaTnBB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6mx2kaTnBB.png]]|
+|hacka doll 1, blonde hair, twintails, green eyes, medium hair, hair ornament, elbow gloves, thigh boots, light smile, open mouth, solo, cowboy shot, ||ハッカドール|ハッカドール1号|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/X_KXEifxNm-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/X_KXEifxNm.png]]|
 |}
 
 ***　バトルアスリーテス大運動会
@@ -303,6 +312,12 @@
 |2d cel anime, {{nadia la arwall, fushigi no umi no nadia}}, very aesthetic, best quality, intricate, overall detail, nsfw, 1 girl, dark skin, purple hair, green eyes, orange vest, white tube top bra midriff, orange pelvic curtain, bare foots, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, pants,|ふしぎの海のナディア|ナディア・ラ・アルウォール（V2での出力）|肌や髪色などを指定すると一気に似てくる。|https://image02.seesaawiki.jp/n/h/nai_ch/1k8sx3Vs09.png|
 |{{nadia_la_arwall}},fushigi_no_umi_no_nadia,1girl,solo,light dark skin,{{dark indigo hair bob_cut}}:1.2,&#40;black eyes):&#40;green eyes):0.7,neck_ring,necklace,red pelvic_curtain,pendant,white cropped_vest,cross-laced_sandals, hair_ornament,hairclip,hoop_earrings,jewelry,kneeling,red loincloth,open mouth,&#40;Yoshiyuki Sadamoto):1,100-layer,masterpiece,highest,best,amazing,great,detail,stylish,illustration|blond hair||ナディア・ラ・アルウォール||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/KBY0e86kss.png)|
 |nadia_la_arwall,fushigi_no_umi_no_nadia,1girl,solo,light dark skin,++&#40;dark indigo hair bob_cut:1.2)++,++&#40;black eyes):&#40;dark green eyes):0.7++,100-layer,masterpiece,highest,best,amazing,great,detail,stylish,illustration, neck_ring,necklace,red pelvic_curtain,pendant,white cropped_vest,cross-laced_sandals, hair_ornament,hairclip,hoop_earrings,jewelry,kneeling,red loincloth,open mouth,&#40;death note:0.2),&#40;yurucamp:0.9),&#40;yuruyur:1),&#40;gochuumon wa usagi desu ka?:0.9),&#40;Yoshiyuki Sadamoto:1)100-layer,masterpiece,highest,best,amazing,great,detail,stylish,illustration,|blond hair||ナディア・ラ・アルウォール||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/a_JEnZs4bd.png)|
+|}
+
+***　不思議の国のアリス
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|alice (alice in wonderland), blonde hair, dress, solo, cowboy shot, ||不思議の国のアリス|アリス|V3。絵師がよくやる他作品キャラのアリス化にも（＝服飾プロンプトとしても）使える。2枚目の例は九重りん|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/InBiMFEq0i-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/InBiMFEq0i.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2aHQAnELy4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2aHQAnELy4.png]]|
 |}
 
 ***　ふしぎ星の☆ふたご姫
@@ -589,6 +604,9 @@
 |{{{cat ears, fox tail, yellow eyes, blue hairs,loli}}}, large breasts,blunt bangs+bob cut,sharp eyes,slanted eyes,slit pupils,{{{school cap,black capelet,long jacket,black skirt, Sailor uniform,katana}}}, angry||ボンバーガール|アサギ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4IqF5g_LW4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4IqF5g_LW4.png]]|
 |beautiful detailed eye, from behind, 1girl, {{{{{{{{{{ecstacy climax eyes}}}}}}}}}}, naughty face, evil {{{small breasts}}}, {{{{short stature}}}}, absurdly long hair, {{{large amount of hair}}}, white hair, silver twintails, {{{red}}} cheerleader costume, bikini, {{{{{{{{have cheer pompom}}}}}}}}, hands on hips, hands on knee, skin fang, small demon horn, {{{{{large demon wing}}}}}, demon tail, red eyes, {bent over}||ボンバーガール|グリムアロエ（サキュバスチアコス）|恍惚としたメスガキ顔が出るか、大きいツインテールが出るかはほぼガチャ|https://image01.seesaawiki.jp/n/h/nai_ch/OiluV6GQHN.png|
 |}
+
+
+
 
 
 

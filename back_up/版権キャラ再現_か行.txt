@@ -16,6 +16,7 @@
 ***　ガールズ＆パンツァー
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{{1girl is sono midoriko,ooarai school uniform,girls und panzer}}}, {{{{black hair,blunt bangs+bob cut}}}},small breasts, ,indoors,school, school uniform,green skirt,||ガールズ＆パンツァー|園みどり子（そど子）||https://image02.seesaawiki.jp/n/h/nai_ch/GIimDtNKyc.png|
 |katyusha_&#40;girls_und_panzer),{girls und panzer},blonde hair, short hair, blue eyes,flat chest,little, ooarai school uniform,sleeves_past_wrists,||ガールズ＆パンツァー|カチューシャ||https://image02.seesaawiki.jp/n/h/nai_ch/JuzRFtT5Ef.png|
 |akiyama yukari,1girl,solo,{girls und panzer},ooarai school uniform,green skirt, black neckerchief,brown eyes,tareme,brown hair,short hair,small breasts,||ガールズ＆パンツァー|秋山優花里||https://image01.seesaawiki.jp/n/h/nai_ch/PpMt47dfJ7.png|
 |{{nishizumi shiho}},blunt bangs,dark brown hair,brown eyes,long hair,large breasts,half-closed eyes,annoyed,naked towel||ガールズ＆パンツァー|西住 しほ||https://image01.seesaawiki.jp/n/h/nai_ch/55e6d4568a825206.png|
@@ -122,7 +123,6 @@
 |hamakaze (kancolle), silver hair,blue eyes, short hair,hair over one eye,tsurime, hairclip,serafuku,pantyhose,yellow neckwear,white gloves,gray skirt,||艦隊これくしょん|浜風|hamakaze (kancolle)だけでも出る。~~hair over one eyeはキャラ再現と引き換えに右目を作画崩壊させる曲者(1枚目)。これをネガティブに入れると両目がしっかり描写されるが再現性は犠牲になる(2枚目)。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/z5oDTE83tq.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N2hz9OwSZu.png)|
 |{{{{kirishima &#40;kancolle)}}}},black hair,short hair, bob cut, black eyes,{{tareme}},green frame glasses, {{large breasts}},red japanese miko clothes, black skirt, pantyhose,||艦隊これくしょん|霧島||https://image01.seesaawiki.jp/n/h/nai_ch/NPfqLToo6d.png|
 |ooyodo&#40;kancolle),||艦隊これくしょん|大淀|名前のみで再現可能|https://image02.seesaawiki.jp/n/h/nai_ch/8x9zjV4o8x.png|
-|{{{masterpiece}}},{{{high quality}}},{{{high detailed}}},{{{ hatsuharu &#40;kancolle)}}},{{ purple short sthick eyebrows}},{{{small breasts}}}, slender,{{loli}}, tsurime,{{{parted bangs}}}, hair pulled back,very long hair,{{ high ponytail}},{{{{{{hair up}}}}}}, {{purple hair}}, beautiful detailed hair, small breasts, zettai ryouiki, purple eyes, {{{white sailor micro dress}}}, {{jet black plain thighhighs}}, {{jet black plain footwear}}, {skindentation},{jet black long gloves} ,white Clothes,||艦隊これくしょん|初春|名前だけだと、別人になるため、髪の色や眉毛を設定するとそれらしくなる|https://image02.seesaawiki.jp/n/h/nai_ch/njIiyq275T.png|
 |solo, {{{{hibiki (kancolle)}}}}, loli, child, long hair, silver hair, dark blue eyes, tsurime, expressionless, flat chest, school uniform, cowboy shot, beret,||艦隊これくしょん|響|学習データセットには十分な数が含まれているので、あまりキャラ名は強調しなくてもいいかもしれない|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5odedD0Bk3-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5odedD0Bk3.png]]|
 |masterpiece,high quality,high detailed,ikazuchi &#40;kancolle),strong smile,skin fang,loli, brown hair, flat chest, school uniform, miniskirt|less than &#40;surrealism:30.0),lowres, bad anatomy, five fingers,bad hands, text, error, missing fingers, too many fingers, missing arms, missing legs, more than two legs, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name|艦隊これくしょん|雷|strong smile,skin fangを入れることにより、より雷らしさを出せます。これがないと困惑顔になりがちになってしまいます|https://image01.seesaawiki.jp/n/h/nai_ch/p3Jh2ew_R6.jpg|
 |{{{{ro-500 &#40;kancolle)}}}}, school swimsuit,,{{{{{{{dark_skin}}}}},small breasts,long hair,{{{sailor_suit}}},sakura hair ornament,school swimsuit tan,darkblue eyes, platinum blonde hair,|white skin,pure skin|艦隊これくしょん|呂500||https://image01.seesaawiki.jp/n/h/nai_ch/xYPEh3NCw3.png|
@@ -229,6 +229,7 @@
 ***　ギャラクシーエンジェル
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|vanilla H, galaxy angel, loli, green hair, long hair, red eyes, ponytail, {{green}} frill,white military uniform, white pantyhose,puffy sleeves||ギャラクシーエンジェル|ヴァニラ・H|フリルのgreenは強調しないと高確率で青くなる。アニメ版の人形（ノーマッド）はデフォルトでは出ないが、たまに色違いの人形が出る。|https://image01.seesaawiki.jp/n/h/nai_ch/NejmiEPt7T.png|
 |mint blancmanche, galaxy angel, loli, blue hair, animal ears, short hair, brown eyes, ahoge, black thighhighs, white gloves, short dress, military uniform, open clothes, puffy sleeves, neck ribbon, solo, cowboy shot,||ギャラクシーエンジェル|ミント・ブラマンシュ|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DIN1OHntYK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/DIN1OHntYK.png]]|
 |official style, 2d cel anime, {{milfeulle sakuraba}}, {{galaxy angel}}, very aesthetic, best quality, intricate, overall detail, 1 girl, pink hair, long hair, blue eyes, white hair flower, pink pencil skirt, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ギャラクシーエンジェル|ミルフィーユ・桜葉|V2使用。うろ覚えで描いている程度には似る。|https://image01.seesaawiki.jp/n/h/nai_ch/lYq7LPMp6Z.png|
 |}
@@ -571,12 +572,3 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |style of  mitsumi misato, 2000s (style), game cg, takase mizuki, comic party, very aesthetic, best quality, intricate, overall detail, 1 girl, red hair, ponytail, blue eyes, yellow ribbon, serafuku, green pleated shirt, grey skirt, white thighhighs, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, bow tie,|こみっくパーティー|高瀬瑞希|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/nLw8710sYq.png|
 |}
-
-
-
-
-
-
-
-
-
