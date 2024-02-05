@@ -46,6 +46,13 @@ SDXLのモデルにはBaseとRefinerの2種類あることに注意。Refinerは
 [[スレ民共有モデル>https://seesaawiki.jp/nai_ch/d/%a5%b9%a5%ec%cc%b1%b6%a6%cd%ad%a5%e2%a5%c7%a5%eb]]
 こちらも参照
 
+* SDXLのVAE
+SD1.x/2.xとの互換性はないため注意
+
+StabilityAI(SDXL base)のVAEはfp16ではNaN演算が発生して動かないため、No-Half VAEの有効化必須
+それを修正したものがあるのでそちらの使用をおすすめする
+https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
+
 * SDXLの学習
 [[ローカルの学習>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac]]
 ※SDXL学習特有の問題点については編集時点で本スレで試行錯誤中
