@@ -1256,7 +1256,7 @@ tags: [script]
 --prompt "プロンプトB" --negative_prompt "ネガティブプロンプトB" --outpath_samples "outputs/txt2img-images/B" --batch_size 2 --n_iter 2 --sampler_name "Euler" --cfg_scale 10 --steps 30 --seed 200000000
 ||=
 -- 指定可能な要素
---- --sd_model: None (ドキュメントに記載はあるが、Script内に処理が実装されておらず使用できない)
+--- --sd_model: model (get_closet_checkpoint_matchで検索するための文字列、モデル名の一部分など)
 --- --outpath_samples: string
 --- --outpath_grids: string
 --- --prompt_for_display: string (本体側が使用していない変数のため指定する意味が無い)

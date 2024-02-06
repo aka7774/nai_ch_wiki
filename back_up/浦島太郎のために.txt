@@ -21,6 +21,51 @@
 
 #contents
 
+*2024-02-06 stable-diffusion-webui-forgeリリース
+ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた
+https://github.com/lllyasviel/stable-diffusion-webui-forge
+低VRAM環境での高速化やOOMが見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照
+
+Githubより
+=|BOX|
+オリジナルのWebUI（1024pxでのSDXL推論）と比較すると、以下のようなスピードアップが期待できます：
+  
+8GB vramのような一般的なGPUを使用する場合、推論速度（it/s）が約30~45%向上し、GPUメモリピーク（タスクマネージャ）が約700MBから1.3GBに減少し、最大拡散解像度（OOMしない）が約2倍から3倍に増加し、最大拡散バッチサイズ（OOMしない）が約4倍から6倍に増加します。
+  
+6GB vramのような強力でないGPUを使用する場合、推論速度(it/s)は約60~75%向上し、GPUメモリピーク(タスクマネージャ)は約800MBから1.5GBに減少し、最大拡散解像度(OOMしない)は約3倍、最大拡散バッチサイズ(OOMしない)は約4倍に増加します。
+  
+24GBのvramを持つ4090のような強力なGPUを使用する場合、推論速度（it/s）が約3〜6%高速化し、GPUメモリピーク（タスクマネージャ）が約1GBから1.4GBに低下し、最大拡散解像度（OOMしない）が約1.6倍になり、最大拡散バッチサイズ（OOMしない）が約2倍になります。
+  
+SDXLにControlNetを使用する場合、ControlNetの最大カウント数（OOMしない）は約2倍になり、SDXL+ControlNetの速度は約30〜45%速くなります。
+||=
+
+NVAスレのみなさまの喜びの声
+=|BOX|
+なんJNVA部★328
+ https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/994
+ 994: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ b73c-jSnV) sage 2024/02/06(火) 13:01:10.84 ID:73PRlTFt0 
+ A1111の方は最新やなく1.6.0やがForgeと比較したで
+ 環境は5900X, RTS4070tis (PL70%)
+ 魔人の1024x1024 step30を2倍にhiresした結果や
+ A1111：https://litter.catbox.moe/xmggsd.png
+ Forge：https://litter.catbox.moe/sozkxc.png
+ 
+ 使用メモリ量が4GB以上削減されとる上に速度も30秒以上改善されとる
+ hiresも速くてこれはすごいわ
+ 動かん拡張があるらしいのがネックやが、正直適当にポン出しするならComfyUIよりこっちの方がええな
+ https://litter.catbox.moe/nt6n0p.jpg
+
+なんJNVA部★329 
+ 116: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ d7d4-KLri) sage 2024/02/06(火) 15:08:10.66 ID:+EIplyW30 
+ 4080 VRAM16GBでforgeお試し
+ SDXL 1024*1536からの2倍hiresで2048x3072行けて感動した.
+ ただhiresなしだとそこまで体感変わらないのと、hiresありでも12GBくらいしかVRAM使ってないのでそこは勿体ないかな. たぶん12GB勢でも2倍行ける
+ lora-block-weightはエラー出ないけど効いてないみたいだわ
+
+ 132: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 9f2c-by7P) sage 2024/02/06(火) 15:29:23.02 ID:4ViKf5KT0 
+ 3060ti8Gでも832*1216のhires*2が2分でいけるね
+ 革命ですわ
+||=
 *2024-01-19 Pony Diffusion V6 XLが話題になる
 https://civitai.com/models/257749/pony-diffusion-v6-xl
 スレがAnimagine XL 3.0の話題で持ちきりになる中、数日前にCivitaiにアップロードされていたモデル。

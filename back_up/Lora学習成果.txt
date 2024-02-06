@@ -4471,8 +4471,9 @@ https://files.catbox.moe/f6pvwr.jpg
 https://files.catbox.moe/183rh2.jpg
 ||=
 
-***328スレ30 セクシーブラlora
+***328スレ30 セクシーブラ
 https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/30
+https://civitai.com/models/291749
 =|BOX|
 30: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ ff72-7OSJ) sage 2024/02/04(日) 15:57:24.91 ID:Eal6FwVG0 
 久々サンイチ
@@ -4480,4 +4481,141 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/30
 あにまじん以外は多分効果ないから注意やで
 https://civitai.com/models/291749
 https://ul.h3z.jp/BNtiGW2b.jpeg https://ul.h3z.jp/SQK4g6h5.jpeg https://ul.h3z.jp/4qQioqqk.jpeg
+||=
+
+***328スレ130 FXで有り金全部溶かした人
+https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/130
+https://civitai.com/models/291950
+=|BOX|
+130: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 577e-syIJ)  2024/02/04(日) 19:50:48.51 ID:15msUIb10 
+需要は謎やがAnimagine向けにFXで有り金全部溶かした人の顔のLoRA作ったで
+https://civitai.com/models/291950
+
+https://files.catbox.moe/vw4fig.jpg
+https://files.catbox.moe/n0g8ic.jpg
+||=
+
+***328スレ181 P3pose
+https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/181
+https://huggingface.co/pomu-zoo/lora/tree/main
+=|BOX|
+181: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 1f51-NSYV) sage 2024/02/04(日) 21:22:21.19 ID:Rnl2qa+u0 
+dim=1でも一応動くみたいやからP3pose_XL lora
+CIVITAIだとまた消されるやろから&#129303;に置いておいたで
+トリガー:gun_to_head 追加でholding_gun,hand_gun,hand_upあたり入れてもろて
+https://files.catbox.moe/jmu3vk.webp
+https://huggingface.co/pomu-zoo/lora/tree/main
+||=
+
+***328スレ194 キャラクター抽象化
+https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/194
+https://huggingface.co/MayonakaManic/LoRA/tree/main/LoRA/CharacterAbstractorXL
+=|BOX|
+194: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 17c5-jSnV)  2024/02/04(日) 21:54:30.15 ID:8Sq0wKEl0 
+いまさらな感じになってしもたけど、昨日のキャラクター抽象化LoRAあげてみたで
+https://huggingface.co/MayonakaManic/LoRA/tree/main/LoRA/CharacterAbstractorXL
+Rev1の方が昨日の効果強すぎ版で、背景まで大きな影響受けるタイプや。非推奨や
+Rev2は背景がつぶれないように作り直したバージョンで推奨や。ちょっと効果弱めでプロンプトとの相性問題も強めやけど……
+どっちもファイルサイズがアレやけど、縮小したらうまく動かんかったので許してほしい
+https://i.imgur.com/TM1QA17.png https://i.imgur.com/P0GIn1D.png
+
+マイナス適用やとこんな感じで描き込み量が上がる感じや
+https://i.imgur.com/rWCkBN5.png https://i.imgur.com/52SAZIA.png
+
+シルエット化効果も意外と高くて、backlightingと組み合わせがええ感じなのは嬉しい発見やったわ
+https://i.imgur.com/baycB1p.png https://i.imgur.com/5kfniPc.png
+||=
+
+***328スレ291 目隠しLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/291
+https://civitai.com/models/292219
+=|BOX|
+291: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ b77b-VoFb) sage 2024/02/05(月) 00:44:53.28 ID:ouf0C1bN0 
+前スレでリクエスト頂いてた目隠しLoRA CIVITAIに上げたで
+https://civitai.com/models/292219
+通常の使い方は前スレに貼ったけど一応エロも試したが問題無しや
+https://ul.h3z.jp/lzYxSi3j.png
+https://ul.h3z.jp/aPiGDBiA.png
+
+勉強の為にも色々作ってみたいから引き続きAnimagineでプロンプトだけだと安定して出せない
+非エロ系のシチュエーションLoRA募集中やで
+||=
+
+***328スレ393 ロリポップLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/393
+https://civitai.com/models/292798/
+=|BOX|
+393: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ b77b-VoFb) sage 2024/02/05(月) 08:05:18.81 ID:ouf0C1bN0 
+>>304
+ロリポップLoRA出来たで
+https://civitai.com/models/292798/
+https://i.imgur.com/VM0uyOe.png
+https://i.imgur.com/nJeWDnQ.png
+
+プロンプトだけでも元々出なくはないんやけどガチャ必要なのと
+真円に近くないグニョグニョした円になるから LoRA使うと確度上がる感じやね
+重みは0.6くらいで十分やわ
+
+引き続きAnimagineでプロンプトだけだと安定して出せない
+非エロ系のシチュエーションLoRA募集中やで
+||=
+
+***328スレ678 見せられないよ！
+https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/678
+https://civitai.com/models/293531
+=|BOX|
+678: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 576c-syIJ)  2024/02/05(月) 21:55:47.68 ID:38qfj2Y30 
+Animagine系モデル向けに見せられないよ！のLoRAができた
+文字はさすがに再現できんが…
+https://civitai.com/models/293531
+
+https://files.catbox.moe/rbrib7.jpg
+https://files.catbox.moe/61mxdf.jpg
+https://files.catbox.moe/mzcp46.jpg
+||=
+
+***328スレ706 Animagineで出せるキャラを安定させるLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/706
+https://civitai.com/models/292407?modelVersionId=328684
+=|BOX|
+706: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 375a-JT+5)  2024/02/05(月) 22:52:11.60 ID:aaONNGFn0 
+Animagineで出せるキャラを安定させるLoRA作ったから貼っとくわ
+具体的には消えがちなアクセサリーとかプロンプトで再現しづらいものが出やすくなる効果がある
+https://civitai.com/models/292407?modelVersionId=328684
+||=
+
+***328スレ835 線香花火
+https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/835
+https://civitai.com/models/293828
+=|BOX|
+835: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ b77b-VoFb) sage 2024/02/06(火) 02:54:59.03 ID:CmdSwejy0 
+リクエスト貰ってた線香花火(関東地方)LoRAや
+https://civitai.com/models/293828
+
+上にこよりができるかは半々くらいのガチャやね
+多少注意点があるから説明文を読んどくれ
+https://i.imgur.com/FTrHD5B.png
+https://i.imgur.com/5Ws2rj0.png
+https://i.imgur.com/WEKa20r.png
+
+姫騎士ニキに教えてもらって関西地方のスボ手線香花火の存在知ったんやけど
+今でも関西民ってそっち使うんやろか？
+映画とかアニメとかで線香花火出てきても今回のLoRAのタイプしか見た事ない
+||=
+
+***328スレ837 ponyでisometric,dioramaなLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1707027741/837
+https://huggingface.co/nashikone/iroiroLoRA/tree/main/PonyDiffusionV6XL
+=|BOX|
+837: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 9f14-jSnV)  2024/02/06(火) 02:59:38.16 ID:SZT4HRSU0 
+>>826
+https://huggingface.co/nashikone/iroiroLoRA/tree/main/PonyDiffusionV6XL
+isometric_v1_pony.safetensors
+に置いておいたで
+説明はreadmeを参照や
+
+https://ul.h3z.jp/AS0GLrWs.jpg
+https://ul.h3z.jp/ABbJ1goc.jpg
+https://ul.h3z.jp/xHJsjs0J.jpg
+感覚遮断LoRAと組み合わせるとすごろくのエロトラップマスが作れるな
 ||=
