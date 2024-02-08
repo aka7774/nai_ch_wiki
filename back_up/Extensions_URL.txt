@@ -280,6 +280,12 @@ X/Y plotっぽい画像を生成する
 Detection Detailerのフォーク版。
 特定の領域を再描画してデティールを改善する。顔を自動的に検出して崩れていたのをある程度修正してくれる。
 
+** sd-webui-boorutowd
+- https://github.com/RedRayz/sd-webui-boorutowd.git
+スレ民作成。
+Danbooruタグを以下の例のようにWaifu Diffusion方式(アンダーバーをスペースに、スペースをコンマスペース)に変換する。
+例:1girl lumine_(genshin_impact) upper_body→1girl, lumine \(genshin impact\), upper body
+
 * 更新停止
 
 新規インストールは非推奨です。
