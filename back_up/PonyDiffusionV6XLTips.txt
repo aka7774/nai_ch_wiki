@@ -72,6 +72,9 @@ https://rentry.org/ponyxl_loras_n_stuff
 
 こちらのキャラリストは公式のものではないため学習されていないキャラも多く含まれているようだ。
 * バグ
+hakomikanニキによって原因が特定された。WebUI側のバグだったらしい。修正スクリプトもこちらから。
+https://note.com/hakomikan/n/nb6dd68a1bd9e
+
 AnimagineXL3.0と同様のバグがあるらしく、不明な条件でノイズ画像が出る。
 主な対策方法は以下の通り。
 ・トークン数を150以下にする。
@@ -81,6 +84,8 @@ AnimagineXL3.0と同様のバグがあるらしく、不明な条件でノイズ
 Ponyはプロンプトからの構図を生み出しが良いが、Animagineの方が絵柄が好きと言うときに、AnimagineをRefinerとして使用する方法がある。
 WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可)を指定し数値を指定する。
 全体のステップのうち指定した数値%まではPonyで、それ以降はAnimagineで描画することになるので、Ponyの構図を生かしてAnimagineで仕上げという処理が可能。
+
+
 
 
 
