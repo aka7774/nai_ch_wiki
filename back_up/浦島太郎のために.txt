@@ -24,20 +24,15 @@
 *2024-02-06 stable-diffusion-webui-forgeリリース
 ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた
 https://github.com/lllyasviel/stable-diffusion-webui-forge
-低VRAM環境での高速化やOOMが見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照
+低VRAM環境での高速化や使用メモリ削減が見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照
 
 Githubより
-=|BOX|
-オリジナルのWebUI（1024pxでのSDXL推論）と比較すると、以下のようなスピードアップが期待できます：
-  
-8GB vramのような一般的なGPUを使用する場合、推論速度（it/s）が約30~45%向上し、GPUメモリピーク（タスクマネージャ）が約700MBから1.3GBに減少し、最大拡散解像度（OOMしない）が約2倍から3倍に増加し、最大拡散バッチサイズ（OOMしない）が約4倍から6倍に増加します。
-  
-6GB vramのような強力でないGPUを使用する場合、推論速度(it/s)は約60~75%向上し、GPUメモリピーク(タスクマネージャ)は約800MBから1.5GBに減少し、最大拡散解像度(OOMしない)は約3倍、最大拡散バッチサイズ(OOMしない)は約4倍に増加します。
-  
-24GBのvramを持つ4090のような強力なGPUを使用する場合、推論速度（it/s）が約3〜6%高速化し、GPUメモリピーク（タスクマネージャ）が約1GBから1.4GBに低下し、最大拡散解像度（OOMしない）が約1.6倍になり、最大拡散バッチサイズ（OOMしない）が約2倍になります。
-  
-SDXLにControlNetを使用する場合、ControlNetの最大カウント数（OOMしない）は約2倍になり、SDXL+ControlNetの速度は約30〜45%速くなります。
-||=
+ オリジナルのWebUI（1024pxでのSDXL推論）と比較すると、以下のようなスピードアップが期待できます：
+-8GB vramのような一般的なGPUを使用する場合、推論速度（it/s）が約30〜45%向上し、GPUメモリピーク（タスクマネージャ）が約700MBから1.3GBに減少し、最大拡散解像度（OOM：VRAM不足…Out Of Memoryしない）が約2倍から3倍に増加し、最大拡散バッチサイズ（OOMしない）が約4倍から6倍に増加します。
+-6GB vramのような強力でないGPUを使用する場合、推論速度(it/s)は約60〜75%向上し、GPUメモリピーク(タスクマネージャ)は約800MBから1.5GBに減少し、最大拡散解像度(OOMしない)は約3倍、最大拡散バッチサイズ(OOMしない)は約4倍に増加します。
+-24GBのvramを持つ4090のような強力なGPUを使用する場合、推論速度（it/s）が約3〜6%高速化し、GPUメモリピーク（タスクマネージャ）が約1GBから1.4GBに低下し、最大拡散解像度（OOMしない）が約1.6倍になり、最大拡散バッチサイズ（OOMしない）が約2倍になります。
+-SDXLにControlNetを使用する場合、ControlNetの最大カウント数（OOMしない）は約2倍になり、SDXL+ControlNetの速度は約30〜45%速くなります。
+
 
 NVAスレのみなさまの喜びの声
 =|BOX|
@@ -1439,6 +1434,9 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
 
 
 
