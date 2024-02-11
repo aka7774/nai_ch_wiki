@@ -4,6 +4,7 @@
 以下のページでは作者がNVA部（本スレ）で発表したLoRA（及びLyCORIS/LoCon）等をまとめている。
 
 ※最近更新が滞っているため当wikiに掲載されてないものが多くなっています。各自本スレでチェックしましょう。
+作者の意向により短時間限定で配布されるLoraもあるため本スレの定期的なチェックを推奨します。
 
 **学習成果発表（カテゴリ別）
 - [[キャラクター>Lora学習成果-キャラクター]]
@@ -4754,4 +4755,80 @@ https://huggingface.co/nashikone/iroiroLoRA/tree/main/PonyDiffusionV6XL
 アナルビーズ引張り・アナルから産卵・透明なペニスでアナルを掘る・アナルスライム排泄・潮吹き・漏斗挿入・複雑形状触手・スライムが服を溶かす・機械触手や
 流石にネタが少なくなって来たのでそろそろペースは落ちると思う
 ponyのプロンプトで頑張ったけどこれ無理っすがあればチャレンジしてみるやで
+||=
+
+***332スレ367 なつみ生きとったんかワレ
+https://fate.5ch.net/test/read.cgi/liveuranus/1707552820/367
+https://civitai.com/models/300408/style-parody-portrait-or
+=|BOX|
+367: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 62d6-zCfl) sage 2024/02/11(日) 00:44:39.57 ID:heccl5vp0 
+血迷って作ったLoRAを血迷ってCIVITAIに上げてもうた
+なつみ生きとったんかワレLoRA
+https://files.catbox.moe/l9fbck.png
+https://civitai.com/models/300408/style-parody-portrait-or
+||=
+
+***332スレ548 ブルーアイズホワイトドラゴン
+https://fate.5ch.net/test/read.cgi/liveuranus/1707552820/548
+https://civitai.com/models/300884/
+=|BOX|
+548: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 337b-+162) sage 2024/02/11(日) 10:04:24.27 ID:KMPz9Tkj0 
+前スレの提出方法教えてくれたニキサンガツ！
+無事ブルーアイズホワイトドラゴン(あまり目が青くならない)LoRA提出できたで
+https://civitai.com/models/300884/
+https://i.imgur.com/nOGoM2w.jpg
+https://i.imgur.com/zemc2by.jpg
+
+そのまま使えばブルーアイズ単体召喚やけど
+キャラLoRAを組み合わせれば君も今日から社長や！
+あと重み弄ってると急に対戦相手やコマ割り出てきて漫画化したりする
+||=
+
+***332スレ605 女児パン
+https://fate.5ch.net/test/read.cgi/liveuranus/1707552820/605
+https://mega.nz/file/9jtU2Zwb#md1ZkHM9ahqAicaEAPn9Os6dFsHcwmIWScA5dkhb28w
+=|BOX|
+605: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 6274-XyAm)  2024/02/11(日) 11:59:00.42 ID:Yiy0UUlb0 
+女児パンLoraが一応及第点に達したので公開するやでー。
+https://mega.nz/file/9jtU2Zwb#md1ZkHM9ahqAicaEAPn9Os6dFsHcwmIWScA5dkhb28w
+
+トリガーは「cotton panties」や。0.8くらいで使ってクレメンス。
+https://majinai.art/i/Le8vRvo.png
+https://majinai.art/i/53e7X6r.png
+ちなぶっかけもできる。同志は「cum on panties」や。
+https://majinai.art/i/yqV0JUa.png
+https://majinai.art/i/uD5nddZ.png
+
+ところでsupermargerでLoraマージしようとすると「argument of type 'NoneType' is not iterable」と出るんやがどうしたらええんやろか？
+このLoraの素材元になった三次Lora（合法やで）を微量マージすればさらに女児パンの質が高まると思うんやが・・・。
+||=
+
+***332スレ729 知ってるがお前の態度が気に入らない（更新）
+https://fate.5ch.net/test/read.cgi/liveuranus/1707552820/729
+https://huggingface.co/kroc/otameshi
+=|BOX|
+729: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 6330-p8SM)  2024/02/11(日) 14:24:48.61 ID:aHcP1hX30 
+Loraを作り直したので置いときますね
+https://huggingface.co/kroc/otameshi
+animagineで作ったやつで、ponyでは効かなかったわ
+||=
+
+***333スレ85 LessMuscularity XL LECO
+https://fate.5ch.net/test/read.cgi/liveuranus/1707648161/85
+https://huggingface.co/MayonakaManic/LoRA/blob/main/LECO/LECO_LessMuscularityXL.safetensors
+=|BOX|
+0085今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ f7e1-XyAm)
+2024/02/11(日) 20:58:23.99ID:SYRRl6L00
+昨日避難所に貼ったけどもう一回宣伝させてクレメンス
+LessMuscularityのXL版（Animagine 3.0向け）ができたんや
+男性的な筋肉や骨格の成分を除去することで、女の子っぽい体つきや絵柄を誘導するLECOやで。今回も一応あばら骨を消したりできるんで、よかったら使ってみたってな
+https://huggingface.co/MayonakaManic/LoRA/blob/main/LECO/LECO_LessMuscularityXL.safetensors
+https://ul.h3z.jp/YA7EzO0Y.jpg
+
+データをいじったから今回はマイナス適用でも使えるで
+マイナスやと肉体を見せつける！胸は盛る！みたいな感じで直球になるんでえっちなのに向いてると思う。肉体の正確さも上がる感じや
+プラス適用は逆に服のディテールが上がって、ポーズも体を見せつけるものは減る感じや。柔らかな雰囲気になるけど、顔とか絵柄がデフォルメされてしまいがちなのが欠点や
+プロンプトは長めが推奨で、ネガティブはマイナス適用の時はbaraやyaoi、プラス適用の時はchibiやloliがおすすめやで。いろいろ試してみたってな
+https://ul.h3z.jp/UN6OZufv.jpg
+https://ul.h3z.jp/7UED4ze9.jpg https://ul.h3z.jp/5Uly4SO1.jpg 
 ||=
