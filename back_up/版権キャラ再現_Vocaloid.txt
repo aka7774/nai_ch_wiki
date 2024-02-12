@@ -2,6 +2,12 @@
 
 #contents
 
+*　Synthesizer V
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+| kasane teto, synthesizer v, ||Synthesizer V|重音テト|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qbEowhQ5k7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qbEowhQ5k7.png]]|
+|}
+
 *　CeVIO AI
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -41,4 +47,5 @@
 |{megurine luka},{1girl},breasts,black vest,black skirt,long hair,||VOCALOID|巡音ルカ|||
 |{meiko_(vocaloid)}, short_hair, brown_hair, sleeveless_shirt, red_shirt, red_skirt, short_dress, midriff, medium_breasts,||VOCALOID|MEIKO|服装はあまり似ないため、別の衣装がおすすめ|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/df96656bee342a9b.jpg)|
 |}
+
 

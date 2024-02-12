@@ -4813,6 +4813,18 @@ https://huggingface.co/kroc/otameshi
 animagineで作ったやつで、ponyでは効かなかったわ
 ||=
 
+***333スレ46 障害物競走（網潜り）
+https://fate.5ch.net/test/read.cgi/liveuranus/1707648161/46
+https://civitai.com/models/301477/go-under-the-net
+=|BOX|
+46: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ d291-p8SM)  2024/02/11(日) 20:15:36.67 ID:OyXpx7yr0 
+サンイチ
+Animagine v3で障害物競走（網潜り）するLoRA作ったんで、誰得かもやがせっかくやし共有しとく
+強度とポーズ指示次第で網の中に捕まえた、とかもできるっちゃーできる
+https://civitai.com/models/301477/go-under-the-net
+https://i.imgur.com/wKMBGB6.jpeg　https://i.imgur.com/uTyH828.jpeg　https://i.imgur.com/VdOvaLM.jpeg
+||=
+
 ***333スレ85 LessMuscularity XL LECO
 https://fate.5ch.net/test/read.cgi/liveuranus/1707648161/85
 https://huggingface.co/MayonakaManic/LoRA/blob/main/LECO/LECO_LessMuscularityXL.safetensors
@@ -4832,3 +4844,46 @@ https://ul.h3z.jp/YA7EzO0Y.jpg
 https://ul.h3z.jp/UN6OZufv.jpg
 https://ul.h3z.jp/7UED4ze9.jpg https://ul.h3z.jp/5Uly4SO1.jpg 
 ||=
+
+***333スレ310 Torogao_Ahegao_Slider_LoRA
+https://civitai.com/models/279487?modelVersionId=338805
+=|BOX|
+https://fate.5ch.net/test/read.cgi/liveuranus/1707648161/310
+310: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ e35a-GJEc)  2024/02/12(月) 00:33:04.30 ID:l1RPl4tc0 
+ahegaoを調整するSliderLoRAにponydiffusionV6向けのやつ追加したわ
+基本的にahegaoをtorogao寄りにしたかったらマイナスにすればええんやけど
+そもそもahegaoを入力しないと反応しないから気をつけてな
+https://civitai.com/models/279487?modelVersionId=338805
+||=
+
+***333スレ707 バレンタイン・キッス / テニスの王子様
+https://fate.5ch.net/test/read.cgi/liveuranus/1707648161/707
+https://civitai.com/models/302507/
+=|BOX|
+707: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 337b-+162) sage 2024/02/12(月) 15:02:10.32 ID:JeIZlQwP0 
+テニプリ界隈くらいにしか刺さらない謎LoRA作ったわ
+https://civitai.com/models/302507/
+https://i.imgur.com/5M0EQo6.png
+
+バレンタインっぽいLoRAでも作るかと数日励んでいたがどれもこれもプロンプトだけで出せるから困る
+1.5の時はワイのお気に入りモデル数種では出せなかったチョコどうぞ構図はもちろん
+チョコレートファウンテンとかポッキーキスとかまで出せちゃうと思いつかん
+というわけでネタ無くなったからまたAnimagineで出せないエロ以外のネタあれば作るので何かあったらレス下さい
+||=
+
+***333スレ870 SmoothBelly
+https://fate.5ch.net/test/read.cgi/liveuranus/1707648161/870
+https://mega.nz/folder/4Hsm0ZAA#gxyJhz6uJ46-FUXDkeWlOg
+=|BOX|
+870: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 1288-XyAm) sage 2024/02/12(月) 19:23:24.69 ID:V6m6khj20 
+最近スレの流れ早すぎて全然追えとらんで…
+
+LessMuscularityが出た矢先に恐縮やが、お腹滑らかスライダーを作ったで
+animagineも立体感というかこってり感出すと腹がボコボコしてくるから、お腹だけ直したかったんや
+https://mega.nz/folder/4Hsm0ZAA#gxyJhz6uJ46-FUXDkeWlOg
+
+使う時はWeight: -1 ~ -2 くらいでお好みで使ってや、プラスで使うことは想定しとらん
+https://imgur.com/8ONuW9M
+https://imgur.com/BYdi5li
+||=
+

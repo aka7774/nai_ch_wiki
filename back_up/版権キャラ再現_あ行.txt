@@ -106,7 +106,10 @@
 ***　アカメが斬る！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|official style, 2d cel anime, {{akame (akame ga kill!))}}, {{akame ga kill!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, black hair, long hair, black dress, red tie, holding sword, standing, clear face, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, elf,|アカメが斬る！|アカメ|V2使用。似た人になる程度。|https://image02.seesaawiki.jp/n/h/nai_ch/8qWtQMgsn5.png|
+|official style, kurome (akame ga kill!), akame ga kill!, very aesthetic, best quality, intricate, overall detail, 1 girl, short hair, black eyes, black serafuku, standing, holding katana, serious, simple background, front view, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, {{{{akame (akame ga kill!)}}}},|アカメが斬る！|クロメ|V3使用。アカメと混ざりやすいのでネガに入れている。|https://image01.seesaawiki.jp/n/h/nai_ch/bafgJiwEOG.png|
+|official style, esdeath, akame ga kill!, very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, serious, simple background, front view, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated,|アカメが斬る！|エスデス|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/4K050SIxvf.png|
+|official style, akame (akame ga kill!), akame ga kill!, very aesthetic, best quality, intricate, overall detail, 1 girl, younger, red eyes, standing, holding katana, serious, simple background, front view, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated,|アカメが斬る！|アカメ|V3使用。アニメの絵柄になる。TVアニメ公式サイトのキャラ紹介絵より年齢が上に見える絵が出ることが多い。simple backgroundにすると背景が赤になりやすい。|https://image02.seesaawiki.jp/n/h/nai_ch/VTkg6TLnez.png|
+|official style, 2d cel anime, {{akame (akame ga kill!))}}, {{akame ga kill!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, black hair, long hair, black dress, red tie, holding sword, standing, clear face, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, elf,|^|^|V2使用。似た人になる程度。|https://image02.seesaawiki.jp/n/h/nai_ch/8qWtQMgsn5.png|
 |}
 
 ***　アクエリオンシリーズ
@@ -128,6 +131,12 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, 2d cel anime, {{hitotsuyanagi riri}}, {{assault lily}}, very aesthetic, best quality, intricate, overall detail, 1 girl, pink hair,  medium hair, one side up, four-leaf clover hair ornament, pink eyes, double-breasted school uniform, sailer collar, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, elf, serafuku,|アサルトリリィ|一柳梨璃|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/vxVhWC3f2z.png|
+|}
+
+***　明日のナージャ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style,1 girl,nadja applefield,ashita no nadja,blonde long hair,white boater hat,long sleeves,white frilled dress,white socks,||明日のナージャ|ナージャ・アップルフィールド|V3使用。アニメ風には出なさそう。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aHF9rg1ZH7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aHF9rg1ZH7.png]]|
 |}
 
 ***　アズールレーン
@@ -535,6 +544,8 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
 |}
+
+
 
 
 
