@@ -98,9 +98,10 @@
 [+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
+|black eyes, empty eyes,|黒目|V3使用。このプロンプトで真っ黒な目になりますが、たまに瞳孔みたいなものが生成されます。また、empty eyesの影響で女の子の雰囲気が暗くなるので、明るくしたい場合はblushやsmile等と併用しましょう。サンプル画像はblush, smile, black eyes, empty eyes,で生成しました。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NWuP8bXSIU.png)|
 |blood tears|血涙|V3使用。かなり出にくく、強調しまくってもサンプル画像みたいに、一筋だけ「つぅー」と流す程度でexpressionlessと組み合わせないとただの泣き顔になります。サイレンの屍人みたいにドバーと流すのは無理そう。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/bYPyIM78X5.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PVulaBjHGK.png)|
 |white eyes|白目|ネガティブにpupils・eyeballを記入推奨。目玉部分の輪郭はあったりなかったりします|https://image01.seesaawiki.jp/n/h/nai_ch/UMa60EF6xn.png https://image02.seesaawiki.jp/n/h/nai_ch/BrL2g0mjiy.png|
-|evil eyes|邪悪な目|目の色を指定していない場合、赤目になります。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HkUFc2KJet.png)|
+|evil eyes|邪悪な目|V3使用。目の色を指定していない場合、赤目になります。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HkUFc2KJet.png)|
 |> <|不等号目|強化必要|https://image02.seesaawiki.jp/n/h/nai_ch/ToBZDLPcsE.png|
 |@_@|ぐるぐる目||https://image01.seesaawiki.jp/n/h/nai_ch/a2abXqHCbJ.png|
 |look away|視線を逸らす||https://image01.seesaawiki.jp/n/h/nai_ch/QX6b0dm2RQ.png|
