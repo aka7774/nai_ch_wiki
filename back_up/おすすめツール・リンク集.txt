@@ -83,7 +83,10 @@ IrfanVIewを使う
 振り分け機能があって便利らしい
 
 ** PNGのテキストデータを閲覧/編集したい
-以下のソフトを使えばドラッグ&ドロップで内部のPng chunkデータが閲覧/編集できる。
+https://novelai.net/inspect
+へアクセスして画像をドラッグ&ドロップすると生成情報を閲覧できる。
+
+また、以下のソフトを使えばドラッグ&ドロップで内部のPng chunkデータが閲覧/編集できる。
 右クリックからのコンテキストメニューから開くこともできる。
 TweakPNG - https://entropymine.com/jason/tweakpng/
 図：UIのイメージ
@@ -402,6 +405,7 @@ https://github.com/animerl/novelai-2-local-prompt
 インストール方法はダウンロードした「nai2local.js」を「javascript」フォルダの中に入れるだけ
 |&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qksM3eTMmt.png,300)|
 [END]
+
 
 
 

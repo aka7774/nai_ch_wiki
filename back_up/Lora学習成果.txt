@@ -4943,3 +4943,54 @@ https://ul.h3z.jp/oeFd4UyX.png
 今日は危険日だからダメですポーズって言った方が良さそう
 https://ul.h3z.jp/QpfJLoRH.png
 ||=
+
+***335スレ478 かめはめ波
+https://fate.5ch.net/test/read.cgi/liveuranus/1707852025/478
+https://civitai.com/models/304897
+=|BOX|
+478: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 6bba-Wfyb)  2024/02/14(水) 17:52:30.20 ID:VUXtPypF0 
+どうせやから作ったloraをcivitaiにあげてみたやで
+
+キャラlora使うときはウェイト0.6ぐらいで、男のキャラやったら悟空の画風loraみたいになるから、かめはめ波loraも0.6ぐらいに下げたら
+それっぽい感じで出せるみたいやわ
+
+https://civitai.com/models/304897
+https://i.imgur.com/NF47iqb.jpg
+https://i.imgur.com/73QfKnF.jpg
+||=
+
+***335スレ633 LessMonsterGirls
+https://fate.5ch.net/test/read.cgi/liveuranus/1707852025/633
+https://huggingface.co/MayonakaManic/LoRA/blob/main/LECO/LECO_LessMonsterGirls/LECO_LessMonsterGirlsXL.safetensors
+=|BOX|
+633: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ f7e1-XyAm)  2024/02/14(水) 20:50:43.42 ID:S3pWPh9L0 
+LessMonsterGirlsっていう画風調整orモンスター娘向けLECOを公開したんで使ってみてクレメンス。Animagine用や
+https://huggingface.co/MayonakaManic/LoRA/blob/main/LECO/LECO_LessMonsterGirls/LECO_LessMonsterGirlsXL.safetensors
+プラスにすると人外要素やパーツが薄まって、より人間らしい体つきになるで
+逆にマイナスにするとどんどん人外パーツが増えていくヤツや。あと触手が特盛りになるな
+https://ul.h3z.jp/Ac8LDssE.jpg
+https://ul.h3z.jp/4TjBgWwh.jpg
+https://ul.h3z.jp/iBQ0tRQH.jpg
+
+Animagineちゃんはあんまりもん娘覚えてないみたいやから、きちんとした形のもん娘打率は低いんやけど
+ひとまずマイナスにしてプロンプトにmonster girl入れるだけでもごちゃごちゃのキメラを出せるから、よかったら遊んでみてな
+https://ul.h3z.jp/erR6M3GD.jpg　https://ul.h3z.jp/uvh7PvH5.jpg
+あと最近は擬態の上手い魔物が増えてきとるから気をつけるんやで……
+||=
+
+***335スレ オムライスに文字書いてくれるLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1707852025/836
+https://civitai.com/models/306423
+=|BOX|
+836: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 337b-+162) sage 2024/02/15(木) 09:56:51.23 ID:DjZaNPUg0 
+オムライスに文字書いてくれるLoRAやで
+https://civitai.com/models/306423
+https://i.imgur.com/bO55yrI.png
+https://i.imgur.com/iiK27VE.png
+
+オムライス自体は80点くらいの元々出してくれるんやけど
+なんの料理と混じってるのかケチャップの海に沈んでるようなの(デミグラスソースの本格派オムライス？)
+ばかりやから日本の一般的な形になるようにとケチャップも海外の長方形ケチャップではなく
+日本のカゴメ系ボトルが出るようにしてなんか書こうとしてくれるで
+書かれた絵は消して自分で何か文字入れたりに使っても良さそう
+||=

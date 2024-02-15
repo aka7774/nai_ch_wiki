@@ -21,6 +21,14 @@
 
 #contents
 
+*2024-02-13 Stable Cascade公開
+https://ja.stability.ai/blog/stable-cascade
+https://github.com/Stability-AI/StableCascade
+Stability AIにより、Stable Diffusionの次世代にあたる画像生成モデル「Stable Cascade」が公開された。
+SDXLよりも短時間での生成が可能であり、さらにプロンプトの忠実度や画像の美学的品質も向上しているという。
+ローカルで動かすにはデフォルトで20GBのVRAMを必要とするが、コードを改変することでより少ないVRAMで動作したとの報告もある。
+https://note.com/hakomikan/n/n75f0ee78abf9
+
 *2024-02-06 stable-diffusion-webui-forgeリリース
 ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた
 https://github.com/lllyasviel/stable-diffusion-webui-forge

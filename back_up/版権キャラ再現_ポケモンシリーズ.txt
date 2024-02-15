@@ -99,7 +99,7 @@
 ** ポケットモンスター スカーレット・バイオレット（第9世代）
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-| juliana (pokemon), pokemon sv, ||ポケットモンスター ソード・シールド|アオイ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LpuJ1xGM8r-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/LpuJ1xGM8r.png]]|
+| juliana (pokemon), pokemon sv, ||ポケットモンスター SV|アオイ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LpuJ1xGM8r-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/LpuJ1xGM8r.png]]|
 |1boy, kieran (pokemon), pokemon sv, shota, blush,    ||ポケモン|スグリ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FbtdOHkVbR-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/FbtdOHkVbR.png]]|
 |1boy, florian (pokemon), shota,   ||ポケモン|ハルト|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uJH9ui1wLF-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/uJH9ui1wLF.png]]|
 |&#91;&#91;iono (pokemon)]], solo, cowboy shot,  ||ポケモン|ナンジャモ|V3。キャラの特徴が強すぎて、単体プロンプトですら濃く出過ぎる傾向あり|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pIa_EA6nIM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pIa_EA6nIM.png]]|
@@ -140,6 +140,16 @@
 * ポケモン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|no humans, eevee, pokemon, solo, full body,||ポケモン|イーブイ|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/O7ImQ75K3S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/O7ImQ75K3S.png]]|
+|no humans, vaporeon, pokemon, solo, full body,||ポケモン|シャワーズ|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3BrRSdesdG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3BrRSdesdG.png]]|
+|no humans, jolteon, pokemon, solo, full body,||ポケモン|サンダース|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WihyTYOCzR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/WihyTYOCzR.png]]|
+|no humans, flareon, pokemon, solo, full body,||ポケモン|ブースター|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/p9uPrqr1ir-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/p9uPrqr1ir.png]]|
+|no humans, umbreon, pokemon, solo, full body,||ポケモン|ブラッキー|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/riFyicXzp9-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/riFyicXzp9.png]]|
+|no humans, leafeon, pokemon, solo, full body,||ポケモン|リーフィア|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/H_Mrxder6l-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/H_Mrxder6l.png]]|
+|no humans, sylveon, pokemon, solo, full body,||ポケモン|ニンフィア|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/L2b4dqYOJS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/L2b4dqYOJS.png]]|
+|no humans, ditto, pokemon, solo, full body,||ポケモン|メタモン|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/BZvjE45o1f-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/BZvjE45o1f.png]]|
+|no humans, kirlia, pokemon, solo, full body,||ポケモン|キルリア|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/miVmURlf2d-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/miVmURlf2d.png]]|
+|no humans, ralts, pokemon, solo, full body,||ポケモン|ラルトス|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QSXsGL9fPz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/QSXsGL9fPz.png]]|
 |official style,Espeon,pokemon (creature),||ポケモン|エーフィ|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IjhLHludWx-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IjhLHludWx.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/hRuR3elf7b-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/hRuR3elf7b.png]]|
 |official style,Glaceon,pokemon (creature),||ポケモン|グレイシア|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/veludhcmEj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/veludhcmEj.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/XKyJWpDcfz-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/XKyJWpDcfz.png]]|
 |official style,Sprigatito,pokemon (creature),||ポケモン|ニャオハ|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QbWhw7V46u-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/QbWhw7V46u.png]]|
