@@ -5,6 +5,8 @@
 *キーワード
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|old man,fat man,ugly man,dark-skinned man,muscular man,faceless man|老人の男、太った男、醜い男、色黒の男、筋肉質の男、顔のない男|おねショタを出したい時のモブおっさん防止用||
+|anime,megami magazine,|アニメ絵柄|||
 |anime,megami magazine,|アニメ絵柄|キャラ再現時、作品名によってはアニメ絵柄が強くなってしまうのでその対策に。official artも活かしやすくなる。効果が強すぎる場合はanimeのみに||
 |bad anatomy,disfigured,poorly drawn,deformed,mutation|悪い解剖学、変形、不十分な描画、変形、突然変異|身体の形を不格好にさせないために使う。身体の部位と組み合わせて使っても良い||
 |tsurime,smirk,|ツリ目|さらに通常プロンプトにtareme,smileでツリ目がかなり出にくくなる。ネガはsmirkだけでも効果あり。しかめっ面が出る場合はネガにfrownを追加。evil smileを追加すればさらに強力になるが表情操作が難しくなる||
@@ -25,7 +27,7 @@
 |less than &#40;surrealism:20.0)|超現実主義に|構図が破綻し難くなる。数値は20〜50程度推奨。100以上はつまらない構図が出やすい。他のプロンプトと併用する場合は、一番前に置くと効果的。|https://image02.seesaawiki.jp/n/h/nai_ch/vErNV2HaTn.png|
 |puffy nipples|ぷっくり乳首|ちっちゃい乳首にしたい場合に||
 |manboobs|雄っぱい|男の巨乳化防止用||
-|bara, yaoi|同性愛|ホモ画像防止用||
+|gay, yaoi, bara, males only|男の同性愛|ホモ画像防止用||
 |○○ digit|指|○○にはextra(多い)とfewer(少ない)を入れる。指の本数が5本以外で生成される確率を減らす||
 |missing ○○|欠落した|〇〇にarmやlegなどの部位を入れることで、特定部位が描写されないことを防ぐ||
 |liquid ○○|液体化した|〇〇にarmやlegなどの部位を入れる||
