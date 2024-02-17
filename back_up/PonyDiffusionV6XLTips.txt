@@ -2,7 +2,7 @@
 https://civitai.com/models/257749?modelVersionId=290640
 
 *プロンプトの書き方
-Animajinと同様に独特のプロンプトルールがある。詳細は上記civitaiを参照
+Animagineと同様に独特のプロンプトルールがある。詳細は上記civitaiを参照
 ケモナー御用達なのでかなり癖がある。
 
 日本人向けのアニメ絵を出すには以下majinaiのPony使用画像を参考にしてほしい。
@@ -85,8 +85,9 @@ Ponyはプロンプトからの構図を生み出しが良いが、Animagineの�
 WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可)を指定し数値を指定する。
 全体のステップのうち指定した数値%まではPonyで、それ以降はAnimagineで描画することになるので、Ponyの構図を生かしてAnimagineで仕上げという処理が可能。
 
+* 学習の注意点
+学習も癖が強い。
+LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散しやすいので、LRを下げるかそれ以外のOptimizerの使用をおすすめする
 
-
-
-
-
+* Controlnetとの相性
+原因不明だが一部のControlnetとの相性が悪く、特にOpenposeでの指定ポーズは全く反映されない。

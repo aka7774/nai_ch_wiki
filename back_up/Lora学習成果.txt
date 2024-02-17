@@ -4978,7 +4978,7 @@ https://ul.h3z.jp/erR6M3GD.jpg　https://ul.h3z.jp/uvh7PvH5.jpg
 あと最近は擬態の上手い魔物が増えてきとるから気をつけるんやで……
 ||=
 
-***335スレ オムライスに文字書いてくれるLoRA
+***335スレ836 オムライスに文字書いてくれるLoRA
 https://fate.5ch.net/test/read.cgi/liveuranus/1707852025/836
 https://civitai.com/models/306423
 =|BOX|
@@ -4993,4 +4993,86 @@ https://i.imgur.com/iiK27VE.png
 ばかりやから日本の一般的な形になるようにとケチャップも海外の長方形ケチャップではなく
 日本のカゴメ系ボトルが出るようにしてなんか書こうとしてくれるで
 書かれた絵は消して自分で何か文字入れたりに使っても良さそう
+||=
+
+***337スレ190 推しの子の例のポーズ
+https://fate.5ch.net/test/read.cgi/liveuranus/1708066289/190
+https://civitai.com/models/308242
+=|BOX|
+190: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 6bba-Wfyb)  2024/02/16(金) 19:52:31.49 ID:c2UdNMtd0 
+推しの子の例のポーズ、openposeで出せるかなと思ったけどワイには出せなかったからloraで作ってみたで
+
+https://civitai.com/models/308242
+https://i.imgur.com/mgnELp1.jpg
+https://i.imgur.com/XxSlGiM.jpg
+||=
+
+***337スレ230 LessTraditionsAndCulturesっていう、民族・宗教・地域的な要素を弱めるor強めるLECO
+https://fate.5ch.net/test/read.cgi/liveuranus/1708066289/230
+https://huggingface.co/MayonakaManic/LoRA/blob/main/LECO/LECO_LessTraditionsAndCultures/LECO_LessTraditionsAndCulturesXL.safetensors
+=|BOX|
+230: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ f7e1-XyAm)  2024/02/16(金) 20:53:52.60 ID:2CUP0V9Q0 
+LessTraditionsAndCulturesっていう、民族・宗教・地域的な要素を弱めるor強めるLECOができたんで触ってみてクレメンス。Animagine用やで
+https://huggingface.co/MayonakaManic/LoRA/blob/main/LECO/LECO_LessTraditionsAndCultures/LECO_LessTraditionsAndCulturesXL.safetensors
+https://i.imgur.com/Bc7Iim2.jpeg
+https://i.imgur.com/sLMp8QB.jpeg
+
+プラス適用で何かの拍子に服が中国っぽくなったり、現代日本に伝統文化が混じってくるのも防止できるで
+逆にマイナス適用で国や地域のプロンプトを入れるとその成分を大幅に強化することが可能や。kimonoとか十分理解されてる服でも特徴がよりはっきりする気がするで！
+もともとは色々混ざりがちな1.x用のLECOやから、切り分けの上手なXLではプラス側のメリットは薄いかもしれへんけど、マイナスで遊んでみるのも楽しいで！
+プロンプトにはtraditionalとかorientalとか、あとは出したい地域名とか色々入れてみてな
+https://i.imgur.com/fOS52xX.jpeg　https://i.imgur.com/PWFPLsC.jpeg
+https://i.imgur.com/HKpI7WF.jpeg　https://i.imgur.com/I9wpDgz.jpeg
+||=
+
+***337スレ297 おむつ換えlora
+https://fate.5ch.net/test/read.cgi/liveuranus/1708066289/297
+https://civitai.com/models/302885/diaper-changing-xl-pony
+=|BOX|
+297: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ a754-XyAm)  2024/02/16(金) 22:25:15.61 ID:bnQFx0rO0 
+おむつ換えlora更新したで
+&#127880;も出せるようにした
+https://civitai.com/models/302885/diaper-changing-xl-pony
+※&#127880;注意
+https://files.catbox.moe/up47ma.png
+||=
+
+***337スレ362 魔王のムスメ
+https://fate.5ch.net/test/read.cgi/liveuranus/1708066289/362
+https://civitai.com/models/308465/musumeyuunama-animagine-xl-v3?modelVersionId=346194
+=|BOX|
+362: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 5e55-XyAm) sage 2024/02/16(金) 23:31:15.39 ID:XdOfCzKj0 
+スレ跨いじゃったけど魔王のムスメちゃんLoRA欲しいって人おったからアップしといたで
+申し訳ないがどうやっても紫肌は安定しなかったのでそこはプロンプト強度とか肌の色LECOで調整してほしい
+https://civitai.com/models/308465/musumeyuunama-animagine-xl-v3?modelVersionId=346194
+https://ul.h3z.jp/ohowvjlf.png
+||=
+
+***337スレ377 利休さんLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1708066289/377
+https://civitai.com/models/308395/sen-no-rikyu-fate-animagine-xl-30?modelVersionId=346146
+=|BOX|
+377: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 5e55-XyAm) sage 2024/02/16(金) 23:47:24.65 ID:XdOfCzKj0 
+あと利休さんLoRAもいい感じのが出来たからアップ
+少しでもジジイでシコる人が増えますように
+https://civitai.com/models/308395/sen-no-rikyu-fate-animagine-xl-30?modelVersionId=346146
+https://ul.h3z.jp/O4So3bRu.png
+||=
+
+***337スレ655 アンミラLoRA
+https://fate.5ch.net/test/read.cgi/liveuranus/1708066289/655
+https://civitai.com/models/308795
+=|BOX|
+655: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 337b-+162) sage 2024/02/17(土) 05:19:49.81 ID:PawLUEc70 
+エッッッな制服第二弾アンミラLoRAやで
+https://civitai.com/models/308795
+https://i.imgur.com/wF5AUgj.png
+https://i.imgur.com/egPYtzf.png
+https://i.imgur.com/GitMVND.png
+https://i.imgur.com/QgSNUxi.png
+
+前スレで相談乗ってくれたアンナミラーズに自信ニキ達サンガツ
+なんかトリガー以外に要素吸われまくってるのか
+プロンプトで補助しないと制服の色と下乳でキツく締めるエプロンの再現性低いからCIVITAIの説明文読んでくれ
+あとなんかAnimagineとNAIで出せない可愛い制服あったら作るかもしれないから教えて
 ||=

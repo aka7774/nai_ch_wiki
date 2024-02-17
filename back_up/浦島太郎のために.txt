@@ -20,10 +20,10 @@
 [END]
 
 #contents
-*2024-02-17 pixivやimgurでのAI画像BAN報告相次ぐ
-pixivおよびimgurにAIのR18画像を上げたところBANされたことが本スレで相次いで報告される。
-ややリアル寄りの絵柄が実写ポルノ検出フィルターに引っかかっているものと推測されている。
-今後はpixivおよびimgurにAI画像を上げるのは避けた方が良いだろう。
+*2024-02-17 pixivでのAI画像BAN報告相次ぐ
+pixivにR18のAI画像を上げたところBANされたことが本スレで相次いで報告される。
+利用規約で禁止されている実写ポルノ、他者の偽装、他サイトなどの誘導に引っかかっていると推測されているが詳細は不明。
+今後はpixivにAI画像を上げるのは避けた方が良いだろう。
 
 *2024-02-16 動画生成AI「Sora」発表
 https://openai.com/sora
@@ -1453,6 +1453,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
