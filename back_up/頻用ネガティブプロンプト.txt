@@ -5,6 +5,8 @@
 *キーワード
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|furry, anthro|ケモノ・獣人|PonyDiffusionなどでの獣化防止用||
+|gender bender|女体化・男体化|||
 |old man,fat man,ugly man,dark-skinned man,muscular man,faceless man|老人の男、太った男、醜い男、色黒の男、筋肉質の男、顔のない男|おねショタを出したい時のモブおっさん防止用||
 |anime,megami magazine,|アニメ絵柄|||
 |anime,megami magazine,|アニメ絵柄|キャラ再現時、作品名によってはアニメ絵柄が強くなってしまうのでその対策に。official artも活かしやすくなる。効果が強すぎる場合はanimeのみに||
@@ -42,7 +44,7 @@
 |extra nipples|1人に複数の乳首|||
 |extra breasts|1人に複数の乳房|||
 | facing_away, from behind, back|後ろ姿|ネガティブに入れるとこっちを向くようになる||
-| futanari, full-package_futanari,penis_from_girl, newhalf|ふたなり、女の子からおちんちん|ふたなり化の防止用||
+| futanari, dickgirl, full-package_futanari,penis_from_girl, newhalf|ふたなり、女の子からおちんちん|ふたなり化の防止用||
 | multiple_boys, multiple_male|男複数|男を1人に絞りたい時||
 |solo_focus|1人に注目|複数人を満遍なく移したい時に入れる||
 |looking_at_viewer|視線が絵を見ている人に向いている|ネガティブに入れるとほかの方向を向いた絵がでる確率がかなり高まる 日常をスナップショット的に撮りたい場合用||
