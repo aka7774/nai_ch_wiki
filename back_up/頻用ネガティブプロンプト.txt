@@ -5,10 +5,10 @@
 *キーワード
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|ugly|醜い|リアル系モデルでほぼ必須のネガ||
 |furry, anthro|ケモノ・獣人|PonyDiffusionなどでの獣化防止用||
 |gender bender|女体化・男体化|||
 |old man,fat man,ugly man,dark-skinned man,muscular man,faceless man|老人の男、太った男、醜い男、色黒の男、筋肉質の男、顔のない男|おねショタを出したい時のモブおっさん防止用||
-|anime,megami magazine,|アニメ絵柄|||
 |anime,megami magazine,|アニメ絵柄|キャラ再現時、作品名によってはアニメ絵柄が強くなってしまうのでその対策に。official artも活かしやすくなる。効果が強すぎる場合はanimeのみに||
 |bad anatomy,disfigured,poorly drawn,deformed,mutation|悪い解剖学、変形、不十分な描画、変形、突然変異|身体の形を不格好にさせないために使う。身体の部位と組み合わせて使っても良い||
 |tsurime,smirk,|ツリ目|さらに通常プロンプトにtareme,smileでツリ目がかなり出にくくなる。ネガはsmirkだけでも効果あり。しかめっ面が出る場合はネガにfrownを追加。evil smileを追加すればさらに強力になるが表情操作が難しくなる||
@@ -16,14 +16,12 @@
 |lipstick|口紅|一部の版権キャラ（特に名前を指定するだけで大体出てくるキャラ）を生成する際、口まわりが赤くなるのを抑える用||
 |mature female, milf|熟女|特にwide hipや huge breast、foreheadを指定すると熟女が出やすいので、それを抑える用。||
 |nipple and  nipples and areola and areolae and teat and tits on stomach|妊婦のお腹に生える乳首|出現を抑える程度||
-|monochrome|モノクロ|白黒になるのを防ぐ。彩度を上げる効果もある||
-|greyscale|グレースケール|白黒になるのを防ぐ。彩度を上げる効果もある||
+|monochrome,greyscale|モノクロ/グレースケール|白黒になるのを防ぐ。彩度を上げる効果もある||
 |thighlet|太ももに巻く装飾品|||
 |panel layout|コマ割り|分割の防止。4-panel cartoon（四コマ漫画）などもある。||
 |tittle|タイトル|textと同様に文字消し||
 |out of focus|ピンぼけ|居なかったり拡大しすぎの修正||
 |fat|デブ|体格調整につかう||
-|||||
 |tilak,bindi,forehead mark|ヒンドゥー教の女性の眉間の印|おでこちゃんを作ろうとforehead(額)タグを使うと、tilakやbindiが入る率が上がるので、抑えたい人はネガティブプロンプトにいれる||
 |3d|三次元、立体的|平面的・イラスト的に描画される||
 |less than &#40;surrealism:20.0)|超現実主義に|構図が破綻し難くなる。数値は20〜50程度推奨。100以上はつまらない構図が出やすい。他のプロンプトと併用する場合は、一番前に置くと効果的。|https://image02.seesaawiki.jp/n/h/nai_ch/vErNV2HaTn.png|
@@ -74,5 +72,6 @@
 |ng_deepnegative_v1_75t|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://civitai.com/models/4629/deep-negative-v1x||
 |EasyNegative|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://huggingface.co/datasets/gsdf/EasyNegative||
 |}
+
 
 
