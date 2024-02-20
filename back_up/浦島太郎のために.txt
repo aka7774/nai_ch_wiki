@@ -20,6 +20,12 @@
 [END]
 
 #contents
+*2024-02-20 ComfyUIがStable Cascadeに対応
+https://comfyanonymous.github.io/ComfyUI_examples/stable_cascade/
+ComfyUIがStable Cascadeに対応したことが発表された。
+CascadeのモデルをCheckpointフォルダに入れるだけで動作するとのこと。
+本スレではVRAM8GBでも動作したことが報告されている。
+
 *2024-02-17 pixivでのAI画像BAN報告相次ぐ
 pixivにR18のAI画像を上げたところBANされたことが本スレで相次いで報告される。
 利用規約で禁止されている実写ポルノ、他者の偽装、他サイトなどの誘導に引っかかっていると推測されているが詳細は不明。

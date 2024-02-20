@@ -14,7 +14,7 @@
 - 新たな概念を追加する
 - 既存の概念を上書きする
 - トッピング感覚で簡単に使用できる(Dreambooth以外)
-2023年現在はLoRAがおすすめ。軽量、高速、高性能。
+2024年現在はLoRAがおすすめ。軽量、高速、高性能。
 
 * それぞれの特徴
 ** TextualInversion
@@ -40,6 +40,12 @@ Hypernetworkというネットワークがモデルのウェイトを調整す�
 ** LoRA(Low-Rank Adaptation)
 Dreamboothから派生。ウェイトの差分を出力する。軽量、高性能、省メモリなため現在主流となっている。
 - 再現度が高い
+-- Dreamboothには劣る。
 - 学習が速い
 - モデルにマージせずに使える
 - 設定項目が非常に多いので初見だと難しいかも
+
+*** DoRA(Weight-Decomposed Low-Rank Adaptation)
+まだ論文発表の段階でsd-scriptsには実装されてない。
+directionをファインチューンすることでLoRAの精度問題を改善するらしい。
+https://arxiv.org/abs/2402.09353
