@@ -126,6 +126,7 @@
 ** アニメキャラ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1boy, goh (pokemon), shota, smile, black hair, blue eyes, hairclip, dark skin, grey shirt, grey pants, hand in pocket, antenna hair, solo, cowboy shot, ||ポケモン|ゴウ|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/B7bUZLgLNI-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/B7bUZLgLNI.png]]|
 |official style,1girl,Liko (pokemon),dark blue short pants,outerwear,socks,||ポケモン|リコ|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4XYC7TSpd2-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4XYC7TSpd2.png]]|
 |ash ketchum &#40;pokemon)|汎用ネガティブプロンプト|ポケモン|サトシ||https://image02.seesaawiki.jp/n/h/nai_ch/ag_XUVYx8B.png|
 |}
