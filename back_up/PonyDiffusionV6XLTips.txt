@@ -72,14 +72,25 @@ https://rentry.org/ponyxl_loras_n_stuff
 
 こちらのキャラリストは公式のものではないため学習されていないキャラも多く含まれているようだ。
 * バグ
-hakomikanニキによって原因が特定された。WebUI側のバグだったらしい。修正スクリプトもこちらから。
+** 特定のプロンプトでノイズまみれになる
+稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
+hakomikan氏によると、1111 WebUI側のバグらしい。特定のプロンプトの組み合わせでテンソルの値が壊れて破綻を引き起こす。
+わかりやすく言うと、プロンプトの組み合わせによってはプロンプトの強度指定時にWebUIの不具合で実際の強度がおかしくなる。
 https://note.com/hakomikan/n/nb6dd68a1bd9e
 
+***解決策
+WebUI 1.7以前であれば、プロンプトの語順を変えてみるか以下のExtensionを導入する。
+https://github.com/hako-mikan/sd-webui-prevent-artifact
+1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。
+
+[+] 古い情報
 AnimagineXL3.0と同様のバグがあるらしく、不明な条件でノイズ画像が出る。
 主な対策方法は以下の通り。
 ・トークン数を150以下にする。
 ・類似した概念や部位のプロンプトの位置を離す。
 ・pad promptをオフにする。
+[END]
+
 * Animagineとの連携方法
 Ponyはプロンプトからの構図を生み出しが良いが、Animagineの方が絵柄が好きと言うときに、AnimagineをRefinerとして使用する方法がある。
 WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可)を指定し数値を指定する。

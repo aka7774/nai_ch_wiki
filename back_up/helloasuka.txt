@@ -57,6 +57,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4080|16GB|Ryzen 5 5600G||13.2|--xformers|Ubuntu 23.10 / version: v1.7.0 / python: 3.11.6 /torch:2.0.1+cu118　(Forge/python:3.11.6/torch:2.1.2+cu121だと11.7s、Win11のForgeは12.5sぐらい)|
 |RTX 4070 Ti SUPER|16G|13700KF||14.7|--xformers||
 |RTX 4070 Ti SUPER|16G|13700KF||19.4|||
 |RX 7800XT|16GB|Ryzen7 5700X||25.7||OS:ubuntu22.04LTS/version: v1.7.0/python: 3.10.12/torch: 2.2.0+rocm5.7/xformers: N/A/gradio: 3.41.2|

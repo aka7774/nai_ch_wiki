@@ -150,6 +150,7 @@
 ***　アズールレーン
 {| class="sort edit nanj_prompt_table"
 |~w(235px):プロンプト|~w(235px):ネガティブプロンプト|~w(59px):作品|~w(59px):キャラ|~w(116px):備考|サンプル|
+| mutsuki (azur lane), loli, brown hair, short hair, blunt bangs, green eyes, low twintails, short twintails, cat ears, cat tail, kindergarten uniform, smile, pleated skirt, hat, cowboy shot,  ||アズールレーン|睦月|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oDP6pTbbgo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oDP6pTbbgo.png]]|
 | laffey (azur_lane), loli, ||アズールレーン|ラフィー|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jEtIAFioGp-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jEtIAFioGp.png]]|
 |1girl, cheshire  (azur lane),||アズールレーン|チェシャ−|V3|https://image01.seesaawiki.jp/n/h/nai_ch/wyej7dDtaM.png|
 |solo, {{{1girl}}}, {{{{admiral graf spee &#40;azur lane)}}}}, looking at viewer, short hair, side locks, blue eyes, small breasts, black skirt, {{tareme}}, long bangs, {{disheveled hair}}, bangs, red hair,|black hair, nazi uniform, parted bangs, matoi ryuuko, bob cut,|アズールレーン|アドミラル・グラーフ・シュペー|赤メッシュが全く安定せず、赤一色や灰一色になることが多い（右の画像は300枚くらい生成を繰り返してやっと出たもの）。そのため、Edit image→再生成をして作るのが吉。また、赤メッシュに釣られ、美竹蘭と纏流子がかなり強く吸ってくるので、纏流子は名前を直接UCに指定、美竹蘭は要素をUC指定（名前を直接UC指定するとかえって成功率が下がる）して吸われるのを最小限に抑える。服装は他のアズレンキャラに吸われ、シュペーのものは出ないため、別の服を指定した方がいい。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/yVGvdnmbQC-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/yVGvdnmbQC.png]]|
@@ -259,6 +260,13 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |no humans,  crewmate (among us), solo, full body,  ||among us|クルー|V3。"○○ skin," など、色はご自由に|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/q5fAxF0Xkq-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/q5fAxF0Xkq.png]]|
+|}
+
+***　アルカナハートシリーズ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, 1 girl, tsuzura saki, arcana heart, {{blue long hair}}, school uniform, red vest, short sleeves, orange skirt, hair band, black tights, brown eyes,||アルカナハート|廿楽冴姫|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GkeMTn8pem-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/GkeMTn8pem.png]]|
+|official style, 1 girl, aino heart, arcana heart, pink short hair, school uniform, short sleeves, orange skirt, red tie, wrist ribbon, brown eyes, white zettai ryouiki,||アルカナハート|愛乃はぁと|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/MgrA4MSEnh-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/MgrA4MSEnh.png]]|
 |}
 
 ***　暗殺教室
@@ -566,27 +574,4 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
 |}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
