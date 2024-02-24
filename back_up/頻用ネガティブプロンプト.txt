@@ -5,6 +5,7 @@
 *キーワード
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|earrings,piercing|イヤリング、ピアス|勝手に描写されることがあるため||
 |ugly|醜い|リアル系モデルでほぼ必須のネガ||
 |furry, anthro|ケモノ・獣人|PonyDiffusionなどでの獣化防止用||
 |gender bender|女体化・男体化|||

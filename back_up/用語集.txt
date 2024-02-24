@@ -27,7 +27,7 @@
 |NP|Negative Prompt|Promptとは反対に出したくない要素を指定する|
 |NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつや|
 |PEFT|Parameter Efficient Fine Tuning|LoRA・LoCon・LoRA-FAその他様々な亜種のように、少ないパラメーターで全体を学習するような仕組みのこと|
-|pony||XL用モデルの[[PonyDiffusion XL>PonyDiffusionV6XLTips]]のこと|
+|pony|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|XL用モデル|
 |SD|Stable Diffusion||
 |SFW|Safe for work|こっちはNがついてなくて全年齢や|
 |ST|Stable Tuner|学習方法の1つ。kohya系。|
@@ -38,16 +38,16 @@
 |WD|Waifu Diffusion|ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
 |webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
 |web版||NovelAIを公式サイト上で利用することを指すことが多い。|
-|XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。なおそのテスト版のSDXL 0.9を指す場合もある|
+|XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。そのテスト版のSDXL 0.9を指す場合もあったが、こちらはほとんど使われていない|
 |赤ちゃん||初心者など難しい設定が困難であること。簡易インストーラー全般。由来は[[浦島太郎のために]]を参照 |
 |アナル|Anlas|NovelAI公式の課金通貨。|
-|馬/お馬さん||XL用モデルの[[PonyDiffusion XL>PonyDiffusionV6XLTips]]のこと|
+|馬/お馬さん|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|XL用モデル|
 |浦島太郎||長期間離れてて遅れた人を指すのだが、技術革新が速すぎるので一晩で浦島太郎になったりする。 |
 |金脈|[[SD RESOURCE GOLDMINE>https://github.com/questianon/sdupdates]]|Stable Diffusionに関連するすべてのリソースとニュースを集めた総合的なサイト。1111を中心としてる。|
 |コピー機||シード値固定や過学習などによって似たような絵を連続出力すること。由来は[[浦島太郎のために]]を参照 |
 |層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
 |風船||閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
-|魔人/魔神||XL用モデルの[[Animagine XL>AnimagineXL3.0tips]]のこと|
+|魔人/魔神|[[Animagine XL>AnimagineXL3.0tips]]|XL用モデル|
 |マージ||Checkpoint Mergerで2〜3つのモデルを組み合わせること。|
 |マスピ|masterpiece|傑作。品質向上に使われるプロンプト。顔が特徴的。マスピ絵、マスピ顔とか言う。|
 |妖精さん||1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
