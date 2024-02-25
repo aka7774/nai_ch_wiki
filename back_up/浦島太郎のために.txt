@@ -33,6 +33,11 @@ OpenAIの「Sora」と同様の新たな拡散トランスフォーマー技術�
 現時点では一般公開されておらず、今後の公開予定や要求スペックなどは不明。
 %%Stable Cascadeとは何だったのか%%
 
+*2024-02-22 NovelAIにバイブストランスファー機能が実装される
+
+https://twitter.com/novelaiofficial/status/1760394681274245241
+
+元絵の要素を持つ別の絵を出力する機能。精度の高さにスレが盛り上がる。
 *2024-02-20 ComfyUIがStable Cascadeに対応
 https://comfyanonymous.github.io/ComfyUI_examples/stable_cascade/
 ComfyUIがStable Cascadeに対応したことが発表された。
@@ -1474,6 +1479,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
