@@ -8,11 +8,6 @@
 |{{{{picture frame, polaroid, white border}}}}, |{{{{outside border}}}},|ポラロイド写真|V3使用。四隅が綺麗に縁取られなかったり、足などがはみ出ることはある。|https://image02.seesaawiki.jp/n/h/nai_ch/h60DiIf6a6.png|
 |{{iPhone, smartphone screen, camera app frame}}, viewfinder, |{{{{camera}}}},|スマホのカメラ越し撮影|絵柄と画面描写の間ぐらいに挿入することでサンプルみたいなスマホ撮影風になる。|https://image01.seesaawiki.jp/n/h/nai_ch/yhFVIN3LKt.png|
 |multiple knights, knights in line,||整列した騎士|適度に強調を混ぜることで主題に生成するものの背景にすることも可能|https://image02.seesaawiki.jp/n/h/nai_ch/f6VeAgVmRx.png|
-||||||
-|顔をわずかに左向き|||||
-|顔をわずかに左向き|||||
-|||全身|||
-|comic|||||
 |{{realistic urtra details}}, {winning post},horse_riding form,racehorce|motorcycle,bicycle|競馬の騎手の乗り方|競馬ゲームの名前入れたらモンキー乗りになる。但し今度は馬がおかしくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D.png]]|
 |riding_form,horse, horseback riding,||騎乗|馬に乗ってくれる。競馬のモンキー乗りは不明。馬をバイクや自転車に変えることも可能|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti.png]]|
 |〇〇_form||何かをしている構図|〇〇+formで何かをしている姿勢と指定するとだいたいその格好になってくれる上はrunning_form下はcooking_form|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cjns1VFzW4.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IVpvO43oMv.png]]|
@@ -30,13 +25,13 @@
 * 単語集
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
-|||||
-|YouTube screen|YouTube動画|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/3X3axRx18h.png|
-|viewfinder|カメラの撮影画面（ビューファインダー）|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/tOoNvVnoei.png|
+|stepped on,from below|見上げる構図になるらしいで。|トップページコメントより引用|https://image01.seesaawiki.jp/n/h/nai_ch/MQJKA8eN7d.png|
+|YouTube screen|YouTube動画|V3使用|https://image02.seesaawiki.jp/n/h/nai_ch/3X3axRx18h.png|
+|viewfinder|カメラの撮影画面（ビューファインダー）|V3使用|https://image02.seesaawiki.jp/n/h/nai_ch/tOoNvVnoei.png|
 |Live streaming|ネット配信|tiktokとか付けるとそれっぽくなる|https://image02.seesaawiki.jp/n/h/nai_ch/4rXHoz2XIw.png|
 |Instagram|インスタグラム||https://image02.seesaawiki.jp/n/h/nai_ch/qEoQ4kHOVa.png|
 |isolated on 色の名前 background|isolated on white backgroundで白背景になる。white backgroundだけだと謎オブジェクトが出現するときに使うといいかもしれない|SD がトレーニングに使ったデータセット内には「isolated on *token* background」というラベルがついた画像が大量にあるらしいhttps://www.reddit.com/r/StableDiffusion/comments/yc1osj/easily_prompt_for_generating_pure_background/|https://image01.seesaawiki.jp/n/h/nai_ch/OcMpYUdUCp.5_comp001.jpg|
-|mirror|鏡に映る|selfieを付けると自撮り風になる（画像下）|[[https://image01.seesaawiki.jp/n/h/nai_ch/lIaa7C_kHv.png]][[https://image02.seesaawiki.jp/n/h/nai_ch/8M4vGtvLND.png]]|
+|mirror|鏡に映る|selfieを付けると自撮り風になる（画像下）|#ref(https://image01.seesaawiki.jp/n/h/nai_ch/lIaa7C_kHv.png,around) #ref(https://image02.seesaawiki.jp/n/h/nai_ch/8M4vGtvLND.png)|
 | supine|仰向け||https://image02.seesaawiki.jp/n/h/nai_ch/B1Y7SEBM5z.png|
 |yuri|百合|女性同士の絡み合い ~~ ネガにnudeやnsfwを入れないとR18になりやすいので注意 ~~ danbooruのwikiによるとふたなりとバイセクシャルは百合には含まれない|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/L2FrIRvKX2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/L2FrIRvKX2.png]]|
 |triptych|三連祭壇画||https://image02.seesaawiki.jp/n/h/nai_ch/z2JKT7HNyZ.png|
@@ -49,21 +44,21 @@
 |dutch angle|ダッチアングル|カメラが水平ではなく傾く|https://image02.seesaawiki.jp/n/h/nai_ch/g4pbIySNKI.png|
 |girls sandwich||キャラクターの距離が縮まり密度が上がる|https://image01.seesaawiki.jp/n/h/nai_ch/DWDhKPRJpG.png|
 |sitting_on_stairs|階段に座る||https://image01.seesaawiki.jp/n/h/nai_ch/9nmusSGa78.png|
-|solo|1人|danbooruの基準では、以下はsoloに含まれない~~ - 同一人物を異なる視点から描いたもの（→multiple views）~~ - 抱き枕の両面 ~~ - 1人以外がモブであり詳細に描かれない（→solo focus） ~~ - 性行為の一方が顔無しや身体一部だけ（→solo focus）||
 |aerial|空中|体の形が崩れやすい|https://image01.seesaawiki.jp/n/h/nai_ch/iADGEl7zt2.png https://image02.seesaawiki.jp/n/h/nai_ch/R1Lrve9AxZ.png|
-|turn one's back|背中を向ける|||
+|turn one's back|背中を向ける|カメラ目線を避けたいときは looking away を追加|https://image02.seesaawiki.jp/n/h/nai_ch/Lg32lMBNyn.png|
 |cover もしくは comic|表紙のようなレイアウト（nsfwの有無で健全向けか成人向けかに変わる）|レーティングの表示を消したければ、 ~~ UCにdoujin_coverを入れる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YML9wlPROx-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YML9wlPROx.png]]|
 |pov|主観|視線:カメラ~~体:正面|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4ZdWxoNOHr.png)|
-|face only|顔を強調する奴|||
 |dakimakura|抱き枕|assを付け足すと片側がケツを向けてくれやすくなる傾向|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D4RNtzIZKv.png)|
 |foot focus|足(くるぶしから下)フォーカス||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/72c8tESlGp.png)|
 |from below|ローアングル、アオリ、あおり||https://image02.seesaawiki.jp/n/h/nai_ch/7zMjdEI0ZE.png|
 |from above|ハイアングル、俯瞰||https://image01.seesaawiki.jp/n/h/nai_ch/YwiMkqcqoJ.png|
-|ass focus|尻中心の構図|||
-|upskirt|尻中心の構図（主にスカート内部）|||
-|head_out_of_frame|顔があまり写らなくなる|||
 |profile~~もしくは~~side profile|横顔||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/50f20a77475718c8-s.png)|
 |phone screen|スマホ越し視点||https://image01.seesaawiki.jp/n/h/nai_ch/JYD8gPgGs8.png|
+|face only|顔を強調する奴|||
+|head_out_of_frame|顔があまり写らなくなる|||
+|ass focus|尻中心の構図|||
+|upskirt|尻中心の構図（主にスカート内部）|||
+|solo|1人|danbooruの基準では、以下はsoloに含まれない~~ - 同一人物を異なる視点から描いたもの（→multiple views）~~ - 抱き枕の両面 ~~ - 1人以外がモブであり詳細に描かれない（→solo focus） ~~ - 性行為の一方が顔無しや身体一部だけ（→solo focus）||
 |}
 
 * 被写体サイズ

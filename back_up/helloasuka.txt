@@ -57,6 +57,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4080|16GB|Ryzen 9 7900X||11.7|--xformers|バッチサイズ1だとグラボが遊んでるみたいでCPUのパワーがまだ足りないっぽい|
+|RTX 4080 Super|16GB|Core i7-9700||21.4|xformers|PCIeがボトルネックっすね/Windows11 /NVIDIA Driver Ver.551.61 /MB B365/GPU PCIe3.0接続|
 |RTX 4080|16GB|Ryzen 5 5600G||13.2|--xformers|Ubuntu 23.10 / version: v1.7.0 / python: 3.11.6 /torch:2.0.1+cu118　(Forge/python:3.11.6/torch:2.1.2+cu121だと11.7s、Win11のForgeは12.5sぐらい)|
 |RTX 4070 Ti SUPER|16G|13700KF||14.7|--xformers||
 |RTX 4070 Ti SUPER|16G|13700KF||19.4|||
@@ -299,6 +301,7 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4080|16GB|Ryzen 9 7900X||9.8|--xformers|Windows11/v1.7.0|
 |RTX 4080|16GB|Ryzen 5 5600G||10.3|--xformers|version:v1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 /&#8192;gradio: 3.41.2 / Windows10|
 |RTX4090|24GB|Core i7-12700K||6.6|--xformers|TensorRT, Windows11|
 |RX 7900 XT|20GB|Ryzen 5 7600X|21.00|20.24|--opt-sdp-no-mem-attention --opt-sdp-attention|Lubuntu 22.04 LTS , ROCm 5.5.0 , Python 3.10.6 , Pytorch 2.0.1|
@@ -318,6 +321,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4080|16GB|Ryzen 9 7900X||9.1|--xformers|Windows11|
 |RTX 4080|16GB|Ryzen 5 5600G||9.4|--xformers|version:v1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 /&#8192;gradio: 3.41.2 / Windows10|
 |RTX 3060|12GB|Ryzen 5500||36.2|--xformers --autolaunch --opt-channelslast --enable-insecure-extension-access|Ubuntu22.04.3LTS@WSL2@Windows11 PL70% / version:v1.6.0 / python:3.10.10 / torch:2.0.1+cu118 / xformers:0.0.23+b73c0f2.d20231011 / gradio: 3.41.2|
 |RTX4090|24GB|Core i7-12700K||6.1|--xformers|TensorRT Windows11|
