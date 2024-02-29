@@ -54,6 +54,12 @@
 |aty (summon night)||サモンナイト3|アティ|V3。名前だけで出る。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6W1KDqhvFJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6W1KDqhvFJ.png]]| 
 |} 
 
+***　サンリオキャラ
+{| class="sort edit nanj_prompt_table" 
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
+|no humans, cinnamoroll, creature, blush stickers, smile, tail, solo, full body, ||サンリオキャラ|シナモロール|V3。作品名を入れるノリで"sanrio, "を入れるとキティの要素が混ざる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QLg1y6TQSf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/QLg1y6TQSf.png]]| 
+|} 
+
 **し 
 ***　地獄少女 
 {| class="sort edit nanj_prompt_table" 
@@ -112,7 +118,7 @@
 ***　ジュエルペットシリーズ
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
-|official style,1 girl, {mizushiro kanon}, jewelpet (series), black hair, long straight hair, ahoge, gray cardigan, school uniform, white pleated skirt, black tights, big red ribbon, reddish purple eyes, ||ジュエルペット サンシャイン|水城 花音|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GbzUd_4ZaV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/GbzUd_4ZaV.png]]|
+|official style,1 girl, {mizushiro kanon}, jewelpet (series), jewelpet sunshine, black hair, long straight hair, ahoge, gray cardigan, school uniform, white pleated skirt, black tights, big red ribbon, reddish purple eyes, ||ジュエルペット サンシャイン|水城 花音|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GbzUd_4ZaV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/GbzUd_4ZaV.png]]|
 |} 
 
 ***　STEINS;GATE（シュタインズ・ゲート） 
@@ -220,6 +226,12 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |mikasa ackerman||進撃の巨人|ミカサ・アッカーマン||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/nN55QIQdcT-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/nN55QIQdcT.png]]|
+|}
+
+***　進研ゼミ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1 girl, {{{zemi mama}}}, {{shinken-zemi}}, brown eyes , brown hair, low-tied_hair, purple turtleneck sweater, coral apron,  jeans, mole under the eye, large breasts, ladle, looking at viewer,{troubled lowered eyebrows}, {:o}, spoken_question_mark, sketch,||進研ゼミ|ゼミママ|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6ogbOu6xfu-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6ogbOu6xfu.png]]|
 |}
 
 ***　新世紀エヴァンゲリオン
@@ -641,6 +653,9 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(通常Ver.)|V3使用。zombieと指定しなくても肌が青くなることはある。悪しからず。|https://image01.seesaawiki.jp/n/h/nai_ch/rKT9oVAXUb.png|
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
+
+
+
 
 
 
