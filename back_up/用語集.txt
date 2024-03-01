@@ -7,7 +7,7 @@
 |A1111|AUTOMATIC1111|webuiと同義。人名だけどツールの名前として呼ばれがち。|
 |1111|AUTOMATIC1111|webuiと同義。このページでも1111と表記する。|
 |Any|Anything|二次イラスト系の有名モデル|
-|Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が早い |
+|Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が少し速い |
 |CN|ControlNet|専用のモデルを使用して構図を制御する仕組み。|
 |Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
 |DB|Dreambooth|学習方法の1つ。|
@@ -20,7 +20,7 @@
 |LCM|Latent Consistency Model|Stable Diffusionの亜種で、高速サンプリングができるモデル|
 |LoCon|LoRA for Convolutional Network|LoRAでは学習できていない領域まで拡張して学習するちょっと新しいやつ。|
 |LoRA|Low-Rank Adaptation|学習方法の1つ。1111のDB拡張で使うやつとkohyaで使うやつがある。|
-|LR|Learning Rate|学習率。学習のきめ細やかさ。|
+|LR|Learning Rate|学習率。学習のきめ細やかさあるいは速度。|
 |m2m|movie to movie|動画から動画を作る技術|
 |NAI|NovelAI|単なる略称。|
 |NAIFU|NovelAI AI Image Frontend Ultimate|NovelAIのエミュレーターの一つ。|
@@ -28,7 +28,8 @@
 |NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつや|
 |PEFT|Parameter Efficient Fine Tuning|LoRA・LoCon・LoRA-FAその他様々な亜種のように、少ないパラメーターで全体を学習するような仕組みのこと|
 |pony|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|XL用モデル|
-|SD|Stable Diffusion||
+|馬/お馬さん|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|ponyと同義。XL用モデル。|
+|SD|Stable Diffusion|単なる略称|
 |SFW|Safe for work|こっちはNがついてなくて全年齢や|
 |ST|Stable Tuner|学習方法の1つ。kohya系。|
 |TI|Textual Inversion|学習方法の1つ。|
@@ -39,19 +40,21 @@
 |webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
 |web版||NovelAIを公式サイト上で利用することを指すことが多い。|
 |XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。そのテスト版のSDXL 0.9を指す場合もあったが、こちらはほとんど使われていない|
-|赤ちゃん||初心者など難しい設定が困難であること。簡易インストーラー全般。由来は[[浦島太郎のために]]を参照 |
+|赤ちゃん||初心者など難しい設定が困難であること。簡易インストーラー全般。「赤ちゃん向け」は初心者でも簡単に使用できることを意味する。由来は[[浦島太郎のために]]を参照 |
 |アナル|Anlas|NovelAI公式の課金通貨。|
-|馬/お馬さん|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|XL用モデル|
 |浦島太郎||長期間離れてて遅れた人を指すのだが、技術革新が速すぎるので一晩で浦島太郎になったりする。 |
 |金脈|[[SD RESOURCE GOLDMINE>https://github.com/questianon/sdupdates]]|Stable Diffusionに関連するすべてのリソースとニュースを集めた総合的なサイト。1111を中心としてる。|
 |コピー機||シード値固定や過学習などによって似たような絵を連続出力すること。由来は[[浦島太郎のために]]を参照 |
 |層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
-|風船||閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
+|風船(&#127880;)||排泄物を指す。閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
 |魔人/魔神|[[Animagine XL>AnimagineXL3.0tips]]|XL用モデル|
+|animajin|Animagine XL|Anima''gine''の間違い|
 |マージ||Checkpoint Mergerで2〜3つのモデルを組み合わせること。|
 |マスピ|masterpiece|傑作。品質向上に使われるプロンプト。顔が特徴的。マスピ絵、マスピ顔とか言う。|
 |妖精さん||1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
-|ローカル版||NovelAIのモデルを1111で利用する形態を指すことが多い。|
+|ローカル版||NovelAIのモデルを1111で利用する形態を指すことが多い。最近は自身のパソコンやクラウドサービスで動かすStable Diffusionの事を指すことが多い。|
+|Cascade|Stable Cascade|Stability AIが2024年2月に発表した新しい画像生成モデルを指す。SDとは構造が大きく異なる。|
+|ギップル|git pull|リポジトリの変更をプル(ローカルに反映)するコマンド|
 
 * スレの言葉について
 

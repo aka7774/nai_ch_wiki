@@ -20,6 +20,9 @@
 [END]
 
 #contents
+*2024-03-01 sd-forge-layerdiffusionが公開される
+https://github.com/layerdiffusion/sd-forge-layerdiffusion
+
 *2024-02-23 sd-danbooru-tags-upsamplerが公開
 https://github.com/p1atdev/sd-danbooru-tags-upsampler
 LECOの作者であるp1atdev氏が入力されたプロンプトに続くdanbooruタグをLLMが生成するExtensionを公開した。
@@ -1480,6 +1483,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
