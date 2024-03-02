@@ -8,7 +8,8 @@ Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
 https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/
 kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツールが人気となっている。
 このページではsd-scripts関連の情報について雑に書いてある。
-2023年12月現在、ページの更新がほとんどされておらず、古くなっていることに留意。
+''ページの更新がほとんどされておらず、古くなっていることに留意。''
+&size(10){このページもといローカル部のページのほとんどが更新停止で悲しい&#129402;}
 ''ここの情報はSD1.5に関するもの。現時点でSDXLの情報は無い。''
 
 * 公式情報
