@@ -11,7 +11,8 @@ https://majinai.art/ja/index.php?model=67ab2fd8ec
 おそらく重要なのはポジにsource_anime,ネガにsource_pony, source_furry, source_cartoon,を入れること。
 また、効きの良い絵師タグを入れると安定する。絵師タグを入れないと絵柄のばらつきが激しい。
 
-R18絵を出したい場合、他のモデルとは異なり「nsfw」の代わりに「rating_explicit」を使うこと（以下の例を参照）。「nsfw」を入れると著しく絵の質が低下する特性がある。
+R18絵を出したい場合、他のモデルとは異なり「nsfw」の代わりに「rating_explicit」を使うこと。といっても指定しなくても勝手に脱ぐことも多いが。
+「nsfw」を入れると著しく絵の質が低下する特性がある。
 
 公式の記載法
 =|BOX|
@@ -22,6 +23,11 @@ score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up, just descri
 =|BOX|
 score_9, score_8_up, score_7_up, BREAK source_anime, rating_explicit, best quality, masterpiece, uncensored, 1girl,
 ||=
+
+公式で説明されているレーティングタグ
+|rating_safe|従来のsfw|
+|rating_questionable|基本的に脱がない|
+|rating_explicit|従来のnsfw|
 
 **negative prompt
 
