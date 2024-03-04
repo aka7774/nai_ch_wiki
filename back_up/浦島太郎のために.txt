@@ -24,12 +24,8 @@
 LayerDiffusionはControlNetを開発したメンバーが発表したもので、画像生成モデルが透過画像を生成できるようにしたものらしい。
 - [[Layer Diffusionについて簡単に解説したツイート>https://twitter.com/sayhi2ai_jp/status/1763032942086099058]]
 - [[Layer Diffusionの論文>https://arxiv.org/abs/2402.17113]]
-
-このLayerDiffusionが使える環境がforge向けに公開された
-- [[sd-forge-layerdiffusion>https://github.com/layerdiffusion/sd-forge-layerdiffusion ]]
-
+このLayerDiffusionが使える環境がforge向けに公開された（[[sd-forge-layerdiffusion>https://github.com/layerdiffusion/sd-forge-layerdiffusion ]]）
 スレ民が使った感想としては以下がよくまとまっているので引用する。
-
 =|BOX|
 0027 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ de28-9+AH)
 2024/03/02(土) 18:57:42.58ID:g50+9iiw0
@@ -42,8 +38,6 @@ LayerDiffusionはControlNetを開発したメンバーが発表したもので�
 　完全に隠す感じで生成しがち
 ・i2iはあと1週間くらいで来るらしい
 ||=
-
-
 大きく環境が変化するまで時間はまだ掛かりそうだが、今後に期待したい。
 *2024-02-23 sd-danbooru-tags-upsamplerが公開
 https://github.com/p1atdev/sd-danbooru-tags-upsampler
@@ -1505,6 +1499,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
