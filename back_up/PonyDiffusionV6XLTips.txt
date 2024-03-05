@@ -72,6 +72,10 @@ VAEは内蔵してるので必要ない。SD1.5用のVAEを適用すると露骨
 サンプラーにEuler aの代わりにRestartを使うと人体の精度が上がるという報告がある。
 Restartはやや癖が強い。ガサガサした絵柄になりやすい感じ。
 https://civitai.com/models/257749?modelVersionId=290640&dialog=commentThread&commentId=343921
+
+プロンプトについて。Ponyでは学習元の絵につけるタグとして、e621というサイトのタグを使用しているようだ。
+これがdanbooru系列とは異なるので、danbooru系のプロンプトに反応しないようならe621のタグに置き換えてみると、もしかしたら通るかもしれない……?
+（例えばdanbooru上のfutanariタグはe621ではintersexである。danbooru上のfrom belowはe621でlow-angle viewである。）
 *プロンプトだけで出せるキャラ、絵師タグ
 海外の有志が調べたこちらを参照
 https://rentry.org/ponyxl_loras_n_stuff
