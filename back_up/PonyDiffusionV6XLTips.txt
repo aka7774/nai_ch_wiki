@@ -73,8 +73,9 @@ VAEは内蔵してるので必要ない。SD1.5用のVAEを適用すると露骨
 Restartはやや癖が強い。ガサガサした絵柄になりやすい感じ。
 https://civitai.com/models/257749?modelVersionId=290640&dialog=commentThread&commentId=343921
 
-プロンプトについて。Ponyでは学習元の絵につけるタグとして、e621というサイトのタグを使用しているようだ。
-これがdanbooru系列とは異なるので、danbooru系のプロンプトに反応しないようならe621のタグに置き換えてみると、もしかしたら通るかもしれない……?
+プロンプトについて。Ponyでは学習元の絵につけるタグとして、e621というケモナー用danbooru系サイトのタグを使用しているようだ。
+https://e621.net/wiki_pages/204（タグwiki）
+これが一般的なdanbooru系列とは異なるので、danbooru系のプロンプトに反応しないようならe621のタグに置き換えてみると、もしかしたら通るかもしれない……?
 （例えばdanbooru上のfutanariタグはe621ではintersexである。danbooru上のfrom belowはe621でlow-angle viewである。）
 *プロンプトだけで出せるキャラ、絵師タグ
 海外の有志が調べたこちらを参照
@@ -92,6 +93,7 @@ https://note.com/hakomikan/n/nb6dd68a1bd9e
 WebUI 1.7以前であれば、プロンプトの語順を変えてみるか以下のExtensionを導入する。
 https://github.com/hako-mikan/sd-webui-prevent-artifact
 1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。
+ただし根本的な解決策ではなく、現在でもまれにノイズ画像が発生する。
 
 [+] 古い情報
 AnimagineXL3.0と同様のバグがあるらしく、不明な条件でノイズ画像が出る。
@@ -112,3 +114,5 @@ LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散
 
 * Controlnetとの相性
 原因不明だが一部のControlnetとの相性が悪く、特にOpenposeでの指定ポーズは全く反映されない。
+
+

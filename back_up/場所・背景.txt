@@ -44,8 +44,13 @@
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
 |||風俗||
-||和室|||
+|japanese traditinonal room|和室|tatamiでもそれっぽくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xEvQkJ81lR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xEvQkJ81lR.png]]|
 ||学校|||
+|sports hall|体育館|衣装の指定がないとブルマなどの体操着になる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aaH0Arpw08-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aaH0Arpw08.png]]|
+|sports hall storage|運動倉庫。~~体育館などにある倉庫。|人によっては呼び方が違うかもしれない。~~このプロンプトだと明るい部屋になるので、暗い倉庫にしたければ下記のwarehouse・stockroom・storeroomにvaulting horse(跳び箱)を追加すると良い。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/IPzpMV1uZn-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/IPzpMV1uZn.png]]|
+|in gym|スポーツジム|inを入れないと屋外になる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bttmG8E7A2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/bttmG8E7A2.png]]|
+|in warehouse~~in stockroom|倉庫。~~正確には物流倉庫のような商品・製品の保管を行うための大型倉庫であり建物全体が倉庫となる。|inを入れないと倉庫的な建物の外観になる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/bVfBKtFZXw-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/bVfBKtFZXw.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/akO1SUnzIW-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/akO1SUnzIW.png]]|
+|in storeroom|物置部屋。~~上と比べると建物の一室を使ったこじんまりとした倉庫。|warehouse・stockroomと大差ないような絵が出力されることもある。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/50x_jyMPD_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/50x_jyMPD_.png]]|
 |indoor, rei no pool, no human, |例のプール|V3使用。no humanは背景として出すために入れているので、キャラの背景に使う場合は要らない。とある撮影スタジオにあるプール風になる。実物はそんなに大きなプールではない。|https://image02.seesaawiki.jp/n/h/nai_ch/1REETUBbuf.png|
 |throne room|玉座の間||https://image01.seesaawiki.jp/n/h/nai_ch/wI5TqhaRpd.png|
 |cage|籠・檻|日本語でもそのまま「ケージ」と呼ぶことも多い。よく間違う人がいるが「ゲ」ージではない。|https://image02.seesaawiki.jp/n/h/nai_ch/oe_CIxnY0v.png|

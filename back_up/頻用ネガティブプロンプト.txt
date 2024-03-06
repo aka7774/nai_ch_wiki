@@ -5,7 +5,6 @@
 *キーワード
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-aaa
 |@_@|ぐるぐる目|瞳の崩れを抑える効果があるらしい||
 |earrings,piercing|イヤリング、ピアス|勝手に描写されることがあるため||
 |ugly|醜い|リアル系モデルでほぼ必須のネガ||
@@ -76,3 +75,4 @@ aaa
 |ng_deepnegative_v1_75t|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://civitai.com/models/4629/deep-negative-v1x||
 |EasyNegative|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://huggingface.co/datasets/gsdf/EasyNegative||
 |}
+

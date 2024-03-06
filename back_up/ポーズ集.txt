@@ -86,7 +86,9 @@ danbooru のポーズ関係のタグ一覧はこちら https://danbooru.donmai.u
 |curtsey|スカートをつまんで挨拶||https://image01.seesaawiki.jp/n/h/nai_ch/rpQIwQpI4C.png|
 |paw pose|ニャーって感じの手||https://image02.seesaawiki.jp/n/h/nai_ch/xajQWSi43n.png|
 |covering chest by hand|手で胸を隠す|hideよりも安定？現在形のcoverの場合雑誌の表紙っぽくなる(構図集へ記載)|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dJehpEXjFI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dJehpEXjFI.png]]|
-|on stomach|うつ伏せ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/f2x8vaBfL_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/f2x8vaBfL_.png]]|
+|on stomach|うつ伏せ|足を上げる、頬杖をつくなど何らかのポーズを取ることが多いのでプロンプトで調整する必要がある。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/f2x8vaBfL_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/f2x8vaBfL_.png]]|
+|on side|横向きに横たわる||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DAxMdKM9A4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/DAxMdKM9A4.png]]|
+|on back|仰向け||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/CZlneKww8X-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/CZlneKww8X.png]]|
 |head rest|頬杖||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1PyZ0_yicH-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/1PyZ0_yicH.png]]|
 |crossed arms|腕組み|Arms foldedでも同様の効果がある。~~under breastsをつけると胸を強調する構図になる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/76db76c8e75f44bf-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/76db76c8e75f44bf.png]]~~[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cqHFcVtERe-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cqHFcVtERe.png]]|
 |leaning forward |前かがみになる |呪文の成功率がかなり不安定~~leaning forwardだけのほうが成功率上がるので「bend down」削除しました。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_OuztzoDUL-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_OuztzoDUL.png]] |
