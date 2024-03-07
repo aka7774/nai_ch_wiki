@@ -35,15 +35,15 @@
 |TI|Textual Inversion|学習方法の1つ。|
 |t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
 |uc|unconditional conditioning|Negative Promptと同義|
-|UC L+B|Undesired Content Low Quality + Bad Anatomy|定型のネガティブプロンプト。|
-|WD|Waifu Diffusion|ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
+|UC L+B|Undesired Content Low Quality + Bad Anatomy|NovelAIの定型のネガティブプロンプト。|
+|WD|Waifu Diffusion|最初期に出たアニメモデル。ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
 |webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
 |web版||NovelAIを公式サイト上で利用することを指すことが多い。|
 |XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。そのテスト版のSDXL 0.9を指す場合もあったが、こちらはほとんど使われていない|
-|赤ちゃん||初心者など難しい設定が困難であること。簡易インストーラー全般。「赤ちゃん向け」は初心者でも簡単に使用できることを意味する。由来は[[浦島太郎のために]]を参照 |
+|赤ちゃん||初心者など難しい設定が困難である人。簡易インストーラー全般。「赤ちゃん向け」は初心者でも簡単に使用できることを意味する。由来は[[浦島太郎のために]]を参照 |
 |アナル|Anlas|NovelAI公式の課金通貨。|
 |浦島太郎||長期間離れてて遅れた人を指すのだが、技術革新が速すぎるので一晩で浦島太郎になったりする。 |
-|金脈|[[SD RESOURCE GOLDMINE>https://github.com/questianon/sdupdates]]|Stable Diffusionに関連するすべてのリソースとニュースを集めた総合的なサイト。1111を中心としてる。|
+|金脈|[[SD RESOURCE GOLDMINE>https://github.com/questianon/sdupdates]]|Stable Diffusionに関連するすべてのリソースとニュースを集めた総合的なサイト。1111を中心としてる。最近は更新されていない|
 |コピー機||シード値固定や過学習などによって似たような絵を連続出力すること。由来は[[浦島太郎のために]]を参照 |
 |層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
 |ちびたい|[[Civitai>https://civitai.com/]]|モデル配布サイト|
@@ -53,9 +53,10 @@
 |マージ||Checkpoint Mergerで2〜3つのモデルを組み合わせること。|
 |マスピ|masterpiece|傑作。品質向上に使われるプロンプト。顔が特徴的。マスピ絵、マスピ顔とか言う。|
 |妖精さん||1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
-|ローカル版||NovelAIのモデルを1111で利用する形態を指すことが多い。最近は自身のパソコンやクラウドサービスで動かすStable Diffusionの事を指すことが多い。|
+|ローカル版||自身のパソコンやクラウドサービスで動かすStable Diffusionの事を指すことが多い。NovelAIのリークモデルをWebUIで利用する形態を指すこともある。|
 |Cascade|Stable Cascade|Stability AIが2024年2月に発表した新しい画像生成モデルを指す。SDとは構造が大きく異なる。|
 |ギップル|git pull|リポジトリの変更をプル(ローカルに反映)するコマンド|
+|SD3|Stable Diffusion 3|Stability AIが2024年2月に発表したStable Diffusionの新バージョン。SDXLを上回る性能を誇る。''まだ一般公開されていない。''|
 
 * スレの言葉について
 
@@ -96,14 +97,16 @@ NovelAIも1111もブラウザで動作する(一般用語としてのWebユー�
 (別のコミュニティから来た人には違和感があるらしい)
 
 ** 学習について
-
+現在はLoRAが主流だが、ここでは意味の説明は書かない。それぞれの手法の詳細は個別ページを参照。
+[+] 古い情報
 TI/DB/HNのそれぞれの効果や使い分けは研究中の段階であり、
 安易に「こうしたい時はこれを使うと良い」と断言しにくいので、
 ここでは意味の説明までは書かないことにした。
+[END]
 
 あと「学習」「追加学習」という言葉に狭義の定義をする人もいるけど、ここでは区別していない。
 
-「正規化(Normalization)」と「正則化(Regularization)」も機械学習の用語としては意味が違う。
+「正''規''化(Normalization)」と「正''則''化(Regularization)」も機械学習の用語としては意味が違う。
 DreamBoothのClassificationは正則化のほう。Layer Normalizationが正規化。
 
 ** 層別マージ/階層マージ
