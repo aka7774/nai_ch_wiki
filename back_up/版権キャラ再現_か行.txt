@@ -242,6 +242,7 @@
 ***　キミキス
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|futami eriko, kimi kiss, black hair, black eyes, long hair, kibina high school uniform, pleated skirt, short sleeves, blue skirt, red neckerchief, smile, solo, cowboy shot,  | |キミキス|二見瑛理子|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1f1MYqPLzX-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1f1MYqPLzX.png]]|
 |mizusawa mao, kimi kiss, brown hair, twin braids, brown eyes, school uniform, solo, cowboy shot,  | |キミキス|水澤摩央|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N8SQrZeIyK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N8SQrZeIyK.png]]|
 |}
 
@@ -272,6 +273,7 @@
 ***　ギャラクシーエンジェル
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|ranpha franboise, galaxy angel, blonde hair, long hair, navel cutout, dress, cleavage cutout, brown eyes, red dress, hair ornament, hair intakes, center opening, double bun, china dress, forehead mark, solo, cowboy shot, ||ギャラクシーエンジェル|蘭花・フランボワーズ|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NBglQkB1AN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NBglQkB1AN.png]]|
 |vanilla H, galaxy angel, loli, green hair, long hair, red eyes, ponytail, {{green}} frill,white military uniform, white pantyhose,puffy sleeves||ギャラクシーエンジェル|ヴァニラ・H|フリルのgreenは強調しないと高確率で青くなる。アニメ版の人形（ノーマッド）はデフォルトでは出ないが、たまに色違いの人形が出る。|https://image01.seesaawiki.jp/n/h/nai_ch/NejmiEPt7T.png|
 |mint blancmanche, galaxy angel, loli, blue hair, animal ears, short hair, brown eyes, ahoge, black thighhighs, white gloves, short dress, military uniform, open clothes, puffy sleeves, neck ribbon, solo, cowboy shot,||ギャラクシーエンジェル|ミント・ブラマンシュ|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DIN1OHntYK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/DIN1OHntYK.png]]|
 |official style, 2d cel anime, {{milfeulle sakuraba}}, {{galaxy angel}}, very aesthetic, best quality, intricate, overall detail, 1 girl, pink hair, long hair, blue eyes, white hair flower, pink pencil skirt, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ギャラクシーエンジェル|ミルフィーユ・桜葉|V2使用。うろ覚えで描いている程度には似る。|https://image01.seesaawiki.jp/n/h/nai_ch/lYq7LPMp6Z.png|
@@ -435,6 +437,12 @@
 |{purple jacket off shoulder},{{shinjou akane}}, red eyes,{white shirt}, black skirt, stocking, short hair, {lavender ribbon},midium hair, lavender hair, big breasts,ssss.gridman, {{evil smile}}, black pantyhose,{mastarpiece}, &#91;megami magazine],|{sleeveless},{bare shoulders},purple shirt,red ribbon,blue ribbon,|SSSS.GRIDMAN|新条アカネ|seed:2270787659ネガティブに入れてもかなりの確率で肩だしシャツになる|https://image02.seesaawiki.jp/n/h/nai_ch/ZbwgRBOEWu.png|
 |{{{takarada rikka}}}, ssss.gridman, blue eyes, black hair, small breasts, thick thighs, white cardigan, ||SSSS.GRIDMAN|宝多六花|1731154410|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8YLIolHTRz.png)>https://image01.seesaawiki.jp/n/h/nai_ch/8YLIolHTRz.png]]|
 |1girl, solo, bb_cut, {{{{tsurime}}}}, purple_hair, {white hair}higuchi_madoka, idolmaster_shiny_colors, nishikino_maki, &#91;shinjou_akane], &#91;ssss.gridman]{{blue_eyes}}, short_hair, hair_between_eyes, bangs, swept_bangs, {{{thighs}}}wide_hips, large_breasts, purple_shorts, short_necktie, purple_necktie, white_shirt, white_jacket, open_coat, gloves, white_glovespauldrons, ||SSSS.DYNAZENON（SSSS.GRIDMANシリーズ）|ムジナ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0tTah4RBYF-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/0tTah4RBYF.png]]|
+|}
+
+***　クレヨンしんちゃん
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, anime coloring, {{nohara misae}}, crayon shin-chan, very aesthetic, best quality, intricate, overall detail, 1 girl, adult, brown hair, medium hair, wavy hair, black eyes, casual clothes, pink shirt, blue pants, standing, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |クレヨンしんちゃん|野原みさえ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/21xnublFDh.png|
 |}
 
 ***　クロノクルセイド
@@ -655,6 +663,7 @@
 ***　小林さんちのメイドラゴン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|saikawa riko, kobayashi-san chi no maidragon, loli, child, brown hair, hair ornament, long hair, aqua eyes, print shirt, red skirt, long sleeves, pigeon-toed, green shirt, smile, solo, cowboy shot,| |小林さんちのメイドラゴン|才川リコ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0NswhfKQoi-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/0NswhfKQoi.png]]|
 |official style, 2d cel anime, {{ilulu (maidragon)}}, {{kobayashi-san chi no maidragon}}, very aesthetic, best quality, intricate, overall detail, 1 girl, loli, huge  breasts, black costume, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |小林さんちのメイドラゴン|イルル|V2使用。ロリキャラとして出力されがちなので、胸の大きさは指定した方が安定する。|https://image01.seesaawiki.jp/n/h/nai_ch/yMEewWjTg8.png|
 |official style, 2d cel anime, {{lucoa (maidragon)}}, {{kobayashi-san chi no maidragon}}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |小林さんちのメイドラゴン|ルコア（ケツァルコアトル）|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/n2lNBvz0rZ.png|
 |official style, 2d cel anime, {{elma (maidragon)}}, {{kobayashi-san chi no maidragon}}, very aesthetic, best quality, intricate, overall detail, 1 girl, horn, black hair, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |小林さんちのメイドラゴン|エルマ|V2使用。髪色、目の色、角を指定すると安定する。|https://image02.seesaawiki.jp/n/h/nai_ch/ZTZHex4LBP.png|
@@ -686,6 +695,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |style of  mitsumi misato, 2000s (style), game cg, takase mizuki, comic party, very aesthetic, best quality, intricate, overall detail, 1 girl, red hair, ponytail, blue eyes, yellow ribbon, serafuku, green pleated shirt, grey skirt, white thighhighs, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, bow tie,|こみっくパーティー|高瀬瑞希|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/nLw8710sYq.png|
 |}
+
 
 
 

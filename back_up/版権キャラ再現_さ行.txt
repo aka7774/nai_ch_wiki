@@ -66,6 +66,12 @@
 |aty (summon night)||サモンナイト3|アティ|V3。名前だけで出る。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6W1KDqhvFJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6W1KDqhvFJ.png]]| 
 |} 
 
+***　サルゲッチュ 
+{| class="sort edit nanj_prompt_table" 
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
+|sayaka (saru getchu), loli, green eyes, gloves, smile, bike shorts, short sleeves, twintails, short twintails, skirt, brown hair, shorts under skirt, solo, cowboy shot, ||サルゲッチュ|サヤカ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0vxMOPESpd-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/0vxMOPESpd.png]]| 
+|} 
+
 ***　サンリオキャラ
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
@@ -553,6 +559,7 @@
 ***　ゼロの使い魔
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1boy, hiraga saito, zero no tsukaima, black hair, blue eyes, long sleeves, hair between eyes, blue jacket, turtleneck, antenna hair, solo, cowboy shot,   ||ゼロの使い魔|平賀才人|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/v58HOPa63t-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/v58HOPa63t.png]]|
 |tabitha (zero no tsukaima), blue hair, short hair, blue eyes, glasses, solo, cowboy shot,  ||ゼロの使い魔|タバサ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zJ9VZVO7ty-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/zJ9VZVO7ty.png]]|
 |2d cel anime, {{henrietta de tristain, zero no tsukaima}}, very aesthetic, best quality, intricate, overall detail, 1 girl, princess, purple medium hair, blue eyes, white gown, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, louise francoise le blanc de la valliere,|ゼロの使い魔|アンリエッタ・ド・トリステイン|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/wEJyVAwwta.png|
 |2d cel anime, {{tiffania westwood, zero no tsukaima}}, very aesthetic, best quality, intricate, overall detail, 1 girl, long hair, green clothes, large breasts, bare legs, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, louise francoise le blanc de la valliere,|ゼロの使い魔|ティファニア・ウエストウッド|V2使用。指定なしでブロンドのエルフ耳になるのでキャラとしては認識している。服装は再現しないが・・・。|https://image01.seesaawiki.jp/n/h/nai_ch/nF8mzu4J1s.png|
@@ -626,6 +633,12 @@
 | senran kagura, ikaruga (senran kagura),White uniform with yellow lines,white skirt,{black pantyhose},black hair,long hair,green eyes,||閃乱カグラ|斑鳩|seed:41741266、衣装の完全再現はできず|[[https://image02.seesaawiki.jp/n/h/nai_ch/CVSMtigCpy.png]]|
 |}
 **そ
+***　ゾイド
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kotona elegance, zoids genesis, elbow gloves, thighhighs, pink gloves, red dress, earrings, purple eyes, short dress, long hair, green hair, solo, cowboy shot, | |ゾイドジェネシス|コトナ・エレガンス|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/I3jC3AppvB-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/I3jC3AppvB.png]]|
+|}
+
 ***　ソードアート・オンライン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -707,6 +720,8 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(通常Ver.)|V3使用。zombieと指定しなくても肌が青くなることはある。悪しからず。|https://image01.seesaawiki.jp/n/h/nai_ch/rKT9oVAXUb.png|
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
+
+
 
 
 
