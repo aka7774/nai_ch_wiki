@@ -82,6 +82,15 @@ https://e621.net/wiki_pages/204（タグwiki）
 https://rentry.org/ponyxl_loras_n_stuff
 
 こちらのキャラリストは公式のものではないため学習されていないキャラも多く含まれているようだ。
+
+3文字のトークンで特定のスタイルが学習されていることが判明した。
+望ましくないスタイルをネガティブに入れることで、より安定して好みの画像を出せることが期待される。
+=|BOX|
+0853今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c688-yO80)
+2024/03/12(火) 21:08:26.98ID:knq5zwQ20
+3文字zip落としてチラ見しながら人間出力してなさそうなのとか適当に拾ってネガ作ったら結構絵柄変わった
+aer, aur, bif, gpo, gzl, hnj, aca, frw, gkb, gar, oir, zbi, zac, yle, rzl, smr, wsp, tyr, uji, xie, xio, vml, zvu, 
+||=
 * バグ
 ** 特定のプロンプトでノイズまみれになる
 稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
@@ -114,5 +123,6 @@ LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散
 
 * Controlnetとの相性
 原因不明だが一部のControlnetとの相性が悪く、特にOpenposeでの指定ポーズは全く反映されない。
+
 
 
