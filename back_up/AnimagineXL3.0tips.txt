@@ -43,6 +43,17 @@ worst quality, low qualityだけでもいいかも
 *プロンプトだけで出せるキャラ
 https://huggingface.co/spaces/Linaqruf/animagine-xl/blob/main/wildcard/character.txt
 ワイルドカードにぶっこむとキャラガチャがはかどる。（1boyもいるからnsfwの絵を出すときは注意。事前にgrep -v boy）
+
+[[PonyDiffusion>PonyDiffusionV6XLTips]]と同様に隠しトークンが存在する疑惑が浮上した。
+3文字を入力するだけでPonyと同様に絵のスタイルが大きく変化する挙動が確認されている。
+=|BOX|
+0050今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 42e8-WtKV)
+2024/03/13(水) 16:40:57.56ID:SvFDOIf60
+サンイチ
+魔人は3文字でどうなるのか少しだけ試してみたで、プロンプトは「1girl, ***」でネガティブは無しや
+https://files.catbox.moe/9crjs1.jpg
+ワイが知ってるキャラや画風は無いんやけど、もっと作れば出てくるんかな
+||=
 *なんか絵がマスピっぽくて好きじゃない
 クォリティタグのmasterpieceやbest qualityを入れると露骨に絵が変わるからどれを使うか抜くか色々試してみよう
 
@@ -71,3 +82,4 @@ https://github.com/hako-mikan/sd-webui-prevent-artifact
 ※hair等の部位プロンプトを近くに連続して羅列すると発生しやすいか？トークンの位置でも影響が強い。
 ほかにもWebUIの設定のPad prompt/negative prompt to be same lengthをオフにしてみるとよい。
 [END]
+

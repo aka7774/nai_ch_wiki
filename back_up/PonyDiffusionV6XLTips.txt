@@ -79,18 +79,28 @@ https://e621.net/wiki_pages/204（タグwiki）
 （例えばdanbooru上のfutanariタグはe621ではintersexである。danbooru上のfrom belowはe621でlow-angle viewである。）
 *プロンプトだけで出せるキャラ、絵師タグ
 海外の有志が調べたこちらを参照
-https://rentry.org/ponyxl_loras_n_stuff
+https://rentry.org/ponyxl_loras_n_stuff（通称Pony Note）
 
 こちらのキャラリストは公式のものではないため学習されていないキャラも多く含まれているようだ。
 
-3文字のトークンで特定のスタイルが学習されていることが判明した。
-望ましくないスタイルをネガティブに入れることで、より安定して好みの画像を出せることが期待される。
+**3文字トークン
+3文字のトークンで特定のスタイルが学習されていることが判明した。詳細は上記Pony NoteのReverse Engineered Hashed Tokensを参照のこと。
+望ましくないスタイルをネガティブに入れることで、より安定して好みの画像を出せるものと思われる。
+本スレによると、ネガに3文字を多数入れてもさほど効果がない、逆に思い通りの画像が出ないなどの報告もあるので今後の研究が期待される。
+
+''aca,ces,gpo''は''グロテスクな画像''が重点的に学習されているようなのでネガに入れても損はないだろう。逆にこれらをポジに入れるのは禁物。
 =|BOX|
-0853今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c688-yO80)
-2024/03/12(火) 21:08:26.98ID:knq5zwQ20
-3文字zip落としてチラ見しながら人間出力してなさそうなのとか適当に拾ってネガ作ったら結構絵柄変わった
-aer, aur, bif, gpo, gzl, hnj, aca, frw, gkb, gar, oir, zbi, zac, yle, rzl, smr, wsp, tyr, uji, xie, xio, vml, zvu, 
+0594今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c688-yO80)
+2024/03/13(水) 02:46:32.21ID:90RW5TM/0
+ワイがebaraで3文字画像見ながら適当にネガ作ったらトークン数大杉になってしまった
+でもとりあえず入れておくと絵柄LoRAがブレなくなって素直に使えるようになったり手ぐちゃとかの頻度が下がった気がするんやけど他の人の意見も聞いてみたい
+
+人間やgirlが出てなかったり悪影響与えてそうなやつ
+aca, aer, api, aur, bem, bif, bzi, bzl, frw, gar, gkb, gor, gpc, gpo, gvb, gzl, hnj, kzl, lbv, lwb, mjy, mtd, mwb, mwf, oir, olu, pbi, pdg, pdk, pdl, pdn, pdo, pkm, pzl, qpp, rek, rok, rzl, sbk, sid, smr, tyr, uji, vex, vml, wsp, xie, xio, yle, zac, zbi, zvu,
+落書きみたいのとかアクが強かったりするやつ（こっちはなくてもいいかも　背景出にくいのを改善目的で作った）
+aey, aff, aku, alp, baf, bfu, bip, bks, bku, bwf, bwu, csz, dbu, epg, evg, fbv, fey, ffs, fii, fla, gcg, gcx, gjv, grp, gsf, hag, hbz, hda, ilb, imf, ixz, kmq, kmz, kpm, kwl, kzg, lbq, lek, lpt, luz, lwl, lym, mdf, mdw, mlx, nrf, nvo, nvu, obo, ohw, oii, ojn, owz, oxz, oyz, paf, par, pjy, pme, pml, poo, pri, psm, pvo, pwl, pwn, pxg, qdc, qdl, qlt, rha, rjz, rpz, rrg, rsl, shq, sht, smg, ttp, uhf, ujf, uyf, uyz, vag, vbi, vdc, vdl, ven, vfc, wbi, wnw, wpw, xiq, xlx, 
 ||=
+
 * バグ
 ** 特定のプロンプトでノイズまみれになる
 稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
@@ -123,6 +133,7 @@ LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散
 
 * Controlnetとの相性
 原因不明だが一部のControlnetとの相性が悪く、特にOpenposeでの指定ポーズは全く反映されない。
+
 
 
 
