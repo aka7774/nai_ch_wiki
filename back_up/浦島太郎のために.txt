@@ -76,6 +76,7 @@ Animagineでも、Ponyと同様にランダムな英数字3文字を入れるこ
 
 *2024-03-12 Ponyに埋め込まれたタグの研究が盛んに
 PonyDiffusionV6XLには、イラストレーターなどのタグが英数字3文字でひそかに埋め込まれていることが判明。なんJNVA部★356 https://fate.5ch.net/test/read.cgi/liveuranus/1710169059/ の中盤からこの話題が急激に増えスレが加速した。スレ終盤にはスクリプト荒らしが来襲しカオスに。
+- 参考：[[PonyDiffusionV6XLTips]]
 *2024-03-01 sd-forge-layerdiffusionが公開される
 LayerDiffusionはControlNetを開発したメンバーが発表したもので、画像生成モデルが透過画像を生成できるようにしたものらしい。
 - [[Layer Diffusionについて簡単に解説したツイート>https://twitter.com/sayhi2ai_jp/status/1763032942086099058]]
@@ -1555,6 +1556,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
