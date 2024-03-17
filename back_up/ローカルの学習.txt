@@ -46,8 +46,9 @@ Dreamboothから派生。ウェイトの差分を出力する。軽量、高性�
 - 設定項目が非常に多いので初見だと難しいかも
 
 *** DoRA(Weight-Decomposed Low-Rank Adaptation)
-directionをファインチューンすることでLoRAの精度問題を改善するらしい。
+方向ベクトルをファインチューンすることでLoRAの精度と安定性を改善するらしい。
 https://arxiv.org/abs/2402.09353
 
 LyCORISに実装された。
 LyCORISでnetwork_argsにdora_wd=Trueを指定すると使える。
+使用するには1111のdevブランチが必要。
