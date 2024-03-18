@@ -20,6 +20,14 @@
 [END]
 
 #contents
+
+*2024-03-18 Animagine XL 3.1がリリース
+https://huggingface.co/cagliostrolab/animagine-xl-3.1
+https://cagliostrolab.net/posts/animagine-xl-v31-release
+Linaqurf氏らがAnimagine XL 3.0の後継の「Animagine XL 3.1」を公開した。
+3.0で出なかった多くのアニメキャラが出せるようになった。
+Quality tagsの仕様が変更されたことに注意。Aesthetic Tagsも追加された。
+-参考：[[animagine31tips]]
 *2024-03-14 釈迦に説法構文
 
 初出は以下のスレ
@@ -1556,6 +1564,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

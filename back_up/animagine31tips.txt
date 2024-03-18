@@ -1,20 +1,19 @@
-*AnimagineV3どこ？
-標準版(通常はこっちを使う)
-https://huggingface.co/cagliostrolab/animagine-xl-3.0
-
-Base(推論目的では非推奨)
-https://huggingface.co/cagliostrolab/animagine-xl-3.0-base
+*Animagine XL 3.1どこ？
+https://huggingface.co/cagliostrolab/animagine-xl-3.1
 
 *プロンプトの書き方
-今までと違う独特のプロンプトルールあり
-https://cagliostrolab.net/posts/animagine-xl-v3-release
+AnimagineXL3.0とはまた違う独特のプロンプトルールあり
+https://cagliostrolab.net/posts/animagine-xl-v31-release
 推奨だが必ずしも従う必要はない。
 
 *推奨事項
 CFG Scaleは5〜7、Euler Aで30ステップ未満。
 VAEは内蔵してるのか指定しなくても(1111だとNone)動く。未指定ならNo-half VAEは不要。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
 解像度は1024x1024以上(画素数が1024x1024=1048576画素前後)を強く推奨。
-推奨ネガnsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name
+推奨ネガ
+=|BOX|
+nsfw, lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]
+||=
 worst quality, low qualityだけでもいいかも
 
 *推奨解像度
@@ -41,20 +40,10 @@ worst quality, low qualityだけでもいいかも
 1111のWebUIならモデル落としていつもの場所に入れるだけ、FooocusやComfyUIも軽くて人気
 
 *プロンプトだけで出せるキャラ
-https://huggingface.co/spaces/Linaqruf/animagine-xl/blob/main/wildcard/character.txt
+%%https://huggingface.co/spaces/Linaqruf/animagine-xl/blob/main/wildcard/character.txt%%
+↑3.0なんで3.1用あったらURL書き換えてクレメンス
 ワイルドカードにぶっこむとキャラガチャがはかどる。（1boyもいるからnsfwの絵を出すときは注意。事前にgrep -v boy）
 
-[[PonyDiffusion>PonyDiffusionV6XLTips]]と同様に隠しトークンが存在する疑惑が浮上した。
-3文字を入力するだけでPonyと同様に絵のスタイルが大きく変化する挙動が確認されている。
-ただし、SDの仕様(三文字に似た別の単語が影響する？)によるものが原因の可能性があることを留意すべし。
-=|BOX|
-0050今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 42e8-WtKV)
-2024/03/13(水) 16:40:57.56ID:SvFDOIf60
-サンイチ
-魔人は3文字でどうなるのか少しだけ試してみたで、プロンプトは「1girl, ***」でネガティブは無しや
-https://files.catbox.moe/9crjs1.jpg
-ワイが知ってるキャラや画風は無いんやけど、もっと作れば出てくるんかな
-||=
 *なんか絵がマスピっぽくて好きじゃない
 クォリティタグのmasterpieceやbest qualityを入れると露骨に絵が変わるからどれを使うか抜くか色々試してみよう
 絵が変わる他にもデータセットの影響でNSFWになりやすい。
@@ -77,11 +66,4 @@ https://note.com/hakomikan/n/nb6dd68a1bd9e
 WebUI 1.7以前であれば、プロンプトの語順を変えてみるか以下のExtensionを導入する。
 https://github.com/hako-mikan/sd-webui-prevent-artifact
 1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。
-
-[+] 古い情報
-最も考えられる原因としては、現状ではトークン数が150を超えるとほぼ確実にノイズだけの画像が出るので、トークン数を150以下にする。
-また、トークン（タグ）プロンプトの並び順や組み合わせでも発生するので調整すれば回避できる。
-※hair等の部位プロンプトを近くに連続して羅列すると発生しやすいか？トークンの位置でも影響が強い。
-ほかにもWebUIの設定のPad prompt/negative prompt to be same lengthをオフにしてみるとよい。
-[END]
 
