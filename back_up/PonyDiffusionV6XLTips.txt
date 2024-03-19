@@ -77,11 +77,14 @@ https://civitai.com/models/257749?modelVersionId=290640&dialog=commentThread&com
 https://e621.net/wiki_pages/204（タグwiki）
 これが一般的なdanbooru系列とは異なるので、danbooru系のプロンプトに反応しないようならe621のタグに置き換えてみると、もしかしたら通るかもしれない……?
 （例えばdanbooru上のfutanariタグはe621ではintersexである。danbooru上のfrom belowはe621でlow-angle viewである。）
-*プロンプトだけで出せるキャラ、絵師タグ
-海外の有志が調べたこちらを参照
-https://rentry.org/ponyxl_loras_n_stuff（通称Pony Note）
 
+* プロンプトだけで出せるキャラ、絵師タグ
+海外の有志が調べたこちらを参照
+https://rentry.org/ponyxl_loras_n_stuff（通称Pony Note） ※一番下のinnate characterのセクション。
 こちらのキャラリストは公式のものではないため学習されていないキャラも多く含まれているようだ。
+→2024年3月19日頃、再度検証中のようだ。
+
+
 
 **隠しトークン
 一見ランダムな英数字のトークンを入力すると、それぞれ特定のイラストレーターやキャラを集中的に学習したと思われる画像が出現することが判明した。詳細は上記Pony NoteのReverse Engineered Hashed Tokensを参照のこと。

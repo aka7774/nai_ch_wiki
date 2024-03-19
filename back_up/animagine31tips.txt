@@ -1,3 +1,5 @@
+-AnimagineXL 3.0については→[[AnimagineXL3.0tips]]
+
 *Animagine XL 3.1どこ？
 https://huggingface.co/cagliostrolab/animagine-xl-3.1
 
@@ -40,10 +42,11 @@ worst quality, low qualityだけでもいいかも
 1111のWebUIならモデル落としていつもの場所に入れるだけ、FooocusやComfyUIも軽くて人気
 
 *プロンプトだけで出せるキャラ
-%%https://huggingface.co/spaces/Linaqruf/animagine-xl/blob/main/wildcard/character.txt%%
-↑3.0なんで3.1用あったらURL書き換えてクレメンス
+https://huggingface.co/spaces/cagliostrolab/animagine-xl-3.1/blob/main/wildcard/characterfull.txt
+3.0に比べてキャラの種類が大幅に増加したほか、ガンダムなどのメカも出せるようになっている。
 ワイルドカードにぶっこむとキャラガチャがはかどる。（1boyもいるからnsfwの絵を出すときは注意。事前にgrep -v boy）
 
+↑を作品別にファイル分割したもの： https://files.catbox.moe/5y3xov.zip
 *なんか絵がマスピっぽくて好きじゃない
 クォリティタグのmasterpieceやbest qualityを入れると露骨に絵が変わるからどれを使うか抜くか色々試してみよう
 絵が変わる他にもデータセットの影響でNSFWになりやすい。
@@ -66,4 +69,8 @@ https://note.com/hakomikan/n/nb6dd68a1bd9e
 WebUI 1.7以前であれば、プロンプトの語順を変えてみるか以下のExtensionを導入する。
 https://github.com/hako-mikan/sd-webui-prevent-artifact
 1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。
+
+
+
+
 

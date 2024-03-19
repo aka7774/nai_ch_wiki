@@ -1,3 +1,5 @@
+-AnimagineXL3.1については→[[animagine31tips]]
+
 *AnimagineV3どこ？
 標準版(通常はこっちを使う)
 https://huggingface.co/cagliostrolab/animagine-xl-3.0
@@ -84,4 +86,5 @@ https://github.com/hako-mikan/sd-webui-prevent-artifact
 ※hair等の部位プロンプトを近くに連続して羅列すると発生しやすいか？トークンの位置でも影響が強い。
 ほかにもWebUIの設定のPad prompt/negative prompt to be same lengthをオフにしてみるとよい。
 [END]
+
 
