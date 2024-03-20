@@ -6,12 +6,16 @@ https://huggingface.co/cagliostrolab/animagine-xl-3.1
 *プロンプトの書き方
 AnimagineXL3.0とはまた違う独特のプロンプトルールあり
 https://cagliostrolab.net/posts/animagine-xl-v31-release
-推奨だが必ずしも従う必要はない。
-
+最初にクオリティタグを表記することが推奨されているが、必ずしも従う必要はない。
 *推奨事項
 CFG Scaleは5〜7、Euler Aで30ステップ未満。
 VAEは内蔵してるのか指定しなくても(1111だとNone)動く。未指定ならNo-half VAEは不要。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
 解像度は1024x1024以上(画素数が1024x1024=1048576画素前後)を強く推奨。
+
+推奨ポジ（先頭に記載する）
+=|BOX|
+masterpiece, best quality, very aesthetic, absurdres
+||=
 推奨ネガ
 =|BOX|
 nsfw, lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]
@@ -44,7 +48,7 @@ worst quality, low qualityだけでもいいかも
 *プロンプトだけで出せるキャラ
 https://huggingface.co/spaces/cagliostrolab/animagine-xl-3.1/blob/main/wildcard/characterfull.txt
 3.0に比べてキャラの種類が大幅に増加したほか、ガンダムなどのメカも出せるようになっている。
-ワイルドカードにぶっこむとキャラガチャがはかどる。（1boyもいるからnsfwの絵を出すときは注意。事前にgrep -v boy）
+ワイルドカードにぶっこむとキャラガチャがはかどる。（1boyや、なぜか''1girl扱いのモビルスーツ''もいるからnsfwの絵を出すときは注意。事前にgrep -v boy）
 
 ↑を作品別にファイル分割したもの： https://files.catbox.moe/5y3xov.zip
 *なんか絵がマスピっぽくて好きじゃない
@@ -69,6 +73,9 @@ https://note.com/hakomikan/n/nb6dd68a1bd9e
 WebUI 1.7以前であれば、プロンプトの語順を変えてみるか以下のExtensionを導入する。
 https://github.com/hako-mikan/sd-webui-prevent-artifact
 1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。
+
+
+
 
 
 
