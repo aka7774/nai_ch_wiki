@@ -15,7 +15,7 @@
 &color(#ff0000){Anaconda入れてたら先にアンインストールしろ!!!}
 
 [[https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe]]
-&color(#ff0000){3.11は入れても動かんから入れるな!!!}
+3.11使うならTorch2.1以降を手動インストールするんやで
 
 「python-3.10.11-amd64.exe」がダウンロードされるので、ダブルクリックで開く。
 このとき、Add to PATH にチェックをつけてインストールすること。
