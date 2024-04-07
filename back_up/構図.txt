@@ -5,6 +5,7 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+||||||
 |1 girl, {{incoming_food}}, {{feeding}}, holding_spoon, foreshortening,{{blurry_foreground}}, school uniform, shy smile, blush, open mouth, head_tilt, upper_body, parfait on the table, table, looking at viewer, indoor, cafeteria, pov, perfect anatomy, speech bubble,||あーん|V3使用。ガチャ度高め。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hyKXPIYCvJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/hyKXPIYCvJ.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3uWCCvJnzK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/3uWCCvJnzK.png]]|
 |{{{{picture frame, polaroid, white border}}}}, |{{{{outside border}}}},|ポラロイド写真|V3使用。四隅が綺麗に縁取られなかったり、足などがはみ出ることはある。|https://image02.seesaawiki.jp/n/h/nai_ch/h60DiIf6a6.png|
 |{{iPhone, smartphone screen, camera app frame}}, viewfinder, |{{{{camera}}}},|スマホのカメラ越し撮影|絵柄と画面描写の間ぐらいに挿入することでサンプルみたいなスマホ撮影風になる。|https://image01.seesaawiki.jp/n/h/nai_ch/yhFVIN3LKt.png|
