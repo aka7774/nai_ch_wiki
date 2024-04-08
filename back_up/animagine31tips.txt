@@ -3,6 +3,11 @@
 *Animagine XL 3.1どこ？
 https://huggingface.co/cagliostrolab/animagine-xl-3.1
 
+* Animegine XL 3.0から何が変わった？
+3.0に比べてキャラの種類が大幅に増加した。
+3.0はソシャゲキャラ中心だったため、多くのアニメキャラは生成できなかったが、3.1は生成できるアニメキャラが大幅に増加した。
+ほかにもQuality Tagsの仕様変更とAesthetic Tags(美的スコアに基づいたタグ)が追加された。
+
 *プロンプトの書き方
 AnimagineXL3.0とはまた違う独特のプロンプトルールあり
 https://cagliostrolab.net/posts/animagine-xl-v31-release
