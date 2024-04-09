@@ -1,0 +1,119 @@
+#contents
+
+* Hello Asuka Benchmark XL
+
+ハローアスカベンチは役に立ったと思うので、SDXL版も欲しくなった。
+解像度を上げた程度なので未来のアーキテクチャにも流用できるかも。
+
+** レギュレーション
+
+1111やForgeなら
+下記のテキストをコピーして、txt2imgタブのPromptとNegative Promptが空欄の状態で右側にある左下矢印（&#8601;）ボタンをクリックすることで入力できます。
+=||
+1girl, souryuu asuka langley, neon genesis evangelion, solo, upper body, v, smile, looking at viewer, outdoors, night
+Negative prompt: nsfw, lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]
+Steps: 28, Sampler: Euler, CFG scale: 7, Seed: 2870305590, Size: 832x1216, Model hash: e3c47aedb0, Model: animagine-xl-3.1, Clip skip: 2, Version: f0.0.17v1.8.0rc-latest-276-g29be1da7
+||=
+
+出力例
+[+]
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/eSUenznyiv.png)
+[END]
+
+詳細
+[+]
+
+*** ハローアスカから踏襲するもの
+
+- Seed: 2870305590
+-- 最近はアプリのバージョンが変わると絵も変わるので動作確認としては使えないけど、一応決めておく。
+- Sampling method: Euler
+-- みんな別のを使ってる気もするけど、LCMとかで意外に需要ありそうなのでいじらないことにする。
+- Clip Skip: 2
+-- SDXLだと標準なはず。
+
+*** 踏襲しないもの
+
+- Eta for ancestral samplers
+- Eta noise seed delta
+
+*** ハローアスカベンチから踏襲するもの
+
+- Batch Count = 10
+
+*** ハローアスカを踏襲したと思われる animagine xl 3.1 から引用するもの
+
+- モデルは "cagliostrolab/animagine-xl-3.1" を基準とする(他のにしたら記載する)
+- prompt = "1girl, souryuu asuka langley, neon genesis evangelion, solo, upper body, v, smile, looking at viewer, outdoors, night"
+- negative_prompt = "nsfw, lowres, (bad), text, error, fewer, extra, missing, worst quality, jpeg artifacts, low quality, watermark, unfinished, displeasing, oldest, early, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract]"
+- width = 832
+- height = 1216
+- guidance_scale(CFG Scale) = 7
+- steps = 28
+
+*** 追加ルール
+
+- 所要時間はアプリが計測して表示する値を記録する(アナログで別途測ったりしない)
+- 別のモデルや別のアプリで試すのは自由(記載する)
+
+- Time takenを秒単位になおして記入。(ソートしたいので)
+- AMD勢はrocm版かdirectml版かによって速度が大きく変わるのでそれを書いてくれると嬉しい
+
+蛇足
+[+]
+- これでNAIリーク問題からは解放されたはずや
+- プロンプトに版権キャラ名入れてるけど、感情の享受目的じゃないからまあええやろ(アスカの絵が出なくてもベンチに支障はない)
+[END]
+
+[END]
+
+** 結果一覧
+
+Batch Count 10、Batch Size 1
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3060|12GB|Ryzen 7 5700X|208.2|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
+|RTX 4070Ti|12GB|Core i5-10400|91.7|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
+|RTX 4060(Lowprofile)|8GB|Ryzen 7 5700X|195.4|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
+|RTX 4060(mobile)|8GB|Core i5-12500H|198.7|f0.0.17v1.8.0rc-latest-276-g29be1da7||ノートPC(GigabyteAorus7)|
+|RTX 4090|24GB|Core i7-12700K|49.0|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
+|RTX 4090|24GB|Core i9-13900KF|50.7|f0.0.17v1.8.0rc-latest-273-gb9705c58||Powerlimit 70%|
+|RTX 3080Ti|12GB|Ryzen 7 5800X3D|99.5|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 80%|
+|RTX 4090|24GB|Core i9-13900K|44.1|Version: f0.0.17v1.8.0rc-latest-276-g29be1da7||常駐物いっぱい他の作業中有り|
+|RTX 4090|24GB|Core i9-14900F|61.3|f0.0.17v1.8.0rc-latest-276-g29be1da7|--api --unet-in-fp8-e5m2 --clip-in-fp8-e5m2|他の作業してるので重いかも|
+|}
+[END]
+
+Batch Count 5、Batch Size 2
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3060|12GB|Ryzen 7 5700X|213.9|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
+|RTX 3080Ti|12GB|Ryzen 7 5800X3D|93.4|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 80%|
+|}
+[END]
+
+Batch Count 2、Batch Size 5
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3080Ti|12GB|Ryzen 7 5800X3D|89.3|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 80%|
+|}
+[END]
+
+Batch Count 1、Batch Size 10
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4070Ti|12GB|Core i5-10400|80.6|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
+|RTX 3080Ti|12GB|Ryzen 7 5800X3D|86.7|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 80%|
+|}
+[END]
+
+** 参考値(クラウドコンピューティング)
+
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|}
