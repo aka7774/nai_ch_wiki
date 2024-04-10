@@ -73,6 +73,13 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3060|12GB|Ryzen 7 5700X|262.1|v1.8.0|||
+|RTX 4070|12GB|Core i3-12100F|101.7|v1.8.0|--xformers||
+|RTX 4070|12GB|Core i3-12100F|95.3|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
+|RTX 3090|24GB|Ryzen 9 5900X|93.5|f0.0.17v1.8.0rc-latest-273-gb9705c58|--always-gpu|Powerlimit 70%|
+|RTX 4090|24GB|Core i7-13700K|46.7|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
+||||||||
+|RTX 2060(mobile)|6GB|Core i7-10875H|326.1|f0.0.17v1.8.0rc-latest-276-g29be1da7||ノートPC|
 |RTX 3060|12GB|Ryzen 7 5700X|208.2|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX 4070Ti|12GB|Core i5-10400|91.7|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |RTX 4060(Lowprofile)|8GB|Ryzen 7 5700X|195.4|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
@@ -89,6 +96,8 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3060|12GB|Ryzen 7 5700X|251.1|v1.8.0|||
+|RTX 3090|24GB|Ryzen 9 5900X|89.6|f0.0.17v1.8.0rc-latest-273-gb9705c58|--always-gpu|Powerlimit 70%|
 |RTX 3060|12GB|Ryzen 7 5700X|213.9|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX 3080Ti|12GB|Ryzen 7 5800X3D|93.4|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 80%|
 |}
@@ -98,6 +107,9 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3060|12GB|Ryzen 7 5700X|234.8|v1.8.0|||
+|RTX 3060|12GB|Ryzen 7 5700X|202.2|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
+|RTX 3090|24GB|Ryzen 9 5900X|87.0|f0.0.17v1.8.0rc-latest-273-gb9705c58|--always-gpu|Powerlimit 70%|
 |RTX 3080Ti|12GB|Ryzen 7 5800X3D|89.3|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 80%|
 |}
 [END]
@@ -106,6 +118,8 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3060|12GB|Ryzen 7 5700X|196.7|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
+|RTX 3090|24GB|Ryzen 9 5900X|83.3|f0.0.17v1.8.0rc-latest-273-gb9705c58|--always-gpu|Powerlimit 70%|
 |RTX 4070Ti|12GB|Core i5-10400|80.6|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |RTX 3080Ti|12GB|Ryzen 7 5800X3D|86.7|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 80%|
 |}
