@@ -73,6 +73,10 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3070|8GB|Core i5-13500|156.9|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
+|RTX 4060 Ti|16GB|Core i5-12400F|155.3|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
+|RTX 3080|12GB|Core i5-12600K|95.7|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
+|RTX 3060 Ti|8GB|Ryzen 7 5800X|191|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |GTX 1060|6GB|Ryzen 7 3700X|1341.7|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX 4090|24GB|Core i9-13900K|44.6|f0.0.14v1.8.0rc-latest-184-g43c9e3b5||Powerlimit 70%|
 |RTX 4070Ti SUPER|16GB|Core i7-14700K|72.5|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
@@ -99,6 +103,7 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4060 Ti|16GB|Core i5-12400F|145.8|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX 4090|24GB|Core i9-13900K|42.4|f0.0.14v1.8.0rc-latest-184-g43c9e3b5||Powerlimit 70%|
 |RTX 3060|12GB|Ryzen 7 5700X|251.1|v1.8.0|||
 |RTX 3090|24GB|Ryzen 9 5900X|89.6|f0.0.17v1.8.0rc-latest-273-gb9705c58|--always-gpu|Powerlimit 70%|
@@ -111,6 +116,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4060 Ti|16GB|Core i5-12400F|189.9|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX 4090|24GB|Core i9-13900K|41.9|f0.0.14v1.8.0rc-latest-184-g43c9e3b5||Powerlimit 70%|
 |RTX 3060|12GB|Ryzen 7 5700X|234.8|v1.8.0|||
 |RTX 3060|12GB|Ryzen 7 5700X|202.2|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
@@ -123,6 +129,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4060 Ti|16GB|Core i5-12400F|154.2|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX 4090|24GB|Core i9-13900K|40.8|f0.0.14v1.8.0rc-latest-184-g43c9e3b5||Powerlimit 70%|
 |RTX 3060|12GB|Ryzen 7 5700X|196.7|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX 3090|24GB|Ryzen 9 5900X|83.3|f0.0.17v1.8.0rc-latest-273-gb9705c58|--always-gpu|Powerlimit 70%|
