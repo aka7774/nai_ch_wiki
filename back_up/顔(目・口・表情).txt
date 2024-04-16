@@ -31,7 +31,12 @@
 [+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
-||アヘ|||
+|nervous|緊張||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/08AlrKFtH8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/08AlrKFtH8.png]]|
+|wince|眉をひそめる|突然の何かに驚いたときなど|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pkFA4eVu6O-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pkFA4eVu6O.png]]|
+|upturned eyes, looking up, from above|上目遣い||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nqYuXFXTya-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nqYuXFXTya.png]]|
+|shaded face|陰になった目||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/u4tLc_8KfA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/u4tLc_8KfA.png]]|
+|rolling eyes|イキ顔|ahegao, などと相性が良い|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yvcfDmOy96-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yvcfDmOy96.png]]|
+|torogao, tongue out, saliva, blush,|トロ顔||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xeoaYzpOxj-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xeoaYzpOxj.png]]|
 |{{cry aloud}}, tears, sad,|べそをかく ~~ べそべそ泣く|目つぶりver.はclosed eyes tightly追加。涙をぬぐうはwiping tears。|https://image01.seesaawiki.jp/n/h/nai_ch/lkt71rwaet.png https://image02.seesaawiki.jp/n/h/nai_ch/3lRFV_vncS.png https://image02.seesaawiki.jp/n/h/nai_ch/yPhKv51AxW.png|
 |cackle|ケラケラ笑う|gigglingみたいな蔑んだ感じになりにくいで。|https://image01.seesaawiki.jp/n/h/nai_ch/oUgaEzfZcE.png https://image01.seesaawiki.jp/n/h/nai_ch/OK8mNA95V7.png|
 |giggling|クスクス笑う|強化すると蔑んだ感じが強くなるで。|https://image01.seesaawiki.jp/n/h/nai_ch/pf6MoLkNAG.png https://image02.seesaawiki.jp/n/h/nai_ch/KsQnS6OY26.png|
@@ -98,6 +103,8 @@
 [+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
+|bags under eyes|目の下のクマ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mOzmK5XMYg-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/mOzmK5XMYg.png]]|
+|black sclera|黒白目|人外キャラなどに|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dWDWCFSVZX-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dWDWCFSVZX.png]]|
 |black eyes, empty eyes,|黒目|V3使用。このプロンプトで真っ黒な目になりますが、たまに瞳孔みたいなものが生成されます。また、empty eyesの影響で女の子の雰囲気が暗くなるので、明るくしたい場合はblushやsmile等と併用しましょう。サンプル画像はblush, smile, black eyes, empty eyes,で生成しました。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NWuP8bXSIU.png)|
 |blood tears|血涙|V3使用。かなり出にくく、強調しまくってもサンプル画像みたいに、一筋だけ「つぅー」と流す程度でexpressionlessと組み合わせないとただの泣き顔になります。サイレンの屍人みたいにドバーと流すのは無理そう。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/bYPyIM78X5.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PVulaBjHGK.png)|
 |white eyes|白目|ネガティブにpupils・eyeballを記入推奨。目玉部分の輪郭はあったりなかったりします|https://image01.seesaawiki.jp/n/h/nai_ch/UMa60EF6xn.png https://image02.seesaawiki.jp/n/h/nai_ch/BrL2g0mjiy.png|
