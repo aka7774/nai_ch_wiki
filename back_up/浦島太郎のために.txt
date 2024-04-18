@@ -21,6 +21,9 @@
 
 #contents
 
+*2024-04-18 Stable Diffusion 3のAPIが公開される
+https://ja.stability.ai/blog/stable-diffusion-3-api
+
 *2024-04-12 なんJNVA部★382 どんぐりシステム有効化される
 かねてよりスクリプト荒らしに見舞われていた5chで、その対策として開発されたどんぐりシステムが、本スレ382で強制有効化された。
 ただし、これにより未対応ブラウザ民がスレに書き込めなくなる問題が発生するため、今後も有効化を続けるかどうかは議論が必要である。
@@ -1574,6 +1577,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 
