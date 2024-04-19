@@ -24,16 +24,19 @@
 *2024-04-18 Stable Diffusion 3のAPIが公開される
 https://ja.stability.ai/blog/stable-diffusion-3-api
 
+現時点では有料。
+早速課金して試した人もいるが「あまりクオリティの向上は感じられない」とのこと。
+ただし公開されたのは開発途上のモデルとの情報もあり、現時点でSD3の実力の明確な評価を下せる段階にはない。
 *2024-04-12 なんJNVA部★382 どんぐりシステム有効化される
 かねてよりスクリプト荒らしに見舞われていた5chで、その対策として開発されたどんぐりシステムが、本スレ382で強制有効化された。
 ただし、これにより未対応ブラウザ民がスレに書き込めなくなる問題が発生するため、今後も有効化を続けるかどうかは議論が必要である。
 どのくらい書き込めないユーザーがいるか把握のためにも、該当者はテンプレの避難所に報告してほしい。
 
 *2024-03-23 Stability AIの主要メンバーが退社
-CEOのEmad Mostaque氏をはじめとする従来のStability AIの開発メンバーの大部分が退社していることが明らかになった。
-これによりSDのサポート体制やSD3のリリースに影響が生じるかどうかは現時点では不明。
 https://stability.ai/news/stabilityai-announcement
-
+CEOのEmad Mostaque氏をはじめとする従来のStability AIの開発メンバーの大部分が退社していることが明らかになった。
+%%これによりSDのサポート体制やSD3のリリースに影響が生じるかどうかは現時点では不明。%%
+SD3がオープンソースでリリースされることは確定している模様。
 *2024-03-18 Animagine XL 3.1がリリース
 https://huggingface.co/cagliostrolab/animagine-xl-3.1
 https://cagliostrolab.net/posts/animagine-xl-v31-release
@@ -1577,6 +1580,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 
