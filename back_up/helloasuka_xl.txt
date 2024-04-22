@@ -73,6 +73,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3070|8GB|Core i5-13500|131.58|ComfyUI Revision: 2140 [4ee9aad6]||Powerlimit 70%、Clip Skip未設定（赤ちゃんなので設定方法が分かりません…）|
+|RTX 3070|8GB|Core i5-13500|206.8|v1.9.0|--xformers|Powerlimit 70%|
 |RTX 4070Ti SUPER|16GB|Ryzen 7 5700X|84.2|1.9.0|--xformers|Powerlimit 80%|
 |RTX 2060|12GB|Ryzen 7 1700X|259.7|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |GTX 1080|8GB|Core i7-8700K|949.9|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|

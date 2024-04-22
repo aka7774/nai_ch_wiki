@@ -166,13 +166,22 @@
 |1girl, goutokuji mike (touhou), orange eyes, cat ears, multicolored hair, jingle bell, multicolored clothes, cat tail, barefoot,||東方Project|豪徳寺ミケ|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Y82SNMjghB.png)|
 |1girl, yamashiro takane (touhou), green eyes, hat, green hair, green shirt, green skirt, key, boots, backpack, ability card (touhou),||東方Project|山城たかね|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/KsFb1poPRQ.png)|
 |1girl, komakusa sannyo (touhou), red eyes, purple hair, ponytail, yellow ribbon, japanese clothes, kimono, purple skirt, geta, kiseru, folding fan, smoking, smoking pipe,||東方Project|駒草山如|V3使用~~ドラゴンキセルは出てこない|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dV5b1kAMcL.png)|
-|||東方Project|玉造魅須丸|||
-|||東方Project|菅牧典|||
+|1girl, tamatsukuri misumaru (touhou), brown eyes, two-tone hair,  hair ornament, magatama, sash, red shirt, yellow skirt, barefoot,||東方Project|玉造魅須丸|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/H9vEJeGZ16.png)|
+|1girl, kudamaki tsukasa (touhou), brown eyes, blonde hair, fox ears, green ribbon, white romper, fox tail, tabi,||東方Project|菅牧典|V3使用~~指定しなくても狐のポーズがよく出てくるので、出したくない場合は fox shadow puppet をネガティブプロンプトに入れる|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zZ2ZRmyjcy.png)|
 | 1girl, {{iizunamaru megumu_(touhou)}}, jewelry red_eyes, blue tokin hat, long hair, blue hair, blue dress, short sleeves, hair between eyes, large breasts, white scarf ||東方Project|飯綱丸龍|V3使用|[[https://image02.seesaawiki.jp/n/h/nai_ch/j3GLsMHke3.png]]|
 |1girl, {{{{iizunamaru megumu}}}}, {{touhou}}, blue tokin hat, long hair, blue hair, red eyes, blue dress, short sleeves,hair between eyes, large breasts, white scarf|hinanawi tenshi, seiran (touhou), kimono, shameimaru aya, hong meiling, haniyasushin keiki,  skadi (arknights)|^|^|V1使用~~服装が安定しない。特に帽子は赤に変色したり肥大化する。一応、記載しているUCを入れることで、少し安定する。帽子がいらない場合、shameimaru aya以下のUCは削除しても問題ないと思う。その他細かい装飾は生成不可。耳はelf earを入れるとかなり長いのしか出ないので入れていない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zSw95X2HZ4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/zSw95X2HZ4.png]]|
 |1girl, {{Tenkyu Chimata_(touhou)}}, jewelry purple_eyes, purple short hair, rainbow colorful dress, colorful headband, white cloak, white capelet||東方Project|天弓千亦|V3使用~~マントが鬼門。また、腰の革袋がたまに出現しない。|[[https://image01.seesaawiki.jp/n/h/nai_ch/kMVYjpcoJK.png]]|
 |Tenkyu Chimata,(purple short hair:1.2),1girl,(rainbow colorful dress:1.6),(light blue cloak),(colorful headband:1.4),(Touhou),(cyberpunk background:1.4),upper body,purple eyes||^|^|V1使用~~完璧な衣装ではダメです... この例はおそらく資格がないでしょうが、とにかくアップロードすることにしました.||
 |1girl, {{{{himemushi_momoyo_(touhou)}}}}, skyblue_eyes, grey long hair, yellow_shovel, yellow_pickaxe, black shirt, orange ribbon, barefoot, simple background, white background, solo, from front, facing the front, looking at viewer, straight-on, ||東方Project|姫虫百々世|V3使用（暫定）~~衣装の模様や輪飾りが難解~~スコップとツルハシの単語を両方入れると、一つに融合しがち。|[[https://image02.seesaawiki.jp/n/h/nai_ch/rSpw4YH9ob.png]]|
+|}
+**獣王園
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
+|||東方project|孫美天|||
+|||東方project|三頭慧ノ子|||
+|||東方project|天火人ちやり|||
+|||東方project|豫母都日狭美|||
+|||東方project|日白残無|||
 |}
 **格ゲー・その他ゲーム作品
 {| class="sort edit nanj_prompt_table"
@@ -186,28 +195,28 @@
 |1girl, {yorigami_jo'on_(touhou)}, jewelry orange eyes, glossy eyes, {{{{darkorangel drill hair, spiralcurl}}}}, ribbon, sunglasses on_head, top_hat, purple_jacket, brown_footwear, long_sleeves, white skirt, boots, bracelet, earrings, necklace, pendant, hand_fan, handbag, simple background, white background, solo, from front, facing the front, looking at viewer, straight-on, cowboy shot, ||東方Project|依神女苑|V3使用~~顔回りは出るが、衣装・アクセサリーが出難い。|[[https://image02.seesaawiki.jp/n/h/nai_ch/avlPC_JNPe.png]]|
 |1girl, {{yorigami shion(touhou)}}, bare legs,barefoot, jewelry blue eyes ,blue long hair, blue miniskirt, {stuffed_cat}, blue ribbon, gray shirt, midriff,simple background, white background, solo, from front, facing the front, looking at viewer, straight-on, cowboy shot||東方Project|依神紫苑|V3使用|https://image02.seesaawiki.jp/n/h/nai_ch/Nv4eo8PqlR.png|
 |{{{{{{yorigami shion(touhou)}}}}}}, bare legs,barefoot, jewelry blue eyes ,blue long hair, blue miniskirt, {stuffed_cat}, blue ribbon, gray shirt, midriff, ||^|^|V1使用~~要素はあるらしいが、単体単語だけではまず無理。~~他の東方キャラの要素が混じりやすいので、かたっぱしから否定構文に出やすいキャラを入れた方が安定する。特に混ざりやすいのは天子。|https://image01.seesaawiki.jp/n/h/nai_ch/dWr_z3zU8v.png|
-|||東方Project|饕餮尤魔|||
+|1girl, toutetsu yuuma (touhou), red eyes, white hair, sheep horns, horn ribbon, pointy ears, red sleeves, blue dress, barefoot, holding spoon,||東方Project|饕餮尤魔|V3使用~~ギザ歯が良く出てくるので、出したくない場合はネガティブプロンプトに sharp teeth を入れる|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qOr7OrAptU.png)|
 |}
 **書籍・CD
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |{{usami renko}},black hat, white shirt,black skirt,red necktie,brown hair,short hair,1girl,||東方Project|宇佐見蓮子|seed:3781512806 右髪のリボン再現できず|https://image02.seesaawiki.jp/n/h/nai_ch/MAiYrZLgW9.png|
 |{{{maribel hearn}}},short hair,purple dress,zun hat,white hat,yellow eyes,{{red ribbon}},white loincloth,hat ribbon,[[[[[yakumo yukari]]]]],|usami renko,black hat,flandre_scarlet,underwear,lingerie,moriya suwako,yuzuki yukari,kirisame marisa,|東方Project|マエリベリー・ハーン|seed:2315163289　成功率低め|https://image02.seesaawiki.jp/n/h/nai_ch/quU7UypUiX.png|
-|||東方Project|森近霖之助|||
-|||東方Project|朱鷺子（名無しの本読み妖怪）|||
+|1boy, morichika rinnosuke (touhou), yellow eyes, ahoge, grey hair, glasses, choker, japanese clothes, kimono, fanny pack,||東方Project|森近霖之助|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qZIuXWJKC_.png)|
+|1girl, tokiko (touhou), red eyes, two-tone hair, horns, single head wing, wings, dress, black skirt, ribbon, boots, ||東方Project|朱鷺子（名無しの本読み妖怪）|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fCfdNcmA2O.png)|
 |1girl, {{sunny milk}}, child, {centre divided} white apron, ascot, blouse, blue eyes, bow, collared shirt, fairy, transparent four white fairy wings, frilled skirt, frilled sleeves, frills, jagged triangular headdress, medium hair, red obi, orange hair, red sash, red skirt, two side up, white bow, white shirt, yellow ascot||東方Project|サニーミルク|羽、服周りが安定しない~~分けスカートはほぼ再現不能~~高確率で牛乳や背景に太陽光が出てくる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ruaRk5Q4vb-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ruaRk5Q4vb.png]]|
-|||東方Project|ルナチャイルド|||
+|1girl, luna child (touhou), red eyes, hat, bow, blonde hair, drill hair, fairy wings, white dress, moon print,||東方Project|ルナチャイルド|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/KAYFTFysAQ.png)|
 |masterpiece, best quality, 1girl, {{star sapphire}}, child, ascot,apron dress, maroon eyes, hair bow, fairy, transparent four white fairy wings, frilled skirt, frilled sleeves, frills, long hair, blunt bangs,blue sash, blue skirt, ow, white shirt, blue ascot,black hair,blue ribbon,blue bow,|nsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, |東方Project|スターサファイア|頭のリボンが最難関。200回回しても5回でればいい方。そして羽根もいい感じのがなかなか出ない。結構再現が難しい子かも|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Sxe3Mln6M2.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Sxe3Mln6M2.png]]|
 |1girls, {{{{watatsuki_no_yorihime_(touhou)}}}}, purple_long_hair, ponytail, hair_ribbon, jewelry purple eyes, glossy eyes, short_sleeves, {{wrap skirt}}, bracelet, belt, holding_katana, sheathed||東方Project|綿月依姫|V3使用|[[https://image01.seesaawiki.jp/n/h/nai_ch/05TLWBA047.png]]|
 |1girls, {{{{watatsuki_no_toyohime_(touhou)}}}}, flaxen_long_hair, hat, jewelry yellow eyes, glossy eyes, long_sleeves, {{wrap skirt}}, belt, holding_hand fan,||東方Project|綿月豊姫|V3使用~~このままでは衣装が安定し辛い。また、扇子の形状・サイズも安定しない。|[[https://image02.seesaawiki.jp/n/h/nai_ch/_XLBIiMCrj.png]]|
-|||東方Project|レイセン2号|||
+|1girl, reisen (touhou bougetsushou), red eyes, blue hair, rabbit ears, black jacket, crescent pin, red necktie, white shirt, pink skirt,||東方Project|レイセン2号|V3使用~~bougetsushouを入れないと、鈴仙・優曇華院・イナバが出てきてしまう|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9DpEnG5atm.png)|
 |1girl, {{ibaraki_kasen_(touhou)}}, red_tabard, green_skirt, pink rose, jewelry pink_eyes, pink_hair, short_hair, two chignons on the head, double bun, {{{whole right arm bandage}}} ||東方Project|茨木華扇|胸元の薔薇飾りが模様になったり、髪飾りになったりする事多し。~~そのままだとシニヨン（頭の白い饅頭）が紫のZUN帽や、メイドのヘッドドレスになる事が多いが、「double bun（お団子頭）」を入れるとシニヨンが生成されやすくなる。~~包帯を右腕のみに指定しても、左腕や脚等に巻いてしまう事も多い。|[[https://image01.seesaawiki.jp/n/h/nai_ch/VujN8q60Bh.png]][[https://image01.seesaawiki.jp/n/h/nai_ch/Ua7F_C4uyH.png]]|
 |1girl, {{ibaraki_kasen_(touhou)}}, {{{{blue tabard}}}}, pink rose, {{{blue skirt}}}, black tights, jewelry pink_eyes, pink_hair, short_hair,{{{{oni, two horns in head}}}}, metal shackles, chain, smirk, provocation, femdom, dutch angle, dramatic pose ||東方Project|茨木童子の腕~~（影華扇）|衣装が元の赤色のままになりやすい。~~角の形状が安定せず、シニヨンが形成される事も多い（原作のような形は滅多に出ない）。~~また、手枷と鎖も安定して出にくい。|https://image01.seesaawiki.jp/n/h/nai_ch/WNtjrJPVk0.png|
 |1 girl, {{ibaraki_kasen_(touhou)}}, {{{{black tabard}}}}, pink rose, {{{white long skirt}}}, {{{sleeveless}}}, jewelry pink_eyes, red eyeshadow, pink {{{long_hair}}}, floating hair, {{{{oni, two horns in head}}}}, fangs, sharp_teeth, metal {{shackles}}, chain, evil smirk, provocation, femdom||東方Project|鬼華扇|高難易度~~色指定に強調を入れまくっても、服が元の赤色のままになりやすい。~~袖がそのままだったり、シニヨンも角と一緒に生成される。~~髪が長髪ではなく、短髪のままになる。~~腕の金属枷が生成されない~~といった具合に、元々の「茨木華扇」としての要素が発現しやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/OWgDXo671T.png|
 | upper body,messy hair,floating hair,(detailed purple eyes),gitter eyes,relaxed,(loli),cute,Hieda no Akyuu,touhou,green Kimono,(yellow sleeves),bangs,(red hakama:1.2),(hair white flower:1.3),(deep purple middle hair),obi~~【　別プロンプト例　】~~1girl, {{Hieda no Akyuu_(touhou)}}, hair white flower, messy hair, floating hair, deep purple middle hair, detailed purple eyes, gitter eyes, {{{{yellow Kimono, green sleeves, red hakama}}}}, sash, loli, full body, japanese room, wariza,|hakurei Reimu,lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet,kazami yuuka|東方Project|稗田阿求|ある程度まではそこそこ出るが、服の細かい部分や、花の髪飾りなどで安定しない点も多い。~~ある程度数を出しての選別か、自力手直しが必要。|[[https://image01.seesaawiki.jp/n/h/nai_ch/d_SDhlks2s.png]]|
 |short orange hair,(green gold kimono:1.4),brown boots,Plaid sleeves,brown eyes,(two hair bells:1.2),two ponytails,(red white chequered sleeve:1.2),loli,stand,touhou,(Motoori Kosuzu:1.5),1girl~~【　別ブロンプト例　】~~1girl, {{Motoori Kosuzu_(touhou)}}, jewelry brown eyes, glossy eyes, {{two hair bells, two ponytails}}, short orange hair, green gold kimono, brown boots, plaid sleeves, red white chequered sleeve, green skirt, yellow apron, full body||東方Project|本居小鈴|構成要素はあるものの、それほど強くはない。~~「それっぽい」姿はそこそこ出るものの、アクセサリーの鈴の有無や、衣装の柄や色が変化しやすいので安定はしない。|[[https://image02.seesaawiki.jp/n/h/nai_ch/JfcXbrnwh9.png]]|
-|||東方Project|宮出口瑞霊|||
-|||東方Project|奥野田美宵|||
+|1girl, {{{{miyadeguchi mizuchi (touhou)}}}}, blue eyes, blue hair, ponytail, skull hair ornament, hair tubes, red striped shirt, red striped skirt, white shirt, white skirt, white gloves, ghost tail, sharp teeth, cuffs, chain, shackles,||東方Project|宮出口瑞霊|V3使用~~顔と服装はそれっぽいが、他はイマイチ|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/eyEwPwcre1.png)|
+|1girl, okunoda miyoi (touhou), green eyes, whale hat, pink hair, blue shirt, blue apron, purple skirt, whale print,||東方Project|奥野田美宵|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1Iyc1lN0SA.png)|
 |}
 **東方旧作
 {| class="sort edit nanj_prompt_table"
@@ -236,11 +245,4 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |}
-
-
-
-
-
-
-
 
