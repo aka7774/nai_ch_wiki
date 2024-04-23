@@ -177,11 +177,11 @@
 **獣王園
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
-|||東方project|孫美天|||
-|||東方project|三頭慧ノ子|||
-|||東方project|天火人ちやり|||
-|||東方project|豫母都日狭美|||
-|||東方project|日白残無|||
+|1girl, son biten (touhou), red eyes, brown hair, medium hair, low twintails, monkey tail,  multicolored dress, sleeveless dress, single sleeve, single detached sleeve, white sleeves, barefoot, test tube, circlet, holding,||東方project|孫美天|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/djq5Oluz4l.png)|
+|1girl, {{mitsugashira enoko (touhou)}}, red eyes, dog ears, two-tone hair, white hair, grey hair, off shoulder, purple shirt, pink skirt, three tails, necklace, jewelry, ankle cuffs, barefoot,||東方project|三頭慧ノ子|V3使用~~髪色が反対になったり、尻尾の数が違ったりと安定しない|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0F0KuCD0iY.png)|
+|1girl, tenkajin chiyari (touhou), red eyes, purple hair, horns,  pointy ears, green shirt, clothes writing, shorts, barefoot, tail, test tube, syringe,||東方project|天火人ちやり|V3使用~~Tシャツの「Welcome to hell」の文字は出てこない|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rzTvlhtUSO.png)|
+|1girl, yomotsu hisami (touhou), black hair, long hair, sidelocks, china dress, purple dress, vine print, grape print, black gloves, elbow gloves, flower on head, purple flower, covered eyes, boots,||東方project|豫母都日狭美|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/XN9zM6cGMp.png)|
+|1girl, nippaku zanmu (touhou), red eyes, black hair, horns, green shirt, blue shorts, flip-flops,||東方project|日白残無|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kW5xwMVtKZ.png)|
 |}
 **格ゲー・その他ゲーム作品
 {| class="sort edit nanj_prompt_table"
@@ -221,6 +221,9 @@
 **東方旧作
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
+|||||||
+|1girl, hakurei reimu (pc-98), purple eyes, purple hair, long hair, japanese clothes, hakama, gohei,||東方project|博麗靈夢|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MAocyQJmKa.png)|
+|1girl, {{{{elis (touhou)}}}}, bat wings, purple eyes, facial mark, blonde hair, long hair, hair bow, white shirt, bowtie, black vest, red skirt, pointy ears, star wand, a red star mark on her face,||東方靈異伝|Elis|V3使用~~頬の赤い星マークの色・位置・形が安定しない|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pY5Ud0KWN1.png)|
 |1girls, {{{{shinki_(touhou)}}}}, silver_long_hair, side ponytail, hair_bobbles, jewelry red eyes, glossy eyes, red_dress, white_frills, long_sleeves, ballgown, red capelet, alphes_(style), kind smile||東方怪綺談|神綺|V3使用~~特徴的なサイドテールといった要素は抑えているが、衣装の細部が安定しない|[[https://image02.seesaawiki.jp/n/h/nai_ch/YXpDHLJtPJ.png]]|
 |1girl,{{{{okazaki yumemi (touhou)}}}},red eyes,red hair,red skirt,red vest,red capelet,red cape,white shirt,long hair,braid,||東方夢時空|岡崎夢美|V3使用~~okazaki yumemi (touhou)だけでも出てくるが、特徴を入れた方が安定する|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MUuuVs1VO3-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/MUuuVs1VO3.png]]|
 |1girl, {{{{{okazaki yumemi}}}}}, red hair, red eyes, long braid, red cape, red vest, dress shirt, red neck ribbon, red long skirt, touhou &#40;pc-98),|kimono|東方夢時空|岡崎夢美|ベストやケープが消えたり、学生服になったり、スカートが短かったり、三つ編みが短かったり、三つ編みが２つになったりと安定しない。体型は安定する。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lk9yX04S5F-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lk9yX04S5F.png]]|
@@ -245,4 +248,6 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |}
+
+
 
