@@ -21,12 +21,34 @@
 
 #contents
 
+*2024-04-23 Hyper-SD公開
+https://hyper-sd.github.io/
+LCMやSDXL-Lightningのような低STEPで生成を完了する技術に、新たな手法としてHyper-SDが公開された
+上述の既存手法よりも生成物の精度が良いとされ、実際にスレ★386でも使用された画像が貼られているので参考にすると良い
+https://fate.5ch.net/test/read.cgi/liveuranus/1713700458/
+
+導入方法は、公式サイトからリンクされているHuggingFaceでLoRaとしてダウンロードできる
+SD1.5用とSDXL用があるので、用途に合わせてダウンロードする
+使用時は、LCM LoRaと同じようにプロンプト内で呼び出せば良い
+
+設定例 Hyper-SDXL-8steps-lora.safetensorsの場合
+ステップ:8　サンプリング:Eular a  SGM Uniform　CFG:Animazine系は1〜2、Pony系は3〜3.5くらい
+
+※注意 SDXL用のsafetensorが誤ってSD1.5用として内部に記載されているため、WebUIデフォルト設定でSDXLモデルを読み込んでいるとLoRaリストに表示されない
+　設定からExtra Networks(追加のネットワーク)ページにあるAlways show all networks on the Lora page(otherwise, those detected as for incompatible version of Stable Diffusion will be hidden)にチェックを入れると表示されるので、LoRaのスパナアイコンから設定をSDXLに変更すると良い
+
 *2024-04-18 Stable Diffusion 3のAPIが公開される
 https://ja.stability.ai/blog/stable-diffusion-3-api
-
 現時点では有料。
 早速課金して試した人もいるが「あまりクオリティの向上は感じられない」とのこと。
 ただし公開されたのは開発途上のモデルとの情報もあり、現時点でSD3の実力の明確な評価を下せる段階にはない。
+
+*2024-04-16 Adobe Premiere ProへのSoraの実装が発表
+https://news.adobe.com/news/news-details/2024/Adobe-previews-breakthrough-AI-innovations-to-advance-professional-video-workflows-within-Adobe-Premiere-Pro/
+https://gigazine.net/news/20240416-adobe-premiere-pro-with-ai-firefly/
+動画編集ソフト「Adobe Premiere Pro」に、「Sora」をはじめとする複数の動画生成AIモデルが2024年後半をめどに実装予定であることが発表された。
+今後ますます一般人も高性能な動画AIを使えるようになっていくことが期待される。
+
 *2024-04-12 なんJNVA部★382 どんぐりシステム有効化される
 かねてよりスクリプト荒らしに見舞われていた5chで、その対策として開発されたどんぐりシステムが、本スレ382で強制有効化された。
 ただし、これにより未対応ブラウザ民がスレに書き込めなくなる問題が発生するため、今後も有効化を続けるかどうかは議論が必要である。
@@ -1580,6 +1602,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 

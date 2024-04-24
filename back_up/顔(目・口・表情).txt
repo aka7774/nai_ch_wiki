@@ -31,6 +31,7 @@
 [+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
+|full-face blush|赤面||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nibUSUEJ7w-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nibUSUEJ7w.png]]|
 |nervous|緊張||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/08AlrKFtH8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/08AlrKFtH8.png]]|
 |wince|眉をひそめる|突然の何かに驚いたときなど|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pkFA4eVu6O-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pkFA4eVu6O.png]]|
 |upturned eyes, looking up, from above|上目遣い||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nqYuXFXTya-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nqYuXFXTya.png]]|
@@ -103,6 +104,7 @@
 [+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
+|half-closed eyes|半目||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HefJG1RaaQ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/HefJG1RaaQ.png]]|
 |bags under eyes|目の下のクマ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mOzmK5XMYg-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/mOzmK5XMYg.png]]|
 |black sclera|黒白目|人外キャラなどに|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dWDWCFSVZX-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dWDWCFSVZX.png]]|
 |black eyes, empty eyes,|黒目|V3使用。このプロンプトで真っ黒な目になりますが、たまに瞳孔みたいなものが生成されます。~~また、empty eyesの影響で女の子の雰囲気が暗くなるので、明るくしたい場合はblushやsmile等と併用しましょう。サンプル画像はblush, smile, black eyes, empty eyes,で生成しました。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NWuP8bXSIU.png)|
@@ -152,6 +154,7 @@
 [+]
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
+|licking lips|舌なめずり||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/b_mVtkk6LW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/b_mVtkk6LW.png]]|
 |[mouth drool, drooling], :o, [open mouth], hunger,|涎を垂らす|ちょうど良い塩梅にするのが難しい。|https://image02.seesaawiki.jp/n/h/nai_ch/inwAWQ79ts.png https://image01.seesaawiki.jp/n/h/nai_ch/S39aBVdTHf.png|
 |:o|Oの字口||https://image02.seesaawiki.jp/n/h/nai_ch/A6sTmuAO8o.png|
 |:>|Vの字口||https://image02.seesaawiki.jp/n/h/nai_ch/Ql1LEDhWNz.png|
