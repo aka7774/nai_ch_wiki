@@ -8,8 +8,10 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |||||||
-|hakurei reimu||東方project|博麗霊夢||https://image02.seesaawiki.jp/n/h/nai_ch/HgHbGZFvyT.png|
-|kirisame marisa||東方projec|霧雨魔理沙||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_kAZkjbqno-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_kAZkjbqno.png]]|
+|hakurei reimu (touhou)||東方project|博麗霊夢|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/B0igrtLm6Y.png)|
+|hakurei reimu||^|^||https://image02.seesaawiki.jp/n/h/nai_ch/HgHbGZFvyT.png|
+|kirisame marisa (touhou)||東方project|霧雨魔理沙|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vE6KqwCvtC.png)|
+|kirisame marisa||^|^||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_kAZkjbqno-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/_kAZkjbqno.png]]|
 |}
 **紅魔郷
 {| class="sort edit nanj_prompt_table"
@@ -236,8 +238,17 @@
 |1girl, {{{{asakura rikako (touhou)}}}},  purple eyes,  purple hair,  long hair, yellow bow, white shirt, white hairband, lab coat, glasses, black pants,||東方夢時空|朝倉理香子|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/sDEgoEt5E2.png)|
 |1girl, {{{{kitashirakawa chiyuri (touhou)}}}},  blonde hair, yellow eyes, twintails, blue neckerchief, white hat, sailor hat, white shirt, sailor shirt, white shorts,||東方夢時空|北白河ちゆり|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zuJLbEOcfN.png)|
 |1girl, {{{{okazaki yumemi (touhou)}}}}, red eyes, red hair, red skirt ,red vest, red capelet, long hair, braid, cape, red cape, white shirt, red bow,||東方夢時空|岡崎夢美|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/CVxtvXKuWg.png)|
+|1girl, {{{{kurumi (touhou)}}}}, bat wings, yellow eyes, white hairband, black skirt ,blonde hair, frilled skirt, long sleeves, long hair, suspenders, red bow, white shirt,||東方幻想郷|くるみ|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/A2Fneg8Hbt.png)|
+|1girl, {{{{elly (touhou)}}}}, yellow eyes, blonde hair, curly hair, white headwear, hat ribbon, red dress, long dress, long sleeves, scythe, holding scythe,||東方幻想郷|エリー|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OcuNMwcabo.png)|
+|1girl, {{{{mugetsu (touhou)}}}}, yellow eyes, blonde hair, short hair, blue dress, maid headdress, maid,||東方幻想郷|夢月|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rwnf5eu_CH.png)|
+|1girl, {{{{gengetsu (touhou)}}}}, angel wings, yellow eyes, red bow, blonde hair, white skirt, brown vest, white shirt, short hair,||東方幻想郷|幻月|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/G3zdTJVoES.png)|
+|1girl, {{{{sara (touhou)}}}}, pink eyes, pink hair, {{one side up}}, red dress, short hair, short sleeves, white shirt,||東方怪綺談|サラ|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/y7RQbYsoLC.png)|
+|1girl, {{{{louise (touhou)}}}}, yellow eyes, blonde hair, low twintails, white shirt, white long skirt, white headwear, purple neckerchief, purple bow, closed eyes, ^ ^,||東方怪綺談|ルイズ|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jqBRAXn581.png)|
+|1girl, {{{{alice margatroid (pc-98)}}}}, loli, blue eyes, blue hairband, blonde hair, white shirt, blue suspender skirt, short sleeves, short hair, back bow, grimoire of alice,||東方怪綺談|アリス (ロリス)|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UYCoDZH01v.png)|
+|1girl, {{{{yuki (touhou)}}}}, yellow eyes, white bow, white bowtie, blonde hair, black headwear, black vest, black skirt, white shirt, short sleeves, short hair, back bow,||東方怪綺談|ユキ|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/axaWTwDbYH.png)|
+|1girl, {{{{mai (touhou)}}}}, angel wings, blue eyes, blue hair, white dress, white bow, short hair, buttons, sash,||東方怪綺談|マイ|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/r0oMznLHGe.png)|
+|1girl,{{{{yumeko (touhou)}}}}, yellow eyes, blonde hair, long hair, red dress, maid, maid apron, maid headdress, black ribbon, puffy short sleeves, back bow, sword, holding sword, dual wielding,||東方怪綺談|夢子|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ez6ZSDWtJS.png)|
 |1girls, {{{{shinki_(touhou)}}}}, silver_long_hair, side ponytail, hair_bobbles, jewelry red eyes, glossy eyes, red_dress, white_frills, long_sleeves, ballgown, red capelet, alphes_(style), kind smile||東方怪綺談|神綺|V3使用~~特徴的なサイドテールといった要素は抑えているが、衣装の細部が安定しない|[[https://image02.seesaawiki.jp/n/h/nai_ch/YXpDHLJtPJ.png]]|
-|{{{loli}}}, alice margatroid &#40;pc-98), {{blonde hair}}, white shirt, blue suspender skirt, short sleeves, {{blue hairband}},||東方怪綺談|アリス (ロリス)|稀に赤色のヘアバンドになる~~ヘアバンドについているリボンは再現不能|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/DkHIEgawPy-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/DkHIEgawPy.png]]|
 |}
 **二次創作作品キャラ
 {| class="sort edit nanj_prompt_table"
@@ -258,6 +269,8 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |}
+
+
 
 
 

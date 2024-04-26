@@ -7,7 +7,6 @@
 ***　DARKER THAN BLACK
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
 |yin (darker than black), white hair, ponytail, pink eyes, hair ribbon, expressionless, solo, cowboy shot, ||DARKER THAN BLACK|銀|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EsbY3E3XuW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/EsbY3E3XuW.png]]|
 |}
 
@@ -225,7 +224,6 @@
 ***　テイルズシリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
 |1boy, {{kyle}} {dunamis}, &#91;&#91;tales of]] &#91;destiny] 2, spiked hair, blonde hair, blue eyes, short hair, hair between eyes, black gloves, elbow gloves, blue pants, red shirt, navel, multiple belts, solo, cowboy shot, official art, |muscular, bare shoulders, |テイルズ オブ デスティニー2|カイル・デュナミス|V3だが非常に不安定。サンプルはチェリーピック。脇の下が見える服のプロンプトはarmpit cutoutだが、入れると脇を強調した構図になってしまう。強弱の調整は無駄な足掻きかもしれない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/W2NHqJVtRj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/W2NHqJVtRj.png]]|
 |mint adenade, tales of phantasia, blue eyes, long hair, blonde hair, hair intakes, long dress, white dress, hat, uniform, white gloves, high collar, short sleeves, side slit, smile, solo, cowboy shot, official art,     ||テイルズ オブ ファンタジア|ミント・アドネード|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xMk4kur77v-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xMk4kur77v.png]]|
 |arche klein, tales of phantasia, pink pants, bracelet, long hair, pink hair, belt, pink eyes, elbow gloves, ponytail, solo, cowboy shot,    ||テイルズ オブ ファンタジア|アーチェ・クライン|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1LtNHIbLiT-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1LtNHIbLiT.png]]|
@@ -378,6 +376,7 @@
 ***　とある魔術の禁書目録
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|shirai kuroko, toaru kagaku no railgun, school uniform, solo, cowboy shot, ||とある科学の超電磁砲|白井黒子|V3版|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1Xdv906NK7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1Xdv906NK7.png]]|
 |official_style, 2d_cel_anime,{{{toaru_majutsu_no_index}}}, toaru_kagaku_no_railgun, {{{kinuhata_saiai}}},short_hair, brown_eyes,brown_hair,bob_cut,swept_bangs,aran_sweater,white_sweater,white_skirt, miniskirt,flat_chest,simple_background, white_background,standing,cowboy_shot|multiple angle,blurry,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,text,error,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,missing fingers,bad hands,missing arms,head_out_of_frame,2koma,panel layout,|とある魔術の禁書目録|絹旗最愛|定期的に美琴っぽく出力される|https://image02.seesaawiki.jp/n/h/nai_ch/HmMxtzif9d.png|
 |official style, anime coloring, misaka imouto, toaru majutsu no index, very aesthetic, best quality, intricate, overall detail, 1 girl, brown eyes, empty eyes, simple eyes, school uniform, standing, assault rifle, expressionless, simple background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, {{{{misaka mikoto}}}}, |とある魔術の禁書目録|御坂妹|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/l42VYVqagN.png|
 |oriana thomason, toaru majutsu no index, hair over one eye, blonde hair, blue eyes, long hair, large breasts, drill hair, solo, cowboy shot,  | |とある魔術の禁書目録|オリアナ=トムソン|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/joEQMVMDAX-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/joEQMVMDAX.png]]|
@@ -561,6 +560,8 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
+
+
 
 
 
