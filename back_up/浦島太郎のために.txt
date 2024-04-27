@@ -21,6 +21,32 @@
 
 #contents
 
+*2024-04-27 cnlllite-anystyleが流行する
+https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet
+
+4/22に公開された、画像の構図を維持したまま衣装やキャラなど他の要素を変更できるControlnetモデル、cnlllite-anystyleが流行した。
+作者曰く
+> 入力した画像から大雑把に構図と明暗を維持できるように作ったCN(ControlNet)
+※注意 cnlllite(ControlNet-LLLite)はCNの軽量版でSDXL専用
+
+従来のモデルであるDepthに近いが、それと違い構図は維持したまま髪型を変更することができる。
+また、Scribbleのように線画を元絵として改善された絵を出す使い方も可能。
+
+''使い方(1111/forge)''
++cnlllite-anystyle_v3-step00004000.safetensorsを落としてくる(作者推奨が4000stepだから)
++これをmodels\ControlNet配下に置く
++WebUIを起動する
++ControlNetのEnableをチェック(forgeはControlNetのチェックボックスも有効にする)
++Control TypeはAllのままでPreprocessorもnoneのままでいい
++Preprocessorの横のModelの横の&#128260;&#65039;を押してモデル一覧を再読み込み
++Modelの中の多分一番上にcnlllite-anystyle_v3-step00004000.safetensorsが出てくるからそれを選択
++あとは元にしたい画像をSingle Imageに投げ込んで画像生成
+
+''うまく動かないときは''
+https://fate.5ch.net/test/read.cgi/liveuranus/1714105975/481 によると「latentをいじったりするような拡張が入っていると、干渉してエラーを吐くっぽい」とのこと。
+このニキはKohya HRFixの拡張機能をオフにすると動作したという。
+
+または、出力解像度をモデルの推奨解像度にする。詳しくは[[Animagine 3.1tips>animagine31tips]]や[[Pony Diffusion V6XLtips>>PonyDiffusionV6XLTips]]のページを参照。
 *2024-04-23 Hyper-SD公開
 https://hyper-sd.github.io/
 LCMやSDXL-Lightningのような低STEPで生成を完了する技術に、新たな手法としてHyper-SDが公開された
@@ -32,7 +58,7 @@ SD1.5用とSDXL用があるので、用途に合わせてダウンロードす�
 使用時は、LCM LoRaと同じようにプロンプト内で呼び出せば良い
 
 設定例 Hyper-SDXL-8steps-lora.safetensorsの場合
-ステップ:8　サンプリング:Eular a  SGM Uniform　CFG:Animazine系は1〜2、Pony系は3〜3.5くらい
+ステップ:8　サンプリング:Euler a  SGM Uniform　CFG:Animazine系は1〜2、Pony系は3〜3.5くらい
 
 ※注意 SDXL用のsafetensorが誤ってSD1.5用として内部に記載されているため、WebUIデフォルト設定でSDXLモデルを読み込んでいるとLoRaリストに表示されない
 　設定からExtra Networks(追加のネットワーク)ページにあるAlways show all networks on the Lora page(otherwise, those detected as for incompatible version of Stable Diffusion will be hidden)にチェックを入れると表示されるので、LoRaのスパナアイコンから設定をSDXLに変更すると良い
@@ -1602,6 +1628,10 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
+
 
 
 
