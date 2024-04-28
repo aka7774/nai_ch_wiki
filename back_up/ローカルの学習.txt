@@ -51,4 +51,4 @@ https://arxiv.org/abs/2402.09353
 
 LyCORISに実装された。
 LyCORISでnetwork_argsにdora_wd=Trueを指定すると使える。
-使用するには1111のdevブランチが必要。
+使用するには1111の1.9.0以降が必要。
