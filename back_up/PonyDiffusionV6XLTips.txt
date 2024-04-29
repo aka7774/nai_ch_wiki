@@ -105,6 +105,11 @@ aca, aer, api, aur, bem, bif, bzi, bzl, frw, gar, gkb, gor, gpc, gpo, gvb, gzl, 
 aey, aff, aku, alp, baf, bfu, bip, bks, bku, bwf, bwu, csz, dbu, epg, evg, fbv, fey, ffs, fii, fla, gcg, gcx, gjv, grp, gsf, hag, hbz, hda, ilb, imf, ixz, kmq, kmz, kpm, kwl, kzg, lbq, lek, lpt, luz, lwl, lym, mdf, mdw, mlx, nrf, nvo, nvu, obo, ohw, oii, ojn, owz, oxz, oyz, paf, par, pjy, pme, pml, poo, pri, psm, pvo, pwl, pwn, pxg, qdc, qdl, qlt, rha, rjz, rpz, rrg, rsl, shq, sht, smg, ttp, uhf, ujf, uyf, uyz, vag, vbi, vdc, vdl, ven, vfc, wbi, wnw, wpw, xiq, xlx, 
 ||=
 
+**有用なトークン
+トークンの大部分は海外絵師に関連付けられているため有用なものは少ない。
+|aua|宝鐘マリン|
+|lanr|星街すいせい|
+|pitvinm|がうる・ぐら|
 * バグ
 ** 特定のプロンプトでノイズまみれになる
 稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
@@ -142,6 +147,8 @@ LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散
 
 * Controlnetとの相性
 原因不明だが一部のControlnetとの相性が悪く、特にOpenposeでの指定ポーズは全く反映されない。
+
+
 
 
 
