@@ -7,6 +7,7 @@
 **主人公
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
+|||東方project|古明地こいし|||
 |||||||
 |hakurei reimu (touhou)||東方project|博麗霊夢|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/B0igrtLm6Y.png)|
 |hakurei reimu||^|^||https://image02.seesaawiki.jp/n/h/nai_ch/HgHbGZFvyT.png|
@@ -16,16 +17,25 @@
 **紅魔郷
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
-|{loli},rumia,red eyes ,blonde hair,short hair, black vest,collared shirt,red  ascot,black skirt,red hair ribbon,full body|pleated skirt,buttons|東方project|ルーミア|稀にリボンを両側に着けている|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xi0gSIcCax-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xi0gSIcCax.png]]|
-|daiyousei, side ponytail, green hair, blue dress, white shirt, yellow ribbon, yellow ascot, fairy wings||東方Project|大妖精|羽の種類が不安定なのとサイドポニーテールが~~逆になったりポニーテールになることがある|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/grnmRVsUs4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/grnmRVsUs4.png]]|
+|1girl, rumia &#40;touhou), medium hair, blonde hair, red eyes, fang, black vest, white shirt, collared shirt, red ascot, long sleeves, black skirt, skirt set, frilled skirt, red ribbon, hair ribbon,||東方project|ルーミア|V3使用|https://image02.seesaawiki.jp/n/h/nai_ch/GGo6TyRzCH.png|
+|{loli},rumia,red eyes ,blonde hair,short hair, black vest,collared shirt,red  ascot,black skirt,red hair ribbon,full body|pleated skirt,buttons|^|^|稀にリボンを両側に着けている|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xi0gSIcCax-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xi0gSIcCax.png]]|
+|1girl, daiyousei (touhou), green eyes, green hair, short hair, side ponytail, bangs, fairy wings, white shirt, collared shirt, puffy short sleeves, blue vest, yellow ascot, mblue skirt, skirt set, hair bow, hair ribbon, yellow bow, yellow ribbon,||東方Project|大妖精|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NbsBpiaWHd.png)|
+|daiyousei, side ponytail, green hair, blue dress, white shirt, yellow ribbon, yellow ascot, fairy wings||^|^|羽の種類が不安定なのとサイドポニーテールが~~逆になったりポニーテールになることがある|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/grnmRVsUs4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/grnmRVsUs4.png]]|
+|1girl, cirno (touhou), short hair, blue hair, ice wings, fairy wings, blue eyes, bangs, white shirt, collared shirt, puffy short sleeves, blue dress, pinafore dress, red ribbon, neck ribbon, blue bow, green bow, hair bow, bow,||東方Project|チルノ|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/XTwMlUjsfZ.png)|
 |tanned cirno, solo, cowboy shot, ||東方Project|日焼けチルノ|V3。danbooruでは"tanned cirno"という固有のキャラタグが付与されている模様|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0_gLV2QG68-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0_gLV2QG68.png]]|
 |1girl ,{{{cirno}}},light blue hair,blue ribbon,blue clothes,red ascot,{{light blue icy wing}}||東方Project|チルノ|{{tan}}をつけると日焼けverに|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7Hj6XrVIS6-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/7Hj6XrVIS6.png]]|
-|hong meiling||東方Project|紅美鈴|帽子の☆龍マークは再現できないので~~編集ソフトでテキスト入力|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LU307GW87_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/LU307GW87_.png]]|
-|{{koakuma}}, touhou, vest, black skirt, long skirt, red necktie, white shirt, bat wings, masterpiece,||東方project|小悪魔|たまに羽の数が合わないことがある|[[https://image02.seesaawiki.jp/n/h/nai_ch/5FbZXxyNNb-s.png]]|
-|patchouli knowledge||東方Project|パチュリー・ノーレッジ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ztgE22YngV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ztgE22YngV.png]]|
-|izayoi sakuya||東方Project|十六夜咲夜||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BfMKNboEOd-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/BfMKNboEOd.png]]|
-|remilia scarlet, pink cap,dress,||東方Project|レミリア・スカーレット|なぜか指定なしだと肩出し衣装がよくでる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TGwlofpsE2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TGwlofpsE2.png]]|
-|flandre scarlet, zun hat||東方Project|フランドール・スカーレット||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VMui7H58nq-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/VMui7H58nq.png]]|
+|1girl, hong meiling (touhou),  green eyes, long hair, red hair, twin braids, chinese clothes, green headwear, beret, white shirt, green vest, green skirt, green dress, collared dress, puffy short sleeves, frilled sleeves, black ribbon, neck ribbon, white pants, star (symbol), black bow, hair bow,||東方Project|紅美鈴|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Om3SDa21S9.png)|
+|hong meiling||^|^|帽子の☆龍マークは再現できないので~~編集ソフトでテキスト入力|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LU307GW87_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/LU307GW87_.png]]|
+|1girl, koakuma (touhou), red eyes, long hair, red hair, sidelocks, pointy ears, demon wings, head wings, white shirt, collared shirt, juliet sleeves, long sleeves, black vest, red necktie, black skirt, skirt set, black dress, buttons,||東方Project|小悪魔|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5cv_dFLvKu.png)|
+|{{koakuma}}, touhou, vest, black skirt, long skirt, red necktie, white shirt, bat wings, masterpiece,||^|^|たまに羽の数が合わないことがある|[[https://image02.seesaawiki.jp/n/h/nai_ch/5FbZXxyNNb-s.png]]|
+|1girl, patchouli knowledge (touhou), purple eyes, very long hair, purple hair, blunt bangs, double bun,  purple headwear, mob cap, bun cover, vertical-striped dress, purple dress, long sleeves, robe, wide sleeves, red bowtie, neck ribbon, red ribbon, crescent hat ornament, crescent hair ornament, red bow, blue bow, hair bow, hat bow,||東方Project|パチュリー・ノーレッジ|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/M6LUN1ODQo.png)|
+|patchouli knowledge||^|^||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ztgE22YngV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ztgE22YngV.png]]|
+|1girl, izayoi sakuya (touhou), red eyes, maid, medium hair, twin braids, grey hair, maid headdress, blue dress, puffy short sleeves, maid apron, waist apron, white apron,  green bow, hair bow, waist bow, white bow, knife, holding knife,||東方Project|十六夜咲夜|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mRsBQ5frI7.png)|
+|izayoi sakuya||^|^||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BfMKNboEOd-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/BfMKNboEOd.png]]|
+|1girl, remilia scarlet (touhou), red eyes, short hair, purple hair, light purple hair, blue hair, slit pupils, fang, bat wings, white headwear, pink headwear, mob cap, white shirt, pink shirt, collared shirt, frilled shirt collar, red ascot, puffy short sleeves, frilled sleeves, wrist cuffs, white skirt, pink skirt, skirt set, frilled skirt, red ribbon, hat ribbon, waist bow, red bow, spear the gungnir, brooch, holding,||東方Project|レミリア・スカーレット|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BszutwfwE6.png)|
+|remilia scarlet, pink cap,dress,||^|^|なぜか指定なしだと肩出し衣装がよくでる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TGwlofpsE2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TGwlofpsE2.png]]|
+|1girl, flandre scarlet (touhou), red eyes, short hair, medium hair, blonde hair, one side up, red eyes, slit pupils, fang, wings, crystal, white headwear, mob cap, red vest, white shirt, collared shirt, frilled shirt collar, yellow ascot, puffy short sleeves, frilled sleeves, wrist cuffs, red skirt, skirt set, frilled skirt, red ribbon, hat ribbon, back bow, white bow, laevatein (touhou), holding,||東方Project|フランドール・スカーレット|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LbkXyzxyKk.png)|
+|flandre scarlet, zun hat||^|^||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VMui7H58nq-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/VMui7H58nq.png]]|
 |}
 **妖々夢
 {| class="sort edit nanj_prompt_table"
@@ -269,6 +279,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |}
+
 
 
 

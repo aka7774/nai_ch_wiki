@@ -107,9 +107,12 @@ aey, aff, aku, alp, baf, bfu, bip, bks, bku, bwf, bwu, csz, dbu, epg, evg, fbv, 
 
 **有用なトークン
 トークンの大部分は海外絵師に関連付けられているため有用なものは少ない。
-|aua|宝鐘マリン|
-|lanr|星街すいせい|
-|pitvinm|がうる・ぐら|
+|aua|キャラ|宝鐘マリン|
+|lanr|キャラ|星街すいせい|
+|pitvinm|キャラ|がうる・ぐら|
+|8um|アーティスト|ishikei|
+|mjm|アーティスト|zankuro|
+|thn|アーティスト|xration|
 * バグ
 ** 特定のプロンプトでノイズまみれになる
 稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
@@ -147,6 +150,7 @@ LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散
 
 * Controlnetとの相性
 原因不明だが一部のControlnetとの相性が悪く、特にOpenposeでの指定ポーズは全く反映されない。
+
 
 
 

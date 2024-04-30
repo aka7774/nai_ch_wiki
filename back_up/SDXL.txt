@@ -69,6 +69,14 @@ StabilityAI(SDXL base)のVAEはfp16ではNaN演算が発生して動かないた
 それを修正したものがあるのでそちらの使用をおすすめする
 https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 
+Q 生成画像が灰色っぽくなります。
+A 主流のSDXLモデルのほとんどはVAEを内蔵しているためVAE:Noneでいいですが、たまに内蔵されていないものがあります。
+有名どころではjs2prony。その場合上記のsdxl-vae-fp16-fixを導入してVAEに指定しましょう。
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xzpLr7KIvy-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xzpLr7KIvy.png]]
+js2pronyVAEなし
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FCIrGc5hsm-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FCIrGc5hsm.png]]
+js2pronyVAEあり
+
 * SDXLの学習
 [[ローカルの学習>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac]]
 ※SDXL学習特有の問題点については編集時点で本スレで試行錯誤中
