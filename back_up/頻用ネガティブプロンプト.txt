@@ -5,6 +5,7 @@
 *キーワード
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+||乳首|||
 ||白目|||
 |mascot, stuffed animal|マスコット、動物のぬいぐるみ|マスコット風の動物が意味もなく出現することがあるため、その対策用||
 |@_@|ぐるぐる目|瞳の崩れを抑える効果があるらしい||
@@ -68,6 +69,7 @@ SDXLでは効果がないので注意
 以下の表ではptファイルのデフォルト名(ダウンロードしたときの名前)で書いてます
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|||||
 |||||
 |bad_prompt|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://huggingface.co/datasets/Nerfgun3/bad_prompt||
 |bad_prompt_version2|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 bad_promptよりもいいとは作者談 要ptファイル https://huggingface.co/datasets/Nerfgun3/bad_prompt||

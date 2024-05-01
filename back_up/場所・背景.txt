@@ -241,7 +241,9 @@
 |carousel|メリーゴーランド||https://image02.seesaawiki.jp/n/h/nai_ch/NcINx3RFSo.png|
 |ferris_wheel|観覧車||https://image02.seesaawiki.jp/n/h/nai_ch/pXL8MY2oYT.png|
 |lantern floating|灯籠流し||https://image01.seesaawiki.jp/n/h/nai_ch/3AJlSPSnLF.png|
-|rubble ruins|廃墟の都市~~災害などによって荒廃した都市といった感じ||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JfFcrEZ4Vs.png)|
+|ruins|廃墟|単体では石造りの遺跡風になるが、プロンプトによっては廃都市にもなる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oJyMF22Zzx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oJyMF22Zzx.png]]|
+|wreckage|残骸|単体ではビルや機械の残骸が出力されるが、プロンプトによっては廃都市にもなる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VwZL9_J7Ox-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/VwZL9_J7Ox.png]]|
+|rubble ruins|廃墟の都市|災害などによって荒廃した都市といった感じ|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JfFcrEZ4Vs.png)|
 |fields|田園|小麦畑だったりただの原っぱだったりする|https://image02.seesaawiki.jp/n/h/nai_ch/6Cbnsn3nT2.png|
 |outdoors|野外|小道と植木という組み合わせが多い|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dk8qIwKXKo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/dk8qIwKXKo.png]]|
 |grasslands|草原||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/QafanTZmIj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/QafanTZmIj.png]]|

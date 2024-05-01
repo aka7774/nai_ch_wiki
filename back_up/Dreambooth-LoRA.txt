@@ -11,6 +11,7 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 ''ページの更新がほとんどされておらず、古くなっていることに留意。''
 &size(10){このページもといローカル部のページのほとんどが更新停止で悲しい&#129402;}
 ''ここの情報はSD1.5に関するもの。現時点でSDXLの情報は無い。''
+SDXL関連はスレか他所のページを見ましょう。
 
 * 公式情報
 
@@ -74,8 +75,28 @@ kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツール�
 こういう場合はこれを最初に試してな
 インストールは下記を参考に
 - &color(#ff0000){★公式導入ガイド}：https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md
-ちなみにこれ以降のものは純正のsd-scriptsをかんたんに使えるようにしたものやで
 
+* GUI・補助ツール
+純正のsd-scriptsをかんたんに使えるようにしたものやで
+bmaltais版GUIかKohya_lora_param_guiがおすすめ。Kohya_lora_param_guiは日本語で親切設計で使いやすい。
+
+** bmaltais版 GUI
+https://github.com/bmaltais/kohya_ss
+GUI といっても作者の sd-scripts にパラメータを渡すだけや。性能は変わらん。セットアップがちょっとだけ楽。
+GUIのほうが更新が数日遅れるのが常やから我慢してや。
+-GradioベースのGUI。
+-「Tools」タブにフォルダ配置補助機能がある。
+-スクリプト版のパラメータの一部は設定出来ないかも？
+-起動は、powershellならactivate.ps1、gui-user.ps1を順番に呼ぶのが早い（自動でブラウザも立ち上がる）
+-アップデートは upgrade.ps1 をpowershellで実行
+
+** Kohya_lora_param_gui (スレ住民作)
+https://github.com/RedRayz/Kohya_lora_param_gui
+https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定してコマンドラインに渡すGUIです。
+- accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
+- 単体でsd-scriptsのインストール・更新ができるようになった。
+- LECOの学習もできる。
+- としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。
 
 ** LoRA_Easy_Training_Scripts Installers
 最初はまっさらなフォルダにインストールするんやで
@@ -101,36 +122,26 @@ start.batと同じフォルダに入れて実行してください
 - ダイアログ用(みかんせい)
 -- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts_easy_training.bat
 
-** bmaltais版 GUI
-https://github.com/bmaltais/kohya_ss
-GUI といっても作者の sd-scripts にパラメータを渡すだけや。性能は変わらん。セットアップがちょっとだけ楽。
-GUIのほうが更新が数日遅れるのが常やから我慢してや。
--GradioベースのGUI。
--「Tools」タブにフォルダ配置補助機能がある。
--スクリプト版のパラメータの一部は設定出来ないかも？
--起動は、powershellならactivate.ps1、gui-user.ps1を順番に呼ぶのが早い（自動でブラウザも立ち上がる）
--アップデートは upgrade.ps1 をpowershellで実行
 
-** AUTOMATIC1111 SD WebUI 拡張機能版 (作: ddPn08 GUI)
-https://github.com/ddPn08/kohya-sd-scripts-webui
+** AUTOMATIC1111 SD WebUI 拡張機能版 (作: ddPn08 GUI) ※更新停止
+%%ttps://github.com/ddPn08/kohya-sd-scripts-webui%%
+去年の六月を最後に更新が停止しています。現在も動作するかは不明です。
+[+]
 WebUIのエクステンションに対応。スタンドアロンで動かすと上記のbmaltais版と似たような感じ。
 - エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
 - 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
 - WebUI 割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
 - アップデートは update.bat
+[END]
 
-** Kohya_lora_param_gui (スレ住民作)
-https://github.com/RedRayz/Kohya_lora_param_gui
-https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定してコマンドラインに渡すGUIです。
-- accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
-- 単体でsd-scriptsのインストール・更新ができるようになった。
-- LECOの学習もできる。
-- としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。
-** sd-webui-train-tools | https://github.com/liasece/sd-webui-train-tools
+** sd-webui-train-tools
+https://github.com/liasece/sd-webui-train-tools
 AUTOMATIC1111 SD WebUI 用の 拡張機能
 画像をドロップしてパラメータを程よく埋めると出来る。簡単
 動かんときは別にWebUIをセットアップして学習専用にしたほうがいい。
 ReadMEが中国語なのでgoogle翻訳頑張れるなら 
+更新頻度が低く最新の機能は使えない
+
 ** その他補助スクリプト
 としあきbatや4chan製のスクリプトがある
 
