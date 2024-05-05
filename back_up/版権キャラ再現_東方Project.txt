@@ -7,8 +7,6 @@
 **主人公
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
-|||東方project|古明地こいし|||
-|||||||
 |hakurei reimu (touhou)||東方project|博麗霊夢|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/B0igrtLm6Y.png)|
 |hakurei reimu||^|^||https://image02.seesaawiki.jp/n/h/nai_ch/HgHbGZFvyT.png|
 |kirisame marisa (touhou)||東方project|霧雨魔理沙|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/vE6KqwCvtC.png)|
@@ -22,8 +20,8 @@
 |1girl, daiyousei (touhou), green eyes, green hair, short hair, side ponytail, bangs, fairy wings, white shirt, collared shirt, puffy short sleeves, blue vest, yellow ascot, mblue skirt, skirt set, hair bow, hair ribbon, yellow bow, yellow ribbon,||東方Project|大妖精|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/NbsBpiaWHd.png)|
 |daiyousei, side ponytail, green hair, blue dress, white shirt, yellow ribbon, yellow ascot, fairy wings||^|^|羽の種類が不安定なのとサイドポニーテールが~~逆になったりポニーテールになることがある|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/grnmRVsUs4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/grnmRVsUs4.png]]|
 |1girl, cirno (touhou), short hair, blue hair, ice wings, fairy wings, blue eyes, bangs, white shirt, collared shirt, puffy short sleeves, blue dress, pinafore dress, red ribbon, neck ribbon, blue bow, green bow, hair bow, bow,||東方Project|チルノ|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/XTwMlUjsfZ.png)|
-|tanned cirno, solo, cowboy shot, ||東方Project|日焼けチルノ|V3。danbooruでは"tanned cirno"という固有のキャラタグが付与されている模様|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0_gLV2QG68-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0_gLV2QG68.png]]|
-|1girl ,{{{cirno}}},light blue hair,blue ribbon,blue clothes,red ascot,{{light blue icy wing}}||東方Project|チルノ|{{tan}}をつけると日焼けverに|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7Hj6XrVIS6-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/7Hj6XrVIS6.png]]|
+|tanned cirno, solo, cowboy shot, ||^|^|V3使用~~天空璋・日焼けチルノ~~danbooruでは"tanned cirno"という固有のキャラタグが付与されている模様|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0_gLV2QG68-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0_gLV2QG68.png]]|
+|1girl ,{{{cirno}}},light blue hair,blue ribbon,blue clothes,red ascot,{{light blue icy wing}}||^|^|{{tan}}をつけると日焼けverに|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7Hj6XrVIS6-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/7Hj6XrVIS6.png]]|
 |1girl, hong meiling (touhou),  green eyes, long hair, red hair, twin braids, chinese clothes, green headwear, beret, white shirt, green vest, green skirt, green dress, collared dress, puffy short sleeves, frilled sleeves, black ribbon, neck ribbon, white pants, star (symbol), black bow, hair bow,||東方Project|紅美鈴|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Om3SDa21S9.png)|
 |hong meiling||^|^|帽子の☆龍マークは再現できないので~~編集ソフトでテキスト入力|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LU307GW87_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/LU307GW87_.png]]|
 |1girl, koakuma (touhou), red eyes, long hair, red hair, sidelocks, pointy ears, demon wings, head wings, white shirt, collared shirt, juliet sleeves, long sleeves, black vest, red necktie, black skirt, skirt set, black dress, buttons,||東方Project|小悪魔|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5cv_dFLvKu.png)|
@@ -124,14 +122,22 @@
 **地霊殿
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
-|1girl,{{{{{{kisume}}}}}},green hair,green eyes,{{white kimono,white clothes}},torn clothes, hair bobbles,two side up, girl in bucket||東方Project|キスメ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/d9GSCrwglZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/d9GSCrwglZ.png]]|
-|1girl,{{{{{{kurodani yamame}}}}}},gold hair,ponytail,short hair,hair bow,brown clothes,brown long skirt,{{{brown vest,black shirt}},black long sleeves||東方Project|黒谷ヤマメ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/400mkJ7_VV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/400mkJ7_VV.png]]|
-|1girl, mizuhashi parsee, green eyes, ||東方Project|水橋パルスィ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o7_2UiNC50-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o7_2UiNC50.png]]|
-|1girl, hoshiguma yuugi, ||東方Project|星熊勇儀||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Ofk9BE5I60-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Ofk9BE5I60.png]]|
-|1girl, komeiji satori||東方Project|古明地さとり||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Ih5dx4TLAD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Ih5dx4TLAD.png]]|
-|1girl, kaenbyou rin, cat girl,red hair,twin braids,cat ears,two tails,green clothes,green frilled skirt||東方Project|火焔猫燐||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bxiXbrv157-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/bxiXbrv157.png]]|
-|1girl, reiuji utsuho, white shirt,green skirt,fusion of black & blue cape,wings||東方Project|霊烏路空|たまにマントが宇宙柄になる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/oSwYbgR4ze-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/oSwYbgR4ze.png]]|
-|1girl, komeiji koishi||東方Project|古明地こいし||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5LnUStEuah-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5LnUStEuah.png]]|
+|1girl, kisume (touhou), green eyes, green hair, twintails, hair bobbles, white kimono, in a bucket,||東方Project|キスメ|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9lsqh5IaIU.png)|
+|1girl,{{{{{{kisume}}}}}},green hair,green eyes,{{white kimono,white clothes}},torn clothes, hair bobbles,two side up, girl in bucket||^|^||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/d9GSCrwglZ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/d9GSCrwglZ.png]]|
+|1girl, kurodani yamame (touhou), brown eyes, blonde hair, ponytail, brown hair bow, brown pinafore dress, black shirt, buttons,||東方Project|黒谷ヤマメ|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Gwbjf6KGL0.png)|
+|1girl,{{{{{{kurodani yamame}}}}}},gold hair,ponytail,short hair,hair bow,brown clothes,brown long skirt,{{{brown vest,black shirt}},black long sleeves||^|^||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/400mkJ7_VV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/400mkJ7_VV.png]]|
+|1girl, mizuhashi parsee (touhou), green eyes, blonde hair,  half updo, french braid, pointy ears, bangs, short hair, white scarf, brown shirt, undershirt, black shirt, black skirt, short sleeves, white sash, arm warmers,||東方Project|水橋パルスィ|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/E6kgi8GNT4.png)|
+|1girl, mizuhashi parsee, green eyes, ||^|^||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/o7_2UiNC50-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/o7_2UiNC50.png]]|
+|1girl, hoshiguma yuugi (touhou), red eyes, blonde hair, long hair, parted bangs, sidelocks, single horn, red horn, star (symbol), t-shirt, white shirt, shackles, blue skirt, striped skirt, red skirt, see-through skirt, cuffs, shackles, geta, sakazuki, holding,||東方Project|星熊勇儀|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2Or0vg6HVh.png)|
+|1girl, hoshiguma yuugi, ||^|^||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Ofk9BE5I60-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Ofk9BE5I60.png]]|
+|1girl, komeiji satori (touhou), pink eyes, purple eyes, short hair, pink hair, purple hair, messy hair, third eye, eyeball, collared shirt, blue shirt, frilled shirt collar, ribbon trim, heart button, long sleeves, frilled sleeves, wide sleeves, pink skirt, frilled skirt, floral print, rose print, white legwear, bobby socks, pink slippers,||東方Project|古明地さとり|V3使用~~サードアイが複数個になる事がある|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/913oD7cphk.png)|
+|1girl, komeiji satori||^|^||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Ih5dx4TLAD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Ih5dx4TLAD.png]]|
+|1girl, kaenbyou rin (touhou), red eyes, nekomata, red hair, long hair, twin braids, braid,  cat ears, extra ears, cat tail, multiple tails, green dress, frilled dress, juliet sleeves, long sleeves, frilled sleeves, mary janes, leg ribbon, black ribbon, hair bow, black bow, hitodama, skull, wheelbarrow,||東方Project|火焔猫燐|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HtRzZ0eJbc.png)|
+|1girl, kaenbyou rin, cat girl,red hair,twin braids,cat ears,two tails,green clothes,green frilled skirt||^|^||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bxiXbrv157-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/bxiXbrv157.png]]|
+|1girl, reiuji utsuho (touhou), red eyes, long hair, black hair, brown hair, ponytail, bird wings, black wings, third eye, third eye on chest, blouse, white shirt, collared shirt, frilled shirt collar, center frills, buttons, puffy short sleeves, green skirt, frilled skirt, black kneehighs, mismatched footwear, single shoe, white cape, starry sky print, hair bow, green bow, control rod, arm cannon, atom,||東方Project|霊烏路空|V3使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/APYX8vFDPP.png)|
+|1girl, reiuji utsuho, white shirt,green skirt,fusion of black & blue cape,wings||^|^|たまにマントが宇宙柄になる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/oSwYbgR4ze-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/oSwYbgR4ze.png]]|
+|1girl, komeiji koishi (touhou), green eyes, medium hair, green hair, grey hair, wavy hair,  third eye, eyeball, black hat, collared shirt, yellow shirt, frilled shirt collar, diamond button, long sleeves, frilled sleeves, wide sleeves, green skirt, frilled skirt, floral print, rose print, black footwear, boots, heart, heart of string, hat ribbon, yellow ribbon, hat bow, yellow bow,||東方Project|古明地こいし|V3使用~~さとりと同様、サードアイが複数個になる事も~~bright pupilsを追加すると心綺楼こいし目に|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/skBtKfpQng.png)|
+|1girl, komeiji koishi||^|^||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5LnUStEuah-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5LnUStEuah.png]]|
 |}
 **星蓮船
 {| class="sort edit nanj_prompt_table"
@@ -312,6 +318,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |}
+
 
 
 
