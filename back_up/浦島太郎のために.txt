@@ -21,6 +21,23 @@
 
 #contents
 
+*2024-05-08 URLを含む書き込みで「もう余所でやってください。」と言われるケースが続出
+
+=||
+一定の長さ以上の文章
+URL
+||=
+だと「もう余所でやってください。」になり、
+=||
+URL
+文章
+||=
+ならば書き込めるとの報告が相次いだ。
+
+*2024-05-08 ic-lightが公開される
+
+ControlNetやFooocus、Forgeの開発で知られるlllyasviel氏が画像のライティングを変更する[[ic-light>https://github.com/lllyasviel/IC-Light]]を公開した。
+
 *2024-04-27 cnlllite-anystyleが流行する
 4/22に公開された、画像の構図を維持したまま衣装やキャラなど他の要素を変更できるControlnetモデル、cnlllite-anystyleが流行した。
 詳しくは[[ControlNet>ControlNet]]をご覧ください
@@ -1609,6 +1626,9 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
 
 
 

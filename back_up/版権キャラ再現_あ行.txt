@@ -240,7 +240,6 @@
 ***　アトリエシリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
 |official art, {{reisalin stout, atelier ryza}}, very aesthetic, best quality, intricate, overall detail, 1 cute girl, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed,|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, |ライザのアトリエ|ライザリン・シュタウト|V2使用。衣装までかなり忠実に再現される。|https://image02.seesaawiki.jp/n/h/nai_ch/g5W_qha8cT.png|
 |kishida mel (style), {{elmerulia fryxell, atelier lulua}}, very aesthetic, best quality, intricate, overall detail, 1 cute girl, slender, long hair, light purple hair, blunt bangs, aqua eyes, gold hairband, pink bowtie, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed,|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, totooria helmold, |ルルアのアトリエ|エルメルリア・フリクセル|V2使用。特徴的な髪飾りは再現されない。|https://image02.seesaawiki.jp/n/h/nai_ch/tqotyuc85s.png|
 |kishida mel (style), {{rororina fryxell, atelier rorona}}, very aesthetic, best quality, intricate, overall detail, 1 cute girl, short hair, blunt bangs, blue eyes, hat, white capelet, long sleeves, brown dress, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed,|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, totooria helmold, |ロロナのアトリエ|ロロライナ・フリクセル|V2使用。|https://image01.seesaawiki.jp/n/h/nai_ch/kzVGA9Y_EM.png|
@@ -339,7 +338,8 @@
 ***　イジらないで、長瀞さん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|revealing clothes,underdressing,{{swimsuit}}, {{{Open front}}} , solo, 1girl, ijiranaide_nagatoro-san , nagatoro_hayase , brown skin ,hairpin, long hair, grin, white collared shirt, brown eyes, {{{bangs}}} , school swimsuit, {{{open your own shirt}}}, skirt, fang, 16 years old, classroom,standing,|||長瀞さん||https://image01.seesaawiki.jp/n/h/nai_ch/XhD7aiFjY8.png|
+|nagatoro hayase, ijiranaide nagatoro-san, school uniform, smirk, cowboy shot, ||イジらないで、長瀞さん|長瀞さん|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lHp6hDg__9-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lHp6hDg__9.png]]|
+|revealing clothes,underdressing,{{swimsuit}}, {{{Open front}}} , solo, 1girl, ijiranaide_nagatoro-san , nagatoro_hayase , brown skin ,hairpin, long hair, grin, white collared shirt, brown eyes, {{{bangs}}} , school swimsuit, {{{open your own shirt}}}, skirt, fang, 16 years old, classroom,standing,||^|^||https://image01.seesaawiki.jp/n/h/nai_ch/XhD7aiFjY8.png|
 |}
 
 ***　痛いのは嫌なので防御力に極振りしたいと思います。
@@ -684,6 +684,7 @@
 |2d_cel_anime,owari_no_seraph, hiiragi_shinoa,simple_background, white_background,purple_hair,standing,full_body|multiple angle,blurry,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,text,error,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,missing fingers,bad hands,missing arms,head_out_of_frame,2koma,panel layout,|終わりのセラフ|柊シノア||https://image01.seesaawiki.jp/n/h/nai_ch/Yvaq3J82AL.png|
 |{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
 |}
+
 
 
 
