@@ -45,15 +45,9 @@ SDXL関連はスレか他所のページを見ましょう。
 
 : 原神LoRA作成メモ・検証 | https://rentry.org/genshin_lora
 - スレ住民によるkohya-ss氏制作のSDスクリプト(https://github.com/kohya-ss/sd-scripts )で次のキャラのLoRAを作成した。ポップアップ版使用。（日本語）
--- 02/10:繰り返し数の検証結果を追加。 02/23:簡易的な検証結果を追加。 03/04:LoConの検証結果を追加。
-
-: lora training tagging faq（英語） | %%ttps://rentry.org/lora-tag-faq%%
-- リンク切れ
+-- 筆者による追記:SD1.5時代の試行錯誤していた頃の情報で古くなっています。参考にしないでください。
 
 : スレ住民によるキャラクター学習のタグ付け一例（日本語） | https://rentry.org/dsvqnd
-
-: スレ住民によるLoRAでのキャラ学習素材の検証 | %%ttps://rentry.org/lora_namakubi%%
-- 削除しました。
 
 : LAZY TRAINING GUIDE | https://rentry.org/LazyTrainingGuide
 - loraをいっぱい作ってる海外ニキの打率9割学習ガイド
@@ -294,11 +288,11 @@ u2net_human_seg あたりがちょうど良さげ
 AIで不純物とかを消してでっち上げるやつ。割と重い。windows用インストーラーあり。
 WebUI用extensionもある [[Extensions_URL>https://seesaawiki.jp/nai_ch/d/Extensions%5fURL#content_3_15]]
 * 正則化画像
+LoRAの用途を考えると基本的に不要。なお、透明正則化の効果は無いと思われる。
 - ChatGPTたん曰く「過学習を抑えるためのもの」
 - キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが詳しくはわからないので誰か書いてクレメンス
 - 「鳥獣戯画のカエルちゃん」を覚える代わりに普通のカエルを忘れて書けなくなるのを防ぐために学習時に普通のカエルの画像を渡しておく感じ？
 - 他所のノートブックを利用しているので確かな事は言えないが、正則化画像を同じような画像で学習させすぎると正則化画像につけたクラストークンで正則化画像の内容を生成するようになる。単に「学習画像と正則画像を二つとも学習する」という挙動のように思われる。
-- 正則化画像は任意。基本的に用意しなくていい。なお、透明正則化の効果は無いと思われる。
 ** 正則化画像検証 (クリックして展開)
 [+]
 
@@ -335,7 +329,7 @@ Dim/NW=128/64(LoCon:32/16) 元画像38枚*20回 10epoch Adafactor
 
 [END]
 ** 透明のPNGを正則化画像にする
-透明正則化は効果を確認できないため、やる必要性はない。
+透明正則化は効果を確認できないため、やる必要性はない。ただの都市伝説。
 Web UI に拡張機能 Generate-TransparentIMG をインストールする
 [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
 Generate TransparentIMG タブで、「出力フォルダ」には正則化画像の保存先を、「number_of_generation」には作成する枚数を入力して実行
@@ -611,7 +605,7 @@ last.safetensors というファイルができる
 //[END]
 ** オプティマイザー
 *** Adafactor
-再現度はAdamW以下なのでおすすめしない。
+完全自動Optimizer。AdamWより計算も収束も遅い。はっきり言ってLoRAでは使う価値はない。LoRAよりFinetuningなどの大規模学習に向いている。
 Adなんとかを使って学習してみたらなんも学習してないのができて悲しかったので、スレでマークしておいたものを記録しておきます。クリックして展開
 [+]2023/02/22あたりのAdafactorの話題メモ
 ----
@@ -739,11 +733,11 @@ warmupはどっかをいじって立ち上げ角度変えんと邪魔にしか�
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/VugkNJtYkU.png,300) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/bfo1MDtv05.png,300)
 [END]
 
-*LoRAの種類とLoCon・LyCORISについて
-LoCon(LyCORIS)について
+*LoRAの種類とLyCORISについて
+LyCORISについて
 https://github.com/KohakuBlueleaf/LyCORIS
-LoRAの新しい学習手法。通常のLoRAより性能がいいかもしれない。学習速度(it/s)は遅い。
-名前が変わって LyCORIS に統合された
+LoRAの新しい学習手法をまとめたリポジトリ。通常のLoRAより性能がいいかもしれない。計算速度(it/s)は遅い。
+もともとLoConのみだったが、のちに新しいアルゴリズムも追加されLyCORISに統合された。
 
 **LyCORIS のインストールと使用方法
 sd-scriptsのvenvで
@@ -800,8 +794,7 @@ v1.5.0以降では、lycorisプラグインが不要になり、1111の内蔵の
 その為 a1111-sd-webui-lycoris を導入する必要はなく、<lyco:>を使う必要も無くなった
 * LoRA層別学習
 U-Netの階層別に学習率やDim/Alphaを指定できるようになった。
-まだ出たばかりで詳細不明。とりあえず作者の説明書を読もう。
-加筆求む
+特定の層のLRを下げたり削除することで画風への影響を減らしたりできる。
 
 * コピー機LoRA学習法
 過学習させたLoRAをあれこれすることで、目を大きくしたり、アウトラインを太くしたりと非常に細かい部分のみを変更できるLoRAが作成できる手法。

@@ -51,8 +51,8 @@ https://civitai.com/models/257749?dialog=commentThread&commentId=334380
 ネガのXY Plotによる比較もある。
 https://civitai.com/posts/1267427
 
-バタ臭くなりそうな作品名、
-western artist,disney,marvelなどを入れるのも効果がある。
+バタ臭くなりそうな作品名などを入れるのも効果がある。
+''western_artist,disney,marvel,overwatch,league_of_legends,the_simpsons''があたりが定番ネガの模様。
 
 以下は
 ポジ側に source_anime, score_9,
@@ -91,8 +91,9 @@ https://rentry.org/ponyxl_loras_n_stuff（通称Pony Note） ※一番下のinna
 最初は3文字のトークンが発見されたが、後に3文字以外のトークンも多くあることが判明している。
 望ましくないスタイルをネガティブに入れたり、あるいは良さそうなスタイルをポジティブに入れることで、より安定して好みに合った画像を出せるものと思われる。
 本スレによると、ネガに隠しトークンを多数入れてもさほど効果がない、逆に思い通りの画像が出なくなったなどの報告もあるので今後の研究が期待される。
+pony系の派生モデルでも本家ほどの効き具合ではないが機能する。
 
-''aca,ces,gpo''は''グロテスクな画像''が重点的に学習されているようなのでネガに入れても損はないだろう。逆にこれらをポジに入れるのは禁物。
+''aca,ces（feces=大便）,gpo''は''グロテスクな画像''が重点的に学習されているようなのでネガに入れても損はないだろう。逆にこれらをポジに入れるのは禁物。
 =|BOX|
 0594今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c688-yO80)
 2024/03/13(水) 02:46:32.21ID:90RW5TM/0
@@ -106,13 +107,29 @@ aey, aff, aku, alp, baf, bfu, bip, bks, bku, bwf, bwu, csz, dbu, epg, evg, fbv, 
 ||=
 
 **有用なトークン
-トークンの大部分は海外絵師に関連付けられているため有用なものは少ない。
-|aua|キャラ|宝鐘マリン|
-|lanr|キャラ|星街すいせい|
-|pitvinm|キャラ|がうる・ぐら|
-|8um|アーティスト|ishikei|
-|mjm|アーティスト|zankuro|
-|thn|アーティスト|xration|
+トークンの大部分はケモノ系・カートゥーン系の海外アーティストに関連付けられているため有用なものは少ない。
+
+***キャラ
+|トークン|名前|
+|aua|宝鐘マリン|
+|lanr|星街すいせい|
+|pitvinm|がうる・ぐら|
+
+***アーティスト
+|トークン|名前|備考|
+|8um|ishikei||
+|aze|不明||
+|bfg|flou_(flou_art)|線が特徴的|
+|emc|不明||
+|gjem|wamudraws|デフォルメ|
+|mdf|mdf_an||
+|mjm|zankuro|デフォルメ|
+|nviv|panken|厚塗りデフォルメ|
+|qppp|sty|フラット塗り|
+|pci|不明|デフォルメ|
+|saz|abmayo||
+|thn|xration||
+|vum|bluethebone|80年代アニメ風|
 * バグ
 ** 特定のプロンプトでノイズまみれになる
 稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
@@ -150,6 +167,9 @@ LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散
 
 * Controlnetとの相性
 原因不明だが一部のControlnetとの相性が悪く、特にOpenposeでの指定ポーズは全く反映されない。
+
+
+
 
 
 
