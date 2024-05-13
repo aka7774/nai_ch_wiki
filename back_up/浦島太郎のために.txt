@@ -35,6 +35,8 @@ https://huggingface.co/tsukihara/xl_model
 ||=
 
 変更点については「まぁ強いて言うなら構図…？わからんワイは雰囲気でマージしとる」「1.5のときみたいに「バージョンアップ！」って訳じゃなくて単に絵柄が違うって感じ」とも。（ https://fate.5ch.net/test/read.cgi/liveuranus/1715346628/642 ）
+
+翌日2.1が公開された。「肌が流石に眩しすぎたので若干オリジナルponyに近くした。自分らで好きに調整してくんろ」とのこと。
 *2024-05-08 URLを含む書き込みで「もう余所でやってください。」と言われるケースが続出
 
 =||
@@ -1640,6 +1642,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
