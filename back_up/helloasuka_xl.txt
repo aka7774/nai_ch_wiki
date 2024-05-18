@@ -73,6 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4070|12GB|Core i3-12100F|92.9|v1.9.3|--xformers --precision half|All perf improvements bundle #15821|
 |RTX 4080|16GB|Ryzen 9 7900X|55.6|f0.0.17v1.8.0rc-latest-269-gef35383b||Powerlimit 70%だと62.0s|
 |RTX 2060|12GB|Core i3-10105|237.4|v1.9.3|--xformers|Powerlimit 70%|
 |GTX 1650(TU116)|4GB|Ryzen 7 1700X|3191.0|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
