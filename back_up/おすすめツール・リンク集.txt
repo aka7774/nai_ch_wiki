@@ -240,12 +240,18 @@ data['input'] += random.choice(['white dress', 'school uniform', 'swimsuit']) + 
 
 [END]
 
-** Fast Prompt Generator (ブラウザで動くプロンプト作成ツール)
+** あおさプロンプト - Fast Prompt Generator (ブラウザで動くプロンプト作成ツール)
 
-[[https://d3uatsppidr3bo.cloudfront.net/>>https://d3uatsppidr3bo.cloudfront.net/]]
+[[https://aosa-prompt.com/>>https://aosa-prompt.com/]]
 キーワードを選択して組み合わせるとクリップボードにプロンプトがコピーされる
 キーワードが豊富で検索が便利
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aVwtYmkU90-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/aVwtYmkU90.png]]
+
+** あおさプロンプト - Randam Prompt Generator (ブラウザで動くプロンプト作成ツール)
+
+[[https://aosa-prompt.com/rpg>>https://aosa-prompt.com/rpg]]
+指定したキーワードでランダムにプロンプトを作る
+
 
 
 * Webサービス
