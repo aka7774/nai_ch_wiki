@@ -286,15 +286,24 @@
 * 版権キャラ再現/ラブライブ！サンシャイン！！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
-|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{takami chika}}},&#91;&#91;&#91;ahoge]]], {side braid}, red eyes,||ラブライブ！サンシャイン！！|高海千歌|takami chika のみだと ahoge が忘れられることが多い|https://image02.seesaawiki.jp/n/h/nai_ch/0ETCy1ZRZw.png|
-|{{watanabe you}}, love live! school idol project, {{love live! sunshine!!}}, light brown hair, blue eyes, slender, middle breasts, , {{{uranohoshi school uniform}}}, white serafuku, {{gray collar}}, {gray skirt}, {red neckerchief}}, black socks,, simple background, white background, , 1girl, solo, , cowboy shot,, from front, facing the front, looking at viewer, straight-on, close to viewer,, year 2023,, very aesthetic, best quality, amazing quality, , curated, illustration, highly detailed,  ||ラブライブ！サンシャイン！！|渡辺曜||https://image01.seesaawiki.jp/n/h/nai_ch/2DPNP4lgaD.png|
-|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{sakurauchi riko}}}, yellow eyes,||ラブライブ！サンシャイン！！|桜内梨子||https://image01.seesaawiki.jp/n/h/nai_ch/xGG4NpzRSz.png|
-|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{kurosawa ruby}}}, green eyes,red hair, two side up,flat chest,||ラブライブ！サンシャイン！！|黒澤ルビィ||https://image01.seesaawiki.jp/n/h/nai_ch/XMTHF_8HCd.png|
-|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{kunikida hanamaru}}}, ||ラブライブ！サンシャイン！！|国木田花丸||https://image01.seesaawiki.jp/n/h/nai_ch/WoYOc__OL8.png|
-|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{tsushima yoshiko}}}, single side bun,pink eyes||ラブライブ！サンシャイン！！|津島善子||https://image02.seesaawiki.jp/n/h/nai_ch/Dpho5gcOUd.png|
-|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{matsuura kanan}}}, purple eyes,blue hair,ponytail,||ラブライブ！サンシャイン！！|松浦果南||https://image02.seesaawiki.jp/n/h/nai_ch/XgOhhQJJyY.png|
-|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{ohara mari}}}, yellow eyes, large breasts,crown braid,||ラブライブ！サンシャイン！！|小原鞠莉|Undesired Content にcrownを入れないと王冠が出てくる~~(AIさんが髪型のcrown braidのcrown部分にも反応してる）|https://image01.seesaawiki.jp/n/h/nai_ch/VLrBAmkYGu.png|
-|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{kurosawa dia}}},green eyes,hime cut,black hair,long hair,tsurime,||ラブライブ！サンシャイン！！|黒澤ダイヤ|ホクロは自分で足してください|https://image02.seesaawiki.jp/n/h/nai_ch/DozWn66HxM.png|
+|takami chika, love live! sunshine!!, ||ラブライブ！サンシャイン！！|高海千歌|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/b9BJQWptmA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/b9BJQWptmA.png]]|
+|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{takami chika}}},&#91;&#91;&#91;ahoge]]], {side braid}, red eyes,||^|^|takami chika のみだと ahoge が忘れられることが多い|https://image02.seesaawiki.jp/n/h/nai_ch/0ETCy1ZRZw.png|
+|watanabe you, love live! sunshine!!,   ||ラブライブ！サンシャイン！！|渡辺曜|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/pPwV07NWeS-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/pPwV07NWeS.png]]|
+|{{watanabe you}}, love live! school idol project, {{love live! sunshine!!}}, light brown hair, blue eyes, slender, middle breasts, , {{{uranohoshi school uniform}}}, white serafuku, {{gray collar}}, {gray skirt}, {red neckerchief}}, black socks,, simple background, white background, , 1girl, solo, , cowboy shot,, from front, facing the front, looking at viewer, straight-on, close to viewer,, year 2023,, very aesthetic, best quality, amazing quality, , curated, illustration, highly detailed,  ||^|^||https://image01.seesaawiki.jp/n/h/nai_ch/2DPNP4lgaD.png|
+|sakurauchi riko, love live! sunshine!!, ||ラブライブ！サンシャイン！！|桜内梨子|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/YPoHQWMC5P-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/YPoHQWMC5P.png]]|
+|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{sakurauchi riko}}}, yellow eyes,||^|^||https://image01.seesaawiki.jp/n/h/nai_ch/xGG4NpzRSz.png|
+|kurosawa ruby, love live! sunshine!!, ||ラブライブ！サンシャイン！！|黒澤ルビィ|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/vuDZM41Byj-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/vuDZM41Byj.png]]|
+|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{kurosawa ruby}}}, green eyes,red hair, two side up,flat chest,||^|^||https://image01.seesaawiki.jp/n/h/nai_ch/XMTHF_8HCd.png|
+|kunikida hanamaru, love live! sunshine!!,  ||ラブライブ！サンシャイン！！|国木田花丸|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cx4Pz5QZPe-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cx4Pz5QZPe.png]]|
+|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{kunikida hanamaru}}}, ||^|^||https://image01.seesaawiki.jp/n/h/nai_ch/WoYOc__OL8.png|
+|tsushima yoshiko, love live! sunshine!!, ||ラブライブ！サンシャイン！！|津島善子|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tcbxb49cm_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/tcbxb49cm_.png]]|
+|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{tsushima yoshiko}}}, single side bun,pink eyes||^|^||https://image02.seesaawiki.jp/n/h/nai_ch/Dpho5gcOUd.png|
+|matsuura kanan, love live! sunshine!!, ||ラブライブ！サンシャイン！！|松浦果南|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Xeat7x65mh-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Xeat7x65mh.png]]|
+|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{matsuura kanan}}}, purple eyes,blue hair,ponytail,||^|^||https://image02.seesaawiki.jp/n/h/nai_ch/XgOhhQJJyY.png|
+|ohara mari, love live! sunshine!!, ||ラブライブ！サンシャイン！！|小原鞠莉|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jJCg1P8D67-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jJCg1P8D67.png]]|
+|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{ohara mari}}}, yellow eyes, large breasts,crown braid,||^|^|Undesired Content にcrownを入れないと王冠が出てくる~~(AIさんが髪型のcrown braidのcrown部分にも反応してる）|https://image01.seesaawiki.jp/n/h/nai_ch/VLrBAmkYGu.png|
+|kurosawa dia, love live! sunshine!!, ||ラブライブ！サンシャイン！！|黒澤ダイヤ|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7UfAMA5fVd-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/7UfAMA5fVd.png]]|
+|{{{love live!}}}, {{{love live! sunshine!!}}}, {{{kurosawa dia}}},green eyes,hime cut,black hair,long hair,tsurime,||^|^|ホクロは自分で足してください|https://image02.seesaawiki.jp/n/h/nai_ch/DozWn66HxM.png|
 |takami chika, {short twintails}, two side up, {{{dark purple}}} hair, red eyes, {{{{{{tsurime}}}}}}, medium hair, &#91;&#91;short hair]], &#91;&#91;&#91;&#91;&#91;&#91;forehead]]]]]], white hair ribbon, black serafuku, white shirt, small breasts, ear, &#91;&#91;&#91;angry]]], 1girl, solo, white background, love live!|{{{down-slanted eyes}}}, {{{{{{tareme}}}}}}, bangs, braids, {{{{{{sidelocks}}}}}}, piercing|ラブライブ！サンシャイン！！|鹿角理亞|スレ5＞＞306|https://image01.seesaawiki.jp/n/h/nai_ch/SWg3esQCJa.png|
 |takami chika, side ponytail, {{{dark purple}}} hair, [black hair], {{sidelocks}}, short hair, red eyes, &#91;&#91;&#91;&#91;forehead]]]], hair ribbon, &#91;&#91;&#91;smirk]]], serafuku, white shirt, {{lady}}, 1girl, solo, white background, love live!|{{{{bangs}}}}, {{{loli}}}, child, braids, twintails, piercing, orange|ラブライブ！サンシャイン！！|鹿角聖良|スレ5＞＞331|https://image02.seesaawiki.jp/n/h/nai_ch/iLJZcj4UvI.png|
 |||||||
@@ -346,6 +355,7 @@
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |official style, full-color, tsushima yoshiko, {{genjitsu no yohane}}, best quality, intricate, overall detail, medieval, 1 girl, long hair, hair bun, black feather hair ornament, capelet, white shirt, short sleeve, corset, grey skirt, thighhighs, holding cane, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |幻日のヨハネ|ヨハネ|V3使用。服装が再現する気配は無し。|https://image01.seesaawiki.jp/n/h/nai_ch/Uugc8XDl0P.png|
 |}
+
 
 
 
