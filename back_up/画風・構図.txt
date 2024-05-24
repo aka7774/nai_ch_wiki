@@ -5,8 +5,6 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
-||||||
-||||||
 |extremely detailed CG unity 8k wallpaper||8K超精細CG||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fe8b1d325077b79e.png]]|
 |{{unreal engine 5, computer graphics, 100-layer, hyper-detailed, high resolution, textile shading, beautiful detailed eyes, 4k, 8k, 16k, stunning, sharp, smooth, realistic, intricate, overall detail}}, 1girl, solo, {{chibi}}, white sundress, light smile, hyper deformed face, younger, blonde shiny hair, long hair, green eyes, medium breasts, simple background, facing the front, from outside, full body, solo focus, perfect face, perfect anatomy, intricate, (highly detailed),|{{3d}}, bad anatomy, disfigured, poorly drawn, lowers, worst quality, low quality, censor, bar censor, mosaic censorship, |SDキャラ|２〜３頭身ぐらいのSDキャラになる。|https://image02.seesaawiki.jp/n/h/nai_ch/lW0EpsXbg6.png https://image02.seesaawiki.jp/n/h/nai_ch/nTkgibPrZ7.png|
 |{{{{children's doodles drawing}}}}, {{scribble, crayon(medium), traditional media, crayon sketch, clumsy art, awkward art, poor art}}, 1 cute girl, serafuku, school uniform, standing, light smile, blonde shiny hair, long hair, green eyes, medium breasts, outdoor, cityscape, straight-on, cowboy shot, facing the front, ||子供の落書き風|Add Quality Tags:OFF、Undesired Content Preset:Noneは必須。Add Quality TagsがONだと顔だけは整った感じになりやすい。絵の上手い人がそれっぽく描いた絵になりやすい。|https://image01.seesaawiki.jp/n/h/nai_ch/hOPe_Trmg4.png https://image01.seesaawiki.jp/n/h/nai_ch/Ch60kHvOJj.png|
@@ -261,6 +259,7 @@
 SD化してからpixel artにするとよりいいのが出力される
 http://temaemisokoubou.web.fc2.com/
 https://www.bannerkoubou.com/anime/
+
 
 
 
