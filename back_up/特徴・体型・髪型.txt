@@ -124,6 +124,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|official hairstyle,|公式ヘアスタイル|少々ムラがあるが、ある程度有名な作品などでは結構成功率高め。||
 |hair down,|下ろした髪|サンプルはFateのセイバー。結び、編みなどセットした状態がデフォのキャラのストレートヘアー再現用。＋乱れた状態ならmessy hair。|https://image01.seesaawiki.jp/n/h/nai_ch/5ZhtBfVc1o.png|
 |braid pig tails|三つ編みツインテール|サンプルのように根本から三つ編みにした感じになりやすい。~~pigが単独のプロンプトとして機能しているようで豚が出力される事がある。|https://image02.seesaawiki.jp/n/h/nai_ch/2uAr3RShWG.png https://image02.seesaawiki.jp/n/h/nai_ch/zsjIiTMlFk.png|
 |double bun and ○○ twin tails|お団子＋ツインテール|セーラームーンの月野うさぎみたいな髪型。○○はlongかmediumを指定する（shortだとツインテが無くなることがある）。|https://image01.seesaawiki.jp/n/h/nai_ch/QqT0kGKCmh.png https://image01.seesaawiki.jp/n/h/nai_ch/yv5Alnnudx.png|
