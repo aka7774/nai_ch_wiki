@@ -6,7 +6,7 @@ https://huggingface.co/cagliostrolab/animagine-xl-3.1
 * Animegine XL 3.0から何が変わった？
 3.0に比べてキャラの種類が大幅に増加した。
 3.0はソシャゲキャラ中心だったため、多くのアニメキャラは生成できなかったが、3.1は生成できるアニメキャラが大幅に増加した。
-ほかにもQuality Tagsの仕様変更とAesthetic Tags(美的スコアに基づいたタグ)が追加された。
+ほかにもQuality Tagsの仕様変更とAesthetic Tags(美的スコアに基づいたタグ)が追加され、アート面での表現が強化されている。
 
 *プロンプトの書き方
 AnimagineXL3.0とはまた違う独特のプロンプトルールあり
@@ -79,10 +79,6 @@ WebUI 1.7以前であれば、プロンプトの語順を変えてみるか以�
 https://github.com/hako-mikan/sd-webui-prevent-artifact
 1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。
 
-
-
-
-
-
-
-
+* 不向きな題材
+3.0よりもアート表現が強化された一方で、R18表現は一層出しにくくなっている。
+特に男女の絡みは苦手で、女キャラ単体しか出なかったり、人体が盛大に崩壊するのが当たり前。

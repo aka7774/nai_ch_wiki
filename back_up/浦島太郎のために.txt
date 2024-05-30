@@ -21,6 +21,19 @@
 
 #contents
 
+*2024-05-19 3x3x3mixXLが公開される
+https://civitai.com/models/464044
+
+Pony系列のモデルが弱いとされる背景の描き込みが強化されているのが特徴。
+
+https://fate.5ch.net/test/read.cgi/liveuranus/1716088224/204
+
+=|BOX|
+3x3x3mixXL作成してみたンゴ
+typeA~C混ぜてみたんやが正直色んな要素が薄まってごちゃまぜになっとるから却って使いにくいかもしれん…
+あとマージを繰り返した代償か全身入る構図だと顔が崩れやすいのでADtailerでつかったほうがいいかもやで！
+||=
+
 *2024-05-12 ebara_pony_2が公開される
 https://huggingface.co/tsukihara/xl_model
 
@@ -1642,6 +1655,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
