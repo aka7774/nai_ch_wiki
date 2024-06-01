@@ -21,6 +21,29 @@
 
 #contents
 
+*2024-05-31 Omostが公開される
+
+ControlNetやFooocus、Forgeの開発で知られるlllyasviel氏が対話型AIを用いて画像を生成する「Omost」を公開した。
+
+https://github.com/lllyasviel/Omost
+
+PCにインストールしなくても、huggingface上のデモページで試すこともできる。
+
+https://huggingface.co/spaces/lllyasviel/Omost
+
+*2024-05-31 画像からプロンプトを推測するツールなどが公開される
+
+なんJNVA部★400 
+https://fate.5ch.net/test/read.cgi/liveuranus/1716953974/544
+
+-手持ちの画像からプロンプトを推測するツール https://huggingface.co/spaces/John6666/wd-tagger-transformers
+-上のに加えてエロプロンプトを生成するツール https://huggingface.co/spaces/John6666/danbooru-tags-transformer-v2-with-wd-tagger
+-普通のDanbooruタグをポニー用のe621タグに変換するツール https://huggingface.co/spaces/John6666/danbooru-to-e621
+
+いずれもインストールは必要なく、huggingfaceのスペース上で利用できる。
+
+「[[適当にパクって改造したもんなんで誰でも好きに適当にパクって改造したってやー>https://fate.5ch.net/test/read.cgi/liveuranus/1716953974/551]]」とのこと。
+
 *2024-05-19 3x3x3mixXLが公開される
 https://civitai.com/models/464044
 
@@ -240,6 +263,14 @@ Stability AIにより、新たな画像生成モデル「Stable Cascade」が公
 SDXLよりも短時間での生成が可能であり、さらにプロンプトの忠実度や画像の美学的品質も向上しているという。
 ローカルで動かすにはデフォルトで20GBのVRAMを必要とするが、コードを改変することでより少ないVRAMで動作したとの報告もある。
 https://note.com/hakomikan/n/n75f0ee78abf9
+
+* 2024-02-12 ZLUDAがリリース
+RadeonでCUDAを動かせるようにするラッパーソフトウェアZLUDAがGitHubで突如リリースされた。
+https://github.com/vosen/ZLUDA/
+元々はAMDで開発していたがこれが流行ると益々CUDAでええやんとなってしまうためプロジェクトが没になり作者が公開するに至った（AMDは2023年10月にnod.ai SHARKを買収している）。
+性能としては[[GeekbenchをOpenCL版で動かすよりもほとんど性能が上がる（最大75.34％アップ）>https://github.com/vosen/ZLUDA/raw/master/geekbench.svg]]など、ただ単にソフト互換性があるだけではなく、パフォーマンスメリットまである事が判明した。
+
+2024年6月1日現在、[[Stable Diffusion WebUI AMDGPU（旧Stable Diffusion WebUI DirectML）>https://github.com/lshqqytiger/stable-diffusion-webui-amdgpu]]の--use-zludaオプションや、[[ComfyUIのZLUDAフォーク版>https://github.com/patientx/ComfyUI-Zluda]]を使う事でRadeonでもStable Diffusion系を高速に扱う事が出来るようになっている。
 
 *2024-02-06 stable-diffusion-webui-forgeリリース
 ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた

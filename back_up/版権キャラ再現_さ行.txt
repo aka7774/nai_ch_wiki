@@ -163,6 +163,7 @@
 ***　ジュエルペットシリーズ
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
+|miria marigold mackenzie, jewelpet twinkle, loli, blonde hair, twintails, earrings, hairband, cat ears,  ||ジュエルペットてぃんくる☆|ミリア・マリーゴールド・マッケンジー|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Nz_LIlFCYP-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Nz_LIlFCYP.png]]|
 |official style,1 girl, {mizushiro kanon}, jewelpet (series), jewelpet sunshine, black hair, long straight hair, ahoge, gray cardigan, school uniform, white pleated skirt, black tights, big red ribbon, reddish purple eyes, ||ジュエルペット サンシャイン|水城 花音|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/GbzUd_4ZaV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/GbzUd_4ZaV.png]]|
 |} 
 
@@ -170,7 +171,8 @@
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
 |2d cel anime, {{shiina mayuri, steins;gate}}, very aesthetic, best quality, realistic, intricate, overall detail, 1 girl, standing, light smile, simple background, front view, cowboy shot, {{facing the front, straight-on}}, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands,|STEINS;GATE|椎名 まゆり|V2使用。名前だけで何の問題もなく出る。|https://image02.seesaawiki.jp/n/h/nai_ch/RCAxiBWwq3.png| 
-|{steins;gate},{makise kurisu},1girl,small breasts,red long hair,white shirt tucked in,+black shorts+,short shorts,+red necktie+,pantyhose,+brown jacket+,{jacket on shoulders},+white belt+,|汎用ネガティブプロンプト|STEINS;GATE|牧瀬 紅莉栖|成功率若干低め。白ベルト、ジャケットは再現できず。|https://image02.seesaawiki.jp/n/h/nai_ch/5zAYzBiIm0.png| 
+|makise kurisu, steins;gate, cowboy shot, ||STEINS;GATE|牧瀬 紅莉栖|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wNcJE4pBG5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wNcJE4pBG5.png]]| 
+|{steins;gate},{makise kurisu},1girl,small breasts,red long hair,white shirt tucked in,+black shorts+,short shorts,+red necktie+,pantyhose,+brown jacket+,{jacket on shoulders},+white belt+,|汎用ネガティブプロンプト|^|^|成功率若干低め。白ベルト、ジャケットは再現できず。|https://image02.seesaawiki.jp/n/h/nai_ch/5zAYzBiIm0.png|
 |} 
 
 ***　serial experiments lain（シリアルエクスペリメンツレイン） 
