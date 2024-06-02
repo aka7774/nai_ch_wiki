@@ -158,6 +158,7 @@ Ponyの弱点として、背景、メカ、乗り物は学習量が少ないら�
 -Pony and XL- BackgroundPack
 https://civitai.com/models/478799/pony-and-xl-backgroundpack
 
+またケモナーの報告によるとR18絵ではメスケモ×人間男の組み合わせとなるように強力な補正がかかるらしく、ケモノ系モデルながらケモノ同士やオスケモ×人間女の組み合わせは出しにくいらしい。
 * Animagineとの連携方法
 Ponyはプロンプトからの構図を生み出しが良いが、Animagineの方が絵柄が好きと言うときに、AnimagineをRefinerとして使用する方法がある。
 WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可)を指定し数値を指定する。
@@ -181,4 +182,6 @@ https://huggingface.co/tsukihara/xl_model
 ***real pony
 https://civitai.com/models/365041
 リアル系モデルの中でも不気味さのない顔を出せると言われている。
+
+
 
