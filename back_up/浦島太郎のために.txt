@@ -20,8 +20,15 @@
 [END]
 
 #contents
+*2024年
+**2024-06-03 SD3のリリース日発表
+https://x.com/StabilityAI/status/1797462536117444794
+Stable Diffusion 3の一般公開が6月12日（米国時間）になることが発表された。
+まずはパラメータ数が少ない軽量モデルをリリースし、次いで重量モデルもリリースしていく予定だという。
 
-*2024-05-31 Omostが公開される
+https://civitai.com/articles/5069
+Pony Diffusionも次期バージョンのSD3ベースでの学習に向けて準備を進めているという。
+**2024-05-31 Omostが公開される
 
 ControlNetやFooocus、Forgeの開発で知られるlllyasviel氏が対話型AIを用いて画像を生成する「Omost」を公開した。
 
@@ -31,7 +38,7 @@ PCにインストールしなくても、huggingface上のデモページで試�
 
 https://huggingface.co/spaces/lllyasviel/Omost
 
-*2024-05-31 画像からプロンプトを推測するツールなどが公開される
+**2024-05-31 画像からプロンプトを推測するツールなどが公開される
 
 なんJNVA部★400 
 https://fate.5ch.net/test/read.cgi/liveuranus/1716953974/544
@@ -44,7 +51,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1716953974/544
 
 「[[適当にパクって改造したもんなんで誰でも好きに適当にパクって改造したってやー>https://fate.5ch.net/test/read.cgi/liveuranus/1716953974/551]]」とのこと。
 
-*2024-05-19 3x3x3mixXLが公開される
+**2024-05-19 3x3x3mixXLが公開される
 https://civitai.com/models/464044
 
 Pony系列のモデルが弱いとされる背景の描き込みが強化されているのが特徴。
@@ -57,7 +64,7 @@ typeA~C混ぜてみたんやが正直色んな要素が薄まってごちゃま�
 あとマージを繰り返した代償か全身入る構図だと顔が崩れやすいのでADtailerでつかったほうがいいかもやで！
 ||=
 
-*2024-05-12 ebara_pony_2が公開される
+**2024-05-12 ebara_pony_2が公開される
 https://huggingface.co/tsukihara/xl_model
 
 https://fate.5ch.net/test/read.cgi/liveuranus/1715346628/625
@@ -73,7 +80,7 @@ https://huggingface.co/tsukihara/xl_model
 変更点については「まぁ強いて言うなら構図…？わからんワイは雰囲気でマージしとる」「1.5のときみたいに「バージョンアップ！」って訳じゃなくて単に絵柄が違うって感じ」とも。（ https://fate.5ch.net/test/read.cgi/liveuranus/1715346628/642 ）
 
 翌日2.1が公開された。「肌が流石に眩しすぎたので若干オリジナルponyに近くした。自分らで好きに調整してくんろ」とのこと。
-*2024-05-08 URLを含む書き込みで「もう余所でやってください。」と言われるケースが続出
+**2024-05-08 URLを含む書き込みで「もう余所でやってください。」と言われるケースが続出
 
 =||
 一定の長さ以上の文章
@@ -86,15 +93,15 @@ URL
 ||=
 ならば書き込めるとの報告が相次いだ。
 
-*2024-05-08 ic-lightが公開される
+**2024-05-08 ic-lightが公開される
 
 ControlNetやFooocus、Forgeの開発で知られるlllyasviel氏が画像のライティングを変更する[[ic-light>https://github.com/lllyasviel/IC-Light]]を公開した。
 
-*2024-04-27 cnlllite-anystyleが流行する
+**2024-04-27 cnlllite-anystyleが流行する
 4/22に公開された、画像の構図を維持したまま衣装やキャラなど他の要素を変更できるControlnetモデル、cnlllite-anystyleが流行した。
 詳しくは[[ControlNet>ControlNet]]をご覧ください
 
-*2024-04-23 Hyper-SD公開
+**2024-04-23 Hyper-SD公開
 https://hyper-sd.github.io/
 LCMやSDXL-Lightningのような低STEPで生成を完了する技術に、新たな手法としてHyper-SDが公開された
 上述の既存手法よりも生成物の精度が良いとされ、実際にスレ★386でも使用された画像が貼られているので参考にすると良い
@@ -110,39 +117,39 @@ SD1.5用とSDXL用があるので、用途に合わせてダウンロードす�
 ※注意 SDXL用のsafetensorが誤ってSD1.5用として内部に記載されているため、WebUIデフォルト設定でSDXLモデルを読み込んでいるとLoRAリストに表示されない
 　設定からExtra Networks(追加のネットワーク)ページにあるAlways show all networks on the Lora page(otherwise, those detected as for incompatible version of Stable Diffusion will be hidden)にチェックを入れると表示されるので、LoRAのスパナアイコンから設定をSDXLに変更すると良い
 
-**2024/5/1追記 CFGスケール5〜8に対応したモデル公開
+***2024/5/1追記 CFGスケール5〜8に対応したモデル公開
 4/30に、CFGスケール5〜8に対応したモデルが公開された。これを使用すると、HyperSD使用時と不使用時でCFGスケールを調整する必要が無くなる。
 
-*2024-04-18 Stable Diffusion 3のAPIが公開される
+**2024-04-18 Stable Diffusion 3のAPIが公開される
 https://ja.stability.ai/blog/stable-diffusion-3-api
 現時点では有料。
 早速課金して試した人もいるが「あまりクオリティの向上は感じられない」とのこと。
 ただし公開されたのは開発途上のモデルとの情報もあり、現時点でSD3の実力の明確な評価を下せる段階にはない。
 
-*2024-04-16 Adobe Premiere ProへのSoraの実装が発表
+**2024-04-16 Adobe Premiere ProへのSoraの実装が発表
 https://news.adobe.com/news/news-details/2024/Adobe-previews-breakthrough-AI-innovations-to-advance-professional-video-workflows-within-Adobe-Premiere-Pro/
 https://gigazine.net/news/20240416-adobe-premiere-pro-with-ai-firefly/
 動画編集ソフト「Adobe Premiere Pro」に、「Sora」をはじめとする複数の動画生成AIモデルが2024年後半をめどに実装予定であることが発表された。
 今後ますます一般人も高性能な動画AIを使えるようになっていくことが期待される。
 
-*2024-04-12 なんJNVA部★382 どんぐりシステム有効化される
+**2024-04-12 なんJNVA部★382 どんぐりシステム有効化される
 かねてよりスクリプト荒らしに見舞われていた5chで、その対策として開発されたどんぐりシステムが、本スレ382で強制有効化された。
 ただし、これにより未対応ブラウザ民がスレに書き込めなくなる問題が発生するため、今後も有効化を続けるかどうかは議論が必要である。
 どのくらい書き込めないユーザーがいるか把握のためにも、該当者はテンプレの避難所に報告してほしい。
 
-*2024-03-23 Stability AIの主要メンバーが退社
+**2024-03-23 Stability AIの主要メンバーが退社
 https://stability.ai/news/stabilityai-announcement
 CEOのEmad Mostaque氏をはじめとする従来のStability AIの開発メンバーの大部分が退社していることが明らかになった。
 %%これによりSDのサポート体制やSD3のリリースに影響が生じるかどうかは現時点では不明。%%
 SD3がオープンソースでリリースされることは確定している模様。
-*2024-03-18 Animagine XL 3.1がリリース
+**2024-03-18 Animagine XL 3.1がリリース
 https://huggingface.co/cagliostrolab/animagine-xl-3.1
 https://cagliostrolab.net/posts/animagine-xl-v31-release
 Linaqurf氏らがAnimagine XL 3.0の後継の「Animagine XL 3.1」を公開した。
 3.0で出なかった多くのアニメキャラが出せるようになった。
 Quality tagsの仕様が変更されたことに注意。Aesthetic Tagsも追加された。
 -参考：[[animagine31tips]]
-*2024-03-14 釈迦に説法構文
+**2024-03-14 釈迦に説法構文
 
 初出は以下のスレ
 
@@ -186,20 +193,20 @@ Kohakuニキなんかも3090を4積みとかやってるから、学習にマル
 質問の回答を貰っておきながら自分の事を釈迦と称し相手を窘める姿にスレ民の腹筋が悟りを開き、スレは一躍釈迦ブームとなった。
 &size(9){ミームとして面白いのは確かだが、元ネタを知らないとただただ失礼なだけである。用法用量には注意しよう}
 
-*2024-03-13 Animagineでも埋め込みタグらしき挙動が判明
+**2024-03-13 Animagineでも埋め込みタグらしき挙動が判明
 Animagineでも、Ponyと同様にランダムな英数字3文字を入れることでスタイルが変化することが判明した。
 そもそもXLの標準モデルに備わっている仕様に影響を受けた挙動なのではないかという推測もなされた。
 
-*2024-03-12 本スレに激しいスクリプト爆撃
+**2024-03-12 本スレに激しいスクリプト爆撃
 本スレ(というかなんU)に勢い順で埋め立てるスクリプトが発生し機能不全に陥っている。
 以下の避難所に避難しよう。
 メイン避難所: https://bbs.3chan.cc/test/read.cgi/liveuranus/1695016803/
 サブ避難所: http://bbs.jpnkn.com/test/read.cgi/JNVA/1696574746/
 
-*2024-03-12 Ponyに埋め込まれたタグの研究が盛んに
+**2024-03-12 Ponyに埋め込まれたタグの研究が盛んに
 PonyDiffusionV6XLには、イラストレーターなどのタグが英数字3文字でひそかに埋め込まれていることが判明。なんJNVA部★356 https://fate.5ch.net/test/read.cgi/liveuranus/1710169059/ の中盤からこの話題が急激に増えスレが加速した。スレ終盤にはスクリプト荒らしが来襲しカオスに。
 - 参考：[[PonyDiffusionV6XLTips]]
-*2024-03-01 sd-forge-layerdiffusionが公開される
+**2024-03-01 sd-forge-layerdiffusionが公開される
 LayerDiffusionはControlNetを開発したメンバーが発表したもので、画像生成モデルが透過画像を生成できるようにしたものらしい。
 - [[Layer Diffusionについて簡単に解説したツイート>https://twitter.com/sayhi2ai_jp/status/1763032942086099058]]
 - [[Layer Diffusionの論文>https://arxiv.org/abs/2402.17113]]
@@ -218,12 +225,12 @@ LayerDiffusionはControlNetを開発したメンバーが発表したもので�
 ・i2iはあと1週間くらいで来るらしい
 ||=
 大きく環境が変化するまで時間はまだ掛かりそうだが、今後に期待したい。
-*2024-02-23 sd-danbooru-tags-upsamplerが公開
+**2024-02-23 sd-danbooru-tags-upsamplerが公開
 https://github.com/p1atdev/sd-danbooru-tags-upsampler
 LECOの作者であるp1atdev氏が入力されたプロンプトに続くdanbooruタグをLLMが生成するExtensionを公開した。
 AIがいい感じにプロンプトを生成してくれるので、プロンプトが思いつかない時やガチャをしたいときに便利。
 
-*2024-02-22 Stable Diffusion 3発表
+**2024-02-22 Stable Diffusion 3発表
 https://stability.ai/news/stable-diffusion-3
 日本語の記事: https://ja.stability.ai/blog/stable-diffusion-3
 Stability AIにより、Stable Diffusionの次世代モデル「Stable Diffusion 3」が発表された。
@@ -232,31 +239,31 @@ OpenAIの「Sora」と同様の新たな拡散トランスフォーマー技術�
 現時点では一般公開されておらず、今後の公開予定や要求スペックなどは不明。
 %%Stable Cascadeとは何だったのか%%
 
-*2024-02-22 NovelAIにバイブストランスファー機能が実装される
+**2024-02-22 NovelAIにバイブストランスファー機能が実装される
 
 https://twitter.com/novelaiofficial/status/1760394681274245241
 
 元絵の要素を持つ別の絵を出力する機能。精度の高さにスレが盛り上がる。
-*2024-02-20 ComfyUIがStable Cascadeに対応
+**2024-02-20 ComfyUIがStable Cascadeに対応
 https://comfyanonymous.github.io/ComfyUI_examples/stable_cascade/
 ComfyUIがStable Cascadeに対応したことが発表された。
 CascadeのモデルをCheckpointフォルダに入れるだけで動作するとのこと。
 本スレではVRAM8GBでも動作したことが報告されている。
 
-*2024-02-17 pixivでのAI画像BAN報告相次ぐ
+**2024-02-17 pixivでのAI画像BAN報告相次ぐ
 pixivにR18のAI画像を上げたところBANされたことが本スレで相次いで報告される。
 利用規約で禁止されている実写ポルノ、他者の偽装、他サイトなどの誘導に引っかかっていると推測されているが詳細は不明。
 %%今後はpixivにAI画像を上げるのは避けた方が良いだろう。%%
 手描き絵師のBAN報告も多数あるため、最早pixiv運営にしか本当のところはわからない。
 
-*2024-02-16 動画生成AI「Sora」発表
+**2024-02-16 動画生成AI「Sora」発表
 https://openai.com/sora
 OpenAIにより動画生成AI「Sora」が発表された。
 プロンプトから最長1分間の高解像度動画を生成可能であり、複雑なプロンプトにも対応する。
 疑似的な物理シミュレーションが行われているとのことで、従来の生成AIから飛躍的に性能が向上したリアルな映像が話題となった。
 なお現時点ではあくまでも技術発表でありモデルの一般公開は行われない。
 
-*2024-02-13 Stable Cascade公開
+**2024-02-13 Stable Cascade公開
 https://ja.stability.ai/blog/stable-cascade
 https://github.com/Stability-AI/StableCascade
 Stability AIにより、新たな画像生成モデル「Stable Cascade」が公開された。
@@ -264,7 +271,7 @@ SDXLよりも短時間での生成が可能であり、さらにプロンプト�
 ローカルで動かすにはデフォルトで20GBのVRAMを必要とするが、コードを改変することでより少ないVRAMで動作したとの報告もある。
 https://note.com/hakomikan/n/n75f0ee78abf9
 
-* 2024-02-12 ZLUDAがリリース
+**2024-02-12 ZLUDAがリリース
 RadeonでCUDAを動かせるようにするラッパーソフトウェアZLUDAがGitHubで突如リリースされた。
 https://github.com/vosen/ZLUDA/
 元々はAMDで開発していたがこれが流行ると益々CUDAでええやんとなってしまうためプロジェクトが没になり作者が公開するに至った（AMDは2023年10月にnod.ai SHARKを買収している）。
@@ -272,7 +279,7 @@ https://github.com/vosen/ZLUDA/
 
 2024年6月1日現在、[[Stable Diffusion WebUI AMDGPU（旧Stable Diffusion WebUI DirectML）>https://github.com/lshqqytiger/stable-diffusion-webui-amdgpu]]の--use-zludaオプションや、[[ComfyUIのZLUDAフォーク版>https://github.com/patientx/ComfyUI-Zluda]]を使う事でRadeonでもStable Diffusion系を高速に扱う事が出来るようになっている。
 
-*2024-02-06 stable-diffusion-webui-forgeリリース
+**2024-02-06 stable-diffusion-webui-forgeリリース
 ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた
 https://github.com/lllyasviel/stable-diffusion-webui-forge
 低VRAM環境での高速化や使用メモリ削減が見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照
@@ -313,7 +320,7 @@ NVAスレのみなさまの喜びの声
  革命ですわ
 ||=
 
-*2024-01-19 Pony Diffusion V6 XLが話題になる
+**2024-01-19 Pony Diffusion V6 XLが話題になる
 https://civitai.com/models/257749/pony-diffusion-v6-xl
 スレがAnimagine XL 3.0の話題で持ちきりになる中、数日前にCivitaiにアップロードされていたモデル。
 かなり独特なクオリティタグとnegative promptの使用が必要で、上手くチューニングしないとバタ臭い絵が生成されるが、
@@ -344,7 +351,7 @@ censored, mosaic censoring, bar censor ,border, worst quality, low quality, simp
 参照：[[PonyDiffusionV6XLTips]]
 
 
-*2024-01-11 Animagine XL 3.0が公開
+**2024-01-11 Animagine XL 3.0が公開
 https://huggingface.co/cagliostrolab/animagine-xl-3.0
 https://cagliostrolab.net/posts/animagine-xl-v3-release/
 Linaqurf氏らがSDXLベースのアニメモデル「Animagine XL 3.0」を公開した。
@@ -352,12 +359,14 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
-*2023-12-12 外部記事による2023画像生成AIまとめ
+
+*2023年
+**2023-12-12 外部記事による2023画像生成AIまとめ
 外部記事 [[新清士の「メタバース・プレゼンス」 第46回 画像生成AIが爆速で進化した2023年をまとめて振り返る>https://ascii.jp/elem/000/004/174/4174570/]]
 外部記事[[生成AIグラビアをグラビアカメラマンが作るとどうなる？第14回：2023年下半期まとめ+α　13回分を振り返る (西川和久)>https://www.techno-edge.net/article/2023/12/14/2454.html]]
 スレとは関係ないが、2023年の画像生成AIに関する情報がコンパクトにまとめられているので、浦島が読むのにちょうど良い。
 
-* 2023-12-10 PNGで出力した画像のメタデータを維持したままJPEGに変換するツールがGitHubに公開される
+**2023-12-10 PNGで出力した画像のメタデータを維持したままJPEGに変換するツールがGitHubに公開される
 
 - なんJNVA部★299 https://fate.5ch.net/test/read.cgi/liveuranus/1702131079/284
 - https://github.com/Takenoko3333?tab=repositories
@@ -365,7 +374,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 -- jpg2png-for-NAI（JPEG変換したNAI画像をPNGに変換）
 -- jpg2jpg-bugfix-metadata（バグ対応 変換済みJPEG修正用）
 
-* 2023-12-05 人物画像を動かす技術が続々登場
+**2023-12-05 人物画像を動かす技術が続々登場
 人物の静止画を動かすことに特化したモデルが続々と登場している。
 
 Animate Anyoneはアリババグループによって開発されたモデルである([[Animate Anyoneの概要>>https://humanaigc.github.io/animate-anyone/]])。
@@ -381,7 +390,7 @@ Hugging Faceで試すことができるだけでなく、すでにソースコ�
 ・「(denseposeが人の輪郭を保存するためか)ガタイのいい女の子になってしまった」
 など一筋縄では行かないようではある。
 
-*2023-11-29 SDXL Turbo公開
+**2023-11-29 SDXL Turbo公開
 [[公式サイト>https://ja.stability.ai/blog/sdxl-turbo]]
 [[モデル>https://huggingface.co/stabilityai/sdxl-turbo]]
 最近話題となっていたLCMによる高速化とは別の技術(以下引用)を用いたSDXLの高速モデルがStability AI公式より発表された。
@@ -390,11 +399,11 @@ Hugging Faceで試すことができるだけでなく、すでにソースコ�
 [[Turbo SDXL-LoRA-Stable Diffusion XL faster than light(Civitai)>https://civitai.com/models/215485]]
 これにより、公式のモデルで1STEP、Lora適用で4STEPでSDXLモデルによる画像生成が可能となった。
 
-*2023-11-28 WebUIのGenerate（生成）ボタンに機能つきの生成ボタンを追加する方法が提案される
+**2023-11-28 WebUIのGenerate（生成）ボタンに機能つきの生成ボタンを追加する方法が提案される
 Generateボタンの横に&#127922;（ランダムシードで生成）、&#9851;（直前のシードで生成）、+1（前回のシードに+1したシードで生成）の各ボタンを追加するもの。
 詳細は「[[機能つきの生成ボタンを追加する方法]]」を参照。
 
-*2023-11-20 LCM LoRAの解説記事が紹介される
+**2023-11-20 LCM LoRAの解説記事が紹介される
 LCM LoRAはより少ないステップ数で画像を収束させる技術のこと。
 細部の描写が甘くなる傾向があるものの、今までの1/3ほどのステップ数＝約3倍の速度で画像を生成できる。
 
@@ -407,12 +416,12 @@ https://pc.watch.impress.co.jp/docs/column/nishikawa/1547611.html
 LCM LoRAは1週間前に試したときは「早いけど品質はイマイチ」と感じたけど今は従来手法と遜色なくなったみたい?
 ||=
 https://pc.watch.impress.co.jp/docs/column/nishikawa/1547611.html
-*2023-11-16 NovelAIバージョン3が公開
+**2023-11-16 NovelAIバージョン3が公開
 NovelAIの画像生成サービスのバージョン3が一般に公開された。
 SDXLベースのモデルに、おそらくかつてと同じようにDanbooruタグベースで学習されたようで、Danbooruタグでの指定と自然文での指定が使用できる。
 他の画像生成サービスと違い、かなり規制はガバガバでエロでも何でも出してくれる、かつてのNovelAIの名声に違わない出力が可能(ただし獣姦とペドはさすがにNGの模様)
 
-*2023-11-01 nVIDIAのグラフィックドライバがメインメモリを使用しない設定を実装
+**2023-11-01 nVIDIAのグラフィックドライバがメインメモリを使用しない設定を実装
 nVIDIA製グラフィクス用ドライバVer536.40以降、VRAMを使い切った際にメインメモリを使用してOUT OF MEMORYエラーが出ない仕様になっていたが
 この副作用でVRAMを使い切ると画像生成速度が著しく低下する問題が発生していた。
 現地時間2023-10-31にリリースされたVer546.01に、この機能のオン/オフを切り替える設定が追加されたため、長らく解消されていなかったこの問題がついに解決した
@@ -420,7 +429,7 @@ nVIDIA製グラフィクス用ドライバVer536.40以降、VRAMを使い切っ�
 設定方法は以下のページ参照
 https://nvidia.custhelp.com/app/answers/detail/a_id/5490
 
-*2023-10-29 姫騎士プロンプトが公表される
+**2023-10-29 姫騎士プロンプトが公表される
 なんJNVA部★279 https://fate.5ch.net/test/read.cgi/liveuranus/1698559380/126
 =|BOX|
 126: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ 1314-CP9B)  2023/10/29(日) 20:17:13.22 ID:to5BfwrK0
@@ -442,7 +451,7 @@ https://nvidia.custhelp.com/app/answers/detail/a_id/5490
 - elf, animal ear, forehead, pubic hair, asymmetrical thighhighs, heterochromia
 
 
-* 2023-10-21 NovelAIが新モデルNovelAI Diffusion Anime V2を発表
+**2023-10-21 NovelAIが新モデルNovelAI Diffusion Anime V2を発表
 NovelAI社が新たに学習させた新しい画像生成モデルNovelAI Diffusion Anime V2を発表した([[Introducing NovelAI Diffusion Anime V2>>https://blog.novelai.net/introducing-novelai-diffusion-anime-v2-dc668ebca34b]])
 V3も開発中であることも同時に発表され、続報が待たれる。
 モデル構造はStable Diffusionをもとにしているとしか書かれていないため、どのモデル構造を採用しているのかは不明である。
@@ -456,7 +465,7 @@ V3も開発中であることも同時に発表され、続報が待たれる。
 
 DALLE-3が組み込まれたBing Image CreatorとかGPT-4Vのニュースに比べるとインパクトが薄かったため放置していたのだが、NovelAI 5ch WikiというタイトルなのにNovel AIのアップデートが書かれていないのは問題なのでは？と思い慌てて追記したのは秘密である。
 
-* 2023-10-01 DALLE-3でBing Image Creatorが進化
+**2023-10-01 DALLE-3でBing Image Creatorが進化
 [[Bing Image Creator>https://www.bing.com/images/create?FORM=GENILP]]はエロ規制が強く、生成される画像もあまりパッとしなかったため注目されていなかった。
 9月22日ごろに大幅アップデートが入った模様([[Bing Image Creatorのアップデートに関する記事>https://forest.watch.impress.co.jp/docs/news/1533405.html]])。
 9月30日ごろからスレ民が気づき出した模様．100回分は無料・30秒程度の短い生成時間からお手軽に試すことができ、10月1日現在その話で持ちきりである。
@@ -482,7 +491,7 @@ DALLE-3が組み込まれたBing Image CreatorとかGPT-4Vのニュースに比�
 などである。i2iの元画像としてなら使えるかもしれないなど使い道が模索されている。
 
 
-* 2023-09-18 「簡単プロンプトアニメ」が公開される
+**2023-09-18 「簡単プロンプトアニメ」が公開される
 
 ★266
 https://fate.5ch.net/test/read.cgi/liveuranus/1694948061/229
@@ -515,7 +524,7 @@ https://colab.research.google.com/drive/1QVxBjAamxOIAAlSohQklZltRPx8WsxEN
 
 のちにローカル版も公開された。
 https://github.com/Zuntan03/EasyPromptAnime
-* 2023-09-12 Animatediffが流行
+**2023-09-12 Animatediffが流行
 
 ★264の>>960を引用。
 AnimateDiff自体は少し前に出ていたが、9月中旬にスレの話題はAnimateDiffばかりになった。
@@ -535,7 +544,7 @@ AnimateDiff自体は少し前に出ていたが、9月中旬にスレの話題�
 ||=
 
 
-* 2023-09-08 ギャルゲー風のスクリーンショットを作るツール
+**2023-09-08 ギャルゲー風のスクリーンショットを作るツール
 
 https://fate.5ch.net/test/read.cgi/liveuranus/1693910349/736
 
@@ -545,28 +554,28 @@ https://huggingface.co/spaces/SenY/GalGameUI
 
 &ref(https://i.imgur.com/slMHdbd.png,350) &ref(https://i.imgur.com/YLE80Df.jpg,450)
 
-* 2023-08-10 SDXL専用フロントエンド「Fooocus」公開
+**2023-08-10 SDXL専用フロントエンド「Fooocus」公開
 https://github.com/lllyasviel/Fooocus
 シンプルなプロンプトと画風のスタイルを選択するだけで高品質な画像が生成されることを目指している。
 
-* 2023-08-06 スクリプト爆撃再来
+**2023-08-06 スクリプト爆撃再来
 今回は複数の実況板が無差別に荒らされている。スレ乱立、容量オーバーによるDAT落ち狙いの埋め立てで機能不全になっている。
 防弾Uに避難中。
 
-* 2023-07-28 SDXL 1.0がリリース
+**2023-07-28 SDXL 1.0がリリース
 stability.aiから満を持してSDXL 1.0がリリースされた([[SDXL 1.0リリース記事>https://ja.stability.ai/blog/sdxl10]])
 masterpieceなどのタグを付けたりしなくてもシンプルなプロンプトでまともな画像がでるようになった．
 現段階ではControlNetが使えないが，リリース記事によれば開発は行っているらしく，後ほどリリースするとのこと．
 [[civitaiではSDXL 1.0のコンテスト>https://civitai.com/articles/1462]]が開かれているそうで，クリーンで使い勝手の良いモデルが作られることが期待される
 
 
-* 2023-07-19 Waifu Diffusion XL(WDXL)がリリース/SDXL 1.0のリリースが延期
+**2023-07-19 Waifu Diffusion XL(WDXL)がリリース/SDXL 1.0のリリースが延期
 [[Stable Diffusion XL(SDXL) 0.9>https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9]]をファインチューニングした[[Waifu Diffusion XL(WDXL)>https://huggingface.co/hakurei/waifu-diffusion-xl]]がリリースされた
 1111webuiはまだdevブランチではあるが、[[1.5.0からSDXLに対応>https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/11862]]しており試すことができる
 スレ民の感想としてはまだSD1.5系のほうが良い、乗り換えるほどではないという意見が多いものの、今後の動向に期待してLoraなどを作り始めているニキも観測されている
 7月中旬リリースを予定していた[[SDXL 1.0はリリースが1週間ほど延期される>https://www.reddit.com/r/StableDiffusion/comments/153907z/sdxl_will_be_out_in_a_week_or_so_phew/]]ようだが、こちらも注視していきたい
 
-* 2023-07-14 カムカム法解説記事
+**2023-07-14 カムカム法解説記事
 2023-06-30に紹介されたテクニックの解説記事が発表された。
 =|BOX|
 >>495-496
@@ -577,13 +586,13 @@ https://note.com/mitsukinozomi/n/n1c5913239ed8
 ||=
 https://note.com/mitsukinozomi/n/n1c5913239ed8
 
-* 2023-07-12 現在の本スレの状況
+**2023-07-12 現在の本スレの状況
 各種専ブラで5chを閲覧・書き込みが出来る方法が知れ渡った事やtalkがスレを3ヶ月しか保存しない事、またtalk運営への不信感も相まってか
 2023/07/12現在は5chのスレに住民が戻ってきており、5ch側が本スレとなっている。
 talk側のスレは殆ど書き込みが見当たらない状態。
 
 
-* 2023-07-12 5chに関するジェーン社の声明
+**2023-07-12 5chに関するジェーン社の声明
 
 遅ればせながらジェーン社(JaneStyleの開発元・API鯖運営など5chの一部業務委託)から声明が発表された。
 http://janesoft.net/news/20230712.html
@@ -599,7 +608,7 @@ http://janesoft.net/news/20230712.html
 5ch運営の声明とジェーン社の声明、どちらを信用するかは各自で判断すべし。
 
 
-* 2023-07-11 Janestyleに関する5ch運営の声明
+**2023-07-11 Janestyleに関する5ch運営の声明
 
 前日のJanestyleの開発元が突然5chをサポート終了、talkという掲示板に強制移行+API無効化で専ブラからすべてのスレが開けない点に関して5ch公式が声明を出した。
 [+]
@@ -627,17 +636,17 @@ Roninは8月まで無料で利用可能となります。
 ''ソフトウェア板''
 [[https://egg.5ch.net/software/]]
 
-* 2023-07-11 スレを読み書きするさまざまな方法が提案される
+**2023-07-11 スレを読み書きするさまざまな方法が提案される
 
 ''騒動中の本スレの読み書き方法まとめ''
 →[[5ch専ブラ別設定方法]]へ移動しました
-* 2023-07-10 専ブラでスレを開けなくなる
+**2023-07-10 専ブラでスレを開けなくなる
 
 Janestyleの開発元が突然5chをサポート終了、talkという掲示板に強制移行+API無効化で専ブラからすべてのスレが開けない。
 避難先も決まっておらず阿鼻叫喚の事態になっている。
 %%現在、webブラウザとごく一部の専ブラなら表示できる。%% ※07/11以降はAPIの規制緩和で任意の専ブラが使用可能
 
-* 2023-07-03 superhappy peacesignプロンプトが流行する
+**2023-07-03 superhappy peacesignプロンプトが流行する
 
 女の子が多人数でピースしている画像の構文。superhappy構文とも。
 
@@ -663,7 +672,7 @@ https://majinai.art/ja/i/7RRw33Q
 なにより癒される
 ||=
 
-* 2023-06-30 カムカム法が紹介される
+**2023-06-30 カムカム法が紹介される
 
 [[なんJNVA部228の768>https://fate.5ch.net/test/read.cgi/liveuranus/1687953737/768]]が「冗談みたいな量のbukkakeをどんな構図でも安定して出すことに成功したんやで」としてカムカム法を発表。カムカム法の名称はサンプル画像のプロンプトに「cum cum everybody」が含まれていたことによる
 
@@ -695,7 +704,7 @@ https://files.catbox.moe/bp1hx3.png
 設定は「lineart_anime, Weight0.3, 0.1-0.6」「tile, Weight0.5, 0.0-0.1」やで。>>258ニキの言うとおりDDIMやUniPCでは使えないから注意や
 ||=
 &ref(https://files.catbox.moe/5zjz45.png,300) &ref(https://files.catbox.moe/bp1hx3.png,300)
-* 2023-06-29 学習モデルから概念を消去する方法（LECO）が発表される
+**2023-06-29 学習モデルから概念を消去する方法（LECO）が発表される
 
 - [[Stable Diffusion から特定の概念を忘れさせる学習を行ってみる>https://zenn.dev/aics/articles/lora_for_erasing_concepts_from_diffusion_models]]
 
@@ -716,7 +725,7 @@ https://i.imgur.com/Y3TdxNz.png
 ||=
 &ref(https://i.imgur.com/p7jKr2C.png,300) &ref(https://i.imgur.com/heGYOJS.png,300) &ref(https://i.imgur.com/Y3TdxNz.png,300)
 
-* 2023-06-27 NVA部以降でスクリプト以外で勢いが前スレより3割以上程度伸びていたスレの話題
+**2023-06-27 NVA部以降でスクリプト以外で勢いが前スレより3割以上程度伸びていたスレの話題
 ここ最近はとくに特筆するような出来事がなかった中、勢いのあったスレの話題をまとめてくれていたので掲載
 
 0173今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a50d-VcrX)2023/06/26(月) 17:51:14.29ID:Zhv4g73c0
@@ -733,7 +742,7 @@ NVA部以降でスクリプト以外で勢いが前スレより3割以上程度�
 209…やたら態度のデカい初心者質問ニキ
 いかがでしたか？皆さん素晴らしい話題で盛り上がっていますね！
 
-* 2023-06-18 風船を持つLoRAが人気を博す
+**2023-06-18 風船を持つLoRAが人気を博す
 
 [[なんJNVA部★223#969>https://fate.5ch.net/test/read.cgi/liveuranus/1686836346/969]]
 
@@ -764,14 +773,14 @@ https://mega.nz/folder/XN8U0AgI#1jr90d0jlPTCjNssbfHfPQ
 &ref(https://i.imgur.com/AJABFZa.png,300) &ref(https://i.imgur.com/gSK79Ak.png,300) &ref(https://i.imgur.com/6UHmBxH.png,300) &ref(https://i.imgur.com/Xok79Iq.png,300)
 
 
-* 2023-04-30 フラットカラーLoRAをネガに適用すると書き込みが増える
+**2023-04-30 フラットカラーLoRAをネガに適用すると書き込みが増える
 なんJNVA部194の911が[[カラーをフラット化するLoRAを公開>https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test2]]、
 さらにこのLoRAを「マイナスで通常のプロンプトに適用すると精細な絵になる」ことを発表。
  例) <lora:flat:-1>
 ほかの画風LoRAもマイナス値を入れると様々な効果を得られるかもとスレ民が調査中。
 注：上記LoRA文をネガティブプロンプトに入れても動きません
 
-* 2023-04-21 Google Colab の無料プランでAutomatic1111の利用が禁止になる
+**2023-04-21 Google Colab の無料プランでAutomatic1111の利用が禁止になる
 利用規約の改定により、無料プランでのremote UI のノートブックの使用が禁止された
 (注：2023/04/21 09:00現在、英語ページのみで日本語faqは旧表記のまま)
 
@@ -785,7 +794,7 @@ GoogleアカウントがBANになる為、GmailやGoogleドライブ、Youtube�
 paperspace等他サービスに移るにせよGoogleに続く恐れも無いとは言えず、有料版に移行又はローカルの環境構築が推奨される
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/gzOPi6aR1P.png, 30%)
 
-* 2023-04-20 imgurの投稿が会員制に、nsfwが禁止になる
+**2023-04-20 imgurの投稿が会員制に、nsfwが禁止になる
 
 施行は5月15日から。
 
@@ -802,7 +811,7 @@ imgurの画像リンク→wikiの画像リンクの対応表( data/new_link.json
 2023/05/01 追記
 wikiに画像として表示されているimgur画像はすでに削除されたリンクを除いてすべて置き換えた．最終的な新旧リンクの対応表を共有する．
 [[最終的な対応表>https://image02.seesaawiki.jp/n/h/nai_ch/MUScDjoi8h.zip]]
-* 2023-04-17 basilmixの商用利用が禁止される
+**2023-04-17 basilmixの商用利用が禁止される
 basilmixの配布者である[[ぬいぐるみ氏>https://twitter.com/nuigurumi1_KR]]によって以下のようなツイートが投稿された。
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/VnA98wVSM_.png, 30%)
 
@@ -815,14 +824,14 @@ basilmixの配布者である[[ぬいぐるみ氏>https://twitter.com/nuigurumi1
 その後、氏はbasilmixのマージレシピを公開した。
 https://archive.md/lTfHl
 
-* 2023-04-12 AI音声スレ：なんJRBC部が立つ
+**2023-04-12 AI音声スレ：なんJRBC部が立つ
 RVC(Retrieval-based-Voice-Conversion)等の音声系の話題を扱うスレが立つ
 なんJRBC部
 https://fate.5ch.net/test/read.cgi/liveuranus/1681272307/
 なんJRBC wiki
 https://seesaawiki.jp/rvc_ch/
 
-* 2023-04-08 顔を推定するControlnetがでる
+**2023-04-08 顔を推定するControlnetがでる
 顔を推定するControlnetがでる
 https://fate.5ch.net/test/read.cgi/liveuranus/1680673605/931
 https://huggingface.co/CrucibleAI/ControlNetMediaPipeFace
@@ -835,7 +844,7 @@ https://huggingface.co/CrucibleAI/ControlNetMediaPipeFace
 トレーニング方法もあるらしい
 https://fate.5ch.net/test/read.cgi/liveuranus/1680673605/344
 
-* 2023-04-07 ネガティブプロンプトエディティング
+**2023-04-07 ネガティブプロンプトエディティング
 =|BOX|
 790今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 5f88-icd+)2023/04/07(金) 05:36:38.53ID:0N3FVRMd0
 EasyNegativeやらng_deepnegative_v1_75tやらがいいのかと思って入れてみたんやが、なんだかんだ自前で培ってきたネガティブプロンプトのがいい気がしてきたわ
@@ -850,7 +859,7 @@ Prompt Editingをnegativeに使っとる
 [[プロンプトエディティング>プロンプトエディティング]]をネガティブプロンプトに使用するという手法が紹介された。
 最初からネガティブを指定せず生成の最後にのみ適用させることで、構図に幅を持たせることが出来るようだ。
 
-* 2023/04/04(火)：LoRA学習GUIで層別学習、 Stable Diffusion XL
+**2023/04/04(火)：LoRA学習GUIで層別学習、 Stable Diffusion XL
 https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/744
 LoRA学習GUIで層別学習できるようにしたで
 https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.3.0
@@ -860,7 +869,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/535
 Stable Diffusion XLってのが出たらしいがどうなんやろね
 2.系はあんま話題にならんかったけど
 
-* 2023/04/03(月)｜ポエム、韓国ニキの層別マージの表日本語訳
+**2023/04/03(月)｜ポエム、韓国ニキの層別マージの表日本語訳
 
 
 https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/989
@@ -897,7 +906,7 @@ https://i.imgur.com/pBycwjt.jpg
 あと前スレの>>804ニキがLoConの層別マージをまとめてくれてるからこの表と見比べてみてほしいで
 https://rentry.org/lora-bw-memo
 
-*  2023/04/02(日) 階層別学習率/階層別dim(rank)が追加、韓国コミュで層別マージの資料
+**2023/04/02(日) 階層別学習率/階層別dim(rank)が追加、韓国コミュで層別マージの資料
 フルモデルの25個のブロックで学習のウェイトやdimが指定できるようになった。
 https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/796
 階層別dimの追加まじかkohya氏有能過ぎる
@@ -910,7 +919,7 @@ https://i.imgur.com/vlB9XCs.jpg
 ||=
 
 
-* 2023/03/31(金)：ToMe (Token Merging for Stable Diffusion)
+**2023/03/31(金)：ToMe (Token Merging for Stable Diffusion)
 https://fate.5ch.net/test/read.cgi/liveuranus/1680160046/637
 https://github.com/dbolya/tomesd
 なんか早くなるっぽい？
@@ -930,12 +939,12 @@ https://i.imgur.com/cNwAYk9.jpg
 
 
 
-* 2023/03/28(火) 学習解像度聖戦｜512で十分学派 VS 1024最高だぜ学派
+**2023/03/28(火) 学習解像度聖戦｜512で十分学派 VS 1024最高だぜ学派
 https://fate.5ch.net/test/read.cgi/liveuranus/1679896401/570
 このへん
 (争え……もっと争え……)
 
-* 2023-03-27 なんJNVAチラ裏部の誕生
+**2023-03-27 なんJNVAチラ裏部の誕生
 02/26に荒らしが立てたなんJNVA159の重複スレ
 レス20越えた為に静かに埋めようとチラ裏で画像投稿されていたが、荒れることなく平穏に1000レスまで付いてその役目を終えた
 しかし淡々と生成画像やネタ画像を貼れる場は魅力的という事で、この度チラ裏部として新スレが誕生した
@@ -944,18 +953,18 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1679896401/570
 なんJNVAチラ裏部 
 https://fate.5ch.net/test/read.cgi/liveuranus/1679891659/
 
-* 2023-03-25 更新
+**2023-03-25 更新
 1111に大幅更新が入り、各種ツールがエラーを起こしたりするようになった
 
 
-* 2023-03-25 MultiDiffusion
+**2023-03-25 MultiDiffusion
 4Kや8Kなど超巨大な画像を生成できるとうたう拡張MultiDiffusionがちょっと話題になる。
  pkuliyi2015/multidiffusion-upscaler-for-automatic1111: MultiDiffusion implementation with VAE VRAM optimize - https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
 ただしタイルを何枚もつぎ足しして生成する関係上アップスケーラーによってはいたるところに1girlを描こうとするため小人が多数発生し、さながらウォーリーを探せ状態に。またかわいらしい絵柄のモデルなら「妖精さん」ですむが、リアル気味なモデルで使用するととうとつに生首が置かれたりオブジェクトの表面に人体らしきものが大量に発生したり(シテ……殺シテ……)と人によってはへたなグロよりくるものがあるようである。
 詳しくは[[高解像度で生成する方法]]のMultiDiffusionの項目を参照
 
 
-* 2023-03-23 画像生成AIサービス総合スレの誕生(ネットサービス板)
+**2023-03-23 画像生成AIサービス総合スレの誕生(ネットサービス板)
 
 紆余曲折の末に、「なんJnovelAI部」から「画像生成AIサービス総合スレ」(ネットサービス板)が誕生した
 -NovelAIの話題は「なんJnovelAI部」に
@@ -984,7 +993,7 @@ https://mevius.5ch.net/test/read.cgi/cg/1679058984/
 
 他にもあるので探してみるのもよし
 [END]
-* 2023-03-20 Windows DefenderがVAEを脅威とみなす
+**2023-03-20 Windows DefenderがVAEを脅威とみなす
 
 誤検出っぽい。safetensorsに変換して回避できる。
 
@@ -1003,7 +1012,7 @@ nai.vae.safetensors (395,100KB)が生成される
 
 https://huggingface.co/aka7774/fp16_safetensors/blob/main/anything-v4.0.vae.safetensors
 
-* 2023-03-18 torch2.0で高速化
+**2023-03-18 torch2.0で高速化
 
 3/16頃に、nightlyではないtorch 2.0.0が公開された。
 スレでも話題になり、172スレ908が簡易な方法を示した。
@@ -1012,20 +1021,20 @@ https://huggingface.co/aka7774/fp16_safetensors/blob/main/anything-v4.0.vae.safe
 導入するとVRAMの消費増大と引き換えに高速化の恩恵がある。
 詳しくは[[ローカル高速化メモ]]にまとめた。
 
-* 2023-03-11 新しいサンプラーUniPC
+**2023-03-11 新しいサンプラーUniPC
 以下のコミットでAuto1111に新しいサンプラーが実装
 + Merge pull request #7710 from space-nuko/unipc &#183; AUTOMATIC1111/stable-diffusion-webui@a11ce2b - https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/a11ce2b96cc933ebb9e10d46603a89457ddcb9df
 + サンプラー側のリポジトリ：wl-zhao/UniPC: UniPC: A Unified Predictor-Corrector Framework for Fast Sampling of Diffusion Models - https://github.com/wl-zhao/UniPC
 
-* 2023-03-09 スクリプト爆撃再来
+**2023-03-09 スクリプト爆撃再来
 今回は手動かつNVA部だけを荒らしてる模様。
 すぐに止まる時もあれば、ずっと動いてる時もあってよくわからん。
 
-* 2023-03-09 ColabのデフォルトPythonが3.9.16に
+**2023-03-09 ColabのデフォルトPythonが3.9.16に
 
 色々動かなくなってるので要修正もしくは対応待ちが必要。
 
-* 2023-03-05 LoCon
+**2023-03-05 LoCon
 
 技術的な面ではLoConというLoRAを拡張したような学習法があらたにリリースされたことで検証が盛んに行われるようになった。→https://github.com/KohakuBlueleaf/LoCon
 スレではLoRAやControlnetも履修し終わってないのにまた新しい概念が登場してもうついていけないという声もちらほら見られるようになった。
@@ -1033,7 +1042,7 @@ https://huggingface.co/aka7774/fp16_safetensors/blob/main/anything-v4.0.vae.safe
 
 
 
-* 2023-02-28 chilloutmix公開停止
+**2023-02-28 chilloutmix公開停止
 
 Civitaiでダウンロードランキング1位を取っていたリアル系モデル。
 マージ元モデルのライセンスによって商用利用に制限があり、商用利用禁止を告知したところ、
@@ -1044,7 +1053,7 @@ Civitai運営から直々に再公開を要求される異例の事態となっ�
 https://speakerdeck.com/nhamanasu/diffusionniyorutext2imagenoxi-pu-tosheng-cheng-hua-xiang-gadong-kichu-sumade?slide=116 より
  ChilloutMix 日本・韓国・中国風なアジア人女性の写実的画像に特化したマージモデル。これに加え、 人形のように整った相貌の韓国人風写実生成に特化したLoRAモデルである Korean Doll Likeness、アズールレーンの特定キャラクタに特化したLoRAモデル HMS Cheshire を 組み合わせることで、アニメテイストな衣装を纏いつつ極めて写実的な女性の画像生成 を実現したユーザーも現れ、一時期「AIコスプレイヤー」として賛否を呼んだ。 作者は重要な免責事項として、実在する人物を再現することに用いたり、実在する人物 の名を冠した派生モデルを作成・公開しないよう呼びかけていたが、実際に生成の写実 性が上がったことで一部の過激な表現や商用目的で利用されてしまうケースが散見され、 Feb 28, 2023 に制作者判断で公開停止措置が講じられた。
 
-* ControlNetの機能いろいろ判明
+** ControlNetの機能いろいろ判明
 直に専用ページがつくられると思われるが（→[[作られた>https://seesaawiki.jp/nai_ch/d/ControlNet]]）とりあえず浦島で使えそうな機能を紹介
 [[ここ>https://note.com/ddpn08/n/n7fce838499e7]]とか見るともっと分かるかも。
 [+]
@@ -1110,7 +1119,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1676504558/378
 ''&ref(https://majinai.art/i/DjzWKXU.png, 10%)''
 ''''
 [END]
-* 2023-02-13 WD1.5βが出たりControlNetに対応したりと大変な一日
+**2023-02-13 WD1.5βが出たりControlNetに対応したりと大変な一日
 午前
 NAIリークの血を持たない純粋なモデル、且つSD2.1系という事で注目を浴びていたWaifuDeffusion1.5β(epoch1)がようやく[[リリース>https://huggingface.co/waifu-diffusion/wd-1-5-beta]]された
 完成までには3,4epoch掛かるとの話だが、epoch1の時点でかなり綺麗な絵を出力出来ており、完全版に期待が高まる
@@ -1126,7 +1135,7 @@ ControlNetとは、写真からポーズを抽出して描いたり、イラス�
 
 これにより数日で浦島太郎どころか、半日で浦島太郎になる人が続出した
 
-* 2023-02-06 スクリプト爆撃
+**2023-02-06 スクリプト爆撃
 本スレ143の中盤から連投荒らしにあって落とされていた。145でとりあえず復活。
 
 念のためお知らせしときますが、個人的に毎日バックアップとってます。
@@ -1134,7 +1143,7 @@ ControlNetとは、写真からポーズを抽出して描いたり、イラス�
 - https://github.com/aka7774/nai_ch_wiki
 - https://github.com/aka7774/stable-diffusion-webui
 -- wikiはローカルバックアップのみ取っている
-* 2023-02-05 スレ民日報補足
+**2023-02-05 スレ民日報補足
 やぁ、久しぶりだな。　こっち？　こちらのみんなは相変わらず元気さ
 そうだな、最近はLoRaという新しい学習方法が流行していて色々な学習モデルをうｐするニキが増えたな
 ロードス、アナルゼリー、触手…、&#128039;、ガッフェ、授乳手コキ、日焼け…　最高だろ？
@@ -1149,7 +1158,7 @@ ControlNetとは、写真からポーズを抽出して描いたり、イラス�
 お前もたまにはこっちに帰ってこいよ？　みんな待ってるぞ
 
 
-* 2023-01-28 HNのドロップダウンが復活した（ついでにLoRAも付いた）
+**2023-01-28 HNのドロップダウンが復活した（ついでにLoRAも付いた）
 2023-01-22の仕様変更により消えたHNのドロップダウンが復活した
 同時にLoraのドロップダウンも付けれるようになった
 
@@ -1158,7 +1167,7 @@ ControlNetとは、写真からポーズを抽出して描いたり、イラス�
 -sd_lora
 -extra_networks_default_multiplier~~以前のsd_hypernetwork_strengthの替わりでHNとLoRA共通
 
-* 2023-01-28 pix2pixモデルマージが実装された
+**2023-01-28 pix2pixモデルマージが実装された
 extensionsのstable-diffusion-webui-instruct-pix2pixの登場から2日、任意のモデルをpix2pixモデルにマージする機能が実装された
 これにより好きなモデルでpix2pixが使えるようになった
 
@@ -1176,7 +1185,7 @@ img2imgと違い、変更指示を文章で入力し元の要素を残したま�
 |プロンプト~~add sepia|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PD0wLWzm7R.png,384,456)|
 [END]
 
-* 2023-01-24 Anything-v3.0が消えた
+**2023-01-24 Anything-v3.0が消えた
 
 NAI全盛期に登場して一世を風靡したモデルが作者によって削除された。
 https://twitter.com/linaqruf_/status/1616821313804570624?s=61&t=Gdc6UnwYcwE0IwLakkvoMw
@@ -1187,7 +1196,7 @@ https://huggingface.co/Linaqruf/anything-v3.0
 VAEが必要ならAnything-v4.0同梱のものを使おう。
 https://huggingface.co/andite/anything-v4.0
 
-* 2023-01-23 torchとxformersの推奨バージョン更新とkohya版LoRAの正式対応
+**2023-01-23 torchとxformersの推奨バージョン更新とkohya版LoRAの正式対応
 
 -torch:1.13.1+cu117 xformers:0.0.16rc425 に推奨バージョンが上がった(RTX4000シリーズの対応版)
 -kohya版LoRAの0.4.0とそれ以前が正式対応された(0.4.0はα版対応)
@@ -1211,7 +1220,7 @@ Linux(やwsl)環境の人がvenvを削除しての再インストール、又は
 > pip install xformers==0.0.16RC425~~
 > deactivate~~
 
-* 2023-01-22 HNとLoraの生成仕様変更
+**2023-01-22 HNとLoraの生成仕様変更
 
 - HNのドロップダウンは廃止になった。(またExtension作者が対応に追われた)
 - プロンプト内に &lt;hypernet:ファイル名:1.0&gt; &lt;lora:ファイル名:1.0&gt; と指定する
@@ -1227,7 +1236,7 @@ HNがおかしい場合は旧設定をクリアしたら直る模様
 ※nullじゃなくてnoneなので正しくはこう書き換える(63〜64行目辺り)
 >    "sd_hypernetwork": "None",~~
 >    "sd_hypernetwork_strength": 0.0,~~
-* 2023-01-14 モデルマージ問題続報
+**2023-01-14 モデルマージ問題続報
 
 昨年末に話題になった「1token目が無視される」問題、各所の有識者がその後も研究・調査を進めた結果、モデル内部データの破損・汚損のメカニズムがある程度解明されてきた。
 fp16にすれば解決、そんな話ではなかった。
@@ -1271,7 +1280,7 @@ https://note.com/bbcmc/n/n12c05bf109cc
 解決方法としては新旧両方のモデルを保存しておいて用途で使い分けるしかなく、俺達のストレージの空き容量が益々少なくなる問題の方が切実かもしれない。
 
 
-* 2023-01-11 StableTuner
+**2023-01-11 StableTuner
 
 https://github.com/devilismyfriend/StableTuner
 
@@ -1296,7 +1305,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/325
 ''325今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1991-tb1I)2023/01/13(金) 12:45:53.77ID:majIue8q0>>338''
 ''12GBはtextencoder切れば普通に行けるよ''
 ''DBは現状これ以外の選択肢ないと思う''
-* 2023-01-05 1111消失事件
+**2023-01-05 1111消失事件
 &aname(moved_1111){}
 異変：https://fate.5ch.net/test/read.cgi/liveuranus/1672807546/893
 ''893今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｻｻｸｯﾃﾛﾗ Spbb-mKYw)2023/01/05(木) 18:32:56.80ID:Nw26Fgbzp&#8942;''
@@ -1317,7 +1326,7 @@ GitHubをメインに使っててGitGUDは古いまま放置されている様�
 年末年始の動きもあわせて、クラウド民が影響を受けやすいので、
 永続ストレージに安定版をとっといたほうがいいのかも。
 
-* 2023-01-05 赤ちゃん
+**2023-01-05 赤ちゃん
 
 [[ローカルの導入方法]]として、「あかちゃんインストーラー」が発表される。
 (日付はもうちょっと後だったかも)
@@ -1331,7 +1340,7 @@ GitHubをメインに使っててGitGUDは古いまま放置されている様�
 最近ではいろんな人が赤ちゃんグッズを開発してくれてるので、
 便利なやつを見つけたら、どの赤ちゃんグッズか具体的に言ってくれると助かる。
 
-* 2023-01-04 風船事件
+**2023-01-04 風船事件
 
 NVAスレにおいてスカトロ（特に&#128169;大便&#128169;）の隠語として風船が用いられるようになったきっかけとなる事件をさす。
 風船&#127880;注意などの警告がレスについていた場合は覚悟して見るようにしよう。
@@ -1411,12 +1420,13 @@ https://image01.seesaawiki.jp/n/h/nai_ch/Z5mmF1Sf9S.jpg
 説明もなく、詳細は誰にもわからない。わからないんだ、いいね
 https://huggingface.co/unkounko/BalloonMix
 
-*年末年始の動き
+**年末年始の動き
 
 年末年始はこれまでの沈黙を破ったかのような怒涛の更新ラッシュ。
 gradioのバージョンが上がったりしてExtension作者は対応に追われまくった。
 
-* 2022-12-28 コピー機
+*2022年以前
+**2022-12-28 コピー機
 
 元は生成あるあるネタ。
 
@@ -1460,7 +1470,7 @@ https://github.com/aka7774/sd_copyguard
 
 転じて、過学習などで故意に類似画像を量産する手法として語が使われるようになった。
 
-*クリスマスプレゼント
+**クリスマスプレゼント
 
 クリスマスから年末にかけて、
 層別マージの成果をはじめとするマージモデルが大量配布される。
@@ -1478,7 +1488,7 @@ https://github.com/aka7774/sd_copyguard
 
 というわけで7thシリーズの感想はスレに書くのがおすすめ。
 
-*マージのバグ発覚
+**マージのバグ発覚
 
 119スレ905のリンク先より引用
 =|BOX|
@@ -1514,7 +1524,7 @@ Sleepy cute loli
 複数シードで見ないとsdちゃんは判断に悩むのを出してくれる 
 ||=
 
-**修正方法
+***修正方法
 120スレ47
 =|BOX|
 よし、直った
@@ -1525,7 +1535,7 @@ Sleepy cute loli
 [+]
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/9mzH_30ZZE.png,589,219) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/JVP3hhzQh7.png,495,271)
 [END]
-*層別マージ
+**層別マージ
 automatic1111の拡張機能
 https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
 
@@ -1573,7 +1583,7 @@ https://image02.seesaawiki.jp/n/h/nai_ch/xsh70GBAOD.png
 などであろうか。
 仮に�△�目的だったとすると、468以降のスレの流れは層別マージ一色であり、まんまとその目的は達成されてしまったことになる。
 
-*深度推定
+**深度推定
 aiでdepth mapを作った後After EffectとかBlenderとかでいろいろやるとできる
 
 初出：https://fate.5ch.net/test/read.cgi/liveuranus/1671058902/581
@@ -1585,7 +1595,7 @@ aiでdepth mapを作った後After EffectとかBlenderとかでいろいろや�
 
 このレス以後投稿者は特にやり方などを説明していない
 
-*WD1.3.5が一瞬出て消えた
+**WD1.3.5が一瞬出て消えた
 
 遅れに遅れているWD1.4のテストとして作られたモデル。
 TrinArt+Eimisベース。
@@ -1606,13 +1616,13 @@ Danbooruタグへの反応を根拠にモデル制作者に脅迫まがいのツ
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dmV2Oj1eoR-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/dmV2Oj1eoR.jpg]]
 
-* Lora
+** Lora
 
 新たな学習法。DreamBoothのオプションとして使用できる。
 学習が速く、必要VRAMが少なく、ファイルサイズが小さい(3MB程度)のが特徴。
 これでVRAM 8GB勢がギリ人権を得た。HNもついでに活発になった。
 
-*メスガキプロンプト消失事件
+**メスガキプロンプト消失事件
 
 発端：https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/236
 ''236今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa08-YHv1)2022/12/06(火) 11:50:24.42ID:oyNbIv5ha''
@@ -1637,7 +1647,7 @@ Danbooruタグへの反応を根拠にモデル制作者に脅迫まがいのツ
 それはページ再編の時とかに消しちゃってるかも知れないので、
 今でも有効そうなノウハウを持ってる人は再掲してくれるとありがたいです。
 
-*ローカル勢とweb公式勢が袂を別つ
+**ローカル勢とweb公式勢が袂を別つ
 
 いつの間にかスレはローカル勢が大半を占めることとなり、話題の大半は追加学習などローカルでしかできないことになった。その結果web公式勢は肩身の狭い思いをすることとなり、何を言っているのか分からない、といった苦情がちらほらと見えるようになった。
 そこでとある理由により本スレであるなんJNVA部と分離した[[なんJnovelAI部★64>https://fate.5ch.net/test/read.cgi/liveuranus/1666193928/]]というスレを再利用し、web公式専用のスレにしようという意見が持ち上がった。
@@ -1649,14 +1659,14 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1666193928/955
 その結果建てられたのが[[なんJnovelAI部★65>https://fate.5ch.net/test/read.cgi/liveuranus/1670412212/]]である。
 こうしてスレは分離した。
 そしてなんJNVA部ではプロンプトの研究はかなり数を減らしたのであった。
-* ちょっとしたクラウドブーム
+** ちょっとしたクラウドブーム
 
 たぶんDreambooth需要とpaperspaceの宣伝した人のタイミングが噛み合って、
 学習をクラウドで行うブームが起こった。
 paperspace公式も動画を出して宣伝したり、ユーザーが増えて使いにくくなったり。
 WSL2を使って生成速度を上げるネタも出てきて、ローカル勢の環境は多様化した。
 
-* 2022-10-17 ウマシコDiscord爆破+技術部爆誕
+**2022-10-17 ウマシコDiscord爆破+技術部爆誕
 
 162スレ451
 =||
@@ -1667,7 +1677,7 @@ wikiは爆破されたらガチで困る
 
 別のウマシコDiscordもどっかにあるやで
 
-* 歴史
+* 初期の歴史
 
 - 11月は???
 - 2022/10/16 中華クソ長ネガが発掘される 元素法典の発見がこのへん
@@ -1686,172 +1696,3 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

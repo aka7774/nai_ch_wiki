@@ -176,12 +176,11 @@ LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散
 ***3x3x3mixXL
 https://civitai.com/models/464044
 本家の弱点である背景表現の強化を目指したモデル。
-***ebara_pony_1、ebara_pony_2
+***ebara_pony_1、ebara_pony_2.1
 https://huggingface.co/tsukihara/xl_model
 特にネガを指定しなくても可愛い絵柄を出せることに定評がある。
+2.1は絵柄がさらに安定しているが、その分R18表現のバリエーションは弱まっている模様。
 ***real pony
 https://civitai.com/models/365041
 リアル系モデルの中でも不気味さのない顔を出せると言われている。
-
-
 

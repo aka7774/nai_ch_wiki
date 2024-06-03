@@ -131,7 +131,14 @@
 ***　魔法少女アイ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
 |official style, anime coloring, kagano ai, mahou shoujo ai, very aesthetic, best quality, intricate, overall detail, 1 girl, purple hair, red eyes, magical girl, battle costume, elbow gloves, leotard, mini skirt thigh boots, sitting, holding spear, simple background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}}|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, {{{{bowtie}}}}, |魔法少女アイ|加賀野 愛|V3使用。大体の服装は再現できるが、完全再現ではない。|https://image02.seesaawiki.jp/n/h/nai_ch/BqEZgYVXiI.png|
+|}
+
+***　魔法少女プリティサミー
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1girl, pretty sammy (character),{{{{{{kawai sasami}}}}}, masaki sasami jurai, {mahou shoujo pretty sammy},{{{{tenchi muyou! ryou-ouki}}}}, pink top,{{{white short skirt}}},  ||魔法少女プリティサミー|プリティサミー（河合砂沙美）|V3使用。絵柄や髪型はかなり再現してくれた|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bK1ssXy9iI.png)>https://image01.seesaawiki.jp/n/h/nai_ch/bK1ssXy9iI.png]]|
 |}
 
 ***　魔法少女まどか☆マギカ
