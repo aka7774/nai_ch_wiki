@@ -5,8 +5,8 @@ https://civitai.com/models/257749?modelVersionId=290640
 Animagineと同様に独特のプロンプトルールがある。詳細は上記civitaiを参照
 ケモナー御用達なのでかなり癖がある。
 
-日本人向けのアニメ絵を出すには以下majinaiのPony使用画像を参考にしてほしい。
-https://majinai.art/ja/index.php?model=67ab2fd8ec
+従来のアニメ系モデルとは全く別の思想で制作されたモデルで、いわゆる「マスピ」の概念がない。
+欧米のケモノ絵、カートゥーン、ピンナップアートなどが大量に学習されているので、デフォルトでは日本人好みではない絵が出る。
 
 おそらく重要なのはポジにsource_anime,ネガにsource_pony, source_furry, source_cartoon,を入れること。
 また、効きの良い絵師タグを入れると安定する。絵師タグを入れないと絵柄のばらつきが激しい。
@@ -185,5 +185,6 @@ https://huggingface.co/tsukihara/xl_model
 ***real pony
 https://civitai.com/models/365041
 リアル系モデルの中でも不気味さのない顔を出せると言われている。
+
 
 
