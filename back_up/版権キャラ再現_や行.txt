@@ -41,6 +41,8 @@
 ***　遊戯王
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{{zaizen aoi, yu-gi-oh! vrains, brown short hair, brown eyes}}}, 1girl, solo, school uniform, blue necktie, black jacket, yellow vest, open jacket, long sleeves, sweater, black skirt, bare thighs, black socks, brown leather shoes, white background, simple background, serious, full body, standing,|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, cloak, cape, capelet,|遊戯王Vrains|財前葵|V3使用。正方形640×640だと顔が崩れてしまう事が多く、こちらは1024×1024で実施しています。色々と試していますが、髪に青が少し含んでしまったり、また眼鏡をかけてしまう事がかなりありますので、除外するプロンプトにメガネなどを入れると良いと思います。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/hPbWZclSIQ.png)|
+|{blue angel (vrains), zaizen aoi, yu-gi-oh! vrains}, 1girl, solo, blue hair, twintails, heart hair ornament, facial tatoo, jewelry, blue necktie, blue skirt, sleeveless, choker, black thighhighs, white shirt, dress, skirt ornament, wings, wrist cuffs, large breasts, white background, simple background, light smile, full body, standing,|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, cloak, cape, capelet,|遊戯王Vrains|ブルーエンジェル|V3使用。ただブルーエンジェルは細かい見た目なので正方形640×640だと顔が崩れてしまう為、こちらは1024×1024で実施したものです。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xxuypdmhmN.png)|
 |1girl, sky striker ace - roze,  yu-gi-oh!, holding sword, cowboy shot, very aesthetic,|lowres, bad, text, error, missing, extra, fewer, cropped, jpeg artifacts, worst quality, bad quality, watermark, displeasing, unfinished, chromatic aberration, scan, scan artifacts,|遊戯王|閃刀姫-ロゼ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/hEyltY8RX3.png|
 |1girl, Sky Striker Ace Raye,  yu-gi-oh!, holding sword, cowboy shot, very aesthetic,|lowres, bad, text, error, missing, extra, fewer, cropped, jpeg artifacts, worst quality, bad quality, watermark, displeasing, unfinished, chromatic aberration, scan, scan artifacts,|遊戯王|閃刀姫-レイ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/xWrJqSaFYo.png|
 |lovely labrynth of the silver castle, yu-gi-oh!, white hair, twintails, drill hair, horns, blue eyes, solo, cowboy shot, ||遊戯王|白銀の城のラビュリンス|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Q8ouKInL5T-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Q8ouKInL5T.png]]|
@@ -86,6 +88,7 @@
 ***　幽遊白書
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, anime coloring, yukina (yu yu hakusho), yu yu hakusho, very aesthetic, best quality, intricate, overall detail, 1 girl,  aqua hair, red eyes, white clothes, japanese clothes, kimono, sash, sitting, seiza, happy, simple background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |幽遊白書|雪菜|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/DgzgysXxOc.png|
 |official style, anime coloring, botan (yu yu hakusho), yu yu hakusho, very aesthetic, best quality, intricate, overall detail, 1 girl, pink eyes, pink clothes, japanese clothes, kimono, sash, holding oar, happy, simple background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |幽遊白書|ぼたん|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/RGzOv1a3r5.png|
 |}
 
@@ -164,6 +167,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |leopard (yatterman), yoru no yatterman, loli, blonde hair, mask, long hair, blue eyes, cape, ahoge, elbow gloves, black gloves, spiked hair, solo, cowboy shot, ||夜ノヤッターマン|レパード|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rcDUGj1oQp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/rcDUGj1oQp.png]]|
 |}
+
 
 
 

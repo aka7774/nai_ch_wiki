@@ -21,6 +21,57 @@
 
 #contents
 *2024年
+**2024-06-06 シード値の固定とHires.fixやAdetailerのオンを連動させる拡張機能が公開される
+https://github.com/Takenoko3333/sd-webui-reuse-seed-plus
+
+開発のいきさつは以下。
+
+[[なんJNVA部★402/260>https://fate.5ch.net/test/read.cgi/liveuranus/1717517250/260]]
+=|BOX|
+260 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6938-l7CW)[sage] 投稿日：2024/06/05(水) 18:28:30.55 ID:4POD0XU60
+SDのWebUIでプロンプトいじりながら適当に出力して
+良いSEED見つけたら固定してhires.FixとAdetailerのチェック入れてるんやが
+毎回外したり付けたりSEED固定したりランダムにするのが面倒なんやが
+ボタン一発でやる方法とかない？
+||=
+
+[[なんJNVA部★402/631>https://fate.5ch.net/test/read.cgi/liveuranus/1717517250/631]]
+=|BOX|
+631 名前： 警備員[Lv.30] (ﾜｯﾁｮｲ 4ac3-M/1B)[sage] 投稿日：2024/06/06(木) 15:44:42.87 ID:UNK+HALX0
+>>382
+できたで
+https://github.com/Takenoko3333/sd-webui-reuse-seed-plus
+ワンボタンでやりたかったけどHires.fixの挙動が複雑だったから
+連動をチェックボタンで切り替える方式にした
+詳しくはgithubの説明を読んでくれ
+連動の組み合わせは多岐に渡るしワンボタン化等追々改修していく予定
+リクエストがあればどうぞ
+||=
+
+続いて、[[生成ボタンを分割して&#127922;、&#9851;、+1ボタンを追加するJavaScript>https://seesaawiki.jp/nai_ch/d/%b5%a1%c7%bd%a4%c4%a4%ad%a4%ce%c0%b8%c0%ae%a5%dc%a5%bf%a5%f3%a4%f2%c4%c9%b2%c3%a4%b9%a4%eb%ca%fd%cb%a1]]を機能拡張化するリクエストが出された。
+
+[[なんJNVA部★403/177>https://fate.5ch.net/test/read.cgi/liveuranus/1717745571/177]]
+=|BOX|
+177 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 86a4-6Hk5)[] 投稿日：2024/06/07(金) 22:16:52.73 ID:vd08XaSL0
+>>146
+その勢いでこれも拡張機能にしてほしい
+https://seesaawiki.jp/nai_ch/d/%b5%a1%c7%bd%a4%c4%a4%ad%a4%ce%c0%b8%c0%ae%a5%dc%a5%bf%a5%f3%a4%f2%c4%c9%b2%c3%a4%b9%a4%eb%ca%fd%cb%a1
+ビッグウェーブが来ているわけじゃ全然ないけど
+||=
+
+[[なんJNVA部★403/523>https://fate.5ch.net/test/read.cgi/liveuranus/1717745571/523]]
+=|BOX|
+523 名前： 警備員[Lv.32] (ﾜｯﾁｮｲ 4ac3-M/1B)[sage] 投稿日：2024/06/08(土) 22:47:02.79 ID:t6FS3GUu0
+sd-webui-reuse-seed-plus に機能を追加しました！（v0.2.0）
+https://github.com/Takenoko3333/sd-webui-reuse-seed-plus
+txt2img, img2img の画面に三つの機能付き生成ボタンを追加します。
+Hires.fix のオン/オフに連動して他の機能のオン/オフを切り替えます。
+https://files.catbox.moe/13c29a.png https://files.catbox.moe/pnm6wi.png
+
+生成ボタンについて
+リクエストに応じて過去スレで紹介されていたブックマークレットを改修して機能拡張に組み込みました。
+||=
+https://files.catbox.moe/13c29a.png https://files.catbox.moe/pnm6wi.png
 **2024-06-03 SD3のリリース日発表
 https://x.com/StabilityAI/status/1797462536117444794
 Stable Diffusion 3の一般公開が6月12日（米国時間）になることが発表された。
@@ -1696,3 +1747,5 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
