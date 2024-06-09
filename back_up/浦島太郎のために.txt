@@ -21,6 +21,28 @@
 
 #contents
 *2024年
+**2024-06-09 Forgeが実験的リポジトリに変更されるとのアナウンス
+
+https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/801
+
+（以下は機械翻訳、強調は引用者による）
+
+====
+フォージユーザーの皆さん、
+
+[[今日、アップストリーム sd-webui>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]の開発ブランチでは、パフォーマンスに関する多くの進捗が更新されました。以前のボトルネックの多くは解決されるはずです。[[ここ>https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/166]]で説明したように、大多数のユーザーにはアップストリーム webui に戻すことをお勧めします (webui の開発ブランチを直接使用するか、開発ブランチがメインにマージされるまで待機します)。
+
+同時に、Forge の多くの機能 (unet-patcher や最新のメモリ管理など) は、現在の WebUI のエコシステムに実装するにはコストがかかりすぎると考えられています。
+
+その後、Forge は、主に統合コストのかかる機能をテストするための実験的なリポジトリになります。Gradio 4 で実験し、LRU プロセス スケジューリングと pickle ベースのプロセス通信に基づく huggingface space のゼロ GPU メモリ管理のローカル GPU バージョンの実装を、次のバージョンの Forge に追加します。これにより、Forge に「Forge Space」(Gradio 4 SDK @spaces.GPU 名前空間に基づく) という新しいタブと、「LLM」という別のタブが追加されます。
+
+''これらのアップデートにより、ほぼすべての拡張機能が壊れる可能性があるため、実稼働環境のすべてのユーザーには、日常使用ではアップストリームの WebUI に戻すことをお勧めします。''
+
+gradio の LLM インターフェイスとストリーミング システム、イメージ エディターとディスプレイにおける最近の進歩、および Gradio SDK のゼロ GPU 計算管理システムのシームレスな統合に関して、アップストリームの検討や適応には Gradio 4 のフィードバックと拡張も必要であるため、少数のユーザーをここに残して Gradio 4 をテストするよう招待します。
+
+最後に、''Forge ユーザーに今すぐファイルのバックアップを取ることを推奨します'' (または、可能であればアップストリームの WebUI に戻すだけです)。このアナウンスに気付かずに誤って Forge を更新した場合、このアナウンス前の最後のコミットは[[29be1da>https://github.com/lllyasviel/stable-diffusion-webui-forge/commit/29be1da7cf2b5dccfc70fbdd33eb35c56a31ffb7]]です。
+====
+
 **2024-06-06 シード値の固定とHires.fixやAdetailerのオンを連動させる拡張機能が公開される
 https://github.com/Takenoko3333/sd-webui-reuse-seed-plus
 
@@ -1747,5 +1769,9 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
+
 
 
