@@ -1,0 +1,120 @@
+2024年6月、Animagine3.1に現場猫LoRAを組み合わせ、コマ割りされたマンガのような画像を出力するのが流行。「謎漫画」と呼ばれた。
+-現場猫LoRA https://civitai.com/models/350606/shigotonekogenbaneko-style-sdxl-or
+--Pony用 https://civitai.com/models/502133/shigotonekogenbaneko-style-ponyor
+
+-Animagine XL V3.1 キャラクターリスト https://huggingface.co/spaces/cagliostrolab/animagine-xl-3.1/resolve/main/wildcard/characterfull.txt
+
+====
+
+あらすじ
+civitaiの現場猫LoRAの使用サンプルに貼られていた単コマのミーム画像を元に、これに枠線を足して複数結合させマンガ1ページ分を作るというアイデアが生まれた。
+マンガの内容については「meme＋（表情や行動）」の2単語だけのシンプルなプロンプト、これでミーム画像（1コマ漫画）をガチャ生産する。
+かわいい画像を1点物のイラストやスタンプに使えるのではないか、という意見も寄せられた。
+
+奔放自在なAIの描画は「孫悟空がいきなり猫を食いだす」などの自由すぎるコマを稀に出力して、SD1.5時代の奇形ガチャを思わせる精神的ダメージを負うこともある。
+謎まんが発見者はこれを「AIの狂気」と称した。
+
+やがてコマ割りの安定性や画像結合の省力化を目指して、1枚1ページ出力を目指すニキたちが手法を発展させてゆく。
+cat_memeタグの代わりに「comic, simple, vector,」の組み合わせでコミック的な安定した多コマ出力を獲得したニキ。
+Forge Coupleでページレイアウトを指定して完全な4コマまんがレイアウトや1ページ出力を成功したニキ。
+ずっと望まれていた現場猫LoRAのPony版をmarkニキがリリース。
+githubで様々なツールを提供してくれていたtakenokoニキの参戦、いろいろな作成支援の動きにも繋がった。
+
+なお謎マンガには2つの方向性が見られるようだ。
+１．謎マンガの「謎」部分をネタとして楽しむ。ギリギリ読めそうで読めないセリフを好むポン出し観賞派。
+２．マンガ自動作成システムのベースとして使う。大喜利やLLM併用でのセリフ考案などもできる。実用技術派。
+
+瞬間風速のスレネタとして短命に終わるか、それとも全自動マンガ製作機を目指して発展するか、今後の流れにも注目である。
+====
+
+[[なんJNVA部★402/252>https://fate.5ch.net/test/read.cgi/liveuranus/1717517250/252]]
+====
+252 名前： 警備員[Lv.34] (ﾜｯﾁｮｲ beee-WQ8n)[] 投稿日：2024/06/05(水) 17:54:13.15 ID:xEbGq8Wl0
+謎まんが
+&ref(https://files.catbox.moe/y8kymd.png,350) &ref(https://files.catbox.moe/7o22ay.png,350)
+
+　>>115
+そやでー、猫loraのウェイト上げると猫寄り、下げるとキャラ寄り
+プロンプト入ってるからよかったら好きなキャラでどうぞやで
+ワイこの2日、AIの狂気ネタにSAN値削られてゼロなんで
+もうロリ幼女作成に戻るわ・・・
+====
+
+複数の画像をフォルダに入れて実行すると1枚にまとめてくれるスクリプトも公開された。
+
+[[なんJNVA部★403/146>https://fate.5ch.net/test/read.cgi/liveuranus/1717745571/146]]
+====
+146 名前： 警備員[Lv.31] (ﾜｯﾁｮｲ 4ac3-M/1B)[sage] 投稿日：2024/06/07(金) 21:13:29.21 ID:UpHvqaz70
+乗るしかない、このビッグウェーブに
+謎漫画メーカー
+https://github.com/Takenoko3333/nazo-manga-maker
+
+inputsフォルダ画像入れてbatダブルクリックするだけで謎漫画が作れます！
+今思えばグリッドタイプもランダムにすればよかったな（後でデフォルトランダムに変更します）
+&ref(https://files.catbox.moe/6ke62w.jpg,350) &ref(https://files.catbox.moe/qk3m71.jpg,350) &ref(https://files.catbox.moe/z7o5bz.jpg,350) &ref(https://files.catbox.moe/2nef93.jpg,350)
+====
+
+[[なんJNVA部★403/173>https://fate.5ch.net/test/read.cgi/liveuranus/1717745571/173]]
+====
+173 名前： 警備員[Lv.14] (ﾜｯﾁｮｲ be9c-WQ8n)[sage] 投稿日：2024/06/07(金) 22:11:55.83 ID:Ndn0HDi00
+　>>146
+まんが支援作ってもらったのでコマ用のプロンプト再掲
+
+謎まんがプロンプト　魔人3.1
+[[cutoff>https://github.com/hnmr293/sd-webui-cutoff]]に white,black, ブルアカなら blue,も入れてくれめんす
+split viewが効くと2〜4コマ分割
+&ref(https://files.catbox.moe/yo2tsq.png,300)
+
+謎まんが　GhostXL1.0(魔人派生)　単コマのかわいいイラスト向き
+&ref(https://files.catbox.moe/liwr6d.png,300)
+
+// 謎エロまんが GhostXL　nsfw部分は何でも流用で
+// &ref(https://files.catbox.moe/7kx3y1.png,350)（デフォルメ画風だが無修正だったので念のためコメントアウト）
+====
+
+comicタグの使用は、memeタグよりもコマ割りが豊かになりやすくセリフも増える
+
+[[なんJNVA部★404/55>http://fate.5ch.net/test/read.cgi/liveuranus/1717930907/55]]
+====
+55 名前： 警備員[Lv.19] (ﾜｯﾁｮｲ cf72-qUdF)[sage] 投稿日：2024/06/09(日) 20:38:46.14 ID:6LEYnL2P0
+サンイチ 
+メタデータ付きで上げたんで、皆で謎漫画作ろう 
+&ref(https://files.catbox.moe/mnynou.png,350) &ref(https://files.catbox.moe/2w7mro.png,350) 
+
+魔人3.1と現場猫lora(強度0.3~0.5)を使って(comic, simple, vector:1.0)あたりのプロンプトをつけると漫画っぽくなるで 
+感情系のプロンプト(embarrassedとか)を入れると大ゴマとかオチでその表現に収束する 
+服装の一貫性とかダイナミックなコマ割りは魔人現場猫が勝手にやってくれるで 
+====
+
+完全な4コママンガのレイアウトを1発出しする手法
+
+[[なんJNVA部★403/367>http://fate.5ch.net/test/read.cgi/liveuranus/1717745571/367]]
+====
+367 名前： 警備員[Lv.26] (ﾜｯﾁｮｲ c6b2-6Hk5)[sage] 投稿日：2024/06/08(土) 13:38:35.83 ID:1MlVJIG70
+&ref(https://files.catbox.moe/bawq5l.png,350)
+&ref(https://files.catbox.moe/zai13d.webp,350)
+
+Forge CoupleとCN inpaintでWildcard四コマ直生成や 
+当然のようにSAN値が下がるで 
+====
+
+キャラクターのデフォルメ
+モデルによって差があるキャラの等身はプロンプトで調整できる
+
+[[なんJNVA部★403/562>http://fate.5ch.net/test/read.cgi/liveuranus/1717745571/562]]
+====
+562 名前： 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ffee-xov0) 投稿日：2024/06/09(日) 00:14:34.61 ID:om5mpvvP0
+super deformed: &ref(https://i.imgur.com/cf4AZcR.png,300)　chibi: &ref(https://imgur.com/lrXlXQT.png,300)
+
+ちょっと気になって同じseedで比べてみたんだが、これは……ｗ 
+====
+566 名前： 警備員[Lv.48] (ﾜｯﾁｮｲ ffee-xov0) 投稿日：2024/06/09(日) 00:19:05.21 ID:om5mpvvP0
+deformed: &ref(https://i.imgur.com/TlGKkDd.png,300)
+もひとつ追加 
+謎漫画用にはchibiよりsuper deformedがよいかもしれん 
+====
+
+身長低い←　chibi ＜　super_deformed　＜　deformed　＜　指定なし　→高い
+&ref(https://image02.seesaawiki.jp/n/h/nai_ch/13sc3EFkDT.jpg)
+この比較画像（GhostXL v1.0）は chibi〜super_deformed〜デフォルト の差が大きく出たが、モデルによって挙動が全く異なるので確認してみてほしい
+====

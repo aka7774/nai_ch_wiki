@@ -94,6 +94,25 @@ https://files.catbox.moe/13c29a.png https://files.catbox.moe/pnm6wi.png
 リクエストに応じて過去スレで紹介されていたブックマークレットを改修して機能拡張に組み込みました。
 ||=
 https://files.catbox.moe/13c29a.png https://files.catbox.moe/pnm6wi.png
+**2024-06-05 謎漫画が流行する
+Animagine3.1に現場猫LoRAを組み合わせ、コマ割りされたマンガのような画像を出力するのが流行。「謎漫画」と呼ばれた。
+-現場猫LoRA https://civitai.com/models/350606/shigotonekogenbaneko-style-sdxl-or
+--Pony用 https://civitai.com/models/502133/shigotonekogenbaneko-style-ponyor
+
+[[なんJNVA部★402/252>https://fate.5ch.net/test/read.cgi/liveuranus/1717517250/252]]
+====
+252 名前： 警備員[Lv.34] (ﾜｯﾁｮｲ beee-WQ8n)[] 投稿日：2024/06/05(水) 17:54:13.15 ID:xEbGq8Wl0
+謎まんが
+&ref(https://files.catbox.moe/y8kymd.png,350) &ref(https://files.catbox.moe/7o22ay.png,350)
+
+　>>115
+そやでー、猫loraのウェイト上げると猫寄り、下げるとキャラ寄り
+プロンプト入ってるからよかったら好きなキャラでどうぞやで
+ワイこの2日、AIの狂気ネタにSAN値削られてゼロなんで
+もうロリ幼女作成に戻るわ・・・
+====
+
+補助スクリプトや作り方など詳しい情報は[[謎漫画>nazomanga]]を参照のこと。
 **2024-06-03 SD3のリリース日発表
 https://x.com/StabilityAI/status/1797462536117444794
 Stable Diffusion 3の一般公開が6月12日（米国時間）になることが発表された。
@@ -1769,6 +1788,10 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
+
 
 
 
