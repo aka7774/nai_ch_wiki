@@ -1,6 +1,8 @@
 #contents
 * 概要
 ローカルで使えるStable Diffusion周りのリソースデータの情報をまとめるところです。
+&color(#ff0000){''なお、このページは事実上の更新停止に伴い古くなっています。''}
+ここの情報はSD1.5向け。SDXLについては[[こちらを参照>SDXL]]
 
 &#128317;：ダウンロードリンク
 
@@ -14,7 +16,7 @@ sdmodelの更新が滞りがちになったので適当に掲載していい気�
 
 *リソース(リンク集)
 +https://rentry.org/sdmodels ~~%%ここ見ときゃいい感はある。膨大な量のリンク集%% 残念ながら2022年11月以降更新されていない。
-++ githubに最新のソースが有りました https://github.com/questianon/sdupdates
+++ %%githubに最新のソースが有りました https://github.com/questianon/sdupdates%% こっちも更新停止。
 +Models - Hugging Face - https://huggingface.co/models?pipeline_tag=text-to-image&sort=modified　~~自然言語処理関連のライブラリ開発や人工知能のコミュニティを運営しているアメリカ企業のサイト。充実。爆速。無料。
 +Civitai | Every model in one place｜https://civitai.com/　~~モデルアップロードプラットフォーム。見やすくてよき
 +/hdg/ Stable Diffusion Models Cookbook - https://rentry.org/hdgrecipes#g-anons-unnamed-mix-e93c3bf7 ~~海外ニキによる様々なマージモデルの一覧
@@ -133,15 +135,6 @@ Danbooruにある極端にNSFWなコンテンツのみを学習させたモデ�
 magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 ||=
 ソース：--GUIDE-- - https://rentry.org/voldy#-novelai-setup-
-
-** Animagine XL
-SDXLベースのアニメモデル。
-Animagine XL 3.0
-https://huggingface.co/cagliostrolab/animagine-xl-3.0
-
-Animagine XL 3.0 Base
-https://huggingface.co/cagliostrolab/animagine-xl-3.0-base
-Baseは学習向け。推論用途には非推奨。
 
 *マージモデル
 - 複数のモデルを混合させて作られたモデル。上記リソースのリンク先サイト等から入手が可能。
@@ -430,6 +423,7 @@ https://i.imgur.com/cuKcv0Z.png
 
 * 学習系リソース
 ** 透明正則化画像
+透明正則化に効果はなく今更使うものでもない。
 512x512、768x768、1024x1024の透明画像詰め合わせ　各1000枚ずつ
 https://image02.seesaawiki.jp/n/h/nai_ch/UUBObtbfCe.zip
 

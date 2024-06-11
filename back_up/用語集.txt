@@ -7,7 +7,7 @@
 |AUTOMATIC1111||人名。でもAUTOMATIC1111氏が作ったツール「Stable Diffusion web UI」を指して呼ばれがち。|
 |A1111|AUTOMATIC1111|webuiと同義。人名だけどツールの名前として呼ばれがち。|
 |1111|AUTOMATIC1111|webuiと同義。このページでも1111と表記する。|
-|[[Animagine>animagine31tips]]|Animagine XL|XL用モデル|
+|Animagine|[[Animagine XL>animagine31tips]]|XL用モデル|
 |Animajin|[[Animagine XL>animagine31tips]]|Anima''gine''の間違い|
 |Any|Anything|二次イラスト系の有名モデル|
 |Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が少し速い |
@@ -41,6 +41,7 @@
 |t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
 |uc|unconditional conditioning|Negative Promptと同義|
 |UC L+B|Undesired Content Low Quality + Bad Anatomy|NovelAIの定型のネガティブプロンプト。|
+|V3|NovelAI V3|2023年11月に登場したWeb版NovelAIの現行モデル。クローズドソース。キャラ再現度やインペイントが優秀なためローカルと併用する人も多い|
 |WD|Waifu Diffusion|最初期に出たアニメモデル。ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
 |webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
 |web版||NovelAIを公式サイト上で利用することを指すことが多い。|
@@ -58,7 +59,7 @@
 |ブリーディング|bleeding|特定の単語のプロンプトに、スペルが同じで意味の異なる単語やスペルが似た単語の概念が混入すること|
 |魔人/魔神|[[Animagine XL>animagine31tips]]|XL用モデル|
 |マージ||Checkpoint Mergerで2〜3つのモデルを組み合わせること。|
-|マスピ|masterpiece|傑作。品質向上に使われるプロンプト。顔が特徴的。マスピ絵、マスピ顔とか言う。|
+|マスピ|masterpiece|傑作。品質向上に使われるプロンプト。切れ長のつり目、陰影の強調された顔など特徴的な絵柄になる。マスピ絵、マスピ顔とか言う。|
 |妖精さん||1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
 |ローカル版||自身のパソコンやクラウドサービスで動かすStable Diffusionの事を指すことが多い。NovelAIのリークモデルをWebUIで利用する形態を指すこともある。|
 
