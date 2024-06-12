@@ -21,6 +21,19 @@
 
 #contents
 *2024年
+
+**2024-06-12 Stable Diffusion 3が一般公開
+リポジトリ: https://huggingface.co/stabilityai/stable-diffusion-3-medium
+ブログ: https://ja.stability.ai/blog/stable-diffusion-3-medium
+StabilityAIが開発するStable Diffusionの最新版が公開された。今回公開されたのはパラメータ数20億のMedium。
+従来のSDより破綻が減少し、プロンプトへの忠実度が改善した。また文字を正しく生成できるようになった。
+リリース時点で対応しているWebUIはComfyUIのみ。またモデルのダウンロードには登録が必要。
+※商用利用するには有償のライセンスが必要
+
+**2024-06-10 ComfyUIのカスタムノード「Comfy_LLMVISION」にキーロガーが仕込まれていたとの報告
+
+詳細は[[画像生成ソフトウェア「ComfyUI」のノードにキーロガーが仕込まれていたことが発覚、クレジットカード情報やパスワードなど全ての入力が筒抜けに - GIGAZINE>https://gigazine.net/news/20240611-comfyui-llmvision-malware/]]などを参照のこと。
+
 **2024-06-09 Forgeが実験的リポジトリに変更されるとのアナウンス
 
 https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/801
@@ -1788,6 +1801,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 
