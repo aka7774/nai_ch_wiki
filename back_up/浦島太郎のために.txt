@@ -21,15 +21,37 @@
 
 #contents
 *2024年
+**2024-06-13 早くもSD3への失望と混乱が広がる
+以下は、6月13日時点の状況を説明したものであることに注意。
+
+SD3のベースモデルの期待を下回る品質の低さと、ライセンスの不明瞭さについて、Civitaiでは失望と混乱が広がっている。
+
+Pony Diffusionの作者は情勢を考慮して、予定していたSD3での学習を取りやめ、改めてXLでの新バージョンを作ることを発表した。
+https://civitai.com/articles/5671/towards-pony-diffusion-v7-i-mean-v69
+
+これを機に、PixArt SigmaやLumina-T2Xなど他の画像AIモデルを活用する提案もなされている模様。
+-PixArt Sigma
+https://github.com/PixArt-alpha/PixArt-sigma
+-Lumina-T2X
+https://github.com/Alpha-VLLM/Lumina-T2X
 
 **2024-06-12 Stable Diffusion 3が一般公開
 リポジトリ: https://huggingface.co/stabilityai/stable-diffusion-3-medium
 ブログ: https://ja.stability.ai/blog/stable-diffusion-3-medium
+デモページ：https://huggingface.co/spaces/stabilityai/stable-diffusion-3-medium
 StabilityAIが開発するStable Diffusionの最新版が公開された。今回公開されたのはパラメータ数20億のMedium。
 従来のSDより破綻が減少し、プロンプトへの忠実度が改善した。また文字を正しく生成できるようになった。
-リリース時点で対応しているWebUIはComfyUIのみ。またモデルのダウンロードには登録が必要。
+リリース時点で対応しているWebUIはComfyUIのみ。またモデルのダウンロードにはHuggingfaceのユーザー登録が必要。
 ※商用利用するには有償のライセンスが必要
 
+現時点ではXLと同様、前宣伝と比べて実際の性能が微妙すぎるという評価が下されている。
+少なくともDALLEやMidjourneyのようにアーティスティックな画像を工夫せずにポン出しすることはできない。
+ライセンスも不明な点が多く学習に躊躇しているモデル作者が多いようで、実用的なユーザーモデルの登場は当分先になりそうである。
+
+-''現時点での最も簡単なローカル導入方法''
+ディレクトリからsd3_medium_incl_clips_t5xxlfp8.safetensors（VRAM8GBモデル）をダウンロードし、ComfyUIのcheckpointに入れる。
+「comfy_example_workflows」からサンプルワークフローの「sd3_medium_example_workflow_basic.json」をダウンロードし、ComfyUIで読み込む。
+ワークフローの「TripleClipLoader」の接続を外し、「LoadCheckpoint」（モデル選択欄）から直接「ClipTextEncode」（プロンプト入力欄）にClipの出力を繋ぎなおす。
 **2024-06-10 ComfyUIのカスタムノード「Comfy_LLMVISION」にキーロガーが仕込まれていたとの報告
 
 詳細は[[画像生成ソフトウェア「ComfyUI」のノードにキーロガーが仕込まれていたことが発覚、クレジットカード情報やパスワードなど全ての入力が筒抜けに - GIGAZINE>https://gigazine.net/news/20240611-comfyui-llmvision-malware/]]などを参照のこと。
@@ -127,12 +149,14 @@ Animagine3.1に現場猫LoRAを組み合わせ、コマ割りされたマンガ�
 
 補助スクリプトや作り方など詳しい情報は[[謎漫画>nazomanga]]を参照のこと。
 **2024-06-03 SD3のリリース日発表
-https://x.com/StabilityAI/status/1797462536117444794
-Stable Diffusion 3の一般公開が6月12日（米国時間）になることが発表された。
-まずはパラメータ数が少ない軽量モデルをリリースし、次いで重量モデルもリリースしていく予定だという。
+%%https://x.com/StabilityAI/status/1797462536117444794%%
+%%Stable Diffusion 3の一般公開が6月12日（米国時間）になることが発表された。%%
+%%まずはパラメータ数が少ない軽量モデルをリリースし、次いで重量モデルもリリースしていく予定だという。%%
+6/13追記：日本時間の6月12日午後10時ごろに一般公開された。
 
-https://civitai.com/articles/5069
-Pony Diffusionも次期バージョンのSD3ベースでの学習に向けて準備を進めているという。
+%%https://civitai.com/articles/5069%%
+%%Pony Diffusionも次期バージョンのSD3ベースでの学習に向けて準備を進めているという。%%
+6/13追記：ライセンスに不明な点が多いためSD3での学習は当分見送るらしい。
 **2024-05-31 Omostが公開される
 
 ControlNetやFooocus、Forgeの開発で知られるlllyasviel氏が対話型AIを用いて画像を生成する「Omost」を公開した。
@@ -1801,6 +1825,14 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
+
+
+
+
+
+
 
 
 
