@@ -21,20 +21,21 @@
 
 #contents
 *2024年
-**2024-06-13 早くもSD3への失望と混乱が広がる
-以下は、6月13日時点の状況を説明したものであることに注意。
+**2024-06-13 Ponyは7の前に6.9を作ることに
+SD3をベースにPony Diffusion V7を作る予定だったが、
+SD3の商用ライセンスが曖昧なことなどを理由に、SDXLがベースのV6.9を作ると発表した。
+詳しくは　https://civitai.com/articles/5671/towards-pony-diffusion-v7-i-mean-v69
+//6月13日時点の状況を説明したものであることに注意。
 
-SD3のベースモデルの期待を下回る品質の低さと、ライセンスの不明瞭さについて、Civitaiでは失望と混乱が広がっている。
+//Pony Diffusionの作者は情勢を考慮して、予定していたSD3での学習を取りやめ、改めてXLでの新バージョンを作ることを発表した。
+//https://civitai.com/articles/5671/towards-pony-diffusion-v7-i-mean-v69
 
-Pony Diffusionの作者は情勢を考慮して、予定していたSD3での学習を取りやめ、改めてXLでの新バージョンを作ることを発表した。
-https://civitai.com/articles/5671/towards-pony-diffusion-v7-i-mean-v69
-
-これを機に、PixArt SigmaやLumina-T2Xなど他の画像AIモデルを活用する提案もなされている模様。
--PixArt Sigma
-https://github.com/PixArt-alpha/PixArt-sigma
--Lumina-T2X
-https://github.com/Alpha-VLLM/Lumina-T2X
-
+//%%これを機に、PixArt SigmaやLumina-T2Xなど他の画像AIモデルを活用する提案もなされている模様。%%
+//%%-PixArt Sigma%%
+//%%https://github.com/PixArt-alpha/PixArt-sigma%%
+//%%-Lumina-T2X%%
+//%%https://github.com/Alpha-VLLM/Lumina-T2X%%
+//
 **2024-06-12 Stable Diffusion 3が一般公開
 リポジトリ: https://huggingface.co/stabilityai/stable-diffusion-3-medium
 ブログ: https://ja.stability.ai/blog/stable-diffusion-3-medium
@@ -44,9 +45,7 @@ StabilityAIが開発するStable Diffusionの最新版が公開された。今�
 リリース時点で対応しているWebUIはComfyUIのみ。またモデルのダウンロードにはHuggingfaceのユーザー登録が必要。
 ※商用利用するには有償のライセンスが必要
 
-現時点ではXLと同様、前宣伝と比べて実際の性能が微妙すぎるという評価が下されている。
-少なくともDALLEやMidjourneyのようにアーティスティックな画像を工夫せずにポン出しすることはできない。
-ライセンスも不明な点が多く学習に躊躇しているモデル作者が多いようで、実用的なユーザーモデルの登場は当分先になりそうである。
+//性能について書かれていたがお気持ちだったので削除
 
 -''現時点での最も簡単なローカル導入方法''
 ディレクトリからsd3_medium_incl_clips_t5xxlfp8.safetensors（VRAM8GBモデル）をダウンロードし、ComfyUIのcheckpointに入れる。
@@ -1825,6 +1824,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 
