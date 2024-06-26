@@ -73,7 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
-|Intel Arc A770|16GB|Ryzen 7 5700X3D|84.09s|SD.Next a3ffd47|use-ipex|Ubuntu 22.04LTS ※なるべく条件は合わせていますが・・・|
+|Intel Arc A770|16GB|Ryzen 7 5700X3D|84.09|SD.Next a3ffd47|use-ipex|Ubuntu 22.04LTS ※なるべく条件は合わせていますが・・・|
 |RTX 4080 SUPER|16GB|Core i7-6700K|71.8|v1.9.4|--xformers|CPU古い|
 |RTX 4090|24GB|Ryzen 7 5800X|49.4|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |RTX 4000 Ada(AD103)|20GB|Core i3-10105|115.1|v1.9.4|--xformers|Powerlimit 70%|
