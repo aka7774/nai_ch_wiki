@@ -93,6 +93,8 @@ https://rentry.org/ponyxl_loras_n_stuff（通称Pony Note） ※一番下のinna
 本スレによると、ネガに隠しトークンを多数入れてもさほど効果がない、逆に思い通りの画像が出なくなったなどの報告もあるので今後の研究が期待される。
 pony系の派生モデルでも本家ほどの効き具合ではないが機能する。
 
+**ネガティブ用トークン
+
 ''aca,ces（feces=大便）,gpo''は''グロテスクな画像''が重点的に学習されているようなのでネガに入れても損はないだろう。逆にこれらをポジに入れるのは禁物。
 =|BOX|
 0594今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c688-yO80)
@@ -105,6 +107,71 @@ aca, aer, api, aur, bem, bif, bzi, bzl, frw, gar, gkb, gor, gpc, gpo, gvb, gzl, 
 落書きみたいのとかアクが強かったりするやつ（こっちはなくてもいいかも　背景出にくいのを改善目的で作った）
 aey, aff, aku, alp, baf, bfu, bip, bks, bku, bwf, bwu, csz, dbu, epg, evg, fbv, fey, ffs, fii, fla, gcg, gcx, gjv, grp, gsf, hag, hbz, hda, ilb, imf, ixz, kmq, kmz, kpm, kwl, kzg, lbq, lek, lpt, luz, lwl, lym, mdf, mdw, mlx, nrf, nvo, nvu, obo, ohw, oii, ojn, owz, oxz, oyz, paf, par, pjy, pme, pml, poo, pri, psm, pvo, pwl, pwn, pxg, qdc, qdl, qlt, rha, rjz, rpz, rrg, rsl, shq, sht, smg, ttp, uhf, ujf, uyf, uyz, vag, vbi, vdc, vdl, ven, vfc, wbi, wnw, wpw, xiq, xlx, 
 ||=
+
+''★406より''
+
+=|BOX|
+0776今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった 警備員[Lv.11][芽] (ﾜｯﾁｮｲ c3d9-VQuK)
+2024/06/14(金) 20:37:03.40ID:G+Af9ZsM0
+3文字でいろいろいじってるとほんとにどうすればいいか分からなくなっていくな。
+https://files.catbox.moe/3qx9zh.png
+みんなはどんなの使ってる？
+ポジにクオリティタグ入れんで済むようにいろいろ試行錯誤したけどこれ以上はようわからん
+ちなみにこの画像は下のプロンプト。モデルはebara2.1
+ポジ：girl
+ネガ：the simpsons, worst quality, bad quality, normal quality,
+low res, source_cartoon,
+censored, simple background, bad anatomy,
+vml, aca, ces, gpo, moro, ybq, tdj, eqg, fwg, ieb, inc, lek, jaf, jap, smg, vfc, zbm, yew, ydl
+||=
+
+&ref(https://files.catbox.moe/3qx9zh.png,300)
+
+=|BOX|
+0805今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった 警備員[Lv.46] (ﾜｯﾁｮｲ 2354-/sG6)
+垢版 | 大砲
+2024/06/14(金) 21:31:09.59ID:OrMAKNPU0
+>>776
+ebara1の頃はこのスレで見たgpo, tdj, eqg, wpt, aur, hnj, bry, bfu, cle, cwn, eqg, ewu, bwl, bse,を好んで使っとったが2以降は3文字自体使ってへんな
+このネガは好みや、ワイも使わせてもらお
+
+0809 警備員[Lv.12][芽] (ﾜｯﾁｮｲ bf62-VQfa)
+垢版 | 大砲
+2024/06/14(金) 21:36:52.13ID:0P9DUVHH0
+三文字はワイ
+ポジ：uoy, thon, fyx
+ネガ：aca, ces, gpo, ybq, tdj, eqg, wpt
+でやっとるわ
+ポジはSeed固定で一つ一つ試して効果ありそうなの厳選したんやがネガはスレで出てたののコピペや
+||=
+
+''★409 今までに登場しなかったトークンも多く、スレ内でも注目を集めた''
+
+=|BOX|
+0486今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8b16-EjJt)
+2024/06/20(木) 02:06:36.56ID:QgN3a30b0
+クオリティタグなし＆3文字つかったネガで、ebara2.1の生成結果を高品質化できないか延々調べてる。
+前にここで同じようなの投下したけど無駄がかなりあったことが分かったのでネガにひたすらクオリティに効きそうな３文字入れて効果試したりしてもう一度練り直してみた。
+ポジ:girl in cafe, showing panties
+�“羈啗‐斃僉　．優�：なし
+　https://files.catbox.moe/w6y7uj.png
+��濃いめ色合いで高品質を狙ったの。　ネガ：qlt, lkb, tdj, vml　
+　https://files.catbox.moe/dk885z.png
+�Ｇ�めの色合いで高品質を狙ったの　ネガ；rbi, hsn, bol, ilr　
+　https://files.catbox.moe/sqc8w0.png
+��3文字をできるだけ減らして高品質を狙ったの　ネガ：lkb, rbi, ilr　　　
+　https://files.catbox.moe/5i170b.png
+��3文字×6まで許容したの　ネガ：rbi, hsn, bol, ilr, lkb, qlt　　
+　https://files.catbox.moe/2g799r.png
+�Ν◆椨�　ネガ：qlt, lkb, tdj, vml, rbi, hsn, bol, ilr　
+　https://files.catbox.moe/u094t7.png
+※よく言われるaca, ces, gpoは、グロとかスカをさけるためのものなので、
+　クオリティにはあまり影響しない。
+※クオリティタグなしでこれなら普通に運用できそう。
+　個人的には�きキΔ△燭蠅�お気に入り。ポジティブプロンプトの利きがよくなって楽しい。
+||=
+
+
 
 **有用なトークン
 トークンの大部分はケモノ系・カートゥーン系の海外アーティストに関連付けられているため有用なものは少ない。
@@ -185,6 +252,7 @@ https://huggingface.co/tsukihara/xl_model
 ***real pony
 https://civitai.com/models/365041
 リアル系モデルの中でも不気味さのない顔を出せると言われている。
+
 
 
 
