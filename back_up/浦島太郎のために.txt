@@ -22,6 +22,14 @@
 #contents
 *2024年
 
+**2024-07-06 Stability AIがSD3のライセンスを変更
+https://stability.ai/news/license-update
+Stability AIはSD3 Mediumを"Stability AI Community License"という新しいライセンスのもと公開することにした。
+ Our new Community License is now free for research, non-commercial, and commercial use. You only need a paid Enterprise license if your yearly revenues exceed USD$1M and you use Stability AI models in commercial products or services. 
+年間の収入が100万ドル(日本円で約1.5億円)未満であれば研究、非商用、商用問わず無料で使用できる。
+
+また、SD3 Mediumで見られる特定の条件で人体が破綻する現象を対処するとのこと。
+
 **2024-06-26 Open Model Initiativeが発足
 画像・動画・音声生成のためのオープンライセンスAIモデルの開発を推進することを目的にしたプロジェクトであるOpen Model Initiativeが発足した。発足メンバーはInvoke、ComfyOrg、Civitai。LAIONもメンバーだったが参加しないことになった。
 続報で新たなメンバーが発表され、その中にはPony Diffusionの開発者であるAstraliteHeart氏もいる。
