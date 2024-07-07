@@ -30,6 +30,12 @@
 |illiyasviel_von_einzbern||fate|イリヤ|V1使用|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iSm8SQEgvs-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/iSm8SQEgvs.png]]|
 |}
 
+***　Fate/ZERO
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(300px):備考|サンプル|
+|{{{gilles de rais (caster) (fate)}}},100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}},{{{hi-vision anime}}},best quality, intricate, overall detail,highest,great,unity 8k wallpaper,anime_coloring,{{{deep-silky-healthy-lackwarm-foundational-soft-skin}}},premium,selected,superiors,stylish,Realism,Photorealistic,|lowres, {bad}, error, fewer, extra, missing, worst quality, jpeg artifacts, bad quality, watermark, unfinished, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract], cropped, worst quality, bad anatomy, bad hands, missing fingers, extra digit, missing arms, bad feet, long neck, long body, extra legs, mismatched pupils, simple eyes, deformed eyes, {heterochromia}, [realistic], @_@, {twins}, ribs,earrings,|Fate/ZERO|ジル・ド・レェ|V3使用|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QIB9hHG25Y.png)>https://image02.seesaawiki.jp/n/h/nai_ch/QIB9hHG25Y.png]]|
+|}
+
 ***　Fate/EXTRA、Fate/EXTRA CCC
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(300px):備考|サンプル|
@@ -128,4 +134,5 @@
 |&#40;&#40;mash_kyrielight)),&#40;&#40;&#40;&#40;&#40;dangerous_beast))))),&#40;&#40;&#40;purple fur bikini laced by black strings))),purple eyes,hair over one eyes,short bob,purple wolf ears,~~ Purple fur collar,Purple fur-trimmed  elbow gloves,Purple fur-trimmed legwear,Purple fur on side of waist,~~Purple wolf tail,&#40;&#40;black strings lace up her body)),  &#40;&#40;&#40;best quality))), &#40;&#40;ultra-detailed)), &#40;&#40;illustration)),|glasses, long hair, braids hair, armor, armored leotard, fang, glow eyes,|Fate/Grand Order|マシュ・キリエライト(デンジャラスビースト)|V1使用~~紐とリボンは書き足して|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pR2Po52K8p-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pR2Po52K8p.png]]|
 |mash_kyrielight,purple eyes,hair over one eyes,|glasses,long hair,braids|Fate/Grand Order|マシュ・キリエライト(1〜3臨orオルテナウス改)|V1使用~~服装指定をしなければ概ね黒紫のアーマーを着てくれるが、形状は不安定~~人気キャラだが名前だけで生成すると意外ととっちらかる。~~ダンボール内で「mash kyrielight (dangerous beast)」で他キャラにコスさせる絵が大量にあるからか~~また、negativeにglassesを入れないと高確率で眼鏡をかける。私服状態を作りたいならポジティブに入れること |[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/reOLRIo5_u-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/reOLRIo5_u.png]]|
 |}
+
 

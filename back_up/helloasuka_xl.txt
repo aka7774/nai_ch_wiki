@@ -73,6 +73,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4070|12GB|Core i3-12100F|99.2|v1.10.0-RC @340a910|--xformers||
+|RTX 4070|12GB|Core i3-12100F|92.3|v1.10.0-RC @340a910|--xformers --precision half||
 |Intel Arc A770|16GB|Ryzen 7 5700X3D|84.09|SD.Next a3ffd47|use-ipex|Ubuntu 22.04LTS ※なるべく条件は合わせていますが・・・|
 |RTX 4080 SUPER|16GB|Core i7-6700K|71.8|v1.9.4|--xformers|CPU古い|
 |RTX 4090|24GB|Ryzen 7 5800X|49.4|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
