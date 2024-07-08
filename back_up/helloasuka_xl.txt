@@ -73,6 +73,9 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4070|12GB|Core i3-12100F|95.8|f0.0.17v1.8.0rc-latest-499-gb54df748|--cuda-malloc --cuda-stream --pin-shared-memory|dev_upstream_a1111|
+|RTX 4070|12GB|Core i3-12100F|95.9|f0.0.17v1.8.0rc-latest-499-gb54df748||dev_upstream_a1111|
+|RX7800XT|16GB|Core i5-12600K|203.7|forge f0.0.17v1.8.0rc-latest-278-gbfee03d8||Ubuntu22.04 rocm6.1.3.60103|
 |RTX 4070|12GB|Core i3-12100F|99.2|v1.10.0-RC @340a910|--xformers||
 |RTX 4070|12GB|Core i3-12100F|92.3|v1.10.0-RC @340a910|--xformers --precision half||
 |Intel Arc A770|16GB|Ryzen 7 5700X3D|84.09|SD.Next a3ffd47|use-ipex|Ubuntu 22.04LTS ※なるべく条件は合わせていますが・・・|
@@ -124,6 +127,7 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RX7800XT|16GB|Core i5-12600K|209.2|forge f0.0.17v1.8.0rc-latest-278-gbfee03d8||Ubuntu22.04 rocm6.1.3.60103|
 |RTX 4070 Ti|12GB|Ryzen 7 5700X|83.6|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 80%|
 |RTX 4090|24GB|Core i7-13700F|46.9|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |RTX 4060 Ti|16GB|Core i5-12400F|145.8|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
