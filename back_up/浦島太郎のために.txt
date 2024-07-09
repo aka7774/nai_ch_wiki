@@ -22,6 +22,10 @@
 #contents
 *2024年
 
+**2024-07-08 PonyでのLoRA学習時スコアタグの使用について
+PonyでLoRAを学習する際に、学習画像のタグにスコアタグ(score_9_upなど)を入れることで学習効率を上げる方法が話題に上る。
+[[PonyDiffusionV6XLTips>PonyDiffusionV6XLTips#content_8_12]]へいくつかレスを抜粋した。
+
 **2024-07-06 Stability AIがSD3のライセンスを変更
 https://stability.ai/news/license-update
 Stability AIはSD3 Mediumを"Stability AI Community License"という新しいライセンスのもと公開することにした。

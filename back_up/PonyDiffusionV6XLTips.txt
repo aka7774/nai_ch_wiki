@@ -1,6 +1,8 @@
 *PonyXLどこ？
 https://civitai.com/models/257749?modelVersionId=290640
 
+#contents
+
 *プロンプトの書き方
 Animagineと同様に独特のプロンプトルールがある。詳細は上記civitaiを参照
 ケモナー御用達なのでかなり癖がある。
@@ -14,17 +16,17 @@ Animagineと同様に独特のプロンプトルールがある。詳細は上�
 R18絵を出したい場合、他のモデルとは異なり「nsfw」の代わりに「rating_explicit」を使うこと。といっても指定しなくても勝手に脱ぐことも多いが。
 「nsfw」を入れると著しく絵の質が低下する特性がある。
 
-公式の記載法
+**公式の記載法
 =|BOX|
 score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up, just describe what you want, tag1, tag2
 ||=
 
-スレで共有されたもの
+**スレで共有されたもの
 =|BOX|
 score_9, score_8_up, score_7_up, BREAK source_anime, rating_explicit, best quality, masterpiece, uncensored, 1girl,
 ||=
 
-公式で説明されているレーティングタグ
+**公式で説明されているレーティングタグ
 |rating_safe|従来のsfw|
 |rating_questionable|基本的に脱がない|
 |rating_explicit|従来のnsfw|
@@ -36,12 +38,12 @@ score_9, score_8_up, score_7_up, BREAK source_anime, rating_explicit, best quali
 source_pony,source_furry,source_cartoon
 ||=
 
-姫騎士ニキ
+**姫騎士ニキ
 =|BOX|
 censored, mosaic censoring, bar censor ,border, worst quality, low quality, simple background, white background, realistic, sketch ,muscle , normal quality, jpeg artifacts, depth of field, blurry, messy drawing, amateur drawing, lowres, bad anatomy, bad hands, text, error, missing fingers, fewer digits, extra digits,cropped , greyscale, monochrome, source_furry, source_pony, source_cartoon, comic ,source filmmaker,video ,3d
 ||=
 
-上記を軽量化。とりあえずこの辺から始めてもいいかも
+**上記を軽量化。とりあえずこの辺から始めてもいいかも
 =|BOX|
 low quality , bad anatomy, bad proportions, extra legs, deformed anatomy, messy color, deformed fingers, bad, distracted, hyperrealistic,source_furry, source_pony, source_cartoon
 ||=
@@ -54,6 +56,8 @@ https://civitai.com/posts/1267427
 バタ臭くなりそうな作品名などを入れるのも効果がある。
 ''western_artist,disney,marvel,overwatch,league_of_legends,the_simpsons''があたりが定番ネガの模様。
 
+
+**サンプル
 以下は
 ポジ側に source_anime, score_9,
 ネガ側に source_cartoon, source_furry, source_pony
@@ -64,6 +68,7 @@ https://civitai.com/posts/1267427
 ポジに score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up ネガに score_4, score_5, score_6
 このような書き方でクオリティが上がるとの報告もあるが、うまく調整しないと高確率でバタ臭くなるようだ。
 https://civitai.com/models/257749/pony-diffusion-v6-xl?modelVersionId=290640&dialog=commentThread&commentId=343166
+
 *推奨事項
 Euler aで25ステップ。
 VAEは内蔵してるので必要ない。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
@@ -243,6 +248,40 @@ WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可
 学習も癖が強い。
 LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散しやすいので、LRを下げるかそれ以外のOptimizerの使用をおすすめする
 
+**score学習
+Ponyで使用されている独特なクオリティタグ(score_9_upなど)をLoRA学習時のタグにも入れることにより、再現性を高める方法
+
+なんJNVA部★416
+https://fate.5ch.net/test/read.cgi/liveuranus/1720317236/
+=|BOX|
+386: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span>(JP 0Hcb-F75N) sage 2024/07/08(月) 15:59:31.15 ID:ZsuaVgOHH 
+モデルとの相性でloraの効きが悪いことがあったんだが
+ふとscoreタグを逆に記載したら効きが良くなって草
+流石にクオリティがイマイチやけど
+
+418: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span>(ﾜｯﾁｮｲ ebbf-OR+R) sage 2024/07/08(月) 18:02:51.07 ID:eiKBHRzV0 
+人物や場所の特徴や構図なんかは細かい方がええと思うけどクオリティタグはある程度絞らんと絵の書き込みや雰囲気が定まらんくてふわっとしてまうイメージや
+ワイは学習時にはsource_animeとscore_9とだけ入れて実際の生成時はsource_animeとscore_9からscore_4_upまでを使っとるな　まぁ学習元モデルによって変わってくるし正解のない話やね
+
+439:  <span style="color:green;">警備員[Lv.13]</span>(ﾜｯﾁｮｲ 2388-pk1M)  2024/07/08(月) 19:27:46.52 ID:OFt76uj90 
+pony学習でscoreタグつける・つけないは未だに答えが見つからないです
+無くてもそれなりにできているようにも感じますし、なんだか微妙に再現度が甘い気もします
+
+465: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span>(ﾜｯﾁｮｲ 85e8-o6+b) sage 2024/07/08(月) 21:27:59.67 ID:aB2+LCRY0 
+ワイの経験やとこうやわ
+・Score無しで学習してScore有りで生成：再現度が下がる
+・Score無しで学習してScore無しで生成：画像のクオリティが下がる
+・Score有りで学習してScore有りで生成：うまく作れる
+
+普通のLoRAなら問題ないんやけど、癖が強い画風やと
+下手な絵だと認識されるのかScoreタグで画風が消されることがあるみたいなんや
+
+490: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.22]</span>(ﾜｯﾁｮｲ a527-l588)  2024/07/08(月) 22:35:15.06 ID:06Ei+RU00 
+>>465
+大体同じ感想
+加えて言うとGameCGとかNobelartとか素材の出自に合わせてキャプション付けして出力時にタグ入れると再現度が上がる
+scoreタグ不要のマージモデルで学習すると効果不明になるけど
+||=
 * Controlnetとの相性
 原因不明だが一部のControlnetとの相性が悪く、特にOpenposeでの指定ポーズは全く反映されない。
 

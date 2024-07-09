@@ -1,6 +1,7 @@
 #contents
 
 * 注意
+''このページは古くなっていることにご留意ください。''
 ** torch2
 torch2化、torch.compile改造ともにVRAMの消費量が増えます。
 高解像度生成などでVRAMがカツカツな人は取捨選択が必要かも。
@@ -129,7 +130,7 @@ Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減
 *** 対応GPU
 
 - NVIDIA
-- GeForce 1000番台〜4000番台
+- GeForce GTX 1000、RTX2000シリーズ以降
 - GeForce 900番台以前でも動くけど逆効果だったという報告あり
 
 *** 導入方法
@@ -142,7 +143,7 @@ venvを削除してからWebUIを起動する手もあり
 
 *** 開発版をインストールする
  pip install --pre -U xformers
-でコンパイル無しで導入できるようになったらしい。
+でコンパイル無しで導入できるようになった。
 なお、対応するTorchバージョンが入っている必要がある。
 
 =|BOX|
@@ -229,26 +230,12 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
  --xformers や --opt-sdp-no-mem-attention と併用できる。
 環境によっては効果が無かったり逆に遅くなったりするらしいので比較検討しましょう。
 
-* cudnnのバージョンアップ(torch1系の場合、RTX4000シリーズでは必須)
-最近のWebUIはTorch2が標準でインストールされるためこの手順は不要です。
-RTX4000シリーズで古いWebUIを使用している場合のみ必要。
-
-[+]手順
-※torch2系の場合、バンドルされているcudnnが8.7になったため、この手順は不要。webuiの画面の一番下でtorchのバージョンが確認できる
-
-torch1系の場合、標準でインストールされるcudnn関係のDLLが古い(4000シリーズ未対応)為、対応版(cudnn8.7.0)に置き換える
-最新版(2023-03-19現在だと8.8.1)に置き換えることでさらなる高速化が期待できるかも。
-
-+https://developer.nvidia.com/rdp/cudnn-download より Local Installer for Windows (Zip) をダウンロードする~~※NVIDIA開発者アカウントが必要
-+ダウンロードしたzipファイル(cudnn-windows-x86_64-8.7.0.84_cuda11-archive.zip)を展開し、binフォルダ内の7ファイルを取り出す
-+stable-diffusion-main\venv\Lib\site-packages\torch\lib 内に上書きコピーする
-[END]
-
 * ハードウェアアクセラレーションによるGPUスケジューリング を無効にする
 VRAM消費を減らす効果がある。速度も向上するかも。
 やり方は[[こちら>>https://win11lab.info/win11-gpu-scheduling/#:~:text=%E6%9C%89%E5%8A%B9%E3%80%81%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95&text=%E5%B7%A6%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%88%E3%82%8A%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92,%E3%82%AA%E3%83%B3%E3%80%81%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%AA%E3%83%95%E3%81%AB%E3%81%97%E3%81%BE%E3%81%99%E3%80%82]]
 [[公式wiki>>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Optimizations]]にも記載がある
 [[redditによれば>>https://www.reddit.com/r/StableDiffusion/comments/y71q5k/4090_cudnn_performancespeed_fix_automatic1111/jcx2jx5/?context=8&depth=9]]速度が30%くらいかわることがあるとかないとか
+副作用としてDLSS3のフレーム生成が使えなくなる？
 
 * モデルを軽量化する
 
@@ -264,7 +251,7 @@ fp16化の副作用として、modules.devices.NansException が発生する。
 特にNovelAI系のVAEで発生しやすい(NovelAI,ClearVAE1.0,Nenhanceなどが該当)。
 
 対策としては、fp32で計算するように強制する。(高速化としては本末転倒だけど)
- --no-half や--no-half-vae を追加する。速度は落ちる。
+ --no-half や--no-half-vae を追加する。速度は落ちてVRAM消費が大幅に増加する。
 
 たまに真っ黒画像が出てもいいから高速化したいのであれば、
 disable-nan-checkを追加する手もある。
@@ -328,7 +315,8 @@ UIからオフにするだけではダメ
 Euler a以外(収束するサンプラー)で再現できないか試す。
 DPM++ 2M Karrasは15Stepsでもそれなりに映えるのでおすすめ。
 UniPCはもっと良い感じ。
-LCMやTurboはさらに速い。10steps未満でまともな絵がでる。
+SchedulerにAlign Your Stepを使うとさらに良くなる。
+LCM、TurboやHyper-SDはさらに速い。10steps未満でまともな絵がでる。
 
 * メインメモリを使う
 
@@ -377,15 +365,23 @@ https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT
 
 けど以下の重大な欠点があるのでベンチ以外で使い道はないかな
 -あらかじめ設定した解像度のみ使用可能
--TensorRTモデル変換に時間がかかるしVRAM消費が激しい
+-TensorRTモデル変換に時間がかかるしVRAM消費が激しい(しかもOOMになるとWebUI本体がフリーズ)
 -LoRAはTensorRT変換で埋め込んで使えるが1つしか使えない
 -ControlNetのようなU-netに干渉するものは一切使えない
 -Extensionのインストールが不安定で失敗しやすい
+
+* LyCORIS Extensionを削除する
+1111がLyCORISに標準で対応したためこのExtensionは不要。
+このExtensionは今となっては生成を遅くするだけ。
 
 * venvをいったん消して作り直す
 Windows再インストール並みの最終手段。
 最新の1111に必要なものしか入らなくなるので軽くなる、かも。
 Extension試しまくってると肥大化するので月イチくらいでやるといいかも。
+
+* 別のUIを使う
+1111のWebUIを速くする方法でこれを書くのは本末転倒だが、ほかのUIを使う手もある。
+AUTOMATIC1111のWebUIは最近になって速度が改善されたがメモリ消費の多さは変わっていない。Forgeのほうが速くて省VRAM、ComfyUIは速くて省メモリで省VRAM。
 
 * GPUを買い替える
 ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。
