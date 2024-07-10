@@ -21,10 +21,42 @@
 
 #contents
 *2024年
+**2024-07-09 Paints-UNDO公開
+ControlNetやstable-diffusion-webui-forgeの作者lllyasvielにより、Paints-UNDOという完成絵からその画像の描画シーケンスを出力するモデルおよび、シーケンスを動画として保存するコードが公開された。
+詳細はリポジトリ参照
+https://github.com/lllyasviel/Paints-UNDO
+
+READMEではAnacondaでのインストール方法が記載されているが、Python3.10.XのCuda環境下で動かしたい場合の手順は以下の通り(3.11は確認していない、3.12はpytorchの対応状況の問題で十中八九2024/7/10現在は動かない)
+
+インストールしたいディレクトリへ移動し
+=|BOX|
+git clone https://github.com/lllyasviel/Paints-UNDO.git
+cd Paints-UNDO
+python -m venv venv
+.\venv\scripts\activate
+pip install xformers
+pip install -r requirements.txt
+pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu121
+python gradio_app.py
+||=
+
+２回目以降起動したいときは
+=|BOX|
+.\venv\scripts\activate
+python gradio_app.py
+||=
+
+動画を作成すると、最後にffprobeが見つからないというエラーが出るが、resultsディレクトリ内にmp4ファイルが生成されている。
 
 **2024-07-08 PonyでのLoRA学習時スコアタグの使用について
 PonyでLoRAを学習する際に、学習画像のタグにスコアタグ(score_9_upなど)を入れることで学習効率を上げる方法が話題に上る。
 [[PonyDiffusionV6XLTips>PonyDiffusionV6XLTips#content_8_12]]へいくつかレスを抜粋した。
+
+**2024-07-07 可能な限りA1111の変更点を取り込んだforgeのフォークが公開される
+https://github.com/Panchovix/stable-diffusion-webui-forge/tree/dev_upstream_a1111
+[[I've forked Forge and updated (the most I could) to upstream dev A1111 changes!>https://www.reddit.com/r/StableDiffusion/comments/1dxbadd/ive_forked_forge_and_updated_the_most_i_could_to/]]（フォークしたPanchovix氏による詳細が記載されたredditスレッド）
+> Forgeが5ヶ月間アップデートされなかった後、A1111からの重要なアップデートや小さなパフォーマンスアップデートがたくさん欠けていたので、必要であれば、より使いやすく、より時代に合うようにアップデートすべきだと判断しました。（DeepLによる翻訳）
+とのことで、DoRAサポートやスケジューラの分離など、forgeの更新が停滞していた時期にA1111に入った大小の変更が適用されている（個人的にはavifのサポートが嬉しい）。ただしSD3対応などは含まれていない。導入方法などの詳細は上記redditを参照すると良いだろう。
 
 **2024-07-06 Stability AIがSD3のライセンスを変更
 https://stability.ai/news/license-update
