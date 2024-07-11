@@ -353,10 +353,11 @@ https://sourceforge.net/projects/imdisk-toolkit/
 どっちが速いか比較検討してみるのが良さそう。
 * Linuxに入れる
 Windows上の仮想化ではなく実際にインストールする。
-推論は多少高速化するかも？学習は速くなる。
-虎の子のゲーミングPCでは厳しいやね
+Ubuntu24.04 LTS、Python 3.11.9、Torch2.3.1での環境では、推論はほとんど変化なし。学習は速くなる?
+また、1111のメモリ消費量がWindowsより少なくWinにあった消費量が跳ね上がる現象がないっぽい。
+
 Windowsが入っていない空っぽのSSDに入れるか、サブ機とかお古になったら検討してもいいかも
-なおインストールが簡単かは謎
+なおインストールは原則手動だし、途中でUbuntuのUI(gdm3)が壊れてリカバリーモードでgdm3を再インストールしたりとかなり面倒
 
 * TensorRTを使う
 https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT

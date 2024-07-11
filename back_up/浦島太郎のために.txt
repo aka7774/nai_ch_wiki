@@ -26,7 +26,7 @@ ControlNetやstable-diffusion-webui-forgeの作者lllyasvielにより、Paints-U
 詳細はリポジトリ参照
 https://github.com/lllyasviel/Paints-UNDO
 
-READMEではAnacondaでのインストール方法が記載されているが、Python3.10.XのCuda環境下で動かしたい場合の手順は以下の通り(3.11は確認していない、3.12はpytorchの対応状況の問題で十中八九2024/7/10現在は動かない)
+READMEではAnacondaでのインストール方法が記載されているが、WindowsのPython3.10.XのCuda環境下で動かしたい場合の手順は以下の通り(3.11は確認していない、3.12はpytorchの対応状況の問題で十中八九2024/7/10現在は動かない)
 
 インストールしたいディレクトリへ移動し
 =|BOX|
