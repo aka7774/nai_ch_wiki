@@ -1,8 +1,10 @@
 #contents
 
-* 注意
-''このページは古くなっていることにご留意ください。''
-** torch2
+* torch2
+現在、torch2がデフォルトになりました。
+Hyper-SDなどの改造不要の最適化やパラメータの調整で速くできるのでtorch.compile改造はおすすめしません。
+
+[+] 古い情報
 torch2化、torch.compile改造ともにVRAMの消費量が増えます。
 高解像度生成などでVRAMがカツカツな人は取捨選択が必要かも。
 何倍も速くなるわけではない。xformersよりは良いかなってくらい。
@@ -12,8 +14,9 @@ torch.compile()でさらに高速化するが、以下の欠点があるので�
 - モデル、解像度、Batch size変更の度にコンパイルされる ~~ &size(12){キャッシュされるので毎回コンパイルされるわけではない}
 - WebUIにとって想定外の処理のため不安定。
 - Linuxのみ対応
+[END]
 
-** CUDA使用率
+* CUDA使用率
 画像生成速度には、CUDA使用率が大きく影響する。
 アスカベンチで同じグラボの他人の結果より明らかに遅い場合、なんらかの原因でCUDAがフルに使われていない可能性もある。
 （これを確認する場合、Win11なら、GPUスケジューリングをオフにしてタスクマネージャーで項目をクリックしてCudaに切り替えるのが簡単）
@@ -157,7 +160,7 @@ venvを削除してからWebUIを起動する手もあり
 ||=
 
 
-* torch.compile
+* torch.compile(非推奨)
 NVIDIAがTensorRTを使えるようにするExtensionを公開したのでそちらを推奨。改造不要でTensorRTが使える。
 
 以下は上級者向け。
@@ -238,6 +241,7 @@ VRAM消費を減らす効果がある。速度も向上するかも。
 副作用としてDLSS3のフレーム生成が使えなくなる？
 
 * モデルを軽量化する
+2024年現在fp16,pruned,safetensorsが主流になりwebuiの最適化が進み以下のことをしなくても十分速いと思われる。
 
 - ckptとvae.ptをsafetensorsに変換する
 -- 最近はckptよりsafetensorsで配布するほうが主流になった。
@@ -313,10 +317,10 @@ UIからオフにするだけではダメ
 * Stepsを減らす
 出来るだけ少ないStepsでも期待通りの絵が出る方法を模索する。
 Euler a以外(収束するサンプラー)で再現できないか試す。
-DPM++ 2M Karrasは15Stepsでもそれなりに映えるのでおすすめ。
-UniPCはもっと良い感じ。
-SchedulerにAlign Your Stepを使うとさらに良くなる。
-LCM、TurboやHyper-SDはさらに速い。10steps未満でまともな絵がでる。
+DPM++ 2Mは15Stepsでもそれなりに映えるのでおすすめ。
+%%UniPCはもっと良い感じ。%%実際はそうでもない。
+SchedulerにSimpleを使うとさらに良くなる。
+LCM、TurboやHyper-SDはさらに速い。出力を大きく変化させる代わりに10steps未満でまともな絵がでる。
 
 * メインメモリを使う
 
@@ -353,11 +357,13 @@ https://sourceforge.net/projects/imdisk-toolkit/
 どっちが速いか比較検討してみるのが良さそう。
 * Linuxに入れる
 Windows上の仮想化ではなく実際にインストールする。
-Ubuntu24.04 LTS、Python 3.11.9、Torch2.3.1での環境では、推論はほとんど変化なし。学習は速くなる?
-また、1111のメモリ消費量がWindowsより少なくWinにあった消費量が跳ね上がる現象がないっぽい。
+Ubuntu24.04 LTS、Python 3.11.9、Torch2.3.1での環境では、推論は2〜4%、学習は10%高速化した。VRAM消費は特筆すべき変化はなかった。
+またmevram有効時の1111のメモリ消費が激減。
+
+あと1111やsd-scriptsなどでcheckpoint読み込み中のメモリ消費が跳ね上がる現象がない。
 
 Windowsが入っていない空っぽのSSDに入れるか、サブ機とかお古になったら検討してもいいかも
-なおインストールは原則手動だし、途中でUbuntuのUI(gdm3)が壊れてリカバリーモードでgdm3を再インストールしたりとかなり面倒
+なおインストールは原則手動だし、途中でUbuntuのGUI(gdm3)が壊れてリカバリーモードでgdm3を再インストールしたりとかなり面倒
 
 * TensorRTを使う
 https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT

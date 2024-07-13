@@ -248,6 +248,8 @@ WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可
 学習も癖が強い。
 LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散しやすいので、LRを下げるかそれ以外のOptimizerの使用をおすすめする
 
+VAEはsdxl-vae-fp16-fixを使うかno-half-vaeをつけないとlatentキャッシュ中にNaN演算が発生する場合あり。
+
 **score学習
 Ponyで使用されている独特なクオリティタグ(score_9_upなど)をLoRA学習時のタグにも入れることにより、再現性を高める方法
 
