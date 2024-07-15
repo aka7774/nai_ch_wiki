@@ -1,0 +1,22 @@
+人物の造形、服飾や小物の種類、背景の造形などに影響を与えるタグ、
+一言でいうと絵のジャンルを決定づけるタグについて掲載する。
+
+画風(style)とは違うので注意。このページでは以下と定義して解説をする。
+-画風：テクスチャ(質感)を変えるもの
+-ジャンル：人物の造形、服飾や小物の種類、背景の造形を変えるもの
+
+* 単語集
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|意味|サンプル|
+|fantasy|ファンタジー|服装、背景ともに中世ヨーロッパ風ファンタジー的なデザインになる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HQ1syDQrp0-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/HQ1syDQrp0.png]]|
+|steampunk|スチームパンク|蒸気機関が異常発達した世界のジャンル名。服も背景も無駄にメーター付きがち。"steam punk"と間にスペースを入れてしまうとそれぞれの単語で解釈されて画面上に蒸気が出てきて反抗的な人物が出てきてしまうので必ず二つの単語は続けて記載すること。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4yph02BDYQ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4yph02BDYQ.png]]|
+|cyberpunk|サイバーパンク|近未来のディストピア(反理想郷)のジャンル名。服も背景も無駄に光る。"cyber punk"と間にスペースを入れるとそれぞれの単語で解釈され、cyberで反抗的な人物が出てくる。見た目的には似てるが"cyber punk"だと髪形がモヒカンになったりする。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1g3LnzCz_E-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1g3LnzCz_E.png]]|
+|science fiction|SF|danbooruの関係で"SF"では効かない。cyberpunkよりもずっと未来の宇宙世紀な感じの描写になる。ボディスーツになりがち。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/wSshKVzRi8-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/wSshKVzRi8.png]]|
+|hell|地獄|なんかマグマ流れたり、妖怪っぽいの出てきたり、女の子が悪魔っぽくなったりする。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CD7TIN5vpt-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/CD7TIN5vpt.png]]|
+|ninja  samurai  kimono|忍者、侍、着物|すべて服飾のタグではあるものの、どれか一つでも使うと背景も昔の日本風になる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/XylW3ySd5u-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/XylW3ySd5u.png]]|
+|punk|パンク|背景の柄が悪くなり服装や髪形がなんか反抗してそうな感じになる。何かしらの背景タグを他に指定していれば髪形や服装だけへの効果となりやすい。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/YldmqIAi8C-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/YldmqIAi8C.png]]|
+|sports|スポーツ|とりあえず入れると登場人物が謎のスポーツを始める。背景はスタジアムっぽくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/B9JLXq6Mw3-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/B9JLXq6Mw3.png]]|
+|three kingdoms|三国志|三国志っぽい背景、服装になる。モデルによってはエロゲに汚染された三国志が出てくる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/l13x1MkTGz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/l13x1MkTGz.png]]|
+|chibi|チビ|ジャンルとはちょっと違うけども人物、背景に影響のあるタグなのでここで解説。人物の頭身が低くなり、描画もポップになる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/foNJm1Snp2-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/foNJm1Snp2.png]]|
+|nostalgia|ノスタルジー|色があせ哀愁の漂う画風となり、19世紀風の服飾と背景になる。"nostalgy"でも一応効果はあるが、"nostalgia"のほうが効果が強い。Pony系モデルでは効かない。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WPLvYRMX6L-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/WPLvYRMX6L.png]]|
+|}

@@ -53,13 +53,14 @@ PonyでLoRAを学習する際に、学習画像のタグにスコアタグ(score
 [[PonyDiffusionV6XLTips>PonyDiffusionV6XLTips#content_8_12]]へいくつかレスを抜粋した。
 
 **2024-07-07 可能な限りA1111の変更点を取り込んだforgeのフォークが公開される
-https://github.com/Panchovix/stable-diffusion-webui-forge/tree/dev_upstream_a1111
+https://github.com/Panchovix/stable-diffusion-webui-reForge
 [[I've forked Forge and updated (the most I could) to upstream dev A1111 changes!>https://www.reddit.com/r/StableDiffusion/comments/1dxbadd/ive_forked_forge_and_updated_the_most_i_could_to/]]（フォークしたPanchovix氏による詳細が記載されたredditスレッド）
 > Forgeが5ヶ月間アップデートされなかった後、A1111からの重要なアップデートや小さなパフォーマンスアップデートがたくさん欠けていたので、必要であれば、より使いやすく、より時代に合うようにアップデートすべきだと判断しました。（DeepLによる翻訳）
 とのことで、DoRAサポートやスケジューラの分離など、forgeの更新が停滞していた時期にA1111に入った大小の変更が適用されている（個人的にはavifのサポートが嬉しい）。ただしSD3対応などは含まれていない。導入方法などの詳細は上記redditを参照すると良いだろう。
 
 **2024-07-06 Stability AIがSD3のライセンスを変更
 https://stability.ai/news/license-update
+日本語: https://ja.stability.ai/blog/license-update
 Stability AIはSD3 Mediumを"Stability AI Community License"という新しいライセンスのもと公開することにした。
  Our new Community License is now free for research, non-commercial, and commercial use. You only need a paid Enterprise license if your yearly revenues exceed USD$1M and you use Stability AI models in commercial products or services. 
 年間の収入が100万ドル(日本円で約1.5億円)未満であれば研究、非商用、商用問わず無料で使用できる。
