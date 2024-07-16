@@ -45,6 +45,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 
 --時間(計測値)は''Generateを押してからアスカが表視されるまでの時間''で、Time takenはWebUI中央下部に表示される値です。
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/d9JQSJo0XK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/d9JQSJo0XK.png]]
+--計測が面倒ならTime takenだけでもOK
 -- Time takenは秒単位で記入。不明な場合は時間(計測値)を転記して末尾に.をつけた。ソートすると速い順に並んで楽しい。
 
 ** 結果一覧
@@ -57,6 +58,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 2070 SUPER|8GB|Ryzen 7 5700G||26.5|--xformers --opt-channelslast --precision half --disable-nan-check|Ubuntu24.04 LTS(仮想化ではなくネイティブ環境),1.10.0-RC4,Python3.11.9,Torch2.3.1+cu121,xformers0.0.27|
 |RX7900XTX|24GB|Ryzen 9 7950X||18.1|--opt-sdp-no-mem-attention --opt-sdp-attention|version 1.9.4 / Windows11 / WSL2+Ubuntu 22.04.3 LTS / ROCm 6.1.3 / RAM64GB / Adrenalin Edition 24.6.1 / python 3.10.12 / torch 2.1.2+rocm6.1.3   遂にWSL2でROCmが使えるようになった|
 |RTX 4070 ti Super|16GB|Core i7 14700K||13.5| xformers TensorRT|version: v1.9.4 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.1.2+cu121 &#8192;&#8226;&#8192; xformers: 0.0.23.post1 &#8192;&#8226;&#8192; gradio: 3.41.2 &#8192;&#8226;&#8192; checkpoint: 89d59c3dde|
 |RTX 4070 Ti Super|16|Ryzen7 2700||57.7|--xformers|version: v1.9.3 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.1.2+cu121 &#8192;&#8226;&#8192; xformers: 0.0.23.post1 &#8192;&#8226;&#8192; gradio: 3.41.2 &#8192;&#8226;&#8192; checkpoint: 89d59c3dde 遅すぎて絶望した|
@@ -312,6 +314,7 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 2070 SUPER|8GB|Ryzen 7 5700G||24.3|--xformers --opt-channelslast --precision half --disable-nan-check|Ubuntu24.04 LTS(仮想化ではなくネイティブ環境),1.10.0-RC4,Python3.11.9,Torch2.3.1+cu121,xformers0.0.27|
 |RTX 2070 SUPER|8GB|Ryzen 7 5700G||25.2|-xformers --opt-channelslast --skip-python-version-check --precision "half"|1111のPRに来てる最適化関連を適用。Python3.11.7,Torch2.3.0,xformers0.0.26.post1|
 |RTX 4080|16GB|Ryzen 9 7900X||9.8|--xformers|Windows11/v1.7.0|
 |RTX 4080|16GB|Ryzen 5 5600G||10.3|--xformers|version:v1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 /&#8192;gradio: 3.41.2 / Windows10|
@@ -333,6 +336,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 2070 SUPER|8GB|Ryzen 7 5700G||23.6|--xformers --opt-channelslast --precision half --disable-nan-check|Ubuntu24.04 LTS(仮想化ではなくネイティブ環境),1.10.0-RC4,Python3.11.9,Torch2.3.1+cu121,xformers0.0.27|
 |RTX 4080|16GB|Ryzen 9 7900X||9.1|--xformers|Windows11|
 |RTX 4080|16GB|Ryzen 5 5600G||9.4|--xformers|version:v1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 /&#8192;gradio: 3.41.2 / Windows10|
 |RTX 3060|12GB|Ryzen 5500||36.2|--xformers --autolaunch --opt-channelslast --enable-insecure-extension-access|Ubuntu22.04.3LTS@WSL2@Windows11 PL70% / version:v1.6.0 / python:3.10.10 / torch:2.0.1+cu118 / xformers:0.0.23+b73c0f2.d20231011 / gradio: 3.41.2|
