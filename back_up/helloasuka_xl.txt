@@ -73,6 +73,11 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4070|12GB|Ryzen 5 5600X|94.74|ComfyUI　2.3.1+cu121||Powerlimit 70%|
+|RTX 4070|12GB|Ryzen 5 5600X|122.99|fooocus 2.4.3||Powerlimit 70%　modules/flags.pyを編集し、Step数を28に変更して実行　1枚生成ごとにモデルのロードを行うため時間ロスしている|
+|RTX 4070|12GB|Ryzen 5 5600X|102.3|f0.0.18v1.10.0RC-1.7.0||Powerlimit 70%|
+|RTX 3080Ti|12GB|Ryzen 7 5800X3D|85.8|f0.0.20.1-v1.10.0RC-latest-530-g51d5fa71||stable-diffusion-webui-reForge|
+|RTX 3080TI|12GB|Ryzen 7 5800X3D|91.5|f0.0.20.1-v1.10.0RC-latest-530-g51d5fa71||Powerlimit 80% stable-diffusion-webui-reForge|
 |RTX 4070Ti|12GB|Core i5-13600KF|90.6|f0.0.17v1.8.0rc-latest-472-gdcdfe717|--cuda-malloc --cuda-stream --pin-shared-memory --listen --enable-insecure-extension-access|Powerlimit 70%|
 |RTX 4070Ti|12GB|Core i5-13600KF|126.9|v1.9.3|--xformers --medvram-sdxl --api ---listen --enable-insecure-extension-access --opt-channelslast|Powerlimit 70%|
 |RTX 4070|12GB|Core i3-12100F|95.8|f0.0.17v1.8.0rc-latest-499-gb54df748|--cuda-malloc --cuda-stream --pin-shared-memory|dev_upstream_a1111|
