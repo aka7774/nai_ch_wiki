@@ -26,7 +26,8 @@ torch.compile()でさらに高速化するが、以下の欠点があるので�
 ちなみに、速度が速いほどCPUのシングル性能の影響が大きくなる。旧世代CPUを使っているなら最新世代のCPUに買い替えるのもあり。
 
 * モジュールによる高速化
-
+環境によりますが、xformersかsdpによって速度が変わることはないと思われます。
+[+] 古い情報
 2023-03-19現在、たぶんこの順で速い。
 
 1. torch2 cu118 --opt-sdp-no-mem-attention torch.compile(不安定)(Linux限定)
@@ -34,40 +35,14 @@ torch.compile()でさらに高速化するが、以下の欠点があるので�
 3. torch1 cu117 xformers cudnnのバージョンアップ
 
 ** torch2 cu118 --opt-sdp-no-mem-attention/--opt-sdp-attention
-
-RTX(2000〜4000番台)で高速化するらしい。
+xformersはnvidia限定だがこっちはRadeonでも動くはず。
 環境によっては--opt-sdp-attentionのほうが高速?
 
-&size(16){WebUIのTorchバージョンが2になったので以下の手順は不要になりました。}
-Attentionの最適化はWebUIの設定から有効化できます。
-[+]
-手順
-1.venv,repositoriesフォルダ削除 あるいはvenv上で pip uninstall torch torchvision -y
-2.git pullしてwebuiを最新版にする
-3.webui-user.batを以下に書き換えて実行。--xformersはつけないこと!
-=|BOX|
-@echo off
-
-set PYTHON=
-set GIT=
-set COMMANDLINE_ARGS=--opt-sdp-no-mem-attention --opt-channelslast
-set TORCH_COMMAND=pip install torch==2.0.1 torchvision --extra-index-url https://download.pytorch.org/whl/cu118
-
-call webui.bat
-||=
-5.起動したらウェブブラウザでhttp://127.0.0.1:7860にアクセス。一番下に"torch: 2.0.1+cu118"と記載があれば成功
-[END]
-*** プレビュー版のインストール方法
-あらかじめ古いバージョンをアンインストールしてから、venv内で以下のコマンドを実行する。
-> pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
-
 [+]詳細説明
-* torch2.0+cu118+SDP(要検証)
+* torch2.0+SDP(要検証)
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/8691
-torchが正式に2.0となったため使用できるようになった技術
-上記の「torchを2.0にする」と「利用するライブラリの更新(cu118=cuDNN8.8.0)」を同時に適用し、
-更にSDPというxformersと似た技術を適用することで高速化を図る。環境によっては変化が無いかも。
-RTX30,40にて効果を確認したが、1000番台ではxformers適用の方が速い可能性あり。
+SDP(Scaled Dot Product)というxformersと似た技術を適用することで高速化を図る。環境によっては変化が無いかも。
+GeForce RTXにて効果を確認したが、1000番台ではxformers適用の方が速い可能性あり。
 (txt2img,hires.fixで動作確認済)
 
 - SDPについて
@@ -120,6 +95,7 @@ RTX4090ほちい
 ||=
 [END]
 
+[END]
 
 ** xformers
 Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減少効果がある。
@@ -133,7 +109,7 @@ Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減
 *** 対応GPU
 
 - NVIDIA
-- GeForce GTX 1000、RTX2000シリーズ以降
+- GeForce GTX 1000(Pascal)、RTX 2000(Turing)シリーズ以降
 - GeForce 900番台以前でも動くけど逆効果だったという報告あり
 
 *** 導入方法
@@ -143,6 +119,9 @@ Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減
 古い環境から更新する場合
  set COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers
 venvを削除してからWebUIを起動する手もあり
+
+Torchバージョンが1111のデフォルトではない場合
+[[ここ>>https://github.com/facebookresearch/xformers/releases]]で対応するTorchバージョンを確認してから、「pip install xformers==x.x.x」でインストールする。
 
 *** 開発版をインストールする
  pip install --pre -U xformers
@@ -163,7 +142,7 @@ venvを削除してからWebUIを起動する手もあり
 * torch.compile(非推奨)
 NVIDIAがTensorRTを使えるようにするExtensionを公開したのでそちらを推奨。改造不要でTensorRTが使える。
 
-以下は上級者向け。
+以下は上級者向け。またWebUIのアプデで以下の手順が使えない可能性あり。
 (TensorRTみたいな感じで)モデルの事前コンパイルを行うことによって、
 生成処理を高速化する仕組みがtorch2には実装されている。
 これを1111で使えるように改造する。
@@ -241,7 +220,9 @@ VRAM消費を減らす効果がある。速度も向上するかも。
 副作用としてDLSS3のフレーム生成が使えなくなる？
 
 * モデルを軽量化する
-2024年現在fp16,pruned,safetensorsが主流になりwebuiの最適化が進み以下のことをしなくても十分速いと思われる。
+2024年現在、fp16,pruned,safetensorsでの配布(=すでに軽量化された状態)が主流になった。
+
+[+] 古い情報
 
 - ckptとvae.ptをsafetensorsに変換する
 -- 最近はckptよりsafetensorsで配布するほうが主流になった。
@@ -304,7 +285,10 @@ kl-f8のFP16化を埋め込んでモデルをfp16化して生成:21.45s,21.86s
 
 no-half系の引数つけてない限り''モデルもVAEも内部ではfloat16(half)で処理してる''から変わるはずがない。
 [END]
-* Extensionsの退避
+
+[END]
+
+* Extensionsの退避や削除
 しばらく使わないときは Dreambooth Extension を削除する(もう使ってない?)
 起動時間が劇的に変わる
 
@@ -314,13 +298,20 @@ Extensionにはinstall.pyが同梱されていて毎回起動するので、
 UIからオフにするだけではダメ
 フォルダごと別の場所に退避させとくとか、いっそバッサリ消すとか
 
+** LyCORIS Extensionを削除する
+1111がLyCORISに標準で対応したためこのExtensionは不要。
+このExtensionは今となっては生成を遅くするだけ。
+
 * Stepsを減らす
 出来るだけ少ないStepsでも期待通りの絵が出る方法を模索する。
-Euler a以外(収束するサンプラー)で再現できないか試す。
+末尾にa(ancestral)がつかないサンプラーで再現できないか試す。
 DPM++ 2Mは15Stepsでもそれなりに映えるのでおすすめ。
 %%UniPCはもっと良い感じ。%%実際はそうでもない。
 SchedulerにSimpleを使うとさらに良くなる。
 LCM、TurboやHyper-SDはさらに速い。出力を大きく変化させる代わりに10steps未満でまともな絵がでる。
+
+* WebUIを高速なストレージに入れる
+シーケンシャル3GB以/s上のSSDに配置することで読み込みを高速化する。大容量なSDXLに効果的。
 
 * メインメモリを使う
 
@@ -355,15 +346,16 @@ https://sourceforge.net/projects/imdisk-toolkit/
 
 以前はLinuxにするだけで1〜2割速くなると言われていたが、ドライバやTorchの最適化が進んで速度やメモリ消費の差が小さくなった。
 どっちが速いか比較検討してみるのが良さそう。
+
 * Linuxに入れる
 Windows上の仮想化ではなく実際にインストールする。
 Ubuntu24.04 LTS、Python 3.11.9、Torch2.3.1での環境では、推論は2〜4%、学習は10%高速化した。VRAM消費は特筆すべき変化はなかった。
-またmevram有効時の1111のメモリ消費が激減。
+またmevram有効時の1111のメモリ消費が激減し、生成開始と終了のもたつきが軽減し、ReForgeとほぼ同じ速度を出せるようになった。いいぞこれ
 
 あと1111やsd-scriptsなどでcheckpoint読み込み中のメモリ消費が跳ね上がる現象がない。
 
 Windowsが入っていない空っぽのSSDに入れるか、サブ機とかお古になったら検討してもいいかも
-なおインストールは原則手動だし、途中でUbuntuのGUI(gdm3)が壊れてリカバリーモードでgdm3を再インストールしたりとかなり面倒
+なお各種ライブラリ等のインストールは原則コマンド打ってやるし、途中でUbuntuのGUI(gdm3)が壊れてリカバリーモードでgdm3を再インストールしたりとかなり面倒
 
 * TensorRTを使う
 https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT
@@ -377,9 +369,6 @@ https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT
 -ControlNetのようなU-netに干渉するものは一切使えない
 -Extensionのインストールが不安定で失敗しやすい
 
-* LyCORIS Extensionを削除する
-1111がLyCORISに標準で対応したためこのExtensionは不要。
-このExtensionは今となっては生成を遅くするだけ。
 
 * venvをいったん消して作り直す
 Windows再インストール並みの最終手段。
@@ -388,12 +377,9 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 
 * 別のUIを使う
 1111のWebUIを速くする方法でこれを書くのは本末転倒だが、ほかのUIを使う手もある。
-AUTOMATIC1111のWebUIは最近になって速度が改善されたがメモリ消費の多さは変わっていない。Forgeのほうが速くて省VRAM、ComfyUIは速くて省メモリで省VRAM。
+AUTOMATIC1111のWebUIは最近になって速度が改善されたが、Windows版のメモリ消費の多さは変わっていない。Forgeのほうが速くて省VRAM、ComfyUIは速くて省メモリで省VRAM。
 
 * GPUを買い替える
 ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。
 場合によっては他のパーツの買い替えも必要になるが、最も効果的。
 (give me money:3000.0)
-
-
-
