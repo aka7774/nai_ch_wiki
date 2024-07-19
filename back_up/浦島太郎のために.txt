@@ -21,6 +21,11 @@
 
 #contents
 *2024年
+**2024-07-18 AI Reviewersが流行
+https://ai-reviewers.onrender.com/
+
+画像を読み込ませるとAIのキャラクターがその内容を審査し点数をつけてくれる。
+
 **2024-07-09 Paints-UNDO公開
 ControlNetやstable-diffusion-webui-forgeの作者lllyasvielにより、Paints-UNDOという完成絵からその画像の描画シーケンスを出力するモデルおよび、シーケンスを動画として保存するコードが公開された。
 詳細はリポジトリ参照
@@ -1926,6 +1931,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
