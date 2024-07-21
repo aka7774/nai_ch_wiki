@@ -193,12 +193,10 @@ eta (noise multiplier) for ancestral samplers:
 ただし、完全一致させたかったらソースコードを改造する必要あり。%%いまさらNAIを再現する必要はないと思うが・・・%%
 [[これだったかも。>https://rentry.co/nai_ancestral]]
 
-** ローカル版のサンプラー
-
-DPM++ 2M Karras
-DPM++ SDE Karras
-DPM++ 2M SDE Exponential
-DPM++ 2M SDE Karras
+** 1111WebUIのサンプラー
+DPM++ 2M
+DPM++ SDE
+DPM++ 2M SDE
 Euler a
 Euler
 LMS
@@ -210,27 +208,43 @@ DPM++ 2M
 DPM++ SDE
 DPM++ 2M SDE
 DPM++ 2M SDE Heun
-DPM++ 2M SDE Heun Karras
-DPM++ 2M SDE Heun Exponential
 DPM++ 3M SDE
-DPM++ 3M SDE Karras
-DPM++ 3M SDE Exponential
 DPM fast
 DPM adaptive
-LMS Karras
-DPM2 Karras
-DPM2 a Karras
-DPM++ 2S a Karras
+LMS
+DPM2
+DPM2 a
+DPM++ 2S a
 Restart
 DDIM
 PLMS
 UniPC
+LCM
+DDIM CFG++※1.10.0以降
 
-「DPM++ 2M Karras」は10stepsでも最低限見れる絵を出してくれるのでシード値探しに便利。
+DPM++系は10stepsでも最低限見れる絵を出してくれるのでシード値探しに便利。
 15stepsあれば破綻もそれなりに減らせるので低スぺ民の味方かも知れない。
 PLMS、LMSやHeunは遅い。
 
 ちなみに、Settings->Sampler parametersで特定のサンプラーを非表示にできる。
+
+** 1111WebUIのスケジューラー
+Automatic(自動)
+Uniform
+Karras
+Exponential
+SGM Uniform
+KL Optimal※1.10.0以降
+Align Your Steps※1.10.0以降
+Simple※1.10.0以降
+Normal※1.10.0以降
+Beta※1.10.0以降
+DDIM
+
+Uniformは収束が速いがノイズや細部のアーティファクトが目立つ。SGM Uniformはさらにノイズが目立つ。
+Align Your Stepsは収束が速いが低ステップで破綻が目立つ。
+Simpleは収束が早く破綻もノイズも少ない。
+
 
 ** Settingsにetaが2つあるけどどっち？
 
@@ -239,6 +253,7 @@ PLMS、LMSやHeunは遅い。
 DDIMかPLMSが「for DDIM」で、それ以外が「for ancestral samplers」っぽい。
 
 ** CLIP Skipについて
+SDXLでは使用されない(2がデフォルトになっている)
 数値を上げると文章の解釈が大雑把になる。イラストは2が良いとされる。
 
 モデルはanimefull-final-prunedで試した。生成したのはとある版権キャラ。
@@ -275,7 +290,7 @@ CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打�
 すでに()がついている場合、()の範囲内どこでもよいのでカーソルを置いてCTRL+↑or↓で数値が調整できる。
 このとき、エラーが出る場合があるが、気にしなくていい。
 
-** NovelAIのプロンプトを真似る
+** NovelAIのプロンプトを真似る(SD1)
 
 ポジティブプロンプト欄の先頭に「masterpiece, best quality,」をつける(Add Quality Tagsと同じ意味)
 ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry」をつける(UC L+Bと同じ意味)
