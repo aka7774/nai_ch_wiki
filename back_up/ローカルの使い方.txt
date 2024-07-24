@@ -241,6 +241,7 @@ Normal※1.10.0以降
 Beta※1.10.0以降
 DDIM
 
+Automaticは各サンプラーのデフォルトのスケジューラが使用される。大体KarrasかExponential
 Uniformは収束が速いがノイズや細部のアーティファクトが目立つ。SGM Uniformはさらにノイズが目立つ。
 Align Your Stepsは収束が速いが低ステップで破綻が目立つ。
 Simpleは収束が早く破綻もノイズも少ない。
@@ -253,7 +254,7 @@ Simpleは収束が早く破綻もノイズも少ない。
 DDIMかPLMSが「for DDIM」で、それ以外が「for ancestral samplers」っぽい。
 
 ** CLIP Skipについて
-SDXLでは使用されない(2がデフォルトになっている)
+SDXLでは使用されない(2が標準)
 数値を上げると文章の解釈が大雑把になる。イラストは2が良いとされる。
 
 モデルはanimefull-final-prunedで試した。生成したのはとある版権キャラ。
