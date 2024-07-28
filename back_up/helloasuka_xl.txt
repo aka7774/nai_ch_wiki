@@ -73,6 +73,9 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3060|12GB|Ryzen 7 5700G|225.1|1.10.1|--opt-sdp-attention|A: 8.62 GB, R: 11.03 GB, Sys: 12.0/12 GB (100.0%)|
+|RTX 4090|24GB|Core i9-14900F|44.6|1.10.1|--opt-sdp-attention||
+|RTX 4070|12GB|Core i3-12100F|92.72|ComfyUI Revision: 2416 [4ba7fa02]|||
 |RTX 4070 SUPER|12GB|Core i5 12400|105.2|AUTOMATIC1111 1.9.4|--no-half-vae --opt-sdp-attention --opt-sdp-no-mem-attention|ToMe適用|
 |RTX 4070 SUPER|12GB|Core i5 12400|107.7|AUTOMATIC1111 1.9.4|--no-half-vae  --opt-sdp-attention --opt-sdp-no-mem-attention||
 |RTX 3050|6GB|Core i5-13500|493.1|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|

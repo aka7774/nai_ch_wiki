@@ -58,8 +58,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
-|RTX|||||||
-|4070|||||||
+||||||||
+||||||||
 |RTX 2070 SUPER|8GB|Ryzen 7 5700G||26.5|--xformers --opt-channelslast --precision half --disable-nan-check|Ubuntu24.04 LTS(仮想化ではなくネイティブ環境),1.10.0-RC4,Python3.11.9,Torch2.3.1+cu121,xformers0.0.27|
 |RX7900XTX|24GB|Ryzen 9 7950X||18.1|--opt-sdp-no-mem-attention --opt-sdp-attention|version 1.9.4 / Windows11 / WSL2+Ubuntu 22.04.3 LTS / ROCm 6.1.3 / RAM64GB / Adrenalin Edition 24.6.1 / python 3.10.12 / torch 2.1.2+rocm6.1.3   遂にWSL2でROCmが使えるようになった|
 |RTX 4070 ti Super|16GB|Core i7 14700K||13.5| xformers TensorRT|version: v1.9.4 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.1.2+cu121 &#8192;&#8226;&#8192; xformers: 0.0.23.post1 &#8192;&#8226;&#8192; gradio: 3.41.2 &#8192;&#8226;&#8192; checkpoint: 89d59c3dde|
