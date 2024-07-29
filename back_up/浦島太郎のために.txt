@@ -21,6 +21,12 @@
 
 #contents
 *2024年
+**2024-07-24 Eular Smeaなどいくつかの新サンプラーが話題に挙がる
+[[reForge>https://github.com/Panchovix/stable-diffusion-webui-reForge]]や、[[EasySdxlWebUi>https://github.com/Zuntan03/EasySdxlWebUi]]に採用された新サンプラーが話題に挙がっていた。
+オリジナルA1111 WebUIやForge(記述者は動作未確認)で使用したい場合は、Extensionとして以下のリポジトリからインストールすると使用可能
+
+https://github.com/licyk/advanced_euler_sampler_extension
+
 **2024-07-23 CivitaiがSD3の禁止を解除
 Civitaiはライセンスなどの懸念によりSD3のモデルやLoRAの公開を禁止としていたが、解決されたとして禁止を解除した。
 ライセンスを取得しない方針のためCivitai上ではSD3を使用しての生成はできない。

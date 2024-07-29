@@ -58,6 +58,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RTX 4060 Ti|16GB|Ryzen 9 7900X||23.4|--xformers|version: v1.10.1 / python: 3.10.11 / torch: 2.1.2+cu121 /xformers: 0.0.23.post1 / gradio: 3.41.2 Windows10|
 ||||||||
 ||||||||
 |RTX 2070 SUPER|8GB|Ryzen 7 5700G||26.5|--xformers --opt-channelslast --precision half --disable-nan-check|Ubuntu24.04 LTS(仮想化ではなくネイティブ環境),1.10.0-RC4,Python3.11.9,Torch2.3.1+cu121,xformers0.0.27|

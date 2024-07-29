@@ -73,6 +73,14 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4000 Ada(AD103)|20GB|Core i3-10105|111.1|v1.10.1|--xformers --precision half|Powerlimit 70%|
+|RTX 4070 SUPER|12GB|Core i5 12400|105.6|AUTOMATIC1111 1.10.0|--no-half-vae --opt-sdp-no-mem-attention||
+|RTX 4070 SUPER|12GB|Core i5 12400|107.2|AUTOMATIC1111 1.10.0|--no-half-vae --opt-sdp-attention||
+|RTX 4070 SUPER|12GB|Core i5 12400|101.4|AUTOMATIC1111 1.10.0|--no-half-vae --xformers|ToMe適用|
+|RTX 4070 SUPER|12GB|Core i5 12400|101.5|AUTOMATIC1111 1.10.0|--no-half-vae --xformers||
+|RTX 4070 SUPER|12GB|Core i5 12400|127.8|AUTOMATIC1111 1.10.0|--no-half-vae|ToMe適用|
+|RTX 4070 SUPER|12GB|Core i5 12400|125.8|AUTOMATIC1111 1.10.0|--no-half-vae||
+|RTX 4070ti|12GB|Ryzen 5700X|89.1|1.10.0||A: 8.63 GB, R: 11.24 GB, Sys: 12.0/11.9941 GB (100.0%) インストール直後でclip skip等誤差があるかも|
 |RTX 3060|12GB|Ryzen 7 5700G|225.1|1.10.1|--opt-sdp-attention|A: 8.62 GB, R: 11.03 GB, Sys: 12.0/12 GB (100.0%)|
 |RTX 4090|24GB|Core i9-14900F|44.6|1.10.1|--opt-sdp-attention||
 |RTX 4070|12GB|Core i3-12100F|92.72|ComfyUI Revision: 2416 [4ba7fa02]|||
