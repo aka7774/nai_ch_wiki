@@ -21,7 +21,7 @@
 
 #contents
 *2024年
-**2024-07-24 Eular Smeaなどいくつかの新サンプラーが話題に挙がる
+**2024-07-24 Euler SMEAなどいくつかの新サンプラーが話題に挙がる
 [[reForge>https://github.com/Panchovix/stable-diffusion-webui-reForge]]や、[[EasySdxlWebUi>https://github.com/Zuntan03/EasySdxlWebUi]]に採用された新サンプラーが話題に挙がっていた。
 オリジナルA1111 WebUIやForge(記述者は動作未確認)で使用したい場合は、Extensionとして以下のリポジトリからインストールすると使用可能
 
@@ -29,7 +29,7 @@ https://github.com/licyk/advanced_euler_sampler_extension
 
 **2024-07-23 CivitaiがSD3の禁止を解除
 Civitaiはライセンスなどの懸念によりSD3のモデルやLoRAの公開を禁止としていたが、解決されたとして禁止を解除した。
-ライセンスを取得しない方針のためCivitai上ではSD3を使用しての生成はできない。
+だがライセンスを取得しない方針のためCivitai上ではSD3を使用しての生成はできない。
 https://civitai.com/articles/6221/sd3-unbanned-community-decision-on-its-future-at-civitai
 
 **2024-07-18 AI Reviewersが流行
@@ -1942,6 +1942,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
