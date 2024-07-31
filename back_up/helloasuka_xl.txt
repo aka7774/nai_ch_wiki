@@ -73,6 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4070ti|12GB|Ryzen 5700X|81.7|f1.0.2v1.10.1-previous-47-gf052fabd||インストール直後|
 |RTX 4090|24GB|Core i9-14900F|42.0|f1.0.2v1.10.1-previous-40-g9cb69baf|||
 |RTX 4000 Ada(AD103)|20GB|Core i3-10105|111.1|v1.10.1|--xformers --precision half|Powerlimit 70%|
 |RTX 4070 SUPER|12GB|Core i5 12400|105.6|AUTOMATIC1111 1.10.0|--no-half-vae --opt-sdp-no-mem-attention||
