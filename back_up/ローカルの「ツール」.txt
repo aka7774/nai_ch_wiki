@@ -110,7 +110,18 @@ python fix_position_ids.py --model E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3
 
 * プラグイン
 
-** Krita
+** krita ai diffusion
+ペイント系ツールKritaにAI画像生成の機能を追加するプラグイン
+- https://github.com/Acly/krita-ai-diffusion
+プラグインにComfyUIサーバーをインストールする機能が付いているので、初心者から中級者まで幅広く使える。
+インストール方法は以下を参照
+- https://www.interstice.cloud/plugin
+【注意】kritaaidiffusion.comというパクリサイトがあるが利用しないこと。
+krita-ai-diffusionの作者のAcly氏が無関係と明言している。
+
+** auto-sd-paint-ext (旧名 auto-sd-krita)
+KritaからAUTOMATIC1111を外部コールするプラグイン(但し、最近更新されていない)
+
 インストールは原則 Install Guide のとおりにやればいけるはず
 - https://github.com/Interpause/auto-sd-paint-ext/wiki/Install-Guide 
 
@@ -292,3 +303,4 @@ png2jpg改
 https://mega.nz/folder/fVYhCLZa#ZDKcdjMxmjYGtRLvNDRwtA
 
 ||=
+
