@@ -1,6 +1,15 @@
 #contents
 
-* 簡単剥ぎコラ（V3向け）
+* 射精差分（Director Tools）
+- 射精前画像を生成する（例：1girl, 1boy, megurine luka, vocaloid, nsfw, large breasts, nipples, paizuri, penis, ）
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/r3NhS_llkk-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/r3NhS_llkk.png]]
+- Director Toolsへ転送する（&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zvNp1C_6mu.png)）
+- ツールでEmotion（感情）を選び、Emotion（感情）をLove（愛、好き）かAroused（興奮）あたり（強度は任意）にしてプロンプトに ejaculation, cum, などを追加
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tKQTVnT_kP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tKQTVnT_kP.png]]
+
+上記のことはinpaintでもできるが、より手軽になった
+
+* 簡単剥ぎコラ（V3向け、Inpaint）
 - 剥ぎたい画像を用意する
 - Add a Base Img （参照用画像を追加）&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hAulwqUFFx.png)でアップロードする
 - Image2Imageを選択
@@ -9,6 +18,14 @@
 - プロンプトに好きな要素を入れる（例: nsfw, nude, pussy, nipples, large breasts, cum on breasts, pussy juice, navel, ）
 - 生成する
 - 以上
+
+* 簡単剥ぎコラ（Director Tools）
+Director Toolsの登場で↑よりさらに簡単になった
+- [[Director Toolsのページ>https://novelai.net/imagetools]]に行く
+- ツールでEmotion（感情）を選び、剥ぎたい画像をuploadボタン&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3rrk3GWTeR.png)でアップロード
+- 表情を自由に選び、プロンプトに剥ぎ要素を入れる（例: nsfw, nude, pussy, nipples, large breasts, cum on breasts, pussy juice, navel, ）
+- 生成する
+
 
 * 惜しい画像を修正する（V3向け）
 「構図は完璧だけど、指が多い/欠損してるor余計な絵の破綻がある…」という絵を捨てるのはちょっと待った。inpaintで修正すれば高確率で直してくれる。
