@@ -24,10 +24,12 @@
 **2024-08-01 Black Forest Labsにより画像生成AIモデル「FLUX.1」発表
 Stable Diffusionの元開発者が設立したベンチャー起業Black Forest Labsが、画像生成AIモデル「FLUX.1」を発表した。
 API経由での有料画像生成に加え、ライセンスにより使用可能範囲が分かれたモデルデータも同日に公開し、Huggingfaceからダウンロードできる。公開日時点ではComfyUIで画像生成が可能。
+なお、パラメータ数が12Bもあるため推論には大容量のVRAM(12GB以上?)が必要。
 https://blackforestlabs.ai/announcing-black-forest-labs/
 https://huggingface.co/black-forest-labs
 日本語での記事 https://ascii.jp/elem/000/004/213/4213683/
 ComfyUIでの使用法(8/2追記) https://comfyanonymous.github.io/ComfyUI_examples/flux/
+Zuntan03(各種easyインストーラの作者)によるインストール用バッチファイル(8/7追記) https://x.com/Zuntan03/status/1820046015023722617
 
 **2024-07-24 Euler SMEAなどいくつかの新サンプラーが話題に挙がる
 [[reForge>https://github.com/Panchovix/stable-diffusion-webui-reForge]]や、[[EasySdxlWebUi>https://github.com/Zuntan03/EasySdxlWebUi]]に採用された新サンプラーが話題に挙がっていた。
@@ -99,10 +101,11 @@ Stability AIはSD3 Mediumを"Stability AI Community License"という新しい�
 続報：https://www.reddit.com/r/StableDiffusion/comments/1dp2as9/update_and_faq_on_the_open_model_initiative_your/
 
 **2024-06-20 スレ発の手書きフォントが公開される
-ダウンロード：https://tiananmen-square.booth.pm/items/5848321
+購入(500円)：https://tiananmen-square.booth.pm/items/5848321
+現在はmegaのダウンロードリンクは削除されておりboothでの有料販売となっています。
 
 https://fate.5ch.net/test/read.cgi/liveuranus/1718722445/774
-====
+=|BOX|
 774: 警備員[Lv.42] (ﾜｯﾁｮｲ 1acc-Fyfa) sage 2024/06/20(木) 22:40:00.63 ID:1zaStuBA0 
 https://mega.nz/file/gJ1DmS5b#s5FpmhxfKujG4ST8hKQ_hN8UTJGJfvuXybWoOXc9ufY
 
@@ -113,21 +116,20 @@ https://mega.nz/file/gJ1DmS5b#s5FpmhxfKujG4ST8hKQ_hN8UTJGJfvuXybWoOXc9ufY
 テンキーに「あ」「は」「ん」のバリエーション
 +-*/にハート
 小文字英aiueoに濁音つきのアイウエオ
-
-&ref(https://i.imgur.com/ajoC51a.jpeg,600)
-====
+https://i.imgur.com/ajoC51a.jpeg
+||=
 https://fate.5ch.net/test/read.cgi/liveuranus/1718722445/776
-====
+=|BOX|
 776: 警備員[Lv.42] (ﾜｯﾁｮｲ 1acc-Fyfa) sage 2024/06/20(木) 22:44:28.07 ID:1zaStuBA0 
 >>774
 商用利用OKやから基本好きに使ってくれてええで。
 フォント自体の再配布や販売のみ禁止でたのむで
 このフォントが売りに出されるときはワイが売るときだけや
-====
+||=
 https://fate.5ch.net/test/read.cgi/liveuranus/1718944727/158
-====
+=|BOX|
 158: 警備員[Lv.43] (ﾜｯﾁｮｲ 1a56-Fyfa) sage 2024/06/21(金) 22:07:34.16 ID:iyTJupHe0 
-&ref(https://i.imgur.com/iSzRGU4.jpeg,600)
+https://i.imgur.com/iSzRGU4.jpeg
 
 https://tiananmen-square.booth.pm/items/5848321
 
@@ -136,6 +138,8 @@ https://tiananmen-square.booth.pm/items/5848321
 改めておいておくで。
 
 しばらくしたら有料にするかもしれんでそれより前にダウンロードしておいてな
+||=
+
 **2024-06-19 ComfyUI、独立した団体を設立すると宣言
 当該ポスト：https://x.com/ComfyUI/status/1803109283263029616
 公式サイト：https://www.comfy.org/
@@ -168,8 +172,7 @@ SD3の商用ライセンスが曖昧なことなどを理由に、SDXLがベー�
 デモページ：https://huggingface.co/spaces/stabilityai/stable-diffusion-3-medium
 StabilityAIが開発するStable Diffusionの最新版が公開された。今回公開されたのはパラメータ数20億のMedium。
 従来のSDより破綻が減少し、プロンプトへの忠実度が改善した。また文字を正しく生成できるようになった。
-リリース時点で対応しているWebUIはComfyUIのみ。またモデルのダウンロードにはHuggingfaceのユーザー登録が必要。
-※商用利用するには有償のライセンスが必要
+現在対応しているWebUIはComfyUIと1111のwebui。またモデルのダウンロードにはHuggingfaceのユーザー登録が必要。
 
 //性能について書かれていたがお気持ちだったので削除
 
