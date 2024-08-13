@@ -21,6 +21,13 @@
 
 #contents
 *2024年
+**2024-08-11 Forgeが大幅に機能強化される
+
+https://github.com/lllyasviel/stable-diffusion-webui-forge
+
+FLUX.1への対応などさまざまな機能が強化された。代わりに動作しなくなった拡張機能もある模様。
+FLUX.1のcheckpointは[[flux1-schnell-bnb-nf4.safetensors>https://huggingface.co/silveroxides/flux1-nf4-weights/blob/main/flux1-schnell-bnb-nf4.safetensors]]の使用が推奨されているほか、[[flux1-dev-fp8.safetensors>https://huggingface.co/lllyasviel/flux1_dev/blob/main/flux1-dev-fp8.safetensors]]も使用できる。
+
 **2024-08-01 Black Forest Labsにより画像生成AIモデル「FLUX.1」発表
 Stable Diffusionの元開発者が設立したベンチャー起業Black Forest Labsが、画像生成AIモデル「FLUX.1」を発表した。
 API経由での有料画像生成に加え、ライセンスにより使用可能範囲が分かれたモデルデータも同日に公開し、Huggingfaceからダウンロードできる。公開日時点ではComfyUIで画像生成が可能。
@@ -30,6 +37,7 @@ https://huggingface.co/black-forest-labs
 日本語での記事 https://ascii.jp/elem/000/004/213/4213683/
 ComfyUIでの使用法(8/2追記) https://comfyanonymous.github.io/ComfyUI_examples/flux/
 Zuntan03(各種easyインストーラの作者)によるインストール用バッチファイル(8/7追記) https://x.com/Zuntan03/status/1820046015023722617
+詳細は[[FLUX1tips]]に。
 
 **2024-07-24 Euler SMEAなどいくつかの新サンプラーが話題に挙がる
 [[reForge>https://github.com/Panchovix/stable-diffusion-webui-reForge]]や、[[EasySdxlWebUi>https://github.com/Zuntan03/EasySdxlWebUi]]に採用された新サンプラーが話題に挙がっていた。
@@ -1953,6 +1961,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 

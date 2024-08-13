@@ -1,0 +1,26 @@
+*FLUX.1とは?
+Stable Diffusionの元開発者が設立したベンチャー起業Black Forest Labsが開発している画像生成AIモデル。
+API経由での有料画像生成に加え、ライセンスにより使用可能範囲が分かれたモデルデータも公開しており、Huggingfaceからダウンロードできる。
+- 公式サイト：https://blackforestlabs.ai/
+- huggingface：https://huggingface.co/black-forest-labs
+
+*FLUX.1で画像生成するには
+2024年8月13日現在、ComfyUIとForge（v2.0〜）で利用できる。
+ローカル生成にはVRAM12GB↑推奨（12GB未満でも生成自体は可能だが非常に時間がかかる）
+
+**ComfyUI
+https://comfyanonymous.github.io/ComfyUI_examples/flux/
+または、Zuntan03氏(各種easyインストーラの作者)によるインストール用バッチファイルを利用してもよい。 https://x.com/Zuntan03/status/1820046015023722617
+**Forge
+プログラム：https://github.com/lllyasviel/stable-diffusion-webui-forge
+Checkpoint：https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/981
+こちらもZuntan03氏によるEasyForgeを利用できる。 https://x.com/Zuntan03/status/1822555275380871407
+*FLUX.1のモデルの種類とライセンス
+- Pro：APIを通じてのみ提供される最上位モデル。商用利用可
+- Dev：モデルが公開されている。非商用でのみ利用可
+- Schnell：高速・軽量な公開モデル。商用利用可
+
+APIを介して利用する際は利用料金が発生する。
+
+
+
