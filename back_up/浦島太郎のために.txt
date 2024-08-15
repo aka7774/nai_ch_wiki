@@ -21,6 +21,12 @@
 
 #contents
 *2024年
+**2024-08-14 Grok-2がFLUX.1を採用する
+X（旧Twitter）が提供するLLM、Grok-2にFLUX.1による画像生成が搭載された。
+どのバージョンなのかは公表されていない。
+https://x.ai/blog/grok-2
+
+
 **2024-08-11 Forgeが大幅に機能強化される
 
 https://github.com/lllyasviel/stable-diffusion-webui-forge
