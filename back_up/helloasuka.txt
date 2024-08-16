@@ -58,6 +58,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX7900GRE|16GB|Ryzen 7 5700X||24.1|--opt-sdp-no-mem-attention --opt-sdp-attention|Version: v1.10.1, Windows11, WSL2+Ubuntu 22.04.4 LTS, ROCm 6.1.3, Adrenalin Edition 24.7.1|
+|RTX 2070 SUPER|8GB|Ryzen 7 5700G||24.0|--xformers --opt-channelslast --precision half --disable-nan-check|Torch2.4にしたらCPUボトルネックが減った？Ubuntu24.04 LTS(仮想化ではなくネイティブ環境),version: v1.10.1 &#8192;&#8226;&#8192; python: 3.11.9 &#8192;&#8226;&#8192; torch: 2.4.0+cu124 &#8192;&#8226;&#8192; xformers: 0.0.27.post2 &#8192;&#8226;&#8192; gradio: 3.41.2|
 |RTX 4060 Ti|16GB|Ryzen 9 7900X||23.4|--xformers|version: v1.10.1 / python: 3.10.11 / torch: 2.1.2+cu121 /xformers: 0.0.23.post1 / gradio: 3.41.2 Windows10|
 ||||||||
 ||||||||
