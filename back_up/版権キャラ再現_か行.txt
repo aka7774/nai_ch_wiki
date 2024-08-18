@@ -537,14 +537,6 @@
 |1980s (style), retro artstyle, {{nonomura ami (cream lemon), cream lemon}}, very aesthetic, best quality, intricate, overall detail, 1 girl, younger, {{slender}}, brown hair, [[[[parted bangs, forehead]]]], long hair, {{{{straight hair}}}}, green eyes, swimsuit, blue bikini, standing, :o, blush, simple back ground, straight-on, facing the front, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, wavy hair, |媚・妹・Baby|野々村亜美|V3使用。当時の絵柄に近くなるけど、キャラとして安定して出力されない。|https://image02.seesaawiki.jp/n/h/nai_ch/wpieoZBJVo.png|
 |}
 
-***　SSSS.GRIDMAN（グリッドマン）
-{| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|{purple jacket off shoulder},{{shinjou akane}}, red eyes,{white shirt}, black skirt, stocking, short hair, {lavender ribbon},midium hair, lavender hair, big breasts,ssss.gridman, {{evil smile}}, black pantyhose,{mastarpiece}, &#91;megami magazine],|{sleeveless},{bare shoulders},purple shirt,red ribbon,blue ribbon,|SSSS.GRIDMAN|新条アカネ|seed:2270787659ネガティブに入れてもかなりの確率で肩だしシャツになる|https://image02.seesaawiki.jp/n/h/nai_ch/ZbwgRBOEWu.png|
-|{{{takarada rikka}}}, ssss.gridman, blue eyes, black hair, small breasts, thick thighs, white cardigan, ||SSSS.GRIDMAN|宝多六花|1731154410|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8YLIolHTRz.png)>https://image01.seesaawiki.jp/n/h/nai_ch/8YLIolHTRz.png]]|
-|1girl, solo, bb_cut, {{{{tsurime}}}}, purple_hair, {white hair}higuchi_madoka, idolmaster_shiny_colors, nishikino_maki, &#91;shinjou_akane], &#91;ssss.gridman]{{blue_eyes}}, short_hair, hair_between_eyes, bangs, swept_bangs, {{{thighs}}}wide_hips, large_breasts, purple_shorts, short_necktie, purple_necktie, white_shirt, white_jacket, open_coat, gloves, white_glovespauldrons, ||SSSS.DYNAZENON（SSSS.GRIDMANシリーズ）|ムジナ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0tTah4RBYF-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/0tTah4RBYF.png]]|
-|}
-
 ***　グリム童話
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -652,7 +644,21 @@
 ***　原神
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|1boy, diluc (genshin impact), red hair, long hair, low ponytail, antenna hair, | |原神|ディルック|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NKp2I2teCD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NKp2I2teCD.png]]|
+|1boy, alhaitham (genshin impact), grey hair, short hair, hair over one eye, | |原神|アルハイゼン|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZCPR4IaBnb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ZCPR4IaBnb.png]]|
+|1boy, kaeya (genshin impact), blue hair, long hair, low ponytail, dark-skinned male,  | |原神|ガイア・アルベリヒ|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KOakwWnLKd-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/KOakwWnLKd.png]]|
+|1boy, albedo (genshin impact), blonde hair, short hair, | |原神|アルベド|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8R9izKP1Qw-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/8R9izKP1Qw.png]]|
+|1boy, kaveh (genshin impact), blonde hair, short hair, feathers,  | |原神|カーヴェ|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YfruCrJPto-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YfruCrJPto.png]]|
+|1boy, chongyun (genshin impact), blue hair, short hair, | |原神|重雲|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/fdghgydmxB-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/fdghgydmxB.png]]|
+|1boy, xingqiu (genshin impact), blue hair, short hair, | |原神|行秋|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3ns48JPclM-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/3ns48JPclM.png]]|
+|diona (genshin impact) | |原神|ディオナ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9PvESWperZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/9PvESWperZ.png]]|
+|1boy, xiao (genshin impact), arm tattoo, forehead mark, short hair, ahoge, | |原神|&#39752;|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tAlScNavYG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/tAlScNavYG.png]]|
+|shenhe (genshin impact), braid, hair over one eye, long hair, | |原神|申鶴|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WwvByQSYjq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/WwvByQSYjq.png]]|
+|1boy, tartaglia (genshin impact), jacket, | |原神|タルタリア|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N5m4YxjVKO-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/N5m4YxjVKO.png]]|
+|nahida (genshin impact), | |原神|ナヒーダ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/h6S7Cscryx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/h6S7Cscryx.png]]|
+|1boy, scaramouche (genshin impact), | |原神|スカラマシュ|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VujzrDhHjP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/VujzrDhHjP.png]]|
+|furina (genshin impact), | |原神|フリーナ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/p1cSuNoctT-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/p1cSuNoctT.png]]|
+|1boy, zhongli (genshin impact), | |原神|鍾離|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xmeTu7MjAp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xmeTu7MjAp.png]]|
 |official style, game cg, fungi (genshin impact), genshin impact, best quality, intricate, overall detail, no humans, 1other, standing, simple background, facing away, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |原神|キノコン|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/E5cFDEculh.png|
 |official style, game cg, mirror maiden (genshin impact), genshin impact, best quality, intricate, overall detail, 1girl, standing, simple background, facing away, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |原神|ミラーメイデン|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Mvz3NtqMfF.png|
 |official style, game cg, hilichurl (genshin impact) , genshin impact, best quality, intricate, overall detail, 1boy, standing, simple background, facing away, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |原神|ヒルチャール|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/X7kxn95Ld5.png|
@@ -861,6 +867,9 @@ multiple breasts,&#40;mutated hands and fingers:1.5 ),&#40;long body :1.3),&#40;
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |style of  mitsumi misato, 2000s (style), game cg, takase mizuki, comic party, very aesthetic, best quality, intricate, overall detail, 1 girl, red hair, ponytail, blue eyes, yellow ribbon, serafuku, green pleated shirt, grey skirt, white thighhighs, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, bow tie,|こみっくパーティー|高瀬瑞希|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/nLw8710sYq.png|
 |}
+
+
+
 
 
 

@@ -466,6 +466,23 @@
 ***　刀剣乱舞
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1boy, ima-no-tsurugi, touken ranbu, shota, blonde hair, long hair, hair over one eye, makeup, tantou, red eyes, tokin hat, cowboy shot, ||刀剣乱舞|今剣|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CD7savCWPT-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/CD7savCWPT.png]]|
+|1boy, yamanbagiri kunihiro, touken ranbu, blonde hair, hooded cloak, hood up,    ||刀剣乱舞|山姥切国広|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ZnVKrRU3EL-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ZnVKrRU3EL.png]]|
+|1boy, heshikiri hasebe, touken ranbu, brown hair, short hair,   ||刀剣乱舞|へし切長谷部|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TI22lzgNkx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TI22lzgNkx.png]]|
+|1boy, sayo samonji, touken ranbu, blue hair, ponytail,  ||刀剣乱舞|小夜左文字|V3。顔の傷は不安定|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/avaenzUmBj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/avaenzUmBj.png]]|
+|1boy, kogitsunemaru, touken ranbu, white hair, long hair, ||刀剣乱舞|小狐丸|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9yCfQCNwdH-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/9yCfQCNwdH.png]]|
+|1boy, shokudaikiri mitsutada, touken ranbu, eyepatch, ||刀剣乱舞|燭台切光忠|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QXPBttWCcG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/QXPBttWCcG.png]]|
+|1boy, gokotai, touken ranbu, shota, hair over one eye, messy hair,   ||刀剣乱舞|五虎退|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/i56cZvgczl-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/i56cZvgczl.png]]|
+|1boy, ichigo hitofuri, touken ranbu,  ||刀剣乱舞|一期一振|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/076g3xzeqp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/076g3xzeqp.png]]|
+|1boy, yagen toushirou, touken ranbu, ||刀剣乱舞|薬研藤四郎|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gMWC9JKTlM-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/gMWC9JKTlM.png]]|
+|1boy, hotarumaru, touken ranbu,  ||刀剣乱舞|蛍丸|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eJuUZCq6i1-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/eJuUZCq6i1.png]]|
+|1boy, horikawa kunihiro, touken ranbu, ||刀剣乱舞|堀川国広|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/XcxOHf1KVP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/XcxOHf1KVP.png]]|
+|1boy, izumi-no-kami kanesada, touken ranbu,    ||刀剣乱舞|和泉守兼定|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jkjqdFFRVf-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jkjqdFFRVf.png]]|
+|1boy, midare toushirou, touken ranbu,   ||刀剣乱舞|乱藤四郎|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qLG5r7jFQV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qLG5r7jFQV.png]]|
+|1boy, honebami toushirou, touken ranbu,  ||刀剣乱舞|骨喰藤四郎|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/zjb0uitB3M-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/zjb0uitB3M.png]]|
+|1boy, namazuo toushirou, touken ranbu, ||刀剣乱舞|鯰尾藤四郎|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Lzkywhik3s-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Lzkywhik3s.png]]|
+|1boy, tsurumaru kuninaga, touken ranbu,  ||刀剣乱舞|鶴丸国永|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/O8D7eJlcOr-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/O8D7eJlcOr.png]]|
+|1boy, yamato-no-kami yasusada, touken ranbu, ||刀剣乱舞|大和守安定|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/TxWU8zi29N-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/TxWU8zi29N.png]]|
 |1boy, kashuu kiyomitsu, touken ranbu,  ||刀剣乱舞|加州清光|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lTsaln2_Kr-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/lTsaln2_Kr.png]]|
 |1boy, mikazuki munechika, touken ranbu, blue eyes, black hair, hair ornament, sayagata, kariginu, japanese clothes, long sleeves, solo, cowboy shot, ||刀剣乱舞|三日月宗近|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/f1mb3R9SMn-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/f1mb3R9SMn.png]]|
 |{{hotarumaru}}, solo, tomboy, manly, short, bedhead sideburns, cap, {black cape}, black stand up collar, shorts, legwear garter, soldier, katana,|navel, {garter belt}, yellow eyes, blue clothes,|刀剣乱舞|蛍丸||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/E8xe2t0zIn.png)>https://image01.seesaawiki.jp/n/h/nai_ch/E8xe2t0zIn.png]]|
