@@ -35,7 +35,7 @@ FLUX.1への対応などさまざまな機能が強化された。代わりに�
 FLUX.1のcheckpointは[[flux1-schnell-bnb-nf4.safetensors>https://huggingface.co/silveroxides/flux1-nf4-weights/blob/main/flux1-schnell-bnb-nf4.safetensors]]の使用が推奨されているほか、[[flux1-dev-fp8.safetensors>https://huggingface.co/lllyasviel/flux1_dev/blob/main/flux1-dev-fp8.safetensors]]も使用できる。
 
 **2024-08-01 Black Forest Labsにより画像生成AIモデル「FLUX.1」発表
-Stable Diffusionの元開発者が設立したベンチャー起業Black Forest Labsが、画像生成AIモデル「FLUX.1」を発表した。
+Stable Diffusionの元開発者が設立したベンチャー企業Black Forest Labsが、画像生成AIモデル「FLUX.1」を発表した。
 API経由での有料画像生成に加え、ライセンスにより使用可能範囲が分かれたモデルデータも同日に公開し、Huggingfaceからダウンロードできる。公開日時点ではComfyUIで画像生成が可能。
 なお、パラメータ数が12Bもあるため推論には大容量のVRAM(12GB以上?)が必要。
 https://blackforestlabs.ai/announcing-black-forest-labs/
