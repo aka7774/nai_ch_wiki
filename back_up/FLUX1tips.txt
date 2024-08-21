@@ -6,7 +6,7 @@ API経由での有料画像生成に加え、ライセンスにより使用可�
 
 *FLUX.1のモデルの種類とライセンス
 - Pro：APIを通じてのみ提供される最上位モデル。商用利用可
-- Dev：モデルが公開されている。非商用でのみ利用可
+- Dev：モデルが公開されている。モデルは非商用、もしくはBlack Forest Labsとライセンスを結んでのみ利用可。一方、出力された画像は商用利用可
 - Schnell：高速・軽量な公開モデル。商用利用可
 
 APIを介して利用する際は利用料金が発生する。
@@ -30,4 +30,5 @@ Checkpoint（schnellのnf4。4stepで生成できるが品質は劣る）：http
 Astronaut in a jungle, cold color palette, muted colors, very detailed, sharp focus
 Steps: 20, Sampler: Euler, Schedule type: Simple, CFG scale: 1, Distilled CFG Scale: 3.5, Seed: 12345, Size: 896x1152, Model: flux1-dev-bnb-nf4-v2
 ||=
+
 
