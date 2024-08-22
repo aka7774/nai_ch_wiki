@@ -25,10 +25,16 @@ Checkpoint（devのfp8と軽量なnf4。20stepで生成）：https://github.com/
 Checkpoint（schnellのnf4。4stepで生成できるが品質は劣る）：https://huggingface.co/silveroxides/flux1-nf4-weights/blob/main/flux1-schnell-bnb-nf4.safetensors
 こちらもZuntan03氏によるEasyForgeを利用できる。 https://x.com/Zuntan03/status/1822555275380871407
 
+**GGUF
+画像AIでは馴染みが薄いが、言語モデル（LLM）では定番の量子化を用いて圧縮したモデル。低〜中VRAMでも現実的なローカル生成が可能になる、24/8/22現在注目の技術。
+ComfyUIでの使用には専用のカスタムノードが必要。Forgeはデフォで対応している。VAE・t5xxl・clip_lを別に入手して設定する必要あり。
+少なめのVRAMでもそこそこの速度が出るが、Q2は画像が目に見えるレベルで劣化、Q3も気になる人は気になるレベルのため、現実的に実用に耐えるのはQ4以上か。
+(dev)https://huggingface.co/city96/FLUX.1-dev-gguf
+(schnell)https://huggingface.co/city96/FLUX.1-schnell-gguf
+
 生成テスト用のパラメータ例
 =|BOX|
 Astronaut in a jungle, cold color palette, muted colors, very detailed, sharp focus
 Steps: 20, Sampler: Euler, Schedule type: Simple, CFG scale: 1, Distilled CFG Scale: 3.5, Seed: 12345, Size: 896x1152, Model: flux1-dev-bnb-nf4-v2
 ||=
-
 
