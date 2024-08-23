@@ -127,14 +127,21 @@ Danbooruにある極端にNSFWなコンテンツのみを学習させたモデ�
 最新版のV5: https://civitai.com/models/9409
 なお、オリジナルの作者かどうかは不明
 
-** NAI
+** NAI v1
+NovelAI公式がリリースしたためtorrentでリークモデルをDLする必要はなくなりました。
+モデルはunet内に"diffusion_pytorch_model.safetensors"という名称であります。
+Full: https://huggingface.co/NovelAI/nai-anime-v1-full
+Curated: https://huggingface.co/NovelAI/nai-anime-v1-curated
+Furry Beta: https://huggingface.co/NovelAI/nai-furry-beta-v1.3
+
+[+] 古い情報
 リークなので自己責任でどうぞ
 要Torrentクライアントソフト
-&#128317;
 =|BOX|
 magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
 ||=
 ソース：--GUIDE-- - https://rentry.org/voldy#-novelai-setup-
+[END]
 
 *マージモデル
 - 複数のモデルを混合させて作られたモデル。上記リソースのリンク先サイト等から入手が可能。

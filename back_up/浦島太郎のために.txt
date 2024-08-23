@@ -21,6 +21,10 @@
 
 #contents
 *2024年
+**2024-08-23 NovelAI Diffusion v1が公開される
+[[https://blog.novelai.net/novelai-diffusion-v1-weights-release-jp-01d7fbad6fd7]]
+ モデルは、当初のCreativeML Open RAIL-Mライセンスとクリエイティブ・コモンズBY-NC-SA 4.0ライセンスの両方の条件を適用するデュアルライセンスに基づいて公開されます。これにより、上記条件のもとで適切に帰属され配布される限り、非商用目的での利用、再配布、二次的著作物の作成が可能です。
+
 **2024-08-14 Grok-2がFLUX.1を採用する
 X（旧Twitter）が提供するLLM、Grok-2にFLUX.1による画像生成が搭載された。
 どのバージョンなのかは公表されていない。

@@ -94,9 +94,12 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 -- stable-diffusion-webui/models/models/VAE に配置して、ファイル名を選択して適用する
 - 設定の場所は、Settingsタブの[Stable Diffusion]-[SD VAE]
 
-**6：NovelAIリーク(任意、非推奨)
-グレーゾーンなので自己責任で。
-[+]
+**6：NovelAI V1
+Full: https://huggingface.co/NovelAI/nai-anime-v1-curated/tree/main/unet
+Curated: https://huggingface.co/NovelAI/nai-anime-v1-curated/tree/main/unet
+Furry Beta: https://huggingface.co/NovelAI/nai-furry-beta-v1.3/tree/main/unet
+
+[+] 古い情報(リークモデル、非推奨)
 **4：NovelAIリークモデルのダウンロード
 次のマグネットリンクからモデルをダウンロードします。
 トレントクライアント(qTorrent, Bitcomet等)がない場合はインストールしておきます。
