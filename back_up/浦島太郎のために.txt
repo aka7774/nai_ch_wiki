@@ -25,6 +25,10 @@
 [[https://blog.novelai.net/novelai-diffusion-v1-weights-release-jp-01d7fbad6fd7]]
  モデルは、当初のCreativeML Open RAIL-Mライセンスとクリエイティブ・コモンズBY-NC-SA 4.0ライセンスの両方の条件を適用するデュアルライセンスに基づいて公開されます。これにより、上記条件のもとで適切に帰属され配布される限り、非商用目的での利用、再配布、二次的著作物の作成が可能です。
 
+**2024-08-23 ebara_pony_3が公開される
+https://huggingface.co/tsukihara/xl_model
+「最近使ってるやつ」「やっぱり眩しい。なんでやろな」「4thtail使ってるんで諸々はそっち見てもろて(https://civitai.com/models/282341/4th-tail-animehentai)」との作者コメント。
+
 **2024-08-14 Grok-2がFLUX.1を採用する
 X（旧Twitter）が提供するLLM、Grok-2にFLUX.1による画像生成が搭載された。
 どのバージョンなのかは公表されていない。
@@ -1971,6 +1975,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
