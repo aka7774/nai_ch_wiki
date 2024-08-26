@@ -3,7 +3,7 @@
 検索しにくい略称や本スレ特有のものを中心に説明していく。
 
 |~用語|正式名称|説明|
-|1.5|SD 1.5|Stable Diffusionの初代のマイナーチェンジ版。2022年にリリースされて以来長らく標準規格だったが、2024年からは後継規格のXLが急速に普及し廃れつつある|
+|1.5|SD 1.5|Stable Diffusionの初代のマイナーチェンジ版。2022年にリリースされて以来長らく主流だったが、2024年からは後継のSDXLが急速に普及し廃れつつある|
 |AUTOMATIC1111||人名。でもAUTOMATIC1111氏が作ったツール「Stable Diffusion web UI」を指して呼ばれがち。|
 |A1111|AUTOMATIC1111|webuiと同義。人名だけどツールの名前として呼ばれがち。|
 |1111|AUTOMATIC1111|webuiと同義。このページでも1111と表記する。|
@@ -16,8 +16,10 @@
 |Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
 |DB|Dreambooth|学習方法の1つ。|
 |DA|DreamArtist|学習方法の1つ。|
+|DiT|Diffusion Transformer|生成AIのアーキテクチャの一つ。SD1,2,XLで使用されるU-Netより高性能で最近の多くの画像生成AIはこれを採用している|
 |DoRA|Weight-Decomposed Low-Rank Adaptation|LoRAの改良版。学習の安定性と低ランクでの性能が向上する。|
 |ebara|[[ebara pony>https://huggingface.co/tsukihara/xl_model]]|Pony Diffusionの派生モデル|
+|Flux|FLUX.1|パラメータ数120億のオープンな画像生成AI。SD3と同じDiffusion Transformerを採用する。|
 |HF|Hugging Face|研究者がモデルやソースコードの置き場として使っているサイト。GitHubみたいなもの。|
 |HN|Hypernetwork|学習方法の1つ。LoRAの登場で誰も使ってない。|
 |Hyper-SD||Stable Diffusionの亜種で、高速サンプリング(収束が速くなる)ができるモデル|
@@ -38,6 +40,7 @@
 |SD|Stable Diffusion|単なる略称|
 |SD2|Stable Diffusion 2|SD1の後継。だったがSD1からの目立った変化がなかったため流行らなかった。|
 |SD3|Stable Diffusion 3|Stability AIが2024年2月に発表、6月にリリースされたStable Diffusionの新バージョン。SDXLを上回る性能を誇る。|
+|SD3M|Stable Diffusion 3 Medium|数種類あるStable Diffusion3のうちパラメータ数20億のもの。|
 |SFW|Safe for work|こっちはNがついてなくて全年齢|
 |ST|Stable Tuner|学習方法の1つ。kohya系。|
 |TI|Textual Inversion|学習方法の1つ。|
