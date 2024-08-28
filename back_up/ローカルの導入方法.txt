@@ -2,12 +2,13 @@
 
 *概要
 ローカル環境(AUTOMATIC1111版Stable Diffusion WebUI)の導入ガイドです。
-''&color(#FF0000){注意} Stable Diffusion WEBUI AUTOMATIC1111はアップデート頻度が非常に高く、新機能の実装や仕様変更が頻繁に行われる為、Wikiの更新が追いついていません。''
+''&color(#FF0000){注意} 最近wikiの更新が滞りがちなため、このガイドは古くなっている可能性があります。''
 
 *導入
 
 - リファレンス
 -- https://rentry.org/voldy
+上記のページは2022年の古い情報であることに留意。
 
 - 説明読んでも全く理解できない人は「簡易インストール」を試すといいかも。
 
@@ -94,30 +95,9 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 -- stable-diffusion-webui/models/models/VAE に配置して、ファイル名を選択して適用する
 - 設定の場所は、Settingsタブの[Stable Diffusion]-[SD VAE]
 
-**6：NovelAI V1
-Full: https://huggingface.co/NovelAI/nai-anime-v1-curated/tree/main/unet
-Curated: https://huggingface.co/NovelAI/nai-anime-v1-curated/tree/main/unet
-Furry Beta: https://huggingface.co/NovelAI/nai-furry-beta-v1.3/tree/main/unet
-
-[+] 古い情報(リークモデル、非推奨)
-**4：NovelAIリークモデルのダウンロード
-次のマグネットリンクからモデルをダウンロードします。
-トレントクライアント(qTorrent, Bitcomet等)がない場合はインストールしておきます。
-=|BOX|
-magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc
-||=
-
-モデルの総容量は50GB超ですが、必要なデータは5GBほどです。
-/stableckptのみを選択し、その他は選択解除します。
-※オプション：.ptの拡張子をもつHyperNetwork用のmoduleが/modulesにあるので任意でダウンロードします。
-
-**5：リネーム
-ダウンロードしたモデルをわかりやすい名前にします。
-stableckpt\animefull-final-pruned\model.ckpt >> nai-pruned.ckpt
-
 **6：配置
 以下のディレクトリにモデルを配置します。
-ckpt:
+Checkpoint:
 /stable-diffusion-webui/models/Stable-diffusion
 VAE:
 /stable-diffusion-webui/models/VAE
@@ -147,8 +127,7 @@ WEBUIの操作画面が表示されたらここまでの手順は成功。おつ
 -https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/tag/v1.0.0-pre
 zipを解凍→update.batを実行→run.batを実行でインストールされる。学習モデルはStable Diffusion公式の1.5が自動でダウンロードされる
 -もうこいつ一人でいいんじゃないかな？
--…と言いたいところやけどまだプレリリースやからかほんの少しごみが残ったりちょっと安定しないとの報告もある。
--とはいえ基本難しいこと考えずにインストールしたいならこれを使うのが最初になるんちゃうかな？
+-基本難しいこと考えずにインストールしたいならこれを使うのが最初になるんちゃうかな？
 -おおむね後者のあかちゃんインストーラーとやっとることも同じみたいやで？
 -後述のスタンドアローンの作者も『自身の方法とほぼ同じ』と発言していたので利用者はこっちに乗り換えて大丈夫かも
 -一部の拡張機能はPythonを入れないと動かないという話も（入れ方は上を参照）
@@ -240,7 +219,7 @@ COMMANDLINE_ARGS=--precision full --no-half --no-half-vae --medvram
 - インストールが C: ドライブにあることを確認します。
 - このガイドは、安定した拡散には cuda コアが必要なため、NVIDIA GPU&#160;*専用*に設計されています。AMDユーザーは[このガイド](https://rentry.org/ayymd-stable-diffustion-v1_4-guide)をお試しください
 
-* Tips
+* Tips(機械翻訳、SD1向け)
 
 - WebUI 内でダウンロードした .ckpt ファイルをすばやく切り替えることができます。
 - ベースSDとは異なり、NovelAIは歪みなく最大**768x768**の画像をネイティブに生成できます
