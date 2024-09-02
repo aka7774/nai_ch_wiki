@@ -37,6 +37,7 @@ Xformersを使用したときの単一の画像生成下での画像変化は見
 {| class="nanj_prompt_table edit sort"
 |~GPU|~生成結果|~備考|
 ||||
+||||
 |RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/WfUiAEjdbl-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/WfUiAEjdbl.png]]|4回目|
 |RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/p1WtCk2f3n-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/p1WtCk2f3n.png]]|3回目|
 |RTX 2070|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/B42vXoKxJE-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/B42vXoKxJE.png]]|2回目|
