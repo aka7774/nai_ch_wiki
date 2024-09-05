@@ -26,6 +26,13 @@ Stability.ai公式
 >~~0004今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f7d-dc3M)~~2024/01/13(土) 16:35:47.39ID:DvXS/pgj0~~(略)~~&#9724;&#65038;SDXLどうやって使うの？~~webUI1111ならモデル落としていつもの場所に入れるだけ、fooocusやComfyUIも軽くて人気~~(略)
 
 ** AUTOMATIC 1111
+*** VRAM8GBで動かす方法
+1.webui-user.bat(Linuxはwebui-user.sh)のCOMMANDLINE_ARGSに--medvram-sdxl --precision halfを追加
+2(任意だが推奨).NVIDIA コントロールパネルの3D設定で「CUDA - システム メモリ フォールバック ポリシー」を「システム メモリ フォールバックなしを優先」にする
+3.VAEは[[sdxl-vae-fp16-fix>>https://huggingface.co/madebyollin/sdxl-vae-fp16-fix]]を使う
+4(任意).内蔵グラフィック搭載CPUならマザーボードの映像端子で映像を出力する。PC起動中につなぎなおした場合は再起動する
+環境によるが、これで832x1216のhighres2倍が動くはず。動かないならTiled VAEを有効にする
+
 >~~0968今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f04-Qq59)~~2024/01/13(土) 16:29:32.33ID:8PpvN4mG0~~もう一度貼っときますね~~a1111 SDXL 低VRAM民向け3点セット~~1.webui-user.batのset COMMANDLINE_ARGSに「--medvram-sdxl」を追加（低VRAM対策・高速化）~~2.webui-user.batに「set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.6, max_split_size_mb:128」を追加（OutOfMemoryError対策）~~3.NVIDIAコンパネの3D設定で「CUDA - Sysmem Fall Back Policy」を「Prefer No Sysmem Fallback」にする（メモリ溢れ激遅対策）~~ ~~ワイ環3060参考値~~Animagine3公式サンプル:約28秒~~Animagine3公式サンプルハイレゾ2倍:約2分30秒
 
 ** Fooocus
@@ -65,8 +72,8 @@ SDXLのモデルにはBaseとRefinerの2種類あることに注意。Refinerは
 * SDXLのVAE
 SD1.x/2.xとの互換性はないため注意
 
-StabilityAI(SDXL base)のVAEはfp16ではNaN演算が発生して動かないため、No-Half VAEの有効化必須
-それを修正したものがあるのでそちらの使用をおすすめする
+StabilityAI(SDXL base)のVAEはfp16ではNaN演算が発生して動かない(真っ黒になる)ため、No-Half VAEの有効化必須。なお、fp32で動かすことになるのでVAEのVRAM使用量や計算量が2倍以上になる
+それを修正しfp16で動くものがあるのでそちらの使用をおすすめする
 https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 
 Q 生成画像が灰色っぽくなります。
