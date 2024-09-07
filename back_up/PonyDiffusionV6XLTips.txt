@@ -289,14 +289,20 @@ scoreタグ不要のマージモデルで学習すると効果不明になるけ
 
 * 派生モデル
 本スレでよく話題になる人気派生モデルを紹介する。
+***XL_e4P_Mix
+https://huggingface.co/okibaV/XL_e4P_Mix
+ebara_pony_3と4th Tailを中心にマージしたモデル。
+***4th tail (anime/hentai)
+https://civitai.com/models/282341/
+表現力の強化を目指したモデル。
 ***3x3x3mixXL
 https://civitai.com/models/464044
-本家の弱点である背景表現の強化を目指したモデル。
-***ebara_pony_1、ebara_pony_2.1
-https://huggingface.co/tsukihara/xl_model
-特にネガを指定しなくても可愛い絵柄を出せることに定評がある。一方、モデル自体が持っている絵柄が非常に強いのでLoRAなどの効き方には独特の癖あり。
-2.1は絵柄がさらに安定しているが、その分R18表現のバリエーションは弱まっている模様。
-***real pony
-https://civitai.com/models/365041
-リアル系モデルの中でも不気味さのない顔を出せると言われている。
+背景表現の強化を目指したモデル。リアル風など派生モデルも多数あり。
+***PVC Style Model
+https://civitai.com/models/400329/
+フィギュア実写画像風のモデル。
+***ebara_pony_1、ebara_pony_2.1、ebara_pony_3
+%%ttps://huggingface.co/tsukihara/xl_model%%
+消滅。
+
 
