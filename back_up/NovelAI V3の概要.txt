@@ -1,0 +1,132 @@
+NovelAIはV3で大きく進化し、V1時代から大きな変更がなされている点も多い。
+それらの中で主要なものを抜粋する。
+主に[[公式ドキュメント>https://docs.novelai.net/image/basics.html]]からの要約。
+
+#contents 
+
+* 想定タグ順
+
+V3では、いくつかのタグはプロンプトの先頭に特定の順序で並んでいることを想定している。具体的には以下の通り
+ 1boy, 1girl, キャラ名, 作品名, (それ以外)
+ドキュメントには書かれていないが、アーティスト名も作品名の直後にあったほうがいいと思われる。
+ただし、これ以外のやり方を試すことはできる
+
+* 強調/弱体化
+
+{}で囲うと1.05倍、[]で囲うと1.05で割った値になる。
+{| class="table"
+|~プロンプト|倍率|
+|{}|1.05|
+|{{}}|1.102|
+|{{{}}}|1.157|
+|{{{{}}}}|1.215|
+|{{{{{}}}}}|1.276|
+|{{{{{{}}}}}}|1.340|
+|{{{{{{{}}}}}}}|1.477|
+|&#91;]|0.952|
+|&#91;&#91;]]|0.907|
+|&#91;&#91;&#91;]]]|0.863|
+|&#91;&#91;&#91;&#91;]]]]|0.822|
+|&#91;&#91;&#91;&#91;&#91;]]]]]|0.783|
+|&#91;&#91;&#91;&#91;&#91;&#91;]]]]]]|0.764|
+|&#91;&#91;&#91;&#91;&#91;&#91;&#91;]]]]]]]|0.710|
+|&#91;&#91;&#91;&#91;&#91;&#91;&#91;&#91;]]]]]]]]|0.676|
+|}
+
+** 余談：本当は囲わなくて良い
+実は{}[]は囲う必要はなくて、'{'より右側がすべて1.05倍、'}'より右側が1.05で割った値になる挙動であり、']'、'['も作用が逆なだけで同様。
+つまり、以下のプロンプトは全て同じ意味になる
+ {{1girl}}
+
+ {{1girl
+
+ ]]1girl[[
+
+ ]]1girl
+
+* Quality Tags プリセット
+** Anime V3
+ best quality, amazing quality, very aesthetic, absurdres
+** Furry V3
+ {best quality}, {amazing quality}
+
+* Undesired Contents タグプリセット
+** Anime V3
+*** Heavy
+ lowres, {bad}, error, fewer, extra, missing, worst quality, jpeg artifacts, bad quality, watermark, unfinished, displeasing, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract],
+
+*** Light
+ lowres, jpeg artifacts, worst quality, watermark, blurry, very displeasing,
+
+*** Human Focus
+ lowres, {bad}, error, fewer, extra, missing, worst quality, jpeg artifacts, bad quality, watermark, unfinished, displeasing, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract], bad anatomy, bad hands, @_@, mismatched pupils, heart-shaped pupils, glowing eyes,
+
+** Furry V3
+*** Heavy
+ {{worst quality}}, [displeasing], {unusual pupils}, guide lines, {{unfinished}}, {bad}, url, artist name, {{tall image}}, mosaic, {sketch page}, comic panel, impact (font), [dated], {logo}, ych, {what}, {where is your god now}, {distorted text}, repeated text, {floating head}, {1994}, {widescreen}, absolutely everyone, sequence, {compression artifacts}, hard translated, {cropped}, {commissioner name}, unknown text, high contrast,
+
+*** Light
+ {worst quality}, guide lines, unfinished, bad, url, tall image, widescreen, compression artifacts, unknown text,
+
+* AI Settings
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hngCVb49gB.png,350)
+
+** Samplers
+サンプラーの選択。それぞれ微妙に異なるので色々試して気に入るのを探すのが吉。
+一応、Eulerはオイラー法、
+DPMはDenoising Probabilistic Models、
+DDIMはDenoising Diffusion Implicit Modelsの略、
+2S, 2Mの'2'は二階導関数、Sはシングルステップ、Mはマルチステップの意。
+Ancestralはステップごとにノイズを追加してランダム性を追加すること、
+SDEはStochastic Differential Equations=確率微分方程式を意味する
+
+*** SMEA, DYN
+高解像度での生成時の結果を改善するための設定。
+ただし絵柄が変わるので、入れるかどうかは好み。
+特に薄い色味を回避したい場合はPrompt Guidanceを7程度に上げると良い
+
+** Prompt Guidance
+プロンプト忠実度。
+公式推奨値は5-6。
+上げるほどプロンプトにより忠実な結果になる可能性があるが、絵の輪郭が太くなる、色味がどぎつくなるなどデメリットがある
+逆に、この値が5なのに上記の現象が起きる場合は4とかに値を下げてもいい
+
+*** Variery Boost (Variety+)
+Prompt Guidanceの適用を遅くする機能。
+Prompt Guidanceはプロンプトに忠実な結果を得るために必要なパラメーターだが、構図を決めるステップ序盤の方向性に影響を与えすぎて、似たような構図ばかりになりがち。
+そこで序盤は弱くして構図に幅を持たせ、後半に強くして忠実な結果を得るのがこの機能。
+
+*** Decrisper (Decrisp)
+Prompt Guidanceが高い時に現れがちな色調の問題を軽減するための機能。
+Prompt Guidanceが低い時でも効果があるので好みに応じて使い分けたい。
+
+** Prompt Guidance Rescale
+Decrisperと同様、Prompt Guidanceの値を高くした場合の「どぎつい」テイストを軽減する機能
+Prompt Guidanceが低ければ0のままで良い
+
+** Noise Schedule
+native, karras, exponential, polyexponentialの4種。
+native以外の3種は2024年8月に処理にアップデートが入った。
+nativeは以前の推奨、
+karrasは現在の推奨、人物特化で低stepでも絵が収束しやすい
+exponentialはkarrasに近いがマルチステップ（名前にMがつく）のサンプラーと相性が良く、
+polyexponentialは細部に特化している
+…と公式では説明されているが、結局どれが合うかは自分で実験して探す必要がある。
+
+** Undesired Content Strength（※廃止）
+UCの強度をグローバルに調整できる機能だったが、利用者が少なく、生成時間に大きく影響していたため、最適化のためこの機能は削除された。
+
+* ツール
+** Vibe Transfer
+絵のニュアンスに影響を与える機能。
+即席1枚絵画風LoRAと言ってもいいかもしれない。
+（モデルが覚えていないキャラの再現には使えない）
+ガチャ中に良いと思った絵をVibe Transferに入れて絵柄を安定させるなども可。
+
+** Enhance &ref(https://image01.seesaawiki.jp/n/h/nai_ch/qu_m6ps5AM.png)
+画像を再度NAIに通すことでイラスト全体をリファインする機能
+目や細部が潰れていてもenhanceするとある程度改善される
+
+** Upscale &ref(https://image02.seesaawiki.jp/n/h/nai_ch/XcHEa8S176.png)
+一般的な超解像処理。enhanceと異なり、潰れた部分は潰れたままupscaleされる。
+Real-ESRGANとほぼ似た結果が返ってくるので、anlasを節約したい場合は使わなくてもいい。
