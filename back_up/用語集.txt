@@ -18,9 +18,9 @@
 |DA|DreamArtist|学習方法の1つ。|
 |DiT|Diffusion Transformer|生成AIのアーキテクチャの一つ。SD1,2,XLで使用されるU-Netより高性能で最近の多くの画像生成AIはこれを採用している|
 |DoRA|Weight-Decomposed Low-Rank Adaptation|LoRAの改良版。学習の安定性と低ランクでの性能が向上する。|
-|ebara|[[ebara pony>https://huggingface.co/tsukihara/xl_model]]|Pony Diffusionの派生モデル|
+|ebara|ebara_pony|Pony Diffusionの派生モデル。配布先は消滅|
 |Flux|FLUX.1|パラメータ数120億のオープンな画像生成AI。SD3と同じDiffusion Transformerを採用する。|
-|HF|Hugging Face|研究者がモデルやソースコードの置き場として使っているサイト。GitHubみたいなもの。|
+|HF/&#129303;|Hugging Face|研究者がモデルやソースコードの置き場として使っているサイト。GitHubみたいなもの。|
 |HN|Hypernetwork|学習方法の1つ。LoRAの登場で誰も使ってない。|
 |Hyper-SD||Stable Diffusionの亜種で、高速サンプリング(収束が速くなる)ができるモデル|
 |i2i|img2img|Image to Image 元画像とプロンプトから画像を生成すること。|
@@ -36,7 +36,7 @@
 |NP|Negative Prompt|Promptとは反対に出したくない要素を指定する|
 |NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつ|
 |PEFT|Parameter Efficient Fine Tuning|LoRA・LoCon・LoRA-FAその他様々な亜種のように、少ないパラメーターで全体を学習するような仕組みのこと|
-|pony|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|XL用モデル|
+|pony|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|SDXLベースのアニメ/カートゥーンモデル|
 |SD|Stable Diffusion|単なる略称|
 |SD2|Stable Diffusion 2|SD1の後継。だったがSD1からの目立った変化がなかったため流行らなかった。|
 |SD3|Stable Diffusion 3|Stability AIが2024年2月に発表、6月にリリースされたStable Diffusionの新バージョン。SDXLを上回る性能を誇る。|
@@ -61,9 +61,9 @@
 |コピー機||シード値固定や過学習などによって似たような絵を連続出力すること。由来は[[浦島太郎のために]]を参照 |
 |層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
 |ちびたい|[[Civitai>https://civitai.com/]]|モデル配布サイト|
-|風船(&#127880;)||排泄物を指す。閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
+|風船/&#127880;||排泄物を指す。閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
 |ブリーディング|bleeding|特定の単語のプロンプトに、スペルが同じで意味の異なる単語やスペルが似た単語の概念が混入すること|
-|魔人/魔神|[[Animagine XL>animagine31tips]]|XL用モデル|
+|魔人/魔神|[[Animagine XL>animagine31tips]]|SDXLベースのアニメモデル|
 |マージ||Checkpoint Mergerなどで2〜3つのモデルを組み合わせること。|
 |マスピ|masterpiece|傑作。品質向上に使われるプロンプト。切れ長のつり目、陰影の強調された顔など特徴的な絵柄になる。マスピ絵、マスピ顔とか言う。|
 |妖精さん||1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
@@ -118,7 +118,8 @@ TI/DB/HNのそれぞれの効果や使い分けは研究中の段階であり、
 あと「学習」「追加学習」という言葉に狭義の定義をする人もいるけど、ここでは区別していない。
 
 「正''規''化(Normalization)」と「正''則''化(Regularization)」も機械学習の用語としては意味が違う。
-DreamBoothのClassificationは正則化のほう。Layer Normalizationが正規化。
+DreamBoothのClassificationは正則化(特定の概念を忘れないようにする)。
+Layer Normalizationが正規化(ベクトルの大きさを1に収める)。
 
 ** 層別マージ/階層マージ
 
