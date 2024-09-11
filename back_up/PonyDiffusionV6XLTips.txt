@@ -289,12 +289,6 @@ scoreタグ不要のマージモデルで学習すると効果不明になるけ
 
 * 派生モデル
 本スレでよく話題になる人気派生モデルを紹介する。
-***XL_e4P_Mix
-https://huggingface.co/okibaV/XL_e4P_Mix
-ebara_pony_3と4th Tailを中心にマージしたモデル。
-***4th tail (anime/hentai)
-https://civitai.com/models/282341/
-表現力の強化を目指したモデル。
 ***3x3x3mixXL
 https://civitai.com/models/464044
 背景表現の強化を目指したモデル。リアル風など派生モデルも多数あり。
