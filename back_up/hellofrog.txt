@@ -19,22 +19,24 @@ Linuxだと頭にtimeをつければ出てくる。
 * 結果
 
 {| class="sort edit nanj_prompt_table"
-|~w(120px):GPU|VRAM|w(120px):CPU|time(秒)|オプション|バージョン|備考|
-|ARC A750|8GB|Ryzen9 5900X|37m|8bit系オプティマイザ使えないのでAdamW、batch_size=2--xformersなし --mem_eff_attn --cache_latents|sdxlブランチ1e395ed285385a17b39f3190b330220d29bde0ba|sdxlブランチのARC対応版をWSL2で torch==2.0.1a0+cxx11.abi torchvision==0.15.2a0+cxx11.abi intel_extension_for_pytorch==2.0.110+xpu -f https://developer.intel.com/ipex-whl-stable-xpu tensorboard==2.12.3 tensorflow==2.12.0 intel-extension-for-tensorflow[gpu]をpip install|
-|RTX 3090|24GB|Ryzen9 5950X|2m38.367s|--xformers --batch_size 4|0cfcb5a49cf813547d728101cc05edf1a9b7d06c|torch:2.0.1 xformers:0.0.20 Ubuntu:22.04 Python:3.10.6  3090を2つ使った場合 accelerate configでmulti-gpuを選択|
-|RTX 3090|24GB|Ryzen9 5950X|4m31.047s|--xformers --batch_size 4|0cfcb5a49cf813547d728101cc05edf1a9b7d06c|torch:2.0.1 xformers:0.0.20 Ubuntu:22.04 Python:3.10.6  PyTorch1系&xformers0.0.16だとlossがnanになる|
-|RX 6650XT|8GB|Ryzen 5 5600G|18m6.079s|--sdpa --cache_latents --gradient_checkpoint export PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.8,max_split_size_mb:256'|449ad7502cb0f36cd8b94b2c7d98ec204af234a9|torch: 2.0.1+rocm5.4.2 bitsandbytes-rocm3.7 origin/original-u-net|
-|RX 6650XT|8GB|Ryzen 5 5600G|15m49.325s|--sdpa --train_batch_size=1 --cache_latents|449ad7502cb0f36cd8b94b2c7d98ec204af234a9|torch:2.0.1+rocm5.4.2 bitsandbytes-rocm3.7 origin/original-u-net|
-|RTX 2070 SUPER|8GB|Ryzen 7 5800X|7m24.127s|--xformers --batch_size 2 --cache_latents||torch2.1,xformers0.0.19 cache_latentsオンで低解像度で大幅に高速化|
-|RTX 2060|6GB|Ryzen 5600X|18m15.98s|--xformers batch_size=2|||
-|RX 6650 XT|8GB|Ryzen 5 5600G|24m18.670s|--mem_eff_attn --max_data_loader_n_workers=8 --num_cpu_threads_per_process 12|5050971ac687dca70ba0486a583d283e8ae324e2|torch: 2.0.0+rocm5.4.2 Ubuntu20.04 python3.10 bitsandbytes-rocm3.7 画面出力iGPU|
-|RTX 2070 SUPER|8GB|Ryzen 7 5800X|12m16.307s|--xformers batch_size=3||torch2.1,xformers0.17|
-|RX 6900 XT|16GB|Ryzen 5950X|11m32.561s|--xformersなし --mem_eff_attn追加 環境変数'PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.9,max_split_size_mb:512''||tensorflow-rocmとbitsandbytes-rocm(本家のissue#107にリンクあり)を使用する。bitsandbytesのモジュールは自動でビルドされないので、別にクローンしてビルドし、出来たものを'venv/lib/python3.10/site-packages/bitsandbytes/'に入れる。|
-|RTX 3060|12GB|Ryzen 3700X|25m2.20s||71b728d5fcfe16f4434e2bf61e75cdfb76f93e14|16h25m2.20s ってテキストには書いてあった Windows11 pro|
-|RTX 3080Ti|12GB|i7 11700F|6m10.22s||||
-|GTX 1080Ti|11GB|i9 9900K|27m27.76s||08ae46b|事前にbitsandbytesのGTX10シリーズ対応を実施済み|
-|RTX 2070|8GB|Ryzen 1700X|15m26.935s|batch_size=3 use-8bit-adamなし gradient_checkpointing|08ae46b|WSL2|
-|GTX 1660|6GB|i5 12400|1h17m40.38s|batch_size=1 mixed_precision=no gradient_checkpointing|7c1cf7f4eaf011e3c90e163049f85bdbadb75ef2|GetStartTimeラベルだけ認識されないのでサブルーチンを前に持ってきた Windows11|
+|~w(120px):GPU|VRAM|w(120px):CPU|time(秒)|steps 100% time(秒)|オプション|バージョン|備考|
+|RTX 4090|24GB|i9 12900|202.389|191|--xformers --batch_size 4|b755ebd0a4dd2967171b6b5909624325359a2aa0|GPU制限70%。制限なしより速くなった理由は不明。Windows、Measure-Commandコマンドによる計測。標準出力に出力されるsteps100%時点の時間は03:11(191秒)。|
+|RTX 4090|24GB|i9 12900|205.728|190|--xformers --batch_size 4|b755ebd0a4dd2967171b6b5909624325359a2aa0|Windows、Measure-Commandコマンドによる計測。標準出力に出力されるsteps100%時点の時間は03:10(190秒)。|
+|ARC A750|8GB|Ryzen9 5900X|2220||8bit系オプティマイザ使えないのでAdamW、batch_size=2--xformersなし --mem_eff_attn --cache_latents|sdxlブランチ1e395ed285385a17b39f3190b330220d29bde0ba|sdxlブランチのARC対応版をWSL2で torch==2.0.1a0+cxx11.abi torchvision==0.15.2a0+cxx11.abi intel_extension_for_pytorch==2.0.110+xpu -f https://developer.intel.com/ipex-whl-stable-xpu tensorboard==2.12.3 tensorflow==2.12.0 intel-extension-for-tensorflow[gpu]をpip install|
+|RTX 3090 x 2|24GB|Ryzen9 5950X|158.367||--xformers --batch_size 4|0cfcb5a49cf813547d728101cc05edf1a9b7d06c|torch:2.0.1 xformers:0.0.20 Ubuntu:22.04 Python:3.10.6  3090を2つ使った場合 accelerate configでmulti-gpuを選択|
+|RTX 3090|24GB|Ryzen9 5950X|271.047||--xformers --batch_size 4|0cfcb5a49cf813547d728101cc05edf1a9b7d06c|torch:2.0.1 xformers:0.0.20 Ubuntu:22.04 Python:3.10.6  PyTorch1系&xformers0.0.16だとlossがnanになる|
+|RX 6650XT|8GB|Ryzen 5 5600G|1086.079||--sdpa --cache_latents --gradient_checkpoint export PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.8,max_split_size_mb:256'|449ad7502cb0f36cd8b94b2c7d98ec204af234a9|torch: 2.0.1+rocm5.4.2 bitsandbytes-rocm3.7 origin/original-u-net|
+|RX 6650XT|8GB|Ryzen 5 5600G|949.325||--sdpa --train_batch_size=1 --cache_latents|449ad7502cb0f36cd8b94b2c7d98ec204af234a9|torch:2.0.1+rocm5.4.2 bitsandbytes-rocm3.7 origin/original-u-net|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X|444.127||--xformers --batch_size 2 --cache_latents||torch2.1,xformers0.0.19 cache_latentsオンで低解像度で大幅に高速化|
+|RTX 2060|6GB|Ryzen 5600X|1535.98||--xformers batch_size=2|||
+|RX 6650 XT|8GB|Ryzen 5 5600G|1458.670||--mem_eff_attn --max_data_loader_n_workers=8 --num_cpu_threads_per_process 12|5050971ac687dca70ba0486a583d283e8ae324e2|torch: 2.0.0+rocm5.4.2 Ubuntu20.04 python3.10 bitsandbytes-rocm3.7 画面出力iGPU|
+|RTX 2070 SUPER|8GB|Ryzen 7 5800X|736.307||--xformers batch_size=3||torch2.1,xformers0.17|
+|RX 6900 XT|16GB|Ryzen 5950X|692.561||--xformersなし --mem_eff_attn追加 環境変数'PYTORCH_HIP_ALLOC_CONF='garbage_collection_threshold:0.9,max_split_size_mb:512''||tensorflow-rocmとbitsandbytes-rocm(本家のissue#107にリンクあり)を使用する。bitsandbytesのモジュールは自動でビルドされないので、別にクローンしてビルドし、出来たものを'venv/lib/python3.10/site-packages/bitsandbytes/'に入れる。|
+|RTX 3060|12GB|Ryzen 3700X|1502.20|||71b728d5fcfe16f4434e2bf61e75cdfb76f93e14|16h25m2.20s ってテキストには書いてあった Windows11 pro|
+|RTX 3080Ti|12GB|i7 11700F|370.22|||||
+|GTX 1080Ti|11GB|i9 9900K|1647.76|||08ae46b|事前にbitsandbytesのGTX10シリーズ対応を実施済み|
+|RTX 2070|8GB|Ryzen 1700X|926.935||batch_size=3 use-8bit-adamなし gradient_checkpointing|08ae46b|WSL2|
+|GTX 1660|6GB|i5 12400|4640.38||batch_size=1 mixed_precision=no gradient_checkpointing|7c1cf7f4eaf011e3c90e163049f85bdbadb75ef2|GetStartTimeラベルだけ認識されないのでサブルーチンを前に持ってきた Windows11|
 ||||||||
 |}
 
