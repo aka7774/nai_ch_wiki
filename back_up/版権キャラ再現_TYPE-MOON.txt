@@ -86,6 +86,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(300px):備考|サンプル|
 |{{merlin (fate/prototype)}}, {{merlin (fate/prototype)(second ascension)}, [nero claudius(fate)], [[yumemi riamu]], {floating hair}, {medium hair}, {hair intakes}, {white hair}, ahoge, beautiful detailed pink eyes, solo, light smile,||Fate/Prototype|マーリン〔プロトタイプ〕|V1使用~~比較的安定？インテークにネロ王、ふわっとした髪に夢見りあむ要素を使用。服でまとめてある特殊なロングヘアーの完全再現は現状無理っぽいのでミディアムに散髪したと割り切る。たまにロングになるのでネガに{long hair}を入れるのもアリ。|https://image01.seesaawiki.jp/n/h/nai_ch/rqsf2Oez9x.png|
+|merlin (fate/prototype)|^|^|^|V3使用の簡易版。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/E0RXJny1vQ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/E0RXJny1vQ.png]]|
 |}
 
 ***　Fate/Grand Order（FGO）
@@ -139,6 +140,7 @@
 |{{{mash kyrielight}}}, light purple hair, short hair, middle breasts, purple eyes, glasses, ,bare shoulders, &#40;black dress, collared dress, sleeveless dress, red necktie,) black pantyhose, miniskirt, ,&#40;gray parka, long sleeves, open clothes, hooded parka),simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer,,year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed,||Fate/Grand Order|マシュ・キリエライト_私服|glasses,hair over one eyeはお好みで|https://image01.seesaawiki.jp/n/h/nai_ch/l3Bv3qw4Pd.png|
 |&#40;&#40;mash_kyrielight)),&#40;&#40;&#40;&#40;&#40;dangerous_beast))))),&#40;&#40;&#40;purple fur bikini laced by black strings))),purple eyes,hair over one eyes,short bob,purple wolf ears,~~ Purple fur collar,Purple fur-trimmed  elbow gloves,Purple fur-trimmed legwear,Purple fur on side of waist,~~Purple wolf tail,&#40;&#40;black strings lace up her body)),  &#40;&#40;&#40;best quality))), &#40;&#40;ultra-detailed)), &#40;&#40;illustration)),|glasses, long hair, braids hair, armor, armored leotard, fang, glow eyes,|Fate/Grand Order|マシュ・キリエライト(デンジャラスビースト)|V1使用~~紐とリボンは書き足して|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pR2Po52K8p-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pR2Po52K8p.png]]|
 |mash_kyrielight,purple eyes,hair over one eyes,|glasses,long hair,braids|Fate/Grand Order|マシュ・キリエライト(1〜3臨orオルテナウス改)|V1使用~~服装指定をしなければ概ね黒紫のアーマーを着てくれるが、形状は不安定~~人気キャラだが名前だけで生成すると意外ととっちらかる。~~ダンボール内で「mash kyrielight (dangerous beast)」で他キャラにコスさせる絵が大量にあるからか~~また、negativeにglassesを入れないと高確率で眼鏡をかける。私服状態を作りたいならポジティブに入れること |[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/reOLRIo5_u-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/reOLRIo5_u.png]]|
+|xu fu (fate),headwear,||Fate/Grand Order|徐福|headwearは無くても出るが、生成を繰り返すうちに何故かレオタード水着を着るようになるのでその防止用。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_Af05zywI0.png)|
 |}
 
 
