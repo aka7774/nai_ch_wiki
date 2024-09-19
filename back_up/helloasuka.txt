@@ -51,6 +51,7 @@ Steps: 28, Sampler: Euler, CFG scale: 12, Seed: 2870305590, Size: 512x512, Model
 ** 結果一覧
 
 - AMD勢はrocm版かdirectml版かによって速度が大きく変わるのでそれを書いてくれると嬉しい
+-- ROCm推奨。DirectMLはAMD,NVIDIA,Intel共にとても遅い。
 -- それとDirectML版を使うなら最新ドライバのインストール推奨やで
 
 

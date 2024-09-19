@@ -11,12 +11,10 @@
 
 ** Stable Diffusionのバージョン
 
-*** v1系
-
+*** SD1/SDXL
 - そのまま使える。
 
-*** v2系
-
+*** SD2
 - 使うためには同名のyamlファイルを設置する必要がある。
 - 大抵はモデルの配布元が配っている。
 -- 無い場合は SD2.xのyamlを使ってみるとか。
@@ -79,6 +77,13 @@ inpaint.ckptは普通のckptとは違うらしい。
 - 1ビットの符号と8ビットの指数部と7ビットの仮数部
 - fp32と指数部が一緒になる（ダイナミックレンジが広い代わりに仮数部が減ってるので小数点以下の表現力はfp16より少し落ちる）
 - IntelとNVIDIAのGPUで対応している
+- NaN演算を起こしづらい
+
+*** fp8
+- fp16の半分のメモリ使用量
+- だが精度も多少落ちる
+- Torchが自動でキャストするので非対応のGPUでも動作する。
+- NVIDIAのRTX4000以降であればそのまま動いて多少速くなる・・・はずがほとんどのソフトがfp8演算に非対応でfp16にアップキャストするのでむしろ遅くなる。
 
 ** ema
 
@@ -87,9 +92,9 @@ inpaint.ckptは普通のckptとは違うらしい。
 
 - どっちが学習向きなの？
 - 容量は変わらんやつがあるけどなんなん？
+- LoRA学習ではなくてもいい
 
 *** emaあり
-
 - モデルにトレーニング中のemaが付いている
 
 *** emaなし(no-ema)
@@ -101,6 +106,7 @@ inpaint.ckptは普通のckptとは違うらしい。
 - 生成に不要なデータを削除することで容量を削減すること
 - ファイル名に pruned をつけて一緒に配布されていることがある
 - 学習時には prune してないファイルがいいの？ 大差ないの？
+- LoRA学習ではprunedでもいい
 
 * VAE
 
@@ -124,7 +130,10 @@ inpaint.ckptは普通のckptとは違うらしい。
 - [[StableTuner]]
 
 ** マージ
+- [[Checkpoint Merger>ローカルのマージ]]
+- [[層別マージ>階層マージ]]
 
+[+] 古い情報
 標準Checkpoint Mergerにバグがあり、Add Differenceを使うとモデルが壊れていた。
 n番目のトークンが無視されたり効果が弱まったりする。nは不定(1や76以外もありうる)
 これは2023-01-15に修正された。(層別マージニキがプルリク送ってくれた)
@@ -132,9 +141,7 @@ n番目のトークンが無視されたり効果が弱まったりする。nは
 
 詳しい説明と修正方法はこちら。
 https://note.com/bbcmc/n/n12c05bf109cc
-
-- [[Checkpoint Merger>ローカルのマージ]]
-- [[層別マージ>階層マージ]]
+[END]
 
 * モデル配布
 
@@ -153,6 +160,7 @@ https://note.com/bbcmc/n/n12c05bf109cc
 - StableTunerが最も理想に近そうだけど学習しないと出力できない？
 - https://github.com/arenatemp/stable-diffusion-webui-model-toolkit
 -- これが決定版かも(未確認)
+-- 更新停止。一部のVAE焼き込み済みのcheckpointを読み込めない。
 - https://github.com/Akegarasu/sd-webui-model-converter
 -- EMAが壊れてるらしい
 - https://note.com/kohya_ss/n/nf5893a2e719c

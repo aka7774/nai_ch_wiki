@@ -73,6 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RX6700XT|12GB|Ryzen 5 2600X|271.74|ComfyUI Revision: 2701 [7183fd16]||Ubuntu 22.04.5 LTS,Python 3.10.12,ROCm 6.0.2.60002-115~22.04|
 |RTX 2080Ti|11GB|Core i5-13500|152.5|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |RX7800XT|16GB|Core i5-12600K|182.1|f1.0.1v1.10.1rc-1.10.1|--use-zluda|Windows 11, ZLUDA|
 |RTX 4080 SUPER|16GB|Core i7-6700K|61.2|v1.10.1|--xformers --precision half|CPU古い|
