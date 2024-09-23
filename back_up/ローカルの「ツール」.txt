@@ -273,10 +273,23 @@ https://www.msi.com/Landing/afterburner/graphics-cards
 パワーリミットをかけるには、FAN欄のPOWER LIMITの数値を変更して使用する。適用ボタンを押すのを忘れずに。
 （※なぜか強制的にリセットさせる現象が確認されているので、ファンがうるさいと思ったら確認がおすすめ。設定をプリセットに登録したらリセットされなくなったとの報告あり）
 * その他
+** 生成した画像に含まれる生成情報を削除するツール「remove-meta-alpha」
+https://github.com/Takenoko3333/remove-meta-alpha
 
-** PNG Infoを維持したままPNGをJPEGに変換するツール
+- 対応画像形式: JPEG, PNG, WEBP ※拡張子は小文字、大文字どちらにも対応しています。
+- メタデータの削除: 画像ファイルからメタデータを削除します。
+- アルファチャンネルの削除: 画像ファイルからアルファチャンネルを削除します。※NovelAI生成画像のアルファチャンネルに埋め込まれたメタデータの削除を目的としています。
+- 日時情報の保持: Windowsの場合はファイルの作成日時と更新日時を保持します。Mac, Linuxの場合は更新日時を保持します。
+- ファイル名: ファイル名の末尾に_rmが追加されます。拡張子は元の画像と同じものになります。
+
+** PNG Infoを維持したままPNGをJPEGに変換するツール「png2jpg-ai-image-metadata」
+https://github.com/Takenoko3333/png2jpg-ai-image-metadata
+
+- AI 生成画像のメタデータを保持して PNG を JPEG に変換します。
+- サブディレクトリを含めて一括変換が可能です。
+- PNG のメタデータを取得して JPEG の Exif に移植する機能を持つため、AI 生成画像以外のでもメタデータの保持目的で使用可能です。
+
 https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/148
-https://mega.nz/folder/uY42VJZa#7Hh0vTvhpa3poL_gNgzipg
 =|BOX|
 148 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f04-CAqR)[sage] 投稿日：2023/04/03(月) 15:34:05.12 ID:CsCA9lKv0
 前スレでリクエストのあった
@@ -285,12 +298,8 @@ PNG Infoを維持したままPNGをJPEGに変換するツール
 フォルダごとダウンロードして使ってくれ
 半分ChatGPTに聞きながら作ったけど間違ってるソースをドヤ顔で提示してくるから困ったもんやで
 https://mega.nz/folder/uY42VJZa#7Hh0vTvhpa3poL_gNgzipg
-
 ||=
-
-
 https://fate.5ch.net/test/read.cgi/liveuranus/1701916128/240
-https://mega.nz/folder/fVYhCLZa#ZDKcdjMxmjYGtRLvNDRwtA
 =|BOX|
 240 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a04-QDDZ)  2023/12/08(金) 05:15:54.76 ID:xRAxWwTe0
 以前公開したPNG Infoを維持したままJPGに一括変換するツールの改良版
@@ -301,6 +310,4 @@ Automatic1111でのPNG Infoやエクスプローラ等のでの参照は可能
 
 png2jpg改
 https://mega.nz/folder/fVYhCLZa#ZDKcdjMxmjYGtRLvNDRwtA
-
 ||=
-
