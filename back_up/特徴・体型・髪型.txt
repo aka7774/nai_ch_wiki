@@ -108,6 +108,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|{{{{{{{tons of tattoos all over her body, limbs, and face.}}}}}}}, demon girl, corruption, dark persona, bikini, long hair, wings, evil smile|悪堕ち風全身タトゥー|悪堕ち系で全身にタトゥーあるキャラが作りたくて、"full-body tattoo"のプロンプトだとキャラの全身が描写されてしまうのでそれを回避したく練ってみた。まだ改善の余地ありそう。|https://image01.seesaawiki.jp/n/h/nai_ch/YSX9QDQzaA.png https://image02.seesaawiki.jp/n/h/nai_ch/F2H5mSMwxv.png https://image02.seesaawiki.jp/n/h/nai_ch/nRbsiKtyAl.png|
 |facepaint|フェイスペイント|目の下や頬に模様が描かれる。フェイスタトゥーのような複雑な形状は描かれない。また、顔以外には模様が入らない。|https://image02.seesaawiki.jp/n/h/nai_ch/hJke0lcQyZ.png|
 |facial tattoo|顔の刺青|額や目の下から頬に刺青が入る。色指定しない場合、黒色で描写される。|https://image02.seesaawiki.jp/n/h/nai_ch/XQqBksSC2f.png|
 |a girl with extremely dirty back and arms by rainbow liquid, her body is the canvas of the art, eastern dragon tattoo picture is full of her back, naked, ultra-detailed tattoo, gigantic quality tattoo, ultra colourful with vivid red floral accented tattoo, stylized dragon face, colourful art|モンモン|クオリティ補助なし, PLMS & 低Scale でやるのが重要~~Steps: 23, Sampler: PLMS, CFG scale: 5, Size: 512x512|https://image02.seesaawiki.jp/n/h/nai_ch/zQF6vVW4LY.png|
