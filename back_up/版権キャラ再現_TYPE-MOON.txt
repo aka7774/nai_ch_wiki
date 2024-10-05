@@ -6,6 +6,7 @@
 *版権キャラ再現/TYPE-MOON
 
 ***　月姫
+&aname(hanken_typemoon_tsukihime)
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(300px):備考|サンプル|
 |official style, full-color, solo,{{arcueid brunestud, type moone}},very aesthetic, best quality, intricate, overall detail,white sweater,blue skirt, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, &#40;highly detailed),|3d,head_out_of_frame,multiple angle,blurry,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,text,error,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,missing fingers,bad hands,missing arms,|月姫|アルクェイド・ブリュンスタッド|V3使用|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HngZiJXAlJ.png )]]|
@@ -142,9 +143,5 @@
 |mash_kyrielight,purple eyes,hair over one eyes,|glasses,long hair,braids|Fate/Grand Order|マシュ・キリエライト(1〜3臨orオルテナウス改)|V1使用~~服装指定をしなければ概ね黒紫のアーマーを着てくれるが、形状は不安定~~人気キャラだが名前だけで生成すると意外ととっちらかる。~~ダンボール内で「mash kyrielight (dangerous beast)」で他キャラにコスさせる絵が大量にあるからか~~また、negativeにglassesを入れないと高確率で眼鏡をかける。私服状態を作りたいならポジティブに入れること |[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/reOLRIo5_u-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/reOLRIo5_u.png]]|
 |xu fu (fate),headwear,||Fate/Grand Order|徐福|headwearは無くても出るが、生成を繰り返すうちに何故かレオタード水着を着るようになるのでその防止用。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/_Af05zywI0.png)|
 |}
-
-
-
-
 
 

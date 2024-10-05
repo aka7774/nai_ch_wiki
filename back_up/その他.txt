@@ -5,7 +5,6 @@
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
-|フェラ|||||
 |ryona|||||
 |&#40;&#40;&#40;head-mounted display ))),&#40;metal skin),&#40;shiny skin),&#40;sliver skin)|&#40;&#40;&#40;&#40;eyes)))),&#40;&#40;&#40;&#40;eye)))),|サイクロップス先輩化|ロボットっぽいのが出る場合ネガティブに適当の強さのrobotを入れるといい|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/j95t8MV9B0.png)|
 ||def&#40;inf)degitnum_extendency-beksinskish-style-def&#40;inf)degitnum_extendency:10|一発で美麗に構図が決まるUC|画像は上から��tokyo-city、��food、��kafuu chino,gun shoot,�と�味しいヤミーの構文、�ゥ瀬ぅ淵潺奪�ペインティングNAIちゃん。全て1回目の出力結果(web版、add quality tags使用、steps:28、scales:11）。detailを上げたいときはextendencyの後の数字を増やす。|https://image02.seesaawiki.jp/n/h/nai_ch/9YUDM2RhS8.png https://image02.seesaawiki.jp/n/h/nai_ch/uYVKYLpd7k.png https://image01.seesaawiki.jp/n/h/nai_ch/Zrzax8Nym0.png https://image02.seesaawiki.jp/n/h/nai_ch/OLJQu8LRip.png https://image01.seesaawiki.jp/n/h/nai_ch/wRF5iloXuP.png|
@@ -37,8 +36,6 @@
 
 {| class="sort edit nanj_prompt_table"
 |~コマンド|意味|備考|サンプル|
-|||||
-|||||
 |{}|ワード内強調(複数可)|||
 |[]|ワード内弱体(複数可)|||
 |}
@@ -47,8 +44,6 @@
 
 {| class="sort edit nanj_prompt_table"
 |~コマンド|意味|備考|
-||||
-||||
 |illustration|||
 |stylish|||
 |detail|||
@@ -178,6 +173,9 @@
 |masterpiece, {novelAI}, 1girl, holding_pen, painting_(action), canvas_(object), {robot_joints}, cyborg ,drawing, paintbrush, beret, [glowing_eyes], double-breasted, detached_sleeves, silver long_hair, hair_between_eyes, yellow minion bigbird||NAIちゃん||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wbkPS0mo64-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wbkPS0mo64.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/atXAhUnEZV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/atXAhUnEZV.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/12c8rcmHl0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/12c8rcmHl0.png]]|
 |masterpiece, lewdness,{novelAI}, 1girl, full body, Chibi, {robot_joints}, cyborg , beret, [glowing_eyes], double-breasted, detached_sleeves, silver long_hair, hair_between_eyes,||チビNAIちゃん||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YaPp4eWNYR.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YaPp4eWNYR.png]]|
 |} 
+
+
+
 
 
 
