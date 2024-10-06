@@ -1,0 +1,48 @@
+*どこにあるの？
+https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
+
+*プロンプトの書き方
+Animagine-XLに似た独特のプロンプトルールあり
+
+プロンプトは以下の並びで学習されているが、これに従う必要はない。
+ 人数, キャラクター名, レーティング, 一般タグ, アーティスト, 品質タグ, 年代 
+
+** 品質タグ
+worst quality(~8%)、bad quality(~20%)、average quality(~60%)、good quality(~82%)、best quality(~92%)、masterpiece(~100%)
+の六つがある。
+
+** 年代タグ
+oldest(~2017年)、old(~2019年)、modern(~2020年)、recent(~2022年)、newest(~2023年)
+
+** レーティング
+general(健全)
+sensitive(露出度高めの衣装、下着が見える状態など)
+questionable(乳首の露出、露出度が高い衣装など)
+explicit(性行為、性器の露出、グロ、スカなど)
+詳しくはdanbooruのhowto:rateを参照。
+
+*推奨事項
+CFG Scaleは5〜7.5、Euler aで20-28ステップ。
+VAEは内蔵してるのか指定しなくても(1111だとNone)動く。未指定ならNo-half VAEは不要。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。
+
+*意図しない絵柄の変化
+ベースモデルとして開発されたため画風は多様である。
+年代タグ、品質タグやアーティスト名で変化を抑えられる。
+
+* トラブルシューティング
+** 抽象画になる
+Settings->Optimizations->「Pad prompt/negative prompt」をオフにする。
+
+** 特定のプロンプトでノイズまみれになる
+稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
+hakomikan氏によると、1111 WebUI側のバグらしい。特定のプロンプトの組み合わせでテンソルの値が壊れて破綻を引き起こす。
+わかりやすく言うと、プロンプトの組み合わせによってはプロンプトの強度指定時にWebUIの不具合で実際の強度がおかしくなる。
+https://note.com/hakomikan/n/nb6dd68a1bd9e
+
+***解決策
+WebUI 1.7以前であれば、プロンプトの語順を変えてみるか以下のExtensionを導入する。
+https://github.com/hako-mikan/sd-webui-prevent-artifact
+1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。
+
+
+

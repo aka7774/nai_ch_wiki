@@ -25,7 +25,7 @@
 https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 リークの影響で9月21日ごろからアーリーアクセス版として公開されていた。
 SDXLモデルでイラストに非常に強い。
-
+詳細は[[illustrious_xl_01tips]]に。
 **2024-09-07 ebara_ponyのリポジトリが消滅
 突如としてHugging Faceのアカウントごと消えた。これによりすべてのebara_ponyは入手できなくなった。
 数日後にCivitaiで全バージョンが公開されたが、アップしたのが本人なのかは不明。（名前からして転載だとは思うが…）
@@ -1984,6 +1984,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
