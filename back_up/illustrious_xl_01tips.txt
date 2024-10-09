@@ -1,6 +1,11 @@
 *どこにあるの？
 https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 
+* 概要
+韓国Onoma AIがkohaku-xl-beta5をファインチューンしたモデル。
+データセット「Danbooru2023」で学習しており、生成できるキャラやシチュエーションの種類が非常に多い。
+ちなみに、Danbooru2023で学習したと書いたが、2024年2月頃までに登場した一部のキャラも生成できる。
+
 *プロンプトの書き方
 Animagine-XLに似た独特のプロンプトルールあり
 
@@ -19,7 +24,7 @@ general(健全)
 sensitive(露出度高めの衣装、下着が見える状態など)
 questionable(乳首の露出、露出度が高い衣装など)
 explicit(性行為、性器の露出、グロ、スカなど)
-詳しくはdanbooruのhowto:rateを参照。
+詳しくはdanbooru wikiのhowto:rateを参照。
 
 *推奨事項
 CFG Scaleは5〜7.5、Euler aで20-28ステップ。
@@ -28,6 +33,9 @@ VAEは内蔵してるのか指定しなくても(1111だとNone)動く。未指�
 *意図しない絵柄の変化
 ベースモデルとして開発されたため画風は多様である。
 年代タグ、品質タグやアーティスト名で変化を抑えられる。
+
+* 苦手な題材
+背景(特に屋外)の生成は苦手な印象。
 
 * トラブルシューティング
 ** 抽象画になる
