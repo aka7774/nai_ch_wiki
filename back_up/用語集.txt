@@ -16,7 +16,6 @@
 |Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
 |DiT|Diffusion Transformer|生成AIのアーキテクチャの一つ。SD1,2,XLで使用されるU-Netより高性能で最近の多くの画像生成AIはこれを採用している|
 |DoRA|Weight-Decomposed Low-Rank Adaptation|LoRAの改良版。学習の安定性と低ランクでの性能が向上する。|
-|e4p||PonyDiffusionV6XLの派生モデル|
 |ebara|ebara_pony|Pony Diffusionの派生モデル。配布先は消滅|
 |FT|Fine-tuning|モデルのウェイトを調整する。|
 |Flux|FLUX.1|パラメータ数120億のオープンな画像生成AI。SD3と同じDiffusion Transformerを採用する。|
@@ -24,7 +23,6 @@
 |Hyper-SD||Stable Diffusionの亜種で、高速サンプリング(収束が速くなる)ができるモデル|
 |i2i|img2img|Image to Image 元画像とプロンプトから画像を生成すること。|
 |inpaint||i2iの1形態。元画像の一部を指定して画像を生成すること。|
-|Illustrious/イラストリアス/ill|[[Illustrious-XL>illustrious_xl_01tips]]|SDXLベースのアニメモデル|
 |kohya||人名。でもツール(kohya-ss/sd-scripts)の名前として呼ばれがち。また、sd-scriptsを利用するためのbmaltais版WebUIを指すこともある。|
 |LCM|Latent Consistency Model|Stable Diffusionの亜種で、高速サンプリング(収束が速くなる)ができるモデル|
 |LoCon|LoRA for Convolutional Network|LoRAでは学習できていない領域(畳み込み層)まで拡張して学習するやつ。|
@@ -51,11 +49,10 @@
 |XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。そのテスト版のSDXL 0.9を指す場合もあったが、こちらはほとんど使われていない|
 |赤ちゃん||初心者など難しい設定が困難である人。簡易インストーラー全般。「赤ちゃん向け」は初心者でも簡単に使用できることを意味する。由来は[[浦島太郎のために]]を参照 |
 |アナル|Anlas|NovelAI公式の課金通貨。|
-|イラストリアル|[[Illustrious-XL>illustrious_xl_01tips]]|イラストリア''ス''の間違い|
 |浦島太郎||長期間離れてて遅れた人を指すのだが、技術革新が速すぎるので一晩で浦島太郎になったりする。 |
-|ガビる||スレ内においては、出力がAI特有のノイズまみれになることを指す場合が多い。|
 |ギップル|git pull|リポジトリの変更をプル(ローカルに反映)するコマンド|
 |コピー機||シード値固定や過学習などによって似たような絵を連続出力すること。由来は[[浦島太郎のために]]を参照 |
+|サンイチ||5ちゃんねるのスレッドを立てた人に対して感謝の意を示すなんでも実況板特有のネットスラング。(AIと関係ないけど一応載せておく)|
 |層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
 |ちびたい|[[Civitai>https://civitai.com/]]|モデル配布サイト|
 |風船/&#127880;||排泄物を指す。閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
