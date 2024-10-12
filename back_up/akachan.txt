@@ -44,14 +44,46 @@ https://novelai.net/
 と思ったらローカルでまともなアニメモデルが出た影響で流行は終わったみたいやな
 特にこだわりもなくただ単に絵を生成したいだけならNovelAIで十分。
 
+*** NovelAI以外のサービス
 
-** 1111をインストールする(おすすめ度:★★★)
+いろいろあるから好きなの選ぶといいけど叡智なやつはNovelAIしか出せません
+
+- Midjourney
+-- https://www.midjourney.com/home
+- DALL-E 3
+-- https://openai.com/index/dall-e-3/
+- Bing Image Creator
+-- https://www.bing.com/images/create
+- Grok 2
+-- twitterについてるやつ(有料)
+
+** なんかをインストールする(おすすめ度:★★★)
+
 ※1111は略称。本来の名称はAUTOMATIC1111 Stable Diffusion web UI
 
 まずは[[ローカルの導入方法]]の簡易インストールが楽ちん。
+今はもっといろんな入れ方があるかも？
 
-SDXLを使うなら最適化されたフォーク版のForgeもいいぞ。
-https://github.com/lllyasviel/stable-diffusion-webui-forge
+*** 2024年10月現在の選択肢
+
+- 本家
+-- あんまり更新が無い
+-- https://github.com/AUTOMATIC1111/stable-diffusion-webui
+- forgeの最新版
+-- 更新が頻繁で対応機能が少ない
+-- https://github.com/lllyasviel/stable-diffusion-webui-forge
+- 古いforge
+-- forge入れてから git checkout -b old-stable 29be1da7cf2b5dccfc70fbdd33eb35c56a31ffb7
+-- 古いextensionとかが動くかも
+-- エラー出るかも
+- reforge
+-- 古いforgeのかわり
+-- https://github.com/Panchovix/stable-diffusion-webui-reForge
+- ComfyUI
+-- 素人にはおすすめできない
+-- https://github.com/comfyanonymous/ComfyUI
+
+
 
 - GeForce RTXが無いとしんどい
 -- Radeonで頑張る人は[[ローカルをRadeonで]]
@@ -66,7 +98,8 @@ https://github.com/lllyasviel/stable-diffusion-webui-forge
 - 誰にも見られない
 -- 変なものを入れない限り、生成した絵が勝手に送信されるとかは無いので自家消費に最適
 
-
+古い
+[+]
 ** Colabを使う(おすすめ度:★★☆)
 
 [[ローカルをクラウドで]]のページで説明してある。
@@ -112,16 +145,39 @@ https://nmkd.itch.io/t2i-gui
 
 具体的な手順は、としあきが詳しい。
 
+** Foooocus
+
+わからん
+[END]
 
 * 最初に使うモデル
 ここから下はローカルでやるニキ向けの情報や
 
 モデルの詳しい説明は[[Models]]に書いてある。
-Stable DiffusionのバージョンはSD1.X,SD2.X,SDXLがあって、現時点で本スレではSDXLが主流。
-SDXLは高性能で重いが急速に発展してる。2.Xは息してない。
 
+*** 2024年10月現在の選択肢
+
+- Animagine XL 3.1
+-- 綺麗めな立ち絵がすぐ出るけど表現の幅が狭い
+-- 2024年春の主流ってイメージ
+- Pony系
+-- 頑張ればいろいろ出せる
+-- 派生モデルがいろいろある
+-- 2024年夏の主流ってイメージ
+- SD3
+-- がんばれ
+- FLUX
+-- 精細な画像が出る
+-- 重かったけど軽くなった？
+- Illustrious
+-- いろいろ出せる
+-- 2024年秋の主流になるかもってイメージ
+- SD1.5
+-- 陳腐化したけど軽いからGPUが乏しいならここから試してもいいと思う
+
+古い
+[+]
 [[スレ民共有モデル]]と[[ローカルのリソース]]のうち、特にこれらがおすすめ。
-
 
 ** Animagine XL 3.0
 - https://huggingface.co/cagliostrolab/animagine-xl-3.0
@@ -151,7 +207,7 @@ AOM3が出てる(未評価)
 - https://huggingface.co/nuigurumi/basil_mix
 - リアル系モデルの傑作。Almond/cinnamonとプロンプトが使いまわしやすいのがいいところ。
 - danbooru語が使えて、二次用のLoRAが流用できる
-
+[END]
 
 * 技術の使い分け
 
