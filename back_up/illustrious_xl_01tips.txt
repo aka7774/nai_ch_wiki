@@ -50,8 +50,8 @@ v0.1はテスト用のモデルのため仕様である。
 年代タグ、品質タグやアーティスト名で変化を抑えられる。
 
 ** 苦手な題材
-背景(特に屋外と風景画)がやや苦手な印象。Negative Promptにsimple backgroundを入れると少しマシになる。
-適当な画像でファインチューンするだけで多少改善するので多様な画風の弊害？
+背景は具体的に指示しないと地味になりがち。Negative Promptにsimple backgroundを入れるとマシになる。
+適当な画像でファインチューンするだけで多少改善するので多様性の弊害？
 
 * トラブルシューティング
 ** 抽象画になる
@@ -64,7 +64,7 @@ hakomikan氏によると、1111 WebUI側のバグらしい。特定のプロン�
 https://note.com/hakomikan/n/nb6dd68a1bd9e
 
 ***解決策
-WebUI 1.7以前であれば、プロンプトの語順を変えてみるか以下のExtensionを導入する。
+WebUI 1.7以前であれば、プロンプトの語順を変えるか以下のExtensionを導入する。
 https://github.com/hako-mikan/sd-webui-prevent-artifact
 1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。
 
