@@ -85,6 +85,8 @@ inpaint.ckptは普通のckptとは違うらしい。
 - Torchが自動でキャストするので非対応のGPUでも動作する。
 - NVIDIAのRTX4000以降であればそのまま動いて多少速くなる・・・はずがほとんどのソフトがfp8演算に非対応でfp16にアップキャストするのでむしろ遅くなる。
 
+[+] 古い情報
+SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98GiB)、SDXLなら6.94GB(6.46GiB)前後になる。
 ** ema
 
 - Exponential Moving Average(指数移動平均)の略
@@ -107,6 +109,7 @@ inpaint.ckptは普通のckptとは違うらしい。
 - ファイル名に pruned をつけて一緒に配布されていることがある
 - 学習時には prune してないファイルがいいの？ 大差ないの？
 - LoRA学習ではprunedでもいい
+[END]
 
 * VAE
 
