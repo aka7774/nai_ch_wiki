@@ -109,8 +109,11 @@ Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減
 *** 対応GPU
 
 - NVIDIA
-- GeForce GTX 1000(Pascal)、RTX 2000(Turing)シリーズ以降
-- GeForce 900番台以前でも動くけど逆効果だったという報告あり
+-- GeForce GTX 1000(Pascal)、RTX 2000(Turing)シリーズ以降
+-- GeForce 900番台以前でも動くけど逆効果だったという報告あり
+
+- AMD
+-- ついにAMDグラボも対応した。Torch 2.4.1,ROCm6.1対応のv0.0.28がリリースされた。
 
 *** 導入方法
 初めて導入する場合

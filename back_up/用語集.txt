@@ -35,12 +35,12 @@
 |PEFT|Parameter Efficient Fine Tuning|LoRA・LoCon・LoRA-FAその他様々な亜種のように、少ないパラメーターで全体を学習するような仕組みのこと|
 |pony|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|SDXLベースのアニメ/カートゥーンモデル|
 |SAI|Stability AI|Stable Diffusionの開発元|
+|Sana||NVIDIAなどが開発したDiTを用いた画像生成AI。軽量であることが売り。2024年10月18日時点でまだリリースされていない。|
 |SD|Stable Diffusion|単なる略称|
 |SD2|Stable Diffusion 2|SD1の後継。だったがSD1からの目立った変化がなかったため流行らなかった。|
 |SD3|Stable Diffusion 3|Stability AIが2024年2月に発表、6月にリリースされたStable Diffusionの新バージョン。SDXLを上回る性能を誇る。|
 |SD3M|Stable Diffusion 3 Medium|数種類あるStable Diffusion3のうちパラメータ数20億のもの。|
 |SFW|Safe for work|こっちはNがついてなくて全年齢|
-|TI|Textual Inversion|学習方法の1つ。今ではLoRAが主流になってほとんど見ない|
 |t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
 |uc|unconditional conditioning|Negative Promptと同義|
 |UC L+B|Undesired Content Low Quality + Bad Anatomy|NovelAIの定型のネガティブプロンプト。|
@@ -71,13 +71,14 @@
 |DB|Dreambooth|学習方法の1つ。LoRAの普及で廃れた。|
 |DA|DreamArtist|学習方法の1つ。LoRAの普及で廃れた。|
 |HN|Hypernetwork|学習方法の1つ。LoRAの普及で廃れた。|
+|TI|Textual Inversion|学習方法の1つ。LoRAの普及で廃れた。|
 |NAIFU|NovelAI AI Image Frontend Ultimate|NovelAI V1のエミュレーターの一つ。|
 |ST|Stable Tuner|学習方法の1つ。kohya系。|
 |WD|Waifu Diffusion|SD1の初期に出たアニメモデル。ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
 |web版||NovelAIを公式サイト上で利用することを指すことが多い。SD1が主流だった頃、本家とリーク版が存在したため生まれた呼称。SDXLが普及した今では単にNAIと呼ぶ。|
 |お馬さん|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|ponyと同義。XL用モデル。今は単にponyと呼んでいる。|
 |金脈|[[SD RESOURCE GOLDMINE>https://github.com/questianon/sdupdates]]|Stable Diffusionに関連するすべてのリソースとニュースを集めた総合的なサイト。1111を中心としてる。2023年から更新されておらず、XLが普及した今は完全に時代遅れとなっている|
-|妖精さん||1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
+|妖精さん||高性能なSDXLはこの現象がほとんど発生しない。そのためSDXLが主流になった今は見かけない。1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
 
 [END]
 

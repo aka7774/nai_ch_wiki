@@ -21,6 +21,13 @@
 
 #contents
 *2024年
+**2024-10-11 negpipがFLUX.1に対応
+ネガティブプロンプトより強力に要素を排除できるWebUI/Forge用拡張機能の「Negpip」がFLUX.1にも対応した。これにより、ネガティブプロンプトを使えないFLUX.1でも実質的にネガティブプロンプトの指定が可能になった。
+現在Automatic1111 WebUIはFLUX.1を扱えないため、Forge（v2.0〜）にのみ恩恵がある。
+
+- Negpipiのレポジトリ… https://github.com/hako-mikan/sd-webui-negpip （「拡張機能（Extensions）」タブ−「拡張機能リスト（Available）」タブ−「読込（Load from:）」ボタン−検索欄に「negpip」と入力すると拡張機能一覧が絞り込まれ、「インストール（Install）」ボタンからインストールできる）
+- 技術解説…「NegPiPの仕組みとFLUX対応」 https://note.com/hakomikan/n/n19dfd2cfabbc
+
 **2024-09-30 Illustrious XL v0.1が正式に公開される
 https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 リークの影響で9月21日ごろからアーリーアクセス版として公開されていた。
@@ -1984,6 +1991,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
