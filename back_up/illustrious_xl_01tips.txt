@@ -1,10 +1,13 @@
 *どこにあるの？
 https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 
+論文: https://arxiv.org/pdf/2409.19946
+
 * 概要
 韓国Onoma AIがkohaku-xl-beta5をファインチューンしたSDXLベースのアニメモデル。
 データセット「Danbooru2023」で学習しており、生成できるキャラやシチュエーションの種類が非常に多い。
 ちなみに、Danbooru2023で学習したと書いたが、2024年2月頃までに登場した一部のキャラも生成できる。
+リポジトリに"We plan to release several aesthetic-finetuned model variants in near future. "と書いてあるが、V1以降は生成サービスの提供のみとなるかもしれない。
 
 *プロンプトの書き方
 Animagine-XLに似た独特のプロンプトルールあり
