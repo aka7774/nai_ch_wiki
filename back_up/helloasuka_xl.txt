@@ -73,7 +73,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
-|RTX 3050|6GB|Ryzen 5 5500|561.3|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%　※メモリーが遅く小容量（DDR4-2400,16GB）|
+|RTX 3050|6GB|Ryzen 5 5500|561.3|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%
+※メモリーが遅く小容量（DDR4-2400,16GB）→（DDR4-3200,32GB に交換しても殆ど変わらず：556.1 秒）|
 |RTX 4070|12GB|Core i3-12100F|95.3|f2.0.1v1.10.1-previous-561-g82eb7566 (2024/10/10)||Forge|
 |RTX 4070|12GB|Core i3-12100F|94.3|f1.0.2-v1.10.1RC-latest-697-g037b6482 (2024/10/8)||reForge(main)|
 |RTX 4070|12GB|Core i3-12100F|94.5|f0.0.17v1.8.0rc-previous (2024/6/27)||旧Forge|
