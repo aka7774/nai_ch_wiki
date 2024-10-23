@@ -24,7 +24,7 @@
 ** 2024-10-22 Stable Diffusion 3.5が公開
 ブログ: https://ja.stability.ai/blog/introducing-stable-diffusion-3-5
 SD3.0のいくつかの問題に対処し、品質が向上したSD3の新バージョン。
-現時点でパラメータ数8BのLargeのみ公開。パラメータ数2.5BのMediumは11月29日公開予定。
+現時点でパラメータ数8BのLargeのみ公開。パラメータ数2.5BのMediumは10月29日公開予定。
 
 **2024-10-11 negpipがFLUX.1に対応
 ネガティブプロンプトより強力に要素を排除できるWebUI/Forge用拡張機能の「Negpip」がFLUX.1にも対応した。これにより、ネガティブプロンプトを使えないFLUX.1でも実質的にネガティブプロンプトの指定が可能になった。
