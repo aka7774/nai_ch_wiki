@@ -314,15 +314,15 @@ SchedulerにSimpleを使うとさらに良くなる。
 LCM、TurboやHyper-SDはさらに速い。出力を大きく変化させたり相性の良し悪しがあったりする代わりに10steps未満でまともな絵がでる。
 
 * WebUIを高速なストレージに入れる
-シーケンシャル3GB以/s上のSSDに配置することで読み込みを高速化する。大容量なSDXLに効果的。
+シーケンシャル3GB以/s上のSSDに配置することで読み込みを高速化する。大容量なSDXLで効果的。
 
 * メインメモリを使う
 
 モデルのロード時間を短縮するために、あらかじめRAMに読みこんでおくことが出来る。
 
-Settings - Stable Diffusion
-- Checkpoints to cache in RAM
-- VAE Checkpoints to cache in RAM
+Settings->Stable Diffusion
+- Maximum number of checkpoints loaded at the same time
+一度に読み込んでおけるcheckpointの数を設定できる。値が1でも読み込んだことのあるcheckpointは読み込み時間が短縮される。
 
 SuperMergeでもモデル3つのトリプルマージまでRamで高速化できるようになった。
 詳しくは [[ローカルのExtensions]] の SuperMerger を参照。
