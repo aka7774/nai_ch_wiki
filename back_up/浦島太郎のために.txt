@@ -21,7 +21,12 @@
 
 #contents
 *2024年
-** 2024-10-22 Stable Diffusion 3.5が公開
+** 2024-10-30 Stable Diffusion 3.5 Mediumが公開
+リポジトリ: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
+SD3.5のパラメータ数25億のMediumがリリースされた。
+Largeと異なりMMDiT-Xアーキテクチャを採用しており、複数の解像度の対応と全体的な一貫性を改善しているとのこと。
+
+** 2024-10-22 Stable Diffusion 3.5 Largeが公開
 ブログ: https://ja.stability.ai/blog/introducing-stable-diffusion-3-5
 SD3.0のいくつかの問題に対処し、品質が向上したSD3の新バージョン。
 現時点でパラメータ数8BのLargeのみ公開。パラメータ数2.5BのMediumは10月29日公開予定。
