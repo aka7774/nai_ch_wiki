@@ -87,4 +87,5 @@ https://civitai.com/models/820208/obsession-illustrious-xl
 ***NoobAI-XL (NAI-XL)
 https://civitai.com/models/833294/noobai-xl-nai-xl
 ベースモデルにDanbooruとe621のデータセットでトレーニングを施したもの。（制作中）
-10/28現在Ver0.5とVer0.75がアーリーアクセスとなっており、それぞれ癖が違う。
+11/4現在Ver0.5とVer0.75とVer1.0がアーリーアクセスとなっており、それぞれ癖が違う。
+データ量の増加によりillustriousV0.1の特徴「キャラやシチュエーションの幅は広いが制御が難しい」が純粋強化されたじゃじゃ馬で、こちらも主に使用感向上を目的とした派生モデルが複数存在する。
