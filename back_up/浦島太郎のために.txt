@@ -21,6 +21,12 @@
 
 #contents
 *2024年
+**2024-11-03 NoobAI 1.0が公開される
+- https://civitai.com/models/833294
+アーリーアクセス版、0.5、0.75が公開されていたNoobAIの完成版となる1.0が公開された。
+今後はv-predictionバージョンや専用ControlNetを開発するとのこと。
+
+
 ** 2024-10-30 Stable Diffusion 3.5 Mediumが公開
 リポジトリ: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 SD3.5のパラメータ数25億のMediumがリリースされた。
@@ -41,6 +47,7 @@ SD3.0のいくつかの問題に対処し、品質が向上したSD3の新バー
 **2024-10-08 NoobAI-XLのアーリーアクセス版が公開される
 - https://civitai.com/models/833294
 [[Illustrious>illustrious_xl_01tips]]の派生モデル。キャラクターの表現などが強化されている。
+
 **2024-09-30 Illustrious XL v0.1が正式に公開される
 https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 リークの影響で9月21日ごろからアーリーアクセス版として公開されていた。

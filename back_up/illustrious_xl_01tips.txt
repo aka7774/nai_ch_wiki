@@ -1,6 +1,5 @@
 *どこにあるの？
-https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
-
+リポジトリ: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 論文: https://arxiv.org/pdf/2409.19946
 
 * 概要
@@ -57,21 +56,16 @@ v0.1はテスト用のモデルのため仕様である。
 適当な画像でファインチューンするだけで多少改善するので多様性の弊害？
 
 * トラブルシューティング
+SDXL共通のトラブルシューティングについては[[こちらを参照>SDXL]]
+
 ** 抽象画になる
-Settings->Optimizations->「Pad prompt/negative prompt」をオフにする。
+プロンプトのトークン数が76以上で以下のようになる。
+Settings->Optimizations->「Pad prompt/negative prompt」をオフにすると解消する。
+[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ws3u5Nknyg-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/ws3u5Nknyg.jpg]]
 
-** 特定のプロンプトでノイズまみれになる
-稀に黒い画像やノイズのみの画像が生成されてしまう事がある。
-hakomikan氏によると、1111 WebUI側のバグらしい。特定のプロンプトの組み合わせでテンソルの値が壊れて破綻を引き起こす。
-わかりやすく言うと、プロンプトの組み合わせによってはプロンプトの強度指定時にWebUIの不具合で実際の強度がおかしくなる。
-https://note.com/hakomikan/n/nb6dd68a1bd9e
-
-***解決策
-WebUI 1.7以前であれば、プロンプトの語順を変えるか以下のExtensionを導入する。
-https://github.com/hako-mikan/sd-webui-prevent-artifact
-1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。
 
 *派生モデル
+人気なものをいくつかをピックアップ。
 ***Illustrious-XL SmoothFT（SmoothFT-SPO）
 https://civitai.com/models/811067/illustrious-xl-smoothft?modelVersionId=907264
 通称SPO。画質を向上させるために最低限の変更を加えたもの。
@@ -86,6 +80,7 @@ https://civitai.com/models/820208/obsession-illustrious-xl
 
 ***NoobAI-XL (NAI-XL)
 https://civitai.com/models/833294/noobai-xl-nai-xl
-ベースモデルにDanbooruとe621のデータセットでトレーニングを施したもの。（制作中）
-11/4現在Ver0.5とVer0.75とVer1.0がアーリーアクセスとなっており、それぞれ癖が違う。
+ベースモデルにDanbooruとe621のデータセットでトレーニングを施したもの。
+2024/11/04現在、0.5,0.75,1.0,v-predictionテスト版の四種が公開されておりそれぞれ癖が違う。さらなる改良も予定ありとのこと。
 データ量の増加によりillustriousV0.1の特徴「キャラやシチュエーションの幅は広いが制御が難しい」が純粋強化されたじゃじゃ馬で、こちらも主に使用感向上を目的とした派生モデルが複数存在する。
+

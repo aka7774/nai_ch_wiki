@@ -28,7 +28,7 @@ Stability.ai公式
 ** AUTOMATIC 1111
 *** VRAM8GBで動かす方法
 1.webui-user.bat(Linuxはwebui-user.sh)のCOMMANDLINE_ARGSに--medvram-sdxl --precision halfを追加
-2(任意だが推奨).NVIDIA コントロールパネルの3D設定で「CUDA - システム メモリ フォールバック ポリシー」を「システム メモリ フォールバックなしを優先」にする
+2(任意).NVIDIA コントロールパネルの3D設定で「CUDA - システム メモリ フォールバック ポリシー」を「システム メモリ フォールバックなしを優先」にする
 3.VAEは[[sdxl-vae-fp16-fix>>https://huggingface.co/madebyollin/sdxl-vae-fp16-fix]]を使う
 4(任意).内蔵グラフィック搭載CPUならマザーボードの映像端子で映像を出力する。PC起動中につなぎなおした場合は再起動する
 環境によるが、これで832x1216のhighres2倍が動くはず。動かないならTiled VAEを有効にする
@@ -84,6 +84,26 @@ js2pronyVAEなし
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/FCIrGc5hsm-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/FCIrGc5hsm.png]]
 js2pronyVAEあり
 
+*トラブルシューティング
+**真っ黒になる
+Stability AI(SDXL base)のVAEはfp32(float)前提のためか、fp16では桁あふれによるNaN演算で動かない。
+SDXL Base以外にCivitaiにあるほぼ全てのSDXL用VAEがその影響を受ける。
+
+***解決策
+No-Half VAEを有効にする。なお、fp32で動かすことになるので''VAEのVRAM使用量や計算量が2倍以上になる''
+それを修正しfp16で動くものがあるのでそちらの使用をおすすめする
+https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
+
+** 特定のプロンプトでノイズまみれになる
+稀に以下の画像のように、黒い画像やノイズのみの画像が生成されてしまう事がある。
+[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/697BM5HcUK-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/697BM5HcUK.jpg]]
+hakomikan氏によると、1111 WebUI側のバグらしい。特定のプロンプトの組み合わせでテンソルの値が壊れて破綻を引き起こす。
+わかりやすく言うと、プロンプトの組み合わせによってはプロンプトの強度指定時にWebUIの不具合で実際の強度がおかしくなる。
+https://note.com/hakomikan/n/nb6dd68a1bd9e
+
+***解決策
+WebUIのSettings->Stable diffusion->Emphasis modeをNo normにする。
+
 * SDXLの学習
 [[ローカルの学習>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac]]
 ※SDXL学習特有の問題点については編集時点で本スレで試行錯誤中
@@ -92,3 +112,6 @@ js2pronyVAEあり
 Kohya_LoRA_GUI使用時のVRAM8GB対策
 GUI作者からの追記:8GB用のプリセットでVRAM不足になる場合はsd-scriptsを更新してください。VRAM消費が多いバグが修正されています。
 >~~0574今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 868c-Jm4m)~~2024/01/15(月) 18:08:10.63ID:vI2UfoaK0~~>>573~~8GB学習行けたんか？~~差しつかえなければ設定教えてほしいで~~ ~~0586今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fee7-h3fU)~~2024/01/15(月) 19:12:32.30ID:K9MCdvrk0~~>>574~~313スレ39のプリセットに8GB用あるで~~ ~~0039今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df30-Qq59)~~2024/01/11(木) 10:12:37.38ID:Zvz0VIQ60~~LoRA学習GUI用のサンプルプリセットにXL向けも置いてるで~~https://mega.nz/folder/ILdnzaxT#gTGQmcPUgdxKlLpIl9x__g
+
+
+
