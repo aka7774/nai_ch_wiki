@@ -52,16 +52,13 @@ Setting>saving images/grids>「Images filename pattern」で以下のタグを�
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/r1ZnBOGeXB.png)
 
 フォルダ名もSetting>Saving to a directory>「Directory name pattern」で同じように設定できる
-Windowsにはファイル名/フォルダ名は異本的に256文字までという制限があるので長すぎると途中で端折られる
+Windowsにはファイル名/フォルダ名は通常256文字までという制限があるので長すぎると途中で端折られる
 
 
 ** VAEの設定
-
-もうVAEはSettingsで指定できるから、ckptと同じ名前にしてコピーしまくる必要は無くなったんやでー
-
-- auto: 以前と同じ(モデル名と同名のvae.ptファイルを読み込む)
-- 指定: モデルにかかわらず指定したvaeを読み込む
-- none: モデル埋め込みのものを使用
+- Auto: models/Stable-diffusionにある「Checkpointと同名.vae.pt/safetensors」を読み込む
+- 指定: Checkpointにかかわらず指定したVAEを読み込む
+- None: Checkpoint埋め込みのものを使用
 
 ** PNG infoでText2Imgに送るとckptまで変更されてロード始めるのを回避したい
 設定→UI設定
@@ -75,7 +72,7 @@ When reading generation parameters from text into UI (from PNG info or pasted te
 * 高解像度で出力したい
 
 SD1.5以下のモデルは、縦横の両方が512を超えていると破綻しやすくなると言われています。
-NovelAIは基本512x768で、たとえばフルHDで出そうとするとほぼ確実に破綻するでしょう。
+NovelAI V1は基本512x768で、たとえばフルHDで出そうとするとほぼ確実に破綻するでしょう。
 また、所要時間とVRAM消費は解像度に比例して増えていきます(縦横2倍なら4倍)
 
 まず、破綻しない生成サイズを決める。
@@ -96,7 +93,7 @@ ui-config.json で変えられる
  "txt2img/Height/maximum": 2048,
 ||=
 
-** Highres. fixを使う
+** Hires. fixを使う
 
 最終的に出力したい解像度を出せるだけのGPUがあって、精細な絵を出したいならこれ。
 
@@ -173,26 +170,6 @@ VRAMが少ない等で Highres fix. が使えず、出力された画像を綺�
 
 * サンプラー
 
-** EulerとかDDIMとか
-
-NovelAIとWebUIで同じ結果になる。
-(ので、ハローアスカでも使われている)
-
-末尾にaがついてないものはStepsをあげると収束する。
-
-** Euler a と k_euler_ancestral
-
-似ているがちょっと違う。
-
-k_euler_ancestral
-みたいなのを出したかったら、
-「Euler a」を選んで、Settingsの、
-eta (noise multiplier) for ancestral samplers: 
-を0.67にする。
-
-ただし、完全一致させたかったらソースコードを改造する必要あり。%%いまさらNAIを再現する必要はないと思うが・・・%%
-[[これだったかも。>https://rentry.co/nai_ancestral]]
-
 ** 1111WebUIのサンプラー
 DPM++ 2M
 DPM++ SDE
@@ -225,6 +202,8 @@ DDIM CFG++※1.10.0以降
 DPM++系は10stepsでも最低限見れる絵を出してくれるのでシード値探しに便利。
 15stepsあれば破綻もそれなりに減らせるので低スぺ民の味方かも知れない。
 PLMS、LMSやHeunは遅い。
+Restartは収束が速いがEulerやDPM系の約二倍計算が遅い。
+LCMはLCM適用時以外は使えない。
 
 ちなみに、Settings->Sampler parametersで特定のサンプラーを非表示にできる。
 
@@ -245,7 +224,28 @@ Automaticは各サンプラーのデフォルトのスケジューラが使用�
 Uniformは収束が速いがノイズや細部のアーティファクトが目立つ。SGM Uniformはさらにノイズが目立つ。
 Align Your Stepsは収束が速いが低ステップで破綻が目立つ。
 Simpleは収束が早く破綻もノイズも少ない。
+Betaは収束が遅いが高ステップの品質が高いらしい。
 
+[+] 古い情報
+** EulerとかDDIMとか
+
+NovelAI V1とWebUIで同じ結果になる。
+(ので、ハローアスカでも使われている)
+
+末尾にaがついてないものはStepsをあげると収束する。
+
+** Euler a と k_euler_ancestral
+
+似ているがちょっと違う。
+
+k_euler_ancestral
+みたいなのを出したかったら、
+「Euler a」を選んで、Settingsの、
+eta (noise multiplier) for ancestral samplers: 
+を0.67にする。
+
+ただし、完全一致させたかったらソースコードを改造する必要あり。%%いまさらNAIを再現する必要はないと思うが・・・%%
+[[これだったかも。>https://rentry.co/nai_ancestral]]
 
 ** Settingsにetaが2つあるけどどっち？
 
@@ -253,8 +253,8 @@ Simpleは収束が早く破綻もノイズも少ない。
 
 DDIMかPLMSが「for DDIM」で、それ以外が「for ancestral samplers」っぽい。
 
-** CLIP Skipについて
-SDXLでは使用されない(2が標準)
+** CLIP Skipについて(SD1)
+※SDXLでは使用しない(2が標準)
 数値を上げると文章の解釈が大雑把になる。イラストは2が良いとされる。
 
 モデルはanimefull-final-prunedで試した。生成したのはとある版権キャラ。
@@ -263,6 +263,7 @@ SDXLでは使用されない(2が標準)
 
 とりあえずNAIデフォの2で基本的にはいいと思う。
 数値を上げる事で奇形率が減るかもしれないし、プロンプトから離れるのも強調すれば回避できるかも？
+[END]
 
 * プロンプト記法
 
@@ -339,7 +340,7 @@ stable-diffusion-webuiフォルダにmp3の音楽ファイルを　notification.
 グラフィックボードのメモリが不足していることが原因。以下の方法を試すと改善する。
 ・ほかの不要なアプリを終了する。
 ・生成画像の解像度を下げる。
-・Windowsの設定→システム→グラフィック→既定のグラフィック設定→「ハードウェア アクセラレータによる GPU スケジューリング」をオフにする。これでVRAM消費が400MBほど減る。※DLSS3 FGが使えなくなる
+・Windowsの設定→システム→グラフィック→既定のグラフィック設定→「ハードウェア アクセラレータによる GPU スケジューリング」をオフにする。これでVRAM消費が400MBほど減る。※DLSS3フレーム生成が使えなくなる
 ・CPU内蔵グラフィックがあるなら、マザーボードの映像出力端子にケーブルをつないで再起動。これでアイドル時のVRAM使用量が10MB未満になる。
 ・ブラウザのタブを大量に開くな!!WebUIに関係ないサイトは全部閉じろ!!
 ・VRAMの多いGPUに買い替える。
