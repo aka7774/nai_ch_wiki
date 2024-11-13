@@ -1,10 +1,10 @@
 #contents
 
 * 情報
+''ここの情報は事実上の更新停止に伴い古くなっています。SDXLの情報はほとんどありません。''
 ** リンク集
 *** Stable Diffusion / NovelAI 関連情報共有サイト (更新停止)
-ここにいけばだいたいなんでも分かる。「今日の事件」など
-%%毎日更新されるので定期的に見ることを推奨%% ''更新停止''
+2023年に更新停止。
 +https://rentry.org/sdupdates
 +https://rentry.org/sdupdates2
 +https://rentry.org/sdupdates3
@@ -258,28 +258,29 @@ data['input'] += random.choice(['white dress', 'school uniform', 'swimsuit']) + 
 
 ** MajinAI
 https://majinai.art/ja/
+&color(#ff0000){エロNG}
 AIイラスト専用の投稿サイト
 画像をドラッグ&ドロップすることで自動でプロンプト情報などを読み取り、
 他のユーザーがコピーできるようなページを作成して投稿できる。
 画像リンクは「h ttps://majinai.art/i/XXXXXXX''.webp''」で
 画像情報のリンクは「h ttps://majinai.art/i/XXXXXXX」なので
 5chなどの掲示板にも直接リンクで投稿&プロンプト共有が捗る。
-アップロードはメタデータのついたPNGのみ対応
+アップロードはメタデータのついたPNGのみ対応。
 
 ** AIBooru
 https://aibooru.online/
-AI生成画像のキュレーションサイト。
+DanbooruベースのAI生成画像のキュレーションサイト。
 has_prompt のタグで調べるとプロンプトが書いてあったりする。
 投稿自体にもプロンプト掲載推奨。
 
-** civitai
+** Civitai
 https://civitai.com/
 Stable Diffusionのモデルを共有できるサイト。ローカル版ユーザー向け。
 アップロードされたモデルの評価とコメントができる。
 
 *** 注意
 +画像をアップロードするとき、promptに年齢指定があるか、少しでも子供っぽく見えるか子供を連想させる服とかは規約違反で消される。欧米諸国はそういうのに超厳しいから仕方ない。 ~~ 画像のメタデータを消してアップロードしたほうが安全かも
-+サーバーが不安定か遅いときが多い。
++基本的にバグってて何かしらエラーが出るのが当たり前。
 
 ** Rentry.co - Markdown Pastebin
 https://rentry.co/
@@ -296,7 +297,7 @@ https://huggingface.co/spaces/skytnt/anime-remove-background
 ** Huggingface
 https://huggingface.co/
 機械学習モデルのプラットフォーム&#129303;
-数ＧＢにもなる巨大な学習モデルでもサクッと上げられて共有することができる
+数GBにもなる巨大な学習モデルでもサクッと上げられて共有することができる
 
 ** NovelAI プロンプト（呪文）補助ツール
 https://ai-booth.com/novelai/
@@ -304,12 +305,8 @@ https://ai-booth.com/novelai/
 ある程度分けられているから忘れた時に助かる
 エロ系はない模様
 
-
-----
-
-
 * Tips
-*** 絵文字は使えるの？
+*** 絵文字は使えるの(V1)？
 使える。実例は以下([[絵文字と対応する作例を示したサイト>https://rentry.co/xnpkp]]がありこれが参考になると思う。)
 他に日本語なども使える。ほとんど反応しないが。
 [+]
@@ -325,10 +322,8 @@ https://ai-booth.com/novelai/
 
 lowres, trademark, watermark, title, text, deformed, bad anatomy, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, extra male, extra female, extra person, extra cock, extra genital, too many people, shemale, futa, trans, tranny, floating cock, censored, bar censor,"
 
-----
-
-** ローカル版：NovelAILeak
-ローカル部の情報と被ってるので整理する。
+** ローカル版：NovelAILeak(V1)
+ローカル部の情報と被ってるので整理する。かなり古い情報で今更やるものでもない。
 [+]
 流出版NovelAI。非正規、非公式、安全である保障なし。
 なにかしら問題を聞いたことはないし当たり前のように使用されているが、利用は自己責任で。
