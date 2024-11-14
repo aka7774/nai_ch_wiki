@@ -25,78 +25,7 @@ torch.compile()でさらに高速化するが、以下の欠点があるので�
 
 ちなみに、速度が速いほどCPUのシングル性能の影響が大きくなる。旧世代CPUを使っているなら最新世代のCPUに買い替えるのもあり。
 
-* モジュールによる高速化
-環境によりますが、xformersかsdpによって速度が変わることはないと思われます。
-[+] 古い情報
-2023-03-19現在、たぶんこの順で速い。
-
-1. torch2 cu118 --opt-sdp-no-mem-attention torch.compile(不安定)(Linux限定)
-2. torch2 cu118 --opt-sdp-no-mem-attention
-3. torch1 cu117 xformers cudnnのバージョンアップ
-
-** torch2 cu118 --opt-sdp-no-mem-attention/--opt-sdp-attention
-xformersはnvidia限定だがこっちはRadeonでも動くはず。
-環境によっては--opt-sdp-attentionのほうが高速?
-
-[+]詳細説明
-* torch2.0+SDP(要検証)
-https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/8691
-SDP(Scaled Dot Product)というxformersと似た技術を適用することで高速化を図る。環境によっては変化が無いかも。
-GeForce RTXにて効果を確認したが、1000番台ではxformers適用の方が速い可能性あり。
-(txt2img,hires.fixで動作確認済)
-
-- SDPについて
-2023年3月上旬にcommitされたらしい
-xformersと特徴は同じで、--opt-sdp-no-mem-attentionまたは--opt-sdp-attentionをつけるとわずかに絵が変化する代わりに2割程度速くなる。
-opt-sdp-attentionのほうは出力の揺らぎが大きいかもしれない。
-xformersと併用、共存はできない。
-xformersよりVRAM使用量が増えるため、学習や高解像度生成時には注意
-[END]
-
-[+]導入した人たちの感想（ある程度集まったらまとめます）
-=||
-297今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ d112-SwXs)2023/03/19(日) 20:04:41.62ID:pGBhW2el0
-ワイも
-torch: 2.0.0+cu118
-にして、xformersじゃなくsdpっていうのにしたんやけど
-30it/sが35it/sになったから効果はあったと思うわ
-
-ただし生成結果が変わって前の絵を全て捨てる事になる諸刃の剣やな
-
-336今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a1c3-7LVk)2023/03/19(日) 20:55:05.01ID:Mipkannl0>>345
-torch2.0にしたらなんかVRAMの消費量上がる？
-なんかすぐにメモリアウトするし、生成後にメモリ使用率が下がらんくなった
-当方3060TI　vram8Gや
-
-459今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1154-CSnB)2023/03/20(月) 01:02:56.60ID:fmUx+vru0
->>449
-起動時のコマンドラインに--opt-sdp-no-mem-attention付けた？x-formerの代わりや
---opt-sdp-attentionの方が速いとか言うけどこっちは生成する度に結果が微妙に違うガバガバやし上とほぼ速度差なかったわ
-
-467今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 13ba-2lPJ)2023/03/20(月) 01:26:42.72ID:0uuy3D7h0>>516
-torch2にしたらddetailer使えなくなってた
-
-488今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1154-BQ3C)2023/03/20(月) 02:09:36.21ID:mGnI1SHN0>>493
->>449だが、ちゃんとアスカベンチ回して全部計測してきた
-RTX4070ti
-　38.1s torch1.13.1+cu117
-　22.2s torch1.13.1+cu117+cudnn更新
-　19.9s torch2.0.0.1+cu118
-元々cudnnは更新済みだったけどそこから少しだけ早くなってたけど思ったほどではなかった
-こんなもんかな？
-
-583今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e17b-CSnB)2023/03/20(月) 10:47:01.35ID:zgEqc5Jw0
-torch2入れたけどlora使った時の生成速度上がって幸せになれた
-
-379今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c97b-DkPe)2023/03/21(火) 18:53:37.44ID:R54ixFAd0
-GTX1080でtorch2+cu118にxformerビルドして入れてみたが
-大体5秒くらいしか早くならんな
-RTX4090ほちい
-||=
-[END]
-
-[END]
-
+* Cross-attentionの最適化による高速化
 ** xformers
 Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減少効果がある。
 インストールは1111の標準機能で簡単にできる。
@@ -107,107 +36,31 @@ Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減
 →「[[xformersの検証]]」
 
 *** 対応GPU
-
 - NVIDIA
 -- GeForce GTX 1000(Pascal)、RTX 2000(Turing)シリーズ以降
 -- GeForce 900番台以前でも動くけど逆効果だったという報告あり
 
-- AMD
--- ついにAMDグラボも対応した。Torch 2.4.1,ROCm6.1対応のv0.0.28がリリースされた。
+- AMD(Linux/WSL2限定)
+-- ついにAMDグラボも対応した。Torch 2.4.1+ROCm6.1対応のv0.0.28がリリースされた。
+-- RDNA2以降のグラボが必要？
 
 *** 導入方法
-初めて導入する場合
+初めて導入する場合(NVIDIA)
  set COMMANDLINE_ARGS= --xformers
 
-古い環境から更新する場合
+古い環境から更新する場合(NVIDIA)
  set COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers
 venvを削除してからWebUIを起動する手もあり
 
-Torchバージョンが1111のデフォルトではない場合
+Torchバージョンが1111のデフォルトではない場合/Radeonの場合
 [[ここ>>https://github.com/facebookresearch/xformers/releases]]で対応するTorchバージョンを確認してから、「pip install xformers==x.x.x」でインストールする。
-
-*** 開発版をインストールする
- pip install --pre -U xformers
-でコンパイル無しで導入できるようになった。
-なお、対応するTorchバージョンが入っている必要がある。
-
-=|BOX|
-アスカテストのtime taken
---xformers --opt-sdp-attention　18.50
---xformers　20.30
---opt-sdp-attention　18.47
---opt-sdp-no-mem-attention　18.40
---xformers --opt-sdp-no-mem-attention　18.60
-両方指定の場合はsdpが有効になってる雰囲気です
-||=
-
-
-* torch.compile(非推奨)
-NVIDIAがTensorRTを使えるようにするExtensionを公開したのでそちらを推奨。改造不要でTensorRTが使える。
-
-以下は上級者向け。またWebUIのアプデで以下の手順が使えない可能性あり。
-(TensorRTみたいな感じで)モデルの事前コンパイルを行うことによって、
-生成処理を高速化する仕組みがtorch2には実装されている。
-これを1111で使えるように改造する。
-
-Windowsには対応していない(WSL2で動かすことになる)
-[+]手順
-参考
-https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6932
-
-前提として、torch2で1111が動作できていること。
-
-1. modules/sd_hijack.pyのself.optimization_method = apply_optimizations()の前に次のコードを入れる(L171-172)
-インデントの位置が前後と揃うようにする。
-
-=|BOX|
-        try:
-            import torch._dynamo as dynamo
-            torch._dynamo.config.verbose = True
-            torch.backends.cudnn.benchmark = True
-            m.model = torch.compile(m.model, mode="reduce-overhead", fullgraph=False)
-            print("Model compiled set")
-        except Exception as err:
-            print(f"Model compile not supported: {err}")
-||=
-
-modeはdefault, reduce-overhead, max-autotuneから選べます
-max-autotuneは10分以上かかる割に効果が薄かった
-defaultだとコンパイル半分くらいで済む。こっちでも良いかも？
-
-なお、残念ながら8GBの環境ではcompile完了前にCUDA OOMで死にました・・・。
-reduce-overheadだとVRAMを食っていくけどdefaultだと消費しないので完走できる。だけど速さは感じない。
-3060でreduce-overheadを試したら9.6GBだったので10GBあれば使えるかも。速さは劇的ってほどではない。
-samplerは変えても再コンパイルは走らなかった。
-
-2. repositories/stable-diffusion-stability-ai/ldm/modules/diffusionmodules/util.pyのcheckpointメソッドを編集(L113-114)
-(これをしないとエラーになる)
-
-=|BOX|
-- return CheckpointFunction.apply(func, len(inputs), *args)
-+ return CheckpointFunction.apply(func, len(inputs), *inputs, *params)
-||=
-
-バッチサイズ等を変えた後にGenerateを押すと返ってこなくなることがあります。リロードすると直る。この辺動作が怪しいです。
-
-xformersは必要ない。
-以下の警告が出るけど無視しても動く。
-
-=|BOX|
-/home/user/stable-diffusion-webui/venv/lib/python3.10/site-packages/torchvision/transforms/functional_tensor.py:5: 
-UserWarning: The torchvision.transforms.functional_tensor module is deprecated in 0.15 and will be **removed in 0.17**. 
-Please don't rely on it. You probably just need to use APIs in torchvision.transforms.functional or in torchvision.transforms.v2.functional.
-  warnings.warn(
-||=
-
-
-必要なかったこと
-- 1111標準のaccelerate==0.12.0を少なくとも0.15.0以上に更新する必要がある
--- この類の問題を克服するためにsd_dreambooth_extensionをpip更新ツールとして使う手がある
-
-出来ればやりたいこと
-- コンパイルしたいモデルとしたくないモデルを選択したくなる気がする
-[END]
+** SDP(Scaled dot product attention)
+2023年3月上旬にcommitされたらしい
+xformersと特徴は同じ。わずかに絵が変化する代わりに2割程度速くなる。
+有効にするには、Settings->Optimizations->Cross attention optimizationでsdpかsdp-no-memを選ぶ。
+sdpのほうは出力の揺らぎが大きいかもしれない。
+xformersと併用、共存はできない。
+xformersよりVRAM使用量が増えるため、学習や高解像度生成時には注意
 
 * --opt-channelslast
 
@@ -215,12 +68,25 @@ Please don't rely on it. You probably just need to use APIs in torchvision.trans
  --xformers や --opt-sdp-no-mem-attention と併用できる。
 環境によっては効果が無かったり逆に遅くなったりするらしいので比較検討しましょう。
 
+*設定のOptimizationの項目
+** Negative Guidance minimum sigma
+生成の後半にNegative Promptの計算を省略することで高速化する。
+
+** Token merging
+トークンをマージして高速化する。
+解像度が大きいほど効果が大きくなる。
+数値が大きいほど効果が大きいが品質も低下する。
+fp8では動作しない。
+
+** Pad prompt/negative prompt
+76トークン以上で出力がおかしくなることがあるので、オフ推奨
+
 * ハードウェアアクセラレーションによるGPUスケジューリング を無効にする
 VRAM消費を減らす効果がある。速度も向上するかも。
 やり方は[[こちら>>https://win11lab.info/win11-gpu-scheduling/#:~:text=%E6%9C%89%E5%8A%B9%E3%80%81%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95&text=%E5%B7%A6%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%88%E3%82%8A%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92,%E3%82%AA%E3%83%B3%E3%80%81%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%AA%E3%83%95%E3%81%AB%E3%81%97%E3%81%BE%E3%81%99%E3%80%82]]
 [[公式wiki>>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Optimizations]]にも記載がある
 [[redditによれば>>https://www.reddit.com/r/StableDiffusion/comments/y71q5k/4090_cudnn_performancespeed_fix_automatic1111/jcx2jx5/?context=8&depth=9]]速度が30%くらいかわることがあるとかないとか
-副作用としてDLSS3のフレーム生成が使えなくなる？
+副作用としてDLSS3のフレーム生成が使えなくなる。
 
 * モデルを軽量化する
 2024年現在、fp16,pruned,safetensorsでの配布(=すでに軽量化された状態)が主流になった。
@@ -312,6 +178,7 @@ DPM++ 2Mは15Stepsでもそれなりに映えるのでおすすめ。
 %%UniPCはもっと良い感じ。%%実際はそうでもない。
 SchedulerにSimpleを使うとさらに良くなる。
 LCM、TurboやHyper-SDはさらに速い。出力を大きく変化させたり相性の良し悪しがあったりする代わりに10steps未満でまともな絵がでる。
+ν-predictionモデルは↑無しでも10ステップ程度でまともな絵を出せる。
 
 * WebUIを高速なストレージに入れる
 シーケンシャル3GB以/s上のSSDに配置することで読み込みを高速化する。大容量なSDXLで効果的。
@@ -350,12 +217,11 @@ https://sourceforge.net/projects/imdisk-toolkit/
 以前はLinuxにするだけで1〜2割速くなると言われていたが、ドライバやTorchの最適化が進んで速度やメモリ消費の差が小さくなった。
 どっちが速いか比較検討してみるのが良さそう。
 
-* Linuxに入れる
+* Linuxに入れる(上級者向け)
 Windows上の仮想化ではなく実際にインストールする。
-Ubuntu24.04 LTS、Python 3.11.9、Torch2.3.1での環境では、推論は2〜4%、学習は10%高速化した。VRAM消費は特筆すべき変化はなかった。
-またmedvram有効時の1111のメモリ消費が激減(変動が小さい)し、生成開始と終了のもたつきが軽減し、ReForgeとほぼ同じ速度を出せるようになった。いいぞこれ
-
-あと1111やsd-scriptsなどでcheckpoint読み込み中のメモリ消費が跳ね上がる現象がない。
+Ubuntu24.04 LTS、Python 3.11.9、Torch2.3.1での環境では、推論(it/s)は2〜4%、学習は10%高速化した。VRAM消費は特筆すべき変化はなかった。
+また、メモリ消費が減少し、medvram有効時の生成開始と終了のもたつきが軽減して結構速くなった。いいぞこれ
+ただしメモリ不足になるとWindowsは頑張って耐えるもののLinuxは素直にフリーズしてから落ちる
 
 Windowsが入っていない空っぽのSSDに入れるか、サブ機とかお古になったら検討してもいいかも
 なお各種ライブラリ等のインストールは原則コマンド打ってやるし、途中でUbuntuのGUI(gdm3)が壊れてリカバリーモードでgdm3を再インストールしたりとかなり面倒

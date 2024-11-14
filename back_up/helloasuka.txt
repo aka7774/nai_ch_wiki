@@ -59,6 +59,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|Intel Arc A580|8GB|Ryzen5 7600||32.7|--use-ipex|Win11 / Forge / torch(2.1.0) / intel-extension(2.1.40+xpu) / Driver(32.0.101.5972) / oneAPI(2024.2.1) / Conda(py3.11) / 145W gpuclock=2400Mhz| 
 |RTX 4080 Super|16GB|Core i9-14900KF||11.8|--xformers --opt-channelslast|Windows11|
 |Apple M2 Pro|16GB|Apple M2 Pro| |253.6||macOS 14.6.1 / WebUI:1.7.0 / Python:3.10.15 ※macのRAMはCPUとGPUで共用|
 |Radeon Instinct MI60|32GB|Ryzen 9 5900X||49.0|--opt-sdp-no-mem-attention --opt-sdp-attention --disable-nan-check|Ubuntu 24.04.1 / version: v1.10.1 / python: 3.11.10 / torch: 2.4.1+rocm6.1 / xformers: N/A / gradio: 3.41.2 MI60はほぼRadeon�擦�VRAM32GB版|
