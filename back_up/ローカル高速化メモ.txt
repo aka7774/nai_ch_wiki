@@ -1,5 +1,17 @@
 #contents
 
+* 収束の高速化
+いわゆる「蒸留」で少ないステップ数で収束させ、Guidance Scaleの計算を不要にすることで高速化する。
+
+*** LCM(Latent Consistency Model)
+https://huggingface.co/latent-consistency/lcm-lora-sdxl
+
+*** Hyper-SD
+https://huggingface.co/ByteDance/Hyper-SD
+
+*** DMD2(Distribution Matching Distillation)
+https://huggingface.co/tianweiy/DMD2
+
 * torch2
 現在、torch2がデフォルトになりました。
 WebUIの最適化が進んで速くなっている上Hyper-SDなどの改造不要の最適化やパラメータの調整でさらに速くできるのでtorch.compile改造はおすすめしません。
@@ -87,6 +99,7 @@ VRAM消費を減らす効果がある。速度も向上するかも。
 [[公式wiki>>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Optimizations]]にも記載がある
 [[redditによれば>>https://www.reddit.com/r/StableDiffusion/comments/y71q5k/4090_cudnn_performancespeed_fix_automatic1111/jcx2jx5/?context=8&depth=9]]速度が30%くらいかわることがあるとかないとか
 副作用としてDLSS3のフレーム生成が使えなくなる。
+
 
 * モデルを軽量化する
 2024年現在、fp16,pruned,safetensorsでの配布(=すでに軽量化された状態)が主流になった。
