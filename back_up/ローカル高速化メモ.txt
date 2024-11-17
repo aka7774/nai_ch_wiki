@@ -1,7 +1,8 @@
 #contents
 
 * 収束の高速化
-いわゆる「蒸留」で少ないステップ数で収束させ、Guidance Scaleの計算を不要にすることで高速化する。
+いわゆる「蒸留」で少ないステップ数で収束させ、Guidance Scale/コンディショニングの計算を不要にすることで高速化する。
+ただし品質が低下する。
 
 *** LCM(Latent Consistency Model)
 https://huggingface.co/latent-consistency/lcm-lora-sdxl
