@@ -22,34 +22,37 @@ Stability.ai公式
 このブログ（外部リンク）の解説記事が大変わかりやすい
 
 * SDXLのUI
-編集時点で本スレで上がっているUIは下記の通り
->~~0004今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f7d-dc3M)~~2024/01/13(土) 16:35:47.39ID:DvXS/pgj0~~(略)~~&#9724;&#65038;SDXLどうやって使うの？~~webUI1111ならモデル落としていつもの場所に入れるだけ、fooocusやComfyUIも軽くて人気~~(略)
+有名なUIは下記の通り
 
 ** AUTOMATIC 1111
 *** VRAM8GBで動かす方法
 1.webui-user.bat(Linuxはwebui-user.sh)のCOMMANDLINE_ARGSに--medvram-sdxl --precision halfを追加
-2(任意).NVIDIA コントロールパネルの3D設定で「CUDA - システム メモリ フォールバック ポリシー」を「システム メモリ フォールバックなしを優先」にする
+2(任意, Windowsのみ).NVIDIA コントロールパネルの3D設定で「CUDA - システム メモリ フォールバック ポリシー」を「システム メモリ フォールバックなしを優先」にする
 3.VAEは[[sdxl-vae-fp16-fix>>https://huggingface.co/madebyollin/sdxl-vae-fp16-fix]]を使う
 4(任意).内蔵グラフィック搭載CPUならマザーボードの映像端子で映像を出力する。PC起動中につなぎなおした場合は再起動する
 環境によるが、これで832x1216のhighres2倍が動くはず。動かないならTiled VAEを有効にする
 
->~~0968今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f04-Qq59)~~2024/01/13(土) 16:29:32.33ID:8PpvN4mG0~~もう一度貼っときますね~~a1111 SDXL 低VRAM民向け3点セット~~1.webui-user.batのset COMMANDLINE_ARGSに「--medvram-sdxl」を追加（低VRAM対策・高速化）~~2.webui-user.batに「set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.6, max_split_size_mb:128」を追加（OutOfMemoryError対策）~~3.NVIDIAコンパネの3D設定で「CUDA - Sysmem Fall Back Policy」を「Prefer No Sysmem Fallback」にする（メモリ溢れ激遅対策）~~ ~~ワイ環3060参考値~~Animagine3公式サンプル:約28秒~~Animagine3公式サンプルハイレゾ2倍:約2分30秒
+※fp8を使えば8GBでもmedvram無しで動くが、LoRAの複数適用が実質不可能になる、若干遅くなるなどのデメリットがあるのでfp8モードはおすすめしない
 
 ** Fooocus
 [[https://github.com/lllyasviel/Fooocus>>https://github.com/lllyasviel/Fooocus]]
+難しい設定なしでSDXLを試せる。
 導入が簡単で軽い。とっつきは良いが機能性が低いため凝ったことはやりにくい。
->~~0852今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff8c-SkRo)~~2024/01/11(木) 05:44:07.32ID:kLv98tzD0~~SDXLちょっと触りたいけどローカル使い方忘れたってやつはFooocusに乗り換えを勧めるわ~~novelAI並みにユーザーインターフェースを簡素化してるからめちゃめちゃ扱いやすいしSDXLにいきなり対応してる~~https://pc.watch.impress.co.jp/docs/column/nishikawa/1523904.html
 
 ** ComfyUI
 [[https://github.com/comfyanonymous/ComfyUI>>https://github.com/comfyanonymous/ComfyUI]]
 多機能で軽い。&color(#ff0000){''「ComfyUIでないとできない」ことが多い。''}やる気がある人にはComfyUIを強く推奨。本スレの上級者はほとんどComfyUIのはず(ソース無し)。
 >~~0139今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df8e-Xueq)~~2024/01/13(土) 18:32:22.34ID:pvPKwx5u0~~(略)~~一時の恥で聞くわ…~~誰かComfyUIでfp8モード起動のやり方教えて下さい！&#128557;&#128166;~~ ~~0145今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f48-4jqT)~~2024/01/13(土) 18:38:58.17ID:+aLVvCTx0~~>>139~~python main.py --use-quad-cross-attention --fp8_e4m3fn-unet~~か~~python main.py --use-quad-cross-attention --fp8_e4m3fn-text-enc~~　--use-quad-cross-attentionはなくてもおけ~~　loraの効きが悪くなるのが嫌なら--force_fp16 
 
-** Forge
+** Forge(reForge)
 ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた
 [[https://github.com/lllyasviel/stable-diffusion-webui-forge>>https://github.com/lllyasviel/stable-diffusion-webui-forge]]
-低VRAM環境での高速化や使用メモリ削減が見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照
+低VRAM環境での高速化や使用メモリ削減が見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照。なお、必ずしも1111より速かったりメモリ使用量が少ないわけではない。
 「浦島太郎のために」「2024-02-06 stable-diffusion-webui-forgeリリース」を参照。
+
+*** reForge
+https://github.com/Panchovix/stable-diffusion-webui-reForge
+Forgeをさらにリファクタリングしたもの。新しい機能を試すことができる。
 
 ** EasySdxlWebUi
 &color(#ff0000){''gitとかが苦手な初心者向け''}
@@ -85,7 +88,15 @@ js2pronyVAEなし
 js2pronyVAEあり
 
 *トラブルシューティング
-**真っ黒になる
+**最後にVRAM使用量が急増
+コンソールにVAEでNaN云々って出ている場合に該当する。
+VAEがNaN演算を起こしたため自動的に重いfp32で計算するため、VAEのVRAM使用量がfp16と比較して二倍になる。
+
+***解決策
+fp16で動くものを使用する。
+https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
+
+**真っ黒になる(disable-nan-check有効時)
 Stability AI(SDXL base)のVAEはfp32(float)前提のためか、fp16では桁あふれによるNaN演算で動かない。
 SDXL Base以外にCivitaiにあるほぼ全てのSDXL用VAEがその影響を受ける。
 

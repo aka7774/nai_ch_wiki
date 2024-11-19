@@ -55,9 +55,11 @@
 ノイズ予測アルゴリズムの種類。
 *** ε-prediction
 SD1とSDXLのデフォルト
-SN比=0(純粋なノイズ)では機能しない。そのため完璧な単色背景は出せない？
+SN比=0(純粋なノイズ)では機能しない。
+全体が明るい/暗い状況でグレー寄りになるため、単色背景やシルエットなどの表現が苦手。これはNoise offsetやMultires noiseで緩和可能
 
 *** v-prediction
+SD2と一部のSDXLモデルが使用
 SN比=0(純粋なノイズ)でも機能する
 Zero Terminal SNRを併用することで全体が明るい/暗い状況でグレー寄りになる問題を解消できる。
 ほかにも安定性が改善する？
@@ -116,7 +118,7 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 - 処理が速い
 - 容量が半分で済む
 - IntelとNVIDIAのGPUで対応している(AMDはRDNA3以降で対応？)
-- ダイナミックレンジが狭いため比較的NaN演算を起こしやすい
+- ダイナミックレンジが狭いためオーバーフローによるNaN演算を起こしやすい
 
 *** bf16/bfloat16
 - 1ビットの符号と8ビットの指数部と7ビットの仮数部
@@ -136,7 +138,7 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 
 [+] 古い情報
 SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98GiB)、SDXLなら6.94GB(6.46GiB)前後になる。
-** ema
+** ema(SD1)
 
 - Exponential Moving Average(指数移動平均)の略
 - モデルのトレーニング中に、トレーニングしたパラメータの移動平均を維持すると有益らしい([[TensorFlow API>https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage]])
@@ -152,34 +154,28 @@ SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98
 
 - 容量が小さくなるの？
 
-** prune
+** prune(SD1)
 
 - 生成に不要なデータを削除することで容量を削減すること
 - ファイル名に pruned をつけて一緒に配布されていることがある
 - 学習時には prune してないファイルがいいの？ 大差ないの？
 - LoRA学習ではprunedでもいい
+- SDXL以降は元から不要なデータが含まれていないので関係なし。
 [END]
 
 * VAE
 
 - 数が少ないので横着せずにドロップダウンから選択したほうがいい
 -- Quicksetting listにsd_vaeを追加する
-- モデルファイルに内蔵することが出来る
--- というか元々内蔵されているものを上書きするらしい
+- Checkpointに内蔵されているものを上書きする
 
 * モデル作成
 
 モデルファイルを得られる方法
 
-- Dreambooth
-- マージ
-
-** Dreambooth
-
-- 狭義では、finetuneと追加学習とDreamboothは別の意味らしいけどようわからん。
-- Extension版が正月のアップデート不具合と時代遅れによりツールは戦国時代に戻った。
-- Loraもまたツールが分かれてバラバラになった。
-- [[StableTuner]]
+- Full Fine-tuning
+- DreamboothやLoRAのマージ
+- checkpoint同士のマージ
 
 ** マージ
 - [[Checkpoint Merger>ローカルのマージ]]
@@ -189,7 +185,7 @@ SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98
 標準Checkpoint Mergerにバグがあり、Add Differenceを使うとモデルが壊れていた。
 n番目のトークンが無視されたり効果が弱まったりする。nは不定(1や76以外もありうる)
 これは2023-01-15に修正された。(層別マージニキがプルリク送ってくれた)
-今までに作られたマージモデルはほぼバグの影響を受けていると思われるので要修正。
+それ以前に作られたマージモデルはほぼバグの影響を受けていると思われるので要修正。
 
 詳しい説明と修正方法はこちら。
 https://note.com/bbcmc/n/n12c05bf109cc
@@ -202,19 +198,12 @@ https://note.com/bbcmc/n/n12c05bf109cc
 - [[HuggingFace]] Modelsがおすすめ
 
 ** 配布ファイル
-
-- 生成用は、 fp16, pruned, safetensors, VAE内蔵 が理想的。
-- 学習用は、 fp32, ema が理想的。
+- 学習・推論共にfp16, pruned, safetensorsでよい。
 - ファイル名には日本語やスペースが無いほうがトラブルが減るかも。
 
 *** 作成方法
-
-- StableTunerが最も理想に近そうだけど学習しないと出力できない？
 - https://github.com/arenatemp/stable-diffusion-webui-model-toolkit
--- これが決定版かも(未確認)
+-- モデルのpruneや変換ができる
 -- 更新停止。一部のVAE焼き込み済みのcheckpointを読み込めない。
-- https://github.com/Akegarasu/sd-webui-model-converter
--- EMAが壊れてるらしい
-- https://note.com/kohya_ss/n/nf5893a2e719c
--- 古くてsafetensors未対応だしうまく動かない
+
 
