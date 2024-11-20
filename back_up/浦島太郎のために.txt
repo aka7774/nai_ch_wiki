@@ -27,7 +27,7 @@
 「NoobAiのEps&V-PredをreForgeで簡単＆高速にお手軽生成する」プログラム。必要なモデルやデータをまとめてダウンロードするほか、便利な機能拡張も自動でインストールされる。
 
 **2024-11-15 スレの勢いが非常に高まる
-11月15日頃からスレへの書き込みの量が増えてくる。新しいモデルの公開が相次いだほかV-Pred、[[TIPO>https://github.com/KohakuBlueleaf/z-tipo-extension]]、DMD2といった技術の話題、[[EasyReforge>https://github.com/Zuntan03/EasyReforge]]の公開、椅子談義などさまざまなトピックが入り乱れて流れが速くなった。
+11月15日頃からスレへの書き込みの量が増えてくる。新しいモデルの公開が相次いだほかV-Pred、[[TIPO>https://github.com/KohakuBlueleaf/z-tipo-extension]]、DMD2、CAMEといった技術の話題、[[EasyReforge>https://github.com/Zuntan03/EasyReforge]]の公開、椅子談義などさまざまなトピックが入り乱れて流れが速くなった。
 
 **2024-11-03 NoobAI 1.0が公開される
 - https://civitai.com/models/833294
@@ -2019,6 +2019,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
