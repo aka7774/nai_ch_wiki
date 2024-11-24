@@ -311,7 +311,6 @@
 **東方旧作
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
-|||||||
 |1girl, hakurei reimu (pc-98), purple eyes, purple hair, long hair, japanese clothes, hakama, gohei,||東方project|博麗靈夢|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/MAocyQJmKa.png)|
 |1girl, {{{{elis (touhou)}}}}, bat wings, purple eyes, facial mark, blonde hair, long hair, hair bow, white shirt, bowtie, black vest, red skirt, pointy ears, star wand, a red star mark on her face,||東方靈異伝|Elis|V3使用~~頬の赤い星マークの色・位置・形が安定しない|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pY5Ud0KWN1.png)|
 |1girl, {{{{sariel (touhou)}}}}, blue eyes, long hair, blue hair, wings, multiple wings, blue dress,|halo|東方靈異伝|Sariel|V3使用~~服の模様が安定しない~~天使の輪が高確率で出てくるので、halo をネガティブプロンプトに入れた方がいい|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fcIXOyZ8hf.png)|

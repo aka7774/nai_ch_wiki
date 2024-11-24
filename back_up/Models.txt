@@ -11,6 +11,7 @@
 
 ** Stable Diffusionのバージョン
 *** SD1
+SD1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - U-Netアーキテクチャ
 - 860M(8.6億)パラメータ
 - そのまま使える。
@@ -18,6 +19,7 @@
 - 文章は全く生成できない
 
 *** SD2
+SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 - U-Netアーキテクチャ
 - 865M(8.65億)パラメータ
 - 文章を正しく生成できない
@@ -26,12 +28,15 @@
 -- 無い場合は SD2.xのyamlを使ってみるとか。
 
 *** SDXL
+SDXL Base 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - U-Netアーキテクチャ
 - 2.6B(26億)パラメータ
+- BaseとRefinerの二種類が存在する
 - そのまま使える。
 - 文章を正しく生成できない
 
 *** SD3.0
+https://huggingface.co/stabilityai/stable-diffusion-3-medium
 - DiTアーキテクチャ
 - Medium(2.5B)のみ
 - (DiTモデル全般に言えることだが)破綻が少なく、線を真っすぐ引ける。
@@ -39,6 +44,8 @@
 - 文章を正しく生成できる
 
 *** SD3.5
+Large: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
+Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - DiTアーキテクチャ
 - Large(8.1B)とMedium(2.6B)の二種類がある
 - 使うには、モデル本体に加えてCLIP L/G、SD3 VAEが必要。T5XXLは任意
@@ -48,6 +55,8 @@
 ** ほかのText-to-Imageモデル
 
 *** FLUX.1
+dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
+schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - DiTアーキテクチャ
 - DevとSchnellの二種類がある
 - 文章を正しく生成できる
@@ -56,15 +65,17 @@
 - それゆえに非常に重い
 
 *** AuraFlow
+https://huggingface.co/fal/AuraFlow
 - DiTアーキテクチャ
 - 現在開発中
 - 開発中のものが公開されているが最近更新なし
 - 文章を正しく生成できる
 
 *** Sana
+https://huggingface.co/Efficient-Large-Model/Sana_1600M_1024px
 - DiTアーキテクチャ
 - 軽量なことが売り
-- まだリリースされていない(されるか怪しい)
+- リリースされた(使えるUIがまだない？)
 - 文章を正しく生成できる?
 
 ** predictionの種類
