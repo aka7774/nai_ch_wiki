@@ -68,8 +68,8 @@ Settings->Optimizations->「Pad prompt/negative prompt」をオフにすると�
 人気なものをいくつかをピックアップ。
 ***NoobAI-XL (NAI-XL)
 https://civitai.com/models/833294/noobai-xl-nai-xl
-ベースモデルにDanbooruとe621のデータセットで大規模なファインチューニングをしたもの。派生だが、本家より人気があるかもしれない。
-2024/11/10現在、ε-prediction版とv-prediction版が公開されておりそれぞれ癖が違う。v-prediction版は開発中で癖が強い。
+ベースモデルにDanbooruとe621のデータセットで大規模なファインチューニングをしたもの。派生だが、もはやこちらが本家といえるほど開発が進められている。
+2024/11/10現在、ε-prediction版とv-prediction版が公開されておりそれぞれ癖が違う。v-prediction版は開発中で毎週のように更新している。
 データ量の増加によりillustriousV0.1の特徴「キャラやシチュエーションの幅は広いが制御が難しい」が純粋強化されたじゃじゃ馬で、こちらも主に使用感向上を目的とした派生モデルが複数存在する。
 
 ***Illustrious-XL SmoothFT（SmoothFT-SPO）
