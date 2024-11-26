@@ -83,7 +83,7 @@ https://huggingface.co/Efficient-Large-Model/Sana_1600M_1024px
 *** ε-prediction
 SD1とSDXLのデフォルト
 SN比=0(純粋なノイズ)では機能しない。
-全体が明るい/暗い状況でグレー寄りになるため、単色背景やシルエットなどの表現が苦手。これはNoise offsetやMultires noiseで緩和可能
+全体が明るい/暗い状況でグレー寄りになるため、単色背景やシルエットなどの表現が苦手。これはNoise offsetやMultires noiseで緩和可
 
 *** v-prediction
 SD2と一部のSDXLモデル(NovelAI、NoobAI-XL)が使用
@@ -94,6 +94,23 @@ Zero Terminal SNRを併用することで全体が明るい/暗い状況でグ�
 とあるモデルの影響で勘違いしている人が一定数いるが、これは高速化する技術ではない。多分DMD2という高速化LoRAの効果。
 
 ちなみに、VはVelocityのVでありν(ニュー)ではない。
+
+** v-predictionモデルの使い方
+2024年11月27日時点の情報です。
+*** AUTOMATIC1111
+webuiのディレクトリ直下で次のコマンドを実行する。
+ git checkout -b dev origin/dev 
+あるいは、Github DesktopでFile->Add local repositoryで1111のフォルダを選択してリポジトリを追加した後、Current branchでorigin/devを選択する。
+You have changed...と聞かれたらBring my changesを選択してswitch branchを押す。
+あとはいつも通りwebuiを使用する。
+
+*** Forge/ComfyUI
+最新版にアプデする。
+
+*** 1111/Forgeでノイズ製造機になる場合
+次のリンクからsd_xl_v.yamlをwebui/models/Stable-diffusionにDLする。
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/dev/configs/sd_xl_v.yaml
+DLしたyamlファイルを使用するcheckpointと同じ名称に変更する。
 
 ** インペイント専用モデル
 
