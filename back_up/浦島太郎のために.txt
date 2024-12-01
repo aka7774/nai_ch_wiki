@@ -21,6 +21,13 @@
 
 #contents
 *2024年
+**2024-11-26 ControlNetと画像編集ソフトを使った透視メガネが流行する
+着衣と脱衣の画像を用意して画像編集ソフトに読み込み、クリッピングマスクとメガネの枠を重ねて移動すると透視しているように見える手法が紹介された。
+- 発端となった投稿　https://fate.5ch.net/test/read.cgi/liveuranus/1732613695/16
+- メイキング解説　https://fate.5ch.net/test/read.cgi/liveuranus/1732613695/662
+- ComfyUIのワークフロー　https://fate.5ch.net/test/read.cgi/liveuranus/1732613695/886
+- 解説画像の紹介　https://fate.5ch.net/test/read.cgi/liveuranus/1732724442/126
+
 **2024-11-24 最近Huggingfaceで公開されたモデル
 https://fate.5ch.net/test/read.cgi/liveuranus/1732449618/116 をもとにしている。
 ※時限公開のモデルも含む。スレで要望すると再公開されることがある
@@ -2028,6 +2035,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

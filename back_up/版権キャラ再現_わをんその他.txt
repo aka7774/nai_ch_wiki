@@ -46,6 +46,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, game cg, valkyrie (vnd) , valkyrie no densetsu, very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, simple background, facing away, close to viewer, full body, face focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |ワルキューレの伝説|ワルキューレ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/CYgZZWmZKb.png|
+|1girl,offical stlye,valkyrie no densetsu,valkyrie (vnd),long hair,braid,white skirt,||^|^|V3使用の簡易版プロンプト。スカートの赤い裾はなかなか出ない。~~valkyrie no densetsuのみだと衣装のみ出力される。~~ナムコアンソロジー版の衣装は恐らく出ない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/62IMBpyxgI-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/62IMBpyxgI.png]]|
 |}
 
 ***　ワルキューレ・ロマンツェ
