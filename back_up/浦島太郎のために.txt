@@ -30,6 +30,7 @@
 今まで容量無制限でモデルのアップロードが可能ということで多くのユーザーを集めていたHuggingFaceだったが、ついに容量制限がかけられた。
 無課金ユーザーは500GB、課金ユーザーは1TBとのこと。
 いつかこうなると身構えていたユーザーもいた一方、TB単位で有益なモデルをアップロードしていた複数のユーザーが上限にヒットするなど混乱も見られた。
+(2024-12-11) その後、利用実態（upしたモデルが実際に使われているかなど）に合わせて追加ストレージ枠の付与などが行われつつ、現時点ではprivateリポジトリはfreeで100GB、proで1TB+従量課金、publicリポジトリはほぼ無制限、という形に[[収まった>https://huggingface.co/docs/hub/storage-limits]]
 **2024-11-26 ControlNetと画像編集ソフトを使った透視メガネが流行する
 着衣と脱衣の画像を用意して画像編集ソフトに読み込み、クリッピングマスクとメガネの枠を重ねて移動すると透視しているように見える手法が紹介された。
 - 発端となった投稿　https://fate.5ch.net/test/read.cgi/liveuranus/1732613695/16
@@ -2045,6 +2046,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
