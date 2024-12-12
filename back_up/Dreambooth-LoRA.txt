@@ -1,6 +1,7 @@
 #contents
 * 概要
 Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
+ウェイトをn×Rankの小さい行列A,Bの二つに分解してその行列をFinetuningする。そして差分情報を出力する。
 簡単に言えば「省メモリで高速に学習できて容量も小さくて済む追加学習法」。''作成方法はいろいろある。''
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png,400)>https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png]]
@@ -15,7 +16,7 @@ SDXL関連はスレか他所のページを見ましょう。
 
 * 公式情報
 
-** sd-scripts (kohya)
+** sd-scripts (kohya-ss)
 一番はじめは作者が詳しく書いてくれている公式READMEを見よう！話はそれからだ！
 
 - &color(#ff0000){★公式導入ガイド}：https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md
@@ -61,7 +62,7 @@ SDXL関連はスレか他所のページを見ましょう。
 
 * インストール、初回セットアップ編
 
-** sd-scripts (作: kohya)
+** sd-scripts (作: kohya-ss)
 
 純正のsd-scripts。コマンドプロンプトとか黒い画面にコマンドを打って使うやつや
 + 最新機能を使いたい
@@ -89,7 +90,6 @@ https://github.com/RedRayz/Kohya_lora_param_gui
 https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定してコマンドラインに渡すGUIです。
 - accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
 - 単体でsd-scriptsのインストール・更新ができるようになった。
-- LECOの学習もできる。
 - としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。
 
 ** LoRA_Easy_Training_Scripts Installers
