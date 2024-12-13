@@ -9,9 +9,8 @@ Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
 https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/
 kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツールが人気となっている。
 このページではsd-scripts関連の情報について雑に書いてある。
-''ページの更新がほとんどされておらず、古くなっていることに留意。''
+''ページの更新がほとんどされておらず、一部の情報が古くなっていることに留意。''
 &size(10){このページもといローカル部のページのほとんどが更新停止で悲しい&#129402;}
-''ここの情報はSD1.5に関するもの。現時点でSDXLの情報は無い。''
 SDXL関連はスレか他所のページを見ましょう。
 
 * 公式情報
@@ -116,18 +115,6 @@ start.batと同じフォルダに入れて実行してください
 - ダイアログ用(みかんせい)
 -- https://github.com/aka7774/elemental_code/blob/main/tools/install_sd_scripts_easy_training.bat
 
-
-** AUTOMATIC1111 SD WebUI 拡張機能版 (作: ddPn08 GUI) ※更新停止
-%%ttps://github.com/ddPn08/kohya-sd-scripts-webui%%
-去年の六月を最後に更新が停止しています。現在も動作するかは不明です。
-[+]
-WebUIのエクステンションに対応。スタンドアロンで動かすと上記のbmaltais版と似たような感じ。
-- エクステンションとしても使えるけどモデル分のVRAM余分に食うからエクステンションで使う場合[[空モデル>https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/908#issuecomment-1256198421]]読み込ましやとのことや
-- 使い方は本人のnoteでもぐぐって調べるんやで。検索もでけへんやつはこのWikiにはおらんやろ。
-- WebUI 割としょっちゅう壊れることやしこいつは単独起動もできるから単独で入れたほうがええんとちゃうかな…？
-- アップデートは update.bat
-[END]
-
 ** sd-webui-train-tools
 https://github.com/liasece/sd-webui-train-tools
 AUTOMATIC1111 SD WebUI 用の 拡張機能
@@ -150,8 +137,12 @@ pip install --use-pep517 --upgrade -r requirements.txt
 ** クラウド
 [[あかちゃんLoraノートブック>https://seesaawiki.jp/nai_ch/d/kohya_train_network_simple]]
 海外ニキのjupyter notebook
-リンクのみ紹介。その都度最新版を取ってくるので動かなくても泣かない。
+リンクのみ紹介。すでに更新停止(Archived)しており、動くかどうかは不明。
 https://github.com/Linaqruf/kohya-trainer
+
+* SDXLについて
+基礎解像度が1024になった。SD1より安定性が良く、低いRank(Dim)でも良好な結果を得られる。
+VRAM使用量が大幅に増加しており、8GBでTE込みの学習をするには--fp8_baseが必要。
 
 * 学習用画像を置くフォルダの配置
 %%%sd-scripts で --dataset_config で設定ファイルを渡す場合は異なる%%%
@@ -330,10 +321,10 @@ Dim/NW=128/64(LoCon:32/16) 元画像38枚*20回 10epoch Adafactor
 [END]
 ** 透明のPNGを正則化画像にする
 透明正則化は効果を確認できないため、やる必要性はない。ただの都市伝説。
+[+] 古い情報
 Web UI に拡張機能 Generate-TransparentIMG をインストールする
 [[https://github.com/hunyaramoke/Generate-TransparentIMG>>https://github.com/hunyaramoke/Generate-TransparentIMG]]
 Generate TransparentIMG タブで、「出力フォルダ」には正則化画像の保存先を、「number_of_generation」には作成する枚数を入力して実行
-[+]画像
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/l8x2Fjrdz7.png)
 [END]
 
@@ -604,139 +595,24 @@ last.safetensors というファイルができる
 //|What do you want your output name to be?|出力ファイルの名前|省略時はオリジナルと一緒||
 //[END]
 ** オプティマイザー
-*** Adafactor
-完全自動Optimizer。AdamWより計算も収束も遅い。はっきり言ってLoRAでは使う価値はない。LoRAよりFinetuningなどの大規模学習に向いている。
-Adなんとかを使って学習してみたらなんも学習してないのができて悲しかったので、スレでマークしておいたものを記録しておきます。クリックして展開
-[+]2023/02/22あたりのAdafactorの話題メモ
-----
--396: としあき  2023/02/22(水) 00:56:16.00
->>Adafactorって簡単に言うとどういうものなの？
-Optimizerと呼ばれるものの一種（LoRAデフォルトはAdamW）
-Optimizerはネットワークの最適なパラメータを探す手法だけど
-Optimizerがやってる内容的には例えば足元が1寸先しか見えない状況で最も高い場所探すにはどうすればいいかみたいな感じの計算してる
-Adafactorは学習率とかを自動調整する機能が優秀だから調整に頭悩ませなくて済むメリットがある
-分かり易い解説をありがとう
-----
-NVA部157あたり：https://fate.5ch.net/test/read.cgi/liveuranus/1677145939/661
--264: 
-AdaFactorを使った学習で1repeats50epochと10repeats5epochでどちらが良いのか調べてみました！！
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4Z3sZrWgqR.png,400)
-結果、よく分かりませんでした・・・
-いかがでしたでしょうか？
-1rp50epの方が再現度は高い気がする
-が、epochの切り替わりに時間がかかるので、10rp5pに比べて3倍ぐらい時間がかかる
 
--269: 
-AdaFactorとAdamW8bitの違いを凝光で検証したのでLoRA作成メモ更新したで
-AdaFactorは少し遅い代わりにいい感じに過学習を抑えながら再現できるっぽい
-https://rentry.org/genshin_lora
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aq9ohRdc_N.png,600)
-ついでに凝光とかのlora上げとくわ
-https://huggingface.co/RedRayz/genshin_lora_set
+指定方法が空欄のものは名前と同じことを指します。
+|名前|指定方法|計算速度|収束速度|メモリ使用量|使いやすさ|備考|
+|AdamW||高速|低速|普通|良||
+|Adam8bit||高速|低速|少|良||
+|Lion||高速|普通|普通|良||
+|Lion8bit||高速|普通|少|良||
+|AdaFactor||低速|低速|少|低||
+|DAdaptLion||低速|高速|普通|やや低||
+|Prodigy||低速|かなり高速|普通|やや低||
+|AdamWScheduleFree||高速|高速(高LR)|普通|良|sd3ブランチ限定|
+|CAME|came_pytorch.CAME|高速|超高速|少|やや低|pytorch_cameのインストール必要|
 
--488: 
-1e-4で2500回回すのと
-5e-5で5000回回すの
-なんとなく後者でやった方が過学習なさそうで後者でやってるけど実際1e-4で少ないステップでもええの？
-
--507: 
-Adafactor君、再現度確保するためにはかなりステップ回さないとダメっぽいな
-それだけ過学習がしづらいということなんだろうけどこれだったら別にAdamWのままでも良さそう・・・
-
--509: 
-AdaFactor学習進まんのはalphaが何か悪さしとる気がしないでもない
-あれを1にするとLR以前の問題で学習のフィードバックががた落ちするからな
-イージースクリプトやとdimの半分が推奨値やし
-今試しとるところや
-
--575: 
-AdaFactorのオプション --optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True"
-でラーニングレート1e-3から1.0に変えてalpha1から128に変えたらいい感じになったで
-今から壊れるまでSTEPぶん回してくる
-
--646:
-AdaFactorで学習進まんのはやっぱりalphaが低すぎるのが主要因やと思うわ
-alphaをdimの半分の64でやったら数千ステップで普通に学習されたから
-alpha1でうまくいかん奴がおったらワイ個人としてはAdaFactor使用時はalphaをdimの半分で運用するのを勧めるで
-
--658:
-AdaFactor、前と同じステップにするとなんも学習してないようなのができるよな
-時間かかっても精度上げるためのオプティマイザらしいが、そんなに精度に差があるかはまだようわからんな…
-
--659: 
-https://paperswithcode.com/method/adafactor
-これがAdafactorや
-本格的に深層学習やるなら魚本買って学習した方が手っ取り早いかもしれんな
-いよいよ数学の話になってもうた
-
--785:
->>774
-これはsdじゃなくてcraiyonで使われてるDall-e-miniモデルの比較みたいやが
-adamの最適値が1e-4に対してadafactorの最適値は1e-3なんでもう少しlr上げてもええかもしれんね
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uWChTGnwqi.png,800)
-
--770: 
-バッチ4で回したけどバッチ1に換算して表示しとるで
-これ見ると2000ステップは門前払い、4000でようやく要素が似てきて、6000でやっとという感じやな
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iGXh4EJBq2.png,600)
-
-res 512
-dim 128
-alpha 64
-batch 4
-LR none
-relative True
-scale True
-warmup True
-
--869: 
-adafactorのオプションのwarmup_init=Trueすると>>770のいう通り相当回さんと学習せんで
-結果はいいのかもしれんけど時間かかりすぎるからワイは無効にしとる
-adafactor使用時はlr=1e-3でaddmWの1e-4と同じような学習になる気がする
-
--876:
-Adafactorスクリプト版で>>774を見よう見まねで試してみたけど何一つ学習してなくて草枯れる…
-と思って前スレ（>>981）見たら
-＞AdaFactorは"warmup_init=True"すると学習しなくなる。ワイの設定の仕方のせいかもしれんけど
-＞"relative_step=True" "scale_parameter=True"はデフォで有効だから--optimizer_type=AdaFactorでええ
-こんなんあってoptimizer_args消したらとりあえず学習してくれたわ
-
--897:
-AdaFactorとLion、収束遅い割にそこまで画質向上した感無くて辛くない？結局使い慣れたAdamW+Cosineに戻ってきちゃった
-昔スレニキが言ってた、色んなOptimizerが出てはAdamに勝てず消えていくって言ってた意味が何カ月ぶりかにようやく理解できたわ...
-
--905: 
->>770の続きで今度はAdaFactorのwarmup有無やで
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cZJP9bXMen.png,600)
-これを見るにwarmupが無ければ2000でもほぼ写し取りが完了していて
-warmupはどっかをいじって立ち上げ角度変えんと邪魔にしかならんことが分かる
-
-ただ↑のはベースモデルの出力でwarmup無しでいかにも過学習が起きにくいように見えとるけど
-これを7th3.1Cに持って行くとこうや
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aiMuRlUtzp.png,600)
-学習が進むにつれベースモデルへの依存が増すのかモデル間の持ち運びが破綻しとる
-8bitAdamが無ければ省メモリダントツの革命的なオプティマイザなんやけど使い方の研究が進まんと今のところは好みの問題やな
-
--907: 
-おもかげ宿し始めてんのワロス
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/5XUVQYndRl.png,200) &ref(https://image02.seesaawiki.jp/n/h/nai_ch/zYU6SA1jpz.png,200)
->>876
---optimizer_args "relative_step=True" "scale_parameter=True" "warmup_init=True" をまるごと削除して通ったわ
-シャイニングショルダー飽きたからポプ子とピピ美でやってみる
-
--973: 
-オプティマイザーをAdfactorで学習したやつ：ポプテピ
---optimizer_type=AdaFactor --save_every_n_epochs=1 --learning_rate=1e-3 --network_dim=64 --network_alpha=32
-2080ステップ/1epoch目のやつだけど学習は十分な感じはある
-なんか混ざっちゃうのはワイがタグ付け&#128118;だからだと思う
-ちなモデルはリアル系は合わなくてHXDCにしたらかわいくなってしまった、クソアニメなのに
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VugkNJtYkU.png,300) &ref(https://image01.seesaawiki.jp/n/h/nai_ch/bfo1MDtv05.png,300)
-[END]
 
 *LoRAの種類とLyCORISについて
 LyCORISについて
 https://github.com/KohakuBlueleaf/LyCORIS
-LoRAの新しい学習手法をまとめたリポジトリ。通常のLoRAより性能がいいかもしれない。計算速度(it/s)は遅い。
+LoRAの新しい学習手法をまとめたリポジトリ。通常のLoRAより性能がいいかもしれない。一部のアルゴリズムの計算速度(it/s)は遅い。
 もともとLoConのみだったが、のちに新しいアルゴリズムも追加されLyCORISに統合された。
 
 **LyCORIS のインストールと使用方法
@@ -753,6 +629,7 @@ python3 sd-scripts/train_network.py
   --network_args "conv_dim=○○" "conv_alpha=○○" "dropout=○○" "algo=lora"
 ||=
 注：1行で入力する事
+デフォルトで畳み込み層(Conv)を学習するが、それが不要ならconv_dimに0を指定する。
 
 ○○は数値を入力
 指定の例

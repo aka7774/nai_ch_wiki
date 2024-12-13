@@ -109,7 +109,7 @@ You have changed...と聞かれたらBring my changesを選択してswitch branc
 *** Forge/ComfyUI
 最新版にアプデする。
 
-*** 1111/Forgeでノイズ製造機になる場合
+*** 1111/Forgeでノイズ製造機/真っ黒になる場合
 次のリンクからsd_xl_v.yamlをwebui/models/Stable-diffusionにDLする。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/dev/configs/sd_xl_v.yaml
 DLしたyamlファイルを使用するcheckpointと同じ名称に変更する。
