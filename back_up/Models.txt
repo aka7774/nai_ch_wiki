@@ -75,27 +75,33 @@ https://huggingface.co/fal/AuraFlow
 https://huggingface.co/Efficient-Large-Model/Sana_1600M_1024px
 - DiTアーキテクチャ
 - 軽量なことが売り
-- リリースされた(使えるUIがまだない？)
+- リリースされた(ComfyUIで使うにはカスタムノードが必要)
 - 文章を正しく生成できる?
 - 商用利用禁止(研究目的の使用を意図している?)
 
 ** predictionの種類
+※間違っている可能性あり。間違っていたら修正してください。
+
 ノイズ予測アルゴリズムの種類。
-v-predictionだからといって劇的に性能が上がるわけではない。せいぜい色の精度が上がる程度。
+v-predictionだからといって劇的に性能が上がるわけではない。わかりやすい変化はZero Terminal SNRを併用することで色の精度が上がる程度。
 *** ε-prediction / epsilon-prediction
 SD1とSDXLのデフォルト
+画像のノイズ部分を予測する。
 SN比=0(純粋なノイズ)では機能しない。
-全体が明るい/暗い状況でグレー寄りになるため、単色背景やシルエットなどの表現が苦手。これはNoise offsetやMultires noiseで緩和可
+全体が明るい/暗い/原色が強い状況でグレー寄りになるため、単色背景やシルエットなどの表現が苦手。これはNoise offsetやMultires noiseで緩和可
 
 *** v-prediction
-SD2と一部のSDXLモデル(NovelAI、NoobAI-XL)が使用
+SD2と一部のSDXLモデル(NovelAI Diffusion V3、NoobAI-XL)が使用
+ノイズ除去前と除去後の差分を予測する。
 SN比=0(純粋なノイズ)でも機能する
 Zero Terminal SNRを併用することで全体が明るい/暗い状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。
-ほかにも安定性が改善する？
-低めのGuidance Scaleで運用できるっぽい
+ほかにも安定性が改善するらしい
+低めのGuidance Scaleで運用できる(大体5以下)
 とあるモデルの影響で勘違いしている人が一定数いるが、これは''高速化する技術ではない''。多分DMD2という高速化LoRAの効果。
 
 ちなみに、VはVelocityの頭文字でありν(ニュー)ではない。
+
+Zero Terminal SNR(ZTSNR)はSN比=0であるべき状況で0にならない欠陥を修正するもの。
 
 ** v-predictionモデルの使い方
 2024年11月27日時点の情報です。
