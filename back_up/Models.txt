@@ -112,10 +112,12 @@ webuiのディレクトリ直下で次のコマンドを実行する。
 You have changed...と聞かれたらBring my changesを選択してswitch branchを押す。
 あとはいつも通りwebuiを使用する。
 
+必要に応じて、Settings>Sampler parametersにあるNoise schedule for samplingをZero Terminal SNRにする。
+
 *** Forge/ComfyUI
 最新版にアプデする。
 
-*** 1111/Forgeでノイズ製造機/真っ黒になる場合
+*** 1111/Forgeでノイズ製造機/真っ黒になる、またはmainブランチの1111で使う
 次のリンクからsd_xl_v.yamlをwebui/models/Stable-diffusionにDLする。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/dev/configs/sd_xl_v.yaml
 DLしたyamlファイルを使用するcheckpointと同じ名称に変更する。
@@ -161,10 +163,12 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 *** fp32(単精度浮動小数点数)
 - floating pointの略。A1111系でfullとかいう言葉が出てきたら大抵これのこと。コンピュータの世界ではfloatと呼ぶ場合はこれ。
 - 1ビットの符号と8ビットの指数部と23ビットの仮数部
-- ほぼすべてのCPUやGPUで対応している
+- 現行のハードウェアはすべて対応
 - 高精度だが計算量が多い
+- 生成AIでは重い割にfp16とあまりかわらない
 
 *** fp16/float16(半精度浮動小数点数)
+- 生成AIで主流の精度
 - floating pointの略。halfとかいう言葉が出てきたら大抵これのこと。
 - 1ビットの符号と5ビットの指数部と10ビットの仮数部
 - 処理が速い
@@ -181,7 +185,7 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 *** fp8(float8_e4m3fn)
 - 1ビットの符号と4ビットの指数部と3ビットの仮数部(ほかにもある)
 - fp16の半分のメモリ使用量
-- だが精度も多少落ちる
+- だが精度も落ちる
 - Torchが自動でキャストするので非対応のGPUでも動作する。
 - NVIDIAのRTX4000以降であればそのまま動いて多少速くなる・・・はずがほとんどのソフトがfp8演算に非対応でfp16にアップキャストするのでむしろ遅くなる。
 
