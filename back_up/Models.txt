@@ -112,8 +112,6 @@ webuiのディレクトリ直下で次のコマンドを実行する。
 You have changed...と聞かれたらBring my changesを選択してswitch branchを押す。
 あとはいつも通りwebuiを使用する。
 
-必要に応じて、Settings>Sampler parametersにあるNoise schedule for samplingをZero Terminal SNRにする。
-
 *** Forge/ComfyUI
 最新版にアプデする。
 
@@ -121,6 +119,8 @@ You have changed...と聞かれたらBring my changesを選択してswitch branc
 次のリンクからsd_xl_v.yamlをwebui/models/Stable-diffusionにDLする。
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/dev/configs/sd_xl_v.yaml
 DLしたyamlファイルを使用するcheckpointと同じ名称に変更する。
+
+必要に応じて、Settings>Sampler parametersにあるNoise schedule for samplingをZero Terminal SNRにする。
 
 ** インペイント専用モデル
 
@@ -237,7 +237,7 @@ SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98
 - [[Checkpoint Merger>ローカルのマージ]]
 - [[層別マージ>階層マージ]]
 
-[+] 古い情報
+[+] 古い情報(2022)
 標準Checkpoint Mergerにバグがあり、Add Differenceを使うとモデルが壊れていた。
 n番目のトークンが無視されたり効果が弱まったりする。nは不定(1や76以外もありうる)
 これは2023-01-15に修正された。(層別マージニキがプルリク送ってくれた)

@@ -26,6 +26,9 @@
 スレとは関係ないが、2024年の画像生成AIに関する情報がコンパクトにまとめられているので、浦島が読むのにちょうど良い。
 編注：ついこのまえ2023年のこの項目を追加したと思ったのに、もう一年経ってる。こわい
 
+**2024-12-06 無断転載された画像を使わず学習されたモデル「Emi 3」が公開される
+https://huggingface.co/aipicasso/emi-3
+> Emi 3 (Ethereal master of illustration 3) は、 オプトアウト済みモデルStable Diffusion 3.5 Largeをベースに AI Picasso社が開発したAIアートに特化した画像生成AIです。 このモデルの特徴として、Danbooruなどにある無断転載画像を追加に学習していないことがあげられます。
 **2024-12-03 Huggingfaceにアップロード容量の制限が設けられる
 今まで容量無制限でモデルのアップロードが可能ということで多くのユーザーを集めていたHuggingFaceだったが、ついに容量制限がかけられた。
 無課金ユーザーは500GB、課金ユーザーは1TBとのこと。
@@ -2051,6 +2054,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 

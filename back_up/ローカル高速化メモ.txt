@@ -1,8 +1,8 @@
 #contents
 
 * 収束の高速化
-いわゆる「蒸留」で少ないステップ数で収束させ、Guidance Scale/コンディショニングの計算を不要にすることで高速化する。
-ただし品質が低下する。
+いわゆる「蒸留」で少ないステップ数で収束させ、Guidance Scaleとアンコンディショニングの計算を不要にすることで高速化する。
+それと引き換えに品質が低下し画風が変化する。
 
 *** LCM(Latent Consistency Model)
 https://huggingface.co/latent-consistency/lcm-lora-sdxl
@@ -12,22 +12,6 @@ https://huggingface.co/ByteDance/Hyper-SD
 
 *** DMD2(Distribution Matching Distillation)
 https://huggingface.co/tianweiy/DMD2
-
-* torch2
-現在、torch2がデフォルトになりました。
-WebUIの最適化が進んで速くなっている上Hyper-SDなどの改造不要の最適化やパラメータの調整でさらに速くできるのでtorch.compile改造はおすすめしません。
-
-[+] 古い情報
-torch2化、torch.compile改造ともにVRAMの消費量が増えます。
-高解像度生成などでVRAMがカツカツな人は取捨選択が必要かも。
-何倍も速くなるわけではない。xformersよりは良いかなってくらい。
-
-torch.compile()でさらに高速化するが、以下の欠点があるのでお勧めしない。
-- コンパイルそのものに時間がかかる
-- モデル、解像度、Batch size変更の度にコンパイルされる ~~ &size(12){キャッシュされるので毎回コンパイルされるわけではない}
-- WebUIにとって想定外の処理のため不安定。
-- Linuxのみ対応
-[END]
 
 * CUDA使用率
 画像生成速度には、CUDA使用率が大きく影響する。
@@ -92,7 +76,7 @@ xformersよりVRAM使用量が増えるため、学習や高解像度生成時�
 fp8では動作しない。
 
 ** Pad prompt/negative prompt
-76トークン以上で出力がおかしくなることがあるので、オフ推奨
+''76トークン以上で出力がおかしくなることがあるので、オフ推奨''
 
 * ハードウェアアクセラレーションによるGPUスケジューリング を無効にする
 VRAM消費を減らす効果がある。速度も向上するかも。
@@ -191,8 +175,8 @@ UIからオフにするだけではダメ
 DPM++ 2Mは15Stepsでもそれなりに映えるのでおすすめ。
 %%UniPCはもっと良い感じ。%%実際はそうでもない。
 SchedulerにSimpleを使うとさらに良くなる。
-LCM、TurboやHyper-SDはさらに速い。出力を大きく変化させたり相性の良し悪しがあったりする代わりに10steps未満でまともな絵がでる。
-ν-predictionモデルは↑無しでも10ステップ程度でまともな絵を出せる。
+LCM、TurboやHyper-SDなどはさらに速い。出力を大きく変化させたり相性の良し悪しがあったりする代わりに10steps未満でまともな絵がでる。
+最近の派生モデルは↑無しでも10ステップ程度でまともな絵を出せるものもある。
 
 * WebUIを高速なストレージに入れる
 シーケンシャル3GB以/s上のSSDに配置することで読み込みを高速化する。大容量なSDXLで効果的。
