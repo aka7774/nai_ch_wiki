@@ -401,11 +401,12 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 |Adam8bit||高速|低速|少|良||
 |Lion||高速|普通|普通|良||
 |Lion8bit||高速|普通|少|良||
-|AdaFactor||低速|低速|少|低||
+|AdaFactor||低速|低速|少|低|完全自動でこの表の中で最も遅い。多分大規模学習向け|
 |DAdaptLion||低速|高速|普通|やや低||
 |Prodigy||低速|かなり高速|普通|やや低||
-|AdamWScheduleFree||高速|高速(高LR)|普通|良|sd3ブランチ限定|
-|CAME|came_pytorch.CAME|高速|超高速|少|やや低|pytorch_cameのインストール必要|
+|AdamWScheduleFree||高速|高速(高LR)|普通|良|sd3ブランチ限定、LR Schedulerはconstant_with_warmupでOK|
+|RAdamScheduleFree||高速|高速(高LR)|普通|優良|sd3ブランチ限定、LR schedulerはconstantでOK(wamupも不要)|
+|CAME|came_pytorch.CAME|高速|超高速|少|普通|pytorch_cameのインストール必要|
 
 
 *LoRAの種類とLyCORISについて

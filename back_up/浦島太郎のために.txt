@@ -21,6 +21,11 @@
 
 #contents
 *2024年
+**2024-12-22 NoobAI-XL 1.0(v-prediction版)が公開される
+v-predictionとZero Terminal SNRを使用することで明暗と色の表現が改善したもの。
+上記の技術については[[Models>Models]]を参照
+- https://civitai.com/models/833294
+
 **2024-12-21 NovelAI Anime Diffusion V4 &#8212; Curated Previewがリリースされる
 https://blog.novelai.net/novelai-anime-diffusion-v4-curated-preview%E3%81%AE%E3%81%94%E7%B4%B9%E4%BB%8B-2549111172ae
 マルチキャラクタープロンプト、アクションタグ、英語の自然言語理解の向上などが実装された。
@@ -33,6 +38,7 @@ https://blog.novelai.net/novelai-anime-diffusion-v4-curated-preview%E3%81%AE%E3%
 **2024-12-06 無断転載された画像を使わず学習されたモデル「Emi 3」が公開される
 https://huggingface.co/aipicasso/emi-3
 > Emi 3 (Ethereal master of illustration 3) は、 オプトアウト済みモデルStable Diffusion 3.5 Largeをベースに AI Picasso社が開発したAIアートに特化した画像生成AIです。 このモデルの特徴として、Danbooruなどにある無断転載画像を追加に学習していないことがあげられます。
+
 **2024-12-03 Huggingfaceにアップロード容量の制限が設けられる
 今まで容量無制限でモデルのアップロードが可能ということで多くのユーザーを集めていたHuggingFaceだったが、ついに容量制限がかけられた。
 無課金ユーザーは500GB、課金ユーザーは1TBとのこと。
