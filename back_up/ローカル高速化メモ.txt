@@ -13,6 +13,9 @@ https://huggingface.co/ByteDance/Hyper-SD
 *** DMD2(Distribution Matching Distillation)
 https://huggingface.co/tianweiy/DMD2
 
+*** TDD(Target-Driven Distillation)
+https://huggingface.co/RED-AIGC/TDD
+
 * CUDA使用率
 画像生成速度には、CUDA使用率が大きく影響する。
 アスカベンチで同じグラボの他人の結果より明らかに遅い場合、なんらかの原因でCUDAがフルに使われていない可能性もある。
@@ -26,7 +29,7 @@ https://huggingface.co/tianweiy/DMD2
 ** xformers
 Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減少効果がある。
 インストールは1111の標準機能で簡単にできる。
-このオプションをつけるとわずかに出力内容が変化し、常に同じ結果にならない。
+このオプションをつけるとわずかに出力内容が変化し、常に同じ結果にならない。なお、最近のバージョンはこの動作が修正されている。
 とはいえ体感できるか難しいほど小さい変化のため気にする必要はない。
 
 変化の検証ページ作ったので記録はこちらへ
@@ -76,6 +79,7 @@ xformersよりVRAM使用量が増えるため、学習や高解像度生成時�
 fp8では動作しない。
 
 ** Pad prompt/negative prompt
+パフォーマンスが改善すると書いてあるが、実際は変化がないように思える。
 ''76トークン以上で出力がおかしくなることがあるので、オフ推奨''
 
 * ハードウェアアクセラレーションによるGPUスケジューリング を無効にする
@@ -209,7 +213,6 @@ https://sourceforge.net/projects/imdisk-toolkit/
 [END]
 
 * WSL2で使う
-
 - [[1111_WSL2]]
 
 以前はLinuxにするだけで1〜2割速くなると言われていたが、ドライバやTorchの最適化が進んで速度やメモリ消費の差が小さくなった。
@@ -218,13 +221,13 @@ https://sourceforge.net/projects/imdisk-toolkit/
 * Linuxに入れる(上級者向け)
 Windows上の仮想化ではなく実際にインストールする。
 Ubuntu24.04 LTS、Python 3.11.9、Torch2.3.1での環境では、推論(it/s)は2〜4%、学習は10%高速化した。VRAM消費は特筆すべき変化はなかった。
-また、メモリ消費が減少し、medvram有効時の生成開始と終了のもたつきが軽減して結構速くなった。いいぞこれ
+また、メモリ消費が減少し、medvram有効時の生成開始と終了のもたつきが軽減して結構速くなった。IOが速いのか全体的にレスポンスが良い
 ただしメモリ不足になるとWindowsは頑張って耐えるもののLinuxは素直にフリーズしてから落ちる
 
 Windowsが入っていない空っぽのSSDに入れるか、サブ機とかお古になったら検討してもいいかも
 なお各種ライブラリ等のインストールは原則コマンド打ってやるし、途中でUbuntuのGUI(gdm3)が壊れてリカバリーモードでgdm3を再インストールしたりとかなり面倒
 
-* TensorRTを使う
+* TensorRTを使う(非推奨)
 https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT
 最適化で大幅に高速化するもので最大2倍速くなるらしい。NVIDIA専用。
 1111のExtensionから導入できる。
@@ -244,7 +247,7 @@ Extension試しまくってると肥大化するので月イチくらいでや�
 
 * 別のUIを使う
 1111のWebUIを速くする方法でこれを書くのは本末転倒だが、ほかのUIを使う手もある。
-AUTOMATIC1111のWebUIは最近になって速度が改善されたが、Windows版のメモリ消費の多さは変わっていない。Forgeのほうが省VRAM、ComfyUIは速くて省メモリで省VRAM。
+AUTOMATIC1111のWebUIは最近になって速度が改善されたが、Windows版のメモリ消費(確保)の多さは変わっていない。Forgeのほうが若干省VRAM、ComfyUIは速くて省メモリで省VRAM。
 
 * GPUを買い替える
 ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。
