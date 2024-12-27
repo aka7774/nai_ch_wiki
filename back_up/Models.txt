@@ -7,13 +7,14 @@
 
 ** まとめ
 
-- 生成に使うのは fp16, pruned, safetensors を満たすファイルが良い。
+- 生成に使うのは fp16, pruned, safetensors を満たすファイルが良い。2024年現在は左記を満たしているのが当り前なので気にする必要なし。
 
 ** Stable Diffusionのバージョン
 *** SD1
 SD1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - U-Netアーキテクチャ
 - 860M(8.6億)パラメータ
+- 基礎解像度は512x512
 - そのまま使える。
 - 軽量だが低性能
 - 文章は全く生成できない
@@ -22,6 +23,7 @@ SD1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 - U-Netアーキテクチャ
 - 865M(8.65億)パラメータ
+- 基礎解像度は768x768
 - 文章を正しく生成できない
 - 使うためには同名のyamlファイルを設置する必要がある。
 - 大抵はモデルの配布元が配っている。
@@ -32,6 +34,7 @@ SDXL Base 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - U-Netアーキテクチャ
 - 2.6B(26億)パラメータ
 - BaseとRefinerの二種類が存在する
+- 基礎解像度の1024x1024への変更とVAEの改良によりディティールが改善
 - そのまま使える。
 - 文章を正しく生成できない
 
@@ -39,6 +42,8 @@ SDXL Base 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 https://huggingface.co/stabilityai/stable-diffusion-3-medium
 - DiTアーキテクチャ
 - Medium(2.5B)のみ
+- 基礎解像度は1024x1024
+- VAEの改良によりディティールが大幅改善
 - (DiTモデル全般に言えることだが)破綻が少なく、線を真っすぐ引ける。
 - 表現規制がきつく解剖がおかしくなる欠陥あり
 - 文章を正しく生成できる
@@ -48,9 +53,13 @@ Large: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - DiTアーキテクチャ
 - Large(8.1B)とMedium(2.6B)の二種類がある
-- 使うには、モデル本体に加えてCLIP L/G、SD3 VAEが必要。T5XXLは任意
+- 基礎解像度は1024x1024
+- MediumはT5を除けばSDXLと同程度のメモリ使用量だが、計算はSDXLの二倍遅い。Largeはメモリ使用量、計算量ともに非常に多い。
+- 使うには、モデル本体に加えてCLIP L/Gが必要。T5XXLは任意
 - 規制の緩和とSD3.0の問題を解消
 - 文章を正しく生成できる
+- FLUX.1より美的スコアが低い
+- Fine-tuningがしやすい(公式がFTのチュートリアルを出している)
 
 ** ほかのText-to-Imageモデル
 
@@ -59,10 +68,11 @@ dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - DiTアーキテクチャ
 - DevとSchnellの二種類がある
+- 使うには、モデル本体に加えてCLIP LとT5XXLが必要
 - 文章を正しく生成できる
 - 蒸留モデル(Fine-tuningが困難らしい)
 - オープンなモデルの中では最大級のパラメータ数(12B)。
-- それゆえに非常に重い
+- それゆえにSD3.5Lを超える重さ
 
 *** AuraFlow
 https://huggingface.co/fal/AuraFlow
@@ -75,7 +85,7 @@ https://huggingface.co/fal/AuraFlow
 https://huggingface.co/Efficient-Large-Model/Sana_1600M_1024px
 - DiTアーキテクチャ
 - 軽量なことが売り
-- リリースされた(ComfyUIで使うにはカスタムノードが必要)
+- 使えるUIがほとんどない(ComfyUIなら使えるがカスタムノードが必要)
 - 文章を正しく生成できる?
 - 商用利用禁止(研究目的の使用を意図している?)
 

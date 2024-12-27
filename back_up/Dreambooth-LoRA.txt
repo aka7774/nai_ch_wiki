@@ -58,8 +58,6 @@ SDXL関連はスレか他所のページを見ましょう。
 - クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある
 - フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。
 
-
-
 * インストール、初回セットアップ編
 
 ** sd-scripts (作: kohya-ss)
@@ -91,20 +89,6 @@ https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定し�
 - accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
 - 単体でsd-scriptsのインストール・更新ができるようになった。
 - としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。
-
-** LoRA_Easy_Training_Scripts Installers
-最初はまっさらなフォルダにインストールするんやで
-: https://github.com/derrian-distro/LoRA_Easy_Training_Scripts/ | 下記の学習の手順で使うEasyTrainScriptsの人が作った簡易インストールスクリプト
-画面右の Releases の下の Installers をクリック > 下にスクロールして install_sd_scripts_v5.bat をダウンロードする
-右クリックして管理者として実行すると sd-scripts 本体と Easy_Train_Scripts の両方をインストールして、インストール後の初期設定までやってくれる。
-うまくいかなかったら [[Gitをインストール>>https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%c6%b3%c6%fe%ca%fd%cb%a1#content_2_2]] してリトライ
-わからないとき用画像↓
-[+]
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/D_lYBs46Kx.png)
-&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lKDWlTHI_G.png)
-&video(https://image01.seesaawiki.jp/n/h/nai_ch/9crBKdm8fu.webm)
-[END]
-アップデートはupdate.bat からの upgrade.bat (大きなバージョンアップのときは入れ直し)
 
 ** あかちゃんLoraインストーラー
 あかちゃんインストーラーで1111を入れた人向けにPYTHONとGITのPATHをいじってあるやつ
@@ -395,18 +379,18 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 
 * オプティマイザー
 
-指定方法が空欄のものは名前と同じことを指します。
-|名前|指定方法|計算速度|収束速度|メモリ使用量|使いやすさ|備考|
-|AdamW||高速|低速|普通|良||
-|Adam8bit||高速|低速|少|良||
-|Lion||高速|普通|普通|良||
-|Lion8bit||高速|普通|少|良||
-|AdaFactor||低速|低速|少|低|完全自動でこの表の中で最も遅い。多分大規模学習向け|
-|DAdaptLion||低速|高速|普通|やや低||
-|Prodigy||低速|かなり高速|普通|やや低||
-|AdamWScheduleFree||高速|高速(高LR)|普通|良|sd3ブランチ限定、LR Schedulerはconstant_with_warmupでOK|
-|RAdamScheduleFree||高速|高速(高LR)|普通|優良|sd3ブランチ限定、LR schedulerはconstantでOK(wamupも不要)|
-|CAME|came_pytorch.CAME|高速|超高速|少|普通|pytorch_cameのインストール必要|
+指定方法が空欄のものは名前と同じことを指します。※精度と安定性は主観的
+|~名前|指定方法|精度|安定性|計算速度|収束速度|メモリ使用量|使いやすさ|備考|
+|AdamW||良|中|高速|低速|普通|良||
+|Adam8bit||良|やや低|高速|低速|少|良||
+|Lion||中|中|高速|普通|普通|良||
+|Lion8bit||中|やや低|高速|普通|少|良||
+|AdaFactor||中|低|低速|低速|少|低|完全自動でこの表の中で最も遅い。多分大規模学習向け|
+|DAdaptLion||中|やや低|低速|高速|普通|やや低||
+|Prodigy||優良|中|低速|かなり高速|普通|やや低||
+|AdamWScheduleFree||良|良|高速|高速(高LR)|普通|優良|sd3ブランチ限定、LR Schedulerはconstant_with_warmupでOK|
+|RAdamScheduleFree||良|優良|高速|高速(高LR)|普通|優良|sd3ブランチ限定、LR schedulerはconstantでOK(wamupも不要)|
+|CAME|came_pytorch.CAME|優良|良|高速|超高速|少|良|pytorch_cameのインストール必要|
 
 
 *LoRAの種類とLyCORISについて
