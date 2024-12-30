@@ -21,6 +21,9 @@
 
 #contents
 *2024年
+**2024-12-28 スクリプト攻撃が行われる
+数ヶ月ぶりにスクリプトによる攻撃が行われた。
+
 **2024-12-22 NoobAI-XL 1.0(v-prediction版)が公開される
 v-predictionとZero Terminal SNRを使用することで明暗と色の表現が改善したもの。
 上記の技術については[[Models>Models]]を参照
@@ -2066,6 +2069,8 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
+
 
 
 
