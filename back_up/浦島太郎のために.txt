@@ -21,11 +21,13 @@
 
 #contents
 *2025年
+**2025-01-07 NVIDIAからGeForce RTX5000シリーズが発表される
+https://www.nvidia.com/ja-jp/geforce/graphics-cards/50-series/
+
 **2025-01-04 パルリアスv5が公開される
 人気モデルのパルリアスにv5が登場、スレが大いに盛り上がった。
 公開を告知する書き込み：https://fate.5ch.net/test/read.cgi/liveuranus/1735778359/544
 公開場所のURL：https://huggingface.co/paruparu95483/paruparu_illustrious/tree/main
-
 *2024年
 **2024-12-28 スクリプト攻撃が行われる
 数ヶ月ぶりにスクリプトによる攻撃が行われた。どんぐり大砲の有効化と、書き込み可能レベルを3に上げる対処が行われた。
@@ -2075,6 +2077,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
