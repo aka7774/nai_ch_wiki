@@ -89,29 +89,34 @@ https://huggingface.co/Efficient-Large-Model/Sana_1600M_1024px
 - 文章を正しく生成できる?
 - 商用利用禁止(研究目的の使用を意図している?)
 
-** predictionの種類
+* predictionの種類
 ※間違っている可能性あり。間違っていたら修正してください。
 
 ノイズ予測アルゴリズムの種類。
 v-predictionだからといって劇的に性能が上がるわけではない。わかりやすい変化はZero Terminal SNRを併用することで色の精度が上がる程度。
-*** ε-prediction / epsilon-prediction
+** ε-prediction / epsilon-prediction
 SD1とSDXLのデフォルト
 画像のノイズ部分を予測する。
-SN比=0(純粋なノイズ)では機能しない。
+SN比=0(純粋なノイズ)では機能しない。そのためZero Terminal SNRは使用できない。
 全体が明るい/暗い/原色が強い状況でグレー寄りになるため、単色背景やシルエットなどの表現が苦手。これはNoise offsetやMultires noiseで緩和可
 
-*** v-prediction
+** v-prediction
 SD2と一部のSDXLモデル(NovelAI Diffusion V3、NoobAI-XL)が使用
 ノイズ除去前と除去後の差分を予測する。
 SN比=0(純粋なノイズ)でも機能する
-Zero Terminal SNRを併用することで全体が明るい/暗い状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。
+Zero Terminal SNRを併用することで全体が明るい、暗い、または高コントラストの状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。
 ほかにも安定性が改善するらしい
-低めのGuidance Scaleで運用できる(大体5以下)
-とあるモデルの影響で勘違いしている人が一定数いるが、これは''高速化する技術ではない''。多分DMD2という高速化LoRAの効果。
 
-ちなみに、VはVelocityの頭文字でありν(ニュー)ではない。
+*** Zero Terminal SNR
+SN比=0であるべき状況で0にならない欠陥を修正するもの。
+低めのGuidance Scaleで運用できる(大体5以下)、というか低めじゃないと彩度が高すぎる。
+学習時、データセットの相性がはっきり出る気がする。相性が悪いと構図が不安定になる。
 
-Zero Terminal SNR(ZTSNR)はSN比=0であるべき状況で0にならない欠陥を修正するもの。
+*** よくある勘違い
+v-predictionは''高速化する技術ではない''。低ステップ動作を謳うcheckpointは高速化LoRAをマージしている。
+v-predictionそのものは''明暗に強くする効果はない''。それはZero Terminal  SNRの効果。
+VはVelocityの頭文字でありν(ニュー)ではない。
+
 
 ** v-predictionモデルの使い方
 2024年11月27日時点の情報です。
@@ -130,13 +135,13 @@ You have changed...と聞かれたらBring my changesを選択してswitch branc
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/dev/configs/sd_xl_v.yaml
 DLしたyamlファイルを使用するcheckpointと同じ名称に変更する。
 
-必要に応じて、Settings>Sampler parametersにあるNoise schedule for samplingをZero Terminal SNRにする。
+必要に応じて、Settings>Sampler parametersにあるNoise schedule for sampling(sd_noise_schedule)をZero Terminal SNRにする。
 
-** インペイント専用モデル
+* インペイント専用モデル
 
 inpaint.ckptは普通のcheckpointとは違うらしい。
 
-** ハッシュ
+* ハッシュ
 
 [[Model hashとsha256の対応表はここ>sha256]]
 
@@ -148,11 +153,12 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 -- https://github.com/aka7774/sd_filer
 -- https://github.com/aka7774/sd_infotext_ex
 -- https://github.com/aka7774/sd_infotexts
-** ファイル形式
+
+* ファイル形式
 
 拡張子で判別する。
 
-*** .ckpt
+** .ckpt
 
 - checkpointの略。
 - チクポチではない。が、チクポチが出るかどうかはこいつ次第。
@@ -160,24 +166,24 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 -- まれにウィルスソフトが誤検知を起こして騒ぎになっていたりする
 - 狭義のモデルではないファイル(VAEとか)にもこの拡張子が使われることがあるので注意
 
-*** safetensors
+** safetensors
 - Hugging Face提唱の形式
 - ロード時にPythonのコードを実行できないので安全
 - 読み込みも速くなる(はず)
 - NMKDでは対応していない
 
-** 精度
+* 精度
 
 あくまで数値の精度であって、見た目の綺麗さや絵の細かさに直結するわけではない。
 
-*** fp32(単精度浮動小数点数)
+** fp32(単精度浮動小数点数)
 - floating pointの略。A1111系でfullとかいう言葉が出てきたら大抵これのこと。コンピュータの世界ではfloatと呼ぶ場合はこれ。
 - 1ビットの符号と8ビットの指数部と23ビットの仮数部
 - 現行のハードウェアはすべて対応
 - 高精度だが計算量が多い
 - 生成AIでは重い割にfp16とあまりかわらない
 
-*** fp16/float16(半精度浮動小数点数)
+** fp16/float16(半精度浮動小数点数)
 - 生成AIで主流の精度
 - floating pointの略。halfとかいう言葉が出てきたら大抵これのこと。
 - 1ビットの符号と5ビットの指数部と10ビットの仮数部
@@ -186,21 +192,26 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 - IntelとNVIDIAのGPUで対応している(AMDはRDNA3以降で対応？)
 - ダイナミックレンジが狭いためオーバーフローによるNaN演算を起こしやすい
 
-*** bf16/bfloat16
+** bf16/bfloat16
 - 1ビットの符号と8ビットの指数部と7ビットの仮数部
 - fp32と指数部が一緒になる（ダイナミックレンジが広い代わりに仮数部が減ってるので小数点以下の表現力はfp16より少し落ちる）
 - IntelとNVIDIAのGPUで対応している(AMDはRDNA3以降で対応？)
 - fp16よりNaN演算を起こしづらい
 
-*** fp8(float8_e4m3fn)
+** fp8(float8_e4m3fn)
 - 1ビットの符号と4ビットの指数部と3ビットの仮数部(ほかにもある)
 - fp16の半分のメモリ使用量
 - だが精度も落ちる
 - Torchが自動でキャストするので非対応のGPUでも動作する。
 - NVIDIAのRTX4000以降であればそのまま動いて多少速くなる・・・はずがほとんどのソフトがfp8演算に非対応でfp16にアップキャストするのでむしろ遅くなる。
 
-*** NormalFloat4(LinearNF4)
+** NormalFloat4(LinearNF4)
 - 量子化をすることで精度低下を抑える？
+
+** fp4
+- NVIDIAのBlackwellアーキテクチャで利用可能
+- fp8の半分、fp16の1/4の計算量
+- 精度も低い？
 
 [+] 古い情報
 SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98GiB)、SDXLなら6.94GB(6.46GiB)前後になる。

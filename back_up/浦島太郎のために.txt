@@ -22,8 +22,13 @@
 #contents
 *2025年
 **2025-01-07 NVIDIAからGeForce RTX5000シリーズが発表される
+Blackwell世代のGPUがNVIDIAから発表された。DLSS、Tensorコア、レイトレーシングコア、NVENC、NVDEC、メモリなどがそれぞれ新しい世代にバージョンアップしている。
 https://www.nvidia.com/ja-jp/geforce/graphics-cards/50-series/
-
+- GeForce RTX 5090…\393,800より、VRAM32GB、メモリ帯域幅1,792GB/sec
+- GeForce RTX 5080…\198,800より、VRAM16GB、メモリ帯域幅960GB/sec
+- GeForce RTX 5070 Ti…\148,800より、VRAM16GB、メモリ帯域幅896GB/sec
+- GeForce RTX 5070…\108,800より、VRAM12GB、メモリ帯域幅672GB/sec
+- （参考）GeForce RTX 4090…VRAM24GB、メモリ帯域幅1,008GB/sec
 **2025-01-04 パルリアスv5が公開される
 人気モデルのパルリアスにv5が登場、スレが大いに盛り上がった。
 公開を告知する書き込み：https://fate.5ch.net/test/read.cgi/liveuranus/1735778359/544
@@ -2077,6 +2082,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1664884109/
 - 2022/08/23 reddit民がクラウド環境やローカル環境ではNSFWフィルターを外せることを発見。
 https://www.reddit.com/r/StableDiffusion/comments/wv2nw0/tutorial_how_to_remove_the_safety_filter_in_5/
 - 2022/08 Stability.AIが「Stable Diffusion」を一般公開
+
 
 
 
