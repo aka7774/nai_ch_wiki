@@ -22,6 +22,7 @@
 ここに書いてあるよりも昔の出来事は[[こちら>https://seesaawiki.jp/nai_ch/d/%b8%c5%bb%f6%b5%ad]]に移したで
 * とりあえず最新の環境を教えてクレメンス
 2025年1月更新
+「そんなVRAMで大丈夫か？」
 **「大丈夫だ、問題ない」
 WebUI:[[EasyReforge>https://github.com/Zuntan03/EasyReforge]]
 ワンクリックでインストールできる。日本語で丁寧に解説されているのでわかりやすい。
@@ -87,6 +88,8 @@ rentry.co/howtousemusubituner
 ダメだったらごめんね
 ||=
 
+・musubi-tunerのGUI
+[[Hunyuan Video Lora Trainning with GUI in Windows>https://civitai.com/articles/10335]]
 **2025-01-08 パルリアス作者ニキ、店じまいを宣言
 - 当該の書き込み：https://fate.5ch.net/test/read.cgi/liveuranus/1736173877/836
 =|BOX|
@@ -824,6 +827,9 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
 
 
 
