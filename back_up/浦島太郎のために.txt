@@ -24,8 +24,8 @@
 2025年1月更新
 「そんなVRAMで大丈夫か？」
 **「大丈夫だ、問題ない」
-WebUI:[[EasyReforge>https://github.com/Zuntan03/EasyReforge]]
-ワンクリックでインストールできる。日本語で丁寧に解説されているのでわかりやすい。
+WebUI:[[reForge>https://github.com/Panchovix/stable-diffusion-webui-reForge]]
+[[EasyReforge>https://github.com/Zuntan03/EasyReforge]]を使ってワンクリックでインストールできる。日本語で丁寧に解説されているのでわかりやすい。
 
 Model:[[NoobAI-XL (NAI-XL)>https://civitai.com/models/833294/noobai-xl-nai-xl]]
 **「一番いいのを頼む」
@@ -37,7 +37,9 @@ Model:
 [[NoobAI-XL (NAI-XL)>https://civitai.com/models/833294/noobai-xl-nai-xl]]
 FLUX.1
 ・https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main
+→驚異の24gb。[[RTX 6000Ada>https://www.nvidia.com/ja-jp/design-visualization/rtx-6000/]]とかやったら動くんちゃうか、知らんけど
 ・https://huggingface.co/city96/FLUX.1-dev-gguf/tree/main
+→現実的な軽量版
 * 目次
 
 #contents
@@ -827,6 +829,11 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
+
+
 
 
 
