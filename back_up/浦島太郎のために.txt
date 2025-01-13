@@ -32,14 +32,14 @@ Model:[[NoobAI-XL (NAI-XL)>https://civitai.com/models/833294/noobai-xl-nai-xl]]
 WebUI:[[ComfyUI>https://github.com/comfyanonymous/ComfyUI]]
 [[Stability Matrix>https://github.com/LykosAI/StabilityMatrix]]を使って簡単にインストールできる。[[EasyHunyuanVideo>https://github.com/Zuntan03/EasyHunyuanVideo]]で動画の生成もできるで
 おそらく出来ることは一番多いが複雑な外観に眩暈する人を量産している
+[[ワークフロー集>https://github.com/comfyanonymous/ComfyUI_examples]]
+[[Wiki>https://comfyui-wiki.com/ja/comfyui-nodes]]
 
 Model:
 [[NoobAI-XL (NAI-XL)>https://civitai.com/models/833294/noobai-xl-nai-xl]]
-FLUX.1
+FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/flux/]])
 ・https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main
-→驚異の24gb。[[RTX 6000Ada>https://www.nvidia.com/ja-jp/design-visualization/rtx-6000/]]とかやったら動くんちゃうか、知らんけど
 ・https://huggingface.co/city96/FLUX.1-dev-gguf/tree/main
-→現実的な軽量版
 * 目次
 
 #contents
@@ -829,6 +829,11 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
+
+
 
 
 

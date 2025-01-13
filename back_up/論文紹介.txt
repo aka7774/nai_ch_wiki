@@ -1,0 +1,38 @@
+ある程度原理を知ってるとヒントになるかもしれない
+読んだほうがいい論文が出たら気軽に追加していってや
+
+#contents
+*Diffusion Model（拡散モデル）について
+**[[Denoising Diffusion Probabilistic Models>https://arxiv.org/abs/2006.11239]](2020/12)
+解説記事
+[[Denoising Diffusion Probabilistic Models>https://qiita.com/adrian-tam/items/ad974f371b2b047082ff]]
+[[拡散モデルの基礎と研究事例: Imagen>https://qiita.com/iitachi_tdse/items/6cdd706efd0005c4a14a]]
+[[What are Diffusion Models?(2021/12)>https://lilianweng.github.io/posts/2021-07-11-diffusion-models/]]
+**[[High-Resolution Image Synthesis with Latent Diffusion Models>https://arxiv.org/abs/2112.10752]](2022/4)
+Stable Diffusionの元論文
+解説記事
+[[【論文メモ】High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)>https://qiita.com/UMAboogie/items/afa67842e0461f147d9b]]
+*制御系
+**[[LoRA: Low-Rank Adaptation of Large Language Models>https://arxiv.org/abs/2106.09685]](2021/10)
+解説記事
+[[LoRA: Low-Rank Adaptaion of Large Language Models の解説>https://zenn.dev/fusic/articles/paper-reading-lora]]
+[[LoRAとその関連技術(初版は2023年執筆)>https://qiita.com/kzkymn/items/2f7a98fb66c546647877]]
+**[[Adding Conditional Control to Text-to-Image Diffusion Models>https://arxiv.org/abs/2302.05543]](2023/11)
+解説記事
+[[【Stable Diffusion】今更聞けないControlNetについて分かりやすく解説>https://note.com/wizard_ai/n/nc5c738dfebac]]
+*v-Predictionについて
+**[[Progressive Distillation for Fast Sampling of Diffusion Models>https://arxiv.org/abs/2202.00512]](2022/1)
+解説記事
+[[Three Stable Diffusion Training Losses: x0, epsilon, and v-prediction>https://medium.com/@zljdanceholic/three-stable-diffusion-training-losses-x0-epsilon-and-v-prediction-126de920eb73]]
+**[[Improvements to SDXL in NovelAI Diffusion V3>https://arxiv.org/abs/2409.15997v1]](2024/9)
+解説記事
+[[NovelAI Diffusion V3 技術レポート>https://zenn.dev/temple_c_tech/articles/novelai-diffusion-v3]]
+*動画生成
+**[[HunyuanVideo: A Systematic Framework For Large Video Generative Models>https://arxiv.org/abs/2412.03603]](2024/12)
+概要（日本語訳）
+最近の動画生成における進展は、個人や産業の両方において日常生活を深く変革してきました。しかし、主要なビデオ生成モデルは依然としてクローズドソースであり、業界と一般コミュニティ間で動画生成能力における大きな性能格差を生じさせています。本報告書では、新しいオープンソースの動画基盤モデル（video foundation model）である「HunyuanVideo」を紹介します。このモデルは、動画生成において、主要なクローズドソースモデルと同等か、それを上回る性能を示します。
+HunyuanVideoは、以下を統合した包括的なフレームワークを特徴としています：データキュレーション（data curation）, 高度なアーキテクチャ設計（advanced architecture design）, プログレッシブなモデルのスケーリングとトレーニング（progressive model scaling and training）, 大規模なモデルのトレーニングと推論を可能にする効率的なインフラストラクチャ（efficient infrastructure）。
+これらを基盤に、13億以上のパラメータを持つ動画生成モデルを成功裏にトレーニングしました。これは、すべてのオープンソースモデルの中で最大規模のものです。広範な実験を実施し、次のような特定の設計を実装しました：高い視覚品質（visual quality）の確保, 動作のダイナミクス（motion dynamics）の実現, テキストとビデオの整合性（text-video alignment）の向上, 高度な撮影技術（advanced filming techniques）の適用。
+専門家による人間評価の結果によれば、HunyuanVideoは、Runway Gen-3、Luma 1.6、および中国の動画生成モデルの中で最高性能を持つ3つのモデルを含む、これまでの最先端モデルを上回る性能を発揮しました。本モデルのコードとその応用を公開することで、クローズドソースとオープンソースのコミュニティ間のギャップを埋めることを目指しています。この取り組みにより、コミュニティの誰もが自身のアイデアを実験できるようになり、より動的で活気のある動画生成体制の促進が期待されます。コードは以下のURLで公開されています：https://github.com/Tencent/HunyuanVideo
+
+
