@@ -24,6 +24,7 @@ Stable Diffusionの元論文
 **[[Progressive Distillation for Fast Sampling of Diffusion Models>https://arxiv.org/abs/2202.00512]](2022/1)
 解説記事
 [[Three Stable Diffusion Training Losses: x0, epsilon, and v-prediction>https://medium.com/@zljdanceholic/three-stable-diffusion-training-losses-x0-epsilon-and-v-prediction-126de920eb73]]
+[[NovelAI Diffusion V3 の改善点>https://dskjal.com/deeplearning/nai-v3.html]]
 **[[Improvements to SDXL in NovelAI Diffusion V3>https://arxiv.org/abs/2409.15997v1]](2024/9)
 解説記事
 [[NovelAI Diffusion V3 技術レポート>https://zenn.dev/temple_c_tech/articles/novelai-diffusion-v3]]
@@ -34,5 +35,6 @@ Stable Diffusionの元論文
 HunyuanVideoは、以下を統合した包括的なフレームワークを特徴としています：データキュレーション（data curation）, 高度なアーキテクチャ設計（advanced architecture design）, プログレッシブなモデルのスケーリングとトレーニング（progressive model scaling and training）, 大規模なモデルのトレーニングと推論を可能にする効率的なインフラストラクチャ（efficient infrastructure）。
 これらを基盤に、13億以上のパラメータを持つ動画生成モデルを成功裏にトレーニングしました。これは、すべてのオープンソースモデルの中で最大規模のものです。広範な実験を実施し、次のような特定の設計を実装しました：高い視覚品質（visual quality）の確保, 動作のダイナミクス（motion dynamics）の実現, テキストとビデオの整合性（text-video alignment）の向上, 高度な撮影技術（advanced filming techniques）の適用。
 専門家による人間評価の結果によれば、HunyuanVideoは、Runway Gen-3、Luma 1.6、および中国の動画生成モデルの中で最高性能を持つ3つのモデルを含む、これまでの最先端モデルを上回る性能を発揮しました。本モデルのコードとその応用を公開することで、クローズドソースとオープンソースのコミュニティ間のギャップを埋めることを目指しています。この取り組みにより、コミュニティの誰もが自身のアイデアを実験できるようになり、より動的で活気のある動画生成体制の促進が期待されます。コードは以下のURLで公開されています：https://github.com/Tencent/HunyuanVideo
+
 
 

@@ -22,7 +22,7 @@
 ここに書いてあるよりも昔の出来事は[[こちら>https://seesaawiki.jp/nai_ch/d/%b8%c5%bb%f6%b5%ad]]に移したで
 * とりあえず最新の環境を教えてクレメンス
 2025年1月更新
-「そんなVRAMで大丈夫か？」
+「そんな性癖で大丈夫か？」
 **「大丈夫だ、問題ない」
 WebUI:[[reForge>https://github.com/Panchovix/stable-diffusion-webui-reForge]]
 [[EasyReforge>https://github.com/Zuntan03/EasyReforge]]を使ってワンクリックでインストールできる。日本語で丁寧に解説されているのでわかりやすい。
@@ -52,7 +52,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1736004270/626
 
 正直解説するほど詳しくないがとりあえず備忘録程度に情報をメモしとくで
 
-・動画生成aiHunyuanVideoの簡単インストーラー
+・動画生成モデル[[HunyuanVideo>https://github.com/Tencent/HunyuanVideo]]の簡単インストーラー
 [[EasyHunyuanVideo>https://github.com/Zuntan03/EasyHunyuanVideo]]
 
 なんJNVA部★498 https://fate.5ch.net/test/read.cgi/liveuranus/1736173877/28
@@ -829,6 +829,8 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
 
 
 
