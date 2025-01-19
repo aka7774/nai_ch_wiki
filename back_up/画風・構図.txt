@@ -262,12 +262,13 @@
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
 |worst quality|最低品質|Danbooruスコアがかなり低い画像に付く|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gnyOeyIBpK.jpg)|
-|bad anatomy|悪い解剖|解剖学的に不正確な身体描写を意味するdanbooruタグ。Quality tagsとしてUCに入ってるが、Danbooruを見る限り、よく見ると不自然だったりするだけで絵の品質が低いわけではない模様。 ~~ なお、perfect anatomyは解剖図が出るだけで品質向上効果なし。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HKYzuw9ZHp.jpg)|
+|bad anatomy|悪い解剖|解剖学的に不正確な身体描写を意味するdanbooruタグ。AIの性質上もともとBad Anatomyになりやすいので効果は微妙。 ~~ なお、perfect anatomyは解剖図が出るだけで品質向上効果なし。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HKYzuw9ZHp.jpg)|
 |lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ぼやけたりjpegノイズが生成されたりする ~~ モデルによるがネガに入れると絵がシャープになる|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wl4oe9os3h.jpg)|
-|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ SDの仕様上効果は多分ない||
+|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ 品質タグのように機能する？||
 |official art|公式アート|品質が向上する ~~ ロゴや著作権表記が出る場合あり|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yr8umSOBfB.png)|
 |virtual youtuber|バーチャルユーチューバー||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S.png]]|
-|masterpiece|傑作|NovelAIが独自につけたタグ。quality tagsに入っている。画風のブレを抑えるがいわゆるマスピ顔になって顔に影がかかる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|
+|masterpiece|傑作|一部アニメモデルで使える品質タグ。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|
+|best quality|最高品質|一部アニメモデルで使える品質タグ。masterpieceよりは下||
 |magnificent|素晴らしい||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4PMOq8x7wv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4PMOq8x7wv.png]]|
 |jewel-like eyes|宝石のような目|画風で合ってるのか怪しいが雰囲気変わるんでおいとくで|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0aqGHWqC0w-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0aqGHWqC0w.png]]|
 |beautiful|美しい||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/udkFbngBev-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/udkFbngBev.png]]|
@@ -280,6 +281,7 @@
 |multiple views|マルチビュー|||
 |motion linesまたはemphasis lines|集中線|||
 |}
+※detailedなどの形容詞はDanbooruになくてもベースモデルが学習しているものは効果あり
 [END]
 
 

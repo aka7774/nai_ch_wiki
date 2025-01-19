@@ -73,6 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4080 SUPER|||||||
 |Intel Arc A580|8GB|Ryzen5 7600|187.5|f0.0.17v1.8.0rc-latest-276-g29be1da7|--use-ipex|torch(2.1.0) / intel-extension(2.1.40+xpu) / ARCDriver(32.0.101.5972) / oneAPI(2024.2.1) / Conda(py3.11) 145W gpuclock=2400Mhz|
 |RTX 4080 SUPER|16GB|Core i7-8700K|62.9|f1.0.5-v1.10.1RC-latest-731-g7b8c71b7|--precision half||
 |RTX 2080Ti|11GB|Core i3-10105|140.7|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%（i3-10105/DDR4-2666 32GB）→（i7-10700/DDR4-2933 64GB に交換しても殆ど変わらず：139.9秒）|
