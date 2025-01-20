@@ -154,6 +154,13 @@ VRAM使用量が大幅に増加しており、8GBでTE込みの学習をする�
 --キャプション ファイルは必須です。そうでない場合、LoRA は概念名をキャプションとして使用してトレーニングを行います。
 --キャプションについては以下
 
+* Aspect Ratio Bucketing
+データセットの画像を元の縦横比をできるだけ維持しつつ、min/max_bukect_resoの範囲内で画素数が学習解像度の二乗に近似する解像度へリサイズするもの
+min/maxは学習解像度の半分、二倍にするといい
+注意として、max bucket resoに学習解像度と同じ値を指定すると以下の画像のように正方形以外の画像が小さくなる
+以下の画像ではSDXL学習なので学習解像度1024pxを指定した。縦横比2:3の画像は画素数が1024^2=1048576に近似する832x1216が望ましいが、704x1024(=720896画素)になってしまった
+&ref(https://image01.seesaawiki.jp/n/h/nai_ch/S8JsST7i_q.png)
+
 * キャプション・タグを付ける
 : 作者の詳しい画像付き説明 | [[https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_README-ja.md>>https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_README-ja.md]]
 - 学習用の素材画像それぞれに内容を説明するテキストファイルを作る。このテキストファイルには画像生成時のプロンプトと同じようにタグを記載する。
