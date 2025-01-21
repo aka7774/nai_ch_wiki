@@ -59,6 +59,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX7600|8GB|Ryzen5 5600||67.6|--use-zluda --medvram|zludaでテスト|
 |RTX 30|||||||
 |2070|||||||
 |rx|||||||
