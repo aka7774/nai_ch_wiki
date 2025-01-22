@@ -66,22 +66,25 @@ Settings->Optimizations->「Pad prompt/negative prompt」をオフにすると�
 
 *派生モデル
 人気なものをいくつかをピックアップ。
-***NoobAI-XL (NAI-XL)
-https://civitai.com/models/833294/noobai-xl-nai-xl
+**NoobAI-XL (NAI-XL)
+Civitai: https://civitai.com/models/833294
+Hugging Face(eps v1.1): https://huggingface.co/Laxhar/noobai-XL-1.1
+Hugging Face(vpred v1.0): https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0
 ベースモデルにDanbooruとe621のデータセットで大規模なファインチューニングをしたもの。派生だが、もはやこちらが本家といえるほど開発が進められている。
-2024/12/22現在、ε-prediction版とv-prediction版が公開されておりそれぞれ癖が違う。
 データセットの拡張によりIllustrious-XL V0.1の特徴「キャラやシチュエーションの幅は広いが制御が難しい」が純粋強化されたじゃじゃ馬で、こちらも主に使用感向上を目的とした派生モデルが複数存在する。
+*** predictionの種類
+ε-prediction版とv-prediction版が公開されておりそれぞれ癖が違う。v-prediction版は明暗の表現が良いがZero Terminal SNRの影響でかなりピーキーな挙動を示す。
 v-predictonについては[[Models>Models]]を参照。
 
-***Illustrious-XL SmoothFT（SmoothFT-SPO）
+**Illustrious-XL SmoothFT（SmoothFT-SPO）
 https://civitai.com/models/811067/illustrious-xl-smoothft?modelVersionId=907264
 通称SPO。画質を向上させるために最低限の変更を加えたもの。
 
-***copycat-illustrious
+**copycat-illustrious
 https://civitai.com/models/823763/copycat-illustrious
 本スレ産。画風や構図の多様性が落ちる代わりに、安定して高品質のマスピ絵を出せる。
 
-***Obsession (Illustrious-XL)
+**Obsession (Illustrious-XL)
 https://civitai.com/models/820208/obsession-illustrious-xl
 画質が向上し、純正モデルとほぼ同じような感覚で使える。
 1.0はベースモデル、以降はNoobAIを元にマージされており、こちらもバージョンごとに使用感が違う。
