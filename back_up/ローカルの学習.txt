@@ -9,7 +9,7 @@
 + [[TextualInversion]]
 + [[Dreambooth-LoRA]]
 
-* 追加学習でなにができる？
+* 追加学習(広義のFine-tuning)でなにができる？
 - 特定のキャラを正確に生成する
 - 新たな概念を追加する
 - 既存の概念を上書きする
@@ -34,7 +34,7 @@ Hypernetworkというネットワークがモデルのウェイトを調整す�
 ** Dreambooth
 モデルのウェイト自体を調整する。
 - 再現度が高い
-- モデルにマージする必要あり
+- checkpointが出力される？
 - VRAM消費が多い
 
 ** LoRA(Low-Rank Adaptation)
@@ -42,7 +42,7 @@ Dreamboothから派生。ウェイトの差分を出力する。軽量、高性�
 - 再現度が高い
 -- Dreamboothには劣る。
 - 学習が速い
-- モデルにマージせずに使える
+- モデルにマージせずに使える(厳密にはマージが必要。使用時にバックエンド側が自動でマージする)
 - 設定項目が非常に多いので初見だと難しいかも
 
 *** DoRA(Weight-Decomposed Low-Rank Adaptation)
