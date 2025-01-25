@@ -18,8 +18,18 @@ Animagine-XLに似た独特のプロンプトルールあり
 worst quality(~8%)、bad quality(~20%)、average quality(~60%)、good quality(~82%)、best quality(~92%)、masterpiece(~100%)
 の六つがある。
 
+*** NoobAI-XLの場合
+worst quality(30%以下)、normal quality(30%超過60%以下)、good quality(60%超過85%以下)、best quality(85%超過95%以下)、masterpiece(95%超過)
+
+*** 美的タグ(NoobAI-XL v-pred)
+- very awa(waifu-scorerによるスコアの上位5%)
+- worst aesthetic(waifu-scorerとaesthetic-shadow-v2によるスコアの下位5%)
+
 ** 年代タグ
 oldest(~2017年)、old(~2019年)、modern(~2020年)、recent(~2022年)、newest(~2023年)
+
+*** NoobAI-XLの場合
+old(2005-2010)、early(2011-2014)、mid(2014-2017)、recent(2018-2020)、newest(2021-2024)
 
 ** レーティング
 general(健全)
@@ -52,7 +62,7 @@ v0.1はテスト用のモデルのため仕様である。
 年代タグ、品質タグやアーティスト名で変化を抑えられる。
 
 ** 苦手な題材
-背景は具体的に指示しないと地味になりがち。Negative Promptにsimple backgroundを入れるとマシになる。
+背景は具体的に指示しないと地味になりがち。背景指定が面倒ならNegative Promptにsimple backgroundを入れるとマシにできる。
 適当な画像でファインチューンするだけで多少改善するので多様性の弊害？
 
 * トラブルシューティング
