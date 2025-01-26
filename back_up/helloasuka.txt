@@ -394,6 +394,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|Radeon 780M|64GB|8700G|228|228|||
 |RTX 4090|24GB|Core i9-12900||7.0|--xformers --no-half-vae --pin-shared-memory --cuda-malloc --cuda-stream --opt-sdp-no-mem-attention --enable-insecure-extension-access|GPU70%制限。windows、forgeで生成|
 |RTX 4090|24GB|Core i9-12900||6.6|--xformers --no-half-vae --pin-shared-memory --cuda-malloc --cuda-stream --opt-sdp-no-mem-attention --enable-insecure-extension-access|windows、forgeで生成|
 |RTX 4080|16GB|Ryzen 5 5600G||9.3|--xformers|version:v1.7.0 / python:3.10.6 / torch:2.0.1+cu118 / xformers:0.0.20 /&#8192;gradio: 3.41.2 / Windows10|
