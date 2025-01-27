@@ -44,6 +44,13 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-01-28 Animagine XL 4.0が公開
+https://huggingface.co/cagliostrolab/animagine-xl-4.0
+ローカルでSDXLが普及するきっかけとなったAnimagine-XLの新バージョンがリリースされた。
+データセットが前バージョンから大幅に拡張されており、2025年1月7日までのデータを学習しているとのこと。
+エッチなのもある程度生成できる模様。
+プロンプト関連の変更として新たにスコアタグが追加された。
+
 **2025-01-10 動画生成の波
 動画生成の流れが最近きている
 [[lora>https://civitai.com/models/1094156/titty-drop-hunyuan-video-lora?modelVersionId=124322]]でこんなのが作れるで
