@@ -44,13 +44,15 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-01-30 NVIDIA GeForce RTX 5090/5080が発売される
+予約サイトは混雑でほとんど閲覧できず、実店舗での抽選販売では人が集まりすぎるなど混乱が見られた。
+
 **2025-01-28 Animagine XL 4.0が公開
 https://huggingface.co/cagliostrolab/animagine-xl-4.0
 ローカルでSDXLが普及するきっかけとなったAnimagine-XLの新バージョンがリリースされた。
 データセットが前バージョンから大幅に拡張されており、2025年1月7日までのデータを学習しているとのこと。
 エッチなのもある程度生成できる模様。
 プロンプト関連の変更として新たにスコアタグが追加された。
-
 **2025-01-10 動画生成の波
 動画生成の流れが最近きている
 [[lora>https://civitai.com/models/1094156/titty-drop-hunyuan-video-lora?modelVersionId=124322]]でこんなのが作れるで
@@ -836,6 +838,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
