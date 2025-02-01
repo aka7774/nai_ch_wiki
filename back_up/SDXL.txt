@@ -37,7 +37,7 @@ Stability.ai公式
 ** Fooocus
 [[https://github.com/lllyasviel/Fooocus>>https://github.com/lllyasviel/Fooocus]]
 難しい設定なしでSDXLを試せる。
-導入が簡単で軽い。とっつきは良いが機能性が低いため凝ったことはやりにくい。
+導入が簡単で軽い。とっつきは良いが機能性が低いため凝ったことはやりにくい(最低限の機能しかない)。
 
 ** ComfyUI
 [[https://github.com/comfyanonymous/ComfyUI>>https://github.com/comfyanonymous/ComfyUI]]
@@ -45,7 +45,7 @@ Stability.ai公式
 >~~0139今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df8e-Xueq)~~2024/01/13(土) 18:32:22.34ID:pvPKwx5u0~~(略)~~一時の恥で聞くわ…~~誰かComfyUIでfp8モード起動のやり方教えて下さい！&#128557;&#128166;~~ ~~0145今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f48-4jqT)~~2024/01/13(土) 18:38:58.17ID:+aLVvCTx0~~>>139~~python main.py --use-quad-cross-attention --fp8_e4m3fn-unet~~か~~python main.py --use-quad-cross-attention --fp8_e4m3fn-text-enc~~　--use-quad-cross-attentionはなくてもおけ~~　loraの効きが悪くなるのが嫌なら--force_fp16 
 
 ** Forge(reForge)
-ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた
+ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた。バックエンドを1111オリジナルからComfyUIベースに変更している？
 [[https://github.com/lllyasviel/stable-diffusion-webui-forge>>https://github.com/lllyasviel/stable-diffusion-webui-forge]]
 低VRAM環境での高速化や使用メモリ削減が見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照。なお、必ずしも1111より速かったりメモリ使用量が少ないわけではない。
 「浦島太郎のために」「2024-02-06 stable-diffusion-webui-forgeリリース」を参照。
@@ -56,6 +56,7 @@ Forgeをさらにリファクタリングしたもの。新しい機能を試す
 
 ** EasySdxlWebUi
 &color(#ff0000){''gitとかが苦手な初心者向け''}
+様々なcheckpointやLoRAなどを自動でDLする。取捨選択してモデル等をDLしたい人は通常のWebUIの方がいいかも。
 [[https://github.com/Zuntan03/EasySdxlWebUi>>https://github.com/Zuntan03/EasySdxlWebUi]]
 >~~EasySdxlWebUiは簡単にSDXLで画像を生成できるようにします。~~ワンクリックインストーラーで古いパソコンでも動作するforge版と、実績のあるAUTOMATIC1111版(a1111)に両対応しており、簡単に使い始められます。~~forgeとa1111で多くの設定を共有しており、気軽に両方を使い分けられます。~~画像の生成にはインストールだけでなく、webUIの設定、拡張機能のインストールと設定、モデルなどの入手、適切なパラメータ設定などが必要になりますが、これも自動的に設定します。~~中身は通常のwebUIと同一ですので、経験が後々無駄になることもありません。
 
@@ -69,8 +70,7 @@ SDXLのモデルにはBaseとRefinerの2種類あることに注意。Refinerは
 [[Animagine XL 3.0 tips>https://seesaawiki.jp/nai_ch/d/AnimagineXL3%2e0tips]]
 本スレでSDXLが普及する発端となったモデル
 
-[[スレ民共有モデル>https://seesaawiki.jp/nai_ch/d/%a5%b9%a5%ec%cc%b1%b6%a6%cd%ad%a5%e2%a5%c7%a5%eb]]
-こちらも参照
+2025年2月1日時点ではIllustrious-XL-v0.1ベースが主流。
 
 * SDXLのVAE
 SD1.x/2.xとの互換性はないため注意
@@ -90,7 +90,7 @@ js2pronyVAEあり
 *トラブルシューティング
 **最後にVRAM使用量が急増
 コンソールにVAEでNaN云々って出ている場合に該当する。
-VAEがNaN演算を起こしたため自動的に重いfp32で計算するため、VAEのVRAM使用量がfp16と比較して二倍になる。
+VAEがNaN演算を起こしたので自動的に重いfp32で計算している。そのため、VAEのVRAM使用量がfp16と比較して二倍になる。
 
 ***解決策
 fp16で動くものを使用する。

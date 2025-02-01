@@ -19,7 +19,7 @@
 ※改定の提案はこちら：[[運用方針など>https://seesaawiki.jp/nai_ch/bbs/39146/l50]]
 [END]
 
-ここに書いてあるよりも昔の出来事は[[こちら>https://seesaawiki.jp/nai_ch/d/%b8%c5%bb%f6%b5%ad]]に移したで
+2023年以前の出来事は[[こちら>https://seesaawiki.jp/nai_ch/d/%b8%c5%bb%f6%b5%ad]]
 * とりあえず最新の環境を教えてクレメンス
 2025年1月更新
 「そんな性癖で大丈夫か？」
@@ -45,18 +45,24 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 #contents
 *2025年
 **2025-01-30 NVIDIA GeForce RTX 5090/5080が発売される
-予約サイトは混雑でほとんど閲覧できず、実店舗での抽選販売では人が集まりすぎるなど混乱が見られた。
+予約サイトは混雑でほとんど閲覧できず、実店舗での抽選販売では大勢が殺到し幼稚園に侵入する人が現れるなど混乱が見られた。
 
 **2025-01-28 Animagine XL 4.0が公開
-https://huggingface.co/cagliostrolab/animagine-xl-4.0
+Hugging Face: https://huggingface.co/cagliostrolab/animagine-xl-4.0
+ブログ: https://cagliostrolab.net/posts/animagine-xl-v4-release
 ローカルでSDXLが普及するきっかけとなったAnimagine-XLの新バージョンがリリースされた。
 データセットが前バージョンから大幅に拡張されており、2025年1月7日までのデータを学習しているとのこと。
-エッチなのもある程度生成できる模様。
+エッチなのも対応。
 プロンプト関連の変更として新たにスコアタグが追加された。
+今後、V4の改良とSD3.5ベースのAnimaestroの開発を進めるとのこと。
+
 **2025-01-10 動画生成の波
 動画生成の流れが最近きている
 [[lora>https://civitai.com/models/1094156/titty-drop-hunyuan-video-lora?modelVersionId=124322]]でこんなのが作れるで
+[+]エロ注意、クリックで展開
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nmlNj47glR-s.gif)>https://image02.seesaawiki.jp/n/h/nai_ch/nmlNj47glR.gif]]
+[END]
+
 https://fate.5ch.net/test/read.cgi/liveuranus/1736004270/626
 
 正直解説するほど詳しくないがとりあえず備忘録程度に情報をメモしとくで
