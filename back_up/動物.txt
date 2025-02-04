@@ -1,0 +1,273 @@
+ただいまページ作成中。かなり大雑把にカテゴリ分けしています。学術的な分類と異なる点があります。
+#contents
+* 無脊椎動物
+背骨を持たない動物
+
+** 原 生 動 物
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 海 綿 動 物
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 刺 胞 動 物（クラゲ、サンゴ、イソギンチャクなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 環 形 動 物（ミミズ、ゴカイなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+**棘 皮 動 物（ウニ、ヒトデ、ナマコなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 軟 体 動 物
+***頭足類（イカ、タコ、オウムガイなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***二枚貝類（アサリ、ハマグリなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***巻貝類（サザエ、アワビ、カタツムリ、ナメクジ、ウミウシなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 節 足 動 物
+***昆虫類（チョウ、バッタ、セミなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***甲殻類（エビ、カニ、ダンゴムシなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***蜘蛛類（クモ、サソリ、カブトガニなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***多足類（ムカデ、ヤスデなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+**その他無脊椎動物（上記に該当しないもの）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+* 脊椎動物
+背骨を持つ動物
+** 魚類
+***軟骨魚類（サメ、エイなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***硬骨魚類（タイ、スズキなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 両生類
+***無尾目（カエル）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***有尾目（サンショウウオ、イモリなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 爬虫類
+***カメ目
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***有鱗目（トカゲ、ヘビ）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***ワニ目
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 鳥類
+***走鳥類（ダチョウ、エミューなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 哺乳類
+***有袋類（カンガルー、コアラなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+[END]
+
+***食肉目イヌ亜目（オオカミ、クマ、イタチ、アシカ、アザラシなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+[END]
+
+***食肉目ネコ亜目（トラ、ハイエナ、マングースなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+[END]
+
+***犬（家畜の犬）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+[END]
+
+***猫（家畜の猫）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+[END]
+
+* 古生物
+地質時代に生息していた生物
+
+** 古代無脊椎動物（三葉虫、アンモナイトなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 古代魚類
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 古代両生類
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 古代爬虫類
+***翼竜(pterosaur)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, pterosaur, pteranodon, brown skin, black eyes, flying, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|プテラノドン|pteranodon|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/aNxEEHji90.png|
+|}
+[END]
+
+***魚竜・首長竜など水棲種
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***その他古代爬虫類
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+** 恐竜（dinosaur）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, dinosaur, velociraptor, feathered skin, brow skin, black eyes, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ヴェロキラプトル|velociraptor|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/ZSwQvhsHnN.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, dinosaur, triceratops, brown skin, black eyes, all fours, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|トリケラトプス|triceratops|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/rpfRW6ObD6.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, dinosaur, tyrannosaurus rex, brown skin, black eyes, standing, open mouth, white background, facing away, close to viewer, full body, character focus, from side, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ティラノサウルス・レックス|tyrannosaurus rex|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/HwVFs6GvXW.png|
+|}
+[END]
+
+**古代鳥類
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+**古代哺乳類
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+
+
+
+
+
+
+
+
+
+
+
