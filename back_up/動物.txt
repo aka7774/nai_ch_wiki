@@ -1,4 +1,5 @@
-ただいまページ作成中。かなり大雑把にカテゴリ分けしています。学術的な分類と異なる点があります。
+定義：現実に存在する動物。もしくは過去に地球上に存在していた動物。空想上の動物／UMAは→[[亜人・モンスター娘・人外>亜人・モンスター娘・人外]]
+かなり大雑把にカテゴリ分けしています。学術的な分類と異なる点があります。
 #contents
 * 無脊椎動物
 背骨を持たない動物
@@ -136,7 +137,7 @@
 |}
 [END]
 
-***有鱗目（トカゲ、ヘビ）
+***有鱗目（トカゲ、ヤモリ、ヘビ）
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
@@ -158,38 +159,199 @@
 |}
 [END]
 
+***キジ目、カモ目（ニワトリ、アヒルなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***フラミンゴ目、カイツブリ目
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***ハト目（キジバト、ドードー（絶滅種）など）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***カッコウ目、エボシドリ目
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***ツル目、チドリ目（タンチョウ、シギ、カモメなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***アマツバメ目、ヨタカ目（アナツバメ（中華食材の燕の巣を作る鳥）、いわゆるツバメはスズメ目の鳥）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***水禽類（アビ、ペンギン、コウノトリ、ペリカンなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***猛禽類（ワシ、タカ、ハヤブサ、フクロウなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***ブッポウソウ上目（サイチョウ、カワセミ、キツツキなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***オウム目、スズメ目（セキセイインコ、ウグイス、カラスなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***その他上記に該当しないもの
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
 ** 哺乳類
+***単孔類（カモノハシ、ハリモグラ以外は絶滅種）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
 ***有袋類（カンガルー、コアラなど）
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, animal, opossum, black eyes, all fours, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|オポッサム（フクロネズミ）|opossum|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/y90kCUQsz4.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, animal, tasmanian devil, black eyes, all fours, standing, open mouth, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|タスマニアデビル|tasmanian devil|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Sby0d4gyMi.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, animal, wombat, black eyes, all fours, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ウォンバット|wombat|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Aqrl3qmh5S.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, animal, kangaroo, black eyes, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|カンガルー|kangaroo|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/DKgosBbZYh.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, animal, koala, black eyes, clings to a tree, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|コアラ|koala|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/sg9037EEsS.png|
+|}
+[END]
+
+***アフリカ獣類（ゾウ、ジュゴン、ツチブタなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***異節類（アリクイ、ナマケモノ、アルマジロなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***グリレス類（ネズミ、リス、ウサギなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***霊長類（サル、ヒヒ、チンパンジーなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***真無盲腸目、翼手目（モグラ、ハリネズミ、コウモリなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***奇蹄目（ウマ、サイ、バクなど蹄の数が奇数の哺乳類）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***偶蹄目（シカ、ラクダ、イノシシなど蹄の数が偶数の哺乳類）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+
+***鯨河馬形類（カバ、クジラ、イルカなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
 [END]
 
 ***食肉目イヌ亜目（オオカミ、クマ、イタチ、アシカ、アザラシなど）
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
 [END]
 
 ***食肉目ネコ亜目（トラ、ハイエナ、マングースなど）
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1girl, animal, lioness, black eyes, all fours, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, {{{{mane}}}}|ライオン（メス）|lioness|V4 Curated Preview版使用。たてがみ（mane）をネガに入れた方が良い。|https://image02.seesaawiki.jp/n/h/nai_ch/dUEYm_GAH_.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, animal, lion, black eyes, all fours, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ライオン（オス）|lion|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/5orTnvD7zS.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, animal, snow leopard, black eyes, all fours, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ユキヒョウ|snow leopard|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/8W85SNtYW5.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, animal, leopard, black eyes, all fours, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ヒョウ|leopard|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/yLvMQxZyAA.png|
+|official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, animal, tiger, black eyes, all fours, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|トラ|tiger|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/dJgPdkFMwX.png|
+|}
 [END]
 
 ***犬（家畜の犬）
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
 [END]
 
 ***猫（家畜の猫）
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
 [END]
 
-* 古生物
+***鱗甲目（センザンコウ）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|}
+[END]
+* 古生物（prehistoric_animal ）
 地質時代に生息していた生物
 
 ** 古代無脊椎動物（三葉虫、アンモナイトなど）
@@ -259,15 +421,5 @@
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
 |}
 [END]
-
-
-
-
-
-
-
-
-
-
 
 

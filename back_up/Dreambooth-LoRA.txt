@@ -156,7 +156,7 @@ VRAM使用量が大幅に増加しており、8GBでTE込みの学習をする�
 
 * Aspect Ratio Bucketing
 データセットの画像を元の縦横比をできるだけ維持しつつ、min/max_bukect_resoの範囲内で画素数が学習解像度の二乗に近似する解像度へリサイズするもの
-min/maxは学習解像度の半分、二倍にするといい
+min/maxは学習解像度の半分、二倍にするといい(4:1の極端な比率に対応する)
 注意として、max bucket resoに学習解像度と同じ値を指定すると以下の画像のように正方形以外の画像が小さくなる
 以下の画像ではSDXL学習なので学習解像度1024pxを指定した。縦横比2:3の画像は画素数が1024^2=1048576に近似する832x1216が望ましいが、704x1024(=720896画素)になってしまった
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/S8JsST7i_q.png)
@@ -167,7 +167,7 @@ min/maxは学習解像度の半分、二倍にするといい
 - テキストエディターやメモ帳で1つずつ作っても良いのだが、WD1.4 Tagger 等のツールを使えば一気に自動生成できて捗る
 
 ** WD1.4 Taggerで作成
-先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)
+先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)※任意。見やすくするためで特別な意味はない。
 [+]画像
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/kbCJ6oEi6E.png)
 [END]
@@ -176,7 +176,15 @@ Web UI に拡張機能 stable-diffusion-webui-wd14-tagger [[https://github.com/t
 -入力ファイル:学習用画像の入っているフォルダ
 -Interrogator:wd-14convnext
 -アンダースコアの代わりにスペースを使用する:オン
--括弧をエスケープする:オン
+-括弧をエスケープする:オフ
+-- 学習時、オプションで明示しない限り括弧は単なる文字として扱われるのでエスケープの必要なし。エスケープすると学習した単語を使うために冗長な入力が必要になる。例: firefly \\\(honkai: star rail\\\)
+[+]つまりこういうこと
+WebUIでfirefly (honkai: star rail)と書くと、括弧がプロンプト強調の制御文字として認識されて消えるため、内部ではfirefly honkai: star railになる。
+文字として認識させるためにfirefly \(honkai: star rail\)のように\でエスケープすると、内部ではfirefly (honkai: star rail)と正しいタグになりそのキャラを正しく生成できる。
+しかし、sd-scriptsでは制御文字を使用しないため、firefly \(honkai: star rail\)は変換されずそのまま学習される。
+そのためエスケープしたキャプションで学習したLoRAをWebUIで使うときにfirefly \\\(honkai: star rail\\\)と入力する羽目になる。
+[END]
+
 [+]画像
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/DGlOwfa65F.png)
 [END]
