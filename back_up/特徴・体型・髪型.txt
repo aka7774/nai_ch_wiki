@@ -4,6 +4,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+||||||
 |1girl, puffy nipples, huge nipples, dark nipples , {{{{{{black nipple}}}}}}, {{{{{{brown nipple}}}}}}, {{{{{{black colored nipple}}}}}}, {{{{{{black colored nipples}}}}}}, {{{{{{brown colored nipples}}}}}}, small breasts, purple eyes, messy hair, [nude], nsfw|dark skin, dark skin female, colored skin, clothes, pink nipples, limited palette, {{huge breasts}}, {{large breasts}}, |貧乳黒乳首|Sampling Steps:40~~目色(purple eyes)と髪型(messy hair)の欄は変更しても大丈夫そう~~組み合わせによっては胸周辺の肌にインナーの様な汚い薄い黒が掛かってしまう(追記:ネガティブにblack liquidで修正が効く場合がある)が、nudeの強度を変えることで対応可能(1に近ければ近い程貧乳化・loli化が顕著になる、場合によっては外すのもアリ)|https://image01.seesaawiki.jp/n/h/nai_ch/Q7oJ2NqxY4.png|
 |colored nipples ,〇〇 nipples|colored skin(肌の色を特別に変えたくない場合)|色乳首|〇〇には色を指定~~極稀に出る|https://image01.seesaawiki.jp/n/h/nai_ch/W1x2Gmi014.png|
 |realistic, flat chest,|realistic|大人の女性で貧乳|プロンプトとネガティブ両方にrealisticを入れる|https://image02.seesaawiki.jp/n/h/nai_ch/cCdKwSfVSc.png|
