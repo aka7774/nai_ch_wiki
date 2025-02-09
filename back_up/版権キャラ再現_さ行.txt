@@ -938,6 +938,8 @@
 ***　ゼンレスゾーンゼロ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|coco&#40;zenless zone zero),pink shirt,white polka dot,lime green half blue apron ,white skirt,loose socks,|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality,signature, watermark, username, blurry, artist name, multiple legs, malformation,{{{{{4fingers,6fingers,bad fingers}}}}}, @_@,{{{{{feather hair ornament}}}}},|ゼンレスゾーンゼロ|ココ|V4|https://image01.seesaawiki.jp/n/h/nai_ch/rnu4QHkibe.png|
+|burnice white&#40;zenless zone zero),|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality,signature, watermark, username, blurry, artist name, multiple legs, malformation,{{{{{4fingers,6fingers,bad fingers}}}}}, @_@,{{{{{feather hair ornament}}}}},|ゼンレスゾーンゼロ|バーニス・ホワイト|V4|https://image02.seesaawiki.jp/n/h/nai_ch/i4LsIeUcEH.png|
 |soukaku (zenless zone zero), blue skin, horns, white hair, short hair, brown eyes, cuffs, tail, necktie, pleated skirt, white background, | |ゼンレスゾーンゼロ|蒼角|V4 Curated Preview|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OMU_XmqjD6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/OMU_XmqjD6.png]]|
 |}
 **そ
@@ -1075,3 +1077,4 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(通常Ver.)|V3使用。zombieと指定しなくても肌が青くなることはある。悪しからず。|https://image01.seesaawiki.jp/n/h/nai_ch/rKT9oVAXUb.png|
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
+

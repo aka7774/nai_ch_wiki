@@ -34,10 +34,32 @@
 [END]
 
 ** 被子植物
+***アオイ科（ハイビスカス、ムクゲ、オクラなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, hollyhock, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |タチアオイ|hollyhock|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/hX76pChSjn.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, hibiscus, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ハイビスカス（ブッソウゲ）|hibiscus|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/Q50plWVLNL.png|
+|}
+[END]
+
 ***アブラナ科（ダイコン、キャベツ、ワサビなど）
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|Japanese white radish&#40;flower),no human　※品質タグのみ追加|なし|ダイコン|Japanese white radish||https://image02.seesaawiki.jp/n/h/nai_ch/FYlsEZEi1O.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, rapeseed blossoms, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|菜の花|rapeseed blossoms|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/fAIprWCYoY.png|
+|}
+[END]
+
+***アヤメ科（カキツバタ、ハナショウブ、ジャーマンアイリスなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, iris (flower), white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |アイリス属|iris (flower)|V4 Curated Preview版使用。アイリスはアヤメ、カキツバタ、ハナショウブを含むグループ全般の総称。出力は花菖蒲に近い。|https://image02.seesaawiki.jp/n/h/nai_ch/IL6_aNZ_lR.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, gladiolus, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |グラジオラス|gladiolus|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/57_JnSKH9W.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, freesia (flower), white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |フリージア|freesia (flower)|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/b57WZEYZi9.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, crocus (flower), white background, close to viewer, plant focus, from above, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |クロッカス|crocus (flower)|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/4xynxuUY8I.png|
 |}
 [END]
 
@@ -45,6 +67,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, bamboo shoot, brown skin, white background, close to viewer, plants focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |タケノコ（筍）|bamboo shoot|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/b7UHXFBeeB.png|
 |}
 [END]
 
@@ -52,6 +75,14 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, sunflower, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ヒマワリ（向日葵）|sunflower|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/UTfnlmktL8.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, thistle, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |アザミ（薊）|thistle|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/ujgQDDotwp.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, gerbera, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ガーベラ|gerbera|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Jrr6L_Xegu.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, plants, seeded dandelion, white background, close to viewer, plant focus, from above, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, {{{{flower}}}},|種を付けたタンポポ|seeded dandelion|V4 Curated Preview版使用。花と種を付けた状態が混ざりやすいのでポジにflowerを入れないこと。|https://image02.seesaawiki.jp/n/h/nai_ch/lhTaBWrvhj.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, dandelion, white background, close to viewer, flower focus, from above, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |タンポポ（蒲公英）|dandelion|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/zydk_pFhB0.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, daisy, white background, close to viewer, plant focus, from above, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |デイジー|daisy|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/7t1_tIWqT0.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, dahlia, white background, close to viewer, plant focus, from above, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ダリア|dahlia|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/VkaeKxMR4p.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, cosmos (flower), white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |コスモス|cosmos (flower)|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/3Yw23bV6Jl.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flower, cornflower, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ヤグルマギク（矢車菊）|cornflower|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Dhbz_fOUOs.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flower, chrysanthemum, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |キク（菊）|chrysanthemum|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/I9HWp4a3Jw.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flower, chamomile, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |カモミール|chamomile|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/8a7tt5yxFU.png|
@@ -59,10 +90,22 @@
 |}
 [END]
 
+***キジカクシ科（ムスカリ、リュウゼツラン、スズランなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, lily of the valley, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |スズラン（鈴蘭）|lily of the valley|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/uyeQ1ITwNk.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, grape hyacinth, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ムスカリ|grape hyacinth|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/fLhi3A4ioQ.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, hyacinth, blooming, pink flowers, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, {{{{grape hyacinth}}}},|ヒヤシンス|hyacinth|V4 Curated Preview版使用。ムスカリ（grape hyacinth）が混ざりやすく難しい。|https://image01.seesaawiki.jp/n/h/nai_ch/IPlxxReV0c.png|
+|}
+[END]
+
 ***キンポウゲ科（アネモネ、ラナンキュラス、フクジュソウなど）
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, ranunculus, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ラナンキュラス|ranunculus|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/qbgKkZjTtB.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, larkspur (flower), white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |デルフィニウム|larkspur (flower)|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/9PLl2udLxu.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, plant, anemone (flower), white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |アネモネ|anemone (flower)|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/YUppcTex2v.png|
 |}
 [END]
@@ -78,6 +121,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, potted plant, cactus, white background, close to viewer, plants focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |サボテン|cactus|V4 Curated Preview版使用。柱サボテンが描写される。|https://image01.seesaawiki.jp/n/h/nai_ch/0VmW45HpqD.png|
 |}
 [END]
 
@@ -94,6 +138,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, lavender (flower), white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ラベンダー|lavender (flower)|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/8tU7IxYQBd.png|
 |}
 [END]
 
@@ -101,6 +146,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, violet (flower), white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |スミレ|violet (flower)|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/5gTZeHUC2Y.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, purple pansy, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |パンジー|pansy|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/jvkLIUxFtQ.png|
 |}
 [END]
 
@@ -141,6 +188,7 @@
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
 |very aesthetic, best quality, intricate, overall detail, no humans, flower, water lily, red flower, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |スイレン（睡蓮）|water lily|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/5g7a9sCIYv.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, plants, lotus leaf, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ハスの葉|lotus leaf|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/0whDg5yPez.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flower, lotus, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ハス（蓮）|lotus|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/ltv3bWkRWJ.png|
 |}
 [END]
@@ -157,6 +205,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, plum blossoms, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ウメ（梅）|plum blossoms|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/nXwM2oVKcU.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, blue rose, white flower, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|バラ（薔薇）|rose|V4 Curated Preview版使用。色指定すれば大体その通りになる。色指定しないとほぼ赤バラになる。|https://image01.seesaawiki.jp/n/h/nai_ch/T7cj43X2U8.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, potted plant, strawberry blossoms, white flower, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, {{{{strawberry}}}},|イチゴ（苺）|strawberry blossoms|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/c89jSZaved.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flower, cherry blossoms, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |サクラ|cherry blossoms|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/uNK5q3AFgX.png|
 |}
 [END]
@@ -173,10 +224,38 @@
 |}
 [END]
 
+***ヒルガオ科（アサガオ、サツマイモ、ヨルガオなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, morning glory, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |アサガオ|morning glory|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/fbmS7FZL9a.png|
+|}
+[END]
+
 ***マメ科（ネムノキ、フジ、ルピナスなど）
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, wisteria, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |フジ（藤）|wisteria|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/2q_Pwyu2_0.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, mimosa (flower), white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ミモザ（アカシア）|mimosa (flower)|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/VLWJNeC4DK.png|
+|}
+[END]
+
+***モクセイ科（オリーブ、ジャスミン、ライラックなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, gold osmanthus, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |キンモクセイ（金木犀）|gold osmanthus|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/FCISGDZChu.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, lilac, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ライラック（ムラサキハシドイ）|lilac|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/KAuiy0AiEt.png|
+|}
+[END]
+
+***ユリ科（オリエンタルリリー、チューリップ、カタクリなど）
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, tulip, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |チューリップ|tulip|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/D5bbYvypie.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, lily, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ユリ（百合）|lily|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/UDI81iJGR8.png|
 |}
 [END]
 
@@ -192,6 +271,14 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, potted plant, aloe (plant) , white background, close to viewer, plants focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |アロエ|aloe (plant)|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/jPReE6vA4p.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, plumeria, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |プルメリア|plumeria|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/m0VoV6bq16.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, poinsettia, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ポインセチア（ショウジョウボク）|poinsettia|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/_nwYAzz418.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, poppy (flower), white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ケシ|poppy (flower)|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/HjVOLbuDel.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, nemophila (flower), white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ネモフィラ|nemophila (flower)|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/PxhJYpSxq1.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, magnolia, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |モクレン（木蓮）|magnolia|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/IuSKCSRdvm.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flowers, hydrangea, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |アジサイ（紫陽花）|hydrangea|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/rvsvF01yHM.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, forget-me-not (flower), white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ワスレナグサ（勿忘草）|forget-me-not (flower)|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/qYplw9gbeH.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, bush, bougainvillea (flower), white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ブーゲンビリア|bougainvillea (flower)|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/qM0OIiEHgk.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flower, bird of paradise flower, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ストレリチア（極楽鳥花）|bird of paradise flower|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/927uUgf0_W.png|
 |}
@@ -230,6 +317,13 @@
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
 |}
 [END]
+
+
+
+
+
+
+
 
 
 
