@@ -44,8 +44,14 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+
+**2025-02-11 Illustrious XL 1.0が公開される
+https://civitai.com/models/1232765
+当初はモデルをダウンロードできず、CivitaiやTensor.art、PixAIといったWebサービス上でのみ画像を生成できる形式だったが、多くの批判の声を受けてか翌12日には10ドル支払うとダウンロードできるようになった。
+
 **2025-01-30 NVIDIA GeForce RTX 5090/5080が発売される
-予約サイトは混雑でほとんど閲覧できず、実店舗での抽選販売では大勢が殺到し幼稚園に侵入する人が現れるなど混乱が見られた。
+予約抽選サイトは混雑でほとんど閲覧できず、実店舗での抽選販売では大勢が殺到し店舗近隣の幼稚園に侵入する人が現れるなど混乱が見られた。
+また初期出荷の台数はきわめて少なく、次期出荷は数か月後とみられる上にいくつかのメーカーは値上げを発表している。
 
 **2025-01-28 Animagine XL 4.0が公開
 Hugging Face: https://huggingface.co/cagliostrolab/animagine-xl-4.0
@@ -844,6 +850,9 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
 
 
 

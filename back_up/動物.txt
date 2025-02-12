@@ -121,6 +121,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, amphibian, toad (animal), standing, white background, close to viewer, full body, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ヒキガエル|amphibian, toad (animal),|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Yo5OB9Vflq.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, amphibian, frog, standing, white background, close to viewer, full body, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |カエル|frog|V4 Curated Preview版使用。アマガエルに近いカエルが描写される。描写にあまりブレは無い。|https://image02.seesaawiki.jp/n/h/nai_ch/ofOYFEUzB_.png|
 |}
 [END]
 
@@ -128,6 +130,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, amphibian, salamander, tail, black skin, yellow spots, wet, lying on stomach, white background, close to viewer, full body, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, {{{{scale, frog}}}},|ファイヤーサラマンダー|amphibian, salamander,|V4 Curated Preview版使用。フォルムが安定しない。|https://image02.seesaawiki.jp/n/h/nai_ch/CDeanNA19L.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, amphibian, newt, slender body, black eyes, black skin, red stomach, warts, tail, wet, lying on stomach, white background, close to viewer, full body, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, {{{{scale, frog}}}},|イモリ|amphibian, newt, |V4 Curated Preview版使用。安定しない。|https://image02.seesaawiki.jp/n/h/nai_ch/QnVVinSWPC.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, amphibian, giant salamander, very small eyes, brown skin, warts, tail, lying on stomach, crawling, white background, close to viewer, full body, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |オオサンショウウオ|amphibian, giant salamander,|V4 Curated Preview版使用。イメージが安定しない。|https://image01.seesaawiki.jp/n/h/nai_ch/anIMRgafsC.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, amphibian, axolotl, all fours, white background, close to viewer, full body, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |アホロートル(メキシコサラマンダーのネオテニー）|amphibian, axolotl,|V4 Curated Preview版使用。過去にカップ焼きそばのCMで「ウーパールーパー」として知られるようになった両生類。メキシコサラマンダーが幼生のまま成熟したもの。|https://image01.seesaawiki.jp/n/h/nai_ch/dEYJMz4dd_.png|
 |}
 [END]
 
@@ -295,6 +301,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, animal, manatee, pectoral fins, tail fin, swimming, white background, close to viewer, full body, from side, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|very aesthetic, best quality, intricate, overall detail, no humans, animal, manatee, pectoral fins, tail fin, swimming, white background, close to viewer, full body, from side, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|マナティー|manatee|V4 Curated Preview版使用。形状が安定しない。|https://image02.seesaawiki.jp/n/h/nai_ch/VVUPXKaytC.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, animal, elephant, all fours, white background, close to viewer, full body, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|アフリカゾウ|elephant|V4 Curated Preview版使用。ほぼアフリカゾウになる。|https://image01.seesaawiki.jp/n/h/nai_ch/jB2r7QgrWo.png|
 |}
 [END]
