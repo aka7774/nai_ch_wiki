@@ -32,7 +32,7 @@ Model:[[NoobAI-XL (NAI-XL)>https://civitai.com/models/833294/noobai-xl-nai-xl]]
 WebUI:[[ComfyUI>https://github.com/comfyanonymous/ComfyUI]]
 [[Stability Matrix>https://github.com/LykosAI/StabilityMatrix]]を使って簡単にインストールできる。[[EasyHunyuanVideo>https://github.com/Zuntan03/EasyHunyuanVideo]]で動画の生成もできるで
 おそらく出来ることは一番多いが複雑な外観に眩暈する人を量産している
-RTX5000シリーズは2025年2月18日時点でPytorchに対応するバージョンがないCUDA12.8以降にしか対応していないため、AUTOMATIC1111及びその派生であるReforgeでの構築が不可能
+RTX5000シリーズは2025年2月18日時点でPytorchに対応するバージョンがないCUDA12.8以降にしか対応していないため、AUTOMATIC1111及びその派生であるForge、Reforgeでの構築は不可能
 したがって現時点ではComfyUIを導入するしかない
 RTX5000シリーズが買えた幸せ者は下記リンクの最新版をインストール(上記リンクの安定版では構築不可能)
 https://github.com/comfyanonymous/ComfyUI/discussions/6643
@@ -857,6 +857,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
