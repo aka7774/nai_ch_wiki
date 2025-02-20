@@ -50,6 +50,9 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 #contents
 *2025年
 
+**2025-02-20 NVIDIA GeForce RTX 5070Tiが発売される
+5090/5080を買えた人がほとんどいない上4000シリーズも品薄な中、23時に発売開始。
+
 **2025-02-11 Illustrious XL 1.0が公開される
 https://civitai.com/models/1232765
 当初はモデルをダウンロードできず、CivitaiやTensor.art、PixAIといったWebサービス上でのみ画像を生成できる形式だったが、多くの批判の声を受けてか翌12日には10ドル支払うとダウンロードできるようになった。
@@ -59,6 +62,7 @@ https://civitai.com/models/1232765
 また初期出荷の台数はきわめて少なく、次期出荷は数か月後とみられる上にいくつかのメーカーは値上げを発表している。
 なお、RTX5080及び5090は2025年2月13日時点でPytorchに対応するバージョンがないCUDA12.8以降にしか対応していないため、2025年2月13日時点現在ではEasyReforgeでの構築が不可能。
 回避策・アップデートがあったら追記願います。
+ComfyUIはhttps://github.com/comfyanonymous/ComfyUI/discussions/6643 から50x0対応版をダウンロードできる。
 
 **2025-01-28 Animagine XL 4.0が公開
 Hugging Face: https://huggingface.co/cagliostrolab/animagine-xl-4.0
@@ -857,6 +861,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
