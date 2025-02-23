@@ -30,6 +30,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, still life, plant, ginkgo, leaves, branch, leaves, white background, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, |イチョウ|ginkgo|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/4raLIfUWRp.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, still life, tree, ginkgo tree, on ground, white background, tree focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, |銀杏の木|ginkgo tree|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/Pn3f9tF59z.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, still life, tree, fir tree, leaves, stem, plant roots, on ground, white background, tree focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, |モミの木|fir tree|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/NiGVMpToHa.png|
 |}
 [END]
 
@@ -75,6 +78,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, flower, zinnia, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, extra digits, |ジニア（百日草）|zinnia|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/NMNpPrhgUs.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flowers, sunflower, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ヒマワリ（向日葵）|sunflower|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/UTfnlmktL8.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flowers, thistle, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |アザミ（薊）|thistle|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/ujgQDDotwp.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flowers, gerbera, white background, close to viewer, flower focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |ガーベラ|gerbera|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Jrr6L_Xegu.png|
@@ -179,6 +183,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, carnivorous plant, venus flytrap, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, extra digits, |ハエトリグサ|venus flytrap|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/yMUz_UjYcr.png|
 |very aesthetic, best quality, intricate, overall detail, no humans, flower, baby's-breath, white background, close to viewer, plant focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |カスミソウ|baby's-breath|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/rRMxSXgXqp.png|
 |}
 [END]
@@ -284,6 +289,20 @@
 |}
 [END]
 
+***樹木
+[+]
+{| class="sort edit nanj_prompt_table"
+|~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|very aesthetic, best quality, intricate, overall detail, no humans, still life, tree, willow, on ground, white background, tree focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, |柳|willow|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/MoHZBZN6IH.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, still life, tree, cherry blossoms, branch, leaves, plant roots, on ground, white background, tree focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, |桜|tree, cherry blossoms,|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/157Jaxvm9S.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, still life, tree, bonsai, maple, branch, leaves, plant roots, potted plant, white background, tree focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, |盆栽（紅葉）|bonsai, maple,|V4 Curated Preview版使用。樹種を指定すれば他の木に変えることも可能。|https://image01.seesaawiki.jp/n/h/nai_ch/taBKNHlzjY.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, still life, tree, bonsai, pine, branch, leaves, plant roots, potted plant, white background, tree focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, |盆栽（松）|bonsai, pine,|V4 Curated Preview版使用。盆栽のような枝振りになる。|https://image01.seesaawiki.jp/n/h/nai_ch/KIhAJIbxbh.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, still life, tree, birch tree, branch, leaves, plant roots, on ground, white background, tree focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, |白樺|birch tree|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/N8b5L1jm_A.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, still life, tree, baobab, branch, leaves, plant roots, on ground, white background, tree focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, |バオバブ|baobab|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/0bcB2BaJjr.png|
+|very aesthetic, best quality, intricate, overall detail, no humans, palm tree, white background, tree focus, from side, side shot, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, error, jpeg artifacts, extra digits, |椰子|palm tree|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/1RD0gpRQ0v.png|
+|}
+[END]
+
 * 古植物
 地質時代に自生していた植物
 
@@ -317,6 +336,9 @@
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
 |}
 [END]
+
+
+
 
 
 
