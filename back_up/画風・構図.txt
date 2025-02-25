@@ -264,7 +264,7 @@
 |worst quality|最低品質|Danbooruスコアがかなり低い画像に付く|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gnyOeyIBpK.jpg)|
 |bad anatomy|悪い解剖|解剖学的に不正確な身体描写を意味するdanbooruタグ。AIの性質上もともとBad Anatomyになりやすいので効果は微妙。 ~~ なお、perfect anatomyは解剖図が出るだけで品質向上効果なし。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/HKYzuw9ZHp.jpg)|
 |lowres|低解像度|500x500px以下の画像につけられるdanbooruタグ ~~ ぼやけたりjpegノイズが生成されたりする ~~ モデルによるがネガに入れると絵がシャープになる|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wl4oe9os3h.jpg)|
-|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ 品質タグのように機能する？||
+|absurdres|超高解像度|3200x2400ピクセル以上の画像につけれらるdanbooruタグ ~~ 品質タグのように機能する？　追記：つぶれやすい目の描写に改善がみられる。特に目がつぶれやすいリアル系や3D系のモデルでは効果がわかりやすい。かなり強めに入れても画風に影響がほぼないのでいろいろ試すとよい。||
 |official art|公式アート|品質が向上する ~~ ロゴや著作権表記が出る場合あり|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yr8umSOBfB.png)|
 |virtual youtuber|バーチャルユーチューバー||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/D6U4UYKv_S.png]]|
 |masterpiece|傑作|一部アニメモデルで使える品質タグ。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/N0mfSgVHTH.png]]|
