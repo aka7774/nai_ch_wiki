@@ -73,6 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4080 SUPER|16GB|Ryzen 9 9900X|58.1|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX A4000|16GB|Core i5-13500|105.0|f2.0.1v1.10.1-previous-644-gde1670a4||Illustrious-XL-v1.0|
 |RTX 3060|12GB|Core i5-13500|209.3|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%、マイクロコード(0x12B)適用済BIOS|
 |RTX 4080 SUPER|16GB|Ryzen7 9700X|52.7|f1.2.5-v1.10.1RC-latest-983-g44e5eb17|--xformers --pin-shared-memory --cuda-malloc --cuda-stream||
