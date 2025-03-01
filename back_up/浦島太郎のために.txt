@@ -50,6 +50,9 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 #contents
 *2025年
 
+**2025-03-01 NovelAI Diffusion v4が公開される
+https://novelai.net/
+
 **2025-02-20 NVIDIA GeForce RTX 5070Tiが発売される
 5090/5080を買えた人がほとんどいない上4000シリーズも品薄な中、23時に発売開始。
 
@@ -861,6 +864,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
