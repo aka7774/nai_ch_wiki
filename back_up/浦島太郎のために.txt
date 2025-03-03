@@ -50,6 +50,10 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 #contents
 *2025年
 
+**2025-03-02 EasyWanVideoが公開される
+https://github.com/Zuntan03/EasyWanVideo
+Zuntan氏によるEasyシリーズで、WanVideoを使った動画生成の環境がセットアップされる。
+
 **2025-03-01 NovelAI Diffusion v4が正式リリースされる
 https://novelai.net/
 公開直後の様子では、プロンプトの効き方がv3から変わり、思い通りの画像を出力できないと感じるユーザーが多い模様。SMEAやバイブストランスファーが実装されていないことも一因か。
@@ -864,6 +868,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
