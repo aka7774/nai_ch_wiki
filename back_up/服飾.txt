@@ -480,7 +480,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
 |tuxedo Jacket leotard Bunny girl|タキシードバニー|成功率低め|https://image01.seesaawiki.jp/n/h/nai_ch/0gUNeiG0U0.png|
-|dressing {{○○(cosplay)}},|○○（キャラ名）のコスプレ|衣装が指定キャラ風になる。サンプルは博麗霊夢と霧雨魔理沙。|https://image02.seesaawiki.jp/n/h/nai_ch/lRs2xw4RPH.png https://image02.seesaawiki.jp/n/h/nai_ch/K8W0UMm5SO.png|
+|dressing {{○○(cosplay)}},|○○（キャラ名）のコスプレ|衣装が指定キャラ風になる。サンプルは博麗霊夢と霧雨魔理沙。V4はコスプレイヤーの画像も学習されているのかリアルなコスプレになる事があるのでネガティブにrealisticを入れた方がいい。|https://image02.seesaawiki.jp/n/h/nai_ch/lRs2xw4RPH.png https://image02.seesaawiki.jp/n/h/nai_ch/K8W0UMm5SO.png|
 |{{{{satin_blue _suit with gold line pattern}}}}, {{{Vault_jumpsuit&#40;Fall out)}}},|Vaultスーツ|||
 |{{{{satin_blue _suit with gold line pattern}}}}, {{{Vault_jumpsuit&#40;Fall out)}}},|Vaultスーツ|||
 |black cat costume|黒猫コスプレ|サンプルはblack cat ears katyusha, ear fluff, collar, bell, lingerie, bra, panties, cat tail, garter straps, garterを追加しています。|https://image02.seesaawiki.jp/n/h/nai_ch/1xg1qB_uGW.png|
@@ -543,7 +543,7 @@
 |umbrella|雨傘||https://image02.seesaawiki.jp/n/h/nai_ch/auUCaXeqjr.png|
 |exercise ball|バランスボール|トレーニング用のサイズの大きいゴムボール。|https://image02.seesaawiki.jp/n/h/nai_ch/vG2QnJx0fT.png|
 |harness|ハーネス||https://image02.seesaawiki.jp/n/h/nai_ch/tjSbgVV6u_.png|
-|A dressed as B |AにBの服を着せる|今回、{{({{asuna (sao)}} dressed as megumin)}}で実施。特定キャラの服を別のキャラクターに着せる事が可能。今回、知名度が高そうな「SAO」のアスナに「このすば」のめぐみんの服を着せてみた。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/U42H4j3hmY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/U42H4j3hmY.png]]|
+|A dressed as B |AにBの服を着せる|今回、{{({{asuna (sao)}} dressed as megumin)}}で実施。特定キャラの服を別のキャラクターに着せる事が可能。今回、知名度が高そうな「SAO」のアスナに「このすば」のめぐみんの服を着せてみた。V3以降は効果なし。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/U42H4j3hmY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/U42H4j3hmY.png]]|
 |naked_shirt|裸シャツ||https://image02.seesaawiki.jp/n/h/nai_ch/bLT3ixFBbi.jpg|
 |ZENTAI|全身タイツ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ELoIahGNRD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ELoIahGNRD.png]]|
 |naked towel|裸にバスタオル||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uuTA60a5oU-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/uuTA60a5oU.png]]|
@@ -786,6 +786,7 @@
 |tight|きつい、ぴっちりした||https://image01.seesaawiki.jp/n/h/nai_ch/BDU4EaQX6w.png|
 |}
 [END]
+
 
 
 
