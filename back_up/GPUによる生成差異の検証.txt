@@ -1,4 +1,4 @@
-結構前にこんな画像が話題になった。
+2022年にこんな画像が話題になった。
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4xVcrmAHoD-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/4xVcrmAHoD.jpg]]
 
@@ -9,6 +9,8 @@
 何らかの条件を満たした画像だけが変わるのか？
 [[xformersのせいでもないっぽい>xformersの検証]]し、デマなのかどうなのか気になった。
 
+2025-03-07追記: AUTOMATIC1111 WebUIであれば、Settings->Stable DiffusionにあるRandom number geenrator source.をCPUにするとおおむね一致するはず。GPUは機種ごとに乱数生成の結果が異なる。
+
 * この検証の意義
 
 - あるPCで作成した画像を他のPCで再現できるかどうかの確認
@@ -16,6 +18,7 @@
 - もしあるなら好ましいGPUの発見?
 
 ** 途中結果と考察
+
 
 - まったく同じ生成結果はほぼ無さそう(Euler aのせいなのか?)
 -- ほぼ同じだが誤差があるケースが大半
@@ -57,7 +60,6 @@ Steps: 50, Sampler: Euler a, CFG scale: 11.5, Seed: 905391353, Size: 1024x512, M
 |GTX 1050Ti|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/YeC1FTMl5a-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/YeC1FTMl5a.png]]|なし|commit 685f9631b56ff8bd43bce24ff5ce0f9a0e9af490~~GTX 1050Tiは海外ニキたちが設定をトリプルチェックしてミスがないことを確認したにもかかわらず、~~アスカテストが通らず完全な外れ値になっている|
 |GTX 1050Ti|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/mpwfEB0Mvl-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/mpwfEB0Mvl.png]]|--medvram|3715ece0adce7bf7c5e9c5ab3710b2fdc3848f39~~helloasukaはサンプルとほぼ同じ出力でした。~~medvramを付けないと1024は出せないので。。|
 |GTX 1070Ti|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jE5AtW0YBA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jE5AtW0YBA.png]]|なし||
-|GTX 1080|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/srBZb6Zbzn.05%29%2c%20%281girl_1.3%29%2c%20%28solo_1.1%29%2c%20holding%20pe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/srBZb6Zbzn.05%29,%20%281girl_1.3%29,%20%28solo_1.1%29,%20holding%20pe.png]]|無し|Commit hash: 44c46f0ed395967cd3830dd481a2db759fda5b3b|
 |GTX 1660Ti Max-Q|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ULqc8Xp9Cx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ULqc8Xp9Cx.png]]|なし|59c2dfe1e6a29dcf231fa9d894ac238887e40c39|
 |GTX 1660Ti Max-Q|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/njMIns6hEr-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/njMIns6hEr.png]]|--medvram --no-half --xformers|59c2dfe1e6a29dcf231fa9d894ac238887e40c39|
 |GTX 1660Ti|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/KenI3DurFa-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/KenI3DurFa.png]]|--medvram --no-half --xformers|git pull: 2022-12-6|
