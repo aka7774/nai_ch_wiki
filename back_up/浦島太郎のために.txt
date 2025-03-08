@@ -49,6 +49,9 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-03-04 Hakomikan氏、新しいLoRA学習の手法「ADDifT」の解説記事を公開
+-[[交替直接差分学習法ADDifT(Alternating Direct Difference Training)の解説｜hakomikan>>https://note.com/hakomikan/n/n716397e39d56]]
+6日には[[Traintrain>>https://github.com/hako-mikan/sd-webui-traintrain]]での学習方法を解説する記事（[[1>>https://note.com/hakomikan/n/n2a00c2bb39af]]）を公開した。
 
 **2025-03-02 EasyWanVideoが公開される
 https://github.com/Zuntan03/EasyWanVideo
@@ -868,6 +871,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
