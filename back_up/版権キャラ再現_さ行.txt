@@ -453,9 +453,6 @@
 ***　神話・伝説や伝承に登場するキャラクター 
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|official style, anime coloring, momotarou, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, bird, japanese pheasant, standing, white background, facing away, close to viewer, full body, character focus, from side, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|桃太郎|雉|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/BduDfA9hdt.png|
-|official style, anime coloring, momotarou, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, monkey, japanese macaque, standing, white background, facing the front, straight-on, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|桃太郎|猿|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/DkOOBmiovf.png|
-|official style, anime coloring, momotarou, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, dog, shiiba inu, standing, white background, facing the front, straight-on, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|桃太郎|犬|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/4HG17iP3c3.png|
 |official style, anime coloring, momotarou (character)&#160;, momotarou, very aesthetic, best quality, intricate, overall detail, 1boy, child, black hair, blunt bangs, parted bangs, sidelocks, chonmage, grey eyes, white headband, peach print headband, japanese clothes, red jinbaori, pink kimono, green pants, white tabi, sandals, katana, standing, white background, facing the front, straight-on, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|桃太郎|桃太郎|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/S6rVFLDBf0.png|
 |official style, anime coloring,  orihime (tanabata) , very aesthetic, best quality, intricate, overall detail, 1girl, black hair, blunt bangs, hair intakes, hair rings, very long hair, grey eyes, pink chinese clothes, hanfu, collarbone, hagoromo, sash, shawl, sleeves past wrists, standing, light smile, simple background, facing away, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |牛郎織女|織女（織姫）|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Nm6D6_clHy.png| 
 |} 
@@ -1089,6 +1086,13 @@
 |noel (sora no method), loli, child, blue eyes, long hair, two side up, hair ribbon, black ribbon, blue hair, thighhighs, white dress, solo, cowboy shot, ||天体のメソッド|ノエル|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VX1JBObXlK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/VX1JBObXlK.png]]|
 |}
 
+***　宇宙をかける少女
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{official style}},{kannagi itsuki}, {sora wo kakeru shoujo}||宇宙をかける少女|神凪いつき|V4|https://image02.seesaawiki.jp/n/h/nai_ch/ABOlOUYpUc.png|
+|{{official style}},{shishidou akiha}, {sora wo kakeru shoujo}||宇宙をかける少女|獅子堂秋葉|V4|https://image02.seesaawiki.jp/n/h/nai_ch/VfVgHNLsyE.png|
+|}
+
 ***　ゾンビランドサガ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1107,6 +1111,5 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(通常Ver.)|V3使用。zombieと指定しなくても肌が青くなることはある。悪しからず。|https://image01.seesaawiki.jp/n/h/nai_ch/rKT9oVAXUb.png|
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
-
 
 
