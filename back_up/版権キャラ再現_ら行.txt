@@ -82,6 +82,7 @@
 ***　ランスシリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, rance (series), sill plain, girl, pink hair, long hair, blue eyes, small breasts, white clothes, crop top, midriff, detached sleeves, skirt, thigh boots,&#160;standing, full body, |lowers, aliasing,|ランス01〜|シィル・プライン|V4 Full版使用。キャラクター1プロンプトのみ記述。品質系プロンプトはメインプロンプトに記述している。|https://image01.seesaawiki.jp/n/h/nai_ch/6QNycj6OlP.png|
 |official style, uesugi kenshin (rance), rance (series) , best quality, intricate, overall detail, 1 girl, blue hair, blue eyes, kabuto (helmet) , armored dress, japanese armor, shoulder armor,  gauntlets, kusazuri, brown shoes, standing, white background, looking at another, straight-on, full body, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated,|戦国ランスほか|上杉謙信|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/n61EWMEds1.png|
 |official style, reset kalar, rance (series) , best quality, intricate, overall detail, 1 girl, forehead jewel, blue hair, blue eyes, pointy ears, white dress, white pantyhose, brown shoes, standing, white background, looking at another, straight-on, full body, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated,|鬼畜王ランスほか|リセット・カラー|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/iZ8xfZ0y9_.png|
 |official style, game cg, masou shizuka, rance (series) , very aesthetic, best quality, intricate, overall detail, 1 girl, green hair, green eyes, witch hat, blue cloak, green body con dress, standing, happy, simple background, facing the front, {{straight-on}}, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, |3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, head down bottom up, standing split, standing on one leg, bad anatomy, disfigured, poorly drawn, deformed, mutation,|ランス２など|魔想志津香|V3使用。髪型がある程度安定して出る程度。|https://image01.seesaawiki.jp/n/h/nai_ch/NH3PV5EIqQ.png|
@@ -142,6 +143,7 @@
 &aname(Rezero){}
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style,anime coloring,Capella Emerada Lugnic,re:zero kara hajimeru isekai seikatsu,loli,bikini top only,purple bikini,shrug &#40;clothing),underboob,black shorts,slack sleeves,black thighhighs,bridal gauntlets,cleavage, girl dress as capella emerada lugnica,||Re：ゼロから始める異世界生活|カペラ・エメラダ・ルグニカ|V4 “girl dress as capella emerada lugnica”このプロンプトを入れると正確に衣装を出力可|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VIj7LwbpVO-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/VIj7LwbpVO.png]]|
 |petra leyte, re:zero kara hajimeru isekai seikatsu, loli, orange hair, short hair, red hairband, hair bow, maid apron,   | |Re：ゼロから始める異世界生活|ペトラ・レイテ|V4 Curated Preivew|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iHpcSOMlkg-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/iHpcSOMlkg.png]]|
 |{{priscilla barielle}}, &#91;&#91;re:zero kara hajimeru isekai seikatsu]], blonde hair, long hair, low ponytail, red eyes, dress, smile,  | |Re：ゼロから始める異世界生活|プリシラ・バーリエル|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ReL3W7eMck-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ReL3W7eMck.png]]|
 |official style, anime coloring, crusch karsten, re:zero kara hajimeru isekai seikatsu, very aesthetic, best quality, intricate, overall detail, 1girl, green hair, long hair, orange eyes, medium breasts, blue mini hat, blue military jacket, white gloves, white ascot, epaulettes, blue pants, black boots, simple background, front view, facing the front, close to viewer, full body, face focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |Re：ゼロから始める異世界生活|クルシュ・カルステン|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/y9UpU4irnG.png|
@@ -196,6 +198,14 @@
 |yashajin ai, ryuuou no oshigoto, loli, argyle legwear, pantyhose, one side up, hair bow, red eyes, solo, cowboy shot, ||りゅうおうのおしごと!|夜叉神天衣|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/e0v7dA7Yjt-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/e0v7dA7Yjt.png]]|
 |hinatsuru ai, ryuuou no oshigoto!, hinatsuru ai, loli, low twintails, long hair, blue eyes, ahoge, brown hair, blunt bangs, blue dress, short over long sleeves,  yellow ribbon, solo, cowboy shot,||りゅうおうのおしごと!|雛鶴あい|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/kzF1r1YuQg-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/kzF1r1YuQg.png]]|
 |{{{sora ginko}}}, ryuuou no oshigoto!, light lavender hair, bob hair, hair between eyes, black hairband, air intake hair, blue eyes, tsurime, medium breasts, slender,  shiny skin, ,  {{{white sailor collar}}}, white sailor shirt, long sleeves, blue neckerchief, black pantyhose, pleated skirt, navy skirt,, simple background, white background, , 1girl, solo, , cowboy shot,, from front, facing the front, looking at viewer, straight-on, close to viewer,, year 2023,, very aesthetic, best quality, amazing quality, , curated, illustration, highly detailed, ||りゅうおうのおしごと!|空銀子||https://image01.seesaawiki.jp/n/h/nai_ch/_7mNShyPsg.png|
+|}
+
+***　龍ヶ嬢七々々の埋蔵金
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|ryuugajou nanana no maizoukin, hoshino daruku,  tan skin, navyblue maid costume, black hair, short ponytail, otoko_no_ko, gold_pupil, tareme|ryuugajou nanana|龍ヶ嬢七々々の埋蔵金|星埜ダルク|V4。打率は低く、特徴の無いただの男の娘メイドもよく出る|https://image01.seesaawiki.jp/n/h/nai_ch/efNwX4X8wX.png https://image02.seesaawiki.jp/n/h/nai_ch/allCVIjYsO.png|
+|ryuugajou nanana no maizoukin, ikkyuu tensai, blonde hair, red cabbie_hat|ryuugajou nanana|龍ヶ嬢七々々の埋蔵金|壱級天災|V4。ネガティブはたぶん要る。|https://image02.seesaawiki.jp/n/h/nai_ch/LrVxtTtiVC.png https://image01.seesaawiki.jp/n/h/nai_ch/8Lrps51nyP.png|
+|ryuugajou nanana no maizoukin, ryuugajou nanana, violet hair||龍ヶ嬢七々々の埋蔵金|龍ヶ嬢七々々|V4。主人公だが髪色補足ぐらいを入れないとすぐ他キャラと混ざる|https://image01.seesaawiki.jp/n/h/nai_ch/MO2jCebDQa.png https://image02.seesaawiki.jp/n/h/nai_ch/btulViU4PD.png|
 |}
 
 ***　流星のロックマン
@@ -361,6 +371,7 @@
 |ciel (mega man), long hair, white gloves, blue eyes, blonde hair, high ponytail, headgear, smile, pantyhose, dress, long sleeves, pink skirt, turtleneck, solo, cowboy shot,  ||ロックマンゼロ|シエル|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iCmQEyLp6z-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/iCmQEyLp6z.png]]|
 |1girl,mega man (series),leviathan (mega man),||ロックマンゼロ|妖将レヴィアタン|足のリングは出にくい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yUxZn_s67R-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yUxZn_s67R.png]]|
 |}
+
 
 
 

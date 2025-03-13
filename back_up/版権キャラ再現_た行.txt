@@ -145,6 +145,9 @@
 ***　探偵オペラミルキィホームズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|akechi_kokoro, tantei opera milky holmes||探偵オペラミルキィホームズ|明智小衣|V4|https://image02.seesaawiki.jp/n/h/nai_ch/s9Z9uwXJE1.png https://image01.seesaawiki.jp/n/h/nai_ch/b43az7EWQh.png|
+|arsene, henriette mystere, tantei opera milky holmes, grasses||探偵オペラミルキィホームズ|怪盗アルセーヌ|V4、arsene と  henriette mystere 、両方のタグが必要な様子|https://image02.seesaawiki.jp/n/h/nai_ch/fLxrLJ5WV_.png https://image02.seesaawiki.jp/n/h/nai_ch/wJiRXqb7mj.png|
+|henriette mystere, tantei opera milky holmes|side_ponytail, grasses, mask|探偵オペラミルキィホームズ|アンリエット・ミステール|V4、ネガティブは怪盗アルセーヌ化防止。サンプルでは school_uniform を追加している。|https://image02.seesaawiki.jp/n/h/nai_ch/Hv1u2M_sug.png https://image02.seesaawiki.jp/n/h/nai_ch/QkfjdgWfHN.png|
 |yuzurizaki nero , tantei opera milky holmes, loli, orange hair, short hair, yellow shorts, yellow hat, yellow capelet,    ||探偵オペラミルキィホームズ|譲崎ネロ|V4 Curated Preview|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/VGtLdpjYPk-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/VGtLdpjYPk.png]]|
 |hercule barton, tantei opera milky holmes, loli, black hair, long hair, green dress, green hat,   ||探偵オペラミルキィホームズ|エルキュール・バートン|V4 Curated Preview|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wACPTQkbBf-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wACPTQkbBf.png]]|
 |cordelia glauca, tantei opera milky holmes, blonde hair, long hair, blue eyes, hair flower, wavy hair, beret, pantyhose, blue dress, looking at viewer, solo, cowboy shot,  ||探偵オペラミルキィホームズ|コーデリア・グラウカ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HwK1XKoP1O-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HwK1XKoP1O.png]]|
@@ -553,6 +556,12 @@
 |official style, {{yuphilia magenta, tensei oujo to tensai reijou no mahou kakumei }}, very aesthetic, best quality, intricate, overall detail, 1 girl, aqua hair, long hair, purple eyes, school uniform, white blouse,white jacket,indigo skirt,frills,yellow ribbon,blue ribbon tie,standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed)|lowres, {bad}, error, fewer, extra, missing, worst quality, jpeg artifacts, bad quality, watermark, unfinished, displeasing, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract], {{{{3d,anime,realistic art,old art}}}}, blurry, simple design, {{4fingers,6fingers,bad fingers}}, boy, elf ears, fat, masterpiece, logo, skirt|転生王女と天才令嬢の魔法革命|ユフィリア・マゼンタ|v3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/XyCunTjpcx-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/XyCunTjpcx.png]]|
 |}
 
+***　転生貴族の異世界冒険録
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, silk von santana, tensei kizoku no isekai boukenroku, girl, purple hair, purple eyes, small breasts, princess dress, pink ball gown, sleeveless, heels, standing, full body, |lowers, aliasing,|転生貴族の異世界冒険録|シルク・フォン・サンタナ|V4Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/xEoASIoROe.png|
+|}
+
 ***　転生したらスライムだった件
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -871,4 +880,5 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
+
 
