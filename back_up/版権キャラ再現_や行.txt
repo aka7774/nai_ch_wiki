@@ -16,6 +16,18 @@
 |official style, game cg, {{{{nanase ren, yakin byoutou}}}}, best quality, intricate, overall detail, nsfw, 1girl, nurse, brown hair, low ponytail, very long hair, sidelocks, green eyes, medium breasts, pink nurse cap, white apron, pink clothes, white thighhighs, sandals, standing, white background, facing the front, close to viewer, full body, face focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |夜勤病棟など|七瀬恋|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/Y9XUvLIHUp.png|
 |}
 
+***　ヤダモン
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|yadamon (character), yadamon, girl, loli, 5 years old, green hair, low twintails, blue eyes, red shirt, hair bobbles, turtle neck, green brooch, long sleeves, belt, red skirt, red boots, standing, smile, full body, |lowers, aliasing, |ヤダモン|ヤダモン|V4 Full版使用。キャラクタープロンプト１のみ記述。髪型が完全再現しない。|https://image02.seesaawiki.jp/n/h/nai_ch/R1SA18CF5X.png|
+|}
+
+***　YAT安心!宇宙旅行
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|tenjouin katsura, yat anshin uchuu ryokou, girl, travel attendant, blue hair, purple eyes, blue uniform, garrison hat, short dress, red bowtie, white gloves, short sleeves, shoes, standing, smile, full body, |lowers, aliasing, |YAT安心!宇宙旅行|天上院桂|V4 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/3t_2S6SxEu.png|
+|}
+
 ***　やはり俺の青春ラブコメはまちがっている。
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|~w(200px):サンプル|
@@ -153,6 +165,14 @@
 |hinata yukari, yuyushiki, purple hair, purple eyes, long hair, blue skirt, serafuku, yellow neckwear, smile, open mouth, pleated skirt, blue sailor collar, long sleeves, arms behind back, solo, cowboy shot, ||ゆゆ式|日向緑|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dDyM50BYpV-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dDyM50BYpV.png]]|
 |}
 
+***　ゆるキャラ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|no humans, chiitan, kigurumi, yuru-chara, other, black eyes, pink bowtie, x navel, standing, :d, full body, |lowers, aliasing,|ゆるキャラ|ちぃたん☆|V4 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2S6SxEuH_m.png|
+|mikudayo, chibi, girl, blue necktie, detached sleeves, thighhighs, skirt, standing, :d, full body, |lowers, aliasing, |ゆるキャラ|ミクダヨー|V4 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/4jBRUjXcF9.png|
+|kumamon, yuru-chara, other, bear, fat, short legs, arms at side, standing, smile, full body, |lowers, aliasing,|ゆるキャラ|くまモン|V4 Full版使用。キャラクター1プロンプトのみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/VWuM4Uaoh3.png|
+|}
+
 ***　ゆるキャン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -231,5 +251,4 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |leopard (yatterman), yoru no yatterman, loli, blonde hair, mask, long hair, blue eyes, cape, ahoge, elbow gloves, black gloves, spiked hair, solo, cowboy shot, ||夜ノヤッターマン|レパード|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/rcDUGj1oQp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/rcDUGj1oQp.png]]|
 |}
-
 

@@ -90,6 +90,18 @@
 |official style, asobe iroha, magicami, girl, brown hair, double bun, long hair, red eyes, large breasts, serafuku, pink bowtie, pink jacket, raglan sleeves, blue skirt, pleated skirt, socks, pink shoes, standing, full body, |lowers, aliasing,|マジカミ|遊部いろは|V4 Full版使用。キャラクター1プロンプトのみ記述。服装は完全再現しない。|https://image01.seesaawiki.jp/n/h/nai_ch/6K4oWrmOjc.png|
 |}
 
+***　真剣で私に恋しなさい!
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|girl,{{{official style}}},maji de watashi ni koi shinasai!,fushikawa kokoro,kimono||真剣で私に恋しなさい!|不死川 心|V4使用|https://image02.seesaawiki.jp/n/h/nai_ch/z2msaLL2Uk.png|
+|girl,{{{official style}}},maji de watashi ni koi shinasai!,margit eberbach,Military uniform,||真剣で私に恋しなさい!|マルギッテ・エーベルバッハ|V4使用|https://image02.seesaawiki.jp/n/h/nai_ch/OjeAUYVG2E.png|
+|girl,{{{official style}}},maji de watashi ni koi shinasai!,mayuzumi yukie,School uniform,||真剣で私に恋しなさい!|黛由紀江|V4使用|https://image01.seesaawiki.jp/n/h/nai_ch/1wb1WSE56F.png|
+|girl,{{{official style}}},maji de watashi ni koi shinasai!,christiane friedrich,School uniform,||真剣で私に恋しなさい!|クリスティアーネ・フリードリヒ|V4使用|https://image02.seesaawiki.jp/n/h/nai_ch/cfXaHallCV.png|
+|girl,{{{official style}}},maji de watashi ni koi shinasai!,shiina miyako,School uniform||真剣で私に恋しなさい!|椎名京|V4使用|https://image02.seesaawiki.jp/n/h/nai_ch/ci70SV0GwD.png|
+|girl,{{{official style}}},maji de watashi ni koi shinasai!,Kawakami Kazuko,School uniform||真剣で私に恋しなさい!|川神一子|V4使用|https://image01.seesaawiki.jp/n/h/nai_ch/lgXDTYZFBk.png|
+|girl,{{{official style}}},maji de watashi ni koi shinasai!,kawakami momoyo,School uniform||真剣で私に恋しなさい!|川神百代|V4使用|https://image02.seesaawiki.jp/n/h/nai_ch/jT1ZGGoNmG.png|
+|}
+
 ***　マクドナルド
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -285,6 +297,9 @@
 ***　まほろまてぃっく
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|girl,{{{official art}}},shikijou saori,mahoromatic,||まほろまてぃっく|式条沙織|V4使用。|https://image02.seesaawiki.jp/n/h/nai_ch/iROUPhD44x.png|
+|girl,{{{official art}}},todoriki rin,mahoromatic,||まほろまてぃっく|等々力凛|V4使用。|https://image02.seesaawiki.jp/n/h/nai_ch/pZAof8G3y8.png|
+|girl,{{{official art}}},ooe chizuko,mahoromatic,||まほろまてぃっく|大江千鶴子|V4使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Lg_i9ezUug.png|
 |official style, andou mahoro, mahoromatic, best quality, intricate, overall detail, 1 girl, maid costume, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |まほろまてぃっく|安藤まほろ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/nVCcSmdt4N.png|
 |official style, andou minawa, mahoromatic, best quality, intricate, overall detail, 1 girl, blonde hair, green eyes, maid costume, standing, :o, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |まほろまてぃっく|安藤みなわ|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Y1gSWmfRgD.png|
 |}
@@ -405,6 +420,12 @@
 |official style, anime coloring, sylphiette (mushoku tensei), mushoku tensei, very aesthetic, best quality, intricate, overall detail,  1 girl, green hair, red eyes, standing, white background, facing away, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |無職転生|シルフィエット・グレイラット|V3使用。grey hairとすると、成長して髪が伸びた時の感じで出やすい。狙って出すならプロンプトで補強が必要。|https://image01.seesaawiki.jp/n/h/nai_ch/rtVv6Ol1rt.png https://image02.seesaawiki.jp/n/h/nai_ch/S0Stf6TEUC.png|
 |{{eris greyrat &#40;mushoku tensei)}}, {{master piece}}, {highly detailed}, {red hair}, {{{red eyebrows}}}, very long hair, straight hair, {hair between eyes}, {crossed bangs}, {{{hair flaps of outside}}}, ahoge, {very short ahoge}, {headband behind ahoge}, {{black thin headband}}, {{shot eyebrows}}, &#91;&#91;&#91;thick eyebrows]]], red eyes, tsurime, &#91;medium breasts], 1girl, solo, {{loli}}, upper body|headband in front of ahoge, headpiece, hair ribbon, hood, {long ahoge}, extra person, small breasts, pointy ears|無職転生|エリス・ボレアス・グレイラット||https://image01.seesaawiki.jp/n/h/nai_ch/sqsMbnnTgS.png|
 |roxy migurdia, teenage, {loli}, blue eyes, blue hair, twin braids, crossed bangs, black ribbon, small breasts, brown cloak, white jacket, black skirt, short skirt, witch hat, black headwear, sketch, 1girl, {masterpiece}, highly detailed, holding staff, ice crystal||無職転生|ロキシー・ミグルディア||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/h1fgtvcIxt-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/h1fgtvcIxt.png]]|
+|}
+
+***　無人惑星サヴァイヴ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|luna (mujin wakusei survive)&#160;, mujin wakusei survive, girl, orange hair, blue eyes, shirt, raglan sleeves, pencil skirt, shoes, standing, smile, full body, |lowers, aliasing, |無人惑星サヴァイヴ|ルナ|V4 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/DX9dxPmPUh.png|
 |}
 
 ***　無能なナナ
@@ -547,6 +568,8 @@
 |tamamo (mon-musu quest!), loli, blonde hair, very long hair, fox girl, fox ears, fox tail, hair ornament, bare shoulders, ||もんむす・くえすと!|たまも|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6Ks1gIJP8v-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6Ks1gIJP8v.png]]|
 |alipheese fateburn xvi, mon-musu quest!, monster girl, lamia, very long hair, large breasts, yellow eyes, hair ornament, hair flower, pointy ears, tattoo, purple skin, black elbow gloves, crossed arms, solo, ||もんむす・くえすと!|アリスフィーズ・フェイタルベルン|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xSFh7x0LBW-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xSFh7x0LBW.png]]|
 |}
+
+
 
 
 
