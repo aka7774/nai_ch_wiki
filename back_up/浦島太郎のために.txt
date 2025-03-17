@@ -50,6 +50,11 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-03-17 Illustrious XL 2.0が公開される
+https://www.illustrious-xl.ai/model/4
+https://tensor.art/models/840365567832646761/
+当初はウェブサービス上のみでのリリースとし、のちにアーリーアクセス、オープンソースと進むロードマップが示された。
+
 **2025-03-08 GeForce RTX50x0での画像生成AIの利用
 RTX50x0シリーズは当初ComfyUIのみ利用できる状況だったが、CUDAの暫定版アップデートがリリースされた結果、生成、学習とも利用できるアプリケーションが増えてきた。
 -生成：https://fate.5ch.net/test/read.cgi/liveuranus/1741351441/310 で「[[RTX5090で、StableDiffusion Automatic1111 を動かしてみた #automatic1111 - Qiita>>https://qiita.com/hgodai/items/f958b69216f86819c740]]（PyTorchをCUDA 12.8対応のnightly buildに入れ替える）」と「[[GeForce RTX 5090でStable Diffusion 環境構築のメモ｜suk1y4ki>>https://note.com/suk1y4ki/n/n8dc027298553]]（EasyReforgeを利用）」が紹介された。
@@ -101,7 +106,7 @@ pip install -U bitsandbytes
 **2025-03-02 EasyWanVideoが公開される
 https://github.com/Zuntan03/EasyWanVideo
 Zuntan氏によるEasyシリーズで、WanVideoを使った動画生成の環境がセットアップされる。
-
+メインメモリ32GBではスワップが発生しやすくSSDの寿命が短くなるとして、64GBが最低限ではという意見が多い。マザーボードの制限をチェックしつつ128GBやそれ以上にメモリを増設するユーザーが増えた。
 **2025-03-01 NovelAI Diffusion v4が正式リリースされる
 https://novelai.net/
 公開直後の様子では、プロンプトの効き方がv3から変わり、思い通りの画像を出力できないと感じるユーザーが多い模様。SMEAやバイブストランスファーが実装されていないことも一因か。
@@ -916,6 +921,9 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
 
 
 
