@@ -769,6 +769,12 @@
 |nsfw,official style,2020s, game cg,1girl, {{fujiazuki}},{{{{takanashi sei}}}}, {{seijo no maryoku wa bannou desu}}, light smile,blush,brown eyes,official hairstyle,black hair,long hair,sidelocks,{{official costume}}, red dress,standing,open stance, cowboy shot,{{{{sweat}}}},{{{{steam}}}}, fantasy,bedroom,|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, pubic hair, 6fingers, 4fingers, 6toes, 4toes,|聖女の魔力は万能です|小鳥遊聖|V4 Curated Preview版です。当初黒スト越しのぱんつを入れないと誰？ってなってましたが、頭にnsfwをつけたらそこを抜いてもセイっぽくなりました。理由は不明です。|https://image01.seesaawiki.jp/n/h/nai_ch/ys2e8LYxgS.png|
 |}
 
+***　聖戦士ダンバイン
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|ciela lapana, seisenshi dunbine, girl, aqua hair, red eyes, medium breasts, pink armored dress, shoulder armor, sleeveless, white long skirt, standing, smile, full body,|lowres, aliasing, |聖戦士ダンバイン|シーラ・ラパーナ|V4 Curated版使用。Full版でこのプロンプトを使っても再現しない。|https://image02.seesaawiki.jp/n/h/nai_ch/6UrPkwYzjK.png|
+|}
+
 ***　生徒会の一存
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1134,6 +1140,7 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(通常Ver.)|V3使用。zombieと指定しなくても肌が青くなることはある。悪しからず。|https://image01.seesaawiki.jp/n/h/nai_ch/rKT9oVAXUb.png|
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
+
 
 
 
