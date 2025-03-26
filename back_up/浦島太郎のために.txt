@@ -50,6 +50,9 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-03-26 ChatGPTの画像生成がGPT-4oベースになる
+従来のDALL-Eベースの画像生成と比較してプロンプトの理解力が格段に上がり、表現力も高まった。
+
 **2025-03-17 Illustrious XL 2.0が公開される
 https://www.illustrious-xl.ai/model/4
 https://tensor.art/models/840365567832646761/
@@ -921,6 +924,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 

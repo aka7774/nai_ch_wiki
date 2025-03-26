@@ -311,3 +311,17 @@ Automatic1111でのPNG Infoやエクスプローラ等のでの参照は可能
 png2jpg改
 https://mega.nz/folder/fVYhCLZa#ZDKcdjMxmjYGtRLvNDRwtA
 ||=
+
+** PNG Infoを維持したままPNGをwebpに変換するツール「png2webp-for-a1111-and-NAI」
+https://github.com/Takenoko3333/png2webp-for-a1111-and-NAI
+
+- Automatic1111生成画像の変換について
+-- Automatic1111に取り込むことが可能なメタデータを維持したままPNG(.png)をWEBP(.webp)に変換します。
+-- 元画像のメタデータ（PNG Info）はWEBP画像のExifコメントに格納されます。
+-- WEBP画像は元画像同様にAutomatic1111のPNG Infoから情報を読み込ませて利用することが可能です。
+- NovelAI生成画像の変換について
+-- NovelAIに取り込むことが可能なメタデータを維持したままPNG(.png)をWEBP(.webp)に変換します。
+-- 元画像のメタデータはWEBP画像のExifコメントに格納されます。
+-- WEBP画像は元画像同様にNovelAIに情報を読み込ませて利用することが可能です。
+-- NovelAI生成画像は一般的なメタデータ以外に、特殊な方式で埋め込まれた情報が含まれています。変換後のWEBPはその情報を維持しているためNovelAIに情報を読み込ませて利用することが可能となっています。
+-- Automatic1111に情報を読み込ませて利用することはできませんが、Automatic1111のPNG InfoやWEBPのExifを閲覧可能なアプリ等で情報を参照することが可能です。
