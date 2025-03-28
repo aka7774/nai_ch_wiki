@@ -839,6 +839,13 @@
 |solo, {{{{tsukino usagi}}}}, &#91;&#91;&#91;&#91;sailor moon&#93;&#93;&#93;&#93;, blonde hair, very long twintails, double buns, blue eyes, sailor school uniform, sailor collar, brooch, crescent earrings, red heart choker, hairpin, forehead crescent, ||セーラームーン|月野うさぎ|公式絵をDeepDanbooruにかけて有効そうなのを上から順に並べてみた。順序を変えると再現率落ちる？|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/741Uvo3zW4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/741Uvo3zW4.png]]|
 |}
 
+***　世界樹の迷宮シリーズ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|curse maker||世界樹の迷宮１・２|カースメーカー|V4使用。~~単語だけだとこのタイプのみ出力される。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/GFNcfx1hlj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/GFNcfx1hlj.png]]|
+|bushidou (sekaiju),ponytail,red hakama,sarashi,gauntlets,||世界樹の迷宮１・２|ブシドー|V4使用。~~タグは複数に分かれているが、差異は特になさそう。~~単語のみだとおかっぱ頭の子(通称姫子)と混ざって出力される。~~姫子を出したい場合はponytail,red hakama,sarashiの部分をbob cut,head jewelry,kimono,に変更する。ただしポニーテールが付くことがある。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uveGEB6pW5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/uveGEB6pW5.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aSg_WBiYeF-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/aSg_WBiYeF.png]]|
+|}
+
 ***　世界征服〜謀略のズヴィズダー〜
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
