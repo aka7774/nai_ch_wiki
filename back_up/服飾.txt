@@ -560,6 +560,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|dirty clothes|汚れた服|服に茶色っぽい汚れが着くface、bodyも出来る||
 |see-through bra|透けブラ|モデルによって出やすさが違うのと、基本的には弱めに設定しないとビニール着てるみたいになる。また、上に着る服の色も指定してやること、さらに左記プロンプトだけだと濡れた表現になりやすいためネガティブに"sweat,wet"を入れたほうがよい。"see-through black bra"も効く。サンプルはポジ：white dress shirt, (see-through bra:0.5)ネガ：sweat, wet|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/uSB9EINqkB-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/uSB9EINqkB.jpg]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/clka0y14Ah-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/clka0y14Ah.jpg]]|
 |open fly|ジーンズのホックを開く|下にビキニとか着てる時にわざと開けてるやつ|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Cia3k6aKfy-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Cia3k6aKfy.png]]|
 |tied t-shirt|Tシャツ裾の腰縛り|裾がダボダボするのが嫌な時にやるやつ。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6gUCWzDuxi-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/6gUCWzDuxi.jpg]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/9cI4qRFSaO-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/9cI4qRFSaO.jpg]]|
@@ -664,6 +665,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|||||
 |embroidered|刺&#32353;済み|レース生地の刺繍などを表現できる。性質上これ単体だと分かりにくいので、see-throughやlacesと組み合わせると効果的。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1BD0OKEahY-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1BD0OKEahY.png]]|
 |layered sleeves|重ねられた袖|袖の材質や生地、色など様々な要素が重ねて混ざって出る。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/AsiS2ojvdq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/AsiS2ojvdq.png]]|
 |frills|フリル|単にfrillsと入れると服全体がフリフリする。特定の衣装をフリフリしたいなら"frilled 〜"とする(が、局所的に利かせるのは難しい)。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/WhpPMlbWK9-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/WhpPMlbWK9.png]]|
