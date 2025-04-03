@@ -689,6 +689,8 @@
 ***　くりいむレモンシリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|Artist:shingyouji tatsuya, 1980s (style), komatsuzaki rie, escalation, cream lemon, girl, brown hair, long hair, blunt bang, green eyes, medium breasts, clothed female, serafuku, green sailor collar, yellow neckerchief, white shirt, green skirt, white socks, loafers, standing, :o, full body,|lowres, aliasing, |エスカレーション|小松崎リエ|V4 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/qpRR8PCTe8.png|
+|caron (rall)&#160;, sf choujigen densetsu rall, cream lemon, girl, orange hair, green eyes, medium breasts, red bikini armor, navel, armored boots, standing, full body,|lowres, aliasing, |SF超次元伝説RALL|キャロン|V4 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3Y21t5sHd7.png|
 |1980s (style), retro artstyle, {{nonomura ami (cream lemon), cream lemon}}, very aesthetic, best quality, intricate, overall detail, 1 girl, younger, {{slender}}, brown hair, [[[[parted bangs, forehead]]]], long hair, {{{{straight hair}}}}, green eyes, swimsuit, blue bikini, standing, :o, blush, simple back ground, straight-on, facing the front, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, wavy hair, |媚・妹・Baby|野々村亜美|V3使用。当時の絵柄に近くなるけど、キャラとして安定して出力されない。|https://image02.seesaawiki.jp/n/h/nai_ch/wpieoZBJVo.png|
 |}
 
