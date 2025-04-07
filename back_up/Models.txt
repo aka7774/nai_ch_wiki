@@ -4,7 +4,7 @@
 
 広義では、HypernetworkやLoraで作成したファイルなども含まれるが、
 ここではいわゆるCheckpointの話をする。
-2025年2月時点でSDXLが主流だが、次世代モデルはSD3.5 Mediumが定番になる可能性が高い。
+2025年4月時点でSDXLが主流だが、次世代モデルはSD3.5 Mediumが定番になるかも
 
 ** Stable Diffusionのバージョン
 *** SD1
@@ -57,6 +57,7 @@ Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - 文章を正しく生成できる
 - FLUX.1より美的スコアが低い
 - Fine-tuningがしやすい(公式がFTのチュートリアルを出している)
+-- 実際にはFine-Tuningの難易度が高いとか
 
 ** ほかのText-to-Imageモデル
 
@@ -69,7 +70,7 @@ schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - 文章を正しく生成できる
 - 蒸留モデル(Fine-tuningが困難らしい)
 - オープンなモデルの中では最大級のパラメータ数(12B)。
-- それゆえにSD3.5Lを超える重さ
+-- それゆえにSD3.5Lを超える重さ
 
 *** AuraFlow
 https://huggingface.co/fal/AuraFlow
@@ -98,7 +99,7 @@ https://huggingface.co/Efficient-Large-Model/Sana_1600M_1024px
 ※間違っている可能性あり。間違っていたら修正してください。
 
 ノイズ予測アルゴリズムの種類。
-v-predictionだからといって劇的に性能が上がるわけではない。わかりやすい変化はZero Terminal SNRを併用することで色の精度が上がる程度。一方で構図の不安定化の原因となる。
+v-predictionだからといって劇的に性能が上がるわけではない。わかりやすい変化はZero Terminal SNRを併用することで色の精度が上がる程度。一方で構図の不安定化の原因となる(NoobAI-XL特有の可能性が高い)。
 なお、計算式の違いで推論時に本来の予測方法とは別のものに変えても正しく動作しない(学習時のpredictionタイプに合わせる)。
 
 ** ε-prediction / epsilon-prediction
@@ -118,7 +119,7 @@ Zero Terminal SNRを併用することで全体が明るい、暗い、または
 SNR=0であるべき状況(完全なノイズ)で0にならない(ノイズの中にわずかに元画像が残る)欠陥を修正するもの。
 全体が明るい、暗い、または高コントラストの状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。
 低めのGuidance Scaleで運用できる(大体5以下)、というか低めじゃないと彩度が高すぎる。
-欠点として、彩度やコントラストが極端に高くなったり構図の破綻が増加したりする(NoobAI-XL特有の現象？)。
+欠点として、彩度やコントラストが極端に高くなったり構図の破綻が増加したりする(NoobAI-XL特有の現象の可能性が高い)。
 
 *** よくある勘違い
 v-predictionは''高速化する技術ではない''。低ステップ動作を謳うcheckpointは高速化LoRAをマージしている。

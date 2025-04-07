@@ -73,7 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
-|Intel Arc B580|12GB|Ryzen 7 5700X|92.2|forge f2.0.1v1.10.1-previous-659-gc055f2d4|--use-ipex --listen --enable-insecure-extension-access|Ubuntu 24.04.2 大体3.60it/s intel_extension_for_pytorch==2.6.10+git6071358 torch==2.6.0a0+git1eba9b3 #Windowsだと同条件でsampling4.30it/s以上出るがvaeでもたついて計200s以上かかった|
+|Intel Arc B580|12GB|Ryzen 7 5700X|92.2|forge f2.0.1v1.10.1-previous-659-gc055f2d4|--use-ipex --listen --enable-insecure-extension-access|Ubuntu 24.04.2 torch==2.6.0a0 intel_extension_for_pytorch==2.6.10 #大体3.60it/s Windows11だと同ﾊﾞｰｼﾞｮﾝでｻﾝﾌﾟﾘﾝｸﾞ4.30it/s以上出るがﾃﾞｺｰﾄﾞで妙に時間掛かって200秒越えた|
 |RTX 5090|32GB|Ryzen 9 9950X|33.5|f1.7.0-v1.10.1RC-latest-2165-g25dcc6be||torch-2.6.0-cu128.nv|
 |RTX 4080 SUPER|16GB|Ryzen 9 9900X|58.1|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX A4000|16GB|Core i5-13500|105.0|f2.0.1v1.10.1-previous-644-gde1670a4||Illustrious-XL-v1.0|
