@@ -23,6 +23,19 @@
 - 生成する
 
 もし生成に成功したら、当該wikiページになければキャラ追加しよう！
+* V4 Full
+2025年3月1日リリース。
+V4 Curatedからさらに再現可能キャラは増え、danbooru tag数が20程度でも再現可能なキャラが大きく増えた。
+さらに、タグ数一桁でも再現可能な場合あり（巨乳ファンタジー、恋姫無双、ガールフレンド仮など）
+とはいえ万能ではなく、50程度タグがあるキャラでも再現困難な場合もあるため、引き続きボーダーラインは探索が必要。
+（DOAXのミサキ、ファンキルのパラシュ、ミルモでポンの南楓など）
+
+* V4 Curated
+2024年12月20日リリース。（当時の名前はV4 Curated Preview）
+V4 Fullリリースまでの前段階としてリリースされたモデル。
+V1 Curatedと同様に健全絵のみで学習されているためnsfw絵はほぼ出ないものの、
+再現可能キャラはV3からさらに増え、danbooru tag50程度でも再現できるようになった。
+
 * V3
 2023年11月14日リリース。
 V2から間髪入れずにリリースされたモデルだがクオリティの差は歴然で、ぱっと見公式絵と見分けがつかない程のイラストを生成できるようになった。
@@ -100,8 +113,6 @@ V2から間髪入れずにリリースされたモデルだがクオリティの
 (参考)
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
-|||||||
 |rem_(re:zero)||Re：ゼロから始める異世界生活|レム|髪型・複雑な服装・特徴的なヘアバンドも含めて、キャラ名だけでほぼ完全再現される例|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7STwfKgPB2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/7STwfKgPB2.png]]|
 |akemi homura||魔法少女まどか☆マギカ|暁美ほむら|名前だけでも特徴を掴んだ絵は出るが、作品名を追加することで画風が反映され、再現精度が上がる例|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/JlO2wFfOLl-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/JlO2wFfOLl.png]] |
 |akemi homura,mahou shoujo madoka magica||^|^|^ |[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nEee7qqu6E-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nEee7qqu6E.png]]|
@@ -194,19 +205,4 @@ gochuumon wa usagi desu ka?を追加するとある程度は回避できるが�
 
 -画像に別のキャラの要素が出るなら、それをネガティブプロンプトに入れよう
 --例えば、タヌキを出力したい時にネガティブプロンプトにアライグマのタグを入れる感じ
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
