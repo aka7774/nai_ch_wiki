@@ -52,6 +52,13 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-04-13 reForgeの開発が終了
+https://github.com/Panchovix/stable-diffusion-webui-reForge/discussions/354
+実生活や仕事、健康の問題で十分な開発時間を確保できないためとのこと。
+
+Zuntan03氏が開発している[[EasyReforge>https://github.com/Zuntan03/EasyReforge]]は「この前の大規模更新で少し前の安定気味バージョンでリビジョンを拡張機能も含めて固定済みやで」「またなんか新しい環境が出てくるまでNoobやIllustrious用の安定版環境としてご利用くださいやね」。
+https://fate.5ch.net/test/read.cgi/liveuranus/1744454985/122
+
 **2025-03-26 ChatGPTの画像生成がGPT-4oベースになる
 従来のDALL-Eベースの画像生成と比較してプロンプトの理解力が格段に上がり、表現力も高まった。
 「どんな画像もスタジオジブリ風にできる」と話題になり、利用者が増大した結果OpenAIのサム・アルトマンCEOは「GPUが溶ける」とSNSへ投稿し、無料ユーザーへの開放を延期すると表明した。（4月初めには全無料ユーザーに開放された）
@@ -926,6 +933,8 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
 
 
 
