@@ -89,28 +89,7 @@ traintrainはa1111にdev版torchで動いた
 
 後はsageattentionとかその辺どうにかしないとやな…
 ||=
-- 学習2：http://bbs.punipuni.eu/test/read.cgi/vaporeon/1739986291/723 より
-=|BOX|
-723: 転載禁止&#128020;(ﾌﾟｯﾁｮｲ kdMk-cAR3) sage 2025/03/12(水) 22:44:16.94 ID:OqU01l2Y
->>707
-Kohya_lora_param_guiの「B.手動インストール」という意味やった
-https://github.com/RedRayz/Kohya_lora_param_gui
 
-
-kohya_ssは使ってなかったんやけど下の手順で新規インストールしたら動いてるみたいや（シンプルな設定のxlのlora学習しか試してないけど）
-
-git clone --recursive https://github.com/bmaltais/kohya_ss.git
-cd kohya_ss
-py -3.10 -m venv venv
-.\venv\Scripts\activate
-pip install -U --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu128
-pip install -r requirements_windows.txt
-pip install -U accelerate==0.30.0
-
-(xformersや8bit系を使う場合は追加)
-pip install --pre -U --no-deps xformers
-pip install -U bitsandbytes
-||=
 **2025-03-04 Hakomikan氏、新しいLoRA学習の手法「ADDifT」の解説記事を公開
 -[[交替直接差分学習法ADDifT(Alternating Direct Difference Training)の解説｜hakomikan>>https://note.com/hakomikan/n/n716397e39d56]]
 6日には[[Traintrain>>https://github.com/hako-mikan/sd-webui-traintrain]]での学習方法を解説する記事（[[1>>https://note.com/hakomikan/n/n2a00c2bb39af]]）を公開した。
