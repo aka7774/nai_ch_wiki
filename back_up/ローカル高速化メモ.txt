@@ -221,7 +221,8 @@ https://sourceforge.net/projects/imdisk-toolkit/
 * Linuxに入れる(上級者向け)
 Windows上の仮想化ではなく実際にインストールする。
 Ubuntu24.04 LTS、Python 3.11.9、Torch2.3.1での環境では、推論(it/s)は2〜4%、学習は10%高速化した。VRAM消費は特筆すべき変化はなかった。
-また、メモリ消費が減少し、medvram有効時の生成開始と終了のもたつきが軽減して結構速くなった。IOが速いのか全体的にレスポンスが良い
+また、メモリ消費が減少し、medvram有効時の生成開始と終了のもたつきが軽減して結構速くなった。IOが速いのか全体的にレスポンスが良い。
+Linux上のreForgeとなればVRAMのオフロードを感じさせないほど速い。
 ただしメモリ不足になるとWindowsは頑張って耐えるもののLinuxは素直にフリーズしてから落ちる
 
 Windowsが入っていない空っぽのSSDに入れるか、サブ機とかお古になったら検討してもいいかも
@@ -229,7 +230,7 @@ Windowsが入っていない空っぽのSSDに入れるか、サブ機とかお�
 
 * TensorRTを使う(非推奨)
 https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT
-最適化で大幅に高速化するもので最大2倍速くなるらしい。NVIDIA専用。
+最適化(コンパイル)で大幅に高速化するもので最大2倍速くなるらしい。NVIDIA専用。
 1111のExtensionから導入できる。
 
 けど以下の重大な欠点があるのでベンチ以外で使い道はないかな

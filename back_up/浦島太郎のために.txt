@@ -52,6 +52,11 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-04-17 Illyasviel氏、FramePackを公開
+https://github.com/lllyasviel/FramePack
+ControlNetやForgeを開発したIllyasviel氏がi2v（image2video）ソフトウェアのFramePackを公開した。
+6GB VRAMから利用できるとあり、これまでの動画生成AIと比較して格段に低スペックでの生成が可能。
+
 **2025-04-13 reForgeの開発が終了
 https://github.com/Panchovix/stable-diffusion-webui-reForge/discussions/354
 実生活や仕事、健康の問題で十分な開発時間を確保できないためとのこと。
@@ -912,6 +917,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
