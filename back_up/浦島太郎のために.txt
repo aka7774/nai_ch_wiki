@@ -52,6 +52,10 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-04-19 Illustrious XL v2.0、ダウンロード可能に
+https://tensor.art/models/840365567832646761
+https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0/tree/main
+
 **2025-04-17 Illyasviel氏、FramePackを公開
 https://github.com/lllyasviel/FramePack
 ControlNetやForgeを開発したIllyasviel氏がi2v（image2video）ソフトウェアのFramePackを公開した。
@@ -76,24 +80,6 @@ https://tensor.art/models/840365567832646761/
 RTX50x0シリーズは当初ComfyUIのみ利用できる状況だったが、CUDAの暫定版アップデートがリリースされた結果、生成、学習とも利用できるアプリケーションが増えてきた。
 -生成：https://fate.5ch.net/test/read.cgi/liveuranus/1741351441/310 で「[[RTX5090で、StableDiffusion Automatic1111 を動かしてみた #automatic1111 - Qiita>>https://qiita.com/hgodai/items/f958b69216f86819c740]]（PyTorchをCUDA 12.8対応のnightly buildに入れ替える）」と「[[GeForce RTX 5090でStable Diffusion 環境構築のメモ｜suk1y4ki>>https://note.com/suk1y4ki/n/n8dc027298553]]（EasyReforgeを利用）」が紹介された。
 -学習1：http://bbs.punipuni.eu/test/read.cgi/vaporeon/1739986291/656 で方法が紹介された。
-=|BOX|
-656: 転載禁止&#128036;(ﾌﾟｯﾁｮｲ kdMk-cAR3) sage 2025/03/08(土) 22:36:02.80 ID:x0NjaC1k
-5070tiやけど学習動いたので雑メモ失礼（本スレ書けない）
-
-sd-sはvenv作り直してdev版torchを
-pip install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu128
-で入れてその他は公式の手順でOK（torch2.7.0.dev20250306+cu128
-torchvision0.22.0.dev20250307+cu128で確認）
-
-LECOはdev版torchに加えて、requirements.txtを一部変更
-- transformers==4.33.1
-+ transformers==4.44.0
-+ huggingface-hub==0.24.5
-
-traintrainはa1111にdev版torchで動いた
-
-後はsageattentionとかその辺どうにかしないとやな…
-||=
 
 **2025-03-04 Hakomikan氏、新しいLoRA学習の手法「ADDifT」の解説記事を公開
 -[[交替直接差分学習法ADDifT(Alternating Direct Difference Training)の解説｜hakomikan>>https://note.com/hakomikan/n/n716397e39d56]]
@@ -917,6 +903,8 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
 
 
 

@@ -73,6 +73,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 5090|32GB|Core i9-13900KF|37.1|f1.7.0-v1.10.1RC-latest-2184-g0ff0fe36||torch 2.8.0.dev20250417+cu128|
+|RTX 3070|8GB|Core i7-10700|154.9|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |Intel Arc B580|12GB|Ryzen 7 5700X|92.2|forge f2.0.1v1.10.1-previous-659-gc055f2d4|--use-ipex --listen --enable-insecure-extension-access|Ubuntu 24.04.2 torch==2.6.0a0 intel_extension_for_pytorch==2.6.10 #大体3.60it/s Windows11だと同ﾊﾞｰｼﾞｮﾝでｻﾝﾌﾟﾘﾝｸﾞ4.30it/s以上出るがﾃﾞｺｰﾄﾞで妙に時間掛かって200秒越えた|
 |RTX 5090|32GB|Ryzen 9 9950X|33.5|f1.7.0-v1.10.1RC-latest-2165-g25dcc6be||torch-2.6.0-cu128.nv|
 |RTX 4080 SUPER|16GB|Ryzen 9 9900X|58.1|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
@@ -170,6 +172,7 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 5090|32GB|Core i9-13900KF|35.9|f1.7.0-v1.10.1RC-latest-2184-g0ff0fe36||torch 2.8.0.dev20250417+cu128|
 |RTX 5090|32GB|Ryzen 9 9950X|31.6|f1.7.0-v1.10.1RC-latest-2165-g25dcc6be||torch-2.6.0-cu128.nv|
 |RTX 4070 SUPER|12GB|Core i5 12400|102.9|AUTOMATIC1111 1.9.4|--no-half-vae --opt-sdp-attention --opt-sdp-no-mem-attention||
 |RX7800XT|16GB|Core i5-12600K|209.2|forge f0.0.17v1.8.0rc-latest-278-gbfee03d8||Ubuntu22.04 rocm6.1.3.60103|
@@ -188,6 +191,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 5090|32GB|Core i9-13900KF|35.1|f1.7.0-v1.10.1RC-latest-2184-g0ff0fe36||torch 2.8.0.dev20250417+cu128|
 |RTX 5090|32GB|Ryzen 9 9950X|30.8|f1.7.0-v1.10.1RC-latest-2165-g25dcc6be||torch-2.6.0-cu128.nv|
 |RTX 4070 SUPER|12GB|Core i5 12400|117.0|AUTOMATIC1111 1.9.4|--no-half-vae --opt-sdp-attention --opt-sdp-no-mem-attention||
 |RTX 4090|24GB|Core i7-13700F|45.4|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
