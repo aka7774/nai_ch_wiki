@@ -73,6 +73,8 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4070|12GB|Core i3-12100F|70.8|Forge Classic c06c1e0 (2025/4/27)|--sage --fast-fp16|Forge Classic自体の出力結果が1111・Forge・reForge等とは少し異なる~~さらに--sageや--fast-fp16を使うと違いがより大きくなる(昔のToMeみたいに)|
+|RTX 4070|12GB|Core i3-12100F|90.8|Forge Classic c06c1e0 (2025/4/27)|--sage --fast-fp16|Powerlimit 70%|
 |RTX 5090|32GB|Core i9-13900KF|37.1|f1.7.0-v1.10.1RC-latest-2184-g0ff0fe36||torch 2.8.0.dev20250417+cu128|
 |RTX 3070|8GB|Core i7-10700|154.9|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |Intel Arc B580|12GB|Ryzen 7 5700X|92.2|forge f2.0.1v1.10.1-previous-659-gc055f2d4|--use-ipex --listen --enable-insecure-extension-access|Ubuntu 24.04.2 torch==2.6.0a0 intel_extension_for_pytorch==2.6.10 #大体3.60it/s Windows11だと同ﾊﾞｰｼﾞｮﾝでｻﾝﾌﾟﾘﾝｸﾞ4.30it/s以上出るがﾃﾞｺｰﾄﾞで妙に時間掛かって200秒越えた|
