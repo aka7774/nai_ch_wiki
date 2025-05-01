@@ -7,6 +7,7 @@
 ***　サーバント×サービス 
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
+|||||||
 |official style, anime coloring, yamagami lucy, servant x service, very aesthetic, best quality, intricate, overall detail, nsfw, 1 girl, black hair, ahoge, brown eyes, medium breasts, glasses, ID card, black sweater, pants, standing, white background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},||サーバント×サービス|山神ルーシー(略)|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/Mfv1bUGH6k.png| 
 |} 
 
@@ -61,6 +62,7 @@
 ***　咲-Saki- 
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
 |anime, 1girl ,(official style), 1girl,{{{miyanaga saki,saki}}},bkack hair,short hair,mini breasts,blue school uniform,very aesthetic, best quality, amazing quality, intricate, overall detail, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality,signature, watermark, username, blurry, artist name, multiple legs, malformation,{{{{{4fingers,6fingers,bad fingers}}}}}, @_@|咲-Saki- |宮永 咲|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Lt_WOmlwfg-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Lt_WOmlwfg.png]]| 
 |haramura nodoka, saki, pink hair, long hair, hair bow, school uniform, cowboy shot,  ||咲-Saki- |原村和|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/myerh0qtnX-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/myerh0qtnX.png]]| 
 |kataoka yuuki, saki, loli, child, blue eyes, kiyosumi  school uniform, thighhighs, hair bobbles, fang, two side up, short hair, smile, brown hair, solo, cowboy shot, ||咲-Saki- |片岡優希|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/qCvgphfptf-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/qCvgphfptf.png]]|
@@ -597,6 +599,15 @@
 |official style, 2d cel anime, {{tsukamoto yakumo}}, {{school rumble}}, very aesthetic, best quality, intricate, overall detail, 1 girl, school uniform, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |スクールランブル|塚本八雲|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/sBobf6Kbm6.png|
 |official style, 2d cel anime, {{tsukamoto tenma}}, {{school rumble}}, very aesthetic, best quality, intricate, overall detail, 1 girl, school uniform, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |スクールランブル|塚本天満|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/Vegawz3_NC.png|
 |}
+
+***　スケッチブック
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|Kajiwara Sora,Sketchbook full color's||スケッチブック|梶原 空|v4|https://image02.seesaawiki.jp/n/h/nai_ch/7adcbdc3ccd6c34e.png|
+|Asou Natsumi,Sketchbook full color's,twintail||スケッチブック|麻生 夏海|v4|https://image02.seesaawiki.jp/n/h/nai_ch/2bb4871be6086cef.png|
+|Torikai Hazuki,Sketchbook full color's||スケッチブック|鳥飼 葉月|v4(不安定)|https://image02.seesaawiki.jp/n/h/nai_ch/690ff5c47ff83e46.png|
+|}
+
 
 ***　進め！高捷少女！
 {| class="sort edit nanj_prompt_table"
