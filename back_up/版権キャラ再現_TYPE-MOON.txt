@@ -93,6 +93,7 @@
 ***　コハエース（ぐだぐだエース）、帝都聖杯奇譚、Fate/type Redline
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(300px):備考|サンプル|
+|||||||
 |1girl, {{{{okita souji(first ascension)(fate)}}}}, saber, holding katana, pink_kimono, black_ribbon, silver_hair, short_hair,||コハエース~~Fate/type Redline|沖田総司|V3使用~~ある程度の単語強調及び、服装や身体的特徴の単語が必要で、これらが無いと無関係な和風侍ガールっぽいキャラが出力されがち。~~アルターエゴの〔オルタ〕が身に着けている髪飾りが、指定無しでも出力される事が多い。~~第三臨『(third ascension)』の新選組の衣装も要素としてあるが、出し辛いので要検証。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/V7UB270Sc7.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/PYhRIAtpGo.png)|
 |okita souji (fate)||^|^|V1使用|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nR3F5yW1UJ-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/nR3F5yW1UJ.png]]|
 |}

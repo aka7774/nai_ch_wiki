@@ -73,6 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4090|24GB|Core i9-13900K|31.6|Forge Classic  cb41bd (2025/5/7)|--sage --fast-fp16|Powerlimit 70%|
 |RTX 4070|12GB|Core i3-12100F|70.8|Forge Classic c06c1e0 (2025/4/27)|--sage --fast-fp16|Forge Classic自体の出力結果が1111・Forge・reForge等とは少し異なる~~さらに--sageや--fast-fp16を使うと違いがより大きくなる(昔のToMeみたいに)|
 |RTX 4070|12GB|Core i3-12100F|90.8|Forge Classic c06c1e0 (2025/4/27)|--sage --fast-fp16|Powerlimit 70%|
 |RTX 5090|32GB|Core i9-13900KF|37.1|f1.7.0-v1.10.1RC-latest-2184-g0ff0fe36||torch 2.8.0.dev20250417+cu128|
@@ -174,6 +175,7 @@ Batch Count 5、Batch Size 2
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4090|24GB|Core i9-13900K|29.9|Forge Classic cb41bd (2025/5/7)|--sage --fast-fp16|Powerlimit 70%|
 |RTX 5090|32GB|Core i9-13900KF|35.9|f1.7.0-v1.10.1RC-latest-2184-g0ff0fe36||torch 2.8.0.dev20250417+cu128|
 |RTX 5090|32GB|Ryzen 9 9950X|31.6|f1.7.0-v1.10.1RC-latest-2165-g25dcc6be||torch-2.6.0-cu128.nv|
 |RTX 4070 SUPER|12GB|Core i5 12400|102.9|AUTOMATIC1111 1.9.4|--no-half-vae --opt-sdp-attention --opt-sdp-no-mem-attention||
@@ -193,6 +195,7 @@ Batch Count 2、Batch Size 5
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4090|24GB|Core i9-13900K|29.7|Forge Classic cb41bd (2025/5/7)|--sage --fast-fp16|Powerlimit 70%|
 |RTX 5090|32GB|Core i9-13900KF|35.1|f1.7.0-v1.10.1RC-latest-2184-g0ff0fe36||torch 2.8.0.dev20250417+cu128|
 |RTX 5090|32GB|Ryzen 9 9950X|30.8|f1.7.0-v1.10.1RC-latest-2165-g25dcc6be||torch-2.6.0-cu128.nv|
 |RTX 4070 SUPER|12GB|Core i5 12400|117.0|AUTOMATIC1111 1.9.4|--no-half-vae --opt-sdp-attention --opt-sdp-no-mem-attention||
@@ -210,6 +213,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 4090|24GB|Core i9-13900K|29.6|Forge Classic cb41bd (2025/5/7)|--sage --fast-fp16|Powerlimit 70%|
 |RTX 4090|24GB|Core i7-13700F|37.2|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |RTX 4060 Ti|16GB|Core i5-12400F|154.2|f0.0.17v1.8.0rc-latest-276-g29be1da7|||
 |RTX 4090|24GB|Core i9-13900K|40.8|f0.0.14v1.8.0rc-latest-184-g43c9e3b5||Powerlimit 70%|
