@@ -57,6 +57,11 @@ https://civitai.com/articles/13632
 たとえば禁止コンテンツとして新たに近親相姦、自傷行為、尿や吐瀉物、おむつなどを含む排泄物といった項目が加わった。厳格化されたものはほかにもあり、全体に不自由さを増した内容になっている。
 新しい規約に違反していると判断されたコンテンツは非表示となり、30日後に削除される。
 
+**2025-04-23 NVIDIA GeForce RTX 50x0に対応したPyTorch 2.7が正式にリリースされる
+https://pytorch.org/blog/pytorch-2-7/
+
+PyTorch 2.7はNVIDIAのBlackwellアーキテクチャに対応したバージョンで、GeForce RTX 50x0シリーズも含まれている。
+これで50x0シリーズでの画像・動画生成や学習が問題なくできるようになった。はず。
 **2025-04-19 Illustrious XL v2.0、ダウンロード可能に
 https://tensor.art/models/840365567832646761
 https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0/tree/main
@@ -908,6 +913,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
