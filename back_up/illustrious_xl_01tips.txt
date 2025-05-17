@@ -1,6 +1,14 @@
-*どこにあるの？
-リポジトリ: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
+*配布場所
 論文: https://arxiv.org/pdf/2409.19946
+
+*** v0.1
+https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
+*** v1.0
+https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.0
+*** v1.1
+https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.1
+*** v2.0
+https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0
 
 * 概要
 韓国Onoma AIがkohaku-xl-beta5をファインチューンしたSDXLベースのアニメモデル。

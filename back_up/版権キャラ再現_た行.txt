@@ -600,6 +600,7 @@
 ***　とある魔術の禁書目録
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
 |kazakiri hyouka, toaru majutsu no index, girl, brown hair, brown eyes, large breasts, kirigaoka girls' academy school uniform, white shirt, necktie, skirt, black socks, loafers, standing, full body, ||とある魔術の禁書目録|風斬氷華|V4 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/aea4f773dca85a19.png|
 |tsukuyomi komoe, toaru majutsu no index, girl, pink hair, pink eyes, small breasts, pink dress, white shirt, short sleeves, white socks, shoes, standing, full body, ||とある魔術の禁書目録|月詠小萌|V4 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/79601888ea80a32b.png|
 |kanzaki kaori, toaru majutsu no index, girl, purple hair, purple eyes, large breasts, white shirt, tied shirt, short sleeves, midriff, belt, jeans, single pantsleg, boots, holding katana, holding sheath, standing, full body, ||とある魔術の禁書目録|神裂火織|V4 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a38a7acb85839a15.png|
@@ -863,6 +864,12 @@
 |official style, game cg, {{amazon(dragon's crown)}}, dragon's crown, very aesthetic, best quality, intricate, overall detail, 1 girl, big ax, close to viewer, cowboy shot, white background,  (highly detailed)|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, elf (dragon's crown), sorceress(dragon's crown)|ドラゴンズクラウン|アマゾン|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/yZhkh3KEoI.png|
 |official style, game cg, elf(dragon's crown), dragon's crown, very aesthetic, best quality, intricate, overall detail, 1 girl, bow(weapon), close to viewer, cowboy shot, white background,  (highly detailed)|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body|ドラゴンズクラウン|エルフ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/rFymSlLK7y.png|
 |official style, game cg, sorceress(dragon's crown), dragon's crown, very aesthetic, best quality, intricate, overall detail, 1 girl, large breasts, magic, close to viewer, cowboy shot, white background,  (highly detailed)|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body,|ドラゴンズクラウン|ソーサレス|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/diNMKfYWMC.png|
+|}
+
+***　ドラゴンハーフ
+{| class="sort edit nanj_prompt_table"
+|~w(200px):プロンプト|~w(200px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{ai-generated}}, {mita ryuusuke}, mink (dragon half), {{{dragon half}}}, tail, armor, bikini armor,||ドラゴンハーフ|ミンク|V4使用。|https://image02.seesaawiki.jp/n/h/nai_ch/b6d1154f554f86c4.png|
 |}
 
 ***　ドリームクラブ
