@@ -52,6 +52,10 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-05-20 5月23日以降、Civitaiでの支払いにクレジットカードが使えなくなるとのアナウンス
+https://civitai.com/articles/14945
+運営はこれは一時的な措置であるとし、23日までに年間メンバーシップを契約するようすすめているほか、近日中に暗号通貨での支払いにも対応するとしている。
+
 **2025-04-24 Civitaiの利用規約がより厳しくなる
 https://civitai.com/articles/13632
 たとえば禁止コンテンツとして新たに近親相姦、自傷行為、尿や吐瀉物、おむつなどを含む排泄物といった項目が加わった。厳格化されたものはほかにもあり、全体に不自由さを増した内容になっている。
@@ -913,6 +917,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
