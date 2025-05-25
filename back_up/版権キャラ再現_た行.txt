@@ -70,6 +70,14 @@
 |official style, akiyama rinko (taimanin), taimanin (series), very aesthetic, best quality, intricate, overall detail, nsfw, 1 girl, purple eyes, skindentation, purple bodysuit, armor, kote, cleavage cutout, underboob, sheathed, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, |対魔忍ユキカゼなど|秋山凜子|V3使用。プリキュアに対魔忍再現のヒントがあるとは・・。人生、どこに気づきがあるかわからないものである。|https://image01.seesaawiki.jp/n/h/nai_ch/L9Ue1jMREN.png|
 |}
 
+***　タイムボカンシリーズ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|doronjo, yatterman, girl, blonde hair, blue eyes, black leotard, black cape, black elbow gloves, black thigh boots, high heel boots,&#160;standing, |lowres, aliasing,|ヤッターマン|ドロンジョ|V4.5 Curated版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/e6bbbc27ec85462c.png|
+|boyakki, yatterman, boy, emaciated, mask, buck teeth, green shirt, green glove, midriff, green pants, green boots,&#160;standing, |lowres, aliasing,|ヤッターマン|ボヤッキー|V4.5 Curated版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/969a01f7228598ea.png|
+|tonzura, yatterman, boy, muscular, mask, purple shirt, purple glove, midriff, purple pants, purple boots,&#160;standing, |lowres, aliasing,|ヤッターマン|トンズラー|V4.5 Curated版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c96cf12546fd74fb.png|
+|}
+
 ***　D.C.シリーズ(ダカーポシリーズ)
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -412,7 +420,8 @@
 |cheria barnes, tales of graces, purple skirt, pink hair, brown eyes, two side up, hair ribbon, juliet sleeves, frills, dress, wide sleeves, smile, solo, cowboy shot,| |テイルズオブグレイセス|シェリア・バーンズ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/TULs8hcj2e-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/TULs8hcj2e.png]]|
 |estellise sidos heurassein, tales of vesperia, pink hair, blue eyes, short hair, solo, cowboy shot,| |テイルズオブヴェスペリア|エステリーゼ・シデス・ヒュラッセイン|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RBOdzgoIsd-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/RBOdzgoIsd.png]]|
 |tear grants, tales of the abyss, long hair, hair over one eye, blue eyes, light brown hair, detached sleeves, hand on hip, black dress, large breasts, white gloves, solo, cowboy shot,|tears, |テイルズオブジアビス|ティア・グランツ|V3。名前の影響で泣き顔になりやすいのはV3でも変わらず|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mKTfEhDnQj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/mKTfEhDnQj.png]]|
-|{{reala (tales)}}, tales of destiny 2, hair ornament, brown hair, short hair, brown eyes, antenna hair, small breasts, red choker, pink dress, puffy sleeves, short sleeves, ribbon, off shoulder, pendant, sleeveless, parted lips, solo, cowboy shot, ||テイルズオブデスティニー2|リアラ|V3使用。肩ひもの部分が難しいので改善求む|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/smtqDnl9Zx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/smtqDnl9Zx.png]]|
+|reala (tales), tales of destiny 2, game cg, official style, cowboy shot, ||テイルズオブデスティニー2|リアラ|V4.5 Curated|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/e577e29394717c4c-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/e577e29394717c4c.png]]|
+|{{reala (tales)}}, tales of destiny 2, hair ornament, brown hair, short hair, brown eyes, antenna hair, small breasts, red choker, pink dress, puffy sleeves, short sleeves, ribbon, off shoulder, pendant, sleeveless, parted lips, solo, cowboy shot, ||^|^|V3使用。肩ひもの部分が難しいので改善求む|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/smtqDnl9Zx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/smtqDnl9Zx.png]]|
 |official style, game cg, {{presea combatir, tales of symphonia}}, very aesthetic, best quality, intricate, overall detail, 1 girl, twin tails, blue eyes, light smile, simple background, straight-on, facing the front, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, |テイルズ・オブ・シンフォニア|プレセア・コンバティール|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/SaazF4kEFM.png|
 |official style, game cg, {{colette brunel, tales of symphonia}}, very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, light smile, simple background, straight-on, facing the front, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, |テイルズ・オブ・シンフォニア|コレット・ブルーネル|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/vpES3AA3gy.png|
 |{1girl},{{{{{mint adenade}}}}}, {{{tales of phantasia}}},&#40;tales of &#40;series)),&#40;blonde hair),&#40;long hair),{{hair intakes}},&#40;large breasts),&#40;straight hair),&#40;white gloves),&#40;white nurse robe), &#40;cross mark), {{belldandy}},&#40;blue eyes), &#40;&#40;&#40;urtra Quality))), &#40;&#40;Ultra-Detailed)), &#40;&#40;Extremely)), &#40;&#40;Beautiful Detailed Skin)), &#40;Beautiful Detailed Eyes), &#40;Close to Viewer)|ponytail|テイルズオブファンタジア|ミント・アドネード||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tLOFsxKOFN-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tLOFsxKOFN.png]]|
@@ -925,6 +934,9 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
+
+
+
 
 
 
