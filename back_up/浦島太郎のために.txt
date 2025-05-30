@@ -52,6 +52,15 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-05-30 FLUX.1 Kontextが公開される
+https://bfl.ai/models/flux-kontext
+FLUX.1を開発したBlack Forest Labが「FLUX.1 Kontext」を公開した。入力画像をどう変化させるか自然言語で入力するとその通りになる。
+モデルは後日公開されるとのこと。
+
+**2025-05-30 NovelAI Diffusion V4.5 Fullがリリースされる
+[[https://blog.novelai.net/制限なき創作へ-novelai-diffusion-v4-5-full登場-60f2f603a1e8>https://blog.novelai.net/%E5%88%B6%E9%99%90%E3%81%AA%E3%81%8D%E5%89%B5%E4%BD%9C%E3%81%B8-novelai-diffusion-v4-5-full%E7%99%BB%E5%A0%B4-60f2f603a1e8]]
+品質の向上をうたっているほか、英語テキストを画像内に表示するプロンプトが簡易化されるなどの改良がほどこされている。
+
 **2025-05-20 5月23日以降、Civitaiでの支払いにクレジットカードが使えなくなるとのアナウンス
 https://civitai.com/articles/14945
 運営はこれは一時的な措置であるとし、23日までに年間メンバーシップを契約するようすすめているほか、近日中に暗号通貨での支払いにも対応するとしている。
@@ -66,6 +75,7 @@ https://pytorch.org/blog/pytorch-2-7/
 
 PyTorch 2.7はNVIDIAのBlackwellアーキテクチャに対応したバージョンで、GeForce RTX 50x0シリーズも含まれている。
 これで50x0シリーズでの画像・動画生成や学習が問題なくできるようになった。はず。
+
 **2025-04-19 Illustrious XL v2.0、ダウンロード可能に
 https://tensor.art/models/840365567832646761
 https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0/tree/main
@@ -917,6 +927,8 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
 
 
 

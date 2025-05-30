@@ -73,6 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3060|12GB|Core i7-10700|208.3|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |RTX 5090|32GB|Core i9-13900K|31.8|f0.0.17v1.8.0rc-latest-273-gb9705c58||Powerlimit無し+低電圧化+メモリOC|
 |RTX 5090|32GB|Core i9-13900K|33.1|f0.0.17v1.8.0rc-latest-273-gb9705c58||Powerlimit無し|
 |RTX 5090|32GB|Core i9-13900K|35.9|f0.0.17v1.8.0rc-latest-273-gb9705c58||Powerlimit 70%|
