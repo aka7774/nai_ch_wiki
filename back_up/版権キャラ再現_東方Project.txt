@@ -364,6 +364,7 @@
 |1girl, {{junko_(touhou)}}, blonde hair, long hair, {{{empty purple eyes}}}, chinese_clothes, black_dress, long_sleeves, {{{sleeves past wrists, loli}}}, seductive smile, bewitching, seduce, femdom, enraptured, fascinated, arrogance, scared, angry, glaring,||東方ロストワード|名もなき宇宙恐怖~~（ロリ純狐）|V3使用~~作中立ち絵では生足だが、黒タイツやズボンを履いている事が多いので必要なら否定構文を活用。|[[https://image02.seesaawiki.jp/n/h/nai_ch/fRUeLytCK7.png]]|
 |1girl, {{short legs}}, short body, {{green hair}}, wave hair, bangs, hair between eyes, green eyes, beret, {green headwear}, {{two green leaves on the head}}, green leaf, {green capelet} with {{leaf design}}, green shirt with leaf design, long sleeves, {green sleeves}, {{green skirt short in front and long at the back}}, shorts under skirt, yellow shorts, {red obi}, blue sash, boots, {loli}, ||東方自然癒|瀬笈葉|服の模様等の再現は難しく、~~普通に生成するだけでもかなり不安定(葉っぱが緑じゃないなど)~~特に後ろだけ長いスカートの再現が困難~~ブーツを履いている分体が長く見えるのが難点~~(無理に短くすると今度はかえっておかしくなるため)~~なお背景は必ずと言っていいほど葉っぱが入る|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BXXxpdC7Ga-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/BXXxpdC7Ga.png]]|
 |1girl, seoi ha, touhou, green eyes, green hair, green hat, green capelet, green dress, leaf on head, blue sash, loli||^|^|V4 Curated Preview使用~~V4でも不安定|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/nGtxoyBDyU.png)|
+|1girl, seoi ha, touhou, green eyes, green hat, leaf on head, green capelet, green dress, collared dress, yellow skirt, blue sash, brown boots, loli,||^|^|V4.5 Full使用~~特徴のプロンプトは必要だが再現度は高くなった|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6ca3e1638a5dadb3.png)|
 |1girl, ex-rumia, touhou, long hair, black wings, halo, sword, darkness||東方Project|EXルーミア|V4 Curated Preview使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iNdxvSiVHU.png)|
 |1girl, kawashiro mitori (touhou), red eyes, pink hair, hair bobbles, hair ornament, hat, side ponytail, keyhole, red shirt, white skirt, boots, road sign, holding,||東方Project|河城みとり|V4 Curated Preview使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tFkLtkVPvy.png)|
 |1girl, sashiromiya sasha  (touhou),green eyes,blue hair,ahoge,blue yukata,||東方Project|左城宮則紗|V4 Curated Preview使用|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/e_8kvC0Q6A.png)|
@@ -381,6 +382,7 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(150px):ネガティブプロンプト|作品|キャラ|備考|サンプル|
 |}
+
 
 
 
