@@ -1,61 +1,55 @@
-赤ちゃんはここ読むとええでー
+初めての方はこちらを読もう。注意:ここの情報は古くなっている場合あり。
 
 #contents
 
 * このwikiについて
 
-ここは「5chのなんJnovelAI部スレ」(現なんJNVA部)の情報をまとめたwikiなんやで
-スレへの投稿かwikiへの貢献が参加の前提ってこと
-お客様向けに画像生成AIを宣伝・紹介するサイトでは無いしそういうのを想定してた人たちはブラウザバック推奨やで
-だからこのwikiから情報やデータだけ貰って別のところで使う人は想定読者では無いわけよ
+ここは「5chのなんJnovelAI部スレ」(現なんJNVA部)の情報をまとめたwikiである。
+スレへの投稿かwikiへの貢献が参加の前提ということ。
+お客様向けに画像生成AIを宣伝・紹介するサイトでは無いし、そういうのを想定してた人たちはブラウザバックを推奨する。
+だからこのwikiから情報やデータだけ貰って別のところで使う人は想定読者では無い。
 
 * おやくそく
 
-生成した絵は自分と仲間内だけで楽しむのがええで
+生成した絵は自分と仲間内だけで楽しむのがいい。
 
-- スレやwikiに貼るのは歓迎やで
-- スレやwikiの情報をSNSに貼るのは遠慮してくれ
-- アンチがいる理由とか売ってお金にすることの問題点とか調べてや
+- スレやwikiに共有するのは歓迎
+- スレやwikiの情報をSNSに貼るのはダメ
+- 反対派がいる理由や売ってお金にすることの問題点は各自調べるように
 -- 議論する気はないのでここには書きません
 
 難しくて手間がかかることは覚悟して
 
-- 基本的にお客様向けのサービスちゃうで
+- 基本的にお客様向けのサービスではない
 - ゲームのModをいじるくらいには難しい
 - [[エラーが出て困ったときは？]]
 
-あと、太い回線が必要やで(スマホのテザリングとかでは無理や)
+大容量ファイルのDLが多いため、高速なインターネット回線が必要(スマホのテザリングでは無理)
 
 * AIイラストを生成する方法
 
-結論から言うとNovelAIを利用するかAUTOMATIC1111 Stable Diffusion WebUIを入れればいい。
+結論から言うとNovelAIを利用するかstable-diffusion-webui-reForgeを入れればいい。
 
 ** NovelAIに課金する(おすすめ度:★★★)
 
 https://novelai.net/
 
 - 英語
-- %%古い%% SDXLベースのV3が出た
+- 独自開発のV4
 - NSFW対応
 - 10ドルから(無料プラン無し)
 
-%%むかし流行って、今でもご先祖様的に扱われてる、とだけ覚えとけば触らんでもええと思う%%
-%%2023年11月に高性能なSDXLベースのV3が出たことで再び流行してる模様%%
-と思ったらローカルでまともなアニメモデルが出た影響で流行は終わったみたいやな
-特にこだわりもなくただ単に絵を生成したいだけならNovelAIで十分。
+特にこだわりもなくただ単にイラストを生成したいだけならNovelAIで十分。
 
 *** NovelAI以外のサービス
 
-いろいろあるから好きなの選ぶといいけど叡智なやつはNovelAIしか出せません
+いろいろあるから好きなの選ぶといいけど成人向けコンテンツはNovelAIしか出せません。
+そのかわりにNovelAIより万人向けで高品質です。
 
-- Midjourney
--- https://www.midjourney.com/home
-- DALL-E 3
--- https://openai.com/index/dall-e-3/
+- ChatGPT
 - Bing Image Creator
--- https://www.bing.com/images/create
-- Grok 2
--- twitterについてるやつ(有料)
+- Grok
+- Google Gemini 2.5 Flash Image(Nano banana)
 
 ** なんかをインストールする(おすすめ度:★★★)
 
@@ -64,24 +58,24 @@ https://novelai.net/
 まずは[[ローカルの導入方法]]の簡易インストールが楽ちん。
 今はもっといろんな入れ方があるかも？
 
-*** 2024年10月現在の選択肢
+*** 2025年9月現在の選択肢
 
-- 本家
--- あんまり更新が無い
+- stable-diffusion-reForge
+-- SD1,SDXLで生成するだけならこれ一択
+-- https://github.com/Panchovix/stable-diffusion-webui-reForge
+- ComfyUI
+-- 素人にはおすすめできないが最新のAIを使いたいならこれ
+-- https://github.com/comfyanonymous/ComfyUI
+- AUTOMATIC1111 Stable Diffusion WebUI
+-- 2024年10月を最後に更新停止(事実上のサ終)
 -- https://github.com/AUTOMATIC1111/stable-diffusion-webui
-- forgeの最新版
+- stable-diffusion-webui-forge
 -- 更新が頻繁で対応機能が少ない
 -- https://github.com/lllyasviel/stable-diffusion-webui-forge
 - 古いforge
 -- forge入れてから git checkout -b old-stable 29be1da7cf2b5dccfc70fbdd33eb35c56a31ffb7
 -- 古いextensionとかが動くかも
 -- エラー出るかも
-- reforge
--- 古いforgeのかわり
--- https://github.com/Panchovix/stable-diffusion-webui-reForge
-- ComfyUI
--- 素人にはおすすめできない
--- https://github.com/comfyanonymous/ComfyUI
 
 
 
@@ -130,48 +124,31 @@ https://novelai.net/
 最近はDiscordサーバに導入できるbotもある。
 NSFWがいけるかどうかはよく調べてな。
 
-** NMKDを使う(おすすめ度:★☆☆)
+** Stability Matrixを使う(おすすめ度:★★☆)
+https://github.com/LykosAI/StabilityMatrix
+いろんな生成AIの環境を一元管理できる
 
-https://nmkd.itch.io/t2i-gui
-1111とは別のWindowsアプリ。
-画像生成の雰囲気を掴める。
+** Foooocus(おすすめ度:★☆☆)
+簡単だが難しいことはできない
 
-- インストールが簡単で、コマンドプロンプトを使う作業が少ない
-- RadeonやVRAM 4GBの環境でも動かせるオプションがある
-- 1111と互換性は無いが、1111用のモデルやプロンプトを変換する機能がある
-
-- LoRAや1111のextensionなどは使えないので機能は限定的
-- 掲示板等で情報交換できるほどのシェアは無い
-
-具体的な手順は、としあきが詳しい。
-
-** Foooocus
-
-わからん
 [END]
 
 * 最初に使うモデル
-ここから下はローカルでやるニキ向けの情報や
+ここから下はローカルでやる人向けの情報。
 
 モデルの詳しい説明は[[Models]]に書いてある。
 
-*** 2024年10月現在の選択肢
-
-- Animagine XL 3.1
--- 綺麗めな立ち絵がすぐ出るけど表現の幅が狭い
--- 2024年春の主流ってイメージ
-- Pony系
--- 頑張ればいろいろ出せる
--- 派生モデルがいろいろある
--- 2024年夏の主流ってイメージ
-- SD3
--- がんばれ
-- FLUX
+*** 2025年9月現在の選択肢
+- Illustrious-XL(SDXL)
+-- アニメモデルでいろいろ出せる
+-- 2025年の主流
+- FLUX.1
 -- 精細な画像が出る
--- 重かったけど軽くなった？
-- Illustrious
--- いろいろ出せる
--- 2024年秋の主流になるかもってイメージ
+-- 重い
+- Qwen-Image
+-- FLUX.1より高性能
+-- だが超重い
+
 - SD1.5
 -- 陳腐化したけど軽いからGPUが乏しいならここから試してもいいと思う
 
@@ -182,7 +159,7 @@ https://nmkd.itch.io/t2i-gui
 ** Animagine XL 3.0
 - https://huggingface.co/cagliostrolab/animagine-xl-3.0
 - SDXLベースで高品質
-- LoRAが無くてもそれなりに版権キャラが出せる
+- データセットが大きく偏っていてソシャゲキャラしか出せない
 現在本スレで人気なのはこれ。
 PonyDiffusion V6 XLと言うのもスレで人気だが癖が強いので慣れてからのほうがいい
 
@@ -224,8 +201,8 @@ AOM3が出てる(未評価)
 最近はプロンプトの役割を減らす方向だけど、基礎なので慣れておきましょう。
 
 - このwiki
-- majinaiほかAI絵投稿サイト
-- 元素法典 [[各言語・国別技術]] ただし内容は古い
+- Civitai
+- 元素法典 [[各言語・国別技術]] ただし内容はとても古い
 
 ** 学習(難しさ:★★★☆☆〜★★★★★)
 
@@ -234,8 +211,7 @@ AOM3が出てる(未評価)
 LoRAが主流。kohya-ss氏作成のsd-scriptsを別途インストールする。
 PCの性能がいる。
 
-- 最初は[[あかちゃんLoRAノートブック>kohya_train_network_simple]]がおすすめ。
-- 慣れたら[[Dreambooth-LoRA]]を見て頑張る。
+- LoRAが主流。[[Dreambooth-LoRA]]を見て頑張れ。
 
 DreamBoothとTextual Inversionはsd-scriptsで出来る。
 HyperNetworkは遅いし発散しやすいしDying Reluで死ぬし、性能もLoRAの足元にも及ばないのでやる価値はない。

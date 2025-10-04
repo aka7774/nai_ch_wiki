@@ -1,0 +1,167 @@
+#contents
+*制服
+&aname(clothes_uniform_occupation)
+** 一般職業(V4.5版)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|||||
+|従業員（ローソン風）|ローソン風の衣装。セブンイレブンやファミリーマートはV4.5までは再現できず|employee uniform, lawson,|https://image01.seesaawiki.jp/n/h/nai_ch/02a2d05d94e6eae6.png|
+|従業員||employee uniform,|https://image02.seesaawiki.jp/n/h/nai_ch/e56a9b38b3c6ecc6.png|
+|看護師|白やピンクのユニフォーム、ナースキャップが特徴。|nurse, nurse_uniform, white_dress, nurse_cap|https://image01.seesaawiki.jp/n/h/nai_ch/75ec8e284ef719f7.png|
+|医者|白衣とフォーマルな服装が特徴。|doctor, doctor_coat, white_coat|https://image02.seesaawiki.jp/n/h/nai_ch/c66fd80103be0663.png|
+|スクラブ着|医療従事者のカジュアルな手術着。|scrubs, medical_uniform|https://image02.seesaawiki.jp/n/h/nai_ch/b1fc80b40e435b6d.png|
+|幼稚園教諭|エプロンやカジュアルな服が特徴。|kindergarten_teacher, apron|https://image02.seesaawiki.jp/n/h/nai_ch/0d039253116b5506.png|
+|メイド|フリル付きの黒と白のドレスが特徴。|maid, maid_uniform, frilled_dress|https://image02.seesaawiki.jp/n/h/nai_ch/dac161b4bfa1d7c1.png|
+|ウェイトレス|レストランやカフェの軽いユニフォーム。|waitress, waitress_uniform, apron|https://image01.seesaawiki.jp/n/h/nai_ch/b7167ac4139362ce.png|
+|シェフ|コックコートと帽子が特徴。|chef, chef_uniform, cook_coat, chef_hat|https://image02.seesaawiki.jp/n/h/nai_ch/90201a6279c8b3c0.png|
+|バーテンダー|ベストや蝶ネクタイが特徴。|bartender, bartender_uniform, vest, bowtie|https://image02.seesaawiki.jp/n/h/nai_ch/118090e830e7c26a.png|
+|ソムリエ|フォーマルな黒のスーツが特徴。|sommelier, sommelier_uniform, suit|https://image01.seesaawiki.jp/n/h/nai_ch/b1da43d9a9098f03.png|
+|受付係|スーツやエレガントな制服。|receptionist, receptionist_uniform, suit|https://image01.seesaawiki.jp/n/h/nai_ch/8b591d246a510e51.png|
+|理容師|エプロンや作業服が特徴。|barber, barber_uniform, apron|https://image02.seesaawiki.jp/n/h/nai_ch/850de48e3e88872e.png|
+|花屋|エプロンやカジュアルな服が特徴。|florist, florist_uniform, apron|https://image02.seesaawiki.jp/n/h/nai_ch/1c3d8cc62022fc3f.png|
+|パン屋|エプロンや白い作業服が特徴。|baker, baker_uniform, apron|https://image01.seesaawiki.jp/n/h/nai_ch/5926c83f8e2184d3.png|
+|警察|青や黒のジャケットと帽子が特徴。|police, police_uniform, blue_jacket, police_hat|https://image02.seesaawiki.jp/n/h/nai_ch/dac9b21abf916ddb.png|
+|交通警察|反射材付きの青い制服。|traffic_police, traffic_police_uniform, reflective_vest|https://image01.seesaawiki.jp/n/h/nai_ch/41873e8f3b0a4cad.png|
+|消防|赤や黄色の耐火性ユニフォーム。|firefighter, firefighter_uniform, red_jacket|https://image02.seesaawiki.jp/n/h/nai_ch/6d2c21fc86d7adff.png|
+|警備員|ジャケットや帽子が特徴。|security, security_uniform, jacket|https://image01.seesaawiki.jp/n/h/nai_ch/ad6313fd870f4d60.png|
+|公園管理人|カジュアルな作業服が特徴。|park_ranger, park_ranger_uniform|https://image02.seesaawiki.jp/n/h/nai_ch/6229cb6715191b3d.png|
+|キャビンアテンダント|航空会社のエレガントな制服。|flight_attendant, flight_attendant_uniform|https://image01.seesaawiki.jp/n/h/nai_ch/c973491133cf96e6.png|
+|パイロット|テストパイロットのような服装になる。|pilot, pilot_uniform,|https://image01.seesaawiki.jp/n/h/nai_ch/f436e6196957b5a6.png|
+|車掌|鉄道の帽子付きユニフォーム。|train_conductor, train_conductor_uniform, hat|https://image01.seesaawiki.jp/n/h/nai_ch/0d0026750f03c581.png|
+|船長|フォーマルな帽子付き制服。|ship_captain, captain_uniform, hat|https://image02.seesaawiki.jp/n/h/nai_ch/b3946d024231e637.png|
+|建設作業員|ヘルメットと作業服が特徴。|construction_worker, construction_uniform, helmet|https://image01.seesaawiki.jp/n/h/nai_ch/40ed0a8a350f2ea9.png|
+|エンジニア|作業服やスーツが特徴。|engineer, engineer_uniform|https://image01.seesaawiki.jp/n/h/nai_ch/f63ba050c8caa586.png|
+|実験着|科学者の白衣が特徴。|lab_coat, scientist_uniform|https://image01.seesaawiki.jp/n/h/nai_ch/b11f797006930fa3.png|
+|巫女|白と赤の伝統的な神社服。|miko, shrine_maiden, white_kimono, red_hakama|https://image02.seesaawiki.jp/n/h/nai_ch/04f236070b1887be.png|
+|修道女|黒や白の宗教的な服。|nun, nun_uniform, habit|https://image01.seesaawiki.jp/n/h/nai_ch/5768f14161f9de3f.png|
+|司祭|宗教的なローブが特徴。|priest, priest_robe|https://image01.seesaawiki.jp/n/h/nai_ch/75685a5e535ea81e.png|
+|シャーマン|儀式用の伝統衣装。|shaman, shaman_clothing|https://image02.seesaawiki.jp/n/h/nai_ch/7ab08f9510fc630b.png|
+|アイドル|ステージ用の派手な制服。いろんなアイドルの服がランダムで出るので細かい指定をするのがおすすめ|idol, idol_uniform|https://image01.seesaawiki.jp/n/h/nai_ch/d7eed837d3dc589f.png|
+|審判|ストライプ柄のスポーツ服。|referee, referee_uniform, striped_shirt|https://image01.seesaawiki.jp/n/h/nai_ch/96c48794b2bb8f7d.png|
+|ピエロ|派手なメイクと衣装が特徴。本来の名称はクラウン（道化師）※ピエロには涙のメイクがある。|clown, clown_costume|https://image01.seesaawiki.jp/n/h/nai_ch/f4220f9cf83a5c02.png|
+|マジシャン|ステージ用の派手な衣装。|magician, magician_costume|https://image01.seesaawiki.jp/n/h/nai_ch/5d3c41b66535fd0a.png|
+|サーカス団員|派手なパフォーマンス衣装。|circus, circus_uniform|https://image01.seesaawiki.jp/n/h/nai_ch/5eba7fd1a23a1742.png|
+|ダンサー|ステージ用の動きやすい服。|dancer, dancer_uniform|https://image01.seesaawiki.jp/n/h/nai_ch/a3bfb269c122c128.png|
+|スタントマン|保護用の作業服。|stuntman, stuntman_uniform|https://image02.seesaawiki.jp/n/h/nai_ch/01e1a3459acd6aee.png|
+|宅配員|企業ロゴ入りの作業服。|delivery, delivery_uniform,uber|https://image01.seesaawiki.jp/n/h/nai_ch/571fe5b05dea8fb2.png|
+|農家|オーバーオールや作業服。|farmer, farmer_uniform, overalls|https://image02.seesaawiki.jp/n/h/nai_ch/c676199217662e5e.png|
+|観光ガイド|ロゴ入りユニフォーム。|tour_guide, tour_guide_uniform|https://image01.seesaawiki.jp/n/h/nai_ch/3423fafeb93c0c36.png|
+|宇宙飛行士|白や銀の宇宙服。|astronaut, astronaut_suit|https://image02.seesaawiki.jp/n/h/nai_ch/e4041922b3c03f97.png|
+|ライフガード|水着や赤い制服が特徴。|lifeguard, lifeguard_uniform|https://image02.seesaawiki.jp/n/h/nai_ch/28729b07db9e98ef.png|
+|ダイバー|ウェットスーツや潜水服。|diver, diver_suit,snorkel,|https://image02.seesaawiki.jp/n/h/nai_ch/202b228198088483.png|
+|レーサー|いろんなドライバースーツが出力されるのでガチャ。|racing, racing_uniform|https://image02.seesaawiki.jp/n/h/nai_ch/f9714fa11133aaa4.png|
+|執事|黒のタキシードが特徴。|butler, butler_uniform, tuxedo|https://image01.seesaawiki.jp/n/h/nai_ch/c58a587d48c2b282.png|
+|レジ係|エプロンやロゴ入り服。|cashier, cashier_uniform|https://image01.seesaawiki.jp/n/h/nai_ch/f6f166f92cdc5c46.png|
+|}
+[END]
+
+&aname(clothes_uniform_military)
+** 実在するもしくは過去に存在した組織の軍服(V4.5版)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|ソビエト連邦軍制服|通称「赤軍」。|soviet army, military dress uniform, peaked cap, jacket, necktie, pants, boots, |https://image01.seesaawiki.jp/n/h/nai_ch/ec60e9dd3d8de141.png|
+|親衛隊（ナチス）制服|Schutzstaffel (略称：SS)の制服。 |ss uniform, military dress uniform, peaked cap, jacket, necktie, armband, pants, boots, |https://image01.seesaawiki.jp/n/h/nai_ch/4754c71e94e507c2.png|
+|英国陸軍（ナポレオン戦争時）|18世紀頃の軍服。|british army, white feather, black hat, epaulettes, red coat, white pants, |https://image01.seesaawiki.jp/n/h/nai_ch/7bc54e7250257a01.png|
+|海上自衛隊(第１種夏制服）|細かいところまでは再現できない。男性用は階級でデザインが異なるが、女性は幹部も士も同じ。|japan maritime self-defense force, military dress uniform, white cap, white jacket, necktie, white skirt, white shoes, -3.0::belt::, |https://image02.seesaawiki.jp/n/h/nai_ch/f8a64a7d82bd29cf.png|
+|戦闘服|迷彩柄の一般的な戦闘服。|military combat uniform, woodland camouflage print, combat helmet, jacket, pants, boots, ammunition pouch, back pack, gun sling, holing rifle, |https://image01.seesaawiki.jp/n/h/nai_ch/8ea8a8c304004c11.png|
+|第101空挺師団 (アメリカ軍)|それっぽく作っているだけ。詳しい人が見たらツッコミどころがいっぱいある。|101st airborne, military combat uniform, combat helmet, jacket, pants, boots, ammunition pouch, back pack, gun sling, holing rifle, |https://image02.seesaawiki.jp/n/h/nai_ch/72a0fae7a7a8a515.png|
+|}
+[END]
+
+&aname(clothes_uniform_military_fiction)
+** フィクションに登場する軍服・戦闘服(V4.5版)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|時空管理局次元航行部隊制服|魔法少女リリカルなのはシリーズ。|tsab naval military uniform, mahou shoujo lyrical nanoha strikers, blue jacket, blue skirt,|https://image01.seesaawiki.jp/n/h/nai_ch/be6393fa9a5f2a21.png|
+|時空管理局地上部隊制服|魔法少女リリカルなのはStrikerSより。|tsab ground military uniform, mahou shoujo lyrical nanoha strikers, brown jacket, brown skirt,|https://image01.seesaawiki.jp/n/h/nai_ch/bdd598b88dc6162f.png|
+|時空管理局執務官制服|魔法少女リリカルなのはStrikerSより。|tsab executive military uniform, mahou shoujo lyrical nanoha strikers, black jacket, black skirt,|https://image02.seesaawiki.jp/n/h/nai_ch/9d58e2c824295866.png|
+|時空管理局航空隊制服|魔法少女リリカルなのはStrikerSより。|tsab air military uniform, mahou shoujo lyrical nanoha strikers,|https://image02.seesaawiki.jp/n/h/nai_ch/319cd621d694a4ee.png|
+|マーレ国軍制服|進撃の巨人より。|marley military uniform, shingeki no kyojin, white jacket, red necktie, armband, white pants, boots, |https://image02.seesaawiki.jp/n/h/nai_ch/4ff94b205a2f06b0.png|
+|兵団制服|進撃の巨人より。|paradis military uniform, shingeki no kyojin, shirt, |https://image01.seesaawiki.jp/n/h/nai_ch/8e13658f76e191a3.png|
+|グリフィン＆クルーガー制服|ドールズフロントラインより。グリフィン＆クルーガーは民間軍事会社。|griffin & kryuger military uniform, girls' frontline, cap, coat, boots, -3.0::bare legs::, |https://image02.seesaawiki.jp/n/h/nai_ch/b5475de039d2eea2.png|
+|アメストリス軍制服|鋼の錬金術師より。|amestris military uniform, fullmetal alchemist,|https://image02.seesaawiki.jp/n/h/nai_ch/17979c58389c7cb8.png|
+|テストプラグスーツ|ヱヴァンゲリヲン新劇場版:破より。|test plugsuit (evangelion), interface headset (evangelion), souryuu asuka langley (cosplay)&#160;,|https://image01.seesaawiki.jp/n/h/nai_ch/871c1033d201855e.png|
+|プラグスーツ（真希波・マリ・イラストリアス）|ヱヴァンゲリヲン新劇場版:破より。|plugsuit (evangelion), interface headset (evangelion), makinami mari illustrious (cosplay)&#160;,|https://image02.seesaawiki.jp/n/h/nai_ch/a484d0bd9ce540ef.png|
+|プラグスーツ（綾波レイ）|新世紀エヴァンゲリオンより。|plugsuit (evangelion), interface headset (evangelion), ayanami rei (cosplay)&#160;, |https://image02.seesaawiki.jp/n/h/nai_ch/f531e95dea94358c.png|
+|プラグスーツ（惣流・アスカ・ラングレー）|新世紀エヴァンゲリオンより。|plugsuit (evangelion), interface headset (evangelion), souryuu asuka langley (cosplay)&#160;, |https://image02.seesaawiki.jp/n/h/nai_ch/ea75c5fc1ac83685.png|
+|パラサイトスーツ|ダーリン・イン・ザ・フランキスより。キャラ固有のものとして出すなら、そのキャラのコスプレと指定すれば良い。|parasite suit (darling in the franxx), darling in the franxx, white bodysuit,|https://image01.seesaawiki.jp/n/h/nai_ch/3dc4cf17692e05c6.png|
+|モーションスリット|スカイガールズ|motion slit, sky girls, purple bodysuit, |https://image02.seesaawiki.jp/n/h/nai_ch/c18c18d4f765124f.png|
+|モビルトレーススーツ（アレンビー・ビアズリー）|機動武闘伝Gガンダムより。|mobile trace suit, allenby beardsley (cosplay),|https://image01.seesaawiki.jp/n/h/nai_ch/25c34339771475ec.png|
+|モビルトレーススーツ（レイン・ミカムラ）|機動武闘伝Gガンダムより。キャラごとに固有のデザインなので、キャラのコスプレとして出している。|mobile trace suit, rain mikamura (cosplay),|https://image01.seesaawiki.jp/n/h/nai_ch/2e2e4eafb9cbf016.png|
+|衛士強化装備|マブラヴ オルタネイティヴ|fortified suit, muv-luv alternative,|https://image01.seesaawiki.jp/n/h/nai_ch/7962c6e19ac3d2c4.png|
+|ノーマルスーツ|機動戦士ガンダム|normal suit (gundam), mobile suit gundam, green bodysuit, |https://image01.seesaawiki.jp/n/h/nai_ch/3c3de87fdf371431.png|
+|}
+[END]
+
+&aname(clothes_uniform_school)
+** 学校制服、部活ユニホーム(V4.5版)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|幼稚園エプロン|保育園・幼稚園で使われるエプロン型の制服。明るい色とシンプルなデザインが特徴。|kindergarten_apron, bright_colors, simple_design|https://image02.seesaawiki.jp/n/h/nai_ch/410b575f7cbd249c.png|
+|幼稚園スモック|子供用の簡単なスモック型制服。動きやすさと汚れ防止を考慮したデザイン。|kindergarten_smock, loose_fit, protective_design|https://image02.seesaawiki.jp/n/h/nai_ch/a13d9cc8a780d036.png|
+|幼稚園ジャンプスーツ|動きやすい全身型の幼稚園制服。カジュアルで遊びやすい。|loli,kindergarten_jumpsuit, casual,|https://image02.seesaawiki.jp/n/h/nai_ch/597c2112136e268f.png|
+|小学生カジュアル|日常的な子供用カジュアル服（Tシャツ、短パン）。|elementary_casual, t_shirt, shorts,|https://image02.seesaawiki.jp/n/h/nai_ch/74f124caf39290cf.png|
+|小学生ジャケット|小学生向けの軽量で可愛いジャケット。|child,lightweight_jacket, cute_design |https://image02.seesaawiki.jp/n/h/nai_ch/2c334aa04027eedd.png|
+|ピナフォアドレス|エプロン状の前掛け付きのワンピース。|pinafore_dress,|https://image02.seesaawiki.jp/n/h/nai_ch/4b915968de01ff70.png|
+|セーラー服|日本の女子学生に多い伝統的なセーラー服。短めスカート。|serafuku, school_uniform, pleated_skirt,|https://image02.seesaawiki.jp/n/h/nai_ch/0c23241bf0c71b17.png|
+|セーラー服(夏服)|日本の女子学生に多い伝統的なセーラー服。短めスカート。|serafuku, school_uniform, pleated_skirt, white shirt,short sleeves, |https://image01.seesaawiki.jp/n/h/nai_ch/0bee5b07169626bb.png|
+|セーラー服(冬服)|日本の女子学生に多い伝統的なセーラー服。短めスカート。|serafuku, school_uniform, pleated_skirt, dark shirt,long sleeves, |https://image02.seesaawiki.jp/n/h/nai_ch/76a6f5b404ad7d8b.png|
+|ブレザー|学校制服として使われるブレザー。短めから長めまで、ボタン数や色（紺、黒、グレー）で多様。|blazer, school_uniform,|https://image02.seesaawiki.jp/n/h/nai_ch/45ce3070433959be.png|
+|詰襟|日本の男子学生の伝統的な詰襟学生服。黒や紺が主流。|gakuran, school_uniform, black_jacket, stiff_collar|https://image02.seesaawiki.jp/n/h/nai_ch/6fafd645febd78c5.png|
+|ジャージ上下|スポーツやカジュアルに使われる上下セットのジャージ。グレーや黒、ネイビーが主流でコットン素材。|tracksuit, full_set, cotton_fabric, navy_color,|https://image02.seesaawiki.jp/n/h/nai_ch/9bf7e22222854ed3.png|
+|ボトムレイヤード(埴輪ルック)|最近の女子ファッションで、スカートの下にジャージパンツを着たレイヤードスタイル。プリーツスカートとジャージのコントラストが特徴。|pleated_skirt, tracksuit_pants, layered_clothing, casual_style|https://image01.seesaawiki.jp/n/h/nai_ch/4a6528301e81e824.png|
+|ベスト|ブレザーに合わせるベスト型制服。|vest, school_uniform, formal_accent|https://image02.seesaawiki.jp/n/h/nai_ch/a79defab14a3a565.png|
+|女子高校生制服＋カーディガン|女子高校生のセーラー服にカーディガンを重ねたスタイル。セーラー服は紺や白、カーディガンは柔らかい色（グレー、ベージュ）でレイヤード感が特徴。|serafuku, cardigan, school_uniform, pleated_skirt, layered_design, soft_colors|https://image02.seesaawiki.jp/n/h/nai_ch/89c1f98e8389c263.png|
+|チアリーダー|制服風のチアリーダー衣装。明るく元気なデザイン。|cheerleader, school_uniform, bright_colors, pom_poms|https://image02.seesaawiki.jp/n/h/nai_ch/3c5f67f5ed05402c.png|
+|体操服|学生用の体育用制服。|gym_uniform, buruma|https://image01.seesaawiki.jp/n/h/nai_ch/22361bacb0872c23.png|
+|野球ユニフォーム|野球部の伝統的なユニフォーム。白とチームカラーが特徴。|baseball_uniform, baseball_cap,sportswear, white_jersey, team_colors|https://image02.seesaawiki.jp/n/h/nai_ch/5be26fec673bbe7a.png|
+|サッカーユニフォーム|サッカー部のスポーツユニフォーム。軽量で通気性あり。|soccer_uniform, sportswear, lightweight_jersey, breathable_fabric|https://image01.seesaawiki.jp/n/h/nai_ch/27ac3dd35c3ca0ca.png|
+|バスケットボールユニフォーム|バスケ部のユニフォーム。動きやすさとデザイン性。|basketball_uniform, sportswear, loose_tank_top, dynamic_colors|https://image01.seesaawiki.jp/n/h/nai_ch/9e619202fe558157.png|
+|バレーボールユニフォーム|バレー部のユニフォーム。短パンとジャージが主流。|volleyball_uniform, sportswear, shorts, jersey_top|https://image02.seesaawiki.jp/n/h/nai_ch/f8e0b18eb8131b77.png|
+|陸上ユニフォーム|陸上競技用の軽量ユニフォーム。スピード感を強調。|track_uniform, sportswear, lightweight_fabric, aerodynamic_design|https://image02.seesaawiki.jp/n/h/nai_ch/6178817f5c6ec625.png|
+|テニスユニフォーム|テニス部のスポーツウェア。白や明るい色が特徴。|tennis_uniform, sportswear, white_outfit, bright_accents|https://image01.seesaawiki.jp/n/h/nai_ch/8b11926b429fa17a.png|
+|剣道着|剣道部の伝統的な道着。黒のシンプルなデザイン。|kendo_uniform, traditional, black, loose_fit|https://image02.seesaawiki.jp/n/h/nai_ch/512ace6fb523575c.png|
+|柔道着|柔道部の伝統的な道着。白が主流で動きやすさ重視。|judo_uniform, traditional, white_robe, loose_fit|https://image02.seesaawiki.jp/n/h/nai_ch/9c86a6cedcfb716f.png|
+|水泳水着|水泳部の競技用水着。速乾性とフィット感が特徴。|swimwear, sportswear, tight_fit, quick_dry_fabric|https://image01.seesaawiki.jp/n/h/nai_ch/847ac23ba075f6dc.png|
+|卓球ユニフォーム|卓球部のシンプルなスポーツウェア。動きやすさを重視。|table_tennis_uniform, sportswear, lightweight_shirt, shorts|https://image01.seesaawiki.jp/n/h/nai_ch/f49811e5e4c03333.png|
+|バドミントンユニフォーム|バドミントン部のユニフォーム。(あんまり学習していないのでガチャ運高い)|badminton_uniform, small badminton_racket, sportswear, breathable_fabric, short_sleeves|https://image01.seesaawiki.jp/n/h/nai_ch/51ddbc782259066f.png|
+|ラグビーユニフォーム|ラグビー部の頑丈なユニフォーム。パッド入り。|rugby_uniform, rugby_ball,sportswear, padded_jersey, durable_fabric|https://image01.seesaawiki.jp/n/h/nai_ch/ad4bc8c43a4f7011.png|
+|フェンシングユニフォーム|フェンシング部の防具付きユニフォーム。白が主流。|fencing_uniform, sportswear, white_suit, protective_gear|https://image02.seesaawiki.jp/n/h/nai_ch/f65cf9310f76b6bd.png|
+|ゴルフユニフォーム|ゴルフ部のカジュアルスポーツウェア。ポロシャツが特徴。|golf_uniform, sportswear, polo_shirt, casual_pants|https://image01.seesaawiki.jp/n/h/nai_ch/c0322cb76f9e5657.png|
+|体操ユニフォーム|体操部のレオタードやユニフォーム。伸縮性あり。|gymnastics_uniform, sportswear, leotard, stretch_fabric|https://image01.seesaawiki.jp/n/h/nai_ch/8a5058f0d5858b69.png|
+|マーチングバンド部|マーチングバンドのユニフォーム。|marching_band_uniform,|https://image02.seesaawiki.jp/n/h/nai_ch/6495e825ad59e2d2.png|
+|サイクリング部|サイクリング用のユニフォーム。通気性とフィット感があり、ポリエステル素材でカラフルなデザインが特徴。|cycling_uniform, sportswear, |https://image01.seesaawiki.jp/n/h/nai_ch/a86bf09d9275c86b.png|
+|スキー部|明るい色や白のシンプルなデザイン。|ski_uniform, snow_sports, bright_colors|https://image02.seesaawiki.jp/n/h/nai_ch/ae66d31f26ee522e.png|
+|美術部|エプロンやカジュアルなシャツのデザインが特徴。|art_club_uniform, apron, casual_shirt,paintbrush ,palette,|https://image01.seesaawiki.jp/n/h/nai_ch/fa4aee249ab78a7a.png|
+|茶道部|着物や袴、落ち着いた色のデザインが特徴。|tea_ceremony_outfit, kimono, hakama, subdued_colors|https://image01.seesaawiki.jp/n/h/nai_ch/a88ead8f47506d6e.png|
+|写真部|カジュアルなジャケットやベストのデザインが特徴。※Nikonカメラだと再現度高い|photo_club_uniform, jacket, vest,nikon camera,|https://image01.seesaawiki.jp/n/h/nai_ch/273f7e939e942a05.png|
+|バトントワリング部|スパンコールやフリンジの華やかなデザインが特徴。|baton_twirling_uniform, sportswear, sequins, fringe|https://image01.seesaawiki.jp/n/h/nai_ch/72d823299850b54b.png|
+|弓道部|黒や紺の上着と袴の伝統的なデザインが特徴。弓で狙うポーズはaiming,|kyudo_uniform, female_kyudo,traditional_clothing, white_jacket, hakama,aiming,|https://image02.seesaawiki.jp/n/h/nai_ch/d75f98953bd6136d.png|
+|教員制服|教師用のフォーマルな服装。スーツが主流。|teacher_uniform, formal, formal_suit,name_tag|https://image02.seesaawiki.jp/n/h/nai_ch/95ddcc01ac023dc6.png|
+|卒業式袴|日本の卒業式で女性が着る袴。色とりどりの着物と袴。|graduation_hakama, traditional, colorful_kimono, hakama|https://image01.seesaawiki.jp/n/h/nai_ch/bfcafa5a8d86ea83.png|
+|}
+[END]
+
+&aname(clothes_uniform_school_fiction)
+** フィクションに登場する学校制服(V4.5版)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|星翔音楽学園女子制服|少女☆歌劇レヴュースタァライトより。タイトルを入れないと再現できないが、絵柄に影響する。|seishou music academy uniform, shoujo kageki revue starlight, jacket, skirt,|https://image01.seesaawiki.jp/n/h/nai_ch/44541e9969c6a316.png|
+|鳳学園女子制服|少女革命ウテナより。タイトルを入れないと再現できないが、絵柄に影響する。|ootori gakuen school uniform, shoujo kakumei utena, shirt, skirt,|https://image01.seesaawiki.jp/n/h/nai_ch/bf5da5fc606c3947.png|
+|聖夜学園女子制服|しゅごキャラ！より。タイトルを入れないと再現できないが、絵柄に影響する。|seiyo academy school uniform, shugo chara!, |https://image01.seesaawiki.jp/n/h/nai_ch/c0552c6cccace0d5.png|
+|イーデン校女子制服|SPY×FAMILYより。タイトルを入れないと再現できないが、絵柄に影響する。|eden academy school uniform, spy x family, |https://image02.seesaawiki.jp/n/h/nai_ch/90883957bd9abec8.png|
+|大橋高校女子制服|とらドラ！より。タイトルを入れないと再現できないが、絵柄に影響する。|oohashi high school uniform, toradora!,|https://image02.seesaawiki.jp/n/h/nai_ch/1a168535bd00ce03.png|
+|新大島学園制服|ビビッドレッド・オペレーションより。タイトルを入れないと再現できないが、絵柄に影響する。|national shin ooshima school uniform, vividred operation, |https://image02.seesaawiki.jp/n/h/nai_ch/c3523dc758117f51.png|
+|七森中学校制服(女子校なので女子制服のみ)|ゆるゆり|nanamori school uniform, white shirt, red dress, |https://image02.seesaawiki.jp/n/h/nai_ch/321e8faccb6b2b2b.png|
+|デュエルアカデミア女子制服|遊戯王5D's|duel academy uniform (yu-gi-oh! 5d's)&#160;, red jacket, black skirt, |https://image02.seesaawiki.jp/n/h/nai_ch/d38bfed59607796d.png|
+|デュエルアカデミア女子制服|遊戯王GX|duel academy uniform (yu-gi-oh! gx), sleeveless jacket, skirt, blue gloves, |https://image02.seesaawiki.jp/n/h/nai_ch/3848a66551f94d9a.png|
+|IS学園女子制服|IS＜インフィニット・ストラトス＞|infinite stratos academy school uniform, |https://image02.seesaawiki.jp/n/h/nai_ch/df119fcb7afc0cc6.png|
+|桜が丘女子高等学校制服（夏制服）|けいおん！|sakuragaoka high school uniform, summer uniform, yellow vest, red neck ribbon, shirt, skirt, |https://image01.seesaawiki.jp/n/h/nai_ch/b738ac602e80febf.png|
+|桜が丘女子高等学校制服（冬制服）|けいおん！|sakuragaoka high school uniform, winter uniform, jacket, red neck ribbon, shirt, skirt, |https://image02.seesaawiki.jp/n/h/nai_ch/30576788d49a1422.png|
+|}
+[END]

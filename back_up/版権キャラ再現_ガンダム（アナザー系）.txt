@@ -22,7 +22,16 @@
 ***　機動武闘伝Gガンダム
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|master gundam, g gundam, mecha, robot, standing, arms at side, full body, straight-on, ||機動武闘伝Gガンダム|GF13-001NHII マスターガンダム|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/90b7cee56b27c900.png|
+|nobel gundam, g gundam, mecha, robot, standing, arms at side, full body, straight-on, ||機動武闘伝Gガンダム|GF13-050NSW ノーベルガンダム|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/fd99d75d9ca2e64d.png|
+|god gundam, g gundam, mecha, robot, standing, arms at side, full body, straight-on, ||機動武闘伝Gガンダム|GF13-017NJII ゴッドガンダム|V4.5 Full版使用。キャラクタープロンプト１のみ記述。細部の再現性が低い。|https://image01.seesaawiki.jp/n/h/nai_ch/68d44104ab67eaf6.png|
+|shining gundam, g gundam, mecha, robot, standing, arms at side, full body, straight-on, ||機動武闘伝Gガンダム|GF13-017NJ シャイニングガンダム|V4.5 Full版使用。キャラクタープロンプト１のみ記述。細部の再現性が低い。|https://image02.seesaawiki.jp/n/h/nai_ch/baa19a4df17e53f8.png|
+|nastasha zabigov, g gundam, girl, dominatrix, clothed female, military uniform, peaked cap, glasses, jacket, necktie, pants, boots, holding riding crop, standing, arms at side, frown, anger, full body, straight-on, ||機動武闘伝Gガンダム|ナスターシャ・ザビコフ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。表情が柔らかいと、作中のイメージから乖離してしまう。表情付けに工夫が必要。|https://image02.seesaawiki.jp/n/h/nai_ch/54507ebafef8f186.png|
+|argo gulskii, g gundam, boy, clothed male, jacket, pants, shoes, -3.0::mobile trace suit::, standing, arms at side, full body, straight-on, ||機動武闘伝Gガンダム|アルゴ・ガルスキー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/fd0f21cd357b7f85.png|
+|george de sand, g gundam, boy, clothed male, epaulettes, jacket, pants, shoes, -3.0::mobile trace suit::, standing, arms at side, full body, straight-on, ||機動武闘伝Gガンダム|ジョルジュ・ド・サンド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/946c58d43daa1370.png|
+|sai saici, g gundam, boy, clothed male, sleeveless shirt, sash, pants, shoes, -3.0::mobile trace suit::, standing, arms at side, full body, straight-on, ||機動武闘伝Gガンダム|サイ・サイシー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/92ee389cebe594a4.png|
+|schwarz bruder, g gundam, boy, clothed male, mask, coat, pants, boots, -3.0::mobile trace suit::, standing, arms at side, full body, straight-on, ||機動武闘伝Gガンダム|シュバルツ・ブルーダー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/fdb7be889743a148.png|
+|domon kasshu, g gundam, boy, clothed male, mobile trace suit, standing, arms at side, full body, straight-on, ||機動武闘伝Gガンダム|ドモン・カッシュ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/58dfc716b385512e.png|
 |official style, anime coloring, master asia, g gundam, very aesthetic, best quality, intricate, overall detail, 1boy, grey hair, black eyes, chinese clothes, purple jacket, white sash, black pants, shoes, standing, serious, white background, front view, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |機動武闘伝Gガンダム|東方不敗　マスターアジア|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/VKOw1Q1KSy.png|
 |official style, allenby beardsley, g gundam, very aesthetic, best quality, intricate, overall detail, 1girl, skin tight, blue hair, green eyes, parted lips, shiny clothes, yellow bowtie, multicolored bodysuit, blue and red bodysuit, mecha pilot suit, mobile trace suit, single thighthight on left feg, standing, serious, white background, facing the front, straight-on, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|機動武闘伝Gガンダム|アレンビー・ビアズリー|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/IsiQl7nscm.png|
 |official style, {{{{allenby beardsley}}}}, g gundam, very aesthetic, best quality, intricate, overall detail, 1 girl, 17 years old, {{slender}}, skin tight, blue hair, green eyes, parted lips, yellow bow, multicolored bodysuit, blue body suit, mobile trace suit, standing, [[nose blush, light smile]], simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, {{{{domon kasshu}}}}, abs, eyebrows,|^|^|V3使用。モビルトレーススーツは独自解釈しまくりなので、再現は期待しない方がいい。|https://image01.seesaawiki.jp/n/h/nai_ch/VcZATX5iyN.png|
@@ -53,6 +62,7 @@
 ***　機動新世紀ガンダムX
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|ennil el, after war gundam x, girl, headband, crop top, pants, high heel boots, standing, full body, straight-on,||機動新世紀ガンダムX|エニル・エル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/446232ff7d3f8f5a.png|
 |official style, garrod ran, after war gundam x, very aesthetic, best quality, intricate, overall detail, 1boy, green hair, green eyes, red jacket, white shirt, black pants, shoes, standing, expressionless, white background, front view, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |機動新世紀ガンダムX|ガロード・ラン|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/sz2tbtG9kQ.png|
 |official style, tiffa adill, after war gundam x, very aesthetic, best quality, intricate, overall detail, 1girl, brown hair, purple eyes, purple dress, shoes, standing, expressionless, white background, front view, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |機動新世紀ガンダムX|ティファ・アディール|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/SKUvSZEiBO.png|
 |{after war gundam x}, {{solo}}, {official style},  a girl_have_({{{tiffa adill}}}, light purple eyes, {{{sanpaku}}}, {{upturned eyes}}, {smal breasts}, quiet girl, lower super-long pony tail, dark brown hair)}, cowboy shot, hi-vision anime,|{{less than (surrealism:50.6)}},  {{{{mobile suit}}}},  {{{glasses}}}, {{{monochrome}}}, {{{grayscale}}}, {{{panel layout}}}, {{{crop}}}, {{{sloppy}}}, {{{error}}}, {{{background frame}}}, {{{undetailed}}}, {{{undetailed face}}}, {{{undetailed eyes}}}, {{{bad face}}}, {{{extra limbs}}}, {{{multiple limbs}}}, {{{crossed legs}}}, {{{{{extra persons}}}}}, {{{{{from behind}}}}}, {{{{from below}}}}, {{{missing legs}}}, {{{empty eyes}}}, {{{long neck}}}, {{{narrow neck}}}, {{{long body}}}, {{{long leg}}},|^|^|V3使用。それっぽさを高めるならシチュエーションを与えてやったほうがいいかもしれない。キャラ造型だけだと姿はティファっぽくなるんだけどイメージと離れたポージングをする事があってガチャ要素。意外なことに「ティファ・ロックハート」をNGすると返ってアディールからも離れていく。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6Kc2GgzLbc.png)|
@@ -79,6 +89,16 @@
 ***　機動戦士ガンダムSEED、機動戦士ガンダムSEED destiny
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|nicol amalfi,&#160;gundam seed, boy, solo, red military uniform, jacket, pants, boots, standing, full body,||ガンダムSEED|ニコル・アマルフィ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/ee1a02f3051bde78.png|
+|yzak joule,&#160;gundam seed, boy, solo, red military uniform, jacket, pants, boots, standing, full body,||ガンダムSEED|イザーク・ジュール|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c226cc36d1e087a2.png|
+|dearka elsman,&#160;gundam seed, boy, solo, red military uniform, jacket, pants, boots, standing, full body,||ガンダムSEED|ディアッカ・エルスマン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b892bd14e1ff347f.png|
+|athrun zala,&#160;gundamseed, boy, military uniform, jacket, pants, boots, standing, full body,||ガンダムSEED|アスラン・ザラ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/58b212cda8d87e3b.png|
+|kira yamato,&#160;gundamseed, boy, military uniform, jacket, pants, boots, standing, full body,||ガンダムSEED|キラ・ヤマト|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/acc4e49f5d661c3a.png|
+|miriallia haw,&#160;gundamseed, girl, military uniform, yllow skirt, thighhighs, boots, standing, full body,||ガンダムSEED|ミリアリア・ハウ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/488f37052846e9e9.png|
+|flay allster,&#160;gundamseed, girl, military uniform, black skirt, green thighhighs, boots, standing, full body,||ガンダムSEED|フレイ・アルスター|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d7697c9e02662607.png|
+|official style,stella loussier &#40;gundam seed), gundam seed,||ガンダムSEED destiny|ステラ・ルーシェ|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/52fdeee9a54cc7c7.png|
+|official style, talia gladys &#40;gundam seed), gundam seed,||ガンダムSEED destiny|タリア・グラディス|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/77c7932717de6f57.png|
+|{{{{Natarle Badgirue&#40;gundam seed)}}}},gundam seed,anime screencap||ガンダムSEED|ナタル・バジルール|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/c505cb3d541cb4c5.png|
 |{murrue ramius},{gundam seed},{huge breasts},brown hair,long hair,brown eyes, solo,girl,{anime_coloring},{hi-vision_anime},slender,slim,skinny,masterpiece,cowboy_shot,{official art},{official style},{hirai_hisashi&#40;data in year 2024)},{nai_diffusion_v4},{super robot wars},1.5::{The_skin_tones_are_applied_impasto.},::,|1.6::{blurry},lowers,jpeg artifacts,{{out of focus}},{low quality},worst quality,{high school_dxd_hero,drawn_by artist:uno_makoto},{bad shape nipples},{small nipples},{worst breasts},{saggy breasts},{black nipples},{manga_coloring},::,film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, multiple views, logo, too many watermarks, lowers, bokeh, worst quality, low quality,ugly, error, jpeg artifacts, extra digits,long body,cubism,{missing fingers},bad anatomy,low quality,error, {ponytail},{manga art},blurry,inverted nipple,3d,poorly drawn,hidden nipples,{minigirl},|ガンダムSEED|マリュー・ラミアス|V4使用|https://image02.seesaawiki.jp/n/h/nai_ch/06d3edc0cec5e05c.png|
 |||||||
 |official style, anime coloring, meyrin hawke, gundam seed destiny, very aesthetic, best quality, intricate, overall detail, 1 girl, purple eyes, garrison cap, zaft uniform, military uniform, standing, simple background, looking at viewer, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |ガンダムSEED destiny|メイリン・ホーク|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/VN9cnDNU6v.png|
@@ -241,6 +261,18 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

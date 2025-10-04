@@ -59,6 +59,10 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|mi50 32g|32gb|ryzen7 7700||41.26|--normalvram --preview-method auto --fp16-unet --auto-launch|ubuntu24+Cmfyui+rocm6.3.3(6.4.3からダウンしたら安定した)aliexpressで30kで購入。vramが多いので色々使えそう。 60kで買ったrx9060xt VRAM16gb（78秒）より早くて草。rx9060xtはrocmに加えてwhieelだとかrocm_go_fastだかを入れると早くなるらしいんだが、倍近いコスパと性能差を見るとやる気なくすｗ30kだしlINUX userなら買って損無いと思う。こんなベンチ早いよりもvram多くて動画生成できるほうが良くね？|
+|RX9070XT|||||||
+|9070|||||||
+|RTX 5090|32GB|Ryzen 9 9950X||8.9|--opt-channelslast --disable-nan-check|Windows11 / version: v1.10.1-89-g2174ce5a / python: 3.10.11 / torch: 2.7.0+cu128 / xformers: N/A / spd-scaled dot product / 電力制限無し、ハローアスカでも普通にGPU電力が500W超えてて怖い|
 |RTX 4080|16GB|Ryzen 9 7900X||9.0|--xformers|Linux Mint 22.1 Cinnamon／version: v1.10.1／python: 3.10.6／torch: 2.6.0+cu124／xformers: 0.0.30+f2de641e.d20250420|
 |RTX4070TI|12GB|Ryzen7 9700X||15.9|--xformers||
 |RTX 3060|12GB|Core i5-13600K||48.5|--xformers|version: v1.10.1 &#8192;&#8226;&#8192; python: 3.10.6 &#8192;&#8226;&#8192; torch: 2.1.2+cu121 &#8192;&#8226;&#8192; xformers: 0.0.23.post1 &#8192;&#8226;&#8192; gradio: 3.41.2|
@@ -397,6 +401,7 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
+|RX 9060 XT|16GB|Ryzen 7 7700X||107.2|--use-sage-attention --bf16-vae --disable-xformers|ComfyUI v0.3.51 pytorch:2.6.0+rocm6.4.2 windows 11 / WSL|
 |Radeon 780M|64GB|8700G|228|228|||
 |RTX 4090|24GB|Core i9-12900||7.0|--xformers --no-half-vae --pin-shared-memory --cuda-malloc --cuda-stream --opt-sdp-no-mem-attention --enable-insecure-extension-access|GPU70%制限。windows、forgeで生成|
 |RTX 4090|24GB|Core i9-12900||6.6|--xformers --no-half-vae --pin-shared-memory --cuda-malloc --cuda-stream --opt-sdp-no-mem-attention --enable-insecure-extension-access|windows、forgeで生成|

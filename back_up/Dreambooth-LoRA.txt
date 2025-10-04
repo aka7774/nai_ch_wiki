@@ -1,7 +1,7 @@
 #contents
 * 概要
 Low-rank Adaptation for Fast Text-to-Image Diffusion Fine-tuning
-ウェイトをn×Rankの小さい行列A,Bの二つに分解してその行列をFinetuningする。そして差分情報を出力する。
+ウェイトをn×Rankの小さい行列A,Bの二つに分解してその行列をFine-tuningする。そして差分情報を出力する。
 簡単に言えば「省メモリで高速に学習できて容量も小さくて済む追加学習法」。''作成方法はいろいろある。''
 
 [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png,400)>https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png]]
@@ -86,6 +86,7 @@ GUIのほうが更新が数日遅れるのが常やから我慢してや。
 ** Kohya_lora_param_gui (スレ住民作)
 https://github.com/RedRayz/Kohya_lora_param_gui
 https://github.com/kohya-ss/sd-scripts の学習用のパラメータ設定してコマンドラインに渡すGUIです。
+- .NETベースのGUI。Windows専用。
 - accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。
 - 単体でsd-scriptsのインストール・更新ができるようになった。
 - としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。
@@ -405,13 +406,13 @@ accelerate launch --num_cpu_threads_per_process 1 train_network.py
 |Prodigy||優良|中|低速|かなり高速|普通|やや低||
 |AdamWScheduleFree||良|良|高速|高速(高LR)|普通|優良|sd3ブランチ限定、LR Schedulerはconstant_with_warmupでOK|
 |RAdamScheduleFree||良|優良|高速|高速(高LR)|普通|優良|sd3ブランチ限定、LR schedulerはconstantでOK(wamupも不要)|
-|CAME|came_pytorch.CAME|優良|良|高速|超高速|少|良|pytorch_cameのインストール必要|
+|CAME|pytorch_optimizer.CAME|優良|良|高速|超高速|少|良|sd3ブランチ限定|
 
 
 *LoRAの種類とLyCORISについて
 LyCORISについて
 https://github.com/KohakuBlueleaf/LyCORIS
-LoRAの新しい学習手法をまとめたリポジトリ。通常のLoRAより性能がいいかもしれない。一部のアルゴリズムの計算速度(it/s)は遅い。
+LoRAの新しい学習手法をまとめたリポジトリ。通常のLoRAより性能が良いものがある。一部のアルゴリズムの計算速度(it/s)は遅い。
 もともとLoConのみだったが、のちに新しいアルゴリズムも追加されLyCORISに統合された。
 
 **LyCORIS のインストールと使用方法
@@ -437,7 +438,7 @@ python3 sd-scripts/train_network.py
 --network_dim 64 --network_alpha 32
 --network_args "conv_dim=64" "conv_alpha=32" "dropout=0.05" "algo=lora"
 ||=
-生成で使用するには1111のExtensionに[[a1111-sd-webui-locon>https://github.com/KohakuBlueleaf/a1111-sd-webui-locon]]、又は[[a1111-sd-webui-lycoris>https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris]]のインストールが必要。
+
 標準のExtra Networksおよびkohya-ss氏作成の[[sd-webui-addtional-networks>>https://github.com/kohya-ss/sd-webui-additional-networks]]で使用できる。
 
 **LoRAの種類

@@ -94,15 +94,23 @@ Hugging Face(vpred v1.0): https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0
 ε-prediction版とv-prediction版が公開されておりそれぞれ癖が違う。v-prediction版は明暗の表現が良いがZero Terminal SNRの影響でかなりピーキーな挙動を示す。
 v-predictonについては[[Models>Models]]を参照。
 
+** RouWei
+https://huggingface.co/Minthy/RouWei-0.8
+プロンプトの応答性や知識を改善するために開発された。データセットも拡張(カットオフ2025年04月)された。
+しかし、プロンプトを無視してエロ画像を生成する傾向がある上、多くのMetaタグが使用できず、Noob以上の曲者である。
+
 **Illustrious-XL SmoothFT（SmoothFT-SPO）
 https://civitai.com/models/811067/illustrious-xl-smoothft?modelVersionId=907264
 通称SPO。画質を向上させるために最低限の変更を加えたもの。
 
 **copycat-illustrious
 https://civitai.com/models/823763/copycat-illustrious
-本スレ産。画風や構図の多様性が落ちる代わりに、安定して高品質のマスピ絵を出せる。
+本スレ産。画風や構図の多様性が著しく落ちる代わりに、安定して高品質のマスピ絵を出せる。
 
 **Obsession (Illustrious-XL)
 https://civitai.com/models/820208/obsession-illustrious-xl
 画質が向上し、純正モデルとほぼ同じような感覚で使える。
 1.0はベースモデル、以降はNoobAIを元にマージされており、こちらもバージョンごとに使用感が違う。
+さらにデータセットが拡張され新しいキャラクターが生成できる。
+
+

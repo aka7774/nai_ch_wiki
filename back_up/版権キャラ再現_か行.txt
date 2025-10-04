@@ -30,9 +30,22 @@
 |1boy, sendou aichi, cardfight!! vanguard, blue hair, blue eyes, ahoge, short hair, necktie, white shirt, black jacket, solo, cowboy shot,  ||カードファイト!!ヴァンガード|先導アイチ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FyPc4mNl6J-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/FyPc4mNl6J.png]]|
 |}
 
+***　陰の実力者になりたくて！
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{{official style}}}, {{Beta(kage no jitsuryokusha ni naritakute!)}}, 2d cel anime, {{{game cg}}}, ||陰の実力者になりたくて！|ベータ|V4.5||
+|}
+
 ***　ガールズ＆パンツァー
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|akiyama yoshiko, ,girl,solo,{girls und panzer},||ガールズ＆パンツァー|秋山好子|4.5|https://image02.seesaawiki.jp/n/h/nai_ch/662ba789110b7caf.png|
+|official style, {{ai-generated}}, tsuruki shizuka, girls und panzer, ||ガールズ＆パンツァー|鶴姫しずか|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/08ec7aa3e434771e.png|
+|ogin &#40;girls und panzer),anime screencap||ガールズ＆パンツァー|お銀|V4.5|https://image02.seesaawiki.jp/n/h/nai_ch/704a964469bff2fa.png|
+|murakami (girls und panzer),  ,anime screencap||ガールズ＆パンツァー|ムラカミ|V4.5|https://image02.seesaawiki.jp/n/h/nai_ch/c65f84617c030ead.png|
+|cutlass &#40;girls und panzer),anime screencap||ガールズ＆パンツァー|カトラス|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/fa0f852a25d104b8.png|
+|Flint &#40;girls und panzer),anime screencap||ガールズ＆パンツァー|フリント|V4.5|https://image02.seesaawiki.jp/n/h/nai_ch/65c870801adc46d5.png|
+|eclair_&#40;girls_und_panzer), girls_und_panzer||ガールズ＆パンツァー|エクレール(マジノ女学院)|V4.5|https://image02.seesaawiki.jp/n/h/nai_ch/e879cf324a8b9165.png https://image02.seesaawiki.jp/n/h/nai_ch/f9a7ec034a8eabae.png|
 |andou (girls und panzer),  bc freedom military uniform, blue jacket, white skirt, official art, solo, cowboy shot, ||ガールズ＆パンツァー|安藤|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/f_TsfPvkCI-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/f_TsfPvkCI.png]]|
 |assam (girls und panzer), st. gloriana's school uniform, official art, solo, cowboy shot, ||ガールズ＆パンツァー|アッサム|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/OhyxD85KRI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/OhyxD85KRI.png]]|
 |carpaccio (girls und panzer), anzio school uniform, beret, black necktie, white shirt, official art, solo, cowboy shot,   ||ガールズ＆パンツァー|カルパッチョ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/c9mX4KHsro-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/c9mX4KHsro.png]]|
@@ -136,6 +149,16 @@
 |1girl,{official art},{gabriel dropout},blonde ahoge,blonde hair,messy hair,middle hair,blue eyes,pink hoodie,white shirt,red ribbon,Black and red checked skirt,tareme,|汎用ネガティブプロンプト + hair ribbon,loli,|^|^|サイドのアホ毛再現できず|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/j6YbRaNT3x.png,200)|
 |}
 
+***　がくえんゆーとぴあ まなびストレート!
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|odori momoha, gakuen utopia manabi straight!, girl, clothed female, seiou gakuen school uniform, jacket, skirt, black thighhighs, loafers, standing, arms at side, full body, straight-on, ||がくえんゆーとぴあ まなびストレート!|小鳥桃葉|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/e37a22c5256195bc.png|
+|etou mei, gakuen utopia manabi straight!, girl, clothed female, seiou gakuen school uniform, jacket, skirt, black socks, loafers, standing, arms at side, full body, straight-on, ||がくえんゆーとぴあ まなびストレート!|衛藤芽生|V4.5 Full版使用。キャラクタープロンプト１のみ記述。・・・サンプルの靴下は白だけど、本当は黒。指定の間違いですが、上げ直しません。|https://image01.seesaawiki.jp/n/h/nai_ch/fefbbdb6c5032059.png|
+|uehara mutsuki, gakuen utopia manabi straight!, girl, clothed female, seiou gakuen school uniform, jacket, skirt, white socks, loafers, standing, arms at side, full body, straight-on, ||がくえんゆーとぴあ まなびストレート!|上原むつき|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/7165f3e695b06099.png|
+|inamori mika, gakuen utopia manabi straight!, girl, clothed female, seiou gakuen school uniform, jacket, skirt, white socks, loafers, standing, arms at side, full body, straight-on, ||がくえんゆーとぴあ まなびストレート!|稲森光香|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/fdeb0592d82f372c.png|
+|amamiya manami, gakuen utopia manabi straight!, girl, clothed female, seiou gakuen school uniform, jacket, skirt, white socks, loafers, standing, arms at side, full body, straight-on, ||がくえんゆーとぴあ まなびストレート!|天宮学美|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/d74bad05e2ab52d1.png|
+|}
+
 ***　かぐや様は告らせたい
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -147,6 +170,18 @@
 |{{hayasaka ai}}, 1girl, blonde_hair, blue_eyes, hair_between_eyes, side_ponytail, school unifrom, {shuuchiin_academy_school_uniform}, cowboy_shot| |かぐや様は告らせたい|早坂愛| maid apron maid headdress~~あたりでメイド化可能 |[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/n2Nf27D14F-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/n2Nf27D14F.png]]|
 |{fujiwara chika},kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, pink hair, blue eyes, long hair,blunt bangs, tareme,large breasts,shuuchiin academy school uniform, black dress,collared dress,neck ribbon,long sleeves, solo,smile,|shinomiya kaguya,hair ribbon,tsurime,smirk,evil smile,belt,|かぐや様は告らせたい|藤原千花||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fXUiNlel6Z.png)|
 |{{{shinomiya kaguya}}},{{{kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~}}},folded ponytail,parted bangs,forehead,red eyes,black hair,hair ribbon,red ribbon,short hair,tsurime,skinny,small breast,shuuchiin academy school uniform, black dress,collared dress,neck ribbon,long sleeves,  |{hair between eyes},blunt bangs,tilak,bindi,forehead mark,crown,hair_ornament,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,|かぐや様は告らせたい|四宮かぐや||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qPrUet56rt.png)|
+|}
+
+***　かぐや姫の物語
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kaguya hime, kaguya-hime no monogatari, girl, clothed female, pink jacket, white kimono, red hakama skirt, tabi, standing, arms at side, full body, straight-on, ||かぐや姫の物語|かぐや姫|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/8e981f31187bb291.png|
+|}
+
+***　カスミン
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|haruno kasumi, kasumin, girl, clothed female, pink shirt, yellow skirt, white socks, sneakers, standing, arms at side, full body, straight-on, ||カスミン|春野カスミ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/e6e15f8f7396bd72.png|
 |}
 
 ***　風の聖痕
@@ -208,7 +243,9 @@
 ***　神風怪盗ジャンヌ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|official style, 2d cel anime, {{Kusakabe maron }},{{{{{{kaitou jeanne}}}}}}},{{kamikaze kaitou Jeanne}}, very aesthetic, best quality, intricate, overall detail, 1 girl,(golden hair, high ponytail,purple eyes,white short sleeve clothes ,red mini skirt,white glove,white long shoes,cross breast ornament, red ribbon,golden bangle,)light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),full body|  glasse,3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, {{{{POV hands}}}}, cubism,|日下部まろん|神風怪盗ジャンヌ|v3使用　コスチュームが安定しない。新コスは無理| https://image01.seesaawiki.jp/n/h/nai_ch/0JVnfjMW69.png |
+|{kaitou jeanne, kamikaze kaitou jeanne, blonde hair, long hair, red hair bow, yellow eyes, red and white outfit, cityscape background, night, rooftop, smile, dynamic pose}, {{{outdoors, night sky, buildings, railing, city lights}}}, anime coloring, official art,|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, censor, bar censor, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, mascot,|怪盗ジャンヌ|神風怪盗ジャンヌ|V4.5 Full版使用。最初のコスチュームのみで新しいタイプ姿の生成できず|https://image02.seesaawiki.jp/n/h/nai_ch/f6b389a173a3a914.png|
+|official style, 2d cel anime, {{Kusakabe maron }},{{{{{{kaitou jeanne}}}}}}},{{kamikaze kaitou Jeanne}}, very aesthetic, best quality, intricate, overall detail, 1 girl,(golden hair, high ponytail,purple eyes,white short sleeve clothes ,red mini skirt,white glove,white long shoes,cross breast ornament, red ribbon,golden bangle,)light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),full body|  glasse,3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, {{{{POV hands}}}}, cubism,|^|^|v3使用　コスチュームが安定しない。新コスは無理| https://image01.seesaawiki.jp/n/h/nai_ch/0JVnfjMW69.png |
+|{kusakabe maron, kamikaze kaitou jeanne, brown hair, long hair, brown eyes, yellow and green school uniform, donut hair bun, drill hair, red neck ribbon, cowboy shot}, {{{indoors, wooden floor, citycape, windows, night, telephone, desk, couch, holding cross rosary, smile}}}, anime coloring, official art,|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, censor, bar censor, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, mascot,|日下部まろん|神風怪盗ジャンヌ|V4.5 Full版使用。学生服は無理っぽい|https://image02.seesaawiki.jp/n/h/nai_ch/5272b86af38aa783.png|
 |}
 
 ***　神様のメモ帳
@@ -228,6 +265,11 @@
 ***　仮面ライダーシリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kamen rider black rx, kamen rider black rx (series), boy, solo, animification, muscular, superhero costume, standing, full body, ||仮面ライダーブラックRX|仮面ライダーブラックRX|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/8b74baaa501f4473.png|
+|kamen rider black, kamen rider black (series), boy, solo, animification, muscular, superhero costume, standing, full body, ||仮面ライダーブラック|仮面ライダーブラック|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/ebce2b4a87249e4f.png|
+|kamen rider stronger, kamen rider stronger (series)&#160;, boy, solo, animification, muscular, superhero costume, scarf, standing, full body, ||仮面ライダーストロンガー|仮面ライダーストロンガー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/263960fc61dbb697.png|
+|kamen rider amazon, kamen rider amazon (series)&#160;, boy, solo, animification, muscular, superhero costume, scarf, standing, full body, ||仮面ライダーアマゾン|仮面ライダーアマゾン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/99879f30b1b2a21a.png|
+|kamen rider v3, kamen rider v3 (series), boy, solo, animification, muscular, superhero costume, scarf, standing, full body, ||仮面ライダーV3|仮面ライダーV3|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/9c617affa13b2b2c.png|
 |official style, anime coloring, kamen rider 2, kamen rider (1st series), very aesthetic, best quality, intricate, overall detail, 1boy, compound eyes, red eyes, red scarf, armored bodysuit, red gloves, rider belt,  red boots, standing, simple background, facing the front, straight-on, close to viewer, full body, character focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |仮面ライダー（初代）|仮面ライダー２号|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/REwScLQZXu.png|
 |official style, anime coloring, kamen rider 1, kamen rider (1st series), very aesthetic, best quality, intricate, overall detail, 1boy, compound eyes, red eyes, red scarf, armored bodysuit, silver gloves, rider belt, silver boots, standing, simple background, facing the front, straight-on, close to viewer, full body, character focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |仮面ライダー（初代）|仮面ライダー１号|V4 Curated Preview版使用。サンプルはいわゆる「新１号」として出力している。旧ならグローブとブーツを緑に変更する。|https://image01.seesaawiki.jp/n/h/nai_ch/KmVMfnKktO.png|
 |}
@@ -241,12 +283,28 @@
 |{{takagi san}}, 1girl, solo, forehead, light brown hair , long hair, school uniform, sailor uniform, {{{tareme}}}, brown eyes, {{{round eyes}}}, 13 years old,kind smile, round face, {{{ringed eyes}}}, one length, {{{flat chest}}}, {{{round face}}}, slender, classroom, {{{flat_chest}}}, {{{facial}}}, ||からかい上手の高木さん|高木さん||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/gNrizNWkvk-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/gNrizNWkvk.png]]|
 |}
 
+***　カレイドスター
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|may wong, kaleido star, girl, clothed female, purple sleeveless shirt, brown skirt, sandals, standing, arms at side, full body, straight-on, ||カレイドスター|メイ・ウォン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/9c914b92c144da16.png|
+|mia guillem, kaleido star, girl, clothed female, yellow sun dress, sandals, standing, arms at side, full body, straight-on, ||カレイドスター|ミア・ギエム|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/97d8ec745a23ae13.png|
+|layla hamilton, kaleido star, girl, clothed female, leotard, standing, arms at side, full body, straight-on, ||カレイドスター|レイラ・ハミルトン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/fe9832d43ace896d.png|
+|rosetta passel, kaleido star, girl, clothed female, black bikini, standing, arms at side, full body, straight-on, ||カレイドスター|ロゼッタ・パッセル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/1fc279adfa9ef125.png|
+|naegino sora, kaleido star, girl, clothed female, leotard, standing, arms at side, full body, straight-on, ||カレイドスター|苗木野そら|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/89dd0cb5cbe2f5b0.png|
+|}
+
 ***　彼氏彼女の事情
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, miyazawa yukino, kareshi kanojo no jijou, very aesthetic, best quality, intricate, overall detail, 1girl, brown hair, red eyes, white hairband, hairclip, school uniform, black jacket, white shirt, blue necktie, blue skirt, plaid skirt, black thighhighs, loafers, standing, smile, white background, facing the front, straight-on, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|彼氏彼女の事情|宮沢雪野|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/9_jiE4liEH.png|
 |}
 
+***　監獄戦艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|naomi evans, kangoku senkan||監獄戦艦|ナオミ・エヴァンス|4.5|https://image01.seesaawiki.jp/n/h/nai_ch/73cc673af62a902b.png|
+|lieri bishop, kangoku senkan ,prison battleship ||監獄戦艦|リエリ・ビショップ|4.5|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/391e5912f217799c-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/391e5912f217799c.png]]|
+|}
 ***　可愛いだけじゃない式守さん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -265,9 +323,24 @@
 |1boy, remy odhner, gunslinger stratos, shota, evil smile, white background, |blush, |ガンスリンガーストラトス|レミー・オードナー|V4.5 Curated|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/f44faf86e5a0418b-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/f44faf86e5a0418b.png]]|
 |}
 
+***　ガン×ソード
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{garret michael&#40;anime)},  {gunxsword}, {official art},{anime_coloring},{hi-vision_anime},solo,boy,slender,slim,skinny,{8k},{best quality},{very aesthetic},{masterpiece},cowboy_shot,{official style},{nai_diffusion_v4.5},{suzuki_shingo&#40;data in year 2022)},|1.5::{missing fingers},{deteriorated fingers},{broken finger},{low fingers},{rough fingers},{four fingers},{minigirl},::,lowers,jpeg artifacts,{low quality},worst quality,{high school_dxd_hero,drawn_by artist:uno_makoto},{bad shape nipples},{small nipples},{worst breasts},{saggy breasts},{black nipples},film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, multiple views, logo, too many watermarks, lowers, bokeh, worst quality, low quality,ugly, error, jpeg artifacts, extra digits,long body,cubism,bad anatomy,low quality,error, {ponytail},{manga art},blurry,inverted nipple,3d,poorly drawn,hidden nipples,thick eyebrows,{disrupted background},{kuoh academy school uniform},|ガン×ソード|ミハエル・ギャレット|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/95dbac93bb92b329.png|
+|priscilla_&#40;gunxsword), gunxsword, official_style, -1::revealing_clothes::||ガン×ソード|プリシラ|V4.5、好みに応じ適宜 official_style 等ON/OFFください。-1::revealing_clothes::はすぐ水着になるので足しましたがこちらも適宜取捨を。|https://image01.seesaawiki.jp/n/h/nai_ch/5a86784218580ada.png|
+|wendy_garrett, gunxsword, official_style||ガン×ソード|ウェンディ|V4.5。好みに応じ適宜 official_style, kimura_takahiro 等のタグの有無は選択ください。|https://image02.seesaawiki.jp/n/h/nai_ch/ad2f619e1e7f9452.png|
+|{fasalina (anime)},{gunxsword},{huge_breasts},{official art},black hair,long hair,yellow eyes,adult,{tall female},{mature female},{anime_coloring},{hi-vision_anime},solo,girl,slender,slim,skinny,{8k},{best quality},{very aesthetic},{masterpiece},cowboy_shot,{official style},{nai_diffusion_v4.5},{suzuki_shingo(data in year 2022)},|1.5::{missing fingers},{deteriorated fingers},{broken finger},{low fingers},{rough fingers},{four fingers},{minigirl},::,lowers,jpeg artifacts,{low quality},worst quality,{high school_dxd_hero,drawn_by artist:uno_makoto},{bad shape nipples},{small nipples},{worst breasts},{saggy breasts},{black nipples},film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, multiple views, logo, too many watermarks, lowers, bokeh, worst quality, low quality,ugly, error, jpeg artifacts, extra digits,long body,cubism,bad anatomy,low quality,error, {ponytail},{manga art},blurry,inverted nipple,3d,poorly drawn,hidden nipples,thick eyebrows,{disrupted background},{kuoh academy school uniform},|ガン×ソード|ファサリナ|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/2c2d5b5e4e828634.png|
+|}
+
+
 ***　艦隊これくしょん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, game cg,iowa&#40;kancolle),girl||艦隊これくしょん|アイオワ|4.5|https://image01.seesaawiki.jp/n/h/nai_ch/9cd8f485140a7e00.png|
+|i-class destroyer, kantai collection, other, no humans, abyssal ship, full body, glowing eyes, open mouth, from side, ||艦隊これくしょん|駆逐イ級|V4.5 Full版使用。キャラクタープロンプト１のみ記述。安定しない。|https://image02.seesaawiki.jp/n/h/nai_ch/ae50e86daa667236.png|
+|escort water princess, kantai collection, girl, abyssal ship, short jumpsuit, toeless legwear, standing, full body, ||艦隊これくしょん|護衛棲水姫|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/0fd8e4e899b1417d.png|
+|enemy lifebuoy (kancolle) , kantai collection, other, full body, ||艦隊これくしょん|深海浮輪|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/e516fa63483acf04.png|
+|enemy naval mine (kancolle), kantai collection, other, full body, ||艦隊これくしょん|深海忌雷|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/bb37db445e6d3414.png|
 |official style, game cg,Yamato &#40;kancolle),1girl||艦隊これくしょん|大和|1girlが無いと食べ物が出力される。立ち姿のみなのでアクションを起こす場合は食べ物になるか確認していない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1K8AJYBmdu-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/1K8AJYBmdu.png]]|
 |official style, game cg , i-400 (kancolle) , kantai collection, very aesthetic, best quality, intricate, overall detail, nsfw, 1girl, black hair, long hair, purple eyes, orange sailor collar, orange neckerchief, white sailor shirt, school swimsuit, bare arms, bare legs, barefoot, sitting, yokozuwari, arms support, simple background, looking at viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, {{{{rigging, weapon, shadow, backlighting}}}},|艦隊これくしょん| 伊400|V3使用。V3で艦娘を出そうとすると艤装が付属することが多い。出したくない場合はネガにrigging（艤装）, weapon（武器）, を入れればほぼ出なくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/jegcZM7VYk.png|
 |official style, game cg, best quality, hibiki &#40;kancolle) ,verniy &#40;kancolle), teenage girl, military uniform, facing the front, straight-on,||艦隊これくしょん|ヴェールヌイ||https://image02.seesaawiki.jp/n/h/nai_ch/Rf6DS9IsLI.png|
@@ -367,9 +440,16 @@
 |}
 
 **き
+***　鬼神童子ZENKI
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|enno chiaki, kishin douji zenki, girl, clothed female, non traditional miko, long sleeves, kimono skirt, shoes, standing, arms at side, full body, straight-on, ||鬼神童子ZENKI|役小明|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b86ad3f95a0cf45b.png|
+|}
+
 ***　軌跡シリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|altina_orion, kai no kiseki||英雄伝説 界の軌跡|アルティナ・オライオン(界の軌跡ver.)|V4.5、キャラ名+"kai  no kiseki"だけで出る。|https://image01.seesaawiki.jp/n/h/nai_ch/44b2838ef0b45f92.png https://image01.seesaawiki.jp/n/h/nai_ch/4b7dcba25c4622d7.png|
 |duvalie, eiyuu_densetsu||英雄伝説 碧の軌跡〜|神速のデュバリィ|V4。annoyed はデフォでつけた方がいいかも。あと legs_apart, armor, winged_helmet, headgear とかつけるとどんどんそれっぽくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/cf66232db4b68a63.png https://image01.seesaawiki.jp/n/h/nai_ch/76a80cb852577850.png|
 |kloe_rinz, eiyuu_densetsu||英雄伝説 空の軌跡FC〜|クローディア(クローゼ・リンツ)|V4。学生っぽい服装が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/cca8911d3365a70b.png|
 |feri al-fayed, kuro no kiseki &#40;series), detached_sleeves, scarf||英雄伝説 黎の軌跡I〜|フェリーダ・アルファイド|V4。detached_sleeves, scarf は最小限でフェリっぽい服装にするタグ。|https://image02.seesaawiki.jp/n/h/nai_ch/Xv5Fe8IhWn.png https://image01.seesaawiki.jp/n/h/nai_ch/l5i0Pe5XEm.png|
@@ -398,6 +478,10 @@
 ***　機動戦艦ナデシコ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|maki izumi, {{{kidou senkan nadesico}}},white background,||機動戦艦ナデシコ|マキ・イズミ|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/23050399da8d8900.png|
+|amano hikaru, {{{kidou senkan nadesico}}},white background,||機動戦艦ナデシコ|アマノ・ヒカル|V4.5|https://image02.seesaawiki.jp/n/h/nai_ch/fd2a430908f8b0a8.png|
+|subaru ryoko, {{{kidou senkan nadesico}}},white background,||機動戦艦ナデシコ|スバル・リョーコ|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/4562139456185088.png|
+|haruka minato, {{{kidou senkan nadesico}}},white background,||機動戦艦ナデシコ|ハルカ・ミナト|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/c72c1c774a274848.png|
 |{{{misumaru yurika}}}, {{{kidou senkan nadesico}}},{{official art}},{{hi-vision anime}},{{anime coloring}}, {{huge breasts}},blue eyes, long hair, blue hair, 8k,slender,slim,skinny,masterpiece,shiny skin,best quality,shiny eyes,{{{best quality}}},{{{very aesthetic}}},cowboy shot,|{{empty eyes}},{{pasties}},{{small breasts}},{{{poorly drawn nipples}}}},{{{removing pasties}}},{{{saggy breasts}}},{{{hanging breasts}}},{{{collapsed nipple}}},{{{ugly nipples}}}},{{{{inverted nipples}}}},{{{worst breasts}}},{{{sagging breasts}}},{{{extra limb}}},{{{extra limbs}}},{{{put your hand on your pussy}}},{{{{inverted nipple}}}},{{{monochrome}}},{{{missing fingers}}},{{{worst quality}}},{{{low quality}}},{{{lowres}}},{{{missing limb}}},{{{missing digit}}},{{missing legs}}},{{{mosaic}}},{{{disappearing arms}}},{{{{{{girl penis}}}}},{{{{genderswap &#40;ftm)}}}},bad anatomy, blurry,low quality,error,text, fewer digits, cropped, signature, username, normal quality, bad hands, watermark, worst quality, missing fingers, extra digit, lowres, missing arms, bad feet, long neck, bad proportions, ugly, disfigured, duplicate, 3d,|機動戦艦ナデシコ|ミスマル・ユリカ|V4使用（体験版）|https://image02.seesaawiki.jp/n/h/nai_ch/wcNauEEpfM.png|
 |official style, anime coloring, drawing by {{gotou keiji}}, {{misumaru yurika}}, kidou senkan nadesico, very aesthetic, best quality, intricate, overall detail, nsfw, 1 girl, blue hair, long hair, blue eyes, large breasts, military uniform, white hat, white capelet, tight clothes, long sleeves, white gloves, black skirt, pencil shirt, grey pantyhose, sitting, invisible chair, white background, facing away, straight-on, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |機動戦艦ナデシコ|ミスマル・ユリカ|V3使用。アニメキャラデザに寄せた出力。|https://image02.seesaawiki.jp/n/h/nai_ch/a4bBlrumCK.png|
 |official style, anime coloring, drawing by {{gotou keiji}}, {{hoshino ruri}}, kidou senkan nadesico - prince of darkness, very aesthetic, best quality, intricate, overall detail, nsfw, 1 girl, aged up, adult, purple hair, twintails, ring hair ornament, very long hair, yellow eyes, large breasts, military uniform, white capelet,  two-tone cape, tight clothes, long sleeves, white gloves, black skirt, pencil shirt, brown pantyhose, sitting, invisible chair, white background, facing away, straight-on, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, {{{{hair bobbles, sidelocks, widow's peak, forehead}}}},|機動戦艦ナデシコ -The prince of darkness|ホシノ・ルリ（大人）|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/9jnj2Hppck.png|
@@ -439,6 +523,15 @@
 |best quality, anime,official style,1girl,{{{{{{{ayukawa madoka,kimagure orange road}}}}}}},large breasts,long hair,black hair,light smile,sailer fuku,red ribbon,white school uniform, winter clothes,green long skirt,masterpiece ,best quality ,high quality, amazing quality ,great quality, very aesthetic, ai-generated, ai-assisted, absurdres ,highres, ultra highres,detailed ,hyper detailed, insanely detailed and intricate, beautiful detailed,simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed)|lowres, {bad}, error, fewer, extra, missing, worst quality, jpeg artifacts, bad quality, watermark, unfinished, displeasing, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract], {{{{3d,anime,realistic art,old art}}}}, blurry, simple design, {{4fingers,6fingers,bad fingers}}, boy, elf ears, fat, masterpiece, logo|きまぐれオレンジ☆ロード|鮎川まどか|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/VtB7FH2WDG-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/VtB7FH2WDG.png]]|
 |}
 
+***　君が望む永遠
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|daikuuji ayu, kimi ga nozomu eien, girl, waitress, red dress, puffy short sleeves,&#160;name tag, white socks, sneakers, standing, full body,||君が望む永遠|大空寺あゆ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c3e2157e1d6a6281.png|
+|suzumiya akane, kimi ga nozomu eien, girl, hakuryou high school uniform, black socks, loafers,&#160;standing, full body,||君が望む永遠|涼宮茜|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/30954a91f3efdea0.png|
+|suzumiya haruka, kimi ga nozomu eien, girl, hakuryou high school uniform, white socks, loafers,&#160;standing, full body,||君が望む永遠|涼宮遙|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/11e2f0ba79c29468.png|
+|hayase mitsuki, kimi ga nozomu eien, girl, hakuryou high school uniform, white socks, loafers,&#160;standing, full body,||君が望む永遠|速瀬水月|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1ca84bb4eb8c2c5c.png|
+|}
+
 ***　キミキス
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -456,6 +549,31 @@
 ***　鬼滅の刃
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kamado kie, kimetu no yaiba||鬼滅の刃|竈門葵枝|4.5|https://image02.seesaawiki.jp/n/h/nai_ch/fa0307dc2c905204.png|
+|braid girl (enmu's recruits)&#160;, kimetsu no yaiba, girl, clothed female, green kimono, blue sash, sandals, standing, full body, straight-on, ||鬼滅の刃|三つ編みの少女(煉獄の無意識領域に侵入した少女)|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c3fe34965fda3f0f.png|
+|mukago (kimetsu no yaiba), kimetsu no yaiba, girl, clothed female, red kimono, sash, sandals, standing, full body, straight-on, ||鬼滅の刃|零余子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/5ea54ff71cae6f7a.png|
+|enmu (kimetsu no yaiba), kimetsu no yaiba, boy, clothed male, black coat, white shirt, vest, pants, shoes, standing, full body, straight-on, ||鬼滅の刃|魘夢|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/387de35611787c91.png|
+|rui (kimetsu no yaiba), kimetsu no yaiba, boy, clothed male, white kimono, sash, sandals, standing, full body, straight-on, -3.0::hakama::,||鬼滅の刃|累|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/05698048feedea96.png|
+|tamayo (kimetsu no yaiba), kimetsu no yaiba, girl, clothed female, kimono, floral print, sash, sandals, standing, full body, straight-on, ||鬼滅の刃|珠世|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/8e2ad21cfda3bda2.png|
+|ubuyashiki kagaya, kimetsu no yaiba, boy, clothed male, black kimono, white haori, sandals, standing, full body, straight-on, -3.0::hakama::,||鬼滅の刃|産屋敷耀哉|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/31d400157926cbe5.png|
+|hinatsuru (kimetsu no yaiba), kimetsu no yaiba, girl, clothed female, purple kimono, sash, fishnet thighhighs, sandals, standing, full body, straight-on, ||鬼滅の刃|雛鶴|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d5097439626f3c86.png|
+|suma (kimetsu no yaiba), kimetsu no yaiba, girl, clothed female, blue kimono, sash, socks, sandals, standing, full body, straight-on, ||鬼滅の刃|須磨|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/730ab6cf922324d3.png|
+|makio (kimetsu no yaiba)&#160;, kimetsu no yaiba, girl, clothed female, red kimono, sash, thighhighs, sandals, standing, full body, straight-on, ||鬼滅の刃|まきを|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/44c5c0a9c9bfd7d9.png|
+|shinazugawa genya, kimetsu no yaiba, boy, clothed male, demon slayer uniform, sandals, standing, full body, straight-on, ||鬼滅の刃|不死川玄弥|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b9fe2509c2d82a08.png|
+|sabito (kimetsu), kimetsu no yaiba, boy, clothed male, green kimono, white haori, hakama, mask on head, sandals, standing, full body, straight-on, ||鬼滅の刃|錆兎|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/52e84d4527955099.png|
+|makomo (kimetsu), kimetsu no yaiba, girl, clothed female, pink kimono, floral print, mask on head, sandals, standing, full body, straight-on, ||鬼滅の刃|真菰|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b03675e2d923167a.png|
+|kakushi (kimetsu no yaiba), kimetsu no yaiba, girl, clothed female, demon slayer uniform, mouth veil, tabi, sandals, standing, full body, straight-on, -3.0::fishnet socks::, ||鬼滅の刃|隠のおねえさん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/53da1c17d6394359.png|
+|mother spider demon, kimetsu no yaiba,||鬼滅の刃|母蜘蛛|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/0148393767667fad.png|
+|kibutsuji muzan, kimetsu no yaiba, girl, kimono, sash, standing, full body, ||鬼滅の刃|鬼舞辻無惨|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1a35837a90fd7dbb.png|
+|kaigaku, kimetsu no yaiba, boy, kimono, pants, sandals, standing, full body, ||鬼滅の刃|獪岳|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/55b785d8a436207c.png|
+|nakime (kimetsu no yaiba), kimetsu no yaiba, girl, covered eyes, hair over eyes, kimono, sash, tabi, playing instrument, biwa lute, plectrum, sitting, full body, ||鬼滅の刃|鳴女|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/98066ba27c746ceb.png|
+|daki (kimetsu no yaiba), kimetsu no yaiba, girl, side-tie dress, sash, thighhighs, sandals, standing, full body, ||鬼滅の刃|堕姫|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ae378d24d63404ea.png|
+|gyuutarou (kimetsu no yaiba), kimetsu no yaiba, boy, pants, bare foot, standing, full body, ||鬼滅の刃|妓夫太郎|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/1f071763607725b7.png|
+|gyokko (kimetsu no yaiba), kimetsu no yaiba, boy, muscular, vase, full body, ||鬼滅の刃|玉壺|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/6e7237d84b36b621.png|
+|zohakuten (kimetsu no yaiba)&#160;, kimetsu no yaiba, boy, pants, bare foot, standing, full body, ||鬼滅の刃|憎珀天|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b93ff80d2a2631fc.png|
+|akaza (kimetsu no yaiba), kimetsu no yaiba, boy, jacket, pants, bare foot, standing, full body, ||鬼滅の刃|猗窩座|V4.5 Full版使用。キャラクタープロンプト１のみ記述|https://image01.seesaawiki.jp/n/h/nai_ch/74b644f98a055f7b.png|
+|douma (kimetsu no yaiba), kimetsu no yaiba, boy, hat, jacket, shirt, hakama, sandals, holding fan, hand fan,&#160;standing, full body, ||鬼滅の刃|童磨|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/78cfacd22d995c1f.png|
+|kokushibou, kimetsu no yaiba, boy, kimono, hakama, sandals, holding katana,&#160;standing, full body, ||鬼滅の刃|黒死牟|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d3b869c0d6c182d2.png|
 |official style, kanzaki aoi (kimetsu no yaiba), kimetsu no yaiba, very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, head down bottom up, standing split, standing on one leg, bad anatomy, disfigured, poorly drawn, deformed, mutation,|鬼滅の刃|神崎アオイ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/jyEAnU7ho6.png|
 |official style, tsuyuri kanao, kimetsu no yaiba, very aesthetic, best quality, intricate, overall detail, 1 girl, purple eyes, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, head down bottom up, standing split, standing on one leg, bad anatomy, disfigured, poorly drawn, deformed, mutation,|鬼滅の刃|栗花落カナヲ|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/6JMVjddS3T.png|
 |official style, kochou kanae, kimetsu no yaiba, very aesthetic, best quality, intricate, overall detail, 1 girl, purple eyes, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, head down bottom up, standing split, standing on one leg, bad anatomy, disfigured, poorly drawn, deformed, mutation,|鬼滅の刃|胡蝶カナエ|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/pSa1tl2y2Z.png|
@@ -471,6 +589,14 @@
 |solo, franziska von karma, {{{azure hair, short hair, black skirt,skirt suit,sleeveless shirt, black shirt, puffy sleeves,white sleeves,bowtie,white bow,earrings}}},high heel||逆転裁判|狩魔冥||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tvJRNuqD3q-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tvJRNuqD3q.png]]|
 |}
 
+***　キャッツ・アイ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kisugi ai, cat's eye, girl, bare shoulders, collarbone, cleavage, orange bodysuit, sash, standing, full body, straight-on, ||キャッツ・アイ|来生愛|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/44c7e65402ba2b67.png|
+|kisugi rui, cat's eye, girl, brown hair, wavy hair, blue eyes, bare shoulders, collarbone, cleavage, purple bodysuit, sash, standing, full body, straight-on, ||キャッツ・アイ|来生泪|V4.5 Full版使用。キャラクタープロンプト１のみ記述。やや不安定。|https://image01.seesaawiki.jp/n/h/nai_ch/9648f95822df09a8.png|
+|kisugi hitomi, cat's eye, girl, bare shoulders, collarbone, cleavage, blue bodysuit, sash, standing, full body, straight-on, ||キャッツ・アイ|来生瞳|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/6f180a7f14428ada.png|
+|}
+
 ***　ギャラクシーエンジェル
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -481,6 +607,12 @@
 |mint blancmanche, galaxy angel, loli, blue hair, animal ears, short hair, brown eyes, ahoge, black thighhighs, white gloves, short dress, military uniform, open clothes, puffy sleeves, neck ribbon, solo, cowboy shot,||ギャラクシーエンジェル|ミント・ブラマンシュ|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DIN1OHntYK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/DIN1OHntYK.png]]|
 |milfeulle sakuraba, galaxy angel, pink hair, long hair, blue eyes, hair flower, puffy sleeves, pencil skirt,  solo, cowboy shot, |holding pencil,  |ギャラクシーエンジェル|ミルフィーユ・桜葉|V3版|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/M97RQk8jPW-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/M97RQk8jPW.png]]|
 |official style, 2d cel anime, {{milfeulle sakuraba}}, {{galaxy angel}}, very aesthetic, best quality, intricate, overall detail, 1 girl, pink hair, long hair, blue eyes, white hair flower, pink pencil skirt, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |^|^|V2使用。うろ覚えで描いている程度には似る。|https://image01.seesaawiki.jp/n/h/nai_ch/lYq7LPMp6Z.png|
+|}
+
+***　きゃんきゃんバニーシリーズ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|swatty (can can bunny)&#160;, can can bunny, girl, solo,  standing, full body, ||きゃんきゃんバニープルミエール|スワティ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/00435873d44d81d2.png|
 |}
 
 ***　キューティハニー
@@ -515,9 +647,17 @@
 |1girl, moegi emo, {{{{{{{{kiratto pri chan}}}}}}}}, yellow hair, green cheerleader, lightblue eyes, cowboy shot, grin, raise one leg,|ahoge|キラッとプリ☆チャン|萌黄えも|V3使用。なぜか高確率でアホ毛が出てくるので、ネガティブプロンプトに設定しておいた方が良い。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2T1TzLvtkD.png)|
 |}
 
+***　きらりん☆レボリューション
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|1girl, tsukishima kirari, kirarin revolution, long hair, two side up,  ||きらりん☆レボリューション|月島きらり|V4.5|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/a8cb8abbbd50c90f-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/a8cb8abbbd50c90f.png]]|
+|}
+
 ***　GUILTY GEAR (ギルティギア)
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
+|baiken &#40;guilty gear strive)||ギルティギア|梅喧||https://image01.seesaawiki.jp/n/h/nai_ch/4fbf6e728b9b113a.png|
 |{{ kuradoberi jam &#40; guilty gear ) &#40;red clothes) }}, 1 woman , solo , cowboy shot , kung fu style pose , one leg up ,||ギルティギア|蔵土縁紗夢 (クラドベリ ジャム)|V3使用|https://image01.seesaawiki.jp/n/h/nai_ch/upwgIKBBdk.png|
 |millia rage (guilty gear strive) (cool beauty woman), solo ,one-piece coat, cowboy shot , realistic ,||ギルティギア ストライヴ|ミリア=レイジ|V3使用 クール美人|https://image02.seesaawiki.jp/n/h/nai_ch/z9_lpX0AX_.png|
 |ramlethal valentine, guilty gear, dark skin, white hair, medium hair, yellow eyes, cape, short shorts, thigh strap, beltbra, belt, hat, underboob, white shorts, navel, expressionless, solo, cowboy shot, ||ギルティギア|ラムレザル=ヴァレンタイン|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3vPoIa6TDA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/3vPoIa6TDA.png]]|
@@ -537,6 +677,12 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, 1 girl, yuzuriha inori, guilty crown, orange costume, navel,||ギルティクラウン|楪 いのり|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/DruoZnlH7n-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/DruoZnlH7n.png]]|
+|}
+
+***　ギルドの受付嬢ですが、残業は嫌なのでボスをソロ討伐しようと思います
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+| alina clover (girumasu), long hair, multicolored hair, black hair, purple hair, swept bangs, black hair ribbon, single braid, white blouse, suspenders, black bowtie, jewelry, center frills, long sleeves, black skirt, belt, o-ring, white socks, mary janes, || ギルドの受付嬢ですが、残業は嫌なのでボスをソロ討伐しようと思います | アリナ・クローバー |v4.5|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/aa2b0be0f7183bc7-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/aa2b0be0f7183bc7.png]] |
 |}
 
 ***　キルミーベイベー
@@ -578,6 +724,12 @@
 |official style, kagurazaka yuna, ginga ojou-sama densetsu yuna, very aesthetic, best quality, intricate, overall detail, 1girl, blonde hair, green eyes, headphones, white leotard, elbow gloves, gem, knee boots, standing, smile, white background, front view, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |銀河お嬢様伝説ユナ|神楽坂優奈|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/lG9a2DQNEM.png|
 |}
 
+***　きんぎょ注意報
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|wapiko, kingyo chuuihou!, girl, clothed female, serafuku, white socks, loafers, standing, arms at side, full body, straight-on, ||きんぎょ注意報|わぴこ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c4028ba1bc351b2d.png|
+|}
+
 ***　銀魂
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -590,6 +742,19 @@
 ***　クイーンズブレイド
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|werbellia, queen's blade rebellion, girl, bikini armor, garter belt, thigh boots, standing, arms at side, full body, straight-on, ||クィーンズブレイドリベリオン|沼地の魔女ウェルベリア|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ac45e0f5f37d6665.png|
+|vante, queen's blade rebellion, girl, apron, thighhighs, boots, standing, arms at side, full body, straight-on, ||クイーンズブレイドリベリオン|錬金鋼人ヴァンテ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ef39b9d44ac1725d.png|
+|yuit (queen's blade), queen's blade rebellion, girl, green dress, cape, sandals, standing, arms at side, full body, straight-on, ||クイーンズブレイドリベリオン|錬金軍師ユイット|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/53b4c3868d25f1a1.png|
+|sigui (queen's blade), queen's blade rebellion, girl, habit&#160;, purple jacket, long sleeves, white skirt, armored boots, holding axe, chain, standing, full body, straight-on, ||クイーンズブレイドリベリオン|異端審問官シギィ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/57a6171856eaf4e2.png|
+|tarnyang (queen's blade), queen's blade rebellion, girl, red china dress, long sleeves, shoes, standing, full body, straight-on, ||クイーンズブレイドリベリオン|対魔師ターニャン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c0489724db5d0099.png|
+|sainyang (queen's blade), queen's blade rebellion, girl, white china dress, long sleeves, mini skirt, white thighhighs, shoes, standing, full body, straight-on, ||クイーンズブレイドリベリオン|対魔師サイニャン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。首から下げている鞄が再現されない。|https://image02.seesaawiki.jp/n/h/nai_ch/03c1700b6b6072de.png|
+|mirim, queen's blade rebellion, girl, bikini armor, armored boots, holding sword, standing, full body, straight-on, ||クイーンズブレイドリベリオン|超振動戦乙女ミリム|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/6b01089f189bdf8c.png|
+|luna luna (queen's blade), queen's blade rebellion, girl, revealing clothes, pearl thong, penis sheath, fishnet thighhighs, sandals, standing, full body, straight-on, ||クイーンズブレイドリベリオン|月影の踊り手ルナルナ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/e72cf1999307ddd7.png|
+|laila (queen's blade), queen's blade rebellion, girl, mechanical wings, hat, armor, skirt, boots, holding gun, standing, full body, straight-on, ||クイーンズブレイドリベリオン|神罰の執行者ライラ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/e95903a9425adbb6.png|
+|captain liliana, queen's blade rebellion, girl, hat, coat, crop top, skirt, boots, holding sword, standing, full body, straight-on, ||クイーンズブレイドリベリオン|大海賊キャプテン・リリアナ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/900c5d0f7e11e67c.png|
+|branwen (queen's blade), queen's blade rebellion, girl, bikini armor, holding sword, holding shield, sandals, standing, full body, straight-on, ||クイーンズブレイドリベリオン|囚われの竜戦士ブランウェン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/bd58978db049947b.png|
+|knight princess annelotte, queen's blade rebellion, girl, cape, armor, skirt, armored boots, holding sword, standing, full body, straight-on, ||クイーンズブレイドリベリオン|叛乱の騎士姫アンネロッテ・クロイツ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/64800ba6ffef6e10.png|
+|summoner aldra, queen's blade rebellion, girl, apron, armor, side-tie panties, thigh boots, standing, full body, straight-on, ||クイーンズブレイドリベリオン|召喚士アルドラ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/e87b03f2bcf45695.png|
 |official style, 2d cel anime, {{airi (the infernal temptress)}}, {{queen's blade}}, very aesthetic, best quality, intricate, overall detail, 1 girl, twin tails, blue eyes, small breasts, maid apron, upper cleavage, black-thighhighs, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |クイーンズブレイド|冥土へ誘うものアイリ|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/8CCP197EdR.png|
 |official style, alleyne (queen's blade), queen's blade, shiny skin, serious, attack form, transparent background, cowboy shot,|caramel skin, |クイーンズブレイド|戦闘教官アレイン|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/411a7a74fc8d858d.png)|
 |}
@@ -721,7 +886,6 @@
 |best quality, anime,official style,{{{{1girl,komine sachi,grisaia no kajitsu}}}},loli,medium breasts,very short hair,pink hair,light smile, maid costume,long skirt,masterpiece ,best quality ,high quality, amazing quality ,great quality, very aesthetic, ai-generated, ai-assisted, absurdres ,highres, ultra highres,detailed ,hyper detailed, insanely detailed and intricate, beautiful detailed,simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed)|lowres, {bad}, error, fewer, extra, missing, worst quality, jpeg artifacts, bad quality, watermark, unfinished, displeasing, chromatic aberration, signature, extra digits, artistic error, username, scan, [abstract], {{{{3d,anime,realistic art,old art}}}}, blurry, simple design, {{4fingers,6fingers,bad fingers}}, boy, elf ears, fat|グリザイアの果実|小嶺　幸|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bMTLbJmiUn-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/bMTLbJmiUn.png]]|
 |}
 
-
 ***　グリム童話
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -733,6 +897,7 @@
 ***　グレネーダー 〜ほほえみの閃士〜
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{tendou rushuna},{grenadier &#40;anime)},{grenadier &#40;manga)},{huge_breasts},{official art},blond_hair,long_hair,straight_hair,yellow_eyes,{tall female},{mature female},{anime_coloring},{hi-vision_anime},solo,girl,slender,slim,skinny,{8k},{best quality},{very aesthetic},{masterpiece},cowboy_shot,{official style},{nai_diffusion_v4.5},{inoue_hideki&#40;data in year 2022)},|1.5::{missing fingers},{deteriorated fingers},{broken finger},{low fingers},{rough fingers},{four fingers},::,lowers,jpeg artifacts,{low quality},worst quality,{high school_dxd_hero,drawn_by artist:uno_makoto},{bad shape nipples},{small nipples},{worst breasts},{saggy breasts},{black nipples},film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, multiple views, logo, too many watermarks, lowers, bokeh, worst quality, low quality,ugly, error, jpeg artifacts, extra digits,long body,cubism,bad anatomy,low quality,error, {ponytail},{manga art},blurry,inverted nipple,3d,poorly drawn,hidden nipples,{minigirl},thick eyebrows,{disrupted background},|グレネーダー 〜ほほえみの閃士〜|天道琉朱菜|V4.5使用。|https://image01.seesaawiki.jp/n/h/nai_ch/02a4ab2d3157100f.png|
 |tendou rushuna,grenadier &#40;anime),huge breasts,blond hair,long hair, straight hair,small eyelid,yellow eyes,long skirt,tall female,anime coloring,very aesthetic, best quality, intricate, overall detail, 1girl, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent,ultra-high resolution, highly finished, smooth, shiny shading,smile,cowboy shot, official art,official hairstyle,|3d,poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,bad shape nipple,small nipple,worst breasts,sagging breasts,missing fingers,bad anatomy, blurry,low quality,error,text,|グレネーダー 〜ほほえみの閃士〜|天道琉朱菜|V4使用。|https://image01.seesaawiki.jp/n/h/nai_ch/TX6l_zRf1j.png|
 |{{{official art}}},{{tendou rushuna}}},{{{grenadier &#40;anime)}}},{{huge breasts}},big eyes,tareme,blond hair,long hair, straight hair,yellow eyes,{{tall female}},anime coloring,very aesthetic, best quality, intricate, overall detail, 1girl, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},smile,long skirt,cowboy shot, {{{arms behind back}}},|3d,slit pupil,upturned eyes,solid eyes,{{{tsurime}}},poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|グレネーダー 〜ほほえみの閃士〜|天道琉朱菜|V4 Curated Preview版使用。服装は不安定、漫画寄りになってしまい。slit pupil,upturned eyes,solid eyes,{{{tsurime}}},などのネガティブプロンプトを推奨|https://image02.seesaawiki.jp/n/h/nai_ch/EGUADJMPEq.png|
 |official style, anime coloring, {{{{tendou rushuna, grenadier (manga) }}}}, very aesthetic, best quality, intricate, overall detail, nsfw, 1girl, blonde hair, long hair, straight hair, antenna hair, parted bangs, yellow eyes, large breasts, earrings, jewel, naked towel , standing, white background, looking at viewer, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated,|グレネーダー 〜ほほえみの閃士〜|天道琉朱菜|V3使用。プロンプトだけだとこのぐらいが限界。これより似せようと思ったらバイブスとかを併用するしかない。|https://image01.seesaawiki.jp/n/h/nai_ch/zZAw2tI9YR.png|
@@ -748,12 +913,27 @@
 |official style, anime coloring, {{nohara misae}}, crayon shin-chan, very aesthetic, best quality, intricate, overall detail, 1 girl, adult, brown hair, medium hair, wavy hair, black eyes, casual clothes, pink shirt, blue pants, standing, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |^|^|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/21xnublFDh.png|
 |}
 
+***　黒獣 〜気高き聖女は白濁に染まる〜
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kuroinu kedakaki seijo wa hakudaku ni somaru,Alicia Arcturus||黒獣|アリシア・アルクトゥールス|4..5|https://image02.seesaawiki.jp/n/h/nai_ch/b32ae121c61cc112.png|
+|kuroinu kedakaki seijo wa hakudaku ni somaru,prim fiorire||黒獣|プリム・フィオリーレ|4.5|https://image01.seesaawiki.jp/n/h/nai_ch/102755b00001c7e1.png|
+|kuroinu kedakaki seijo wa hakudaku ni somaru,celestine lucullus||黒獣|セラフィーナ・レナトゥス|4.5|https://image02.seesaawiki.jp/n/h/nai_ch/fa8c767528a59b4b.png|
+|kuroinu kedakaki seijo wa hakudaku ni somaru,olga discordia||黒獣|オリガ・ディスコルディア|4.5|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7c95f7cf46b79ffa-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/7c95f7cf46b79ffa.png]]|
+|}
+
 ***　黒子のバスケ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |momoi_satsuki, kuroko_no_basuke||黒子のバスケ|桃井さつき|V4|https://image02.seesaawiki.jp/n/h/nai_ch/CUxALYRTT3.png https://image02.seesaawiki.jp/n/h/nai_ch/uV3KpFFU3e.png|
 |aida_riko, kuroko_no_basuke||黒子のバスケ|相田リコ|V4|https://image01.seesaawiki.jp/n/h/nai_ch/UWG0gQ_5MG.png https://image02.seesaawiki.jp/n/h/nai_ch/RTeKVYS0xn.png|
 |kuroko_tetsuya, kuroko_no_basuke||黒子のバスケ|黒子テツヤ|V4|https://image02.seesaawiki.jp/n/h/nai_ch/v5Fe8IhWn1.png https://image01.seesaawiki.jp/n/h/nai_ch/r4jBRUjXcF.png|
+|}
+
+***　黒先輩と黒屋敷の闇に迷わない
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|senpai (kuro senpai), kuro senpai to kuro yashiki no yami ni mayowanai, girl, clothed female, serafuku, black sailor collar, blue neckerchief, black skirt, black pantyhose, loafers, standing, full body,||黒先輩と黒屋敷の闇に迷わない|黒先輩|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/d353f7fb48e5bb7c.png|
 |}
 
 ***　CLOSERS
@@ -809,13 +989,17 @@
 ***　GATE - 自衛隊彼の地にて、斯く戦えり
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|rory mercury,gate - jieitai ka no chi nite kaku tatakaeri||GATE - 自衛隊彼の地にて、斯く戦えり|ロゥリィ・マーキュリー||https://image02.seesaawiki.jp/n/h/nai_ch/f0290d0595cc7c51.png|
 |official style, anime coloring, tuka luna marceau, gate - jieitai ka no chi nite kaku tatakaeri, best quality, intricate, overall detail, 1girl, elf, blonde hair, very long hair, blue eyes, small breasts, shiny skin, white t-shirt, midriff,  jeans, sneakers, standing, white back ground, facing away, close to viewer, full body, face focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |GATE - 自衛隊彼の地にて、斯く戦えり|テュカ・ルナ・マルソー|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/fnB5z6N3zq.png|
 |}
 
 ***　ゲゲゲの鬼太郎
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|nezumi otoko, gegege no kitarou, boy, traditional youkai, hooded cloak, long sleeves, bare foot, standing, arms at side, full body, straight-on, -3.0::bare legs::,||ゲゲゲの鬼太郎|ねずみ男|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/6d6877033e4cc191.png|
+|kitarou, gegege no kitarou, boy, shirt, vest, shorts, sandals, standing, arms at side, full body, straight-on, ||ゲゲゲの鬼太郎|鬼太郎|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/28ab8fcd26ff7d68.png|
 |official style,inuyama mana,gegege no kitarou,1 girl,short ponytail,hairclip,white shirt,long sleeves,necktie,green skirt,black socks,loafers,small breasts,||ゲゲゲの鬼太郎|犬山 まな|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/keVSrOIwY8-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/keVSrOIwY8.png]]|
+|nekomusume (gegege no kitarou 5), gegege no kitarou, girl, white shirt, red pinafore dress, red shoes, standing, arms at side, full body, straight-on, ||ゲゲゲの鬼太郎|猫娘(5期)|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9fdc46652c3d0250.png|
 |official style,nekomusume (gegege no kitarou 6),1 girl,||ゲゲゲの鬼太郎|猫娘(6期) |V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/X56PGc82Sv-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/X56PGc82Sv.png]]|
 |official style, 2d cel anime, {{nekomusume (gegege no kitarou 6)}}, {{gegege no kitarou 6}}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゲゲゲの鬼太郎|猫娘（６期）|V2使用。キャラ造形がかなり忠実に再現される。|https://image02.seesaawiki.jp/n/h/nai_ch/fJUuw5DV0f.png|
 |}
@@ -826,13 +1010,32 @@
 |official style, 2d cel anime, {{sakura chiyo}}, {{gekkan shoujo nozaki-kun}}, very aesthetic, best quality, intricate, overall detail, 1 girl, purple eyes, school uniform, standing, :d, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |月刊少女野崎くん|佐倉千代|V2使用。キャラ造形がかなり忠実に再現される。リボンの柄は指定しなくても水玉模様になるが、確実性を持たせるなら指定した方がいいかも。|https://image01.seesaawiki.jp/n/h/nai_ch/kCgvePAHDJ.png|
 |}
 
+***　けっこう仮面
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kekkou kamen (character), kekkou kamen, girl, red full-face mask, brown eyes, nude, red gloves, red boots, heart censor, standing, full body, |hair,|けっこう仮面|けっこう仮面|V4.5 Full版使用。キャラクタープロンプト１のみ記述。こういう設定のキャラなのでheart censorを入れて修正が入るようにしています。|https://image01.seesaawiki.jp/n/h/nai_ch/340d8f9f8764d321.png|
+|}
+
 ***　月曜日のたわわ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|rikei-chan (tawawa), getsuyoubi no tawawa, girl, purple eyes, clothed female, lab coat, green sweater, black pants, shoes, standing, jitome, full body,||月曜日のたわわ|理系ちゃん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/072f55f7170fb929.png|
+|jitome-chan (tawawa), getsuyoubi no tawawa, girl, purple eyes, clothed female, traditional miko, kimono, hakama skirt, sandals, standing, jitome, full body,||月曜日のたわわ|ジト目ちゃん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/97cba6f65acfb7f8.png|
+|maegami-chan (tawawa), getsuyoubi no tawawa, girl, clothed female, blazer, jacket, neck ribbon, skirt, black pantyhose, loafers, standing, full body,||月曜日のたわわ|前髪ちゃん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/27d88ab1e9244bce.png|
+|volley-bu-chan (tawawa), getsuyoubi no tawawa, girl, clothed female, volleyball uniform, sleeveless shirt, black shorts, elbow pads, white socks, sneakers, standing, full body,||月曜日のたわわ|バレー部ちゃん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3a8b434f9899d451.png|
+|cheer-chan (tawawa), getsuyoubi no tawawa, girl, clothed female, cheerleader, crop top, skirt, bike shorts, white socks, sneakers, pom pom (cheerleading), standing, full body,||月曜日のたわわ|チアちゃん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/5040a662d29e1f52.png|
+|ai-chan's sister (tawawa), getsuyoubi no tawawa, girl, clothed female, blazer, jacket, necktie, shirt, skirt, black socks, slippers, standing, full body,||月曜日のたわわ|妹ちゃん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/048e8701148f59a6.png|
+|ai-chan's mother (tawawa), getsuyoubi no tawawa, girl, low ponytail, clothed female, white sweater, denim pants, slippers, standing, full body,||月曜日のたわわ|アイちゃんのお母さん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/894565f923103c53.png|
 |kouhai chan (tawawa), getsuyoubi no tawawa,full body,standing,suit,|汎用プロンプト|月曜日のたわわ|後輩ちゃん|V4|https://image01.seesaawiki.jp/n/h/nai_ch/DlRyWjvjkd.png|
 |ai-chan (tawawa), getsuyoubi no tawawa, brown hair, short hair, braid, purple eyes, |monochrome, traditional media,  |月曜日のたわわ|アイちゃん|V3版|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/tcaNS2NuCO-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/tcaNS2NuCO.png]]|
 |official style, 2d cel anime, {{ai-chan (tawawa)}}, {{getsuyoubi no tawawa}}, very aesthetic, best quality, intricate, overall detail, 1 girl, brown hair, purple eyes, large breasts, school uniform, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |^|^|V2使用。色を指定しないと原作の作風になる（上）。色指定すればきちんとカラーになる（下）。胸は原作より控えめになりやすいので指定した方がいい。|https://image02.seesaawiki.jp/n/h/nai_ch/UwZ1fbF_sM.png https://image01.seesaawiki.jp/n/h/nai_ch/SQiVYm8pNJ.png|
+|}
+
+***　ケメコデラックス
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|mm (kemeko deluxe), kemeko deluxe, girl, clothed female, white bodysuit, standing, arms at side, full body, straight-on, ||ケメコデラックス|エムエム|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1213b43543ad8a4b.png|
+|kemeko (kemeko deluxe)&#160;, kemeko deluxe, girl, no humans, robot, red bodysuit, standing, arms at side, full body, straight-on, ||ケメコデラックス|ケメコ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/1ac14a18481685f8.png|
 |}
 
 ***　けものフレンズ
@@ -880,9 +1083,10 @@
 ***　ケロロ軍曹
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|girl,{{official art}},nishizawa momoka,keroro gunsou, 2.0::smile::,school uniform,||ケロロ軍曹|西澤桃華|V4.5使用|https://image02.seesaawiki.jp/n/h/nai_ch/65a5fa51526cc29a.png|
 |angol mois (angol form)&#160;, keroro gunsou, girl, white hair, brown eyes, -3.0::dark skin, tan, dark-skinned female::, hat, neck ruff, collarbone, cleavage, cape, purple shirt, white puffy shorts, white boots, holding weapon, full body,|lowres, aliasing, |ケロロ軍曹|アンゴル=モア（アンゴル族の姿）|V4.5 Curated版使用。キャラクタープロンプト１のみ記述。服装は完全再現しない。|https://image01.seesaawiki.jp/n/h/nai_ch/bf3e3059813d0158.png|
 |1 girl, {{azumaya koyuki}}, keroro gunsou, green hair, green eyes, :3, neck, groin, slender figure, tiny breast, low long ponytail, {{{Blue collar shirt}}}, Blue chest ribbon, blue skirt, White high socks, White Sneakers, standing, loincloth,|glasses, muffler, neckwear, three-sided view, 2 girl,  big breasts, star, choker &#40;type of necklace), wristband, pussy,|ケロロ軍曹|東谷小雪|V3使用。夏服ver。セーラー服を指定すると胸のスカーフが赤くなるので使用してない、逆に髪留めのリボンもたまに青くなる。|https://image01.seesaawiki.jp/n/h/nai_ch/xkxcCyHKsG.png|
-|official style, anime coloring, azumaya koyuki, keroro gunsou, very aesthetic, best quality, intricate, overall detail, 1 girl, green hair, low ponytail, green eyes, ninja costume, sleeveless, sash, bare legs, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |ケロロ軍曹|東谷小雪|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/QNPr6AO_1u.png|
+|official style, anime coloring, azumaya koyuki, keroro gunsou, very aesthetic, best quality, intricate, overall detail, 1 girl, green hair, low ponytail, green eyes, ninja costume, sleeveless, sash, bare legs, standing,  cowboy shot,  intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |ケロロ軍曹|東谷小雪|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/QNPr6AO_1u.png|
 |official style, anime coloring, alisa southerncross, keroro gunsou, very aesthetic, best quality, intricate, overall detail, 1 girl, red eyes, black dress, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |ケロロ軍曹|アリサ・サザンクロス|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/8uY_pDh454.png|
 |official style, keroro, keroro gunsou, very aesthetic, best quality, intricate, overall detail, no human, 1 other, chibi, nude, standing, simple background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |ケロロ軍曹|ケロロ軍曹|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/YsbAUDKKnv.png|
 |official style, hinata aki, keroro gunsou, very aesthetic, best quality, intricate, overall detail, 1 girl, milf, mature female, blue hair, ponytail, blue eyes, pince-nez, casual clothes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |ケロロ軍曹|日向秋|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/djd_Gexv9g.png|
@@ -894,7 +1098,7 @@
 ***　原神
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|kamisato ayaka (springbloom missive)&#160;, genshin impact, girl, blue hair, blue eyes, hat, blue dress, white pantyhose, brown boots, full body, |panty shot,|原神|神里綾華（花時に訪れた手紙）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/4230133566600ab2.png|
 |official style, game cg, sucrose (genshin impact) , genshin impact, very aesthetic, best quality, intricate, overall detail, 1girl, green hair, orange eyes, beret, cape, blue dress, white gloves, showgirl skirt, garter straps, black thighhighs, white boots, standing, smile, white background, looking at another, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, |原神|スクロース|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/5X6dzNbFvs.png|
 |1boy, bennett (genshin impact), white hair, short hair, green eyes, goggles on head, bandaid on nose, scar on arm, navel cutout, | |原神|ベネット|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0U1hkScJAp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/0U1hkScJAp.png]]|
 |1boy, kaedehara kazuha, genshin impact, white hair, red hair, low ponytail, ahoge, red eyes, cowboy shot,   | |原神|楓原万葉|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jRZ9tFUzzl-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/jRZ9tFUzzl.png]]|
@@ -942,11 +1146,29 @@
 |genshin,mona&#40;genshin),masterpiece,black hair,green eyes,light twin tail,1girl,black tights,{small breasts},{short girl},blue clothes,witch hat,straight bangs,||原神|モナ||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3M2hc2hLIR.png)]]|
 |{{{keqing (genshin impact))}}}, light purple eyes, twintails, light purple hair, long hair, cone hair bun, medium breasts, slender, narrow waist, 15 years old, {turime}, brown pantyhose, bare shoulders, detached sleeves, deep purple gloves, purple dress,  purple frilled skirt,,1girl, solo, ,cowboy shot,,year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, absurdres,  ||原神|刻晴||https://image02.seesaawiki.jp/n/h/nai_ch/uBar6sW8GD.png|
 |}
+
+***　けんぷファー
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|sakura kaede, kampfer, girl, clothed female, seitetsu academy school uniform, black socks, loafers, standing, arms at side, full body, straight-on, ||けんぷファー|沙倉楓|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c42e0e6eb69fec2c.png|
+|kondou mikoto, kampfer, girl, clothed female, seitetsu academy school uniform, black thighhighs, loafers, standing, arms at side, full body, straight-on, ||けんぷファー|近堂水琴|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9801907d104004ac.png|
+|sangou shizuku, kampfer, girl, clothed female, seitetsu academy school uniform, black thighhighs, loafers, standing, arms at side, full body, straight-on, ||けんぷファー|三郷雫|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/6ab12aef2afd6fda.png|
+|mishima akane, kampfer, girl, clothed female, yellow hairband, seitetsu academy school uniform, black socks, loafers, standing, arms at side, full body, straight-on, ||けんぷファー|美嶋 紅音|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/0ac29a3d8c6956e8.png|
+|senou natsuru, kampfer, girl, clothed female, seitetsu academy school uniform, blue thighhighs, loafers, standing, arms at side, full body, straight-on, ||けんぷファー|瀬能ナツル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/5c77351f19bd5b1d.png|
+|}
+
+***　幻夢戦記レダ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|yoni (leda), genmu senki leda, girl, blonde hair, 0.5::spiked hair::, blue eyes, forehead protector, earrings, green cape, single shoulder pad, red bikini, red boots, holding wand, standing, full body, straight-on, -3.0::armor::,||幻夢戦記レダ|ヨニ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。装備の再現性は低い。|https://image01.seesaawiki.jp/n/h/nai_ch/08056e12c8f539a6.png|
+|asagiri youko, genmu senki leda, girl, shoulder armor, bikini armor, armored boots, holding sword, standing, full body, straight-on, ||幻夢戦記レダ|朝霧陽子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c0d664901e7dafa1.png|
+|}
 **こ
 &aname(hanken_koihime)
 ***　恋姫†無双
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|riri (koihime musou), koihime musou,    |  |恋姫†無双|璃々|V4.5|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dd3c69b6e3b16bb1-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/dd3c69b6e3b16bb1.png]]|
 |enshou, koihime musou, blonde hair, drill hair, very long hair, , green eyes, large breasts, thighhighs, official art, game cg, cowboy shot,    |  |恋姫†無双|袁紹|V4 Curated Preview|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5lb7_4nNTD-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/5lb7_4nNTD.png]]|
 |jun'iku, koihime musou, brown hair, short hair, wavy hair, hair intakes, hat, cowboy shot,   |  |恋姫†無双|荀��|V4 Curated Preview|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/u81QZefRug-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/u81QZefRug.png]]|
 |ryofu, koihime musou, red hair, short hair, antenna hair, cowboy shot,  |  |恋姫†無双|呂布|V4 Curated Preview|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZGK0K5b9UT-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ZGK0K5b9UT.png]]|
@@ -990,6 +1212,14 @@
 |{{{{kagami tina}}}}, kouchuu ouja mushiking, loli, heart tattoo, facial tattoo, long hair, brown hair, brown eyes, short two side up, hair between eyes, smirk, heart necklace, jacket, short sleeves, skirt, cropped jacket, wristband, open jacket, red jacket, white shirt, pink skirt, dress, head tilt, solo, cowboy shot,||^|^|V3。特徴的なハートのタトゥーは難しい模様|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BgvVRBzbsI-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/BgvVRBzbsI.png]]|
 |}
 
+***　鋼鉄天使くるみ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|karinka, koutetsu tenshi kurumi, girl, clothed female, purple hat, purple long sleeves, neck tie, purple leotard, red bra, clothing cutout, navel, red panties, thigh boots, standing, arms at side, full body, straight-on, ||鋼鉄天使くるみ|カリンカ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/42b85369afcc659d.png|
+|saki (koutetsu tenshi kurumi), koutetsu tenshi kurumi, girl, clothed female, maid headdress, white dress, apron, black pantyhose, white boots, standing, arms at side, full body, straight-on, ||鋼鉄天使くるみ|サキ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d38c52c714778b78.png|
+|kurumi (koutetsu tenshi kurumi), koutetsu tenshi kurumi, girl, clothed female, maid headdress, blue dress, apron, thighhighs, standing, arms at side, full body, straight-on, ||鋼鉄天使くるみ|くるみ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/7c85830744251908.png|
+|}
+
 ***　甲鉄城のカバネリ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -999,6 +1229,7 @@
 ***　コードギアス反逆のルルーシュ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|Cornelia li Britannia,code geass: dakkan no roze,anieme screencap,||コードギアス 奪還のロゼ|コーネリア・リ・ブリタニア|V4|https://image02.seesaawiki.jp/n/h/nai_ch/d8008816e3487442.png|
 |sumeragi sakuya,code geass: dakkan no roze,   black hair, purple eyes,very long hair, huge breasts,solo,1girl,slender,slim,skinny,masterpiece,anime coloring,cowboy shot,official art,official hairstyle,|blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, multiple views, logo, too many watermarks, 3d,poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,bad shape nipple,small nipple,worst breasts,sagging breasts,missing fingers,bad anatomy, blurry,low quality,error,text,|コードギアス 奪還のロゼ|皇サクヤ|V4使用|https://image02.seesaawiki.jp/n/h/nai_ch/4dHk4jP87g.png|
 |{{ kallen stadtfeld &#40; code geass ) &#40; playboy bunny ) }}, solo , cowboy shot ,||コードギアス反逆のルルーシュ|カレン|V3使用。バニーガール(日) = playboy bunny(英)らしい。|https://image02.seesaawiki.jp/n/h/nai_ch/Vo1Fa0pRVI.png|
 |official style, 2d cel anime, {{Nunnally Lamperouge}}, {{code geass}}, very aesthetic, best quality, intricate, overall detail, 1 girl,light smile,facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, &#40;highly detailed),sitting, wheelchair,close eyes||コードギアス反逆のルルーシュ|ナナリー・ランペルージ|V3使用　目を開かせたい場合はclose eyes外す|https://image01.seesaawiki.jp/n/h/nai_ch/50Lhw3nU2E.png|
@@ -1009,6 +1240,12 @@
 ***　GS美神 極楽大作戦!!
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|boy,{{{ghost_sweeper_mikami,dr. chaos}}},Author: Shiina Takashi,Casual wear||GS美神 極楽大作戦!!|ドクター・カオス|V4.5使用。|https://image01.seesaawiki.jp/n/h/nai_ch/9dd6f369f384ae50.png|
+|boy,{{{ghost_sweeper_mikami,yokoshima tadao}}},Author: Shiina Takashi,Casual wear||GS美神 極楽大作戦!!|横島 忠夫|V4.5使用。普段着が出にくい|https://image01.seesaawiki.jp/n/h/nai_ch/6b7dc8e3aebce6ff.png|
+|girl,{{{ghost_sweeper_mikami,ogasawara emi}}},Author: Shiina Takashi,||GS美神 極楽大作戦!!|小笠原エミ|V4.5使用|https://image01.seesaawiki.jp/n/h/nai_ch/f38310e7234d59d4.png|
+|girl,{{{ghost_sweeper_mikami,rokudou meiko}}},Author: Shiina Takashi,||GS美神 極楽大作戦!!|六道冥子|V4.5使用|https://image02.seesaawiki.jp/n/h/nai_ch/aaf6bdb90681a519.png|
+|girl,{{{ghost_sweeper_mikami,maria}}},Author: Shiina Takashi,||GS美神 極楽大作戦!!|マリア|V4.5使用|https://image02.seesaawiki.jp/n/h/nai_ch/c6d190d8b84131a2.png|
+|girl,{{{ghost_sweeper_mikami,himuro kinu}}},Author: Shiina Takashi,miko||GS美神 極楽大作戦!!|氷室キヌ|V4.5使用|https://image02.seesaawiki.jp/n/h/nai_ch/0e352bb4e5d5fc79.png|
 |{{{official style}}},2d cel anime,{{{ghost_sweeper_mikami,mikami_reiko}}},Author: Shiina Takashi ,1girl, long hair,jewelry,solo,necklace,strapless dress, large breasts,long hair, orange hair,earrings,1990s &#40;style),bare shoulders, smile,purple bare top mini dress, tube top,looking at viewer, aqua eyes, bare legs,,cowboy shot,intricate, hyper-detailed, amazing quality, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism,|GS美神 極楽大作戦!!|美神 令子|V4 Curated Preview版使用。髪の生成がやや不安定。|https://image01.seesaawiki.jp/n/h/nai_ch/IDd9V25KBM.png|
 |}
 
@@ -1118,6 +1355,7 @@ multiple breasts,&#40;mutated hands and fingers:1.5 ),&#40;long body :1.3),&#40;
 ***　琴浦さん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kotoura haruka (anime),kotoura-san,full body||琴浦さん|琴浦春香|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/a59eeb41b167bdfe.png|
 |official style, 2d cel anime, {{kotoura haruka}}, {{kotoura-san}}, very aesthetic, best quality, intricate, overall detail, 1 girl, slender, orange hair, short hair, orange eyes, serafuku, school uniform, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |琴浦さん|琴浦春香|V2使用。それほど似ない。|https://image02.seesaawiki.jp/n/h/nai_ch/FbiKk6Mo8W.png|
 |}
 
@@ -1147,6 +1385,22 @@ multiple breasts,&#40;mutated hands and fingers:1.5 ),&#40;long body :1.3),&#40;
 |darkness_(&#91;&#91;&#91;&#91;&#91;&#91;konosuba]]]]]]), long hair, yellow hair, blue eyes, ponytail, medium breasts, {{x}} hair ornaments, black gloves,  |hair intakes, aqua, megumin,  evil, blue hair, sphere, hair bow, horn, blue hair ornament, |この素晴らしい世界に祝福を|ダクネス|どうしてもアクアの髪留めが出やすい。hair ornamentsがアクアの髪留めを誘発しているので、ダクネスの髪留めを諦めていいなら外すのもあり。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/NKcLygECia.png]]|
 |}
 
+***　この醜くも美しい世界
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|urushima sakurako, kono minikuku mo utsukushii sekai, girl, solo, serafuku, white shirt, yellow vest, brown skirt, white socks, loafers, standing, full body, ||この醜くも美しい世界|漆島桜子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/1eef718bad615677.png|
+|nishino mari, kono minikuku mo utsukushii sekai, girl, solo, serafuku, white shirt, brown skirt, white socks, loafers, standing, full body, ||この醜くも美しい世界|西野マリ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b8375d9c054cc55f.png|
+|ninomiya kimi, kono minikuku mo utsukushii sekai, girl, solo, white shirt, red shorts, shoes, standing, full body, ||この醜くも美しい世界|二ノ宮紀美|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/e04582e7d2f1937f.png|
+|kurebayashi amika, kono minikuku mo utsukushii sekai, girl, solo, ponytail, serafuku, white shirt, brown skirt, white socks, loafers, standing, full body, ||この醜くも美しい世界|紅林浴香|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/73022589890dde50.png|
+|jennifer portman, kono minikuku mo utsukushii sekai, girl, solo, lab coat, black crop-top, black skirt, black pantyhose, black heels, standing, full body, ||この醜くも美しい世界|ジェニファー・ポートマン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/7e866df23bb5232d.png|
+|akari (konomini), kono minikuku mo utsukushii sekai, girl, solo, blue jacket, red bowtie, white skirt, white thighhighs, blue shoes, standing, full body, ||この醜くも美しい世界|アカリ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1c0d435fff1dbece.png|
+|hikari (konomini), kono minikuku mo utsukushii sekai, girl, solo, hat, purple jacket, red bowtie, white skirt, black socks, black shoes, standing, full body, ||この醜くも美しい世界|ヒカリ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9d8d5dcf5fe14b75.png|
+|}
+***　この中に１人、妹がいる！
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|2d cel anime,official style,,,,,,,,,Kono Naka ni Hitori, Imouto ga Iru!,Kannagi Miyabi, ||この中に１人、妹がいる！|神凪 雅||https://image02.seesaawiki.jp/n/h/nai_ch/43ff0f2eea546a5b.png|
+|}
 ***　小林さんちのメイドラゴン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1174,6 +1428,7 @@ multiple breasts,&#40;mutated hands and fingers:1.5 ),&#40;long body :1.3),&#40;
 ***　古見さんは、コミュ症です。
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
 |komi shouko, komi-san wa komyushou desu, purple hair, long hair, | |古見さんは、コミュ症です。|古見硝子|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/UWs94byhK2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/UWs94byhK2.png]]|
 |official style, 2d cel anime, {{komi shouko}}, {{komi-san wa komyushou desu}}, very aesthetic, best quality, intricate, overall detail, 1 girl, playboy bunny, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |^|^|V2使用。|https://image01.seesaawiki.jp/n/h/nai_ch/UZWnDZcJQp.png|
 |}
@@ -1190,6 +1445,5 @@ multiple breasts,&#40;mutated hands and fingers:1.5 ),&#40;long body :1.3),&#40;
 |shinozaki ai (corrector yui), corrector yui, girl, black hair, purple eyes, magical girl, black shirt, purple corset, black skirt, black pantyhose, black highheels, standing, holding wand, light smile, full body, |lowers, aliasing, corrector yui,|コレクター・ユイ|コレクター・アイ|V4 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/PcrWUI38Ra.png|
 |kasuga yui, corrector yui, girl, orange hair, red eyes, magical girl, standing, holding wand, smile, full body, |lowers, aliasing,|コレクター・ユイ|コレクター・ユイ|V4 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/eBvllVpqU_.png|
 |}
-
 
 

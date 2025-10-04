@@ -1,10 +1,9 @@
 #contents
 
-* モデル
+* 画像生成モデル
 
-広義では、HypernetworkやLoraで作成したファイルなども含まれるが、
-ここではいわゆるCheckpointの話をする。
-2025年4月時点でSDXLが主流だが、次世代モデルはSD3.5 Mediumが定番になるかも
+広義では、HypernetworkやLoraで作成したファイルなども含まれるが、ここではいわゆるCheckpointの話をする。
+2025年8月時点で依然としてSDXLが主流。次世代DiTモデルはFine-tuningが難しいとされる上、パラメータ数が増加して重くなるばかり。そのため、この状況が変わらない限り変化はないだろう。
 
 ** Stable Diffusionのバージョン
 *** SD1
@@ -12,8 +11,8 @@ SD1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - U-Netアーキテクチャ
 - 860M(8.6億)パラメータ
 - 基礎解像度は512x512
-- そのまま使える。
-- 軽量だが低性能
+- 軽量かつ古いため低性能
+- 欠陥のあるVAE(アーティファクトが発生したり特殊なノイズに弱かったりする)
 - 文章は全く生成できない
 
 *** SD2
@@ -21,8 +20,8 @@ SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 - U-Netアーキテクチャ
 - 865M(8.65億)パラメータ
 - 基礎解像度は768x768
-- 文章は全く生成できない
-- 使うためには同名のyamlファイルを設置する必要がある。
+- SD1と大差無し
+- 使うためにはconfigファイル(yaml)を設置する必要がある。
 - 大抵はモデルの配布元が配っている。
 -- 無い場合は SD2.xのyamlを使ってみるとか。
 
@@ -30,34 +29,32 @@ SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 SDXL Base 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - U-Netアーキテクチャ
 - 2.6B(26億)パラメータ
-- BaseとRefinerの二種類が存在する
+- BaseとRefinerの二種類が存在する(通常はBaseのみでok)
 - 基礎解像度の1024x1024への変更とVAEの改良によりディティールが改善
-- そのまま使える。
-- 文章を正しく生成できない
+-- 特殊なノイズの影響を受けにくい
+- 文章は生成できない
 
 *** SD3.0
 https://huggingface.co/stabilityai/stable-diffusion-3-medium
-- DiTアーキテクチャ
+- MMDiTアーキテクチャ
 - Medium(2.5B)のみ
 - 基礎解像度は1024x1024
-- VAEの改良によりディティールが大幅改善
-- (DiTモデル全般に言えることだが)破綻が少なく、線を真っすぐ引ける。
+- VAEの改良によりディティールが大幅改善(だが重い)
 - 表現規制がきつく解剖がおかしくなる欠陥あり
 - 文章を正しく生成できる
+- NSFW禁止
 
 *** SD3.5
 Large: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
-- DiTアーキテクチャ
+- MMDiTアーキテクチャ
 - Large(8.1B)とMedium(2.6B)の二種類がある
 - 基礎解像度は1024x1024
 - MediumはT5を除けばSDXLと同程度のメモリ使用量だが、計算はSDXLの二倍遅い。Largeはメモリ使用量、計算量ともに非常に多い。
 - 使うには、モデル本体に加えてCLIP L/Gが必要。T5XXLは任意
 - 規制の緩和とSD3.0の問題を解消
-- 文章を正しく生成できる
-- FLUX.1より美的スコアが低い
-- Fine-tuningがしやすい(公式がFTのチュートリアルを出している)
--- 実際にはFine-Tuningの難易度が高いとか
+- NSFW禁止
+- パラメータ効率が低い
 
 ** ほかのText-to-Imageモデル
 
@@ -69,60 +66,68 @@ schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - 使うには、モデル本体に加えてCLIP LとT5XXLが必要
 - 文章を正しく生成できる
 - 蒸留モデル(Fine-tuningが困難らしい)
-- オープンなモデルの中では最大級のパラメータ数(12B)。
--- それゆえにSD3.5Lを超える重さ
+-- 故に品質はそこまで高くない？
+- SD3と同様の16チャネルVAE
 
-*** AuraFlow
-https://huggingface.co/fal/AuraFlow
-- DiTアーキテクチャ
-- 現在開発中
-- 開発中のものが公開されているが最近更新なし
-- 文章を正しく生成できる
+*** NovelAI Diffusion V4
+- U-netアーキテクチャ
+- Text EncoderはT5
+- クローズソース
+- アニメイラスト(Danbooru)生成に特化
 
-*** Sana
-https://huggingface.co/Efficient-Large-Model/Sana_1600M_1024px
-- DiTアーキテクチャ
-- 軽量なことが売り
-- 使えるUIがほとんどない(ComfyUIなら使えるがカスタムノードが必要)
-- 文章を正しく生成できる?
-- 商用利用禁止(研究で開発したものを公開しただけ?)
+*** HiDreami-I1
+https://huggingface.co/HiDream-ai/HiDream-I1-Full
+- Sparse DiTアーキテクチャ
+- パラメータ数17Bの超巨大モデルでFLUX.1超えの品質と計算量
+-- Block Swapを使わないときつい
+- TEはCLIP-L/GとT5XXLに加えてLlama 3.1を使用する
 
-*** Janus-Pro
-- マルチモーダル(画像の理解と生成をする)
-- 1Bと7Bの二種類ある
--- 1BはSD1と同程度の品質
--- 7BもSD3.5 Medium未満な感じ
-- 解像度は384x384のみ
--- その割には生成がかなり遅い
+*** Qwen-Image
+https://huggingface.co/Qwen/Qwen-Image
+- MMDiTアーキテクチャ
+- パラメータ数はHiDreamをも上回る20Bですさまじい計算量
+-- Block Swapを使わないときつい
+- VAEのデコーダーはデュアル
+- TEはQwen-VL
+- 文字の描写が得意
+-- 漢字もOK
+- Apache 2.0 ライセンス
 
 * predictionの種類
 ※間違っている可能性あり。間違っていたら修正してください。
 
 ノイズ予測アルゴリズムの種類。
-v-predictionだからといって劇的に性能が上がるわけではない。わかりやすい変化はZero Terminal SNRを併用することで色の精度が上がる程度。一方で構図の不安定化の原因となる(NoobAI-XL特有の可能性が高い)。
+v-predictionだからといって劇的に性能が上がるわけではない。わかりやすい変化はZero Terminal SNRを併用することで色の精度が上がる程度。一方で構図の不安定化の原因となる。
 なお、計算式の違いで推論時に本来の予測方法とは別のものに変えても正しく動作しない(学習時のpredictionタイプに合わせる)。
+SD3以降のほとんどのモデルはv-predictionより高性能なFlow Matchingを使用する。
 
 ** ε-prediction / epsilon-prediction
 SD1とSDXLのデフォルト
 画像のノイズ部分を予測する。
 SNR=0(純粋なノイズ)では機能しない。そのためSNR=0になるよう修正するZero Terminal SNRは使用できない。
-全体が明るい/暗い/原色が強い状況でグレー寄りになるため、単色背景やシルエットなどの表現が苦手。これはNoise offsetやMultires noiseで緩和可
+*** epsilonの欠陥
+学習時、画像にノイズを付与するが、不具合により完全なノイズになるべき状況でわずかに元画像が残るため、間違った学習をしてしまう。
+結果、プロンプトを無視して中間的な明るさにしたり関係のないものを生成してしまうことがある。いわゆるハルシネーション(幻覚)？
+これはNoise offsetやMultires noiseで緩和できる。
 
-** v-prediction
+** v-prediction(v-pred)
 SD2と一部のSDXLモデル(NovelAI Diffusion V3、NoobAI-XL)が使用
 ノイズ除去前と除去後の差分を予測する。
-SNR=0(純粋なノイズ)でも機能する
-Zero Terminal SNRを併用することで全体が明るい、暗い、または高コントラストの状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。
-ほかにも安定性が改善するらしい
+SNR=0(純粋なノイズ)でも機能する。
+''Zero Terminal SNRを併用することで''全体が明るい、暗い、または高コントラストの状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。
+これは実質Zero Terminal SNRのための技術であり、それがなければepsilonと変わらずv-predの利点もなくなる。
 
-*** Zero Terminal SNR
-SNR=0であるべき状況(完全なノイズ)で0にならない(ノイズの中にわずかに元画像が残る)欠陥を修正するもの。
+*** Zero Terminal SNR(ZTNSR/ZSNR)
+学習時、SNR=0(完全なノイズ)であるべき状況で0にならない(ノイズの中にわずかに元画像が残る)欠陥を修正するもの。
 全体が明るい、暗い、または高コントラストの状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。
-低めのGuidance Scaleで運用できる(大体5以下)、というか低めじゃないと彩度が高すぎる。
-欠点として、彩度やコントラストが極端に高くなったり構図の破綻が増加したりする(NoobAI-XL特有の現象の可能性が高い)。
+低めのGuidance Scaleで運用できる(5以下)。言い換えれば低めでないと彩度が過度に高くなる。
+欠点として、彩度やコントラストが極端に高くなったり構図の破綻が増加したりする。
+また、LoRA学習においては、不安定性が増大する(特に画風LoRA学習で相性が悪いと再現できずに品質が著しく低下する)。
+
+ZTSNR有効のv-predictionモデルとepsilonモデルをマージするとZTSNRの効果が減少または消失し、「なんちゃってv-pred」になりやすいため注意。
 
 *** よくある勘違い
-v-predictionは''高速化する技術ではない''。低ステップ動作を謳うcheckpointは高速化LoRAをマージしている。
+v-predictionは''高速化する技術ではない''。低ステップ動作を謳うcheckpointは蒸留LoRAをマージしている。
 v-predictionそのものは''明暗に強くする効果はない''。それはZero Terminal  SNRの効果。
 VはVelocityの頭文字でありν(ニュー)ではない。
 
@@ -150,19 +155,6 @@ DLしたyamlファイルを使用するcheckpointと同じ名称に変更する�
 
 inpaint.ckptは普通のcheckpointとは違うらしい。
 
-* ハッシュ
-
-[[Model hashとsha256の対応表はここ>sha256]]
-
-- Model hash(shorthash)はファイルの一部のみを対象とするため衝突が頻発している
-- 2023-01-15の更新でとうとうModel hashが10桁の完全なsha256に更新された
--- 新旧の見分け方はたぶん桁数だけ
--- VAEとHypernetworkに対応していないのは実用上(まだ)問題が出ていないからだと思われる
-- 完全なファイルのsha256を取ることで衝突回避は可能
--- https://github.com/aka7774/sd_filer
--- https://github.com/aka7774/sd_infotext_ex
--- https://github.com/aka7774/sd_infotexts
-
 * ファイル形式
 
 拡張子で判別する。
@@ -179,7 +171,6 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 - Hugging Face提唱の形式
 - ロード時にPythonのコードを実行できないので安全
 - 読み込みも速くなる(はず)
-- NMKDでは対応していない
 
 * 精度
 
@@ -223,7 +214,8 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 - NVIDIAのBlackwellアーキテクチャで利用可能
 -- TensorRTが必要？
 - fp8の半分、fp16の1/4の計算量
-- 精度も低い？
+- 精度が低い
+-- 4ビット量子化のほうがマシだとか
 
 [+] 古い情報
 SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98GiB)、SDXLなら6.94GB(6.46GiB)前後になる。
@@ -257,6 +249,7 @@ SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98
 - 数が少ないので横着せずにドロップダウンから選択したほうがいい
 -- Quicksetting listにsd_vaeを追加する
 - Checkpointに内蔵されているものを上書きする
+- SDXL BaseのVAEはfp16ではオーバーフローによるNaN演算で動作しないので、sdxl-vae-fp16-fixを使う
 
 * モデル作成
 
@@ -271,7 +264,7 @@ SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98
 - [[層別マージ>階層マージ]]
 
 [+] 古い情報(2022)
-標準Checkpoint Mergerにバグがあり、Add Differenceを使うとモデルが壊れていた。
+AUTOMATIC1111 WebUIの標準Checkpoint Mergerにバグがあり、Add Differenceを使うとモデルが壊れていた。
 n番目のトークンが無視されたり効果が弱まったりする。nは不定(1や76以外もありうる)
 これは2023-01-15に修正された。(層別マージニキがプルリク送ってくれた)
 それ以前に作られたマージモデルはほぼバグの影響を受けていると思われるので要修正。
@@ -288,11 +281,7 @@ https://note.com/bbcmc/n/n12c05bf109cc
 
 ** 配布ファイル
 - 学習・推論共にfp16, pruned, safetensorsでよい。
-- ファイル名には日本語やスペースが無いほうがトラブルが減るかも。
+- ファイル名には日本語やスペースが無いほうが文字化けやパスの区切りの誤判定によるトラブルが減る。
 
-*** 作成方法
-- https://github.com/arenatemp/stable-diffusion-webui-model-toolkit
--- モデルのpruneや変換ができる
--- 更新停止。一部のVAE焼き込み済みのcheckpointを読み込めない。
 
 

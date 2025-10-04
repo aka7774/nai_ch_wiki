@@ -3,83 +3,85 @@
 検索しにくい略称や本スレ特有のものを中心に説明していく。
 
 |~用語|正式名称|説明|
-|1.5|SD 1.5|Stable Diffusionの初代のマイナーチェンジ版。2022年にリリースされて以来長らく主流だったが、2024年からは後継のSDXLが急速に普及し廃れつつある|
+|1.5|SD 1.5|Stable Diffusionの初代のマイナーチェンジ版。2022年にリリースされて以来長らく主流だったが、2024年には後継のSDXLが普及しきって廃れた|
 |AUTOMATIC1111||人名。でもAUTOMATIC1111氏が作ったツール「Stable Diffusion web UI」を指して呼ばれがち。|
-|A1111|AUTOMATIC1111|webuiと同義。人名だけどツールの名前として呼ばれがち。|
-|1111|AUTOMATIC1111|webuiと同義。このページでも1111と表記する。|
-|Animagine|[[Animagine XL>animagine31tips]]|SDXLベースのアニメモデル|
-|Any||三つの意味がある。一つ目はAnythingというモデル、二つ目はControlnet用モデルのAnytest、三つ目はLoRA学習用モデルのAnyIllustirous/Noob。 ~~ 5chでAnytestと書き込むとBANされるので注意|
+|A1111/1111|AUTOMATIC1111|人名だけどツールの名前(stable-diffusion-webui)として呼ばれがち。|
+|Any||二つの意味がある。一つ目はControlnet用モデルのAnytest、二つ目はLoRA学習用モデルのAnyIllustirous/Noob。かつてはAnythingというSD1のアニメモデルのことを指していた。|
 |Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が少し速い |
-|Cascade|Stable Cascade|Stable Diffusionとは別系統の画像生成モデル。2024年に公開されたが、その後すぐにSD3が発表され、普及することはなかった。|
 |CN|ControlNet|専用のモデルを使用して構図を制御する仕組み。|
 |Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
 |DiT|Diffusion Transformer|生成AIのアーキテクチャの一つ。SD1,2,XLで使用されるU-Netより高性能で最近の多くの画像生成AIはこれを採用している|
-|DoRA|Weight-Decomposed Low-Rank Adaptation|LoRAの改良版。学習の安定性と低ランクでの性能が向上する。|
-|ebara|ebara_pony|Pony Diffusionの派生モデル。配布先は消滅|
+|Easy〇〇||Zuntan氏開発の、各種生成AIの環境を簡単にセットアップできるソフトウェア群。いわばスターターキット。|
+|forge|stable-diffusion-webui-forge|stable-diffusion-webuiのフォーク(派生)|
+|reForge|stable-diffusion-webui-reForge|forgeのフォーク|
 |FT|Fine-tuning|モデルのウェイトを調整する。|
 |Flux|FLUX.1|パラメータ数120億のオープンな画像生成AI。SD3と同じDiffusion Transformerを採用する。|
 |GUI||sd-scriptsで学習するためのGUIを指すことが多い。GradioベースとWindows Formベースの二種類が存在する。|
+|gguf||主に量子化モデルに使用されるフォーマット|
 |HF/&#129303;|Hugging Face|研究者がモデルやソースコードの置き場として使っているサイト。GitHubみたいなもの。|
-|Hyper-SD||Stable Diffusionの亜種で、高速サンプリング(収束が速くなる)ができるモデル|
 |Illustrious/イラストリアス|Illustrious-XL|SDXLベースのアニメモデル|
 |i2i|img2img|Image to Image 元画像とプロンプトから画像を生成すること。|
-|inpaint||i2iの1形態。元画像の一部を指定して画像を生成すること。|
-|kohya||人名。でもツール(kohya-ss/sd-scripts)の名前として呼ばれがち。また、sd-scriptsを利用するためのbmaltais版WebUIを指すこともある。|
-|LCM|Latent Consistency Model|Stable Diffusionの亜種で、高速サンプリング(収束が速くなる)ができるモデル|
-|LoCon|LoRA for Convolutional Network|LoRAでは学習できていない領域(畳み込み層)まで拡張して学習するやつ。|
+|inpaint||img2imgの一形態。元画像の一部を指定して画像を生成すること。|
+|kohya||人名だが、ツール(kohya-ss/sd-scripts)の名前として呼ばれがち。また、sd-scriptsを利用するためのbmaltais版WebUIを指すこともある。|
+|LCM|Latent Consistency Model|推論(生成)の収束を速くする技術|
+|Hyper-SD/DMD2||推論(生成)の収束を速くする技術|
 |LoRA|Low-Rank Adaptation|現在主流の学習方法の1つ。|
 |LR|Learning Rate|学習率。学習のきめ細やかさあるいは速度。|
 |m2m|movie to movie|動画から動画を作る技術|
-|NAI|NovelAI|単なる略称。|
+|NAI|NovelAI|単なる略称。まれにNoobAI-XLの略称として使用される。|
+|&#127820;|Nano Banana|Google製の画像生成AI。優れた一貫性をもつ。|
 |Noob|NoobAI-XL|Illustrious-XL-v0.1の派生|
 |NP/ネガ|Negative Prompt|Promptとは反対に出したくない要素を指定する|
 |NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつ|
 |paruparu/パル/パルリアス|paruparu_illustrious|Illustrious-XLの派生。限定的に配布されている本スレ固有(?)のモデル。|
-|PEFT|Parameter Efficient Fine Tuning|LoRA・LoCon・LoRA-FAその他様々な亜種のように、少ないパラメーターで全体を学習するような仕組みのこと|
-|pony|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|SDXLベースのアニメ/カートゥーンモデル|
+|pony7|Pony Diffusion V7|AuraFlowをファインチューニングしたモデル。公開される気配がない。|
+|Qwen|Qwen Image|中国Alibabaが開発したパラメータ数20B(200億)の画像モデル|
 |SAI|Stability AI|Stable Diffusionの開発元|
-|Sana||NVIDIAなどが開発したDiTを用いた画像生成AI。軽量であることが売り。|
 |SD|Stable Diffusion|単なる略称|
-|SD2|Stable Diffusion 2|SD1の後継。だったがSD1からの目立った変化がなかったため流行らなかった。|
-|SD3|Stable Diffusion 3|Stability AIが2024年2月に発表、6月にリリースされたStable Diffusionの新バージョン。SDXLを上回る性能を誇る…はずが問題だらけで流行らかなった。|
-|SD3.5|Stable Diffusion 3.5|SD3の新バージョン。特定プロンプトで崩壊する問題などに対処し品質が向上した。|
-|SD3M|Stable Diffusion 3 Medium|数種類あるStable Diffusion 3.0のうちパラメータ数20億のもの。SD3.5 Mediumは25億。|
 |SFW|Safe for work|こっちはNがついてなくて全年齢|
 |t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
 |uc|unconditional conditioning|Negative Promptと同義|
-|UC L+B|Undesired Content Low Quality + Bad Anatomy|NovelAIの定型のネガティブプロンプト。|
-|V3|NovelAI V3|2023年11月に登場したWeb版NovelAIの現行モデル。クローズドソース。キャラ再現度やインペイントが優秀なためローカルと併用する人も多い|
+|V3|NovelAI V3|2023年11月に登場したWeb版NovelAIの旧モデル。SDXLベースだがクローズドソース。キャラ再現度やインペイントが優秀なためローカルと併用する人も多い|
+|V4|NovelAI Diffusion V4|V3の後継。NovelAI独自開発。U-net+T5エンコーダーらしい。|
 |v-pred|v-prediction|ノイズ予測アルゴリズムの一つ。Zero Terminal SNRと組み合わせることで明暗に強くなる。|
 |webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
-|XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。そのテスト版のSDXL 0.9を指す場合もあったが、こちらはほとんど使われていない|
-|ZTSNR|Zero Terminal SNR|SNR=0のときに完全なノイズになるよう調整することで明暗や単色背景に強くする。|
+|XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。|
+|ZTSNR/ZSNR|Zero Terminal SNR|SNR=0のときに完全なノイズになるよう調整することで明暗や単色背景に強くする。|
 |アナル|Anlas|NovelAI公式の課金通貨。|
 |リアス|Illustrious-XL|単なる略称|
 |ギップル|git pull|リモートリポジトリの変更をプル(ローカルに反映)するコマンド|
-|層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
 |ちびたい|[[Civitai>https://civitai.com/]]|モデル配布サイト|
 |ブリーディング|bleeding|特定の単語のプロンプトに、スペルが同じで意味の異なる単語やスペルが似た単語の概念が混入すること|
-|魔人/魔神|[[Animagine XL>animagine31tips]]|SDXLベースのアニメモデル|
-|マージ||Checkpoint Mergerなどで2〜3つのモデルを組み合わせること。|
+|マージ||Checkpoint Mergerなどで2〜3つのcheckpointを組み合わせる(混ぜる)こと。|
 |マスピ|masterpiece|傑作。品質向上に使われるプロンプト。切れ長のつり目、陰影の強調された顔など特徴的な絵柄になる。マスピ絵、マスピ顔とか言う。|
-|ローカル版||ほとんどの場合、自身のパソコンやクラウドサービスで動かすStable Diffusionの事を指す。かつてはNovelAI V1のリークモデルをWebUIで利用する形態を指すこともあった。|
+|モデル||SDXLやFLUX.1などモデルアーキテクチャそのものやCheckpointを意味する。スレ内ではもっぱら後者の意味で使用される。|
+|チャッピー|ChatGPT|OepnAIが開発する大規模言語モデルを用いたチャットボット|
 
 ** その他の用語
+AIとは直接の関係がない本スレ固有の単語
 |~用語|正式名称|説明|
 |赤ちゃん||初心者など難しい設定が困難である人。簡易インストーラー全般。「赤ちゃん向け」は初心者でも簡単に使用できることを意味する。由来は[[浦島太郎のために]]を参照 |
 |グチャる||人体や構図が破綻/崩壊する。|
-|コピー機||シード値固定や過学習などによって似たような絵を連続出力すること。由来は[[浦島太郎のために]]を参照 |
+|コピー機||シード値固定や過学習などによって似たような画像を連続で出力すること。由来は[[浦島太郎のために]]を参照 |
 |サンイチ||5ちゃんねるのスレッドを立てた人に対して感謝の意を示すなんでも実況板特有のネットスラング。(AIと関係ないけど一応載せておく)|
-|風船/&#127880;||排泄物を指す。閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
-|浦島太郎||長期間離れてて遅れた人を指すのだが、技術革新が速すぎるので一晩で浦島太郎になったりする。 |
-|ガビる||スレ内においては、出力がAI特有のノイズまみれになることを指す場合が多い。|
+|風船/&#127880;||糞のこと。閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
+|浦島太郎||長期間離れていて遅れた人を指すのだが、技術革新が速すぎるので一晩で浦島太郎になったりする。 |
+|ガビる||スレッド内においては、出力がAI特有のノイズまみれになることを指す場合が多い。|
+|エビダンス||由来は「亜鉛が云々→エビデンス(根拠)はあるのか→見間違いでエビ''ダ''ンス」。スレ終盤に始まる固有のノリ。|
+|ポン出し||ControlNetやi2iなどを使用して生成したり出力画像を編集したりせずに、そのまま利用すること。デジカメでいう「撮って出し」と同じニュアンス。|
+|お客さん||スレッドに初めて来た人のこと。「部外者」のような意味を持つ。|
+
 
 ** よくある間違い
 |~用語|正式名称|説明|
 |Animajin/Animagagine|[[Animagine XL>animagine31tips]]|Anima''gine'' XLの間違い|
 |イラストリアル|Illustrious-XL|イラストリア''ス''の間違い。Illustrious-XLはリアルな絵を生成しない。|
+|v-pread|v-pred|タイポ(誤字)|
+|モアレ||格子のような規則的な模様が重なったときに見える縞模様。しかし、スレではAI特有のノイズ、シミや靄のようなものを指す言葉として誤用されることがある。|
 
-[+]古い用語
+
+
+** 使用頻度の低い用語
 今はほとんど使われなくなった用語です。
 
 |~用語|正式名称|説明|
@@ -87,15 +89,29 @@
 |DA|DreamArtist|学習方法の1つ。LoRAの普及で廃れた。|
 |HN|Hypernetwork|学習方法の1つ。LoRAの普及で廃れた。|
 |TI|Textual Inversion|学習方法の1つ。LoRAの普及で廃れた。|
-|NAIFU|NovelAI AI Image Frontend Ultimate|NovelAI V1のエミュレーターの一つ。|
+|NAIFU|NovelAI AI Image Frontend Ultimate|NovelAI Diffusion V1のエミュレーターの一つ。|
 |ST|Stable Tuner|学習方法の1つ。kohya系。|
 |WD|Waifu Diffusion|SD1の初期に出たアニメモデル。ckptは略称で呼ばれることが多い。https://huggingface.co/を探そう。|
-|web版||NovelAIを公式サイト上で利用することを指すことが多い。SD1が主流だった頃、本家とリーク版が存在したため生まれた呼称。SDXLが普及した今では単にNAIと呼ぶ。|
+|web版||NovelAIを公式サイト上で利用することを指すことが多い。SD1が主流だった頃、本家とリーク版が存在したため生まれた呼称。SD1が廃れた現在は単にNAIと呼ぶ。|
 |お馬さん|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|ponyと同義。今は単にponyと呼んでいる。|
 |金脈|[[SD RESOURCE GOLDMINE>https://github.com/questianon/sdupdates]]|Stable Diffusionに関連するすべてのリソースとニュースを集めた総合的なサイト。1111を中心としてる。2023年から更新されておらず、SDXLが普及した今は完全に時代遅れとなっている|
-|妖精さん||高性能なSDXLはこの現象がほとんど発生しない。そのためSDXLが主流になった今は見かけない。1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
-
-[END]
+|妖精さん||SDXL以降のモデルではこの現象はほとんど発生しない。そのためSDXLが主流になった今は見かけない。1. 意図しない位置に人間（のようなもの）が描かれること。upscaleで画素数の多い絵を作ろうとすると妖精さんが湧いてくることが多い。2. wiki編集人のこと。昼寝姿が可愛いと評判。|
+|ebara|ebara_pony|Pony Diffusionの派生モデル。リンク切れでDL不可。|
+|Sana||NVIDIAなどが開発したDiTを用いた画像生成AI。軽量であることが売り。だが単に研究成果を公開した感じが強く、一般利用は想定してないためか使えるUIもなく普及することはなかった(そもそもその存在を認知すらされていないような)。|
+|PEFT|Parameter Efficient Fine Tuning|LoRA・LoCon・LoRA-FAその他様々な亜種のように、少ないパラメーターで全体を学習するような仕組みのこと|
+|LoCon|LoRA for Convolutional Network|LoRAでは学習できていない領域(畳み込み層)まで拡張して学習するやつ。|
+|UC L+B|Undesired Content Low Quality + Bad Anatomy|NovelAI V1の定型のネガティブプロンプト。|
+|Cascade|Stable Cascade|Stable Diffusionとは別系統の画像生成モデル。2024年に公開されたが、その後すぐにSD3が発表され、普及することはなかった。|
+|SD3M|Stable Diffusion 3 Medium|数種類あるStable Diffusion 3.0のうちパラメータ数20億のもの。SD3.5 Mediumは25億。品質が低く、批判も多かったため普及しなかった。|
+|pony|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|SDXLベースのカートゥーンモデル。扱いやすくデータセットが大きいIllustrious系に駆逐されたり陳腐化したりで利用者も少なくなった。|
+|SD2|Stable Diffusion 2|SD1の後継。だったがSD1からの目立った変化がなかったため流行らなかった。|
+|ローカル版||ほとんどの場合、自身のパソコンやクラウドサービスで動かす生成AIの事を指す。かつてはNovelAI V1のリークモデルをWebUIで利用する形態を指すこともあった。|
+|Animagine|[[Animagine XL>animagine31tips]]|SDXLベースのアニメモデル。V3系がSDXLの火付け役として流行った。しかし、データセットの偏りが大きく、あまり良いとは言えないためその流行は長くは続かなかった。|
+|魔人/魔神|[[Animagine XL>animagine31tips]]|Animagine XLのこと|
+|DoRA|Weight-Decomposed Low-Rank Adaptation|LoRAの改良版。学習の安定性と低ランクでの性能が向上する。ほとんど認知されていない。|
+|SD3|Stable Diffusion 3|Stability AIが2024年2月に発表、6月にリリースされたStable Diffusionの新バージョン。SDXLを上回る性能を誇る…はずが問題だらけで流行らかなった。|
+|SD3.5|Stable Diffusion 3.5|SD3の新バージョン。特定プロンプトで崩壊する問題などに対処し品質が向上した。…しかしこちらはFTが困難なためか派生モデルが全く出ず流行らなかった。しかもNSFW禁止になった。|
+|層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
 
 * スレの言葉について
 
@@ -122,16 +138,16 @@ webuiは一般名詞だし、「Stable Diffusion UI」もGUIでWebユーザー�
 ** なぜローカル版が1111を指すのか
 
 シェアの差やん
-cmdr2を使ってる人は全然見かけないけど、NMKDを使い続ける人はたまにいる。
-1111が導入できない人とか24GBのDreamBoothが好みって人とか。
+cmdr2やNMKDを使ってる人は全く見かけない。
 必要ならページを作って知見を集めるのも全然いいと思う。
 実際にInvokeAIのページは作った。
+ちなみに、オリジナルの1111は開発停滞により廃れつつある。今はreForgeとComfyUIが主流。
 
 ** 「Web版/ローカル版」の表記ゆれ
-2024年現在、SDXLベースのNovelAI V3(リーク無し)と各々が独自開発したSDXLベースモデルが普及して本家とリーク版の混同がなくなった。
+2025年現在、独自アーキテクチャのNovelAI V4(リーク無し)と各々が独自開発したSDXLベースモデルが普及して本家とリーク版の混同がなくなった。
 そのためか、NovelAIは単にNAI、ローカルの各種UIはその名称で呼ぶようになった。
 
-[+] 古い情報
+[+] 古い情報(2023年以前)
 NovelAIも1111もブラウザで動作する(一般用語としてのWebユーザーインターフェースを持つ)し、
 ローカル版をリモートで動作させたり、リモートからのアクセスを受け入れたりできるので、
 「Web版/ローカル版」という呼び分けはそぐわない気もするが、そう呼ばれることが多い。

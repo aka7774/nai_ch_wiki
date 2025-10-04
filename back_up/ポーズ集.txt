@@ -1,8 +1,12 @@
 * テーマ
-数単語以上でのいい感じのやつ
+数単語以上でのいい感じのやつ。添付[[&color(#ffb3b3){URLはこちら。}>https://seesaawiki.jp/nai_ch/e/attachment?id=4982749]]
 
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|one upright hand raised to side of mouth||内緒話する時の手、ヒソヒソ|強調した上でwhispering, secretive expressionも併用すると効果大。|https://image01.seesaawiki.jp/n/h/nai_ch/c29aa3bc6c3fb36b.png|
+|5.0::,Yamcha pose,looking away,Inside the crater,head down::,fetal position,||ヤムチャしやがってポーズ|ガチャ要素が多いかもです|https://image02.seesaawiki.jp/n/h/nai_ch/3768b62c374a64f1.png|
+|standing, legs, stretch legs, cross legs, hip, ass, back of knee, leaning forward, forward bend, head down, hands on ankle, low angle, looking back||菜々緒ポーズ|V4.5でも成功率低し。||
+|ikari gendou pose, hide your mouth,||ゲンドウポーズ|big desk,を追加すれば、なお良し。|https://image01.seesaawiki.jp/n/h/nai_ch/3b0274d6f5bad5c0.png|
 |{{{play piano}}},||楽器;ピアノ||https://image01.seesaawiki.jp/n/h/nai_ch/iV7fcENz_5.png|
 |{{{{{{mouth to trumpet}}}}}},||楽器;トランペット||https://image01.seesaawiki.jp/n/h/nai_ch/6_5PQC4bvJ.png|
 |{{{{{{mouth to flute}}}}}},||楽器;フルート||https://image02.seesaawiki.jp/n/h/nai_ch/W6gMsXJ6ik.png|
@@ -82,16 +86,15 @@ danbooru のポーズ関係のタグ一覧はこちら https://danbooru.donmai.u
 |shirt lift~~(maid apron lift~~clothes lift)|シャツ(上着)をたくし上げる|上記同様、lifted by selfやshow off braなどと併用すると成功しやすい~~画像はmaid apron lift(maid apron以外でもできるかは不明)|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oELXHZfSz9-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oELXHZfSz9.png]]|
 |bra lift|ブラずらし|上記2点と違ってたくし上げよりは単純にずらすことが多い？~~上記2点に比べると成功率が低くshirt liftと結果が変わらないこともある||
 |Thumbs up|親指を立てる（グッド）|||
-|V|ピース|||
-|salute|敬礼|両手で敬礼したり頭に届いてない為別の単語で補強する必要がある||
-|hand on hip|腰に手をあてる|||
-|arms up|腕を上げる|||
-|sitting|座る|||
-|indian style|あぐら|sitやsittingと組み合わせると効果的||
-|seiza|正座|正座っぽいことをしてくれるがガチャ要素強め||
-|crotch grab|股を掴む|それなりの確率でくぱぁになる||
-|spreading legs|股を開く|||
-|hand between legs|女の子座り|sittingと併用で確率アップ||
+|V|ピース|peace signでも可|https://image02.seesaawiki.jp/n/h/nai_ch/b4b9a44e98903dbb.png|
+|hand on hip|腰に手を当てる|両手を腰に当てたければ複数形のhands on hipにする。|https://image02.seesaawiki.jp/n/h/nai_ch/1a2a6f90ed13c28c.png|
+|arms up|腕を上げる||https://image02.seesaawiki.jp/n/h/nai_ch/1f5093e6de4c8349.png|
+|sitting|座る|sitting floorやsitting benchなど座らせたいものと組み合わせると効果的。|https://image02.seesaawiki.jp/n/h/nai_ch/90ba2b7a80e49ff8.png|
+|indian style|あぐら、胡坐|sitやsittingと組み合わせると効果的|https://image02.seesaawiki.jp/n/h/nai_ch/439cdc18ff2f2bf7.png|
+|seiza|正座|正座っぽいことをしてくれるがガチャ要素強め|https://image02.seesaawiki.jp/n/h/nai_ch/f35dd6fea3f40a7e.png|
+|crotch grab|股を掴む|それなりの確率でくぱぁになる|https://image02.seesaawiki.jp/n/h/nai_ch/6e276e42ef11a214.png|
+|spreading legs|股を開く|「V-spreading legs」でV字に、「M-spreading legs」でM字に開いてくれる。「grab her ○○」で太もも(thighs)や膝裏(kneepits)など掴む位置を指定できる。|https://image02.seesaawiki.jp/n/h/nai_ch/d024446159c7bde5.png|
+|hand between legs|女の子座り|sittingと併用で確率アップ|https://image02.seesaawiki.jp/n/h/nai_ch/48ce6a2576422767.png|
 |hugging own legs|体育座り||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iDkIarcMOL.png)|
 |wariza|割座|膝を崩した正座、いわゆるペタン座りに近い。たまに謎のイスラム風建築が出る|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/atLK8OCjIp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/atLK8OCjIp.png]]|
 |open stance|足を開く|肩幅に足を開く。高確率でstandingが併発する。|https://image01.seesaawiki.jp/n/h/nai_ch/xVieJDSnAk.png|
@@ -108,15 +111,6 @@ danbooru のポーズ関係のタグ一覧はこちら https://danbooru.donmai.u
 |on all fours|四つん這い|たまにグロテスクな肉の塊みたいな画像がでることがあるので~~ほかのプロンプトとの併用を推奨|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xxIyx_6RJG-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xxIyx_6RJG.png]]|
 |heart hands|両手でハート|不安定|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3695af6bab8823a5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3695af6bab8823a5.png]]|
 |}
-
-
-
-
-
-
-
-
-
 
 
 

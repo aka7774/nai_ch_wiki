@@ -73,6 +73,13 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|Radeon 8060S|64GB|Ryzen AI MAX+ 395|193.4|f1.0.0v2-v1.10.1RC-latest-2454-g9086b215|--skip-install --always-gpu|Windows11 ROCm6.5(TheRock) torch 2.7.0a0+git3f903c3|
+|Radeon 8060S|64GB|Ryzen AI MAX+ 395|189.4|ComfyUI v0.3.592.7.0a0+git3f903c3|--gpu-only --use-pytorch-cross-attention|Windows11 ROCm6.5(TheRock)|
+|RTX 5090|32GB|Ryzen 7 7700X|27.1|ComfyUI v0.3.49 2.7.1+cu128|--use-sage-attention --fast||
+|RTX 5070|12GB|Ryzen 7 7700X|62.3|ComfyUI v0.3.49 2.7.1+cu128|--use-sage-attention --fast||
+|RTX 4060Ti|16GB|Core i7-11700|135.0|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
+|RTX 4070|12GB|Core i7-11700|102.0|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
+|RTX 4060ti|16GB|Core i7-12700|137.2|v1.10.1|--xformers||
 |RTX 3060|12GB|Core i7-10700|208.3|f0.0.17v1.8.0rc-latest-276-g29be1da7||Powerlimit 70%|
 |RTX 5090|32GB|Core i9-13900K|31.8|f0.0.17v1.8.0rc-latest-273-gb9705c58||Powerlimit無し+低電圧化+メモリOC|
 |RTX 5090|32GB|Core i9-13900K|33.1|f0.0.17v1.8.0rc-latest-273-gb9705c58||Powerlimit無し|
@@ -223,6 +230,8 @@ Batch Count 1、Batch Size 10
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 5090|32GB|Ryzen 7 7700X|23.2|ComfyUI v0.3.49 2.7.1+cu128|--use-sage-attention --fast||
+|RTX 5070|12GB|Ryzen 7 7700X|58.5|ComfyUI v0.3.49 2.7.1+cu128|--use-sage-attention --fast||
 |RTX 5090|32GB|Core i9-13900K|28.1|f0.0.17v1.8.0rc-latest-273-gb9705c58||Powerlimit無し|
 |RTX 5090|32GB|Core i9-13900K|31.2|f0.0.17v1.8.0rc-latest-273-gb9705c58||Powerlimit 70%|
 |RTX 4090|24GB|Core i9-13900K|29.6|Forge Classic cb41bd (2025/5/7)|--sage --fast-fp16|Powerlimit 70%　Classicは絵が変わる(劣化)|

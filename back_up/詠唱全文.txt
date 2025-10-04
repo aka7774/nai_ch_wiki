@@ -1,1 +1,6 @@
+&size(18){非R18詠唱全文は[[%%%ここへ%%%>https://seesaawiki.jp/nai_ch/d/%c8%f3R18%b1%d3%be%a7%c1%b4%ca%b8]]}
+
+{| class="sort edit nanj_prompt_table"
+|~w(100):意味|~w(300px):プロンプト|~w(150px):ネガティブプロンプト|~w(250px):備考|サンプル|
 |5人一度に(一人多いけど)|{{masterpiece}}, high quality, highly detailed, [faint-light], impressionism, nsfw, gothic lolita, white hair, blue eyes, flat chest, skirt lift, spread legs, on_bed, 5-girls|画面サイズの影響が大きい。横幅を増やすと隙間を埋めるため人数が増え、縦長だと一人-三人ぐらいに|seed:4259232484|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/frZ7LYA1P1-s.jpg)>https://image01.seesaawiki.jp/n/h/nai_ch/frZ7LYA1P1.jpg]]|
+|}

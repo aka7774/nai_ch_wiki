@@ -43,6 +43,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
+|living room|リビング||https://image02.seesaawiki.jp/n/h/nai_ch/fce5160c5f44a07a.png|
 |hotel|ホテル|||
 |japanese traditinonal room|和室|tatamiでもそれっぽくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xEvQkJ81lR-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xEvQkJ81lR.png]]|
 |school|学校|| |
@@ -490,7 +491,7 @@
 |foreshortening|短縮法|斜めに置かれた物体は，実長よりも短く見える。このような，実際より短く見える人体や物体を二次元平面に描くこと。|https://image01.seesaawiki.jp/n/h/nai_ch/UYPkfPTeNS.png|
 |bad perspective|悪い遠近法（直訳）|適切に遠近法が用いられてない状態。|https://image02.seesaawiki.jp/n/h/nai_ch/0GpinTqYvO.png|
 |atmospheric perspective|空気遠近法|屋外では大気の持つ性質により遠くの景色ほど青味がかり、同時に輪郭が不明瞭に霞んで見える。この大気の性質を利用して絵に奥行きを持たせる手法。背景のプロンプトに付与して使う。|https://image02.seesaawiki.jp/n/h/nai_ch/X5iHgUraBA.png|
-|Fluttering Petals|花びらが舞う|||
+|Fluttering Petals|花びらが舞う||https://image02.seesaawiki.jp/n/h/nai_ch/c97dc55a9ade3af5.png|
 |perspective|パース（遠近）|立体的な奥行きのある絵になる||
 |big family|大家族|親戚一同の集合写真のような大人数の家族写真が出る.組み合わせでクラスのアルバム写真みたいな画像も作れる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KP9wZwr3z_-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/KP9wZwr3z_.png]]|
 |reflect~~もしくは~~reflection|反射床|地面が鏡面になって上と同じ画像がぼんやりと反射される。カメラワーク（角度）は多分変更できない。|https://image02.seesaawiki.jp/n/h/nai_ch/SmQrlNLEhz.png|
@@ -522,6 +523,5 @@
 |black dog ''beside'' her|横に/傍らに黒い犬||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8AYuvkG7wq.png,40%)|
 |}
 [END]
-
 
 

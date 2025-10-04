@@ -52,6 +52,146 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-10-03 音声合成AI「高音（Takane）」、公開終了
+https://huggingface.co/spaces/Respair/Takane
+自然なイントネーションと感情のこもった音声データを生成でき、エロ声も可能な「Takane」（9月27日リリース）の公開が終了した。作者の[[Soshyant>https://x.com/MystiqCaleid]]氏はTakaneがあくまで技術デモであること、また「サーバーへの大きな負担、そして声優の方々への潜在的な悪用を防ぐため」としている。
+
+**2025-10-01 OpenAI、動画生成AIのSora2を公開
+https://openai.com/index/sora-2/
+当面は招待制だが、招待コードは簡単に見つかるという話も。
+画像やテキストから生成される動画はよく動き、効果音やセリフも自動で追加してくれる。
+
+**2025-09-28 Tencent、HunyuanImage-3.0を発表
+https://huggingface.co/tencent/HunyuanImage-3.0
+パラメータ数は80Billion、VRAMが3×80GB（4×80GBを推奨）必要という巨大モデル。
+
+**2025-09-22 Alibaba、Qwen-Image-Edit-2509を発表
+-告知記事 https://qwen.ai/blog?id=7a90090115ee193ce6a7f619522771dd9696dd93&from=research.latest-advancements-list
+-huggingface https://huggingface.co/Qwen/Qwen-Image-Edit-2509
+複数の画像の入力をサポート、画像の一貫性の向上、ControlNetへの対応などをうたっている。
+
+**2025-09-16 Comfy Cloudが発表される
+-公式サイト https://cloud.comfy.org/
+-告知記事 https://blog.comfy.org/p/comfy-cloud
+ComfyUIの環境をクラウドで提供する有料サービスが発表された。GPUのないパソコンでもComfyUIで画像や動画を生成できる。クローズドベータとして開始し、のちに正式サービスになる予定。
+従来無償で提供されてきたローカル版のComfyUIは、今後も変わらず無償で提供される。
+
+**2025-09-10 Tencent、HunyuanImage-2.1を発表
+https://hunyuan.tencent.com/image/en?tabIndex=0
+https://huggingface.co/tencent/HunyuanImage-2.1
+2K解像度の画像を生成できるほか、中国語と英語のテキストレンダリングを得意とする。
+ComfyUIは[[レギュラーモデルに即日対応した>https://github.com/comfyanonymous/ComfyUI/pull/9792]]。
+
+**2025-09-09 ByteDance、SeeDream 4を発表
+https://seed.bytedance.com/en/seedream4_0
+プロンプトで画像を編集するAIモデル。 https://replicate.com/bytedance/seedream-4 で実際に利用できる（有料）。
+
+**2025-09-03 Stable Diffusion Forge - Neoが公開される
+https://github.com/Haoming02/sd-webui-forge-classic/tree/neo
+「Forge Classic」を開発していたHaoming02氏が、新たに「Forge Neo」を発表した。Forge Classicはいわゆる旧Forge（v1.x）を最適化し、SD1.xやSDXL向けに開発されていた。Forge NeoはForge 2.xをもとに、最新の技術であるWan2.2やFLUX Kontext、Chromaなどに対応する。
+
+**2025-08-26 Google、nano-Bananaを公開
+https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image-preview
+Googleが「Gemini 2.5 Flash Image」を公開した。nano-Bananaというコードネームでプレビュー公開されていた画像生成AIで、画像の高度な編集が可能。複数の入力画像を組み合わせた画像の出力、画像内の背景の差し替え、画像内の人物の表情変更、入力した人物画像の三面図の出力、アニメ風人物画像のフィギュア写真への変換などを、高度な一貫性を保ちながら行うことができる。LoRAの素材画像を増やすなどにも便利。
+
+**2025-08-24 Panchovix氏、reForgeのリポジトリをアーカイブ化する（のち解除）
+https://github.com/Panchovix/stable-diffusion-webui-reForge
+2024年6月9日にForgeを実験的なリポジトリにすると作者のIllyasviel氏が宣言した約1ヶ月後、reForgeは2024年7月7日に「可能な限りA1111の変更点を取り込んだforgeのフォーク」として公開された。Forgeやa1111の開発が停滞する中、独自にバージョンアップを続けていた。2025年4月13日にいったん開発終了宣言がなされたあと、7月19日には開発継続のメッセージが投稿され活発にコミットされていた。
+
+3日後の8月27日、本人のメッセージとともにアーカイブ化は解除された。
+
+**2025-08-23 NovelAI、画像生成の新機能として「キャラ参照（Character Reference）」を公開
+https://x.com/novelaiofficial/status/1959206266255134834
+読み込ませたキャラクター画像をもとに別の画像を生成できる機能がプレビュー版として公開された。FLUX.1 KontextやQwen-Image-Editに近い機能と思われる。
+
+**2025-08-19 Alibaba、Qwen-Image-Editを公開
+https://qwenlm.github.io/blog/qwen-image-edit/
+画像編集専用のモデル。画風の変更、対象の向きの変更、画像の背景や着ている服の変更、文字の修正などが可能。
+
+**2025-08-04 Alibaba、Qwen-Imageを公開
+https://huggingface.co/Qwen/Qwen-Image
+画像生成や画像編集の品質の高さのほか、文字の生成（英語と中国語）も得意とアピールしている。ライセンスはApache 2.0。
+
+**2025-08-01 KreaがFLUX.1 Krea [dev]を公開
+https://www.krea.ai/
+いわゆる「AI風」でない画像を生成することに注力した、FLUX.1 [dev]互換のモデル。
+- モデルやGitHubへの[[リンク>https://www.krea.ai/blog/flux-krea-open-source-release]]
+ComfyUIは例によって[[即日対応>https://blog.comfy.org/p/flux1-krea-dev-lands-on-comfyui-on]]した。
+- [[GGUF版モデル>https://huggingface.co/QuantStack/FLUX.1-Krea-dev-GGUF]]
+
+**2025-07-28 Alibaba、Wan2.2を公開
+- https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
+- https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+- https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
+
+text to video/image to videoのモデル「Wan2.2」が公開。28日21時（日本時間）に公開すると予告されたこともあり、スレは期待感で盛り上がった。ComfyUIで動作する。
+モデルの公開から数時間後にgguf版も公開された。
+
+- https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF
+- https://huggingface.co/QuantStack/Wan2.2-TI2V-5B-GGUF
+- https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF
+
+Zuntan氏によるRTX3060/12GB、メインメモリ64GBでWan2.2 TI2V 5Bを使った動作報告も上がっている。
+https://github.com/Zuntan03/SimpleComfyUi#wan22-day-0-support-in-comfyui-%E6%89%8B%E9%A0%86
+続いて、VRAM8GB、メインメモリ32GBでもWan2.2で高速に動画を生成できる「EasyWan22」も公開された。
+https://github.com/Zuntan03/EasyWan22
+
+**2025-07-22 Neta.art Lab、Neta Luminaを公開
+https://huggingface.co/neta-art/Neta-Lumina
+アニメスタイルのイラストレーションに強いとするNeta Luminaが公開された。ComfyUIで動作し、VRAMは8GB以上が必要。ライセンスはApache License 2.0で、無制限の商用利用が可能。
+プロンプトに英語のほか中国語、日本語も使える。danbooruタグにも対応。
+
+**2025-07-19 stable-diffusion-webui-reForgeの開発継続のお知らせ
+https://github.com/Panchovix/stable-diffusion-webui-reForge/discussions/377
+今年四月に開発が終了していたが、7月19日、開発者のPanchovix氏は開発を(今のところ)継続すると発表した。
+
+**2025-07-15 xAI、GrokにAIコンパニオン「ani」を実装
+aniと会話をし、親密度が上がると衣装が変わるらしい。
+当面はiOSのアプリ版Grokにのみ登場するとのこと。
+[[なんJNVA部★560>https://fate.5ch.net/test/read.cgi/liveuranus/1752473555/]]の中盤以降はaniの画像が多く投稿された。
+
+**2025-07-08 NovelAI Diffusion V2のモデルが公開される
+https://blog.novelai.net/novelai-diffusion-v2-weights-release-b9d5fef5b9a4
+ダウンロードはこちらから：https://huggingface.co/NovelAI/nai-anime-v2
+ライセンスはCreativeML Open RAIL-Mライセンスとクリエイティブ・コモンズ BY-NC-SA 4.0ライセンスが適用され、利用は非商用目的のみ許可される。
+
+**2025-07-08 Stability AI、7月31日発効の新利用規約を公開。NSFWコンテンツの生成を禁ずる
+https://stability.ai/use-policy
+Stability AIの技術を使って、未成年者の性的搾取、小児性愛、性行為や性的暴力などのコンテンツを生成することを禁じる利用規約が公開された。7月31日に発効となる。
+SDXLまでのモデルはライセンス上新規約が遡及適用されないため影響を受けず、新規約の対象となるのはSD3以降という意見もある。
+AI画像生成サービスによる、この規約変更に対するものと思われる反応：
+-NovelAI：「新しいNovelAI V4およびV4.5モデルがStable Diffusion、SDXL、FLUX、またはその他のモデルを基盤としていないことを明確にしました」（https://x.com/novelaiofficial/status/1943940953028669936）とし、NovelAI DiffusionはStable Diffusionの規約変更に影響されないと宣言
+-TensorArt：NSFWコンテンツの生成や新規公開を禁止（https://tensor.art/event/NSFW&CelebrityAdjustments）
+
+**2025-07-07 旧Forgeなどが起動しなくなる
+ライブラリの自動アップデートに旧Forge本体が追いついていないためと推測された。
+https://fate.5ch.net/test/read.cgi/liveuranus/1751939332/68 に対処法が書き込まれた。
+=|BOX|
+68 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった 警備員[Lv.14] (ﾜｯﾁｮｲ 9fd0-d21E)[sage] 投稿日：2025/07/08(火) 14:31:59.38 ID:iIuykCfp0
+前スレから長々とお目汚し申し訳ないで。ようやく解決したから、せめて後の人の役に立てればと解決策を書かせてもらいます
+【環境】
+旧forgeで特に環境も弄らず、モデルとLoraのみ入れ替える程度だったが7月7日午後以降にrun.batから起動すると
+NumPy 2.2.6 as it may crash. To support both 1.x and 2.x〜のエラーが出てWebUIが起動しなくなる
+【原因】
+numpyとopencv-pythonの互換性の問題
+run.batを叩くと自動でopencv-pythonとNumpyのアップデートが入るため、cmdでバージョン修正したり再インスコ（初期化）しても未解決
+【対処】
+cmdでvenvのactivateから「pip install numpy==1.24.4 opencv-python==4.8.1.78 --force-reinstall」を実行
+さらに起動をrum.batからではなくwebui.batからにして、エディターで「set FORGE_SKIP_REQUIREMENTS=1」call直前に「set COMMANDLINE_ARGS=--skip-version-check」を追記
+||=
+
+**2025-07-01 NovelAI Diffusionで30回の無料体験がスタート
+https://novelai.net/
+NAIはこれまで課金しないと画像生成を試すことができなかったが、30回まで無料で画像を生成できるようになった。
+
+**2025-06-27 NovelAI Diffusion 4.5にPotionが実装される
+https://novelai.net/
+NAI 4.5のポーション機能が公開された。入力画像の絵柄を抽出し適用できる。
+
+**2025-06-27 FLUX.1 Kontext [dev]のモデルが公開される
+https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev
+5月30日に公開済みの「FLUX.1 Kontext」をローカルで試せるモデルが公開された。ComfyUIは[[即日対応>https://blog.comfy.org/p/flux1-kontext-dev-day-0-support]]。ComfyUIをアップデートするとテンプレートの「FLUX」にサンプルワークフローが配置される。
+
 **2025-05-30 FLUX.1 Kontextが公開される
 https://bfl.ai/models/flux-kontext
 FLUX.1を開発したBlack Forest Labが「FLUX.1 Kontext」を公開した。入力画像をどう変化させるか自然言語で入力するとその通りになる。
@@ -92,9 +232,16 @@ https://github.com/Panchovix/stable-diffusion-webui-reForge/discussions/354
 Zuntan03氏が開発している[[EasyReforge>https://github.com/Zuntan03/EasyReforge]]は「この前の大規模更新で少し前の安定気味バージョンでリビジョンを拡張機能も含めて固定済みやで」「またなんか新しい環境が出てくるまでNoobやIllustrious用の安定版環境としてご利用くださいやね」。
 https://fate.5ch.net/test/read.cgi/liveuranus/1744454985/122
 
+**2025-04-08 HiDream.ai、新しいアーキテクチャの画像生成AIモデル「HiDream-I1」を公開
+https://github.com/HiDream-ai/HiDream-I1
+https://huggingface.co/HiDream-ai
+従来の画像生成AIモデルに多く採用されてきた拡散モデルに代わり、Sparse Diffusion Transformer（DiT）というアーキテクチャを採用。170億パラメータを擁し、Full、Dev、Fastの3種のモデルが公開された。VRAM12GB、メインメモリ64GBから動作可能とされている。出力された画像は商用利用が可能。
+3種類のモデルはそれぞれ量子化版が公開されている。（[[Full>https://huggingface.co/city96/HiDream-I1-Full-gguf]]、[[Dev>https://huggingface.co/city96/HiDream-I1-Dev-gguf]]、[[Fast>https://huggingface.co/city96/HiDream-I1-Fast-gguf]]）
+
 **2025-03-26 ChatGPTの画像生成がGPT-4oベースになる
 従来のDALL-Eベースの画像生成と比較してプロンプトの理解力が格段に上がり、表現力も高まった。
-「どんな画像もスタジオジブリ風にできる」と話題になり、利用者が増大した結果OpenAIのサム・アルトマンCEOは「GPUが溶ける」とSNSへ投稿し、無料ユーザーへの開放を延期すると表明した。（4月初めには全無料ユーザーに開放された）
+「どんな画像もスタジオジブリ風にできる」と話題になり、利用者が増大した結果OpenAIのサム・アルトマンCEOは「GPUが溶ける」とSNSへ投稿、無料ユーザーへの開放を延期すると表明した。（4月初めには全無料ユーザーに開放された）
+
 **2025-03-17 Illustrious XL 2.0が公開される
 https://www.illustrious-xl.ai/model/4
 https://tensor.art/models/840365567832646761/
@@ -113,6 +260,7 @@ RTX50x0シリーズは当初ComfyUIのみ利用できる状況だったが、CUD
 https://github.com/Zuntan03/EasyWanVideo
 Zuntan氏によるEasyシリーズで、WanVideoを使った動画生成の環境がセットアップされる。
 メインメモリ32GBではスワップが発生しやすくSSDの寿命が短くなるとして、64GBが最低限ではという意見が多い。マザーボードの制限をチェックしつつ128GBやそれ以上にメモリを増設するユーザーが増えた。
+
 **2025-03-01 NovelAI Diffusion v4が正式リリースされる
 https://novelai.net/
 公開直後の様子では、プロンプトの効き方がv3から変わり、思い通りの画像を出力できないと感じるユーザーが多い模様。SMEAやバイブストランスファーが実装されていないことも一因か。
@@ -927,6 +1075,39 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

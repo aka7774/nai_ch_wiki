@@ -1,24 +1,18 @@
 #contents
 
 *概要
-ローカル環境(AUTOMATIC1111版Stable Diffusion WebUI)の導入ガイドです。
-''&color(#FF0000){注意} 最近wikiの更新が滞りがちなため、このガイドは古くなっている可能性があります。''
+ローカル環境(AUTOMATIC1111 Stable Diffusion WebUI reForge)の導入ガイドです。
+オリジナルの1111は古いので、ここではフォーク版のreForgeを導入します。
+なお、GeForce RTX搭載PCを対象としたガイドです。
 
 *導入
 
-- リファレンス
--- https://rentry.org/voldy
-上記のページは2022年の古い情報であることに留意。
-
-- 説明読んでも全く理解できない人は「簡易インストール」を試すといいかも。
-
-** 1. Python 3.10をインストールする
+** 1. Python 3.11.9をインストールする
 &color(#ff0000){Anaconda入れてたら先にアンインストールしろ!!!}
 
-[[https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe]]
-3.11使うならTorch2.1以降を手動インストールするんやで
+[[https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe]]
 
-「python-3.10.11-amd64.exe」がダウンロードされるので、ダブルクリックで開く。
+「python-3.x.x-amd64.exe」がダウンロードされるので、ダブルクリックで開く。
 このとき、Add to PATH にチェックをつけてインストールすること。
 &ref(https://image02.seesaawiki.jp/n/h/nai_ch/H089Tt3hem.png)
 
@@ -26,14 +20,14 @@
 
 ** 2. Gitをインストールする
 
-入れておかないと色々エラーが出たりして厄介。
+必須だと思った方がいい。
 
 [[https://git-scm.com/downloads]]
 64-bit Git for Windows Setup. を選ぶ。
 
 インストールするときは、「Windowsエクスプローラの統合 - Git Bash」のチェックボックスをオンにするのがおすすめ。
 
-** 3. 1111本体のダウンロード
+** 3. reForge本体のダウンロード
 ※ダウンロード先は''SSD推奨''。HDDだと起動時間やモデルの切り替え時間が非常に長くなるので注意
 （空き容量が心配ならSettings > Paths for savingから生成画像の保存先を別ドライブにするなども可）
 
@@ -44,7 +38,7 @@
 
 ***��WebUIをZIPでダウンロードする場合
 GithubリポジトリからZipでダウンロードするかんたんな方法。アプデとかめんどくさいし、バージョン戻しもできないのでお試し環境構築用として推奨。
-+ 以下のURLアクセス ~~ AUTOMATIC1111/stable-diffusion-webui: Stable Diffusion web UI - https://github.com/AUTOMATIC1111/stable-diffusion-webui
++ 以下のURLアクセス ~~ https://github.com/Panchovix/stable-diffusion-webui-reForge
 + Code <> →Download ZIP　でダウンロードします
 + 好きなところに配置
 + 完了
@@ -57,7 +51,7 @@ GithubリポジトリからZipでダウンロードするかんたんな方法�
 + File　→　Clone Repository
 + タブ「URL」に設定後、以下を記載~~
 =|BOX|
-https://github.com/AUTOMATIC1111/stable-diffusion-webui
+https://github.com/Panchovix/stable-diffusion-webui-reForge
 ||=
 + Local Pathに配置したい場所を記載してCloneを押す
 + 完了
@@ -72,36 +66,32 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui
 3. 黒い画面が出たらディレクトリのパスが表示されていることを確認します
 4. 次のコマンドを打ちリポジトリをダウンロードします
 =|BOX|
-git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+git clone https://github.com/Panchovix/stable-diffusion-webui-reForge
 ||=
 
 **4：モデルのダウンロードと配置
 
 - ここで検索する
 -- https://huggingface.co/models
-- モデルについては[[Models]]ページに詳しく書いてある。
-- [[スレ民共有モデル]]が質もいいのでおすすめ。
+- モデルについては[[SDXL]]ページに詳しく書いてある。
 - [[civitai>>https://civitai.com/]]もモデルが沢山あるのでおすすめ。
 - ダウンロードしたファイルは以下のディレクトリに配置する
--- stable-diffusion-webui/models/Stable-diffusion
+-- webui/models/Stable-diffusion
 
 **5：VAEのダウンロードと配置(任意だけど推奨)
 
-- VAEがないと色が薄くなったりするので補正するために使う
-- [[ローカルのリソース]]に、NovelAIと、それ以外のVAE一覧がある
--- 拡張子を.vae.ptに変える ※VAEフォルダに入れるなら変更不要
-- 配置方法は2通り
--- stable-diffusion-webui/models/Stable-diffusion に、モデル名と同名で配置して「Automatic」で適用する
--- stable-diffusion-webui/models/models/VAE に配置して、ファイル名を選択して適用する
+- VAEがないと色が薄くなったりNaNエラーになったりするので別途指定推奨
+https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/tree/main にあるsdxl_vae.safetensorsをDLする
+- 配置方法
+-- webui/models/models/VAE に配置して、ファイル名を選択して適用する
 - 設定の場所は、Settingsタブの[Stable Diffusion]-[SD VAE]
 
 **6：配置
 以下のディレクトリにモデルを配置します。
 Checkpoint:
-/stable-diffusion-webui/models/Stable-diffusion
+/webui/models/Stable-diffusion
 VAE:
-/stable-diffusion-webui/models/VAE
-[END]
+/webui/models/VAE
 
 **7.起動確認
 
@@ -120,127 +110,16 @@ Running on local URL: http://127.0.0.1:7860
 WEBUIの操作画面が表示されたらここまでの手順は成功。おつかれさまでした。
 
 **8(※オプション)：環境設定
-[[ローカルのwebui-user.bat]]に移動しました。
+https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/README.md#forgereforge-backend
 
 * 簡易インストール
-**公式のやつ
--https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/tag/v1.0.0-pre
-zipを解凍→update.batを実行→run.batを実行でインストールされる。学習モデルはStable Diffusion公式の1.5が自動でダウンロードされる
--もうこいつ一人でいいんじゃないかな？
--基本難しいこと考えずにインストールしたいならこれを使うのが最初になるんちゃうかな？
--おおむね後者のあかちゃんインストーラーとやっとることも同じみたいやで？
--後述のスタンドアローンの作者も『自身の方法とほぼ同じ』と発言していたので利用者はこっちに乗り換えて大丈夫かも
--一部の拡張機能はPythonを入れないと動かないという話も（入れ方は上を参照）
-
-** あかちゃんインストーラー
-
-うまくいけば一発でインストールできる。
-
-- https://raw.githubusercontent.com/aka7774/elemental_code/main/tools/install_1111.bat
-- リンクを右クリックでインストールしたいフォルダに保存して実行
--- C:\SD みたいな短くて英語でスペースのないとこがおすすめ
-- あとは待つだけ
--- ブラウザも勝手に立ち上がるようにしました
-- &color(#ff0000){2回目からは start.bat を起動}
-- 環境を汚さないのでいくつでも入れられる（※キャッシュなどはシステムドライブに残る）
--通常の手順途中までやってPythonもGITも入ったけど上手くいかなかったのでこっち使ったけどやっぱり動かんンゴ…って時には下記の行を消してstart.bat動かすと動くかも、しらんけど
-=|BOX|
-echo set PATH=%%PATH%%;%INSTALL_DIR%python310\Scripts;%INSTALL_DIR%PortableGit\bin
-echo set PYTHON=%INSTALL_DIR%python310\python.exe
-echo set GIT=%GIT%.exe
-echo set VENV_DIR=
-||=
-
-*** あかちゃんインストーラーでコマンドを使えるやつ.bat
-
-絶対パスじゃなくても python とか git とか打ったら動くようになる。
-
-https://github.com/aka7774/elemental_code/blob/main/tools/1111_activate.bat
-
-Thanks bro!
-
-*** モデルのインストール
-
-+ 「Filer」「Checkpoints」「Download」タブを順に開いていく
-+ ダウンロードしたいモデルのURLを入力
-+ 「Download to Active Dir」ボタンを押す
-** スタンドアローンセットアップ法・改
-
-https://note.com/uunin/n/n715256399038
-
-スレでもたまに紹介されている。Pythonやgitのインストール作業無しでセットアップするのでWindows環境を汚さずに導入出来るのがウリ。わりと初心者向け(？)の解説付き。
-セットアップに関してのトラブルはwikiでは対応できないので、noteのコメントで相談しましょう。
-
-** %%A1111 WebUI Easy Installer and Launcher%%(2023/08/22 更新停止)
-
-https://github.com/EmpireMediaScience/A1111-Web-UI-Installer
-
-CG板で使ってみた人がいいかもって言ってた。
-スレでも技術部でも誰も試してないので副作用とかは不明。
-一般論としては既にインストール済みのPythonやGitがあるとエラーの原因になりうる。
-ほかの方法でダメだったら試してみるのも手なのかも。
-使ってみた人いたら感想書いてね。
-
 ** StabilityMatrix
 
 https://github.com/LykosAI/StabilityMatrix
 
 WebUI Easy Installer and Launcherの代わりになるかもしれない。
 
-* トラブルシューティング
-**gtx16xxで必要な設定
-　gtx16xxでは半精度浮動小数点数が扱えないためそのままでは黒や緑の絵しかでない。オプション追加が必要。また、メモリがやや少なめ用設定も追加要
-  webui-user.batに
-=|BOX|
-COMMANDLINE_ARGS=--precision full --no-half --no-half-vae --medvram
-||=
-　を加える
-**その他本家のトラブルシューティングの訳(機械翻訳)
-- フォルダーのパスにスペースがないことを確認する
-- フラグを使用しようとしたときに launch.py&#8203;&#8203; エラー、認識されない引数が発生した場合は、webui-user.bat で完全な相対パスを使用してみてください。
-例：--ckptCOMMANDLINE_ARGS= --ckpt ./models/Stable-diffusion/nai.ckpt
-- 「私はgitで更新するためにPullして、何かが壊れた!」当然のことながら、多くの新機能が導入されているため、不安定になる可能性があります。[[手順に従って以前のビルドに戻します>https://rentry.org/git_retard]]。
-- インストール中に&#160;winerror&#160;が発生する場合、または何かを壊して最初から再インストールしたい場合は、次のディレクトリを削除して、もう一度やり直してください。`venvrepositories`
-- Pythonがエラーとして見つからない場合は、webui-user.batでPATHを手動で設定する必要があります。
-　　1. python.exeのパスをShift+右クリックでコピー
-　　2. webui-user.batを編集→　PYTHON= にコピーしたパスを追加します。※(""は保持)
-- (img2img)RuntimeError:テンソルのサイズが一致しなければならない場合、入力画像の解像度を変更する必要があります
-- 実行できる最新の[CUDAツールキット](https://developer.nvidia.com/cuda-11.3.0-download-archive?target_os=Windows&target_arch=x86_64)とGPUドライバがあることを確認してください
-- トーチがGPUを使用できない場合は、代わりに[Python 3.7](https://www.python.org/downloads/release/python-370/)をダウンロードする必要があります
-- 起動時に 'Git'がコマンドとして認識されない場合は、次の操作を行います:launch.py 編集で始まるすべての行を削除して保存します`git_clone`
-- あなたのバージョンのPythonがPATHにない場合(または別のバージョンがPATHにある場合)、[webui.settings.bat](http://webui.settings.bat/)フォルダに行セットPYTHON=pythonを追加して、Python実行可能ファイルへのフルパスを言います:Pythonではこれを行うことができますが、gitの場合はできません。`/stable-diffusion-webuiset PYTHON=B:\soft\Python310\python.exe`
-- インストーラはPython仮想環境を作成するので、インストール前にインストールされていたモジュールがあれば、インストールされたモジュールはシステムインストールには影響しません。
-- 仮想環境の作成を防ぎ、システムのPythonを使用するには、webuiを編集し.bat setを`VENV_DIR=venvset VENV_DIR=`
-- webui.bat は、Python 3.10.6 と特に互換性のあるモジュールのバージョンをリストするファイル から要件をインストールします。別のバージョンのPython用にインストールすることを選択した場合は、webuiを編集すると、.bat=REQS_FILEを設定する代わりに.txt=要件を設定することが役立つかもしREQS_FILEません(ただし、推奨バージョンのPythonを使用することをお勧めしますrequirements_versions.txt)。`requirements_versions.txt`
-- 生成された画像の代わりに緑/黒の出力を取得する場合は、半精度浮動小数点数をサポートしていないカードがあります(16xxカードの既知の問題):edit webui-user.bat -追加したい他のフラグと一緒に6行目を変更する.vaeファイルを使用している場合は、残念ながら、モデルはVRAMではるかに多くのスペースを占有しますしたがって、それ`COMMANDLINE_ARGS=--precision full --no-half-no-half-vae-medvram`
-- あなたの出力がごちゃごちゃした虹の混乱である場合、あなたのイメージの解像度は低すぎます
-- CFGレベルが高すぎると色の歪みも発生し、CFGは5〜15
-- 古いシステムでは、次のように変更する必要があります。`cudatoolkit=11.3cudatoolkit=9.0`
-- インストールが C: ドライブにあることを確認します。
-- このガイドは、安定した拡散には cuda コアが必要なため、NVIDIA GPU&#160;*専用*に設計されています。AMDユーザーは[このガイド](https://rentry.org/ayymd-stable-diffustion-v1_4-guide)をお試しください
-
-* Tips(機械翻訳、SD1向け)
-
-- WebUI 内でダウンロードした .ckpt ファイルをすばやく切り替えることができます。
-- ベースSDとは異なり、NovelAIは歪みなく最大**768x768**の画像をネイティブに生成できます
-- それ以外の場合、SDで512x512よりも大幅に大きい画像を生成する場合は、最良の結果を得るため必ずチェックしてください&#160;Highres, fix&#160;。そうしないと、「複製」歪みが現れ始める可能性があります (複数の顔、腕など)。ノイズ除去強度：denoising strengthを下げると最適に機能するようです (私は 0.5 を使用しました)
-- 利用可能な修正があっても、NovelAI以外のモデルは512x画像でトレーニングされているため、最も正確な結果を得るために512x512で生成することをお勧めします
-- ワイフモデルと通常の.ckptには独自の長所と短所があります。waifu .ckptで行われたアニメ以外のプロンプはアニメのスタイル化に偏り、別のモデルとマージしない限り、現実的な顔や人々をより困難にします
-- トレーニング時に引数や**引数を使用しないでください**!結果は非常に劣るでしょう`-medvram-lowvram`
-- nai.yaml は、NovelAI の結果で 1:1 を達成するために必要ではないかもしれません。
-- キーワードの周囲に( )を使用して強度を高め、[ ] を使用して強度を下げます。
-- 他のサンプラーとは異なり、k_euler_aは低ステップから高品質の結果を生成することができます。
-- プロンプトを**スタイルとして保存**を使用すると、プロンプトを簡単に選択可能な出力として保存できます。最初のスタイルを保存すると、Rollの左側に選択するボックスが表示され、選択することができます。プロンプトはアクセスすることで削除できます(これは、本当に良い画像を生成し、さまざまな被写体で繰り返し使用したい組み合わせを見つけた場合に便利です)。`styles.csv`
-- 右側の出力タブからimg2imgにお気に入りの結果をドラッグ**して、**さらに反復することができます
-- **k_euler_a**と**k_dpm_2_a**のサンプラーは、同じシード&プロンプトから大きく異なる、より複雑な結果をもたらしますが、それらの結果はステップ全体で一貫していません。他のサンプラーは、より多くのステップでより予測可能な線形改良を提供します
-- 生成された各結果のシードは、再訪する場合に出力ファイル名にあります
-- img2imgで生成された画像と同じキーワードを使用すると、興味深いバリアントが生成されます
-- プロンプトは*1*次元で少なくとも512ピクセル、または絶対最小の384x384正方形にすることをお勧めします。
-- CLIP インテロゲーターは多くのスペース (8 GB) を占有します。頻繁に使用する予定がない場合は選択しないでください。
-- 興味深い出力のためにimg2imgで低強度(0.3-0.4)+高CFGを試してみてください
-- プロンプトで日本語の Unicode 文字を使用できます。
-
-**UIの日本語化
+* UIの日本語化
 +画面上部メニューの「Extension」タブをクリック
 +Installed,Avaliable,Install from URLと書かれた中の「Avaliable」をクリック
 +「localization」の左側のチェックマークをクリック（チェックを外す）
@@ -261,55 +140,32 @@ COMMANDLINE_ARGS=--precision full --no-half --no-half-vae --medvram
 
 ** クリーンインストール
 + リソースのダウンロードとかは省いて導入ガイドにそってWebUIを再インストールする。~~ ※フォルダは「StableDiffusion_WebUI_v2」とか名前つけて新しく作ってリポジトリをクローンするんやで
-+ もとのディレクトリ*に置いてあったモデルを同じディレクトリにコピペする ~~*場所：/stable-diffusion-webui/models/Stable-diffusion
++ もとのディレクトリ*に置いてあったモデルを同じディレクトリにコピペする ~~*場所：/webui/models/Stable-diffusion
 + 完了
 
 * 移動する方法
 
 SSDを増設したとかで、
-C:\stable-diffusion-webui
+C:\stable-diffusion-webui-reForge
 から
-D:\stable-diffusion-webui
+D:\stable-diffusion-webui-reForge
 に移動したいとする。
 
 基本的にはフォルダごと移動して大丈夫。
 PythonとGitがCドライブに残ったままならこれでいけるはず。
 
 Pythonの置き場所も変わる場合、
-D:\stable-diffusion-webui\venv\pyvenv.cfg
+webui\venv\pyvenv.cfg
 を開いて、homeを変える必要がある。
 
 * 削除する方法
 
-C:\stable-diffusion-webui
-ごと削除する。
+WebUIのディレクトリごと削除する。
+
+ターミナルでpip cache purgeでpipキャッシュを消去する。
 
 PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。
 Pythonの残骸がC:\Users\ユーザー名\AppData\Local\Programs\Pythonにあるので消す。
-
-* 環境の移行
-新しくWebUIをクリーンインストールして古い環境の設定だけをもってくる方法。
-※編集中。だれか詳しい人いたら追記して、どうぞ。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

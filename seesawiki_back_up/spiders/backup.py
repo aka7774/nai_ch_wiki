@@ -6,7 +6,7 @@ from seesawiki_back_up.items import SeesawikiBackUpItem
 
 class BackupSpider(scrapy.Spider):
     name = "backup"
-    allowed_domains = ["seesaawiki.jp"]
+    allowed_domains = ["seesaawiki.jp", "wiki.seesaa.jp"]
     # start_urls = ["http://seesaawiki.jp/"]
     def __init__(self, query="", rank=0, *args, **kwargs):
         super(BackupSpider, self).__init__(*args, **kwargs)

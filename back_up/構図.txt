@@ -2,14 +2,20 @@
 
 * テーマ
 数単語以上でのいい感じのやつ
-
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|photo (medium), figure||フィギュア|||
+|female POV, head out of frame, looking down, from a low angle, looking up at the own feet and breasts, breasts focus||女性主観視点、見下ろし|V4使用。|https://image01.seesaawiki.jp/n/h/nai_ch/827348126eca5780.png|
+|split theme||キャラクターの分割絵。||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/2431a87e87c1d80c.png)|
+|dual persona||同じキャラクターが写っている絵。||https://image02.seesaawiki.jp/n/h/nai_ch/4dd8720502e058bc.png|
+|split screens||対比絵。||https://image02.seesaawiki.jp/n/h/nai_ch/bddaf2eb41e3f273.png|
+|screen zoom,zoom layer,stage||後ろのスクリーンに同じ絵が映っている||https://image01.seesaawiki.jp/n/h/nai_ch/6c2614e0889d6a9a.png|
 |1girl, hair down, completely nude, on one knee, hand on ground, night, electricity around body, convenient censoring, ||ターミネーター|V4使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/V4uyZHPekn.png)|
 |1girl, [head out of frame], waist, bikini, beach, [leaning forward], [hands on own knees], teeth, tanlines, squatting, gyaru, [accessory tan]|eyes|夏の少年の性癖破壊ギャル|V3使用|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7n8_1N7WK7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/7n8_1N7WK7.png]]|
 |1 girl, {{incoming_food}}, {{feeding}}, holding_spoon, foreshortening,{{blurry_foreground}}, school uniform, shy smile, blush, open mouth, head_tilt, upper_body, parfait on the table, table, looking at viewer, indoor, cafeteria, pov, perfect anatomy, speech bubble,||あーん|V3使用。ガチャ度高め。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/hyKXPIYCvJ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/hyKXPIYCvJ.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3uWCCvJnzK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/3uWCCvJnzK.png]]|
 |{{{{picture frame, polaroid, white border}}}}, |{{{{outside border}}}},|ポラロイド写真|V3使用。四隅が綺麗に縁取られなかったり、足などがはみ出ることはある。|https://image02.seesaawiki.jp/n/h/nai_ch/h60DiIf6a6.png|
-|{{iPhone, smartphone screen, camera app frame}}, viewfinder, |{{{{camera}}}},|スマホのカメラ越し撮影|絵柄と画面描写の間ぐらいに挿入することでサンプルみたいなスマホ撮影風になる。|https://image01.seesaawiki.jp/n/h/nai_ch/yhFVIN3LKt.png|
+|{{iPhone, smartphone screen, camera app frame}}, viewfinder, |{{{{camera}}}},|スマホのカメラ越し撮影|絵柄と画面描写の間ぐらいに挿入することでサンプルみたいなスマホ撮影風になる。V4以降は効かない。|https://image01.seesaawiki.jp/n/h/nai_ch/yhFVIN3LKt.png|
 |multiple knights, knights in line,||整列した騎士|適度に強調を混ぜることで主題に生成するものの背景にすることも可能|https://image02.seesaawiki.jp/n/h/nai_ch/f6VeAgVmRx.png|
 |{{realistic urtra details}}, {winning post},horse_riding form,racehorce|motorcycle,bicycle|競馬の騎手の乗り方|競馬ゲームの名前入れたらモンキー乗りになる。但し今度は馬がおかしくなる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2Ds__oYS9D.png]]|
 |riding_form,horse, horseback riding,||騎乗|馬に乗ってくれる。競馬のモンキー乗りは不明。馬をバイクや自転車に変えることも可能|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/PUeCt1a9Ti.png]]|
@@ -25,14 +31,16 @@
 |glory hole,ass focus,|V3用|^|holeが含まれているためか、穴にハマったような形になる。~~成功率はまだ微妙であり、改善の余地がありそう。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/g0jAnxRTut-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/g0jAnxRTut.png]]|
 |panorama, fisheye lens||  魚眼レンズ| 撮りたい範囲が広いなど多少無理ある構図でもfisheye_lensでどうなることもある|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/sP0j8hl3KJ.png)|
 |}
+[END]
 
 * 単語集
+[+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
 |upside-down|逆さま||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0Sv4e1Mh8u-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0Sv4e1Mh8u.png]]|
 |stepped on,from below|見上げる構図になるらしいで。|トップページコメントより引用|https://image01.seesaawiki.jp/n/h/nai_ch/MQJKA8eN7d.png|
-|YouTube screen|YouTube動画|V3使用|https://image02.seesaawiki.jp/n/h/nai_ch/3X3axRx18h.png|
-|viewfinder|カメラの撮影画面（ビューファインダー）|V3使用|https://image02.seesaawiki.jp/n/h/nai_ch/tOoNvVnoei.png|
+|YouTube screen|YouTube動画|V3使用。V4以降は効かない|https://image02.seesaawiki.jp/n/h/nai_ch/3X3axRx18h.png|
+|viewfinder|カメラの撮影画面（ビューファインダー）|V3使用。V4以降は効かない。|https://image02.seesaawiki.jp/n/h/nai_ch/tOoNvVnoei.png|
 |Live streaming|ネット配信|tiktokとか付けるとそれっぽくなる|https://image02.seesaawiki.jp/n/h/nai_ch/4rXHoz2XIw.png|
 |Instagram|インスタグラム||https://image02.seesaawiki.jp/n/h/nai_ch/qEoQ4kHOVa.png|
 |isolated on 色の名前 background|isolated on white backgroundで白背景になる。white backgroundだけだと謎オブジェクトが出現するときに使うといいかもしれない|SD がトレーニングに使ったデータセット内には「isolated on *token* background」というラベルがついた画像が大量にあるらしいhttps://www.reddit.com/r/StableDiffusion/comments/yc1osj/easily_prompt_for_generating_pure_background/|https://image01.seesaawiki.jp/n/h/nai_ch/OcMpYUdUCp.5_comp001.jpg|
@@ -65,7 +73,7 @@
 |upskirt|尻中心の構図（主にスカート内部）|||
 |solo|1人|danbooruの基準では、以下はsoloに含まれない~~ - 同一人物を異なる視点から描いたもの（→multiple views）~~ - 抱き枕の両面 ~~ - 1人以外がモブであり詳細に描かれない（→solo focus） ~~ - 性行為の一方が顔無しや身体一部だけ（→solo focus）||
 |}
-
+[END]
 * 被写体サイズ
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|意味|備考|サンプル|
@@ -99,6 +107,13 @@
 |looking to the side|横を向く|顔:横を向く|https://image01.seesaawiki.jp/n/h/nai_ch/GCxwwfImkZ.png https://image02.seesaawiki.jp/n/h/nai_ch/__BQPIM79O.png|
 |looking afar|ぼんやりと遠くを見る|視線:顔の向きと同じになる~~あんまり上手く効いてないのでexpressionlessと併用が必要かも?|https://image02.seesaawiki.jp/n/h/nai_ch/ZMb6CNJEtS.png|
 |}
+
+
+
+
+
+
+
 
 
 

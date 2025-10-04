@@ -5,12 +5,12 @@
 *キーワード
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
-|||||
-||無修正|||
+|nsfw|エロ|||
+|pubic hair|陰毛|public hairと綴りを間違えないように要注意。||
+|penis|陰茎|||
+|glans|亀頭|フェラチオ等で亀頭が隠れるまでしっかりと咥え込ませたいなら入れたほうが良い。||
 |makeup|化粧|realisticなどのリアル化タグを入れたときに年齢が上がったように見える際の対策の一つとして有効。ほかの年齢上昇防止ネガティブタグと一緒に指定すると良い。||
-|||||
 |loli|ロリ|熟女系を出したいときに入れると年齢が上がる||
-||ふたなり|||
 |frame,cropped|フレーム、切り取り|イラストに余白ができるときに||
 |old man,fat man,ugly man,dark-skinned man,muscular man,faceless man||||
 |uncensored|無修正|||
@@ -89,6 +89,13 @@ SDXLでは効果がないので注意
 |ng_deepnegative_v1_75t|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://civitai.com/models/4629/deep-negative-v1x||
 |EasyNegative|ネガティブプロンプトをembeddingとして学習した|画質、キャラクターの崩れ防止 要ptファイル https://huggingface.co/datasets/gsdf/EasyNegative||
 |}
+
+
+
+
+
+
+
 
 
 

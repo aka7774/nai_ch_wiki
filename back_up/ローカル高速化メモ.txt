@@ -16,6 +16,11 @@ https://huggingface.co/tianweiy/DMD2
 *** TDD(Target-Driven Distillation)
 https://huggingface.co/RED-AIGC/TDD
 
+* reForgeなどの他のUIを使う
+1111のWebUIを速くする方法でこれを書くのは本末転倒だが、ほかのUIを使う手がある。
+AUTOMATIC1111のWebUIは最適化不足でやや遅い。しかも1111氏の失踪により開発が停止しているので今後の改善もおそらくない。
+いっそのこと、一部の互換性のないExtensionのために1111WebUI残しておいて、メインのWebUIは現在も活発に開発中のreForgeに乗り換えるべき。
+
 * GPU使用率
 画像生成速度には、GPU使用率が大きく影響する。
 アスカベンチで同じグラボの他人の結果より明らかに遅い場合、なんらかの原因でGPUがフルに使われていない可能性もある。
@@ -61,6 +66,11 @@ xformersと特徴は同じ。わずかに絵が変化する代わりに2割程�
 sdpのほうは出力の揺らぎが大きいかもしれない。
 xformersと併用、共存はできない。
 xformersよりVRAM使用量が増えるため、学習や高解像度生成時には注意
+
+** Sage Attention
+1111は古いため非対応。ComfyUIやForge Classicなどが対応。
+量子化ベースの技術のため品質が低下する？
+RTX30以降が必要。
 
 * --opt-channelslast
 
@@ -175,12 +185,11 @@ UIからオフにするだけではダメ
 
 * Stepsを減らす
 出来るだけ少ないStepsでも期待通りの絵が出る方法を模索する。
-末尾にa(ancestral)がつかないサンプラーで再現できないか試す。
+末尾にa(ancestral)またはSDEがつかないサンプラーで再現できないか試す。
 DPM++ 2Mは15Stepsでもそれなりに映えるのでおすすめ。
 %%UniPCはもっと良い感じ。%%実際はそうでもない。
 SchedulerにSimpleを使うとさらに良くなる。
 LCM、TurboやHyper-SDなどはさらに速い。出力を大きく変化させたり相性の良し悪しがあったりする代わりに10steps未満でまともな絵がでる。
-最近の派生モデルは↑無しでも10ステップ程度でまともな絵を出せるものもある。
 
 * WebUIを高速なストレージに入れる
 シーケンシャル3GB以/s上のSSDに配置することで読み込みを高速化する。大容量なSDXLで効果的。
@@ -230,7 +239,7 @@ Windowsが入っていない空っぽのSSDに入れるか、サブ機とかお�
 
 * TensorRTを使う(非推奨)
 https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT
-最適化(コンパイル)で大幅に高速化するもので最大2倍速くなるらしい。NVIDIA専用。
+CUDAに加えてTensorコアを使用するためにモデルをコンパイルする。最大2倍速くなるらしい。NVIDIA専用。
 1111のExtensionから導入できる。
 
 けど以下の重大な欠点があるのでベンチ以外で使い道はないかな
@@ -240,15 +249,10 @@ https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT
 -ControlNetのようなU-netに干渉するものは一切使えない
 -Extensionのインストールが不安定で失敗しやすい
 
-
 * venvをいったん消して作り直す
 Windows再インストール並みの最終手段。
 最新の1111に必要なものしか入らなくなるので軽くなる、かも。
 Extension試しまくってると肥大化するので月イチくらいでやるといいかも。
-
-* 別のUIを使う
-1111のWebUIを速くする方法でこれを書くのは本末転倒だが、ほかのUIを使う手もある。
-AUTOMATIC1111のWebUIは最近になって速度が改善されたが、Windows版のメモリ消費(確保)の多さは変わっていない。Forgeのほうが若干省VRAM、ComfyUIは速くて省メモリで省VRAM。
 
 * GPUを買い替える
 ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。
