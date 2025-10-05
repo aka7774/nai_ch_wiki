@@ -349,6 +349,13 @@
 |hinamori amu,  shugo chara!, loli, pink hair, yellow eyes, cross hair ornament, one side up, hair between eyes, smile, red plaid skirt, red necktie, blazer, belt, school uniform, miniskirt, collared shirt, closed mouth, solo, cowboy shot, ||^|^|プロンプト増やした安定版|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yCrqnhtoiE-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yCrqnhtoiE.png]]|
 |} 
 
+***　ジュラシック・パークシリーズ
+{| class="sort edit nanj_prompt_table" 
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
+|indominus rex, jurassic world, no humans, prehistoric animal, standing, from side, full body, ||ジュラシック・ワールド（無印）|インドミナス・レックス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。ジュラシック・ワールドのオリジナル恐竜。実際には存在しない種類。|https://image02.seesaawiki.jp/n/h/nai_ch/de8fe7b00e5bd1fe.png|
+|blue (jurassic park), jurassic world, no humans, prehistoric animal, standing, from side, full body, ||ジュラシック・ワールド（無印、炎の王国、サバイバルキャンプ、新たなる支配者）|ブルー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。雌のヴェロキラプトル。特徴的なブルーのラインが再現するので版権キャラ再現に掲載。|https://image02.seesaawiki.jp/n/h/nai_ch/0b8fd5a4230d6473.png| 
+|} 
+
 ***　STEINS;GATE（シュタインズ・ゲート） 
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
@@ -1426,6 +1433,7 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(通常Ver.)|V3使用。zombieと指定しなくても肌が青くなることはある。悪しからず。|https://image01.seesaawiki.jp/n/h/nai_ch/rKT9oVAXUb.png|
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
+
 
 
 
