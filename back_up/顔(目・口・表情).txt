@@ -205,7 +205,7 @@
 {| class="nanj_prompt_table sort edit"
 |~プロンプト|意味|備考|サンプル|
 |sclera|白目部分|色と組み合わせ可能(black_scleraなど)|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/x6JApFdg50-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/x6JApFdg50.png]]|
-|pupil|瞳孔|この単語を入れると瞳孔が白くなる|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/iLYdSeReB4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/iLYdSeReB4.png]]|
+|pupil|瞳孔|この単語を入れると瞳孔が白くなる。~~ただしwhite pupilusの方が確実|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/iLYdSeReB4-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/iLYdSeReB4.png]]|
 |eyes|目|色と組み合わせ可能(red_eyesなど)。~~強調するとまつ毛も同色に変わっていく。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yQmRZnjVox-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/yQmRZnjVox.jpg]]|
 |eyeball|目玉|色と組み合わせ可能(red_eyeballなど)。~~"eyes"はまつ毛と瞳孔合わせた色だが、~~eyeballは黒目のみの指定||
 |eyelashes|まつ毛|色と組み合わせ可能。強調すると色が濃くなりまつ毛がでかくなる。~~NCに登録するとまつ毛の描写がシンプルになりアニメ風に近づく||
