@@ -52,6 +52,15 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-10-07 OpenAI、Sora2のAPIを発表
+https://platform.openai.com/docs/guides/video-generation
+Sora-2とSora-2-Proが用意され、価格は最も安いSora-2が1,280×720ピクセルで1秒0.1ドル。→[[価格表>https://openai.com/ja-JP/api/pricing/]]
+
+**2025-10-06 Grok、動画生成AIを実装
+https://grok.com/imagine
+画像をアップロードするとすぐに生成が始まり、動画が出力される。二次元絵の動画化が得意でエロ表現も可能。効果音や音楽も自動で挿入される。Sora2と異なりウォーターマークも入らない。
+Grokのスマホアプリで年齢認証を行うと、パソコンでもエロ動画を出力できるようになるらしい。
+
 **2025-10-03 音声合成AI「高音（Takane）」、公開終了
 https://huggingface.co/spaces/Respair/Takane
 自然なイントネーションと感情のこもった音声データを生成でき、エロ声も可能な「Takane」（9月27日リリース）の公開が終了した。作者の[[Soshyant>https://x.com/MystiqCaleid]]氏はTakaneがあくまで技術デモであること、また「サーバーへの大きな負担、そして声優の方々への潜在的な悪用を防ぐため」としている。
@@ -1075,6 +1084,8 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
 
 
 
