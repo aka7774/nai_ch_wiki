@@ -8,7 +8,7 @@
 - まずは「キャラ名」と「作品名」に該当するdanbooruタグを入力する（アプデで、NAIのプロンプト欄に日本語で入れれば英名がサジェストされるようになった）
 -- ↑で出なければ、danbooruの検索欄に日本語で最初の数文字を入れれば英名が候補に出る。（それでも出なければ、日本語版wikipediaの該当作品ページから英語版に飛ぶ、翻訳サイトに入れてみる、chatGPTに聞いてみるなどすれば大体見つかる）
 - 再現したい公式絵を見つける（大抵はgoogle画像検索でキャラ名を入れたときに出る全身絵かバストアップ絵で十分）
-- [[wd tagger>https://huggingface.co/spaces/SmilingWolf/wd-tagger]]または[[DeepDanbooru>https://huggingface.co/spaces/hysts/DeepDanbooru]] にアクセスする ((どちらも結果は大体同じだが、DeepDanbooruは現行danbooruでは使われない古いタグが残っていることが多く、wd taggerのほうがより最新の結果が得られやすい))（まれに404になるのでその場合時間をおいて再アクセス）
+- [[pixai tagger>https://huggingface.co/spaces/pixai-labs/pixai-tagger-demo]]、[[wd tagger>https://huggingface.co/spaces/SmilingWolf/wd-tagger]]または[[DeepDanbooru>https://huggingface.co/spaces/hysts/DeepDanbooru]] にアクセスする ((どれも結果は大体同じだが、pixai, wd tagger, deep danbooruの順に新しく、対応タグも豊富))（まれに404になるのでその場合時間をおいて再アクセス）
 - Score thresholdを0.1にする
 - 再現したい絵をInput欄に入れる（画像検索の結果から直接ドラッグアンドドロップもできる。判定は中央付近のみっぽい）
 - Runを押すと数秒後、右側に結果が出る（エラーになる場合は、自分で画像をDLしてアップロードするか、別の画像にする）
@@ -23,6 +23,11 @@
 - 生成する
 
 もし生成に成功したら、当該wikiページになければキャラ追加しよう！
+
+* キャラ参照機能の追加
+NAI版IP-Adapterとも言えるCharacter Reference(キャラ参照)がリリースされた。（2025年9月11日プレビュー、10月7日アップグレード）
+これにより、新キャラやdanbooruにあまりいないキャラ、果てはオリキャラなどの再現も非常に容易になり、版権キャラ再現はこれで一つの結論をみた。
+ただし、キャラ参照はポーションとは異なり、（opusプランであっても）毎回anlasを消費するので、これを使用しないキャラ再現の意義もなくはない。
 
 * V4.5
 2025年5月30日リリース。（Curatedは5月5日リリース）
@@ -215,4 +220,6 @@ gochuumon wa usagi desu ka?を追加するとある程度は回避できるが�
 
 -画像に別のキャラの要素が出るなら、それをネガティブプロンプトに入れよう
 --例えば、タヌキを出力したい時にネガティブプロンプトにアライグマのタグを入れる感じ
+
+
 
