@@ -5,107 +5,11 @@
 
 
 * 単語集
-
-**''行動''
 //[+]
 {| class="sort edit nanj_prompt_table"
 |~w(100px):プロンプト|~w(300px):意味|~w(300px):備考|サンプル|
-||モリマン|||
-|orgasm face|イキ顔|||
-|buttjob|尻コキ|同義語として、{hotdogging}, {assjob},もある。組み合わせると要素が強くなるかも。back shot, hip foucus, 等のプロンプトで女の子を後ろ向きにさせて使うと良い。|https://image02.seesaawiki.jp/n/h/nai_ch/cafc3b10f1811655.png|
-|back view, squatting, spread legs wide, {anal blowing (色) slime},,|スライム排泄|(色)…green, pinkが出やすい。blackやbrownは挙動がおかしく、紫は大人のおもちゃになりがち。ネガティブに{covered slime,},を入れておかないと全身がスライムと同じ色になることがある他、裸の尻が見えない構図や別のポーズだと失敗する。ブルマやパンツくらいなら、pantie asideでずらして成功することも多い。||
-|breasts on glass|ガラスにおっぱいを押し付ける|V3使用|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/i5BalQJbTj.png)|
-|licking|なめる|licking penisなどで使う。しゃぶるよりも竿舐めを出したいときに|https://image01.seesaawiki.jp/n/h/nai_ch/d85937231635d2b9.png|
-|vacuum fellatio|バキュームフェラ|:>=||
-|tribadism|具合わせ|||
-|vacuum fellatio|バキュームフェラ|単独だと強く効きませんので、「:>=」と組み合わせることをお勧めします。下のサンプルは「:>=」無しです。|https://image01.seesaawiki.jp/n/h/nai_ch/bsIl1zjaOe.png https://image02.seesaawiki.jp/n/h/nai_ch/7PIJGUpLGb.png|
-| :>=|ひょっとこ口|fellatio, deepthroat, oralなどフェラ系のプロンプトと組み合わせるとひょっとこフェラになります。無い場合はアヒル口みたいに描写されます。|https://image02.seesaawiki.jp/n/h/nai_ch/qv1fYt4PVs.png https://image01.seesaawiki.jp/n/h/nai_ch/tsGkEmLAYW.png|
-|jumping|ジャンプ||https://image01.seesaawiki.jp/n/h/nai_ch/4CrsqA0ueP.jpg|
-|pilates|ピラティス||https://image02.seesaawiki.jp/n/h/nai_ch/H5CSSCTLZF.png|
-|couple of snuggled up selfie 2girls|自撮り百合カップル||https://image01.seesaawiki.jp/n/h/nai_ch/ehYaSYnMXu.png|
-|squirt love juice|潮吹き|blowだと口判定になることが多い、orgasmと合わせると精度があがる||
-|artificial vagina|オナホ|オナホコキ的なものに使えます。handjobで生成したイラストをEdit imageでチンをピンクや青に塗った後に「artificial vagina」をプロンプトに追加すると楽に作れます。|https://image02.seesaawiki.jp/n/h/nai_ch/rA0JgRG0XG.png|
-|footjob|足コキ|指が破綻することが多いので、thighhighsとzettai ryouikiでニーソを履かせるとぱっと見は良くなります。立っての足コキはなかなか出ないので、standingを入れてからＳｅｅｄ値を拾った後にfootjobを入れるとたまにそれっぽいのが出ます。|https://image01.seesaawiki.jp/n/h/nai_ch/EtdrC3C0vj.png|
-|mirror,smartphone|鏡越しの自撮り||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/052447c3d7fff043-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/052447c3d7fff043.png]]|
-|bondage|縛り|とりあえず縛ってくれるarms behind backとかでコントロール可||
-|&#127825;|桃|お尻が正面に来るようなポーズやアングルになる||
-|Open the door halfway|お出迎え|||
-|poop|うんこ|feces,turdなどの糞を意味する語も使うと稀にそれらしきものが出る。squatやspread legsで両足を広げてやるとよさげ。chocolateならば垂らし放題。NAI Diffusion Furryを選択してhuman,を入れると獣化を抑えつつ出やすくなる。アプデで女性器からではなく肛門から出してくれる確率がかなり高くなった気がする。||
-|internal cumshot（もしくはintravaginal ejaculation）|中出し|||
-|selfie|自撮り|||
-|handjob|手コキ|fellatio, paizuriをUndesired Contentにすると出現確率が上がる||
-|paizuri|パイズリ titsjobより出る|||
-|fellatio|フェラチオ|||
-|bukkake|ぶっかけ|||
-|thigh_sex|素股、太ももコキ|||
-|facial|顔射|||
-|breast grab|胸を掴む|||
-|urination |放尿|||
-|peeing|放尿(幼児語)|||
-|pee|おしっこ|||
-|anilingus|あなるなめ|||
-|torture|拷問|||
-|}
-[END]
-
-**''体位''
-//[+]
-{| class="sort edit nanj_prompt_table"
-|~プロンプト|意味|備考|サンプル|
-|sitting position|座位|||
-|reverse cowgirl position|背面騎乗位|||
-|cowgirl position|騎乗位|||
-|amazon position|ちんぐり騎乗位、種搾りプレス|||
-|spooning|側位|||
-|spitroast|後ろから挿入されている間に、間にいる人が 2 番目の人にオーラルセックスまたはパイズリを実行している二重挿入のバリエーション||https://image02.seesaawiki.jp/n/h/nai_ch/WbtAmle2IO.png|
-|top-down bottom-up|トップダウン ボトムアップ（四つん這いで頭を下げて尻を突き出す）||https://image02.seesaawiki.jp/n/h/nai_ch/TzeBhsKzUa.png|
-|large breasts|巨乳|||
-|leg up|片脚を上方に動かす|||
-|missionary|正常位|||
-|doggystyle,sex from behind|後背位|||
-|girl_on_top,straddling,cowgirl position|騎乗位|||
-|kneeling|膝をつく|||
-|suspended congress|駅弁スタイル|||
-|lying|寝ている、横たわる|ポージングにはバラつきがある。~~仰向けが基本だが偶にうつ伏せになったりする。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aTP9saJ4Sc-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/aTP9saJ4Sc.png]]|
-|crossing legs|組んだ足|||
-|spread legs|足開く|||
-|armpit|腋見せ構図になるやつ|||
-|masturbation|自慰|||
-|female masturbation|女性の自慰|||
-|}
-[END]
-**''手・腕''
-//[+]
-{| class="sort edit nanj_prompt_table"
-|~プロンプト|意味|備考|サンプル|
-|holding hands, interlocked fingers|恋人繋ぎ|高確率で指が破綻するが、互いの手を握り合うという描写自体は出来ます。||
-|cover your eyes with one hand|手で目元を隠す|V3対応。風俗の写真なんかでよくあるアレ|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/bTUcRWClCn-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/bTUcRWClCn.png]]|
-|arms up|両手が頭の上|||
-|hand up|片手が肩あたり〜目線より下|||
-|arm up|片手が目線より上|||
-|arms behind back|後ろ手|||
-|arms behind head|両手を頭の後ろに|||
-|hand on own 〜|手を自身の体に置く|体の部位の単語と共に使用する||
-|grabbing|胸をつかむ|||
-|grabbing own breast|自身の胸をつかむ|||
-|holding hands | 2人が手を握る|||
-|open pussy|くぱぁ|これのみだと下着や水着の上からのポーズとなる。~~直接くぱぁさせたいときは他のプロンプトで下半身、または全身を脱がせること。||
-|}
-[END]
-
-**''その他''
-//[+]
-{| class="sort edit nanj_prompt_table"
-|~プロンプト|意味|備考|サンプル|
-|after paizuri|谷間に精液|パイズリ事後っぽいシチュエーションになる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/d66fd72483691bbe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/d66fd72483691bbe.png]]|
-|anus crack,|閉じた肛門|肛門が閉じた状態になる。||
-|spoken heart|ハートマークの吹き出し|||
-|fertilization, sperm cell|受精(pony)|Pony系ではsperm cellもあるとかなり安定する|https://ul.h3z.jp/X7hpN8J9.png|
-|clothed male nude female, cmnf|女が裸・男が着衣|||
-|clothed female nude male, cfnm|女が着衣・男が裸|||
-|vaginal bleeding|性器からの出血|微グロ注意、BAN対策の為画像なし||
-|pubic hair|陰毛|''public''ではないので気を付けよう||
-|thigh_gap|太腿の隙間||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EzK4xR7ipc-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/EzK4xR7ipc.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LhaWGRPZ9_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/LhaWGRPZ9_.png]]|
+|mosaic|モザイク|||
+|deep penetration|深々と挿入|ペニスを根本近くまで挿入する。画像は上がプロンプト無し、下がありの例|https://image01.seesaawiki.jp/n/h/nai_ch/59657b0f4a7d5ab7.png https://image01.seesaawiki.jp/n/h/nai_ch/956b855522603d5c.png|
 |fertilization|受精|↓の断面図と組み合わせると出やすい|https://image01.seesaawiki.jp/n/h/nai_ch/OljnPu1nqe.png|
 |cross section|断面図|下に同名のプロンプトがあるが、V3ではこれだけで膣の断面図が出てくる。肉棒はpenisがなくても出てくるが、射精（ejaculation）とは連動している様子。|https://image02.seesaawiki.jp/n/h/nai_ch/ovNZPU4ADf.png https://image01.seesaawiki.jp/n/h/nai_ch/eTaEz8ozmB.png|
 |〜protruding|はみ出している、突き出ている|かなり強力な強制露出単語。衣服形状より優先され強制露出するというか衣服形状までこの単語に合わせて変化してしまう。また露出箇所は「breasts and bum and 〇〇〇」などandで足していくだけでお手軽に追加できるが、弱点としてはカメラアングルによっては見えなくなってしまうことがある。||
@@ -114,68 +18,82 @@
 |onee-shota, age_difference|おねショタ|不安定。男女逆転や女の子同士になる場合も多い~~「mother and son」あるいは「&#128105;&#8205;&#128102;」等を指定すると安定度が増す|https://image01.seesaawiki.jp/n/h/nai_ch/DtwZTtyXdL.jpg|
 |lean against|前かがみ|横向きだと前かがみに座ってくれる|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/9odeVAr52L.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/230Fzc4Kc5.png)|
 |full-harness made of rope|亀甲縛り||https://image02.seesaawiki.jp/n/h/nai_ch/w3Z5p101nI.png|
-|saliva|涎、よだれ|口内で涎が糸を引く。涎を垂らしたければ「drooping saliva」、キスやフェラで涎の橋を作りたければ「saliva trail」にする。|https://image01.seesaawiki.jp/n/h/nai_ch/e832f60aff88ba5e.png|
 |sweat|汗、汗だく|sweatyもほぼ同義|https://image02.seesaawiki.jp/n/h/nai_ch/F8bN476E93.png|
 |{{{{whipped scars}}}}|鞭痕|4強調くらいで出現、そのままだとR-18Gになるのでネガに"scars on face"を入れるとサンプル画像に近いものが出現しやすくなる（要ガチャ）|https://image02.seesaawiki.jp/n/h/nai_ch/LPpFMpzYG4.png|
 |{{semen pouring bath}}|ザーメン風呂|waterを除外ワードに入れると水が透明になりにくくなる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/7sAppcAzHI-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/7sAppcAzHI.png]]|
 |marriage certificate|婚姻証明書||https://image01.seesaawiki.jp/n/h/nai_ch/6ccSm1pSNG.png|
 |bed_invitation|ベッドに誘惑||https://image02.seesaawiki.jp/n/h/nai_ch/C8PRYAs90H.png|
-|steam|蒸気|白いもやもやした蒸気が発生するが、イラストによっては匂い表現にも使える。女の子をくさそうにしたい人向け。もちろん湯気などとしても使える。||
+|steam|蒸気|白いもやもやした蒸気が発生するが、イラストによっては匂い表現にも使える。女の子をくさそうにしたい人向け。もちろん湯気などとしても使える。|https://image01.seesaawiki.jp/n/h/nai_ch/d8db9efbfa4411c7.png|
 |trembling effect motion lines with sexual climax|絶頂エフェクトがでる||https://image01.seesaawiki.jp/n/h/nai_ch/d2QRkJ7tR8.png]]|
 |(motion line for orgasm:1.4), (flied hearts:1.3)|絶頂エフェクトその2||https://image01.seesaawiki.jp/n/h/nai_ch/tNFGyBsWdx.png|
 |{{{NSFW, lewd}}}|職場向けではない、卑猥|呪文の頭か末尾につけると雑にエロ絵になるすごいやつ。場所やキャラクターを指定してつけると、取り敢えず発情させて服を&#21085;ぎ取ってくれる。単体でも構図やシチュはランダムだが機能する。その際に出現するキャラクターはサンプル画像のタイプがほとんど|https://image01.seesaawiki.jp/n/h/nai_ch/0bghKu4Njz.png|
 |rubbing eyes|目をこする|強調しないと反映されない。sleepy,one eye closedと一緒に使うと良い|https://image02.seesaawiki.jp/n/h/nai_ch/84yQwMwc2A.png|
-|cooperative paizuri,|複数パイズリ|3girl,4girlやmultiple girls,といった女の子の数を増やすプロンプトも一緒に使うとよさげです||
-|cooperative handjob|複数手コキ|||
 |slime pouring|スライム垂らし|スライムでヌメヌメになる、頭に色を入れれば指定も可能、強度は{{ }}くらいがいい感じ{slime cover to clothes}や{slime cover to skin}も||
 |tied up bondage|緊縛|サンプルはwriting on thighs, bruised {{{{{{tied up}}}}}} {{{{{{bondage}}}}}},その他→拘束は縄なら,{{{{shibari over clothes}}}}、後ろ手にするならarms behind backも|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4SU6N9Aalb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4SU6N9Aalb.png]]|
-|gag|猿ぐつわ|||
+|gag|猿ぐつわ||https://image01.seesaawiki.jp/n/h/nai_ch/d96abfde99a23edf.png|
 |motion lines|集中線||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lYSSJrGBCq-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lYSSJrGBCq.png]]|
-|Girl trembling with sexual climax|ビクッビクッみたいなエフェクトがでる||画像なし|
-|undressing|脱衣、服を脱ぐ||画像なし|
-|interlocked fingers, holding hands|恋人繋ぎ(ラブ握り)、手を握る|own hands together, own hands claspedをネガティブに入れること|画像なし|
+|Girl trembling with sexual climax|ビクッビクッみたいなエフェクトがでる||https://image02.seesaawiki.jp/n/h/nai_ch/18eff7847ac05638.png|
+|undressing|脱衣、服を脱ぐ|loosed clothesでも可。|https://image02.seesaawiki.jp/n/h/nai_ch/e551f80e860ae25f.png|
+|interlocked fingers, holding hands|恋人繋ぎ(ラブ握り)、手を握る|own hands together, own hands claspedをネガティブに入れること。指を絡ませると崩壊しやすくなり試行回数が跳ね上がるのであまりおすすめしない。|https://image01.seesaawiki.jp/n/h/nai_ch/f5f1a13b99feeb8d.png|
 |open arms forward,hug,|カメラに向かってハグ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QjNoTQEFZ3-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/QjNoTQEFZ3.png]]|
-|cross-section|1枚の中での複数シチュエーション|出したいシチュを各個指定すると出やすくなる||
-|leaning forward|前かがみになる|||
+|cross-section|1枚の中での複数シチュエーション|出したいシチュを各個指定すると出やすくなる。サンプルはpaizuri(パイズリ)とmissionary(正常位)|https://image01.seesaawiki.jp/n/h/nai_ch/cb2c598b41acfc97.png|
+|leaning forward|前かがみになる、前屈み|bent overやbending overでも同様の効果。|https://image02.seesaawiki.jp/n/h/nai_ch/a16819ff509519f9.png|
+|leaning back|仰け反る|arched backでも同様の効果。orgasmを強調して一緒に使うとより効果的|https://image02.seesaawiki.jp/n/h/nai_ch/c4444c466a32b5fd.png|
 |squatting|エロ蹲踞||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fQ4LYV_Mjx-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/fQ4LYV_Mjx.png]]|
-|show off~|〜を見せつける|||
-|breast squeeze|胸が潰れた構図|||
+|show off~|〜を見せつける|サンプルはshow off penis|https://image01.seesaawiki.jp/n/h/nai_ch/23c67da40642ca71.png|
+|breast squeeze|胸が潰れた構図||https://image01.seesaawiki.jp/n/h/nai_ch/9671e6d1c37cb1d3.png|
 |restraint|拘束|||
 |speech bubble|吹き出し|||
-|expressionless|無表情|||
-|motion lines|行為に動きをつける|||
-|vibrator|バイブ|||
+|expressionless|無表情||https://image02.seesaawiki.jp/n/h/nai_ch/a257b6503d30cb4b.png|
+|motion lines|行為に動きをつける||https://image02.seesaawiki.jp/n/h/nai_ch/489ddc0223dda06e.png|
+|vibrator|バイブ||https://image02.seesaawiki.jp/n/h/nai_ch/214df5eca75f2c56.png|
+|dildo|ディルド||https://image02.seesaawiki.jp/n/h/nai_ch/0f92e320b4b73d5e.png|
+|egg vibrator|ローター||https://image01.seesaawiki.jp/n/h/nai_ch/b18f25a42e17f70b.png|
 |sleeping|睡眠(組み合わせで睡眠姦)※瞳の色と併用すると半目になりがち|||
-|egg vibrator|ローター|||
 |gang bang|輪●|||
 |sleep molestation|睡眠姦|||
 |unconscious|気絶|||
 |group sex|３人以上での性行為|||
-|handcuffs, shackles,|手枷|||
+|handcuffs|手錠|より頑丈そうな拘束具にしたいなら下記のshacklesの方が良い|https://image01.seesaawiki.jp/n/h/nai_ch/6cf10d37d832d113.png|
+|shackles|枷|単語の意味に手枷と足枷両方が含まれており区別が無いため、腕だけに着けたいならshackles on wrists, bound wristsのように組み合わせて腕への装着を指示した方がいい。逆に足だけに着けるならlegs put on shacklesのように装着部位を足に指定する。|https://image01.seesaawiki.jp/n/h/nai_ch/a5075cd71e03badc.png https://image02.seesaawiki.jp/n/h/nai_ch/7454d9cdb0cd3a25.png|
 |peace sign|ピース|||
 |V-sign|ピース　よく指が化ける|||
 |double peace|ダブルピース|||
-|fellatio gesture|フェラ素振り|||
-|panties aside|パンツズラし|||
+|fellatio gesture|フェラ素振り|fellatio gesture単体では口の前で輪っかを作るだけなので、open mouthやtongueも併用すればより雰囲気が出る|https://image01.seesaawiki.jp/n/h/nai_ch/2614b019bc9490eb.png|
+|panties aside|パンツズラし||https://image02.seesaawiki.jp/n/h/nai_ch/8574b1da975e595f.png|
+|lifted tops by self|服のたくし上げ||https://image02.seesaawiki.jp/n/h/nai_ch/73cb9c419d859237.png|
+|clothes lift|服のたくし上げ2||https://image01.seesaawiki.jp/n/h/nai_ch/9e19d0112356b7a4.png|
+|skirt lift|スカートたくし上げ||https://image02.seesaawiki.jp/n/h/nai_ch/409488b2e5bfc0a6.png|
+|cum on body|身体に精液|精液がかかる部位や量はガチャなので、広範囲にかかるbukkakeかcom on〜を複数組み合わせる方が効果的|https://image02.seesaawiki.jp/n/h/nai_ch/246a4bfb617a1ae5.png|
+|cum on breasts|胸に精液||https://image02.seesaawiki.jp/n/h/nai_ch/62854394f60fb747.png|
+|cum on clothes|服に精液||https://image01.seesaawiki.jp/n/h/nai_ch/d56b93f08580cdca.png|
+|cum on hair|髪に精液||https://image02.seesaawiki.jp/n/h/nai_ch/0e26395d935f6b8d.png|
+|cum in mouth|口に精液||https://image02.seesaawiki.jp/n/h/nai_ch/05e9814dc8fb966d.png|
+|facial|顔に精液|顔射|https://image01.seesaawiki.jp/n/h/nai_ch/4b0e1bcf04975bfe.png|
+|bukkake|ぶっかけ||https://image01.seesaawiki.jp/n/h/nai_ch/45b3af1c1c551459.png|
+|excessive cum|精液大量|上記のcum on〜との相性も非常に良い。|https://image02.seesaawiki.jp/n/h/nai_ch/b447641b82a80a3c.png|
+|projectile cum|飛んでいる精液||https://image02.seesaawiki.jp/n/h/nai_ch/cb38496f4bcde98f.png|
+|body writing, sketch|体に落書き|||
+|bend forward,|前かがみになる | | |
+|statue| 女の子の展示| 原義は石像。たまに石化する。エロ蹲踞と相性が良い ||
+||モリマン|||
+|orgasm face|イキ顔|||
+|back view, squatting, spread legs wide, {anal blowing (色) slime},,|スライム排泄|(色)…green, pinkが出やすい。blackやbrownは挙動がおかしく、紫は大人のおもちゃになりがち。ネガティブに{covered slime,},を入れておかないと全身がスライムと同じ色になることがある他、裸の尻が見えない構図や別のポーズだと失敗する。ブルマやパンツくらいなら、pantie asideでずらして成功することも多い。||
+|after paizuri|谷間に精液|パイズリ事後っぽいシチュエーションになる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/d66fd72483691bbe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/d66fd72483691bbe.png]]|
+|anus crack,|閉じた肛門|肛門が閉じた状態になる。||
+|spoken heart|ハートマークの吹き出し|||
+|loving aura|ハートマークが浮かぶ（吹き出し無し）|||
+|clothed male nude female, cmnf|女が裸・男が着衣|||
+|clothed female nude male, cfnm|女が着衣・男が裸|||
+|vaginal bleeding|性器からの出血|微グロ注意、BAN対策の為画像なし||
+|pubic hair|陰毛|''public''ではないので気を付けよう||
+|thigh_gap|太腿の隙間||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/EzK4xR7ipc-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/EzK4xR7ipc.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LhaWGRPZ9_-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/LhaWGRPZ9_.png]]|
+|saliva|涎、よだれ|口内で涎が糸を引く。涎を垂らしたければ「drooping saliva」、キスやフェラで涎の橋を作りたければ「saliva trail」にする。|https://image01.seesaawiki.jp/n/h/nai_ch/e832f60aff88ba5e.png|
 |panties around one leg|パンツ脱いで片足にだけ|||
-|fingering panties|パンツの中に手を入れる||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/a3ba7e9c7a17a928-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/a3ba7e9c7a17a928.png]]|
-|standing_sex|立位|||
-|lifted tops by self|服のたくし上げ|||
-|clothes lift|服のたくし上げ2|||
 |removed clothes on bed|脱いだ衣類がベッドの上にある|||
-|cum on body|身体に精液|||
-|cum on breasts|胸に精液|||
-|cum on clothes|服に精液|||
-|cum on hair|髪に精液|||
-|excessive cum|精液大量|||
-|projectile cum|飛んでいる精液|||
-|cum in mouth|口に精液|||
 |cum in pussy|膣に精液|||
 |gigantic penis|巨大なち〇こ|largeよりも大きくなる。強調することでさらに大きく。vaginal gigantic penisで挿入も可。fellatio gigantic penisでフ〇ラも可|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HO8s5uVX9h-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HO8s5uVX9h.png]]|
 |foreskin of penis|包茎のち〇こ|||
-|body writing, sketch|体に落書き|||
-|bend forward,|前かがみになる|||
-|statue|女の子の展示| 原義は石像。たまに石化する。エロ蹲踞と相性が良い ||
 |love juice,|愛液|||
 |precum juice,|ガマン汁|||
 |anal|肛門|anusでも代用可。~~水着や下着姿でお尻を見せるようなポーズを取り、尻のみに重点を置くass focusとは結構違いが多い。併用も可だが、ポーズとしてはass focusの方が優先される。~~holeというプロンプトがあるとぽっかりアナルになる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Yld7OZlbVw-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Yld7OZlbVw.png]]|

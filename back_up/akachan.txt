@@ -40,16 +40,17 @@ https://novelai.net/
 - 10ドルから(無料プラン無し)
 
 特にこだわりもなくただ単にイラストを生成したいだけならNovelAIで十分。
+成人向けイラストを含むアニメイラストに特化しているため、ビジネスなど公共の場で使うのは不向き。そういうのはChatGPTやGeminiを使うように。
 
 *** NovelAI以外のサービス
 
-いろいろあるから好きなの選ぶといいけど成人向けコンテンツはNovelAIしか出せません。
-そのかわりにNovelAIより万人向けで高品質です。
+いろいろあるから好きなの選ぶといいけど成人向けコンテンツはGrokとNovelAIしか出せません。
+そのかわりにほかの生成AIはNovelAIより万人向けで高品質です。
 
-- ChatGPT
-- Bing Image Creator
-- Grok
-- Google Gemini 2.5 Flash Image(Nano banana)
+- ChatGPT(OpenAI)
+- Bing Image Creator(Microsoft)
+- Grok(X)
+- Gemini(Google)
 
 ** なんかをインストールする(おすすめ度:★★★)
 
@@ -81,16 +82,16 @@ https://novelai.net/
 
 - GeForce RTXが無いとしんどい
 -- Radeonで頑張る人は[[ローカルをRadeonで]]
+--- ROCm 7.0に期待
 -- Intel Arcは知らん。各自ググってくれ
--- 先にColabで正常動作を見ておいたほうがいいかも
-- GTX世代のグラボはAI関連では性能不足なのでエラーとかで苦労する
+- GTX世代のグラボはAI関連では性能不足かつほぼサポート終了なのでエラーとかで苦労する
 -- 簡単に済ませるには初期投資が必要なのだ
 -VRAM(グラボのメモリ)は8GB以上が望ましい
---4GBでも起動自体はできるが不便
+--4GBでも起動自体はできるが絶望的
 --学習なら12GB推奨。16GB・24GBモデルなら文句なしだが価格が跳ね上がる
 --とはいえSD1.5のLoRA学習なら8GBで十分。SDXLのLoRAは8GBでもギリギリ動くが12GB以上欲しい
 - 誰にも見られない
--- 変なものを入れない限り、生成した絵が勝手に送信されるとかは無いので自家消費に最適
+-- 変なものを入れない限り、出力が勝手に外部へ送信されることは無いので自家消費に最適
 
 古い
 [+]
@@ -138,7 +139,7 @@ https://github.com/LykosAI/StabilityMatrix
 
 モデルの詳しい説明は[[Models]]に書いてある。
 
-*** 2025年9月現在の選択肢
+*** 2025年10月現在の選択肢
 - Illustrious-XL(SDXL)
 -- アニメモデルでいろいろ出せる
 -- 2025年の主流
@@ -150,22 +151,22 @@ https://github.com/LykosAI/StabilityMatrix
 -- だが超重い
 
 - SD1.5
--- 陳腐化したけど軽いからGPUが乏しいならここから試してもいいと思う
+-- 品質が低いけど軽いからGPUが乏しいならここから試してもいいと思う
 
-古い
+(かなり)古い
 [+]
 [[スレ民共有モデル]]と[[ローカルのリソース]]のうち、特にこれらがおすすめ。
 
 ** Animagine XL 3.0
 - https://huggingface.co/cagliostrolab/animagine-xl-3.0
 - SDXLベースで高品質
-- データセットが大きく偏っていてソシャゲキャラしか出せない
+- データセットが大きく偏っていて中華ソシャゲキャラしか出せない
 現在本スレで人気なのはこれ。
 PonyDiffusion V6 XLと言うのもスレで人気だが癖が強いので慣れてからのほうがいい
 
 ** AbyssOrangeMix2(略称:AOM2)
 
-- SD1.5ベース
+- SD1.5(NovelAI Diffusion V1)ベース
 - 今となっては古のモデル
 - https://huggingface.co/WarriorMama777/OrangeMixs/tree/main/Models/AbyssOrangeMix2
 - AOM2は世界で人気爆発したアニメモデルや
@@ -174,16 +175,22 @@ AOM3が出てる(未評価)
 
 ** 7th_anime_v3
 
-- SD1.5ベース
+- SD1.5(NovelAI Diffusion V1)ベース
 - https://huggingface.co/syaimu/7th_Layer/tree/main/7th_anime_v3
 - これも完成度が高いモデルやね、Aが安定するで
 
 ** basil_mix
 
-- SD1.5ベース
+- SD1.5(NovelAI Diffusion V1)ベース
 - https://huggingface.co/nuigurumi/basil_mix
 - リアル系モデルの傑作。Almond/cinnamonとプロンプトが使いまわしやすいのがいいところ。
 - danbooru語が使えて、二次用のLoRAが流用できる
+
+** NovelAI Diffusion V1
+- 多くのSD1モデルの源流
+- リリース後わずか数日でファイルが流出してローカル画像生成が爆発的に広まった
+
+
 [END]
 
 * 技術の使い分け
@@ -202,7 +209,9 @@ AOM3が出てる(未評価)
 
 - このwiki
 - Civitai
-- 元素法典 [[各言語・国別技術]] ただし内容はとても古い
+- 元素法典 [[各言語・国別技術]] ただし内容は''とても古い''ので見る必要なし
+- Danbooruなど
+-- 投稿された画像やwikiが参考になる
 
 ** 学習(難しさ:★★★☆☆〜★★★★★)
 
@@ -221,7 +230,7 @@ HyperNetworkは遅いし発散しやすいしDying Reluで死ぬし、性能もL
 [[ControlNet]]が来た。
 プロンプト(文字)じゃなくて画像で構図を指定できる仕組み。
 
-まだ新しい技術なので赤ちゃんには難しいけど導入だけならわりと楽なほう。
+まだ新しい技術なので初心者には難しいけど導入だけならわりと楽なほう。
 
 * お前がママになるんだよ！
 
