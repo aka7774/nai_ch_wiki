@@ -8,7 +8,11 @@
 //[+]
 {| class="sort edit nanj_prompt_table"
 |~w(100px):プロンプト|~w(300px):意味|~w(300px):備考|サンプル|
-|mosaic|モザイク|||
+|censored|局部修正|||
+|uncensored|無修正|局部修正された画像を出力したい場合はこの単語をネガティブプロンプトへ||
+|censor line|センサーライン、局部の修正線、海苔|薄い本などでよく見るやつ。線の数や色、位置が不安定なのでモザイクの方が確実かも。画像は上が2::white censor line::、下が2::black censor line::|https://image02.seesaawiki.jp/n/h/nai_ch/f0341e9b2fb30dd6.png https://image02.seesaawiki.jp/n/h/nai_ch/0d42293807ff54c4.png|
+|mosaic censorship|モザイク検閲|mosaic単体より濃いモザイクが局部にかかる。画像は2::mosaic censorship::で出力|https://image01.seesaawiki.jp/n/h/nai_ch/74294ea6af943f07.png|
+|mosaic|モザイク|やや薄めなのでモザイクをかけるなら上の方がおすすめ。画像は5::mosaic::で出力|https://image02.seesaawiki.jp/n/h/nai_ch/942ae2cbb724ae71.png|
 |deep penetration|深々と挿入|ペニスを根本近くまで挿入する。画像は上がプロンプト無し、下がありの例|https://image01.seesaawiki.jp/n/h/nai_ch/59657b0f4a7d5ab7.png https://image01.seesaawiki.jp/n/h/nai_ch/956b855522603d5c.png|
 |fertilization|受精|↓の断面図と組み合わせると出やすい|https://image01.seesaawiki.jp/n/h/nai_ch/OljnPu1nqe.png|
 |cross section|断面図|下に同名のプロンプトがあるが、V3ではこれだけで膣の断面図が出てくる。肉棒はpenisがなくても出てくるが、射精（ejaculation）とは連動している様子。|https://image02.seesaawiki.jp/n/h/nai_ch/ovNZPU4ADf.png https://image01.seesaawiki.jp/n/h/nai_ch/eTaEz8ozmB.png|
@@ -74,15 +78,14 @@
 |excessive cum|精液大量|上記のcum on〜との相性も非常に良い。|https://image02.seesaawiki.jp/n/h/nai_ch/b447641b82a80a3c.png|
 |projectile cum|飛んでいる精液||https://image02.seesaawiki.jp/n/h/nai_ch/cb38496f4bcde98f.png|
 |body writing, sketch|体に落書き|||
-|bend forward,|前かがみになる | | |
 |statue| 女の子の展示| 原義は石像。たまに石化する。エロ蹲踞と相性が良い ||
 ||モリマン|||
 |orgasm face|イキ顔|||
 |back view, squatting, spread legs wide, {anal blowing (色) slime},,|スライム排泄|(色)…green, pinkが出やすい。blackやbrownは挙動がおかしく、紫は大人のおもちゃになりがち。ネガティブに{covered slime,},を入れておかないと全身がスライムと同じ色になることがある他、裸の尻が見えない構図や別のポーズだと失敗する。ブルマやパンツくらいなら、pantie asideでずらして成功することも多い。||
 |after paizuri|谷間に精液|パイズリ事後っぽいシチュエーションになる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/d66fd72483691bbe-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/d66fd72483691bbe.png]]|
 |anus crack,|閉じた肛門|肛門が閉じた状態になる。||
-|spoken heart|ハートマークの吹き出し|||
-|loving aura|ハートマークが浮かぶ（吹き出し無し）|||
+|spoken heart|ハートマークの吹き出し||https://image02.seesaawiki.jp/n/h/nai_ch/a593486f16a4ceb9.png|
+|loving aura|ハートマークが浮かぶ（吹き出し無し）||https://image02.seesaawiki.jp/n/h/nai_ch/4fc150a949861cf4.png|
 |clothed male nude female, cmnf|女が裸・男が着衣|||
 |clothed female nude male, cfnm|女が着衣・男が裸|||
 |vaginal bleeding|性器からの出血|微グロ注意、BAN対策の為画像なし||

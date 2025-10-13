@@ -599,6 +599,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|意味|備考|サンプル|
+|paizuri hole|ズリ穴、パイズリ穴、パイズリホール|首元まで開いてしまう場合はtented shirtなど着衣状態を指示する文も加えてやれば安定する||
 |naked hoodie|裸パーカー||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SDzZW1fOoi.png)|
 |handgun, holding handgun, or assault rifle, holding assault rifle, or sniper rifle, holding sniper rifle, or shotgun, holding shotgun,|銃を持たせる|V3使用。V1では難しかった銃を持ってる描写もV3では簡単に生成出来るようになりました。銃の種類も認識しているようで、ハンドガンとアサルトライフルとスナイパーライフルとショットガンでそれぞれ違う銃が生成されます。ただ、ショットガンは反応が悪く、銃が破綻したり何故か車に乗ってる絵が生成されるので、ガチャが必要です。ハンドガンとアサルトライフルとスナイパーライフルはすんなり出ます。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/AeZrm6Vo9k.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/5s_K1XTzVc.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/F8GuWINQRd.png)&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N2sI1wE5qE.png)|
 |umbrella|雨傘||https://image02.seesaawiki.jp/n/h/nai_ch/auUCaXeqjr.png|
