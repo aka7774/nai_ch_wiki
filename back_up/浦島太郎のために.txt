@@ -52,6 +52,11 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-10-14 Civitai、NSFW画像の生成を有料のみに変更
+https://civitai.com/articles/20211
+これまでは無料でももらえる青BuzzでNSFW画像も生成できていたが方針が変更となった。青Buzzで生成できるのはSFW画像のみとなり、黄Buzzを購入しない限りNSFW画像を生成できなくなった。
+クレジットカード会社からの締め付けの結果という噂もある。
+
 **2025-10-07 OpenAI、Sora2のAPIを発表
 https://platform.openai.com/docs/guides/video-generation
 Sora-2とSora-2-Proが用意され、価格は最も安いSora-2が1,280×720ピクセルで1秒0.1ドル。→[[価格表>https://openai.com/ja-JP/api/pricing/]]
@@ -1084,6 +1089,9 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
 
 
 
