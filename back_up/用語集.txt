@@ -1,63 +1,80 @@
 わかんない言葉は検索しましょう。
 
 検索しにくい略称や本スレ特有のものを中心に説明していく。
-
+* 用語
+** ソフトウェア
 |~用語|正式名称|説明|
-|1.5|SD 1.5|Stable Diffusionの初代のマイナーチェンジ版。2022年にリリースされて以来長らく主流だったが、2024年には後継のSDXLが普及しきって廃れた|
 |AUTOMATIC1111||人名。でもAUTOMATIC1111氏が作ったツール「Stable Diffusion web UI」を指して呼ばれがち。|
 |A1111/1111|AUTOMATIC1111|人名だけどツールの名前(stable-diffusion-webui)として呼ばれがち。|
-|Any||二つの意味がある。一つ目はControlnet用モデルのAnytest、二つ目はLoRA学習用モデルのAnyIllustirous/Noob。かつてはAnythingというSD1のアニメモデルのことを指していた。|
-|Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が少し速い |
-|CN|ControlNet|専用のモデルを使用して構図を制御する仕組み。|
-|Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
-|DiT|Diffusion Transformer|生成AIのアーキテクチャの一つ。SD1,2,XLで使用されるU-Netより高性能で最近の多くの画像生成AIはこれを採用している|
 |Easy〇〇||Zuntan氏開発の、各種生成AIの環境を簡単にセットアップできるソフトウェア群。いわばスターターキット。|
 |forge|stable-diffusion-webui-forge|stable-diffusion-webuiのフォーク(派生)|
 |reForge|stable-diffusion-webui-reForge|forgeのフォーク|
-|FT|Fine-tuning|モデルのウェイトを調整する。|
-|Flux|FLUX.1|パラメータ数120億のオープンな画像生成AI。SD3と同じDiffusion Transformerを採用する。|
 |GUI||sd-scriptsで学習するためのGUIを指すことが多い。GradioベースとWindows Formベースの二種類が存在する。|
-|gguf||主に量子化モデルに使用されるフォーマット|
+|webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
+
+** サービス
+|~用語|正式名称|説明|
+|Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
 |HF/&#129303;|Hugging Face|研究者がモデルやソースコードの置き場として使っているサイト。GitHubみたいなもの。|
+|NAI|NovelAI|単なる略称。まれにNoobAI-XLの略称として使用される。|
+|&#127820;|Nano Banana(Gemini 2.5 Flash Image)|Google製の画像生成AI。優れた一貫性をもつ。|
+|アナル|Anlas|NovelAI公式の課金通貨。|
+|ちびたい|[[Civitai>https://civitai.com/]]|モデル配布サイト|
+|チャッピー|ChatGPT|OepnAIが開発する大規模言語モデルを用いたチャットボット|
+
+** モデル
+|~用語|正式名称|説明|
+|Flux|FLUX.1|パラメータ数120億のオープンな画像生成AI。SD3と同じDiffusion Transformerを採用する。|
+|1.5|SD 1.5|Stable Diffusionの初代のマイナーチェンジ版。2022年にリリースされて以来長らく主流だったが、2024年には後継のSDXLが普及しきって廃れた|
 |Illustrious/イラストリアス|Illustrious-XL|SDXLベースのアニメモデル|
+|Noob|NoobAI-XL|Illustrious-XL-v0.1の派生|
+|paruparu/パル/パルリアス|paruparu_illustrious|Illustrious-XLの派生。限定的に配布されている本スレ固有(?)のモデル。|
+|pony7|Pony Diffusion V7|AuraFlowをファインチューニングしたモデル。公開される気配がない。|
+|Qwen|Qwen Image|中国Alibabaが開発したパラメータ数20B(200億)の画像モデル|
+|SD|Stable Diffusion|単なる略称|
+|V3|NovelAI V3|2023年11月に登場したNovelAIの旧モデル。SDXLベースだがクローズドソース。キャラ再現度やインペイントが優秀なためローカルと併用する人も多い|
+|V4|NovelAI Diffusion V4|V3の後継。NovelAI独自開発でクローズドソース。U-net+T5エンコーダーらしい。|
+|XL|SDXL|SDXL Base 1.0のこと|
+|リアス|Illustrious-XL|単なる略称|
+|モデル||SDXLやFLUX.1などモデルアーキテクチャそのものやCheckpointを意味する。スレ内ではもっぱら後者の意味で使用される。|
+|wan|Wan Video|動画生成AI|
+
+** 技術的
+|~用語|正式名称|説明|
+|Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が少し速い |
+|CN|ControlNet|専用のモデルを使用して構図を制御する仕組み。|
+|FT|Fine-tuning|モデルのウェイトを調整する。|
+|DiT|Diffusion Transformer|生成AIのアーキテクチャの一つ。SD1,2,XLで使用されるU-Netより高性能で最近の多くの画像生成AIはこれを採用している|
+|MMDiT||Text EncoderにLLM(大規模言語モデル)を使用したプロンプトの理解能力が高いDiTモデル。|
+|gguf||主に量子化モデルに使用されるフォーマット|
 |i2i|img2img|Image to Image 元画像とプロンプトから画像を生成すること。|
+|i2v|image to video|画像から動画を生成する。|
 |inpaint||img2imgの一形態。元画像の一部を指定して画像を生成すること。|
-|kohya||人名だが、ツール(kohya-ss/sd-scripts)の名前として呼ばれがち。また、sd-scriptsを利用するためのbmaltais版WebUIを指すこともある。|
 |LCM|Latent Consistency Model|推論(生成)の収束を速くする技術|
 |Hyper-SD/DMD2||推論(生成)の収束を速くする技術|
 |LoRA|Low-Rank Adaptation|現在主流の学習方法の1つ。|
 |LR|Learning Rate|学習率。学習のきめ細やかさあるいは速度。|
 |m2m|movie to movie|動画から動画を作る技術|
-|NAI|NovelAI|単なる略称。まれにNoobAI-XLの略称として使用される。|
-|&#127820;|Nano Banana|Google製の画像生成AI。優れた一貫性をもつ。|
-|Noob|NoobAI-XL|Illustrious-XL-v0.1の派生|
 |NP/ネガ|Negative Prompt|Promptとは反対に出したくない要素を指定する|
-|NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつ|
-|paruparu/パル/パルリアス|paruparu_illustrious|Illustrious-XLの派生。限定的に配布されている本スレ固有(?)のモデル。|
-|pony7|Pony Diffusion V7|AuraFlowをファインチューニングしたモデル。公開される気配がない。|
-|Qwen|Qwen Image|中国Alibabaが開発したパラメータ数20B(200億)の画像モデル|
-|SAI|Stability AI|Stable Diffusionの開発元|
-|SD|Stable Diffusion|単なる略称|
-|SFW|Safe for work|こっちはNがついてなくて全年齢|
 |t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
+|t2v|text to video|プロンプトから動画を生成する。|
 |uc|unconditional conditioning|Negative Promptと同義|
-|V3|NovelAI V3|2023年11月に登場したWeb版NovelAIの旧モデル。SDXLベースだがクローズドソース。キャラ再現度やインペイントが優秀なためローカルと併用する人も多い|
-|V4|NovelAI Diffusion V4|V3の後継。NovelAI独自開発。U-net+T5エンコーダーらしい。|
 |v-pred|v-prediction|ノイズ予測アルゴリズムの一つ。Zero Terminal SNRと組み合わせることで明暗に強くなる。|
-|webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
-|XL|SDXL|Stability AIが2023年7月に発表した新しい画像生成モデルSDXL 1.0を指す。|
 |ZTSNR/ZSNR|Zero Terminal SNR|SNR=0のときに完全なノイズになるよう調整することで明暗や単色背景に強くする。|
-|アナル|Anlas|NovelAI公式の課金通貨。|
-|リアス|Illustrious-XL|単なる略称|
-|ギップル|git pull|リモートリポジトリの変更をプル(ローカルに反映)するコマンド|
-|ちびたい|[[Civitai>https://civitai.com/]]|モデル配布サイト|
 |ブリーディング|bleeding|特定の単語のプロンプトに、スペルが同じで意味の異なる単語やスペルが似た単語の概念が混入すること|
 |マージ||Checkpoint Mergerなどで2〜3つのcheckpointを組み合わせる(混ぜる)こと。|
-|マスピ|masterpiece|傑作。品質向上に使われるプロンプト。切れ長のつり目、陰影の強調された顔など特徴的な絵柄になる。マスピ絵、マスピ顔とか言う。|
-|モデル||SDXLやFLUX.1などモデルアーキテクチャそのものやCheckpointを意味する。スレ内ではもっぱら後者の意味で使用される。|
-|チャッピー|ChatGPT|OepnAIが開発する大規模言語モデルを用いたチャットボット|
 
-** その他の用語
+** その他
+|~用語|正式名称|説明|
+|Any||二つの意味がある。一つ目はControlnet用モデルのAnytest、二つ目はLoRA学習用モデルのAnyIllustirous/Noob。かつてはAnythingというSD1のアニメモデルのことを指していた。|
+|NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつ|
+|kohya||人名だが、ツール(kohya-ss/sd-scripts)の名前として呼ばれがち。また、sd-scriptsを利用するためのbmaltais版WebUIを指すこともある。|
+|SAI|Stability AI|Stable Diffusionの開発元|
+|SFW|Safe for work|こっちはNがついてなくて全年齢|
+|マスピ|masterpiece|傑作。品質向上に使われるプロンプト。切れ長のつり目、陰影の強調された顔など特徴的な絵柄になる。マスピ絵、マスピ顔とか言う。|
+
+
+* その他の用語
 AIとは直接の関係がない本スレ固有の単語
 |~用語|正式名称|説明|
 |赤ちゃん||初心者など難しい設定が困難である人。簡易インストーラー全般。「赤ちゃん向け」は初心者でも簡単に使用できることを意味する。由来は[[浦島太郎のために]]を参照 |
@@ -70,7 +87,7 @@ AIとは直接の関係がない本スレ固有の単語
 |エビダンス||由来は「亜鉛が云々→エビデンス(根拠)はあるのか→見間違いでエビ''ダ''ンス」。スレ終盤に始まる固有のノリ。|
 |ポン出し||ControlNetやi2iなどを使用して生成したり出力画像を編集したりせずに、そのまま利用すること。デジカメでいう「撮って出し」と同じニュアンス。|
 |お客さん||スレッドに初めて来た人のこと。「部外者」のような意味を持つ。|
-
+|ギップル|git pull|リモートリポジトリの変更をプル(ローカルに反映)するコマンド|
 
 ** よくある間違い
 |~用語|正式名称|説明|
