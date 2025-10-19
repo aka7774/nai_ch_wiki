@@ -7,11 +7,14 @@
 
 - モデルは以下を参照
 -- [[https://civitai.com/]] ここにもう全部ある。
--- [[https://rentry.org/sdmodels]] 2022/12現在、更新止まってる？
+-- Hugging Face
+[+]とても古い情報
+-- %%s://rentry.org/sdmodels%% 現在"whu"という文字列だけになっている
 -- [[https://economylife.net/ai-models-list/]] 日本で纏めてくれてるページ ここも2023/6現在更新止まってるかな？ モデル多すぎてしょうがないね
 - カクテル表
 -- STABLE DIFFUSION MIXING EMPORIUM - [[https://rentry.co/LFTBL]]
 -- /hdg/ Stable Diffusion Models Cookbook [[https://rentry.org/hdgrecipes]]
+[END]
 
 Civitaiに1日数十個モデルが新規追加されていくので、もはやまとめサイトが作れない状況。
 あなたが作ろうとしているモデルに似たものもCivitai探せば多分あると思う。
@@ -33,10 +36,11 @@ Civitaiに1日数十個モデルが新規追加されていくので、もはや
 * 使い方
 
 ** おおまかな流れ
+Checkpoint Mergerでは単純なマージのみできる。複雑なマージをするならSupermergerかComfyUIのカスタムノードを使うこと。
 + Automatic1111のWebUIを起動
 + タブ→Checkpoint Merger
 + 各種設定後、Run
-+ \stable-diffusion-webui\models\Stable-diffusion　に「任意の名前.ckpt」が生成されます
++ stable-diffusion-webui/models/Stable-diffusion　に「任意の名前.safetensors」が生成されます
 + 完了
 
 ** 設定ポイント
@@ -61,8 +65,8 @@ AにAnything、BにNAI-full(nsfw)、CにNAI-sfwそして、0.3の割合指定、
 &ref(https://image01.seesaawiki.jp/n/h/nai_ch/hiZuSdCRNS.jpg,600)
 
 ** モデルの破損
+2023-01-15に修正された。標準Checkpoint MergerのバグでCLIPのマージが正しく行われていなかったことが原因。
 破損しているモデルとして有名なのはElysium_Anime_V3。プロンプトの一語目が無視される。「a skelton girl」ではガイコツ女が出るが、「skelton girl」だと普通の女の子が出る。
-モデルが破損する原因は標準Checkpoint Mergerにバグがあった模様だが、2023-01-15に修正された。
 
 詳しい説明と修正方法はこちら。
 https://note.com/bbcmc/n/n12c05bf109cc
@@ -88,6 +92,7 @@ X/Y Plotで出来る
 [[大量検証結果]]へ移動しました。
 
 * ローカル版：NovelAILeak Checkpoint Merger の事例: NovelAI と Waifu Diffusion のマージ割合と差分出力結果
+&size(20){これより下のすべての情報はSD1時代のものであり古くなっています。}
 
 [[大量検証結果]]へ移動しました。
 
@@ -250,17 +255,15 @@ gapeモデルならpage anusで専用の学習したグッポリアナルが出�
 (grabbing own ass:1.4),(spread ass:1.2),(spread anus:1.2),(squatting:1.2),(wide hips:1.3),solo,1girl,nude,clothing aside,nsfw,(ass focus),from below,looking back,looking at viewer,(smug face:1.0),(smile:1.0),(open mouth:0.7),(blush:1.0),(wet skin:1.0),(breath:1.2),(detailed steam:1.2),(spoken heart:1.2)
 Negative prompt:lying,from behind,(from side0.9),multiple views,hands on the floor,hands on the wall,multiple anus,multiple pussy,long body,
 
-&ref(https://imgur.com/wPyvuoO.png)(https://imgur.com/wPyvuoO.png,300)
 ----
 Anything-V3.0.ckptそのまま混ぜるとエロ関連出しづらくなったからどっかで出てた画像の設定でリークのエロ要素加算し直したモデル作ってから
 gape60をAに作ったモデルをBに入れて0.3でweighted sumで混ぜた
-&ref(https://imgur.com/vTbBGQg.png)(https://imgur.com/vTbBGQg.png,300)
+
 ----
 出力結果を見るとgape60のモロ性器はそのまま全体的に人体の破綻と髪の塗り方とかテイストの振れ幅が収まって質が良くなった印象
 ただガチャとプロンプト次第なところはあるけど1girlだけど複数出てきたり人体パーツが増えたりする確率はやや上がった
 リークを加算したAnythingモデルも合わせて混ぜる比率を変えたモデルを複数用意して同シードで出し比べると面白いかも
 
-&ref(https://image01.seesaawiki.jp/n/h/nai_ch/jnIRCHwJP0.png,600)
 ----
 
 よくわからないままモデルをマージしてるんだけども

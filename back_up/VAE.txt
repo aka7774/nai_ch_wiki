@@ -13,14 +13,20 @@ StableDiffusionにおけるVAEとは、画像と潜在空間を相互に変換�
 - 彩度や明度等のイメージ調整
 - 目の書き込みの細部とか輪郭線など非常にこまかい部分の描写
 
-細かい部分の精度が悪いのは学習・生成は8分の1の解像度でやっているためでどうしようもない。しかしそのおかげで一般向けのGPUでも動く。
+細かい部分の精度が悪いのは学習・生成は縮小してやっているためでどうしようもない。しかしそのおかげで一般向けのGPUでも動く。
 
 ** 備考
-NAIのVAEはNansエラー(真っ黒)になりやすい。i2iで完全に生成できんってこともある。
+animevae(NovelAI Diffusion V1のVAE)はNaN演算が多く不安定である。
+SDXL BaseのVAEはfp16では常にNaN演算が発生して動作しないため、不具合を修正したSDXL-VAE-FP16-Fixの使用を推奨。
 
 * VAE
-%%2023年3月現在はほとんどがnai.vaeかAnything.vaeを使っている感じする。%%
 2024年5月現在、SDXLが主流になり、ほとんどの場合モデル内蔵のVAEかSDXL-VAE-FP16-Fixを使っている感じする。
+
+** SDXLのVAE
+SDXLはXL専用のVAEが必要。SD1/2用のVAEを使っても動作するが圧縮率が異なるため、壊れた画像になる。
+- SDXL-VAE-FP16-Fix
+Stability AIのSDXL VAEの修正版。fp16でNaN演算が発生する問題を修正して黒画像やエラーが出ないようにしたもの
+https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 
 ** 一般のVAE(SD1/2)
 
@@ -29,7 +35,7 @@ NovelAIのVAE
 (2)orangemix.vae.ptはnaiのVAEを入手性を考慮してリネームして置いただけものです。Torrentめんどくさい用に一応貼っておく
 https://huggingface.co/WarriorMama777/OrangeMixs/tree/main/VAEs
 nai.vae.pt
-''Windows Defenderがマルウェアの誤検出で勝手に消去するので注意!safetensor変換か除外するとええで''
+''Microfost Defenderがマルウェアの誤検出で勝手に消去するので注意!safetensorに変換することを強く推奨する。''
 
 - Anything3,4およびevt2のVAEはNovelAIのものと一緒(ファイルサイズ、生成結果、MD5ハッシュの一致を確認済み)
 
@@ -50,11 +56,7 @@ autoencoder_fix_kl-f8-trinart_characters.ckpt
 
 参照：AUTOMATIC1111版Stable Diffusion web UI上でVAE Mergerを利用する手順｜まゆひら｜note - https://note.com/mayu_hiraizumi/n/n136bd7b3a156 ※VAE Mergerはバグが多い上に更新停止
 
-** SDXLのVAE
-SDXLはXL専用のVAEが必要。SD1/2用のVAEも動くが酷い結果になる。
-SDXL-VAE-FP16-Fix
-StabilityAIのSDXL VAEの修正版。fp16でNaN演算が発生する問題を修正して黒画像やエラーが出ないようにしたもの
-https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
+
 
 ** SD3のVAE
 4チャネルから16チャネルになって精度が向上した。
