@@ -52,6 +52,9 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-10-28 Grok、動画生成のNSFW規制を大幅強化
+正式な告知はないが、胸を露出した画像でi2vできなくなった、以前は動画生成された画像が通らなくなったなどの報告が相次いだ。
+
 **2025-10-25 PurpleSmartAI、Pony v7 baseを公開
 https://huggingface.co/purplesmartai/pony-v7-base
 https://civitai.com/models/1901521
@@ -1111,6 +1114,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
