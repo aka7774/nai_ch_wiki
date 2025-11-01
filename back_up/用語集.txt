@@ -6,7 +6,7 @@
 |~用語|正式名称|説明|
 |AUTOMATIC1111||人名。でもAUTOMATIC1111氏が作ったツール「Stable Diffusion web UI」を指して呼ばれがち。|
 |A1111/1111|AUTOMATIC1111|人名だけどツールの名前(stable-diffusion-webui)として呼ばれがち。|
-|Easy〇〇||Zuntan氏開発の、各種生成AIの環境を簡単にセットアップできるソフトウェア群。いわばスターターキット。|
+|Easy〇〇||Zuntan氏開発の、各種生成AIの環境を簡単にセットアップできるWindows専用ソフトウェア群。いわばスターターキット。|
 |forge|stable-diffusion-webui-forge|stable-diffusion-webuiのフォーク(派生)|
 |reForge|stable-diffusion-webui-reForge|forgeのフォーク|
 |GUI||sd-scriptsで学習するためのGUIを指すことが多い。GradioベースとWindows Formベースの二種類が存在する。|
@@ -28,16 +28,16 @@
 |1.5|SD 1.5|Stable Diffusionの初代のマイナーチェンジ版。2022年にリリースされて以来長らく主流だったが、2024年には後継のSDXLが普及しきって廃れた|
 |Illustrious/イラストリアス|Illustrious-XL|SDXLベースのアニメモデル|
 |Noob|NoobAI-XL|Illustrious-XL-v0.1の派生|
-|paruparu/パル/パルリアス|paruparu_illustrious|Illustrious-XLの派生。限定的に配布されている本スレ固有(?)のモデル。|
-|pony7|Pony Diffusion V7|AuraFlowをファインチューニングしたモデル。公開される気配がない。|
+|pony7|Pony Diffusion V7|AuraFlowをファインチューニングしたモデル。知名度が低く情報が少ないAuraFlowがベースで流行ることは...なさそう。|
 |Qwen|Qwen Image|中国Alibabaが開発したパラメータ数20B(200億)の画像モデル|
 |SD|Stable Diffusion|単なる略称|
-|V3|NovelAI V3|2023年11月に登場したNovelAIの旧モデル。SDXLベースだがクローズドソース。キャラ再現度やインペイントが優秀なためローカルと併用する人も多い|
+|V3|NovelAI Diffusion V3|2023年11月に登場したNovelAIの旧モデル。SDXLベースだがクローズドソース。キャラ再現度やインペイントが優秀なためローカルと併用する人も多い|
 |V4|NovelAI Diffusion V4|V3の後継。NovelAI独自開発でクローズドソース。U-net+T5エンコーダーらしい。|
 |XL|SDXL|SDXL Base 1.0のこと|
 |リアス|Illustrious-XL|単なる略称|
 |モデル||SDXLやFLUX.1などモデルアーキテクチャそのものやCheckpointを意味する。スレ内ではもっぱら後者の意味で使用される。|
 |wan|Wan Video|動画生成AI|
+|Llasa||TTS(Text to Speech,音声合成)のAI。LLMのLlama 3に、XCodec2というモデルに対応するデータを出力できるよう学習させたもの。|
 
 ** 技術的
 |~用語|正式名称|説明|
@@ -88,15 +88,14 @@ AIとは直接の関係がない本スレ固有の単語
 |ポン出し||ControlNetやi2iなどを使用して生成したり出力画像を編集したりせずに、そのまま利用すること。デジカメでいう「撮って出し」と同じニュアンス。|
 |お客さん||スレッドに初めて来た人のこと。「部外者」のような意味を持つ。|
 |ギップル|git pull|リモートリポジトリの変更をプル(ローカルに反映)するコマンド|
+|モデられる|"Content Moderated."|Grokで生成したコンテンツが規制されたときのメッセージが表示されたこと|
 
 ** よくある間違い
 |~用語|正式名称|説明|
 |Animajin/Animagagine|[[Animagine XL>animagine31tips]]|Anima''gine'' XLの間違い|
 |イラストリアル|Illustrious-XL|イラストリア''ス''の間違い。Illustrious-XLはリアルな絵を生成しない。|
 |v-pread|v-pred|タイポ(誤字)|
-|モアレ||格子のような規則的な模様が重なったときに見える縞模様。しかし、スレではAI特有のノイズ、シミや靄のようなものを指す言葉として誤用されることがある。|
-
-
+|モアレ||格子のような規則的な模様が重なったときに見える縞模様。しかし、スレではAI特有のノイズ、シミや靄のようなものを指す言葉として誤って使用することがある。|
 
 ** 使用頻度の低い用語
 今はほとんど使われなくなった用語です。
@@ -127,8 +126,9 @@ AIとは直接の関係がない本スレ固有の単語
 |魔人/魔神|[[Animagine XL>animagine31tips]]|Animagine XLのこと|
 |DoRA|Weight-Decomposed Low-Rank Adaptation|LoRAの改良版。学習の安定性と低ランクでの性能が向上する。ほとんど認知されていない。|
 |SD3|Stable Diffusion 3|Stability AIが2024年2月に発表、6月にリリースされたStable Diffusionの新バージョン。SDXLを上回る性能を誇る…はずが問題だらけで流行らかなった。|
-|SD3.5|Stable Diffusion 3.5|SD3の新バージョン。特定プロンプトで崩壊する問題などに対処し品質が向上した。…しかしこちらはFTが困難なためか派生モデルが全く出ず流行らなかった。しかもNSFW禁止になった。|
+|SD3.5|Stable Diffusion 3.5|SD3の新バージョン。特定プロンプトで崩壊する問題などに対処し品質が向上した。…しかしこちらはFTが困難なためか派生モデルが全く出ず流行らなかった。しかも実質NSFW禁止になった。|
 |層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
+|paruparu/パル/パルリアス|paruparu_illustrious|Illustrious-XLの派生。限定的に配布されている本スレ固有(?)のCheckpoint。|
 
 * スレの言葉について
 
@@ -161,7 +161,7 @@ cmdr2やNMKDを使ってる人は全く見かけない。
 ちなみに、オリジナルの1111は開発停滞により廃れつつある。今はreForgeとComfyUIが主流。
 
 ** 「Web版/ローカル版」の表記ゆれ
-2025年現在、独自アーキテクチャのNovelAI V4(リーク無し)と各々が独自開発したSDXLベースモデルが普及して本家とリーク版の混同がなくなった。
+2025年現在、独自アーキテクチャのNovelAI Diffusion V4(リーク無し)と各々が独自開発したSDXLベースモデルが普及して本家とリーク版の混同がなくなった。
 そのためか、NovelAIは単にNAI、ローカルの各種UIはその名称で呼ぶようになった。
 
 [+] 古い情報(2023年以前)
