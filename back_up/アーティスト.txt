@@ -3,10 +3,15 @@
 
 * アーティスト
 {| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|~w(100px):意味|~w(100px):備考|~w(100px):サンプル|
-|||v4.5||
-||かわもりみさき|||
-|||v4.5||
+|~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
+|||||
+|{hirasaka makoto},|比良坂真琴|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/8962897e642061d2.png|
+|nagayama yuunon,|永山ゆうのん|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/5be1259b905d9241.png|
+|{{kurogane gin}},chibi,|くろがねぎん|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の順番。逆では描きにくい動作を確認。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/894425c0cd742e74.png)|
+|abe tsukasa,|アベツカサ|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の順番。逆では描きにくい動作を確認。 |https://image01.seesaawiki.jp/n/h/nai_ch/945b76dfc68456b0.png|
+|kobayashi tetsuya,|コバヤシテツヤ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/1a14e3d87d10a459.png|
+|yoshizaki mine,|吉崎観音|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/ce6fb8dab7148226.png|
+|{{kiyuzuki satoko}},|きゆづきさとこ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/43ce54f0cbc1753e.png|
 |zunta,|zunta|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/15f91a9fbd2879d9.png|
 |{{hinata yuu}}, chibi,|日向ゆう|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/6c7e8ca452680950.png|
 |{uran (uran-factory)},|URAN|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/cc926dbf21775d43.png|
