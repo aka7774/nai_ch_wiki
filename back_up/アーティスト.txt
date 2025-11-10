@@ -4,7 +4,8 @@
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
-|||||
+|{{suemi jun}}, |末弥純|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/b03906d7a2dc6c28.png|
+|{{amano yoshitaka}},|天野喜孝|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/43e1854f0532e9ed.png|
 |{hirasaka makoto},|比良坂真琴|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/8962897e642061d2.png|
 |nagayama yuunon,|永山ゆうのん|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/5be1259b905d9241.png|
 |{{kurogane gin}},chibi,|くろがねぎん|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の順番。逆では描きにくい動作を確認。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/894425c0cd742e74.png)|
