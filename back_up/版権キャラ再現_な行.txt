@@ -4,7 +4,7 @@
 #contents
 * 版権キャラ再現/な行
 **な
-
+[+]
 ***　ながされて藍蘭島
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -89,7 +89,10 @@
 |haruno sakura, naruto, cowboy shot, ||NARUTO -ナルト-|春野サクラ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Rq9Rfc0wnp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Rq9Rfc0wnp.png]]|
 |naruto (series), {haruno sakura},pink hair, short hair, green eyes,small breasts,red shirt,sleeveless,bike_shorts,game cg|bangs,bicycle,comic|^|^||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yhV7lGqSO2.png)|
 |}
+[END]
+
 **に
+[+]
 ***　NieRシリーズ（ニーアシリーズ）
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -168,7 +171,10 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |fujikido kenji, ninja slayer, boy, mouth mask, red scarf, arm guards, standing, full body,||ニンジャスレイヤー|フジキド・ケンジ|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/16d8ae08288f89e1.png|
 |}
+[END]
+
 **ぬ
+[+]
 ***　ぬらりひょんの孫
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -216,8 +222,10 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, 2d cel anime, {{tamaki ako}}, {{netoge no yome wa onna no ko janai to omotta?}}, very aesthetic, best quality, intricate, overall detail, nsfw, 1 girl, black hair, long hair, hair between eyes, {messy hair}, blue eyes, large breasts, camisole, staff, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ネトゲの嫁は女の子じゃないと思った?|玉置亜子|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/PMGRNthm4z.png|
 |}
+[END]
 
 **の
+[+]
 ***　ノーゲーム・ノーライフ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -241,7 +249,7 @@
 |{{1girl}}, {{{solo}}}, {{beautiful detailed face}}, non_non_biyori, {a girl_have_({{koshigaya_komari}}, {{loli}}, {{brown hair}}, straight hair, long hair, {middle-short sideburns}, {{{{short stature}}}}, {{dark green eyes}}, school uniform_skirt, {{standing upright}}, open stance, smile, {{{look forward to}}})}, {{upper body}}, {{in classroom}}, {{{{ultra-detailed}}}}, {{super-high quality}}, {{ultra-high resolution}},|{{less than (surrealism:99.6)}}, {{{{{monochrome}}}}}, {{{{{grayscale}}}}}, {{{3d}}}, {{{real-style}}}, {{{error}}}, {{{ignore the specified color scheme}}}, {{{color shift}}}, {{{crop}}}, {{{splitting screen}}}, {{{crop}}}, {{{{{extra limbs}}}}}, {{{{{few limbs}}}}}, {{{bad hands}}}, {{{{{undetailed face}}}}}, {{{{extra digit}}}}, {{{{few digit}}}}, {{extra persons}}, {{missing background}}, {{{face off-screen}}}, {{{extra persons}}}, {{{hide face}}}, {{{multiple face}}}, {{{multiple body}}}, koshigaya_natsumi,|のんのんびより|越谷小鞠|大まかな指示に名前と作品名を入れると一見すんなり出るが、「くせっ毛」「まとめ髪」「ツリ目」「中背でそこそこいいプロポーション」といった要素が入り込んだり、描画破綻しやすい。何が原因かと思ったらこれらの特徴は夏美のものなので、koshigaya_natsumiをネガティブ指定すると一気に収まる(おそらく夏美を出す時も小鞠をネガティブ指定する必要があると思われる。)。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Nhoh_MW4Ci.png)|
 |{{1girl}}, {{{solo}}}, {{beautiful detailed face}}, non_non_biyori, {a girl_have_({{koshigaya_komari}}, {{brown hair}}, straight hair, long hair, antenna, {middle-short sideburns}, {{dark green eyes}}, school uniform_skirt, {character modification_({larger build for a female}, {{super-high stature (180cm)}}, {powerful-loli}, {{thick ankles}}, thick arms, {{thick wrists}}, curvy, slender thighs, {{broad-shouldered}}, large breasts, {{boobshell}})}, {{standing upright}}, wide open stance, smile, {{{look forward to}}})}, {{upper body}}, {{classroom}}, {{{{ultra-detailed}}}}, {{super-high quality}}, {{ultra-high resolution}},|{{less than (surrealism:99.6)}}, {{{{{monochrome}}}}}, {{{{{grayscale}}}}}, {{{3d}}}, {{{real-style}}}, {{{error}}}, {{{ignore the specified color scheme}}}, {{{color shift}}}, {{{crop}}}, {{{splitting screen}}}, {{{crop}}}, {{{{{extra limbs}}}}}, {{{{{few limbs}}}}}, {{{bad hands}}}, {{{{{undetailed face}}}}}, {{{{extra digit}}}}, {{{{few digit}}}}, {{extra persons}}, {{missing background}}, {{{face off-screen}}}, {{{extra persons}}}, {{{hide face}}}, {{{multiple face}}}, {{{extra face}}}, {{{multiple body}}}, face on background, {{nsfw}}, koshigaya_natsumi,|さかさたまくら(のんのんびより公式アンソロジー1st)|越谷小鞠|''ガチャ要素かなり高いので要注意''。公式アンソロジー1stで、にわかいけ氏が描いた逆転世界(れんげの夢オチ)の小鞠の再現。秀才夏美(外見は肉厚レンズのメガネをかけている以外あまり差はない)に「でかちゃん」と呼ばれている。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1GVk3LAucS.png)~~&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FxuVKsaBrh.png)|
 |}
-
+[END]
 
 
 
