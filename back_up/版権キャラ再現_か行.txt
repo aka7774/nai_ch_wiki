@@ -4,7 +4,6 @@
 #contents
 * 版権キャラ再現/か行
 **か
-[+]
 ***　カードキャプターさくら
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -38,6 +37,7 @@
 |}
 
 ***　ガールズ＆パンツァー
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |akiyama yoshiko, ,girl,solo,{girls und panzer},||ガールズ＆パンツァー|秋山好子|4.5|https://image02.seesaawiki.jp/n/h/nai_ch/662ba789110b7caf.png|
@@ -80,7 +80,7 @@
 |darjeeling (girls und panzer), short hair, twin braids, bangs, blonde hair, blue eyes, {{red jacket}}, long sleeves, &#91;&#91;&#91;epaulettes]]], {{black skirt}}, pleated skirt, miniskirt, black boots, medium breasts, {{thighhighs}}, potbelly, {{{{{masterpiece}}}}}, {{{{{highly detailed}}}}}, {{{{{Enhance}}}}}, &#91;&#91;&#91;&#91;&#91;anime coloring]]]]], sitting on couch, indoors, &#91;&#91;&#91;&#91;&#91;evil smile]]]]], closed mouse, ||ガールズ＆パンツァー|ダージリン||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/gGnIl6lTYs-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/gGnIl6lTYs.png]]|
 |takebe saori, girls und panzer,orange hair,blunt bangs, orange eyes, wavy hair,medium hair,zettai ryouiki,black legwear,ooarai school uniform, serafuku, green skirt, black neckerchief,tareme,solo,smile,|tsurime,smirk,evil smile,|ガールズ＆パンツァー|武部沙織|太ももがムチムチになりがち~~ツリ目打消しネガティブは必須|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/CCraAmAn6C.png)|
 |}
-
+[END]
 ***　ガールズバンドクライ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -336,6 +336,7 @@
 
 
 ***　艦隊これくしょん
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 ||||瑞鶴|||
@@ -417,6 +418,7 @@
 [+]&aname(mochizuki){望月のネガティブプロンプト}
 {{{{{mutated hands and fingers}}}}}, {{{long body }}}, {{mutation, poorly drawn}} , black-white, bad anatomy, liquid body,liquid tongue, disfigured, malformed, mutated,anatomical nonsense, text font ui, error, malformed hands, long neck, blurred, lowers, lowres, bad anatomy, bad proportions, bad shadow,uncoordinated body, unnatural body, huge haunch, huge thighs, huge calf, bad hands,fused hand, missing hand, isappearing arms,disappearing thigh, disappearing calf, disappearing legs, fused ears, bad ears, poorly drawn ears, extra ears, liquid ears, heavy ears, missing ears, fused animal ears, bad animal ears, poorly drawn animal ears, extra animal ears, liquid animal ears, heavy animal ears,missing animal ears, text, ui, error, missing fingers,missing limb, fused fingers, one hand with more than 5 fingers, one hand with less than 5 fingers, one hand with more than 5 digit, one hand with less than 5 digit,extra digit, fewer digits, fused digit, missing digit, bad digit, liquid digit, colorful tongue, black tongue,cropped, watermark, username, blurry, JPEG artifacts, signature, 3D, 3D game, 3D game scene, 3D character,malformed feet, extra feet, bad feet, poorly drawn feet, fused feet, missing feet, extra shoes, bad shoes,fused shoes, more than two shoes, poorly drawn shoes, bad gloves, poorly drawn gloves, fused gloves,bad hairs,poorly drawn hairs, fused hairs, big muscles, ugly, bad face, fused face, poorly drawn face, cloned face, big face, long face, bad eyes, fused eyes poorly drawn eyes, extra eyes, malformed limbs, gross proportions. short arm,{{missing arm}}, missing thighs, missing calf, missing legs, mutation, duplicate, morbid, mutilated, poorly drawn hands, more than 1 left hand, more than 1 right hand, deformed, {blurry}, disfigured, missing legs, extra arms, extra thighs, more than 2 thighs, extra calf,fused calf, extra legs, bad knee, extra knee, more than 2 legs, bad tails, bad mouth, fused mouth, poorly drawn mouth, bad tongue, tongue within mouth, too long tongue, black tongue, big mouth, cracked mouth .bad mouth, dirty face, dirty teeth, dirty pantie, fused pantie, poorly drawn pantie, fused cloth, poorly drawn cloth, bad pantie, yellow teeth, thick lips, bad bad thigh gap, missing thigh gap, fused thigh gap, liquid thigh gap, poorly drawn thigh gap, poorly drawn anus, bad collarbone, fused collarbone, missing collarbone, liquid collarbone, strong girl, obesity, worst quality, low quality, normal quality, liquid tentacles,bad tentacles, poorly drawn tentacles, split tentacles,fused tentacles, QR code, bar code,censored, safety panties, safety knickers, beard., lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name, forehead jewell,forehead mark, [mutsuki(kancolle), arashio(kancolle), kisaragi(kancolle), fumitsuki(kancolle), straight long hair, ],
 [END]
+[END]
 
 ***　[[ガンダムビルドシリーズ>版権キャラ再現/ガンダム（アナザー系）#hanken_gundam_build]]
 → [[ガンダムビルドシリーズ>版権キャラ再現/ガンダム（アナザー系）#hanken_gundam_build]]
@@ -441,10 +443,8 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |1girl,ganbare goemon,yae,ninja,green hair,green eyes,long hair,puple clothes,white sash,white socks,mini skirt,|long sleeves,skin,(旧衣装の場合)|がんばれゴエモン|ヤエ|記載されているプロンプトは袖なしミニスカの新衣装版。こちらの方がNAI的にイメージしやすいらしい。~~旧衣装版を出したい場合はmini skirt,の代わりにlong sleeves,baggy pantsを入れる。ただしかなり出にくい。~~旧衣装でも作品によってデザインが違う。初登場「きえた黄金キセル」では黒髪黒目に青い装束、「ゆき姫救出絵巻」では青髪青目に紫装束となる。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/QKFNuuVAz6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/QKFNuuVAz6.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/N4_LSj5psp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/N4_LSj5psp.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/IGHnUJTru1-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/IGHnUJTru1.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/AL1nc6bn5r-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/AL1nc6bn5r.png]]|
 |}
-[END]
 
 **き
-[+]
 ***　鬼神童子ZENKI
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -452,6 +452,7 @@
 |}
 
 ***　軌跡シリーズ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |altina_orion, kai no kiseki||英雄伝説 界の軌跡|アルティナ・オライオン(界の軌跡ver.)|V4.5、キャラ名+"kai  no kiseki"だけで出る。|https://image01.seesaawiki.jp/n/h/nai_ch/44b2838ef0b45f92.png https://image01.seesaawiki.jp/n/h/nai_ch/4b7dcba25c4622d7.png|
@@ -467,7 +468,7 @@
 |{{{{{{{{altina orion}}}}}}}}, {{sen no kiseki}}, {{official style}}, {{beret}}|{{lowres}}, {{multiple views}}, {{bad quality}}|英雄伝説 閃の軌跡II〜|アルティナ・オライオン|V3。軌跡キャラでは安定している方。ベレーをつけると一気に閃III以降っぽくなる。|https://image02.seesaawiki.jp/n/h/nai_ch/cDgRKxoVc0.png|
 |official style, game cg, emma millstein, sen no kiseki, hajimari no kiseki, very aesthetic, best quality, intricate, overall detail, 1 girl, braided ponytail, blue eyes, glasses, school uniform, ascot, jewelry, red jacket, green skirt, kilt skirt, black thighhighs, loafers, standing, holding staff, happy, simple background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |英雄伝説 閃の軌跡�機銑検∩呂竜粟�|エマ・ミルスティン|V3使用。トールズ士官学校の制服は何とか再現できた。杖はコレじゃないものにしかならない。眼鏡の指定をしなくても眼鏡を掛けることがある。その場合はno eye wearを追記。|https://image01.seesaawiki.jp/n/h/nai_ch/FTd6AgcdeP.png|
 |}
-
+[END]
 ***　機動警察パトレイバー
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -552,6 +553,7 @@
 |}
 
 ***　鬼滅の刃
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |kamado kie, kimetu no yaiba||鬼滅の刃|竈門葵枝|4.5|https://image02.seesaawiki.jp/n/h/nai_ch/fa0307dc2c905204.png|
@@ -586,7 +588,7 @@
 |official style, kanroji mitsuri, kimetsu no yaiba, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, head down bottom up, standing split, standing on one leg, bad anatomy, disfigured, poorly drawn, deformed, mutation,|鬼滅の刃|甘露寺蜜璃|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/LrrjxUWfFo.png|
 |official style, kamado nezuko, kimetsu no yaiba, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, official style, kamado nezuko, kimetsu no yaiba, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, head down bottom up, standing split, standing on one leg, bad anatomy, disfigured, poorly drawn, deformed, mutation,|鬼滅の刃|竈門禰豆子|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/KsxmMlhSo1.png|
 |}
-
+[END]
 ***　逆転裁判シリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -736,6 +738,7 @@
 |}
 
 ***　銀魂
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |||||||
@@ -745,7 +748,6 @@
 [END]
 
 **く
-[+]
 ***　クイーンズブレイド
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -977,7 +979,6 @@
 [END]
 
 **け
-[+]
 ***　けいおん！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1177,7 +1178,6 @@
 [END]
 
 **こ
-[+]
 &aname(hanken_koihime)
 ***　恋姫†無双
 {| class="sort edit nanj_prompt_table"
@@ -1471,4 +1471,10 @@ multiple breasts,&#40;mutated hands and fingers:1.5 ),&#40;long body :1.3),&#40;
 |kasuga yui, corrector yui, girl, orange hair, red eyes, magical girl, standing, holding wand, smile, full body, |lowers, aliasing,|コレクター・ユイ|コレクター・ユイ|V4 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/eBvllVpqU_.png|
 |}
 [END]
+
+
+
+
+
+
 
