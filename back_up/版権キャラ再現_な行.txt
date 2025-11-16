@@ -4,8 +4,8 @@
 #contents
 * 版権キャラ再現/な行
 **な
-[+]
 ***　ながされて藍蘭島
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |boy,official art,nagasarete airantou,touhouin ikuto(nagasarete airantou),happy,||ながされて藍蘭島|東方院 行人|V4.5使用。|https://image02.seesaawiki.jp/n/h/nai_ch/a70c59a2c3149d7a.png|
@@ -19,6 +19,7 @@
 |girl,official art,nagasarete airantou,ayane(nagasarete airantou),happy,Twin tails,miko,2.0::Small breasts||ながされて藍蘭島|あやね|V4.5使用。|https://image01.seesaawiki.jp/n/h/nai_ch/72922caf7cf41f83.png|
 |girl,official art,nagasarete airantou,suzu(nagasarete airantou),happy | |ながされて藍蘭島|すず|V4.5使用。|https://image01.seesaawiki.jp/n/h/nai_ch/1dc678cacafab75d.png|
 |}
+[END]
 
 ***　ナーサリィ☆ライム
 {| class="sort edit nanj_prompt_table"
@@ -79,6 +80,7 @@
 |}
 
 ***　NARUTO -ナルト-
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |||||||
@@ -92,7 +94,6 @@
 [END]
 
 **に
-[+]
 ***　NieRシリーズ（ニーアシリーズ）
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -118,6 +119,7 @@
 |}
 
 ***　ニセコイ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, anime style, {{tsugumi seishirou, nisekoi}}, best quality, intricate, overall detail, 1 girl, school uniform, standing, happy, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, {{{{POV hands}}}}, cubism, |ニセコイ|鶫誠士郎|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/zfAcDgunzJ.png|
@@ -126,8 +128,10 @@
 |official style, anime coloring, kirisaki chitoge, nisekoi, very aesthetic, best quality, intricate, overall detail, 1girl, blonde hair, blue eyes, bonyari high school uniform, black thighhighs, loafers, arms at side, standing, simple background, facing the front, straight-on, close to viewer, full body, character focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |ニセコイ|桐崎千棘|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/efpcelRo1Y.png|
 |nisekoi,kirisaki chitoge, bangs,blonde hair,blue eyes,long hair,{hair bow,bow hairband,{hair ribbon,red bow}}, {half updo},medium breasts,bonyari_high_school_uniform,blue sailor collar,white shirt,long sleeves, blue skirt,{black legwear},thighhighs, {necktie,orange necktie}, solo,|ponytail,twintails,|ニセコイ|桐崎千棘|ハーフアップとヘアリボンの相性が悪いらしくうまく再現されない|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/89d9Ow5Nai.png)|
 |}
+[END]
 
 ***　日常
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |aioi yuuko, nichijou, tokisadame school uniform, brown hair, short hair, brown eyes, red bowtie, white sailor collar, yellow shirt, solo, cowboy shot, ||日常|相生祐子|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1Vs8En_zFS-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1Vs8En_zFS.png]]|
@@ -137,6 +141,7 @@
 |professor_shinonome , nichijou, long hair, anime screencap, loli, toddler, white lab coat, red tie, bust up|black hair, glasses|日常|はかせ|v3でほぼキャラ特徴の指定なしで出せるようになった。足先まである長い白衣は再現性低い。|https://image01.seesaawiki.jp/n/h/nai_ch/V8Z5Y3KAAK.png|
 |solo, 1girl, nichijou, loli, light orange hair , long hair, white labcoat, 6 years old, red tie,white shirt, tatami, shouji, window_shade, anime, pretty black cat, smile, infant||日常|はかせ||https://image01.seesaawiki.jp/n/h/nai_ch/2HTo2AkoG9.png|
 |}
+[END]
 
 ***　日本へようこそエルフさん。
 {| class="sort edit nanj_prompt_table"
@@ -171,10 +176,8 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |fujikido kenji, ninja slayer, boy, mouth mask, red scarf, arm guards, standing, full body,||ニンジャスレイヤー|フジキド・ケンジ|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/16d8ae08288f89e1.png|
 |}
-[END]
 
 **ぬ
-[+]
 ***　ぬらりひょんの孫
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -183,6 +186,7 @@
 |}
 
 ***　ぬるめた
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |1 girl,simple background,very aesthetic, best quality, amazing quality, absurdres　girl,takada_shiyuki(null-meta),null meta,white hair,blue eyes,{hair horns},white serafuku,black sailor collar,miniskirt ,pleated skirt,red neck ribbon,socks, uwabaki,full body,standing||ぬるめた|高田詩雪|V4 girl以降はキャラプロンプト　角は"hair horns"で安定して出る|https://image02.seesaawiki.jp/n/h/nai_ch/2GFKkieOp1.png|
@@ -191,6 +195,8 @@
 |1 girl,simple background,no text, best quality, very aesthetic, absurdres girl,uozumi kurumi(null-meta),null meta,ahoge,black eyes,loli, blonde hair,tsurime,slender,white serafuku,black sailor collar,miniskirt ,pleated skirt,red neck ribbon,socks, uwabaki,smile,open mouth,full body||ぬるめた|魚住くるみ|V4 girl以降はキャラプロンプト|https://image01.seesaawiki.jp/n/h/nai_ch/NJm7rMIzIa.png|
 |kokaki mumose,{uozumi kurumi},{null-meta},1 girl,blonde hair,short_hair,ahoge,black eyes,tsurime,serafuku,black sailor collar,miniskirt ,pleated skirt,red neck ribbon,red socks,uwabaki,slender,smile,open mouth,masterpiece,very aesthetic,best quality,||ぬるめた|魚住くるみ|V3。画風、等身不安定。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Vo2k8NLxvd-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Vo2k8NLxvd.png]]|
 |}
+[END]
+
 **ね
 ***　ネコぱら
 {| class="sort edit nanj_prompt_table"
@@ -209,6 +215,7 @@
 |}
 
 ***　ネットキャラ（旧２ちゃんねる_ふたば☆ちゃんねる他インターネット発祥のキャラ）
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, kaname madoka (magical girl), gundam age-1 titus, mahou shoujo madoka magica, gundam age, very aesthetic, best quality, intricate, overall detail, 1girl, mecha musume, mecha, standing, white background, front view, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ふたば☆ちゃんねる（模型裏板）|まどかタイタス|V4 Curated Preview版使用。figma鹿目まどかにガンダムAGE-1 タイタスの腕をくっつけたモノが発祥。|https://image02.seesaawiki.jp/n/h/nai_ch/UMtqgRSP3_.png|
@@ -216,8 +223,10 @@
 |official style, game cg, yakui, nijiura maids, best quality, intricate, overall detail, 1 girl, purple hair, short hair, purple eyes, maid headdress, waist apron, striped thighhighs, standing, @_@, open mouth, drugged, drooling, simple background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |虹裏メイド（ふたば☆ちゃんねる）|ヤクいさん|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/YbtI7ebURG.png|
 |official style, game cg, bisuke-tan, kfc, best quality, intricate, overall detail, 1 girl, blue hair, short hair, blue eyes, food on head, kfc biscuit, maple syrup, white dress, bowtie, striped thighhighs, black shoes, sitting, simple background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |半角二次元板|ビスケたん|V3使用。ケンタッキーフライドチキンのビスケットを萌え擬人化したキャラクター。|https://image01.seesaawiki.jp/n/h/nai_ch/VTI_o81oUV.png|
 |}
+[END]
 
 ***　ネトゲの嫁は女の子じゃないと思った?
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, 2d cel anime, {{tamaki ako}}, {{netoge no yome wa onna no ko janai to omotta?}}, very aesthetic, best quality, intricate, overall detail, nsfw, 1 girl, black hair, long hair, hair between eyes, {messy hair}, blue eyes, large breasts, camisole, staff, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ネトゲの嫁は女の子じゃないと思った?|玉置亜子|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/PMGRNthm4z.png|
@@ -225,7 +234,6 @@
 [END]
 
 **の
-[+]
 ***　ノーゲーム・ノーライフ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -241,6 +249,7 @@
 |}
 
 ***　のんのんびより
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |miyauchi kazuho, non non biyori,itome,eyes closed||のんのんびより|宮内一穂|4.5|https://image01.seesaawiki.jp/n/h/nai_ch/991afbf704784867.png|
@@ -250,6 +259,4 @@
 |{{1girl}}, {{{solo}}}, {{beautiful detailed face}}, non_non_biyori, {a girl_have_({{koshigaya_komari}}, {{brown hair}}, straight hair, long hair, antenna, {middle-short sideburns}, {{dark green eyes}}, school uniform_skirt, {character modification_({larger build for a female}, {{super-high stature (180cm)}}, {powerful-loli}, {{thick ankles}}, thick arms, {{thick wrists}}, curvy, slender thighs, {{broad-shouldered}}, large breasts, {{boobshell}})}, {{standing upright}}, wide open stance, smile, {{{look forward to}}})}, {{upper body}}, {{classroom}}, {{{{ultra-detailed}}}}, {{super-high quality}}, {{ultra-high resolution}},|{{less than (surrealism:99.6)}}, {{{{{monochrome}}}}}, {{{{{grayscale}}}}}, {{{3d}}}, {{{real-style}}}, {{{error}}}, {{{ignore the specified color scheme}}}, {{{color shift}}}, {{{crop}}}, {{{splitting screen}}}, {{{crop}}}, {{{{{extra limbs}}}}}, {{{{{few limbs}}}}}, {{{bad hands}}}, {{{{{undetailed face}}}}}, {{{{extra digit}}}}, {{{{few digit}}}}, {{extra persons}}, {{missing background}}, {{{face off-screen}}}, {{{extra persons}}}, {{{hide face}}}, {{{multiple face}}}, {{{extra face}}}, {{{multiple body}}}, face on background, {{nsfw}}, koshigaya_natsumi,|さかさたまくら(のんのんびより公式アンソロジー1st)|越谷小鞠|''ガチャ要素かなり高いので要注意''。公式アンソロジー1stで、にわかいけ氏が描いた逆転世界(れんげの夢オチ)の小鞠の再現。秀才夏美(外見は肉厚レンズのメガネをかけている以外あまり差はない)に「でかちゃん」と呼ばれている。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1GVk3LAucS.png)~~&ref(https://image01.seesaawiki.jp/n/h/nai_ch/FxuVKsaBrh.png)|
 |}
 [END]
-
-
 

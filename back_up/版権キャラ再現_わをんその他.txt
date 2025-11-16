@@ -5,6 +5,7 @@
 * 版権キャラ再現/わをんその他
 **わ
 ***　WORKING!!
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |takanashi nazuna, working!!||WORKING!!|小鳥遊なずな|4.5|https://image01.seesaawiki.jp/n/h/nai_ch/203e49c75e20ba04.png|
@@ -20,6 +21,7 @@
 |official style, 2d cel anime, {{yamada aoi}}, {{working!!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, waitress, little girl, black hair, long hair, hime cut, purple eyes, uniform, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |WORKING!!|山田葵|V2使用。名前だけでは出ない。特徴を追記することで出てくる。|https://image02.seesaawiki.jp/n/h/nai_ch/VDa9qU0ojH.png|
 |official style, 2d cel anime, {{inami mahiru}}, {{working!!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, best, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |WORKING!!|伊波まひる|V2使用。一発出しでワグナリアの制服まできちんと再現される。|https://image02.seesaawiki.jp/n/h/nai_ch/jB404oo9jZ.png|
 |}
+[END]
 
 ***　ワールドトリガー
 {| class="sort edit nanj_prompt_table"
@@ -40,6 +42,7 @@
 |}
 
 ***　私がモテないのはどう考えてもお前らが悪い!
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |tamura yuri, watashi ga motenai no wa dou kangaetemo omaera ga warui!,  low twintails,  child hair, purple eyes, cowboy shot,  | |私がモテないのはどう考えてもお前らが悪い!|田村ゆり|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/xSZxZRcyUh-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/xSZxZRcyUh.png]]|
@@ -48,8 +51,10 @@
 |kuroki tomoko, watashi ga motenai no wa dou kangaetemo omaera ga warui!, school uniform,  cowboy shot, ||私がモテないのはどう考えてもお前らが悪い!|黒木智子|V3版|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/iu8iAiIcgP-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/iu8iAiIcgP.png]]|
 |{{2d cel anime, kuroki tomoko, watashi ga motenai no wa dou kangaetemo omaera ga warui!}}, very aesthetic, best quality, intricate, overall detail, 1 girl, hair over one eye, school uniform, standing, light smile, simple background, front view, cowboy shot, facing the front, straight-on, solo focus, depth of field, highly detailed, |{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, |^|^|V2使用。制服は再現されない。|https://image01.seesaawiki.jp/n/h/nai_ch/sg1eYMlnon.png|
 |}
+[END]
 
 ***　私に天使が舞い降りた！
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |hoshino miyako (wataten), watashi ni tenshi ga maiorita!, brown hair, short hair, hair over one eye, red jacket, red pants, school pull tab, |:3, fang,  |私に天使が舞い降りた！|星野みやこ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/eO0Xwv3LaU-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/eO0Xwv3LaU.png]]|
@@ -58,6 +63,7 @@
 |hoshino hinata, watashi ni tenshi ga maiorita!, loli, one side up, red eyes, short hair, orange blue, fang, blue dress, red bow, long sleeves, solo, cowboy shot,| |私に天使が舞い降りた！|星野ひなた|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cupPIlgSY6-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cupPIlgSY6.png]]|
 |shirosaki hana, watashi ni tenshi ga maiorita!, loli, long hair, hair ornament, hair flower, pink flower, blue eyes, black hair, blue dress, white sailor collar, white sleeves, hair between eyes, sailor dress, red bow,  solo, cowboy shot,| |私に天使が舞い降りた！|白咲花|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/SbqYZwjKdU-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/SbqYZwjKdU.png]]|
 |}
+[END]
 
 ***　私の推しは悪役令嬢。
 {| class="sort edit nanj_prompt_table"
@@ -80,6 +86,7 @@
 |}
 
 ***　ワッチャプリマジ！
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, 2d cel anime, hibino matsuri (primagista), waccha primagi!, idol dress, pink check  dress, cowboy shot, simple background,  ||ワッチャプリマジ！|日比野まつり|V4 Curated|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/7843a446c2ad440a.png)>https://image01.seesaawiki.jp/n/h/nai_ch/7843a446c2ad440a.png]]|
@@ -89,6 +96,7 @@
 |}
 |official style, 2d cel anime, myamu(primagista), waccha primagi!, idol dress, white dress, cowboy shot, simple background,  ||ワッチャプリマジ！|みゃむ|V4 Curated|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/89b9d4cc4ca7c58b.png)>ttps://image01.seesaawiki.jp/n/h/nai_ch/89b9d4cc4ca7c58b.png]]|
 |}
+[END]
 
 ***　ワルキューレの伝説
 {| class="sort edit nanj_prompt_table"
@@ -105,6 +113,7 @@
 |}
 
 ***　ワンパンマン
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, full-color,{{tatsumaki&#40;one-punch man),one-punch man }},,very aesthetic, best quality, intricate, overall detail, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, &#40;highly detailed),|3d,head_out_of_frame,multiple angle,blurry,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,text,error,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,missing fingers,bad hands,missing arms,|ワンパンマン|戦慄のタツマキ|V3使用|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/R8sSjH06JB.png )]]|
@@ -113,8 +122,10 @@
 |tatsumaki,1girl,|big breasts,smile,|ワンパンマン|戦慄のタツマキ|tatsumaki,のみでも出る|https://image02.seesaawiki.jp/n/h/nai_ch/wLfa9XDKX3.png|
 |1girl, nsfw, {{{kaijin hime do-s, bdsm, bondage, respirator, full-harness made of belt, spiked_collar, latex, harness}}}, blonde hair, long hair, black_sclera, heart sign on forehead, black flower hair ornament||ワンパンマン|怪人姫弩S|V4Full使用~~Full版、nsfw推奨~~手袋やブーツ等の細部デザインが安定しない~~キャラ名だけでは出難かったり、拘束衣になる事もある。|https://image02.seesaawiki.jp/n/h/nai_ch/144fb70c6620739c.png|
 |}
+[END]
 
 ***　ワンピース
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |{{{{full-color}}}}, {{nami &#40;one piece), brown eyes, orange long hair}}, {{best quality}}, {{high quality}}, {{amazing quality}}, {{very aesthetic}}, &#40;highly detailed), {{{hi-vision anime}}}, {{{{ultra-high resolution}}}}, overall detail, shiny skin, wet skin, smile, facing the front, sitting posing, solo focus, intricate, outdoors, the beach, ocean||ワンピース|ナミ|V4使用|https://image02.seesaawiki.jp/n/h/nai_ch/9cfbe8d3adff082b.png https://image01.seesaawiki.jp/n/h/nai_ch/fc3f015528137a5b.png|
@@ -130,6 +141,7 @@
 |official style, 2d cel anime, {{nico robin}}, {{one piece}}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ワンピース|ニコ・ロビン|V2使用。|https://image02.seesaawiki.jp/n/h/nai_ch/m1uTUWcky9.png|
 |official style, 2d cel anime, {{nami (one piece)}}, {{one piece}}, very aesthetic, best quality, intricate, overall detail, 1 girl, border bikini, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ワンピース|ナミ|V2使用。顔がルフィみたいになることが多い。|https://image02.seesaawiki.jp/n/h/nai_ch/XfuGyJ75tz.png|
 |}
+[END]
 
 ***　One Room
 {| class="sort edit nanj_prompt_table"

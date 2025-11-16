@@ -707,6 +707,7 @@
 [END]
 
 ***　東京ミュウミュウ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |1boy, quiche (tokyo mew mew), tokyo mew mew, green hair, pointy ears, fangs, yellow eyes, bandages, puffy short sleeves, midriff, ||東京ミュウミュウ|キッシュ|V4 Curated Preview|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/Gn1QVyK6NT-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/Gn1QVyK6NT.png]]|
@@ -717,6 +718,7 @@
 |{{{momomiya ichigo, tokyo mew mew, light gray school uniform, light gray serafuku, long narrow light gray back bow}}}, red eyes, shiny skin, twintails, red bowtie, pleated skirt, long sleeves, black sailor collar, red choker, neck bell, jingle bell, red hair, red hair bow, medium breasts, from side, indoors, classroom, bright pupils, light smile, 1girl, solo, cowboy shot, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}}, |3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, {{{mew (pokemon), pokemon (creature), creature, cat tail, cat ears}}},|東京ミュウミュウ|桃宮いちご（学生服）|V3使用。学生服は自動で出てくるタイプではなかったので、細かくプロンプト指定が必要です。またポケモンのミュウや猫耳や尻尾などが出てくる為、出したくない場合、除外したいプロンプトに入れるなど対応が必要です。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0tnr6EFepz-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/0tnr6EFepz.png]]|
 |official style, mew ichigo, tokyo mew mew, red eyes, cat ears, cat girl, cat tail, pink strapless dress, tail bell, tail bow, pink choker, pendant choker, red footwear, pink puffy detached sleeves, pink hair, pink gloves, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, low of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, |東京ミュウミュウ|ミュウイチゴ|V3使用。mew ichigoとtokyo mew mewと入れるだけである程度出るが、服の色や服装が新旧入り混じり安定しない。またmew ichigoを入れるとポケモンのミュウが出てくる為、そのプロンプトをmomomiya ichigo, tokyo mew mewだけにして後は各服のパーツプロンプトを入れた方がミュウが出ずらくなる。|https://image02.seesaawiki.jp/n/h/nai_ch/MSxM98f0G2.png|
 |}
+[END]
 
 ***　東京レイヴンズ
 {| class="sort edit nanj_prompt_table"
@@ -755,6 +757,7 @@
 [END]
 
 ***　To Heartシリーズ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |komaki manaka (to heart), official style||Toheart2|小牧愛佳|V4.5Full|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/d58e49c001909530-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/d58e49c001909530.png]]|
@@ -777,6 +780,7 @@
 |official style, game cg, {{nagaoka shiho, to heart (series)}}, best quality, intricate, overall detail, 1 girl, brown hair, short hair, brown eyes, school uniform, serafuku, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |To Heart|長岡志保|V3使用。安定しない。表情を工夫すればもっとらしくなるはず。|https://image01.seesaawiki.jp/n/h/nai_ch/0Na6h9rpSl.png|
 |official style, game cg, kamigishi akari, to heart, best quality, intricate, overall detail, 1 girl, red eyes, hairband, school uniform, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |To Heart|神岸あかり|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/NniBGZBQb3.png|
 |}
+[END]
 
 ***　[[東方Project>版権キャラ再現/東方Project]]
 →[[版権キャラ再現/東方Project]]
@@ -791,6 +795,7 @@
 |}
 
 ***　時々ボソッとロシア語でデレる隣のアーリャさん
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, anime coloring, sarashina chisaki, tokidoki bosotto roshia-go de dereru tonari no arya-san, very aesthetic, best quality, intricate, overall detail, tachi-e, character study, the characters are the central focus of this image, transparent background, 1girl, black hair, black eyes, school uniform, green bowtie, white socks, loafers, standing, hands on own hip, smile, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |時々ボソッとロシア語でデレる隣のアーリャさん|更科茅咲|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/ZtL_f6o3fq.png|
@@ -802,8 +807,10 @@
 |official style, anime coloring, alisa mikhailovna kujou, tokidoki bosotto roshia-go de dereru tonari no arya-san, very aesthetic, best quality, intricate, overall detail, 1girl, blue eyes, school uniform, white thighhighs, standing, frown, crossed arms, simple background, facing away, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |時々ボソッとロシア語でデレる隣のアーリャさん|アリサ・ミハイロヴナ・九条|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/Sz2mJ_PDcV.png|
 |official style, anime coloring, alisa mikhailovna kujou, tokidoki bosotto roshia-go de dereru tonari no arya-san, very aesthetic, best quality, intricate, overall detail, 1girl, blue eyes, school uniform, white thighhighs, standing, simple background, facing away, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |^|^|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/kTDeNHD016.png|
 |}
+[END]
 
 ***　ときめきメモリアルシリーズ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |kisaragi mio, tokimeki memorial 1, girl, green hair, wispy bangs, long hair, low-tied twintails, hair over shoulder, glasses, aqua-framed eyewear, green eyes, medium breasts, clothed female, kirameki high school uniform, blue serafuku, winter uniform, yellow bowtie, skirt, white socks, loafers, standing, smile, full body,|lowres, aliasing, kiyokawa nozomi,|ときめきメモリアル|如月未緒|V4 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/q0sUx7Epcr.png|
@@ -817,6 +824,7 @@
 |official style, game cg, asahina yuko, tokimeki memorial 1, very aesthetic, best quality, intricate, overall detail, 1 girl, red hair, medium hair, red eyes, school uniform, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, asahina mikuru, fujisaki shiori,|ときめきメモリアル|朝日奈夕子|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/56FQZimHb8.png|
 |official style, game cg, fujisaki shiori, tokimeki memorial 1, very aesthetic, best quality, intricate, overall detail, 1 girl, red eyes, school uniform, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body,|ときめきメモリアル|藤崎詩織|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/aCdA4rVoS6.png|
 |}
+[END]
 
 ***　Dr.スランプ
 {| class="sort edit nanj_prompt_table"
@@ -1031,6 +1039,7 @@
 |solo, {{{{kotegawa yui}}}}, to love-ru, medium hair, black straight hair {{{{very long sidelocks}}}}, light brown eyes, {{{tareme}}}, school uniform, &#91;&#91;&#91;&#91;angry&#93;&#93;&#93;&#93;,| |^|^||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/lM_bB1fG0l-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/lM_bB1fG0l.png]]|
 |}
 [END]
+
 ***　ドラゴンズクラウン
 {| class="sort edit nanj_prompt_table"
 |~w(200px):プロンプト|~w(200px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1104,9 +1113,4 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
-
-
-
-
-
 
