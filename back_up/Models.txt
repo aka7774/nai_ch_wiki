@@ -14,6 +14,8 @@ SD1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - 軽量かつ古いため低性能
 - 欠陥のあるVAE(アーティファクトが発生したり特殊なノイズに弱かったりする)
 - 文章は全く生成できない
+- Text EncoderはCLIP-L
+-- 最低限の性能でプロンプトの応答性が低い
 
 *** SD2
 SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
@@ -32,17 +34,19 @@ SDXL Base 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - BaseとRefinerの二種類が存在する(通常はBaseのみでok)
 - 基礎解像度の1024x1024への変更とVAEの改良によりディティールが改善
 -- 特殊なノイズの影響を受けにくい
-- 文章は生成できない
+- Text EncoderはCLIP-LとCLIP-G
+-- 平凡な性能で具体的な命令を無視する
 
 *** SD3.0
 https://huggingface.co/stabilityai/stable-diffusion-3-medium
 - MMDiTアーキテクチャ
 - Medium(2.5B)のみ
 - 基礎解像度は1024x1024
-- VAEの改良によりディティールが大幅改善(だが重い)
+- 16チャネルVAE(重い)
+- Text EncoderはCLIP L/Gに加えてT5XXL(任意)
+-- 位置や文字の描写などの具体的な命令もOK
 - 表現規制がきつく解剖がおかしくなる欠陥あり
-- 文章を正しく生成できる
-- NSFW禁止
+- 実質NSFW禁止
 
 *** SD3.5
 Large: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
@@ -51,9 +55,10 @@ Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - Large(8.1B)とMedium(2.6B)の二種類がある
 - 基礎解像度は1024x1024
 - MediumはT5を除けばSDXLと同程度のメモリ使用量だが、計算はSDXLの二倍遅い。Largeはメモリ使用量、計算量ともに非常に多い。
-- 使うには、モデル本体に加えてCLIP L/Gが必要。T5XXLは任意
+- Text EncoderはCLIP L/Gに加えてT5XXL(任意)
+-- 位置や文字の描写などの具体的な命令もOK
 - 規制の緩和とSD3.0の問題を解消
-- NSFW禁止
+- 実質NSFW禁止
 - パラメータ効率が低い
 
 ** ほかのText-to-Imageモデル
@@ -63,8 +68,8 @@ dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - DiTアーキテクチャ
 - DevとSchnellの二種類がある
-- 使うには、モデル本体に加えてCLIP LとT5XXLが必要
-- 文章を正しく生成できる
+- Text EncoderはCLIP LとT5XXL
+-- 位置や文字の描写などの具体的な命令もOK
 - 蒸留モデル(Fine-tuningが困難らしい)
 -- 故に品質はそこまで高くない？
 - SD3と同様の16チャネルVAE
@@ -81,6 +86,7 @@ https://huggingface.co/HiDream-ai/HiDream-I1-Full
 - パラメータ数17Bの超巨大モデルでFLUX.1超えの品質と計算量
 -- Block Swapを使わないときつい
 - TEはCLIP-L/GとT5XXLに加えてLlama 3.1を使用する
+-- 位置や文字の描写などの具体的な命令もOK
 
 *** Qwen-Image
 https://huggingface.co/Qwen/Qwen-Image
@@ -89,9 +95,26 @@ https://huggingface.co/Qwen/Qwen-Image
 -- Block Swapを使わないときつい
 - VAEのデコーダーはデュアル
 - TEはQwen-VL
-- 文字の描写が得意
+-- 位置や文字の描写などの具体的な命令もOK
+-- 文字の描写が得意
 -- 漢字もOK
 - Apache 2.0 ライセンス
+
+*** Lumina-Image
+https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
+- MMDiT
+- パラメータ数はSDXLより小さい2Bで比較的軽量
+-- でもSDXLより3倍以上遅い
+- Text EncoderにはGemmaを採用
+-- 位置や文字の描写などの具体的な命令もOK
+- SDXLよりは良いがパラメータ数が大きいSD3.5 LargeやQwen-Imageには及ばない
+- Apache 2.0ライセンス
+- 16チャネルVAE
+
+- DiTモデルでは軽量な方なためかアニメに特化したFTモデルがある: https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
+-- 現状完成されたSDXLベースのアニメモデルのほうがいい。かつてのSDXLのように、さらなるFine-tuningで改善の余地あり
+-- 細部はSDXLより良い
+-- NSFWになったとたん品質が著しく低下する
 
 * predictionの種類
 ※間違っている可能性あり。間違っていたら修正してください。
