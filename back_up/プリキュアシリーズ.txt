@@ -178,6 +178,11 @@
 ***　ハピネスチャージプリキュア!
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|oresky, happinesscharge precure!, boy, military uniform, cap, jacket, pants, boots, gloves, standing, full body, ||ハピネスチャージプリキュア!|オレスキー|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/a368f13d24ea0084.png|
+|namakeruda, happinesscharge precure!, boy, top hat, coat, pants, white gloves, shoes, holding cane, standing, full body, ||ハピネスチャージプリキュア!|ナマケルダ|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b0b4a7d07b7aadac.png|
+|hosshiwa, happinesscharge precure!, girl, hat, pink dress, capelet, bubble skirt, striped pantyhose, shoes, closed umbrella, standing, full body, ||ハピネスチャージプリキュア!|ホッシーワ|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a758c4794a923c46.png|
+|blue (happinesscharge precure!), happinesscharge precure!, boy, shirt, pants, shoes, standing, full body, ||ハピネスチャージプリキュア!|ブルー|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/4008ba764b0ca0f9.png|
+|sagara seiji, happinesscharge precure!, boy, gakuran, shirt, pants, shoes, standing, full body, ||ハピネスチャージプリキュア!|相楽誠司|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/039c613dcdb0b0c2.png|
 |phantom (happinesscharge precure!), happinesscharge precure!, boy, white coat, black pants, shoes, standing, full body,||ハピネスチャージプリキュア!|ファントム|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/1b69d08f0f642b0f.png|
 |official style, anime coloring, {{{{international precure, cure southern cross}}}}, happinesscharge precure!, very aesthetic, best quality, intricate, overall detail, 1 girl, brown hair, short hair, red eyes, large breasts, magical girl, heart hair ornament, heart brooch, red ascot, frills, vest, white gloves, red skirt, white boots, standing, white background, facing the front, straight-on, close to viewer, full body, solo focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated,|ハピネスチャージプリキュア!|キュアサザンクロス|V4 Curated Preview版使用。インターナショナルプリキュアの中では再現しやすい方。それでも何回か試行する必要がある。|https://image01.seesaawiki.jp/n/h/nai_ch/L31zj2V7JR.png|
 |official style, anime coloring, cure tender, hikawa maria, happinesscharge precure! very aesthetic, best quality, intricate, overall detail, nsfw, 1girl, adult, light-purple hair, high ponytail, wide ponytail, purple eyes, medium breasts, magical girl, battle costume, heart hair ornament, heart brooch, yellow bowtie, short sleeves, black vest, white arm warmers, purple skirt, pencil long skirt, white boots, standing, white background, looking at viewer, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, {{{{cure fortune, hikawa iona}}}},|ハピネスチャージプリキュア!|キュアテンダー|V4 Curated Preview版使用。それほど精度は良くない。|https://image02.seesaawiki.jp/n/h/nai_ch/a59qFRqeQb.png|
@@ -439,6 +444,8 @@
 |cure wink, aokaze nana,kimi to idol precure, girl, blue hair, purple eyes, standing, smile, straight-on, full body, close-up, character focus,||キミとアイドルプリキュア♪|キュアウインク|V4.5 Curated版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/f85b46e3649a626d.png|
 |cure idol, sakura uta (precure) , kimi to idol precure, girl, blonde hair, blue eyes, standing, smile, straight-on, full body, close-up, character focus, ||キミとアイドルプリキュア♪|キュアアイドル|V4.5 Curated版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/8d8be34bdf9263b6.png|
 |}
+
+
 
 
 
