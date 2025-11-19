@@ -223,13 +223,23 @@ def thread_slug(title: str) -> str:
 
 
 def extract_thread_number(title: str) -> t.Optional[int]:
+    if not title:
+        return None
+    star_match = re.search(r"★\s*(\d+)", title)
+    if star_match:
+        try:
+            return int(star_match.group(1))
+        except ValueError:
+            pass
     digits = re.findall(r"(\d+)", title)
     if not digits:
         return None
-    try:
-        return int(digits[-1])
-    except ValueError:
-        return None
+    for chunk in reversed(digits):
+        try:
+            return int(chunk)
+        except ValueError:
+            continue
+    return None
 
 
 def find_previous_thread_url(text: str) -> t.Optional[str]:
@@ -260,20 +270,36 @@ class ThreadBackupManager:
             self._bootstrap_from_latest_file()
 
         threads = self.state["threads"]
+        snapshot_metas = [ThreadMeta.from_dict(meta) for meta in threads.values()]
+        latest_primary_number = self._latest_primary_number(snapshot_metas)
         for dat_id, raw_meta in list(threads.items()):
             meta = ThreadMeta.from_dict(raw_meta)
             if meta.status == "archived" and not refetch:
-                continue
+                is_latest_primary = (
+                    latest_primary_number is not None
+                    and meta.number == latest_primary_number
+                    and self._is_primary_thread(meta)
+                    and not meta.next_url
+                )
+                if not is_latest_primary:
+                    continue
             self._fetch_and_store(meta)
             threads[dat_id] = meta.to_dict()
-            if meta.post_count >= 1000:
-                meta.status = "archived"
-            elif meta.post_count >= search_threshold:
+            if meta.post_count >= search_threshold:
                 new_threads = self._discover_next_threads(meta)
                 for new_meta in new_threads:
                     self._fetch_and_store(new_meta)
+                    if (
+                        meta.number
+                        and new_meta.number
+                        and new_meta.number == meta.number + 1
+                        and not meta.next_url
+                    ):
+                        meta.next_url = new_meta.normalized_url
                     threads[new_meta.dat_id] = new_meta.to_dict()
                     time.sleep(DEFAULT_SLEEP_SECONDS)
+            if meta.post_count >= 1000:
+                meta.status = "archived"
             threads[dat_id] = meta.to_dict()
             time.sleep(DEFAULT_SLEEP_SECONDS)
 
@@ -348,8 +374,9 @@ class ThreadBackupManager:
         meta.title = payload.get("thread", [None, None, None, None, None, ""])[5]
         meta.post_count = len(comments)
         meta.last_fetched_at = dt.datetime.utcnow().isoformat() + "Z"
-        if not meta.number:
-            meta.number = extract_thread_number(meta.title)
+        number_from_title = extract_thread_number(meta.title or "")
+        if number_from_title:
+            meta.number = number_from_title
         if comments:
             first_timestamp = comments[0][3] if len(comments[0]) > 3 else None
             if first_timestamp:
@@ -423,6 +450,19 @@ class ThreadBackupManager:
                     fh.write(canonical + "\n")
         return discovered
 
+    def _is_primary_thread(self, meta: ThreadMeta) -> bool:
+        if meta.number is None:
+            return False
+        if meta.number > 10000:
+            return False
+        return "なんJNVA部" in (meta.title or "")
+
+    def _latest_primary_number(self, metas: list[ThreadMeta]) -> t.Optional[int]:
+        numbers = [m.number for m in metas if self._is_primary_thread(m)]
+        if not numbers:
+            return None
+        return max(numbers)
+
     def _should_update_latest(self, candidate_number: int) -> bool:
         metas = [ThreadMeta.from_dict(meta) for meta in self.state.get("threads", {}).values()]
         numbers = [m.number for m in metas if m.number]
@@ -435,14 +475,7 @@ class ThreadBackupManager:
         if not metas:
             return
 
-        def is_primary_thread(meta: ThreadMeta) -> bool:
-            if meta.number is None:
-                return False
-            if meta.number > 10000:
-                return False
-            return "なんJNVA部" in (meta.title or "")
-
-        eligible = [m for m in metas if is_primary_thread(m)]
+        eligible = [m for m in metas if self._is_primary_thread(m)]
         if eligible:
             latest = max(eligible, key=lambda m: m.number or 0)
         else:

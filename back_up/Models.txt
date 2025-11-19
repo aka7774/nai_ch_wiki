@@ -80,19 +80,11 @@ schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - クローズソース
 - アニメイラスト(Danbooru)生成に特化
 
-*** HiDreami-I1
-https://huggingface.co/HiDream-ai/HiDream-I1-Full
-- Sparse DiTアーキテクチャ
-- パラメータ数17Bの超巨大モデルでFLUX.1超えの品質と計算量
--- Block Swapを使わないときつい
-- TEはCLIP-L/GとT5XXLに加えてLlama 3.1を使用する
--- 位置や文字の描写などの具体的な命令もOK
-
 *** Qwen-Image
 https://huggingface.co/Qwen/Qwen-Image
 - MMDiTアーキテクチャ
-- パラメータ数はHiDreamをも上回る20Bですさまじい計算量
--- Block Swapを使わないときつい
+- パラメータ数は20Bですさまじい計算量
+-- ハイエンドGPUでもBlock Swapを使わないときつい
 - VAEのデコーダーはデュアル
 - TEはQwen-VL
 -- 位置や文字の描写などの具体的な命令もOK
@@ -104,17 +96,21 @@ https://huggingface.co/Qwen/Qwen-Image
 https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 - MMDiT
 - パラメータ数はSDXLより小さい2Bで比較的軽量
--- でもSDXLより3倍以上遅い
+-- でもSDXLより4倍遅い
 - Text EncoderにはGemmaを採用
--- 位置や文字の描写などの具体的な命令もOK
-- SDXLよりは良いがパラメータ数が大きいSD3.5 LargeやQwen-Imageには及ばない
+-- 位置や文字の描写などの具体的な命令もOK(文字は得意ではない)
+- SDXLよりは良いがパラメータ数が圧倒的に大きいSD3.5 Large(8.1B)やQwen-Image(20B)には及ばない
 - Apache 2.0ライセンス
 - 16チャネルVAE
 
-- DiTモデルでは軽量な方なためかアニメに特化したFTモデルがある: https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
--- 現状完成されたSDXLベースのアニメモデルのほうがいい。かつてのSDXLのように、さらなるFine-tuningで改善の余地あり
--- 細部はSDXLより良い
--- NSFWになったとたん品質が著しく低下する
+*** NetaYume Lumina (Lumina-Imageの派生)
+https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
+- Lumina-Image 2をFine-tuningしたDanbooruタグ対応のアニメモデル
+- 現状完成されたSDXLベースのアニメモデルのほうがいい。
+-- 時々非常に美しい絵が出ることから可能性を感じる。かつてのSDXLのように、さらなるFine-tuningで改善の余地あり
+- 絵師タグが無いとベースモデルらしく不安定
+- 細部、色、ライティングはSDXLより明確に良い
+- NSFWになったとたん品質が著しく低下する傾向がある
 
 * predictionの種類
 ※間違っている可能性あり。間違っていたら修正してください。
