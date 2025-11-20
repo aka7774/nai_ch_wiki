@@ -10,8 +10,8 @@
 SD1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - U-Netアーキテクチャ
 - 860M(8.6億)パラメータ
-- 基礎解像度は512x512
-- 軽量かつ古いため低性能
+- 解像度は512x512のみ
+- 超軽量かつとても古いため低性能
 - 欠陥のあるVAE(アーティファクトが発生したり特殊なノイズに弱かったりする)
 - 文章は全く生成できない
 - Text EncoderはCLIP-L
@@ -22,7 +22,7 @@ SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 - U-Netアーキテクチャ
 - 865M(8.65億)パラメータ
 - 基礎解像度は768x768
-- SD1と大差無し
+- ''SD1と大差無し''
 - 使うためにはconfigファイル(yaml)を設置する必要がある。
 - 大抵はモデルの配布元が配っている。
 -- 無い場合は SD2.xのyamlを使ってみるとか。
@@ -42,7 +42,8 @@ https://huggingface.co/stabilityai/stable-diffusion-3-medium
 - MMDiTアーキテクチャ
 - Medium(2.5B)のみ
 - 基礎解像度は1024x1024
-- 16チャネルVAE(重い)
+- 16チャネルVAE
+-- ディティールが大きく改善
 - Text EncoderはCLIP L/Gに加えてT5XXL(任意)
 -- 位置や文字の描写などの具体的な命令もOK
 - 表現規制がきつく解剖がおかしくなる欠陥あり
@@ -58,7 +59,7 @@ Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - Text EncoderはCLIP L/Gに加えてT5XXL(任意)
 -- 位置や文字の描写などの具体的な命令もOK
 - 規制の緩和とSD3.0の問題を解消
-- 実質NSFW禁止
+-- でもライセンスにより実質NSFW禁止
 - パラメータ効率が低い
 
 ** ほかのText-to-Imageモデル
@@ -66,51 +67,51 @@ Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 *** FLUX.1
 dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
-- DiTアーキテクチャ
+- MMDiT
+- パラメータ数は12Bで重い
 - DevとSchnellの二種類がある
 - Text EncoderはCLIP LとT5XXL
 -- 位置や文字の描写などの具体的な命令もOK
 - 蒸留モデル(Fine-tuningが困難らしい)
 -- 故に品質はそこまで高くない？
-- SD3と同様の16チャネルVAE
+- 16チャネルVAE
 
 *** NovelAI Diffusion V4
-- U-netアーキテクチャ
+- U-net
 - Text EncoderはT5
 - クローズソース
 - アニメイラスト(Danbooru)生成に特化
 
 *** Qwen-Image
 https://huggingface.co/Qwen/Qwen-Image
-- MMDiTアーキテクチャ
-- パラメータ数は20Bですさまじい計算量
+- MMDiT
+- パラメータ数は20Bですさまじいメモリ使用量と計算量
 -- ハイエンドGPUでもBlock Swapを使わないときつい
 - VAEのデコーダーはデュアル
 - TEはQwen-VL
 -- 位置や文字の描写などの具体的な命令もOK
--- 文字の描写が得意
--- 漢字もOK
+-- 漢字を含む文字の描写が得意
 - Apache 2.0 ライセンス
 
 *** Lumina-Image
 https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 - MMDiT
-- パラメータ数はSDXLより小さい2Bで比較的軽量
+- パラメータ数はSDXLより小さい2BでSDXL程度のメモリ使用量
 -- でもSDXLより4倍遅い
-- Text EncoderにはGemmaを採用
--- 位置や文字の描写などの具体的な命令もOK(文字は得意ではない)
+- Text EncoderにはGemma 2 2Bを採用
+-- 位置や文字の描写などの具体的な命令もOK(大型モデルほど得意ではない)
 - SDXLよりは良いがパラメータ数が圧倒的に大きいSD3.5 Large(8.1B)やQwen-Image(20B)には及ばない
 - Apache 2.0ライセンス
 - 16チャネルVAE
 
 *** NetaYume Lumina (Lumina-Imageの派生)
 https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
-- Lumina-Image 2をFine-tuningしたDanbooruタグ対応のアニメモデル
+- Lumina-Image 2をFine-tuningしたDanbooruタグと自然言語(日英中)対応のアニメモデル
 - 現状完成されたSDXLベースのアニメモデルのほうがいい。
 -- 時々非常に美しい絵が出ることから可能性を感じる。かつてのSDXLのように、さらなるFine-tuningで改善の余地あり
 - 絵師タグが無いとベースモデルらしく不安定
 - 細部、色、ライティングはSDXLより明確に良い
-- NSFWになったとたん品質が著しく低下する傾向がある
+- NSFWになったとたん品質が低下する傾向がある
 
 * predictionの種類
 ※間違っている可能性あり。間違っていたら修正してください。
@@ -215,13 +216,13 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 ** bf16/bfloat16
 - 1ビットの符号と8ビットの指数部と7ビットの仮数部
 - fp32と指数部が一緒になる（ダイナミックレンジが広い代わりに仮数部が減ってるので小数点以下の表現力はfp16より少し落ちる）
-- IntelとNVIDIAのGPUで対応している(AMDはRDNA3以降で対応？)
-- fp16よりNaN演算を起こしづらい
+- IntelとNVIDIA(Ampere以降)のGPUで対応している(AMDはRDNA3以降で対応？)
 
 ** fp8(float8_e4m3fn)
 - 1ビットの符号と4ビットの指数部と3ビットの仮数部(ほかにもある)
 - fp16の半分のメモリ使用量
 - だが精度も落ちる
+-- fp8 scaledならfp16相当の精度
 - Torchが自動でキャストするので非対応のGPUでも動作する。
 - NVIDIAのRTX40以降であればそのまま動いて速くなる(TensorRTが必要?)
 -- しかしほとんどのソフトがfp8演算に非対応でfp16にアップキャストするので若干遅くなる。

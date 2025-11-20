@@ -52,6 +52,11 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-11-20 AI生成画像を無断で使用した男が著作権法違反で書類送検される
+-[[「AI生成画は著作物」、無断複製の疑いで男を書類送検へ…千葉県警が全国初の摘発 : 読売新聞>https://www.yomiuri.co.jp/national/20251120-OYT1T50016/]]
+-[[生成AIで作った画像を無断複製の疑い、27歳男を書類送検…「著作権あり」として初の摘発 : 読売新聞>https://www.yomiuri.co.jp/national/20251120-OYT1T50104/]]
+これらの報道を受け、スレではAI生成の画像と著作権についての議論が活発になった。
+
 **2025-10-28 Grok、動画生成のNSFW規制を大幅強化
 正式な告知はないが、胸を露出した画像でi2vできなくなった、以前は動画生成された画像が通らなくなったなどの報告が相次いだ。
 
@@ -1114,6 +1119,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
