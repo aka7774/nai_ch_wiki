@@ -1,5 +1,10 @@
 #contents
 
+* reForgeなどの他のUIを使う
+1111のWebUIを速くする方法でこれを書くのは本末転倒だが、ほかのUIを使ったほうがいい。
+AUTOMATIC1111のWebUIは最適化不足で遅い。しかも1111氏の失踪により開発が長期間停止しているので今後の改善もないだろう。
+いっそのこと、一部の互換性のないExtensionのために1111WebUI残しておいて、メインのWebUIは比較的新しいreForge、または最新かつ最適化されたComfyUIに乗り換えるべき。
+
 * 収束の高速化
 いわゆる「蒸留」で少ないステップ数で収束させ、Guidance Scaleとアンコンディショニングの計算を不要にすることで高速化する。
 それと引き換えに品質が低下し画風が変化する。
@@ -16,11 +21,6 @@ https://huggingface.co/tianweiy/DMD2
 *** TDD(Target-Driven Distillation)
 https://huggingface.co/RED-AIGC/TDD
 
-* reForgeなどの他のUIを使う
-1111のWebUIを速くする方法でこれを書くのは本末転倒だが、ほかのUIを使う手がある。
-AUTOMATIC1111のWebUIは最適化不足でやや遅い。しかも1111氏の失踪により開発が停止しているので今後の改善もおそらくない。
-いっそのこと、一部の互換性のないExtensionのために1111WebUI残しておいて、メインのWebUIは現在も活発に開発中のreForgeに乗り換えるべき。
-
 * GPU使用率
 画像生成速度には、GPU使用率が大きく影響する。
 アスカベンチで同じグラボの他人の結果より明らかに遅い場合、なんらかの原因でGPUがフルに使われていない可能性もある。
@@ -31,14 +31,24 @@ AUTOMATIC1111のWebUIは最適化不足でやや遅い。しかも1111氏の失�
 ちなみに、速度に比例してCPUのシングルスレッド性能の影響が大きくなる。旧世代CPUを使っているなら最新世代のCPUに買い替えるのもあり。
 
 * Cross-attentionの最適化による高速化
+
+** SDP(Scaled dot product attention)
+PyTorchのアテンション最適化機能。
+高速化とVRAM消費減少効果がある。
+有効にするには、Settings->Optimizations->Cross attention optimizationでsdpを選ぶ。ComfyUIならコマンドライン引数に--use-pytoch-cross-attentionをつける。reForgeなら--disable-xformersと--attention-pytorchをつける。
+xformersと併用、共存はできない。
+速度もメモリ消費もxformersと同じで基本的にはこちらを使えばいい。
+
 ** xformers
 Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減少効果がある。
 インストールは1111の標準機能で簡単にできる。
-このオプションをつけるとわずかに出力内容が変化し、常に同じ結果にならない。なお、最近のバージョンはこの動作が修正されている。
-とはいえ体感できるか難しいほど小さい変化のため気にする必要はない。
+spdaと差はないのでわざわざ入れる必要はない。
 
+[+]古い情報
+古いxofrmersはわずかに出力内容が変化し、常に同じ結果にならない。
 変化の検証ページ作ったので記録はこちらへ
 →「[[xformersの検証]]」
+[END]
 
 *** 対応GPU
 - NVIDIA
@@ -59,18 +69,17 @@ venvを削除してからWebUIを起動する手もあり
 
 Torchバージョンが1111のデフォルトではない場合/Radeonの場合
 [[ここ>>https://github.com/facebookresearch/xformers/releases]]で対応するTorchバージョンを確認してから、「pip install xformers==x.x.x」でインストールする。
-** SDP(Scaled dot product attention)
-2023年3月上旬にcommitされたらしい
-xformersと特徴は同じ。わずかに絵が変化する代わりに2割程度速くなる。
-有効にするには、Settings->Optimizations->Cross attention optimizationでsdpかsdp-no-memを選ぶ。
-sdpのほうは出力の揺らぎが大きいかもしれない。
-xformersと併用、共存はできない。
-xformersよりVRAM使用量が増えるため、学習や高解像度生成時には注意
 
-** Sage Attention
+
+** Sage Attention(1111非対応)
 1111は古いため非対応。ComfyUIやForge Classicなどが対応。
 量子化ベースの技術のため品質が低下する？
+Attentionの使用量が多いDiTモデルで効果的。
 RTX30以降が必要。
+
+* TeaCache(Timestep Embedding Aware Cache)
+1111は非対応。多くのDiTモデルに対応。
+変化が小さくなる推論の後半で出力の差分をキャッシュして使い回す。わずかに品質が低下する。ComfyUIであればカスタムノードがある。
 
 * --opt-channelslast
 
@@ -103,7 +112,7 @@ VRAM消費を減らす効果がある。速度も向上するかも。
 * モデルを軽量化する
 2024年現在、fp16,pruned,safetensorsでの配布(=すでに軽量化された状態)が主流になった。
 
-[+] 古い情報
+[+] 古い情報(2023)
 
 - ckptとvae.ptをsafetensorsに変換する
 -- 最近はckptよりsafetensorsで配布するほうが主流になった。
