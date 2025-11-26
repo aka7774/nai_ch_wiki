@@ -4,6 +4,7 @@
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
+||矢吹|||
 |alexa_mahone, |荒草まほん|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/20dc55caa6f62787.png|
 |watsuki ayamo, |わつきるみ|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/1e13cdd60af7bd99.png|
 |{{tsukushi akihito}},|つくしあきひと|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/0321a38ce713d93d.png|

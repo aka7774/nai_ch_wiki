@@ -52,6 +52,21 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-11-25 Black Forest Labs、FLUX.2を発表
+-FLUX.2[dev]モデルのダウンロード：https://huggingface.co/black-forest-labs/FLUX.2-dev
+-FLUX.2の概要：https://bfl.ai/blog/flux-2
+-FLUX.2のリリース記事：https://docs.bfl.ai/flux_2/flux2_overview
+オープンウェイトモデルはFLUX.2[dev]（32B）とFLUX.2[Klein]（Kleinは近日公開）。
+おもな変更点は以下の通り。
+-最大10枚の画像を参照可能に（[dev]は最大6枚）
+-より詳細な画像を出力
+-テキストのレンダリング強化
+-プロンプト理解の強化
+-現実世界の理解を強化
+-最大400万画素（2048×2048など）の解像度で画像を編集可能に
+-RGB16進数で色を指定可能に
+-構造化されたプロンプトを指定可能に
+
 **2025-11-21 Google、Nano Banana Proを発表
 -[[Nano Banana Proを発表: Gemini 3 Pro Image model from Google DeepMind>https://blog.google/intl/ja-jp/company-news/technology/nano-banana-pro/]]
 Nano Bananaと比較して日本語の表現力がアップしたほか、インフォグラフィックの作成、最大14枚の画像をもとにした画像生成、縦横比の自然な変更、色調の変更なども可能。
@@ -1123,6 +1138,10 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
+
 
 
 
