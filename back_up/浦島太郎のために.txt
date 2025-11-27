@@ -52,6 +52,12 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-11-26 Alibaba、Z-Image-Turboを発表
+https://modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo
+パラメータ数6Bの画像生成モデル。ベースモデルのZ-Image-Baseと画像編集用のZ-Image-Editも発表された（いずれも公開は近日中）。
+ComfyUIが対応。
+https://comfyanonymous.github.io/ComfyUI_examples/z_image/
+https://huggingface.co/Comfy-Org/z_image_turbo
 **2025-11-25 Black Forest Labs、FLUX.2を発表
 -FLUX.2[dev]モデルのダウンロード：https://huggingface.co/black-forest-labs/FLUX.2-dev
 -FLUX.2の概要：https://bfl.ai/blog/flux-2
@@ -66,6 +72,8 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 -最大400万画素（2048×2048など）の解像度で画像を編集可能に
 -RGB16進数で色を指定可能に
 -構造化されたプロンプトを指定可能に
+city96氏によるggufモデル
+https://huggingface.co/city96/FLUX.2-dev-gguf/tree/main
 
 **2025-11-21 Google、Nano Banana Proを発表
 -[[Nano Banana Proを発表: Gemini 3 Pro Image model from Google DeepMind>https://blog.google/intl/ja-jp/company-news/technology/nano-banana-pro/]]
@@ -1138,6 +1146,8 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
 
 
 
