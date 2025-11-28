@@ -5,8 +5,8 @@
 広義では、HypernetworkやLoraで作成したファイルなども含まれるが、ここではいわゆるCheckpointの話をする。
 2025年8月時点で依然としてSDXLが主流。次世代DiTモデルはFine-tuningが難しいとされる上、パラメータ数が増加して重くなるばかり。そのため、この状況が変わらない限り変化はないだろう。
 
-** Stable Diffusionのバージョン
-*** SD1
+* Stable Diffusion
+** SD1
 SD1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - U-Netアーキテクチャ
 - 860M(8.6億)パラメータ
@@ -17,7 +17,7 @@ SD1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Text EncoderはCLIP-L
 -- 最低限の性能でプロンプトの応答性が低い
 
-*** SD2
+** SD2
 SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 - U-Netアーキテクチャ
 - 865M(8.65億)パラメータ
@@ -27,19 +27,19 @@ SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 - 大抵はモデルの配布元が配っている。
 -- 無い場合は SD2.xのyamlを使ってみるとか。
 
-*** SDXL
+** SDXL
 SDXL Base 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - U-Netアーキテクチャ
-- 2.6B(26億)パラメータ
+- 2.6B(26億)パラメータ(あるいは3.5B?)
 - BaseとRefinerの二種類が存在する(通常はBaseのみでok)
 - 基礎解像度の1024x1024への変更とVAEの改良によりディティールが改善
 -- 特殊なノイズの影響を受けにくい
 - Text EncoderはCLIP-LとCLIP-G
 -- 平凡な性能で具体的な命令を無視する
 
-*** SD3.0
+** SD3.0
 https://huggingface.co/stabilityai/stable-diffusion-3-medium
-- MMDiTアーキテクチャ
+- MMDiT
 - Medium(2.5B)のみ
 - 基礎解像度は1024x1024
 - 16チャネルVAE
@@ -49,10 +49,10 @@ https://huggingface.co/stabilityai/stable-diffusion-3-medium
 - 表現規制がきつく解剖がおかしくなる欠陥あり
 - 実質NSFW禁止
 
-*** SD3.5
+** SD3.5
 Large: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
-- MMDiTアーキテクチャ
+- MMDiT
 - Large(8.1B)とMedium(2.6B)の二種類がある
 - 基礎解像度は1024x1024
 - MediumはT5を除けばSDXLと同程度のメモリ使用量だが、計算はSDXLの二倍遅い。Largeはメモリ使用量、計算量ともに非常に多い。
@@ -62,9 +62,9 @@ Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 -- でもライセンスにより実質NSFW禁止
 - パラメータ効率が低い
 
-** ほかのText-to-Imageモデル
+* ほかのText-to-Imageモデル
 
-*** FLUX.1
+** FLUX.1
 dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - MMDiT
@@ -76,13 +76,21 @@ schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 -- 故に品質はそこまで高くない？
 - 16チャネルVAE
 
-*** NovelAI Diffusion V4
+** FLUX.2
+dev: https://huggingface.co/black-forest-labs/FLUX.2-dev
+- APIのみのpro,flexとオープンなdev,kleinの四種類ある(kleinは近日公開)
+- MMDiT
+- パラメータ数は32Bで素の状態ではほとんどの一般消費者向けハードウェアで動作困難
+-- 量子化やBlock Swapを使ってもなおメモリ消費が非常に多い
+- ベンチマークスコアは高い(なおメモリ消費量)
+
+** NovelAI Diffusion V4
 - U-net
 - Text EncoderはT5
 - クローズソース
 - アニメイラスト(Danbooru)生成に特化
 
-*** Qwen-Image
+** Qwen-Image
 https://huggingface.co/Qwen/Qwen-Image
 - MMDiT
 - パラメータ数は20Bですさまじいメモリ使用量と計算量
@@ -93,7 +101,16 @@ https://huggingface.co/Qwen/Qwen-Image
 -- 漢字を含む文字の描写が得意
 - Apache 2.0 ライセンス
 
-*** Lumina-Image
+** Z-Image
+https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- MMDiT
+- パラメータ数6Bでやや重い
+- パラメータ数のわりに高品質
+- TEはパラメータ効率のいいQwen3-4B
+-- 位置や文字の描写などの具体的な命令もOKで応答性が高い
+- TurboはDMDRで蒸留した収束が速いモデル
+
+** Lumina-Image
 https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 - MMDiT
 - パラメータ数はSDXLより小さい2BでSDXL程度のメモリ使用量
@@ -104,7 +121,7 @@ https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 - Apache 2.0ライセンス
 - 16チャネルVAE
 
-*** NetaYume Lumina (Lumina-Imageの派生)
+*** NetaYume Lumina
 https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
 - Lumina-Image 2をFine-tuningしたDanbooruタグと自然言語(日英中)対応のアニメモデル
 - 現状完成されたSDXLベースのアニメモデルのほうがいい。
