@@ -63,6 +63,7 @@ Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - パラメータ効率が低い
 
 * ほかのText-to-Imageモデル
+オープンソースのモデルのみ掲載する。
 
 ** FLUX.1
 dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
@@ -84,12 +85,6 @@ dev: https://huggingface.co/black-forest-labs/FLUX.2-dev
 -- 量子化やBlock Swapを使ってもなおメモリ消費が非常に多い
 - ベンチマークスコアは高い(なおメモリ消費量)
 
-** NovelAI Diffusion V4
-- U-net
-- Text EncoderはT5
-- クローズソース
-- アニメイラスト(Danbooru)生成に特化
-
 ** Qwen-Image
 https://huggingface.co/Qwen/Qwen-Image
 - MMDiT
@@ -109,6 +104,7 @@ https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - TEはパラメータ効率のいいQwen3-4B
 -- 位置や文字の描写などの具体的な命令もOKで応答性が高い
 - TurboはDMDRで蒸留した収束が速いモデル
+- Apache 2.0ライセンス
 
 ** Lumina-Image
 https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
@@ -126,9 +122,8 @@ https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
 - Lumina-Image 2をFine-tuningしたDanbooruタグと自然言語(日英中)対応のアニメモデル
 - 現状完成されたSDXLベースのアニメモデルのほうがいい。
 -- 時々非常に美しい絵が出ることから可能性を感じる。かつてのSDXLのように、さらなるFine-tuningで改善の余地あり
-- 絵師タグが無いとベースモデルらしく不安定
+- 絵師タグが無いとベースモデルらしく不安定(Noobほどではない)
 - 細部、色、ライティングはSDXLより明確に良い
-- NSFWになったとたん品質が低下する傾向がある
 
 * predictionの種類
 ※間違っている可能性あり。間違っていたら修正してください。

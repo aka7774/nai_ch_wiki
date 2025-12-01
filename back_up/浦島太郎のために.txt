@@ -57,7 +57,7 @@ https://github.com/Zuntan03/EasyImageEdit
 Z-Image turboを手軽に試せるComfyUIをセットアップするもの。Zuntan03氏はこの2か月ほどネットに姿を見せておらず、無事を喜ぶ声が上がった。
 
 **2025-11-26 Alibaba、Z-Image-Turboを発表
-https://modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo
+https://tongyi-mai.github.io/Z-Image-blog/
 パラメータ数6Bの画像生成モデル。ベースモデルのZ-Image-Baseと画像編集用のZ-Image-Editも発表された（いずれも公開は近日中）。
 ComfyUIが対応。
 https://comfyanonymous.github.io/ComfyUI_examples/z_image/
@@ -1150,6 +1150,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
