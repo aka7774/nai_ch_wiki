@@ -52,6 +52,10 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-12-02 Alibaba-PAI、Z-Image turbo用ControlNetを公開
+https://huggingface.co/alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union
+Pose、Canny、HED、Depthを利用できる。
+
 **2025-11-30 Zuntan03氏、EasyImageEditを公開
 https://github.com/Zuntan03/EasyImageEdit
 Z-Image turboを手軽に試せるComfyUIをセットアップするもの。Zuntan03氏はこの2か月ほどネットに姿を見せておらず、無事を喜ぶ声が上がった。
@@ -1150,6 +1154,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
