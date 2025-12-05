@@ -1164,8 +1164,11 @@
 |}
 [END]
 ***　おジャ魔女どれみ 
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|majorika,&#160;ojamajo doremi, other, no humans, standing, full body, ||おジャ魔女どれみ|マジョリカ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/641a5f61a6d77605.png|
+|seki-sensei,&#160;ojamajo doremi, girl, clothed female, jacket, skirt, heels, standing, full body, arms at side,||おジャ魔女どれみ|関先生|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/4dcf887fe2d963f3.png|
 |harukaze poppu, ojamajo doremi, loli, child, pink hair, blue shirt, skirt,   |musical note hair ornament,  |おジャ魔女どれみ|春風ぽっぷ|V4 Curated Preview|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eb0OY1MDnx-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/eb0OY1MDnx.png]]|
 |makihatayama hana, ojamajo doremi, loli, child,  blonde hair, long hair, wing hair ornament, twintails, brown eyes, shorts, sleeveless, solo, cowboy shot, anime screencap,  |:3,  |おジャ魔女どれみ|ハナちゃん|V3。服飾部分を"white dress, white gloves, witch hat, earrings, magical girl"にすれば変身後スタイルに。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/r2Xo3ZlfyK-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/r2Xo3ZlfyK.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/eOE1Y9HVRt-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/eOE1Y9HVRt.png]]|
 |{{asuka momoko}}, &#91;&#91;ojamajo doremi]], loli, child, blonde hair, hairclip, green eyes, swept bangs, sidelocks, hair rings, red shirt, suspender skirt, smile, solo, cowboy shot, anime screencap, |harukaze doremi, fujiwara hazuki,  |おジャ魔女どれみ|飛鳥ももこ|V3。髪の輪っかはhair ringsで安定した。服飾部分を"yellow dress, yellow gloves, witch hat, magical girl"にすれば変身後スタイルに。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2AWTopguxU-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2AWTopguxU.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/m5g6cCS8yY-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/m5g6cCS8yY.png]]|
@@ -1175,7 +1178,7 @@
 |harukaze doremi, ojamajo doremi, loli, child, musical note hair ornament, pink eyes, double bun, short hair, red hair, pink shorts, pink shirt, smile, solo, cowboy shot, ||おジャ魔女どれみ|春風どれみ|V3。"pink shorts, pink shirt"を"pink dress, witch hat, pink gloves"にすれば変身後スタイルに|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/4tzzIUFd8r-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/4tzzIUFd8r.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/BEJykCHQLk-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/BEJykCHQLk.png]]|
 |official style, 2d cel anime, {{harukaze doremi)}}, {{ojamajo doremi}}, very aesthetic, best quality, intricate, overall detail, 1 girl, child, red hair, double bun, bangs, casual clothes, pants, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body,  |おジャ魔女どれみ|春風どれみ|V2使用。前髪が描写されにくい。|https://image01.seesaawiki.jp/n/h/nai_ch/jEs7TcAND2.png|
 |}
-
+[END]
 ***　おとぎ銃士赤ずきん
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1275,6 +1278,9 @@
 |{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
 |}
 [END]
+
+
+
 
 
 
