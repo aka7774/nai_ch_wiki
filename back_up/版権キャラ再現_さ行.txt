@@ -986,6 +986,7 @@
 |}
 
 ***　青春ブタ野郎シリーズ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |azusagawa sakuta, seishun buta yarou, boy, minegahara high school uniform, jacket, shirt, necktie, pants, shoes, standing, ||青春ブタ野郎シリーズ|梓川咲太|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/eea0dd42b359cce7.png|
@@ -1032,6 +1033,7 @@
 |}
 
 ***　精霊幻想記
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |1girl,{black hair},long hair, purple eyes,shiny hair,straight hair,{big eyes},{{sidelocks}},{{{teenage}}},slender,small breasts,red skirt,layered skirt,{long skirt}, {{{sleeveless}}},{{{halterneck}}},{{jewelry}},corset,long sleeves, {frilled dress},collared shirt, frills, embarrassed,covering mouth by hand,|{ribbon},{bow},{ascot},bowtie, {{tie}}, {button},{{{{blush}}}},{{{{cheek}}}},malformed hands,worst quality,low quality,{{{{ugly}}}},{{{duplicate}}},{{{trans}}},{{trannsexual}},{out of frame},extra fingers,mutated hands,out of frame,extra limbs,{bad anatomy},grossproportions,{malformed limbs},{{missing arms}},{{missinglegs}},{{{extra arms}}},{{{extra legs}}},mutated hands,{fusedfingers},{{{long neck}}},fingers,extra digit,cropped,bad feet,{{poorly drawnhands}},{{poorly drawn face}},{{{mutation}}},{{deformed}},{blurry},{{bad anatomy}},{{{bad proportions}}},{{extra_limbs}},{{{disfigured}}}, bad anatomy disfigured,malformed mutated,missing limb,normal quality,too many fingers,long neck,bad finglegs,cropped, bad feet,bad anatomy disfigured,malformed mutated,{{morbid}},{{mutilated}},{{{tranny}}},missing limb,malformed hands,|精霊幻想記|綾瀬美春|制服だとただの女子高生なので異世界衣服ver~~ ~~malformed hands以降は画質向上用|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ZBjgdJFfvk-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ZBjgdJFfvk.png]]|
@@ -1043,14 +1045,29 @@
 [END]
 
 ***　聖闘士星矢シリーズ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|gemini kanon, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|双子座のカノン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。聖衣と鱗衣が混じった感じになる。|https://image01.seesaawiki.jp/n/h/nai_ch/0ea1e43e91ff725a.png|
+|pisces aphrodite, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|魚座のアフロディーテ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/e8429629ceec34c7.png|
+|aquarius camus, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|水瓶座のカミュ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/56349359a30b3df6.png|
+|capricorn shura, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|山羊座のシュラ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a3414049976c6c27.png|
+|sagittarius aioros, saint seiya, boy, gold saint, gold armor, pants, standing, full body, ||聖闘士星矢|射手座のアイオロス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/8215defd39112bf0.png|
+|scorpio milo, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|蠍座のミロ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/76856256fbdcb14b.png|
+|libra douko, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|天秤座の童虎|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/48e1a9e9f91e648b.png|
+|virgo shaka, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|乙女座のシャカ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/321697e0264bab57.png|
+|leo aiolia, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|獅子座のアイオリア|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/ebf1122245df4652.png|
+|cancer death mask, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|蟹座のデスマスク|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/a1a61d6ec9e740b5.png|
+|gemini saga, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|双子座のサガ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b32a05fe489b6beb.png|
+|taurus aldebaran, saint seiya, boy, gold saint, gold armor, helmet, cape, pants, standing, full body, ||聖闘士星矢|牡牛座のアルデバラン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d3b404571d7f10d2.png|
+|aries muu, saint seiya, boy, gold saint, gold armor, cape, pants, standing, full body, ||聖闘士星矢|牡羊座のムウ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b02dd8d379305c37.png|
 |official style, {{{kido saori, }}}athena &#40;saint seiya omega),saint seiya omega, very aesthetic, best quality, intricate, overall detail, 1 girl, purple hair,long hair, straight hair,white clothes,sweet-looking,long skirt,tareme, sleeveless dress, bare shoulders, bare arms, 1 girl, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, &#40;highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands,|聖闘士星矢Ω|城戸沙織|v3使用Ωの方が近くなる感じ|https://image02.seesaawiki.jp/n/h/nai_ch/tVftuUbPrv.png|
 |official style,2d cell anime, {{{kido saori, }}}athena &#40;saint Seiya),saint seiya,very aesthetic, best quality, intricate, overall detail, 1 girl, purple hair,long hair, straight hair,white clothes,sweet-looking,long skirt,tareme, sleeveless dress, bare shoulders, bare arms, intricate, overall detail, 1 girl,  standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, &#40;highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands,|聖闘士星矢|城戸沙織|v3仕様|https://image01.seesaawiki.jp/n/h/nai_ch/sTf935csxy.png|
 |official style, aquila yuna, saint seiya omega, very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, white armor, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |聖闘士星矢Ω|鷲座のユナ|V3使用。キャラは再現されるが、聖衣は再現されない。|https://image02.seesaawiki.jp/n/h/nai_ch/uedkxUuRCo.png|
 |}
-
+[END]
 ***　セーラームーン
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |black lady (sailor moon), chibi usa, bishoujo senshi sailor moon r, girl, clothed female, dress, standing, full body, straight-on, ||美少女戦士セーラームーンR|ブラックレディ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/805490a668175830.png|
@@ -1525,6 +1542,13 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
+
+
+
+
+
+
+
 
 
 
