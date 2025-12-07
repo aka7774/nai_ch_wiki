@@ -162,8 +162,16 @@
 |}
 
 ***　かぐや様は告らせたい
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|fujiwara moeha, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, girl, school swimsuit, sandals, standing, full body, arms at side, ||かぐや様は告らせたい|藤原萌葉|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/a2a43b6d68e82f4e.png|
+|kose erika, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, girl, shuuchiin academy school uniform, dress, socks, loafers, standing, full body, arms at side, ||かぐや様は告らせたい|巨瀬エリカ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/12fcd6b23340d5f0.png|
+|kino karen, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, girl, shuuchiin academy school uniform, dress, socks, loafers, standing, full body, arms at side, ||かぐや様は告らせたい|紀かれん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/fd6c8a1b5d5692d6.png|
+|koyasu tsubame, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, girl, shuuchiin academy school uniform, dress, socks, loafers, standing, full body, arms at side, ||かぐや様は告らせたい|子安つばめ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b88e4cdbdf18720a.png|
+|osaragi kobachi, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, girl, shuuchiin academy school uniform, dress, socks, loafers, standing, full body, arms at side, ||かぐや様は告らせたい|大仏こばち|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/abc8b20197a1b4c9.png|
+|shijou maki, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, girl, shuuchiin academy school uniform, dress, socks, loafers, standing, full body, arms at side, ||かぐや様は告らせたい|四条眞妃|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/428f6ba2be58c635.png|
+|kashiwagi nagisa, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, girl, shuuchiin academy school uniform, dress, socks, loafers, standing, full body, arms at side, ||かぐや様は告らせたい|柏木渚|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/8d52028045c5ec71.png|
 |official style, anime coloring, ishigami yuu, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, very aesthetic, best quality, intricate, overall detail, 1 boy, black hair, short hair, grey eyes, open jacket, gakuran, white shirt, black pants, standing, simple background, straight-on, facing the front, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |かぐや様は告らせたい|石上優|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/tggy0UjEYN.png|
 |official style, anime coloring, shirogane kei, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, white clothes, sundress, long sleeves, pantyhose, standing, simple background, straight-on, facing the front, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |かぐや様は告らせたい|白銀圭|V3使用。秀知院学園中等部の白い制服を再現する際、school uniformなどと入れるとほぼ高等部の黒制服になる。だから、プロンプトにそれらの単語を入れていない。これでも黒になることがある。|https://image01.seesaawiki.jp/n/h/nai_ch/SHN0Nwv076.png|
 |official style, anime coloring, {{shirogane miyuki}}, kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, very aesthetic, best quality, intricate, overall detail, 1 boy, blonde hair, blue eyes, gakuran, pants, standing, simple background, straight-on, facing the front, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |かぐや様は告らせたい|白銀御行|V3使用。妹の圭が出ることがあるので、名前強調と髪色指定、服装「gakuran, pants, 」で制御している。|https://image02.seesaawiki.jp/n/h/nai_ch/TnyWV8C4hA.png|
@@ -173,6 +181,7 @@
 |{fujiwara chika},kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~, pink hair, blue eyes, long hair,blunt bangs, tareme,large breasts,shuuchiin academy school uniform, black dress,collared dress,neck ribbon,long sleeves, solo,smile,|shinomiya kaguya,hair ribbon,tsurime,smirk,evil smile,belt,|かぐや様は告らせたい|藤原千花||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/fXUiNlel6Z.png)|
 |{{{shinomiya kaguya}}},{{{kaguya-sama wa kokurasetai ~tensai-tachi no renai zunousen~}}},folded ponytail,parted bangs,forehead,red eyes,black hair,hair ribbon,red ribbon,short hair,tsurime,skinny,small breast,shuuchiin academy school uniform, black dress,collared dress,neck ribbon,long sleeves,  |{hair between eyes},blunt bangs,tilak,bindi,forehead mark,crown,hair_ornament,longbody, lowres, bad anatomy, bad hands, missing fingers, pubic hair,extra digit, fewer digits, cropped, worst quality, low quality,|かぐや様は告らせたい|四宮かぐや||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/qPrUet56rt.png)|
 |}
+[END]
 
 ***　かぐや姫の物語
 {| class="sort edit nanj_prompt_table"
@@ -1502,6 +1511,12 @@ multiple breasts,&#40;mutated hands and fingers:1.5 ),&#40;long body :1.3),&#40;
 |kasuga yui, corrector yui, girl, orange hair, red eyes, magical girl, standing, holding wand, smile, full body, |lowers, aliasing,|コレクター・ユイ|コレクター・ユイ|V4 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/eBvllVpqU_.png|
 |}
 [END]
+
+
+
+
+
+
 
 
 

@@ -237,6 +237,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|yamashiro ren, mato seihei no slave, girl, anti-demon corps uniform, capelet, jacket, shorts, pantyhose, boots, standing, full body, arms at side, ||魔都精兵のスレイブ|山城恋|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/880b933810de06b2.png|
 |izumo tenka, mato seihei no slave,anti-demon corps uniform, thigh boots,|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality,signature, watermark, username, blurry, artist name, multiple legs, malformation,{{{{{4fingers,6fingers,bad fingers}}}}}, @_@,{{{{{feather hair ornament}}}}},|魔都精兵のスレイブ|出雲天花|V4|https://image02.seesaawiki.jp/n/h/nai_ch/5lWUfL1KFO.png|
 |official style, anime coloring, azuma himari (mato seihei no slave), mato seihei no slave, very aesthetic, best quality, intricate, overall detail, 1 girl, green hair, yellow eyes, anti-demon corps uniform, sleeveless, bare arms, thigh boots, standing, smile, white background, facing away, straight-on, close to viewer, full body, solo focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, |魔都精兵のスレイブ|東 日万凛|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/LT7JpL9_Bx.png|
 |official style, anime coloring, uzen kyouka, mato seihei no slave, very aesthetic, best quality, intricate, overall detail, 1 girl, purple hair, red eyes, anti-demon corps uniform, thigh boots, holding katana, standing, smile, white background, facing away, straight-on, close to viewer, full body, solo focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, |魔都精兵のスレイブ|羽前京香|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/l6DS8oCEiq.png|
@@ -804,4 +805,5 @@
 |}
 [END]
 ----
+
 
