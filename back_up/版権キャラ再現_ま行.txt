@@ -309,6 +309,14 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|Artist:okuda yasuhiro, fate testarossa (blaze form), bardiche (riot zanber stinger) (nanoha)&#160;, mahou shoujo lyrical nanoha the movie 2nd a's, girl, white cape, black leotard, belt, showgirl skirt, black gloves, thighhighs, boots, standing, holding weapon, dual wielding, full body, ||魔法少女リリカルなのはthe movie2nd A's|フェイト・テスタロッサ（バリアジャケット：ブレイズフォーム）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/59dc0769cc8c2eec.png|
+|Artist:okuda yasuhiro, fate testarossa (lightning form) (2nd), bardiche (bullova form) (nanoha), mahou shoujo lyrical nanoha a's, girl, black cape, black leotard, belt, showgirl skirt, black gloves, boots, standing, holding weapon, full body, ||魔法少女リリカルなのはthe movie2nd A's|フェイト・テスタロッサ（バリアジャケット：ライトニングフォーム）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/d070f84508aba9d2.png|
+|Artist:okuda yasuhiro, fate testarossa (movie 1st form), bardiche (axe form) (nanoha), mahou shoujo lyrical nanoha, girl, black cape, black leotard, belt, showgirl skirt, black gloves, black boots, standing, holding axe, full body, ||魔法少女リリカルなのはthe movie1st|フェイト・テスタロッサ（バリアジャケット）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/d070c3886680f141.png|
+|Artist:okuda yasuhiro, fate testarossa (true sonic form), bardiche (riot zanber stinger) (nanoha), mahou shoujo lyrical nanoha strikers, girl, black leotard, gloves, thighhighs, boots, standing, holding weapon, energy sword, dual wielding, full body,||魔法少女リリカルなのはStrikerS|フェイト・テスタロッサ（バリアジャケット：真ソニックフォーム）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/66fc040cd35e8608.png|
+|Artist:okuda yasuhiro, fate testarossa (impulse form), bardiche (assault form) (nanoha), mahou shoujo lyrical nanoha strikers, girl, white cape, black coat, skirt, black gloves, thighhighs, boots, standing, holding weapon, full body, ||魔法少女リリカルなのはStrikerS|フェイト・テスタロッサ（バリアジャケット：インパルスフォーム）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c376923caf7b8713.png|
+|Artist:okuda yasuhiro, fate testarossa (sonic form), bardiche (zanber form) (nanoha), mahou shoujo lyrical nanoha a's, girl, black leotard, black bike shorts, black gloves, boots, standing, holding weapon, energy sword, full body,||魔法少女リリカルなのはA's|フェイト・テスタロッサ（バリアジャケット：ソニックフォーム）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。movie2nd A'sとデザインは違うがタグ上は区別されないので混ざる。|https://image02.seesaawiki.jp/n/h/nai_ch/2bbe97a35c6777a7.png|
+|Artist:okuda yasuhiro, fate testarossa (lightning form), bardiche (haken form) (nanoha), mahou shoujo lyrical nanoha a's, girl, black cape, black leotard, belt, showgirl skirt, black gloves, boots, standing, holding weapon, full body, ||魔法少女リリカルなのはA's|フェイト・テスタロッサ（バリアジャケット：ライトニングフォーム）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/20a6d7771b2f2b49.png|
+|Artist:okuda yasuhiro, fate testarossa (original form), bardiche (device form) (nanoha), mahou shoujo lyrical nanoha, girl, black cape, black leotard, belt, showgirl skirt, black gloves, black boots, standing, holding axe, full body, ||魔法少女リリカルなのは|フェイト・テスタロッサ（バリアジャケット）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/e1bf51cc673db332.png|
 |Artist:okuda yasuhiro, alicia testarossa, mahou shoujo lyrical nanoha, girl, clothed female, green dress, white socks, green shoes, standing, full body,||魔法少女リリカルなのは|アリシア・テスタロッサ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/db8608ab3a2bffa6.png|
 |Artist:okuda yasuhiro, presea testarossa, mahou shoujo lyrical nanoha, girl, clothed female, purple dress, cloak, heels, standing, full body,||魔法少女リリカルなのは|プレシア・テスタロッサ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/1512e09481fec430.png|
 |Artist:okuda yasuhiro, yuuno scrya, mahou shoujo lyrical nanoha, boy, clothed male, brown cape, jacket, shorts, gloves, boots, standing, full body,||魔法少女リリカルなのは|ユーノ・スクライア|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9c1ecb16b40247c2.png|
@@ -805,5 +813,7 @@
 |}
 [END]
 ----
+
+
 
 
