@@ -1070,6 +1070,19 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|queen beryl, bishoujo senshi sailor moon (first season), girl, clothed female, purple gown, standing, holding staff, ||美少女戦士セーラームーン|クイン・ベリル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1a245bd84a9b9970.png|
+|jadeite (sailor moon), bishoujo senshi sailor moon (first season), boy, jacket, pants, boots, standing, ||美少女戦士セーラームーン|ジェダイト|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f48ec0a53c85fe15.png|
+|kunzite (sailor moon), bishoujo senshi sailor moon (first season), boy, cape, jacket, pants, boots, standing, ||美少女戦士セーラームーン|クンツァイト|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9069e39d43e489cc.png|
+|nephrite (sailor moon), bishoujo senshi sailor moon (first season), boy, jacket, pants, boots, standing, ||美少女戦士セーラームーン|ネフライト|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c3ca7b7cb8b565a2.png|
+|zoisite (sailor moon), bishoujo senshi sailor moon (first season), boy, jacket, pants, boots, standing, ||美少女戦士セーラームーン|ゾイサイト|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/6d614e5eed5224ab.png|
+|prince demande, bishoujo senshi sailor moon r, boy, cape, jacket, pants, shoes, standing, ||美少女戦士セーラームーン|プリンス・デマンド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/cd3e565830bd27df.png|
+|saphir (sailor moon), bishoujo senshi sailor moon r, boy, cape, jacket, pants, shoes, standing, ||美少女戦士セーラームーン|サフィール|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b41bfbe64d2774dd.png|
+|rubeus (sailor moon), bishoujo senshi sailor moon r, boy, shirt, pants, boots, standing, ||美少女戦士セーラームーン|ルベウス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/3edf790ecf6835f2.png|
+|esmeraude (sailor moon), bishoujo senshi sailor moon r, girl, mini dress, elbow gloves, boots, standing, ||美少女戦士セーラームーン|エスメロード|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/4e2e08c3ba33bb40.png|
+|beruche (sailor moon), bishoujo senshi sailor moon r, girl, leotard, elbow gloves, boots, standing, ||美少女戦士セーラームーン|ベルチェ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/83754d7a47b76f0c.png|
+|calaveras (sailor moon), bishoujo senshi sailor moon r, girl, leotard, skirt, wristband, boots, standing, ||美少女戦士セーラームーン|カラベラス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f2dca3e934e94cfd.png|
+|koan (sailor moon), bishoujo senshi sailor moon r, girl, bodysuit, skirt, heels, standing, ||美少女戦士セーラームーン|コーアン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/107661b6660efa24.png|
+|petz (sailor moon), bishoujo senshi sailor moon r, girl, feather boa, mini dress, pantyhose, boots, standing, ||美少女戦士セーラームーン|ペッツ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/0f57a9d7cbf0a936.png|
 |black lady (sailor moon), chibi usa, bishoujo senshi sailor moon r, girl, clothed female, dress, standing, full body, straight-on, ||美少女戦士セーラームーンR|ブラックレディ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/805490a668175830.png|
 |ptilol (sailor moon), bishoujo senshi sailor moon s, girl, clothed female, dress, pantyhose, high heel boots, standing, full body, straight-on, ||美少女戦士セーラームーンS|プチロル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c1233bc96da8c853.png|
 |cyprine (sailor moon), bishoujo senshi sailor moon s, girl, clothed female, dress, pantyhose, high heel boots, standing, full body, straight-on, ||美少女戦士セーラームーンS|シプリン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/917a5a51875192f2.png|
@@ -1542,6 +1555,9 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
+
+
+
 
 
 
