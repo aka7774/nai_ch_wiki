@@ -1,4 +1,4 @@
-cd /root/nai_ch_wiki
+cd /home/ai/nai_ch_wiki
 
 if ! venv/bin/python fivech_back_up/thread_backup.py daily; then
     echo "5ch thread backup failed. Aborting." >&2

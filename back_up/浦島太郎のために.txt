@@ -52,6 +52,18 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-12-24 Alibaba、Qwen-Image-Edit 2511を公開
+https://huggingface.co/Qwen/Qwen-Image-Edit-2511
+2509とのおもな違いは以下。
+- 一貫性の向上
+- コミュニティが作成したLoRAの組み込み
+- 工業デザインへの利用
+- 幾何学的推論の強化
+ライセンスはApache 2.0となっている。
+
+- GGUF：https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF
+- Lightning：https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning
+
 **2025-12-02 Alibaba-PAI、Z-Image turbo用ControlNetを公開
 https://huggingface.co/alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union
 Pose、Canny、HED、Depthを利用できる。
@@ -1154,6 +1166,8 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
 
 
 

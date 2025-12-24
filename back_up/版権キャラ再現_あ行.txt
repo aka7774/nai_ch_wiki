@@ -321,6 +321,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(235px):プロンプト|~w(235px):ネガティブプロンプト|~w(59px):作品|~w(59px):キャラ|~w(116px):備考|サンプル|
+|||アズールレーン|樫野|||
 |||||||
 |mogador (locker room lechery) (azur lane), azur lane, girl, purple hair, purple eyes, large breasts, black choker, black one-piece swimsuit, bracelet, ankle strap, black sandals, high heels, white blanket cape, standing, full body, |lowres, aliasing, |アズールレーン|モガドール（悶々ロッカーシークレット）|V4 full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/Mnq7aBv3Lq.png|
 |suzuya (azur lane), azur lane, girl, black hair, yellow eyes, large breasts, clothed female, school uniform, white shirt, blue skirt, white single gloves, black pantyhose, sheath, battoujutsu stance, ready to draw, holding katana, school bag, standing, full body, |lowres, aliasing, |アズールレーン|鈴谷|V4 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/qpg6Ty5EBJ.png|
@@ -463,12 +464,21 @@
 |official style, 2d cel anime, {{aharen reina)}}, {{aharen-san wa hakarenai}}, very aesthetic, best quality, intricate, overall detail, 1 girl, loli, light purple hair, long hair, blunt bang, cardigan, pleated skirt, pantyhose, school uniform, standing, clear face, expressionless, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |^|^|V2使用。絵柄が影響を受けるが原作絵というわけでもない。|https://image02.seesaawiki.jp/n/h/nai_ch/gEx63s_x4N.png|
 |}
 
+***　あまえないでよっ!!
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+| Amaenaide yo!!, Atouda Yuuko,|　| あまえないでよっ!! |阿刀田結子 | 　| https://image01.seesaawiki.jp/n/h/nai_ch/1812f6c4da159b36.png |
+|}
+
+
 ***　甘々と稲妻
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |iida kotori, amaama to inazuma, girl, clothed female, school uniform, red bowtie, white shirt, red skirt, black socks, loafers, standing, arms at side, full body, straight-on, ||甘々と稲妻|飯田小鳥|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/dd34395c7bf18c1e.png|
 |inuzuka tsumugi, amaama to inazuma, girl, clothed female, yellow hoodie, red overalls, yellow boots, standing, arms at side, full body, straight-on, ||甘々と稲妻|犬塚つむぎ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/35598bf01ae16e85.png|
 |}
+
+
 
 ***　アマガミ
 {| class="sort edit nanj_prompt_table"
@@ -1251,7 +1261,7 @@
 ***　俺、ツインテールになります。
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|{{{{ore twintail ni narimasu,twinred,white battle costume}}}},{{{red hair}}},red eyes,black　panties,black thighhighs,&#40;red legsgear),{{{{{{{{{{{loli}}}}}}}}}}},medium breasts,perky breasts,1girl, solo, magical girl, simple background, white background,straight-on, facing the front, close to viewer, cowboy shot, face focus,100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},best quality, intricate, overall detail,masterpiece,cinematic lighting,highest,great,unity 8k wallpaper,anime_coloring,{{{deep-silky-healthy-lackwarm-foundational-soft-skin}}},premium,selected,superiors,stylish,Realism,Photorealistic,|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality,signature, watermark, username, blurry, artist name, multiple legs, malformation,{{{{{4fingers,6fingers,bad fingers}}}}}, @_@,{{{{{feather hair ornament}}}}},|俺、ツインテールになります。|テイルレッド|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/njkl0mCk4Y.png|
+|{{{{ore twintail ni narimasu,twinred,white battle costume}}}},{{{red hair}}},red eyes,black panties,black thighhighs,&#40;red legsgear),{{{{{{{{{{{loli}}}}}}}}}}},medium breasts,perky breasts,1girl, solo, magical girl, simple background, white background,straight-on, facing the front, close to viewer, cowboy shot, face focus,100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},best quality, intricate, overall detail,masterpiece,cinematic lighting,highest,great,unity 8k wallpaper,anime_coloring,{{{deep-silky-healthy-lackwarm-foundational-soft-skin}}},premium,selected,superiors,stylish,Realism,Photorealistic,|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality,signature, watermark, username, blurry, artist name, multiple legs, malformation,{{{{{4fingers,6fingers,bad fingers}}}}}, @_@,{{{{{feather hair ornament}}}}},|俺、ツインテールになります。|テイルレッド|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/njkl0mCk4Y.png|
 |{{{tsube aika, ore twintail ni narimasu}}}, {school uniform, light yellow jacket, flat chest, black skirt},  black long hair, blue bowtie, red eyes, black thighhighs, blazer, dress shirt, collared shirt, long sleeves, miniskirt, open clothes, pleated skirt, 1girl, solo, magical girl, simple background, white background, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}}, |3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, {{{red hair}}},|俺、ツインテールになります。|津辺愛香|V3使用。俺ツイにはyogetsu high school uniformという学生服専用のプロンプトがあるのですが、なぜか俺妹っぽい画像になる為、ここでは普通のschool uniformで生成しています。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/RpkXP0BPOE-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/RpkXP0BPOE.png]]|
 |{tailblue, tsube aika, ore twintail ni narimasu}, blue long hair, twintails, skin tight, white thighhighs, white leotard, revealing clothes, clothes cutout, gorget, headgear, bare shoulders, faulds, {{{from behind, bare back, shiny skin, shoulder blades, dimples of venus, median furrow}}}, 1girl, solo, magical girl, simple background, white background, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},  |3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, {{{red hair}}},|俺、ツインテールになります。|テイルブルー（後ろ姿）|V3使用。from behindだけだと素肌を出さない画像が出る為、shoulder blades, dimples of venus, median furrowなど背中の部位を指定する事をオススメします|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/6M2NUoPTCM-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/6M2NUoPTCM.png]]|
 |{tailblue, tsube aika, ore twintail ni narimasu}, blue long hair, twintails, cleavage, skin tight, navel, underboob, white thighhighs, white leotard, revealing clothes, gorget, headgear, stomach cutout, bare shoulders, faulds, cleavage cutout, 1girl, solo, magical girl, simple background, white background, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}}, |3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, {{{red hair}}},|俺、ツインテールになります。|テイルブルー|V3使用。主人公のテイルレッドの影響か赤髪になる事が多い。その為、除外したいプロンプトにred hairを入れておく事をオススメします。またレオタードではなくメカ娘のように機械化した武装で出てくる事が多いので、skin tightやleotardならびにstomach cutoutなど服だと指示するプロンプトを入れるのもオススメします|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/lAS8kM6A_m-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/lAS8kM6A_m.png]]|
@@ -1279,6 +1289,7 @@
 |{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
 |}
 [END]
+
 
 
 

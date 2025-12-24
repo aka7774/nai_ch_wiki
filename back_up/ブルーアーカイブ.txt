@@ -83,7 +83,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |haruna (blue archive), blue archive, girl, clothed female, peaked cap, coat, white shirt, black necktie,&#160;black skirt, pantyhose, shoes, holding gun, standing, full body, straight-on, ||ブルーアーカイブ|黒舘ハルナ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/72845f5fb7f2489c.png|
 |izumi (blue archive), blue archive, girl, clothed female, jacket, red necktie, red skirt, socks, boots, holding gun, standing, full body, straight-on, ||ブルーアーカイブ|獅子堂イズミ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/4f2868f20544e05a.png|
-|akari (blue archive), blue archive, girl, clothed female, jacket, black skirt, thighhighs, shoes, holding gun, standing, full body, straight-on, ||ブルーアーカイブ|鰐渕アカリ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c6a82ecccf64aa16.png|
+|akari (blue archive), blue archive, girl, clothed female, jacket, black skirt, thighhighs, shoes, holding gun, standing, full body, straight-on,side horns, horns growing from the temples, slightly downward-curving horns, smooth texture, ||ブルーアーカイブ|鰐渕アカリ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c6a82ecccf64aa16.png|
 |junko (blue archive), blue archive, girl, clothed female, jacket, skirt, boots, holding gun, standing, full body, straight-on, ||ブルーアーカイブ|赤司ジュンコ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d3705b306f5de035.png|
 |}
 
@@ -494,6 +494,7 @@
 ***オカルト研究会
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+||||eri|||
 |||ブルーアーカイブ|白尾エリ|||
 |||ブルーアーカイブ|椎名ツムギ|||
 |||ブルーアーカイブ|板垣カノエ|||
