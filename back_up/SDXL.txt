@@ -23,8 +23,34 @@ Stability.ai公式
 * SDXLのUI
 有名なUIは下記の通り
 
+** Forge
+ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた。バックエンドを1111オリジナルからComfyUIベースに変更している？
+[[https://github.com/lllyasviel/stable-diffusion-webui-forge>>https://github.com/lllyasviel/stable-diffusion-webui-forge]]
+低VRAM環境での高速化や使用メモリ削減が見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照。なお、必ずしも1111より速かったりメモリ使用量が少ないわけではない。
+「浦島太郎のために」「2024-02-06 stable-diffusion-webui-forgeリリース」を参照。
+現在も開発中だが、オリジナルの1111とは大きく異なるためExtensionの互換性が低め。
+
+*** reForge
+https://github.com/Panchovix/stable-diffusion-webui-reForge
+Forgeをさらにリファクタリングしたもの。新しい機能を試すことができる。Forgeよりは1111に近い。1111より明確に速い。省メモリ機能は1111と違い、メモリ容量に合わせて自動で有効化される。
+起動引数に以下を設定すると速くなる(Torch 2.7.0以降のみ)。なお、VAEはsdxl-vae-fp16-fixを推奨。
+ --disable-xformers --attention-pytorch --cuda-malloc --cuda-stream --vae-in-fp16 --allow-fp16-accumulation
+
+*** Forge Classic
+https://github.com/Haoming02/sd-webui-forge-classic
+Forge "previous"バージョンをベースにリファクタリングしたもの。最適化が中心。速度やメモリ使用量はreForgeとほぼ同じ。
+
+*** Forge Neo
+https://github.com/Haoming02/sd-webui-forge-classic/tree/neo
+Forge "latest"バージョンをベースにリファクタリングしたもの。Z-Imageなどの最新モデルが使える。しかし、新しすぎる故にExtensionの互換性が低い。
+
+** ComfyUI
+[[https://github.com/comfyanonymous/ComfyUI>>https://github.com/comfyanonymous/ComfyUI]]
+多機能で軽い。&color(#ff0000){''「ComfyUIでないとできない」ことが多い。''}やる気がある人にはComfyUIを強く推奨。1111が事実上の開発中止のためかComfyUIユーザーが増えている。
+>~~0139今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df8e-Xueq)~~2024/01/13(土) 18:32:22.34ID:pvPKwx5u0~~(略)~~一時の恥で聞くわ…~~誰かComfyUIでfp8モード起動のやり方教えて下さい！&#128557;&#128166;~~ ~~0145今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f48-4jqT)~~2024/01/13(土) 18:38:58.17ID:+aLVvCTx0~~>>139~~python main.py --use-quad-cross-attention --fp8_e4m3fn-unet~~か~~python main.py --use-quad-cross-attention --fp8_e4m3fn-text-enc~~　--use-quad-cross-attentionはなくてもおけ~~　loraの効きが悪くなるのが嫌なら--force_fp16 
+
 ** AUTOMATIC 1111
-devブランチ推奨。&color(#ff0000){2024年10月以降AUTOMATIC1111氏が不在で開発も停止(現在w-e-w氏による最低限の修正のみ)。}そのため最適化や機能面の期待はできない。
+devブランチ推奨。&color(#ff0000){2024年10月以降AUTOMATIC1111氏が不在で開発も停止(現在w-e-w氏による最低限の修正のみ)で事実上の開発中止。}古いExtensionを動かすために入れるのはあり。
 *** VRAM8GBで動かす方法
 1.webui-user.bat(Linuxはwebui-user.sh)のCOMMANDLINE_ARGSに--medvram-sdxl --precision halfを追加
 2(任意, Windowsのみ).NVIDIA コントロールパネルの3D設定で「CUDA - システム メモリ フォールバック ポリシー」を「システム メモリ フォールバックなしを優先」にする
@@ -39,35 +65,11 @@ devブランチ推奨。&color(#ff0000){2024年10月以降AUTOMATIC1111氏が不
 難しい設定なしでSDXLを試せる。
 導入が簡単で軽い。とっつきは良いが機能性が低いため凝ったことはやりにくい(最低限の機能しかない)。
 
-** ComfyUI
-[[https://github.com/comfyanonymous/ComfyUI>>https://github.com/comfyanonymous/ComfyUI]]
-多機能で軽い。&color(#ff0000){''「ComfyUIでないとできない」ことが多い。''}やる気がある人にはComfyUIを強く推奨。1111が事実上の開発中止のためかComfyUIユーザーが増えている。
->~~0139今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df8e-Xueq)~~2024/01/13(土) 18:32:22.34ID:pvPKwx5u0~~(略)~~一時の恥で聞くわ…~~誰かComfyUIでfp8モード起動のやり方教えて下さい！&#128557;&#128166;~~ ~~0145今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f48-4jqT)~~2024/01/13(土) 18:38:58.17ID:+aLVvCTx0~~>>139~~python main.py --use-quad-cross-attention --fp8_e4m3fn-unet~~か~~python main.py --use-quad-cross-attention --fp8_e4m3fn-text-enc~~　--use-quad-cross-attentionはなくてもおけ~~　loraの効きが悪くなるのが嫌なら--force_fp16 
-
-** Forge
-ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた。バックエンドを1111オリジナルからComfyUIベースに変更している？
-[[https://github.com/lllyasviel/stable-diffusion-webui-forge>>https://github.com/lllyasviel/stable-diffusion-webui-forge]]
-低VRAM環境での高速化や使用メモリ削減が見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照。なお、必ずしも1111より速かったりメモリ使用量が少ないわけではない。
-「浦島太郎のために」「2024-02-06 stable-diffusion-webui-forgeリリース」を参照。
-現在も開発中だが、オリジナルの1111とは大きく異なるためExtensionの互換性が低め。
-
-*** reForge
-https://github.com/Panchovix/stable-diffusion-webui-reForge
-Forgeをさらにリファクタリングしたもの。新しい機能を試すことができる。Forgeよりは1111に近い。1111より明確に速い。省メモリ機能は1111と違い、メモリ容量に合わせて自動で有効化される。
-起動引数に以下を設定すると速くなる(Torch 2.7.0以降のみ)。なお、VAEはsdxl-vae-fp16-fixを推奨。
- --xformers --cuda-malloc --cuda-stream --vae-in-fp16 --allow-fp16-accumulation
-
-*** Forge Classic
-https://github.com/Haoming02/sd-webui-forge-classic
-Forge "previous"バージョンをベースにリファクタリングしたもの。最適化が中心。速度やメモリ使用量はreForgeとほぼ同じ。
-
 ** EasySdxlWebUi
 &color(#ff0000){''gitとかが苦手な初心者向け''}
 様々なcheckpointやLoRAなどを自動でDLする。文字通り簡単だが、お節介な機能もあるので取捨選択してモデル等をDLしたい人は通常のWebUIの方がいい。
 [[https://github.com/Zuntan03/EasySdxlWebUi>>https://github.com/Zuntan03/EasySdxlWebUi]]
 >~~EasySdxlWebUiは簡単にSDXLで画像を生成できるようにします。~~ワンクリックインストーラーで古いパソコンでも動作するforge版と、実績のあるAUTOMATIC1111版(a1111)に両対応しており、簡単に使い始められます。~~forgeとa1111で多くの設定を共有しており、気軽に両方を使い分けられます。~~画像の生成にはインストールだけでなく、webUIの設定、拡張機能のインストールと設定、モデルなどの入手、適切なパラメータ設定などが必要になりますが、これも自動的に設定します。~~中身は通常のwebUIと同一ですので、経験が後々無駄になることもありません。
-
->~~287~~今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった(ﾜｯﾁｮｲ)~~02/14(水) 12:55:22.69~~同じPC WatchのこちらのページでEasySdxlWebUiを知ったんだが、これめちゃくちゃ便利で超絶赤ちゃん向けなのでは…？
 
 [[https://pc.watch.impress.co.jp/docs/column/nishikawa/1568551.html]]
 PC Watchによる紹介(外部リンク)
