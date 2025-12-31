@@ -52,6 +52,16 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2025年
+**2025-12-31 Alibaba、Qwen-Image-2512を公開
+https://huggingface.co/Qwen/Qwen-Image-2512
+主な改良点は以下。
+- 人間の表現のリアリズムを強化し、AI生成らしさを大幅に削減
+- 風景や動物の毛皮など自然物の表現がより細かく
+- テキストレンダリングの精度と品質が向上
+
+
+- GGUF： https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/tree/main
+- lightx2v： https://huggingface.co/lightx2v/Qwen-Image-2512-Lightning/tree/main
 **2025-12-24 Alibaba、Qwen-Image-Edit 2511を公開
 https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 2509とのおもな違いは以下。
@@ -1166,6 +1176,9 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
 
 
 
