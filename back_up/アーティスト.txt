@@ -11,6 +11,7 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
+||クリムゾン|||
 |artist:sakuzyo,|削除|V4.5 Full。リズムゲームへの楽曲提供を多数行っているコンポーザーで、イラスト関連の人物ではないのだが、なぜか artist タグに反応する。おそらく V4.5 Full のバグと思われる。|https://image01.seesaawiki.jp/n/h/nai_ch/21369f4a4d1a29c2.png|
 |artist:tezuka osamu,|手塚治虫|V4.5 Full。いわずと知れた漫画の神様。|https://image02.seesaawiki.jp/n/h/nai_ch/1c272a8fa811f6ed.png|
 |{{ouma bunshichirou}},|逢摩文七郎|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/3afb47ce05801815.png|
