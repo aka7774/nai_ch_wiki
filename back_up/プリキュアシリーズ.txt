@@ -139,6 +139,13 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|hoshizora miyuki, smile precure!, girl, nanairogaoka middle school uniform, white socks, loafers, standing, arms at side, full body,||スマイルプリキュア!|星空みゆき（七色ヶ丘中学校制服）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/89d013f9de7f51dd.png|
+|sasaki namie, smile precure!, girl, business suit, purple shirt, yellow jacket, yellow pants, heels, standing, arms at side, full body,||スマイルプリキュア!|佐々木なみえ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/381a2a4aea166675.png|
+|miracle peace, smile precure!, girl, hairband, yellow dress, red bowtie, orange socks, shoes, standing, arms at side, full body,||スマイルプリキュア!|ミラクルピース|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/06d8bd0e423ac35a.png|
+|joker (smile precure!), smile precure!, boy, mask, purple capelet, belt, white jumpsuit, boots, standing, arms at side, full body,||スマイルプリキュア!|ジョーカー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/e608488bf9fe4410.png|
+|royal candy, smile precure!, girl, yellow dress, shoes, standing, arms at side, :d, full body,||スマイルプリキュア!|ロイヤルキャンディ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/714e664d74dcd656.png|
+|candy (smile precure!), smile precure!, no humans, girl, creature, chibi, standing, arms at side, :d, full body,||スマイルプリキュア!|キャンディ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c8e168d2813eecd6.png|
+|nico (smile precure!), smile precure! ehon no naka wa minna chiguhagu!, girl, choker, purple dress, white ascot, pantyhose, leg ribbon, mary janes, standing, arms at side, full body, ||映画スマイルプリキュア!絵本の中はみんなチグハグ!|ニコ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c305a9a350a7ec04.png|
 |akaooni, smile precure!, boy, red hair, yellow eyes, shirt, belt, boots, standing, full body,||スマイルプリキュア!|アカオーニ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b7841253c1650f5c.png|
 |{bad end beauty, bad end precure, blue eyes, blue hair, long hair, 1girl, black bodysuit, black headwear, blue skirt, frilled sleeves, skin tight, corruption, dark persona, shiny skin, simple background, white background, cowboy shot}, official art, solo, intricate, hyper-detailed, 100-layer, excellent, ultra-high resolution, hi-vision anime|3d, company name, copyright name, poorly drawn, lowers, bokeh, low quality, out of focus, ugly, censor, bar censor, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, mascot,|スマイルプリキュア!|バッドエンドビューティ|V4版|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ccfZ9w6Qh6.png)|
 |{bad end march, bad end precure, green eyes, green hair, long hair, 1girl, black bodysuit, black headwear, green skirt, frilled sleeves, skin tight, corruption, dark persona, shiny skin, simple background, white background, cowboy shot}, official art, solo, intricate, hyper-detailed, 100-layer, excellent, ultra-high resolution, hi-vision anime|3d, company name, copyright name, poorly drawn, lowers, bokeh, low quality, out of focus, ugly, censor, bar censor, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, mascot,|スマイルプリキュア!|バッドエンドマーチ|V4版|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/dcipNKmpfq.png)|
@@ -278,11 +285,23 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|ruru amour, hugtto! precure, girl, cwhite shirt, shorts, white thighhighs, purple heels, standing, arms at side, full body, ||HuGっと!プリキュア|ルールー・アムール（私服）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/63cafa3487f6ddcf.png|
+|aisaki emiru, hugtto! precure, girl, pink dress, puffy short sleeves, white pantyhose, red shoes, standing, full body,||HuGっと!プリキュア|愛崎えみる（私服）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d7ea84f63c61910c.png|
+|kagayaki homare, hugtto! precure, girl, l'avenir academy school uniform, white collared shirt, yellow hooded jacket, grey skirt, white socks, loafers, standing, arms at side, full body,||HuGっと!プリキュア|輝木ほまれ（ラヴェニール学園制服）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c2719e6c449624ad.png|
+|yakushiji saaya, hugtto! precure, girl, l'avenir academy school uniform, blue collared shirt, blue vest, grey skirt, white socks, loafers, standing, arms at side, full body,||HuGっと!プリキュア|薬師寺さあや（ラヴェニール学園制服）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/3ddae66acbe04a62.png|
+|nono hana, hugtto! precure, girl, l'avenir academy school uniform, pink collared shirt, grey skirt, white socks, loafers, standing, arms at side, full body,||HuGっと!プリキュア|野乃はな（ラヴェニール学園制服）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/202d615f31dc422c.png|
+|george kurai, hugtto! precure, boy, white collared shirt, black pants, hoes, standing, arms at side, full body,||HuGっと!プリキュア|ジョージ・クライ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/fbeadbe7f55bfb48.png|
+|ruru amour, hugtto! precure, girl, cone hair bun, black shirt, cape, elbow gloves, purple skirt, thigh boots, standing, arms at side, full body, -3.0::twintails::,||HuGっと!プリキュア|ルールー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1aa8516435ffb24b.png|
+|gelos (precure), smile precure!, girl, orange cape, red long dress, black long sleeves, belt, side slit, bare legs, red boots, standing, arms at side, full body,||HuGっと!プリキュア|ジェロス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。服装は作中の完全再現ではない。|https://image02.seesaawiki.jp/n/h/nai_ch/bdfa9eea65bc2b1c.png|
+|charaleet (precure), hugtto! precure, boy, necklace, orange vest, black t-shirt, grey sweatpants, white shoes, standing, arms at side, full body,||HuGっと!プリキュア|チャラリート|V4.5 Full版使用。キャラクタープロンプト１のみ記述。服装は作中の完全再現ではない。|https://image02.seesaawiki.jp/n/h/nai_ch/81e813d9c4f5f857.png|
 |papple (precure), hugtto! precure, girl, fur collar coat, necklace, minidress, fishnet pantyhose, high heels, folding fan, standing, full body,||HuGっと!プリキュア|パップル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/0e18f8485b4eeee6.png|
 |wakamiya henri, hugtto! precure, boy, ice skates, shirt, pants, shoes, standing, full body,||HuGっと!プリキュア|若宮アンリ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/0b220e685391a7a2.png|
 |cure infini, wakamiya henri, hugtto! precure, boy, ice skates, magical boy, shirt, high-low skirt, pantyhose, knee boots, standing, full body,||HuGっと!プリキュア|キュアアンフィニ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/2f4e7013ef650ede.png|
+|harryham harry (human), hugtto! precure, boy, manly, black jacket, necklace, white t-shirt, denim pants, brown shoes, standing, arms at side, full body,||HuGっと!プリキュア|ハリハム・ハリー（人間形態）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/4351f60e0d571d4c.png|
+|hug-tan (precure), hugtto! precure, girl, baby, bib, pink shirt, blue shorts, socks, sitting, arms at side, full body,||HuGっと!プリキュア|はぐたん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f4d3801c6c113c05.png|
 |nono kotori, hugtto! precure, girl, green shirt, pink skirt, thighhighs, shoes, standing, full body,||HuGっと!プリキュア|野乃ことり|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d1c11594f84f409a.png|
-|official style, cure tomorrow, hug-tan (precure), hugtto! precure, very aesthetic, best quality, intricate, overall detail, 1 girl, blonde hair, high ponytail, pink eyes, magical girl, battle costume, {{hair tubes}}, bridal gauntlets, short sleeves, pink shirt, waist brooch, pink skirt, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, sidelocks,|HuGっと!プリキュア|キュアトゥモロー|V3使用。あまり似ていない。|https://image01.seesaawiki.jp/n/h/nai_ch/SJ7I_YT0V0.png|
+|cure tomorrow, hug-tan (precure), hugtto! precure, girl, magical girl, pink dress, gloves, red shoes, standing, arms at side, full body,||HuGっと!プリキュア|キュアトゥモロー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/6af6466b77841870.png|
+|official style, cure tomorrow, hug-tan (precure), hugtto! precure, very aesthetic, best quality, intricate, overall detail, 1 girl, blonde hair, high ponytail, pink eyes, magical girl, battle costume, {{hair tubes}}, bridal gauntlets, short sleeves, pink shirt, waist brooch, pink skirt, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, sidelocks,|^|^|V3使用。あまり似ていない。|https://image01.seesaawiki.jp/n/h/nai_ch/SJ7I_YT0V0.png|
 |official style, ruru amour(precure), hugtto! precure, very aesthetic, best quality, intricate, overall detail, 1 girl, purple eyes, yellow hairband, casual clothes, white dress, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, |HuGっと!プリキュア|ルールー・アムール|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/jDhFxE9qED.png|
 |official style, aisaki emiru(precure), hugtto! precure, very aesthetic, best quality, intricate, overall detail, 1 girl, red eyes, pink dress, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, |HuGっと!プリキュア|愛崎えみる|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/EqVAS9BLIo.png|
 |official style, kagayaki homare(precure), hugtto! precure, very aesthetic, best quality, intricate, overall detail, 1 girl, yellow eyes, l'avenir academy school uniform, standing, light smile, simple background, facing the front, straight-on, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, |HuGっと!プリキュア|輝木ほまれ|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/6paEZLSUIR.png|
@@ -495,6 +514,22 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |}
 [END]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
