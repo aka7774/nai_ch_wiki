@@ -38,6 +38,12 @@
 |best quality, anime,official style, {{himuro kane,fate/stay night}}, very aesthetic, best quality, intricate, overall detail, 1girl, solo,silver hair,glasses,large breasts,blunt bangs,{{homurahara academy school uniform}}},simple background, facing the front, straight-on,{{{looking at  viewer}}}, cowboy shot, arms behind back pose,solo focus, intricate, (highly detailed)|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality,signature, watermark, username, blurry, artist name, multiple legs, malformation,{{{{{4fingers,6fingers,bad fingers}}}}}, fat|Fate/stay night|氷室鐘|v3使用|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/AWTdDgqnjo-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/AWTdDgqnjo.png]]|
 |}
 
+***　Fate/strange Fake
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(300px):備考|サンプル|
+|||||||
+|Francesca Prelati,fate/strange fake,||Fate/strange Fake|フランチェスカ・プレラーティ|V4.5使用|https://image02.seesaawiki.jp/n/h/nai_ch/356241935bf63446.png|
+|}
 ***　Fate/ZERO
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(300px):備考|サンプル|
@@ -175,7 +181,5 @@
 |mash_kyrielight,purple eyes,hair over one eyes,|glasses,long hair,braids|Fate/Grand Order|マシュ・キリエライト(1〜3臨orオルテナウス改)|V1使用~~服装指定をしなければ概ね黒紫のアーマーを着てくれるが、形状は不安定~~人気キャラだが名前だけで生成すると意外ととっちらかる。~~ダンボール内で「mash kyrielight (dangerous beast)」で他キャラにコスさせる絵が大量にあるからか~~また、negativeにglassesを入れないと高確率で眼鏡をかける。私服状態を作りたいならポジティブに入れること |[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/reOLRIo5_u-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/reOLRIo5_u.png]]|
 |(official style) ,1girl,{{{medusa luncher (fate)}}}, {{{fate/grand order}}},loli,expressionless,front parted hairstyle,silver eyes,square pupils,small breasts,black hood,black mant,black leotard,big scythe,masterpiece,best quality,amazing quality, very aesthetic,absolutely resolution,ultra highres,hyper detailed,intricate,absurdres,overall detail,cowboy shot,{{{game cg}}},year 2023|lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality,signature, watermark, username, blurry, artist name, multiple legs, malformation,{{{{{4fingers,6fingers,bad fingers}}}}}, fat,@_@|Fate/Grand Order|メドゥーサ（アナ）|V3使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/0z3yP7pM9t-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/0z3yP7pM9t.png]]|
 |}
-
-
 
 
