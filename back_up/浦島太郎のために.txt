@@ -51,6 +51,11 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 * 目次
 
 #contents
+*2026年
+**2026-01-06 ComfyUIがWindowsのAMD ROCmに対応
+https://blog.comfy.org/p/official-amd-rocm-support-arrives
+まずはComfyUI desktopが対応し、ポータブル版やGit版も順次対応していくとのこと。
+
 *2025年
 **2025-12-31 Alibaba、Qwen-Image-2512を公開
 https://huggingface.co/Qwen/Qwen-Image-2512
@@ -1176,6 +1181,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 

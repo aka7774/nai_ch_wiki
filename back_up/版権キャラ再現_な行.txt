@@ -161,10 +161,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|aioi yuuko, nichijou, tokisadame school uniform, brown hair, short hair, brown eyes, red bowtie, white sailor collar, yellow shirt, solo, cowboy shot, ||日常|相生祐子|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1Vs8En_zFS-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1Vs8En_zFS.png]]|
-|naganohara mio, nichijou, blue eyes, hair ornament, short twintails, blue hair, tokisadame school uniform, yellow shirt, red neckerchief, solo, cowboy shot, ||日常|長野原みお|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OZvviNlD8Y-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/OZvviNlD8Y.png]]|
-|minakami mai, nichijou, tokisadame school uniform, black hair, long hair, black eyes, red bowtie, white sailor collar, yellow shirt, solo, cowboy shot, glasses,|smile|日常|水上麻衣|V3|[[https://image01.seesaawiki.jp/n/h/nai_ch/EaXN5WRVG2.png]]|
-|shinonome nano, nichijou, black hair, black eyes, short hair, school uniform, solo, cowboy shot, ||日常|東雲なの|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oV9CUDxbRQ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oV9CUDxbRQ.png]]|
+|aioi yuuko, nichijou, brown eyes, short hair, brown hair, tokisadame school uniform, white sailor collar, yellow shirt, red bowtie,solo,cowboy shot, ||日常|相生祐子|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/1Vs8En_zFS-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/1Vs8En_zFS.png]]|
+|naganohara mio, nichijou, blue eyes, hair ornament, short twintails, blue hair, tokisadame school uniform, white sailor collar,  yellow shirt, red bowtie, solo, cowboy shot, ||日常|長野原みお|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OZvviNlD8Y-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/OZvviNlD8Y.png]]|
+|minakami mai, nichijou,  black eyes, long hair, black hair, glasses, tokisadame school uniform, white sailor collar, yellow shirt, red bowtie, solo, cowboy shot,|smile|日常|水上麻衣|V3|[[https://image01.seesaawiki.jp/n/h/nai_ch/9ae4f2c8dd69c476.png]]|
+|shinonome nano, nichijou, black eyes, short hair, black hair, tokisadame school uniform, white sailor collar,  yellow shirt, red bowtie, solo, cowboy shot, ||日常|東雲なの|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/oV9CUDxbRQ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/oV9CUDxbRQ.png]]|
 |professor_shinonome , nichijou, long hair, anime screencap, loli, toddler, white lab coat, red tie, bust up|black hair, glasses|日常|はかせ|v3でほぼキャラ特徴の指定なしで出せるようになった。足先まである長い白衣は再現性低い。|https://image01.seesaawiki.jp/n/h/nai_ch/V8Z5Y3KAAK.png|
 |solo, 1girl, nichijou, loli, light orange hair , long hair, white labcoat, 6 years old, red tie,white shirt, tatami, shouji, window_shade, anime, pretty black cat, smile, infant||日常|はかせ||https://image01.seesaawiki.jp/n/h/nai_ch/2HTo2AkoG9.png|
 |}
