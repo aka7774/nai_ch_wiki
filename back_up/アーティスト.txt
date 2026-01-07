@@ -11,8 +11,6 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
-||甘城なつき|||
-||クリムゾン|||
 |artist:sakuzyo,|削除|V4.5 Full。リズムゲームへの楽曲提供を多数行っているコンポーザーで、イラスト関連の人物ではないのだが、なぜか artist タグに反応する。おそらく V4.5 Full のバグと思われる。|https://image01.seesaawiki.jp/n/h/nai_ch/21369f4a4d1a29c2.png|
 |artist:tezuka osamu,|手塚治虫|V4.5 Full。いわずと知れた漫画の神様。|https://image02.seesaawiki.jp/n/h/nai_ch/1c272a8fa811f6ed.png|
 |{{ouma bunshichirou}},|逢摩文七郎|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/3afb47ce05801815.png|
@@ -21,8 +19,6 @@ artist:[アーティスト名]
 |igaiga,|高内優向|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/7593f79bda74001d.png|
 |yuuki nobuteru,|結城信輝|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/67aad03be0e57754.png|
 |{{nogami takeshi}},|野上武志|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image02.seesaawiki.jp/n/h/nai_ch/cc866de3ed6aaa33.png|
-||しゅにち|||
-||矢吹|||
 |alexa_mahone, |荒草まほん|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/20dc55caa6f62787.png|
 |watsuki ayamo, |わつきるみ|V4.5 Full。キャラクタを描く場合プロンプトは、"[キャラ名], [アーティスト名],"の方が特徴が出やすい。|https://image01.seesaawiki.jp/n/h/nai_ch/1e13cdd60af7bd99.png|
 |{{tsukushi akihito}},|つくしあきひと|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/0321a38ce713d93d.png|
