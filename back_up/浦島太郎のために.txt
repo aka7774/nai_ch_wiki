@@ -52,6 +52,11 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-01-10 niji・journey v7がリリースされる
+https://nijijourney.com/home
+- 告知：https://nijijourney.com/blog/niji-7
+一貫性の向上が最大の改善点とのこと。
+
 **2026-01-09 fal、Qwen Image Edit 2511用のアングル変更LoRAを公開
 https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
 入力画像をほかのアングルから見た画像にして出力できる。ComfyUIで利用可能。
@@ -61,7 +66,7 @@ https://huggingface.co/Lightricks/LTX-2
 オーブンソースの動画／音声生成基盤モデル「LTX-2」が公開された。
 音声にリップシンクした動画を生成できるほか、canny、depth、poseからの生成やi2v、v2vの生成も可能。
 ComfyUIは[[即日対応>https://blog.comfy.org/p/ltx-2-open-source-audio-video-ai]]。
-
+-GGUF：https://huggingface.co/QuantStack/LTX-2-GGUF ／ https://huggingface.co/vantagewithai/LTX-2-GGUF ／ https://huggingface.co/Kijai/LTXV2_comfy/tree/main
 **2026-01-06 ComfyUIがWindowsのAMD ROCmに対応
 https://blog.comfy.org/p/official-amd-rocm-support-arrives
 まずはComfyUI desktopが対応し、ポータブル版やGit版も順次対応していくとのこと。
@@ -1191,6 +1196,9 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
 
 
 
