@@ -717,6 +717,13 @@
 |}
 [END]
 
+***　好きな子がめがねを忘れた
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+| mie ai (anime), sukinako ga megane wo wasureta, glasses, serafuku, yellow ribbon, dark red miniskirt, expressionless | |好きな子がめがねを忘れた|三重あい|V4.5FULL。作品名を入れなければコレジャナイ感の絶妙に似てない別人になる。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/67d1299bada85d6c.png)>https://image01.seesaawiki.jp/n/h/nai_ch/67d1299bada85d6c.png]]|
+| mie ai (anime), sukinako ga megane wo wasureta, jitome, v-shaped eyebrows, serafuku, yellow ribbon, dark red miniskirt, expressionless | |好きな子がめがねを忘れた|三重あい(メガネ忘れて登校)|V4.5FULL。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2122079e6b86c6ad.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2122079e6b86c6ad.png]]|
+|}
+
 ***　スクールランブル
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -816,6 +823,7 @@
 [END]
 
 ***　ストライクウィッチーズ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |girl,{official art},hattori shizuka, strike witches, smile,salute,military uniform||ストライクウィッチーズ|服部静夏|V4.5FULL|https://image02.seesaawiki.jp/n/h/nai_ch/62da36de764cfd3b.png|
@@ -844,6 +852,7 @@
 [END]
 
 ***　ストライク・ザ・ブラッド
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, 2020s,anime coloring, 1girl, 1.2::astarte &#40;strike the blood)::, 1.1::strike the blood::, expressionless,blush, small breasts, blue eyes, blue hair, long hair, 1.2::official hairstyle::, 1.3::official costume::, maid, maid apron, standing, full body, front view, white background, best quality, very aesthetic, absurdres,|megami magazine, 3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, pubic hair,6 fingers, 4 fingers, 6 toes, 4 toes,|ストライク・ザ・ブラッド|アスタルテ|V4.5 full版。|https://image01.seesaawiki.jp/n/h/nai_ch/4c33f30890f250de.png|
@@ -864,7 +873,17 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|lucia morgan, street fighter v, girl, cap, jacket, shirt, belt, short shorts, thighhighs, raced boots, standing, ||ストリートファイター��|ルシア・モーガン|梓川咲太	V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/3951048fa6bc8ffc.png|
+|lily hawk,&#160;street fighter 6, girl, native american clothes, blue shirt, red shorts, shoes, standing, holding pogamoggan, dual wielding, arms at side, full body,||ストリートファイター��|リリー・ホーク|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/27cb012f8e82af40.png|
+|kazama akira,&#160;street fighter v, girl, camouflage shirt, jacket around waist, gloves, leather pants, knee pads, shin guards, standing, arms at side, full body,||ストリートファイター��|風間あきら|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/286c5609193b6cb8.png|
+|female seth (street fighter),&#160;street fighter v, girl, standing, arms at side, full body,||ストリートファイター��|セス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/fb3c7cbcd136b92f.png|
+|falke (street fighter),&#160;street fighter v, girl, hat, coat, fingerless gloves, thigh boots, holding bo staff, standing, arms at side, full body,||ストリートファイター��|ファルケ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/7e6ac8aabf4ba247.png|
+|kasugano sakura,&#160;street fighter v, girl, red headband, white shirt, neckerchief, underbust, black skirt, fingerless gloves, black socks, black boots, standing, arms at side, full body,||ストリートファイター��|春日野さくら|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/60a5f39f0ce82dbb.png|
+|menat,&#160;street fighter v, girl, usekh collar, black mini dress, black gloves, black thighhighs, standing, arms at side, full body,||ストリートファイター��|メナト|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ec67ea7e87024574.png|
+|kolin,&#160;street fighter v, girl, hat, black mini dress, black gloves, black thighhighs, black boots,  standing, arms at side, full body,||ストリートファイター��|コーリン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9aca9aa832f1956d.png|
+|han juri,&#160;street fighter v, girl, bodysuit, standing, arms at side, full body,||ストリートファイター��|ハン・ジュリ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/9388692fd404e52b.png|
+|laura matsuda,&#160;street fighter v, girl, crop top, front-tie top, bracelet, green pants, standing, arms at side, full body,||ストリートファイター��|ララ・マツダ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b19ca482606260e9.png|
+|yamato nadeshiko (street fighter),&#160;street fighter v, girl, white leotard, elbow pads, knee boots, standing, arms at side, full body,||ストリートファイター��|大和・ナデシコ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/13ac39347a7db587.png|
+|lucia morgan, street fighter v, girl, cap, jacket, shirt, belt, short shorts, thighhighs, raced boots, standing, ||ストリートファイター��|ルシア・モーガン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/3951048fa6bc8ffc.png|
 |chun-li, street fighter v, girl, bun cover, blue china dress, spiked bracelet, pantyhose, white raced boots, standing, ||ストリートファイター��|春麗|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/4b2a4dd727174502.png|
 |poison &#40;street fighter) , street fighter,||ストリートファイター|ポイズン|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/96011d74cd117dd9.png|
 |ibuki&#40;street fighter) , street fighter,||ストリートファイター|イブキ|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/cc5ca32237b449ad.png|
@@ -1556,6 +1575,14 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
+
+
+
+
+
+
+
+
 
 
 

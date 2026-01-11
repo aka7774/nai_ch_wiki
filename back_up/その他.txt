@@ -72,98 +72,100 @@
 * 単語集
 
 {| class="sort edit nanj_prompt_table"
-|~w(300px):プロンプト|~w(100px):意味|~w(100px):備考|~w(100px):サンプル|
-|Girls sandwich|サンドイッチ|3 girlsとか入れるよりギュッとする|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pvtpA5Lci7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pvtpA5Lci7.png]]|
-|adidas|アディダス|服がスポーツウェアになりやすくなる|https://image01.seesaawiki.jp/n/h/nai_ch/aKtra_9pR8.png|
-|trading card|トレーディングカード風|トレーディングカード風の枠が付く　スレ有識者によるとハイスクールDDのソシャゲのものらしい　（画像はマジカルチンポTCG）|https://image02.seesaawiki.jp/n/h/nai_ch/cMpWXF5nvt.png|
-|Warframe|ウォーフレーム|体がウォーフレームと化す、gold trimを使用するとプライムフレームになる　何故か正座するポーズが多い|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tBml6ges9d-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/tBml6ges9d.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mY8CfPlCwI-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/mY8CfPlCwI.png]]|
-|Monster Energy|モンスターエナジードリンク|モンスターエナジーのマークかモンスターエナジードリンクそのものが出現する。V3だとモンスターエナジードリンクと女の子が生成されます。見た目を指定しない場合、服装が黒と緑を基調したものになる他、目の色が高確率で緑になります。サンプル画像３枚目はmonster energy,のみで生成したもの、４枚目は1girl, solo, monster energy,で生成したもの。|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KQ2hX1EboY.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2K1QeJhwF1.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zzg04UKuHz.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jEgLWVKSXK.png)|
-|laceration|裂傷|顔を中心に血や古傷が付く|https://image01.seesaawiki.jp/n/h/nai_ch/0VS3c6MlwW.png|
-|soap censor|泡で隠すやつ|||
-|stained panties|||画像なし|
-|mutated 〜|除外ワードに入れることで形の崩壊を防ぐお守り(mutated hands,mutated fingersなど)|||
-|nsfw|R18|||
-|1girl|女一人|||
-|penis|ペニス|||
-|stained panties|濡れたパンツ|||
-|blush|赤面(照れ顔)|||
-|smartphone|スマホ(手持ち)|||
-|wind_lift|パンチラ神風|||
-|bed,on bed, bedroom|ベッド|||
-|attach the penis to her ~~ penis girl|ふたなり化|||
-|steam|蒸れ蒸れ|||
-|cum|射精|||
-|cyborg|機械化|||
-|stabbed|ソフトリョナ|||
-|big areolae|デカ乳輪|||
-|femdom|女王様気質|||
-|erection, handjob|手コキ?|||
-|virginal blood|破瓜|||
-|white background|背景無し|||
-|undressing|一部脱衣|||
-|stomach_tatoo|腹淫紋|||
-|nipples visible through clothes|主張乳首|||
-|furry suit|獣人?|||
-|expressionless|無表情|||
-|pussy line  |すじ|||
-|cameltoe  |すじ(衣服の上)|||
-|スーパーガールで作ろうとすると露骨に赤面嫌顔になるらしい| |||
-|motorcycle|バイク召喚|||
-|寺田てら|デフォルメ化|||
-|Deepnude|脱衣|||
-|talking head anime|有能サイト|||
-|pregnant|ボテ腹|||
-|evil smile, devilsmile|挑発的な笑み|||
-|thight,thick_thight,spread_legs,|開脚|||
-|puffy nipple|乳首ぷっくり|||
-|Realism,Realistic,Photorealistic|リアル寄り|||
-|submissive|従順|||
-|shyness|照れ|||
-|fellatio+kiss 啄みフェラ→頬張るようなフェラ| |||
-|bowtie|蝶ネクタイ|||
-|dress shirt|Yシャツ|||
-|pleated skirt|プリーツスカート|||
-|Crown Twist Braid?|髪型：三つ編みカチューシャ|||
-|lingerie, underwear|下着|||
-|Dogeza|土下座|||
-|dark-persona|闇落ち|||
-| |人外肌→(好きな色)_skin|||
-|ふたなり生成呪文+skirt→勝手にスカートを持つらしい| |||
-|double_v|ダブルピース|||
-|fellatio_gesture|フェラ素振り|||
-|amputee|切断?|||
-|defiant look|反抗的な目|||
-|cum_in_panties|パンツに射精|||
-|ebony|褐色|||
-|tanlines|日焼け|||
-|dark-skin|黒肌|||
-|mature female|大人の女性|||
-|頭身変更にはアス比を変えるのも良い| |||
-|bandaids on nipples|乳首絆創膏|||
-|爆乳爆根ふたなりで稀にセルフパイズリ| |||
-|Shift+Enterでプロンプト改行| |||
-|magnificent,makoto shinkai|心揺さぶる自然風景(アニメ調)|||
-|phimosis|包茎|||
-|feared, scared eyes|恐れ眼|||
-|pantyshot|下アングル|||
-|pubic hair|陰毛 剛毛|||
-|under hair|柔らかい、少ない|||
-|censored|検閲(モザイクなど)|||
-|neon|サイバーバンク|||
-|露出に使うexhibitionism自体に恥じらいの意味あり| |||
-|huge testicles|巨大金玉|||
-|tongue out|舌出し (高確率で崩れる)|||
-|Variations|似た構図で3枚生成|||
-|Enhance|自然に仕上げる|||
-|inverted nipple|陥没乳首の可能性アリ|||
-|small anus|【ケツを突き出す呪文】|||
-|from behind|同じシードかつ角度を変えるコマンドを追加すると一貫性を保ちつつ絵を変更可能|||
-|armpit_hair|腋毛|||
-|leg grab|I字バランスで足を掴む呪文|||
-|sparkle|目や背景がキラキラする|||
-|saliva|よだれ|||
-|toes|つま先|||
-|frightened|恐怖する|（主観側が）監禁、突き落とし、遭遇、接近される視点が現れる傾向がある。※強調しすぎると青い蝶の様な虫が周囲に現れる場合があるので注意||
+|~w(300px):プロンプト|w(150px):ネガティブプロンプト|意味|備考|サンプル|
+|Girls sandwich|サンドイッチ|3 girlsとか入れるよりギュッとする||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/pvtpA5Lci7-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/pvtpA5Lci7.png]]|
+|adidas|アディダス|服がスポーツウェアになりやすくなる||https://image01.seesaawiki.jp/n/h/nai_ch/aKtra_9pR8.png|
+|trading card|トレーディングカード風|トレーディングカード風の枠が付く　スレ有識者によるとハイスクールDDのソシャゲのものらしい　（画像はマジカルチンポTCG）||https://image02.seesaawiki.jp/n/h/nai_ch/cMpWXF5nvt.png|
+|Warframe|ウォーフレーム|体がウォーフレームと化す、gold trimを使用するとプライムフレームになる　何故か正座するポーズが多い||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/tBml6ges9d-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/tBml6ges9d.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/mY8CfPlCwI-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/mY8CfPlCwI.png]]|
+|Monster Energy|モンスターエナジードリンク|モンスターエナジーのマークかモンスターエナジードリンクそのものが出現する。V3だとモンスターエナジードリンクと女の子が生成されます。見た目を指定しない場合、服装が黒と緑を基調したものになる他、目の色が高確率で緑になります。サンプル画像３枚目はmonster energy,のみで生成したもの、４枚目は1girl, solo, monster energy,で生成したもの。||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/KQ2hX1EboY.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2K1QeJhwF1.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/zzg04UKuHz.png)&ref(https://image02.seesaawiki.jp/n/h/nai_ch/jEgLWVKSXK.png)|
+|laceration|裂傷|顔を中心に血や古傷が付く||https://image01.seesaawiki.jp/n/h/nai_ch/0VS3c6MlwW.png|
+|soap censor|泡で隠すやつ||||
+|stained panties||||画像なし|
+|mutated 〜|除外ワードに入れることで形の崩壊を防ぐお守り(mutated hands,mutated fingersなど)||||
+|nsfw|R18||||
+|1girl|女一人||||
+|penis|ペニス||||
+|stained panties|濡れたパンツ||||
+|blush|赤面(照れ顔)||||
+|smartphone|スマホ(手持ち)||||
+|wind_lift|パンチラ神風||||
+|bed,on bed, bedroom|ベッド||||
+|attach the penis to her ~~ penis girl|ふたなり化||||
+|steam|蒸れ蒸れ||||
+|cum|射精||||
+|cyborg|機械化||||
+|stabbed|ソフトリョナ||||
+|big areolae|デカ乳輪||||
+|femdom|女王様気質||||
+|erection, handjob|手コキ?||||
+|virginal blood|破瓜||||
+|white background|背景無し||||
+|undressing|一部脱衣||||
+|stomach_tatoo|腹淫紋||||
+|nipples visible through clothes|主張乳首||||
+|furry suit|獣人?||||
+|expressionless|無表情||||
+|pussy line  |すじ||||
+|cameltoe  |すじ(衣服の上)||||
+|スーパーガールで作ろうとすると露骨に赤面嫌顔になるらしい| ||||
+|motorcycle|バイク召喚||||
+|寺田てら|デフォルメ化||||
+|Deepnude|脱衣||||
+|talking head anime|有能サイト||||
+|pregnant|ボテ腹||||
+|evil smile, devilsmile|挑発的な笑み||||
+|thight,thick_thight,spread_legs,|開脚||||
+|puffy nipple|乳首ぷっくり||||
+|Realism,Realistic,Photorealistic|リアル寄り||||
+|submissive|従順||||
+|shyness|照れ||||
+|fellatio+kiss 啄みフェラ→頬張るようなフェラ| ||||
+|bowtie|蝶ネクタイ||||
+|dress shirt|Yシャツ||||
+|pleated skirt|プリーツスカート||||
+|Crown Twist Braid?|髪型：三つ編みカチューシャ||||
+|lingerie, underwear|下着||||
+|Dogeza|土下座||||
+|dark-persona|闇落ち||||
+| |人外肌→(好きな色)_skin||||
+|ふたなり生成呪文+skirt→勝手にスカートを持つらしい|||||
+|double_v|ダブルピース||||
+|fellatio_gesture|フェラ素振り||||
+|amputee|切断?||||
+|defiant look|反抗的な目||||
+|cum_in_panties|パンツに射精||||
+|ebony|褐色||||
+|tanlines|日焼け||||
+|dark-skin|黒肌||||
+|mature female|大人の女性||||
+|頭身変更にはアス比を変えるのも良い| ||||
+|bandaids on nipples|乳首絆創膏||||
+|爆乳爆根ふたなりで稀にセルフパイズリ| ||||
+|Shift+Enterでプロンプト改行| ||||
+|magnificent,makoto shinkai|心揺さぶる自然風景(アニメ調)||||
+|phimosis|包茎||||
+|feared, scared eyes|恐れ眼||||
+|pantyshot|下アングル||||
+|pubic hair|陰毛 剛毛||||
+|under hair|柔らかい、少ない||||
+|censored|検閲(モザイクなど)||||
+|neon|サイバーバンク||||
+|露出に使うexhibitionism自体に恥じらいの意味あり| ||||
+|huge testicles|巨大金玉||||
+|tongue out|舌出し (高確率で崩れる)||||
+|Variations|似た構図で3枚生成||||
+|Enhance|自然に仕上げる||||
+|inverted nipple|陥没乳首の可能性アリ||||
+|small anus|【ケツを突き出す呪文】||||
+|from behind|同じシードかつ角度を変えるコマンドを追加すると一貫性を保ちつつ絵を変更可能||||
+|armpit_hair|腋毛||||
+|leg grab|I字バランスで足を掴む呪文||||
+|sparkle|目や背景がキラキラする||||
+|saliva|よだれ||||
+|toes|つま先||||
+|frightened|恐怖する|（主観側が）監禁、突き落とし、遭遇、接近される視点が現れる傾向がある。※強調しすぎると青い蝶の様な虫が周囲に現れる場合があるので注意|||
+|}
+
 * NovelAI擬人化ちゃん
 
 {| class="sort edit nanj_prompt_table"
@@ -174,6 +176,8 @@
 |masterpiece, {novelAI}, 1girl, holding_pen, painting_(action), canvas_(object), {robot_joints}, cyborg ,drawing, paintbrush, beret, [glowing_eyes], double-breasted, detached_sleeves, silver long_hair, hair_between_eyes, yellow minion bigbird||NAIちゃん||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wbkPS0mo64-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wbkPS0mo64.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/atXAhUnEZV-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/atXAhUnEZV.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/12c8rcmHl0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/12c8rcmHl0.png]]|
 |masterpiece, lewdness,{novelAI}, 1girl, full body, Chibi, {robot_joints}, cyborg , beret, [glowing_eyes], double-breasted, detached_sleeves, silver long_hair, hair_between_eyes,||チビNAIちゃん||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/YaPp4eWNYR.png)>https://image02.seesaawiki.jp/n/h/nai_ch/YaPp4eWNYR.png]]|
 |} 
+
+
 
 
 

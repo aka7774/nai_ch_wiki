@@ -17,10 +17,10 @@
 |Colab|Google Colaboratory|クラウドサービス。ローカル版を動かすことができる。|
 |HF/&#129303;|Hugging Face|研究者がモデルやソースコードの置き場として使っているサイト。GitHubみたいなもの。|
 |NAI|NovelAI|単なる略称。まれにNoobAI-XLの略称として使用される。|
-|&#127820;|Nano Banana(Gemini 2.5 Flash Image)|Google製の画像生成AI。優れた一貫性をもつ。|
+|&#127820;|Nano Banana|Google製の画像生成AI。優れた一貫性をもつ。|
 |アナル|Anlas|NovelAI公式の課金通貨。|
 |ちびたい|[[Civitai>https://civitai.com/]]|モデル配布サイト|
-|チャッピー|ChatGPT|OepnAIが開発する大規模言語モデルを用いたチャットボット|
+|チャッピー|ChatGPT|OepnAIが開発する大規模言語モデル(LLM)を用いたチャットボット|
 
 ** モデル
 |~用語|正式名称|説明|
@@ -28,7 +28,7 @@
 |1.5|SD 1.5|Stable Diffusionの初代のマイナーチェンジ版。2022年にリリースされて以来長らく主流だったが、2024年には後継のSDXLが普及しきって廃れた|
 |Illustrious/イラストリアス|Illustrious-XL|SDXLベースのアニメモデル|
 |Noob|NoobAI-XL|Illustrious-XL-v0.1の派生|
-|pony7|Pony Diffusion V7|AuraFlowをファインチューニングしたモデル。知名度が低く情報が少ないAuraFlowがベースで流行ることは...なさそう。|
+|pony7|Pony Diffusion V7|AuraFlowをファインチューニングしたモデル。知名度が低く情報が少ないAuraFlowがベースで流行ることは...なかった。|
 |Qwen|Qwen Image|中国Alibabaが開発したパラメータ数20B(200億)の画像モデル|
 |SD|Stable Diffusion|単なる略称|
 |V3|NovelAI Diffusion V3|2023年11月に登場したNovelAIの旧モデル。SDXLベースだがクローズドソース。キャラ再現度やインペイントが優秀なためローカルと併用する人も多い|
@@ -38,10 +38,11 @@
 |モデル||SDXLやFLUX.1などモデルアーキテクチャそのものやCheckpointを意味する。スレ内ではもっぱら後者の意味で使用される。|
 |wan|Wan Video|動画生成AI|
 |Llasa||TTS(Text to Speech,音声合成)のAI。LLMのLlama 3に、XCodec2というモデルに対応するデータを出力できるよう学習させたもの。|
+|ZIT/ZIB|Z Image Turbo/Z Image Base|画像生成AI。Turboは蒸留版。Baseはまだ非公開。|
 
 ** 技術的
 |~用語|正式名称|説明|
-|Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけど処理が少し速い |
+|Batch count/Batch size||Batch sizeはGPUが一回の処理で画像を生成する枚数。Batch countはそれを何回行うか。カウント4、サイズ1だと1回描画を4回繰り返すから4倍の時間かかる。カウント1、サイズ4だと4枚を1度に描画するからVRAMたくさん使うけどCPU側の処理は一枚分だけなので少し速い |
 |CN|ControlNet|専用のモデルを使用して構図を制御する仕組み。|
 |FT|Fine-tuning|モデルのウェイトを調整する。|
 |DiT|Diffusion Transformer|生成AIのアーキテクチャの一つ。SD1,2,XLで使用されるU-Netより高性能で最近の多くの画像生成AIはこれを採用している|
@@ -52,8 +53,8 @@
 |inpaint||img2imgの一形態。元画像の一部を指定して画像を生成すること。|
 |LCM|Latent Consistency Model|推論(生成)の収束を速くする技術|
 |Hyper-SD/DMD2||推論(生成)の収束を速くする技術|
-|LoRA|Low-Rank Adaptation|現在主流の学習方法の1つ。|
-|LR|Learning Rate|学習率。学習のきめ細やかさあるいは速度。|
+|LoRA|Low-Rank Adaptation|現在主流の学習方法の1つ。メモリ使用量が通常のFine-tuningと比較して大幅に少ない。|
+|LR|Learning Rate|学習率。学習の速度。この値が大きいと収束が速くなるが粗くなる。|
 |m2m|movie to movie|動画から動画を作る技術|
 |NP/ネガ|Negative Prompt|Promptとは反対に出したくない要素を指定する|
 |t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
