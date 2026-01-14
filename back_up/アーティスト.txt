@@ -11,6 +11,8 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
+|artist:sakurai energy,|櫻井エネルギー|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/72d9f86daef2870d.png|
+|artist:takatsu keita,|高津ケイタ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/e954845173a1c450.png|
 |artist:asaki takayuki,|朝木貴行|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/e0bf020379b33a71.png|
 |artist:40hara,|40hara|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/2a3586d4956edf35.png|
 |artist:kurebayashi asami,|暮林あさ美|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/558bc472d6b8a7c5.png|
