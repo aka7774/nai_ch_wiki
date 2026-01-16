@@ -52,6 +52,17 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-01-15 Black Forest Lab、FLUX.2 [klein]をリリース
+https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
+https://huggingface.co/collections/black-forest-labs/flux2
+画像の生成と編集が可能なコンパクトモデルのシリーズ。9Bと4Bそれぞれにベースモデルと量子化モデルがある。
+- 1秒未満の推論
+- 単一のモデルで生成、編集、マルチ参照が可能
+- 4BモデルはVRAM約13GBで利用可能
+- 4BモデルのライセンスはApache 2.0、9BモデルはオープンウェイトでFLUX非商用ライセンス
+ComfyUIは即日対応。
+https://huggingface.co/Comfy-Org/flux2-klein-4B
+
 **2026-01-10 niji・journey v7がリリースされる
 https://nijijourney.com/home
 - 告知：https://nijijourney.com/blog/niji-7
@@ -1197,6 +1208,8 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
 
 
 
