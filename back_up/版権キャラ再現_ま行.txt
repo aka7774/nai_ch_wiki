@@ -234,8 +234,9 @@
 [END]
 
 ***　魔導具師ダリヤはうつむかない
+{| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|Dahlia Rossetti, madougushi dahliya wa utsumukanai, full body shot||魔導具師ダリヤはうつむかない|ダリヤ・ロセッティ|V4.5 Full版使用。|[[https://image02.seesaawiki.jp/n/h/nai_ch/2f7ee61813b9e946.png|
+|Dahlia Rossetti, madougushi dahliya wa utsumukanai, full body shot||魔導具師ダリヤはうつむかない|ダリヤ・ロセッティ|V4.5 Full版使用。|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/2f7ee61813b9e946.png)>https://image02.seesaawiki.jp/n/h/nai_ch/2f7ee61813b9e946.png]]|
 |}
 
 ***　魔都精兵のスレイブ
@@ -818,6 +819,10 @@
 |}
 [END]
 ----
+
+
+
+
 
 
 
