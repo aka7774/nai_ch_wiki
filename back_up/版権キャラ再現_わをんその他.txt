@@ -144,13 +144,16 @@
 [END]
 
 ***　One Room
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|amatsuki mashiro, one room, girl, blue shirt, grey skirt, shoes, standing, arms at side, full body,||One Room|天月 真白|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/25982bd46ebb6d7d.png|
+|nanahashi minori, one room, girl, blue striped shirt, white overalls, shorts, bare legs, sneakers, standing, arms at side, full body,||One Room|七橋 御乃梨|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9abdeef4a16ef24c.png|
 |Artist:kantoku, aoshima moka, one room, girl, black jacket, white shirt, blue shorts, pumps, standing, arms at side, full body, straight-on, ||One Room|青島 萌香|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/cb941bd25a411b14.png|
 |Artist:kantoku, momohara natsuki, one room, girl, blue dress, sandals, standing, arms at side, full body, straight-on, ||One Room|桃原 奈月|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9aa1fd0cca9052fe.png|
 |Artist:kantoku, hanasaka yui, one room, girl, white sweater, brown belt, brown skirt, black socks, sneakers, standing, arms at side, full body, straight-on, ||One Room|花坂 結衣|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3e0261f27aded682.png|
 |}
-
+[END]
 **を
 ***　ヲタクに恋は難しい
 {| class="sort edit nanj_prompt_table"
@@ -172,6 +175,7 @@
 |||||||
 |||||||
 |}
+
 
 
 
