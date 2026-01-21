@@ -59,7 +59,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|時間(計測値)|Time taken(秒)|オプション|備考|
-|mi50 32g|32gb|ryzen7 7700||41.26|--normalvram --preview-method auto --fp16-unet --auto-launch|ubuntu24+Cmfyui+rocm6.3.3(6.4.3からダウンしたら安定した)aliexpressで30kで購入。vramが多いので色々使えそう。 60kで買ったrx9060xt VRAM16gb（78秒）より早くて草。rx9060xtはrocmに加えてwhieelだとかrocm_go_fastだかを入れると早くなるらしいんだが、倍近いコスパと性能差を見るとやる気なくすｗ30kだしlINUX userなら買って損無いと思う。こんなベンチ早いよりもvram多くて動画生成できるほうが良くね？|
+|mi50 32g|32gb|ryzen7 7700||41.26|--normalvram --preview-method auto --fp16-unet --auto-launch|なんかすごい値上がりしてる。価値無し。|
 |RX9070XT|||||||
 |9070|||||||
 |RTX 5090|32GB|Ryzen 9 9950X||8.9|--opt-channelslast --disable-nan-check|Windows11 / version: v1.10.1-89-g2174ce5a / python: 3.10.11 / torch: 2.7.0+cu128 / xformers: N/A / spd-scaled dot product / 電力制限無し、ハローアスカでも普通にGPU電力が500W超えてて怖い|
