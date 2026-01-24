@@ -359,14 +359,25 @@
 [END]
 
 ***　魔法少女にあこがれて
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|sister gigant, mahou shoujo ni akogarete, girl, revealing clothes, nun headdress, black dress, pelvic curtain, black shoes, standing, arms at side, full body, ||魔法少女にあこがれて|シスタギガント|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/5bec9d748f824a7a.png|
+|venalita, mahou shoujo ni akogarete, other, no humans, standing, arms at side, full body, ||魔法少女にあこがれて|ヴェナリータ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/cf196edcfd5417e8.png|
+|leberblume, anemo nemo, mahou shoujo ni akogarete, girl, revealing clothes, blue hood, blue tunic, elbow gloves, thigh boots, standing, arms at side, full body, ||魔法少女にあこがれて|ルベルブルーメ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a11eef39ed450939.png|
+|loco musica, akoya matama, mahou shoujo ni akogarete, girl, revealing clothes, hat, jacket, black sailor collar, blue neckerchief, bikini top only, green skirt, black thighhighs, green boots, standing, arms at side, full body, ||魔法少女にあこがれて|ロコムジカ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/6bd9bdd172167aaa.png|
+|nero alice, morino korisu, mahou shoujo ni akogarete, girl, blue dress, apron, skirt, standing, arms at side, full body, ||魔法少女にあこがれて|ネロアリス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a1ae036de4167947.png|
+|leoparde (mahou shoujo ni akogarete), araga kiwi, mahou shoujo ni akogarete, girl, revealing clothes, hat, jacket, navel, panties, thigh boots, standing, arms at side, full body, ||魔法少女にあこがれて|レオパルト|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/464f94322f8ecb41.png|
 |official style,anime coloring,kiwi araga,mahou shoujo ni akogarete,bangs, ahoge, mole, mole under eye, purple eyes,light beige hair, hair bun, double hair bun,skirt, shirt, long sleeves, school uniform, white shirt, pleated skirt, serafuku, sailor collar, neckerchief, green skirt, green sailor collar||魔法少女にあこがれて|阿良河キウィ|V4使用|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/otNIftwOwC-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/otNIftwOwC.png]]|
 | official style,anime coloring,kiwi araga, mahou shoujo ni akogarete, ahoge, mole, mole under eye, purple eyes, light beige hair, hair bun, double hair bun, thighhighs, long sleeves, hat, underwear, panties, boots, sleeves past wrists, military, black panties, garter straps, no pants, sleeves past fingers, green headwear ||魔法少女にあこがれて|阿良河キウィ(レオパルト)|V4使用|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CXPHnOV8eZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/CXPHnOV8eZ.png]]|
-| official style,{{magia azure}},mahou shoujo ni akogarete,magical girl,{{{embarrassed}}},{{{cowboy shot}}} | | 魔法少女にあこがれて | マジアアズール | V4 使用　安定して生成できる|https://image02.seesaawiki.jp/n/h/nai_ch/ggX9LmabMr.png|
+|magia baiser, hiiragi utena, mahou shoujo ni akogarete, girl, revealing clothes, shrug (clothing), star pasties, underbust, navel, showgirl skirt, lowleg pants, shoes, standing, arms at side, full body, ||魔法少女にあこがれて|マジアベーゼ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/4af8daa0561d7ad7.png|
+|magia sulfur, tenkawa kaoruko, mahou shoujo ni akogarete, girl, magical girl, white shirt, yellow skirt, elbow gloves, thigh boots, standing, arms at side, holding wand, full body, ||魔法少女にあこがれて|マジアサルファ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3d66b6400b242e1e.png|
+|magia azure, minakami sayo, mahou shoujo ni akogarete, girl, magical girl, white shirt, blue skirt, elbow gloves, thigh boots, standing, arms at side, holding wand, full body, ||魔法少女にあこがれて|マジアアズール|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1ddeb2c24689909e.png|
+| official style,{{magia azure}},mahou shoujo ni akogarete,magical girl,{{{embarrassed}}},{{{cowboy shot}}} | |^|^| V4 使用　安定して生成できる|https://image02.seesaawiki.jp/n/h/nai_ch/ggX9LmabMr.png|
+|magia magenta, hanabishi haruka, mahou shoujo ni akogarete, girl, magical girl, white shirt, pink skirt, elbow gloves, thigh boots, standing, arms at side, holding wand, full body, ||魔法少女にあこがれて|マジアマゼンタ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b5f2c056b6cff27a.png|
 | official style, hiiragi utena,mahou shoujo ni akogarete,1girl,school uniform, sailor suit | | 魔法少女にあこがれて | 柊うてな | V4 制服の色が安定しない為研究が必要|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3R_GIx0awb-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/3R_GIx0awb.png]] |
 |}
-
+[END]
 ***　魔法陣グルグル
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -827,6 +838,9 @@
 |}
 [END]
 ----
+
+
+
 
 
 
