@@ -52,9 +52,15 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-01-28 Alibaba、Z-Imageをリリース
+https://huggingface.co/Tongyi-MAI/Z-Image
+Z-Image baseとしてアナウンスされていたモデル。蒸留済みのZ-Image turboの基盤モデルで、turboが速度を重視して設計されているのに対し、この無印は必要なステップ数が多い（28〜50）＝生成に時間がかかる。一方で、多様な美的表現、多様性のある出力、ネガティブプロンプトの利用などが可能。LoRA生成などの基盤にも向いている。
+ComfyUIは対応済み。
+GGUF：https://huggingface.co/jayn7/Z-Image-GGUF
+
 **2026-01-22 Alibaba、Qwen3-TTSをリリース
 https://github.com/QwenLM/Qwen3-TTS
-音声生成モデルのQwen3-TTSがリリースされた。音声データをもとにした発話や音声スタイルを指定しての発話が可能で、日本語をしゃべらせることもできる。
+音声生成モデルのQwen3-TTSがリリースされた。音声データをもとにした発話や音声スタイルを指定しての発話、プリセットのキャラクターによる発話が可能で、日本語をしゃべらせることもできる。
 
 **2026-01-15 Black Forest Lab、FLUX.2 [klein]をリリース
 https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
@@ -1212,6 +1218,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
