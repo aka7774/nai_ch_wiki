@@ -11,14 +11,16 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
-あ
-||Tony|||
-||おりょう|||
-||朝凪|||
+|artist:kitazume hiroyuki,|北爪宏幸|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/86b5e0c83f614ce2.png|
+|artist:matsuda yuusuke,|マツダユウスケ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/1aa55e6ce1425521.png|
+|artist:izumi rei,|イヅミレイ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/b5d2d33af6a94962.png|
+|artist:type 90 &#40;daihon'ei),|TYPE.90|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/0bee4a9455bfe63e.png|
+|artist:kaname aomame,|要青豆|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/f255567c02f52b02.png|
+|artist:tony taka,|Tony|V4.5 Full|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dda5e6ab1e7d4322.png)|
+|artist:oryo (oryo04),|おりょう|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/21de796a8a692ec3.png|
 |Artist:chima q|チマQ|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/4efffe0d771532cb.png|
 |Artist:gotou keiji|後藤 圭二|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/4e84cb5ffe0b3603.png|
 |Artist:kimura takahiro|木村貴宏|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/61b368ff7430d3e4.png|
-|||||
 ||新式そら兄３|||
 |artist:sakurai energy,|櫻井エネルギー|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/72d9f86daef2870d.png|
 |artist:takatsu keita,|高津ケイタ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/e954845173a1c450.png|
