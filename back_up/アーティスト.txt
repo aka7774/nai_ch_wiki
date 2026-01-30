@@ -11,6 +11,7 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
+||ie|||
 |artist:kitazume hiroyuki,|北爪宏幸|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/86b5e0c83f614ce2.png|
 |artist:matsuda yuusuke,|マツダユウスケ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/1aa55e6ce1425521.png|
 |artist:izumi rei,|イヅミレイ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/b5d2d33af6a94962.png|

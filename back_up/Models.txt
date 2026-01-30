@@ -3,7 +3,7 @@
 * 画像生成モデル
 
 広義では、HypernetworkやLoraで作成したファイルなども含まれるが、ここではいわゆるCheckpointの話をする。
-2025年8月時点で依然としてSDXLが主流。次世代DiTモデルはFine-tuningが難しいとされる上、パラメータ数が増加して重くなるばかり。そのため、この状況が変わらない限り変化はないだろう。
+2026年1月時点で依然としてSDXLが主流。次世代DiTモデルはパラメータ数が増加して重くなるばかり。そのため、この状況が変わらない限り変化はないだろう。
 
 * Stable Diffusion
 ** SD1
@@ -52,15 +52,14 @@ https://huggingface.co/stabilityai/stable-diffusion-3-medium
 ** SD3.5
 Large: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
+- 基本的にSD3.0と同じ
 - MMDiT
 - Large(8.1B)とMedium(2.6B)の二種類がある
-- 基礎解像度は1024x1024
 - MediumはT5を除けばSDXLと同程度のメモリ使用量だが、計算はSDXLの二倍遅い。Largeはメモリ使用量、計算量ともに非常に多い。
-- Text EncoderはCLIP L/Gに加えてT5XXL(任意)
--- 位置や文字の描写などの具体的な命令もOK
 - 規制の緩和とSD3.0の問題を解消
 -- でもライセンスにより実質NSFW禁止
 - パラメータ効率が低い
+- Fine-tuningが困難
 
 * ほかのText-to-Imageモデル
 オープンソースのモデルのみ掲載する。
@@ -79,7 +78,7 @@ schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 
 ** FLUX.2
 dev: https://huggingface.co/black-forest-labs/FLUX.2-dev
-- APIのみのpro,flexとオープンなdev,kleinの四種類ある(kleinは近日公開)
+- APIのみのpro,flexとオープンなdev,kleinの四種類ある
 - MMDiT
 - パラメータ数は32Bで素の状態ではほとんどの一般消費者向けハードウェアで動作困難
 -- 量子化やBlock Swapを使ってもなおメモリ消費が非常に多い
@@ -104,13 +103,14 @@ https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - TEはパラメータ効率のいいQwen3-4B
 -- 位置や文字の描写などの具体的な命令もOKで応答性が高い
 - TurboはDMDRで蒸留した収束が速いモデル
+-- ただし蒸留+強化学習の影響で多様性が低い？
 - Apache 2.0ライセンス
 
 ** Lumina-Image
 https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 - MMDiT
 - パラメータ数はSDXLより小さい2BでSDXL程度のメモリ使用量
--- でもSDXLより4倍遅い
+-- でもSDXLより遅い
 - Text EncoderにはGemma 2 2Bを採用
 -- 位置や文字の描写などの具体的な命令もOK(大型モデルほど得意ではない)
 - SDXLよりは良いがパラメータ数が圧倒的に大きいSD3.5 Large(8.1B)やQwen-Image(20B)には及ばない
@@ -229,6 +229,7 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 - 1ビットの符号と8ビットの指数部と7ビットの仮数部
 - fp32と指数部が一緒になる（ダイナミックレンジが広い代わりに仮数部が減ってるので小数点以下の表現力はfp16より少し落ちる）
 - IntelとNVIDIA(Ampere以降)のGPUで対応している(AMDはRDNA3以降で対応？)
+- DiTモデルで主流のフォーマット
 
 ** fp8(float8_e4m3fn)
 - 1ビットの符号と4ビットの指数部と3ビットの仮数部(ほかにもある)
@@ -236,7 +237,7 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 - だが精度も落ちる
 -- fp8 scaledならfp16相当の精度
 - Torchが自動でキャストするので非対応のGPUでも動作する。
-- NVIDIAのRTX40以降であればそのまま動いて速くなる(TensorRTが必要?)
+- NVIDIAのRTX40以降であればそのまま動いて速くなる
 -- しかしほとんどのソフトがfp8演算に非対応でfp16にアップキャストするので若干遅くなる。
 
 ** NormalFloat4(LinearNF4)
