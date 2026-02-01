@@ -52,6 +52,16 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-02-01 CircleStone Labs、Animaのプレビュー版をリリース
+https://huggingface.co/circlestone-labs/Anima
+CircleStone LabsとComfy orgが共同開発した、2Bパラメータのt2iモデル。アニメのキャラクターやデザインをはじめ、フォトリアリスティックでないイラストや芸術的な画像の生成に向いている。danbooruスタイルのプロンプトと自然言語、またこれらの組み合わせに対応。プロンプトの記述順序、品質タグやメタタグ、アーティストタグなどの記述といった情報は上記リンクを参照のこと。
+ComfyUIでネイティブサポートされている。推奨解像度は1024×1024、896×1152など約100万画素。またステップ数は30〜50、CFGは4〜5が推奨。
+- モデル…anima-preview.safetensors（ComfyUI/models/diffusion_modelsに配置）
+- テキストエンコーダ…qwen_3_06b_base.safetensors（ComfyUI/models/text_encodersに配置）
+- VAE…qwen_image_vae.safetensors（ComfyUI/models/vaeに配置）
+出力画像は商用利用が可能（CircleStoneのモデルと競合するモデルの学習などには使用不可）。モデルのライセンスはCircleStone Labsの非商用ライセンスで、モデルとその派生モデルは非商用のみで利用可能。（「また、このモデルはCosmos-Predict2-2B-Text2Imageの「派生モデル」を構成するため、派生モデルに適用される範囲においてNVIDIA Open Model License Agreementの対象となります」（機械翻訳による）との記述もあり）
+ライセンスの詳細は https://huggingface.co/circlestone-labs/Anima/blob/main/LICENSE.md を参照。
+
 **2026-01-28 Alibaba、Z-Imageをリリース
 https://huggingface.co/Tongyi-MAI/Z-Image
 Z-Image baseとしてアナウンスされていたモデル。蒸留済みのZ-Image turboの基盤モデルで、turboが速度を重視して設計されているのに対し、この無印は必要なステップ数が多い（28〜50）＝生成に時間がかかる。一方で、多様な美的表現、多様性のある出力、ネガティブプロンプトの利用などが可能。LoRA生成などの基盤にも向いている。
@@ -1218,6 +1228,8 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
 
 
 
