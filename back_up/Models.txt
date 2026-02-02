@@ -35,7 +35,7 @@ SDXL Base 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - 基礎解像度の1024x1024への変更とVAEの改良によりディティールが改善
 -- 特殊なノイズの影響を受けにくい
 - Text EncoderはCLIP-LとCLIP-G
--- 平凡な性能で具体的な命令を無視する
+-- 低性能で具体的な命令を無視する
 
 ** SD3.0
 https://huggingface.co/stabilityai/stable-diffusion-3-medium
@@ -48,6 +48,7 @@ https://huggingface.co/stabilityai/stable-diffusion-3-medium
 -- 位置や文字の描写などの具体的な命令もOK
 - 表現規制がきつく解剖がおかしくなる欠陥あり
 - 実質NSFW禁止
+- fp16で動く
 
 ** SD3.5
 Large: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
@@ -60,21 +61,10 @@ Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 -- でもライセンスにより実質NSFW禁止
 - パラメータ効率が低い
 - Fine-tuningが困難
+- fp16で動く
 
 * ほかのText-to-Imageモデル
 オープンソースのモデルのみ掲載する。
-
-** FLUX.1
-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
-schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
-- MMDiT
-- パラメータ数は12Bで重い
-- DevとSchnellの二種類がある
-- Text EncoderはCLIP LとT5XXL
--- 位置や文字の描写などの具体的な命令もOK
-- 蒸留モデル(Fine-tuningが困難らしい)
--- 故に品質はそこまで高くない？
-- 16チャネルVAE
 
 ** FLUX.2
 dev: https://huggingface.co/black-forest-labs/FLUX.2-dev
@@ -98,34 +88,37 @@ https://huggingface.co/Qwen/Qwen-Image
 ** Z-Image
 https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - MMDiT
-- パラメータ数6Bでやや重い
+- パラメータ数6Bで重い
 - パラメータ数のわりに高品質
 - TEはパラメータ効率のいいQwen3-4B
 -- 位置や文字の描写などの具体的な命令もOKで応答性が高い
 - TurboはDMDRで蒸留した収束が速いモデル
 -- ただし蒸留+強化学習の影響で多様性が低い？
 - Apache 2.0ライセンス
+- Fine-Tuningが困難な可能性あり
+
+** Anima
+https://huggingface.co/circlestone-labs/Anima
+- 開発中で品質は''現時点では''普通
+- MMDiT
+- アニメ特化モデル
+-- プロンプトはDanbooruタグと自然言語の両方に対応
+- パラメータ数2BでSDXLと同程度の大きさ
+- TEはQwen3
+- VAEはQwen Imageのものを使用する
+- 独自ライセンス(無断の商用利用は禁止？)
 
 ** Lumina-Image
 https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 - MMDiT
 - パラメータ数はSDXLより小さい2BでSDXL程度のメモリ使用量
--- でもSDXLより遅い
 - Text EncoderにはGemma 2 2Bを採用
 -- 位置や文字の描写などの具体的な命令もOK(大型モデルほど得意ではない)
-- SDXLよりは良いがパラメータ数が圧倒的に大きいSD3.5 Large(8.1B)やQwen-Image(20B)には及ばない
+- SDXLよりは良いがパラメータ数が圧倒的に大きいZ-Image(6B)やQwen-Image(20B)には及ばない
 - Apache 2.0ライセンス
 - 16チャネルVAE
 
-*** NetaYume Lumina
-https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
-- Lumina-Image 2をFine-tuningしたDanbooruタグと自然言語(日英中)対応のアニメモデル
-- 現状完成されたSDXLベースのアニメモデルのほうがいい。
--- 時々非常に美しい絵が出ることから可能性を感じる。かつてのSDXLのように、さらなるFine-tuningで改善の余地あり
-- 絵師タグが無いとベースモデルらしく不安定(Noobほどではない)
-- 細部、色、ライティングはSDXLより明確に良い
-
-* predictionの種類
+* predictionの種類(SD1,2,XL)
 ※間違っている可能性あり。間違っていたら修正してください。
 
 ノイズ予測アルゴリズムの種類。
