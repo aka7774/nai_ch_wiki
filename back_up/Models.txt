@@ -3,7 +3,7 @@
 * 画像生成モデル
 
 広義では、HypernetworkやLoraで作成したファイルなども含まれるが、ここではいわゆるCheckpointの話をする。
-2026年1月時点で依然としてSDXLが主流。次世代DiTモデルはパラメータ数が増加して重くなるばかり。そのため、この状況が変わらない限り変化はないだろう。
+2026年1月時点で依然としてSDXLが主流。次世代DiTアニメモデルは品質と負荷のバランスが取れたAnimaが有望？
 
 * Stable Diffusion
 ** SD1
@@ -49,6 +49,7 @@ https://huggingface.co/stabilityai/stable-diffusion-3-medium
 - 表現規制がきつく解剖がおかしくなる欠陥あり
 - 実質NSFW禁止
 - fp16で動く
+- パラメータ効率が低い
 
 ** SD3.5
 Large: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
@@ -70,7 +71,7 @@ Medium: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 dev: https://huggingface.co/black-forest-labs/FLUX.2-dev
 - APIのみのpro,flexとオープンなdev,kleinの四種類ある
 - MMDiT
-- パラメータ数は32Bで素の状態ではほとんどの一般消費者向けハードウェアで動作困難
+- devのパラメータ数は32Bで素の状態ではほとんどの一般消費者向けハードウェアで動作困難
 -- 量子化やBlock Swapを使ってもなおメモリ消費が非常に多い
 - ベンチマークスコアは高い(なおメモリ消費量)
 
@@ -99,24 +100,32 @@ https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 
 ** Anima
 https://huggingface.co/circlestone-labs/Anima
-- 開発中で品質は''現時点では''普通
-- MMDiT
 - アニメ特化モデル
+- 開発中
+- MMDiTでNVIDIAのCosmos-Predict2がベース
+-- パラメータ効率が良いのか軽量かつ開発中にしては高品質
+- パラメータ数2BでVRAM8GBで快適に動作する(だが計算はSDXLより二倍遅い)
+- TEはQwen3-0.6BでSDXLのCLIP-L+Gより軽量で高性能
 -- プロンプトはDanbooruタグと自然言語の両方に対応
-- パラメータ数2BでSDXLと同程度の大きさ
-- TEはQwen3
-- VAEはQwen Imageのものを使用する
-- 独自ライセンス(無断の商用利用は禁止？)
+-- 位置や文字の描写などの具体的な命令もOK(大型モデルほど得意ではない)
+- 16チャネルVAE(Qwen-Imageと同じもの)
+- 独自ライセンス(モデルの商用利用は禁止?)
 
 ** Lumina-Image
 https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 - MMDiT
 - パラメータ数はSDXLより小さい2BでSDXL程度のメモリ使用量
+-- パラメータ数相応の品質だが計算がかなり遅い
 - Text EncoderにはGemma 2 2Bを採用
 -- 位置や文字の描写などの具体的な命令もOK(大型モデルほど得意ではない)
-- SDXLよりは良いがパラメータ数が圧倒的に大きいZ-Image(6B)やQwen-Image(20B)には及ばない
+- SDXLよりは良いが大型モデルのZ-Image(6B)や小型で比較的高性能なCosmos-Predict(2B)には及ぼない
 - Apache 2.0ライセンス
 - 16チャネルVAE
+
+*** NetaYume Lumina
+https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
+- Lumina-Image 2ベースのアニメモデル
+- 現状Illustrious-XL系の方が良い
 
 * predictionの種類(SD1,2,XL)
 ※間違っている可能性あり。間違っていたら修正してください。
@@ -147,7 +156,7 @@ SNR=0(純粋なノイズ)でも機能する。
 全体が明るい、暗い、または高コントラストの状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。
 低めのGuidance Scaleで運用できる(5以下)。言い換えれば低めでないと彩度が過度に高くなる。
 欠点として、彩度やコントラストが極端に高くなったり構図の破綻が増加したりする。
-また、LoRA学習においては、不安定性が増大する(特に画風LoRA学習で相性が悪いと再現できずに品質が著しく低下する)。
+また、LoRA学習においては不安定性が増大する(特に画風LoRA学習で相性が悪いと再現できずに品質が著しく低下する)。
 
 ZTSNR有効のv-predictionモデルとepsilonモデルをマージするとZTSNRの効果が減少または消失し、「なんちゃってv-pred」になりやすいため注意。
 
@@ -195,7 +204,6 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 ** safetensors
 - Hugging Face提唱の形式
 - ロード時にPythonのコードを実行できないので安全
-- 読み込みも速くなる(はず)
 
 * 精度
 
@@ -213,13 +221,15 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 - floating pointの略。halfとかいう言葉が出てきたら大抵これのこと。
 - 1ビットの符号と5ビットの指数部と10ビットの仮数部
 - 処理が速い
-- 容量が半分で済む
+- 容量がfp32の半分で済む
 - IntelとNVIDIAのGPUで対応している(AMDはRDNA3以降で対応？)
 - ダイナミックレンジが狭いためオーバーフローによるNaN演算を起こしやすい
 - Torch2.6以降であればCPUでも動作する
 
 ** bf16/bfloat16
 - 1ビットの符号と8ビットの指数部と7ビットの仮数部
+- 処理が速い
+- 容量がfp32の半分で済む
 - fp32と指数部が一緒になる（ダイナミックレンジが広い代わりに仮数部が減ってるので小数点以下の表現力はfp16より少し落ちる）
 - IntelとNVIDIA(Ampere以降)のGPUで対応している(AMDはRDNA3以降で対応？)
 - DiTモデルで主流のフォーマット
@@ -237,11 +247,13 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 - 量子化をすることで精度低下を抑える？
 
 ** fp4
-- NVIDIAのBlackwellアーキテクチャで利用可能
--- TensorRTが必要？
 - fp8の半分、fp16の1/4の計算量
 - 精度が低い
 -- 4ビット量子化のほうがマシだとか
+
+*** nvfp4
+- NVIDIA専用のfp4フォーマット
+- NVIDIAのBlackwellアーキテクチャで利用可能
 
 [+] 古い情報
 SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98GiB)、SDXLなら6.94GB(6.46GiB)前後になる。
