@@ -11,6 +11,7 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
+||miwa|||
 |artist:tachibana omina,|立花オミナ|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/e96ce915083a18e0.png|
 |artist:shimimaru,|紙魚丸|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/5beae3915ee6b609.png|
 |artist:futaba yodoyume,|双葉淀夢|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/6385a65d6ea8630d.png|
