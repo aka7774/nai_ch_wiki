@@ -98,19 +98,6 @@ https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Apache 2.0ライセンス
 - Fine-Tuningが困難な可能性あり
 
-** Anima
-https://huggingface.co/circlestone-labs/Anima
-- アニメ特化モデル
-- 開発中
-- MMDiTでNVIDIAのCosmos-Predict2がベース
--- パラメータ効率が良いのか軽量かつ開発中にしては高品質
-- パラメータ数2BでVRAM8GBで快適に動作する(だが計算はSDXLより二倍遅い)
-- TEはQwen3-0.6BでSDXLのCLIP-L+Gより軽量で高性能
--- プロンプトはDanbooruタグと自然言語の両方に対応
--- 位置や文字の描写などの具体的な命令もOK(大型モデルほど得意ではない)
-- 16チャネルVAE(Qwen-Imageと同じもの)
-- 独自ライセンス(モデルの商用利用は禁止?)
-
 ** Lumina-Image
 https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 - MMDiT
@@ -126,6 +113,64 @@ https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
 - Lumina-Image 2ベースのアニメモデル
 - 現状Illustrious-XL系の方が良い
+
+* Anima
+https://huggingface.co/circlestone-labs/Anima
+アニメイラストに特化したMMDiTモデルで、NVIDIAのCosmos-Predict2がベースである。
+パラメータ数は2Bで、VRAM8GBで快適に動作する(だが計算はSDXLより二倍遅い)。
+Text EncoderはQwen3-0.6BでSDXLのCLIP-L+Gより軽量で高性能。
+プロンプトはDanbooruタグと自然言語(英語)の両方が使える。位置や文字の描写などの具体的な命令もOKだが大型モデルほど得意ではない。
+対応UIはComfyUI。
+
+現時点で512x512で学習したプレビュー版であり、1024x1024で学習するリリース版は開発中。
+
+タグは次の並びで学習しているが、これに従う必要はない。
+ quality/meta/year/safety tags, 1girl/1boy/1other etc, character, series, artist, general tags
+
+** 推奨生成パラメータ
+- 解像度: 画素数が1024x1024や832x1216などの104万画素に近似する値
+- Steps: 30-50(実際には20ステップで十分)
+- Guidance Scale: 4-5
+
+** 使用方法(ComfyUI)
+Hugging Faceリポジトリから次のファイルをDLして配置する。
+ComfyUI/models/diffusion_modelsにanima-preview.safetensors
+ComfyUI/models/text_encodersにqwen_3_06b_base.safetensors
+ComfyUI/models/vaeにqwen_image_vae.safetensors
+
+ComfyUIのテンプレートにAnimaがあるのでそこから生成を始めるといい。
+
+** 特殊タグ
+品質タグや年代タグなど
+- 品質タグ
+ masterpiece, best quality, good quality, normal quality, low quality, worst quality
+およびPonyV7のスコアと同様のscore_1〜score_9
+- 年代タグ
+ newest, recent, mid, early, old
+またはyear 2020のように西暦で指定する。
+- レーティングタグ
+左から順にDanbooruのgeneral, sensitive, questionable, explicitにあたる。
+ safe, sensitive, nsfw, explicit
+- アーティストタグ
+"@big chungus"のように@を名前の頭につける。
+
+** ComfyUIでFP16で動作させる方法
+以下のURLで配布されているPythonスクリプトをcustom_nodesに入れる。
+https://civitai.com/models/2356447?modelVersionId=2652286
+読み込んだ拡散モデルをModelComputeDtypeノード(dtypeをfp16にする)を介して使用する。
+bf16が使えるグラボでもパッチを当てることでfp16 accumulationで高速化できるメリットがあるかも。
+
+** トラブルシューティング
+
+*** 画風が安定しない
+ベースモデルで多様性が高いため仕様である。
+画風を安定させるならアーティストタグを使うのが手っ取り早い。
+
+*** 背景が単調
+Danbooruタグだけでは単調になりやすい。自然言語(英語)で具体的に指示すると改善する。
+
+*** クロップされた画像が出る
+一部のプロンプトで頻発するが原因不明。リリース版で解消を期待。
 
 * predictionの種類(SD1,2,XL)
 ※間違っている可能性あり。間違っていたら修正してください。
@@ -285,7 +330,7 @@ SDXLはpruned,fp16がデフォルトです。左の状態でSD1なら2.13GB(1.98
 * VAE
 
 - 数が少ないので横着せずにドロップダウンから選択したほうがいい
--- Quicksetting listにsd_vaeを追加する
+-- A1111であればQuicksetting listにsd_vaeを追加する
 - Checkpointに内蔵されているものを上書きする
 - SDXL BaseのVAEはfp16ではオーバーフローによるNaN演算で動作しないので、sdxl-vae-fp16-fixを使う
 
