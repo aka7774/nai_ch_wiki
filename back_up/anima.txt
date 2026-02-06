@@ -1,0 +1,76 @@
+* Animaについて
+https://huggingface.co/circlestone-labs/Anima
+アニメイラストに特化したMMDiTモデルで、NVIDIAのCosmos-Predict2がベースである。
+まだ開発中だが、すでにSDXLのIllustrious-XLを全面的に上回っているように感じる。
+
+パラメータ数は2Bで、VRAM8GBで快適に動作する(だが計算はSDXLより二倍遅い)。
+Text EncoderはQwen3-0.6BでSDXLのCLIP-L+Gより軽量で高性能。VAEはQwen3のものを使用する。
+
+現時点で512x512で学習したプレビュー版であり、1024x1024で学習するリリース版は開発中。
+
+* 対応UI
+現時点でComfyUIのみ。
+
+* 使用方法(ComfyUI)
+Hugging Faceリポジトリから次のファイルをDLして配置する。
+ComfyUI/models/diffusion_modelsにanima-preview.safetensors
+ComfyUI/models/text_encodersにqwen_3_06b_base.safetensors
+ComfyUI/models/vaeにqwen_image_vae.safetensors
+
+ComfyUIのテンプレートにAnimaがあるのでそこから生成を始めるといい。
+
+* 推奨生成パラメータ
+- 解像度: 画素数が1024x1024や832x1216などの104万画素に近似する値
+- Steps: 30-50(実際には20ステップで十分)
+- Guidance Scale: 4-5
+
+* プロンプト
+プロンプトはDanbooruタグと自然言語(英語)の両方が使える。位置や文字の描写などの具体的な命令もOKだが大型モデルほど得意ではない。
+
+タグは次の並びで学習しているが、これに従う必要はない。
+ quality/meta/year/safety tags, 1girl/1boy/1other etc, character, series, artist, general tags
+
+** 特殊タグ
+品質タグや年代タグなど
+*** 品質タグ
+ masterpiece, best quality, good quality, normal quality, low quality, worst quality
+およびPonyV7のスコアと同様のscore_1〜score_9
+*** 年代タグ
+ newest, recent, mid, early, old
+またはyear 2020のように西暦で指定する。
+*** レーティングタグ
+左から順にDanbooruのgeneral, sensitive, questionable, explicitにあたる。
+ safe, sensitive, nsfw, explicit
+*** アーティストタグ
+"@big chungus"のように@を名前の頭につける。
+
+** 強度指定
+Text EncoderはSD1/SDXLで使用されるCLIPではなくQwen3というLLMだが、機能する。
+しかし、SDXLほど効果は強くなく、15倍前後まで強くできる。大体70倍を超えると完全に壊れる。
+
+* ComfyUIでFP16で動作させる方法
+以下のURLで配布されているPythonスクリプトをcustom_nodesに入れる。
+https://civitai.com/models/2356447?modelVersionId=2652286
+読み込んだ拡散モデルをModelComputeDtypeノード(dtypeをfp16にする)を介して使用する。
+bf16が使えるグラボでもパッチを当てることでfp16 accumulationで高速化できるメリットがあるかも。
+
+* ライセンス
+CircleStoneLabsの独自ライセンス。独自と聞いて身構えるかもしれないが寛容なので安心しよう。
+有料の生成サービスやモデルの販売などモデル自体の商用利用は禁止だが、出力は商用利用ができる。
+モデルの使用は、違法または悪意のある目的を除き自由。
+
+* トラブルシューティング
+
+** 画風が安定しない
+ベースモデルで多様性が高いため仕様である。
+画風を安定させるならアーティストタグを使うのが手っ取り早い。
+
+** 背景が単調
+短いプロンプトでは単調になりがち。
+ベースモデルで多様性が高い上Text Encoderが賢いLLMのため、書いていないものは生成しない傾向が強い。
+Danbooruタグに加えて自然言語(英語)で具体的に指示することをお勧めする。
+
+** クロップされた画像が出る
+Discrete Flow Shiftの値が小さすぎることが原因の一つ。 
+ComfyUIでModelSamplingAuraFlowノードを使用するなら、shift値はAnimaの初期値の3前後を推奨する。3でもたまに出るけど…
+
