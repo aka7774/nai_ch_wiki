@@ -107,7 +107,7 @@ RTX 3060 8GB以上を推奨。理由はFP16演算が速くbf16が使えるため
 学習は、処理速度もVRAMもあればあるだけ良い。
 VRAM 8GBでも学習できるが解像度が欲しくなる。3060 12GBは評価が高い。
 
-Radeon、Intel Arc、Macでも動作はするが新規購入はお勧めしない。
+Radeon、Intel Arc、Macでも動作はするが新規購入はお勧めしない。MacはRAM32GB以上のM4 Pro搭載であれば快適に動く（電気代を気にする省電力派はMacがオススメ）。
 ケチるんならGeForce RTX 20シリーズの中古。ただしRTX30以降のGPUと違いbf16が使えなかったり一部技術が非対応だったりする。
 
 検証記事 [[【Stable Diffusion】AIイラストにおすすめなグラボをガチで検証【GPU別の生成速度】>>https://chimolog.co/bto-gpu-stable-diffusion-specs/]]
@@ -307,3 +307,12 @@ medvramはだいたい所要時間1.5倍くらい(Linuxにすると速くなる)
 lowvramはさらに4〜10倍くらい
 [END]
 
+** 試したいけどPC高騰してるからレンタルしたい
+[+]
+クラウドGPUレンタルサービスが国内外で始まってるので試すだけなら良い。
+ただし、レンタルサーバーの仕組みなどの知識が無いと構築するには難易度が高いので、ちゃんと調べてから試しましょう。
+[[ConoHa AI Canvas（国内）>https://ai.conoha.jp/canvas/]]
+[[RunPod（海外）>https://www.runpod.io/]]
+[[Paperspace（海外）>https://www.paperspace.com/]]
+
+[END]

@@ -11,6 +11,7 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
+か
 ||miwa|||
 |artist:tachibana omina,|立花オミナ|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/e96ce915083a18e0.png|
 |artist:shimimaru,|紙魚丸|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/5beae3915ee6b609.png|

@@ -178,6 +178,25 @@ https://image01.seesaawiki.jp/n/h/nai_ch/5vjuWcUYGC.png
 https://image02.seesaawiki.jp/n/h/nai_ch/Le5qI67s44.png
 [END]
 
+*perplexity
+**perplexityとは
+Perplexity（パープレキシティ）は、Google出身者らによって設立されたPerplexity AI社が提供する「対話型AI検索エンジン」です。従来の検索エンジンのようにリンクを羅列するのではなく、インターネット上の最新情報をAIが収集・要約し、質問に対して直接回答を生成します。
+Perplexityと対話しながら画像生成に使えるプロンプトを出力してくれます。NSFW系に強いのが特徴（ChatGPTやGeminiはNSFWだと判断すると回答を拒絶する）。
+https://www.perplexity.ai/
+
+*Grok
+**Grokとは
+イーロン・マスクのxAI社が出しているAI。
+Twitter板Grokは画像生成で国際問題になり有料ユーザーのみ利用可能になったが、直接Grokにアクセスすれば問題なく利用可能。
+無料プランでもNSFW系の画像生成してくれたり規制が非常に緩いので、Grokに聞きながらプロンプト生成が可能。
+https://grok.com/
+
+*Google AI Studio
+**Google AI Studioとは
+GoogleがGeminiなど正式版リリース前に利用ができるAIのテストモデルで無料で利用可能。
+Googleのテストモデルなので規制が緩い。
+https://aistudio.google.com/
+
 *Bingチャット
 **Bingチャットとは
 OpenAIの大規模言語処理モデル「Prometheus」をベースにしたAIチャットで、Microsoftの検索エンジン・Bingに組み込まれている。
