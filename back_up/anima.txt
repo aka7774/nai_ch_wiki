@@ -29,6 +29,7 @@ Text EncoderはQwen3-0.6BでSDXLのCLIP-L+Gより軽量で高性能であり、�
 - DiTであるが故に計算が遅い。大体SDXLの二倍の時間がかかる。
 - 対応UIが少ない。A1111系は非対応。
 - 知識やLoRAなどの資産が少ない。もちろんSDXLとの互換性はない。
+- 2026-02-08時点でプレビュー版である。
 
 * 対応UI
 現時点でComfyUIのみ。
@@ -47,16 +48,20 @@ ComfyUIのテンプレートにAnimaがあるのでそこから生成を始め�
 - Guidance Scale: 4-5
 
 * プロンプト
-プロンプトはDanbooruタグと自然言語(英語)の両方が使える。位置や文字の描写などの具体的な命令もOKだが大型モデルほど得意ではない。
+プロンプトはDanbooruタグと自然言語(英語)の両方が使える。位置指定や文字描写などの具体的な命令もOKだが大型モデルほど得意ではない。
 
-タグは次の並びで学習しているが、これに従う必要はない。
+タグは次の並びで学習している。これに従う必要はない(だが推奨)。
  quality/meta/year/safety tags, 1girl/1boy/1other etc, character, series, artist, general tags
 
 ** 特殊タグ
 品質タグや年代タグなど
 *** 品質タグ
+- 人間によるスコアベース
  masterpiece, best quality, good quality, normal quality, low quality, worst quality
-およびPonyV7のスコアと同様のscore_1〜score_9
+
+- PonyV7のaesthetic modelベース
+score_1〜score_9。Illustriousでいうaestheticタグに相当する？
+高いスコアほど絵が美しくなるが、画風がSDXLのマージモデルのようなマスピ絵に近づく。
 *** 年代タグ
  newest, recent, mid, early, old
 またはyear 2020のように西暦で指定する。
@@ -67,14 +72,19 @@ ComfyUIのテンプレートにAnimaがあるのでそこから生成を始め�
 "@big chungus"のように@を名前の頭につける。
 
 ** 強度指定
-Text EncoderはSD1/SDXLで使用されるCLIPではなくQwen3というLLMだが、機能する。
+Text EncoderはSD1/SDXLで使用されるCLIPではなくQwen3(0.6B)というLLMだが、機能する。
 しかし、SDXLほど効果は強くなく、15倍前後まで強くできる。大体70倍を超えると完全に壊れる。
 
 * ComfyUIでFP16で動作させる方法
-以下のURLで配布されているPythonスクリプトをcustom_nodesに入れる。
-https://civitai.com/models/2356447?modelVersionId=2652286
 読み込んだ拡散モデルをModelComputeDtypeノード(dtypeをfp16にする)を介して使用する。
-bf16が使えるグラボでもパッチを当てることでfp16 accumulationで高速化できるメリットがあるかも。
+bf16が使えるグラボでもfp16 accumulationで高速化できるメリットがあるかも。
+fp16パッチのスクリプトは不要になった。ComfyUIにfp16対応が実装された。
+
+* 学習
+diffusion-pipeまたはsd-scriptsのsd3ブランチでできる。
+なお、fp16ではオーバーフローによるNaN演算で動作しないのでbf16(NVIDIAであればAmpere以降が対応)必須となる。
+https://github.com/bluvoll/diffusion-pipe/tree/main
+https://github.com/kohya-ss/sd-scripts/tree/sd3
 
 * ライセンス
 CircleStoneLabsの独自ライセンス。独自と聞いて身構えるかもしれないが寛容なので安心しよう。
@@ -96,5 +106,10 @@ Danbooruタグに加えて自然言語(英語)で具体的に指示すること�
 Discrete Flow Shiftの値が小さすぎることが原因の一つ。 
 ComfyUIでModelSamplingAuraFlowノードを使用するなら、shift値はAnimaの初期値の3前後を推奨する。3でもたまに出るけど…
 
+* Anima関連のツール類
+
+** Animaのスタイルエクスプローラ
+https://thetacursed.github.io/Anima-Style-Explorer/
+1,000人近くの絵師のスタイルが収録されている。
 
 
