@@ -218,6 +218,7 @@
 * ポケモン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|yadon||||||
 |nihilego,&#160;pokemon sm, other, solo, pokemon (creature), no humans, floating, full body,||ポケモン|ウツロイド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/28b4fdf4016b2221.png|
 |chien-pao||ポケモン|パオジアン||https://i.imgur.com/uZkl6Bv.png|
 |misdreavus,&#160;pokemon frlg, other, solo, pokemon (creature), no humans, floating, full body,||ポケモン|ムウマ|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f827b8542a45e02c.png|

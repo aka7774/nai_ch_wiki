@@ -52,10 +52,18 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-02-08 RedRayzニキのLoRA学習GUIがAnimaに対応
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.16.0.0
+Anima向けのサンプルプリセットも同梱。
+> 試しに回して分かったけど、LRはSD1,SDXLの5〜10倍以上にした方がいい(ScheduleFree系なら0.002以上)かも
+（https://bbs.punipuni.eu/test/read.cgi/vaporeon/1769920331/164 より）
+とのこと。
+
 **2026-02-04 ACE StudioとStepFun、ACE-Step 1.5を公開
 https://ace-step.github.io/ace-step-v1.5.github.io/
 音楽生成AI。日本語の歌詞を入れることもできる。ライセンス済みの楽曲のほかパブリックドメインやロイヤリティフリーの楽曲を学習しており、生成された曲は商用利用可能。
 [[プロジェクトのGitHub>https://github.com/ace-step/ACE-Step-1.5]]には独自のWebUIが用意されているほか、ComfyUIのテンプレートにもワークフローが収録されている。
+
 **2026-02-01 CircleStone Labs、Animaのプレビュー版をリリース
 https://huggingface.co/circlestone-labs/Anima
 CircleStone LabsとComfy orgが共同開発した、2Bパラメータのt2iモデル。アニメのキャラクターやデザインをはじめ、フォトリアリスティックでないイラストや芸術的な画像の生成に向いている。danbooruスタイルのプロンプトと自然言語、またこれらの組み合わせに対応。プロンプトの記述順序、品質タグやメタタグ、アーティストタグなどの記述といった情報は上記リンクを参照のこと。
@@ -1232,6 +1240,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
