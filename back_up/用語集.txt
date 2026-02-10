@@ -5,10 +5,10 @@
 ** ソフトウェア
 |~用語|正式名称|説明|
 |AUTOMATIC1111||人名。でもAUTOMATIC1111氏が作ったツール「Stable Diffusion web UI」を指して呼ばれがち。|
-|A1111/1111|AUTOMATIC1111|人名だけどツールの名前(stable-diffusion-webui)として呼ばれがち。|
+|A1111/1111|AUTOMATIC1111|人名だけどツールの名前(stable-diffusion-webui)として呼ばれがち。今となってはレガシーなソフトウェア。|
 |Easy〇〇||Zuntan氏開発の、各種生成AIの環境を簡単にセットアップできるWindows専用ソフトウェア群。いわばスターターキット。|
-|forge|stable-diffusion-webui-forge|stable-diffusion-webuiのフォーク(派生)|
-|reForge|stable-diffusion-webui-reForge|forgeのフォーク|
+|forge|stable-diffusion-webui-forge|stable-diffusion-webuiのフォーク(派生)。|
+|Forge Neo||forgeのフォーク。Minecraftの前提modのNeoForgeと名前が似ているが全くの別物。|
 |GUI||sd-scriptsで学習するためのGUIを指すことが多い。GradioベースとWindows Formベースの二種類が存在する。|
 |webui|[[Stable Diffusion web UI(AUTOMATIC1111)>https://github.com/AUTOMATIC1111/stable-diffusion-webui]]|SDのUIのひとつ。|
 
@@ -38,7 +38,8 @@
 |モデル||SDXLやFLUX.1などモデルアーキテクチャそのものやCheckpointを意味する。スレ内ではもっぱら後者の意味で使用される。|
 |wan|Wan Video|動画生成AI|
 |Llasa||TTS(Text to Speech,音声合成)のAI。LLMのLlama 3に、XCodec2というモデルに対応するデータを出力できるよう学習させたもの。|
-|ZIT/ZIB|Z Image Turbo/Z Image Base|画像生成AI。Turboは蒸留版。Baseはまだ非公開。|
+|ZIT/ZIB|Z Image Turbo/Z Image Base|画像生成AI。Turboは蒸留版。Baseは通常版。|
+|Anima||Cosmos-Predict2ベースにTEをVAEを変更したアニメモデル|
 
 ** 技術的
 |~用語|正式名称|説明|
@@ -46,7 +47,7 @@
 |CN|ControlNet|専用のモデルを使用して構図を制御する仕組み。|
 |FT|Fine-tuning|モデルのウェイトを調整する。|
 |DiT|Diffusion Transformer|生成AIのアーキテクチャの一つ。SD1,2,XLで使用されるU-Netより高性能で最近の多くの画像生成AIはこれを採用している|
-|MMDiT||Text EncoderにLLM(大規模言語モデル)を使用したプロンプトの理解能力が高いDiTモデル。|
+|MMDiT||Text EncoderにLLM(大規模言語モデル)を使用したプロンプトの解釈能力が高いDiTモデル。|
 |gguf||主に量子化モデルに使用されるフォーマット|
 |i2i|img2img|Image to Image 元画像とプロンプトから画像を生成すること。|
 |i2v|image to video|画像から動画を生成する。|
@@ -60,36 +61,32 @@
 |t2i|txt2img|Text to Image プロンプトから画像を生成すること。|
 |t2v|text to video|プロンプトから動画を生成する。|
 |uc|unconditional conditioning|Negative Promptと同義|
-|v-pred|v-prediction|ノイズ予測アルゴリズムの一つ。Zero Terminal SNRと組み合わせることで明暗に強くなる。|
+|v-pred|v-prediction parameterization|ノイズ予測アルゴリズムの一つ。Zero Terminal SNRと組み合わせることで明暗に強くなる。|
 |ZTSNR/ZSNR|Zero Terminal SNR|SNR=0のときに完全なノイズになるよう調整することで明暗や単色背景に強くする。|
-|ブリーディング|bleeding|特定の単語のプロンプトに、スペルが同じで意味の異なる単語やスペルが似た単語の概念が混入すること|
 |マージ||Checkpoint Mergerなどで2〜3つのcheckpointを組み合わせる(混ぜる)こと。|
 
 ** その他
 |~用語|正式名称|説明|
 |Any||二つの意味がある。一つ目はControlnet用モデルのAnytest、二つ目はLoRA学習用モデルのAnyIllustirous/Noob。かつてはAnythingというSD1のアニメモデルのことを指していた。|
-|NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつ|
 |kohya||人名だが、ツール(kohya-ss/sd-scripts)の名前として呼ばれがち。また、sd-scriptsを利用するためのbmaltais版WebUIを指すこともある。|
 |SAI|Stability AI|Stable Diffusionの開発元|
 |SFW|Safe for work|こっちはNがついてなくて全年齢|
+|NSFW|Not safe for work|職場での閲覧注意。つまりえっちなやつ|
 |マスピ|masterpiece|傑作。品質向上に使われるプロンプト。切れ長のつり目、陰影の強調された顔など特徴的な絵柄になる。マスピ絵、マスピ顔とか言う。|
-
 
 * その他の用語
 AIとは直接の関係がない本スレ固有の単語
 |~用語|正式名称|説明|
 |赤ちゃん||初心者など難しい設定が困難である人。簡易インストーラー全般。「赤ちゃん向け」は初心者でも簡単に使用できることを意味する。由来は[[浦島太郎のために]]を参照 |
-|グチャる||人体や構図が破綻/崩壊する。|
+|グチャる||人体や構図が破綻または崩壊する。|
 |コピー機||シード値固定や過学習などによって似たような画像を連続で出力すること。由来は[[浦島太郎のために]]を参照 |
 |サンイチ||5ちゃんねるのスレッドを立てた人に対して感謝の意を示すなんでも実況板特有のネットスラング。(AIと関係ないけど一応載せておく)|
-|風船/&#127880;||糞のこと。閲覧注意やで(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
+|風船/&#127880;||糞のこと。閲覧注意(詳しくは123スレ250-) [[浦島太郎のために]]を参照 |
 |浦島太郎||長期間離れていて遅れた人を指すのだが、技術革新が速すぎるので一晩で浦島太郎になったりする。 |
 |ガビる||スレッド内においては、出力がAI特有のノイズまみれになることを指す場合が多い。|
-|エビダンス||由来は「亜鉛が云々→エビデンス(根拠)はあるのか→見間違いでエビ''ダ''ンス」。スレ終盤に始まる固有のノリ。|
 |ポン出し||ControlNetやi2iなどを使用して生成したり出力画像を編集したりせずに、そのまま利用すること。デジカメでいう「撮って出し」と同じニュアンス。|
 |お客さん||スレッドに初めて来た人のこと。「部外者」のような意味を持つ。|
 |ギップル|git pull|リモートリポジトリの変更をプル(ローカルに反映)するコマンド|
-|モデられる|"Content Moderated."|Grokで生成したコンテンツが規制されたときのメッセージが表示されたこと|
 
 ** よくある間違い
 |~用語|正式名称|説明|
@@ -123,13 +120,15 @@ AIとは直接の関係がない本スレ固有の単語
 |pony|[[PonyDiffusion XL>PonyDiffusionV6XLTips]]|SDXLベースのカートゥーンモデル。扱いやすくデータセットが大きいIllustrious系に駆逐されたり陳腐化したりで利用者も少なくなった。|
 |SD2|Stable Diffusion 2|SD1の後継。だったがSD1からの目立った変化がなかったため流行らなかった。|
 |ローカル版||ほとんどの場合、自身のパソコンやクラウドサービスで動かす生成AIの事を指す。かつてはNovelAI V1のリークモデルをWebUIで利用する形態を指すこともあった。|
-|Animagine|[[Animagine XL>animagine31tips]]|SDXLベースのアニメモデル。V3系がSDXLの火付け役として流行った。しかし、データセットの偏りが大きく、あまり良いとは言えないためその流行は長くは続かなかった。|
+|Animagine|[[Animagine XL>animagine31tips]]|SDXLベースのアニメモデル。V3系がSDXLの火付け役として流行った。しかし、データセットの偏りが大きく、決して良いとは言えないためその流行は長くは続かなかった。|
 |魔人/魔神|[[Animagine XL>animagine31tips]]|Animagine XLのこと|
-|DoRA|Weight-Decomposed Low-Rank Adaptation|LoRAの改良版。学習の安定性と低ランクでの性能が向上する。ほとんど認知されていない。|
+|DoRA|Weight-Decomposed Low-Rank Adaptation|LoRAの改良版。学習の安定性と低ランクでの性能が向上する。体感できるほどの変化がなくほとんど認知されていない。|
 |SD3|Stable Diffusion 3|Stability AIが2024年2月に発表、6月にリリースされたStable Diffusionの新バージョン。SDXLを上回る性能を誇る…はずが問題だらけで流行らかなった。|
 |SD3.5|Stable Diffusion 3.5|SD3の新バージョン。特定プロンプトで崩壊する問題などに対処し品質が向上した。…しかしこちらはFTが困難なためか派生モデルが全く出ず流行らなかった。しかも実質NSFW禁止になった。|
 |層別マージ/階層マージ/MBW|Merge Block Weighted|Merge Block Weightedで2つのモデルのU-Net層を細かく指定してマージすること。|
 |paruparu/パル/パルリアス|paruparu_illustrious|Illustrious-XLの派生。限定的に配布されている本スレ固有(?)のCheckpoint。|
+|エビダンス||由来は「亜鉛が云々→エビデンス(根拠)はあるのか→見間違いでエビ''ダ''ンス」。スレ終盤に始まる固有のノリだったが皆飽きて廃れた模様。|
+|ブリーディング|bleeding|特定の単語のプロンプトに、スペルが同じで意味の異なる単語やスペルが似た単語の概念が混入すること。SD1で多発したがSDXL以降では少ない。|
 
 * スレの言葉について
 
