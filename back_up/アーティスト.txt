@@ -11,6 +11,12 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
+|||||
+||atahuta|||
+||すみやお|||
+|artist:ichijou hitoshi,|100円ロッカー|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/c0022efb46cfc99e.png|
+|artist:sasayuki,|SASAYUKI|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/87d2c40934a6858b.png|
+|artist:hijiri rei,|ひぢりれい|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/a7cb43d5aee71fea.png|
 ||しぐれうい|||
 ||miwa|||
 |artist:tachibana omina,|立花オミナ|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/e96ce915083a18e0.png|

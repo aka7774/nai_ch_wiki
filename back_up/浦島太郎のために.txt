@@ -52,7 +52,16 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
-**2026-02-08 RedRayzニキのLoRA学習GUIがAnimaに対応
+**2026-02-11 Respair氏、音声合成AIの「Mirei」を公開
+https://huggingface.co/spaces/Respair/Mirei
+2025年9月に公開され、1週間ほどでサービス終了になった「Takane」と作者が同じとの見方がある。
+
+**2026-02-10 Alibaba、Qwen-Image-2.0を発表
+https://qwen.ai/blog?id=qwen-image-2.0
+ネイティブで2K解像度をサポートするほか、タイポグラフィや画像編集機能が強化されている。またモデルのサイズが小さくなり高速な推論が可能としている。
+モデルは現在のところ公開されていない。
+
+**2026-02-08 RedRayz氏のLoRA学習GUIがAnimaに対応
 https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.16.0.0
 Anima向けのサンプルプリセットも同梱。
 > 試しに回して分かったけど、LRはSD1,SDXLの5〜10倍以上にした方がいい(ScheduleFree系なら0.002以上)かも
@@ -1240,6 +1249,9 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
 
 
 
