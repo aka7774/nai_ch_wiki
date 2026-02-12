@@ -107,6 +107,11 @@ Danbooruタグに加えて自然言語(英語)で具体的に指示すること�
 Discrete Flow Shiftの値が小さすぎることが原因の一つ。 
 ComfyUIでModelSamplingAuraFlowノードを使用するなら、shift値はAnimaの初期値の3前後を推奨する。3でもたまに出るけど…
 
+* 派生モデル
+*** AnimaYume
+https://civitai.com/models/2385278
+preview版を1024pxでFine-Tuningしたもの。指の本数の誤りや構図の破綻が減少して扱いやすい。
+
 * Anima関連のツール類
 
 ** Animaのスタイルエクスプローラ
