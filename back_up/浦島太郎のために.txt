@@ -52,6 +52,10 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-02-11 Haoming02氏、Forge Neoをanimaに対応させる
+https://github.com/Haoming02/sd-webui-forge-classic/tree/neo
+ComfyUIはどうしてもとっつきづらい、WebUIでanimaを使いたいというユーザーには福音。
+
 **2026-02-11 Respair氏、音声合成AIの「Mirei」を公開
 https://huggingface.co/spaces/Respair/Mirei
 2025年9月に公開され、1週間ほどでサービス終了になった「Takane」と作者が同じとの見方がある。
@@ -73,6 +77,7 @@ https://ace-step.github.io/ace-step-v1.5.github.io/
 音楽生成AI。日本語の歌詞を入れることもできる。ライセンス済みの楽曲のほかパブリックドメインやロイヤリティフリーの楽曲を学習しており、生成された曲は商用利用可能。
 [[プロジェクトのGitHub>https://github.com/ace-step/ACE-Step-1.5]]には独自のWebUIが用意されているほか、ComfyUIのテンプレートにもワークフローが収録されている。
 
+comfyUIでは本体更新で音楽生成だけは対応した。本家のACE-Step/ACE-Step-1.5が提供するgradio_uiではCoverからlora作成などの全ての機能が使う事が出来る。
 **2026-02-01 CircleStone Labs、Animaのプレビュー版をリリース
 https://huggingface.co/circlestone-labs/Anima
 CircleStone LabsとComfy orgが共同開発した、2Bパラメータのt2iモデル。アニメのキャラクターやデザインをはじめ、フォトリアリスティックでないイラストや芸術的な画像の生成に向いている。danbooruスタイルのプロンプトと自然言語、またこれらの組み合わせに対応。プロンプトの記述順序、品質タグやメタタグ、アーティストタグなどの記述といった情報は上記リンクを参照のこと。
@@ -1249,6 +1254,9 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
 
 
 
