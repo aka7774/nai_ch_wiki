@@ -94,7 +94,7 @@ https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - TEはパラメータ効率のいいQwen3-4B
 -- 位置や文字の描写などの具体的な命令もOKで応答性が高い
 - TurboはDMDRで蒸留した収束が速いモデル
--- ただし蒸留+強化学習の影響で多様性が低い？
+-- ただし蒸留+強化学習の影響で多様性が低い
 - Apache 2.0ライセンス
 - Fine-Tuningが困難な可能性あり
 
@@ -112,7 +112,8 @@ https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0
 *** NetaYume Lumina
 https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
 - Lumina-Image 2ベースのアニメモデル
-- 現状Illustrious-XL系の方が良い
+- 品質はいまいち
+- より高速・高品質なAnimaが出てしまったので今後の進展はなさそう
 
 * predictionの種類(SD1,2,XL)
 ※間違っている可能性あり。間違っていたら修正してください。
@@ -120,7 +121,7 @@ https://huggingface.co/duongve/NetaYume-Lumina-Image-2.0
 ノイズ予測アルゴリズムの種類。
 v-predictionだからといって劇的に性能が上がるわけではない。わかりやすい変化はZero Terminal SNRを併用することで色の精度が上がる程度。一方で構図の不安定化の原因となる。
 なお、計算式の違いで推論時に本来の予測方法とは別のものに変えても正しく動作しない(学習時のpredictionタイプに合わせる)。
-SD3以降のほとんどのモデルはv-predictionより高性能なFlow Matchingを使用する。
+SD3以降のほとんどのモデルはepsilonの色精度の低さとvの不安定性を解消したRectified Flowを使用する。
 
 ** ε-prediction / epsilon-prediction
 SD1とSDXLのデフォルト
