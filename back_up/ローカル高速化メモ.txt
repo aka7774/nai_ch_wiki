@@ -30,7 +30,7 @@ https://huggingface.co/RED-AIGC/TDD
 
 ちなみに、速度に比例してCPUのシングルスレッド性能の影響が大きくなる。旧世代CPUを使っているなら最新世代のCPUに買い替えるのもあり。
 
-* Cross-attentionの最適化による高速化
+* Attentionの最適化による高速化
 
 ** SDP(Scaled dot product attention)
 PyTorchのアテンション最適化機能。
@@ -40,20 +40,13 @@ xformersと併用、共存はできない。
 速度もメモリ消費もxformersと同じで基本的にはこちらを使えばいい。
 
 ** xformers
+''spdaと差はないのでわざわざ入れる必要はない。''
 Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減少効果がある。
 インストールは1111の標準機能で簡単にできる。
-spdaと差はないのでわざわざ入れる必要はない。
-
-[+]古い情報
-古いxofrmersはわずかに出力内容が変化し、常に同じ結果にならない。
-変化の検証ページ作ったので記録はこちらへ
-→「[[xformersの検証]]」
-[END]
 
 *** 対応GPU
 - NVIDIA
--- GeForce GTX 1000(Pascal)、RTX 2000(Turing)シリーズ以降
--- GeForce 900番台以前でも動くけど逆効果だったという報告あり
+-- GeForce GTX 10(Pascal)、RTX 20(Turing)シリーズ以降
 
 - AMD(Linux/WSL2限定)
 -- ついにAMDグラボも対応した。Torch 2.4.1+ROCm6.1対応のv0.0.28がリリースされた。
@@ -77,9 +70,9 @@ Torchバージョンが1111のデフォルトではない場合/Radeonの場合
 Attentionの使用量が多いDiTモデルで効果的。
 RTX30以降が必要。
 
-* TeaCache(Timestep Embedding Aware Cache)
-1111は非対応。多くのDiTモデルに対応。
-変化が小さくなる推論の後半で出力の差分をキャッシュして使い回す。わずかに品質が低下する。ComfyUIであればカスタムノードがある。
+* EasyCache(1111非対応)
+ComfyUI専用。
+変化が小さい部分をキャッシュして使い回す。わずかに品質が低下する。
 
 * --opt-channelslast
 
@@ -89,7 +82,7 @@ RTX30以降が必要。
 
 *設定のOptimizationの項目
 ** Negative Guidance minimum sigma
-デノイズ量が少なくなる生成の後半にNegative Promptの計算を省略することで高速化する。
+変化が少なくなる生成の後半にNegative Promptの計算を省略することで高速化する。
 
 ** Token merging
 トークンをマージして高速化する。
@@ -101,18 +94,15 @@ fp8では動作しない。
 パフォーマンスが改善すると書いてあるが、誤差程度の変化しかない。
 ''76トークン以上で不具合が発生することがあるので、オフ推奨''
 
-* ハードウェアアクセラレーションによるGPUスケジューリング を無効にする
+* ハードウェアアクセラレータによるGPUスケジューリング を無効にする
 VRAM消費を減らす効果がある。速度も向上するかも。
-やり方は[[こちら>>https://win11lab.info/win11-gpu-scheduling/#:~:text=%E6%9C%89%E5%8A%B9%E3%80%81%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95&text=%E5%B7%A6%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%88%E3%82%8A%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92,%E3%82%AA%E3%83%B3%E3%80%81%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%AA%E3%83%95%E3%81%AB%E3%81%97%E3%81%BE%E3%81%99%E3%80%82]]
-[[公式wiki>>https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Optimizations]]にも記載がある
-[[redditによれば>>https://www.reddit.com/r/StableDiffusion/comments/y71q5k/4090_cudnn_performancespeed_fix_automatic1111/jcx2jx5/?context=8&depth=9]]速度が30%くらいかわることがあるとかないとか
-副作用としてDLSS3のフレーム生成が使えなくなる。
-
+オフにするには、 Windows 11の設定でシステム>ディスプレイ>グラフィックの中にあるグラフィックスの詳細設定の中に「ハードウェア アクセラレータによるGPUスケジューリング」があるのでこれをオフにしてPCを再起動する。
+副作用としてゲームでフレーム生成が使えなくなる。
 
 * モデルを軽量化する
-2024年現在、fp16,pruned,safetensorsでの配布(=すでに軽量化された状態)が主流になった。
+2024年現在、fp16/bf16,safetensorsでの配布(=すでに軽量化された状態)が当り前。pruningの概念はなくなった。
 
-[+] 古い情報(2023)
+[+] 古い情報(2023年以前)
 
 - ckptとvae.ptをsafetensorsに変換する
 -- 最近はckptよりsafetensorsで配布するほうが主流になった。
@@ -179,9 +169,6 @@ no-half系の引数つけてない限り''モデルもVAEも内部ではfloat16(
 [END]
 
 * Extensionsの退避や削除
-しばらく使わないときは Dreambooth Extension を削除する(もう使ってない?)
-起動時間が劇的に変わる
-
 Extensionにはinstall.pyが同梱されていて毎回起動するので、
 不要なExtensionが沢山入ってるなら消すだけでだいぶ速くなるはず。
 
