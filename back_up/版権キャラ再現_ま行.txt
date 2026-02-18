@@ -322,6 +322,16 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|Artist:okuda yasuhiro, lieselotte (nanoha), mahou shoujo lyrical nanoha a's, girl, cat ears, cat tail, black minidress, white thighhighs, black boots, standing, full body, ||魔法少女リリカルなのはA's〜|リーゼロッテ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。リーゼアリアは出なかった。|https://image02.seesaawiki.jp/n/h/nai_ch/e51468b93f0187e7.png|
+|Artist:okuda yasuhiro, yagami hayate, mahou shoujo lyrical nanoha a's, girl, sweater, skirt, socks, sitting on wheelchair, full body, ||魔法少女リリカルなのはA's|八神はやて（私服）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/cd1f1f149c1870a2.png|
+|Artist:okuda yasuhiro, yagami hayate, tome of the night sky, schwertkreuz, mahou shoujo lyrical nanoha a's, girl, unison (nanoha), hat, jacket, minidress, fingerless gloves, waist cape, boots, standing, full body, holding book, holding staff,||魔法少女リリカルなのはA's|八神はやて（魔導騎士：ユニゾン）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/aaf5a06147b0a921.png|
+|Artist:okuda yasuhiro, yagami hayate, tome of the night sky, schwertkreuz, mahou shoujo lyrical nanoha a's, girl, hat, jacket, minidress, fingerless gloves, waist cape, boots, standing, full body, holding book, holding staff,||魔法少女リリカルなのはA's|八神はやて（魔導騎士）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/8d3fac6a55edc395.png|
+|Artist:okuda yasuhiro, reinforce, tome of the night sky, mahou shoujo lyrical nanoha a's, girl, multiple wings, jacket, arm belt, fingerless gloves, waist cape, asymmetrical legwear, leg belt, single thighhigh, boots, standing, full body, ||魔法少女リリカルなのはA's〜|リインフォース（闇の書の意思）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2e599c87ad7ca899.png|
+|Artist:okuda yasuhiro, zafira, mahou shoujo lyrical nanoha a's, boy,  jacket, gauntlets, pants, armored boots, standing, full body, ||魔法少女リリカルなのはA's〜|ザフィーラ（騎士甲冑）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/cbe6b8eb8c3546b9.png|
+|Artist:okuda yasuhiro, shamal, mahou shoujo lyrical nanoha a's, girl, hat, green dress, jacket, shirt, skirt, shoes, standing, full body, -3.0::bare legs::,||魔法少女リリカルなのはA's〜|シャマル（騎士甲冑）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/dd5239c1d2ee7461.png|
+|Artist:okuda yasuhiro, signum, laevatein (nanoha),&#160;mahou shoujo lyrical nanoha a's, girl, purple dress, gauntlets, waist cape, armored shoes, standing, holding weapon, full body, ||魔法少女リリカルなのはA's〜|シグナム（騎士甲冑）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/39a0dcd3266f0bf2.png|
+|Artist:okuda yasuhiro, vita (nanoha), graf eisen (hammerform),&#160;mahou shoujo lyrical nanoha a's, girl, hat, jacket, red dress, boots, standing, holding weapon, weapon over shoulder, full body, -3.0::bare legs::,||魔法少女リリカルなのはA's〜|ヴィータ（騎士甲冑）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d1bff7587307eeeb.png|
+|Artist:okuda yasuhiro, rynith, mahou shoujo lyrical nanoha a's, girl, hat, jacket, pants, boots, standing, arms at side, full body, ||魔法少女リリカルなのは（無印、A's）|リニス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/7b32ed0e1f827770.png|
 |Artist:okuda yasuhiro, fate testarossa (blaze form), bardiche (riot zanber stinger) (nanoha)&#160;, mahou shoujo lyrical nanoha the movie 2nd a's, girl, white cape, black leotard, belt, showgirl skirt, black gloves, thighhighs, boots, standing, holding weapon, dual wielding, full body, ||魔法少女リリカルなのはthe movie2nd A's|フェイト・テスタロッサ（バリアジャケット：ブレイズフォーム）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/59dc0769cc8c2eec.png|
 |Artist:okuda yasuhiro, fate testarossa (lightning form) (2nd), bardiche (bullova form) (nanoha), mahou shoujo lyrical nanoha a's, girl, black cape, black leotard, belt, showgirl skirt, black gloves, boots, standing, holding weapon, full body, ||魔法少女リリカルなのはthe movie2nd A's|フェイト・テスタロッサ（バリアジャケット：ライトニングフォーム）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/d070f84508aba9d2.png|
 |Artist:okuda yasuhiro, fate testarossa (movie 1st form), bardiche (axe form) (nanoha), mahou shoujo lyrical nanoha, girl, black cape, black leotard, belt, showgirl skirt, black gloves, black boots, standing, holding axe, full body, ||魔法少女リリカルなのはthe movie1st|フェイト・テスタロッサ（バリアジャケット）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/d070c3886680f141.png|
@@ -841,6 +851,9 @@
 |}
 [END]
 ----
+
+
+
 
 
 
