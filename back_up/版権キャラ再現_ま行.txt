@@ -322,7 +322,21 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|Artist:okuda yasuhiro, lieselotte (nanoha), mahou shoujo lyrical nanoha a's, girl, cat ears, cat tail, black minidress, white thighhighs, black boots, standing, full body, ||魔法少女リリカルなのはA's〜|リーゼロッテ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。リーゼアリアは出なかった。|https://image02.seesaawiki.jp/n/h/nai_ch/e51468b93f0187e7.png|
+|Artist:okuda yasuhiro, jail scaglietti, mahou shoujo lyrical nanoha strikers, boy, lab coat, shirt, vest, pants, shoes, standing, full body, ||魔法少女リリカルなのはStrikerS|ジェイル・スカリエッティ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/fb9e9039e81f3cc2.png|
+|Artist:okuda yasuhiro, lutecia alpine, mahou shoujo lyrical nanoha strikers, girl, black dress, skirt, gloves, thighhighs, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|ルーテシア・アルピーノ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/07a517d36acfbf30.png|
+|Artist:okuda yasuhiro, vivio, mahou shoujo lyrical nanoha strikers, girl, jacket, bodysuit, waist cape, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|聖王ヴィヴィオ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/5d8b9a7b3ab29906.png|
+|Artist:okuda yasuhiro, vivio, mahou shoujo lyrical nanoha strikers, girl, shirt, vest, skirt, sock, loafers, standing, full body, ||魔法少女リリカルなのはStrikerS|高町ヴィヴィオ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/0870993caa453ff9.png|
+|Artist:okuda yasuhiro, vice granscenic, mahou shoujo lyrical nanoha strikers, boy, jacket, shirt, pants, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|ヴァイス・グランセニック|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/0a61adaf54ca4c45.png|
+|Artist:okuda yasuhiro, shario finieno, mahou shoujo lyrical nanoha strikers, girl, tsab ground military uniform, brown jacket, brown skirt, white pantyhose, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|シャリオ・フィニーノ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f820ccbab5440ac7.png|
+|Artist:okuda yasuhiro, ginga nakajima, mahou shoujo lyrical nanoha strikers, girl, tsab ground military uniform, brown jacket, brown skirt, white pantyhose, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|ギンガ・ナカジマ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2f12ce8aac57e937.png|
+|Artist:okuda yasuhiro, schach nouera, mahou shoujo lyrical nanoha strikers, girl, cape, black dress, skirt,  boots, standing, full body, -3.0::bare legs::,||魔法少女リリカルなのはStrikerS|シャッハ・ヌエラ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/760cf22d5dad94a6.png|
+|Artist:okuda yasuhiro, carim gracia, mahou shoujo lyrical nanoha strikers, girl, jacket, waist cape, skirt, boots, standing, full body, -3.0::bare legs::,||魔法少女リリカルなのはStrikerS|カリム・グラシア|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d9e4557907c91afb.png|
+|Artist:okuda yasuhiro, teana lanster, mahou shoujo lyrical nanoha strikers, girl, jacket, mini dress, belt, thighhighs, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|ティアナ・ランスター|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3a6cf0a091027ad4.png|
+|Artist:okuda yasuhiro, subaru nakajima, mahou shoujo lyrical nanoha strikers, girl, jacket, tube top, waist cape, short shorts, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|スバル・ナカジマ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/468af94d98c371f0.png|
+|Artist:okuda yasuhiro, agito (nanoha), mahou shoujo lyrical nanoha strikers, girl, wings, tail, detached collar, bikini, showgirl skirt, thigh boots, standing, full body, ||魔法少女リリカルなのはStrikerS|アギト|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/6df050f649e14b72.png|
+|Artist:okuda yasuhiro, reinforce zwei, book of the azure sky, mahou shoujo lyrical nanoha strikers, girl, fingerless gloves, waist cape, asymmetrical legwear, single thighhigh, boots, standing, full body, floating book,||魔法少女リリカルなのはStrikerS〜|リインフォースII|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c032053106aec999.png|
+|Artist:okuda yasuhiro, lieselotte (nanoha), mahou shoujo lyrical nanoha a's, girl, cat ears, cat tail, black minidress, white thighhighs, black boots, standing, full body, ||魔法少女リリカルなのはA's|リーゼロッテ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。リーゼアリアは出なかった。|https://image02.seesaawiki.jp/n/h/nai_ch/e51468b93f0187e7.png|
+|Artist:okuda yasuhiro, yagami hayate, mahou shoujo lyrical nanoha strikers, girl, tsab ground military uniform, brown jacket, brown skirt, white pantyhose, standing, full body, ||魔法少女リリカルなのはStrikerS|八神はやて（時空管理局地上部隊制服）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/cbcae7e79d20a767.png|
 |Artist:okuda yasuhiro, yagami hayate, mahou shoujo lyrical nanoha a's, girl, sweater, skirt, socks, sitting on wheelchair, full body, ||魔法少女リリカルなのはA's|八神はやて（私服）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/cd1f1f149c1870a2.png|
 |Artist:okuda yasuhiro, yagami hayate, tome of the night sky, schwertkreuz, mahou shoujo lyrical nanoha a's, girl, unison (nanoha), hat, jacket, minidress, fingerless gloves, waist cape, boots, standing, full body, holding book, holding staff,||魔法少女リリカルなのはA's|八神はやて（魔導騎士：ユニゾン）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/aaf5a06147b0a921.png|
 |Artist:okuda yasuhiro, yagami hayate, tome of the night sky, schwertkreuz, mahou shoujo lyrical nanoha a's, girl, hat, jacket, minidress, fingerless gloves, waist cape, boots, standing, full body, holding book, holding staff,||魔法少女リリカルなのはA's|八神はやて（魔導騎士）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/8d3fac6a55edc395.png|
@@ -851,6 +865,10 @@
 |}
 [END]
 ----
+
+
+
+
 
 
 
