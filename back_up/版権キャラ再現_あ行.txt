@@ -749,6 +749,7 @@
 ***　イナズマイレブン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
 |Beta&#40;inazuma eleven),sportswear, double bun, black shirt, belt, black pants||イナズマイレブン|ベータ|V4.5服装を入れないと高確率で羽が生える|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/3b345f65cd8a9d7a-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/3b345f65cd8a9d7a.png]] |
 |Mikado Anna,inazuma eleven Ares, school uniform,white short-sleeved blouse,red ribbon,navy skirt,navy socks||イナズマイレブン|神門　杏奈|V4.5|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/3073d5e40f9ad5df-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/3073d5e40f9ad5df.png]]|
 | urubida,inazuma eleven, bodysuit ||イナズマイレブン|ウルビダ|V4.5|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ed7ff5fa20780069-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/ed7ff5fa20780069.png]] |
@@ -829,6 +830,15 @@
 |kubota jun, variable geo, girl, solo, orange dress, elbow pads, wrist bands, bike shorts, knee pads, white socks, loafers, standing, full body, ||ヴァリアブル・ジオ|久保田潤|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ce55e9a6e0067a16.png|
 |kusunoki manami, variable geo, girl, solo, maid headdress, blue dress, white apron, paw gloves, white socks, mary janes, standing, full body, ||ヴァリアブル・ジオ|楠真奈美|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/dffddd1fed08b8ed.png|
 |takeuchi yuka, variable geo, girl, solo, waitress, white shirt, orange waist apron, orange skirt, gloves, shoes, standing, full body, ||ヴァリアブル・ジオ|武内優香|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/5ead58ba009d3bf9.png|
+|}
+
+***　ヴァンドレッド
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|girl,{official art},vandread,barnette orangello,2.0::smile,costume,||ヴァンドレッド|バーネット・オランジェロ|V4.5 Full版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/b8074928db0fffbc.png|
+|girl,{official art},vandread,jura basil elden,2.0::smile,costume,long skirt,||ヴァンドレッド|ジュラ・ベーシル・エルデン|V4.5 Full版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/e6533c0f78942be6.png|
+|girl,{official art},vandread,meia gisborn,2.0::smile,costume,||ヴァンドレッド|メイア・ギズボーン|V4.5 Full版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/7bd34db39ed7b845.png|
+|girl,{official art},vandread,dita liebely,2.0::smile,costume,||ヴァンドレッド|ディータ・リーベライ|V4.5 Full版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/53b63533ef4597b5.png|
 |}
 
 ***　ヴァンパイアシリーズ
@@ -1322,4 +1332,5 @@
 |{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
 |}
 [END]
+
 
