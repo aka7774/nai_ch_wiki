@@ -322,7 +322,30 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|chantez apinion, mahou shoujo lyrical nanoha vivid, girl, veil, black dress, long skirt, ankle boots, standing, full body, ||魔法少女リリカルなのはVivid|シャンテ・アピニオン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/fb05af5a05ee0acb.png|
+|einhard stratos, mahou shoujo lyrical nanoha vivid, girl, shirt, long skirt, boots, standing, full body, ||魔法少女リリカルなのはVivid|アインハルト・ストラトス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/91e39c74f909a859.png|
+|fate testarossa (blaze iii), bardiche (blitz saber form) (nanoha), mahou shoujo lyrical nanoha detonation, girl, cape, minidress, thighhighs, boots, standing, full body, ||魔法少女リリカルなのはDetonation|フェイト・T・ハラオウン（ブレイズIII）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/da9f9855fae0f4d3.png|
+|takamachi nanoha (formula ii), raising heart streamer, fortress (nanoha), mahou shoujo lyrical nanoha detonation, girl, jacket, skirt, boots, standing, full body, -3.0::bare legs::,||魔法少女リリカルなのはDetonation|高町なのは（フォーミュラII）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/ecca02db4da97f81.png|
+|iris (nanoha), mahou shoujo lyrical nanoha detonation, girl, ponytail, minidress, detached sleeves, thigh boots, standing, full body, ||魔法少女リリカルなのはDetonation|イリス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。それほど似ていない。|https://image02.seesaawiki.jp/n/h/nai_ch/18467d297260b5b1.png|
+|yuri eberwein, mahou shoujo lyrical nanoha reflection, girl, revealing clothes, detached sleeves, pants, waist cape, boots, standing, full body, ||魔法少女リリカルなのはReflection|ユーリ・エーベルヴァイン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ed384ab5a2e89bd7.png|
+|lord dearche, tome of the purple sky, yersiniakreuz, mahou shoujo lyrical nanoha reflection, girl, multiple wings, jacket, minidress, waist cape, boots, standing, holding weapon, full body, ||魔法少女リリカルなのはReflection|ロード・ディアーチェ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/2701f0c0c797c4c0.png|
+|stern the destructor, luciferion, mahou shoujo lyrical nanoha reflection, girl, jacket, skirt, boots, standing, holding weapon, full body, -3.0::bare legs::,||魔法少女リリカルなのはReflection|シュテル・ザ・デストラクター|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/30d8c8f35cea42f8.png|
+|levi the slasher, vulnificus, mahou shoujo lyrical nanoha reflection, girl, cape, minidress, armored boots, standing, holding weapon, full body, ||魔法少女リリカルなのはReflection|レヴィ・ザ・スラッシャー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/cd9a30c925161716.png|
+|kyrie florian, mahou shoujo lyrical nanoha reflection, girl, jacket, minidress, elbow gloves, thigh boots, standing, full body, ||魔法少女リリカルなのはReflection|キリエ・フローリアン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ea7d93213a9cba0f.png|
+|amitie florian, mahou shoujo lyrical nanoha reflection, girl, jacket, shirt, short shorts, gloves, thigh boots, standing, full body, ||魔法少女リリカルなのはReflection|アミティエ・フローリアン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/21e1e3f48c7ca191.png|
 |Artist:okuda yasuhiro, jail scaglietti, mahou shoujo lyrical nanoha strikers, boy, lab coat, shirt, vest, pants, shoes, standing, full body, ||魔法少女リリカルなのはStrikerS|ジェイル・スカリエッティ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/fb9e9039e81f3cc2.png|
+|Artist:okuda yasuhiro, uno (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, jacket, skirt, pantyhose, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|ウーノ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/8e2d7fa8b0f1a54a.png|
+|Artist:okuda yasuhiro, due (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|ドゥーエ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/607f7edee9508ba9.png|
+|Artist:okuda yasuhiro, tre (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|トーレ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c94cecda0f404222.png|
+|Artist:okuda yasuhiro, quattro (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, cape, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|クアットロ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b22b607a616df22c.png|
+|Artist:okuda yasuhiro, cinque (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, jacket, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|チンク|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/5c166ef1e9ae4850.png|
+|Artist:okuda yasuhiro, sein (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|セイン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/7a6f9644abba9ded.png|
+|Artist:okuda yasuhiro, sette (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|セッテ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/e7af3a6cee082a6f.png|
+|Artist:okuda yasuhiro, otto (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|オットー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/5fa96999b789562a.png|
+|Artist:okuda yasuhiro, nove (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|ノーヴェ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/d7289165ad4db4cb.png|
+|Artist:okuda yasuhiro, dieci (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|ディエチ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/43be714082ca5e52.png|
+|Artist:okuda yasuhiro, wendi (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|ウェンディ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f32765109f2e6ce9.png|
+|Artist:okuda yasuhiro, deed (nanoha), numbers (nanoha), mahou shoujo lyrical nanoha strikers, girl, numbers' uniform, bodysuit, standing, full body, ||魔法少女リリカルなのはStrikerS|ディード|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/0a6f0c981419e925.png|
 |Artist:okuda yasuhiro, lutecia alpine, mahou shoujo lyrical nanoha strikers, girl, black dress, skirt, gloves, thighhighs, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|ルーテシア・アルピーノ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/07a517d36acfbf30.png|
 |Artist:okuda yasuhiro, vivio, mahou shoujo lyrical nanoha strikers, girl, jacket, bodysuit, waist cape, boots, standing, full body, ||魔法少女リリカルなのはStrikerS|聖王ヴィヴィオ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/5d8b9a7b3ab29906.png|
 |Artist:okuda yasuhiro, vivio, mahou shoujo lyrical nanoha strikers, girl, shirt, vest, skirt, sock, loafers, standing, full body, ||魔法少女リリカルなのはStrikerS|高町ヴィヴィオ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/0870993caa453ff9.png|
@@ -865,6 +888,12 @@
 |}
 [END]
 ----
+
+
+
+
+
+
 
 
 
