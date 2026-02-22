@@ -56,8 +56,14 @@
 ***　魔王城でおやすみ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|succyun, official style, maou-jou de oyasumi, fangs, :D, pantyhose, white frill on skirt, full body shot, standing||魔王城でおやすみ|さっきゅん|V4.5使用。服装がやや不安定。|https://image01.seesaawiki.jp/n/h/nai_ch/4b1bb7a1c4fc38e2.png|
+|succyun, official style, maou-jou de oyasumi, fangs, :D, pantyhose, white frill on skirt, full body shot, standing||魔王城でおやすみ|さっきゅん|V4.5使用。服装がやや不安定。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/4b1bb7a1c4fc38e2.png)>https://image01.seesaawiki.jp/n/h/nai_ch/4b1bb7a1c4fc38e2.png]]|
 |aurora sya lis kaymin, standing||魔王城でおやすみ|スヤリス姫(オーロラ・栖夜・リース・カイミーン)|V4.5|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/d554e5de71f37ade.png)>https://image02.seesaawiki.jp/n/h/nai_ch/d554e5de71f37ade.png]]|
+|}
+
+***　まおゆう魔王勇者
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|maou (maoyuu), full body shot, standing||まおゆう魔王勇者|魔王|V4.5使用|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/8178d3a16e9da966.png)>https://image01.seesaawiki.jp/n/h/nai_ch/8178d3a16e9da966.png]]|
 |}
 
 ***　魔界戦記ディスガイアシリーズ
@@ -187,6 +193,12 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |1girl, {elaina (majo no tabitabi) }, black robe, silver hair, long hair, braid, smile, {{black skirt}}, [white shirt], frilled shirt, &#91;&#91;&#91;&#91;school uniform]]]], hat, witch, witch hat, yellow ribbon, purple eyes , atelier(series), starry sky, |||イレイナ||[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/dPCQzvxXm1-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/dPCQzvxXm1.png]]|
+|}
+
+***　魔女兵器
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+| Ren (witch weapon),black hair, multicolored hair,black serafuku, detached sleeves, red neckerchief,coat,thighhighs, || 魔女兵器 | レン |V4.5|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/59eb50636589513e-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/59eb50636589513e.png]]|
 |}
 
 ***　ましろ色シンフォニー
@@ -322,6 +334,20 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|lily-strosek, perfume grab, mahou senki lyrical nanoha force, girl, jacket, white minidress, elbow gloves, waist cape, asymmetrical legwear, boots, standing, full body, ||魔法戦記リリカルなのはForce|リリィ・シュトロゼック|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/68d4443319765cc1.png|
+|isis egret, perfume grab, mahou senki lyrical nanoha force, girl, jacket, crop top, elbow gloves, belt, red shorts, single knee pad, socks, boots, standing, full body, ||魔法戦記リリカルなのはForce|アイシス・イーグレット|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/15b505f888aa99c7.png|
+|huracan (vivid strike!), vivid strike!, no humans, creature, all fours, full body, ||ViVid Strike!|ウラカン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/65ad4b770946b230.png|
+|asteion, vivid strike!, no humans, creature, all fours, full body, ||ViVid Strike!|アスティオン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3ab588dfc0904956.png|
+|yumina enclave, vivid strike!, girl, collared shirt, red bowtie, green long skirt, socks, loafers, standing, full body, ||ViVid Strike!|ユミナ・アンクレイヴ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ec7483ed73ae5b87.png|
+|rinne berlinetta, vivid strike!, girl, shirt, skirt, thighhighs, shoes, standing, full body, ||ViVid Strike!|リンネ・ベルリネッタ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f67ea7a17a242c0a.png|
+|fuka reventon, vivid strike!, girl, jacket, shirt, skirt, gloves, boots, standing, full body, ||ViVid Strike!|フーカ・レヴェントン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/824080973d324fd9.png|
+|viktoria dahlgrun, mahou shoujo lyrical nanoha vivid, girl, white sundress, heels, standing, full body, ||魔法少女リリカルなのはVivid|ヴィクトーリア・ダールグリュン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/601bf021d64cf8b6.png|
+|sieglinde eremiah, mahou shoujo lyrical nanoha vivid, girl, track jacket, shirt, track pants, sneakers, standing, full body, ||魔法少女リリカルなのはVivid|ジークリンデ・エレミア|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/a7e484e8356055dd.png|
+|miura rinaldi, mahou shoujo lyrical nanoha vivid, girl, orange jacket, shirt, white shorts, sneakers, standing, full body, ||魔法少女リリカルなのはVivid|ミウラ・リナルディ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/3db14d083f5ef12d.png|
+|mikaya chevelle, mahou shoujo lyrical nanoha vivid, girl, kimono, hakama, sandals, standing, full body, ||魔法少女リリカルなのはVivid|ミカヤ・シェベル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f20cc22299b2b9e4.png|
+|harry tribeca, mahou shoujo lyrical nanoha vivid, girl, serafuku, red sailor collar, brown skirt, black thighhighs, loafers, standing, full body, ||魔法少女リリカルなのはVivid|ハリー・トライベッカ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/40ce7242d03b027a.png|
+|corona timir, mahou shoujo lyrical nanoha vivid, girl, st. hilde academy of magic uniform, vest, skirt, socks, loafers, standing, full body, ||魔法少女リリカルなのはVivid|コロナ・ティミル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/ac1c802896796464.png|
+|rio wezley, mahou shoujo lyrical nanoha vivid, girl, st. hilde academy of magic uniform, red bowtie, yellow vest, brown skirt, socks, loafers, standing, full body, -3.0::long hair::,||魔法少女リリカルなのはVivid|リオ・ウェズリー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/047c7acbf55bb26f.png|
 |chantez apinion, mahou shoujo lyrical nanoha vivid, girl, veil, black dress, long skirt, ankle boots, standing, full body, ||魔法少女リリカルなのはVivid|シャンテ・アピニオン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/fb05af5a05ee0acb.png|
 |einhard stratos, mahou shoujo lyrical nanoha vivid, girl, shirt, long skirt, boots, standing, full body, ||魔法少女リリカルなのはVivid|アインハルト・ストラトス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/91e39c74f909a859.png|
 |fate testarossa (blaze iii), bardiche (blitz saber form) (nanoha), mahou shoujo lyrical nanoha detonation, girl, cape, minidress, thighhighs, boots, standing, full body, ||魔法少女リリカルなのはDetonation|フェイト・T・ハラオウン（ブレイズIII）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/da9f9855fae0f4d3.png|
@@ -888,6 +914,10 @@
 |}
 [END]
 ----
+
+
+
+
 
 
 

@@ -278,6 +278,16 @@ https://seed.bytedance.com/en/seedream4_0
 https://github.com/Haoming02/sd-webui-forge-classic/tree/neo
 「Forge Classic」を開発していたHaoming02氏が、新たに「Forge Neo」を発表した。Forge Classicはいわゆる旧Forge（v1.x）を最適化し、SD1.xやSDXL向けに開発されていた。Forge NeoはForge 2.xをもとに、最新の技術であるWan2.2やFLUX Kontext、Chromaなどに対応する。
 
+**2025-08-28 部族語とは
+https://fate.5ch.net/test/read.cgi/liveuranus/1755257819/970
+danbooruタグのこと。danbooruタグはSDXLまでの画像生成AIモデルが学習に使っていることが多く、danbooruタグに沿ってプロンプトを並べると思った通りの画像が出やすい傾向がある。
+そんな中、[[569スレでの以下の書き込み>https://fate.5ch.net/test/read.cgi/liveuranus/1755257819/970]]が話題を呼んだ。
+
+> Fluxも自然言語だからSDXLまでの「女、エロい、マンコ、濡れてる、俺、チンポ、入れる、お前、嬉しい、俺、嬉しい、みんな、幸せ」みたいな''部族語''だと上手く行かないからな
+（強調は引用者による）
+
+以後、danbooruタグをユーモアをこめて「部族語」と称するユーザーが増えた。
+
 **2025-08-26 Google、nano-Bananaを公開
 https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image-preview
 Googleが「Gemini 2.5 Flash Image」を公開した。nano-Bananaというコードネームでプレビュー公開されていた画像生成AIで、画像の高度な編集が可能。複数の入力画像を組み合わせた画像の出力、画像内の背景の差し替え、画像内の人物の表情変更、入力した人物画像の三面図の出力、アニメ風人物画像のフィギュア写真への変換などを、高度な一貫性を保ちながら行うことができる。LoRAの素材画像を増やすなどにも便利。
@@ -1263,6 +1273,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
