@@ -280,6 +280,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):水着の種類|補足|プロンプト|サンプル|
+|||||
 |競泳水着|競技用のスリムなワンピース水着。「competition swimsuit」でより競技感を強調できる。|competition swimsuit, streamlined design, full body coverage|https://image01.seesaawiki.jp/n/h/nai_ch/441df85c2e603e69.png|
 |水着|基本的なワンピース水着。|swimsuit, one-piece design|https://image02.seesaawiki.jp/n/h/nai_ch/a1b78bb7a7aecaec.png|
 |スクール水着|日本の伝統的なダークブルーのワンピース。シンプルさを「dark blue, classic design」で補強。|school swimsuit, one-piece, dark blue, classic design|https://image01.seesaawiki.jp/n/h/nai_ch/717627ef33a696e0.png|
@@ -310,6 +311,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):靴下の種類|補足|プロンプト|サンプル|
+|||||
+|タイツ|厚手のタイツ|tights|サンプル|
+|パンスト|薄手のパンスト|pantyhose||
 |アンクレット|くるぶしまでの短いソックス。|ankle_socks|https://image02.seesaawiki.jp/n/h/nai_ch/548011a3d9b01b76.png|
 |トレーナーソックス|低めでスニーカー用。|trainer_socks|https://image01.seesaawiki.jp/n/h/nai_ch/455ee040a90cfcee.png|
 |ボビーソックス|女児向けで短め、ふわっとしたデザイン。|bobby-sock|https://image02.seesaawiki.jp/n/h/nai_ch/f1dce0d79ce9ea75.png|
@@ -868,6 +872,8 @@
 |tight|きつい、ぴっちりした||https://image01.seesaawiki.jp/n/h/nai_ch/BDU4EaQX6w.png|
 |}
 [END]
+
+
 
 
 

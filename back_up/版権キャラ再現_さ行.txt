@@ -61,6 +61,13 @@
 [+]
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
+|ci caprice, sakura taisen iii, girl, maid headdress, frills, layered dress, red bow, center frills, blue shirt, waist apron, blue mini skirt, pantyhose, shoes, standing, full body, ||サクラ大戦��|シー・カプリス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/20597525273a5b21.png |
+|mell raison, sakura taisen iii, girl, maid headdress, frills, layered dress, red bow, center frills, blue shirt, waist apron, blue mini skirt, bare legs, shoes, standing, full body, ||サクラ大戦��|メル・レゾン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/e9c23465d012ba74.png|
+|kitaooji hanabi, sakura taisen iii, girl, military uniform, black jacket, white gloves, black pants, thigh boots, standing, full body, ||サクラ大戦��|北大路花火|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2a7ffa650eaf1a1b.png|
+|lobelia carlini, sakura taisen iii, girl, military uniform, green jacket, white gloves, black pants, thigh boots, standing, full body, -3.0::coat::,||サクラ大戦��|ロベリア・カルリーニ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/30a3a2a774ffcdf9.png|
+|coquelicot (sakura taisen), sakura taisen iii, girl, military uniform, pink jacket, black pants, thigh boots, standing, full body,||サクラ大戦��|コクリコ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3cfe36291f91915e.png|
+|glycine bleumer, sakura taisen iii, girl, military uniform, blue jacket, black pants, boots, standing, full body,||サクラ大戦��|グリシーヌ・ブルーメール|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/eb224269e3800d89.png|
+|erica fontaine, sakura taisen iii, girl, military uniform, red jacket, black pants, boots, standing, full body,||サクラ大戦��|エリカ・フォンティーヌ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b663c2c4a6b831ca.png|
 |{{{1little girl is coquelicot &#40;sakura taisen) }}},brown hair, short twintails,brown eyes,pink Military uniform ,Paris,outdoors,||サクラ大戦3|コクリコ|V4 Curated Preview|https://image01.seesaawiki.jp/n/h/nai_ch/WraKbWefHJ.png|
 |glycine bleumer, sakura taisen iii, blonde hair, blue eyes, long hair, earrings, parted bangs, hair over shoulder, jewelry, blue dress, turtleneck, light smile, solo, cowboy shot, 1990s (style), ||サクラ大戦3 |グリシーヌ・ブルーメール|V3使用。年代のスタイルは2010s (style), にしたり、または単に外したりするとより新しめのテイストになる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cXokyZuDri-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cXokyZuDri.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cBhaV5NCKN-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cBhaV5NCKN.png]]|
 |reni milchstrasse, sakura taisen, girl, military uniform, blue jacket, white pants, boots, standing, full body, ||サクラ大戦�供� |レニ・ミルヒシュトラーセ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b3ab199865acde5c.png|
@@ -535,10 +542,11 @@
 |}
 
 ***　進研ゼミ
+はてなようせいは版権キャラ再現/は行のベネッセへ移動　→ [[版権キャラ再現/は行>版権キャラ再現/は行]]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|2000s_(style),hatena yousei,benesse,1 girl,petite,loli,pink cape,pink eyes,pink hair,pink hat ,boots,staff,white gloves,?,smile,open mouth,||進研ゼミ|はてなようせい|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Nv0ymFztwg-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Nv0ymFztwg.png]]|
-|1 girl, {{{zemi mama}}}, {{shinken-zemi}}, brown eyes , brown hair, low-tied_hair, purple turtleneck sweater, coral apron,  jeans, mole under the eye, large breasts, ladle, looking at viewer,{troubled lowered eyebrows}, {:o}, spoken_question_mark, sketch,||進研ゼミ|ゼミママ|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6ogbOu6xfu-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6ogbOu6xfu.png]]|
+|zemi mama, shinken-zemi, girl, sweaters, apron, pants, slippers, standing, full body, ||進研ゼミ|ゼミママ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/570bd86962563fc7.png|
+|1 girl, {{{zemi mama}}}, {{shinken-zemi}}, brown eyes , brown hair, low-tied_hair, purple turtleneck sweater, coral apron,  jeans, mole under the eye, large breasts, ladle, looking at viewer,{troubled lowered eyebrows}, {:o}, spoken_question_mark, sketch,||^|^|V3使用。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6ogbOu6xfu-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6ogbOu6xfu.png]]|
 |}
 
 ***　新世紀エヴァンゲリオン
@@ -1688,6 +1696,13 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
+
+
+
+
+
+
+
 
 
 
