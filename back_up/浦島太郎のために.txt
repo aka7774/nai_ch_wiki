@@ -52,6 +52,10 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-02-25 Aratako氏、Irodori-TTS-500Mを公開
+https://huggingface.co/Aratako/Irodori-TTS-500M
+絵文字で話し方や感情表現をコントロールできる日本語TTS。リファレンスとなる音声データからのクローニングも可能。
+
 **2026-02-24 NovelAI diffusionのキャンバス機能が強化される
 https://blog.novelai.net/novelai%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88-%E6%96%B0%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E5%90%91%E4%B8%8A-3d%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88-6a84dc96748a
 おもな変更点は以下の通り。
@@ -1282,6 +1286,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
