@@ -1,9 +1,9 @@
 #contents
-
+明記しない限り1111の高速化について書き記す。
 * reForgeなどの他のUIを使う
 1111のWebUIを速くする方法でこれを書くのは本末転倒だが、ほかのUIを使ったほうがいい。
 AUTOMATIC1111のWebUIは最適化不足で遅い。しかも1111氏の失踪により開発が長期間停止しているので今後の改善もないだろう。
-いっそのこと、一部の互換性のないExtensionのために1111WebUI残しておいて、メインのWebUIは比較的新しいreForge、または最新かつ最適化されたComfyUIに乗り換えるべき。
+いっそのこと、一部の互換性のないExtensionのために1111WebUIを残しておいて、メインのWebUIは比較的新しいreForge、または最新かつ最適化されたComfyUIに乗り換えるべき。
 
 * 収束の高速化
 いわゆる「蒸留」で少ないステップ数で収束させ、Guidance Scaleとアンコンディショニングの計算を不要にすることで高速化する。
@@ -25,7 +25,7 @@ https://huggingface.co/RED-AIGC/TDD
 画像生成速度には、GPU使用率が大きく影響する。
 アスカベンチで同じグラボの他人の結果より明らかに遅い場合、なんらかの原因でGPUがフルに使われていない可能性もある。
 （これを確認する場合、Win11なら、GPUスケジューリングをオフにしてタスクマネージャーで確認するのが簡単。古いWinバージョンでは3D描写の負荷を示すのでグラフをCudaに切り替える）
-このページにある対策を行ってもアスカベンチで期待したパフォーマンスが出ない、という場合でも、高解像度やHires fixした場合は512x512単体生成よりもGPUがフルに使われやすい傾向があるので、
+このページにある対策を行ってもアスカベンチで期待したパフォーマンスが出ない、という場合でも、高解像度やHires fixした場合は低解像度の生成よりもGPUがフルに使われやすい傾向があるので、
 もしそっちでGPU使用率が100%近くなってて、そういう生成方法がメインだという場合は、アスカベンチで劣っていても気にしなくていい可能性もある。
 
 ちなみに、速度に比例してCPUのシングルスレッド性能の影響が大きくなる。旧世代CPUを使っているなら最新世代のCPUに買い替えるのもあり。
@@ -48,7 +48,7 @@ Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減
 - NVIDIA
 -- GeForce GTX 10(Pascal)、RTX 20(Turing)シリーズ以降
 
-- AMD(Linux/WSL2限定)
+- AMD(Linux限定)
 -- ついにAMDグラボも対応した。Torch 2.4.1+ROCm6.1対応のv0.0.28がリリースされた。
 -- RDNA2以降のグラボが必要？
 
@@ -63,16 +63,16 @@ venvを削除してからWebUIを起動する手もあり
 Torchバージョンが1111のデフォルトではない場合/Radeonの場合
 [[ここ>>https://github.com/facebookresearch/xformers/releases]]で対応するTorchバージョンを確認してから、「pip install xformers==x.x.x」でインストールする。
 
-
 ** Sage Attention(1111非対応)
 1111は古いため非対応。ComfyUIやForge Classicなどが対応。
 量子化ベースの技術のため品質が低下する？
 Attentionの使用量が多いDiTモデルで効果的。
 RTX30以降が必要。
 
-* EasyCache(1111非対応)
+* EasyCache(ComfyUI専用)
 ComfyUI専用。
 変化が小さい部分をキャッシュして使い回す。わずかに品質が低下する。
+SDEソルバーでは毎回ノイズを付与し変化し続けるため機能しない。
 
 * --opt-channelslast
 
@@ -99,75 +99,6 @@ VRAM消費を減らす効果がある。速度も向上するかも。
 オフにするには、 Windows 11の設定でシステム>ディスプレイ>グラフィックの中にあるグラフィックスの詳細設定の中に「ハードウェア アクセラレータによるGPUスケジューリング」があるのでこれをオフにしてPCを再起動する。
 副作用としてゲームでフレーム生成が使えなくなる。
 
-* モデルを軽量化する
-2024年現在、fp16/bf16,safetensorsでの配布(=すでに軽量化された状態)が当り前。pruningの概念はなくなった。
-
-[+] 古い情報(2023年以前)
-
-- ckptとvae.ptをsafetensorsに変換する
--- 最近はckptよりsafetensorsで配布するほうが主流になった。
--- vae.ptはWindows Defenderが誤検出を起こすので回避のためにも変換するのが良さそう
---- 変換すると場合によって容量が約半分になる(NAIはそうだった)
-- pruneする
--- VRAMの節約になるかも?
-- fp16化する
-
-fp16化の副作用として、modules.devices.NansException が発生する。
-特にNovelAI系のVAEで発生しやすい(NovelAI,ClearVAE1.0,Nenhanceなどが該当)。
-
-対策としては、fp32で計算するように強制する。(高速化としては本末転倒だけど)
- --no-half や--no-half-vae を追加する。速度は落ちてVRAM消費が大幅に増加する。
-
-たまに真っ黒画像が出てもいいから高速化したいのであれば、
-disable-nan-checkを追加する手もある。
-それと、黒画像は大体VAEが原因なのでNovelAI系VAEを使わない手もある。
-
-** VAEをckptに内蔵する
-
-1111に標準で入っているCheckpoint Mergerでもできるようになっている
-マージ対象Aに内蔵先モデルを指定して、Interpolation Method を No interpolation 指定
-Bake in VAEで内蔵するVAEを選択してマージする
-
-fp16化したモデルにマージするとVAE部分もfp16になる。
-それによる高速化も起こりうるかも。
-高速化しないと言っている人もいるので検証できたら追記お願いします。
-
-ということでお気持ち表明に反証するで
-[+]
-複数のモデル、VAEで速度を計測したが誤差の範囲でしか変わらんかった。
-masterpiece, best quality,
-Negative prompt: lowres, low quality, bad anatomy, signature
-Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 11, Size: 512x512, Clip skip: 2, ENSD: 31337
-Batch size 2, Batch count 5
-
--Counterfeit
-None:22.69s,21.73s
-kl-f8-anime2.pt:21.40s,21.72s
-kl-f8-anime2(fp16化):21.38s,21.70s
-novelai:21.58s,21.81s
-kl-f8のFP16化を埋め込んで生成:21.65s,21.61s
-kl-f8のFP16化を埋め込んでモデルをfp16化して生成:21.56s,21.68s
-
--PastelMixPrunedFp16
-None:21.49s,21.54s
-kl-f8-anime2.pt:21.35s,21.67s
-kl-f8-anime2(fp16化):21.38s,21.70s
-novelai:21.45s,21.80s
-kl-f8のFP16化を埋め込んで生成:21.34s,21.68s
-
--NovalAI
-None:21.66s,21.89s
-kl-f8-anime2.pt:21.29s,21.88s
-kl-f8-anime2(fp16化):21.51s,21.62s
-novelai:21.45s,21.80s
-kl-f8のFP16化を埋め込んで生成:21.55s,21.67s
-kl-f8のFP16化を埋め込んでモデルをfp16化して生成:21.45s,21.86s
-
-no-half系の引数つけてない限り''モデルもVAEも内部ではfloat16(half)で処理してる''から変わるはずがない。
-[END]
-
-[END]
-
 * Extensionsの退避や削除
 Extensionにはinstall.pyが同梱されていて毎回起動するので、
 不要なExtensionが沢山入ってるなら消すだけでだいぶ速くなるはず。
@@ -183,12 +114,11 @@ UIからオフにするだけではダメ
 出来るだけ少ないStepsでも期待通りの絵が出る方法を模索する。
 末尾にa(ancestral)またはSDEがつかないサンプラーで再現できないか試す。
 DPM++ 2Mは15Stepsでもそれなりに映えるのでおすすめ。
-%%UniPCはもっと良い感じ。%%実際はそうでもない。
 SchedulerにSimpleを使うとさらに良くなる。
 LCM、TurboやHyper-SDなどはさらに速い。出力を大きく変化させたり相性の良し悪しがあったりする代わりに10steps未満でまともな絵がでる。
 
-* WebUIを高速なストレージに入れる
-シーケンシャル3GB以/s上のSSDに配置することで読み込みを高速化する。大容量なSDXLで効果的。
+* 高速なストレージに入れる
+シーケンシャル3GB/s以上のSSDに配置することで読み込みを高速化する。大容量モデルで効果的。
 
 * メインメモリを使う
 

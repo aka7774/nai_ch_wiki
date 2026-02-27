@@ -52,6 +52,10 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-02-26 Google、Nano Banana 2を公開
+https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/
+正式名称は「Gemini 3.1 Flash Image」。速度の向上と低コスト化が図られている。
+
 **2026-02-25 Aratako氏、Irodori-TTS-500Mを公開
 https://huggingface.co/Aratako/Irodori-TTS-500M
 絵文字で話し方や感情表現をコントロールできる日本語TTS。リファレンスとなる音声データからのクローニングも可能。
@@ -64,6 +68,12 @@ https://blog.novelai.net/novelai%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%82%AD%E3
 - ツールの追加（塗りつぶし、ぼかし、スタンプ、なげなわ）
 - インペイントマスクの表示のカスタマイズ
 - 3Dモデルのインポート（対応するファイル形式は.glb、.gltf、.pmd、.pmx、.vrm）
+
+**2026-02-20 画像・動画生成モデルの「Capybara」v0.1がComfyUIに対応
+https://huggingface.co/xgen-universe/Capybara
+xgenから2月17日にv0.1がリリースされた「Capybara」がComfyUIに対応、サンプルワークフローがComfyUIのテンプレートに収録された。
+Capybaraはt2v、t2i、tv2v（サンプルを利用した動画の生成）、ti2i（サンプルを利用した画像の生成）のほか、画像の編集も可能なモデル。
+しかしスレではあまり話題にならず。
 
 **2026-02-18 Respair氏、音声合成AI「Takane - Voice Design」を公開
 https://huggingface.co/spaces/Respair/Voice_Design
@@ -1286,6 +1296,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
