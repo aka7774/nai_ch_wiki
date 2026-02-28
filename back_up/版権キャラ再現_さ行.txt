@@ -62,6 +62,20 @@
 [+]
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
+|koubu, sakura taisen, other, no humans, mecha, pink skin, standing, full body, ||サクラ大戦|光武|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/6066dffa772d90c7.png|
+|anastasia palma, shin sakura taisen, girl, pant suit, white shirt, waist cape, heels, standing, arms at side, full body, ||新サクラ大戦|アナスタシア・パルマ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/0d03034ee362c597.png|
+|mochizuki azami, shin sakura taisen, girl, yellow apron, yellow sleeves, purple skirt, fishnet pantyhose, tabi, yellow sandals, standing, arms at side, full body, ||新サクラ大戦|望月あざみ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/cf7533421e8309f2.png|
+|clarissa snowflake, shin sakura taisen, girl, green jacket, green skirt, white socks, shoes, standing, arms at side, full body, ||新サクラ大戦|クラリッサ・スノーフレイク|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a275869ce4be7cfd.png|
+|shinonome hatsuho, shin sakura taisen, girl, kimono, sarashi, hakama skirt, geta, standing, arms at side, full body, ||新サクラ大戦|東雲初穂|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/4fa10696513773ac.png|
+|amamiya sakura, shin sakura taisen, girl, kimono, hakama skirt, boots, standing, arms at side, full body, ||新サクラ大戦|天宮さくら|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/89446863c5b247a9.png|
+|oogami ichirou, sakura taisen, boy, military uniform, white jacket, pants, gloves, shoes, standing, full body, ||サクラ大戦（無印）〜|大神一郎|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/cf0290eebb6907eb.png|
+|taiga shinjirou, sakura taisen v, boy, military uniform, white jacket, pants, gloves, boots, standing, full body, ||サクラ大戦��|大河新次郎|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/90a5942d3dabb7f8.png|
+|ratchet altair, sakura taisen v, girl, choker, striped dress, detached sleeves, heels, standing, full body, ||サクラ大戦��|ラチェット・アルタイル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/0a80f9fb9e420a97.png|
+|kujou subaru, sakura taisen v, other, jacket, shorts, white socks, loafers, standing, full body, ||サクラ大戦��|九条昴|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c58c20ea0dcd3916.png|
+|diana caprice, sakura taisen v, girl, lab coat, aqua dress, heels, standing, full body, ||サクラ大戦��|ダイアナ・カプリス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ea64e67f29e17876.png|
+|rikaritta aries, sakura taisen v, girl, green poncho, skirt, zig-zag pattern, boots, standing, full body, ||サクラ大戦��|リカリッタ・アリエス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/883df14a5eb1cabb.png|
+|sagitta weinberg, sakura taisen v, girl, hair pulled back, single hair bun, business suit, jacket, green necktie, pants, loafers, standing, full body, ||サクラ大戦��|サジータ・ワインバーグ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/30f098a8c6df94b8.png|
+|gemini sunrise, sakura taisen v, girl, hat, jacket, skirt, gloves, boots, standing, full body, ||サクラ大戦��|ジェミニ・サンライズ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/43e6f0fb1d319549.png|
 |ci caprice, sakura taisen iii, girl, maid headdress, frills, layered dress, red bow, center frills, blue shirt, waist apron, blue mini skirt, pantyhose, shoes, standing, full body, ||サクラ大戦��|シー・カプリス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/20597525273a5b21.png |
 |mell raison, sakura taisen iii, girl, maid headdress, frills, layered dress, red bow, center frills, blue shirt, waist apron, blue mini skirt, bare legs, shoes, standing, full body, ||サクラ大戦��|メル・レゾン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/e9c23465d012ba74.png|
 |kitaooji hanabi, sakura taisen iii, girl, military uniform, black jacket, white gloves, black pants, thigh boots, standing, full body, ||サクラ大戦��|北大路花火|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2a7ffa650eaf1a1b.png|
@@ -71,8 +85,12 @@
 |erica fontaine, sakura taisen iii, girl, military uniform, red jacket, black pants, boots, standing, full body,||サクラ大戦��|エリカ・フォンティーヌ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b663c2c4a6b831ca.png|
 |{{{1little girl is coquelicot &#40;sakura taisen) }}},brown hair, short twintails,brown eyes,pink Military uniform ,Paris,outdoors,||サクラ大戦3|コクリコ|V4 Curated Preview|https://image01.seesaawiki.jp/n/h/nai_ch/WraKbWefHJ.png|
 |glycine bleumer, sakura taisen iii, blonde hair, blue eyes, long hair, earrings, parted bangs, hair over shoulder, jewelry, blue dress, turtleneck, light smile, solo, cowboy shot, 1990s (style), ||サクラ大戦3 |グリシーヌ・ブルーメール|V3使用。年代のスタイルは2010s (style), にしたり、または単に外したりするとより新しめのテイストになる|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/cXokyZuDri-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/cXokyZuDri.png]][[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/cBhaV5NCKN-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/cBhaV5NCKN.png]]|
+|fujieda kaede, sakura taisen ii, girl, military uniform, green collared jacket, green skirt, white gloves, bare legs, heels, standing, arms at side, full body, ||サクラ大戦�供� |藤枝かえで|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/01c38c26a150fd2e.png|
 |reni milchstrasse, sakura taisen, girl, military uniform, blue jacket, white pants, boots, standing, full body, ||サクラ大戦�供� |レニ・ミルヒシュトラーセ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b3ab199865acde5c.png|
 |soletta orihime, sakura taisen, girl, military uniform, pink jacket, red bowtie, white pants, boots, standing, full body, ||サクラ大戦�供� |ソレッタ・織姫|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/76461f833e35882a.png|
+|takamura tsubaki, sakura taisen ii, girl, yellow kimono dress, tasuki, bare legs, tabi, sandals, standing, arms at side, full body, ||サクラ大戦（無印）〜 |高村椿|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/17f43df746142256.png|
+|sakakibara yuri, sakura taisen ii, girl, hat, jacket, skirt, elbow gloves, heels, standing, arms at side, full body, ||サクラ大戦（無印）〜 |榊原由里|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/717b5b6efd7a3db9.png|
+|fujii kasumi, sakura taisen ii, girl, kimono, sash, apron sandals, standing, arms at side, full body, ||サクラ大戦（無印）〜 |藤井かすみ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f01bf97380a9df61.png|
 |kirishima kanna, sakura taisen, girl, military uniform, red jacket, white pants, boots, standing, full body, ||サクラ大戦（無印）〜 |桐島カンナ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/4199483af0915931.png|
 |ri kouran, sakura taisen, girl, military uniform, green jacket, white pants, boots, standing, full body, ||サクラ大戦（無印）〜 |李紅蘭|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2c8708fcbcd4966e.png|
 |iris chateaubriand, sakura taisen, girl, military uniform, yellow jacket, white pants, boots, standing, full body, ||サクラ大戦（無印）〜 |イリス・シャトーブリアン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a90bbc8e185d7dce.png|
@@ -1697,6 +1715,13 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
+
+
+
+
+
+
+
 
 
 
