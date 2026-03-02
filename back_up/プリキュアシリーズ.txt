@@ -605,6 +605,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|asahina mirai, mahou girls precure!! ~mirai days~, girl, aged up, collarbone, pink shirt, heart-shaped red buttons, aqua skirt, red heels, standing, arms at side, full body, ||魔法つかいプリキュア！！〜MIRAI DAYS〜|朝日奈みらい（大人）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/5d2646f48f240df4.png|
+|izayoi liko, mahou girls precure!! ~mirai days~, girl, aged up, high ponytail, pom pom hair ornament, white shirt, high collar, red bowtie, center frills, purple frilled skirt, black pantyhose, purple heels, standing, arms at side, full body, ||魔法つかいプリキュア！！〜MIRAI DAYS〜|十六夜リコ（大人）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/7783d251f248d34a.png|
 |hisui (precure) , mahou girls precure!! ~mirai days~ , girl, loli, green hair, twintails, green eyes, sleeveless shirt, detached sleeve, green skit, socks, green shoes, standing, arms at side, full body,||魔法つかいプリキュア！！〜MIRAI DAYS〜|ひすい|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a6c952f4e7b52062.png|
 |}
 [END]
@@ -629,6 +631,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |}
 [END]
+
 
 
 

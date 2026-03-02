@@ -1,0 +1,98 @@
+{
+  "total_count": 7,
+  "thread": [
+    1772485489,
+    7,
+    "fate",
+    "liveuranus/1772479750",
+    "",
+    "なんJNVA部★628",
+    1
+  ],
+  "comments": [
+    [
+      1,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった  (ﾜｯﾁｮｲ 63bf-4Ovf)",
+      "",
+      "2026/03/03(火) 04:29:10.45",
+      "++E09yLv0",
+      "",
+      " !extend:default:vvvvv:1000:512:donguri=0/3: <br> !extend:default:vvvvv:1000:512:donguri=0/3: <br> スレ立てのときは↑の!extend:default:vvvvv:1000:512:donguri=0/3:を3行ぐらいに増やしてな <br> なんJNVA部Wiki: https://seesaawiki.jp/nai_ch/d/ <br> Danbooru謹製タグ辞典: https://danbooru.donmai.us/posts?tags=tag_groups <br> 避難所: http://bbs.jpnkn.com/test/read.cgi/JNVA/1696574746/ <br> 避難所: ぷにぷにNVA部★27 https://bbs.punipuni.eu/test/read.cgi/vaporeon/1771132800/ <br> ※前スレ <br> なんJNVA部★627 <br> https://fate.5ch.net/test/read.cgi/liveuranus/1772070490/ VIPQ2_EXTDAT: default:vvvvv:1000:512:donguri=0/3: EXT was configured ",
+      0,
+      1,
+      3
+    ],
+    [
+      2,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.88][苗]</span> (ﾜｯﾁｮｲ c7bf-4Ovf)",
+      "",
+      "2026/03/03(火) 04:29:31.16",
+      "++E09yLv0",
+      "",
+      " ■アップローダーについて <br> 「megaの復号キーが分からん」…「#」以下も含めたURL全体をコピペして飛べ <br> https://majinai.art/…出力した画像のプロンプトなどメタデータを掲載したいときに。エロNG。メタデータ付きのPNGのみ対応 <br> https://imgur.com/…メタデータは削除される。自分が上げた画像を一覧したい（要ログイン）ときに。エロNG。webp非対応。スクリプト荒らしが使っているためURLをNGにしているユーザーが多い <br> https://ul.h3z.jp/…エロOK。ただし男性器は修正ありでもNG。JPGとPNGのメタデータは削除される <br> https://catbox.moe/…メタデータ入りの画像を貼りたい、自分が上げた画像を一覧したい（要ログイン）ときに。エロや画像以外もOK。やや不安定で閲覧やログインできない時がある <br> https://imgbb.com/…メタデータ入りの画像を貼りたい、自分が上げた画像を一覧したい（要ログイン）ときに。エロNGだが黙認。画像のURLにはアップした画像のファイル名がそのまま使われるが、URL末尾のファイル名の部分は適当な文字列に変更してもかまわない。サーバは重め <br> ※NAIの生成情報はPNGのメタデータだけでなくアルファチャンネルにも埋め込まれており、imgurやh3zに上げてもアルファチャンネルに埋め込まれた生成情報は残る <br> ■ponyXLについて https://seesaawiki.jp/nai_ch/d/PonyDiffusionV6XLTips <br> ■FLUX.1について https://seesaawiki.jp/nai_ch/d/FLUX1tips <br> ■Illustrious-XL-v0.1について https://seesaawiki.jp/nai_ch/d/illustrious_xl_01tips <br> ■animaについて https://seesaawiki.jp/nai_ch/d/anima ",
+      0,
+      2,
+      3
+    ],
+    [
+      3,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.88][苗]</span> (ﾜｯﾁｮｲ c7bf-4Ovf)",
+      "",
+      "2026/03/03(火) 04:29:49.52",
+      "++E09yLv0",
+      "",
+      " ■どんぐり最低限説明（ https://donguri.5ch.net/faq 、 https://donguri.wikiru.jp/ も参照） <br> Q.レベルが上がらねえぞ　→　A.時間経過と書き込み数で上がる。スマホや回線によってはよく0に戻る <br> Q.レベルが下がらないようにしたい　→　https://seesaawiki.jp/nai_ch/d/donguri を読んでどんぐりログイン＋どんぐりネームを変更しておこう <br> Q.どんぐりはなくなったの?　→　2025年10月13日に運営から「どんぐりシステムをサスペンドする」と発表があった。すべてのスレはどんぐりレベルによらず書き込めるようになり大砲でレベルが下がることもなくなった <br> ■その他 <br> Q.ComfyUIのインストール方法がたくさんあってどれがいいのかわからない　→　https://note.com/hirorohi03/n/n1aa02e7ce276 を参照 <br> Q.なんか久々にA1111使ったら生成がクソ遅いぞ！　→　A.まずは旧Lycorisの拡張機能を消せ。話はそれからだ <br> Q.グラボの型番について書きたいのにエラーが出る　→　A.4桁の半角数字は回線によっては書き込めない。全角にしたりゼロをオーにするなどで書き込める <br> Q.&#127880;ってなに?　→　https://seesaawiki.jp/nai_ch/d/%b8%c5%bb%f6%b5%ad#content_3_66 を参照 ",
+      0,
+      3,
+      3
+    ],
+    [
+      4,
+      " <span style=\"color:green;\">警備員[Lv.38]</span> (ﾜｯﾁｮｲ 2754-6EN9)",
+      "sage",
+      "2026/03/03(火) 04:32:11.12",
+      "qWUM9bhq0",
+      "",
+      " サンイチ ",
+      0,
+      1,
+      1
+    ],
+    [
+      5,
+      " <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6755-LaJr)",
+      "sage",
+      "2026/03/03(火) 04:35:28.37",
+      "knPVz/9o0",
+      "",
+      " サンイチ ",
+      0,
+      1,
+      1
+    ],
+    [
+      6,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.11]</span> (ﾜｯﾁｮｲ c743-MvT1)",
+      "sage",
+      "2026/03/03(火) 05:26:17.29",
+      "yFfFlVIf0",
+      "",
+      " サンイチ ",
+      0,
+      1,
+      1
+    ],
+    [
+      7,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.305][木]</span> (ﾜｯﾁｮｲ 5f7d-kFAK)",
+      "sage",
+      "2026/03/03(火) 05:37:00.96",
+      "1mnqvIDL0",
+      "",
+      " サンイチ <br>  <br> ネタがないので適当に1枚 <br> ※リアル系BDSM系注意 <br> https://files.catbox.moe/mx43ex.webp ",
+      0,
+      1,
+      1
+    ]
+  ]
+}

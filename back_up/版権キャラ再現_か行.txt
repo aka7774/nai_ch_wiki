@@ -7,6 +7,7 @@
 ***　カードキャプターさくら
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||そ||||
 |gran||||||
 |kinomoto sakura (astral sakura)&#160;, cardcaptor sakura, girl, magical girl, brown hair, green eyes, small breasts, clothed female, pink hair ribbon, frilled star choker, white frilled dress, layered over a pink frilled dress, white wings, white puffy short sleeves, Single white thighhigh with frilled thigh strap on her left leg. Single white socks with frilled ankle garter on her right leg. white mary janes, standing, holding wand, hoshi no tsue, smile, full body, |lowres, aliasing, magician, fuuin no tsue, sash, |カードキャプターさくら|OP3(プラチナ)衣装の木之本桜|V4 Full版使用。OP2衣装よりは再現度が高いが、一部の修正が必要。|https://image02.seesaawiki.jp/n/h/nai_ch/ABlZynOhQv.png|
 |kinomoto sakura 1.5:(miraculous sakura)&#160;::, cardcaptor sakura, girl, magical girl, brown hair, green eyes, small breasts, clothed female, crown, ivory dress, yellow wing-shaped brooch, yellow ascot, light yellow wings, sleeveless, ivory elbow gloves, yellow bloomers, ivory showgirl skirt, ivory thighhighs, yellow mary janes, standing, holding wand, fuuin no tsue, smile, full body, |lowres, aliasing, magician, hoshi no tsue, |カードキャプターさくら|OP2(扉をあけて)衣装の木之本桜|V4 Full版使用。完全再現しない。|https://image02.seesaawiki.jp/n/h/nai_ch/oQEHtMLFL6.png|
@@ -763,10 +764,10 @@
 [END]
 
 ***　銀魂
-[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|Kagura &#40;Gintama), orange hair, side hair buns, red qipao, pale skin,||銀魂|神楽|V4.5|https://image01.seesaawiki.jp/n/h/nai_ch/ed7cca642451ddfa.png|
+|Shimura Tae (Gintama), kimono, smooth hair, center part bangs, pony rail,  floral kimono, obi,||銀魂|神楽|V4.5|https://image02.seesaawiki.jp/n/h/nai_ch/0ab344b9a77d40f8.png|
 |official style, sakata gintoki (gintama), 1boy, soio,||銀魂|坂田銀時||https://image01.seesaawiki.jp/n/h/nai_ch/mPEG11uN0K.png|
 |official style, 2d cel anime, {{kagura (gintama) }}, {{gintama}}, very aesthetic, best quality, intricate, overall detail, 1 girl, younger, china clothes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |銀魂|神楽|V2使用。顔の造形は忠実に再現される(ツインテがつくことはある)が、年齢などで調整しないと巨乳になったりする。|https://image01.seesaawiki.jp/n/h/nai_ch/mjmOASR8CI.png|
 |}
@@ -1264,6 +1265,12 @@
 |official style, 2d cel anime, {{eureka (eureka seven) }}, {{eureka seven (series)}}, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |交響詩篇エウレカセブン|エウレカ|V2使用。髪型がそれほど安定しない。|https://image01.seesaawiki.jp/n/h/nai_ch/KswXqXOt7S.png|
 |}
 
+***　KO世紀ビースト三獣士（こうせいきビーストさんじゅうし）
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|mei mer, ko seiki beast sanjuushi, girl, head fins, pink shoulder armor, impossible shirt, red shirt, yellow skirt, side slit, red boots, standing, arms at side, full body, ||KO世紀ビースト三獣士|メイ・マー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/9b891de67cc69f0a.png|
+|}
+
 ***　甲虫王者ムシキング
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1555,7 +1562,4 @@ multiple breasts,&#40;mutated hands and fingers:1.5 ),&#40;long body :1.3),&#40;
 |gash bell, konjiki no gash!!, boy, chibi, black dress, black shoes, standing, :d, arms at side, full body,||金色のガッシュ!!|ガッシュ・ベル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/231efe283f0ad9f1.png|
 |}
 [END]
-
-
-
 
