@@ -1001,6 +1001,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|wakana&#40;princess connect!), princess connect!,dark teal beret,white sleeve blouse,pink necktie,teal vest,black skirt,black mary jane shoes||プリンセスコネクト|ワカナ|V4.5　色々惜しい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/ea509263b8a8e314-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/ea509263b8a8e314.png]] |
+|Fubuki&#40;princess connect!), princess connect!,crop top,white coat,black miniskirt,pink loose belt, thigh strap, white socks,||プリンセスコネクト|フブキ|V4.5|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/c6fe0f46627bd6d0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/c6fe0f46627bd6d0.png]] |
 ||||ニノン|||
 |Tomo&#40;princess connect!), princess connect!,pink crop top,gloves,black shorts,belt,thigh boots,||プリンセスコネクト|トモ|V4.5|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/180929eb933ecbc0-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/180929eb933ecbc0.png]]|
 |Ruka&#40;princess connect!), princess connect!,kimono,sarashi,sash,hair red flower,||プリンセスコネクト|ルカ|V4.5(キャラ名だけだとサマーが出力される)|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/8fd2417185fa5b40-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/8fd2417185fa5b40.png]] |
