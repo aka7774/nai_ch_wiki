@@ -308,11 +308,17 @@
 |} 
 
 ***　ジブリ作品
-{| class="sort edit nanj_prompt_table" 
-|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
-|kiki &#40;majo no takkyuubin),child,||魔女の宅急便|キキ|V4|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/07cd2679bcb25b20-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/07cd2679bcb25b20.jpg]]|
-|kiki (majo no takkyuubin), studio ghibli, black hair, short hair, black eyes, hair bow, hairband, smile, solo, cowboy shot, ||魔女の宅急便|キキ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/URX322CbP2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/URX322CbP2.png]]|
-|} 
+以下のリンクにある作品は各項目へ
+→ [[風の谷のナウシカ>版権キャラ再現/か行#hanken_nausicaa]]
+→ [[天空の城ラピュタ>版権キャラ再現/た行#hanken_laputa]]
+→ [[となりのトトロ>版権キャラ再現/た行#hanken_totoro]]
+→ [[魔女の宅急便>版権キャラ再現/ま行#hanken_majo_no_takkyuubin]]
+→ [[もののけ姫>版権キャラ再現/ま行#hanken_mononoke_hime]]　
+→ [[千と千尋の神隠し>版権キャラ再現/さ行#hanken_kamikakushi]]　
+→ [[かぐや姫の物語>版権キャラ再現/か行#hanken_kaguya-hime]]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|}
 
 ***　シャーマンキング 
 {| class="sort edit nanj_prompt_table" 
@@ -1482,6 +1488,7 @@
 |}
 [END]
 
+&aname(hanken_kamikakushi)
 ***　千と千尋の神隠し
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1716,6 +1723,14 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
+
+
+
+
+
+
+
+
 
 
 

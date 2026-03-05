@@ -11,8 +11,10 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
-||しゅーじ|||
-||朝凪|||
+|artist:gengorou,|源五郎|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/e785422bbbcf247c.png|
+|artist:cle masahiro,|呉マサヒロ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/c94db7dd911a08f7.png|
+|artist:kanikama,|かにかま|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/9bc75f7fb1d807bd.png|
+|artist:shuz (dodidu),|しゅーじ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/ba4baf8bc32c60c1.png|
 |artist:akaneya,|茜谷|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/8659e41c21b95de6.png|
 |artist:yoshimizu kagami,|美水かがみ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/30b6c67cd0e3a72d.png|
 |artist:nenemaru,|音音丸|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/24a121d74c072e7d.png|
