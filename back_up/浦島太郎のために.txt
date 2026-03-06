@@ -52,6 +52,9 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-03-06 5ch.netとbbspink.comのドメインが剥奪される
+5ch.netは暫定的に5ch.ioへ移行。bbspink.comの移行先は本稿執筆時点で不明。
+
 **2026-02-26 Google、Nano Banana 2を公開
 https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/
 正式名称は「Gemini 3.1 Flash Image」。速度の向上と低コスト化が図られている。
@@ -1296,6 +1299,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 

@@ -128,6 +128,8 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|boa sandersonia, one piece, girl, clothed female, standing, full body, ||ワンピース|ボア・サンダーソニア|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/a86e46985a33bcb7.png|
+|boa marigold, one piece, girl, fat, clothed female, standing, full body, ||ワンピース|ボア・マリーゴールド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/15a2c4ab05522bb7.png|
 |Miss Valentine, one piece, anime style,blonde hair, slicked back hair, tied back hair, large forehead, sharp eyes, esmile, tall and slim body, long legs, orange sleeveless dress, citrus fruit pattern dress, short dress,white gloves, large round earrings, slim,smiling,||ワンピース|ミキータ(ミス・バレンタイン)|V4.5|https://image02.seesaawiki.jp/n/h/nai_ch/bced114b47178ed3.png|
 |Nico Robin, one piece, anime style, long straight jet black hair,center part bangs,calm confident smile,blue eyes,orange sunglasses on head,sunglasses resting on hair,visible eyes,short blue cropped shirt,deep neckline, floral detail on chest,short sleeves,long pink skirt,green sash with flower pattern,red high heels||ワンピース|ニコ・ロビン|V4.5使用|https://image01.seesaawiki.jp/n/h/nai_ch/bc77249ee5b0db0d.png|
 |Vinsmoke Reiju, one piece, anime style, side swept bangs, confident smile,blue eyes, long eyelashes,purple bodysuit, revealing design,high heels, gloves,Germa 66 uniform style,||ワンピース|ヴィンスモーク・レイジュ|V4.5使用|https://image02.seesaawiki.jp/n/h/nai_ch/9cb70a1fa46d7f40.png|
@@ -181,6 +183,7 @@
 |||||||
 |||||||
 |}
+
 
 
 
