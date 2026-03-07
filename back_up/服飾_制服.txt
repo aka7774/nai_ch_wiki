@@ -56,6 +56,15 @@
 |}
 [END]
 
+&aname(clothes_work_uniform_fiction)
+** フィクションに登場する架空の店舗制服(V4.5版)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|エンジェルモート|ひぐらしのなく頃になどに登場する架空のファミリーレストラン。|angel mort, detached collar, black leotard, black detached sleeves, showgirl skirt, black thighhighs, red mary janes, |https://image01.seesaawiki.jp/n/h/nai_ch/407687439558642b.png|
+|}
+[END]
+
 &aname(clothes_uniform_military)
 ** 実在するもしくは過去に存在した組織の軍服(V4.5版)
 [+]
@@ -75,6 +84,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|神衣鮮血（人衣一体）|キルラキルに登場する生きたセーラー服。|senketsu, revealing clothes, gloves, red garter straps, microskirt, thigh boots,  |https://image02.seesaawiki.jp/n/h/nai_ch/fb4bd9da950db92f.png|
+|ゼロスーツ|メトロイドシリーズより。|zero suit, bodysuit, |https://image01.seesaawiki.jp/n/h/nai_ch/34bf26bfb9e64924.png|
+|ガンツスーツ|GANTSより。|gantz suit, black bodysuit, |https://image02.seesaawiki.jp/n/h/nai_ch/37292b37b1faacf2.png|
+|ナンバーズスーツ|魔法少女リリカルなのはStrikerSより。同作に登場するナンバーズの服。|numbers' uniform, bodysuit,  |https://image01.seesaawiki.jp/n/h/nai_ch/bd1da38c3b81cce4.png|
 |BBY-01艦内乗務員服|宇宙戦艦ヤマトの乗組員の服。Yellowの部分を変える事でカラーリングも自由|Yellow crew suit&#40;uchuu senkan yamato)|https://image02.seesaawiki.jp/n/h/nai_ch/5ee8152ab81a2209.png|
 |時空管理局次元航行部隊制服|魔法少女リリカルなのはシリーズ。|tsab naval military uniform, mahou shoujo lyrical nanoha strikers, blue jacket, blue skirt,|https://image01.seesaawiki.jp/n/h/nai_ch/be6393fa9a5f2a21.png|
 |時空管理局地上部隊制服|魔法少女リリカルなのはStrikerSより。|tsab ground military uniform, mahou shoujo lyrical nanoha strikers, brown jacket, brown skirt,|https://image01.seesaawiki.jp/n/h/nai_ch/bdd598b88dc6162f.png|
@@ -168,3 +181,18 @@
 ||ToHeartシリーズ|to heart school uniform|https://image01.seesaawiki.jp/n/h/nai_ch/f788b4af068d48de.png|
 |}
 [END]
+
+&aname(clothes_fiction)
+** フィクションに登場する制服以外の特定衣装・装備(V4.5版)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|ナイトメアブラッド|アイドルマスターのDLC衣装。|nightmare blood (idolmaster), bikini armor, bat wings, elbow gloves, striped thighhighs, armored boots, |https://image02.seesaawiki.jp/n/h/nai_ch/5c2895bf9cd119f6.png|
+|踊り子の服（ドラクエ�検�|ドラクエ�犬謀仂譴垢襯沺璽縫磴僚藉�装備。|dragon quest iv, dancer's costume (dq), bikini-top, |https://image01.seesaawiki.jp/n/h/nai_ch/c057dd69d37da47a.png|
+|あぶないみずぎ|ドラクエシリーズに登場する装備品。|dragon quest iii, girl, revealing swimsuit (dq), red swimsuit, |https://image02.seesaawiki.jp/n/h/nai_ch/18ec82cc51642a65.png|
+|天使のレオタード|ドラクエシリーズに登場する装備品。|dragon quest v, angel leotard, fake angel wings, covered navel, heels, |https://image02.seesaawiki.jp/n/h/nai_ch/1a1391a481697f03.png|
+|}
+[END]
+
+
+

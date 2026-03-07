@@ -603,6 +603,7 @@
 
 &aname(hanken_laputa)
 ***　天空の城ラピュタ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |dola (laputa), tenkuu no shiro laputa, girl, 3.0::aged down, age regression, teenage::, slender, blue bandana, blue shirt, white ascot, brown pants, shoes, standing, full body, ||天空の城ラピュタ|若ドーラ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/cce7274246df32c3.png|
@@ -612,7 +613,7 @@
 |sheeta, tenkuu no shiro laputa, girl, hairband, pendant, hikouseki, black dress, shoes, standing, full body, ||天空の城ラピュタ|シータ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/eda9eb2f128ef5df.png|
 |official style, anime coloring, sheeta, tenkuu no shiro laputa, studio ghibli, very aesthetic, best quality, intricate, overall detail, 1 girl, younger, black hair, twin braids, black eyes, hairband, pendant, blue jewelry, purple dress, bare legs, loafers, standing, happy, simple background, front view, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |^|^|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/LS8Wf0bu7i.png|
 |}
-
+[END]
 ***　天元突破グレンラガン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -897,6 +898,7 @@
 
 &aname(hanken_totoro)
 ***　となりのトトロ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |kusakabe mei, tonari no totoro, girl, pink dress, shoes, standing, full body, ||となりのトトロ|草壁メイ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/f67dad3f745f36bc.png|
@@ -905,7 +907,7 @@
 |nekobus, tonari no totoro, other, no humans, extra arms, tail, all fours, full body, grin, ||となりのトトロ|ネコバス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b082e8b6c9758960.png|
 |totoro, tonari no totoro, other, no humans, standing, full body, grin, ||となりのトトロ|トトロ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/674983d06397b2bd.png|
 |}
-
+[END]
 ***　トムとジェリー
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -925,6 +927,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|bianca (dq5), dragon quest v, girl, angel leotard, fake angel wings, covered navel, heels, standing, full body, ||ドラゴンクエスト��|ビアンカ（天使のレオタード）|V4.5 Full版使用。キャラクタープロンプト1のみ記述。細かなデザインは毎回変わる。|https://image01.seesaawiki.jp/n/h/nai_ch/d0379fbada7333f3.png|
 |Maribel&#40;dq7),orange hood, green dress, red dress, two-tone dress, long sleeves, layered sleeves, orange sleeves||ドラゴンクエスト��|マリベル|V4.5|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/b073ea055dea0bc4-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/b073ea055dea0bc4.png]] |
 |thief (dq3), dragon quest iii, girl, black bodysuit, orange tube top, gloves, belt pouch, boots, standing, full body,||ドラゴンクエスト��|女盗賊|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b891647a3fde5497.png|
 |prince of lorasia, dragon quest ii, boy, black bodysuit, blue tunic, blue gloves, belt, sheath, blue boots, standing, full body, ||ドラゴンクエスト��|ローレシアの王子|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/2068107823f193c2.png|
@@ -1154,4 +1157,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
+
+
+
 

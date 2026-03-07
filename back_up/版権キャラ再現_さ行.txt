@@ -311,8 +311,11 @@
 以下のリンクにある作品は各項目へ
 → [[風の谷のナウシカ>版権キャラ再現/か行#hanken_nausicaa]]
 → [[天空の城ラピュタ>版権キャラ再現/た行#hanken_laputa]]
+→ [[火垂るの墓>版権キャラ再現/は行#hanken_hotaru_no_haka]]
 → [[となりのトトロ>版権キャラ再現/た行#hanken_totoro]]
 → [[魔女の宅急便>版権キャラ再現/ま行#hanken_majo_no_takkyuubin]]
+→ [[紅の豚>版権キャラ再現/か行#hanken_kurenai_no_buta]]
+→ [[耳をすませば>版権キャラ再現/ま行#hanken_mimi_wo_sumaseba]]
 → [[もののけ姫>版権キャラ再現/ま行#hanken_mononoke_hime]]　
 → [[千と千尋の神隠し>版権キャラ再現/さ行#hanken_kamikakushi]]　
 → [[かぐや姫の物語>版権キャラ再現/か行#hanken_kaguya-hime]]
@@ -1490,6 +1493,7 @@
 
 &aname(hanken_kamikakushi)
 ***　千と千尋の神隠し
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |ogino chihiro, sen to chihiro no kamikakushi, girl, pink kimono, pants, bare foot, standing, full body, ||千と千尋の神隠し|荻野千尋|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/fbf20ac77b3d9d46.png|
@@ -1498,7 +1502,7 @@
 |kaonashi, sen to chihiro no kamikakushi, boy, standing, full body, -3.0::nude::,||千と千尋の神隠し|カオナシ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/23269db654d9f9f2.png|
 |yubaba, sen to chihiro no kamikakushi, girl, blue dress, standing, full body, ||千と千尋の神隠し|湯婆婆|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/9f952e85ea2863ff.png|
 |}
-
+[END]
 ***　戦隊レッド 異世界で冒険者になる
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
@@ -1723,6 +1727,10 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
+
+
+
+
 
 
 

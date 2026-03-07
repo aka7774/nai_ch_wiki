@@ -191,6 +191,7 @@
 
 &aname(hanken_majo_no_takkyuubin)
 ***　魔女の宅急便
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |senior witch (majo no takkyuubin), majo no takkyuubin, girl, black dress, shoes, standing, holding behind back, broom, full body, ||魔女の宅急便|先輩魔女|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b070492fcc5c3029.png|
@@ -200,7 +201,7 @@
 |kiki &#40;majo no takkyuubin),child,||魔女の宅急便|キキ|V4|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/07cd2679bcb25b20-s.jpg)>https://image02.seesaawiki.jp/n/h/nai_ch/07cd2679bcb25b20.jpg]]|
 |kiki (majo no takkyuubin), studio ghibli, black hair, short hair, black eyes, hair bow, hairband, smile, solo, cowboy shot, ||魔女の宅急便|キキ|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/URX322CbP2-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/URX322CbP2.png]]|
 |}
-
+[END]
 ***　魔女の旅々
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -652,6 +653,15 @@
 |}
 [END]
 
+&aname(hanken_mimi_wo_sumaseba)
+***　耳をすませば
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|tsukishima shizuku, mimi wo sumaseba, girl, serafuku, white socks, loafers, standing, full body, straight-on, ||耳をすませば|月島雫|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/a4d491d35f1c81e1.png|
+|amasawa seiji, mimi wo sumaseba, boy, school uniform, shirt, pants, shoes, standing, full body, straight-on, ||耳をすませば|天沢聖司|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1d7f6ad9ed8d59fa.png|
+|the baron (mimi wo sumaseba), mimi wo sumaseba, boy, sformal clothes, top hat, shirt, red bow, jacket, vest, pants, shoes, standing, holding cane, full body, straight-on, ||耳をすませば|バロン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3f144ca7effa9663.png|
+|}
+
 ***　みゆき
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -890,13 +900,19 @@
 
 &aname(hanken_mononoke_hime)
 ***　もののけ姫
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|kodama, mononoke hime, other, no humans, standing, arms at side, head tilt, full body, -3.0::realistic::,||もののけ姫|木霊|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f8e3a5a5516bbef7.png|
+|moro no ichizoku, mononoke hime, other, no humans, wolf, all fours, from side, full body, ||もののけ姫|モロの一族|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/2bc22335665c3253.png|
+|moro (mononoke hime), mononoke hime, other, no humans, wolf, all fours, from side, full body, ||もののけ姫|モロ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b6d0c35f4abcb4ce.png|
+|yakul, mononoke hime, other, no humans, antelope, all fours, saddle, reins, from side, full body, ||もののけ姫|ヤックル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/089ac05cf369d13c.png|
+|eboshi, mononoke hime, girl, clothed female, blue coat, red kimono, fan print, blue pants, sandals, makeup, standing, full body, straight-on, ||もののけ姫|エボシ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/44761ed70a3d7a5b.png|
 |kaya (mononoke hime)&#160;, mononoke hime, girl, clothed female, kimono, legwamers, standing, full body, ||もののけ姫|カヤ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/60f857b42ef1ec6f.png|
 |ashitaka, mononoke hime, boy, blue kimono, shirt, sash, pants, legwarmers, shoes, standing, full body, ||もののけ姫|アシタカ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9b42e5d3673e368a.png|
 |san (mononoke hime), mononoke hime, girl, cape, necklace, shirt, skirt, shoes, standing, full body, ||もののけ姫|サン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/268c80a45346af6d.png|
 |}
-
+[END]
 ***　モンスターハンターシリーズ
 [+]
 {| class="sort edit nanj_prompt_table"
@@ -938,5 +954,11 @@
 |}
 [END]
 ----
+
+
+
+
+
+
 
 
