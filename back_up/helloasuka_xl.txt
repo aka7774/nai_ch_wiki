@@ -73,6 +73,7 @@ Batch Count 10、Batch Size 1
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(120px):GPU|VRAM|w(120px):CPU|Time taken(秒)|アプリとバージョン|コマンドラインオプション|備考・その他変更内容|
+|RTX 3060|12GB|Ryzen 9 3950X|210.1|f2.0.1v1.10.1-previous-669-gdfdcbab6||Powerlimit 119W (170W x 70%)Ubuntu 22.04.5 LTS|
 |RTX 5090|32 GB|Ryzen 7 9700X|25.9|ComfyUI v0.14.2 pytorch 2.9.1+cu130|--use-sage-attention --fast|Powerlimit 450W + Sage Attention v3|
 |Radeon 8060S|64GB|Ryzen AI MAX+ 395|193.4|f1.0.0v2-v1.10.1RC-latest-2454-g9086b215|--skip-install --always-gpu|Windows11 ROCm6.5(TheRock) torch 2.7.0a0+git3f903c3|
 |Radeon 8060S|64GB|Ryzen AI MAX+ 395|189.4|ComfyUI v0.3.592.7.0a0+git3f903c3|--gpu-only --use-pytorch-cross-attention|Windows11 ROCm6.5(TheRock)|
