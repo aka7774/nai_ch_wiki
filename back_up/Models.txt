@@ -15,13 +15,13 @@ SD1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - 欠陥のあるVAE(アーティファクトが発生したり特殊なノイズに弱かったりする)
 - 文章は全く生成できない
 - Text EncoderはCLIP-L
--- 最低限の性能でプロンプトの応答性が低い
+-- プロンプトの応答性がとても低い
 
 ** SD2
 SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 - U-Netアーキテクチャ
 - 865M(8.65億)パラメータ
-- 基礎解像度は768x768
+- 解像度は768x768
 - ''SD1と大差無し''
 - 使うためにはconfigファイル(yaml)を設置する必要がある。
 - 大抵はモデルの配布元が配っている。
@@ -41,7 +41,7 @@ SDXL Base 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 https://huggingface.co/stabilityai/stable-diffusion-3-medium
 - MMDiT
 - Medium(2.5B)のみ
-- 基礎解像度は1024x1024
+- 解像度は1024x1024
 - 16チャネルVAE
 -- ディティールが大きく改善
 - Text EncoderはCLIP L/Gに加えてT5XXL(任意)
@@ -181,17 +181,17 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 
 拡張子で判別する。
 
-** .ckpt
-
-- checkpointの略。
-- チクポチではない。が、チクポチが出るかどうかはこいつ次第。
-- ロード時にPythonのコードを実行できるため安全とは言い切れない
--- まれにウィルスソフトが誤検知を起こして騒ぎになっていたりする
-- 狭義のモデルではないファイル(VAEとか)にもこの拡張子が使われることがあるので注意
-
 ** safetensors
 - Hugging Face提唱の形式
 - ロード時にPythonのコードを実行できないので安全
+
+** .ckpt
+
+- 2023年まで主流だった古い形式
+- checkpointの略。
+- ロード時にPythonのコードを実行できるため安全とは言い切れない
+-- まれにウィルスソフトが誤検知を起こして騒ぎになっていたりする
+- 狭義のモデルではないファイル(VAEとか)にもこの拡張子が使われることがあるので注意
 
 * 精度
 
@@ -202,7 +202,8 @@ inpaint.ckptは普通のcheckpointとは違うらしい。
 - 1ビットの符号と8ビットの指数部と23ビットの仮数部
 - 現行のハードウェアはすべて対応
 - 高精度だが計算量が多い
-- 生成AIでは重い割にfp16とあまりかわらない
+-- GPUのAIアクセラレータが使えないのでかなり遅い
+- 生成AIでは重い割にbf16とあまりかわらない
 
 ** fp16/float16(半精度浮動小数点数)
 - 生成AIで主流の精度

@@ -64,6 +64,8 @@ Euler ancestralは絵がぼやける傾向がSDXLより強い。
 タグは次の並びで学習している。これに従う必要はない(だが推奨)。
  quality/meta/year/safety tags, 1girl/1boy/1other etc, character, series, artist, general tags
 
+タグの区切りのコンマとスペースは必ず守ること。コンマだけだと隣接する単語の動作が変化する。
+
 ** 特殊タグ
 品質タグや年代タグなど
 *** 品質タグ
