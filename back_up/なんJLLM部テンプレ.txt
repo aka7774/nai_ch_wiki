@@ -1,0 +1,78 @@
+[[なんJLLM部過去ログ]]
+
+一旦今までのテンプレ以下に貼るけど、内容は少々古い。
+お手入れボチボチやってくで、気長な待ってなー
+
+なお2026/3現在ツールはlmstudioっちゅーのが頭一つ抜けて使われとる
+また最新LLMをとにかくすぐに動かしたいという場合はllama.cppっちゅーのが一番対応が早いで
+
+Q.エロ系をやりたいんだけど
+A.ファイル名に「NSFW」「uncensored」「abliterated」「heretic」が入っているのを使う
+　方式としてはhereticが一番新しい方式やが、それが一番性能がいいとは限らへんから
+　複数使ってしっくりくるもの使うしかあらへん
+
+*旧テンプレ
+初心者は導入しやすいKoboldcppから始めるのをお勧め
+(1)NVIDIA、CPUユーザーはここで最新版のKoboldcpp.exeをダウンロード
+https://github.com/LostRuins/koboldcpp/releases
+AMDユーザーはこっち
+https://github.com/YellowRoseCx/koboldcpp-rocm
+(2)ここで良さげなggufモデルをダウンロード
+https://huggingface.co/models?sort=modified&search=gguf
+この2つのファイルだけで動く
+
+Koboldの設定や使い方は英語だけどここが詳しい
+https://github.com/LostRuins/koboldcpp/wiki
+
+oobabooga/text-generation-webui
+通称大葉
+これもKoboldAIに並んで有用な実行環境やで
+https://github.com/oobabooga/text-generation-webui
+
+●Zuntanニキ謹製のツールEasyNovelAssistant
+主に小説用で使われとるで
+ローカルLLM導入のハードルをぐっと下げてくれたで
+初めてのお人はここから始めるのもいいで
+https://github.com/Zuntan03/EasyNovelAssistant
+
+https://github.com/SillyTavern/SillyTavern
+AIチャットに特化したUI、SillyTavernや
+キャラをbot的に管理したりグラ登録したり複数選んでグループチャットしたり大量の設定を外部記憶的に管理したり色々できるで
+画像出力や音声出力とも連携可能で夢が広がるで
+機能が豊富すぎて最初取っ付きにくいのと日本語の解説がほとんど無いのが難点やがRPチャット派は使うと幸せになれるやで
+あくまでUI(フロントエンド)やからこれ自体にはAIは内蔵されてないから注意してな
+好きなAPIやローカルモデルと接続して使うんやで
+
+例としてKoboldで起動したローカルモデルとSillyTavernを接続する設定や
+先にいつもどおりKoboldを起動してな
+
+SillyTavernのプラグのアイコンをクリック
+APIに Text Completion を選択
+API Typeは KoboldCpp
+API keyは不要
+API URLに http://localhost:5001/
+これでいける
+
+●多くのモデルには「base」と「instruct」の2種類があるで
+baseはチューニングされていない、与えられた文書の続きを垂れ流すモデルやで
+instructはchatGPTのように対話して質問に答えるようチューニングされたAIやで
+
+●LLMを動かすにはGPUを使う方法とCPUを使う方法があるで
+GPUを使う場合は比較的速く動くけど、VRAM容量の大きなグラボが必要になるで
+CPUを使う場合はグラボが不要でメインメモリのRAMを増やすだけで大きなモデルが動かせるというメリットがあるけど、動作速度はGPUよりは落ちるで
+
+●LLMモデルには量子化されてないsafetensorsファイルと、8bitや4bitなどに量子化されて容量が小さくなったものがあるで
+量子化モデルにはGGUFやGPTQなどの種類があるで
+基本的にはCPU (llama.cpp)で動かす場合はGGUF、GPUで動かす場合はGPTQを選べばええで
+量子化は4bitまでならほとんど精度が落ちないのでよくわからない場合はIQ4_XSやQ4_k_mなどにしとけばええで
+
+●LLMモデルは既存のbaseモデルを元に自分で学習(ファインチューニング)させることもできるで
+画像AIのようにLoRAファイルとして学習結果を保存したりLoRAを読み込むこともできるで
+
+●モデルのサイズ(パラメータ数)は◯B (B=billion=10億)という単位で表記されるで
+例えば7Bのモデルを読み込むなら量子化しない場合は約14GB、8ビット量子化の場合は7GB、4ビット量子化の場合は3.5GBのメモリまたはVRAMが必要になるで
+基本的にはBが大きいほど性能が高いで
+
+●高性能なPCがないけどLLMを試したい人や大きなモデルを速く動かしたい人はpaperspaceなどのクラウド環境を使うのも手やで
+若干規制はあるもののGoogle AI studioから無料でAPI keyを入手して高性能なAIを使うこともできるのでそれを使うのええで
+API keyの入手はttps://aistudio.google.com/apikeyここからできるで

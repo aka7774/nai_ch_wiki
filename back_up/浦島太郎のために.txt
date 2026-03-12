@@ -52,8 +52,18 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-03-12 CircleStone Labs、Animaのpreview 2をリリース
+https://huggingface.co/circlestone-labs/Anima
+パラメータを変更しての再トレーニング、より多くのキャラクターの学習、自然言語理解の向上などが行われている。
+1024×1024ピクセルで学習している点は最初のリリースと変わらない。また美的チューニングもされていないとのこと。
+
+**2026-03-06 Lightricks、LTX-2.3を公開
+https://huggingface.co/Lightricks/LTX-2.3
+音声と映像の品質や、プロンプトの追従性が向上している。
+-GGUF：https://huggingface.co/unsloth/LTX-2.3-GGUF
 **2026-03-06 5ch.netとbbspink.comのドメインが剥奪される
 5ch.netは暫定的に5ch.ioへ移行。bbspink.comの移行先は本稿執筆時点で不明。
+専用ブラウザのSikiとchmateは即日対応、ほかの多くの専用ブラウザも対応してきている。
 
 **2026-02-26 Google、Nano Banana 2を公開
 https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/
@@ -113,6 +123,7 @@ https://ace-step.github.io/ace-step-v1.5.github.io/
 [[プロジェクトのGitHub>https://github.com/ace-step/ACE-Step-1.5]]には独自のWebUIが用意されているほか、ComfyUIのテンプレートにもワークフローが収録されている。
 
 comfyUIでは本体更新で音楽生成だけは対応した。本家のACE-Step/ACE-Step-1.5が提供するgradio_uiではCoverからlora作成などの全ての機能を使うことができる。
+
 **2026-02-01 CircleStone Labs、Animaのプレビュー版をリリース
 https://huggingface.co/circlestone-labs/Anima
 CircleStone LabsとComfy orgが共同開発した、2Bパラメータのt2iモデル。アニメのキャラクターやデザインをはじめ、フォトリアリスティックでないイラストや芸術的な画像の生成に向いている。danbooruスタイルのプロンプトと自然言語、またこれらの組み合わせに対応。プロンプトの記述順序、品質タグやメタタグ、アーティストタグなどの記述といった情報は上記リンクを参照のこと。
@@ -1299,6 +1310,9 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
+
+
 
 
 
