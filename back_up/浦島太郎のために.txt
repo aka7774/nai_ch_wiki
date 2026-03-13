@@ -57,6 +57,12 @@ https://huggingface.co/circlestone-labs/Anima
 パラメータを変更しての再トレーニング、より多くのキャラクターの学習、自然言語理解の向上などが行われている。
 1024×1024ピクセルで学習している点は最初のリリースと変わらない。また美的チューニングもされていないとのこと。
 
+**2026-03-11 ComfyUI、Appモードを紹介
+https://blog.comfy.org/p/from-workflow-to-app-introducing
+Appビルダーを使ってComfyUIのワークフローからノードグラフを省略し、必要なパラメータだけを表示するAppモードを生成できる。
+ワークフローから操作が必要な部分だけを残して表示し、実行できるようになる。
+またApp化されたワークフローは[[ComfyHub>https://comfy.org/workflows]]で個別URLをつけて公開できる。
+
 **2026-03-06 Lightricks、LTX-2.3を公開
 https://huggingface.co/Lightricks/LTX-2.3
 音声と映像の品質や、プロンプトの追従性が向上している。
@@ -1310,6 +1316,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
