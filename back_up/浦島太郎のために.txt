@@ -52,10 +52,16 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-03-13 Nekofantasia-alphaが公開される
+https://huggingface.co/Nekofantasia/Nekofantasia-alpha
+SD3.5 Mediumをベースにした、アニメアートを生成するモデル。400万点のトレーニングデータセットをすべて手作業でレビューしたとうたっている。
+究極の無料アニメモデルの構築を目標としている。alphaは全データセットの1/3を学習済みの早期プレビュー版。
+ライセンスには出力画像はユーザーが所有権を持つと書かれている。https://huggingface.co/Nekofantasia/Nekofantasia-alpha/blob/main/LICENSE
+
 **2026-03-12 CircleStone Labs、Animaのpreview 2をリリース
 https://huggingface.co/circlestone-labs/Anima
 パラメータを変更しての再トレーニング、より多くのキャラクターの学習、自然言語理解の向上などが行われている。
-1024×1024ピクセルで学習している点は最初のリリースと変わらない。また美的チューニングもされていないとのこと。
+512x512pxで学習している点は最初のリリースと変わらない。また美的チューニングもされていないとのこと。
 
 **2026-03-11 ComfyUI、Appモードを紹介
 https://blog.comfy.org/p/from-workflow-to-app-introducing
@@ -1316,6 +1322,7 @@ NovelAI V3に迫る性能を誇り、Quality TagsなどもありNAI3に近い感
 これでも[[sd-scriptsの勾配が同期されない不具合で学習がうまくできてない可能性があり>https://cagliostrolab.net/posts/animagine-xl-v3-release#uncontrollable]]、今後の更なる進化に期待できる。
 
 参照：[[AnimagineXL3.0tips]]
+
 
 
 
