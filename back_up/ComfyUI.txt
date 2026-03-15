@@ -3,78 +3,54 @@
 ノードベースでStableDiffusionできるやつ。
 DTMとか3DCGさわったことがあるならすんなり操作できるかもしれない。
 
-* リンク
-
-- ComfyUI : https://github.com/comfyanonymous/ComfyUI
+ComfyUI:https://github.com/comfyanonymous/ComfyUI
 
 * 導入
 
-** ローカル
+��gitをインストールしてコンピューターを再起動
+git:https://git-scm.com/install/windows
+再起動しないとgit is missingとエラーが出てしまうので注意。
 
-*** 方法(1)
-https://fate.5ch.net/test/read.cgi/liveuranus/1678984030/337
-より抜粋
+��ComfyUIの公式インストーラーでインストール
+ComfyUI:https://www.comfy.org/download
 
-----
+なにか問題があれば優秀なトラブルシューターがついているのでそれでなんとかなると思います。
+* 使用例
 
-ComfyUIの導入説明を雑にやるやでー
-ちな、Windowsの場合やで　あとWebUI普通に動いてるけど細かいところはよくわからんニキ（python3.10入ってる）向けの雑な説明や。
-とりあえず試すだけならPaperspaceやColabも用意してくれとるみたいやから、
-そっちで触るのもええんやないか
-https://colab.research.google.com/github/comfyanonymous/ComfyUI/blob/master/notebooks/comfyui_colab.ipynb
+自分に必要なworkflowを探してそれを実行する。
+以下、low VRAM (8gb)でも動作した構成を紹介する。
 
-1.
-まず、ComfyUI導入したいフォルダでShift押しながら右クリック、
-「Powershell ウインドウをここで開く(s)」を押すで
+��Z-Image Turbo
+workflow:https://image02.seesaawiki.jp/n/h/nai_ch/63c343179b2735d0.json
+（参考：https://note.com/mayu_hiraizumi/n/nbe83755cbf46）
 
-Powershell（青い画面）が開くはずやで
+&#128194; ComfyUI/
+├── &#128194; models/
+　　　　├── &#128194; text_encoders
+　　　　　　　　[[Qwen_3_4b-IQ4_XS.gguf>https://huggingface.co/worstplayer/Z-Image_Qwen_3_4b_text_encoder_GGUF/blob/main/Qwen_3_4b-IQ4_XS.gguf]]
+　　　　├── &#128194;diffusion_models
+　　　　　　　　[[z_image_turbo-Q4_K_M.gguf>https://huggingface.co/jayn7/Z-Image-Turbo-GGUF/blob/main/z_image_turbo-Q4_K_M.gguf]]
+　　　　├── &#128194;vae
+　　　　　　　　[[ae.safetensors>https://huggingface.co/Comfy-Org/z_image_turbo/tree/main/split_files/vae]]
 
-2.
-青い画面が出たら以下のコマンドを順番に入れてこか
+��Flux.2
+workflow:https://civitai.com/models/2418572/comfyui-beginner-friendly-flux2-klein-9b-gguf-text-to-image-workflow-with-easy-prompt-saver-by-sarcastic-tofu
+以下の二つのカスタムノードはなぜかインストールできなかったので手動で入れる必要があった。
+コマンドプロンプトでComfyUI/custom_nodesのディレクトリに移動してこれらを実行する。
+git clone https://github.com/giriss/comfy-image-saver
+git clone https://github.com/JPS-GER/ComfyUI_JPS-Nodes
+拡張機能の管理→未インストール　でインストールできていないカスタムノードのgithubのurlがわかるはずである。
 
-=|(box=textarea)|
-git clone https://github.com/comfyanonymous/ComfyUI
-cd .\ComfyUI\
-py -m venv venv
-.\venv\Scripts\activate
+&#128194; ComfyUI/
+├── &#128194; models/
+　　　　├── &#128194; text_encoders
+　　　　　　　　[[qwen_3_8b_fp8mixed.safetensors>https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/blob/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors]]
+　　　　├── &#128194; diffusion_models
+　　　　　　　　[[flux-2-klein-9b-Q4_K_M.gguf>https://huggingface.co/unsloth/FLUX.2-klein-9B-GGUF/blob/main/flux-2-klein-9b-Q4_K_M.gguf]]
+　　　　├── &#128194; vae
+　　　　　　　　[[flux2-vae.safetensors>https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/blob/main/split_files/vae/flux2-vae.safetensors]]
+　　　　├── &#128194; loras
+　　　　　　　　[[detail_slider_klein_9b_20260123_065513.safetensors>https://civitai.com/models/2326084?modelVersionId=2622287]]
 
-pip install -r requirements.txt
-||=
-
-https://image01.seesaawiki.jp/n/h/nai_ch/Z4wxsMtbIA.png
-https://image01.seesaawiki.jp/n/h/nai_ch/q99q4zhwsJ.png
-
-
-3.
-ここまで入れたら準備は終わりや。実行にはmodelファイルが要るでな、いったんエクスプローラーで
-「\ComfyUI\models」配下のフォルダに必要なブツを置く。checkpointsにckpt/Safetensors、lorasにlora、controlnetにCN用の……っちゅう具合やな
-WebUIと同じの使いたいニキはシンボリックリンク切ってもええで　問題なく動くわ
-必要なモデルやらLoRAやらの配置が終わったら、さっきの青い画面に戻って下のコマンドぶち込む
-
-=|(box=textarea)|
-py .\main.py
-||=
-
-
-そしたらこんな画面が出るでな、WebUI同様に指示のあるアドレスをブラウザで開けばええな
-https://image01.seesaawiki.jp/n/h/nai_ch/0DpzZ64byS.png
-WebUIと違って複数起動は現状でけんみたいやから注意や
-https://image01.seesaawiki.jp/n/h/nai_ch/0DpzZ64byS.png
-
-4.
-二回目以降は
-(1)ComfyUIのフォルダで右クリックしてPowershellウィンドウ開く
-(2)以下のコマンド入れる
-
-=|(box=textarea)|
-.\venv\Scripts\activate
-py .\main.py
-||=
-
-で起動できると思うで
-
-https://image02.seesaawiki.jp/n/h/nai_ch/yRflVS4EQv.png
-こんな感じの画面が出るからモデル選んで、「Queue Prompt」で生成実行や！
-あとはいじれ　ワイもこれからいじる
-
+Loraが読み込まれない場合、青いLを探してクリックするとLoRA Managerのページが開くので、更新してdetail_slider_klein_9bを登録する。
 

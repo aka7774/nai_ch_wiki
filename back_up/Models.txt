@@ -30,10 +30,10 @@ SD2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1
 ** SDXL
 SDXL Base 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - U-Netアーキテクチャ
-- 2.6B(26億)パラメータ(あるいは3.5B?)
+- 2.6B(26億)パラメータ(3.5Bともされるが多分それはTE込みの数値)
 - BaseとRefinerの二種類が存在する(通常はBaseのみでok)
 - 基礎解像度の1024x1024への変更とVAEの改良によりディティールが改善
--- 特殊なノイズの影響を受けにくい
+-- 特殊なノイズの影響を受けにくい。でも細部は相変わらず溶ける
 - Text EncoderはCLIP-LとCLIP-G
 -- 低性能で具体的な命令を無視する
 

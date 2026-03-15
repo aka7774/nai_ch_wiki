@@ -56,12 +56,35 @@
 |}
 [END]
 
+&aname(clothes_work_uniform_real)
+** 実在するもしくは過去に存在した店舗制服(V4.5版)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|アンナミラーズ|アメリカ発祥のレストラン。一時は日本の全店舗が閉店したが、2026年2月に日本1号店があった南青山に再出店している。イラスト投稿サイトが無かった時代から「アンミラ」でジャンルになるぐらい根強い人気がある制服。制服はオレンジとピンク、えんじ色の３種類がある。|anna miller, shirt, orange apron, orange skirt, white loafers, |https://image02.seesaawiki.jp/n/h/nai_ch/a44972af8911b87e.png|
+|神戸屋レストラン|関東、関西に39店舗を展開するレストラン、ベーカリー。|kobeya uniform, shirt, apron, skirt, heels, |https://image02.seesaawiki.jp/n/h/nai_ch/a6a3e6b84f58d91d.png|
+|レストラン馬車道|埼玉県、神奈川県、千葉県に店舗を展開するファミリーレストラン。|bashamichi, kimono, hakama skirt, boots, |https://image01.seesaawiki.jp/n/h/nai_ch/ce168f3ab01fbf1f.png|
+|ブロンズパロット|かつて存在していたファミリーレストラン。|bronze parrot, shirt, red bowtie, skirt, pantyhose, loafers, |https://image02.seesaawiki.jp/n/h/nai_ch/c1f30d1757813e96.png|
+|フーターズ|アメリカ国内に400店舗以上展開しているカジュアルレストラン＆スポーツバー。日本では銀座に１店舗ある。|hooters, shirt, shorts, white boots, |https://image01.seesaawiki.jp/n/h/nai_ch/a4d5fc75d8544b9e.png|
+|}
+[END]
+
 &aname(clothes_work_uniform_fiction)
 ** フィクションに登場する架空の店舗制服(V4.5版)
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):衣装の種類|補足|プロンプト|サンプル|
-|エンジェルモート|ひぐらしのなく頃になどに登場する架空のファミリーレストラン。|angel mort, detached collar, black leotard, black detached sleeves, showgirl skirt, black thighhighs, red mary janes, |https://image01.seesaawiki.jp/n/h/nai_ch/407687439558642b.png|
+|ラビットハウス制服（天々座理世）|『ご注文はうさぎですか?』に登場する架空の喫茶店。|rabbit house uniform, tedeza rize (cosplay), shirt, purple bowtie, purple jacket, skirt, pantyhose, boots, |https://image01.seesaawiki.jp/n/h/nai_ch/a6c7e419fb75d3df.png|
+|ラビットハウス制服（香風智乃）|『ご注文はうさぎですか?』に登場する架空の喫茶店。|rabbit house uniform, kafuu chino (cosplay), shirt, blue bowtie, blue jacket, skirt, white socks, boots, |https://image01.seesaawiki.jp/n/h/nai_ch/d1eb9d45543c271a.png|
+|ラビットハウス制服（保登心愛）|『ご注文はうさぎですか?』に登場する架空の喫茶店。|rabbit house uniform, gochuumon wa usagi desu ka?, shirt, red bowtie, pink jacket, skirt, pantyhose, boots, |https://image01.seesaawiki.jp/n/h/nai_ch/d1a5608c90f098ee.png|
+|フルール・ド・ラパン|『ご注文はうさぎですか?』に登場する架空の喫茶店。|fleur de lapin uniform, gochuumon wa usagi desu ka?, headdress, shirt, skirt, apron, thighhighs, mary janes, |https://image02.seesaawiki.jp/n/h/nai_ch/5d4174ad1b77cd09.png|
+|甘兎庵|『ご注文はうさぎですか?』に登場する架空の甘味処。|ama usa an uniform, ujimatsu chiya (cosplay), kimono, apron, boots, |https://image01.seesaawiki.jp/n/h/nai_ch/0371cf9ec56a36f3.png|
+|吐麗美庵（とれびあん）|『逆転裁判3』のエピソード「逆転のレシピ」に登場する架空のフランス料理店。|tres bien maid uniform, phoenix wright: ace attorney - spirit of justice, maid headdress, pencil shirt, red bowtie, skirt, apron, mary janes, |https://image01.seesaawiki.jp/n/h/nai_ch/ccfc3d2ffeff9570.png|
+|カフェミュウミュウ|『東京ミュウミュウ』に登場する架空のスイーツショップ。制服の色はキャラごとに違う設定。|cafe mew mew uniform, tokyo mew mew, white headdress, pink shirt, pink skirt, heart apron, pink socks, boots, |https://image02.seesaawiki.jp/n/h/nai_ch/07689ff641b60a71.png|
+|ファミリア|『女神のカフェテラス』に登場する架空の喫茶店。|familia uniform, megami no cafe terrace, shirt, skirt, apron, pantyhose, heels, |https://image01.seesaawiki.jp/n/h/nai_ch/524bdc223bc3f729.png|
+|ワグナリア|『WORKING!!』に登場する架空のファミリーレストラン。|wagnaria uniform, working!!, shirt, white gloves, skirt, apron, socks, loafers, |https://image02.seesaawiki.jp/n/h/nai_ch/491fa5ab9e434f78.png|
+|スティーレ|『ブレンド・S』に登場する架空の喫茶店。制服の色はキャラごとに違う設定。|stile uniform, blend s, headscarf, green shirt, white gloves, green skirt, white waist apron,  white thighhighs, black shoes, |https://image02.seesaawiki.jp/n/h/nai_ch/9ed235e7ff1397c9.png|
+|エンジェルモート|『ひぐらしのなく頃に』などに登場する架空のファミリーレストラン。|angel mort, detached collar, black leotard, black detached sleeves, showgirl skirt, black thighhighs, red mary janes, |https://image01.seesaawiki.jp/n/h/nai_ch/407687439558642b.png|
 |}
 [END]
 
@@ -189,10 +212,14 @@
 |~w(300px):衣装の種類|補足|プロンプト|サンプル|
 |ナイトメアブラッド|アイドルマスターのDLC衣装。|nightmare blood (idolmaster), bikini armor, bat wings, elbow gloves, striped thighhighs, armored boots, |https://image02.seesaawiki.jp/n/h/nai_ch/5c2895bf9cd119f6.png|
 |踊り子の服（ドラクエ�検�|ドラクエ�犬謀仂譴垢襯沺璽縫磴僚藉�装備。|dragon quest iv, dancer's costume (dq), bikini-top, |https://image01.seesaawiki.jp/n/h/nai_ch/c057dd69d37da47a.png|
-|あぶないみずぎ|ドラクエシリーズに登場する装備品。|dragon quest iii, girl, revealing swimsuit (dq), red swimsuit, |https://image02.seesaawiki.jp/n/h/nai_ch/18ec82cc51642a65.png|
+|あぶないみずぎ|ドラクエシリーズに登場する装備品。|dragon quest iii, revealing swimsuit (dq), red swimsuit, |https://image02.seesaawiki.jp/n/h/nai_ch/18ec82cc51642a65.png|
 |天使のレオタード|ドラクエシリーズに登場する装備品。|dragon quest v, angel leotard, fake angel wings, covered navel, heels, |https://image02.seesaawiki.jp/n/h/nai_ch/1a1391a481697f03.png|
 |}
 [END]
+
+
+
+
 
 
 
