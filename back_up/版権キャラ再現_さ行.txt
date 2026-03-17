@@ -1266,6 +1266,8 @@
 ***　世界樹の迷宮シリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|sovereign 4 (sekaiju), sekaiju no meikyuu 3, girl, purple hair, tiara, purple armored dress, armored boots, standing, full body, ||世界樹の迷宮３|プリンセス（通称「紫姫」）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。衣装が金姫になってしまう。|https://image01.seesaawiki.jp/n/h/nai_ch/4bbb311d9bae7281.png|
+|sovereign 2 (sekaiju), sekaiju no meikyuu 3, girl, tiara, armored dress, armored boots, standing, full body, ||世界樹の迷宮３|プリンセス（通称「金姫」）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/551bac5218fc811f.png|
 |curse maker||世界樹の迷宮１・２|カースメーカー|V4使用。~~単語だけだとこのタイプのみ出力される。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/GFNcfx1hlj-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/GFNcfx1hlj.png]]|
 |bushidou (sekaiju),ponytail,red hakama,sarashi,gauntlets,||世界樹の迷宮１・２|ブシドー|V4使用。~~タグは複数に分かれているが、差異は特になさそう。~~単語のみだとおかっぱ頭の子(通称姫子)と混ざって出力される。~~姫子を出したい場合はponytail,red hakama,sarashiの部分をbob cut,head jewelry,kimono,に変更する。ただしポニーテールが付くことがある。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/uveGEB6pW5-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/uveGEB6pW5.png]][[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/aSg_WBiYeF-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/aSg_WBiYeF.png]]|
 |}
@@ -1761,6 +1763,8 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
+
+
 
 
 

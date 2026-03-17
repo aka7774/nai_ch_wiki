@@ -551,6 +551,13 @@
 |mizunashi akari(aria),ARIA,pink hair,white robe,smile,simple background,cowboy shot,||ARIA|水無灯里|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/HTGHhtVaWV.png|
 |}
 
+***　ありふれた職業で世界最強
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|shizuku yaegashi&#40;Arifureta Shokugyou de Sekai Saikyou),ponytail,sleeveless,black pants||ありふれた職業で世界最強|八重樫 雫|V4.5|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/6512bd9468f10870-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/6512bd9468f10870.png]]|
+|Shea Haulia&#40;Arifureta Shokugyou de Sekai Saikyou),rabbit ears, rabbit tail,crop top,green miniskirt,||ありふれた職業で世界最強|シア・ハウリア|V4.5|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/75ef0c739963b600-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/75ef0c739963b600.png]]|
+| Yue(Arifureta Shokugyou de Sekai Saikyou),collared shirt,open white coat,brown skirt, | | ありふれた職業で世界最強 |ユエ |V4.5 | [[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/531e301ecdca1328-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/531e301ecdca1328.png]]|
+|}
 
 ***　アルカナハートシリーズ
 {| class="sort edit nanj_prompt_table"
@@ -1264,6 +1271,18 @@
 |official style, anime coloring, katarina claes, otome game no hametsu flag shika nai akuyaku reijou ni tensei shite shimatta, very aesthetic, best quality, intricate, overall detail, 1 girl, blue eyes, gown, standing, simple background, facing the front, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}}|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…|カタリナ・クラエス|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/RA42Kw8_Q7.png|
 |}
 
+***　オトメディウス
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|aoba anoa, otomedius, girl, blue dress, detached sleeves, thighhighs, black shoes, standing, full body, ||オトメディウス|空羽亜乃亜|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a44ad9cf0a1ec546.png|
+|erul tron, otomedius, girl, red dress, detached sleeves, thighhighs, black shoes, standing, full body, ||オトメディウス|エリュー・トロン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/0e14949742395459.png|
+|diol twee, otomedius, girl, yellow dress, detached sleeves, thighhighs, black shoes, standing, full body, ||オトメディウス|ジオール・トゥイー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/cfbeb0ea5361c461.png|
+|tita nium, otomedius, girl, green dress, detached sleeves, thighhighs, black shoes, standing, full body, ||オトメディウス|ティタ・ニューム|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/8c95bae8275ab6e8.png|
+|madoka (otomedius), otomedius, girl, sailor collar, shirt, skirt, frills, thighhighs, mary janes, standing, full body, ||オトメディウス|マドカ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/75b9d30f1fe4bf17.png|
+|esmeralda (otomedius), otomedius, girl, robot ears, green leotard, detached sleeves, bike shorts, thighhighs, black shoes, standing, full body, ||オトメディウス|エスメラルダ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。ヘッドパーツの再現性が低い。|https://image01.seesaawiki.jp/n/h/nai_ch/8075b16850585df1.png|
+|poini coon, otomedius, girl, detached collar, purple leotard, detached sleeves, thighhighs, black shoes, standing, full body, ||オトメディウス|ポイニー・クーン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。服装は完全再現ではない。|https://image02.seesaawiki.jp/n/h/nai_ch/6bd79771bc6f4f75.png|
+|}
+
 ***　オトメ*ドメイン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1354,4 +1373,6 @@
 |{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
 |}
 [END]
+
+
 
