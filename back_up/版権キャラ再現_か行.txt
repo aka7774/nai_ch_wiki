@@ -645,6 +645,7 @@
 |official style, kamado nezuko, kimetsu no yaiba, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, official style, kamado nezuko, kimetsu no yaiba, very aesthetic, best quality, intricate, overall detail, 1 girl, standing, happy, simple background, facing the front, straight-on, close to viewer, cowboy shot, face focus, intricate, hyper-detailed, 100-layer, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, head down bottom up, standing split, standing on one leg, bad anatomy, disfigured, poorly drawn, deformed, mutation,|鬼滅の刃|竈門禰豆子|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/KsxmMlhSo1.png|
 |}
 [END]
+
 ***　逆転裁判シリーズ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -780,6 +781,7 @@
 |{{inokuma youko}},in kin-iro_mosaic style, brown hair,&#91;&#91;red hair]],medium hair,hair spread out,brown eyes, tareme,fang, school uniform,blue pinafore dress,blouse, blue skirt, medium breasts,solo,cowboy shot, |tsurime,smirk,frown,forehead, neck ribbon,bowtie,long hair,|^|^|髪型や髪色の再現が難しいのでガチャになる|&ref(https://image02.seesaawiki.jp/n/h/nai_ch/PHjwPxhzMS.png)|
 |{{{kujou karen}}},in kin-iro_mosaic style, blonde hair,{single side bun},long hair,parted bangs, x hair ornament,hairpin, purple eyes,tsurime,dress shirt, {open hoodie},{blue hoodie},red striped bowtie,blue skirt, pleated skirt, open clothes,game cg,  cowboy shot,smile, solo,|anime,megami magazine,forehead, multiple buns,jpeg artifacts,blurry,|きんいろモザイク|九条カレン|相変わらず打率は低い。t2iでのユニオンジャックは断念。再現したいなら[[i2iを活用>https://seesaawiki.jp/nai_ch/d/%c8%c7%b8%a2%a5%ad%a5%e3%a5%e9%ba%c6%b8%bd/Tips#content_3]]してください。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/CCW139uurv.png))|
 |}
+
 ***　銀河英雄伝説
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -791,6 +793,13 @@
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, kagurazaka yuna, ginga ojou-sama densetsu yuna, very aesthetic, best quality, intricate, overall detail, 1girl, blonde hair, green eyes, headphones, white leotard, elbow gloves, gem, knee boots, standing, smile, white background, front view, close to viewer, full body, character focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, |銀河お嬢様伝説ユナ|神楽坂優奈|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/lG9a2DQNEM.png|
+|}
+
+***　銀河鉄道999
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|maetel, ginga tetsudou 999, girl, clothed female, hat, cloak, fur-trimmed dress, boots, standing, full body, ||銀河鉄道999|メーテル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2b46a84b5dea6988.png|
+|conductor (ginga tetsudou 999)&#160;, ginga tetsudou 999, boy, alien, glowing eyes, hat, jacket, pants, shoes, standing, full body, ||銀河鉄道999|車掌さん|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/56669c4d90b00e31.png|
 |}
 
 ***　銀牙-流れ星銀-
@@ -1651,6 +1660,8 @@ multiple breasts,&#40;mutated hands and fingers:1.5 ),&#40;long body :1.3),&#40;
 |gash bell, konjiki no gash!!, boy, chibi, black dress, black shoes, standing, :d, arms at side, full body,||金色のガッシュ!!|ガッシュ・ベル|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/231efe283f0ad9f1.png|
 |}
 [END]
+
+
 
 
 

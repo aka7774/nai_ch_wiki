@@ -551,6 +551,16 @@
 |} 
 [END]
 
+***　シンカリオンシリーズ
+[+]
+{| class="sort edit nanj_prompt_table" 
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|hayasugi hayato, shinkansen henkei robo shinkalion, boy, bodysuit, standing, full body, ||新幹線変形ロボシンカリオン|速杉ハヤト|4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/184d4ad39bcc00c1.png| 
+|tsukiyama shinobu, shinkansen henkei robo shinkalion, boy, bodysuit, standing, full body, ||新幹線変形ロボシンカリオン|月山シノブ|4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a2242bc5c31ff0ea.png| 
+|ueda azusa, shinkansen henkei robo shinkalion, girl, pink shirt, pink skirt, thighhighs, shoes, standing, full body, ||新幹線変形ロボシンカリオン|上田アズサ|4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/6901b468da5b99fc.png| 
+|} 
+[END]
+
 ***　ジンキシリーズ 
 {| class="sort edit nanj_prompt_table" 
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル| 
@@ -1763,6 +1773,7 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
+
 
 
 
