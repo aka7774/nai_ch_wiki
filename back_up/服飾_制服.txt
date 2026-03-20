@@ -185,6 +185,20 @@
 |}
 [END]
 
+&aname(clothes_sports_team)
+** 実在するスポーツチームのユニフォーム(V4.5版)
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):衣装の種類|補足|プロンプト|サンプル|
+|読売ジャイアンツ||yomiuri giants, baseball uniform, baseball cap, shirt under shirt, white shirt, white pants, socks, sneakers, |https://image01.seesaawiki.jp/n/h/nai_ch/765f29c72122dda7.png|
+|阪神タイガース||hanshin tigers, baseball uniform, baseball cap, shirt under shirt, white shirt, white pants, socks, sneakers,|https://image02.seesaawiki.jp/n/h/nai_ch/3e5dfd88e401d35a.png|
+|横浜DNAベイスターズ||yokohama dena baystars, baseball uniform, baseball cap, shirt under shirt, white shirt, white pants, socks, sneakers, |https://image01.seesaawiki.jp/n/h/nai_ch/2af65633d0f55a26.png|
+|広島東洋カープ||hiroshima touyou carp, baseball uniform, baseball cap, shirt under shirt, white shirt, white pants, socks, sneakers, |https://image01.seesaawiki.jp/n/h/nai_ch/a8d9468c579c7415.png|
+|中日ドラゴンズ||chunichi dragons, baseball uniform, baseball cap, shirt under shirt, white shirt, white pants, socks, sneakers, |https://image01.seesaawiki.jp/n/h/nai_ch/75ee8d1d754a680c.png|
+|東京ヤクルトスワローズ||tokyo yakult swallows, baseball uniform, baseball cap, shirt under shirt, white shirt, white pants, socks, sneakers, |https://image02.seesaawiki.jp/n/h/nai_ch/b86738e7795cee11.png|
+|}
+[END]
+
 &aname(clothes_uniform_school_fiction)
 ** フィクションに登場する学校制服(V4.5版)
 [+]
@@ -218,4 +232,5 @@
 |天使のレオタード|ドラクエシリーズに登場する装備品。|dragon quest v, angel leotard, fake angel wings, covered navel, heels, |https://image02.seesaawiki.jp/n/h/nai_ch/1a1391a481697f03.png|
 |}
 [END]
+
 

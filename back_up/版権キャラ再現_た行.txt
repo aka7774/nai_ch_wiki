@@ -79,6 +79,14 @@
 |}
 [END]
 
+***　逮捕しちゃうぞ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|girl,{official art},taiho shichauzo,nikaido yoriko,2.0::smile,police, police_uniform||逮捕しちゃうぞ|二階堂 頼子|V4.5 Full版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/86bd10f10f56e579.png|
+|girl,{official art},taiho shichauzo,tsujimoto natsumi,2.0::smile,police, police_uniform||逮捕しちゃうぞ|辻本夏実|V4.5 Full版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/772992e52f08714f.png|
+|girl,{official art},taiho shichauzo,kobayakawa miyuki,2.0::smile,police, police_uniform||逮捕しちゃうぞ|小早川美幸|V4.5 Full版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/1b56e2e986734f8e.png|
+|}
+
 ***　大魔法峠
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -928,6 +936,22 @@
 |totoro, tonari no totoro, other, no humans, standing, full body, grin, ||となりのトトロ|トトロ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/674983d06397b2bd.png|
 |}
 [END]
+
+***　賭博黙示録カイジ
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|itou kaiji, tobaku mokushiroku kaiji, boy, jacket, shirt, pants, sneakers, standing, full body, ||賭博黙示録カイジ|伊藤開司|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/98d70c74cd132f1d.png|
+|endou yuuji, tobaku mokushiroku kaiji, boy, jacket, necktie, shirt, pants, loafers, standing, full body, ||賭博黙示録カイジ|遠藤勇次|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/ee82518530c65338.png|
+|sahara makoto, tobaku mokushiroku kaiji, boy, shirt, pants, sneakers, standing, full body, ||賭博黙示録カイジ|佐原誠|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/645d8633fe9f57fc.png|
+|tonegawa yukio, tobaku mokushiroku kaiji, boy, jacket, necktie, shirt, pants, loafers, standing, full body, ||賭博黙示録カイジ|利根川幸雄|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/071ef1260e8df160.png|
+|hyoudou kazutaka, tobaku mokushiroku kaiji, boy, jacket, green kimono, hakama, sandals, standing, full body, ||賭博黙示録カイジ|兵藤和尊|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/d9a4d658eecc4784.png|
+|ichijou seiya, tobaku mokushiroku kaiji, boy, jacket, necktie, shirt, pants, loafers, standing, full body, ||賭博黙示録カイジ|一条聖也|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b8cdba1a9fb3872a.png|
+|murakami tamotsu, tobaku mokushiroku kaiji, boy, jacket, bowtie, shirt, pants, loafers, standing, full body, ||賭博黙示録カイジ|村上保|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/aaf42199e703b581.png|
+|hyoudou kazuya, tobaku mokushiroku kaiji, boy, jacket, necktie, shirt, pants, loafers, standing, full body, ||賭博黙示録カイジ|兵藤和也|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/95fb836f6306bd60.png|
+|}
+[END]
+
 ***　トムとジェリー
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1177,11 +1201,5 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
-
-
-
-
-
-
 
 
