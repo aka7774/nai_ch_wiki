@@ -710,6 +710,10 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~プロンプト|ネガティブプロンプト|和名|英名|備考|サンプル|
+|stegosaurus, prehistoric animal, dinosaur, other, no humans, spiked tail, back fin, all fours, top-down bottom-up, full body, from side, -1.0::tyrannosaurus rex::, ||ステゴサウルス|stegosaurus|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/ce552331e6f48dd5.png|
+|brachiosaurus, prehistoric animal, dinosaur, other, no humans, all fours, full body, from side,||竜脚類|brachiosaurus|V4.5 Full版使用。キャラクタープロンプト１のみ記述。ブラキオサウルスの特徴的な頭の形と体型は再現しない。|https://image02.seesaawiki.jp/n/h/nai_ch/a5c1c61befcceaa9.png|
+|feathered dinosaur, prehistoric animal, dinosaur, other, multicolored feathers,&#160;standing, full body, from side,||羽毛恐竜|feathered dinosaur|V4.5 Full版使用。キャラクタープロンプト１のみ記述。羽毛の痕跡が化石に残っているドロマエオサウルス科を中心とした恐竜の一群を指して使う俗称。|https://image02.seesaawiki.jp/n/h/nai_ch/373f66dcb6c6a571.png|
+|spinosaurus, prehistoric animal, dinosaur, other, multicolored scales,&#160;standing, full body, from side,||スピノサウルス|spinosaurus|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/4998640557f17ed5.png|
 |official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, dinosaur, velociraptor, feathered skin, brown skin, black eyes, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ヴェロキラプトル|velociraptor|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/ZSwQvhsHnN.png|
 |official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, dinosaur, triceratops, brown skin, black eyes, all fours, standing, white background, facing away, close to viewer, full body, character focus, {{from side}}, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|トリケラトプス|triceratops|V4 Curated Preview版使用。|https://image01.seesaawiki.jp/n/h/nai_ch/rpfRW6ObD6.png|
 |official style, very aesthetic, best quality, intricate, overall detail, no humans, 1boy, dinosaur, tyrannosaurus rex, brown skin, black eyes, standing, open mouth, white background, facing away, close to viewer, full body, character focus, from side, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism,|ティラノサウルス・レックス|tyrannosaurus rex|V4 Curated Preview版使用。|https://image02.seesaawiki.jp/n/h/nai_ch/HwVFs6GvXW.png|
@@ -731,6 +735,9 @@
 |very aesthetic, best quality, intricate, overall detail, no humans, animal, mammoth, hairy skin, body covering with long hair, brown hair, all fours, white background, close to viewer, full body, side shot, animal focus, intricate, highly detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution, highly finished, smooth, shiny shading}}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, extra digits, long body, cubism, {{{{elephant}}}},|ケナガマンモス|mammoth|V4 Curated Preview版使用。elephantをネガに入れて象要素を排除しないと毛深くならない。|https://image02.seesaawiki.jp/n/h/nai_ch/JohA4qsf54.png|
 |}
 [END]
+
+
+
 
 
 

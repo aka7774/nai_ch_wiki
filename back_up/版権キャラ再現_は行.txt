@@ -680,6 +680,13 @@
 |}
 [END]
 
+***　開け！ポンキッキ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|gachapin, hirake! ponkikki, other, no humans, standing, full body, -1.0::realistic::,||開け！ポンキッキ|ガチャピン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/38fd295733650043.png|
+|mukku, hirake! ponkikki, other, no humans, standing, full body, -1.0::realistic::,||開け！ポンキッキ|ムック|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/182c4a851fc41e12.png|
+|}
+
 ***　びんちょうタン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -832,15 +839,25 @@
 |}
 
 ***　ふしぎ星の☆ふたご姫
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
-|fine (futagohime), fushigiboshi no futago hime, loli, red hair, low twintails, red eyes, red hat, cowboy shot, | |ふしぎ星の☆ふたご姫|ファイン|V3簡易版|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/z3siPtj5A0-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/z3siPtj5A0.png]]|
+|elizabetta (futagohime), fushigiboshi no futago hime, girl, fur hat, cape, white shirt, red bowtie, pink skirt, white boots, standing, full body, ||ふしぎ星の☆ふたご姫|エリザベータ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c764bac8c36e74fc.png|
+|sophie (futagohime), fushigiboshi no futago hime, girl, tiara, frilled dress, puffy short sleeves, elbow gloves, standing, full body, -3.0::bare legs::,||ふしぎ星の☆ふたご姫|ソフィー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/24e60b8aefbb0061.png|
+|miruro (futagohime), fushigiboshi no futago hime, girl, tiara, frilled skirt, wide sleeves, standing, full body, -3.0::bare legs::,||ふしぎ星の☆ふたご姫|ミルロ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1fec1f859f9242d7.png|
+|shade (futagohime), fushigiboshi no futago hime, boy, jacket, shirt, pants, shoes, standing, full body, ||ふしぎ星の☆ふたご姫|シェイド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/f5624f89bd28d47a.png|
+|bright (futagohime)&#160;, fushigiboshi no futago hime, boy, arched crown, fur-trimmed cloak, white shirt, white pants, boots, standing, full body, ||ふしぎ星の☆ふたご姫|ブライト|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/ab436c114e7ae054.png|
+|altessa (futagohime), fushigiboshi no futago hime, girl, crown, white dress, hoop skirt, standing, full body, -3.0::bare legs::, ||ふしぎ星の☆ふたご姫|アルテッサ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2b9ce7e6ab335108.png|
+|tio (futagohime), fushigiboshi no futago hime, boy, formal clothes, coat, shirt, ascot, pants, boots, standing, full body, ||ふしぎ星の☆ふたご姫|ティオ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/52a4565e69b90061.png|
+|leonne (futagohime), fushigiboshi no futago hime, girl, tiara, frilled dress, puffy short sleeves, elbow gloves, standing, full body, ||ふしぎ星の☆ふたご姫|リオーネ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/e863d292a3fc8e70.png|
+|fine (futagohime), fushigiboshi no futago hime, girl, jacket, skirt, pantyhose, boots, standing, full body, ||ふしぎ星の☆ふたご姫|ファイン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/0a33accd4b746626.png|
+|fine (futagohime), fushigiboshi no futago hime, loli, red hair, low twintails, red eyes, red hat, cowboy shot, | |^|^|V3簡易版|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/z3siPtj5A0-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/z3siPtj5A0.png]]|
 |official style, {{fine (futagohime), fushigiboshi no futago hime}}, very aesthetic, best quality, intricate, overall detail, 1 girl, red hat, coat, mini-skirt, pantyhose, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |^|^|V3使用。キャラの特徴は反映される。|https://image01.seesaawiki.jp/n/h/nai_ch/Af5D5C2g0H.png|
-|rein (futagohime), fushigiboshi no futago hime, loli, blue hair, low-tied long hair, blue eyes, hat, cowboy shot, | |ふしぎ星の☆ふたご姫|レイン|V3簡易版|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/56uXRF5pvZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/56uXRF5pvZ.png]]|
+|rein (futagohime)&#160;, fushigiboshi no futago hime, girl, hat, jacket, skirt, pantyhose, boots, standing, full body, ||ふしぎ星の☆ふたご姫|レイン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/76c8479fac6aa9c6.png|
+|rein (futagohime), fushigiboshi no futago hime, loli, blue hair, low-tied long hair, blue eyes, hat, cowboy shot, | |^|^|V3簡易版|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/56uXRF5pvZ-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/56uXRF5pvZ.png]]|
 |official style, {{rein (futagohime), fushigiboshi no futago hime}}, very aesthetic, best quality, intricate, overall detail, 1 girl, blue top hat, pantyhose, standing, light smile, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |^|^|V3使用。キャラの特徴は固定化している。衣装の完全再現は困難。|https://image02.seesaawiki.jp/n/h/nai_ch/XyhX86VLHX.png|
 |}
-
+[END]
 ***　武装神姫
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1529,6 +1546,10 @@
 |beautiful detailed eye, from behind, 1girl, {{{{{{{{{{ecstacy climax eyes}}}}}}}}}}, naughty face, evil {{{small breasts}}}, {{{{short stature}}}}, absurdly long hair, {{{large amount of hair}}}, white hair, silver twintails, {{{red}}} cheerleader costume, bikini, {{{{{{{{have cheer pompom}}}}}}}}, hands on hips, hands on knee, skin fang, small demon horn, {{{{{large demon wing}}}}}, demon tail, red eyes, {bent over}||ボンバーガール|グリムアロエ（サキュバスチアコス）|恍惚としたメスガキ顔が出るか、大きいツインテールが出るかはほぼガチャ|https://image01.seesaawiki.jp/n/h/nai_ch/OiluV6GQHN.png|
 |}
 [END]
+
+
+
+
 
 
 

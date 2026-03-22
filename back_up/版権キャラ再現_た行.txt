@@ -598,6 +598,15 @@
 |machi kyouko, demi-chan wa kataritai, girl, dullahan, clothed female, white shirt, brown skirt, white socks, loafers, standing, full body, straight-on, ||亜人ちゃんは語りたい|町京子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/8be89139e3b5ad3e.png|
 |}
 
+***　デモンベインシリーズ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|al azif (demonbane), demonbane, girl, white dress, socks, black shoes, standing, full body, ||斬魔大聖デモンベイン|アル・アジフ|V4.5 Full版使用。キャラクタープロンプト１のみ記述|https://image02.seesaawiki.jp/n/h/nai_ch/5cec7e15f2ac1d29.png|
+|elsa (demonbane), demonbane, girl, hat, dress, showgirl skirt, boots, standing, full body, ||斬魔大聖デモンベイン|エルザ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d4ee94735f4a0f53.png|
+|etheldreda, demonbane, girl, black dress, socks, black shoes, standing, full body, ||斬魔大聖デモンベイン|エセルドレーダ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/fecd7579883bbd29.png|
+|another blood, demonbane, girl, hat, red dress, layered skirt, black boots, standing, full body, ||斬魔大聖デモンベイン|アナザーブラッド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/f9176dd452a89dab.png|
+|}
+
 ***　デュラララ!!
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1044,6 +1053,7 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|shenron (dragon ball), dragon ball, other, red eyes, open mouth, eastern dragon, tail fin, constriction, floating, full body, ||ドラゴンボール|神龍|V4.5 Full版使用。キャラクタープロンプト1のみ記述。描写が破綻しやすい。インペイントでの修正が必須。|https://image02.seesaawiki.jp/n/h/nai_ch/f369d16973355a75.png|
 |boy,Saibaiman&#40;dragon ball)||ドラゴンボールZ|サイバイマン|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/6e53a6a23b2ae932.png|
 |1st form frieza, dragon ball z, boy, horns, armor, standing, full body, ||ドラゴンボールZ|フリーザ（第一形態）|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a16a5f31fb67f397.png|
 |final form frieza, dragon ball z, boy, standing, full body, ||ドラゴンボールZ|フリーザ（最終形態）|V4.5 Full版使用。キャラクタープロンプト1のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/4e3da44907c20368.png|
@@ -1201,5 +1211,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
+
+
 
 

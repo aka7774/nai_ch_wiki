@@ -11,7 +11,7 @@ artist:[アーティスト名]
 * アーティスト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(100px):アーティスト名|~w(100px):備考|~w(100px):サンプル|
-||大嘘|||
+||ひよこ|||
 ||高橋|||
 |artist:oouso, |大嘘|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/6c9be60af213e490.png|
 |artist:gengorou,|源五郎|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/e785422bbbcf247c.png|
