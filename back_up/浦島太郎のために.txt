@@ -52,6 +52,16 @@ FLUX.1([[ワークフロー>https://comfyanonymous.github.io/ComfyUI_examples/fl
 
 #contents
 *2026年
+**2026-03-25 OpenAI、Soraのサービスを終了するとアナウンス
+https://x.com/soraofficialapp/status/2036546752535470382
+アプリ、APIとも提供終了する。具体的な時期は今後発表するとのこと。
+
+**2026-03-24 EasyReforgeのフォークとして「EasyReforge-Next」が公開される
+https://github.com/hirorohi03/EasyReforge
+解説記事：https://note.com/hirorohi03/n/nb8d3a31b3548
+Zuntan03氏作の「[[EasyReforge>https://github.com/Zuntan03/EasyReforge]]」は昨年9月以降更新されておらず、[[reForge>https://github.com/Panchovix/stable-diffusion-webui-reForge]]本体やインストールされる拡張機能が古くなっていた。
+EasyReforge-NextはreForge本体や拡張機能のバージョンを固定せず、各種のライブラリのアップデートなども行ったもの。
+
 **2026-03-13 Nekofantasia-alphaが公開される
 https://huggingface.co/Nekofantasia/Nekofantasia-alpha
 SD3.5 Mediumをベースにした、アニメアートを生成するモデル。400万点のトレーニングデータセットをすべて手作業でレビューしたとうたっている。
@@ -610,3 +620,6 @@ https://www.nvidia.com/ja-jp/geforce/graphics-cards/50-series/
 人気モデルのパルリアスにv5が登場、スレが大いに盛り上がった。
 公開を告知する書き込み：https://fate.5ch.net/test/read.cgi/liveuranus/1735778359/544
 公開場所のURL：https://huggingface.co/paruparu95483/paruparu_illustrious/tree/main
+
+
+

@@ -24,14 +24,26 @@
 [END]
 
 ***　ワールドトリガー
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|taketomi sakurako, world trigger, girl, border operator uniform (world trigger), jacket, necktie, skirt, pantyhose, heels, standing, arms at side, full body,||ワールドトリガー|武富桜子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/565accd3c2cd4262.png|
+|somei hana, world trigger, girl, border operator uniform (world trigger), jacket, necktie, skirt, pantyhose, heels, standing, arms at side, full body,||ワールドトリガー|染井華|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/43f026fdbf931d5d.png|
+|mikami kaho, world trigger, girl, border operator uniform (world trigger), jacket, necktie, skirt, pantyhose, heels, standing, arms at side, full body,||ワールドトリガー|三上歌歩|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/42ee6fe53c0ebda6.png|
+|hosoi maori, world trigger, girl, border operator uniform (world trigger), jacket, necktie, skirt, pantyhose, heels, standing, arms at side, full body,||ワールドトリガー|細井真織|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/710928e37e5f3e90.png|
+|hiyami aki, world trigger, girl, border operator uniform (world trigger), jacket, necktie, skirt, pantyhose, heels, standing, arms at side, full body,||ワールドトリガー|氷見亜季|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c01492f4cf890446.png|
+|usami shiori, world trigger, girl, border operator uniform (world trigger), jacket, necktie, skirt, pantyhose, heels, standing, arms at side, full body,||ワールドトリガー|宇佐美栞|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/153841059b22a31f.png|
+|kitora ai, world trigger, girl, arashiyama squad's uniform, red jacket, black pants, knee boots, standing, arms at side, full body,||ワールドトリガー|木虎藍（トリオン体）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3065b2fdee0e3b58.png|
+|konami kirie, world trigger, girl, bob cut, feather hair, green shirt, long sleeves, green shorts, green gloves, knee boots, standing, holding polearm, full body,||ワールドトリガー|小南桐絵（トリオン体）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/dbb0fd90c27fc356.png|
+|nasu rei, world trigger, girl, nasu squad's uniform, leotard, gloves, thigh boots, standing, arms at side, full body,||ワールドトリガー|那須玲（トリオン体）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/e19acbd1e7837389.png|
+|katori youko, world trigger, girl, katori squad's uniform, turtleneck leotard, elbow gloves, thigh boots, standing, arms at side, full body,||ワールドトリガー|香取葉子（トリオン体）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/372f52ce0db34633.png|
 |official style, anime coloring, konami kirie, world trigger, best quality, intricate, overall detail, 2girl, orange hair, long hair, green eyes, serafuku, red shirt, ribbed shirt, black mini skirt, black socks, loafers, standing, hands on own hips, smile, simple background, facing away, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, {{{{emblem}}}},|ワールドトリガー|小南桐絵|V3使用。戦闘体再現は無理そう・・・。|https://image01.seesaawiki.jp/n/h/nai_ch/Jk1h38xUgq.png|
 |official style, anime coloring, amatori chika, world trigger, best quality, intricate, overall detail, 1girl, black hair, purple eyes, mikumo squad's uniform, green cape, sitting, holding assault rifle, smile, simple background, facing away, straight-on, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |ワールドトリガー|雨取千佳|V3使用。三雲隊の制服（mikumo squad's uniform）とか指定すればきちんと出る。|https://image01.seesaawiki.jp/n/h/nai_ch/E5aLcVRz_w.png|
 |official style, 2d cel anime, {{amatori chika}}, {{world trigger}}, very aesthetic, best quality, intricate, overall detail, 1 girl, child, black hair, huge ahoge, bowl cut hair, purple eyes, border uniform, holding assault rifle, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|{{3d}}, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{{{censor, bar censor}}}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |^|^|V2使用。ボーダーの紋章っぽいものは出るが、制服までは再現されない。|https://image02.seesaawiki.jp/n/h/nai_ch/sK9Y56025R.png|
 |}
-
+[END]
 ***　わがまま☆フェアリーミルモでポン!
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |murumo, mirumo de pon!, boy, chibi, purple hair, blue hat, red bowtie, blue pajamas, holding drumsticks, drum, standing, full body, straight-on, -3.0::mirumo::,||わがまま☆フェアリーミルモでポン!|ムルモ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。安定しない。|https://image02.seesaawiki.jp/n/h/nai_ch/db0c4b7b13f70a8a.png|
@@ -40,7 +52,7 @@
 |mirumo, mirumo de pon!, boy, chibi, blue hat, blue pajamas, holding maracas, standing, full body, straight-on, ||わがまま☆フェアリーミルモでポン!|ミルモ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1c3e969b3850c133.png|
 |minami kaede, mirumo de pon!, girl, school uniform, green jacket, green skirt, black socks, loafers, standing, full body, straight-on, ||わがまま☆フェアリーミルモでポン!|南楓|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/58e9beca4515baef.png|
 |}
-
+[END]
 ***　私がモテないのはどう考えてもお前らが悪い!
 [+]
 {| class="sort edit nanj_prompt_table"
@@ -189,6 +201,10 @@
 |||||||
 |||||||
 |}
+
+
+
+
 
 
 

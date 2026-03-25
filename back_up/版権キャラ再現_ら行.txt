@@ -190,6 +190,12 @@
 |}
 [END]
 
+***　リッジレーサーシリーズ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|nagase reiko, r4: ridge racer type 4, girl, minidress, elbow gloves, pantyhose, boots, standing, arms at side, full body,||リッジレーサータイプ4|永瀬麗子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/89a392bc63a5b120.png|
+|}
+
 ***　リトルウィッチアカデミア
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -510,4 +516,5 @@
 |1girl,mega man (series),leviathan (mega man),||ロックマンゼロ|妖将レヴィアタン|足のリングは出にくい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yUxZn_s67R-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yUxZn_s67R.png]]|
 |}
 [END]
+
 
