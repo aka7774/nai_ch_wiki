@@ -240,7 +240,8 @@
 ***　赤髪の白雪姫
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|official style, anime style, {{shirayuki (akagami no shirayukihime), akagami no shirayukihime}}, best quality, intricate, overall detail, 1 girl, green eyes, white dress, standing, happy, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |赤髪の白雪姫|白雪|V3使用。キャラの顔造形は再現できているとは思う。|https://image01.seesaawiki.jp/n/h/nai_ch/wdUReZyL6x.png|
+|shirayuki (akagami no shirayukihime), akagami no shirayukihime, girl, short over long sleeves, white dress, red shirt, brown boots, standing, full body, ||赤髪の白雪姫|白雪|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/233c855f254f086d.png|
+|official style, anime style, {{shirayuki (akagami no shirayukihime), akagami no shirayukihime}}, best quality, intricate, overall detail, 1 girl, green eyes, white dress, standing, happy, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |^|^|V3使用。キャラの顔造形は再現できているとは思う。|https://image01.seesaawiki.jp/n/h/nai_ch/wdUReZyL6x.png|
 |}
 
 ***　アオのハコ
@@ -265,6 +266,13 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |magical princess, chacha (akazukin chacha), akazukin chacha, girl, magical girl, cape, single shoulder pat, blue dress, white boots, standing, arms at side, full body, straight-on, ||赤ずきんチャチャ|マジカルプリンセス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/0082e573ce44a581.png|
 |chacha (akazukin chacha), akazukin chacha, girl, food, shirt, skirt, boots, standing, arms at side, full body, straight-on, ||赤ずきんチャチャ|チャチャ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ec829afc7177986d.png|
+|}
+
+***　暁のヨナ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|yona (akatsuki no yona), akatsuki no yona, girl, red jacket, white dress, sash, shoes, standing, full body, ||暁のヨナ|ヨナ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/39a0c99fd11b8b5d.png|
+|hak (akatsuki no yona), akatsuki no yona, boy, blue jacket, purple kimono, sash, shoes, standing, full body, ||暁のヨナ|ソン・ハク|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/d39ecb6ff6914b09.png|
 |}
 
 ***　アカメが斬る！
@@ -1399,6 +1407,8 @@
 |{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
 |}
 [END]
+
+
 
 
 

@@ -7,7 +7,8 @@
 - Normalises itest/mobile URLs to their desktop equivalents and deduplicates threads.
 - Tracks metadata (thread number, last fetch timestamp, post count, previous/next links) in `thread_back_up/state.json`.
 - Stops refetching threads automatically once they reach 1000 posts (with `--refetch` available when needed).
-- When the active thread reaches 950 posts, searches `find.5ch.net` for successor threads and archives both the old and new threads in the same run.
+- On every `daily` run, searches `find.5ch.io` for the current `なんJNVA部` thread, updates `latest_thread_url.txt`, and backfills missed threads by following the `前スレ` chain when needed.
+- When the active thread reaches 950 posts, searches `find.5ch.io` for successor threads and archives both the old and new threads in the same run.
 - Writes a combined index of thread numbers and URLs to `thread_back_up/thread_urls.csv` on every run.
   - 行構成は `number,status,posts,title,url,first_post_at,remark` です。欠番が判明した場合は `status=missing` の行が追加され、手動取得した `.dat` 由来のスレには `remark` で出典を明記します。
 
@@ -41,6 +42,6 @@ Optional flags:
   After importing, run `daily --refetch` to download the newly registered threads.
 
 ## Manual maintenance
-- Update `thread_back_up/latest_thread_url.txt` when the community opens a brand-new thread so the daily job has the right starting point.
+- `thread_back_up/latest_thread_url.txt` is refreshed automatically from search during `daily`; edit it manually only if both search and state recovery fail.
 - Commit the generated JSON/TXT files to keep history in git (the scheduled push handles this automatically).
 - 仮想環境には `requests` と `cloudscraper` が必要です（`pip install cloudscraper`）。

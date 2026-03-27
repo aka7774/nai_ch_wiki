@@ -22,10 +22,16 @@ BOARD_DOMAIN_MAP = {
     "liveuranus": "fate",
 }
 
+PRIMARY_5CH_DOMAIN = "5ch.io"
+LEGACY_5CH_DOMAINS = ("5ch.net",)
+SUPPORTED_5CH_DOMAINS = (PRIMARY_5CH_DOMAIN, *LEGACY_5CH_DOMAINS)
+
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
 
-SEARCH_URL_TEMPLATE = "https://find.5ch.net/search?q={query}"
+SEARCH_URL_TEMPLATE = f"https://find.{PRIMARY_5CH_DOMAIN}/search?q={{query}}"
 SEARCH_QUERY = "なんJNVA部"
+PRIMARY_THREAD_TITLE_PREFIX = "なんJNVA部★"
+PRIMARY_THREAD_BOARD = "liveuranus"
 
 DATA_DIR_NAME = "thread_back_up"
 JSON_DIR_NAME = "json"
@@ -85,12 +91,12 @@ class FiveChClient:
         })
 
     def fetch_thread(self, subdomain: str, board: str, dat_id: str) -> dict[str, t.Any]:
-        referer = f"https://itest.5ch.net/read.cgi/{board}/{dat_id}?lr=50"
+        referer = f"https://itest.{PRIMARY_5CH_DOMAIN}/read.cgi/{board}/{dat_id}?lr=50"
         last_error: Exception | None = None
         for attempt in range(5):
             rand = self._random_token(10)
             url = (
-                "https://itest.5ch.net/public/newapi/client.php?"
+                f"https://itest.{PRIMARY_5CH_DOMAIN}/public/newapi/client.php?"
                 f"subdomain={quote_plus(subdomain)}&"
                 f"board={quote_plus(board)}&"
                 f"dat={quote_plus(dat_id)}&"
@@ -121,16 +127,7 @@ class FiveChClient:
         url = SEARCH_URL_TEMPLATE.format(query=quote_plus(query))
         response = self.session.get(url, timeout=30)
         response.raise_for_status()
-        text = response.text
-        results: list[dict[str, str]] = []
-        link_pattern = r'<a[^>]+href="(https?://[^"]+)"[^>]*>(.*?)</a>'
-        for match in re.finditer(link_pattern, text, re.IGNORECASE | re.DOTALL):
-            href = unescape(match.group(1))
-            label = unescape(re.sub(r"<.*?>", "", match.group(2)))
-            if "5ch.net" not in href:
-                continue
-            results.append({"url": href.split("?")[0], "title": label.strip()})
-        return results
+        return parse_search_results_html(response.text)
 
     @staticmethod
     def _random_token(length: int) -> str:
@@ -164,11 +161,39 @@ def save_state(state_path: Path, state: dict[str, t.Any]) -> None:
 def normalize_thread_url(url: str) -> str:
     """Return canonical PC URL for a 5ch thread."""
     subdomain, board, dat_id = parse_thread_url(url)
-    return f"https://{subdomain}.5ch.net/test/read.cgi/{board}/{dat_id}"
+    return f"https://{subdomain}.{PRIMARY_5CH_DOMAIN}/test/read.cgi/{board}/{dat_id}"
+
+
+def qualify_url(url: str) -> str:
+    stripped = url.strip()
+    if stripped.startswith("//"):
+        return f"https:{stripped}"
+    return stripped
+
+
+def is_supported_5ch_host(host: str) -> bool:
+    return any(host == domain or host.endswith(f".{domain}") for domain in SUPPORTED_5CH_DOMAINS)
+
+
+def is_supported_5ch_url(url: str) -> bool:
+    parsed = urlparse(qualify_url(url))
+    return is_supported_5ch_host(parsed.netloc.lower())
+
+
+def parse_search_results_html(text: str) -> list[dict[str, str]]:
+    results: list[dict[str, str]] = []
+    link_pattern = r'<a[^>]+href="((?:https?:)?//[^"]+)"[^>]*>(.*?)</a>'
+    for match in re.finditer(link_pattern, text, re.IGNORECASE | re.DOTALL):
+        href = qualify_url(unescape(match.group(1)))
+        label = unescape(re.sub(r"<.*?>", "", match.group(2)))
+        if not is_supported_5ch_url(href):
+            continue
+        results.append({"url": href.split("?")[0], "title": label.strip()})
+    return results
 
 
 def parse_thread_url(url: str) -> tuple[str, str, str]:
-    cleaned = url.strip()
+    cleaned = qualify_url(url)
     cleaned = cleaned.split("#", 1)[0]
     cleaned = cleaned.split("?", 1)[0]
     parsed = urlparse(cleaned if cleaned.endswith("/") else cleaned + "/")
@@ -185,7 +210,7 @@ def parse_thread_url(url: str) -> tuple[str, str, str]:
     board = ""
     dat_id = ""
 
-    if host == "itest.5ch.net":
+    if host.startswith("itest.") and is_supported_5ch_host(host):
         if len(pieces) >= 5 and pieces[1] == "test" and pieces[2] == "read.cgi":
             # Pattern: /<subdomain>/test/read.cgi/<board>/<dat>
             subdomain = pieces[0]
@@ -243,13 +268,17 @@ def extract_thread_number(title: str) -> t.Optional[int]:
 
 
 def find_previous_thread_url(text: str) -> t.Optional[str]:
-    pattern = r"前スレ[\s\S]*?(https?://\S+)"
+    pattern = r"前スレ[\s\S]*?((?:https?:)?//\S+)"
     match = re.search(pattern, text, re.IGNORECASE)
     if not match:
         return None
-    url = match.group(1).strip()
+    url = qualify_url(match.group(1))
     url = url.rstrip(')')
     return url
+
+
+def is_primary_thread_title(title: str) -> bool:
+    return title.strip().startswith(PRIMARY_THREAD_TITLE_PREFIX)
 
 
 class ThreadBackupManager:
@@ -266,6 +295,12 @@ class ThreadBackupManager:
     # Public commands
     # ------------------------------------------------------------------
     def run_daily(self, refetch: bool = False, search_threshold: int = 950) -> None:
+        prefetched_ids: set[str] = set()
+        try:
+            prefetched_ids = self._sync_latest_primary_threads_from_search()
+        except Exception:  # noqa: BLE001
+            pass
+
         if not self.state.get("threads"):
             self._bootstrap_from_latest_file()
 
@@ -283,7 +318,8 @@ class ThreadBackupManager:
                 )
                 if not is_latest_primary:
                     continue
-            self._fetch_and_store(meta)
+            if dat_id not in prefetched_ids:
+                self._fetch_and_store(meta)
             threads[dat_id] = meta.to_dict()
             if meta.post_count >= search_threshold:
                 new_threads = self._discover_next_threads(meta)
@@ -367,6 +403,81 @@ class ThreadBackupManager:
         meta = ThreadMeta(dat_id=dat_id, url=url, normalized_url=canonical, number=number)
         return meta
 
+    def _search_primary_threads(self) -> list[ThreadMeta]:
+        candidates: dict[str, ThreadMeta] = {}
+        for result in self.client.search_threads():
+            try:
+                canonical = normalize_thread_url(result["url"])
+                _, board, dat_id = parse_thread_url(canonical)
+            except ThreadBackupError:
+                continue
+
+            title = (result.get("title") or "").strip()
+            if board != PRIMARY_THREAD_BOARD or not is_primary_thread_title(title):
+                continue
+
+            number = extract_thread_number(title)
+            if number is None:
+                continue
+
+            candidates[dat_id] = ThreadMeta(
+                dat_id=dat_id,
+                url=result["url"],
+                normalized_url=canonical,
+                number=number,
+                title=title,
+            )
+
+        return sorted(candidates.values(), key=lambda meta: (meta.number or 0, meta.dat_id))
+
+    def _sync_latest_primary_threads_from_search(self) -> set[str]:
+        candidates = self._search_primary_threads()
+        if not candidates:
+            return set()
+
+        threads = self.state.setdefault("threads", {})
+        known_primary_number = self._latest_primary_number(
+            [ThreadMeta.from_dict(meta) for meta in threads.values()]
+        )
+        known_dat_ids = set(threads)
+
+        for candidate in candidates:
+            existing = threads.get(candidate.dat_id)
+            if existing:
+                meta = ThreadMeta.from_dict(existing)
+                meta.url = candidate.url
+                meta.normalized_url = candidate.normalized_url
+                meta.title = candidate.title or meta.title
+                meta.number = candidate.number or meta.number
+                threads[candidate.dat_id] = meta.to_dict()
+            else:
+                threads[candidate.dat_id] = candidate.to_dict()
+
+        latest_candidate = candidates[-1]
+        if latest_candidate.number is None:
+            return set()
+        if known_primary_number is not None and latest_candidate.number <= known_primary_number:
+            return set()
+
+        backfill_previous_chain = known_primary_number is not None
+        prefetched_ids: set[str] = set()
+        frontier = latest_candidate
+        while frontier.dat_id not in known_dat_ids and frontier.dat_id not in prefetched_ids:
+            self._fetch_and_store(frontier)
+            threads[frontier.dat_id] = frontier.to_dict()
+            prefetched_ids.add(frontier.dat_id)
+
+            if not backfill_previous_chain or not frontier.previous_url:
+                break
+
+            previous = self._ensure_thread(frontier.previous_url)
+            if previous.dat_id in known_dat_ids:
+                break
+            frontier = previous
+            time.sleep(DEFAULT_SLEEP_SECONDS)
+
+        return prefetched_ids
+
     def _fetch_and_store(self, meta: ThreadMeta) -> None:
         subdomain, board, dat_id = parse_thread_url(meta.normalized_url)
         payload = self.client.fetch_thread(subdomain, board, dat_id)
@@ -420,6 +531,10 @@ class ThreadBackupManager:
                 fh.write(f"{post_no} {user} {posted_at}\n{content}\n\n")
 
     def _discover_next_threads(self, meta: ThreadMeta) -> list[ThreadMeta]:
+        if not self._is_primary_thread(meta):
+            return []
+
+        _, current_board, _ = parse_thread_url(meta.normalized_url)
         results = self.client.search_threads()
         threads = self.state.setdefault("threads", {})
         discovered: list[ThreadMeta] = []
@@ -428,7 +543,11 @@ class ThreadBackupManager:
                 canonical = normalize_thread_url(result["url"])
             except ThreadBackupError:
                 continue
-            _, _, dat_id = parse_thread_url(canonical)
+            _, board, dat_id = parse_thread_url(canonical)
+            if board != current_board:
+                continue
+            if not is_primary_thread_title(result["title"] or ""):
+                continue
             if dat_id in threads:
                 continue
             number = extract_thread_number(result["title"])
@@ -455,7 +574,7 @@ class ThreadBackupManager:
             return False
         if meta.number > 10000:
             return False
-        return "なんJNVA部" in (meta.title or "")
+        return is_primary_thread_title(meta.title or "")
 
     def _latest_primary_number(self, metas: list[ThreadMeta]) -> t.Optional[int]:
         numbers = [m.number for m in metas if self._is_primary_thread(m)]
@@ -484,7 +603,7 @@ class ThreadBackupManager:
             latest = max(pool, key=lambda m: m.number or 0)
 
         with self.latest_url_path.open("w", encoding="utf-8") as fh:
-            fh.write(latest.normalized_url + "\n")
+            fh.write(normalize_thread_url(latest.normalized_url) + "\n")
 
     def _write_thread_listing(self) -> None:
         headings = ["number", "status", "posts", "title", "url", "first_post_at", "remark"]
@@ -502,7 +621,7 @@ class ThreadBackupManager:
                 meta.status,
                 str(meta.post_count),
                 meta.title.replace(",", " "),
-                meta.normalized_url,
+                normalize_thread_url(meta.normalized_url),
                 (meta.first_post_at or ""),
                 (meta.remark or "").replace(",", " "),
             ]
@@ -533,7 +652,7 @@ class ThreadBackupManager:
         response.raise_for_status()
         text = response.text
         urls = set()
-        pattern = r"""https?://[\w\-/_.]*5ch\.net[^\s<>"']*"""
+        pattern = r"""(?:https?:)?//[\w.-]*5ch\.(?:net|io)[^\s<>"']*"""
         for match in re.findall(pattern, text):
             try:
                 canonical = normalize_thread_url(match)
