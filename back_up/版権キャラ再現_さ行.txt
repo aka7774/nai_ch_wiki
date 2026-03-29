@@ -1191,11 +1191,16 @@
 |}
 
 ***　聖戦士ダンバイン
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|ciela lapana, seisenshi dunbine, girl, aqua hair, red eyes, medium breasts, pink armored dress, shoulder armor, sleeveless, white long skirt, standing, smile, full body,|lowres, aliasing, |聖戦士ダンバイン|シーラ・ラパーナ|V4 Curated版使用。Full版でこのプロンプトを使っても再現しない。|https://image02.seesaawiki.jp/n/h/nai_ch/6UrPkwYzjK.png|
+|dunbine, seisenshi dunbine, other, no humans, mecha, standing, full body, ||聖戦士ダンバイン|ダンバイン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1751a6ed8fa0bbda.png|
+|Artist:kogawa tomonori, shou zama, seisenshi dunbine, boy, shirt, pants, shoes, standing, full body, ||聖戦士ダンバイン|ショウ・ザマ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。キャラとして再現性がある。劇中のパイロットスーツは再現できない。|https://image01.seesaawiki.jp/n/h/nai_ch/17a0f4ea151329f7.png|
+|Artist:kogawa tomonori, cham fau, seisenshi dunbine, girl, blue leotard, pantyhose, boots, standing, full body, ||聖戦士ダンバイン|チャム・ファウ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/364259d7a636b75a.png|
+|Artist:kogawa tomonori, ciela lapana, seisenshi dunbine, girl, pink armored dress, shoulder armor, sleeveless, faulds, white long skirt, standing, full body, ||聖戦士ダンバイン|シーラ・ラパーナ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/de66cb0a428c1a96.png|
+|ciela lapana, seisenshi dunbine, girl, aqua hair, red eyes, medium breasts, pink armored dress, shoulder armor, sleeveless, white long skirt, standing, smile, full body,|lowres, aliasing, |^|^|V4 Curated版使用。Full版でこのプロンプトを使っても再現しない。|https://image02.seesaawiki.jp/n/h/nai_ch/6UrPkwYzjK.png|
 |}
-
+[END]
 ***　生徒会にも穴はある！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1702,6 +1707,13 @@
 |}
 [END]
 
+***　装甲騎兵ボトムズ
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|chirico cuvie, soukou kihei votoms, boy, mecha pilot suit, boots, standing, full body, ||装甲騎兵ボトムズ|キリコ・キュービィ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/f12f7c7a1957f3c4.png|
+|scopedog, soukou kihei votoms, other, no humans, mecha, standing, full body, | |装甲騎兵ボトムズ|スコープドッグ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/eef145da2a0d4159.png|
+|}
+
 ***　葬送のフリーレン
 [+]
 {| class="sort edit nanj_prompt_table"
@@ -1738,6 +1750,7 @@
 |}
 
 ***　その着せ替え人形は恋をする
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |kuroe shizuku, kitagawa marin, sono bisque doll wa koi wo suru, girl, black hair, purple eyes, kuroe shizuku (cosplay)&#160;, bonnet, animal collar, black dress, grey apron, lace thighhighs, platform heels, standing, holding own leash,|lowres, aliasing,|その着せ替え人形は恋をする|喜多川海夢（黒江雫コスプレ）|V4.5 Curated版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/341620611c3dab94.png|
@@ -1765,6 +1778,7 @@
 [END]
 
 ***　そらのおとしもの
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, anime coloring, astraea (sora no otoshimono), sora no otoshimono, very aesthetic, best quality, intricate, overall detail, nsfw, 1 girl, red eyes, angel wings, standing, light smile, simple background, straight-on, facing the front, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |そらのおとしもの|局地戦闘用（近接戦闘用）エンジェロイドタイプΔ　Astraea（アストレア）|V3使用。angel wingsを入れないと翼が描写されないことがある。|https://image01.seesaawiki.jp/n/h/nai_ch/HTOT2soVeA.png|
@@ -1811,8 +1825,6 @@
 |official style, minamoto sakura, zombie land saga , very aesthetic, best quality, intricate, overall detail, 1 girl, zombie, red eyes, standing, light smile, simple background, facing the front, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, POV hands, long body, |ゾンビランドサガ|源さくら(ゾンビVer.)|V3使用。|https://image02.seesaawiki.jp/n/h/nai_ch/r3bUmZnek_.png|
 |}
 [END]
-
-
 
 
 

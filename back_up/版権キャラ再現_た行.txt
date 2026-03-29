@@ -109,13 +109,17 @@
 [END]
 
 ***　タイムボカンシリーズ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|calen (time bokan), time bokan 24, girl, leotard, see-through skirt, gloves, thighhighs, boots, standing, full body, ||タイムボカン24|カレン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/30e1b46b99493f36.png|
+|takada gan, yatterman, boy, hat, bodysuit, gloves, boots, standing, full body, ||ヤッターマン|ヤッターマン1号（ガンちゃん）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b1e4762de2d08fa1.png|
+|kaminari ai, yatterman, girl, hat, bodysuit, gloves, shoes, standing, full body, ||ヤッターマン|ヤッターマン2号（アイちゃん）|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/83cea5459ace1bf5.png|
 |doronjo, yatterman, girl, blonde hair, blue eyes, black leotard, black cape, black elbow gloves, black thigh boots, high heel boots,&#160;standing, |lowres, aliasing,|ヤッターマン|ドロンジョ|V4.5 Curated版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/e6bbbc27ec85462c.png|
 |boyakki, yatterman, boy, emaciated, mask, buck teeth, green shirt, green glove, midriff, green pants, green boots,&#160;standing, |lowres, aliasing,|ヤッターマン|ボヤッキー|V4.5 Curated版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/969a01f7228598ea.png|
 |tonzura, yatterman, boy, muscular, mask, purple shirt, purple glove, midriff, purple pants, purple boots,&#160;standing, |lowres, aliasing,|ヤッターマン|トンズラー|V4.5 Curated版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c96cf12546fd74fb.png|
 |}
-
+[END]
 ***　D.C.シリーズ(ダカーポシリーズ)
 [+]
 {| class="sort edit nanj_prompt_table"
@@ -691,6 +695,17 @@
 |}
 [END]
 
+***　伝説巨神イデオン
+[+]
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|cosmo yuki, densetsu kyojin ideon, boy, jacket, pants, boots, standing, full body, ||伝説巨神イデオン|ユウキ・コスモ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/bee6bb253eb8959f.png|
+|kasha imhof, densetsu kyojin ideon, girl, jacket, pants, boots, standing, full body, ||伝説巨神イデオン|イムホフ・カーシャ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/8abd1854dc45e5c7.png|
+|karala ajiba, densetsu kyojin ideon, girl, shirt, pants, shoes, standing, full body, ||伝説巨神イデオン|カララ・アジバ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2378a6388998c5bc.png|
+|kitty kitten, densetsu kyojin ideon, girl, shirt, pants, shoes, standing, full body, ||伝説巨神イデオン|キッチ・キッチン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9475a9f36d3f8eee.png|
+|ideon, densetsu kyojin ideon, other, no humans, mecha, standing, full body, ||伝説巨神イデオン|イデオン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/ddb28145742d20ce.png|
+|}
+[END]
 ***　天地無用！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -1216,6 +1231,10 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |masterpiece,{{best quality}},{{extra delicate painting}}, A bob cut beautiful 1girl with &#91;small fox ears] ,solo,wearing white hakama,{{messy hair}},light brown hair, rhomboid eye,&#91;&#91;&#91;angry]]],&#91;&#91;surprised]],dissatisfaction,{{open eyes}},{{detailed eyes}},{{tsurime}},open mouth, wind blowing,sunset light,{{ultra detailed}},HDR,{detailed dispersion light},high quality,&#91;&#91;&#91;realistic]]],cowboy shot|lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, signature, watermark, username, large ears,blurry,missing fingers,bad hands,missing arms,large breasts,3d||どんぎつね||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/0koYcK0r9E.jpg)|
 |}
+
+
+
+
 
 
 
