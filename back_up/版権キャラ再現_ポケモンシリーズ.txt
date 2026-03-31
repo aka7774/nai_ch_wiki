@@ -219,6 +219,16 @@
 * ポケモン
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|seviper, pokemon rse, boy, no humans, pokemon　(creature), standing, full body, ||ポケモン|ハブネーク|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/25af3193915df046.png|
+|victreebel, pokemon frlg, boy, no humans, pokemon　(creature), standing, full body, ||ポケモン|ウツボット|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/59fbc751a32b8cb1.png|
+|weezing, pokemon frlg, boy, no humans, pokemon　(creature), multiple heads, gas, floating, full body, ||ポケモン|マタドガス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/67f5f97e67e89885.png|
+|wobbuffet, pokemon, boy, no humans, pokemon　(creature), standing, full body, ||ポケモン|ソーナンス|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/9ed14f227555b4ca.png|
+|mimikyu, pokemon sm&#160;, boy, no humans, pokemon　(creature), standing, full body, ||ポケモン|ミミッキュ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/b42151818b374d4d.png|
+|cacnea, pokemon rse, boy, no humans, pokemon　(creature), standing, full body, ||ポケモン|サボネア|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c35e98692ec06c8a.png|
+|arbok, pokemon frlg, boy, no humans, pokemon　(creature), standing, full body, ||ポケモン|アーボック|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c41df31bbe6262ca.png|
+|ditto, pokemon frlg, boy, no humans, pokemon　(creature), standing, full body, ||ポケモン|メタモン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/64abe1f2aea120bd.png|
+|mime jr., pokemon dppt, boy, no humans, pokemon　(creature), standing, full body, ||ポケモン|マネネ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c80d754b318dd4c2.png|
+|mr. mime, pokemon frlg, boy, no humans, pokemon (creature), miming, outstretched hand, outstretched arms, full body, ||ポケモン|バリヤード|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/af614bae86cc3b0f.png|
 |yadon||||||
 |nihilego,&#160;pokemon sm, other, solo, pokemon (creature), no humans, floating, full body,||ポケモン|ウツロイド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/28b4fdf4016b2221.png|
 |chien-pao||ポケモン|パオジアン||https://i.imgur.com/uZkl6Bv.png|
@@ -290,6 +300,4 @@
 |species:gardevoir,  ||^|^|Furry V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yOdzaZ_ISf-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yOdzaZ_ISf.png]]|
 |solo, {{{{gardevoir}}}}, &#91;&#91;&#91;&#91;pokemon&#93;&#93;&#93;&#93;, green arms, white dress,||^|^|V1|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xeYyc0M4it-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xeYyc0M4it.png]]|
 |}
-
-
 
