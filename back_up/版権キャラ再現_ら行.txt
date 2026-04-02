@@ -442,6 +442,13 @@
 |}
 [END]
 
+***　ロクでなし魔術講師と禁忌教典
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|sistine fibel, rokudenashi majutsu koushi to akashic record, 1girl, solo, stabding, full body||ロクでなし魔術講師と禁忌教典|システィーナ＝フィーベル|作品名もプロンプトに入れなければ出力されない。|https://image01.seesaawiki.jp/n/h/nai_ch/a41876a03116e6cb.png|
+|rumia tingel, rokudenashi majutsu koushi to akashic record, 1girl, solo, stabding, full body||ロクでなし魔術講師と禁忌教典|ルミア＝ティンジェル|作品名もプロンプトに入れなければ出力されない。|https://image02.seesaawiki.jp/n/h/nai_ch/5a63c07e46f7476a.png|
+|}
+
 ***　六門天外モンコレナイト
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
@@ -516,5 +523,4 @@
 |1girl,mega man (series),leviathan (mega man),||ロックマンゼロ|妖将レヴィアタン|足のリングは出にくい|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/yUxZn_s67R-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/yUxZn_s67R.png]]|
 |}
 [END]
-
 
