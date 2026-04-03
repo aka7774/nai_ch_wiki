@@ -340,8 +340,9 @@
 [+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
 |izayoi liko, mahou girls precure!, girl, magic school uniform (mahou girls precure!), witch hat, shirt, skirt, thighhighs, mary janes, standing, arms at side, full body, ||魔法つかいプリキュア!|十六夜リコ(魔法学校制服)|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d9ad23e9b79e1670.png|
-|asahina mirai, mahou girls precure!, girl, tsunagi first middle school uniform, jacket, shirt, skirt, socks, loafers, standing, arms at side, full body, ||魔法つかいプリキュア!|朝日奈みらい(津成木第一中学校制服)|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d73c1ed7b5c9da0a.png|
+|asahina mirai, mahou girls precure!, girl, tsunagi first middle socks, loafers, standing, arms at side, full body, ||魔法つかいプリキュア!|朝日奈みらい(津成木第一中学校制服)|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/d73c1ed7b5c9da0a.png|
 |liz (mahou girls precure!), mahou girls precure!, girl, white shirt, bowtie, long skirt, aqua skirt, pantyhose, shoes, standing, arms at side, full body, ||魔法つかいプリキュア!|リズ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/6b83ccc648cc872a.png|
 |jun (mahou girls precure!),&#160;mahou girls precure!, girl, short hair, magic school uniform (mahou girls precure!), witch hat, shirt, skirt, thighhighs, mary janes, standing, arms at side, full body, ||魔法つかいプリキュア!|ジュン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/961a43f460219d15.png|
 |kei (mahou girls precure!),&#160;mahou girls precure!, girl, magic school uniform (mahou girls precure!), witch hat, shirt, skirt, thighhighs, mary janes, standing, arms at side, full body, -3.0::glasses::,||魔法つかいプリキュア!|ケイ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/18cc4adaed2dfd71.png|
@@ -631,6 +632,7 @@
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |}
 [END]
+
 
 
 

@@ -40,10 +40,15 @@
 ***　あぁ女神様！
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|official style, anime style, {{urd (aa megami-sama), aa megami-sama}}, best quality, intricate, overall detail, 1 girl, purple eyes, dress, standing, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |あぁ女神様！|ウルド|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/npVGzKbbpk.png|
-|official style, anime style, {{belldandy, aa megami-sama}}, best quality, intricate, overall detail, 1 girl, blue eyes, uniform, dress, standing, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |あぁ女神様！|ベルダンディー|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/iQZ12iBAsA.png|
-|official style, anime style, {{skuld (aa megami-sama), aa megami-sama}}, best quality, intricate, overall detail, 1 girl, younger, uniform, dress, standing, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |あぁ女神様！|スクルド|V3使用。衣装の再現は困難だと思うが、キャラが再現するだけで上等。|https://image01.seesaawiki.jp/n/h/nai_ch/blfKc38AX8.png|
-|{1girl}, {{{{belldandy}}}},{{aa_megami-sama}},(antenna hair),(brown hair),(long hair),(facial mark),(forehead mark),(jewelry),(large breasts),(ponytail),(nude), (bracelet),(blue eyes),(collarbone),(floating hair), &#40;&#40;&#40;urtra Quality))), &#40;&#40;Ultra-Detailed)), &#40;&#40;Extremely)), &#40;&#40;Beautiful Detailed Skin)), (Beautiful Detailed Eyes),(gently smile)||あぁ女神様！|ベルダンディー|現状髪型だけ|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Nh1LPkzBRp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Nh1LPkzBRp.png]]|
+|phild (aa megami-sama), aa megami-sama, girl, red jacket, minidress, center opening, heels, standing, full body, ||あぁ女神様！|ヒルド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/df3df33e01cc9c63.png|
+|peorth (aa megami-sama), aa megami-sama, girl, black bra, black panties, bangle, gloves, boots, arms at side, standing, full body, ||あぁ女神様！|ペイオース|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f766ea874ab04bf1.png|
+|urd (aa megami-sama), aa megami-sama, girl, cape, purple dress, elbow gloves, boots, standing, full body, ||あぁ女神様！|ウルド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/8ad5cdaba99689e3.png|
+|official style, anime style, {{urd (aa megami-sama), aa megami-sama}}, best quality, intricate, overall detail, 1 girl, purple eyes, dress, standing, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |^|^|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/npVGzKbbpk.png|
+|skuld (aa megami-sama), aa megami-sama, girl, pink dress, gloves, socks, boots, standing, full body, ||あぁ女神様！|スクルド|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/394d2d5eea44fd09.png|
+|official style, anime style, {{skuld (aa megami-sama), aa megami-sama}}, best quality, intricate, overall detail, 1 girl, younger, uniform, dress, standing, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |^|^|V3使用。衣装の再現は困難だと思うが、キャラが再現するだけで上等。|https://image01.seesaawiki.jp/n/h/nai_ch/blfKc38AX8.png|
+|belldandy, aa megami-sama, girl, high ponytail, gold collar, frilled cape, white long skirt, gold bracelet, gold anklet, toeless socks, standing, full body, ||あぁ女神様！|ベルダンディー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/287ff296d0d18d8e.png|
+|official style, anime style, {{belldandy, aa megami-sama}}, best quality, intricate, overall detail, 1 girl, blue eyes, uniform, dress, standing, simple background, facing the front, looking at viewer, straight-on, close to viewer, cowboy shot, solo focus, intricate, (highly detailed),|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, POV hands, |^|^|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/iQZ12iBAsA.png|
+|{1girl}, {{{{belldandy}}}},{{aa_megami-sama}},(antenna hair),(brown hair),(long hair),(facial mark),(forehead mark),(jewelry),(large breasts),(ponytail),(nude), (bracelet),(blue eyes),(collarbone),(floating hair), &#40;&#40;&#40;urtra Quality))), &#40;&#40;Ultra-Detailed)), &#40;&#40;Extremely)), &#40;&#40;Beautiful Detailed Skin)), (Beautiful Detailed Eyes),(gently smile)||^|^|現状髪型だけ|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/Nh1LPkzBRp-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/Nh1LPkzBRp.png]]|
 |}
 
 ***　アイカツ！
@@ -523,7 +528,13 @@
 ***　アマガミ
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|kurosawa noriko, amagami, girl, kibito high school uniform, jacket, skirt, socks, loafers, arms at side, standing, full body, ||アマガミ|黒沢典子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f8ac9201a361323f.png|
+|hiba manaka, amagami, girl, kibito high school uniform, jacket, skirt, socks, loafers, arms at side, standing, full body, ||アマガミ|飛羽愛歌|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/7a779daa99260155.png|
+|yuzuki ruriko, amagami, girl, kibito high school uniform, jacket, skirt, socks, loafers, arms at side, standing, full body, ||アマガミ|夕月琉璃子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/94f969409b1a118d.png|
+|tanaka keiko (amagami), amagami, girl, kibito high school uniform, jacket, skirt, socks, loafers, arms at side, standing, full body, ||アマガミ|田中恵子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/6de4645ad64215f3.png|
+|itou kanae (amagami), amagami, girl, kibito high school uniform, jacket, skirt, socks, loafers, arms at side, standing, full body, ||アマガミ|伊藤香苗|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f1c4587aa3bed75b.png|
+|takahashi maya, amagami, girl, jacket, skirt, pantyhose, heels, arms at side, standing, full body, ||アマガミ|高橋麻耶|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/a7b3ffe1dbbdc64d.png|
+|kamizaki risa, amagami, girl, kibito high school uniform, vest, skirt, socks, loafers, arms at side, standing, full body, ||アマガミ|上崎裡沙|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/c020bbc2194d195c.png|
 |tachibana miya, amagami, loli, black hair, short hair,  black eyes, cowboy shot,  | |アマガミ|橘美也|V3|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/HBpK4cYnZC-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/HBpK4cYnZC.png]]|
 |tsukahara hibiki, amagami, solo, cowboy shot, | |アマガミ|塚原響|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/x8j2Q7uWMA-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/x8j2Q7uWMA.png]]|
 |tanamachi kaoru, amagami, black hair, medium hair, messy hair, kibito high school uniform, solo, cowboy shot, | |アマガミ|棚町薫|V3|[[&ref(https://image02.seesaawiki.jp/n/h/nai_ch/uAH0c5KMaq-s.png)>https://image02.seesaawiki.jp/n/h/nai_ch/uAH0c5KMaq.png]]|
@@ -1413,6 +1424,10 @@
 |{{sanguu mitsuba}}, owari no seraph, twintails, purple eyes, blonde long hair,  military uniform, black dress, short dress, sleeves rolled up, red bow, pleated skirt, black short skirt, white gloves, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer, year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, ||終わりのセラフ|三宮三葉||https://image02.seesaawiki.jp/n/h/nai_ch/Vj9BGMoEq1.png|
 |}
 [END]
+
+
+
+
 
 
 
