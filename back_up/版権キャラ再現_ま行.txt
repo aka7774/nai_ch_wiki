@@ -101,13 +101,23 @@
 |}
 
 ***　マジカミ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|oikawa iko, magicami, girl, forehead, necktie, shirt, pink vest, skirt, socks, loafers, standing, full body,||マジカミ|及川依子|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b6701db106e2d4f7.png|
+|tokada marianne, magicami, girl, forehead, necktie, shirt, skirt, pantyhose, loafers, standing, full body,||マジカミ|丘田マリアンヌ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/3bd37e4d25fc3079.png|
+|tamaki hanabi, magicami, girl, necktie, jacket, shirt, blue skirt, socks, sneakers, standing, full body,||マジカミ|環はなび|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/6a4cd52503b733b1.png|
+|yukifune eriza, magicami, girl, red bowtie, jacket, shirt, blue skirt, white thighhighs, loafers, standing, full body,||マジカミ|雪船エリザ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/dd90166faea93ecb.png|
+|ohtori aka, magicami, girl, school uniform, sweater, skirt, boots, standing, full body,||マジカミ|大鳥丹|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/21c3f9de2f7ddddc.png|
+|ohtori ao, magicami, girl, school uniform, jacket, white shirt, skirt, sneakers, standing, full body,||マジカミ|大鳥蒼|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/8e598467a0599d8f.png|
+|higashiyama akisa, magicami, girl, red bowtie, jacket, white shirt, skirt, socks, loafers, standing, full body,||マジカミ|東山陽彩|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/1d3ff8603ed7b08a.png|
+|yuwase cocoa, magicami, girl, serafuku, red bowtie, cardigan, white shirt, blue skirt, socks, loafers, standing, full body,||マジカミ|百波瀬ここあ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/b79017e9430fa8e8.png|
+|sodeshiro seira, magicami, girl, serafuku, red bowtie, shirt, blue skirt, thighhighs, loafers, standing, full body,||マジカミ|袖城セイラ|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/760abacadff47c3b.png|
+|tomonaga kaori, magicami, girl, serafuku, white shirt, blue skirt, socks, loafers, standing, full body,||マジカミ|朝永花織|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/5ec39aeb9d7642c1.png|
 |official style, yarimizu riri, magicami, pink hair, kogal, 7:3 parted hairstyle, one side drill hair on left, leage breast, pink stripe ribbon on chest, yellow checkered skirt, white shirt, open cleavage, pink rose hair band, long sidelocks, light-tanned skin, tsurime, sharp eyes, red eyes, loose socks, loafers,black jacket_{{{{{{{around waist}}}}}}}, standing, full body|{{{{{long hair}}}}}, hand scrunchie|マジカミ|槍水りり|V4.5 Full版使用。キャラクター1プロンプトのみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/32b3431851259631.png|
 |official style, asobe iroha, magicami, girl, brown hair, double bun, long hair, red eyes, large breasts, serafuku, pink bowtie, pink jacket, raglan sleeves, blue skirt, pleated skirt, socks, pink shoes, standing, full body, |lowers, aliasing,|マジカミ|遊部いろは|V4 Full版使用。キャラクター1プロンプトのみ記述。服装は完全再現しない。|https://image01.seesaawiki.jp/n/h/nai_ch/6K4oWrmOjc.png|
 |}
-
+[END]
 ***　真剣で私に恋しなさい!
 [+]
 {| class="sort edit nanj_prompt_table"
@@ -123,12 +133,18 @@
 [END]
 
 ***　マジンガーシリーズ
+[+]
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|maria grace fleed, ufo robo grendizer, girl, rmulticolored bodysuit, white gloves, white boots, standing, full body,||UFOロボ　グレンダイザー|グレース・マリア・フリード|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/2f8fd74b432a9733.png|
+|grendizer, ufo robo grendizer, other, no humans, mecha, standing, full body,||UFOロボ　グレンダイザー|グレンダイザー|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/9e0d92e24d6c8ce8.png|
+|honoo jun, great mazinger, girl, red bodysuit, white gloves, white boots, standing, full body,||グレートマジンガー|炎ジュン|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/2d62dd03166ed911.png|
 |great mazinger (robot), great mazinger, no humans, mecha, standing,||グレートマジンガー|グレートマジンガー|V4.5 Curated版使用。キャラクタープロンプト１のみ記述|https://image02.seesaawiki.jp/n/h/nai_ch/d94984fb867a627f.png|
+|yumi sayaka, mazinger z, girl, minidress, white gloves, white boots, standing, full body,||マジンガーZ|弓さやか|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/c3c23fce6d7af3fc.png|
+|kabuto kouji, mazinger z, boy, mecha pilot suit, standing, full body, -3.0::mazinger z (mecha)::,||マジンガーZ|兜甲児|V4.5 Full版使用。キャラクタープロンプト１のみ記述。|https://image02.seesaawiki.jp/n/h/nai_ch/f9dc85d0b5d9863a.png|
 |mazinger z (mecha), mazinger z, no humans, mecha, standing,||マジンガーZ|マジンガーZ|V4.5 Curated版使用。キャラクタープロンプト１のみ記述。|https://image01.seesaawiki.jp/n/h/nai_ch/25690b2c23a74640.png|
 |}
-
+[END]
 ***　マクドナルド
 [+]
 {| class="sort edit nanj_prompt_table"
@@ -982,6 +998,9 @@
 [END]
 
 ----
+
+
+
 
 
 
