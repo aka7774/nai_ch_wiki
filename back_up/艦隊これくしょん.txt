@@ -7,41 +7,61 @@
 **戦艦級
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{ai-generated}}, nagato kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|長門|改二|https://image01.seesaawiki.jp/n/h/nai_ch/0a79e73e0deed5cf.png|
+|{{ai-generated}}, haruna kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|榛名|改二|https://image01.seesaawiki.jp/n/h/nai_ch/af6af6b1ff43d900.png|
 |{{ai-generated}}, fuso &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|扶桑||https://image02.seesaawiki.jp/n/h/nai_ch/5a65d6c570f1b85f.png|
 |{{ai-generated}}, yamashiro &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|山城||https://image02.seesaawiki.jp/n/h/nai_ch/508f17b2de91a0dd.png|
 |{{ai-generated}}, hyuuga kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|日向|改二|https://image01.seesaawiki.jp/n/h/nai_ch/5de109ece93b1045.png|
 |{{ai-generated}}, ise kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|伊勢|改二|https://image01.seesaawiki.jp/n/h/nai_ch/ef06473463b4939f.png|
 |official style, game cg,Yamato &#40;kancolle),1girl||艦隊これくしょん|大和|1girlが無いと食べ物が出力される。立ち姿のみなのでアクションを起こす場合は食べ物になるか確認していない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/1K8AJYBmdu-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/1K8AJYBmdu.png]]|
 |yamato &#40;kancolle),||艦隊これくしょん|^|名前のみで再現可能|https://image02.seesaawiki.jp/n/h/nai_ch/WsH6PO_U8f.png|
-|musashi &#40;kancolle), twintails, long hair,  {{dark-skinned_female}}, {dark_skin}, silver hair,{glasses},||艦隊これくしょん|武蔵|名前で生成できるのは跳ねた髪の毛および前髪とヘッドギアまで。そのため、銀髪、ツインテール、眼鏡、褐色肌(と目の色)は別個指示が必要。|https://image01.seesaawiki.jp/n/h/nai_ch/IngwyXSbZc.png|
-|{{{{kirishima &#40;kancolle)}}}}, black hair, short hair, bob cut, black eyes, {{tareme}}, green frame glasses, {{large breasts}}, red japanese miko clothes, black skirt, pantyhose,||艦隊これくしょん|霧島||https://image01.seesaawiki.jp/n/h/nai_ch/NPfqLToo6d.png|
-|hiei &#40;kancolle)||艦隊これくしょん|比叡|名前のみで生成可能。|https://image01.seesaawiki.jp/n/h/nai_ch/RDhlYVAwGr.png|
-|mutsu &#40;kancolle)||艦隊これくしょん|陸奥|名前のみで生成可能。頭の角の本数は不安定。|https://image01.seesaawiki.jp/n/h/nai_ch/ak4SQj0bLf.png|
-|kongou &#40;kancolle)||艦隊これくしょん|金剛|名前のみで再現可能|https://image02.seesaawiki.jp/n/h/nai_ch/Z1DFdXEYKm.png|
+|{{ai-generated}}, musashi kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|武蔵|改二|https://image01.seesaawiki.jp/n/h/nai_ch/8248daf0d3c781c2.png|
+|musashi &#40;kancolle), twintails, long hair,  {{dark-skinned_female}}, {dark_skin}, silver hair,{glasses},||艦隊これくしょん|^|名前で生成できるのは跳ねた髪の毛および前髪とヘッドギアまで。そのため、銀髪、ツインテール、眼鏡、褐色肌(と目の色)は別個指示が必要。|https://image01.seesaawiki.jp/n/h/nai_ch/IngwyXSbZc.png|
+|{{ai-generated}}, kirishima kai ni &#40;kancolle),  {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|霧島|改二|https://image01.seesaawiki.jp/n/h/nai_ch/3ee6d53ec2d904f4.png|
+|{{{{kirishima &#40;kancolle)}}}}, black hair, short hair, bob cut, black eyes, {{tareme}}, green frame glasses, {{large breasts}}, red japanese miko clothes, black skirt, pantyhose,||艦隊これくしょん|^||https://image01.seesaawiki.jp/n/h/nai_ch/NPfqLToo6d.png|
+|{{ai-generated}}, hiei kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|比叡|改二丙、高確率で丙が出てしまう。|https://image01.seesaawiki.jp/n/h/nai_ch/f586c1e63c34b311.png|
+|hiei &#40;kancolle)||艦隊これくしょん|^|名前のみで生成可能。|https://image01.seesaawiki.jp/n/h/nai_ch/RDhlYVAwGr.png|
+|{{ai-generated}}, mutsu kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|陸奥|改二|https://image02.seesaawiki.jp/n/h/nai_ch/c3d51e9367c88bce.png|
+|mutsu &#40;kancolle)||艦隊これくしょん|^|名前のみで生成可能。頭の角の本数は不安定。|https://image01.seesaawiki.jp/n/h/nai_ch/ak4SQj0bLf.png|
+|{{ai-generated}}, kongou kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|金剛|改二|https://image02.seesaawiki.jp/n/h/nai_ch/1b619684a6d6cf01.png|
+|kongou &#40;kancolle)||艦隊これくしょん|^|名前のみで再現可能|https://image02.seesaawiki.jp/n/h/nai_ch/Z1DFdXEYKm.png|
 |}
 **航空母艦
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|{{ai-generated}}, shoukaku (kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|翔鶴||https://image01.seesaawiki.jp/n/h/nai_ch/a941b1dadcd5d97c.png|
+|{{ai-generated}}, zuikaku &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|瑞鶴||https://image01.seesaawiki.jp/n/h/nai_ch/625473aec7707c41.png|
+|{{ai-generated}}, zuihou &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|瑞鳳||https://image02.seesaawiki.jp/n/h/nai_ch/9a3738ede8195520.png|
+|{{ai-generated}}, souryuu &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|蒼龍||https://image02.seesaawiki.jp/n/h/nai_ch/9a20b6208134fa68.png|
+|{{ai-generated}}, hiryuu &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|飛龍||https://image01.seesaawiki.jp/n/h/nai_ch/c62ff226948951ba.png|
+|{{ai-generated}}, akagi &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|赤城||https://image01.seesaawiki.jp/n/h/nai_ch/faa0ca9ff49136cd.png|
 |kaga &#40;kancolle), {{kaga kai ni &#40;kancolle)}}, side ponytail, brown eyes, black long hair,   {official alternate costume}, lawson, blue vertical-striped shirt, name tag, black pleated skirt, black thighhighs, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer,,{{{game cg}}},year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed,|trimmed thighhighs, japanese clothes, hakama,|艦隊これくしょん|加賀|ローソン|https://image01.seesaawiki.jp/n/h/nai_ch/yvyxUd2JdO.png|
 |kaga (kancolle), {{kaga kai ni (kancolle)}}, side ponytail, brown eyes, black long hair,   black thighhighs, short skirt, hakama skirt, japanese clothes,  , blue hakama, hakama,  (muneate, tasuki, partially fingerless gloves, brown single glove, simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer,,{{{game cg}}},year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed,||艦隊これくしょん|^||https://image01.seesaawiki.jp/n/h/nai_ch/BZ9dj44ts3.png|
-|{houshou (kancolle)}, breasts, black hair, pink kimono, long hair, hair ribbon, ponytail,||艦隊これくしょん|鳳翔||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/f76bd8a9d3383520.jpg)|
-|{ryuujou_(kancolle)},brown_hair,flat_chest,kariginu,black_skirt,||艦隊これくしょん|龍驤||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ad38373b2a850f00.jpg)|
+|{{ai-generated}}, houshou &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|鳳翔||https://image02.seesaawiki.jp/n/h/nai_ch/5e500c01fb0c2c5b.png|
+|{houshou (kancolle)}, breasts, black hair, pink kimono, long hair, hair ribbon, ponytail,||艦隊これくしょん|^||&ref(https://image02.seesaawiki.jp/n/h/nai_ch/f76bd8a9d3383520.jpg)|
+|{{ai-generated}}, ryuujou &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|龍驤||https://image02.seesaawiki.jp/n/h/nai_ch/fbf603e998fd1fb7.png|
+|{ryuujou_(kancolle)},brown_hair,flat_chest,kariginu,black_skirt,||艦隊これくしょん|^||&ref(https://image01.seesaawiki.jp/n/h/nai_ch/ad38373b2a850f00.jpg)|
 |}
 **重巡級
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|{{ai-generated}}, furutaka kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|古鷹|改二|https://image02.seesaawiki.jp/n/h/nai_ch/5ac5dc23ce74e0bc.png|
+|{{ai-generated}}, kako kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|加古|改二|https://image02.seesaawiki.jp/n/h/nai_ch/caf6810252d3174f.png|
 |{{suzuya &#40;kancolle)}}, alternate costume, aqua eyes, aqua long hair, hairclip, medium breasts,  white collared shirt, black pleated miniskirt, blue loose bowtie, pink cardigan, cleavage, white loose socks, white background, 1girl, solo, tachi-e, cowboy shot, from front, facing the front, looking at viewer, straight-on, close to viewer, official art, anime screencap, anime coloring, year 2024, very aesthetic, best quality, amazing quality, curated, highly detailed, cinematic light, dramatic lighting,||艦隊これくしょん|鈴谷_現代JKmode||https://image01.seesaawiki.jp/n/h/nai_ch/h1Nh3n_61G.png|
-|{{{{{{choukai &#40;kancolle)}}}}}},black hair, long hair, straight hair,blunt bangs,{{{darkred eyes}}}, glasses, {{{{emeraldgreen jacket}}}},{{white skir}}, large breasts,||艦隊これくしょん|鳥海|服装の再現はガチャ頼み。|https://image01.seesaawiki.jp/n/h/nai_ch/R3oTWLFrJL.png|
-|takao &#40;kancolle), short hair, red eyes,||艦隊これくしょん|高雄|アズレン高雄に超高確率で吸われるので髪型と目の色などを指定。不思議なことに、takao (kancolle) の代わりに、それっぽい short hair, blunt bangs, hair between eyes などでは代用が効きにくい。|https://image01.seesaawiki.jp/n/h/nai_ch/w9bUCh9bK9.png|
-|atago &#40;kancolle), blonde hair, messy hair, blue eyes,||艦隊これくしょん|愛宕|アズレン愛宕に高確率で吸われるので髪色と目の色など指定。ふわふわ髪型を再現するのにmessy hairをダメ押しに。|https://image01.seesaawiki.jp/n/h/nai_ch/K5l6REWv9A.png|
-|{{{maya_(kancolle)}}},brown hair,blue eyes, short hair, hair between eyes, x hair ornament, tsurime, sleeveless, beret, cleavage, green shirt, navel, pleated skirt, white skirt, kneehighs, black legwear,solo,||艦隊これくしょん|摩耶|意外と打率は低いのでガチャ必須。特に服装はなかなかしっくりこない|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LSzRembUdX.png)|
+|{{ai-generated}}, choukai kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|鳥海|改二|https://image01.seesaawiki.jp/n/h/nai_ch/cb4da2a23bf79618.png|
+|{{{{{{choukai &#40;kancolle)}}}}}},black hair, long hair, straight hair,blunt bangs,{{{darkred eyes}}}, glasses, {{{{emeraldgreen jacket}}}},{{white skir}}, large breasts,||艦隊これくしょん|^|服装の再現はガチャ頼み。|https://image01.seesaawiki.jp/n/h/nai_ch/R3oTWLFrJL.png|
+|{{ai-generated}}, takao &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|高雄||https://image02.seesaawiki.jp/n/h/nai_ch/cbd11ec87895393e.png|
+|takao &#40;kancolle), short hair, red eyes,||艦隊これくしょん|^|アズレン高雄に超高確率で吸われるので髪型と目の色などを指定。不思議なことに、takao (kancolle) の代わりに、それっぽい short hair, blunt bangs, hair between eyes などでは代用が効きにくい。|https://image01.seesaawiki.jp/n/h/nai_ch/w9bUCh9bK9.png|
+|{{ai-generated}}, atago &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|愛宕||https://image02.seesaawiki.jp/n/h/nai_ch/6dd068772d124cba.png|
+|atago &#40;kancolle), blonde hair, messy hair, blue eyes,||艦隊これくしょん|^|アズレン愛宕に高確率で吸われるので髪色と目の色など指定。ふわふわ髪型を再現するのにmessy hairをダメ押しに。|https://image01.seesaawiki.jp/n/h/nai_ch/K5l6REWv9A.png|
+|{{ai-generated}}, maya kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|摩耶|改二|https://image01.seesaawiki.jp/n/h/nai_ch/29990997d952851a.png|
+|{{{maya_(kancolle)}}},brown hair,blue eyes, short hair, hair between eyes, x hair ornament, tsurime, sleeveless, beret, cleavage, green shirt, navel, pleated skirt, white skirt, kneehighs, black legwear,solo,||艦隊これくしょん|^|意外と打率は低いのでガチャ必須。特に服装はなかなかしっくりこない|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/LSzRembUdX.png)|
 |}
 **軽巡級
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|{{ai-generated}}, tatsuta kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|龍田|改二|https://image02.seesaawiki.jp/n/h/nai_ch/74710e38921664b2.png|
+|{{ai-generated}}, tenryuu kai ni &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|天龍|改二|https://image02.seesaawiki.jp/n/h/nai_ch/c6a260e30e237531.png|
 |{{kashima &#40;kancolle)}}, blue eyes, medium &#91;&#91;&#91;large]]] breasts, twintails, wavy grey hair,{official alternate costume}, lawson, blue vertical-striped shirt, name tag, black beret, black pleated skirt, black socks, ,simple background, white background, ,1girl, solo, ,cowboy shot,,from front, facing the front, looking at viewer, straight-on, close to viewer,,{{{game cg}}},year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed,"||艦隊これくしょん|鹿島|ローソン|https://image01.seesaawiki.jp/n/h/nai_ch/JLonZ34OER.png|
 |{{kashima (kancolle)}}, blue eyes, medium &#91;&#91;&#91;large]]] breasts, twintails, wavy grey hair, military uniform, dark grey shirt, collared shirt, dark beret, epaulettes, jacket, long sleeves, red neckerchief, pleated grey skirt, white gloves, simple background, white background, 1girl, solo, cowboy shot, from front, facing the front, looking at viewer, straight-on, close to viewer, {{{game cg}}}, year 2023, very aesthetic, best quality, amazing quality, curated, illustration, highly detailed||艦隊これくしょん|^||https://image01.seesaawiki.jp/n/h/nai_ch/L0wgrVm2qh.png|
 |{{{yahagi &#40;kancolle)}}},slender,black hair,long hair, middle breasts, ponytail,  red eyes,,black sailor collar, school uniform, serafuku, sleeveless shirt , navel, white gloves, &#40;midriff necktie, black necktie,) &#40;pleated skirt, red skirt,) asymmetrical legwear, garter straps,,1girl, solo, ,cowboy shot,,year 2023,,very aesthetic, best quality, amazing quality, ,curated, illustration, highly detailed, absurdres,  white||艦隊これくしょん|矢矧||https://image01.seesaawiki.jp/n/h/nai_ch/VRinJFjl2d.png|
@@ -90,9 +110,15 @@
 **潜水艦
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|official style, {{ai-generated}}, i-26 &#40;kancolle), {{{kancolle}}}, standing, simple background, full body, swimsuit,||艦隊これくしょん|伊26||https://image01.seesaawiki.jp/n/h/nai_ch/fa420a87de3f2fe9.png|
+|official style, {{ai-generated}}, maru-yu &#40;kancolle), {{{kancolle}}}, standing, simple background, full body, swimsuit,||艦隊これくしょん|まるゆ||https://image01.seesaawiki.jp/n/h/nai_ch/e0258bf25bce9df0.png|
+|official style, {{ai-generated}}, i-58 &#40;kancolle), {{{kancolle}}}, standing, simple background, full body, swimsuit,||艦隊これくしょん|伊58||https://image02.seesaawiki.jp/n/h/nai_ch/ccd8e61e43ed084c.png|
+|official style, {{ai-generated}}, i-8 &#40;kancolle), {{{kancolle}}}, standing, simple background, full body, swimsuit,||艦隊これくしょん|伊8||https://image02.seesaawiki.jp/n/h/nai_ch/b06044f3428873f4.png|
+|official style, {{ai-generated}}, i-19 &#40;kancolle), {{{kancolle}}}, standing, simple background, full body, swimsuit,||艦隊これくしょん|伊19||https://image02.seesaawiki.jp/n/h/nai_ch/cd642dd6c23c9384.png|
+|official style, {{ai-generated}}, i-168 &#40;kancolle), {{{kancolle}}}, standing, simple background, full body, swimsuit,||艦隊これくしょん|伊168||https://image02.seesaawiki.jp/n/h/nai_ch/5de8812db5a86102.png|
 |official style, game cg , i-400 (kancolle) , kantai collection, very aesthetic, best quality, intricate, overall detail, nsfw, 1girl, black hair, long hair, purple eyes, orange sailor collar, orange neckerchief, white sailor shirt, school swimsuit, bare arms, bare legs, barefoot, sitting, yokozuwari, arms support, simple background, looking at viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, {{{{rigging, weapon, shadow, backlighting}}}},|艦隊これくしょん| 伊400|V3使用。V3で艦娘を出そうとすると艤装が付属することが多い。出したくない場合はネガにrigging（艤装）, weapon（武器）, を入れればほぼ出なくなる。|https://image01.seesaawiki.jp/n/h/nai_ch/jegcZM7VYk.png|
-|{{{{ro-500 &#40;kancolle)}}}}, school swimsuit, {{{{{{{dark_skin}}}}}, small breasts, long hair, {{{sailor_suit}}}, sakura hair ornament, school swimsuit tan, darkblue eyes, platinum blonde hair,|white skin,pure skin|艦隊これくしょん|呂500||https://image01.seesaawiki.jp/n/h/nai_ch/xYPEh3NCw3.png|
+|official style, {{ai-generated}}, ro-500 &#40;kancolle), {{{kancolle}}}, standing, simple background, full body, swimsuit,||艦隊これくしょん|呂500||https://image02.seesaawiki.jp/n/h/nai_ch/3c1cf026be14ffe9.png|
+|{{{{ro-500 &#40;kancolle)}}}}, school swimsuit, {{{{{{{dark_skin}}}}}, small breasts, long hair, {{{sailor_suit}}}, sakura hair ornament, school swimsuit tan, darkblue eyes, platinum blonde hair,|white skin,pure skin|艦隊これくしょん|^||https://image01.seesaawiki.jp/n/h/nai_ch/xYPEh3NCw3.png|
 |}
 **補助艦艇
 {| class="sort edit nanj_prompt_table"
@@ -100,19 +126,77 @@
 |{{ai-generated}}, kamoi &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|神威||https://image01.seesaawiki.jp/n/h/nai_ch/f46ebada2937c458.png|
 |}
 **海外艦
+***アメリカ艦
 {| class="sort edit nanj_prompt_table"
 |~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
-|||||||
+|official style, game cg,iowa&#40;kancolle),girl||艦隊これくしょん|アイオワ|4.5|https://image01.seesaawiki.jp/n/h/nai_ch/9cd8f485140a7e00.png|
+|}
+***イギリス艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, {{ai-generated}}, warspite &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|ウォースパイト||https://image01.seesaawiki.jp/n/h/nai_ch/a813525ddc6e1286.png|
+|}
+***イタリア艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
 |official style, {{ai-generated}}, Scirocco &#40;kancolle), {{{kancolle}}}, uniform, standing, simple background,||艦隊これくしょん|シロッコ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/aa8f906edab0e2f0.png|
 |official style, {{ai-generated}}, Libeccio &#40;kancolle), {{{kancolle}}}, uniform, standing, simple background,||艦隊これくしょん|リベッチオ|V4.5 Full|https://image01.seesaawiki.jp/n/h/nai_ch/2639a0b2bde9930d.png|
 |official style, {{ai-generated}}, grecale &#40;kancolle), {{{kancolle}}}, uniform, standing, simple background,||艦隊これくしょん|グレカーレ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/07341b764820d91a.png|
 |official style, {{ai-generated}}, maestrale (kancolle), {{{kancolle}}}, uniform, standing, simple background, ||艦隊これくしょん|マエストラーレ|V4.5 Full|https://image02.seesaawiki.jp/n/h/nai_ch/7922a6ec3846077e.png|
-|official style, game cg,iowa&#40;kancolle),girl||艦隊これくしょん|アイオワ|4.5|https://image01.seesaawiki.jp/n/h/nai_ch/9cd8f485140a7e00.png|
-|{1girl is z1 leberecht maass &#40;kancolle)},blue eyes,long sleeve sailor micro dress||艦隊これくしょん|z1 レーベレヒト・マース|V3版。服は指定しなくても出てくれるが、海などでは水着が優先するため、指定してある。以前は出なかった模様まで再現されている。|https://image01.seesaawiki.jp/n/h/nai_ch/eamTfvSrPF.png|
-|z3 max schultz &#40;kancolle), dark red short hair, sidelocks, blunt bangs, yellow eyes, tsurime, small breasts, loli, dark blue clothes, long sleeve sailor micro dress, tight clothes, jet black Plain socks, navy blue, slender, bottomless, jet black Plain socks, dark blue beret, slender||艦隊これくしょん|z3 マックス・シュルツ|服の模様は書き足すしかないと思う。|https://image02.seesaawiki.jp/n/h/nai_ch/rQCXkv96tF.png|
-|{{{gangut &#40;kancolle)}}}, long hair, hair between eyes, orange eyes,  medium breasts, red dress shirts, short sleeves, {{{black skirt}}}, {{{tights}}}, hairpin,  &#91;&#91;smirk]],|{{{{{forehead, hairline}}}}}, {{{{{loli}}}}}, lipstick, bismarck, graf zeppelin, headgear, necktie, hairband|艦隊これくしょん|ガングート|現状はそれっぽい人が限界。コートや帽子を付けると、他の艦これキャラ（主にドイツ艦）に顔と服が吸われまくる。顔の傷は出ない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xtfYSt9bXM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xtfYSt9bXM.png]]|
 |{{nsfw}}, {{masterpiece}}, {{highly detailed}}, {{white background}}, {{{{{two side up}}}}}, oppai loli, {small body}, {{{large breasts}}},   antiquewhite hair, long hair, {{gray eyes}}, {{white hair elastic}}, love live!,|one side up, side ponytail, {{{small breasts}}}, minami kotori, lip,|艦隊これくしょん|コンテ・ディ・カブール|small bodyとlarge breastsがお互いに食いあって上手く機能してない気がする。ネガティブプロンプトにone side up,side ponytailを入れてもツーサイドアップが死ぬほど出ない。原作ではツーサイドアップを後頭部付近でまとめているためガチャが必要。ネガティブプロンプトのminami kotoriは個人的に絵柄固定で使用しているlove live!プロンプトの影響で髪型が引っ張られるのを防ぐお守りなので適宜外すこと。|https://image02.seesaawiki.jp/n/h/nai_ch/8R0wqk7Z9V.png|
 |{{solo}}, kantai collection, kanmusu, a girl, {conte di cavour nuovo (kancolle)}, {{look 11-years-old}}, {{{short stature}}}, {{baby face}}, {{{oppai loli}}}, {{{disproportionate breasts}}}, {{gigantic breasts}}, {{silver hair}}, {{two side up}}, super long hair, asymmetrical bangs, {{dark silver eyes}}, googly eyes, {{white frilled sleeveless shirt}}, cleavage, {{light gray corset}}, {{white skirt}}, {{frilled white globe}}, {innocent smile_(open mouth)}, {{{beautiful detailed eyes}}}, {{anime}}, {{ultra-detailed}},||艦隊これくしょん|^|調教が進んだのか conte di cavour nuovo (kancolle) もしくは conte di cavour (kancolle) を入れるとそれらしいのが出やすくなる(ただしそれだけでは出ない)。ツーサイドアップはガチャ要素あるが上記より安定する。身長の高くない巨乳少女を描く場合は small body より 年齢設定+ short stature の方を使い、disproportionate breasts (不釣り合いなバスト)を組み合わせるほうが効果的。|&ref(https://image01.seesaawiki.jp/n/h/nai_ch/OHd4iGcFjs.png)|
+|}
+***オーストラリア艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, {{ai-generated}}, perth (kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|パース||https://image02.seesaawiki.jp/n/h/nai_ch/21eb8b100ac0da54.png|
+|}
+***オランダ艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, {{ai-generated}}, de ruyter &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|デ・ロイテル||https://image02.seesaawiki.jp/n/h/nai_ch/bc68b9dc680cd4a4.png|
+|}
+***スウェーデン艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, {{ai-generated}}, gotland &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|ゴトランド||https://image02.seesaawiki.jp/n/h/nai_ch/16955c8357edc92f.png|
+|}
+***ドイツ艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, {{ai-generated}}, u-511 &#40;kancolle), {{{kancolle}}}, standing, simple background, full body, swimsuit,||艦隊これくしょん|U-511||https://image01.seesaawiki.jp/n/h/nai_ch/b4e5b8c0f158ceb1.png|
+|{1girl is z1 leberecht maass &#40;kancolle)},blue eyes,long sleeve sailor micro dress||艦隊これくしょん|z1 レーベレヒト・マース|V3版。服は指定しなくても出てくれるが、海などでは水着が優先するため、指定してある。以前は出なかった模様まで再現されている。|https://image01.seesaawiki.jp/n/h/nai_ch/eamTfvSrPF.png|
+|z3 max schultz &#40;kancolle), dark red short hair, sidelocks, blunt bangs, yellow eyes, tsurime, small breasts, loli, dark blue clothes, long sleeve sailor micro dress, tight clothes, jet black Plain socks, navy blue, slender, bottomless, jet black Plain socks, dark blue beret, slender||艦隊これくしょん|z3 マックス・シュルツ|服の模様は書き足すしかないと思う。|https://image02.seesaawiki.jp/n/h/nai_ch/rQCXkv96tF.png|
+|}
+***フランス艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|official style, {{ai-generated}}, gotland &#40;kancolle), {{{kancolle}}}, standing, simple background, full body,||艦隊これくしょん|リシュリュー||https://image01.seesaawiki.jp/n/h/nai_ch/479dcad7a37812b0.png|
+|}
+***ロシア艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|{{{gangut &#40;kancolle)}}}, long hair, hair between eyes, orange eyes,  medium breasts, red dress shirts, short sleeves, {{{black skirt}}}, {{{tights}}}, hairpin,  &#91;&#91;smirk]],|{{{{{forehead, hairline}}}}}, {{{{{loli}}}}}, lipstick, bismarck, graf zeppelin, headgear, necktie, hairband|艦隊これくしょん|ガングート|現状はそれっぽい人が限界。コートや帽子を付けると、他の艦これキャラ（主にドイツ艦）に顔と服が吸われまくる。顔の傷は出ない。|[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/xtfYSt9bXM-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/xtfYSt9bXM.png]]|
+|}
+***中華民国艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
+|}
+***アルゼンチン艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
+|}
+***ノルウェー艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
+|}
+***タイ艦
+{| class="sort edit nanj_prompt_table"
+|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):作品|~w(100px):キャラ|~w(100px):備考|サンプル|
+|||||||
 |}
 **深海棲艦
 {| class="sort edit nanj_prompt_table"
@@ -134,6 +218,29 @@
 |official style, game cg, wo-class aircraft carrier, kantai collection, very aesthetic, best quality, intricate, overall detail, nsfw, 1girl, blue eyes, standing, simple background, front view, facing the front, close to viewer, full body, face focus, intricate, hyper-detailed, 100-layer, amazing quality, excellent, {{{{ultra-high resolution}}}}, {{{hi-vision anime}}},|3d, poorly drawn, lowers, blurry, bokeh, worst quality, low quality, out of focus, ugly, error, jpeg artifacts, {{censor, bar censor}}, mosaic censorship, puffy nipples, extra digits, long body, cubism, bad anatomy, disfigured, poorly drawn, deformed, mutation, style of ai generated, |艦隊これくしょん|空母ヲ級|V3使用。|https://image01.seesaawiki.jp/n/h/nai_ch/sGhTfnr84R.png|
 |solo, {{{{wo-class aircraft carrier}}}}, &#91;&#91;&#91;&#91;kantai collection&#93;&#93;&#93;&#93;, gray hair, wavy long hair, pale skin, blue eyes, black cape, black gloves, medium breasts, cowboy shot, |black dress, red horn,|^|^||[[&ref(https://image01.seesaawiki.jp/n/h/nai_ch/wjTcXNnhzx-s.png)>https://image01.seesaawiki.jp/n/h/nai_ch/wjTcXNnhzx.png]]|
 |}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
