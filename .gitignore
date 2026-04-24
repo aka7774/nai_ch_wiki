@@ -128,6 +128,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# Managed by discord-akari as an external data source manifest.
+manifest.yaml
+
 # Spyder project settings
 .spyderproject
 .spyproject
