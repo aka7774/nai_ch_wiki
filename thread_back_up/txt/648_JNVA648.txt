@@ -1,0 +1,284 @@
+なんJNVA部★648
+
+1 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった  (ﾜｯﾁｮｲ 0fb0-daN5) 2026/05/14(木) 22:13:51.19
+ !extend:default:vvvvv:1000:512:donguri=0/3: <br> !extend:default:vvvvv:1000:512:donguri=0/3: <br> スレ立てのときは↑の!extend:default:vvvvv:1000:512:donguri=0/3:を3行ぐらいに増やしてな <br> なんJNVA部Wiki: https://seesaawiki.jp/nai_ch/d/ <br> Danbooru謹製タグ辞典: https://danbooru.donmai.us/posts?tags=tag_groups <br> 避難所: http://bbs.jpnkn.com/test/read.cgi/JNVA/1696574746/ <br> 避難所: ぷにぷにNVA部★28 http://bbs.punipuni.eu/test/read.cgi/vaporeon/1776380569/ <br> ※前スレ <br> なんJNVA部★647 <br> https://fate.5ch.io/test/read.cgi/liveuranus/1778461307/ VIPQ2_EXTDAT: default:vvvvv:1000:512:donguri=0/3: EXT was configured 
+
+2  <span style="color:green;">警備員[Lv.36]</span> (ﾜｯﾁｮｲ cbb0-daN5) 2026/05/14(木) 22:15:17.52
+ ■アップローダーについて <br> 「megaの復号キーが分からん」…「#」以下も含めたURL全体をコピペして飛べ <br> https://imgur.com/…メタデータは削除される。自分が上げた画像を一覧したい（要ログイン）ときに。エロNG。webp非対応 <br> https://ul.h3z.jp/…エロOK。ただし性器を見せびらかすような表現は修正ありでもNG。EXIFは削除されるがメタデータは削除されない <br> https://catbox.moe/…2026年4月24日ごろ、litterも含めたURLが5chのNGワードに登録された。メタデータ入りの画像を貼りたい、自分が上げた画像を一覧したい（要ログイン）ときに。エロや画像以外もOK。やや不安定で閲覧やログインできない時がある <br> https://imgbb.com/…メタデータ入りの画像を貼りたい、自分が上げた画像を一覧したい（要ログイン）ときに。エロNGだがある程度までは黙認。画像のURLにはアップした画像のファイル名がそのまま使われるが、URL末尾のファイル名の部分は適当な文字列に変更してもかまわない <br> https://tadaup.jp/…EXIFは削除されるがメタデータは削除されない。アップロードした画像は1時間／1日／1週間で削除される（アップ時に選択）。ユーザー登録すると自分が上げた画像を一覧できる。18禁画像を上げるとき用のチェックボックスがある <br> ※NovelAIの画像生成情報はPNGのメタデータだけでなくアルファチャンネルにも埋め込まれており、imgurやh3zに上げてもアルファチャンネルに埋め込まれた生成情報は残る <br> ■ponyXLについて https://seesaawiki.jp/nai_ch/d/PonyDiffusionV6XLTips <br> ■FLUX.1について https://seesaawiki.jp/nai_ch/d/FLUX1tips <br> ■Illustrious-XL-v0.1について https://seesaawiki.jp/nai_ch/d/illustrious_xl_01tips <br> ■animaについて https://seesaawiki.jp/nai_ch/d/anima 
+
+3  <span style="color:green;">警備員[Lv.36]</span> (ﾜｯﾁｮｲ cbb0-daN5) 2026/05/14(木) 22:15:49.14
+ ■どんぐり最低限説明（ https://donguri.5ch.net/faq 、 https://donguri.wikiru.jp/ も参照） <br> Q.レベルが上がらねえぞ　→　A.時間経過と書き込み数で上がる。スマホや回線によってはよく0に戻る。 https://seesaawiki.jp/nai_ch/d/donguri を読んでどんぐりログインしどんぐりネームを変更するとレベルが下がらなくなる <br> Q.どんぐりはなくなったの?　→　2025年10月13日に運営から「どんぐりシステムをサスペンドする」と発表があった。すべてのスレはどんぐりレベルによらず書き込めるようになり、大砲でレベルが下がることもなくなった <br> ■その他 <br> Q.ComfyUIのインストール方法がたくさんあってどれがいいのかわからない　→　https://note.com/hirorohi03/n/n1aa02e7ce276 を参照 <br> Q.EasyWan22ってどう?　→　推奨しない。メンテされなくなってしばらく経ち、現在はインストールに失敗する <br> Q.なんか久々にA1111使ったら生成がクソ遅いぞ！　→　A.まずは旧Lycorisの拡張機能を消せ。話はそれからだ <br> Q.グラボの型番について書きたいのにエラーが出る　→　A.4桁の半角数字は回線によっては書き込めない。全角にしたりゼロをオーにするなどで書き込める <br> Q.&#127880;ってなに?　→　https://seesaawiki.jp/nai_ch/d/%b8%c5%bb%f6%b5%ad#content_4_136 を参照 <br> Q.部族語ってなに?　→　danbooruタグを並べたようなプロンプトのこと。 https://fate.5ch.io/test/read.cgi/liveuranus/1755257819/970 を参照 
+
+4  <span style="color:green;">警備員[Lv.36]</span> (ﾜｯﾁｮｲ cbb0-daN5) 2026/05/14(木) 22:17:27.21
+ &gt;&gt;2の「NAIの生成情報は」を「NovelAIの画像生成情報は」に書き換えたで <br> https://i.ibb.co/vxmF64W0/image.jpg 
+
+5 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6dc8-bXZ+) 2026/05/14(木) 22:19:22.34
+ さんいち <br> https://tadaup.jp/5FUkhogV.jpg <br> https://tadaup.jp/5g7NUymj.jpg <br> https://tadaup.jp/5kZtWL8j.jpg <br> https://tadaup.jp/5HwKzeSm.jpg <br> https://tadaup.jp/5nZ7vGVo.jpg 
+
+6 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cd6d-ZdMb) 2026/05/14(木) 22:21:44.73
+ 結構メタデータ残ったままみんな投稿しとるんやな <br> https://aitag.win/?q=NAI&sort=monthly&time_range=current 
+
+7  <span style="color:green;">警備員[Lv.79][SSR武][UR防][苗]</span> (ﾜｯﾁｮｲ 956e-daN5) 2026/05/14(木) 22:26:56.16
+ サンイチ <br> https://tadaup.jp/5XtqeAn2.webp 
+
+8 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新芽]</span> (ﾜｯﾁｮｲ cd76-QVRh) 2026/05/14(木) 22:29:58.00
+ サンイチ <br> 本当かどうか分からんがAIに聞いたら階層はこういう感じと言われた <br> 最初はコピロットにきいてこれで合ってるのかジェミニに聞いたら合ってると言われたが雰囲気でやってるだけの素人なんでこれがハルシネーションなのかどうか調べようがない <br> まぁ参考程度に <br> https://i.imgur.com/I0ktNks.png <br> https://i.imgur.com/fol4AOE.jpeg 
+
+9  <span style="color:green;">警備員[Lv.159][UR武][SSR防][苗]</span> (ﾜｯﾁｮｲ 95fa-Tp+8) 2026/05/14(木) 22:30:06.65
+ サンイチ <br> https://i.ibb.co/PzVBb37d/Upload-0514.jpg 
+
+10 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ 6da1-WwNH) 2026/05/14(木) 22:31:24.86
+ &gt;&gt;6 <br> どれもこれも「続きはPatreonで！」とかばっかやなあ <br> ロリ系は似たようなタグやねやっぱり 
+
+11 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ 9567-4+fg) 2026/05/14(木) 22:40:48.69
+ &gt;&gt;6 <br> サンガツ <br> 参考にするわ 
+
+12 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.30]</span> (ﾜｯﾁｮｲ 2b23-Zxmt) 2026/05/14(木) 22:48:57.36
+ &gt;&gt;8 <br> さすがAI全然アカンな <br> 仕事するフリだけは一人前や 
+
+13 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6dd2-ZdMb) 2026/05/14(木) 23:01:19.17
+ サンイチ <br> https://i.imgur.com/WN7qGqe.jpeg 
+
+14  <span style="color:green;">警備員[Lv.94][UR武][UR防限][苗]</span> (ﾜｯﾁｮｲ 0b9f-5Mhm) 2026/05/14(木) 23:02:43.94
+ サンガツ <br> AIにエラー投げまくりながらやっとIrodoriのLora学習スタートできたわ <br> なんもわからんがとりあえずプリセットで実行や <br> https://i.imgur.com/Zuj7zI2.png 
+
+15 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ cdfa-Aq79) 2026/05/14(木) 23:26:25.47
+ サンイチ 
+
+16  <span style="color:green;">警備員[Lv.30]</span> (ﾜｯﾁｮｲ c585-qsYB) 2026/05/14(木) 23:29:33.54
+ サンイチ <br> https://i.ibb.co/vvPmGL7h/20260514232253-00001.webp 
+
+17 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][芽]</span> (ﾜｯﾁｮｲ 6d10-vLh2) 2026/05/14(木) 23:42:11.08
+ サンイチ <br> https://tadaup.jp/5AImvgwJ.mp4 
+
+18 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.270][木]</span> (ﾜｯﾁｮｲ 6d88-6iv5) 2026/05/14(木) 23:43:44.67
+ https://ul.h3z.jp/AVbgVS4z.jpeg <br> 賛意智の夢 
+
+19 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6dc3-5Mhm) 2026/05/14(木) 23:50:17.24
+ サンイチ <br> 夏が近づいてきたで… <br> https://tadaup.jp/5vHU2Nkv.png 
+
+20 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 9dc7-8UCK) 2026/05/14(木) 23:50:56.80
+ サンイチ <br> https://tadaup.jp/5mlJPnEZ.jpg 
+
+21 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.30]</span> (ﾜｯﾁｮｲ aba2-8UCK) 2026/05/14(木) 23:56:10.06
+ いちおつ <br> ２０で保守はもういいんだっけ？ 
+
+22 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ｱｳｱｳｳｰ Sac9-ms+4) 2026/05/14(木) 23:56:49.23
+ さんいち <br> https://i.imgur.com/qIGkJUl.jpeg 
+
+23 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 23d6-8UCK) 2026/05/15(金) 00:07:50.75
+ https://ul.h3z.jp/m/ixJlBZ.webp <br> LoRAのアイデアが出ない発想力貧弱民や 
+
+24 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cdc9-8UCK) 2026/05/15(金) 00:21:10.87
+ やっぱりオパ子、100s持っても大丈夫！（自作画風LORAテスト） <br> https://i.ibb.co/VpTmQhhZ/2026-05-14-15-17-33-3905527315-0.png 
+
+25 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 6d9f-nMjY) 2026/05/15(金) 00:27:09.74
+ &gt;&gt;23 <br> なかなか良い電車やな <br> (よくみると吊り革の位置が外側すぎるが…) <br> animaでも電車内はなかなか綺麗にでないんご 
+
+26 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 834f-hx53) 2026/05/15(金) 00:28:16.69
+ 仕事行きたく無いンゴ <br> 生成したいよーパチンコレベルの中毒性ある気がする 
+
+27 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 2b0c-xLPW) 2026/05/15(金) 00:30:34.18
+ サンイチ <br> 最近はもうえっちな画像生成するために新しいゲームやアニメを嗜んでいるわ <br>  <br> https://ul.h3z.jp/m/UP49Nw.jpg 
+
+28 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 6dd2-ZdMb) 2026/05/15(金) 00:33:47.89
+ 酔っれないれすよぉ、みたいな <br> https://i.imgur.com/EcPve1v.jpeg 
+
+29 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 834f-hx53) 2026/05/15(金) 00:34:08.52
+ さくら　ともよ　なのは　フェイトばかり生成して <br> 俺の時は止まったようだ 
+
+30 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.45]</span> (ﾜｯﾁｮｲ 05d2-5Mhm) 2026/05/15(金) 00:42:58.07
+ サンイチ　ヒロアカ最終話の続き <br> https://tadaup.jp/5q8X3h2H.jpg　https://tadaup.jp/5cPCBz9H.jpg　https://tadaup.jp/5egkHe7L.jpg <br> https://tadaup.jp/5sgej7UL.jpg　https://tadaup.jp/5koLCpaz.jpg　https://tadaup.jp/5S9T5pef.jpg <br> https://tadaup.jp/5tvDrwUM.jpg　https://tadaup.jp/5jnQTIUs.jpg　https://tadaup.jp/5razLXkv.jpg <br> https://tadaup.jp/5I6f8sVK.jpg　https://tadaup.jp/5twJyn6O.jpg　https://tadaup.jp/5uyuO4th.jpg <br> https://tadaup.jp/5ugiq8Tk.jpg　https://tadaup.jp/5gmiu0Vp.jpg　https://tadaup.jp/5BbDukom.jpg <br> https://tadaup.jp/5jOucys0.jpg　https://tadaup.jp/5vsqU1zB.jpg　https://tadaup.jp/5nF0bQ3p.jpg <br> https://tadaup.jp/5pDZio87.jpg　https://tadaup.jp/5DlCMA63.jpg　https://tadaup.jp/5c3qoHE0.jpg <br> https://tadaup.jp/5EQU3Rz4.jpg　https://tadaup.jp/5osF2Tg6.jpg　https://tadaup.jp/5eai8YdN.jpg <br> https://tadaup.jp/5rA43x1L.jpg　https://tadaup.jp/5OlU9bx4.jpg 
+
+31 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cdf8-qYQX) 2026/05/15(金) 00:44:19.93
+ オリキャラ生成のためにAIやってるわ <br> 版権は手描きにせよAIにせよ誰かが描いてくれる 
+
+32 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ ed8e-1r1h) 2026/05/15(金) 00:57:44.43
+ 前スレで話題になってたNeoForge用のSuperMerger使ってみたけどなんか普通にエラー吐かれたンゴ…&quot;Lora_in_memory_limit&quot;ってなんなんや 
+
+33 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.117][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ cdb2-8Xlw) 2026/05/15(金) 01:11:46.14
+ 久々のサンイチ <br> https://ul.h3z.jp/lDESPtma.jpg 
+
+34 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 4b6f-vLh2) 2026/05/15(金) 01:13:54.23
+ &gt;&gt;30 <br> グロ 
+
+35 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6]</span> (ﾜｯﾁｮｲ cd00-ZdMb) 2026/05/15(金) 01:14:07.60
+ サンイチ <br> https://tadaup.jp/5FCTfpJo.mp3 
+
+36 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cd74-5Mhm) 2026/05/15(金) 01:15:10.59
+ サンイチ <br> https://i.imgur.com/TaLgRD6.png 
+
+37  <span style="color:green;">警備員[Lv.95][UR武][UR防限][苗]</span> (ﾜｯﾁｮｲ 0b9f-5Mhm) 2026/05/15(金) 01:18:31.88
+ 初Irodori学習終わった <br> リファレンスだけでもすごかったのにLoraだとかなり学習元に近づくな……設定詰めれば聞き分けつかないところまで持っていけるんじゃないかこれ 
+
+38 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.80][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ 1b7d-8UCK) 2026/05/15(金) 01:51:17.55
+ ComfyUIのLTX2.3公式ワークフローで初LTXで10EROS触れてみて <br> 日本語喋らせることは出来たんだけど <br> 同時に高確率で字幕だしてくるんだけど <br> どうやって抑制するの？　 <br> 字幕は絶対に表示しないとか記載しても出てくる <br> このフローだとネガティブもないし 
+
+39  <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ cd85-5Mhm) 2026/05/15(金) 01:52:37.06
+ 前スレのlora-browserニキありがとうやでDLさせてもろた！ <br> https://fate.5ch.io/test/read.cgi/liveuranus/1778461307/953 <br>  <br> UIほか動いたで <br> タグ機能や編集がしやすそうやね！GUI派のワイ大喜びや <br> だけどワイの環境やとシンボリック使っててloraが表示されん感じや… <br> すごく便利そうなんで対応してくれると有り難いんやがお願いできるやろか？ 
+
+40 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 95c5-PiR/) 2026/05/15(金) 02:05:53.66
+ anima-base1.0来たぞ！ 
+
+41 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6d4d-t8Oe) 2026/05/15(金) 02:08:23.42
+ ついにpreview外れたのか 
+
+42 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.14]</span> (ﾜｯﾁｮｲ 2341-5Mhm) 2026/05/15(金) 02:10:47.15
+ ゲームエンドな 
+
+43 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cdff-5Mhm) 2026/05/15(金) 02:13:28.78
+ ゲームエンドには識者達の知見が必要 <br> とりあえずpre3と同じ設定でlora作ってみるか……？ 
+
+44 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span> (ﾜｯﾁｮｲ 238f-ms+4) 2026/05/15(金) 02:13:39.76
+ 週間ゲームエンド 
+
+45 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.41][苗]</span> (ﾜｯﾁｮｲ ed07-8UCK) 2026/05/15(金) 02:15:05.18
+ 1536までいけるんか 
+
+46 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cd89-5Mhm) 2026/05/15(金) 02:19:49.34
+ とりあえずファインチューン選手権の始まり <br> 一番有能なやつを使うぜ 
+
+47 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 6d07-8UCK) 2026/05/15(金) 02:22:48.79
+ サンイチ <br>  <br> https://i.imgur.com/OYPux10.jpeg 
+
+48 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.41][苗]</span> (ﾜｯﾁｮｲ ed07-8UCK) 2026/05/15(金) 02:23:06.15
+ p1&#65374;3まで結局一番有能だったのは公式モデルだったからなぁ･･･ 
+
+49 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2083][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 23ed-5ZZK) 2026/05/15(金) 02:24:47.06
+ animaが出た初日みんなで512だし作例もぜんぜんダメと言われていたanimaが <br> あれだけの性能を引き出してbaseになったのは感慨深いな 
+
+50 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2083][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 23ed-5ZZK) 2026/05/15(金) 02:27:31.46
+ ﾜｲも公式がベストやと思うやで <br> リアスの顔で馴染みがあるマージならそれのモデルがベストやろうけど <br> その代わりそれなりにプロンプト解釈に足枷がつくのもanimaの特長 
+
+51 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ cdc9-8UCK) 2026/05/15(金) 02:36:52.27
+ ゲームエンドきたああああ 
+
+52 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cd1f-5Mhm) 2026/05/15(金) 02:37:24.38
+ 新animaきたのか　寝るから検証しといて 
+
+53 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6d4c-RuT0) 2026/05/15(金) 02:38:24.28
+ プレビュー消えたからそろそろ手を出すか… 
+
+54 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2083][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 23ed-5ZZK) 2026/05/15(金) 02:39:10.70
+ 2026年初夏なのにanimagine 3.1で今作ってサンイチ <br> 魔神なんてanimaから入った人には遺物なんやろうなぁ <br> https://tadaup.jp/5CFurtM1.jpg <br>  <br> さて、anima-baseやってみるか 
+
+55 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ 23d6-8UCK) 2026/05/15(金) 02:41:37.31
+ 本家のプロンプト追従度が高すぎてFTは絵柄安定くらいしかやれることなかった・・・とはいえv1.0はわからンゴ <br> 今Qwen3.6落としてるからanimaは明日や <br> 生きる気力が湧いてきたで 
+
+56 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 6dc3-5Mhm) 2026/05/15(金) 02:42:21.51
+ anima-base1.0ついにきたんか…！ <br> ついにSDXLとお別れする日がきてしまったんやなって… 
+
+57 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 6d07-8UCK) 2026/05/15(金) 02:46:10.04
+ Web民わい高みの見物、あまりに別物だったらanimaが使えるサイトに乗り換えるかねー、 <br> tensorhubとか？あそこたしかanimaいけたと思う 
+
+58  <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 9dd0-ZdMb) 2026/05/15(金) 02:51:46.41
+ anima来てて金玉がドクドクして来た 
+
+59 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4]</span> (ﾜｯﾁｮｲ 35cd-2ayS) 2026/05/15(金) 02:59:25.44
+ Anima正式きてるじゃねーか！！！！111111 <br> 寝ようと思ったのに！！！！！！！！！！11111 
+
+60  <span style="color:green;">警備員[Lv.31]</span> (ﾜｯﾁｮｲ c585-qsYB) 2026/05/15(金) 03:03:50.40
+ hires loraが差分loraやったことがよう分かるな <br> https://i.ibb.co/hRT8mGwm/xyz-plot-20260515025310-00001.webp <br> https://i.ibb.co/BVtm7DBL/xyz-plot-20260515025914-00001.webp 
+
+61 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 6d4d-t8Oe) 2026/05/15(金) 03:03:56.56
+ 具体的に何が変わったのか書かれてへんな <br> 一応1536まで対応とは書かれとるけど 
+
+62 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6d7f-8UCK) 2026/05/15(金) 03:07:45.47
+ スケジュール構文とか使わんでも絵柄混ぜが安定するようになったかもしれん 
+
+63 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2083][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 23ed-5ZZK) 2026/05/15(金) 03:13:20.44
+ 最近LTXしか触ってないからanimaご無沙汰やけど <br> anima-base-v1.0 <br> https://tadaup.jp/5CIDUqgE.jpg <br> p1と比べたら高解像度でも綺麗やね <br> やはりプロンプトだけで複数人に正確な指示ができるのはさすがやな 
+
+64 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 6d07-8UCK) 2026/05/15(金) 03:19:23.07
+ 愛宕と孝雄とか割と属性混ざりそうなのもちゃんと出てるならすげーなぁ 
+
+65 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.37]</span> (ﾜｯﾁｮｲ cba0-5Mhm) 2026/05/15(金) 03:22:26.47
+ 終わる？終わるの？ 
+
+66 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2083][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 23ed-5ZZK) 2026/05/15(金) 03:22:50.81
+ &gt;&gt;64 <br> 「出てるなら」ということはうまく出てないんやな <br> ﾜｲ未プレイやからどこまで合ってるかわからんのよ、雰囲気あって巨乳ならいいじゃん派 <br> pantyhoseにthighbeltつきにくいのは嬉しいところ 
+
+67 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 6d07-8UCK) 2026/05/15(金) 03:26:44.16
+ 言い方悪かったか？ちゃんと意識して違いが出せてるならすごいってことやで、 <br> プレイヤーとしてのわいからみてもぱっと見混ざってないと思うで <br> 愛宕は頭部のわかりやすい耳とガーターストッキング <br> 孝雄はそういうのなしの黒スト、んでほとんど髪特別付かないケモ耳や 
+
+68  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6d6c-lY1+) 2026/05/15(金) 03:33:12.03
+ ならええやん <br> やるやん 
+
+69 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2083][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 23ed-5ZZK) 2026/05/15(金) 03:34:24.39
+ &gt;&gt;67 <br> プレーヤーがそう言ってくれるならanimaは優秀やな <br> ﾜｲは愛宕が正座して高雄が膝に頭乗せてるみたいなこと書いて <br> 服の様子をシンプルに書いてるだけやね 
+
+70 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ cdff-5Mhm) 2026/05/15(金) 03:38:50.27
+ pre3と同じ設定で一応それなりの学習はできるのね <br>  <br> でもよりいっそうプロンプトに忠実になっているのか、「少女のバストアップのイラストです」と書いたらバストをドアップで描いたり「スケッチです」と書いたら塗りまで射線だったり、加減を知らずにやりすぎなまでにやってくれる 
+
+71  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 9d31-ZdMb) 2026/05/15(金) 03:39:54.27
+ 高解像度学習が効いてるのかphotorealisticのリアルさが増した気がする <br> そのおかげかワイの実写LORAの効きが良い（設定のせいかもだけど） 
+
+72 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7]</span> (JP 0Hcb-ZdMb) 2026/05/15(金) 03:47:40.27
+ サンイチ <br> 同じプロンプトで比較したらp3の方が好みだったからプロンプトの書き方調整しないといけないわね <br> https://ul.h3z.jp/d/uKdIw2.png 
+
+73 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ cd89-5Mhm) 2026/05/15(金) 03:50:14.12
+ masterpiece, best quality, 1girl程度でガチャすると指定してないのにすぐ全裸のエロ出してくるな <br> とんでもないエロAIだぜanima 
+
+74 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2be1-8UCK) 2026/05/15(金) 04:01:44.29
+ animaの正式版来とるやんけ！ 
+
+75 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span> (ﾜｯﾁｮｲ 239f-5Mhm) 2026/05/15(金) 04:03:07.26
+ サンイチ、ついにAnima、previewはずれたんか <br> https://tadaup.jp/5GuknhR9.jpg 
+
+76 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6d1f-ujER) 2026/05/15(金) 04:17:24.37
+ &gt;&gt;71 <br> ん？PreviewのLora使い回しできるんか？ 
+
+77 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 9d84-8UCK) 2026/05/15(金) 04:20:10.37
+ ついにAnimaを触らない理由が消えたのか 
+
+78 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 4b7b-no3x) 2026/05/15(金) 04:40:58.89
+ きたか&#129402; 
+
+79 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 6d07-8UCK) 2026/05/15(金) 04:43:17.57
+ これがWAIに降りてきたらいよいよ完全移行するわ・・・・ 
+
+80 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 6d1f-ujER) 2026/05/15(金) 05:00:55.63
+ 体感P3とほぼ同じやな <br> マイナーキャラの再現度上がりましたとか、プロンプトの理解度があがりましたとかそういう改善はあんまなさそう 
+
+81 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6dc3-/jGZ) 2026/05/15(金) 05:12:49.09
+ animaってpreview版だから容量少ないと思ってたけどbaseでもだいたい4GBのままなんだな 
+
+82 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6d13-ayuw) 2026/05/15(金) 05:17:23.80
+ なんかanytestの効き凄い良くなったな元絵まんまで出てくるわ 
+
+83 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.17]</span> (ﾜｯﾁｮｲ 23d6-8UCK) 2026/05/15(金) 05:21:28.48
+ サンプルイメージとLoRAの作例から察するに画風の幅を広くしたんやないか <br> 指定がない場合の安定度が下がったとも言える <br> ちなこれ作例 <br> https://ul.h3z.jp/m/ZYHN05.webp 
+
+84 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2083][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 23ed-5ZZK) 2026/05/15(金) 05:25:48.26
+ 続いて触った感じやが、高解像度学習の効果は少なくともあると思うやね <br> anima-base-v1.0 <br> https://tadaup.jp/5qMwgoSt.jpg <br> https://tadaup.jp/5HB41Rip.jpg <br> https://tadaup.jp/5XzP87hu.jpg <br> https://tadaup.jp/5uU6AJkH.jpg 
+
+85  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2bf6-3Z4j) 2026/05/15(金) 05:27:25.94
+ animaの正式版ついにきたんか！ <br> v3で作ったLoraも作り直さないかんがまずは弄り倒さないとな！ 
+
+86 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾌﾞｰｲﾓ MMcb-Yrc/) 2026/05/15(金) 05:31:41.10
+ 今回の月刊ゲーエンはanima-baseか <br> うおおのりこめー 
+
+87  <span style="color:green;">警備員[Lv.159][UR武][SSR防][苗]</span> (ﾜｯﾁｮｲ 95e5-Tp+8) 2026/05/15(金) 05:37:09.39
+ 本Anima来たのか 今日からFH6やろうとおもってたのにぃぃ <br> とりあえずPre3で作ったキャラや画風Loraはざっと見た感じ効くようや <br> 左Loraなし 真ん中と右が画風Lora2種 <br> https://i.ibb.co/C33KG91f/Upload-0515.jpg 
+
+88 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ e384-ZdMb) 2026/05/15(金) 05:43:58.02
+ これはほんと使い手を選びそうやな 
+
+89 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6]</span> (ﾜｯﾁｮｲ 35cd-2ayS) 2026/05/15(金) 05:45:44.65
+ 1.0記念 <br> https://i.imgur.com/wGv28Gv.jpeg <br> https://i.imgur.com/oAjYc8y.jpeg <br>  <br> masterpiece, best quality, score_7, safe, anime, 1girl, huge breasts, standing,  <br> で適当に作ってみたが1枚目がブルアカみたいなキャラが出来上がった <br>  <br> RTX3060だと1枚生成するのに60秒かかる 
+
+90 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.381][UR武][UR防][木]</span> (ﾜｯﾁｮｲ 6d11-bH3L) 2026/05/15(金) 05:55:21.31
+ anima base-v1.0 って事はこれが正式リリース版って事やろか？ 
+
+91 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.37][苗]</span> (ﾜｯﾁｮｲ e31c-5Mhm) 2026/05/15(金) 05:58:20.65
+ なんだよもおおお　またかよおおおお <br> さてFTするか 
+
+92 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 9571-Tp+8) 2026/05/15(金) 05:58:20.99
+ animaのstep数なんて20ぐらいまで削ってもええねんで <br> 作りたい絵によっては50とほとんど変わらん 
+
+93 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cd47-5Mhm) 2026/05/15(金) 05:59:49.43
+ anima-baseでanytestもLORAもそのまま使えるんか 
+
+94 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ 357d-8UCK) 2026/05/15(金) 06:02:58.36
+ &gt;&gt;38 <br> 話す内容をダブルクォーテーションで囲むのはやめて、 <br> セミコロンの後に話す内容を書いて改行した後、続行を指示すると良いらしい <br> https://huggingface.co/TenStrip/LTX2.3-10Eros/discussions/19#6a03b7612e8eae5689e15f24 <br> ちな日本語はローマ字変換するのが無難 <br>  <br> つかAnima正式版来てるやんけ！！！ 
+
