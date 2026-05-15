@@ -8,6 +8,7 @@ from fivech_back_up.thread_backup import (
     ThreadMeta,
     normalize_thread_url,
     parse_search_results_html,
+    parse_subject_txt,
     parse_thread_url,
 )
 
@@ -61,6 +62,17 @@ class ThreadBackupUrlTests(unittest.TestCase):
                 "title": "なんJNVA部★623 (1002)",
             }],
             parse_search_results_html(html),
+        )
+
+    def test_parse_subject_txt_decodes_shift_jis_board_listing(self) -> None:
+        content = "1778461307.dat<>なんJNVA部★647  (62)\n".encode("cp932")
+
+        self.assertEqual(
+            [{
+                "url": "https://fate.5ch.io/test/read.cgi/liveuranus/1778461307",
+                "title": "なんJNVA部★647  (62)",
+            }],
+            parse_subject_txt(content, "fate", "liveuranus"),
         )
 
     def test_discover_next_threads_filters_unrelated_search_results(self) -> None:
@@ -151,6 +163,55 @@ class ThreadBackupUrlTests(unittest.TestCase):
             self.assertEqual(
                 "https://fate.5ch.io/test/read.cgi/liveuranus/1774260620",
                 manager.state["threads"]["1774527088"]["previous_url"],
+            )
+
+    def test_sync_latest_primary_threads_from_subject_backfills_missing_threads(self) -> None:
+        with TemporaryDirectory() as tmpdir, patch("fivech_back_up.thread_backup.time.sleep", return_value=None):
+            manager = ThreadBackupManager(Path(tmpdir))
+            manager.state["threads"] = {
+                "1777000000": ThreadMeta(
+                    dat_id="1777000000",
+                    url="https://fate.5ch.io/test/read.cgi/liveuranus/1777000000",
+                    normalized_url="https://fate.5ch.io/test/read.cgi/liveuranus/1777000000",
+                    number=643,
+                    title="なんJNVA部★643",
+                    status="archived",
+                    post_count=1002,
+                ).to_dict()
+            }
+            manager.client = Mock()
+            manager.client.fetch_subject_threads.return_value = [
+                {
+                    "url": "https://fate.5ch.io/test/read.cgi/liveuranus/1777200000",
+                    "title": "なんJNVA部★644  (1002)",
+                },
+                {
+                    "url": "https://fate.5ch.io/test/read.cgi/liveuranus/1777400000",
+                    "title": "なんJNVA部★645  (200)",
+                },
+            ]
+            payloads = {
+                "1777200000": make_payload(
+                    "なんJNVA部★644",
+                    "2026/04/20(月) 19:10:20.90",
+                    previous_url="https://fate.5ch.io/test/read.cgi/liveuranus/1777000000/",
+                    post_count=1002,
+                ),
+                "1777400000": make_payload(
+                    "なんJNVA部★645",
+                    "2026/04/23(木) 21:11:28.06",
+                    previous_url="https://fate.5ch.io/test/read.cgi/liveuranus/1777200000/",
+                    post_count=200,
+                ),
+            }
+            manager.client.fetch_thread.side_effect = lambda _sub, _board, dat_id: payloads[dat_id]
+
+            prefetched = manager._sync_latest_primary_threads_from_subject()
+
+            self.assertEqual({"1777200000", "1777400000"}, prefetched)
+            self.assertEqual(
+                "https://fate.5ch.io/test/read.cgi/liveuranus/1777200000",
+                manager.state["threads"]["1777400000"]["previous_url"],
             )
 
     def test_run_daily_bootstraps_latest_thread_from_search_without_latest_url_file(self) -> None:

@@ -32,6 +32,7 @@ SEARCH_URL_TEMPLATE = f"https://find.{PRIMARY_5CH_DOMAIN}/search?q={{query}}"
 SEARCH_QUERY = "なんJNVA部"
 PRIMARY_THREAD_TITLE_PREFIX = "なんJNVA部★"
 PRIMARY_THREAD_BOARD = "liveuranus"
+PRIMARY_THREAD_SUBDOMAIN = BOARD_DOMAIN_MAP[PRIMARY_THREAD_BOARD]
 
 DATA_DIR_NAME = "thread_back_up"
 JSON_DIR_NAME = "json"
@@ -129,6 +130,12 @@ class FiveChClient:
         response.raise_for_status()
         return parse_search_results_html(response.text)
 
+    def fetch_subject_threads(self, subdomain: str, board: str) -> list[dict[str, str]]:
+        url = f"https://{subdomain}.{PRIMARY_5CH_DOMAIN}/{board}/subject.txt"
+        response = self.session.get(url, timeout=30)
+        response.raise_for_status()
+        return parse_subject_txt(response.content, subdomain, board)
+
     @staticmethod
     def _random_token(length: int) -> str:
         population = string.ascii_letters + string.digits
@@ -189,6 +196,24 @@ def parse_search_results_html(text: str) -> list[dict[str, str]]:
         if not is_supported_5ch_url(href):
             continue
         results.append({"url": href.split("?")[0], "title": label.strip()})
+    return results
+
+
+def parse_subject_txt(content: bytes, subdomain: str, board: str) -> list[dict[str, str]]:
+    text = content.decode("cp932", errors="replace")
+    results: list[dict[str, str]] = []
+    for raw_line in text.splitlines():
+        line = raw_line.strip()
+        if not line or ".dat<>" not in line:
+            continue
+        dat_part, title = line.split("<>", 1)
+        dat_id = dat_part.removesuffix(".dat").strip()
+        if not dat_id.isdigit():
+            continue
+        results.append({
+            "url": f"https://{subdomain}.{PRIMARY_5CH_DOMAIN}/test/read.cgi/{board}/{dat_id}",
+            "title": unescape(title.strip()),
+        })
     return results
 
 
@@ -297,7 +322,11 @@ class ThreadBackupManager:
     def run_daily(self, refetch: bool = False, search_threshold: int = 950) -> None:
         prefetched_ids: set[str] = set()
         try:
-            prefetched_ids = self._sync_latest_primary_threads_from_search()
+            prefetched_ids.update(self._sync_latest_primary_threads_from_subject())
+        except Exception:  # noqa: BLE001
+            pass
+        try:
+            prefetched_ids.update(self._sync_latest_primary_threads_from_search())
         except Exception:  # noqa: BLE001
             pass
 
@@ -430,8 +459,40 @@ class ThreadBackupManager:
 
         return sorted(candidates.values(), key=lambda meta: (meta.number or 0, meta.dat_id))
 
+    def _subject_primary_threads(self) -> list[ThreadMeta]:
+        candidates: dict[str, ThreadMeta] = {}
+        for result in self.client.fetch_subject_threads(PRIMARY_THREAD_SUBDOMAIN, PRIMARY_THREAD_BOARD):
+            try:
+                canonical = normalize_thread_url(result["url"])
+                _, board, dat_id = parse_thread_url(canonical)
+            except ThreadBackupError:
+                continue
+
+            title = (result.get("title") or "").strip()
+            if board != PRIMARY_THREAD_BOARD or not is_primary_thread_title(title):
+                continue
+
+            number = extract_thread_number(title)
+            if number is None:
+                continue
+
+            candidates[dat_id] = ThreadMeta(
+                dat_id=dat_id,
+                url=result["url"],
+                normalized_url=canonical,
+                number=number,
+                title=title,
+            )
+
+        return sorted(candidates.values(), key=lambda meta: (meta.number or 0, meta.dat_id))
+
     def _sync_latest_primary_threads_from_search(self) -> set[str]:
-        candidates = self._search_primary_threads()
+        return self._sync_latest_primary_threads(self._search_primary_threads())
+
+    def _sync_latest_primary_threads_from_subject(self) -> set[str]:
+        return self._sync_latest_primary_threads(self._subject_primary_threads())
+
+    def _sync_latest_primary_threads(self, candidates: list[ThreadMeta]) -> set[str]:
         if not candidates:
             return set()
 
@@ -484,7 +545,7 @@ class ThreadBackupManager:
         comments = payload.get("comments", [])
         meta.title = payload.get("thread", [None, None, None, None, None, ""])[5]
         meta.post_count = len(comments)
-        meta.last_fetched_at = dt.datetime.utcnow().isoformat() + "Z"
+        meta.last_fetched_at = dt.datetime.now(dt.UTC).isoformat().replace("+00:00", "Z")
         number_from_title = extract_thread_number(meta.title or "")
         if number_from_title:
             meta.number = number_from_title
