@@ -1,13 +1,13 @@
 {
-  "total_count": 937,
+  "total_count": 1002,
   "thread": [
-    1783544683,
-    937,
+    1783631117,
+    1002,
     "fate",
     "liveuranus/1783266407",
     "",
     "なんJNVA部★667",
-    1
+    "-2"
   ],
   "comments": [
     [
@@ -7218,7 +7218,7 @@
       "6ph6Ymv40",
       "",
       " Krea2をeditモデルにするLora <br> https://huggingface.co/conradlocke/krea2-identity-edit ",
-      2,
+      3,
       1,
       1
     ],
@@ -9930,7 +9930,7 @@
       "dSRWg6Ue0",
       "",
       " &gt;&gt;812 <br> https://fate.5ch.io/test/read.cgi/liveuranus/1783001372/94 <br> のことやね <br> ComfyUI-Anima-LLLiteフォルダでgit pullしたらちゃんとdepthを参照した画像になったで！サンガツや&#65374; <br> https://i.ibb.co/78Jv3NC/anima-int8convrot-lllite-depth.webp ",
-      0,
+      1,
       4,
       4
     ],
@@ -10530,9 +10530,9 @@
       "TOhXjmDX0",
       "",
       " &gt;&gt;845 <br> https://i.ibb.co/Gvd7D31d/832x1248-euler-simple-496420356164084-20260708-0001.png <br> 1000ステップ。武器単体で呼び出したときのmemorizationが無くなり、トリガーが「銃に毛が生えた程度の武器」と理解し始めている <br> https://i.ibb.co/H0DpLxf/832x1248-euler-simple-381089347779121-20260708-0002.png <br> イラストとして出した時は「ぼんやりとこのへん持つんやろな」ってのと「デカくて重い武器」ってのを朧気ながら学習してる感じがある。 <br> この感じだと肌感2000ステップでギリギリ鉄芯出るかどうかになりそう。 <br> 「アンコウ型のフォルム、鉄芯が銃身を貫いている、銃身の上に取っ手、ストックの横にグリップ」っていうディティールまで覚え切ることはなさそう <br> 武器単体10繰り返しくらいでfigma写真の学習回数減らしても良いかもなあ（あんまり効いてる感じがしない） ",
-      2,
+      3,
       1,
-      3
+      6
     ],
     [
       878,
@@ -10616,7 +10616,7 @@
       " &gt;&gt;882 <br> マ？後で試してみる ",
       0,
       2,
-      3
+      6
     ],
     [
       885,
@@ -10652,7 +10652,7 @@
       " どう反応？反応せずにスルーしとけばいいだけだろ ",
       0,
       1,
-      1
+      2
     ],
     [
       888,
@@ -10736,7 +10736,7 @@
       " 本当に心揺さぶられた良い画像にはちゃんとレスしてる ",
       0,
       1,
-      1
+      2
     ],
     [
       895,
@@ -10772,7 +10772,7 @@
       " 反応してもらう必要もないやろ <br> 誰かが見てるって思うだけで精神的に満足できるし <br> このスレでも昔から画像だけ貼るニキの良い絵の時のほうがレス少ないな&#65374;みんな嫉妬しとるんやろうな&#65374;（ﾆﾁｬｱ　って勝手に思ってるわ ",
       0,
       1,
-      1
+      3
     ],
     [
       898,
@@ -10784,7 +10784,7 @@
       " 心よりもチンチンを揺さぶって欲しいンゴねぇ… ",
       0,
       1,
-      1
+      3
     ],
     [
       899,
@@ -10964,7 +10964,7 @@
       " &gt;&gt;856 <br> ワルキューレ大好きさんか <br> よくできてるなぁ ",
       0,
       1,
-      2
+      5
     ],
     [
       914,
@@ -11036,7 +11036,7 @@
       " https://i.ibb.co/wFc0YjSP/c340a57a-f14b-409e-9743-0108db27dbe6.png <br> 文字柔軟に入力できるからクソコラ製造機として優秀だなKrea2 <br> 1枚画像を600step&#65374;1000step, dim32/alpha32, unet 1e-04(adamw8bit/constant)で良い感じになる <br> 欠点は低スペPCでLORA学習できないところ（消費Buzz固定っぽくて低step学習でケチろうとしても1k弱取られる） ",
       0,
       3,
-      3
+      6
     ],
     [
       920,
@@ -11048,7 +11048,7 @@
       " イライラした時は種付けプレスが一番や <br> スライムだって人形(ヒトガタ)になるんだから間違いない <br> https://tadaup.jp/7os8aFER.jpg <br> https://tadaup.jp/7JcOTyxS.jpg ",
       0,
       2,
-      2
+      5
     ],
     [
       921,
@@ -11060,7 +11060,7 @@
       " kohya_ss v25.2.2 ｷﾀ━━━━━━(ﾟ∀ﾟ)━━━━━━ !!!!! ",
       0,
       1,
-      3
+      4
     ],
     [
       922,
@@ -11096,7 +11096,7 @@
       " anima公式の品質向上版とターボ版のチェックポイント来てる <br> LoRAじゃないんか <br>  <br> https://civitai.red/models/2458426/anima?modelVersionId=3108569 <br> https://civitai.red/models/2458426/anima?modelVersionId=3108589 ",
       2,
       1,
-      1
+      2
     ],
     [
       925,
@@ -11108,7 +11108,7 @@
       " anima公式がなんか出してるけど時すでに遅しって感じだな ",
       0,
       1,
-      1
+      2
     ],
     [
       926,
@@ -11120,7 +11120,7 @@
       " Loraの学習はベースモデルでやる必要があるって言ってるからAestheticやTurboで学習させない方がいいな <br> まあここの住人ならそんなことしないだろうが ",
       0,
       2,
-      3
+      4
     ],
     [
       927,
@@ -11144,7 +11144,7 @@
       " &gt;&gt;924 <br> Turboは前から予告してたやろ <br> Aesthetic出たなら品質爆上がりしてそうやね ",
       0,
       1,
-      3
+      4
     ],
     [
       929,
@@ -11156,7 +11156,7 @@
       " They are completely new full finetunes, based on their own datasets and with new techniques. <br> これらは完全に新規のファインチューニングモデルで、独自のデータセットと最新の技術を用いて開発されています。 <br>  <br> 公式より ",
       0,
       2,
-      3
+      4
     ],
     [
       930,
@@ -11168,7 +11168,7 @@
       " まずはAnima-Turboから始めることをおすすめします。平均すると、Anima-Aestheticよりわずかに劣る程度ですが、生成は非常に速い(しかもステップ数でコストを調整するオンラインプラットフォームで使えばずっと安価です)。これにより、プロンプトを素早く反復処理するのに非常に便利です。安定性の向上により、場合によってはAestheticよりも優れていることもあります。 ",
       0,
       3,
-      3
+      4
     ],
     [
       931,
@@ -11180,7 +11180,7 @@
       " ふむ <br>  <br> AestheticをTurboしてint8すれば最強最速なのでは? ",
       0,
       1,
-      2
+      3
     ],
     [
       932,
@@ -11228,7 +11228,7 @@
       " Loraの方のTurboはどうなっちゃうのおじさん「Loraの方のTurboはどうなっちゃうの」 ",
       0,
       3,
-      3
+      4
     ],
     [
       936,
@@ -11240,7 +11240,7 @@
       " 実際に15分くらいAesthetic触ってみたけど <br> キャラクターの再現度が上がった気がするな <br> 出てこなかったキャラクターも出てる気がする ",
       0,
       2,
-      2
+      3
     ],
     [
       937,
@@ -11253,6 +11253,786 @@
       0,
       5,
       5
+    ],
+    [
+      938,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ｵｲｺﾗﾐﾈｵ MM8b-Q7Er)",
+      "",
+      "2026/07/09(木) 06:06:40.64",
+      "XWdfzVGSM",
+      "",
+      " 公式のloraとかもaestheticよりturboのloraの方が品質上がったんよな ",
+      0,
+      1,
+      1
+    ],
+    [
+      939,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ a70c-/g0X)",
+      "",
+      "2026/07/09(木) 06:10:07.42",
+      "W2xWS9gD0",
+      "",
+      " Animaで朝潮改二 <br>  <br> base 1.0 int8conv + Turbo LoRA 0.2 <br> https://i.ibb.co/V0Tsv0qQ/4dcab42e149f.png <br>  <br> Turbo 1.0 int8conv <br> https://i.ibb.co/4rwFgJL/bcdff00698fa.png <br>  <br> Aesthetic 1.0 int8conv 30step CFG5.0 <br> https://i.ibb.co/393sgPDt/f94776572010.png ",
+      1,
+      4,
+      4
+    ],
+    [
+      940,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.13]</span> (ﾜｯﾁｮｲ a7c8-YXBX)",
+      "sage",
+      "2026/07/09(木) 06:14:28.13",
+      "Ebb0fBXm0",
+      "",
+      " このおっぱいは朝潮ではない!(机ﾄﾞﾝｯ ",
+      0,
+      2,
+      3
+    ],
+    [
+      941,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.9]</span> (ﾜｯﾁｮｲ a744-D/uw)",
+      "",
+      "2026/07/09(木) 06:30:07.65",
+      "3sPinqlX0",
+      "",
+      " aesthetic下着と性器のクオリティ上がっててよい ",
+      0,
+      2,
+      2
+    ],
+    [
+      942,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ff6f-sVGz)",
+      "sage",
+      "2026/07/09(木) 06:33:50.12",
+      "V5hIFN590",
+      "",
+      " aestheticのほうが画風のブレが少ないのか?それとも細部表現とか解剖学的な正確性が上がったのが特徴?使ってみてもあんまりわからないな。 ",
+      0,
+      1,
+      1
+    ],
+    [
+      943,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 274f-/jtd)",
+      "sage",
+      "2026/07/09(木) 06:59:05.85",
+      "lUrC5efN0",
+      "",
+      " 浴衣のシーズンやな <br> https://tadaup.jp/7P1zVK7F.png ",
+      0,
+      2,
+      2
+    ],
+    [
+      944,
+      " <span style=\"color:green;\">警備員[Lv.163][UR武][SSR防][苗]</span> (ﾜｯﾁｮｲ c73a-XW3A)",
+      "sage",
+      "2026/07/09(木) 07:01:01.24",
+      "9bkpIlK40",
+      "",
+      " アリス画像？でaesthetic比較 <br> https://i.ibb.co/B754kzP/Upload-0709.jpg <br> beseの方がクッキリ感はある 輪郭線とか ",
+      0,
+      1,
+      2
+    ],
+    [
+      945,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2735-Jy3R)",
+      "sage",
+      "2026/07/09(木) 07:58:00.02",
+      "TOhXjmDX0",
+      "",
+      " 他にもREADME微妙に更新されてるな（History） <br> Generation settings euler: a basic sampler that is a bit more creative than er_sde. Good with the Turbo and Aesthetic versions, since those are naturally more stable. <br> ... <br> Recommended negative: &quot;worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration&quot; <br> ... <br> Aesthetic Version Prompting <br> Anima-Aesthetic is fine-tuned only on high quality images, with all of the quality tags stripped out from the captions. You don't need to use quality tags in the positive at all, but &quot;masterpiece, best quality, &quot; is safe to leave in. If you are getting too much noise, artifacts, details, or &quot;slop&quot;, try some combination of: 1) lower the CFG, 2) remove score_* tags from the positive and negative, 3) add &quot;anime coloring&quot; to the prompt (maybe with a strength less than 1). <br> ... <br> License <br> Note that the non-commercial restriction applies only to the Model, and not to Outputs (the generated images). You may use generated images commercially. <br> Examples of allowed commercial use: selling images, paid commissions for images, generating images to use as concept art or assets for a paid product (e.g. video game or visual novel)selling Derivative model weights, if you are operating as an individual (Section 2.c contains a carve-out for this specific use). <br> Examples of disallowed commercial use without a separate license: hosting the model behind an API and charging for access, hosting the model on a paid online image generation platform, embedding the model weights inside a monetized game or other product, using the model to power some feature as part of a larger, monetized product. ",
+      2,
+      4,
+      6
+    ],
+    [
+      946,
+      " <span style=\"color:green;\">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ dfb8-St0C)",
+      "sage",
+      "2026/07/09(木) 08:07:37.45",
+      "9UIfmBKW0",
+      "",
+      " ワイ、Animaで自然言語の英文見慣れて来たおかげか &gt;&gt;945 を目が英語長文拒否反応せずに読めるようになってきてて草生える ",
+      0,
+      1,
+      1
+    ],
+    [
+      947,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.111][R武][R防][苗]</span> (ﾜｯﾁｮｲ 5f6e-Jy3R)",
+      "",
+      "2026/07/09(木) 08:09:35.63",
+      "OO+kkxjs0",
+      "",
+      " &gt;&gt;945 <br> 学習時点で選別してクオリティタグ不要になったりとかAestheticは多様性より美観重視かつディティールやノイズが増えやすい調整ってことなんかな <br> リアスマージモデルとかの絵が好きそうな人には特に向いてそうやな ",
+      0,
+      1,
+      1
+    ],
+    [
+      948,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a7d2-hBEu)",
+      "sage",
+      "2026/07/09(木) 08:34:04.54",
+      "Oudd1vlW0",
+      "",
+      " 背景に対してキャラが異様にでかい事がちょいちょいあるんやが、なんか対処法ないんかこれ ",
+      2,
+      1,
+      2
+    ],
+    [
+      949,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.24]</span> (ﾜｯﾁｮｲ 477d-Jy3R)",
+      "",
+      "2026/07/09(木) 08:38:02.80",
+      "yYuBmEq70",
+      "",
+      " Aestheticモデル、redditではあまり評判が良くないな <br> まだ出たばかりだからプロンプトや設定で化けるかもだけど <br> https://www.reddit.com/r/StableDiffusion/comments/1ur442y/animaturbo_v10_and_animaaesthetic_v10_models/ ",
+      0,
+      1,
+      1
+    ],
+    [
+      950,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2733-Xb+e)",
+      "",
+      "2026/07/09(木) 08:38:27.78",
+      "mKDcrFu50",
+      "",
+      " &gt;&gt;948 <br> それkrea2でも起こるわ <br> サイバーパンクな街並みの中に大巨人の女が爆誕する ",
+      0,
+      1,
+      2
+    ],
+    [
+      951,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6715-Jy3R)",
+      "sage",
+      "2026/07/09(木) 08:41:13.01",
+      "3jjDsjYG0",
+      "",
+      " ぷろんぷとぢからによるらしいがイラストの背景はパターン少ないから <br> &#128522;「いい感じにして」 <br> &#129302;「？？？？おかのした」 <br> になりやすいらしいで <br> 背景はチャッピーに相談するとましになるで ",
+      1,
+      1,
+      1
+    ],
+    [
+      952,
+      " <span style=\"color:green;\">警備員[Lv.66][苗]</span> (ﾜｯﾁｮｲ c75f-D/uw)",
+      "sage",
+      "2026/07/09(木) 08:45:10.56",
+      "PwDbvcxF0",
+      "",
+      " ワイもアリスでbaseとaesthetic比較 <br> https://tadaup.jp/7a5Jok1w.jpg ",
+      2,
+      1,
+      2
+    ],
+    [
+      953,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.1][新芽]</span> (ﾜｯﾁｮｲ a7d2-hBEu)",
+      "sage",
+      "2026/07/09(木) 08:49:39.96",
+      "Oudd1vlW0",
+      "",
+      " &gt;&gt;951 <br> エロかつアウアウワード有るからローカルLLMに考えさせとるんや今 <br> ただまあアウアウワード抜いた状態で考えて貰ったりはしてみるわ ",
+      0,
+      2,
+      2
+    ],
+    [
+      954,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.14]</span> (ﾜｯﾁｮｲ a78e-Jy3R)",
+      "",
+      "2026/07/09(木) 08:49:53.71",
+      "bxKvQews0",
+      "",
+      " &gt;&gt;952 <br> turboで全然いいんだけど、腰回りのラインとかはaestheticの方が好みかな ",
+      0,
+      1,
+      1
+    ],
+    [
+      955,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2715-Jy3R)",
+      "sage",
+      "2026/07/09(木) 08:59:08.79",
+      "Va4YXNgS0",
+      "",
+      " &gt;&gt;952 <br> これは違いが分かりやすい <br> aestheticの方がよき ",
+      0,
+      1,
+      3
+    ],
+    [
+      956,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 2719-Jy3R)",
+      "",
+      "2026/07/09(木) 09:07:58.02",
+      "Xwkq0N/p0",
+      "",
+      " 今日のゲームチェンジャー来たな ",
+      0,
+      2,
+      2
+    ],
+    [
+      957,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 5f93-fK0G)",
+      "",
+      "2026/07/09(木) 09:08:59.46",
+      "5EGzNwn/0",
+      "",
+      " &gt;&gt;939 <br> これプロンプトの追従度が気になるんやけど 手コキとおっぱい吸いは指示してる感じなん？ <br> stepとCFGの高いAestheticと(構図が今一って言われてた)Turbo LoRA付きはそれをやってて <br> モデルにTurboが入った中段だけはそれがされてないせいでワイには良し悪しが逆に分らなくなってしもた ",
+      0,
+      1,
+      1
+    ],
+    [
+      958,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 47cd-beBo)",
+      "sage",
+      "2026/07/09(木) 09:09:46.96",
+      "ObUb20sj0",
+      "",
+      " んーbase1.0+Turbo Loraの方がええかな ",
+      0,
+      4,
+      4
+    ],
+    [
+      959,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.97][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ 8785-+PJ0)",
+      "sage",
+      "2026/07/09(木) 09:26:57.67",
+      "UdBxvIhY0",
+      "",
+      " &gt;&gt;601 <br>  <br> やってみたけどカスタムノードに入ってるサンプルノードでは画像がブレる <br> 入力画像を一切リサイズせえへんほうがええね ",
+      0,
+      1,
+      2
+    ],
+    [
+      960,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.97][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ 8785-+PJ0)",
+      "sage",
+      "2026/07/09(木) 09:28:19.07",
+      "UdBxvIhY0",
+      "",
+      " ×サンプルノード　〇サンプルワークフロー ",
+      0,
+      2,
+      2
+    ],
+    [
+      961,
+      " <span style=\"color:green;\">警備員[Lv.66][苗]</span> (ﾜｯﾁｮｲ c75f-D/uw)",
+      "sage",
+      "2026/07/09(木) 09:35:57.76",
+      "PwDbvcxF0",
+      "",
+      " baseとaestheticにturbo-lora(1.0)を使用（step8 CFG1） <br> https://tadaup.jp/7wJwfGdO.jpg <br>  <br> anima_turboV10（step8 CFG1） <br> https://tadaup.jp/7wvTzVbc.jpg ",
+      0,
+      2,
+      2
+    ],
+    [
+      962,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.37]</span> (ﾜｯﾁｮｲ 2707-Jy3R)",
+      "sage",
+      "2026/07/09(木) 09:36:40.25",
+      "vY++V2eo0",
+      "",
+      " ちびたいの異常性癖LoRA見てるとスレの抜歯ニキとか最早ただの正常位みたいに錯覚するンゴね･･･ ",
+      0,
+      1,
+      1
+    ],
+    [
+      963,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a7da-PYN5)",
+      "",
+      "2026/07/09(木) 09:40:23.32",
+      "tv/A3UsS0",
+      "",
+      " わお、aestheticさっそく落とさなきゃ！ ",
+      0,
+      1,
+      1
+    ],
+    [
+      964,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.51]</span> (ﾜｯﾁｮｲ a7e3-lR1x)",
+      "dongri",
+      "2026/07/09(木) 09:48:09.15",
+      "MRGOC3VV0",
+      "",
+      " マシンスペックがアレなんで普段はturboの8stepすら削ってるワイが8stepで試してみたンゴ <br> base+lora aesthetic+lora turboの順番やで <br> 個人的にはbase+lora一択ンゴね <br> https://tadaup.jp/7PoM29Xh.jpg <br> https://tadaup.jp/7rDnzwJu.jpg <br> https://tadaup.jp/7vPySoJ8.jpg <br> https://tadaup.jp/7UthP7kg.jpg <br> https://tadaup.jp/7nGSXgbi.jpg <br> https://tadaup.jp/7LukrPgB.jpg ",
+      0,
+      3,
+      5
+    ],
+    [
+      965,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ｽｯﾌﾟ Sd7f-+ZAE)",
+      "",
+      "2026/07/09(木) 09:54:36.38",
+      "iZsGwBpNd",
+      "",
+      " 主線が薄く主張してないのはいいけど全体の色がくすむのが好き嫌い分かれそう ",
+      0,
+      1,
+      2
+    ],
+    [
+      966,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2703-Xb+e)",
+      "",
+      "2026/07/09(木) 10:07:55.82",
+      "mKDcrFu50",
+      "",
+      " 好みの部分は置いとくとしてもプロンプト追従性とかノイズとかはどうなん？ ",
+      0,
+      2,
+      2
+    ],
+    [
+      967,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 2735-Jy3R)",
+      "sage",
+      "2026/07/09(木) 10:19:15.74",
+      "TOhXjmDX0",
+      "",
+      " https://civitai.red/models/2458426/anima?modelVersionId=3111778 <br> aesthetic-v1.0b: <br> Alternate version of Anima-Aesthetic. This one consists only of an aesthetic finetune on 10k images, with none of the additional style adjustment and stabilization loras merged in like 1.0. I personally like it less, and think it tends toward a 2.5D, shiny, plastic, AI-slop look. But maybe some people prefer it. ",
+      0,
+      5,
+      6
+    ],
+    [
+      968,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ a7b6-gG5w)",
+      "sage",
+      "2026/07/09(木) 10:23:12.61",
+      "BSkR5mom0",
+      "",
+      " anima公式がもうAestheticの派生を出してきたけど製作者は何がしたいんや？ ",
+      0,
+      2,
+      2
+    ],
+    [
+      969,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ ff4f-dQHZ)",
+      "sage",
+      "2026/07/09(木) 10:26:18.08",
+      "A3nJJWJu0",
+      "",
+      " LoRAで出して欲しいンゴ&#129402; ",
+      0,
+      1,
+      1
+    ],
+    [
+      970,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.18]</span> (ﾜｯﾁｮｲ a711-Jy3R)",
+      "",
+      "2026/07/09(木) 10:26:31.13",
+      "JTg0P4rO0",
+      "",
+      " ああああああああ <br> Aestheticの線細好きや！ ",
+      0,
+      2,
+      3
+    ],
+    [
+      971,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ff27-xfcd)",
+      "",
+      "2026/07/09(木) 10:27:09.57",
+      "tA/Skf620",
+      "",
+      " スタイル微調整せずに美観向上だけやったバージョンで <br> 結果として無駄に立体感出たまんまマスピ系になっとってワイは好きやないけどこういうのが好きな奴もおるんやろ <br>  <br> 的な感じで一応出してくれたんか <br> 画風LoRAの適用とかで良し悪し出るやろうから選択肢が多いのはまあええやろ ",
+      0,
+      1,
+      1
+    ],
+    [
+      972,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a7c8-YXBX)",
+      "sage",
+      "2026/07/09(木) 10:32:03.84",
+      "Ebb0fBXm0",
+      "",
+      " 何をもって「美観の向上」とするかは人によってそれぞれだしのぅ… ",
+      0,
+      3,
+      3
+    ],
+    [
+      973,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.4][新]</span> (ﾜｯﾁｮｲ c761-D/uw)",
+      "",
+      "2026/07/09(木) 10:32:43.90",
+      "CqR6zx9q0",
+      "",
+      " Anima-Aestheticの別バージョンです。こちらは10k画像に対する美的微調整のみで構成されており、 <br> 1.0のように追加のスタイル調整や安定化Loraは統合されていません。個人的にはあまり好みではなく、 <br> 2.5Dで光沢のあるプラスチックのような、AI処理が雑な印象を受けると思います。しかし、人によっては好むかもしれません。 <br>  <br>  <br> はえーマスピになるけど好きなやつは好きだろ的な奴か ",
+      0,
+      3,
+      3
+    ],
+    [
+      974,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 2735-Jy3R)",
+      "sage",
+      "2026/07/09(木) 10:35:48.85",
+      "TOhXjmDX0",
+      "",
+      " &gt;&gt;948 <br> https://i.ibb.co/8DPsnjnh/864x1152-euler-simple-730397890031691-20260709-0064.webp <br> 部族語大好きアパッチ酋長ジェロニモとしては、キャラクターのタグ指定の多さに対して、被写体と背景の関係性を示すタグの指定が少ないかも。 <br> tag group:image composition の &quot;vanishing point&quot; や &quot;wide shot&quot; とかで位置関係が改善する場合がある。 <br> あとは単純にgiantをネガるとか。 <br>  <br> &gt;&gt;877 <br> https://i.ibb.co/hRWWBdwW/832x1248-euler-simple-841874296599227-20260709-0014.png <br> 4000ステップ。base-v1 でトレーニングしたものを turbo-v1.0 で実行。 <br> 「アンコウ型のフォルム、銃身の上に取っ手」はかなり学習できてる。「鉄芯が銃身を貫いている」はgeminiで作成した学習素材が悪くて銃身の後ろに鉄芯ではなく謎の棒が生える（武器単体画像の銀色のほうに引っ張られてるっぽいから鉄芯がハッキリ分かるほうで学習したほうが良さそう）。「ストックの横にグリップ」キャラクターがストック辺りに手を置くことが多くなったが、肝心のサイドグリップが生えないことが多くて真下に引き金が出ることが多い。今後のプランとしてはさらに追加で2000ステップ学習させるか、キャプションにディティールを自然言語で説明して学習やり直すかって感じ <br> 書くの忘れてたけどNetwork Argsで少し階層切ってる。「機械ディテールをもっと強く出したいけど画風はいらない」ってチャッピー聞いたらこういう回答貰った <br> block_dims=0,0,4,8,16,16,16,16,16,16,16,16,8,4,0,0,0 block_alphas=16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16 conv_dim=4 conv_alpha=4 rank_dropout=0 module_dropout=0 ",
+      0,
+      6,
+      6
+    ],
+    [
+      975,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a7f5-Jy3R)",
+      "",
+      "2026/07/09(木) 10:39:26.95",
+      "HJ1vElwq0",
+      "",
+      " むしろ、turbo-loraをアプデしてって感じかね？ ",
+      0,
+      1,
+      1
+    ],
+    [
+      976,
+      " <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 27da-D4rb)",
+      "sage",
+      "2026/07/09(木) 10:46:37.11",
+      "Va4YXNgS0",
+      "",
+      " 様々なユーザーの好みにそえられる <br> 味変バージョンが幾つもあってもええやろ <br> 位なんかな ",
+      0,
+      2,
+      3
+    ],
+    [
+      977,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.76][苗]</span> (ﾜｯﾁｮｲ 8785-fK0G)",
+      "sage",
+      "2026/07/09(木) 10:57:40.11",
+      "y3reNDRa0",
+      "",
+      " 公式のバージョインが増えるのは互換性の面でもええことやからなあ ",
+      0,
+      1,
+      1
+    ],
+    [
+      978,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.18]</span> (ﾜｯﾁｮｲ a711-Jy3R)",
+      "",
+      "2026/07/09(木) 10:59:11.76",
+      "JTg0P4rO0",
+      "",
+      " 彩度が落ち着いてる絵好きや <br> なんとなくNTRmixを思い出す感じ ",
+      0,
+      3,
+      3
+    ],
+    [
+      979,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.23]</span> (ﾜｯﾁｮｲ 2749-fK0G)",
+      "sage",
+      "2026/07/09(木) 11:01:34.08",
+      "AxIoa6ZH0",
+      "",
+      " TurboもAestheticも邪道や <br> Base＋スタイルLoraこそ至高 ",
+      0,
+      1,
+      1
+    ],
+    [
+      980,
+      " <span style=\"color:green;\">警備員[Lv.138][苗]</span> (ﾜｯﾁｮｲ 7fb0-Wc3+)",
+      "sage",
+      "2026/07/09(木) 11:04:54.94",
+      "AiQQIdGU0",
+      "",
+      " TurboやTurboLoRAは8step、それ以外は30step、3060/12GB <br> base…58秒（1.94s/it） https://i.ibb.co/PZW8MfK3/Anima.webp <br> base int8convrot…37秒（1.24s/it） https://i.ibb.co/fVBc2bzP/Anima-INT8.webp <br> aesthetic…52秒（1.74s/it） https://i.ibb.co/G3dMxLLB/Anima-Aesthetic.webp <br> Turbo…7秒（1.12it/s） https://i.ibb.co/DHF1jdg7/Anima-Turbo.webp <br> base int8convrot＋turboLoRA…5秒（1.58it/s） https://i.ibb.co/chZ0Jj7X/Anima-Int8-turbo.webp <br> aesthetic＋turboLoRA…7秒（1.13it/s）  https://i.ibb.co/dJ1Q4dgT/Anima-Aesthetic-turbo.webp <br>  <br> Aestheticはなるほど品質が変わったと感じる <br> Turbo系は早いけどphotorealisticを入れてもこんな感じ。希望の絵柄が出るならよさそう <br> turboLoRAをつけるとまた変わってくるなあ。int8convrot＋turboLoRAが一番早かった ",
+      1,
+      1,
+      5
+    ],
+    [
+      981,
+      " <span style=\"color:green;\">警備員[Lv.138][苗]</span> (ﾜｯﾁｮｲ 7fb0-Wc3+)",
+      "sage",
+      "2026/07/09(木) 11:05:10.80",
+      "AiQQIdGU0",
+      "",
+      " じゃあそろそろ次スレ立てるか ",
+      0,
+      2,
+      5
+    ],
+    [
+      982,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.52]</span> (ﾜｯﾁｮｲ a7e3-lR1x)",
+      "dongri",
+      "2026/07/09(木) 11:08:30.47",
+      "MRGOC3VV0",
+      "",
+      " ノイズがハッキリわかる画像をうpしようとしたらただうぷにアク禁食らっちまった <br> 今回のはエじゃないからさっきのがあかんかったかな？ ",
+      1,
+      4,
+      5
+    ],
+    [
+      983,
+      " <span style=\"color:green;\">警備員[Lv.138][苗]</span> (ﾜｯﾁｮｲ 7fb0-Wc3+)",
+      "sage",
+      "2026/07/09(木) 11:13:41.59",
+      "AiQQIdGU0",
+      "",
+      " 立てたー <br> 20までよろしくたのむ <br>  <br> なんJNVA部★668 <br> https://fate.5ch.io/test/read.cgi/liveuranus/1783562900/ ",
+      0,
+      3,
+      5
+    ],
+    [
+      984,
+      " <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 27da-D4rb)",
+      "sage",
+      "2026/07/09(木) 11:14:01.15",
+      "Va4YXNgS0",
+      "",
+      " &gt;&gt;982 <br> さっきの画像アレに修正が入ってなかったで ",
+      1,
+      3,
+      3
+    ],
+    [
+      985,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.4][新芽]</span> (ｽｯﾌﾟ Sd7f-+ZAE)",
+      "",
+      "2026/07/09(木) 11:18:03.63",
+      "iZsGwBpNd",
+      "",
+      " turbo版作る宣言してたからね <br> 有言実行の人だ <br> これでお疲れ様でもいいし、まだモデル作りへの情熱があるならテキストエンコーダー載せ替えた物作ってもいいアニメ特化デフォルトエロ出力は需要消えないからね <br> クレアを意識しつつモデルの軽さや部族語によるお手軽さなども考慮したり、作るとなると大変だが ",
+      0,
+      2,
+      2
+    ],
+    [
+      986,
+      " <span style=\"color:green;\">警備員[Lv.163][UR武][SSR防][苗]</span> (ﾜｯﾁｮｲ c73a-XW3A)",
+      "sage",
+      "2026/07/09(木) 11:34:48.38",
+      "9bkpIlK40",
+      "",
+      " aestheticはちょっと指が崩れやすい感があるやね <br> https://i.ibb.co/nsBXw5wG/Upload-0709.jpg ",
+      0,
+      2,
+      2
+    ],
+    [
+      987,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a716-p1rK)",
+      "",
+      "2026/07/09(木) 11:36:42.60",
+      "2Es53rOu0",
+      "",
+      " 自分で試した感じ一長一短ある印象やな <br> 個人的にはBaseのままの方が好き ",
+      0,
+      1,
+      1
+    ],
+    [
+      988,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 678f-Jy3R)",
+      "sage",
+      "2026/07/09(木) 11:38:09.45",
+      "55oTr8te0",
+      "",
+      " &gt;&gt;980 <br> int8が高速化されてる感じあるが300xxやから？ ",
+      1,
+      1,
+      1
+    ],
+    [
+      989,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.52]</span> (ﾜｯﾁｮｲ a7e3-lR1x)",
+      "dongri",
+      "2026/07/09(木) 11:41:21.60",
+      "MRGOC3VV0",
+      "",
+      " &gt;&gt;984 <br> 汁で隠れてセーフ…とはいかんかったかぁ <br> しばらくはうpれんかな <br>  <br> 話題変わってbバージョン別物になってるンゴ <br> ノイズ消えたし内容もbaseの色違いに近い感じや ",
+      0,
+      5,
+      5
+    ],
+    [
+      990,
+      " <span style=\"color:green;\">警備員[Lv.138][苗]</span> (ﾜｯﾁｮｲ 7fb0-Wc3+)",
+      "sage",
+      "2026/07/09(木) 11:43:42.13",
+      "AiQQIdGU0",
+      "",
+      " &gt;&gt;988 <br> 3060やから多分そうやね <br> int8は30x0シリーズに一番効くらしいから ",
+      0,
+      4,
+      5
+    ],
+    [
+      991,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.59]</span> (ﾜｯﾁｮｲ 27c1-D/uw)",
+      "sage",
+      "2026/07/09(木) 11:47:39.72",
+      "xJp5toBR0",
+      "",
+      " しばらくKrea2いじってた後にanimaに戻ると部族語が気楽でええなあ <br> 部族語をパラメータとして足したり引いたりしてるほうが欲しい絵に近づきやすい気がするわ ",
+      0,
+      1,
+      1
+    ],
+    [
+      992,
+      " <span style=\"color:green;\">警備員[Lv.138][苗]</span> (ﾜｯﾁｮｲ 7fb0-Wc3+)",
+      "sage",
+      "2026/07/09(木) 11:52:48.92",
+      "AiQQIdGU0",
+      "",
+      " &gt;&gt;827はaestheticやturboへの対応待ち… ",
+      0,
+      5,
+      5
+    ],
+    [
+      993,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.6][新]</span> (ｵｲｺﾗﾐﾈｵ MM8b-guL4)",
+      "sage",
+      "2026/07/09(木) 11:55:56.29",
+      "lKx2wtaPM",
+      "",
+      " turboは構図のバリエーションがマジで終わることになる <br> E_predモデルが懐かしいぜ ",
+      0,
+      1,
+      1
+    ],
+    [
+      994,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 278c-D/uw)",
+      "sage",
+      "2026/07/09(木) 12:02:48.65",
+      "e1gB6+C+0",
+      "",
+      " 大量に作って見比べてみればaestheticの方がいいじゃんってなるんだろうけど、単発単発で作ってると違いがわからんなぁ ",
+      0,
+      1,
+      1
+    ],
+    [
+      995,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ｽﾌｯ Sd7f-pVsq)",
+      "sage",
+      "2026/07/09(木) 12:33:44.66",
+      "HWTPtBDed",
+      "",
+      " 早く帰ってbバージョン試してえ <br> 自作lora適用してbaseより品質向上してるかどうか ",
+      0,
+      1,
+      1
+    ],
+    [
+      996,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 273f-qIBm)",
+      "sage",
+      "2026/07/09(木) 13:21:45.37",
+      "AAfwFclU0",
+      "",
+      " 質疑応答 ",
+      0,
+      1,
+      3
+    ],
+    [
+      997,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 273f-qIBm)",
+      "sage",
+      "2026/07/09(木) 13:21:58.63",
+      "AAfwFclU0",
+      "",
+      " いいですか？ ",
+      0,
+      2,
+      3
+    ],
+    [
+      998,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 273f-qIBm)",
+      "sage",
+      "2026/07/09(木) 13:22:11.36",
+      "AAfwFclU0",
+      "",
+      " いいですよ ",
+      0,
+      3,
+      3
+    ],
+    [
+      999,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ ff98-V4W0)",
+      "sage",
+      "2026/07/09(木) 13:25:20.76",
+      "8sJPYOmJ0",
+      "",
+      " すぐ大丈夫になりますからね ",
+      0,
+      1,
+      1
+    ],
+    [
+      1000,
+      "今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style=\"color:green;\">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 5f41-D/uw)",
+      "",
+      "2026/07/09(木) 13:28:59.39",
+      "m6DIKg7C0",
+      "",
+      " 許さん ",
+      0,
+      1,
+      1
+    ],
+    [
+      1001,
+      "1001",
+      "",
+      "Over 1000",
+      "Thread",
+      "",
+      " このスレッドは１０００を超えました。 <br> 新しいスレッドを立ててください。  <br>life time: 3日 12時間 42分 13秒 ",
+      0,
+      1,
+      2
+    ],
+    [
+      1002,
+      "1002",
+      "",
+      "Over 1000",
+      "Thread",
+      "",
+      " 5ちゃんねるの運営はUPLIFT会員の皆さまに支えられています。 <br> 運営にご協力お願いいたします。 <br>  <br>  <br> ─────────────────── <br> 《UPLIFT会員の主な特典》 <br> ★ 5ちゃんねる専用ブラウザからの広告除去 <br> ★ 5ちゃんねるの過去ログを取得 <br> ★ 書き込み規制の緩和 <br> ─────────────────── <br>  <br> 会員登録には個人情報は一切必要ありません。 <br> 4 USD/mon. から匿名でご購入いただけます。 <br>  <br> ▼ UPLIFT会員登録はこちら ▼ <br> https://uplift.5ch.io/ <br>  <br> ▼ UPLIFTログインはこちら ▼ <br> https://uplift.5ch.io/login ",
+      0,
+      2,
+      2
     ]
   ]
 }
