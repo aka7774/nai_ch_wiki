@@ -12,27 +12,28 @@ Automated backups for the nai_ch SeesaaWiki and the associated 5ch "nanJNVA" thr
 
 ## Daily automation
 `gitpush.sh` is executed every day at 05:30. The script performs the following steps:
-1. Ensures the local Python virtualenv in `venv/` exists and has the pinned dependencies from `requirements.txt`.
-2. Runs `venv/bin/python fivech_back_up/thread_backup.py daily` to update the 5ch archive.
-3. Runs `venv/bin/python seesawiki_back_up/crawl.py backup` to mirror the wiki.
-4. Commits and pushes only when `back_up/` or `thread_back_up/` changed.
+1. Ensures the uv-managed Python 3.12 virtualenv in `.venv/` exists and exactly synchronizes the lock in `requirements.txt`.
+2. Runs the local regression tests before making network requests.
+3. Runs `.venv/bin/python fivech_back_up/thread_backup.py daily` to update the 5ch archive.
+4. Runs `.venv/bin/python seesawiki_back_up/crawl.py backup` to mirror the wiki.
+5. Commits and pushes only when `back_up/` or `thread_back_up/` changed.
 
-If the wiki crawler fails, the script aborts and nothing is committed. A 5ch backup failure is logged, but the wiki backup still runs.
+If the wiki crawler fails, the script aborts and nothing is committed. If the 5ch backup fails, the wiki backup still runs and may be committed, but the overall command exits with status 2 so cron/monitoring cannot mistake the partial result for full success.
 
 ## 5ch backup operations
 The 5ch helper stores metadata in `thread_back_up/state.json` and tracks the current thread URL in `thread_back_up/latest_thread_url.txt`. Typical commands (run from the repo root with the virtualenv activated):
 
 ```bash
-venv/bin/python fivech_back_up/thread_backup.py daily
-venv/bin/python fivech_back_up/thread_backup.py daily --refetch
-venv/bin/python fivech_back_up/thread_backup.py follow-prev <thread-url>
-venv/bin/python fivech_back_up/thread_backup.py import-wiki <wiki-url> [...]
+.venv/bin/python fivech_back_up/thread_backup.py daily
+.venv/bin/python fivech_back_up/thread_backup.py daily --refetch
+.venv/bin/python fivech_back_up/thread_backup.py follow-prev <thread-url>
+.venv/bin/python fivech_back_up/thread_backup.py import-wiki <wiki-url> [...]
 ```
 
 See `fivech_back_up/README.md` for detailed usage and one-off migration guidance.
 
 ## Initial setup checklist
-- Ensure `python3` is available; `gitpush.sh` will create `venv/` and install dependencies when needed.
+- Ensure `uv` and Python 3.12 are available; `gitpush.sh` creates `.venv/` and synchronizes the committed lock when needed.
 - Update `thread_back_up/latest_thread_url.txt` whenever the community opens a brand new thread.
 - Review `gitpush.sh` whenever adding new automated tasks so failures stop the daily job cleanly.
 
