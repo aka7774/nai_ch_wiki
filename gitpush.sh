@@ -11,20 +11,35 @@ VENV_DIR=".venv"
 PYTHON="$VENV_DIR/bin/python"
 backup_degraded=0
 
+resolve_uv() {
+    if command -v uv >/dev/null 2>&1; then
+        command -v uv
+        return 0
+    fi
+    for candidate in "$HOME/.local/bin/uv" "$HOME/.cargo/bin/uv"; do
+        if [ -x "$candidate" ]; then
+            printf '%s\n' "$candidate"
+            return 0
+        fi
+    done
+    return 1
+}
+
+if ! UV_BIN="$(resolve_uv)"; then
+    log "uv is not available in PATH or the supported user install paths. Aborting."
+    exit 1
+fi
+
 if [ ! -x "$PYTHON" ]; then
     log "Python virtualenv is missing. Creating $VENV_DIR with uv."
-    if ! command -v uv >/dev/null 2>&1; then
-        log "uv is not available. Aborting."
-        exit 1
-    fi
-    if ! uv venv --python 3.12 "$VENV_DIR"; then
+    if ! "$UV_BIN" venv --python 3.12 "$VENV_DIR"; then
         log "Failed to create $VENV_DIR. Aborting."
         exit 1
     fi
 fi
 
 log "Synchronizing pinned Python dependencies with uv."
-if ! uv pip sync --python "$PYTHON" requirements.txt; then
+if ! "$UV_BIN" pip sync --python "$PYTHON" requirements.txt; then
     log "Failed to synchronize requirements. Aborting."
     exit 1
 fi
