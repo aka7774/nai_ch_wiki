@@ -5609,7 +5609,7 @@
       "2024/12/14(土) 13:20:05.08",
       "QxltRzf/0",
       "",
-      " comfyuiのデスクトップ版いれてみたけどa1111とモデルを共有する設定を extra_model_paths.yaml に書いて適応してたのをインポートしたら同じ設定となったのはいいんだがそれを変える方法がわからないやがどこにあるんやろ？ <br> %USERPROFILE%\\AppData\\Local\\Programs\\@comfyorgcomfyui-electron\\resources\\ComfyUI に本体らしきものがあるけどここにはなかった ",
+      " comfyuiのデスクトップ版いれてみたけどa1111とモデルを共有する設定を extra_model_paths.yaml に書いて適応してたのをインポートしたら同じ設定となったのはいいんだがそれを変える方法がわからないやがどこにあるんやろ？ <br> C:\\Users\\PC\\AppData\\Local\\Programs\\@comfyorgcomfyui-electron\\resources\\ComfyUI に本体らしきものがあるけどここにはなかった ",
       0,
       2,
       6

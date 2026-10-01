@@ -1702,7 +1702,7 @@
  &gt;&gt;564 <br> これやわ！このblobと数字がfile_download.pyの中にも書いとった！ニキほんとありがとう&#128557; 
 
 568 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c354-QF9z) 2023/05/19(金) 15:28:47.93
- &gt;&gt;560 <br> とりあえず簡単な手順や <br> あとはワンチャンやね&#128557; <br>  <br> https://ux.&#103;&#101;&#116;&#117;&#112;&#108;&#111;&#97;&#100;&#101;&#114;.com/halero/download/78 <br> パスはrinna <br>  <br> ダウンロードして解凍したら「models--rinna--japanese-gpt-neox-3.6b-instruction-sft」を以下のフォルダの中に移動 <br> %USERPROFILE%\.cache\huggingface\hub <br>  <br> 中身を開いて下のtxtを探す <br> models--rinna--japanese-gpt-neox-3.6b-instruction-sft\blobs\0c6124c628f8ecc29be1b6ee0625670062340f5b99cfe543ccf049fa90e6207b.txt <br>  <br> pytorch_model.binを「0c6124c628f8ecc29be1b6ee0625670062340f5b99cfe543ccf049fa90e6207b」にリネーム <br>  <br> 最後にtxtはゴミ箱ポイーでええで
+ &gt;&gt;560 <br> とりあえず簡単な手順や <br> あとはワンチャンやね&#128557; <br>  <br> https://ux.&#103;&#101;&#116;&#117;&#112;&#108;&#111;&#97;&#100;&#101;&#114;.com/halero/download/78 <br> パスはrinna <br>  <br> ダウンロードして解凍したら「models--rinna--japanese-gpt-neox-3.6b-instruction-sft」を以下のフォルダの中に移動 <br> C:\Users\sin03\.cache\huggingface\hub <br>  <br> 中身を開いて下のtxtを探す <br> models--rinna--japanese-gpt-neox-3.6b-instruction-sft\blobs\0c6124c628f8ecc29be1b6ee0625670062340f5b99cfe543ccf049fa90e6207b.txt <br>  <br> pytorch_model.binを「0c6124c628f8ecc29be1b6ee0625670062340f5b99cfe543ccf049fa90e6207b」にリネーム <br>  <br> 最後にtxtはゴミ箱ポイーでええで 
 
 569 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c354-QF9z) 2023/05/19(金) 15:30:31.24
  &gt;&gt;567 <br> ええんやで <br> 問題を解決するのが趣味みたいなものやから&#128519; 

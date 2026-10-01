@@ -288,7 +288,7 @@ https://fate.5ch.net/test/read.cgi/liveuranus/1712909292/（なんJNVA部★382�
 
 https://github.com/EnArvy/Catboxer
 これやな
-%USERPROFILE%\AppData\Roaming\Microsoft\Windows\SendTo に放り込めば右クリで猫箱に送り込める
+C:\Users\PC\AppData\Roaming\Microsoft\Windows\SendTo に放り込めば右クリで猫箱に送り込める
 テキスト作ってユーザーハッシュ張り付けてCatboxer.confにリネームしたのも一緒に置けば自分のとこにほうりこめるで
 ただ1枚ずつしかできなかった
 （引用終わり）

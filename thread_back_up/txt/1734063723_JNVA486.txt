@@ -1399,7 +1399,7 @@
  anyなんとかの可能性がだんだんバレ始めてきた 
 
 467  警備員[Lv.114][SSR武][SSR防][苗] (ﾜｯﾁｮｲ bfb0-2n5F) 2024/12/14(土) 13:20:05.08
- comfyuiのデスクトップ版いれてみたけどa1111とモデルを共有する設定を extra_model_paths.yaml に書いて適応してたのをインポートしたら同じ設定となったのはいいんだがそれを変える方法がわからないやがどこにあるんやろ？ <br> %USERPROFILE%\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI に本体らしきものがあるけどここにはなかった
+ comfyuiのデスクトップ版いれてみたけどa1111とモデルを共有する設定を extra_model_paths.yaml に書いて適応してたのをインポートしたら同じ設定となったのはいいんだがそれを変える方法がわからないやがどこにあるんやろ？ <br> C:\Users\PC\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI に本体らしきものがあるけどここにはなかった 
 
 468  警備員[Lv.1][新芽] (ﾜｯﾁｮｲ 47b5-7Ydj) 2024/12/14(土) 13:23:38.47
  Noob来て上質な二次スカ画像できて嬉しい 
