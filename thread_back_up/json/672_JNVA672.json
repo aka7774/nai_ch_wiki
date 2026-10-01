@@ -3365,7 +3365,7 @@
       "2026/07/25(土) 06:52:15.78",
       "by+YID1M0",
       "",
-      " OneTrainerでkrea2のLoRAを作る際に <br>  <br> C:\\Users\\PC2025\\.cache\\huggingface\\hub\\models--krea--Krea-2-Raw\\snapshots\\4ad9f4b627a647fad78b3dfeebb09f2654aeb494 <br> に計33GBのファイルがあるのに <br>  <br> C:\\Users\\PC2025\\.cache\\huggingface\\hub\\models--krea--Krea-2-Raw\\snapshots\\6b0ece7fffb640c5e3bcbe0a7f10f66b8e60a603 <br> にもう一度ダウンロードしなおしてしまったんやけど <br>  <br> これって設定不足かなんかのせいなん？ ",
+      " OneTrainerでkrea2のLoRAを作る際に <br>  <br> %USERPROFILE%\\.cache\\huggingface\\hub\\models--krea--Krea-2-Raw\\snapshots\\4ad9f4b627a647fad78b3dfeebb09f2654aeb494 <br> に計33GBのファイルがあるのに <br>  <br> %USERPROFILE%\\.cache\\huggingface\\hub\\models--krea--Krea-2-Raw\\snapshots\\6b0ece7fffb640c5e3bcbe0a7f10f66b8e60a603 <br> にもう一度ダウンロードしなおしてしまったんやけど <br>  <br> これって設定不足かなんかのせいなん？ ",
       1,
       1,
       2

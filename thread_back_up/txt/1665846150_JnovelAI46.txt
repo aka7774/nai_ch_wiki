@@ -1465,7 +1465,7 @@
  &gt;&gt;467 <br> Gitでゴミが出来るってのもよく分からんけどな <br> あれ別にインストール後はGitコマンド実行しないと <br> .gitフォルダも作られないし、何を差してるのか分からん 
 
 489 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8b54-ZPbQ) 2022/10/16(日) 02:37:39.56
- &gt;&gt;475 <br> やってみた <br> やっぱデータそのものは入ってるんやな <br>  <br> C:\Users\EPI&gt;pip --version <br> pip 22.2.1 from C:\Users\●●●\AppData\Local\Programs\Python\Python310\lib\site-packages\pip (python 3.10) 
+ &gt;&gt;475 <br> やってみた <br> やっぱデータそのものは入ってるんやな <br>  <br> %USERPROFILE%&gt;pip --version <br> pip 22.2.1 from C:\Users\●●●\AppData\Local\Programs\Python\Python310\lib\site-packages\pip (python 3.10)
 
 490 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾃﾃﾝﾃﾝﾃﾝ MM7f-QYAa) 2022/10/16(日) 02:38:00.85
  &gt;&gt;484 <br> 草 <br> WebUI導入難しい民はwaifu1.4来るの待つしか無いな 

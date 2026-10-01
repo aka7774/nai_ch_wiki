@@ -838,7 +838,7 @@
  数年前にUbuntu触ったにわかやけどLinuxのファイルシステム(EXT4)はなんで更新日時がないんやろな <br> 作成日時だけあっても更新日時がないと困るで <br> それともワイが(更新日時の存在に)気付いていないだけか? 
 
 280 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.26]</span> (ﾜｯﾁｮｲ b74b-khXv) 2026/07/25(土) 06:52:15.78
- OneTrainerでkrea2のLoRAを作る際に <br>  <br> C:\Users\PC2025\.cache\huggingface\hub\models--krea--Krea-2-Raw\snapshots\4ad9f4b627a647fad78b3dfeebb09f2654aeb494 <br> に計33GBのファイルがあるのに <br>  <br> C:\Users\PC2025\.cache\huggingface\hub\models--krea--Krea-2-Raw\snapshots\6b0ece7fffb640c5e3bcbe0a7f10f66b8e60a603 <br> にもう一度ダウンロードしなおしてしまったんやけど <br>  <br> これって設定不足かなんかのせいなん？ 
+ OneTrainerでkrea2のLoRAを作る際に <br>  <br> %USERPROFILE%\.cache\huggingface\hub\models--krea--Krea-2-Raw\snapshots\4ad9f4b627a647fad78b3dfeebb09f2654aeb494 <br> に計33GBのファイルがあるのに <br>  <br> %USERPROFILE%\.cache\huggingface\hub\models--krea--Krea-2-Raw\snapshots\6b0ece7fffb640c5e3bcbe0a7f10f66b8e60a603 <br> にもう一度ダウンロードしなおしてしまったんやけど <br>  <br> これって設定不足かなんかのせいなん？
 
 281 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ b79f-vneB) 2026/07/25(土) 06:56:02.19
  ワイは一度.cacheにDLされたら再度DLするとかの挙動は無いな <br> 特に設定と化してないけど 
