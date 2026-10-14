@@ -18,7 +18,7 @@ Automated backups for the nai_ch SeesaaWiki and the associated 5ch "nanJNVA" thr
 4. Runs `.venv/bin/python seesawiki_back_up/crawl.py backup` to mirror the wiki.
 5. Commits and pushes only when `back_up/` or `thread_back_up/` changed.
 
-If the wiki crawler fails, the script aborts and nothing is committed. If the 5ch backup fails, the wiki backup still runs and may be committed, but the overall command exits with status 2 so cron/monitoring cannot mistake the partial result for full success.
+If the wiki crawler fails, including a run that saves zero wiki pages, the script aborts and nothing is committed. If the 5ch backup fails, the wiki backup still runs and may be committed, but the overall command exits with status 2 so cron/monitoring cannot mistake the partial result for full success.
 
 ## 5ch backup operations
 The 5ch helper stores metadata in `thread_back_up/state.json` and tracks the current thread URL in `thread_back_up/latest_thread_url.txt`. Typical commands (run from the repo root with the virtualenv activated):
@@ -38,7 +38,7 @@ See `fivech_back_up/README.md` for detailed usage and one-off migration guidance
 - Review `gitpush.sh` whenever adding new automated tasks so failures stop the daily job cleanly.
 
 ## Additional notes
-- Historic wiki backup behaviour is unchanged; refer to `seesawiki_back_up/README.md` for crawler details.
+- Refer to `seesawiki_back_up/README.md` for crawler details, failure detection, and bounded live checks.
 - Avoid committing machine specific paths or secrets in documentation or state files.
 
 ## 作り直す
