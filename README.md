@@ -45,7 +45,9 @@ See `fivech_back_up/README.md` for detailed usage and one-off migration guidance
 
 ### Prerequisites and installation
 
-Use Linux (or WSL), Git, Bash, `uv`, and Python 3.12. Network access is
+Use Linux (or WSL), Git, Bash, `uv`, and Python 3.12. The verified toolchain is
+Python 3.12.3 and uv 0.9.18; all 37 Python packages are pinned in
+`requirements.txt`. Network access is
 needed to install the pinned dependencies; collection additionally needs access
 to the source sites. Install Git/uv using their supported installation methods.
 Choose the checkout location according to your storage policy.
@@ -73,6 +75,13 @@ PYTHONPATH=. .venv/bin/python -m unittest discover -s tests -q
 .venv/bin/python -m scrapy list
 bash -n gitpush.sh
 ```
+
+To repeat this check from an existing checkout, run
+`bash scripts/rebuild_check.sh <temporary-directory>`. It clones `origin` into
+a newly created subdirectory, installs the locked environment, runs the offline
+checks above, prints elapsed time and checkout size, then deletes only that
+subdirectory, including on failure. Give it a temporary location with enough
+space for the checkout and packages. It never runs the collection or push job.
 
 The regression suite uses temporary data and mocked network responses. The
 Scrapy command should list `backup`; it loads the crawler without fetching
@@ -111,9 +120,30 @@ failure can still publish the wiki backup but exits with status 2.
 
 ### Verification coverage
 
-A separate checkout with Python 3.12.3 and a newly created environment passed
-locked dependency installation, dependency checks, all 9 regression tests,
+A fresh origin clone with Python 3.12.3 and a newly created environment passed
+locked dependency installation, dependency checks, all 20 regression tests,
 thread CLI help, crawler discovery, and shell syntax checks. Archived data was
-not checked out for that test. Live source retrieval, restoration of unpublished
+checked out but was not read by these checks. Live source retrieval, restoration of unpublished
 data, scheduler registration, and automatic Git publication were not exercised.
 These checks therefore verify the local rebuild, not successful live collection.
+
+### Moving to one PC
+
+- `C:\data\akari`: no required data for this repository; the tracked `back_up/`
+  and `thread_back_up/` directories come from the clone. If a previous run has
+  unpublished changes, recover them before starting the new collector.
+- `~/akari-data`: no persistent dependency. Provide only a writable temporary
+  directory for the rebuild check and tests.
+- Scheduler: recreate the external daily cron or equivalent entry for
+  `gitpush.sh`, with its absolute checkout path, local timezone, and log
+  destination. The original schedule is not recorded here.
+- Resident services: none. A writable Git remote, commit identity, and SSH
+  authentication are needed only for unattended publication.
+
+On 2026-10-20 JST, `rebuild_check.sh` took 38 seconds and used 910 MB for the
+shallow clone and new environment. No model or multi-GB dependency download is
+required. Skipped checks and what they need:
+
+- Live wiki and 5ch collection: source-site access and permission to update snapshots.
+- Unattended Git publication: configured remote authentication and scheduler.
+- Restoration of unpublished data: files from the previous installation.
