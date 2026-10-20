@@ -14,9 +14,9 @@ from seesawiki_back_up.spiders.backup import BackupSpider
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def response(html):
+def response(html, url="https://seesaawiki.jp/nai_ch/l/?p=0"):
     return HtmlResponse(
-        "https://seesaawiki.jp/nai_ch/l/?p=0",
+        url,
         body=html.encode("utf-8"),
         encoding="utf-8",
     )
@@ -58,6 +58,42 @@ class WikiSpiderTests(unittest.IsolatedAsyncioTestCase):
             response('<textarea id="content">wiki &amp; markup</textarea>'), "Page"
         ))
         self.assertEqual("wiki & markup", items[0]["text"])
+
+    def test_fixed_html_flows_from_listing_to_editor(self):
+        spider = BackupSpider()
+        listing = response("""
+            <ul class="page-list">
+              <li><a href="/nai_ch/d/Sample">Sample</a></li>
+              <li><a href="/nai_ch/d/Second">Second</a></li>
+            </ul>
+            <ul><li class="next"><a href="?p=1">Next</a></li></ul>
+        """)
+        requests = list(spider.parse(listing))
+        self.assertEqual(
+            ["https://seesaawiki.jp/nai_ch/d/Sample",
+             "https://seesaawiki.jp/nai_ch/d/Second",
+             "https://seesaawiki.jp/nai_ch/l/?p=1"],
+            [request.url for request in requests],
+        )
+        self.assertEqual(["Sample", "Second"],
+                         [request.cb_kwargs["title"] for request in requests[:2]])
+        self.assertEqual(spider.parse, requests[2].callback)
+
+        article = response(
+            '<ul><li class="edit"><a href="/nai_ch/e/Sample">Edit</a></li></ul>',
+            requests[0].url,
+        )
+        edit_request, = list(requests[0].callback(article, **requests[0].cb_kwargs))
+        self.assertEqual("https://seesaawiki.jp/nai_ch/e/Sample", edit_request.url)
+        self.assertEqual({"title": "Sample"}, edit_request.cb_kwargs)
+
+        editor = response(
+            '<textarea id="content">line 1 &amp; line 2\n[[link]]</textarea>',
+            edit_request.url,
+        )
+        item, = list(edit_request.callback(editor, **edit_request.cb_kwargs))
+        self.assertEqual("Sample", item["title"])
+        self.assertEqual("line 1 & line 2\n[[link]]", item["text"])
 
 
 class WikiCommandTests(unittest.TestCase):
