@@ -42,14 +42,24 @@ Group/Page<a href="https://seesaawiki.jp/nai_ch/e/edit?id=1"><img alt="edit" /><
 
 
 class WikiSpiderTests(unittest.IsolatedAsyncioTestCase):
-    async def test_start_yields_top_page_and_feed(self):
-        spider = BackupSpider()
-        requests = [request async for request in spider.start()]
+    async def test_start_yields_top_page_feed_and_known_titles(self):
+        with TemporaryDirectory() as legacy, TemporaryDirectory() as saved, patch(
+            "seesawiki_back_up.spiders.backup.LEGACY_DIR", Path(legacy)
+        ):
+            (Path(legacy) / "版権.txt").write_text("old", encoding="utf-8")
+            (Path(legacy) / "ignored.html").write_text("old", encoding="utf-8")
+            (Path(saved) / "Group_Page.html").write_text("new", encoding="utf-8")
+            (Path(saved) / "版権.html").write_text("new", encoding="utf-8")
+            spider = BackupSpider(save_dir=saved)
+            requests = [request async for request in spider.start()]
         self.assertEqual(
-            ["https://seesaawiki.jp/nai_ch/", "https://seesaawiki.jp/nai_ch/site.rdf"],
+            ["https://seesaawiki.jp/nai_ch/", "https://seesaawiki.jp/nai_ch/site.rdf",
+             "https://seesaawiki.jp/nai_ch/d/Group/Page",
+             "https://seesaawiki.jp/nai_ch/d/Group_Page",
+             "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2"],
             [request.url for request in requests],
         )
-        self.assertEqual([spider.parse_page, spider.parse_feed],
+        self.assertEqual([spider.parse_page, spider.parse_feed] + [spider.parse_page] * 3,
                          [request.callback for request in requests])
 
     def test_feed_yields_article_requests(self):

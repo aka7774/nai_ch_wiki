@@ -1,4 +1,5 @@
-from urllib.parse import urlsplit, urlunsplit
+from pathlib import Path
+from urllib.parse import quote, urlsplit, urlunsplit
 
 import scrapy
 from seesawiki_back_up.items import SeesawikiBackUpItem
@@ -7,6 +8,8 @@ from seesawiki_back_up.items import SeesawikiBackUpItem
 WIKI_TOP = "https://seesaawiki.jp/nai_ch/"
 WIKI_FEED = "https://seesaawiki.jp/nai_ch/site.rdf"
 PAGE_PREFIX = "/nai_ch/d/"
+# 2026-04-07 までに編集画面から取った本文 (題名.txt)。もう書き込まない
+LEGACY_DIR = Path(__file__).resolve().parents[2] / "back_up"
 
 
 class BackupSpider(scrapy.Spider):
@@ -21,6 +24,31 @@ class BackupSpider(scrapy.Spider):
         # トップページと RSS から記事ページ (/nai_ch/d/) のリンクをたどる。
         yield scrapy.Request(WIKI_TOP, self.parse_page)
         yield scrapy.Request(WIKI_FEED, self.parse_feed)
+        # どこからもリンクされていない記事も取れるように、前に保存した題名の記事ページも直接開く。
+        # 消えた記事は 404 になり、何も保存しない
+        for page_url in self.known_page_urls():
+            yield scrapy.Request(page_url, self.parse_page)
+
+    def known_page_urls(self):
+        sources = [(LEGACY_DIR, "*.txt")]
+        if getattr(self, "save_dir", None):
+            sources.append((Path(self.save_dir), "*.html"))
+        titles = set()
+        for directory, pattern in sources:
+            for path in directory.glob(pattern):
+                titles.add(path.stem)
+                # ファイル名では題名の "/" を "_" にしているので、元が "/" の場合も試す
+                titles.add(path.stem.replace("_", "/"))
+        urls = []
+        for title in sorted(titles):
+            try:
+                # 記事の URL は EUC-JP の題名をパーセントエンコードしたもの ("/" はそのまま)
+                encoded = quote(title.encode("euc_jp"), safe="/")
+            except UnicodeEncodeError:
+                continue
+            if encoded:
+                urls.append(f"https://seesaawiki.jp{PAGE_PREFIX}{encoded}")
+        return urls
 
     def parse_feed(self, response):
         # RSS は最近更新された記事。どこからもリンクされていない新しい記事の入口にする
