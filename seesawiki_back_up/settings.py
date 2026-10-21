@@ -22,6 +22,9 @@ USER_AGENT = (
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+# DEBUG would dump every saved page body into the daily cron log (~20 MB per run)
+LOG_LEVEL = "INFO"
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
 

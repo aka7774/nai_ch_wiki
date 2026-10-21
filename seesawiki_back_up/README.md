@@ -45,6 +45,7 @@ latest RSS items.
 
 ## Behaviour notes
 - Binary attachments and images are not downloaded; only page text is stored.
+- Scrapy logs at `INFO`: the stats dump (saved pages, `robotstxt/forbidden`, 404s) stays in the log, but page bodies are not echoed. Add `-s LOG_LEVEL=DEBUG` when a run needs per-request detail.
 - The Scrapy settings live in `settings.py`. Middleware and pipeline hooks are under the respective modules should you need to customise the crawl.
 - If SeesaaWiki changes its structure, adjust the spiders and rerun the command above.
 
