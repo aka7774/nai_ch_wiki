@@ -5,8 +5,11 @@ archive updates through its configured Git remote.
 
 ## Required user-visible behavior (must)
 
-1. The wiki backup must save retrieved editable page text under `back_up/`,
-   using page titles as filenames and replacing `/` with `_`.
+1. The wiki backup must save the rendered body of each wiki page it reaches
+   through robots.txt-permitted URLs as UTF-8 HTML under `back_up_html/`,
+   using page titles as filenames and replacing `/` with `_`. `back_up/`
+   keeps the editable page text retrieved before robots.txt disallowed the
+   editor URLs and is no longer written.
 2. The thread backup must retain fetched thread responses as JSON and readable
    TXT exports under `thread_back_up/`, with persistent metadata for later runs.
 3. The daily thread command must discover current matching threads, update the

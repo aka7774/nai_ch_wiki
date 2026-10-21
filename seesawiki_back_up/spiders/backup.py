@@ -1,5 +1,12 @@
+from urllib.parse import urlsplit, urlunsplit
+
 import scrapy
 from seesawiki_back_up.items import SeesawikiBackUpItem
+
+
+WIKI_TOP = "https://seesaawiki.jp/nai_ch/"
+WIKI_FEED = "https://seesaawiki.jp/nai_ch/site.rdf"
+PAGE_PREFIX = "/nai_ch/d/"
 
 
 class BackupSpider(scrapy.Spider):
@@ -10,48 +17,43 @@ class BackupSpider(scrapy.Spider):
         super(BackupSpider, self).__init__(*args, **kwargs)
 
     async def start(self):
-        yield scrapy.Request(
-            "https://seesaawiki.jp/nai_ch/l/?p=0&order=lastupdate&on_desc=1", self.parse
-        )
+        # robots.txt は一覧 (/*/l/) と編集 (/*/e/) を禁じているので、
+        # トップページと RSS から記事ページ (/nai_ch/d/) のリンクをたどる。
+        yield scrapy.Request(WIKI_TOP, self.parse_page)
+        yield scrapy.Request(WIKI_FEED, self.parse_feed)
 
-    def parse(self, response):
-        # HTTP エラーの再試行は Scrapy の RetryMiddleware に任せる。
-        # 一覧のページからすべての記事のリンクを取得し移動
-        links = response.xpath('//ul[@class="page-list"]/li/a')
-        for link in links:
-            page_link = link.attrib["href"]
-            title = link.xpath("./text()").get()
-            if page_link is not None:
-                page_link = response.urljoin(page_link)
-                yield scrapy.Request(
-                    page_link,
-                    callback=self.parse_article_page,
-                    cb_kwargs={"title": title},
-                )
-        # 次の一覧が存在していたら取得
-        next_page_link = response.xpath("//li[@class='next']/a/@href").get()
-        if next_page_link:
-            yield response.follow(next_page_link, callback=self.parse)
+    def parse_feed(self, response):
+        # RSS は最近更新された記事。どこからもリンクされていない新しい記事の入口にする
+        for link in response.xpath('//*[local-name()="item"]/*[local-name()="link"]/text()').getall():
+            page_url = self.page_url(response, link.strip())
+            if page_url:
+                yield scrapy.Request(page_url, callback=self.parse_page)
 
-    def parse_article_page(self, response, title: str):
-        # 記事のページから編集ページをリンクを取得し移動
-        edit_page_link = response.xpath("//li[@class='edit']/a[1]/@href").get()
-        if edit_page_link:
-            # 編集がロックされている場合はスルー
-            edit_page_link = response.urljoin(edit_page_link)
-            yield scrapy.Request(
-                edit_page_link,
-                callback=self.parse_edit_page,
-                cb_kwargs={"title": title},
-            )
+    def parse_page(self, response):
+        # 記事の本文 (表示された HTML) を保存する
+        title = "".join(response.css("#page-header .title h2::text").getall()).strip()
+        body = response.css("#page-body div.user-area").get()
+        if title and body:
+            item = SeesawikiBackUpItem()
+            item["title"] = title
+            item["text"] = body
+            yield item
+        else:
+            self.logger.warning("No wiki page body found: %s", response.url)
+        # ほかの記事へのリンクをたどる (重複は Scrapy が除く)
+        for href in response.xpath("//a/@href").getall():
+            page_url = self.page_url(response, href)
+            if page_url:
+                yield scrapy.Request(page_url, callback=self.parse_page)
 
-    def parse_edit_page(self, response, title: str):
-        if not response.css("textarea#content"):
-            self.logger.warning("No wiki editor found: %s", response.url)
-            return
-        item = SeesawikiBackUpItem()
-        # 編集用のテキストを取得
-        textarea = response.css("textarea#content::text")
-        item["text"] = textarea.get(default="")
-        item["title"] = title
-        yield item
+    @staticmethod
+    def page_url(response, href):
+        url = urlsplit(response.urljoin(href))
+        if (
+            url.scheme not in ("http", "https")
+            or url.netloc != "seesaawiki.jp"
+            or not url.path.startswith(PAGE_PREFIX)
+            or url.path == PAGE_PREFIX
+        ):
+            return None
+        return urlunsplit(("https", url.netloc, url.path, "", ""))

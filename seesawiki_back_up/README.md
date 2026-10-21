@@ -3,13 +3,13 @@
 This directory contains the Scrapy project that mirrors https://seesaawiki.jp/nai_ch/ . The job `backup` is executed by `gitpush.sh` every day after the 5ch backup.
 
 ## Entry point
-The helper script `crawl.py` ensures an output directory (`back_up/`) exists and runs Scrapy:
+The helper script `crawl.py` ensures an output directory (`back_up_html/`) exists and runs Scrapy:
 
 ```bash
 .venv/bin/python seesawiki_back_up/crawl.py backup
 ```
 
-`backup` is the spider defined under `seesawiki_back_up/spiders/` and writes the latest markup for each wiki page to `back_up/<page>.txt` (UTF-8 encoded).
+`backup` is the spider defined under `seesawiki_back_up/spiders/`. It starts from the wiki top page and the RSS feed (`site.rdf`), follows links to article pages (`/nai_ch/d/…`) and writes each page's rendered body (`div.user-area`) to `back_up_html/<page>.html` (UTF-8 encoded). `back_up/<page>.txt` holds the wiki source text collected until 2026-04-07 and is no longer written.
 
 The spider uses Scrapy's asynchronous `start()` entry point. The command exits
 with status 1 if startup fails or no items pass the saving pipeline in the
@@ -36,8 +36,9 @@ temporary output. Run the offline regression suite with
 On 2026-10-14 a live check was rejected by robots.txt (`robotstxt/forbidden`):
 the site's rules disallowed both listing (`/*/l/`) and editing (`/*/e/`) URLs.
 With `ROBOTSTXT_OBEY=True`, that run correctly failed with zero saved pages.
-The command's exit status detects this condition; fixing the startup entry
-point alone does not establish successful live collection.
+Since 2026-10-21 the spider reads only the top page, `site.rdf` and article
+pages, which robots.txt allows; `ROBOTSTXT_OBEY` stays `True`. Pages that no
+collected page links to and that are not among the latest RSS items are missed.
 
 ## Behaviour notes
 - Binary attachments and images are not downloaded; only page text is stored.

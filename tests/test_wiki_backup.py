@@ -5,16 +5,18 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
-from scrapy.http import HtmlResponse
+from scrapy.http import HtmlResponse, XmlResponse
 
 from seesawiki_back_up.crawl import main
+from seesawiki_back_up.items import SeesawikiBackUpItem
+from seesawiki_back_up.pipelines import SeesawikiBackUpPipeline
 from seesawiki_back_up.spiders.backup import BackupSpider
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 
-def response(html, url="https://seesaawiki.jp/nai_ch/l/?p=0"):
+def response(html, url="https://seesaawiki.jp/nai_ch/d/Page"):
     return HtmlResponse(
         url,
         body=html.encode("utf-8"),
@@ -22,78 +24,82 @@ def response(html, url="https://seesaawiki.jp/nai_ch/l/?p=0"):
     )
 
 
+PAGE_HTML = """
+<div id="page-header"><div class="title"><div class="inner"><h2>
+Group/Page<a href="https://seesaawiki.jp/nai_ch/e/edit?id=1"><img alt="edit" /></a>
+</h2></div></div></div>
+<div id="page-body"><div id="page-body-inner">
+<div class="user-area"><table><tr><td>prompt &amp; text</td></tr></table>
+<a href="/nai_ch/d/Second#section">Second</a></div>
+<div id="information-box"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=1">Edit</a></div>
+</div></div>
+<div id="sub"><a href="https://seesaawiki.jp/nai_ch/d/Menu?x=1">Menu</a>
+<a href="https://seesaawiki.jp/nai_ch/l/">List</a>
+<a href="https://seesaawiki.jp/nai_ch/hist/Page">History</a>
+<a href="https://seesaawiki.jp/other/d/Page">Other wiki</a>
+<a href="https://seesaawiki.jp/nai_ch/d/">Empty</a></div>
+"""
+
+
 class WikiSpiderTests(unittest.IsolatedAsyncioTestCase):
-    async def test_start_yields_one_listing_request(self):
+    async def test_start_yields_top_page_and_feed(self):
         spider = BackupSpider()
         requests = [request async for request in spider.start()]
-        self.assertEqual(1, len(requests))
         self.assertEqual(
-            "https://seesaawiki.jp/nai_ch/l/?p=0&order=lastupdate&on_desc=1",
-            requests[0].url,
-        )
-        self.assertEqual(spider.parse, requests[0].callback)
-
-    def test_last_listing_still_yields_article(self):
-        requests = list(BackupSpider().parse(response(
-            '<ul class="page-list"><li><a href="/nai_ch/d/page">Page</a></li></ul>'
-        )))
-        self.assertEqual(1, len(requests))
-        self.assertEqual("https://seesaawiki.jp/nai_ch/d/page", requests[0].url)
-        self.assertEqual({"title": "Page"}, requests[0].cb_kwargs)
-
-    def test_next_listing_resolves_relative_url(self):
-        requests = list(BackupSpider().parse(response(
-            '<li class="next"><a href="?p=1">Next</a></li>'
-        )))
-        self.assertEqual("https://seesaawiki.jp/nai_ch/l/?p=1", requests[0].url)
-
-    def test_locked_article_has_no_edit_request(self):
-        self.assertEqual([], list(BackupSpider().parse_article_page(response(""), "Page")))
-
-    def test_missing_editor_does_not_yield_item(self):
-        self.assertEqual([], list(BackupSpider().parse_edit_page(response(""), "Page")))
-
-    def test_editor_text_is_extracted(self):
-        items = list(BackupSpider().parse_edit_page(
-            response('<textarea id="content">wiki &amp; markup</textarea>'), "Page"
-        ))
-        self.assertEqual("wiki & markup", items[0]["text"])
-
-    def test_fixed_html_flows_from_listing_to_editor(self):
-        spider = BackupSpider()
-        listing = response("""
-            <ul class="page-list">
-              <li><a href="/nai_ch/d/Sample">Sample</a></li>
-              <li><a href="/nai_ch/d/Second">Second</a></li>
-            </ul>
-            <ul><li class="next"><a href="?p=1">Next</a></li></ul>
-        """)
-        requests = list(spider.parse(listing))
-        self.assertEqual(
-            ["https://seesaawiki.jp/nai_ch/d/Sample",
-             "https://seesaawiki.jp/nai_ch/d/Second",
-             "https://seesaawiki.jp/nai_ch/l/?p=1"],
+            ["https://seesaawiki.jp/nai_ch/", "https://seesaawiki.jp/nai_ch/site.rdf"],
             [request.url for request in requests],
         )
-        self.assertEqual(["Sample", "Second"],
-                         [request.cb_kwargs["title"] for request in requests[:2]])
-        self.assertEqual(spider.parse, requests[2].callback)
+        self.assertEqual([spider.parse_page, spider.parse_feed],
+                         [request.callback for request in requests])
 
-        article = response(
-            '<ul><li class="edit"><a href="/nai_ch/e/Sample">Edit</a></li></ul>',
-            requests[0].url,
+    def test_feed_yields_article_requests(self):
+        spider = BackupSpider()
+        feed = XmlResponse(
+            "https://seesaawiki.jp/nai_ch/site.rdf",
+            body=b"""<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/">
+<channel rdf:about="https://seesaawiki.jp/nai_ch/"><link>https://seesaawiki.jp/nai_ch/</link></channel>
+<item rdf:about="https://seesaawiki.jp/nai_ch/d/New%a5%da"><link>https://seesaawiki.jp/nai_ch/d/New%a5%da</link></item>
+</rdf:RDF>""",
         )
-        edit_request, = list(requests[0].callback(article, **requests[0].cb_kwargs))
-        self.assertEqual("https://seesaawiki.jp/nai_ch/e/Sample", edit_request.url)
-        self.assertEqual({"title": "Sample"}, edit_request.cb_kwargs)
+        requests = list(spider.parse_feed(feed))
+        self.assertEqual(["https://seesaawiki.jp/nai_ch/d/New%a5%da"],
+                         [request.url for request in requests])
+        self.assertEqual(spider.parse_page, requests[0].callback)
 
-        editor = response(
-            '<textarea id="content">line 1 &amp; line 2\n[[link]]</textarea>',
-            edit_request.url,
+    def test_page_body_is_saved_and_only_article_links_followed(self):
+        spider = BackupSpider()
+        results = list(spider.parse_page(response(PAGE_HTML)))
+        item, *requests = results
+        self.assertEqual("Group/Page", item["title"])
+        self.assertTrue(item["text"].startswith('<div class="user-area">'))
+        self.assertIn("prompt &amp; text", item["text"])
+        self.assertNotIn("information-box", item["text"])
+        self.assertEqual(
+            ["https://seesaawiki.jp/nai_ch/d/Second",
+             "https://seesaawiki.jp/nai_ch/d/Menu"],
+            [request.url for request in requests],
         )
-        item, = list(edit_request.callback(editor, **edit_request.cb_kwargs))
-        self.assertEqual("Sample", item["title"])
-        self.assertEqual("line 1 & line 2\n[[link]]", item["text"])
+        self.assertTrue(all(request.callback == spider.parse_page for request in requests))
+
+    def test_page_without_body_yields_no_item(self):
+        results = list(BackupSpider().parse_page(response(
+            '<a href="/nai_ch/d/Other">Other</a>'
+        )))
+        self.assertEqual(["https://seesaawiki.jp/nai_ch/d/Other"],
+                         [request.url for request in results])
+
+    def test_pipeline_writes_html_file(self):
+        with TemporaryDirectory() as tmpdir:
+            spider = BackupSpider()
+            spider.save_dir = tmpdir
+            item = SeesawikiBackUpItem(title="Group/Page", text="<div>body</div>")
+            SeesawikiBackUpPipeline().process_item(item, spider)
+            self.assertEqual(
+                "<div>body</div>",
+                (Path(tmpdir) / "Group_Page.html").read_text(encoding="utf-8"),
+            )
 
 
 class WikiCommandTests(unittest.TestCase):
@@ -149,13 +155,17 @@ runpy.run_path("seesawiki_back_up/crawl.py", run_name="__main__")
         with TemporaryDirectory() as tmpdir:
             output = Path(tmpdir) / "pages"
             result = self.run_offline_command(
-                '    yield scrapy.Request("data:text/html,%3Ctextarea%20id%3D%22content%22%3E'
-                'offline%20wiki%3C%2Ftextarea%3E", callback=self.parse_edit_page, '
-                'cb_kwargs={"title": "Page"}, dont_filter=True)', output,
+                '    yield scrapy.Request("data:text/html,%3Cdiv%20id%3D%22page-header%22%3E'
+                '%3Cdiv%20class%3D%22title%22%3E%3Ch2%3EPage%3C%2Fh2%3E%3C%2Fdiv%3E%3C%2Fdiv%3E'
+                '%3Cdiv%20id%3D%22page-body%22%3E%3Cdiv%20class%3D%22user-area%22%3E'
+                'offline%20wiki%3C%2Fdiv%3E%3C%2Fdiv%3E", callback=self.parse_page, '
+                'dont_filter=True)', output,
             )
             self.assertEqual(0, result.returncode, result.stderr)
-            self.assertEqual("offline wiki", (output / "Page.txt").read_text(encoding="utf-8"))
-
+            self.assertEqual(
+                '<div class="user-area">offline wiki</div>',
+                (output / "Page.html").read_text(encoding="utf-8"),
+            )
 
 if __name__ == "__main__":
     unittest.main()

@@ -17,7 +17,7 @@ from seesawiki_back_up import settings as project_settings
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Back up SeesaaWiki pages.")
     parser.add_argument("spider", choices=["backup"])
-    parser.add_argument("--save-dir", type=pathlib.Path, default=ROOT_DIR / "back_up")
+    parser.add_argument("--save-dir", type=pathlib.Path, default=ROOT_DIR / "back_up_html")
     parser.add_argument("-s", "--set", action="append", default=[], metavar="NAME=VALUE")
     args = parser.parse_args(argv)
 

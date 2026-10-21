@@ -3,7 +3,8 @@
 Automated backups for the nai_ch SeesaaWiki and the associated 5ch "nanJNVA" threads.
 
 ## Repository layout
-- `back_up/` – latest SeesaaWiki page snapshots produced by the Scrapy crawler.
+- `back_up_html/` – latest SeesaaWiki page bodies (rendered HTML) produced by the Scrapy crawler.
+- `back_up/` – SeesaaWiki page source text as last retrievable (2026-04-07); no longer updated.
 - `thread_back_up/` – stored 5ch thread exports (`json`／`txt`),手動取得した `dat/`、および状態ファイル。
 - `seesawiki_back_up/` – Scrapy project that mirrors the wiki (`crawl.py` entry point).
 - `fivech_back_up/thread_backup.py` – 5ch thread backup CLI used during the daily run.
@@ -15,10 +16,13 @@ Automated backups for the nai_ch SeesaaWiki and the associated 5ch "nanJNVA" thr
 1. Ensures the uv-managed Python 3.12 virtualenv in `.venv/` exists and exactly synchronizes the lock in `requirements.txt`.
 2. Runs the local regression tests before making network requests.
 3. Runs `.venv/bin/python fivech_back_up/thread_backup.py daily` to update the 5ch archive.
-4. Runs `.venv/bin/python seesawiki_back_up/crawl.py backup` to mirror the wiki.
-5. Commits and pushes only when `back_up/` or `thread_back_up/` changed.
+4. Runs `.venv/bin/python seesawiki_back_up/crawl.py backup` to mirror the wiki into `back_up_html/`.
+5. Commits and pushes only when `back_up_html/` or `thread_back_up/` changed.
 
 If the wiki crawler fails, including a run that saves zero wiki pages, the script aborts and nothing is committed. If the 5ch backup fails, the wiki backup still runs and may be committed, but the overall command exits with status 2 so cron/monitoring cannot mistake the partial result for full success.
+
+### Wiki collection route (2026-10-21)
+SeesaaWiki's robots.txt now disallows the page list (`/*/l/`) and editor (`/*/e/`) URLs from which the crawler read each page's source text. The Wayback Machine copy of 2025-09-02 did not disallow them, and the source text in `back_up/` stops at 2026-04-07 although the wiki kept being edited, so the change most likely took effect in April 2026; the start URL and User-Agent did not change. Because the crawler obeys robots.txt, it saved nothing from then on: the daily run still reported success until 2026-07-25, the 2026-07-26 Scrapy update then kept the spider from starting at all, and once that was fixed on 2026-10-14 every run failed with `robotstxt/forbidden` (from 2026-10-15). SeesaaWiki offers readers no export or API, so the crawler now starts from the top page and the RSS feed (`site.rdf`), follows links to article pages (`/nai_ch/d/…`, which robots.txt allows) and saves each page's rendered body (`div.user-area`) as UTF-8 HTML in `back_up_html/<title>.html`; `ROBOTSTXT_OBEY` stays `True`. `back_up/` keeps the 2026-04-07 source text for tools that parse wiki markup. Pages that no collected page links to and that are not among the latest RSS items are not collected.
 
 ## 5ch backup operations
 The 5ch helper stores metadata in `thread_back_up/state.json` and tracks the current thread URL in `thread_back_up/latest_thread_url.txt`. Typical commands (run from the repo root with the virtualenv activated):
@@ -90,7 +94,7 @@ pages. The thread CLI with no command defaults to `daily`, so always include
 
 ### Restore data and resume the daily job
 
-A full clone restores the committed `back_up/` and `thread_back_up/` snapshots.
+A full clone restores the committed `back_up/`, `back_up_html/` and `thread_back_up/` snapshots.
 Recover any newer, uncommitted files from the previous installation before
 resuming collection, while its collector is not writing. Preserve the thread
 state, current-thread URL, JSON/TXT exports, manual DAT files, and CSV index

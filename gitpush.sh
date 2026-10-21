@@ -70,12 +70,12 @@ if ! "$PYTHON" seesawiki_back_up/crawl.py backup; then
     exit 1
 fi
 
-if ! git status --porcelain back_up thread_back_up | grep -q "."; then
+if ! git status --porcelain back_up_html thread_back_up | grep -q "."; then
     log "No backup changes detected. Skipping commit."
     finish
 fi
 
-git add back_up thread_back_up
+git add back_up_html thread_back_up
 
 if git diff --cached --quiet; then
     log "No staged backup changes detected. Skipping commit."

@@ -9,6 +9,6 @@ import scrapy
 class SeesawikiBackUpItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    text = scrapy.Field()  # 抽出したテキスト
+    text = scrapy.Field()  # 抽出した本文の HTML
     title = scrapy.Field()  # 抽出したタイトル
     pass
