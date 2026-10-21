@@ -1,0 +1,590 @@
+<div class="user-area">
+学習は別のでやる流れだけど生成には便利に使えるはず。<br>
+<br>
+<span style="color:#ff0000;">Remote UI(1111を含む)の利用が禁止になりました。</span><br>
+以後、ブラウザで操作するタイプのソフトウェアは使わないでください。<br>
+<ul id="content_block_1" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%f2%a5%af%a5%e9%a5%a6%a5%c9%a4%c7">ローカルをクラウドで</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/kohya%5ftrain%5fnetwork%5fsimple">学習用Notebook</a></li>
+</ul>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 最新版はこちら</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> 更新について</a></li>
+<li class="list-2"><a href="#content_1_2"> 更新履歴</a>
+<ul>
+<li class="list-3"><a href="#content_1_2_1"> 2023-04-05</a></li>
+<li class="list-3"><a href="#content_1_2_2"> 2023-03-19</a></li>
+<li class="list-3"><a href="#content_1_2_3"> 2023-03-16</a></li>
+<li class="list-3"><a href="#content_1_2_4"> 2023-02-15</a></li>
+<li class="list-3"><a href="#content_1_2_5"> 2023-01-24</a></li>
+<li class="list-3"><a href="#content_1_2_6"> 2023-01-14</a></li>
+<li class="list-3"><a href="#content_1_2_7"> 2022-12-20</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2"> 初心者向け手順</a>
+<ul>
+<li class="list-2"><a href="#content_2_3"> 注意</a>
+<ul>
+<li class="list-3"><a href="#content_2_3_8"> Notebookを新規作成できたら、最初に Rumtime - Change runtime type で GPU を選ぶ</a></li>
+<li class="list-3"><a href="#content_2_3_9"> このNotebookではいくつかのExtensionが自動インストールされる</a></li>
+<li class="list-3"><a href="#content_2_3_10"> モデルを増やしたい時はFilerでダウンロードしよう</a></li>
+<li class="list-3"><a href="#content_2_3_11"> Google Driveのマウントはしなくても動かせるのでお好みで</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> 赤ちゃん用Notebook</a></li>
+<li class="list-1"><a href="#content_4"> 入門用Notebook(旧バージョン)</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_2" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 最新版はこちら <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_2-body" class="wiki-section-body-1">
+<br>
+今後の更新はありません。<br>
+<br>
+最終版のセル(参考)<br>
+<pre id="content_block_3" class="BOX">
+#@title ↓再生ボタンを押してね
+
+#@markdown 実行は自己責任で。
+
+#@markdown gradioログイン情報(パスワード空白時は自動生成)
+user = "user"#@param {type:"string"}
+password = ""#@param {type:"string"}
+
+
+
+#@markdown 環境調査(2回目以降は飛ばしてもいい)
+use_envcheck = True #@param {type:"boolean"}
+if use_envcheck:
+  # Ubuntu
+  !uname -m &amp;&amp; cat /etc/*release
+  res = !cat /etc/*release | grep 'VERSION_ID' | grep -o '[0-9.]*'
+  if not res[0].startswith('20.04'):
+    raise RuntimeError("Ubuntuのバージョンが変わった " + res[0])
+
+  # Python
+  res = !python -V | grep -o '[0-9.]*'
+  if not res[0].startswith('3.9.'):
+    raise RuntimeError("Pythonのバージョンが変わった " + res[0])
+
+  # GPU/CUDA
+  !nvidia-smi
+  res = !nvcc -V | grep 'Cuda compilation tools, release' | grep -o '[0-9.]*'
+  if not res[0].startswith('11.8'):
+    raise RuntimeError("CUDAのバージョンが変わった " + res[0])
+
+  # RAMの容量取得(GiB)
+  res = !free -m | grep 'Mem:' | awk '{print $2}'
+  if not res:
+    raise ValueError("RAMが取得できない")
+  ram = round(float(res[0]) / 1024, 3)
+  if ram &lt; 12:
+    raise ValueError("RAMが思ったより少ない" + ram)
+  print(f"RAM : {ram}")
+
+  # VRAMの容量取得(GiB)
+  res = !nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
+  if not res:
+    raise ValueError("VRAMが取得できない(GPUに繋がってないかも)")
+  vram = round(float(res[0]) / 1024, 3)
+  if vram &lt; 14:
+    raise ValueError("VRAMが思ったより少ない " + vram)
+  print(f"VRAM: {vram}")
+  del res
+
+### セットアップ
+
+%cd /content
+
+#@markdown # Pythonインストール
+
+#@markdown miniconda 3.10.9
+use_conda = False #@param {type:"boolean"}
+#@markdown apt-get 3.10.10 こっちは最近調子悪いみたい
+use_apt = False #@param {type:"boolean"}
+
+if use_conda and use_apt:
+   raise ValueError("どっちやねん")
+
+if use_conda:
+   !wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   !bash Miniconda3-latest-Linux-x86_64.sh -b -f -p /usr/local
+
+if use_apt:
+  !sudo apt autoremove
+  !sudo apt-get -y update
+  !sudo apt-get -y install python3.10
+  !sudo cp `which python3.10` /usr/local/bin/python
+
+# Pythonのバージョン確認
+!python -V
+
+# pipを最新に
+!wget https://bootstrap.pypa.io/get-pip.py -O - | sudo python
+
+#@markdown xformersインストール(当面torch1のみ)
+use_xformers = False #@param {type:"boolean"}
+
+#@markdown torch2インストール(use_conda必須)
+use_torch2 = False #@param {type:"boolean"}
+if use_torch2:
+  !pip install --upgrade torch torchvision --extra-index-url https://download.pytorch.org/whl/cu118
+# torch1をアップデート(Python 3.10の時だけ)
+elif use_conda or use_apt:
+  !pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+
+if use_xformers:
+  !pip install -U --pre triton
+  !pip install xformers==0.0.16rc425
+
+# これが無いと動かないので
+!pip install fastapi==0.90.1
+
+### パスワード関連
+
+# デフォルトパスワード生成
+import secrets
+import string
+
+def get_password(length: int) -&gt; str:
+    # secretsはrandomとかと違って暗号学的に安全な乱数を生成できる。
+    pass_chars = string.ascii_letters + string.digits
+    password = ''.join(secrets.choice(pass_chars) for i in range(length))
+    return password
+
+if not password:
+    password = get_password(64)
+
+del secrets
+del string
+del get_password
+
+### WEBUIのセットアップ
+
+%cd /content/
+!git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+%cd stable-diffusion-webui/models/Stable-diffusion
+
+#@markdown モデルのURL(複数いるならFilerでダウンロードしましょう)
+ckpt_url = 'https://huggingface.co/aka7774/fp16_safetensors/resolve/main/7th_anime_v3_A-fp16-1833-2982-0018.safetensors'#@param {type:"string"}
+# ダウンロードにトークンの要らないモデルなのでコメントアウト
+##@markdown トークンはここで貰ってきて https://huggingface.co/settings/tokens
+#user_token = ''#@param {type:"string"}
+#user_header = f"\"Authorization: Bearer {user_token}\""
+#!wget -c --header={user_header} "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+#del user_header
+if ckpt_url:
+   !wget -c "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+
+# @markdown aria2cで落としたいモデルのURL(なければ空白)
+aria_url = ''#@param {type:"string"}
+if aria_url:
+    !apt install -y -qq aria2
+    !aria2c --summary-interval=10 -x 3 --allow-overwrite=true -Z {aria_url}
+
+import os
+
+#@markdown # Extensions
+%cd /content/stable-diffusion-webui/extensions/
+
+#@markdown --enable-insecure-extension-access
+use_eiea = False #@param {type:"boolean"}
+
+#@markdown ImagesとFilerはColabで便利なので入れましょう
+use_filer = True #@param {type:"boolean"}
+if use_filer:
+    #!git clone https://github.com/aka7774/sd_images_browser.git
+    !git clone https://github.com/AlUlkesh/stable-diffusion-webui-images-browser.git
+    !git clone https://github.com/aka7774/sd_filer.git
+
+#@markdown 型抜き系(Katanuki rembg PBRemTools)
+use_katanuki = False #@param {type:"boolean"}
+if use_katanuki:
+    !git clone https://github.com/mattyamonaca/PBRemTools.git
+    !git clone https://github.com/aka7774/sd_katanuki.git
+    !git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg.git
+
+#@markdown 学習関連(dreambooth, Hypernetwork-MonkeyPatch)
+use_train = False #@param {type:"boolean"}
+if use_train:
+    !git clone https://github.com/d8ahazard/sd_dreambooth_extension.git
+    !git clone https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension.git
+
+#@markdown マージ関連(supermerger, MBW)とモデル変換(toolkit)
+use_merge = False #@param {type:"boolean"}
+if use_merge:
+    !git clone https://github.com/hako-mikan/sd-webui-supermerger.git
+    !git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui.git
+    !git clone https://github.com/aka7774/sd_merge_numa.git
+    !git clone https://github.com/arenatemp/stable-diffusion-webui-model-toolkit.git
+
+#@markdown LoRA関連(additional-networks, locon, two-shot)
+use_lora = False #@param {type:"boolean"}
+if use_lora:
+    !git clone https://github.com/kohya-ss/sd-webui-additional-networks.git
+    !git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-locon.git
+    !git clone https://github.com/opparco/stable-diffusion-webui-two-shot.git
+
+#@markdown ControlNet(fp16モデルつき)
+use_controlnet = False #@param {type:"boolean"}
+if use_controlnet:
+  !pip install prettytable
+  !git clone https://github.com/Mikubill/sd-webui-controlnet.git
+  %cd sd-webui-controlnet
+  !git clone https://huggingface.co/webui/ControlNet-modules-safetensors.git
+  for fi in os.listdir("ControlNet-modules-safetensors"):
+    os.rename(f"ControlNet-modules-safetensors/{fi}", f"models/{fi}")
+  %cd ..
+  !git clone https://github.com/gogodr/sd-webui-stopmotion.git
+
+#@markdown aka: fake_xyplot, curly_rand, copyguard
+use_aka = False #@param {type:"boolean"}
+if use_aka:
+    !git clone https://github.com/aka7774/sd_fake_xyplot.git
+    !git clone https://github.com/aka7774/sd_curly_rand.git
+    !git clone https://github.com/aka7774/sd_copyguard.git
+
+#@markdown aka: Gimai(ゲームの会話シーン制作)
+use_gimai = False #@param {type:"boolean"}
+if use_gimai:
+  !sudo apt install ffmpeg
+  !ffmpeg -version
+  !git clone https://github.com/aka7774/sd_gimai.git
+  %cd sd_gimai
+  !git clone https://huggingface.co/spaces/skytnt/moe-tts.git
+  %cd ..
+
+# 一度起動して必要なものをインストールする
+%cd /content/stable-diffusion-webui/
+!COMMANDLINE_ARGS="--exit" REQS_FILE="requirements.txt" python launch.py
+
+#@markdown ## Google Driveのマウント(任意)
+use_drive = False #@param {type:"boolean"}
+if use_drive:
+  from google.colab import drive
+  drive.mount('/content/drive')
+  # filerのデフォルトバックアップ先を設定
+  !mkdir -m 0777 /content/stable-diffusion-webui/extensions/sd_filer/config
+  !echo '{"backup_dir":"/content/drive/MyDrive/sd"}' &gt; /content/stable-diffusion-webui/extensions/sd_filer/config/config.json
+
+# WEBUIの起動
+!COMMANDLINE_ARGS="{'--xformers' if use_xformers else ''} {'--opt-sdp-no-mem-attention' if use_torch2 else ''} --opt-channelslast {'--enable-insecure-extension-access' if use_eiea else ''} --share --gradio-auth {user}:{password}" REQS_FILE="requirements.txt" python launch.py
+</pre>
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> 更新について <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<br>
+pipの問題で動かなくなりがちなのでコメント等を見るといいかも。<br>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> 更新履歴 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+</div></div><div id="content_block_9" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_1"> 2023-04-05 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1_2_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_9-body" class="wiki-section-body-3">
+<ul id="content_block_10" class="list-1">
+<li> 本体の動作確認できてないんだけど、気になったExtensionを追加した。
+<ul class="list-2">
+<li> PBRemTools AlUlkesh/stable-diffusion-webui-images-browser sd-webui-stopmotion</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_12" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_2"> 2023-03-19 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1_2_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_12-body" class="wiki-section-body-3">
+<ul id="content_block_13" class="list-1">
+<li> torch2に対応しました。めちゃ速くなるので楽しい。</li>
+<li> xformersを入れなくできるようにした(torch2では不要だし)</li>
+<li> 環境調査をスキップできるようにした</li>
+<li> Extensionsを更新(LyCoris動かす用など)</li>
+<li> --enable-insecure-extension-accessを入れられるようにした</li>
+</ul>
+</div></div><div id="content_block_15" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_3"> 2023-03-16 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1_2_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_15-body" class="wiki-section-body-3">
+<ul id="content_block_16" class="list-1">
+<li> Pythonのバージョン指定を次の3つに変更しました
+<ul class="list-2">
+<li> Python 3.9.16 Colabデフォルト 時短になるのでおすすめ</li>
+<li> Python 3.10.9 use_conda 最新版を入れるので将来おかしくなる可能性あり 今3.9だと困る場合にどうぞ</li>
+<li> Python 3.10.10 use_apt 従来通り。今はうまく動いていない?</li>
+</ul>
+</li>
+<li> Python 3.9.16選択時にはデフォルトのtorchを使うようにしました 時短</li>
+<li> 環境チェックを厳格にしてRuntimeErrorを返すようにしました</li>
+</ul>
+</div></div><div id="content_block_18" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_4"> 2023-02-15 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1_2_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_18-body" class="wiki-section-body-3">
+<ul id="content_block_19" class="list-1">
+<li> ControlNet(fp16)に対応しました</li>
+<li> 学習は<a href="https://seesaawiki.jp/nai_ch/d/kohya%5ftrain%5fnetwork%5fsimple">kohya_train_network_simple</a>で出来るのでExtensionを外しました</li>
+<li> fastapiのバージョンを0.90.1に固定しました</li>
+<li> Pythonが3.10.10になってました(悪影響は無いはず)</li>
+</ul>
+<br>
+segがエラーで動かんなあ。prettytableは入れたつもりなんだけど。<blockquote id="content_block_20">
+ModuleNotFoundError: No module named 'lib2to3'
+</blockquote>
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_5"> 2023-01-24 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1_2_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+<ul id="content_block_23" class="list-1">
+<li> Python 3.10にきちんと対応(xformersがすんなり入るよ、やったね)</li>
+<li> モジュールのバージョンをあげました</li>
+<li> 流行りのExtensionsに入れ替え(面倒なので今後はやらんかも)</li>
+<li> モデルのURLをVAE内蔵の7th3Aにしました(ダウンロードが早く済むはず)</li>
+</ul>
+</div></div><div id="content_block_25" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_6"> 2023-01-14 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1_2_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_25-body" class="wiki-section-body-3">
+<ul id="content_block_26" class="list-1">
+<li> images_browserを修正版に取り替えた</li>
+<li> その他こまごまとExtensions追加</li>
+</ul>
+</div></div><div id="content_block_28" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_7"> 2022-12-20 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_1_2_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_28-body" class="wiki-section-body-3">
+<ul id="content_block_29" class="list-1">
+<li> condaかpipか選べるようにした。エラー出た時の予備になるかも？</li>
+<li> 階層マージ遊びが出来るExtensionをインストールできるようにした(たぶん4GBのモデルならいける)</li>
+<li> モデルのURLを3つまで入れられるようにした(もっと入れたければ改造して)</li>
+<li> SD2.0系は未対応(需要あれば対応する)</li>
+</ul>
+</div></div><div id="content_block_31" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 初心者向け手順 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_31-body" class="wiki-section-body-1">
+<ol id="content_block_32" class="list-1">
+<li> Googleアカウントを用意する(普段使いとは分けるのがおすすめ)</li>
+<li> 次のページを読んで基礎を理解する
+<ol class="list-2">
+<li> <a href="https://www.python.jp/train/experience/colab.html" class="outlink">https://www.python.jp/train/experience/colab.html</a></li>
+<li> <a href="https://www.python.jp/train/experience/exec-python1.html" class="outlink">https://www.python.jp/train/experience/exec-python...</a></li>
+</ol>
+</li>
+<li> 「1+1」のかわりに <del>以下の黄色い枠内の内容をコピペして</del> 上のリンク先のnotebook内容をコピーして実行</li>
+<li> 実行結果に「Running on public URL: <a href="https://xxxxx.gradio.live" class="outlink">https://xxxxx.gradio.live</a>」と出てくるのでそこに飛んで、usernameとpasswordを入力する
+<ol class="list-2">
+<li> usernameはデフォルト実行ならuser。passwordは自動生成されているので「Launching Web UI with arguments:」の行を参照</li>
+</ol>
+</li>
+</ol>
+</div></div><div id="content_block_34" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_34-body" class="wiki-section-body-2">
+</div></div><div id="content_block_36" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_8"> Notebookを新規作成できたら、最初に Rumtime - Change runtime type で GPU を選ぶ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_2_3_8" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_36-body" class="wiki-section-body-3">
+<br>
+もう最初っから選ばれてるかも。<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ruRG6Pge9t-s.jpg" border="0"></a><br>
+</div></div><div id="content_block_38" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_9"> このNotebookではいくつかのExtensionが自動インストールされる <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_2_3_9" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_38-body" class="wiki-section-body-3">
+<ul id="content_block_39" class="list-1">
+<li> 重たいやつはチェックボックスで入れるかどうか選べる</li>
+</ul>
+</div></div><div id="content_block_41" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_10"> モデルを増やしたい時はFilerでダウンロードしよう <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_2_3_10" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_41-body" class="wiki-section-body-3">
+<br>
+ダウンロードしたいモデルのURLを用意しましょう<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/BpmoNSigEj.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/BpmoNSigEj-s.png" border="0"></a><br>
+</div></div><div id="content_block_43" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_11"> Google Driveのマウントはしなくても動かせるのでお好みで <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_2_3_11" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_43-body" class="wiki-section-body-3">
+<ul id="content_block_44" class="list-1">
+<li> マウントしないと全部消えるので後腐れが無い</li>
+<li> マウントするとデータの保存が楽になる</li>
+</ul>
+<br>
+</div></div><div id="content_block_46" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 赤ちゃん用Notebook <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_46-body" class="wiki-section-body-1">
+グラボもねえ!知識もねえ!金もそれほど持ってねえ!<br>
+でもローカル使ってみたいンゴ・・・！という人でも使える(かもしれない)Notebookが公開されている<br>
+上記の入門用Notebookですらうまくいかなかった人用<br>
+<b>※高頻度で更新されているので、このページの説明と違う箇所もあるかもしれない</b><br>
+<div id="content_block_47">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_47-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_47-inside" class="toggle-display">
+camenduruという人が公開しているNotebookを使用する<br>
+Colabを使う関係上Googleアカウントは必須。それ以外は特に不要<ol id="content_block_48" class="list-1">
+<li>Googleアカウントを取得</li>
+<li><a href="https://github.com/camenduru/stable-diffusion-webui-colab" class="outlink">https://github.com/camenduru/stable-diffusion-webu...</a>にアクセス
+<ol class="list-2">
+<li>ページを下にスクロールしColabの項を見つける</li>
+<li>多数のNotebookが用意されているので使いたいものをOpen in Colabで開く。とりあえずliteでおｋ。AOMに7th、実写スキー御用達のchilloutなどなど</li>
+<li>好きなものを選べばいいのだが、とりあえず例としてabyss_orange_mix_3_webui_colabを選択する(分かりやすく綺麗なイラストが出るモデルなので)</li>
+</ol>
+</li>
+<li>Open in ColabをクリックするとColabの画面に移動する。RuntimeをGPUに変更し、コード上の再生ボタンを押すとインストールが始まるので放置(当方ではAOM3のインストールに10分くらいかかった)</li>
+<li>インストールが完了すると最終行付近に3つのURLが表示される。Running on <b>public</b> URLを開くとついにローカル起動!</li>
+<li>左上のチェックポイントから使いたいモデルを選ぶ(とりあえずAOM3A1がおすすめ)。あとはsettingsタブのSD VAEでorangemixを選びAplly Settings
+<ol class="list-2">
+<li>VAE指定を手動で選ばないと絵が灰色っぽくなるぞ</li>
+</ol>
+</li>
+<li>あとはプロンプト入力で赤ちゃんから妖精さんに進化するだけ
+<ol class="list-2">
+<li>設定や推奨クオリティプロンプトや記述方式なんかは他のローカルと共通だからwiki読み込んで調べてください</li>
+<li>ローカルUIが開いたからってColabは閉じちゃだめよ。画像生成の進捗状況はColab上で出る。Generate押すとColabにパーセンテージが表示されるよ</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div></div><div id="content_block_51" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 入門用Notebook(旧バージョン) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992062&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_51-body" class="wiki-section-body-1">
+<br>
+<div id="content_block_52">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_52-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_52-inside" class="toggle-display">
+<pre id="content_block_53" class="BOX">
+#@markdown 実行は自己責任で。
+
+#@markdown 最初に Rumtime - Change runtime type で GPU を選ぶ
+
+#@markdown gradioログイン情報(パスワード空白時は自動生成)
+user = "user"#@param {type:"string"}
+password = ""#@param {type:"string"}
+
+# GPUの情報表示
+!nvidia-smi
+!nvcc -V
+
+# RAMとVRAMの容量取得(GiB)
+res = !free -m | grep 'Mem:' | awk '{print $2}'
+if not res:
+   raise ValueError("RAMが取得できない")
+ram = round(float(res[0]) / 1024, 3)
+res = !nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits
+if not res:
+   raise ValueError("VRAMが取得できない(GPUに繋がってないかも)")
+vram = round(float(res[0]) / 1024, 3)
+print(f"RAM : {ram}")
+print(f"VRAM: {vram}")
+del res
+
+#@markdown ON: conda Python 3.9 OFF: pip Python 3.8
+use_conda = True #@param {type:"boolean"}
+if use_conda:
+   MINICONDA_SH='Miniconda3-py39_4.12.0-Linux-x86_64.sh' # Miniconda3-latest-Linux-x86_64.sh
+   !wget https://repo.anaconda.com/miniconda/{MINICONDA_SH}
+   !chmod +x {MINICONDA_SH}
+   !./{MINICONDA_SH} -b -f -p /usr/local
+   del MINICONDA_SH
+   !conda update conda -y
+   !conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch -y
+   !conda install xformers -c xformers/label/dev -y
+else:
+   !pip install pytorch_lightning --quiet
+   !pip install triton --quiet
+   !pip install --upgrade --no-cache-dir gdown httplib2 --quiet
+   !pip install https://github.com/camenduru/stable-diffusion-webui-colab/releases/download/0.0.15/xformers-0.0.15.dev0+189828c.d20221207-cp38-cp38-linux_x86_64.whl --quiet
+
+# 入ったPythonのバージョン確認
+!python -V
+
+# デフォルトパスワード生成
+import secrets
+import string
+
+def get_password(length: int) -&gt; str:
+    # secretsはrandomとかと違って暗号学的に安全な乱数を生成できる。
+    pass_chars = string.ascii_letters + string.digits
+    password = ''.join(secrets.choice(pass_chars) for i in range(length))
+    return password
+
+default_password = get_password(64)
+
+del secrets
+del string
+del get_password
+
+if not password:
+    password = default_password
+    del default_password
+
+# WEBUIのセットアップ
+%cd /content/
+!git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+%cd stable-diffusion-webui/models/Stable-diffusion
+
+# ダウンロードにトークンの要らないモデルなのでコメントアウト
+##@markdown トークンはここで貰ってきて https://huggingface.co/settings/tokens
+#user_token = ''#@param {type:"string"}
+#user_header = f"\"Authorization: Bearer {user_token}\""
+#@markdown ckptのURLを入れる(自己責任)
+ckpt_url1 = 'https://huggingface.co/acheong08/Anything/resolve/main/Anything-V3.0-pruned-fp32.ckpt'#@param {type:"string"}
+ckpt_url2 = 'https://huggingface.co/cafeai/cafe-instagram-sd-1-5-v6/resolve/main/instagram-latest-plus-clip-v6e1_50000.safetensors'#@param {type:"string"}
+ckpt_url3 = 'https://huggingface.co/hesw23168/SD-Elysium-Model/resolve/main/Elysium_V1.ckpt'#@param {type:"string"}
+#!wget -c --header={user_header} "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+if ckpt_url1:
+   !wget -c "{ckpt_url1}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+if ckpt_url2:
+   !wget -c "{ckpt_url2}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+if ckpt_url3:
+   !wget -c "{ckpt_url3}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+vae_url = "https://huggingface.co/acheong08/Anything/resolve/main/Anything-V3.0.vae.pt"#@param {type:"string"}
+if vae_url:
+   !wget -c "{vae_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+#del user_header
+
+# @markdown aria2cで落としたいモデルのURL
+aria_url = ''#@param {type:"string"}
+if aria_url:
+    !apt install -y -qq aria2
+    !aria2c --summary-interval=10 -x 3 --allow-overwrite=true -Z {aria_url}
+
+#@markdown Extensionsのセットアップ
+%cd /content/stable-diffusion-webui/extensions/
+#@markdown 学習関連
+use_train = True #@param {type:"boolean"}
+if use_train:
+   !git clone https://github.com/d8ahazard/sd_dreambooth_extension.git
+   !git clone https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension.git
+   !git clone https://github.com/aka7774/sd_katanuki.git
+#@markdown マージ関連
+use_merge = True #@param {type:"boolean"}
+if use_merge:
+   !git clone https://github.com/bbc-mc/sdweb-merge-board.git
+   !git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui.git
+   !git clone https://github.com/aka7774/sd_merge_numa.git
+   !git clone https://github.com/Akegarasu/sd-webui-model-converter.git
+   !git clone https://github.com/camenduru/stable-diffusion-webui-huggingface.git
+#@markdown 義妹(あとでffmpegとmoe-ttsを足したい)
+use_gimai = True #@param {type:"boolean"}
+if use_gimai:
+   !git clone https://github.com/aka7774/sd_gimai.git
+!git clone https://github.com/animerl/novelai-2-local-prompt.git
+!git clone https://github.com/aka7774/sd_images_browser.git
+!git clone https://github.com/aka7774/sd_copyguard.git
+!git clone https://github.com/aka7774/sd_fake_xyplot.git
+!git clone https://github.com/aka7774/sd_curly_rand.git
+!git clone https://github.com/aka7774/sd_filer.git
+!git clone https://github.com/aka7774/sd_infotexts.git
+!git clone https://github.com/kousw/stable-diffusion-webui-daam.git
+!echo '{"backup_dir":"/content/drive/MyDrive/sd"}' &gt; /content/stable-diffusion-webui/extensions/sd_filer/json/config.json
+
+# 一度起動して必要なものをインストールする
+%cd /content/stable-diffusion-webui/
+!COMMANDLINE_ARGS="--exit" REQS_FILE="requirements.txt" python launch.py
+
+# large_model &gt; 7GB
+#!sed -i "s/'cpu'/devices.get_optimal_device()/g" modules/extras.py
+# --lowvram
+
+#@markdown Google Driveのマウント
+use_drive = True #@param {type:"boolean"}
+if use_drive:
+   from google.colab import drive
+   drive.mount('/content/drive')
+
+# WEBUIの起動
+!COMMANDLINE_ARGS="--xformers --opt-channelslast --share --gradio-auth {user}:{password}" REQS_FILE="requirements.txt" python launch.py
+# --enable-insecure-extension-access
+
+</pre>
+</div>
+</div>
+</div></div>
+</div>

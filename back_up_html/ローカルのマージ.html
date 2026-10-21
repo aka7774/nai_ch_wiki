@@ -1,0 +1,346 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> おすすめサイト</a></li>
+<li class="list-1"><a href="#content_3"> メモリ不足の対策</a>
+<ul>
+<li class="list-2"><a href="#content_3_1"> (Colabのような) VRAM &gt; RAM な環境でVRAMを使わせる改造</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> 使い方</a>
+<ul>
+<li class="list-2"><a href="#content_4_2"> おおまかな流れ</a></li>
+<li class="list-2"><a href="#content_4_3"> 設定ポイント</a></li>
+<li class="list-2"><a href="#content_4_4"> モデルの破損</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> マージモデルの比較</a>
+<ul>
+<li class="list-2"><a href="#content_5_5"> 比較のしかた</a></li>
+<li class="list-2"><a href="#content_5_6"> 106スレ226</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> ローカル版：NovelAILeak Checkpoint Merger の事例: NovelAI と Waifu Diffusion のマージ割合と差分出力結果</a></li>
+<li class="list-1"><a href="#content_7">マージレシピ</a>
+<ul>
+<li class="list-2"><a href="#content_7_7">Anythingをえっちにする</a></li>
+<li class="list-2"><a href="#content_7_8">JNVA109スレ目誕生リアル系モデル</a></li>
+<li class="list-2"><a href="#content_7_9">126スレ799 柚子BASIL</a></li>
+<li class="list-2"><a href="#content_7_10">任意のモデルをinpaintingモデル化</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_8"> マージモデル一覧</a></li>
+<li class="list-1"><a href="#content_9">叡智/Tips 一覧</a>
+<ul>
+<li class="list-2"><a href="#content_9_11">Tips</a></li>
+<li class="list-2"><a href="#content_9_12">スレ書き込み保管用</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+ローカル環境で使えるモデル(.ckpt、.safetensors)のマージについてのページです。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> おすすめサイト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+<ul id="content_block_4" class="list-1">
+<li> モデルは以下を参照
+<ul class="list-2">
+<li> <a href="https://civitai.com/" class="outlink" rel="nofollow">https://civitai.com/</a> ここにもう全部ある。</li>
+<li> Hugging Face</li>
+</ul>
+</li>
+</ul>
+<div id="content_block_5">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_5-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>とても古い情報</p></div>
+<div style="display:none" id="content_block_5-inside" class="toggle-display">
+<ul id="content_block_6" class="list-1">
+<ul class="list-2">
+<li> <del>s://rentry.org/sdmodels</del> 現在"whu"という文字列だけになっている</li>
+<li> <a href="https://economylife.net/ai-models-list/" class="outlink" rel="nofollow">https://economylife.net/ai-models-list/</a> 日本で纏めてくれてるページ ここも2023/6現在更新止まってるかな？ モデル多すぎてしょうがないね</li>
+</ul>
+
+<li> カクテル表
+<ul class="list-2">
+<li> STABLE DIFFUSION MIXING EMPORIUM - <a href="https://rentry.co/LFTBL" class="outlink" rel="nofollow">https://rentry.co/LFTBL</a></li>
+<li> /hdg/ Stable Diffusion Models Cookbook <a href="https://rentry.org/hdgrecipes" class="outlink" rel="nofollow">https://rentry.org/hdgrecipes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<br>
+Civitaiに1日数十個モデルが新規追加されていくので、もはやまとめサイトが作れない状況。<br>
+あなたが作ろうとしているモデルに似たものもCivitai探せば多分あると思う。<br>
+マージすることにこだわらないのであればCivitaiで落としてしまおう。<br>
+ちなみに未ログインだとNSFWモデルは表示されない。<br>
+ログインし、フィルター設定を全表示に変更しないとNSFWモデルは表示されないので注意。<br>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> メモリ不足の対策 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+<ul id="content_block_10" class="list-1">
+<li> マージはCPUとメインメモリで出来る。</li>
+<li> 1111をCPUで使うと良いかも。<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%bb%c8%a4%a4%ca%fd">ローカルの使い方</a></li>
+</ul>
+</div></div><div id="content_block_12" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1"> (Colabのような) VRAM &gt; RAM な環境でVRAMを使わせる改造 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_12-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_13" class="PLAIN-BOX">
+%cd /content/stable-diffusion-webui
+!sed -i "s/'cpu'/devices.get_optimal_device()/g" modules/extras.py
+</pre>
+</div></div><div id="content_block_15" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 使い方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_15-body" class="wiki-section-body-1">
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_4_2"> おおまかな流れ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_4_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+Checkpoint Mergerでは単純なマージのみできる。複雑なマージをするならSupermergerかComfyUIのカスタムノードを使うこと。<ol id="content_block_18" class="list-1">
+<li> Automatic1111のWebUIを起動</li>
+<li> タブ→Checkpoint Merger</li>
+<li> 各種設定後、Run</li>
+<li> stable-diffusion-webui/models/Stable-diffusion　に「任意の名前.safetensors」が生成されます</li>
+<li> 完了</li>
+</ol>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_4_3"> 設定ポイント <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_4_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+<ul id="content_block_21" class="list-1">
+<li> A: Primary: ベースになるモデル</li>
+<li> B: Secondary: 補間方法によって働きが変わります</li>
+<li> C: Tertiary: 同上</li>
+</ul>
+<ul id="content_block_22" class="list-1">
+<li> M:  Multiplier: 割合</li>
+</ul>
+<br>
+▼BとCの役割について<br>
+BとC(SecondaryとTertiary)は補間方法：Interpolation Methodによって働きが変わります。<br>
+<br>
+加重合計：Weighted sumのとき<br>
+<b>A*(1-M)+B*M</b>です<br>
+<br>
+差分：Add Differenceのとき<br>
+<b>A+((B-C)*M)</b>です。<br>
+<br>
+<br>
+以下の場合では<br>
+AにAnything、BにNAI-full(nsfw)、CにNAI-sfwそして、0.3の割合指定、差分にチェック。これでA+((B-C)*M)のマージができます。<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/hiZuSdCRNS.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/hiZuSdCRNS.jpg" border="0" width="600"></a><br>
+</div></div><div id="content_block_24" class="wiki-section-2"><div class="title-2"><h4 id="content_4_4"> モデルの破損 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_4_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_24-body" class="wiki-section-body-2">
+2023-01-15に修正された。標準Checkpoint MergerのバグでCLIPのマージが正しく行われていなかったことが原因。<br>
+破損しているモデルとして有名なのはElysium_Anime_V3。プロンプトの一語目が無視される。「a skelton girl」ではガイコツ女が出るが、「skelton girl」だと普通の女の子が出る。<br>
+<br>
+詳しい説明と修正方法はこちら。<br>
+<a href="https://note.com/bbcmc/n/n12c05bf109cc" class="outlink">https://note.com/bbcmc/n/n12c05bf109cc</a><br>
+<br>
+修復前と修復後のモデルは全く同じ条件でも生成される絵が変わってしまう事には注意。<br>
+</div></div><div id="content_block_26" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> マージモデルの比較 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_26-body" class="wiki-section-body-1">
+</div></div><div id="content_block_28" class="wiki-section-2"><div class="title-2"><h4 id="content_5_5"> 比較のしかた <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_5_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_28-body" class="wiki-section-body-2">
+<br>
+X/Y Plotで出来る<br>
+<br>
+設定例<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/ESIP86zMQv.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ESIP86zMQv.png" border="0"></a><br>
+<br>
+出力結果<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/j4Sh8E_1Dx.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/j4Sh8E_1Dx-s.png" border="0"></a><br>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_5_6"> 106スレ226 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_5_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+<br>
+<del>モデルの比較を作った</del><br>
+<del>設定は元素法典の最初から4個</del><br>
+<a href="https://seesaawiki.jp/nai_ch/d/%c2%e7%ce%cc%b8%a1%be%da%b7%eb%b2%cc">大量検証結果</a>へ移動しました。<br>
+</div></div><div id="content_block_32" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> ローカル版：NovelAILeak Checkpoint Merger の事例: NovelAI と Waifu Diffusion のマージ割合と差分出力結果 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_32-body" class="wiki-section-body-1">
+<span class="fsize" style="font-size:20px;">これより下のすべての情報はSD1時代のものであり古くなっています。</span><br>
+<br>
+<a href="https://seesaawiki.jp/nai_ch/d/%c2%e7%ce%cc%b8%a1%be%da%b7%eb%b2%cc">大量検証結果</a>へ移動しました。<br>
+</div></div><div id="content_block_34" class="wiki-section-1"><div class="title-1"><h3 id="content_7">マージレシピ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_34-body" class="wiki-section-body-1">
+安定してると思われる配合術式はこちらへ。<br>
+</div></div><div id="content_block_36" class="wiki-section-2"><div class="title-2"><h4 id="content_7_7">Anythingをえっちにする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_7_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_36-body" class="wiki-section-body-2">
+きれいなAnythingはがっつりとした性器の表現などが苦手ですが、Gape60を配合することで対応できます<ol id="content_block_37" class="list-1">
+<li> Anything + (gape - NAI NSFW) × 1.0</li>
+</ol>
+<br>
+または以下の配合。⭐おすすめ<ol id="content_block_38" class="list-1">
+<li> Anything + (NAI NSFW - NAI SFW) × 0.3</li>
+<li> 1で出来た奴 + (gape - NAI NSFW) × 1.0</li>
+</ol>
+<br>
+※(gape - NAI SFW)にすると臓器のイデアみたいなのを生成するモデルになっちまうから気をつけるんやで<br>
+</div></div><div id="content_block_40" class="wiki-section-2"><div class="title-2"><h4 id="content_7_8">JNVA109スレ目誕生リアル系モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_7_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_40-body" class="wiki-section-body-2">
+<table id="content_block_41"><tbody><tr><th>配合</th><th>モデルA</th><th>モデルB</th><th>モデルC</th></tr><tr><td>0.5</td><td>インスタモデル</td><td>waifu diffusion1.3</td><td></td></tr></tbody></table>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/442" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1670...</a><blockquote id="content_block_42">
+ 442今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4088-/gh/)2022/12/06(火) 18:14:36.02ID:mrCax/lc0<br>
+ リアル系と絵画系モデルを混ぜ混ぜするのも楽しいね　インスタとwd1.3<br>
+</blockquote>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/QBQbVaKIgK.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/QBQbVaKIgK.png" border="0" width="200"></a><br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1670246088/725" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1670...</a><blockquote id="content_block_43">
+ 725今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 08f7-9yeH)2022/12/07(水) 00:52:03.68ID:AM9XC0ZW0<br>
+ &gt;&gt;442<br>
+ 同じやり方で0.5:0.5でやってみてるけどこれすげぇわ<br>
+ 何もしないでやると基本的に日本人出てくるから、<br>
+ blonde hairにしたり、ネガティブにjapanese入れたら外人さん出てくる<br>
+</blockquote>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/frZ8Da4FNr.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/frZ8Da4FNr.png" border="0" width="200"></a><br>
+</div></div><div id="content_block_45" class="wiki-section-2"><div class="title-2"><h4 id="content_7_9">126スレ799 柚子BASIL <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_7_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_45-body" class="wiki-section-body-2">
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1673176819/799,803,818,827,832,833" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1673...</a><blockquote id="content_block_46">
+柚子バジルや<br>
+true cubicかtrue reverse cuvicで混ぜたやつ<br>
+</blockquote>
+<a href="https://majinai.art/i/fO12jv-.png"><img src="https://majinai.art/i/fO12jv-.png" border="0" width="200"></a><br>
+<br>
+</div></div><div id="content_block_48" class="wiki-section-2"><div class="title-2"><h4 id="content_7_10">任意のモデルをinpaintingモデル化 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_7_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_48-body" class="wiki-section-body-2">
+Runwayのinpaintingモデルはinpaint/outpaint時に使用すると継ぎ目が目立ちにくくなる特徴がある<br>
+このモデルに普段使用するモデルとSD1.5との差分を加えるとこの特性を保ったまま目的のモデルの画風に寄せる事が出来る<br>
+<br>
+具体的には、<br>
+Primary model(A)<br>
+<a href="https://huggingface.co/runwayml/stable-diffusion-inpainting/blob/main/sd-v1-5-inpainting.ckpt" class="outlink">https://huggingface.co/runwayml/stable-diffusion-i...</a><br>
+Secondary model(B)<br>
+目的のモデル(任意)<br>
+Tertiary model(C)<br>
+<a href="https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/v1-5-pruned.ckpt" class="outlink">https://huggingface.co/runwayml/stable-diffusion-v...</a><br>
+<br>
+を指定し、Multiplier(M)を1にしてAdd differenceでマージする<br>
+<br>
+注意点は、ファイル名の末尾がinpainting.ckptになってないと実行時にエラーが出ること(safetensorsはNG)<br>
+このモデルを使用してinpaintをする場合は、Masked contentをlatent noiseにしてDenoising strengthを1にするといい<br>
+</div></div><div id="content_block_50" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> マージモデル一覧 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_50-body" class="wiki-section-body-1">
+→<a href="https://seesaawiki.jp/nai_ch/d/%a5%b9%a5%ec%cc%b1%b6%a6%cd%ad%a5%e2%a5%c7%a5%eb">スレ民共有モデル</a>のページを作りました。ダウンロード可能な状態であればなんでも掲載OKです。<br>
+レシピだけの場合は、マージレシピに掲載してください。<br>
+<br>
+<br>
+</div></div><div id="content_block_52" class="wiki-section-1"><div class="title-1"><h3 id="content_9">叡智/Tips 一覧 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_52-body" class="wiki-section-body-1">
+</div></div><div id="content_block_54" class="wiki-section-2"><div class="title-2"><h4 id="content_9_11">Tips <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_9_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_54-body" class="wiki-section-body-2">
+<br>
+※マージの順序違いで合成比率は同じの場合生成画像は一致するっぽい<br>
+(A+(B-C))+(D-B)　と　(A+(D-B))+(B-C)　では同じ画像が生成される<br>
+<br>
+つまり最初にNAI-NAI SFWするか、Gape-NAIするかは数値が一緒な以上同じ結果が返される<br>
+<br>
+</div></div><div id="content_block_56" class="wiki-section-2"><div class="title-2"><h4 id="content_9_12">スレ書き込み保管用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989619&amp;part=content_9_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_56-body" class="wiki-section-body-2">
+スレに書かれてたマージ方法をとりあえずメモしとくやつ。<br>
+<span class="fsize" style="font-size:18px;">新しい情報は上に追加してな(降順)</span><br>
+<br>
+<hr size="1" noshade>
+<br>
+インスタとAnythingのマージ、フリルフリルした衣装ならかなり強い気がしたんやけど...微妙やな<br>
+ぶっちゃけ今のところ混ぜる相手はZeipherで良くね感ある<br>
+<br>
+<hr size="1" noshade>
+<br>
+<pre id="content_block_59" class="BOX">
+https://i.imgur.com/uTUMioh.png
+</pre>
+左1~2がワイがよく使っとるやつや<br>
+前も書いた気がするがAny+(NAINSFW-NAISFW)*0.1~0.3した後に<br>
+マージしたやつ+(gape60-NAINSFW)*1.0しとる<br>
+<br>
+Any+Gapeで安定させるなら断然&gt;&gt;482の一旦(NAINSFW-NAISFW)を経由してからgape足す方式がオススメや<br>
+前々スレ？位で教えてもらってから愛用してるけど、明らかに単にweighted averageするより安定する<br>
+まぁでもやっぱり純正NAIに比べると遥かにじゃじゃ馬やね...<br>
+<br>
+<br>
+<br>
+<hr size="1" noshade>
+anyの絵柄でgapeの要素出したいだけならany+(gape-nai NSFW)×1.0とかの方がええで<br>
+絵柄を変えたいんならまた別の問題なんやけど<br>
+<hr size="1" noshade>
+194<br>
+Anything-V3.0-pruned-fp32.ckpt<br>
+<pre id="content_block_62" class="BOX">
+https://i.imgur.com/VrDkEQs.png
+</pre>
+<br>
+Anything-V3.0-pruned-fp32.ckpt + (animefull-final-pruned.ckpt - animesfw-final-pruned.ckpt) * 1.0<br>
+<pre id="content_block_63" class="BOX">
+https://i.imgur.com/PATrBSf.png
+</pre>
+<br>
+これは倍率1.0は大きすぎるってことなんやろか<br>
+<br>
+195<br>
+0.25ぐらいでええで<br>
+<br>
+624<br>
+194やけど、0.25、0.5、0.75で作ってみたわ<br>
+<pre id="content_block_64" class="BOX">
+https://i.imgur.com/VrDkEQs.png
+https://i.imgur.com/Fc4tNlg.png
+https://i.imgur.com/GHOpki7.png
+https://i.imgur.com/PINpYzl.png
+https://i.imgur.com/PATrBSf.png
+</pre>
+<br>
+これはこれで面白い表現やな<br>
+<hr size="1" noshade>
+AUTOMATIC1111でAにAnything、BにNAI-full(nsfw)、CにNAI-sfwそして、割合指定して、重要なのが差分にチェックポイントを入れるこれで(A+(B-C)）*割合のマージができる。先月は差分の意味が分からんかったけど、考えた中の人神やなAnythingで潰された性器や乳首のエロが復活する感じだよ。割合で絵面にも影響出るの0.5から増やすか減らすか試してみるといい<br>
+<br>
+<hr size="1" noshade>
+<br>
+anything+(NAI full-NAI SFW)を0.1で足してその次に足した奴+(gape-NAI full)を1.0で足したで　<br>
+<br>
+<hr size="1" noshade>
+<br>
+版権再現は1111DBで画像20枚入れたら解決エロ描写はgape60マージキレイに出すにはanything来月頭にはワイフ1.4<br>
+novelAIはさっさと更新しろ<br>
+anything+(NAI full-NAI SFW)0.,1の後にgape0.1足すとほんと両立出来て良いわ<br>
+<hr size="1" noshade>
+gape混ぜると明らかにイケオジのクオリティ上がるんやが一体ナニを学習させたんや...<table id="content_block_69"><tbody><tr><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/_JLeSRRM1R.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/_JLeSRRM1R.png" border="0" width="300"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/C6d7UaiRsd.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/C6d7UaiRsd.png" border="0" width="300"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/MqdmQNn1VM.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/MqdmQNn1VM.png" border="0" width="300"></a></td></tr></tbody></table>
+<br>
+<br>
+<hr size="1" noshade>
+gapeくんとのマージは0.3くらいがバランスいいような気がするな0.1だと崩壊してるのが多い参考画像は上げられないし、上げてもモザイクで見せられないよ<br>
+(hyper extreme detailed uncensored:1.2) (vagina:1.2) and (labia:1.1) and (hymen:1.4) and (pussy:1.2)<br>
+<br>
+<hr size="1" noshade>
+2022/11/11(金) 11:44:07.81 ID:5FZPkjim0 [1/9]<br>
+上げたアナル拡げ絵は他の人が出してたけどローカルでgape60にanything混ぜたモデルで出してるで基本text2img一発や<br>
+素のanythingとかリークだとマン汁とかアナルの開き具合とか指定すると構造ぶっ壊れたグロ性器率が上がるからガチャが渋い<br>
+<br>
+前にNovelAI_tecで上げたときより過剰なトークン減らしたでいらないワード消して好きなキャラ容姿と品質ワードを追加してや<br>
+他モデルでも使うから破綻と拡張控えめなspread anusになってるけど<br>
+gapeモデルならpage anusで専用の学習したグッポリアナルが出てくるから一連のリークモデルに使うのに抵抗ない人は試してみてもええんやないか<br>
+<br>
+(grabbing own ass:1.4),(spread ass:1.2),(spread anus:1.2),(squatting:1.2),(wide hips:1.3),solo,1girl,nude,clothing aside,nsfw,(ass focus),from below,looking back,looking at viewer,(smug face:1.0),(smile:1.0),(open mouth:0.7),(blush:1.0),(wet skin:1.0),(breath:1.2),(detailed steam:1.2),(spoken heart:1.2)<br>
+Negative prompt:lying,from behind,(from side0.9),multiple views,hands on the floor,hands on the wall,multiple anus,multiple pussy,long body,<br>
+<br>
+<hr size="1" noshade>
+Anything-V3.0.ckptそのまま混ぜるとエロ関連出しづらくなったからどっかで出てた画像の設定でリークのエロ要素加算し直したモデル作ってから<br>
+gape60をAに作ったモデルをBに入れて0.3でweighted sumで混ぜた<br>
+<br>
+<hr size="1" noshade>
+出力結果を見るとgape60のモロ性器はそのまま全体的に人体の破綻と髪の塗り方とかテイストの振れ幅が収まって質が良くなった印象<br>
+ただガチャとプロンプト次第なところはあるけど1girlだけど複数出てきたり人体パーツが増えたりする確率はやや上がった<br>
+リークを加算したAnythingモデルも合わせて混ぜる比率を変えたモデルを複数用意して同シードで出し比べると面白いかも<br>
+<br>
+<hr size="1" noshade>
+<br>
+よくわからないままモデルをマージしてるんだけども<br>
+Weighted sumとAdd differenceって何をしてるんですかね<br>
+単独ではよくわからない絵しか出してこないr34を足すレシピとかあってなおさら混乱してる<br>
+…ペイントソフトでやる加算減算とは違うよね？<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/2L3z8nLa4x.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/2L3z8nLa4x.png" border="0" width="600"></a><br>
+<hr size="1" noshade>
+</div></div>
+</div>

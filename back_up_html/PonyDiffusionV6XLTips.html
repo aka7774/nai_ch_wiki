@@ -1,0 +1,367 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">PonyXLどこ？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<a href="https://civitai.com/models/257749?modelVersionId=290640" class="outlink">https://civitai.com/models/257749?modelVersionId=2...</a><br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1">PonyXLどこ？</a></li>
+<li class="list-1"><a href="#content_2">プロンプトの書き方</a>
+<ul>
+<li class="list-2"><a href="#content_2_1">公式の記載法</a></li>
+<li class="list-2"><a href="#content_2_2">スレで共有されたもの</a></li>
+<li class="list-2"><a href="#content_2_3">公式で説明されているレーティングタグ</a></li>
+<li class="list-2"><a href="#content_2_4">negative prompt</a></li>
+<li class="list-2"><a href="#content_2_5">姫騎士ニキ</a></li>
+<li class="list-2"><a href="#content_2_6">上記を軽量化。とりあえずこの辺から始めてもいいかも</a></li>
+<li class="list-2"><a href="#content_2_7">サンプル</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3">推奨事項</a></li>
+<li class="list-1"><a href="#content_4"> プロンプトだけで出せるキャラ、絵師タグ</a>
+<ul>
+<li class="list-2"><a href="#content_4_8">隠しトークン</a></li>
+<li class="list-2"><a href="#content_4_9">ネガティブ用トークン</a></li>
+<li class="list-2"><a href="#content_4_10">有用なトークン</a>
+<ul>
+<li class="list-3"><a href="#content_4_10_1">キャラ</a></li>
+<li class="list-3"><a href="#content_4_10_2">アーティスト</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> バグ</a>
+<ul>
+<li class="list-2"><a href="#content_5_11"> 特定のプロンプトでノイズまみれになる</a>
+<ul>
+<li class="list-3"><a href="#content_5_11_3">解決策</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> 不向きな題材</a></li>
+<li class="list-1"><a href="#content_7"> Animagineとの連携方法</a></li>
+<li class="list-1"><a href="#content_8"> 学習の注意点</a>
+<ul>
+<li class="list-2"><a href="#content_8_12">score学習</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_9"> Controlnetとの相性</a></li>
+<li class="list-1"><a href="#content_10"> 派生モデル</a>
+<ul>
+<li class="list-2"> 
+<ul>
+<li class="list-3"><a href="#content_10_12_4">XL_e4P_Mix</a></li>
+<li class="list-3"><a href="#content_10_12_5">4th tail (anime/hentai)</a></li>
+<li class="list-3"><a href="#content_10_12_6">3x3x3mixXL</a></li>
+<li class="list-3"><a href="#content_10_12_7">PVC Style Model</a></li>
+<li class="list-3"><a href="#content_10_12_8">ebara_pony_1、ebara_pony_2.1、ebara_pony_3</a></li>
+</ul>
+</li></ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2">プロンプトの書き方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+Animagineと同様に独特のプロンプトルールがある。詳細は上記civitaiを参照<br>
+ケモナー御用達なのでかなり癖がある。<br>
+<br>
+従来のアニメ系モデルとは全く別の思想で制作されたモデルで、いわゆる「マスピ」の概念がない。<br>
+欧米のケモノ絵、カートゥーン、ピンナップアートなどが大量に学習されているので、デフォルトでは日本人好みではない絵が出る。<br>
+<br>
+おそらく重要なのはポジにsource_anime,ネガにsource_pony, source_furry, source_cartoon,を入れること。<br>
+また、効きの良い絵師タグを入れると安定する。絵師タグを入れないと絵柄のばらつきが激しい。<br>
+<br>
+R18絵を出したい場合、他のモデルとは異なり「nsfw」の代わりに「rating_explicit」を使うこと。といっても指定しなくても勝手に脱ぐことも多いが。<br>
+「nsfw」を入れると著しく絵の質が低下する特性がある。<br>
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1">公式の記載法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<pre id="content_block_6" class="BOX">
+score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up, just describe what you want, tag1, tag2
+</pre>
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2">スレで共有されたもの <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+<pre id="content_block_9" class="BOX">
+score_9, score_8_up, score_7_up, BREAK source_anime, rating_explicit, best quality, masterpiece, uncensored, 1girl,
+</pre>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3">公式で説明されているレーティングタグ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+<table id="content_block_12"><tbody><tr><td>rating_safe</td><td>従来のsfw</td></tr><tr><td>rating_questionable</td><td>基本的に脱がない</td></tr><tr><td>rating_explicit</td><td>従来のnsfw</td></tr></tbody></table>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4">negative prompt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+<br>
+ケモいのやバタ臭い(洋風っぽい)のを目指さないならとりあえず入れとけ<br>
+<pre id="content_block_15" class="BOX">
+source_pony,source_furry,source_cartoon
+</pre>
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_2_5">姫騎士ニキ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_2_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+<pre id="content_block_18" class="BOX">
+censored, mosaic censoring, bar censor ,border, worst quality, low quality, simple background, white background, realistic, sketch ,muscle , normal quality, jpeg artifacts, depth of field, blurry, messy drawing, amateur drawing, lowres, bad anatomy, bad hands, text, error, missing fingers, fewer digits, extra digits,cropped , greyscale, monochrome, source_furry, source_pony, source_cartoon, comic ,source filmmaker,video ,3d
+</pre>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_2_6">上記を軽量化。とりあえずこの辺から始めてもいいかも <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_2_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+<pre id="content_block_21" class="BOX">
+low quality , bad anatomy, bad proportions, extra legs, deformed anatomy, messy color, deformed fingers, bad, distracted, hyperrealistic,source_furry, source_pony, source_cartoon
+</pre>
+<hr size="1" noshade>
+3d, video, source filmmakerも入れるのもアリ。<br>
+<a href="https://civitai.com/models/257749?dialog=commentThread&amp;commentId=334380" class="outlink">https://civitai.com/models/257749?dialog=commentTh...</a><br>
+ネガのXY Plotによる比較もある。<br>
+<a href="https://civitai.com/posts/1267427" class="outlink">https://civitai.com/posts/1267427</a><br>
+<br>
+バタ臭くなりそうな作品名などを入れるのも効果がある。<br>
+<b>western_artist,disney,marvel,overwatch,league_of_legends,the_simpsons</b>があたりが定番ネガの模様。<br>
+<br>
+</div></div><div id="content_block_24" class="wiki-section-2"><div class="title-2"><h4 id="content_2_7">サンプル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_2_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_24-body" class="wiki-section-body-2">
+以下は<br>
+ポジ側に source_anime, score_9,<br>
+ネガ側に source_cartoon, source_furry, source_pony<br>
+を基本とし、バタ臭くなりそうな作品を追加してみたサンプル<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/dnVmnrLPnt.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/dnVmnrLPnt-s.jpg" border="0"></a><br>
+<hr size="1" noshade>
+ポジに score_9, score_8_up, score_7_up ネガに score_6, score_5<br>
+ポジに score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up ネガに score_4, score_5, score_6<br>
+このような書き方でクオリティが上がるとの報告もあるが、うまく調整しないと高確率でバタ臭くなるようだ。<br>
+<a href="https://civitai.com/models/257749/pony-diffusion-v6-xl?modelVersionId=290640&amp;dialog=commentThread&amp;commentId=343166" class="outlink">https://civitai.com/models/257749/pony-diffusion-v...</a><br>
+</div></div><div id="content_block_27" class="wiki-section-1"><div class="title-1"><h3 id="content_3">推奨事項 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_27-body" class="wiki-section-body-1">
+Euler aで25ステップ。<br>
+VAEは内蔵してるので必要ない。SD1.5用のVAEを適用すると露骨に絵が崩れるので使用するならSDXL用を。<br>
+解像度は1024x1024以上(画素数が1024x1024=1048576画素前後)を強く推奨。<br>
+<br>
+サンプラーにEuler aの代わりにRestartを使うと人体の精度が上がるという報告がある。<br>
+Restartはやや癖が強い。ガサガサした絵柄になりやすい感じ。<br>
+<a href="https://civitai.com/models/257749?modelVersionId=290640&amp;dialog=commentThread&amp;commentId=343921" class="outlink">https://civitai.com/models/257749?modelVersionId=2...</a><br>
+<br>
+プロンプトについて。Ponyでは学習元の絵につけるタグとして、e621というケモナー用danbooru系サイトのタグを使用しているようだ。<br>
+<a href="https://e621.net/wiki_pages/204" class="outlink">https://e621.net/wiki_pages/204</a>（タグwiki）<br>
+これが一般的なdanbooru系列とは異なるので、danbooru系のプロンプトに反応しないようならe621のタグに置き換えてみると、もしかしたら通るかもしれない……?<br>
+（例えばdanbooru上のfutanariタグはe621ではintersexである。danbooru上のfrom belowはe621でlow-angle viewである。）<br>
+</div></div><div id="content_block_29" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> プロンプトだけで出せるキャラ、絵師タグ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_29-body" class="wiki-section-body-1">
+海外の有志が調べたこちらを参照<br>
+<a href="https://rentry.org/ponyxl_loras_n_stuff" class="outlink">https://rentry.org/ponyxl_loras_n_stuff</a>（通称Pony Note） ※一番下のinnate characterのセクション。<br>
+こちらのキャラリストは公式のものではないため学習されていないキャラも多く含まれているようだ。<br>
+→2024年3月19日頃、再度検証中のようだ。<br>
+<br>
+<br>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_4_8">隠しトークン <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_4_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+一見ランダムな英数字のトークンを入力すると、それぞれ特定のイラストレーターやキャラを集中的に学習したと思われる画像が出現することが判明した。詳細は上記Pony NoteのReverse Engineered Hashed Tokensを参照のこと。<br>
+最初は3文字のトークンが発見されたが、後に3文字以外のトークンも多くあることが判明している。<br>
+望ましくないスタイルをネガティブに入れたり、あるいは良さそうなスタイルをポジティブに入れることで、より安定して好みに合った画像を出せるものと思われる。<br>
+本スレによると、ネガに隠しトークンを多数入れてもさほど効果がない、逆に思い通りの画像が出なくなったなどの報告もあるので今後の研究が期待される。<br>
+pony系の派生モデルでも本家ほどの効き具合ではないが機能する。<br>
+</div></div><div id="content_block_33" class="wiki-section-2"><div class="title-2"><h4 id="content_4_9">ネガティブ用トークン <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_4_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_33-body" class="wiki-section-body-2">
+<br>
+<b>aca,ces（feces=大便）,gpo</b>は<b>グロテスクな画像</b>が重点的に学習されているようなのでネガに入れても損はないだろう。逆にこれらをポジに入れるのは禁物。<br>
+<pre id="content_block_34" class="BOX">
+0594今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ c688-yO80)
+2024/03/13(水) 02:46:32.21ID:90RW5TM/0
+ワイがebaraで3文字画像見ながら適当にネガ作ったらトークン数大杉になってしまった
+でもとりあえず入れておくと絵柄LoRAがブレなくなって素直に使えるようになったり手ぐちゃとかの頻度が下がった気がするんやけど他の人の意見も聞いてみたい
+
+人間やgirlが出てなかったり悪影響与えてそうなやつ
+aca, aer, api, aur, bem, bif, bzi, bzl, frw, gar, gkb, gor, gpc, gpo, gvb, gzl, hnj, kzl, lbv, lwb, mjy, mtd, mwb, mwf, oir, olu, pbi, pdg, pdk, pdl, pdn, pdo, pkm, pzl, qpp, rek, rok, rzl, sbk, sid, smr, tyr, uji, vex, vml, wsp, xie, xio, yle, zac, zbi, zvu,
+落書きみたいのとかアクが強かったりするやつ（こっちはなくてもいいかも　背景出にくいのを改善目的で作った）
+aey, aff, aku, alp, baf, bfu, bip, bks, bku, bwf, bwu, csz, dbu, epg, evg, fbv, fey, ffs, fii, fla, gcg, gcx, gjv, grp, gsf, hag, hbz, hda, ilb, imf, ixz, kmq, kmz, kpm, kwl, kzg, lbq, lek, lpt, luz, lwl, lym, mdf, mdw, mlx, nrf, nvo, nvu, obo, ohw, oii, ojn, owz, oxz, oyz, paf, par, pjy, pme, pml, poo, pri, psm, pvo, pwl, pwn, pxg, qdc, qdl, qlt, rha, rjz, rpz, rrg, rsl, shq, sht, smg, ttp, uhf, ujf, uyf, uyz, vag, vbi, vdc, vdl, ven, vfc, wbi, wnw, wpw, xiq, xlx, 
+</pre>
+<br>
+<b>★406より</b><br>
+<br>
+<pre id="content_block_35" class="BOX">
+0776今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった 警備員[Lv.11][芽] (ﾜｯﾁｮｲ c3d9-VQuK)
+2024/06/14(金) 20:37:03.40ID:G+Af9ZsM0
+3文字でいろいろいじってるとほんとにどうすればいいか分からなくなっていくな。
+https://files.catbox.moe/3qx9zh.png
+みんなはどんなの使ってる？
+ポジにクオリティタグ入れんで済むようにいろいろ試行錯誤したけどこれ以上はようわからん
+ちなみにこの画像は下のプロンプト。モデルはebara2.1
+ポジ：girl
+ネガ：the simpsons, worst quality, bad quality, normal quality,
+low res, source_cartoon,
+censored, simple background, bad anatomy,
+vml, aca, ces, gpo, moro, ybq, tdj, eqg, fwg, ieb, inc, lek, jaf, jap, smg, vfc, zbm, yew, ydl
+</pre>
+<br>
+<a href="https://files.catbox.moe/3qx9zh.png"><img src="https://files.catbox.moe/3qx9zh.png" border="0" width="300"></a><br>
+<br>
+<pre id="content_block_36" class="BOX">
+0805今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった 警備員[Lv.46] (ﾜｯﾁｮｲ 2354-/sG6)
+垢版 | 大砲
+2024/06/14(金) 21:31:09.59ID:OrMAKNPU0
+&gt;&gt;776
+ebara1の頃はこのスレで見たgpo, tdj, eqg, wpt, aur, hnj, bry, bfu, cle, cwn, eqg, ewu, bwl, bse,を好んで使っとったが2以降は3文字自体使ってへんな
+このネガは好みや、ワイも使わせてもらお
+
+0809 警備員[Lv.12][芽] (ﾜｯﾁｮｲ bf62-VQfa)
+垢版 | 大砲
+2024/06/14(金) 21:36:52.13ID:0P9DUVHH0
+三文字はワイ
+ポジ：uoy, thon, fyx
+ネガ：aca, ces, gpo, ybq, tdj, eqg, wpt
+でやっとるわ
+ポジはSeed固定で一つ一つ試して効果ありそうなの厳選したんやがネガはスレで出てたののコピペや
+</pre>
+<br>
+<b>★409 今までに登場しなかったトークンも多く、スレ内でも注目を集めた</b><br>
+<br>
+<pre id="content_block_37" class="BOX">
+0486今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8b16-EjJt)
+2024/06/20(木) 02:06:36.56ID:QgN3a30b0
+クオリティタグなし＆3文字つかったネガで、ebara2.1の生成結果を高品質化できないか延々調べてる。
+前にここで同じようなの投下したけど無駄がかなりあったことが分かったのでネガにひたすらクオリティに効きそうな３文字入れて効果試したりしてもう一度練り直してみた。
+ポジ:girl in cafe, showing panties
+�“羈啗‐斃僉　．優�：なし
+　https://files.catbox.moe/w6y7uj.png
+��濃いめ色合いで高品質を狙ったの。　ネガ：qlt, lkb, tdj, vml　
+　https://files.catbox.moe/dk885z.png
+�Ｇ�めの色合いで高品質を狙ったの　ネガ；rbi, hsn, bol, ilr　
+　https://files.catbox.moe/sqc8w0.png
+��3文字をできるだけ減らして高品質を狙ったの　ネガ：lkb, rbi, ilr　　　
+　https://files.catbox.moe/5i170b.png
+��3文字×6まで許容したの　ネガ：rbi, hsn, bol, ilr, lkb, qlt　　
+　https://files.catbox.moe/2g799r.png
+�Ν◆椨�　ネガ：qlt, lkb, tdj, vml, rbi, hsn, bol, ilr　
+　https://files.catbox.moe/u094t7.png
+※よく言われるaca, ces, gpoは、グロとかスカをさけるためのものなので、
+　クオリティにはあまり影響しない。
+※クオリティタグなしでこれなら普通に運用できそう。
+　個人的には�きキΔ△燭蠅�お気に入り。ポジティブプロンプトの利きがよくなって楽しい。
+</pre>
+<br>
+<b>★413</b><br>
+<pre id="content_block_38" class="BOX">
+0577 警備員[Lv.34] (ﾜｯﾁｮｲ ded1-tgr5)
+2024/06/30(日) 15:57:32.01ID:/v1VhoTI0
+ネガティブ3文字の中でもvmlだけ突出して効果が大きい気がする
+vml…一体何者なんだ… 
+</pre>
+</div></div><div id="content_block_40" class="wiki-section-2"><div class="title-2"><h4 id="content_4_10">有用なトークン <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_4_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_40-body" class="wiki-section-body-2">
+トークンの大部分はケモノ系・カートゥーン系の海外アーティストに関連付けられているため有用なものは少ない。<br>
+</div></div><div id="content_block_42" class="wiki-section-3"><div class="title-3"><h5 id="content_4_10_1">キャラ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_4_10_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_42-body" class="wiki-section-body-3">
+<table id="content_block_43"><tbody><tr><td>トークン</td><td>名前</td></tr><tr><td>aua</td><td>宝鐘マリン</td></tr><tr><td>lanr</td><td>星街すいせい</td></tr><tr><td>pitvinm</td><td>がうる・ぐら</td></tr></tbody></table>
+</div></div><div id="content_block_45" class="wiki-section-3"><div class="title-3"><h5 id="content_4_10_2">アーティスト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_4_10_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_45-body" class="wiki-section-body-3">
+<table id="content_block_46"><tbody><tr><td>トークン</td><td>名前</td><td>備考</td></tr><tr><td>8um</td><td>ishikei</td><td></td></tr><tr><td>aze</td><td>不明</td><td></td></tr><tr><td>bfg</td><td>flou_(flou_art)</td><td>線が特徴的</td></tr><tr><td>emc</td><td>不明</td><td></td></tr><tr><td>gjem</td><td>wamudraws</td><td>デフォルメ</td></tr><tr><td>mdf</td><td>mdf_an</td><td></td></tr><tr><td>mjm</td><td>zankuro</td><td>デフォルメ</td></tr><tr><td>nviv</td><td>panken</td><td>厚塗りデフォルメ</td></tr><tr><td>qppp</td><td>sty</td><td>フラット塗り</td></tr><tr><td>pci</td><td>不明</td><td>デフォルメ</td></tr><tr><td>saz</td><td>abmayo</td><td></td></tr><tr><td>thn</td><td>xration</td><td></td></tr><tr><td>vum</td><td>bluethebone</td><td>80年代アニメ風</td></tr></tbody></table>
+</div></div><div id="content_block_48" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> バグ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_48-body" class="wiki-section-body-1">
+</div></div><div id="content_block_50" class="wiki-section-2"><div class="title-2"><h4 id="content_5_11"> 特定のプロンプトでノイズまみれになる <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_5_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_50-body" class="wiki-section-body-2">
+稀に黒い画像やノイズのみの画像が生成されてしまう事がある。<br>
+hakomikan氏によると、1111 WebUI側のバグらしい。特定のプロンプトの組み合わせでテンソルの値が壊れて破綻を引き起こす。<br>
+わかりやすく言うと、プロンプトの組み合わせによってはプロンプトの強度指定時にWebUIの不具合で実際の強度がおかしくなる。<br>
+<a href="https://note.com/hakomikan/n/nb6dd68a1bd9e" class="outlink">https://note.com/hakomikan/n/nb6dd68a1bd9e</a><br>
+</div></div><div id="content_block_52" class="wiki-section-3"><div class="title-3"><h5 id="content_5_11_3">解決策 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_5_11_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_52-body" class="wiki-section-body-3">
+WebUI 1.7以前であれば、プロンプトの語順を変えてみるか以下のExtensionを導入する。<br>
+<a href="https://github.com/hako-mikan/sd-webui-prevent-artifact" class="outlink">https://github.com/hako-mikan/sd-webui-prevent-art...</a><br>
+1.8以降であれば、SettingsのStable diffusionにあるEmphasis modeをNo normにする。<br>
+ただし根本的な解決策ではなく、現在でもまれにノイズ画像が発生する。<br>
+<br>
+<div id="content_block_53">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_53-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p> 古い情報</p></div>
+<div style="display:none" id="content_block_53-inside" class="toggle-display">
+AnimagineXL3.0と同様のバグがあるらしく、不明な条件でノイズ画像が出る。<br>
+主な対策方法は以下の通り。<br>
+・トークン数を150以下にする。<br>
+・類似した概念や部位のプロンプトの位置を離す。<br>
+・pad promptをオフにする。
+</div>
+</div>
+</div></div><div id="content_block_56" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 不向きな題材 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_56-body" class="wiki-section-body-1">
+Ponyの弱点として、背景、メカ、乗り物は学習量が少ないらしく、殴り書きしたようなぼやけた仕上がりになる。<br>
+リアル画風を指定すれば背景もある程度詳細になるが、キャラがバタ臭くなるのは避けられない。<br>
+これを改善するためのLORAも公開されている。<ul id="content_block_57" class="list-1">
+<li>Pony and XL- BackgroundPack</li>
+</ul>
+<a href="https://civitai.com/models/478799/pony-and-xl-backgroundpack" class="outlink">https://civitai.com/models/478799/pony-and-xl-back...</a><br>
+<br>
+また、服飾のバリエーションの少なさも指摘されており、ファンタジー風の派手な衣装のキャラなどは出しにくい。<br>
+<br>
+ケモナーの報告によるとR18絵ではメスケモ×人間男の組み合わせとなるように強力な補正がかかるらしく、ケモノ系モデルながらケモノ同士やオスケモ×人間女の組み合わせは出しにくいらしい。
+</div></div><div id="content_block_59" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> Animagineとの連携方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_59-body" class="wiki-section-body-1">
+Ponyはプロンプトからの構図を生み出しが良いが、Animagineの方が絵柄が好きと言うときに、AnimagineをRefinerとして使用する方法がある。<br>
+WebUIでRefinerにチェックを入れ、Animagine(他のSDXLモデルでも可)を指定し数値を指定する。<br>
+全体のステップのうち指定した数値%まではPonyで、それ以降はAnimagineで描画することになるので、Ponyの構図を生かしてAnimagineで仕上げという処理が可能。<br>
+</div></div><div id="content_block_61" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> 学習の注意点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_61-body" class="wiki-section-body-1">
+学習も癖が強い。<br>
+LoRAなどの学習時のOptimizerにD-Adaptation系とProdigyを選ぶと発散しやすいので、LRを下げるかそれ以外のOptimizerの使用をおすすめする<br>
+<br>
+VAEはsdxl-vae-fp16-fixを使うかno-half-vaeをつけないとlatentキャッシュ中にNaN演算が発生する場合あり。<br>
+</div></div><div id="content_block_63" class="wiki-section-2"><div class="title-2"><h4 id="content_8_12">score学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_8_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_63-body" class="wiki-section-body-2">
+Ponyで使用されている独特なクオリティタグ(score_9_upなど)をLoRA学習時のタグにも入れることにより、再現性を高める方法<br>
+<br>
+なんJNVA部★416<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1720317236/" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1720...</a><br>
+<pre id="content_block_64" class="BOX">
+386: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった &lt;span style="color:green;"&gt;警備員[Lv.4][新芽]&lt;/span&gt;(JP 0Hcb-F75N) sage 2024/07/08(月) 15:59:31.15 ID:ZsuaVgOHH 
+モデルとの相性でloraの効きが悪いことがあったんだが
+ふとscoreタグを逆に記載したら効きが良くなって草
+流石にクオリティがイマイチやけど
+
+418: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった &lt;span style="color:green;"&gt;警備員[Lv.13]&lt;/span&gt;(ﾜｯﾁｮｲ ebbf-OR+R) sage 2024/07/08(月) 18:02:51.07 ID:eiKBHRzV0 
+人物や場所の特徴や構図なんかは細かい方がええと思うけどクオリティタグはある程度絞らんと絵の書き込みや雰囲気が定まらんくてふわっとしてまうイメージや
+ワイは学習時にはsource_animeとscore_9とだけ入れて実際の生成時はsource_animeとscore_9からscore_4_upまでを使っとるな　まぁ学習元モデルによって変わってくるし正解のない話やね
+
+439:  &lt;span style="color:green;"&gt;警備員[Lv.13]&lt;/span&gt;(ﾜｯﾁｮｲ 2388-pk1M)  2024/07/08(月) 19:27:46.52 ID:OFt76uj90 
+pony学習でscoreタグつける・つけないは未だに答えが見つからないです
+無くてもそれなりにできているようにも感じますし、なんだか微妙に再現度が甘い気もします
+
+465: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった &lt;span style="color:green;"&gt;警備員[Lv.11]&lt;/span&gt;(ﾜｯﾁｮｲ 85e8-o6+b) sage 2024/07/08(月) 21:27:59.67 ID:aB2+LCRY0 
+ワイの経験やとこうやわ
+・Score無しで学習してScore有りで生成：再現度が下がる
+・Score無しで学習してScore無しで生成：画像のクオリティが下がる
+・Score有りで学習してScore有りで生成：うまく作れる
+
+普通のLoRAなら問題ないんやけど、癖が強い画風やと
+下手な絵だと認識されるのかScoreタグで画風が消されることがあるみたいなんや
+
+490: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった &lt;span style="color:green;"&gt;警備員[Lv.22]&lt;/span&gt;(ﾜｯﾁｮｲ a527-l588)  2024/07/08(月) 22:35:15.06 ID:06Ei+RU00 
+&gt;&gt;465
+大体同じ感想
+加えて言うとGameCGとかNobelartとか素材の出自に合わせてキャプション付けして出力時にタグ入れると再現度が上がる
+scoreタグ不要のマージモデルで学習すると効果不明になるけど
+</pre>
+</div></div><div id="content_block_66" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> Controlnetとの相性 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_66-body" class="wiki-section-body-1">
+原因不明だが一部のControlnetとの相性が悪く、特にOpenposeでの指定ポーズは全く反映されない。<br>
+</div></div><div id="content_block_68" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> 派生モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_68-body" class="wiki-section-body-1">
+本スレでよく話題になる人気派生モデルを紹介する。
+</div></div><div id="content_block_70" class="wiki-section-3"><div class="title-3"><h5 id="content_10_12_4">XL_e4P_Mix <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_10_12_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_70-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/okibaV/XL_e4P_Mix" class="outlink">https://huggingface.co/okibaV/XL_e4P_Mix</a><br>
+ebara_pony_3と4th Tailを中心にマージしたモデル。
+</div></div><div id="content_block_72" class="wiki-section-3"><div class="title-3"><h5 id="content_10_12_5">4th tail (anime/hentai) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_10_12_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_72-body" class="wiki-section-body-3">
+<a href="https://civitai.com/models/282341/" class="outlink">https://civitai.com/models/282341/</a><br>
+表現力の強化を目指したモデル。
+</div></div><div id="content_block_74" class="wiki-section-3"><div class="title-3"><h5 id="content_10_12_6">3x3x3mixXL <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_10_12_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_74-body" class="wiki-section-body-3">
+<a href="https://civitai.com/models/464044" class="outlink">https://civitai.com/models/464044</a><br>
+背景表現の強化を目指したモデル。リアル風など派生モデルも多数あり。
+</div></div><div id="content_block_76" class="wiki-section-3"><div class="title-3"><h5 id="content_10_12_7">PVC Style Model <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_10_12_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_76-body" class="wiki-section-body-3">
+<a href="https://civitai.com/models/400329/" class="outlink">https://civitai.com/models/400329/</a><br>
+フィギュア実写画像風のモデル。
+</div></div><div id="content_block_78" class="wiki-section-3"><div class="title-3"><h5 id="content_10_12_8">ebara_pony_1、ebara_pony_2.1、ebara_pony_3 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5111625&amp;part=content_10_12_8" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_78-body" class="wiki-section-body-3">
+<del>ttps://huggingface.co/tsukihara/xl_model</del><br>
+消滅。
+</div></div>
+</div>

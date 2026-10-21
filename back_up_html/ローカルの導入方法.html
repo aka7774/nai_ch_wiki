@@ -1,0 +1,235 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1">概要</a></li>
+<li class="list-1"><a href="#content_2">導入</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> 1. Python 3.11.9をインストールする</a></li>
+<li class="list-2"><a href="#content_2_2"> 2. Gitをインストールする</a></li>
+<li class="list-2"><a href="#content_2_3"> 3. reForge本体のダウンロード</a>
+<ul>
+<li class="list-3"><a href="#content_2_3_1">��WebUIをZIPでダウンロードする場合</a></li>
+<li class="list-3"><a href="#content_2_3_2">��Github Desktopをインストールする場合：🔰おすすめ!</a></li>
+<li class="list-3"><a href="#content_2_3_3">��Gitを使う場合</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_2_4">4：モデルのダウンロードと配置</a></li>
+<li class="list-2"><a href="#content_2_5">5：VAEのダウンロードと配置(任意だけど推奨)</a></li>
+<li class="list-2"><a href="#content_2_6">6：配置</a></li>
+<li class="list-2"><a href="#content_2_7">7.起動確認</a></li>
+<li class="list-2"><a href="#content_2_8">8(※オプション)：環境設定</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> 簡易インストール</a>
+<ul>
+<li class="list-2"><a href="#content_3_9"> StabilityMatrix</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> UIの日本語化</a></li>
+<li class="list-1"><a href="#content_5"> バージョンを戻す方法</a>
+<ul>
+<li class="list-2"><a href="#content_5_10"> git checkoutを使う方法</a></li>
+<li class="list-2"><a href="#content_5_11"> クリーンインストール</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> 移動する方法</a></li>
+<li class="list-1"><a href="#content_7"> 削除する方法</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+ローカル環境(AUTOMATIC1111 Stable Diffusion WebUI reForge)の導入ガイドです。<br>
+オリジナルの1111は古いので、ここではフォーク版のreForgeを導入します。<br>
+なお、GeForce RTX搭載PCを対象としたガイドです。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2">導入 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> 1. Python 3.11.9をインストールする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<span style="color:#ff0000;">Anaconda入れてたら先にアンインストールしろ!!!</span><br>
+<br>
+<a href="https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe" class="outlink" rel="nofollow">https://www.python.org/ftp/python/3.11.9/python-3....</a><br>
+<br>
+「python-3.x.x-amd64.exe」がダウンロードされるので、ダブルクリックで開く。<br>
+このとき、Add to PATH にチェックをつけてインストールすること。<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/H089Tt3hem.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/H089Tt3hem.png" border="0"></a><br>
+<br>
+<span style="color:#ff0000;">インストール終わったらPC再起動、絶対に!!</span><br>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> 2. Gitをインストールする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+<br>
+必須だと思った方がいい。<br>
+<br>
+<a href="https://git-scm.com/downloads" class="outlink" rel="nofollow">https://git-scm.com/downloads</a><br>
+64-bit Git for Windows Setup. を選ぶ。<br>
+<br>
+インストールするときは、「Windowsエクスプローラの統合 - Git Bash」のチェックボックスをオンにするのがおすすめ。<br>
+</div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3"> 3. reForge本体のダウンロード <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_9-body" class="wiki-section-body-2">
+※ダウンロード先は<b>SSD推奨</b>。HDDだと起動時間やモデルの切り替え時間が非常に長くなるので注意<br>
+（空き容量が心配ならSettings &gt; Paths for savingから生成画像の保存先を別ドライブにするなども可）<br>
+<br>
+以下の手段から好きなものを選んでWebUIのデータをダウンロードしてきます。<br>
+��WebUIをZIPでダウンロードする：お試しで環境を構築したい人向け<br>
+��Github Desktopをインストールする：アプデを行いながら使っていきたい人向け：🔰おすすめ!<br>
+��Gitを使う：アプデしたり差分を確認したりバージョンを戻したりとなんでもしたい人向け<br>
+</div></div><div id="content_block_11" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_1">��WebUIをZIPでダウンロードする場合 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_3_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_11-body" class="wiki-section-body-3">
+GithubリポジトリからZipでダウンロードするかんたんな方法。アプデとかめんどくさいし、バージョン戻しもできないのでお試し環境構築用として推奨。<ol id="content_block_12" class="list-1">
+<li> 以下のURLアクセス <br> <a href="https://github.com/Panchovix/stable-diffusion-webui-reForge" class="outlink">https://github.com/Panchovix/stable-diffusion-webu...</a></li>
+<li> Code &lt;&gt; →Download ZIP　でダウンロードします</li>
+<li> 好きなところに配置</li>
+<li> 完了</li>
+</ol>
+</div></div><div id="content_block_14" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_2">��Github Desktopをインストールする場合：🔰おすすめ! <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_3_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_14-body" class="wiki-section-body-3">
+グラフィックインタフェースで操作できるGitです。<br>
+黒い画面をみなくてすみます。アプデが簡単にできる環境が作れるけど、バージョン戻しには別途Gitをインストールする必要があります。<br>
+<ol id="content_block_15" class="list-1">
+<li> Github Desktopをインストールする</li>
+<li> File　→　Clone Repository</li>
+<li> タブ「URL」に設定後、以下を記載<br></li>
+</ol>
+<pre id="content_block_16" class="BOX">
+https://github.com/Panchovix/stable-diffusion-webui-reForge
+</pre>
+<ol id="content_block_17" class="list-1">
+<li> Local Pathに配置したい場所を記載してCloneを押す</li>
+<li> 完了</li>
+</ol>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/A2FTwb_lRZ.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/A2FTwb_lRZ.jpg" border="0" width="450"></a><br>
+</div></div><div id="content_block_19" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_3">��Gitを使う場合 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_3_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_19-body" class="wiki-section-body-3">
+なんでもできる。さいつよ。<br>
+<br>
+1. エクスプローラーとかでインストールしたいディレクトリを開く<br>
+2. 任意の場所を右クリックし、「Git Bash here」を選択します<br>
+3. 黒い画面が出たらディレクトリのパスが表示されていることを確認します<br>
+4. 次のコマンドを打ちリポジトリをダウンロードします<br>
+<pre id="content_block_20" class="BOX">
+git clone https://github.com/Panchovix/stable-diffusion-webui-reForge
+</pre>
+</div></div><div id="content_block_22" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4">4：モデルのダウンロードと配置 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_22-body" class="wiki-section-body-2">
+<ul id="content_block_23" class="list-1">
+<li> ここで検索する
+<ul class="list-2">
+<li> <a href="https://huggingface.co/models" class="outlink">https://huggingface.co/models</a></li>
+</ul>
+</li>
+<li> モデルについては<a href="https://seesaawiki.jp/nai_ch/d/SDXL">SDXL</a>ページに詳しく書いてある。</li>
+<li> <a href="https://civitai.com/" target="_blank" class="outlink" rel="nofollow">civitai</a>もモデルが沢山あるのでおすすめ。</li>
+<li> ダウンロードしたファイルは以下のディレクトリに配置する
+<ul class="list-2">
+<li> webui/models/Stable-diffusion</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_2_5">5：VAEのダウンロードと配置(任意だけど推奨) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+<ul id="content_block_26" class="list-1">
+<li> VAEがないと色が薄くなったりNaNエラーになったりするので別途指定推奨</li>
+</ul>
+<a href="https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/tree/main" class="outlink">https://huggingface.co/madebyollin/sdxl-vae-fp16-f...</a> にあるsdxl_vae.safetensorsをDLする<ul id="content_block_27" class="list-1">
+<li> 配置方法
+<ul class="list-2">
+<li> webui/models/models/VAE に配置して、ファイル名を選択して適用する</li>
+</ul>
+</li>
+<li> 設定の場所は、Settingsタブの[Stable Diffusion]-[SD VAE]</li>
+</ul>
+</div></div><div id="content_block_29" class="wiki-section-2"><div class="title-2"><h4 id="content_2_6">6：配置 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_29-body" class="wiki-section-body-2">
+以下のディレクトリにモデルを配置します。<br>
+Checkpoint:<br>
+/webui/models/Stable-diffusion<br>
+VAE:<br>
+/webui/models/VAE<br>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_2_7">7.起動確認 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+<br>
+ここまでの手順がうまくいってれば起動するはず。<br>
+<br>
+<b>「webui-user.bat」をダブルクリックでWebUIを起動させます。</b><br>
+図：これね<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/y4M3qrylYT.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/y4M3qrylYT.jpg" border="0"></a><br>
+<br>
+webui-user.batを実行するとターミナルが開き、モデルデータや色々な必要モジュールの読み込み状況が文字で表示される。<br>
+初回起動時は様々なプログラムのセットアップ作業が行われるのでしばらく待つ。<br>
+<span style="color:#ff0000;">結構時間かかるんで気長に待ちましょう</span><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/yiFEf9KQqg.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/yiFEf9KQqg.png" border="0"></a><br>
+Running on local URL: <a href="http://127.0.0.1:7860" class="outlink">http://127.0.0.1:7860</a><br>
+と表示されたら、インターネットブラウザ（Chrome,Edge,Firefox等）のアドレス欄に<a href="http://127.0.0.1:7860" class="outlink">http://127.0.0.1:7860</a>と打ち込む。<br>
+WEBUIの操作画面が表示されたらここまでの手順は成功。おつかれさまでした。<br>
+</div></div><div id="content_block_33" class="wiki-section-2"><div class="title-2"><h4 id="content_2_8">8(※オプション)：環境設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_2_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_33-body" class="wiki-section-body-2">
+<a href="https://github.com/Panchovix/stable-diffusion-webui-reForge/blob/main/README.md#forgereforge-backend" class="outlink">https://github.com/Panchovix/stable-diffusion-webu...</a><br>
+</div></div><div id="content_block_35" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 簡易インストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_35-body" class="wiki-section-body-1">
+</div></div><div id="content_block_37" class="wiki-section-2"><div class="title-2"><h4 id="content_3_9"> StabilityMatrix <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_3_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_37-body" class="wiki-section-body-2">
+<br>
+<a href="https://github.com/LykosAI/StabilityMatrix" class="outlink">https://github.com/LykosAI/StabilityMatrix</a><br>
+<br>
+WebUI Easy Installer and Launcherの代わりになるかもしれない。<br>
+</div></div><div id="content_block_39" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> UIの日本語化 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_39-body" class="wiki-section-body-1">
+<ol id="content_block_40" class="list-1">
+<li>画面上部メニューの「Extension」タブをクリック</li>
+<li>Installed,Avaliable,Install from URLと書かれた中の「Avaliable」をクリック</li>
+<li>「localization」の左側のチェックマークをクリック（チェックを外す）</li>
+<li>「Load from:」ボタンをクリックしてしばらく待つ</li>
+<li>表示されたExtensionリストの中から「ja_JP Localization」を探して、右側にあるInstallボタンをクリック</li>
+<li>画面上部メニューの「Settings」タブをクリック</li>
+<li>画面左のメニューの中から「User Interface」を探してクリック</li>
+<li>画面右側に表示された各種設定の下の方にある「Localization (requires restart)」の「None」の所をクリックして「ja_JP」にする。</li>
+<li>画面上の方にある「Apply settings」を押す。</li>
+<li>1 settings changed: localization.　と表示が出たら画面上の方にある「Reload UI」を押す。</li>
+</ol>
+<br>
+</div></div><div id="content_block_42" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> バージョンを戻す方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_42-body" class="wiki-section-body-1">
+アプデしておかしなっても大丈夫やで<br>
+</div></div><div id="content_block_44" class="wiki-section-2"><div class="title-2"><h4 id="content_5_10"> git checkoutを使う方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_5_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_44-body" class="wiki-section-body-2">
+参考：(英文)：Git revert guide - <a href="https://rentry.org/git_retard" class="outlink" rel="nofollow">https://rentry.org/git_retard</a><br>
+</div></div><div id="content_block_46" class="wiki-section-2"><div class="title-2"><h4 id="content_5_11"> クリーンインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_5_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_46-body" class="wiki-section-body-2">
+<ol id="content_block_47" class="list-1">
+<li> リソースのダウンロードとかは省いて導入ガイドにそってWebUIを再インストールする。<br> ※フォルダは「StableDiffusion_WebUI_v2」とか名前つけて新しく作ってリポジトリをクローンするんやで</li>
+<li> もとのディレクトリ*に置いてあったモデルを同じディレクトリにコピペする <br>*場所：/webui/models/Stable-diffusion</li>
+<li> 完了</li>
+</ol>
+</div></div><div id="content_block_49" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 移動する方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_49-body" class="wiki-section-body-1">
+<br>
+SSDを増設したとかで、<br>
+C:\stable-diffusion-webui-reForge<br>
+から<br>
+D:\stable-diffusion-webui-reForge<br>
+に移動したいとする。<br>
+<br>
+基本的にはフォルダごと移動して大丈夫。<br>
+PythonとGitがCドライブに残ったままならこれでいけるはず。<br>
+<br>
+Pythonの置き場所も変わる場合、<br>
+webui\venv\pyvenv.cfg<br>
+を開いて、homeを変える必要がある。<br>
+</div></div><div id="content_block_51" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> 削除する方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984055&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_51-body" class="wiki-section-body-1">
+<br>
+WebUIのディレクトリごと削除する。<br>
+<br>
+ターミナルでpip cache purgeでpipキャッシュを消去する。<br>
+<br>
+PythonとGitをインストーラーで入れた場合はアンインストーラーで消す。<br>
+Pythonの残骸がC:\Users\ユーザー名\AppData\Local\Programs\Pythonにあるので消す。
+</div></div>
+</div>

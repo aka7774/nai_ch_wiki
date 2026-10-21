@@ -1,0 +1,83 @@
+<div class="user-area">
+<a href="https://seesaawiki.jp/nai_ch/d/GPU%a4%cb%a4%e8%a4%eb%c0%b8%c0%ae%ba%b9%b0%db%a4%ce%b8%a1%be%da">GPUによる生成差異の検証</a>の追試。<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> この検証の意義 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+くどいけど<br>
+<ul id="content_block_2" class="list-1">
+<li> あるPCで作成した画像を他のPCで再現できるかどうかの確認
+<ul class="list-2">
+<li> 再現可能なら、Infotextを公開することで画像をアップロードせずに絵を渡せる</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 知見 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_4-body" class="wiki-section-body-1">
+<br>
+129スレ925<br>
+<pre id="content_block_5" class="BOX">
+過去に生成した画像を再生成しようと思ったら全然再現されなく色々試したら、「DPM++ SDE Karras」で2枚同時生成していたのが原因だったわ
+
+例えばシード番号に「123」を入力して同時に2枚生成したとする
+すると「123」と「124」の画像が生成されるが、このシード番号「124」を入力して1枚生成しても別画像が出る
+更には「124」で2枚同時生成しても別画像が出る
+再現する為には「123」を入力した上で2枚同時生成を使用して「124」を生成しないといけない
+
+全部は試してないけど他のサンプラーはこんな面倒な事しなくても問題なく再現出来たから、SDE Kだけの仕様？問題？ぽい
+</pre>
+</div></div><div id="content_block_7" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> レギュレーション <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_7-body" class="wiki-section-body-1">
+<ul id="content_block_8" class="list-1">
+<li> 設定はハローアスカと同じ(VAEも使う、HNはナシ)</li>
+<li> 1111本体のソースコードを改造していないこと</li>
+<li> <b>--no-half --no-half-vae --medvram --lowvram --xformersはいずれもナシ</b>固定</li>
+<li> <b>Batch sizeは1とする</b>
+<ul class="list-2">
+<li> 2以上では再現性が担保できない(ハローアスカも変わるし)</li>
+</ul>
+</li>
+<li> できるだけ2回生成する。もしも異なる絵が出た場合、3回目を出して同じのが2枚出た画像を提出する</li>
+<li> <b>Euler a以外のSamplerを使って何を使ったかを明記する</b>
+<ul class="list-2">
+<li> eta (noise multiplier) for DDIM は 0 とする</li>
+<li> eta (noise multiplier) for ancestral samplers は 0.67 のまま</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_10" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1"> 期待する結果 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_10-body" class="wiki-section-body-2">
+<ul id="content_block_11" class="list-1">
+<li> 同じ画像が生成されること</li>
+<li> もし違う画像が生成された場合はできるだけ環境を記載してください
+<ul class="list-2">
+<li> <a href="https://github.com/aka7774/sd_about" class="outlink">https://github.com/aka7774/sd_about</a> の左側をコピペ</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_13" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> 途中結果と考察 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_13-body" class="wiki-section-body-2">
+<ul id="content_block_14" class="list-1">
+<li> ancestralサンプラー(末尾にaがつくサンプラー)は環境によって結果が変化する可能性がある</li>
+</ul>
+</div></div><div id="content_block_16" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> infotext <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_16-body" class="wiki-section-body-2">
+<br>
+Samplerを変えただけ。<br>
+<br>
+txt2imgのPrompt欄にコピペして、右側にある左下矢印を押してください。<br>
+<br>
+<pre id="content_block_17" class="PLAIN-BOX">
+silver color schema, masterpiece, best quality, dynamic angle, dynamic pose, (novelAI:1.05), (1girl:1.3), (solo:1.1), holding pen, (painting action), (canvas object), (mechanical hand:1.05), [[cyborg]], metallic mixture, drawing, paintbrush, beret, (glowing_eyes:0.95), (Separate sleeves), silver long_hair, hair_between_eyes, doyagao, happy smile, :d, (cute little monster are floating around:1.5), art studio in magical school, (white border:1.35), (outside border:1.2), dream, art, imagination, yume kawaii, pastel colors, feminine, looking away, (magical girl,:1.1)
+Negative prompt: nsfw, red, purple, Chibi, Severed head, (detached head), (multiple view:1.3), Reference sheet,
+Steps: 50, Sampler: DDIM, CFG scale: 11.5, Seed: 905391353, Size: 1024x512, Model hash: 925997e9, Clip skip: 2, ENSD: 31337
+</pre>
+</div></div><div id="content_block_19" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> DDIM <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_19-body" class="wiki-section-body-1">
+<table class="nanj_prompt_table edit sort" id="table_edit_1 content_block_20"><thead><tr><th>GPU</th><th>生成結果</th><th>備考</th><th class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_20&amp;row=0&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></th></tr></thead><tbody><tr><td>RTX 2070</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/7V4N7Ie3N_.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/7V4N7Ie3N_-s.png" border="0"></a></td><td>あえて --no-half --no-half-vae をつけて試してみたが1660Tiにも似なかったし2070とも変わらなかった</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_20&amp;row=1&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>RTX 2070</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/e6BC_fSAze.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/e6BC_fSAze-s.png" border="0"></a></td><td>WSL2</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_20&amp;row=2&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>Tesla T4</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/lYXpp7bXlz.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/lYXpp7bXlz-s.png" border="0"></a></td><td>Colab</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_20&amp;row=3&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>RTX 4090</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/8dOSCPaKTr.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/8dOSCPaKTr-s.png" border="0"></a></td><td></td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_20&amp;row=4&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>RTX 2070</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/KGOMr42m9U.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/KGOMr42m9U-s.png" border="0"></a></td><td></td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_20&amp;row=5&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GTX 1660Ti Max-Q</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/VgaXBvtX88.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/VgaXBvtX88-s.png" border="0"></a></td><td></td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_20&amp;row=6&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr></tbody></table>
+</div></div><div id="content_block_22" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> Euler <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_22-body" class="wiki-section-body-1">
+<br>
+<table class="nanj_prompt_table edit sort" id="table_edit_2 content_block_23"><thead><tr><th>GPU</th><th>生成結果</th><th>備考</th><th class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_23&amp;row=0&amp;edit_id=table_edit_2&amp;part_type=table">編集</a></th></tr></thead><tbody><tr><td>RTX 2070 SUPER</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/iuzxOuVx89.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/iuzxOuVx89-s.png" border="0"></a></td><td></td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_23&amp;row=1&amp;edit_id=table_edit_2&amp;part_type=table">編集</a></td></tr><tr><td>RTX 2070</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/e6yekbTJJQ.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/e6yekbTJJQ-s.png" border="0"></a></td><td>あえて --no-half --no-half-vae をつけて試してみたが1660Tiにも似なかったし2070とも変わらなかった</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_23&amp;row=2&amp;edit_id=table_edit_2&amp;part_type=table">編集</a></td></tr><tr><td>RTX 2070</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/4lQNwDZsX3.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/4lQNwDZsX3-s.png" border="0"></a></td><td>WSL2</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_23&amp;row=3&amp;edit_id=table_edit_2&amp;part_type=table">編集</a></td></tr><tr><td>Tesla T4</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/yaUYga12ND.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/yaUYga12ND-s.png" border="0"></a></td><td>Colab</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_23&amp;row=4&amp;edit_id=table_edit_2&amp;part_type=table">編集</a></td></tr><tr><td>RTX 4090</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/BJI2g3IhnN.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/BJI2g3IhnN-s.png" border="0"></a></td><td></td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_23&amp;row=5&amp;edit_id=table_edit_2&amp;part_type=table">編集</a></td></tr><tr><td>RTX 2070</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/X9Ahs9wVBb.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/X9Ahs9wVBb-s.png" border="0"></a></td><td>Reported at 2022-12-10 19:14:45.504747 by github.com/aka7774/sd_aboutPython 3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]GPU NVIDIA GeForce RTX 2070, VRAM: 8.0 GiBargv: stable-diffusion-webui: 59c2dfe1e6a29dcf231fa9d894ac238887e40c39diffusers: 0.3.0torch: 1.12.1+cu116torchvision: 0.13.1+cu116transformers: 4.19.2xformers:  0.0.14.dev0</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_23&amp;row=6&amp;edit_id=table_edit_2&amp;part_type=table">編集</a></td></tr><tr><td>GTX 1660Ti Max-Q</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/xDftbwfYSb.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/xDftbwfYSb-s.png" border="0"></a></td><td></td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=4995624&amp;part=content_block_23&amp;row=7&amp;edit_id=table_edit_2&amp;part_type=table">編集</a></td></tr></tbody></table>
+</div></div>
+</div>

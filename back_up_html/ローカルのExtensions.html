@@ -1,0 +1,1516 @@
+<div class="user-area">
+ここは「Availableタブ→Load from:ボタン」で入れられるやつのページ<br>
+<br>
+1111に追加インストールする拡張機能やでー<br>
+使った人は感想とか書いてって欲しい<br>
+「Install from URLタブ」で入れるやつは<a href="https://seesaawiki.jp/nai_ch/d/Extensions%5fURL">Extensions_URL</a>に書こう<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 導入方法</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> 使い方</a>
+<ul>
+<li class="list-3"><a href="#content_1_1_1"> リポジトリへのリンク</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_1_2"> アップデート方法</a></li>
+<li class="list-2"><a href="#content_1_3"> 注意</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2"> 日本語訳</a></li>
+<li class="list-1"><a href="#content_3"> 一覧(順不同)</a>
+<ul>
+<li class="list-2"><a href="#content_3_4"> Aesthetic Gradients</a></li>
+<li class="list-2"><a href="#content_3_5"> Dreambooth</a></li>
+<li class="list-2"><a href="#content_3_6"> training-picker</a></li>
+<li class="list-2"><a href="#content_3_7"> Dataset Tag Editor</a></li>
+<li class="list-2"><a href="#content_3_8"> DreamArtist</a></li>
+<li class="list-2"><a href="#content_3_9"> WD 1.4 Tagger</a></li>
+<li class="list-2"><a href="#content_3_10"> Hypernetwork-Monkeypatch-Extension</a></li>
+<li class="list-2"><a href="#content_3_11"> Custom Diffusion</a></li>
+<li class="list-2"><a href="#content_3_12"> Smart Process</a></li>
+<li class="list-2"><a href="#content_3_13"> Embeddings editor</a></li>
+<li class="list-2"><a href="#content_3_14"> embedding-inspector</a></li>
+<li class="list-2"><a href="#content_3_15"> Merge Board</a></li>
+<li class="list-2"><a href="#content_3_16"> Model Converter</a></li>
+<li class="list-2"><a href="#content_3_17"> Kohya-ss Additional Networks</a></li>
+<li class="list-2"><a href="#content_3_18"> Merge Block Weighted</a></li>
+<li class="list-2"><a href="#content_3_19"> Embedding Merge</a></li>
+<li class="list-2"><a href="#content_3_20"> SuperMerger</a></li>
+<li class="list-2"><a href="#content_3_21"> LoRA Block Weight</a></li>
+<li class="list-2"><a href="#content_3_22"> Image browser</a></li>
+<li class="list-2"><a href="#content_3_23"> Infinite image browsing,</a></li>
+<li class="list-2"><a href="#content_3_24"> Inspiration</a></li>
+<li class="list-2"><a href="#content_3_25"> Artists to study</a></li>
+<li class="list-2"><a href="#content_3_26"> Prompt Gallery</a></li>
+<li class="list-2"><a href="#content_3_27"> Infinity Grid Generator</a></li>
+<li class="list-2"><a href="#content_3_28"> Config-Presets</a></li>
+<li class="list-2"><a href="#content_3_29"> Preset Utilities</a></li>
+<li class="list-2"><a href="#content_3_30"> openOutpaint extension</a></li>
+<li class="list-2"><a href="#content_3_31"> quick-css</a></li>
+<li class="list-2"><a href="#content_3_32"> Aspect Ratio selector</a></li>
+<li class="list-2"><a href="#content_3_33"> Nevysha's Cozy Nest</a></li>
+<li class="list-2"><a href="#content_3_34"> Catppuccin Theme</a></li>
+<li class="list-2"><a href="#content_3_35"> Kitchen Theme</a></li>
+<li class="list-2"><a href="#content_3_36"> Bilingual Localization</a></li>
+<li class="list-2"><a href="#content_3_37"> Dynamic Prompts</a>
+<ul>
+<li class="list-3"><a href="#content_3_37_2"> Wildcards</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_3_38"> Unprompted</a></li>
+<li class="list-2"><a href="#content_3_39"> StylePile</a></li>
+<li class="list-2"><a href="#content_3_40"> Booru tag autocompletion</a></li>
+<li class="list-2"><a href="#content_3_41"> novelai-2-local-prompt</a></li>
+<li class="list-2"><a href="#content_3_42"> Tokenizer</a></li>
+<li class="list-2"><a href="#content_3_43"> Randomize</a></li>
+<li class="list-2"><a href="#content_3_44"> conditioning-highres-fix</a></li>
+<li class="list-2"><a href="#content_3_45"> model-keyword</a></li>
+<li class="list-2"><a href="#content_3_46"> Prompt Generator</a></li>
+<li class="list-2"><a href="#content_3_47"> Promptgen</a></li>
+<li class="list-2"><a href="#content_3_48"> text2prompt</a></li>
+<li class="list-2"><a href="#content_3_49"> Prompt Translator</a></li>
+<li class="list-2"><a href="#content_3_50"> Deforum</a></li>
+<li class="list-2"><a href="#content_3_51"> Animator</a></li>
+<li class="list-2"><a href="#content_3_52"> gif2gif</a></li>
+<li class="list-2"><a href="#content_3_53"> Video Loopback</a></li>
+<li class="list-2"><a href="#content_3_54"> seed travel</a></li>
+<li class="list-2"><a href="#content_3_55"> shift-attention</a></li>
+<li class="list-2"><a href="#content_3_56"> prompt travel</a></li>
+<li class="list-2"><a href="#content_3_57"> Steps Animation</a></li>
+<li class="list-2"><a href="#content_3_58"> auto-sd-paint-ext</a></li>
+<li class="list-2"><a href="#content_3_59"> Detection Detailer</a></li>
+<li class="list-2"><a href="#content_3_60"> Batch Face Swap</a></li>
+<li class="list-2"><a href="#content_3_61"> Depth Maps</a></li>
+<li class="list-2"><a href="#content_3_62"> multi-subject-render</a></li>
+<li class="list-2"><a href="#content_3_63"> depthmap2mask</a></li>
+<li class="list-2"><a href="#content_3_64"> ABG_extension</a></li>
+<li class="list-2"><a href="#content_3_65"> Pixel</a></li>
+<li class="list-2"><a href="#content_3_66"> Pixelization</a></li>
+<li class="list-2"><a href="#content_3_67"> haku-img</a></li>
+<li class="list-2"><a href="#content_3_68"> Asymmetric Tiling</a></li>
+<li class="list-2"><a href="#content_3_69"> Latent Mirroring</a></li>
+<li class="list-2"><a href="#content_3_70"> Sonar</a></li>
+<li class="list-2"><a href="#content_3_71"> Depth Image I/O</a></li>
+<li class="list-2"><a href="#content_3_72"> Ultimate SD Upscale</a></li>
+<li class="list-2"><a href="#content_3_73"> Fusion</a></li>
+<li class="list-2"><a href="#content_3_74"> Dynamic Thresholding</a></li>
+<li class="list-2"><a href="#content_3_75"> anti-burn</a></li>
+<li class="list-2"><a href="#content_3_76"> sd-webui-controlnet</a></li>
+<li class="list-2"><a href="#content_3_77"> Latent Couple(two shot diffusion port)</a></li>
+<li class="list-2"><a href="#content_3_78"> Composable LoRA</a></li>
+<li class="list-2"><a href="#content_3_79"> Auto TLS-HTTPS</a></li>
+<li class="list-2"><a href="#content_3_80"> booru2prompt</a></li>
+<li class="list-2"><a href="#content_3_81"> Gelbooru Prompt</a></li>
+<li class="list-2"><a href="#content_3_82"> NSFW checker</a></li>
+<li class="list-2"><a href="#content_3_83"> Diffusion Defender</a></li>
+<li class="list-2"><a href="#content_3_84"> DH Patch</a></li>
+<li class="list-2"><a href="#content_3_85"> Riffusion</a></li>
+<li class="list-2"><a href="#content_3_86"> Save Intermediate Images</a></li>
+<li class="list-2"><a href="#content_3_87"> Add image number to grid</a></li>
+<li class="list-2"><a href="#content_3_88"> Multiple Hypernetworks</a></li>
+<li class="list-2"><a href="#content_3_89"> System Info</a></li>
+<li class="list-2"><a href="#content_3_90"> OpenPose Editor</a></li>
+<li class="list-2"><a href="#content_3_91"> Stable Horde Worker</a></li>
+<li class="list-2"><a href="#content_3_92"> Stable Horde Client</a></li>
+<li class="list-2"><a href="#content_3_93"> Discord Rich Presence</a></li>
+<li class="list-2"><a href="#content_3_94"> mine-diffusion</a></li>
+<li class="list-2"><a href="#content_3_95"> Aesthetic Image Scorer</a></li>
+<li class="list-2"><a href="#content_3_96"> Aesthetic Scorer</a></li>
+<li class="list-2"><a href="#content_3_97"> cafe-aesthetic</a></li>
+<li class="list-2"><a href="#content_3_98"> Clip Interrogator</a></li>
+<li class="list-2"><a href="#content_3_99"> Visualize Cross-Attention</a></li>
+<li class="list-2"><a href="#content_3_100"> DAAM</a></li>
+<li class="list-2"><a href="#content_3_101"> Dump U-Net</a></li>
+<li class="list-2"><a href="#content_3_102"> posex</a></li>
+<li class="list-2"><a href="#content_3_103"> LLuL</a></li>
+<li class="list-2"><a href="#content_3_104"> CFG-Schedule-for-Automatic1111-SD</a></li>
+<li class="list-2"><a href="#content_3_105"> ebsynth_utility</a></li>
+<li class="list-2"><a href="#content_3_106"> VRAM Estimator</a></li>
+<li class="list-2"><a href="#content_3_107"> MultiDiffusion with Tiled VAE</a></li>
+<li class="list-2"><a href="#content_3_108"> 3D Model&amp;Pose Loader</a></li>
+<li class="list-2"><a href="#content_3_109"> Corridor Crawler Outpainting</a></li>
+<li class="list-2"><a href="#content_3_110"> Panorama Viewer</a></li>
+<li class="list-2"><a href="#content_3_111"> db-storage1111</a></li>
+<li class="list-2"><a href="#content_3_112"> stable-diffusion-webui-rembg</a></li>
+<li class="list-2"><a href="#content_3_113"> sd-webui-tunnels</a></li>
+<li class="list-2"><a href="#content_3_114"> 3D Openpose Editor</a></li>
+<li class="list-2"><a href="#content_3_115"> sd-webui-enable-checker</a></li>
+<li class="list-2"><a href="#content_3_116"> stable-diffusion-webui-state</a></li>
+<li class="list-2"><a href="#content_3_117"> text2video</a></li>
+<li class="list-2"><a href="#content_3_118"> Aspect Ratio Helper</a></li>
+<li class="list-2"><a href="#content_3_119"> Canvas Zoom</a></li>
+<li class="list-2"><a href="#content_3_120"> Regional Prompter</a></li>
+<li class="list-2"><a href="#content_3_121"> Auto Translate</a></li>
+<li class="list-2"><a href="#content_3_122"> Prompt Translator</a></li>
+<li class="list-2"><a href="#content_3_123"> Abysz LAB</a></li>
+<li class="list-2"><a href="#content_3_124"> Negative Prompt Weight</a></li>
+<li class="list-2"><a href="#content_3_125"> Discord - Dynamic Rich Presence</a></li>
+<li class="list-2"><a href="#content_3_126"> PBRemTools</a></li>
+<li class="list-2"><a href="#content_3_127"> a1111-sd-webui-lycoris</a>
+<ul>
+<li class="list-3"><a href="#content_3_127_3"> a1111-sd-webui-locon</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_3_128"> sd-canvas-editor</a></li>
+<li class="list-2"><a href="#content_3_129"> Infinite Zoom</a></li>
+<li class="list-2"><a href="#content_3_130"> Eye Mask</a></li>
+<li class="list-2"><a href="#content_3_131"> ja_JP Localization</a></li>
+<li class="list-2"><a href="#content_3_132"> Instruct-pix2pix</a></li>
+<li class="list-2"><a href="#content_3_133"> Model Organizer</a></li>
+<li class="list-2"><a href="#content_3_134"> Model Preset Manager</a></li>
+<li class="list-2"><a href="#content_3_135"> Stable Diffusion Webui Civitai Helper</a></li>
+<li class="list-2"><a href="#content_3_136"> SD-CN-Animation</a></li>
+<li class="list-2"><a href="#content_3_137"> Model toolkit</a></li>
+<li class="list-2"><a href="#content_3_138"> sd-webui-prompt-all-in-one</a></li>
+<li class="list-2"><a href="#content_3_139"> sd-model-preview-xd</a></li>
+<li class="list-2"><a href="#content_3_140"> !After Detailer</a></li>
+<li class="list-2"><a href="#content_3_141"> Weight Gradient</a></li>
+<li class="list-2"><a href="#content_3_142"> One Button Prompt</a></li>
+<li class="list-2"><a href="#content_3_143"> Miaoshouai Assistant</a></li>
+<li class="list-2"><a href="#content_3_144"> miniPaint</a></li>
+<li class="list-2"><a href="#content_3_145"> StableSR</a></li>
+<li class="list-2"><a href="#content_3_146"> Web UI client queue</a></li>
+<li class="list-2"><a href="#content_3_147"> Distributed</a></li>
+<li class="list-2"><a href="#content_3_148"> StableStudio Adapter</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> 標準Scripts</a>
+<ul>
+<li class="list-2"><a href="#content_4_149"> Prompt Matrix</a></li>
+<li class="list-2"><a href="#content_4_150"> X/Y plot</a></li>
+<li class="list-2"><a href="#content_4_151"> Prompt from file or textbox</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 導入方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+インストールがwebで完結するので簡単<br>
+<ol id="content_block_2" class="list-1">
+<li> 1111が古かったら新しくする</li>
+<li> --listenか--shareしてるなら<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%cewebui%2duser%2ebat">ローカルのwebui-user.bat</a>も見て</li>
+<li> Extensionsタブ→Availableタブ→Load from:ボタン</li>
+<li> 好きなのを選んでInstall</li>
+</ol>
+</div></div><div id="content_block_4" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> 使い方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_4-body" class="wiki-section-body-2">
+<br>
+だいたいは、タブが増えてるか、txt2img/img2imgのScriptドロップダウンで選ぶか。<br>
+どっちにも無かったらreadmeとかちゃんと読んだほうがいい。<br>
+</div></div><div id="content_block_6" class="wiki-section-3"><div class="title-3"><h5 id="content_1_1_1"> リポジトリへのリンク <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_1_1_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_6-body" class="wiki-section-body-3">
+<br>
+AvailableタブのExtension名のリンクから配布元リポジトリに飛べる<br>
+readmeもそこにあるはず<br>
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> アップデート方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+<br>
+InstalledタブのCheck for updates→Applyを押す<br>
+</div></div><div id="content_block_10" class="wiki-section-2"><div class="title-2"><h4 id="content_1_3"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_1_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_10-body" class="wiki-section-body-2">
+<ul id="content_block_11" class="list-1">
+<li> インストーラーがついててvenvに何か入れるものも多い</li>
+<li> 安定とは限らない
+<ul class="list-2">
+<li> アンインストールはフォルダごと消すほうが安全っぽい</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_13" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 日本語訳 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_13-body" class="wiki-section-body-1">
+<br>
+110スレ274<br>
+<br>
+wuiの拡張機能の日本語訳作った<br>
+<a href="https://rentry.co/Extensions-index_ja/raw" class="outlink">https://rentry.co/Extensions-index_ja/raw</a><br>
+<br>
+使い方<br>
+<div id="content_block_14">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_14-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_14-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/cxN3RpFOjp.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/cxN3RpFOjp.png" border="0"></a>
+</div>
+</div>
+<br>
+deepl無料アカウントでapi制限キツいから更新は週1の予定 <br>
+<br>
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 一覧(順不同) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+<ul id="content_block_18" class="list-1">
+<li> <a href="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui-extensions/master/index.json" class="outlink">https://raw.githubusercontent.com/AUTOMATIC1111/st...</a>　</li>
+<li> 上のJSONの内容を基本として並べた。tags（分類）の種類が見直された為、こちらも更新</li>
+</ul>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> Aesthetic Gradients <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients.git" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+added: 2022-11-01<br>
+1枚または数枚の写真から埋め込みを作成し、それを使って生成された画像に自分のスタイルを適用することができます。<br>
+tags: [tab dropdown training]<br>
+<br>
+</div></div><div id="content_block_22" class="wiki-section-2"><div class="title-2"><h4 id="content_3_5"> Dreambooth <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_22-body" class="wiki-section-body-2">
+<a href="https://github.com/d8ahazard/sd_dreambooth_extension.git" class="outlink">https://github.com/d8ahazard/sd_dreambooth_extensi...</a><br>
+added: 2022-11-07<br>
+Shivam Shiaro氏のレポを元に、低VRAMのGPUに最適化したDreamboothのトレーニング。<ul id="content_block_23" class="list-1">
+<li> <del>NMKDより速くて設定が細かいので主戦力っぽい。</del>最近はKohya版にお株を奪われ気味。</li>
+<li> 手作業でコマンドからcu116をインストールする必要がある。</li>
+<li> 環境によってさまざまなエラーが出るので英語読んで自己解決できると捗る</li>
+<li> エラーや衝突を起こしやすいらしいので、画像生成用のwebUIとは別に専用の環境構築をしておくと無難。</li>
+</ul>
+tags: [tab training]<br>
+<br>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_3_6"> training-picker <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+<a href="https://github.com/Maurdekye/training-picker.git" class="outlink">https://github.com/Maurdekye/training-picker.git</a><br>
+動画からキーフレームを自動抽出し、そのフレームを手動で512x512クロップしてモデル学習に使用できるタブをWebuiに追加しました。<br>
+added: 2022-11-06<br>
+tags: [tab training]<br>
+<br>
+</div></div><div id="content_block_27" class="wiki-section-2"><div class="title-2"><h4 id="content_3_7"> Dataset Tag Editor <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_27-body" class="wiki-section-body-2">
+<a href="https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor.git" class="outlink">https://github.com/toshiaki1729/stable-diffusion-w...</a><br>
+学習用データセットのキャプションを編集することができます。<br>
+added: 2022-11-01<br>
+tags: [tab training]<br>
+<br>
+</div></div><div id="content_block_29" class="wiki-section-2"><div class="title-2"><h4 id="content_3_8"> DreamArtist <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_29-body" class="wiki-section-body-2">
+<a href="https://github.com/7eu7d7/DreamArtist-sd-webui-extension.git" class="outlink">https://github.com/7eu7d7/DreamArtist-sd-webui-ext...</a><br>
+対照的なプロンプトチューニングによる制御可能な一発画像生成の実現に向けて<ul id="content_block_30" class="list-1">
+<li> 新しい学習ツールの1111実装</li>
+<li> 以前は advanced Prompt Tuning method (APT) と呼んでいたもの</li>
+</ul>
+added: 2022-11-15<br>
+tags: [training]<br>
+<br>
+</div></div><div id="content_block_32" class="wiki-section-2"><div class="title-2"><h4 id="content_3_9"> WD 1.4 Tagger <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_32-body" class="wiki-section-body-2">
+<a href="https://github.com/toriato/stable-diffusion-webui-wd14-tagger.git" class="outlink">https://github.com/toriato/stable-diffusion-webui-...</a><br>
+学習済みモデルファイルを使用し、WD 1.4 タグを生成します。モデルリンク - <a href="https://mega.nz/file/ptA2jSSB#G4INKHQG2x2pGAVQBn-yd_U5dMgevGF8YYM9CR_R1SY" class="outlink">https://mega.nz/file/ptA2jSSB#G4INKHQG2x2pGAVQBn-y...</a><br>
+added: 2022-11-20<br>
+tags: [tab, training]<br>
+<br>
+</div></div><div id="content_block_34" class="wiki-section-2"><div class="title-2"><h4 id="content_3_10"> Hypernetwork-Monkeypatch-Extension <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_34-body" class="wiki-section-body-2">
+<a href="https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension.git" class="outlink">https://github.com/aria1th/Hypernetwork-MonkeyPatc...</a><br>
+description": "Extension that provides additional training features for hypernetwork training. Also supports using multiple hypernetworks for inference.<br>
+ハイパーネットワーク学習のための追加学習機能を提供する拡張機能。また、推論に複数のハイパーネットワークを使用することもサポートします。<br>
+added": "2023-01-12<br>
+tags: [tab, training]<br>
+<br>
+</div></div><div id="content_block_36" class="wiki-section-2"><div class="title-2"><h4 id="content_3_11"> Custom Diffusion <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_36-body" class="wiki-section-body-2">
+<a href="https://github.com/guaneec/custom-diffusion-webui.git" class="outlink">https://github.com/guaneec/custom-diffusion-webui....</a><br>
+description": "Custom Diffusion is, in short, finetuning-lite with TI, instead of tuning the whole model. Similar speed and memory requirements to TI and supposedly gives better results in less steps.<br>
+Custom Diffusionは、要するに、モデル全体をチューニングするのではなく、TIを使ったfinetuning-lightなのです。TIと同様のスピードとメモリを必要とし、より少ないステップでより良い結果を得られるとされています。<br>
+added": "2023-01-28<br>
+tags: [tab, training]<br>
+<br>
+</div></div><div id="content_block_38" class="wiki-section-2"><div class="title-2"><h4 id="content_3_12"> Smart Process <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_38-body" class="wiki-section-body-2">
+<a href="https://github.com/d8ahazard/sd_smartprocess.git" class="outlink">https://github.com/d8ahazard/sd_smartprocess.git</a><br>
+added: 2022-11-12<br>
+自動被写体識別、キャプション被写体交換、アップスケーリング/顔復元などのスマートプリプロセスを搭載。<ul id="content_block_39" class="list-1">
+<li> Extrasの親戚みたいな感じ</li>
+<li> トリミング、キャプション付け、拡大を順番に実行できる。</li>
+<li> この通りの手順で処理して欲しい用事が無いと必要ないかも。</li>
+</ul>
+tags: [tab, editing, training]<br>
+<br>
+</div></div><div id="content_block_41" class="wiki-section-2"><div class="title-2"><h4 id="content_3_13"> Embeddings editor <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_41-body" class="wiki-section-body-2">
+<a href="https://github.com/CodeExplode/stable-diffusion-webui-embedding-editor.git" class="outlink">https://github.com/CodeExplode/stable-diffusion-we...</a><br>
+スライダーを使って手動でテキスト反転埋込を編集できるようにします。<br>
+added: 2022-11-06<br>
+tags: [tab, models]<br>
+<br>
+</div></div><div id="content_block_43" class="wiki-section-2"><div class="title-2"><h4 id="content_3_14"> embedding-inspector <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_43-body" class="wiki-section-body-2">
+<a href="https://github.com/tkalayci71/embedding-inspector.git" class="outlink">https://github.com/tkalayci71/embedding-inspector....</a><br>
+任意のトークン(単語)やTextual-Inversionの埋め込みを検査し、どの埋め込みが類似しているかを調べることができます。エンベッディングの混合、修正、作成は数秒でできます。<br>
+added: 2022-12-06<br>
+tags: [tab, models]<br>
+<br>
+</div></div><div id="content_block_45" class="wiki-section-2"><div class="title-2"><h4 id="content_3_15"> Merge Board <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_45-body" class="wiki-section-body-2">
+<a href="https://github.com/bbc-mc/sdweb-merge-board.git" class="outlink">https://github.com/bbc-mc/sdweb-merge-board.git</a><br>
+複数のレーンマージに対応(最大10レーン)マージの組み合わせをレシピとして保存、読み込みが可能。<ul id="content_block_46" class="list-1">
+<li> 複数マージが簡単にできる。レシピをテキストで共有できる。</li>
+</ul>
+added: 2022-11-21<br>
+tags: [script tab models]<br>
+<br>
+</div></div><div id="content_block_48" class="wiki-section-2"><div class="title-2"><h4 id="content_3_16"> Model Converter <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_48-body" class="wiki-section-body-2">
+<a href="https://github.com/Akegarasu/sd-webui-model-converter.git" class="outlink">https://github.com/Akegarasu/sd-webui-model-conver...</a><br>
+fp16/bf16のノーエマ/エマ専用セーフティセンサに機種変更する。<br>
+added: 2023-01-05<br>
+tags: [tab, models]<br>
+<br>
+</div></div><div id="content_block_50" class="wiki-section-2"><div class="title-2"><h4 id="content_3_17"> Kohya-ss Additional Networks <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_50-body" class="wiki-section-body-2">
+<a href="https://github.com/kohya-ss/sd-webui-additional-networks.git" class="outlink">https://github.com/kohya-ss/sd-webui-additional-ne...</a><br>
+Web UIで、そのスクリプトで学習させたネットワーク（LoRA）を使って画像を生成できるようにする。<ul id="content_block_51" class="list-1">
+<li> WEBUI標準でも🎴マークからLoRAを読み込めるようになったが、こちらは複数のLoRAをU-net/Text Encorderをそれぞれスライダーで調節が可能になる、Settingより複数のフォルダを読み込み先に設定できるなど色々高機能。</li>
+</ul>
+added: 2023-01-06<br>
+tags: [models]<br>
+<br>
+</div></div><div id="content_block_53" class="wiki-section-2"><div class="title-2"><h4 id="content_3_18"> Merge Block Weighted <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_53-body" class="wiki-section-body-2">
+<a href="https://github.com/bbc-mc/sdweb-merge-block-weighted-gui.git" class="outlink">https://github.com/bbc-mc/sdweb-merge-block-weight...</a><br>
+description": "Merge models with separate rate for each 25 U-Net block (input, middle, output).<br>
+25のU-Netブロック（入力、中間、出力）ごとに別々のレートでモデルをマージします。<br>
+added": "2023-01-13<br>
+tags: [tab, models]<br>
+→<a href="https://seesaawiki.jp/nai_ch/d/%b3%ac%c1%d8%a5%de%a1%bc%a5%b8">階層マージ</a><br>
+<br>
+</div></div><div id="content_block_55" class="wiki-section-2"><div class="title-2"><h4 id="content_3_19"> Embedding Merge <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_19" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_55-body" class="wiki-section-body-2">
+<a href="https://github.com/klimaleksus/stable-diffusion-webui-embedding-merge.git" class="outlink">https://github.com/klimaleksus/stable-diffusion-we...</a><br>
+description: Merging Textual Inversion embeddings at runtime from string literals.<br>
+文字列リテラルから実行時にTextual Inversion embeddingsをマージする。<br>
+added": "2023-02-09<br>
+tags: [tab, models, manipulations]<br>
+<br>
+</div></div><div id="content_block_57" class="wiki-section-2"><div class="title-2"><h4 id="content_3_20"> SuperMerger <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_20" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_57-body" class="wiki-section-body-2">
+url: <a href="https://github.com/hako-mikan/sd-webui-supermerger.git" class="outlink">https://github.com/hako-mikan/sd-webui-supermerger...</a><br>
+description: Merge and run without saving to drive. Sequential XY merge generations; extract and merge loras, bind loras to ckpt, merge block weights, and more. Some operations are RAM-heavy &amp; diffusers is required.<br>
+このextentionではモデルをマージした際、保存せずに画像生成用のモデルとして読み込むことができます。 これまでマージしたモデルはいったん保存して気に入らなければ削除するということが必要でしたが、このextentionを使うことでHDDやSSDの消耗を防ぐことができます。<ul id="content_block_58" class="list-1">
+<li> モデルマージが好きなユーザーにとっての神アプリ。公式Extensionsとなった。</li>
+</ul>
+added: 2023-02-18<br>
+tags: [tab, models]<br>
+<br>
+</div></div><div id="content_block_60" class="wiki-section-2"><div class="title-2"><h4 id="content_3_21"> LoRA Block Weight <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_21" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_60-body" class="wiki-section-body-2">
+url: <a href="https://github.com/hako-mikan/sd-webui-lora-block-weight.git" class="outlink">https://github.com/hako-mikan/sd-webui-lora-block-...</a><br>
+LoRAの強度を、ブロックごとにオンザフライで適用します。プリセット、重量分析、ランダム化、XYプロットが含まれます。<br>
+description: Applies LoRA strength; block by block on the fly. Includes presets weight analysis randomization XY plot.<br>
+added: 2023-02-28<br>
+tags: [models]<br>
+<br>
+</div></div><div id="content_block_62" class="wiki-section-2"><div class="title-2"><h4 id="content_3_22"> Image browser <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_22" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_62-body" class="wiki-section-body-2">
+<a href="https://github.com/AlUlkesh/stable-diffusion-webui-images-browser.git" class="outlink">https://github.com/AlUlkesh/stable-diffusion-webui...</a><br>
+added: 2022-11-01<br>
+作成した画像をWebブラウザで閲覧するためのインターフェイスを提供する。<br>
+<ul id="content_block_63" class="list-1">
+<li> 生成した画像の履歴を閲覧したり気に入った画像を登録することができる。</li>
+<li> 以前に一時期だけ本体に入ってた機能がExtensionsに移動した。</li>
+<li> txt2imgの履歴からimg2imgとかExtrasしたい時にはすごく便利。</li>
+<li> Generate Infoも出るのでプロンプト見たり教えたりもできる。</li>
+</ul>
+tags: [tab UI related]<br>
+</div></div><div id="content_block_65" class="wiki-section-2"><div class="title-2"><h4 id="content_3_23"> Infinite image browsing, <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_23" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_65-body" class="wiki-section-body-2">
+<a href="https://github.com/zanllp/sd-webui-infinite-image-browsing.git" class="outlink">https://github.com/zanllp/sd-webui-infinite-image-...</a><br>
+ページングなしですべての画像を閲覧でき、画像パラメータによる共同検索をサポートする、VS Codeに似たレイアウトの高速画像ブラウザです。<br>
+A fast image browser that allows browsing all images without paging, and supports joint search using image parameters, with a layout similar to VS Code.<br>
+added: 2023-04-16,<br>
+tags: [tab, UI related]<br>
+</div></div><div id="content_block_67" class="wiki-section-2"><div class="title-2"><h4 id="content_3_24"> Inspiration <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_24" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_67-body" class="wiki-section-body-2">
+<a href="https://github.com/yfszzx/stable-diffusion-webui-inspiration.git" class="outlink">https://github.com/yfszzx/stable-diffusion-webui-i...</a><br>
+added: 2022-11-01<br>
+アーティストやアートジャンルの典型的なスタイルの写真をランダムに表示し、選択後にそのアーティストやジャンルの写真がより多く表示されます。そのため、制作時にアートのスタイルを選択するのが難しいという心配はありません。<br>
+tags: [tab UI related]<br>
+<br>
+</div></div><div id="content_block_69" class="wiki-section-2"><div class="title-2"><h4 id="content_3_25"> Artists to study <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_25" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_69-body" class="wiki-section-body-2">
+<a href="https://github.com/camenduru/stable-diffusion-webui-artists-to-study.git" class="outlink">https://github.com/camenduru/stable-diffusion-webu...</a><br>
+アーティストが生成した写真をカテゴリー別にギャラリーとして表示します。<br>
+added: 2022-11-01<br>
+tags: [tab UI related]<br>
+<br>
+</div></div><div id="content_block_71" class="wiki-section-2"><div class="title-2"><h4 id="content_3_26"> Prompt Gallery <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_26" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_71-body" class="wiki-section-body-2">
+<a href="https://github.com/dr413677671/PromptGallery-stable-diffusion-webui.git" class="outlink">https://github.com/dr413677671/PromptGallery-stabl...</a><br>
+キャラクターのプロンプトを含むyamlファイルを作成し、generateを押すと、単語の属性と修飾子によって素早くプレビューすることができます。<br>
+added: 2022-12-02<br>
+tags: [tab UI related]<br>
+<br>
+</div></div><div id="content_block_73" class="wiki-section-2"><div class="title-2"><h4 id="content_3_27"> Infinity Grid Generator <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_27" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_73-body" class="wiki-section-body-2">
+<a href="https://github.com/mcmonkeyprojects/sd-infinity-grid-generator-script.git" class="outlink">https://github.com/mcmonkeyprojects/sd-infinity-gr...</a><br>
+script 	パラメータを指定したyamlファイルを構築し、無限次元のグリッドを生成する。フィールドに説明テキストを追加する機能を内蔵。使い方の詳細はreadmeを参照。<br>
+added: 2022-12-09<br>
+tags: [UI related]<br>
+<br>
+</div></div><div id="content_block_75" class="wiki-section-2"><div class="title-2"><h4 id="content_3_28"> Config-Presets <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_28" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_75-body" class="wiki-section-body-2">
+<a href="https://github.com/Zyin055/Config-Presets.git" class="outlink">https://github.com/Zyin055/Config-Presets.git</a><br>
+txt2imgとimg2imgタブのUIプリセット設定を変更できるように、設定可能なドロップダウンを追加しました。<br>
+added: 2022-12-13<br>
+tags: [UI related]<br>
+<br>
+</div></div><div id="content_block_77" class="wiki-section-2"><div class="title-2"><h4 id="content_3_29"> Preset Utilities <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_29" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_77-body" class="wiki-section-body-2">
+<a href="https://github.com/Gerschel/sd_web_ui_preset_utils.git" class="outlink">https://github.com/Gerschel/sd_web_ui_preset_utils...</a><br>
+script 	ui用プリセットユーティリティツール。カスタムスクリプトとの互換性を提供します。(制限あり)<br>
+added: 2022-12-19<br>
+tags: [UI related]<br>
+<br>
+</div></div><div id="content_block_79" class="wiki-section-2"><div class="title-2"><h4 id="content_3_30"> openOutpaint extension <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_30" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_79-body" class="wiki-section-body-2">
+<a href="https://github.com/zero01101/openOutpaint-webUI-extension.git" class="outlink">https://github.com/zero01101/openOutpaint-webUI-ex...</a><br>
+openOutpaintのフルUIが表示されるタブです。apiフラグ付きで実行。<br>
+added: 2022-12-23<br>
+tags: [tab UI related editing]<br>
+<br>
+</div></div><div id="content_block_81" class="wiki-section-2"><div class="title-2"><h4 id="content_3_31"> quick-css <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_31" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_81-body" class="wiki-section-body-2">
+<a href="https://github.com/Gerschel/sd-web-ui-quickcss.git" class="outlink">https://github.com/Gerschel/sd-web-ui-quickcss.git</a><br>
+カスタム.cssファイルを素早く選択して適用し、uiの外観や要素の配置をカスタマイズするための拡張機能です。<br>
+added: 2022-12-30<br>
+tags: [tab UI related]<br>
+<br>
+</div></div><div id="content_block_83" class="wiki-section-2"><div class="title-2"><h4 id="content_3_32"> Aspect Ratio selector <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_32" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_83-body" class="wiki-section-body-2">
+<a href="https://github.com/alemelis/sd-webui-ar.git" class="outlink">https://github.com/alemelis/sd-webui-ar.git</a><br>
+Adds image aspect ratio selector buttons.<br>
+画像のアスペクト比選択ボタンを追加。<br>
+added: 2023-02-04<br>
+tags: [UI related]<br>
+</div></div><div id="content_block_85" class="wiki-section-2"><div class="title-2"><h4 id="content_3_33"> Nevysha's Cozy Nest <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_33" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_85-body" class="wiki-section-body-2">
+<a href="https://github.com/Nevysha/Cozy-Nest.git" class="outlink">https://github.com/Nevysha/Cozy-Nest.git</a><br>
+UI/UXを改善するための拡張機能です。Auto1111のwebuiで居心地の良い場所を探してみてください!<br>
+Extension for an improved UI/UX. Find your cozy spot on Auto1111's webui!<br>
+added: 2023-05-02<br>
+tags: [UI related]<br>
+</div></div><div id="content_block_87" class="wiki-section-2"><div class="title-2"><h4 id="content_3_34"> Catppuccin Theme <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_34" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_87-body" class="wiki-section-body-2">
+<a href="https://github.com/catppuccin/stable-diffusion-webui.git" class="outlink">https://github.com/catppuccin/stable-diffusion-web...</a><br>
+description: Adds various custom themes<br>
+各種カスタムテーマの追加<br>
+added: 2023-02-04<br>
+tags: [UI related]<br>
+<br>
+</div></div><div id="content_block_89" class="wiki-section-2"><div class="title-2"><h4 id="content_3_35"> Kitchen Theme <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_35" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_89-body" class="wiki-section-body-2">
+url: <a href="https://github.com/canisminor1990/sd-web-ui-kitchen-theme.git" class="outlink">https://github.com/canisminor1990/sd-web-ui-kitche...</a><br>
+説明: カスタム テーマ。<br>
+description: Custom Theme.<br>
+added: 2023-02-28<br>
+tags: [UI related]<br>
+<br>
+</div></div><div id="content_block_91" class="wiki-section-2"><div class="title-2"><h4 id="content_3_36"> Bilingual Localization <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_36" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_91-body" class="wiki-section-body-2">
+url: <a href="https://github.com/journey-ad/sd-webui-bilingual-localization.git" class="outlink">https://github.com/journey-ad/sd-webui-bilingual-l...</a><br>
+説明: バイリンガル翻訳は、元のボタンを見つける方法を心配する必要はありません。 言語パックの拡張機能と互換性があり、再インポートする必要はありません。<br>
+description: Bilingual translation no need to worry about how to find the original button. Compatible with language pack extensions no need to re-import.<br>
+added: 2023-02-28<br>
+tags: [UI related]<ul id="content_block_92" class="list-1">
+<li> UIの元の英語表記と設定で洗濯した翻訳言語を並べて表示(2か国語表示)。フォントサイズが少し小さめになるが地味に便利かもしれない。</li>
+</ul>
+<br>
+</div></div><div id="content_block_94" class="wiki-section-2"><div class="title-2"><h4 id="content_3_37"> Dynamic Prompts <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_37" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_94-body" class="wiki-section-body-2">
+<a href="https://github.com/adieyal/sd-dynamic-prompts.git" class="outlink">https://github.com/adieyal/sd-dynamic-prompts.git</a><br>
+ランダムまたは組み合わせによるプロンプト生成のための表現力豊かなテンプレート言語と、深いワイルドカードディレクトリ構造をサポートする機能を実装しています。<br>
+description: Implements an expressive template language for random or combinatorial prompt generation along with features to support deep wildcard directory structures.<br>
+added: 2022-11-01<br>
+tags: [prompting]<ul id="content_block_95" class="list-1">
+<li> プロンプトに {flat chest|small breasts|medium breasts|huge breasts} と書くとランダムで乳の大きさが変わる</li>
+<li> <sub>breasts</sub> と書いて、WILDCARD_DIR/breasts.txt に改行区切りで乳のサイズを書いても同じ</li>
+<li> つまりガチャに飽きた時の味変用やね</li>
+<li> PNG Infoには{}のまま出てくるのでどれが選ばれたかはわからない</li>
+</ul>
+<br>
+</div></div><div id="content_block_97" class="wiki-section-3"><div class="title-3"><h5 id="content_3_37_2"> Wildcards <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_37_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_97-body" class="wiki-section-body-3">
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards.git" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+サンプル拡張機能です。プロンプトで <sub>name</sub> 構文を使用し、wildcards ディレクトリにある name.txt というファイルからランダムな行を取得できるようにします。同様の機能については、動的プロンプトも参照してください。<br>
+added: 2022-11-01<ul id="content_block_98" class="list-1">
+<li> 後述の「Dynamic Prompts」の前身で機能が少ない。</li>
+</ul>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_100" class="wiki-section-2"><div class="title-2"><h4 id="content_3_38"> Unprompted <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_38" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_100-body" class="wiki-section-body-2">
+<a href="https://github.com/ThereforeGames/unprompted.git" class="outlink">https://github.com/ThereforeGames/unprompted.git</a><br>
+description: Allows you to include various shortcodes in your prompts. You can pull text from files, set up your own variables, process text through conditional functions, and so much more - it's like wildcards on steroids. It now includes integrations like hard-prompts made easy, ControlNet, txt2img2img and txt2mask.<br>
+adsつきなのでフィルタされている。<br>
+added: 2022-11-04<br>
+tags: [prompting ads]<br>
+<br>
+</div></div><div id="content_block_102" class="wiki-section-2"><div class="title-2"><h4 id="content_3_39"> StylePile <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_39" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_102-body" class="wiki-section-body-2">
+<a href="https://github.com/some9000/StylePile.git" class="outlink">https://github.com/some9000/StylePile.git</a><br>
+結果のスタイルに影響を与える要素をプロンプトに簡単にミックス＆マッチさせる方法です。<br>
+added: 2022-11-24<br>
+tags: [prompting]<br>
+<br>
+</div></div><div id="content_block_104" class="wiki-section-2"><div class="title-2"><h4 id="content_3_40"> Booru tag autocompletion <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_40" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_104-body" class="wiki-section-body-2">
+<a href="https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git" class="outlink">https://github.com/DominikDoom/a1111-sd-webui-tagc...</a><br>
+Danbooruなどの画像ブールボードからのタグの自動補完ヒントを表示します。ローカルのタグCSVファイルを使用し、カスタマイズのためのコンフィグも含まれています。<ul id="content_block_105" class="list-1">
+<li> プロンプト入力時にDanbooruのタグの候補を表示・補完してくれる。ネガティブプロンプトでも効くので便利。</li>
+<li> "&lt;"に続けて入力することで、TIやLoRAの自動補完もしてくれる</li>
+<li> 表示候補はデフォルトでは5つだが、Settings &gt; Tag Autocomplete &gt; Maximum Resultsから変更可</li>
+</ul>
+<br>
+added: 2022-11-04<br>
+tags: [prompting]<br>
+<br>
+</div></div><div id="content_block_107" class="wiki-section-2"><div class="title-2"><h4 id="content_3_41"> novelai-2-local-prompt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_41" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_107-body" class="wiki-section-body-2">
+<a href="https://github.com/animerl/novelai-2-local-prompt.git" class="outlink">https://github.com/animerl/novelai-2-local-prompt....</a><br>
+NovelAIで使用しているプロンプトをWebUIで使用できるように変換するボタンを追加する。また、以前使用したプロンプトを呼び出すことができるボタンを追加する。<ul id="content_block_108" class="list-1">
+<li> web版のプロンプトをローカル版向けに変換できる</li>
+<li> プロンプトとネガティブプロンプトを同時に変換する</li>
+<li> Quality TagやUC L+Bも付与する</li>
+<li> HistoryボタンはUndoっぽい</li>
+</ul>
+added: 2022-11-05<br>
+tags: [prompting]<br>
+<br>
+</div></div><div id="content_block_110" class="wiki-section-2"><div class="title-2"><h4 id="content_3_42"> Tokenizer <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_42" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_110-body" class="wiki-section-body-2">
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui-tokenizer.git" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+CLIPモデルがどのようにテキストをトークン化するかをプレビューできるタブを追加しました。<br>
+added: 2022-11-05<br>
+tags: [tab prompting]<br>
+<br>
+</div></div><div id="content_block_112" class="wiki-section-2"><div class="title-2"><h4 id="content_3_43"> Randomize <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_43" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_112-body" class="wiki-section-body-2">
+<a href="https://github.com/innightwolfsleep/stable-diffusion-webui-randomize.git" class="outlink">https://github.com/innightwolfsleep/stable-diffusi...</a><br>
+txt2img の生成時にランダムなパラメータを許可します。このスクリプトは、選択されたスクリプトに関係なく、すべての世代で処理されます。つまり、このスクリプトは AUTOMATIC1111/stable-diffusion-webui-wildcards などの他のスクリプトでも機能することになります。<br>
+added: 2022-11-11<br>
+tags: [prompting]<br>
+<br>
+</div></div><div id="content_block_114" class="wiki-section-2"><div class="title-2"><h4 id="content_3_44"> conditioning-highres-fix <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_44" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_114-body" class="wiki-section-body-2">
+<a href="https://github.com/klimaleksus/stable-diffusion-webui-conditioning-highres-fix.git" class="outlink">https://github.com/klimaleksus/stable-diffusion-we...</a><br>
+これは、実行時にDenoisingの強度に対してInpaintingのコンディショニングマスクの強度の値を書き換えるための拡張機能である。sd-v1-5-inpainting.ckpt のような Inpainting モデルで有効である。<br>
+description: This is Extension for rewriting Inpainting conditioning mask strength value relative to Denoising strength at runtime. This is useful for Inpainting models such as sd-v1-5-inpainting.ckpt<br>
+added: 2022-11-11<br>
+tags: [prompting]<ul id="content_block_115" class="list-1">
+<li> 追記│「in paint時の〜」と書かれている通り、通常のtext2imgでは高解像度fix時の融合に対する効果は見られませんでした。</li>
+<li> Highres fixしたときに人物が融合したりする問題を解決する拡張機能。公式リストに実装済み</li>
+<li> 公式から引用した縦軸Denoise、横軸Cond Image mask weightの表。</li>
+<li> クソデカ画像注意：Webp：約3MB：<a href="https://image01.seesaawiki.jp/n/h/nai_ch/rWnETbnk4z.webp">https://image01.seesaawiki.jp/n/h/nai_ch/rWnETbnk4...</a></li>
+</ul>
+<br>
+</div></div><div id="content_block_117" class="wiki-section-2"><div class="title-2"><h4 id="content_3_45"> model-keyword <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_45" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_117-body" class="wiki-section-body-2">
+<a href="https://github.com/mix1009/model-keyword.git" class="outlink">https://github.com/mix1009/model-keyword.git</a><br>
+一致するキーワードをプロンプトに自動的に挿入します。この拡張機能を更新すると、最新のモデル＋キーワードのマッピングを取得できます。<br>
+added: 2022-12-28<br>
+tags: [prompting]<br>
+<br>
+<br>
+</div></div><div id="content_block_119" class="wiki-section-2"><div class="title-2"><h4 id="content_3_46"> Prompt Generator <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_46" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_119-body" class="wiki-section-body-2">
+<a href="https://github.com/imrayya/stable-diffusion-webui-Prompt_Generator.git" class="outlink">https://github.com/imrayya/stable-diffusion-webui-...</a><br>
+distilgpt2 を使用して、小さなベースプロンプトからプロンプトを生成する。モデルの追加制御を行うタブを追加する。<br>
+added: 2022-12-30<br>
+tags: [prompting]<br>
+<br>
+</div></div><div id="content_block_121" class="wiki-section-2"><div class="title-2"><h4 id="content_3_47"> Promptgen <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_47" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_121-body" class="wiki-section-body-2">
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui-promptgen.git" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+description: Use transformers models to generate prompts.<br>
+トランスフォーマーモデルを使用してプロンプトを生成します。<br>
+added: 2023-01-18<br>
+tags: [tab prompting]<br>
+<br>
+</div></div><div id="content_block_123" class="wiki-section-2"><div class="title-2"><h4 id="content_3_48"> text2prompt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_48" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_123-body" class="wiki-section-body-2">
+<a href="https://github.com/toshiaki1729/stable-diffusion-webui-text2prompt.git" class="outlink">https://github.com/toshiaki1729/stable-diffusion-w...</a><br>
+description: Generates anime tags using databases and models for tokenizing.<br>
+データベースとモデルを用いてアニメのタグを生成し、トークン化する。<br>
+added: 2023-2-11<br>
+tags: [tab prompting]<br>
+<br>
+</div></div><div id="content_block_125" class="wiki-section-2"><div class="title-2"><h4 id="content_3_49"> Prompt Translator <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_49" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_125-body" class="wiki-section-body-2">
+<a href="https://github.com/butaixianran/Stable-Diffusion-Webui-Prompt-Translator" class="outlink">https://github.com/butaixianran/Stable-Diffusion-W...</a><br>
+description: A integrated translator for translating prompts to English using Deepl or Baidu.<br>
+DeeplやBaiduを使用してプロンプトを英語に翻訳するための統合トランスレーターです。<br>
+added: 2023-02-11<br>
+tags: [tab prompting online]<br>
+<br>
+</div></div><div id="content_block_127" class="wiki-section-2"><div class="title-2"><h4 id="content_3_50"> Deforum <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_50" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_127-body" class="wiki-section-body-2">
+<a href="https://github.com/deforum-art/deforum-for-automatic1111-webui.git" class="outlink">https://github.com/deforum-art/deforum-for-automat...</a><br>
+added: 2022-11-01<ul id="content_block_128" class="list-1">
+<li> キーフレーム可能なシーケンス、動的な数学パラメータ（プロンプトの内部も）、動的なマスキング、深度推定、ワープをサポートする、2Dおよび3Dアニメーションのための広範囲なスクリプトであるDeforumの公式移植版です。</li>
+</ul>
+tags: [tab animation]<br>
+<br>
+</div></div><div id="content_block_130" class="wiki-section-2"><div class="title-2"><h4 id="content_3_51"> Animator <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_51" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_130-body" class="wiki-section-body-2">
+<a href="https://github.com/Animator-Anon/animator_extension.git" class="outlink">https://github.com/Animator-Anon/animator_extensio...</a><br>
+フレームをダンプしてビデオファイルを構築する基本的なimg2imgスクリプトです。ズームイン・ワーピングの面白いムービーを作るのに適しています。これは、img2imgのタスクを自動化するための多機能なツールセットであることを意図しています。<br>
+description: A basic img2img script that will dump frames and build a video file. Suitable for creating interesting zoom-in warping movies. This is intended to be a versatile toolset to help you automate some img2img tasks.<br>
+added: 2023-01-11<br>
+tags: [tab animation]<br>
+<br>
+</div></div><div id="content_block_132" class="wiki-section-2"><div class="title-2"><h4 id="content_3_52"> gif2gif <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_52" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_132-body" class="wiki-section-body-2">
+<a href="https://github.com/LonicaMewinsky/gif2gif.git" class="outlink">https://github.com/LonicaMewinsky/gif2gif.git</a><br>
+img2img生成のためにgifをフレーム単位で抽出し、アニメーションgifに組み戻すスクリプトです。<br>
+description: A script for img2img that extract a gif frame by frame for img2img generation and recombine them back into an animated gif<br>
+added: 2023-02-09<br>
+tags: [animation]<br>
+<br>
+</div></div><div id="content_block_134" class="wiki-section-2"><div class="title-2"><h4 id="content_3_53"> Video Loopback <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_53" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_134-body" class="wiki-section-body-2">
+<a href="https://github.com/fishslot/video_loopback_for_webui" class="outlink">https://github.com/fishslot/video_loopback_for_web...</a><br>
+description": "A video2video script that tries to improve on the temporal consistency and flexibility of normal vid2vid.",<br>
+added: 2023-02-13<br>
+tags: [animation]<br>
+<br>
+</div></div><div id="content_block_136" class="wiki-section-2"><div class="title-2"><h4 id="content_3_54"> seed travel <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_54" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_136-body" class="wiki-section-body-2">
+<a href="https://github.com/yownas/seed_travel.git" class="outlink">https://github.com/yownas/seed_travel.git</a><br>
+AUTOMATIC1111/stable-diffusion-webui 用の、シード間に存在する画像を作成するための小さなスクリプトです。<br>
+description: Small script for AUTOMATIC1111/stable-diffusion-webui to create images that exists between seeds.<ul id="content_block_137" class="list-1">
+<li> としあき曰はく「まあ、簡単にいうとVariation seedでパラパラエロ動画みたいなのが作れます。」</li>
+<li> <a href="https://github.com/yownas/seed_travel" class="outlink">https://github.com/yownas/seed_travel</a></li>
+</ul>
+added: 2022-11-09<br>
+tags: [animation]<br>
+<br>
+</div></div><div id="content_block_139" class="wiki-section-2"><div class="title-2"><h4 id="content_3_55"> shift-attention <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_55" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_139-body" class="wiki-section-body-2">
+<a href="https://github.com/yownas/shift-attention.git" class="outlink">https://github.com/yownas/shift-attention.git</a><br>
+プロンプトの注意をずらす画像のシーケンスを生成する。このスクリプトを使うと、プロンプト内のトークンの重みに範囲を与えて、最初のものから順にステップしていく一連の画像を生成することができる。<ul id="content_block_140" class="list-1">
+<li> "photo of (cat:1~0) or (dog:0~1)" と入力すると猫から犬に変化する動画が作れるものらしい？</li>
+</ul>
+added: 2022-11-09<br>
+tags: [animation]<br>
+<br>
+</div></div><div id="content_block_142" class="wiki-section-2"><div class="title-2"><h4 id="content_3_56"> prompt travel <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_56" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_142-body" class="wiki-section-body-2">
+<a href="https://github.com/Kahsolt/stable-diffusion-webui-prompt-travel.git" class="outlink">https://github.com/Kahsolt/stable-diffusion-webui-...</a><br>
+AUTOMATIC1111/stable-diffusion-webui の拡張スクリプトで、潜在空間内のプロンプト間を移動できるようにした。<ul id="content_block_143" class="list-1">
+<li> プロンプトやstepsの細かい差を動画にして見るもの？</li>
+</ul>
+added: 2022-11-11<br>
+tags: [animation]<br>
+<br>
+</div></div><div id="content_block_145" class="wiki-section-2"><div class="title-2"><h4 id="content_3_57"> Steps Animation <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_57" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_145-body" class="wiki-section-body-2">
+<a href="https://github.com/vladmandic/sd-extension-steps-animation.git" class="outlink">https://github.com/vladmandic/sd-extension-steps-a...</a><br>
+description": "Create animation sequence from denoised intermediate steps.<br>
+ノイズ除去された中間ステップからアニメーションシーケンスを作成します。<br>
+added": 2023-01-21<br>
+tags: [animation]<br>
+<br>
+</div></div><div id="content_block_147" class="wiki-section-2"><div class="title-2"><h4 id="content_3_58"> auto-sd-paint-ext <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_58" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_147-body" class="wiki-section-body-2">
+<a href="https://github.com/Interpause/auto-sd-paint-ext.git" class="outlink">https://github.com/Interpause/auto-sd-paint-ext.gi...</a><br>
+Kritaのプラグインです。<br>
+added: 2022-11-04<br>
+tags: [editing]<br>
+<br>
+</div></div><div id="content_block_149" class="wiki-section-2"><div class="title-2"><h4 id="content_3_59"> Detection Detailer <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_59" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_149-body" class="wiki-section-body-2">
+<a href="https://github.com/dustysys/ddetailer.git" class="outlink">https://github.com/dustysys/ddetailer.git</a><br>
+description: An object detection and auto-mask extension for Stable Diffusion web UI.<br>
+Stable Diffusion Web UI のためのオブジェクト検出と自動マスクの拡張機能。<ul id="content_block_150" class="list-1">
+<li> マスクの自動生成っぽい</li>
+<li> i2i等で役立つマスク自動生成。顔だけ、または人物のみに自動生成したマスクで処理ができる。</li>
+</ul>
+added: 2022-11-09<br>
+tags: [editing]<br>
+<br>
+</div></div><div id="content_block_152" class="wiki-section-2"><div class="title-2"><h4 id="content_3_60"> Batch Face Swap <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_60" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_152-body" class="wiki-section-body-2">
+<a href="https://github.com/kex0/batch-face-swap.git" class="outlink">https://github.com/kex0/batch-face-swap.git</a><br>
+description: Automatically detects faces and replaces them.<br>
+顔を自動的に検出して置き換えます。<br>
+added: 2023-01-13<br>
+tags: [editing]<br>
+<br>
+</div></div><div id="content_block_154" class="wiki-section-2"><div class="title-2"><h4 id="content_3_61"> Depth Maps <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_61" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_154-body" class="wiki-section-body-2">
+<a href="https://github.com/thygate/stable-diffusion-webui-depthmap-script.git" class="outlink">https://github.com/thygate/stable-diffusion-webui-...</a><br>
+生成された画像からデプスマップを作成します。生成された画像は、VRヘッドセットやルッキンググラスなどの3Dデバイスやホログラフィックデバイスで表示したり、レンダーエンジンやゲームエンジンで変位補正をした平面上で使用したり、あるいは3Dプリントすることができます。<br>
+added: 2022-11-30<br>
+tags: [editing]<br>
+<br>
+</div></div><div id="content_block_156" class="wiki-section-2"><div class="title-2"><h4 id="content_3_62"> multi-subject-render <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_62" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_156-body" class="wiki-section-body-2">
+<a href="https://github.com/Extraltodeus/multi-subject-render.git" class="outlink">https://github.com/Extraltodeus/multi-subject-rend...</a><br>
+1枚の画像に複数の複雑な被写体を作成するのに役立つ、深度を意識した拡張機能です。背景を生成し、複数の前景被写体を生成し、深度解析後にそれらの背景を切り出し、背景に貼り付け、最後にimg2imgできれいに仕上げます。<br>
+<br>
+背景と前景を生成して合成するやつ<br>
+現状クソコラ製造機<br>
+研究次第では使えるかもしれない<br>
+added: 2022-11-24<br>
+tags: [editing manipulations]<br>
+<br>
+</div></div><div id="content_block_158" class="wiki-section-2"><div class="title-2"><h4 id="content_3_63"> depthmap2mask <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_63" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_158-body" class="wiki-section-body-2">
+<a href="https://github.com/Extraltodeus/depthmap2mask.git" class="outlink">https://github.com/Extraltodeus/depthmap2mask.git</a><br>
+MiDaSによる深度推定に基づき、img2img用のマスクを作成する。<br>
+added: 2022-11-26<br>
+tags: [editing manipulations]<br>
+<br>
+</div></div><div id="content_block_160" class="wiki-section-2"><div class="title-2"><h4 id="content_3_64"> ABG_extension <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_64" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_160-body" class="wiki-section-body-2">
+<a href="https://github.com/KutsuyaYuki/ABG_extension.git" class="outlink">https://github.com/KutsuyaYuki/ABG_extension.git</a><br>
+script 	背景を自動で除去します。アニメ画像用に微調整されたonnxモデルを使用。GPUで動作します。<ul id="content_block_161" class="list-1">
+<li> Scriptで選択して使う</li>
+<li> imgとmaskを追加で保存してくれる</li>
+</ul>
+added: 2022-12-24<br>
+tags: [editing]<br>
+</div></div><div id="content_block_163" class="wiki-section-2"><div class="title-2"><h4 id="content_3_65"> Pixel <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_65" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_163-body" class="wiki-section-body-2">
+<a href="https://github.com/Leodotpy/sd-pixel.git" class="outlink">https://github.com/Leodotpy/sd-pixel.git</a><br>
+エクストラタブで、ダウンスケールやカラーパレット制限など、便利なピクセルアートエフェクトを素早く簡単に実行できます。<br>
+Quickly and easily perform downscaling color palette limiting and other useful pixel art effects through the extras tab.<br>
+added: 2023-05-05<br>
+tags: [editing extras]<br>
+</div></div><div id="content_block_165" class="wiki-section-2"><div class="title-2"><h4 id="content_3_66"> Pixelization <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_66" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_165-body" class="wiki-section-body-2">
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui-pixelization.git" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+description": "Using pre-trained models, produce pixel art out of images in the extras tab.<br>
+extrasタブにある画像から、事前に学習させたモデルを使って、ピクセルアートを制作する。<br>
+added": 2023-01-23<br>
+tags: [editing extras]<br>
+<br>
+</div></div><div id="content_block_167" class="wiki-section-2"><div class="title-2"><h4 id="content_3_67"> haku-img <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_67" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_167-body" class="wiki-section-body-2">
+<a href="https://github.com/KohakuBlueleaf/a1111-sd-webui-haku-img.git" class="outlink">https://github.com/KohakuBlueleaf/a1111-sd-webui-h...</a><br>
+description": "Image utils extension. Allows blending, layering, hue and color adjustments, blurring and sketch effects, and basic pixelization.<br>
+画像ユーティリティ拡張。ブレンド、レイヤー、色相・色彩調整、ぼかし、スケッチ効果、基本的なピクセル化などが可能です。<br>
+added": 2023-01-17<br>
+tags: [tab editing]<br>
+<br>
+</div></div><div id="content_block_169" class="wiki-section-2"><div class="title-2"><h4 id="content_3_68"> Asymmetric Tiling <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_68" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_169-body" class="wiki-section-body-2">
+<a href="https://github.com/tjm35/asymmetric-tiling-sd-webui.git" class="outlink">https://github.com/tjm35/asymmetric-tiling-sd-webu...</a><br>
+description: An always visible script extension to configure seamless image tiling independently for the X and Y axes.<br>
+シームレスイメージタイリングをX軸とY軸に独立して設定するための常時表示型スクリプト拡張機能です。<br>
+added: 2023-01-13<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_171" class="wiki-section-2"><div class="title-2"><h4 id="content_3_69"> Latent Mirroring <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_69" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_171-body" class="wiki-section-body-2">
+<a href="https://github.com/dfaker/SD-latent-mirroring.git" class="outlink">https://github.com/dfaker/SD-latent-mirroring.git</a><br>
+潜像にミラーリングやフリップを施し、微妙なバランスの構図から完璧な反射まで表現することができる<br>
+added: 2022-11-06<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_173" class="wiki-section-2"><div class="title-2"><h4 id="content_3_70"> Sonar <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_70" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_173-body" class="wiki-section-body-2">
+<a href="https://github.com/Kahsolt/stable-diffusion-webui-sonar.git" class="outlink">https://github.com/Kahsolt/stable-diffusion-webui-...</a><br>
+description: Improve the generated image quality, searches for similar (yet even better!) images in the neighborhood of some known image, focuses on single prompt optimization rather than traveling between multiple prompts.<br>
+生成された画像の品質を向上させる、ある既知の画像の近傍にある類似の（さらに良い！）画像を検索する、複数のプロンプト間を移動するのではなく、単一のプロンプトの最適化に焦点を当てる、などです。<br>
+added: 2023-01-12<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_175" class="wiki-section-2"><div class="title-2"><h4 id="content_3_71"> Depth Image I/O <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_71" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_175-body" class="wiki-section-body-2">
+<a href="https://github.com/AnonymousCervine/depth-image-io-for-SDWebui.git" class="outlink">https://github.com/AnonymousCervine/depth-image-io...</a><br>
+description: An extension to allow managing custom depth inputs to Stable Diffusion depth2img models.<br>
+Stable Diffusion depth2img モデルへのカスタム深度入力を管理できるようにするための拡張機能。<br>
+added: 2023-01-17<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_177" class="wiki-section-2"><div class="title-2"><h4 id="content_3_72"> Ultimate SD Upscale <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_72" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_177-body" class="wiki-section-body-2">
+<a href="https://github.com/Coyote-A/ultimate-upscale-for-automatic1111.git" class="outlink">https://github.com/Coyote-A/ultimate-upscale-for-a...</a><br>
+description: More advanced options for SD Upscale, less artifacts than original using higher denoise ratio (0.3-0.5).<br>
+SDアップスケールのためのより高度なオプション、より高いノイズ除去率（0.3-0.5）を使用してオリジナルよりもアーティファクトを少なくします。<br>
+added: 2023-01-10<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_179" class="wiki-section-2"><div class="title-2"><h4 id="content_3_73"> Fusion <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_73" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_179-body" class="wiki-section-body-2">
+<a href="https://github.com/ljleb/prompt-fusion-extension.git" class="outlink">https://github.com/ljleb/prompt-fusion-extension.g...</a><br>
+description": "Adds prompt-travel and shift-attention-like interpolations (see exts), but during/within the sampling steps. Always-on + works w/ existing prompt-editing syntax. Various interpolation modes. See their wiki for more info.<br>
+プロンプト・トラベルとシフト・アテンションのような補間（exts参照）を、サンプリング・ステップ中/中に追加します。常時接続＋既存のプロンプト編集構文と連動。様々な補間モード。詳しくはwikiをご覧ください。<br>
+added: 2023-01-28<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_181" class="wiki-section-2"><div class="title-2"><h4 id="content_3_74"> Dynamic Thresholding <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_74" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_181-body" class="wiki-section-body-2">
+<a href="https://github.com/mcmonkeyprojects/sd-dynamic-thresholding.git" class="outlink">https://github.com/mcmonkeyprojects/sd-dynamic-thr...</a><br>
+description": "Adds customizable dynamic thresholding to allow high CFG Scale values without the burning / 'pop art' effect.<br>
+カスタマイズ可能な動的閾値を追加し、焼き付け/ポップアート効果なしで高いCFGスケール値を可能にします。<br>
+added: 2023-02-01<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_183" class="wiki-section-2"><div class="title-2"><h4 id="content_3_75"> anti-burn <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_75" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_183-body" class="wiki-section-body-2">
+<a href="https://github.com/klimaleksus/stable-diffusion-webui-anti-burn.git" class="outlink">https://github.com/klimaleksus/stable-diffusion-we...</a><br>
+description": "Smoothing generated images by skipping a few very last steps and averaging together some images before them<br>
+最後の数ステップをスキップして、その前のいくつかの画像を平均化することによって、生成された画像を平滑化する。<br>
+added: 2023-02-09<br>
+tags: [manipulations]<br>
+<br>
+<br>
+</div></div><div id="content_block_185" class="wiki-section-2"><div class="title-2"><h4 id="content_3_76"> sd-webui-controlnet <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_76" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_185-body" class="wiki-section-body-2">
+url: <a href="https://github.com/Mikubill/sd-webui-controlnet.git" class="outlink">https://github.com/Mikubill/sd-webui-controlnet.gi...</a><br>
+description: WebUI extension for ControlNet. Note: (WIP), so don't expect seed reproducibility - as updates may change things<br>
+ControlNetのWebUI拡張。注：（作成途中）アップデートによって状況が変わる可能性があるため、シードによる再現性を期待しないでください。<ul id="content_block_186" class="list-1">
+<li> 話題のControlNet 詳しくは別ページに→<a href="https://seesaawiki.jp/nai_ch/d/ControlNet">ControlNet</a></li>
+</ul>
+added: 2023-02-18<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_188" class="wiki-section-2"><div class="title-2"><h4 id="content_3_77"> Latent Couple(two shot diffusion port) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_77" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_188-body" class="wiki-section-body-2">
+url: <a href="https://github.com/opparco/stable-diffusion-webui-two-shot.git" class="outlink">https://github.com/opparco/stable-diffusion-webui-...</a><br>
+description: An extension of the built-in Composable Diffusion, allows you to determine the region of the latent space that reflects your subprompts.<br>
+内蔵のComposable Diffusionの拡張で、サブプロンプトを反映する潜在空間の領域を決定することができます。<br>
+added: 2023-02-18<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_190" class="wiki-section-2"><div class="title-2"><h4 id="content_3_78"> Composable LoRA <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_78" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_190-body" class="wiki-section-body-2">
+url: <a href="https://github.com/opparco/stable-diffusion-webui-composable-lora.git" class="outlink">https://github.com/opparco/stable-diffusion-webui-...</a><br>
+description: Enables using AND keyword(composable diffusion) to limit LoRAs to subprompts. Useful when paired with Latent Couple extension.<br>
+added: 2023-02-25<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_192" class="wiki-section-2"><div class="title-2"><h4 id="content_3_79"> Auto TLS-HTTPS <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_79" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_192-body" class="wiki-section-body-2">
+<a href="https://github.com/papuSpartan/stable-diffusion-webui-auto-tls-https.git" class="outlink">https://github.com/papuSpartan/stable-diffusion-we...</a><br>
+HTTPSの利用を簡単に、あるいは完全に自動で開始できるようにします。<br>
+added: 2022-11-14<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_194" class="wiki-section-2"><div class="title-2"><h4 id="content_3_80"> booru2prompt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_80" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_194-body" class="wiki-section-body-2">
+<a href="https://github.com/Malisius/booru2prompt.git" class="outlink">https://github.com/Malisius/booru2prompt.git</a><br>
+このSD拡張機能は、様々な画像ブーリアンからの投稿を、安定した拡散プロンプトに変えることができます。これは、彼らのAPIからタグのリストを引き出すことによって行われます。欲しい投稿へのリンクを自分でコピーペーストしたり、内蔵の検索機能を使ったりして、SDから離れることなくすべてを行うことができます。<br>
+added: 2022-11-21<br>
+tags: [tab online]<br>
+<br>
+</div></div><div id="content_block_196" class="wiki-section-2"><div class="title-2"><h4 id="content_3_81"> Gelbooru Prompt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_81" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_196-body" class="wiki-section-body-2">
+<a href="https://github.com/antis0007/sd-webui-gelbooru-prompt.git" class="outlink">https://github.com/antis0007/sd-webui-gelbooru-pro...</a><br>
+AUTOMATIC1111のStable Diffusion webuiに保存されたゲルボーイイメージのタグを取得する拡張機能<br>
+added: 2022-12-20<br>
+tags: [online]<br>
+<br>
+</div></div><div id="content_block_198" class="wiki-section-2"><div class="title-2"><h4 id="content_3_82"> NSFW checker <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_82" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_198-body" class="wiki-section-body-2">
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui-nsfw-censor.git" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+NSFW画像を黒に置き換えます。<br>
+added: 2022-12-10<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_200" class="wiki-section-2"><div class="title-2"><h4 id="content_3_83"> Diffusion Defender <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_83" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_200-body" class="wiki-section-body-2">
+<a href="https://github.com/WildBanjos/DiffusionDefender.git" class="outlink">https://github.com/WildBanjos/DiffusionDefender.gi...</a><br>
+script 	セミプライベートおよびパブリックインスタンスのプロンプトブラックリスト、検索、置換。<br>
+added: 2022-12-20<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_202" class="wiki-section-2"><div class="title-2"><h4 id="content_3_84"> DH Patch <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_84" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_202-body" class="wiki-section-body-2">
+<a href="https://github.com/d8ahazard/sd_auto_fix.git" class="outlink">https://github.com/d8ahazard/sd_auto_fix.git</a><br>
+script 	D8ahazardによるランダムパッチ。v2、2.1モデル用の設定YAMLファイルの自動ロード、2.1モデルでの注意を修正するlatent-diffusionのパッチ（no-halfなしの黒い箱）、その他思いついたものすべて。<br>
+added: 2022-12-16<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_204" class="wiki-section-2"><div class="title-2"><h4 id="content_3_85"> Riffusion <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_85" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_204-body" class="wiki-section-body-2">
+<a href="https://github.com/enlyth/sd-webui-riffusion.git" class="outlink">https://github.com/enlyth/sd-webui-riffusion.git</a><br>
+script, tab 	Riffusionモデルを使って、gradioで音楽を制作する。オリジナルの補間技法を再現するには、プロンプトの旅行延長出力フレームをriffusionタブに入力します。<br>
+added: 2022-12-19<br>
+tags: [tab]<br>
+<br>
+</div></div><div id="content_block_206" class="wiki-section-2"><div class="title-2"><h4 id="content_3_86"> Save Intermediate Images <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_86" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_206-body" class="wiki-section-body-2">
+<a href="https://github.com/zero01101/openOutpaint-webUI-extension.git" class="outlink">https://github.com/zero01101/openOutpaint-webUI-ex...</a><br>
+description: Save intermediate images during the sampling process. You can also make videos from the intermediate images.<br>
+added: 2022-12-23<br>
+tags: [script]<ul id="content_block_207" class="list-1">
+<li> script 	PR参照 <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/5464" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a></li>
+</ul>
+<br>
+</div></div><div id="content_block_209" class="wiki-section-2"><div class="title-2"><h4 id="content_3_87"> Add image number to grid <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_87" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_209-body" class="wiki-section-body-2">
+<a href="https://github.com/AlUlkesh/sd_grid_add_image_number.git" class="outlink">https://github.com/AlUlkesh/sd_grid_add_image_numb...</a><br>
+画像の番号をグリッド内の画像に追加します。<br>
+added: 2023-01-01<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_211" class="wiki-section-2"><div class="title-2"><h4 id="content_3_88"> Multiple Hypernetworks <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_88" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_211-body" class="wiki-section-body-2">
+<a href="https://github.com/antis0007/sd-webui-multiple-hypernetworks.git" class="outlink">https://github.com/antis0007/sd-webui-multiple-hyp...</a><br>
+description": "Adds the ability to apply multiple hypernetworks at once. Apply multiple hypernetworks sequentially, with different weights.<br>
+複数のハイパーネットワークを一度に適用する機能を追加。複数のハイパーネットワークを異なる重みで順次適用。<br>
+added: 2023-01-13<br>
+tags: [script]<br>
+<br>
+<br>
+</div></div><div id="content_block_213" class="wiki-section-2"><div class="title-2"><h4 id="content_3_89"> System Info <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_89" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_213-body" class="wiki-section-body-2">
+<a href="https://github.com/vladmandic/sd-extension-system-info.git" class="outlink">https://github.com/vladmandic/sd-extension-system-...</a><br>
+description": "System Info tab for WebUI which shows realtime information of the server.<br>
+サーバーのリアルタイム情報を表示するWebUIの「システム情報」タブ。<br>
+added: 2023-01-21<br>
+tags: [script tab]<br>
+<br>
+</div></div><div id="content_block_215" class="wiki-section-2"><div class="title-2"><h4 id="content_3_90"> OpenPose Editor <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_90" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_215-body" class="wiki-section-body-2">
+url: <a href="https://github.com/fkunn1326/openpose-editor.git" class="outlink">https://github.com/fkunn1326/openpose-editor.git</a><br>
+description: This can add multiple pose characters, detect pose from image, save to PNG, and send to controlnet extension.<br>
+複数の人物ポーズの追加、画像からのポーズ検出、PNGへの保存、controlnet extensionへの送信を行うことができます。<br>
+added: 2023-02-18<br>
+tags: [tab]<br>
+<br>
+</div></div><div id="content_block_217" class="wiki-section-2"><div class="title-2"><h4 id="content_3_91"> Stable Horde Worker <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_91" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_217-body" class="wiki-section-body-2">
+<a href="https://github.com/sdwebui-w-horde/sd-webui-stable-horde-worker.git" class="outlink">https://github.com/sdwebui-w-horde/sd-webui-stable...</a><br>
+description": "Worker Client for Stable Horde. Generate pictures for other users with your PC. Please see readme for additional instructions.<br>
+"Stable Horde "のワーカークライアント。あなたのPCで他のユーザーのために画像を生成します。追加の手順はReadmeをご覧ください。<br>
+added: 2023-01-10<br>
+tags: [tab online]<br>
+<br>
+</div></div><div id="content_block_219" class="wiki-section-2"><div class="title-2"><h4 id="content_3_92"> Stable Horde Client <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_92" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_219-body" class="wiki-section-body-2">
+<a href="https://github.com/natanjunges/stable-diffusion-webui-stable-horde.git" class="outlink">https://github.com/natanjunges/stable-diffusion-we...</a><br>
+description": "Stable Horde Client. Generate pictures using other user's PC. Useful if u have no GPU.<br>
+安定したHordeクライアント。他のユーザーのPCを使用して画像を生成します。GPUがない場合に便利です。<br>
+added: 2023-01-11<br>
+tags: [tab online]<br>
+<br>
+</div></div><div id="content_block_221" class="wiki-section-2"><div class="title-2"><h4 id="content_3_93"> Discord Rich Presence <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_93" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_221-body" class="wiki-section-body-2">
+<a href="https://github.com/kabachuha/discord-rpc-for-automatic1111-webui.git" class="outlink">https://github.com/kabachuha/discord-rpc-for-autom...</a><br>
+description": "Provides connection to Discord RPC, showing a fancy table in the user profile.<br>
+Discord RPCへの接続を提供し、ユーザープロファイルにファンシーテーブルを表示します。<br>
+added": "2023-01-20<br>
+tags: [online]<br>
+<br>
+</div></div><div id="content_block_223" class="wiki-section-2"><div class="title-2"><h4 id="content_3_94"> mine-diffusion <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_94" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_223-body" class="wiki-section-body-2">
+<a href="https://github.com/fropych/mine-diffusion.git" class="outlink">https://github.com/fropych/mine-diffusion.git</a><br>
+description": "This extension converts images into blocks and creates schematics for easy importing into Minecraft using the Litematica mod.<br>
+この拡張機能は、画像をブロックに変換し、回路図を作成して、Litematica modを使ってMinecraftに簡単にインポートすることができます。<br>
+added: 2023-02-11<br>
+tags: [tab online]<br>
+<br>
+</div></div><div id="content_block_225" class="wiki-section-2"><div class="title-2"><h4 id="content_3_95"> Aesthetic Image Scorer <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_95" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_225-body" class="wiki-section-body-2">
+<a href="https://github.com/camenduru/stable-diffusion-webui-artists-to-study.git" class="outlink">https://github.com/camenduru/stable-diffusion-webu...</a><br>
+Chad ScorerをベースにしたCLIP+MLP Aesthetic Score Forecastorで生成画像の美的スコアを算出<br>
+added: 2022-11-01<br>
+tags: [query]<br>
+<br>
+</div></div><div id="content_block_227" class="wiki-section-2"><div class="title-2"><h4 id="content_3_96"> Aesthetic Scorer <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_96" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_227-body" class="wiki-section-body-2">
+<a href="https://github.com/vladmandic/sd-extension-aesthetic-scorer.git" class="outlink">https://github.com/vladmandic/sd-extension-aesthet...</a><br>
+description": "Uses existing CLiP model with an additional small pretrained model to calculate perceived aesthetic score of an image.<br>
+既存のCLiPモデルに、事前に学習させた小規模なモデルを追加して、画像の知覚的な美的スコアを計算します。<br>
+added: 2023-01-21<br>
+tags: [query]<br>
+<br>
+</div></div><div id="content_block_229" class="wiki-section-2"><div class="title-2"><h4 id="content_3_97"> cafe-aesthetic <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_97" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_229-body" class="wiki-section-body-2">
+<a href="https://github.com/p1atdev/stable-diffusion-webui-cafe-aesthetic.git" class="outlink">https://github.com/p1atdev/stable-diffusion-webui-...</a><br>
+description": "Pre-trained model, determines if aesthetic/non-aesthetic, does 5 different style recognition modes, and Waifu confirmation. Also has a tab with Batch processing.<br>
+学習済みモデル、美的／非美的の判定、5種類のスタイル認識モード、Waifu確認。また、バッチ処理のタブもあります。<br>
+added: 2023-01-28<br>
+tags: [tab query]<br>
+<br>
+</div></div><div id="content_block_231" class="wiki-section-2"><div class="title-2"><h4 id="content_3_98"> Clip Interrogator <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_98" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_231-body" class="wiki-section-body-2">
+url: <a href="https://github.com/pharmapsychotic/clip-interrogator-ext.git," class="outlink">https://github.com/pharmapsychotic/clip-interrogat...</a><br>
+description: Clip Interrogator by pharmapsychotic ported to an extension. Features a variety of clip models and interrogate settings.<br>
+pharmapsychoticによるClip Interrogatorを拡張子に移植。様々なクリップモデルとインタロゲート設定を搭載。<br>
+added: 2023-02-21<br>
+tags: [tab query]<br>
+<br>
+</div></div><div id="content_block_233" class="wiki-section-2"><div class="title-2"><h4 id="content_3_99"> Visualize Cross-Attention <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_99" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_233-body" class="wiki-section-body-2">
+<a href="https://github.com/benkyoujouzu/stable-diffusion-webui-visualize-cross-attention-extension.git" class="outlink">https://github.com/benkyoujouzu/stable-diffusion-w...</a><br>
+入力プロンプトに基づき、送信された入力画像のハイライトされたセクターを生成します。トークナイザー拡張と一緒に使用します。詳しくはReadmeをご覧ください。<br>
+added: 2022-11-25<br>
+tags: [tab science]<br>
+<br>
+</div></div><div id="content_block_235" class="wiki-section-2"><div class="title-2"><h4 id="content_3_100"> DAAM <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_100" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_235-body" class="wiki-section-body-2">
+<a href="https://github.com/kousw/stable-diffusion-webui-daam.git" class="outlink">https://github.com/kousw/stable-diffusion-webui-da...</a><br>
+DAAMとは、Diffusion Attentive Attribution Mapsの略です。注目テキスト（プロンプトに含まれる文字列でなければなりません）を入力し、実行します。各注目のヒートマップが重なった画像が元の画像と一緒に生成されます。<br>
+added: 2022-12-02<br>
+tags: [science]<br>
+<br>
+</div></div><div id="content_block_237" class="wiki-section-2"><div class="title-2"><h4 id="content_3_101"> Dump U-Net <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_101" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_237-body" class="wiki-section-body-2">
+url: <a href="https://github.com/hnmr293/stable-diffusion-webui-dumpunet.git" class="outlink">https://github.com/hnmr293/stable-diffusion-webui-...</a><br>
+説明: さまざまなレイヤーを表示して、U-Net 機能マップを観察します。 unet のブロックごとに異なるプロンプトを与えることによる画像生成: <a href="https://note.com/kohya_ss/n/n93b7c01b0547" class="outlink">https://note.com/kohya_ss/n/n93b7c01b0547</a><br>
+description: View different layers observe U-Net feature maps. Image generation by giving different prompts for each block of the unet: <a href="https://note.com/kohya_ss/n/n93b7c01b0547" class="outlink">https://note.com/kohya_ss/n/n93b7c01b0547</a><br>
+added: 2023-03-04<br>
+tags: [science]<br>
+<br>
+</div></div><div id="content_block_239" class="wiki-section-2"><div class="title-2"><h4 id="content_3_102"> posex <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_102" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_239-body" class="wiki-section-body-2">
+url: <a href="https://github.com/hnmr293/posex.git" class="outlink">https://github.com/hnmr293/posex.git</a><br>
+説明: Pose2Image の推定画像ジェネレータ。 この拡張機能により、openpose フィギュアを 3D 空間で移動できます。<br>
+description: Estimated Image Generator for Pose2Image. This extension allows moving the openpose figure in 3d space.<br>
+added: 2023-03-04<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_241" class="wiki-section-2"><div class="title-2"><h4 id="content_3_103"> LLuL <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_103" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_241-body" class="wiki-section-body-2">
+url: <a href="https://github.com/hnmr293/sd-webui-llul.git" class="outlink">https://github.com/hnmr293/sd-webui-llul.git</a><br>
+説明: ローカル潜在アップスケーラー。 ディテールを選択的に強化する領域をターゲットにします。<br>
+description: Local Latent Upscaler. Target an area to selectively enhance details.<br>
+added: 2023-03-04<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_243" class="wiki-section-2"><div class="title-2"><h4 id="content_3_104"> CFG-Schedule-for-Automatic1111-SD <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_104" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_243-body" class="wiki-section-body-2">
+url: <a href="https://github.com/guzuligo/CFG-Schedule-for-Automatic1111-SD.git" class="outlink">https://github.com/guzuligo/CFG-Schedule-for-Autom...</a><br>
+説明: これらのスクリプトを使用すると、生成ステップ中に CFG を動的に制御できます。 適切な設定を使用すると、img2img のノイズ除去が低くても、生成された画像を損傷することなく、高い CFG の詳細を取得するのに役立ちます。<br>
+description: These scripts allow for dynamic CFG control during generation steps. With the right settings this could help get the details of high CFG without damaging the generated image even with low denoising in img2img.<br>
+added: 2023-03-04<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_245" class="wiki-section-2"><div class="title-2"><h4 id="content_3_105"> ebsynth_utility <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_105" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_245-body" class="wiki-section-body-2">
+url: <a href="https://github.com/s9roll7/ebsynth_utility.git" class="outlink">https://github.com/s9roll7/ebsynth_utility.git</a><br>
+説明: img2img と ebsynth を使用してビデオを作成するための拡張機能。 ebsynth を使用して編集したビデオを出力します。 ControlNet 拡張で動作します。<br>
+description: Extension for creating videos using img2img and ebsynth. Output edited videos using ebsynth. Works with ControlNet extension.<br>
+added: 2023-03-04<br>
+tags: [tab animation]<br>
+<br>
+</div></div><div id="content_block_247" class="wiki-section-2"><div class="title-2"><h4 id="content_3_106"> VRAM Estimator <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_106" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_247-body" class="wiki-section-body-2">
+url: <a href="https://github.com/space-nuko/a1111-stable-diffusion-webui-vram-estimator.git" class="outlink">https://github.com/space-nuko/a1111-stable-diffusi...</a><br>
+説明: txt2img img2img highres-fix を OOM までディメンションとバッチ サイズを増やして実行し、データをグラフに出力します。<br>
+description: Runs txt2img img2img highres-fix at increasing dimensions and batch sizes until OOM and outputs data to graph.<br>
+added: 2023-03-05<br>
+tags: [tab]<br>
+<br>
+</div></div><div id="content_block_249" class="wiki-section-2"><div class="title-2"><h4 id="content_3_107"> MultiDiffusion with Tiled VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_107" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_249-body" class="wiki-section-body-2">
+url: <a href="https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git" class="outlink">https://github.com/pkuliyi2015/multidiffusion-upsc...</a><br>
+説明: vram の効率的なタイル化された vae スクリプトを使用したシームレスな画像融合。<br>
+description: Seamless Image Fusion along with vram efficient tiled vae script.<br>
+added: 2023-03-08<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_251" class="wiki-section-2"><div class="title-2"><h4 id="content_3_108"> 3D Model&amp;Pose Loader <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_108" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_251-body" class="wiki-section-body-2">
+url: <a href="https://github.com/jtydhr88/sd-3dmodel-loader.git" class="outlink">https://github.com/jtydhr88/sd-3dmodel-loader.git</a><br>
+説明: 3D モデル/アニメーションを webui 内にロードし、スクリーンショットを txt2img に、または img2img を ControlNet に送信します。<br>
+description: Load your 3D model/animation inside webui then send screenshot to txt2img or img2img to ControlNet.<br>
+added: 2023-03-11<br>
+tags: [tab]<br>
+<br>
+</div></div><div id="content_block_253" class="wiki-section-2"><div class="title-2"><h4 id="content_3_109"> Corridor Crawler Outpainting <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_109" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_253-body" class="wiki-section-body-2">
+url: <a href="https://github.com/brick2face/corridor-crawler-outpainting.git" class="outlink">https://github.com/brick2face/corridor-crawler-out...</a><br>
+説明: 解像度 512 の深度から画像へのモデルで廊下を生成します。 他のモデル/解像度で動作するように微調整できます。<br>
+description: Generate hallways with the depth-to-image model at 512 resolution. It can be tweaked to work with other models/resolutions.<br>
+added: 2023-03-11<br>
+tags: [tab]<br>
+<br>
+</div></div><div id="content_block_255" class="wiki-section-2"><div class="title-2"><h4 id="content_3_110"> Panorama Viewer <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_110" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_255-body" class="wiki-section-body-2">
+url: <a href="https://github.com/GeorgLegato/sd-webui-panorama-viewer.git" class="outlink">https://github.com/GeorgLegato/sd-webui-panorama-v...</a><br>
+説明: インタラクティブな 3D ビューで正距円筒イメージを表示するタブを提供します。<br>
+description: Provides a tab to display equirectangular images in interactive 3d-view.<br>
+added: 2023-03-11<br>
+tags: [tab]<br>
+<br>
+</div></div><div id="content_block_257" class="wiki-section-2"><div class="title-2"><h4 id="content_3_111"> db-storage1111 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_111" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_257-body" class="wiki-section-body-2">
+url: <a href="https://github.com/takoyaro/db-storage1111.git" class="outlink">https://github.com/takoyaro/db-storage1111.git</a><br>
+説明: 画像とそのメタデータをデータベースに保存できます。 (MongoDB対応)<br>
+description: Allows to store pictures and their metadata in a database. (supports MongoDB)<br>
+added: 2023-03-12<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_259" class="wiki-section-2"><div class="title-2"><h4 id="content_3_112"> stable-diffusion-webui-rembg <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_112" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_259-body" class="wiki-section-body-2">
+url: <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg.git" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+画像から背景を削除します。<br>
+description: Removes backgrounds from pictures.<br>
+added: 2023-03-12<br>
+tags: [script extras]<br>
+<br>
+</div></div><div id="content_block_261" class="wiki-section-2"><div class="title-2"><h4 id="content_3_113"> sd-webui-tunnels <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_113" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_261-body" class="wiki-section-body-2">
+url: <a href="https://github.com/Bing-su/sd-webui-tunnels.git" class="outlink">https://github.com/Bing-su/sd-webui-tunnels.git</a><br>
+デフォルトのトンネリングメソッドに代わるものを追加します(Cloudflaredを含む)。<br>
+description: Add alternatives to the default tunneling methods. (including cloudflared)<br>
+added: 2023-03-13<br>
+tags: [script online]<br>
+<br>
+</div></div><div id="content_block_263" class="wiki-section-2"><div class="title-2"><h4 id="content_3_114"> 3D Openpose Editor <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_114" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_263-body" class="wiki-section-body-2">
+url: <a href="https://github.com/nonnonstop/sd-webui-3d-open-pose-editor.git" class="outlink">https://github.com/nonnonstop/sd-webui-3d-open-pos...</a><br>
+説明: WebUI で 3D モデルのポーズを編集し、ControlNet 用の Openpose/Depth/Normal/Canny マップを生成します。<br>
+description: Edit the pose of 3D models in the WebUI and generate Openpose/Depth/Normal/Canny maps for ControlNet.<br>
+added: 2023-03-16<br>
+tags: [tab]<br>
+<br>
+</div></div><div id="content_block_265" class="wiki-section-2"><div class="title-2"><h4 id="content_3_115"> sd-webui-enable-checker <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_115" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_265-body" class="wiki-section-body-2">
+url: <a href="https://github.com/shirayu/sd-webui-enable-checker.git" class="outlink">https://github.com/shirayu/sd-webui-enable-checker...</a><br>
+WebUIで「有効」になっている機能の背景に色を付けて分かりやすくする<br>
+description: Switch background color by clicking the Enable buttons in SD Web UI<br>
+added: 2023-03-19<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_267" class="wiki-section-2"><div class="title-2"><h4 id="content_3_116"> stable-diffusion-webui-state <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_116" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_267-body" class="wiki-section-body-2">
+url: <a href="https://github.com/ilian6806/stable-diffusion-webui-state.git" class="outlink">https://github.com/ilian6806/stable-diffusion-webu...</a><br>
+リロード/再起動後にUI状態を保持します。<br>
+description: Preserves the UI state after reload/restart.<br>
+added: 2023-03-19<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_269" class="wiki-section-2"><div class="title-2"><h4 id="content_3_117"> text2video <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_117" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_269-body" class="wiki-section-body-2">
+url: <a href="https://github.com/deforum-art/sd-webui-modelscope-text2video.git" class="outlink">https://github.com/deforum-art/sd-webui-modelscope...</a><br>
+説明: Auto1111 WebUI 依存関係のみを使用した ModelScope text2video の実装。<br>
+description: Implementation of ModelScope text2video using only Auto1111 webui dependencies.<br>
+added: 2023-03-19<br>
+tags: [tab animation]<br>
+<br>
+</div></div><div id="content_block_271" class="wiki-section-2"><div class="title-2"><h4 id="content_3_118"> Aspect Ratio Helper <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_118" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_271-body" class="wiki-section-body-2">
+url: <a href="https://github.com/thomasasfk/sd-webui-aspect-ratio-helper.git" class="outlink">https://github.com/thomasasfk/sd-webui-aspect-rati...</a><br>
+同じアスペクト比を維持しながら簡単に拡大できます。<br>
+description: Easily scale dimensions while retaining the same aspect ratio.<br>
+added: 2023-03-20<br>
+tags: [script dropdown UI related]<br>
+<br>
+</div></div><div id="content_block_273" class="wiki-section-2"><div class="title-2"><h4 id="content_3_119"> Canvas Zoom <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_119" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_273-body" class="wiki-section-body-2">
+url : <a href="https://github.com/richrobber2/canvas-zoom.git" class="outlink">https://github.com/richrobber2/canvas-zoom.git</a><br>
+Inpaint、スケッチ、Inpaintスケッチをスケール(拡大縮小)する機能を追加しました。便利なショートカットキーを追加します<br>
+description: Added the ability to scale Inpaint Sketch and Inpaint Sketch. Adds useful hotkeys<br>
+added: 2023-03-27<br>
+tags: [UI related]<br>
+<br>
+</div></div><div id="content_block_275" class="wiki-section-2"><div class="title-2"><h4 id="content_3_120"> Regional Prompter <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_120" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_275-body" class="wiki-section-body-2">
+url: <a href="https://github.com/hako-mikan/sd-webui-regional-prompter.git" class="outlink">https://github.com/hako-mikan/sd-webui-regional-pr...</a><br>
+エリア別に異なるプロンプトを適用する。latent coupleとは異なる方法を使っており、改善できる可能性がある。<br>
+description: Specify different prompts for different regions; an alternative method and potential improvement to latent couple.<br>
+added: 2023-03-26<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_277" class="wiki-section-2"><div class="title-2"><h4 id="content_3_121"> Auto Translate <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_121" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_277-body" class="wiki-section-body-2">
+url: <a href="https://github.com/hyd998877/stable-diffusion-webui-auto-translate-language" class="outlink">https://github.com/hyd998877/stable-diffusion-webu...</a><br>
+言語の拡張機能により、設定ファイルを手動でダウンロードすることなく、母国語でプロンプトを記述し、UIを自動的に翻訳することができます。新しいプラグインも翻訳できます。<br>
+description: Language extension allows users to write prompts in their native language and automatically translate UI without the need to manually download configuration files. New plugins can also be translated.<br>
+added: 2023-03-24<br>
+tags: [UI related]<br>
+<br>
+</div></div><div id="content_block_279" class="wiki-section-2"><div class="title-2"><h4 id="content_3_122"> Prompt Translator <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_122" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_279-body" class="wiki-section-body-2">
+url: <a href="https://github.com/butaixianran/Stable-Diffusion-Webui-Prompt-Translator" class="outlink">https://github.com/butaixianran/Stable-Diffusion-W...</a><br>
+DeeplやBaiduを使ってプロンプトを英語に翻訳するための統合トランスレーターです<br>
+description: A integrated translator for translating prompts to English using Deepl or Baidu.<br>
+added: 2023-02-11<br>
+tags: [prompting]<br>
+<br>
+</div></div><div id="content_block_281" class="wiki-section-2"><div class="title-2"><h4 id="content_3_123"> Abysz LAB <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_123" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_281-body" class="wiki-section-body-2">
+url: <a href="https://github.com/AbyszOne/Abysz-LAB-Ext.git" class="outlink">https://github.com/AbyszOne/Abysz-LAB-Ext.git</a><br>
+アニメーションでの時間的な色の一貫性ツール<br>
+description: Temporal Coherence Tools<br>
+added: 2023-04-01<br>
+tags: [tab animation]<br>
+<br>
+</div></div><div id="content_block_283" class="wiki-section-2"><div class="title-2"><h4 id="content_3_124"> Negative Prompt Weight <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_124" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_283-body" class="wiki-section-body-2">
+url: <a href="https://github.com/muerrilla/stable-diffusion-NPW.git" class="outlink">https://github.com/muerrilla/stable-diffusion-NPW....</a><br>
+ネガティブプロンプト全体の重みを設定できるようにします。<br>
+description: Allows users to set a global weight for the negative prompt.<br>
+added: 2023-04-02<br>
+tags: [scriptmanipulationsprompting]<br>
+<br>
+</div></div><div id="content_block_285" class="wiki-section-2"><div class="title-2"><h4 id="content_3_125"> Discord - Dynamic Rich Presence <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_125" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_285-body" class="wiki-section-body-2">
+url: <a href="https://github.com/davehornik/sd-discord-rich_presence.git" class="outlink">https://github.com/davehornik/sd-discord-rich_pres...</a><br>
+ステータスに、現在選択されているsdのモデルが表示されます。また、アイドル状態であるか、何かを生成しているか（その場合、秒あたりの生成枚数）も表示されます<br>
+description: Will show your current sd model selected. Also showing if you are idle or generating something - in that case total image/s being generated.<br>
+added: 2023-04-04<br>
+tags: [online script]<br>
+<br>
+</div></div><div id="content_block_287" class="wiki-section-2"><div class="title-2"><h4 id="content_3_126"> PBRemTools <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_126" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_287-body" class="wiki-section-body-2">
+url: <a href="https://github.com/mattyamonaca/PBRemTools.git" class="outlink">https://github.com/mattyamonaca/PBRemTools.git</a><br>
+PBRemTools(正確な背景除去ツール)は、1枚の写真から背景を高精度に切り抜くためのツール集です。<br>
+description: PBRemTools(Precise background remover tools) is a collection of tools to crop backgrounds from a single picture with high accuracy.<br>
+added: 2023-04-05<br>
+tags: [extras editing]<br>
+<br>
+</div></div><div id="content_block_289" class="wiki-section-2"><div class="title-2"><h4 id="content_3_127"> a1111-sd-webui-lycoris <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_127" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_289-body" class="wiki-section-body-2">
+url: <a href="https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris.git" class="outlink">https://github.com/KohakuBlueleaf/a1111-sd-webui-l...</a><br>
+Lycorisを利用可能にする：非従来型ランクアダプター：従来のネットワークギャラリーとは分離したタブで<br>
+description: Load lycoris: non-conventional rank adapters; in separate networks gallery tab.<br>
+added: 2023-04-10<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_291" class="wiki-section-3"><div class="title-3"><h5 id="content_3_127_3"> a1111-sd-webui-locon <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_127_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_291-body" class="wiki-section-body-3">
+url: <a href="https://github.com/KohakuBlueleaf/a1111-sd-webui-locon.git" class="outlink">https://github.com/KohakuBlueleaf/a1111-sd-webui-l...</a><br>
+LoConネットワークをwebuiで読み込むための拡張機能です。<br>
+description: An extension for loading LoCon networks in webui.<br>
+added: 2023-03-04<br>
+tags: [script]<br>
+↑公式Extensionのリストでは上のLycorisに置き換えられました<br>
+<br>
+</div></div><div id="content_block_293" class="wiki-section-2"><div class="title-2"><h4 id="content_3_128"> sd-canvas-editor <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_128" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_293-body" class="wiki-section-body-2">
+url: <a href="https://github.com/jtydhr88/sd-canvas-editor.git" class="outlink">https://github.com/jtydhr88/sd-canvas-editor.git</a><br>
+テキストやイメージのレイヤリングが可能なキャンバスエディターです。<br>
+description: A full capability canvas editor which you can use layer text image elements and so on.<br>
+added: 2023-04-13<br>
+tags: [tab online]<br>
+<br>
+</div></div><div id="content_block_295" class="wiki-section-2"><div class="title-2"><h4 id="content_3_129"> Infinite Zoom <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_129" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_295-body" class="wiki-section-body-2">
+url: <a href="https://github.com/v8hid/infinite-zoom-automatic1111-webui.git" class="outlink">https://github.com/v8hid/infinite-zoom-automatic11...</a><br>
+安定した拡散アウトペイント方式で、無限ズーム効果のある動画を作成することができます。<br>
+description: allows users to create infinite zoom effect videos using stable diffusion outpainting method.<br>
+added: 2023-04-13<br>
+tags: [tab animation]<br>
+<br>
+</div></div><div id="content_block_297" class="wiki-section-2"><div class="title-2"><h4 id="content_3_130"> Eye Mask <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_130" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_297-body" class="wiki-section-body-2">
+<a href="https://github.com/ilian6806/stable-diffusion-webui-eyemask.git" class="outlink">https://github.com/ilian6806/stable-diffusion-webu...</a><br>
+目を自動的に識別して再描画することで、描画不良に終止符を打つことができます。<br>
+Puts an end to poorly drawn eyes by automatically identifying and redrawing them.<br>
+added: 2023-05-11<br>
+tags: [script dropdown manipulations]<br>
+<br>
+</div></div><div id="content_block_299" class="wiki-section-2"><div class="title-2"><h4 id="content_3_131"> ja_JP Localization <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_131" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_299-body" class="wiki-section-body-2">
+url: <a href="https://github.com/Katsuyuki-Karasawa/stable-diffusion-webui-localization-ja_JP" class="outlink">https://github.com/Katsuyuki-Karasawa/stable-diffu...</a><br>
+description: Japanese localization<br>
+added: 2022-11-07<br>
+tags: [localization]<ul id="content_block_300" class="list-1">
+<li> UIを日本語化する</li>
+<li> 以前に一時期だけ本体に入ってた機能がExtensionsに移動した。</li>
+<li> 以前はプロンプトの強弱を変えるキーボードショートカットが利かなくなっていたが直ったのか？</li>
+</ul>
+<br>
+<br>
+<br>
+</div></div><div id="content_block_302" class="wiki-section-2"><div class="title-2"><h4 id="content_3_132"> Instruct-pix2pix <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_132" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_302-body" class="wiki-section-body-2">
+<a href="https://github.com/Klace/stable-diffusion-webui-instruct-pix2pix.git" class="outlink">https://github.com/Klace/stable-diffusion-webui-in...</a><br>
+description": "Adds a tab for doing img2img editing with the instruct-pix2pix model. Note: No longer required. Author has integrated code to webui, use in img2img.<br>
+instruct-pix2pix "モデルでimg2img編集を行うためのタブを追加します。注：もはや必要ありません。作者はWebuiにコードを統合し、img2imgで使用するようにしました。<br>
+added": "2023-01-25<br>
+<br>
+</div></div><div id="content_block_304" class="wiki-section-2"><div class="title-2"><h4 id="content_3_133"> Model Organizer <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_133" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_304-body" class="wiki-section-body-2">
+<a href="https://github.com/alexandersokol/sd-model-organizer.git" class="outlink">https://github.com/alexandersokol/sd-model-organiz...</a><br>
+モデルのコレクションを保存し、管理することができます。モデルの情報ノート、プレビュー、ダウンロードリンクを追加することができます。外部のダイレクトリンクやGoogle Driveの共有ファイルリンクから簡単にダウンロードすることができます。モデルコレクションをjsonファイルで共有したり、リモートのFirestoreデータベースを使用して、複数のデバイスで利用できるようにしたり、同期させることができます。<br>
+Allows to store and manage own model collections add information notes previews download links of model. Easily download from any external direct link or shared file link from Google Drive. Share own models collection with json file or use remote Firestore database to make it available and synced on several devices.<br>
+added: 2023-05-05<br>
+tags: [tab UI related online]<br>
+<br>
+</div></div><div id="content_block_306" class="wiki-section-2"><div class="title-2"><h4 id="content_3_134"> Model Preset Manager <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_134" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_306-body" class="wiki-section-body-2">
+<a href="https://github.com/rifeWithKaiju/model_preset_manager.git" class="outlink">https://github.com/rifeWithKaiju/model_preset_mana...</a><br>
+すべての生成データに対して、モデルごとにプリセットを作成し、適用することができます（例：プロンプト・ネガティブ・プロンプト cfg_scale resolution sampler clip skip steps など）。また、モデルのトリガーワードやサムネイルをCivitaiから自動的に取得します。<br>
+Lets you create and apply presets per model for all generation data (e.g. prompt negative prompt cfg_scale resolution sampler clip skip steps etc). Also automatically fetches model trigger words and thumbnails from Civitai.<br>
+added: 2023-05-15<br>
+tags: [online prompting tab]<br>
+<br>
+</div></div><div id="content_block_308" class="wiki-section-2"><div class="title-2"><h4 id="content_3_135"> Stable Diffusion Webui Civitai Helper <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_135" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_308-body" class="wiki-section-body-2">
+<a href="https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper.git" class="outlink">https://github.com/butaixianran/Stable-Diffusion-W...</a><br>
+civitai.comからメタデータとプレビュー画像をダウンロードまたはモデルに入力する<br>
+Download or populate models with metadata and preview image from civitai.com<br>
+added: 2023-05-16<br>
+tags: [tab UI related online]<br>
+<br>
+</div></div><div id="content_block_310" class="wiki-section-2"><div class="title-2"><h4 id="content_3_136"> SD-CN-Animation <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_136" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_310-body" class="wiki-section-body-2">
+<a href="https://github.com/volotat/SD-CN-Animation.git" class="outlink">https://github.com/volotat/SD-CN-Animation.git</a><br>
+任意のSDモデルをバックボーンとして、video2videoやtext2videoのアニメーションを作成することができるようになります。拡張機能「sd-webui-controlnet」がインストールされていることを確認してください。<br>
+Allows users to create video2video and text2video animations using any SD models as a backbone. Please make sure that 'sd-webui-controlnet' extension is also installed.<br>
+added: 2023-05-06<br>
+tags: [tab animation]<br>
+<br>
+</div></div><div id="content_block_312" class="wiki-section-2"><div class="title-2"><h4 id="content_3_137"> Model toolkit <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_137" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_312-body" class="wiki-section-body-2">
+<a href="https://github.com/arenasys/stable-diffusion-webui-model-toolkit.git" class="outlink">https://github.com/arenasys/stable-diffusion-webui...</a><br>
+モデルの軽量化や修正を行うための多目的ツールキットです。<br>
+A Multipurpose toolkit for pruning editing and fixing models.<br>
+added: 2023-05-10<br>
+tags: [tab models]<br>
+<br>
+</div></div><div id="content_block_314" class="wiki-section-2"><div class="title-2"><h4 id="content_3_138"> sd-webui-prompt-all-in-one <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_138" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_314-body" class="wiki-section-body-2">
+<a href="https://github.com/Physton/sd-webui-prompt-all-in-one" class="outlink">https://github.com/Physton/sd-webui-prompt-all-in-...</a><br>
+プロンプト／ネガプロンプト入力ボックスのユーザーエクスペリエンスを向上させました。翻訳履歴の自動記録やお気に入りなどの機能を提供し、より直感的で強力な入力インターフェースを実現しました。<br>
+Improve the user experience of the prompt/negative prompt input box. It has a more intuitive and powerful input interface that offers features such as automatic translation history records and favorites.<br>
+added: 2023-05-08<br>
+tags: [UI related prompting online]<br>
+<br>
+</div></div><div id="content_block_316" class="wiki-section-2"><div class="title-2"><h4 id="content_3_139"> sd-model-preview-xd <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_139" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_316-body" class="wiki-section-body-2">
+<a href="https://github.com/CurtisDS/sd-model-preview-xd" class="outlink">https://github.com/CurtisDS/sd-model-preview-xd</a><br>
+LoRAとembeddingのプレビューをUIに追加し、プレビュー画像の説明とLoRAプロンプトリストを追加しました。<br>
+Adds model LoRA and embedding previews to the UI including preview images descriptions and LoRA prompt lists.<br>
+added: 2023-05-12<br>
+tags: [tab UI related]<br>
+<br>
+</div></div><div id="content_block_318" class="wiki-section-2"><div class="title-2"><h4 id="content_3_140"> !After Detailer <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_140" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_318-body" class="wiki-section-body-2">
+<a href="https://github.com/Bing-su/adetailer.git" class="outlink">https://github.com/Bing-su/adetailer.git</a><br>
+細部の自動検出マスキング・インペイントツール<br>
+Automatic detection masking and inpainting tool for details<br>
+added: 2023-05-12<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_320" class="wiki-section-2"><div class="title-2"><h4 id="content_3_141"> Weight Gradient <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_141" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_320-body" class="wiki-section-body-2">
+<a href="https://github.com/DingoBite/weight_gradient" class="outlink">https://github.com/DingoBite/weight_gradient</a><br>
+生成中にトークンの重みを動的に変更できるようにする。モーフィングに有効です。<br>
+Allows you to dynamically change the weights of tokens during generation. Useful in morphing.<br>
+added: 2023-05-11<br>
+tags: [prompting]<br>
+<br>
+</div></div><div id="content_block_322" class="wiki-section-2"><div class="title-2"><h4 id="content_3_142"> One Button Prompt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_142" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_322-body" class="wiki-section-body-2">
+<a href="https://github.com/AIrjen/OneButtonPrompt" class="outlink">https://github.com/AIrjen/OneButtonPrompt</a><br>
+One Button Promptは、プロンプト全体をゼロから生成する、初心者から上級者までのためのスクリプトです。ランダムに生成されますが、制御されています。スクリプトを読み込んで、生成ボタンを押すだけで、あなたのインスピレーションを刺激します。<br>
+One Button Prompt is a script for beginners and advanced users that generates an entire prompt from scratch. It is random but controlled. You simply load up the script and press generate and let it inspire you.<br>
+added: 2023-05-14<br>
+tags: [scriptprompting]<br>
+<br>
+</div></div><div id="content_block_324" class="wiki-section-2"><div class="title-2"><h4 id="content_3_143"> Miaoshouai Assistant <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_143" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_324-body" class="wiki-section-body-2">
+<a href="https://github.com/miaoshouai/miaoshouai-assistant.git" class="outlink">https://github.com/miaoshouai/miaoshouai-assistant...</a><br>
+ミャウショウアイ・アシスタントは、1つのタブで起動設定の更新やモデルプロンプトの管理、ダウンロードなど、automatic1111 webuiのユーザー体験を向上させることができます。<br>
+Miaoshouai Assistant allows you to enhance your automatic1111 webui user experience including updating boot settings managing and downloading your models prompts from a single tab.<br>
+added: 2023-05-18<br>
+tags: [tab models UI related online ads]<br>
+<br>
+</div></div><div id="content_block_326" class="wiki-section-2"><div class="title-2"><h4 id="content_3_144"> miniPaint <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_144" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_326-body" class="wiki-section-body-2">
+<a href="https://github.com/0Tick/a1111-mini-paint" class="outlink">https://github.com/0Tick/a1111-mini-paint</a><br>
+miniPaintエクステンションは、より良い画像編集機能を提供します。Webuiの中で直接、画像を編集することができます！<br>
+The miniPaint extension allows for better image editing capabilites. Edit images simply direct inside the webui!<br>
+added: 2023-05-16<br>
+tags: [tabediting]<br>
+<br>
+</div></div><div id="content_block_328" class="wiki-section-2"><div class="title-2"><h4 id="content_3_145"> StableSR <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_145" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_328-body" class="wiki-section-body-2">
+<a href="https://github.com/pkuliyi2015/sd-webui-stablesr.git" class="outlink">https://github.com/pkuliyi2015/sd-webui-stablesr.g...</a><br>
+リアルな映像からアニメ映像まで対応する強力なアップスケーラー「StableSR」用WebUI拡張機能<br>
+WebUI extension for StableSR - a powerful upscaler for both realistic and anime images<br>
+added: 2023-05-22<br>
+tags: [manipulations]<br>
+<br>
+</div></div><div id="content_block_330" class="wiki-section-2"><div class="title-2"><h4 id="content_3_146"> Web UI client queue <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_146" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_330-body" class="wiki-section-body-2">
+<a href="https://github.com/Kryptortio/SDAtom-WebUi-client-queue-ext.git" class="outlink">https://github.com/Kryptortio/SDAtom-WebUi-client-...</a><br>
+WebUiにキュー機能を追加し、設定のセットを1回以上処理し、別の設定のセットを読み込むことができるようにします。<br>
+Adds a queue function to the web ui that processes a set of settings one or more times it can then load a different set of settings and so on.<br>
+added: 2023-05-23<br>
+tags: [script UI related prompting]<br>
+<br>
+</div></div><div id="content_block_332" class="wiki-section-2"><div class="title-2"><h4 id="content_3_147"> Distributed <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_147" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_332-body" class="wiki-section-body-2">
+<a href="https://github.com/papuSpartan/stable-diffusion-webui-distributed.git" class="outlink">https://github.com/papuSpartan/stable-diffusion-we...</a><br>
+別々のWebuiインスタンスを連結して、より迅速にバッチを生成する。<br>
+Generate batches more quickly by chaining together separate webui instances<br>
+added: 2023-05-23<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_334" class="wiki-section-2"><div class="title-2"><h4 id="content_3_148"> StableStudio Adapter <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_3_148" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_334-body" class="wiki-section-body-2">
+<a href="https://github.com/jtydhr88/sd-webui-StableStudio.git" class="outlink">https://github.com/jtydhr88/sd-webui-StableStudio....</a><br>
+StableStudioでレストAPIを拡張し、ローカルな操作を行うためのwebui用カスタムエクステンションです。<br>
+A custom extension for webui to extend rest APIs to do some local operations using in StableStudio.<br>
+added: 2023-05-24<br>
+tags: [script]<br>
+<br>
+</div></div><div id="content_block_336" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 標準Scripts <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_336-body" class="wiki-section-body-1">
+</div></div><div id="content_block_338" class="wiki-section-2"><div class="title-2"><h4 id="content_4_149"> Prompt Matrix <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_4_149" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_338-body" class="wiki-section-body-2">
+<ul id="content_block_339" class="list-1">
+<li> プロンプトに A | B | C と入れると、以下の2x2の画像を出力する
+<ul class="list-2">
+<li> Bなし、Cなし</li>
+<li> Bあり、Cなし</li>
+<li> Bなし、Cあり</li>
+<li> Bあり、Cあり</li>
+</ul>
+</li>
+<li>  A | B | C | D と入れると、BCDの有無全通りの2x4の画像を出力する</li>
+</ul>
+</div></div><div id="content_block_341" class="wiki-section-2"><div class="title-2"><h4 id="content_4_150"> X/Y plot <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_4_150" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_341-body" class="wiki-section-body-2">
+<ul id="content_block_342" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/X/Y%20Plot%a4%cb%a4%c4%a4%a4%a4%c6">X/Y Plotについて</a></li>
+</ul>
+</div></div><div id="content_block_344" class="wiki-section-2"><div class="title-2"><h4 id="content_4_151"> Prompt from file or textbox <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989781&amp;part=content_4_151" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_344-body" class="wiki-section-body-2">
+<br>
+<ul id="content_block_345" class="list-1">
+<li> 複数のプロンプトで生成する</li>
+<li> "A","B"と入れると、AのプロンプトとBのプロンプトでそれぞれ出力する</li>
+<li> 複数行テキストを入力すると1行1プロンプトで出力</li>
+<li> 以下のような形式でプロンプト以外も指定可能</li>
+</ul>
+<pre id="content_block_346" class="BOX">
+--prompt "プロンプトA" --negative_prompt "ネガティブプロンプトA" --outpath_samples "outputs/txt2img-images/A" --batch_size 2 --n_iter 5 --sampler_name "Euler a" --cfg_scale 7 --steps 25 --seed 200000000
+--prompt "プロンプトB" --negative_prompt "ネガティブプロンプトB" --outpath_samples "outputs/txt2img-images/B" --batch_size 2 --n_iter 2 --sampler_name "Euler" --cfg_scale 10 --steps 30 --seed 200000000
+</pre>
+<ul id="content_block_347" class="list-1">
+<ul class="list-2">
+<li> 指定可能な要素
+<ul class="list-3">
+<li> --sd_model: model (get_closet_checkpoint_matchで検索するための文字列、モデル名の一部分など)</li>
+<li> --outpath_samples: string</li>
+<li> --outpath_grids: string</li>
+<li> --prompt_for_display: string (本体側が使用していない変数のため指定する意味が無い)</li>
+<li> --prompt: string</li>
+<li> --negative_prompt: string</li>
+<li> --styles: string</li>
+<li> --seed: int</li>
+<li> --subseed_strength: float</li>
+<li> --subseed: int</li>
+<li> --seed_resize_from_h: int</li>
+<li> --seed_resize_from_w: int</li>
+<li> --sampler_index: int (本体側が使用していない変数のため指定する意味が無い)</li>
+<li> --sampler_name: string</li>
+<li> --batch_size: int</li>
+<li> --n_iter: int</li>
+<li> --steps: int</li>
+<li> --cfg_scale: int</li>
+<li> --width: int</li>
+<li> --height: int</li>
+<li> --restore_faces: boolean</li>
+<li> --tiling: boolean</li>
+<li> --do_not_save_samples: boolean</li>
+<li> --do_not_save_grid: boolean</li>
+</ul>
+</li>
+</ul>
+
+</ul>
+</div></div>
+</div>

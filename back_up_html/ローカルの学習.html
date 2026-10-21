@@ -1,0 +1,85 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+ここではローカルで行う学習の知見をまとめていきます<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> リンク <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+おすすめ: <a href="https://seesaawiki.jp/nai_ch/d/Dreambooth%2dLoRA">Dreambooth-LoRA</a><br>
+<br>
+以下は廃れた学習方法<ol id="content_block_4" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac%c6%fe%cc%e7">ローカルの学習入門</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/HyperNetwork">HyperNetwork</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/DreamBooth">DreamBooth</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/DreamArtist">DreamArtist</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/TextualInversion">TextualInversion</a></li>
+</ol>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 追加学習(広義のFine-tuning)でなにができる？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+<ul id="content_block_7" class="list-1">
+<li> 特定のキャラを正確に生成する</li>
+<li> 新たな概念を追加する</li>
+<li> 既存の概念を上書きする</li>
+<li> トッピング感覚で簡単に使用できる(DreamboothとFine-tuning以外)</li>
+</ul>
+2026年現在はLoRAがおすすめ。軽量、高速、高性能。<br>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> それぞれの特徴 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_4_1"> LoRA(Low-Rank Adaptation) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_4_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+Dreamboothから派生。ウェイトの差分を出力する。軽量、高性能、省メモリなため主流となっている。<ul id="content_block_12" class="list-1">
+<li> 再現度が高い
+<ul class="list-2">
+<li> Dreamboothには劣る。</li>
+</ul>
+</li>
+<li> 学習が速い</li>
+<li> モデルにマージせずに使える(厳密にはマージが必要。使用時にバックエンド側が自動でマージする)</li>
+<li> 設定項目が非常に多いので初見だと難しいかも</li>
+<li> ウェイトを二つの行列に分解する仕様により学習が不安定</li>
+</ul>
+</div></div><div id="content_block_14" class="wiki-section-3"><div class="title-3"><h5 id="content_4_1_1"> DoRA(Weight-Decomposed Low-Rank Adaptation) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_4_1_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_14-body" class="wiki-section-body-3">
+方向ベクトルをファインチューンすることでLoRAの精度と安定性を改善するらしい。<br>
+実際には体感できるほどの変化はない。<br>
+<a href="https://arxiv.org/abs/2402.09353" class="outlink">https://arxiv.org/abs/2402.09353</a><br>
+<br>
+LyCORISに実装された。<br>
+LyCORISでnetwork_argsにdora_wd=Trueを指定すると使える。<br>
+</div></div><div id="content_block_16" class="wiki-section-2"><div class="title-2"><h4 id="content_4_2"> Fine-tuning(Native Fine-tuning) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_4_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_16-body" class="wiki-section-body-2">
+モデルのウェイトを直接変更する。<ul id="content_block_17" class="list-1">
+<li> 最高精度</li>
+<li> 要求スペックも最高レベル
+<ul class="list-2">
+<li> 多くのウェイトがH100などのデータセンター向けGPUで学習しているが、工夫すればRTX 4090でも動作する</li>
+</ul>
+</li>
+<li> 大規模学習向け</li>
+<li> Checkpointが出力される</li>
+</ul>
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_4_3"> Textual Inversion <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_4_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+Embedding(単語と画像を関連付ける辞書のようなもの)を調整する。古いFT手法。<ul id="content_block_20" class="list-1">
+<li> 学習が遅い</li>
+<li> 再現度は普通</li>
+<li> Negative Promptに適用できる</li>
+<li> 拡散モデルが知らないものには効果なし</li>
+</ul>
+</div></div><div id="content_block_22" class="wiki-section-2"><div class="title-2"><h4 id="content_4_4"> HyperNetwork <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_4_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_22-body" class="wiki-section-body-2">
+Hypernetworkというネットワークがモデルのウェイトを調整する。2022年の秋の間だけ主流だった古いFT手法。<br>
+完全上位互換といえる<a href="https://seesaawiki.jp/nai_ch/d/Dreambooth%2dLoRA">Dreambooth-LoRA</a>に取って代わられた。(間違いなく)もう誰も使っていない。<ul id="content_block_23" class="list-1">
+<li> 学習がやや遅い</li>
+<li> 画風を緩く変える程度の効果</li>
+<li> 設定が難しく、Dying Reluといった問題がある</li>
+</ul>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5"> Dreambooth <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989420&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+モデルのウェイト自体を調整する。古いFT手法。安価に学習できるLoRAに取って代わられた。<br>
+<ul id="content_block_26" class="list-1">
+<li> 再現度が高い</li>
+<li> checkpointが出力される？</li>
+<li> VRAM消費が多い</li>
+</ul>
+</div></div>
+</div>

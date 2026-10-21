@@ -1,0 +1,422 @@
+<div class="user-area">
+<span class="fsize" style="font-size:20px;">ハローアスカベンチマーク(GPUごとの生成速度の一覧)は<a href="https://seesaawiki.jp/nai_ch/d/helloasuka">helloasuka</a>に移転しました</span><br>
+ここの情報は古くなっている場合があることに留意。<ul id="content_block_1" class="list-1">
+<li> GPUの検証一覧(wiki内別ページ)
+<ul class="list-2">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/helloasuka">ハローアスカ(生成ベンチマーク)</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/hellofrog">ハローカエル(LoRA学習ベンチマーク)</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/GPU%a4%cb%a4%e8%a4%eb%c0%b8%c0%ae%ba%b9%b0%db%a4%ce%b8%a1%be%da">GPUによる生成差異の検証</a> ※古い</li>
+</ul>
+</li>
+</ul>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> はじめに</a></li>
+<li class="list-1"><a href="#content_2"> 注意</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> NVIDIA製GPUの注意事項</a></li>
+<li class="list-2"><a href="#content_2_2"> メーカー・モデルによる差異</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> SDXLについて</a></li>
+<li class="list-1"><a href="#content_4"> パーツ評</a>
+<ul>
+<li class="list-2"><a href="#content_4_3"> GPU</a></li>
+<li class="list-2"><a href="#content_4_4"> RAM(メインメモリ)</a></li>
+<li class="list-2"><a href="#content_4_5"> CPU</a></li>
+<li class="list-2"><a href="#content_4_6"> ストレージ</a></li>
+<li class="list-2"><a href="#content_4_7"> OS</a></li>
+<li class="list-2"><a href="#content_4_8"> クラウドとの併用</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5">実際の所どれ買えばいいの？</a>
+<ul>
+<li class="list-2"><a href="#content_5_9"> A. お前の予算が許す限りのNVIDIAの上位モデルを買え</a></li>
+<li class="list-2"><a href="#content_5_10"> A. どれを買うかで迷ってるならRTX 5060TI(16GB)か5070TIを買え</a></li>
+<li class="list-2"><a href="#content_5_11"> A. 4060を検討？</a></li>
+<li class="list-2"><a href="#content_5_12"> A. 学習するかどうかから考えて買え</a></li>
+<li class="list-2"><a href="#content_5_13"> 中古のグラボ買っても大丈夫？</a></li>
+<li class="list-2"><a href="#content_5_14"> ゲーミングノートパソコンをお勧めできない理由</a></li>
+<li class="list-2"><a href="#content_5_15"> 中古の2000番台なら</a></li>
+<li class="list-2"><a href="#content_5_16"> ローエンドGPUのVRAMと画像サイズ(A1111で動かすSD1)</a></li>
+<li class="list-2"><a href="#content_5_17"> 試したいけどPC高騰してるからレンタルしたい</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_2" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> はじめに <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_2-body" class="wiki-section-body-1">
+<ul id="content_block_3" class="list-1">
+<li> <span class="fsize" style="font-size:28px;"><b><span style="color:#ffef00;background-color:#000000;">ゲーミングノートパソコンは絶対に買うな</span></b></span></li>
+</ul>
+ノーパソ用はでかいPC用のグラボと型番が似ていたりするけど性能は全然違う。<br>
+同じ型番でもデスクトップPC用より低性能でコスパが悪いので、GPUぶん回す用途はデスクトップPC一択だ。<br>
+<br>
+(2024/12/27追記)<br>
+ただしRTX4060に限りノート用LAPTOP版とデスクトップ用の性能差がほぼ無い。ノート用で機能制限されるのは4060のTDPだけなので消費電力が大きいゲーミングノートならデスクトップ版と差が出ない。<br>
+PCを一から買いそろえる際にゲーミングデスクトップにモニタや周辺機器を買いそろえるなら15万円前後で購入できる4060のゲーミングノートは一式そろっているので<br>
+スペースの問題などもあれば選択肢には入る。<br>
+ノート用では4070以上はデスクトップとの性能差が大きい割に価格も割高で置き場の問題などよっぽどの事情が無ければ推奨できない。<br>
+デスクトップPCを購入しモニタが無ければ最悪TVに繋いでも良いが<br>
+ただし生成AIでぶん回すとファンなどが高回転で回り続けるため相当五月蠅くなる。デスクトップの方が筐体サイズに余裕があるのでトレードオフになる。<br>
+ただ4060はVRAM8GB版しかないのでforge系列で基本的な生成がメインとなるので入門の入門なら悪くない。<br>
+（一旦追記終わり）<br>
+<ul id="content_block_4" class="list-1">
+<li> <span class="fsize" style="font-size:20px;"><b><span style="color:#ffef00;background-color:#000000;">適当にRTX5090とか勧めるな</span></b></span></li>
+</ul>
+PC触ったことないやつが何十万もするグラボ買うのは常識的ではない。4万円の4060はまだしも30万円以上の5090を素人に勧めるのはおかしいと思う。<br>
+<span class="fsize" style="font-size:10px;">(仮想通貨が流行ったときに、専門家も立ち入らないような魔境取引所ににわか一般人が入り込んで草コインがどうのこうので爆死していったのを見たから同じことを繰り返してほしくないから書いている)</span><br>
+他人の意見に左右されず自分の環境にあったグラボ/PCを買おう(=もちろん90番台のグラボがベストな人もいるってこと)。<br>
+<ul id="content_block_5" class="list-1">
+<li> <span class="fsize" style="font-size:20px;">迷ったらVRAM12GB以上の最新のGeForceを買え</span> </li>
+</ul>
+なお、RTX 5070はVRAM容量がなぜか下位モデル(5060Ti 16GB)より少ない12GBで何とも言えない。<br>
+<br>
+<b>・中古グラボについて</b><br>
+RTX30シリーズの中古はマイニングで酷使されたものが多くおすすめできない。マイニング対策されたLHR版でさえもマイニングに使われていた場合もある。<br>
+<span style="color:#ff0000;">（注）</span>また、RTX 4090の動作不可や動作未確認ジャンク品（見た目は非常にきれい）はコアとVRAMが実装されていないものが出回っているため注意。中国への輸出規制で中国国内へチップが入荷できず実装できなかったものが基盤とクーラーだけで出回っている模様。動作確認していませんは基本的に詐欺。動かないものをもしかしたら動くかもと期待を持たせるための常套句。<br>
+どうしてもというのなら信頼できる友人知人や中古ショップでも保証が手厚いところから買うしか無いが中古をおすすめできる環境では無い<br>
+<br>
+<b>・AMDとIntelのGPUについて</b><br>
+個人向け生成AIではCUDAを利用できるNVIDIAのRTXシリーズ一強だったが2024年12月現在では他の選択肢も出てきてはいる<br>
+<br>
+・AMD Radeonシリーズ<br>
+<div id="content_block_6">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_6-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_6-inside" class="toggle-display">
+ZULDAというAMD向けのCUDAコンバーター（みたいなもの）が出ており、現行のRX7xxxシリーズと一部前世代のRX6xxxシリーズに対応。インストールに手間が増える＆初回に時間がかかるがそれ以外は普通にWebUIやComfyUIも使える<br>
+筆者がRX7800XT(VRAM16GB)で試したところ4070にちょっと届かないぐらいかなぐらいで普通に使えた<br>
+ただし、ZULDAがライセンス的にまずいっぽいのでAMDのバックアップが無くなり、AMD純正のROCｍは一般ユーザー向けでは無いため注意が必要<br>
+NVIDIAに比べるとVRAMが豊富な機種が今ならまぁまぁ安価で手に入りゲーム性能もFSR 4などで頑張ってはいる。<br>
+詳しい導入方法はとしあきwikiに任せた（わかりやすいドキュメントがとしあきのところにあるが直リン禁止のため）<br>
+新機種発売前のためかRX7800XTが実質価格ながら7万円前後で買えるためわかっていて買うならあり<br>
+生成AIのために初心者が買うのはおすすめは出来ない<br>
+2025-11-27: ROCm 7で状況は改善しており、ZLUDAを使わなくても速い。
+</div>
+</div>
+<br>
+・Intel ARCシリーズ<br>
+<div id="content_block_8">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_8-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_8-inside" class="toggle-display">
+i740以降うん十年ぶりに外付けGPUを発売。最初のAシリーズはドライバもひどくゲーム側からも対応してもらえず株価対策と言われたAI性能も発揮できずと散々だった<br>
+スペックだけなら4070並のはずなのにどうして・・・と言わ続け何度も特価品で話題になりついにはフラッグシップのA770(16GB)が3万円ちょいで投げ売られる羽目に<br>
+（買った筆者は当初は窓から投げ捨てる勢いだった。今年の12月のドライバでそれなりにはなった）<br>
+ずっとIntelHD,UHD,Xeと内蔵グラフィックは作り続けていたので一から作った訳では無いはずだが2Dやエンコデコードメインだったししゃーない<br>
+生成AIではIPEXというArcシリーズでつかえるPytorch向けの純正ライブラリを公開しており生成AI対応はやっている<br>
+A770でUbuntu+SDXLで生成してみたところ3070〜4060よいちょい速ぐらいの性能は出ていたが1000＊1000を超え画像が生成できないバグがある<br>
+ところが12月に後継のBシリーズの第一弾B580(12GB)が発売され北米では250ドルというバーゲンプライス（シェアをとるためのほぼ赤字と言われているが）ゲーム的な性能も12月のドライバで一気にそれなりに（前がひどすぎたとも言うが）さらにBシリーズはAよりかなり性能アップしており生成AIもそつなくこなしAにあったバグも解消しているとのこと<br>
+海外では売れに売れて転売ヤーまで現れているが国内では5万円超、アスクドル200円相当なため注目はされているようだがあまり買った人の話を聞かない<br>
+みな投げ売りをした先代のことを覚えてるからだろうか<br>
+IPEXのインストールはまぁ結構手間な上にあまりWindows向けでは無いが今後B770(16GB)などが安価に出てきて生成環境が安定してくれば選択肢には入るのかも<br>
+B580の生成AI速度はガチで4070ぐらいはあるらしい
+</div>
+</div>
+<br>
+<div id="content_block_10">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_10-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>・その他(筆者の愚痴）</p></div>
+<div style="display:none" id="content_block_10-inside" class="toggle-display">
+一応AppleSilicon（Mシリーズ)で生成している人もいるんすけどね。正直めっちゃいきってる人もいっぱいいるんすよ・・・Apple至上主義者といえば良いんですかね<br>
+AIが出てくる前まで無駄にGPU詰んでたが、AI時代になってようやく目が出てきたくらい（CPUはMax以後じゃないと満足できない＆NVIDIAベースなのでアプデは後回し）<br>
+AMD内蔵グラフィックで生成してる人もいるんすよ。技術的に出来るからやってみたとかネタ的な人が多いんですけどね。痛い人もいるんですよ。頑張って数十分かけて1枚生成しただけでdGPU不要論を唱え始めたりね・・・・
+</div>
+</div>
+<br>
+（追記終わり）<br>
+</div></div><div id="content_block_13" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_13-body" class="wiki-section-body-1">
+</div></div><div id="content_block_15" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> NVIDIA製GPUの注意事項 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_15-body" class="wiki-section-body-2">
+<br>
+RTX40シリーズ以降の補助電源コネクタは、異常発熱により融解することがある<br>
+<a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5413" target="_blank" class="outlink" rel="nofollow">NVIDIA公式の調査結果</a>によると、コネクタが完全に挿入されていないことが原因<br>
+購入者はコネクタをしっかり差し込み、確認すべき<br>
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> メーカー・モデルによる差異 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+<br>
+PC一般の知識ではあるが、同じ型番でもメーカー・モデルによって性能が異なる。<br>
+例えば、底辺のRTX4090だと最上位のRTX4080より低いベンチマークスコアを出すこともある。<br>
+特に組み立て済みPCでメーカー・モデルが明示されていない場合、一番安上がりのグラボを押し付けられる可能性が高い。<br>
+そもそも自作とBTOの差が縮まってきているとはいえ、それでも最上位だと10万以上上乗せされている。<br>
+ハイエンドほど自作推奨だが、どうしても組み立て済みPCを買う場合は、特にグラボについてはよく調べてから選んだほうがよい。<br>
+</div></div><div id="content_block_19" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> SDXLについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_19-body" class="wiki-section-body-1">
+パラメータ数がSD1と比較して約3倍(0.86B-&gt;2.6B)になった影響でメモリ(メインメモリとビデオメモリの両方)の使用量も3倍近く増えた。<br>
+よってRTX 3060(12GB)以上かつメインメモリ32GB以上がおすすめ。ちなみに、FP8かmedvramを利用するとVRAM消費が大幅に減って8GBでもすんなり動く。<br>
+</div></div><div id="content_block_21" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> パーツ評 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_21-body" class="wiki-section-body-1">
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_4_3"> GPU <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_4_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+<br>
+基本的にGPUの世代が新しく、メモリ帯域幅が多いほど生成が速くなる。<br>
+なお、メモリ容量やシェーダー数が多いからと言って速いわけではない(RTX3060が最たる例)。<br>
+<br>
+RTX 3060 8GB以上を推奨。理由はFP16演算が速くbf16が使えるため。<br>
+ベンチマークの結果もGTXとRTXで3倍程度の壁が出来ている。<br>
+<br>
+学習は、処理速度もVRAMもあればあるだけ良い。<br>
+VRAM 8GBでも学習できるが解像度が欲しくなる。3060 12GBは評価が高い。<br>
+<br>
+Radeon、Intel Arc、Macでも動作はするが新規購入はお勧めしない。MacはRAM32GB以上のM4 Pro搭載であれば快適に動く（電気代を気にする省電力派はMacがオススメ）。<br>
+ケチるんならGeForce RTX 20シリーズの中古。ただしRTX30以降のGPUと違いbf16が使えなかったり一部技術が非対応だったりする。<br>
+<br>
+検証記事 <a href="https://chimolog.co/bto-gpu-stable-diffusion-specs/" target="_blank" class="outlink" rel="nofollow">【Stable Diffusion】AIイラストにおすすめなグラボをガチで検証【GPU別の生成速度】</a><br>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_4_4"> RAM(メインメモリ) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_4_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+<br>
+モデルのマージ、WSL2、学習のいずれかに手を出すなら32GB以上が推奨。SDXLの学習は最低でも32GB必要。<br>
+速度はそこまでシビアではない。<br>
+RamDisk(仮想メモリ,スワップ領域)はほぼ意味ないが、SuperMergerのためにメモリを余分に(モデル3つ分くらい)積むのはアリ。また、RAMが少ないPCで発生するフリーズし続ける状況を一応回避できる。<br>
+<br>
+生成だけならモデルの容量を小さくすることで節約が可能だし、無料Colabを使ってモデルを小さくする便利なNotebookもある。<br>
+<br>
+SD1の生成だけなら8GBでもギリギリ動作するが、モデルデータの読み込み時や初回起動時にPCが一瞬か一定時間フリーズする。SDXL以降は多分無理。<br>
+</div></div><div id="content_block_27" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5"> CPU <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_27-body" class="wiki-section-body-2">
+<br>
+上位のGPUではCPUがボトルネックになる。<br>
+下位はSandy Bridgeでも動いてるがさすがに遅い。<br>
+<br>
+よほど古くない限り、Intel/AMDどちらでも問題ない。どっちでも何も変わらない。<br>
+<br>
+GPU性能をフルに発揮し、処理中に他の作業がしたいなら、<br>
+iGPUつきのCPUにして、ブラウザ等はiGPUに割り振るのがおすすめ。<br>
+デスクトップCPUはIntelであれば末尾にFがついてないもの、AMDは末尾にGがついてるもの、Ryzen 7000シリーズ以降と末尾にFがついてないものがiGPUを搭載している。<br>
+<br>
+GPUの性能が高いほどシングルスレッド性能によるボトルネックが出やすくなる<br>
+目安としてCinebench R23のシングルコアのスコア×0.0176でそのCPUのSD1の最大速度がわかる<br>
+</div></div><div id="content_block_29" class="wiki-section-2"><div class="title-2"><h4 id="content_4_6"> ストレージ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_4_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_29-body" class="wiki-section-body-2">
+<br>
+1111の起動時間が気になるなら出来るだけ速いNVMeのSSDがおすすめ。<br>
+待ってもいいならSATA SSDでも支障はない。<br>
+消耗はそこまで問題にならなくなったはず。<br>
+総書込量(TBW)を使い切る前に経年劣化で壊れるほうが多い。<br>
+<br>
+バックアップを兼ねて2つ目のストレージを持っておくと安心。<br>
+コスパ的なおすすめは6〜8TBくらいのHDD。USBの外付けとかでもいいと思う。<br>
+速度重視のためにSSDオンリーにするのもいい。<br>
+モデルとデータセットについてはHugging Face🤗が受け入れてくれる。※privateリポジトリは容量制限がある<br>
+(プロバイダーによっては大容量アップロードで警告が来るらしいので注意？)<br>
+<br>
+中華製品に抵抗がないなら、いわゆる「蝉族」がおすすめ。<br>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_4_7"> OS <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_4_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+<br>
+ガチでやるならLinuxは良い。<br>
+Windowsで普段使いするならWSL2も良い。<br>
+なお、Linuxだからといって劇的に速くなるわけではない。メモリオフロードなどのIOが絡む処理が速い。<br>
+</div></div><div id="content_block_33" class="wiki-section-2"><div class="title-2"><h4 id="content_4_8"> クラウドとの併用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_4_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_33-body" class="wiki-section-body-2">
+<br>
+生成はローカル、学習はクラウドという構成もアリ<br>
+<ul id="content_block_34" class="list-1">
+<li> LoraとHNの学習結果は容量が少ないのでクラウドからダウンロードしやすい</li>
+<li> 学習中は生成もゲームも出来なくなるし電気代もかかるのでクラウド化は合理的</li>
+<li> GPU買う前にまず無料Colabを試してみよう <a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac%c6%fe%cc%e7">ローカルの学習入門</a> ※現在動作するかは不明</li>
+</ul>
+</div></div><div id="content_block_36" class="wiki-section-1"><div class="title-1"><h3 id="content_5">実際の所どれ買えばいいの？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_36-body" class="wiki-section-body-1">
+</div></div><div id="content_block_38" class="wiki-section-2"><div class="title-2"><h4 id="content_5_9"> A. お前の予算が許す限りのNVIDIAの上位モデルを買え <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_38-body" class="wiki-section-body-2">
+<br>
+VRAM搭載量の違いから選択<br>
+<div id="content_block_39">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_39-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_39-inside" class="toggle-display">
+<ul id="content_block_40" class="list-1">
+<li>32GB越え製品</li>
+</ul>
+逸般の誤家庭向けでモデルを1から作る企業などの超本格的な人向け<br>
+入手ルート(販売ルート)も限られているしお値段も100万円以上する夢のモデル<br>
+代表例がNVIDIA H100 80GB（データセンター向け、お値段察し）<br>
+このあたりのグラボを個人で使いたいならpaperspaceなどのクラウドコンピューティングが現実的。<br>
+<ul id="content_block_41" class="list-1">
+<li>32GB製品</li>
+</ul>
+現実的な最高性能<br>
+値段は張るものの、画像生成やLoRA学習などでは下位の追随を許さない<br>
+次世代モデルが出ても安心、とは言えない模様(Qwen-ImageやFLUX.2などのVRAMに収まらない巨大なモデルが出た)。<br>
+<ul id="content_block_42" class="list-1">
+<li>16GBモデル</li>
+</ul>
+SDXLでも余裕で扱えるがその分値が張る<br>
+12GBモデルや旧型グラボからの乗換向きで、VRAM搭載量は安心感がある<br>
+<ul id="content_block_43" class="list-1">
+<li>12GB製品</li>
+</ul>
+画像生成AIではデファクトスタンダード<br>
+SDXLも動かせる上に設定次第ではSDXL用LoRA作成も可能<br>
+初めて購入するなら値段もこなれているこのクラスから選択<br>
+<ul id="content_block_44" class="list-1">
+<li>8GB製品</li>
+</ul>
+SD1.5は十分戦えたがSDXLだと低メモリ設定を入れる必要あり<br>
+LoRA学習もバッチを盛らなければできる。SDXLも--fp8_baseを使えばConvとTextEncoder込みで学習できる。<br>
+SDXLの普及を鑑みてVRAM12GB以上製品がおすすめ<br>
+<ul id="content_block_45" class="list-1">
+<li>8GB未満製品</li>
+</ul>
+SD1.5でも低メモリ設定じゃないと動かない可能性が高い(どっちにしろVRAM8GB未満の製品は性能的にもキツイ)<br>
+SDXLはかなり絶望的。Fooocusでギリギリ動く程度。SD1.5のLoRAもギリギリ。<br>
+新規で購入する事はないと思うが、既に持っている人は買い換えの検討を強くお勧めする
+</div>
+</div>
+<br>
+現行モデル<br>
+<div id="content_block_47">
+<div class="toggle-title"><a id="region_plugin_content_5" onclick="toggleRegion(this,'content_block_47-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_47-inside" class="toggle-display">
+<ul id="content_block_48" class="list-1">
+<li> RTX 5090(32GB), 4090(24GB), 5080(16GB), 5070Ti(16GB), 5060Ti(16GB)</li>
+</ul>
+メモリ規格がGDDR7へと強化、5090のみVRAM容量が32GBになった。動画生成とFLUX.1やSD3.5などのDiTモデルも快適に動くはず。<br>
+順当に性能が向上したが、消費電力も増加したことに注意。<br>
+<ul id="content_block_49" class="list-1">
+<li> RTX 4060  [VRAM8GB]</li>
+</ul>
+VRAMが8GBで性能も3060と3060Tiの間といった感じで進化に乏しい。<br>
+とはいえわずか110Wの電力でRTX 2080相当の性能を発揮できることが魅力的で、PCの用途がゲームメインでAIは軽く遊ぶ程度なら十分アリ。<br>
+SDXLもreForgeやmedvramの1111を使えばVRAM不足にならずに動作する。<br>
+ゲーム性能とAI性能のバランスをとるなら価格が大幅に上昇するが5070Tiがおすすめ。<br>
+</div>
+</div>
+<br>
+現在おすすめできないグラボ<br>
+<div id="content_block_51">
+<div class="toggle-title"><a id="region_plugin_content_6" onclick="toggleRegion(this,'content_block_51-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_51-inside" class="toggle-display">
+<ul id="content_block_52" class="list-1">
+<li> RTX40シリーズ以前</li>
+</ul>
+すでに終売で在庫が消滅したため必然的に最新モデルがおすすめになる。<br>
+<ul id="content_block_53" class="list-1">
+<li> GeForce GTXシリーズ全般</li>
+</ul>
+AI処理に特化したTensorコアがないためとても遅い。出力結果がRTXと大きく異なることがある。<br>
+しかもNVIDIAのドライバサポートもほとんど終了した。<br>
+<ul id="content_block_54" class="list-1">
+<li> IntelとAMD製GPU</li>
+</ul>
+機械学習はNVIDIAが先行しているため、CUDA前提の設計のソフトが多い。他メーカーは互換性問題を抱えている。<br>
+RadeonはROCm 7で大分良くなるっぽい<br>
+Intelは知らん。
+</div>
+</div>
+</div></div><div id="content_block_57" class="wiki-section-2"><div class="title-2"><h4 id="content_5_10"> A. どれを買うかで迷ってるならRTX 5060TI(16GB)か5070TIを買え <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_57-body" class="wiki-section-body-2">
+</div></div><div id="content_block_59" class="wiki-section-2"><div class="title-2"><h4 id="content_5_11"> A. 4060を検討？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_59-body" class="wiki-section-body-2">
+SDXLなら余裕は少ないが問題ない。しかし、VRAM8GBではSDXL以降の大型モデルはかなり厳しくなると思われる。しかも、ゲーム用途でも厳しくなりつつある。<br>
+<br>
+<div id="content_block_60">
+<div class="toggle-title"><a id="region_plugin_content_7" onclick="toggleRegion(this,'content_block_60-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_60-inside" class="toggle-display">
+<ul id="content_block_61" class="list-1">
+<li> LoRAの登場でVRAM 8GBがギリ人権を得られる</li>
+<li> 2080相当の性能で速度は悪くないしFHDサイズの画像が生成可</li>
+</ul>
+<br>
+中古なら3060 12GBもアリ。2060なんかはAI業界から足切りされ始めているので微妙。<br>
+1060(CUDAとドライバサポート終了)とか1660Tiは数倍遅くなるのでVRAM容量を置いといてもナシかな。
+</div>
+</div>
+</div></div><div id="content_block_64" class="wiki-section-2"><div class="title-2"><h4 id="content_5_12"> A. 学習するかどうかから考えて買え <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_64-body" class="wiki-section-body-2">
+<div id="content_block_65">
+<div class="toggle-title"><a id="region_plugin_content_8" onclick="toggleRegion(this,'content_block_65-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_65-inside" class="toggle-display">
+<ul id="content_block_66" class="list-1">
+<li>学習はLoRAだけする</li>
+</ul>
+VRAM8GBのモデルのうち予算内の上位モデルを狙おう<br>
+候補：RTX 5060Ti(8GB),4060<br>
+<ul id="content_block_67" class="list-1">
+<li>学習にちょっと興味があるか、FHD以上の解像度で生成したい</li>
+</ul>
+VRAM12GBのモデルを選ぼう<br>
+候補：RTX 5070<br>
+<ul id="content_block_68" class="list-1">
+<li>学習に大変興味があるか最近の大型のモデルを使いたい</li>
+</ul>
+VRAM16GB以上のモデルを選ぼう<br>
+候補：RTX 5090、5080、5070Ti、5060Ti(16GB)
+</div>
+</div>
+</div></div><div id="content_block_71" class="wiki-section-2"><div class="title-2"><h4 id="content_5_13"> 中古のグラボ買っても大丈夫？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_71-body" class="wiki-section-body-2">
+<div id="content_block_72">
+<div class="toggle-title"><a id="region_plugin_content_9" onclick="toggleRegion(this,'content_block_72-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_72-inside" class="toggle-display">
+基本的には推奨しない。<br>
+中古に流れているグラボの大半は、マイニングに使われてたと言われている。<br>
+マイニングはグラボの性能を全力で使う為、熱の影響でコンデンサや他のパーツが劣化してる可能性がある。つまり故障しやすい。<br>
+マイニングに不向きなLHR版(Lite Hash Rate)のグラボもあるので、そちらを買うと多少マシと言われている。
+</div>
+</div>
+</div></div><div id="content_block_75" class="wiki-section-2"><div class="title-2"><h4 id="content_5_14"> ゲーミングノートパソコンをお勧めできない理由 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_75-body" class="wiki-section-body-2">
+<div id="content_block_76">
+<div class="toggle-title"><a id="region_plugin_content_10" onclick="toggleRegion(this,'content_block_76-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_76-inside" class="toggle-display">
+生成AIはマイニング並みに使用率100パーセントに張り付いた状態でグラボを酷使する<br>
+<b>ノートパソコンごときの冷却性能では全く冷えない</b>上にファンがうるさい<br>
+<br>
+冷却性能の悪さやノートパソコン特有のGPU性能低下は、<br>
+寝ている間に絵を量産したり学習に丸一日かけてた時代が終わったこともあって、<br>
+AIではそこまで大きな問題にならないが、単純にコスパは悪い。<br>
+eGPUを付ければ良いが、eGPU自体が高額。
+</div>
+</div>
+</div></div><div id="content_block_79" class="wiki-section-2"><div class="title-2"><h4 id="content_5_15"> 中古の2000番台なら <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_79-body" class="wiki-section-body-2">
+<div id="content_block_80">
+<div class="toggle-title"><a id="region_plugin_content_11" onclick="toggleRegion(this,'content_block_80-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_80-inside" class="toggle-display">
+SDXL以前は問題ないが、bf16非対応なのでLumina Imageなどのbf16前提の新しいモデルでfp32で動かすことになり遅い。<br>
+Sage Attentionなどの新技術が使えない。<br>
+CPUをケチってiGPUが無いのでVRAMを食う。<br>
+というわけでVRAMは多めに欲しい。
+</div>
+</div>
+</div></div><div id="content_block_83" class="wiki-section-2"><div class="title-2"><h4 id="content_5_16"> ローエンドGPUのVRAMと画像サイズ(A1111で動かすSD1) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_83-body" class="wiki-section-body-2">
+<div id="content_block_84">
+<div class="toggle-title"><a id="region_plugin_content_12" onclick="toggleRegion(this,'content_block_84-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_84-inside" class="toggle-display">
+FHDでHighres, fixしたかったら5070がおすすめ<br>
+<br>
+PCの使用状況やライブラリ,ドライバのバージョンによって変化する。<br>
+モデルを小さくしてVAEを交換すれば高解像度を狙える。プログレスバーが100%あたりでCUDA OOMするときはMultiDiffusionのTiled VAEを使うといい。<table id="content_block_85"><tbody><tr><th>VRAM</th><th>Options</th><th>最大WxH</th></tr><tr><td>4GB</td><td>lowvram</td><td>512x768</td></tr><tr><td>6GB</td><td>medvram xformers</td><td>1536x1024</td></tr><tr><td>8GB</td><td>xformers</td><td>1920x1088 1472x1472</td></tr></tbody></table>
+最大WxHを超えると出力画像が真っ黒(NansException)になるか、(設定によっては)メモリ不足でエラーになる。<br>
+NVIDIAのドライバ535.98あたりから共有メモリも使うようになって上限が上がった模様。<b>ただしVRAMが溢れた状態ではlowvram並みに遅くなる。</b><br>
+<br>
+VRAMを溢れさせたくない(共有GPUメモリを利用したくない)場合はNvidiaコンパネから3D設定の管理に進み、<br>
+プログラムに"C:\Users\ユーザー名\AppData\Local\Programs\Python\Python3XX\python.exe"を指定した上で「CUDA - System Fallback Policy」を <b>Prefer No System Fallback</b>にすれば解消する。<br>
+詳細:<a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5490" class="outlink" rel="nofollow">System Memory Fallback for Stable Diffusion</a><br>
+<br>
+medvramはだいたい所要時間1.5倍くらい(Linuxにすると速くなる)<br>
+lowvramはさらに4〜10倍くらい
+</div>
+</div>
+</div></div><div id="content_block_88" class="wiki-section-2"><div class="title-2"><h4 id="content_5_17"> 試したいけどPC高騰してるからレンタルしたい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983764&amp;part=content_5_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_88-body" class="wiki-section-body-2">
+<div id="content_block_89">
+<div class="toggle-title"><a id="region_plugin_content_13" onclick="toggleRegion(this,'content_block_89-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_89-inside" class="toggle-display">
+クラウドGPUレンタルサービスが国内外で始まってるので試すだけなら良い。<br>
+ただし、レンタルサーバーの仕組みなどの知識が無いと構築するには難易度が高いので、ちゃんと調べてから試しましょう。<br>
+<a href="https://ai.conoha.jp/canvas/" class="outlink" rel="nofollow">ConoHa AI Canvas（国内）</a><br>
+<a href="https://www.runpod.io/" class="outlink" rel="nofollow">RunPod（海外）</a><br>
+<a href="https://www.paperspace.com/" class="outlink" rel="nofollow">Paperspace（海外）</a>
+</div>
+</div>
+</div></div>
+</div>

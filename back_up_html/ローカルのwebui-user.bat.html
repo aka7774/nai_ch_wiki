@@ -1,0 +1,284 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+このファイルを実行するんやで(webui.batではない)<br>
+以下はこのファイルを編集する話。<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> 書き方</a></li>
+<li class="list-1"><a href="#content_3"> 公式</a>
+<ul>
+<li class="list-2"><a href="#content_3_1"> 公式wiki翻訳版｜コマンドライン引数表</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> うまく動かないとき</a></li>
+<li class="list-1"><a href="#content_5"> PYTHON</a></li>
+<li class="list-1"><a href="#content_6"> GIT</a></li>
+<li class="list-1"><a href="#content_7"> VENV</a></li>
+<li class="list-1"><a href="#content_8"> COMMANDLINE_ARGS</a>
+<ul>
+<li class="list-2"><a href="#content_8_2"> --xformers (高速化/VRAM消費減)</a></li>
+<li class="list-2"><a href="#content_8_3"> --opt-channelslast (高速化)</a></li>
+<li class="list-2"><a href="#content_8_4"> --no-half-vae (画像真っ黒対策)</a></li>
+<li class="list-2"><a href="#content_8_5"> --no-half (16XXの高速化)</a></li>
+<li class="list-2"><a href="#content_8_6"> --medvram もしくは --lowvram (VRAMの少ないGPUでの実行)</a></li>
+<li class="list-2"><a href="#content_8_7"> --ckpt-dir</a></li>
+<li class="list-2"><a href="#content_8_8"> --gradio-img2img-tool color-sketch</a></li>
+<li class="list-2"><a href="#content_8_9"> --share --gradio-auth user:password (Colabなどクラウド用)</a></li>
+<li class="list-2"><a href="#content_8_10"> --listen --enable-insecure-extension-access (LAN用)</a></li>
+<li class="list-2"><a href="#content_8_11"> --skip-torch-cuda-test (GPUのかわりにCPUを使う(非推奨))</a></li>
+<li class="list-2"><a href="#content_8_12"> --autolaunch (自動的にブラウザを立ち上げる)</a></li>
+<li class="list-2"><a href="#content_8_13"> --reinstall-xformers (xformersの再インストール)</a></li>
+<li class="list-2"><a href="#content_8_14"> --disable-nan-check</a></li>
+<li class="list-2"><a href="#content_8_15"> --opt-sdp-no-mem-attentionまたは--opt-sdp-attention</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_9"> PYTORCH_CUDA_ALLOC_CONF</a></li>
+<li class="list-1"><a href="#content_10"> (隠し) ACCELERATE</a></li>
+<li class="list-1"><a href="#content_11"> 廃止された引数</a>
+<ul>
+<li class="list-2"><a href="#content_11_16">  --deepdanbooru</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 書き方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+サンプルを置いとく<br>
+<br>
+<textarea id="content_block_4" class="PLAIN-BOX">
+
+@echo off
+
+set PYTHON=
+set GIT=
+set VENV_DIR=
+set COMMANDLINE_ARGS=--xformers --opt-channelslast --skip-version-check --no-download-sd-model "--lora-dir=H:\Resources\Resources_AI\Models\Lola" "--ckpt-dir=C:\Program\GenerativeAI\StableDiffusionModels"
+
+call webui.bat
+</textarea>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 公式 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+公式Wiki, コマンド ラインの引数と設定(英語)<ul id="content_block_7" class="list-1">
+<li> <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a></li>
+</ul>
+</div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1"> 公式wiki翻訳版｜コマンドライン引数表 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_9-body" class="wiki-section-body-2">
+※翻訳は基本的には機械翻訳に通しだけなのでざっと意味を把握するのにどうぞ。<br>
+正確な意味を求める場合は英語欄を参照してな<br>
+出典：公式Wiki, Command Line Arguments and Settings(英語)<br>
+<table id="content_block_10"><tbody><tr><td>引数コマンド｜Argument Command</td><td>値｜Value</td><td>既定値｜Default</td><td>説明</td><td>Description</td></tr><tr><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td></tr><tr><td>▼設定｜CONFIGURATION</td><td></td><td></td><td></td><td></td></tr><tr><td>-h, --help</td><td>None</td><td>False</td><td>このヘルプメッセージを表示して終了する</td><td>show this help message and exit</td></tr><tr><td>--exit</td><td></td><td></td><td>インストール後に終了する</td><td>Terminate after installation</td></tr><tr><td>--data-dir</td><td>DATA_DIR</td><td>./</td><td>すべてのユーザーデータが格納される基本パス</td><td>base path where all user data is stored</td></tr><tr><td>--config</td><td>CONFIG</td><td>configs/stable-diffusion/v1-inference.yaml</td><td>モデルのconfigのパス</td><td>path to config which constructs model</td></tr><tr><td>--ckpt</td><td>CKPT</td><td>model.ckpt</td><td>デフォルトで読み込むモデルの指定（SDモデルのチェックポイントへのパス。指定した場合、このチェックポイントはチェックポイントの一覧に追加され、読み込まれます）</td><td>path to checkpoint of stable diffusion model; if specified, this checkpoint will be added to the list of checkpoints and loaded</td></tr><tr><td>--ckpt-dir</td><td>CKPT_DIR</td><td>None</td><td>モデルのディレクトリへのパス</td><td>Path to directory with stable diffusion checkpoints</td></tr><tr><td>--no-download-sd-model</td><td>None</td><td>False</td><td>モデルが見つからない場合でもSD1.5モデルをダウンロードしない</td><td>don't download SD1.5 model even if no model is found</td></tr><tr><td>--vae-dir</td><td>VAE_PATH</td><td>None</td><td>VAEへのパス</td><td>Path to Variational Autoencoders model</td></tr><tr><td>--gfpgan-dir</td><td>GFPGAN_DIR</td><td>GFPGAN/</td><td>GFPGANのディレクトリ</td><td>GFPGAN directory</td></tr><tr><td>--gfpgan-model</td><td>GFPGAN_MODEL</td><td>GFPGAN model file name</td><td>GFPGANのデフォルトモデルの指定</td><td></td></tr><tr><td>--codeformer-models-path</td><td>CODEFORMER_MODELS_PATH</td><td>models/Codeformer/</td><td>codeformerモデルファイルを含むディレクトリへのパス</td><td>Path to directory with codeformer model file(s).</td></tr><tr><td>--gfpgan-models-path</td><td>GFPGAN_MODELS_PATH</td><td>models/GFPGAN</td><td>GFPGANモデルファイルを含むディレクトリへのパス</td><td>Path to directory with GFPGAN model file(s).</td></tr><tr><td>--esrgan-models-path</td><td>ESRGAN_MODELS_PATH</td><td>models/ESRGAN</td><td>ESRGANモデルファイルを含むディレクトリへのパス</td><td>Path to directory with ESRGAN model file(s).</td></tr><tr><td>--bsrgan-models-path</td><td>BSRGAN_MODELS_PATH</td><td>models/BSRGAN</td><td>BSRGANモデルファイルを含むディレクトリへのパス</td><td>Path to directory with BSRGAN model file(s).</td></tr><tr><td>--realesrgan-models-path</td><td>REALESRGAN_MODELS_PATH</td><td>models/RealESRGAN</td><td>RealESRGANモデルファイルを含むディレクトリへのパス</td><td>Path to directory with RealESRGAN model file(s).</td></tr><tr><td>--scunet-models-path</td><td>SCUNET_MODELS_PATH</td><td>models/ScuNET</td><td>ScuNETモデルファイルを含むディレクトリへのパス</td><td>Path to directory with ScuNET model file(s).</td></tr><tr><td>--swinir-models-path</td><td>SWINIR_MODELS_PATH</td><td>models/SwinIR</td><td>SwinIR および SwinIR v2 モデル ファイルを含むディレクトリへのパス</td><td>Path to directory with SwinIR and SwinIR v2 model file(s).</td></tr><tr><td>--ldsr-models-path</td><td>LDSR_MODELS_PATH</td><td>models/LDSR</td><td>LDSRモデルファイルを含むディレクトリへのパス。</td><td>Path to directory with LDSR model file(s).</td></tr><tr><td>--lora-dir</td><td>LORA_DIR</td><td>models/Lora</td><td>Loraネットワークのあるディレクトリへのパス (デフォルト: lora)</td><td>Path to directory with Lora networks.</td></tr><tr><td>--clip-models-path</td><td>CLIP_MODELS_PATH</td><td>None</td><td>CLIPモデルファイルを含むディレクトリへのパス。</td><td>Path to directory with CLIP model file(s).</td></tr><tr><td>--embeddings-dir</td><td>EMBEDDINGS_DIR</td><td>embeddings/</td><td>textual inversion用のembeddingを入れるディレクトリ (デフォルトはembeddings)</td><td>embeddings directory for textual inversion (default: embeddings)</td></tr><tr><td>--textual-inversion-templates-dir</td><td>TEXTUAL_INVERSION_TEMPLATES_DIR</td><td>textual_inversion_templates</td><td>textual inversionテンプレートを含むディレクトリへのパス</td><td>directory with textual inversion templates</td></tr><tr><td>--hypernetwork-dir</td><td>HYPERNETWORK_DIR</td><td>models/hypernetworks/</td><td>hypernetworkディレクトリ</td><td>hypernetwork directory</td></tr><tr><td>--localizations-dir</td><td>LOCALIZATIONS_DIR</td><td>localizations/</td><td>ローカライズディレクトリ</td><td>localizations directory</td></tr><tr><td>--styles-file</td><td>STYLES_FILE</td><td>styles.csv</td><td>スタイルに使用するファイル名</td><td>filename to use for styles</td></tr><tr><td>--ui-config-file</td><td>UI_CONFIG_FILE</td><td>ui-config.json</td><td>UI 設定に使用するファイル名</td><td>filename to use for ui configuration</td></tr><tr><td>--no-progressbar-hiding</td><td>None</td><td>False</td><td>gradio UIでプログレスバーを非表示にしない(ブラウザでハードウェアアクセラレーションを使用している時にMLの速度が低下するため非表示にしてる)</td><td>do not hide progressbar in gradio UI (we hide it because it slows down ML if you have hardware acceleration in browser)</td></tr><tr><td>--max-batch-count</td><td>MAX_BATCH_COUNT</td><td>16</td><td>UIの最大Batch count</td><td>maximum batch count value for the UI</td></tr><tr><td>--ui-settings-file</td><td>UI_SETTINGS_FILE</td><td>config.json</td><td>UI設定に使用するファイル名</td><td>filename to use for ui settings</td></tr><tr><td>--allow-code</td><td>None</td><td>False</td><td>WebUIからのカスタムスクリプト実行を許可する</td><td>allow custom script execution from webui</td></tr><tr><td>--share</td><td>None</td><td>False</td><td>share=Trueを使用し、gradioのサイトからUIにアクセスできるようにする。</td><td>use share=True for gradio and make the UI accessible through their site (doesn't work for me but you might have better luck)</td></tr><tr><td>--listen</td><td>None</td><td>False</td><td>サーバー名として0.0.0.0でgradioを起動し、ネットワークのリクエストに応答できるようにする。</td><td>launch gradio with 0.0.0.0 as server name, allowing to respond to network requests</td></tr><tr><td>--port</td><td>PORT</td><td>7860</td><td>指定したポートでgradioを起動する。1024未満のポートはroot/管理者権限が必要。デフォルトは7860(利用可能な場合)</td><td>launch gradio with given server port, you need root/admin rights for ports &lt; 1024, defaults to 7860 if available</td></tr><tr><td>--hide-ui-dir-config</td><td>None</td><td>False</td><td>WebUIからディレクトリ構成を隠す</td><td>hide directory configuration from webui</td></tr><tr><td>--freeze-settings</td><td>None</td><td>False</td><td>設定の編集を無効にする</td><td>disable editing settings</td></tr><tr><td>--enable-insecure-extension-access</td><td>None</td><td>False</td><td>他のオプションに関係なくExtensionタブを有効にする</td><td>enable extensions tab regardless of other options</td></tr><tr><td>--gradio-debug</td><td>None</td><td>False</td><td>--debugオプションを指定してgradioを起動する</td><td>launch gradio with --debug option</td></tr><tr><td>--gradio-auth</td><td>GRADIO_AUTH</td><td>None</td><td>「username:password」のようにgradio認証を設定します。または「u1:p1,u2:p2,u3:p3」のようにカンマ区切りで複数指定</td><td>set gradio authentication like "username:password"; or comma-delimit multiple like "u1:p1,u2:p2,u3:p3"</td></tr><tr><td>--gradio-auth-path</td><td>GRADIO_AUTH_PATH</td><td>None</td><td>radio認証ファイルパスを「/path/to/auth/file」のように設定する。--gradio-authと同じフォーマット。</td><td>set gradio authentication file path ex. "/path/to/auth/file" same auth format as --gradio-auth</td></tr><tr><td>--disable-console-progressbars</td><td>None</td><td>False</td><td>プログレスバーをコンソールに表示しない</td><td>do not output progressbars to console</td></tr><tr><td>--enable-console-prompts</td><td>None</td><td>False</td><td>txt2imgおよびimg2imgで生成するときにプロンプトをコンソールに出力する</td><td>print prompts to console when generating with txt2img and img2img</td></tr><tr><td>--api</td><td>None</td><td>False</td><td>APIを使用してWebUIを起動する</td><td>launch webui with API</td></tr><tr><td>--api-auth</td><td>API_AUTH</td><td>None</td><td>APIの認証を「ユーザー名:パスワード」または「u1:p1,u2:p2,u3:p3」 のようにコンマ区切りの複数で設定する。</td><td>Set authentication for API like "username:password"; or comma-delimit multiple like "u1:p1,u2:p2,u3:p3"</td></tr><tr><td>--api-log</td><td>None</td><td>False</td><td>すべてのAPIリクエストのロギングをする</td><td>enable logging of all API requests</td></tr><tr><td>--nowebui</td><td>None</td><td>False</td><td>UIなしでAPIのみを起動する</td><td>only launch the API, without the UI</td></tr><tr><td>--ui-debug-mode</td><td>None</td><td>False</td><td>UIの起動高速化するためにモデルを読み込まない</td><td>Don't load model to quickly launch UI</td></tr><tr><td>--device-id</td><td>DEVICE_ID</td><td>None</td><td>使用するデフォルトのCUDAデバイスを選択する(export CUDA_VISIBLE_DEVICES=0,1などが必要になる場合あり)</td><td>Select the default CUDA device to use (export CUDA_VISIBLE_DEVICES=0,1,etc might be needed before)</td></tr><tr><td>--administrator</td><td>None</td><td>False</td><td>管理者権限</td><td>Administrator rights</td></tr><tr><td>--cors-allow-origins</td><td>CORS_ALLOW_ORIGINS</td><td>None</td><td>コンマ区切りリスト(空白無し)で許可されたCORSオリジン(?)</td><td>Allowed CORS origin(s) in the form of a comma-separated list (no spaces)</td></tr><tr><td>--cors-allow-origins-regex</td><td>CORS_ALLOW_ORIGINS_REGEX</td><td>None</td><td>正規表現で許可されたCORSオリジン(?)</td><td>Allowed CORS origin(s) in the form of a single regular expression</td></tr><tr><td>--tls-keyfile</td><td>TLS_KEYFILE</td><td>None</td><td>一部TLSを有効にする。全機能を動作させるには--tls-certfileが必要</td><td>Partially enables TLS, requires --tls-certfile to fully function</td></tr><tr><td>--tls-certfile</td><td>TLS_CERTFILE</td><td>None</td><td>一部TLSを有効にする。 全機能を動作させるには--tls-keyfileが必要</td><td>Partially enables TLS, requires --tls-keyfile to fully function</td></tr><tr><td>--server-name</td><td>SERVER_NAME</td><td>None</td><td>サーバーのホスト名を設定する</td><td>Sets hostname of server</td></tr><tr><td>--gradio-queue</td><td>None</td><td>False</td><td>gradioキューを使用する。試験的オプション。Restart UIボタンが動作しなくなる。</td><td>Uses gradio queue; experimental option; breaks restart UI button</td></tr><tr><td>--skip-version-check</td><td>None</td><td>False</td><td>Torchとxformersのバージョンを確認しない</td><td>Do not check versions of torch and xformers</td></tr><tr><td>--no-hashing</td><td>None</td><td>False</td><td>チェックポイントのSHA256ハッシュ計算を無効にして、読み込み速度を向上させる</td><td>disable sha256 hashing of checkpoints to help loading performance</td></tr><tr><td>▼パフォーマンス｜PERFORMANCE</td><td></td><td></td><td></td><td></td></tr><tr><td>--xformers</td><td>None</td><td>False</td><td>クロスアテンションレイヤーのxformersを有効にする</td><td>enable xformers for cross attention layers</td></tr><tr><td>--reinstall-xformers</td><td>None</td><td>False</td><td>xformersを強制的に再インストールする。アップグレードには便利だが、作業が完了したら引数を削除しよう(繰り返し再インストールされる)</td><td>force reinstall xformers. Useful for upgrading - but remove it after upgrading or you'll reinstall xformers perpetually.</td></tr><tr><td>--force-enable-xformers</td><td>None</td><td>False</td><td>確認用コードが実行可能と判断するかどうかに関係なく、クロスアテンションレイヤーでxformersを有効にする。これが機能しなくてもバグを報告しないでね</td><td>enable xformers for cross attention layers regardless of whether the checking code thinks you can run it; do not make bug reports if this fails to work</td></tr><tr><td>--xformers-flash-attention</td><td>None</td><td>False</td><td>Flash Attentionでxformersを有効にして再現性を向上させる(SD2.x系モデルで利用可能)</td><td>enable xformers with Flash Attention to improve reproducibility (supported for SD2.x or variant only)</td></tr><tr><td>--opt-split-attention</td><td>None</td><td>False</td><td>Doggettxのクロスアテンションレイヤーの最適化を強制的に有効にする。CUDA対応システムではデフォルトで有効。</td><td>force-enables Doggettx's cross-attention layer optimization. By default, it's on for cuda enabled systems.</td></tr><tr><td>--opt-split-attention-invokeai</td><td>None</td><td>False</td><td>InvokeAI のクロスアテンションレイヤー最適化を強制的に有効にする。デフォルトではCUDAが利用できないときに有効化される。</td><td>force-enables InvokeAI's cross-attention layer optimization. By default, it's on when cuda is unavailable.</td></tr><tr><td>--opt-split-attention-v1</td><td>None</td><td>False</td><td>検出できるすべてのVRAMを消費しない古いバージョンのスプリットアテンション最適化を有効にする</td><td>enable older version of split attention optimization that does not consume all the VRAM it can find</td></tr><tr><td>--opt-sub-quad-attention</td><td>None</td><td>False</td><td>メモリ効率の高いサブ2次クロスアテンション層の最適化を実現</td><td>enable memory efficient sub-quadratic cross-attention layer optimization</td></tr><tr><td>--sub-quad-q-chunk-size</td><td>SUB_QUAD_Q_CHUNK_SIZE</td><td>1024</td><td>使用するサブ 2 次クロスアテンション層最適化のクエリチャンクサイズ</td><td>query chunk size for the sub-quadratic cross-attention layer optimization to use</td></tr><tr><td>--sub-quad-kv-chunk-size</td><td>SUB_QUAD_KV_CHUNK_SIZE</td><td>None</td><td>使用するサブ2次クロスアテンション層最適化のkVチャンクサイズ</td><td>kv chunk size for the sub-quadratic cross-attention layer optimization to use</td></tr><tr><td>--sub-quad-chunk-threshold</td><td>SUB_QUAD_CHUNK_THRESHOLD</td><td>None</td><td>チャンクを使用するためのサブ2次クロスアテンション層最適化のVRAMしきい値の割合</td><td>the percentage of VRAM threshold for the sub-quadratic cross-attention layer optimization to use chunking</td></tr><tr><td>--opt-sdp-attention</td><td>None</td><td>False</td><td>スケールドドットプロダクトによるクロスアテンションレイヤー最適化を有効にする PyTorch 2.*が必要</td><td>enable scaled dot product cross-attention layer optimization; requires PyTorch 2.*</td></tr><tr><td>--opt-sdp-no-mem-attention</td><td>None</td><td>False</td><td>メモリ効率の良いアテンションをせず、スケールドドットプロダクトによるクロスアテンションレイヤーの最適化を有効にする 画像生成を決定論的にする（同シードで繰り返し生成しても同じ画像を生成する） PyTorch 2.*が必要</td><td>enable scaled dot product cross-attention layer optimization without memory efficient attention, makes image generation deterministic; requires PyTorch 2.*</td></tr><tr><td>--opt-channelslast</td><td>None</td><td>False</td><td>4Dテンソルの代替レイアウトを有効にする。Tensorコア(16xx以上)を搭載したNVIDIA製GPUでのみ推論が速くなる可能性がある。</td><td>Enable alternative layout for 4d tensors, may result in faster inference only on Nvidia cards with Tensor cores （16xx and higher）</td></tr><tr><td>--disable-opt-split-attention</td><td>None</td><td>False</td><td>クロスアテンションレイヤーの最適化を強制的に無効にします</td><td>force-disables cross-attention layer optimization</td></tr><tr><td>--disable-nan-check</td><td>None</td><td>False</td><td>生成された画像/潜在空間でNaNが発生したか確認しない。CIでチェックポイントなしで実行するのに便利</td><td>do not check if produced images/latent spaces have nans; useful for running without a checkpoint in CI</td></tr><tr><td>--use-cpu</td><td>{all, sd, interrogate, gfpgan, bsrgan, esrgan, scunet, codeformer}</td><td>None</td><td>指定されたモジュールのTorchデバイスとしてCPUを使用</td><td>use CPU as torch device for specified modules</td></tr><tr><td>--no-half</td><td>None</td><td>False</td><td>モデルをfp16に切り替えない</td><td>do not switch the model to 16-bit floats</td></tr><tr><td>--precision</td><td>{full,autocast}</td><td>autocast</td><td>指定した精度で推論する</td><td>evaluate at this precision</td></tr><tr><td>--no-half-vae</td><td>None</td><td>False</td><td>VAEモデルをfp16に変換しない。</td><td>do not switch the VAE model to 16-bit floats</td></tr><tr><td>--upcast-sampling</td><td>None</td><td>False</td><td>アップキャストサンプリング。--no-halfでは効果なし。通常、--no-halfと同様の結果を生成し、より少ないメモリで動作しパフォーマンスが向上する。</td><td>upcast sampling. No effect with --no-half. Usually produces similar results to --no-half with better performance while using less memory.</td></tr><tr><td>--medvram</td><td>None</td><td>False</td><td>Stable Diffusionモデルの最適化を有効にし、若干の速度低下と引き換えにVRAM消費量を減らす</td><td>enable stable diffusion model optimizations for sacrificing a little speed for low VRM usage</td></tr><tr><td>--lowvram</td><td>None</td><td>False</td><td>Stable Diffusionモデルの最適化を有効にし、大幅な速度低下と引き換えにVRAM消費量を大幅に減らす</td><td>enable stable diffusion model optimizations for sacrificing a lot of speed for very low VRM usage</td></tr><tr><td>--lowram</td><td>None</td><td>False</td><td>Stable DiffusionチェックポイントのウェイトをRAMの代わりにVRAMに読み込む</td><td>load stable diffusion checkpoint weights to VRAM instead of RAM</td></tr><tr><td>--always-batch-cond-uncond</td><td>None</td><td>False</td><td>--medvram または --lowvram でメモリを節約するために有効になっている cond/uncond バッチ処理を無効にする</td><td>disables cond/uncond batching that is enabled to save memory with --medvram or --lowvram</td></tr><tr><td>▼外観ほか｜FEATURES</td><td></td><td></td><td></td><td></td></tr><tr><td>--autolaunch</td><td>None</td><td>False</td><td>起動時にシステムのデフォルトブラウザでwebuiを開く</td><td>open the webui URL in the system's default browser upon launch</td></tr><tr><td>--theme</td><td>None</td><td>Unset</td><td>指定したテーマ(「ライト」または「ダーク」)でWebUIを開く。指定しない場合は、ブラウザ既定のテーマを使用する。</td><td>open the webui with the specified theme ("light" or "dark"). If not specified, uses the default browser theme</td></tr><tr><td>--use-textbox-seed</td><td>None</td><td>False</td><td>UIのシードにテキストボックスを使用します(アップ/ダウンはありませんが、長いシードを入力することは可能です)</td><td>use textbox for seeds in UI (no up/down, but possible to input long seeds)</td></tr><tr><td>--disable-safe-unpickle</td><td>None</td><td>False</td><td>PyTorchモデルに悪意のあるコードが含まれていないかどうかのチェックを無効にする</td><td>disable checking pytorch models for malicious code</td></tr><tr><td>--ngrok</td><td>NGROK</td><td>None</td><td>ngrok authToken, gradioの--shareの代替</td><td>ngrok authtoken, alternative to gradio --share</td></tr><tr><td>--ngrok-region</td><td>NGROK_REGION</td><td>us</td><td>ngrokを開始するリージョン。</td><td>The region in which ngrok should start.</td></tr><tr><td>▼廃止されたオプション｜DEFUNCT OPTIONS</td><td></td><td></td><td></td><td></td></tr><tr><td>--show-negative-prompt</td><td>None</td><td>False</td><td>何もしない</td><td>does not do anything</td></tr><tr><td>--deepdanbooru</td><td>None</td><td>False</td><td>何もしない</td><td>does not do anything</td></tr><tr><td>--unload-gfpgan</td><td>None</td><td>False</td><td>何もしない</td><td>does not do anything.</td></tr><tr><td>--gradio-img2img-tool</td><td>GRADIO_IMG2IMG_TOOL</td><td>None</td><td>何もしない</td><td>does not do anything</td></tr><tr><td>--gradio-inpaint-tool</td><td>GRADIO_INPAINT_TOOL</td><td>None</td><td>何もしない</td><td>gdoes not do anything</td></tr></tbody></table>
+<br>
+</div></div><div id="content_block_12" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> うまく動かないとき <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_12-body" class="wiki-section-body-1">
+<br>
+webui.batで起動すると、webui-user.batで設定した内容をすべて無視して起動することが出来る。<br>
+もしそれで起動するならwebui-user.batに書いた内容が原因と思われる。<br>
+</div></div><div id="content_block_14" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> PYTHON <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_14-body" class="wiki-section-body-1">
+<br>
+普通は空でいい。<br>
+PATHの通ってないPython.exeを使いたければフルパスで指定することができる。<br>
+</div></div><div id="content_block_16" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> GIT <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_16-body" class="wiki-section-body-1">
+<br>
+空を推奨。<br>
+PATHの通ってないGITを指定しても動かない。(バグだと思う)<br>
+</div></div><div id="content_block_18" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> VENV <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_18-body" class="wiki-section-body-1">
+<br>
+空を推奨。webui直下にvenvを作る。<br>
+この場所を変更したい時に入れる。<br>
+</div></div><div id="content_block_20" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> COMMANDLINE_ARGS <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_20-body" class="wiki-section-body-1">
+<br>
+set COMMANDLINE_ARGS=の右に目的のパラメータを入力します<br>
+複数ある時は半角スペースで区切ります。<br>
+<blockquote id="content_block_21">
+set COMMANDLINE_ARGS=--xformers --opt-channelslast
+</blockquote>
+<br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+<br>
+以下はよく使うオプションのみ紹介。<br>
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_8_2"> --xformers (高速化/VRAM消費減) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+<br>
+おすすめ。20%以上高速化する。<br>
+WindowsではPython 3.10が必要<br>
+Colabではcondaで入れると入れやすい。<br>
+出力画像が毎回ごくわずかに変化するが、品質が変化するわけではない。<br>
+出力の比較をしたので詳細はこちらへ↓<br>
+<a href="https://seesaawiki.jp/nai_ch/d/xformers%a4%ce%b8%a1%be%da">xformersの検証</a><br>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_8_3"> --opt-channelslast (高速化) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+<br>
+1111のWikiのよると、Tensor Coreを搭載したNVIDIA製GPU(GTX16以上)で高速化が期待できるとのこと。<br>
+NVIDIA RTX系のグラボは速くなることを確認済み。<br>
+環境によっては効果が無かったり逆に遅くなったりするらしいので比較検討しましょう。<br>
+<br>
+<del>先に以下の設定をやる。</del><br>
+<b>（2023/04/14 確認）現在はwebui-user.batに付けるだけでよくなった模様</b><br>
+<div id="content_block_26">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_26-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p> 旧・設定</p></div>
+<div style="display:none" id="content_block_26-inside" class="toggle-display">
+コマンドプロンプトを起動<br>
+stable-diffusion-webui\venv\Scripts\activate.bat を実行<br>
+<pre id="content_block_27" class="BOX">
+pip install -U -I --no-deps torch==1.12.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+</pre>
+<br>
+<pre id="content_block_28" class="BOX">
+https://pomf2.lain.la/f/5u34v576.7z
+</pre>
+ファイルを stable-diffusion-webui\venv\Lib\site-packages\torch\lib にコピペ<br>
+<br>
+<pre id="content_block_29" class="BOX">
+pip install -U -I --no-deps torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+</pre>
+</div>
+</div>
+</div></div><div id="content_block_32" class="wiki-section-2"><div class="title-2"><h4 id="content_8_4"> --no-half-vae (画像真っ黒対策) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_32-body" class="wiki-section-body-2">
+<br>
+VAEやVAE埋め込みモデルを使っている時、たまに画像が真っ黒になる問題を修正する。<br>
+fp16ではなくfp32を使う。<br>
+VRAM不足だけでなく、Anything+VAEの環境とかで真っ黒になりがち。<br>
+</div></div><div id="content_block_34" class="wiki-section-2"><div class="title-2"><h4 id="content_8_5"> --no-half (16XXの高速化) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_34-body" class="wiki-section-body-2">
+<br>
+以前は1650、1660、1660Tiで画像が必ず真っ黒になってしまう問題があり、<br>
+その対策としてこのオプションを用いていた。<br>
+今はこのオプションが無くても真っ黒にならなくなったが速度が低下するため、<br>
+引き続きこのオプションを付けたほうが良さそう(環境によるのかも)<br>
+<br>
+意味としては、モデルでfp16ではなくfp32を使う。<br>
+半精度浮動小数点数(fp16)はハードウェアに搭載されているのだが、<br>
+cudaの新しいバージョンでは機能しなくなってしまっている(直らんのか?)<blockquote id="content_block_35">
+--precision full も一緒に使う事になっているが、実は無くても動く。
+</blockquote>
+<br>
+fp16が動く環境で使うと余計にVRAMを使うので要注意。<br>
+</div></div><div id="content_block_37" class="wiki-section-2"><div class="title-2"><h4 id="content_8_6"> --medvram もしくは --lowvram (VRAMの少ないGPUでの実行) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_37-body" class="wiki-section-body-2">
+<br>
+VRAMの少ないGPUでは設定の変更が必要な場合があります。<br>
+これらのパラメータは、より大きな画像やバッチサイズを作成したい通常のユーザーにも役立ちます<br>
+いくつかの変更により、VRAM使用量を大幅に削減することが可能です。<br>
+<br>
+4GBのVRAMがあり、512x512(またはそれ以上)の画像を作成する場合：--medvram<br>
+2GBのVRAMの場合：--lowvram<br>
+これらのいずれかで「メモリ不足」エラーが発生している場合は、次の引数を追加します：--always-batch-cond-uncond --opt-split-attention<br>
+<br>
+VRAMが足りている環境で使うと速度が落ちるので要注意。<br>
+medvramをつけると生成開始/終了に時間がかかるようになるのでBatch sizeを増やすと速度低下をある程度相殺できる。
+</div></div><div id="content_block_39" class="wiki-section-2"><div class="title-2"><h4 id="content_8_7"> --ckpt-dir <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_39-body" class="wiki-section-body-2">
+<br>
+モデルの保存先を指定する。<br>
+デフォルトは models/Stable-diffusion<br>
+マージ沼をRamDiskやHDDで遊ぶお供に。<br>
+</div></div><div id="content_block_41" class="wiki-section-2"><div class="title-2"><h4 id="content_8_8"> --gradio-img2img-tool color-sketch <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_41-body" class="wiki-section-body-2">
+<br>
+わざわざ他のソフトで編集するのが面倒な人は起動引数にこれを足して再起動するとimg2imgの画像編集にカラーパレットがつく<br>
+<span style="color:#808080;">スポイトツールもあるから肌の色を取ってちょっと服を塗りつぶして脱がすとかならこれで十分</span><br>
+スポイトツールは確認したけど見当たらない。(環境による?)
+</div></div><div id="content_block_43" class="wiki-section-2"><div class="title-2"><h4 id="content_8_9"> --share --gradio-auth user:password (Colabなどクラウド用) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_43-body" class="wiki-section-body-2">
+<ul id="content_block_44" class="list-1">
+<ul class="list-2">
+<li>shareでインターネットごしにアクセス出来るURLを作成する。</li>
+<li>gradio-authで使用するためのユーザー名とパスワードを設定する。</li>
+</ul>
+
+</ul>
+userとpasswordは任意に変更する。<br>
+</div></div><div id="content_block_46" class="wiki-section-2"><div class="title-2"><h4 id="content_8_10"> --listen --enable-insecure-extension-access (LAN用) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_46-body" class="wiki-section-body-2">
+<ul id="content_block_47" class="list-1">
+<ul class="list-2">
+<li>listenで自分のPC以外からのアクセスを受け付ける。</li>
+<li>enable-insecure-extension-accessで、自分のPC以外からのアクセス時にExtensionsのインストールを許可する。</li>
+</ul>
+
+</ul>
+用途に応じて--shareと使い分けると良さそう。<br>
+WiFiの繋がったスマホでポチポチしたいだけならこれで十分。<br>
+</div></div><div id="content_block_49" class="wiki-section-2"><div class="title-2"><h4 id="content_8_11"> --skip-torch-cuda-test (GPUのかわりにCPUを使う(非推奨)) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_49-body" class="wiki-section-body-2">
+<br>
+CPUがfp16をサポートしていない場合エラーが出るので、<blockquote id="content_block_50">
+--no-half --no-half-vae
+</blockquote>
+も追加で設定する。<br>
+<br>
+3060比で100倍くらい時間かかるようになるけど動く。<br>
+</div></div><div id="content_block_52" class="wiki-section-2"><div class="title-2"><h4 id="content_8_12"> --autolaunch (自動的にブラウザを立ち上げる) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_52-body" class="wiki-section-body-2">
+<br>
+既定のブラウザで1111が開く。<br>
+<br>
+<a href="http://127.0.0.1:7860/" class="outlink">http://127.0.0.1:7860/</a><br>
+をブラウザにコピペする手間が省ける。<br>
+</div></div><div id="content_block_54" class="wiki-section-2"><div class="title-2"><h4 id="content_8_13"> --reinstall-xformers (xformersの再インストール) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_54-body" class="wiki-section-body-2">
+<br>
+10xxシリーズ(Pascal)以降のNVIDIA製GPUを使っているなら<blockquote id="content_block_55">
+--reinstall-xformers --xformers
+</blockquote>
+と指定することで xformers を再インストールできる。<br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Troubleshooting#cuda-error-no-kernel-image-is-available-for-execution-on-the-device-after-enabling-xformers" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+</div></div><div id="content_block_57" class="wiki-section-2"><div class="title-2"><h4 id="content_8_14"> --disable-nan-check <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_57-body" class="wiki-section-body-2">
+NaNチェックを無効にして生成時に出るNansExceptionで画像生成が止まらないようにする。<br>
+Batch Count上げて連続生成してる時に勝手に止まらなくなるので便利。<br>
+有効にすると、従来どおりの黒画像が出る。<br>
+</div></div><div id="content_block_59" class="wiki-section-2"><div class="title-2"><h4 id="content_8_15"> --opt-sdp-no-mem-attentionまたは--opt-sdp-attention <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_8_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_59-body" class="wiki-section-body-2">
+<b>Torch2限定</b><br>
+xformersと同じく20%前後高速化し、出力にわずかな揺らぎが生じる。VRAM消費が多くなる可能性がある。<br>
+AMD Radeon,Intel Arcでも使える。<br>
+<br>
+<br>
+</div></div><div id="content_block_61" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> PYTORCH_CUDA_ALLOC_CONF <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_61-body" class="wiki-section-body-1">
+<br>
+VRAM不足の時に使えそうだけど最適な値はよくわからん<br>
+<a href="https://pytorch.org/docs/stable/notes/cuda.html#memory-management" class="outlink">https://pytorch.org/docs/stable/notes/cuda.html#me...</a><br>
+<br>
+108スレの176<br>
+<pre id="content_block_62" class="PLAIN-BOX">
+結局
+・batファイルに　set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.6,max_split_size_mb:24 を追加
+・ブラウザのハードウェアアクセサレータをオフ
+・PC再起動
+でtrainはじめて今ブンブン回ってるで。 
+</pre>
+</div></div><div id="content_block_64" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> (隠し) ACCELERATE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_64-body" class="wiki-section-body-1">
+<blockquote id="content_block_65">
+SET ACCELERATE="True"
+</blockquote>
+<br>
+と入れると、accelerateを使う。<br>
+<br>
+まだ実力のほどはわからないが、<br>
+そのうちfp16/fp32に起因するエラーが減ったり、<br>
+マルチCPUに対応したりするのかも知れない。<br>
+</div></div><div id="content_block_67" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> 廃止された引数 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_67-body" class="wiki-section-body-1">
+</div></div><div id="content_block_69" class="wiki-section-2"><div class="title-2"><h4 id="content_11_16">  --deepdanbooru <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991769&amp;part=content_11_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_69-body" class="wiki-section-body-2">
+img2imgでDeepdanbooruを使う。画像からDanbooruタグを推定する機能。<br>
+標準機能になったので指定しても何も起こらない。
+</div></div>
+</div>

@@ -1,0 +1,41 @@
+<div class="user-area">
+<a href="https://seesaawiki.jp/nai_ch/d/%cc%a4%c8%af%b8%ab%a4%ce%a5%d7%a5%ed%a5%f3%a5%d7%a5%c8">未発見のプロンプト</a> &gt; 複数登場の呪文の作り方<br>
+<br>
+基本的な話かもしれないけど、困ってましてキャラの構図で二人とか出す場合の呪文の作り方を教えて欲しいです<br>
+呪文としては、出したい構図等,{1人目特徴},{2人目特徴}みたいな式になるんですか？<br>
+<br>
+追記　2キャラの出し方についてコメントで中国ニキが説明してくれたので書いておきます！<br>
+<br>
+2girls_A_and_B，A girl_have_blonde twintails_{hair bow}_hotpink eyes_large breasts_{detached collar}_{crease}_{{red chinese clothes}}_white thighhighs，{master piece}, {extremely detailed},highly detailed,B girl_have_large breasts_{crease}__{pantyhose}_{{black_chinese_clothes}}__bare shoulders_{hair flower}_bangs_very long black hair_{green streaked hair}_{{{green eyes}}},<br>
+<br>
+2キャラを登場させる場合、2girls_A_and_Bでまず、AとBのキャラであることを指定し、各特長をA girl_haveの後に_で特徴を書いていくようです。さらに表示されていない箇所では｛｝を使用し強調することで表示できるようです。<br>
+まだ実験はしていませんが、貼ってくれている構文を出力してみるとかなり正確に表示されているので、取り急ぎ書いておきます！<br>
+中国のニキありがとうやで！<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">追記（NovelAI Diffusion V4.0以降） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4979972&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+2025/03/01 にリリースされた NovelAI Diffusion V4.0 では、複数人物を個別に指定できるようになりました。<br>
+詳しくは公式ブログの<a href="https://blog.novelai.net/novelai-diffusion-v4-full%E7%89%88-%E6%AD%A3%E5%BC%8F%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-e1d9ba4057dd" class="outlink" rel="nofollow">この記事</a>を見ていただくとして、注意点をいくつか記述します。<br>
+<ul id="content_block_2" class="list-1">
+<li> 「人物」とは書かれていますが、実は人物以外の物品も指定可能です。
+<ul class="list-2">
+<li> なお、便宜上以下の記述では物品を指定した場合を含めて人物で統一します。</li>
+</ul>
+</li>
+<li> 既存のプロンプト入力欄では上記記事に書かれた方法での人物の位置指定はできません。
+<ul class="list-2">
+<li> したがって、既存のプロンプトには背景のプロンプトを書き、「キャラクターを追加」で現れるプロンプト入力欄に人物のプロンプトを書くという使い方になります。</li>
+</ul>
+</li>
+<li> 位置指定は複数の人物がいる場合に有効で、人物が単体の場合は中央固定です。</li>
+<li> 現在のところ、人物ごとの画風設定はできないようです。また、以下については完ぺきとにはいかず、時折混ざることがあります（分ける方法が乏しかった以前よりは格段に進歩していますが）。</li>
+</ul>
+<blockquote id="content_block_3">
+ キャラクター同士の特徴が混ざり合ってしまう問題も解消されました。
+</blockquote>
+例）「夜の森で幼女二人が協力して魔法陣を発動させている」という絵（夜の森部分を既存で描写、幼女2人と魔法陣を「人物」として追加）<ul id="content_block_4" class="list-1">
+<li> 成功例： <a href="https://image01.seesaawiki.jp/n/h/nai_ch/2ca75758facf681d.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/2ca75758facf681d.png" border="0" style="max-height:20%;max-width:20%"></a></li>
+<li> 混じってしまった例： <a href="https://image02.seesaawiki.jp/n/h/nai_ch/d98ab65736a296de.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/d98ab65736a296de.png" border="0" style="max-width:20%;max-height:20%"></a></li>
+</ul>
+</div></div>
+</div>

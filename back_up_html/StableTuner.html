@@ -1,0 +1,135 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1">概要</a></li>
+<li class="list-1"><a href="#content_2">導入方法</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> conda無し版(非公式)</a></li>
+<li class="list-2"><a href="#content_2_2"> conda環境での構築(公式手順)</a>
+<ul>
+<li class="list-3"><a href="#content_2_2_1">conda(Anaconda/Miniconda)環境のインストール</a></li>
+<li class="list-3"><a href="#content_2_2_2">StableTuner のインストール</a></li>
+<li class="list-3"><a href="#content_2_2_3">StableTuner 初期設定</a></li>
+<li class="list-3"><a href="#content_2_2_4">StableTuner の実行</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3">StableTuner の設定</a>
+<ul>
+<li class="list-2"><a href="#content_3_3">General Settings タブ</a></li>
+<li class="list-2"><a href="#content_3_4">Trainer Setting タブ</a></li>
+<li class="list-2"><a href="#content_3_5">Dataset Setting タブ</a></li>
+<li class="list-2"><a href="#content_3_6">Sampling Settings タブ</a></li>
+<li class="list-2"><a href="#content_3_7">Data タブ</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4">学習の開始</a></li>
+<li class="list-1"><a href="#content_5">その他項目</a>
+<ul>
+<li class="list-2"><a href="#content_5_8">Model Playground タブ</a></li>
+<li class="list-2"><a href="#content_5_9">Toolbox タブ</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/xUnYk_3IsC.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/xUnYk_3IsC.png" border="0" width="551" height="309"></a><br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+DreamBoothと同様に、学習内容をモデルデータに埋め込む<br>
+設定が簡単で高性能、あと処理速度がわりと速いのが特徴<br>
+<br>
+公式　<a href="https://github.com/devilismyfriend/StableTuner" class="outlink">https://github.com/devilismyfriend/StableTuner</a><br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2">導入方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> conda無し版(非公式) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<ul id="content_block_6" class="list-1">
+<li> <a href="https://github.com/aka7774/elemental_code/blob/main/tools/install_StableTuner_noconda.bat" class="outlink">https://github.com/aka7774/elemental_code/blob/mai...</a></li>
+<li> インストールしたいフォルダで実行する(中に自動的にStableTunerフォルダを作る)</li>
+<li> うまくいかんかったら何回か実行するとそのうちうまくいくかも</li>
+<li> <span style="color:#ff0000;">起動はstart.batから</span></li>
+<li> pythonとgitにPATH通ってない人は要編集</li>
+</ul>
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> conda環境での構築(公式手順) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+</div></div><div id="content_block_10" class="wiki-section-3"><div class="title-3"><h5 id="content_2_2_1">conda(Anaconda/Miniconda)環境のインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_2_2_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_10-body" class="wiki-section-body-3">
+ここではminicondaを例に説明<br>
+<br>
+Conda 公式サイトの Miniconda のページからインストーラーをダウンロード<br>
+<a href="https://docs.conda.io/en/latest/miniconda.html" class="outlink">https://docs.conda.io/en/latest/miniconda.html</a> より<br>
+Windows Miniconda3 Windows 64-bit をダウンロードし、インストール<br>
+</div></div><div id="content_block_12" class="wiki-section-3"><div class="title-3"><h5 id="content_2_2_2">StableTuner のインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_2_2_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_12-body" class="wiki-section-body-3">
+<pre id="content_block_13" class="BOX">
+git clone https://github.com/devilismyfriend/StableTuner
+</pre>
+</div></div><div id="content_block_15" class="wiki-section-3"><div class="title-3"><h5 id="content_2_2_3">StableTuner 初期設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_2_2_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_15-body" class="wiki-section-body-3">
+condaのインストール時にインストールpathを変更した場合<br>
+<div id="content_block_16">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_16-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_16-inside" class="toggle-display">
+StableTunerのフォルダに下記ファイルを作成<br>
+<pre id="content_block_17" class="BOX">
+custom_conda_path.txt
+</pre>
+中身はcondaのパスを記載<br>
+<pre id="content_block_18" class="BOX">
+D:\miniconda3 
+</pre>
+例はD:\miniconda3 にインストールした場合
+</div>
+</div>
+<br>
+インストールバッチを実行<br>
+<pre id="content_block_20" class="BOX">
+install_stabletuner.bat
+</pre>
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5 id="content_2_2_4">StableTuner の実行 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_2_2_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+実行ファイルを起動<br>
+<pre id="content_block_23" class="BOX">
+StableTuner.cmd
+</pre>
+</div></div><div id="content_block_25" class="wiki-section-1"><div class="title-1"><h3 id="content_3">StableTuner の設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_25-body" class="wiki-section-body-1">
+基本はデフォルト値で良い<br>
+</div></div><div id="content_block_27" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3">General Settings タブ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_27-body" class="wiki-section-body-2">
+<table id="content_block_28"><tbody><tr><td>Input Model / HuggingFace Repo</td><td>学習元となるモデルファイルのpathを入力<br>ファイル選択時にSD2形式か問われるので「はい」か「いいえ」を選択</td></tr><tr><td>VAE model path / HuggingFace Repo</td><td>空欄でも良い</td></tr><tr><td>Output Path</td><td>作成したモデルの出力path</td></tr><tr><td>Comvert to CKPT after training</td><td>トレーニング後にモデルをckptに変換する</td></tr><tr><td>Cloud Training Export</td><td>ONにすると下の Start Training! ボタンが Export for Cloud! に変わる<br>クラウドで学習してる場合に使用出来る？（未確認）</td></tr></tbody></table>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4">Trainer Setting タブ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+<table id="content_block_31"><tbody><tr><td>Train Batch Size</td><td>大きくすると一度に学習する枚数が増えるが、必要以上に大きくすると物凄く処理に時間が掛かる<br>RTX 3090 ならデフォルトの24で動くが多少下げた方がいいかも<br>VRAMが少ない場合は1や2まで下げる事</td></tr><tr><td>Train Epochs</td><td>学習回数を何セット廻すか<br>基本はデフォルトの100で良い<br>学習データにも寄るが300も廻すと過学習になる</td></tr><tr><td>Train Text Encoder</td><td>OFFにすると精度は下がるが処理速度があがる</td></tr></tbody></table>
+</div></div><div id="content_block_33" class="wiki-section-2"><div class="title-2"><h4 id="content_3_5">Dataset Setting タブ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_3_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_33-body" class="wiki-section-body-2">
+基本はデフォルトのままでOK<br>
+</div></div><div id="content_block_35" class="wiki-section-2"><div class="title-2"><h4 id="content_3_6">Sampling Settings タブ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_3_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_35-body" class="wiki-section-body-2">
+<table id="content_block_36"><tbody><tr><td>Save and sample Every N Epochs</td><td>学習結果のデータを何Epoch毎に出力するか<br>Train Epochsを増やしてる場合などは、適度に調整</td></tr></tbody></table>
+</div></div><div id="content_block_38" class="wiki-section-2"><div class="title-2"><h4 id="content_3_7">Data タブ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_3_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_38-body" class="wiki-section-body-2">
+学習元データの設定<br>
+Add Conceptボタンから作成し、クリックで設定<table id="content_block_39"><tbody><tr><td>Dataset Token/Name</td><td>学習セットの名前</td></tr><tr><td>Data Path</td><td>学習用画像のあるディレクトリを指定する</td></tr><tr><td>Class Name</td><td>正則化Classの名前</td></tr><tr><td>Class Path</td><td>正則化画像のあるディレクトリを指定する</td></tr></tbody></table>
+設定したらsaveで保存する<br>
+</div></div><div id="content_block_41" class="wiki-section-1"><div class="title-1"><h3 id="content_4">学習の開始 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_41-body" class="wiki-section-body-1">
+Start Training! ボタンで学習開始<br>
+</div></div><div id="content_block_43" class="wiki-section-1"><div class="title-1"><h3 id="content_5">その他項目 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_43-body" class="wiki-section-body-1">
+</div></div><div id="content_block_45" class="wiki-section-2"><div class="title-2"><h4 id="content_5_8">Model Playground タブ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_5_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_45-body" class="wiki-section-body-2">
+作成したデータの確認やckptへの変換が出来る
+</div></div><div id="content_block_47" class="wiki-section-2"><div class="title-2"><h4 id="content_5_9">Toolbox タブ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008141&amp;part=content_5_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_47-body" class="wiki-section-body-2">
+作成データをckptやSafetensorsに変換する場合に使用
+</div></div>
+</div>

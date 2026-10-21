@@ -1,0 +1,63 @@
+<div class="user-area">
+<div id="content_block_1">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_1-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>編集用コードテンプレート</p></div>
+<div style="display:none" id="content_block_1-inside" class="toggle-display">
+<div id="content_block_2" class="wiki-section-3"><div class="title-3"><h5> リファレンス</h5></div>
+<div id="content_block_2-body" class="wiki-section-body-3">
+<ul id="content_block_3" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/wiki%b2%fe%c1%b1">wiki改善</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/wiki%ca%d4%bd%b8%ca%fd%cb%a1">wiki編集方法</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/Wiki%5fEditingResources">Wiki_EditingResources</a></li>
+</ul>
+</div></div><div id="content_block_5" class="wiki-section-3"><div class="title-3"><h5> テーブルテンプレート</h5></div>
+<div id="content_block_5-body" class="wiki-section-body-3">
+▼ プロンプト用：汎用<br>
+<br>
+■PromptTable_t1_v1.0.0<br>
+R18呪文全文より引用。Noを追加<br>
+<pre id="content_block_6" class="BOX">
+{| class="nanj_prompt_table edit sort"
+|~No|~w(100px):意味|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):備考|サンプル|
+|　|　|　|　|　|　|
+|}
+
+----------------------
+</pre>
+<br>
+<br>
+</div></div><div id="content_block_8" class="wiki-section-3"><div class="title-3"><h5> 編集用コードテンプレートのページを埋め込み表示</h5></div>
+<div id="content_block_8-body" class="wiki-section-body-3">
+<br>
+<b>テーブルを追加したときはこのコードを記載してください</b><br>
+<pre id="content_block_9" class="BOX">
+#include(Wiki_EditingResources)
+</pre>
+<br>
+</div></div><div id="content_block_11" class="wiki-section-3"><div class="title-3"><h5> ページテンプレート</h5></div>
+<div id="content_block_11-body" class="wiki-section-body-3">
+<br>
+▼EditingResources + PromptTable_t1_v1.0.0<br>
+<pre id="content_block_12" class="BOX">
+#include(Wiki_EditingResources)
+
+{| class="nanj_prompt_table edit sort"
+|~No|~w(100px):意味|~w(300px):プロンプト|~w(300px):ネガティブプロンプト|~w(100px):備考|サンプル|
+|　|　|　|　|　|　|
+|}
+
+----------------------
+</pre>
+</div></div>
+</div>
+</div>
+<br>
+<div id="content_block_15" class="wiki-section-3"><div class="title-3"><h5 id="content_0_0_1"> コードの追加方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4992303&amp;part=content_0_0_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_15-body" class="wiki-section-body-3">
+<br>
+<pre id="content_block_16" class="BOX">
+=|(box=textarea)|
+テキスト
+</pre>
+||=
+</div></div>
+</div>

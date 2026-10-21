@@ -1,0 +1,229 @@
+<div class="user-area">
+ローカルを様々な環境で動かす情報<br>
+<br>
+まとめ<ul id="content_block_1" class="list-1">
+<li> Pythonのバージョンは 3.9 3.10 の両対応が良さそう。</li>
+<li> 3.10ではcondaとpipの併用が一応可能そう。</li>
+</ul>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> Linux</a></li>
+<li class="list-1"><a href="#content_2"> WSL2</a></li>
+<li class="list-1"><a href="#content_3"> Radeon</a></li>
+<li class="list-1"><a href="#content_4"> Radeon(Windows)</a>
+<ul>
+<li class="list-2"><a href="#content_4_1"> 検証記録</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> Intel ARC A770</a></li>
+<li class="list-1"><a href="#content_6"> Apple M1</a>
+<ul>
+<li class="list-2"><a href="#content_6_2"> PyTorch</a></li>
+<li class="list-2"><a href="#content_6_3"> CoreML</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_7"> iOS</a></li>
+<li class="list-1"><a href="#content_8"> Android</a></li>
+<li class="list-1"><a href="#content_9"> Intel CPU(OpenVINO)</a></li>
+<li class="list-1"><a href="#content_10"> (参考) Colab</a></li>
+<li class="list-1"><a href="#content_11"> (参考) paperspace</a></li>
+<li class="list-1"><a href="#content_12"> (参考) Windows</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_2" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> Linux <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_2-body" class="wiki-section-body-1">
+<ul id="content_block_3" class="list-1">
+<li> <del>Ubuntu 20.04(22.04でも動くがコンパイルが必要そう)</del></li>
+<li> <del>Python 3.9+conda xformersか、Python+pip(xformersなし)か、Python+pip+xformersコンパイルかの3択</del></li>
+<li> Ubuntu 22.04</li>
+<li> Python 3.10.6
+<ul class="list-2">
+<li> 3.10.10はコンパイル必要</li>
+</ul>
+</li>
+<li> Windows環境よりも多少速くなるらしい</li>
+<li> ゲーム機を兼用するならデュアルブートが必要</li>
+</ul>
+</div></div><div id="content_block_5" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> WSL2 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_5-body" class="wiki-section-body-1">
+<ul id="content_block_6" class="list-1">
+<li> Ubuntu 22.04</li>
+<li> Python 3.10.6
+<ul class="list-2">
+<li> 3.10.10はコンパイル必要</li>
+</ul>
+</li>
+<li> デュアルブートは不要になる</li>
+<li> 仮想化による速度低下よりもLinuxによる速度向上の恩恵のほうが上っぽい</li>
+<li> Windows 10と11で使い方が違う。前提となるバージョンがある</li>
+</ul>
+</div></div><div id="content_block_8" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> Radeon <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_8-body" class="wiki-section-body-1">
+<br>
+PyTorch-DirectMLが楽なので速度的に不利でもそっちを使うようになってきたのかも(エアプ)<br>
+<ul id="content_block_9" class="list-1">
+<li> <a href="https://gist.github.com/reid3333/541fab0eb29d4c9558de748ef91a8238" class="outlink">https://gist.github.com/reid3333/541fab0eb29d4c955...</a></li>
+<li> 1111</li>
+<li> Python 3.10.10</li>
+<li> torch 1.13.1</li>
+</ul>
+</div></div><div id="content_block_11" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> Radeon(Windows) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_11-body" class="wiki-section-body-1">
+<br>
+DirectML版<br>
+<ul id="content_block_12" class="list-1">
+<li> <a href="https://github.com/lshqqytiger/stable-diffusion-webui-directml" class="outlink">https://github.com/lshqqytiger/stable-diffusion-we...</a></li>
+<li> Python 3.10.6？</li>
+<li> torch 2.0.0</li>
+<li> torch-DirectML 0.2.0.dev230426</li>
+</ul>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_4_1"> 検証記録 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_4_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+<ul id="content_block_15" class="list-1">
+<li> VRAMを512MBしか割り当てられないiGPUではブルスクで動かない(4700U)</li>
+<li> G型番でもRadeonのドライバが当たらない環境がある(GeForce搭載だとダメ?)</li>
+</ul>
+<br>
+<div id="content_block_16">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_16-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_16-inside" class="toggle-display">
+<br>
+<div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3> Radeon(Linux)</h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+<ul id="content_block_18" class="list-1">
+<li> <a href="https://hub.docker.com/r/rocm/pytorch/tags" class="outlink">https://hub.docker.com/r/rocm/pytorch/tags</a></li>
+<li> Linux</li>
+<li> Python 3.7(3.8に出来る?)</li>
+<li> PyTorch 1.12.1</li>
+<li> Docker</li>
+<li> xformersは言及なし</li>
+</ul>
+<br>
+安くて省電力でVRAM多くて良さげな、RX 7900 XTX、7900 XTでの学習を夢見て<br>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4> ローカル版の導入</h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5> Linux+ROCm</h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+1. <a href="https://dolls.tokyo/howto-stablediffusion-on-amdradeon/" class="outlink">https://dolls.tokyo/howto-stablediffusion-on-amdra...</a> <br>
+「stable-diffusionのインストール」の直前まで読み、2.へ<br>
+<br>
+2. dockerコンテナ内のPythonをアップデートする<br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs#updating-python-version-inside-docker" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+<br>
+3. <a href="https://dolls.tokyo/howto-install-amd-sdwebui/" class="outlink">https://dolls.tokyo/howto-install-amd-sdwebui/</a><br>
+<br>
+4.NovelAIの再現<br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/2017" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+<br>
+エラーが出たときの対処（英語）<br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/783" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1220" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+</div></div><div id="content_block_24" class="wiki-section-2"><div class="title-2"><h4> 学習環境の構築</h4></div>
+<div id="content_block_24-body" class="wiki-section-body-2">
+<br>
+情報求む<br>
+</div></div><div id="content_block_26" class="wiki-section-1"><div class="title-1"><h3> Radeon(Windows onnx)</h3></div>
+<div id="content_block_26-body" class="wiki-section-body-1">
+<br>
+<ul id="content_block_27" class="list-1">
+<li> <a href="https://dolls.tokyo/howto-amd-sd-win/" class="outlink">https://dolls.tokyo/howto-amd-sd-win/</a></li>
+<li> Onnx</li>
+<li> SD1.4(1111の対応可否は不明)</li>
+<li> Pythonは3.10</li>
+<li> pip</li>
+<li> xformersは言及なし</li>
+<li> 重いらしい</li>
+</ul>
+</div></div>
+</div>
+</div>
+</div></div><div id="content_block_31" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> Intel ARC A770 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_31-body" class="wiki-section-body-1">
+<ul id="content_block_32" class="list-1">
+<li> <a href="https://github.com/rahulunair/stable_diffusion_arc" class="outlink">https://github.com/rahulunair/stable_diffusion_arc</a></li>
+<li> SD1.5(1111の対応可否は不明)</li>
+<li> Pythonは3.9</li>
+<li> condaとpipを併用</li>
+<li> xformersは言及なし</li>
+</ul>
+</div></div><div id="content_block_34" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> Apple M1 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_34-body" class="wiki-section-body-1">
+</div></div><div id="content_block_36" class="wiki-section-2"><div class="title-2"><h4 id="content_6_2"> PyTorch <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_6_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_36-body" class="wiki-section-body-2">
+<ul id="content_block_37" class="list-1">
+<li> 1111</li>
+<li> CoreMLより速いらしい?</li>
+</ul>
+</div></div><div id="content_block_39" class="wiki-section-2"><div class="title-2"><h4 id="content_6_3"> CoreML <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_6_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_39-body" class="wiki-section-body-2">
+<ul id="content_block_40" class="list-1">
+<li> <a href="https://github.com/apple/ml-stable-diffusion" class="outlink">https://github.com/apple/ml-stable-diffusion</a></li>
+<li> SD2.0/1.4/1.5</li>
+<li> 1111での対応検討は「PyTorchで良くない?」説が出ている
+<ul class="list-2">
+<li> <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/5309" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a></li>
+</ul>
+</li>
+<li> Pythonは3.8</li>
+<li> condaとpipを併用</li>
+<li> xformersは言及なし</li>
+<li> iPad Proで38秒なので1060くらいか?</li>
+</ul>
+</div></div><div id="content_block_42" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> iOS <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_42-body" class="wiki-section-body-1">
+<ul id="content_block_43" class="list-1">
+<li> 動作原理はM1のと同じっぽい</li>
+<li> CoreML3対応機種である必要がある(iOS13以降かつiPhone 11以降っぽい)</li>
+<li> メモリ4GB以上?</li>
+<li> 配布アプリの仕様による(1111そのものは無い)</li>
+<li> アプリユーザーによる改造は恐らく不可能</li>
+<li> 画像を小さくして数分程度</li>
+</ul>
+</div></div><div id="content_block_45" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> Android <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_45-body" class="wiki-section-body-1">
+<ul id="content_block_46" class="list-1">
+<li> 話題になってないがいくつかアプリはある様子</li>
+<li> CoreMLのようなMLKitというものがある</li>
+</ul>
+</div></div><div id="content_block_48" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> Intel CPU(OpenVINO) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_48-body" class="wiki-section-body-1">
+<ul id="content_block_49" class="list-1">
+<li> <a href="https://github.com/bes-dev/stable_diffusion.openvino" class="outlink">https://github.com/bes-dev/stable_diffusion.openvi...</a></li>
+<li> SD1.4(1111の対応可否は不明)</li>
+<li> Docker</li>
+<li> python:3.9.9</li>
+<li> pip</li>
+<li> 生成時間は分単位</li>
+<li> Ryzenでも動くっぽい?</li>
+</ul>
+</div></div><div id="content_block_51" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> (参考) Colab <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_51-body" class="wiki-section-body-1">
+<ul id="content_block_52" class="list-1">
+<li> Python 3.9.16 (2023-03-09から)</li>
+<li> miniconda Python 3.10.10</li>
+<li> pip Python 3.10.10</li>
+<li> xformers 0.14はcondaかPythonのバージョンに対応するwhlが必要</li>
+<li> xformers 0.16はpipでインストール可能(だがkohyaでは避けられることも)</li>
+</ul>
+</div></div><div id="content_block_54" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> (参考) paperspace <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_54-body" class="wiki-section-body-1">
+<ul id="content_block_55" class="list-1">
+<li> Python 3.9らしい(伝聞)</li>
+</ul>
+</div></div><div id="content_block_57" class="wiki-section-1"><div class="title-1"><h3 id="content_12"> (参考) Windows <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989799&amp;part=content_12" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_57-body" class="wiki-section-body-1">
+<br>
+<ul id="content_block_58" class="list-1">
+<li> Python 3.10.10</li>
+<li> Python+pip+xformers</li>
+</ul>
+</div></div>
+</div>

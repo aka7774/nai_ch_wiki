@@ -1,0 +1,335 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> 使い方</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> 1111の設定</a></li>
+<li class="list-2"><a href="#content_2_2"> 注意</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> リファレンスイメージの作成ツール</a>
+<ul>
+<li class="list-2"><a href="#content_3_3"> <del>Illusionのゲーム(コイカツ、ハニーセレクト2など)</del></a></li>
+<li class="list-2"><a href="#content_3_4"> カスタムオーダーメイド</a></li>
+<li class="list-2"><a href="#content_3_5"> Blender</a></li>
+<li class="list-2"><a href="#content_3_6"> DAZ Stusio</a></li>
+<li class="list-2"><a href="#content_3_7"> VRoid Studio</a></li>
+<li class="list-2"><a href="#content_3_8"> MikuMikuDance(MMD)</a></li>
+<li class="list-2"><a href="#content_3_9"> Unreal/Unity</a>
+<ul>
+<li class="list-3"><a href="#content_3_9_1"> Unityのいいところ</a></li>
+<li class="list-3"><a href="#content_3_9_2">Unityの悪いところ</a></li>
+<li class="list-3"><a href="#content_3_9_3">Unreal Engineのいいところ</a></li>
+<li class="list-3"><a href="#content_3_9_4">Unreal Engineのわるいところ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> リファレンスイメージの作成例</a>
+<ul>
+<li class="list-2"><a href="#content_4_10"> CharaStudio/RoomStudio</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> 研究</a>
+<ul>
+<li class="list-2"><a href="#content_5_11"> 研究(1)｜プロンプトはどこまで指定すればよいのか</a></li>
+<li class="list-2"><a href="#content_5_12"> 研究(2)｜プロンプトがリファレンスイメージにどこまで影響を及ぼせるのか※NSFW</a></li>
+<li class="list-2"><a href="#content_5_13"> 検証|チェックポイントによる違い</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<b>Automatic1111の機能の中にあるimg2imgタブの使い方についてはほぼ触れていないので、それを調べたければ下記にどうぞ</b><br>
+<a href="https://wikiwiki.jp/sd_toshiaki/imgtoimg" class="outlink">https://wikiwiki.jp/sd_toshiaki/imgtoimg</a><br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/v3T9mUdjUs.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/v3T9mUdjUs.png" border="0" width="300"></a><br>
+<br>
+※NovelAIにもimg2imgがあると思いますがページ作成者が触れない環境なのと、ローカルのみ可能な機能もあるかと思うのでローカル限定で作成しました。<br>
+※これはAutomatic1111を使用したimg2imgについてのページです。<br>
+<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 使い方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> 1111の設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+基本的なことは<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%bb%c8%a4%a4%ca%fd">ローカルの使い方</a>を参照<br>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+t2iおよびhighres.fixよりメモリ消費が多い。突然CUDA OOMで死んだりする。MultiDiffusionでどうにかできる。<br>
+<br>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> リファレンスイメージの作成ツール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+手を動かして自分で描く方法のほかに、3Dモデルをポージングさせてリファレンスイメージを作成する手法も有効です。<br>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> <del>Illusionのゲーム(コイカツ、ハニーセレクト2など)</del> <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+<span style="color:#ff0000;"><span class="fsize" style="font-size:24px;"><b>Illusionは爆散しました。後継はありません！</b></span></span><br>
+<div id="content_block_12">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_12-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_12-inside" class="toggle-display">
+エロゲーなので高額だが、Studioと呼ばれるポージングソフト的なのがある。おすすめはしないが、ポーズ作成が面倒なら買ってもいい。<br>
+<br>
+<div id="content_block_13" class="wiki-section-3"><div class="title-3"><h5> CharaStudioNeo</h5></div>
+<div id="content_block_13-body" class="wiki-section-body-3">
+ハニーセレクト2用<br>
+リアル系。コイカツと同様にMODがある。<br>
+<br>
+なお、HS2,AIの後釜のRoomガールはMODがないしゲーム自体がつまらないのでナシかな。<br>
+</div></div><div id="content_block_15" class="wiki-section-3"><div class="title-3"><h5> CharaStudio</h5></div>
+<div id="content_block_15-body" class="wiki-section-body-3">
+<span class="fsize" style="font-size:20px;">モーション目的(ControlNet)ならサンシャインを買え</span><br>
+サンシャインは無印の予約特典+DLCのモーションが最初から入ってて無印より安いのでお得。エクステンションは性格追加パックなので不要。<br>
+<br>
+🥰コイカツのいいところ<br>
+<ol id="content_block_16" class="list-1">
+<li> アニメチックなグラフィック</li>
+<li> 夥しい数のキャラパーツ追加MODがある</li>
+<li> MODにより、<b>大体の版権キャラが再現されている</b></li>
+</ol>
+<br>
+🤢コイカツのわるいところ<ol id="content_block_17" class="list-1">
+<li> MOD前提な環境。バニラではやれる幅が少ない。MODを作るとなるとUnityと3DCGソフトの知識が必要。</li>
+<li> 有料販売されているデータが多い(界隈の闇)。沼ると金がどんどん減っていく。<span style="color:#d9d9d9;">ローカルNAI使うぐらいならいっそ…</span></li>
+<li> i2iに使うとモデルによっては画風までコイカツになってしまって調整が難しい。NAIの血が濃いモデルでは特にそう。</li>
+</ol>
+</div></div>
+</div>
+</div>
+</div></div><div id="content_block_21" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> カスタムオーダーメイド <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_21-body" class="wiki-section-body-2">
+カスタムオーダーメイド3D2とか。<br>
+ILLUSION製ゲームと同様にMODがある。StableDiffusion向けのMODがあるかは知らん。<br>
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_3_5"> Blender <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+オープンソースで開発されている無料の3DCGソフト。<br>
+全部自分で構築する必要があるが自由高い。<br>
+ポージング用モデルはBoothでVRChat用のモデルがたくさんあるので活用できそう。<br>
+.blend形式のファイルが同梱されているか要確認。<br>
+<br>
+🥰Blenderのいいところ<ol id="content_block_24" class="list-1">
+<li> 制約なし。なんでもできる</li>
+<li> 豊富なアドオン</li>
+<li> 画風もBlender側でかなりいじれる</li>
+</ol>
+🤢Blenderのわるいところ<ol id="content_block_25" class="list-1">
+<li> 学習曲線MAX。ただしBlender2.8からは本当にマシになった。 <br> 2.8以降であれば記事も豊富なので比較的覚えやすいと思う。<b>2.7以前を使える人は宇宙人</b></li>
+<li> 全部自分で構築する必要がある</li>
+</ol>
+<br>
+図：モデルはレナ・カクテル<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/F2nLkEeCXC.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/F2nLkEeCXC.jpg" border="0" width="500"></a><br>
+</div></div><div id="content_block_27" class="wiki-section-2"><div class="title-2"><h4 id="content_3_6"> DAZ Stusio <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_27-body" class="wiki-section-body-2">
+海外のフォトリアル系3DCGソフト。<br>
+「DAZ Studioは3Dアニメーションとデジタルイラストのためのソフトウェアです。3Dモデルやカスタムポーズを作成したり、美術的な作品を作成したりすることができます。」※ChatGPTちゃん解説<br>
+ソフト内で完結してるように思われますが、実は公式に用意されているDAZ to BlenderなどのプラグインでBlenderで編集できるようにしたりもできます。<br>
+<br>
+🥰DAZのいいところ<ol id="content_block_28" class="list-1">
+<li> Genesis3、Genesis8 などボディが規格化されている</li>
+<li> 身体の造形がよい</li>
+<li> モーフ(Blenderでいうシェイプキー)がめちゃめちゃある</li>
+<li> キャラクター/衣装がめちゃめちゃある</li>
+</ol>
+🤢DAZのわるいところ<ol id="content_block_29" class="list-1">
+<li> 学習曲線高め</li>
+</ol>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/hhgcFLU1Td.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/hhgcFLU1Td.jpg" border="0" width="500"></a><br>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_3_7"> VRoid Studio <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+Pixivが開発したキャラ作成ソフト。VRM形式でエクスポートしてほかのソフトで読み込める。<br>
+先ほど挙げたエロゲーと違い、ヘアスタイルや衣装などを自分で作れる。筆圧対応。わりと簡単。<br>
+しかし、自分で作ることが前提なので用意されてるプリセットは少ない。<br>
+</div></div><div id="content_block_33" class="wiki-section-2"><div class="title-2"><h4 id="content_3_8"> MikuMikuDance(MMD) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_33-body" class="wiki-section-body-2">
+言わずと知れたポージングソフト。大量のモデルが配布されている。版権の公式が配布してたりする。<br>
+ソフト自体は癖が超強い。<br>
+</div></div><div id="content_block_35" class="wiki-section-2"><div class="title-2"><h4 id="content_3_9"> Unreal/Unity <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_35-body" class="wiki-section-body-2">
+基本無料のゲームエンジン。3DCGソフトとしても利用できる。<br>
+なんでもできる。<br>
+ストアにある無料のモデルやVRM/PMXなどをi2iの素材にできる。<br>
+</div></div><div id="content_block_37" class="wiki-section-3"><div class="title-3"><h5 id="content_3_9_1"> Unityのいいところ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_9_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_37-body" class="wiki-section-body-3">
+<ul id="content_block_38" class="list-1">
+<li> 低スペックで動く(Built-in RP/URP)</li>
+<li> シンプルなグラフィックでトゥーンシェーダとの相性GOOD</li>
+<li> Unityに関する記事が多い</li>
+<li> スクリプトはC#なのでプログラミングできるならわりと簡単</li>
+</ul>
+</div></div><div id="content_block_40" class="wiki-section-3"><div class="title-3"><h5 id="content_3_9_2">Unityの悪いところ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_9_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_40-body" class="wiki-section-body-3">
+<ul id="content_block_41" class="list-1">
+<li> 画質悪い(Built-in/URP)</li>
+<li> 低い機能性</li>
+<li> 癖が強い</li>
+<li> 機能性が低い故に高度なことをしようとした途端に学習曲線が急上昇</li>
+</ul>
+<br>
+</div></div><div id="content_block_43" class="wiki-section-3"><div class="title-3"><h5 id="content_3_9_3">Unreal Engineのいいところ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_9_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_43-body" class="wiki-section-body-3">
+<ul id="content_block_44" class="list-1">
+<li> <b>圧倒的グラフィック</b>と優れた機能性</li>
+<li> Epic Gamesが定期的に有料アセットの無料化してる(1万円がタダになってたりする)</li>
+<li> Epic公式のチュートリアルが豊富</li>
+<li> IKが優秀</li>
+</ul>
+</div></div><div id="content_block_46" class="wiki-section-3"><div class="title-3"><h5 id="content_3_9_4">Unreal Engineのわるいところ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_3_9_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_46-body" class="wiki-section-body-3">
+<ul id="content_block_47" class="list-1">
+<li> グラフィックが重い(SDが動くなら問題ないとは思うが・・・)</li>
+<li> 人によってはノードベースのプログラミングはとっつきにくい</li>
+<li> 学習曲線やや高い</li>
+</ul>
+</div></div><div id="content_block_49" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> リファレンスイメージの作成例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_49-body" class="wiki-section-body-1">
+</div></div><div id="content_block_51" class="wiki-section-2"><div class="title-2"><h4 id="content_4_10"> CharaStudio/RoomStudio <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_4_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_51-body" class="wiki-section-body-2">
+編集時点で一番新しいIllusionのRoomガールに付属しているRoom stusioでリファレンスイメージを作成してみました<br>
+<ol id="content_block_52" class="list-1">
+<li> ええ感じにIK/FKとかアニメーション参照とかしてポージング <br> ※CharaStudioの使い方は付属のマニュアル見るか各自ググってくれ</li>
+<li> F11でスクショ</li>
+<li> Automatic1111にぶん投げる</li>
+</ol>
+<br>
+図：生成例<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/RtPJHPcftY.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/RtPJHPcftY.jpg" border="0" width="500"></a><br>
+<br>
+コイカツ！の場合:<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/Rp51hqoIIu.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/Rp51hqoIIu-s.png" border="0"></a><br>
+<br>
+</div></div><div id="content_block_54" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 研究 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_54-body" class="wiki-section-body-1">
+</div></div><div id="content_block_56" class="wiki-section-2"><div class="title-2"><h4 id="content_5_11"> 研究(1)｜プロンプトはどこまで指定すればよいのか <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_5_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_56-body" class="wiki-section-body-2">
+<div id="content_block_57">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_57-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_57-inside" class="toggle-display">
+<br>
+<div id="content_block_58" class="wiki-section-3"><div class="title-3"><h5> はじめに</h5></div>
+<div id="content_block_58-body" class="wiki-section-body-3">
+<br>
+リファレンスイメージの時点である程度絵が完成している場合、プロンプトには何もかかなくてよいのか、それともある程度画像の要素をプロンプトで指定する必要があるのかを検証しました。<br>
+<br>
+検証は以下のようなデータで行いました。<br>
+<br>
+プロンプト<br>
+<br>
+<textarea id="content_block_59" class="PLAIN-BOX">
+|(masterpiece:1.3), best quality, masterpiece, best quality, 1girl, solo, amazing awesome highly detailed, perfect anatomy, perfect lighting, (extremely detailed CG:1.2), (8k:1.1}, (realistic:1.15), | standing, | women, (office lady:1.2), (formal clothes:1.1), ivory sweater, miniskirt, pencil skirt, loafers, short hair, brown hair,| (id card, lanyard:1)
+</textarea>
+<br>
+<textarea id="content_block_60" class="PLAIN-BOX">
+3D, 3Dcubism, pablo picasso, disney, marvel, mutanted breasts, mutanted nipple, cropped, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, bad anatomy, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, shemale, futa, trans, tranny, floating cock, censored, bar censor,  muscular, teen age, loli, petite, child, infant, toddlers, chibi, sd character, multiple view, Reference sheet, anal sex, cum,cum in pussy, penis, tsurime, helmet_hair, evil smile, smug_face, naughty smile, inflation, overflow, bukkake, cumdrip, cum poo, excessive cum, sex, boy, penis, cock, insert, Fisting, All the way through, Uterine prolapse, Anal prolapse, Birth, 
+</textarea>
+<br>
+図1：リファレンスイメージ<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/PG7WEO5acZ.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/PG7WEO5acZ-s.png" border="0"></a><br>
+<br>
+図2：XYプロット<br>
+オリジナル画像：<span style="color:gray;background-color:yellow"><img src="https://files.catbox.moe/euvfhj.jpg" border="0" width="500"></span><small><a rel="nofollow" href="https://seesaawiki.jp/nai_ch/e/add?pagename=%26ref%28https%3a//files%2ecatbox%2emoe/euvfhj%2ejpg%2c500%29">?</a></small><br>
+</div></div><div id="content_block_62" class="wiki-section-3"><div class="title-3"><h5> 結果</h5></div>
+<div id="content_block_62-body" class="wiki-section-body-3">
+リファレンスイメージの時点である程度絵が完成している場合、なにも指定しなくても大きく破綻したりはせずそれなりに画像の雰囲気を継承して描き込みしてくれるようです。<br>
+ただし首にかけたIDカードのような細かいものがなくなってしまったり、ストッキングが黒のデニムになってしまったりする誤認識がみられました。<br>
+</div></div><div id="content_block_64" class="wiki-section-2"><div class="title-2"><h4> 結論</h4></div>
+<div id="content_block_64-body" class="wiki-section-body-2">
+img2imgは、プロンプトに何も指定しなくてもリファレンスイメージを見てそこから描き込みをしてくれます。<br>
+また見分けがつきやすいような、ある程度大きな要素は特に指定しなくてもいいかもしれません。<br>
+一方で細かなアクセサリーやあいまいな色や形をしているものは、プロンプトで指定しないと見失ったり誤認識がする可能性が高いようです。<br>
+</div></div>
+</div>
+</div>
+</div></div><div id="content_block_68" class="wiki-section-2"><div class="title-2"><h4 id="content_5_12"> 研究(2)｜プロンプトがリファレンスイメージにどこまで影響を及ぼせるのか※NSFW <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_5_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_68-body" class="wiki-section-body-2">
+<br>
+<div id="content_block_69">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_69-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_69-inside" class="toggle-display">
+<div id="content_block_70" class="wiki-section-2"><div class="title-2"><h4> はじめに</h4></div>
+<div id="content_block_70-body" class="wiki-section-body-2">
+<br>
+リファレンスイメージを渡したとして、プロンプト側の内容に大きな差をつけた場合、生成される画像はどの程度変更されるのかを検証しました。<br>
+リファレンスイメージからどの程度離れて画像を生成するかの設定は、Denoise Strengthを変えることで制御できます。<br>
+<br>
+検証は以下のようなデータで行いました。<br>
+<br>
+<br>
+Denoising strength｜0.1,0.2,0.3,0.4,0.5,0.6,0.69,0.7,0.71,0.75,0.8,0.9,1.0<br>
+Seed｜2830518132<br>
+<br>
+プロンプト<br>
+<textarea id="content_block_71" class="PLAIN-BOX">
+(masterpiece:1.3), best quality, masterpiece, best quality, 1girl, solo, amazing awesome highly detailed, perfect anatomy, perfect lighting, (extremely detailed CG:1.2), (8k:1.1},  standing,  female,  short hair, brown hair, completely nude, nsfw, (gigantic breasts:1.5), nipples, areolae, pubic hair, (curvy, voluptuous:1.5),  (realistic:1.15)
+</textarea>
+<br>
+<textarea id="content_block_72" class="PLAIN-BOX">
+3D, 3Dcubism, pablo picasso, disney, marvel, mutanted breasts, mutanted nipple, cropped, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, bad anatomy, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, shemale, futa, trans, tranny, floating cock, censored, bar censor,  muscular, teen age, loli, petite, child, infant, toddlers, chibi, sd character, multiple view, Reference sheet, anal sex, cum,cum in pussy, penis, tsurime, helmet_hair, evil smile, smug_face, naughty smile, inflation, overflow, bukkake, cumdrip, cum poo, excessive cum, sex, boy, penis, cock, insert, Fisting, All the way through, Uterine prolapse, Anal prolapse, Birth, 
+</textarea>
+<br>
+<br>
+図：XYプロット<br>
+オリジナル画像：<br>
+<a href="https://files.catbox.moe/4swkyv.jpg"><img src="https://files.catbox.moe/4swkyv.jpg" border="0" width="500"></a><br>
+</div></div><div id="content_block_74" class="wiki-section-2"><div class="title-2"><h4> 結果</h4></div>
+<div id="content_block_74-body" class="wiki-section-body-2">
+Denoise Strengthが0.4〜0.5から生成画像がリファレンスいイメージから乖離しはじめ、0.71〜0.75の間から大きく乖離してポージングや顔の雰囲気も変更されて生成されることがわかりました。<br>
+</div></div><div id="content_block_76" class="wiki-section-2"><div class="title-2"><h4> 結論</h4></div>
+<div id="content_block_76-body" class="wiki-section-body-2">
+リファレンスイメージからポージング変更させずにイラストレーション化させたいときはDenoise Strengthを0.4〜0.7に留めるのが良いみたいです。個人的には0.7がいい感じ。<br>
+雰囲気だけ継承してAIにいい感じに仕上げてもらいたいときは0.75〜0.8がいいかもしれない。<br>
+</div></div>
+</div>
+</div>
+<br>
+<br>
+</div></div><div id="content_block_80" class="wiki-section-2"><div class="title-2"><h4 id="content_5_13"> 検証|チェックポイントによる違い <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994935&amp;part=content_5_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_80-body" class="wiki-section-body-2">
+<br>
+<div id="content_block_81">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_81-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_81-inside" class="toggle-display">
+コイカツ！およびRoomガールの画像を使うとどの程度画風が吸われるか検証する。<br>
+元画像:<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/6QRPAbJjWD.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/6QRPAbJjWD-s.png" border="0"></a><br>
+Prompt<br>
+<textarea id="content_block_82" class="PLAIN-BOX">
+masterpiece, best quality, 1girl, blunt bangs, purple hair, purple eyes, long hair, white shirt, brown skirt
+</textarea>
+<br>
+Negative Prompt<br>
+<textarea id="content_block_83" class="PLAIN-BOX">
+lowres, low quality, bad anatomy, signature
+</textarea>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/GGp8QlzM2u.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/GGp8QlzM2u-s.jpg" border="0"></a><br>
+NovelAIは0.7までコイカツ！っぽい画風になっている。一方でAOM3とCounterfeitは0.4あたりからコイカツ画風から離れていってる。<br>
+NAI系の画風のモデルは影響が長引いているように見える。<br>
+<br>
+Roomガール:<br>
+元画像:<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/lWqt_zy0LM.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/lWqt_zy0LM-s.png" border="0"></a><br>
+Prompt<br>
+<textarea id="content_block_84" class="PLAIN-BOX">
+masterpiece, best quality, 1girl, simple background, looking at viewer, brown hair, short hair, arms behind back, pants, black background, white pants, nurse, shirt, short sleeves
+</textarea>
+<br>
+Negative Prompt<br>
+<textarea id="content_block_85" class="PLAIN-BOX">
+lowres, low quality, bad anatomy, signature
+</textarea>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/kmAUxvdWJ9.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/kmAUxvdWJ9-s.jpg" border="0"></a><br>
+Denoise0.6から構図や衣装が変わりだす。<br>
+Counterfeitは早い段階から画風が変化した。<br>
+いずれのモデルもある程度なじんでいる。<br>
+0.5以下は元画像の画風が残っているので0.6以上で使用するのがよさそう。<br>
+</div>
+</div>
+</div></div>
+</div>

@@ -1,0 +1,152 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> VAE(Variational Auto Encoder)とは</a></li>
+<li class="list-1"><a href="#content_2"> VAE</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> Wan Video(Qwen Image) VAE</a></li>
+<li class="list-2"><a href="#content_2_2"> FLUX.2 VAE</a></li>
+<li class="list-2"><a href="#content_2_3"> SDXLのVAE</a></li>
+<li class="list-2"><a href="#content_2_4"> SD1/2のVAE</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> VAE比較/検証(SD1/2)</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> VAE(Variational Auto Encoder)とは <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5038849&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+画像と潜在空間(Latent Space)を相互に変換するモデル。潜在空間とは情報を圧縮した空間。品質をある程度維持しつつ拡散モデルの計算量を大幅に減らす。<br>
+<br>
+おおまかに以下の影響がある。<ul id="content_block_2" class="list-1">
+<li> 彩度や明度等のイメージ調整</li>
+<li> 目の書き込みの細部とか輪郭線など非常にこまかい部分の描写</li>
+</ul>
+<br>
+細かい部分の精度が悪いのは学習・生成は縮小してやっているためでどうしようもない。しかしそのおかげで一般向けのGPUでも動く。<br>
+一般的なLatent Upscalingによる高解像度の生成は、Latentで圧縮された情報を単に引き延ばしているため、工夫しないと線が汚くなるか過度にディティールが増える。<br>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5038849&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_4-body" class="wiki-section-body-1">
+</div></div><div id="content_block_6" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> Wan Video(Qwen Image) VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5038849&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_6-body" class="wiki-section-body-2">
+16チャネルで高精度。Wan Video, Qwen Image, Anima, Krea 2などで使用する。<br>
+<a href="https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors?download=true" class="outlink">https://huggingface.co/Comfy-Org/Qwen-Image_ComfyU...</a><br>
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> FLUX.2 VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5038849&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+16チャネルでWan Video VAEより高精度。FLUX.2, MOSS-Imageなどで使用する。<br>
+<a href="https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors?download=true" class="outlink">https://huggingface.co/Comfy-Org/flux2-dev/resolve...</a><br>
+</div></div><div id="content_block_10" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3"> SDXLのVAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5038849&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_10-body" class="wiki-section-body-2">
+SD1から引き続き4チャネルだが品質が改善して不具合が修正された。<br>
+SDXL BaseのVAEはfp16では常にNaN演算が発生して動作しないため、不具合を修正したSDXL-VAE-FP16-Fixの使用を推奨。<ul id="content_block_11" class="list-1">
+<li> SDXL-VAE-FP16-Fix</li>
+</ul>
+Stability AIのSDXL VAEの修正版。fp16でNaN演算が発生する問題を修正して黒画像やエラーが出ないようにしたもの<br>
+<a href="https://huggingface.co/madebyollin/sdxl-vae-fp16-fix" class="outlink">https://huggingface.co/madebyollin/sdxl-vae-fp16-f...</a><br>
+</div></div><div id="content_block_13" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4"> SD1/2のVAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5038849&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_13-body" class="wiki-section-body-2">
+4チャネルで低品質かつアーティファクトが発生する。<br>
+<div id="content_block_14">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_14-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_14-inside" class="toggle-display">
+<div id="content_block_15" class="wiki-section-3"><div class="title-3"><h5> Stability AIのVAE</h5></div>
+<div id="content_block_15-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/stabilityai/sd-vae-ft-ema-original" class="outlink">https://huggingface.co/stabilityai/sd-vae-ft-ema-o...</a><br>
+vae-ft-ema-560000-ema-pruned.ckpt<br>
+<a href="https://huggingface.co/stabilityai/sd-vae-ft-mse-original" class="outlink">https://huggingface.co/stabilityai/sd-vae-ft-mse-o...</a><br>
+vae-ft-mse-840000-ema-pruned.ckpt<br>
+</div></div><div id="content_block_17" class="wiki-section-3"><div class="title-3"><h5> NovelAIのVAE</h5></div>
+<div id="content_block_17-body" class="wiki-section-body-3">
+(1)リークのものをTorrentで入手する<br>
+(2)orangemix.vae.ptはnaiのVAEを入手性を考慮してリネームして置いただけものです。Torrentめんどくさい用に一応貼っておく<br>
+<a href="https://huggingface.co/WarriorMama777/OrangeMixs/tree/main/VAEs" class="outlink">https://huggingface.co/WarriorMama777/OrangeMixs/t...</a><br>
+nai.vae.pt<br>
+<b>Microfost Defenderがマルウェアの誤検出で勝手に消去するので注意!safetensorに変換することを強く推奨する。</b><br>
+animevae(NovelAI Diffusion V1のVAE)はNaN演算が多く不安定である。<ul id="content_block_18" class="list-1">
+<li> Anything3,4およびevt2のVAEはNovelAIのものと一緒(ファイルサイズ、生成結果、MD5ハッシュの一致を確認済み)</li>
+</ul>
+</div></div><div id="content_block_20" class="wiki-section-3"><div class="title-3"><h5> Waifu DiffusionのVAE</h5></div>
+<div id="content_block_20-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/hakurei/waifu-diffusion-v1-4/tree/main/vae" class="outlink">https://huggingface.co/hakurei/waifu-diffusion-v1-...</a><br>
+kl-f8-anime.ckpt<br>
+kl-f8-anime2.ckpt<br>
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5> naclbit(TrinArt)のVAE</h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/naclbit/trinart_derrida_characters_v2_stable_diffusion/tree/main" class="outlink">https://huggingface.co/naclbit/trinart_derrida_cha...</a><br>
+autoencoder_fix_kl-f8-trinart_characters.ckpt
+</div></div><div id="content_block_24" class="wiki-section-3"><div class="title-3"><h5> NVA部のVAE</h5></div>
+<div id="content_block_24-body" class="wiki-section-body-3">
+<br>
+<ul id="content_block_25" class="list-1">
+<li> なんJNVA部★146 - 5ch.net liveuranus</li>
+</ul>
+903: 2023/02/12(日) <br>
+エラーが出るか出ないかギリギリにNAIのVAEを学習させたのを投下してみる<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/dCwvVTYZxX.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/dCwvVTYZxX.png" border="0" width="700"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/b8rb2ZtjGz.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/b8rb2ZtjGz.png" border="0" width="700"></a><br>
+モデルは上が7th_anime_v3_Cで下はetr_odysseyV2Fixを改良してる途中のもの<br>
+特徴としては赤系の発色が強いのとNAIより細かい部分の描写が気持ち程度に変わる<br>
+学習元が似ていれば相乗効果があるのかと思ったけど違うみたいでう〜ん・・・<br>
+色味の補正用にチューンするぐらいでしか手を出す意味はなさそう？<br>
+<ul id="content_block_26" class="list-1">
+<li> なんJNVA部★147 - 5ch.net liveuranus</li>
+</ul>
+7: 2023/02/12(日)<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/lcWGMEGDF6.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/lcWGMEGDF6.png" border="0" width="700"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/4BGjT6Ftvq.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/4BGjT6Ftvq.png" border="0" width="700"></a><blockquote id="content_block_27">
+&gt;903と中身は同じなA
+</blockquote>
+NAIより薄くしたいがAnything-v3.0は薄すぎるから丁度いいのが欲しい用のB<br>
+ガンマ値を高くした時のような感じになるHighGamma<br>
+AnyVAEが色あせるのを逆手に取って作ったセピア風になるSepia<br>
+中には--no-half-vaeがいるVAEがあるかもしれん<br>
+その時はすまん・・・<br>
+anything-v3.0の色あせるVAEってどこで手に入れるんだよってのもあると思うんで入れておいた(extensionのtoolkitで抽出)<br>
+<br>
+🔽: <a href="https://mega.nz/file/2B4nVRDD#ujydCsTLubu0PrNcXehSER92aF-M94r4bEs6O2Lo_aQ" class="outlink">https://mega.nz/file/2B4nVRDD#ujydCsTLubu0PrNcXehS...</a><br>
+<ul id="content_block_28" class="list-1">
+<li> v449: 2023/03/21(火) 21:03:05.44</li>
+</ul>
+<blockquote id="content_block_29">
+彩度はNAIより若干高くてkl-f8-anime2みたいににじまずにNAIよりくっきりした絵になるで 
+</blockquote>
+<a href="https://civitai.com/models/22354/clearvae" class="outlink">https://civitai.com/models/22354/clearvae</a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/RE0V8OdTrq.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/RE0V8OdTrq.jpg" border="0" width="700"></a><br>
+</div></div>
+</div>
+</div>
+<br>
+</div></div><div id="content_block_33" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> VAE比較/検証(SD1/2) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5038849&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_33-body" class="wiki-section-body-1">
+<br>
+キャラ：ポケモン、背景：garden, で比較検証<br>
+eCustomAがはっきりした色彩とぼけの少ない細部描写で優れている感じがあった(キャラの輪郭や背景の花に注目すると分かる)。<br>
+(Anything-v3のVAEはもっとくすんでるはずなので参考からは除外してください)<br>
+<br>
+モデル: AOM3A1B(orangemixs)<br>
+🔗原寸大：<a href="https://files.catbox.moe/d80bpe.webp" class="outlink">https://files.catbox.moe/d80bpe.webp</a><br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/pQ79OEN1_M.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/pQ79OEN1_M.jpg" border="0" width="800"></a><br>
+<br>
+<br>
+別モデル: AOM3(orangemixs)<br>
+🔗原寸大：<a href="https://files.catbox.moe/rczw9t.webp" class="outlink">https://files.catbox.moe/rczw9t.webp</a><br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/4Ij1UMTzXB.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/4Ij1UMTzXB.jpg" border="0" width="800"></a><br>
+<br>
+<br>
+1girlテスト<br>
+モデル: AOM3A1B(orangemixs)<br>
+🔗原寸大：<a href="https://files.catbox.moe/mmbhc9.webp" class="outlink">https://files.catbox.moe/mmbhc9.webp</a><br>
+<br>
+若干、eCustomAは色飽和気味かもしれない? ぱきっとした描写はよき<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/b1mEKLGJae.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/b1mEKLGJae.jpg" border="0" width="800"></a>
+</div></div>
+</div>

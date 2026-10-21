@@ -1,0 +1,46 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">FLUX.1とは? <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5170783&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+Stable Diffusionの元開発者が設立したベンチャー起業Black Forest Labsが開発している画像生成AIモデル。<br>
+API経由での有料画像生成に加え、ライセンスにより使用可能範囲が分かれたモデルデータも公開しており、Huggingfaceからダウンロードできる。<ul id="content_block_2" class="list-1">
+<li> 公式サイト：<a href="https://blackforestlabs.ai/" class="outlink">https://blackforestlabs.ai/</a></li>
+<li> huggingface：<a href="https://huggingface.co/black-forest-labs" class="outlink">https://huggingface.co/black-forest-labs</a></li>
+</ul>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2">FLUX.1のモデルの種類とライセンス <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5170783&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_4-body" class="wiki-section-body-1">
+<ul id="content_block_5" class="list-1">
+<li> Pro：APIを通じてのみ提供される最上位モデル。商用利用可</li>
+<li> Dev：モデルが公開されている。モデルは非商用、もしくはBlack Forest Labsとライセンスを結んでのみ利用可。一方、出力された画像は商用利用可（正確な内容は<a href="https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md" class="outlink" rel="nofollow">原文を参照</a>のこと）</li>
+<li> Schnell：高速・軽量な公開モデル。商用利用可</li>
+</ul>
+<br>
+APIを介して利用する際は利用料金が発生する。<br>
+</div></div><div id="content_block_7" class="wiki-section-1"><div class="title-1"><h3 id="content_3">FLUX.1で画像生成するには <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5170783&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_7-body" class="wiki-section-body-1">
+2024年8月13日現在、ComfyUIとForge（v2.0〜）で利用できる。<br>
+ローカル生成にはVRAM12GB↑推奨（12GB未満でも生成自体は可能だが非常に時間がかかる）<br>
+</div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1">ComfyUI <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5170783&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_9-body" class="wiki-section-body-2">
+<a href="https://comfyanonymous.github.io/ComfyUI_examples/flux/" class="outlink">https://comfyanonymous.github.io/ComfyUI_examples/...</a><br>
+または、Zuntan03氏(各種easyインストーラの作者)によるインストール用バッチファイルを利用してもよい。 <a href="https://x.com/Zuntan03/status/1820046015023722617" class="outlink">https://x.com/Zuntan03/status/1820046015023722617</a><br>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2">Forge <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5170783&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+プログラム：<a href="https://github.com/lllyasviel/stable-diffusion-webui-forge" class="outlink">https://github.com/lllyasviel/stable-diffusion-web...</a><br>
+Checkpoint（devのfp8と軽量なnf4。20stepで生成）：<a href="https://github.com/lllyasviel/stable-diffusion-webui-forge/discussions/981" class="outlink">https://github.com/lllyasviel/stable-diffusion-web...</a><br>
+Checkpoint（schnellのnf4。4stepで生成できるが品質は劣る）：<a href="https://huggingface.co/silveroxides/flux1-nf4-weights/blob/main/flux1-schnell-bnb-nf4.safetensors" class="outlink">https://huggingface.co/silveroxides/flux1-nf4-weig...</a><br>
+こちらもZuntan03氏によるEasyForgeを利用できる。 <a href="https://x.com/Zuntan03/status/1822555275380871407" class="outlink">https://x.com/Zuntan03/status/1822555275380871407</a><br>
+</div></div><div id="content_block_13" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3">GGUF <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5170783&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_13-body" class="wiki-section-body-2">
+画像AIでは馴染みが薄いが、言語モデル（LLM）では定番の量子化を用いて圧縮したモデル。低〜中VRAMでも現実的なローカル生成が可能になる、24/8/22現在注目の技術。<br>
+ComfyUIでの使用には専用のカスタムノードが必要。Forgeはデフォで対応している。VAE（ae.safetensors）・t5xxl（fp16やfp8）・clip_lを別に入手して設定する必要あり。<br>
+少なめのVRAMでもそこそこの速度が出るが、Q2は画像が目に見えるレベルで劣化、Q3も気になる人は気になるレベルのため、現実的に実用に耐えるのはQ4以上か。<br>
+(dev)<a href="https://huggingface.co/city96/FLUX.1-dev-gguf" class="outlink">https://huggingface.co/city96/FLUX.1-dev-gguf</a><br>
+(schnell)<a href="https://huggingface.co/city96/FLUX.1-schnell-gguf" class="outlink">https://huggingface.co/city96/FLUX.1-schnell-gguf</a><br>
+<br>
+生成テスト用のパラメータ例<br>
+<pre id="content_block_14" class="BOX">
+Astronaut in a jungle, cold color palette, muted colors, very detailed, sharp focus
+Steps: 20, Sampler: Euler, Schedule type: Simple, CFG scale: 1, Distilled CFG Scale: 3.5, Seed: 12345, Size: 896x1152, Model: flux1-dev-bnb-nf4-v2
+</pre>
+</div></div>
+</div>

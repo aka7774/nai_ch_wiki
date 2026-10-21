@@ -1,0 +1,152 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+Stable Diffusion XL（以下「SDXL」と略）。<br>
+Stable Diffusion 2の後継。SD1/2と比較し品質が大幅に向上した。<br>
+SD1に引き続きU-Netアーキテクチャを採用する。Text Encoderは従来のCLIP Lに加えてCLIP Gを使用するが、どちらも古く貧弱で文脈は理解できず、位置指定は無理で文字描写もわずかにできる程度。<br>
+SD1や2でろくに生成できなかったものが生成できる。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> ドキュメント <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+Stability.ai公式<br>
+<a href="https://ja.stability.ai/blog/sdxl10" target="_blank" class="outlink" rel="nofollow">SDXL 1.0 をリリースしました</a><br>
+</div></div><div id="content_block_5" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> SDXLの動作環境 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_5-body" class="wiki-section-body-1">
+<blockquote id="content_block_6">
+<br>SDXL 1.0は、8GBのVRAMを搭載したコンシューマー向けGPUや、すぐに利用可能なクラウドインスタンスで問題なく動作するはずです。
+</blockquote>
+<a href="https://ja.stability.ai/blog/sdxl10" target="_blank" class="outlink" rel="nofollow">SDXL 1.0 をリリースしました(公式)</a><br>
+</div></div><div id="content_block_8" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> SDXLの特徴 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_8-body" class="wiki-section-body-1">
+内部構造がSD1.5と違う。U-net深層にTransformerブロックが多い。<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/1xVsFL84go.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/1xVsFL84go.png" border="0"></a><br>
+基本解像度が1024×1024で精細<br>
+パラメータ数が3倍になったため<b>SD1.5より約3倍重い</b><br>
+<br>
+<a href="https://hoshikat.hatenablog.com/entry/2023/08/16/205955" target="_blank" class="outlink" rel="nofollow">誰でもわかるStable Diffusion　新バージョン「SDXL」の概要</a><br>
+このブログ（外部リンク）の解説記事が大変わかりやすい<br>
+</div></div><div id="content_block_10" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> SDXLのUI <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_10-body" class="wiki-section-body-1">
+有名なUIは下記の通り。Forge NeoかComfyUIがおすすめ。<br>
+</div></div><div id="content_block_12" class="wiki-section-2"><div class="title-2"><h4 id="content_5_1"> Forge系 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_12-body" class="wiki-section-body-2">
+</div></div><div id="content_block_14" class="wiki-section-3"><div class="title-3"><h5 id="content_5_1_1"> Forge Neo <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_1_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_14-body" class="wiki-section-body-3">
+<a href="https://github.com/Haoming02/sd-webui-forge-classic/tree/neo" class="outlink">https://github.com/Haoming02/sd-webui-forge-classi...</a><br>
+Forge "latest"バージョンをベースにリファクタリングしたもの。Z-Imageなどの最新モデルが使える。しかし、新しすぎる故にExtensionの互換性が低い。<br>
+</div></div><div id="content_block_16" class="wiki-section-3"><div class="title-3"><h5 id="content_5_1_2"> Forge Classic <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_1_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_16-body" class="wiki-section-body-3">
+<a href="https://github.com/Haoming02/sd-webui-forge-classic" class="outlink">https://github.com/Haoming02/sd-webui-forge-classi...</a><br>
+Forge "previous"バージョンをベースにリファクタリングしたもの。最適化が中心。速度やメモリ使用量はreForgeとほぼ同じ。<br>
+</div></div><div id="content_block_18" class="wiki-section-3"><div class="title-3"><h5 id="content_5_1_3"> Forge (更新停止) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_1_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_18-body" class="wiki-section-body-3">
+2025年6月を最後に更新停止。<br>
+ControlNetの作者lllyasvielによる、WebUIのリファクタリング版がリリースされた。バックエンドを1111オリジナルからComfyUIベースに変更している？<br>
+<a href="https://github.com/lllyasviel/stable-diffusion-webui-forge" target="_blank" class="outlink" rel="nofollow">https://github.com/lllyasviel/stable-diffusion-web...</a><br>
+低VRAM環境での高速化や使用メモリ削減が見込めるものの、一部Extensionがまだ動かないらしいので上記Githubを要参照。なお、必ずしも1111より速かったりメモリ使用量が少ないわけではない。<br>
+「浦島太郎のために」「2024-02-06 stable-diffusion-webui-forgeリリース」を参照。<br>
+オリジナルの1111とは大きく異なるためExtensionの互換性が低め。<br>
+</div></div><div id="content_block_20" class="wiki-section-3"><div class="title-3"><h5 id="content_5_1_4"> reForge <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_1_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_20-body" class="wiki-section-body-3">
+<a href="https://github.com/Panchovix/stable-diffusion-webui-reForge" class="outlink">https://github.com/Panchovix/stable-diffusion-webu...</a><br>
+Forgeをさらにリファクタリングしたもの。新しい機能を試すことができる。Forgeよりは1111に近い。1111より明確に速い。省メモリ機能は1111と違い、メモリ容量に合わせて自動で有効化される。<br>
+更新頻度は低め。<br>
+起動引数に以下を設定すると速くなる(Torch 2.7.0以降のみ)。なお、VAEはsdxl-vae-fp16-fixを推奨。<blockquote id="content_block_21">
+--disable-xformers --attention-pytorch --cuda-malloc --cuda-stream --vae-in-fp16 --allow-fp16-accumulation
+</blockquote>
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_5_2"> ComfyUI <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+<a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" class="outlink" rel="nofollow">https://github.com/comfyanonymous/ComfyUI</a><br>
+多機能で高速で軽量。<span style="color:#ff0000;"><b>「ComfyUIでないとできない」ことが多い。</b></span>やる気がある人にはComfyUIを強く推奨。<br>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_5_3"> AUTOMATIC 1111 (更新停止、非推奨) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+devブランチ推奨。<span style="color:#ff0000;">2024年10月以降AUTOMATIC1111氏が不在で開発も停止(現在w-e-w氏による最低限の修正のみ)で事実上の開発中止。</span>古いExtensionを動かすために入れるのはあり。
+</div></div><div id="content_block_27" class="wiki-section-3"><div class="title-3"><h5 id="content_5_3_5"> VRAM8GBで動かす方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_3_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_27-body" class="wiki-section-body-3">
+1.webui-user.bat(Linuxはwebui-user.sh)のCOMMANDLINE_ARGSに--medvram-sdxl --precision halfを追加<br>
+2(任意, Windowsのみ).NVIDIA コントロールパネルの3D設定で「CUDA - システム メモリ フォールバック ポリシー」を「システム メモリ フォールバックなしを優先」にする<br>
+3.VAEは<a href="https://huggingface.co/madebyollin/sdxl-vae-fp16-fix" target="_blank" class="outlink" rel="nofollow">sdxl-vae-fp16-fix</a>を使う<br>
+4(任意).内蔵グラフィック搭載CPUならマザーボードの映像端子で映像を出力する。PC起動中につなぎなおした場合は再起動する<br>
+環境によるが、これで832x1216のhighres2倍が動くはず。動かないならTiled VAEを有効にする<br>
+<br>
+※fp8を使えば8GBでもmedvram無しで動くが、LoRAの複数適用が実質不可能になる、若干遅くなるなどのデメリットがあるのでfp8モードはおすすめしない<br>
+</div></div><div id="content_block_29" class="wiki-section-2"><div class="title-2"><h4 id="content_5_4"> Fooocus <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_29-body" class="wiki-section-body-2">
+<a href="https://github.com/lllyasviel/Fooocus" target="_blank" class="outlink" rel="nofollow">https://github.com/lllyasviel/Fooocus</a><br>
+難しい設定なしでSDXLを試せる。<br>
+導入が簡単で軽い。とっつきは良いが機能性が低いため凝ったことはやりにくい(最低限の機能しかない)。<br>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_5_5"> EasySdxlWebUi <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_5_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+<span style="color:#ff0000;"><b>gitとかが苦手な初心者向け</b></span><br>
+様々なcheckpointやLoRAなどを自動でDLする。文字通り簡単だが、お節介な機能もあるので取捨選択してモデル等をDLしたい人は通常のWebUIの方がいい。<br>
+<a href="https://github.com/Zuntan03/EasySdxlWebUi" target="_blank" class="outlink" rel="nofollow">https://github.com/Zuntan03/EasySdxlWebUi</a><blockquote id="content_block_32">
+<br>EasySdxlWebUiは簡単にSDXLで画像を生成できるようにします。<br>ワンクリックインストーラーで古いパソコンでも動作するforge版と、実績のあるAUTOMATIC1111版(a1111)に両対応しており、簡単に使い始められます。<br>forgeとa1111で多くの設定を共有しており、気軽に両方を使い分けられます。<br>画像の生成にはインストールだけでなく、webUIの設定、拡張機能のインストールと設定、モデルなどの入手、適切なパラメータ設定などが必要になりますが、これも自動的に設定します。<br>中身は通常のwebUIと同一ですので、経験が後々無駄になることもありません。
+</blockquote>
+<br>
+<a href="https://pc.watch.impress.co.jp/docs/column/nishikawa/1568551.html" class="outlink" rel="nofollow">https://pc.watch.impress.co.jp/docs/column/nishika...</a><br>
+PC Watchによる紹介(外部リンク)<br>
+</div></div><div id="content_block_34" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> SDXLのモデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_34-body" class="wiki-section-body-1">
+SDXLのモデルにはBaseとRefinerの2種類あることに注意。Refinerは任意で基本的に不要。<br>
+<a href="https://seesaawiki.jp/nai_ch/d/AnimagineXL3%2e0tips">Animagine XL 3.0 tips</a><br>
+本スレでSDXLが普及する発端となったモデル<br>
+<br>
+2026年7月27日時点でMMDiTモデルのAnimaとKrea2が主流でSDXLの利用者は減りつつある。<br>
+</div></div><div id="content_block_36" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> SDXLのVAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_36-body" class="wiki-section-body-1">
+SD1.x/2.xとの互換性はないため注意<br>
+<br>
+Stability AI(SDXL base)のVAEはfp16ではNaN演算が発生して動かない(真っ黒になる)ため、No-Half VAEの有効化必須。なお、fp32で動かすことになるのでVAEのVRAM使用量や計算量が2倍以上になる<br>
+それを修正しfp16で動くものがあるのでそちらの使用をおすすめする<br>
+<a href="https://huggingface.co/madebyollin/sdxl-vae-fp16-fix" class="outlink">https://huggingface.co/madebyollin/sdxl-vae-fp16-f...</a><br>
+<br>
+Q 生成画像が灰色っぽくなります。<br>
+A 主流のSDXLモデルのほとんどはVAEを内蔵しているためVAE:Noneでいいですが、たまに内蔵されていないものがあります。※厳密にはすべて内蔵している。内蔵とはcheckpoint埋め込みのVAEを差し替えるということ。<br>
+有名どころではjs2prony。その場合上記のsdxl-vae-fp16-fixを導入してVAEに指定しましょう。<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/xzpLr7KIvy.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/xzpLr7KIvy-s.png" border="0"></a><br>
+js2pronyVAEなし<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/FCIrGc5hsm.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/FCIrGc5hsm-s.png" border="0"></a><br>
+js2pronyVAEあり<br>
+</div></div><div id="content_block_38" class="wiki-section-1"><div class="title-1"><h3 id="content_8">トラブルシューティング <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_38-body" class="wiki-section-body-1">
+</div></div><div id="content_block_40" class="wiki-section-2"><div class="title-2"><h4 id="content_8_6">最後にVRAM使用量が急増 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_8_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_40-body" class="wiki-section-body-2">
+コンソールにVAEでNaN云々って出ている場合に該当する。<br>
+VAEがNaN演算を起こしたので自動的に重いfp32で計算している。そのため、VAEのVRAM使用量がfp16と比較して二倍以上になる。<br>
+</div></div><div id="content_block_42" class="wiki-section-3"><div class="title-3"><h5 id="content_8_6_6">解決策 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_8_6_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_42-body" class="wiki-section-body-3">
+fp16で動くものを使用する。<br>
+<a href="https://huggingface.co/madebyollin/sdxl-vae-fp16-fix" class="outlink">https://huggingface.co/madebyollin/sdxl-vae-fp16-f...</a><br>
+</div></div><div id="content_block_44" class="wiki-section-2"><div class="title-2"><h4 id="content_8_7">真っ黒になる(disable-nan-check有効時) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_8_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_44-body" class="wiki-section-body-2">
+Stability AI(SDXL base)のVAEはfp32(float)前提のためか、fp16では桁あふれによるNaN演算で動かない。<br>
+SDXL Base以外にCivitaiにあるほぼ全てのSDXL用VAEがその影響を受ける。<br>
+</div></div><div id="content_block_46" class="wiki-section-3"><div class="title-3"><h5 id="content_8_7_7">解決策 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_8_7_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_46-body" class="wiki-section-body-3">
+No-Half VAEを有効にする。なお、fp32で動かすことになるので<b>VAEのVRAM使用量や計算量が2倍以上になる</b><br>
+それを修正しfp16で動くものがあるのでそちらの使用をおすすめする<br>
+<a href="https://huggingface.co/madebyollin/sdxl-vae-fp16-fix" class="outlink">https://huggingface.co/madebyollin/sdxl-vae-fp16-f...</a><br>
+</div></div><div id="content_block_48" class="wiki-section-2"><div class="title-2"><h4 id="content_8_8"> 特定のプロンプトでノイズまみれになる <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_8_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_48-body" class="wiki-section-body-2">
+稀に以下の画像のように、黒い画像やノイズのみの画像が生成されてしまう事がある。<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/697BM5HcUK.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/697BM5HcUK-s.jpg" border="0"></a><br>
+hakomikan氏によると、1111 WebUI側のバグらしい。特定のプロンプトの組み合わせでテンソルの値が壊れて破綻を引き起こす。<br>
+わかりやすく言うと、プロンプトの組み合わせによってはプロンプトの強度指定時にWebUIの不具合で実際の強度がおかしくなる。<br>
+<a href="https://note.com/hakomikan/n/nb6dd68a1bd9e" class="outlink">https://note.com/hakomikan/n/nb6dd68a1bd9e</a><br>
+</div></div><div id="content_block_50" class="wiki-section-2"><div class="title-2"><h4 id="content_8_9"> プロンプトが76トークン以上になると出力が壊れる <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_8_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_50-body" class="wiki-section-body-2">
+Illustrious-XL系で発生しやすい。<br>
+Settings-&gt;Optimizations-&gt;Pad prompt/negative promptを無効にすると解消する。<br>
+<br>
+</div></div><div id="content_block_52" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> SDXLの学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5107766&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_52-body" class="wiki-section-body-1">
+<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac">ローカルの学習</a><br>
+※SDXL学習特有の問題点については編集時点で本スレで試行錯誤中<br>
+本スレの頻出質問<br>
+<a href="https://github.com/RedRayz/Kohya_lora_param_gui" target="_blank" class="outlink" rel="nofollow">https://github.com/RedRayz/Kohya_lora_param_gui</a><br>
+Kohya_LoRA_GUI使用時のVRAM8GB対策<br>
+GUI作者からの追記:8GB用のプリセットでVRAM不足になる場合はsd-scriptsを更新してください。VRAM消費が多いバグが修正されています。<br>
+<blockquote id="content_block_53">
+<br>0574今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 868c-Jm4m)<br>2024/01/15(月) 18:08:10.63ID:vI2UfoaK0<br>&gt;&gt;573<br>8GB学習行けたんか？<br>差しつかえなければ設定教えてほしいで<br> <br>0586今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fee7-h3fU)<br>2024/01/15(月) 19:12:32.30ID:K9MCdvrk0<br>&gt;&gt;574<br>313スレ39のプリセットに8GB用あるで<br> <br>0039今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ df30-Qq59)<br>2024/01/11(木) 10:12:37.38ID:Zvz0VIQ60<br>LoRA学習GUI用のサンプルプリセットにXL向けも置いてるで<br><a href="https://mega.nz/folder/ILdnzaxT#gTGQmcPUgdxKlLpIl9x__g" class="outlink">https://mega.nz/folder/ILdnzaxT#gTGQmcPUgdxKlLpIl9...</a>
+</blockquote>
+</div></div>
+</div>

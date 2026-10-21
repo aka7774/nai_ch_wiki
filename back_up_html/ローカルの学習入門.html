@@ -1,0 +1,665 @@
+<div class="user-area">
+新しいLoRAノートブックはこちら→<a href="https://seesaawiki.jp/nai_ch/d/kohya%5ftrain%5fnetwork%5fsimple">kohya_train_network_simple</a><br>
+<span style="color:#ff0000;">このページの内容は残念ながら古いので手順通りに試してもうまく動かないようです。</span><br>
+<span class="fsize" style="font-size:20px;">現在のLoRA学習法は<a href="https://seesaawiki.jp/nai_ch/d/Dreambooth%2dLoRA">Dreambooth-LoRA</a>を参照。</span><br>
+<br>
+画像生成は経験済みだが、まだ学習をやったことない人が対象。<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 学習方法の違い</a></li>
+<li class="list-1"><a href="#content_2"> 学習方法の選択</a></li>
+<li class="list-1"><a href="#content_3"> (解説)正則化画像について</a></li>
+<li class="list-1"><a href="#content_4"> LoRA(四国めたん)</a>
+<ul>
+<li class="list-2"><a href="#content_4_1"> リンク</a></li>
+<li class="list-2"><a href="#content_4_2"> ねらい</a></li>
+<li class="list-2"><a href="#content_4_3"> 1. Colabの起動</a></li>
+<li class="list-2"><a href="#content_4_4"> 1. ローカルの起動</a></li>
+<li class="list-2"><a href="#content_4_5"> 2. 画像の用意</a></li>
+<li class="list-2"><a href="#content_4_6"> 3. 画像のアップロード</a></li>
+<li class="list-2"><a href="#content_4_7"> 4. モデルファイル作成</a></li>
+<li class="list-2"><a href="#content_4_8"> 5．パラメーター設定</a></li>
+<li class="list-2"><a href="#content_4_9"> 6. コンセプト設定</a></li>
+<li class="list-2"><a href="#content_4_10"> 7. Trainボタンを押す</a></li>
+<li class="list-2"><a href="#content_4_11"> 8. ptファイルの合体</a></li>
+<li class="list-2"><a href="#content_4_12"> 9. 動作確認</a></li>
+<li class="list-2"><a href="#content_4_13"> 10. ptファイルのダウンロード</a></li>
+<li class="list-2"><a href="#content_4_14"> 11. 学習の再開</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> Hypernetwork(四国めたん)</a>
+<ul>
+<li class="list-2"><a href="#content_5_15"> 1. ファイルの用意</a></li>
+<li class="list-2"><a href="#content_5_16"> 2. ptファイル作成</a></li>
+<li class="list-2"><a href="#content_5_17"> 3. Train</a></li>
+<li class="list-2"><a href="#content_5_18"> 4. 動作確認</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 学習方法の違い <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<pre id="content_block_2" class="BOX">
+698 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0154-0d8E)[sage] 投稿日：2023/01/09(月) 19:11:42.17 ID:OMJT1FQ70 [4/5]
+HNとDBとTIとかの違いがいまいちわからんくなってきたわ
+</pre>
+<pre id="content_block_3" class="BOX">
+740 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9943-tb1I)[] 投稿日：2023/01/09(月) 19:58:06.59 ID:RzPG3voj0 [13/16]
+&gt;&gt;698
+キーワードを書いて、それが各トークンに分割される。各トークンはそれぞれ768個の重み＝特徴の強弱が設定されている。
+モデルは、現在の画像（最初はノイズ）とそのトークンの重みを与えられて、画像から少しノイズを取り除こうとすることを繰り返して絵を作る。
+モデルの形自体は決まっているが、モデル自体が持っているパラメータによって、画像のどんな特徴を重視（圧縮）して、どういう風に復元（展開）するかが変わる。
+
+TI：768×数〜数十トークン分の重みを割り出すことで、期待する特徴を備えたキーワードを作る
+どんなの特徴成分の組み合わせでターゲット画像が再現できるかを学習する。
+だから分かりやすい特徴や属性の組み合わせで再現できる物に向いている。
+
+HN：重みをモデルに伝える部分に入り込んで、期待する画像をモデルが作りやすいように変換する
+特徴成分全体を特定のパターンで変形する。
+だから特徴全体を揺れ動かす必要があるような、絵柄の学習に向いてるし、特徴自体の強化や矯正もできるので、物の学習もできる。
+</pre>
+<pre id="content_block_4" class="BOX">
+746 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9943-tb1I)[sage] 投稿日：2023/01/09(月) 20:00:44.89 ID:RzPG3voj0 [14/16]
+&gt;&gt;698　&gt;&gt;740 の続き
+DB：モデル自体のパラメータを学習する。
+TIやHNはあくまでテキストから特徴を作り出す部分を改善するもの。
+つまりできる限りそのモデルの力を引き出すことはできても、そもそも元からそのモデルが作ることが困難な絵は作れない。
+DBならモデルのパラメータ自身を学習するのでその制限を超えられる。（もちろん、SDの仕組みとモデルの形自体からくる得意不得意からは逃れられない）
+
+例えば、部品メーカーが、幾万とある珍しい部品の画像を製品番号から出したいとする。
+そうなると、まずそういう珍しい画像を精密に描画できるだけの能力がモデルにないかもしれないし、
+製品番号のトークンから、適切な素材の重みにHNで変換しようとしても、
+よくあるプロンプトから逸脱しているので、とても深く大きいHNが必要になりそうなことが予想される。
+そういう場合はモデルを作ったほうが良い。
+他にも、そのモデルが弱い特徴を持った画像を追加学習させることで、上手く行けばその要素を強化したりもできる。
+</pre>
+それぞれの学習方法や詳細は個別ページにて<br>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 学習方法の選択 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+<br>
+TI, DB, HN, DA, Loraなど。<br>
+どれがいいかは目的に応じて変わるので、当面は全部やって比較検討するのがいい。<br>
+1111以外を使う方法もあるが、1111を使えば全部できる。<br>
+<br>
+ここでは1111を使って、Lora(DB)とHNを試してみた。<br>
+用意した環境は次の2つ。<br>
+<ul id="content_block_7" class="list-1">
+<li> VRAM 8GBのNVIDIA GPUを搭載したローカルPC</li>
+<li> 無料Colab</li>
+</ul>
+<br>
+細かい調整は省き、再現性のある手順を示す。<br>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> (解説)正則化画像について <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+<br>
+<div id="content_block_10">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_10-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_10-inside" class="toggle-display">
+本来の意味的には、<br>
+「Class Prompt」は「girl」で、<br>
+「Instance Prompt」は「shikoku metan」になる。<br>
+<br>
+よって、正則化画像としては、「girl」でありながら、<br>
+「shikoku metan」ではない画像を用意することで、<br>
+「shikoku metan」の特徴が具体的にどの部分を示すかを、<br>
+データセット画像と正則化画像の差分で示すという仕組みのはず。<br>
+<br>
+きちんと用意するなら、「1girl」だけの画像生成を行うなどの方法が考えられる。<br>
+背景の影響も受けるので、simple backgroundにして、Katanukiを使って・・・。<br>
+<br>
+しかし、正則化画像の用意は大変であり、うまくいかない事も多かった。<br>
+「Instance Prompt」も他の名詞につられない独立した名前(昔で言うsks、今は非推奨)が良いという話があり、<br>
+ここでも「skkmtn」に変えているのだが、<br>
+「Class Promptも意味不明な文字にしよう」という流れがあったりして定まらなかった。<br>
+<br>
+そんな中で「ただの透明画像を正則化画像に指定するとなぜか結果が良くなる」流派が現れた。<br>
+研究自体の試行回数が少ないので確かとは言えないが、掲載の手順ではこの流儀を採用している。<br>
+無意味だと考えるなら、toukaを指定しなければ正則化画像なしで動作する。
+</div>
+</div>
+</div></div><div id="content_block_13" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> LoRA(四国めたん) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_13-body" class="wiki-section-body-1">
+<br>
+Dreamboothのオプションとして利用可能。<br>
+DB比で高速、生成されるファイルも小さい。<br>
+完成度についてはDBに匹敵するほどはある。現在主要のファインチューニングとなっている。<br>
+<ul id="content_block_14" class="list-1">
+<li> 解像度512</li>
+<li> 所要時間はローカル(2070)だと15分程度、Colabだと全部で1〜2時間くらい</li>
+<li> 実用的(着せ替えなどをして遊べる)</li>
+</ul>
+<br>
+Colabでは解像度768で動作することも確認済み。<br>
+<br>
+追記<br>
+<ul id="content_block_15" class="list-1">
+<li> --test-loraは指定しなくても良くなった</li>
+<li> ckptは自分でGenerateするまでは出力されなくなった</li>
+<li> 2022-12-13アップデートで設定項目が変わった</li>
+<li> NAI VRAM 8GBでも動作することを確認した</li>
+<li> 最小限の設定項目で実施する(ひとまずデフォルト値を信じる)</li>
+</ul>
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_4_1"> リンク <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+<ul id="content_block_18" class="list-1">
+<li> 公式リポジトリ│<a href="https://github.com/cloneofsimo/lora" class="outlink">https://github.com/cloneofsimo/lora</a></li>
+<li> webで使える🤗のloraツール│<a href="https://huggingface.co/spaces/ysharma/Low-rank-Adaptation" class="outlink">https://huggingface.co/spaces/ysharma/Low-rank-Ada...</a></li>
+</ul>
+<br>
+dreambooth使わないから外してて知らなかったけどすでにLORA実装してるらしいじゃん！<br>
+Commits見ると8日にはもう取り入れてるぞ<br>
+引用：ふたばより<br>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_4_2"> ねらい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+<ul id="content_block_21" class="list-1">
+<li> Colabは早いと3時間程度でGPUが使用停止になるので学習時間の短縮も図る</li>
+<li> できれば一回のセッションで学習を完了させたい</li>
+<li> Drive容量も含めて無料で済ませたい</li>
+</ul>
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_4_3"> 1. Colabの起動 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+<ul id="content_block_24" class="list-1">
+<li> Colab <a href="https://seesaawiki.jp/nai_ch/d/%c6%fe%cc%e7%cd%d1Notebook">入門用Notebook</a></li>
+</ul>
+<br>
+無料ColabだとNAIはなぜか動かなかった。アップデートで直った可能性はある。(後述)<br>
+K80になったことは無いけどT4が引けてるか一応確認するといいかも。<br>
+</div></div><div id="content_block_26" class="wiki-section-2"><div class="title-2"><h4 id="content_4_4"> 1. ローカルの起動 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_26-body" class="wiki-section-body-2">
+<br>
+Extensions から Dreambooth をインストールする<br>
+</div></div><div id="content_block_28" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5"> 2. 画像の用意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_28-body" class="wiki-section-body-2">
+<br>
+Colabだと1111の起動に15分+ダウンロード時間ぶんかかるので待ってる間にやる。<br>
+<br>
+ダウンロード<ul id="content_block_29" class="list-1">
+<li> <a href="https://image02.seesaawiki.jp/n/h/nai_ch/aQEovutlvq.zip" class="outlink">https://image02.seesaawiki.jp/n/h/nai_ch/aQEovutlv...</a> skkmtn.zipにリネームする</li>
+<li> <a href="https://image02.seesaawiki.jp/n/h/nai_ch/MHIWw0HVJD.zip" class="outlink">https://image02.seesaawiki.jp/n/h/nai_ch/MHIWw0HVJ...</a> touka.zipにリネームする</li>
+</ul>
+<br>
+中身は学習用データセット14枚<ul id="content_block_30" class="list-1">
+<li> <a href="https://zunko.jp/con_illust.html" class="outlink">https://zunko.jp/con_illust.html</a></li>
+<li> 16枚からビーチチェアとデフォルメを除いた</li>
+</ul>
+<br>
+解像度768版<br>
+<div id="content_block_31">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_31-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_31-inside" class="toggle-display">
+中身を解凍して1つに混ぜてskkmtn.zipとして再圧縮してください(5MB制限のため)<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/CTlFvCz0og.zip" class="outlink">https://image01.seesaawiki.jp/n/h/nai_ch/CTlFvCz0o...</a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/BH7XXOAncb.zip" class="outlink">https://image02.seesaawiki.jp/n/h/nai_ch/BH7XXOAnc...</a><br>
+透過画像200枚<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/lh1xkGmvts.zip" class="outlink">https://image02.seesaawiki.jp/n/h/nai_ch/lh1xkGmvt...</a>
+</div>
+</div>
+</div></div><div id="content_block_34" class="wiki-section-2"><div class="title-2"><h4 id="content_4_6"> 3. 画像のアップロード <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_34-body" class="wiki-section-body-2">
+<br>
+ここからは1111の起動後にやる。<br>
+<ul id="content_block_35" class="list-1">
+<li> あると便利なExtension(入門用Notebookでは自動インストール)
+<ul class="list-2">
+<li> Image Browser</li>
+<li> Filer
+<ul class="list-3">
+<li> <a href="https://github.com/aka7774/sd_filer" class="outlink">https://github.com/aka7774/sd_filer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul id="content_block_36" class="list-1">
+<li> Filerのimagesに2つのzipをドロップする
+<ul class="list-2">
+<li> あるいは webui直下にzipファイル名のディレクトリを作りzipの中身を展開する</li>
+</ul>
+</li>
+<li> Image BrowserのOthersで skkmtn と touka を選択する
+<ul class="list-2">
+<li> 画像が見えることを確認する</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_38" class="wiki-section-2"><div class="title-2"><h4 id="content_4_7"> 4. モデルファイル作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_38-body" class="wiki-section-body-2">
+<br>
+「Dreambooth」タブを開いた後、真ん中の「Create Model」タブが開かれていること確認する。<br>
+<ul id="content_block_39" class="list-1">
+<li> Name: skkmtn</li>
+<li> Source Checkpoint: Anything-V3.0-pruned-fp16.ckpt
+<ul class="list-2">
+<li> ローカルだと animefull-final-pruned.ckpt でも動くかも</li>
+</ul>
+</li>
+</ul>
+<br>
+以前の設定<br>
+<div id="content_block_40">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_40-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_40-inside" class="toggle-display">
+<ul id="content_block_41" class="list-1">
+<li> Scheduler: pndm</li>
+</ul>
+</div>
+</div>
+<br>
+「Create」ボタンを押す。<br>
+<br>
+<div id="content_block_43">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_43-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_43-inside" class="toggle-display">
+Colab で animefull-final-pruned.ckpt が止まる例<br>
+<pre id="content_block_44" class="PLAIN-BOX">
+Loading model from checkpoint.
+Loading checkpoint...
+v1 model loaded.
+Creating scheduler...
+Converting unet...
+Converting vae...
+Converting text encoder...
+^C
+</pre>
+<br>
+このまま強引にTrainまで進めても結局エラーで動かない。<br>
+<br>
+<pre id="content_block_45" class="PLAIN-BOX">
+Returning result: Exception training model: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/content/stable-diffusion-webui/models/dreambooth/skkmtn/working/tokenizer'. Use `repo_type` argument if needed.
+</pre>
+</div>
+</div>
+</div></div><div id="content_block_48" class="wiki-section-2"><div class="title-2"><h4 id="content_4_8"> 5．パラメーター設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_48-body" class="wiki-section-body-2">
+<br>
+左の「Model」ドロップダウンに「skkmtn」が表示される。<br>
+真ん中の「Parameters」タブを押す。<br>
+<br>
+明記されていない項目は初期値のまま。<br>
+<br>
+Settings<ul id="content_block_49" class="list-1">
+<li> 変更なし</li>
+</ul>
+<br>
+以前の設定<br>
+<div id="content_block_50">
+<div class="toggle-title"><a id="region_plugin_content_5" onclick="toggleRegion(this,'content_block_50-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_50-inside" class="toggle-display">
+Settings<ul id="content_block_51" class="list-1">
+<li> Training Steps Per Image (Epochs): 100</li>
+<li> Max Training Steps: 1400</li>
+<li> Learning Rate: 1e-3</li>
+<li> Resolution: 512</li>
+<li> Apply Horizontal Flip: オフ</li>
+</ul>
+<br>
+Learning Rateは不当に高いかも。この辺の研究参加者が増えることに期待。<br>
+<br>
+Training Steps Per Image (Epochs)はデフォルト値が100になった。<br>
+Learning Rateは3つに分かれて、Lora関係は0.002になった。<br>
+<br>
+Apply Horizontal Flipをオフにするのは左右非対称のキャラをDBする名残なので、左右逆になってもいいキャラではオンでも良さげ。
+</div>
+</div>
+<br>
+Advanced<ul id="content_block_53" class="list-1">
+<li> Use LORA: オン</li>
+</ul>
+<ul id="content_block_54" class="list-1">
+<li> Use 8bit Adam: オン</li>
+<li> Mixed Precision: fp16</li>
+<li> Memory Attention: xformers</li>
+</ul>
+<br>
+これはVRAM節約と高速化のために設定していると思うのでお好みで。<br>
+つけないとVRAM 8GBでは動かないし、時間は倍近くかかるようになる。<br>
+<br>
+以前の設定<br>
+<div id="content_block_55">
+<div class="toggle-title"><a id="region_plugin_content_6" onclick="toggleRegion(this,'content_block_55-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_55-inside" class="toggle-display">
+<ul id="content_block_56" class="list-1">
+<li> Train Text Encoder: オフ</li>
+</ul>
+<br>
+Train Text Encoderはオンだとうまくいかない報告がいくつかあり。<br>
+やはりこれは不具合だったらしく修正されたらしい。<br>
+</div>
+</div>
+</div></div><div id="content_block_59" class="wiki-section-2"><div class="title-2"><h4 id="content_4_9"> 6. コンセプト設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_59-body" class="wiki-section-body-2">
+<ul id="content_block_60" class="list-1">
+<li> Classification Dataset Directory: touka</li>
+<li> Dataset directory: skkmtn</li>
+<li> Instance Prompt: skkmtn</li>
+</ul>
+<br>
+Instance Tokenと間違えないように。<br>
+Class Promptも入れたほうが良さそうとか色々あるけどまずは最低限で。<br>
+もしもVRAMが足りなくてエラーになるのならtoukaは外すことが出来る。<br>
+<br>
+<span style="color:#ff0000;">Instance promptはOptionalではなく、入れないとUnable lbuild Concents.エラーが出る。</span><br>
+</div></div><div id="content_block_62" class="wiki-section-2"><div class="title-2"><h4 id="content_4_10"> 7. Trainボタンを押す <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_62-body" class="wiki-section-body-2">
+<br>
+ローカル2070だと10分程度で終わる。<br>
+Colabでも1時間以内には終わるはず。<br>
+</div></div><div id="content_block_64" class="wiki-section-2"><div class="title-2"><h4 id="content_4_11"> 8. ptファイルの合体 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_64-body" class="wiki-section-body-2">
+<br>
+左側の「Lora Model」から使いたいptファイルを指定する。<br>
+<br>
+現在の「Stable Diffusion checkpoint」の選択に関係なく、「4. モデルファイル作成」の時に指定したckptがベースになる。<br>
+なので別のckptにLoraを適用することは出来ないはず。<br>
+<br>
+Trainによって以下の6つのファイルが出来ているはず。<br>
+ここでは「skkmtn_1400.pt」を選択する。<br>
+<br>
+skkmtn_1000.pt<br>
+skkmtn_1000_txt.pt<br>
+skkmtn_1400.pt　←これ<br>
+skkmtn_1400_txt.pt<br>
+skkmtn_500.pt<br>
+skkmtn_500_txt.pt<br>
+<br>
+「Generate Ckpt」ボタンを押す<br>
+</div></div><div id="content_block_66" class="wiki-section-2"><div class="title-2"><h4 id="content_4_12"> 9. 動作確認 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_66-body" class="wiki-section-body-2">
+<br>
+「Generate Ckpt」が完了してから「Stable Diffusion checkpoint」を更新すると、「skkmtn_1400_lora.ckpt」が追加されている。<br>
+<ul id="content_block_67" class="list-1">
+<li> プロンプトを skkmtn にして実行</li>
+</ul>
+<blockquote id="content_block_68">
+masterpiece, best quality,1girl,skkmtn
+</blockquote>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/V9yqhtWOWZ.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/V9yqhtWOWZ-s.png" border="0"></a><br>
+<ul id="content_block_69" class="list-1">
+<li> うまくいってればワードを追加する</li>
+</ul>
+<blockquote id="content_block_70">
+masterpiece, best quality,1girl,skkmtn,school costume
+</blockquote>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/FMxCu3WqiN.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/FMxCu3WqiN-s.png" border="0"></a><br>
+<blockquote id="content_block_71">
+masterpiece, best quality,1girl,skkmtn,nude
+</blockquote>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/pPhbIXuQrz.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/pPhbIXuQrz-s.png" border="0"></a><br>
+<br>
+(過学習だと思ったらLearning Rateを下げて再挑戦)<br>
+</div></div><div id="content_block_73" class="wiki-section-2"><div class="title-2"><h4 id="content_4_13"> 10. ptファイルのダウンロード <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_73-body" class="wiki-section-body-2">
+<br>
+models/lora にファイルが出来ている。<br>
+Colabだと消えてしまうのでsd_filerを使ってダウンロードする。(ほかの方法でも良い)<br>
+<ul id="content_block_74" class="list-1">
+<li> 「Filer」タブの「Loras」タブの「Active」タブで欲しいものにチェックを入れて「Download」</li>
+<li> 容量が少ないので「Select All」でも大丈夫</li>
+<li> ダウンロードリンクが表示されるのでクリックする</li>
+</ul>
+<br>
+ダウンロードしたファイルは models/lora に設置すれば「Lora Model」の一覧に表示される。<br>
+sd_filerを使ってアップロードすることも出来る。<br>
+</div></div><div id="content_block_76" class="wiki-section-2"><div class="title-2"><h4 id="content_4_14"> 11. 学習の再開 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_4_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_76-body" class="wiki-section-body-2">
+<br>
+再開できていないバグがあるのではないかという話だったけど最新でどうなってるか不明。<br>
+<br>
+models/dreambooth/skkmtn を保存しておけば続きから学習できる。<br>
+skkmtn_1400_lora.ckpt ファイルに対して追いLoraすることもできる。(意味的には異なるはず)<br>
+</div></div><div id="content_block_78" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> Hypernetwork(四国めたん) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_78-body" class="wiki-section-body-1">
+<br>
+108スレの571、572、575、576を参考にした。<br>
+<br>
+モデルは skkmtn_1400_lora.ckpt を選択。<br>
+</div></div><div id="content_block_80" class="wiki-section-2"><div class="title-2"><h4 id="content_5_15"> 1. ファイルの用意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_5_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_80-body" class="wiki-section-body-2">
+<br>
+画像はLoraと一緒。<br>
+<br>
+以下の内容だけが記載されたファイルを<br>
+C:\stable-diffusion-webui\textual_inversion_templates\mb1f.txt (どこでもいい)に保存<br>
+<pre id="content_block_81" class="BOX">
+masterpiece, best quality, 1girl, face
+</pre>
+</div></div><div id="content_block_83" class="wiki-section-2"><div class="title-2"><h4 id="content_5_16"> 2. ptファイル作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_5_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_83-body" class="wiki-section-body-2">
+<br>
+「Train」タブを開いた後、「Create hypernetwork」タブを開きます。<br>
+<ul id="content_block_84" class="list-1">
+<li> Name: skkmtn</li>
+<li> Enter hypernetwork layer structure: 1, 2, 2, 1</li>
+<li> Select activation function of hypernetwork. Recommended : Swish / Linear(none): mish</li>
+</ul>
+</div></div><div id="content_block_86" class="wiki-section-2"><div class="title-2"><h4 id="content_5_17"> 3. Train <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_5_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_86-body" class="wiki-section-body-2">
+<br>
+「Train」タブを開く<br>
+<ul id="content_block_87" class="list-1">
+<li> Hypernetwork: skkmtn.pt を選択</li>
+<li> Hypernetwork Learning rate: 0.00001(デフォルト)</li>
+<li> Dataset directory: skkmtn</li>
+<li> Prompt template file: C:\stable-diffusion-webui\textual_inversion_templates\mb1f.txt (用意したもの)</li>
+<li> Gradient accumulatelion steps: 14</li>
+<li> Max steps: 182</li>
+<li> shuffle tags by "," when creating prompts: オン</li>
+<li> Choose latent sampling method: deterministic</li>
+</ul>
+<br>
+スレでの指定は180だったが、14の倍数できりよく182とした。<br>
+プレビュー画像を出すとVRAM不足で落ちるので注意。(今回は500以下だから関係ない)<br>
+<br>
+30分ちょっとかかる。<br>
+</div></div><div id="content_block_89" class="wiki-section-2"><div class="title-2"><h4 id="content_5_18"> 4. 動作確認 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989418&amp;part=content_5_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_89-body" class="wiki-section-body-2">
+<br>
+<ul id="content_block_90" class="list-1">
+<li> ptが出来上がっているはずなので、通常通り Hypernetwork のプルダウンから選ぶ</li>
+<li> Generate</li>
+</ul>
+<blockquote id="content_block_91">
+masterpiece, best quality, masterpiece, skkmtn
+</blockquote>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/_2uxhE4HZW.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/_2uxhE4HZW-s.png" border="0"></a><br>
+<blockquote id="content_block_92">
+masterpiece, best quality, 1girl, face, skkmtn
+</blockquote>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/5U0aplLM7z.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/5U0aplLM7z-s.png" border="0"></a><br>
+<blockquote id="content_block_93">
+masterpiece, best quality, 1girl, skkmtn, bikini
+</blockquote>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/8LEogCNweQ.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/8LEogCNweQ-s.png" border="0"></a><br>
+<br>
+旧バージョン<br>
+<div id="content_block_94">
+<div class="toggle-title"><a id="region_plugin_content_7" onclick="toggleRegion(this,'content_block_94-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_94-inside" class="toggle-display">
+<div id="content_block_95" class="wiki-section-1"><div class="title-1"><h3> 学習元画像の準備</h3></div>
+<div id="content_block_95-body" class="wiki-section-body-1">
+<ul id="content_block_96" class="list-1">
+<li> ハローアスカをして10枚の画像を生成する</li>
+<li> 「C:\helloasuka」の中に入れる</li>
+</ul>
+<br>
+プロンプトに「helloasuka」を入れることで学習を確認する。<br>
+(学習前はハローアスカは出てこない)<br>
+</div></div><div id="content_block_98" class="wiki-section-2"><div class="title-2"><h4> 学習の事前準備(省略)</h4></div>
+<div id="content_block_98-body" class="wiki-section-body-2">
+<ul id="content_block_99" class="list-1">
+<li> 何らかの方法で背景を透過させてから白背景にする
+<ul class="list-2">
+<li> Photoshopとか、Ralpha(フリーソフト)とか</li>
+<li> Webアプリもあるけどあんまり精度が良くないっぽい</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_101" class="wiki-section-1"><div class="title-1"><h3> Dreambooth</h3></div>
+<div id="content_block_101-body" class="wiki-section-body-1">
+</div></div><div id="content_block_103" class="wiki-section-2"><div class="title-2"><h4> 自分のPC</h4></div>
+<div id="content_block_103-body" class="wiki-section-body-2">
+<ul id="content_block_104" class="list-1">
+<li> 画像生成までの環境構築ができていることが前提。</li>
+<li> Windows</li>
+<li> 1111を最新にする。</li>
+</ul>
+</div></div><div id="content_block_106" class="wiki-section-3"><div class="title-3"><h5> インストール</h5></div>
+<div id="content_block_106-body" class="wiki-section-body-3">
+<ul id="content_block_107" class="list-1">
+<li> Extensions から Dreambooth をインストールする</li>
+<li> stable-diffusion-webui\venv\Scripts\Activate.ps1 (もしくはbat) を開く</li>
+</ul>
+<blockquote id="content_block_108">
+pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 --extra-index-url <a href="https://download.pytorch.org/whl/cu116" class="outlink">https://download.pytorch.org/whl/cu116</a>
+</blockquote>
+<ul id="content_block_109" class="list-1">
+<li> 1111を一度終了して起動しなおす</li>
+</ul>
+</div></div><div id="content_block_111" class="wiki-section-2"><div class="title-2"><h4> 無料版Colab</h4></div>
+<div id="content_block_111-body" class="wiki-section-body-2">
+<br>
+NAIleakの自動インストールコマンドはここに書けないので入門ではAnything v3を使う。<br>
+<ol id="content_block_112" class="list-1">
+<li> <a href="https://www.python.jp/train/experience/colab.html" class="outlink">https://www.python.jp/train/experience/colab.html</a></li>
+<li> <a href="https://www.python.jp/train/experience/exec-python1.html" class="outlink">https://www.python.jp/train/experience/exec-python...</a></li>
+<li> HuggingFaceのトークンを手に入れる <a href="https://huggingface.co/settings/tokens" class="outlink">https://huggingface.co/settings/tokens</a></li>
+<li> 「1+1」のかわりに<a href="https://seesaawiki.jp/nai_ch/d/%c6%fe%cc%e7%cd%d1Notebook">入門用Notebook</a>の内容をコピペして実行</li>
+<li> gradioのshare URLがログの下のほうに書いてあるのでブラウザで開く</li>
+<li> パスワードは左の{x}ってとこ押したら書いてある</li>
+</ol>
+<br>
+入門が終わったらNotebookは本格的なものに乗り換えたり、<br>
+自分でカスタマイズして使うとええやでー<br>
+</div></div><div id="content_block_114" class="wiki-section-2"><div class="title-2"><h4> 1. モデルファイル作成</h4></div>
+<div id="content_block_114-body" class="wiki-section-body-2">
+<br>
+「Dreambooth」タブを開いた後、「Create Model」タブを開きます。<br>
+<ul id="content_block_115" class="list-1">
+<li> Name: helloasuka</li>
+<li> Source Checkpoint: ハローアスカに使ったモデルのckpt</li>
+<li> Scheduler: ddim</li>
+</ul>
+<br>
+「Model」が「helloasuka」になってればたぶんOK。<br>
+</div></div><div id="content_block_117" class="wiki-section-2"><div class="title-2"><h4> 2．トレーニング設定</h4></div>
+<div id="content_block_117-body" class="wiki-section-body-2">
+<br>
+「Train Model」タブを開く。<br>
+<br>
+「Training Wizard(Person)」ボタンを押してもいいしデフォルト値のままでもいい。<br>
+<br>
+Settings<ul id="content_block_118" class="list-1">
+<li> Dataset directory: C:\helloasuka
+<ul class="list-2">
+<li> Colabなら /content/stable-diffusion-webui/outputs/txt2img-images を指定するとか</li>
+<li> 左側のファイルアイコンで、フォルダを作ったり画像をアップロードできる</li>
+</ul>
+</li>
+<li> Save Checkpoint Frequency: 0</li>
+<li> Save Preview(s) Frequency: 0</li>
+<li> Instance prompt: helloasuka</li>
+</ul>
+<br>
+<span style="color:#ff0000;">Instance promptはOptionalではなく、入れないとUnable lbuild Concents.エラーが出る。</span><br>
+<br>
+Advanced<ul id="content_block_119" class="list-1">
+<li> Auto-Adjust(WIP) ボタンを押す</li>
+</ul>
+<br>
+CPUでやる場合<ul id="content_block_120" class="list-1">
+<li> Use CPU Only (SLOW): オン</li>
+<li> Use 8bit Adam: オフ</li>
+<li> Mixed Precision: no</li>
+<li> 1000Stepsで12.5時間かかった(4700U)</li>
+</ul>
+</div></div><div id="content_block_122" class="wiki-section-2"><div class="title-2"><h4> 3. 動作確認</h4></div>
+<div id="content_block_122-body" class="wiki-section-body-2">
+<ul id="content_block_123" class="list-1">
+<li> ckptが出来上がっているはずなので、通常通り Stable Diffusion checkpoint のプルダウンから選ぶ</li>
+<li> プロンプトを helloasuka にして実行(影響を確認)
+<ul class="list-2">
+<li> うまくいってればワードを追加する(入門では良い変化にならないかも)</li>
+</ul>
+</li>
+<li> プロンプトを 1girl など helloasuka 以外にして実行(影響されていないことを確認)</li>
+</ul>
+</div></div><div id="content_block_125" class="wiki-section-1"><div class="title-1"><h3> Hypernetwork</h3></div>
+<div id="content_block_125-body" class="wiki-section-body-1">
+<br>
+実はCPUでも動く。100倍くらい時間がかかる。<br>
+</div></div><div id="content_block_127" class="wiki-section-2"><div class="title-2"><h4> インストール</h4></div>
+<div id="content_block_127-body" class="wiki-section-body-2">
+</div></div><div id="content_block_129" class="wiki-section-3"><div class="title-3"><h5> CPUで動かす場合</h5></div>
+<div id="content_block_129-body" class="wiki-section-body-3">
+<blockquote id="content_block_130">
+set COMMANDLINE_ARGS=--skip-torch-cuda-test --no-half --no-half-vae
+</blockquote>
+xformersをオフにしないといけないかも。<br>
+<span style="color:#ff0000;">RuntimeError: Input type (torch.FloatTensor) and weight type (torch.cuda.FloatTensor) should be the same</span>が出るため。<br>
+</div></div><div id="content_block_132" class="wiki-section-2"><div class="title-2"><h4> 1. ptファイル作成</h4></div>
+<div id="content_block_132-body" class="wiki-section-body-2">
+<br>
+「Train」タブを開いた後、「Create hypernetwork」タブを開きます。<br>
+<ul id="content_block_133" class="list-1">
+<li> Name: helloasuka</li>
+<li> Enter hypernetwork layer structure: 1,1</li>
+<li> Select activation function of hypernetwork. Recommended : Swish / Linear(none): relu</li>
+<li> あとはいじらない</li>
+</ul>
+</div></div><div id="content_block_135" class="wiki-section-2"><div class="title-2"><h4> 2. Train</h4></div>
+<div id="content_block_135-body" class="wiki-section-body-2">
+<br>
+「Train」タブの中の「Train」タブを開く<br>
+<ul id="content_block_136" class="list-1">
+<li> Hypernetwork: helloasuka.pt を選択</li>
+<li> Hypernetwork Learning rate: 0.0005</li>
+<li> Dataset directory: C:\helloasuka</li>
+<li> Prompt template file: C:\****\stable-diffusion-webui\textual_inversion_templates\hypernetwork.txt</li>
+<li> Max steps: 1000</li>
+<li> Save an image to log directory every N steps, 0 to disable: 1500</li>
+<li> Save a copy of embedding to log directory every N steps, 0 to disable: 1500</li>
+</ul>
+<br>
+生成中に画像を作るには追加のVRAMが必要。<br>
+VRAM 8GBの環境で生成するとCUDA out of memoryが出て終わり。<br>
+<br>
+Save a copy〜を0にするとエラーが起きる。1500ならエラーは起きなかった。<br>
+<span style="color:#ff0000;">FileNotFoundError: [Errno 2] No such file or directory: 'textual_inversion\\2022-11-18\\helloasuka\\hypernetwork_loss.csv'</span><br>
+</div></div><div id="content_block_138" class="wiki-section-2"><div class="title-2"><h4> 3. 動作確認</h4></div>
+<div id="content_block_138-body" class="wiki-section-body-2">
+<ul id="content_block_139" class="list-1">
+<li> ptが出来上がっているはずなので、通常通り Hypernetwork のプルダウンから選ぶ</li>
+<li> Generate (入門ではプロンプトによらず影響してしまっているかも)</li>
+</ul>
+</div></div><div id="content_block_141" class="wiki-section-3"><div class="title-3"><h5> HN適用の一例</h5></div>
+<div id="content_block_141-body" class="wiki-section-body-3">
+<br>
+masterpiece, best quality, masterpiece, helloasuka<br>
+Seed: 3506376363<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/Z685SlIIqs.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Z685SlIIqs-s.png" border="0"></a><br>
+</div></div><div id="content_block_143" class="wiki-section-1"><div class="title-1"><h3> Embedding</h3></div>
+<div id="content_block_143-body" class="wiki-section-body-1">
+<br>
+挑戦者求む<br>
+</div></div><div id="content_block_145" class="wiki-section-1"><div class="title-1"><h3> Dream Artist</h3></div>
+<div id="content_block_145-body" class="wiki-section-body-1">
+<br>
+挑戦者求む
+</div></div>
+</div>
+</div>
+</div></div>
+</div>

@@ -1,0 +1,275 @@
+<div class="user-area">
+（<b>浦島太郎のために ＞ 2023-07-11 スレを読み書きするさまざまな方法が提案される</b>　を新規ページへ移行・整形したものです）<br>
+<br>
+前日の騒動を経て、未明のうちに5chをWebブラウザ、PCの専ブラ、スマホの専ブラで閲覧・書き込みする方法が提案された。<br>
+<pre id="content_block_1" class="BOX">
+5chの専ブラ・APIを取り巻く状況は今後も変化する可能性が高いため、このページに載っている情報が古くなっている場合があります。
+常に専門板の各専ブラスレで最新の情報を手に入れるように心がけましょう。
+
+ソフトウェア板
+https://egg.5ch.net/software/
+</pre>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> PC用</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> Webブラウザ（Chrome）</a></li>
+<li class="list-2"><a href="#content_1_2"> Jane Style（PC版）</a></li>
+<li class="list-2"><a href="#content_1_3"> Siki</a></li>
+<li class="list-2"><a href="#content_1_4"> Live5ch</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2">Android</a>
+<ul>
+<li class="list-2"><a href="#content_2_5"> chmate</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3">iOS</a>
+<ul>
+<li class="list-2"><a href="#content_3_6"> twinkle</a></li>
+<li class="list-2"><a href="#content_3_7"> mae2ch</a></li>
+<li class="list-2"><a href="#content_3_8"> BB2C</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<div id="content_block_2" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> PC用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_2-body" class="wiki-section-body-1">
+</div></div><div id="content_block_4" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> Webブラウザ（Chrome） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_4-body" class="wiki-section-body-2">
+Webブラウザでの閲覧時に見やすくする拡張機能やスタイルシートを導入する。<br>
+<pre id="content_block_5" class="BOX">
+なんJNVA部★233（https://fate.5ch.net/test/read.cgi/liveuranus/1688887977/711）
+
+711 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ d70d-knyK)[] 投稿日：2023/07/11(火) 00:57:12.46 ID:1Xnph/oM0
+公開した
+
+使い方
+5ch style formatをインストールする
+https://chrome.google.com/webstore/detail/5ch-style-format/aidnencnedgaflbgacmcbcokcpancdac
+tampermonkeyなどユーザースクリプトが動かせる拡張機能をインストールする
+https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
+greasyforkから5ch style formatのポップアップ表示をサムネ表示に書き換えるスクリプトをインストールする
+https://greasyfork.org/ja/scripts/470545-5ch-style-thumbnailer
+</pre>
+<br>
+イメージ<br>
+<a href="https://imgur.com/HeKBwhE.png"><img src="https://imgur.com/HeKBwhE.png" border="0" width="300"></a><br>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> Jane Style（PC版） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+起動する前に「account.cfg」を削除する、という対処法が見つかる。（古くなったため折りたたみ）<br>
+<div id="content_block_8">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_8-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_8-inside" class="toggle-display">
+<pre id="content_block_9" class="BOX">
+265 名前：ジェーン使いの名無しさん[] 投稿日：2023/07/11(火) 02:50:47 ID:CLjNQ34E0 [14/17]
+新規にtxtファイルを作成
+以下の四行をコピペして保存
+@echo off
+del /Q account.cfg
+cmd.exe /c start Jane2ch.exe
+Exit
+
+ファイル名を　山下(笑).bat　に変更　※ファイル名は何でもいいが後で分かりやすくするため
+この山下(笑).batをJaneStyaleの入っているフォルダに移動
+さらにこの「batファイルへのショートカット」を任意の場所へ作成
+これでJaneの起動前にaccount.cfgが毎回削除される
+※Janeファイル名指定をフルパスにしてないのは人によってインスコ先が異なる可能性があるため
+これ大事
+</pre>
+</div>
+</div>
+<br>
+Jane2ch.exeをバイナリエディタで直接編集する方法が紹介される。（ファイルのバックアップをとってから自己責任でお願いします）<br>
+<br>
+【StableDiffusion】AIｴﾛ画像情報交換28 <br>
+<a href="https://mercury.bbspink.com/test/read.cgi/erocg/1688731408/178" class="outlink">https://mercury.bbspink.com/test/read.cgi/erocg/16...</a><br>
+<div id="content_block_11">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_11-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_11-inside" class="toggle-display">
+<pre id="content_block_12" class="BOX">
+178 名前：...φ(・ω・`c⌒っ (ﾜｯﾁｮｲ cf7a-kkOg)[sage] 投稿日：2023/07/11(火) 21:23:51.68 ID:g9+/198I0
+【JaneStyle4.23改造まとめ】
+バイナリエディタを管理者権限で起動してJane2ch.exeを開く
+
+account.cfg内のパラメータ「Mode=」を参照しないようにする
+0029A7DC 04→01
+
+アプデ警告消す
+001FD398 75→EB
+
+広告なくす
+0020B3F8 53→C3
+</pre>
+</div>
+</div>
+<br>
+【StableDiffusion】AI画像生成技術24【NovelAI】 <br>
+<a href="https://mevius.5ch.net/test/read.cgi/cg/1688259397/491" class="outlink">https://mevius.5ch.net/test/read.cgi/cg/1688259397...</a><br>
+<div id="content_block_14">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_14-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_14-inside" class="toggle-display">
+<pre id="content_block_15" class="BOX">
+491 名前：名無しさん＠お腹いっぱい。 (ﾜｯﾁｮｲ d71e-2BtO)[sage] 投稿日：2023/07/12(水) 14:57:33.16 ID:JyX7sgLq0
+&gt;&gt;484には続きがあるんよ
+
+[4.23]janesoft.neetへのアクセス禁止+API強制無効化
+001FC8EC 29→01
+001FD264 29→01
+001FD2D1 0F859D000000→909090909090
+001FD338 95→94
+
+今はやらなくとも良いんだけど、
+そのうちに山下が何か仕掛けてきそうなので、その為の対策
+理由は以下を読んでね
+Jane Style (Windows版) Part235
+https://egg.5ch.net/test/read.cgi/software/1689041238/216,444
+</pre>
+</div>
+</div>
+<br>
+Jane Style (Windows版) Part236<br>
+<a href="https://egg.5ch.net/test/read.cgi/software/1689074564/314" class="outlink">https://egg.5ch.net/test/read.cgi/software/1689074...</a><br>
+<br>
+<pre id="content_block_17" class="BOX">
+[4.23]広告除去
+0020B3F8 53→C3
+
+[4.23]アプデ警告停止
+001FD398 75→EB
+
+[4.23]account.cfgのパラメータ「Mode=」参照禁止 (※浪人の人はやってはいけない)
+0029A7DC 04→01
+
+[4.23]dat取得のAPI強制無効化 (http://janesoft.net/janestyle/setting.php アクセス禁止)
+001FD21E: 75→EB
+00285F9B: 75→EB
+
+[4.23]最新バージョン確認無効化 (http://janesoft.net/janestyle/version.txt アクセス禁止)
+001FC8EC 29→01
+
+貼り付け用
+0020B3F8 53→C3
+001FD398 75→EB
+0029A7DC 04→01
+001FD21E 75→EB
+00285F9B 75→EB
+001FC8EC 29→01
+</pre>
+<br>
+「[4.23]dat取得のAPI強制無効化」は現在必須ではない。事情は以下のリンクを参照とのこと<br>
+Jane Style (Windows版) Part235<br>
+<a href="https://egg.5ch.net/test/read.cgi/software/1689041238/216,444" class="outlink">https://egg.5ch.net/test/read.cgi/software/1689041...</a><br>
+<br>
+「貼り付け用」は「<a href="https://nstjp.com/soft/77.html" target="_blank" class="outlink" rel="nofollow">らくらくパッチ | NAGAOKA STATION</a>」で利用するもの<br>
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_1_3"> Siki <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_1_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+汎用掲示板ビューア Siki（<a href="https://sikiapp.net/" class="outlink">https://sikiapp.net/</a>）<br>
+PC用。5chやふたば、4chanなどの掲示板をSikiだけでそのまま見られる。<br>
+<pre id="content_block_20" class="BOX">
+なんJNVA部★234 
+https://fate.5ch.net/test/read.cgi/liveuranus/1689057599/7
+
+7 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9fc5-0W2a)[sage] 投稿日：2023/07/11(火) 15:47:31.74 ID:OfHgJgFx0
+&gt;&gt;4
+sikiでURLはろうとすると書けないンゴ
+↓
+現状nuts(APIプラグイン)入れないとURL貼れない
+https://egg.5ch.net/test/read.cgi/software/1686475201/29
+----
+↓
+nuts 1.11
+axfc.net/u/4066419
+
+新しいread.cgiへ対応
+</pre>
+</div></div><div id="content_block_22" class="wiki-section-2"><div class="title-2"><h4 id="content_1_4"> Live5ch <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_1_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_22-body" class="wiki-section-body-2">
+５ちゃんねる用ブラウザ「Live5ch」part171<br>
+<a href="https://egg.5ch.net/test/read.cgi/software/1689180434/140" class="outlink">https://egg.5ch.net/test/read.cgi/software/1689180...</a><br>
+<pre id="content_block_23" class="BOX">
+140: 名無しさん＠お腹いっぱい。 sage 2023/07/13(木) 14:29:17.73 ID:f8uuMtxh0 
+はい
+
+[1.59]5chに書き込めるようになる
+001C4290 53568B74 → 31C0EB41
+</pre>
+<br>
+<br>
+</div></div><div id="content_block_25" class="wiki-section-1"><div class="title-1"><h3 id="content_2">Android <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_25-body" class="wiki-section-body-1">
+</div></div><div id="content_block_27" class="wiki-section-2"><div class="title-2"><h4 id="content_2_5"> chmate <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_2_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_27-body" class="wiki-section-body-2">
+最新版で5chに正式対応<br>
+<br>
+以下、旧バージョンの方法<br>
+<div id="content_block_28">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_28-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_28-inside" class="toggle-display">
+なんJNVA部★防弾U（<a href="https://sannan.nl/test/read.cgi/liveuranus/1679606639/116-117" class="outlink">https://sannan.nl/test/read.cgi/liveuranus/1679606...</a>）<br>
+<pre id="content_block_29" class="BOX">
+116 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった：2023/07/11(火) 04:10:18.60 ID:zMgMTW6Z0 
+【新API再稼働までの暫定】chmateで5ch.netのスレを見る方法
+
+1. APIMateRをインストール: https://wangel.aioilight.space/?p=699
+2. スマホ本体の設定
+アプリ→apimater→標準のアプリとして設定→対応するアドレス→5ch.net　が入っていることを確認
+3. mateの右下の3点マークから
+設定→実験的→検索に使うURL
+に↓入れる
+APIMateR apimater:https://{$host}/test/read.cgi/{$bbs}/{$key}/{$host[match:\.([25]ch\.net|bbspink\.com)$]}
+</pre>
+<a href="https://i.imgur.com/BbJkhqs.png"><img src="https://i.imgur.com/BbJkhqs.png" border="0" width="300"></a><br>
+<br>
+<a href="https://i.imgur.com/RyxiAT2.png"><img src="https://i.imgur.com/RyxiAT2.png" border="0" width="300"></a><br>
+<pre id="content_block_30" class="BOX">
+スレを開き↑のAPIMateRの欄をクリックしてスレッド更新
+</pre>
+<pre id="content_block_31" class="BOX">
+117 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった：2023/07/11(火) 04:48:14.29 ID:591315dG0 
+もうちょい簡単な方法
+スレタイまではmateで見れる
+コピーでスレのURL取る
+右下&amp;#65049;メニューから、URLを指定して開くを選ぶ
+さっきのURLがすでに入ってるので
+URLの5chを5Chに直す
+これで開く
+</pre>
+</div>
+</div>
+</div></div><div id="content_block_34" class="wiki-section-1"><div class="title-1"><h3 id="content_3">iOS <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_34-body" class="wiki-section-body-1">
+</div></div><div id="content_block_36" class="wiki-section-2"><div class="title-2"><h4 id="content_3_6"> twinkle <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_3_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_36-body" class="wiki-section-body-2">
+2023/7/12 11時ごろ<br>
+twinkleアップデートあり。アップデート後は下の外部板追加を行うと読み書きが可能になるとのこと（未検証）<br>
+<br>
+【速報】チンクル、アップデートしたら書き込めるぞ！！！<br>
+<a href="https://nova.5ch.net/test/read.cgi/livegalileo/1689126676/" class="outlink">https://nova.5ch.net/test/read.cgi/livegalileo/168...</a><br>
+<pre id="content_block_37" class="BOX">
+0875今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 17c3-ZVLm)
+2023/07/11(火) 10:50:00.19ID:CRHb+zXb0
+&gt;&gt;872
+チンクルからみられるようにはなるやで
+外部板管理で
+</pre>
+<a href="https://i.imgur.com/QqVIv0v.png"><img src="https://i.imgur.com/QqVIv0v.png" border="0" width="300"></a><br>
+<pre id="content_block_38" class="BOX">
+こうや
+</pre>
+<a href="https://i.imgur.com/ubzKCF8.png"><img src="https://i.imgur.com/ubzKCF8.png" border="0" width="300"></a><br>
+</div></div><div id="content_block_40" class="wiki-section-2"><div class="title-2"><h4 id="content_3_7"> mae2ch <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_3_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_40-body" class="wiki-section-body-2">
+iOS向け。<br>
+Talk対応を宣言しているが、実際には5ch対応のアプデを7月11日に入れる2枚舌外交。<br>
+外部板の追加→2ch形式→bbsmenu形式→<a href="https://menu.5ch.net/bbsmenu.html" class="outlink">https://menu.5ch.net/bbsmenu.html</a>で完了する。<br>
+</div></div><div id="content_block_42" class="wiki-section-2"><div class="title-2"><h4 id="content_3_8"> BB2C <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5067938&amp;part=content_3_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_42-body" class="wiki-section-body-2">
+浪人アカウントを設定すればスレの読み込み・書き込みが可能
+</div></div>
+</div>

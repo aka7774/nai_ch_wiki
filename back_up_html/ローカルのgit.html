@@ -1,0 +1,163 @@
+<div class="user-area">
+Git for windowsで1111をいじる<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> インストール確認</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> 極力コマンド打ちたくない人向け</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2"> 1111本体の取得(初回だけ)</a></li>
+<li class="list-1"><a href="#content_3"> 1111本体の更新</a></li>
+<li class="list-1"><a href="#content_4"> Extensionsのインストール</a></li>
+<li class="list-1"><a href="#content_5"> Extensionsの更新</a></li>
+<li class="list-1"><a href="#content_6"> 1111を古いバージョンに戻す</a>
+<ul>
+<li class="list-2"><a href="#content_6_2"> commit hashの確認</a></li>
+<li class="list-2"><a href="#content_6_3"> commithashにバージョンを戻す</a></li>
+<li class="list-2"><a href="#content_6_4">古いバージョンに戻した1111を解除して最新の状態にする場合</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_7"> 1111のソースを書き換えたらpullできなくなった時</a></li>
+<li class="list-1"><a href="#content_8"> 1111のリポジトリが移転した場合</a></li>
+<li class="list-1"><a href="#content_9"> リポジトリの同期コピーを取る</a>
+<ul>
+<li class="list-2"><a href="#content_9_5"> 準備</a></li>
+<li class="list-2"><a href="#content_9_6"> 定期実行</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+あの黒い窓(コマンドプロンプト)を開いてや<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> インストール確認 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+<pre id="content_block_2" class="prettyprint lang-sh">
+ git --version
+</pre>
+<br>
+入ってなかったらインストール。<br>
+<a href="https://git-scm.com/downloads" class="outlink">https://git-scm.com/downloads</a><br>
+たぶんインストールする時にPATHを通す設定があるはず。<br>
+</div></div><div id="content_block_4" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> 極力コマンド打ちたくない人向け <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_4-body" class="wiki-section-body-2">
+<br>
+インストールするときに「Windowsエクスプローラの統合 - Git Bash」のチェックボックスをオンにして、<br>
+エクスプローラーでフォルダに移動してから右クリックして「Git Bash here」を選択すると、<br>
+以降の説明の cd で始まる行は打たなくて済む。<br>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 1111本体の取得(初回だけ) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+<br>
+C:\SD みたいなpathの短いとこにフォルダつくるのがおすすめ。<br>
+<br>
+<pre id="content_block_7" class="prettyprint lang-sh">
+ cd C:\SD
+ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+</pre>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 1111本体の更新 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+<br>
+<pre id="content_block_10" class="prettyprint lang-sh">
+ cd C:\SD\stable-diffusion-webui
+ git pull
+</pre>
+<br>
+これをバッチファイルにしとけば起動するだけで更新してくれるし、<br>
+webui-user.batに書いておけば毎回強制的に更新してくれる。<br>
+</div></div><div id="content_block_12" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> Extensionsのインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_12-body" class="wiki-section-body-1">
+<br>
+sd_dreamboothの例<br>
+<br>
+<pre id="content_block_13" class="prettyprint lang-sh">
+ cd C:\SD\stable-diffusion-webui\extensions 
+ git clone https://github.com/d8ahazard/sd_dreambooth_extension.git
+</pre>
+</div></div><div id="content_block_15" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> Extensionsの更新 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_15-body" class="wiki-section-body-1">
+<br>
+<pre id="content_block_16" class="prettyprint lang-sh">
+ cd C:\SD\stable-diffusion-webui\extensions\sd_dreambooth_extension
+ git pull
+</pre>
+</div></div><div id="content_block_18" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 1111を古いバージョンに戻す <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_18-body" class="wiki-section-body-1">
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_6_2"> commit hashの確認 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_6_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_21" class="prettyprint lang-sh">
+ cd C:\SD\stable-diffusion-webui
+ git log
+</pre>
+<br>
+1111起動時の黒い窓にも表示されている。<br>
+<br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/commits/master" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+ここのコピーアイコンでもコピーできる<br>
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_6_3"> commithashにバージョンを戻す <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_6_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_24" class="prettyprint lang-sh">
+ cd C:\SD\stable-diffusion-webui
+ git checkout ハッシュ
+</pre>
+<br>
+たとえば<br>
+<pre id="content_block_25" class="prettyprint lang-sh">
+ git checkout 3596af07493ab7981ef92074f979eeee8fa624c4
+</pre>
+</div></div><div id="content_block_27" class="wiki-section-2"><div class="title-2"><h4 id="content_6_4">古いバージョンに戻した1111を解除して最新の状態にする場合 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_6_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_27-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_28" class="prettyprint lang-sh">
+cd C:\SD\stable-diffusion-webui
+git checkout master
+</pre>
+</div></div><div id="content_block_30" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> 1111のソースを書き換えたらpullできなくなった時 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_30-body" class="wiki-section-body-1">
+<br>
+エラーログを見て原因のファイル名が特定できる場合<br>
+<br>
+<pre id="content_block_31" class="prettyprint lang-sh">
+ cd C:\SD\stable-diffusion-webui
+ git checkout ファイル名
+</pre>
+<br>
+もうわけわかんなくなって全部消えてもいいからやり直したい場合<br>
+<br>
+<pre id="content_block_32" class="prettyprint lang-sh">
+ cd C:\SD\stable-diffusion-webui
+ git reset --hard HEAD
+</pre>
+</div></div><div id="content_block_34" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> 1111のリポジトリが移転した場合 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_34-body" class="wiki-section-body-1">
+<br>
+stable-diffusion-webuiのある場所で<br>
+<pre id="content_block_35" class="prettyprint lang-sh">
+git remote set-url origin https://gitgud.io/AUTOMATIC1111/stable-diffusion-webui
+</pre>
+すればgit pullできるようになる<br>
+</div></div><div id="content_block_37" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> リポジトリの同期コピーを取る <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_37-body" class="wiki-section-body-1">
+</div></div><div id="content_block_39" class="wiki-section-2"><div class="title-2"><h4 id="content_9_5"> 準備 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_9_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_39-body" class="wiki-section-body-2">
+<ul id="content_block_40" class="list-1">
+<li> <a href="https://qiita.com/oohira/items/175f68b4febd7b0342c0" class="outlink">https://qiita.com/oohira/items/175f68b4febd7b0342c...</a></li>
+</ul>
+</div></div><div id="content_block_42" class="wiki-section-2"><div class="title-2"><h4 id="content_9_6"> 定期実行 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990677&amp;part=content_9_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_42-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_43" class="prettyprint lang-sh">
+git remote update
+git push --mirror
+</pre>
+</div></div>
+</div>

@@ -1,0 +1,706 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> ControlNetについて</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> 詳細</a></li>
+<li class="list-2"><a href="#content_1_2"> i2iとの違い</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2">インストール</a></li>
+<li class="list-1"><a href="#content_3">使い方</a>
+<ul>
+<li class="list-2"><a href="#content_3_3"> Preprocessorの種類と特徴</a></li>
+<li class="list-2"><a href="#content_3_4">得意不得意</a></li>
+<li class="list-2"><a href="#content_3_5"> segmentation</a>
+<ul>
+<li class="list-3"><a href="#content_3_5_1">めんどくさい！ようわからん！</a></li>
+<li class="list-3"><a href="#content_3_5_2">複数人を塗り分けるには</a></li>
+<li class="list-3"><a href="#content_3_5_3">輪郭線を白で描くことで、腕組の表現の打率を上げる</a></li>
+<li class="list-3"><a href="#content_3_5_4">Guess Mode (実験的機能)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> Controlnetモデル</a>
+<ul>
+<li class="list-2"><a href="#content_4_6"> cnlllite-anystyle</a></li>
+<li class="list-2"><a href="#content_4_7"> anytest</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5">ツール</a>
+<ul>
+<li class="list-2"><a href="#content_5_8">WebUIの拡張機能</a>
+<ul>
+<li class="list-3"><a href="#content_5_8_5">Openpose Editor</a></li>
+<li class="list-3"><a href="#content_5_8_6">Posex - Estimated Image Generator for Pose2Image</a></li>
+<li class="list-3"><a href="#content_5_8_7">3D Openpose Editor</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_5_9">Webブラウザで動くアプリケーション</a>
+<ul>
+<li class="list-3"><a href="#content_5_9_8">PoseMaker - a Hugging Face Space by jonigata</a></li>
+<li class="list-3"><a href="#content_5_9_9">Magic Poser</a></li>
+<li class="list-3"><a href="#content_5_9_10">Online 3D Openpose Editor</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_5_10">ローカルで動くアプリケーション</a>
+<ul>
+<li class="list-3"><a href="#content_5_10_11"> デザインドール</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_5_11">Blender</a>
+<ul>
+<li class="list-3"><a href="#content_5_11_12">Character bones that look like Openpose for blender</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_5_12">ILLUSION製ゲーム（エロゲ）のプラグイン</a>
+<ul>
+<li class="list-3"><a href="#content_5_12_13">ハニーセレクト2</a></li>
+<li class="list-3"><a href="#content_5_12_14">コイカツ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> アセット</a>
+<ul>
+<li class="list-2"><a href="#content_6_13"> Openpose</a></li>
+<li class="list-2"><a href="#content_6_14">キャラクター設計図</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_7">サンプル</a>
+<ul>
+<li class="list-2"><a href="#content_7_15">活用例</a>
+<ul>
+<li class="list-3"><a href="#content_7_15_15">Scribble と Openpose 同時使用</a></li>
+<li class="list-3"><a href="#content_7_15_16">ずらしハメパンツ修正メソッド（t2i簡単超高打率）</a></li>
+<li class="list-3"><a href="#content_7_15_17">depth と hed 併用</a></li>
+<li class="list-3"><a href="#content_7_15_18">Scribble + Normal, Depth</a></li>
+<li class="list-3"><a href="#content_7_15_19">inpaint</a></li>
+<li class="list-3"><a href="#content_7_15_20"> 同じ構図で別のモデルに書かせる</a></li>
+<li class="list-3"><a href="#content_7_15_21"> 3Dモデルの動画から作成</a></li>
+<li class="list-3"><a href="#content_7_15_22"> lineart_anime+tileで大量bukkake（通称カムカム法）</a></li>
+<li class="list-3"><a href="#content_7_15_23"> テクスチャ法</a></li>
+<li class="list-3"><a href="#content_7_15_24"> プリプロセッサ Shuffle、モデル Inpaintで構図に一捻り</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_7_16">動画</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_8"> 古い記載</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> ControlNetについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+ポーズや構図等を指定して画像生成できるようにする拡張機能。<br>
+従来のプロンプトでの画像制御に加えて、輪郭線・奥行き・人のポーズなどの「画像情報」を追加で入力することで、より思い通りに画像を制御できる。<br>
+その制御方法（Model）は複数ある（詳しくはcannyやhedやsegなど、下記参照）。<br>
+</div></div><div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> 詳細 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+<div id="content_block_4">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_4-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_4-inside" class="toggle-display">
+実際の実装では、<ol id="content_block_5" class="list-1">
+<li>元画像Aを与える</li>
+<li>その画像を「必要ならば」処理して（Preprocessor）、新しい画像Bを生成する</li>
+<li>画像Bと、選んだモデル（Model）を使って、画像を生成する。</li>
+</ol>
+という処理が行われるので、「Preprocessor」と「Model」の2つを選んであげる必要がある。<br>
+2番目が不要な場合は、Preprocessorとしてnoneを選択すると、画像AがそのままModelに与えられる。<br>
+（例えば最初から棒人間ツールなどで作った画像を与えたり、本拡張機能より優秀なプロセッサーで既に画像Aを画像Bに変換している場合など。）<br>
+<br>
+例えばイラストから線画を抽出して画像を生成する（canny）の場合の処理の流れは、PreprocessorとModelにともにcannyを指定し、<ol id="content_block_6" class="list-1">
+<li>イラストを与える</li>
+<li>Preprocessor（canny）が、イラストから線画の画像を作る</li>
+<li>その線画を用いて、Model（canny）が画像を生成する</li>
+</ol>
+という流れになる。
+</div>
+</div>
+</div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> i2iとの違い <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_9-body" class="wiki-section-body-2">
+<div id="content_block_10">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_10-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_10-inside" class="toggle-display">
+i2iは元画像の全ての情報（とくに色込み）を読み込むので、線画からの着色はほぼ無理だったり、元画像に新たに適切な色を塗ってやる必要があった。<br>
+それと比べて、ControlNetは「元画像が持っている特定の情報のみ」を取り出し、その情報とプロンプトを使って画像を生成する。例えば：<ul id="content_block_11" class="list-1">
+<li> 色情報が無い白黒の線画からでも着色できる</li>
+<li> 画像から線画を作るプリプロセッサーを噛ませれば、画像→線画→再着色により、元画像から色だけを変えるなどができる。</li>
+<li> 線画以外にも、画像からポーズだけを抽出して、プロンプトでは作るのが困難なポーズを取らせることができる</li>
+<li> 構図や領域分けだけ抽出して、どこに何を描くかという構図を完全に固定することもできる</li>
+</ul>
+という利点がある。<br>
+もちろん、色などの情報が落ちる分、完全にi2iの上位互換というわけではないことに注意。<br>
+<br>
+参考(英語)google翻訳でよんでな<br>
+<a href="https://github.com/lllyasviel/ControlNet" class="outlink" rel="nofollow">https://github.com/lllyasviel/ControlNet</a><a class="anchor" id="lllyasviel" name="lllyasviel" title="lllyasviel"></a>
+</div>
+</div>
+</div></div><div id="content_block_14" class="wiki-section-1"><div class="title-1"><h3 id="content_2">インストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_14-body" class="wiki-section-body-1">
+<ol id="content_block_15" class="list-1">
+<li>Stable Diffusion Web UI の「拡張機能 (Extensions)」タブ &gt; 「URLからインストール (Install from URL)」に、以下のURLを入れてインストールします。<br><a href="https://github.com/Mikubill/sd-webui-controlnet" class="outlink">https://github.com/Mikubill/sd-webui-controlnet</a></li>
+<li>以下からモデルファイル（.safetensorsファイルもしくは.pth）をダウンロードして「stable-diffusion-webui\extensions\sd-webui-controlnet\models」に置きます。</li>
+</ol>
+<ul id="content_block_16" class="list-1">
+<ul class="list-2">
+<li>標準的な軽量モデル：<a href="https://huggingface.co/webui/ControlNet-modules-safetensors/tree/main" class="outlink">https://huggingface.co/webui/ControlNet-modules-sa...</a></li>
+<li>kohya氏によるモデル改良版（何か応答がよくなるらしい？）：<a href="https://huggingface.co/kohya-ss/ControlNet-diff-modules/tree/main" class="outlink">https://huggingface.co/kohya-ss/ControlNet-diff-mo...</a></li>
+<li>有志の人が作った顔の向きや目や口の状態がわかるControlNetMediaPipeFace: <a href="https://huggingface.co/CrucibleAI/ControlNetMediaPipeFace" class="outlink">https://huggingface.co/CrucibleAI/ControlNetMediaP...</a></li>
+<li>2023年4月中旬ごろに発表されたControlNet 1.1: <a href="https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main" class="outlink">https://huggingface.co/lllyasviel/ControlNet-v1-1/...</a></li>
+</ul>
+
+</ul>
+</div></div><div id="content_block_18" class="wiki-section-1"><div class="title-1"><h3 id="content_3">使い方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_18-body" class="wiki-section-body-1">
+txt2img・img2imgタブの下にControlNetができてるので▼をクリック<ul id="content_block_19" class="list-1">
+<li>Enableを押して</li>
+<li>Preprocessor を選んで</li>
+<li>Preprocessor と同じ名前のモデルを選ぶ</li>
+</ul>
+<br>
+詳しい例は<a href="#lllyasviel">上</a>のやつ読んで<br>
+</div></div><div id="content_block_21" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> Preprocessorの種類と特徴 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_21-body" class="wiki-section-body-2">
+<table id="content_block_22"><tbody><tr><td>名前</td><td>説明</td><td>元画像</td><td>プリプロセッサ処理後画像</td><td>出力画像</td></tr><tr><td>canny</td><td>輪郭線を検出して取り出す</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/NViOVZS5CD-s.png" border="0"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/4iq0nA0ANk-s.png" border="0"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/AdyrhRy78X-s.png" border="0"></a></td></tr><tr><td>depth</td><td>深度情報を引き継ぐ 立体的な位置関係を処理できる</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/N2r_v1rV9j-s.png" border="0"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/UZU7n3ZOva-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/QQNO3ImvDh-s.png" border="0"></a></td></tr><tr><td>hed</td><td>いわゆる「描き込み」的な部分を取り出す タッチを引き継ぎやすい</td><td></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/m6Tlxhhuh7-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/COjrN0iWAw-s.png" border="0"></a></td></tr><tr><td>mlsd</td><td>直線の輪郭だけ取り出す 曲線のない人工的な構図をノイズ無く取り出せる</td><td></td><td></td><td></td></tr><tr><td>normal_map</td><td>法線情報を引き継ぐ　深度情報よりも細部の立体感に沿いやすい</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/iyHkyJEFHf.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/iyHkyJEFHf-s.jpg" border="0"></a></td></tr><tr><td>openpose</td><td>おなじみの棒人間</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/WTbFDdTOT7.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/WTbFDdTOT7-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/5WaCsMlIST.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/5WaCsMlIST-s.png" border="0"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/RwFNDeU88I.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/RwFNDeU88I-s.png" border="0"></a></td></tr><tr><td>openpose_hand</td><td>棒人間に手が追加されたやつ．現状あまり認識精度が良くない印象．</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/M_hgU7B_w4.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/M_hgU7B_w4-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/KXfa2TXD1v.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/KXfa2TXD1v-s.png" border="0"></a></td><td></td></tr><tr><td>openpose_face</td><td>棒人間に顔の特徴点(face landmarks)が追加されたもの(v1.1追加)．棒人間では表現しきれなかった目や口の状態や顔の大きさなどが表現できるようになった</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/E6S8XJhMVs.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/E6S8XJhMVs-s.png" border="0"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/54sGEq1RMY.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/54sGEq1RMY-s.png" border="0"></a></td><td></td></tr><tr><td>openpose_full</td><td>openpose+openpose_hand+openpose_faceの処理すべてを行う(v1.1追加)．</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/M_hgU7B_w4.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/M_hgU7B_w4-s.png" border="0"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/EEuwFyryhs.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/EEuwFyryhs-s.png" border="0"></a></td><td></td></tr><tr><td>mediapipe_face</td><td>ControlNetの発案者とは異なる人が作ったControlNetMediaPipeFaceというモデル用の前処理．目・口・顔の形や向きがわかる画像が生成される．</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/s__vnHPyjK.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/s__vnHPyjK-s.png" border="0"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/4f_HWDwlcr.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/4f_HWDwlcr-s.png" border="0"></a></td></tr><tr><td>scribble</td><td>マウス入力の落書き　線を絶対的なものとしては扱わず、いい感じに仕上げる</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/5tsjNQTbfT.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/5tsjNQTbfT-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/qhknh2I97S.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/qhknh2I97S-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/v7ZV5VrtYc.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/v7ZV5VrtYc-s.png" border="0"></a></td></tr><tr><td>fake_scribble</td><td>画像を一回落書き風に変換してscribbleに投入する</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/4uQiYf6rzq.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/4uQiYf6rzq-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/Zun19XTTDJ.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Zun19XTTDJ-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/9PeZWztrlG.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/9PeZWztrlG-s.png" border="0"></a></td></tr><tr><td>segmentation</td><td>'ADE20K'という規格で塗り絵 領域に分類を持たせる</td><td></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/EmAiydIWmc-s.png" border="0"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/o_bVqhY228-s.png" border="0"></a></td></tr><tr><td>lineart_realistic</td><td>写真を線画に変換するやつ(v1.1追加)．cannyだとしきい値(threshold)をうまくやらないとボケている箇所の輪郭が抽出されないことがあったが，この処理ではその辺をいい感じの塩梅にして線を引いてくれる印象がある．</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/0JdyomiTxY.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/0JdyomiTxY-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/SesY98LleX.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/SesY98LleX-s.png" border="0"></a></td></tr><tr><td>lineart_coarse</td><td>写真を線画に変換するものだが，lineart_realisticよりも粗い(雑な)線画になる(v1.1追加)</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/lOwb5bmFOZ-s.png" border="0"></a></td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/zQelhADe1Y.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/zQelhADe1Y-s.png" border="0"></a></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/wqzlpCDJVX.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/wqzlpCDJVX-s.png" border="0"></a></td></tr></tbody></table>
+とりあえずスレにある画像使ったんであかんかったら消すわ<br>
+<br>
+元画像から加工されたcannyやdepthなどの画像はデフォルトでは <br>
+<pre id="content_block_23" class="prettyprint lang-perl">
+stable-diffusion-webui\extensions\sd-webui-controlnet\detected_maps
+</pre>
+に保存されているのでいいやつができたら取っておこう
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4">得意不得意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+<br>
+ちょっと試した感じこんな感じでした<ul id="content_block_26" class="list-1">
+<li> <del>OpenPose: 奥行き苦手</del></li>
+<li> NomalMap: 奥行き得意 ただし背景が消失する(?)</li>
+<li> DepthMap: 奥行き得意 背景も死なない</li>
+</ul>
+<br>
+Normal &amp; Depth<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/pDOEL4rMst.2_comp001.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/pDOEL4rMst.2_comp001.png" border="0" width="600"></a><br>
+<br>
+OpenPoseは実写/イラストで検出精度が変わるみたいです<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/M09ux9A9R1.3_comp001.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/M09ux9A9R1.3_comp001.png" border="0" width="600"></a><br>
+</div></div><div id="content_block_28" class="wiki-section-2"><div class="title-2"><h4 id="content_3_5"> segmentation <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_3_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_28-body" class="wiki-section-body-2">
+塗り絵から構図と描くもの（人や道や木など150種類の概念から選べる）をコントロール・・・できそうなやつや。<br>
+<br>
+ADE20Kって規格で塗り絵するで<br>
+物と事で色分けが違うらしい。雑に言うと「人間」は数えられるので「物」、「空」は数えられないので「事」 <br>
+色分けの決まりは下参照<ul id="content_block_30" class="list-1">
+<li><a href="https://github.com/CSAILVision/sceneparsing/tree/master/visualizationCode/color150" class="outlink">https://github.com/CSAILVision/sceneparsing/tree/m...</a></li>
+<li>ADE20Kのオブジェクト-RGB対応表スプレッドシート <a href="https://docs.google.com/spreadsheets/d/1se8YEtb2detS7OuPE86fXGyD269pMycAWe2mtKUj2W8/edit#gid=0" class="outlink">https://docs.google.com/spreadsheets/d/1se8YEtb2de...</a></li>
+</ul>
+　↑スプレッドシートの色分けで上手くいかない場合はこちらを参照　<a href="https://github.com/Mikubill/sd-webui-controlnet/discussions/503" class="outlink">https://github.com/Mikubill/sd-webui-controlnet/di...</a><br>
+<br>
+<br>
+こんなん人力では無理やという場合は元画像（<b>実写が望ましい</b>）を用意してWebで<br>
+<a href="https://huggingface.co/spaces/shi-labs/OneFormer" class="outlink">https://huggingface.co/spaces/shi-labs/OneFormer</a><br>
+the task is semantic, ADE20K, DiNAT-L（最後はSwin-Lでも可、たぶん変換のモデルの違い？）<br>
+にチェック入れて送信すると右下に塗り分けられて出力される。<br>
+あとは適当なペイントツールで好きなように修正する。
+</div></div><div id="content_block_32" class="wiki-section-3"><div class="title-3"><h5 id="content_3_5_1">めんどくさい！ようわからん！ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_3_5_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_32-body" class="wiki-section-body-3">
+とりあえず参考にしたい画像をドロップして<br>
+Preprocessor:segmentation, model:~_segにして出力してみる<br>
+出てきた塗り絵を適当なペイントツールで修正する。<br>
+ちなみに元画像はアニメ塗りより実写がいいらしい(って4chanで見た)→openposeの話やったすまん<br>
+</div></div><div id="content_block_34" class="wiki-section-3"><div class="title-3"><h5 id="content_3_5_2">複数人を塗り分けるには <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_3_5_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_34-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/spaces/shi-labs/OneFormer" class="outlink">https://huggingface.co/spaces/shi-labs/OneFormer</a><br>
+<u>the task is panoptic</u>, ADE20K, DiNAT-L<br>
+にチェック入れて送信すると<br>
+判定がゆるくなる代わりに人数分だけpersonの色が増えるので<br>
+適当なペイントツールで色分けして塗る。(人間が重なっていなければ塗り分けなくていい)<br>
+<div id="content_block_35">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_35-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_35-inside" class="toggle-display">
+基本<br>
+<pre id="content_block_36" class="prettyprint lang-perl">
+229今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 15:33:50.21ID:g7tc6IYz0
+&gt;&gt;226
+まずsegに必要なのはADE20Kっていう画像内のオブジェクトをクラスごとに色分けしたやつや
+各色とオブジェクトの紐づけはこのページとひとまとめにした画像を参照
+基本は150色
+https://github.com/CSAILVision/sceneparsing/tree/master/visualizationCode/color150
+https://i.imgur.com/XXryPUX.png
+すでに学習済みのデータセットやから残念ながら自分で色足したり設定変えたりはできん
+ただしこのクラス分けもさらに細分化されたり混ぜ合わせたりが可能みたいや
+詳しくは後述
+</pre>
+ADE20Kのオブジェクト-RGB対応表スプシ<br>
+<a href="https://docs.google.com/spreadsheets/d/1se8YEtb2detS7OuPE86fXGyD269pMycAWe2mtKUj2W8/edit#gid=0" class="outlink">https://docs.google.com/spreadsheets/d/1se8YEtb2de...</a><br>
+<br>
+<pre id="content_block_37" class="prettyprint lang-perl">
+236今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 15:43:14.25ID:g7tc6IYz0&gt;&gt;239
+&gt;&gt;226
+ほんで写真やイラストを変換したいときはここ使う
+https://huggingface.co/spaces/shi-labs/OneFormer
+segで使うにはthe task is semantic、ADE20K、DiNAT-Lを選ぶ(ワイもADE20K以外は選ぶ意味が分かってない)
+https://i.imgur.com/Sc2gMxV.png
+で変換すると右に二枚画像が出てくる
+https://i.imgur.com/Bh7dOLM.pngこっちは「この色分がこのオブジェクトなんやで〜」って説明
+これを見ると分かると思うが明らかに基本の150色には無いオブジェクト名や色が出てくる
+この辺がさっき話したほんとはもっと細かいという話やね
+ADE20Kでググると細かいツリー画像出てくるからまぁそういうことなんやろ
+https://i.imgur.com/nam6pNp.pngほんでこっちがwebUIに入れる色分け画像
+プロンプトなしで色分けルールに沿ったもの大体出てくる
+
+260今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 16:00:12.39ID:g7tc6IYz0&gt;&gt;363
+&gt;&gt;226
+後はちょっとした応用で、色分けで生成されるものが決まるので色の一覧表や欲しい要素がある画像を変換器に入れて出てきた色をスポイト抽出して
+適当にペイントツールで塗り塗りしてその画像をsegに入れると好きな要素を好きな構図で出せるようになるわけ
+これは前スレに貼ったskyとかmountainとかwaterの色塗って作った奥行きのあるなんか壮大そうな景色を出すやつ
+landscapeとネガティブの(low quality,worst quality:1.4),(monochrome:1.1)のみ
+https://i.imgur.com/Da7bWWv.png
+https://i.imgur.com/mOB9khp.png
+https://i.imgur.com/74r2uZx.png
+欠点としては人の形もシルエットになるから腕や足が体に重なったポーズはうまく認識できなかったり、ありえんボリュームの髪のシルエットに無理やり引っ張られて奇形になったりすること
+</pre>
+<br>
+複数人を塗り分けて描画する方法<br>
+<pre id="content_block_38" class="prettyprint lang-perl">
+578今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 22:20:25.69ID:g7tc6IYz0&gt;&gt;580
+まず複数人が登場する画像を用意する
+今回はワイが以前AIで生成した画像やが相性的に実写寄りの絵か写真のほうが好ましい
+&gt;&gt;236でsemanticを選べと言ったがこの方法だと何人いようが体が重なってようが離れていようがpersonは一色しか出てこないんや
+https://i.imgur.com/q1n8yln.png
+なので画像変換の時にpanopticを選ぶと色々と認識ガバガバになる代わりに人数分だけpersonの色を用意してくれるんや
+https://i.imgur.com/nYCNpRB.png
+その複数出てきたpersonの色で塗るとそれぞれ別人と認識してくれるんや
+ただしこの通りのガバガバ色分けやからsemanticみたいに変換した画像を直にwebuiに入れるのはまず無理やね
+
+580今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 22:23:04.48ID:g7tc6IYz0&gt;&gt;582
+&gt;&gt;578
+例えば抽出したそれぞれのperson色を使ってhttps://i.imgur.com/fIUQSnI.pngを作る
+これをsegに突っ込むとhttps://i.imgur.com/u8A3WmX.png
+狙ったのとはちょっと違うんやけどまぁそれぞれの色を別の人間と認識して融けたりしてないというのが大事や
+重なり合った部分をちゃんとさせたいならレイヤー分けぐらいはできるペイントツールがあったほうがええやろな
+割とダイレクトにシルエットの形状が体型に影響するのであんまり適当やと肩幅や顔のデカさがすごいことになったりする(というかなった)
+手描き苦手ニキはデザインドールとかでポーズ取らせた画像に塗るのがええと思うで
+
+591今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8655-8lmq)2023/02/16(木) 22:35:11.73ID:g7tc6IYz0
+ちゃんと変換に入れる人数が増えるとその分の色が出てくるので3人の画像使えば3色使って
+https://i.imgur.com/HE9FtVa.pngこんなんを描いて
+https://i.imgur.com/ja6fzus.pngちゃんと左が一番手前で右が一番奥な画像が出せる
+こんなマウスで適当に引いた絵じゃなければ変な袖とか出ないでもっと綺麗に出るはずやで
+何なら指とかも書き込めばちゃんと認識してくれる
+逆に言えばこのレベルの絵でも融け合わないで位置関係把握してくれるんや
+ちなみに体が重なってないなら色分ける必要ないで
+一色でそれぞれ人型描いてもええしsemantic変換した画像そのまんま突っ込んでもええ
+この通り複数人をあまり混ざらず出せるのがメリットやが
+オリジナルの構図にしたかったらなんやかんや結構な技量とセンスが問われるのがデメリットやと思う
+労力割かずに複雑なポーズ一発出しならそこは断然openposeや
+使い分けていこう
+</pre>
+</div>
+</div>
+</div></div><div id="content_block_41" class="wiki-section-3"><div class="title-3"><h5 id="content_3_5_3">輪郭線を白で描くことで、腕組の表現の打率を上げる <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_3_5_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_41-body" class="wiki-section-body-3">
+<pre id="content_block_42" class="prettyprint lang-perl">
+701今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ cb28-BTrK)2023/02/20(月) 01:04:22.35ID:WCL0iJ9f0
+&gt;&gt;690
+なるほど、人物とかくっきり輪郭線付いてるね
+試しに腕組seg作ってみたら重なる表現は相変わらず苦手だけどなかなか良さそうだった
+色分けと上手く使い分けたいね
+https://i.imgur.com/DUfpcSL.png
+https://i.imgur.com/N9pdqX1.png
+https://i.imgur.com/2H4eWAU.png
+https://i.imgur.com/nPccccl.png
+</pre>
+</div></div><div id="content_block_44" class="wiki-section-3"><div class="title-3"><h5 id="content_3_5_4">Guess Mode (実験的機能) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_3_5_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_44-body" class="wiki-section-body-3">
+WebUIの設定 &gt; Enable CFG-Based guidance をオン<br>
+ControlNet使用時に Guess Mode を有効にすると<br>
+cannyやdepthを使ってプロンプト無しでも<del>いい感じにでっち上げる</del>柔軟に推論する機能<br>
+サンプリング回数 50, CFGスケール 3 〜 5 を推奨<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/G2yrqX6Tvk.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/G2yrqX6Tvk-s.png" border="0"></a><a href="https://image02.seesaawiki.jp/n/h/nai_ch/N4L7ONuBoC.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/N4L7ONuBoC-s.png" border="0"></a><br>
+例)NSFW, 1girl, NC: (worst quality:1.4), (low quality:1.4) , (monochrome:1.1), のみ <br>
+</div></div><div id="content_block_46" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> Controlnetモデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_46-body" class="wiki-section-body-1">
+ここではControlNetで使用する追加のモデルについて紹介。
+</div></div><div id="content_block_48" class="wiki-section-2"><div class="title-2"><h4 id="content_4_6"> cnlllite-anystyle <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_4_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_48-body" class="wiki-section-body-2">
+<a href="https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet" class="outlink">https://huggingface.co/2vXpSwA7/iroiro-lora/tree/m...</a><br>
+<br>
+画像の構図を維持したまま衣装やキャラなど他の要素を変更できるControlnetモデル。<br>
+<br>
+作者曰く<blockquote id="content_block_49">
+ 入力した画像から大雑把に構図と明暗を維持できるように作ったCN(ControlNet)
+</blockquote>
+※注意 cnlllite(ControlNet-LLLite)はCNの軽量版でSDXL専用<br>
+<br>
+従来のモデルであるDepthに近いが、それと違い構図は維持したまま髪型を変更することができる。<br>
+また、Scribbleのように線画を元絵として改善された絵を出す使い方も可能。<br>
+<br>
+<b>使い方(1111/forge)</b><ol id="content_block_50" class="list-1">
+<li>cnlllite-anystyle_v3-step00004000.safetensorsを落としてくる(作者推奨が4000stepだから)</li>
+<li>これをmodels\ControlNet配下に置く</li>
+<li>WebUIを起動する</li>
+<li>ControlNetのEnableをチェック(forgeはControlNetのチェックボックスも有効にする)</li>
+<li>Control TypeはAllのままでPreprocessorもnoneのままでいい</li>
+<li>Preprocessorの横のModelの横の🔄️を押してモデル一覧を再読み込み</li>
+<li>Modelの中の多分一番上にcnlllite-anystyle_v3-step00004000.safetensorsが出てくるからそれを選択</li>
+<li>あとは元にしたい画像をSingle Imageに投げ込んで画像生成</li>
+</ol>
+<br>
+<b>うまく動かないときは</b><br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1714105975/481" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1714...</a> によると「latentをいじったりするような拡張が入っていると、干渉してエラーを吐くっぽい」とのこと。<br>
+このニキはKohya HRFixの拡張機能をオフにすると動作したという。<br>
+設定でHyperTileがオンになっていてエラーが発生したという報告もあった。<br>
+または、出力解像度をモデルの推奨解像度か32の倍数にする。詳しくは<a href="https://seesaawiki.jp/nai_ch/d/animagine31tips">Animagine 3.1tips</a>や<a href="https://seesaawiki.jp/nai_ch/d/PonyDiffusionV6XLTips" target="_blank">Pony Diffusion V6XLtips</a>のページを参照。<br>
+ほかにもfp8で動かない可能性があるが環境によるかも。fp8を有効にした1111WebUI 1.9.0、CN1.1.445で動作した。<br>
+</div></div><div id="content_block_52" class="wiki-section-2"><div class="title-2"><h4 id="content_4_7"> anytest <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_4_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_52-body" class="wiki-section-body-2">
+<a href="https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet2" class="outlink">https://huggingface.co/2vXpSwA7/iroiro-lora/tree/m...</a><br>
+<br>
+cnlllite-anystyleと同じ月須和・那々氏（<a href="https://x.com/nana_tsukisuwa" class="outlink">https://x.com/nana_tsukisuwa</a>）によるControlNetモデル。SDXL専用。使い方も共通で仕上がりの向上を目指したもの。<br>
+<ul id="content_block_53" class="list-1">
+<li> <a href="https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/test_controlnet2/CN-anytest_v4-marged.safetensors" target="_blank" class="outlink" rel="nofollow">CN-anytest_v4-marged.safetensors</a></li>
+</ul>
+<br>
+そのほか「<a href="https://x.com/nana_tsukisuwa/status/1793674601412833589" target="_blank" class="outlink" rel="nofollow">amがanimagine用、pnがpony用</a>」もある。「<a href="https://x.com/nana_tsukisuwa/status/1793674601412833589" target="_blank" class="outlink" rel="nofollow">それぞれdim8〜dim256まで用意しました、dimが小さいと制御力が下がりますが、用途によってはその方が逆に丁度良くなるかもしれません</a>」（v3に関して）とのこと。<br>
+<br>
+anytest_v4は「<a href="https://x.com/nana_tsukisuwa/status/1797457796918882623" target="_blank" class="outlink" rel="nofollow">step数で性質が変わってて、どれが出来が良いstepか分かんなかったので、試しにそれぞれのstepのCNをマージして平均化した版を上げた</a>」。「<a href="https://x.com/nana_tsukisuwa/status/1797460266046873958" target="_blank" class="outlink" rel="nofollow">入力に対する正確さよりスタイル変換と入力画像の幅広さを重視した／基本v3と同じような使い方が出来るけど、v3に比べると割とガバい、scribble寄りのCNかな／まぁそのガバさ故に、入力がノイズまみれだろうがモザイクかかっていようがぼやけてようが出力が壊れないっていう</a>」。
+</div></div><div id="content_block_55" class="wiki-section-1"><div class="title-1"><h3 id="content_5">ツール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_55-body" class="wiki-section-body-1">
+</div></div><div id="content_block_57" class="wiki-section-2"><div class="title-2"><h4 id="content_5_8">WebUIの拡張機能 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_57-body" class="wiki-section-body-2">
+</div></div><div id="content_block_59" class="wiki-section-3"><div class="title-3"><h5 id="content_5_8_5">Openpose Editor <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_8_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_59-body" class="wiki-section-body-3">
+<a href="https://github.com/fkunn1326/openpose-editor" class="outlink" rel="nofollow">https://github.com/fkunn1326/openpose-editor</a><br>
+<a href="https://user-images.githubusercontent.com/92153597/219921945-468b2e4f-a3a0-4d44-a923-13ceb0258ddc.png"><img src="https://user-images.githubusercontent.com/92153597/219921945-468b2e4f-a3a0-4d44-a923-13ceb0258ddc.png" border="0" width="256"></a><ul id="content_block_60" class="list-1">
+<li>棒人間の2Dモデルを操作してOpenposeの画像を作成します。</li>
+</ul>
+</div></div><div id="content_block_62" class="wiki-section-3"><div class="title-3"><h5 id="content_5_8_6">Posex - Estimated Image Generator for Pose2Image <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_8_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_62-body" class="wiki-section-body-3">
+<a href="https://github.com/hnmr293/posex" class="outlink" rel="nofollow">https://github.com/hnmr293/posex</a><br>
+<a href="https://raw.githubusercontent.com/hnmr293/posex/master/image/sample.png"><img src="https://raw.githubusercontent.com/hnmr293/posex/master/image/sample.png" border="0" width="256"></a><ul id="content_block_63" class="list-1">
+<li>棒人間の3Dモデルを操作してOpenposeの画像を作成します。</li>
+</ul>
+</div></div><div id="content_block_65" class="wiki-section-3"><div class="title-3"><h5 id="content_5_8_7">3D Openpose Editor <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_8_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_65-body" class="wiki-section-body-3">
+<a href="https://github.com/nonnonstop/sd-webui-3d-open-pose-editor" class="outlink" rel="nofollow">https://github.com/nonnonstop/sd-webui-3d-open-pos...</a><br>
+<a href="https://user-images.githubusercontent.com/42905588/227674599-21610711-7276-413c-aa36-cc5108e74dc3.png"><img src="https://user-images.githubusercontent.com/42905588/227674599-21610711-7276-413c-aa36-cc5108e74dc3.png" border="0" width="256"></a><ul id="content_block_66" class="list-1">
+<li>棒人間の3Dモデルを操作してOpenposeの画像を作成します。</li>
+<li>Openposeだけでなく、手足のDepth/Normal/Cannyマップの出力にも対応しています。</li>
+</ul>
+</div></div><div id="content_block_68" class="wiki-section-2"><div class="title-2"><h4 id="content_5_9">Webブラウザで動くアプリケーション <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_68-body" class="wiki-section-body-2">
+</div></div><div id="content_block_70" class="wiki-section-3"><div class="title-3"><h5 id="content_5_9_8">PoseMaker - a Hugging Face Space by jonigata <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_9_8" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_70-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/spaces/jonigata/PoseMaker2" class="outlink" rel="nofollow">https://huggingface.co/spaces/jonigata/PoseMaker2</a><ul id="content_block_71" class="list-1">
+<li>棒人間の2Dモデルを操作してOpenposeの画像を作成します。</li>
+</ul>
+</div></div><div id="content_block_73" class="wiki-section-3"><div class="title-3"><h5 id="content_5_9_9">Magic Poser <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_9_9" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_73-body" class="wiki-section-body-3">
+<a href="https://webapp.magicposer.com/" class="outlink" rel="nofollow">https://webapp.magicposer.com/</a><ul id="content_block_74" class="list-1">
+<li>人体の3Dモデルを操作してOpenposeやDepth用の画像を作成できます。</li>
+</ul>
+</div></div><div id="content_block_76" class="wiki-section-3"><div class="title-3"><h5 id="content_5_9_10">Online 3D Openpose Editor <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_9_10" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_76-body" class="wiki-section-body-3">
+<a href="https://zhuyu1997.github.io/open-pose-editor/" class="outlink" rel="nofollow">https://zhuyu1997.github.io/open-pose-editor/</a><ul id="content_block_77" class="list-1">
+<li>人体の3Dモデルを操作してOpenposeやDepth用の画像を作成できます。</li>
+</ul>
+</div></div><div id="content_block_79" class="wiki-section-2"><div class="title-2"><h4 id="content_5_10">ローカルで動くアプリケーション <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_79-body" class="wiki-section-body-2">
+</div></div><div id="content_block_81" class="wiki-section-3"><div class="title-3"><h5 id="content_5_10_11"> デザインドール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_10_11" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_81-body" class="wiki-section-body-3">
+<a href="https://terawell.net/ja/" class="outlink" rel="nofollow">https://terawell.net/ja/</a><ul id="content_block_82" class="list-1">
+<li>人体の3Dモデルを操作してOpenposeやDepth用の画像を作成できます。</li>
+<li>体験版ではポースをセーブできません。</li>
+</ul>
+</div></div><div id="content_block_84" class="wiki-section-2"><div class="title-2"><h4 id="content_5_11">Blender <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_84-body" class="wiki-section-body-2">
+</div></div><div id="content_block_86" class="wiki-section-3"><div class="title-3"><h5 id="content_5_11_12">Character bones that look like Openpose for blender <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_11_12" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_86-body" class="wiki-section-body-3">
+<a href="https://toyxyz.gumroad.com/l/ciojz?layout=profile" class="outlink" rel="nofollow">https://toyxyz.gumroad.com/l/ciojz?layout=profile</a>
+</div></div><div id="content_block_88" class="wiki-section-2"><div class="title-2"><h4 id="content_5_12">ILLUSION製ゲーム（エロゲ）のプラグイン <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_88-body" class="wiki-section-body-2">
+</div></div><div id="content_block_90" class="wiki-section-3"><div class="title-3"><h5 id="content_5_12_13">ハニーセレクト2 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_12_13" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_90-body" class="wiki-section-body-3">
+<ul id="content_block_91" class="list-1">
+<li> Illusion HoneySelect2 OpenPose Plugin<br><a href="https://lap0705.gumroad.com/l/ellqe" class="outlink" rel="nofollow">https://lap0705.gumroad.com/l/ellqe</a><br><a href="https://image02.seesaawiki.jp/n/h/nai_ch/3UfT9ZdGJn-s.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/3UfT9ZdGJn-s.png" border="0"></a>
+<ul class="list-2">
+<li>※有料（1$）です。</li>
+<li>openpose_handにも対応しています。</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_93" class="wiki-section-3"><div class="title-3"><h5 id="content_5_12_14">コイカツ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_5_12_14" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_93-body" class="wiki-section-body-3">
+<ul id="content_block_94" class="list-1">
+<li>ControlNet tools for Koikatsu<br><a href="https://civitai.com/models/17390/controlnet-tools-for-koikatsu" class="outlink" rel="nofollow">https://civitai.com/models/17390/controlnet-tools-...</a><br><a href="https://image02.seesaawiki.jp/n/h/nai_ch/oNbNlNNWk0-s.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/oNbNlNNWk0-s.png" border="0"></a></li>
+</ul>
+</div></div><div id="content_block_96" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> アセット <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_96-body" class="wiki-section-body-1">
+</div></div><div id="content_block_98" class="wiki-section-2"><div class="title-2"><h4 id="content_6_13"> Openpose <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_6_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_98-body" class="wiki-section-body-2">
+Openposeリグの画像をシェアすることで、手軽にポーズアセットとして配布できるようです。<br>
+使用時はプリプロセッサ：None、Model：Openposeにしてポーズ画像をImageにドラッグ&amp;ドロップします。<br>
+</div></div><div id="content_block_100" class="wiki-section-2"><div class="title-2"><h4 id="content_6_14">キャラクター設計図 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_6_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_100-body" class="wiki-section-body-2">
+いわゆるキャラデザ：Turnaround資料を生成できるやつ<br>
+とりあえずRTX3060 12GBでHires. fix resize: from 1024x512 to 2201x1100ぐらいまで生成できました。<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/ldUUiyjvpT.TurnDesign_Openpose.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ldUUiyjvpT.TurnDesign_Openpose.png" border="0" width="600"></a><br>
+<br>
+BlenderのOpenposeRigで作成。<br>
+キャラデザ用<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/aGVolQf_rN.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/aGVolQf_rN.jpg" border="0" width="400"></a>　<a href="https://image01.seesaawiki.jp/n/h/nai_ch/4HHXZAsdLF.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/4HHXZAsdLF.jpg" border="0" width="400"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/EvnQDcUJyj.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/EvnQDcUJyj.jpg" border="0" width="400"></a>　<a href="https://image01.seesaawiki.jp/n/h/nai_ch/anE_vIs97x.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/anE_vIs97x.jpg" border="0" width="400"></a><br>
+生成例<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/qmOjTfkh0x.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/qmOjTfkh0x.png" border="0" width="400"></a><br>
+</div></div><div id="content_block_102" class="wiki-section-1"><div class="title-1"><h3 id="content_7">サンプル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_102-body" class="wiki-section-body-1">
+</div></div><div id="content_block_104" class="wiki-section-2"><div class="title-2"><h4 id="content_7_15">活用例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_104-body" class="wiki-section-body-2">
+</div></div><div id="content_block_106" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_15">Scribble と Openpose 同時使用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_15" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_106-body" class="wiki-section-body-3">
+<pre id="content_block_107" class="prettyprint lang-perl">
+Scribble と Openpose を Multi CN で適用すると、ワイのクソヘボ落書きでも姿勢の打率爆上がりするな
+Openpose のみやとなんか姿勢固くなっちゃうし、Scribble でサポートするのもいいかもしれん
+棒人間はとしあきさんとこのツールを使わせてもろてるで
+半透明モードがあるのでキャンバスの上から関節位置を調整してる
+CN 設定はこんな感じ
+一回 t2i で構図決めてから i2i で Step と CFG を上げて高画質化しとる 
+</pre>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/oeIRaUxsrO.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/oeIRaUxsrO.png" border="0" width="400"></a> <a href="https://image01.seesaawiki.jp/n/h/nai_ch/kDXQW8QPvb.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/kDXQW8QPvb.png" border="0" width="400"></a> <a href="https://image02.seesaawiki.jp/n/h/nai_ch/lU1y_7mJTj.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/lU1y_7mJTj.png" border="0" width="400"></a>
+</div></div><div id="content_block_109" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_16">ずらしハメパンツ修正メソッド（t2i簡単超高打率） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_16" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_109-body" class="wiki-section-body-3">
+<pre id="content_block_110" class="prettyprint lang-perl">
+t2iのプロンプトpanties asideで出したずらしハメ…しかし結果はそうじゃない違うんだよ…それが許されるのはブルマとパンツだけなんだ…そんな時に有効な方法
+1.画像をControlnetのCannyを通して出力された線画をドラッグ＆ドロップでローカルに保存
+2.パンツの不要部分をペイントアプリで除去（白で塗りつぶす）
+3.修正した線画をControlnetにドラッグ&amp;ドロップ
+4.Preprosessor:Canny、Model:Canny、Weight:0.7±0.2程度
+5.プロンプトpanties asideの強度を0にする(panties aside:1.5) → (panties aside:0)
+メリット:超高打率でガチャほぼ不要　デメリット:色が少し薄くなる、細部がちょっと変わる
+なお、hedでも同様のことが可能。hedの場合は4のPreprosessorをnoneにする。こちらは出力が濃くなる。お好みでどうぞ。
+</pre>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/cXIIUUMPhf.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/cXIIUUMPhf.png" border="0" width="400"></a> <a href="https://image01.seesaawiki.jp/n/h/nai_ch/2Z_7nlf27t.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/2Z_7nlf27t.png" border="0" width="400"></a> <a href="https://image01.seesaawiki.jp/n/h/nai_ch/cKktDHXkRC.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/cKktDHXkRC.png" border="0" width="400"></a>
+</div></div><div id="content_block_112" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_17">depth と hed 併用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_17" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_112-body" class="wiki-section-body-3">
+<a href="https://twitter.com/Zuntan03/status/1629362974547906566" class="outlink">https://twitter.com/Zuntan03/status/16293629745479...</a>
+</div></div><div id="content_block_114" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_18">Scribble + Normal, Depth <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_18" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_114-body" class="wiki-section-body-3">
+<pre id="content_block_115" class="prettyprint lang-perl">
+1. Scribble でゴミのような線画をいい感じのリファレンスにしてもらう
+2. Daz で用意したなんとなくそれっぽいモデルを Blender に持ち込んで髪の毛だけ別に配置する
+3. Normal, Depth を出力してそれぞれ ControlNet で使用してみる。Prompt はある程度具体的に指定しておいた方がよさそう
+
+Normal はちゃんと背景まで作りこんでおかないといけなそう
+Depth は背景は勝手にいい感じにしてくれるけど後ろ髪をあんまり髪として認識してくれなかった
+
+ちな Blender から Normal 出力するときは Viewport Shading から Matcap Normal を適用して、Viewport Render Image で書き出す
+Outline は無効にしておいた方がエイリアスがなくてよさそう
+ControlNet での使用時は RGB to BGR にチェック
+Depth は Depth Pass を Normalize + Invert して書き出す
+マテリアルに半透明があると Depth にノイズが乗っちゃうので、不透明なマテリアルで Override しておく
+</pre>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/mJ_QSIXkJX.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/mJ_QSIXkJX.png" border="0" width="400"></a> <a href="https://image02.seesaawiki.jp/n/h/nai_ch/n4aLSz6cDU.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/n4aLSz6cDU.png" border="0" width="400"></a> <a href="https://image01.seesaawiki.jp/n/h/nai_ch/sYysc1py7e.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/sYysc1py7e.png" border="0" width="400"></a><br>
+</div></div><div id="content_block_117" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_19">inpaint <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_19" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_117-body" class="wiki-section-body-3">
+<pre id="content_block_118" class="prettyprint lang-perl">
+inpaintのcontrolnetでもできるで
+一つの方法としては
+元画像をt2iのcanyに通して線画を出力する。線画はドラックアンドドロップで適当なフォルダに落とせば保存できる
+胸のところの線画を加工して雑でもいいからおっぱいにする
+それをcontrolnetに置いて、Preprocessorをnoneにしてmodelをcanyにする
+元絵は上半身をインペイントで黒くする
+プロンプトはshirt lift, breasts, underwearとか描きたい要素を入れる
+加工が面倒ならdepth画像無加工でWeight落とすだけでもいけるかも
+</pre>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/i0DPvwztHh.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/i0DPvwztHh.png" border="0" width="400"></a><br>
+</div></div><div id="content_block_120" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_20"> 同じ構図で別のモデルに書かせる <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_20" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_120-body" class="wiki-section-body-3">
+<pre id="content_block_121" class="prettyprint lang-perl">
+同じ構図で別のモデルに書いてほしい場合はControlNet 1.1のTile使うとええな
+img2imgに比べてCN Tileは全モデルでスカートちゃんとたくし上げてくれとる
+
+img2img(ノイズ除去=0.7)
+（画像1枚目）
+
+ControlNet Tile
+（画像2枚目）
+設定
+（画像3枚目）
+</pre>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/aNDE6NBScc.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/aNDE6NBScc-s.jpg" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/M7GUkZbqB1.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/M7GUkZbqB1-s.jpg" border="0"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/T6ygwL4ia5.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/T6ygwL4ia5-s.png" border="0"></a><br>
+</div></div><div id="content_block_123" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_21"> 3Dモデルの動画から作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_21" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_123-body" class="wiki-section-body-3">
+<pre id="content_block_124" class="prettyprint lang-perl">
+＜3Dモデルの元動画準備＞
+VRoid＋Unity/BlenderなりMMDなりコイカツなりで動画撮る→なんかのソフトで連番画像に変換
+＜基本設定＞
+・Control Netは2つ使えるようにSettingsで設定しておく
+→i2iで、CNのlineart anime+tileでシード適当に固定
+→好きなプロンプト入れて、index（WebUIの○○/75とか右上に出ている奴）をメモ
+→MasaのForeground Indexesにその数字を入力、「LOGGING」をクリック
+＜メイン処理＞
+・連番画像の最初の1枚目を処理、問題なさそうならLOGGINGをRECONに変え全部画像処理
+</pre>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1684909555/539" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1684...</a><br>
+</div></div><div id="content_block_126" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_22"> lineart_anime+tileで大量bukkake（通称カムカム法） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_22" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_126-body" class="wiki-section-body-3">
+<pre id="content_block_127" class="prettyprint lang-perl">
+冗談みたいな量のbukkakeをどんな構図でも安定して出すことに成功したんやで
+png info https://files.catbox.moe/kw9t5u.png
+https://files.catbox.moe/9a4wxk.jpg
+https://files.catbox.moe/cnau87.jpg
+https://files.catbox.moe/ml99vm.jpg
+
+ControlNetを2つ用意して、1つ目をlineart_anime, weight0.3くらい, Start0.1, Ending0.7くらいに設定してこのテクスチャを指定
+https://files.catbox.moe/87gvo4.png
+2つ目をtileにしてWeight1.0, Start0.0, Ending0.1くらいに設定してこっちのテクスチャを指定（↑のテクスチャでもいい）でOKや
+https://files.catbox.moe/teinah.png
+プロンプトでcumを意識させて、lineartとかで精液の輪郭を誘導して、tileとかで精液の色を埋め込んで、3重に指定するのがこだわりポイントや
+weightやstrengthを弄ればimg2imgやinpaintでも使えるから応用してみてや。テクスチャ変えれば血まみれとかも作れるかもしれへんし
+</pre>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1687953737/768" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1687...</a><br>
+<br>
+<br>
+</div></div><div id="content_block_129" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_23"> テクスチャ法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_23" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_129-body" class="wiki-section-body-3">
+<br>
+<pre id="content_block_130" class="prettyprint lang-perl">
+0140今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 93a6-aBQB)
+テクスチャ法成功や！画面が派手派手で楽しい！
+
+https://i.imgur.com/pmQAaTN.jpg
+https://i.imgur.com/qswgWhC.jpg
+https://i.imgur.com/xmWIyuG.jpg
+https://i.imgur.com/Zk8RbTg.jpg
+https://i.imgur.com/ZyzOwU3.jpg
+
+0142今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff88-ATpV)
+&gt;&gt;140
+すげぇ綺麗
+元のテクスチャってどうやって作ってる？
+ただのノイズなら生成すぐ止めれば出てくるけど好きな配色のノイズを作る方法がわからない
+
+0151今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 93a6-aBQB)
+2023/09/02(土) 01:36:35.10ID:1kfWqEzD0
+&gt;&gt;142
+サンガツ！photoshopのブラシツールで作ったで。カンバスカラーは白。ランダム性もたせるために「散布」「間隔」の項目は要設定や。イメージさえあれば10秒くらいで作れるで。photoshop無くてもフリーソフトでいけそうやな
+目的の色・形状でテクスチャつくることが重要やと思うわ
+ワイの場合は「某英雄王をコンセプトに画面内に沢山のマジックサークルが欲しい→黄色の円一杯あったらいいんじゃね」ってとこからスタートした。背景ノイズはよくわからんから試しに白紙にしたら狙い通りにいった形や
+ただcontrolnetのtileのweight次第で結構変わるんで要検証や
+weight 0.7 https://files.catbox.moe/xaw8mm.webp
+weight 0.3 https://files.catbox.moe/z16wrb.webp
+実際に使ったテクスチャ
+https://files.catbox.moe/s3fpb7.png
+
+知っとるかもしれんが御月氏のnoteを参考に生成したで
+https://note.com/mitsukinozomi/n/ne735cc59afd1
+
+</pre>
+<br>
+下記は&gt;&gt;140の最初3つの画像<blockquote id="content_block_131">
+<a href="https://i.imgur.com/pmQAaTN.jpg"><img src="https://i.imgur.com/pmQAaTN.jpg" border="0" style="max-width:30%"></a>
+<a href="https://i.imgur.com/qswgWhC.jpg"><img src="https://i.imgur.com/qswgWhC.jpg" border="0" style="max-width:30%"></a>
+<a href="https://i.imgur.com/xmWIyuG.jpg"><img src="https://i.imgur.com/xmWIyuG.jpg" border="0" style="max-width:30%"></a>
+</blockquote>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1693550738/" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1693...</a><br>
+<a href="https://note.com/mitsukinozomi/n/ne735cc59afd1" class="outlink">https://note.com/mitsukinozomi/n/ne735cc59afd1</a><br>
+<br>
+</div></div><div id="content_block_133" class="wiki-section-3"><div class="title-3"><h5 id="content_7_15_24"> プリプロセッサ Shuffle、モデル Inpaintで構図に一捻り <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_15_24" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_133-body" class="wiki-section-body-3">
+<br>
+<br>
+<pre id="content_block_134" class="prettyprint lang-perl">
+
+0414今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f17-ATpV)
+2023/09/03(日) 10:06:34.14ID:cid4WzhP0
+プリプロセッサ Shuffle、モデル Inpaintで構図に一捻り加えられるやつの実例を作ってみた
+プロンプトは両方とも全く同じ
+気の利いた構図をお手軽に錬成できて便利やね
+https://i.imgur.com/DIj2Nbk.jpg
+https://i.imgur.com/aYTaeFN.jpg
+
+0416今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f17-ATpV)
+設定はこんな感じや、CNに読ませる画像はなんでもええと思う
+Control Modeは必ずMy prompt is more importantにしすること（これ以外は元画像が浮き出てくる）
+Preprocessor Resolutionの最適値は画像とモデル、生成したイラストの方向性によるんで微調節必須やな
+
+https://i.imgur.com/WHvdiEq.jpg
+
+0458
+これって捻り具合はどこで調整するんや
+とりあえずcontrolnetのweightをいじってみたんやが
+
+0466今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f17-ATpV)
+2023/09/03(日) 16:15:13.11ID:cid4WzhP0
+&gt;&gt;458
+Preprocessor Resolutionで調節やね
+&gt;&gt;463
+ワイもまだ原理をちゃんと理解してないんやが、t2iでの画像生成にモデルinpaintを用いると
+「読ませた画像の色味の境界に沿った構図を生成する」っぽいんや
+たとえばshuffleで歪ませずに&gt;&gt;416 のなんJで生成するとこういう感じになる
+
+https://i.imgur.com/nsBS18Y.png　https://i.imgur.com/0wlvurf.png
+https://i.imgur.com/uo97wer.png　https://i.imgur.com/kXFgB0P.png
+
+これはこれで構図を誘導したりだまし絵を作るのに有用っぽいんやけど
+さらにshuffleで曲線的・円的に歪ませて、いわゆるアクションラインを示してやるのが狙いや
+
+</pre>
+<br>
+下記は&gt;&gt;414の画像<br>
+<blockquote id="content_block_135">
+<a href="https://i.imgur.com/DIj2Nbk.jpg"><img src="https://i.imgur.com/DIj2Nbk.jpg" border="0" style="max-width:20%"></a>
+<a href="https://i.imgur.com/aYTaeFN.jpg"><img src="https://i.imgur.com/aYTaeFN.jpg" border="0" style="max-width:20%"></a>
+</blockquote>
+<br>
+</div></div><div id="content_block_137" class="wiki-section-2"><div class="title-2"><h4 id="content_7_16">動画 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_7_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_137-body" class="wiki-section-body-2">
+外人ニキやけど早送りでもだいたい分かる <a target="_blank" href="http://seesaawiki.jp/t/external-link/?url=https%3a//www%2eyoutube%2ecom/watch%3fv%3dci7NfTsifd0" class="outlink" rel="nofollow">https://www.youtube.com/watch?v=ci7NfTsifd0</a><br>
+</div></div><div id="content_block_139" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> 古い記載 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5029474&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_139-body" class="wiki-section-body-1">
+<div id="content_block_140">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_140-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_140-inside" class="toggle-display">
+もともとのControlNetでのモデル（ただし1つ5.71GB）：<a href="https://huggingface.co/lllyasviel/ControlNet/tree/main/models" class="outlink">https://huggingface.co/lllyasviel/ControlNet/tree/...</a><br>
+<del>Abyss Orange Mix2用のモデル（？？誰か検証してクレメンス）：<a href="https://civitai.com/models/9557/abyssorangemix2-controlnets" class="outlink">https://civitai.com/models/9557/abyssorangemix2-co...</a></del> ←これは上のkohya氏のものとハッシュ値が一致するので同一のようです。<br>
+<br>
+モデルの変換とか<br>
+Controlnetのpthとかsafetensorsって各マージモデル用に最適化した方がええんか<br>
+モデル専用のそれらがうｐされとるな<br>
+<ul id="content_block_141" class="list-1">
+<li>&gt; 968</li>
+</ul>
+指示画像に生成画像が従うように後付けのネットワークが訓練されとるのがControlNetや<br>
+今の公式版はSD1.5の生成画像を操作するように学習されとるから別のモデルに適用すると当然ズレがあって最良の結果にはならん<br>
+なのでモデルにはそれぞれのControlNetが本来は必要で専用のがあるのはおかしい話やないんやけど<br>
+その専用のがどういう風に作られてるのかは知らん<br>
+↓<ul id="content_block_142" class="list-1">
+<li>&gt; 980</li>
+</ul>
+それもう古い話やで<br>
+わざわざ専用版作らなくてもマージでそれっぽく動いたでという初期の報告や<br>
+それと同じことをミクビル版はその場でやっとる(やからモデルの切り替えがやけに重かったりする)<ul id="content_block_143" class="list-1">
+<li> [実験]他のSD1に制御を移します。X モデル ·ディスカッション #12 ·lllyasviel/ControlNet - [<a href="https://github.com/lllyasviel/ControlNet/discussions/12" class="outlink">https://github.com/lllyasviel/ControlNet/discussio...</a>](<a href="https://github.com/lllyasviel/ControlNet/discussions/12)" class="outlink">https://github.com/lllyasviel/ControlNet/discussio...</a></li>
+</ul>
+<br>
+unpronpt版<ul id="content_block_144" class="list-1">
+<li><a href="https://github.com/ThereforeGames/unprompted" class="outlink">https://github.com/ThereforeGames/unprompted</a></li>
+</ul>
+試したけどうまくいかんかったんで誰か書いて・・・<br>
+<br>
+</div>
+</div>
+</div></div>
+</div>

@@ -1,0 +1,94 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> [WebUI] Stable DiffusionベースモデルのCLIPの重みを良いやつに変更する</a></li>
+<li class="list-2"><a href="#content_1_2"> 学習時のOptimizer変更方法</a></li>
+<li class="list-2"><a href="#content_1_3"> sd_model_hash</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984082&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+ここでは内部的検証、コード周り直接触るような高度な研究の知見をまとめておくところです。<br>
+導入は<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%c6%b3%c6%fe%ca%fd%cb%a1">ローカルの導入方法</a>、UIの使い方のような簡単なTipsは<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%bb%c8%a4%a4%ca%fd">ローカルの使い方</a>を参照してください。<br>
+<ul id="content_block_2" class="list-1">
+<li> Euler aをweb版に合わせる話は<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%bb%c8%a4%a4%ca%fd">ローカルの使い方</a>に書きました。</li>
+<li> マージの研究は<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%a5%de%a1%bc%a5%b8">ローカルのマージ</a>に移しました。</li>
+<li> 拡張機能を使うのは<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ceExtensions">ローカルのExtensions</a>に書きました。</li>
+</ul>
+</div></div><div id="content_block_4" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> [WebUI] Stable DiffusionベースモデルのCLIPの重みを良いやつに変更する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984082&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_4-body" class="wiki-section-body-2">
+<br>
+<a href="https://zenn.dev/discus0434/articles/7ada798c5cc87d" class="outlink">https://zenn.dev/discus0434/articles/7ada798c5cc87...</a><br>
+<br>
+追加学習に副作用があるかも。<br>
+<br>
+669今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa5b-Z2Iz)2022/11/29(火) 19:44:01.88ID:qCHx1biqa&gt;&gt;675&gt;&gt;684<blockquote id="content_block_5">
+&gt;606
+</blockquote>
+途中引用してるグラフが性能比較の根拠っぽいけど<br>
+あれは2020年の資料なので<br>
+グラフ中のViT-L/14ってのは256画像で学習してた数世代前の物<br>
+ViT-L/<a href="mailto:14@336px">14@336px</a>はそれを336ピクセルで1epoch回したもの<br>
+<br>
+SDのViT-L/14はその後更に高解像度の512で学習を進めたもの<br>
+名前が同じだからややこしいけど多分グラフのViT-L/14と比較して勘違いしたんだと思う<br>
+構図指定の効き目が良くなったってのは気のせいなのでは <br>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> 学習時のOptimizer変更方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984082&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+<ul id="content_block_8" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/%b3%d8%bd%ac%bb%fe%a4%ceOptimizer%ca%d1%b9%b9%ca%fd%cb%a1">学習時のOptimizer変更方法</a></li>
+</ul>
+</div></div><div id="content_block_10" class="wiki-section-2"><div class="title-2"><h4 id="content_1_3"> sd_model_hash <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4984082&amp;part=content_1_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_10-body" class="wiki-section-body-2">
+<br>
+現状、PNG Info等とモデルやHNを完全に一致させるのは難しい。<br>
+<br>
+ckptやHNのptについてる8桁のハッシュはファイルの一部のみのハッシュである。<br>
+<br>
+<div id="content_block_11">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_11-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_11-inside" class="toggle-display">
+<pre id="content_block_12" class="PLAIN-BOX">
+def model_hash(filename):
+    try:
+        with open(filename, "rb") as file:
+            import hashlib
+            m = hashlib.sha256()
+
+            file.seek(0x100000)
+            m.update(file.read(0x10000))
+            return m.hexdigest()[0:8]
+    except FileNotFoundError:
+        return 'NOFILE'
+</pre>
+</div>
+</div>
+<br>
+そのため、DBやHNでファイルが増えた場合、ハッシュが衝突しやすい。<br>
+<br>
+ckptは、最初(cmdr版)の頃に model.ckpt とファイル名が固定だったこと、<br>
+NAILeakのファイル名が中身を推測しにくいこと、<br>
+マージモデルにつくデフォルトの名前が長すぎるなどの理由で、<br>
+ユーザーがファイル名を変える可能性が高く、ファイル名を衝突回避に使いづらい。<br>
+完全なsha256を実装すると読み込みに時間がかかってしまうが、<br>
+キャッシュファイルを作る等の提案が行われている。<br>
+<br>
+HNのptは内部にnameを持っているが、Stepsを完走した場合はnameに反映されない。<br>
+ファイル名も配布時に失われたりする。<br>
+ckptと比べるとファイルサイズが小さい分、完全なsha256には移行しやすい。<br>
+<br>
+Anything v3は配布時期と配布方法によって数種類のファイルが存在するらしい。<br>
+(マルウェアが誤検出されたことが理由かも知れないがわからない)<br>
+このファイルはsd_model_hashが異なるので判別は可能である。
+</div></div>
+</div>

@@ -1,0 +1,335 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> Google Colaboratory <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+ノートブックの改造ネタなど。<br>
+Colabってなーにって話は<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%f2%a5%af%a5%e9%a5%a6%a5%c9%a4%c7">ローカルをクラウドで</a>に書いてある。<br>
+完成したノートブックは以下の場所に置いてある。<br>
+<br>
+<span style="color:#ff0000;">Remote UI(1111を含む)の利用が禁止になりました。</span><br>
+以後、ブラウザで操作するタイプのソフトウェアは使わないでください。<br>
+<ul id="content_block_2" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/kohya%5ftrain%5fnetwork%5fsimple">kohya_train_network_simple</a> Lora学習用</li>
+</ul>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> Google Colaboratory</a></li>
+<li class="list-1"><a href="#content_2"> ねらい</a></li>
+<li class="list-1"><a href="#content_3"> Google Drive</a>
+<ul>
+<li class="list-2"><a href="#content_3_1"> マウント</a></li>
+<li class="list-2"><a href="#content_3_2"> ファイル</a>
+<ul>
+<li class="list-3"><a href="#content_3_2_1"> バックアップ</a></li>
+<li class="list-3"><a href="#content_3_2_2"> リストア</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_3_3"> ディレクトリ</a>
+<ul>
+<li class="list-3"><a href="#content_3_3_3"> バックアップ</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_3_4"> リストア</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> Python</a>
+<ul>
+<li class="list-2"><a href="#content_4_5"> 3.10のインストール</a>
+<ul>
+<li class="list-3"><a href="#content_4_5_4"> 「python」と打てば python3.10 が動くようにする</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_4_6"> 3.9のインストール</a></li>
+<li class="list-2"><a href="#content_4_7"> pipを最新にする</a></li>
+<li class="list-2"><a href="#content_4_8"> venvを導入する</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> venv</a>
+<ul>
+<li class="list-2"><a href="#content_5_9"> 新規作成</a></li>
+<li class="list-2"><a href="#content_5_10"> activate</a></li>
+<li class="list-2"><a href="#content_5_11"> torchとxformersのインストール</a>
+<ul>
+<li class="list-3"><a href="#content_5_11_5"> torch==1.13.1+cu117 と xformers==0.0.16rc425</a></li>
+<li class="list-3"><a href="#content_5_11_6"> condaで入れる場合(Python 3.9でvenvを使わない)</a></li>
+<li class="list-3"><a href="#content_5_11_7"> xformers==0.0.15.dev0(Python 3.8)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> ファイルのダウンロード</a>
+<ul>
+<li class="list-2"><a href="#content_6_12"> wget</a></li>
+<li class="list-2"><a href="#content_6_13"> aria2c</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_7"> ファイルのアップロード</a>
+<ul>
+<li class="list-2"><a href="#content_7_14"> 🤗へのログイン</a></li>
+<li class="list-2"><a href="#content_7_15"> アップロード</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_8"> git</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> ねらい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_4-body" class="wiki-section-body-1">
+<ul id="content_block_5" class="list-1">
+<li> 無料版に対応する(Driveも)</li>
+<li> ローカル版が使えない人も対象</li>
+<li> PC利用</li>
+<li> CPUで済ませられる作業はGPUを割り当てないノートブックで済ませる</li>
+<li> できるだけGUIを使わない(設定はノートブックで済ませる)</li>
+<li> できるだけシンプルな方法を採用する(コンパイルは極力控える)</li>
+</ul>
+</div></div><div id="content_block_7" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> Google Drive <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_7-body" class="wiki-section-body-1">
+</div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1"> マウント <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_9-body" class="wiki-section-body-2">
+<br>
+毎回承認が必要。面倒だけど勝手にマウントされないので安全。<br>
+<br>
+<pre id="content_block_10" class="BOX">
+from google.colab import drive
+drive.mount('/content/drive')
+</pre>
+<br>
+/content/drive/MyDrive 以下を使う<br>
+</div></div><div id="content_block_12" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> ファイル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_12-body" class="wiki-section-body-2">
+<br>
+モデルやconfig.jsonとか。<br>
+</div></div><div id="content_block_14" class="wiki-section-3"><div class="title-3"><h5 id="content_3_2_1"> バックアップ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_3_2_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_14-body" class="wiki-section-body-3">
+<br>
+<pre id="content_block_15" class="BOX">
+src_path = "/content/hoge.piyo" #@param {type:"string"}
+dst_path = "/content/drive/MyDrive/hoge.piyo" #@param {type:"string"}
+
+!cp {src_path} {dst_path}
+</pre>
+</div></div><div id="content_block_17" class="wiki-section-3"><div class="title-3"><h5 id="content_3_2_2"> リストア <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_3_2_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_17-body" class="wiki-section-body-3">
+<br>
+<pre id="content_block_18" class="BOX">
+dst_path = "/content/drive/MyDrive/hoge.piyo" #@param {type:"string"}
+src_path = "/content/hoge.piyo" #@param {type:"string"}
+
+!cp {dst_path} {src_path}
+</pre>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> ディレクトリ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5 id="content_3_3_3"> バックアップ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_3_3_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+<br>
+高速に処理したいのでZStandardを使う。<br>
+<br>
+stable-diffusion-webui ごとバックアップする手と、<br>
+venvだけバックアップする手が考えられる。<br>
+前者はgithubが急に無くなっても動作させられるが、<br>
+ダウンロードするだけのものを再圧縮するので時間と容量は余計にかかる。<br>
+<br>
+1111は初回起動が終わった後でバックアップしたほうが良い。<br>
+以下は /content/hoge/venv の例。<br>
+<br>
+<pre id="content_block_23" class="BOX">
+zip_path = "/content/hoge_venv.zst" #@param {type:"string"}
+
+%cd /content/hoge
+
+!pip install zipfile-zstd
+import os
+import zipfile_zstd as zipfile
+from glob import glob
+with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_ZSTANDARD, compresslevel=3) as zip_f:
+  for path in glob("venv/**", recursive=True):
+    zip_f.write(path)
+</pre>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> リストア <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+<br>
+zst にフォルダが内包されていることが必須(上記の方法ならOK)<br>
+<br>
+<pre id="content_block_26" class="BOX">
+zip_path = "/content/hoge_venv.zst" #@param {type:"string"}
+dst_path = "/content/hoge" #@param {type:"string"}
+
+!pip install zipfile-zstd
+import zipfile_zstd as zipfile
+with zipfile.ZipFile(zip_path, 'r', zipfile.ZIP_ZSTANDARD) as zObject:
+    zObject.extractall(path=dst_path)
+</pre>
+<br>
+pythonが実行できない時はパーミッションを設定する<br>
+<br>
+<pre id="content_block_27" class="BOX">
+!chmod +x "{dst_path}/venv/bin/python"
+!chmod +x "{dst_path}/venv/bin/pip"
+!chmod +x "{dst_path}/venv/bin/accelerate"
+</pre>
+</div></div><div id="content_block_29" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> Python <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_29-body" class="wiki-section-body-1">
+<br>
+諸悪の根源はだいたいこいつ。<br>
+最近は3.8が最初に入っている。<br>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5"> 3.10のインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+<br>
+Python本体をDriveにバックアップする方法は不明。<br>
+<br>
+<pre id="content_block_32" class="BOX">
+!sudo apt autoremove
+!sudo apt-get -y update
+!sudo apt-get -y install python3.10
+</pre>
+</div></div><div id="content_block_34" class="wiki-section-3"><div class="title-3"><h5 id="content_4_5_4"> 「python」と打てば python3.10 が動くようにする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_4_5_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_34-body" class="wiki-section-body-3">
+<br>
+<pre id="content_block_35" class="BOX">
+!sudo cp `which python3.10` /usr/local/bin/python
+</pre>
+<br>
+古いバージョンのpythonに依存した何かが動かなくなる可能性があるので、<br>
+常時起動のサーバとか多目的用途の環境ではやらないほうがいい。<br>
+</div></div><div id="content_block_37" class="wiki-section-2"><div class="title-2"><h4 id="content_4_6"> 3.9のインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_4_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_37-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_38" class="BOX">
+MINICONDA_SH='Miniconda3-py39_4.12.0-Linux-x86_64.sh' # Miniconda3-latest-Linux-x86_64.sh
+!wget https://repo.anaconda.com/miniconda/{MINICONDA_SH}
+!chmod +x {MINICONDA_SH}
+!./{MINICONDA_SH} -b -f -p /usr/local
+del MINICONDA_SH
+</pre>
+</div></div><div id="content_block_40" class="wiki-section-2"><div class="title-2"><h4 id="content_4_7"> pipを最新にする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_4_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_40-body" class="wiki-section-body-2">
+<br>
+どの環境でもこの方法がよさげ。<br>
+<br>
+<pre id="content_block_41" class="BOX">
+!wget https://bootstrap.pypa.io/get-pip.py
+!sudo python get-pip.py
+</pre>
+</div></div><div id="content_block_43" class="wiki-section-2"><div class="title-2"><h4 id="content_4_8"> venvを導入する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_4_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_43-body" class="wiki-section-body-2">
+<br>
+この方法では既にvenvが使えるので不要。<br>
+(venvが無い環境ではインストール方法が用意されているはず)<br>
+</div></div><div id="content_block_45" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> venv <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_45-body" class="wiki-section-body-1">
+</div></div><div id="content_block_47" class="wiki-section-2"><div class="title-2"><h4 id="content_5_9"> 新規作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_5_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_47-body" class="wiki-section-body-2">
+<br>
+ファイル数が多いのでDrive内に作ってはいけない。<br>
+<br>
+<pre id="content_block_48" class="BOX">
+%cd お目当てのディレクトリ
+python -v venv venv
+</pre>
+<br>
+以下は お目当てのディレクトリ 上での作業を前提とする。<br>
+</div></div><div id="content_block_50" class="wiki-section-2"><div class="title-2"><h4 id="content_5_10"> activate <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_5_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_50-body" class="wiki-section-body-2">
+<br>
+実はactivateしなくてもvenvの中のpythonを叩けば実行できる。<br>
+出たり入ったりするのがややこしいのでこのページでは使わない。<br>
+</div></div><div id="content_block_52" class="wiki-section-2"><div class="title-2"><h4 id="content_5_11"> torchとxformersのインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_5_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_52-body" class="wiki-section-body-2">
+</div></div><div id="content_block_54" class="wiki-section-3"><div class="title-3"><h5 id="content_5_11_5"> torch==1.13.1+cu117 と xformers==0.0.16rc425 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_5_11_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_54-body" class="wiki-section-body-3">
+<br>
+今までの苦労はなんだったんだって感じで、この3行だけですんなり入る。<br>
+<br>
+<pre id="content_block_55" class="BOX">
+!venv/bin/pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+!venv/bin/pip install -U --pre triton
+!venv/bin/pip install xformers==0.0.16rc425
+</pre>
+</div></div><div id="content_block_57" class="wiki-section-3"><div class="title-3"><h5 id="content_5_11_6"> condaで入れる場合(Python 3.9でvenvを使わない) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_5_11_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_57-body" class="wiki-section-body-3">
+<br>
+<pre id="content_block_58" class="BOX">
+!conda update conda -y
+!conda install pytorch==1.13.1 torchvision==0.14.1 cudatoolkit=11.7 -c pytorch -y
+!conda install xformers -c xformers/label/dev -y
+</pre>
+</div></div><div id="content_block_60" class="wiki-section-3"><div class="title-3"><h5 id="content_5_11_7"> xformers==0.0.15.dev0(Python 3.8) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_5_11_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_60-body" class="wiki-section-body-3">
+<br>
+sd-scriptsがこのバージョンじゃないと正常動作してても学習出来てない不具合があるとかなんとか。<br>
+Pythonのバージョンを上げることは出来ない。<br>
+<br>
+<pre id="content_block_61" class="BOX">
+!venv/bin/pip install -q https://github.com/camenduru/stable-diffusion-webui-colab/releases/download/0.0.15/xformers-0.0.15.dev0+189828c.d20221207-cp38-cp38-linux_x86_64.whl
+</pre>
+</div></div><div id="content_block_63" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> ファイルのダウンロード <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_63-body" class="wiki-section-body-1">
+</div></div><div id="content_block_65" class="wiki-section-2"><div class="title-2"><h4 id="content_6_12"> wget <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_6_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_65-body" class="wiki-section-body-2">
+<br>
+🤗にあるものはwgetで十分な速度が出る。<br>
+<br>
+<pre id="content_block_66" class="BOX">
+ckpt_url = 'https://huggingface.co/aka7774/fp16_safetensors/resolve/main/7th_anime_v3_A-fp16-1833-2982-0018.safetensors'#@param {type:"string"}
+!wget -c "{ckpt_url}" -P /content/stable-diffusion-webui/models/Stable-diffusion/
+</pre>
+</div></div><div id="content_block_68" class="wiki-section-2"><div class="title-2"><h4 id="content_6_13"> aria2c <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_6_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_68-body" class="wiki-section-body-2">
+<br>
+🤗にないものは🤗にアップロードして🤗からダウンロードしたほうが良い。<br>
+<br>
+<pre id="content_block_69" class="BOX">
+aria_url = ''#@param {type:"string"}
+if aria_url:
+    !apt install -y -qq aria2
+    !aria2c --summary-interval=10 -x 3 --allow-overwrite=true -Z {aria_url}
+</pre>
+</div></div><div id="content_block_71" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> ファイルのアップロード <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_71-body" class="wiki-section-body-1">
+</div></div><div id="content_block_73" class="wiki-section-2"><div class="title-2"><h4 id="content_7_14"> 🤗へのログイン <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_7_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_73-body" class="wiki-section-body-2">
+<br>
+writeトークンはリンク先のページで作れる。<br>
+<br>
+<pre id="content_block_74" class="BOX">
+!pip install --upgrade huggingface_hub
+from huggingface_hub import login, HfApi
+login()
+</pre>
+</div></div><div id="content_block_76" class="wiki-section-2"><div class="title-2"><h4 id="content_7_15"> アップロード <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_7_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_76-body" class="wiki-section-body-2">
+<br>
+repo_type が空白だとモデル<br>
+dataset は画像など用<br>
+<br>
+<pre id="content_block_77" class="BOX">
+filepath = "" #@param {type:"string"}
+path_in_repo = "" #@param {type:"string"}
+repo_id = "" #@param {type:"string"}
+repo_type = "" #@param {type:"string"}
+
+import os
+if os.path.exists(filepath):
+  api = HfApi()
+  api.upload_file(path_or_fileobj=filepath,
+    path_in_repo=path_in_repo,
+    repo_id=repo_id,
+    repo_type=repo_type,
+  )
+</pre>
+</div></div><div id="content_block_79" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> git <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014635&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_79-body" class="wiki-section-body-1">
+<br>
+<pre id="content_block_80" class="BOX">
+!git clone https://github.com/kohya-ss/sd-scripts.git
+%cd sd-scripts
+</pre>
+</div></div>
+</div>

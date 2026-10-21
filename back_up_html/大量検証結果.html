@@ -1,0 +1,349 @@
+<div class="user-area">
+※手が足りないため一旦コピペで簡易掲載<br>
+imgurの画像は消える可能性もあるので誰かWiki内に上げ直してくれると安全<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">HyperNetworkのX/Yプロット検証 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<div id="content_block_2">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_2-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_2-inside" class="toggle-display">
+様々なHyperNetworkを適用してみて、画風の変わり具合の検証を行いました。<br>
+<br>
+<div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4>検証時使用モデルおよびプロンプト</h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+<ul id="content_block_4" class="list-1">
+<li> モデル：NovelAI animefull-final-pruned [925997e9]</li>
+<li> Vae：nai.vae</li>
+</ul>
+<br>
+▼プロンプト<table id="content_block_5"><tbody><tr><td>(masterpiece:1.3), (best quality:1.0), masterpiece, best quality, 1girl, (solo:1.1), amazing awesome highly detailed, (realistic:0.6), ray tracing, DOF, HDR, (full body:1.1), (downtown:1.1), (go-toubun no hanayome:1.1), (nakano yotsuba:1.4), orange hair, ([green rabbit short ears hairband:green hairband ribbon:0.25]:1.2), (tareme:1.2), (bangs:1.2), (swept bangs:1.1), :d, happy smile, joy, upper_teeth, (teen age:1.2), 17yo, blue eyes, bob cut, casual wear, BELSTAFF, BIBA, BUCK MASON, VALENTINO, JAMES LAKELAND, MISSGUIDED, SELECTED FEMME, UNITED ARROWS, YOHJI YAMAMOTO, Hippie Rose, Marc New York,</td></tr><tr><td>Negative prompt: (bad_prompt:1.0), parted bangs, green clothes, helmet hair.nakano nino, nakano miku, nakano itsuki, hair between eyes, blunt bangs, tsurime, evil smile, smug_face, naughty smile, loli, petite, child, mature female ,milf, adult, women, middle age, pablo picasso, lowres, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, bad anatomy, bad hands, fewer digits, signature</td></tr><tr><td>Steps: 28, Sampler: Euler, CFG scale: 11, Seed: 4035116040, Size: 512x1024, Model hash: 925997e9, Hypernet: ○○○, Hypernet strength: 0.8, Clip skip: 2, ENSD: 31337</td></tr></tbody></table>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4>検証用HyperNetwork</h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+<br>
+検証したHyperNetworkは主に韓国で配布されているHyperNetworkです。<br>
+공유된 hypernet, embedding 모음 (샘플 有) - AI그림 학습 채널 - <a href="https://arca.live/b/hypernetworks/60940948" class="outlink">https://arca.live/b/hypernetworks/60940948</a><br>
+<br>
+ダウンロードは<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%a5%ea%a5%bd%a1%bc%a5%b9">ローカルのリソース</a>を参照するか、以下のhuggingfaceでまとめてダウンロードすることができます。※Git、またはGithubDesktopでクローンリポジトリしてください。<br>
+<a href="https://huggingface.co/WarriorMama777/HyperNetworkCollection_v2/tree/main" class="outlink">https://huggingface.co/WarriorMama777/HyperNetwork...</a><br>
+<br>
+</div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4>検証設定</h4></div>
+<div id="content_block_9-body" class="wiki-section-body-2">
+XYプロットには以下のコマンドでHyperNetworkを検証しました。<br>
+<table id="content_block_10"><tbody><tr><td>Misaka12003,misekai_555-40000,mj6wn4,mo1,moisture,momoko-γ,musouduki-50000,nekotoufu,nonomi,Ookuma Nekosuke-65000,oov1wq,oryou,pon1,porunoibuki,porunoibuki-11000,quad-a-43500,rietta-80500,sasugakei,shi1,Someoka,sukamo,sukamo-40000,Uo Denim,WKRY9IE,xfa017,xks8j7,y7reaw,1l52ve,3yj2lz,4urpyj,430rus,aamuk-36500,Aikawa,an1,anime_2,asa 100k+118.5k gen,asanagi(2),asanagi-150500,azusa,banno,bi1,deokho-30000,eimi,euiaok,gweda,h979or,hanako-60000,hanto,Haru,HiiragiYuichi,irohara,j4acm4,je1,JY2-13500-32000-99000,kai1,Kirisaki,kne748,Komori Kuduyu,kyuri-90000,maruzen,meganei,meganei-20000,meganei-21000,meganei-24000,Melon</td></tr></tbody></table>
+<br>
+</div></div><div id="content_block_12" class="wiki-section-2"><div class="title-2"><h4>結果画像</h4></div>
+<div id="content_block_12-body" class="wiki-section-body-2">
+<br>
+グリッド画像の概観です。<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/DiK2h5sTMY.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/DiK2h5sTMY.jpg" border="0"></a><br>
+<br>
+原寸大は以下から閲覧できます。<br>
+Webp:4MB：<a href="https://files.catbox.moe/0g37s3.webp" class="outlink">https://files.catbox.moe/0g37s3.webp</a><br>
+<br>
+<br>
+</div></div>
+</div>
+</div>
+</div></div><div id="content_block_16" class="wiki-section-1"><div class="title-1"><h3 id="content_2">マージモデル検証｜個人的にマージした様々なモデルのX/Yプロット検証 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_16-body" class="wiki-section-body-1">
+<div id="content_block_17">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_17-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_17-inside" class="toggle-display">
+個人的にためした様々なマージモデルを掲載します<br>
+またいい具合だったAnEve.G.N0.3 は「ElderOrangeMix」として、AnythingとNai+Gapeをあわせる定番の(?)モデルは「BloodOrangeMix」としてhuggingfaceにアップしました。別参照：<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%a5%ea%a5%bd%a1%bc%a5%b9">ローカルのリソース</a><br>
+<br>
+出力グリッド画像は以下から閲覧できます。※サイズが大きいので注意<br>
+Webp:18MB：<a href="https://files.catbox.moe/6kwomv.webp" class="outlink">https://files.catbox.moe/6kwomv.webp</a><br>
+サムネイル↓<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/o5YMISaUfx.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/o5YMISaUfx.jpg" border="0" width="600"></a><br>
+<br>
+<div id="content_block_18" class="wiki-section-2"><div class="title-2"><h4>モデル一覧表</h4></div>
+<div id="content_block_18-body" class="wiki-section-body-2">
+雑然としていて申し訳ない<br>
+管理名(旧)と説明を合わせて見ればとりあえずなにをマージしたかはわかると思う<br>
+<br>
+<table id="content_block_19"><tbody><tr><td>管理名(旧)</td><td>管理名(新)</td><td>〃</td><td>説明</td><td>アップロード</td><td>配布用名称</td><td>ハッシュ値</td></tr><tr><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td></tr><tr><td>,AN.G-N_AN+(Gape60-Nai)_1.0</td><td>,AN.G-N1.0</td><td>AN.G-N1.0</td><td>Anything+NAIにGape。定番の(?)やつ</td><td>🔽<a href="https://huggingface.co/WarriorMama777/OrangeMixs" class="outlink">https://huggingface.co/WarriorMama777/OrangeMixs</a>　｜　<a href="https://pixeldrain.com/u/NHtvQ1zh" class="outlink">https://pixeldrain.com/u/NHtvQ1zh</a></td><td>BloodOrangeMix</td><td>[ffa7b160]</td></tr><tr><td>,Anything-V3.0-pruned</td><td>,An_V3_Pr</td><td>An_V3_Pr</td><td></td><td></td><td></td><td></td></tr><tr><td>,nai</td><td>,nai</td><td>nai</td><td></td><td></td><td></td><td></td></tr><tr><td>,nai_sfw</td><td>,nai_sfw</td><td>nai_sfw</td><td></td><td></td><td></td><td></td></tr><tr><td>,Elysium_Anime_V2</td><td>,ELY_A_V2</td><td>ELY_A_V2</td><td></td><td></td><td></td><td></td></tr><tr><td>,AG__Any+(Gape-Nai)_0.5</td><td>,AG0.5</td><td>AG0.5</td><td>Anything+Gape</td><td></td><td></td><td></td></tr><tr><td>,NG__Nai+(Gape-Nai)_0.4</td><td>,NG0.4</td><td>NG0.4</td><td>Nai+Gape</td><td></td><td></td><td></td></tr><tr><td>,NG__Nai+(Gape-Nai)_0.8</td><td>,NG0.8</td><td>NG0.8</td><td>Nai+Gape</td><td></td><td></td><td></td></tr><tr><td>,gAGN__gAG+(Nai-gAnon)_0.8</td><td>,gAG.N0.8</td><td>gAG.N0.8</td><td>gA+GapeにNAI足したモデル</td><td></td><td></td><td>/g/-anon's unnamed mix [e93c3bf7]</td></tr><tr><td>,gAGN__gAG+(Nai-gAnon)_0.55</td><td>,gAG.N0.55</td><td>gAG.N0.55</td><td>gA+GapeにNAI足したモデル</td><td></td><td></td><td>/g/-anon's unnamed mix [e93c3bf7]</td></tr><tr><td>,anything+everything-ver1.5</td><td>,AnEve_V1.5</td><td>AnEve_V1.5</td><td></td><td></td><td></td><td></td></tr><tr><td>,gAG__gAnon+(Gape-Nai)_0.55</td><td>,gAG0.55</td><td>gAG0.55</td><td>gAnonにGape</td><td></td><td></td><td>/g/-anon's unnamed mix [e93c3bf7]</td></tr><tr><td>,gape60</td><td>,gape60</td><td>gape60</td><td></td><td></td><td></td><td></td></tr><tr><td>,g-anonmix</td><td>,gA</td><td>gA</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>,AnEve.G0.5</td><td>AnEve.G0.5</td><td>AnEve_V1.5+(Gape0.5-NaiFull)したモデル</td><td></td><td></td><td></td></tr><tr><td></td><td>,AnEve.G.N0.3</td><td>AnEve.G.N0.3</td><td>AnEve.G0.5にNai-Naisfw0.3したモデル</td><td>🔽<a href="https://huggingface.co/WarriorMama777/OrangeMixs" class="outlink">https://huggingface.co/WarriorMama777/OrangeMixs</a>　｜　<a href="https://pixeldrain.com/u/i9tdZsVJ" class="outlink">https://pixeldrain.com/u/i9tdZsVJ</a></td><td>ElderOrangeMix</td><td>[3a46a1e0]</td></tr></tbody></table>
+<br>
+<hr size="1" noshade>
+# Merge Recipes<br>
+<br>
+### ElderOrangeMix [3a46a1e0] ｜anything and everything mix ver.1.5+Gape+Nai(AnEve.G.N0.3)<br>
+<br>
+▼Use Models<br>
+1. anything and everything mix ver.1.5 [5265dcf6]<br>
+2. NovelAI animefull-final-pruned [925997e9]<br>
+3. NovelAI sfw [1d4a34af]<br>
+4. Gape60 [25396b85]<br>
+<br>
+### **Instructions:**<br>
+<table id="content_block_21"><tbody><tr><td>Step</td><td>Interpolation Method</td><td>Primary Model</td><td>Secondary Model</td><td>Tertiary Model</td><td>Merge Name</td></tr><tr><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td></tr><tr><td>1</td><td>Add Difference @ 0.5</td><td>anything and everything mix ver.1.5</td><td>Gape60</td><td>NovelAI full</td><td>tempmix-part1 []</td></tr><tr><td>2</td><td>Add Difference @ 0.3</td><td>tempmix-part1</td><td>NovelAI full</td><td>NovelAI sfw</td><td>ElderOrangeMix  [3a46a1e0]</td></tr></tbody></table>
+<br>
+<hr size="1" noshade>
+<br>
+※<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%a5%de%a1%bc%a5%b8">ローカルのマージ</a>にあるAnythingのおすすめマージレシピと同様です。<br>
+### BloodOrangeMix [ffa7b160]｜Anything+Nai+Gape<br>
+<br>
+▼Use Models<br>
+1. AnythingV3.0 huggingface pruned [2700c435]<br>
+2. NovelAI animefull-final-pruned [925997e9]<br>
+3. NovelAI sfw [1d4a34af]<br>
+4. Gape60 [25396b85]<br>
+<br>
+### **Instructions:**<br>
+<table id="content_block_23"><tbody><tr><td>Step</td><td>Interpolation Method</td><td>Primary Model</td><td>Secondary Model</td><td>Tertiary Model</td><td>Merge Name</td></tr><tr><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td><td>---</td></tr><tr><td>1</td><td>Add Difference @ 0.3</td><td>AnythingV3.0</td><td>NovelAI animefull</td><td>NovelAI sfw</td><td>tempmix-part1 []</td></tr><tr><td>2</td><td>Add Difference @ 1.0</td><td>tempmix-part1</td><td>Gape60</td><td>NovelAI animefull</td><td>BloodOrangeMix [ffa7b160]</td></tr></tbody></table>
+</div></div>
+</div>
+</div>
+</div></div><div id="content_block_27" class="wiki-section-1"><div class="title-1"><h3 id="content_3">TextualInversionで手を修復する：bad_prompt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_27-body" class="wiki-section-body-1">
+<div id="content_block_28">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_28-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_28-inside" class="toggle-display">
+<div id="content_block_29" class="wiki-section-2"><div class="title-2"><h4>手を修復する：bad_prompt</h4></div>
+<div id="content_block_29-body" class="wiki-section-body-2">
+TextualInversionで悪い手の形を学習させて、Embeddingでネガティブプロンプトとして使うことで正しい手の形を生成するやつです。<br>
+参照：Nerfgun3/bad_prompt · Datasets at Hugging Face - <a href="https://huggingface.co/datasets/Nerfgun3/bad_prompt" class="outlink">https://huggingface.co/datasets/Nerfgun3/bad_promp...</a><br>
+</div></div><div id="content_block_31" class="wiki-section-3"><div class="title-3"><h5>検証(1)</h5></div>
+<div id="content_block_31-body" class="wiki-section-body-3">
+<br>
+以下のプロンプトで(bad_prompt:0.0)の数値をXYプロットで変化させながら、様々な手のポーズを出力した<br>
+<br>
+<br>
+<table id="content_block_32"><tbody><tr><td>(masterpiece:1.1), best quality, silver color schema, (cowboy shot,:1.3) (mature female:1.3),(1girl), (solo:1.1), beret, white shirt, silver long_hair, hair_between_eyes, happy smile, :d, (simple background:1.2), beautiful detailed eye, shiny skin, shiny hair, head tilt, (hand:1.3),(open hand:1.2), (hand up:1.2), (naval:1.1)</td></tr><tr><td>Negative prompt: nsfw, (bad_prompt:0.0), 3D, 3Dcubism, disney, marvel, lowres, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, lowres, trademark, watermark, title, text, deformed, disfigured, mutated, extra limbs, ugly, missing limb, floating limbs, disconnected limbs, out of frame, mutated hands and fingers, poorly drawn hands, malformed hands, poorly drawn face, poorly drawn asymmetrical eyes, blurry, duplicate, loli, petite, child, infant, toddlers,</td></tr><tr><td>Steps: 28, Sampler: DPM++ 2M Karras, CFG scale: 8.5, Seed: 3725970099, Size: 1024x1024, Model hash: 2700c435, Denoising strength: 0.7, Clip skip: 2, ENSD: 31337, First pass size: 0x0</td></tr></tbody></table>
+<br>
+<br>
+XYプロット<br>
+▼X軸<br>
+0.0,0.2,0.4,0.6,0.8,1.0,1.2,1.4<br>
+▼Y軸<br>
+open hand<br>
+akanbe<br>
+bunny pose<br>
+double v<br>
+paw pose<br>
+finger counting<br>
+finger frame<br>
+fist bump<br>
+own hands clasped<br>
+heart hands<br>
+<br>
+<hr size="1" noshade>
+<br>
+▼検証結果<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/76m4BdwMrl.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/76m4BdwMrl.jpg" border="0" width="300"></a><br>
+<br>
+→グリッド画像(.webp形式。でかいので注意：2MBくらい)：<a href="https://image02.seesaawiki.jp/n/h/nai_ch/EGsDrF6gBP.webp" class="outlink">https://image02.seesaawiki.jp/n/h/nai_ch/EGsDrF6gB...</a><br>
+<br>
+公式によると0.8くらいで使ってくださいとのことですが、手の修復の効果が見られるのは1.0〜1.4の間でした。1.0未満は数値が上がるごとに改善しているような気がしなくもないですが若干プラシーボ感もあります。もっとも破綻のない手を描けているのは1.4で7枚でした。また1.2では3枚でした。1.0ではどこかしら破綻があったりよけいな指があったりしますが、全体的に整った印象の手になってる気がします。<br>
+ただし手の修復と引き換えに1.0超えてくるとがっつり補正かかってきて絵柄に影響がでてきます。→絵柄に影響を及ぼさないVersion2が開発中らしいです。<br>
+追記：なおVersion2を使用する場合は、bad_prompt_version2とプロンプトを打たないと使用できないので注意です。<br>
+</div></div>
+</div>
+</div>
+</div></div><div id="content_block_37" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> モデル比較表(1)：元素プロンプト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_37-body" class="wiki-section-body-1">
+<div id="content_block_38">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_38-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_38-inside" class="toggle-display">
+|<a href="https://image02.seesaawiki.jp/n/h/nai_ch/BHSusvNx7T.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/BHSusvNx7T.jpg" border="0" width="400"></a>|<a href="https://image02.seesaawiki.jp/n/h/nai_ch/QGMoSpovYu.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/QGMoSpovYu.jpg" border="0" width="400"></a>|<a href="https://image02.seesaawiki.jp/n/h/nai_ch/rwUnG5Rbyu.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/rwUnG5Rbyu.jpg" border="0" width="400"></a>|<a href="https://image02.seesaawiki.jp/n/h/nai_ch/taFwEi0H6L.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/taFwEi0H6L.jpg" border="0" width="400"></a>
+</div>
+</div>
+</div></div><div id="content_block_41" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 色見本・色テスト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_41-body" class="wiki-section-body-1">
+<div id="content_block_42">
+<div class="toggle-title"><a id="region_plugin_content_5" onclick="toggleRegion(this,'content_block_42-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_42-inside" class="toggle-display">
+422 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾗｸｯﾍﾟﾍﾟ MM7f-P/vM)[sage] 投稿日：2022/10/16(日) 21:32:26.25 ID:bKOPY3TkM [14/17]<br>
+色テストかなりうまく言ってるわ<br>
+まれに変なのあるけど基本うまく行ってる<br>
+変なのはこれとかやな<br>
+この色花出てて草<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/RIUXkIwCqe.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/RIUXkIwCqe.png" border="0"></a><br>
+黄色は背景が黄色い花が出がち<br>
+黄緑みたいな色<br>
+なんか食べられてるやんけ<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/tCkP2LsFj5.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/tCkP2LsFj5.png" border="0"></a><br>
+他のhoneydew hair<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/ZUB2nt6eCR.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ZUB2nt6eCR.png" border="0"></a><a href="https://image01.seesaawiki.jp/n/h/nai_ch/69kUU6bamu.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/69kUU6bamu.png" border="0"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/DqkhAU9mid.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/DqkhAU9mid.png" border="0"></a><a href="https://image02.seesaawiki.jp/n/h/nai_ch/RwlceZkq0p.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/RwlceZkq0p.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/grkKEaKW2O.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/grkKEaKW2O.png" border="0"></a><a href="https://image01.seesaawiki.jp/n/h/nai_ch/9TEVbErIiD.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/9TEVbErIiD.png" border="0"></a><br>
+<br>
+460 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾗｸｯﾍﾟﾍﾟ MM7f-P/vM)[sage] 投稿日：2022/10/16(日) 21:42:18.68 ID:bKOPY3TkM [15/17]<br>
+ライム色なんか草<br>
+この色単体で複数の色出るで<br>
+lime hair 2トーンになりやすい感<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/i_b6ZWlEMX.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/i_b6ZWlEMX.png" border="0"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/ZwSQhZELP4.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/ZwSQhZELP4.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/j9PvNbtrYr.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/j9PvNbtrYr.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/pWYvtuNbSR.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/pWYvtuNbSR.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/OWhdTBp3ub.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/OWhdTBp3ub.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/DWt7tE1XoD.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/DWt7tE1XoD.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/zpNfN4sn1f.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/zpNfN4sn1f.png" border="0"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/y_1InRKBRp.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/y_1InRKBRp.png" border="0"></a>　<a href="https://image02.seesaawiki.jp/n/h/nai_ch/JTSVtfbhy7.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/JTSVtfbhy7.png" border="0"></a>　<a href="https://image02.seesaawiki.jp/n/h/nai_ch/uSTJlEbm45.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/uSTJlEbm45.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/CbkE3h533k.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/CbkE3h533k.png" border="0"></a>
+</div>
+</div>
+</div></div><div id="content_block_45" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 設定とseed固定で髪の色だけ変えた実験 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_45-body" class="wiki-section-body-1">
+<div id="content_block_46">
+<div class="toggle-title"><a id="region_plugin_content_6" onclick="toggleRegion(this,'content_block_46-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_46-inside" class="toggle-display">
+419 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4bb0-M5DG)[sage] 投稿日：2022/10/16(日) 13:42:04.60 ID:ul+7auns0<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/tDgfmkeLTx.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/tDgfmkeLTx.png" border="0" width="600"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/c_d0dY6HmV.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/c_d0dY6HmV.png" border="0" width="600"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/mfJOY5i7o3.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/mfJOY5i7o3.png" border="0" width="600"></a><br>
+<br>
+設定とseed固定で髪の色だけ変えた実験<br>
+左上から未指定/黒(black)/紺(dark blue)/青(blue)/紫(purple)/水(light blue)/茶(brown)/薄茶(light brown)/金(bronde)/白金(platinum blonde)/灰(grey)/銀(silver)/白(white)/桃(pink)/橙(orange)/赤(red)/緑(green)<br>
+<br>
+どうやら髪の色が違うと、顔や髪型も微妙に違って来るな<br>
+黒は優等生、茶は同級生、金はギャル、白は無垢・令嬢っぽくなりやすい<br>
+<hr size="1" noshade>
+※投稿時に書くのが抜けていたが、金(bronde)と白金(platinum blonde)の間の色は黄(yellow)になっている。<br>
+※呪文は"1girl, long hair, *** hair, school uniform, dress shirt, short sleeves, happy"で、***の部分に色名を入力。
+</div>
+</div>
+</div></div><div id="content_block_50" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> seed値＆highly detailedの微調整231パターンの画像を生成して傾向チェック <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_50-body" class="wiki-section-body-1">
+<div id="content_block_51">
+<div class="toggle-title"><a id="region_plugin_content_8" onclick="toggleRegion(this,'content_block_51-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_51-inside" class="toggle-display">
+ネタ元：ID:8NKTMun30<br>
+なんJnovelAI★44<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1665818410/" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1665...</a><br>
+<br>
+78 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 16:38:37.67 ID:8NKTMun30 [1/12]<br>
+プロンプト研究のためにX/Y plotで色々と一日やったけど<br>
+seed値を0～20で＋1ずつ変動、highly detailed：1.0～1.5まで0.5刻みで変動<br>
+合計で231パターンの画像を生成して傾向チェックとかしてたんだけどさ<br>
+エロ絵の研究とかじゃなくて、もはや検品作業になってて本質を見失ってる気がしてきたわ<br>
+<br>
+馬鹿でか画像で大変申し訳ないけど、参考にどうぞ<br>
+<div id="content_block_52">
+<div class="toggle-title"><a id="region_plugin_content_7" onclick="toggleRegion(this,'content_block_52-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_52-inside" class="toggle-display">
+<span style="color:gray;background-color:yellow"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/3qDBtvMkRx.png" border="0" width="500"></span><small><a rel="nofollow" href="https://seesaawiki.jp/nai_ch/e/add?pagename=%26ref%28https%3a//image02%2eseesaawiki%2ejp/n/h/nai%5fch/3qDBtvMkRx%2epng%2c500%29">?</a></small>
+</div>
+</div>
+<br>
+87 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 16:40:37.28 ID:8NKTMun30 [2/12]<blockquote id="content_block_54">
+&gt;56
+（とは言ってもローカル版つまりAUTOMATIC1111を再起動するときは全て数値がもどってしまうからいちいち入力するよりはjsonで初期値いれておいたほうがいいのか）
+</blockquote>
+そういう事や、毎回起動時に手動で設定すると値間違えたりする場合もあるしな<br>
+必須ではないけど、使い込むならやっておく便利ぐらいの認識でええで<br>
+<br>
+101 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 16:43:43.26 ID:8NKTMun30 [3/12]<blockquote id="content_block_55">
+&gt;83
+</blockquote>
+多分、パラメータ指定で強調するなら<br>
+一単語で完結しつつ、意味が限定的な方が強い気がしてきたわ<br>
+構図が変わってるから、highlyが文字通り「(身長が)高い」とかに解釈されてる気がする<br>
+<br>
+178 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 17:01:05.88 ID:8NKTMun30 [4/12]<blockquote id="content_block_56">
+&gt;166
+</blockquote>
+詳細はGithubのwikiに乗ってるけど<br>
+(要素：1.0)なら要素に何も付けず、そのまま書いた時と一緒や<br>
+<br>
+早見表的にはこうなる<br>
+their {word} = our (word:1.05)<br>
+their {{word}} = our (word:1.1025)<br>
+their [word] = our (word:0.952) (0.952 = 1/1.05)<br>
+their <span style="color:gray;background-color:yellow">word</span><small><a rel="nofollow" href="https://seesaawiki.jp/nai_ch/e/add?pagename=word">?</a></small> = our (word:0.907) (0.907 = 1/1.05/1.05)<br>
+<br>
+204 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 17:05:37.52 ID:8NKTMun30 [6/12]<blockquote id="content_block_57">
+&gt;196
+</blockquote>
+Web版でもパラメータ指定は対応してるで<br>
+付ける時は()無しにすりゃええ<br>
+<a href="https://docs.novelai.net/image/promptmixing.html" class="outlink">https://docs.novelai.net/image/promptmixing.html</a><br>
+<br>
+229 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ab7b-wYBo)[sage] 投稿日：2022/10/15(土) 17:09:40.21 ID:8NKTMun30 [7/12]<blockquote id="content_block_58">
+&gt;201
+</blockquote>
+1.05^n乗になるからわりと緩やかやけどね(Web版基準で見れば1.5まで検証すりゃ十分っていう判断やし）<br>
+1 1.05<br>
+2 1.1025<br>
+3 1.157625<br>
+4 1.21550625<br>
+5 1.276281563<br>
+6 1.340095641<br>
+7 1.407100423<br>
+8 1.477455444<br>
+9 1.551328216<br>
+10 1.628894627
+</div>
+</div>
+<br>
+</div></div><div id="content_block_61" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> ローカル版：NovelAILeak Checkpoint Merger の事例: NovelAI と Waifu Diffusion のマージ割合と差分出力結果 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_61-body" class="wiki-section-body-1">
+<div id="content_block_62">
+<div class="toggle-title"><a id="region_plugin_content_9" onclick="toggleRegion(this,'content_block_62-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_62-inside" class="toggle-display">
+<span style="color:#ff0000;"><b>ローカル版の使用は自己責任で</b></span><br>
+<br>
+かなり前にやったので当時はNovelAIのサービス版と絵を合わせるとか考えてなかったのであんまり正確ではないが、参考になれば<br>
+<br>
+{{{masterpiece}}}, {{{posing sketch}}}, A girl {idolmaster}, :(, lies wounded from explosion. Her mechanical arm is half destroyed. In the rubble of a devastated city,  A pipe gun has been thrown out. The girl is looking forward with tears in her eyes.<br>
+Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, {looking at viewer}<br>
+Steps: 28, Sampler: Euler a, CFG scale: 11, Seed: 1464115615, Size: 768x512, Model hash: e1de58a9<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/MdCHX_qgxi.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/MdCHX_qgxi.png" border="0"></a><br>
+<br>
+{{{masterpiece}}}, {{{posing sketch}}}, A first elderly man lying wounded from explosion. His mechanical arm is half destroyed. In the rubble of a devastated cyberpunk city,  A pipe gun has been thrown out. The man is looking forward with tears in her eyes.<br>
+Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, {looking at viewer}<br>
+Steps: 28, Sampler: Euler a, CFG scale: 11, Seed: 3080153733, Size: 832x512, Model hash: e1de58a9<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/pcSej2zP16.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/pcSej2zP16.png" border="0"></a><br>
+<br>
+{{{masterpiece}}}, {{{posing sketch}}}, a girl {idolmaster} {black hair} confronts her enemy with a machine gun despite her injuries, {firing}, {muzzle flash} In the rubble of a devastated city, Her mechanical arm is half destroyed. The girl is facing the enemy with an angry expression on her face<br>
+Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, {looking at viewer}<br>
+Steps: 28, Sampler: Euler a, CFG scale: 11, Seed: 1359221784, Size: 832x512, Model hash: e1de58a9<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/G3mc_4ieEu.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/G3mc_4ieEu.png" border="0"></a><br>
+<br>
+{{{masterpiece}}}, {{{posing sketch}}}, a first-generation man is holding a machine gun despite his injuries. In the rubble of a devastated city,  Her mechanical arm is half destroyed. The first-aged man is facing the enemy with an angry expression on his face.<br>
+Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry<br>
+Steps: 28, Sampler: Euler a, CFG scale: 11, Seed: 3415035411, Size: 832x512, Model hash: e1de58a9<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/Qqn5_rtcqi.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Qqn5_rtcqi.png" border="0"></a>
+</div>
+</div>
+</div></div><div id="content_block_65" class="wiki-section-1"><div class="title-1"><h3 id="content_9">one-piece_tanが綺麗に出なくて不気味な紋様になってしまう問題 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_65-body" class="wiki-section-body-1">
+<div id="content_block_66">
+<div class="toggle-title"><a id="region_plugin_content_10" onclick="toggleRegion(this,'content_block_66-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_66-inside" class="toggle-display">
+129スレ830<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1673527388/830" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1673...</a><br>
+<br>
+830今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 2986-wtyD)2023/01/14(土) 04:23:09.35ID:Fd8b7j6v0<br>
+NAIでone-piece_tanが綺麗に出なくて不気味な紋様になってしまう問題を解決できているモデルが無いものかと再学習や過学習解消や非NAIをコンセプトにしてるモデル中心に検証してみたけどなかなか厳しい<br>
+NAISFW <a href="https://image01.seesaawiki.jp/n/h/nai_ch/hLytja1xL2.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/hLytja1xL2.png" border="0" width="450"></a><br>
+anything3 <a href="https://image01.seesaawiki.jp/n/h/nai_ch/og03gPGUaJ.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/og03gPGUaJ.png" border="0" width="450"></a><br>
+acertainthing <a href="https://image01.seesaawiki.jp/n/h/nai_ch/bZrWWmbOhh.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/bZrWWmbOhh.png" border="0" width="450"></a><br>
+acertainmodel <a href="https://image01.seesaawiki.jp/n/h/nai_ch/BQZpfOIUB9.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/BQZpfOIUB9.png" border="0" width="450"></a><br>
+waif1.4 <a href="https://image01.seesaawiki.jp/n/h/nai_ch/EBpvaO4BvP.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/EBpvaO4BvP.png" border="0" width="450"></a><br>
+8258d <a href="https://image02.seesaawiki.jp/n/h/nai_ch/OhZO8ymveC.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/OhZO8ymveC.png" border="0" width="450"></a><br>
+CJD2.1.1β <a href="https://image02.seesaawiki.jp/n/h/nai_ch/0KKg4yPuYy.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/0KKg4yPuYy.png" border="0" width="450"></a><br>
+almondmix <a href="https://image02.seesaawiki.jp/n/h/nai_ch/0fr2ApKuh6.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/0fr2ApKuh6.png" border="0" width="450"></a><br>
+basilmix <a href="https://i.imgur.com/BQhmaa5.png"><img src="https://i.imgur.com/BQhmaa5.png" border="0" width="450"></a><br>
+ElysiumAnimev3 <a href="https://image02.seesaawiki.jp/n/h/nai_ch/9U0rZCuIax.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/9U0rZCuIax.png" border="0" width="450"></a><br>
+shirayuki <a href="https://image02.seesaawiki.jp/n/h/nai_ch/tieRegIrNE.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/tieRegIrNE.png" border="0" width="450"></a>
+</div>
+</div>
+</div></div><div id="content_block_69" class="wiki-section-1"><div class="title-1"><h3 id="content_10">ねんどろいど化させるときに良さげなモデルを探した検証結果 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980933&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_69-body" class="wiki-section-body-1">
+<div id="content_block_70">
+<div class="toggle-title"><a id="region_plugin_content_11" onclick="toggleRegion(this,'content_block_70-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_70-inside" class="toggle-display">
+手持ちのモデルと自作マージしたモデルでやってみたけどしっくりと来るやつがあまりないかも。<br>
+ねんどろいどモデルがアレばまた話が違うんだろうけど・・・どなたか神様モデル作っていただけませんか？<br>
+あとプロンプトの指定順番がかなり重要っぽくって「作りたいキャラ＞ねんどろいどのロラ指定」にしないとなかなかできなかったです。<br>
+あと512ｘ512以外では全然作れなかったのでなにか対策があったらアドバイスほしいです。<br>
+1girl, &lt;lora:RosaPokemon_v10:0.8&gt; ,nendoroid, rosa (pokemon), figure, &lt;hypernet:sdHypernetNendroid_10:0.7&gt;, 8k,4k,(highres:1.1),best quality,(masterpiece:1.3)<br>
+Negative prompt: ng_deepnegative_v1_75t,bad_prompt_version2,bad-image-v2-39000,bad-hands-5,bad-artist,bad-artist-anime,EasyNegative, negativeembed<br>
+Steps: 60, Sampler: DPM++ 2S a Karras, CFG scale: 7, Seed: 1343738147, Size: 512x512, Model hash: f758fffcb9, Model: 06Counterfeitv25025_V10, Clip skip: 2<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/gUc56HnxA5.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/gUc56HnxA5.png" border="0"></a>
+</div>
+</div>
+</div></div>
+</div>

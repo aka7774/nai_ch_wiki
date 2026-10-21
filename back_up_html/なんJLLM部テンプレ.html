@@ -1,0 +1,196 @@
+<div class="user-area">
+<a href="https://seesaawiki.jp/nai_ch/d/%a4%ca%a4%f3JLLM%c9%f4%b2%e1%b5%ee%a5%ed%a5%b0">なんJLLM部過去ログ</a><br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">テンプレ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+</div></div><div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1">赤ちゃん向け「とりあえずエロ文が出てくるようになるまで」 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+1. Geforceで動かすなら最新ドライバインストール(LLM動かすのに必要な最新のCUDAがこれで入る)<br>
+2. LMStudio入れる<br>
+3. LMStudio上でVRAM/メモリ容量に合うモデルを落としてくる<table id="content_block_4"><tbody><tr><th>VRAM/メモリ容量</th><th>おすすめモデル</th></tr><tr><td>〜8GB</td><td>誰か書いて😭</td></tr><tr><td>〜12GB</td><td>gemma-4-12B-it-heretic-Q4_K_M</td></tr><tr><td>〜16GB</td><td>MuXodious/gpt-oss-20b-RichardErkhov-heresy-GGUF iQ4_XS　(Geforce5000以降なら)MXFP4、Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced-Q3_K_M</td></tr><tr><td>〜24GB</td><td>mradermacher/gemma-4-31B-it-heretic-GGUF IQ4_XS</td></tr><tr><td>〜32GB</td><td>mradermacher/gemma-4-31B-it-heretic-GGUF Q6_K</td></tr></tbody></table>
+4. 動かす🤗<br>
+<br>
+上記モデルはモデルが全部VRAMもしくはメモリに乗り切るものをリストアップしとる<br>
+VRAMとメモリ両方にモデルを載せてある程度の速度で動かしたりもできるで<br>
+そのあたり知りたい場合は↓を読んどくれ<br>
+(なおメインメモリだけに載せる(≒CPUだけで演算する)のは死ぬほど遅いで)<br>
+</div></div><div id="content_block_6" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2">LLMを動かすツール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_6-body" class="wiki-section-body-2">
+よくわからんニキはとりあえずLMStudio入れたらええ<br>
+一番使われとる<table id="content_block_7"><tbody><tr><th style="width:100px;">ツール名</th><th>GGUF</th><th>GUI</th><th>概要</th></tr><tr><td>LMStudio</td><td>○</td><td>◎</td><td>ツールの中でモデルダウンロードできてそのままチャットできる。GUI上で全部できるので楽</td></tr><tr><td>Llama.cpp</td><td>○</td><td>○</td><td>個人が利用するLLMツールとしては一番技術的に先行しとる。GGUFを動かすツールの中では最も最新モデルへの対応が早い。GGUFフォーマットの開発元</td></tr><tr><td>koboldcpp</td><td>○</td><td>○</td><td>もともとあったKoboldAI(更新停止済み)にインスパイアを受けて、Llama.cppをベースに作り直されたもの。小説作成やキャラなりきりなどをさせるための機能が備わっている。知らんけど</td></tr><tr><td>ollama</td><td>○</td><td>○</td><td>名前の通りllama.cppベース。もともとmac向けのLLM実行ツールとしてスタートしてるらしくmacの人はいいのかもわからん。しらんけど</td></tr><tr><td>vLLM</td><td>△(実質×)</td><td>×</td><td>企業でLLMを動かす際のデファクトスタンダード。基本的にsafetensors形式のモデルを動かす。GGUFは動くものの正式対応ではない。GGUFを動かすツールたちと違い、vLLMでsafetensorsを動かすと同時に数十アクセスとかされても謎技術によりスループットが落ちない(GGUFだとだめ)。なので個人でLLMを立ち上げる際も同時に何アクセスもさせるような場合はvLLMでsafetensorsを動かした方がええ。GUIを持ってないのでOpenAI互換API経由で別ツールからvLLMに接続して使う。vLLMはCPU+GPUでの動作には非対応</td></tr></tbody></table>
+</div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4 id="content_1_3">モデルの形式 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_9-body" class="wiki-section-body-2">
+よくわからんニキはとりあえず<br>
+「大きなモデルを動かすにはCPU(メインメモリ)+GPU(VRAM)で動かしたい。その時はGGUF(≒LMStudio、Llama.cpp系)を使う」<br>
+「同じモデルである限りは、ファイルサイズがでかいほうが精度高い」<br>
+と覚えておけばOKや<br>
+<table id="content_block_10"><tbody><tr><th style="width:100px;">技術レイヤ</th><th style="width:100px;">名前</th><th>概要</th></tr><tr><td rowspan="3">モデルファイル形式</td><td>GGUF</td><td>Llama.cppの開発者が開発した。CPU+GPUで動かしたい場合はこれ一択≒LMStudio、Llama.cpp系で動かすならこれ</td></tr><tr><td>pt</td><td>PyTorchというLLMで使われるライブラリでもともと使われてた方式。セキュリティ上の問題があり、safetensorsに置き換わった。今は使われていない。</td></tr><tr><td>safetensors</td><td>セキュリティを確保した方式。vLLMでモデルを動かすとなったら基本これ。モデルが公開されるとき、まずはsafetensorsのfp16で公開されることがほとんど。これが公開された後に有志が様々な量子化モデルやGGUFなど出してくれとる</td></tr><tr><td rowspan="11">量子化手法</td><td>fp32, fp16, bf16</td><td>量子化してない素のもの</td></tr><tr><td>fp8</td><td>特にこれといった工夫をしてない量子化やが、あまり劣化もなくVRAMの豊富な環境ではよう使われる。fp8のTensorCoreを積んでるGPUなら高速化する</td></tr><tr><td>int8</td><td>あまり見たことないけどあるにはある。精度は知らん(けど多分fp8とあまり変わらんのでは？)</td></tr><tr><td>fp4, mxfp4, nvfp4</td><td>特にこれといった工夫をしてない4bitの量子化で精度の悪化はどうしてもある。fp4のTensorCoreを積んでるGPU(Geforce5000シリーズ以降)では高速化する。fp4の中でもそれぞれ小数点の扱いが違っていて精度も違く、nvfp4が一番高く、nvfp4&gt;mxfp4&gt;fp4と言われる。知らんけど</td></tr><tr><td>int4</td><td>あまり見たことないけどあるにはある。精度は知らん(けど多分fp4とあまり変わらんのでは？)</td></tr><tr><td>q8,q6,q5,q4,iq4,iq3,iq2,iq1</td><td>この量子化だけGGUF専用の量子化。量子化名の後に量子化手法もつらつらと書かれる。"q4_k_m"とか。<br>q/iq：qは通常盤、iqは低bit数向け版。<br>数値部分：主に量子化bit数を指すが、実際にはq8が9bitくらいあったり、q4が4.5bitくらいあったりと実際は表記よりも重い。<br>量子化名の後の0/1/K：0より1の方が新しい手法で一番いいのがK。<br>XXS/XS/S/M/L/XL：例えば同じq4の中でも複数サイズラインナップされることがある。そのサイズ分け。もちろん大きいほうが精度は良い。<br>これらの手法が組み合わさって同じモデルですごいたくさんのモデルファイルが出てくるが、結局同じモデル内において精度はファイルサイズに比例するので、自分のVRAMに合ったものを利用すればいい。演算は16bitなので例えばiq1であっても高速化はしない。</td></tr><tr><td>AWQ</td><td>safetensorsでよく使われる4bit量子化。GGUFでもあるにはある。なんか工夫されててただのfp4量子化よりは精度がいい(はず)。演算は16bitなので高速化はしない。世間的にはGPTQよりAWQの方が精度がよいといわれる</td></tr><tr><td>GPTQ</td><td>safetensorsでよく使われる4bit量子化。GGUFでもあるにはある。なんか工夫されててただのfp4量子化よりは精度がいい(はず)。演算は16bitなので高速化はしない。</td></tr><tr><td>AutoRound</td><td>intelが開発した量子化手法でintelのhuggingfaceのページで著名モデルをAutroundで配布してる。ファイル形式はsafetensorsもGGUFも対応している模様。利点とかは知らん。誰か知ってたら書いて</td></tr><tr><td>bnb</td><td>bits and bytesという方式で結構古くからあるらしい。詳しいこと知っとる人おったら書いて</td></tr><tr><td>W4A16</td><td>正確には量子化名ではない。4bitに圧縮され、実行時に16bitで演算されるものを指す。ので、AWQやGPTQはW4A16である、という言い方になる。</td></tr></tbody></table>
+</div></div><div id="content_block_12" class="wiki-section-2"><div class="title-2"><h4 id="content_1_4">基本用語解説 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_12-body" class="wiki-section-body-2">
+パラメータ：そのモデルの規模。でかければでかいほど精度は高くなるんやが、モデルファイルも大きくなり動作させるのにそれだけ大量のメモリを必要とする。また演算量も増えるのでどんどん推論速度が遅くなる（文字が出てくる速度が遅くなる）。1パラメータが人間の脳でいうところの1ニューロンと思ってくれたらええ。英語のBillionが単位に使われ、例えば10B→10billion→100億パラメータという意味や。極小モデルはmillion(100万)のMや、逆に巨大モデルはtrillion(1000億)のTが使われることもある。<br>
+<br>
+量子化：通常モデルは1パラメータを16bit(=2byte)で表現するから10Bのモデルだと20GBのファイルサイズとなる。これ正直でかすぎなので量子化という1パラメータのサイズを16bitから減らすことをやる。単純にビット数を減らすと精度はどうしても下がる(モデルが馬鹿になる)んやが、いろいろ工夫を入れて精度悪化をできるだけ防ごうとしとる手法が色々出とる<br>
+<br>
+トークン：LLMにおいては1単語を数値に変換して処理する。これをトークンという。LLMは大体128k(131072)トークンとか、256k(262144)トークン、1M(1048576)トークン入力できるようになっとる。1単語とは言うものの、実際に1単語を1tokenに変換できとるのは英語ぐらいなもので、最近のモデルで日本語の場合はほぼ1token=1.5文字くらいやな。どの単語を1tokenとするかはhuggingfaceでモデルの配布ディレクトリに行ってtokenizer.json見たらわかるでな。<br>
+<br>
+コンテキスト：直訳すると「状況」という言葉やが、LLMにおいては演算時にLLMへ入れるテキスト全文を指すでな。なので、あるモデルに入れることのできる最大のテキスト量のことを「最大コンテキスト長」と言ったり、モデルを動作させてるときに入力するテキスト量が増えてきたことを「コンテキスト量が大きくなってきた」なんて言うでな。LLMはテキストを出力するために、それに必要な情報すべてを入力する必要があって、例えばLLMにチャットさせるときはそれまでの会話履歴も全部入れる必要があんねん。だから、チャットが長引くとコンテキスト量が増えていっていつかは最初の頃の会話を削らなあかんくなる。ChatGPTなんかでも長くチャットしすぎると最初の頃の会話忘れるんやが原因はこれや<br>
+<br>
+KVキャッシュ：LLMは1回の推論内で、例えば後半の演算時に前半の演算結果を参照する必要があんねん。その演算結果のキャッシュのことをKVキャッシュという。1回の演算の中で前半の結果を後半の演算で参照せなあかんから、KVキャッシュは実質必須やねん。なくても動くんやがこの世とは思えないほど演算が遅くなるでな。つまり、メモリは「モデルのファイルサイズ」だけではなく「KVキャッシュサイズ」が必要になんねん。このKVキャッシュサイズはコンテキスト数分必要になる。結構な量になるで。
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_1_5">DenseとMOE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+通常例えば10Bのモデルがあったとすると10B分のモデルを全部メモリに載せて全部演算する必要がある。これをDenseモデルというんやが、ぶっちゃけ「通常版」とか「MOEじゃないモデル」とか言われることのが多いでな。<br>
+それに対し、2025年以降主流なのがMOEというモデルや。詳しい解説は全部省いちゃって端的に言うと入力された文字に対して最も関連すると思われる一部のパラメータでだけ演算するモデルや。例えばMOEモデルは10B-A3Bなどと書くんやが、この場合総パラメータ数は10Bやが、演算は3Bしか行わないということになる。こうするとメモリは10B分必要やけど、演算は3B分しかないので高速に動く(文字が早く出てくる)んや。入力された文字に対して関連する部分を動かすようにしとるから精度悪化はわりかし低いんやが、それでも同じ10BのDenseモデルと10B-A3BのMOEモデルで比較した場合は明らかにMOEの方が精度は劣る。<br>
+Qwen3.5でいうと、Denseの27BとMOEの122B-A10Bで比較すると122B-A10Bの方がチョイ精度ええなって感じ。メモリ使用量は数倍やが、演算量が数分の1というトレードオフになっとる。<br>
+MOEモデルはCPU+GPUという構成で推論させるのと相性が良いというのもあってローカルでもMOEモデルが使われることのが多いんや。Denseはちょっとでもメインメモリにモデルが乗ると激烈に遅くなるんやが、MOEモデルは大部分をメインメモリに置いていてもまぁまぁの速度で動かせるんや。<br>
+</div></div><div id="content_block_16" class="wiki-section-2"><div class="title-2"><h4 id="content_1_6">エロ系行けるようにしたモデルの見つけ方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_16-body" class="wiki-section-body-2">
+大企業が出してくるモデルは基本的にエロ系が出ないよう調整されたモデルや。<br>
+それを出るように改造して出してくれとる人がおる。<br>
+ファイル名に「NSFW」「uncensored」「abliterated」「heretic」が入っているものがそれや。<br>
+方式としてはhereticが一番新しい方式やが、それが一番性能がいいとは限らへんから<br>
+複数使ってしっくりくるもの使うしかあらへん。<br>
+<br>
+また、過去のチャットのやり取りを改変できるツールを使って、一度エロの出力を断られた後に<br>
+断られた文面をエロい文面に差し替えてしまうとその後普通にエロ出てくるということもあるでな<br>
+<br>
+Uncensored General Intelligence Leaderboard<br>
+<a href="https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard" class="outlink" rel="nofollow">https://huggingface.co/spaces/DontPlanToEnd/UGI-Le...</a><br>
+各種モデルの検閲除去レベルをスコアでランキングしとるページや<br>
+"UGI"という値が高ければ検閲がそれだけないということや<br>
+このボードの中の"NSFW"という項目は「特に指示しない際に勝手にNSFWの話題を出してくる度合」みたいなもののようで、<br>
+この値が低くてもUGIが高ければ指示することでNSFWが出てくるので、NSFW値はあまり気にせんでええ<br>
+モデル選ぶときに最優先すべきはUGI値が高いもの、あとは文章力のWrite値が高いものや。<br>
+</div></div><div id="content_block_18" class="wiki-section-2"><div class="title-2"><h4 id="content_1_7">GPU+CPUで演算させる(≒モデルをVRAMとメインメモリ両方に分割して載せる) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_18-body" class="wiki-section-body-2">
+LMStudioやllama.cpp系やとGPU+CPUで演算できんねん。<br>
+チップ二つで演算するから早くなるかと思いきや、遅くなんねん。<br>
+じゃあ何が嬉しいかというと、VRAM+メインメモリという構成にすることでVRAMだけで動かすよりも<br>
+大きなモデルが使えるようになんねん。<br>
+<br>
+メインメモリに載せた分がCPU、VRAMに載せた分がGPUで演算されるということなんやけど、<br>
+まず注意事項としてDenseモデルやとメインメモリにちょっとでもモデル乗っただけで劇遅になるでな。<br>
+遅くてもええって人はそれでええんやが、基本的にGPU+CPUはMOEモデルでやるでな。<br>
+<br>
+あともう一つ注意事項。WindowsのGeforceドライバは、VRAMが枯渇してくると自動的に<br>
+メインメモリにVRAMの内容を退避するという挙動をする。これは絶対に回避せなあかん。<br>
+この状況はGPUでメインメモリの内容を演算するということでCPUで演算するよりもさらに遅くなるでな。<br>
+タスクマネージャでGPUメモリってのが満タンで「共有GPUメモリ」ってのが増えてたら<br>
+VRAMからメインメモリに退避されとるっちゅーことや。設定を見直してVRAM使用量を何としてでも減らすんや。<br>
+<br>
+設定でこの機能オフにしちゃうのも手や(VRAM枯渇したらエラーするようになってまうが)<br>
+NVIDIAコントロールパネル→3D設定→3D設定の管理→CUDAシステムメモリフォールバックポリシー<br>
+を"システムメモリフォールバックなしを優先"に変更<br>
+<br>
+CPU+GPU設定方法<br>
+以下はとりあえずllama.cppでの設定例や<br>
+lmstudioや他のllama.cppでも類似の設定項目あるはずや
+</div></div><div id="content_block_20" class="wiki-section-3"><div class="title-3"><h5 id="content_1_7_1">MoEの場合の設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_7_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_20-body" class="wiki-section-body-3">
+n-gpu-layersはモデルの層以上のとりあえず1000とか大きな数値を設定する<br>
+n-cpu-moeがCPU+GPUでMoEモデルを高速に動かす肝や<br>
+この数値を大きくするとメインメモリの使用率が上がる。0を設定するとすべてVRAMに載る。<br>
+なお、cpu-moeという設定項目もあるが、n-cpu-moeを設定せずにcpu-moeを設定すると<br>
+n-cpu-moeを最大値に設定したのと同じになるでな<br>
+つまりVRAMをほぼ使わずメインメモリに最大限モデルを載せるっちゅーことになるわけやが<br>
+それでもMoEの重要部分はVRAMで動いとって数token/sくらいは出るでな<br>
+これがメインメモリさえ潤沢にあればMoEモデルなら8GB VRAMでも大型LLMが動かせるっちゅー仕組みや<br>
+<table id="content_block_21"><tbody><tr><th>設定項目</th><th>設定する数値</th></tr><tr><td>n-gpu-layers</td><td>モデルのレイヤー数以上を設定。面倒なら1000とか入れちゃってよし</td></tr><tr><td>n-cpu-moe</td><td>MoEモデルの重要部分以外をどれだけメインメモリに載せるか。0にするとすべてVRAMに載せる。</td></tr><tr><td>cpu-moe</td><td>n-cpu-moeを設定せずにこれだけ設定するとMoEモデルの重要部分だけVRAMに乗せ他をメインメモリに載せる(n-cpu-moeに最大値を設定したのと同じ)。その場合速度は数token/s程度になるもののVRAM8GBでも動くには動く</td></tr></tbody></table>
+</div></div><div id="content_block_23" class="wiki-section-3"><div class="title-3"><h5 id="content_1_7_2">Denseの場合の設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_7_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_23-body" class="wiki-section-body-3">
+行うべき設定はn-gpu-layersだけや<br>
+モデルのレイヤーを何層VRAMに載せるかという設定なので、この数値を高めれば高めるほど<br>
+VRAM使用量が上がって早くなる。モデルがレイヤー何層なのかはhuggingfaceのモデル配布ページなんかに書いてある<br>
+それ以上の数値を設定すればモデルを全部VRAMの載せるっちゅーことになるで<br>
+<table id="content_block_24"><tbody><tr><th>設定項目</th><th>設定する数値</th></tr><tr><td>n-gpu-layers</td><td>0を設定するか、そもそもこの設定を設定しない場合はすべてメインメモリ上にモデルが乗る。上げれば上げるほどVRAM使用量が増える。</td></tr></tbody></table>
+</div></div><div id="content_block_26" class="wiki-section-2"><div class="title-2"><h4 id="content_1_8">KVキャッシュの量子化 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_26-body" class="wiki-section-body-2">
+モデルと同じようにKVキャッシュも量子化できんねん。量子化すると使用VRAM量が減る。うれしい。<br>
+vLLMやとfp8とかfp4、llama.cpp系やとq8_0とかq4_0に量子化することになるんやが、vLLMはfp8とかfp4やから使用VRAM量は減るし(GPUによっては)高速化するんやが、llama.cppやとq8とかq4やから、VRAM使用量は減るんやけど、token/sは多少落ちてまうでな<br>
+vLLMでもllama.cppどちらでもfp8、もしくはq8_0であればそう劣化は感じないというのが業界の一般的な認識になっとって、業務用でもfp8で使うのが当たり前になっとる<br>
+fp4、q4_0まで行ってまうと明確に劣化を感じるレベルになるで<br>
+以下はllama.cppでの指定の仕方や<blockquote id="content_block_27">
+ --cache-type-k q8_0   --cache-type-v q8_0
+</blockquote>
+<br>
+あとここについでに書いておくんやが、llama.cppはデフォルトでは「同時8アクセスに耐えられる設定」で起動するようになっとる。これ一人で使う分には意味なくてVRAMを余計につこうてしまうから必ず以下を指定するんやで！<blockquote id="content_block_28">
+ --parallel 1
+</blockquote>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_1_9">GGUFで画像入力 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+執筆中・・・　mmprojをあーしてこうすればええんや！<br>
+</div></div><div id="content_block_32" class="wiki-section-2"><div class="title-2"><h4 id="content_1_10">チャットテンプレートについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_1_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_32-body" class="wiki-section-body-2">
+執筆中・・・
+</div></div><div id="content_block_34" class="wiki-section-1"><div class="title-1"><h3 id="content_2">旧テンプレ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5338466&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_34-body" class="wiki-section-body-1">
+<div id="content_block_35">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_35-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_35-inside" class="toggle-display">
+初心者は導入しやすいKoboldcppから始めるのをお勧め<br>
+(1)NVIDIA、CPUユーザーはここで最新版のKoboldcpp.exeをダウンロード<br>
+<a href="https://github.com/LostRuins/koboldcpp/releases" class="outlink">https://github.com/LostRuins/koboldcpp/releases</a><br>
+AMDユーザーはこっち<br>
+<a href="https://github.com/YellowRoseCx/koboldcpp-rocm" class="outlink">https://github.com/YellowRoseCx/koboldcpp-rocm</a><br>
+(2)ここで良さげなggufモデルをダウンロード<br>
+<a href="https://huggingface.co/models?sort=modified&amp;search=gguf" class="outlink">https://huggingface.co/models?sort=modified&amp;search...</a><br>
+この2つのファイルだけで動く<br>
+<br>
+Koboldの設定や使い方は英語だけどここが詳しい<br>
+<a href="https://github.com/LostRuins/koboldcpp/wiki" class="outlink">https://github.com/LostRuins/koboldcpp/wiki</a><br>
+<br>
+oobabooga/text-generation-webui<br>
+通称大葉<br>
+これもKoboldAIに並んで有用な実行環境やで<br>
+<a href="https://github.com/oobabooga/text-generation-webui" class="outlink">https://github.com/oobabooga/text-generation-webui</a><br>
+<br>
+●Zuntanニキ謹製のツールEasyNovelAssistant<br>
+主に小説用で使われとるで<br>
+ローカルLLM導入のハードルをぐっと下げてくれたで<br>
+初めてのお人はここから始めるのもいいで<br>
+<a href="https://github.com/Zuntan03/EasyNovelAssistant" class="outlink">https://github.com/Zuntan03/EasyNovelAssistant</a><br>
+<br>
+<a href="https://github.com/SillyTavern/SillyTavern" class="outlink">https://github.com/SillyTavern/SillyTavern</a><br>
+AIチャットに特化したUI、SillyTavernや<br>
+キャラをbot的に管理したりグラ登録したり複数選んでグループチャットしたり大量の設定を外部記憶的に管理したり色々できるで<br>
+画像出力や音声出力とも連携可能で夢が広がるで<br>
+機能が豊富すぎて最初取っ付きにくいのと日本語の解説がほとんど無いのが難点やがRPチャット派は使うと幸せになれるやで<br>
+あくまでUI(フロントエンド)やからこれ自体にはAIは内蔵されてないから注意してな<br>
+好きなAPIやローカルモデルと接続して使うんやで<br>
+<br>
+例としてKoboldで起動したローカルモデルとSillyTavernを接続する設定や<br>
+先にいつもどおりKoboldを起動してな<br>
+<br>
+SillyTavernのプラグのアイコンをクリック<br>
+APIに Text Completion を選択<br>
+API Typeは KoboldCpp<br>
+API keyは不要<br>
+API URLに <a href="http://localhost:5001/" class="outlink">http://localhost:5001/</a><br>
+これでいける<br>
+<br>
+●多くのモデルには「base」と「instruct」の2種類があるで<br>
+baseはチューニングされていない、与えられた文書の続きを垂れ流すモデルやで<br>
+instructはchatGPTのように対話して質問に答えるようチューニングされたAIやで<br>
+<br>
+●LLMを動かすにはGPUを使う方法とCPUを使う方法があるで<br>
+GPUを使う場合は比較的速く動くけど、VRAM容量の大きなグラボが必要になるで<br>
+CPUを使う場合はグラボが不要でメインメモリのRAMを増やすだけで大きなモデルが動かせるというメリットがあるけど、動作速度はGPUよりは落ちるで<br>
+<br>
+●LLMモデルには量子化されてないsafetensorsファイルと、8bitや4bitなどに量子化されて容量が小さくなったものがあるで<br>
+量子化モデルにはGGUFやGPTQなどの種類があるで<br>
+基本的にはCPU (llama.cpp)で動かす場合はGGUF、GPUで動かす場合はGPTQを選べばええで<br>
+量子化は4bitまでならほとんど精度が落ちないのでよくわからない場合はIQ4_XSやQ4_k_mなどにしとけばええで<br>
+<br>
+●LLMモデルは既存のbaseモデルを元に自分で学習(ファインチューニング)させることもできるで<br>
+画像AIのようにLoRAファイルとして学習結果を保存したりLoRAを読み込むこともできるで<br>
+<br>
+●モデルのサイズ(パラメータ数)は◯B (B=billion=10億)という単位で表記されるで<br>
+例えば7Bのモデルを読み込むなら量子化しない場合は約14GB、8ビット量子化の場合は7GB、4ビット量子化の場合は3.5GBのメモリまたはVRAMが必要になるで<br>
+基本的にはBが大きいほど性能が高いで<br>
+<br>
+●高性能なPCがないけどLLMを試したい人や大きなモデルを速く動かしたい人はpaperspaceなどのクラウド環境を使うのも手やで<br>
+若干規制はあるもののGoogle AI studioから無料でAPI keyを入手して高性能なAIを使うこともできるのでそれを使うのええで<br>
+API keyの入手はttps://aistudio.google.com/apikeyここからできるで
+</div>
+</div>
+</div></div>
+</div>

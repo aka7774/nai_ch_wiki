@@ -1,0 +1,359 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 公式Tips</a></li>
+<li class="list-1"><a href="#content_2"> 誰でも簡単キャラ再現法</a></li>
+<li class="list-1"><a href="#content_3"> キャラ参照機能の追加</a></li>
+<li class="list-1"><a href="#content_4"> V4.5</a></li>
+<li class="list-1"><a href="#content_5"> V4 Full</a></li>
+<li class="list-1"><a href="#content_6"> V4 Curated</a></li>
+<li class="list-1"><a href="#content_7"> V3</a></li>
+<li class="list-1"><a href="#content_8"> V2</a></li>
+<li class="list-1"><a href="#content_9"> V1</a>
+<ul>
+<li class="list-2"><a href="#content_9_1">NovelAIでのキャラ再現の現状</a></li>
+<li class="list-2"><a href="#content_9_2">版権キャラ再現方法</a></li>
+<li class="list-2"><a href="#content_9_3">ネガティブプロンプト(Undesired Content)の活用</a>
+<ul>
+<li class="list-3"><a href="#content_9_3_1">版権キャラ再現のノイズ除去</a></li>
+<li class="list-3"><a href="#content_9_3_2">同作品の他キャラクター由来のノイズ</a></li>
+<li class="list-3"><a href="#content_9_3_3">他作品同名キャラクター由来のノイズ</a></li>
+<li class="list-3"><a href="#content_9_3_4">他作品同特徴キャラクター由来のノイズ</a></li>
+<li class="list-3"><a href="#content_9_3_5">キャラ名由来のノイズ</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_9_4">i2iで画像を修正する</a></li>
+<li class="list-2"><a href="#content_9_5">キャラが再現出来ない理由</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 公式Tips <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<a href="https://docs.novelai.net/image-jp/tutorial-charactercreation-jp.html" class="outlink" rel="nofollow">チュートリアル：NovelAI Diffusion Animeで一貫したキャラクターを作る【女性編】</a><br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 誰でも簡単キャラ再現法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+キャラ再現はいろんなやり方があるが、webで完結する方法の一例<ul id="content_block_4" class="list-1">
+<li> まずは「キャラ名」と「作品名」に該当するdanbooruタグを入力する（アプデで、NAIのプロンプト欄に日本語で入れれば英名がサジェストされるようになった）
+<ul class="list-2">
+<li> ↑で出なければ、danbooruの検索欄に日本語で最初の数文字を入れれば英名が候補に出る。（それでも出なければ、日本語版wikipediaの該当作品ページから英語版に飛ぶ、翻訳サイトに入れてみる、chatGPTに聞いてみるなどすれば大体見つかる）</li>
+</ul>
+</li>
+<li> 再現したい公式絵を見つける（大抵はgoogle画像検索でキャラ名を入れたときに出る全身絵かバストアップ絵で十分）</li>
+<li> <a href="https://huggingface.co/spaces/pixai-labs/pixai-tagger-demo" class="outlink" rel="nofollow">pixai tagger</a>、<a href="https://huggingface.co/spaces/SmilingWolf/wd-tagger" class="outlink" rel="nofollow">wd tagger</a>または<a href="https://huggingface.co/spaces/hysts/DeepDanbooru" class="outlink" rel="nofollow">DeepDanbooru</a> にアクセスする <a href="#footer-footnote1" name="footnote1" title="どれも結果は大体同じだが、pixai, wd tagger, deep danbooruの順に新しく、対応タグも豊富">*1</a>（まれに404になるのでその場合時間をおいて再アクセス）</li>
+<li> Score thresholdを0.1にする</li>
+<li> 再現したい絵をInput欄に入れる（画像検索の結果から直接ドラッグアンドドロップもできる。判定は中央付近のみっぽい）</li>
+<li> Runを押すと数秒後、右側に結果が出る（エラーになる場合は、自分で画像をDLしてアップロードするか、別の画像にする）</li>
+<li> デフォルトではOutputタブになっているが、Textタブを開く</li>
+<li> 内容を全てNAIのプロンプト欄にコピペする
+<ul class="list-2">
+<li> アンダーバーが気になる場合は、適当なテキストエディターに張り付けてからCtrl+Hを押して半角スペースに一括置換する（なんならこれはchatGPTに投げてもいい）</li>
+</ul>
+</li>
+<li> 余分なものを削除する。例えば
+<ul class="list-2">
+<li> 重複しているもの（glovesとelbow glovesなど）</li>
+<li> 矛盾するもの（orange eyesとred eyesなど）</li>
+<li> danbooru本サイトでは非推奨タグになっているもの（eyebrows visible through hairや black legwearなど。<a href="https://danbooru.donmai.us/tags?commit=Search&amp;search%5Bhide_empty%5D=yes&amp;search%5Bis_deprecated%5D=yes&amp;search%5Border%5D=count" class="outlink" rel="nofollow">一覧</a>）</li>
+<li> 明らかに間違っているとわかるもの（タグの意味が分からなければ<a href="https://danbooru.donmai.us/wiki_pages/help:home" class="outlink" rel="nofollow">danbooruのwiki</a>で検索）</li>
+</ul>
+</li>
+<li> 生成する</li>
+</ul>
+<br>
+もし生成に成功したら、当該wikiページになければキャラ追加しよう！<br>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> キャラ参照機能の追加 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+NAI版IP-Adapterとも言えるCharacter Reference(キャラ参照)がリリースされた。（2025年9月11日プレビュー、10月7日アップグレード）<br>
+これにより、新キャラやdanbooruにあまりいないキャラ、果てはオリキャラなどの再現も非常に容易になり、版権キャラ再現はこれで一つの結論をみた。<br>
+ただし、キャラ参照はポーションとは異なり、（opusプランであっても）毎回anlasを消費するので、これを使用しないキャラ再現の意義もなくはない。<br>
+</div></div><div id="content_block_8" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> V4.5 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_8-body" class="wiki-section-body-1">
+2025年5月30日リリース。（Curatedは5月5日リリース）<br>
+大きなアーキテクチャの変更はなく、細かい調整とデータセットの更新のみの準メジャーアップグレード。<br>
+V4から再現可能キャラはさらに増え、V4で再現困難なキャラとして例示の3例は全てV4.5で再現可能に。<br>
+もはやNAIで再現できないキャラはローカルでLoRAを作るのもハードルが高い <a href="#footer-footnote2" name="footnote2" title="一応、IPAdapterによる疑似1枚絵LoRA（の出力で素材を増やす）、コイカツのスクショで素材を増やす、アニメのスクショで素材を増やす、などの手法はあるが、それぞれ表現範囲が狭まる、3Dっぽさがどうしても乗る、適切な素材シーンを見つけるのが意外と難しい（簡単に切り抜けるキャラはそもそもイラストも豊富）、というデメリットもあり、キャラ再現しつつ表現の自由度を高めるのは一筋縄ではいかない。">*2</a> レベルになってきたが、<br>
+とはいえ全キャラ再現というわけではなく、個別に確認は必要。<br>
+（V4.5で再現困難な例:ナーサリィライムのティータ、あおぎり高校の春雨麗女など）<br>
+</div></div><div id="content_block_10" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> V4 Full <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_10-body" class="wiki-section-body-1">
+2025年3月1日リリース。<br>
+V4 Curatedからさらに再現可能キャラは増え、danbooru tag数が20程度でも再現可能なキャラが大きく増えた。<br>
+さらに、タグ数一桁でも再現可能な場合あり（巨乳ファンタジー、恋姫無双、ガールフレンド仮など）<br>
+とはいえ万能ではなく、50程度タグがあるキャラでも再現困難な場合もあるため、引き続きボーダーラインは探索が必要。<br>
+（DOAXのミサキ、ファンキルのパラシュ、ミルモでポンの南楓など）<br>
+</div></div><div id="content_block_12" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> V4 Curated <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_12-body" class="wiki-section-body-1">
+2024年12月20日リリース。（当時の名前はV4 Curated Preview）<br>
+V4 Fullリリースまでの前段階としてリリースされたモデル。<br>
+V1 Curatedと同様に健全絵のみで学習されているためnsfw絵はほぼ出ないものの、<br>
+再現可能キャラはV3からさらに増え、danbooru tag50程度でも再現できるようになった。<br>
+</div></div><div id="content_block_14" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> V3 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_14-body" class="wiki-section-body-1">
+2023年11月14日リリース。<br>
+V2から間髪入れずにリリースされたモデルだがクオリティの差は歴然で、ぱっと見公式絵と見分けがつかない程のイラストを生成できるようになった。<br>
+カバーされる版権キャラの範囲もかなり広く、下手にローカルでLoRAを作るよりも自然なイラストを生成しやすい。<br>
+<br>
+特徴としては、<ul id="content_block_15" class="list-1">
+<li> 学習数（danbooruタグ数）が概ね1000以上あればほぼキャラ名だけで再現可能。むしろV1時代のように強調したり周辺プロンプトを足すと絵柄が潰れてしまうケースすらある</li>
+<li> 学習数が100〜200程度以上あれば、諸々プロンプトで補強することで再現可能。どこまでいけるかは1キャラ立ち絵のようなキャラ学習に適した素材の多寡に依存する</li>
+<li> 学習対象としては、2023年夏のキャラが出て、同年9月の『特別じゃない、しあわせな時間。』（タグ名: yoru_mac）が出ないので、ボーダーラインはその辺にありそう</li>
+</ul>
+<br>
+それ以外の特徴はV1と共通なのでV1節を参照。<br>
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> V2 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+2023年10月20日リリース。<br>
+待望の新モデルで扱える版権キャラも増えたが、モデルのクセが強くて扱いが難しかった。V1をあえて選ぶ人もいたほど。<br>
+その後すぐにほぼ上位互換のV3がリリースされたことで現在ではあまり使われない。<br>
+</div></div><div id="content_block_19" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> V1 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_19-body" class="wiki-section-body-1">
+（※これ以降はV1時代に書かれた内容のため一部古い点に注意）
+</div></div><div id="content_block_21" class="wiki-section-2"><div class="title-2"><h4 id="content_9_1">NovelAIでのキャラ再現の現状 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_21-body" class="wiki-section-body-2">
+<ul id="content_block_22" class="list-1">
+<li>NovelAIが一躍脚光を浴び、皆がキャラ再現のために懸命に呪文を考え出していたのも今は昔。画像AI界隈の技術進歩の速度はすさまじく、2022年秋頃の大ブームから半年しか経過していないのにNAIが過去の遺物扱いされる始末である。
+<ul class="list-2">
+<li>当WikiでさえNovelAIの名前を冠しているのにローカルの情報の方が圧倒的に多い有様だ。</li>
+<li>ローカルでの「学習」の概念が浸透してからは、NAIで試行錯誤しながらキャラ再現呪文を探す者はほぼいなくなった。
+<ul class="list-3">
+<li>低スペPC民でもcolabでローカルを動かせるようになったことも追い風となった。今では当wikiの<a href="https://seesaawiki.jp/nai_ch/d/akachan">初心者向けページ</a>で「NAIは触らなくてもいい」と書かれるほど。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>現在のキャラ再現の主流は以下の通り</li>
+</ul>
+<ol id="content_block_23" class="list-1">
+<li>ローカルを導入し学習環境を整える</li>
+<li>キャラ絵や好きな絵師の絵を集める</li>
+<li>集めた絵を学習させmodelやLoraとして出力</li>
+<li>出力したmodel/Loraを使ってイラスト量産</li>
+</ol>
+<ul id="content_block_24" class="list-1">
+<li>ローカルでの学習の精度は目を見張るものがあり、公式絵を数枚学習させただけでパッと見では公式と区別がつかないレベルの絵が量産される。
+<ul class="list-2">
+<li>特定絵師の絵のみを学習させれば、塗り方の癖までほぼ完全にトレースしてくれる。</li>
+<li>マイナーキャラだろうがマイナー作品だろうが関係なく再現できるという点で完全にNAIを凌駕している。極端な話だが、自分の書いたオリジナルキャラを学習させて絵を量産することすら可能。</li>
+<li>本気で再現を狙いたい人はアニメのキャプ等すら拾い集めて精度向上を狙うなど、お手軽再現勢からガチ再現勢まで幅広く対応している。</li>
+<li>なお、現在でもAI界隈の環境は凄まじい速度で変化しており、2023年3月現在ではControlnetによるポーズ指定技法や、Loraの拡張版であるLoCon,Lohaという新学習法が出現している。今後もローカルでのキャラ再現は進化し続けると思われる。<span style="color:#999999;">Loraが普及して1〜2か月だってのに・・・まじ魔境。</span></li>
+</ul>
+</li>
+<li>ローカルの学習方法は複数存在するが、2023年3月現在はDreamboothとLoraがよく使用される。それぞれ一長一短。詳細はローカルの学習項目を参照のこと。ここではキャラ再現に絞って簡潔に記述する。
+<ul class="list-2">
+<li><a href="https://seesaawiki.jp/nai_ch/d/DreamBooth">Dreambooth</a>→再現性は抜群に高いが、それ故か学習素材と似た構図が出力されがち。ファイルサイズがでかい(1個で数GB)。学習にかなりの時間がかかる上にハイスペGPU必須。</li>
+<li><a href="https://seesaawiki.jp/nai_ch/d/Dreambooth%2dLoRA">Lora</a>→現在の主流。再現性はDBほどではないが十分。ファイルサイズが小さく(1個で数十〜数百MB程度)、学習成果として配布されているのも大半がこれ。DBに比べて短時間で学習完了。学習に要求されるGPUスペックがDBよりも低い。作り方・使い方に少しコツが要る。作成方式はDreambooth方式とファインチューン方式があり、これまた一長一短。</li>
+</ul>
+</li>
+<li>現在ではわざわざNAIを使ってキャラ再現をする必要は無くなっており(再現に関してはローカル勢に太刀打ちできない)、本ページのTipsも役目を終えたと言っていいだろう。
+<ul class="list-2">
+<li>ガチでキャラ再現を考えるならローカルの学習を利用することを最優先に考えるべきである。本ページは何らかの理由(スマホ民など)で現在でもNAIを使って再現を狙っている人を対象としている。</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_26" class="wiki-section-2"><div class="title-2"><h4 id="content_9_2">版権キャラ再現方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_26-body" class="wiki-section-body-2">
+<br>
+※例はすべてデフォルト設定(NAI Curated,Steps:28,Scale:11)<br>
+�．�ャラクター名と作品名を入れる<ul id="content_block_27" class="list-1">
+<li>ごく一部の超著名キャラはキャラクター名だけで(それっぽいものが)再現可能
+<ul class="list-2">
+<li>再現できるかどうかはキャラクター(及び作品)の知名度でほぼ決まる。マイナー作品のマイナーキャラの再現は絶望的。キャラ名と作品名の指定がほぼ無意味な場合も。</li>
+</ul>
+</li>
+<li>キャラクター名だけではイマイチな出来でも、作品名を入れることで特徴を出せる場合もある
+<ul class="list-2">
+<li>キャラ名だけで生成できる場合でも、作品の雰囲気や画風を出すために作品名も入れておくのが無難</li>
+</ul>
+</li>
+<li>NAIの特性上、男性キャラの再現は女性キャラ再現に比べて格段に難しい</li>
+<li>大半のキャラクターはキャラ名+作品名だけでは出力されない。これだけで出力できるのはごく一部の有名キャラのみ</li>
+<li>キャラ名や作品名を{}で強調すると精度が上がる場合があるので試してみよう</li>
+</ul>
+<br>
+�▲�ャラの特徴を追加する<ul id="content_block_28" class="list-1">
+<li>とりあえず髪色・髪型・目の色の3点セットを追加する。
+<ul class="list-2">
+<li>ある程度有名なキャラなら、この3点セットを追加するだけで再現完了</li>
+<li>2色同時追加で色混ぜができる。例えば赤茶色の髪を再現したい場合はred hair,brown hairを追加する。赤みを強くしたい場合red hairを強調するか、brown hairを弱化させる。
+<ul class="list-3">
+<li>プロンプトの順番でも結果が変わってくる。red hair,brown hairとbrown hair,red hairでは色合いが若干変わる。<b>強くしたいプロンプトほど前に置くのが鉄則。</b></li>
+</ul>
+</li>
+<li>髪型はできるだけ具体的に指定しよう。長さ以外にも前髪を指定したり、デコ出しキャラならforeheadを追加するなど。
+<ul class="list-3">
+<li>ヘアピンやリボンなどの装飾品も指定すべし。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>次に年齢、体形を追加する。表情も指定すればさらに雰囲気を出せる。
+<ul class="list-2">
+<li>NAIはキャラクターを豊満に描く傾向がある。貧乳キャラの場合はflat chestもしくはsmall breastsが必須になる。</li>
+<li>よほどの爆乳キャラでなければlarge breastsが不要なことがほとんど。</li>
+<li>loliだけだは効果が薄い場合はloliを強調するかchildを追加するとよい。ただしchildはキャラが一気に子供化する強烈なプロンプトなので注意。強弱をつけてうまく調整しよう。</li>
+</ul>
+</li>
+<li>構図に不満がある場合は構図も指定する(しなくてもよい)。キャラ再現の場合はcowboy shotが無難。
+<ul class="list-2">
+<li>複数キャラが出る場合は特徴が分散し再現に支障をきたす。1girl, soloを追加しよう。</li>
+</ul>
+</li>
+<li>最後に服装や背景を追加する。服装がハマれば再現イラストとしての雰囲気がかなりよくなる。
+<ul class="list-2">
+<li>服装指定によって構図も自動的に決まる場合がある。例えばzettai ryouikiを追加するとcowboy shotと同じような効果が出る。</li>
+<li>とは言え細かく服装指定しても思い通りの服装が出ない場合が多い。特に特定の学校の制服や特定作品のコスチューム再現などは困難を極める。ある程度のところで妥協したほうがよい。
+<ul class="list-3">
+<li>例外的に、ごく一部の超有名な学園モノなら制服指定が可能な場合がある。例えばけいおんの制服はsakuragaoka_high_school_uniformで再現できる。 </li>
+</ul>
+</li>
+<li>背景も作品の特定の一場面を再現するのはほぼ不可能。例えば生徒会長キャラでも生徒会室の再現は困難なので、classroom,chalkboardくらいで妥協しよう。
+<ul class="list-3">
+<li>背景によっても構図が決まる場合がある。例えばtatamiを背景に指定すると女の子座りしている絵が生成されやすい。</li>
+</ul>
+</li>
+<li>これらに限らず、ランダム要素が強いプロンプトは生成を繰り返していい画像が出てくるのを待つしかない。</li>
+<li>細かい部分の再現を狙う場合はSeed値を取ってからプロンプトを修正して出力する。</li>
+</ul>
+</li>
+<li>ここまでやって再現できないキャラは、NAIの学習データが少ないことを意味している。再現困難なキャラかもしれない・・・</li>
+</ul>
+<br>
+(参考)<table id="content_block_29" class="sort nanj_prompt_table"><thead><tr><th style="width:300px;">プロンプト</th><th style="width:300px;">ネガティブプロンプト</th><th style="width:100px;">作品</th><th style="width:100px;">キャラ</th><th style="width:100px;">備考</th><th>サンプル</th></tr></thead><tbody><tr><td>rem_(re:zero)</td><td></td><td>Re：ゼロから始める異世界生活</td><td>レム</td><td>髪型・複雑な服装・特徴的なヘアバンドも含めて、キャラ名だけでほぼ完全再現される例</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/7STwfKgPB2.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/7STwfKgPB2-s.png" border="0"></a></td></tr><tr><td>akemi homura</td><td></td><td rowspan="2">魔法少女まどか☆マギカ</td><td rowspan="2">暁美ほむら</td><td rowspan="2">名前だけでも特徴を掴んだ絵は出るが、作品名を追加することで画風が反映され、再現精度が上がる例</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/JlO2wFfOLl.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/JlO2wFfOLl-s.png" border="0"></a></td></tr><tr><td>akemi homura,mahou shoujo madoka magica</td><td></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/nEee7qqu6E.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/nEee7qqu6E-s.png" border="0"></a></td></tr><tr><td>son goku</td><td></td><td>ドラゴンボール</td><td>孫悟空</td><td rowspan="2">悟空は超著名+超個性的な外見なので男性キャラだが名前だけで出力可能な稀有な例。男性キャラはルルーシュのような超有名キャラでも簡単には再現できない</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/18mSHwCGMB.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/18mSHwCGMB-s.png" border="0"></a></td></tr><tr><td>lelouch lamperouge</td><td></td><td>コードギアス</td><td>ルルーシュ・ランペルージ(画像は再現失敗例)</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/QC9hQfGCZH.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/QC9hQfGCZH-s.png" border="0"></a></td></tr><tr><td>tsukino usagi</td><td></td><td rowspan="2">セーラームーン</td><td rowspan="2">月野うさぎ</td><td rowspan="2">名前だけでは似ても似つかない画像しか出てこないが、作品名を追加するとそれなりに特徴を押さえた画像が出力される例</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/OcjU3KIg4M.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/OcjU3KIg4M-s.png" border="0"></a></td></tr><tr><td>tsukino usagi,sailor moon</td><td></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/ZKTo9r1S11.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ZKTo9r1S11-s.png" border="0"></a></td></tr><tr><td>kousaka honoka,love live!</td><td></td><td rowspan="2">ラブライブ</td><td rowspan="2">高坂穂乃果</td><td rowspan="2">髪型等を指定すると再現性が上がる例。服装等も指定すればさらに再現性が上がる</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/jl7Fg3Mtx1.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/jl7Fg3Mtx1-s.png" border="0"></a></td></tr><tr><td>kousaka honoka,love live!, side ponytail, orange hair,blue eyes, medium breasts</td><td></td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/_ouwNK8GTs.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/_ouwNK8GTs-s.png" border="0"></a></td></tr><tr><td>hirasawa yui,k-on!, sakuragaoka_high_school_uniform,</td><td></td><td>けいおん</td><td>平沢唯</td><td>細かく指定しなくても学校制服名だけで出力できる稀有な例。ほとんどの作品では不可能</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/wyqobcDYG_.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/wyqobcDYG_-s.png" border="0"></a></td></tr></tbody></table>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_9_3">ネガティブプロンプト(Undesired Content)の活用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+</div></div><div id="content_block_33" class="wiki-section-3"><div class="title-3"><h5 id="content_9_3_1">版権キャラ再現のノイズ除去 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_3_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_33-body" class="wiki-section-body-3">
+セットで描かれる事が多いキャラクターは学習元データの都合上指定していなくてもノイズとして載ることがある。対象のキャラクターを除外すると良い。<br>
+ただし絡みを作る際の弊害となり得る可能性<br>
+例として十六夜咲夜のメイド服が緑色になってしまう場合、紅美鈴を除外指定すると解決する場合がある。<br>
+</div></div><div id="content_block_35" class="wiki-section-3"><div class="title-3"><h5 id="content_9_3_2">同作品の他キャラクター由来のノイズ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_3_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_35-body" class="wiki-section-body-3">
+作品名を指定すると、極端に学習データの多い同一作品内のキャラの特徴が混入することがある<br>
+例えばasahina mikuru, suzumiya haruhi no yuuutsu,と入力すると涼宮ハルヒ要素が強く混ざりまともに再現できない<br>
+作品名を外すと再現性が落ちるので、ネガティブにKatyusha,hairband,tsurime...等1つ1つ記入するのが対処法だが、それでも除去しきれない場合もある<br>
+作品名にキャラクター名が含まれている場合に発生しやすいが、そうでない場合も起こりうる<br>
+例えばgochuumon wa usagi desu ka?はkafuu chinoの学習データが大きいため、他キャラを再現しようとすると極端にロリ化しやすい。この場合もネガティブで排除を狙う。<br>
+</div></div><div id="content_block_37" class="wiki-section-3"><div class="title-3"><h5 id="content_9_3_3">他作品同名キャラクター由来のノイズ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_3_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_37-body" class="wiki-section-body-3">
+キャラクター名直指定で生成時、容姿こそ再現されるが関係の無いパーツまで頻繁に混入する場合がある。他作品に名前の被るキャラがいないか推理しネガティブプロンプトに追加することで、謎パーツの混入問題が解決される場合がある。<br>
+例としてYuzuki Yukari単独で出力される結月ゆかりの髪にはしばしば赤い紐のような物体が付着するが、この正体はYakumo Yukariからのヘアリボン混入である。<br>
+</div></div><div id="content_block_39" class="wiki-section-3"><div class="title-3"><h5 id="content_9_3_4">他作品同特徴キャラクター由来のノイズ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_3_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_39-body" class="wiki-section-body-3">
+キャラクター名直指定で生成時、同名キャラの特徴でもない関係の無いパーツが混入したり、顔つきが違ってしまう場合がある。これは別キャラと特徴がほぼ一致していることで起こる現象で、深刻な場合は一部しか特徴が一致していないまた別のキャラにも吸われる。<br>
+例としてはkitazawa hagumi+特徴で北沢はぐみを生成する際に画風が何故かラブライブになったり、髪が広がり過ぎる等の現象が起こる。この現象は、hoshizora rinと特徴が似ている（オレンジ髪＋ショートヘア＋低身長）という原因で起こるもので、同じラブライブのキャラである、kousaka honoka等の特徴も出てしまっている。<br>
+<br>
+これは上と違い、それらのキャラ名をネガティブプロンプトに入れても解決しないどころか、<b>かえって安定生成が出来なくなることがある</b>（吸いが少ない場合は解決する場合もある）。<br>
+そのため、ネガティブプロンプトに出て欲しくない別キャラの特徴を入れ、間接的に吸うキャラを打ち消すのがこの現象の主な対処方法となる。しかし、<b>顔つき等に関してはどうしようもないので、吸われないことを祈るしかない</b>。<br>
+<br>
+この現象の他例<br>
+admiral graf spee (azur lane)（同じショートヘア＋赤メッシュのmitake ranに吸われる。よくボブカットになる。追撃してmatoi ryuukoにも吸われ青髪化も起こる。） <br>
+inugami korone（同じダブル三つ編み＋茶髪のshinshuu maru (kancolle)に吸われる。顔つきがそのキャラのものになる。追撃してamiya（arknights）にも吸われ服と耳がそのキャラのものになる。）<br>
+</div></div><div id="content_block_41" class="wiki-section-3"><div class="title-3"><h5 id="content_9_3_5">キャラ名由来のノイズ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_3_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_41-body" class="wiki-section-body-3">
+珍しい例だが、キャラクターの名前に引っ張られて別の要素が顔を出してしまうことがある<br>
+例えば 保登心愛を再現しようとしてhoto cocoaと出力すると、ティーカップの中にココアが入っているだけの画像が出てくる<br>
+gochuumon wa usagi desu ka?を追加するとある程度は回避できるが、それでもココアの入ったティーカップを持っているキャラが生成されることがある<br>
+</div></div><div id="content_block_43" class="wiki-section-2"><div class="title-2"><h4 id="content_9_4">i2iで画像を修正する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_43-body" class="wiki-section-body-2">
+<ul id="content_block_44" class="list-1">
+<li>プロンプトを細かく指定してネガティブをフル活用しても、t2iだけではどうしても限界がある<br>t2iである程度雰囲気のある画像がでたら、プロンプトはそのままにしてimport imageで加筆修正するとうまく再現できることがある
+<ul class="list-2">
+<li>おおざっぱに描いてもNAIが自然に仕上げてくれる。画力は一切不要</li>
+</ul>
+</li>
+<li>慣れれば髪型等も微調整できるようになる。指先の作画崩壊の対処策としても有効。
+<ul class="list-2">
+<li>引き換えにAnlasと時間が溶けてゆく</li>
+<li><span style="color:#999999;">エロ絵生成でも大きな効果を発揮する</span></li>
+</ul>
+</li>
+<li>Noiseは0にするのがセオリー。Seed値も空にする。あとはStrengthで調整
+<ul class="list-2">
+<li>Strengthは0.4〜0.5程度を目安に減らしたり増やしたり。増やしすぎるとNAIの独自解釈要素が強くなり別絵と化す場合も。
+<ul class="list-3">
+<li>プロンプト出力を一切せずに既存の版権絵をいじりたい場合はStrength0.3くらいがちょうどいい</li>
+<li>Strengthは数値が大きいほど必要なAnlasも多くなる。残Anlas数を見ながら生成しよう</li>
+<li>Strengthの目安<br>Strength:0→一切加工なし<br>Strength:0.1〜0.2→加筆した線や塗りがほぼそのまま残り不自然になりがち。<br>Strength:0.3→少し自然な仕上がりに。微修正したいならこれでおｋ。<br>Strength:0.4〜0.6→加筆した部分が自然な仕上がりになって出来上がる。<b>とりあえずStrength:0.5から始めるのがおすすめ。</b><br>Strength:0.6→この辺からNAIの独自解釈要素が大きくなる。<br>Strength:0.7→オリジナルから乖離した絵が生成されるようになる。元絵から大きく修正したい場合でもここが限界値か。<br>Strength0.8以降→構図が大きく変わることが多く、もはや別絵になること少なくない。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>下記の例ではプロンプトを一切動かしていないが、身体の構造変更をする場合などプロンプトを動かした方がいい
+<ul class="list-2">
+<li>例えば胸の大きさを変更したい場合は、胸の膨らみを加筆した後にプロンプトにlarge breastsを追加した方がうまくいく</li>
+</ul>
+</li>
+<li>NAI上でも書き込みはできるが、出力された画像を保存してphotoshop等で細かく書き込んでから再びNAIに放り込む方法もある
+<ul class="list-2">
+<li><del>そこまでするなら最初からファンアートとして絵を描いた方がいいのでは</del></li>
+</ul>
+</li>
+</ul>
+<br>
+(参考)※画像の違いは拡大しないとわかりづらいかも<br>
+<table class="sort nanj_prompt_table" id="content_block_45"><thead><tr><th style="width:100px;">手順</th><th style="width:300px;">解説</th><th style="width:300px;">画像</th></tr></thead><tbody><tr><td>��</td><td>例としてt2iでは絶対に不可能なユニオンジャックパーカーを再現する。<br>まずは普通に<a href="https://seesaawiki.jp/nai_ch/d/%c8%c7%b8%a2%a5%ad%a5%e3%a5%e9%ba%c6%b8%bd/%a4%ab%b9%d4#content_1_2_11">プロンプト</a>を入れていくつか画像を出力し、その中から一番よさそうなものを選択する</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/alrFzLmheI.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/alrFzLmheI.png" border="0"></a></td></tr><tr><td>��</td><td>出力した画像をimport imageしてそれっぽく書き込む<br>右画像くらい適当で構わない(マウスで適当に書き込んだ)</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/FJQ0cLcEnn.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/FJQ0cLcEnn.png" border="0"></a></td></tr><tr><td>��</td><td>Strength:0.5前後で出力するとそれっぽく馴染んだ画像になる(右画像は0.5で出力)<br>Noiseは0にするのがセオリー。Seedも空に。プロンプトは1枚目の画像出力したものを動かさずそのまま(ネガティブも)。<br>t2iと同じくブレが生じるので数枚出力してみるのがよいのだが、Anlasがいくらあっても足りないのでほどほどに</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/eHIFgxodiu.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/eHIFgxodiu.png" border="0"></a></td></tr><tr><td rowspan="3">おまけ</td><td>Strength:0.4で出力<br>まだ線にガタガタ感がある</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/VfZVFD9XkS.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/VfZVFD9XkS.png" border="0"></a></td></tr><tr><td>Strength:0.6で出力<br>NAIがオリジナル要素を入れはじめるので再現という観点からは微妙な結果に</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/lLGeJqPrLW.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/lLGeJqPrLW.png" border="0"></a></td></tr><tr><td>Strength:0.99で出力<br>もはや別画像</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/aSfYwhF_8F.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/aSfYwhF_8F.png" border="0"></a></td></tr></tbody></table>
+</div></div><div id="content_block_47" class="wiki-section-2"><div class="title-2"><h4 id="content_9_5">キャラが再現出来ない理由 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4980943&amp;part=content_9_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_47-body" class="wiki-section-body-2">
+<ul id="content_block_48" class="list-1">
+<li>なぜかツリ目になる・キャラが大人っぽ過ぎる・アニメ絵柄が強すぎるetc...
+<ul class="list-2">
+<li><a href="https://seesaawiki.jp/nai_ch/d/%c9%d1%cd%d1%a5%cd%a5%ac%a5%c6%a5%a3%a5%d6%a5%d7%a5%ed%a5%f3%a5%d7%a5%c8">頻用ネガティブプロンプト</a>を活用すれば解決するかも</li>
+</ul>
+</li>
+<li>データが少ない
+<ul class="list-2">
+<li>シンプルかつ、danbooruにキャラのデータが少なくとも1kはあるキャラなら再現できる場合もある</li>
+</ul>
+</li>
+<li>衣装が複雑
+<ul class="list-2">
+<li>衣装が複雑だとVOCALOIDレベルのデータが無ければ完全再現出来ないから、別衣装で代用するか妥協しよう</li>
+</ul>
+</li>
+<li>タグの数が足りない
+<ul class="list-2">
+<li>danbooru等でリボンなんかの飾りまで調べよう</li>
+</ul>
+</li>
+<li>そのキャラが新しすぎる
+<ul class="list-2">
+<li><b>chainsaw manやbocchi the rock!等の一部例外（原作が既に有名だったもの）を除き、2022年春夏以降のアニメ・ゲームのキャラは出ない</b><br>例：nishikigi chisato(2022年夏アニメのキャラ)はdanbooruに2.5kのデータがあるが、名前をいくら強調して特徴を入れたとしても出ない<br>kitagawa marinやホロライブ6期生(hakui koyori等)のデータがあるので2022年冬ら辺までは認識していると思われる</li>
+</ul>
+</li>
+<li>キャラ名のスペリングが違う
+<ul class="list-2">
+<li>例として、白銀ノエルはshirogane <b>noel</b>であるのに対し、原神のノエルは<b>noelle</b> (genshin impact)である<br>NAIでプロンプトを打つ際に予測変換で分かる場合が多いが、分からない場合はdanbooru等でキャラ名のスペルを調べよう<br>特に、"l"と"r"の違いや最後に"e"が付くかつかないかはしっかり確認しよう</li>
+<li>名字と名前の間は開ける必要がある。例えばhakureireimuでは博麗霊夢は出ない。 hakurei reimuとする必要がある。手入力する際は注意。  </li>
+</ul>
+</li>
+</ul>
+<ul id="content_block_49" class="list-1">
+<li>データが2kレベルのキャラの場合はmasterpieceレベルの画像が無いこともあるため、クオリティタグを弱めたり外すと上手く生成されることがある<br>クオリティはどうしても低くなりがちだから、ネガティブプロンプトで補正しよう
+<ul class="list-2">
+<li>おすすめ妥協衣装<br>水着 シャツ スーツ キャミソール 制服 コート ナース服 チャイナドレス といったオリジナル作品のデータが多そうな衣装が良い 制服が1番おすすめ<br>水着はデータが多いものの、身体の造形ミスが分かりやすいから注意</li>
+</ul>
+</li>
+</ul>
+<ul id="content_block_50" class="list-1">
+<li>画像に別のキャラの要素が出るなら、それをネガティブプロンプトに入れよう
+<ul class="list-2">
+<li>例えば、タヌキを出力したい時にネガティブプロンプトにアライグマのタグを入れる感じ</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<div class="footer-footnote">
+<hr>
+<ul class="list-1">
+<li><a href="#footnote1" name="footer-footnote1">*1 </a> : どれも結果は大体同じだが、pixai, wd tagger, deep danbooruの順に新しく、対応タグも豊富</li>
+<li><a href="#footnote2" name="footer-footnote2">*2 </a> : 一応、IPAdapterによる疑似1枚絵LoRA（の出力で素材を増やす）、コイカツのスクショで素材を増やす、アニメのスクショで素材を増やす、などの手法はあるが、それぞれ表現範囲が狭まる、3Dっぽさがどうしても乗る、適切な素材シーンを見つけるのが意外と難しい（簡単に切り抜けるキャラはそもそもイラストも豊富）、というデメリットもあり、キャラ再現しつつ表現の自由度を高めるのは一筋縄ではいかない。</li>
+</ul>
+</div>
+</div>

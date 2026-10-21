@@ -1,0 +1,331 @@
+<div class="user-area">
+Kritaほど本格的ではないけど、<br>
+1111の貧弱なgradioペイントツールよりは魅力的な、<br>
+WebベースのAIペイントツール。<br>
+<br>
+<a href="https://github.com/invoke-ai/InvokeAI" class="outlink">https://github.com/invoke-ai/InvokeAI</a><br>
+<a href="https://invoke-ai.github.io/InvokeAI/installation/" class="outlink">https://invoke-ai.github.io/InvokeAI/installation/</a><br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> インストール</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> インストーラー</a></li>
+<li class="list-2"><a href="#content_1_2"> pipでのマニュアルインストール(Windows)</a>
+<ul>
+<li class="list-3"><a href="#content_1_2_1"> モジュールのインストール</a></li>
+<li class="list-3"><a href="#content_1_2_2"> ckptとvaeを追加する</a></li>
+<li class="list-3"><a href="#content_1_2_3"> 設定ウィザードと起動</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_1_3"> Docker</a></li>
+<li class="list-2"><a href="#content_1_4"> condaでのマニュアルインストール</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2"> 使い方</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> インストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4993692&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+</div></div><div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> インストーラー <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4993692&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+<ul id="content_block_4" class="list-1">
+<li> あんまりおすすめできないかも</li>
+<li> Anacondaとgitを勝手にインストールする
+<ul class="list-2">
+<li> gitはともかくAnacondaは環境が汚れる</li>
+</ul>
+</li>
+<li> 変なエラーが出たらいったん消して全部やり直したほうがよさげ</li>
+<li> インストール出来た事例あり</li>
+</ul>
+</div></div><div id="content_block_6" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> pipでのマニュアルインストール(Windows) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4993692&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_6-body" class="wiki-section-body-2">
+</div></div><div id="content_block_8" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_1"> モジュールのインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4993692&amp;part=content_1_2_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_8-body" class="wiki-section-body-3">
+<br>
+コマンドプロンプトを開いて1行ずつ実行。<br>
+ダメだったらスレか技術部で聞いてください。<br>
+<br>
+python.exeのpathを通してない場合はフルパスに書き換える<blockquote id="content_block_9">
+set PYTHON=python.exe
+</blockquote>
+git.exeのpathを通してない場合はフルパスに書き換える<blockquote id="content_block_10">
+set GIT=git.exe
+</blockquote>
+InvokeAIを入れる親フォルダを指定する(任意。あらかじめ作成する)<blockquote id="content_block_11">
+cd C:\SD
+</blockquote>
+InvokeAIのダウンロード<blockquote id="content_block_12">
+%GIT% clone <a href="https://github.com/invoke-ai/InvokeAI.git" class="outlink">https://github.com/invoke-ai/InvokeAI.git</a>
+</blockquote>
+InvokeAIフォルダの中に移動<blockquote id="content_block_13">
+cd InvokeAI
+</blockquote>
+webページの説明と違うけどこれでいける<blockquote id="content_block_14">
+copy environments-and-requirements\requirements-win-colab-cuda.txt requirements.txt
+</blockquote>
+venvを作る<blockquote id="content_block_15">
+%PYTHON% -m venv invokeai
+</blockquote>
+以後はvenvの中のPythonを使う<blockquote id="content_block_16">
+set PYTHON=C:\SD\InvokeAI\invokeai\Scripts\python.exe
+</blockquote>
+basicsr のインストールで失敗するので対策で入れる(あとで消される)<blockquote id="content_block_17">
+%PYTHON% -m pip install torch
+</blockquote>
+requirements.txtのインストール<blockquote id="content_block_18">
+%PYTHON% -m pip install --prefer-binary -r requirements.txt
+</blockquote>
+<br>
+バッチファイル(作成中。未検証)<br>
+<div id="content_block_19">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_19-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_19-inside" class="toggle-display">
+<pre id="content_block_20" class="prettyprint lang-bsh">
+@echo off
+if not defined PYTHON (set PYTHON=python)
+if not defined VENV_DIR (set VENV_DIR=venv)
+if not defined GIT (set GIT=git)
+
+cd C:\SD
+%GIT% clone https://github.com/invoke-ai/InvokeAI.git
+cd InvokeAI
+
+@REM 説明と違うけどたぶんこれでいける
+copy environments-and-requirements\requirements-win-colab-cuda.txt requirements.txt
+
+%PYTHON% -c "" &gt;tmp/stdout.txt 2&gt;tmp/stderr.txt
+if %ERRORLEVEL% == 0 goto :start_venv
+echo Couldn't launch python
+goto :show_stdout_stderr
+
+if [%VENV_DIR%] == [-] goto :skip_venv
+
+dir %VENV_DIR%\Scripts\Python.exe &gt;tmp/stdout.txt 2&gt;tmp/stderr.txt
+if %ERRORLEVEL% == 0 goto :activate_venv
+
+for /f "delims=" %%i in ('CALL %PYTHON% -c "import sys; print(sys.executable)"') do set PYTHON_FULLNAME="%%i"
+echo Creating venv in directory %VENV_DIR% using python %PYTHON_FULLNAME%
+%PYTHON_FULLNAME% -m venv %VENV_DIR% &gt;tmp/stdout.txt 2&gt;tmp/stderr.txt
+if %ERRORLEVEL% == 0 goto :activate_venv
+echo Unable to create venv in directory %VENV_DIR%
+goto :show_stdout_stderr
+
+:activate_venv
+set PYTHON="%~dp0%VENV_DIR%\Scripts\Python.exe"
+echo venv %PYTHON%
+goto :install_requirements
+
+:install_requirements
+@REM basicsr のインストールで失敗するので対策で入れる(あとで消される)
+%~dp0%VENV_DIR%\Scripts\pip.exe install torch
+%~dp0%VENV_DIR%\Scripts\pip.exe install --prefer-binary -r requirements.txt
+goto :set_ckpt
+
+
+:skip_venv
+:set_ckpt
+@REM ckptとvae.pt書き換え
+@REM if not defined CKPT (set CKPT=ここどうしよ・・・)
+@REM if not defined VAE (set VAE=ここどうしよ・・・)
+@REM  書き換えのコード
+@REM まだ書いてない‥
+
+goto :launch
+
+:launch
+%PYTHON% scripts/invoke.py --web %*
+pause
+exit /b
+
+
+
+:show_stdout_stderr
+
+echo.
+echo exit code: %errorlevel%
+
+for /f %%i in ("tmp\stdout.txt") do set size=%%~zi
+if %size% equ 0 goto :show_stderr
+echo.
+echo stdout:
+type tmp\stdout.txt
+
+:show_stderr
+for /f %%i in ("tmp\stderr.txt") do set size=%%~zi
+if %size% equ 0 goto :show_stderr
+echo.
+echo stderr:
+type tmp\stderr.txt
+
+:endofscript
+echo.
+echo Launch unsuccessful. Exiting.
+pause
+
+</pre>
+</div>
+</div>
+</div></div><div id="content_block_23" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_2"> ckptとvaeを追加する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4993692&amp;part=content_1_2_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_23-body" class="wiki-section-body-3">
+<br>
+InvokeAI/configs/models.yaml を編集してモデルを追加する。以下は一例。<br>
+<div id="content_block_24">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_24-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_24-inside" class="toggle-display">
+<pre id="content_block_25" class="PLAIN-BOX">
+Anything-v3:
+  description: Anything-v3
+  weights: C:\SD\stable-diffusion-webui\models\Stable-diffusion\Anything-V3.0-pruned-fp32.ckpt
+  config: configs/stable-diffusion/v1-inference.yaml
+  width: 512
+  height: 512
+  vae: C:\SD\stable-diffusion-webui\models\Stable-diffusion\final-pruned.vae.pt
+  default: true
+</pre>
+</div>
+</div>
+<br>
+1111に入れてあるckpt、vae、yamlをそのまま使うためのExtensionを作った<br>
+<a href="https://github.com/aka7774/sd_invokeai_models_yaml_maker" class="outlink">https://github.com/aka7774/sd_invokeai_models_yaml...</a><br>
+<br>
+インポートスクリプトを試したが動作しなかった。<br>
+<div id="content_block_27">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_27-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_27-inside" class="toggle-display">
+<a href="https://invoke-ai.github.io/InvokeAI/installation/INSTALLING_MODELS/#walk-through" class="outlink">https://invoke-ai.github.io/InvokeAI/installation/...</a><br>
+<ul id="content_block_28" class="list-1">
+<li> !import_model の引数ではバックスラッシュ(\)が使えないのでスラッシュ(/)に直す必要がある</li>
+<li> フォルダの指定やワイルドカードは認識しない</li>
+<li> Configuration file for this model: から先に進まない</li>
+</ul>
+</div>
+</div>
+</div></div><div id="content_block_31" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_3"> 設定ウィザードと起動 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4993692&amp;part=content_1_2_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_31-body" class="wiki-section-body-3">
+<br>
+その後、設定ウィザードを開始する<br>
+内容はこんな感じ<br>
+<a href="https://sakusaku-ikiru-aiblog.hatenablog.com/entry/2022/12/04/130048" class="outlink">https://sakusaku-ikiru-aiblog.hatenablog.com/entry...</a><br>
+<br>
+設定内容は、HOMEに .invokeai ファイルで保存される<br>
+HOMEが汚れるのが嫌なら、以下のコマンドでカレントディレクトリに設定できるかも<blockquote id="content_block_32">
+set USERPROFILE=%CD%
+</blockquote>
+<ul id="content_block_33" class="list-1">
+<li> venvの中にいるときのやりかた</li>
+</ul>
+<div id="content_block_34">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_34-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_34-inside" class="toggle-display">
+設定<br>
+<pre id="content_block_35" class="PLAIN-BOX">
+python scripts/invoke.py
+</pre>
+<br>
+設定が終わったら、以下のコマンドで起動<br>
+<pre id="content_block_36" class="PLAIN-BOX">
+python scripts/invoke.py --web
+</pre>
+</div>
+</div>
+<br>
+<ul id="content_block_38" class="list-1">
+<li> venvの外に出てるときのやりかた</li>
+</ul>
+<div id="content_block_39">
+<div class="toggle-title"><a id="region_plugin_content_5" onclick="toggleRegion(this,'content_block_39-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_39-inside" class="toggle-display">
+設定<br>
+<pre id="content_block_40" class="PLAIN-BOX">
+cd C:\SD\InvokeAI\invokeai
+Scripts\python.exe scripts/invoke.py
+</pre>
+<br>
+設定が終わったら、以下のコマンドで起動<br>
+<pre id="content_block_41" class="PLAIN-BOX">
+cd C:\SD\InvokeAI\invokeai
+Scripts\python.exe scripts/invoke.py --web
+</pre>
+</div>
+</div>
+<br>
+起動できたら、ブラウザから、<br>
+<a href="http://127.0.0.1:9090/" class="outlink">http://127.0.0.1:9090/</a><br>
+にアクセスする。<br>
+<br>
+</div></div><div id="content_block_44" class="wiki-section-2"><div class="title-2"><h4 id="content_1_3"> Docker <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4993692&amp;part=content_1_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_44-body" class="wiki-section-body-2">
+<ul id="content_block_45" class="list-1">
+<li> もうDocker使ってる人にはこれが便利かも</li>
+</ul>
+だれかバッチ頼む<br>
+Linuxならこんな感じ<br>
+<div id="content_block_46">
+<div class="toggle-title"><a id="region_plugin_content_6" onclick="toggleRegion(this,'content_block_46-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_46-inside" class="toggle-display">
+<br>
+<pre id="content_block_47" class="sh">
+# ~/hoge/のディレクトリにダウンロード
+# ディレクトリに移動
+cd  ~/hoge/
+# ダウンロード
+git clone https://github.com/invoke-ai/InvokeAI.git
+cd InvokeAI
+# Dockerのイメージをビルド 
+#シェルスクリプトだとdashで動くけど実はbashで書いてあるパターン回避のため一応bashを明示して実行
+bash docker-build/build.sh
+</pre>
+<br>
+2回目以降はrunでいい<br>
+<pre id="content_block_48" class="sh">
+# Docker実行
+bash docker-build/run.sh
+</pre>
+</div>
+</div>
+</div></div><div id="content_block_51" class="wiki-section-2"><div class="title-2"><h4 id="content_1_4"> condaでのマニュアルインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4993692&amp;part=content_1_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_51-body" class="wiki-section-body-2">
+Linuxでやったがwindowsでもほとんど同じなはず<br>
+<br>
+とりあえずanaconda promptを開いて適当なディレクトリに行く。<br>
+<br>
+<pre id="content_block_52" class="PLAIN-BOX">
+&gt; git clone https://github.com/invoke-ai/InvokeAI.git
+&gt; cd InvokeAI
+&gt; copy environments-and-requirements/environment-win-cuda.yml environment.yml
+&gt; conda env create -f=environment.yml         # conda環境に入ってる必要がある
+&gt; conda activate invokeai
+&gt; python scripts/invoke.py --web
+</pre>
+<br>
+invoke.pyは初回、moduleなどのディレクトリを指定する必要があるので、現時点で入ってるディレクトリを指定すると良い。<br>
+safety checkerの確認もあるのでyを打たないように。<br>
+<br>
+modelをhuggin faceからダウンロードする場合は<br>
+ttps://huggingface.co/runwayml/stable-diffusion-v1-5<br>
+ttps://huggingface.co/runwayml/stable-diffusion-inpainting<br>
+などに行ってagreementをクリックしてくる。<br>
+ついでにtokenも必要なので<br>
+ttps://huggingface.co/settings/tokens<br>
+にいってtokenを生成してきてコピペする。<br>
+<br>
+<br>
+</div></div><div id="content_block_54" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 使い方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4993692&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_54-body" class="wiki-section-body-1">
+<br>
+おっぱい出ない → .invokeai内の--nsfw_checker削除<br>
+ネガティブどこに入れる？ → []で囲む<br>
+プロンプトの構文は他にもあって面白そう <a href="https://invoke-ai.github.io/InvokeAI/features/PROMPTS/" class="outlink">https://invoke-ai.github.io/InvokeAI/features/PROM...</a><br>
+<br>
+誰か任せた
+</div></div>
+</div>

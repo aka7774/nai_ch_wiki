@@ -1,0 +1,731 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 更新版(2023-01-25作成)</a></li>
+<li class="list-1"><a href="#content_2">※番外編：導入(WSL2)｜Linux環境でAutomatic1111を導入する</a>
+<ul>
+<li class="list-2"><a href="#content_2_1">概要</a>
+<ul>
+<li class="list-3"><a href="#content_2_1_1">利点</a></li>
+<li class="list-3"><a href="#content_2_1_2">欠点</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_2_2">WSL2 のセットアップ</a></li>
+<li class="list-2"><a href="#content_2_3">Ubuntu 22.04 をインストール</a></li>
+<li class="list-2"><a href="#content_2_4">Ubuntu 22.04 をセットアップ</a></li>
+<li class="list-2"><a href="#content_2_5">Pythonのアップデート</a></li>
+<li class="list-2"><a href="#content_2_6">CUDAのインストール</a></li>
+<li class="list-2"><a href="#content_2_7">cuDNN のインストール</a></li>
+<li class="list-2"><a href="#content_2_8">WSL2の再起動</a></li>
+<li class="list-2"><a href="#content_2_9">AUTOMATIC WebUIのインストール</a></li>
+<li class="list-2"><a href="#content_2_10">ckptなど置く</a></li>
+<li class="list-2"><a href="#content_2_11">xformersの導入</a></li>
+<li class="list-2"><a href="#content_2_12">xformers有効化とWebUI起動</a>
+<ul>
+<li class="list-3"><a href="#content_2_12_3">起動するのにUbuntuいちいち立ち上げるのがめんどくさいンゴ</a></li>
+<li class="list-3"><a href="#content_2_12_4">バッチファイルから起動はするけど、生成時にエラーが出るンゴ……</a></li>
+<li class="list-3"><a href="#content_2_12_5">生成した絵に直でアクセスしたいンゴ</a></li>
+<li class="list-3"><a href="#content_2_12_6">Windows版と同じようにフォルダアイコンからエクスプローラーを開きたいンゴ</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_2_13">参考サイト</a></li>
+<li class="list-2"><a href="#content_2_14">WSL2のちょっとした補足</a></li>
+<li class="list-2"><a href="#content_2_15"> やってみた(2022-12-10)</a></li>
+<li class="list-2"><a href="#content_2_16"> やってみた２(2022-12-17)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 更新版(2023-01-25作成) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<ul id="content_block_2" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/local%5fWSL2">local_WSL2</a></li>
+<li> 手順が簡単になった</li>
+<li> kohya sd-scripts対応</li>
+</ul>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2">※番外編：導入(WSL2)｜Linux環境でAutomatic1111を導入する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_4-body" class="wiki-section-body-1">
+Windowsでも速度を求める人やLinuxに慣れてる人はこちらがお勧め<br>
+</div></div><div id="content_block_6" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1">概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_6-body" class="wiki-section-body-2">
+WindowsのWSL(Linux)環境でAutomatic1111を導入する手順です。<br>
+</div></div><div id="content_block_8" class="wiki-section-3"><div class="title-3"><h5 id="content_2_1_1">利点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_1_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_8-body" class="wiki-section-body-3">
+<ul id="content_block_9" class="list-1">
+<li>Windows版と比べて15〜25%程早い</li>
+<li>環境のバックアップが取りやすい<br>(OSごとバックアップが取れるので何かあったときに戻すのが楽)</li>
+</ul>
+</div></div><div id="content_block_11" class="wiki-section-3"><div class="title-3"><h5 id="content_2_1_2">欠点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_1_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_11-body" class="wiki-section-body-3">
+<ul id="content_block_12" class="list-1">
+<li>多少だがLinuxの知識が必要になる</li>
+</ul>
+<br>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2">WSL2 のセットアップ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+Powershellを管理者権限で起動して以下を実行<br>
+<pre id="content_block_15" class="BOX">
+wsl --install
+</pre>
+再起動を要求されるので再起動する<br>
+<br>
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3">Ubuntu 22.04 をインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+Microsoft Storeを起動し、ubuntu 22 で検索して Ubuntu 22.04.1 LTS をインストールする(2022/12/07現在の最新)<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/QMSxJb_6Dc.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/QMSxJb_6Dc.png" border="0"></a><br>
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4">Ubuntu 22.04 をセットアップ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+Ubuntu 22.04.1 LTSを起動すると初期化とユーザー名、パスワードの設定を要求されるので入力する<br>
+</div></div><div id="content_block_21" class="wiki-section-2"><div class="title-2"><h4 id="content_2_5">Pythonのアップデート <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_21-body" class="wiki-section-body-2">
+2023/02/19現在でPython3.10の最新である Python3.10.10にアップデートする<br>
+<br>
+まず以下コマンドを実行<br>
+<pre id="content_block_22" class="BOX">
+sudo apt update
+sudo apt upgrade -y
+</pre>
+初回の sudo 実行時にユーザーのパスワードを聞かれるので入力する<br>
+<br>
+Pythonのビルドに必要な依存ファイルをインストールする<br>
+<pre id="content_block_23" class="BOX">
+sudo apt install -y build-essential libbz2-dev libdb-dev \
+  libreadline-dev libffi-dev libgdbm-dev liblzma-dev \
+  libncursesw5-dev libsqlite3-dev libssl-dev \
+  zlib1g-dev uuid-dev tk-dev
+</pre>
+<br>
+Pythonのソースコードを取得し展開<br>
+<pre id="content_block_24" class="BOX">
+wget https://www.python.org/ftp/python/3.10.10/Python-3.10.10.tar.xz
+tar xJf Python-3.10.10.tar.xz
+</pre>
+<br>
+Pythonをビルド(そこそこ時間がかかる)<br>
+<pre id="content_block_25" class="BOX">
+cd Python-3.10.10
+./configure
+make
+sudo make install
+cd ~
+</pre>
+<br>
+ここまでやると、以下コマンドを打つと「Python 3.10.10」とバージョンが返ってくる<br>
+<pre id="content_block_26" class="BOX">
+python3 --version
+</pre>
+</div></div><div id="content_block_28" class="wiki-section-2"><div class="title-2"><h4 id="content_2_6">CUDAのインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_28-body" class="wiki-section-body-2">
+CUDA 11.x の最新版である11.8をインストールする <br>
+<b><span style="color:#ff0000;">※ CUDA 11.x台をインストールすること! 2022/12/10現在、最新である12.xをインストールするとxformersがビルドできない</span></b><br>
+<br>
+<a href="https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&amp;target_arch=x86_64&amp;Distribution=WSL-Ubuntu&amp;target_version=2.0&amp;target_type=deb_local" class="outlink">https://developer.nvidia.com/cuda-11-8-0-download-...</a> の 「Download Installer for Linux WSL-Ubuntu 2.0 x86_64」- 「Base Installer」 に書いてあるコマンドを実行する<br>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_2_7">cuDNN のインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+Windows側で <a href="https://developer.nvidia.com/rdp/cudnn-archive" class="outlink">https://developer.nvidia.com/rdp/cudnn-archive</a> から cuDNN v8.6.0 (October 3rd, 2022), for CUDA 11.x の Local Installer for Ubuntu22.04 x86_64 (Deb) をダウンロードし、\\wsl$\Ubuntu-22.04\home\&lt;Ubuntuのユーザー名&gt; に置く<br>
+※DLするにはNVIDIAの開発者アカウントが必要<br>
+<br>
+その後Ubuntu側で/home/&lt;Ubuntuのユーザー名&gt;に移動し、以下コマンド実行<br>
+<pre id="content_block_31" class="BOX">
+sudo dpkg -i cudnn-local-repo-ubuntu2204-8.6.0.163_1.0-1_amd64.deb
+sudo cp /var/cudnn-local-repo-ubuntu2204-8.6.0.163/cudnn-local-FAED14DD-keyring.gpg /usr/share/keyrings/
+sudo apt -y update
+sudo apt install libcudnn8
+sudo apt install libcudnn8-dev
+</pre>
+<br>
+その後/home/&lt;Ubuntuのユーザー名&gt; にある 「.bashrc」「.profile」に以下を書き加える<br>
+<pre id="content_block_32" class="BOX">
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+</pre>
+<br>
+/home/&lt;Ubuntuのユーザー名&gt;/.bash_profile (無い場合は新規作成)に以下を書き加える<br>
+<pre id="content_block_33" class="BOX">
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+if [[ -f ~/.bashrc ]] ; then
+    . ~/.bashrc
+fi
+</pre>
+</div></div><div id="content_block_35" class="wiki-section-2"><div class="title-2"><h4 id="content_2_8">WSL2の再起動 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_35-body" class="wiki-section-body-2">
+Windows側でコマンドプロンプトかPowerShellを開き、以下のコマンドを実行<br>
+<pre id="content_block_36" class="BOX">
+wsl --shutdown
+</pre>
+コマンドが完了したらUbuntuを再度開く<br>
+</div></div><div id="content_block_38" class="wiki-section-2"><div class="title-2"><h4 id="content_2_9">AUTOMATIC WebUIのインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_38-body" class="wiki-section-body-2">
+まず以下コマンドを実行<br>
+<pre id="content_block_39" class="BOX">
+sudo apt update
+sudo apt upgrade -y
+</pre>
+<br>
+次に以下コマンドを実行する <br>
+<pre id="content_block_40" class="BOX">
+sudo apt install wget git python3 python3-venv -y
+sudo apt install libgl1 -y
+bash &lt;(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+</pre>
+※ WSL2の場合 <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui#automatic-installation-on-linux" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a> に書いてあるコマンドを実行するだけでは足らないため2行目のコマンドを足している<br>
+<br>
+この時点ではまだckptファイルを置いていないため最後のコマンド実行後にエラーが起こるはず<br>
+<pre id="content_block_41" class="BOX">
+No checkpoints found. When searching for checkpoints, looked at:
+ - file /home/xxx/stable-diffusion-webui/model.ckpt
+ - directory /home/xxx/stable-diffusion-webui/models/Stable-diffusion
+Can't run without a checkpoint. Find and place a .ckpt file into any of those locations. The program will exit.
+</pre>
+</div></div><div id="content_block_43" class="wiki-section-2"><div class="title-2"><h4 id="content_2_10">ckptなど置く <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_43-body" class="wiki-section-body-2">
+Windowsのエクスプローラで \\wsl$ にアクセスするとWSL2のLinuxが一覧表示されるので、<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/G0zqfPvbtW.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/G0zqfPvbtW.png" border="0"></a> <br>
+<br>
+\\wsl$\Ubuntu-22.04\home\&lt;Ubuntuのユーザー名&gt;\stable-diffusion-webui\models\Stable-diffusion に ckpt を置く<br>
+※同じやり方でVAEやhypernetworksの下にファイルが置けます<br>
+<br>
+</div></div><div id="content_block_45" class="wiki-section-2"><div class="title-2"><h4 id="content_2_11">xformersの導入 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_45-body" class="wiki-section-body-2">
+2023/01/23時点で1111標準でインストールされるようになった<br>
+<div id="content_block_46">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_46-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>旧情報</p></div>
+<div style="display:none" id="content_block_46-inside" class="toggle-display">
+ビルドしなくても<br>
+<pre id="content_block_47" class="BOX">
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+pip install https://github.com/C43H66N12O12S2/stable-diffusion-webui/releases/download/linux/xformers-0.0.14.dev0-cp310-cp310-linux_x86_64.whl
+</pre>
+にてインストールできる。こちらのほうがお手軽でDreamboothも動く模様<br>
+Dreambooth中にシャットダウンして挙動がおかしくなったときは<br>
+<pre id="content_block_48" class="BOX">
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+pip uninstall xformers
+</pre>
+でいっぺん削除してもう一度入れ直したらええらしいで、しらんけど<br>
+<br>
+ビルドするにしても可能なら<br>
+<pre id="content_block_49" class="BOX">
+sudo apt install ninja-build
+</pre>
+にて早くなるらしい？(ただし早くなっても時間自体はかかるので注意)<br>
+<br>
+<div id="content_block_50">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_50-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>ビルドするときの手順</p></div>
+<div style="display:none" id="content_block_50-inside" class="toggle-display">
+以下コマンドを実行 ビルドにかなりの時間がかかるので待ちましょう<br>
+Dreambooth使う予定がある人は少し後に補足があるので「pip install -e .」のところはやらずにもう少し読み進めること<br>
+<br>
+<pre id="content_block_51" class="BOX">
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+cd repositories
+git clone https://github.com/facebookresearch/xformers.git
+cd xformers
+git submodule update --init --recursive
+pip install -r requirements.txt
+pip install -e .
+</pre>
+最後の「pip install -e .」で<br>
+<pre id="content_block_52" class="BOX">
+error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+</pre>
+とエラーが出てる場合一度コンソールを閉じて開き直して<br>
+<pre id="content_block_53" class="BOX">
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+</pre>
+をしてから(git cloneはスキップして)手順をやり直せばうまく動く…かも知れない<br>
+<br>
+ついでにDreamboothを動かす予定の人は最後の「pip install -e .」の代わりに<br>
+<pre id="content_block_54" class="BOX">
+#一度「pip install -e .」を動かしてる場合先に「python setup.py clean --all」をする
+CC=gcc-11 pip install -e . --install-option develop
+</pre>
+で動くかもしれない
+</div>
+</div>
+<br>
+xformersのビルドが終わったらついでにtritonをインストールしておく(そのままWebUIを起動すると 「Error caught was: No module named 'triton'」と怒られるので)<br>
+<pre id="content_block_56" class="BOX">
+pip install triton
+</pre>
+<br>
+最後にvenvを抜けて終わり<br>
+<pre id="content_block_57" class="BOX">
+deactivate
+</pre>
+</div>
+</div>
+</div></div><div id="content_block_60" class="wiki-section-2"><div class="title-2"><h4 id="content_2_12">xformers有効化とWebUI起動 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_60-body" class="wiki-section-body-2">
+/home/&lt;Ubuntuのユーザー名&gt;/stable-diffusion-webui にある webui-user.sh を開き、以下の行のコメントアウトを外してパラメータを追記する<br>
+<pre id="content_block_61" class="BOX">
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--xformers"
+</pre>
+<br>
+その後 /home/&lt;Ubuntuのユーザー名&gt;/stable-diffusion-webui にある ./webui.sh を実行<br>
+<pre id="content_block_62" class="BOX">
+cd /home/&lt;Ubuntuのユーザー名&gt;/stable-diffusion-webui
+bash webui.sh
+</pre>
+Windows側で  <a href="http://127.0.0.1:7860" class="outlink">http://127.0.0.1:7860</a> にアクセスできます。<br>
+<br>
+</div></div><div id="content_block_64" class="wiki-section-3"><div class="title-3"><h5 id="content_2_12_3">起動するのにUbuntuいちいち立ち上げるのがめんどくさいンゴ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_12_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_64-body" class="wiki-section-body-3">
+/home/&lt;Ubuntuのユーザー名&gt; にある .profileに以下を書き加える<br>
+<pre id="content_block_65" class="BOX">
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+</pre>
+Windows側で以下のバッチファイルを作成する<br>
+<pre id="content_block_66" class="BOX">
+wsl cd /home/&lt;Ubuntuのユーザー名&gt;/stable-diffusion-webui; bash -l webui.sh
+pause
+</pre>
+バッチファイルを実行すればUbuntuでwebui.shを叩いてくれます<br>
+※wslから起動したbashはWindowsのbash.exeを呼び出しているが、これは起動時の環境ファイルを読み込まない<br>
+その為、-lオプションで.profileを読み込んで起動するようにする<br>
+</div></div><div id="content_block_68" class="wiki-section-3"><div class="title-3"><h5 id="content_2_12_4">バッチファイルから起動はするけど、生成時にエラーが出るンゴ…… <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_12_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_68-body" class="wiki-section-body-3">
+<pre id="content_block_69" class="BOX">
+Could not load library libcudnn_cnn_infer.so.8. Error: libcuda.so: cannot open shared object file: No such file or directory
+</pre>
+生成時にこのエラーが出る場合、環境変数が設定されてません。以下を確認して下さい<ul id="content_block_70" class="list-1">
+<li>/home/&lt;Ubuntuのユーザー名&gt; にある .bashrc、.profileに以下が記述されているか</li>
+</ul>
+<pre id="content_block_71" class="BOX">
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+</pre>
+<ul id="content_block_72" class="list-1">
+<li>記述されている場合、wslの誤作動の可能性があります。(稀に .bashrcを何故か読み込まない現象が出る)</li>
+</ul>
+.bash_profile を作成しましょう<br>
+/home/&lt;Ubuntuのユーザー名&gt;/.bash_profile (無い場合は新規作成)<br>
+<pre id="content_block_73" class="BOX">
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+if [[ -f ~/.bashrc ]] ; then
+    . ~/.bashrc
+fi
+</pre>
+バッチファイルを動かせば生成できるようになっているはずです<br>
+<br>
+</div></div><div id="content_block_75" class="wiki-section-3"><div class="title-3"><h5 id="content_2_12_5">生成した絵に直でアクセスしたいンゴ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_12_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_75-body" class="wiki-section-body-3">
+WebUIのSettingタブで以下のように設定しましょう<br>
+(以下の例はWindowsの C:\stable-diffusion-webui-automatic1111\outputs\ の下にフォルダ分けしてファイルを置きたい場合)<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/16PjLJzYTa.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/16PjLJzYTa.png" border="0"></a><br>
+</div></div><div id="content_block_77" class="wiki-section-3"><div class="title-3"><h5 id="content_2_12_6">Windows版と同じようにフォルダアイコンからエクスプローラーを開きたいンゴ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_12_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_77-body" class="wiki-section-body-3">
+<del>本体改造の必要があります</del><br>
+<br>
+1111本体にマージされました。<br>
+<br>
+wsl-open をインストール<br>
+<pre id="content_block_78" class="BOX">
+sudo apt-get install -yqq npm
+sudo npm install -g wsl-open
+</pre>
+<br>
+</div></div><div id="content_block_80" class="wiki-section-2"><div class="title-2"><h4 id="content_2_13">参考サイト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_80-body" class="wiki-section-body-2">
+<a href="https://premirea.jp/article/wsl2-stable-diffusion-web-ui" class="outlink">https://premirea.jp/article/wsl2-stable-diffusion-...</a><br>
+<a href="https://qiita.com/SwitchBlade/items/cac2da388906b6486d69" class="outlink">https://qiita.com/SwitchBlade/items/cac2da388906b6...</a><br>
+<a href="https://pythonlinks.python.jp/ja/index.html" class="outlink">https://pythonlinks.python.jp/ja/index.html</a><br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+</div></div><div id="content_block_82" class="wiki-section-2"><div class="title-2"><h4 id="content_2_14">WSL2のちょっとした補足 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_82-body" class="wiki-section-body-2">
+Linux単体では陥らないようなWSL2固有のもろもろのメモ<ul id="content_block_83" class="list-1">
+<li>Q:ファイル消してもディスクの容量減らない
+<ul class="list-2">
+<li>A:「wsl2 ディスクサイズ 減らす」とかでググれ、中のファイルを消してもディストリ格納してる仮想ディスクは勝手には縮まない。仮想ディスクファイルの格納場所もググれ。ちょこちょこ書くには内容が長すぎる</li>
+</ul>
+</li>
+<li>Q:WSL2側がメモリを食いすぎるorWSL2にメモリを使わせたい
+<ul class="list-2">
+<li>A:全部のWSL2に適用したいなら「C:\Users\{ユーザー名}\.wslconfig」、指定のディストロだけメモリ量指定したいならディストリの中で「/etc/wsl.conf」に以下の内容をかけ</li>
+</ul>
+</li>
+</ul>
+<pre id="content_block_84" class="BOX">
+[wsl2]
+memory=(お前が指定したいメモリサイズ)GB
+</pre>
+<ul id="content_block_85" class="list-1">
+<li>Q:WSL2のメモリ足りないからWSL2に多めに指定したらWindows側のメモリを使ってない時まで取られる
+<ul class="list-2">
+<li>A:定期的に「sudo sh -c "echo 3 &gt;'/proc/sys/vm/drop_caches' &amp;&amp; swapoff -a &amp;&amp; swapon -a"」でもやるスクリプトでも書いとけ。毎分cronでおとすんならこう</li>
+</ul>
+</li>
+</ul>
+<pre id="content_block_86" class="BOX">
+crontab -eとかで起動して
+* * * * * sh -c "echo 3 &gt;'/proc/sys/vm/drop_caches' &amp;&amp; swapoff -a &amp;&amp; swapon -a"
+</pre>
+<ul id="content_block_87" class="list-1">
+<li>Q:そもそもcronもsystemd.timerタイマーも起動してないンゴ…
+<ul class="list-2">
+<li>上で書いたメモリと同じように「.wslconfig」か「wsl.conf」でこう書いてsystemd起動しとけ。ベータらしいから副作用とかあっても知らん</li>
+</ul>
+</li>
+</ul>
+<pre id="content_block_88" class="BOX">
+[boot]
+systemd=true
+</pre>
+<ul id="content_block_89" class="list-1">
+<li>Q:ネットワークドライブが見えないンゴ…
+<ul class="list-2">
+<li>A:一時的なら「mount -t drvfs {デバイス名} {マウントポイント}」、毎回起動したい(NASに画像出力するなど)場合は/etc/fstabに下記のように書いとけ</li>
+</ul>
+</li>
+</ul>
+<pre id="content_block_90" class="BOX">
+\\{NASのIPとか}\{残りのパスとか}   /mnt/{マウントに使う他と被らない任意の名前}        drvfs   defaults       0 0
+</pre>
+</div></div><div id="content_block_92" class="wiki-section-2"><div class="title-2"><h4 id="content_2_15"> やってみた(2022-12-10) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_92-body" class="wiki-section-body-2">
+個人的な意見としてはWSL2未経験かつLinux未経験者にはお勧めできない。<br>
+トラブルを自力解決できる程度の能力があることが望ましい。<br>
+<div id="content_block_93">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_93-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_93-inside" class="toggle-display">
+インストールは成功。生成は出来る。学習は困難。<br>
+Windows 10 22H2<br>
+RTX 2070<br>
+所要時間 2時間ちょい<br>
+メモリ32GB インストール中に16GBくらい使ってた<br>
+SSDは45.7GB埋まった(C:\Users\****\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu_****\LocalState\ext4.vhdx)<br>
+<br>
+ハローアスカ<ul id="content_block_94" class="list-1">
+<li> Windows 42.89</li>
+<li> WSL2 42.43</li>
+<li> WSL2+opt-channelslast 39.73</li>
+</ul>
+<br>
+コマンドプロンプトを管理者権限で起動して以下を実行<br>
+<pre id="content_block_95" class="BOX">
+wsl --install
+</pre>
+再起動を要求されるので再起動する<br>
+<br>
+再起動後、「Installing, this may take a few minutes...」という窓が出て、<br>
+Ubuntu 22.04 が勝手にインストールされる。<br>
+ユーザー名、パスワードの設定を要求されるので入力する。<br>
+<br>
+まずはrootになる。ユーザーのパスワードを聞かれるので入力する。<br>
+<pre id="content_block_96" class="BOX">
+sudo su -
+</pre>
+<br>
+一応、一行ずつ実行してエラーが無いか出力を確認する。<br>
+<pre id="content_block_97" class="BOX">
+apt update
+apt upgrade -y
+apt install -y build-essential libbz2-dev libdb-dev libreadline-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libsqlite3-dev libssl-dev zlib1g-dev uuid-dev tk-dev
+</pre>
+<br>
+pythonは確かに3.10.6<br>
+<pre id="content_block_98" class="BOX">
+python3 -V
+</pre>
+<br>
+妥協しても良かったけどせっかくなので入れておく。<br>
+<pre id="content_block_99" class="BOX">
+wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tar.xz
+tar xJf Python-3.10.9.tar.xz
+cd Python-3.10.9
+./configure
+make
+make install
+</pre>
+<br>
+終わったらsuを抜ける。<br>
+<pre id="content_block_100" class="BOX">
+ exit
+</pre>
+<br>
+libgl1はインストールする必要が無さそう。<blockquote id="content_block_101">
+apt install libgl1
+</blockquote>
+Reading package lists... Done<br>
+Building dependency tree... Done<br>
+Reading state information... Done<br>
+libgl1 is already the newest version (1.4.0-1).<br>
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.<br>
+<br>
+pythonは確かに3.10.9になった<br>
+<pre id="content_block_102" class="BOX">
+python3 -V
+</pre>
+<br>
+一度1111のインストールを実行して空のディレクトリを作成する(結構待たされる)<br>
+<pre id="content_block_103" class="BOX">
+bash &lt;(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)
+</pre>
+エラーで終わればいい。起動してしまったらCtrl-Cで落とす。<br>
+<br>
+エクスプローラーで以下の場所を開いて ckpt を置く<br>
+<pre id="content_block_104" class="BOX">
+\\wsl$\Ubuntu-22.04\home\&lt;Ubuntuのユーザー名&gt;\stable-diffusion-webui\models\Stable-diffusion
+</pre>
+<br>
+<a href="https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&amp;target_arch=x86_64&amp;Distribution=WSL-Ubuntu&amp;target_version=2.0&amp;target_type=deb_local" class="outlink">https://developer.nvidia.com/cuda-11-8-0-download-...</a><br>
+の「Download Installer for Linux WSL-Ubuntu 2.0 x86_64」- 「Base Installer」 に書いてあるコマンドを実行する<br>
+コピペしたら改行が潰れてイラッとする。<br>
+結構待たされる。<br>
+次の行でエラーが出る。<blockquote id="content_block_105">
+sudo dpkg -i cuda-repo-wsl-ubuntu-11-8-local_11.8.0-1_amd64.deb
+</blockquote>
+dpkg: error: unknown option -<br>
+このエラーはコマンドを手で打ち直せば動く。(たぶんどこかのハイフンの文字コードが変)<br>
+<br>
+suして作業したら以下のエラーが出たので仕方なくユーザーで作業した。<br>
+Reading package lists... Done<br>
+Building dependency tree... Done<br>
+Reading state information... Done<br>
+E: Unable to locate package cuda<br>
+<br>
+cudnn 8.6.0を入れる。<br>
+この作業はnvidiaにユーザー登録が必要なため、コマンドで完結できない。<br>
+ダウンロードしたファイルは、<br>
+\\wsl$\Ubuntu\root<br>
+に置いた。<br>
+<pre id="content_block_106" class="BOX">
+ sudo su -
+ dpkg -i cudnn-local-repo-ubuntu2204-8.6.0.163_1.0-1_amd64.deb
+ cp /var/cudnn-local-repo-ubuntu2204-8.6.0.163/cudnn-local-FAED14DD-keyring.gpg /usr/share/keyrings/
+ apt -y update
+ apt install libcudnn8
+ apt install libcudnn8-dev
+</pre>
+<br>
+suを抜ける<br>
+<pre id="content_block_107" class="BOX">
+exit
+</pre>
+<br>
+その後/home/&lt;Ubuntuのユーザー名&gt; にある .bashrc を開く<br>
+<pre id="content_block_108" class="BOX">
+vi .bashrc
+</pre>
+たぶんLinuxわからん人は \\wsl$\Ubuntu\home\&lt;Ubuntuのユーザー名&gt;\.bashrc をメモ帳で開くのがいい。<br>
+先頭に以下を書き加える<br>
+<pre id="content_block_109" class="BOX">
+ export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+</pre>
+<br>
+書き加えたら以下コマンド実行<br>
+<pre id="content_block_110" class="BOX">
+source .bashrc
+</pre>
+<br>
+xformersのコンパイル(結構待たされる)<br>
+<pre id="content_block_111" class="BOX">
+cd ~/stable-diffusion-webui
+source ./venv/bin/activate
+cd repositories
+git clone https://github.com/facebookresearch/xformers.git
+cd xformers
+git submodule update --init --recursive
+pip install -r requirements.txt
+pip install -e .
+</pre>
+<br>
+tritonをインストール<br>
+<pre id="content_block_112" class="BOX">
+pip install triton
+</pre>
+<br>
+venvを抜ける<br>
+<pre id="content_block_113" class="BOX">
+deactivate
+</pre>
+<br>
+\\wsl$\Ubuntu\home\&lt;Ubuntuのユーザー名&gt;\stable-diffusion-webui\webui-user.sh メモ帳で開く<br>
+以下の行のコメントアウトを外してパラメータを追記する(お好みで)<br>
+<pre id="content_block_114" class="BOX">
+# Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
+export COMMANDLINE_ARGS="--xformers --opt-channelslast --no-half-vae"
+</pre>
+<br>
+バッチファイル start_1111_wsl2.bat を作成して好きなところに置く<br>
+<pre id="content_block_115" class="BOX">
+wsl cd /home/&lt;Ubuntuのユーザー名&gt;/stable-diffusion-webui; bash webui.sh
+pause
+</pre>
+<br>
+Windows側で  <a href="http://127.0.0.1:7860" class="outlink">http://127.0.0.1:7860</a> にアクセスできることを確認。<br>
+<br>
+生成でエラーが出た<br>
+Could not load library libcudnn_cnn_infer.so.8. Error: libcuda.so: cannot open shared object file: No such file or directory<br>
+Please make sure libcudnn_cnn_infer.so.8 is in your library path!<br>
+<pre id="content_block_116" class="BOX">
+sudo ln -s /usr/lib/wsl/lib/libcuda.so.1 /usr/local/cuda/lib64/libcuda.so
+</pre>
+<br>
+WSLを再起動する<br>
+<pre id="content_block_117" class="BOX">
+wsl.exe --shutdown
+</pre>
+<br>
+start_1111_wsl2.bat を起動して、今度こそ正常動作を確認した。<br>
+<br>
+diffusers: unknown<br>
+torch: 1.12.1+cu113<br>
+torchvision: 0.13.1+cu113<br>
+transformers: 4.19.2<br>
+xformers:  0.0.15.dev0+affe4da.d20221210<br>
+<br>
+バージョンを上げてみる<br>
+<pre id="content_block_118" class="BOX">
+~/stable-diffusion-webui/venv/bin/pip3 install --upgrade torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+</pre>
+<br>
+diffusers: unknown<br>
+torch: 1.13.0+cu116<br>
+torchvision: 0.14.0+cu116<br>
+transformers: 4.19.2<br>
+xformers:  0.0.15.dev0+affe4da.d20221210<br>
+<br>
+生成が動かなくなった。<br>
+RuntimeError: No such operator xformers::efficient_attention_forward_cutlass - did you forget to build xformers with `python setup.py develop`?<br>
+<br>
+これっぽい。現状未解決。<br>
+<a href="https://github.com/TheLastBen/fast-stable-diffusion/issues/904" class="outlink">https://github.com/TheLastBen/fast-stable-diffusio...</a><br>
+<br>
+このアップグレードが出来ないとDreamboothが動かないはずなので、<br>
+現状WSL2化によって学習速度の向上を図るのは困難と結論付ける。
+</div>
+</div>
+</div></div><div id="content_block_121" class="wiki-section-2"><div class="title-2"><h4 id="content_2_16"> やってみた２(2022-12-17) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001242&amp;part=content_2_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_121-body" class="wiki-section-body-2">
+要所でWSL環境のバックアップを取りつつ実施<br>
+所要時間90分程<br>
+<div id="content_block_122">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_122-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_122-inside" class="toggle-display">
+Windows 11 22H2<br>
+RTX 3090<br>
+所要時間90分程（バックアップ時間含む）<br>
+<br>
+ハローアスカ<br>
+<ul id="content_block_123" class="list-1">
+<li> Windows 21.65</li>
+<li> WSL2+opt-channelslast 17.51</li>
+</ul>
+<br>
+<div id="content_block_124" class="wiki-section-3"><div class="title-3"><h5>1．WSLのインストール(PowerShell操作)</h5></div>
+<div id="content_block_124-body" class="wiki-section-body-3">
+<ul id="content_block_125" class="list-1">
+<li>WSL2 のセットアップ</li>
+<li>Ubuntu 22.04 をインストール</li>
+<li>Ubuntu 22.04 をセットアップ</li>
+</ul>
+</div></div><div id="content_block_127" class="wiki-section-3"><div class="title-3"><h5>2．上記実施後、環境のエクスポート(バックアップ)、ついでにWSL環境のドライブ変更(Cドライブ→Dドライブ)(PowerShell操作)</h5></div>
+<div id="content_block_127-body" class="wiki-section-body-3">
+<pre id="content_block_128" class="BOX">
+D:
+md WSL
+wsl --shutdown 
+wsl --export Ubuntu-22.04 D:\WSL\Ubuntu-22.04.tar
+</pre>
+<br>
+現在のUbuntuを一旦削除(PowerShell操作)<br>
+<pre id="content_block_129" class="BOX">
+wsl --unregister Ubuntu-22.04
+</pre>
+<br>
+DドライブにUbuntuをインポート(復元)(PowerShell操作)<br>
+<pre id="content_block_130" class="BOX">
+wsl --import Ubuntu-22.04 D:\WSL\Ubuntu-22.04 D:\WSL\Ubuntu-22.04.tar --version 2
+</pre>
+<br>
+ログインユーザーが強制的にrootになるので、作成したユーザに変更(レジストリ操作)<br>
+PowerShellよりregeditを起動<br>
+<pre id="content_block_131" class="BOX">
+regedit
+</pre>
+・コンピューター\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\ の中からUbuntu22.04が入っているキーを探す<br>
+DefaultUid を「0」から10進数で「1000」(16進数で「3e8」)に変更<br>
+WindowsターミナルからUbuntu22.04を起動し、ユーザーが作成したものになっている事を確認<br>
+</div></div><div id="content_block_133" class="wiki-section-3"><div class="title-3"><h5>3．環境構築(Ubuntu操作)</h5></div>
+<div id="content_block_133-body" class="wiki-section-body-3">
+<ul id="content_block_134" class="list-1">
+<li>Pythonのアップデート</li>
+</ul>
+Pythonのインストールは10分程かかる<br>
+</div></div><div id="content_block_136" class="wiki-section-3"><div class="title-3"><h5>4．StableDiffusionのインストール(Ubuntu操作)</h5></div>
+<div id="content_block_136-body" class="wiki-section-body-3">
+<ul id="content_block_137" class="list-1">
+<li>AUTOMATIC WebUIのインストール</li>
+<li>ckptなど置く</li>
+<li>CUDAのインストール</li>
+<li>cuDNN のインストール</li>
+</ul>
+順番に実施<br>
+.bashrcの書き換えはWindows側からVS Codeで書き換え<br>
+</div></div><div id="content_block_139" class="wiki-section-3"><div class="title-3"><h5>5．xformersのビルド(Ubuntu操作)</h5></div>
+<div id="content_block_139-body" class="wiki-section-body-3">
+4,50分掛かるので気長に待つ<br>
+</div></div><div id="content_block_141" class="wiki-section-3"><div class="title-3"><h5>6．xformers有効化とWebUI起動(Ubuntu操作)</h5></div>
+<div id="content_block_141-body" class="wiki-section-body-3">
+起動及びイラスト作成の動作確認実施<br>
+</div></div><div id="content_block_143" class="wiki-section-3"><div class="title-3"><h5>7．WebUIが正常動作する事を確認した上で、環境をバックアップする(PowerShell操作)</h5></div>
+<div id="content_block_143-body" class="wiki-section-body-3">
+<pre id="content_block_144" class="BOX">
+wsl --shutdown
+wsl --export Ubuntu-22.04 D:\WSL\Ubuntu-22.04_WebUI_Install.tar
+</pre>
+</div></div><div id="content_block_146" class="wiki-section-3"><div class="title-3"><h5>8.各種フォルダをWindows側に作成(Ubuntu操作)</h5></div>
+<div id="content_block_146-body" class="wiki-section-body-3">
+Windows版WebUIをインストールしていたので、必要フォルダをWindows版と共通にする<br>
+対象は「models・embeddings・outputs・textual_inversion」フォルダ<br>
+<br>
+Ubuntuを起動し<br>
+<pre id="content_block_147" class="BOX">
+cd /home/&lt;作成したユーザーアカウント&gt;/stable-diffusion-webui
+mv models models_
+ln -s /mnt/d/stable-diffusion-webui/models models
+mv embeddings embeddings_
+ln -s /mnt/d/stable-diffusion-webui/embeddings embeddings
+mv outputs outputs_
+ln -s /mnt/d/stable-diffusion-webui/outputs outputs
+mv textual_inversion textual_inversion_
+ln -s /mnt/d/stable-diffusion-webui/textual_inversion textual_inversion
+</pre>
+mvコマンドでリネーム(正確にはディレクトリ移動だが)、lnコマンドでシンボリックリンクを貼る<br>
+「/mnt/d/」部はWindows版WebUIのインストール場所に合わせる<br>
+<br>
+終わったら /stable-diffusion-webui からWebUIを起動し、イラスト作成の動作確認実施<br>
+</div></div><div id="content_block_149" class="wiki-section-3"><div class="title-3"><h5>9．最後の環境をバックアップする(PowerShell操作)</h5></div>
+<div id="content_block_149-body" class="wiki-section-body-3">
+<pre id="content_block_150" class="BOX">
+wsl --shutdown
+wsl --export Ubuntu-22.04 D:\WSL\Ubuntu-22.04_WebUI_Install_finished.tar
+</pre>
+</div></div><div id="content_block_152" class="wiki-section-3"><div class="title-3"><h5>10．デスクトップに起動用バッチファイルを作成して終了</h5></div>
+<div id="content_block_152-body" class="wiki-section-body-3">
+</div></div><div id="content_block_154" class="wiki-section-3"><div class="title-3"><h5>雑感</h5></div>
+<div id="content_block_154-body" class="wiki-section-body-3">
+手順通りにやれば詰まる所は無かった<br>
+またエラーが出た場合でも、2の手順で取ったバックアップをリストアする事で綺麗な環境からやり直せるので安心感が高い<br>
+<br>
+TI、HB、DBの学習に関しては、特に問題無し<br>
+注意点があるとすれば、素材フォルダ等の必要フォルダの指定の方法がUbuntu側から見たpathになる為<br>
+D:\stable-diffusion-webui\training　フォルダを指定する場合は<br>
+/mnt/d/stable-diffusion-webui/training　と指定する必要がある<br>
+<br>
+modelsやoutputsフォルダを外出しにしているので、一度環境を作ってしまえば再インストールも容易<br>
+セットアップ時に何かエラーが出た場合は、あれこれ弄る前にリストアしてやり直す事をお勧めする
+</div></div>
+</div>
+</div>
+</div></div>
+</div>

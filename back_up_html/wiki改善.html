@@ -1,0 +1,50 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> リポジトリ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4978578&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+リポジトリを作ったで<br>
+バグ報告、提案、PRはここによろしくな<br>
+<a href="https://github.com/naisd5ch/novel-ai-5ch-wiki-js" class="outlink">https://github.com/naisd5ch/novel-ai-5ch-wiki-js</a><br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> プロンプト簡単追加機能 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4978578&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+プロンプトのテーブルのヘッダの下に入力欄が出て、編集画面にいかずに追加できるようにしたで<br>
+'(','[','|','\n'をエスケープしてくれるからseesaa wikiの記法に巻き込まれて表記が崩れることもなくなるで<br>
+'nanj_prompt_table'<br>
+sortとかeditとか指定する所にこのクラスを追加するだけで大丈夫や<br>
+'サンプル'というヘッダ名のとこは画像扱いになるで<br>
+将来的には画像アップロード機能もつけるつもりや<br>
+<br>
+ついでにこのクラス以下のimgの最大サイズを(240px, 240px)になるようにもしてあるで<br>
+</div></div><div id="content_block_5" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> プロンプト変換機能 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4978578&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_5-body" class="wiki-section-body-1">
+ページ内にこう書けばプロンプト変換機能がさしこまれるで。<br>
+下のハイフンも必須や<br>
+クラスを指定する方法がtable以外に知らないからこうなってるけど、<br>
+ちゃんとした書き方を知っている人はPR頼むで<br>
+<pre id="content_block_6" class="BOX">
+{| class="nanj_prompt_convert"
+|}
+----------------------
+</pre>
+</div></div><div id="content_block_8" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 壊れた時の直し方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4978578&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_8-body" class="wiki-section-body-1">
+<br>
+簡単追加機能がいなくなった時はテーブル構造がおかしくなっている可能性が高いです<br>
+<br>
+ヘッダーが存在するか<br>
+空白行がないか<br>
+'|'で囲われていない行がないか<br>
+テーブル全体が{|~|}で囲われているか<br>
+をご確認下さい<br>
+</div></div><div id="content_block_10" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> TODO <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4978578&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_10-body" class="wiki-section-body-1">
+<br>
+<ol id="content_block_11" class="list-1">
+<li> <del>プロンプトの入力の簡略化</del>(Done✨)</li>
+<li> プロンプトテーブルを見やすくする</li>
+<li> 画像のアップロードをやりやすくする　//Wiki編集方法に操作手順は記載済み</li>
+<li> <del>githubとかで管理</del>(Done✨)</li>
+<li> <del>プロンプト変換機能</del>(Done✨)</li>
+</ol>
+</div></div>
+</div>

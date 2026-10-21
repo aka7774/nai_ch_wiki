@@ -1,0 +1,42 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> StepとScaleについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4981713&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+Step(Sampling Steps)はノイズ除去(画像の書き込み)を行う回数。Step数に比例して書き込み量が増えるようだが、ある程度のところで飽和傾向にある。<br>
+Scale(CFG Scale)はどの程度プロンプトに従うかの度合いを決める。高すぎると無理に従おうとして破綻しやすい。低いほど創造的な結果になる。<br>
+<br>
+値を変えると出力される画像が変わるため、比較画像を作ってみた。<br>
+<br>
+step数増やすと演算時間が増えるので、NovelAIの初期値28は<br>
+品質と演算時間のバランスをとったものと思われる。<br>
+<br>
+<br>
+scaleは増やしても演算時間は増えないけど、増やしすぎてもダメで、<br>
+ちょうどいい塩梅がNovelAIのデフォルトの11あたりなんかもしれないで。しらんけど。<br>
+あえてscaleを下げて水彩画風の柔らかい画質にするのも流行っとるな。<br>
+<br>
+NovelAIのデフォルト値は<br>
+step : 28.0<br>
+scale : 11.0 (サービス開始初期は12.0だった)<br>
+<br>
+以下共通条件<blockquote id="content_block_2">
+ seed : 1<br>
+ Prompt : masterpiece,best quality,<br>
+ NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
+</blockquote>
+</div></div><div id="content_block_4" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> step違い <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4981713&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_4-body" class="wiki-section-body-2">
+size : 512*768<br>
+scale : 12.0<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/cqiku7_oVz.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/cqiku7_oVz.png" border="0"></a><br>
+</div></div><div id="content_block_6" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> scale違い <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4981713&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_6-body" class="wiki-section-body-2">
+size : 512*768<br>
+step : 28.0<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/AjewjDAzKu.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/AjewjDAzKu.jpg" border="0"></a><br>
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_1_3"> マトリクス <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4981713&amp;part=content_1_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+size : 256 * 384<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/oDWlFVtTbq.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/oDWlFVtTbq.png" border="0"></a>
+</div></div>
+</div>

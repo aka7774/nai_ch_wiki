@@ -1,0 +1,2771 @@
+なんJNVA部★709
+
+1 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった  (ﾜｯﾁｮｲ 3701-sDml) 2026/10/19(月) 21:07:43.27
+ !extend:default:vvvvv:1000:512:donguri=0/3: <br> !extend:default:vvvvv:1000:512:donguri=0/3: <br> スレ立てのときは↑の!extend:default:vvvvv:1000:512:donguri=0/3:を3行ぐらいに増やしてな <br> なんJNVA部Wiki: https://seesaawiki.jp/nai_ch/d/ <br> Danbooru謹製タグ辞典: https://danbooru.donmai.us/posts?tags=tag_groups <br> 避難所: http://bbs.jpnkn.com/test/read.cgi/JNVA/1696574746/ <br> 避難所: ぷにぷにNVA部★33 http://bbs.punipuni.eu/test/read.cgi/leafeon/1788017725/ <br> ※前スレ <br> なんJNVA部★708 <br> https://fate.5ch.io/test/read.cgi/liveuranus/1792248009/ VIPQ2_EXTDAT: default:vvvvv:1000:512:donguri=0/3: EXT was configured 
+
+2 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/19(月) 21:08:08.46
+ ■アップローダーについて <br> 「megaの復号キーが分からん」…「#」以下も含めたURL全体をコピペして飛べ <br> https://imgur.com/…メタデータは削除される。自分が上げた画像を一覧したい（要ログイン）ときに。エロNG。webp非対応 <br> https://ul.h3z.jp/…エロOK。ただし性器を見せびらかすような表現は修正ありでもNG。jpgのEXIFは削除されるがwebpのメタデータは削除されない <br> https://catbox.moe/…2026年4月24日ごろ、litterも含めたURLが5chのNGワードに登録された。どうしてもcatboxのURLを貼りたいときはhttps://cat○box.moe/&#65374;などと書く。メタデータ入りの画像を貼りたい、自分が上げた画像を一覧したい（要ログイン）ときに。エロや画像以外もOK。やや不安定で閲覧やログインできない時がある <br> https://imgbb.com/…メタデータ入りの画像を貼りたい、自分が上げた画像を一覧したい（要ログイン）ときに。エロNGだがある程度までは黙認（ただしアカウントBANに事前の警告はない）。画像のURLにはアップした画像のファイル名がそのまま使われるが、URL末尾のファイル名の部分は適当な文字列に変更してもかまわない <br> https://tadaup.jp/…メタデータはアップ後少し経つと削除される。アップロードした画像や動画、音声などのファイルは1時間／1日／1週間で削除される（アップ時に選択）。削除されない「イラスト保管庫」はイラスト専用。ユーザー登録すると自分が上げた画像を一覧できる。18禁画像を上げるとき用のチェックボックスがある <br> ※NovelAIの画像生成情報はPNGのメタデータだけでなくアルファチャンネルにも埋め込まれており、imgurに上げてもアルファチャンネルに埋め込まれた生成情報は残る <br> ■FLUX.1について https://seesaawiki.jp/nai_ch/d/FLUX1tips <br> ■Illustrious-XL-v0.1について https://seesaawiki.jp/nai_ch/d/illustrious_xl_01tips <br> ■animaについて https://seesaawiki.jp/nai_ch/d/anima <br> ■MiniMax H3について https://seesaawiki.jp/nai_ch/d/MiniMaxH3tips 
+
+3 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/19(月) 21:08:31.95
+ ■その他 <br> Q.名前欄の「警備員[Lv.0][新芽]」みたいな表示はなに?　→　「どんぐり」。現在は人を識別できることがある以上の意味はない。時間経過と書き込み数でレベルが上がる（ https://donguri.5ch.io/faq 、 https://donguri.wikiru.jp/ も参照）。スマホや回線によってはよく0に戻る。 https://seesaawiki.jp/nai_ch/d/donguri を読んでどんぐりログインし、どんぐりネームを変更するとレベルが下がらなくなる <br> Q.NovelAIの話題が少ないんだけど　→　&gt;&gt;1のWikiにある「雑談スレ」にユーザーが集まっている。CG板にもNovelAIスレがある https://mevius.5ch.io/test/read.cgi/cg/1792104578/ <br> Q.ComfyUIのインストール方法がたくさんあってどれがいいのかわからない　→　https://note.com/hirorohi03/n/n1aa02e7ce276 を参照 <br> Q.EasyWan22ってどう?　→　推奨しない。メンテされなくなってしばらく経ち、現在はインストールに失敗する <br> Q. この低スペックでMiniMax H3は動くの?　→　VRAM8GB/RAM16GBでも遅いけど動いたという報告がある。とりあえずやってみなはれ <br> Q.&#127880;ってなに?　→　https://seesaawiki.jp/nai_ch/d/%b8%c5%bb%f6%b5%ad#content_4_136 を参照 <br> Q.部族語ってなに?　→　danbooruタグを並べたようなプロンプトのこと。 https://fate.5ch.io/test/read.cgi/liveuranus/1755257819/970 を参照 
+
+4 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 2749-hgbO) 2026/10/19(月) 21:10:55.84
+ サンイチ葬送 <br> https://i.imgur.com/6dWqmLD.jpeg 
+
+5 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ ee73-phUI) 2026/10/19(月) 21:11:52.00
+ さんいち 
+
+6 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ ca59-pQV7) 2026/10/19(月) 21:12:25.12
+ &gt;&gt;4 <br> はい事実陳列罪 
+
+7 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f4e-V/wr) 2026/10/19(月) 21:14:48.81
+ サンイチ <br> BBoxって頭身弄れるンゴね <br> 今迄aged up/aged downやchibi使っとったわ <br> https://tadaup.jp/Af4QYeao.jpg 
+
+8 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 0fe0-O14r) 2026/10/19(月) 21:23:54.52
+ さんいち 
+
+9 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 5bef-TGuJ) 2026/10/19(月) 21:26:35.10
+ mossはポン出しで超優秀やな <br>  <br> https://i.imgur.com/cX5YaPr.jpeg 
+
+10 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16][新]</span> (ﾜｯﾁｮｲ 6a7d-9/vV) 2026/10/19(月) 21:28:08.32
+ moss使いこなせない豚はただの禿げたブタだ 
+
+11 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.1][新芽]</span> (ﾜｯﾁｮｲ 0f4e-V/wr) 2026/10/19(月) 21:28:55.41
+ また髪の話ンゴ… 
+
+12 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.86][SR武][SR防][苗]</span> (ﾜｯﾁｮｲ 2ab3-zxZl) 2026/10/19(月) 21:31:24.19
+ サンイチ <br> https://test-up.pages.dev/tlfm2q.webp <br> https://test-up.pages.dev/12xx7v.webp 
+
+13  <span style="color:green;">警備員[Lv.163][苗]</span> (ﾜｯﾁｮｲ beb0-bv9K) 2026/10/19(月) 21:34:07.76
+ サンイチ <br>  <br> Wikiにmoss-imageのページができたので、次スレでは&gt;&gt;2の「FLUX.1について」の行を削除して、末尾に <br>  <br> ■MOSS-Imageについて https://seesaawiki.jp/nai_ch/d/moss-image <br>  <br> を追加しよう 
+
+14  <span style="color:green;">警備員[Lv.168][UR武][SSR防][苗]</span> (ﾜｯﾁｮｲ a3b6-wy1c) 2026/10/19(月) 21:34:30.60
+ さんいち <br> https://i.ibb.co/nqTXccgF/1019-moss.jpg 
+
+15 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a0d-ojTY) 2026/10/19(月) 21:42:40.68
+ 何も浮かばなかったので凄く適当にサンイチ！ <br> https://tadaup.jp/AV5gkNR8.jpg 
+
+16 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 3f24-hgbO) 2026/10/19(月) 21:43:15.97
+ サンイチ <br> https://blobs-b2.civitai.com/file/blobs-managed-public/JX75T97BR22K9CB850DGDHE240?.png 
+
+17 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 0fe7-WNX/) 2026/10/19(月) 21:43:42.35
+ さんいち <br> https://tadaup.jp/AkVPCdzU.png 
+
+18 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ ee95-nC5b) 2026/10/19(月) 21:48:15.53
+ &gt;&gt;12 <br> なんかのあ先輩っぽい 
+
+19 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f77-d4L7) 2026/10/19(月) 21:50:27.91
+ sd-scriptsのmosslora学習やってみてるけどvramに収めても結構重いのねん <br> block swapでなくunslothのoffloadでもうちょっと速くなるかと思ってた 
+
+20 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/19(月) 21:50:42.52
+ サンイチンチン <br> 前スレであったわたシコシュチュ <br>  <br> https://tadaup.jp/AqrUfltx.jpg 
+
+21 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.345][SR武][SSR防][木]</span> (ﾜｯﾁｮｲ a3e3-QevX) 2026/10/19(月) 21:52:08.97
+ サンイチ <br> 無料チャッピーにmoss_image_t2i_bbox.jsonに画像参照できるような機能追加頼んだら即上限になった&#129402; 
+
+22 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ de68-2GjY) 2026/10/19(月) 21:54:23.97
+ サンイチ <br> https://tadaup.jp/AvjEewqt.webp 
+
+23  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0ff6-zLpW) 2026/10/19(月) 21:55:32.81
+ サンイチ <br> そこにあるだけで見た人の想像力を掻き立てるアイテム、というのがある <br> 例えばバケツとか <br> https://tadaup.jp/ArZYeHPn.png 
+
+24 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.345][SR武][SSR防][木]</span> (ﾜｯﾁｮｲ a3e3-QevX) 2026/10/19(月) 21:55:54.78
+ &gt;&gt;20 <br> こういうのでいいんだよこういうので 
+
+25 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.364][木]</span> (ﾜｯﾁｮｲ cb03-bv9K) 2026/10/19(月) 22:00:07.15
+ サンイチ <br>  <br> このBBoxエディタならNode2.0要らない <br> 生成した画像を背景に入れてくれる <br> 解像度もNode単体で指定できる <br> 直接Promptが出せる <br> https://github.com/yndear41/ComfyUI-MOSS-Layout-YDR <br>  <br> 難を言えば重なったBBoxの扱いに問題がちょっとある 
+
+26 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 1adc-+3Zs) 2026/10/19(月) 22:01:54.15
+ 前スレ&gt;&gt;748 <br> ぽん出しでこの汚らしいエロ台詞出せるなら、ふたなりクソレズ漫画作れそうでワクワクするな 
+
+27  <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 1adf-zz1J) 2026/10/19(月) 22:05:51.76
+ &gt;&gt;23 <br> バケツこんなにきれいに出るんか <br>  <br> バケツは良い……心を豊かにしてくれる…… 
+
+28  <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ bb85-WaZu) 2026/10/19(月) 22:09:16.91
+ サンイチ <br> https://tadaup.jp/AoTHqSjO.webp 
+
+29  <span style="color:green;">警備員[Lv.187][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/19(月) 22:11:04.61
+ サンイチ <br> https://i.ibb.co/k2Ngnxb1/img.jpg 
+
+30 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ｵｲｺﾗﾐﾈｵ MM0f-wy1c) 2026/10/19(月) 22:11:19.70
+ やっぱりmossだよねえ 
+
+31 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.70][苗]</span> (ﾜｯﾁｮｲ da10-JSxr) 2026/10/19(月) 22:13:05.94
+ さんいち <br> 8800文字/2300トークン入れても指示が安定するのはええね <br> https://tadaup.jp/AqBnkmdM.png 
+
+32  <span style="color:green;">警備員[Lv.162][SSR武][UR防][苗]</span> (ﾜｯﾁｮｲ bb10-+3Zs) 2026/10/19(月) 22:14:36.16
+ サンイチ <br> https://xxup.org/Y7tzs.jpg 
+
+33  <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ bb85-WaZu) 2026/10/19(月) 22:14:43.99
+ 句点がない&#128545; 
+
+34 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ee4b-nvAm) 2026/10/19(月) 22:15:28.08
+ animaとはなんだったのか… <br> 何のために産まれてきたのか… 
+
+35 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/19(月) 22:15:42.83
+ まだ検証や最適化は必要だと思ってるけどMOSSを触った感じだと、 <br> 部族語がそこそこ使えて調整しなくてもリアスに近い絵が出るのは大きいと思ってるわ 
+
+36 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 0f4e-V/wr) 2026/10/19(月) 22:16:28.22
+ SDXL時代が長すぎたンゴね 
+
+37 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ df7d-PAvg) 2026/10/19(月) 22:17:07.45
+ 一時的なもんかもしれんけど <br> うちのchatGPTから一時チャットを永続チャットにするボタンが消えた <br> 地味に不便 
+
+38 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ ce94-2GjY) 2026/10/19(月) 22:18:04.19
+ &#127880;最強モデルenema作るから待ってろ 
+
+39 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ eefc-j4Gm) 2026/10/19(月) 22:21:06.22
+ サンイチ <br> 衣装＋ポーズ参照lora <br>  <br> https://tadaup.jp/AUVI3JoQ.jpg 
+
+40 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 3f24-hgbO) 2026/10/19(月) 22:24:24.63
+ サンイチ <br> https://blobs-b2.civitai.com/file/blobs-managed-public/JW9CK9BS59NSYMXN7NPGYNX450?.png 
+
+41 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/19(月) 22:28:24.51
+ ええな <br> ワイも移行したくなってきたわ <br> ForgeNeoでもmossできるんか？ 
+
+42 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.49]</span> (ﾜｯﾁｮｲ 0b81-fDH0) 2026/10/19(月) 22:30:16.16
+ &gt;&gt;41 <br> まだ非公式だけどいけるで <br> BBOX拡張も入れられる 
+
+43 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ｵｲｺﾗﾐﾈｵ MM0f-wy1c) 2026/10/19(月) 22:31:19.63
+ mossに触れて最初はしっくりこなかったからワークフローをいじって8ステップloraを使ってとかやって <br> これで3060で1mpの一枚で10秒を切るぐらいになったからsdxlよりも早くなったし新しいモデルで前のものより早くなったのは初めてだな <br> https://tadaup.jp/AqzE9yVd.png 
+
+44 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/19(月) 22:36:23.81
+ &gt;&gt;42 <br> ほ&#65374;ん <br> &#128118;やから公式対応とmossLoRA設定テンプレが出るまで待つﾊﾞﾌﾞｩ 
+
+45 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.164][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/19(月) 22:41:55.79
+ 脳死で3時間回したLora成功したわ 
+
+46 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.345][SR武][SSR防][木]</span> (ﾜｯﾁｮｲ dac9-QevX) 2026/10/19(月) 22:42:44.50
+ 画像参照うまくいかないンゴ <br> https://tadaup.jp/AhJhno54.jpg 
+
+47 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f81-ojTY) 2026/10/19(月) 22:45:02.33
+ &gt;&gt;42 <br> NEOでBBOXも？ <br> どこでできるん？ 
+
+48 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.22]</span> (ﾜｯﾁｮｲ 3f82-bHJY) 2026/10/19(月) 22:45:52.42
+ &gt;&gt;34 <br> Animaがケフカみたいになっとる 
+
+49 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/19(月) 22:48:06.16
+ AnimaでDiTの有効性とか分かったのも事実やし <br> 1.5やPonyみたいなもんだろう 
+
+50 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f0b-ojTY) 2026/10/19(月) 22:49:17.31
+ サンイチ <br>  <br> https://tadaup.jp/AhnTZF6w.mp4 (※音量注意。エロなし注意) 
+
+51 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 1a0d-ojTY) 2026/10/19(月) 22:49:17.82
+ MOSSくんLoRA無しポン出しでここまでいけるのエライ <br> https://tadaup.jp/AspK4GDq.jpg 
+
+52 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.77][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ 1ae6-WNX/) 2026/10/19(月) 22:52:15.13
+ サンイチ <br> アカン…絵柄lora完成したら捗りすぎる　これでキャラがうろ覚えじゃなくなったら終わってまう <br> ただ40〜50stepは流石にキツくてturbo lora+12stepでやっとるんやけど　またいずれ発生しそうやな…プロンプトの効きが悪いぞに対してturbo使うなで返す流れ <br> https://tadaup.jp/AvApis1S.png <br> https://tadaup.jp/AhX9K2pM.png <br> https://tadaup.jp/AlEkA8Iw.png <br> https://tadaup.jp/AO6aNHfK.png 
+
+53 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f0a-wy1c) 2026/10/19(月) 22:52:34.21
+ &gt;&gt;19 <br> kohyaニキ曰く最適化とかも全然できてないらしいからしゃーない <br> ちなVRAM足りないようならblock_swapのほうがunsloth_offloadより速くなるで 
+
+54 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ 0f8c-phUI) 2026/10/19(月) 22:54:09.61
+ animaちゃんは犠牲になったのだ… 
+
+55 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2f54-hgbO) 2026/10/19(月) 22:56:33.34
+ mossって版権キャラ出せるん？ 
+
+56 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 3f45-hgbO) 2026/10/19(月) 22:58:46.12
+ 今日はanima要らない流れか 
+
+57 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 2749-hgbO) 2026/10/19(月) 23:00:40.02
+ 短い間だったけど楽しかった！ <br> https://i.imgur.com/b8JQWPO.jpeg 
+
+58 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.164][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/19(月) 23:02:15.55
+ mossが次の予定アニメモデルだから震える <br> 本番はこれからや 
+
+59 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 0b66-0nLi) 2026/10/19(月) 23:03:37.64
+ &gt;&gt;55 <br> 有名キャラは結構出る 
+
+60 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.21]</span> (ﾜｯﾁｮｲ ead6-hgbO) 2026/10/19(月) 23:05:55.10
+ &gt;&gt;34 <br> キャラクターや絵柄はAnima、自由度とオブジェクトの美麗さはMOSSやから現状では一長一短やと思ってるで 
+
+61 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ bea0-ieOP) 2026/10/19(月) 23:07:50.36
+ 画風LoRAがどれだけ簡単に作れるかワイにはそれが一番や <br> 今はひとまずアニメモデルまで待機 
+
+62 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.29]</span> (ﾜｯﾁｮｲ eed3-7d2B) 2026/10/19(月) 23:10:39.64
+ 待機いう奴は後々無理やで <br> なんせまた次に新しいのが出るからなガハハ 
+
+63 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fb2-c+wN) 2026/10/19(月) 23:11:10.94
+ ターボ待ち 
+
+64  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/19(月) 23:12:08.72
+ &gt;&gt;19 <br> そんなあなたにFizgig 
+
+65 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f52-oLG5) 2026/10/19(月) 23:16:09.73
+ MOSSが絵柄タグ対応したらワイ的ゲームエンドや 
+
+66 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ｵｲｺﾗﾐﾈｵ MM0f-m/EI) 2026/10/19(月) 23:16:12.98
+ 後はlora作りが成功すれば 
+
+67 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fde-ojTY) 2026/10/19(月) 23:16:32.57
+ &gt;&gt;31 <br> ポン出し？ローカルの進化もとまらんな 
+
+68 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f52-oLG5) 2026/10/19(月) 23:16:35.40
+ &gt;&gt;57 <br> 5か月なんだよなぁ…（1月30日） 
+
+69 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2f54-hgbO) 2026/10/19(月) 23:17:10.88
+ &gt;&gt;59 <br> へー <br> アニメキャラしか興味ないからマイナーキャラでもちゃんと出るなら移行したいな 
+
+70 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ eefc-j4Gm) 2026/10/19(月) 23:17:50.14
+ 絵柄loraは割と簡単に効く気がする 
+
+71  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/19(月) 23:18:01.75
+ 【悲報】MOSS-Imageで日本の古き良き伝統の体育倉庫が出ない 
+
+72 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fc6-zbLm) 2026/10/19(月) 23:20:32.09
+ サンイチ <br> https://i.imgur.com/Sz7AYQw.jpeg 
+
+73 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a4e-ob4S) 2026/10/19(月) 23:21:47.06
+ &gt;&gt;47 <br> 前スレの126 
+
+74 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a4e-ob4S) 2026/10/19(月) 23:23:40.02
+ &gt;&gt;68 <br> 今は10月だぞ 
+
+75 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ df7d-PAvg) 2026/10/19(月) 23:26:47.44
+ ワイRX9060XT+NeoでAnimaが使えるようになってまだ2ヶ月 
+
+76 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 0fe3-or1J) 2026/10/19(月) 23:27:45.61
+ &gt;&gt;69 <br> メイドアリスのメイド衣装のデザインが微妙に他のメイドブルアカキャラ混ざる感じで、キャラ名ポン出し性能はリアス相当かやや劣るって印象やな、自分は 
+
+77 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 0fad-SCI1) 2026/10/19(月) 23:42:08.34
+ &gt;&gt;52 <br> 漫画ニキか、当然MOSSに移行するわな 
+
+78 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 3fde-ojTY) 2026/10/19(月) 23:50:25.56
+ https://tadaup.jp/AxXg69L7.png <br> MOSSなんやが、片方三つ編みだと隠れている方の肩がやたらでかくなるんだがなんでだ？ 
+
+79 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.22]</span> (ﾜｯﾁｮｲ ead6-hgbO) 2026/10/19(月) 23:52:06.63
+ &gt;&gt;71 <br> こんな感じではあかんか <br> https://tadaup.jp/ASpRtO8y.png 
+
+80 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.164][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/19(月) 23:52:23.14
+ 漫画やばい <br> ボックス指定するだけで終わりだしな 
+
+81 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ df7d-PAvg) 2026/10/19(月) 23:54:08.38
+ 何故日本男児は体育倉庫にリビドーを感じるのか <br> ちなみにワイは古い小屋型バス停にリビドーを感じる 
+
+82 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 3f24-hgbO) 2026/10/19(月) 23:55:42.04
+ 雨に濡れた女学生がスケスケの服でバス待ってそう 
+
+83 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 2749-hgbO) 2026/10/20(火) 00:00:13.53
+ &gt;&gt;31 <br> ちゃんと漫画のフォーマットになっててすごい <br> 自然過ぎてスルーしてしまった 
+
+84 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 0fe3-or1J) 2026/10/20(火) 00:02:54.34
+ &gt;&gt;79 <br> うっお、チンチンに効くわぁ… 
+
+85 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 1adc-+3Zs) 2026/10/20(火) 00:03:13.65
+ &gt;&gt;31 <br> ポン出しでこんな綺麗に漫画台詞整ってるならヤバい 
+
+86 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.36]</span> (ﾜｯﾁｮｲ e601-9X42) 2026/10/20(火) 00:06:53.20
+ これはもうポン出汁革命だよ 
+
+87 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8]</span> (ｵｯﾍﾟｹ Sr33-4AeZ) 2026/10/20(火) 00:08:33.52
+ mossはsdscriptsがいい感じになったらやるか… <br> おもむろにwan2.2を始めたで <br> 結局smoothmix以上のモデルは無さそうやなこれ 
+
+88  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/20(火) 00:09:50.90
+ &gt;&gt;79 <br> 伝統的なステッチの入ったごわごわした白マットがいいんだよね 
+
+89 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.61][苗]</span> (ﾜｯﾁｮｲ aea2-hgbO) 2026/10/20(火) 00:14:58.54
+ ポン出師 あらわる 
+
+90 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 0f52-oLG5) 2026/10/20(火) 00:19:44.11
+ Ibのメアリーがbaseで出ないからアニメモデルが出るまでワイはAnimaとNAIv5に居残りや&#128557; <br> https://i.ibb.co/tTsTL3CQ/06e5b02639f4.png 
+
+91 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.248][苗]</span> (ﾜｯﾁｮｲ de0a-u6KG) 2026/10/20(火) 00:21:07.69
+ 出るキャラは長年（と言っても2年やが）かけてマージで醸成してきた <br> リアスがやっぱり頭一つ抜けて多いやね <br> ワイがメインで使ってるモデルは去年のやからまぁ1年マージし続けるとだいぶキャラ増える感じやな <br>  <br> AnimaもMossも1年かけてコミュニティで醸成していけばリアス並みに <br> キャラ増えるやろうけど少なくともAnimaはもう成長する可能性薄くなってしもたんがなぁ <br> いやまぁMossのアニメ版が出てくるまではまだAnimaメインで行きそうな気はしとるけど 
+
+92 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f68-+3Zs) 2026/10/20(火) 00:26:39.77
+ 果たしてBBOXを使ったものはポン出しと呼んで良いのであろうか <br> と思うワイなのであった 
+
+93 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.22]</span> (ﾜｯﾁｮｲ ead6-hgbO) 2026/10/20(火) 00:29:47.89
+ カツオ is bonitoなんやて <br> https://tadaup.jp/AVF5X8Lv.png 
+
+94 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f69-O/+2) 2026/10/20(火) 00:31:38.78
+ mossのlora作ってみたけど <br> int8convのbaseで作ったせいなのかSTEP数が足らないせいなのか分からんが <br> krea2のloraより学習がイマイチな感じがしたから <br> bf16のbase使ってSTEP数増やしたの仕掛けて今日は寝るぜ 
+
+95 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ df7d-PAvg) 2026/10/20(火) 00:37:26.49
+ 自動でふりがなを振るフォントっての面白そうだな <br> https://github.com/antfu/furifont <br> セリフ書きに使えそう 
+
+96 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ ee95-nC5b) 2026/10/20(火) 00:41:48.46
+ 膣内射精感謝で正しくふりがな振ってれるのかな？ 
+
+97 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f73-OwF2) 2026/10/20(火) 00:50:27.19
+ なんかMiniMaxがLLMでも1位になりそうらしい <br> https://x.com/chrisgpt/status/2112165229375508547 
+
+98  <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 1a42-56u3) 2026/10/20(火) 00:53:55.00
+ どうせanimaでもLora作らないとダメだしちょっとだけ試してみようかな 
+
+99 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ ae57-LSpf) 2026/10/20(火) 00:55:23.31
+ &gt;&gt;98 <br> やらんでええよ寝とけ 
+
+100 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/20(火) 00:55:50.09
+ &gt;&gt;97 <br> ん？ <br> コーディング性能もastraやopusより上なん？ 
+
+101 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.1][新芽]</span> (ﾜｯﾁｮｲ 0f73-OwF2) 2026/10/20(火) 00:59:22.95
+ &gt;&gt;100 <br> 公式あったわ <br> DeepSWEのコーディングだとAstra・Opus5 Max並みでDeepSeek v4.1 1017未満 <br>  <br> https://x.com/minimax_ai/status/2112152630617337952 
+
+102 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/20(火) 00:59:31.48
+ 今まで持て余してたcolabのリソースガンガン使えるわ 
+
+103 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/20(火) 01:04:13.45
+ やっぱり中国父さんはすごいや&#129395; 
+
+104 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.103][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ b7e7-neQj) 2026/10/20(火) 01:06:40.84
+ mossは用途ごとにシステムプロンプトだけ変えたWFを <br> 分けて使うのが良さげやね 
+
+105 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f73-kNJf) 2026/10/20(火) 01:09:52.51
+ サンイチ再掲 <br> みんな、オラにオクトーバーフェストを分けてくれ <br> https://ul.h3z.jp/ftySAI8k.png 
+
+106 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/20(火) 01:18:36.69
+ たまにはおばさんもええな 
+
+107 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ 6a8b-VDwl) 2026/10/20(火) 01:19:45.04
+ &gt;&gt;97 <br> SpaceBunnyの時に使ってたけどそこまで凄いイメージは無かったな <br> ステルスより改良されてたりするのかな 
+
+108 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.39][苗]</span> (ﾜｯﾁｮｲ 3f11-BI1j) 2026/10/20(火) 01:22:09.95
+ なんでや <br> おばさんは常にええやろ 
+
+109 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fb8-7aY3) 2026/10/20(火) 01:30:21.77
+ &gt;&gt;101 <br> ローカルでも使えるんけ？ 
+
+110 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 0f52-oLG5) 2026/10/20(火) 01:31:51.49
+ &gt;&gt;109 <br> 23日ウェイト公開や <br> エージェント用特化型っぽいな 
+
+111 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ f37d-HoYB) 2026/10/20(火) 01:37:52.61
+ 上のはおばさんちゃうやろ、お姉さんやろ <br> 本気のおばさんは スレ番120が見せてくれるはず 
+
+112 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.112][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/20(火) 01:38:41.88
+ ガチのロリコンだと12歳以上は老婆らしいな 
+
+113 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fbc-hgbO) 2026/10/20(火) 01:43:48.27
+ 正直LLMはベンチマークとか要らんからさっさと使わせろって思う 
+
+114 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ df7d-PAvg) 2026/10/20(火) 01:43:49.31
+ &gt;&gt;105 <br> 2023年7月に作ったSD1.5 <br> https://tadaup.jp/AQqwtCsY.jpg 
+
+115 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.112][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/20(火) 01:52:50.77
+ A1111の登場からまだ4年しか経ってないんやな･･･ <br> なんか体感12年くらいの気分だわ 
+
+116 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 3f24-hgbO) 2026/10/20(火) 02:20:52.99
+ fizgig, Kohya_lora_param_guiがおま環で動かなかったけどai-toolkitはなんとか動くな。ただcame実装ないから <br> - requirements.txtに&quot;came-pytorch==0.1.3&quot;足す <br> - ui/src/app/jobs/new/SimpleJob.tsxに&quot;{ value: 'came', label: 'CAME' },&quot;足す <br> - ai-toolkit/toolkit/optimizer.pyにcame実装無いのでチャッピーとかにoptimizer.pyの全文見せて実装追加してもらう <br> - toolkit/util/convrot_quant.pyが雑魚グラボ考慮された実装じゃないので&quot;if m &lt;= FUSED_GEMV_MAX_M and x.is_cuda and _triton_available():&quot;に&quot;and torch.cuda.get_device_capability(x.device)[0] &gt;= 8&quot;を追加する <br> とか弄る必要があった。現在はLoKR+CAMEで元気にトレーニングできている 
+
+117 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1aef-Cp+x) 2026/10/20(火) 02:32:36.55
+ moss anime 来たら <br> 俺も卒業か童貞を&#128570; 
+
+118  <span style="color:green;">警備員[Lv.162][SSR武][UR防][苗]</span> (ﾜｯﾁｮｲ bb10-+3Zs) 2026/10/20(火) 02:34:25.62
+ 体型とか目の形がやっぱ気に食わねぇから学習し直すか… <br> なんかrankをガッツリ上げてもいい気がするんだよなmoss-image 
+
+119 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8]</span> (ﾜｯﾁｮｲ 0fe3-or1J) 2026/10/20(火) 02:39:06.71
+ &gt;&gt;112 <br> 12歳に欲情するのはアリスコンプレックスと言ってえ… <br> アリスちゃんの身長設定は152cmで丁度12歳女児の平均身長でえ… <br> ところで君のレス番も1“12”だねえ…&#129316; <br> https://ul.h3z.jp/HOgeoWOW.jpeg 
+
+120 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ df7d-PAvg) 2026/10/20(火) 02:57:12.31
+ &gt;&gt;117 <br> 30歳まで童貞でいると修羅になれるらしいで 
+
+121 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/20(火) 03:07:19.95
+ 眠れない&#129402; 
+
+122 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.61][苗]</span> (ﾜｯﾁｮｲ aea2-hgbO) 2026/10/20(火) 03:09:25.64
+ &gt;&gt;121 <br> 俺も眠れないけど、あと一時間ちょっとでＨ３ロケットの打ち上げらしい <br> せっかくだからそのLIVE放送まで起きとくかな&#129402; 
+
+123  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 27cc-WNX/) 2026/10/20(火) 03:15:54.31
+ 皆MOSS LORAのタグ付けどうしてるんや？ <br> やっぱ部族語＋自然言語でやった方がいいのかね？ <br> 絵柄LORAはそのまんまで何とかなったが構図LORAは悩む 
+
+124 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.112][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/20(火) 03:30:38.39
+ MOSS ImageのBBOXノードfix版をクラシックでも使える様にしたで <br> ・幅と高さを取得してキャンバスサイズを即時反映 <br> （※解像度セレクターノード、整数ノードのみ） <br> ・Alt＋左クリックで重なってるボックスを選択可能 <br> ・ボックスをダブルクリックで直接プロンプト入力 <br> ・クラシック、Nodes2.0の両モードに対応 <br> https://i.imgur.com/WNkxgA4.png <br>  <br> https://2.gigafile.nu/0128-cebc586d2cddd7c206d63a74b56f645dc <br> DLパス: jnva 
+
+125 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.38]</span> (ﾜｯﾁｮｲ 664f-CJRl) 2026/10/20(火) 03:34:39.91
+ &gt;&gt;97 <br> benchmaxxing連呼されてて草 
+
+126 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 3f24-hgbO) 2026/10/20(火) 03:42:41.67
+ &gt;&gt;119 <br> https://blobs-b2.civitai.com/file/blobs-managed-public/N5ADP6MVM6BJHXPKXJXAD9PVD0?.jpg 
+
+127 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ dacf-PAvg) 2026/10/20(火) 04:53:49.28
+ sd-scripts更新していつも使ってるanima用のテンプレートを最小限の書き換えだけでキャラ学習試してみた <br> 1キャラメイン衣装のみのシンプルな状態でキャプション一切なしでclass_tokensのみの解像度512 <br> timestep_sampling使用 <br>  <br> CAMEでもanimaの倍くらい処理時間はかかってLossも0.34くらいから始まって最低値でも0.32くらいだったけど <br> 特に問題はなさそうな感じで学習できてる <br> 衣装はanima同様ざっくり色や形状で指定してやれば学習したの出てくる <br> animaの設定のままだと細部に気持ち学習足りてない感じはあるからもうちょっと回してもいいかなって感じだった 
+
+128 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 0fe0-O14r) 2026/10/20(火) 05:52:35.55
+ &gt;&gt;119 <br> 思考盗聴かと思うくらい趣味が合いそうや&#129309; 
+
+129 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ 0f8c-phUI) 2026/10/20(火) 05:58:58.96
+ 中学生ってのはなァ… <br> ババァなンだよ 
+
+130 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 0fe0-O14r) 2026/10/20(火) 06:01:51.42
+ ちゃうねん <br> 小6か中1か開けてみるまで確定しないシュレディンガーなのがええねん 
+
+131 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a301-52yo) 2026/10/20(火) 06:07:29.11
+ もすBASEモデルの実写やべえな素人感あるのめっちゃ出てくる <br> 久しぶりに抜きまくってる&#129768; 
+
+132 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.14][新]</span> (ﾜｯﾁｮｲ 9ff7-yMoP) 2026/10/20(火) 06:10:47.44
+ &gt;&gt;130 <br> スレの画像だけ漁る無産キッズなんか？ 
+
+133 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ eaa0-2FoN) 2026/10/20(火) 06:33:41.94
+ ３次元はBaseのほうがええんか？ 
+
+134 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ 0f8c-phUI) 2026/10/20(火) 06:37:34.10
+ &gt;&gt;133 <br> &gt;ベースモデルはよりフォトリアリスティックな傾向がありますが、その美的品質はSFTほど優れていない場合があります。 <br>  <br> だってさ 
+
+135 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a3a2-ojTY) 2026/10/20(火) 06:48:42.58
+ civitaiのMOSS向けLora、すげぇ勢いで増えててもう試しきれないレベル 
+
+136 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 4a39-hgbO) 2026/10/20(火) 06:56:07.70
+ これMOSS用のUIを頑張り屋が整備すればforge系統全部食えてWEBUI天下統一できてしまうんじゃ？ 
+
+137 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 6a85-gaKZ) 2026/10/20(火) 06:59:51.98
+ そんなん作っても1円にもならんからなぁ 
+
+138 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ 0f8c-phUI) 2026/10/20(火) 07:00:35.06
+ やべぇ <br> LMStudio起動しながらモスバーガーやってるとVRAMから溢れまくってるわ <br> 31Bじゃ無理やんこれ 
+
+139 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][芽]</span> (ﾜｯﾁｮｲ 0f6a-xEs3) 2026/10/20(火) 07:00:58.46
+ &gt;&gt;119 <br> 良い感じの子供パンツだ 
+
+140 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 0fe0-O14r) 2026/10/20(火) 07:05:15.20
+ Moss専用UI自作して使っとるけど、別にエージェントにちょちょいと頼むだけやしなあ <br> エージェント使ってない・使えない人もおるやろうしその辺で需要はあるんやろうけど、正直そういう人らの需要を満たしてもあまりいいことなさそうやからなあ 
+
+141 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 6a7d-cykr) 2026/10/20(火) 07:11:45.44
+ 情弱乞食にツール提供しても文句言われるだけやしな <br> 緩やかに終わらせるほうがcomfyUIの発展に寄与するやろ 
+
+142 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.234][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ f3e7-xq6W) 2026/10/20(火) 07:14:19.67
+ &gt;&gt;136 <br> comfyui使えずに今forgeneoも使ってなくてwebui系もよくわからないすごいニッチな層向けにしかならない気がする 
+
+143 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.38]</span> (ﾜｯﾁｮｲ 664f-CJRl) 2026/10/20(火) 07:16:57.38
+ 面倒くせえ選民思想が跋扈してるンゴね 
+
+144 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eec1-j4Gm) 2026/10/20(火) 07:22:56.77
+ 衣装参照やポーズ参照のloraがそれなりに実用的な範囲でできてるからキャラ参照loraも作ったれと思ったけど、全然あかんな <br> なんとなく絵柄の雰囲気が寄る程度のloraしかできない <br> 衣装やポーズはおおむね合ってれば気にならないけど、版権キャラの特に目のデザインは細部がほんの少し違うだけで台無しだもんな <br> この辺はもう個人が手を出せない領域なんやろな 
+
+145 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 4a39-hgbO) 2026/10/20(火) 07:23:27.82
+ 結局エージェントによる最適化でおま環境尖らせると新技術で巻き戻り細分化を繰り返すんよな <br> そんでやっぱ追加学習で自分の必要な情報をすぐ表面化できるやつとベースを触るだけで微妙微妙いい続ける層に2極化する 
+
+146 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ aa1e-EgRl) 2026/10/20(火) 07:24:13.30
+ 枠と線をつなげるだけのツールに選民とかアタオカやんけ 
+
+147 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ 0f8c-phUI) 2026/10/20(火) 07:25:58.99
+ 泣きました <br> 私はcomfyとスパゲッティノードアレルギーで、宗教法人forgeneoの信奉者で、黒人でゲイです 
+
+148 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ eaa0-2FoN) 2026/10/20(火) 07:28:30.66
+ &gt;&gt;134 <br> ありがとやで <br> 両方使って試してたんやが <br> 確かに違いはありそうだけど規則性がわからんかったわ 
+
+149 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ eaa0-2FoN) 2026/10/20(火) 07:31:35.34
+ ワイ、流れに乗って初の二次に挑戦するもキャラや作品を知らないので初音ミクを召喚する <br>  <br> 無事、中国の露店で売られてるような怪しい初音ミクモドキが召喚される 
+
+150 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/20(火) 07:32:19.91
+ https://tadaup.jp/AOwg8blx.jpg 
+
+151 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.50]</span> (JP 0H0a-fDH0) 2026/10/20(火) 07:33:50.38
+ Mossは3060でも軽くて速くて実に良いんだけど4Kサイズにするとさすがに遅いな 
+
+152 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f3a-ojTY) 2026/10/20(火) 07:40:59.41
+ ワイルドカード内でフラグ分岐を利用する方法が分からないからプロンプト作成用のノードをPythonで直書きしてるワイ <br> comfyでもforgeneoでもなく非UIでやりたいわ 
+
+153 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.17]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/20(火) 07:42:06.01
+ &gt;&gt;151 <br> TEなにつこてる？ 
+
+154 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.96][苗]</span> (ﾜｯﾁｮｲ ee0d-+3Zs) 2026/10/20(火) 07:47:22.53
+ &gt;&gt;152 <br> ComfyUIをバックエンドにAPI利用するか <br> pythonから直でDiffusionPipe呼べばええやんけ <br> MOSS&#129303;のQuick startに呼び方載っとるで 
+
+155 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ de06-2GjY) 2026/10/20(火) 07:48:18.44
+ moss8stepsで得られる画像ってかなり微妙じゃない？ <br> 同じ速度で得られる画像では品質はkroma(krea2 turbo)とはかなり差があるしキャラ再現性はAnimaの方が上で綺麗だし 
+
+156  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-Ga4M) 2026/10/20(火) 07:55:08.67
+ &gt;&gt;152 <br> Power Puterで大抵のことはできるで 
+
+157 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.123][R武][R防][苗]</span> (ﾜｯﾁｮｲ 6a6e-hgbO) 2026/10/20(火) 07:55:10.92
+ turbo抜きにしてもmossくんは現状特化型モデルには単純な画像の品質では負ける印象 <br> テキストレンダリングや一般化する能力みたいなのは高いと思う 
+
+158 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ 6626-hgbO) 2026/10/20(火) 08:05:51.73
+ 事前学習を大量に玉石混交でやってるからガチガチに指定せないいのでんのはまぁ当然 <br> そこは事後学習でRLHF / DPOを徹底的にやらなアカンねんけどすげえコストかかるしやりすぎるとchatgptみたいにつまらん絵になるんや 
+
+159 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.19]</span> (ﾜｯﾁｮｲ ce94-2GjY) 2026/10/20(火) 08:06:14.08
+ 機能追加とかいいからはよリセットしてくれcodexちゃん 
+
+160 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.180][木]</span> (ﾜｯﾁｮｲ 1a78-hgbO) 2026/10/20(火) 08:10:50.68
+ &gt;&gt;151 <br> 公式の推奨解像度は4MP (2K) までやが <br> アプスケ＋img2imgということやろか？ 
+
+161 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a3ca-lAR7) 2026/10/20(火) 08:11:43.25
+ https://tadaup.jp/APMUY7TE.png <br> moss-image難しい、、、 
+
+162 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1aa6-GQTq) 2026/10/20(火) 08:15:07.35
+ ステップ4で出来るターボLora良いね <br> オレ環境でanimaより早くなっちまったぜ 
+
+163 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 0f94-pNrs) 2026/10/20(火) 08:17:55.02
+ https://tadaup.jp/AqsEpeM4.mp4 
+
+164 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span> (ﾜｯﾁｮｲ 0f17-0nLi) 2026/10/20(火) 08:20:04.00
+ 早くても絵が微妙だとなあ 
+
+165 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ae94-X7fM) 2026/10/20(火) 08:20:31.57
+ MOS画像生成専用ソフト作るなら、キャラ3人（LORAなり画像なり）くらい指定してコマごとに動きを指定できるソフトなら超絶需要あるわな <br> それできたらマンガ超余裕で作れるようになる 
+
+166 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ 0f8c-phUI) 2026/10/20(火) 08:51:10.42
+ i2iとかinpaintで既存の画像への文字入れだけに使えないかなと思ったけど使えんわこれ… 
+
+167 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 08:53:16.07
+ 画像共有が画像そのものよりプロンプトで共有してくれる方がありがたいように、UIもUIそのものよりエージェントへの指示で共有してくれたほうがありがたい時代になるんちゃうかな 
+
+168 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f5f-4BsX) 2026/10/20(火) 08:55:07.15
+ mossのLora学習を試すで〜 <br> 4070s 1000step 1024×1024で大体1時間20分くらいやな <br> 他の人も大体こんくらいの学習時間なん？ 
+
+169  <span style="color:green;">警備員[Lv.163][苗]</span> (ﾜｯﾁｮｲ beb0-bv9K) 2026/10/20(火) 08:57:51.82
+ &gt;&gt;124 <br> ぜひGitHubで公開してほしいンゴ 
+
+170 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/20(火) 09:17:01.26
+ MOSSちゃんの情報集めてまたプロンプトをLLMに考えてもらうか <br> クラウドで今もエロプロンプト受け付けてるのどこになるんだろ？ 
+
+171 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.164][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/20(火) 09:31:14.63
+ 寝てる間に5時間回したけど <br> ずっとLossが下がりっぱなしで底打ちなかった 
+
+172 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0ff7-+3Zs) 2026/10/20(火) 09:35:40.28
+ &gt;&gt;166 <br> それめっちゃやりたいんやけどやっぱ現状ムリそうよね 
+
+173 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fc0-hgbO) 2026/10/20(火) 09:37:26.27
+ kreaの公式editかminimaxの公式image studioを待ってる 
+
+174  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2771-WNX/) 2026/10/20(火) 09:42:30.10
+ 素材数は？ 
+
+175  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2771-WNX/) 2026/10/20(火) 09:43:17.06
+ &gt;&gt;174 <br> は&gt;&gt;171ね 
+
+176 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/20(火) 09:47:29.07
+ &gt;&gt;161 <br> これはこれで味があるなw <br>  <br> mossちゃんTE優秀なんだけどあと1歩届かないのがじわる <br> https://i.ibb.co/6RLLVsQH/Comfy-UI-2026-47859.webp <br> フォトとアニメの切り替えが安定しないのはなんでやろ？ 
+
+177 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ 0f8c-phUI) 2026/10/20(火) 09:47:35.27
+ &gt;&gt;172 <br> 一応できないこともないけど、どうしても溶けたり文字の周りが変になったりする <br> denoising上げないと出てこないし文字は変になるけど、上げすぎると絵柄そのものが変わっちゃうしこれでもぐちゃぐちゃになる <br> 特別な理由が無い限りはmossのlora作るなりして対応した方がええかも、かなり無理矢理や <br> https://ul.h3z.jp/Tc78WuJR.png <br>  <br> でも文字があるだけで画像に華があるように見えるので個人利用ならオッケー&#128077; 
+
+178 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/20(火) 09:52:11.54
+ &gt;&gt;161 <br> これは”芸術”やな… 
+
+179 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 0f92-SCI1) 2026/10/20(火) 09:54:16.63
+ お、RedRayzニキMOSSに暫定対応したのねベリーサンガツです！ 
+
+180 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.109][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/20(火) 09:55:44.37
+ &gt;&gt;177 <br> これくらいならペイントソフトで手書きフォント入れた方がコスパいいのでは 
+
+181 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f87-ojTY) 2026/10/20(火) 09:58:46.68
+ controlnetっぽいものもきてたで <br> https://github.com/Comfy-Org/ComfyUI/pull/17206 
+
+182 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 1a86-tZNN) 2026/10/20(火) 09:58:55.85
+ 文字っていざ手動で画像にあったフォントで毎回馴染むように入れるってなると、地味に慣れが必要な加工だしな <br> だからこそpixivとかfanzaとかにいかにもパワポで文字入れたみたいなのが溢れてる <br>  <br> ポンだしで手軽に日本語入るMOSSは貴重 
+
+183 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ f3e7-1f/Z) 2026/10/20(火) 09:59:09.78
+ 全部任せたいにしても普通にref使えるモデルに投げたほうが良さそうやけどMOSSでやらなアカン理由があるんか？ 
+
+184 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f6b-hgbO) 2026/10/20(火) 09:59:10.63
+ まあそりゃそうだけどAIにやらせようと工夫と挑戦するのは何も間違ってない <br> 手作業じゃなく勝手に出てくることに意義があるんやと思うよ 
+
+185 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0ff7-+3Zs) 2026/10/20(火) 10:04:38.12
+ qwen2.1では一応できるけど文字というか字体が残念すぎてね <br> MOSSのオタク理解力で文字入れしたい 
+
+186 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span> (ﾜｯﾁｮｲ 0f17-0nLi) 2026/10/20(火) 10:04:56.47
+ &gt;&gt;183 <br> まずどんな感じか自分で触ってみないとわからなくない？ 
+
+187 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ 0f8c-phUI) 2026/10/20(火) 10:06:10.88
+ &gt;&gt;180 <br> ワイが介入しすぎると <br> ぬけない <br>  <br> それに適したフォントを&#65374;とかここに台詞や擬音を配置して&#65374;とかあんまりやりたくないねんな <br> セリフですらキツイ <br> 面倒だからとかではなくなんというか気持ちの問題やね 
+
+188 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 1a86-tZNN) 2026/10/20(火) 10:07:29.34
+ やっても意味がない理由をやらずに語るより <br> やってみてどこに意味があるかを語る <br>  <br> そんな大人に　僕はなりたい <br>  <br> 　　　　　　　　　　　　みつを 
+
+189 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 2753-hgbO) 2026/10/20(火) 10:09:51.80
+ mossの整備が終わって舗装された道を歩きたい <br> みつこ 
+
+190 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/20(火) 10:10:16.22
+ ポッと出てきた技術に努力を無にされる諸行無常界隈やからな… <br> 努力の方向性を見定めるのも一苦労や彡(-)(-) 
+
+191 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0ff7-+3Zs) 2026/10/20(火) 10:11:08.53
+ 加工に時間かけると「我が子」感が湧いてきて抜けなくなっちまうやね 
+
+192 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ae94-Q87P) 2026/10/20(火) 10:11:15.24
+ ぬきたい <br> ちんお 
+
+193 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.14]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/20(火) 10:11:41.60
+ &gt;&gt;191 <br> （そこは恋人とかじゃないんだ） 
+
+194 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.123][R武][R防][苗]</span> (ﾜｯﾁｮｲ 6a6e-hgbO) 2026/10/20(火) 10:11:49.70
+ &gt;&gt;190 <br> これよく言われるけどそのモデルや手法自体が陳腐化してもその時に覚えた知識は大体その後も役に立つと思うわ 
+
+195 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fa7-hgbO) 2026/10/20(火) 10:14:49.45
+ 今の試行錯誤が未来の自動化に繋がると考えるとワイワクワクすっぞ 
+
+196 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6]</span> (ﾜｯﾁｮｲ 73cd-PAvg) 2026/10/20(火) 10:15:50.62
+ civitaiで量産型のLoraを公開してたmoaiのおっさんBANされとるやん <br> 何したんだ 
+
+197 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2304][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 6aed-ux7a) 2026/10/20(火) 10:16:33.71
+ &gt;&gt;161 <br> https://tadaup.jp/Amad5eB1.jpg <br> 翻訳無しで書き足したからスペルや文法ミスはあると思うけど、これで出てるから参考にしてみて <br> シンプルな構図やからよほど拘りなければbboxは使わんでええかと <br> in lit dim room, a naked woman wearing chained black choker is on all fours on carpet near a old fat man's legs, shot from side. she has black hair, blunt bangs, short bob cut, large breasts, facing down. <br> her back is horizontally, a plate that has whiskey glass and ashtray is on her waist horizontally. <br> a faceless fat man is sitting on armchair deeply, crossing own legs,  facing toward her on all fours. <br> holding A lit cigarette with smoke rising, black dress shirt, open collar. <br> two dressed woman are holding candles, standing near him, bare shoulders, long dress, faceless 
+
+198 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 10:17:41.35
+ お前らが言いたいことはわかる <br> comic, 1girl, squatting, scat, Supermarket, Chichibu, 5koma, <br>  <br> で全て整ったいい感じのエロ漫画が出てほしいのであって <br> bboxでコマ単位で指定なんてしたくない <br> こうですね 
+
+199 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.70][苗]</span> (ﾜｯﾁｮｲ da10-JSxr) 2026/10/20(火) 10:18:04.84
+ NAIで部族語を学びSDWebUIでControlNetやLoRAを学びsd-scriptsで自作LoRAを学びComfyUIで画像生成の流れを学んできたで 
+
+200 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ 0fe3-or1J) 2026/10/20(火) 10:23:13.19
+ 人間よりもAIのほうが温もりがあるからね 
+
+201 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee91-s9jZ) 2026/10/20(火) 10:23:57.70
+ ネーム力は身に着けないとあかんやろな <br> 漫画を作れるようになった以上は 
+
+202 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6]</span> (ﾜｯﾁｮｲ 73cd-PAvg) 2026/10/20(火) 10:25:37.62
+ Krea2ってお前ら捨てた？ 
+
+203 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.21]</span> (ﾜｯﾁｮｲ 2f11-kfoZ) 2026/10/20(火) 10:26:48.17
+ ネーム力すらガチャで解決するつもりやな 
+
+204 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ aa1e-J8Kv) 2026/10/20(火) 10:28:01.97
+ ワイも英語書ける人間になりたいけど駅前留学やフィリピンパブとかに行けばええんか？ 
+
+205 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.102][苗]</span> (ﾜｯﾁｮｲ bb85-J0pX) 2026/10/20(火) 10:29:43.77
+ krea2は3がオープンウェイト確定したからそれ待ち状態やからなあ 
+
+206 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 1a86-tZNN) 2026/10/20(火) 10:30:09.69
+ つまり駅前のフィリピンパブが最強 
+
+207 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.1][新芽]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 10:33:08.29
+ めんどくさい事はすべてAI任せに出来ることが理想やね <br> ワイは蜜だけをすすりたいんや 
+
+208 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 10:35:31.38
+ https://tadaup.jp/AdU1BkH7.jpg 
+
+209 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fab-Ie8d) 2026/10/20(火) 10:37:13.14
+ ワイの作ったお気に入り画像動画を見て好みのを勝手に作ってくれるAIが出た時のために今頑張ってるんや 
+
+210 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ 0fe3-or1J) 2026/10/20(火) 10:38:20.21
+ &#129302;「お任せください。通報しました。」 
+
+211  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/20(火) 10:42:56.54
+ &gt;&gt;123 <br> Z-Image時代のデータセットをKrea2でもMOSS使いまわしてるで <br> - 先頭にトリガー <br> - LLM出力のキャプション <br> - Tagger出力のタグ <br> 試作的に英語と日本語併記のデータセットもあるけど日本語併記は不要やな <br> どうせ生成時は英語やし <br> ただ日本語を併記していても特に問題は起きてない 
+
+212 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ae94-GQTq) 2026/10/20(火) 10:44:45.48
+ 理想としては、真面目な風紀委員が一人でしてたのを目撃したので手伝ってあげる展開で20ページ描いて、みたいなのが真のポン出しだろ 
+
+213 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 10:46:48.68
+ イラスト一枚渡して、このキャラのエロ漫画とエロアニメ作って！でシコりたいんや 
+
+214 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.19]</span> (ﾜｯﾁｮｲ ce94-2GjY) 2026/10/20(火) 10:48:07.95
+ 構成力も○○先生風とか指示できる未来 
+
+215 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ ae94-X7fM) 2026/10/20(火) 10:48:45.84
+ &gt;&gt;212 <br> そこまでいったら同人誌がAI爆撃で終わるやろな 
+
+216 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 0f6b-hgbO) 2026/10/20(火) 10:49:02.49
+ 「そんなん無理やろw」で一笑に付せれていた数々のことがAIで実現しとるから <br> いずれ無い話でもないんやろうな 
+
+217 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ ee41-dVjR) 2026/10/20(火) 10:51:13.56
+ また昼間のジジイと引きこもりチーのくっちゃべりタイムか 
+
+218 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee0f-5qDE) 2026/10/20(火) 10:51:19.62
+ Fizgigで画風LoRA作ったが7000ステップで平均Lossずっと0.67やったわ <br> コヒャパラムグイも試してみっか 
+
+219 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][芽]</span> (ﾜｯﾁｮｲ 2385-hgbO) 2026/10/20(火) 10:51:57.42
+ MOSSをJSONで流し込んどる人向けにフォーマット整えてくれるやつできたでー <br> https://github.com/SHNrml-spec/mossimage-json-builder <br>  <br> ちなGemini3.8fに一言頼んだら全部やってくれたけどワイは何も分かっとらんから修正は基本しない（できない）で <br> いじりたい人いたら好きに弄ってや 
+
+220 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 2385-1wEy) 2026/10/20(火) 11:01:45.95
+ gitってこういうAI謹製ノーメンテコードに汚染され続けているんやろか 
+
+221 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7]</span> (ﾜｯﾁｮｲ 3e9e-yqP7) 2026/10/20(火) 11:02:47.78
+ &gt;&gt;213 <br> 品質があんまり良くないやろけど今でも作ろうと思えば作れるやろな <br> あとは時間が解決するのを待つだけやろな 
+
+222 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a54-GJcb) 2026/10/20(火) 11:09:28.12
+ 汚染されまくりだろうけど使用者側もAIでスクリーニングするからOKやろ 
+
+223 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 11:10:46.43
+ &gt;&gt;220 <br> そういう話になるからコードではなくてAIへの指示で共有する時代が来ると思う次第 <br> 画像やUIはもちろん、下手したらゲームとかもそういうふうに共有される時代が来るかも 
+
+224 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.319][木]</span> (ﾜｯﾁｮｲ 2668-fG0s) 2026/10/20(火) 11:10:50.09
+ mossは三次はイマイチとか聞いたから手を出さなかったのに 
+
+225 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.164][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/20(火) 11:15:16.94
+ 人体構造がだいぶ良くなってる気がする 
+
+226 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][芽]</span> (ﾜｯﾁｮｲ 2385-hgbO) 2026/10/20(火) 11:20:27.88
+ なんかスレ見る限り迷惑みたいだから消すわ、ほな…… 
+
+227 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.364][木]</span> (ﾜｯﾁｮｲ 2a57-bv9K) 2026/10/20(火) 11:21:40.13
+ &gt;&gt;224 <br> せやで <br> Kreaとかと比べたらちょっとつらいけどBBoxは面白い（Ideogram4でも良いんだけど） <br>  <br> けどMossはreverse bunny suit学習しとるな <br> https://tadaup.jp/AThZexGf.png <br> これも&#128230;学習している成果？ 
+
+228 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.123][R武][R防][苗]</span> (ﾜｯﾁｮｲ 6a6e-hgbO) 2026/10/20(火) 11:23:32.51
+ 1モデルで色々遊べるのは楽しい <br> https://tadaup.jp/AJ5i1sGb.webp 
+
+229 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.319][木]</span> (ﾜｯﾁｮｲ 2668-fG0s) 2026/10/20(火) 11:27:43.54
+ &gt;&gt;227 <br> kreaの方がちょい上って感じか <br> 試したいモデルが多すぎて低スペにはつらいわ 
+
+230 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eef0-Lhc4) 2026/10/20(火) 11:32:40.14
+ &gt;&gt;226 <br> 誰に迷惑かけてるんや？ 
+
+231  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/20(火) 11:34:59.02
+ &gt;&gt;224 <br> Krea2に比べると画質はイマイチやけど <br> Krea2はエロいことするとすぐ壁にぶち当たってたからな <br> その点MOSSは無問題やから三次もMOSSでええかな <br> プロンプトはそのまま流用できるしすんなり移行できる 
+
+232 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/20(火) 11:42:17.86
+ krea2はエッチくできなかったから埃を被っている 
+
+233 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee31-EeKJ) 2026/10/20(火) 11:44:27.62
+ 今モスの参照ノードは自作しかないんか 
+
+234 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 11:47:18.76
+ krea2は空想上の超絶美少女写真を出すのが上手いんよな <br> GPTは現実に存在しうるレベルの美少女しか出さないし&#127820;に至ってはその辺にいそうなレベルしか出さない 
+
+235 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.23]</span> (ﾜﾝﾄﾝｷﾝ MMda-bHJY) 2026/10/20(火) 11:51:36.33
+ &gt;&gt;200 <br> っぱGPUの温もりを肌で感じたいよね 
+
+236 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.215][SSR武][UR防][木]</span> (ﾜｯﾁｮｲ ee55-phUI) 2026/10/20(火) 11:51:36.92
+ &gt;&gt;226 <br> 誰に迷惑かけてんねん <br> 無言&#127880;投下の方がまだ迷惑って思うわ 
+
+237  <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ bb85-WaZu) 2026/10/20(火) 11:54:51.81
+ mossの三次が微妙ってのもピンとこんのやけどな <br> お手軽に綺麗なもの出すだけやったらkrea2に軍配上がると思うけどやれることの幅が段違いやし <br> https://tadaup.jp/AUEZTLWA.png 
+
+238  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f76-zLpW) 2026/10/20(火) 11:57:26.38
+ &gt;&gt;234 <br> &#127820;ひどすぎワラタ <br> https://tadaup.jp/ALr40NJ1.jpg 
+
+239 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.109][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ da10-sDml) 2026/10/20(火) 11:59:14.91
+ &gt;&gt;238 <br> こういうのが一番抜けるおじさん「こういうのが一番抜ける」 
+
+240 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 12:00:21.51
+ krea2に比べるとmossの三次が微妙なのはたしかに感じる <br> が、機能面の差で埋められない差かと言われると 
+
+241 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee71-Rjkj) 2026/10/20(火) 12:00:53.99
+ &gt;&gt;181 <br> それなら画像参照で今でも出来るな <br> 今はボックス毎に画像参照出来るようにするノード作ってる最中 
+
+242 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ 2a07-hgbO) 2026/10/20(火) 12:03:06.68
+ https://tadaup.jp/AMSh5nxe.png 
+
+243 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/20(火) 12:03:52.11
+ &gt;&gt;237 <br> 三次っていうか3Dやなこれな 
+
+244 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5]</span> (ﾜｯﾁｮｲ 2385-hgbO) 2026/10/20(火) 12:05:26.60
+ &gt;&gt;230 <br> &gt;&gt;236 <br> いやーすまん、なんか寝不足もあってちょっとナーバスになっとったわ <br> 仮眠取って少しマシになったしとりあえず戻しておくわ 
+
+245 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 12:05:46.93
+ https://tadaup.jp/AAxwpLHE.jpg 
+
+246  <span style="color:green;">警備員[Lv.162][SSR武][UR防][苗]</span> (ﾜｯﾁｮｲ bb10-+3Zs) 2026/10/20(火) 12:07:14.59
+ moss-imageの画風学習もっかいやったけど何も得るものがなくて草 <br> 学習サンプルだとrank64のが経過がよかったけど実際に適用するとrank24のloraのが優れてたわ <br> https://xxup.org/PenDS.jpg <br> https://xxup.org/F8Tmg.jpg <br> https://xxup.org/IfV4A.jpg <br> とりまお祭りに乗じた学習はこんなもんかな… 
+
+247 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 12:07:20.54
+ 無言&#127880;投下には投稿の心理的ハードルを下げる効果があったらしいな 
+
+248 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2385-3b52) 2026/10/20(火) 12:07:35.80
+ クソおぢの小言に負けるな 
+
+249 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ ae94-X7fM) 2026/10/20(火) 12:08:33.05
+ MOSSの三次はポン出しで70点だな <br> リアスのが設定煮詰めてる分美人が出る <br>  <br> https://tadaup.jp/AWefA7LN.png 
+
+250 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 12:09:14.07
+ &gt;&gt;246 <br> 絵柄そのままつよつよ背景とbboxが手に入るのアドが大きすぎるだろ 
+
+251 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ ee97-uB/8) 2026/10/20(火) 12:11:57.32
+ これ解決する方法を教えて欲しいんやが <br> キャラにルームツアー動画を紹介させたいんや <br> ワイが階段とか部屋とかをいろんな角度で動画撮影して、その中にオリキャラを合成してキャラが喋りながら部屋紹介する動画みたいな <br> 動画aiでやると動きが3dで不自然になる <br> かといってgptにアニメーターやらせて1枚ずつ作るとめちゃ時間かかる <br> なんかいい方法ないですか？ 
+
+252 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fa5-2GjY) 2026/10/20(火) 12:12:59.56
+ ブロンコビリー行くために腹減らしとる <br> トレーダーの嗜みやね 
+
+253 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ ee70-bIlb) 2026/10/20(火) 12:13:37.69
+ 世界樹シコシコマン <br> アリスシコシコマン <br> &#127880;シコシコマン <br> シルバニアファミリーシコシコマン <br> 姫騎士シコシコマン <br> 海老&#129424;シコシコマン <br>  <br> 個性豊かなスレだなぁ 
+
+254  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/20(火) 12:19:57.87
+ MOSSの三次は写ルンですで撮ったスナップ写真みたいな <br> 昭和風味を感じれて逆にエモい（シコい） 
+
+255 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/20(火) 12:23:45.61
+ &gt;&gt;208 <br> 台詞が退屈なんよな <br> 毎日毎日クリクリプリプリ！ <br> クリクリプリプリｨｯｷｭアｧｧｧｧ！ <br> やっとるんだろ！ <br> ぐらい言わせてほしい 
+
+256 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f7a-m5dc) 2026/10/20(火) 12:24:53.12
+ &gt;&gt;208 <br> フキダシがワイのクリスタ手作業より自然で降伏せざるを得ないわ <br> 自分でやってると配置とか透明度とか大きさとか形とか正解わからなくなってきて台詞考えるのはできてもつけるの辛いんよな <br> 従来の画像生成じゃ文字綺麗に出すのも限界あるしbbox方式ほんま覇権やな 
+
+257 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ ee91-s9jZ) 2026/10/20(火) 12:25:23.90
+ 無言でエロ画像だけ貼っていくの賢者タイム感があって怖い 
+
+258 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eeea-s9jZ) 2026/10/20(火) 12:27:39.70
+ 世界樹シコシコニキはほんま優秀なベンチマークやな 
+
+259  <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 0f76-zLpW) 2026/10/20(火) 12:29:24.56
+ 「ルームツアー」「部屋」が別の何かの可能性&#127880; 
+
+260 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ ee97-uB/8) 2026/10/20(火) 12:34:36.71
+ &gt;&gt;259 <br> ようはAIにアニメーター役やらせて手書きぽいアニメ作らせたいんや <br> 動画ai使うと不自然になるやん 
+
+261 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 1a4e-ob4S) 2026/10/20(火) 12:34:46.77
+ &gt;&gt;167 <br> 3DエロゲーのVR化MOD界隈は既にそうなっとるで <br> 追加プログラムではなく製品本体を改編する場合は配布が難しいとかで 
+
+262 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee76-fNqP) 2026/10/20(火) 12:35:19.10
+ 実際にやると文字入れはめんどくさいんだよな <br> 可読性の確保にフォント選びに <br> 白背景に縦書きで文字入れする同人CG形式は比較的楽だが 
+
+263 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.20]</span> (ﾜｯﾁｮｲ ce94-2GjY) 2026/10/20(火) 12:35:39.74
+ https://i.imgur.com/ppEBoZf.jpeg 
+
+264 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 0f6b-hgbO) 2026/10/20(火) 12:43:46.04
+ 世界樹の人もそうやけど先端の技術に貪欲にかじりつく姿勢とガッツがある人らはすごい <br> もうすっかり安定するまで見の姿勢が板についてもうた 
+
+265 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee5b-QZ3K) 2026/10/20(火) 12:58:11.06
+ &gt;&gt;238 <br> 常識改変おじさん(全員改変完了ペロッ) 
+
+266 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 3fc0-hgbO) 2026/10/20(火) 12:59:49.77
+ deepseek harnesでminimaxとかのスキル参照させてプロンプト書かせるのはできるんやがcomfyからやらせたいときはスキルをシステムプロンプトに書くしかないんか 
+
+267 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.50]</span> (ﾜｯﾁｮｲ 0b81-fDH0) 2026/10/20(火) 13:02:25.44
+ &gt;&gt;263 <br> なんかいるwww 
+
+268 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ ee97-uB/8) 2026/10/20(火) 13:04:50.61
+ 緑背景動画からキャラだけ切り抜くのはaeとかで楽にできるけど、普通の背景からキャラだけ切り抜くのが上手く行かない <br> ロトブラシだと汚くなる <br> ltxのやつは時間かかるし <br> なんかベストなツールないですか？ 
+
+269 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.164][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/20(火) 13:06:23.84
+ dim大きくすると遅くなるから迷うな 
+
+270 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ df7d-MpqF) 2026/10/20(火) 13:07:48.00
+ もっさん悪くなさそうだけどリアル系は顔がai感あるな 
+
+271 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ eaa0-2FoN) 2026/10/20(火) 13:23:13.06
+ comfy公式テンプレートのネガティブプロンプトの初期値に「nsfw」が入れてあるのは少し意地悪で笑う 
+
+272 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.25]</span> (ﾜｯﾁｮｲ 734a-hgbO) 2026/10/20(火) 13:23:44.80
+ &gt;&gt;223 <br> 動画もプロンプトで配信するようになったら <br> 帯域問題が一挙に解決 
+
+273 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.25]</span> (ﾜｯﾁｮｲ 734a-hgbO) 2026/10/20(火) 13:25:46.06
+ &gt;&gt;254 <br> そういう素人写真っぽいのって <br> みんなどうやって出してる？ <br>  <br> krea2とかで逆行、甘いフォーカス、みたいな感じで指示しても <br> プロ出演のイメージ写真みたいなのしか生成できない 
+
+274  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a79-56u3) 2026/10/20(火) 13:26:38.55
+ &gt;&gt;223 <br> 作ったのが驚き屋で怪しいから同じものAIに作らせるのは最近よくやる 
+
+275 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.23]</span> (ﾜｯﾁｮｲ 2fbd-FAJ2) 2026/10/20(火) 13:30:41.52
+ bboxようやく使い始めたんやけど <br> もっとバキバキに区切られるもんかと思ってたら <br> わりと区切りが柔軟というか曖昧なんやね <br> つよいプロンプト入れた箱の影響が周りにもブッチッパ 
+
+276 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8f99-qkhU) 2026/10/20(火) 13:30:58.84
+ &gt;&gt;271 <br> &#129402;&#65038;「だってそうしないとみんなエロ画像ばかりだすもん、あくまで人体の解剖学やらなんたら的な正しさのために学習してるだけだもん」 <br> &#129299;「うるさいエロ出せ」 <br> &#129302;「ん、おかのした」 
+
+277 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a4f-ojTY) 2026/10/20(火) 13:33:57.29
+ https://ul.h3z.jp/w/egqyVf.jpg 
+
+278 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f74-+3Zs) 2026/10/20(火) 13:36:25.24
+ ちょくちょく貼らせてもらっとる自作画像ビューワ <br> Nivis Viewer <br> 更新したで <br> 最新はバグ取りと、細かい改善がメインやけど、 <br> 1.2くらいから大分速度が改善しとると思うで <br> https://tadaup.jp/AaowM57h.png <br>  <br> https://github.com/14matsu-ai/NivisViewer/releases 
+
+279 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 13:42:46.66
+ &gt;&gt;275 <br> というかそうじゃないと要素同士がインタラクトできないからな 
+
+280 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ce94-3R1W) 2026/10/20(火) 13:45:55.05
+ &gt;&gt;271 <br> nsfw入れると全体的に画質落ちるからしゃーない <br> animaでもsafe入れたままエロ出した方が綺麗な絵が出る <br> 勢い重視のんほぅ画像なら抜いたほうがいいが 
+
+281 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 66aa-wy1c) 2026/10/20(火) 13:49:50.58
+ スレ民はエロ前提でやろうとするからハードル高くなっとるけど非エロなら結構性能高くなるんよね <br> 例えば今はもうオワコン扱いのWANに飼ってる猫や犬の画像入れて動画生成してみ <br> めちゃくちゃ自然に動くで 
+
+282 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f16-WNX/) 2026/10/20(火) 13:50:38.13
+ NSFWだと公式っぽさが崩れて微妙になるのはNAIもそうだしQwenの宿命なのかね 
+
+283 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.319][木]</span> (ﾜｯﾁｮｲ 2668-fG0s) 2026/10/20(火) 13:53:20.96
+ &gt;&gt;231 <br> たしかに小細工なしでエロいけるのは惹かれるんよな <br> よっしゃirodoriちゃんはまた今度にして今日はmossちゃんと遊びはじめてみるか 
+
+284  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-Ga4M) 2026/10/20(火) 13:53:48.63
+ WANで犬の動画なんて嫌だワン 
+
+285 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span> (ﾜｯﾁｮｲ eaa0-2FoN) 2026/10/20(火) 13:54:15.53
+ 三次専やけどMOSSは美人とか見た目向上の指示を入れないと顔も体型もガチの一般人みたいな人物が出てくるな <br> サンプラーを変えると見慣れたモデルになる <br> これはこれで味があると言えるのかも知れないが... 
+
+286 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 13:54:25.67
+ エロを犠牲にして得た金とエロを犠牲にしたデータセットで作られたものなんて使う価値ないね 
+
+287 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ be28-mDPq) 2026/10/20(火) 13:55:14.57
+ &gt;&gt;281 <br> wanではパルクールみたいなアクション全然できんかったからそもそも普通の動画作る気さえなかったわ <br> Minimaxじゃ映画ばりのアクションやらせてるからそもそも素の性能に差がありすぎるのよね 
+
+288 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾌﾞｰｲﾓ MM8a-huc7) 2026/10/20(火) 13:58:15.25
+ MOSSって画像編集とか画像参照とかも出来るん？ 
+
+289 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.36]</span> (ﾜｯﾁｮｲ e601-9X42) 2026/10/20(火) 14:02:06.28
+ 公式の絵柄に本来無いエロ酢をぶち込むからそりゃ喧嘩するよな 
+
+290  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/20(火) 14:12:11.65
+ &gt;&gt;273 <br> そういうのはLLMに画像投げてカメラ設定の解析とモデルを指定してプロンプト出させた方が早いで <br> ただモデルが学習してないものは逆立ちしても出てこないから限界はある <br> Krea2ならcivitaiに転がってる昔の写真風とか低解像度写真のLoRA使えばええんやないの 
+
+291 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a302-WNX/) 2026/10/20(火) 14:22:10.46
+ &gt;&gt;288 <br> 現時点で未対応 <br> AIに指示して画像参照版作れたって自慢してる奴らがいるが非公開 <br> ただし公式ワークフローを展開すると画像入力を繋げられる所があるのでそこで画像を読み込ませて <br> 分析したプロンプトを出力させることで精度の低い画像参照的なことはできるっぽい 
+
+292 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾌﾞｰｲﾓ MM8a-huc7) 2026/10/20(火) 14:26:36.99
+ &gt;&gt;291 <br> なるほど、そういう事なんやね <br> サンガツ 
+
+293 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee97-KP3i) 2026/10/20(火) 14:28:37.60
+ 画像参照なんてとっくにやってるだろ <br> 作ってもらえるんだし <br> あと繋げられるとこがあるのでじゃなくて専用端子作らんと駄目だろ 
+
+294 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee97-KP3i) 2026/10/20(火) 14:30:23.09
+ 公式にあるのは単なるbackgroundの入力だからな 
+
+295 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.22]</span> (ﾜｯﾁｮｲ ead6-hgbO) 2026/10/20(火) 14:32:30.07
+ &gt;&gt;281 <br> 昔飼ってたペットとかでやると帰って来れなくなりそうやな 
+
+296 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 3f16-WNX/) 2026/10/20(火) 14:34:12.82
+ &gt;&gt;295 <br> 死別した元嫁をAIネクロマンシーしてる奴もおるしそんな奴もうごまんといそうやな 
+
+297 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.20]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/20(火) 14:34:48.27
+ xかなんかでペット亡くした飼い主が元気な頃の写真アップしてたら、 <br> 気を効かしたつもりで勝手にそのペットの動画生成した奴が炎上しとったな 
+
+298 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ eec1-j4Gm) 2026/10/20(火) 14:36:42.44
+ ワイは衣装を画像参照させたくて衣装画像入力lora作ったんやけど、試してみたら衣装くらいならlora無しで強引に突っ込めばそれなりに参照してくれるっぽくて側転したわ 
+
+299 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 14:37:06.80
+ 死んだ声優の声は再利用できるように整備してほしいと思ってる 
+
+300 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2fbd-hgbO) 2026/10/20(火) 14:47:26.89
+ &#129302;「死んだら人権無いんで何してもいいってテレビで学んだんやが？」 
+
+301 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ ee97-uB/8) 2026/10/20(火) 14:47:47.25
+ irodorittsの英語版みたいなのってある？英語喋らせたい 
+
+302 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fca-+3Zs) 2026/10/20(火) 14:59:16.71
+ 愛犬がAI動画で動かせても <br> もう二度と <br> この手で撫でることも <br> 散歩する事も出来ないんだ <br> こんなこと打ち込んでいたら涙出てきた 
+
+303 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.319][木]</span> (ﾜｯﾁｮｲ 2668-fG0s) 2026/10/20(火) 15:00:19.66
+ 犬LORA作るしかない 
+
+304 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 0f87-ojTY) 2026/10/20(火) 15:01:51.75
+ &gt;&gt;301 <br> zero shotでcloningできて英語だとこれとか <br> 試してはいない <br> https://github.com/Aero-Ex/ComfyUI-OmniVoice 
+
+305 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8f7b-wzCB) 2026/10/20(火) 15:03:29.40
+ mossは定点カメラ漫画とか作れそうやな 
+
+306 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2753-hgbO) 2026/10/20(火) 15:06:22.61
+ ペットの次は人体錬成に手を出して(GPUの大半を)持っていかれそう 
+
+307 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.21]</span> (ﾜｯﾁｮｲ 2f11-kfoZ) 2026/10/20(火) 15:09:38.12
+ &#129302;「ｼﾃ…ｺﾛｼﾃ…」 
+
+308 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.23]</span> (ﾜｯﾁｮｲ 2fbd-FAJ2) 2026/10/20(火) 15:10:08.61
+ AI君に4コマ考えさせてみたけどクソおもんなくて草 <br> 4コマも一般的なマンガもやっぱ特殊技能やね 
+
+309  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f06-+3Zs) 2026/10/20(火) 15:14:05.57
+ &gt;&gt;219 <br> ワイが作ろうとした奴よりはるかにUI洗練されてて草なんよ 
+
+310 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 8e88-uB/8) 2026/10/20(火) 15:16:11.09
+ minimaxで細部がぼやけるのはどうしようもないのか 
+
+311 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f4e-ijKB) 2026/10/20(火) 15:17:28.36
+ krea 2 identity editのv2だけど、画像に忠実なのはいいけどなんかガビガビになるな 
+
+312 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.103][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ b7e7-neQj) 2026/10/20(火) 15:17:53.66
+ 死後向けAIビジネスは割とまじで需要ありそう <br> 特にペットは 
+
+313 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.50]</span> (ﾜｯﾁｮｲ 0b81-fDH0) 2026/10/20(火) 15:18:55.30
+ &gt;&gt;310 <br> これなあ <br> 1.6MPで作っても輪郭はボケるしそれをアプスケしてもボヤケたまま拡大されるだけなんよね 
+
+314 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.23]</span> (ﾜｯﾁｮｲ 2385-hgbO) 2026/10/20(火) 15:22:05.86
+ 細部がボヤけるのはAI生成物をAI学習した特徴の一つだからなあ 
+
+315 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新苗]</span> (ﾜｯﾁｮｲ 66aa-wy1c) 2026/10/20(火) 15:22:22.21
+ &gt;&gt;308 <br> そういう時はつまんなくても成り立つ形式にするんよ 例えばきらら式みたいに <br> しかしAIマンガってフキダシの位置の違和感凄いな <br> https://tadaup.jp/AEWP9gYf.jpg 
+
+316 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 8e88-uB/8) 2026/10/20(火) 15:23:24.00
+ &gt;&gt;313 <br> ぼやけるからsam3でうまく切り抜けないんだよな <br> 解決策ないのかな 
+
+317 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.70][苗]</span> (ﾜｯﾁｮｲ da10-JSxr) 2026/10/20(火) 15:24:22.99
+ &gt;&gt;315 <br> フキダシのしっぽの向きが割と指示通りになるのが地味に助かる 
+
+318 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span> (ﾜｯﾁｮｲ be28-mDPq) 2026/10/20(火) 15:26:09.23
+ 顔の細部だけ再度描き直しするやり方はあるっぽいけどそこに時間かけるなら新しい動画1本作りたいもどかしさ 
+
+319 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 15:26:38.53
+ やっぱり考えることはみんな同じだなw <br> きららだと思えばつまらなくても一応読めるという技術 
+
+320 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.23]</span> (ﾜｯﾁｮｲ 2fbd-FAJ2) 2026/10/20(火) 15:29:43.89
+ クソおもんないって言ってるのと同義になるから <br> きらら…って言いかけてワイはやめとったというのに <br> ニキら容赦無いンゴ 
+
+321 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 15:43:40.91
+ 野獣が先輩なのか後輩なのか悩んだで 
+
+322 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 2753-hgbO) 2026/10/20(火) 15:44:40.76
+ 漫画もアニメも最近のはガチで面白いの多いからAIが考えた4コマ程度でにもっこり出来ないのはしゃーない <br> もちろん古いアニメにも傑作は大量にある 
+
+323 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.20]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/20(火) 15:46:38.48
+ AI植田まさしくらいなら今の技術でも作れそう 
+
+324 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee64-5qDE) 2026/10/20(火) 15:48:15.66
+ んもー 
+
+325  <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 1a79-56u3) 2026/10/20(火) 15:51:14.36
+ フキダシに文字が収まっててフォントも崩れてないならあとはLLMとかの仕事なのでは？ 
+
+326 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ ce94-X7fM) 2026/10/20(火) 15:52:52.35
+ おもんなくて落ちがないアニメ映画でも100億円いくんだからレッドオーシャンやろ <br> 第二のちいかわくらいなら量産できそう 
+
+327 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 15:54:21.08
+ 結局AIは今でも平均化された無難なものを作る装置なんよね <br> コードや知識やエロは無難なものが即ち良いものやけど、芸術はそうもいかんっちゅうこっちゃ 
+
+328 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/20(火) 15:55:40.69
+ おまいら自由自在で凄いな <br> ワイなりに画風制御文を作ったけど効かない事が割と多いンゴ <br> https://i.ibb.co/bg0t76Ly/MOSS.png <br> https://i.ibb.co/v4R1WqNY/MOSS.png <br> https://i.ibb.co/QvpgqfrF/MOSS.png <br> https://i.ibb.co/tMLtB4sb/MOSS.png <br> https://i.ibb.co/BH24SmJ5/MOSS.png <br> https://i.ibb.co/DfjFDmhW/MOSS-3-D.png 
+
+329 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee73-R0My) 2026/10/20(火) 16:03:50.34
+ 模倣できるってことは限界突破も容易になるっつうことや 
+
+330 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eeb7-BI1j) 2026/10/20(火) 16:05:07.59
+ mossやっぱ画風が中々安定しないな <br> まぁ新しいモデルが出る度に言ってるけど 
+
+331 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.109][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/20(火) 16:07:00.97
+ AIは平均点しか取れないゴミだから <br> 面白いものは出てこないよ 
+
+332 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee6c-536R) 2026/10/20(火) 16:12:32.76
+ &gt;&gt;244 <br> PR送ったから見といてな 
+
+333 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.109][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/20(火) 16:13:20.31
+ &gt;&gt;312 <br> 活用事例あるよ <br>  <br> 殺害された被害者が加害者に語りかけ　遺族がＡＩで再現した生前の姿、法廷で再生 <br> 2025.05.12 Mon posted at 14:03 JST <br> https://www.cnn.co.jp/tech/35232853.html 
+
+334 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.103][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ b7e7-neQj) 2026/10/20(火) 16:23:56.08
+ &gt;&gt;333 <br> たまげたなぁ 
+
+335 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.23]</span> (ﾜｯﾁｮｲ 2fbd-FAJ2) 2026/10/20(火) 16:27:52.80
+ モラル捨て去ればディジタルイタコで稼げそうやね <br> 最初からモラル関係ねえ反社あたりはもう次のシノギとして目を付けてそう 
+
+336 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.21]</span> (ﾜｯﾁｮｲ 2f11-kfoZ) 2026/10/20(火) 16:27:59.07
+ 生前と言わずグロ画像のまま語りかけた方が効果ありそう 
+
+337 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4]</span> (ﾜｯﾁｮｲ bea0-hgbO) 2026/10/20(火) 16:28:28.79
+ 3060 12gbでエロ漫画プロンプト作らせようとしてるけど上手く行かない <br> みんな何のllm使ってるんや？gemma12b使ってるけど使い方が悪いのかな 
+
+338 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 0f6b-hgbO) 2026/10/20(火) 16:29:35.24
+ &gt;&gt;336 <br> 発想がサイコパスすぎて笑った <br> 死体画像からディープフェイクは攻撃力高そうやな 
+
+339 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.207][UR武][UR防][木]</span> (ﾜｯﾁｮｲ 5b59-j4Gm) 2026/10/20(火) 16:30:32.07
+ 今日のゲームエンドきた？ 
+
+340 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee26-R0My) 2026/10/20(火) 16:31:48.73
+ &gt;&gt;335 <br> 今はそう言うのに目をつけて文句言うのがシノギなんちゃうか 
+
+341 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新苗]</span> (ﾜｯﾁｮｲ 66aa-wy1c) 2026/10/20(火) 16:33:15.56
+ AIって実はグロ画像作れないんだけどね <br> 大抵は検閲がかかってるか学習データにないから 
+
+342  <span style="color:green;">警備員[Lv.17]</span> (ﾜｯﾁｮｲ bb85-WaZu) 2026/10/20(火) 16:34:21.82
+ &gt;&gt;337 <br> 31Bかstrata使っとるな <br> 構造の組み立てはstrataに分がある印象 
+
+343 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 8e88-uB/8) 2026/10/20(火) 16:34:45.62
+ あかんどうやってもminimaxで溶けるわ <br> 少しでもキャラが遠景になると顔や髪を維持できない 
+
+344 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7]</span> (ﾜｯﾁｮｲ 73cd-PAvg) 2026/10/20(火) 16:36:39.42
+ MOSSはVRAM16GBないとしんどいな 
+
+345 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4]</span> (ﾜｯﾁｮｲ bea0-hgbO) 2026/10/20(火) 16:39:51.47
+ &gt;&gt;342 <br> AIでstrataやってもらったんだがメモリ足らないとかいわれちゃって糞遅かった <br> 貧弱pcは諦めた方がいいのだろうか 
+
+346 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4]</span> (ﾜｯﾁｮｲ bea0-hgbO) 2026/10/20(火) 16:40:40.57
+ サムvsnvidiaで価格安くならないかなｗ <br> サムが安いの出してくれたら乗り換えるｗ 
+
+347 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新苗]</span> (ﾜｯﾁｮｲ 66aa-wy1c) 2026/10/20(火) 16:41:03.82
+ モスモス言われるとどうもこれを思い出す <br> https://tadaup.jp/AXEoDsgY.jpg 
+
+348  <span style="color:green;">警備員[Lv.17]</span> (ﾜｯﾁｮｲ bb85-WaZu) 2026/10/20(火) 16:43:19.69
+ &gt;&gt;345 <br> クラウドという手もある <br> それか人力を極めれば一生タダやで（ニッコリ） 
+
+349 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.1][新芽]</span> (ﾜｯﾁｮｲ 661f-ekDu) 2026/10/20(火) 16:43:50.41
+ 話題にされない不憫なLTX2.5でハロウィンさんいち <br> https://tadaup.jp/AUptmA08.mp4 <br> https://tadaup.jp/ASfmoA7N.png 
+
+350 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4]</span> (ﾜｯﾁｮｲ bea0-hgbO) 2026/10/20(火) 16:45:28.47
+ &gt;&gt;348 <br> api怖い <br> グロック最近厳しくなってきたんだよね 
+
+351 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ cee7-5PTf) 2026/10/20(火) 16:48:13.51
+ これ既出？ <br> https://i.imgur.com/XoP03St.jpeg 
+
+352 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ cee7-5PTf) 2026/10/20(火) 16:49:20.27
+ トレイシー・ローズの写真から幼い頃のイタコできるんかな 
+
+353 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.1][新芽]</span> (ﾜｯﾁｮｲ 661f-ekDu) 2026/10/20(火) 16:52:50.09
+ &gt;&gt;288 <br> それっぽいもの <br> https://github.com/ostris/ComfyUI-MOSS-Image-Ostris-Edit 
+
+354 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ bea0-SCI1) 2026/10/20(火) 16:53:56.96
+ SOTA級のDeepSeek V4.1 Flash 1017無料になったのエグい <br> Gemini・ChatGPT無料枠とかホンマに終わってしまった。AI界隈の流れ早すぎる 
+
+355 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.821][林]</span> (ﾜｯﾁｮｲ 3fa8-2tho) 2026/10/20(火) 16:59:14.48
+ 去年のGrokとかリアス向けにロリエロモブレイプいくらでも出してくれたのになぁ 
+
+356 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ ee64-5qDE) 2026/10/20(火) 16:59:23.16
+ MOSSのキャラLoRAよう分からんな <br> 再現出来とるのは確かなんやが明らかに素材より高精細なジーパン履いてたり <br> と思ったら顔は素材通りの解像感やし <br> https://tadaup.jp/AOnRpxh6.webp 
+
+357 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.364][木]</span> (ﾜｯﾁｮｲ 2a57-bv9K) 2026/10/20(火) 17:03:41.35
+ &gt;&gt;345 <br> https://pc.watch.impress.co.jp/docs/news/2149485.html 
+
+358 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 0f3a-ojTY) 2026/10/20(火) 17:12:01.87
+ &gt;&gt;348 <br> 原理的にはAI処理って全部手計算できるんよね 
+
+359 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee60-5qDE) 2026/10/20(火) 17:13:54.20
+ strataはクソデカモデルだけやのうて <br> Gemma4 26B A4Bみたいな小さめのMoEモデルを400t/sとかの超速・省力で動かす選択肢があってもええと思うんよな <br> そういう改造あるんやろうか 
+
+360 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (JP 0H6b-zbLm) 2026/10/20(火) 17:16:43.62
+ https://tadaup.jp/Ao65s2MZ.mp4 
+
+361 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 0f3a-ojTY) 2026/10/20(火) 17:17:50.85
+ お、規制解除されとる <br>  <br> &gt;&gt;154 <br> 元々pythonから直でDiffusionPipe呼んどって何か問題に出くわしてやめたんやがまた試してみるわサンクス 
+
+362 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee63-dVjR) 2026/10/20(火) 17:21:37.16
+ &gt;&gt;359 <br> 125Bに対してアクティブ6Bっていう大量MoE構造を前提としたハックやから <br> 数えるほどのMoEのモデルは加速しないんや 
+
+363 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 17:23:38.06
+ くだらない4コマを作り始めたがこれはこれで面白いな 
+
+364 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.248][苗]</span> (ﾜｯﾁｮｲ de4a-u6KG) 2026/10/20(火) 17:25:13.67
+ &gt;&gt;359 <br> 一重アクセスの場合はどうしようもあらへんけど <br> 多重アクセス時のスループット向上はする方法はあって <br> vLLMとかSGLangってフレームワークがこれなんやけど <br> 例えばgemma-4-12bで4090やと同時100多重で合計1600token/s出たで <br>  <br> せやから一つの推論でどうにかするんやなくて複数同時推論で <br> 動かすような仕組み作ると既存のフレームワークを有効活用できるで 
+
+365 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 2753-hgbO) 2026/10/20(火) 17:29:12.56
+ mossはトイレ完璧に出せるんやろか？ <br> ゲームエンドのたびに現れるおしっこベンチマークまだ見てない 
+
+366 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.109][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ 0fc8-sDml) 2026/10/20(火) 17:39:14.61
+ やりたい事はあるがスペックが足りない&#129402; 
+
+367 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6]</span> (ﾜｯﾁｮｲ bea0-hgbO) 2026/10/20(火) 17:42:13.49
+ &gt;&gt;357 <br> AIちゃんに食わせて試してみます、ありがとう 
+
+368  <span style="color:green;">警備員[Lv.164][苗]</span> (ﾜｯﾁｮｲ beb0-bv9K) 2026/10/20(火) 17:42:46.86
+ &gt;&gt;357 <br> 「メインメモリとVRAMの合計が32GBあれば動作するようになった」ってすごいな <br> ついにマイPCでもstrataを使えるのか。でも何しよう? 
+
+369 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6]</span> (ﾜｯﾁｮｲ bea0-hgbO) 2026/10/20(火) 17:42:48.94
+ https://x.com/k_matsumaru/status/2112296359076495555 <br> てかさ、falちゃん、完全にminimaxmaxオープンソースにするの無かったことにしてるやろｗ 
+
+370 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.21]</span> (ﾜｯﾁｮｲ 26f7-89gZ) 2026/10/20(火) 17:43:49.09
+ &gt;&gt;359 <br> StrataはMoEの効率化が本質じゃなくてN-gramのSSDオフロードが本質で、MoEの効率化だけならFreeTokenとか <br> でもできるから、MoEのみのLLMなら別なツールの方が向いている <br>  <br> 文章から過去の文脈やどういう分野の文章かなどに依存しない単語間の局所性をTransformerから独立させて <br> キーバリューストアとして学習させるのがQwen 3.8 FlashのN-gramで、大規模データベースシステムでRDBMSの <br> 処理の一部をNoSQLで処理するシステムと考え方は同じだから大規模モデルでないとあまり意味がなく、 <br> N-gramを持たない小規模LLMにはStrataはあまり意味がない <br>  <br> DeepSeek-V4.1-FlashなんかはEngramがN-gramとほぼ同じものだからStrataでうまく扱える 
+
+371 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f56-QTwC) 2026/10/20(火) 17:44:38.66
+ 腟内断面図でコンドームしたちんぽがゴム中に射精する絵くらい、そろそろプロンプトだけで作れるようになっていいと思う 
+
+372 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f5a-hgbO) 2026/10/20(火) 17:44:49.22
+ ドット絵画風LORAその２。training.civitai.com でトレーニング。 <br> MOSS Image Base, dim32/alpha32, AdamW8bit, LR 1e-4, constant 1700steps, 100images(x8 scaled), 1024&#178; res. <br> 1時間14分で2000ステップ終了。まあまあ上手く焼けたか？エポック毎にかなり生成結果がブレるから極力50ステップくらいで生成結果見たいがcivitaiは無理 <br>  <br> SFT, 8steps/1cfg, SFT Turbo, er_sde/simple + 上記LORAあり（weight 1.5） <br> https://blobs-b2.civitai.com/file/blobs-managed-public/DK680TW4P2406JR222XZRPJRZ0?.png <br> SFT, 8steps/1cfg, SFT Turbo, er_sde/simple + LORAなし <br> https://i.ibb.co/fVDS5pvq/Comfy-UI-er-sde-1-0-8-2026-10-20-17-35-51-02.webp 
+
+373 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a4f-+3Zs) 2026/10/20(火) 17:47:10.24
+ mossのloraを、何も考えずにanimaの設定と素材のままで適当に作ってみたが、50分程度の学習でも結構いけるな <br> 生成が少し遅いがまあ仕方ない 
+
+374 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fce-0G2I) 2026/10/20(火) 17:48:38.55
+ &gt;&gt;351 <br> えっちな動画を作れるようになってから教えてください 
+
+375 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 17:53:53.13
+ &gt;&gt;372 <br> 一枚目のドット感めっちゃええな・・・ 
+
+376 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 667d-WNX/) 2026/10/20(火) 18:01:49.27
+ プロンプト生成だけなら、reasoning有効のgemma 4 e4Bで充分だと思う <br> シスプロをちょっと書けば規制も100%無効化出来るし 
+
+377 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.14]</span> (ﾜｯﾁｮｲ 0f17-0nLi) 2026/10/20(火) 18:07:31.06
+ &gt;&gt;373 <br> 同じ印象だけど <br> 50分程度というとたぶんAnimaの倍の時間かかってるんじゃない？ <br> それでAnimaより再現度下がるんじゃいまいちという評価なんだけど <br> CAMEじゃないほうが良いかね 
+
+378 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.40]</span> (ﾜｯﾁｮｲ f37d-hgbO) 2026/10/20(火) 18:09:57.37
+ &gt;&gt;353 <br> このノード、ComfyUIを最新版にすると動かなくなるね <br> 修正方法はここに書いてある <br> https://civitai.red/models/3009913/moss-edit-anime2real-anime-to-realistic 
+
+379 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/20(火) 18:14:08.53
+ &gt;&gt;372 <br> 1枚目は初代、2枚目は続編って感じでええな 
+
+380 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.364][木]</span> (ﾜｯﾁｮｲ cb03-bv9K) 2026/10/20(火) 18:34:07.77
+ &gt;&gt;369 <br>  <br> https://news.yahoo.co.jp/articles/f1eafbdd9fa1ab6e4fb0d490e1e8aa8d72500dd0 <br> 中国政府が海外にモデルを移して稼働させるのを禁止するらしいから影響受けとるんじゃないかな <br> API通じての提供は可らしい 
+
+381 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.40]</span> (ﾜｯﾁｮｲ f37d-hgbO) 2026/10/20(火) 18:36:48.01
+ MOSのComfyUIテンプレWFでプロンプトエンハンサーを使ってエロエロプロンプトを作りたい人は <br> Load CLIP→Generate Textの途中にこのLoRAを強度1で挟むとuncensoredに早変わりするよ <br> https://huggingface.co/nynxz/Qwen3.5-9B/blob/main/loras/qwen35-9b-hauhaucs_uncensored_lora_rank4_fp32.safetensors <br>  <br> 接続方法はここ参照 <br> https://www.reddit.com/r/StableDiffusion/comments/1x9s4ey/comment/phsrwjg/ 
+
+382 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.364][木]</span> (ﾜｯﾁｮｲ cb03-bv9K) 2026/10/20(火) 18:45:41.13
+ SDXLの頃Civitaiで拾ったLoRAで作ってた胸像風 <br> MossだとLoRA無しで作れてしまうんやね <br> https://tadaup.jp/Aev94Jce.webp 
+
+383 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 3f5a-hgbO) 2026/10/20(火) 18:47:40.96
+ サンイチ <br> https://blobs-b2.civitai.com/file/blobs-managed-public/4JJ3T8A877N7E3DJFHCYRAPAR0?.jpg 
+
+384 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2304][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 6aed-ux7a) 2026/10/20(火) 18:54:10.04
+ 「プロンプトを書く」時代から「LLMに書かせて回す」時代になってるみたいなのでmoss4コマ量産テスト <br> LLM：ストーリー、タイトル名、セリフ、json出力 <br> ﾜｲ：jsonコピペして実行 <br> 出された話はボツにせずすべて生成、mossは「ミミック」と「ハレンチ」が描けない <br> https://tadaup.jp/AM5VPWwA.jpg <br> https://tadaup.jp/Aphb3IDe.jpg <br> https://tadaup.jp/AfW14ZQY.jpg <br> https://tadaup.jp/AgN7lzgk.jpg <br> https://tadaup.jp/AvznVMtN.jpg 
+
+385 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ eaa0-2FoN) 2026/10/20(火) 18:57:31.77
+ &gt;&gt;357 <br> RAM32民「Strataで驚かぬこと山の如し」 <br>  <br> ついに低みの見物人のワイが驚く時が来るのか 
+
+386 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.70][苗]</span> (ﾜｯﾁｮｲ da10-JSxr) 2026/10/20(火) 18:59:42.07
+ &gt;&gt;384 <br> オチの天丼具合が四コマらしくてええなｗ <br> ドラクエ四コマ劇場を思い出すで 
+
+387 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.131][苗]</span> (ﾜｯﾁｮｲ 8f7b-hgbO) 2026/10/20(火) 19:02:24.82
+ &gt;&gt;384 <br> 困ったら4コマ目でバシルーラするの笑ったｗ 
+
+388 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.21]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/20(火) 19:04:41.48
+ キャラを全部吉田戦車のキャラに変えたらワンチャンいけるかも 
+
+389 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.109][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ 0fc8-sDml) 2026/10/20(火) 19:05:34.10
+ お前らが自分でネタ考えようとしないのは何故？ 
+
+390 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.23]</span> (ﾜｯﾁｮｲ 2385-FOcE) 2026/10/20(火) 19:05:49.93
+ 久しぶりに来たけどAnimaに次ぐ覇権が出た感じか 
+
+391 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee30-MU32) 2026/10/20(火) 19:06:00.56
+ &gt;商用ライセンスからはそれなりの収入を得ていますが、将来のAnimaバージョンの開発資金を自己負担できるほど、これをフルタイムの仕事として続けられるほどにはまだ十分ではありません。  <br> https://huggingface.co/circlestone-labs/Anima/discussions/244 
+
+392 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1acd-+3Zs) 2026/10/20(火) 19:06:19.35
+ &gt;&gt;389 <br> やりたい事はあるがスペックが足りないからや 
+
+393 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ dacf-3jye) 2026/10/20(火) 19:06:39.36
+ &gt;&gt;384 <br> 話の内容に不思議なところはあるけどキャラや世界観好きな人からすれば些細な事やし無限に出して楽しめる時代になったんやな 
+
+394 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.109][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ 0fc8-sDml) 2026/10/20(火) 19:07:25.38
+ &gt;&gt;392 <br> なら仕方ないな&#129401; 
+
+395 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee05-ojTY) 2026/10/20(火) 19:16:05.38
+ 人力で100億回の簡単な行列計算って何時間ぐらいかかりそう？ 
+
+396 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.26]</span> (ﾜｯﾁｮｲ 0b93-wyAK) 2026/10/20(火) 19:17:30.55
+ &gt;&gt;380 <br> これ中華モデル公開は現時点で公開済みのモデルで打ち止めってこと？ 
+
+397 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a10-+3Zs) 2026/10/20(火) 19:19:16.84
+ &gt;&gt;299 <br> ヒロシの声とか聴きたくなるよな 
+
+398 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/20(火) 19:20:08.88
+ &gt;&gt;382 <br> 魍魎の匣… 
+
+399 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.24]</span> (ﾜｯﾁｮｲ 3f82-bHJY) 2026/10/20(火) 19:28:37.03
+ ヒロシです… 
+
+400 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 1a4f-+3Zs) 2026/10/20(火) 19:30:07.29
+ &gt;&gt;377 <br> 時間は増えているね。オプティマイザは別に好みでいいんじゃないのか。ちなみにCAMEを使った <br> 細かい再現度に関しては何とも言えんが、適当loraでもわりと出ているので、今後の伸びしろは高いと思う。 <br> 英文無しで、タグだけでもそれなりに絵が出るので(効かないタグもあるが)、いまのところanimaと大差ない感覚 <br> もちろん細かい制御はmossの方が圧倒的に上 <br> 何気に背景もかなり強い 
+
+401 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee70-bIlb) 2026/10/20(火) 19:42:54.30
+ どれぐらいのを指すのかは知らんけどminimaxは一応グロも出るな <br> ゾンビに腹部破られて腸出たりはできた 
+
+402 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 19:46:49.20
+ &gt;&gt;384 <br> LLM特有の読み心地があるけどすごいわ <br> LLM側の創作能力があがれば全然いけそう 
+
+403 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.109][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/20(火) 19:49:06.18
+ 多分フィジカルAIが五感を手に入れて社会に出て文明を理解するまで <br> 面白い創作物はポン出しできない 
+
+404 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 3fce-0G2I) 2026/10/20(火) 19:49:50.22
+ あと1年もすりゃ&#129302;に漫画全部読ませるだけで無限に二次創作4コマを描き続けてくれるみたいなのできそう 
+
+405 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 19:57:50.49
+ 文字入れが出来てもそのメリットを活かせない <br> ワイはずっと loli, spread pussy, pussy focus, や <br> ワイは・・・弱い 
+
+406 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0ffd-hgbO) 2026/10/20(火) 20:00:42.37
+ 最後のボトルネックは人間の想像力だからな <br> 「生成に人間の指示が不要」という方向にAIが進化するのは間違いない <br>  <br> 数年後には動画視聴履歴や作品購入履歴から利用者の趣味趣向を分析して <br> 「&#129302;あなた好みのエロ漫画を自動生成しました」と無限にオススメしてくるAIが出来る <br>  <br> そしてスレ民たちはAIが自動生成した漫画をただ貼り付けるだけのbotになる 
+
+407  <span style="color:green;">警備員[Lv.168][UR武][SSR防][苗]</span> (ﾜｯﾁｮｲ a305-wy1c) 2026/10/20(火) 20:01:16.86
+ ようやく万紫千紅クリアしたので 今後はmossに注力や <br> https://i.ibb.co/xSJ9rQ7v/1020-moss.jpg 
+
+408 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ a3a2-ojTY) 2026/10/20(火) 20:06:42.15
+ 超ワイ好みの2.5D風味Loraを見つけたので捗る <br> https://civitai.red/models/3006790/anireal-or-anime-realism-for-moss-image <br>  <br> https://tadaup.jp/ANqimrEf.jpg 
+
+409 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee80-zLpW) 2026/10/20(火) 20:11:57.96
+ MOSS LoRA次々と出始めてるなワイもやってみるか <br> トリガーワードにgemma4キャプションにEVA02で突撃が良さそうか 
+
+410 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.21]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/20(火) 20:18:04.31
+ 不気味の谷亮子 
+
+411 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 20:18:30.08
+ 2.5D、手がリアルだと怖い 
+
+412 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8e5a-uB/8) 2026/10/20(火) 20:18:39.71
+ あーminimaxがどうやっても少し動くだけで顔や手が溶ける <br> これどうにもならんのかな <br> アニメキャラなんやが 
+
+413 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 20:22:18.73
+ いやそれでわかるやつおらんて <br> まずその溶けるというのが何なのか <br> ほぼ変わってないけどすごく細かくチェックしてるのか、何か間違っててガチでドロドロ溶けてくのか、こっちにはわからんのよ <br> 後者ならアドバイスできるけど前者ならそんなもんやでってなるわけで 
+
+414 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fb6-WNX/) 2026/10/20(火) 20:22:20.28
+ &gt;&gt;405 <br> A girl saying &quot;__greeting__&quot; with a speech bubble <br> __greeting__.txt に <br> にぃに… <br> おにーちゃん… <br> やだぁ… <br> ちくわ大明神 
+
+415 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.140][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ bea0-hgbO) 2026/10/20(火) 20:24:23.74
+ 何一つ情報開示せず答えだけを求めるとは <br> 欲張りさんやなあ 
+
+416 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2304][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 6aed-ux7a) 2026/10/20(火) 20:28:07.73
+ フリーレン全然知らんワイが「フリーレンのギャグ4コマを2つ同時に作って、タイトル含めて2列で縦に並べたjsonくれ」というだけで <br> あれらを出せたのは日本語をここまで扱えるmossならではやな <br>  <br> 人が内容に介入せずにストーリー付のjsonを作成して量産テストが出来たことに満足やわ <br> 世界観知ってる人なら話の修正をしてもっと面白くすることもできるやろうな 
+
+417 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.61][苗]</span> (ﾜｯﾁｮｲ aea2-hgbO) 2026/10/20(火) 20:38:34.32
+ &gt;&gt;406 <br> そこまで行ったら自分の環境に夢中でスレなんか見に来ないんやないか？と思った 
+
+418 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 1acd-+3Zs) 2026/10/20(火) 20:42:34.51
+ &gt;&gt;405 <br> なんか適当にキャプション増やすとかどうや <br> https://tadaup.jp/Ai3HGO41.png 
+
+419 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 1a54-GJcb) 2026/10/20(火) 20:43:42.11
+ 真に解決を求めるならAIに聞くか詳細な生成条件をここに開示するかの二択しか無いで 
+
+420 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 87bf-zbLm) 2026/10/20(火) 20:44:55.87
+ 困っています <br> たすけてください <br> お願いします 
+
+421 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 1acd-+3Zs) 2026/10/20(火) 20:47:16.72
+ &gt;&gt;415 <br> 経緯だけは分かっとる <br> このあいだからおる実写映像にアニメキャラを被せてvlog作りたいニキやろ 
+
+422 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 20:50:23.72
+ &gt;&gt;418 <br> 続きはFanboxで！ 
+
+423 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2385-rBIP) 2026/10/20(火) 20:52:30.18
+ 文字と擬音が付くだけでそんな喜ぶこと？ <br> クオリティ低いし 
+
+424 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 20:56:09.12
+ ストーリーで抜く派としてはこういうのを求めてたんや <br> 絵自体のクオリティとかどうでもええわ 
+
+425 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ ea87-+3Zs) 2026/10/20(火) 20:57:35.80
+ 陰毛の描き方がリアスが良すぎて永遠に乗り換えられん 
+
+426 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ de6e-WNX/) 2026/10/20(火) 21:01:52.08
+ BBOXで構図決められてセリフやら文字入れが簡単に出来るんだからすごい <br> あとはアニメモデルが来てクオリティ良ければ最高や <br>  <br> 来ればやが 
+
+427 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/20(火) 21:02:39.39
+ Nodes2.0対応でPower Lora LoaderからUltimate Lora Loader Civitaiに移行したら <br> Save Image w/ Metadata UniversalでLoRAが拾えなくなったけど <br> rgthree.pyを元にpyファイル追加したら対応できたわ <br> サンキューチャッピー 
+
+428 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fd7-+3Zs) 2026/10/20(火) 21:02:52.37
+ &gt;&gt;406 <br> 想像力を超えた理想をどんどん供給されると廃人になりそう <br> それよりも人間の想像力をスパイスとして使う方向に行ったほうが長持ちするだろうね <br>  <br> 参考例 <br> krea2 <br> https://tadaup.jp/AuJvo1Tz.png <br>  <br> moss <br> https://tadaup.jp/AHumYPE8.png <br>  <br> 自分はmoss派 
+
+429 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ d34b-hgbO) 2026/10/20(火) 21:03:59.00
+ &gt;&gt;418 <br> タフネタはルールで禁止スよね 
+
+430 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15][新]</span> (ﾜｯﾁｮｲ b7c0-/V8P) 2026/10/20(火) 21:06:25.44
+ &gt;&gt;423 <br> どしたん？学校でまたいじめられたんか？ 
+
+431 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.37]</span> (ﾜｯﾁｮｲ e601-9X42) 2026/10/20(火) 21:10:33.30
+ MOSSは美マンオブザイヤー狙えるな <br> 顔はpwenが個人的にはすき家 
+
+432 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ 6a8b-VDwl) 2026/10/20(火) 21:12:23.08
+ 動くと溶けるのはH3の仕様だから仕方ないね。ターボを切ると多少マシになる <br> それを修正するためにDe-RoPEって処理をするノードがあるけど <br> 生成した動画を引き延ばしてスローモで再生成して縮めるので時間がかかる <br> それでも完全に修正できる訳じゃない 
+
+433  <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 2771-WNX/) 2026/10/20(火) 21:13:46.70
+ またLORAも作ってない連中がクオリティ云々言ってるのかい <br> 何回やるねんこのパターン 
+
+434 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eeba-fNqP) 2026/10/20(火) 21:17:26.25
+ &gt;&gt;418 <br> ネタやのに文字入るとちゃんとして見えるな <br> 変な感覚や 
+
+435 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee51-phUI) 2026/10/20(火) 21:17:46.47
+ ぷえん&#129402; 
+
+436 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 0f17-0nLi) 2026/10/20(火) 21:19:01.38
+ animaとリアスとMOSSで同一素材でLora作ったけど今んとこクオリティはanimaが一番いいよ <br> MOSSはかかる時間の割に出来がもうちょっと足りない感じになってしまう 
+
+437 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 21:19:28.67
+ &gt;&gt;428 <br> たしかにmossのノイズ感がリアル・・・か？ 
+
+438 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fa2-tZNN) 2026/10/20(火) 21:19:33.41
+ 真のPen（ぴえん）モデルが待たれる 
+
+439 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 21:20:42.69
+ 俺の亞里亞、にいに呼びじゃなかった <br> https://i.imgur.com/ILyXWAN.jpeg 
+
+440 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 1a54-GJcb) 2026/10/20(火) 21:21:03.71
+ loraもまぁめんどいと言えばめんどいから赤ちゃんになりたくなるのも分かるわ <br> 今絵柄loraぶんまわしてるけど中々決まらない&#129770; 
+
+441 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 3fd7-+3Zs) 2026/10/20(火) 21:28:04.08
+ &gt;&gt;434 <br> キャプションいれるだけで想像力がスパイスになる <br>  <br> https://tadaup.jp/AKO18cn6.png 
+
+442 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.164][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/20(火) 21:28:40.75
+ Lora作ればアニメモデル先取りできます 
+
+443 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f60-wy1c) 2026/10/20(火) 21:33:43.87
+ &gt;&gt;436 <br> そこに+krea2で比較してるけど個人的にはいまんとこ <br> krea2 &gt;&gt; リアス &gt; anima &gt; MOSSだわ <br> というかkrea2の前にはほか全部誤差レベルでkrea2の覚えと線の安定がありすぎ 
+
+444 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.14][新]</span> (ﾜｯﾁｮｲ aa9b-hMOK) 2026/10/20(火) 21:38:44.14
+ 定期的に起こる分断工作始まったな <br> 作例無きヘタな奴ほど一番声でかいんよな 
+
+445 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.822][林]</span> (ﾜｯﾁｮｲ 3fa8-2tho) 2026/10/20(火) 21:39:12.31
+ &gt;&gt;441 <br> 犯される！ 
+
+446 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ a302-WNX/) 2026/10/20(火) 21:40:37.70
+ &gt;&gt;406 <br> いや、そうなったらAIが勝手に人間側を矯正してこようとするやろな <br> &#129302;「出力できません。あなたの性的嗜好は極端に非倫理的で性差別的です。代わりに性教育とジェンダーの教材を生成したので勉強してください」 <br> とかなりそう 
+
+447 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.113][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/20(火) 21:40:40.43
+ MOSSがリアスより下は金貰わん限り主張出来ないわｗ 
+
+448 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ eea6-KP3i) 2026/10/20(火) 21:48:45.12
+ 版権はリアスの方が強いしな <br> 画像参照出来るから死角無くなったが 
+
+449 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eeaf-OrVH) 2026/10/20(火) 21:50:38.64
+ &gt;&gt;408 <br> 左下ええやん 
+
+450 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.60][苗]</span> (ﾜｯﾁｮｲ dac9-QevX) 2026/10/20(火) 21:51:12.84
+ チャッピーや&#127820;みたいに超お手軽に画像参照できなきゃ始まらないよ俺のMOSS 
+
+451 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f60-wy1c) 2026/10/20(火) 21:51:17.61
+ &gt;&gt;447 <br> いやモデルの実力とは関係なく多分こっちのパラメータ調整が悪いのと最適化不足だと思う <br> ただkrea2だけはそういうの全て吹っ飛ばす勢いで学習した絵をそのまま出してきた(しかも20Epoch足らずで)からMOSSにもそのレベルを期待したのが肩透かしだっただけ 
+
+452 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fc7-tZNN) 2026/10/20(火) 21:51:45.37
+ MOSSに身内○されたんか？ <br> っていうぐらい、意地でもMOSSを下に見たい勢マジで意味不 
+
+453 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.22]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/20(火) 21:54:12.28
+ MOSSをコケにすんなよ 
+
+454 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ea4b-gabJ) 2026/10/20(火) 21:55:48.65
+ strata最新版でハーネス搭載されてるで <br> https://tadaup.jp/AGYQof4J.png 
+
+455 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fa6-hgbO) 2026/10/20(火) 21:59:18.28
+ VRAMよわよわ勢はKrea2まともに動かなかったはずだからMOSS来てついにローカルで文字入れして遊べることに喜んでるぞ 
+
+456 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.38]</span> (ﾜｯﾁｮｲ aec4-hgbO) 2026/10/20(火) 22:01:03.07
+ 96GBでstrata使っていまってええんか 
+
+457  <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 2771-WNX/) 2026/10/20(火) 22:03:36.73
+ 絵柄やクオリティは大抵後からどうとでもなる部分だから、一番重要なのは言う事を聞いてくれる事やと思うで <br> あと実写勢と２次元勢は話が噛み合わんくて荒れるから、最初に実写かどうか言って欲しいわ <br> ちなワイは2.5D派や（折衷案） 
+
+458 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ bb54-hgbO) 2026/10/20(火) 22:05:32.17
+ MOSSは漫画作りみたいな今まで出来なかったクリエイティブなことがしたい人向けやろ <br> 版権キャラは弱いから3次かオリキャラ前提や 
+
+459 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 22:06:42.15
+ mossは一枚絵を作るためだけのものではないところから理解するべきやな 
+
+460 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.822][林]</span> (ﾜｯﾁｮｲ 0f78-2tho) 2026/10/20(火) 22:07:09.65
+ &gt;&gt;456 <br> Strata作者は64GB環境や 
+
+461 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ de0f-hgbO) 2026/10/20(火) 22:08:14.22
+ Mossの画風loraなかなかうまくいかんかったけどbaseやなくてsftで学習したらなんかうまくいきそうな感じや… 
+
+462 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 8792-zbLm) 2026/10/20(火) 22:08:30.50
+ &gt;&gt;453 <br> mossリリース前から苔って意味知ってた人 <br> ?英語のことわざ &quot;A rolling stone gathers no moss.&quot; <br> ?MGS3のジ・エンドの迷彩服が MOSS <br> のどっちかを知ってた人に限られそう(過去ログみたらどちらもネタにされていた) 
+
+463 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8e69-uB/8) 2026/10/20(火) 22:09:16.31
+ AIでVtuber作って海外向けにYouTubeやろうと思うんやが伸びると思う？ 
+
+464 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.38]</span> (ﾜｯﾁｮｲ aec4-hgbO) 2026/10/20(火) 22:09:38.76
+ &gt;&gt;460 <br> 128gbないとダメ見たいなレビュー鵜&#21534;みにしてたわありがとう 
+
+465 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 4a39-hgbO) 2026/10/20(火) 22:10:33.07
+ 必要スペックの要件が更新されててもこんだけ積んでないとあれは出来ないこれは出来ないって <br> 情報更新されないで吹聴されて回れ右するやつおおいからなぁ 
+
+466 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f60-wy1c) 2026/10/20(火) 22:10:34.99
+ &gt;&gt;461 <br> あーやっぱbaseやと安定せんのか <br> Fizgigでやっとるんやけど1epochごとに絵が暴れまくる上にどうやってもコレジャナイ感しかない絵しか出ん感じで詰まってたわ <br> sft試してみるか…… 
+
+467 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 0fb6-WNX/) 2026/10/20(火) 22:13:47.46
+ ワイ「strata画風Lora作って」 <br> strata「じゃぁネットから画像集めて選別してキャプションつけて学習させたあと落として終わったら復帰するね」 <br> １時間後 <br> ワイ「どういう設定で何回まで回すのかわからん…200，400〜1400まではあるようやが・…」 
+
+468 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fe3-+3Zs) 2026/10/20(火) 22:15:20.52
+ &gt;&gt;463 <br> AiVtuberはもうブームも去った感があるんで今からやるんならneuro-samaレベルの品質やないと伸びんと思うで <br> まあ何がバズるか分からんのでやってみるのも手やが 
+
+469 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.22]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/20(火) 22:16:22.48
+ &gt;&gt;462 <br> ワイはM:tGやった <br> まだ日本語版なかった頃や 
+
+470 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 22:16:32.54
+ &gt;&gt;457 <br> それ 
+
+471 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8e69-uB/8) 2026/10/20(火) 22:18:43.99
+ &gt;&gt;468 <br> 日本語でやるか海外向けにやるか迷うんだよな <br> それこそ最近やとマルフォイ女体化アニメ流行ってるやん <br> ああいうのminimaxとかで作って英語でやったらバズらんのかな 
+
+472 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ce94-Q87P) 2026/10/20(火) 22:20:37.76
+ https://tadaup.jp/AeGvMBgO.jpg 
+
+473 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 0fb6-WNX/) 2026/10/20(火) 22:22:13.76
+ そのために作ってバズるなら才能あるよ <br> 逆説的にここにいるはずのない人材 <br> 作りたいもの作って公開したらいいんじゃないの <br> 道徳に反しないなら 
+
+474 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.49]</span> (ﾜｯﾁｮｲ bb85-J0pX) 2026/10/20(火) 22:22:22.40
+ &gt;&gt;454 <br> これって、裏でcomfyとか連携させてるの？ 
+
+475 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.27]</span> (ﾜｯﾁｮｲ 0b93-wyAK) 2026/10/20(火) 22:22:51.73
+ moss /サカナクション 
+
+476 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.97][苗]</span> (ﾜｯﾁｮｲ 1acd-+3Zs) 2026/10/20(火) 22:23:50.26
+ TSマルフォイのアニメを作っとるの外人やぞ <br> わざわざ台詞を日本語に翻訳して生成してから英語でキャプションを打っとるのがミソなんや <br> あったかもしれない過去を捏造して楽しんどる 
+
+477 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.113][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/20(火) 22:24:55.40
+ &gt;&gt;474 <br> ワイもやけど恐らく2GPU環境やね <br> 片方にStrataのQwen3.8 FNを載せてもう片方で画像や動画生成 
+
+478 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8e9c-uB/8) 2026/10/20(火) 22:25:10.00
+ &gt;&gt;476 <br> これの逆手をとってaiキャラが日本を紹介する動画を英語でやるのはどうやろ 
+
+479 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ 4a39-hgbO) 2026/10/20(火) 22:26:41.23
+ &gt;&gt;476 <br> 読み方や発音チェックはされてないのよくわかるもんな 
+
+480 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3ff8-MtnC) 2026/10/20(火) 22:28:11.46
+ ワイ「Mossのloraの作り方教えて」 <br> &#129302;「はい。アニメ画像ですか？それとも実写画像？」 <br> ワイ「実写」 <br> &#129302;「それは実在の人物でしょうか？それともAI生成した架空の人物でしょうか？」 <br> ワイ「AI生成した架空の人物」 <br> &#129302;「わかりました。ですが今回の作業はお手伝い出来ません。その理由として、以前inputフォルダにうんぬんかんぬん」 <br>  <br> なんやコイツ 
+
+481 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fea-O/+2) 2026/10/20(火) 22:32:47.68
+ 朝にmossのlora学習仕掛けて仕事出かけて <br> 夕方帰宅したら室温30度超えとったわ <br> この冬も暖房要らねえなあガハハ 
+
+482 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f1b-ojTY) 2026/10/20(火) 22:34:34.59
+ civitaiのMOSSのLoraの増え方みてるとハケンなんやなって 
+
+483 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 3fa3-gabJ) 2026/10/20(火) 22:34:40.27
+ &gt;&gt;474 <br> Comfyを叩くスキルを用意してる <br>  <br> &gt;&gt;477 <br> これは1GPUで同時ロードしてる 
+
+484 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a345-WNX/) 2026/10/20(火) 22:34:52.22
+ &gt;&gt;462 <br> いや多少園芸やってたら苔＝モスぐらい知っとる人おるやろ… 
+
+485 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.1][新芽]</span> (ﾜｯﾁｮｲ ce94-Q87P) 2026/10/20(火) 22:37:51.13
+ リアス登場時ワイ「うーんキャラlora画風loraのハイパーパラメータとキャプションの違いが分からねぇな&#65374;一緒でええんか？」 <br> アニマ登場時ワイ「うーんキャラlora画風loraのハイパーパラメータとキャプションの違いが分からねぇな&#65374;一緒でええんか？」 <br> krea2登場時ワイ「うーんキャラlora画風loraのハイパーパラメータとキャプションの違いが分からねぇな&#65374;一緒でええんか？」 <br> moss登場時ワイ「うーんキャラlora画風loraのハイパーパラメータとキャプションの違いが分からねぇな&#65374;一緒でええんか？」 
+
+486 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.48][R武][R防]</span> (ﾜｯﾁｮｲ 0f6f-wy1c) 2026/10/20(火) 22:38:13.25
+ strata webui版から直接更新できなかったから入れ直したんだけど、experimental speed projectionどこいったん? 
+
+487 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.31]</span> (ﾜｯﾁｮｲ aed2-gUZT) 2026/10/20(火) 22:44:27.16
+ mossの現場猫謎漫ﾏﾀﾞｰ？ 
+
+488 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.113][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/20(火) 22:44:35.00
+ &gt;&gt;483 <br> 強過ぎて草 
+
+489 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ae94-Q87P) 2026/10/20(火) 22:45:50.37
+ いいよ！dimはチンコで、アルファはキンタマだ！ 
+
+490 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/20(火) 22:46:53.36
+ モスって聞いたらこっちやろ普通 <br> https://tadaup.jp/AEDrtfSY.jpg 
+
+491 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13][新]</span> (ﾜｯﾁｮｲ 0fa6-O14r) 2026/10/20(火) 22:47:42.66
+ スペルちゃうやろ 
+
+492 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f99-MU32) 2026/10/20(火) 22:52:24.23
+ psyop animeとか、凄いペースで時事ネタのレトロ風AIアニメ作ってるところも日本語でセリフ喋らせて英語字幕つけてるけど、あれも作ってるの日本人じゃないよね 
+
+493 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12][新]</span> (ﾜｯﾁｮｲ 2711-hgbO) 2026/10/20(火) 22:53:30.64
+ キングギドラええけどモスラも見たかったな <br> 今度の映画 
+
+494 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ da95-1V4M) 2026/10/20(火) 22:53:59.10
+ 新モデル来たわりに勢いいまいちやけどお前らもう画像生成自体に飽きてきてない?&#129402; 
+
+495 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 2753-hgbO) 2026/10/20(火) 22:54:51.61
+ モス言うたらモンハンのあの豚やな <br> もうクビになったんやっけ 
+
+496 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ a345-WNX/) 2026/10/20(火) 22:55:27.72
+ AI動画は粗製乱造型や有名動画の劣化コピー型のチャンネルは大体中国がやってるっぽいで <br> なぜか中国語のウォーターマークが入ってたりする 
+
+497 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fea-V/wr) 2026/10/20(火) 22:56:09.61
+ &gt;&gt;480 <br> 感のいいAIは嫌いだよ 
+
+498 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/20(火) 22:57:05.78
+ これもやな <br> https://tadaup.jp/AU3MkcJ4.jpg 
+
+499 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ 73cd-PAvg) 2026/10/20(火) 22:58:46.69
+ まあ流行るかどうかはLoraが作りやすいかもあるしなあ 
+
+500 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/20(火) 23:01:40.84
+ アニメモデルきたらワイもmoss移行するんゴ <br> 寝よ <br> https://tadaup.jp/AeLZ82oO.jpg 
+
+501 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/20(火) 23:02:01.60
+ &#128116;「エロ小説書いて」 <br> &#129302;「はい」 <br> &#128116;「それをmossでエロ漫画にして」 <br> &#129302;「はい」 <br>  <br> こんなこともやれるんやで <br> そう、geminiならね 
+
+502 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.60][苗]</span> (ﾜｯﾁｮｲ dac9-QevX) 2026/10/20(火) 23:04:12.20
+ 稚拙やけどチャッピー使って画像参照できたで <br> https://i.ibb.co/cX8DLcww/225510-112934713484743-00001.png <br> 元画像はこの娘や <br> https://i.imgur.com/yZIKr5u.jpeg <br> バウンディングボックス内に元画像のキャラにさせたい動作のプロンプト書き込むんやけどgeminiとかみたいに直感的に指示させたかったで 
+
+503  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-Ga4M) 2026/10/20(火) 23:04:47.00
+ &gt;&gt;464 <br> この分野は1日前のレビューすら時代遅れや 
+
+504  <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 2771-WNX/) 2026/10/20(火) 23:05:25.52
+ MOSS（Multi Oscillater Synthesis System） 
+
+505 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 9f4b-KuwF) 2026/10/20(火) 23:07:15.28
+ ここでたまに見る雑誌の紹介記事風の画像って、具体的には何のモデルで作ってる？ <br> ググっても、表紙風ばっかり出てきて、違うそうじゃないとなる。 <br> comfyuiでワークフローとかを組んでるのかと想像するが、forge-neoとかでも拡張とか組み合わせればできるもの？ 
+
+506  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-Ga4M) 2026/10/20(火) 23:08:31.74
+ &gt;&gt;488 <br> 16GBあればStrata 12GB割り振りで同時起動いけるで <br> 画像生成はちょっと遅くなるが 
+
+507 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eeba-s9jZ) 2026/10/20(火) 23:09:19.76
+ &gt;&gt;505 <br> chatgpt 
+
+508 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新芽]</span> (ﾜｯﾁｮｲ 4a39-XRBT) 2026/10/20(火) 23:10:01.97
+ &gt;&gt;505 <br> AI時代にググるとはまさに情弱！ 
+
+509 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee69-V6vr) 2026/10/20(火) 23:11:18.00
+ いつの間にかMOSSっていうのが出てたんか <br> すぐ置いてかれる 
+
+510 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ 4a39-hgbO) 2026/10/20(火) 23:14:25.96
+ 最適化で自分のスペック圏内におりてくるまで低見の見物 
+
+511 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ a345-WNX/) 2026/10/20(火) 23:17:13.83
+ &gt;&gt;510 <br> mossはint8なら多少の低スペックでも問題なく動く 
+
+512 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ de14-O4M6) 2026/10/20(火) 23:28:33.75
+ ComfyのDay0サポートにkijaiが参戦しとる時代に <br> 最適化待ちって具体的に何を待っとるんや？ 
+
+513 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.97][苗]</span> (ﾜｯﾁｮｲ 1acd-+3Zs) 2026/10/20(火) 23:29:47.22
+ 少しカットオフが古い気はするがアニメモデルやなくても二次キャラに関して弱いとは思わんがなぁ <br> 画風もLoRAを作らんでも年代・(アニメ|少年マンガ|少女漫画|エロ漫画|実写)風・陰影の濃さや塗り方(厚塗り|セルシェーディング|身体だけ実写風)・作品名とか組み合わせたら結構安定して出せるで 
+
+514 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.49][R武][R防]</span> (ﾜｯﾁｮｲ 0fd8-wy1c) 2026/10/20(火) 23:41:58.19
+ &gt;&gt;486 <br> 自決した。 <br> 最新版はファイルは残ってるけど有効化のフラグがなくなってるらしい。 <br> &quot;C:\Users\hango\AppData\Local\Strata\install\strata-iq3_s.json&quot; <br> に追記したらいいらしい。 <br> 公式で消されたわけだしあんまり詳しく書くのはやめとくけど、 <br> 本人(本AI)に聞いたらやりかた教えてくれたんでやりたい人は自己責任で！ 
+
+515 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.49][R武][R防]</span> (ﾜｯﾁｮｲ 0fd8-wy1c) 2026/10/20(火) 23:43:03.66
+ (やべ、ユーザー名書き換えてないけど実名関係ないしまぁ問題ないやろ) 
+
+516 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.164][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/20(火) 23:44:44.46
+ なんでモデル作ったやつって今までキャプション方法黙っとったんやろな <br> シンプルタグ以外の方法で徐々にこみいってきてやっと必須要素だということがわかって <br> 大抵スキルとかドキュメント用意するようになったけど 
+
+517 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ a345-WNX/) 2026/10/20(火) 23:56:22.63
+ hango…飯盒炊爨かな？ 
+
+518 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ de06-2GjY) 2026/10/21(水) 00:01:47.49
+ &gt;&gt;505 <br> chatgptにお願いすれば表紙も中身も作ってくれる <br> https://tadaup.jp/AhzdwRL1.png <br> https://tadaup.jp/AANRKeJz.png 
+
+519 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 00:05:39.74
+ 半五…つまり2.5Dだな！ 
+
+520 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.24]</span> (ﾜｯﾁｮｲ 3f82-bHJY) 2026/10/21(水) 00:05:56.56
+ &gt;&gt;517 <br> AVのコピペ思い出した 
+
+521 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f0d-m5dc) 2026/10/21(水) 00:23:12.69
+ 結局チャッピーが圧倒的最強なんだよ <br> エロが出せないというだけで 
+
+522 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 837b-J06F) 2026/10/21(水) 00:24:31.70
+ &gt;&gt;518 <br> お願いの仕方を教えろやカス 
+
+523 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fb2-hgbO) 2026/10/21(水) 00:26:22.56
+ チャッピーなんてどんな指示だろうと見栄えするもん出てくんだろ 
+
+524 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.110][UR武][UR防][苗]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/21(水) 00:27:24.56
+ エロ同人の表紙はmossで作れるようになりましたか？ 
+
+525 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新芽]</span> (ﾜｯﾁｮｲ 3f5a-hgbO) 2026/10/21(水) 00:28:05.28
+ 舐めようとしてる乳首が伸びたり女の顔がアリクイみたいに伸びたりするしもう1000ステップくらい回してみるか……（というか普通の騎乗位画像は教師画像に要らん気がする） <br> https://i.ibb.co/8422WWNQ/Comfy-UI-er-sde-1-0-4-2026-10-21-00-18-18-02.webp 
+
+526 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.22]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/21(水) 00:29:42.06
+ chatGPTに出させた乳首はエロモデルの乳首より興奮する <br> ふだん見れないものを見れた時の喜び、そう……知り合いのチクチラ見ちゃった時のような 
+
+527 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8]</span> (ﾜｯﾁｮｲ 7f49-PAvg) 2026/10/21(水) 00:36:44.70
+ KJNodesのナイトリーでIdeogram 4のBboxのやつに似たMOSS-Image Prompt Builder KJが降ってくるよ 
+
+528 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ 4a39-hgbO) 2026/10/21(水) 00:44:41.42
+ ANIMAでもおもってたけどMOSSのLoRA学習も解像度低いほうが覚えがいい気がするんだよね <br> 4倍の解像度で4倍のステップの学習しても確実に上位互換的結果にならないんだ 
+
+529 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.145][UR武限][UR防限][苗]</span> (ﾜｯﾁｮｲ 0fa2-ZX6f) 2026/10/21(水) 00:55:12.32
+ くっそ、ずっとbaseでやっててponyより制御がむずい、よくみんな乗りこなしてるなと関心してたのに <br> baseは生成向けちゃうやんけwww <br> ちゃんと書いてあることは読まんとなー 
+
+530 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6]</span> (ﾜｯﾁｮｲ 2385-WNX/) 2026/10/21(水) 01:09:23.91
+ mossってsfrでも実写だと結構プロンプト繊細に扱わないとボディホラー頻発する？ <br> krea2turboのプロンプト流用してやっているけど指が崩れるの多い 
+
+531 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ beb0-hgbO) 2026/10/21(水) 01:34:13.16
+ Emoji-TTS最近更新入ったみたいだけど <br> 絵文字キャプションオフにしてキャプションだけ吐かせようとしても処理後に自動で絵文字キャプが立ち上がるようになってるわ <br> そういう仕様なんかな 
+
+532 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 664f-wy1c) 2026/10/21(水) 01:45:25.99
+ チャッピーは情報量を適切に削るようちゃんと指示せなあかんやろ <br> 適当だとあかんモデル筆頭やで 
+
+533 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.113][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/21(水) 02:18:46.04
+ Strataのデスクトップアプリ版にしたらバチクソ遅くなったンゴ･･･ 
+
+534 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a59-ojTY) 2026/10/21(水) 02:21:00.93
+ mossおもしろ <br> https://tadaup.jp/ANr2BFWm.jpg 
+
+535 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.103][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ b7e7-neQj) 2026/10/21(水) 02:42:12.61
+ 文字特に扱わないならbaseでもいいのかなと思ってたけど <br> baseとSFTだとだいぶ絵柄変わって出るのが興味深い 
+
+536 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee09-nL3o) 2026/10/21(水) 03:08:15.74
+ &gt;&gt;471 <br> そういうみんながすぐに思いつく動画はすでにあったしたいして伸びていない 
+
+537 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8eea-uB/8) 2026/10/21(水) 03:15:34.67
+ minimaxでアニメ動画作るとどうしても3dぽくなるわ <br> 2dぽくできないんか？aeとかで 
+
+538 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ d351-SxSn) 2026/10/21(水) 03:26:46.93
+ さすがにminimaxみたいな古すぎる話題はもうええて 
+
+539 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee90-1lmy) 2026/10/21(水) 03:31:24.99
+ これから新たなオープンモデルが出る言われとるが何来るんやろ <br> krea3では無いらしいからideogram4.5か？ 
+
+540 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span> (ﾜｯﾁｮｲ 6a8b-VDwl) 2026/10/21(水) 03:39:05.26
+ &gt;&gt;537 <br> FlatAnimeLoRA使うとか？副作用としてちょっと日本語変になるけど 
+
+541 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.40]</span> (ﾜｯﾁｮｲ f37d-hgbO) 2026/10/21(水) 03:43:25.40
+ &gt;&gt;527 <br> これで諸悪の根源Nodes2.0を使わないで済むな <br> Kijaiと教えてくれたニキに感謝 
+
+542 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fbf-Qwcj) 2026/10/21(水) 03:45:24.14
+ これ1年くらい離れたらもう最先端が化石になるな <br> 進化が早すぎるッピ 
+
+543 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span> (ﾜｯﾁｮｲ 6a8b-VDwl) 2026/10/21(水) 03:49:10.53
+ 一年経たずにフロンティアモデル相当がローカルに降りて来てるからね <br> 最近も新モデルラッシュだしまだ加速しそう 
+
+544 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.68][苗]</span> (ﾜｯﾁｮｲ aace-+3Zs) 2026/10/21(水) 03:54:38.81
+ &gt;&gt;543 <br> ベンチマーク詐欺疑惑ある <br> それでも十分凄いけど、1世代分くらい下駄履いてる印象ある <br> もしくはハーネスの設定で1,2世代は変わってそう <br> 今色々なハーネス使ってるけど結果がかなり違う 
+
+545 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3ff4-WNX/) 2026/10/21(水) 04:00:58.82
+ MOSSのLora作ったけどうーん... <br> 生成も重すぎるしどうなん <br> コツの問題かこれは 
+
+546  <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ bb85-WaZu) 2026/10/21(水) 04:02:48.49
+ bboxといえばワイのDrawerでもMOSS専用のノード追加したで <br> その他最近単体でも動くようにしたのでスマホとかでクソ重不安定なフロントエンドを開かずに済むようになったで <br> よしなにどうぞ <br> https://github.com/Kuroi961/ComfyUI-Drawer <br> https://i.imgur.com/FYa8sfQ.jpeg 
+
+547 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee0e-uB/8) 2026/10/21(水) 04:04:54.82
+ &gt;&gt;540 <br> そんなのあるんか 
+
+548 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fb3-ojTY) 2026/10/21(水) 04:11:39.59
+ MOSSのキャラlora全然だめやん <br> 画風も変わるし容姿も違う　使い物にならん 
+
+549 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fb3-ojTY) 2026/10/21(水) 04:12:12.47
+ 公式にキャラLORAのコツぐらい記載してほしい 
+
+550 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 04:23:23.95
+ コツ:5chで悪態をつくのではなく素直に条件を教えてもらうこと 
+
+551 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 3ff4-WNX/) 2026/10/21(水) 04:34:40.43
+ ワイの実力ではこれが限界だった <br> https://imgur.com/a/dxGRvd4 
+
+552 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新]</span> (ﾜｯﾁｮｲ 664f-wy1c) 2026/10/21(水) 05:11:21.20
+ 世界樹ニキは難しいと言いつつもちゃんlora作っとるから無理ではないんやろな 
+
+553 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f62-/5vD) 2026/10/21(水) 05:24:45.64
+ 正直2次元エロはnaiで困ってないのでね 
+
+554 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fb8-mtk3) 2026/10/21(水) 05:38:05.42
+ &gt;&gt;550 <br> 悪態というか開発なんだから全部知ってるのに公開しない意味がわからないというだけや 
+
+555 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.113][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/21(水) 05:46:55.31
+ どのツールを使ってどんな設定で回したのか <br> 期待する結果と実際の出力の差 <br> この辺をめんどくさがらずに書き込めばLoRA職人からの的確なアドバイスも飛んできて割と秒速で解決しそうやけどね <br> 知らんけど 
+
+556 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fb7-2FoN) 2026/10/21(水) 05:48:28.54
+ 三次専のワイがMossを見切ったのに二次に期待すんなとはどういうことやねん <br> ゲームチェンジャー10月号の表紙を飾るモデルやなかったのか 
+
+557 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.113][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/21(水) 05:54:10.17
+ アニ豚ジャッジやと今現在でもリアスを超えるAI生成モデルは世に出てない事になるけど実際はリアスなんぞ最早化石レベルで進化が続いてるんよなぁ 
+
+558 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.364][木]</span> (ﾜｯﾁｮｲ cb03-bv9K) 2026/10/21(水) 05:57:10.56
+ &gt;&gt;530 <br> 実写組だけどボディホラー頻発する印象はないなあ <br> もちろん100枚くらい出せば何枚かはあるけど <br> sftで律儀に50step回しているからかもしれない <br>  <br> sling shot swimsuitも知っているみたいなのでbunnyちゃんに追加 <br> ついでにさっき拾ったcameltoe LoRA追加 <br> https://tadaup.jp/AyegkoEZ.webp <br>  <br> &gt;&gt;527 <br> これは朗報 <br> YDRの人のを使っているけど設定のコピペが出来なかったり下の方のアクセスが出来なかったりで期待してたので今の生成が終ったら試してみよう 
+
+559 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.49][苗]</span> (ﾜｯﾁｮｲ 73a0-J0pX) 2026/10/21(水) 05:57:51.53
+ loraのキャプションはこういう作りやからこうしろぐらいは書いてたやろ 
+
+560 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.2305][UR武限][UR防限][二段森]</span> (ﾜｯﾁｮｲ 6aed-ux7a) 2026/10/21(水) 06:01:55.58
+ bboxノードのコピペとundoは地味に対応して欲しいやね 
+
+561 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee59-5qDE) 2026/10/21(水) 06:12:06.48
+ &gt;&gt;554 <br> タグ付けるためのシステムプロンプトは公開してるやろ <br> LoRAの作り方については未知なんちゃうか <br> 本体作る側やし 
+
+562 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 0f89-WNX/) 2026/10/21(水) 06:13:49.47
+ &gt;&gt;558 <br> 箱ニキは知識欲すごいなぁ 
+
+563 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.27]</span> (ﾜｯﾁｮｲ 0b93-wyAK) 2026/10/21(水) 06:46:23.09
+ 実写て流れくるの見てると複数人とか顔が同じすぎるのが気になるんやがあれ上手い下手あるんか？ 
+
+564  <span style="color:green;">警備員[Lv.162][SSR武][UR防][苗]</span> (ﾜｯﾁｮｲ bb10-uXCC) 2026/10/21(水) 06:55:14.62
+ &gt;&gt;552 <br> 言うてわいも試行錯誤で上から殴ってるようなやり方やからなんとも <br> lora(名前は素材フォルダのが適用すぎて4とか付いとる)強度設定こんなんやし(sftのloraで造形取ってbaseのloraで塗りを取ってる) <br> https://xxup.org/ZEn47.png <br> 出力画像 <br> https://xxup.org/goXBI.jpg <br> https://xxup.org/2Wzqv.jpg <br> https://xxup.org/vLEuI.jpg <br> あと学習はBF16やけど出力はint8のSFTやな <br> 学習はdim24alpha24の学習解像度512,768,1024の3種類にして全層学習 <br> キャプションはchatgptで健全なのは付けてもらって不健全なのは口頭で伝えて翻訳してもらった(成人って書かれるから書き直しがいるが) 
+
+565 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f25-hgbO) 2026/10/21(水) 07:02:52.67
+ 顔は最初からllmで人数分の特徴作って指示したほうがいいみたい 
+
+566 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f25-hgbO) 2026/10/21(水) 07:04:39.60
+ ボディホラーはloraとは関係なく最近のモデルだと自由度を抑えてるかわりに出にくくなってたのが <br> 学習データが少ないポーズを指示するとsftでも結構出る印象 <br> 多分プロンプトの工夫で抑えられるんだろうけどノウハウ貯まるの待ちかな 
+
+567 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f60-MU32) 2026/10/21(水) 07:22:55.41
+ Fibo 2.0 <br> https://github.com/Comfy-Org/ComfyUI/pull/17240 <br>  <br> edit用のか？ 
+
+568 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 07:27:40.15
+ 実写で思い出したがmossは濡れ透けの表現が弱い <br> あとこっちはガチャの問題かもしれないがビニールの透明度も低い 
+
+569 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 07:32:39.10
+ lora作りってモデル作成者から見るとゲームのmodと同じ感じなんちゃうかな <br> メリットも大きいが色々リスクもあるし複雑な気持ちってところちゃうんかな <br> 特に収益化目指しとる場合は手放しで推奨はできんやろね 
+
+570 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新]</span> (ﾜｯﾁｮｲ ee59-5qDE) 2026/10/21(水) 07:34:54.81
+ kjnodesにMOSS-Image Prompt Weightあるやん！ 
+
+571 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f6a-fDH0) 2026/10/21(水) 07:37:36.70
+ Mossは目当ての表現ごとにクオリティタグを変えていかなアカンかも <br> タグによって得意不得意があるように見える <br> XLの時に品質タグを並べてたらその内のいくつかが体位の邪魔をしてるって現象があったがMossにもあるっぽい <br> まあ当然か 
+
+572 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 3f25-hgbO) 2026/10/21(水) 07:44:36.47
+ negative prompt が大事っぽいね 
+
+573 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eeaa-OrVH) 2026/10/21(水) 08:35:06.98
+ 他所でもMossの学習むずいとは言われとるね <br> できなくはないんやろうけども <br> https://www.reddit.com/r/StableDiffusion/comments/1xae3tj/moss_loras_training/ 
+
+574 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 08:37:04.89
+ &gt;&gt;568 <br> 自己レス、勘違いやったスマン <br> 水着だと曇るけどbunny suitなら透っけ透けや <br> そしてanimaと並べても似たようなもんやった 
+
+575 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cee7-p0BP) 2026/10/21(水) 08:46:11.84
+ キャラはヘタにキャプション付けても生成に同じ文が必要になるしテキスト含めて学習させないならキャプション付ける意味もほぼない <br> トリガーワードだけ使う学習させたらまあまあ及第点にはなった 
+
+576 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 33cf-B5hg) 2026/10/21(水) 08:46:24.45
+ 画風lora簡単やんと思って次キャラクターloraつくったら食い合わせ悪くて草 <br> Krea2は簡単に併用できたのに何故&#128557; 
+
+577 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 09:02:22.38
+ 多キャラの書き分けはむしろmossの十八番では？ 
+
+578  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-Ga4M) 2026/10/21(水) 09:09:34.15
+ これまで部族語専門でKrea2とかの自然言語モデルを <br> 毛嫌いしてきた人にはちょっとハードルが高いやろね <br> MOSSは部族語も使えるが基本は自然言語やからね 
+
+579 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ 0ff9-+3Zs) 2026/10/21(水) 09:12:29.52
+ 今さらZITとローカルLLMに手を出してみたが、すごいなこれ。 <br> 実写初体験なのもあって感動しちゃった 
+
+580 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f11-hgbO) 2026/10/21(水) 09:14:36.79
+ ollamaを入れてdasiwa minimaxでループアニメ作りするで 
+
+581 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 0f74-+3Zs) 2026/10/21(水) 09:21:24.94
+ Strataとかで気軽にローカルLLMも使える環境は整ってきたし、 <br> 部族語以外にも、キャプションやプロンプトでLLM使って生成するのも <br> かなり手が出しやすくなったタイミングなのは助かるで 
+
+582 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 09:21:26.29
+ むしろbboxのおかげで部族語に有利になったと思うわ <br> 特に複数キャラの場合 <br> 今までは全体像として構図を自然言語で説明しなきゃならなかったのが、そこをスキップして複数の1girlの説明で済むようになったわけで <br> 1girlの説明は部族語の得意分野やん？ 
+
+583 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.71][苗]</span> (ﾜｯﾁｮｲ da10-JSxr) 2026/10/21(水) 09:24:41.25
+ llm通すと小物や人物の画像見せて特徴を書き出してもらってbboxで自然言語で配置するってのが直感的にできて便利やね 
+
+584 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee26-5qDE) 2026/10/21(水) 09:25:36.09
+ 部族語が使えるとゆうよりはQwen3.5がいい感じに受け取ってくれとる（脳内変換しとる）だけなんじゃないやろか <br>  <br> https://tadaup.jp/AYp5XSUV.png <br> &gt;&gt;381を使ってこう繋げば日本語で書けるようになるで <br> キャラ名や部族語で書いたほうが楽な部分はタグでを混ぜて書いてもええ 
+
+585 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15][新]</span> (ﾜｯﾁｮｲ 2eef-FRru) 2026/10/21(水) 09:26:44.42
+ &gt;&gt;579 <br> なぜ今そんな化石以下のものに手を出しちゃったの？ 
+
+586 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 0f74-+3Zs) 2026/10/21(水) 09:29:42.01
+ なんかしらんけどBlackwell で 12 倍高速のリアルタイム生成ができる <br> FastH3 Omniてやつがでてきたらしいで <br>  <br> https://x.com/haoailab/status/2112625528805208257 
+
+587 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.164][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/21(水) 09:37:11.46
+ 今から始めるなら脳死でmossやってってガバ命令をLLMに投げつけて準備させて最小限で生成始めるかな 
+
+588 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 09:41:26.69
+ 界隈によって流行って微妙にちゃうからな <br> でもここはエロAIユーザーの忖度なしの素直な気持ちが日本で一番反映されとると思うわ <br> エロ目的ならとりまここで流行っとるものに乗っておけば間違いない 
+
+589 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6]</span> (ﾜｯﾁｮｲ 6ab1-kSG2) 2026/10/21(水) 09:41:50.78
+ &gt;&gt;584 <br> プロンプトまでなんj語でちょっと笑った 
+
+590 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.22]</span> (ﾜｯﾁｮｲ cf3f-PU6T) 2026/10/21(水) 09:46:35.43
+ fizgigの最近の更新でだいぶMossの学習にテコ入れされてるから初期のLoraは作り直した方が良さそうだな <br> なかなか覚えないという人は更新してみると良いかも？ 
+
+591 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ 0ff9-+3Zs) 2026/10/21(水) 09:47:22.54
+ &gt;&gt;585 <br> 触ってみたかったのとPCのスペック的に余裕をもって… <br> いま実写で熱いのってなんですか？ 
+
+592 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 09:50:39.52
+ スペックに余裕がないならLLMはAPIかクラウドでいいと思うで <br> LLMはローカルでやるメリットほぼ無いし <br> 実写ならkrea2やね、三次mossはまだ可能性を秘めてそうやけど 
+
+593  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-Ga4M) 2026/10/21(水) 09:50:46.90
+ TEが優秀やから人物描写も自然言語の方が遥かに強いと思うで <br> 服装の指定や服の皺とか指の食い込みとか細部の表現が効く <br> そのためには表現力や文章力が求められる訳やが <br> そこはLLMに任せて修正もLLMに指示を出す <br> 自然言語はHENTAI用語に弱いからpanties arroud one legとかを自分で入れる <br> こういう時に染みついた古の部族語がバント職人のように仕事をしてくれる 
+
+594 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee6f-NIib) 2026/10/21(水) 09:55:18.80
+ LMStudioはもう時代遅れ？ 
+
+595 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ 0ff9-+3Zs) 2026/10/21(水) 09:57:38.37
+ &gt;&gt;592 <br> Krea2なんですねありがとうございます。 <br> 試してみようかな…GPUのメモリ12GBだけど… 
+
+596 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ a3e7-WNX/) 2026/10/21(水) 10:13:06.91
+ krea2はエロフィルター回避loraを入れないとエロ出せなくて使い勝手に癖があるし <br> 今から始めるなら最初から無検閲のmossの方がいいと思うわ 
+
+597 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.102][苗]</span> (ﾜｯﾁｮｲ bb85-J0pX) 2026/10/21(水) 10:14:34.69
+ krea2はkrea3がオープンウェイト確定してるのでそれ待ちで良いと思うよ <br>  <br> &gt;&gt;594 <br> MOEモデルじゃなきゃLMstuidoでも問題ないけど <br> 何のために使いたいかやな 
+
+598 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/21(水) 10:16:15.01
+ &gt;&gt;594 <br> Strataの登場で完全に時代遅れやけど別にLM-Studioでもええで <br> StrataはそれなりのスペックないとComfyUI併用がきついからな <br> MOSSのCLIPは既にロード済みやから外部モデルのアンロード/ロードの手間がないのが利点や <br> ただQwen3.5 9Bはプロンプトエンハンサーとしてはいいかもやけど <br> Vision性能が弱くて小物や画面外から出てくる手やちんこの見落としが多いから <br> i2tの能力不足感は否めない 
+
+599  <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ bb85-WaZu) 2026/10/21(水) 10:19:36.43
+ モデル本体だけで言えばint8convrotでkrea2が14GBくらいでmossが5GB強やで 
+
+600 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.14]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/21(水) 10:20:57.89
+ &gt;&gt;584 <br> 標準テンプレートだとプロンプトをいい感じにしてくれるのがついてるけど <br> BBOX使う場合はそれと干渉するみたいやね（Jsonを自然な文章と解釈してしまう） 
+
+601 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.102][苗]</span> (ﾜｯﾁｮｲ bb85-J0pX) 2026/10/21(水) 10:23:57.92
+ strataは大きなMOEモデルを動かす事に優位性があるが <br> 逆にDenseを全部VRAMに乗せて使うなら大した意味はないわけやからな（全てないわけではないが） <br>  <br> qwen3.5 9Bやgemma4 12BをVRAMにすべてのせてプロンプト考えさせるならLMstudioで問題ないよって 
+
+602 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 10:25:49.01
+ strateとやらならgemma4 31bとかVRAMに乗り切らない既存のLLMもLMstudioより早くなるんか？ 
+
+603 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][苗]</span> (ﾜｯﾁｮｲ 66aa-wy1c) 2026/10/21(水) 10:28:54.14
+ &gt;&gt;584 <br> &#129302;「…」 
+
+604 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.14]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 10:33:26.94
+ &gt;&gt;591 <br> エロ無しならkrea2 有りならMOSS-IMAGE <br> スペック厳しいならanimaの実写系モデル(nsfw対応力有り) <br> krea2もエロできるけどワイにはムズいンゴ 
+
+605 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.102][苗]</span> (ﾜｯﾁｮｲ bb85-J0pX) 2026/10/21(水) 10:37:04.91
+ &gt;&gt;602 <br> KVキャッシュ分を逃せばなんとか収まるなるとかならまあまあ使える <br> 重みが溢れる分の改善は微妙 
+
+606  <span style="color:green;">警備員[Lv.164][苗]</span> (ﾜｯﾁｮｲ beb0-bv9K) 2026/10/21(水) 10:37:08.75
+ &gt;&gt;595 <br> 静止画ならVRAM12GBでも全然問題ないで <br> ワイも12GBでKrea2もMOSS-Imageも普通に出せとる <br>  <br> ただメインメモリが8GBとかだとさすがにキツいと思う 
+
+607 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eea3-bIlb) 2026/10/21(水) 10:37:56.81
+ 中国系AIでサイバー攻撃みたいなニュースあるし、 <br> これ以降は新しいLLMやモデルは公開しませんみたいになるんかな 
+
+608 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ 0ff9-+3Zs) 2026/10/21(水) 10:38:43.36
+ &gt;&gt;604 <br> &gt;&gt;606 <br> 静止画専、メモリ32GBなのでKrea2とMOSS試してみます！ <br> ありがとうございます。 
+
+609 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 10:38:52.01
+ &gt;&gt;605 <br> ワイのVRAM12GBしかないんや <br> RAMは128GBあるがLLMはRAM載せやと遅いままなんかな 
+
+610 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 3f11-hgbO) 2026/10/21(水) 10:40:06.37
+ なんか最近のワークフローDDしたらバグるのはNode2.0に適応する時が来たからか 
+
+611 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ ee26-5qDE) 2026/10/21(水) 10:42:50.41
+ &gt;&gt;600 <br> 似たような問題でプロンプトだけでセリフを入れたいときに <br> それも翻訳されてしまうのがあったわ 
+
+612 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 0fea-V/wr) 2026/10/21(水) 10:53:06.85
+ サンイチ <br> https://tadaup.jp/AisA1B8z.jpg <br>  <br> あかん…MOSS時間は掛かるんやけど学習精度がヤバインゴ… 
+
+613 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/21(水) 10:53:13.05
+ &gt;&gt;609 <br> それを解決したのがStrataやけどGemma4は対応していない <br> 対応してる亜種があるけど安定してるかどうかは分からん <br> Gemma4 26Bの規制解除版はFreeTokenでも動かせるけど遅かったな 
+
+614 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ eee8-R0My) 2026/10/21(水) 10:56:46.25
+ &gt;&gt;613 <br> ponyなら27B-A4Bは1枚で12GBx2と同じ速度で動いたな <br> コーディングばっかやらせてとるからfnに戻ったけど、ワイの環境は2GPU128GBのやからIQ4からIQ3XSに下げてstrata 2個ロードさせるって手があったわ&#128580; 
+
+615 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/21(水) 11:01:11.27
+ やっぱNodes2.0あかんわ撤退を決意 <br> ノードの結節点が不可視でキャンバスにはみ出てて <br> 画面ドラッグする時に誤爆してクソうざい <br> 地味にタブ切り替えが遅いし代替ノードはバグってるし 
+
+616 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ eee8-R0My) 2026/10/21(水) 11:03:30.90
+ なんや--concurrency 2にするだけかいな 草 
+
+617 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 11:05:15.25
+ &gt;&gt;613 <br> そうかあかんか <br> 26Bはアホというより内容が同じになるから31Bが最低限実用的なんやが遅いんよな <br> qwen系は日本語苦手やし 
+
+618 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.102][苗]</span> (ﾜｯﾁｮｲ bb85-J0pX) 2026/10/21(水) 11:05:16.23
+ &gt;&gt;609 <br> 帯域が全然違うのでgemma4　31Bのようなdenseは基本的に1度の処理で全部をアクティブにして動かさなきゃならんから <br> ＲＡＭに流した分だけ遅くなるはもうどうしようもない <br>  <br> strataはMOEモデルの超効率化もんやから大人しく収まるモデルを使うかstrata系対応ＭＯＥ使うかのどちっちかしかないやろね 
+
+619 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f12-ojTY) 2026/10/21(水) 11:12:13.87
+ fibo mergeされたで 
+
+620 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f95-pNrs) 2026/10/21(水) 11:15:56.46
+ &gt;&gt;591 <br> krea2 <br> qwen-image2.1 <br> moss-image <br> どれも熱いよ <br> この3つは、どれがあればどれがいらないというものではないので <br> 併用すべき 
+
+621 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f95-pNrs) 2026/10/21(水) 11:18:45.10
+ 即落ち2コマ　その5 <br> https://tadaup.jp/Ay3WNfJF.mp4 
+
+622 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 73cd-PAvg) 2026/10/21(水) 11:26:38.94
+ RedRayzニキのGUIがMOSS対応しとるやんけ、これで楽になるわ <br>  <br> あとここで配られてるNivisViewerってwebpのサムネイル表示爆速じゃね？ <br> 普段つこてるXnviewMPに比べると100枚くらいでも一瞬で表示されるから驚愕した 
+
+623 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/21(水) 11:29:03.98
+ おっぱいが怖い……異星人に皮だけ残して中身乗っ取られたやつ 
+
+624 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fdb-d4L7) 2026/10/21(水) 11:38:58.18
+ これだけmossとかkreaとか賑わってるのに今どきzitを始めるとか煽りではなくどう調べてその思考に至った理由を本気知りたい <br> よく素人がsd1.5だとかトンチンカンな化石みたいなのに手を出しがちなロジックが見えてくるかも 
+
+625 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/21(水) 11:39:20.49
+ TS好きやが皮化はちょっと・・・ 
+
+626 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][苗]</span> (ﾜｯﾁｮｲ 66aa-wy1c) 2026/10/21(水) 11:40:19.62
+ ComfyUIで生成画像のドラッグアンドドロップでワークフロー再現出来ない問題ってまだ解決せーへんのか <br> 起動オプションに--front-end-version Comfy-Org/ComfyUI_frontend@v1.52.7を付けることで対処しとるけどComfyUIアプデの度に外してチェックしとるがどれもダメや 
+
+627 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.17]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/21(水) 11:41:45.80
+ ロリレイパーがアナルガン掘りして果てたあと <br> ロリの背中が避けて、中から汚いハゲ散らかしたおっさんが出てきて <br> 「今度はワイの番ンゴねェ(ﾆﾁｬｱ」 <br> して終わる漫画ください&#129776;&#129402; 
+
+628 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 11:42:16.58
+ 今どのモデルが流行ってるか、をリサーチするのに一番適しているのが <br> ここ含むユーザーコミュニティだと思うとる <br> 驚き屋さんは全てに驚いてしまうのでこの用途には不向きやし 
+
+629 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 11:45:24.41
+ 流行りに乗るならここ見てないとだめやろな <br> 驚き屋はインプ稼ぎが目的やけどここはシコれるかの一点のみで忖度ヌキで感想が飛び交う 
+
+630 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.37]</span> (ﾜｯﾁｮｲ e601-9X42) 2026/10/21(水) 11:47:13.32
+ シコらせ屋も開業しろ 
+
+631 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 0f84-ojTY) 2026/10/21(水) 11:51:38.05
+ お前らのFibo驚きが見たい 
+
+632 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.104][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ b7e7-neQj) 2026/10/21(水) 11:52:05.23
+ &gt;&gt;538 <br> minimaxが古すぎる…？ <br> あれより高性能なローカル向け動画AI出てきたんか？ <br>  <br> minimaxH3Flashの重みが10/23に公開らしいけど性能上がるんやろか 
+
+633 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/21(水) 11:52:40.24
+ 「問題は走りながら解決せよ」 <br> 本当にそうかよサム <br> そろそろ無責任に制御出来ないAIを解放した企業のゴミクソ共に罰を与えるべきでは？ <br> 米中政府で一度真剣に話し合った方がいいだろ <br> ミサイルが降り注ぐまで止まらねぇ気か&#129402;&#129306; <br>  <br> 【不正アクセス】全国の警察官らの情報 大量流出か　不正アクセスで22府県警に影響  [ぐれ★] <br> https://asahi.5ch.io/test/read.cgi/newsplus/1792544650/ 
+
+634 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.1][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 11:53:09.61
+ めっちゃ出た！&#128166;　この新モデルやばいです！ <br> 詳しくはこちら&#128073; 
+
+635 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.104][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ b7e7-neQj) 2026/10/21(水) 11:55:56.29
+ &gt;&gt;626 <br> ワイはまだ0.41.0やけど <br> どの動画でも画像でもWF読み込みD＆Dで <br> 出来とるけど0.42での話け？ <br> なんか環境違うんやろか 
+
+636 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 11:56:35.35
+ MOSS公式の「LoRAはBaseで作って生成はsft」ってのは正しいんだろうけど、たぶん画風LoRAや小物を詰めるキャラLoRAには向かないんだろうな <br> やっぱ詰め切るなら生成するモデルで誤差少なくしたほうがよさそう <br> 構図LoRAや雰囲気キャラLoRAならBaseで作ったほうが細かいところは元モデルでよろしく補間してくれるからいいんだろうけど 
+
+637 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ a3e7-WNX/) 2026/10/21(水) 11:59:58.98
+ &gt;&gt;624 <br> おそらくcomfyを新規インストールすると初期状態で設定されてるテンプレがzimageのせい 
+
+638 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 12:00:23.44
+ &gt;&gt;626 <br> Verの問題じゃなくておま環問題だぞ <br> まずカスタムノード全部未使用にして確認、それでもダメなら新環境構築検討 
+
+639 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/21(水) 12:01:38.12
+ 機能最新版にアップデートしたけどワイも出来とるなぁ <br> ただPNGは読ませるとフロー名がファイル名になるけと、mp4とか読ませるとフロー名がunsavedになりゅ 
+
+640 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f61-SP75) 2026/10/21(水) 12:01:55.81
+ WAIニキがMOSSに手を出したな <br> AnimaはオワコンでMOSSが覇権確定やね 
+
+641 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/21(水) 12:02:45.24
+ WAIでMOSSくるなら期待やね 
+
+642 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eeb1-5qDE) 2026/10/21(水) 12:04:25.93
+ baseでLoRA作ってまあまあうまくいってるけど細部は解釈が揺れるんよな <br> 何のキャラだか分からんやろうけど <br> https://tadaup.jp/AZ4mTrcP.webp 
+
+643 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7]</span> (ﾜｯﾁｮｲ 0fc8-sDml) 2026/10/21(水) 12:07:18.59
+ でもWAIAnimaは微妙やったし 
+
+644 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 12:07:18.87
+ &gt;&gt;586 <br> blackwellで試してみた <br> 日本語喋れない <br> 音声ref与えても超劣化 <br> 既存のturbo loraと比べると速度もそこまで変わらない <br>  <br> FL2VAならともかくref2VAで日本語喋れないとなるとあんま使い道ないかもしれん 
+
+645 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ ee46-R0My) 2026/10/21(水) 12:08:24.66
+ 速すぎてアフィもあまり誘導できてへんな 
+
+646  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a7e-56u3) 2026/10/21(水) 12:16:15.50
+ WAIanima使うくらいならbaseにLora盛った方が好みだったわ 
+
+647 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.823][林]</span> (ﾜｯﾁｮｲ 0f78-2tho) 2026/10/21(水) 12:19:35.30
+ AnimaもMOSSもbaseが既にエロいからWAIのメリットが薄い <br> noobやリアスだとWAIでエロくなった 
+
+648 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 6a6e-hgbO) 2026/10/21(水) 12:20:24.13
+ animaはbaseにプロンプトやlora使うだけで困ること無かったしな <br> mossくんは性質上久々に有志モデルが需要ありそう 
+
+649 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span> (ﾜｯﾁｮｲ 2385-m/EI) 2026/10/21(水) 12:21:21.16
+ 有料向けGoogle  Colabの簡単な設定の仕方分かったで <br>  <br> Gemini公式の画面で機能をタスクにしてから“〇〇したいからよろしくな”って頼むだけや 
+
+650 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.248][苗]</span> (ﾜｯﾁｮｲ de4a-u6KG) 2026/10/21(水) 12:22:24.18
+ waianima微妙なまま全然更新あらへんのがね <br> リアスの時は高頻度に更新しとったのに 
+
+651 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ ee37-ojTY) 2026/10/21(水) 12:22:37.10
+ Fiboは一応試すけどこのライセンスじゃ流行らん <br> 自分でも積極的に使いたいとも思わない 
+
+652 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 73cd-PAvg) 2026/10/21(水) 12:24:43.59
+ https://x.com/H4ckmanac/status/2112471262710608254 <br>  <br> dmm漏れた 
+
+653 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/21(水) 12:25:25.25
+ ここのスレは非エロモデルには誰も驚かない <br> Flax3は加齢にスルーされて1枚も画像が貼られてない <br> Fiboなんて試す価値すらない（よね？） 
+
+654 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.50]</span> (ﾜｯﾁｮｲ 0b81-fDH0) 2026/10/21(水) 12:26:07.62
+ そらAnimaは派生モデル作るのムズいって散々言われてるし <br> ただ作るだけでなくネームバリューに相応しいクオリティとなるとどうにもならんのやろな 
+
+655 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 12:26:39.75
+ mossくんは荒くは余裕で覚えてくれるけど、細部詰めるとなると微妙にクセがあってやりにくいし <br> 広く浅くのWAIくんは微妙そう <br> 絵師タグとか再学習はするけど再現は微妙のままで出そう 
+
+656 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.50]</span> (ﾜｯﾁｮｲ 0b81-fDH0) 2026/10/21(水) 12:26:42.02
+ そらAnimaは派生モデル作るのムズいって散々言われてるし <br> ただ作るだけでなくネームバリューに相応しいクオリティとなるとどうにもならんのやろな 
+
+657 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 12:26:43.59
+ mossっておまんこめちゃくちゃ詳細に出すんやね <br> AIに出力任せてたこともあって、画面いっぱいに大陰唇が映し出されたときは何事かと思ったわ 
+
+658 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 3f11-hgbO) 2026/10/21(水) 12:27:21.52
+ minimaxの騎乗位、胴が伸びがち問題解消せんな 
+
+659 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.104][SSR武][SSR防][苗]</span> (ﾜｯﾁｮｲ b7e7-neQj) 2026/10/21(水) 12:43:21.66
+ WAIanimaが微妙だったのは同意 <br> そしてanima-baseよりもbotanAnimaのほうが良くて <br> そっちばっか使ってるわ 
+
+660 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/21(水) 12:44:31.17
+ ふるさとチョイスがやべーわ <br> 所得額を推測できるデータと住所をセットで漏らすんじゃねーよタコ 
+
+661 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8ee0-uB/8) 2026/10/21(水) 12:44:54.51
+ https://tadaup.jp/An93R1m8.mp4 <br>  <br> minimaxを実写背景に合成する試行錯誤をずっとやり続けてきた <br> blenderとか使ってアングル合うように工夫したけどこれでもまだ違和感あるやろか <br> 頭が見切れてるのはご愛嬌 
+
+662 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8]</span> (ﾜｯﾁｮｲ 0fc8-sDml) 2026/10/21(水) 12:48:21.39
+ &gt;&gt;652 <br> そんな&#8226;&#8226;&#8226;&#129402; 
+
+663 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ ee90-1lmy) 2026/10/21(水) 12:48:23.61
+ MOSSは幅広いけど結局フォトリアル寄りなのが <br> キャラLoraの難しさに繋がってるんちゃうの <br> AI3次やセレブは成功例見かけるで 
+
+664 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][苗]</span> (ﾜｯﾁｮｲ 66aa-wy1c) 2026/10/21(水) 12:49:38.17
+ 情報漏洩対策に偽情報を登録するって人結構いるけど正直焼け石に水だと思う <br> というのもそういう手法を使うことができない自治体・政府・病院・学校系のサービスの方がむしろセキュリティはクッソ弱い傾向にあるから <br> パスワード管理ツールで脆弱なパスワードですって警告されるのもほぼこの手のサービス(パスワード数が英数12文字までとか、二段階認証設定できないとか) <br> 基幹的なところからほぼ全国民の情報漏れてるのはまず間違いないからあんま意味ないんよね 
+
+665  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6be7-mC71) 2026/10/21(水) 12:52:33.20
+ 二次に関してはアニメ特化MOSSが来てからが本番やね 
+
+666 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 8790-/wA2) 2026/10/21(水) 12:53:13.37
+ &gt;&gt;661 <br> なんで謎言語なの？&#129300; 
+
+667 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 12:53:59.71
+ 漏れていいのは&#127880;だけだよ 
+
+668 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 7e03-CSiN) 2026/10/21(水) 12:54:54.85
+ &gt;&gt;594 <br> 汎用型と特化型を一緒にすんな <br> 驚き屋が 
+
+669 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 12:55:50.89
+ アニメmossが来てもそれまでの経験の差は埋まらんで&#128548; 
+
+670 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ eec9-dVjR) 2026/10/21(水) 12:56:31.57
+ 最近は <br> 偽データとか別の流出データから仕立てた偽装データを「○○のリーク」としてダークウェブで売るどうしようもない詐欺が量産 <br> 「○○から流出！」でインプレ稼ぎするアカウントが本物偽物関係無く驚き屋拡散 <br> っていうエコシステムが横行しとるからな <br>  <br> 少し前にあった「楽天全部漏れた！」がその好例やね 
+
+671 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8ee0-uB/8) 2026/10/21(水) 12:57:00.45
+ &gt;&gt;666 <br> テストやからや <br> minimaxで作ったのを手動で色加工してblenderやらでアングル合わせてる <br> ここら辺がワイの限界なんやがまだ違和感残ってるかな 
+
+672 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eef0-imFC) 2026/10/21(水) 12:57:54.49
+ MOSS画風詰めるの難しいからanimaは仕上げ屋として生き延びそう 
+
+673 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 12:58:50.59
+ テストだとなぜ謎言語になるのか？って話になるけどな <br> おそらく日本語品質の悪いturbo loraを使ってるんじゃないか <br> &gt;&gt;586も謎言語になるし 
+
+674 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.37]</span> (ﾜｯﾁｮｲ e601-9X42) 2026/10/21(水) 12:58:59.60
+ MOSSの美マンへの執念を感じる 
+
+675 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 12:59:43.16
+ &gt;&gt;661 <br> 違和感というか背景がある意味がほとんどない映像だからベンチマークとして正しくないような <br> 最初に座ってる角度がおかしいし、立ったあとも座席貫通して立ってるから背景活かしてなくね感が強い <br> そもそもそれだとアニメキャラと同期が必要な背景情報は動かない座席なだけだから実質固定背景と変わらんし 
+
+676 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 8ee0-uB/8) 2026/10/21(水) 13:04:59.48
+ &gt;&gt;675 <br> これはもう諦めるか <br> minimaxだとどう頑張っても実写背景との合成上手く行かんな <br> いったとしても工程がめんどくさい <br> 週末旅行した風景をアニメキャラが歩くみたいなのをminimaxで映像化したかったんやが、難易度高そうや 
+
+677 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ｵｲｺﾗﾐﾈｵ MMcf-BGwW) 2026/10/21(水) 13:06:28.30
+ moss anima版って予定は未定なんだっけ？ <br> moss公式の絵柄ローラつくるか。今やcodexなりにcolab連携させればあとは勝手に教師画像作成から学習までやってくれて便利ね。教師画像にswfしか無理ではあるけど。 
+
+678 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f69-hgbO) 2026/10/21(水) 13:08:05.74
+ ワイはアニメ柄はこれで良いと思うンゴね煮込み方が足らんのとちゃうか？ <br> 後1epochや…顔の学習はええんやけどブーツとか他が今一やな <br> https://tadaup.jp/AfPNQRdO.jpg 
+
+679 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 13:09:48.62
+ 驚き屋「最新画像生成モデルMOSSが登場！BBOXでの制御は革命的！」 <br> ワイ「ふーん」 <br>  <br> シコり屋「MOSSのマンコはマジですごい」 <br> ワイ「ほーん！」 
+
+680  <span style="color:green;">警備員[Lv.164][苗]</span> (ﾜｯﾁｮｲ beb0-bv9K) 2026/10/21(水) 13:10:03.22
+ &gt;&gt;626 <br> その話を書くときはcomfyui-rgthreeを入れてると、という条件を書き添えてほしいんよ <br> rgthreeの作者はComfyUIのバグとしているって話もね <br> でないと「ワイはできるで」という書き込みを誘発するし、ニキも同じ説明を繰り返すことになるでしょ <br>  <br> 別フォルダにセットアップし直すとかデスクトップ版なら新規インスタンスを立てて、rgthreeを入れる前後でどう変わるか検証してみては <br>  <br> ちなみにワイはfrontend最新でrgthreeも入れてるけど、なぜか不具合は出とらん 
+
+681 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.823][林]</span> (ﾜｯﾁｮｲ 3fa8-2tho) 2026/10/21(水) 13:11:05.07
+ &gt;&gt;672 <br> Animaの時にも聞いたんやけどそれ&#129402; 
+
+682 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6ac2-NIib) 2026/10/21(水) 13:13:20.24
+ &gt;&gt;597 <br> &gt;&gt;598 <br> サンガツ <br> gemma4でプロンプト出してもらってるだけやから、そのままで良さそうやね <br>  <br> &gt;&gt;668 <br> そんなもんレスするためにワイに安価すんな 
+
+683 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 13:14:11.10
+ mossの仕上げのanimaの仕上げのリアス 
+
+684 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 13:18:09.29
+ 絵柄Anima <br> まんこMOSS <br> アナルリアス 
+
+685 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 13:18:33.13
+ &gt;&gt;679 <br> これ 
+
+686 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][芽]</span> (ﾜｯﾁｮｲ fb00-ojTY) 2026/10/21(水) 13:28:59.13
+ ぶっちゃけそうまでして完璧なもん追い求めてないから、リアスだけでよくね？って話になる 
+
+687 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6ac2-NIib) 2026/10/21(水) 13:30:45.48
+ &gt;&gt;686 <br> オナニーに使うだけならそれはそう <br>  <br> 他人に見せたり手描きやってる絵描きが絵に使うならそうもいかんのやろ 
+
+688 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 13:31:26.54
+ 生成AIに文字入れ機能がなかった頃に <br> 「いや文字くらいphotoshopで入れたらいいよね？」とか言ってたけど <br> 誰も入れようとしなかったし、MOSS来たらご覧の有様 
+
+689 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 13:31:31.13
+ Minimaxの参照画像としては背景パースがあってないと違和感すごいから、リアスは当然ダメでAnimaでも厳しい <br> Krea2とKromaでLoRA沼にハマってたところにMossくんが来てしまわれた 
+
+690 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fce-xpeA) 2026/10/21(水) 13:31:41.83
+ mossすげえ！台詞入りCGや漫画が作れるじゃん（創作活動に目覚める） <br> ↓ <br> セリフや脚本考えるの面倒だな…息抜きにポン出し1girlガチャでシコるか（リアス・Anima起動） <br> ↓ <br> ポンシコばかりで創作が進まん…ワイは単なるシコ猿やったわ&#128018; <br>  <br> これが現実 
+
+691 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.207][UR武][UR防][木]</span> (ﾜｯﾁｮｲ 5b59-j4Gm) 2026/10/21(水) 13:31:49.43
+ 使わない理由をレスするな <br> もっと自分を信じろ 
+
+692 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 13:33:21.61
+ &gt;&gt;690 <br> セリフや脚本はLLMまかせや！ <br> ↓ <br> いやもうなんか作業になっちゃって、面白さがないな <br> ↓ <br> ポン出し1girl万歳 
+
+693 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.71][苗]</span> (ﾜｯﾁｮｲ da10-JSxr) 2026/10/21(水) 13:34:32.05
+ 人間xAIで人間もAIも能力を伸ばしていくほどにできることが増えるのが理想なんやけど <br> 実際はAIが伸びるほど人間がサボるようになってトータルは伸びてない感はあるｗ 
+
+694  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2700-WNX/) 2026/10/21(水) 13:35:52.79
+ ここで積極的に自分で考えた台詞を文字入れるするかどうかでクリエイターに必要な創作欲の有無が計れる <br> 出来る事が増えても面倒になる人は昔ながらのクリエイティブ作業に向いてないで 
+
+695 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/21(水) 13:38:04.77
+ 自分用なら脳内台詞でええわけやし <br> それこそマネタイズみたいな動機がないと続かんやろなあ 
+
+696 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 13:40:45.66
+ 手動で文字を入れるのが面倒なんは高く分厚い壁があったんやで <br> まず縦書きが必要でフォトショが必要やったこと <br> もうひとつはフォントとフォントデザイン <br> これは創作意欲とかイカ臭いもんじゃ無理やった 
+
+697 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 13:41:01.09
+ まあ漫画に関しては今んところAIの能力とかブレとかがつまらん方向に働いてるからな… <br> これがおもろい方向にブレるようになればおもろいんやけど 
+
+698 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 13:42:02.74
+ 自分よりちょっとモチベ高い他人を見ると <br> マネタイズなんやろ&#65374;？ってダル絡みするのマジでよくないと思う 
+
+699 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][芽]</span> (ﾜｯﾁｮｲ fb00-ojTY) 2026/10/21(水) 13:43:30.68
+ 単純に参照画像だけ出してこういう感じの漫画描いてって言っても、参照画像まんまの姿勢のキャラが数列に渡って出る感じにしかならない <br> ああいうの見るとやっぱりセンスがある人は有利だなと感じる 
+
+700 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 13:50:32.76
+ &gt;&gt;699 <br> 今ある参照機能は流し込んどるだけやからあまり複雑なことはできんで <br> まあそれとは別にAI漫画は構図も何もかも単調になりがちではある <br> 漫画の技術とか読ませたり教えたり考えさせたりしてからやるとマシになるで 
+
+701 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.365][木]</span> (ﾜｯﾁｮｲ 2a57-bv9K) 2026/10/21(水) 13:51:46.43
+ &gt;&gt;680 <br> ワイ環やと逆にrgthreeをdisableにしても治らんから多分rgthree関係ないと思うで <br>  <br> 気が向いたら環境作り直すか 
+
+702 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee2d-q1Tb) 2026/10/21(水) 13:57:04.71
+ 手書きでも同じだけど承認欲求稼ぐだけなら人気キャラの1girlちょいエロをXや渋に投稿するだけで良いからな <br> 趣味とはなにかを向き合うのや 
+
+703  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 2700-WNX/) 2026/10/21(水) 13:57:19.30
+ &gt;&gt;696 <br> いや、それ基本中の基本なんやが… 
+
+704  <span style="color:green;">警備員[Lv.195][木]</span> (ﾜｯﾁｮｲ 2f9b-mUF8) 2026/10/21(水) 13:57:56.91
+ &gt;&gt;697 <br> そうよこれやねん <br> 言語化能力すごいな 
+
+705 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.113][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/21(水) 13:59:27.34
+ 現状のAIモデルでも十分作品は作れると思うで <br> あとは本人のやる気と根気とセンス次第やけどそもそもとしてやる気も根気もセンスも無くて絵描きにも文字書きにもなれんかった奴がAI使ってクリエイターの真似事なんて無理なんや 
+
+706 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 1a10-+3Zs) 2026/10/21(水) 14:01:32.92
+ AIエージェントで仕上げていかないとなぁ 
+
+707 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/21(水) 14:04:17.02
+ いうてFANZAのAIエロ漫画増殖し続けとるんやろ <br> 凄い話やで 
+
+708 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 664f-wy1c) 2026/10/21(水) 14:08:02.93
+ 漫画を描くハードルが下がって隠れてた才能が芽吹いとるんやろな 
+
+709 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ a3e7-WNX/) 2026/10/21(水) 14:08:20.94
+ &gt;&gt;705 <br> そういう層がリアスの1girlだけでポン出し最高って言ってるんやろ <br> animaとかmossのことを否定し続けて凝ったシチュを作る必要ないとも言ってるし 
+
+710 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f86-SBbS) 2026/10/21(水) 14:13:11.44
+ SDXLの頃からAI漫画上手いやつは上手いからな <br> そういうことや 
+
+711 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 6ac2-NIib) 2026/10/21(水) 14:15:57.72
+ わかる <br> ここに昔、vtuberのBSSめっちゃ上げてたヤツいた <br> めっちゃ抜けた（小学生並みの感想） <br> 今でもpatreonだかなんだかでやってるはずや 
+
+712 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ eeb7-KP3i) 2026/10/21(水) 14:17:08.24
+ そもそもクリエイターがこれ使わんだろ <br> 絵も書けんPhotoshopも使えん奴が自動でやるんだろ 
+
+713 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 14:17:52.32
+ しかし手間暇を自慢する方向性もどうかと思うんよな <br> だってAIはワイらの手間暇を肩代わりするためにおるんやから <br> な、codex！ 
+
+714 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fef-SCI1) 2026/10/21(水) 14:20:42.82
+ まぁ、AI使ってる身からしたらそういうスキルも結局いらなくなるんだろうなぁ <br> と思って勉強する気にならんのが正直なところだな 
+
+715 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.17]</span> (ﾜｯﾁｮｲ 2385-KoX8) 2026/10/21(水) 14:22:51.96
+ RTX2060向けの情報あまりないからこのスレは無価値に近い 
+
+716 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 6ac2-NIib) 2026/10/21(水) 14:27:55.72
+ でも絵や漫画のノウハウあったほうが不自然なところに気が付きやすくなるし、もっといいもん作れるようになるよな <br> 加筆修正もしっかりできそうやし 
+
+717 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 73cd-PAvg) 2026/10/21(水) 14:28:17.55
+ 前スレでMOSSがあるからAnimaはもう用済みだみたいなこと言ってた奴が多数いたが全然Animaの代わりにならんやんけ 
+
+718 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f14-O/+2) 2026/10/21(水) 14:29:31.61
+ animaとかでイラスト作成 <br> ↓ <br> irodori TTSで音声作成 <br> ↓ <br> minimaxH3で動画化 <br>  <br> 30秒の動画作るレベルでも平気で週末潰れるが <br> 自分一人で全部作れるとかええ時代になったで 
+
+719 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee2c-KP3i) 2026/10/21(水) 14:33:42.12
+ 文字入れとか面倒になってきて結局飽きてくるから再来週には大抵1枚絵になるんだろうな 
+
+720 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ eedf-R0My) 2026/10/21(水) 14:35:23.98
+ 抜ければ良いんだよ&#128545; 
+
+721 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 14:35:46.09
+ 動画化するならirodoriで喋らせればええんやから画像のセリフ画像が遅れたって奇妙な話しよな 
+
+722  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a6e-zz1J) 2026/10/21(水) 14:35:47.12
+ 「さんいち」と入れれるだけで救われる人達が世の中にはたくさんいるんや…… 
+
+723 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ eaa0-2FoN) 2026/10/21(水) 14:36:57.73
+ RAM32VRAM16のワイ <br> STRATAのインスコを始める <br> 斜め読みでしか情報拾ってなかったから楽しみや 
+
+724 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ ee2d-q1Tb) 2026/10/21(水) 14:37:13.37
+ セリフ考えるだけなら個人的には苦ではないんやが <br> 絵のシチュに合わせたフォントや構図を考えなあかんのがだるい <br> ここで手抜くと一気に抜けなくなるし 
+
+725 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee54-25Wm) 2026/10/21(水) 14:37:57.50
+ ミニマックスの時もそうだったけど飽きてポン出しに戻ってるんじゃなくて動画勢はスレから離れてポン出し勢が戻ってきただけやと思うｗ 
+
+726 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 14:42:50.55
+ リアスはwaiとboleromix信者だったけどanimaはbotan好きーだからbotanMOSSが欲しいンゴ 
+
+727 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 664f-wy1c) 2026/10/21(水) 14:43:00.79
+ 抜くときは意外性が重要なんだよな <br> 同じオカズばかりだと飽きてくるのと同じで、自分が作ったものだと全部分かっとるからオカズパワーが下がる 
+
+728 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 14:45:27.94
+ minmax無理でwanにはまってるが露骨なオセッセばかりでうpれるネタ動画が無い 
+
+729 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee8c-bykS) 2026/10/21(水) 14:46:10.96
+ ストーリーもシチュエーションも全部自分で作るからそりゃあな <br>  <br> やっぱりローカルLLMでチャットして推しの声でirodoriで喋らせて同時に画像も作らせるのが一番飽きないわ 
+
+730 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/21(水) 14:46:25.23
+ ワイは逆に一点突破や <br> 性癖全てを120％ぶっ刺して、マンネリだろうとやっぱりこれが最高なんじゃあ！ってので抜く 
+
+731 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 14:48:54.92
+ 適切に文字入れするって簡単なようでスキルよな 
+
+732 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ eeb1-5qDE) 2026/10/21(水) 14:49:09.38
+ Anima版のWAIはIKAちゃんやと思っとるわ <br> 調整版がぎょうさん出てるとこまで似とるわ <br> 絵柄タグもLoRAも乗りやすい無難なオーソドックスさやと思う 
+
+733 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.27]</span> (ﾜｯﾁｮｲ da10-sDml) 2026/10/21(水) 14:49:36.49
+ 妄想出来ない人も世の中にはいるらしいから <br> そういう人はエロい話を書けない <br> 創作は才能や&#129402; 
+
+734 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/21(水) 14:50:02.51
+ Strata(IQ3_S検閲解除)にエロセリフと擬音の辞書を作成させて <br> エロ漫画化人格を与えてセクロス画像投げたら <br> 画像に適した計14個の擬音とセリフをフォント・文字デザイン・表示位置付きで <br> プロンプト生成→画像生成までできた <br> 結合部の付近に「ヌプヌプ」とか精液の垂れる床に「ポタッ」とかちゃんとやってくれる <br> もちろんi2tじゃなくてt2iでもできる <br> 厳密な表示位置制御が不要ならBBOX指定は不要やけど連携させてもええわな 
+
+735 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.28]</span> (ﾜｯﾁｮｲ 0b93-wyAK) 2026/10/21(水) 14:50:42.82
+ DRAMA3どう？ 
+
+736 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.823][林]</span> (ﾜｯﾁｮｲ 3f82-2tho) 2026/10/21(水) 14:51:05.78
+ WAIモスはまだ絵柄LoRAだけなんやな <br> AnimaのFTの数が出てないのも金無くなったか？ 
+
+737 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee99-bykS) 2026/10/21(水) 14:53:25.84
+ &gt;&gt;734 <br> とっくにXやGitHubでそういうUI作ってるのいるけどな 
+
+738  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1a6e-zz1J) 2026/10/21(水) 14:55:41.53
+ 他人が作ったのより主体的に作ったツールの方が仕様把握してて使いやすいのはある 
+
+739  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee67-8TPm) 2026/10/21(水) 14:56:08.97
+ AMDの新CPUはGPU削除してNPUにするってリークが出たな <br> 当たるのかわからんけど 
+
+740 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 3f11-hgbO) 2026/10/21(水) 14:56:10.20
+ &gt;&gt;737 <br> どのリポジトリ？ 
+
+741 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 0fb9-O14r) 2026/10/21(水) 14:59:06.44
+ UI作るの楽しいしね <br> ワイも無駄に参照用の衣装とかポーズとかのカタログ作ったりしとるわ 
+
+742 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f35-ojTY) 2026/10/21(水) 14:59:38.72
+ MOSS通常生成が20秒くらいだけどプロントとか設定を変更しなずに連続で生成すると10秒くらいになるのは俺環？ 
+
+743 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新芽]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 15:03:41.67
+ AIで作ったUIって見た目でわかるんやけど <br> 最近はそれを高信頼性のシグナルと感じてるワイがいて驚いとる 
+
+744 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.823][林]</span> (ﾜｯﾁｮｲ 3f82-2tho) 2026/10/21(水) 15:04:10.31
+ &gt;&gt;739 <br> デスクトップハイエンドの方はそっちがトレンドやで <br> 16コアAPUのMedusa HaloはRDNA5 GPU内蔵や 
+
+745 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee9b-btpb) 2026/10/21(水) 15:09:35.40
+ Qwen3.5 9BがVLA対応してるから画像参照は楽に出来た <br> 噛ますもんがいるがちゃんと参照してくれてかなり使えるで 
+
+746 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.71][苗]</span> (ﾜｯﾁｮｲ da10-JSxr) 2026/10/21(水) 15:16:16.76
+ 避難所のぷにぷにがうまく開けないのはワイだけやろか？ちなsiki 
+
+747 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eec9-5qDE) 2026/10/21(水) 15:16:26.36
+ &gt;&gt;742 <br> TEが比較的デカいからそのモデル読み込み分と動かす分が減ってそうなるんやないの 
+
+748 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eec9-5qDE) 2026/10/21(水) 15:17:49.68
+ &gt;&gt;746 <br> こうやでトントン <br>  <br> 414 転載禁止 &#129370; &#9773;  (ﾌﾟｯﾁｮｲ w3B6-IEi5)  2026/10/21(水) 10:19:33.03 ID:CpBvSQqg0 <br> ワークスペースの設定でUAをMonazilla/1.00 (hoge 1.0)に変えれば読めるようになった 
+
+749 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.113][苗]</span> (ﾜｯﾁｮｲ 3f07-hgbO) 2026/10/21(水) 15:18:10.09
+ &gt;&gt;746 <br> ワイのsikiも何か昨日の夜あたりからぷにぷに更新しようとすると変なダイアログが一瞬表示されて更新出来ない 
+
+750 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.71][苗]</span> (ﾜｯﾁｮｲ da10-JSxr) 2026/10/21(水) 15:19:46.07
+ &gt;&gt;748 <br> サンガツ！ <br> 設定したらワイと同じ現象のレスが大量に書き込まれてて草 
+
+751 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.319][木]</span> (ﾜｯﾁｮｲ 2668-fG0s) 2026/10/21(水) 15:20:08.31
+ mossだとちんぽ出せないじゃん！！ <br> ワイは哀しい 
+
+752 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 6a6e-hgbO) 2026/10/21(水) 15:22:56.93
+ &gt;&gt;751 <br> ネガにnsfw入ってない？ 
+
+753 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 15:23:40.83
+ もしかしてBase 
+
+754 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16][苗]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/21(水) 15:25:41.97
+ これじゃね？ <br>  <br> &gt;&gt;381 
+
+755 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][芽]</span> (ﾜｯﾁｮｲ eedd-Ie8d) 2026/10/21(水) 15:25:46.03
+ 何が起きてるか理解できないのにエロ画像動画が欲しいから環境構築とかマズイんじゃない？ <br>  <br> 権限を許可した環境でダイヤルログの即閉じに対して、log追えてない時点で俺なら環境自体放棄して接続先のアカウント全削除するレベルかな 
+
+756 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.319][木]</span> (ﾜｯﾁｮｲ 2668-fG0s) 2026/10/21(水) 15:25:54.36
+ &gt;&gt;752 <br> 入ってた！ <br> 生きる気力が湧いてきたわ <br> サンガツ！！ 
+
+757 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 0f61-SP75) 2026/10/21(水) 15:32:14.76
+ スレ民のボリューム層のスペックってどれくらいなんやろな <br> 平気で動画生成の話するから5090持ちが当たり前なんやろか 
+
+758 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 15:36:18.93
+ &gt;&gt;757 <br> VRAMは16GBが大半でメモリーに幅がある印象 
+
+759 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 15:37:36.67
+ ボリューム層という意味では素直に12&#65374;16GBでしょ <br> 動画も生成だけならできるし、画像ならLoRAづくりも12GBでとりあえず時間はかけりゃできるし <br> 動画LoRA作るなら5090が最低ラインになってきそうだけど、動画は素材集めの面倒さが強くて動画LoRA作ってる人圧倒的少数派だし 
+
+760 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.44][苗]</span> (ﾜｯﾁｮｲ 9f4b-tAjA) 2026/10/21(水) 15:41:06.40
+ mossのt2iでbeautiful very small spread virgin pussy, a beautiful small hymenが中々ええのも出るから、気に入っとる絵でinpaintもしてみたんやがinpaintやとあんま上手くいかんな <br>  <br> GUIでlora作れるようになるの待ちやろか 
+
+761 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f7a-m5dc) 2026/10/21(水) 15:41:42.91
+ ワイVRAM12GBメモリ32GBがギリギリ平民ラインやと思ってる <br> ワイよりスペック低いやつは逆に工夫が凄い一流の戦士や 
+
+762 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee01-5qDE) 2026/10/21(水) 15:56:01.07
+ キャラLoRAはsftで作ったほうがええやんけ！ <br> 覚えが全然違ったわ <br> 絵柄LoRAも作り直しや 
+
+763 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ eec9-dVjR) 2026/10/21(水) 15:57:44.65
+ &gt;&gt;761 <br> CPU内蔵で無理矢理やっとった奴おったな <br> ターボに高速化に盛り盛りな上にゴミみたいなプロンプト書いとって <br> 「何も出ん何も出んこのモデルゴミや」 <br> って延々と鳴いとったガイジやったが 
+
+764 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 15:59:47.72
+ Baseで学習という公式案内はデータセットがまばらなこと前提なんだろうな <br> データセットの品質が低いならBaseで学習して細かいところは学習データの再現追求ではなくモデル側に補間させたほうが綺麗になるという考え 
+
+765 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5]</span> (ﾜｯﾁｮｲ eedd-Ie8d) 2026/10/21(水) 16:00:35.83
+ &gt;&gt;761 <br> 本人が工夫して導入した内容について把握できてるなら一流だと思うよ <br>  <br> 問題は北米や中国の一流でも3rdパーティー製の工夫を導入すると内部処理で何をしてるか把握できなくなるから怖ろしくて使ってないのを無知な日本老人が使ってる事実だと心配してるよ 
+
+766  <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 6be7-mC71) 2026/10/21(水) 16:01:34.62
+ WaiくんがMoss用の絵柄LoRAを出しとる <br> Wai-Mossはアニメモデルが出るまで出さないのか諦めたのか 
+
+767 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">ハンター[Lv.823][林]</span> (ﾜｯﾁｮｲ 3f82-2tho) 2026/10/21(水) 16:03:35.21
+ &gt;&gt;743 <br> 明らかに人の手で作られた低信頼のUI&#128557; <br>  <br> https://www.netbk.co.jp/contents/ 
+
+768 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/21(水) 16:10:53.90
+ 人間が一番信じられんからしゃーない 
+
+769 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/21(水) 16:15:21.53
+ でもワイはAIよりおまんらを信じるで 
+
+770 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ ee72-R0My) 2026/10/21(水) 16:16:58.21
+ 驚き屋のがちょっと触ってるだけマシか&#128580; 
+
+771 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ 2385-KoX8) 2026/10/21(水) 16:19:07.53
+ &gt;&gt;761 <br> ワイはVRAM6GB16GBやで 
+
+772 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f24-+3Zs) 2026/10/21(水) 16:19:59.32
+ モスマンがすごい 
+
+773 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eed5-5qDE) 2026/10/21(水) 16:28:37.67
+ ワイも半年前まではRTX2060 Mobileで頑張っとったが <br> VPNで自宅マシンに繋げばRTX5090がいつでもどこでも使い放題 <br> という事実に気づいて以来、人生が破壊的に変わったで 
+
+774 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/21(水) 16:30:52.74
+ 電気代も破壊的に変わってそうやな彡(-)(-) 
+
+775 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/21(水) 16:33:32.89
+ ワイも環境は出来たけどコネクタ焼損起きた時が怖くて殆ど使ってないわ 
+
+776 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新芽]</span> (ﾜｯﾁｮｲ 1abe-+3Zs) 2026/10/21(水) 16:34:33.87
+ mossくんはタグだけだとすぐに限界来るな <br> 英語として普通に意味が通りそうな奴でも、反応しないのがよくある 
+
+777 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span> (ﾜｯﾁｮｲ eaa0-2FoN) 2026/10/21(水) 16:38:47.68
+ &gt;&gt;723の経過報告 <br> まだチャットしかしてないけどRAM32GB VRAM16GB（5060ti）であっさり動いたやで <br> https://tadaup.jp/AxrM9Nqx.png <br> https://tadaup.jp/AiC7DOQB.png <br> 1. githubからグラボにあったインストーラを落とす <br> 2. 叩くと証明か何かのエラーが出るけど無視 <br> 3. とりあえず低RAM用のGyro Mを選択 <br> 4. 初回起動と最初の会話に時間がかかるがあっさり起動したが会話に「中国単語」が稀に混ざったのでGyro Mの上のモデルに挑戦 <br> 5. ギリギリの「IQ3_XXS」を落として挑戦 <br> 6. 起動準備中にランタイムエラーが出たのでwin11再起動 <br> 7. 問題なく立ち上がり中国語も今のところ出なくなった <br> 今は何に驚けばええのか聞いてる最中や 
+
+778 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ｵｯﾍﾟｹ Sr33-MtnC) 2026/10/21(水) 16:48:52.66
+ mossは実写で小さい子封じてきてるな <br> アジアンも欧米もブスしか出ない <br> まあ普段出さないからいいけど 
+
+779 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新]</span> (ﾜｯﾁｮｲ 3f25-qav2) 2026/10/21(水) 16:52:21.26
+ baseだと出るから封じてるわけではなさそう 
+
+780 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.15]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 16:53:13.13
+ うわー、まだターボ無産が居着いているのか 
+
+781 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ 3f07-qav2) 2026/10/21(水) 16:57:17.62
+ 実例やプロンプトは絶対に上げないけどsftでも出るやろ 
+
+782  <span style="color:green;">警備員[Lv.19]</span> (ﾜｯﾁｮｲ bb85-05R8) 2026/10/21(水) 16:59:32.36
+ 高度な情報戦の可能性&#129300; 
+
+783 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.44][苗]</span> (ﾜｯﾁｮｲ 9f4b-tAjA) 2026/10/21(水) 17:00:18.86
+ mossってそもそも実写出せるん？ <br> 2.3Dくらいのしか出んのやけど 
+
+784 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.14]</span> (ﾜｯﾁｮｲ eaa0-2FoN) 2026/10/21(水) 17:03:34.63
+ ブスで出るなら出てるのでは&#129300; 
+
+785 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fb2-O14r) 2026/10/21(水) 17:04:27.64
+ ブスはロリじゃない&#128545; 
+
+786 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 17:06:14.08
+ ブスは出せないモデルとブスが出せるモデル <br>  <br> はたしてどちらが優秀なのか 
+
+787  <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 2700-WNX/) 2026/10/21(水) 17:06:16.20
+ turboでもint8でもsftでも出るで 
+
+788 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 3f1c-qav2) 2026/10/21(水) 17:06:33.99
+ &gt;&gt;748 <br> 割とかなり困ってたからありがたい 
+
+789 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.2][新芽]</span> (ﾜｯﾁｮｲ eed5-5qDE) 2026/10/21(水) 17:07:28.01
+ 実写テストは大学生女子からどんどん年齢を下げて一通り試すけど <br> 小学生くらいまで普通に可愛いの出てるけどな <br> ペドは知らん 
+
+790 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eefc-fNqP) 2026/10/21(水) 17:09:43.64
+ NAI5も漫画出せるんやけどプロンプト大変過ぎて初期だけで飽きられてたな <br> その手間の克服が鍵やろね 
+
+791 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 17:10:52.92
+ そのspread pussy, close-up of hymen, というタグが邪魔をしている可能性があるな 
+
+792 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fb2-O14r) 2026/10/21(水) 17:11:19.42
+ 制御できずにガチャ頼みになるのを、出せると言われてもな… 
+
+793 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ aee7-p0BP) 2026/10/21(水) 17:11:32.47
+ mossのLoRAが似ないって話俺が試したのだと特にそんなことないと思ってたんだけど学習ツールの設定だかモデルの特性で詳細よりも概要に偏ってるのが原因っぽいな <br> 俺のは自分でオフセット設定したanimaの設定流用したから気にならなかったようだ 
+
+794 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eed7-NIib) 2026/10/21(水) 17:12:25.14
+ MOSSそういうの出るんか、帰ったら早速確かめて楽しむで&#65374;&#128513; 
+
+795 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.49]</span> (ﾜｯﾁｮｲ bb85-J0pX) 2026/10/21(水) 17:23:53.95
+ fibi2-edit-turboってqwen-image-2.1よりスペック上なのか <br> 次々と新しいの出てくるな 
+
+796 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.49]</span> (ﾜｯﾁｮｲ bb85-J0pX) 2026/10/21(水) 17:24:34.68
+ ミス <br> fibo2やった 
+
+797 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/21(水) 17:25:59.25
+ チビタイの実写化フロー使ったら天使みたいな理想の幼女が出てきてふるえてる 
+
+798 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 1af4-GQTq) 2026/10/21(水) 17:30:43.72
+ LoraとLoraで絵柄ブレンドできるな <br> 強度調整で理想の絵柄を探す旅に出ます 
+
+799 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 17:40:55.77
+ &gt;&gt;783 <br> プロンプトの内容で実写 アニメ イラスト ポリゴンと暴れるんだよ… <br> animeとかphotorealisticみたいなキーワードや英文での説明を入れても効果が出ない事も多い <br> ワイも研究中や 
+
+800  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee01-dXyU) 2026/10/21(水) 17:41:27.27
+ mossで久しぶりに3次出してみたが <br> シード間で顔に多様性あっていいね <br> Wanやqwenは同じ人ばっかでてすぐ飽きた <br> 人物固定したい人には欠点なのかな？ 
+
+801 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新]</span> (ﾜｯﾁｮｲ 0fb3-ojTY) 2026/10/21(水) 17:52:29.46
+ 良いから早くどうすれば画風含めてキャラ再現性の高いlora作れるか教えろよ 
+
+802 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f69-j07p) 2026/10/21(水) 17:54:14.93
+ sd-scriptsの最新版使うとええで <br> あとはデータセットに寄るだろうし自分でトライ&エラーするしか無いンゴね 
+
+803 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ eec9-dVjR) 2026/10/21(水) 17:55:45.41
+ 良い素材を集める <br> きちんとしたキャプションを付ける <br> 要らない要素は入れない <br> 数で押し切ろうとしない <br> RedRayzニキをキレさせない <br>  <br> これにつきるわ 
+
+804 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ 6a8b-VDwl) 2026/10/21(水) 17:56:06.60
+ Fiboはプロンプトにbria-vglっていう独自言語のJSONを使う必要あるみたいだけど <br> 平文をローカルで変換してくれるノードが見当たらない <br> ComfyUIの内蔵のTextEndodeFibo2はやってくれないみたいだし <br> 旧バージョンのFibo Edit VLMノード使ってJSON出力して生成したけどダメっぽい <br> ノード自作するしかないのかな 
+
+805 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f1e-kNJf) 2026/10/21(水) 17:57:24.75
+ &gt;&gt;803 <br> readmeを読む 
+
+806 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f1c-qav2) 2026/10/21(水) 17:59:15.89
+ turboとbreakを使わない 
+
+807 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][芽]</span> (ﾜｯﾁｮｲ 3fd2-wy1c) 2026/10/21(水) 17:59:58.03
+ &gt;&gt;803 <br> &gt;&gt; RedRayzニキをキレさせない <br> これが一番重要 <br> お前だぞとしあき 
+
+808  <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-Ga4M) 2026/10/21(水) 18:07:26.96
+ TurboもCFG上げればネガ効くし質も上がる <br> そのうちネギピッピ出るやろけど 
+
+809  <span style="color:green;">警備員[Lv.162][SSR武][UR防][苗]</span> (ﾜｯﾁｮｲ bb10-qav2) 2026/10/21(水) 18:08:40.43
+ &gt;&gt;808 <br> ウエイトコントロールのカスタムノードがマイナスベクトルに対応してるで 
+
+810 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.165][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/21(水) 18:18:00.41
+ WAIはxlから以降何もできとらんで 
+
+811 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 18:18:18.84
+ ワイと同じやね 
+
+812  <span style="color:green;">警備員[Lv.6][新芽]</span> (ﾜｯﾁｮｲ 2700-WNX/) 2026/10/21(水) 18:18:49.75
+ 絵柄LORAでなんとかならあ！（強行突破） 
+
+813 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 87e1-/wA2) 2026/10/21(水) 18:20:10.72
+ きちんとしたキャプションってなんだぁ(ブロリー) 
+
+814 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9]</span> (ﾜｯﾁｮｲ 0fc8-sDml) 2026/10/21(水) 18:25:57.67
+ 三次ロリに手を出す悪魔は死刑にすべきでは？&#129402;&#129306; 
+
+815 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f24-d4L7) 2026/10/21(水) 18:28:40.55
+ 三次（非実在）なら何も思わん <br> 卒アルとか芸能人のDFは捕まれって思う 
+
+816 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fff-36WJ) 2026/10/21(水) 18:30:39.02
+ &gt;&gt;727 <br> ポン出しで自分の想像を超えたえろいのを出してきたときの「お前…やるやんけ！」がいいのよな 
+
+817 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.18]</span> (ﾜｯﾁｮｲ 2385-KoX8) 2026/10/21(水) 18:33:04.58
+ 卒アルも自分で楽しむ分にはまあ好きにしろと思うけど、そう言うことやってる奴に限って頭おかしいからな 
+
+818 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ a3e7-WNX/) 2026/10/21(水) 18:36:19.74
+ 卒アルとか運動会の写真で抜いてる奴っていちいち画像上げたり抜いた報告したり <br> 自己顕示欲が異常に強い奴ばっかりのイメージやな 
+
+819 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 0fb2-O14r) 2026/10/21(水) 18:38:09.64
+ まあDFは俺こんなヤベーので抜いてるぜ！ってところまで含めてのオナニーだからな 
+
+820 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 18:40:04.56
+ まいんちゃんの全盛期にAIがなくて本当によかった 
+
+821  <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 2700-WNX/) 2026/10/21(水) 18:44:01.44
+ &gt;&gt;815 <br> よく読むんや <br> 「手を出す悪魔」だから生成はセーフ 
+
+822 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (JP 0H6b-/wA2) 2026/10/21(水) 18:46:36.70
+ 久保建英とまいんちゃんは全盛期を終えたという風潮 
+
+823 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 3f07-qav2) 2026/10/21(水) 18:49:31.79
+ 三次だろうと二次だろうと非実在だろうとロリコンは総じて無条件で異常性癖って事を自覚してもろて･･･ <br> セーフラインなんて無いでマジで 
+
+824 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 18:55:31.91
+ LoRA失敗の8割はゴミ素材混入だからな <br> SDXLまではどんなに頑張っても再現性に限界あったけど、それ以降のモデルは再現性出るからゴミもゴミとして学習されちゃう <br> キャラLoRA作っててそもそも素材自体に同じキャプションで描写に矛盾あるとどないせいっちゅうねんとなる 
+
+825 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 3fc9-MtnC) 2026/10/21(水) 18:56:23.25
+ &#128578;ボクは悪魔じゃなくて人間だよな <br> &#128578;ならボクは良いんだ 
+
+826  <span style="color:green;">警備員[Lv.168][UR武][SSR防][苗]</span> (ﾜｯﾁｮｲ a3b6-wy1c) 2026/10/21(水) 18:58:55.75
+ mossのloraはbaseで作成 sftで出力が安定かなと思う <br> https://i.ibb.co/5hjLkCkJ/1021-moss-0001.jpg <br> https://i.ibb.co/JF23dDwt/1021-moss-0002.jpg 
+
+827 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ｵｯﾍﾟｹ Sr33-4AeZ) 2026/10/21(水) 18:59:38.04
+ &gt;&gt;823 <br> 二次は完全にセーフ <br> 三次もかつては普通だったからな多様性の時代やぞアップデートしておけ 
+
+828 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 19:00:57.55
+ LoRAは再現性をどこまで求めるかだから学習後の生成結果出されても共有できないんだよな <br> 学習元との比較が指標だから <br> じゃあ学習元を大っぴらに公開しますかと言うとしないので、この辺はぶっちゃけ自分でノウハウ貯めるしかない 
+
+829 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 0fb2-O14r) 2026/10/21(水) 19:03:47.51
+ そのための世界樹ニキやあやせニキ 
+
+830 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.163][苗]</span> (ﾜｯﾁｮｲ 0b13-uXCC) 2026/10/21(水) 19:05:29.59
+ pixivも開かないからびっくらこいたよ <br> ほぼPHP関係だと思うけど「緊急メンテナンス」で検索するといろんなサービスが止まってるのね 
+
+831 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6]</span> (ﾜｯﾁｮｲ 4a24-ojTY) 2026/10/21(水) 19:08:19.62
+ 自分は「うんこ」が嫌いだ！「トイレ」を無くせば人は「うんこ」をしなくなるはず！ <br> と信じている無能な働き者が、一所懸命頑張ってトイレ廃止運動をした結果、 <br> 街中に「うんこ」が溢れる結果に… 
+
+832 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 19:10:45.93
+ このスレが潰されたらどうなるかという思考実験やね 
+
+833 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 19:11:26.36
+ 避難所はあるし次スレ立てればいいだけやな 
+
+834 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ 2a07-hgbO) 2026/10/21(水) 19:13:53.11
+ https://tadaup.jp/AYHmdvME.png 
+
+835 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.50]</span> (ﾜｯﾁｮｲ 0b81-fDH0) 2026/10/21(水) 19:15:04.00
+ &gt;&gt;827 <br> 多様性は表現の自由と同じで公権力に対する対抗思想なので… <br> 社会的嫌悪感は範疇外 <br> 多様性っワードには複数の意味があるからややこしいけど炉がどうのってのは社会的多様性なので 
+
+836 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (JP 0H6b-/wA2) 2026/10/21(水) 19:16:22.16
+ 自分は「うんこ」が好きだ！「トイレ」を増やせば人は「うんこ」をもっとするはず！  <br> と信じている有能な働き者が、一所懸命頑張ってトイレ増設運動をした結果、  <br> 街中のトイレの件数は増えてもうんこの量は増えない結果に… 
+
+837 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12]</span> (ﾜｯﾁｮｲ cf07-hgbO) 2026/10/21(水) 19:18:01.32
+ 官能小説の表紙書いてる人の仕事なくなりそうやな 
+
+838 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新芽]</span> (ﾜｯﾁｮｲ 3f07-qav2) 2026/10/21(水) 19:20:04.14
+ &gt;&gt;837 <br> ああいうのは横の繋がりとかコネで成り立ってるから基本的にその人が席をどかない限り空かない <br> 図書館の司書と同じカテゴリや 
+
+839 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13][新]</span> (ﾜｯﾁｮｲ 5b85-Bqb5) 2026/10/21(水) 19:21:02.48
+ &gt;&gt;827 <br> それガイジの思考やぞ必死なのはわかる 
+
+840 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.49]</span> (ﾜｯﾁｮｲ bb85-J0pX) 2026/10/21(水) 19:22:22.47
+ &gt;&gt;804 <br> comfy用のワークフローで普通のプロンプトで動いたけど、なにか違うのかな？ <br> でも、規制強くてuncen版出るまで使えなさそう 
+
+841 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.165][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/21(水) 19:33:38.23
+ AIでできる作業の発注なんてどんどん消えていってる <br> 公務員みたいな立場じゃなきゃ不可避やろ 
+
+842 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 6af7-xA+l) 2026/10/21(水) 19:35:05.68
+ 自分で追加した引数とLycorisないと嫌だからsd-scripts使ってるけどもうfizgig使ってたほうがいいだろ 
+
+843 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.19]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/21(水) 19:41:59.58
+ &gt;&gt;830 <br> 調べたらphpにサイト管理システム内に侵入出来る脆弱性が見つかって <br> 今夜23時にパッチ配布予定だけどすでに脆弱性を知ったAI使い達がパッチ前にあらゆるサイトに侵入しまくってるヤバい状況で色んなサイトが緊急停止してる状況だと <br> あーもう滅茶苦茶だよ&#129402; 
+
+844 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ｵｯﾍﾟｹ Sr33-4AeZ) 2026/10/21(水) 19:42:48.09
+ &gt;&gt;835 <br> そもそも多様性は表現の自由…対抗思想云々がおかしすぎてお話にならんわ <br> アップデートしとけよ <br>  <br> &gt;&gt;839 <br> 事実完全セーフなのを認められないからワイを攻撃することにしたんやな… 
+
+845 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f27-qav2) 2026/10/21(水) 19:45:34.21
+ Moss専用だけど手広いな <br> https://github.com/KohakuBlueleaf/KohakuMossTrainer 
+
+846 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f96-+3Zs) 2026/10/21(水) 19:46:04.48
+ 今日でインターネット終了か <br> 今までありがとな 
+
+847 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16][苗]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/21(水) 19:46:40.44
+ &gt;三次もかつては普通 <br>  <br> &#129300; 
+
+848 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ 0ff7-hgbO) 2026/10/21(水) 19:48:29.02
+ &gt;&gt;804 <br> 今日付けのアプデのComfyUI用のWFとモデル使えば素直にテキストから生成できる <br> bria-vglはbria公式の画像専用テキストエンハンサーみたいなもの(本質はLLM)でそれ使えば表現力上がるらしいけどこれはAPI限定機能っぽい <br> 別にエロ強いってわけじゃなさそうだし、Fiboの利点は不明、Qwen2.1でよくね感 
+
+849 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ｵｯﾍﾟｹ Sr33-4AeZ) 2026/10/21(水) 19:48:46.68
+ ワイは2次ロリまで波及させようとするのをゆるさんからな <br> https://i.imgur.com/DDj5qCe.png 
+
+850 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.13]</span> (ﾜｯﾁｮｲ 6a8b-VDwl) 2026/10/21(水) 19:51:35.97
+ &gt;&gt;840,848 <br> ベンチマークで謳ってる性能出すには指定書式のJSONじゃないとダメなんじゃないかな、と思って <br> というかLLM通さずにJSON吐き出すノード来てた <br> https://huggingface.co/akhaliq/Fibo-2.0-ComfyUI 
+
+851 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee31-1f/Z) 2026/10/21(水) 19:54:08.32
+ Patreonのアカウントが流出すると俺の顔写真まで晒されちまうかもしれんからセキュリティ班頑張って 
+
+852 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3fdf-hgbO) 2026/10/21(水) 19:56:13.96
+ あらゆるサービスが緊急メンテで終末感でてきた 
+
+853 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 0fef-SCI1) 2026/10/21(水) 19:59:19.98
+ 絶好の攻撃チャンスだからマジでどうなるかわからんな・・・ 
+
+854 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 19:59:20.11
+ 何かあったんか？ <br> って聞くと無知っぽいからどしたん？話聞こか？ 
+
+855 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.19]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/21(水) 20:01:17.70
+ こんや、23じ、だれかがしぬ 
+
+856 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.25]</span> (ﾜｯﾁｮｲ 3f82-bHJY) 2026/10/21(水) 20:01:39.89
+ うんうん、それはAIが悪いね <br> じゃあ挿れるね… 
+
+857 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 20:02:15.19
+ &#128036; <br> https://tadaup.jp/AaqRtsMz.jpg 
+
+858 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ce94-Ssay) 2026/10/21(水) 20:04:09.99
+ キンタマのメンテをしておけ 
+
+859 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.19]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/21(水) 20:04:14.43
+ &gt;&gt;857 <br> mossは処女膜出せる？ 
+
+860 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.20]</span> (ﾜｯﾁｮｲ 2f1c-+3Zs) 2026/10/21(水) 20:04:23.86
+ https://tadaup.jp/AsM8X43o.webp <br> https://tadaup.jp/AprLC97k.webp <br> https://tadaup.jp/Aeh0ZMGb.webp <br> Krea2の2次学習頑張ってたのに次の覇権候補が来ちゃうとはなあ <br> ま、切り替えてMossに行きますか 
+
+861 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ aea2-qav2) 2026/10/21(水) 20:06:11.82
+ Xのアカウント群の同一人物対応表データとか漏れた時がピークやろな… 
+
+862 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 0fb2-O14r) 2026/10/21(水) 20:07:09.97
+ &gt;&gt;860 <br> いやmossでこのレベルの綺麗な一枚絵を出すのは結構大変だと思う <br> mossが優れてるのは制御力・追従力なので、興味ない人には合わないと思うわ <br> 興味あった人にはぶっ刺さるけど 
+
+863 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f7a-ojTY) 2026/10/21(水) 20:09:05.28
+ Mossは授業中プレイを綺麗に出してくれて感動した 
+
+864 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 20:09:49.35
+ 貼られた画像がAnimaかKrea2かMOSSか？ <br> &#65374;命がけのデスゲームが今始まろうとしていた&#65374; 
+
+865 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee48-fNqP) 2026/10/21(水) 20:13:16.10
+ 処女膜ってサンプルなさすぎるよな 
+
+866 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 3f07-qav2) 2026/10/21(水) 20:21:38.11
+ どうせならアルトマンとイーロンの口座から世界中の人間の口座に入金させて欲しい 
+
+867 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.20]</span> (ﾜｯﾁｮｲ 2f1c-+3Zs) 2026/10/21(水) 20:21:47.39
+ &gt;&gt;862 <br> そうかもしれん、が <br> 挑戦はしてみるさ 
+
+868 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 0f69-j07p) 2026/10/21(水) 20:24:33.83
+ &gt;&gt;865 <br> 日本では仕方無いンゴね…ゴニョゴニョ… 
+
+869 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 20:25:07.85
+ &gt;&gt;834 <br> エッチだ… <br>  <br> &gt;&gt;860 <br> これは凄い、レベル高い 
+
+870 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ 0f61-SP75) 2026/10/21(水) 20:32:37.62
+ Animaはもうオワコンやろ <br> krea2かMOSSの一騎打ちや 
+
+871 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.9][新]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/21(水) 20:34:40.68
+ 黄色い線の内側でお待ちくださいって言ってんだろ！ 
+
+872 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ce94-X7fM) 2026/10/21(水) 20:36:30.73
+ 女の顔はkrea2やな <br> それ以外はMOSSの勝ちや 
+
+873 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.12][新]</span> (ﾜｯﾁｮｲ 17b3-hABp) 2026/10/21(水) 20:38:09.25
+ &gt;&gt;869 <br> さすがに眼科行ってこいのレベルやが <br> 今週から始めたかも知れんしそれならしゃーない 
+
+874 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ｵｯﾍﾟｹ Sr33-3b52) 2026/10/21(水) 20:40:16.81
+ モスのおまんこだけ欲しい 
+
+875 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 3f65-WNX/) 2026/10/21(水) 20:42:38.52
+ &gt;&gt;861 <br> ワイ本業アカ（イラスト関係なし）とライン切ってる別AIイラスト垢持ち <br> 本業の方では相互の絵師さんがAI垢ではブロックされてる <br> そんな良くも騙したアア！！な風景が各所で見れるのかもしれんのやな 
+
+876 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f9d-4BsX) 2026/10/21(水) 20:43:07.80
+ animaと同じデータセットで絵柄Lora3つ学習したけどうまくいかんわ <br> なんかぼやけて見える、animaの方が適当に切り抜いたデータセットでもまあまあ形になる気がするわ <br> https://i.imgur.com/FyMeQU1.jpeg <br> https://i.imgur.com/b4oxY3I.jpeg <br> https://i.imgur.com/j2xcmSF.jpeg 
+
+877 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.25]</span> (ﾜｯﾁｮｲ 3f82-bHJY) 2026/10/21(水) 20:44:04.05
+ &gt;&gt;874 <br> モスバーガーで頼め 
+
+878 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.19]</span> (ﾜｯﾁｮｲ a301-sDml) 2026/10/21(水) 20:44:04.12
+ 昔なら23時の祭り待機会場出来てたんだろうけど <br> いまのおじいだらけの5chにはそんな会場出来ないんだろうな 
+
+879 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 3fc9-MtnC) 2026/10/21(水) 20:45:30.51
+ &gt;&gt;849 <br> ロッ&#9833; 
+
+880 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 3f07-qav2) 2026/10/21(水) 20:51:01.89
+ Xでphpハックの実演動画とか出してるバカもいてもう末期やな･･･ 
+
+881 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8]</span> (ﾜｯﾁｮｲ 2625-+3Zs) 2026/10/21(水) 20:52:43.15
+ 祭りはもう始まってる <br> 23時からメンテ予告出して、まだ開け続けてるところとか大丈夫かいなと思うが 
+
+882 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.25]</span> (ﾜｯﾁｮｲ 3f82-bHJY) 2026/10/21(水) 20:56:45.43
+ 明日は普通の一日を過ごせるだろうか 
+
+883 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.16]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 20:57:17.15
+ &gt;&gt;873 <br> おまえは脳外科と精神病院に行ってこい 
+
+884 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.17][苗]</span> (ﾜｯﾁｮｲ 0fb8-hgbO) 2026/10/21(水) 20:57:33.93
+ ここはどうせちんちんとまんまん生成してるだけやし 
+
+885 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ｱｳｱｳｳｰ Sa1f-5qDE) 2026/10/21(水) 21:06:08.78
+ &gt;&gt;876 <br> 解像度低いんやないか？ <br> MOSSは3MP(1586x2048)くらいからが本番のように感じるで 
+
+886 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 3f07-qav2) 2026/10/21(水) 21:12:15.55
+ ちんぽいじってただけなのに個人情報フルマックス流出したニキとかは5人くらい出そう 
+
+887 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.319][木]</span> (ﾜｯﾁｮｲ 2668-fG0s) 2026/10/21(水) 21:13:28.50
+ phpの脆弱性とか？ 
+
+888 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.165][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/21(水) 21:14:22.15
+ mossはLora作ればきれいになる 
+
+889 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 3f07-qav2) 2026/10/21(水) 21:14:40.96
+ 今日の23時にちんぽ流出ニキ誕生 <br> →淫夢厨にロックオンされる <br> 　→デビュー <br> 　　→インキン第二章がリリース 
+
+890 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.5][新芽]</span> (ﾜｯﾁｮｲ 0f69-j07p) 2026/10/21(水) 21:18:21.78
+ 陰金田虫？(難聴) 
+
+891 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.165][UR武限][UR防][木]</span> (ﾜｯﾁｮｲ f3b5-JSxr) 2026/10/21(水) 21:19:55.51
+ 自らわざと寝不足になって <br> セルフモザなし流出おこしても <br> 何も起こらず生きていけるんだからええやろ 
+
+892 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.66][SSR武][UR防][苗]</span> (ﾜｯﾁｮｲ 0f05-hgbO) 2026/10/21(水) 21:22:57.30
+ だいぶやばい脆弱性のうえパッチ前に攻撃手法が公開されちゃったもんでお祭りや 
+
+893 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.17]</span> (ﾜｯﾁｮｲ 6610-yvoH) 2026/10/21(水) 21:23:49.36
+ もすベースの惨事のちょいブサアラサーがワイにヒットしすぎるわ 
+
+894 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 277b-hgbO) 2026/10/21(水) 21:29:42.90
+ ちんぽをいじってただけなのに・・・ 
+
+895 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.17]</span> (ﾜｯﾁｮｲ 0f6a-zQho) 2026/10/21(水) 21:33:09.08
+ 30歳だと右から二番目くらいかな？ <br> https://tadaup.jp/AiQBg2lD.png 
+
+896 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 876d-/wA2) 2026/10/21(水) 21:34:44.07
+ モスはブスに強いんか <br> ブスベースやんけ 
+
+897 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.7][新]</span> (ﾜｯﾁｮｲ 0fb2-O14r) 2026/10/21(水) 21:35:29.67
+ buss-image 
+
+898 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.8][新]</span> (ﾜｯﾁｮｲ 3f07-qav2) 2026/10/21(水) 21:39:28.00
+ シンデレラ思考ニキの言うブスって世間一般では十分美人のカテゴリに属してると思うンゴ 
+
+899 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 3f27-qav2) 2026/10/21(水) 21:39:28.51
+ SFT SugokuFutoiTaniryoko 
+
+900 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.14][新]</span> (ﾜｯﾁｮｲ 0b41-+vZU) 2026/10/21(水) 21:40:19.25
+ ほんまphp脆弱性のニュース聞いて青ざめた人はワイだけではないはず <br> 客のサーバ一応全部止めたわ、パッチ当たるまで待機中 
+
+901 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.38]</span> (ﾜｯﾁｮｲ aec4-hgbO) 2026/10/21(水) 21:48:15.32
+ WEB屋さん多そうやな 
+
+902 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.3][新芽]</span> (ﾜｯﾁｮｲ 0f9d-4BsX) 2026/10/21(水) 21:50:48.20
+ &gt;&gt;885 <br> アプスケして解像度上げてみるわサンガツ 
+
+903 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.40]</span> (ﾜｯﾁｮｲ f37d-hgbO) 2026/10/21(水) 21:51:12.22
+ ワイの使ってる地銀のスマホアプリからの振込みができなくなってる <br> php戦争準備中か… 
+
+904 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.71][苗]</span> (ﾜｯﾁｮｲ da10-JSxr) 2026/10/21(水) 21:56:46.81
+ ワイインフラ系エンジニアやけど全部サーバレスだから即死は回避できそうや…怖い 
+
+905 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eef8-5qDE) 2026/10/21(水) 21:58:42.26
+ &gt;&gt;902 <br> いやLoRAはそのままで生成解像度を上げてみたらって意図やった <br> 変わらんかな 
+
+906 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新]</span> (ﾜｯﾁｮｲ 0f52-Qwcj) 2026/10/21(水) 22:03:58.06
+ ハックとかなんでそんなことすゆの？&#129401; 
+
+907  <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0fc6-qav2) 2026/10/21(水) 22:04:04.83
+ ワイには関係ないなと思ってたらFANZAゲーのメンテで追い出されたンゴ 
+
+908 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f74-vPvO) 2026/10/21(水) 22:06:04.83
+ pixivも終わりや 
+
+909 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 1a7e-56u3) 2026/10/21(水) 22:08:29.38
+ 行く宛を失ったエロ画像はどうすればええんや… 
+
+910 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ ee15-SHuw) 2026/10/21(水) 22:08:32.04
+ 半月ぶりに渋にアップする気になったのに&#129402;ぷゆゆ 
+
+911 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 87fd-/wA2) 2026/10/21(水) 22:09:10.27
+ nextcloud死亡のお知らせ 
+
+912 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.4][新芽]</span> (ﾜｯﾁｮｲ 3fdf-hgbO) 2026/10/21(水) 22:10:41.51
+ ウェブサービス閉まりまくりでローカル画像生成しかすることないんご 
+
+913 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.188][SSR武][SSR防][木]</span> (ﾜｯﾁｮｲ 4a39-j4Gm) 2026/10/21(水) 22:14:18.92
+ https://i.ibb.co/p66ZxwmJ/image.jpg 
+
+914 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eeb9-VDwl) 2026/10/21(水) 22:16:18.11
+ インターネット壊れるぅ〜 <br> 太い脆弱性がサーバーに入っちゃう 
+
+915  <span style="color:green;">警備員[Lv.83][SSR武][SR防][苗]</span> (ﾜｯﾁｮｲ ea3f-hgbO) 2026/10/21(水) 22:22:17.16
+ moss lora学習、ようやくここまで来れたわ。 <br> 学習はSFTでサンプルはチェリーピック。はっきり言って品質はまったく駄目で、他は見せられないレベルや。 <br> 実績のあるAnima設定使えばいくらなんでも見れる程度にはなるやろガハハとか思ってたワイ、めちゃくちゃ甘かった。 <br> しかし独特のドット状態は学習されてる様子なのに、キャラ造形が絶望的に甘いのは何なんやろうなあ。 <br> 次はちゃんとmossで実績のある設定も探してトライするか。 <br>  <br> https://tadaup.jp/AKTr3n9m.png 
+
+916 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.6][新]</span> (ﾜｯﾁｮｲ aea2-qav2) 2026/10/21(水) 22:26:48.71
+ まだPHPで作ってるサイトとかあるの？WordPressで既にほったらかしてるブログとかが大半やないのか？ <br> 企業だとJ2EEのServletとかが主じゃないのかな？ <br> 他にPHPとか使ってるおいしそうなターゲットってあるのかしら 
+
+917 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.19]</span> (ﾜｯﾁｮｲ dacf-PAvg) 2026/10/21(水) 22:26:55.66
+ &gt;&gt;915 <br> これはもう読んだ？ <br> https://www.reddit.com/r/StableDiffusion/comments/1x9khtm/a_potential_fix_for_moss_training_issues/ 
+
+918 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ 0f89-WNX/) 2026/10/21(水) 22:27:57.86
+ αとランクを３２にしたら少し近づいた気がするけどまるで全然とどかないんだよねぇ！ 
+
+919 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.11][新]</span> (ﾜｯﾁｮｲ 27ee-hgbO) 2026/10/21(水) 22:28:34.72
+ インターネットが壊れたってやつか 
+
+920 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.38]</span> (ﾜｯﾁｮｲ aec4-hgbO) 2026/10/21(水) 22:28:38.62
+ ゲームなんかでもいまだにPHPつこうとるところだらけやで 
+
+921 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ cba3-WNX/) 2026/10/21(水) 22:36:09.67
+ phpもやが、pipとかuvとかwslのca-certificatesとかアップグレードしとくんやで <br> https://emudhra.we-have-a-problem.com/ 
+
+922 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.10][新]</span> (ﾜｯﾁｮｲ ae94-2GjY) 2026/10/21(水) 22:41:36.94
+ &gt;&gt;915 <br> 動画で動かして泣かせたい 
+
+923 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった <span style="color:green;">警備員[Lv.0][新芽]</span> (ﾜｯﾁｮｲ eed0-Jf7c) 2026/10/21(水) 22:41:50.84
+ &gt;&gt;900 <br> パッチ出てもAIに解析されて直ぐに攻撃されるんやろうな <br> イタチゴッコでキリが無さそうや　もうネットでサービスの時代は終わりなんや 
+

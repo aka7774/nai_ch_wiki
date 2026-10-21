@@ -1,0 +1,61 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> ツール</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> 拡張機能</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> LoRAの特定の層だけを抽出してキレイなLoRAを作る</a>
+<ul>
+<li class="list-2"><a href="#content_3_2"> やり方</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5040007&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+LoRAの特定の層だけを抽出してキレイなLoRAを作ったりするやつ<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> ツール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5040007&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> 拡張機能 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5040007&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<ul id="content_block_6" class="list-1">
+<li> hako-mikan/sd-webui-supermerger: model merge extention for stable diffusion web ui</li>
+</ul>
+<a href="https://github.com/hako-mikan/sd-webui-supermerger" class="outlink">https://github.com/hako-mikan/sd-webui-supermerger</a><ul id="content_block_7" class="list-1">
+<li> hako-mikan/sd-webui-lora-block-weight</li>
+</ul>
+<a href="https://github.com/hako-mikan/sd-webui-lora-block-weight" class="outlink">https://github.com/hako-mikan/sd-webui-lora-block-...</a><br>
+<br>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> LoRAの特定の層だけを抽出してキレイなLoRAを作る <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5040007&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> やり方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5040007&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+(1)sd-webui-lora-block-weightを使ってLoRAのどの層を切る/残すのかをテストする。キャラLoRAならOUT04あたりは残さなくちゃ、みたいな作業。<br>
+くわしくは<a href="https://seesaawiki.jp/nai_ch/d/LoRA%b3%ac%c1%d8">LoRA階層</a>を参照。ここでいい感じのウェイトプリセットを見つけたり、オリジナルのカスタムプリセットを作る。<br>
+プリセットファイルは「\stable-diffusion-webui\scripts\lbwpresets.txt」にある。<br>
+なおsd-webui-lora-block-weightはふつうにText2imgするときにLoRAで階層適用する拡張機能だけど、このときのウェイトプリセットをSuperMergerで流用できる。<br>
+<br>
+(2)SuperMerger<br>
+<ol id="content_block_12" class="list-1">
+<li> SuperMerger→LoRAタブに移動</li>
+<li> 下のloraリストからチェックをつけて選ぶ</li>
+<li> lora名:1.0:MIDD みたいな感じでloraを1個と層の識別子を書いてmerge LoRAs</li>
+</ol>
+<br>
+たとえばF:0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0のようなウェイトプリセットがあって、以下のようにすると顔の情報が多く含まれる層だけが残ったLoRAができる。<br>
+<textarea id="content_block_13" class="PLAIN-BOX">
+lora_HappyFace:1.0:F
+</textarea>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/uR6QYToSMT.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/uR6QYToSMT.png" border="0" width="1000"></a>
+</div></div>
+</div>

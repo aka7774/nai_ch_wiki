@@ -1,0 +1,173 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1">2024-06-08追記：機能拡張としてリリースされた</a></li>
+<li class="list-1"><a href="#content_2">開発のいきさつ</a></li>
+<li class="list-1"><a href="#content_3">インストール方法</a>
+<ul>
+<li class="list-2"><a href="#content_3_1">ブックマークレット</a></li>
+<li class="list-2"><a href="#content_3_2">開発者ツール（Chrome）</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4">使用方法</a></li>
+<li class="list-1"><a href="#content_5">スレ上でのやりとり</a>
+<ul>
+<li class="list-2"><a href="#content_5_3">なんJNVA部★293 </a><a href="https://fate.5ch.net/test/read.cgi/liveuranus/1700978222/221" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1700...</a></li>
+<li class="list-2"><a href="#content_5_4">なんJNVA部★294 </a><a href="https://fate.5ch.net/test/read.cgi/liveuranus/1701137688/129" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1701...</a></li>
+<li class="list-2"><a href="#content_5_5">なんJNVA部★294 </a><a href="https://fate.5ch.net/test/read.cgi/liveuranus/1701137688/162" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1701...</a></li>
+<li class="list-2"><a href="#content_5_6">なんJNVA部★294 </a><a href="https://fate.5ch.net/test/read.cgi/liveuranus/1701137688/208" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1701...</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">2024-06-08追記：機能拡張としてリリースされた <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+<a href="https://github.com/Takenoko3333/sd-webui-reuse-seed-plus" class="outlink">https://github.com/Takenoko3333/sd-webui-reuse-see...</a><br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2">開発のいきさつ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+<br>
+プロンプトやパラメータを調整しつつ画像を生成していると、シード値を「🎲」（ランダム）と「♻」（前回と同じ）の間で頻繁に変更することになる。しかしこれを切り替えるのを忘れて画像を生成してしまうミスをどうしても減らすことができない。<br>
+<br>
+そこで生成ボタンに「🎲」「♻」「+1」のボタンを追加することを考えた。<br>
+<ul id="content_block_4" class="list-1">
+<li> 🎲ボタン…ランダムなシードで生成</li>
+<li> ♻ボタン…シード欄が−1のとき前回と同じシード、それ以外のときはシード欄のシード値で生成</li>
+<li> +1ボタン…前回のシードに＋1して生成</li>
+</ul>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_3">インストール方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1">ブックマークレット <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+<ol id="content_block_9" class="list-1">
+<li> 任意のページをブックマークする</li>
+<li> そのブックマークを編集する</li>
+</ol>
+<ul id="content_block_10" class="list-1">
+<li> ブックマークの名称：任意（🎲♻+1など）</li>
+<li> ブックマークのURL：以下のコードを貼り付ける</li>
+</ul>
+<br>
+javascript:(() =&gt; {function addButtons(txt2img) {function createElementFromHTML(html, callback) {const tempEl = document.createElement('div'); tempEl.innerHTML = html; const child = tempEl.firstElementChild; child.addEventListener('click', callback); return child}const generateButton = document.querySelector(`#${txt2img}_generate%60); const reuseSeedButton = document.querySelector(%60#${txt2img}_reuse_seed%60);const seedInput = document.querySelector(%60#${txt2img}_seed &gt; label &gt; input%60); const box = document.querySelector(%60#${txt2img}_generate_box%60); box.style.gap = '2px'; box.append(createElementFromHTML('&lt;button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0; "&gt;🎲&lt;/button&gt;',() =&gt; {seedInput.value = -1; seedInput.dispatchEvent(new Event('input')); generateButton.click(); })); box.append(createElementFromHTML('&lt;button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0; "&gt;♻&lt;/button&gt;',() =&gt; {reuseSeedButton.click(); setTimeout(() =&gt; {generateButton.click(); }, 1000); })); box.append(createElementFromHTML('&lt;button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0; "&gt;+1&lt;/button&gt;',() =&gt; {seedInput.value = parseInt(seedInput.value) + 1; seedInput.dispatchEvent(new Event('input')); generateButton.click(); })); }addButtons('txt2img'); addButtons('img2img'); })();<br>
+</div></div><div id="content_block_12" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2">開発者ツール（Chrome） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_12-body" class="wiki-section-body-2">
+<ol id="content_block_13" class="list-1">
+<li> WebUIのタブで［F12］キーを押す</li>
+<li> 開発者ツールのメニューから「コンソール」をクリック</li>
+<li> 「&gt;」をクリックしてカーソルが表示されたら下のコードを貼り付けて「Enter」キーを押す</li>
+</ol>
+<br>
+(() =&gt; {<br>
+  function addButtons(txt2img) {<br>
+    // generateボタン消すなら下の行コメントアウト解除<br>
+    // document.querySelector(`#${txt2img}_generate`).style.display = 'none';<br>
+<br>
+    function createElementFromHTML(html, callback) {<br>
+        const tempEl = document.createElement('div');<br>
+        tempEl.innerHTML = html;<br>
+        const child = tempEl.firstElementChild;<br>
+        child.addEventListener('click', callback);<br>
+        return child<br>
+    }<br>
+<br>
+    const generateButton = document.querySelector(`#${txt2img}_generate`);<br>
+    const reuseSeedButton = document.querySelector(`#${txt2img}_reuse_seed`);<br>
+    const seedInput = document.querySelector(`#${txt2img}_seed &gt; label &gt; input`);<br>
+<br>
+    const box = document.querySelector(`#${txt2img}_generate_box`);<br>
+    box.style.gap = '2px';<br>
+    box.append(createElementFromHTML(<br>
+      '&lt;button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0;"&gt;🎲&lt;/button&gt;',<br>
+      () =&gt; {<br>
+        seedInput.value = -1;<br>
+        seedInput.dispatchEvent(new Event('input'));<br>
+        generateButton.click();<br>
+      }<br>
+    ));<br>
+    box.append(createElementFromHTML(<br>
+      '&lt;button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0;"&gt;♻&lt;/button&gt;',<br>
+      () =&gt; {<br>
+        reuseSeedButton.click();<br>
+        // うまく動作しない場合は1000の部分を大きくする<br>
+        setTimeout(() =&gt; {<br>
+          generateButton.click();<br>
+        }, 1000);<br>
+      }<br>
+    ));<br>
+    box.append(createElementFromHTML(<br>
+      '&lt;button class="lg primary gradio-button svelte-cmf5ev" style="min-width:0;"&gt;+1&lt;/button&gt;',<br>
+      () =&gt; {<br>
+        seedInput.value = parseInt(seedInput.value) + 1;<br>
+        seedInput.dispatchEvent(new Event('input'));<br>
+        generateButton.click();<br>
+      }<br>
+    ));<br>
+  }<br>
+  addButtons('txt2img');<br>
+  addButtons('img2img');<br>
+})();<br>
+</div></div><div id="content_block_15" class="wiki-section-1"><div class="title-1"><h3 id="content_4">使用方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_15-body" class="wiki-section-body-1">
+<br>
+WebUIが起動したらブックマークレットを選択するか、開発者ツールからコードを実行するとGenerate（生成）ボタンの右に3つのボタンが追加される。<br>
+<br>
+WebUIのページをリロードしたりすると追加のボタンは消えるので、改めてブックマークレットを選択などする。<br>
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_5">スレ上でのやりとり <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_5_3">なんJNVA部★293 <a href="https://fate.5ch.net/test/read.cgi/liveuranus/1700978222/221" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1700...</a> <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_5_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+<br>
+====<br>
+221 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ a7a4-1+JT)[] 投稿日：2023/11/26(日) 21:18:22.97 ID:MZWQ+VQu0<br>
+Python使えてこれ↓に興味あるニキおらんかのう。プログラミングはBASICとちょっとだけPerlで止まっとるんや<br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1700342207/80" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1700...</a><br>
+シード欄の🎲や♻を押し忘れて生成するミスをどうしても根絶できない<br>
+ミス防止のためにGenerateボタンを3分割して【🎲｜♻｜+1】にできないかなあ<br>
+<br>
+🎲ボタン…ランダムなシードで生成<br>
+♻ボタン…シード欄が−1のとき前回と同じシード、それ以外のときはシード欄のシード値で生成<br>
++1ボタン…前回のシードに＋1して生成<br>
+<br>
+みたいなの<br>
+設定でボタンの順番や各ボタンの幅を調整できるとなお嬉しい<br>
+====<br>
+<br>
+すると翌日には動作するコードが提案された。<br>
+</div></div><div id="content_block_21" class="wiki-section-2"><div class="title-2"><h4 id="content_5_4">なんJNVA部★294 <a href="https://fate.5ch.net/test/read.cgi/liveuranus/1701137688/129" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1701...</a> <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_5_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_21-body" class="wiki-section-body-2">
+<br>
+====<br>
+129 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e747-GgRN)[sage] 投稿日：2023/11/28(火) 16:08:23.00 ID:GNc61kk70<br>
+&gt;&gt;93<br>
+<a href="http://fate.5ch.net/test/read.cgi/liveuranus/1700978222/221" class="outlink">http://fate.5ch.net/test/read.cgi/liveuranus/17009...</a><br>
+とりあえずこんな感じでいいんじゃないか？<br>
+<a href="https://rentry.org/u9g6u" class="outlink">https://rentry.org/u9g6u</a><br>
+<br>
+開発者ツールで実行すれば各種ボタンが追加される<br>
+GenerateボタンはXYZとか使うときにやっぱり必要そうだから残しておいた<br>
+ローカルの拡張機能にすればわざわざ開発者ツールで実行しなくてもwebui開いたときに勝手にボタン増やしてくれるようにもできると思う(面倒だからやらない)<br>
+====<br>
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_5_5">なんJNVA部★294 <a href="https://fate.5ch.net/test/read.cgi/liveuranus/1701137688/162" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1701...</a> <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_5_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+<br>
+====<br>
+162 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e747-GgRN)[sage] 投稿日：2023/11/28(火) 17:49:07.75 ID:GNc61kk70<br>
+シード再利用するところは雑なことしてるから飽くまでとりあえずレベルのものってことに注意やで<br>
+====<br>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_5_6">なんJNVA部★294 <a href="https://fate.5ch.net/test/read.cgi/liveuranus/1701137688/208" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1701...</a> <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5097547&amp;part=content_5_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+<br>
+====<br>
+208 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e747-GgRN)[sage] 投稿日：2023/11/28(火) 20:08:56.11 ID:GNc61kk70<br>
+&gt;&gt;196<br>
+好きに改変・再配布してええで<br>
+====
+</div></div>
+</div>

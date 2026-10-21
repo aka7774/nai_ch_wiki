@@ -1,0 +1,334 @@
+<div class="user-area">
+新しいLoRAノートブックはこちら→<a href="https://seesaawiki.jp/nai_ch/d/kohya%5ftrain%5fnetwork%5fsimple">kohya_train_network_simple</a><br>
+<br>
+無料Colabと🤗で学習を体験してみよう的な<br>
+高いGPUが無くても頑張って768x768で学習するぞ的な<br>
+なお筆者はよくわかってない<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 注意の注意</a></li>
+<li class="list-1"><a href="#content_2"> 注意</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> 検証用修正版について</a>
+<ul>
+<li class="list-3"><a href="#content_2_1_1"> 修正点</a></li>
+<li class="list-3"><a href="#content_2_1_2"> 使い方</a></li>
+<li class="list-3"><a href="#content_2_1_3"> 学習結果</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> すること</a></li>
+<li class="list-1"><a href="#content_4"> 1. Googleのアカウントを作成する</a></li>
+<li class="list-1"><a href="#content_5"> 2. Huggingfaceのアカウントを作成する</a></li>
+<li class="list-1"><a href="#content_6"> 3. アクセストークンを追加する</a></li>
+<li class="list-1"><a href="#content_7"> 4. 学習用画像を用意する</a></li>
+<li class="list-1"><a href="#content_8"> 5. キャプションを用意する</a></li>
+<li class="list-1"><a href="#content_9"> 6. 正則化画像を用意する</a></li>
+<li class="list-1"><a href="#content_10"> 7. 画像をzipにする</a></li>
+<li class="list-1"><a href="#content_11"> 8. zipを🤗にアップロードする</a>
+<ul>
+<li class="list-2"><a href="#content_11_2"> Datasetを作る</a></li>
+<li class="list-2"><a href="#content_11_3"> zipをアップロードする</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_12"> 9. 学習ベースモデルのURLを用意</a></li>
+<li class="list-1"><a href="#content_13"> 10. 学習済みモデル置き場の用意</a></li>
+<li class="list-1"><a href="#content_14"> 11. Notebookを用意する</a>
+<ul>
+<li class="list-2"><a href="#content_14_4"> 自分のDriveにNotebookをコピーする</a></li>
+<li class="list-2"><a href="#content_14_5"> GPUを使う</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_15"> 12. 基本設定</a></li>
+<li class="list-1"><a href="#content_16"> 13. 詳細設定</a>
+<ul>
+<li class="list-2"><a href="#content_16_6"> 学習の実行</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_17"> 14. 結果の確認</a></li>
+<li class="list-1"><a href="#content_18"> 15. モデルの共有</a></li>
+<li class="list-1"><a href="#content_19"> オプション: LoRaを作成する</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+旧バージョンはこちら→<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac%c6%fe%cc%e7">ローカルの学習入門</a><br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 注意の注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+まさかの Huggingface Hubの問題で動かなくなりました。<br>
+(get-pipとの相性問題らしいけど知らん)<br>
+<br>
+最新版 <a href="https://seesaawiki.jp/nai_ch/d/kohya%5ftrain%5fnetwork%5fsimple">kohya_train_network_simple</a> では回避済みなのでこっちは放置します。<br>
+get-pipより先にlogin()すれば大丈夫。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+<br>
+kohyaのコードは急に動かなくなります。<br>
+(ほとんどテストしないでリリースされているものと思われる)<br>
+<ul id="content_block_4" class="list-1">
+<li> 検証用修正版(2023-02-03作成)
+<ul class="list-2">
+<li> <a href="https://colab.research.google.com/drive/1MyZTE7z_HXIsQhDLCkocx2HDwKVpMDpI" class="outlink">https://colab.research.google.com/drive/1MyZTE7z_H...</a></li>
+</ul>
+</li>
+<li> 自分でコマンドラインオプションを入れる版(2023-01-28作成,2023-02-03更新)
+<ul class="list-2">
+<li> <a href="https://colab.research.google.com/drive/1vU8SRWeTU8w89xl9jA2nivIqHzr7HBiU" class="outlink">https://colab.research.google.com/drive/1vU8SRWeTU...</a></li>
+</ul>
+</li>
+<li> 初期版(2023-01-20作成,動きません,requirements.txtが壊れている,lr低すぎ)
+<ul class="list-2">
+<li> <a href="https://colab.research.google.com/drive/1QNM_u4GB7ituUTOUiJ0U8zWjzETwlFKf" class="outlink">https://colab.research.google.com/drive/1QNM_u4GB7...</a></li>
+</ul>
+</li>
+</ul>
+<br>
+確実に動くバージョンを使いたいならリポジトリのハッシュを指定しましょう。<br>
+常に最新機能を追いたいなら更新のたびにオプションの見直しと動作チェックをしましょう。<br>
+</div></div><div id="content_block_6" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> 検証用修正版について <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_6-body" class="wiki-section-body-2">
+<br>
+Colabでは簡単にLora出来ないという誤解を払拭するために作りました。<br>
+作ってみたらエラーで止まったので誤解ではなかったことを理解しました。(直しました)<br>
+</div></div><div id="content_block_8" class="wiki-section-3"><div class="title-3"><h5 id="content_2_1_1"> 修正点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_2_1_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_8-body" class="wiki-section-body-3">
+<ul id="content_block_9" class="list-1">
+<li> requirements.txtのインストールに失敗するので使わないように回避した</li>
+<li> accelerate configで設定する内容をすべてコマンドラインオプションに盛り込んで警告も出ないようにした</li>
+<li> learning_rate を 1e-3 (最近の推奨値)まで上げて、学習された事がわかりやすいようにした</li>
+<li> xformers==0.0.16rc425をインストールする(このバージョンだと学習できないという噂がありますが動作するので確認してください)</li>
+<li> モデルをDBする機能を削ってLoRA専用にしてわかりやすくした</li>
+<li> 環境確認、環境構築、トレーニングとアップロードのセルを分けてエラー時にリトライしやすくした</li>
+<li> caption_extensionの指定はドットを付けるのが正しいらしいので直しました</li>
+</ul>
+</div></div><div id="content_block_11" class="wiki-section-3"><div class="title-3"><h5 id="content_2_1_2"> 使い方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_2_1_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_11-body" class="wiki-section-body-3">
+<ol id="content_block_12" class="list-1">
+<li> 基本設定を実行(🤗にログイン) ここを変えれば他の学習も出来るはず</li>
+<li> 環境確認を実行(しなくてもいい)</li>
+<li> 環境構築を実行</li>
+<li> トレーニングとアップロードを実行 細かい設定はここで変える</li>
+</ol>
+<br>
+学習時間は40分程度です。解像度768、batch_size=2、840Steps。<br>
+</div></div><div id="content_block_14" class="wiki-section-3"><div class="title-3"><h5 id="content_2_1_3"> 学習結果 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_2_1_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_14-body" class="wiki-section-body-3">
+<blockquote id="content_block_15">
+masterpiece, best quality, 1girl, zunko &lt;lora:Zunko-lora:1&gt;
+</blockquote>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/TUCZCDUo4Q.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/TUCZCDUo4Q-s.png" border="0"></a><br>
+<br>
+まあ、似てなくはない・・・かな・・・
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> すること <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+<ul id="content_block_18" class="list-1">
+<li> kohya版sd-scripts(コマンドラインツール)を実行する</li>
+<li> DBでの学習(Loraにも対応可能)</li>
+<li> サンプルは東北ずん子(サンプル画像は最後に掲載)</li>
+</ul>
+</div></div><div id="content_block_20" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 1. Googleのアカウントを作成する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_20-body" class="wiki-section-body-1">
+<ul id="content_block_21" class="list-1">
+<li> Colabで使う用</li>
+<li> <a href="https://accounts.google.com/signup" class="outlink">https://accounts.google.com/signup</a></li>
+</ul>
+<br>
+Google Driveは使わないので、リークモデルとか使わないなら本垢でもたぶん大丈夫だと思うけど自己責任で。
+</div></div><div id="content_block_23" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 2. Huggingfaceのアカウントを作成する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_23-body" class="wiki-section-body-1">
+<ul id="content_block_24" class="list-1">
+<li> 要メールアドレス(さっき作ったGoogleので良い)</li>
+<li> <a href="https://huggingface.co/" class="outlink">https://huggingface.co/</a></li>
+</ul>
+<br>
+既に取得済みのを使いまわすなら名前とかメールアドレスとかが見られてもいいものか要チェック。
+</div></div><div id="content_block_26" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 3. アクセストークンを追加する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_26-body" class="wiki-section-body-1">
+<ul id="content_block_27" class="list-1">
+<li> <a href="https://huggingface.co/settings/tokens" class="outlink">https://huggingface.co/settings/tokens</a></li>
+<li> 「New Token」を押す</li>
+<li> Name: 任意</li>
+<li> Role: write</li>
+</ul>
+<br>
+使う時にコピペするので文字列の中身は気にしなくていい。<br>
+</div></div><div id="content_block_29" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> 4. 学習用画像を用意する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_29-body" class="wiki-section-body-1">
+<br>
+手順4から9はサンプルを用意してあるので省略できます。<br>
+<ul id="content_block_30" class="list-1">
+<li> 解像度768x768想定</li>
+<li> 「7_Zunko 1girl」フォルダを作る</li>
+<li> ファイル名は任意</li>
+<li> 拡張子は png</li>
+<li> 枚数は24枚</li>
+</ul>
+</div></div><div id="content_block_32" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> 5. キャプションを用意する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_32-body" class="wiki-section-body-1">
+<ul id="content_block_33" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/Dreambooth%2dLoRA">Dreambooth-LoRA</a>の「キャプションを付ける」を参照</li>
+<li> 画像ファイル名の拡張子が txt になったファイルを用意する</li>
+<li> 「7_Zunko 1girl」フォルダに入れる</li>
+</ul>
+</div></div><div id="content_block_35" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> 6. 正則化画像を用意する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_35-body" class="wiki-section-body-1">
+<ul id="content_block_36" class="list-1">
+<li> 解像度768x768想定</li>
+<li> 「1_1girl」フォルダを作る</li>
+<li> ファイル名は任意</li>
+<li> 拡張子は png</li>
+<li> 枚数は100枚</li>
+</ul>
+</div></div><div id="content_block_38" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> 7. 画像をzipにする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_38-body" class="wiki-section-body-1">
+<ul id="content_block_39" class="list-1">
+<li> 「7_Zunko 1girl」フォルダごと圧縮して 7_Zunko 1girl.zip を作成する</li>
+<li> 「1_1girl」フォルダごと圧縮して 1_1girl.zip を作成する</li>
+<li> いずれも解凍するとフォルダが出来るようにする</li>
+</ul>
+</div></div><div id="content_block_41" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> 8. zipを🤗にアップロードする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_41-body" class="wiki-section-body-1">
+</div></div><div id="content_block_43" class="wiki-section-2"><div class="title-2"><h4 id="content_11_2"> Datasetを作る <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_11_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_43-body" class="wiki-section-body-2">
+<ul id="content_block_44" class="list-1">
+<li> <a href="https://huggingface.co/new-dataset" class="outlink">https://huggingface.co/new-dataset</a></li>
+<li> Dataset name: Zunko</li>
+<li> 他はいじらない</li>
+<li> 「Create dataset」を押す</li>
+</ul>
+</div></div><div id="content_block_46" class="wiki-section-2"><div class="title-2"><h4 id="content_11_3"> zipをアップロードする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_11_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_46-body" class="wiki-section-body-2">
+<ul id="content_block_47" class="list-1">
+<li> 「Files」タブ</li>
+<li> 「Add File」を押す</li>
+<li> 「Upload Files」を押す</li>
+<li> 2つのzipをドロップかクリックで選択</li>
+<li> 「Commit changes to main」を押す</li>
+<li> アップロードされたファイルの行にある「↓」を右クリックしてURLをコピーしてメモっておく</li>
+</ul>
+</div></div><div id="content_block_49" class="wiki-section-1"><div class="title-1"><h3 id="content_12"> 9. 学習ベースモデルのURLを用意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_12" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_49-body" class="wiki-section-body-1">
+<ul id="content_block_50" class="list-1">
+<li> モデルをダウンロードして学習します。</li>
+<li> ここから検索
+<ul class="list-2">
+<li> <a href="https://huggingface.co/models" class="outlink">https://huggingface.co/models</a></li>
+</ul>
+</li>
+<li> 上記と同じ方法でモデルのURLをコピーしてメモっておく</li>
+<li> なければ🤗にアップロードしましょう。</li>
+</ul>
+</div></div><div id="content_block_52" class="wiki-section-1"><div class="title-1"><h3 id="content_13"> 10. 学習済みモデル置き場の用意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_13" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_52-body" class="wiki-section-body-1">
+<ul id="content_block_53" class="list-1">
+<li> <a href="https://huggingface.co/new-model" class="outlink">https://huggingface.co/new-model</a></li>
+<li> Model name: Zunko</li>
+<li> 他はいじらない</li>
+<li> 「Create model」を押す</li>
+</ul>
+</div></div><div id="content_block_55" class="wiki-section-1"><div class="title-1"><h3 id="content_14"> 11. Notebookを用意する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_14" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_55-body" class="wiki-section-body-1">
+<br>
+このページの冒頭にある動きそうなノートブックを開きます。<br>
+<br>
+以下の手順通りに設定する。<br>
+</div></div><div id="content_block_57" class="wiki-section-2"><div class="title-2"><h4 id="content_14_4"> 自分のDriveにNotebookをコピーする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_14_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_57-body" class="wiki-section-body-2">
+<ul id="content_block_58" class="list-1">
+<li> File
+<ul class="list-2">
+<li> Save a copy in Drive</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_60" class="wiki-section-2"><div class="title-2"><h4 id="content_14_5"> GPUを使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_14_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_60-body" class="wiki-section-body-2">
+<ul id="content_block_61" class="list-1">
+<li> Rumtime
+<ul class="list-2">
+<li> Change runtime type</li>
+</ul>
+</li>
+<li> Hardware accelerator
+<ul class="list-2">
+<li> GPU</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_63" class="wiki-section-1"><div class="title-1"><h3 id="content_15"> 12. 基本設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_15" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_63-body" class="wiki-section-body-1">
+<br>
+用意したURLを入力します。<br>
+あらかじめ、東北ずん子のサンプルが設定してあります。<br>
+<ul id="content_block_64" class="list-1">
+<li> 「venvのURL」はそのままにしておくのがおすすめ
+<ul class="list-2">
+<li> 空白にするとxformersのコンパイルを始めます(所要時間2時間弱)</li>
+</ul>
+</li>
+<li> 「モデルのアップロード先」には、手順10で作成したリポジトリを指定します
+<ul class="list-2">
+<li> 例: yourname/Zunko</li>
+</ul>
+</li>
+</ul>
+<br>
+三角ボタンを押します。<br>
+<br>
+🤗へのログインを促されるので、手順3で用意したトークンをコピペします。<br>
+</div></div><div id="content_block_66" class="wiki-section-1"><div class="title-1"><h3 id="content_16"> 13. 詳細設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_16" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_66-body" class="wiki-section-body-1">
+<br>
+(慣れてきたら色々いじってみましょう)<br>
+<br>
+ここでは解説しないので、そのまま三角ボタンを押します。<br>
+</div></div><div id="content_block_68" class="wiki-section-2"><div class="title-2"><h4 id="content_16_6"> 学習の実行 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_16_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_68-body" class="wiki-section-body-2">
+<br>
+学習は40分程度で終わります。<br>
+アップロードも含めて1時間くらいで終わると思います。<br>
+</div></div><div id="content_block_70" class="wiki-section-1"><div class="title-1"><h3 id="content_17"> 14. 結果の確認 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_17" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_70-body" class="wiki-section-body-1">
+<br>
+終わったら🤗にログインしてモデルがアップロードされていることを確認します。<br>
+<br>
+モデルをダウンロードして、手元の1111などで動作確認しましょう。<br>
+<blockquote id="content_block_71">
+masterpiece, best quality, 1girl, zunko
+</blockquote>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/L2cQM9y4QV.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/L2cQM9y4QV-s.png" border="0"></a><br>
+<blockquote id="content_block_72">
+masterpiece, best quality, 1girl, zunko, naked
+</blockquote>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/wRXYG0MRdA.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/wRXYG0MRdA-s.png" border="0"></a><br>
+</div></div><div id="content_block_74" class="wiki-section-1"><div class="title-1"><h3 id="content_18"> 15. モデルの共有 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_18" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_74-body" class="wiki-section-body-1">
+<br>
+良いモデルが出来たらURLをスレに貼ってみんなで楽しもう！<br>
+🤗にはNSFW画像は貼ってはいけないのでそういう画像はこっちで。<br>
+</div></div><div id="content_block_76" class="wiki-section-1"><div class="title-1"><h3 id="content_19"> オプション: LoRaを作成する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5011523&amp;part=content_19" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_76-body" class="wiki-section-body-1">
+<br>
+<ul id="content_block_77" class="list-1">
+<li> ノートブックは検証用修正版を使いましょう。</li>
+<li> 手順12までは同じ。
+<ul class="list-2">
+<li> output_name をわかりやすく変更するのがおすすめ Zunko-lora など</li>
+</ul>
+</li>
+</ul>
+<br>
+768のbatch_sizeは5にも出来るけど時間は変わらなかった。<br>
+試しにresolutionを1024にしてみたけど動いている。
+</div></div>
+</div>

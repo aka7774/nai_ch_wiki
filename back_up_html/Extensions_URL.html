@@ -1,0 +1,501 @@
+<div class="user-area">
+ここは「Install from URLタブ」で入れるやつのページ<br>
+<br>
+1111の公式リスト以外の拡張機能やでー<br>
+「Availableタブ→Load from:ボタン」で出てくるやつは<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ceExtensions">ローカルのExtensions</a>に書こう<br>
+<br>
+★不具合報告とか要望は掲示板でもどうぞ<br>
+<a href="https://seesaawiki.jp/nai_ch/bbs/39211/" class="outlink">https://seesaawiki.jp/nai_ch/bbs/39211/</a><br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 導入方法</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> リスト(一部)</a></li>
+<li class="list-2"><a href="#content_1_2"> アンインストール</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2"> 開発テンプレート</a></li>
+<li class="list-1"><a href="#content_3"> 一覧</a>
+<ul>
+<li class="list-2"><a href="#content_3_3"> 156スレ773 Latent Couple 拡張で好きな位置にプロンプトを置くツール</a></li>
+<li class="list-2"><a href="#content_3_4"> Posex</a></li>
+<li class="list-2"><a href="#content_3_5"> sd-webui-lora-block-weight</a></li>
+<li class="list-2"><a href="#content_3_6"> sd-webui-supermerger</a></li>
+<li class="list-2"><a href="#content_3_7"> stable-diffusion-webui-model-toolkit</a></li>
+<li class="list-2"><a href="#content_3_8"> sd-webui-model-converter</a></li>
+<li class="list-2"><a href="#content_3_9"> sdweb-clip-changer</a></li>
+<li class="list-2"><a href="#content_3_10"> stable-diffusion-webui-dumpunet</a></li>
+<li class="list-2"><a href="#content_3_11"> U-Net階層別マージ</a></li>
+<li class="list-2"><a href="#content_3_12"> カスタムモデルのキーワードを自動入力するWEBUI拡張機能</a></li>
+<li class="list-2"><a href="#content_3_13"> UnivAICharGen｜Umi AI: A WebUI Wildcard Mod</a></li>
+<li class="list-2"><a href="#content_3_14"> Push to 🤗 Hugging Face</a>
+<ul>
+<li class="list-3"><a href="#content_3_14_1"> install.py</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_3_15"> LamaCleaner ★</a></li>
+<li class="list-2"><a href="#content_3_16"> Images Browser ★</a></li>
+<li class="list-2"><a href="#content_3_17"> Copyguard ★</a></li>
+<li class="list-2"><a href="#content_3_18"> Curly rand ★</a></li>
+<li class="list-2"><a href="#content_3_19"> Filer ★</a></li>
+<li class="list-2"><a href="#content_3_20"> Gimai ★</a></li>
+<li class="list-2"><a href="#content_3_21"> Katanuki ★</a></li>
+<li class="list-2"><a href="#content_3_22"> Fake X/Y plot ★</a></li>
+<li class="list-2"><a href="#content_3_23"> Dataset Resizer ★</a></li>
+<li class="list-2"><a href="#content_3_24"> Face-Body-Splitter ★</a></li>
+<li class="list-2"><a href="#content_3_25"> Generate-TransparentIMG ★</a></li>
+<li class="list-2"><a href="#content_3_26"> ChatGPT</a></li>
+<li class="list-2"><a href="#content_3_27"> dddetailer</a></li>
+<li class="list-2"><a href="#content_3_28"> sd-webui-boorutowd</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> 更新停止</a>
+<ul>
+<li class="list-2"><a href="#content_4_29"> Merge Numa</a></li>
+<li class="list-2"><a href="#content_4_30"> prompt_nai</a></li>
+<li class="list-2"><a href="#content_4_31"> Infotexts</a></li>
+<li class="list-2"><a href="#content_4_32"> Infotext Ex</a></li>
+<li class="list-2"><a href="#content_4_33"> sd_invokeai_models_yaml_maker</a></li>
+<li class="list-2"><a href="#content_4_34"> Generate from json</a></li>
+<li class="list-2"><a href="#content_4_35"> About</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 導入方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<ol id="content_block_2" class="list-1">
+<li> 1111が古かったら新しくする</li>
+<li> Extensionsタブ→Install from URLタブ</li>
+<li> URLを入力してInstall</li>
+<li> 「Local directory name」は空白のままにするのがお勧め!!</li>
+</ol>
+<ul id="content_block_3" class="list-1">
+<li> たまにInstalledタブのCheck for updates→Applyを押すと幸せになれるかも</li>
+</ul>
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> リスト(一部) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<br>
+Availableタブ→Extension index URLに以下を入力→Load from:ボタン<br>
+<a href="https://gist.githubusercontent.com/aka7774/bb306094dae726a32fbb6c617ddce2c0/raw/d6a3a340e500573444efef061d31ac280dd2370a/1111_Extensions.json" class="outlink">https://gist.githubusercontent.com/aka7774/bb30609...</a><br>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> アンインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+<br>
+フォルダごと消すほうが安全っぽい<br>
+<ul id="content_block_8" class="list-1">
+<li> 使ってなくてもinstall.pyが毎回実行されるので起動が重くなる</li>
+</ul>
+</div></div><div id="content_block_10" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 開発テンプレート <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_10-body" class="wiki-section-body-1">
+<ul id="content_block_11" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_extension_template" class="outlink">https://github.com/aka7774/sd_extension_template</a></li>
+<li> 1111特有の実装方法を理解するのにいいかも</li>
+</ul>
+</div></div><div id="content_block_13" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 一覧 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_13-body" class="wiki-section-body-1">
+</div></div><div id="content_block_15" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> 156スレ773 Latent Couple 拡張で好きな位置にプロンプトを置くツール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_15-body" class="wiki-section-body-2">
+<a href="https://github.com/Zuntan03/LatentCoupleHelper" class="outlink">https://github.com/Zuntan03/LatentCoupleHelper</a><br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1677059075/773" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1677...</a><br>
+<pre id="content_block_16" class="BOX">
+773 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 83b2-h1Ka)[sage] 投稿日：2023/02/23(木) 14:51:59.48 ID:AoWTs5Vi0 [1/16]
+「画面を分割しているようじゃダメだな」
+「ん？そー思わんか？」
+
+「プロンプトを!」
+「置いてくる!!!」
+
+https://i.imgur.com/krCM9lw.png
+
+774 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 83b2-h1Ka)[sage] 投稿日：2023/02/23(木) 14:52:44.18 ID:AoWTs5Vi0 [2/16]
+&gt;&gt; 773
+というわけでLatent Couple 拡張で好きな位置にプロンプトを置くツール作ったで
+スクリプトなんで安心して試してな
+
+https://github.com/Zuntan03/LatentCoupleHelper
+https://github.com/Zuntan03/LatentCoupleHelper/releases/download/v1.0.0/LatentCoupleHelper-v1.0.0.zip
+
+https://i.imgur.com/ZwJ5q7o.png
+
+</pre>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/dTpc5Mc6EB.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/dTpc5Mc6EB-s.png" border="0"></a> <a href="https://image02.seesaawiki.jp/n/h/nai_ch/9JlEkPik47.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/9JlEkPik47-s.png" border="0"></a> <a href="https://image01.seesaawiki.jp/n/h/nai_ch/hrREhj2sax.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/hrREhj2sax-s.png" border="0"></a><br>
+</div></div><div id="content_block_18" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> Posex <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_18-body" class="wiki-section-body-2">
+<ul id="content_block_19" class="list-1">
+<li> <a href="https://github.com/hnmr293/posex" class="outlink">https://github.com/hnmr293/posex</a></li>
+<li> 1111上で棒人間を動かすやつ。同様の拡張やツールがいくつかある。</li>
+</ul>
+</div></div><div id="content_block_21" class="wiki-section-2"><div class="title-2"><h4 id="content_3_5"> sd-webui-lora-block-weight <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_21-body" class="wiki-section-body-2">
+<ul id="content_block_22" class="list-1">
+<li> <a href="https://github.com/hako-mikan/sd-webui-lora-block-weight" class="outlink">https://github.com/hako-mikan/sd-webui-lora-block-...</a></li>
+<li> Loraを適用する際、強さを階層ごとに設定できます</li>
+<li> Loraは強力なツールですが、時に扱いが難しく、影響してほしくないところにまで影響がでたりします。このスクリプトではLoraを適用する際、適用度合いをU-Netの階層ごとに設定することができます。これを使用することで求める画像に近づけることができるかもしれません。</li>
+</ul>
+<br>
+158スレ161<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1677263179/161" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1677...</a><br>
+<pre id="content_block_23" class="BOX">
+161 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7628-W5vA)[sage] 投稿日：2023/02/25(土) 11:26:06.87 ID:KuD13PsO0
+&gt;&gt;115
+階層loraの使い方や
+scriptsフォルダに直接ぶち込む。Extensionsタブからのインストールではないで
+そしてlbwpresets.txtに　TEST:1,1,1,1,1,1,1,1,1,1,1,1,1,0.5,0.5,0,0　みたいに設定を追記する
+https://i.imgur.com/O7ky191.jpg
+LoRA Block Weightの設定欄でActiveにチェックを入れて、Reload Presetsボタンを押して先ほど編集したtxtファイルを再読み込みする
+https://i.imgur.com/U5huiPi.jpg
+プロンプトのloraのところに以下の例のように追記する
+例：&lt;lora:イオリ768v2:0.6&gt;に上で作った階層loraの設定を反映させる場合→&lt;lora:イオリ768v2:0.6:TEST&gt;
+https://i.imgur.com/X2VncQ7.jpg
+</pre>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/Hqj6czNBiN.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Hqj6czNBiN-s.jpg" border="0"></a> <a href="https://image01.seesaawiki.jp/n/h/nai_ch/OKjc6bx16l.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/OKjc6bx16l-s.jpg" border="0"></a><br>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_3_6"> sd-webui-supermerger <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+<ul id="content_block_26" class="list-1">
+<li> <a href="https://github.com/hako-mikan/sd-webui-supermerger" class="outlink">https://github.com/hako-mikan/sd-webui-supermerger</a></li>
+<li> ネ申</li>
+<li> このextentionではモデルをマージした際、保存せずに画像生成用のモデルとして読み込むことができます。 これまでマージしたモデルはいったん保存して気に入らなければ削除するということが必要でしたが、このextentionを使うことでHDDやSSDの消耗を防ぐことができます。</li>
+</ul>
+<br>
+133スレ184<br>
+<pre id="content_block_27" class="BOX">
+新しいマージエクステンション作った
+マージしたモデルを保存せず直接画像生成用として読み込める
+web-uiのキャッシュ機能を使えば1秒でマージの切り替えができる
+連続生成機能もつけたのでマージ率を0.01ずつ変えながら100枚生成とかもできる
+これでSSDの消耗を心配する必要はなくなった 
+</pre>
+<ul id="content_block_28" class="list-1">
+<li> 公式Extensionsになりました→<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ceExtensions">ローカルのExtensions</a></li>
+</ul>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_3_7"> stable-diffusion-webui-model-toolkit <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+<ul id="content_block_31" class="list-1">
+<li> <a href="https://github.com/arenatemp/stable-diffusion-webui-model-toolkit" class="outlink">https://github.com/arenatemp/stable-diffusion-webu...</a></li>
+<li> fp16, safetensors, pruned, VAE内蔵すべてに対応してそう</li>
+<li> モデルデータのチェック</li>
+<li> クリーニング（配布されている多くのモデルは非常に肥大化しており、そのサイズのほとんどは冗長または役に立たないデータです。たとえば、Anything-v3.0 は 7.7 GB で、別の 800 MB VAE が必要です。これらを組み合わせて、正しい VAE を含む2.1GB スタンドアロン モデルに統合できます。）</li>
+<li> モデルデータ内のコンポーネントの置換・抽出</li>
+<li> マージ問題の破損モデルデータの修復も出来る</li>
+</ul>
+</div></div><div id="content_block_33" class="wiki-section-2"><div class="title-2"><h4 id="content_3_8"> sd-webui-model-converter <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_33-body" class="wiki-section-body-2">
+<ul id="content_block_34" class="list-1">
+<li> <a href="https://github.com/Akegarasu/sd-webui-model-converter" class="outlink">https://github.com/Akegarasu/sd-webui-model-conver...</a></li>
+<li> fp16やsafetensors変換をするやつ</li>
+<li> no-ema(prune)もある</li>
+<li> VAE内蔵もやってくれればいいのになー
+<ul class="list-2">
+<li> <a href="https://note.com/kohya_ss/n/nf5893a2e719c" class="outlink">https://note.com/kohya_ss/n/nf5893a2e719c</a></li>
+<li> 手元では動かなかった</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_36" class="wiki-section-2"><div class="title-2"><h4 id="content_3_9"> sdweb-clip-changer <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_36-body" class="wiki-section-body-2">
+<ul id="content_block_37" class="list-1">
+<li> <a href="https://github.com/bbc-mc/sdweb-clip-changer" class="outlink">https://github.com/bbc-mc/sdweb-clip-changer</a></li>
+<li> Stable DiffusionベースモデルのCLIPの重みを良いやつに変更する</li>
+<li> (良いとは言ってない)</li>
+</ul>
+</div></div><div id="content_block_39" class="wiki-section-2"><div class="title-2"><h4 id="content_3_10"> stable-diffusion-webui-dumpunet <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_39-body" class="wiki-section-body-2">
+<ul id="content_block_40" class="list-1">
+<li> <a href="https://github.com/hnmr293/stable-diffusion-webui-dumpunet" class="outlink">https://github.com/hnmr293/stable-diffusion-webui-...</a></li>
+<li> 122スレ166</li>
+<li> 沼が見える</li>
+</ul>
+</div></div><div id="content_block_42" class="wiki-section-2"><div class="title-2"><h4 id="content_3_11"> U-Net階層別マージ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_42-body" class="wiki-section-body-2">
+bbc-mc/sdweb-merge-block-weighted-gui: Merge models with separate rate for each 25 U-Net block (input, middle, output). Extension for Stable Diffusion UI by AUTOMATIC1111 - <a href="https://github.com/bbc-mc/sdweb-merge-block-weighted-gui" class="outlink">https://github.com/bbc-mc/sdweb-merge-block-weight...</a><ul id="content_block_43" class="list-1">
+<li> →<a href="https://seesaawiki.jp/nai_ch/d/%b3%ac%c1%d8%a5%de%a1%bc%a5%b8">階層マージ</a></li>
+<li> 公式Extensionsになりました→<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ceExtensions">ローカルのExtensions</a></li>
+</ul>
+</div></div><div id="content_block_45" class="wiki-section-2"><div class="title-2"><h4 id="content_3_12"> カスタムモデルのキーワードを自動入力するWEBUI拡張機能 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_45-body" class="wiki-section-body-2">
+mix1009/model-keyword: Automatic1111 WEBUI extension to autofill keyword for custom stable diffusion models. - <a href="https://github.com/mix1009/model-keyword" class="outlink">https://github.com/mix1009/model-keyword</a><br>
+</div></div><div id="content_block_47" class="wiki-section-2"><div class="title-2"><h4 id="content_3_13"> UnivAICharGen｜Umi AI: A WebUI Wildcard Mod <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_47-body" class="wiki-section-body-2">
+<a href="https://github.com/Klokinator/UnivAICharGen" class="outlink">https://github.com/Klokinator/UnivAICharGen</a><br>
+キャラクタークリエイター、または無限ガチャ<br>
+Dynamic Promptsを強化したような拡張機能、Dynamic Prompts,Unpromptedと競合する<br>
+インストールして、プロンプトに以下のようなコマンドを打つと、生成時ごとにそこにランダムなプロンプトが追加される。<br>
+<pre id="content_block_48" class="BOX">
+&lt;[AIOGirl]&gt; 完全ランダム
+&lt;[Preset]&gt; プリセットの中からランダム
+&lt;[AIOGirl][SFW|--NSFW]&gt; えっちじゃないやつのみ
+&lt;[Preset][--Male|Female][Robots]&gt; メカ娘のみ
+</pre>
+タグの詳しい解説：<a href="https://github.com/Klokinator/Umi-AI/wiki/Umi-AI's-Tagging-System" class="outlink">https://github.com/Klokinator/Umi-AI/wiki/Umi-AI's...</a><br>
+Dynamic Promptsの機能もそのまま使える<br>
+<pre id="content_block_49" class="BOX">
+プロンプトに {flat chest|small breasts|medium breasts|huge breasts} と書くとランダムで乳の大きさが変わる
+__breasts__ と書いて、extensions/UnivAICharGen/wildcards/breasts.txt に改行区切りで乳のサイズを書いても同じ
+</pre>
+Dynamic Promptsと違い、PNG Infoにどのプロンプトが選ばれたか表示される<br>
+PCを放置するタイミングで仕掛けるとバリエーション豊富な画像が生成されていて楽しい。<br>
+▼ 参考<ul id="content_block_50" class="list-1">
+<li> PatreonでのUmi AI: The Ultimate Character Creator | Umi, the Cryoverse AI - <a href="https://www.patreon.com/posts/umi-ai-ultimate-73560593" class="outlink">https://www.patreon.com/posts/umi-ai-ultimate-7356...</a></li>
+</ul>
+</div></div><div id="content_block_53" class="wiki-section-2"><div class="title-2"><h4 id="content_3_14"> Push to 🤗 Hugging Face <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_53-body" class="wiki-section-body-2">
+<br>
+Hugging Faceアップローダー<br>
+<ul id="content_block_54" class="list-1">
+<li> <a href="https://github.com/camenduru/stable-diffusion-webui-huggingface" class="outlink">https://github.com/camenduru/stable-diffusion-webu...</a></li>
+<li> 容量無制限? でモデルを上げまくれる</li>
+<li> モデルは公開される</li>
+<li> pip install huggingface-hub は手動っぽい
+<ul class="list-2">
+<li> huggingface-hub&gt;=0.11.1</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_56" class="wiki-section-3"><div class="title-3"><h5 id="content_3_14_1"> install.py <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_14_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_56-body" class="wiki-section-body-3">
+<br>
+黄色い枠の中をコピペした install.py を extensions/stable-diffusion-webui-huggingface/ の中に入れるといいかも。<br>
+<br>
+<pre id="content_block_57" class="BOX">
+import launch
+
+if not launch.is_installed("huggingface-hub"):
+    launch.run_pip("install huggingface-hub", desc='Installing huggingface-hub')
+</pre>
+</div></div><div id="content_block_59" class="wiki-section-2"><div class="title-2"><h4 id="content_3_15"> LamaCleaner ★<a class="anchor" id="lamacleaner" name="lamacleaner" title="lamacleaner"></a> <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_59-body" class="wiki-section-body-2">
+<ul id="content_block_60" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_lama_cleaner" class="outlink">https://github.com/aka7774/sd_lama_cleaner</a></li>
+<li> インストールは楽(なんかエラーでるけど気にしない)</li>
+<li> 特に連携機能がついてたりするわけではない(改造は難しそう)</li>
+<li> Windows専用(startコマンドを使うのとwebサーバが立ち上がる)</li>
+</ul>
+</div></div><div id="content_block_62" class="wiki-section-2"><div class="title-2"><h4 id="content_3_16"> Images Browser ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_62-body" class="wiki-section-body-2">
+<ul id="content_block_63" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_images_browser" class="outlink">https://github.com/aka7774/sd_images_browser</a></li>
+<li> 公式の yfszzx/stable-diffusion-webui-images-browser が音沙汰無いので不具合を修正した
+<ul class="list-2">
+<li> ついでにプルリクを全部反映しといた</li>
+</ul>
+</li>
+<li> タブ名を勝手に Images に変えといたので適用されたかどうかはここで見分けて</li>
+<li> 画像が表示されない場合、起動時オプションに --administrator を付ければ表示されるかも</li>
+</ul>
+<pre id="content_block_64" class="BOX">
+COMMANDLINE_ARGS=--administrator
+</pre>
+</div></div><div id="content_block_66" class="wiki-section-2"><div class="title-2"><h4 id="content_3_17"> Copyguard ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_66-body" class="wiki-section-body-2">
+<ul id="content_block_67" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_copyguard" class="outlink">https://github.com/aka7774/sd_copyguard</a></li>
+<li> 地球に優しくないコピーを防止する画期的なExtension(誇大広告)</li>
+<li> 3回同じInfotextで生成していたら勝手にシードを-1にする</li>
+<li> Scriptとかで選ぶ必要は無くて勝手に適用される</li>
+</ul>
+</div></div><div id="content_block_69" class="wiki-section-2"><div class="title-2"><h4 id="content_3_18"> Curly rand ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_69-body" class="wiki-section-body-2">
+<ul id="content_block_70" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_curly_rand" class="outlink">https://github.com/aka7774/sd_curly_rand</a></li>
+<li> Dynamic Promptsの機能超限定版
+<ul class="list-2">
+<li> 機能が増えまくってタブがうっとうしくなってきたので作った</li>
+</ul>
+</li>
+<li> 1girl, {red|green|blue} hair 構文しか使えない</li>
+<li> Scriptで選択して使う</li>
+</ul>
+</div></div><div id="content_block_72" class="wiki-section-2"><div class="title-2"><h4 id="content_3_19"> Filer ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_19" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_72-body" class="wiki-section-body-2">
+<br>
+ファイラー<br>
+<ul id="content_block_73" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_filer" class="outlink">https://github.com/aka7774/sd_filer</a></li>
+<li> テストが足りないのでファイル消えても泣かない人は試して欲しい</li>
+<li> バックアップ先を指定して、Models, Embeddings, DreamBooth, Lora, Hypernetworks, Extensions, Imagesをやりとりできる</li>
+<li> URLを入力して、Models, Lora, Hypernetworksを一括ダウンロードできる</li>
+<li> ディレクトリをzipダウンロードしたりアップロードしたzipをディレクトリに展開したりできる</li>
+<li> 一部のファイルを読み書き出来る</li>
+</ul>
+</div></div><div id="content_block_75" class="wiki-section-2"><div class="title-2"><h4 id="content_3_20"> Gimai ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_20" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_75-body" class="wiki-section-body-2">
+<ul id="content_block_76" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_gimai" class="outlink">https://github.com/aka7774/sd_gimai</a></li>
+<li> Game Talk Scenes Builder</li>
+<li> イラストとセリフと音声をあわせた作品をつくるためのツールです。</li>
+<li> 素材の用意自体はセルフサービス</li>
+</ul>
+</div></div><div id="content_block_78" class="wiki-section-2"><div class="title-2"><h4 id="content_3_21"> Katanuki ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_21" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_78-body" class="wiki-section-body-2">
+<br>
+型抜き<br>
+<ul id="content_block_79" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_katanuki" class="outlink">https://github.com/aka7774/sd_katanuki</a></li>
+<li> 画像の背景を透過したり白背景にしたりマスク画像を出力する
+<ul class="list-2">
+<li> anime-segmentation を 1111 で使えるようにしたやつ</li>
+</ul>
+</li>
+<li> 画像のファイル名に日本語使うとダメらしい</li>
+<li> 複数の画像を重ねられる Layer 機能</li>
+</ul>
+</div></div><div id="content_block_81" class="wiki-section-2"><div class="title-2"><h4 id="content_3_22"> Fake X/Y plot ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_22" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_81-body" class="wiki-section-body-2">
+<br>
+X/Y plotっぽい画像を生成する<br>
+<ul id="content_block_82" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_fake_xyplot" class="outlink">https://github.com/aka7774/sd_fake_xyplot</a></li>
+<li> 階層マージ沼で得られた画像を後からX/Y plotにするための便利ツール</li>
+<li> txt2imgに設定された画像は生成しない</li>
+</ul>
+</div></div><div id="content_block_84" class="wiki-section-2"><div class="title-2"><h4 id="content_3_23"> Dataset Resizer ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_23" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_84-body" class="wiki-section-body-2">
+<ul id="content_block_85" class="list-1">
+<li> <a href="https://github.com/hunyaramoke/Dataset-Resizer" class="outlink">https://github.com/hunyaramoke/Dataset-Resizer</a></li>
+<li> データセットを一括で縦横比を変えずにリサイズする拡張です。</li>
+<li> サイズ、背景を白か透明で指定する事ができます。</li>
+</ul>
+</div></div><div id="content_block_87" class="wiki-section-2"><div class="title-2"><h4 id="content_3_24"> Face-Body-Splitter ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_24" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_87-body" class="wiki-section-body-2">
+<ul id="content_block_88" class="list-1">
+<li> <a href="https://github.com/hunyaramoke/Face-Body-Splitter.py" class="outlink">https://github.com/hunyaramoke/Face-Body-Splitter....</a></li>
+<li> 顔と体を一括で分けてくれるwebuiの拡張です。</li>
+<li> padding_rateは基本変えなくて大丈夫ですが、髪が横に広がってるとか、頭に上に長い帽子や角がある場合は適宜調整してください。</li>
+<li> Microsoft C++ Build Toolsのインストールが必要っぽい
+<ul class="list-2">
+<li> <a href="https://visualstudio.microsoft.com/visual-cpp-build-tools/" class="outlink">https://visualstudio.microsoft.com/visual-cpp-buil...</a></li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_90" class="wiki-section-2"><div class="title-2"><h4 id="content_3_25"> Generate-TransparentIMG ★ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_25" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_90-body" class="wiki-section-body-2">
+<ul id="content_block_91" class="list-1">
+<li> <a href="https://github.com/hunyaramoke/Generate-TransparentIMG" class="outlink">https://github.com/hunyaramoke/Generate-Transparen...</a></li>
+<li> 透明正則画像の作成支援</li>
+</ul>
+</div></div><div id="content_block_93" class="wiki-section-2"><div class="title-2"><h4 id="content_3_26"> ChatGPT <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_26" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_93-body" class="wiki-section-body-2">
+<ul id="content_block_94" class="list-1">
+<li> <a href="https://github.com/rvhfxb/sd_chatgpt" class="outlink">https://github.com/rvhfxb/sd_chatgpt</a></li>
+<li> ChatGPTにプロンプトの続きを考えて貰う</li>
+</ul>
+</div></div><div id="content_block_96" class="wiki-section-2"><div class="title-2"><h4 id="content_3_27"> dddetailer <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_27" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_96-body" class="wiki-section-body-2">
+<ul id="content_block_97" class="list-1">
+<li> <a href="https://github.com/Bing-su/dddetailer.git" class="outlink">https://github.com/Bing-su/dddetailer.git</a></li>
+</ul>
+Detection Detailerのフォーク版。<br>
+特定の領域を再描画してデティールを改善する。顔を自動的に検出して崩れていたのをある程度修正してくれる。<br>
+</div></div><div id="content_block_99" class="wiki-section-2"><div class="title-2"><h4 id="content_3_28"> sd-webui-boorutowd <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_3_28" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_99-body" class="wiki-section-body-2">
+<ul id="content_block_100" class="list-1">
+<li> <a href="https://github.com/RedRayz/sd-webui-boorutowd.git" class="outlink">https://github.com/RedRayz/sd-webui-boorutowd.git</a></li>
+</ul>
+スレ民作成。<br>
+Danbooruタグを以下の例のようにWaifu Diffusion方式(アンダーバーをスペースに、スペースをコンマスペース)に変換する。<br>
+例:1girl lumine_(genshin_impact) upper_body→1girl, lumine \(genshin impact\), upper body<br>
+</div></div><div id="content_block_102" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 更新停止 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_102-body" class="wiki-section-body-1">
+<br>
+新規インストールは非推奨です。<br>
+</div></div><div id="content_block_104" class="wiki-section-2"><div class="title-2"><h4 id="content_4_29"> Merge Numa <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_4_29" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_104-body" class="wiki-section-body-2">
+<br>
+更新停止。supermergerが超おすすめ。<br>
+supermerger用に更新しようかとも思ったけど忙しいので一旦ナシ。<br>
+<br>
+階層マージ沼<br>
+<ul id="content_block_105" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_merge_numa" class="outlink">https://github.com/aka7774/sd_merge_numa</a></li>
+<li> マージして画像出してマージして...を自動で出来る</li>
+<li> ハードディスク上でやったほうが精神衛生上いいかも</li>
+</ul>
+</div></div><div id="content_block_107" class="wiki-section-2"><div class="title-2"><h4 id="content_4_30"> prompt_nai <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_4_30" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_107-body" class="wiki-section-body-2">
+<br>
+{panty} で1.05倍の強調をする。重ねがけも出来る。<br>
+<ul id="content_block_108" class="list-1">
+<li> Curly randとの併用不可</li>
+<li> <a href="https://github.com/aka7774/elemental_code/blob/main/tools/prompt_nai.py" class="outlink">https://github.com/aka7774/elemental_code/blob/mai...</a></li>
+<li> Extensionじゃなくて、ファイルをScriptにコピペしてインストール</li>
+<li> Scriptで選択して使う</li>
+<li> 1111本体のバージョンアップで動かなくなるかも
+<ul class="list-2">
+<li> そんなに頑張って更新する予定はないです</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_110" class="wiki-section-2"><div class="title-2"><h4 id="content_4_31"> Infotexts <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_4_31" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_110-body" class="wiki-section-body-2">
+<br>
+更新停止。Filerに合併しました。<br>
+話せば長くなるけどPrompts from fileの超強化版みたいなやつ。<br>
+<ul id="content_block_111" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_infotexts" class="outlink">https://github.com/aka7774/sd_infotexts</a></li>
+<li> PNGからPNG Infoを取り出してテキストファイルにする</li>
+<li> テキストファイルをjsonに変換
+<ul class="list-2">
+<li> jsonの各項目を増やした後で複数のテキストファイルに分裂させられる</li>
+</ul>
+</li>
+<li> ディレクトリ内の全テキストファイルの一括置換</li>
+<li> テキストファイルをディレクトリごとGenerate
+<ul class="list-2">
+<li> Infotext Ex形式に対応</li>
+</ul>
+</li>
+<li> おまけのwebp出力</li>
+</ul>
+</div></div><div id="content_block_113" class="wiki-section-2"><div class="title-2"><h4 id="content_4_32"> Infotext Ex <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_4_32" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_113-body" class="wiki-section-body-2">
+<br>
+Filerには内蔵されていません。<br>
+<br>
+Modelのsha256は本体で対応。<br>
+VAEはプルリク送った人がいるので対応待ち。<br>
+HN/Loraは仕様が変わったので削除。<br>
+<br>
+というわけでVAEさえ本体で対応してくれれば要らなくなる見込み。<br>
+<ul id="content_block_114" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_infotext_ex" class="outlink">https://github.com/aka7774/sd_infotext_ex</a></li>
+<li> PNG Infoにsha256を出力</li>
+<li> VAEも出力</li>
+<li> 再現が不完全になる条件を満たしていればその内容を出力</li>
+</ul>
+</div></div><div id="content_block_116" class="wiki-section-2"><div class="title-2"><h4 id="content_4_33"> sd_invokeai_models_yaml_maker <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_4_33" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_116-body" class="wiki-section-body-2">
+<br>
+更新停止。Filerに内蔵された。<br>
+<ul id="content_block_117" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_invokeai_models_yaml_maker" class="outlink">https://github.com/aka7774/sd_invokeai_models_yaml...</a></li>
+<li> InvokeAIのインストールが面倒だから作ったやつ</li>
+<li> 1111に入ってるckpt、同名のvae.ptとyamlをInvokeAIのmodels.yaml形式で出力する</li>
+</ul>
+</div></div><div id="content_block_119" class="wiki-section-2"><div class="title-2"><h4 id="content_4_34"> Generate from json <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_4_34" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_119-body" class="wiki-section-body-2">
+<br>
+更新停止。Infotextsに内蔵された。<br>
+<ul id="content_block_120" class="list-1">
+<li> <a href="https://github.com/aka7774/generate_from_json" class="outlink">https://github.com/aka7774/generate_from_json</a></li>
+</ul>
+</div></div><div id="content_block_122" class="wiki-section-2"><div class="title-2"><h4 id="content_4_35"> About <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994088&amp;part=content_4_35" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_122-body" class="wiki-section-body-2">
+<br>
+更新停止。Filerに内蔵された。<br>
+1111本体のフッターに同等機能がついたので不要になりました。<br>
+<br>
+<ul id="content_block_123" class="list-1">
+<li> <a href="https://github.com/aka7774/sd_about" class="outlink">https://github.com/aka7774/sd_about</a></li>
+<li> システム情報</li>
+<li> 1111とかvenvとかの情報を表示する</li>
+<li> 「なんか動かないんだけど！」って時は、エラーの内容とこの表示内容をコピペして相談しましょう</li>
+</ul>
+</div></div>
+</div>

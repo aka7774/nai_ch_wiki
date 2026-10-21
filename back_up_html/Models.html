@@ -1,0 +1,540 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 画像生成モデル</a></li>
+<li class="list-1"><a href="#content_2"> Stable Diffusion</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> SD1</a></li>
+<li class="list-2"><a href="#content_2_2"> SD2</a></li>
+<li class="list-2"><a href="#content_2_3"> SDXL</a></li>
+<li class="list-2"><a href="#content_2_4"> SD3.5</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> ほかのText-to-Imageモデル</a>
+<ul>
+<li class="list-2"><a href="#content_3_5"> FLUX.2</a></li>
+<li class="list-2"><a href="#content_3_6"> Qwen-Image</a></li>
+<li class="list-2"><a href="#content_3_7"> MOSS-Image</a></li>
+<li class="list-2"><a href="#content_3_8"> Anima</a></li>
+<li class="list-2"><a href="#content_3_9"> Ideogram 4</a></li>
+<li class="list-2"><a href="#content_3_10"> Krea 2</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> その他のモデル</a>
+<ul>
+<li class="list-2"><a href="#content_4_11"> NovelAI Diffusion V4</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> predictionの種類(SD1,2,XL)</a>
+<ul>
+<li class="list-2"><a href="#content_5_12"> ε-prediction / epsilon-prediction</a>
+<ul>
+<li class="list-3"><a href="#content_5_12_1"> epsilonの欠陥</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_5_13"> v-prediction(v-pred)</a>
+<ul>
+<li class="list-3"><a href="#content_5_13_2"> Zero Terminal SNR(ZTNSR/ZSNR)</a></li>
+<li class="list-3"><a href="#content_5_13_3"> よくある間違い</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_5_14"> v-predictionモデルの使い方</a>
+<ul>
+<li class="list-3"><a href="#content_5_14_4"> AUTOMATIC1111</a></li>
+<li class="list-3"><a href="#content_5_14_5"> Forge/ComfyUI</a></li>
+<li class="list-3"><a href="#content_5_14_6"> 1111/Forgeでノイズ製造機/真っ黒になる、またはmainブランチの1111で使う</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> インペイント専用モデル</a></li>
+<li class="list-1"><a href="#content_7"> ファイル形式</a>
+<ul>
+<li class="list-2"><a href="#content_7_15"> safetensors</a></li>
+<li class="list-2"><a href="#content_7_16"> ckpt</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_8"> 精度</a>
+<ul>
+<li class="list-2"><a href="#content_8_17"> fp64(倍精度浮動小数点数)</a></li>
+<li class="list-2"><a href="#content_8_18"> fp32(単精度浮動小数点数)</a></li>
+<li class="list-2"><a href="#content_8_19"> fp16/float16(半精度浮動小数点数)</a></li>
+<li class="list-2"><a href="#content_8_20"> bf16/bfloat16</a></li>
+<li class="list-2"><a href="#content_8_21"> fp8(float8_e4m3fn)</a></li>
+<li class="list-2"><a href="#content_8_22"> fp4</a></li>
+<li class="list-2"><a href="#content_8_23"> nvfp4</a></li>
+<li class="list-2"><a href="#content_8_24"> int8</a></li>
+<li class="list-2"><a href="#content_8_25"> int4</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_9"> VAE</a></li>
+<li class="list-1"><a href="#content_10"> Text Encoder</a></li>
+<li class="list-1"><a href="#content_11"> モデルの作成</a>
+<ul>
+<li class="list-2"><a href="#content_11_26"> マージ</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_12"> モデル配布</a>
+<ul>
+<li class="list-2"><a href="#content_12_27"> 配布方法</a></li>
+<li class="list-2"><a href="#content_12_28"> 配布ファイル</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 画像生成モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+広義では、HypernetworkやLoraで作成したファイルなども含まれるが、ここではいわゆるCheckpointの話をする。<br>
+2026年4月以前はSDXLが主流だったが、2026年8月時点で、品質と負荷のバランスが取れたアニメ特化ののAnimaと、重いが高品質な多用途のKrea 2が主流。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> Stable Diffusion <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> SD1 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+SD1.5: <a href="https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5" class="outlink">https://huggingface.co/stable-diffusion-v1-5/stabl...</a><ul id="content_block_6" class="list-1">
+<li> U-Netアーキテクチャ</li>
+<li> 860M(8.6億)パラメータ</li>
+<li> 解像度は512x512のみ</li>
+<li> 超軽量かつとても古いため低性能</li>
+<li> 欠陥のあるVAE(アーティファクトが発生したり特殊なノイズに弱かったりする)</li>
+<li> 文章は全く生成できない</li>
+<li> Text EncoderはCLIP-L
+<ul class="list-2">
+<li> 原始的なモデルで、プロンプトの応答性がとても低い</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> SD2 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+SD2.1: <a href="https://huggingface.co/stabilityai/stable-diffusion-2-1" class="outlink">https://huggingface.co/stabilityai/stable-diffusio...</a><ul id="content_block_9" class="list-1">
+<li> U-Netアーキテクチャ</li>
+<li> 865M(8.65億)パラメータ</li>
+<li> 解像度は768x768</li>
+<li> <b>SD1と大差無し</b></li>
+<li> 使うためにはconfigファイル(yaml)を設置する必要がある。</li>
+<li> 大抵はモデルの配布元が配っている。
+<ul class="list-2">
+<li> 無い場合は SD2.xのyamlを使ってみるとか。</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3"> SDXL <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+SDXL Base 1.0: <a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0" class="outlink">https://huggingface.co/stabilityai/stable-diffusio...</a><ul id="content_block_12" class="list-1">
+<li> U-Netアーキテクチャ</li>
+<li> 2.6B(26億)パラメータ(3.5Bともされるが多分それはTE込みの数値)</li>
+<li> BaseとRefinerの二種類が存在する(通常はBaseのみでok)</li>
+<li> 基礎解像度の1024x1024への変更とVAEの改良によりディティールが改善
+<ul class="list-2">
+<li> でも細部は相変わらず溶ける</li>
+</ul>
+</li>
+<li> Text EncoderはCLIP-LとCLIP-G
+<ul class="list-2">
+<li> プロンプトの応答性は低い</li>
+</ul>
+</li>
+<li> 設計はSD1の改良版といった感じ</li>
+</ul>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4"> SD3.5 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+Large: <a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large" class="outlink">https://huggingface.co/stabilityai/stable-diffusio...</a><br>
+Medium: <a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium" class="outlink">https://huggingface.co/stabilityai/stable-diffusio...</a><ul id="content_block_15" class="list-1">
+<li> 基本的にSD3.0と同じ</li>
+<li> MMDiT</li>
+<li> Large(8.1B)とMedium(2.6B)の二種類がある</li>
+<li> MediumはT5を除けばSDXLと同程度のメモリ使用量だが、計算はSDXLの二倍遅い。Largeはメモリ使用量、計算量ともに非常に多い。</li>
+<li> 規制の緩和とSD3.0の問題を解消
+<ul class="list-2">
+<li> でもライセンスにより実質NSFW禁止</li>
+</ul>
+</li>
+<li> パラメータ効率が低い</li>
+<li> Fine-tuningが困難(学習効率が低い)</li>
+</ul>
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> ほかのText-to-Imageモデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+オープンソースのモデルのみ掲載する。<br>
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_3_5"> FLUX.2 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_3_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+dev: <a href="https://huggingface.co/black-forest-labs/FLUX.2-dev" class="outlink">https://huggingface.co/black-forest-labs/FLUX.2-de...</a><ul id="content_block_20" class="list-1">
+<li> APIのみのpro,flexとオープンなdev,kleinの四種類ある</li>
+<li> MMDiT</li>
+<li> devのパラメータ数は32Bで素の状態ではデータセンターとワークステーション以外お断り
+<ul class="list-2">
+<li> あまりにも大きすぎて大規模FTモデルが出る可能性は極めて低い</li>
+<li> 量子化やBlock Swapを使ってもなおメモリ消費が非常に多い</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_22" class="wiki-section-2"><div class="title-2"><h4 id="content_3_6"> Qwen-Image <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_3_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_22-body" class="wiki-section-body-2">
+<a href="https://huggingface.co/Qwen/Qwen-Image" class="outlink">https://huggingface.co/Qwen/Qwen-Image</a><ul id="content_block_23" class="list-1">
+<li> MMDiT</li>
+<li> パラメータ数は20Bですさまじいメモリ使用量と計算量
+<ul class="list-2">
+<li> ハイエンドGPUでもBlock Swapを使わないときつい</li>
+<li> 大きすぎて大規模FTモデルが出る可能性は低い</li>
+</ul>
+</li>
+<li> 16チャネルVAE(Wan Videoと同じVAE)</li>
+<li> TEはQwen-VL
+<ul class="list-2">
+<li> 位置や文字の描写などの具体的な命令もOK</li>
+<li> 漢字を含む文字の描写が得意</li>
+</ul>
+</li>
+<li> Apache 2.0 ライセンス</li>
+</ul>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_3_7"> MOSS-Image <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_3_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+Base: <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base" class="outlink">https://huggingface.co/OpenMOSS-Team/MOSS-Image-Ba...</a><br>
+SFT: <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT" class="outlink">https://huggingface.co/OpenMOSS-Team/MOSS-Image-SF...</a><br>
+すぐに使える再パッケージ済モデル: <a href="https://huggingface.co/Comfy-Org/MOSS-Image" class="outlink">https://huggingface.co/Comfy-Org/MOSS-Image</a><ul id="content_block_26" class="list-1">
+<li> MMDiT(シングルストリーム)</li>
+<li> パラメータ数5Bでやや重い</li>
+<li> TEは重いが強力なQwen3.5-9B
+<ul class="list-2">
+<li> 位置や文字の描写などの具体的な命令が得意で忠実度が高い</li>
+<li> 漢字を含む文字の描写が得意</li>
+</ul>
+</li>
+<li> 16チャネルVAE(優秀とされるFLUX.2 VAE)</li>
+<li> 汎用の画像モデルとしては珍しくアニメキャラが出せる</li>
+<li> プロンプトはJson、自然言語、タグが使える。英語以外も対応</li>
+<li> 汎用の画像モデルとしては珍しくNSFWコンテンツの検閲なし</li>
+<li> ConditioningZeroOutはアーティファクトを発生させるのでNG</li>
+<li> Animaを置き換えるものではない
+<ul class="list-2">
+<li> パラメータ数が大きく異なるし趣旨も大きく異なる</li>
+</ul>
+</li>
+<li> Apache 2.0 ライセンス</li>
+</ul>
+</div></div><div id="content_block_28" class="wiki-section-2"><div class="title-2"><h4 id="content_3_8"> Anima <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_3_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_28-body" class="wiki-section-body-2">
+<a href="https://seesaawiki.jp/nai_ch/d/anima">wikiの解説</a><ul id="content_block_29" class="list-1">
+<li> MMDiTでCosmos-Predict 2 Text-to-Imageがベース</li>
+<li> パラメータ数2Bで軽量だが比較的高品質(Z-Imageなどの同世代のより大型のモデルには明確に劣る)
+<ul class="list-2">
+<li> FTのコストが低い</li>
+</ul>
+</li>
+<li> 露骨なものも含めてNSFW対応</li>
+<li> TEはQwen3-0.6Bで、その出力をLLM Adapterを用いてベースモデルのTEのT5XXL互換の形式に変換する
+<ul class="list-2">
+<li> 位置や文字の描写などの具体的な命令にある程度対応</li>
+<li> ベースモデルのTEが大型なのに低性能なT5XXLなので0.6Bで十分らしい?</li>
+</ul>
+</li>
+<li> プロンプトはDanbooru(Gelbooru)タグとNL対応。日本語非対応(T5XXLのせい)。</li>
+<li> 16チャネルVAE(Qwen Image VAE)</li>
+</ul>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_3_9"> Ideogram 4 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_3_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+<a href="https://huggingface.co/ideogram-ai/ideogram-4-fp8" class="outlink">https://huggingface.co/ideogram-ai/ideogram-4-fp8</a><ul id="content_block_32" class="list-1">
+<li> MMDiT</li>
+<li> パラメータ数9.3Bでかなり重い
+<ul class="list-2">
+<li> でもComfyUIなら32GBのRAMと8GBのVRAMでも生成できる</li>
+<li> 大きすぎて大規模FTモデルが出る可能性は低い</li>
+</ul>
+</li>
+<li> TEはQwen3-VL-8B
+<ul class="list-2">
+<li> 位置や文字の描写などの具体的な命令もOKで応答性が高い</li>
+</ul>
+</li>
+<li> プロンプトはJsonフォーマット推奨</li>
+<li> 16チャネルVAE(FLUX.2 VAE)</li>
+<li> NSFWコンテンツを検知すると灰色の背景にImage blocked by safety filterの文字が生成される</li>
+</ul>
+</div></div><div id="content_block_34" class="wiki-section-2"><div class="title-2"><h4 id="content_3_10"> Krea 2 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_3_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_34-body" class="wiki-section-body-2">
+<a href="https://huggingface.co/krea/Krea-2-Turbo" class="outlink">https://huggingface.co/krea/Krea-2-Turbo</a><ul id="content_block_35" class="list-1">
+<li> Krea 2は独自開発でFLUX.2との関連性はない</li>
+<li> MMDiT</li>
+<li> RAWは学習用でTurboが推論用</li>
+<li> パラメータ数12Bでかなり重い
+<ul class="list-2">
+<li> でもComfyUIなら32GBのRAMと8GBのVRAMでも生成できる</li>
+<li> 大きすぎて大規模FTモデルが出る可能性は低い</li>
+<li> int8_convrotを使えば精度をほとんど落とさずに高速化とメモリ節約が可能</li>
+</ul>
+</li>
+<li> TEはQwen3-VL-4B
+<ul class="list-2">
+<li> 位置や文字の描写などの具体的な命令もOKで応答性が高いが、二倍の大きさのTEを使うIdeogram 4には劣る</li>
+</ul>
+</li>
+<li> プロンプトはNL対応。一応Ideogram 4のJson形式も使える(がbboxの座標が文字として生成される場合あり)。日本語も認識する</li>
+<li> Turboは蒸留した収束が速いモデル。蒸留の宿命で構図の多様性が低い</li>
+<li> 16チャネルVAE(Qwen Image VAE)</li>
+<li> 性的、流血や暴力など望ましくないコンテンツに関連する単語を無視して生成する(LoRAで無効化可能)</li>
+</ul>
+</div></div><div id="content_block_37" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> その他のモデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_37-body" class="wiki-section-body-1">
+</div></div><div id="content_block_39" class="wiki-section-2"><div class="title-2"><h4 id="content_4_11"> NovelAI Diffusion V4 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_4_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_39-body" class="wiki-section-body-2">
+<ul id="content_block_40" class="list-1">
+<li> クローズソース</li>
+<li> U-Netアーキテクチャ</li>
+<li> Text EncoderはT5</li>
+</ul>
+</div></div><div id="content_block_42" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> predictionの種類(SD1,2,XL) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_42-body" class="wiki-section-body-1">
+※間違っている可能性あり。間違っていたら修正してください。<br>
+<br>
+ノイズ予測アルゴリズムの種類。<br>
+v-predictionだからといって劇的に性能が上がるわけではない。わかりやすい変化はZero Terminal SNRを併用することで色の精度が上がる程度。一方で構図の不安定化の原因となる。<br>
+なお、計算式の違いで推論時に本来の予測方法とは別のものに変えても正しく動作しない(学習時のpredictionタイプに合わせる)。<br>
+SD3以降のほとんどのモデルはepsilonの色精度の低さとvの不安定性を解消したRectified Flowを使用する。<br>
+</div></div><div id="content_block_44" class="wiki-section-2"><div class="title-2"><h4 id="content_5_12"> ε-prediction / epsilon-prediction <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_44-body" class="wiki-section-body-2">
+SD1とSDXLのデフォルト<br>
+画像のノイズ部分を予測する。<br>
+SNR=0(純粋なノイズ)では機能しない。そのためSNR=0になるよう修正するZero Terminal SNRは使用できない。
+</div></div><div id="content_block_46" class="wiki-section-3"><div class="title-3"><h5 id="content_5_12_1"> epsilonの欠陥 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5_12_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_46-body" class="wiki-section-body-3">
+学習時、画像にノイズを付与するが、不具合により完全なノイズになるべき状況でわずかに元画像が残るため、間違った学習をしてしまう。<br>
+結果、プロンプトを無視して中間的な明るさにしたり関係のないものを生成してしまうことがある。いわゆるハルシネーション(幻覚)？<br>
+これはNoise offsetやMultires noiseで緩和できる。<br>
+</div></div><div id="content_block_48" class="wiki-section-2"><div class="title-2"><h4 id="content_5_13"> v-prediction(v-pred) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_48-body" class="wiki-section-body-2">
+SD2と一部のSDXLモデル(NovelAI Diffusion V3、NoobAI-XL)が使用<br>
+ノイズ除去前と除去後の差分を予測する。<br>
+SNR=0(純粋なノイズ)でも機能する。<br>
+<b>Zero Terminal SNRを併用することで</b>全体が明るい、暗い、または高コントラストの状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。<br>
+これは実質Zero Terminal SNRのための技術であり、それがなければepsilonと変わらずv-predの利点もなくなる。<br>
+</div></div><div id="content_block_50" class="wiki-section-3"><div class="title-3"><h5 id="content_5_13_2"> Zero Terminal SNR(ZTNSR/ZSNR) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5_13_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_50-body" class="wiki-section-body-3">
+学習時、SNR=0(完全なノイズ)であるべき状況で0にならない(ノイズの中にわずかに元画像が残る)欠陥を修正するもの。<br>
+全体が明るい、暗い、または高コントラストの状況でグレー寄りになる問題を解消できる。単色背景やシルエットなどの表現が改善する。<br>
+低めのGuidance Scaleで運用できる(5以下)。言い換えれば低めでないと彩度が過度に高くなる。<br>
+欠点として、彩度やコントラストが極端に高くなったり構図の破綻が増加したりする。<br>
+また、LoRA学習においては不安定性が増大する(特に画風LoRA学習で相性が悪いと再現できずに品質が著しく低下する)。<br>
+<br>
+ZTSNR有効のv-predictionモデルとepsilonモデルをマージするとZTSNRの効果が減少または消失し、「なんちゃってv-pred」になりやすいため注意。<br>
+</div></div><div id="content_block_52" class="wiki-section-3"><div class="title-3"><h5 id="content_5_13_3"> よくある間違い <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5_13_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_52-body" class="wiki-section-body-3">
+v-predictionは<b>高速化する技術ではない</b>。低ステップ動作を謳うcheckpointは蒸留LoRAをマージしている。<br>
+v-predictionそのものは<b>明暗に強くする効果はない</b>。それはZero Terminal  SNRの効果。<br>
+V(ヴィー)はVelocityの頭文字でありν(ニュー)ではない。<br>
+</div></div><div id="content_block_54" class="wiki-section-2"><div class="title-2"><h4 id="content_5_14"> v-predictionモデルの使い方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_54-body" class="wiki-section-body-2">
+2024年11月27日時点の情報です。
+</div></div><div id="content_block_56" class="wiki-section-3"><div class="title-3"><h5 id="content_5_14_4"> AUTOMATIC1111 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5_14_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_56-body" class="wiki-section-body-3">
+webuiのディレクトリ直下で次のコマンドを実行する。<blockquote id="content_block_57">
+git checkout -b dev origin/dev 
+</blockquote>
+あるいは、Github DesktopでFile-&gt;Add local repositoryで1111のフォルダを選択してリポジトリを追加した後、Current branchでorigin/devを選択する。<br>
+You have changed...と聞かれたらBring my changesを選択してswitch branchを押す。<br>
+あとはいつも通りwebuiを使用する。<br>
+</div></div><div id="content_block_59" class="wiki-section-3"><div class="title-3"><h5 id="content_5_14_5"> Forge/ComfyUI <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5_14_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_59-body" class="wiki-section-body-3">
+最新版にアプデする。<br>
+</div></div><div id="content_block_61" class="wiki-section-3"><div class="title-3"><h5 id="content_5_14_6"> 1111/Forgeでノイズ製造機/真っ黒になる、またはmainブランチの1111で使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_5_14_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_61-body" class="wiki-section-body-3">
+次のリンクからsd_xl_v.yamlをwebui/models/Stable-diffusionにDLする。<br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/dev/configs/sd_xl_v.yaml" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+DLしたyamlファイルを使用するcheckpointと同じ名称に変更する。<br>
+<br>
+必要に応じて、Settings&gt;Sampler parametersにあるNoise schedule for sampling(sd_noise_schedule)をZero Terminal SNRにする。<br>
+</div></div><div id="content_block_63" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> インペイント専用モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_63-body" class="wiki-section-body-1">
+<br>
+inpaint.ckptは普通のcheckpointとは違うらしい。<br>
+</div></div><div id="content_block_65" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> ファイル形式 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_65-body" class="wiki-section-body-1">
+<br>
+拡張子で判別する。<br>
+</div></div><div id="content_block_67" class="wiki-section-2"><div class="title-2"><h4 id="content_7_15"> safetensors <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_7_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_67-body" class="wiki-section-body-2">
+<ul id="content_block_68" class="list-1">
+<li> Hugging Face提唱の形式</li>
+<li> ロード時にPythonのコードを実行できないので安全</li>
+</ul>
+</div></div><div id="content_block_70" class="wiki-section-2"><div class="title-2"><h4 id="content_7_16"> ckpt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_7_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_70-body" class="wiki-section-body-2">
+<ul id="content_block_71" class="list-1">
+<li> 2023年まで主流だった古い形式</li>
+<li> checkpointの略。</li>
+<li> Pythonオブジェクトをシリアライズした形式？
+<ul class="list-2">
+<li> なのでロード時にPythonのコードを実行できるため安全とは言い切れない</li>
+<li> まれにウィルスソフトが誤検知を起こして騒ぎになっていたりする</li>
+</ul>
+</li>
+<li> 狭義のモデルではないファイル(VAEとか)にもこの拡張子が使われることがあるので注意</li>
+</ul>
+</div></div><div id="content_block_73" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> 精度 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_73-body" class="wiki-section-body-1">
+<br>
+あくまで数値の精度であって、見た目の綺麗さや絵の細かさに直結するわけではない。<br>
+</div></div><div id="content_block_75" class="wiki-section-2"><div class="title-2"><h4 id="content_8_17"> fp64(倍精度浮動小数点数) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_75-body" class="wiki-section-body-2">
+<ul id="content_block_76" class="list-1">
+<li> doubleと呼ぶ場合はこれ</li>
+<li> fp32の二倍の計算量</li>
+<li> シミュレーションなど精度が求められる用途向けで<b>一般的ではない</b></li>
+<li> 対応ハードウェアはデータセンター向けGPU程度</li>
+</ul>
+</div></div><div id="content_block_78" class="wiki-section-2"><div class="title-2"><h4 id="content_8_18"> fp32(単精度浮動小数点数) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_78-body" class="wiki-section-body-2">
+<ul id="content_block_79" class="list-1">
+<li> floating pointの略。A1111系でfullとかいう言葉が出てきたら大抵これのこと。コンピュータの世界ではfloatと呼ぶ場合はこれ。</li>
+<li> 1ビットの符号と8ビットの指数部と23ビットの仮数部</li>
+<li> 現行のハードウェアはすべて対応</li>
+<li> 高精度だが計算量が多い
+<ul class="list-2">
+<li> GPUのAIアクセラレータが使えないのでかなり遅い</li>
+</ul>
+</li>
+<li> 生成AIでは重い割にbf16とあまりかわらない</li>
+</ul>
+</div></div><div id="content_block_81" class="wiki-section-2"><div class="title-2"><h4 id="content_8_19"> fp16/float16(半精度浮動小数点数) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8_19" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_81-body" class="wiki-section-body-2">
+<ul id="content_block_82" class="list-1">
+<li> 生成AIで主流の精度</li>
+<li> floating pointの略。halfとかいう言葉が出てきたら大抵これのこと。</li>
+<li> 1ビットの符号と5ビットの指数部と10ビットの仮数部</li>
+<li> 処理が速い</li>
+<li> 容量がfp32の半分で済む</li>
+<li> IntelとNVIDIAのGPUで対応している(AMDはRDNA3以降で対応？)</li>
+<li> ダイナミックレンジが狭いためオーバーフローによるNaN演算を起こしやすい</li>
+<li> Torch2.6以降であればCPUでも動作する</li>
+</ul>
+</div></div><div id="content_block_84" class="wiki-section-2"><div class="title-2"><h4 id="content_8_20"> bf16/bfloat16 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8_20" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_84-body" class="wiki-section-body-2">
+<ul id="content_block_85" class="list-1">
+<li> 1ビットの符号と8ビットの指数部と7ビットの仮数部</li>
+<li> 処理が速い</li>
+<li> 容量がfp32の半分で済む</li>
+<li> fp32と指数部が一緒になる（ダイナミックレンジが広い代わりに仮数部が減ってるので小数点以下の表現力はfp16より少し落ちる）</li>
+<li> IntelとNVIDIA(Ampere以降)のGPUで対応している(AMDはRDNA3以降で対応？)</li>
+<li> DiTモデルで主流のフォーマット</li>
+</ul>
+</div></div><div id="content_block_87" class="wiki-section-2"><div class="title-2"><h4 id="content_8_21"> fp8(float8_e4m3fn) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8_21" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_87-body" class="wiki-section-body-2">
+<ul id="content_block_88" class="list-1">
+<li> 1ビットの符号と4ビットの指数部と3ビットの仮数部(ほかにもある)</li>
+<li> fp16の半分のメモリ使用量</li>
+<li> だが精度も落ちる
+<ul class="list-2">
+<li> fp8 scaledならfp16相当の精度</li>
+</ul>
+</li>
+<li> Torchが自動でキャストするので非対応のGPUでも動作する。</li>
+<li> NVIDIAのRTX40以降とAMDのRX9000以降でネイティブサポート
+<ul class="list-2">
+<li> しかしほとんどのソフトがfp8演算に非対応でfp16にアップキャストするので若干遅くなる。</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_90" class="wiki-section-2"><div class="title-2"><h4 id="content_8_22"> fp4 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8_22" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_90-body" class="wiki-section-body-2">
+<ul id="content_block_91" class="list-1">
+<li> fp8の半分、fp16の1/4の計算量</li>
+<li> 精度が低い
+<ul class="list-2">
+<li> 4ビット量子化のほうがマシだとか</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_93" class="wiki-section-2"><div class="title-2"><h4 id="content_8_23"> nvfp4 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8_23" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_93-body" class="wiki-section-body-2">
+<ul id="content_block_94" class="list-1">
+<li> NVIDIA専用のfp4フォーマット</li>
+<li> NVIDIAのBlackwellアーキテクチャで利用可能</li>
+</ul>
+</div></div><div id="content_block_96" class="wiki-section-2"><div class="title-2"><h4 id="content_8_24"> int8 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8_24" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_96-body" class="wiki-section-body-2">
+<ul id="content_block_97" class="list-1">
+<li> 8ビット整数</li>
+<li> ネイティブ動作のfp8より高速だが低精度。16bitの半分のメモリ使用量</li>
+<li> ConvRotがつくものは品質低下を抑えたものでfp16/bf16に迫る精度を維持する</li>
+<li> NVIDIAのTuring(RTX20)以降で対応
+<ul class="list-2">
+<li> Ampere以降で大幅に高速化する。Turing世代では速度はfp16と変わらないが省メモリのメリットはある。</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_99" class="wiki-section-2"><div class="title-2"><h4 id="content_8_25"> int4 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_8_25" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_99-body" class="wiki-section-body-2">
+<ul id="content_block_100" class="list-1">
+<li> 4ビット整数</li>
+<li> 超高速、超低精度</li>
+<li> ConvRotがつくものは品質低下を抑えたもの</li>
+<li> NVIDIAのTuring(RTX20), Ampere(RTX30), Ada Lovelace(RTX40)世代のGPUで対応。Blackwell(RTX50)で廃止された模様。
+<ul class="list-2">
+<li> Ampere以降で大幅に高速化する。Turing世代では速度はfp16と変わらない</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_102" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_102-body" class="wiki-section-body-1">
+<ul id="content_block_103" class="list-1">
+<li> SDXL BaseのVAEはfp16ではオーバーフローによるNaN演算で動作しないので、sdxl-vae-fp16-fixを使う</li>
+</ul>
+<br>
+<div id="content_block_104">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_104-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p> A1111関連</p></div>
+<div style="display:none" id="content_block_104-inside" class="toggle-display">
+<ul id="content_block_105" class="list-1">
+<li> 数が少ないので横着せずにドロップダウンから選択したほうがいい
+<ul class="list-2">
+<li> Quicksetting listにsd_vaeを追加する</li>
+<li> Checkpointに内蔵されているものを上書きする</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div></div><div id="content_block_108" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> Text Encoder <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_108-body" class="wiki-section-body-1">
+<ul id="content_block_109" class="list-1">
+<li> ComfyUIならLoad CLIPなどで読み込む</li>
+<li> TEをかえても出力が大きく変わることはない</li>
+<li> Krea2などで検閲解除版のTEを使っても表現規制が解除されることはない(拡散モデル側で規制されるため)</li>
+</ul>
+</div></div><div id="content_block_111" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> モデルの作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_111-body" class="wiki-section-body-1">
+<br>
+モデルファイルを得られる方法<br>
+<ul id="content_block_112" class="list-1">
+<li> Full Fine-tuning</li>
+<li> DreamboothやLoRAのマージ</li>
+<li> ウェイト同士のマージ</li>
+</ul>
+</div></div><div id="content_block_114" class="wiki-section-2"><div class="title-2"><h4 id="content_11_26"> マージ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_11_26" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_114-body" class="wiki-section-body-2">
+<ul id="content_block_115" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%a5%de%a1%bc%a5%b8">Checkpoint Merger</a></li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/%b3%ac%c1%d8%a5%de%a1%bc%a5%b8">層別マージ</a> ※SD1向け</li>
+</ul>
+</div></div><div id="content_block_117" class="wiki-section-1"><div class="title-1"><h3 id="content_12"> モデル配布 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_12" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_117-body" class="wiki-section-body-1">
+</div></div><div id="content_block_119" class="wiki-section-2"><div class="title-2"><h4 id="content_12_27"> 配布方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_12_27" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_119-body" class="wiki-section-body-2">
+<ul id="content_block_120" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/HuggingFace">HuggingFace</a> Modelsがおすすめ</li>
+</ul>
+</div></div><div id="content_block_122" class="wiki-section-2"><div class="title-2"><h4 id="content_12_28"> 配布ファイル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008188&amp;part=content_12_28" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_122-body" class="wiki-section-body-2">
+<ul id="content_block_123" class="list-1">
+<li> SD1とSDXLは学習・推論共にfp16, pruned, safetensorsでよい。
+<ul class="list-2">
+<li> MMDiTモデルはbf16,safetensorsが主流。</li>
+</ul>
+</li>
+<li> ファイル名には日本語やスペースが無いほうが文字化けやパスの区切りの誤判定によるトラブルが減る。</li>
+</ul>
+</div></div>
+</div>

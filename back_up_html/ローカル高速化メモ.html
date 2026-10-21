@@ -1,0 +1,268 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> reForgeなどの他のUIを使う</a></li>
+<li class="list-1"><a href="#content_2"> 収束の高速化</a>
+<ul>
+<li class="list-2"> 
+<ul>
+<li class="list-3"><a href="#content_2_0_1"> LCM(Latent Consistency Model)</a></li>
+<li class="list-3"><a href="#content_2_0_2"> Hyper-SD</a></li>
+<li class="list-3"><a href="#content_2_0_3"> DMD2(Distribution Matching Distillation)</a></li>
+<li class="list-3"><a href="#content_2_0_4"> TDD(Target-Driven Distillation)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> GPU使用率</a></li>
+<li class="list-1"><a href="#content_4"> Attentionの最適化による高速化</a>
+<ul>
+<li class="list-2"><a href="#content_4_1"> SDP(Scaled dot product attention)</a></li>
+<li class="list-2"><a href="#content_4_2"> xformers</a>
+<ul>
+<li class="list-3"><a href="#content_4_2_5"> 対応GPU</a></li>
+<li class="list-3"><a href="#content_4_2_6"> 導入方法</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_4_3"> Sage Attention(1111非対応)</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> EasyCache(ComfyUI専用)</a></li>
+<li class="list-1"><a href="#content_6"> --opt-channelslast</a></li>
+<li class="list-1"><a href="#content_7">設定のOptimizationの項目</a>
+<ul>
+<li class="list-2"><a href="#content_7_4"> Negative Guidance minimum sigma</a></li>
+<li class="list-2"><a href="#content_7_5"> Token merging</a></li>
+<li class="list-2"><a href="#content_7_6"> Pad prompt/negative prompt</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_8"> ハードウェアアクセラレータによるGPUスケジューリング を無効にする</a></li>
+<li class="list-1"><a href="#content_9"> Extensionsの退避や削除</a>
+<ul>
+<li class="list-2"><a href="#content_9_7"> LyCORIS Extensionを削除する</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_10"> Stepsを減らす</a></li>
+<li class="list-1"><a href="#content_11"> 高速なストレージに入れる</a></li>
+<li class="list-1"><a href="#content_12"> メインメモリを使う</a></li>
+<li class="list-1"><a href="#content_13"> WSL2で使う</a></li>
+<li class="list-1"><a href="#content_14"> Linuxに入れる(上級者向け)</a></li>
+<li class="list-1"><a href="#content_15"> TensorRTを使う(非推奨)</a></li>
+<li class="list-1"><a href="#content_16"> venvをいったん消して作り直す</a></li>
+<li class="list-1"><a href="#content_17"> GPUを買い替える</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+明記しない限り1111の高速化について書き記す。<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> reForgeなどの他のUIを使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+1111のWebUIを速くする方法でこれを書くのは本末転倒だが、ほかのUIを使ったほうがいい。<br>
+AUTOMATIC1111のWebUIは最適化不足で遅い。しかも1111氏の失踪により開発が長期間停止しているので今後の改善もないだろう。<br>
+いっそのこと、一部の互換性のないExtensionのために1111WebUIを残しておいて、メインのWebUIは比較的新しいreForge、または最新かつ最適化されたComfyUIに乗り換えるべき。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 収束の高速化 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+いわゆる「蒸留」で少ないステップ数で収束させ、Guidance Scaleとアンコンディショニングの計算を不要にすることで高速化する。<br>
+それと引き換えに品質が低下し画風が変化する。<br>
+</div></div><div id="content_block_5" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_1"> LCM(Latent Consistency Model) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_2_0_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_5-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/latent-consistency/lcm-lora-sdxl" class="outlink">https://huggingface.co/latent-consistency/lcm-lora...</a><br>
+</div></div><div id="content_block_7" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_2"> Hyper-SD <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_2_0_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_7-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/ByteDance/Hyper-SD" class="outlink">https://huggingface.co/ByteDance/Hyper-SD</a><br>
+</div></div><div id="content_block_9" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_3"> DMD2(Distribution Matching Distillation) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_2_0_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_9-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/tianweiy/DMD2" class="outlink">https://huggingface.co/tianweiy/DMD2</a><br>
+</div></div><div id="content_block_11" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_4"> TDD(Target-Driven Distillation) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_2_0_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_11-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/RED-AIGC/TDD" class="outlink">https://huggingface.co/RED-AIGC/TDD</a><br>
+</div></div><div id="content_block_13" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> GPU使用率 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_13-body" class="wiki-section-body-1">
+画像生成速度には、GPU使用率が大きく影響する。<br>
+アスカベンチで同じグラボの他人の結果より明らかに遅い場合、なんらかの原因でGPUがフルに使われていない可能性もある。<br>
+（これを確認する場合、Win11なら、GPUスケジューリングをオフにしてタスクマネージャーで確認するのが簡単。古いWinバージョンでは3D描写の負荷を示すのでグラフをCudaに切り替える）<br>
+このページにある対策を行ってもアスカベンチで期待したパフォーマンスが出ない、という場合でも、高解像度やHires fixした場合は低解像度の生成よりもGPUがフルに使われやすい傾向があるので、<br>
+もしそっちでGPU使用率が100%近くなってて、そういう生成方法がメインだという場合は、アスカベンチで劣っていても気にしなくていい可能性もある。<br>
+<br>
+ちなみに、速度に比例してCPUのシングルスレッド性能の影響が大きくなる。旧世代CPUを使っているなら最新世代のCPUに買い替えるのもあり。<br>
+</div></div><div id="content_block_15" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> Attentionの最適化による高速化 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_15-body" class="wiki-section-body-1">
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_4_1"> SDP(Scaled dot product attention) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_4_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+PyTorchのアテンション最適化機能。<br>
+高速化とVRAM消費減少効果がある。<br>
+有効にするには、Settings-&gt;Optimizations-&gt;Cross attention optimizationでsdpを選ぶ。ComfyUIならコマンドライン引数に--use-pytoch-cross-attentionをつける。reForgeなら--disable-xformersと--attention-pytorchをつける。<br>
+xformersと併用、共存はできない。<br>
+速度もメモリ消費もxformersと同じで基本的にはこちらを使えばいい。<br>
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_4_2"> xformers <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_4_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+<b>spdaと差はないのでわざわざ入れる必要はない。</b><br>
+Meta Researchが開発した最適化ライブラリ。高速化とVRAM消費減少効果がある。<br>
+インストールは1111の標準機能で簡単にできる。<br>
+</div></div><div id="content_block_21" class="wiki-section-3"><div class="title-3"><h5 id="content_4_2_5"> 対応GPU <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_4_2_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_21-body" class="wiki-section-body-3">
+<ul id="content_block_22" class="list-1">
+<li> NVIDIA
+<ul class="list-2">
+<li> GeForce GTX 10(Pascal)、RTX 20(Turing)シリーズ以降</li>
+</ul>
+</li>
+</ul>
+<ul id="content_block_23" class="list-1">
+<li> AMD(Linux限定)
+<ul class="list-2">
+<li> ついにAMDグラボも対応した。Torch 2.4.1+ROCm6.1対応のv0.0.28がリリースされた。</li>
+<li> RDNA2以降のグラボが必要？</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_25" class="wiki-section-3"><div class="title-3"><h5 id="content_4_2_6"> 導入方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_4_2_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_25-body" class="wiki-section-body-3">
+初めて導入する場合(NVIDIA)<blockquote id="content_block_26">
+set COMMANDLINE_ARGS= --xformers
+</blockquote>
+<br>
+古い環境から更新する場合(NVIDIA)<blockquote id="content_block_27">
+set COMMANDLINE_ARGS= --reinstall-torch --reinstall-xformers
+</blockquote>
+venvを削除してからWebUIを起動する手もあり<br>
+<br>
+Torchバージョンが1111のデフォルトではない場合/Radeonの場合<br>
+<a href="https://github.com/facebookresearch/xformers/releases" target="_blank" class="outlink" rel="nofollow">ここ</a>で対応するTorchバージョンを確認してから、「pip install xformers==x.x.x」でインストールする。<br>
+</div></div><div id="content_block_29" class="wiki-section-2"><div class="title-2"><h4 id="content_4_3"> Sage Attention(1111非対応) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_4_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_29-body" class="wiki-section-body-2">
+1111は古いため非対応。ComfyUIやForge Classicなどが対応。<br>
+量子化ベースの技術のため品質が低下する？<br>
+Attentionの使用量が多いDiTモデルで効果的。<br>
+RTX30以降が必要。<br>
+</div></div><div id="content_block_31" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> EasyCache(ComfyUI専用) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_31-body" class="wiki-section-body-1">
+ComfyUI専用。<br>
+変化が小さい部分をキャッシュして使い回す。わずかに品質が低下する。<br>
+SDEソルバーでは毎回ノイズを付与し変化し続けるため機能しない。<br>
+</div></div><div id="content_block_33" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> --opt-channelslast <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_33-body" class="wiki-section-body-1">
+<br>
+これはつけるだけ。<blockquote id="content_block_34">
+--xformers や --opt-sdp-no-mem-attention と併用できる。
+</blockquote>
+環境によっては効果が無かったり逆に遅くなったりするらしいので比較検討しましょう。<br>
+</div></div><div id="content_block_36" class="wiki-section-1"><div class="title-1"><h3 id="content_7">設定のOptimizationの項目 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_36-body" class="wiki-section-body-1">
+</div></div><div id="content_block_38" class="wiki-section-2"><div class="title-2"><h4 id="content_7_4"> Negative Guidance minimum sigma <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_7_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_38-body" class="wiki-section-body-2">
+変化が少なくなる生成の後半にNegative Promptの計算を省略することで高速化する。<br>
+</div></div><div id="content_block_40" class="wiki-section-2"><div class="title-2"><h4 id="content_7_5"> Token merging <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_7_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_40-body" class="wiki-section-body-2">
+トークンをマージして高速化する。<br>
+解像度が大きいほど効果が大きくなる。<br>
+数値が大きいほど効果が大きいが品質も低下する。<br>
+fp8では動作しない。<br>
+</div></div><div id="content_block_42" class="wiki-section-2"><div class="title-2"><h4 id="content_7_6"> Pad prompt/negative prompt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_7_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_42-body" class="wiki-section-body-2">
+パフォーマンスが改善すると書いてあるが、誤差程度の変化しかない。<br>
+<b>76トークン以上で不具合が発生することがあるので、オフ推奨</b><br>
+</div></div><div id="content_block_44" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> ハードウェアアクセラレータによるGPUスケジューリング を無効にする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_44-body" class="wiki-section-body-1">
+VRAM消費を減らす効果がある。速度も向上するかも。<br>
+オフにするには、 Windows 11の設定でシステム&gt;ディスプレイ&gt;グラフィックの中にあるグラフィックスの詳細設定の中に「ハードウェア アクセラレータによるGPUスケジューリング」があるのでこれをオフにしてPCを再起動する。<br>
+副作用としてゲームでフレーム生成が使えなくなる。<br>
+</div></div><div id="content_block_46" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> Extensionsの退避や削除 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_46-body" class="wiki-section-body-1">
+Extensionにはinstall.pyが同梱されていて毎回起動するので、<br>
+不要なExtensionが沢山入ってるなら消すだけでだいぶ速くなるはず。<br>
+<br>
+UIからオフにするだけではダメ<br>
+フォルダごと別の場所に退避させとくとか、いっそバッサリ消すとか<br>
+</div></div><div id="content_block_48" class="wiki-section-2"><div class="title-2"><h4 id="content_9_7"> LyCORIS Extensionを削除する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_9_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_48-body" class="wiki-section-body-2">
+1111がLyCORISに標準で対応したためこのExtensionは不要。<br>
+このExtensionは今となっては生成を遅くするだけ。<br>
+</div></div><div id="content_block_50" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> Stepsを減らす <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_50-body" class="wiki-section-body-1">
+出来るだけ少ないStepsでも期待通りの絵が出る方法を模索する。<br>
+末尾にa(ancestral)またはSDEがつかないサンプラーで再現できないか試す。<br>
+DPM++ 2Mは15Stepsでもそれなりに映えるのでおすすめ。<br>
+SchedulerにSimpleを使うとさらに良くなる。<br>
+LCM、TurboやHyper-SDなどはさらに速い。出力を大きく変化させたり相性の良し悪しがあったりする代わりに10steps未満でまともな絵がでる。<br>
+</div></div><div id="content_block_52" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> 高速なストレージに入れる <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_52-body" class="wiki-section-body-1">
+シーケンシャル3GB/s以上のSSDに配置することで読み込みを高速化する。大容量モデルで効果的。<br>
+</div></div><div id="content_block_54" class="wiki-section-1"><div class="title-1"><h3 id="content_12"> メインメモリを使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_12" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_54-body" class="wiki-section-body-1">
+<br>
+モデルのロード時間を短縮するために、あらかじめRAMに読みこんでおくことが出来る。<br>
+<br>
+Settings-&gt;Stable Diffusion<ul id="content_block_55" class="list-1">
+<li> Maximum number of checkpoints loaded at the same time</li>
+</ul>
+一度に読み込んでおけるcheckpointの数を設定できる。値が1でも読み込んだことのあるcheckpointは読み込み時間が短縮される。<br>
+<br>
+SuperMergeでもモデル3つのトリプルマージまでRamで高速化できるようになった。<br>
+詳しくは <a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ceExtensions">ローカルのExtensions</a> の SuperMerger を参照。<br>
+<br>
+新しい機能などのために RamDisk が使いたくなったら ImDisk Toolkit が使いやすい。<br>
+<a href="https://sourceforge.net/projects/imdisk-toolkit/" class="outlink">https://sourceforge.net/projects/imdisk-toolkit/</a><br>
+<br>
+1111 全部 RamDisk に突っ込んで高速化するのは、必要RAMのわりに恩恵がほとんど無いからおすすめしない。<br>
+<br>
+<div id="content_block_56">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_56-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_56-inside" class="toggle-display">
+ちなみに、ほとんどのOS(Android等も)は一度読み込まれたファイルをRAMに保持する<br>
+キャッシュ/スタンバイ領域というものがあり、<br>
+このキャッシュ領域はメモリの空き容量に応じて可変します。<br>
+(OSコアやプログラムで使用中のメモリ-総容量=キャッシュ/スタンバイメモリの最大値)<br>
+例えば、メモリが32GBで10GB使用中の場合のキャッシュメモリは20GBですが、<br>
+メモリにキャッシュされていないファイルを読み込み、総容量が20GBを超えると、<br>
+メモリにキャッシュされたファイルのうち一番古いファイルがキャッシュメモリから破棄されるので、<br>
+再度HDD/SSD等から読み込む作業が発生します。
+</div>
+</div>
+</div></div><div id="content_block_59" class="wiki-section-1"><div class="title-1"><h3 id="content_13"> WSL2で使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_13" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_59-body" class="wiki-section-body-1">
+<ul id="content_block_60" class="list-1">
+<li> <a href="https://seesaawiki.jp/nai_ch/d/1111%5fWSL2">1111_WSL2</a></li>
+</ul>
+<br>
+以前はLinuxにするだけで1〜2割速くなると言われていたが、ドライバやTorchの最適化が進んで速度やメモリ消費の差が小さくなった。<br>
+どっちが速いか比較検討してみるのが良さそう。<br>
+</div></div><div id="content_block_62" class="wiki-section-1"><div class="title-1"><h3 id="content_14"> Linuxに入れる(上級者向け) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_14" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_62-body" class="wiki-section-body-1">
+Windows上の仮想化ではなく実際にインストールする。<br>
+Ubuntu24.04 LTS、Python 3.11.9、Torch2.3.1での環境では、推論(it/s)は2〜4%、学習は10%高速化した。VRAM消費は特筆すべき変化はなかった。<br>
+また、メモリ消費が減少し、medvram有効時の生成開始と終了のもたつきが軽減して結構速くなった。IOが速いのか全体的にレスポンスが良い。<br>
+Linux上のreForgeとなればVRAMのオフロードを感じさせないほど速い。<br>
+ただしメモリ不足になるとWindowsは頑張って耐えるもののLinuxは素直にフリーズしてから落ちる<br>
+<br>
+Windowsが入っていない空っぽのSSDに入れるか、サブ機とかお古になったら検討してもいいかも<br>
+なお各種ライブラリ等のインストールは原則コマンド打ってやるし、途中でUbuntuのGUI(gdm3)が壊れてリカバリーモードでgdm3を再インストールしたりとかなり面倒<br>
+</div></div><div id="content_block_64" class="wiki-section-1"><div class="title-1"><h3 id="content_15"> TensorRTを使う(非推奨) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_15" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_64-body" class="wiki-section-body-1">
+<a href="https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT" class="outlink">https://github.com/NVIDIA/Stable-Diffusion-WebUI-T...</a><br>
+CUDAに加えてTensorコアを使用するためにモデルをコンパイルする。最大2倍速くなるらしい。NVIDIA専用。<br>
+1111のExtensionから導入できる。<br>
+<br>
+けど以下の重大な欠点があるのでベンチ以外で使い道はないかな<ul id="content_block_65" class="list-1">
+<li>あらかじめ設定した解像度のみ使用可能</li>
+<li>TensorRTモデル変換に時間がかかるしVRAM消費が激しい(しかもOOMになるとWebUI本体がフリーズ)</li>
+<li>LoRAはTensorRT変換で埋め込んで使えるが1つしか使えない</li>
+<li>ControlNetのようなU-netに干渉するものは一切使えない</li>
+<li>Extensionのインストールが不安定で失敗しやすい</li>
+</ul>
+</div></div><div id="content_block_67" class="wiki-section-1"><div class="title-1"><h3 id="content_16"> venvをいったん消して作り直す <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_16" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_67-body" class="wiki-section-body-1">
+Windows再インストール並みの最終手段。<br>
+最新の1111に必要なものしか入らなくなるので軽くなる、かも。<br>
+Extension試しまくってると肥大化するので月イチくらいでやるといいかも。<br>
+</div></div><div id="content_block_69" class="wiki-section-1"><div class="title-1"><h3 id="content_17"> GPUを買い替える <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989162&amp;part=content_17" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_69-body" class="wiki-section-body-1">
+ソフトウェア側であれこれ必死にやっても劇的に速くならないのが現実。結局ハードウェアの強化が一番。<br>
+場合によっては他のパーツの買い替えも必要になるが、最も効果的。<br>
+(give me money:3000.0)
+</div></div>
+</div>

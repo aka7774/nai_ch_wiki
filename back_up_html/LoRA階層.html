@@ -1,0 +1,264 @@
+<div class="user-area">
+<span class="fsize" style="font-size:16px;"><span style="color:#ff0000;">注意:これはSD1.5の情報です。SDXLでは使用できません。</span></span><br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> 参考資料とか</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> LoRA-Block-Weight 層別メモ</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> 導入：sd-webui-lora-block-weight</a></li>
+<li class="list-1"><a href="#content_4"> 使い方</a></li>
+<li class="list-1"><a href="#content_5"> 階層について</a></li>
+<li class="list-1"><a href="#content_6"> ウェイトの設定</a></li>
+<li class="list-1"><a href="#content_7"> プリセット(LoRA用)</a>
+<ul>
+<li class="list-2"><a href="#content_7_2">一覧</a></li>
+<li class="list-2"><a href="#content_7_3"> カスタムプリセット</a></li>
+<li class="list-2"><a href="#content_7_4"> カスタムプリセット180スレ288,961</a></li>
+<li class="list-2"><a href="#content_7_5"> カスタムプリセット 214スレ185</a></li>
+<li class="list-2"><a href="#content_7_6"> デフォルトプリセット</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_8"> 例（スレ★170より）</a></li>
+<li class="list-1"><a href="#content_9"> bimo.txt - 最適な層別適用を効率よく探すためのプリセット</a></li>
+<li class="list-1"><a href="#content_10"> LyCORIS の指定方法分からん人向け</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+sd-webui-lora-block-weightとか導入すると使えます<br>
+Loraを適用する際、強さを階層ごとに設定できます。<br>
+顔層だけ適用させるとか、塗りや陰影はいらないから切るとかできるので便利です。<br>
+<a href="https://seesaawiki.jp/nai_ch/d/%b3%ac%c1%d8%a5%de%a1%bc%a5%b8">階層マージ</a>と重複した部分もあるのであわせて参照するんやで<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 参考資料とか <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> LoRA-Block-Weight 層別メモ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<a href="https://rentry.org/lora-bw-memo" class="outlink">https://rentry.org/lora-bw-memo</a><br>
+LyCORISのLBWの検証記事。<br>
+<br>
+</div></div><div id="content_block_7" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 導入：sd-webui-lora-block-weight <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_7-body" class="wiki-section-body-1">
+AUTOMATIC1111's stable-diffusion-webui 用のスクリプト<br>
+公式リポジトリのReadmeを読んで導入<br>
+<a href="https://github.com/hako-mikan/sd-webui-lora-block-weight" class="outlink">https://github.com/hako-mikan/sd-webui-lora-block-...</a><br>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 使い方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+公式リポジトリのReadmeを読(略<br>
+</div></div><div id="content_block_11" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 階層について <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_11-body" class="wiki-section-body-1">
+とりあえず4chan発のやつを貼っときます。<br>
+あとで気がついたけど、赤文字の「背景/小物」のうち、🔺みたいなマークついてるのが背景にあたる層らしい。<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/GbP5nluAgY.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/GbP5nluAgY.png" border="0" width="900"></a><br>
+</div></div><div id="content_block_13" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> ウェイトの設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_13-body" class="wiki-section-body-1">
+<br>
+▼LoRAの場合<br>
+識別子とウェイトを入力します。 フルモデルと異なり、Loraではエンコーダーを含め17のブロックに分かれています。よって、17個の数値を入力してください。 BASE,IN,OUTなどはフルモデル相当の階層です。<table id="content_block_14"><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>BASE</td><td>IN01</td><td>IN02</td><td>IN04</td><td>IN05</td><td>IN07</td><td>IN08</td><td>MID</td><td>OUT03</td><td>OUT04</td><td>OUT05</td><td>OUT06</td><td>OUT07</td><td>OUT08</td><td>OUT09</td><td>OUT10</td><td>OUT11</td></tr></tbody></table>
+<br>
+▼LyCORISなどの場合<br>
+フルモデル相当の階層になっているので注意です。<br>
+<table id="content_block_15"><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>BASE</td><td>IN00</td><td>IN01</td><td>IN02</td><td>IN03</td><td>IN04</td><td>IN05</td><td>IN06</td><td>IN07</td><td>IN08</td><td>IN09</td><td>IN10</td><td>IN11</td><td>MID</td><td>OUT00</td><td>OUT01</td><td>OUT02</td><td>OUT03</td><td>OUT04</td><td>OUT05</td><td>OUT06</td><td>OUT07</td><td>OUT08</td><td>OUT09</td><td>OUT10</td><td>OUT11</td></tr></tbody></table>
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> プリセット(LoRA用) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+用途別にいい感じの数値設定を貼る。いいのがあったら適当に追加して、どうぞ。<br>
+<br>
+導入したあとに「Weights setting」の「Open TextEditor」を押すと以下のテキストファイルが開かれるのでオリジナルの階層数値設定を追加できます。<br>
+"\stable-diffusion-webui\scripts\lbwpresets.txt"<br>
+<br>
+なお、あとでわけがわからなくならないように「呼び出し用」と、「設定値確認用&amp;プロンプト共有用」に以下のように書いておくと良いかもしれないです。<br>
+例↓)<br>
+F:0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0<br>
+F=enable_OUT03-04-05:0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0<br>
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_7_2">一覧 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_7_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+<br>
+<textarea id="content_block_20" class="PLAIN-BOX">
+F:0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+F=enable_OUT03-04-05:0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+NCNF:1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0
+NCNF=disable_OUT03-04-05_OUT10-11:1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0
+NF:1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1
+NF=disable_OUT03-04-05:1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1
+NC:1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0
+NC=disable_OUT10-11=:1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0
+NPNBASE:0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0
+NPNBASE=disable_BASE_IN07-08_MID00_OUY10-11:0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0
+NP:1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0
+NP=disable_IN07-08_MID00_OUY10-11:1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0
+NIN:1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+NIN=disable_IN-ALL_MID00:1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+CT:0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0
+CT=enable_IN08-MID-OUT03-OUT04:0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0
+</textarea>
+</div></div><div id="content_block_22" class="wiki-section-2"><div class="title-2"><h4 id="content_7_3"> カスタムプリセット <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_7_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_22-body" class="wiki-section-body-2">
+<br>
+識別子: CT<br>
+CT:0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0<br>
+CT=enable_IN08-MID-OUT03-OUT04:0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0<br>
+用途: ポーズとかのLoRAに使うといいかもしれない<br>
+とりあえずのけぞりLoRAニキの推奨設定をそのまま載せてます。<br>
+<br>
+識別子: NP<br>
+NP:1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0<br>
+NP=disable_IN07-08_MID00_OUY10-11:1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0<br>
+用途: キャラデザとか維持しながら、モデルのデフォルト傾向の絵柄で生成したいときとか<br>
+IN下層とMIDとOUT上層の塗りレイヤーを無効化しています<br>
+<br>
+識別子: NPNBASE<br>
+NPNBASE:0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0<br>
+NPNBASE=disable_BASE_IN07-08_MID00_OUY10-11:0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0<br>
+用途: <br>
+NP+BASE無効化しています<br>
+<br>
+識別子: NF<br>
+NF:1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1<br>
+NF=disable_OUT03-04-05:1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1<br>
+用途：ハイポリLoRAとかで顔がリアルになるのやめてほしいときとか<br>
+顔層OUT03-04-05を無効化しています<br>
+<br>
+識別子: F<br>
+F:0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0<br>
+F=enable_OUT03-04-05:0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0<br>
+用途：<a href="https://huggingface.co/nnmx/ohogao_lora" target="_blank" class="outlink" rel="nofollow">表情にイﾞッ♥フォーカスしたLoRAとかにイﾞイﾞッ♥♥使いイﾞグッ♥</a><br>
+顔層OUT03-04-05を有効化しています<br>
+<br>
+識別子: NC<br>
+NC:1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0<br>
+NC=disable_OUT10-11=:1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0<br>
+用途: 塗りだけ切りたいとき<br>
+OUT上層の塗りレイヤーだけ無効化しています<br>
+<br>
+識別子: NCNF<br>
+NCNF:1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0<br>
+NCNF=disable_OUT03-04-05_OUT10-11:1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0<br>
+用途: 塗りと顔だけ切りたいとき。実写背景LoRAとか使うときにいいかもしれない<br>
+顔層と塗り層だけ無効化<br>
+<br>
+識別子: NIN<br>
+NIN:1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1<br>
+NIN=disable_IN-ALL_MID00:1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1<br>
+2023/03/06(月) <br>
+ガビガビキャラLoRAもこのスレにあった層別の1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1適用するとweight:1でもスッキリするで<br>
+とのことで、INすべてとMIDを切っている感じです。<br>
+</div></div><div id="content_block_24" class="wiki-section-2"><div class="title-2"><h4 id="content_7_4"> カスタムプリセット180スレ288,961 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_7_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_24-body" class="wiki-section-body-2">
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1680160046/961" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1680...</a><br>
+<pre id="content_block_25" class="BOX">
+961 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa23-Ri31)[sage] 投稿日：2023/04/01(土) 15:31:20.94 ID:RYGo51eUa
+&gt;&gt;958
+&gt;&gt;288
+写真だから自分用に写経したのあった
+face:1,0,0,0,0,0,0,0,0.8,1,1,0.2,0,0,0,0,0
+Nface:1,1,1,1,1,1,0.2,1,0.2,0,0,0.8,1,1,1,1,1
+ware:1,1,1,1,1,0,0.2,0,0.8,1,1,0.2,0,0,0,0,0
+pose:1,0,0,0,0,0,0.2,1,1,1,0,0,0,0,0,0,0
+paint:1,0,0,0,0,0,0,0,0,0,0,0.8,1,1,1,1,1
+char:1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0
+back:1,1,1,1,1,1,0.2,1,0.2,0,0,0.8,1,1,1,0,0
+soft:1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+</pre>
+</div></div><div id="content_block_27" class="wiki-section-2"><div class="title-2"><h4 id="content_7_5"> カスタムプリセット 214スレ185 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_7_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_27-body" class="wiki-section-body-2">
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1685198953/185" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1685...</a><br>
+<a href="https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/lbw-presets.txt" class="outlink">https://huggingface.co/2vXpSwA7/iroiro-lora/blob/m...</a><br>
+<pre id="content_block_28" class="BOX">
+185 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9f7e-EdO8)[sage] 投稿日：2023/05/28(日) 07:41:44.31 ID:koRtKWSu0 [3/5]
+てことで改めて…
+層別適用雑プリセットだよ
+https://huggingface.co/2vXpSwA7/iroiro-lora/blob/main/lbw-presets.txt
+まぁ見たらどういうものかはわかるじゃろ？
+INとOUTの範囲指定は1つだけだぞ、流石に全パターン網羅まではしてないよ、それやるとファイルサイズが大変なことになるからな
+</pre>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_7_6"> デフォルトプリセット <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_7_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+識別子: OUTD<br>
+OUTD:0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0<br>
+OUT03-06のみが有効化<br>
+用途: キャラLoRAに使ってる人もいるようです<br>
+NPとは逆のアプローチで、キャラデザだけを適用する感じの数値設定<br>
+</div></div><div id="content_block_32" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> 例（スレ★170より） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_32-body" class="wiki-section-body-1">
+<br>
+40今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0eb4-S+nL)2023/03/13(月) 09:00:02.99ID:PjSKr0QO0&gt;&gt;42&gt;&gt;53<blockquote id="content_block_33">
+&gt;26
+&gt;36
+</blockquote>
+（注：少女漫画LoRAに関して）<br>
+こういう端にある文字を出ないようにしたいんやけどネガに入れるべきなのってtextとかtitlename以外にあるんやろか？<br>
+結構強めにネガ入れてもでてきてしまう<br>
+<br>
+53今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ fa04-eAQ5)2023/03/13(月) 10:17:39.70ID:EsOK7H+b0<blockquote id="content_block_34">
+&gt;40
+</blockquote>
+LoRA Block Weight使って層別適用すれば結構回避できるで<br>
+キャラだけにLoRAを効かせたい場合は↓使うといい感じになる<br>
+NIN:1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1<br>
+これはwiki（注：このページ）から拾ったやつでデフォで入ってないから自分で追加する必要あるで<br>
+<br>
+画像の実例<br>
+<div id="content_block_35">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_35-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_35-inside" class="toggle-display">
+使用前<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/ZnfO_8CAUs.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/ZnfO_8CAUs.png" border="0"></a><br>
+使用後<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/Rq3kB9Qgb7.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Rq3kB9Qgb7.png" border="0"></a>
+</div>
+</div>
+</div></div><div id="content_block_38" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> bimo.txt - 最適な層別適用を効率よく探すためのプリセット <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_38-body" class="wiki-section-body-1">
+層別適用をガチで突き詰めるのは手間がかかるため、より手軽に探索するためのプリセットが開発された。<br>
+<a href="https://github.com/Zuntan03/SdWebUiTutorial/raw/main/_/SdWebUi-Installer/LoraBlockWeight/bimo.txt" class="outlink">https://github.com/Zuntan03/SdWebUiTutorial/raw/ma...</a><br>
+↑の内容をlbwpresets.txtに追記する。<br>
+"BIMO"ならすべて1、"bimo"ならすべて0、など、層別出力の1と0を、プリセット名の大文字と小文字でコントロールする仕様<br>
+詳細な使い方は作者の<a href="https://github.com/Zuntan03/SdWebUiTutorial/blob/main/_/doc/BimoLoraBlockWeight/BimoLoraBlockWeight.md" class="outlink" rel="nofollow">github</a>または<a href="https://twitter.com/Zuntan03/status/1661202375884046336" class="outlink" rel="nofollow">Twitter</a>で。 <br>
+<br>
+以下は作者ニキの本スレへの書き込み<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1684057555/567" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1684...</a><br>
+<pre id="content_block_39" class="BOX">
+そういやニキらに興味持ってもらえるかもな話として
+&gt;&gt;412 のガチャ環境の整備ついでに手抜きLoRA層別適用のテンプレート作っといたで
+適当にlbwpresets.txtの末尾にでも入れたらどの環境でも使えるはずや
+https://raw.githubusercontent.com/Zuntan03/SdWebUiTutorial/main/_/SdWebUi-Installer/LoraBlockWeight/bimo.txt
+大文字が1で小文字が0でBase In Mid OutでInとOutは文字数増やすと分割数が増える
+量が多いなら上のほうのBIIMOOを雑に使うだけでも便利やったで
+ガチャでは&lt;lora:flat2:-1:biimoO&gt;や&lt;lora:konyconiAI:1:BIimOO&gt;とかしとる
+
+層調査は「&lt;lora:lora_name:1:BIIMOO&gt;」のXYZプロットで「BIIMOO,bIIMOO,BiIMOO,BIiMOO,BIImOO,BIIMoO,BIIMOo,biimoo」として小文字を増やしてったり
+「BIIMOO,Biimoo,bIimoo,biImoo,biiMoo,biimOo,biimoO,biimoo」から大文字を増やしたりや
+ええかんじに「biIMOo」とかが決まったら同値の「biiIIMOOoo」に展開してさらに微調整とかやね
+まだやるなら https://twitter.com/Zuntan03/status/1645603234801926144
+</pre>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1684756133/802" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1684...</a><br>
+<pre id="content_block_40" class="BOX">
+先週ここで紹介してたBIMOプリセットの解説を公開したで
+画像で「あー そーゆーことね 完全に理解した」なニキ向けや
+
+https://twitter.com/Zuntan03/status/1661202375884046336
+
+先週の紹介やのに6スレ前やで
+https://fate.5ch.net/test/read.cgi/liveuranus/1684057555/567
+
+解説: https://github.com/Zuntan03/SdWebUiTutorial/blob/main/_/doc/BimoLoraBlockWeight/BimoLoraBlockWeight.md
+BIMOプリセット本体: https://github.com/Zuntan03/SdWebUiTutorial/raw/main/_/SdWebUi-Installer/LoraBlockWeight/bimo.txt
+
+https://i.imgur.com/NsdKzZS.png
+</pre>
+</div></div><div id="content_block_42" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> LyCORIS の指定方法分からん人向け <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5036601&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_42-body" class="wiki-section-body-1">
+こっちに書いてある→<a href="https://seesaawiki.jp/nai_ch/d/Dreambooth-LoRA#content_11_24">階層LoRAの指定の方法</a>
+</div></div>
+</div>

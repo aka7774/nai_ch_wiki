@@ -1,0 +1,298 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> はじめに <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+生成した画像をさらに高解像度に拡大する方法のまとめページ<br>
+Automatic1111のHires.fixとその他さまざまな拡張機能がメインになりそうだけど単体で動作するツールもあるのでページはわけてある。<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> はじめに</a></li>
+<li class="list-1"><a href="#content_2"> Automatic1111まわり</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> Hires.fix</a>
+<ul>
+<li class="list-3"><a href="#content_2_1_1"> アップスケーラー</a></li>
+<li class="list-3"><a href="#content_2_1_2"> Tile</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_2_2"> MultiDiffusion</a>
+<ul>
+<li class="list-3"><a href="#content_2_2_3"> アップ&amp;ダウンをして描き込みを増やす方法</a></li>
+<li class="list-3"><a href="#content_2_2_4"> 小人の発生を防ぐ方法</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_2_3">Controlnet 1.1 のCN tile(tile_resample)を併用</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> ツール</a>
+<ul>
+<li class="list-2"><a href="#content_3_4"> Waifu2x-Caffe</a></li>
+<li class="list-2"><a href="#content_3_5"> PixSr4x</a>
+<ul>
+<li class="list-3"><a href="#content_3_5_5"> Sample</a></li>
+</ul>
+</li></ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> Automatic1111まわり <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> Hires.fix <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+ビルトインのアップスケーリング機能<br>
+<ul id="content_block_6" class="list-1">
+<li> みんな雰囲気で使ってる</li>
+<li> 沼が深い</li>
+<li> 人体を破綻させる天才(Latent系のみ)</li>
+</ul>
+<br>
+※v1.6.0あたりから有効化する方法がチェック方式からトグル方式に変わった<br>
+Hires.fixしたいときはトグルを展開した状態で生成するとアップスケールされる<br>
+参照：<a href="https://www.reddit.com/r/StableDiffusion/comments/1674cwb/the_checkboxes_face_fix_hires_fix_disappeared/" class="outlink">https://www.reddit.com/r/StableDiffusion/comments/...</a><br>
+<br>
+</div></div><div id="content_block_8" class="wiki-section-3"><div class="title-3"><h5 id="content_2_1_1"> アップスケーラー <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_2_1_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_8-body" class="wiki-section-body-3">
+<br>
+使用上の注意：<b>Latentで始まるやつはdenoising strengthの値が低い（おおよそ0.5以下）とギザギザになってぼやけるので不適切</b>。<br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1674833233/778" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1674...</a><br>
+778: 2023/01/29(日) 07:22:10.14 <br>
+hires.fix 3倍とか空白に変なもん書き込みまくって使い物にならんだろ<br>
+横長画像自体が破綻の元だし512×768のhires 2倍で良い<br>
+重いサンプラー使って前後どっちも50stepで3060でも3分<br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1674833233/782" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1674...</a><br>
+782:2023/01/29(日) 07:33:44.49 <blockquote id="content_block_9">
+&gt;776
+</blockquote>
+ステップは20でじゅうぶんやで<br>
+CFGは7<br>
+これでクオリティ落とさずに速度改善するで<br>
+サンプラーはDPM++2Mkarrasが速くてクオリティも良いで<br>
+DDIMも独特な描き込みが増えて良い、DDIMの場合ステップ少し増やしてや<br>
+SDEカラスはハイレゾで極端に遅くなる時があるのとハイレゾらしい書き込み量増加が物足りん時があるので<br>
+ハイレゾの時は使わんくていいかな<br>
+拡大後ってのはhires stepのことやろか？<br>
+これはゼロでええで、いうほどディテール増えん<br>
+アップスケールは描き込み増やしたいならlatent１択や<br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1675113816/716" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1675...</a><br>
+716: 2023/02/01(水) 14:32:23.56 <blockquote id="content_block_10">
+&gt;712
+</blockquote>
+というかt2iのアップスケーラーでもnone選べばi2iと一緒や<br>
+いや正確には出力条件違うから細部は異なってくるんやけど拡大の方向性は一緒でグチャったりはしない<br>
+あとは二次元系ならanime6Bはいい感じに絵を保ちながら線や陰影をはっきりさせて拡大してくれる<br>
+<br>
+というかアップスケーラーとしてはt2iのデフォのLatentがちょっと異質<br>
+ノイズも潜在要素も拾いまくって再描写するから美麗系のモデルでうまくいくとゴージャスになるけどクリーチャー生まれまくるしシンプルアニメ系のモデルだと服融けたり線ぼやけるだけ<br>
+<br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1676865326/423" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1676...</a><br>
+423: 2023/02/20(月) 21:52:46.12 <br>
+アップスケーラーは「Latent」がつくのとそれ以外で傾向が違う<br>
+「Latent」は拡大時にディテールアップしてくれるがノイズ除去強度を下げるとボケたり絵が破綻したりする<br>
+それ以外はディテールアップはほどほど、ノイズ除去強度を下げて元絵と変えずにスケールアップもできる<br>
+ESRGAN_4xとSwinIR_4xがよく使われている気がする<br>
+<br>
+<br>
+図：4chanあたりで作られた図表をだれかが翻訳した熱い図表<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/xJv0Z46m82.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/xJv0Z46m82.png" border="0" width="600"></a><br>
+<br>
+<br>
+207: 2023/03/03(金) 09:26:19.24<blockquote id="content_block_11">
+&gt;45
+</blockquote>
+ちょうど良い画像だから使わせてもらうけど<br>
+少し前のスレで話題にした後処理（その他タブ）アップスケーラーの違い<br>
+<br>
+元の絵<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/rW83XQ7x4c.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/rW83XQ7x4c.png" border="0" width="500"></a><br>
+<br>
+Real「CUGAN」は良くも悪くも元絵のまま拡大するから細かい部分は維持できるけどノイズとかもそのまま<br>
+質感を保ちたいリアル系と相性が良い<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/nnBeSMBMzJ.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/nnBeSMBMzJ.jpg" border="0" width="500"></a><br>
+</div></div><div id="content_block_13" class="wiki-section-3"><div class="title-3"><h5 id="content_2_1_2"> Tile <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_2_1_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_13-body" class="wiki-section-body-3">
+<br>
+605: 2023/03/20(月) 11:27:02.22 <br>
+hires 1.8倍なら2分で済むのに<br>
+1.9倍だと終了間際に急にメモリ最大に張り付いて固まって4分かかるのって普通なんかな<br>
+ワイのGPUのメモリ使い切る壁がここにあるんやろか<br>
+<br>
+638: 2023/03/20(月) 12:51:10.16 <blockquote id="content_block_14">
+&gt;605
+</blockquote>
+重複部分のドット数はアップスケーラーや手法によって変わるけど<br>
+ざっくりいうとこんな感じで回数が増えるイメージかな(色の塗方が適当ですまん)<br>
+512の2倍近辺っていうのはものスゲー効率が悪いのだけは伝わるといいな<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/BptDpMwlGZ.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/BptDpMwlGZ.jpg" border="0" width="500"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/fwj4rHSUqK.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/fwj4rHSUqK.jpg" border="0" width="500"></a><br>
+<br>
+</div></div><div id="content_block_16" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> MultiDiffusion <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_16-body" class="wiki-section-body-2">
+pkuliyi2015/multidiffusion-upscaler-for-automatic1111: MultiDiffusion implementation with VAE VRAM optimize - <a href="https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111" class="outlink">https://github.com/pkuliyi2015/multidiffusion-upsc...</a><br>
+出力画像を細かく分割し、それぞれにアップスケールを掛けたものを1枚に合成してくれる<br>
+それにより低VRAMユーザーでも4k画像などの高解像度にアップスケールする事が可能<br>
+横幅32000とかの超ワイド画像も出来る<br>
+<br>
+難点はその処理方法故に生成時間が膨れあがる事と、小人(妖精さん)が発生しやすくなる事<br>
+<br>
+Civitaiにあるチュートリアル<br>
+<a href="https://civitai.com/models/34726/tutorial-for-multidiffusion-upscaler-for-automatic1111-detail-to-the-max" class="outlink">https://civitai.com/models/34726/tutorial-for-mult...</a><br>
+</div></div><div id="content_block_18" class="wiki-section-3"><div class="title-3"><h5 id="content_2_2_3"> アップ&amp;ダウンをして描き込みを増やす方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_2_2_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_18-body" class="wiki-section-body-3">
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1679734218/452" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1679...</a><br>
+452 2023/03/26(日) <blockquote id="content_block_19">
+&gt;446
+</blockquote>
+1. extensionsでmultidiffusion-upscaler-for-automatic1111 をインストール<br>
+2. i2iのTiled DiffusionでEnableにチェック、MethodはMultiDiffusion、Upscalerを好きなのに設定してScale Factorで拡大率を設定。Keep input image sizeにもチェック。あとはとりあえずデフォルト値でよし<br>
+3. 大抵の場合VRAMが足りないので、Tiled VAEの方もEnableにチェック<br>
+4. Generateクリックしてi2iでアップスケール実行！やで<br>
+<br>
+あとは、アップスケールされたのを縮小してもう一度アップスケールかけるもよし、縮小なしでアップスケールするもよし<br>
+縮小しない方が描き込み量増える感じがするけど、実行時間はガンガン増えていくで<br>
+<blockquote id="content_block_20">
+&gt;446
+</blockquote>
+あっとそうだ、プロンプトはクオリティタグだけにせよってREADMEに書いてあるけど、適当に補完した方がアップスケールの出来は良くなる<br>
+あとは……CFGは10くらい、denoisingは0.3 - 0.5くらいがいいで<br>
+<br>
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5 id="content_2_2_4"> 小人の発生を防ぐ方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_2_2_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+<br>
+タイルを何枚もつぎ足しして生成する関係上アップスケーラーによってはいたるところに1girlを描こうとするため小人が多数発生し、さながらウォーリーを探せ状態になる。<br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1679571571/540" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1679...</a><br>
+540:  2023/03/24(金) <blockquote id="content_block_23">
+&gt;524
+</blockquote>
+絵を借りてやってみたがこんなんでどうや?<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/tKphFcGldd.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/tKphFcGldd.png" border="0" width="500"></a><br>
+パラメータ等はpastebinに置いた <a href="https://pastebin.com/PiGMstfE" class="outlink">https://pastebin.com/PiGMstfE</a><br>
+CFG Scalleを上げる、Denoising Strengthを若干下げる、tile width を64に下げる あたりが聞いてそうな感じがするがワイもこのへん適当や<br>
+なおtile widthの値を下げると生成時間が長くなる、この設定だと4090で6:46ほどかかっとる<br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1679571571/544" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1679...</a><br>
+544: <blockquote id="content_block_24">
+&gt;535
+</blockquote>
+やってみたで<br>
+背景プロンプトのみ＋no humans　denoise0.4<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/yqcNZ9Jskm.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/yqcNZ9Jskm.png" border="0" width="500"></a><br>
+タグ全残し　denoise0.4<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/mCNX00qIOg.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/mCNX00qIOg.png" border="0" width="500"></a><br>
+たしかに小人出なくなったがキャラ属性が消えてしまうわな<br>
+<br>
+<br>
+その他<blockquote id="content_block_25">
+&gt;524
+</blockquote>
+CNでイラストをある程度固定した方がいい<br>
+俺もハイレゾ化瞬間に崩れるのはモデルとprompt次第でよく見る<br>
+それでも崩れる時は崩れるけど・・・<br>
+<br>
+<br>
+<div id="content_block_26">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_26-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>ネタ</p></div>
+<div style="display:none" id="content_block_26-inside" class="toggle-display">
+<blockquote id="content_block_27">
+４ｋはわりとマシになってきたわ
+</blockquote>
+小人の発生が巧妙になってきてる気がするが<br>
+元絵<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/FeDJHywUiP.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/FeDJHywUiP.jpg" border="0" width="300"></a><br>
+４ｋ<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/42RJ26rd55.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/42RJ26rd55.jpg" border="0" width="300"></a><br>
+<br>
+<blockquote id="content_block_28">
+&gt;623
+</blockquote>
+磔にされててワロタ<blockquote id="content_block_29">
+&gt;624 &gt;&gt;623
+</blockquote>
+気付いてヒエッ…ってなったわ草<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/vXlUu0kSnZ.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/vXlUu0kSnZ.jpg" border="0" width="100"></a>
+</div>
+</div>
+</div></div><div id="content_block_32" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3">Controlnet 1.1 のCN tile(tile_resample)を併用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_32-body" class="wiki-section-body-2">
+Controlnetに追加された数々の機能の1つ、CNtileをMultiDiffusionと併用して高解像度にする<br>
+<ul id="content_block_33" class="list-1">
+<li>メリット
+<ul class="list-2">
+<li>Denoising strengthを最大の1にしても小人さんが発生しない</li>
+<li>元絵にほぼ忠実な状態で高解像度化が出来る</li>
+</ul>
+</li>
+<li>デメリット
+<ul class="list-2">
+<li>処理時間が数倍かかる(4k化に20分等)</li>
+</ul>
+</li>
+</ul>
+<br>
+1. extensionsで <a href="https://github.com/Mikubill/sd-webui-controlnet" class="outlink" rel="nofollow">sd-webui-controlnet</a> をインストール<br>
+2. ControlNet 1.1の<a href="https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main" class="outlink" rel="nofollow">model</a>をダウンロードし、\extensions\sd-webui-controlnet\models にセット<br>
+　 必要なのは control_v11f1e_sd15_tile.pth と control_v11f1e_sd15_tile.yaml<br>
+3. Controlnetを有効にし、プリプロセッサに tile_resample　モデルに control_v11f1e_sd15_tile を選択<br>
+3. MultiDiffusion の設定を入れる<br>
+5. Generateクリックしてi2iでアップスケール実行<br>
+<br>
+スレ207の868ニキ推奨設定<br>
+<pre id="content_block_34" class="BOX">
+868 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6312-keRw)[sage] 投稿日：2023/05/18(木) 14:49:53.98 ID:woSwpoup0
+ニキ達、tile diffusionの公式見てないんか？　Denoising strength０．５　ってのはもう昔の話やぞ
+小人出さんように恐る恐るdenoise調整する時代はCNtileの登場で終わったんや
+
+最新の推奨設定は
+・Denoising strength１　（最大値ってことや）
+・Method　Mixture of Diffusers　（デフォのmulti diffusionちゃうで）
+・Noise Inversion　Inversion steps２００　（最大値や）
+・Renoise strength０　（ゼロにしてええんや）
+・CNtile使用　（タイル有効にしたら何もいじらん画像も貼らんでいい）
+
+これや
+</pre>
+<br>
+</div></div><div id="content_block_36" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> ツール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_36-body" class="wiki-section-body-1">
+単体で動くやつら<br>
+</div></div><div id="content_block_38" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> Waifu2x-Caffe <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_38-body" class="wiki-section-body-2">
+<ul id="content_block_39" class="list-1">
+<li> Web｜waifu2x - <a href="https://waifu2x.udp.jp/index.ja.html" class="outlink">https://waifu2x.udp.jp/index.ja.html</a></li>
+<li> Windows｜lltcggie/waifu2x-caffe: waifu2xのCaffe版 - <a href="https://github.com/lltcggie/waifu2x-caffe" class="outlink">https://github.com/lltcggie/waifu2x-caffe</a></li>
+<li> Windows｜nagadomi/nunif: waifu2xの新モデルが使える - <a href="https://github.com/nagadomi/nunif/blob/master/waifu2x/docs/gui_ja.md" class="outlink">https://github.com/nagadomi/nunif/blob/master/waif...</a></li>
+</ul>
+深層畳み込みニューラルネットワークによる二次元画像のための超解像システム。<br>
+いにしえ(2015年くらい)からあるアップスケーリングツール<br>
+でも今でも比較的良い結果が得られて十分使える(個人的見解)<br>
+<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/MBKsJA7VA8.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/MBKsJA7VA8.jpg" border="0" width="600"></a><br>
+</div></div><div id="content_block_41" class="wiki-section-2"><div class="title-2"><h4 id="content_3_5"> PixSr4x <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_3_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_41-body" class="wiki-section-body-2">
+PixSr4x - イラスト向け4倍超解像Windowsアプリケーション - <a href="https://kohya.devel.jp/pix_sr_4x/" class="outlink">https://kohya.devel.jp/pix_sr_4x/</a><br>
+LoRA用学習スクリプトでお世話になってる人も多いkohyaニキがむかし作ってたやつとのこと<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/J6M74Q3RRZ.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/J6M74Q3RRZ.jpg" border="0" width="400"></a><br>
+</div></div><div id="content_block_43" class="wiki-section-3"><div class="title-3"><h5 id="content_3_5_5"> Sample <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5044142&amp;part=content_3_5_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_43-body" class="wiki-section-body-3">
+192: としあき  2023/03/04(土) <br>
+kohya氏が昔作ったというPixSr4xっていうツールが使いやすくてよく使ってますな<br>
+横からだけどこれスゴいね<br>
+512x512で出力したのをアップスケールしてみたけど潰れてた汗表現とかよだれまでちゃんと綺麗にしてくれたわ<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/6guMzrdlCp.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/6guMzrdlCp.png" border="0" width="500"></a>
+</div></div>
+</div>

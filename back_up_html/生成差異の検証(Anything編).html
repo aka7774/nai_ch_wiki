@@ -1,0 +1,70 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> この検証の意義 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+2000番台以降は一緒の絵が出せると思うんやが<br>
+出せないとか高解像度だと無理って情報がネットにあったり<br>
+スレでもニキの再現が難しいという報告があったので確認がしたい<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 知見 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+<ul id="content_block_4" class="list-1">
+<li> Batch size+1はseed+1と同じ</li>
+<li> Eta=0にしないと同一性が保てないらしい</li>
+</ul>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> レギュレーション <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1"> プロンプト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+SFWでええ感じのニキのやつ探してきました。<br>
+これをレギュ画像でWikiにおんなじようにテーブル作ってやってみる感じで暇な人はやろう<br>
+<br>
+<a href="https://majinai.art/ja/i/gQu8H26" class="outlink">https://majinai.art/ja/i/gQu8H26</a><br>
+<a href="https://majinai.art/i/gQu8H26.png"><img src="https://majinai.art/i/gQu8H26.png" border="0" width="500"></a><br>
+<ul id="content_block_9" class="list-1">
+<li> PNG infoにレギュ画像をドラッグ&amp;ドロップしてText2imgに送って生成してください</li>
+</ul>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+WarriorMama777/OrangeMixs at main - <a href="https://huggingface.co/WarriorMama777/OrangeMixs/tree/main" class="outlink">https://huggingface.co/WarriorMama777/OrangeMixs/t...</a><br>
+→BloodNightOrangeMix.ckpt<br>
+<br>
+これを使用します。<br>
+<br>
+BloodOrangeMixとハッシュ同じだから間違えんでなー<br>
+このへんだいたい ffa7b160<br>
+<br>
+BloodNightOrangeMix.ckpt sha256: f8aff727ba3da0358815b1766ed232fd1ef9682ad165067cac76e576d19689e0　←使うのこれや!!<br>
+BloodOrangeMix.ckpt sha256: 25cece3fe303ea8e3ad40c3dca788406dbd921bcf3aa8e3d1c7c5ac81f208a4f<br>
+BloodOrangeMix_half.ckpt sha256: b2168aaa59fa91229b8add21f140ac9271773fe88a387276f3f0c7d70f726a83<br>
+</div></div><div id="content_block_13" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> Vae <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_13-body" class="wiki-section-body-2">
+Anything-V3.0.vae　を使います。<br>
+</div></div><div id="content_block_15" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> 検証にあたって <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_15-body" class="wiki-section-body-2">
+<ul id="content_block_16" class="list-1">
+<li> 1111本体のソースコードを改造していないこと
+<ul class="list-2">
+<li> 改造している場合は備考に明記してください</li>
+<li> あえて古いバージョンで動かしている場合はhashなど</li>
+<li> xformers medvram等のオプションは参考記録として明記してください</li>
+</ul>
+</li>
+<li> 2回生成したり、WebUIを落としてから生成したりと検証してくれるとなお良い</li>
+<li> HyperNetworkがONになってないか要確認!</li>
+</ul>
+<ul id="content_block_17" class="list-1">
+<ul class="list-2">
+<li> Upscale latent spaceは設定のUpscalingのところにある</li>
+<li> Enable quantization in K samplersは設定のStable Diffusionのところにある</li>
+</ul>
+
+</ul>
+<br>
+</div></div><div id="content_block_19" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 比較 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_19-body" class="wiki-section-body-1">
+<br>
+<table id="table_edit_1 content_block_20" class="nanj_prompt_table edit sort"><thead><tr><th style="width:100px;">GPU</th><th style="width:300px;">生成結果</th><th style="width:300px;">webui-user.bat</th><th>Upscale latent space</th><th>Enable quantization in K samplers</th><th style="width:300px;">備考</th><th class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=0&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></th></tr></thead><tbody><tr><td>GeForce RTX 4080</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/MUtRHHbGWX.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/MUtRHHbGWX.png" border="0"></a></td><td>なし</td><td>ON</td><td>OFF</td><td></td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=1&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 2080 SUPER</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/BnMsv8vVwx.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/BnMsv8vVwx.png" border="0"></a></td><td>なし</td><td>ON</td><td>OFF</td><td></td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=2&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 4090</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/QQqsc85PCL.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/QQqsc85PCL-s.png" border="0"></a></td><td>--no-half-vae --xformers --opt-channelslast</td><td>OFF</td><td>OFF</td><td></td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=3&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 3080Ti</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/tgiCrpNPI4.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/tgiCrpNPI4.png" border="0"></a></td><td>なし</td><td>OFF</td><td>OFF</td><td>Docker版WebUI使用。完全ではないが似てる、3090のUpscale latent spaceのみONの結果とほぼ同じだが細部が違う</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=4&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 3080Ti</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/SDbhOpVssB.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/SDbhOpVssB.png" border="0"></a></td><td>--medvram --xformers</td><td>OFF</td><td>ON</td><td>Docker版WebUI使用。完全ではないが似てる、3090の各種結果の中間くらいな感じになっている</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=5&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GTX1660Ti 6GB</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/tN_EKV2ykA.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/tN_EKV2ykA.png" border="0"></a></td><td>--medvram --no-half --xformers</td><td>ON</td><td>OFF</td><td>ほぼ似ているが、細部が違う</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=6&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 3060</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/gjfxxOoS1Y.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/gjfxxOoS1Y.png" border="0"></a></td><td>--xformers</td><td>OFF</td><td>OFF</td><td>完全ではないが似てる</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=7&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 2070 SUPER</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/FFtE0xzZr7.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/FFtE0xzZr7.png" border="0"></a></td><td>--xformers --opt-channelslast</td><td>OFF</td><td>OFF</td><td>完全ではないが似ている <br> 画像右側が変化した</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=8&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 2070 SUPER</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/H_hpDW8Fkj.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/H_hpDW8Fkj.png" border="0"></a></td><td></td><td>OFF</td><td>OFF</td><td>完全ではないが似ている</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=9&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 2070 SUPER</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/NhJu9rCBMJ.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/NhJu9rCBMJ.png" border="0"></a></td><td></td><td>ON</td><td>OFF</td><td>似てない</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=10&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 3090</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/Ppx8i9LBQx.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Ppx8i9LBQx.png" border="0"></a></td><td>--xformers --opt-channelslast</td><td>ON</td><td>OFF</td><td>完全ではないが似てる</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=11&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 3090</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/Ppx8i9LBQx.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Ppx8i9LBQx.png" border="0"></a></td><td>--xformers --opt-channelslast</td><td>ON</td><td>OFF</td><td>完全ではないが似てる</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=12&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 3090</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/_iHjhbQdfa.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/_iHjhbQdfa.png" border="0"></a></td><td>なし</td><td>ON</td><td>OFF</td><td>完全ではないが似てる</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=13&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 2070</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/qfQ1mrgZtK.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/qfQ1mrgZtK-s.png" border="0"></a></td><td>なし</td><td>　ON　</td><td>　OFF　</td><td>完全ではないが似てる</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=14&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 2070</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/lYBOw_C13Y.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/lYBOw_C13Y-s.png" border="0"></a></td><td>--xformers --no-half-vae</td><td>　ON　</td><td>　OFF　</td><td>完全ではないが似てる</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=15&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 2070</td><td><a href="https://image01.seesaawiki.jp/n/h/nai_ch/tTRH81Z46Y.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/tTRH81Z46Y-s.png" border="0"></a></td><td>なし</td><td>　ON　</td><td>　OFF　</td><td>モデル違う例 Clip Skip 2</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=16&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr><tr><td>GeForce RTX 2070</td><td><a href="https://image02.seesaawiki.jp/n/h/nai_ch/c45CfzoNtz.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/c45CfzoNtz-s.png" border="0"></a></td><td>なし</td><td>　ON　</td><td>　OFF　</td><td>モデル違う例 似てない</td><td class="table_edit_link"><a href="https://seesaawiki.jp/nai_ch/e/edit?id=5001344&amp;part=content_block_20&amp;row=17&amp;edit_id=table_edit_1&amp;part_type=table">編集</a></td></tr></tbody></table>
+<br>
+<hr size="1" noshade>------------------
+</div></div>
+</div>

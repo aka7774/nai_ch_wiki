@@ -1,0 +1,157 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 画像の再現性 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+</div></div><div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> 再現性に影響する項目 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+同一のモデルと生成パラメータを使用しても、以下の項目が再現性に影響する。<ul id="content_block_4" class="list-1">
+<li> 初期ノイズおよびSDEソルバー使用時のノイズの生成デバイス
+<ul class="list-2">
+<li> 再現性に対して最も影響が大きい。CPUであればほぼ同一になるはず</li>
+</ul>
+</li>
+<li> Attentionの最適化
+<ul class="list-2">
+<li> 影響はごくわずか</li>
+</ul>
+</li>
+<li> ソフトウェアのバージョン</li>
+</ul>
+<br>
+<span class="fsize" style="font-size:20px;"><span style="color:#ff0000;">これより下の情報は2023年当時の情報でありとても古くなっていますので、ご注意ください。</span></span><br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 画像の再現性</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> 再現性に影響する項目</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2"> ねらい</a></li>
+<li class="list-1"><a href="#content_3"> レベル1. 画像の作者が自分の環境で再現したい</a>
+<ul>
+<li class="list-2"><a href="#content_3_2"> 2度生成して完全に一致する画像が作れるか</a></li>
+<li class="list-2"><a href="#content_3_3"> 前に作った画像をアレンジしたい</a></li>
+<li class="list-2"><a href="#content_3_4"> テキストだけ残しておいて後日再現する</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> レベル2. 画像の作者が他人の環境で再現してもらいたい</a>
+<ul>
+<li class="list-2"><a href="#content_4_5"> モデル(Checkpoint)の出自を明らかにする</a></li>
+<li class="list-2"><a href="#content_4_6"> そのほかの情報を明らかにする</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> レベル3. 他人が画像の環境を再現したい</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> ねらい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+<br>
+おおよそ3段階のレベルでの再現を考える。<br>
+<ul id="content_block_7" class="list-1">
+<li> レベル1. 画像の作者が自分の環境で再現したい</li>
+<li> レベル2. 画像の作者が他人の環境で再現してもらいたい</li>
+<li> レベル3. 他人が画像の環境を再現したい</li>
+</ul>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> レベル1. 画像の作者が自分の環境で再現したい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+<br>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> 2度生成して完全に一致する画像が作れるか <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+<ul id="content_block_12" class="list-1">
+<li> 古いxformersを有効にしている場合は作れない</li>
+<li> aまたはSDEのつくソルバーでは作れない</li>
+<li> VRAM不足で変化する？</li>
+</ul>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> 前に作った画像をアレンジしたい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+<br>
+<a href="https://seesaawiki.jp/nai_ch/d/%c0%b8%c0%ae%ba%b9%b0%db%a4%ce%b8%a1%be%da%28Sampler%ca%d4%29">生成差異の検証(Sampler編)</a>と<a href="https://seesaawiki.jp/nai_ch/d/%c0%b8%c0%ae%ba%b9%b0%db%a4%ce%b8%a1%be%da%28Anything%ca%d4%29">生成差異の検証(Anything編)</a>によると<ul id="content_block_15" class="list-1">
+<li> ハードウェアに依存する(FP16への対応有無によるのかも知れない(要検証))</li>
+<li> GeForce RTX 2000番台以降であれば「ほぼ同一な画像」が生成できる</li>
+</ul>
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> テキストだけ残しておいて後日再現する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+<br>
+基本的には画像で残しておいたほうが安全。<br>
+テキストを抽出して画像は一旦削除、という容量節約は成り立ちにくい。<br>
+<ul id="content_block_18" class="list-1">
+<li> 1111本体の仕様変更などがあるのでソフトウェア一式も保存しておいたほうが無難</li>
+<li> PNG Infoの情報が不完全である
+<ul class="list-2">
+<li> 項目自体が足りない(VAE)</li>
+<li> 項目は存在するが値(ファイル名)が環境に依存する(Embedding, LoRA, Hypernetwork)</li>
+<li> コマンドラインオプションやハードウェアなどは保存されない</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_20" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> レベル2. 画像の作者が他人の環境で再現してもらいたい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_20-body" class="wiki-section-body-1">
+<br>
+前提として、レベル1で問題になる条件を出来るだけ回避する。<br>
+</div></div><div id="content_block_22" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5"> モデル(Checkpoint)の出自を明らかにする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_22-body" class="wiki-section-body-2">
+<br>
+sha256対応になり重複はしなくなったが、<br>
+1つのモデルでも変換方法が多岐にわたるため、<br>
+ハッシュからモデルを逆算することが難しくなっている。<br>
+<ul id="content_block_23" class="list-1">
+<li> 使用したモデルの名称やURL
+<ul class="list-2">
+<li> そもそも有名あるいは利用者の多いモデルを使ったほうが良い</li>
+<li> モデル名は改名せず、「Add model name to generation information」をオンにする</li>
+</ul>
+</li>
+<li> fp16、pruned、safetensors対応か
+<ul class="list-2">
+<li> どのモデルかがわかれば違いは誤差程度で収まるはずだけど</li>
+</ul>
+</li>
+<li> VAEを入れ替えたか、入れ替えたなら何か
+<ul class="list-2">
+<li> 別途必要な場合は何が必要か</li>
+</ul>
+</li>
+<li> 独自マージなら
+<ul class="list-2">
+<li> 簡素ならマージ手順を伝える</li>
+<li> 複雑ならマージ済みモデル自体を共有したほうが早い</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_4_6"> そのほかの情報を明らかにする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_4_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+<ul id="content_block_26" class="list-1">
+<li> HN, Loraを改名したなら元の名前やURL
+<ul class="list-2">
+<li> これも出来るだけ改名しないで使うにこしたことはない</li>
+</ul>
+</li>
+<li> 生成日時もヒントになる
+<ul class="list-2">
+<li> あえて古いバージョンを使っているならgitのhashも記載する</li>
+</ul>
+</li>
+<li> ランダム構文{A|B|C}を使ったなら、Dynamic PromptsをオフにするとPNG Infoに{}が残る</li>
+</ul>
+</div></div><div id="content_block_28" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> レベル3. 他人が画像の環境を再現したい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5012377&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_28-body" class="wiki-section-body-1">
+<br>
+<ul id="content_block_29" class="list-1">
+<li> ハッシュからモデルを検索する
+<ul class="list-2">
+<li> モデル名はデフォルトの設定では記録されない</li>
+</ul>
+</li>
+<li> HN, Loraの名前から推測する</li>
+<li> VAEはあるものをすべて当てはめてみる?</li>
+</ul>
+<br>
+画像からモデルを推測するソムリエも出現しはじめている・・・。
+</div></div>
+</div>

@@ -1,0 +1,109 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">MiniMax H3について <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<ul id="content_block_2" class="list-1">
+<li> 紹介記事 <a href="https://www.minimax.io/blog/minimax-h3" class="outlink">https://www.minimax.io/blog/minimax-h3</a></li>
+<li> 日本語チュートリアル <a href="https://docs.comfy.org/ja/tutorials/video/minimax/minimax-h3" class="outlink">https://docs.comfy.org/ja/tutorials/video/minimax/...</a></li>
+<li> モデルのダウンロード <a href="https://huggingface.co/Comfy-Org/MiniMax-H3" class="outlink">https://huggingface.co/Comfy-Org/MiniMax-H3</a>
+<ul class="list-2">
+<li>diffusion_modelsの例
+<ul class="list-3">
+<li> i2v、t2vのモデル例 <a href="https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors" class="outlink" rel="nofollow">minimax_h3_fl2va_pruned_int8_convrot.safetensors</a></li>
+<li> r2v（リファレンスtoビデオ）のモデル例 <a href="https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors" class="outlink" rel="nofollow">minimax_h3_ref2va_pruned_int8_convrot.safetensors</a></li>
+</ul>
+</li>
+<li> text_encodersの例
+<ul class="list-3">
+<li> <a href="https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors" class="outlink" rel="nofollow">qwen3vl_32b_minimax_h3_int8_convrot.safetensors</a></li>
+</ul>
+</li>
+<li>VAE
+<ul class="list-3">
+<li> <a href="https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/vae/minimax_h3_video_vae_fp16.safetensors" class="outlink" rel="nofollow">minimax_h3_video_vae_fp16.safetensors</a>（<a href="https://huggingface.co/Kijai/MiniMax-H3-experimental/blob/main/minimax_h3_video_vae_int8_convrot.safetensors" class="outlink" rel="nofollow">minimax_h3_video_vae_int8_convrot.safetensors</a>を使ってもよい）</li>
+<li> <a href="https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/vae/minimax_h3_audio_vae_fp32.safetensors" class="outlink" rel="nofollow">minimax_h3_audio_vae_fp32.safetensors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2">実行環境と必要なスペック <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_4-body" class="wiki-section-body-1">
+記事執筆時点では<a href="https://seesaawiki.jp/nai_ch/d/ComfyUI">ComfyUI</a>（v0.30.0〜）でのみ利用できる。<br>
+<br>
+VRAM8GB、メインメモリ16GBでも動作したとの報告がある。「自分のスペックでも使えるのか」と悩む前にまず試してみるとよい。生成にかかる時間を短縮するには解像度を0.4メガピクセル未満、動画の秒数（duration）を5未満にしてみてもよい。<br>
+<br>
+低スペックで動作させるとSSDにスワップが発生しSSDの寿命を削ってしまうとの懸念があるが、最近のComfyUIはメモリ管理が優秀でスワップは起きにくいとの意見もある。起動オプションに「--fast-disk」や「--disable-pinned-memory」を追加することでスワップは激減するとも。<br>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_3">プロンプトの書き方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+<ul id="content_block_7" class="list-1">
+<li>プロンプトガイド1（fl2va） <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/VIDEO_PROMPT_WRITING_GUIDE_base_en.md" class="outlink">https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/m...</a></li>
+<li>プロンプトガイド2（ref2va） <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/VIDEO_PROMPT_WRITING_GUIDE_ref_en.md" class="outlink">https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/m...</a></li>
+</ul>
+<br>
+これらを任意のLLMに参照させ、希望するプロンプトを生成してもらうのが手っ取り早い。<br>
+<br>
+エージェント系AIのユーザー向けに、上のプロンプトガイドの内容をまとめたSkillsが提供されている。<br>
+<a href="https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills" class="outlink">https://github.com/MiniMax-AI/MiniMax-H3/tree/main...</a><br>
+<br>
+カメラモーションごとの実際の効果は以下の動画を参照。<br>
+<a href="https://files.catbox.moe/elzou0.mp4" class="outlink">https://files.catbox.moe/elzou0.mp4</a> （<a href="https://fate.5ch.io/test/read.cgi/liveuranus/1787031416/207" class="outlink">https://fate.5ch.io/test/read.cgi/liveuranus/17870...</a> より）<br>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_4">高速化の手法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+「PyTorchとCudaのバージョンアップ」「Sage Attentionのインストール」以外は、利用や併用による副作用などの懸念が払拭されていない。鉄板の高速化手法が定まるにはしばらく時間が必要と思われる。<br>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_4_1">PyTorchとCudaのバージョンアップ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+2.10.0+cu130未満ならばこれ以上にするだけでかなり高速化するとの報告が複数ある。<br>
+</div></div><div id="content_block_13" class="wiki-section-2"><div class="title-2"><h4 id="content_4_2">Sage Attentionのインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_13-body" class="wiki-section-body-2">
+TritonとSage Attentionをインストールする。Triton、Sage Attentionともに、現在のPyTorchやCudaのバージョンに合わせてインストールするバージョンや必要なファイルが変わってくる。<ul id="content_block_14" class="list-1">
+<li> Sage Attentionのwhlをダウンロード <a href="https://github.com/woct0rdho/SageAttention/releases" class="outlink">https://github.com/woct0rdho/SageAttention/release...</a></li>
+</ul>
+</div></div><div id="content_block_16" class="wiki-section-2"><div class="title-2"><h4 id="content_4_3">Comfy Kitchen Attention <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_16-body" class="wiki-section-body-2">
+ComfyUIのバージョンを0.32.0以上にし、「ModelAttentionBackend」ノードを配置して「attention」の値を「comfy kitchen attention」にする。Sage Attentionとの併用は不可。Sage Attentionと比較した高速化の効果は環境によって異なり、品質はSage Attentionより高いとの話。<br>
+インストールがやや難しいSage Attentionに対して、こちらはComfyUIの標準ノードで似た効果を得られるメリットがある。<br>
+</div></div><div id="content_block_18" class="wiki-section-2"><div class="title-2"><h4 id="content_4_4">Video VAEにint8 convrotモデルを利用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_18-body" class="wiki-section-body-2">
+<a href="https://huggingface.co/Kijai/MiniMax-H3-experimental" class="outlink">https://huggingface.co/Kijai/MiniMax-H3-experiment...</a>にある「minimax_h3_video_vae_int8_convrot.safetensors」を使う<br>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5">Patch Sage Attention KJ＋MiniMax H3 Mem Eff Sage Attention Patch <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+いずれも<a href="https://github.com/kijai/ComfyUI-KJNodes" class="outlink" rel="nofollow">ComfyUI-KJNodes</a>に含まれている。Sage Attentionをインストールした上で、model→2つのカスタムノード→modelにつなぐ。<br>
+</div></div><div id="content_block_22" class="wiki-section-2"><div class="title-2"><h4 id="content_4_6">ComfyUI-MiniMax-H3-Turbo <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_22-body" class="wiki-section-body-2">
+<a href="https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo" class="outlink">https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Tur...</a><br>
+専用のLoRAをダウンロードして使う。通常なら20step以上が推奨される生成を4〜8stepで収束させる。<br>
+</div></div><div id="content_block_24" class="wiki-section-2"><div class="title-2"><h4 id="content_4_7">lightx2v-TurboLoRA <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_24-body" class="wiki-section-body-2">
+<a href="https://huggingface.co/Kijai/MiniMax-H3_comfy/tree/main/loras" class="outlink">https://huggingface.co/Kijai/MiniMax-H3_comfy/tree...</a><br>
+こちらも低step化の専用LoRA。動画生成ではおなじみlightx2vのMiniMaxH3版LoRAをcomfy用にしたもの。<br>
+fl2v（t2v・i2v含む）用とref2v用でファイルが違うことに注意。<br>
+</div></div><div id="content_block_26" class="wiki-section-2"><div class="title-2"><h4 id="content_4_8">MiniMax H3 Block Cache (T8) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_26-body" class="wiki-section-body-2">
+<a href="https://github.com/T8mars/comfyui-minimax-h3-blockcache-T8" class="outlink">https://github.com/T8mars/comfyui-minimax-h3-block...</a><br>
+</div></div><div id="content_block_28" class="wiki-section-2"><div class="title-2"><h4 id="content_4_9">ComfyUI-SolAttn <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_28-body" class="wiki-section-body-2">
+<a href="https://github.com/kijai/ComfyUI-SolAttn_triton" class="outlink">https://github.com/kijai/ComfyUI-SolAttn_triton</a><br>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_4_10">ComfyUI Spectrum MiniMax H3 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_4_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+<a href="https://github.com/xmarre/ComfyUI-Spectrum-MiniMax-H3" class="outlink">https://github.com/xmarre/ComfyUI-Spectrum-MiniMax...</a><br>
+</div></div><div id="content_block_32" class="wiki-section-1"><div class="title-1"><h3 id="content_5">生成中の動画をプレビューする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_32-body" class="wiki-section-body-1">
+<a href="https://github.com/kijai/ComfyUI-KJNodes" class="outlink" rel="nofollow">Model Preview Override</a>カスタムノードを配置する。modelにはモデルをつなぎ、「preview_frames」には動画の長さを示す「Float」に続く「数式（Math Expression）」の「整数（INT）」からつなぐ。<br>
+vaeには入力不要。生成速度は10%ほど遅くなるので、シードガチャに使うとよい。<br>
+stepが進むごとにノイズが除去されて綺麗になっていく。<br>
+<br>
+<pre id="content_block_33" class="BOX">
+UNETLoader → Sigma Shift → [MiniMax H3 Preview Override] → BasicGuider →[A]
+CLIPLoader ─┐ 
+VAELoader ──┴→ MiniMaxH3ReferenceToVideo → conditioning + latent →[A]
+[A]→ SamplerCustomAdvanced → VAEDecode → CreateVideo → SaveVideo
+</pre>
+</div></div><div id="content_block_35" class="wiki-section-1"><div class="title-1"><h3 id="content_6">連続した長尺の動画を作る方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_35-body" class="wiki-section-body-1">
+<a href="https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context" class="outlink" rel="nofollow">H3 Motion Context</a>は、直前の動画の文脈を引き継ぎつつ、続く動画を生成する。<br>
+<a href="https://github.com/ethanfel/ComfyUI-MiniMaxH3-Contex-Loop" class="outlink" rel="nofollow">ComfyUI MiniMax H3 Contex Loop</a>という仕組みもあるが、ワークフローは分かりにくい。<br>
+</div></div><div id="content_block_37" class="wiki-section-1"><div class="title-1"><h3 id="content_7">MiniMax H3を画像編集モデルのように使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5380114&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_37-body" class="wiki-section-body-1">
+<a href="https://github.com/tori29umai0123/ComfyUI-MiniMaxH3-SingleFrame" class="outlink" rel="nofollow">Comfyui-MinimaxH3-SingleFrame</a>は、入力画像を編集したり、2枚の入力画像をもとに中間フレームを生成したりできる。
+</div></div>
+</div>

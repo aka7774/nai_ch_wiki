@@ -1,0 +1,456 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+ここではWebUIの設定の仕方とか、DDIMってなんやねんみたいな基礎的なもののTipsを載せる感じです。<br>
+ローカル版でしかできないような内部的検証、コード周り直接触るようなのは<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b5%bb%bd%d1">ローカルの技術</a>を参照してください。<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> コマンドラインオプション</a></li>
+<li class="list-1"><a href="#content_3"> 設定(Settings)周り</a>
+<ul>
+<li class="list-2"><a href="#content_3_1"> 色がくすんでる気がする</a></li>
+<li class="list-2"><a href="#content_3_2"> 生成中/学習中もネット見たりゲームしたい</a></li>
+<li class="list-2"><a href="#content_3_3"> 簡単に設定切り替えたい</a></li>
+<li class="list-2"><a href="#content_3_4"> 出力する絵のファイル名パターンを設定したい</a></li>
+<li class="list-2"><a href="#content_3_5"> VAEの設定</a></li>
+<li class="list-2"><a href="#content_3_6"> PNG infoでText2Imgに送るとckptまで変更されてロード始めるのを回避したい</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> Restore faces</a></li>
+<li class="list-1"><a href="#content_5"> 高解像度で出力したい</a>
+<ul>
+<li class="list-2"><a href="#content_5_7"> 生成できる解像度の限界を調べる</a>
+<ul>
+<li class="list-3"><a href="#content_5_7_1"> 縦横サイズの上限を増やす</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_5_8"> Hires. fixを使う</a>
+<ul>
+<li class="list-3"><a href="#content_5_8_2"> Upscalerについて</a></li>
+<li class="list-3"><a href="#content_5_8_3"> highres.fixのUpscalerの比較</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_5_9"> Extras の Upscaler を使う</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> サンプラー</a>
+<ul>
+<li class="list-2"><a href="#content_6_10"> 1111WebUIのサンプラー</a></li>
+<li class="list-2"><a href="#content_6_11"> 1111WebUIのスケジューラー</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_7"> プロンプト記法</a>
+<ul>
+<li class="list-2"><a href="#content_7_12"> NovelAIとAUTOMATIC1111 WebUIの違い</a>
+<ul>
+<li class="list-3"><a href="#content_7_12_4"> 変換する</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_7_13">プロンプト強弱の簡単な調整方法</a></li>
+<li class="list-2"><a href="#content_7_14"> NovelAIのプロンプトを真似る(SD1)</a></li>
+<li class="list-2"><a href="#content_7_15"> Prompt matrix </a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_8"> img2img</a>
+<ul>
+<li class="list-2"><a href="#content_8_16"> 各数値の詳細</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_9"> TIPS</a>
+<ul>
+<li class="list-2"><a href="#content_9_17"> グラボをリセットする</a></li>
+<li class="list-2"><a href="#content_9_18"> UIをリロードするとプロンプトが消えて辛い</a></li>
+<li class="list-2"><a href="#content_9_19"> ダークモードで表示</a></li>
+<li class="list-2"><a href="#content_9_20"> 画像生成が終了したら音を鳴らす</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_10"> トラブルシューティング</a>
+<ul>
+<li class="list-2"><a href="#content_10_21"> NansException: A tensor with all NaNsなんとかって出る</a></li>
+<li class="list-2"><a href="#content_10_22"> CUDA out of memoryで生成できない</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> コマンドラインオプション <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+<br>
+ページが長くなってきたので<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%cewebui%2duser%2ebat">ローカルのwebui-user.bat</a>に移動しました。<br>
+</div></div><div id="content_block_5" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 設定(Settings)周り <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_5-body" class="wiki-section-body-1">
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1"> 色がくすんでる気がする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+VAEが設定されていない(=モデル埋め込みのを使用)ときに見られる現象。<br>
+nai.vae.ptなどをmodels/VAEフォルダ内に配置して、WebUIの上部タブのプルダウンから合うものを選びます。<br>
+<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%a5%ea%a5%bd%a1%bc%a5%b9#resource_vae">VAE一覧</a>も参照。<br>
+<br>
+図：左がVAE未指定、右指定<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/7e9AhZfv5Y.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/7e9AhZfv5Y-s.jpg" border="0"></a><br>
+<br>
+図：VAEの選択<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/99s3OvA4nB.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/99s3OvA4nB.jpg" border="0"></a><br>
+</div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> 生成中/学習中もネット見たりゲームしたい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_9-body" class="wiki-section-body-2">
+<br>
+おすすめはiGPUつきのCPUにして、モニタやブラウザをiGPUで描画するよう<a href="https://www.google.com/search?q=windows+10+%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%81%AE%E8%A8%AD%E5%AE%9A" class="outlink" rel="nofollow">グラフィックの設定</a>をいじること。<br>
+内蔵グラフィック付きのパソコンなら、映像出力端子をマザーボードに接続すると、自動でブラウザなどは内蔵グラフィックを使うようになってグラボのVRAM使用量が減少する(アイドル時に4MB)。<br>
+要はdGPUを画像生成専用にする。<br>
+アプリごとに設定できるので、軽いゲームと重いゲームで使い分ける。<br>
+あとは、ブラウザでハードウェアアクセラレーションを無効(ただしブラウザの動作が重たくなる)にし、メモリ不足エラーが発生している場合はVRAMを占有している可能性のあるものをすべて閉じ、GFPGAN(存在する場合)を削除してください。<br>
+特にVRAM 8GBの学習は容量ギリギリなのでこういう設定が大事っぽい。<br>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> 簡単に設定切り替えたい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+<br>
+画面の上にこういうの出せる。<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/rTKIPtT7oU.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/rTKIPtT7oU.jpg" border="0"></a><br>
+<br>
+Settings&gt;User Interface&gt;「Quicksettings list」(日本語化してる場合「設定タブ＞クイック設定」)に以下の文字列を入力。<blockquote id="content_block_12">
+sd_model_checkpoint,sd_vae,sd_hypernetwork,sd_hypernetwork_strength,CLIP_stop_at_last_layers,eta_noise_seed_delta
+</blockquote>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> 出力する絵のファイル名パターンを設定したい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+<br>
+Setting&gt;saving images/grids&gt;「Images filename pattern」で以下のタグを設定する。<br>
+<br>
+設定できるタグ（複数組み合わせ可能）<br>
+[steps], [cfg], [prompt], [prompt_no_styles], [prompt_spaces], [width], [height], [styles], [sampler], [seed], [model_hash], [prompt_words], [date], [datetime], [job_timestamp]<br>
+<br>
+例：[seed]-[steps]-[cfg]-[sampler]-[prompt_spaces]<br>
+<blockquote id="content_block_15">
+"Images filename pattern" 上にマウスカーソルを乗せると表示が出る
+</blockquote>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/r1ZnBOGeXB.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/r1ZnBOGeXB.png" border="0"></a><br>
+<br>
+フォルダ名もSetting&gt;Saving to a directory&gt;「Directory name pattern」で同じように設定できる<br>
+Windowsにはファイル名/フォルダ名は通常256文字までという制限があるので長すぎると途中で端折られる<br>
+<br>
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_3_5"> VAEの設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_3_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+<ul id="content_block_18" class="list-1">
+<li> Auto: models/Stable-diffusionにある「Checkpointと同名.vae.pt/safetensors」を読み込む</li>
+<li> 指定: Checkpointにかかわらず指定したVAEを読み込む</li>
+<li> None: Checkpoint埋め込みのものを使用</li>
+</ul>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_3_6"> PNG infoでText2Imgに送るとckptまで変更されてロード始めるのを回避したい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_3_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+設定→UI設定<br>
+When reading generation parameters from text into UI (from PNG info or pasted text), do not change the selected model/checkpoint.<br>
+(テキストからUIに生成パラメータを読み込む場合(PNG情報または貼り付けられたテキストから)、選択されたモデル/チェックポイントは変更しない。)<br>
+これにチェック<br>
+</div></div><div id="content_block_22" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> Restore faces <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_22-body" class="wiki-section-body-1">
+アニメ絵だとオフ推奨(目がリアルになる)<br>
+</div></div><div id="content_block_24" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 高解像度で出力したい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_24-body" class="wiki-section-body-1">
+<br>
+SD1.5以下のモデルは、縦横の両方が512を超えていると破綻しやすくなると言われています。<br>
+NovelAI V1は基本512x768で、たとえばフルHDで出そうとするとほぼ確実に破綻するでしょう。<br>
+また、所要時間とVRAM消費は解像度に比例して増えていきます(縦横2倍なら4倍)<br>
+<br>
+まず、破綻しない生成サイズを決める。<br>
+そのサイズでガチャする。<br>
+設定が確定したら以下の機能を使う。<br>
+</div></div><div id="content_block_26" class="wiki-section-2"><div class="title-2"><h4 id="content_5_7"> 生成できる解像度の限界を調べる <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_5_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_26-body" class="wiki-section-body-2">
+<br>
+出したい絵の設定で、縦横をできる限り大きくして、Stepsを1にして、Generateする<br>
+これでエラーが起きるようならStepsを上げてうまくいくことはないはず<br>
+</div></div><div id="content_block_28" class="wiki-section-3"><div class="title-3"><h5 id="content_5_7_1"> 縦横サイズの上限を増やす <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_5_7_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_28-body" class="wiki-section-body-3">
+<br>
+ui-config.json で変えられる<br>
+<br>
+<pre id="content_block_29" class="PLAIN-BOX">
+ "txt2img/Width/maximum": 2048,
+ "txt2img/Height/maximum": 2048,
+</pre>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_5_8"> Hires. fixを使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_5_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+<br>
+最終的に出力したい解像度を出せるだけのGPUがあって、精細な絵を出したいならこれ。<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/oOliqVlRmz.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/oOliqVlRmz.png" border="0"></a><br>
+<br>
+VRAM 8GBだとFHD(1920x1088)はギリギリ。UpscalerによってはVRAMが一瞬溢れて共有メモリを使用する。<br>
+VRAM不足を補うためには、生成時間が延びるけど--medvramを指定する手がある。<br>
+3060か4070Ti買っちゃう手もあるかも。<br>
+</div></div><div id="content_block_33" class="wiki-section-3"><div class="title-3"><h5 id="content_5_8_2"> Upscalerについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_5_8_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_33-body" class="wiki-section-body-3">
+Upscalerによってデティールが大きく異なる。<br>
+4x-UltraSharpなどの追加のUpscalerはmodels/ESRGANに入れる。<br>
+<br>
+Latent系はとても精細な絵になるが、内容が大きく変化したり崩れたりする。モデルによっては塗りが変化して相性が悪いものもある。<br>
+例えばこれが<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/jCIwDrvPXf.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/jCIwDrvPXf-s.png" border="0"></a><br>
+<br>
+こうなる<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/UTVr1uI6dp.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/UTVr1uI6dp-s.png" border="0"></a><br>
+</div></div><div id="content_block_35" class="wiki-section-3"><div class="title-3"><h5 id="content_5_8_3"> highres.fixのUpscalerの比較 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_5_8_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_35-body" class="wiki-section-body-3">
+<div id="content_block_36">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_36-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_36-inside" class="toggle-display">
+画像をクリック/タップで拡大表示<ul id="content_block_37" class="list-1">
+<li> Hires.fix無し</li>
+</ul>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/JHAiRoOnKK.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/JHAiRoOnKK-s.png" border="0"></a><br>
+<ul id="content_block_38" class="list-1">
+<li> Latent</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/3hm0qvgxQW.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/3hm0qvgxQW-s.png" border="0"></a><br>
+<ul id="content_block_39" class="list-1">
+<li> Latent(antialiased)</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/WspzWo_pgx.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/WspzWo_pgx-s.png" border="0"></a><br>
+<ul id="content_block_40" class="list-1">
+<li> Latent(bicubic)</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/df6mazcJu_.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/df6mazcJu_-s.png" border="0"></a><br>
+<ul id="content_block_41" class="list-1">
+<li> Latent(bicubic antialiased)</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/56hBMzsnYf.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/56hBMzsnYf-s.png" border="0"></a><br>
+<ul id="content_block_42" class="list-1">
+<li> Latent(nearest)</li>
+</ul>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/Pn3ZgrqeCl.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Pn3ZgrqeCl-s.png" border="0"></a><br>
+<ul id="content_block_43" class="list-1">
+<li> Latent(nearest-exact)</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/lWHgqNFOJ6.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/lWHgqNFOJ6-s.png" border="0"></a><br>
+<ul id="content_block_44" class="list-1">
+<li> None</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/G6eZwi3g8O.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/G6eZwi3g8O-s.png" border="0"></a><br>
+<ul id="content_block_45" class="list-1">
+<li> Lanczos</li>
+</ul>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/jD6qs5qN9F.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/jD6qs5qN9F-s.png" border="0"></a><br>
+<ul id="content_block_46" class="list-1">
+<li> Nearest</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/1EEXd7YaWs.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/1EEXd7YaWs-s.png" border="0"></a><br>
+<ul id="content_block_47" class="list-1">
+<li> ESRGAN_4x</li>
+</ul>
+初回使用時にモデルがダウンロードされる。すぐに終わる。<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/jvX3LP4T6Y.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/jvX3LP4T6Y-s.png" border="0"></a><br>
+<ul id="content_block_48" class="list-1">
+<li> LDSR</li>
+</ul>
+初回使用時に1.9GBのモデルがダウンロードされる。だいたい9分かかる。ドイツの鯖遅すぎ!!<br>
+<b>普通に生成→モデル切り替え→DDIMで5倍のstep数で生成→モデル切り替え→拡大後の生成</b>といった過程があるため<b>とても遅い</b><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/HcsDsuHoBa.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/HcsDsuHoBa-s.png" border="0"></a><br>
+<ul id="content_block_49" class="list-1">
+<li> SwinIR 4x</li>
+</ul>
+初回使用時にモデルがダウンロードされる。すぐに終わる。<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/jfj3XKXsfN.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/jfj3XKXsfN-s.png" border="0"></a><br>
+</div>
+</div>
+<br>
+</div></div><div id="content_block_52" class="wiki-section-2"><div class="title-2"><h4 id="content_5_9"> Extras の Upscaler を使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_5_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_52-body" class="wiki-section-body-2">
+<br>
+生成できる解像度の限界を超えて拡大することができる。<br>
+VRAMが少ない等で Highres fix. が使えず、出力された画像を綺麗に拡大したいだけならこれ。<br>
+</div></div><div id="content_block_54" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> サンプラー <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_54-body" class="wiki-section-body-1">
+</div></div><div id="content_block_56" class="wiki-section-2"><div class="title-2"><h4 id="content_6_10"> 1111WebUIのサンプラー <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_6_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_56-body" class="wiki-section-body-2">
+DPM++ 2M<br>
+DPM++ SDE<br>
+DPM++ 2M SDE<br>
+Euler a<br>
+Euler<br>
+LMS<br>
+Heun<br>
+DPM2<br>
+DPM2 a<br>
+DPM++ 2S a<br>
+DPM++ 2M<br>
+DPM++ SDE<br>
+DPM++ 2M SDE<br>
+DPM++ 2M SDE Heun<br>
+DPM++ 3M SDE<br>
+DPM fast<br>
+DPM adaptive<br>
+LMS<br>
+DPM2<br>
+DPM2 a<br>
+DPM++ 2S a<br>
+Restart<br>
+DDIM<br>
+PLMS<br>
+UniPC<br>
+LCM<br>
+DDIM CFG++※1.10.0以降<br>
+<br>
+DPM++系は10stepsでも最低限見れる絵を出してくれるのでシード値探しに便利。<br>
+15stepsあれば破綻もそれなりに減らせるので低スぺ民の味方かも知れない。<br>
+PLMS、LMSやHeunは遅い。<br>
+Restartは収束が速いがEulerやDPM系の約二倍計算が遅い。<br>
+LCMはLCM適用時以外は使えない。<br>
+<br>
+ちなみに、Settings-&gt;Sampler parametersで特定のサンプラーを非表示にできる。<br>
+</div></div><div id="content_block_58" class="wiki-section-2"><div class="title-2"><h4 id="content_6_11"> 1111WebUIのスケジューラー <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_6_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_58-body" class="wiki-section-body-2">
+Automatic(自動)<br>
+Uniform<br>
+Karras<br>
+Exponential<br>
+SGM Uniform<br>
+KL Optimal※1.10.0以降<br>
+Align Your Steps※1.10.0以降<br>
+Simple※1.10.0以降<br>
+Normal※1.10.0以降<br>
+Beta※1.10.0以降<br>
+DDIM<br>
+<br>
+Automaticは各サンプラーのデフォルトのスケジューラが使用される。大体KarrasかExponential<br>
+Uniformは収束が速いがノイズや細部のアーティファクトが目立つ。SGM Uniformはさらにノイズが目立つ。<br>
+Align Your Stepsは収束が速いが低ステップで破綻が目立つ。<br>
+Simpleは収束が早く破綻もノイズも少ない。<br>
+Betaは収束が遅いが高ステップの品質が高いらしい。<br>
+<br>
+<div id="content_block_59">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_59-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p> 古い情報</p></div>
+<div style="display:none" id="content_block_59-inside" class="toggle-display">
+<div id="content_block_60" class="wiki-section-2"><div class="title-2"><h4> EulerとかDDIMとか</h4></div>
+<div id="content_block_60-body" class="wiki-section-body-2">
+<br>
+NovelAI V1とWebUIで同じ結果になる。<br>
+(ので、ハローアスカでも使われている)<br>
+<br>
+末尾にaがついてないものはStepsをあげると収束する。<br>
+</div></div><div id="content_block_62" class="wiki-section-2"><div class="title-2"><h4> Euler a と k_euler_ancestral</h4></div>
+<div id="content_block_62-body" class="wiki-section-body-2">
+<br>
+似ているがちょっと違う。<br>
+<br>
+k_euler_ancestral<br>
+みたいなのを出したかったら、<br>
+「Euler a」を選んで、Settingsの、<br>
+eta (noise multiplier) for ancestral samplers: <br>
+を0.67にする。<br>
+<br>
+ただし、完全一致させたかったらソースコードを改造する必要あり。<del>いまさらNAIを再現する必要はないと思うが・・・</del><br>
+<a href="https://rentry.co/nai_ancestral" class="outlink" rel="nofollow">これだったかも。</a><br>
+</div></div><div id="content_block_64" class="wiki-section-2"><div class="title-2"><h4> Settingsにetaが2つあるけどどっち？</h4></div>
+<div id="content_block_64-body" class="wiki-section-body-2">
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/vxFDkSRIhp.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/vxFDkSRIhp-s.png" border="0"></a><br>
+<br>
+DDIMかPLMSが「for DDIM」で、それ以外が「for ancestral samplers」っぽい。<br>
+</div></div><div id="content_block_66" class="wiki-section-2"><div class="title-2"><h4> CLIP Skipについて(SD1)</h4></div>
+<div id="content_block_66-body" class="wiki-section-body-2">
+※SDXLでは使用しない(2が標準)<br>
+数値を上げると文章の解釈が大雑把になる。イラストは2が良いとされる。<br>
+<br>
+モデルはanimefull-final-prunedで試した。生成したのはとある版権キャラ。<br>
+1にすると奇形が増えた。だがこれはプロンプトに忠実になるせい？精密な呪文であればいいのかも。<br>
+数値を上げていったところ、版権キャラがどんどん似なくなっていった。プロンプトに縛られなくなるのだろうか？代わりにちゃんと見れる絵が増えた印象。<br>
+<br>
+とりあえずNAIデフォの2で基本的にはいいと思う。<br>
+数値を上げる事で奇形率が減るかもしれないし、プロンプトから離れるのも強調すれば回避できるかも？
+</div></div>
+</div>
+</div>
+</div></div><div id="content_block_70" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> プロンプト記法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_70-body" class="wiki-section-body-1">
+</div></div><div id="content_block_72" class="wiki-section-2"><div class="title-2"><h4 id="content_7_12"> NovelAIとAUTOMATIC1111 WebUIの違い <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_7_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_72-body" class="wiki-section-body-2">
+<ul id="content_block_73" class="list-1">
+<li> NovelAIは{}で強調1.05相当、[]は強調0.95相当(弱くなる)、()は単なる文字</li>
+<li> WebUIは()で強調1.1相当、[]は強調0.9相当(弱くなる)、{}は単なる文字(拡張機能で使うことも)</li>
+<li> {{}}は1.1ではなく1.05の2乗(なので変換ツールでは細かく計算して端数を丸めている)</li>
+<li> WebUIで()を文字として使いたい場合は\(hoge\)のようにエスケープする(作品名などに使う)</li>
+<li> WebUIは(hoge:1.2345)で強調の度合いを細かく決められる</li>
+<li> NovelAIは<a href="https://seesaawiki.jp/nai_ch/d/%a5%d7%a5%ed%a5%f3%a5%d7%a5%c8%a5%df%a5%ad%a5%b7%a5%f3%a5%b0">プロンプトミキシング</a>が使える</li>
+<li> WebUIは<a href="https://seesaawiki.jp/nai_ch/d/%a5%d7%a5%ed%a5%f3%a5%d7%a5%c8%a5%a8%a5%c7%a5%a3%a5%c6%a5%a3%a5%f3%a5%b0">プロンプトエディティング</a>が使える</li>
+<li> トークン75以上を超えた時の処理が違う
+<ul class="list-2">
+<li> 75ごとに,で区切ると差異を和らげられるらしい？</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_75" class="wiki-section-3"><div class="title-3"><h5 id="content_7_12_4"> 変換する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_7_12_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_75-body" class="wiki-section-body-3">
+<br>
+{{{masterpiece}}}という書き方はローカルでは強調の意味を持たない。<br>
+<br>
+<a href="https://seesaawiki.jp/nai_ch/d/%a5%d7%a5%ed%a5%f3%a5%d7%a5%c8%ca%d1%b4%b9">プロンプト変換</a>を使うか、<br>
+Extensionsの「novelai-2-local-prompt」を使って()記法に変換するといい。<br>
+</div></div><div id="content_block_77" class="wiki-section-2"><div class="title-2"><h4 id="content_7_13">プロンプト強弱の簡単な調整方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_7_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_77-body" class="wiki-section-body-2">
+プロンプト入力欄内の単語または強弱を調整したい範囲をドラッグして選択する。<br>
+CTRL+↑を押すと(選択範囲:1.0)になる。そのままCTRL+↑を連打すると0.1ずつ数値が増え、CTRL+↓を押すと0.1ずつ減る。<br>
+すでに()がついている場合、()の範囲内どこでもよいのでカーソルを置いてCTRL+↑or↓で数値が調整できる。<br>
+このとき、エラーが出る場合があるが、気にしなくていい。<br>
+</div></div><div id="content_block_79" class="wiki-section-2"><div class="title-2"><h4 id="content_7_14"> NovelAIのプロンプトを真似る(SD1) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_7_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_79-body" class="wiki-section-body-2">
+<br>
+ポジティブプロンプト欄の先頭に「masterpiece, best quality,」をつける(Add Quality Tagsと同じ意味)<br>
+ネガティブプロンプト欄に「lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry」をつける(UC L+Bと同じ意味)<br>
+<br>
+コメントも参考に。<br>
+(たぶんartist nameは結構最初の頃に削除されたか何かで揺れてるんだと思う)
+</div></div><div id="content_block_81" class="wiki-section-2"><div class="title-2"><h4 id="content_7_15"> Prompt matrix  <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_7_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_81-body" class="wiki-section-body-2">
+<blockquote id="content_block_82">
+Prompt matrixは、画像生成の時に入力する文字列(プロンプト)で通常は「,」でキーワードを区切るところを、「|」で区切ることで総組み合わせして画像を生成できる機能です。例えば、通常は「a busy city street in a modern city, illustration ,cinematic lighting(近代都市のせわしない街道、イラスト、映画のような照明)」というプロンプトで画像を生成しますが、Prompt matrixで「a busy city street in a modern city | illustration | cinematic lighting」というように「|」で区切って入力することで、「a busy city street in a modern city」に「illustration」と「cinematic lighting」を組み合わせた画像を生成できます。  <br>　引用：画像生成AI「Stable Diffusion」でプロンプト・呪文やパラメーターを変えるとどういう差が出るか一目でわかる「Prompt matrix」と「X/Y plot」を「Stable Diffusion web UI(AUTOMATIC1111版)」で使う方法まとめ - GIGAZINE - <a href="https://gigazine.net/news/20220909-automatic1111-stable-diffusion-webui-prompt-matrix/" class="outlink">https://gigazine.net/news/20220909-automatic1111-s...</a>
+</blockquote>
+</div></div><div id="content_block_84" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> img2img <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_84-body" class="wiki-section-body-1">
+</div></div><div id="content_block_86" class="wiki-section-2"><div class="title-2"><h4 id="content_8_16"> 各数値の詳細 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_8_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_86-body" class="wiki-section-body-2">
+<ul id="content_block_87" class="list-1">
+<li> Denoise Strength：リファレンスイメージからどの程度離れて画像を生成するか</li>
+</ul>
+</div></div><div id="content_block_89" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> TIPS <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_89-body" class="wiki-section-body-1">
+</div></div><div id="content_block_91" class="wiki-section-2"><div class="title-2"><h4 id="content_9_17"> グラボをリセットする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_9_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_91-body" class="wiki-section-body-2">
+ctrl+windows+shift+b のショートカットでグラフィックドライバをリセットできる<br>
+WEBUIを起動する前におまじないとして行っているニキもいるようである<br>
+</div></div><div id="content_block_93" class="wiki-section-2"><div class="title-2"><h4 id="content_9_18"> UIをリロードするとプロンプトが消えて辛い <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_9_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_93-body" class="wiki-section-body-2">
+→画面更新したりUIリロードしたりしても、Generateボタンに下にある「↙」を押すと直前のプロンプト設定周りが復元できます。<br>
+</div></div><div id="content_block_95" class="wiki-section-2"><div class="title-2"><h4 id="content_9_19"> ダークモードで表示 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_9_19" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_95-body" class="wiki-section-body-2">
+<br>
+<a href="http://127.0.0.1:7860/?__theme=dark" class="outlink">http://127.0.0.1:7860/?__theme=dark</a><br>
+<br>
+↑のように明示しない場合はOSの設定に従う模様。<br>
+</div></div><div id="content_block_97" class="wiki-section-2"><div class="title-2"><h4 id="content_9_20"> 画像生成が終了したら音を鳴らす <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_9_20" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_97-body" class="wiki-section-body-2">
+<br>
+stable-diffusion-webuiフォルダにmp3の音楽ファイルを　notification.mp3　というファイル名で置く<br>
+<br>
+</div></div><div id="content_block_99" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> トラブルシューティング <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_99-body" class="wiki-section-body-1">
+</div></div><div id="content_block_101" class="wiki-section-2"><div class="title-2"><h4 id="content_10_21"> NansException: A tensor with all NaNsなんとかって出る <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_10_21" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_101-body" class="wiki-section-body-2">
+1111の最新版では黒画像の条件を満たすとエラーを発生させるようになっている。<br>
+<br>
+まずはwebui-user.batファイルをメモ帳なので開き、「set COMMANDLINE_ARGS=」の後ろに「--no-half-vae」をつける。代償としてVRAM消費が増加し生成開始に若干もたつくようになる。パラメータを変更していないのにも関わらず突然エラーになりだしたら再起動する。<br>
+エラーで連続生成を止められるのが嫌なら起動引数に--disable-nan-checkを追加するといい。従来の黒画像を出力する仕様に戻る。<br>
+</div></div><div id="content_block_103" class="wiki-section-2"><div class="title-2"><h4 id="content_10_22"> CUDA out of memoryで生成できない <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4987253&amp;part=content_10_22" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_103-body" class="wiki-section-body-2">
+グラフィックボードのメモリが不足していることが原因。以下の方法を試すと改善する。<br>
+・ほかの不要なアプリを終了する。<br>
+・生成画像の解像度を下げる。<br>
+・Windowsの設定→システム→グラフィック→既定のグラフィック設定→「ハードウェア アクセラレータによる GPU スケジューリング」をオフにする。これでVRAM消費が400MBほど減る。※DLSS3フレーム生成が使えなくなる<br>
+・CPU内蔵グラフィックがあるなら、マザーボードの映像出力端子にケーブルをつないで再起動。これでアイドル時のVRAM使用量が10MB未満になる。<br>
+・ブラウザのタブを大量に開くな!!WebUIに関係ないサイトは全部閉じろ!!<br>
+・VRAMの多いGPUに買い替える。
+</div></div>
+</div>

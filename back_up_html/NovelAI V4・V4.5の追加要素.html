@@ -1,0 +1,118 @@
+<div class="user-area">
+NovelAI V4・V4.5での追加要素の概要。<br>
+V3までの内容は<a href="https://seesaawiki.jp/nai_ch/d/NovelAI%20V3%a4%ce%b3%b5%cd%d7">NovelAI V3の概要</a>を参照。<br>
+<a href="https://docs.novelai.net/image/basics.html" class="outlink" rel="nofollow">公式ドキュメントはこちら</a><br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 複数キャラプロンプト</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> ||で指定</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2"> 自然言語対応の強化</a></li>
+<li class="list-1"><a href="#content_3"> アクションタグ</a></li>
+<li class="list-1"><a href="#content_4"> ポーション（旧Vibe Transfer）</a></li>
+<li class="list-1"><a href="#content_5"> ケモナーモデルと統合</a>
+<ul>
+<li class="list-2"><a href="#content_5_2"> anime dataset?</a>
+<ul>
+<li class="list-3"><a href="#content_5_2_1"> 結局、公式なdatasetタグは？</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> プロンプトランダマイザー || ||</a></li>
+<li class="list-1"><a href="#content_7"> 数値で強調指定</a></li>
+<li class="list-1"><a href="#content_8"> 特殊タグの調整</a>
+<ul>
+<li class="list-2"><a href="#content_8_3"> top aesthetic → masterpiece</a></li>
+<li class="list-2"><a href="#content_8_4"> location</a></li>
+<li class="list-2"><a href="#content_8_5"> background dataset</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+ <br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 複数キャラプロンプト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+V4から、キャラごとにプロンプトを設定することができるようになった。<br>
+これまでは、例えば青髪と赤髪の2人の女キャラを出力したい場合、2girls, blue hair, red hair, と指定はできるが、1キャラでツートンカラーになったりと、正確な制御が難しかった。<br>
+V4からはベースプロンプトに2girls, と書き、キャラごとにプロンプトを分けることで、より意図通りに生成しやすくなった。<br>
+キャラの位置を指定する機能もあるが、character 1から順番に左から配置されるバイアスが強い模様。<br>
+</div></div><div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> ||で指定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+キャラプロンプトは1キャラずつ別パネルで指定する必要があるが、簡略記法として |と| で囲む記法が存在する。<br>
+例えば、通常はベースプロンプトに2girls, キャラプロンプト2つに "girl, kirisame marisa, " と "girl, hakurei reimu, " のように指定するが、<br>
+ベースプロンプトに "2girls, |kirisame marisa,| hakurei reimu, " と指定することもできる。<br>
+ただし、キャラごとのネガティブプロンプトが使えなくなるので、あくまで簡略記法。<br>
+</div></div><div id="content_block_5" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 自然言語対応の強化 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_5-body" class="wiki-section-body-1">
+Text EncoderがCLIPからT5に変更されたことで、自然言語プロンプトへの応答力が飛躍的に向上した。<br>
+たとえば「青い机」を出すなど、後述の数値で強調指定と併用することで、「danbooruにはタグはないが、どうしても入れたい要素」を抜けなく指定することができる確率が高まった。<br>
+一方で、nsfwの特殊性癖など、そもそも内部表現として元から持ってないであろう要素は、いくら自然言語指定しても苦しい場合も少なくないので万能ではない。<br>
+</div></div><div id="content_block_7" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> アクションタグ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_7-body" class="wiki-section-body-1">
+source#XXX, target#XXX, mutual#XXX, を使い分けることで、行動の主体、行動の対象、相互の行動（ハグなど）、を指定しやすくなった。<br>
+例えば"grabbing another's breasts"をしたい場合、"source#grabbing another's breasts"が揉む側、"target#grabbing another's breasts"が揉まれる側となりやすい。<br>
+これにより受け攻めの固定がやりやすくなった（100%ではないのであくまでなりやすいだけ）<br>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> ポーション（旧Vibe Transfer） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+V3まではVibe Transferと呼ばれていた、参照画像を渡す機能がポーションと名前変更された。<br>
+新しい画像を渡すとき、画像の情報を中間表現に変換するために1枚につき2anlas消費する。<br>
+このanlas消費は初回のみだが、パラメータを変更した場合は再変換のため再度anlasが必要になる。<br>
+また、変換したポーションはダウンロードして保存・共有ができる。<br>
+</div></div><div id="content_block_11" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> ケモナーモデルと統合 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_11-body" class="wiki-section-body-1">
+V4 Furryどこいった？ となるところだが、V4からdanbooruとe621がまとめて学習されるようになった模様。<br>
+e621スタイルに寄せたい場合、"fur dataset"をプロンプトの最初に入れることで、e621寄りになる。<br>
+（のちのアプデで、プロンプト欄の左の🌸(Anime)マークをクリックすると🐾(Furry)マークになり、上述と全く同じ効果が得られるようになったので、いまfur datasetを文字で指定しなくてもいい）<br>
+</div></div><div id="content_block_13" class="wiki-section-2"><div class="title-2"><h4 id="content_5_2"> anime dataset? <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_5_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_13-body" class="wiki-section-body-2">
+このタグの類推から、 "anime dataset"とプロンプトを入れれば、アニメ向けの品質向上に使えるのではないかと試みた動きがあったが、公式にそのようなタグの存在は確認されていない。<a href="#footer-footnote1" name="footnote1" title='良くなったことを報告するユーザーもいるが、効果を感じないユーザーもいる。x/y plotのような具体的な比較対照は行われておらず、トークンの一部である"anime"が反応した結果か (もしそうなら"anime coloring"のほうがタグとして適切) 、他のプロンプトなど特定の状況で偶然好みに合うだけだったという以外に理由付けは与えられていない'>*1</a><br>
+同様に、 "curated dataset" "nai diffusion v4 dataset" などのプロンプトを試すユーザーもいるが、どれも公式なタグではなく、プラシーボ以上の効果は証明されていない。<br>
+</div></div><div id="content_block_15" class="wiki-section-3"><div class="title-3"><h5 id="content_5_2_1"> 結局、公式なdatasetタグは？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_5_2_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_15-body" class="wiki-section-body-3">
+V4.5時点でfur datasetとbackground datasetの2種のみ。<br>
+V4のプレビュー時に、テスターの生成画像 <a href="#footer-footnote2" name="footnote2" title="https://blog.novelai.net/release-novelai-anime-dif... の下から4段目、カラフルなインクが背景にある画像">*2</a> に残されてたプロンプトの中に、draw datasetが含まれていたが、これまで公式はこのプロンプトに言及していない。<br>
+本リリースには含まれないプレビュー時のみの機能か、テスターの思いつきの実験あたりか。<br>
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> プロンプトランダマイザー || || <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+NAI版Dynamic Prompts。 "|| ||"(縦棒2本で囲む)ことで使用可能。<br>
+例えば、立っているか座っているかのどちらかをランダムに生成したい場合、 "||standing|sitting||, "と指定することで実現可能。<br>
+メタデータ付きの画像のインポート時には、"Actual Prompt"を選択すると抽選結果のみインポートできる。オフにすると抽選前の元の状態でインポートされる。
+</div></div><div id="content_block_19" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> 数値で強調指定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_19-body" class="wiki-section-body-1">
+NAI版negpip。<br>
+今までは{}（1.05倍）か[]（1.05で割る）の組み合わせしかなかったが、数値を直接指定することができるようになった（併用可）。<br>
+これはマイナスの数値も指定可能で、例えば今まで「目を大きく開ける」という指定はdanbooruタグになかったためできなかったが <a href="#footer-footnote3" name="footnote3" title="half-closed eyesタグはあるが、文字通り半分しか開いてくれない">*3</a> 、 -1::closed eyes::, と指定することで、無指定のまま目が閉じられるケースを回避することが可能になった。<br>
+<br>
+ただし、なんでもかんでも大きい数字にすると画像が崩壊する確率が高まる。<br>
+基本強調は使わず、どうしても達成したい部分だけ強調するのが近道。<br>
+</div></div><div id="content_block_21" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> 特殊タグの調整 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_21-body" class="wiki-section-body-1">
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_8_3"> top aesthetic → masterpiece <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_8_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+本来masterpieceタグは廃止されていたのだが、効果が無いにもかかわらずmasterpieceタグをプロンプトに含めるユーザーが後を絶たないため、<br>
+ユーザー側に寄り添う形で、逆にtop aestheticタグを廃止し、masterpieceタグにその役割を戻すことになった。<br>
+</div></div><div id="content_block_25" class="wiki-section-2"><div class="title-2"><h4 id="content_8_4"> location <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_8_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_25-body" class="wiki-section-body-2">
+「indoorsでもoutdoorsでもいいので、とにかくなんか背景描いて！」というときに使える"location"タグが導入された<br>
+</div></div><div id="content_block_27" class="wiki-section-2"><div class="title-2"><h4 id="content_8_5"> background dataset <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5279726&amp;part=content_8_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_27-body" class="wiki-section-body-2">
+「写真風で、人間の存在しない、風景・動物・物体が主役のイラスト」のためのタグ。
+</div></div>
+<div class="footer-footnote">
+<hr>
+<ul class="list-1">
+<li><a href="#footnote1" name="footer-footnote1">*1 </a> : 良くなったことを報告するユーザーもいるが、効果を感じないユーザーもいる。x/y plotのような具体的な比較対照は行われておらず、トークンの一部である"anime"が反応した結果か (もしそうなら"anime coloring"のほうがタグとして適切) 、他のプロンプトなど特定の状況で偶然好みに合うだけだったという以外に理由付けは与えられていない</li>
+<li><a href="#footnote2" name="footer-footnote2">*2 </a> : <a href="https://blog.novelai.net/release-novelai-anime-diffusion-v4-curated-preview-en-ca4b0b11e671" class="outlink">https://blog.novelai.net/release-novelai-anime-dif...</a> の下から4段目、カラフルなインクが背景にある画像</li>
+<li><a href="#footnote3" name="footer-footnote3">*3 </a> : half-closed eyesタグはあるが、文字通り半分しか開いてくれない</li>
+</ul>
+</div>
+</div>

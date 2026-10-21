@@ -1,0 +1,805 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> 公式情報</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> sd-scripts (kohya-ss)</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3">参考資料・スレ住民による学習ガイド※古い</a>
+<ul>
+<li class="list-2"><a href="#content_3_2"> 記事</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> インストール、初回セットアップ編</a>
+<ul>
+<li class="list-2"><a href="#content_4_3"> sd-scripts (作: kohya-ss)</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> GUI・補助ツール</a>
+<ul>
+<li class="list-2"><a href="#content_5_4"> Kohya_lora_param_gui (スレ住民作)</a></li>
+<li class="list-2"><a href="#content_5_5"> bmaltais版 GUI</a></li>
+<li class="list-2"><a href="#content_5_6"> その他補助スクリプト</a></li>
+<li class="list-2"><a href="#content_5_7"> クラウド</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> SDXLについて</a></li>
+<li class="list-1"><a href="#content_7"> Animaについて</a></li>
+<li class="list-1"><a href="#content_8"> 学習用画像を置くフォルダの配置</a></li>
+<li class="list-1"><a href="#content_9"> Aspect Ratio Bucketing</a></li>
+<li class="list-1"><a href="#content_10"> キャプション・タグを付ける</a>
+<ul>
+<li class="list-2"><a href="#content_10_8"> WD1.4 Taggerで作成</a></li>
+<li class="list-2"><a href="#content_10_9"> Dataset Tag Editorで作成/編集</a>
+<ul>
+<li class="list-3"><a href="#content_10_9_1"> タグ付け</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_10_10"> キャプション・タグの編集</a></li>
+<li class="list-2"><a href="#content_10_11"> キャプションの付け方・考え方の参考サイト</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_11"> 学習用画像の加工</a></li>
+<li class="list-1"><a href="#content_12"> 正則化画像</a>
+<ul>
+<li class="list-2"><a href="#content_12_12"> 正則化画像検証 (クリックして展開)</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_13"> 学習の手順 sd-scripts (直接指定)の場合</a>
+<ul>
+<li class="list-2"><a href="#content_13_13"> 備考</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_14"> オプティマイザー</a></li>
+<li class="list-1"><a href="#content_15">LoRAの種類とLyCORISについて</a>
+<ul>
+<li class="list-2"><a href="#content_15_14">LyCORIS のインストールと使用方法</a></li>
+<li class="list-2"><a href="#content_15_15">LoRAの種類(SD1,SDXL)</a></li>
+<li class="list-2"><a href="#content_15_16">画像生成する時の指定方法や使用extensions(AUTOMATIC1111 webui)</a></li>
+<li class="list-2"><a href="#content_15_17">階層LoRAの指定の方法(AUTOMATIC1111 webui)</a></li>
+<li class="list-2"><a href="#content_15_18">&lt;lora:&gt;と&lt;lyco:&gt;の使い分けについて(AUTOMATIC1111 webui)</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_16"> LoRA層別学習</a></li>
+<li class="list-1"><a href="#content_17"> コピー機LoRA学習法</a></li>
+<li class="list-1"><a href="#content_18"> Loraの使用方法(A1111 WebUI) </a>
+<ul>
+<li class="list-2"><a href="#content_18_19"> 使い方その1 WebUIに拡張機能をインストールして使う</a></li>
+<li class="list-2"><a href="#content_18_20"> 使い方その2 WebUIの本体機能のみで使う</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_19"> LoRAのメタデータの閲覧/編集</a>
+<ul>
+<li class="list-2"><a href="#content_19_21"> メタデータの閲覧(Additionak Networks Extension)</a></li>
+<li class="list-2"><a href="#content_19_22"> メタデータの編集</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_20"> LECO(Low-rank adaptation for Erasing COncepts)</a>
+<ul>
+<li class="list-2"><a href="#content_20_23"> 注意</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_21"> メモ / Tips</a>
+<ul>
+<li class="list-2"><a href="#content_21_24"> 途中から学習を再開したい</a></li>
+<li class="list-2"><a href="#content_21_25"> メモ</a></li>
+<li class="list-2"><a href="#content_21_26"> スペックに関するTips(SD1,Windows)</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_22">注意点(AUTOMATIC1111 webui)</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<b>Lo</b>w-<b>R</b>ank <b>A</b>daptation for Fast Text-to-Image Diffusion Fine-tuning<br>
+ウェイトをn×Rankの小さい行列A,Bの二つに分解してその行列をFine-tuningする。そして差分情報を出力する。<br>
+簡単に言えば「省メモリで高速に学習できて容量も小さくて済む追加学習法」。<b>作成方法はいろいろある。</b><br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/IgjGWbu1Yn.png" border="0" width="400"></a><br>
+他の学習法とどう違うねん？　reddit民によればこんな感じのイメージらしい。<br>
+<a href="https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/" class="outlink">https://www.reddit.com/r/StableDiffusion/comments/...</a><br>
+kohya_ss版sd-scriptsの登場以来、sd-scripts及びそれの派生ツールが人気となっている。<br>
+このページではsd-scripts関連の情報について雑に書いてある。<br>
+<b>ページの更新がほとんどされておらず、一部の情報が古くなっていることに留意。</b><br>
+<span class="fsize" style="font-size:10px;">このページもといローカル部のページのほとんどが更新停止で悲しい🥺</span><br>
+SDXL関連はスレか他所のページを見ましょう。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 公式情報 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> sd-scripts (kohya-ss) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+一番はじめは作者が詳しく書いてくれている公式READMEを見よう！話はそれからだ！<br>
+<ul id="content_block_6" class="list-1">
+<li> <span style="color:#ff0000;">★公式導入ガイド</span>：<a href="https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md" class="outlink">https://github.com/kohya-ss/sd-scripts/blob/main/R...</a></li>
+<li> <span style="color:#ff0000;">★公式LoRAガイド</span>：<a href="https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_network_README-ja.md" class="outlink">https://github.com/kohya-ss/sd-scripts/blob/main/d...</a></li>
+<li> 公式学習データガイド：<a href="https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_README-ja.md" class="outlink">https://github.com/kohya-ss/sd-scripts/blob/main/d...</a></li>
+<li> 公式コマンドライン引数表：<a href="https://github.com/kohya-ss/sd-scripts/blob/main/docs/config_README-ja.md" class="outlink">https://github.com/kohya-ss/sd-scripts/blob/main/d...</a></li>
+<li> 公式DreamBoothガイド：<a href="https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_db_README-ja.md" class="outlink">https://github.com/kohya-ss/sd-scripts/blob/main/d...</a></li>
+<li> 公式Finetuneガイド：<a href="https://github.com/kohya-ss/sd-scripts/blob/main/docs/fine_tune_README_ja.md" class="outlink">https://github.com/kohya-ss/sd-scripts/blob/main/d...</a></li>
+</ul>
+</div></div><div id="content_block_8" class="wiki-section-1"><div class="title-1"><h3 id="content_3"><a class="anchor" id="loraguide" name="loraguide" title="loraguide">参考資料・スレ住民による学習ガイド※古い</a> <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_8-body" class="wiki-section-body-1">
+</div></div><div id="content_block_10" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> 記事 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_10-body" class="wiki-section-body-2">
+<b>これらの記事は基本的にSD1向けです。</b><dl id="content_block_11">
+<dt> LoRA学習用サンプルデータ </dt><dd> <a href="https://note.com/kohya_ss/n/nb20c5187e15a" class="outlink">https://note.com/kohya_ss/n/nb20c5187e15a</a></dd>
+</dl>
+<ul id="content_block_12" class="list-1">
+<li> 作者本人によるサンプル。</li>
+</ul>
+<dl id="content_block_13">
+<dt> LoRA Training Guide </dt><dd> <a href="https://rentry.org/lora_train" class="outlink">https://rentry.org/lora_train</a></dd>
+</dl>
+<ul id="content_block_14" class="list-1">
+<li> 4chan有志によるLoRAトレーニング法ガイド（英語）</li>
+</ul>
+<dl id="content_block_15">
+<dt> いろいろLoRA作成記録 </dt><dd> <a href="https://rentry.co/irir_lora" class="outlink">https://rentry.co/irir_lora</a></dd>
+</dl>
+<ul id="content_block_16" class="list-1">
+<li> 512,768,1024の違い、小物、シチュエーション、背景、画風とかいろいろ</li>
+</ul>
+<dl id="content_block_17">
+<dt> LoRA 学習メモ </dt><dd> <a href="https://rentry.org/i5ynb" class="outlink">https://rentry.org/i5ynb</a></dd>
+</dl>
+<ul id="content_block_18" class="list-1">
+<li> スレ住民によるLain・よしなが先生・野原ひろしLoRA作成者によるLoRAガイド（日本語）<br>更新：2023-03-15｜"--caption_extension=.txt"の引数を追加して明示的に指定しないとタグファイル(.txt)を読みにいかない仕様の注意喚起を追加しました。<br>更新：2023-02-09｜低リソース学習(NIKKE)、低dim学習(ゆるキャン 犬山あおい)などを追加しました。</li>
+</ul>
+<dl id="content_block_19">
+<dt> ソウリンちゃんLoRAの作成記録 </dt><dd> <a href="https://rentry.org/sourin_chan" class="outlink">https://rentry.org/sourin_chan</a></dd>
+</dl>
+<ul id="content_block_20" class="list-1">
+<li> スレ住民によるマルゼン式(ふたば有志のタグ付け手法の1つ)で作成したLoRA作成記録（日本語）</li>
+</ul>
+<dl id="content_block_21">
+<dt> 原神LoRA作成メモ・検証 </dt><dd> <a href="https://rentry.org/genshin_lora" class="outlink">https://rentry.org/genshin_lora</a></dd>
+</dl>
+<ul id="content_block_22" class="list-1">
+<li> スレ住民によるkohya-ss氏制作のSDスクリプト(<a href="https://github.com/kohya-ss/sd-scripts" class="outlink">https://github.com/kohya-ss/sd-scripts</a> )で次のキャラのLoRAを作成した。ポップアップ版使用。（日本語）
+<ul class="list-2">
+<li> 筆者による追記:SD1.5時代の試行錯誤していた頃の情報で古くなっています。参考にしないでください。</li>
+</ul>
+</li>
+</ul>
+<dl id="content_block_23">
+<dt> スレ住民によるキャラクター学習のタグ付け一例（日本語） </dt><dd> <a href="https://rentry.org/dsvqnd" class="outlink">https://rentry.org/dsvqnd</a></dd>
+</dl>
+<dl id="content_block_24">
+<dt> LAZY TRAINING GUIDE </dt><dd> <a href="https://rentry.org/LazyTrainingGuide" class="outlink">https://rentry.org/LazyTrainingGuide</a></dd>
+</dl>
+<ul id="content_block_25" class="list-1">
+<li> loraをいっぱい作ってる海外ニキの打率9割学習ガイド</li>
+</ul>
+<dl id="content_block_26">
+<dt> あかちゃんLoRAノートブック </dt><dd> <a href="https://seesaawiki.jp/nai_ch/d/kohya%5ftrain%5fnetwork%5fsimple">kohya_train_network_simple</a></dd>
+</dl>
+<ul id="content_block_27" class="list-1">
+<li> 全然スレに書き込めないけどけなげに頑張っている</li>
+<li> クラウドGPUを使う場合はリンク先の下の方に Colab Instructions がある</li>
+<li> フォルダ命名方法に気をつけて、自前のファイルは半角スペース一切入れないようにすれば無料Colabでも回せる。頑張れ。</li>
+</ul>
+</div></div><div id="content_block_29" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> インストール、初回セットアップ編 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_29-body" class="wiki-section-body-1">
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_4_3"> sd-scripts (作: kohya-ss) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_4_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+<br>
+純正のsd-scripts。コマンドプロンプトとか黒い画面にコマンドを打って使うやつや<ol id="content_block_32" class="list-1">
+<li> 最新機能を使いたい</li>
+<li> 安定した動作をのぞむ</li>
+</ol>
+こういう場合はこれを最初に試してな<br>
+インストールは下記を参考に<ul id="content_block_33" class="list-1">
+<li> <span style="color:#ff0000;">★公式導入ガイド</span>：<a href="https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md" class="outlink">https://github.com/kohya-ss/sd-scripts/blob/main/R...</a></li>
+</ul>
+</div></div><div id="content_block_35" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> GUI・補助ツール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_35-body" class="wiki-section-body-1">
+純正のsd-scriptsをかんたんに使えるようにしたものやで<br>
+bmaltais版GUIかKohya_lora_param_guiがおすすめ。Kohya_lora_param_guiは日本語で親切設計で使いやすい。<br>
+それ以外のほとんどが更新停止。<br>
+</div></div><div id="content_block_37" class="wiki-section-2"><div class="title-2"><h4 id="content_5_4"> Kohya_lora_param_gui (スレ住民作) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_5_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_37-body" class="wiki-section-body-2">
+<a href="https://github.com/RedRayz/Kohya_lora_param_gui" class="outlink">https://github.com/RedRayz/Kohya_lora_param_gui</a><br>
+<a href="https://github.com/kohya-ss/sd-scripts" class="outlink">https://github.com/kohya-ss/sd-scripts</a> の学習用のパラメータ設定してコマンドラインに渡すGUIです。<ul id="content_block_38" class="list-1">
+<li> .NETベースのGUI。Windows専用。</li>
+<li> accelerate実行時のオプション（引数）「パラメーター設定をGUIで行えるようにした」もの。</li>
+<li> 単体でsd-scriptsのインストール・更新ができるようになった。</li>
+<li> としあきbatやlora_train_command_lineを毎回編集してた人、accelerateの引数を色々メモってた人にオススメかも。GUI上で数値とか編集してそのままaccelerateに渡す感。捗る。</li>
+<li> 最新モデルのAnimaに対応</li>
+</ul>
+</div></div><div id="content_block_40" class="wiki-section-2"><div class="title-2"><h4 id="content_5_5"> bmaltais版 GUI <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_5_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_40-body" class="wiki-section-body-2">
+<a href="https://github.com/bmaltais/kohya_ss" class="outlink">https://github.com/bmaltais/kohya_ss</a><br>
+<b>2025年6月を最後に更新が途絶えており最新の機能は使えないことに注意。</b><br>
+GUI といっても作者の sd-scripts にパラメータを渡すだけや。性能は変わらん。セットアップがちょっとだけ楽。<ul id="content_block_41" class="list-1">
+<li>GradioベースのGUI。</li>
+<li>「Tools」タブにフォルダ配置補助機能がある。</li>
+<li>スクリプト版のパラメータの一部は設定出来ないかも？</li>
+<li>起動は、powershellならactivate.ps1、gui-user.ps1を順番に呼ぶのが早い（自動でブラウザも立ち上がる）</li>
+<li>アップデートは upgrade.ps1 をpowershellで実行</li>
+</ul>
+</div></div><div id="content_block_43" class="wiki-section-2"><div class="title-2"><h4 id="content_5_6"> その他補助スクリプト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_5_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_43-body" class="wiki-section-body-2">
+としあきbatや4chan製のスクリプトがある<br>
+<br>
+アップデートは<br>
+<textarea id="content_block_44" class="PLAIN-BOX">
+cd sd-scripts
+git pull
+.\venv\Scripts\activate
+pip install --use-pep517 --upgrade -r requirements.txt
+</textarea>
+</div></div><div id="content_block_46" class="wiki-section-2"><div class="title-2"><h4 id="content_5_7"> クラウド <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_5_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_46-body" class="wiki-section-body-2">
+<a href="https://seesaawiki.jp/nai_ch/d/kohya_train_network_simple">あかちゃんLoraノートブック</a><br>
+海外ニキのjupyter notebook<br>
+リンクのみ紹介。すでに更新停止(Archived)しており、動くかどうかは不明。<br>
+<a href="https://github.com/Linaqruf/kohya-trainer" class="outlink">https://github.com/Linaqruf/kohya-trainer</a><br>
+</div></div><div id="content_block_48" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> SDXLについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_48-body" class="wiki-section-body-1">
+基礎解像度が1024になった。SD1より安定性が良く、低いRank(Dim)でも良好な結果を得られる。<br>
+VRAM使用量が大幅に増加しており、8GBでTE込みの学習をするには--fp8_baseが必要。<br>
+</div></div><div id="content_block_50" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> Animaについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_50-body" class="wiki-section-body-1">
+SDXLより安定性が高く、ほとんどのデータセットを素直に学習してくれる。<br>
+VRAM使用量がSDXLより少ないので12GBのメモリで快適に学習できる。10GB以下はBlock Swap使用推奨。<br>
+AnimaはSDXL以前のCNNベースのモデルとは違いTransformerベースなので畳み込み層(Conv)の概念はない。<br>
+学習が安定しているのでNetwork Alpha ÷ Network Dimの値は0.5〜1でいい。<br>
+SDXL以前はLoRAを負の強度で適用しても動作したがAnimaでは高確率で壊れる。<br>
+</div></div><div id="content_block_52" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> 学習用画像を置くフォルダの配置 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_52-body" class="wiki-section-body-1">
+<u>sd-scripts で --dataset_config で設定ファイルを渡す場合は異なる</u><br>
+<u><a href="https://github.com/kohya-ss/sd-scripts/blob/main/config_README-ja.md" class="outlink">https://github.com/kohya-ss/sd-scripts/blob/main/c...</a> を読んで</u><ul id="content_block_53" class="list-1">
+<li>作者の解説が詳しい
+<ul class="list-2">
+<li> <a href="https://note.com/kohya_ss/n/nba4eceaa4594" target="_blank" class="outlink" rel="nofollow">https://note.com/kohya_ss/n/nba4eceaa4594</a></li>
+</ul>
+</li>
+</ul>
+<ul id="content_block_54" class="list-1">
+<li>フォルダの配置例:</li>
+</ul>
+<div id="content_block_55">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_55-inside');" class="toggle-link-close"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div id="content_block_55-inside" class="toggle-display">
+※要するに&lt;繰り返し回数&gt;_&lt;インスタンスプロンプト&gt;にリネームした学習画像データのフォルダは直接指定しないでねって話<br>
+例えば↓こういうこと<br>
+❌E:\kohya_ss\TrainDatas\001\img\40_kdy 1girl<br>
+🟢E:\kohya_ss\TrainDatas\001\img<br>
+間違うと画像が見つかりませんと怒られる<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/8v9xToIuUR.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/8v9xToIuUR.png" border="0"></a>
+</div>
+</div>
+<ul id="content_block_57" class="list-1">
+<li>同時に10まで概念を学習できるが、少なくとも1つはフォルダが必要。</li>
+<li>フォルダの名前は &lt;繰り返し回数&gt;_&lt;インスタンスプロンプト&gt;
+<ul class="list-2">
+<li>&lt;繰り返し回数&gt; 繰り返し回数×学習用画像の枚数を1セット(1 epoch)として学習する </li>
+</ul>
+</li>
+</ul>
+※注 学習用の画像が50枚ある場合、繰り返し回数を20 にすると 20 x 50 = 1000 ステップ学習する<ul id="content_block_58" class="list-1">
+<ul class="list-2">
+<li>&lt;インスタンスプロンプト&gt; クラス 呼び出し用のキーワード クラスは<b>英単語にない意味のないワード</b>がよい </li>
+<li> 上記kohya氏のサンプルだと「20_sls frog」　脳死で真似するなら 繰り返し回数_意味のないワード WEBUIでプロンプトとして書きたい単語 で設定しておく</li>
+<li>キャプション ファイルは必須です。そうでない場合、LoRA は概念名をキャプションとして使用してトレーニングを行います。</li>
+<li>キャプションについては以下</li>
+</ul>
+
+</ul>
+</div></div><div id="content_block_60" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> Aspect Ratio Bucketing <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_60-body" class="wiki-section-body-1">
+データセットの画像を元の縦横比をできるだけ維持しつつ、min/max_bukect_resoの範囲内で画素数が学習解像度の二乗に近似する解像度へリサイズするもの<br>
+min/maxは学習解像度の半分、二倍にするといい(4:1の極端な比率に対応する)<br>
+注意として、max bucket resoに学習解像度と同じ値を指定すると以下の画像のように正方形以外の画像が小さくなる<br>
+以下の画像ではSDXL学習なので学習解像度1024pxを指定した。縦横比2:3の画像は画素数が1024^2=1048576に近似する832x1216が望ましいが、704x1024(=720896画素)になってしまった<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/S8JsST7i_q.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/S8JsST7i_q.png" border="0"></a><br>
+</div></div><div id="content_block_62" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> キャプション・タグを付ける <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_62-body" class="wiki-section-body-1">
+<dl id="content_block_63">
+<dt> 作者の詳しい画像付き説明 </dt><dd> <a href="https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_README-ja.md" target="_blank" class="outlink" rel="nofollow">https://github.com/kohya-ss/sd-scripts/blob/main/d...</a></dd>
+</dl>
+<ul id="content_block_64" class="list-1">
+<li> 学習用の素材画像それぞれに内容を説明するテキストファイルを作る。このテキストファイルには画像生成時のプロンプトと同じようにタグを記載する。</li>
+<li> テキストエディターやメモ帳で1つずつ作っても良いのだが、WD1.4 Tagger 等のツールを使えば一気に自動生成できて捗る</li>
+</ul>
+</div></div><div id="content_block_66" class="wiki-section-2"><div class="title-2"><h4 id="content_10_8"> WD1.4 Taggerで作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_10_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_66-body" class="wiki-section-body-2">
+先に学習用画像を連番にリネームしておく (01.png, 02.png, ...など)※任意。見やすくするためで特別な意味はない。<br>
+<div id="content_block_67">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_67-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>画像</p></div>
+<div style="display:none" id="content_block_67-inside" class="toggle-display">
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/kbCJ6oEi6E.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/kbCJ6oEi6E.png" border="0"></a>
+</div>
+</div>
+Web UI に拡張機能 stable-diffusion-webui-wd14-tagger <a href="https://github.com/toriato/stable-diffusion-webui-wd14-tagger" target="_blank" class="outlink" rel="nofollow">https://github.com/toriato/stable-diffusion-webui-...</a>をインストール<br>
+「Tagger」タブの「Batch from directory」<ul id="content_block_69" class="list-1">
+<li>入力ファイル:学習用画像の入っているフォルダ</li>
+<li>Interrogator:wd-14convnext</li>
+<li>アンダースコアの代わりにスペースを使用する:オン</li>
+<li>括弧をエスケープする:オフ
+<ul class="list-2">
+<li> 学習時、オプションで明示しない限り括弧は単なる文字として扱われるのでエスケープの必要なし。エスケープすると学習した単語を使うために冗長な入力が必要になる。例: firefly \\\(honkai: star rail\\\)</li>
+</ul>
+</li>
+</ul>
+<div id="content_block_70">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_70-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>つまりこういうこと</p></div>
+<div style="display:none" id="content_block_70-inside" class="toggle-display">
+WebUIでfirefly (honkai: star rail)と書くと、括弧がプロンプト強調の制御文字として認識されて消えるため、内部ではfirefly honkai: star railになる。<br>
+文字として認識させるためにfirefly \(honkai: star rail\)のように\でエスケープすると、内部ではfirefly (honkai: star rail)と正しいタグになりそのキャラを正しく生成できる。<br>
+しかし、sd-scriptsでは制御文字を使用しないため、firefly \(honkai: star rail\)は変換されずそのまま学習される。<br>
+そのためエスケープしたキャプションで学習したLoRAをWebUIで使うときにfirefly \\\(honkai: star rail\\\)と入力する羽目になる。
+</div>
+</div>
+<br>
+<div id="content_block_72">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_72-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>画像</p></div>
+<div style="display:none" id="content_block_72-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/DGlOwfa65F.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/DGlOwfa65F.png" border="0"></a>
+</div>
+</div>
+Interrogateを押すと学習用画像のフォルダにタグの付いた .txt ファイルが生成される<br>
+<div id="content_block_74">
+<div class="toggle-title"><a id="region_plugin_content_5" onclick="toggleRegion(this,'content_block_74-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>画像</p></div>
+<div style="display:none" id="content_block_74-inside" class="toggle-display">
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/vrFirugtW9.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/vrFirugtW9.png" border="0"></a>
+</div>
+</div>
+</div></div><div id="content_block_77" class="wiki-section-2"><div class="title-2"><h4 id="content_10_9"> Dataset Tag Editorで作成/編集 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_10_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_77-body" class="wiki-section-body-2">
+たぶんとしあきがつくったやつ。サブディレクトリまで読んで一括でタグ付けしたり、慣れればかなり快適にタグ付けできる。<br>
+</div></div><div id="content_block_79" class="wiki-section-3"><div class="title-3"><h5 id="content_10_9_1"> タグ付け <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_10_9_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_79-body" class="wiki-section-body-3">
+<ol id="content_block_80" class="list-1">
+<li> まずフォルダ指定してLoad なんちゃら2つチェックでOverwrite選択してInterrogatorsを好みのやつ選択</li>
+<li> Interrogator Settingsの下の閾値チェックしたら上のLoadで画像読み込みや</li>
+<li> ほんで画像読み込みと同時にタグも内部で生成しとるから終わったら次は右上のタブFile by Selectionでどの画像に適用するか選択や</li>
+<li> とりあえず右のAdd ALL Displayedですべての画像選択して下のApply selection filterで適用して最後に左上のSave all changeですべて適用や</li>
+</ol>
+これでタグテキストが生成される<br>
+空の000ファイルが出てくるのは編集前のテキストファイルのバックアップや<br>
+<br>
+</div></div><div id="content_block_82" class="wiki-section-2"><div class="title-2"><h4 id="content_10_10"> キャプション・タグの編集 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_10_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_82-body" class="wiki-section-body-2">
+<ul id="content_block_83" class="list-1">
+<li> タグは順序に影響を受けるので、一番最初に有効化したいタグを記述する</li>
+<li> WD1.4Tagger等で自動生成したファイルには不要なタグが含まれたり誤認識されたタグが記載されたりするので編集する。</li>
+</ul>
+<dl id="content_block_84">
+<dt> BooruDatasetTagManager </dt><dd> <a href="https://github.com/starik222/BooruDatasetTagManager" class="outlink">https://github.com/starik222/BooruDatasetTagManage...</a></dd>
+<dt> 学習用タグの入力を速く楽にするやつ </dt><dd> →<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%a1%d6%a5%c4%a1%bc%a5%eb%a1%d7">ローカルの「ツール」</a> <a href="https://uploader.cc/s/rdw0k6qd2766czgdwwwjtn2xtmhiay6c1ky0s7dui4o5yaz0pkgfesef18n9nngm.zip" class="outlink">https://uploader.cc/s/rdw0k6qd2766czgdwwwjtn2xtmhi...</a></dd>
+<dt> WebUI用拡張機能 Dataset Tag Editor </dt><dd> <a href="https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor" class="outlink">https://github.com/toshiaki1729/stable-diffusion-w...</a> 日本語READMEに使い方が書いてある</dd>
+</dl>
+等の便利なツールを使えば捗る。必要なタグを追加、不要なタグの削除、順序の入れ替え等の編集をやる<ul id="content_block_85" class="list-1">
+<li> taggerで生成したタグの順序のままでも構わないが、重要なタグだけ各ファイルの先頭の方に記載する。例えばコマンドライン版（lora_train_command_line.py）の場合、</li>
+</ul>
+<pre id="content_block_86" class="prettyprint lang-py">
+        self.shuffle_captions: bool = True  # OPTIONAL, False to ignore ~~
+        self.keep_tokens: Union[int, None] = 3  # OPTIONAL, None to ignore ~~
+</pre>
+上記のように設定すれば先頭から3つのタグは順序固定として残りはタグの適当にシャッフルして学習できる。<ul id="content_block_87" class="list-1">
+<li> Dataset Tag Editorを使った簡単タグ整理法</li>
+</ul>
+　1.WD1.4Taggerなどを使用してタグ付けを実施。<br>
+　2.Dataset Tag EditorでBatch Edit Captionsを選択し、さらにRemoveを選択。<br>
+　3.誤検出で生じる完全に不要なタグを選択し削除する。<br>
+　4.学習タグおよびそれに類するタグを一度削除する。<br>
+　5.RemoveからEdit tagsへ項目を移動、Common Tagsを空欄にしEdit Tagsに学習タグを記載。<br>
+　6.Prepend additional tagsにチェックを入れてApply Changes to filtered imagesを選択。<br>
+　このように作業すればどのファイルも学習タグを先頭に持ってこられている状態であるため、タグに学習内容を関連付けしやすくなる。<br>
+</div></div><div id="content_block_89" class="wiki-section-2"><div class="title-2"><h4 id="content_10_11"> キャプションの付け方・考え方の参考サイト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_10_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_89-body" class="wiki-section-body-2">
+<dl id="content_block_90">
+<dt> <a href="https://rentry.org/lora-tag-faq" class="outlink" rel="nofollow">lora training tagging faq</a> </dt><dd> 英語サイトだがブラウザの翻訳で読もう</dd>
+<dt> <a href="https://rentry.org/dsvqnd" class="outlink" rel="nofollow">キャラクター学習のタグ付け一例</a> </dt><dd> 実例を挙げての解説</dd>
+</dl>
+一言で言えば「呼び出しキーワード」＋「学習から外したいもの」をタグに書く<dl id="content_block_91">
+<dt> <a href="https://rentry.co/burumalorav2" class="outlink" rel="nofollow">LoRAキャプション編集の話</a> </dt><dd> 住民作ブルマ体操服LoRAのタグ付けを解説</dd>
+<dt> <a href="https://rentry.co/no_danbooru_tokens" class="outlink" rel="nofollow">Danbooruタグにない1トークンのワード一覧</a> </dt><dd> 公式ドキュメントで言及されている「tokinizerで1トークンになる3文字以下でレアな単語」を使いたい場合に有用</dd>
+</dl>
+</div></div><div id="content_block_93" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> 学習用画像の加工 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_93-body" class="wiki-section-body-1">
+<ul id="content_block_94" class="list-1">
+<li> 本文で説明している kohya 版のLoRAではトリミングはしなくていい(画像のサイズ別に学習が行われる)</li>
+<li> あまりにも小さい画像(200pxとか)はUpscaylなどで拡大しておくか bucket_no_upscale をオンにする</li>
+<li> 背景の切り抜きは画像の大きさを揃えて下記のツールでやると楽。</li>
+<li> 切り抜く場合の背景色について (折りたたみ)</li>
+</ul>
+<div id="content_block_95">
+<div class="toggle-title"><a id="region_plugin_content_6" onclick="toggleRegion(this,'content_block_95-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_95-inside" class="toggle-display">
+165スレ&gt;&gt;602<br>
+生首学習の背景の比較で今度はで白背景、黒背景、白背景透明色化、黒背景透明色化、白背景と黒背景両方使用、白背景透明色と黒背景透明色化の6パターンで比較してみた<br>
+白背景と黒背景の両方を使うと画像数が2倍になるので繰り返し数を半分にして全ての学習で総ステップ数が同じになるよう調整<br>
+・プロンプトに色タグ付けずに画像生成 (クリックで拡大)<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/P9FYT8JvUy.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/P9FYT8JvUy-s.jpg" border="0"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/Tn0Rmnea4m.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Tn0Rmnea4m-s.jpg" border="0"></a><br>
+・blue jacket, yellow shirt, red skirtと服装に色タグを付けて画像生成 (クリックで拡大)<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/jhjYeHjEuK.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/jhjYeHjEuK-s.jpg" border="0"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/2VbIExKAVQ.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/2VbIExKAVQ-s.jpg" border="0"></a><br>
+背景を透明化しても元の色は学習されるし、結果にあまり差はないから透明化する意味は無さそうに見える<br>
+服、背景ともに学習素材の背景色の影響を受け、淡いとか濃いといった差はあるけど絵の品質自体の差は無さそう
+</div>
+</div>
+<ul id="content_block_97" class="list-1">
+<li> キャラの切り出しだけやったら3Dペイント(Win10なら標準、11では標準からリストラされたけどストアにおるで)のマジック選択でええ感じに切り抜きやすいからそこからgimpなりで微調整。</li>
+<li> 一枚一枚やんのめんどくさい言うんやったらABG_extension言うのが出たんでつこてみたらええんとちゃうかな…？しらんけど</li>
+</ul>
+<dl id="content_block_98">
+<dt> ABG_extension </dt><dd> <a href="https://github.com/KutsuyaYuki/ABG_extension" class="outlink">https://github.com/KutsuyaYuki/ABG_extension</a></dd>
+</dl>
+WebUI公式extension。背景を自動で除去します。アニメ画像用に微調整されたonnxモデルを使用。GPUで動作します。<br>
+<dl id="content_block_99">
+<dt> katanuki </dt><dd> <a href="https://github.com/aka7774/sd_katanuki" class="outlink">https://github.com/aka7774/sd_katanuki</a></dd>
+</dl>
+WebUI用extension。anime-segmentation を 1111 で使えるようにしたやつ。画像の背景を透過したり白背景にしたりマスク画像を出力する<dl id="content_block_100">
+<dt> stable-diffusion-webui-rembg </dt><dd> <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a></dd>
+</dl>
+WebUI用extension。<a href="https://github.com/danielgatis/rembg" target="_blank" class="outlink" rel="nofollow">rembg</a> を 1111 で使えるようにしたやつ。動かんときはvenv消してみる。<br>
+u2net_human_seg あたりがちょうど良さげ<dl id="content_block_101">
+<dt> 切り抜きノイズ除去ツール </dt><dd> <a href="https://12.gigafile.nu/0629-bc2ae51e82ab361567d60e0af3df9ef49" class="outlink">https://12.gigafile.nu/0629-bc2ae51e82ab361567d60e...</a></dd>
+</dl>
+174スレ&gt;&gt;294 切り抜きで残った半透明のノイズを削除したり白背景にしたりするツールを作ったで<br>
+<div id="content_block_102">
+<div class="toggle-title"><a id="region_plugin_content_7" onclick="toggleRegion(this,'content_block_102-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_102-inside" class="toggle-display">
+機能は羅列するとこんな感じや<br>
+(1)rembgやkatanukiで出力したマスク画像で画像を切り抜く<br>
+(2)切り抜き済み画像の背景を白・黒・指定色に変更して出力<br>
+ここからはノイズ消し機能<br>
+(3)半透明を不透明にすることで切り抜き残しやノイズを可視化<br>
+(4)(3)の半透明を薄い色から順番に削除した画像を出力することでノイズが消える設定を見つける<br>
+(5)(4)の画像の設定を使うことでノイズを削除したうえで背景を白などに変更して出力<br>
+(6)(5)のままだと半透明を削除したことで色の境目がはっきりしすぎてしまうので色の濃さに補正をかける<br>
+例 アルファ値(透明度)が10以下を削除すると0の隣に11が来てしまうため、11を6くらいの色の濃さとする補正をかける、これが50%での補正で0～100％に変更可能
+</div>
+</div>
+<dl id="content_block_104">
+<dt> Lama-Cleaner </dt><dd> <a href="https://github.com/Sanster/lama-cleaner" class="outlink">https://github.com/Sanster/lama-cleaner</a></dd>
+</dl>
+AIで不純物とかを消してでっち上げるやつ。割と重い。windows用インストーラーあり。<br>
+WebUI用extensionもある <a href="https://seesaawiki.jp/nai_ch/d/Extensions%5fURL#content_3_15">Extensions_URL</a>
+</div></div><div id="content_block_106" class="wiki-section-1"><div class="title-1"><h3 id="content_12"> 正則化画像 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_12" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_106-body" class="wiki-section-body-1">
+意図的にバイアスをかけることが主目的であることを考えると不要。なお、透明正則化の効果は無い。<ul id="content_block_107" class="list-1">
+<li> ChatGPTたん曰く「過学習を抑えるためのもの」</li>
+<li> キャプションつけたらそのプロンプトで学習させるモデルを使って(適当なネガティブプロンプトをつけて)作成すればいい・・・のだが詳しくはわからないので誰か書いてクレメンス</li>
+<li> 「鳥獣戯画のカエルちゃん」を覚える代わりに普通のカエルを忘れて書けなくなるのを防ぐために学習時に普通のカエルの画像を渡しておく感じ？</li>
+<li> 他所のノートブックを利用しているので確かな事は言えないが、正則化画像を同じような画像で学習させすぎると正則化画像につけたクラストークンで正則化画像の内容を生成するようになる。単に「学習画像と正則画像を二つとも学習する」という挙動のように思われる。</li>
+</ul>
+</div></div><div id="content_block_109" class="wiki-section-2"><div class="title-2"><h4 id="content_12_12"> 正則化画像検証 (クリックして展開) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_12_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_109-body" class="wiki-section-body-2">
+<div id="content_block_110">
+<div class="toggle-title"><a id="region_plugin_content_8" onclick="toggleRegion(this,'content_block_110-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_110-inside" class="toggle-display">
+<br>
+<div id="content_block_111" class="wiki-section-3"><div class="title-3"><h5> キャプションつけて正則化画像指定以外完全同条件のLoCon使った比較</h5></div>
+<div id="content_block_111-body" class="wiki-section-body-3">
+165スレ&gt;&gt;529〜より要約<br>
+<ul id="content_block_112" class="list-1">
+<li>536</li>
+</ul>
+Dim/NW=128/64(LoCon:32/16) 元画像38枚*20回 10epoch Adafactor<br>
+列の左から5枚は正則化画像として「girl」100枚、それより右は正則化画像なしで回しとる。<br>
+で、エポックごとにWeight3段階に変えて「girl , solo, 1girl, sky, cloud, beach, upper body」、NPに「monochrome」だけ指定した結果がこうや<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/WhSkmVVrZZ.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/WhSkmVVrZZ-s.jpg" border="0"></a><br>
+正則化画像なしのほうは元キャラの「オレンジの帽子」とかの影響を初手から受け取るのが見える。<br>
+一方で当然やが正則化画像使っとるとかなり後半まで影響は低減されとる<ul id="content_block_113" class="list-1">
+<li>537</li>
+</ul>
+同じようにgirlをトリガーワードに変えるとこうなる。<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/om0uYc10Y6.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/om0uYc10Y6-s.jpg" border="0"></a><br>
+正則化画像ないほうは形になるまでは早いんやが、キャラの上鎧部分、宝玉の表現とかが案外甘くてワイの場合ガビとの戦いになるんや<br>
+多少妥協するなら000006あたりで形になっとるから正則化画像なしは早く結果に繋がるのが利点なんやないか？<br>
+つうわけで正則化画像が問答無用でいらんっちゅうわけでもないんやないかなーと個人的には思うで<br>
+(編注:正則化画像なしだと学習に必要なステップ数は約半分になります。&gt;&gt;620 正確に言うと「正則化を入れてると、エポック毎のステップ数が２倍になる」んや)<ul id="content_block_114" class="list-1">
+<li>545</li>
+</ul>
+ゼノギアスのマルーを教師画像として使う時の話<blockquote id="content_block_115">
+&gt;536は「marouer」をトリガーワードとして設定して学習
+&gt;537は「girl」をトリガーワードに(つまり既存のgirl概念に関与する形で)学習
+</blockquote>
+またタグ付け学習で教師画像のキャプションに服装などを残す(つまり学習から除外する)条件<br>
+正則化(クラス付与)ありの場合となしの場合を比較すると<br>
+教師画像の情報を「marouer」に学習させるステップにおいて、<br>
+前者は人物の特徴(顔つき、画風、髪型などgirlが内包する概念)を優先して学習し、付帯的な要素(服装、帽子など)の影響を受けにくいのに対し、<br>
+後者は早期から「除外したいはずの」付帯的な要素の影響を受けてしまっている<ul id="content_block_116" class="list-1">
+<li>558</li>
+</ul>
+537は「girl」をトリガーワードに変えているので、教師画像の概念(髪型、顔つき、服装などすべて)が「girl」に干渉する場合を考える<br>
+正則化画像ありとなしの場合を比較すると、後者の方が「教師画像らしさ」を学習する速度が速い(これは正則化画像の「girl」概念の影響を受けないから？)<br>
+しかし、完成速度は比較的遅いが正則化画像ありの方が鎧などのディティールは正確に反映される傾向にある<br>
+正則化画像なしの学習でもある程度の妥協点(たとえば&gt;&gt;537でいう000006列)は見つかるので、速度を重視するなら正則化画像を使わないという選択肢もある<br>
+</div></div>
+</div>
+</div>
+</div></div><div id="content_block_120" class="wiki-section-1"><div class="title-1"><h3 id="content_13"> 学習の手順 sd-scripts (直接指定)の場合 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_13" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_120-body" class="wiki-section-body-1">
+以下は一例(OptimizerにAdamW8bitを使った場合の例)<br>
+venvをactivate して<br>
+<pre id="content_block_121" class="BOX">
+.\venv\Scripts\activate
+</pre>
+accelerate launch の行を入力して実行<br>
+※長いので改行しているが、<b><span style="color:#ff0000;">改行を取って全てを1行で書く</span></b>事！<br>
+もしくは行末に ^ 記号を付けると ^直後の改行が無視され、複数行に分けたまま入力できる<br>
+<pre id="content_block_122" class="BOX">
+accelerate launch --num_cpu_threads_per_process 1 train_network.py 
+ --pretrained_model_name_or_path=D:\stable-diffusion-webui\models\Stable-diffusion\model.safetensors 
+ --train_data_dir=D:\sd-scripts\training 
+ --output_dir=D:\sd-scripts\outputs 
+ --reg_data_dir=D:\sd-scripts\seisoku 
+ --resolution=512,512 
+ --save_model_as=safetensors 
+ --clip_skip=2 --seed=42 
+ --color_aug 
+ --min_bucket_reso=320 
+ --max_bucket_reso=1024 
+ --lr_scheduler=cosine_with_restarts 
+ --lr_warmup_steps=500 
+ --keep_tokens=1 
+ --shuffle_caption 
+ --enable_bucket 
+ --mixed_precision=fp16 
+ --xformers 
+ --lr_scheduler_num_cycles=4 
+ --caption_extension=.txt 
+ --persistent_data_loader_workers 
+ --bucket_no_upscale 
+ --caption_dropout_rate=0.05 
+ --optimizer_type=AdamW8bit 
+ --learning_rate=1e-4 
+ --network_module=networks.lora 
+ --network_dim=128 
+ --network_alpha=64 
+ --max_train_epochs=10 
+ --save_every_n_epochs=1 
+ --train_batch_size=2 
+</pre>
+<ul id="content_block_123" class="list-1">
+<li>メモ帳などにコピペして</li>
+<li>必要部分を書き換えて</li>
+<li>最後に改行を取って1行にして</li>
+<li>ターミナル(Powershell等)に貼り付けて</li>
+<li>実行</li>
+<li>メモ帳で保存しておけば次回からコピペで使い回せる</li>
+</ul>
+</div></div><div id="content_block_125" class="wiki-section-2"><div class="title-2"><h4 id="content_13_13"> 備考 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_13_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_125-body" class="wiki-section-body-2">
+<ul id="content_block_126" class="list-1">
+<li> .txt拡張子のタグファイルを読ませる</li>
+</ul>
+"--caption_extension=.txt"の引数を追加して明示的に指定しないとタグファイル(.txt)を読みにいかない仕様があるっぽい。wd tagger等でタグ付けした.txt拡張子のタグファイルがを読ませたい場合、必ずaccelerate launch〜のコマンドに次の引数を追加しておこう<br>
+<pre id="content_block_127" class="BOX">
+--caption_extension=.txt
+</pre>
+なお学習したLoRAがタグファイルを読んでいるかは、Aditional network拡張機能をWEBUIにインストールして、Trainning infoのトグルを開いてタグリストの有無で判別できる。<br>
+詳しくは<a href="#howto_check_metadata">LoRAのメタデータの閲覧/編集の欄を参照</a><br>
+<ul id="content_block_128" class="list-1">
+<li> 'Triton'エラー</li>
+</ul>
+学習開始時に次のメッセージが出ても気にしなくていい。なくても問題なし。そもそもTritonはWindowsに対応してない。<blockquote id="content_block_129">
+ A matching Triton is not available, some optimizations will not be enabled. <br> Error caught was: No module named 'Triton'
+</blockquote>
+</div></div><div id="content_block_131" class="wiki-section-1"><div class="title-1"><h3 id="content_14"> オプティマイザー <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_14" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_131-body" class="wiki-section-body-1">
+<br>
+指定方法が空欄のものは名前と同じことを指します。※精度と安定性は主観的<table id="content_block_132"><tbody><tr><th>名前</th><th>指定方法</th><th>精度</th><th>安定性</th><th>計算速度</th><th>収束速度</th><th>メモリ使用量</th><th>使いやすさ</th><th>備考</th></tr><tr><td>AdamW</td><td></td><td>良</td><td>中</td><td>高速</td><td>低速</td><td>普通</td><td>良</td><td></td></tr><tr><td>Adam8bit</td><td></td><td>良</td><td>やや低</td><td>高速</td><td>低速</td><td>少</td><td>良</td><td></td></tr><tr><td>Lion</td><td></td><td>中</td><td>中</td><td>高速</td><td>普通</td><td>普通</td><td>良</td><td></td></tr><tr><td>Lion8bit</td><td></td><td>中</td><td>やや低</td><td>高速</td><td>普通</td><td>少</td><td>良</td><td></td></tr><tr><td>AdaFactor</td><td></td><td>中</td><td>低</td><td>低速</td><td>低速</td><td>少</td><td>低</td><td>完全自動でこの表の中で最も遅い。多分大規模学習向け</td></tr><tr><td>DAdaptLion</td><td></td><td>中</td><td>やや低</td><td>低速</td><td>高速</td><td>普通</td><td>やや低</td><td></td></tr><tr><td>Prodigy</td><td></td><td>優良</td><td>中</td><td>低速</td><td>かなり高速</td><td>普通</td><td>やや低</td><td></td></tr><tr><td>AdamWScheduleFree</td><td></td><td>良</td><td>良</td><td>高速</td><td>高速(高LR)</td><td>普通</td><td>優良</td><td>sd3ブランチ限定、LR Schedulerは不要</td></tr><tr><td>RAdamScheduleFree</td><td></td><td>良</td><td>優良</td><td>高速</td><td>高速(高LR)</td><td>普通</td><td>優良</td><td>sd3ブランチ限定、LR schedulerは不要</td></tr><tr><td>CAME</td><td>pytorch_optimizer.CAME</td><td>優良</td><td>良</td><td>高速</td><td>超高速</td><td>少</td><td>良</td><td>sd3ブランチ限定</td></tr></tbody></table>
+<br>
+</div></div><div id="content_block_134" class="wiki-section-1"><div class="title-1"><h3 id="content_15">LoRAの種類とLyCORISについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_15" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_134-body" class="wiki-section-body-1">
+LyCORISについて<br>
+<a href="https://github.com/KohakuBlueleaf/LyCORIS" class="outlink">https://github.com/KohakuBlueleaf/LyCORIS</a><br>
+LoRAの新しい学習手法をまとめたリポジトリ。通常のLoRAより性能が良いものがある。一部のアルゴリズムの計算速度(it/s)は遅い。<br>
+もともとLoConのみだったが、のちに新しいアルゴリズムも追加されLyCORISに統合された。<br>
+</div></div><div id="content_block_136" class="wiki-section-2"><div class="title-2"><h4 id="content_15_14">LyCORIS のインストールと使用方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_15_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_136-body" class="wiki-section-body-2">
+sd-scriptsのvenvで<br>
+<pre id="content_block_137" class="BOX">
+pip install lycoris_lora
+</pre>
+でインストールすることで使用可能。<br>
+学習時に使用するにはnetwork_moduleに lycoris.kohya を指定する。<br>
+<pre id="content_block_138" class="BOX">
+python3 sd-scripts/train_network.py 
+  --network_module lycoris.kohya 
+  --network_dim ○○ --network_alpha ○○
+  --network_args "conv_dim=○○" "conv_alpha=○○" "dropout=○○" "algo=lora"
+</pre>
+注：1行で入力する事<br>
+デフォルトで畳み込み層(Conv)を学習するが、それが不要ならconv_dimに0を指定する。<br>
+<br>
+○○は数値を入力<br>
+指定の例<br>
+<pre id="content_block_139" class="BOX">
+--network_module lycoris.kohya 
+--network_dim 64 --network_alpha 32
+--network_args "conv_dim=64" "conv_alpha=32" "dropout=0.05" "algo=lora"
+</pre>
+<br>
+標準のExtra Networksおよびkohya-ss氏作成の<a href="https://github.com/kohya-ss/sd-webui-additional-networks" target="_blank" class="outlink" rel="nofollow">sd-webui-addtional-networks</a>で使用できる。<br>
+</div></div><div id="content_block_141" class="wiki-section-2"><div class="title-2"><h4 id="content_15_15">LoRAの種類(SD1,SDXL) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_15_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_141-body" class="wiki-section-body-2">
+LoRAはその種類によって、次のように分けられる<br>
+<table id="content_block_142"><tbody><tr><td>NO</td><td>LoRAの種類</td><td>LoRAの名称</td><td>使用ネットワークモジュール<br>(network_module)</td><td>使用パラメータ<br>(network_args)</td><td>モデルマージ</td><td>備考</td></tr><tr><td>��</td><td>LoRA</td><td>LierLa/リエラ<br>(kohya版LoRA)</td><td>networks.lora</td><td>(なし)</td><td>可<br>kohya版マージスクリプト使用</td><td>狭義の意味でのLoRAでこれが大元</td></tr><tr><td>��</td><td rowspan="3">LoCon</td><td>旧版LoCon</td><td>locon.locon_kohya</td><td>network_args 'conv_dim=XXX' 'conv_alpha=XXX'</td><td>可<br>LyCORIS版マージスクリプト使用</td><td>LierLaを拡張した元祖LoCon<br>LyCORISになる前にリリースされた物</td></tr><tr><td>��</td><td>C3Lier/セリア<br>(kohya版LoCon)</td><td>networks.lora</td><td>network_args 'conv_dim=XXX' 'conv_alpha=XXX'</td><td>可<br>kohya版マージスクリプト使用</td><td>kohya版LoCon</td></tr><tr><td>��</td><td>LyCORIS版LoCon</td><td>lycoris.kohya</td><td>network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=lora' 又は<br>network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=locon'</td><td>可<br>LyCORIS版マージスクリプト使用<br>'disable_conv_cp=True' で作成したものはマージ不可</td><td>LyCORIS版LoCon</td></tr><tr><td>��</td><td rowspan="4">その他LyCORIS</td><td>LoHa</td><td>lycoris.kohya</td><td>network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=loha'</td><td>可<br>LyCORIS版マージスクリプト使用</td><td>容量を小さく出来る</td></tr><tr><td>��</td><td>(IA)^3</td><td>lycoris.kohya</td><td>network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=ia3'</td><td>可<br>LyCORIS版マージスクリプト使用</td><td></td></tr><tr><td>��</td><td>LoKR</td><td>lycoris.kohya</td><td>network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=lokr'</td><td>可<br>LyCORIS版マージスクリプト使用</td><td></td></tr><tr><td>��</td><td>DyLoRA</td><td>lycoris.kohya</td><td>network_args 'conv_dim=XXX' 'conv_alpha=XXX' 'algo=dylora'</td><td></td><td></td></tr></tbody></table>
+</div></div><div id="content_block_144" class="wiki-section-2"><div class="title-2"><h4 id="content_15_16">画像生成する時の指定方法や使用extensions(AUTOMATIC1111 webui) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_15_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_144-body" class="wiki-section-body-2">
+<table id="content_block_145"><tbody><tr><td>🎴指定(プロンプト指定)</td><td>必要extensions</td><td>対応LoRA</td><td>TEnc/UNet等の個別パラメータ指定</td><td>階層LoRA</td><td>標準のファイル設定フォルダ<br>(変更は可能)</td><td>備考</td></tr><tr><td>&lt;lora:&gt;</td><td>(無し)</td><td>LoRA(��)<br>LoCon(��,��,��)<br>LyCORIS(��,��,��,��)</td><td>不可(一括の強度指定のみ)</td><td>可</td><td>models\LoRA</td><td>1111標準機能を使用<br>v1.5.0以降でLyCORISにも対応</td></tr><tr><td>プロンプト指定なし</td><td><a href="https://github.com/kohya-ss/sd-webui-additional-networks" class="outlink" rel="nofollow">Additional Networks</a></td><td>LoRA(��)<br>LoCon(��,��,��)</td><td>可</td><td>不可</td><td>extensions\sd-webui-additional-networks\models\lora</td><td>プロンプト入力ではなく拡張タブで指定</td></tr></tbody></table>
+</div></div><div id="content_block_147" class="wiki-section-2"><div class="title-2"><h4 id="content_15_17">階層LoRAの指定の方法(AUTOMATIC1111 webui) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_15_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_147-body" class="wiki-section-body-2">
+v1.5.0以降では指定の仕方が変わっているので注意<br>
+LoRAの場合でも <b>lbw=</b> を指定するようになった<table id="content_block_148"><tbody><tr><td>種類</td><td>指定例(IN02を指定する場合)</td><td>解説</td></tr><tr><td>&lt;lora:&gt;</td><td>&lt;lora:"lora name":1:1:lbw=IN02&gt;</td><td>"lora name"の後に　TEnc:UNet の強度を指定してから　lbw=　で階層指定</td></tr></tbody></table>
+</div></div><div id="content_block_150" class="wiki-section-2"><div class="title-2"><h4 id="content_15_18">&lt;lora:&gt;と&lt;lyco:&gt;の使い分けについて(AUTOMATIC1111 webui) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_15_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_150-body" class="wiki-section-body-2">
+v1.5.0以降では、lycorisプラグインが不要になり、1111の内蔵のLoRAで生成が出来る用になった。<br>
+その為 a1111-sd-webui-lycoris を導入する必要はなく、&lt;lyco:&gt;を使う必要も無くなった
+</div></div><div id="content_block_152" class="wiki-section-1"><div class="title-1"><h3 id="content_16"> LoRA層別学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_16" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_152-body" class="wiki-section-body-1">
+U-Netの階層別に学習率やDim/Alphaを指定できるようになった。<br>
+特定の層のLRを下げたり削除することで画風への影響を減らしたりできる。<br>
+</div></div><div id="content_block_154" class="wiki-section-1"><div class="title-1"><h3 id="content_17"> コピー機LoRA学習法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_17" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_154-body" class="wiki-section-body-1">
+過学習させたLoRAをあれこれすることで、目を大きくしたり、アウトラインを太くしたりと非常に細かい部分のみを変更できるLoRAが作成できる手法。<br>
+正確な名称はない。複雑な工程があるため長い間謎に包まれていたが読解してくれたニキがいたので掲載↓<br>
+<br>
+649: 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった2023/05/04(木) <a href="https://fate.5ch.net/test/read.cgi/liveuranus/1683047281/649" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1683...</a><blockquote id="content_block_155">
+&gt;318
+</blockquote>
+flat式のLora作成工程ってこんな感じであってる？<br>
+1：元モデルAで出力画像Bを出す<br>
+2：元モデルAに出力画像Bを1枚だけ過学習させて過学習LoraCを作る<br>
+3：元モデルAに過学習LoraCをマージしてコピー機モデルDを作る(プロンプト未入力だと出力画像Bしか生成されないモデル)<br>
+4：出力画像Bを加工して加工画像Eを作る(この加工部分が完成品LoraHに反映される)<br>
+5：コピー機モデルDに加工画像Eを学習させて加工LoraFを作る<br>
+6：2から5の工程を別の出力画像Bで行い加工LoraFを複数作る<br>
+7：元モデルAに複数の加工LoraFをマージさせて加工モデルGを作る(flatでは彩度明度上げる用のLoraも配合を調整してマージ)<br>
+8：元モデルAと加工モデルGでモデル差分からLora作成して完成品LoraHができる(dimの調整はここで行う)<br>
+<br>
+▼Tips<br>
+1：元モデルAで出力画像Bを出す(加工画像Eとの差分がはっきりするように加工するとよい、レイヤー分けすれば加工画像Eも作りやすくなる)<br>
+<br>
+▼加工画像サンプル<br>
+フラット化LoRAの場合。<br>
+←加工前｜加工後→<br>
+出典：<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1683047281/318" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1683...</a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/ZhpBGOiu9Y.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ZhpBGOiu9Y.png" border="0" width="700"></a><br>
+<br>
+その他にどのようなLoRAが作れるかは <a href="https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main" class="outlink">https://huggingface.co/2vXpSwA7/iroiro-lora/tree/m...</a> をみると良い<br>
+<br>
+<br>
+コピー機学習法はこちらも参考になる。<br>
+<a href="https://rentry.co/kopiki_lora" class="outlink">https://rentry.co/kopiki_lora</a><br>
+</div></div><div id="content_block_157" class="wiki-section-1"><div class="title-1"><h3 id="content_18"> Loraの使用方法(A1111 WebUI) <a class="anchor" id="apply_lora" name="apply_lora" title="apply_lora"></a> <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_18" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_157-body" class="wiki-section-body-1">
+<br>
+<b>使い方その1とその2で、配置するフォルダが違うので注意！</b><br>
+</div></div><div id="content_block_159" class="wiki-section-2"><div class="title-2"><h4 id="content_18_19"> 使い方その1 WebUIに拡張機能をインストールして使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_18_19" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_159-body" class="wiki-section-body-2">
+<ul id="content_block_160" class="list-1">
+<li>「拡張機能」タブの「URLからインストール」に <a href="https://github.com/kohya-ss/sd-webui-additional-networks" class="outlink">https://github.com/kohya-ss/sd-webui-additional-ne...</a> を入力してインストール )<br></li>
+</ul>
+stable-diffusion-webui\extensions\sd-webui-additional-networks\models\lora フォルダに 出来上がった .pt や .safetensorsをコピーする<br>
+(Web UI の 「設定」&gt; 「Additional Nerwork」タブでフォルダの場所を追加出来る)<br>
+「txt2img」や「img2img」の画面の左下の方に「Additional Networks ▼」が追加されているので<br>Enable を押してmodelを選びmerge倍率をweightのスライダーで調整する<br>
+<div id="content_block_161">
+<div class="toggle-title"><a id="region_plugin_content_9" onclick="toggleRegion(this,'content_block_161-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>わからんとき用画像</p></div>
+<div style="display:none" id="content_block_161-inside" class="toggle-display">
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/xl2vcs_kBK.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/xl2vcs_kBK.png" border="0"></a>
+</div>
+</div>
+</div></div><div id="content_block_164" class="wiki-section-2"><div class="title-2"><h4 id="content_18_20"> 使い方その2 WebUIの本体機能のみで使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_18_20" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_164-body" class="wiki-section-body-2">
+<ul id="content_block_165" class="list-1">
+<li>stable-diffusion-webui\models\lora に拾った .pt や .safetensorsをコピーする</li>
+</ul>
+「txt2img」や「img2img」の「生成」ボタンの下の花札みたいなマーク(🎴)を押すと<br>
+Texutual Inversion, Hypernetworks, Lora の3つのタブが出るので Lora を選択して<br>
+一覧から選ぶと &lt;lora:ファイル名:倍率&gt;みたいなタグがプロンプトに追加される<br>
+むかーしに作られたloraは動かんことがある<br>
+<div id="content_block_166">
+<div class="toggle-title"><a id="region_plugin_content_10" onclick="toggleRegion(this,'content_block_166-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>わからんとき用画像</p></div>
+<div style="display:none" id="content_block_166-inside" class="toggle-display">
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/Gje_zP3vzL.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Gje_zP3vzL.png" border="0"></a>
+</div>
+</div>
+画像にマウスオーバーして出る(i)をクリックするとloraの作成パラメータや使われたタグが表示される(埋め込んであれば)<br>
+WebUIや拡張機能の更新で調子悪くてもどっちかでは動くはず<br>
+</div></div><div id="content_block_169" class="wiki-section-1"><div class="title-1"><h3 id="content_19"> LoRAのメタデータの閲覧/編集 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_19" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_169-body" class="wiki-section-body-1">
+<a class="anchor" id="howto_check_metadata" name="howto_check_metadata" title="howto_check_metadata"></a><ul id="content_block_170" class="list-1">
+<li>WebUIのExtra Networks &gt; Lora タブで 画像にマウスオーバーして出る(i)をクリックするとloraの作成パラメータや使われたタグが表示される(埋め込んであれば)</li>
+<li><a href="https://github.com/kohya-ss/sd-webui-additional-networks" target="_blank" class="outlink" rel="nofollow">Additional-networks拡張機能</a>をインストールすると増えるタブ(Additional-networks)からメタデータ編集とかトレーニングデータとか見れる</li>
+</ul>
+</div></div><div id="content_block_172" class="wiki-section-2"><div class="title-2"><h4 id="content_19_21"> メタデータの閲覧(Additionak Networks Extension) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_19_21" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_172-body" class="wiki-section-body-2">
+<ol id="content_block_173" class="list-1">
+<li> タブ(Additional-networks)に移動する</li>
+<li> Model path filterに探したいLoRAの名前を入れてフィルタリングしておく</li>
+<li> Model から該当するLoRAを選ぶと情報が読み込まれます</li>
+</ol>
+<br>
+図1：UIのサンプル<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/9qfbpGdMR5.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/9qfbpGdMR5.png" border="0" width="650"></a><br>
+<br>
+図2：トレーニングデータのサンプル。最新のsd-scriptsで学習されたLoRAは、Taggerで付けられたタグとそのタグがどれぐらい含まれているかがグラフで閲覧できるようです。<br>
+インターネッツの奥底で入手したり いつダウンロードしたか忘れた謎のLoRAもこれでタグを確認してプロンプトに入れれば使えるかもしれない。便利。<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/sLdm0Bovhq.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/sLdm0Bovhq.png" border="0" height="650"></a><br>
+</div></div><div id="content_block_175" class="wiki-section-2"><div class="title-2"><h4 id="content_19_22"> メタデータの編集 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_19_22" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_175-body" class="wiki-section-body-2">
+<ol id="content_block_176" class="list-1">
+<li> 編集したいLoRAを読み込んだうえで、まんなかの下のほうにある「Editing Enabled」にチェックを入れる</li>
+<li> メタデータを編集する。<br> とりあえずKeyword欄にトリガープロンプト、Descriptionに雑多な説明文、CoverImageにサムネ用画像を設定しておくと良いかと思う</li>
+<li> 「Save Metadata」でLoRAが保存されます。ちなみに編集前のものは「○○.safetensors.backup」で保存しておいてくれるようです。</li>
+</ol>
+<br>
+なおLoRAはテキストエディタでふつうに開くことができ、トレーニングの設定等(network_dim":"16"とか) も一応確認することができます。<br>
+ただ仕様見る限りDescription等を直で編集するのはむずかしそうなので、GUIから設定するのが無難っぽいです。<br>
+</div></div><div id="content_block_178" class="wiki-section-1"><div class="title-1"><h3 id="content_20"> LECO(Low-rank adaptation for Erasing COncepts) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_20" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_178-body" class="wiki-section-body-1">
+<a href="https://github.com/p1atdev/LECO" class="outlink">https://github.com/p1atdev/LECO</a><br>
+<br>
+プロンプトから特定の概念を消したり強くしたりできる。<br>
+例えば、mikoが原神のyae mikoに汚染されているのを取り除くといったことができる。<br>
+</div></div><div id="content_block_180" class="wiki-section-2"><div class="title-2"><h4 id="content_20_23"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_20_23" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_180-body" class="wiki-section-body-2">
+学習時の精度のbfloat16はNVIDIAのAmpere世代(RTX30)以降のGPUのみ使用可能。それ以外のGPUではfloat32推奨。<br>
+</div></div><div id="content_block_182" class="wiki-section-1"><div class="title-1"><h3 id="content_21"> メモ / Tips <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_21" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_182-body" class="wiki-section-body-1">
+</div></div><div id="content_block_184" class="wiki-section-2"><div class="title-2"><h4 id="content_21_24"> 途中から学習を再開したい <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_21_24" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_184-body" class="wiki-section-body-2">
+<br>
+コマンドに以下の引数とパスを指定すれば学習前に学習済みのLoRAの重みを読み込み、そこから追加で学習できます。<br>
+<pre id="content_block_185" class="BOX">
+--network_weights=
+</pre>
+<br>
+</div></div><div id="content_block_187" class="wiki-section-2"><div class="title-2"><h4 id="content_21_25"> メモ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_21_25" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_187-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_188" class="BOX">
+初めてのLoRA学習素材準備
+枚数10〜20　成功するまでそれでいい
+エポック　もう5でいいや
+ステップ　500以上にするな　成功するまで回転は速く
+サイズ　2048x2048以上とかでなければそのまま放り込め
+キャプション/タグ　編集無しでも何かしら覚えるまず回せ
+正則化→なしでやれ　失敗の原因は多分そこじゃない
+学習元と出力モデルは揃えろ
+</pre>
+</div></div><div id="content_block_190" class="wiki-section-2"><div class="title-2"><h4 id="content_21_26"> スペックに関するTips(SD1,Windows) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_21_26" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_190-body" class="wiki-section-body-2">
+VRAM8GBでは512x512、Batch size2は余裕で動く。<br>
+gradient_checkpointingを有効にすればVRAM8GBで1024x1024もできる。<br>
+瞬間的に物理メモリを20GB以上確保するので16GB以上あったほうが安心。<br>
+仮想メモリはtorchバージョンやmax_data_loader_n_workersの値によるが、20-60GB消費する。<br>
+</div></div><div id="content_block_192" class="wiki-section-1"><div class="title-1"><h3 id="content_22">注意点(AUTOMATIC1111 webui) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5008120&amp;part=content_22" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_192-body" class="wiki-section-body-1">
+<ul id="content_block_193" class="list-1">
+<li> 基本的にLoraは元々「DreamBoothみたいに学習した差分ファイルをモデルにマージするための差分パッチみたいなもんとして使う」事が前提で作られとるから、今の個別適用は元々の設計と違う使い方なんや、なんで色々制限事項がある。
+<ul class="list-2">
+<li> Loraは<b>原則「作ったモデルと同じ系統(SD-v1.x系 or SD-v2.x)」でしか適用できへん</b>で。要するにAnyとかで作ったLoraはWD1.4以降とかには使われへんし、その逆もしかりや。
+<ul class="list-3">
+<li> よく似た使い方するHyperNetworkは系統またいでも一応反映はされとるみたいやで？しらんけど。</li>
+<li> Extra Netrowksで間違えてSD1.x用のLoRAをSD2.xで使うとWebUIを再起動するまでエラーで二度と使えなくなるから注意やで</li>
+</ul>
+</li>
+<li> また、Loraを複数1倍で重ねて使うと絵が崩壊しやすくなる。適用したい階層が違う場合、階層適用出来るエクステンションとかでずらしたらええんとちゃうかな？しらんけど。</li>
+<li> 先にも書いた通り基本的に差分パッチみたいなもんやからモデルごとに最適な倍率はちゃうかったりするで。あっちのモデルでは1倍でちょうどよかったんがこっちのモデルでは絵が崩壊するとかも普通にあるで。倍率は適度に変えや。</li>
+<li> 基本的に配布されとるんはkohya氏による拡張版Loraやけど元々の実装版のLoraもDreamBoothエクステンションとかで作れたりするから作った際にはごっちゃにせんようにな？
+<ul class="list-3">
+<li>拡張機能の方はkohya氏による拡張版Loraのみが対応や。本体機能の方は元々の実装版でも行けるんとちゃうかな？しらんけど。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></div>
+</div>

@@ -1,0 +1,416 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> Animaについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<a href="https://huggingface.co/circlestone-labs/Anima" class="outlink">https://huggingface.co/circlestone-labs/Anima</a><br>
+CircleStone LabsとComfy Orgが開発する、アニメイラストに特化したText-to-ImageのMMDiTモデル。NVIDIAのCosmos-Predict2がベースである。<br>
+<br>
+パラメータ数は2Bと現代のMMDiTモデルの中では軽量な方で、VRAM8GBで快適に動作する(だが計算はSDXLより二倍遅い)。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> SDXLに対するAnimaの強みは？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+<ul id="content_block_4" class="list-1">
+<li> 水平線やフェンスがずれたり曲がったりといった破綻が少ない。</li>
+<li> 色が綺麗で明暗の表現がいい。Noob v-predより良い。</li>
+<li> 細部の描写が良く目などが潰れにくい。</li>
+<li> 自然言語による位置などの具体的な指示が可能。</li>
+<li> メモリ使用量がSDXLより少ない。SDXLは6.9GB必要だがAnimaは5.6GBで済む。
+<ul class="list-2">
+<li> 学習のコストがSDXLと同等かそれ未満で済む</li>
+<li> Block Swapを使えば、8GBのVRAMでもTE込みかつ1024pxで学習できる。速度低下も少ない。※TEの学習は特別な理由が無い限り不要</li>
+</ul>
+</li>
+<li> Fine-Tuning(学習)が容易。学習効率が良い感じ。</li>
+</ul>
+</div></div><div id="content_block_6" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_1"> 拡散モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_2_0_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_6-body" class="wiki-section-body-3">
+SDXLは畳み込みニューラルネットワークがベースのU-Netアーキテクチャだが、これは現在主流のTransformerベースのDiffusion Transformer(DiT)を採用する。<br>
+DiTは水平線や物体の構造の連続性維持が比較的得意で破綻が少ない。<br>
+パラメータ数は2Bと現代のMMDiTモデルの中では軽量な方。SDXLは2.6B。<br>
+</div></div><div id="content_block_8" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_2"> TE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_2_0_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_8-body" class="wiki-section-body-3">
+Text Encoderは、Qwen3-0.6Bの出力をT5XXLにマッピングしており、SDXLのCLIP-L+Gより軽量で高性能。位置や文字などの具体的な情報を解釈できる。<br>
+CLIPよりは確実に良いがLLMとしてはかなり弱い。ちなみにより大型のTEにしても元のTE(T5XXL)が弱いからあまり意味がないとか。<br>
+</div></div><div id="content_block_10" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_3"> VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_2_0_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_10-body" class="wiki-section-body-3">
+16チャネルのQwen Image(Wan Video)のものを使用し、色精度とディティールがとても良い。かさついた質感がない。目がほとんど崩れない。
+</div></div><div id="content_block_12" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_4"> その他 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_2_0_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_12-body" class="wiki-section-body-3">
+メモリ使用量がSDXLより若干少ない。<br>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> 欠点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+<ul id="content_block_15" class="list-1">
+<li> DiTであるが故に計算が遅い。SDXLの約二倍の時間がかかる。
+<ul class="list-2">
+<li> INT8_ConvRot形式のウェイトを使えば精度をほとんど落とさずにSDXLと同等かそれ以上の速度になる。</li>
+</ul>
+</li>
+<li> 対応UIが少ない。対応する一般的なUIはComfuUIとForge Neoの二つのみ。</li>
+<li> 学習解像度を大きく上回る解像度で生成すると出力がモザイク状になる(Cosmos-Predictの仕様)。特に縦長の比率で発生しやすい。</li>
+<li> TEが軽量だが相応に弱く、文字の描写ととても複雑なプロンプトは苦手。
+<ul class="list-2">
+<li> 2026年のMMDiTモデルの中では最弱クラス</li>
+</ul>
+</li>
+<li> SDXLよりはマシだが、背景の品質が低い。Animaのパラメータ数が少ないことと、背景まで書き込む絵師が少ないことが原因。</li>
+<li> 名前があまりにも一般的でweb検索しづらい。AIにAnimaの事を聞くなら、GPT-6などの最新AIにMMDiTのAnimaと言った方がいいかも。</li>
+<li> 英語のみ対応(T5XXLの仕様)</li>
+</ul>
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 対応UI <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+現時点で<a href="https://seesaawiki.jp/nai_ch/d/ComfyUI">ComfyUI</a>と<a href="https://github.com/Haoming02/sd-webui-forge-classic/tree/neo" class="outlink" rel="nofollow">Forge Neo</a>。<br>
+</div></div><div id="content_block_19" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 動作要件 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_19-body" class="wiki-section-body-1">
+空き容量20GB以上のSSD推奨。
+</div></div><div id="content_block_21" class="wiki-section-3"><div class="title-3"><h5 id="content_4_1_5"> 推論 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_4_1_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_21-body" class="wiki-section-body-3">
+16GB以上のRAMと最低6GBのVRAMを搭載するfp16対応GPU。bf16対応の8GB以上のVRAMを搭載したGPUを推奨。
+</div></div><div id="content_block_23" class="wiki-section-3"><div class="title-3"><h5 id="content_4_1_6"> LoRA学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_4_1_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_23-body" class="wiki-section-body-3">
+16GB以上のRAMと最低8GBのVRAMを搭載するfp16対応GPU。bf16対応の10GB以上のVRAMを搭載したGPUを推奨。<br>
+</div></div><div id="content_block_25" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 使用方法(ComfyUI) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_25-body" class="wiki-section-body-1">
+Hugging Faceリポジトリから次のファイルをDLして配置する。<br>
+ComfyUI/models/diffusion_modelsにanima-〇〇-v1.x.safetensors<br>
+〇〇はbase, aethetic, turboのいずれか。baseは基本、aestheticは少し品質が上がったもの、turboは高速な蒸留モデル。<br>
+<br>
+ComfyUI/models/text_encodersにqwen_3_06b_base.safetensors<br>
+ComfyUI/models/vaeにqwen_image_vae.safetensors<br>
+<br>
+ComfyUIのテンプレートにAnimaがあるのでそこから生成を始めるといい。<br>
+</div></div><div id="content_block_27" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 推奨生成パラメータ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_27-body" class="wiki-section-body-1">
+<ul id="content_block_28" class="list-1">
+<li> 解像度: 画素数が1024x1024や832x1216などの104万画素に近似する値</li>
+<li> Steps: 30-50(実際には20ステップで十分)</li>
+<li> Guidance Scale: 4-5</li>
+</ul>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_6_2"> その他 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_6_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+公式には書いていないがこれらが良い感じ。<ul id="content_block_31" class="list-1">
+<li> Sampler: RES Multistepが無難。ER SDE、Gradient Estimation、SA Solver、Eulerでもよい。</li>
+<li> Scheduler: Simpleが無難。NormalやSGM UniformでもOK。Linear Quadraticは収束がやや遅いが安定性が高い。
+<ul class="list-2">
+<li> KarrasとExponentialは非対応(SDXL以前のepsilonモデル専用)。</li>
+</ul>
+</li>
+</ul>
+<br>
+Euler ancestralは絵がぼやける傾向がSDXLより強い。Flow-Matchingモデルではeuler aは不向き。<br>
+<br>
+こちらにサンプルを追加した。⇒ <a href="https://seesaawiki.jp/nai_ch/d/Sampling%a4%cb%a4%c4%a4%a4%a4%c6">Samplingについて</a><br>
+</div></div><div id="content_block_33" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> プロンプト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_33-body" class="wiki-section-body-1">
+プロンプトはDanbooruタグと自然言語(英語)の両方が使える。位置指定や文字描写などの具体的な命令もOK。<br>
+しかし、TEが小型なため正確な位置、順番の指定や文字の描写などの複雑な命令はあまり得意ではない。<br>
+<br>
+1grirl, 〜, outdoors, day...のような単調なプロンプトでは相応に単調な絵になる。ディティールを盛るなら、Danbooruタグと自然言語を組み合わせるのがベスト。<br>
+英文が苦手なら翻訳機で「これは~が~しているイラストです。~と~が背景にあります。このイラストは~な雰囲気です。」のような文章を英語にすればいい。チャットボットに考えてもらうのもいい。<br>
+画像から自然言語プロンプトを生成するなら、検閲解除版のVLM(Qwen 3 VLやGemma 4など)を使うと良い。<br>
+<br>
+タグは次の並びで学習している。これに従う必要はない(だが推奨)。<blockquote id="content_block_34">
+quality/meta/year/safety tags, 1girl/1boy/1other etc, character, series, artist, general tags
+</blockquote>
+<br>
+タグの区切りのコンマとスペースは必ず守ること。コンマだけだと隣接する単語の動作が変化するかタグの効果が低下する。<br>
+<br>
+「1girl, upper body」のようにプロンプトが短すぎると破綻が増加する。<br>
+</div></div><div id="content_block_36" class="wiki-section-2"><div class="title-2"><h4 id="content_7_3"> 特殊タグ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_7_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_36-body" class="wiki-section-body-2">
+品質タグや年代タグなど
+</div></div><div id="content_block_38" class="wiki-section-3"><div class="title-3"><h5 id="content_7_3_7"> 品質タグ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_7_3_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_38-body" class="wiki-section-body-3">
+<ul id="content_block_39" class="list-1">
+<li> 人間によるスコアベース</li>
+</ul>
+<blockquote id="content_block_40">
+masterpiece, best quality, good quality, normal quality, low quality, worst quality
+</blockquote>
+<ul id="content_block_41" class="list-1">
+<li> PonyV7のaesthetic modelベース</li>
+</ul>
+score_1〜score_9。Illustriousでいうaestheticタグに相当する？<br>
+高いスコアほど絵が美しくなるが、画風がSDXLのマージモデルのようなマスピ絵に近づく。
+</div></div><div id="content_block_43" class="wiki-section-3"><div class="title-3"><h5 id="content_7_3_8"> 年代タグ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_7_3_8" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_43-body" class="wiki-section-body-3">
+<blockquote id="content_block_44">
+newest, recent, mid, early, old
+</blockquote>
+またはyear 2020のように西暦で指定する。
+</div></div><div id="content_block_46" class="wiki-section-3"><div class="title-3"><h5 id="content_7_3_9"> レーティングタグ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_7_3_9" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_46-body" class="wiki-section-body-3">
+左から順にDanbooruのgeneral, sensitive, questionable, explicitにあたる。<blockquote id="content_block_47">
+safe, sensitive, nsfw, explicit
+</blockquote>
+</div></div><div id="content_block_49" class="wiki-section-3"><div class="title-3"><h5 id="content_7_3_10"> アーティストタグ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_7_3_10" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_49-body" class="wiki-section-body-3">
+"@big chungus"のように@を名前の頭につける。つけないと効果がかなり弱くなる。<br>
+</div></div><div id="content_block_51" class="wiki-section-2"><div class="title-2"><h4 id="content_7_4"> 強度指定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_7_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_51-body" class="wiki-section-body-2">
+Text EncoderはSD1/SDXLで使用されるCLIPではなくQwen3(0.6B)というLLMだが、機能する(T5にマッピングしているから機能する？)。<br>
+しかし、SDXLほど効果は強くなく、15倍前後まで強くできる。大体70倍を超えると完全に壊れる。<br>
+</div></div><div id="content_block_53" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> Flow Shiftの値 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_53-body" class="wiki-section-body-1">
+ComfyUIのModelSamplingAuraFlowのshiftのこと。<br>
+低いほど高周波成分が強くなってディティールが増えるが不安定になる。高いほど安定するが、絵が平坦になる。<br>
+Animaの初期値は3。解像度に合わせて高くするといいかも。<br>
+例えば1024x1024を1.5倍の1536x1536にアップスケーリングするなら4.5にするとか。<br>
+ステップ数が多いほどこの値の影響が小さくなる。ノイズスケジューラにLinear Quadraticを選択しても影響が小さくなる。<br>
+</div></div><div id="content_block_55" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> ライセンス <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_55-body" class="wiki-section-body-1">
+CircleStoneLabsの独自ライセンス。独自と聞いて身構えるかもしれないが寛容なので安心しよう。<br>
+有料の生成サービスやモデルの販売などモデル自体の商用利用は禁止だが、出力は商用利用ができる。<br>
+モデルの使用は、違法または悪意のある目的を除き自由。<br>
+</div></div><div id="content_block_57" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> 高速化 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_57-body" class="wiki-section-body-1">
+</div></div><div id="content_block_59" class="wiki-section-2"><div class="title-2"><h4 id="content_10_5"> Spectrum <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_10_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_59-body" class="wiki-section-body-2">
+<a href="https://github.com/AdamNizol/ComfyUI-Anima-Enhancer" class="outlink">https://github.com/AdamNizol/ComfyUI-Anima-Enhance...</a><br>
+チェビシェフの多項式を用いて出力を予測して高速化する。劣化が比較的少ない。
+</div></div><div id="content_block_61" class="wiki-section-3"><div class="title-3"><h5 id="content_10_5_11"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_10_5_11" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_61-body" class="wiki-section-body-3">
+出力が常に変化するSDEソルバーでは効果がない。<br>
+途中でコンディショニング(プロンプト)を変えると配列境界外エラーで停止する。<br>
+</div></div><div id="content_block_63" class="wiki-section-2"><div class="title-2"><h4 id="content_10_6"> EasyCache <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_10_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_63-body" class="wiki-section-body-2">
+ComfyUI内蔵の機能。出力をキャッシュして使い回す。
+</div></div><div id="content_block_65" class="wiki-section-3"><div class="title-3"><h5 id="content_10_6_12"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_10_6_12" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_65-body" class="wiki-section-body-3">
+出力が常に変化するSDEソルバーでは効果がない。<br>
+途中でコンディショニング(プロンプト)を変えても効果がなくなる。<br>
+</div></div><div id="content_block_67" class="wiki-section-2"><div class="title-2"><h4 id="content_10_7"> DMD2 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_10_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_67-body" class="wiki-section-body-2">
+<a href="https://civitai.com/models/2466415/" class="outlink">https://civitai.com/models/2466415/</a><br>
+蒸留LoRA。CFG1で使用する。EulerやRES MultistepなどのODEソルバーの使用を強く推奨。<br>
+多様性を著しく低下させるが、わずか4ステップで収束する。
+</div></div><div id="content_block_69" class="wiki-section-3"><div class="title-3"><h5 id="content_10_7_13"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_10_7_13" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_69-body" class="wiki-section-body-3">
+収束しないSDEソルバー(名前にancestralやsdeがつくもの)は非推奨。ただしSDEなのに収束するSA Solverは使える。<br>
+ネガティブプロンプトは使えない(無視される)。<br>
+Anima対応版のNegPiPで代用すること。<br>
+<a href="https://github.com/pamparamm/ComfyUI-ppm" class="outlink">https://github.com/pamparamm/ComfyUI-ppm</a><br>
+<br>
+DMD2の欠点は、画風と構図がほとんど変化しなくなる上フラットな絵になること。<br>
+<br>
+目的地を一つに絞ることで迷わず進めるようにする感じ？<br>
+</div></div><div id="content_block_71" class="wiki-section-2"><div class="title-2"><h4 id="content_10_8"> Comfy Kitchen Attention <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_10_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_71-body" class="wiki-section-body-2">
+ComfyUIオリジナルのAttention最適化。AttentionをINT8で計算することで、INT8対応かつFP8非対応のGPUで少し高速化する。Sage Attentionと同等の速度が出せる。<br>
+FP8対応GPUでもSage Attentionをインストールする手間がなくなるのでおすすめ。<br>
+ModelAttentionBackendノードを使うか、コマンドライン引数に--use-ck-attentionをつけることで有効化する。<br>
+</div></div><div id="content_block_73" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> トラブルシューティング <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_73-body" class="wiki-section-body-1">
+</div></div><div id="content_block_75" class="wiki-section-2"><div class="title-2"><h4 id="content_11_9"> 画風が安定しない <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_11_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_75-body" class="wiki-section-body-2">
+ベースモデルは高品質な画像に加え、低品質な画像も学習しているためブレが大きい。<br>
+画風を安定させるならアーティストタグを使うのが手っ取り早い。<br>
+あるいは画風LoRAを作って適用する。学習は素直で、作ったLoRAを適用すればネガティブ無しでも画風が安定する。<br>
+</div></div><div id="content_block_77" class="wiki-section-2"><div class="title-2"><h4 id="content_11_10"> 背景が単調か汚い <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_11_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_77-body" class="wiki-section-body-2">
+短いプロンプトでは単調になるか、破綻する。<br>
+ベースモデルで多様性が高い上Text Encoderが賢いLLMのため、書いていないものは生成しない傾向が強い。<br>
+Danbooruタグに加えて自然言語(英語)で具体的に指示することをお勧めする。<br>
+</div></div><div id="content_block_79" class="wiki-section-2"><div class="title-2"><h4 id="content_11_11"> 黒帯か枠が出る <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_11_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_79-body" class="wiki-section-body-2">
+レターボックスとは関係がなくても、特定の単語を使うと発生する。<br>
+ネガティブにletterboxed, borderを入れるだけでは抑制は困難。
+</div></div><div id="content_block_81" class="wiki-section-3"><div class="title-3"><h5 id="content_11_11_14"> 緩和策 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_11_11_14" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_81-body" class="wiki-section-body-3">
+ネガティブプロンプトにletterboxed, borderを入れて、ステップ数を26以上にしてノイズスケジューラにLinear Quadraticを使う。<br>
+Linear Quadraticは中盤まで出力を平均化するため帯が消えやすくなる。<br>
+</div></div><div id="content_block_83" class="wiki-section-2"><div class="title-2"><h4 id="content_11_12"> 指が破綻する(融合や数の誤り) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_11_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_83-body" class="wiki-section-body-2">
+手のポーズを指定すると緩和される。指定しないと平均的な手を出しておかしくなるのかも。<br>
+AIは概念を理解できず、単に統計的に生成しているため解決することはおそらくない。あとはパラメータ数の限界かも。<br>
+LoRA含むFine-Tuningでも設定によっては破綻が増加する。<br>
+</div></div><div id="content_block_85" class="wiki-section-2"><div class="title-2"><h4 id="content_11_13"> アップスケーリング(hires.fix)でアーティファクトが出る <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_11_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_85-body" class="wiki-section-body-2">
+ベースモデルのCosmos-Predictの仕様。<br>
+解像度を下げるか、Ultimate SD Upscaleなどでタイル生成をして回避する。<br>
+Anima Base V1.0は約320万画素がアーティファクトが出ない上限。<br>
+</div></div><div id="content_block_87" class="wiki-section-1"><div class="title-1"><h3 id="content_12"> 派生モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_12" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_87-body" class="wiki-section-body-1">
+ここでは公式のものとFull FTしたもののみ掲載する。マージモデルはCivitaiで探そう。<br>
+</div></div><div id="content_block_89" class="wiki-section-3"><div class="title-3"><h5 id="content_12_13_15"> Anima 2.9B <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_12_13_15" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_89-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/Gazingstars123/Anima-2.9B" class="outlink">https://huggingface.co/Gazingstars123/Anima-2.9B</a><br>
+Anima Base v1.0のTransformerレイヤーを増やして(28-&gt;40)、2026年7月までのデータセットでFine-Tuningしたもの。パラメータ数は2.9B。<br>
+2026/08/13時点で開発中でありプレビュー版。<br>
+Text EncoderはAnima Base v1.0と同じ。<br>
+性能が上がったが、データセットの品質が低いのは変わらないため、Anima Baseと同様に出力画像の品質が低い。<br>
+<span style="color:#ff0000;">注意: これは第三者によるFTモデル。Anima V2でなはいし、TEを大型化したものでもない。</span><br>
+</div></div><div id="content_block_91" class="wiki-section-3"><div class="title-3"><h5 id="content_12_13_16"> Anima 3.8B <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_12_13_16" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_91-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/lylogummy/Anima-3.8B" class="outlink">https://huggingface.co/lylogummy/Anima-3.8B</a><br>
+上記の2.9B版をさらに拡張したもの。<br>
+さらに性能が上がったが、データセットの品質が低いのは変わらないため、相変わらず出力画像の品質が低い。<br>
+<span class="fsize" style="font-size:12px;">TEがかなり強い上版権キャラが出せるMOSS-Imageでいいかな… Animaの拡張モデルは重くなったのにBaseとほとんど変わらず中途半端。</span><br>
+</div></div><div id="content_block_93" class="wiki-section-3"><div class="title-3"><h5 id="content_12_13_17"> Anima Turbo <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_12_13_17" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_93-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/circlestone-labs/Anima/blob/main/split_files/diffusion_models/anima-turbo-v1.0.safetensors" class="outlink">https://huggingface.co/circlestone-labs/Anima/blob...</a><br>
+circlestone labs謹製の蒸留モデル。基本はDMD2と同じ。<br>
+こちらは8〜12ステップが推奨されている。<br>
+</div></div><div id="content_block_95" class="wiki-section-3"><div class="title-3"><h5 id="content_12_13_18"> Anima Aesthetic <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_12_13_18" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_95-body" class="wiki-section-body-3">
+<a href="https://huggingface.co/circlestone-labs/Anima/blob/main/split_files/diffusion_models/anima-aesthetic-v1.1.safetensors" class="outlink">https://huggingface.co/circlestone-labs/Anima/blob...</a><br>
+デフォルトの画風の品質を高めるようFTした。でも実際にはBaseと大差ない。<br>
+</div></div><div id="content_block_97" class="wiki-section-3"><div class="title-3"><h5 id="content_12_13_19"> Anima Yume <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_12_13_19" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_97-body" class="wiki-section-body-3">
+<a href="https://civitai.com/models/2385278" class="outlink">https://civitai.com/models/2385278</a><br>
+</div></div><div id="content_block_99" class="wiki-section-3"><div class="title-3"><h5 id="content_12_13_20"> RDBT <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_12_13_20" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_99-body" class="wiki-section-body-3">
+<a href="https://civitai.com/models/2356447" class="outlink">https://civitai.com/models/2356447</a><br>
+FTと蒸留をしたもので収束が速い。<br>
+</div></div><div id="content_block_101" class="wiki-section-1"><div class="title-1"><h3 id="content_13"> Anima開発元のLoRA <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_13" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_101-body" class="wiki-section-body-1">
+</div></div><div id="content_block_103" class="wiki-section-3"><div class="title-3"><h5 id="content_13_13_21"> Anima RL <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_13_13_21" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_103-body" class="wiki-section-body-3">
+<a href="https://civitai.com/models/2583128" class="outlink">https://civitai.com/models/2583128</a><br>
+強化学習で品質を向上させるLoRA。SD1のマージモデルを思わせる画風になる。<br>
+</div></div><div id="content_block_105" class="wiki-section-3"><div class="title-3"><h5 id="content_13_13_22"> Anima Highres/Aesthetic Boost (Preview用) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_13_13_22" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_105-body" class="wiki-section-body-3">
+<a href="https://civitai.com/models/2540444" class="outlink">https://civitai.com/models/2540444</a><br>
+Anima Base v1.0以降では1536pxの学習をしているので基本的に不要。<br>
+Animaの開発元が公開する、Preview版の高解像度のエラーを抑制するLoRA。<br>
+タイル無しのアップスケーリングと純粋な高解像度の生成を可能にする。2048pxの生成にぎりぎり耐える。<br>
+</div></div><div id="content_block_107" class="wiki-section-1"><div class="title-1"><h3 id="content_14"> Anima関連のツール類 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_14" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_107-body" class="wiki-section-body-1">
+</div></div><div id="content_block_109" class="wiki-section-2"><div class="title-2"><h4 id="content_14_14"> Animaのスタイルエクスプローラ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_14_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_109-body" class="wiki-section-body-2">
+<a href="https://thetacursed.github.io/Anima-Style-Explorer/" class="outlink">https://thetacursed.github.io/Anima-Style-Explorer...</a><br>
+約二万人の絵師のスタイルが収録されている。<br>
+</div></div><div id="content_block_111" class="wiki-section-1"><div class="title-1"><h3 id="content_15"> その他 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_15" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_111-body" class="wiki-section-body-1">
+</div></div><div id="content_block_113" class="wiki-section-2"><div class="title-2"><h4 id="content_15_15"> ComfyUIのLoad CLIPのtypeについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_15_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_113-body" class="wiki-section-body-2">
+自動判定で機能していないので初期値でOK。どれを選んでもAnimaになる。<br>
+</div></div><div id="content_block_115" class="wiki-section-2"><div class="title-2"><h4 id="content_15_16"> DanbooruとGelbooruにないものも描ける <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_15_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_115-body" class="wiki-section-body-2">
+Animaは、DanbooruとGelbooru以外も学習しているので指定すればある程度出せる。<br>
+LAION-POP(ye-pop)とDeviantArtの画像も学習している。<br>
+</div></div><div id="content_block_117" class="wiki-section-2"><div class="title-2"><h4 id="content_15_17"> 日本語対応 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_15_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_117-body" class="wiki-section-body-2">
+<a href="https://huggingface.co/sorryhyun/anima-jp-extended" class="outlink">https://huggingface.co/sorryhyun/anima-jp-extended</a><br>
+T5XXLは日本語非対応だが、日本語のembeddingを追加することで使えるようにするもの。<br>
+精度はかなり低い。パラメータ数2Bでは漢字の描写は難しいと思われる。<br>
+使うには、専用のモデルとカスタムノードが必要。<br>
+</div></div><div id="content_block_119" class="wiki-section-1"><div class="title-1"><h3 id="content_16"> 学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_16" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_119-body" class="wiki-section-body-1">
+diffusion-pipe、sd-scripts、OneTrainerでできる。<br>
+<a href="https://github.com/bluvoll/diffusion-pipe/tree/main" class="outlink">https://github.com/bluvoll/diffusion-pipe/tree/mai...</a><br>
+<a href="https://github.com/kohya-ss/sd-scripts/tree/main" class="outlink">https://github.com/kohya-ss/sd-scripts/tree/main</a><br>
+<a href="https://github.com/Nerogar/OneTrainer/tree/master" class="outlink">https://github.com/Nerogar/OneTrainer/tree/master</a><br>
+</div></div><div id="content_block_121" class="wiki-section-2"><div class="title-2"><h4 id="content_16_18"> LoRA学習のヒント <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_16_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_121-body" class="wiki-section-body-2">
+</div></div><div id="content_block_123" class="wiki-section-3"><div class="title-3"><h5 id="content_16_18_23"> LLM Adapterは学習NG <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_16_18_23" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_123-body" class="wiki-section-body-3">
+学習すると破綻が増加するとの報告がある。sd-scriptsのLoRA学習であれば明示しない限り、学習しない。<br>
+</div></div><div id="content_block_125" class="wiki-section-3"><div class="title-3"><h5 id="content_16_18_24"> AdaLNは学習NG <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_16_18_24" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_125-body" class="wiki-section-body-3">
+学習すると品質が低下する。sd-scriptsのLoRA学習であれば明示しない限り、学習しない。<br>
+</div></div><div id="content_block_127" class="wiki-section-3"><div class="title-3"><h5 id="content_16_18_25"> Text Encoderの学習は基本的に不要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_16_18_25" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_127-body" class="wiki-section-body-3">
+TE無しでも品質に影響しない。それどころかTEの学習はプロンプト忠実度を下げるかもしれない。<br>
+SDXL以前のTEとは違い前の単語の効果が強い性質がないためシャッフル不要。<br>
+cache_text_encoder_outputsでTEの出力をキャッシュしてメモリを節約できる。cache_text_encoder_outputs_to_diskで二回目以降の学習準備が高速化する。<br>
+</div></div><div id="content_block_129" class="wiki-section-3"><div class="title-3"><h5 id="content_16_18_26"> Timestep Sampling <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_16_18_26" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_129-body" class="wiki-section-body-3">
+この設定は難しいので弄るなら慣れてからにしよう。とりあえず初期値(timestep_sampling=sigmoid, sigmoid_scale=1)のまま弄らないことをおすすめする。<br>
+<br>
+shift、flux_shift、sigma, sigmoidのいずれかを指定して使用する。sd-scriptsのデフォルトはsigmoid。<br>
+shift, sigmoidがよく使われている。<br>
+<ul id="content_block_130" class="list-1">
+<li> Discrete Flow Shiftの値</li>
+</ul>
+timestep_samplingの"shift"は、"sigmoid"にシフト式を適用したものでtimestepのサンプリング分布を偏らせる。<br>
+Timestep Sampling="shift"の場合のみ設定可能。生成で使用するFlow Shiftと同じ機能だが、Animaの推論時の初期値の3が最適とは限らないことに留意。<br>
+sd-scriptsのデフォルトは1.0。<br>
+shiftを使うのであれば、1.5から始めると良い。<br>
+1でシフトしない(sigmoidと同一になる)。1超過で低周波成分(構図)の学習が強くなる。1未満で高周波成分(細部)の学習が強くなる。<br>
+なお、Timestep Sampling="flux_shift"では無視される代わりに、画像解像度に応じたDiscrete Flow Shift値が採用される。<ul id="content_block_131" class="list-1">
+<li> sigmoid_scale</li>
+</ul>
+timestep_samplingがsigmoid、shiftまたはflux_shiftの場合に設定可能。<br>
+sd-scriptsデフォルトである1.0のままでいい。<br>
+少し上げると、すべてのtimestepに対してまんべんなく学習できる。ただし最大でも1.5に留めた方がいいかも。<br>
+1で中央優勢の学習をする。1超過でTimestepの端部(構図と細部)の学習が強くなる。1未満で中央の学習が強くなる。<br>
+<br>
+<div id="content_block_132">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_132-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p> サンプル手法ごとの選択されるTimestepの分布</p></div>
+<div style="display:none" id="content_block_132-inside" class="toggle-display">
+左がT=1000(完全なノイズ)で構図、右がT=0(完全な画像)でディティール側。<br>
+画像右の図はlossの倍率で、Flow Matchingでは一様なので気にしなくていい。<br>
+<hr size="1" noshade>
+<ul id="content_block_134" class="list-1">
+<li> Sigmoid, Scale=1</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/21f20c422dd7ba87.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/21f20c422dd7ba87.png" border="0"></a><br>
+中央優勢の無難な分布。<br>
+<hr size="1" noshade>
+<ul id="content_block_136" class="list-1">
+<li> Sigmoid, Scale=1.3</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/21300262d5245861.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/21300262d5245861.png" border="0"></a><br>
+<hr size="1" noshade>
+<ul id="content_block_138" class="list-1">
+<li> Sigmoid, Scale=1.6</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/f7558ccf0d1e8a5f.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/f7558ccf0d1e8a5f.png" border="0"></a><br>
+全体をまんべんなく学習する。ディティールを学習させるには1.5がよさそう。<br>
+<hr size="1" noshade>
+<ul id="content_block_140" class="list-1">
+<li> Sigmoid, Scale=2</li>
+</ul>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/b2a64f87eca8d2b6.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/b2a64f87eca8d2b6.png" border="0"></a><br>
+中央が少ない極端な分布で望ましくない。<br>
+<hr size="1" noshade>
+<ul id="content_block_142" class="list-1">
+<li> Shift, Flow Shift=1</li>
+</ul>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/4c654bf099f0304b.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/4c654bf099f0304b.png" border="0"></a><br>
+scale=1のsigmoidと同一。<br>
+<hr size="1" noshade>
+<ul id="content_block_144" class="list-1">
+<li> Shift, Flow Shift=1.5</li>
+</ul>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/9fffbd8a495d1e48.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/9fffbd8a495d1e48.png" border="0"></a><br>
+<hr size="1" noshade>
+<ul id="content_block_146" class="list-1">
+<li> Shift, Flow Shift=2</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/ebf317d36f232d0c.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ebf317d36f232d0c.png" border="0"></a><br>
+<hr size="1" noshade>
+<ul id="content_block_148" class="list-1">
+<li> Shift, Flow Shift=2.5</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/c16c20898015f0e5.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/c16c20898015f0e5.png" border="0"></a><br>
+<hr size="1" noshade>
+<ul id="content_block_150" class="list-1">
+<li> Shift, Flow Shift=3</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/b1b3fb515097654c.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/b1b3fb515097654c.png" border="0"></a><br>
+ノイズ側(構図の影響が大きい)ばかり学習する一方でディティールをほとんど学習しない。<br>
+<hr size="1" noshade>
+</div>
+</div>
+</div></div><div id="content_block_154" class="wiki-section-3"><div class="title-3"><h5 id="content_16_18_27"> 使用できないオプション(ノイズ関連) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_16_18_27" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_154-body" class="wiki-section-body-3">
+Flow MatchingのAnimaは予測でノイズを扱わないため、以下のSNRやノイズ関連の設定は機能しない。指定してもエラーになるか無視される。<ul id="content_block_155" class="list-1">
+<li> v-parameterization</li>
+<li> Zero Terminal SNR</li>
+<li> Debiased Estimation</li>
+<li> Noise Offset</li>
+<li> Multires noise iterations</li>
+<li> Multires noise discount</li>
+<li> Min SNR Gamma</li>
+<li> Adaptive Noise Scale</li>
+<li> huber scheduleにsnr指定</li>
+</ul>
+</div></div><div id="content_block_157" class="wiki-section-3"><div class="title-3"><h5 id="content_16_18_28"> 使用できないオプション <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_16_18_28" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_157-body" class="wiki-section-body-3">
+以下のオプションは使用できない。指定してもエラーになるか無視される。<br>
+<ul id="content_block_158" class="list-1">
+<li> 層別LR: SD1/SDXLの指定方法は無効。代わりに正規表現を使用すること</li>
+<li> 層別Dim/Alpha</li>
+<li> 畳み込み層(Conv)の学習: AnimaはTransformerベースであり畳み込み層が無い</li>
+</ul>
+</div></div>
+</div>

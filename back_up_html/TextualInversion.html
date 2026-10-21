@@ -1,0 +1,66 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990732&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+Textual Inversion · AUTOMATIC1111/stable-diffusion-webui Wiki - <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Textual-Inversion" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+<br>
+TIとは……<blockquote id="content_block_2">
+TI(Textual Inversion)とは、短縮詠唱みたいなものです。
+自分の任意の画像を読み込ませると、その画像内に存在する特徴をモデルが知っている範囲でまとめて学習して一つのファイルにしてくれるものです。
+なので、元々のモデルが知らないことは学習できません。
+画風の再現などに優れているらしいです。
+Textual Inversionとは？ - としあきdiffusion Wiki* - <a href="https://wikiwiki.jp/sd_toshiaki/Textual%20Inversion%E3%81%A8%E3%81%AF%EF%BC%9F" class="outlink">https://wikiwiki.jp/sd_toshiaki/Textual%20Inversio...</a>
+</blockquote>
+<br>
+AUTOMATIC1111(ローカル版)において使うときは拡張子が.ptのファイルをどっかから入手して/embeddingsディレクトリに配置し、プロンプトでそのファイル名を使用します(これを機能させるためにプログラムを再起動する必要はありません)。<br>
+基本的にファイル名が呼び出しキーとなるため、ファイル名を変更しても機能する。<br>
+<br>
+学習元と違うモデルでも使用できるが、そのモデルが知っている要素で生成するものと思われるので、再現性が低くなるかもしれないし、逆に上がる可能性もある？<br>
+ポーズとかならだいたいどのモデルでも応用がきくはず。<br>
+学習が遅いのが欠点。LoRAの速度と精度はとても魅力的。<br>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2">使用方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990732&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_4-body" class="wiki-section-body-1">
+TIファイルを次のフォルダにコピー<blockquote id="content_block_5">
+stable-diffusion-webui\embeddings<br>
+</blockquote>
+画面のGenerateボタンの下の🎴ボタンを押し、Textual Inversion タブから使いたいTIファイルを選択<br>
+又はプロンプトに直接TIファイル名(拡張子.ptを除いたもの)を入力<br>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1">使用時の注意点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990732&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+SD1系で作られたTIファイルはSD2系のモデルでは使用出来ない<br>
+逆もまた同じ<br>
+<br>
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_3">学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990732&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+学習手順はまだ記載されていません。<br>
+とりあえずとしあき拡散を貼っとく↓<br>
+Textual inversion - としあきdiffusion Wiki* - <a href="https://wikiwiki.jp/sd_toshiaki/Textual%20inversion" class="outlink">https://wikiwiki.jp/sd_toshiaki/Textual%20inversio...</a><br>
+<br>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2">Initialization text <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990732&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+画像の特徴を指定する初期テキスト。学習してほしいタグを書く。以下引用<br>
+たとえば "zzzz1234" という名前の１ベクトル（１トークン）の embedding で初期テキスト "tree" を指定したとする。トレーニングなしでそれを "a zzzz1234 by monet" というプロンプトで使うと、その出力結果は "a tree by monet" と同じになる。<br>
+<br>
+そこに学習画像を使用する事でどんなtreeを学んでいくかが変わってくる。<br>
+なので学習画像に含まれる特徴及びモデルで認識できるワードが望ましい。<br>
+逆に余計なワードや複数の意味を持つワードを入れると望まぬ学習をしてしまう可能性がある。<br>
+また学習元モデル以外のモデルで使用する際、モデルによって認識できるワードが異なるため出力結果も変わってくるはず。<br>
+<br>
+</div></div><div id="content_block_13" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3">Number of vectors per token <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990732&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_13-body" class="wiki-section-body-2">
+作成するptファイルのtoken数。どれだけの情報を埋め込むかを指定する。Shondoit氏曰く<br>
+「多すぎると柔軟性に欠けます。少なすぎると細部が失われる可能性があります。通常、1〜4個で十分です。それ以上だと、他のプロンプトを圧倒し始めます。」<br>
+とのこと。複雑な服装や装飾のキャラの再現性を高めたい場合は増やしていくといいのかもしれない。<br>
+学習画像、学習率、ステップ数との兼ね合いも考慮する必要はある。<br>
+</div></div><div id="content_block_15" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4">Learning rate <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990732&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_15-body" class="wiki-section-body-2">
+学習速度。高すぎる値を設定すると embedding が壊れる。デフォの「0.005(5e-3) 」は高すぎるらしい。複数の学習率を指定することもできる。<br>
+Batch size：１回の学習に使う画像枚数。これを上げると、VRAM を余計に使い計算速度も落ちるが、精度が上がる。(chatGPTに訊くと逆の事を言われる…)<br>
+Dataset directory：学習に使う画像が入ったディレクトリ。画像のアスペクト比は１：１である必要がある。<br>
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_4">応用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990732&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5">手を修復する：bad_prompt <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4990732&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+TextualInversionで悪い手の形を学習させて、Embeddingでネガティブプロンプトとして使うことで正しい手の形を生成するやつです。<br>
+→<a href="https://seesaawiki.jp/nai_ch/d/%c2%e7%ce%cc%b8%a1%be%da%b7%eb%b2%cc">大量検証結果</a>に検証結果を掲載しました
+</div></div>
+</div>

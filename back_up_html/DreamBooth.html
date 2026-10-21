@@ -1,0 +1,701 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+読解不明の謎文しかないので、今はとりあえず<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%a4%ce%b3%d8%bd%ac%c6%fe%cc%e7">ローカルの学習入門</a>かとしあきDiffusionを参照することを推奨。
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> Dreambooth Extension for Stable-Diffusion-WebUI <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+2023-01-21版追記事項<br>
+DreamBoothエクステンションいれとると起動せえへん問題が発生中らしいで。<br>
+対応方法だけ抜粋すると<br>
+extensions\sd_dreambooth_extension<br>
+にある<br>
+requirements.txt<br>
+に<br>
+gradio==3.16.2<br>
+って追加してからWebUI起動してや。<br>
+<br>
+詳しくは下記のissuesみてや。<br>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/6876" class="outlink">https://github.com/AUTOMATIC1111/stable-diffusion-...</a><br>
+<br>
+2023-01-12版説明<br>
+アップデートでいろいろ変わるので stable-diffusion-webui\models\dreambooth\モデル名\db_config.jsonをよく見ような<br>
+設定項目多いけど落ち着いて くそデカサンプル画像あり<br>
+とりあえず動く数値だけ<br>
+Instance Prompt について詳しく知りたい場合はこのページをくまなくよむとええで。日本語で分かりやすく説明してあってタダで見れるのはここくらいや。<br>
+<br>
+一応補足やけど、このextensionのDreamBoothは他のDreamBoothツールやらと違って(？)stepとか正規化画像生成とかは「学習元1枚に対してなんぼか」で設定するから、「なんか15枚で4000ステップ学習したらええらしいで」みたいなの見かけてそのまま4000入れると合計60,000step学習しおるからよう注意やで。(この例やと合計4000stepやりたかったら4000÷15≒266step指定になるで)<br>
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1">学習させるモデルを選ぶ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+Dreembooth タブの Input &gt; Create タブで<br>
+名称 名前を付ける<br>
+Source Checkpoint モデルを選ぶ<br>
+<br>
+Create Model を押す<br>
+<div id="content_block_6">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_6-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>画像</p></div>
+<div style="display:none" id="content_block_6-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/I9qJIohb0w.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/I9qJIohb0w.png" border="0" align="right"></a>
+</div>
+</div>
+</div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2">学習の設定 その1 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_9-body" class="wiki-section-body-2">
+Imput &gt; Concepts タブで<ul id="content_block_10" class="list-1">
+<li>Directories
+<ul class="list-2">
+<li>Dataset Directory: 学習用画像のあるディレクトリを指定する</li>
+<li>Classification Dataset Directory: 正則化画像のあるディレクトリを指定する</li>
+</ul>
+</li>
+<li>プロンプト
+<ul class="list-2">
+<li>Instance Prompt: </li>
+<li>Class Prompt: </li>
+</ul>
+</li>
+</ul>
+キーワードみたいなもの。使われていない言葉がいい。例として nanU とすると 設定のパターンとしては以下のようなものがある。<table id="content_block_11"><tbody><tr><td>Instance Prompt</td><td>無し　　</td><td>nanU　　</td><td>nanU girl</td><td>nanU Unan</td></tr><tr><td>Class Prompt</td><td>無し　　</td><td>無し　　</td><td>girl　　</td><td>Unan　</td></tr></tbody></table>
+<ul id="content_block_12" class="list-1">
+<li>Image Genaration
+<ul class="list-2">
+<li>Class Images Per Instance Image: 0 ここも「学習元画像一枚に対しての枚数」なのであんまり巨大な数字を入れないように</li>
+</ul>
+</li>
+</ul>
+<div id="content_block_13">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_13-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>画像</p></div>
+<div style="display:none" id="content_block_13-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/ABudhUleIH.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ABudhUleIH.png" border="0" align="right"></a>
+</div>
+</div>
+</div></div><div id="content_block_16" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3">学習の設定 その2 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_16-body" class="wiki-section-body-2">
+Input &gt; 設定 タブで
+</div></div><div id="content_block_18" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_1">Basic <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_2_3_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_18-body" class="wiki-section-body-3">
+<ul id="content_block_19" class="list-1">
+<li>General
+<ul class="list-2">
+<li>Use LORA: LORAを使用する場合はオン <b>sd-scripts (kohya)で出来るLoraとは別物(kohyaのほうが拡張版でkohya版がデファクトになってる)なんで要注意</b></li>
+<li>Generate Classification Images Using txt2img: オフ</li>
+</ul>
+</li>
+<li>Intervals
+<ul class="list-2">
+<li>Training Steps Per Image (Epochs): 100(デフォ) ここの値は対象画像一枚ごとに何Step学習するかを設定する、学習元の枚数が多いと合計が非常に多くなるので注意(例えば400を指定して学習元が20枚なら8000step合計で学習する)。</li>
+</ul>
+</li>
+</ul>
+<div id="content_block_20">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_20-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_20-inside" class="toggle-display">
+施行回数が少ない＆元モデルと学習対象によるので断定できないものの、大体15枚前後の画像で学習する前提で、1画像あたり<ul id="content_block_21" class="list-1">
+<li>モデルにない新規のキャラ(オリキャラや2022夏以降の版権、デフォルメなど標準的なキャラから遠いデザイン)を覚えさせるには270〜350stepほど必要</li>
+<li>モデルにいそうなキャラ(2022春以前の知名度のある版権キャラ等)は135〜170stepほどで大体特徴を覚えてくれる</li>
+</ul>
+ような傾向はみられる…ような気はする。<br>
+また同じ学習済みモデルでも「学習プロンプトで立ち絵を出すには過学習気味」だが「masterpieceとかのクオリティタグを盛る」「学習してないアクションさせる」等するとキャラ要素が抜け落ちたりして学習が足りてない感じになることもある。<br>
+学習時間に余裕があるなら「過学習気味でもマージして薄める」ことは可能なのでほんのりstep数を盛っておいてもいいかもしれない。
+</div>
+</div>
+<ul id="content_block_23" class="list-1">
+<ul class="list-2">
+<li>Save Model Frequency (Epochs): 適宜</li>
+<li>Save Preview(s) Frequency (Epochs): エラーが出る場合は0</li>
+</ul>
+
+<li>Learning Rate
+<ul class="list-2">
+<li>Learning Rate Scheduler: constant_with_warmup</li>
+<li>Learning Rate: 0.000002</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_25" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_2">Advanced <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_2_3_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_25-body" class="wiki-section-body-3">
+<ul id="content_block_26" class="list-1">
+<li>*Tuning
+<ul class="list-2">
+<li>Use EMA: マージモデルを使う場合オン</li>
+<li>Use 8bit Adam: オン</li>
+<li>Mixed Precision: fp16</li>
+<li>Memory Attention: xformers</li>
+</ul>
+</li>
+</ul>
+<div id="content_block_27">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_27-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>画像</p></div>
+<div style="display:none" id="content_block_27-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/C6FSRG9WDy.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/C6FSRG9WDy.png" border="0" align="right"></a>
+</div>
+</div>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4">学習の設定 その3 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+Input &gt; Saving タブで<ul id="content_block_31" class="list-1">
+<li>Generate a .ckpt file when training completes.: オン</li>
+</ul>
+<div id="content_block_32">
+<div class="toggle-title"><a id="region_plugin_content_5" onclick="toggleRegion(this,'content_block_32-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>画像</p></div>
+<div style="display:none" id="content_block_32-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/l6F33fzRET.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/l6F33fzRET.png" border="0"></a>
+</div>
+</div>
+全部設定できたら<br>
+学習 ボタンをクリック
+</div></div><div id="content_block_35" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> とある技術部の記録 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_35-body" class="wiki-section-body-1">
+画像貼れないのでログのコピペだけ。<br>
+<div id="content_block_36">
+<div class="toggle-title"><a id="region_plugin_content_6" onclick="toggleRegion(this,'content_block_36-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_36-inside" class="toggle-display">
+意図的に過学習気味DB。一応データセットに酷似していないかは目視で確認したので大丈夫なハズ<br>
+データセットは顔15全身25の40枚、20000stepの1.06e-6です<br>
+<br>
+目標を上から<br>
+・過学習で完璧に同じものにならない<br>
+・コイルをコイルとして出す<br>
+・髪の毛の色を一致させる<br>
+・髪の毛のリボンの色<br>
+・服の色(斜めになってて上が黄色下が黒)<br>
+・模様の正確性<br>
+<br>
+でした。模様以外はおおむね成功ですかね🤔<br>
+DBに限らず追加学習全般で「過学習気味にするのが用途として良い」と言われているのはこのことなんだろうなって<br>
+<br>
+上のDBを「一つの成功例」って表記しているのが「キャラDB、NSFW無し、ポーズほぼ固定」でのものですし<br>
+<br>
+顔髪が再現できてある程度コスプレ、シチュに耐えれば成功だなと思ってます<br>
+<br>
+20枚、20000step、7.2E-07、Apply horizontal Flip無でやったのですけど10000stepだと複雑な服装を再現しづらいけど20000なら高打率で再現したうえでマスピ塗りも脱却できますね。ちょっと制御効きづらいけど<br>
+左右反転無しで画像の500〜1000?倍のstep組むのがいいかもしれないけど学習元枚数が100枚とかになってくるとどうなるか不明 <br>
+<br>
+・全身で使えるものとバストアップで使えるものの選別<br>
+・Photoshopでちまちまアルファ抜き<br>
+・512*512に加工(+白背景にする)<br>
+<br>
+フォトショが断然精度高いんでしたっけ透過させるの、持ってないし妥協してanime-segmentation使ってます<br>
+最終的に精度良いのはPhotoshopな気がしますね……PhotoshopでさえAI切り抜きが失敗するのでそれ以外のが精度高いってのはなかなかなさそう<br>
+<br>
+正規化画像があると学習中はその都度正規化のクラス画像との比較が行われて<br>
+キャラの持つ際立った特徴を覚えていく<br>
+これによって精度の向上に加えて過学習や発散が発生しにくい、とされている<br>
+<br>
+ただ、単に1girlとかpersonみたいなclass wordと同一のプロンプトで用意しても、<br>
+こんな感じにそもそも細部の特徴を読み取れないものが多くて<br>
+「正規化画像では髪色はこうで、服の模様はこうで..キャラはこれと違ってこうだから...」と学習に寄与する確率が下がる(予想)<br>
+だから質の良いセットを用意しない限り、経験上はほぼ無意味か、精度が低下するまである<br>
+<br>
+多分理想としては正規化画像と学習用キャラ画像ともに「顔の細部が見られるもの多め、背景を透過」でやると効率的なんだろうね <br>
+<br>
+チャレンジの題材として良い気がしてきましたね？<br>
+・コイルをコイルとして認識するか<br>
+・コイルの精度<br>
+・特徴的な洋服の再現度<br>
+を確かめられる気がします🤔<br>
+あとはかわいいからモチベも保てる(重要)<br>
+<br>
+Any+(NAInsfw-NAIsfw) * 0.4（これは別にNAI単体でもAnything単体でもいいんじゃない？）<br>
+pndm<br>
+10000steps<br>
+データセット……白背景顔アップ50枚、白背景全身かバストアップ(画像によりけり)50枚の100枚<br>
+正則化画像なし<br>
+解像度512<br>
+LR1e-6(算出学習率じゃなくて1e-6で良くない？ってなったので1e-6に最近してる)<br>
+念のため1000step毎にckpt吐き出し<br>
+<br>
+Don't Cache Latentsオン<br>
+Use 8bit Adamオン<br>
+Gradient Checkpointingオン<br>
+Mixed Precisionをnoからfp16<br>
+Apply Horizontal Flipをオフ<br>
+<br>
+でした <br>
+<br>
+stepは正直一概に言えないかなって最近なってます。コイルと服装の再現に多くのstepがいるだけで本来ならもう少し少なくてもよさそうですね。<br>
+ほらこう……シンプルなのだと4000で過学習とかになりそうな予感<br>
+<br>
+顔アップとバストアップってそれぞれ別の画像です？同じ画像で顔だけアップと全体とで2枚作ったりとかしない感じ？<br>
+今回は目的として「過学習気味になった時に特定の画像に依らないように」ってのがあったので100枚全部バラバラです<br>
+<br>
+画像加工お役立ち情報(多分)なんですが、縦長の画像を512にするときに一枚目みたいにまっすぐ切れるようなトリミングはお勧めしません。二枚目みたいにすることがお勧めです。<br>
+なんでかというと「左右に余白のある画像」として認識しちゃってこんな風に余白を埋めてくることがあるんですよね。体感ですが<br>
+あとfull body入れた場合は枠いっぱいではあるけど指定なしの時よかフレームアウトしなくはなってます。真ん中に綺麗に立たせてるので<br>
+<br>
+それにしてもはDBのベンチマークとして滅茶苦茶優秀ですね<br>
+左右非対称カラーのデザインと頭のコイルという学習無しでは再現しづらい部分があって<br>
+うまくいってないとコイル部分が雑になるからぱっと見で学習精度がわかるし<br>
+なによりかわいい(重要) <br>
+<br>
+ポーズや恰好含めてこの印象のキャラですしね🥳 自分も透過綺麗なデータセット作らなきゃ…<br>
+<br>
+これ服装がラバースーツっぽいのevt-v2のせいな気がしてきましたね？Anythingに戻したほうが良さげな気がします<br>
+そしてevt-v2はちょいちょいブラックアウトします(evt-v2以外で発生したことは無い)<br>
+<br>
+これは10000stepですが10000stepだとそもそも学習が中途半端だしなぁ<br>
+20000stepもやると服と一体で覚えてますね<br>
+やっぱりbodypaintは過学習あるあるですよね…<br>
+再現度MAXなのも過学習一歩手前だから難しいところ<br>
+<br>
+4000stepくらいのモデルだと衣装をucに突っ込むと割と脱いでくれました<br>
+の服装は英単語で定義するのがむずいですね……<br>
+DBでもちゃんと特徴をプロンプトで指示するのは効果ありそうですね<br>
+<br>
+4000stepだとそもそものが再現できないんですよね……コイルと服と髪の毛の色がやばいですし<br>
+個人的には塗りのマスピ感って(に限らず)1e-6の2000stepの段階で大体消えると思ってるんですよね。そっからは細部を詰めていく印象です<br>
+設定も書くか<br>
+20000steps<br>
+顔15枚バストアップか全身25枚(画像によって良い感じに調整)合計40枚<br>
+0.00000108(1.08e-6)<br>
+Don't Cache Latents<br>
+Use 8bit Adam<br>
+Gradient Checkpointing<br>
+Apply Horizontal Flipをオフ <br>
+<br>
+1.08e-6はほんとは30枚2000stepsの算出学習率なんだけど変え忘れました<br>
+けど結果的に1e-6でいいんじゃ……？ってなってますデータセットの枚数に限らず<br>
+Apply Horizontal Flipの無効化は左右反転したらコイルの色まざるじゃんね？ってことでオフにしました。規定値ではオンです<br>
+<br>
+デフォルトでApply Horizontal FlipONなの今日一番のショック……<br>
+(これは可能性の話ですが、データセットの枚数って勝手にフリップしていたので2倍で計算しなきゃいけなかったり)<br>
+Joe版で反転画像入れると顔崩れやすくて以降つかわないようにしてたのに😭<br>
+1epochあたりのsteps数も変わってきますね…<br>
+<br>
+個人的にも今のところ上手く行ってるデータセットは顔アップorバストアップ+全身か上下2分割なのでやっぱりこの辺りが安定な気がしますねー<br>
+そうしたら次はデータセットの数を増やして特定の絵により過ぎない(SNSに上げたときに特定の誰かのと似すぎていると言われない)のを作ることですかね。いうて今も要素の継ぎ足しで完璧に同じにはなっていませんが <br>
+<br>
+多重詠唱の効果ありますねこれ<br>
+できちゃった。昨日できなかった騎乗位カラオケ概念
+</div>
+</div>
+<br>
+</div></div><div id="content_block_39" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> とある個人の雑記 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_39-body" class="wiki-section-body-1">
+ステータスの設定とかの解説はここ<br>
+<div id="content_block_40">
+<div class="toggle-title"><a id="region_plugin_content_7" onclick="toggleRegion(this,'content_block_40-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_40-inside" class="toggle-display">
+Dreamboothとはなんか凄い技術で好きなキャラとか物を正確かつ綺麗に再現できるようになるかもしれんものや<br>
+<br>
+要求<br>
+12GB以上のVRAM<br>
+※最新バージョンの1111では12GBでは足りん模様・・・使いたい場合はバージョンを下げよう<br>
+正直12GBではかなりギリギリやから作業中は動画再生や無駄なアプリを起動するのはご法度や<br>
+また無駄なプロセスが残っていても弾かれることがあるからトレーニングをやる前には再起動を勧めるで<br>
+12GBならxformersのONも忘れずに、これがあればデュアルモニタでも400MBは余裕ができるから少しならブラウジングもできる<br>
+※最新バージョンなら設定項目にxformersの有無が移動してる※<br>
+無い場合30MBぐらいしかVRAM残らないから文字通り何もできんで<br>
+<br>
+導入<br>
+まずwebui.batで起動(オプションが邪魔する場合があるからな)<br>
+次にExtensionsのAvailableのLoard fromをポチる<br>
+リストがｽﾞﾗｯと出るのでDreamboothと書かれたやつをインストールや<br>
+インストールできたら再起動するとタブの中にDreamboothというのが出来る<br>
+更にパワーシェルとかで<br>
+pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 --extra-index-url <a href="https://download.pytorch.org/whl/cu116" class="outlink">https://download.pytorch.org/whl/cu116</a><br>
+を入力してpytorchとtorchvisionを更新して揃えといてくれ<br>
+※paperspaceやとインストールに失敗するという報告が上がっとるのでオプションに--enable-insecure-extension-accessを付けて起動してくれ<br>
+<br>
+使い方<br>
+<br>
+この説明はハッシュモデル725d85ca5485246a430d2f31f624646d061e8104を基準とした古い説明や<br>
+新しいバージョンの説明は下の方にいってくれ<br>
+もしバージョンを合わせたい場合stable-diffusion-webui/extensions/sd_dreambooth_extension/で右クリック→git bash hereを選択しgit reset --hard 725d85ca5485246a430d2f31f624646d061e8104と入力すると該当バージョンに変更できる<br>
+<br>
+Create Model<br>
+まずCreate Modelというのでトレーニングさせるモノを作る<br>
+HNで言うところのCreate hypernetwaorkと似たようなもんやな<br>
+nameは好きな名前を入力してImport Model from Huggingface Hubを無視して次はSource Checkpoint<br>
+Source Checkpointではベースとなるモデルを選択するんやけどマージモデルでもOKや<br>
+とりあえず愛用しているモデルかキャラになにをさせたいかでベースを選ぶ感じでええと思う<br>
+次にScheduler、ここはデフォルトで選択されてるddimのままでOKや<br>
+選択完了後Createを押したら30秒〜1分ぐらいで作成完了する<br>
+作成が完了したらCreateModelの少し上のModelタブに作成したモデルがセットされているか確認してくれ<br>
+<br>
+Train Model<br>
+ここからはトレーニングの内容を入力していく<br>
+PersonとObject/Styleのプリセットがあるけどここでは基本キャラ再現を考えて書いとるからpersonを押すとええ<br>
+<br>
+Use Concepts List<br>
+OFFで<br>
+<br>
+Instance prompt<br>
+ここは学習させたものを呼び出すためのプロンプトを設定する<br>
+とりあえず　学習対象の名前/半角スペース/適当な言葉(学習対象の名前を反転させたものが覚えやすくてオススメや)　を入れるとええ<br>
+※学習対象の名前が長過ぎる場合は簡潔に分かりやすい名前にしといてくれ<br>
+適当な言葉にする理由はClass Promptで<br>
+<br>
+Dataset Directory<br>
+学習させるための画像が入ったファイルを指定するところや<br>
+512*512の大きさで用意しよう<br>
+オススメ枚数は5〜10枚<br>
+<br>
+「キャラを学習させるための画像で大切なことは？」<br>
+とにかく質。少ない枚数でやるならとにかく質。<br>
+あとはキャラ学習なら背景や無駄な物(例えば花びらや置物や文字)すら強烈に覚えてしまうから丁寧に不純物を取り除いたり背景を白色にするのが大事や<br>
+不純物や文字の除去に関してはlama-cleanerとかいう便利なものがあるから検索してみてくれ<br>
+<br>
+「選んではいけない画像とかある？」<br>
+強烈に学習する関係上ドアップの顔画像や真後ろからの画像は特定の場面で邪魔になることが多い<br>
+できればアップの画像でも胸辺りまでが写ってる画像が好ましい<br>
+横からの姿の画像を入れる場合でも1枚だけ、とかならいっそ抜いた方がええな<br>
+from sideと入れると同じような画像が生成され続けるとかいう可能性があるからできれば複数枚用意したい<br>
+また体だけ、見切れてる画像、なんかも強烈に覚えるから絶対にNGや<br>
+割合にするとfull body3枚、胸の辺りから上が2枚とか<br>
+full body3枚、胸の辺りから上が3枚、横顔(右)が2枚、横顔(左)が2枚とかやな<br>
+<br>
+Class Prompt<br>
+正則化画像(後で説明する)の学習結果を呼び出すためのプロンプトを設定する場所や<br>
+ここではInstance promptで付けた適当な名前の部分を入力してくれ<br>
+<br>
+「なるほど分からん」<br>
+例にすると<br>
+<br>
+Instance prompt<br>
+nanU Unan<br>
+<br>
+Class Prompt<br>
+Unan<br>
+<br>
+みたいな感じに設定するとええ<br>
+もし設定するpromptが他のpromptとバッティングする場合は適当な言葉に変えてくれ<br>
+<br>
+「適当な言葉にする理由は？」<br>
+一部ではInstance promptの前半を無意味な言葉に、Instance promptの後半とClass Promptの部分を(女の子を学習させる場合)girlにする等があるが上の方法と比べて何か利点があるとかは確認できなかった<br>
+なら学習したキャラとは全く似てないキャラが保存される言葉だからなるべく無関係な言葉にしたいよねという理由<br>
+ここを仮にgirlにした場合、ふとgirlを使用したい場面が出た時に困ってしまう<br>
+<br>
+「Instance promptを2語にする意味は？」<br>
+nanU UnanのnanUの部分に絵柄がUnanの部分に意味が付与される<br>
+nanU Unanで呼び出すと絵柄+意味で強力に呼び出せるけどUnanが邪魔をして○○が命令しても出てこない！といったことが発生する<br>
+その場合Unanを切り離してnanUのみにすると命令が上手くいくが1語だと切り離しができないため汎用性が落ちる<br>
+また1語の場合2語の時と比べて何故か学習精度が落ちる(なんJNVA部★107&gt;&gt;236参照)<br>
+有識者の視点からするとありえんぐらい間違ったことを言ってるが実際に起きる挙動を説明するとこんな感じや・・・<br>
+<br>
+Classification Dataset Directory<br>
+正則化画像が入ったファイルを指定するところや<br>
+<br>
+「正則化画像とは？」<br>
+正則化というのは簡単に説明すると過学習を抑えてデータに汎用性を持たせることや<br>
+つまるところそれをさせるための画像で正則化画像や<br>
+<br>
+「正則化画像というのはどういうものを用意すればいいの？あと何枚いる？」<br>
+真っ透明な512*512の画像を学習させるための画像の10倍の枚数用意する。<br>
+真っ透明な512*512の画像を学習させるための画像の10倍の枚数用意する。(例：学習させるための画像が5枚→透明な512*512画像が50枚)<br>
+よく分からんけどワイにも分からん<br>
+なんかあったらスレに検証結果書いてくれ...<br>
+ttps://i.imgur.com/8d6VTjm.png<br>
+真っ透明な512*512の画像のURLを一応貼っておく<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/brdyJ_m5mJ.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/brdyJ_m5mJ.png" border="0"></a><br>
+ここまでの流れでこんな感じの入力になってるはずや<br>
+<br>
+Training Steps<br>
+文字通りトレーニングさせるステップ数を設定するところやな<br>
+枚数によるが10枚でも12000ステップもあれば過剰かもしれん<br>
+5枚なら7000もあれば過剰かもしれん<br>
+<br>
+Total Number of Class/Reg Images<br>
+用意した正則化画像と同じ枚数でいい(例えばClassification Dataset Directoryで指定したファイルの中身が50枚なら50を入力や)<br>
+正則化画像より上の数にすることで正則化画像のフォルダに追加で画像生成を行う(いらない)<br>
+Classification Image Negative Prompt：とりあえず汎用ネガでええ<br>
+Classification CFG Scale：12でええんとちゃう？<br>
+Classification Steps：28でええんとちゃう？<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/2TWUL3uVkh.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/2TWUL3uVkh.png" border="0"></a><br>
+こんな感じの入力になっとるやろか？<br>
+Total Number of Class/Reg Imagesの数値は本当に注意や<br>
+必ずClassification Dataset Directoryで指定したファイルの中身の枚数と一致させてな<br>
+<br>
+Resolution<br>
+ここは学習画像と大きさを合わせるところやな512でOKや<br>
+クソバカアホデカVRAMグラボあるならデカい学習画像や正則化画像用意してここも合わせてデカくしてもええかもしれん？<br>
+<br>
+Pretrained VAE Name or Path<br>
+何も入れんでええ<br>
+<br>
+Learning Rate<br>
+0.000001でOKやこれ以上大きいと汎用性に問題が出るらしい<br>
+object/styleのプリセットやと0.000002になるが0.000001のがええ<br>
+<br>
+Scale Learning Rate<br>
+ステップが進む毎に自動でLearning Rateを下げてloss値を綺麗に落としてくれる機能や<br>
+これがないと過学習に突っ込みやすいからONでええよ<br>
+<br>
+Warmup Steps<br>
+本番前に準備運動をさせることができる<br>
+学習の初動は無茶苦茶な学習をするからそれを回避するための機能やな<br>
+デフォ値の16で十分やからそれでOKや<br>
+<br>
+Learning Rate Scheduler<br>
+よく理解できとらんがデフォのpolynomialでOK<br>
+<br>
+Save Checkpoint Frequency<br>
+モデルデータをどれぐらいの間隔で保存するかの部分や<br>
+モデルデータは一個2GBと巨大なデータやから50とかに設定して10000ステップ走らせると400GBもHDD/SSDを使う<br>
+Hypernetworksと違って変化が繊細なわけではないから細かくみたいと思っても500ステップで十分やで<br>
+<br>
+Save Preview(s) Frequency<br>
+プレビューをどれぐらいの間隔で作成するかの部分や<br>
+VRAM12GBやとここを設定すると落ちるから0推奨や<br>
+ちなみにクソデカVRAMでここを設定する場合、Number of Samples to Generateには超絶ウルトラGOD注意や<br>
+ここを例えば5000とかに設定するとプレビュー作成地点に到達する毎に5000枚プレビューを作成しようとする(絶望)<br>
+作られたものは stable-diffusion-webui/models/dreambooth/ファイル名/samples/ に保存されるで<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/jkrcx6ViW4.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/jkrcx6ViW4.png" border="0"></a><br>
+こんな感じになっとるはずや<br>
+<br>
+Advanced<br>
+専門的なことが分かるならここで色々設定ができるがよく分からん人用にもAuto-Adjust(WIP)というのが用意されてる<br>
+とりあえずそれを押して終わりと思わせてTotal Number of Class/Reg Imagesの数値が0にされるので戻すのを忘れずに<br>
+ワイは何も分からん<br>
+Use 8bit Adam：品質を下げる代わりにVRAM消費を抑えるらしい3060とかなら残念ながら必須やな<br>
+Train EMA：消費VRAMを上げる代わりに品質を向上させるらしい3090とか用やな<br>
+Apply Horizontal Flip：左右を反転させて水増しすることができる、左右が大事なキャラは素材数が半減するがOFFにする方が無難や<br>
+これぐらいの認識や<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/7AZPoIuvLi.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/7AZPoIuvLi.png" border="0"></a><br>
+参考画像や<br>
+<br>
+ここまで設定したらあとはオレンジのTrainを押して開始や<br>
+<br>
+「中断と再開ってどうなってんの？」<br>
+Cancelを押すことでその地点でセーブ、ファイルの作成、プレビュー(stable-diffusion-webui/models/dreambooth/ファイル名/samples/にできる)の作成を行って終了することができる<br>
+作ったモデルを消さない限りセットし直してトレーニングを開始すると前回終了した地点から『設定したステップ分』再開、進行される(HNとは違う)<br>
+セーブされる間隔の設定も『一度中断すると終了した地点が基準になる』(ここもHNとは違う)<br>
+もし新たにやり直したい場合は別名のものを作成してセットするか<br>
+同名のものを作りたい場合、元のファイル(stable-diffusion-webui/models/dreambooth/ファイル名)を削除(当然そこまで進行してたものは失われる)して作り直す必要がある<br>
+HNと違ってファイル名は後から変えても一切問題ないため(HNは内部の名前が作成時のものになる)SSD/HDDの容量が気にならないなら別名のものを作る方がええかもな<br>
+<br>
+「セーブされたファイルが見当たらんのやけど？」<br>
+Stable-diffusion-webui\models\Stable-diffusionのところ(モデルデータがあるところ)に保存されるから無いならなんかおかしい<br>
+<br>
+「できたモデルデータをセットしたけどどうやって使うねん」<br>
+Instance promptで設定した言葉の意味が変化してるからそれを入力してやれば呼び出すことができる<br>
+え？じゃあClass Promptとかどう使うん？ってなるがClass Promptをネガにいれるという使い方もできる<br>
+入れる方がいいの？入れない方がいいの？となるがハッキリいって学習結果によってよりけりや<br>
+入れた方がいい完成品もあったり入れない方がいい完成品もあったりしてまだここらへんは研究が進んでないな<br>
+当然Instance promptを強調したり学習対象の名前を強調しても調整することができるで<br>
+もし上記の呼び出し方でもダメな場合　学習対象の名前/半角スペース/適当な名前　の学習対象の名前の部分のみで呼び出したりネガにClass Promptを入れたり色々してみてくれ<br>
+それでもダメならダメや<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/XTUa8JgVxv.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/XTUa8JgVxv.png" border="0"></a><br>
+nanU Unan で作った場合の呼び出し方の例や<br>
+<br>
+「どれぐらいで完成と判断すればええ？」<br>
+とりあえずInstance prompt, 1girl(1boy), solo, アスカテストの品質ネガでちょっとだけ過学習やな・・・って思うのをピックアップ<br>
+そのあとInstance prompt, 1girl(1boy), solo, 好みの服, 好みの場所, の指定で出して過学習気味になってなかったら完成や<br>
+<br>
+↑は古いバージョンの解説やったから↓で新たなバージョンの説明を追記するわ<br>
+<br>
+※※※11月17日以降のバージョンではモデル作成に必要なVRAMが激増しています※※※<br>
+3060等ギリギリでやってるニキはanythingとかがデカい方のを使ってると作成に失敗するから注意してな<br>
+その場合小さい方を拾ってきてマージとかも作り直してくれ(面倒ならバージョン戻すんやな・・・)<br>
+当然アプデ前に作成したモデルはアプデ後再トレーニング不可になるからそこも注意や<br>
+3090とかクソアホバカデカVRAMグラボの場合はfixが沢山されとるから最新バージョン使う方がええと思うで<br>
+<br>
+まずmodelの横にあるHalfはOFFで<br>
+<br>
+Intervals<br>
+Training Steps：上記と同じやな<br>
+Training Epochs：ここはエポック数を決めるところや(1エポック＝学習のために用意した画像の枚数or正則化画像の枚数の多い方)<br>
+Save Checkpoint Frequency：上記と同じやな。モデルデータをどれぐらいの間隔で保存するかの部分や<br>
+Save Preview(s) Frequency：上記と同じやなプレビューをどれぐらいの間隔で作成するかの部分や<br>
+<br>
+Learning Rate<br>
+Learning Rate：上記と指定数値が違っとる現状ここは0.000001に戻した方がええ<br>
+Scale Learning Rate：上記と同じやな。ONでええよ<br>
+Learning Rate Scheduler：上記と指定が違っとる戻すのが無難。デフォのpolynomialでOK<br>
+Learning Rate Warmup Steps：0に設定されとるがとりあえず15ぐらいを入れるとええ<br>
+<br>
+Instance Image Processing<br>
+Resolution：上記と同じやな。512でOKや<br>
+Center Crop：文字通り画像がデカい場合中央基準で画像を切り取ってしまうんやまず512*512で素材は揃えてるはずやからOFFや<br>
+Apply Horizontal Flip：上記と同じや(advancedの場所に書いとる)。画像反転させるかどうか<br>
+Pretrained VAE Name or Path：上記と同じで何も入れんでええ<br>
+Use Concepts List：ここも何も入れんでええで<br>
+<br>
+Directories<br>
+Dataset Directory：学習させる用の画像が入ったファイルを指定する<br>
+Classification Dataset Directory：正則化画像が入ったファイルを指定する<br>
+<br>
+Prompts<br>
+Existing Prompt Contents：今まで通りならデフォのままでええな<br>
+<br>
+「いやどういうものなの？」<br>
+Dataset DirectoryやClassification Dataset Directoryに画像ファイルと同名のtxtファイル(HNでよくあるタグ付けみたいな感じ)を入れて[filewords]を使って呼び出し方を変化させることができる<br>
+・・・んやけどルールが厳密にあってかなりめんどいうえに正直説明すらもワイの脳みそじゃ上手く伝えられん<br>
+詳しく知りたい！という場合にはStable Diffusion のファインチューンの Tipsと検索してdskjalというところのdreamboothの解説のところを読んでみてくれ<br>
+<br>
+Instance prompt：上記と同じやな<br>
+Class Prompt：上記と同じやな<br>
+Sample Image Prompt：プレビューを生成しない場合空白でOKや<br>
+Instance Token：今まで通りなら無記入でかまわん[filewords]を使用しない場合入力しても特に意味は発生せん<br>
+Class Token：今まで通りなら無記入でかまわん[filewords]を使用しない場合入力しても特に意味は発生せん<br>
+<br>
+Class Images<br>
+Total Number of Class/Reg Images：上記と同じやな。用意した正則化画像と同じ枚数でいい<br>
+<br>
+Advanced：(WIP)を押してもまだ少し弄る必要があるで<br>
+<br>
+Tuning<br>
+Use 8bit Adam：上記と同じや<br>
+Mixed Precision：fp16でOKや<br>
+Memory Attention：xformersを選択や<br>
+Train EMA：上記と同じや<br>
+<br>
+Gradients<br>
+gradient checkpointing：速度が低下するがVRAMを抑えることができるらしい3090とかならOFFにできるで
+</div>
+</div>
+<br>
+</div></div><div id="content_block_43" class="wiki-section-1"><div class="title-1"><h3 id="content_5">学習レポート置き場 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_43-body" class="wiki-section-body-1">
+学習の流れや結果を置く場所や<br>
+<div id="content_block_44">
+<div class="toggle-title"><a id="region_plugin_content_8" onclick="toggleRegion(this,'content_block_44-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_44-inside" class="toggle-display">
+<br>
+花月その1<br>
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104<br>
+学習対象：花月(アズールレーン)<br>
+使用素材：公式絵師のpixivからゲーム内のデフォルトの衣装を着ている画像を9枚、水着衣装を1枚使用<br>
+加工：大きい白画像を用意し絵をそのまま貼り付け、白い縁が出来るのを無視し絵の全体が見えるように四角状に切り取り<br>
+　　　その後anime-remove-backgroundのローカルで切り抜き、切り抜きが上手くいかなかったものはGIMPで自力切り抜き、花びらや傘の棒部分の不純物が存在したためそれをlama-cleanerを活用し除去<br>
+　　　水着衣装のみ普段とは違う衣装のため帽子や青いリボン等は除去<br>
+　　　加工が一通り終わった後全ての画像で512*512に縮小したものを用意、その後学習素材を水増しするため加工が一通り終わった素材を活用し全身気味の画像を活用しportrait気味の画像を4枚、ドアップ画像を1枚、cowboy shot気味の画像を3枚作成<br>
+加工後素材詳細：合計18枚、全身正面画像が3枚、cowboy shot気味の正面画像が8枚、portrait気味の正面画像が4枚、ドアップ正面画像が1枚、全身背面画像が1枚、cowboy shot気味の背面画像が1枚、その内白い縁ができた学習素材が6枚<br>
+正則化画像：一度下記のベースモデルを使用したDBを活用し、極端に似ている(ﾊﾟｯと見で花月と判断できるぐらいの)絵を学習画像の6倍枚数用意<br>
+ベースモデル：NAI5、any2.7、gape2、SD(1.4)0.3の割合のものを使用<br>
+LR等のステータス設定：LR0.000001、Scale Learning RateON、8000Step、Apply Horizontal FlipON、Use 8bit AdamON、Train EMAOFF<br>
+安定した呼び出し方：Instance promptの学習対象の名前のみ<br>
+結果：ﾊﾟｯと見の出来は良好だが尻尾、頭後ろにある少しだけ見える赤リボンの再現が甘い、全身表示にしても艤装及び傘の再現はサッパリだった<br>
+　　　素材の中にドアップの画像と背面の画像が混じっていたため横長に出力するとまともな画像が一切生成されなかったり唐突に背面の絵が混じる等問題が発生した<br>
+　　　白い縁ができた学習素材が6枚存在したが白い縁が生成される、キャラの左右が見切れる等の問題は生じなかった<br>
+<br>
+花月その2<br>
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104<br>
+学習対象：花月(アズールレーン)<br>
+使用素材：花月その1の学習画像からドアップ正面画像が1枚、全身背面画像が1枚、cowboy shot気味の背面画像が1枚を除いた合計15枚を使用<br>
+加工：花月その1の学習画像を流用したため省略<br>
+加工後素材詳細：同じく省略<br>
+正則化画像：masterpiece,best qualty,1girl,solo,loli,green eyes,pink hair,fox girl,fox ears,fox tail,animal ear fluff,animal ears,(red hairband:1.2),pink kimono,red hakama,(white background:1.5),(simple background:1.5),bow head,hair bow<br>
+　　　　　　ネガ：lowres, bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,blurry<br>
+　　　　　　で作成した様々な角度、アップ具合のピンク色の狐娘の画像を6倍枚数用意、使用モデルはベースモデル：NAI7、any3の割合のものと同じ<br>
+ベースモデル：NAI7、any3の割合のものを使用<br>
+LR等のステータス設定：LR0.000001、Scale Learning RateON、7000Step、Apply Horizontal FlipON、Use 8bit AdamON、Train EMAOFF<br>
+安定した呼び出し方：Instance prompt+Class promptネガ<br>
+結果：その1とほぼ同等の出来でより汎用性が高めなものに仕上がった(細かく言うと髪飾りの再現性が上昇、傘の再現性が更に低下、上の花月もだがApply Horizontal FlipONなので頭飾りの左右が無茶苦茶)<br>
+　　　こちらは絵を横長に出力をしても問題は発生しなかった<br>
+　　　絵はなんJNVA部★102の&gt;&gt;28に投稿<br>
+<br>
+ナンジャモその1<br>
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104<br>
+学習対象：ナンジャモ(ポケモン)<br>
+使用素材：pixivからそこそこ〜綺麗な絵を15枚使用<br>
+加工：大きい白画像を用意し絵をそのまま貼り付け、白い縁が出来るのを無視し絵の全体が見えるように四角状に切り取り<br>
+　　　その後anime-remove-backgroundのローカルで切り抜き、切り抜きが上手くいかなかったものはGIMPで自力切り抜き、電撃や文字等の不純物が存在したためそれをlama-cleanerを活用し除去<br>
+　　　加工が一通り終わった後全ての画像を512*512に縮小、cowboy shot気味やportrait気味にすることは一切していない<br>
+加工後素材詳細：使用素材から変わらず合計15枚、縦に長い画像を白背景に貼り付け四角く縮小しているため左右に白い帯有り<br>
+正則化画像：一度DBを通し、そのモデルを使用し髪の色、コイルの色配置が正しいナンジャモの絵を出力<br>
+　　　　　　見た目のよさや服の色、アングル等は度外視し学習画像の8倍枚数を用意した<br>
+ベースモデル：NAI5、any2.7、gape2、SD(1.4)0.3の割合のものを使用<br>
+LR等のステータス設定：LR0.000001、Scale Learning RateON、9500Step、Apply Horizontal FlipON、Use 8bit AdamON、Train EMAOFF<br>
+安定した呼び出し方：Instance prompt+Class promptネガ、Instance promptの学習対象の名前のみ<br>
+結果：構造が複雑なのに素材の絵柄が一切統一されておらずApply Horizontal FlipONのため見た目はいいものができたが左右がぐっちゃぐちゃ<br>
+　　　またコイルが省略されている素材絵が多いためここの再現も正直甘く、別の服を着せるとお団子ヘアーになることがあった(その場合呼び出し方を変えて回避可能ではあった)<br>
+　　　汎用性は中の下と言った感じでややポーズが固く、他の服を着せた後コイルを呼び出すのに苦労をした<br>
+　　　用意した学習画像に反して左右に白い帯がある絵が量産されるといった現象は発生しなかった<br>
+　　　絵はなんJNVA部★102の&gt;&gt;801、なんJNVA部★103の&gt;&gt;39に投稿<br>
+<br>
+ナンジャモその2<br>
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104<br>
+学習対象：ナンジャモ(ポケモン)<br>
+使用素材：上のナンジャモその1の素材からコイルの形状がまともなものを3枚選択<br>
+加工：上のナンジャモその1の流用なので省略<br>
+加工後素材詳細：流用なので省略<br>
+正則化画像：全面透過処理がされた512*512サイズの画像を学習画像の10倍枚数用意<br>
+ベースモデル：NAI5、any2.7、gape2、SD(1.4)0.3の割合のものを使用<br>
+LR等のステータス設定：LR0.000001、Scale Learning RateON、3000Step、Apply Horizontal FlipOFF、Use 8bit AdamON、Train EMAOFF<br>
+安定した呼び出し方：Instance prompt<br>
+結果：全体の再現性は5割程度といった代物でイマイチな出来だった<br>
+　　　ただし正則化画像無し他条件はこれと同じで作成したものより精度はかなり高く、他のプロンプトと組み合わせた時の劣化も若干抑えれていた<br>
+　　　絵はなんJNVA部★105の&gt;&gt;806に投稿<br>
+<br>
+学習対象：ヒーロー♀(世界樹の迷宮X)<br>
+DBモデルハッシュ：725d85ca5485246a430d2f31f624646d061e8104<br>
+使用素材：公式のアートミュージアム本に掲載されている公式絵3枚(全身1枚、上半身2枚)を使用<br>
+加工：白画像を用意し全身絵を貼り付け絵の全体が見えるように四角く切り取り512*512に縮小、該当キャラクター以外は白に塗りつぶし消去<br>
+　　　胸より上の絵は胴より下の部分が無いため、胴が無いキャラと誤認されないように調整し貼り付けて四角く切り取り512*512に<br>
+加工後素材詳細：使用素材から変わらず合計3枚<br>
+正則化画像：全面透過処理がされた512*512サイズの画像を学習画像の10倍枚数用意<br>
+ベースモデル：NAI5、any2.7、gape2、SD(1.4)0.3の割合のものを使用<br>
+LR等のステータス設定：LR0.000001、Scale Learning RateON、3000Step、Apply Horizontal FlipON、Use 8bit AdamON、Train EMAOFF<br>
+安定した呼び出し方：Instance prompt<br>
+結果：服の再現性は7割、顔回りの再現性は8割、塗りの再現性は8割程度でDBの苦手な目の再現性はイマイチだった<br>
+　　　ただし汎用性が極端に高く、他のプロンプトと組み合わせても劣化が少ない、呼び出し強調をすると素直に再現性が上がる、横顔を指定すると綺麗に構造を補完したものを出すといった代物だった<br>
+　　　同条件、正則化画像無しのものも作成したがこちらの方が明確に出来がよかった<br>
+　　　絵はなんJNVA部★105の&gt;&gt;720に投稿
+</div>
+</div>
+</div></div><div id="content_block_47" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> パラメーター(?)などの説明 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_47-body" class="wiki-section-body-1">
+Google翻訳で<br>
+Training Stable Diffusion with Dreambooth using Diffusers <a href="https://huggingface.co/blog/dreambooth#tldr-recommended-settings" target="_blank" class="outlink" rel="nofollow">https://huggingface.co/blog/dreambooth#tldr-recomm...</a><br>
+Dreambooth Extension for Stable-Diffusion-WebUI README.md <a href="https://github.com/d8ahazard/sd_dreambooth_extension#readme" target="_blank" class="outlink" rel="nofollow">https://github.com/d8ahazard/sd_dreambooth_extensi...</a><br>
+<br>
+SD Dreambooth Extension についての議論(バグとか動かんとか) <a href="https://github.com/d8ahazard/sd_dreambooth_extension/discussions" target="_blank" class="outlink" rel="nofollow">https://github.com/d8ahazard/sd_dreambooth_extensi...</a><br>
+</div></div><div id="content_block_49" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> DiffuserベースのDreamBooth (Kohya版) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_49-body" class="wiki-section-body-1">
+Automatic1111版web UI とは別に環境つくらなあかんで CUIとGUIも別や<br>
+CUI <a href="https://github.com/kohya-ss/sd-scripts" target="_blank" class="outlink" rel="nofollow">https://github.com/kohya-ss/sd-scripts</a><br>
+GUI <a href="https://github.com/bmaltais/kohya_ss" target="_blank" class="outlink" rel="nofollow">https://github.com/bmaltais/kohya_ss</a><br>
+日本語の説明がある <a href="https://github.com/kohya-ss/sd-scripts/blob/main/README-ja.md" target="_blank" class="outlink" rel="nofollow">https://github.com/kohya-ss/sd-scripts/blob/main/R...</a><br>
+<a target="_blank" href="http://seesaawiki.jp/t/external-link/?url=https%3a//note%2ecom/kohya%5fss/n/nba4eceaa4594" class="outlink" rel="nofollow">https://note.com/kohya_ss/n/nba4eceaa4594</a><br>
+<br>
+出力ファイルは last.ckpt か last.safetensors やで<br>
+<br>
+環境構築とかその辺は<a href="https://seesaawiki.jp/nai_ch/d/Dreambooth%2dLoRA">Lora</a>のページ読みや。
+</div></div><div id="content_block_51" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> DreamBooth環境すぐ壊れてむずかしいンゴ…… <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_51-body" class="wiki-section-body-1">
+予めDocker-Desktop入れとく必要あるが比較的簡単なGUIで動くやつがあるで、ただしWSL2を有効にせなあかんから、基本的には<a href="https://seesaawiki.jp/nai_ch/d/1111%5fWSL2">1111_WSL2</a>を見て「Ubuntu 22.04 をセットアップ」までは済ませなあかんで。<br>
+設定周りは上記のextensionと違ってstep数が全画像の合計を指定する形(2023/1/3頃確認時点のバージョン)やったり数字の指定がちょっとちゃうから気をつけや。<br>
+あとこいつは<b>VRAM10GB程</b>は必要なんと<b>SD_V2系モデルに非対応</b>やからそこも注意せなあかん。<br>
+GUI:<a href="https://github.com/smy20011/dreambooth-gui" class="outlink" rel="nofollow">https://github.com/smy20011/dreambooth-gui</a><br>
+Docker-Desktop使いたくないんやったら同じ作者さんがDocker向けCUI版だしとるから頑張ったらええんちゃうかな？まじ知らんけど。(こっちはSD_V2系対応済みらしいで？しらんけど)<br>
+CUI版:<a href="https://github.com/smy20011/dreambooth-docker" class="outlink" rel="nofollow">https://github.com/smy20011/dreambooth-docker</a><br>
+</div></div><div id="content_block_53" class="wiki-section-1"><div class="title-1"><h3 id="content_9">Instance promptとInstance Tokenのどちらが呼び出しキーなのか？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989631&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_53-body" class="wiki-section-body-1">
+正則化画像アリ学習のついでに「本当はどっちなん？」という疑問から検証してみた。ただし古いwebuiとDBでの結果です…<br>
+結論から言えば<br>
+・Existing Prompt Contentsが「Description」の場合、Instance promptに[filewords]のみなら、タグ付けテキスト内にClass Token(例:cpcにしたならcpc)が記述されていれば、Instance Tokenに入力した語(例:shs)が呼び出しキーとして機能する。<br>
+・Instance promptに[filewords]を使わない場合、Instance promptに入力した語が呼び出しキーとなる。<br>
+<div id="content_block_54">
+<div class="toggle-title"><a id="region_plugin_content_9" onclick="toggleRegion(this,'content_block_54-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_54-inside" class="toggle-display">
+<br>
+・検証1<br>
+1.とあるキャラA（茶髪の一般女子）の学習画像3枚（一枚絵を顔、上半身、下半身に分割）、正則化画像30枚（金髪姫騎士の絵）で学習。学習画像の名前はただの数字。同名のテキストファイルに「1girl,適当な特徴」を記述し同フォルダへ。<br>
+2.Instance promptには[filewords]、Class Promptは未入力、Instance Tokenは「shs」、Class Tokenは「1girl」、Existing Prompt Contentsは「Description」と入力し学習を行った。1e-6で600ステップ。<br>
+3.プロンプトに「1girl」で出力すると、学習元のキャラAとは似ていない絵が出る。いくつか[filewords]に記述した単語やAの特徴も入力したが結果は同じで再現性は低かった。<br>
+4.しかし「shs 1girl」で出力すると、明らかにAの特徴が強く出た。<br>
+5.今回の設定では呼び出しキーは「shs」=Instance Tokenだった。<br>
+<br>
+・検証2<br>
+1.検証1との違いはタグ付けしたテキストを使用せず、Instance promptには「nanU」、Class Promptは「Unan」、Instance Tokenは「shs」、Class Tokenは「cpc」、1e-5で300ステップ。<br>
+2.1girlのみで生成するとプロンプトに特徴を記述していないにも関わらず正則化画像（金髪姫騎士）の絵が出て来た。正則化画像が学習結果に影響を与えるというのは事実らしい。Aっぽい絵も低確率で出るがほぼ姫騎士の絵が出る。これは学習率を検証1より10倍にしたせいか？<br>
+3.プロンプトにUnanやcpcでもAの絵は出ない。<br>
+4.検証1では呼び出しキーだった「shs」だとAの特徴が出始めた。しかしまだ金髪姫騎士要素も強い。shsを複数記述、強調するとAの特徴も強く出た。<br>
+5.「nanU」は上記3つのワードよりも一番Aの特徴が強く出た。今回の呼び出しキーと認識していいだろう。<br>
+<br>
+・検証3<br>
+1.検証1はそもそもInstance promptは[filewords]である。Existing Prompt Contentsが「Description」の場合、[filewords]にClass Token(=1girl)が記述されていれば、語の前の位置にInstance Token(=shs)を自動で挿入してくれるらしい。それによって呼び出しキーとしてshsが機能したのかもしれない。Class Tokenを「1girl」以外にしても自動挿入してくれるのだろうか？　<br>
+2.Class Tokenは「cpc」にしてあとは検証1と同じ設定で学習。タグ付けテキスト内に「cpc」という語は無いのを確認。<br>
+3.Instance Token「shs」で生成してもキャラAとは似ていない絵が出力された。<br>
+4.今回の検証ではshsは呼び出しキーとして機能しなかった。<br>
+<br>
+・疑問<br>
+<br>
+検証2では「nanU」が明らかに呼び出しキーとして機能していたが、「shs」も呼び出しキーとして少し機能しているように感じた。Instance promptとInstance Tokenが異なる語の場合、Instance prompt &gt; Instance Token という事なのだろうか？
+</div>
+</div>
+</div></div>
+</div>

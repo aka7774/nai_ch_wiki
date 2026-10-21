@@ -1,0 +1,163 @@
+<div class="user-area">
+🤗<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> Hugging Face</a></li>
+<li class="list-1"><a href="#content_2"> アカウント作成</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> フリーメール推奨</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> Models</a>
+<ul>
+<li class="list-2"><a href="#content_3_2"> アップロード</a>
+<ul>
+<li class="list-3"><a href="#content_3_2_1"> ブラウザでやる方法(容量不問)</a></li>
+<li class="list-3"><a href="#content_3_2_2"> hubでやる方法(5GB以下の場合)</a></li>
+<li class="list-3"><a href="#content_3_2_3"> gitでやる方法(5GB以上の場合)</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_3_3"> ダウンロード</a></li>
+<li class="list-2"><a href="#content_3_4"> コピー(fork)</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> Datasets</a>
+<ul>
+<li class="list-2"><a href="#content_4_5"> アップロードとダウンロード方法</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> Spaces</a></li>
+<li class="list-1"><a href="#content_6"> Organization</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> Hugging Face <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<ul id="content_block_2" class="list-1">
+<li> <a href="https://huggingface.co/" class="outlink">https://huggingface.co/</a></li>
+</ul>
+<br>
+謎のAI企業。潤沢な資金と無限のストレージを持っている。<br>
+<br>
+Stable Diffusionモデルを公式からダウンロードした人ならアカウントを持っているはず。<br>
+<br>
+以下、🤗と記載する。<br>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> アカウント作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_4-body" class="wiki-section-body-1">
+<ul id="content_block_5" class="list-1">
+<li> メールアドレスが必要。</li>
+</ul>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> フリーメール推奨 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+<br>
+以下の条件を満たすと登録メールアドレスがリポジトリの履歴に残ってしまうらしいので注意。<br>
+<br>
+1. メールアドレスを1つしか登録しない<br>
+2. (ブラウザではなくPythonの)Huggingface Hubでlogin()する<br>
+3. ログイン後にgitに認証情報を流用する<br>
+4. gitでpushする
+</div></div><div id="content_block_9" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> Models <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_9-body" class="wiki-section-body-1">
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> アップロード <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+<br>
+自作のマージモデルを公開する手段としておすすめ。<br>
+<ul id="content_block_12" class="list-1">
+<li> PublicかPrivateが選択できる。</li>
+<li> 容量無制限。</li>
+<li> 永遠に無料。ほんまかいな。</li>
+</ul>
+</div></div><div id="content_block_14" class="wiki-section-3"><div class="title-3"><h5 id="content_3_2_1"> ブラウザでやる方法(容量不問) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_3_2_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_14-body" class="wiki-section-body-3">
+<ol id="content_block_15" class="list-1">
+<li> <a href="https://huggingface.co/new" class="outlink">https://huggingface.co/new</a> をブラウザで開く</li>
+<li> ownerを選ぶ(自分とか所属のOrgとか)</li>
+<li> repo_id を決める</li>
+<li> 自分/Orgメンバーだけに公開するならPrivateにする</li>
+<li> Files の Upload Files(画像参照)</li>
+<li> ドラッグしてボタン押して待つ</li>
+</ol>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/DNaD1kWzii.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/DNaD1kWzii.png" border="0"></a><br>
+</div></div><div id="content_block_17" class="wiki-section-3"><div class="title-3"><h5 id="content_3_2_2"> hubでやる方法(5GB以下の場合) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_3_2_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_17-body" class="wiki-section-body-3">
+<ul id="content_block_18" class="list-1">
+<li> write権限のあるtokenが必要。ブラウザから発行できる。</li>
+<li> Huggingface Hub(pythonモジュール)のインストールが必要。</li>
+<li> <a href="https://seesaawiki.jp/nai_ch/d/Colab">Colab</a>の「ファイルのアップロード」に書いてあるのでそっちを参照</li>
+</ul>
+</div></div><div id="content_block_20" class="wiki-section-3"><div class="title-3"><h5 id="content_3_2_3"> gitでやる方法(5GB以上の場合) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_3_2_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_20-body" class="wiki-section-body-3">
+<ul id="content_block_21" class="list-1">
+<li> write権限のあるtokenが必要。ブラウザから発行できる。</li>
+</ul>
+<ol id="content_block_22" class="list-1">
+<li> lfsファイル以外をcloneしてくる</li>
+<li> ファイルをaddしてcommitしてpush</li>
+</ol>
+</div></div><div id="content_block_24" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> ダウンロード <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_24-body" class="wiki-section-body-2">
+<ul id="content_block_25" class="list-1">
+<li> URLかgit(🤗Hub)経由で出来る。</li>
+<li> Privateだとログイン済みのブラウザか🤗Hubでread権限のtokenが必要。</li>
+<li> gitだと大量のファイルに便利だが.gitのせいでストレージ容量を最低2倍食う。
+<ul class="list-2">
+<li> できればSSD上でgit cloneしてファイルだけHDDに移動して消すのが吉。</li>
+<li> あるいは数個程度ならgitを使わないとか。</li>
+</ul>
+</li>
+</ul>
+</div></div><div id="content_block_27" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> コピー(fork) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_27-body" class="wiki-section-body-2">
+<ul id="content_block_28" class="list-1">
+<li> <a href="https://huggingface.co/spaces/osanseviero/repo_duplicator" class="outlink">https://huggingface.co/spaces/osanseviero/repo_dup...</a></li>
+<li> 秒で終わる</li>
+<li> 公開設定がPublicになるのでPrivateにしたかったら設定で変える</li>
+</ul>
+</div></div><div id="content_block_30" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> Datasets <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_30-body" class="wiki-section-body-1">
+<ul id="content_block_31" class="list-1">
+<li> 画像とかキャプションテキストとかを置く</li>
+<li> 規約に明記されてないけどNSFW画像は置いてる人がいない</li>
+<li> zipは勝手にプレビュー用に展開される</li>
+</ul>
+</div></div><div id="content_block_33" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5"> アップロードとダウンロード方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_33-body" class="wiki-section-body-2">
+<ul id="content_block_34" class="list-1">
+<li> Modelと同じ</li>
+</ul>
+</div></div><div id="content_block_36" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> Spaces <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_36-body" class="wiki-section-body-1">
+<br>
+あくまでデモ用で、実用ツールはColabで動かしたほうが良さそう。<br>
+<ul id="content_block_37" class="list-1">
+<li> 🤗にデモアプリが置ける。
+<ul class="list-2">
+<li> CPUは無料。16GBのメモリと2コアのCPUらしい。</li>
+<li> GPUは有料。月額+従量課金らしい。</li>
+</ul>
+</li>
+<li> gradio(python)で実装するNotebookって感じ。</li>
+<li> バックエンドは共有なので順番待ちが必要。</li>
+</ul>
+</div></div><div id="content_block_39" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> Organization <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5007868&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_39-body" class="wiki-section-body-1">
+<br>
+<ul id="content_block_40" class="list-1">
+<li> Teamを作れる。</li>
+<li> Organization ModelsをPrivate設定するとTeamメンバーだけで共有できる。</li>
+<li> write権限のあるtokenが発行できない
+<ul class="list-2">
+<li> 所属している個人がwrite権限を持っていれば個人のwriteトークンで代用できます</li>
+</ul>
+</li>
+</ul>
+</div></div>
+</div>

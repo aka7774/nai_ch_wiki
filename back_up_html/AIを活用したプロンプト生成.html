@@ -1,0 +1,285 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+ここではGenerativeAIを活用したプロンプトの生成についてまとめます。<br>
+代表的なものではOpenAIのChatGPTやMicrosoftのBingチャットなどです。<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> ChatGPT</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> ChatGPTとは</a></li>
+<li class="list-2"><a href="#content_2_2"> クイックスタートChatGPT</a></li>
+<li class="list-2"><a href="#content_2_3"> ChatGPTによるプロンプト生成</a>
+<ul>
+<li class="list-3"><a href="#content_2_3_1"> Question template for AI prompt generation(v1.4)</a></li>
+<li class="list-3"><a href="#content_2_3_2">AIによるプロンプト生成用質問テンプレート(v1.4)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3">Grok</a>
+<ul>
+<li class="list-2"><a href="#content_3_4">Grokとは</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4">Bingチャット</a>
+<ul>
+<li class="list-2"><a href="#content_4_5">Bingチャットとは</a></li>
+<li class="list-2"><a href="#content_4_6"> クイックスタート Bingチャット</a></li>
+<li class="list-2"><a href="#content_4_7"> Bingチャットによるプロンプト生成</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> ChatGPT <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> ChatGPTとは <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+ChatGPTはOpenAIの開発したチャット形式のAIです。<br>
+「ChatGPT は、大型言語モデルである GPT-3 の拡張版です。GPT-3 は自然言語処理タスクを実行するためにトレーニングされたものですが、ChatGPT はその機能をさらに拡張し、人間の対話をより自然に再現するように設計されています。ChatGPT は、人間が話したように応答することができるようになっています。しかし、ChatGPT は実際の人間ではありません。私たちは、人工知能を使用して人間の対話を模倣することができるようになっています。」<br>
+「私は OpenAI によってトレーニングされた大型言語モデルです。私は人間の対話を模倣することができますが、実際の人間ではありません。私はあなたが知りたいことを教えることができるように、教育されています。どうぞ、お尋ねください。」<br>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> クイックスタートChatGPT <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+<ol id="content_block_8" class="list-1">
+<li> <a href="https://chat.openai.com/chat" class="outlink">https://chat.openai.com/chat</a></li>
+<li> Sigh up -&gt; Creat OpenAI Account</li>
+</ol>
+</div></div><div id="content_block_10" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3"> ChatGPTによるプロンプト生成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_10-body" class="wiki-section-body-2">
+</div></div><div id="content_block_12" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_1"> Question template for AI prompt generation(v1.4) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_2_3_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_12-body" class="wiki-section-body-3">
+Global Version.<br>
+Use the following template to ask questions to ChatGPT. Quality Tags for Image Generative AI should be checked already before asking to ChatGPT. If it is not needed, please delete describe part.<br>
+<hr size="1" noshade>
+<pre id="content_block_14" class="BOX">
+Suppose I use an AI that outputs an image when I enter a prompt. For example, here is an example of a prompt that produces a beautiful image of a girl standing in a gentle breeze.
+1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind
+The prompt requires the following elements.
+(1) Words to describe the method of depiction, such as watercolor or oil painting.
+(2) Words to describe external features, ornaments and belongings (also specify colors, patterns, shapes).
+(3) Words to describe age, hair color, hairstyle, hair length, hair accessory, eye color, eye shape, facial expression, breast size, and clothing.
+(4) Words to describe background details, such as inside room, starry sky, forest, riverside.
+(5) Words to direct the pose from head to toe can also be added to the prompt.
+
+Be sure to include "1girl, solo," at the beginning of the prompt. Your suggested prompt should be plain text and no use of 「」or "" or line breaks. Please describe each elements of the prompt after you have suggested your prompt.
+Prompts may use danbooru tags. Based on these, please tell me a 150-element prompt that can generate illustrations for the following themes.
+</pre>
+<br>
+<div id="content_block_15">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_15-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>English v1.3</p></div>
+<div style="display:none" id="content_block_15-inside" class="toggle-display">
+Global Version.<br>
+Use the following template to ask questions to ChatGPT. Quality Tags for Image Generative AI should be checked already before asking to ChatGPT. If it is not needed, please delete describe part.<br>
+<hr size="1" noshade>
+Suppose I use an AI that outputs an image when I enter a prompt. For example, here is an example of a prompt that produces a beautiful image of a girl standing in a gentle breeze.<br>
+<textarea id="content_block_17" class="PLAIN-BOX">
+「1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind」
+</textarea>
+The prompt requires the following elements.<br>
+(1) Words to describe the method of depiction, such as watercolor or oil painting<br>
+(2) Words to describe external features, ornaments and belongings (also specify colors, patterns, shapes)<br>
+(3) Words to describe age, hair color, hairstyle, hair length, hair accessory, eye color, eye shape, facial expression, breast size, and clothing<br>
+(4) Words to describe background details, such as inside room, starry sky, forest, riverside.<br>
+(5) Words to direct the pose from head to toe can also be added to the prompt.<br>
+<br>
+Be sure to include "1girl, solo," at the beginning of the prompt. Please use plain text in your response, no use of "" or line breaks. Please describe each elemets of the prompt after you have suggested your prompt.<br>
+Prompts may use danbooru tags. Based on these, please tell me a 150-element prompt that can generate illustrations for the following themes.<br>
+「」
+</div>
+</div>
+<br>
+<div id="content_block_19">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_19-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>English v1.2</p></div>
+<div style="display:none" id="content_block_19-inside" class="toggle-display">
+Global Version.<br>
+Use the following template to ask questions to ChatGPT.<br>
+<hr size="1" noshade>
+<br>
+Suppose I use an AI that outputs an image when I enter a prompt. For example, here is an example of a prompt that produces a beautiful image of a girl standing in a gentle breeze.<br>
+<textarea id="content_block_21" class="PLAIN-BOX">
+「masterpiece, best quality, ultra-detailed, illustration, 1girl, solo, sitting, an extremcly delicate and beautiful, beautiful detailed sky, eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer, breeze,Fying splashes,Fying petals, wind」
+</textarea>
+The prompt requires the following elements.<br>
+(1) Words to describe the method of depiction, such as watercolor or oil painting<br>
+(2) Words to describe external features, ornaments and belongings (also specify colors and patterns)<br>
+(3) Words to describe age, hair color, hairstyle, hair length, eye color, eye shape, facial expression, breast size, and clothing<br>
+(4) Words to describe background details.<br>
+(5) Words to direct the pose from head to toe can also be added to the prompt.<br>
+<br>
+Be sure to include "masterpiece, best quality, ultra-detailed, illustration, 1girl, solo," at the beginning of the prompt. Please use plain text in your response, "" or line breaks.<br>
+Prompts may use danbooru tags. Based on these, please tell me a 150-element prompt that can generate illustrations for the following themes.<br>
+「」
+</div>
+</div>
+</div></div><div id="content_block_24" class="wiki-section-3"><div class="title-3"><h5 id="content_2_3_2">AIによるプロンプト生成用質問テンプレート(v1.4) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_2_3_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_24-body" class="wiki-section-body-3">
+クオリティータグは付与済みの前提です。プロンプトを後から編集しやすいように説明させる部分が入っていますので、不要なら消してください。以下テンプレート<br>
+<hr size="1" noshade>
+<pre id="content_block_26" class="BOX">
+プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、
+1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind
+です。
+プロンプトには以下の要素が必要です。
+�／綺眠茲簗�絵など描写方法を説明するための単語
+��外見的特徴や装飾物や持ち物の(色、模様、形も指定)を説明するための単語
+�Ｇ�齢、髪色、髪型、髪の長さ、髪に付けたアクセサリ、目の色、目の形、表情、胸の大きさ、服装を説明するための単語
+�ど�屋の中、星空、森、川辺など背景の詳細な説明をするための単語
+�ゥ檗璽困鯑�からつま先まで指示するための単語もプロンプトに加えてください。
+プロンプトの文頭には"1girl, solo,"を必ず含めてください。プロンプトは「」や""で囲んだり改行を使うのは禁止です。プロンプトは平文でお願いします。プロンプトを提案した後には、プロンプトの各要素を説明してください。
+プロンプトはdanbooruのタグを使うことができます。これらを踏まえて、以下のテーマに沿ったイラストを生成できるプロンプトを150要素で教えて下さい。
+</pre>
+<br>
+<div id="content_block_27">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_27-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>v1.3</p></div>
+<div style="display:none" id="content_block_27-inside" class="toggle-display">
+クオリティータグは付与済みの前提です。プロンプトを後から編集しやすいように説明させる部分が入っていますので、不要なら消してください。以下テンプレート<br>
+<hr size="1" noshade>
+プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、<br>
+<textarea id="content_block_29" class="PLAIN-BOX">
+「1girl, solo, sitting, an extremely delicate and beautiful, beautiful detailed sky, beautiful detailed eye, side blunt bangs, hairs between eyes, close to viewer, breeze,flying splashes,flying petals, wind」
+です。
+</textarea>
+プロンプトには以下の要素が必要です。<br>
+�／綺眠茲簗�絵など描写方法を説明するための単語<br>
+��外見的特徴や装飾物や持ち物の(色、模様、形も指定)を説明するための単語<br>
+�Ｇ�齢、髪色、髪型、髪の長さ、髪に付けたアクセサリ、目の色、目の形、表情、胸の大きさ、服装を説明するための単語<br>
+�ど�屋の中、星空、森、川辺など背景の詳細な説明をするための単語<br>
+�ゥ檗璽困鯑�からつま先まで指示するための単語もプロンプトに加えてください。<br>
+プロンプトの文頭には「1girl, solo,」を必ず含めてください。回答には「""」や改行は使わず、平文でお願いします。プロンプトを提案した後には、プロンプトの各要素を説明してください。<br>
+プロンプトはdanbooruのタグを使うことができます。これらを踏まえて、以下のテーマに沿ったイラストを生成できるプロンプトを150要素で教えて下さい。<br>
+「」
+</div>
+</div>
+<br>
+<div id="content_block_31">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_31-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>v1.2</p></div>
+<div style="display:none" id="content_block_31-inside" class="toggle-display">
+コメ欄のやつを参考に調整。数値や（）による強調は、ワードごとにやたらと付けられることが多いので除外しました。以下テンプレ<br>
+<hr size="1" noshade>
+プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、<br>
+<textarea id="content_block_33" class="PLAIN-BOX">
+「masterpiece, best quality, ultra-detailed, illustration, 1girl, solo, sitting, an extremcly delicate and beautiful, beautiful detailed sky, eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer, breeze,Fying splashes,Fying petals, wind」
+</textarea>
+です。<br>
+プロンプトには以下の要素が必要です。<br>
+�／綺眠茲簗�絵など描写方法を説明するための単語<br>
+��外見的特徴や装飾物や持ち物の(色や模様も指定)を説明するための単語<br>
+�Ｇ�齢、髪色、髪型、髪の長さ、目の色、目の形、表情、胸の大きさ、服装を説明するための単語<br>
+�で愀覆両楮戮弊睫世鬚垢襪燭瓩涼姥�<br>
+�ゥ檗璽困鯑�からつま先まで指示するための単語もプロントに加えられます。<br>
+プロンプトの文頭には「masterpiece, best quality, ultra-detailed, illustration, 1girl, solo,」を必ず含めてください。回答には「""」や改行は使わず、平文でお願いします。<br>
+プロンプトはdanbooruのタグを使うことができます。これらを踏まえて、以下のテーマに沿ったイラストを生成できるプロンプトを150要素で教えて下さい。<br>
+「」
+</div>
+</div>
+<br>
+<div id="content_block_35">
+<div class="toggle-title"><a id="region_plugin_content_5" onclick="toggleRegion(this,'content_block_35-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>v1.1</p></div>
+<div style="display:none" id="content_block_35-inside" class="toggle-display">
+プロンプトを入力すると、画像を出力するAIがあります。例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、<br>
+<textarea id="content_block_36" class="PLAIN-BOX">
+「(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind」
+</textarea>
+です。囚みにプロンプトでの括弧「()」は中のキーワードを強調する作用を持ちます。<br>
+これを踏まえて、以下のテーマに沿ったプロンプトを150words程度で3パターン書いてください。<br>
+「黒髪の美しい女性が微笑んでこちらを見ているイラスト」<br>
+〜AIが答える〜<br>
+※解説がほしいときは以下のように聞くと説明してくれます。<br>
+それぞれのプロンプトについて解説してください。<br>
+〜AIが答える〜
+</div>
+</div>
+<br>
+<div id="content_block_38">
+<div class="toggle-title"><a id="region_plugin_content_6" onclick="toggleRegion(this,'content_block_38-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>v1.0</p></div>
+<div style="display:none" id="content_block_38-inside" class="toggle-display">
+プロンプトを入力すると、画像を出力するAIがあります。<br>
+例えば、そよ風の中で佇む少女の美麗な画像を出すプロンプトの例は、<br>
+<pre id="content_block_39" class="BOX">
+「(((masterpiece))), (((best quality))), ((ultra-detailed)), (illustration), (1girl), (solo), sitting, ((an extremcly delicate and beautiful)), ((beautiful detailed sky)), eautiful detailed eye, side blunt bangs, hairsbetweeneyes, close to viewer,((breeze)),Fying splashes,Fying petals, wind」 
+</pre>
+です。囚みにプロンプトでの括弧「()」は中のキーワードを強調する作用を持ちます。<br>
+ここまでで何か質問はありますか?<br>
+〜AIが答える〜<br>
+では、水の中で泳ぐ少女の美麗な画像を出すプロンプトを3パターン書いてください。<br>
+〜AIが答える〜<br>
+それぞれのプロンプトについて解説してください。<br>
+〜AIが答える〜
+</div>
+</div>
+<br>
+<div id="content_block_41">
+<div class="toggle-title"><a id="region_plugin_content_7" onclick="toggleRegion(this,'content_block_41-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>スレより引用</p></div>
+<div style="display:none" id="content_block_41-inside" class="toggle-display">
+ChatGPTにプロンプトを書かせるって奴、あくまでジョークの類だと思ってた。でも試してみたら、完全に認識を改めた。<br>
+以下チャット内容から画像生成まで、チェリーピックは一切していない。シード値他は固定。プロンプトのみ変更。<br>
+１．元素法典より１つプロンプトを借用（生成結果↓）<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/Jym8Izt_9t.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/Jym8Izt_9t.png" border="0"></a><br>
+２．ChatGPTに例とお題を与えてプロンプトを考えてもらう<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/brGesToaqK.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/brGesToaqK.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/vIFAqNuH3E.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/vIFAqNuH3E.png" border="0"></a><br>
+３．教えてもらったプロンプトで生成する<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/s7MuoGaXdx.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/s7MuoGaXdx.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/bVB8rf2Q5i.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/bVB8rf2Q5i.png" border="0"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/5vjuWcUYGC.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/5vjuWcUYGC.png" border="0"></a><br>
+実用的な話として、機械翻訳にかけると直訳になって上手くいかない場合も多々ある。自分で英単語や熟語を調べて組み合わせを考えるより、おそらく早い。<br>
+781<br>
+えっ何やこれ凄すぎない？<br>
+こんな事しとるワイがアホみたいやん<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/Le5qI67s44.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/Le5qI67s44.png" border="0"></a>
+</div>
+</div>
+</div></div><div id="content_block_44" class="wiki-section-1"><div class="title-1"><h3 id="content_3">Grok <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_44-body" class="wiki-section-body-1">
+</div></div><div id="content_block_46" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4">Grokとは <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_46-body" class="wiki-section-body-2">
+イーロン・マスクのxAI社が出しているAI。<br>
+Twitter板Grokは画像生成で国際問題になり有料ユーザーのみ利用可能になったが、直接Grokにアクセスすれば問題なく利用可能。<br>
+無料プランでもNSFW系の画像生成してくれたり規制が非常に緩いので、Grokに聞きながらプロンプト生成が可能。<br>
+参考までに他のAI（Gemini、Perplexity、Claude、Qwen、DeepSeekなど）はエロ関係に非常に厳しいのでエロだと分かると答えてくれない。<br>
+<a href="https://grok.com/" class="outlink">https://grok.com/</a><br>
+</div></div><div id="content_block_48" class="wiki-section-1"><div class="title-1"><h3 id="content_4">Bingチャット <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_48-body" class="wiki-section-body-1">
+</div></div><div id="content_block_50" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5">Bingチャットとは <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_50-body" class="wiki-section-body-2">
+OpenAIの大規模言語処理モデル「Prometheus」をベースにしたAIチャットで、Microsoftの検索エンジン・Bingに組み込まれている。<br>
+特徴としては検索専用のAIモデルであり、インターネットの検索結果に基づいて回答し、回答時に情報源のリンクを付与する。<br>
+</div></div><div id="content_block_52" class="wiki-section-2"><div class="title-2"><h4 id="content_4_6"> クイックスタート Bingチャット <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_4_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_52-body" class="wiki-section-body-2">
+<ol id="content_block_53" class="list-1">
+<li> <a href="https://www.bing.com/new" class="outlink">https://www.bing.com/new</a></li>
+<li> 「順番待ちリストに参加」というボタンをクリック</li>
+<li> 申請が通れば使用可能(数日〜1週間ほど掛かる)</li>
+</ol>
+</div></div><div id="content_block_55" class="wiki-section-2"><div class="title-2"><h4 id="content_4_7"> Bingチャットによるプロンプト生成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4994283&amp;part=content_4_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_55-body" class="wiki-section-body-2">
+<pre id="content_block_56" class="BOX">
+こんにちは。Stable Diffusionで遊びませんか？以下がルールです。
+まず私が作ってほしい画像のイメージを教えるので、PromptとNegativePromptを教えてください。
+以下は、PromptとNegativePromptを作成する際のルールです。
+このルールは遊びの重要な要素ですので、必ず守りましょう。
+1.PromptとNegativePromptは75単語以上で具体的に指定してください。
+  特に人の顔、髪型、服装、服飾については詳細に指定してください。
+2.PromptはStable Diffusionに作成する画像のイメージを表す文章としてください。
+  NegativePromptはStable Diffusionに作成してほしくない画像のイメージを表す文章としてください。
+  つまり、NegativePromptはPromptの正反対の意味を持った文章を作りましょう。
+3.PromptとNegativePromptはは英文とし、ファイル名に使えない記号も使用禁止とします。
+4.教えるイメージには固有名詞を使えますが、PromptやNegativePromptには固有名詞を入れることを禁止します。
+  教えるイメージに固有名詞があった場合はインターネットで特徴を検索し、固有名詞の代わりにその特徴を分析して間接的にPromptとNegativePromptを生成してください。
+5.Promptの開始には Masterpiece, Best Quality, ultra detailed, illustration, を付加してください
+6.NegativePromptの開始には (worst quality, low quality:1.4), を付加してください
+テーマは「○○○○を△△△△する××××」です。
+
+-AIの返答-
+
+</pre>
+※5,6番を入れるとBingが回答を拒否する場合がある
+</div></div>
+</div>

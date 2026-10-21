@@ -1,0 +1,165 @@
+<div class="user-area">
+言葉がおかしい理由は<a href="https://seesaawiki.jp/nai_ch/d/%cd%d1%b8%ec%bd%b8">用語集</a>を見てもらうとして、<br>
+Stable diffusion webui (automatic1111)をColabなどのクラウドGPUで動かす話。<br>
+<br>
+<br>
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> どんなサービスなのか？</a></li>
+<li class="list-1"><a href="#content_2"> 注意すること</a></li>
+<li class="list-1"><a href="#content_3"> クラウドサービスの検討</a>
+<ul>
+<li class="list-2"><a href="#content_3_1"> Colab (Google Colaboratory)</a>
+<ul>
+<li class="list-3"><a href="#content_3_1_1"> 有料版 Colab Pro/Colab Pro+</a></li>
+<li class="list-3"><a href="#content_3_1_2"> 有料版 Drive</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_3_2"> Paperspace gradient</a>
+<ul>
+<li class="list-3"><a href="#content_3_2_3"> 無料版</a></li>
+<li class="list-3"><a href="#content_3_2_4"> 有料版</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_3_3"> Huggingface Hub</a></li>
+<li class="list-2"><a href="#content_3_4"> 他のサービス</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> どんなサービスなのか？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+月額や時間ごとにお金を払って（もしくは無料で）GPUの載ったサーバを遠隔で使わせてくれる。<br>
+うまく使えば高いGPUを買わずにローカル版を遊べる。学習もできる。<br>
+サブスクなので高性能PCを買う金銭的余裕がなかったり、PC知識がなく選ぶのが怖いという人でも少ない初期投資で低リスクに始められることがメリット。<br>
+一方でレンタルして使う形になるので、サービスによるが使用時間を気にする必要があったり、スペックや操作性の自由度が低いことなどがデメリット。<br>
+<br>
+サービスの形態はサービスによって異なる。<br>
+大きく分けてマシンごと貸す自由度が高くて値段が高いタイプと自由度が低くて制限があるが値段が安い型がある。<br>
+前者の代表例として、GCP Compute Engine、AWS EC2、Vast.ai、runpodなどがある。後者の例としてGoogle Colaboratoryやその派生のPaperspace Gradientがある。<br>
+前者では基本的には通常のPCを持つのと同様の自由度が高い運用ができる。ただし基本GUI（デスクトップ上でマウスカーソルぽちぽち）がなく、CUIによる操作（文字でコマンドを入力して操作）がほぼ必須で使用にはlinuxの知識も求められる。<br>
+後者の場合はJupyter notebookというpython用のインターフェースでの操作が基本で主に機械学習やデータサイエンス領域の研究用に機能が特化している。通常マシンの連続起動時間に制限があったり、シャットダウンごとにデータがリセットされるストレージが基本だったり制限がある分料金が抑えられ、環境構築の手間等も少なくなっている。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 注意すること <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+<br>
+ローカルは諸々自己責任だが、<br>
+クラウドでやる場合、運営に見られてるかもしれない。<br>
+違法性の高い行動を行なっていればサービスの利用を制限されたりBANされる可能性もある。<br>
+</div></div><div id="content_block_5" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> クラウドサービスの検討 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_5-body" class="wiki-section-body-1">
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1"> Colab (Google Colaboratory) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+<ul id="content_block_8" class="list-1">
+<li> <a href="https://colab.research.google.com/?hl=ja" class="outlink">https://colab.research.google.com/?hl=ja</a></li>
+</ul>
+<ul id="content_block_9" class="list-1">
+<li> <b><span style="color:#ff0000;">2023年4月21日以降、無料プランでのstable-diffusion使用が禁止になりました。</span></b>
+<ul class="list-2">
+<li> <span style="color:#ff0000;">有料プランでは動きます。したがってcolabを使用する場合は課金必須になりました。</span></li>
+</ul>
+</li>
+</ul>
+<br>
+<del>無料版で使える</del><a href="https://seesaawiki.jp/nai_ch/d/%c6%fe%cc%e7%cd%d1Notebook">入門用Notebook</a> があるので試してみてください。<br>
+<br>
+Pythonのバージョンは3.8だが、3.10まで上げることができる。<br>
+xformersをコンパイル無しで動かせるcondaがおすすめ。<br>
+<br>
+RAMが少ないので、でかいモデルのマージでエラーになるらしい。<br>
+(メモリさえ積んであればローカルでやれる)<br>
+</div></div><div id="content_block_12" class="wiki-section-3"><div class="title-3"><h5 id="content_3_1_1"> 有料版 Colab Pro/Colab Pro+ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_3_1_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_12-body" class="wiki-section-body-3">
+NovelAI 本家のように毎月ポイントが与えられてポイントを払ってコンピュータを使う仕様。<br>
+3つの性能の違うインスタンスがある。<br>
+性能の違いについては<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%c9%f4%a1%a1PC%a5%b9%a5%da%a5%c3%a5%af%c1%ea%c3%cc%bc%bc">PCスペック相談室</a>を参照。<br>
+T4 21円/時間<br>
+V100 57円/時間<br>
+A100 140円/時間<br>
+<br>
+Colab Pro 月額1072円<br>
+毎月100CU付与<br>
+<br>
+Colab Pro+ 月額5243円<br>
+毎月500CU付与<br>
+<br>
+</div></div><div id="content_block_14" class="wiki-section-3"><div class="title-3"><h5 id="content_3_1_2"> 有料版 Drive <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_3_1_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_14-body" class="wiki-section-body-3">
+<br>
+月額250円で容量が100GBになる。(15+100GBではない)<br>
+<span style="color:#ff0000;">繰り返すが、ここに違法なファイルや国際的に問題のある画像を置いてはいけない。</span><br>
+</div></div><div id="content_block_16" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> Paperspace gradient <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_16-body" class="wiki-section-body-2">
+従量課金でなく月定額制なGoogle colab類似のサービス。安価な代わりに、GPUが借りれない時間が多かったり不安定な場合がある。<br>
+現在良いGPUを引きにくくなっている。<ul id="content_block_17" class="list-1">
+<li> <a href="https://www.paperspace.com/gradient" class="outlink">https://www.paperspace.com/gradient</a></li>
+</ul>
+</div></div><div id="content_block_19" class="wiki-section-3"><div class="title-3"><h5 id="content_3_2_3"> 無料版 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_3_2_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_19-body" class="wiki-section-body-3">
+<ul id="content_block_20" class="list-1">
+<li> VRAM 8GB</li>
+<li> 基本（起動ごとに消える）ストレージ：不明</li>
+<li> 永続（起動ごとに消えない）ストレージ：5GB</li>
+</ul>
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5 id="content_3_2_4"> 有料版 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_3_2_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+8ドル/月プラン<br>
+使用可能GPU：RTX4000、RTX5000、A4000等（時間帯によっては利用者多数のマシンは使えない）<ul id="content_block_23" class="list-1">
+<li> 基本（起動ごとに消える）ストレージ ：不明</li>
+<li> 永続（起動ごとに消えない）ストレージ：15GB</li>
+</ul>
+<br>
+39ドル/月プラン<br>
+使用可能GPU：A5000、A6000、A100(VRAM 80GB)等（時間帯によっては利用者多数のマシンは使えない）<ul id="content_block_24" class="list-1">
+<li> 基本（起動ごとに消える）ストレージ ：不明</li>
+<li> 永続（起動ごとに消えない）ストレージ：50GB</li>
+</ul>
+<br>
+障害が多く、良いGPUを引きにくくなっているのでお勧めしない。<br>
+アフィ経由で登録した人は、紹介者に使い方を聞きましょう。<br>
+</div></div><div id="content_block_26" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> Huggingface Hub <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_26-body" class="wiki-section-body-2">
+<br>
+ストレージ容量対策。<br>
+<br>
+ckptダウンロードする時に使ってるはずのサイト。<br>
+モデルをアップロードできる。<br>
+マージモデルやDreamboothなどの大容量データに便利。<br>
+数行のコードで出来るのでNotebookにセルを追加するのが便利。<br>
+以下の方法だと1ファイル5GBまで。<br>
+gitを使う方法もある。<br>
+<a href="https://huggingface.co/docs/huggingface_hub/how-to-upstream" class="outlink">https://huggingface.co/docs/huggingface_hub/how-to...</a><br>
+<br>
+114スレ625<br>
+<br>
+<pre id="content_block_27" class="BOX">
+今80gbくらい使ってるけど何も文句言われんで&amp;#9786;
+やり過ぎるとある日突然banされるとかはあるかもしれんけど 
+
+from huggingface_hub import upload_file
+upload_file(path_or_fileobj="アップロードするファイル", path_in_repo="保存名", repo_id="ユーザー名/リポジトリ名", token="トークン")
+
+/tmp/hoge.ckpt を foo ユーザーの bar リポジトリ上の huga ディレクトリにアップロードしたい場合はこうする
+
+from huggingface_hub import upload_file
+upload_file(path_or_fileobj="/tmp/hoge.ckpt", path_in_repo="huga/hoge.ckpt", repo_id="foo/bar", token="トークン")
+
+トークンは書込み可能なものを発行する
+読み込み限定だと404エラーが出る 
+</pre>
+</div></div><div id="content_block_29" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> 他のサービス <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4991055&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_29-body" class="wiki-section-body-2">
+<br>
+<ul id="content_block_30" class="list-1">
+<li> runpod: 最初のころ少し話題になった安価なクラウドGPUサイト。有料。値上げした?</li>
+<li> vast.ai: 個人のGPU/Storageを貸し借りできる。他の同等のサービスと比較して安価。</li>
+<li> AWSとかAzureとか: 値段が凄く高くなるので非推奨。</li>
+</ul>
+</div></div>
+</div>

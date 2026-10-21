@@ -1,0 +1,344 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> WSL2 のセットアップ</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> WSL2 に Ubuntu 22.04 をインストール</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> Ubuntu 22.04 をセットアップ</a>
+<ul>
+<li class="list-2"><a href="#content_3_2"> ユーザー名とパスワードの設定</a></li>
+<li class="list-2"><a href="#content_3_3"> aptを最新にする</a></li>
+<li class="list-2"><a href="#content_3_4"> Python 3.10.xのインストール</a>
+<ul>
+<li class="list-3"><a href="#content_3_4_1"> pipを最新にする</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_4"> AUTOMATIC1111 stable-diffusion-webui</a>
+<ul>
+<li class="list-2"><a href="#content_4_5"> 1111本体の設置</a></li>
+<li class="list-2"><a href="#content_4_6"> venvの作成</a></li>
+<li class="list-2"><a href="#content_4_7"> torchとxformersのインストール</a></li>
+<li class="list-2"><a href="#content_4_8"> モデルの設置</a></li>
+<li class="list-2"><a href="#content_4_9"> コマンドラインオプションの編集</a></li>
+<li class="list-2"><a href="#content_4_10"> 生成時のエラー対策</a></li>
+<li class="list-2"><a href="#content_4_11"> フォルダアイコンからエクスプローラーを開きたいンゴ</a></li>
+<li class="list-2"><a href="#content_4_12"> 1111の起動</a></li>
+<li class="list-2"><a href="#content_4_13"> Windowsから1111を起動する</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> kohya sd-scripts</a>
+<ul>
+<li class="list-2"><a href="#content_5_14"> インストール</a></li>
+<li class="list-2"><a href="#content_5_15"> 学習入門を体験する</a></li>
+<li class="list-2"><a href="#content_5_16"> 学習入門Loraの作成</a></li>
+<li class="list-2"><a href="#content_5_17"> Loraファイルの取得</a></li>
+<li class="list-2"><a href="#content_5_18"> 備考</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+前よりは簡単になったけどまだ細かいところでめんどくさい。<br>
+<ul id="content_block_2" class="list-1">
+<li> WindowsのWSL2(Linux)環境</li>
+<li> 普段使いのほかに16GB以上の空きメモリが必要</li>
+<li> ファイルの操作や編集はWindows上でおこなう</li>
+<li> Colab版に近い手順
+<ul class="list-2">
+<li> コンパイルは行わない</li>
+<li> この環境ではSD関連以外を使わない</li>
+</ul>
+</li>
+<li> 使いこなすにはLinuxの知識が必要</li>
+</ul>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> WSL2 のセットアップ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_4-body" class="wiki-section-body-1">
+<br>
+Powershellを管理者権限で起動して以下を実行<br>
+<pre id="content_block_5" class="BOX">
+wsl --install
+</pre>
+再起動を要求されるので再起動する<br>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> WSL2 に Ubuntu 22.04 をインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+<br>
+最初からUbuntuが入ってる。なければインストールする。<br>
+リセットできないときもアンインストールして入れ直す。<br>
+<ul id="content_block_8" class="list-1">
+<li> Microsoft Storeを起動</li>
+<li> ubuntu 22 で検索</li>
+<li> Ubuntu 22.04.1 LTS を選んでインストール(2023/01/25現在の最新)</li>
+</ul>
+</div></div><div id="content_block_10" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> Ubuntu 22.04 をセットアップ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_10-body" class="wiki-section-body-1">
+<br>
+基本的には黄色い枠の中をコピペしてってください<br>
+</div></div><div id="content_block_12" class="wiki-section-2"><div class="title-2"><h4 id="content_3_2"> ユーザー名とパスワードの設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_3_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_12-body" class="wiki-section-body-2">
+<br>
+Ubuntu 22.04.1 LTSを起動する<br>
+<br>
+初期化(数分)<br>
+<ul id="content_block_13" class="list-1">
+<li> Enter new UNIX username: user(なんでもいいけど)</li>
+<li> New password: (任意)</li>
+<li> Retype new password: (同じパスワードをもう一回入力)</li>
+</ul>
+</div></div><div id="content_block_15" class="wiki-section-2"><div class="title-2"><h4 id="content_3_3"> aptを最新にする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_3_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_15-body" class="wiki-section-body-2">
+<br>
+初回の sudo 実行時にユーザーのパスワードを聞かれるので入力する<br>
+<ul id="content_block_16" class="list-1">
+<li> password for user: (同じパスワードをもう一回入力)</li>
+</ul>
+<br>
+<pre id="content_block_17" class="BOX">
+sudo apt update
+sudo apt upgrade -y
+</pre>
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_3_4"> Python 3.10.xのインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_3_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+<br>
+3.10.6でいいことにする。<br>
+<br>
+<pre id="content_block_20" class="BOX">
+sudo apt autoremove
+sudo apt-get -y update
+sudo apt-get -y install python3.10
+sudo cp `which python3.10` /usr/local/bin/python
+sudo apt install git libgl1 python3.10-venv -y
+python -V
+</pre>
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5 id="content_3_4_1"> pipを最新にする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_3_4_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+<br>
+<pre id="content_block_23" class="BOX">
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+</pre>
+</div></div><div id="content_block_25" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> AUTOMATIC1111 stable-diffusion-webui <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_25-body" class="wiki-section-body-1">
+<ul id="content_block_26" class="list-1">
+<li> (現状では)速度向上効果はあまり期待できません</li>
+</ul>
+</div></div><div id="content_block_28" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5"> 1111本体の設置 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_28-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_29" class="BOX">
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd stable-diffusion-webui
+</pre>
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_4_6"> venvの作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_32" class="BOX">
+python -m venv venv
+</pre>
+</div></div><div id="content_block_34" class="wiki-section-2"><div class="title-2"><h4 id="content_4_7"> torchとxformersのインストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_34-body" class="wiki-section-body-2">
+<br>
+1111で推奨されるバージョンを使う。<br>
+<br>
+<pre id="content_block_35" class="BOX">
+venv/bin/pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+venv/bin/pip install -U --pre triton
+venv/bin/pip install xformers==0.0.16rc425
+</pre>
+</div></div><div id="content_block_37" class="wiki-section-2"><div class="title-2"><h4 id="content_4_8"> モデルの設置 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_37-body" class="wiki-section-body-2">
+<br>
+Windowsエクスプローラーで以下の場所を開いて入れる<br>
+<pre id="content_block_38" class="BOX">
+\\wsl$\Ubuntu\home\user\stable-diffusion-webui\models\Stable-diffusion
+</pre>
+<br>
+Ubuntu-22.04を入れたならここ(以下同)<br>
+<br>
+<pre id="content_block_39" class="BOX">
+\\wsl$\Ubuntu-22.04\home\user\stable-diffusion-webui\models\Stable-diffusion
+</pre>
+<br>
+もしくはダウンロードしてくる<br>
+<br>
+<pre id="content_block_40" class="BOX">
+wget -c "https://huggingface.co/aka7774/fp16_safetensors/resolve/main/7th_anime_v3_A-fp16-1833-2982-0018.safetensors" -P `pwd`/models/Stable-diffusion/
+</pre>
+</div></div><div id="content_block_42" class="wiki-section-2"><div class="title-2"><h4 id="content_4_9"> コマンドラインオプションの編集 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_42-body" class="wiki-section-body-2">
+<br>
+Windowsエクスプローラーで以下の場所をメモ帳などで開く<br>
+<pre id="content_block_43" class="BOX">
+\\wsl$\Ubuntu\home\user\stable-diffusion-webui\webui-user.sh
+</pre>
+<br>
+<pre id="content_block_44" class="BOX">
+#export COMMANDLINE_ARGS=""
+</pre>
+の行を任意に変更する。以下は一例。<br>
+<pre id="content_block_45" class="BOX">
+export COMMANDLINE_ARGS="--xformers --opt-split-attention"
+</pre>
+</div></div><div id="content_block_47" class="wiki-section-2"><div class="title-2"><h4 id="content_4_10"> 生成時のエラー対策 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_47-body" class="wiki-section-body-2">
+<br>
+設定しないとこんなエラーが出る。<br>
+<br>
+<pre id="content_block_48" class="BOX">
+Could not load library libcudnn_cnn_infer.so.8. Error: libcuda.so: cannot open shared object file: No such file or directory
+</pre>
+<br>
+Windowsエクスプローラーで以下の場所をメモ帳などで開く<br>
+<pre id="content_block_49" class="BOX">
+\\wsl$\Ubuntu\home\user\.bashrc
+</pre>
+<br>
+ファイルの先頭に以下の行を追加する<br>
+<br>
+<pre id="content_block_50" class="BOX">
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+</pre>
+<br>
+Ubuntu側で編集した内容を読み込む<br>
+<br>
+<pre id="content_block_51" class="BOX">
+source ~/.bashrc
+</pre>
+</div></div><div id="content_block_53" class="wiki-section-2"><div class="title-2"><h4 id="content_4_11"> フォルダアイコンからエクスプローラーを開きたいンゴ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_53-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_54" class="BOX">
+sudo apt-get install -yqq npm
+sudo npm install -g wsl-open
+</pre>
+<br>
+手元の環境ではうまく動いていない。<br>
+</div></div><div id="content_block_56" class="wiki-section-2"><div class="title-2"><h4 id="content_4_12"> 1111の起動 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_56-body" class="wiki-section-body-2">
+<br>
+初回は時間かかるので気長に待つ。<br>
+<br>
+<pre id="content_block_57" class="BOX">
+~/stable-diffusion-webui/webui.sh
+</pre>
+<br>
+Windows側で <a href="http://127.0.0.1:7860" class="outlink">http://127.0.0.1:7860</a> にアクセスできます。<br>
+</div></div><div id="content_block_59" class="wiki-section-2"><div class="title-2"><h4 id="content_4_13"> Windowsから1111を起動する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_4_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_59-body" class="wiki-section-body-2">
+<br>
+Windows側で以下のバッチファイルを作成する<br>
+<pre id="content_block_60" class="BOX">
+wsl bash -l /home/user/stable-diffusion-webui/webui.sh
+pause
+</pre>
+</div></div><div id="content_block_62" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> kohya sd-scripts <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_62-body" class="wiki-section-body-1">
+<br>
+VRAM 8GBでかろうじて解像度768のLoraがbatch_size=1なら動く。<br>
+(Windowsネイティブだと動かない環境なのでWSL2の導入メリットがあった)<br>
+</div></div><div id="content_block_64" class="wiki-section-2"><div class="title-2"><h4 id="content_5_14"> インストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_5_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_64-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_65" class="BOX">
+cd ~
+git clone https://github.com/kohya-ss/sd-scripts.git
+cd sd-scripts
+
+python -m venv venv
+venv/bin/pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+venv/bin/pip install -U --pre triton
+venv/bin/pip install xformers==0.0.16rc425
+venv/bin/pip install --upgrade -r requirements.txt
+</pre>
+</div></div><div id="content_block_67" class="wiki-section-2"><div class="title-2"><h4 id="content_5_15"> 学習入門を体験する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_5_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_67-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_68" class="BOX">
+sudo apt install unzip
+
+wget -c "https://huggingface.co/JosephusCheung/ACertainModel/resolve/main/ACertainModel-half.ckpt"
+wget -c "https://huggingface.co/datasets/aka7774/zunko/resolve/main/7_Zunko%201girl.zip"
+wget -c "https://huggingface.co/datasets/aka7774/zunko/resolve/main/1_1girl.zip"
+
+unzip "7_Zunko 1girl.zip" -d train
+unzip "1_1girl.zip" -d reg_data
+</pre>
+</div></div><div id="content_block_70" class="wiki-section-2"><div class="title-2"><h4 id="content_5_16"> 学習入門Loraの作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_5_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_70-body" class="wiki-section-body-2">
+<br>
+オプションを追加することで accelerate config 作業を省略している。<br>
+<br>
+この設定でうちの2070だと30分くらいで仕上がる。<br>
+元が人に教えて貰ったDB用の設定なので適切かどうかはわからない。<br>
+<br>
+<pre id="content_block_71" class="BOX">
+venv/bin/accelerate launch --num_cpu_threads_per_process 8 --mixed_precision fp16 train_network.py \
+   --pretrained_model_name_or_path=ACertainModel-half.ckpt \
+   --train_data_dir=train \
+   --output_dir=output \
+   --output_name=Zunko-lora \
+   --reg_data_dir=reg_data \
+   --prior_loss_weight=1.0 \
+   --resolution=768 \
+   --train_batch_size=1 \
+   --learning_rate=3e-6 \
+   --max_data_loader_n_workers=8 \
+   --max_train_epochs=5 \
+   --gradient_checkpointing \
+   --xformers \
+   --mixed_precision=fp16 \
+   --save_precision=fp16 \
+   --logging_dir=logs \
+   --enable_bucket \
+   --min_bucket_reso=384 \
+   --max_bucket_reso=1024 \
+   --save_model_as=safetensors \
+   --clip_skip=2 \
+   --seed=17283378 \
+   --lr_scheduler=cosine \
+   --caption_extension=txt \
+   --color_aug \
+   --network_dim=128 \
+   --network_module=networks.lora
+</pre>
+</div></div><div id="content_block_73" class="wiki-section-2"><div class="title-2"><h4 id="content_5_17"> Loraファイルの取得 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_5_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_73-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_74" class="BOX">
+\\wsl$\Ubuntu\home\user\sd-scripts\output
+</pre>
+<br>
+Zunko-lora.safetensors が出来てるはず。<br>
+</div></div><div id="content_block_76" class="wiki-section-2"><div class="title-2"><h4 id="content_5_18"> 備考 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5014321&amp;part=content_5_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_76-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_77" class="BOX">
+   --use_8bit_adam \
+</pre>
+をつけてるとエラーが出て動かなかったので外した。<br>
+<br>
+<pre id="content_block_78" class="BOX">
+NameError: name 'str2optimizer8bit_blockwise' is not defined
+</pre>
+<br>
+バージョンを sd-scripts 推奨まで下げても同じエラー。<br>
+xformers 0.0.14のインストール方法は調べてない。<br>
+<br>
+<pre id="content_block_79" class="BOX">
+venv/bin/pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+venv/bin/pip install -U --pre triton
+</pre>
+</div></div>
+</div>

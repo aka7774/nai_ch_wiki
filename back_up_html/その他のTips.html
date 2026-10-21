@@ -1,0 +1,201 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> このページは何?</a></li>
+<li class="list-1"><a href="#content_2"> Tips一覧</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> AssertionError: extension access disabled because of command line flags （★130）</a></li>
+<li class="list-2"><a href="#content_2_2"> Regional Prompter （★185）</a></li>
+<li class="list-2"><a href="#content_2_3"> LoRA作成初心者向けサイト（★185）</a></li>
+<li class="list-2"><a href="#content_2_4"> 文字入れ、テキスト追加</a></li>
+<li class="list-2"><a href="#content_2_5"> 衣装アイディア（★221の399）</a></li>
+<li class="list-2"><a href="#content_2_6"> ON/OFF構図（★239の322）</a></li>
+<li class="list-2"><a href="#content_2_7"> AIbooru（プロンプト付きのNAI作品）（★329）</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> このページは何? <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5049101&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+どこのページに書こうか悩むようなこともあるし、スレの有益な議論が埋もれていってしまうは惜しいので、<br>
+雑多なTips系を拾って保存していこうと思います。<br>
+（カテゴリー分けについては何も考えていない。分量が多くなったら考えます）<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> Tips一覧 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5049101&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> AssertionError: extension access disabled because of command line flags （★130） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5049101&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_6" class="BOX">
+241今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ b57b-PB+X)2023/01/14(土) 19:20:26.50ID:c1xVtsTU0
+すいません
+loraの拡張機能がエラー出て導入できないんでどうしたらええか教えて欲しい
+colab使ってる勢なのでコード正直分からんから分かりやすくお願いします
+258今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ b57b-PB+X)2023/01/14(土) 19:39:10.15ID:c1xVtsTU0
+時間かかってすいませんが、エラーコードこちらになります
+AssertionError: extension access disabled because of command line flags
+
+274今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 2146-VufU)2023/01/14(土) 20:15:07.36ID:XuMIN2Te0
+&gt;&gt;258
+いったん次の引数をつけてwebui を起動してみたらどうだろ？
+--enable-insecure-extension-access
+
+277今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4a88-f6s+)2023/01/14(土) 20:30:16.73ID:osvZO/in0
+&gt;&gt;276
+調べたんやけど &gt;&gt;274 で解決するっぽいわ
+--share と --listen を書いてるとextensionsを入れられへんかったのをオプション追加したみたいやな
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/ccf1a15412ef6b518f9f54cc26a0ee5edf458108
+</pre>
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> Regional Prompter （★185） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5049101&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+<br>
+336今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6e02-q4if)2023/04/10(月) 15:15:45.42ID:5HSQKLwT0<br>
+ワイの中でRegional Prompterが１番熱い拡張機能や １番自然な仕上がりになる<br>
+<br>
+ただ肝心のプロンプトが合ってるのか不安になる 他に使ってる奴おらん？<br>
+masterpiece, (best quality:1.2), 2girls ADDCOMM<br>
+1girl, (lifted by self:1.2), skirt, underwear, panties,indoors, looking at viewer, standing, (embarrassed:1.2),red eyes, black hair, ADDCOL<br>
+1girl, (lifted by self:1.2), skirt, underwear, panties,indoors, looking at viewer, standing, (serious:1.2), purple eyes, white hair<br>
+<br>
+NP:(worst quality, low quality:1.4),NG_DeepNegative_V1_75T ADDCOL<br>
+(worst quality, low quality:1.4),NG_DeepNegative_V1_75T<br>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/DEJBHnjQCQ.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/DEJBHnjQCQ.png" border="0"></a><br>
+<br>
+339今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa05-O+PF)2023/04/10(月) 15:22:37.48ID:tCE+3uHSa<blockquote id="content_block_9">
+&gt;336
+</blockquote>
+ｳﾞｫｰｽｯｹﾞ<br>
+表情いっこずつ指定できるのはええな、試してみるわ<br>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3"> LoRA作成初心者向けサイト（★185） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5049101&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_12" class="BOX">
+383今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜﾝﾄﾝｷﾝ MMed-3XwG)2023/04/10(月) 17:27:08.61ID:9mqqi2OTM
+loRa作ってみたい園児向けの懇切丁寧なサイトってなんかないんかね
+うまく作れるとかそういうのじゃなくてとにかくまずは学習やらをさせてみたいって感じの
+
+386今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 49cd-ISVW)2023/04/10(月) 17:30:10.14ID:w6xN7RUd0
+&gt;&gt;383
+wikiがかなり詳しく説明してない？情報古いページもあるけど
+
+394今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 9102-juPV)2023/04/10(月) 17:34:21.87ID:2vZOCzs70
+&gt;&gt;383
+kohyaのreadmeわかりやすいと思う
+ドリームブースのキャプションありの方法でやってみては
+
+395今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e188-Rzwh)2023/04/10(月) 17:42:20.37ID:o/N2SaPY0
+&gt;&gt;383
+情報が古くなってる可能性があるし不正確な箇所が多いけど
+とりあえずで流れを掴みたいなら
+https://economylife.net/kohya-lora-install-use/
+
+ただ上でも書かれてるけどkohya-ssのreadmeが結局はいいと思う
+
+414今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 4291-q5Ag)2023/04/10(月) 18:20:50.20ID:yIsPI0Eb0
+&gt;&gt;383
+わいはコレやったわ
+https://note.com/uunin/n/n3f09b93df575
+
+</pre>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4"> 文字入れ、テキスト追加 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5049101&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+<ul id="content_block_15" class="list-1">
+<li> photoshop（有料）</li>
+<li> クリスタ（有料）</li>
+<li> Krita</li>
+<li> frameplanner 
+<ul class="list-2">
+<li> web版 <a href="https://frameplanner-e5569.web.app/" class="outlink">https://frameplanner-e5569.web.app/</a></li>
+<li> ローカル上のソフトも有り</li>
+</ul>
+</li>
+<li> GIMP （無料だが……操作が非常に使いにくい）</li>
+</ul>
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_2_5"> 衣装アイディア（★221の399） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5049101&amp;part=content_2_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_18" class="BOX">
+0399今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 718a-MM2P)
+2023/06/11(日) 20:20:16.26ID:T0OXrdzk0
+なんかプロンプトとかloraで出せるお手軽にエロい（露出が多いっていう意味ではない）衣装無いかな
+・学生服・喫茶店服・メイド服・バニー・体操服・ナース・ウェディングドレス・メイド服・スーツ
+とか、これぐらいしかパッと衣装が浮かばなくて悩む…‥（大体ウェディングドレスかメイド服でシコる率が高すぎる……）
+
+私服系もいろいろプロンプト表記で良い感じの服装とかあるんかな……
+
+
+0406今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 51bf-2rqm)
+2023/06/11(日) 20:29:45.55ID:u9QdYAI50
+&gt;&gt;399
+dancer lingerieとかharem outfitどや
+ワイが適用を諦めたやつ
+https://civitai.com/models/20103/harem-dancer
+https://civitai.com/models/46696/dancer-lingerie
+https://civitai.com/models/26502?modelVersionId=31728
+
+
+0407今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾌﾞｰｲﾓ MMcd-RNqH)
+2023/06/11(日) 20:29:56.58ID:FSMMYKZ+M
+&gt;&gt;399
+それにチアリーダー入れたらワイのラインナップと全く同じや
+エッチな衣装ワイルドカードとかねえかな
+
+415今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾌﾞｰｲﾓ MM1d-EBg9)
+2023/06/11(日) 20:44:11.06ID:7dvrJ5HJM
+&gt;&gt;399
+民族衣装とか結構出るしエロいぞ
+https://i.imgur.com/Zy0fMju.jpg
+
+0419今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ e97b-2rqm)
+2023/06/11(日) 20:46:20.92ID:rX4Wc85a0
+&gt;&gt;399
+水着とかビキニアーマー…は露出が多いから無しか
+浴衣は…エロくはないよなあ
+0420今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sadd-Dfs3)
+2023/06/11(日) 20:47:18.14ID:Vvfj+ucWa
+&gt;&gt;399
+警察官、消防士、アイドル、
+0421今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1388-s+nx)
+2023/06/11(日) 20:47:29.17ID:rx+Y50G10
+&gt;&gt;399
+チャイナドレスは？
+
+0432今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 190d-jUq8)
+2023/06/11(日) 21:00:09.70ID:DUPAyi9v0
+&gt;&gt;399
+ワイはこういう感じでchatGPTにネタ出ししてもらった
+https://i.imgur.com/e9ajBMu.png
+https://i.imgur.com/tQtxE3h.png
+
+</pre>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_2_6"> ON/OFF構図（★239の322） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5049101&amp;part=content_2_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+<pre id="content_block_21" class="BOX">
+https://files.catbox.moe/gddrw6.png
+ちょっと例が悪いけどこんな感じで作ってるで。
+
+https://files.catbox.moe/0lstan.png
+
+https://files.catbox.moe/ayddna.png
+</pre>
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_2_7"> AIbooru（プロンプト付きのNAI作品）（★329） <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5049101&amp;part=content_2_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+<br>
+<pre id="content_block_24" class="BOX">
+0222:
+他人の作ったNAI作品眺めるのにいいサイト無いかな
+プロンプトパクりたいんや
+
+&gt;&gt;222
+AIbooruはだめなんか？
+検索欄に"novelai has:metadata"でプロンプト付きのNAI作品だけ見れる
+</pre>
+</div></div>
+</div>

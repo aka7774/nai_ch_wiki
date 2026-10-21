@@ -1,0 +1,132 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> Samplingについて (Anima)</a></li>
+<li class="list-1"><a href="#content_2"> Samplingについて (SD1.5)</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> その1</a></li>
+<li class="list-2"><a href="#content_2_2"> その2</a></li>
+<li class="list-2"><a href="#content_2_3"> その3</a></li>
+<li class="list-2"><a href="#content_2_4"> その4</a></li>
+<li class="list-2"><a href="#content_2_5"> その5</a></li>
+<li class="list-2"><a href="#content_2_6"> その5</a></li>
+<li class="list-2"><a href="#content_2_7"> その6</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> Samplingについて (Anima) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982563&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+Anima preview 3 を用いて Sampler &amp; Schedule type を比較した結果を添付する。(step = 8)<br>
+Euler a は全体的にぼやけてしまう。線を薄めにするなら Euler, 線をはっきりさせるならRestartが良さそう。<br>
+※Restartは本来サンプラーではないが、1111系ではHeunにRestartという技術を適用したものとして実装。<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/41aa24effaf41a04.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/41aa24effaf41a04-s.jpg" border="0"></a><br>
+<br>
+Anima preview 3 &amp; DMD2 LoRA を用いた場合の結果はこちら。<br>
+全体的にフラットな絵柄になるが、Euler a, ER SDE, LCM は書き込み量が多め。<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/06d75e1b83bd9bc3.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/06d75e1b83bd9bc3-s.jpg" border="0"></a><br>
+<br>
+なお、RTX 3060での1枚当たり生成時間は以下の通り。Restart以外はどれも大差ない<br>
+TurboLoRAで約30%, DMD2 だとstep数を減らせるので 約66%の削減になる。DMD2 を使う場合は Spectrumの有無は作成時間に影響しない。<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/341f35fa5539ec70.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/341f35fa5539ec70-s.png" border="0"></a><br>
+<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> Samplingについて (SD1.5) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982563&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+サンプリングを変えると絵柄が変わる。<br>
+ので、NAIで選べる5種について比較してみた。<br>
+<br>
+傾向としては以下があるものの、何が優れている、というのは明確には言えるものがない。<br>
+各自でいろいろ試していくしかねーんじゃね？<br>
+<ul id="content_block_4" class="list-1">
+<li>Euler a以外は構図が似やすい</li>
+<li>LMS、PLMSは非リアル系絵柄キャラで崩れやすい</li>
+<li>PLMSはくっきりとした絵柄になりやすい</li>
+</ul>
+<br>
+共通設定<blockquote id="content_block_5">
+ Step28 Scale11 size 512x768
+</blockquote>
+</div></div><div id="content_block_7" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> その1 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982563&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_7-body" class="wiki-section-body-2">
+<blockquote id="content_block_8">
+ masterpiece,best quality,{{ultra-detailed}},{{illustration}},{{an extremely delicate and beautiful}}, {beautiful detailed eyes},{hatsune miku},store for rare and old books,
+</blockquote>
+<blockquote id="content_block_9">
+ NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry,
+</blockquote>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/CaLPTxA5wh.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/CaLPTxA5wh-s.jpg" border="0"></a><br>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> その2 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982563&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+<blockquote id="content_block_12">
+ masterpiece,best quality,blonde short hair,wavy hair,eating ramen,outdoor
+</blockquote>
+<blockquote id="content_block_13">
+ NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry,
+</blockquote>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/DjnLhgV3aD.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/DjnLhgV3aD-s.jpg" border="0"></a><br>
+</div></div><div id="content_block_15" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3"> その3 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982563&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_15-body" class="wiki-section-body-2">
+<blockquote id="content_block_16">
+ {{{{masterpiece}}}},  {{{{{{best quality}}}}}},  {{{{ultra-detailed}}}},  {{{{illustration}}}}, {{cave}},{{{fantasy city}}},night,unexplored region,dynamic angle, Underworld,
+</blockquote>
+<blockquote id="content_block_17">
+ NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry,
+</blockquote>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/VsKOWmkEoS.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/VsKOWmkEoS-s.jpg" border="0"></a><br>
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4"> その4 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982563&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+<blockquote id="content_block_20">
+ realistic,short pants,camisole,blonde short hair,wavy hair,,small breasts,1girl
+</blockquote>
+<blockquote id="content_block_21">
+ NP : lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, denim
+</blockquote>
+<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/bjQ6MOBHjW.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/bjQ6MOBHjW-s.jpg" border="0"></a> <br>
+</div></div><div id="content_block_23" class="wiki-section-2"><div class="title-2"><h4 id="content_2_5"> その5 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982563&amp;part=content_2_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_23-body" class="wiki-section-body-2">
+出典) 元素法典 星冰乐 作者：symb（QQ 914635985）<br>
+<blockquote id="content_block_24">
+ {{{masterpiece}}},best quality, illustration,{beautiful detailed girl},beautiful detailed glow,detailed ice,beautiful detailed water,{beautiful detailed eyes},expressionless,beautiful detailed white gloves, {floating palaces:1.3},azure hair,disheveled hair,long bangs, hairs between eyes, {skyblue dress},black ribbon,white bowties,midriff,{{{half closed eyes}}},,big forhead,blank stare,flower,large top sleeves,{{{ice crystal texture wings}}}
+</blockquote>
+<blockquote id="content_block_25">
+ NP : multiple breasts, (mutated hands and fingers:1.5 ), (long body :1.3), (mutation, poorly drawn :1.2) , black-white, bad anatomy, liquid body, liquid tongue, disfigured, malformed, mutated, anatomical nonsense, text font ui, error, malformed hands, long neck, blurred, lowers, lowres, bad anatomy, bad proportions, bad shadow, uncoordinated body, unnatural body, fused breasts, bad breasts, huge breasts, poorly drawn breasts, extra breasts, liquid breasts, heavy breasts, missing breasts, huge haunch, huge thighs, huge calf, bad hands, fused hand, missing hand, disappearing arms, disappearing thigh, disappearing calf, disappearing legs, fused ears, bad ears, poorly drawn ears, extra ears, liquid ears, heavy ears, missing ears, fused animal ears, bad animal ears, poorly drawn animal ears, extra animal ears, liquid animal ears, heavy animal ears, missing animal ears, text, ui, error, missing fingers, missing limb, fused fingers, one hand with more than 5 fingers, one hand with less than 5 fingers, one hand with more than 5 digit, one hand with less than 5 digit, extra digit, fewer digits, fused digit, missing digit, bad digit, liquid digit, colorful tongue, black tongue, cropped, watermark, username, blurry, JPEG artifacts, signature, 3D, 3D game, 3D game scene, 3D character, malformed feet, extra feet, bad feet, poorly drawn feet, fused feet, missing feet, extra shoes, bad shoes, fused shoes, more than two shoes, poorly drawn shoes, bad gloves, poorly drawn gloves, fused gloves, bad cum, poorly drawn cum, fused cum, bad hairs, poorly drawn hairs, fused hairs, big muscles, ugly, bad face, fused face, poorly drawn face, cloned face, big face, long face, bad eyes, fused eyes poorly drawn eyes, extra eyes, malformed limbs, more than 2 nipples, missing nipples, different nipples, fused nipples, bad nipples, poorly drawn nipples, black nipples, colorful nipples, gross proportions. short arm, {{{missing arms}}}, missing thighs, missing calf, missing legs, mutation, duplicate, morbid, mutilated, poorly drawn hands, more than 1 left hand, more than 1 right hand, deformed, (blurry), disfigured, missing legs, extra arms, extra thighs, more than 2 thighs, extra calf, fused calf, extra legs, bad knee, extra knee, more than 2 legs, bad tails, bad mouth, fused mouth, poorly drawn mouth, bad tongue, tongue within mouth, too long tongue, black tongue, big mouth, cracked mouth, bad mouth, dirty face, dirty teeth, dirty pantie, fused pantie, poorly drawn pantie, fused cloth, poorly drawn cloth, bad pantie, yellow teeth, thick lips, bad cameltoe, colorful cameltoe, bad asshole, poorly drawn asshole, fused asshole, missing asshole, bad anus, bad pussy, bad crotch, bad crotch seam, fused anus, fused pussy, fused anus, fused crotch, poorly drawn crotch, fused seam, poorly drawn anus, poorly drawn pussy, poorly drawn crotch, poorly drawn crotch seam, bad thigh gap, missing thigh gap, fused thigh gap, liquid thigh gap, poorly drawn thigh gap, poorly drawn anus, bad collarbone, fused collarbone, missing collarbone, liquid collarbone, strong girl, obesity, worst quality, low quality, normal quality, liquid tentacles, bad tentacles, poorly drawn tentacles, split tentacles, fused tentacles, missing clit, bad clit, fused clit, colorful clit, black clit, liquid clit, QR code, bar code, censored, safety panties, safety knickers, beard, furry ,pony, pubic hair, mosaic, excrement, faeces, shit, futa, testis
+</blockquote>
+<blockquote id="content_block_26">
+ size 768x512 Step28 Scale5.5 (法典に記載のものはStep50、Scale5.5)
+</blockquote>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/XGzeViVL_X.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/XGzeViVL_X-s.jpg" border="0"></a><br>
+</div></div><div id="content_block_28" class="wiki-section-2"><div class="title-2"><h4 id="content_2_6"> その5 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982563&amp;part=content_2_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_28-body" class="wiki-section-body-2">
+スレの保存してあったやつを適当に貼るで<br>
+<br>
+Sampler_Comparison_Stable Diffusion_comp001.jpg<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/ki31EV_Zli.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/ki31EV_Zli.jpg" border="0" width="500"></a><br>
+<br>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_2_7"> その6 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982563&amp;part=content_2_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+最近サンプラーが話題なんでローカルの基本セット調べてみた、ただしPLMSはエラー出たから除外<br>
+photo backgroundを指定して同じシードで人物ありなしや（サイズクソデカ注意）<br>
+シードにもよるからあくまでサンプルってことで<br>
+<br>
+人物なし<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/_HEoSG7Yn1.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/_HEoSG7Yn1.png" border="0" width="600"></a><br>
+人物あり（アニメ調）<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/Y8R5y7Yo3n.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Y8R5y7Yo3n.png" border="0" width="600"></a><br>
+<br>
+人物ありのプロンプト（本家NAIに変換したらこれ、masterpiece, best qualityあり）<br>
+<pre id="content_block_31" class="BOX">
+integrated, anime,{{selfie of schoolgirl, kawaii}}, [[[close-up full body]]], site-seeing spot, photo background, cinematic angle
+</pre>
+</div></div>
+</div>

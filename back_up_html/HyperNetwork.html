@@ -1,0 +1,294 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> HyperNetwork <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+</div></div><div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+HyperNetworkとは、Stable Diffusionのファインチューニング方式の一つ。NovelAIリークが基になっているらしい。<br>
+学習が遅く設定も難しいし大した成果が無いためか、現在は話題を全く見かけないほどに廃れた。本当にこの界隈の進化は速い。<br>
+<b>LoRAのほうが早くて高性能なため、正直言って使う価値なし。</b><br>
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> 拡張機能 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<ul id="content_block_6" class="list-1">
+<li> 複数のhypernetworkをマージし、それを使い画像を生成する機能の追加</li>
+</ul>
+説明は<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/4334" class="outlink" rel="nofollow">ここ</a>。<br>
+ただし、モデルのマージと違い｢画像を生成する時に指定したhypernetworkをロードしながら処理を行う｣ために画像1枚生成する時間がもの凄く長くなりあまり実用的ではない。<ul id="content_block_7" class="list-1">
+<li> 学習画像のサイズの変更やクロップをしなくても学習出来る機能</li>
+</ul>
+内部的には長辺のサイズを学習の設定で指定したサイズにし学習を行う。<del><b>注意点としてはbatch sizeは1にすること</b></del>。 (2023-01-12現在、この制限はなくなりました)<ul id="content_block_8" class="list-1">
+<li> Optimizerをアンロードしてメモリ不足エラーが発生する可能性を減少。 (VRAM8GBでも学習可能になるっぽい)</li>
+</ul>
+</div></div><div id="content_block_10" class="wiki-section-2"><div class="title-2"><h4 id="content_1_3"> Beta hypernetwork <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_1_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_10-body" class="wiki-section-body-2">
+</div></div><div id="content_block_12" class="wiki-section-3"><div class="title-3"><h5 id="content_1_3_1"> 可変Dropout rateの追加 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_1_3_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_12-body" class="wiki-section-body-3">
+純正では2番目の層にしかdropoutが指定されていなかったため、深い階層のhypernetworkを作成すると3番目以降の層に適応されない問題があった。<br>
+また、dropoutの値が0.3に固定されており、これが大きすぎるのではないかという話があった。<br>
+可変Dropout rateはこれらの問題を解決するもの。<br>
+｢Use dropout. Might improve training when dataset is small / limited.｣のチェックをOnにし、その下のtext入力欄にdropoutの構造を記載する。<br>
+これはhypernetwork layer structureの構造と一致していなければならない。<br>
+例えばlayer structureを ｢1, 2, 2, 1｣で作成した場合、可変dropoutは｢0, 0.3, 0.3, 0｣のようにする。<br>
+推奨値は0〜0.35で最初は0固定、前の方の層ではあまり大きい数字を使わないようにすると安定しやすい。<br>
+</div></div><div id="content_block_14" class="wiki-section-3"><div class="title-3"><h5 id="content_1_3_2"> Show advanced optionsの中にWeight initialization seedの固定、レイヤーウェイトの初期化にNormalを選んだ際の初期ウェイトを0.01以外に指定出来る機能の追加 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_1_3_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_14-body" class="wiki-section-body-3">
+通常は触る必要はなし。<br>
+hypernetworkは学習する際にランダムなシードが使われることで全く同じ設定・学習素材を使っても同じ結果にならないがそれを固定化する機能。<br>
+<blockquote id="content_block_15">
+なお、この機能で作られたhypernetworkファイルはextension無しでも動作するはずだが上記の機能は適応されてないものとして扱われる(はず。未検証。)
+</blockquote>
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_1_4"> Train Gamma <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_1_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+</div></div><div id="content_block_19" class="wiki-section-3"><div class="title-3"><h5 id="content_1_4_3"> Gradient accumulation <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_1_4_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_19-body" class="wiki-section-body-3">
+割と最近、本体のHypernetworkにも搭載された機能。<br>
+簡単にいうと｢処理速度や品質への影響を抑えつつ省メモリで動かす｣仕組み。<br>
+4〜8あたりが推奨値。<br>
+この値を変更すると1stepで処理する数が変わるため、学習stepの指定が変わることに注意。<blockquote id="content_block_20">
+1stepで処理する画像数 = batch size × gradient accumulation。
+学習素材が64枚、batch size = 1、 gradient accmulation = 8なら 1stepで8枚の処理が行われ1epochは8stepとなる(端数切り捨て)
+</blockquote>
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5 id="content_1_4_4"> Cosine annealing learning rate scheduler <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_1_4_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+指定したStepの間でlearning rateを上下させる機能。Hypernetwork Learning rateで指定した値を最大値、Minimum learning rate for beta schedulerで指定した値を最小値として上下するようになる。<ul id="content_block_23" class="list-1">
+<li> Step for cycle: 1cycleの長さをstepで指定する。目安としては10epochくらい。(学習素材数 ÷  batch size ÷ Gradient accumulation × 10epoch を切り捨てで入力)</li>
+<li> Step multiplier per cycle: 1のままでOK</li>
+<li> Warmup step per cycle: Step for cycleの値に合わせ上下させる。どの位が良いのかは調査中。デフォルト値のままでとりあえず問題無い。</li>
+<li> Decays learning rate every cycle: cycleが進むごとに最大値を減らすようにする。1なら毎回最大値になる。1のままでも問題ないが、学習ステップ数を多くする予定なら0.998など少し減らすと良い。</li>
+<li> Saves when every cycle finisher, Generates image when every cycle finishes: それぞれ、学習率が最小値に達した時にその時点のハイパーネットワークを保存する、プレビュー画像を保存する設定。</li>
+</ul>
+</div></div><div id="content_block_25" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> HNの適用方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_25-body" class="wiki-section-body-1">
+生成したptをフォルダ/Models/hypernetworksに置く。SettingsのHypernetwork欄で選択。<br>
+Hypernetwork strengthで影響の強弱を変えられる。過学習してしまったptでも数値を低くすれば汎用性が戻るかも。<br>
+</div></div><div id="content_block_27" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> HN+DB <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_27-body" class="wiki-section-body-1">
+画風を学習させたHNとキャラを学習させたDBなどで版権再現度を高めるという手法。<br>
+あまり再現度が高くないキャラDBでもキャラHNと組み合わせると丁度良くなったりする。<br>
+</div></div><div id="content_block_29" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 学習について <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_29-body" class="wiki-section-body-1">
+ここでは、Hypernetworkによる学習を始めてみたい、という人向けに目安となるよう簡単に説明します。<br>
+キャラクターや再現度を高める方法は様々あり、設定パラメータも多いため｢この通りにやればまずはそれっぽく出来る｣ということをゴールにします。
+</div></div><div id="content_block_31" class="wiki-section-2"><div class="title-2"><h4 id="content_4_5"> 使用Extension <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_31-body" class="wiki-section-body-2">
+<ul id="content_block_32" class="list-1">
+<li> <a href="https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension" class="outlink">https://github.com/aria1th/Hypernetwork-MonkeyPatc...</a></li>
+</ul>
+最初に書いた通り<ul id="content_block_33" class="list-1">
+<li> <a href="https://github.com/toriato/stable-diffusion-webui-wd14-tagger" class="outlink">https://github.com/toriato/stable-diffusion-webui-...</a></li>
+</ul>
+wd14のモデル作成のために作られたtagger。deepdanbooruを使用するよりも高い精度でタグ付けが出来るため楽をしたいなら必須。<ul id="content_block_34" class="list-1">
+<li> <a href="https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor" class="outlink">https://github.com/toshiaki1729/stable-diffusion-w...</a></li>
+</ul>
+学習素材を見ながらタグ一覧の確認が出来る。導入必須ではないがあると便利。
+</div></div><div id="content_block_36" class="wiki-section-2"><div class="title-2"><h4 id="content_4_6"> 注意すべき設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_36-body" class="wiki-section-body-2">
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/k6cFiaMt4t.38.14.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/k6cFiaMt4t.38.14.png" border="0"></a><br>
+まず、WEB UI本体の設定の学習にある｢Saves Optimizer state as...｣にチェックを入れ設定を適応してください。<br>
+この設定を入れない場合、学習を中断し再開した場合にHypernetworkが破壊される可能性があります。(問題無く再開出来る事もあります)<br>
+これはhypernetworkのファイル内にoptimizerの状態を保存していないから発生する問題です。<br>
+Saves Optimizer...の設定を有効にすることで .optim ファイルにOptimizerの状態を保存し、安全に再開できるようになります。<blockquote id="content_block_37">
+なぜ設定として別れているかというと、Optimizerを保存したファイルの容量がhypernetwork本体の容量の2倍であり、ストレージの圧迫の原因になりうるからです。
+なお.optimファイルは学習再開時やさらに追加で学習を行う場合にのみ使われるものなので、hypernetworkが完成したなら削除してもかまいません。
+</blockquote>
+</div></div><div id="content_block_39" class="wiki-section-2"><div class="title-2"><h4 id="content_4_7"> 学習素材の準備 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_39-body" class="wiki-section-body-2">
+学習素材を用意します。<br>
+キャラクターなど新しい概念を学習する場合も画風を学習する場合も出来るだけ絵の傾向が似ているものを選びます。<br>
+素材の枚数は筆者は24〜80枚程度で行う事が多いです(筆者は画風の学習をメインに行っています)<br>
+MonkeyPatchを使う限り、トリミングや画像の縮小で1:1の画像にする必要がありません。<br>
+ただし、画像の端の方にサインが入っているなど簡単な編集で学習の邪魔になるものを排除できるなら軽くトリミングくらいはしたほうが成功確率が上がります。<br>
+(イラストのメインとなる部分にサインが入っているような場合も自分で修正したほうが良いかもしれませんが、塗りむらが悪影響を出すこともありその手間と見合っているかというと難しいと考えています。<br>
+まずはHNを使う一歩として、ここでは無編集のまま進むことを前提とします)<br>
+<br>
+学習素材は適当な1フォルダにまとめて保存してください。 /path/to/images/ に保存している、と仮定して話を進めます。<br>
+</div></div><div id="content_block_41" class="wiki-section-2"><div class="title-2"><h4 id="content_4_8"> 学習するイラストのタグファイルの作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_41-body" class="wiki-section-body-2">
+学習する絵にタグをつけます。<br>
+タグ付けにはwd14 taggerを使用します。<br>
+該当のExtensionを正しく導入出来ていれば｢Tagger｣タブが増えているはずです。<br>
+Taggerタブの下の｢Batch from directory｣タブから指定したフォルダ内の画像全てにタグを付けることが可能なので、これを利用します。<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/4RvZK9XFue.03.02.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/4RvZK9XFue.03.02.png" border="0"></a><br>
+まず、上部ですが入力フォルダ、出力フォルダに学習素材が入っているフォルダを指定してください。<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/xBwsd63eL6.03.30.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/xBwsd63eL6.03.30.png" border="0"></a><br>
+続いて下段ですが、Interrogatorに wd14-convnext を指定します。この選択肢が無い場合はExtensionが古い可能性があるので更新しましょう。<br>
+以前のもの (現在は wd14-vit という名前になっている) より高い精度でタグ付けをおこなってくれます。<br>
+<br>
+しきい値は0.35のままで大丈夫です。<br>
+<br>
+除外するタグですが、自分は breasts, blurry を常に除外するようにしています。<br>
+danbooruを見ればわかりますが、小さい胸の場合は｢breasts, small breasts｣、大きな胸の場合は｢breasts, large breasts｣と胸があったらとりあえずbreastsと入っていることが多く、学習によってbreastsの意味が変動してしまうことがあるためです。<br>
+blurryも同様で前ボケ、後ろボケの場合それぞれ｢blurry foreground｣｢blurry background｣となっているため、単体のblurryは削除するようにしています。<br>
+<br>
+その下のチェックボックスは｢アンダースコアの代わりにスペースを使用する｣｢括弧をエスケープする｣にチェックをいれます。<br>
+準備ができたら Interrogate ボタンを押してください。<br>
+しばらく待つと学習画像と同じ名前のテキストファイルが指定したフォルダにできあがっているはずです。<br>
+</div></div><div id="content_block_43" class="wiki-section-2"><div class="title-2"><h4 id="content_4_9"> タグの確認 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_43-body" class="wiki-section-body-2">
+確認して手で直した方がいいのですが、とりあえず後日かきます。<br>
+とりあえず気にせずそのまま次の項目へ。<br>
+</div></div><div id="content_block_45" class="wiki-section-2"><div class="title-2"><h4 id="content_4_10"> textual_inversion_templates の作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_45-body" class="wiki-section-body-2">
+textual_inversion_templates/ フォルダの下にテンプレートファイルを作成します。<br>
+以下のテキストファイルを作ってください。<br>
+<ul id="content_block_46" class="list-1">
+<li> キャラクターを学習する場合</li>
+</ul>
+<blockquote id="content_block_47">
+character is <b>キャラクターの名前</b>, [filewords]
+</blockquote>
+<ul id="content_block_48" class="list-1">
+<li> 画風の学習をする場合</li>
+</ul>
+<blockquote id="content_block_49">
+artist is <b>画風の名前</b>, illustration drawn by style of <b>画風の名前</b>, [filewords]
+</blockquote>
+このとき、作成するhypernetworkの名前がキャラクターの名前や画風の名前と一致しているなら [name] とすることも出来ます。<br>
+一致しない場合はそれぞれ太字になっている箇所を編集し、わかりやすい名前で textual_inversion_templates/ フォルダの下に保存してください。<br>
+</div></div><div id="content_block_51" class="wiki-section-2"><div class="title-2"><h4 id="content_4_11"> Hypernetworkの作成 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_51-body" class="wiki-section-body-2">
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/MqGXLpxh3H.44.39.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/MqGXLpxh3H.44.39.png" border="0"></a><br>
+Create Beta hypernetworkタブからhypernetworkを作成します。<ul id="content_block_52" class="list-1">
+<li> 名称</li>
+</ul>
+hypernetworkの名前です。わかりやすい名前を付けましょう。<ul id="content_block_53" class="list-1">
+<li> モジュール</li>
+</ul>
+全て選択済みのままにします<ul id="content_block_54" class="list-1">
+<li> Hypernetworkのレイヤー構造を入力</li>
+</ul>
+一般的に｢キャラクターを学習する場合は1,4,1のような広いネットワーク｣、｢画風を学習する場合は1,2,2,1のような深いネットワーク｣を作成すると効果的と言われています。<br>
+1,2,4,2,1のような｢広くて深いネットワーク｣は効果的ではなく学習時間や容量が大きくなるのでオススメしません。<br>
+またデフォルトの値である1,2,1でも十分効果的なハイパーネットワークを作ることは可能なため、VRAMに余裕がない人は1,2,1のままでかまいません。<ul id="content_block_55" class="list-1">
+<li> 活性化関数</li>
+</ul>
+筆者はmishを選択しています。mishは優秀ですが学習時間が伸びる傾向にあるようです。SwishやLinearでも成功事例はあるので、分かってきたら色々試して見るのもいいでしょう。<ul id="content_block_56" class="list-1">
+<li> レイヤーウェイトの初期化</li>
+</ul>
+KaimingNormalを指定します。<br>
+ここでの注意として、KaimingNormalを指定した場合その下の｢レイヤーの正規化(Layer Normalization)を追加｣にチェックをいれないと学習結果がもの凄い勢いで壊れます。<ul id="content_block_57" class="list-1">
+<li> Show advanced option</li>
+</ul>
+とりあえず無視でOK<ul id="content_block_58" class="list-1">
+<li> レイヤーの正規化を追加</li>
+</ul>
+チェックを入れてください。レイヤーウェイトの初期化にNormalやXaierを使う場合は使用しなくてかまいません。<br>
+また、レイヤーの正規化を使用する場合、学習率を高くしないと学習が進まなくなります。<ul id="content_block_59" class="list-1">
+<li> Use dropout.</li>
+</ul>
+使用する場合、レイヤー構造にあわせてdrop outする割合を指定します。dropoutを使うことで過学習を防ぐ効果があるようです。<br>
+前の方のレイヤーでは小さめの値を、後ろのほうの値はやや大きめの数値を設定するといいようです。<br>
+WEB UIでのデフォルト値は0.3のため、ここでは0.3を指定しています。<br>
+<br>
+以上の設定ができたら｢Hypernetworkを作成｣ボタンを押し、ファイルを作成します。<br>
+</div></div><div id="content_block_61" class="wiki-section-2"><div class="title-2"><h4 id="content_4_12"> 学習を行う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_61-body" class="wiki-section-body-2">
+</div></div><div id="content_block_63" class="wiki-section-3"><div class="title-3"><h5 id="content_4_12_5"> サンプル画像出力用のプロンプトの設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_12_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_63-body" class="wiki-section-body-3">
+まず、txt2imgタブでサンプル画像を出力するための設定をします。<ul id="content_block_64" class="list-1">
+<li> 学習素材フォルダにあるテキストから適当なものを選び、そのままPromptに入力</li>
+<li> Negative Promptには普段使っているものを入力</li>
+<li> Seedを固定</li>
+<li> サンプリング回数やサンプリングアルゴリズム、サイズなどは特に指定はないが、画像の出力に時間がかかる設定をしてしまうとトータルの学習時間が延びるので控えめに</li>
+</ul>
+</div></div><div id="content_block_66" class="wiki-section-3"><div class="title-3"><h5 id="content_4_12_6"> 学習の開始 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_12_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_66-body" class="wiki-section-body-3">
+Train_Gammaタブで設定を行い、学習を開始します。<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/YyjLFLJHWf.45.23.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/YyjLFLJHWf.45.23.png" border="0"></a><br>
+注意するのは赤枠で囲った部分の設定です。<br>
+その他の部分は画像通りに設定してください。<br>
+Gradient蓄積ステップは4または8を設定します。この設定は学習がやや遅くなる欠点の代わりにVRAMの消費を抑える効果があります。<br>
+Steps for cycleの値は｢学習素材数 ÷ Gradient蓄積ステップ｣した値を10倍にした数値を入力します。端数は切り捨てです。<br>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/sN0UbW_CQ9.00.02.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/sN0UbW_CQ9.00.02.png" border="0"></a><br>
+<br>
+残りの設定です。<br>
+データセットフォルダ、プロンプトのテンプレートファイルにはそれぞれ学習素材を入れているフォルダ、textual_inversion_templatesの項目で作ったテンプレートを指定します。<br>
+幅と高さは学習時の画像のサイズです。<br>
+MonkeyPatchを使用する場合、学習画像のサイズとここで指定したサイズを合わせる必要はありませんが、学習自体はここで設定した値を基準に行われます。<br>
+サイズを大きくすれば細かい部分まで学習できますが使用VRAMが大きくなり、学習時間も延びます。<br>
+必ず幅と高さの値は同じにします。<br>
+<br>
+最大ステップ数にはSteps for cycleで指定した値の40〜50倍の値を、指定したステップ数ごとにEmbeddingのコピーをログに保存にはSteps for cycleで指定した値の10倍を入力します。<br>
+Embeddingのコピーを保存の設定は指定したステップ数ごとにログファイルにその時のhypernetworkを保存する設定です。ストレージに余裕があるのならもっと細かく保存してもいいでしょう。<br>
+残りの設定は画像通りにしてください。<br>
+<br>
+準備ができたら｢Hypernetworkの学習を開始｣ボタンを押します。<br>
+</div></div><div id="content_block_68" class="wiki-section-2"><div class="title-2"><h4 id="content_4_13"> この後は？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_68-body" class="wiki-section-body-2">
+ひとまずこれで学習が終わるのを待てばHypernetworkが作成されるはずです。<br>
+この設定である程度の成果は得られますが、より適した学習素材の準備やタグの調整、学習率の調整や学習ステップ数など調整する項目は多く改善の余地は多くあると考えています。<br>
+より多くの成功事例・失敗事例が集まるきっかけになれば幸いです。<br>
+</div></div><div id="content_block_70" class="wiki-section-2"><div class="title-2"><h4 id="content_4_14"> メモ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4989629&amp;part=content_4_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_70-body" class="wiki-section-body-2">
+<pre id="content_block_71" class="BOX">
+801 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ f31e-ZR1D)[sage] 投稿日：2022/12/17(土) 17:08:25.41 ID:03SdMsEd0 [7/8]
+もっとHypernetworkの有用性理解する人が増えてほしいからＨＮ生成時の個人的なメモ置いとく。個人的な奴だから間違ってるかもしれん
+
+既存の『stable-diffusion-webui』フォルダにこのMOD入れる。すると学習タブでCreate Beta hypernetworkとTrain_Gammaが増える
+https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension
+
+Create Beta hypernetworkタブ開く→名称は適当（日本語も行ける）、レイヤー構造は1, 1、Hypernetworkの活性化関数はrelu→Hypernetworkを作成
+画像の前処理タブ開く→入力フォルダに学習したい画像を入れる※１→deepbooruで説明をつけるにチェック→前処理開始
+Train_Gammaタブ開く→名称決めたHypernetwork選択→学習率は0.00004（デフォ）、最大ステップは2000で学習開始→終わったら『0.000004』(一桁減らす)で4000まで→終わったらさらに一桁減らして『0.0000004』で6000まで→これで大体できてる
+2000の段階で一度画像をt2iで書き出してみて足りなければ3000〜4000まで追加学習してから次へ
+
+※１　絵柄を学習したいなら顔だけ切り抜きでいい。（重要　体は邪魔）
+体位なら体全部入れる。背景処理がいると見せかけて実はあんまりいらない？参考画像は40〜50枚は欲しいかもしれない。少なくても行けるかもしれないけどやってない。
+MODのおかげで画像を四角形に切り取る必要はないが、デフォ設定だと強制的に真四角に切り出されるので横長画像、四角画像、縦長画像をフォルダ分けして3回720x512、512x512、512x720とかで書き出せばめんどくさくない。|
+</pre>
+学習率の指定は纏めて<br>
+最大ステップ　6000<br>
+学習率　4e-05:2000,4e-06:4000,4e-07:6000<br>
+でいいかも<br>
+<pre id="content_block_72" class="BOX">
+845 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa9f-fzMu)[] 投稿日：2022/12/17(土) 19:38:59.30 ID:6aA74DbMa
+HNの前処理で512×512、512×768、768×512を分けて3フォルダ作ったけどこれは1つのデータセットフォルダにまとめて良えんかな
+
+あとtrain_ganmaのwidhとhightは512×512のままで良えの？
+
+質問ばっかですまん
+
+
+849 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｻｻｸｯﾃﾛﾗ Spb3-zkD9)[sage] 投稿日：2022/12/17(土) 19:42:19.24 ID:jvT5L/5rp
+&gt; &gt;845
+まとめていける
+
+あと後者は512のままでいい
+勝手に隙間埋めてくれるらしいから
+</pre>
+<pre id="content_block_73" class="BOX">
+874 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｻｻｸｯﾃﾛﾗ Spb3-zkD9)[sage] 投稿日：2022/12/17(土) 20:18:41.08 ID:RAi7H65Kp [5/5]
+顔の切り抜き方はハッキリとや
+汎用性持たせようといろんなキャラとか混ぜると碌なことがないから止めるんや
+あと絵柄学習も50枚くらいはあった方がええかもしれん
+</pre>
+<pre id="content_block_74" class="BOX">
+999 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ f31e-ZR1D)[sage] 投稿日：2022/12/18(日) 00:32:38.61 ID:hdK6/sqT0 [4/4]
+�仝飢菫�を見つけて切り抜く→�∩綾萢�する→�Ａ綾萢�済み画像→��betaHypernetworkを作る→
+��Train_Gammaで学習開始→�ε喘羞于瓩妊蹈哀侫�ルダにそれっぽいのが出来る→
+�Т粟�したら設定でhypernetwork読み込んでガチャ
+</pre>
+<div id="content_block_75">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_75-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_75-inside" class="toggle-display">
+��<a href="https://image02.seesaawiki.jp/n/h/nai_ch/BootHGQsMl.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/BootHGQsMl.png" border="0" width="420" height="350" alt="前処理する" title="前処理する"></a><br>
+��<a href="https://image01.seesaawiki.jp/n/h/nai_ch/B8hq4RnCeB.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/B8hq4RnCeB.png" border="0" width="420" height="350" alt="betaHypernetworkを作る" title="betaHypernetworkを作る"></a><br>
+��<a href="https://image01.seesaawiki.jp/n/h/nai_ch/b_haoBdJ4v.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/b_haoBdJ4v.png" border="0" width="420" height="750" alt="Train_Gammaで学習開始" title="Train_Gammaで学習開始"></a>
+</div>
+</div>
+<pre id="content_block_77" class="BOX">
+429 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ f31e-ZR1D)[sage] 投稿日：2022/12/18(日) 21:28:52.55 ID:hdK6/sqT0 [14/15]
+前スレ801や
+今のところ研究したHyperNetworkの絵柄学習についてをまとめる
+・レイヤー構造について
+【1, 1 】とにかく軽い。絵柄を寄せるならこれで普通に行ける。ただしガチャは必要。
+【1, 2, 1】精度がより高い。検証中だがおすすめかも？
+【1, 2, 2, 1】重い。小物とか髪型とか細かい要素を学習するっぽいけどMishの回す量が足りなかったり、そもそもLeruだと肝心の絵柄が似ない。繊細な絵なら合うかも
+
+・活性化関数について
+【Leru】今のところ無難な感じ。
+【Mish】絵柄を似せるのはシビアな調整がいるが回してれば雰囲気は似る。これで1,2,2,1と合わせると結果的に一番似る。ただしなんかi2iとの相性がメチャクチャ悪い。
+</pre>
+</div></div>
+</div>

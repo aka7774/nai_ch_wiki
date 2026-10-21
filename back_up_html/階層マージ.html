@@ -1,0 +1,538 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> リンク</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> AbyssOrangeMix</a></li>
+<li class="list-2"><a href="#content_2_2"> 7th</a></li>
+<li class="list-2"><a href="#content_2_3"> fp16.safetensors</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> 導入方法</a></li>
+<li class="list-1"><a href="#content_4"> 使い方</a></li>
+<li class="list-1"><a href="#content_5">研究報告</a></li>
+<li class="list-1"><a href="#content_6"> 出力サンプル・設定等</a>
+<ul>
+<li class="list-2"><a href="#content_6_4">AnythingV3とインスタモデルのマージ</a></li>
+<li class="list-2"><a href="#content_6_5">ElyOrangeMixとElysiumのマージ</a></li>
+<li class="list-2"><a href="#content_6_6">base alpha設定</a></li>
+<li class="list-2"><a href="#content_6_7">anyとinstaモデルの層別マージ結果</a></li>
+<li class="list-2"><a href="#content_6_8">インジゲーターの数字</a></li>
+<li class="list-2"><a href="#content_6_9">114スレ990(115スレ269)設定例</a></li>
+<li class="list-2"><a href="#content_6_10">116スレ43設定例</a></li>
+<li class="list-2"><a href="#content_6_11">116スレ649設定例</a></li>
+<li class="list-2"><a href="#content_6_12">116スレ652設定例</a></li>
+<li class="list-2"><a href="#content_6_13">116スレ741設定例</a></li>
+<li class="list-2"><a href="#content_6_14">116スレ754設定例</a></li>
+<li class="list-2"><a href="#content_6_15">117スレ73設定例</a></li>
+<li class="list-2"><a href="#content_6_16">119スレ447設定例(写実系モデルに2次元タグを解釈させる)</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_7">Checkpoint Merger(通常のマージ)でマージすると色が薄くなる問題、Merge Block Weighted(階層マージ)による解決法</a></li>
+<li class="list-1"><a href="#content_8"> 階層マージの知見の輸入</a>
+<ul>
+<li class="list-2"><a href="#content_8_17"> 4chan図</a></li>
+<li class="list-2"><a href="#content_8_18"> 韓国図</a>
+<ul>
+<li class="list-3"><a href="#content_8_18_1">2023/05/23時点版</a></li>
+<li class="list-3"><a href="#content_8_18_2">2023/04/02時点版</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_8_19"> Civitai</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_9">スレ書き込み保存：なんU JNVA部│115〜117スレ目の階層マージに関する情報</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<span class="fsize" style="font-size:16px;"><b>これはSD1.5の情報です！SDXLとの互換性はありません！</b></span><br>
+StableDiffusionのU-Netの各層に応じたモデルデータのマージを行う<br>
+<br>
+U-Netは構造がその名の通りU字型しており、浅い層が細かいディテール部分を、深い層が全体の構造を担当している<br>
+このU-Netの深さに応じてマージ比率を変えてマージするのが階層マージ<br>
+簡単に言うと、3D調(リアル風)を保ったままアニメ風のイラスト作成、などが出来る<br>
+詳しくはリンク参照<br>
+<br>
+<b>※2022/12/25現在 merge-block-weighted-gui拡張機能のアップデートにより、より詳細なマージ比率を指定できるモード(MBW Each)が追加されていますが、このページに記載している比率数値は特段の表記がない限り従来モード(MBW)用です。</b><br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> リンク <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+<ul id="content_block_4" class="list-1">
+<li><a href="https://note.com/kohya_ss/n/n9a485a066d5b" target="_blank" class="outlink" rel="nofollow">kohya_ss, Stable DiffusionのモデルをU-Netの深さに応じて比率を変えてマージする｜Kohya S.｜note</a></li>
+<li><a href="https://note.com/bbcmc/n/n2d4765b4bd47" target="_blank" class="outlink" rel="nofollow">実験レポート Model Block Merge で、U-Net の各レイヤーの影響を調べる　1</a></li>
+</ul>
+</div></div><div id="content_block_6" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> AbyssOrangeMix <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_6-body" class="wiki-section-body-2">
+<ul id="content_block_7" class="list-1">
+<li><a href="https://huggingface.co/WarriorMama777/OrangeMixs" target="_blank" class="outlink" rel="nofollow">OrangeMixs</a> AbyssOrangeMixが階層マージを利用して作成されたモデル</li>
+</ul>
+118スレ389<br>
+<pre id="content_block_8" class="PLAIN-BOX">
+脱がせたくないときはAbyssじゃなくAbyss_baseを使うんや
+
+baseにNAINSFWのエロを足したのがNight
+それに更にgapeを足したのが無印や
+(halfはgaoeを弱めた版) 
+</pre>
+</div></div><div id="content_block_10" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> 7th <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_10-body" class="wiki-section-body-2">
+最初は Abyss_7th という名前だったが紛らわしいので 7th だけになった。<br>
+<br>
+<a href="https://huggingface.co/syaimu/7th_Layer" class="outlink">https://huggingface.co/syaimu/7th_Layer</a><br>
+<a href="https://huggingface.co/syaimu/7th_anime_v2" class="outlink">https://huggingface.co/syaimu/7th_anime_v2</a><br>
+<br>
+119スレ873<br>
+<div id="content_block_11">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_11-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_11-inside" class="toggle-display">
+・メスガキ<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/31sa1ZR5sV.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/31sa1ZR5sV.jpg" border="0" width="1000" height="563"></a><br>
+・タオル一枚部<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/iDjc2XuELk.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/iDjc2XuELk.jpg" border="0" width="1000" height="563"></a><br>
+・日本人形<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/Db4Aw_DK7d.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/Db4Aw_DK7d.jpg" border="0" width="1000" height="563"></a><br>
+・オスガキ<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/FTw18vHHNe.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/FTw18vHHNe.jpg" border="0" width="1000" height="563"></a>
+</div>
+</div>
+<br>
+どのモデルがいい？<br>
+・7th_anime_test01(7th_anime_v2.0A) よりアニメに寄せたものでブロンプトへの応答がいい<br>
+・7th_anime_test02(7th_anime_v2.0B) 漫画風に<br>
+・7th_anime_test02(7th_anime_v2.0C) より漫画風に、ただし少しだけ破綻しやすい <br>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3"> fp16.safetensors <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+<br>
+ここで補完してます。<ul id="content_block_15" class="list-1">
+<li> <a href="https://huggingface.co/aka7774/fp16_safetensors" class="outlink">https://huggingface.co/aka7774/fp16_safetensors</a></li>
+</ul>
+</div></div><div id="content_block_17" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 導入方法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_17-body" class="wiki-section-body-1">
+1111のextentions(拡張機能)-URLからインストールで以下のURLを入れてインストール<br>
+<pre id="content_block_18" class="BOX">
+https://github.com/bbc-mc/sdweb-merge-block-weighted-gui
+</pre>
+</div></div><div id="content_block_20" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 使い方 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_20-body" class="wiki-section-body-1">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/RSkayol514.jpeg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/RSkayol514.jpeg" border="0" width="540" height="405"></a><ol id="content_block_21" class="list-1">
+<li>1111のMerge Block Weighted タブを選択</li>
+<li>modelA欄とmodelB欄にマージしたいモデルを選択</li>
+<li>各層に対するマージ比率を各種インジゲーターで調整、又は右上のPreset Weightedより選択</li>
+<li>Output Model Nameに出力するモデル名を入力</li>
+<li>Run Margeボタンで実行</li>
+</ol>
+<br>
+より効率的に多数の階層マージと結果出力をまわしたいときは、<a href="https://seesaawiki.jp/nai_ch/d/Extensions%5fURL#content_3_10">Merge Numaエクステンション</a>を使用するとよい。<br>
+</div></div><div id="content_block_23" class="wiki-section-1"><div class="title-1"><h3 id="content_5">研究報告 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_23-body" class="wiki-section-body-1">
+各IN-OUT層がどのような部分に効果を及ぼすか、報告のあった効果を記述する。ただし、モデルによってこの層の意味が変わる可能性が高いので、すべてのパターンにおいて当てはまるとは言えない。<br>
+現状(2022/12/29現在)もっとも盛んに行われている、NAIベースモデルを対象にした場合の効果と考えた方がよいかもしれない。<br>
+<div id="content_block_24">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_24-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_24-inside" class="toggle-display">
+<table id="content_block_25"><tbody><tr><td>119スレ662</td><td>効果</td></tr><tr><td>OUT11</td><td>ほとんど影響なし、塗りとかはココ</td></tr><tr><td>OUT10</td><td>ほとんど影響なし、塗りとかはココ</td></tr><tr><td>OUT09</td><td>ほとんど影響なし、塗りとかはココ</td></tr><tr><td>OUT08</td><td>うっすらと変わる、7は８より多少影響あるくらい</td></tr><tr><td>OUT07</td><td>うっすらと変わる、7は８より多少影響あるくらい</td></tr><tr><td>OUT06</td><td>しっかり顔に影響する、マージするモデルにもよる<br>ここら辺までは1層だけのマージだとはっきりとした変化は分かりにくい</td></tr><tr><td>OUT05</td><td>めっちゃ顔に影響あるというか顔の造形はここがベースといっていいレベル</td></tr><tr><td>OUT04</td><td>めっちゃ顔に影響あるというか顔の造形はここがベースといっていいレベル</td></tr><tr><td>OUT03</td><td>06くらいの程度影響具合、でも06マージとは全然違う結果になる</td></tr><tr><td>OUT02</td><td>あんまり影響はない</td></tr><tr><td>OUT01</td><td>あんまり影響はない</td></tr><tr><td>OUT00</td><td>あんまり影響はない</td></tr></tbody></table>
+</div>
+</div>
+</div></div><div id="content_block_28" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 出力サンプル・設定等 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_28-body" class="wiki-section-body-1">
+Hugging Face等でダウンロード可能な成果物（モデル）は<a href="https://seesaawiki.jp/nai_ch/d/%a5%b9%a5%ec%cc%b1%b6%a6%cd%ad%a5%e2%a5%c7%a5%eb">スレ民共有モデル</a>ページに掲載しています。<br>
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_6_4">AnythingV3とインスタモデルのマージ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+AnythingV3・インスタモデル・AnythingV3インスタ配合モデル・Merge Block Weighted標準プリセットの比較<br>
+<div id="content_block_31">
+<div class="toggle-title"><a id="region_plugin_content_3" onclick="toggleRegion(this,'content_block_31-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_31-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/UrFJ1MZEjT.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/UrFJ1MZEjT.jpg" border="0" width="600" height="2000"></a><br>
+</div>
+</div>
+</div></div><div id="content_block_34" class="wiki-section-2"><div class="title-2"><h4 id="content_6_5">ElyOrangeMixとElysiumのマージ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_34-body" class="wiki-section-body-2">
+<pre id="content_block_35" class="BOX">
+914 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 3b54-e5AJ)[sage] 投稿日：2022/12/19(月) 20:58:35.46 ID:KPb2Nvxk0 [3/4]
+ワイもElyOrangeMixとElyで層別マージしてみたから共有するわ
+大雑把な方針を得たいからin浅層、in深層、out深層、out浅層の4区画に分けてそれぞれの組み合わせで12個マージモデル作ってみた
+ElyAvR-1100やと1,1,1,1,1,1,1,1,1,1,1,1,0.5,0,0,0,0,0,0,0,0,0,0,0,0みたいな感じで6層1ブロックで設定しとる
+
+汎用性あるかはしらんけどいったん以下みたいな雰囲気っぽい
+in浅層…陰影とか塗り
+in深層…構図、物
+out深層…顔などディティール
+out浅層…質感
+
+987今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-httI)2022/12/19(月) 23:10:26.01ID:qiE3OptN0
+あー分かった気がする
+IN浅層=細部の形状=指等
+IN深層=大枠の形状=構図
+OUT深層=大枠の塗り
+OUT浅層=細部の塗り
+</pre>
+<div id="content_block_36">
+<div class="toggle-title"><a id="region_plugin_content_4" onclick="toggleRegion(this,'content_block_36-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_36-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/WU7imTbCr3.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/WU7imTbCr3.jpg" border="0" width="552" height="1808"></a> <a href="https://image02.seesaawiki.jp/n/h/nai_ch/mIHcA0cMjz.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/mIHcA0cMjz.jpg" border="0" width="552" height="1808"></a><br>
+</div>
+</div>
+</div></div><div id="content_block_39" class="wiki-section-2"><div class="title-2"><h4 id="content_6_6">base alpha設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_39-body" class="wiki-section-body-2">
+<pre id="content_block_40" class="BOX">
+271 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-httI)[] 投稿日：2022/12/20(火) 15:36:57.28 ID:cwtfwuIL0 [5/6]
+base_alpha検証
+</pre>
+<div id="content_block_41">
+<div class="toggle-title"><a id="region_plugin_content_5" onclick="toggleRegion(this,'content_block_41-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_41-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/VXZvjYWV9R.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/VXZvjYWV9R.png" border="0" width="512" height="258"></a> <a href="https://image02.seesaawiki.jp/n/h/nai_ch/ZMGUe39eMI.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ZMGUe39eMI.jpg" border="0" width="480" height="343"></a> <a href="https://image01.seesaawiki.jp/n/h/nai_ch/v3ZnLt7c6t.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/v3ZnLt7c6t.jpg" border="0" width="480" height="343"></a>
+</div>
+</div>
+<pre id="content_block_43" class="BOX">
+という訳で base_α=0→Model A, base_α=1→Model B 確定
+</pre>
+<div id="content_block_44">
+<div class="toggle-title"><a id="region_plugin_content_6" onclick="toggleRegion(this,'content_block_44-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_44-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/27D6cWF3gT.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/27D6cWF3gT.jpg" border="0" width="480" height="270"></a>
+</div>
+</div>
+<br>
+<pre id="content_block_46" class="BOX">
+305 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 537b-zlOH)[sage] 投稿日：2022/12/20(火) 16:51:53.08 ID:GPDwMx230 [7/7]
+分かり易いの出来たわ
+
+ModelA：Any　modelB：insta
+パラメータ0000・ba0：Anyと同じ
+パラメータ0000・ba1：Anyだけど解釈がinsta気味？
+パラメータ1111・ba0：instaだけど解釈がany気味？
+パラメータ1111・ba1：instaと同じ
+
+全部のパラメータ、0がmodelA、1がmodelB指してる、でいいと思う
+</pre>
+<div id="content_block_47">
+<div class="toggle-title"><a id="region_plugin_content_7" onclick="toggleRegion(this,'content_block_47-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_47-inside" class="toggle-display">
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/5k0tLVJ99I.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/5k0tLVJ99I.jpg" border="0" width="736" height="786"></a>
+</div>
+</div>
+<br>
+<pre id="content_block_49" class="BOX">
+653今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｴｰ Sae2-l18X)2022/12/21(水) 06:27:06.90ID:BB9aqFM2a&gt;&gt;654
+&gt;&gt;646
+昨日触ってみた体感だが階層マージは6つで1セット+中間層M00の25層で作られている
+浅層00〜05はモデルのベース
+深層06〜11は絵の塗り
+中間層M00は今の所不明&gt;&gt;162の検証を見る限り絵の土台部分だとは思う
+処理はbase_alpha0(ba0)にしたらmodelAをIN00〜11の順に処理→M00→OUT00〜11とモデルを作っていく
+聞いていた数字4列の意味だが1001(ba0)なら
+IN00〜05を1 IN06〜11を0
+OUT00〜05を0 OUT06〜11を1にしている状態で意味としてはAモデルの構図100%貰って塗り100%をBモデルにしている
+M00は書いてないからこれからだと分からないというか何してんのか分からん
+</pre>
+</div></div><div id="content_block_51" class="wiki-section-2"><div class="title-2"><h4 id="content_6_7">anyとinstaモデルの層別マージ結果 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_51-body" class="wiki-section-body-2">
+<pre id="content_block_52" class="BOX">
+24今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f2f-CLTW)2022/12/19(月) 23:47:13.82ID:55EWgxue0&gt;&gt;28&gt;&gt;33&gt;&gt;34&gt;&gt;41
+前スレ995 サンガツ
+結局jpgだとあらすぎたから自分で小さくした
+
+anyの25層のうち1層をｲﾝｽﾀに置き換えてモデル比較したで
+Layer18が顔を大分リアルにするからここが顔層なんやろな
+ちな24までしかないのはクロップするときに00を入れ忘れたんや
+
+34今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8b1e-CLTW)2022/12/19(月) 23:53:27.19ID:nICEWkdN0
+&gt;&gt;24
+この検証めちゃくちゃ有用やな
+
+なんとなく見て取れるけど、インスタみたいなリアルモデルをIN00にだけ乗せてあげると手指の描画は良くなったで
+1.0にすると流石に影響大きいから0.5超えないくらいがええと思うが
+</pre>
+<div id="content_block_53">
+<div class="toggle-title"><a id="region_plugin_content_8" onclick="toggleRegion(this,'content_block_53-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_53-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/bRVyJToo8V.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/bRVyJToo8V.jpg" border="0"></a>
+</div>
+</div>
+</div></div><div id="content_block_56" class="wiki-section-2"><div class="title-2"><h4 id="content_6_8">インジゲーターの数字 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_56-body" class="wiki-section-body-2">
+<pre id="content_block_57" class="BOX">
+10 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｱｳｱｳｳｰ Sa9f-XlG+)[sage] 投稿日：2022/12/19(月) 23:39:59.39 ID:wLD2pT87a
+これ数値全部0にするとモデルAで
+全部1だとモデルBになるんやな
+逆やと思ってた
+</pre>
+<ul id="content_block_58" class="list-1">
+<li>base alpha含め全部のパラメータは0がmodelAを、1がmodelBを指してる</li>
+</ul>
+</div></div><div id="content_block_60" class="wiki-section-2"><div class="title-2"><h4 id="content_6_9">114スレ990(115スレ269)設定例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_60-body" class="wiki-section-body-2">
+<table id="content_block_61"><tbody><tr><td>モデルA</td><td>モデルB</td><td>Weight values(MBW)</td><td>base_alpha</td><td>備考</td></tr><tr><td>NAI:0.6+AnythingV3.0:0.4</td><td>instagram50000+(f222-SD1.5):1.0</td><td>1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1</td><td>1</td><td>114スレ990(115スレ269)</td></tr></tbody></table>
+<br>
+<pre id="content_block_62" class="BOX">
+990 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a55-hIBn)[sage] 投稿日：2022/12/19(月) 23:14:55.11 ID:+cFYXaW50 [13/13]
+プロンプトマスピNSFWだけでこんな感じ
+指だけじゃなくて足首とかもリアルになってるのがわかる
+
+269 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a55-hIBn)[sage] 投稿日：2022/12/20(火) 15:34:32.97 ID:z7FK1nTC0 [1/8]
+前スレ&gt;&gt;990のマージモデル比率載せとくわね
+値が1に近づくほどインスタ要素強くなるから適宜変える感じで
+チナなんでこれで上手くいくのか検討もつかん
+</pre>
+<div id="content_block_63">
+<div class="toggle-title"><a id="region_plugin_content_9" onclick="toggleRegion(this,'content_block_63-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_63-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/POczruPMUb.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/POczruPMUb.png" border="0" width="512" height="768"></a> <a href="https://image01.seesaawiki.jp/n/h/nai_ch/ipmXdGkRZR.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/ipmXdGkRZR.png" border="0" width="512" height="768"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/wCA5ux_p5M.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/wCA5ux_p5M.png" border="0" width="935" height="318"></a>
+</div>
+</div>
+</div></div><div id="content_block_66" class="wiki-section-2"><div class="title-2"><h4 id="content_6_10">116スレ43設定例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_66-body" class="wiki-section-body-2">
+<table id="content_block_67"><tbody><tr><td>モデルA</td><td>モデルB</td><td>Weight values(MBW)</td><td>base_alpha</td><td>備考</td></tr><tr><td>ACertainThing+ (NAI NSFW - NAI SFW))+gape60</td><td>robotdiffusion</td><td>1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</td><td></td><td>IN00~05のみ1</td></tr><tr><td>ACertainThing+ (NAI NSFW - NAI SFW))+gape60</td><td>robotdiffusion</td><td>0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0</td><td></td><td>IN06~11のみ1</td></tr><tr><td>ACertainThing+ (NAI NSFW - NAI SFW))+gape60</td><td>robotdiffusion</td><td>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1</td><td></td><td>OUT06~11のみ1</td></tr><tr><td>ACertainThing+ (NAI NSFW - NAI SFW))+gape60</td><td>robotdiffusion</td><td>0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0</td><td></td><td>OUT00~05のみ1</td></tr></tbody></table>
+<pre id="content_block_68" class="BOX">
+43今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ea88-e5AJ)2022/12/21(水) 21:21:36.48ID:Szc2uaWf0
+前スレの https://fate.5ch.net/test/read.cgi/liveuranus/1671460483/971 からさらに掘り下げて ACertainThing+ (NAI NSFW - NAI SFW))+gape60 と robotdiffusionの階層マージをやってみたやがこれはさすがにわかりやすい差が出てくるな
+もしかしたら階層マージやない普通のマージモデルを作って出力した絵と階層マージで作ったモデルで出力した絵とを見比べたらどのパラメータがどこに効いてるかとか見えてくるんかもしらんなぁ
+
+左から(ACertainThing+ (NAI NSFW - NAI SFW))+gape60)のマージモデル、IN00~05のみ1, IN06~11のみ1, OUT06~11のみ1, OUT00~05のみ1, 100%robotdiffusionや
+</pre>
+<div id="content_block_69">
+<div class="toggle-title"><a id="region_plugin_content_10" onclick="toggleRegion(this,'content_block_69-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_69-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/_bocdZski1.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/_bocdZski1.jpg" border="0" width="1000" height="361"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/olizy9iiYZ.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/olizy9iiYZ.jpg" border="0" width="1000" height="317"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/HBPkUOrqVN.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/HBPkUOrqVN.jpg" border="0" width="729" height="1000"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/2YmZShw8am.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/2YmZShw8am.jpg" border="0" width="540" height="1000"></a>
+</div>
+</div>
+</div></div><div id="content_block_72" class="wiki-section-2"><div class="title-2"><h4 id="content_6_11">116スレ649設定例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_72-body" class="wiki-section-body-2">
+<table id="content_block_73"><tbody><tr><td>モデルA</td><td>モデルB</td><td>Weight values(MBW)</td><td>base_alpha</td><td>備考</td></tr><tr><td>ElysiumAnimeV3</td><td>ElysiumV1</td><td>1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0</td><td>1</td><td></td></tr><tr><td>↑の合成品</td><td>Gape60</td><td>0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25</td><td>1</td><td></td></tr></tbody></table>
+<pre id="content_block_74" class="BOX">
+649今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 53c3-ZR1D)2022/12/23(金) 02:48:55.23ID:3M4wvqj10
+触発されて狂ったように層状マージやりまくったんやがほとんどアカン奴で一番マシな感じなのが
+ElysiumAnimeV3とElysiumV1を1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+上の合成品とGape60で0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25
+base_alphaは常に1
+の面白味のない組み合わせやったわ(ElysiumAnimeV3と比べてかなり落ち着いた構図で破綻少な目やった)
+100回位言われてそうやけど層状マージはIN(構図)は全部A、OUT(塗り)は全部B、Mはメインにしたいほう全振りみたいなのが(用途限られるけど)安定しそうやな。これなら通常のマージの素材にも使えそうな気がしてきたで
+</pre>
+</div></div><div id="content_block_76" class="wiki-section-2"><div class="title-2"><h4 id="content_6_12">116スレ652設定例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_76-body" class="wiki-section-body-2">
+<table id="content_block_77"><tbody><tr><td>モデルA</td><td>モデルB</td><td>Weight values(MBW)</td><td>base_alpha</td><td>備考</td></tr><tr><td>ACertainThing+ (NAI NSFW - NAI SFW))+gape60</td><td>cafe-insta+f222_f222</td><td>0.2,0.3,0.2,0.2,0.3,0.3,0.2,0.3,0.3,0.1,0.1,0.1,0,0.25,0.25,0.25,0.1,0.1,0.1,0.1,0.1,0.25,0.25,0.1,0.1</td><td>0</td><td>モデルマージ比率は不明</td></tr></tbody></table>
+<pre id="content_block_78" class="BOX">
+652今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 6a11-CLTW)2022/12/23(金) 03:24:07.94ID:PF9X6rgq0
+一旦マージは止めや言うたが気を取り直してここの検証を参考にチャレンジしてみたで
+あんまリアル寄りになるのは好みではないので弱く混ぜた感じや
+ACertainThingの色味は残せてる気がする。そしてgapeの肛門拡張を確認すんの忘れてたわ…
+
+短めプロンプト
+https://majinai.art/i/-qfc-HK.png
+https://majinai.art/i/gYWe44Q.png
+
+長めのプロンプト
+https://majinai.art/i/hoqxfIv.png
+https://majinai.art/i/dWml3fL.png
+
+参考にならんと思うが一応
+ACertainThing+ (NAI NSFW - NAI SFW))+gape60ベースにinstaとf222混ぜたやつをここの検証画像参考に薄く強弱付けてみた
+0.2,0.3,0.2,0.2,0.3,0.3,0.2,0.3,0.3,0.1,0.1,0.1,0,0.25,0.25,0.25,0.1,0.1,0.1,0.1,0.1,0.25,0.25,0.1,0.1
+</pre>
+</div></div><div id="content_block_80" class="wiki-section-2"><div class="title-2"><h4 id="content_6_13">116スレ741設定例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_80-body" class="wiki-section-body-2">
+<table id="content_block_81"><tbody><tr><td>モデルA</td><td>モデルB</td><td>Weight values(MBW)</td><td>base_alpha</td><td>備考</td></tr><tr><td>AnyThing-V3.0[6569e224]</td><td>gape60-fp16[25396b85]</td><td>1,1,1,1,1,1,1,1,1,1,1,1,0.5,0,0,0,0,0,0,0,0,0,0,0,0</td><td>1</td><td></td></tr></tbody></table>
+<pre id="content_block_82" class="BOX">
+741今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-PSnz)2022/12/23(金) 14:14:06.93ID:sq9ELIgG0&gt;
+層別マージよく解らんが塗りをGAPEにするだけでも結構良いわ
+
+746今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0f38-PSnz)2022/12/23(金) 14:28:10.01ID:sq9ELIgG0&gt;
+&gt;&gt;743
+Any3.0とgape60をINを全部１、OUTを全部0にしただけの雑マージやで
+</pre>
+<div id="content_block_83">
+<div class="toggle-title"><a id="region_plugin_content_11" onclick="toggleRegion(this,'content_block_83-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_83-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/0LPAbUK4_u.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/0LPAbUK4_u.png" border="0" width="1000" height="596"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/55HzRFaC8x.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/55HzRFaC8x.png" border="0"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/4e4Y_3Fjo5.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/4e4Y_3Fjo5.png" border="0"></a>
+</div>
+</div>
+</div></div><div id="content_block_86" class="wiki-section-2"><div class="title-2"><h4 id="content_6_14">116スレ754設定例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_86-body" class="wiki-section-body-2">
+<table id="content_block_87"><tbody><tr><td>モデルA</td><td>モデルB</td><td>Weight values(MBW)</td><td>base_alpha</td><td>備考</td></tr><tr><td>BloodOrangeMix</td><td>instagram50000+(f222-SD1.5):1.0</td><td>1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1</td><td>0</td><td>114スレ990(115スレ269)設定例と同数値設定、モデルAとbase_alphaが違う</td></tr></tbody></table>
+<pre id="content_block_88" class="BOX">
+754今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ af20-PniU)2022/12/23(金) 15:14:32.11ID:gQ/lkNW20
+https://majinai.art/i/vB0xuKv.png
+https://majinai.art/i/qajA30b.png
+https://majinai.art/i/Eo3HBCw.png
+BloodOrangeMixとInsta+f222を階層マージしたやつ
+ほんまたまらん
+
+770今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ af20-PniU)2022/12/23(金) 15:50:23.51ID:gQ/lkNW20
+&gt;&gt;762
+モデルAにBloodOrangeMix
+モデルBにinstagram50000+(f222-SD1.5):1.0
+
+重みは
+1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1
+baは0
+
+モデルAをBloodOrangeにしてる以外は
+wikiの丸パクリやで
+
+785今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ af20-PniU)2022/12/23(金) 16:12:54.38ID:gQ/lkNW20
+&gt;&gt;783
+あとプロンプトもかなり重要な気がする
+Negative promptは余計なもの入れないで
+(worst quality:1.4), (low quality:1.4)
+くらいにしておいた方がワイは安定した
+</pre>
+</div></div><div id="content_block_90" class="wiki-section-2"><div class="title-2"><h4 id="content_6_15">117スレ73設定例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_90-body" class="wiki-section-body-2">
+<table id="content_block_91"><tbody><tr><td>モデルA</td><td>モデルB</td><td>Weight values(MBW)</td><td>base_alpha</td><td>備考</td></tr><tr><td>HentaiDiffusion17(HD-17)</td><td>NAI NSFW</td><td>0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5</td><td>0</td><td>※書き込み内容からの推定</td></tr><tr><td>↑でマージしたもの</td><td>instagram50000+(f222-SD1.5):1.0</td><td>1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1</td><td>0</td><td>negative promptはクソ長いHD製のを使用</td></tr></tbody></table>
+<pre id="content_block_92" class="BOX">
+73今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 5155-aH43)2022/12/24(土) 00:17:17.80ID:6faiCFti0
+https://imgur.com/a/dJdPdoh
+無理やり感あるが安定してきた
+modelA:HD17:0.5+N〇I:0.5(M00=0,ba=0),modelB:instagram50000+(f222-SD1.5):1.0
+Weight values:1,0.9,0.7,0.5,0.3,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.3,0.5,0.7,0.9,1
+(ba=0)(negative promptはクソ長いHD製のを使用)
+５枚出してこんな感じHDはウイルスの噂あるので注意
+rtx4090はいいぞ
+</pre>
+<div id="content_block_93">
+<div class="toggle-title"><a id="region_plugin_content_12" onclick="toggleRegion(this,'content_block_93-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_93-inside" class="toggle-display">
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/SdFY_bzAEl.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/SdFY_bzAEl.png" border="0" width="1000" height="1000"></a><br>
+</div>
+</div>
+</div></div><div id="content_block_96" class="wiki-section-2"><div class="title-2"><h4 id="content_6_16">119スレ447設定例(写実系モデルに2次元タグを解釈させる) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_6_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_96-body" class="wiki-section-body-2">
+<table id="content_block_97"><tbody><tr><td>モデルA</td><td>モデルB</td><td>Weight values(MBW)</td><td>base_alpha</td><td>備考</td></tr><tr><td>Cafe Unofficial Instagram TEST Model[50b987ae]</td><td>Waifu Diffusion v1.3</td><td>0.5</td><td>-</td><td>層別ではなく通常のマージ</td></tr><tr><td>↑でマージしたもの</td><td>NAI NSFW</td><td>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0</td><td>0</td><td></td></tr></tbody></table>
+<br>
+Instaモデル、WDモデルともに最新版ではないことに注意。<br>
+最新版を使ってもよいが、リアルになりすぎたり(要するにかわいくない)、<br>
+2次元系タグを入れると急にリアルさが減ったりと扱いづらい。<br>
+旧版を使っていてもrealisticを盛ればだいぶリアルにできるので旧版がおすすめ。<br>
+<br>
+<div id="content_block_98">
+<div class="toggle-title"><a id="region_plugin_content_13" onclick="toggleRegion(this,'content_block_98-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_98-inside" class="toggle-display">
+味付け程度のrealisticの例<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/aR03lZGCfo.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/aR03lZGCfo-s.png" border="0"></a><a href="https://image01.seesaawiki.jp/n/h/nai_ch/Bvnds1dDoG.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/Bvnds1dDoG-s.png" border="0"></a><a href="https://image01.seesaawiki.jp/n/h/nai_ch/igNBEmqc8C.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/igNBEmqc8C-s.png" border="0"></a><a href="https://image01.seesaawiki.jp/n/h/nai_ch/L0IEvbgUlf.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/L0IEvbgUlf-s.png" border="0"></a><br>
+realisticを盛った例<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/ehi5d3CGGC.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/ehi5d3CGGC-s.png" border="0"></a><a href="https://image02.seesaawiki.jp/n/h/nai_ch/u4NrKuK2oA.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/u4NrKuK2oA-s.png" border="0"></a><a href="https://image01.seesaawiki.jp/n/h/nai_ch/yv6iaW0KFw.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/yv6iaW0KFw-s.png" border="0"></a><a href="https://image01.seesaawiki.jp/n/h/nai_ch/J0SlqmE12A.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/J0SlqmE12A-s.png" border="0"></a>
+</div>
+</div>
+</div></div><div id="content_block_101" class="wiki-section-1"><div class="title-1"><h3 id="content_7">Checkpoint Merger(通常のマージ)でマージすると色が薄くなる問題、Merge Block Weighted(階層マージ)による解決法 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_101-body" class="wiki-section-body-1">
+<pre id="content_block_102" class="BOX">
+559今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ea88-e5AJ)2022/12/22(木) 22:37:07.48ID:eV+I6f+P0
+Checkpoint Mergerでマージすると色が薄くなる問題、Merge Block Weightedで解決できそう
+
+Checkpoint Merger のMultiplierで指定してた値をMerge Block Weightedの IN00〜OUT11まで全部同じ値にして、base_alphaとM00を0にする(=ModelA側に寄せる)と発色がよくなる 
+
+出てくる絵は微妙に変わるけど発色よくなってVAEが必要なくなっただけでも満足や
+
+↓のX/Yは上から
+- Checkpoint Mergerでマージしたもの
+- Merge Block Weighted で全部↑のMultiplierと同じ値を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+- Merge Block Weighted でbase_alphaとM00に0を設定 0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+
+
+612今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7b88-z22/)2022/12/23(金) 00:51:07.68ID:S9OoH/yv0
+&gt;&gt;559法とsafetensors変換を併用したらハローアスカ5秒短縮できたやで！
+1. naiとnaiで階層マージ vae有効にしておく
+2. できたckptをsafetensorsに変換
+3. vae無しでハローアスカ
+ckpt+vae 42.89
+safetensors 37.87
+多用するモデルで作っとけば普段使いもいけるでー
+</pre>
+<br>
+※safetensorsに変換する方法は<a href="https://seesaawiki.jp/nai_ch/d/%a5%ed%a1%bc%a5%ab%a5%eb%b9%e2%c2%ae%b2%bd%a5%e1%a5%e2#content_3">こちら</a>参照<br>
+<br>
+<div id="content_block_103">
+<div class="toggle-title"><a id="region_plugin_content_14" onclick="toggleRegion(this,'content_block_103-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_103-inside" class="toggle-display">
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/90U2NMDE01.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/90U2NMDE01.png" border="0" width="1000" height="618"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/HDaMMYynMM.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/HDaMMYynMM.jpg" border="0" width="1000" height="384"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/sAsawc6owS.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/sAsawc6owS.jpg" border="0" width="1000" height="338"></a><br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/kmGxXh5SO1.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/kmGxXh5SO1.jpg" border="0" width="1000" height="693"></a><br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/16_L3pnRTF.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/16_L3pnRTF.jpg" border="0" width="298" height="1000"></a>
+</div>
+</div>
+<br>
+</div></div><div id="content_block_106" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> 階層マージの知見の輸入 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_106-body" class="wiki-section-body-1">
+<br>
+4chanやら韓国やらCvhitaiの海外ニキやらの知見をまとめておく<br>
+</div></div><div id="content_block_108" class="wiki-section-2"><div class="title-2"><h4 id="content_8_17"> 4chan図 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_8_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_108-body" class="wiki-section-body-2">
+<a href="https://seesaawiki.jp/nai_ch/d/LoRA%b3%ac%c1%d8">LoRA階層</a>で貼ってるのとおんなじ<br>
+赤文字の「背景/小物」のうち、🔺みたいなマークついてるのが背景にあたる層らしい。<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/GbP5nluAgY.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/GbP5nluAgY.png" border="0" width="900"></a><br>
+</div></div><div id="content_block_110" class="wiki-section-2"><div class="title-2"><h4 id="content_8_18"> 韓国図 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_8_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_110-body" class="wiki-section-body-2">
+</div></div><div id="content_block_112" class="wiki-section-3"><div class="title-3"><h5 id="content_8_18_1">2023/05/23時点版 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_8_18_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_112-body" class="wiki-section-body-3">
+<br>
+356 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 86b4-FIIW)[sage] 投稿日：2023/05/23(火) 13:08:02.29 ID:amuKnONc0<blockquote id="content_block_113">
+&gt;240
+</blockquote>
+韓国コミュで今月に公開された層別マージ表を日本語訳したで<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/iLsxwplIZe.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/iLsxwplIZe.png" border="0" width="900"></a><br>
+<br>
+474 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7b84-owa4)[sage] 投稿日：2023/05/23(火) 16:53:25.90 ID:iN3nbasn0<blockquote id="content_block_114">
+&gt;356
+</blockquote>
+サンガツ！<br>
+LoRAに無い階層をブラックアウトしてみたんやけどあってるかな・・・<br>
+改めてみると結構、色の情報とか差があるんやなー<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/rXR_IfeFk8.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/rXR_IfeFk8.png" border="0" width="900"></a><br>
+<br>
+</div></div><div id="content_block_116" class="wiki-section-3"><div class="title-3"><h5 id="content_8_18_2">2023/04/02時点版 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_8_18_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_116-body" class="wiki-section-body-3">
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1680334847/491" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1680...</a><br>
+491:2023/04/02(日) 14:03:55.94<blockquote id="content_block_117">
+&gt;458&gt;&gt;481
+</blockquote>
+韓国コミュで層別マージの資料があったからこっちも参考にしてほしい<br>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/5XaT2P2SW3.jpg"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/5XaT2P2SW3.jpg" border="0" width="900"></a><br>
+<br>
+</div></div><div id="content_block_119" class="wiki-section-2"><div class="title-2"><h4 id="content_8_19"> Civitai <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_8_19" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_119-body" class="wiki-section-body-2">
+レシピを公開してるなかで(ありがたい)参考になりそうなのを選別して貼っとく<br>
+<br>
+▼AresMix<ul id="content_block_120" class="list-1">
+<li> Ares Mix ：<a href="https://civitai.com/models/6931/ares-mix" class="outlink">https://civitai.com/models/6931/ares-mix</a></li>
+</ul>
+実写モデルだけどアニメモデルのポーズ/構図が効くようにするのに参考になるかも<br>
+<br>
+Base0.7(ここが0.7で合ってるかは自信ない)｜Aに実写　Bにアニメモデル<br>
+<br>
+<textarea id="content_block_121" class="PLAIN-BOX">
+0.05199847612695355,0.05722134125067434,0.06354625877794251,0.07135480548979826,0.08122523963562354,0.09407671474206218,0.11146117361039158,0.13621438760332552,0.17411011265922482,0.23892225595753655,0.373213196614723,0.8,0.7,0.8,0.373213196614723,0.23892225595753655,0.17411011265922482,0.13621438760332552,0.11146117361039158,0.09407671474206218,0.08122523963562354,0.07135480548979826,0.06354625877794251, 0.05722134125067434,0.05199847612695355
+</textarea>
+<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/jslllzIvxN.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/jslllzIvxN.png" border="0" width="800"></a><br>
+<br>
+▼kanpiromix<br>
+Dreamlikeライセンスの呪いを回避しながらChilloutに近い結果を出すChilloutGenericなるものがレシピで公開されてるようで↓でもベースで使ったりしてるっぽい<ul id="content_block_122" class="list-1">
+<li> kanpiromix： <a href="https://civitai.com/models/24591/kanpiromix" class="outlink">https://civitai.com/models/24591/kanpiromix</a></li>
+</ul>
+<br>
+<br>
+<br>
+</div></div><div id="content_block_124" class="wiki-section-1"><div class="title-1"><h3 id="content_9">スレ書き込み保存：なんU JNVA部│115〜117スレ目の階層マージに関する情報 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4999731&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_124-body" class="wiki-section-body-1">
+<br>
+クソながなので別ページに分離した<br>
+個人的に記録していたなんU JNVA部│115〜117スレ目の階層マージに関する有用だと思ったレスのマークや<br>
+→ <a href="https://seesaawiki.jp/nai_ch/d/%b3%ac%c1%d8%a5%de%a1%bc%a5%b8%a4%cb%b4%d8%a4%b9%a4%eb%a5%b9%a5%ec%bd%f1%a4%ad%b9%fe%a4%df%ca%dd%c2%b8">階層マージに関するスレ書き込み保存</a>
+</div></div>
+</div>

@@ -1,0 +1,426 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> 概要</a></li>
+<li class="list-1"><a href="#content_2"> アップローダー</a>
+<ul>
+<li class="list-2"><a href="#content_2_1"> Huggingface Hub</a></li>
+<li class="list-2"><a href="#content_2_2"> ギガファイル便</a></li>
+<li class="list-2"><a href="#content_2_3"> MEGA</a></li>
+<li class="list-2"><a href="#content_2_4"> Civitai</a></li>
+<li class="list-2"><a href="#content_2_5"> kioskloud</a></li>
+<li class="list-2"><a href="#content_2_6"> pixeldrain</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_3"> 任意の.ckptと.safetensorsを相互変換するやつ_v5</a></li>
+<li class="list-1"><a href="#content_4"> DCCツール</a>
+<ul>
+<li class="list-2"><a href="#content_4_7"> openOutpaint</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_5"> スクリプト</a>
+<ul>
+<li class="list-2"><a href="#content_5_8"> fix_postion_ids.py: マージモデルの破損修復</a>
+<ul>
+<li class="list-3"><a href="#content_5_8_1">コマンド例</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_5_9"> Config-Preset</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_6"> プラグイン</a>
+<ul>
+<li class="list-2"><a href="#content_6_10"> krita ai diffusion</a></li>
+<li class="list-2"><a href="#content_6_11"> auto-sd-paint-ext (旧名 auto-sd-krita)</a></li>
+<li class="list-2"><a href="#content_6_12"> Photoshop</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_7"> 学習</a>
+<ul>
+<li class="list-2"><a href="#content_7_13">学習用タグの入力を速く楽にするやつ</a></li>
+<li class="list-2"><a href="#content_7_14"> Kohya_lora_param_gui</a></li>
+<li class="list-2"><a href="#content_7_15"> caption_ordering_for_LoRA</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_8"> ハードウェア関係</a>
+<ul>
+<li class="list-2"><a href="#content_8_16"> HWMonitor</a></li>
+<li class="list-2"><a href="#content_8_17"> MSI Afterburner</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_9"> その他</a>
+<ul>
+<li class="list-2"><a href="#content_9_18"> 生成した画像に含まれる生成情報を削除するツール「remove-meta-alpha」</a></li>
+<li class="list-2"><a href="#content_9_19"> PNG Infoを維持したままPNGをJPEGに変換するツール「png2jpg-ai-image-metadata」</a></li>
+<li class="list-2"><a href="#content_9_20"> PNG Infoを維持したままPNGをwebpに変換するツール「png2webp-for-a1111-and-NAI」</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+Automatic1111の拡張機能以外で動作するローカル用のプラグインやDCCツールもではじめたのでページを作成しました。<br>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> アップローダー <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_2_1"> Huggingface Hub <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_2_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+<br>
+<a href="https://huggingface.co/models" class="outlink">https://huggingface.co/models</a><br>
+<ul id="content_block_6" class="list-1">
+<li> モデル用なら最強</li>
+<li> Private設定も出来るけど基本的には公開される(検索対象になる)</li>
+</ul>
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_2_2"> ギガファイル便 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_2_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+<br>
+<a href="https://gigafile.nu/" class="outlink">https://gigafile.nu/</a><br>
+<ul id="content_block_9" class="list-1">
+<li> 遅いのでモデルには向かない。</li>
+<li> 日数制限があって消える。</li>
+</ul>
+</div></div><div id="content_block_11" class="wiki-section-2"><div class="title-2"><h4 id="content_2_3"> MEGA <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_2_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_11-body" class="wiki-section-body-2">
+<br>
+<a href="https://mega.io/" class="outlink">https://mega.io/</a><br>
+<ul id="content_block_12" class="list-1">
+<li> ダウンロード5GB制限がある。</li>
+<li> 速度はわりといい。</li>
+</ul>
+</div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4"> Civitai <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_14-body" class="wiki-section-body-2">
+<br>
+<a href="https://civitai.com/" class="outlink">https://civitai.com/</a><br>
+<ul id="content_block_15" class="list-1">
+<li> いろんなモデルがある</li>
+<li> ダウンロードに会員登録が必要</li>
+</ul>
+</div></div><div id="content_block_17" class="wiki-section-2"><div class="title-2"><h4 id="content_2_5"> kioskloud <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_2_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_17-body" class="wiki-section-body-2">
+<br>
+<a href="https://kioskloud.xyz/" class="outlink">https://kioskloud.xyz/</a><br>
+<br>
+kioskloudがオススメやけど最初が面倒か<br>
+</div></div><div id="content_block_19" class="wiki-section-2"><div class="title-2"><h4 id="content_2_6"> pixeldrain <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_2_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_19-body" class="wiki-section-body-2">
+<br>
+<a href="https://pixeldrain.com/" class="outlink">https://pixeldrain.com/</a><br>
+<br>
+海外ではこのアップローダーなんかモデル配布で使われてたりするやな<br>
+制限は週に20GBまでだから問題ないだろう <br>
+<br>
+</div></div><div id="content_block_21" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 任意の.ckptと.safetensorsを相互変換するやつ_v5 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_21-body" class="wiki-section-body-1">
+<br>
+最新版はこれ<br>
+<a href="https://colab.research.google.com/drive/1KUz8TLKRtRzO7GyJNzQsE_wgD-TzDoqU" class="outlink">https://colab.research.google.com/drive/1KUz8TLKRt...</a><br>
+<br>
+改良点<ul id="content_block_22" class="list-1">
+<li> 破損した CLIP を修復する機能を追加しました</li>
+<li> VAE をモデルにマージする機能を追加しました</li>
+<li> モデルを prune して更に軽量化する機能を追加しました</li>
+</ul>
+<br>
+これらの機能を利用して Anything-V3.0.ckpt を Anything-V3.0-pruned-fp16.safetensors に変換することができます（生成結果は本家と完全に一致します）<br>
+<br>
+<dl id="content_block_23">
+<dt> 巨大モデル対応 </dt><dd> 標準の ~12GB ランタイムの場合 ~10GB までのモデルが変換可能や</dd>
+<dt> fp16化対応 </dt><dd> fp16 として保存することで RAM とストレージを節約 (学習には不向きやけど生成画像は同一)</dd>
+<dt> 簡単DL </dt><dd> Drive や🤗からカンマ区切りで任意個のモデルを取得できる</dd>
+<dt> 簡単Save </dt><dd> 直接 Google Drive に保存可能</dd>
+<dt> SD2.x対応 </dt><dd> SD2.x系モデル用の yaml も同時に {ckpt 用 / safetensors 用 / それぞれの fp16 版用} へ変換できる</dd>
+</dl>
+<br>
+<a href="https://colab.research.google.com/drive/1SIJaNrt-LzBWgDY44vPvuvUlwnjJ9a5-" target="_blank" class="outlink" rel="nofollow">ここ</a>にアクセスしてログインするだけで使えるで<br>
+中身を改造したい場合は、リンク先画面上部の【ファイル】&gt;【ドライブにコピーを保存】で好きなだけ弄れるようになるで<br>
+<br>
+<div id="content_block_24">
+<div class="toggle-title"><a id="region_plugin_content_1" onclick="toggleRegion(this,'content_block_24-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p>(旧バージョン)潜在的に危険な.ckptを安全な.safetensorsに変換するColab用Notebook</p></div>
+<div style="display:none" id="content_block_24-inside" class="toggle-display">
+手順1. これをダウンロードする <a href="https://75.gigafile.nu/0330-c82660f0f62e26714f340e511377b763c" class="outlink">https://75.gigafile.nu/0330-c82660f0f62e26714f340e...</a><br>
+　パスワード=スレタイ英4文字<br>
+手順2. Google Driveを開く <a href="https://drive.google.com/drive/u/0/my-drive" class="outlink">https://drive.google.com/drive/u/0/my-drive</a><br>
+　ログイン必須<br>
+手順3. ダウンロードしたものをGoogle Driveにドラッグ&amp;ドロップしてダブルクリック<br>
+　後は中身を読めば分かるようになっている
+</div>
+</div>
+</div></div><div id="content_block_27" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> DCCツール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_27-body" class="wiki-section-body-1">
+</div></div><div id="content_block_29" class="wiki-section-2"><div class="title-2"><h4 id="content_4_7"> openOutpaint <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_4_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_29-body" class="wiki-section-body-2">
+Web UI とは別に起動してアウトペイントするツール<ul id="content_block_30" class="list-1">
+<li> zero01101/openOutpaint: local offline javascript and html canvas outpainting gizmo for stable diffusion webUI API 🐠 - <a href="https://github.com/zero01101/openOutpaint" class="outlink">https://github.com/zero01101/openOutpaint</a></li>
+</ul>
+導入ガイドは以下を参照<ul id="content_block_31" class="list-1">
+<li> SBS Guided Example · zero01101/openOutpaint Wiki - <a href="https://github.com/zero01101/openOutpaint/wiki/SBS-Guided-Example" class="outlink">https://github.com/zero01101/openOutpaint/wiki/SBS...</a></li>
+</ul>
+</div></div><div id="content_block_33" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> スクリプト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_33-body" class="wiki-section-body-1">
+</div></div><div id="content_block_35" class="wiki-section-2"><div class="title-2"><h4 id="content_5_8"> fix_postion_ids.py: マージモデルの破損修復 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_5_8" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_35-body" class="wiki-section-body-2">
+マージされたモデルが破損する問題を修復するスクリプト。階層マージ拡張機能の作者製<br>
+こんな感じで調査したり、修復してモデルを出力できる。<br>
+<a href="https://files.catbox.moe/ez1pqp.webp" class="outlink">https://files.catbox.moe/ez1pqp.webp</a><br>
+pytorch と safetensors.torch を pip で入れてないと動かない。os と argparse は Python の標準ライブラリ。<br>
+</div></div><div id="content_block_37" class="wiki-section-3"><div class="title-3"><h5 id="content_5_8_1">コマンド例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_5_8_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_37-body" class="wiki-section-body-3">
+調査<br>
+<pre id="content_block_38" class="prettyprint lang-bsh">
+python fix_position_ids.py --model E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3.safetensors --verbose
+</pre>
+修復<br>
+<pre id="content_block_39" class="prettyprint lang-bsh">
+python fix_position_ids.py --model E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3.safetensors --out E:\tool\sd\model_sd\need_fix\Elysium_Anime_V3_fix.safetensors
+</pre>
+ちなみにマージモデルの破損問題は、マージするときに float16 のチェックを入れてモデルを生成すると回避できるらしい。<br>
+</div></div><div id="content_block_41" class="wiki-section-2"><div class="title-2"><h4 id="content_5_9"> Config-Preset <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_5_9" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_41-body" class="wiki-section-body-2">
+<ul id="content_block_42" class="list-1">
+<li> プリセット値の構成可能なドロップダウンを使用して、Web UI の txt2img タブと img2img タブの設定をすばやく変更｜Zyin055/Config-Presets: Script for Automatic1111 - [<a href="https://github.com/Zyin055/Config-Presets" class="outlink">https://github.com/Zyin055/Config-Presets</a>]</li>
+</ul>
+</div></div><div id="content_block_44" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> プラグイン <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_44-body" class="wiki-section-body-1">
+</div></div><div id="content_block_46" class="wiki-section-2"><div class="title-2"><h4 id="content_6_10"> krita ai diffusion <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_6_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_46-body" class="wiki-section-body-2">
+ペイント系ツールKritaにAI画像生成の機能を追加するプラグイン<ul id="content_block_47" class="list-1">
+<li> <a href="https://github.com/Acly/krita-ai-diffusion" class="outlink">https://github.com/Acly/krita-ai-diffusion</a></li>
+</ul>
+プラグインにComfyUIサーバーをインストールする機能が付いているので、初心者から中級者まで幅広く使える。<br>
+インストール方法は以下を参照<ul id="content_block_48" class="list-1">
+<li> <a href="https://www.interstice.cloud/plugin" class="outlink">https://www.interstice.cloud/plugin</a></li>
+</ul>
+【注意】kritaaidiffusion.comというパクリサイトがあるが利用しないこと。<br>
+krita-ai-diffusionの作者のAcly氏が無関係と明言している。<br>
+</div></div><div id="content_block_50" class="wiki-section-2"><div class="title-2"><h4 id="content_6_11"> auto-sd-paint-ext (旧名 auto-sd-krita) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_6_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_50-body" class="wiki-section-body-2">
+KritaからAUTOMATIC1111を外部コールするプラグイン(但し、最近更新されていない)<br>
+<br>
+インストールは原則 Install Guide のとおりにやればいけるはず<ul id="content_block_51" class="list-1">
+<li> <a href="https://github.com/Interpause/auto-sd-paint-ext/wiki/Install-Guide" class="outlink">https://github.com/Interpause/auto-sd-paint-ext/wi...</a> </li>
+</ul>
+<br>
+以下は↑とほぼ同じことが書いてあるが、詳細なインストール方法については別記事を参照<br>
+※ AUTOMATIC Web UI がインストール済みであることを前提とする<br>
+<br>
+<a href="https://seesaawiki.jp/nai_ch/d/auto%2dsd%2dpaint%2dext%20%a4%ce%a5%a4%a5%f3%a5%b9%a5%c8%a1%bc%a5%eb">auto-sd-paint-ext のインストール</a><br>
+</div></div><div id="content_block_53" class="wiki-section-2"><div class="title-2"><h4 id="content_6_12"> Photoshop <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_6_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_53-body" class="wiki-section-body-2">
+</div></div><div id="content_block_55" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> 学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_55-body" class="wiki-section-body-1">
+</div></div><div id="content_block_57" class="wiki-section-2"><div class="title-2"><h4 id="content_7_13">学習用タグの入力を速く楽にするやつ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_7_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_57-body" class="wiki-section-body-2">
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1680673605/124" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1680...</a><br>
+<a href="https://uploader.cc/s/facw8gzhellfpv56b8unz3iprmql5wyjfy7atxiy9xnx23284x2ut1836vwqwa5u.zip" class="outlink">https://uploader.cc/s/facw8gzhellfpv56b8unz3iprmql...</a><br>
+<pre id="content_block_58" class="BOX">
+122 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff2b-ejsh)[sage] 投稿日：2023/04/05(水) 18:01:31.11 ID:FWEn7wkM0
+「学習用タグの入力を速く楽にするやつ」がロダから消えてリンク切れになっとる
+へるぷみー
+124 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ dfe8-kVuH)[sage] 投稿日：2023/04/05(水) 18:13:41.49 ID:hvtBrqzV0
+&gt;&gt;122
+消えんとこにあげればええんやろけど取り敢えず
+ファイル名の途中にjpgとか入ってるとエラー出てたの修正版
+https://uploader.cc/s/facw8gzhellfpv56b8unz3iprmql5wyjfy7atxiy9xnx23284x2ut1836vwqwa5u.zip
+</pre>
+<br>
+</div></div><div id="content_block_60" class="wiki-section-2"><div class="title-2"><h4 id="content_7_14"> Kohya_lora_param_gui <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_7_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_60-body" class="wiki-section-body-2">
+<a href="https://github.com/RedRayz/Kohya_lora_param_gui" class="outlink">https://github.com/RedRayz/Kohya_lora_param_gui</a><ul id="content_block_61" class="list-1">
+<li> sd-scriptsのパラメーター設定をGUIで出来るようにするもの。</li>
+</ul>
+<br>
+train_network.pyでのLoRA学習専用。<br>
+あと更新してもスレで報告しない時あるんで悪しからず。<br>
+<br>
+<div id="content_block_62">
+<div class="toggle-title"><a id="region_plugin_content_2" onclick="toggleRegion(this,'content_block_62-inside');" class="toggle-link-open"><img src="https://static.seesaawiki.jp/formatter-storage/images/common/spacer.gif" width="17" height="17" alt=""></a><p></p></div>
+<div style="display:none" id="content_block_62-inside" class="toggle-display">
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1680004431/740" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1680...</a><br>
+<pre id="content_block_63" class="BOX">
+740 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0638-Ahwc)[] 投稿日：2023/03/30(木) 02:00:06.00 ID:5Q8D9xj/0
+GUIにベンチマークモードとLoraのConv2dの学習オプション追加したで
+単にaccelerateのコマンド打ってから終わるまで時間計るだけやが
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.2.1
+</pre>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/744" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1680...</a><br>
+<pre id="content_block_64" class="BOX">
+744 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff38-P8lD)[] 投稿日：2023/04/04(火) 21:39:07.50 ID:qkV98myi0 [2/3]
+LoRA学習GUIで層別学習できるようにしたで
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.3.0
+</pre>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/784" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1680...</a><br>
+<pre id="content_block_65" class="BOX">
+784 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff38-P8lD)[] 投稿日：2023/04/04(火) 23:27:55.07 ID:qkV98myi0 [3/3]
+&gt;&gt;761
+&gt;&gt;763
+バーの行間詰めてシャットダウン機能の追加した
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.3.1
+</pre>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1681611826/848" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1681...</a><br>
+<a href="https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.4.1" class="outlink">https://github.com/RedRayz/Kohya_lora_param_gui/re...</a><br>
+<pre id="content_block_66" class="BOX">
+848 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ bf38-VD7n)[] 投稿日：2023/04/17(月) 22:20:18.26 ID:0VKIe4U90
+LoRA学習GUI更新した
+lokrとia3とDyLoRAを選択できるようになったで
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.4.1
+</pre>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1683672268/533" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1683...</a><br>
+<a href="https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.3" class="outlink">https://github.com/RedRayz/Kohya_lora_param_gui/re...</a><br>
+<pre id="content_block_67" class="BOX">
+533 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1e38-b2Jm)[] 投稿日：2023/05/10(水) 23:54:46.82 ID:RYete8yh0
+LoRA学習GUIの更新したよ
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.3
+新オプティマイザ、Min-SNR Gamma、Multiresなんとかの指定できるようになった
+
+https://i.imgur.com/98tvN60.png
+</pre>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/rzmSrqybw8.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/rzmSrqybw8-s.png" border="0"></a><br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1683672268/910" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1683...</a><br>
+<a href="https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.31" class="outlink">https://github.com/RedRayz/Kohya_lora_param_gui/re...</a><br>
+<pre id="content_block_68" class="BOX">
+887 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ｵｯﾍﾟｹ Src7-zOeB)[sage] 投稿日：2023/05/11(木) 15:18:33.22 ID:3R90fCCOr [1/2]
+&gt;&gt;533
+いつも使わせて貰っています
+https://i.imgur.com/8WISrKt.png
+ある条件下でconv_block_dimsの前にスペースが入らずにエラーになってしまうことあるので見ていただけ無いでしょうか？
+恐らくTrainForm.csのUseBlockWeightとUseBlockDimが共にTrueの際にスペースが入らなくなるような気がしています
+
+910 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 1e38-b2Jm)[] 投稿日：2023/05/11(木) 15:52:14.93 ID:ljDhH31T0 [2/2]
+&gt;&gt;887
+修正した
+すまんやで
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.5.31
+</pre>
+</div>
+</div>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1684555065/224" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1684...</a><br>
+<a href="https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.6.0" class="outlink">https://github.com/RedRayz/Kohya_lora_param_gui/re...</a><br>
+<pre id="content_block_70" class="BOX">
+224 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0638-Q1+R)[] 投稿日：2023/05/20(土) 17:45:00.13 ID:RLt5u+9j0 [1/3]
+LoRA学習GUIの更新したで
+sd-scriptsの簡易インストール機能とDimリサイズでCUDAを使用するオプション追加
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.6.0
+
+692 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 0238-PJtz)[] 投稿日：2023/06/07(水) 17:01:17.11 ID:N+nQd+Bl0
+LoRA学習GUIの更新報告
+6月3日にsd-scriptsになんか機能が追加されてたからそれに対応したで
+https://github.com/RedRayz/Kohya_lora_param_gui/releases/tag/v1.7.0
+https://i.imgur.com/UpCrKxO.png
+</pre>
+</div></div><div id="content_block_72" class="wiki-section-2"><div class="title-2"><h4 id="content_7_15"> caption_ordering_for_LoRA <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_7_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_72-body" class="wiki-section-body-2">
+<a href="https://github.com/K4gtuTi/caption_ordering_for_LoRA" target="_blank" class="outlink" rel="nofollow">https://github.com/K4gtuTi/caption_ordering_for_Lo...</a><br>
+NovelAIV3やAnimagineXLで利用されたというキャプションのグループ化/固定化がLoRA学習にどのような影響を与えることができるのか。<br>
+これを調べるために一括でキャプションの組み合わせを変更できる簡易的なものを実装<br>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1705131095/" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1705...</a><br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1705230822/" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1705...</a><br>
+<pre id="content_block_73" class="BOX">
+0432今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ ff7b-JApz)
+2024/01/13(土) 23:59:33.78ID:uv3iwHzF0
+https://cagliostrolab.net/posts/animagine-xl-v3-release#tag-ordering
+これで言われてたタグを順序付けて学習させるやつってLoRA学習にも使えるんじゃねってことで
+簡易的に.txtファイルに書き込まれた内容を組み替えるpythonコード書いたんだけど誰か試す？
+extentionsじゃないけど、python3.10なら使えるからstable diffusion入ってるなら使えるはずではある
+wd-14-taggerとかで出力した後でとりあえずぶち込むだけだから難しくはないと思うけど
+最初だけは自分で.txtファイルに必要なタグを記入する手間はある
+
+0243今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 867b-0zjl)
+2024/01/15(月) 01:10:18.77ID:7XoC8yNM0
+前スレの432だけど、LoRA作るときのタグ入れ替える簡易的なpythonコード
+WebUIのExtentionsじゃないからgit cloneする場所だけ気を付けてな
+詳しくはreadme.txtと前スレ432を見ればわかるはず
+基本スレではROMってるから、なんかあったら言ってくれれば反応できると思う
+</pre>
+</div></div><div id="content_block_75" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> ハードウェア関係 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_75-body" class="wiki-section-body-1">
+</div></div><div id="content_block_77" class="wiki-section-2"><div class="title-2"><h4 id="content_8_16"> HWMonitor <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_8_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_77-body" class="wiki-section-body-2">
+<a href="https://www.cpuid.com/softwares/hwmonitor.html" class="outlink">https://www.cpuid.com/softwares/hwmonitor.html</a><br>
+<br>
+GPUの温度が高くなりすぎると性能劣化や故障の原因になるので、それを監視できるツール。<br>
+タスクマネージャーでもGPU温度は表示されるが、グラボの中央など1か所固定の温度しか表示されない。<br>
+このソフトならhot spot（グラボ全体で一番高熱になっている場所）の温度が取れるので、この数値を基準に考えるべき。<br>
+<a href="https://www.techpowerup.com/gpuz/" class="outlink" rel="nofollow">GPU-Z</a> でも同じ情報が得られる。<br>
+</div></div><div id="content_block_79" class="wiki-section-2"><div class="title-2"><h4 id="content_8_17"> MSI Afterburner <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_8_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_79-body" class="wiki-section-body-2">
+<a href="https://www.msi.com/Landing/afterburner/graphics-cards" class="outlink">https://www.msi.com/Landing/afterburner/graphics-c...</a><br>
+<br>
+高熱になりすぎないようにパワーリミットをかけられるなど、グラボの挙動を変更できるツール。<br>
+また、最近のグラボは高々数%の性能向上のために電力をドカ食いする傾向があるので、節電ツールとしても使える。<br>
+（人によっては50%まで落としても数%のパフォーマンス低下で済んだという報告もあり。各自で測ってみよう）<br>
+パワーリミットをかけるには、FAN欄のPOWER LIMITの数値を変更して使用する。適用ボタンを押すのを忘れずに。<br>
+（※なぜか強制的にリセットさせる現象が確認されているので、ファンがうるさいと思ったら確認がおすすめ。設定をプリセットに登録したらリセットされなくなったとの報告あり）
+</div></div><div id="content_block_81" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> その他 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_81-body" class="wiki-section-body-1">
+</div></div><div id="content_block_83" class="wiki-section-2"><div class="title-2"><h4 id="content_9_18"> 生成した画像に含まれる生成情報を削除するツール「remove-meta-alpha」 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_9_18" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_83-body" class="wiki-section-body-2">
+<a href="https://github.com/Takenoko3333/remove-meta-alpha" class="outlink">https://github.com/Takenoko3333/remove-meta-alpha</a><br>
+<ul id="content_block_84" class="list-1">
+<li> 対応画像形式: JPEG, PNG, WEBP ※拡張子は小文字、大文字どちらにも対応しています。</li>
+<li> メタデータの削除: 画像ファイルからメタデータを削除します。</li>
+<li> アルファチャンネルの削除: 画像ファイルからアルファチャンネルを削除します。※NovelAI生成画像のアルファチャンネルに埋め込まれたメタデータの削除を目的としています。</li>
+<li> 日時情報の保持: Windowsの場合はファイルの作成日時と更新日時を保持します。Mac, Linuxの場合は更新日時を保持します。</li>
+<li> ファイル名: ファイル名の末尾に_rmが追加されます。拡張子は元の画像と同じものになります。</li>
+</ul>
+</div></div><div id="content_block_86" class="wiki-section-2"><div class="title-2"><h4 id="content_9_19"> PNG Infoを維持したままPNGをJPEGに変換するツール「png2jpg-ai-image-metadata」 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_9_19" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_86-body" class="wiki-section-body-2">
+<a href="https://github.com/Takenoko3333/png2jpg-ai-image-metadata" class="outlink">https://github.com/Takenoko3333/png2jpg-ai-image-m...</a><br>
+<ul id="content_block_87" class="list-1">
+<li> AI 生成画像のメタデータを保持して PNG を JPEG に変換します。</li>
+<li> サブディレクトリを含めて一括変換が可能です。</li>
+<li> PNG のメタデータを取得して JPEG の Exif に移植する機能を持つため、AI 生成画像以外のでもメタデータの保持目的で使用可能です。</li>
+</ul>
+<br>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1680488767/148" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1680...</a><br>
+<pre id="content_block_88" class="BOX">
+148 名前：今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 7f04-CAqR)[sage] 投稿日：2023/04/03(月) 15:34:05.12 ID:CsCA9lKv0
+前スレでリクエストのあった
+PNG Infoを維持したままPNGをJPEGに変換するツール
+公開したで
+フォルダごとダウンロードして使ってくれ
+半分ChatGPTに聞きながら作ったけど間違ってるソースをドヤ顔で提示してくるから困ったもんやで
+https://mega.nz/folder/uY42VJZa#7Hh0vTvhpa3poL_gNgzipg
+</pre>
+<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1701916128/240" class="outlink">https://fate.5ch.net/test/read.cgi/liveuranus/1701...</a><br>
+<pre id="content_block_89" class="BOX">
+240 今、天王星のwiki見てきたら軌道傾斜角(i) が0.774°だった (ﾜｯﾁｮｲ 8a04-QDDZ)  2023/12/08(金) 05:15:54.76 ID:xRAxWwTe0
+以前公開したPNG Infoを維持したままJPGに一括変換するツールの改良版
+従来通りAutomatic1111生成画像はJPG変換後もAutomatic1111に取り込み可能
+これに加えてNovelAI生成画像にも一部対応を追加
+NovelAIの生成画像はJPGのExifコメントに情報を残すことが可能（ただし、NovelAIやAutomatic1111への取り込みは不可）
+Automatic1111でのPNG Infoやエクスプローラ等のでの参照は可能
+
+png2jpg改
+https://mega.nz/folder/fVYhCLZa#ZDKcdjMxmjYGtRLvNDRwtA
+</pre>
+</div></div><div id="content_block_91" class="wiki-section-2"><div class="title-2"><h4 id="content_9_20"> PNG Infoを維持したままPNGをwebpに変換するツール「png2webp-for-a1111-and-NAI」 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4996244&amp;part=content_9_20" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_91-body" class="wiki-section-body-2">
+<a href="https://github.com/Takenoko3333/png2webp-for-a1111-and-NAI" class="outlink">https://github.com/Takenoko3333/png2webp-for-a1111...</a><br>
+<br>
+<ul id="content_block_92" class="list-1">
+<li> Automatic1111生成画像の変換について
+<ul class="list-2">
+<li> Automatic1111に取り込むことが可能なメタデータを維持したままPNG(.png)をWEBP(.webp)に変換します。</li>
+<li> 元画像のメタデータ（PNG Info）はWEBP画像のExifコメントに格納されます。</li>
+<li> WEBP画像は元画像同様にAutomatic1111のPNG Infoから情報を読み込ませて利用することが可能です。</li>
+</ul>
+</li>
+<li> NovelAI生成画像の変換について
+<ul class="list-2">
+<li> NovelAIに取り込むことが可能なメタデータを維持したままPNG(.png)をWEBP(.webp)に変換します。</li>
+<li> 元画像のメタデータはWEBP画像のExifコメントに格納されます。</li>
+<li> WEBP画像は元画像同様にNovelAIに情報を読み込ませて利用することが可能です。</li>
+<li> NovelAI生成画像は一般的なメタデータ以外に、特殊な方式で埋め込まれた情報が含まれています。変換後のWEBPはその情報を維持しているためNovelAIに情報を読み込ませて利用することが可能となっています。</li>
+<li> Automatic1111に情報を読み込ませて利用することはできませんが、Automatic1111のPNG InfoやWEBPのExifを閲覧可能なアプリ等で情報を参照することが可能です。</li>
+</ul>
+</li>
+</ul>
+</div></div>
+</div>

@@ -1,0 +1,110 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> X/Y Plotについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+webuiで使用できる機能。<br>
+2種類の要素を変動させながら出力した画像をまとめてくれるツール。<br>
+プロンプトの調整や検証用画像の作成にとても便利。<br>
+<br>
+例：ScaleとStepを変動させたときの出力を比較<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/UcrCmElUGG.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/UcrCmElUGG-s.jpg" border="0"></a><br>
+<br>
+</div></div><div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> 各軸に設定できる要素 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+<table id="content_block_4"><tbody><tr><th>選択肢</th><th>入力値の型</th><th>動作</th><th>備考</th></tr><tr><td>Nothing</td><td>文字列 (str)</td><td>何もしない</td><td></td></tr><tr><td>Seed</td><td>数値 (int)</td><td>対応する値の変更</td><td>-1でランダムなSeedを設定できる。<br>（決定されたシードは軸毎に固定）</td></tr><tr><td>Var. seed</td><td>数値 (int)</td><td>対応する値の変更</td><td>ExtraのVariation Seed値<br>-1でランダムなSeedを設定できる。<br>（決定されたシードは軸毎に固定）</td></tr><tr><td>Var. strength</td><td>数値 (float)</td><td>対応する値の変更</td><td>ExtraのVariation強度</td></tr><tr><td>Steps</td><td>数値 (int)</td><td>対応する値の変更</td><td></td></tr><tr><td>CFG Scale</td><td>数値 (float)</td><td>対応する値の変更</td><td></td></tr><tr><td>Prompt S/R</td><td>文字列 (str)</td><td>プロンプト内文字列の置換</td><td>詳細は下記</td></tr><tr><td>Prompt order</td><td>文字列 (str_permutations)</td><td>プロンプト内文字列の入れ替え</td><td>詳細は下記</td></tr><tr><td>Sampler</td><td>文字列 (str)</td><td>対応する値の変更</td><td>値の一覧は下記</td></tr><tr><td>Checkpoint name</td><td>文字列 (str)</td><td>対応する値の変更</td><td>入力値は部分一致でも可っぽい</td></tr><tr><td>Hypernetwork</td><td>文字列 (str)</td><td>対応する値の変更</td><td>入力値は部分一致でも可っぽい</td></tr><tr><td>Hypernet str.</td><td>数値 (float)</td><td>対応する値の変更</td><td></td></tr><tr><td>Sigma Churn</td><td>数値 (float)</td><td>対応する値の変更</td><td></td></tr><tr><td>Sigma min</td><td>数値 (float)</td><td>対応する値の変更</td><td></td></tr><tr><td>Sigma max</td><td>数値 (float)</td><td>対応する値の変更</td><td></td></tr><tr><td>Sigma noise</td><td>数値 (float)</td><td>対応する値の変更</td><td></td></tr><tr><td>Eta</td><td>数値 (float)</td><td>対応する値の変更</td><td>設定のDDIMで用いるeta (noise multiplier)</td></tr><tr><td>Clip skip</td><td>数値 (int)</td><td>対応する値の変更</td><td>設定のstop…layers of CLIP model</td></tr><tr><td>Denoising</td><td>数値 (float)</td><td>対応する値の変更</td><td>img2imgのノイズ強度</td></tr></tbody></table>
+</div></div><div id="content_block_6" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> 値入力のフォーマットについて <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_6-body" class="wiki-section-body-2">
+カンマ区切りで指定する。<ul id="content_block_7" class="list-1">
+<li>red, blue, white</li>
+</ul>
+カンマを含む文字列はダブルクオーテーションで括る。<ul id="content_block_8" class="list-1">
+<li>"masterpiece, high quality","highly detailed"</li>
+</ul>
+ダブルクォーテーションを含む文字列は二重ダブルクオーテーションでエスケープ。<ul id="content_block_9" class="list-1">
+<li>"in ""BIG"" city, cyber","in ""SMALL"" town, rural"</li>
+</ul>
+<br>
+数値はカンマ区切りに加えて以下のフォーマットが使用可能。<ul id="content_block_10" class="list-1">
+<li>1-5 = 1, 2, 3, 4, 5</li>
+<li>1-5 (+2) = 1, 3, 5</li>
+<li>10-5 (-3) = 10, 7</li>
+<li>1-3 (+0.5) = 1, 1.5, 2, 2.5, 3</li>
+<li>1-10 [5] = 1, 3, 5, 7, 10</li>
+<li>0.0-1.0 [6] = 0.0, 0.2, 0.4, 0.6, 0.8, 1.0</li>
+</ul>
+</div></div><div id="content_block_12" class="wiki-section-2"><div class="title-2"><h4 id="content_1_3"> Prompt S/Rの動作について <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_12-body" class="wiki-section-body-2">
+1番目に指定した文字列を2番目以降の文字列で置換していく。<br>
+なので元となるプロンプトに1番目の文字列が含まれていないとエラーとなる。<br>
+置換はプロンプト、ネガティブプロンプト内に出現する<b>すべての個所</b>で置換される。<br>
+<ul id="content_block_13" class="list-1">
+<li>例
+<ul class="list-2">
+<li>元プロンプト : (A girl in the city, portrait ).(her hair is blue).(masterpiece, extremely detailed face)
+<ul class="list-3">
+<li>Prompt S/R(X軸) : blue, red,  dark</li>
+<li>Prompt S/R(Y軸) : hair, eyes, sky</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a href="https://image02.seesaawiki.jp/n/h/nai_ch/TShZYm8ym7.png"><img src="https://image02.seesaawiki.jp/n/h/nai_ch/TShZYm8ym7-s.png" border="0"></a><br>
+<br>
+※処理はX軸→Y軸の順で行う。両方でPrompt S/Rをする場合は気に留めておくとええかも。<br>
+</div></div><div id="content_block_15" class="wiki-section-2"><div class="title-2"><h4 id="content_1_4"> Prompt orderの動作について <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_15-body" class="wiki-section-body-2">
+プロンプト内の文字列を指定し並び変えて比較する。<br>
+すべての組み合わせについて行うのですぐ膨大な数になるので注意(5種類の場合は1*2*3*4*5で120パターンとか)<br>
+<ul id="content_block_16" class="list-1">
+<li>例
+<ul class="list-2">
+<li>元プロンプト : (A girl in the city, portrait ).(her hair is blue).(masterpiece, extremely detailed face)
+<ul class="list-3">
+<li>Prompt order(X軸): "(A girl in the city, portrait ).","(her hair is blue).","(masterpiece, extremely detailed face)"</li>
+<li>Prompt S/R(Y軸): blue, red,  dark</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/t25i_ipNCI.jpg"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/t25i_ipNCI-s.jpg" border="0"></a><br>
+<br>
+※入れ替え対象と同じ文字列が複数ある場合は一番前の文字列一つについて並び替えを行う。<br>
+※X軸でPrompt S/Rで置換した後にY軸で順番入れ替えようとするとメチャクチャなことになるので順序に注意。
+</div></div><div id="content_block_18" class="wiki-section-2"><div class="title-2"><h4 id="content_1_5"> Samplerの名称一覧 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_18-body" class="wiki-section-body-2">
+表示名と別名のどちらでも使える。<table id="content_block_19"><tbody><tr><th>Samplerの表示名</th><th>Samplerの別名</th></tr><tr><td>Euler a</td><td>k_euler_a</td></tr><tr><td>Euler</td><td>k_euler</td></tr><tr><td>LMS</td><td>k_lms</td></tr><tr><td>Heun</td><td>k_heun</td></tr><tr><td>DPM2</td><td>k_dpm_2</td></tr><tr><td>DPM2 a</td><td>k_dpm_2_a</td></tr><tr><td>DPM fast</td><td>k_dpm_fast</td></tr><tr><td>DPM adaptive</td><td>k_dpm_ad</td></tr><tr><td>LMS Karras</td><td>k_lms_ka</td></tr><tr><td>DPM2 Karras</td><td>k_dpm_2_ka</td></tr><tr><td>DPM2 a Karras</td><td>k_dpm_2_a_ka</td></tr></tbody></table>
+</div></div><div id="content_block_21" class="wiki-section-2"><div class="title-2"><h4 id="content_1_6"> 検証コピペ用 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_21-body" class="wiki-section-body-2">
+</div></div><div id="content_block_23" class="wiki-section-3"><div class="title-3"><h5 id="content_1_6_1"> 構図 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_6_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_23-body" class="wiki-section-body-3">
+full body, foot focus, face only, pov, turn one's back, from below, from above, ass focus, side profile, close-up photography, close-up, portrait, upper body, cowboy shot, <br>
+looking at viewer, from behind, from side, looking away, looking back, looking down, looking up, looking to the side, looking afar
+</div></div><div id="content_block_25" class="wiki-section-3"><div class="title-3"><h5 id="content_1_6_2"> サンプラー <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_6_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_25-body" class="wiki-section-body-3">
+k_euler_a, k_euler, k_lms, k_heun, k_dpm_2, k_dpm_2_a, k_dpm_fast, k_dpm_ad, k_lms_ka, k_dpm_2_ka, k_dpm_2_a_ka
+</div></div><div id="content_block_27" class="wiki-section-3"><div class="title-3"><h5 id="content_1_6_3"> 数値 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_6_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_27-body" class="wiki-section-body-3">
+0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0<br>
+</div></div><div id="content_block_29" class="wiki-section-2"><div class="title-2"><h4 id="content_1_7"> モデルやVAEをチェックボックスで選択する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4983448&amp;part=content_1_7" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_29-body" class="wiki-section-body-2">
+（注：以下の内容は現在、公式のX/Y/Z plotでVAEやチェックポイントなども簡単に列挙できるようになった。以下は古いwebui向けの情報）<br>
+<br>
+モデルやVAEをX/Y plotに通す場合、ファイル名を手打ちする必要があり、間違いも起きやすく、非常に面倒だった。<br>
+そこで<a href="https://fate.5ch.net/test/read.cgi/liveuranus/1673176819/217" class="outlink" rel="nofollow">有志</a>によってこれをチェックボックスで選択できるようにするスクリプトが開発された。<br>
+<br>
+<a href="https://github.com/hako-mikan/stable-diffusion-webui/blob/hako-mikan-patch-1/scripts/eazy_xy.py" class="outlink">https://github.com/hako-mikan/stable-diffusion-web...</a><br>
+<br>
+1. ↑のページのコードの上のRawボタンを押し、表示されたページでCtrl+Sで保存する<br>
+（もちろんコード全てコピペしてテキスト保存でもよい）<br>
+2. scriptsフォルダ内に入れる<br>
+3. Settings &gt; Reload UI<br>
+4. Dynamic Prompts &gt; Scriptでeazy XYを選択<br>
+5. 必要な設定を行ってGenerate<br>
+<br>
+例）<br>
+<a href="https://image01.seesaawiki.jp/n/h/nai_ch/pwgcY36jWM.png"><img src="https://image01.seesaawiki.jp/n/h/nai_ch/pwgcY36jWM-s.png" border="0"></a><br>
+<br>
+※注意点：公式のスクリプトの状態に依存するので、最新、またはスクリプト作成日時に近い状態のwebuiでないとエラーで上手くいかない可能性がある
+</div></div>
+</div>

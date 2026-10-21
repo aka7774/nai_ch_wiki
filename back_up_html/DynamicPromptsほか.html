@@ -1,0 +1,153 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1"> DynamicPrompts</a>
+<ul>
+<li class="list-2"><a href="#content_1_1"> 概要</a></li>
+<li class="list-2"><a href="#content_1_2"> サンプル</a></li>
+<li class="list-2"><a href="#content_1_3"> サポートされる構文</a></li>
+</ul>
+</li>
+<li class="list-1"><a href="#content_2"> DynamicPromptsチュートリアル</a>
+<ul>
+<li class="list-2"><a href="#content_2_4"> インストール</a></li>
+<li class="list-2"><a href="#content_2_5"> 複数プロンプトの組み合わせ</a>
+<ul>
+<li class="list-3"><a href="#content_2_5_1"> 変化型のプロンプト Variants</a></li>
+<li class="list-3"><a href="#content_2_5_2"> 入れ子にした変化型 Nested variant</a></li>
+<li class="list-3"><a href="#content_2_5_3"> ワイルドカード Wildcards</a></li>
+<li class="list-3"><a href="#content_2_5_4"> Combinatorial Generation</a></li>
+<li class="list-3"><a href="#content_2_5_5"> Wildcard Collection</a></li>
+</ul>
+</li>
+<li class="list-2"><a href="#content_2_6"> インスピレーション用のツール</a>
+<ul>
+<li class="list-3"><a href="#content_2_6_6"> マジックプロンプト Magic Prompts</a></li>
+<li class="list-3"><a href="#content_2_6_7"> I'm feeling lucky</a></li>
+<li class="list-3"><a href="#content_2_6_8"> ランダムにウェイト変更 Attention grabber</a></li>
+</ul>
+</li></ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> DynamicPrompts <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+</div></div><div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1"> 概要 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+DynamicPrompt用の構文と拡張性のあるワイルドカードの機能を使用することで、ランダム要素やコメントアウトなどの便利な機能がプロンプトで使えるようになります。<br>
+<br>
+<a href="https://github.com/adieyal/sd-dynamic-prompts" class="outlink">https://github.com/adieyal/sd-dynamic-prompts</a><br>
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> サンプル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+以下のようなコードめいたプロンプトで生成できるようになります。<br>
+<br>
+<br>
+<textarea id="content_block_6" class="PLAIN-BOX">
+# CharacterDesignPromptCode_v1
+    (full body:1.4), 
+        ( { 1furry girl, , furry, __Tags/Body/Body parts/Ears tags/AnimalEars__ , __Umi/REFS/BODY/Animal Tail__ ,small breasts, | 1girl , teen age, 18yo, small breasts, | 1old man, elder, grey hair, goatee, | 1boy, | 1mature male, muscular, | 1mature female, women, 28yo, medium breasts, }, solo :1.35),    # 人種ランダム
+        ( { grenade launcher, | gun, | handgun, | bullpup, |sniper rifle | assault rifle | katana, wakizashi }:1.0) ,       # 武器設定
+         (__Tags/ImageStyle/Image composition/Colors/Color_Mix_simple__ hair:1.1) , # カラー設定
+         (__Tags/ImageStyle/Image composition/Colors/Color_Mix_simple__ clothes:1.1) , # カラー設定
+        (__Tags/ImageStyle/Symbols/ss_Symbol_All__:1.1), # シンボル設定
+        __Umi/REFS/CLOTHING/Misc-Earrings__ ,
+        __Umi/REFS/CLOTHING/Misc-Gloves__ ,
+        __Umi/REFS/CLOTHING/Misc-Neckwear__,
+        __Umi/REFS/CLOTHING/Misc-Shoes__,
+        __Umi/REFS/BODY/Hair Lengths__,
+        __Tags/Body/Body parts/Hair/Hair styles/Hair_Style__,
+        __Tags/Body/Body parts/Hair/Hair styles/Hair_Front__,
+        __Tags/Body/Body parts/Hair/Hair styles/Hair_Texture__,
+        __Tags/Body/Body parts/Hair/Hair styles/Hair_Accessories__ , # 詳細衣装設定
+(tactical clothes:1.25), (japanese armor, japanese clothes ,:1.2),samurai, # 世界観設定
+ best quality, highly amazing awesome detailed, (white background:1.1), (turnaround, blue print, reference sheet:1.1), # 生成設定
+# comment
+</textarea>
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_1_3"> サポートされる構文 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_1_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+<ul id="content_block_9" class="list-1">
+<li> ワイルドカードで.txtを読み込み</li>
+</ul>
+例):<br>
+<textarea id="content_block_10" class="PLAIN-BOX">
+ __Tags/Wildcards__
+</textarea>
+<ul id="content_block_11" class="list-1">
+<li> 要素のランダム選択</li>
+</ul>
+例):<br>
+<textarea id="content_block_12" class="PLAIN-BOX">
+{1girl | 1boy | 1furry}
+</textarea>
+<ul id="content_block_13" class="list-1">
+<li> コメントアウト</li>
+</ul>
+例:<br>
+<textarea id="content_block_14" class="PLAIN-BOX">
+ 1girl, red hair color #色指定
+</textarea>
+<br>
+</div></div><div id="content_block_16" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> DynamicPromptsチュートリアル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_16-body" class="wiki-section-body-1">
+<a href="https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/tutorial.md" class="outlink">https://github.com/adieyal/sd-dynamic-prompts/blob...</a> を適当に翻訳<br>
+</div></div><div id="content_block_18" class="wiki-section-2"><div class="title-2"><h4 id="content_2_4"> インストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_18-body" class="wiki-section-body-2">
+<br>
+Extentionタブからインストールできるよ（元のドキュメントを参照）<br>
+</div></div><div id="content_block_20" class="wiki-section-2"><div class="title-2"><h4 id="content_2_5"> 複数プロンプトの組み合わせ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_20-body" class="wiki-section-body-2">
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5 id="content_2_5_1"> 変化型のプロンプト Variants <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_5_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+<br>
+<pre id="content_block_23" class="BOX">
+A diamond ring set on a {gold|platinum} band
+</pre>
+<br>
+と書くと、それは以下2通りのいずれかになるよ<br>
+<br>
+<pre id="content_block_24" class="BOX">
+A diamond ring set on a gold band
+A diamond ring set on a platinum band
+</pre>
+<br>
+</div></div><div id="content_block_26" class="wiki-section-3"><div class="title-3"><h5 id="content_2_5_2"> 入れ子にした変化型 Nested variant <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_5_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_26-body" class="wiki-section-body-3">
+</div></div><div id="content_block_28" class="wiki-section-3"><div class="title-3"><h5 id="content_2_5_3"> ワイルドカード Wildcards <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_5_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_28-body" class="wiki-section-body-3">
+<br>
+（ここよく分かっていないので誰かお願いします）<br>
+</div></div><div id="content_block_30" class="wiki-section-3"><div class="title-3"><h5 id="content_2_5_4"> Combinatorial Generation <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_5_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_30-body" class="wiki-section-body-3">
+Dynamic Promptsのデフォルト設定では、テンプレートからランダムなプロンプトが生成される。<br>
+プロンプトの候補全てを生成したい場合は、Combinatorial Generationのチェックを入れれば良い。<br>
+</div></div><div id="content_block_32" class="wiki-section-3"><div class="title-3"><h5 id="content_2_5_5"> Wildcard Collection <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_5_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_32-body" class="wiki-section-body-3">
+<br>
+dynamic promptの内部に、既にセットされたWildcard一覧があるのでそれを使うこともできるよ。<br>
+</div></div><div id="content_block_34" class="wiki-section-2"><div class="title-2"><h4 id="content_2_6"> インスピレーション用のツール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_6" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_34-body" class="wiki-section-body-2">
+</div></div><div id="content_block_36" class="wiki-section-3"><div class="title-3"><h5 id="content_2_6_6"> マジックプロンプト Magic Prompts <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_6_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_36-body" class="wiki-section-body-3">
+オンラインに投稿されているプロンプトを見ると、照明、解像度、カメラの種類などに関するいくつかの設定項目がある。マジックプロンプト機能は、プロンプトに自動的に設定項目をモディファイアを追加する。まずはシンプルなプロンプトを使うのがおすすめです。<br>
+<blockquote id="content_block_37">
+ A mech-warrior in a post-apocalyptic setting.
+</blockquote>
+<br>
+これだけだと画像は少し質素なので、マジックプロンプトで華やかにしてみよう。<br>
+<br>
+プロンプトが自動生成され、例えば以下のようになる。<br>
+<blockquote id="content_block_38">
+ A mech-warrior in a post-apocalyptic setting. Digital illustration, Artstation. 8k resolution, Concept art, Detailed digital art
+</blockquote>
+</div></div><div id="content_block_40" class="wiki-section-3"><div class="title-3"><h5 id="content_2_6_7"> I'm feeling lucky <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_6_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_40-body" class="wiki-section-body-3">
+</div></div><div id="content_block_42" class="wiki-section-3"><div class="title-3"><h5 id="content_2_6_8"> ランダムにウェイト変更 Attention grabber <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5032489&amp;part=content_2_6_8" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_42-body" class="wiki-section-body-3">
+</div></div>
+</div>
