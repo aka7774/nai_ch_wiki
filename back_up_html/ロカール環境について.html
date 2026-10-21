@@ -1,0 +1,82 @@
+<div class="user-area">
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">全体 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+<br>
+<a href="https://gigazine.net/news/20220907-automatic1111-stable-diffusion-webui/" class="outlink">https://gigazine.net/news/20220907-automatic1111-s...</a><br>
+<a href="https://www.python.org/downloads/" class="outlink">https://www.python.org/downloads/</a><br>
+<a href="https://git-scm.com/download" class="outlink">https://git-scm.com/download</a><br>
+<a href="https://huggingface.co/CompVis/stable-diffusion-v1-4" class="outlink">https://huggingface.co/CompVis/stable-diffusion-v1...</a>
+</div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2">PCオフラインで実行する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_3-body" class="wiki-section-body-1">
+以下たたき台です<br>
+<hr size="1" noshade>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_3">Windows <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+</div></div><div id="content_block_8" class="wiki-section-2"><div class="title-2"><h4 id="content_3_1">インストール <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_3_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_8-body" class="wiki-section-body-2">
+</div></div><div id="content_block_10" class="wiki-section-3"><div class="title-3"><h5 id="content_3_1_1">共通 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_3_1_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_10-body" class="wiki-section-body-3">
+<ol id="content_block_11" class="list-1">
+<li>実行できる環境なのかチェック</li>
+<li>必要なソフトウェアをダウンロードする <a href="https://git-scm.com/download" class="outlink">https://git-scm.com/download</a> <a href="https://git-scm.com/download" class="outlink">https://git-scm.com/download</a></li>
+<li>ドライバーをダウンロードする <a href="https://developer.nvidia.com/cuda-11.3.0-download-archive?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10&amp;target_type=exe_local" class="outlink">https://developer.nvidia.com/cuda-11.3.0-download-...</a></li>
+<li>ダウンロードに必要なアカウントを作成する　<a href="https://huggingface.co/CompVis/stable-diffusion-v1-4" class="outlink">https://huggingface.co/CompVis/stable-diffusion-v1...</a></li>
+<li>コマンドプロンプトの起動(cmd.exe OR powershell powershellはコード実行許可の手順も)</li>
+<li> モデルのダウンロード</li>
+</ol>
+</div></div><div id="content_block_13" class="wiki-section-3"><div class="title-3"><h5 id="content_3_1_2"> cmd.exe <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_3_1_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_13-body" class="wiki-section-body-3">
+<ol id="content_block_14" class="list-1">
+<li> フォルダ作成</li>
+<li> cd %HOMEPATH% C:\Users\【自分のWindowsでのログイン名】に移動</li>
+<li> git clone sd-v1-4.ckpt model.ckpt モデルの名前変更</li>
+<li> RENAME   sd-v1-4.ckpt model.ckpt モデルの名前変更</li>
+<li> MOVE　hoge models　モデルの移動</li>
+<li> mkdir GFPGAN</li>
+<li> cd GFPGAN</li>
+<li> git clone <a href="https://github.com/TencentARC/GFPGAN.git" class="outlink">https://github.com/TencentARC/GFPGAN.git</a> ダウンロード</li>
+<li> cd ..</li>
+<li> mv hoge hoge GFPGANをStable Diffusion web UIフォルダに入れる</li>
+<li> call webui-user.bat</li>
+</ol>
+<pre id="content_block_15" class="prettyprint lang-sh">
+@echo off
+REM たたき台　未完成
+set INSTALL_DIR=インストールしたいディレクトリ
+set NOVELAI_MODEL_DIR=novelAIの使用したいモデルのディレクトリ
+set NOVELAI_MODEL=使用したいモデルのファイル名
+
+mkdir INSTALL_DIR
+cd /d INSTALL_DIR
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd ./stable-diffusion-webui
+copy NOVELAI_MODEL_DIR\NOVELAI_MODEL .\models
+RENAME models\NOVELAI_MODEL model.ckpt
+webui-user.bat
+firefox -url 127.0.0.1:7860
+echo 次回以降起動はwebui-user.batをクリックしてください
+pause
+</pre>
+<hr size="1" noshade>
+</div></div><div id="content_block_18" class="wiki-section-3"><div class="title-3"><h5 id="content_3_1_3"> powershell <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_3_1_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_18-body" class="wiki-section-body-3">
+</div></div><div id="content_block_20" class="wiki-section-3"><div class="title-3"><h5 id="content_3_1_4">* powershellのスクリプト実行の設定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_3_1_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_20-body" class="wiki-section-body-3">
+</div></div><div id="content_block_22" class="wiki-section-3"><div class="title-3"><h5 id="content_3_1_5">* powershellの手順 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_3_1_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_22-body" class="wiki-section-body-3">
+<hr size="1" noshade>
+アップデート<br>
+<hr size="1" noshade>
+</div></div><div id="content_block_26" class="wiki-section-1"><div class="title-1"><h3 id="content_4">Linux <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_26-body" class="wiki-section-body-1">
+</div></div><div id="content_block_28" class="wiki-section-2"><div class="title-2"><h4 id="content_4_2"> nvidia <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_4_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_28-body" class="wiki-section-body-2">
+</div></div><div id="content_block_30" class="wiki-section-2"><div class="title-2"><h4 id="content_4_3"> Radeon <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_4_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_30-body" class="wiki-section-body-2">
+<hr size="1" noshade>
+</div></div><div id="content_block_33" class="wiki-section-1"><div class="title-1"><h3 id="content_5">クラウド環境を活用する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_33-body" class="wiki-section-body-1">
+</div></div><div id="content_block_35" class="wiki-section-2"><div class="title-2"><h4 id="content_5_4">Google Colab <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=4982500&amp;part=content_5_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_35-body" class="wiki-section-body-2">
+</div></div>
+</div>

@@ -1,0 +1,32 @@
+<div class="user-area">
+<div class="toc">
+<div class="wiki-catalog">
+<div class="wiki-catalog-inner">
+<ul>
+<li class="list-1"><a href="#content_1">エラー解決のメモ</a>
+<ul>
+<li class="list-2"><a href="#content_1_1">Cannot add middleware after an application has started</a></li>
+<li class="list-2"><a href="#content_1_2">modules.devices.NansException: A tensor with all NaNs was produced in VAE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1">エラー解決のメモ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5031325&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_1-body" class="wiki-section-body-1">
+としあきdiffusion Wiki &gt; エラー解決メモ <a href="https://wikiwiki.jp/sd_toshiaki/%E3%82%A8%E3%83%A9%E3%83%BC%E8%A7%A3%E6%B1%BA%E3%83%A1%E3%83%A2" class="outlink">https://wikiwiki.jp/sd_toshiaki/%E3%82%A8%E3%83%A9...</a><br>
+上のリスペクト<br>
+</div></div><div id="content_block_3" class="wiki-section-2"><div class="title-2"><h4 id="content_1_1">Cannot add middleware after an application has started <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5031325&amp;part=content_1_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_3-body" class="wiki-section-body-2">
+Fastapiが原因。stable-diffusionのフォルダを参照して、<br>
+.\venv\Scripts\python.exe -m pip install --upgrade fastapi==0.90.1<br>
+のコマンドを実行すれば起動できるはず<br>
+</div></div><div id="content_block_5" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2">modules.devices.NansException: A tensor with all NaNs was produced in VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5031325&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_5-body" class="wiki-section-body-2">
+xformersで掛け算が0になっているらしい。<br>
+loraを作るときにbf16にすると壊れにくいらしい？？？<br>
+とりあえず webui-user.bat の起動オプションに --disable-nan-check を追記するとエラーが無視される
+</div></div>
+</div>
