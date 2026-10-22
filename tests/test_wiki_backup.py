@@ -52,25 +52,24 @@ class WikiSpiderTests(unittest.IsolatedAsyncioTestCase):
             (Path(saved) / "版権.html").write_text("new", encoding="utf-8")
             spider = BackupSpider(save_dir=saved)
             requests = [request async for request in spider.start()]
-        self.assertEqual(
-            ["https://seesaawiki.jp/nai_ch/", "https://seesaawiki.jp/nai_ch/site.rdf",
-             "https://seesaawiki.jp/nai_ch/d/Group/Page",
-             "https://seesaawiki.jp/nai_ch/d/Group_Page",
-             "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2"],
-            [request.url for request in requests],
-        )
-        self.assertEqual([spider.parse_page, spider.parse_feed] + [spider.parse_page] * 3,
-                         [request.callback for request in requests])
+            self.assertEqual([
+                "https://seesaawiki.jp/nai_ch/d/Group/Page",
+                "https://seesaawiki.jp/nai_ch/d/Group_Page",
+                "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2",
+            ], spider.known_page_urls())
+        self.assertEqual(["https://seesaawiki.jp/nai_ch/site.rdf"],
+                         [request.url for request in requests])
+        self.assertEqual(spider.parse_feed, requests[0].callback)
 
     def test_feed_yields_article_requests(self):
-        spider = BackupSpider()
+        spider = BackupSpider(mode="incremental")
         feed = XmlResponse(
             "https://seesaawiki.jp/nai_ch/site.rdf",
             body=b"""<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
  xmlns="http://purl.org/rss/1.0/">
 <channel rdf:about="https://seesaawiki.jp/nai_ch/"><link>https://seesaawiki.jp/nai_ch/</link></channel>
-<item rdf:about="https://seesaawiki.jp/nai_ch/d/New%a5%da"><link>https://seesaawiki.jp/nai_ch/d/New%a5%da</link></item>
+<item xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="https://seesaawiki.jp/nai_ch/d/New%a5%da"><link>https://seesaawiki.jp/nai_ch/d/New%a5%da</link><dc:date>2026-10-20T00:00:00+09:00</dc:date></item>
 </rdf:RDF>""",
         )
         requests = list(spider.parse_feed(feed))
@@ -120,8 +119,16 @@ class WikiCommandTests(unittest.TestCase):
             process = process_class.return_value
             process.bootstrap_failed = bootstrap_failed
             crawler = process.create_crawler.return_value
-            crawler.stats.get_value.return_value = saved_pages
+            crawler.stats.get_stats.return_value = {"item_scraped_count": saved_pages, "finish_reason": "finished"}
+            crawler.spider = BackupSpider()
+            crawler.spider.feed_ok = True
             return main(["backup", "--save-dir", tmpdir])
+
+    def test_direct_script_loads(self):
+        result = subprocess.run([sys.executable, "seesawiki_back_up/crawl.py", "--help"],
+                                cwd=ROOT_DIR, capture_output=True, text=True, timeout=30)
+        self.assertEqual(0, result.returncode, result.stderr)
+        self.assertIn("--mode", result.stdout)
 
     def test_zero_saved_pages_fails(self):
         self.assertEqual(1, self.run_mock_crawl(0))
@@ -132,7 +139,7 @@ class WikiCommandTests(unittest.TestCase):
     def test_startup_failure_fails(self):
         self.assertEqual(1, self.run_mock_crawl(1, bootstrap_failed=True))
 
-    def run_offline_command(self, start_body, save_dir):
+    def run_offline_command(self, start_body, save_dir, fail_pipeline=False):
         # A fresh subprocess runs the real reactor, pipeline and script exit path.
         # The empty/data-only start method never makes a network request.
         script = f'''
@@ -141,8 +148,14 @@ import sys
 import scrapy
 from seesawiki_back_up.spiders.backup import BackupSpider
 async def start(self):
+    self.feed_ok = True
 {start_body}
 BackupSpider.start = start
+if {fail_pipeline!r}:
+    from seesawiki_back_up.pipelines import SeesawikiBackUpPipeline
+    def fail(self, item, spider):
+        raise OSError("synthetic disk failure")
+    SeesawikiBackUpPipeline.process_item = fail
 sys.argv = ["crawl.py", "backup", "--save-dir", sys.argv[1],
             "-s", "LOG_LEVEL=ERROR", "-s", "TELNETCONSOLE_ENABLED=False"]
 runpy.run_path("seesawiki_back_up/crawl.py", run_name="__main__")
@@ -161,6 +174,15 @@ runpy.run_path("seesawiki_back_up/crawl.py", run_name="__main__")
             self.assertIn("no pages saved", result.stderr)
             self.assertEqual("old backup", (output / "old.txt").read_text(encoding="utf-8"))
 
+    def test_real_pipeline_error_keeps_checkpoint(self):
+        with TemporaryDirectory() as tmpdir:
+            result = self.run_offline_command(
+                '    yield {"title": "Page", "text": "PRIVATE-BODY-SENTINEL"}',
+                tmpdir, fail_pipeline=True)
+            self.assertEqual(1, result.returncode)
+            self.assertFalse((Path(tmpdir) / ".crawl-state.json").exists())
+            self.assertNotIn("PRIVATE-BODY-SENTINEL", result.stderr)
+
     def test_real_saved_page_exits_zero(self):
         with TemporaryDirectory() as tmpdir:
             output = Path(tmpdir) / "pages"
@@ -176,6 +198,115 @@ runpy.run_path("seesawiki_back_up/crawl.py", run_name="__main__")
                 '<div class="user-area">offline wiki</div>',
                 (output / "Page.html").read_text(encoding="utf-8"),
             )
+
+
+class IncrementalTests(unittest.TestCase):
+    def feed(self, entries):
+        from xml.sax.saxutils import escape
+        xml = '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://purl.org/rss/1.0/">'
+        for name, date in entries:
+            xml += f'<item><link>https://seesaawiki.jp/nai_ch/d/{escape(name)}</link><dc:date>{escape(date)}</dc:date></item>'
+        return XmlResponse("https://seesaawiki.jp/nai_ch/site.rdf", body=(xml + '</rdf:RDF>').encode(), encoding="utf-8")
+
+    def spider(self, directory):
+        url = "https://seesaawiki.jp/nai_ch/d/Page"
+        return BackupSpider(mode="incremental", save_dir=directory,
+                            started="2026-10-22T23:00:00+09:00", previous={
+            "checked_at": "2026-10-22T06:00:00+09:00", "full_at": "2026-10-01T06:00:00+09:00",
+            "pages": {url: {"file": "Page.html", "date": "2026-10-21T00:00:00+09:00"}}})
+
+    def test_unchanged_feed_makes_no_article_requests(self):
+        with TemporaryDirectory() as directory:
+            (Path(directory) / "Page.html").touch()
+            spider = self.spider(directory)
+            self.assertEqual([], list(spider.parse_feed(self.feed([("Page", "2026-10-21T00:00:00+09:00")]))))
+            self.assertTrue(spider.feed_ok)
+
+    def test_changed_and_new_only_without_link_traversal(self):
+        with TemporaryDirectory() as directory:
+            spider = self.spider(directory)
+            requests = list(spider.parse_feed(self.feed([
+                ("Page", "2026-10-22T05:00:00+09:00"), ("New", "2026-10-22T22:00:00+09:00")
+            ])))
+            self.assertEqual(2, len(requests))
+            self.assertFalse(spider.full)
+            self.assertEqual(1, len(list(spider.parse_page(response(PAGE_HTML)))))
+
+    def test_missing_local_file_refetched_even_when_feed_unchanged(self):
+        with TemporaryDirectory() as directory:
+            spider = self.spider(directory)
+            urls = {r.url for r in spider.parse_feed(self.feed([("Page", "2026-10-21T00:00:00+09:00")]))}
+            self.assertEqual({"https://seesaawiki.jp/nai_ch/d/Page"}, urls)
+
+    def test_gap_triggers_full_recovery(self):
+        with TemporaryDirectory() as directory, patch.object(BackupSpider, "known_page_urls", return_value=[]):
+            spider = self.spider(directory)
+            requests = list(spider.parse_feed(self.feed([("New", "2026-10-22T22:00:00+09:00")])))
+            self.assertTrue(spider.gap)
+            self.assertTrue(spider.full)
+            self.assertIn("https://seesaawiki.jp/nai_ch/", [r.url for r in requests])
+
+    def test_empty_bad_and_future_feed_fail(self):
+        for entries in ([], [("Page", "broken")], [("Page", "2026-10-23T00:00:00+09:00")]):
+            spider = self.spider("unused")
+            self.assertEqual([], list(spider.parse_feed(self.feed(entries))))
+            self.assertTrue(spider.failed)
+            self.assertFalse(spider.feed_ok)
+
+    def test_http_failure_marks_run_incomplete(self):
+        spider = self.spider("unused")
+        spider.request_failed(None)
+        self.assertTrue(spider.failed)
+
+    def test_deleted_page_recorded_without_deleting_archive(self):
+        spider = self.spider("unused")
+        r = HtmlResponse("https://seesaawiki.jp/nai_ch/d/Gone", status=404)
+        self.assertEqual([], list(spider.parse_page(r)))
+        self.assertEqual({r.url}, spider.missing)
+        self.assertFalse(spider.failed)
+
+    def test_month_boundary(self):
+        from seesawiki_back_up.state import full_due
+        state = {"full_at": "2026-10-22T23:00:00+09:00"}
+        self.assertFalse(full_due(state, "2026-10-31T06:00:00+09:00"))
+        self.assertTrue(full_due(state, "2026-11-01T06:00:00+09:00"))
+        self.assertTrue(full_due({}, "2026-10-22T23:00:00+09:00"))
+
+    def test_no_item_body_in_log_formatter(self):
+        from seesawiki_back_up.safe_logging import MetadataLogFormatter
+        fmt = MetadataLogFormatter()
+        secret = {"text": "DO-NOT-LOG-BODY"}
+        self.assertIsNone(fmt.scraped(secret, None, None))
+        for method in (fmt.dropped, fmt.item_error):
+            result = method(secret, ValueError("DO-NOT-LOG-BODY"), None, None)
+            self.assertNotIn("DO-NOT-LOG-BODY", str(result))
+
+    def test_zero_changes_success_and_failure_preserves_checkpoint(self):
+        import json
+        from seesawiki_back_up.crawl import run
+        from argparse import Namespace
+        from scrapy.settings import Settings
+        with TemporaryDirectory() as directory, patch("seesawiki_back_up.crawl.CrawlerProcess") as factory:
+            path = Path(directory) / ".crawl-state.json"
+            spider = self.spider(directory)
+            path.write_text(json.dumps(spider.previous))
+            process = factory.return_value
+            process.bootstrap_failed = False
+            crawler = process.create_crawler.return_value
+            crawler.spider = spider
+            crawler.stats.get_stats.return_value = {"finish_reason": "finished"}
+            spider.feed_ok = True
+            args = Namespace(save_dir=Path(directory), mode="incremental", spider="backup")
+            self.assertEqual(0, run(args, Settings()))
+            before = path.read_bytes()
+            spider.failed = True
+            self.assertEqual(1, run(args, Settings()))
+            self.assertEqual(before, path.read_bytes())
+            spider.failed = False
+            crawler.stats.get_stats.return_value = {"finish_reason": "closespider_timeout", "item_scraped_count": 1}
+            self.assertEqual(1, run(args, Settings()))
+            self.assertEqual(before, path.read_bytes())
+
 
 if __name__ == "__main__":
     unittest.main()

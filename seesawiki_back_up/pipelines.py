@@ -23,4 +23,9 @@ class SeesawikiBackUpPipeline:
         # ファイルが既に存在する場合は、上書きして保存する
         with open(os.path.join(save_dir, f"{file_name}.html"), "w", encoding='utf-8') as f:
             f.write(item["text"])
+        if item.get("url"):
+            spider.saved[item["url"]] = {
+                "file": f"{file_name}.html",
+                "date": spider.feed_dates.get(item["url"], ""),
+            }
         return item

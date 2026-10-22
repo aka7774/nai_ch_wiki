@@ -28,6 +28,14 @@ archive updates through its configured Git remote.
    data to its configured Git remote, and skip creating an archive commit when
    the tracked archive data has not changed.
 
+9. Normal wiki runs must fetch only changed RSS entries and missing local pages.
+   Full traversal runs initially and monthly (JST), with an extra recovery run
+   when the bounded RSS no longer covers the previous successful check.
+10. Valid unchanged feeds must succeed with zero writes. Incomplete runs must
+    fail without advancing the atomic metadata checkpoint. Missing remote pages
+    must be reported without deleting archived copies. Logs must omit item bodies.
+
+
 ## Scope and limits
 
 Source-site availability and markup determine what can be retrieved. Scheduler

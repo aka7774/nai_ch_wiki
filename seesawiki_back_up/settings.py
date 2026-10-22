@@ -96,3 +96,13 @@ ITEM_PIPELINES = {
 # Set settings whose default value is deprecated to a future-proof value
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+
+# Serialize site requests with a minimum four-second delay.
+CONCURRENT_REQUESTS_PER_DOMAIN = 1
+DOWNLOAD_DELAY = 4
+RANDOMIZE_DOWNLOAD_DELAY = False
+AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_START_DELAY = 4
+AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+TELNETCONSOLE_ENABLED = False
+LOG_FORMATTER = "seesawiki_back_up.safe_logging.MetadataLogFormatter"

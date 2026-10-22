@@ -16,13 +16,13 @@ Automated backups for the nai_ch SeesaaWiki and the associated 5ch "nanJNVA" thr
 1. Ensures the uv-managed Python 3.12 virtualenv in `.venv/` exists and exactly synchronizes the lock in `requirements.txt`.
 2. Runs the local regression tests before making network requests.
 3. Runs `.venv/bin/python fivech_back_up/thread_backup.py daily` to update the 5ch archive.
-4. Runs `.venv/bin/python seesawiki_back_up/crawl.py backup` to mirror the wiki into `back_up_html/`.
+4. Runs `.venv/bin/python seesawiki_back_up/crawl.py backup` to update changed wiki pages into `back_up_html/`, with a full traversal once per calendar month (JST).
 5. Commits and pushes only when `back_up_html/` or `thread_back_up/` changed.
 
-If the wiki crawler fails, including a run that saves zero wiki pages, the script aborts and nothing is committed. If the 5ch backup fails, the wiki backup still runs and may be committed, but the overall command exits with status 2 so cron/monitoring cannot mistake the partial result for full success.
+If the wiki crawler fails, including an incomplete full traversal or an invalid/unavailable RSS feed, the script aborts and nothing is committed. If the 5ch backup fails, the wiki backup still runs and may be committed, but the overall command exits with status 2 so cron/monitoring cannot mistake the partial result for full success.
 
 ### Wiki collection route (2026-10-21)
-SeesaaWiki's robots.txt now disallows the page list (`/*/l/`) and editor (`/*/e/`) URLs from which the crawler read each page's source text. The Wayback Machine copy of 2025-09-02 did not disallow them, and the source text in `back_up/` stops at 2026-04-07 although the wiki kept being edited, so the change most likely took effect in April 2026; the start URL and User-Agent did not change. Because the crawler obeys robots.txt, it saved nothing from then on: the daily run still reported success until 2026-07-25, the 2026-07-26 Scrapy update then kept the spider from starting at all, and once that was fixed on 2026-10-14 every run failed with `robotstxt/forbidden` (from 2026-10-15). SeesaaWiki offers readers no export or API, so the crawler now starts from the top page and the RSS feed (`site.rdf`), follows links to article pages (`/nai_ch/d/…`, which robots.txt allows) and saves each page's rendered body (`div.user-area`) as UTF-8 HTML in `back_up_html/<title>.html`; `ROBOTSTXT_OBEY` stays `True`. `back_up/` keeps the 2026-04-07 source text for tools that parse wiki markup. Links alone reached 215 of the 257 titles in `back_up/`, so the crawler also opens the article URL of every title already kept in `back_up/` or `back_up_html/` (`/nai_ch/d/` plus the percent-encoded EUC-JP title); deleted pages return 404 and save nothing. A new page is missed only while no collected page links to it and it is not among the latest RSS items.
+SeesaaWiki's robots.txt now disallows the page list (`/*/l/`) and editor (`/*/e/`) URLs from which the crawler read each page's source text. The Wayback Machine copy of 2025-09-02 did not disallow them, and the source text in `back_up/` stops at 2026-04-07 although the wiki kept being edited, so the change most likely took effect in April 2026; the start URL and User-Agent did not change. Because the crawler obeys robots.txt, it saved nothing from then on: the daily run still reported success until 2026-07-25, the 2026-07-26 Scrapy update then kept the spider from starting at all, and once that was fixed on 2026-10-14 every run failed with `robotstxt/forbidden` (from 2026-10-15). No usable reader export was found; robots.txt disallows API and history paths, so so the crawler now starts from the top page and the RSS feed (`site.rdf`), follows links to article pages (`/nai_ch/d/…`, which robots.txt allows) and saves each page's rendered body (`div.user-area`) as UTF-8 HTML in `back_up_html/<title>.html`; `ROBOTSTXT_OBEY` stays `True`. `back_up/` keeps the 2026-04-07 source text for tools that parse wiki markup. Links alone reached 215 of the 257 titles in `back_up/`, so the crawler also opens the article URL of every title already kept in `back_up/` or `back_up_html/` (`/nai_ch/d/` plus the percent-encoded EUC-JP title); deleted pages return 404 and save nothing. A new page is missed only while no collected page links to it and it is not among the latest RSS items.
 
 ## 5ch backup operations
 The 5ch helper stores metadata in `thread_back_up/state.json` and tracks the current thread URL in `thread_back_up/latest_thread_url.txt`. Typical commands (run from the repo root with the virtualenv activated):
@@ -151,3 +151,14 @@ required. Skipped checks and what they need:
 - Live wiki and 5ch collection: source-site access and permission to update snapshots.
 - Unattended Git publication: configured remote authentication and scheduler.
 - Restoration of unpublished data: files from the previous installation.
+
+### Incremental wiki collection
+
+Daily runs now read the official RSS feed and fetch only new/changed entries
+or known pages whose local HTML file is missing. A validated feed with zero
+changes is a successful run. The first run and the first successful run of each
+calendar month (JST) traverse the top page, known titles and article links.
+RSS currently contains only five entries: if its oldest entry is newer than the
+previous successful check, the job reports a coverage gap and performs an extra
+full recovery traversal. This exception prevents silently losing edits between
+monthly checks. See `seesawiki_back_up/README.md` for recovery and limitations.

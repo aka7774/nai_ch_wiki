@@ -7,6 +7,13 @@ log() {
     printf '[%s] %s\n' "$(date '+%Y-%m-%d %H:%M:%S %z')" "$*"
 }
 
+# Exclude overlapping scheduled/manual runs through collection and publication.
+exec 9>.backup.lock
+if ! flock -n 9; then
+    log "Daily backup already running."
+    exit 1
+fi
+
 VENV_DIR=".venv"
 PYTHON="$VENV_DIR/bin/python"
 backup_degraded=0
