@@ -7,29 +7,39 @@
 OpenMOSS Teamが開発する、Text-to-ImageのMMDiTモデル。多様なスタイルに対応。<br>
 <br>
 パラメータ数は5Bと現代のMMDiTモデルの中では比較的軽量な方で、VRAM8GBで動作する(だが計算はAnimaより約2.5倍大きい分遅い)。<br>
-</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 長所 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+</div></div><div id="content_block_4" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 対応UI <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_4-body" class="wiki-section-body-1">
-<ul id="content_block_5" class="list-1">
+現時点で<a href="https://seesaawiki.jp/nai_ch/d/ComfyUI">ComfyUI</a>と<a href="https://github.com/Haoming02/sd-webui-forge-classic/tree/neo" class="outlink" rel="nofollow">Forge neo</a><br>
+</div></div><div id="content_block_6" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 動作要件 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_6-body" class="wiki-section-body-1">
+空き容量30GB以上のSSD推奨。
+</div></div><div id="content_block_8" class="wiki-section-3"><div class="title-3"><h5 id="content_3_0_1"> 推論 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_3_0_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_8-body" class="wiki-section-body-3">
+32GB以上のRAMと最低8GBのVRAMを搭載するfp16対応GPU。bf16対応の12GB以上のVRAMを搭載したGPUを推奨。<br>
+</div></div><div id="content_block_10" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 長所 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_10-body" class="wiki-section-body-1">
+<ul id="content_block_11" class="list-1">
 <li> プロンプト忠実度がとても高い。</li>
 <li> 版権キャラとNSFW対応。検閲なし。</li>
 <li> 拡散モデルは比較的軽量(5B)なのに高品質。</li>
 <li> プロンプトは英語以外にもDanbooruタグ、日本語や中国語などの多数の言語、Json形式が使える。</li>
-<li> 文字の描写が優れている</li>
+<li> 文字の描写が優れている。</li>
+<li> ComfyUIとForge neoが対応している。</li>
 </ul>
-</div></div><div id="content_block_7" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_1"> 拡散モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_2_0_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_7-body" class="wiki-section-body-3">
+</div></div><div id="content_block_13" class="wiki-section-3"><div class="title-3"><h5 id="content_4_0_2"> 拡散モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_4_0_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_13-body" class="wiki-section-body-3">
 これは現在主流のTransformerベースのDiffusion Transformer(DiT)を採用する。シングルストリーム。<br>
 DiTは水平線や物体の構造の連続性維持が比較的得意で破綻が少ない。<br>
 パラメータ数は5Bと現代のMMDiTモデルの中では比較的軽量な方。なお、Animaは2Bでもっと軽く速い(その分低品質)。<br>
-</div></div><div id="content_block_9" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_2"> TE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_2_0_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_9-body" class="wiki-section-body-3">
+</div></div><div id="content_block_15" class="wiki-section-3"><div class="title-3"><h5 id="content_4_0_3"> TE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_4_0_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_15-body" class="wiki-section-body-3">
 Text Encoderは、Qwen3.5-9Bでローカルのt2iモデルのTEとしてはかなり強い。位置や文字などの具体的な情報を解釈できる。<br>
-</div></div><div id="content_block_11" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_3"> VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_2_0_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_11-body" class="wiki-section-body-3">
+</div></div><div id="content_block_17" class="wiki-section-3"><div class="title-3"><h5 id="content_4_0_4"> VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_4_0_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_17-body" class="wiki-section-body-3">
 16チャネルのFLUX.2 VAEを使用する。Qwen Image VAEより良いらしい。<br>
-</div></div><div id="content_block_13" class="wiki-section-1"><div class="title-1"><h3 id="content_3"> 欠点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_13-body" class="wiki-section-body-1">
-<ul id="content_block_14" class="list-1">
+</div></div><div id="content_block_19" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 欠点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_19-body" class="wiki-section-body-1">
+<ul id="content_block_20" class="list-1">
 <li> 計算が遅い。SDXLの二倍の時間がかかるAnimaの2.5倍の時間がかかる。
 <ul class="list-2">
 <li> Krea2やFLUX.2よりは速い</li>
@@ -37,36 +47,29 @@ Text Encoderは、Qwen3.5-9Bでローカルのt2iモデルのTEとしてはか�
 </ul>
 </li>
 <li> TEが重い。</li>
-<li> 対応UIがとても少ない。ネイティブサポートはComfyUIのみ。</li>
 <li> リリース直後で知識も資産もほぼ無い。</li>
 </ul>
-</div></div><div id="content_block_16" class="wiki-section-1"><div class="title-1"><h3 id="content_4"> 対応UI <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_4" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_16-body" class="wiki-section-body-1">
-現時点で<a href="https://seesaawiki.jp/nai_ch/d/ComfyUI">ComfyUI</a>と <a href="https://github.com/Haoming02/sd-webui-forge-classic/tree/neo" class="outlink" rel="nofollow">Forge neo</a>（10月19日時点で<a href="https://github.com/eduardoabreu81/moss-image-forge-neo" class="outlink" rel="nofollow">拡張機能</a>が必要）<br>
-</div></div><div id="content_block_18" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 動作要件 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_18-body" class="wiki-section-body-1">
-空き容量30GB以上のSSD推奨。
-</div></div><div id="content_block_20" class="wiki-section-3"><div class="title-3"><h5 id="content_5_0_4"> 推論 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_5_0_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_20-body" class="wiki-section-body-3">
-32GB以上のRAMと最低8GBのVRAMを搭載するfp16対応GPU。bf16対応の12GB以上のVRAMを搭載したGPUを推奨。<br>
 </div></div><div id="content_block_22" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 使用方法(ComfyUI) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_22-body" class="wiki-section-body-1">
 Comfy-OrgのHugging Faceリポジトリから次のファイルをDLして配置する。<br>
 <a href="https://huggingface.co/Comfy-Org/MOSS-Image/tree/main" class="outlink">https://huggingface.co/Comfy-Org/MOSS-Image/tree/m...</a><br>
-<br>
-ComfyUI/models/diffusion_modelsにmoss_image_〇〇_int8_convrot.safetensors<br>
-〇〇はbase, sftのいずれか。baseは基本、sftは出力の品質向上と安定性向上を図ったもの。<br>
-<br>
-ComfyUI/models/text_encodersにqwen3.5_9b_int8_convrot.safetensors<br>
-ComfyUI/models/vaeにflux2-vae.safetensors<br>
-</div></div><div id="content_block_24" class="wiki-section-3"><div class="title-3"><h5 id="content_6_0_5"> ComfyUIのテンプレートの注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_6_0_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_24-body" class="wiki-section-body-3">
-ComfyUIのテンプレートには、プロンプトのアップサンプリングがついている。<br>
-プロンプトに不適切な内容があると実際のプロンプトが「すみません。その質問にはお答えできません。」になるので注意。<br>
-サブグラフのenable_prompt_upsamplerをオフにするとアップサンプリングをしない。<br>
-</div></div><div id="content_block_26" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> 推奨生成パラメータ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_26-body" class="wiki-section-body-1">
-<ul id="content_block_27" class="list-1">
+<ul id="content_block_23" class="list-1">
+<li> ComfyUI/models/diffusion_modelsにmoss_image_〇〇_int8_convrot.safetensors<br>〇〇はbase, sftのいずれか。baseは基本、sftは出力の品質向上と安定性向上を図ったもの。</li>
+<li> ComfyUI/models/text_encodersにqwen3.5_9b_int8_convrot.safetensors</li>
+<li> ComfyUI/models/vaeにflux2-vae.safetensorsまたはflux2-vae_small.safetensors</li>
+</ul>
+</div></div><div id="content_block_25" class="wiki-section-3"><div class="title-3"><h5 id="content_6_0_5"> ComfyUIのテンプレートの注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_6_0_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_25-body" class="wiki-section-body-3">
+ComfyUIのテンプレートには、TEのqwen3.5_9bを流用したプロンプトエンハンサーがついている。<br>
+このqwen3.5_9bは検閲版であるため、プロンプトに不適切な内容があると実際のプロンプトが「すみません。その質問にはお答えできません。」になるので注意。<br>
+サブグラフのenable_prompt_enhancerをオフにするとエンハンスをしない。<br>
+または独自のLoRAを使うことでこれを無検閲化することができる。<br>
+<a href="https://huggingface.co/nynxz/Qwen3.5-9B" class="outlink">https://huggingface.co/nynxz/Qwen3.5-9B</a><br>
+使い方は「Load LoRA (Text Encoder)」でLoRAを読み込み、「Generate Text」と「Load CLIP」の間に挟むだけ。<br>
+なおqwen3.5_9b自体を無検閲版に置き換えるとCLIP(TE)としてのプロンプト追従性が低下する可能性が高いためおすすめしない。
+</div></div><div id="content_block_27" class="wiki-section-1"><div class="title-1"><h3 id="content_7"> 推奨生成パラメータ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_7" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_27-body" class="wiki-section-body-1">
+<ul id="content_block_28" class="list-1">
 <li> 解像度: 推奨は1MP(1024x1024), 1.5MP(1280x1280,1024x1536), 2MP(1536x1536)。最小0.25MP(512x512)、最大4MP(2024x2048)。</li>
 <li> Steps: 50</li>
 <li> Guidance Scale: 3</li>
@@ -74,7 +77,7 @@ ComfyUIのテンプレートには、プロンプトのアップサンプリン�
 <li> Scheduler: SGM Uniform</li>
 </ul>
 <br>
-公式には書いていないがこれでも良い感じ。<ul id="content_block_28" class="list-1">
+公式には書いていないがこれでも良い感じ。<ul id="content_block_29" class="list-1">
 <li> Steps: 26-32あたりでも十分かも</li>
 <li> Sampler: Gradient Estimationが無難。RES Multistep、ER SDE、SA Solverでもよい。</li>
 <li> Scheduler: Linear Quadraticが無難。Simple、NormalやSGM Uniformは破綻が少し多くなる。
@@ -83,62 +86,62 @@ ComfyUIのテンプレートには、プロンプトのアップサンプリン�
 </ul>
 </li>
 </ul>
-</div></div><div id="content_block_30" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> モデルの種類 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_30-body" class="wiki-section-body-1">
-</div></div><div id="content_block_32" class="wiki-section-2"><div class="title-2"><h4 id="content_8_1"> Base <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_8_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_32-body" class="wiki-section-body-2">
+</div></div><div id="content_block_31" class="wiki-section-1"><div class="title-1"><h3 id="content_8"> モデルの種類 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_8" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_31-body" class="wiki-section-body-1">
+</div></div><div id="content_block_33" class="wiki-section-2"><div class="title-2"><h4 id="content_8_1"> Base <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_8_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_33-body" class="wiki-section-body-2">
 <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base" class="outlink">https://huggingface.co/OpenMOSS-Team/MOSS-Image-Ba...</a><br>
 基本のモデル。多様性が高い分不安定。<br>
 不安定とはいえ、Anima Baseのように低品質な画像しか出ないということは無いので使い勝手は悪くない。<br>
 AIらしさが嫌か、多様な表現を求めるならこちらの方が良い。<br>
-</div></div><div id="content_block_34" class="wiki-section-2"><div class="title-2"><h4 id="content_8_2"> SFT <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_8_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_34-body" class="wiki-section-body-2">
+</div></div><div id="content_block_35" class="wiki-section-2"><div class="title-2"><h4 id="content_8_2"> SFT <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_8_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_35-body" class="wiki-section-body-2">
 <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT" class="outlink">https://huggingface.co/OpenMOSS-Team/MOSS-Image-SF...</a><br>
 美的チューニングを施した出力品質が安定したモデル。<br>
 安定するが表現の幅は狭い。マスピ絵、マスピ顔ばかりになる。<br>
-</div></div><div id="content_block_36" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> プロンプト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_36-body" class="wiki-section-body-1">
+</div></div><div id="content_block_37" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> プロンプト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_37-body" class="wiki-section-body-1">
 プロンプトはDanbooruタグと自然言語(多言語)とJson形式が使える。位置指定や文字描写などの具体的な命令もOK。<br>
 英文が苦手なら翻訳機で「これは~が~しているイラストです。~と~が背景にあります。このイラストは~な雰囲気です。」のような文章を英語にすればいい。チャットボットに考えてもらうのもいい。<br>
 それか日本語で入力する。<br>
 画像から自然言語プロンプトを生成するなら、検閲解除版のVLM(Gemma 4など)を使うと良い。<br>
-</div></div><div id="content_block_38" class="wiki-section-2"><div class="title-2"><h4 id="content_9_3"> 強度指定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_9_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_38-body" class="wiki-section-body-2">
+</div></div><div id="content_block_39" class="wiki-section-2"><div class="title-2"><h4 id="content_9_3"> 強度指定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_9_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_39-body" class="wiki-section-body-2">
 非対応。TEにLLMを使用するモデルでは非対応なのが当り前。<br>
-</div></div><div id="content_block_40" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> Flow Shiftの値 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_40-body" class="wiki-section-body-1">
+</div></div><div id="content_block_41" class="wiki-section-1"><div class="title-1"><h3 id="content_10"> Flow Shiftの値 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_10" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_41-body" class="wiki-section-body-1">
 ComfyUIのModelSamplingAuraFlowのshiftのこと。<br>
 低いほど高周波成分が強くなってディティールが増えるが不安定になる。高いほど安定するが、絵が平坦になる。<br>
 初期値は5。解像度に合わせて高くするといいかも。<br>
 ステップ数が多いほどこの値の影響が小さくなる。ノイズスケジューラにLinear Quadraticを選択しても影響が小さくなる。<br>
-</div></div><div id="content_block_42" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> SkipLayerGuidance <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_42-body" class="wiki-section-body-1">
+</div></div><div id="content_block_43" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> SkipLayerGuidance <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_43-body" class="wiki-section-body-1">
 single_layersに22, 24, 26を指定すると破綻が減少するが、ディティールも減少する。<br>
 適用範囲(start_percentとend_percentで指定)が広いとディティールが過度に減少して不自然なスタイルになる。<br>
-</div></div><div id="content_block_44" class="wiki-section-1"><div class="title-1"><h3 id="content_12"> 高速化 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_12" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_44-body" class="wiki-section-body-1">
-</div></div><div id="content_block_46" class="wiki-section-2"><div class="title-2"><h4 id="content_12_4"> DMD <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_12_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_46-body" class="wiki-section-body-2">
+</div></div><div id="content_block_45" class="wiki-section-1"><div class="title-1"><h3 id="content_12"> 高速化 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_12" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_45-body" class="wiki-section-body-1">
+</div></div><div id="content_block_47" class="wiki-section-2"><div class="title-2"><h4 id="content_12_4"> DMD <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_12_4" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_47-body" class="wiki-section-body-2">
 Base用: <a href="https://huggingface.co/lodestones/MOSS-Image-Base-8-steps-dmd" class="outlink">https://huggingface.co/lodestones/MOSS-Image-Base-...</a><br>
 SFT用: <a href="https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd" class="outlink">https://huggingface.co/lodestones/MOSS-Image-SFT-8...</a><br>
 CFGの計算を不要にし高速化しつつ8ステップで収束させる蒸留LoRA。
-</div></div><div id="content_block_48" class="wiki-section-3"><div class="title-3"><h5 id="content_12_4_6"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_12_4_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_48-body" class="wiki-section-body-3">
+</div></div><div id="content_block_49" class="wiki-section-3"><div class="title-3"><h5 id="content_12_4_6"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_12_4_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_49-body" class="wiki-section-body-3">
 一般的な蒸留モデルと同様にCFG1、EulerなどのODEソルバーで使用する。<br>
 ネガティブプロンプトは使えない。出力の多様性を著しく低下させ、ややぼやけた画像になる。<br>
 さらに文字描画の精度が大幅に低下する。<br>
-</div></div><div id="content_block_50" class="wiki-section-1"><div class="title-1"><h3 id="content_13"> 学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_13" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_50-body" class="wiki-section-body-1">
+</div></div><div id="content_block_51" class="wiki-section-1"><div class="title-1"><h3 id="content_13"> 学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_13" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_51-body" class="wiki-section-body-1">
 sd-scriptsとFizgigでできる。<br>
 <a href="https://github.com/kohya-ss/sd-scripts" class="outlink">https://github.com/kohya-ss/sd-scripts</a><br>
 <a href="https://github.com/shootthesound/Fizgig" class="outlink">https://github.com/shootthesound/Fizgig</a><br>
-</div></div><div id="content_block_52" class="wiki-section-1"><div class="title-1"><h3 id="content_14"> ライセンス <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_14" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_52-body" class="wiki-section-body-1">
+</div></div><div id="content_block_53" class="wiki-section-1"><div class="title-1"><h3 id="content_14"> ライセンス <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_14" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_53-body" class="wiki-section-body-1">
 Apache 2.0ライセンスで緩い。<br>
-</div></div><div id="content_block_54" class="wiki-section-1"><div class="title-1"><h3 id="content_15"> トラブルシューティング <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_15" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_54-body" class="wiki-section-body-1">
-</div></div><div id="content_block_56" class="wiki-section-2"><div class="title-2"><h4 id="content_15_5"> アーティファクトだらけ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_15_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_56-body" class="wiki-section-body-2">
+</div></div><div id="content_block_55" class="wiki-section-1"><div class="title-1"><h3 id="content_15"> トラブルシューティング <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_15" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_55-body" class="wiki-section-body-1">
+</div></div><div id="content_block_57" class="wiki-section-2"><div class="title-2"><h4 id="content_15_5"> アーティファクトだらけ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_15_5" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_57-body" class="wiki-section-body-2">
 ConditioningZeroOutノードがあればそれを消す。
 </div></div>
 </div>
