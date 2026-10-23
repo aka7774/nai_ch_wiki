@@ -4,14 +4,14 @@
 <a href="https://huggingface.co/circlestone-labs/Anima" class="outlink">https://huggingface.co/circlestone-labs/Anima</a><br>
 CircleStone LabsとComfy Orgが開発する、アニメイラストに特化したText-to-ImageのMMDiTモデル。NVIDIAのCosmos-Predict2がベースである。<br>
 <br>
-パラメータ数は2Bと現代のMMDiTモデルの中では軽量な方で、VRAM8GBで快適に動作する(だが計算はSDXLより二倍遅い)。<br>
+パラメータ数は2Bと現代のMMDiTモデルの中ではかなり軽量な方で、VRAM8GBで快適に動作する(だが計算はSDXLより二倍遅い)。<br>
 </div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> SDXLに対するAnimaの強みは？ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_3-body" class="wiki-section-body-1">
 <ul id="content_block_4" class="list-1">
 <li> 水平線やフェンスがずれたり曲がったりといった破綻が少ない。</li>
 <li> 色が綺麗で明暗の表現がいい。Noob v-predより良い。</li>
 <li> 細部の描写が良く目などが潰れにくい。</li>
-<li> 自然言語による位置などの具体的な指示が可能。</li>
+<li> 自然言語による位置などの具体的な指示がある程度可能。</li>
 <li> メモリ使用量がSDXLより少ない。SDXLは6.9GB必要だがAnimaは5.6GBで済む。
 <ul class="list-2">
 <li> 学習のコストがSDXLと同等かそれ未満で済む</li>
@@ -19,6 +19,7 @@ CircleStone LabsとComfy Orgが開発する、アニメイラストに特化し�
 </ul>
 </li>
 <li> Fine-Tuning(学習)が容易。学習効率が良い感じ。</li>
+<li> 現代のMMDiTモデルの中では超軽量級で計算が速い。</li>
 </ul>
 </div></div><div id="content_block_6" class="wiki-section-3"><div class="title-3"><h5 id="content_2_0_1"> 拡散モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5329680&amp;part=content_2_0_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
 <div id="content_block_6-body" class="wiki-section-body-3">
@@ -43,13 +44,14 @@ CLIPよりは確実に良いがLLMとしてはかなり弱い。ちなみによ�
 <li> INT8_ConvRot形式のウェイトを使えば精度をほとんど落とさずにSDXLと同等かそれ以上の速度になる。</li>
 </ul>
 </li>
-<li> 対応UIが少ない。対応する一般的なUIはComfuUIとForge Neoの二つのみ。</li>
+<li> 対応UIが少ない。対応する一般的なUIはComfyUIとForge Neoの二つのみ。まあAnimaに限らず最近のすべてのモデルに該当するが。</li>
 <li> 学習解像度を大きく上回る解像度で生成すると出力がモザイク状になる(Cosmos-Predictの仕様)。特に縦長の比率で発生しやすい。</li>
 <li> TEが軽量だが相応に弱く、文字の描写ととても複雑なプロンプトは苦手。
 <ul class="list-2">
 <li> 2026年のMMDiTモデルの中では最弱クラス</li>
 </ul>
 </li>
+<li> TEがQwenの出力をLLM Adapterを介してT5XXL互換形式に変換する回りくどい方法で非効率</li>
 <li> SDXLよりはマシだが、背景の品質が低い。Animaのパラメータ数が少ないことと、背景まで書き込む絵師が少ないことが原因。</li>
 <li> 名前があまりにも一般的でweb検索しづらい。AIにAnimaの事を聞くなら、GPT-6などの最新AIにMMDiTのAnimaと言った方がいいかも。</li>
 <li> 英語のみ対応(T5XXLの仕様)</li>
