@@ -25,7 +25,12 @@ OpenMOSS Teamが開発する、Text-to-ImageのMMDiTモデル。多様なスタ�
 <li> プロンプト忠実度がとても高い。</li>
 <li> 版権キャラとNSFW対応。検閲なし。</li>
 <li> 拡散モデルは比較的軽量(5B)なのに高品質。</li>
-<li> プロンプトは英語以外にもDanbooruタグ、日本語や中国語などの多数の言語、Json形式によるレイアウト指定が使える。</li>
+<li> プロンプトは英語以外にもタグ、日本語や中国語などの多数の言語、Json形式によるレイアウト指定が使える。
+<ul class="list-2">
+<li> 自然言語プロンプトは英語推奨</li>
+<li> 一部Danbooruタグも認識する</li>
+</ul>
+</li>
 <li> 文字の描写が優れている。</li>
 <li> ComfyUIとForge neoが対応している。</li>
 <li> 最大400万画素まで対応</li>
@@ -52,7 +57,11 @@ Text Encoderは、Qwen3.5-9Bでローカルのt2iモデルのTEとしてはか�
 </li>
 <li> TEが重い。</li>
 <li> リリース直後で知識も資産もほぼ無い。</li>
-<li> 版権キャラ対応と言っても知っているキャラはAnimaより少ない。</li>
+<li> 版権キャラ対応と言っても知っているキャラはAnimaより少ない。
+<ul class="list-2">
+<li> アニメ特化FTモデルに期待</li>
+</ul>
+</li>
 </ul>
 </div></div><div id="content_block_24" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 使用方法(ComfyUI) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_24-body" class="wiki-section-body-1">
@@ -107,8 +116,9 @@ AIらしさが嫌か、多様な表現を求めるならこちらの方が良い
 </div></div><div id="content_block_39" class="wiki-section-1"><div class="title-1"><h3 id="content_9"> プロンプト <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_9" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_39-body" class="wiki-section-body-1">
 プロンプトはDanbooruタグと自然言語(多言語)とJson形式が使える。位置指定や文字描写などの具体的な命令もOK。Json形式ならバウンディングボックス(bbox)で正確な位置を指定できる。<br>
+ただしDanbooruタグは公式が使えると説明しているわけではなく、効かないものも多いため過信は禁物。<br>
 英文が苦手なら翻訳機で「これは~が~しているイラストです。~と~が背景にあります。このイラストは~な雰囲気です。」のような文章を英語にすればいい。チャットボットに考えてもらうのもいい。<br>
-それか日本語で入力する。<br>
+あるいは日本語で入力する。英語ほどではないが他の言語でもしっかりプロンプトに従ってくれる。<br>
 画像から自然言語プロンプトを生成するなら、検閲解除版のVLM(Gemma 4など)を使うと良い。<br>
 </div></div><div id="content_block_41" class="wiki-section-2"><div class="title-2"><h4 id="content_9_3"> 強度指定 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_9_3" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
 <div id="content_block_41-body" class="wiki-section-body-2">
