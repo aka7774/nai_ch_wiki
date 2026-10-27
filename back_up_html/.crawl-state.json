@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T06:04:54.321553+09:00",
+  "checked_at": "2026-10-28T06:04:57.591623+09:00",
   "coverage_gap": false,
   "full_at": "2026-10-24T06:04:54.732076+09:00",
   "missing_urls": [],
@@ -715,6 +715,10 @@
     "https://seesaawiki.jp/nai_ch/d/%c8%c7%b8%a2%a5%ad%a5%e3%a5%e9%ba%c6%b8%bd/%a4%bf%b9%d4": {
       "date": "2026-10-24T00:01:17+09:00",
       "file": "\u7248\u6a29\u30ad\u30e3\u30e9\u518d\u73fe_\u305f\u884c.html"
+    },
+    "https://seesaawiki.jp/nai_ch/d/%c8%c7%b8%a2%a5%ad%a5%e3%a5%e9%ba%c6%b8%bd/VTuber": {
+      "date": "2026-10-28T05:13:22+09:00",
+      "file": "\u7248\u6a29\u30ad\u30e3\u30e9\u518d\u73fe_VTuber.html"
     },
     "https://seesaawiki.jp/nai_ch/d/1111_WSL2": {
       "date": "",
