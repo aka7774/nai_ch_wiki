@@ -24,21 +24,20 @@
 <li class="list-2"><a href="#content_1_9"> 8. どうしようもない（スペック不足・根本的な仕様）</a>
 <ul>
 <li class="list-3"><a href="#content_1_9_3"> 8-1. WSL2もしくはWindows側など試してないほうの環境で動作を試す(上級者向け)</a></li>
-<li class="list-3"><a href="#content_1_9_4"> 8-2. NansException: tensorなんとかって出る場合</a></li>
 </ul>
 </li>
 <li class="list-2"><a href="#content_1_10"> 9. 本体を最新版にアップデートする</a>
 <ul>
-<li class="list-3"><a href="#content_1_10_5"> 9-1. 本体を少し前のバージョンにロールバックする</a></li>
-<li class="list-3"><a href="#content_1_10_6"> 9-2. Extensionを一時的に無効化(退避)する</a></li>
-<li class="list-3"><a href="#content_1_10_7"> 9-3. なんか必須のファイルが増えてないか確認する(一部バージョンのバグ)</a></li>
-<li class="list-3"><a href="#content_1_10_8"> 9-4. Extensionの更新</a></li>
+<li class="list-3"><a href="#content_1_10_4"> 9-1. 本体を少し前のバージョンにロールバックする</a></li>
+<li class="list-3"><a href="#content_1_10_5"> 9-2. Extension/Custom Nodesを一時的に無効化(退避)する</a></li>
+<li class="list-3"><a href="#content_1_10_6"> 9-3. なんか必須のファイルが増えてないか確認する(一部バージョンのバグ)</a></li>
+<li class="list-3"><a href="#content_1_10_7"> 9-4. 拡張機能の更新</a></li>
 </ul>
 </li>
 <li class="list-2"><a href="#content_1_11"> 10. 再起動する</a></li>
 <li class="list-2"><a href="#content_1_12"> 11. もう一度最初から環境構築する</a>
 <ul>
-<li class="list-3"><a href="#content_1_12_9"> 仮想環境ツールの制約</a></li>
+<li class="list-3"><a href="#content_1_12_8"> 仮想環境ツールの制約</a></li>
 </ul>
 </li>
 <li class="list-2"><a href="#content_1_13"> 12. セキュリティソフトの誤作動</a></li>
@@ -88,7 +87,7 @@
 <br>
 具体例<ul id="content_block_7" class="list-1">
 <li> OpenCV2: 日本語非対応</li>
-<li> zipファイル: OSをまたがった日本語ファイル名が文字化けする。 <br> <span class="fsize" style="font-size:11px;">※日本語版WindowsがShift-JISで、それ以外のOSが基本的にUTF-8を使っているため発生する。</span></li>
+<li> zipファイル: OSをまたがった日本語ファイル名が文字化けする。 <br> <span class="fsize" style="font-size:11px;">※日本語版WindowsがShift-JISで、それ以外のOSが基本的にUTF-8を使っているため発生する。Shift-JISは滅ぶべし!</span></li>
 </ul>
 </div></div><div id="content_block_9" class="wiki-section-2"><div class="title-2"><h4 id="content_1_2"> 1. エラー文を読む＆エラー文で検索する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
 <div id="content_block_9-body" class="wiki-section-body-2">
@@ -112,7 +111,7 @@
 </ul>
 </div></div><div id="content_block_13" class="wiki-section-3"><div class="title-3"><h5 id="content_1_2_1"> ChatGPTやBingチャットを使う <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_2_1" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
 <div id="content_block_13-body" class="wiki-section-body-3">
-エラー文をChatGPTやBingチャット、perplexityなどのAIチャットサービスに入れて「解決策は？」と質問をする<br>
+エラー文をChatGPTやGemini、ClaudeなどのAIチャットサービスに入れて「解決策は？」と質問をする<br>
 割とそれらしい回答をしてくれるので、それを実施する<br>
 尚、ChatGPTは間違った事も平然と正しい様に答える癖があるので、無闇な過信は禁物<br>
 うそはうそであると見抜ける人でないと(ChatAIを使うのは)難しい<br>
@@ -168,7 +167,7 @@ PyTorchが必要なのに入ってないとか、VAEが必要なのに用意し�
 丁寧にチマチマしたバージョンの数字確認なんかをするより他ないが、なあなあにしてるといつまで経っても動かない部分なので、推奨環境・推奨バージョンをキッチリ調べて揃えよう。<br>
 <br>
 具体例<ul id="content_block_27" class="list-1">
-<li> python 3.12を入れてはいけない</li>
+<li> python 3.14を入れてはいけない</li>
 </ul>
 </div></div><div id="content_block_29" class="wiki-section-3"><div class="title-3"><h5 id="content_1_7_2"> 6-1. Anacondaの干渉 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_7_2" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
 <div id="content_block_29-body" class="wiki-section-body-3">
@@ -207,57 +206,46 @@ WSL2側はWindows本体に比べてVRAM周りは最適化によって有利に�
 (参考にこの文の編集者の環境書くと両構築の上、WSL2側のStable-diffusionフォルダをWindows側のStable-diffusionフォルダへのシンボリックリンクにすることでmodelのストレージをケチって構築して一応動作はしている)
 </div>
 </div>
-</div></div><div id="content_block_41" class="wiki-section-3"><div class="title-3"><h5 id="content_1_9_4"> 8-2. NansException: tensorなんとかって出る場合 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_9_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_41-body" class="wiki-section-body-3">
-1111の最新版では黒画像の条件を満たすとエラーを発生させるようになっている。<br>
-VAEやU-Netの計算ミスが原因で、VAE、使用中のLoRAなどによって発生率が異なる。<br>
-Batch count/sizeを上げて複数生成中に出てきて生成を止める厄介者でもある。<br>
 <br>
-まずはwebui-user.batファイルをメモ帳なので開き、「set COMMANDLINE_ARGS=」の後ろに次のオプションを指定する。<br>
-エラーメッセージにVAEと書いていたら「--no-half-vae」、U-Netなら「--no-half」。<br>
-代償としてVRAM消費が増加し生成速度が低下する。パラメータを変更していないのにも関わらず突然エラーになりだしたら再起動する。<br>
-エラーで生成を止められるのが嫌なら起動引数に--disable-nan-checkを追加するといい。従来の黒画像を出力する仕様に戻る。<br>
-他のVAEを使ってみるのもいい。NovelAIのVAEは真っ黒/エラーになりやすい気がする。<br>
-<br>
-</div></div><div id="content_block_43" class="wiki-section-2"><div class="title-2"><h4 id="content_1_10"> 9. 本体を最新版にアップデートする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_43-body" class="wiki-section-body-2">
+</div></div><div id="content_block_41" class="wiki-section-2"><div class="title-2"><h4 id="content_1_10"> 9. 本体を最新版にアップデートする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_41-body" class="wiki-section-body-2">
 そのエラーはすでにバグとして認識されていて、開発者が既に修正済みかもしれない。<br>
 git pullなりして最新版にアップデートしてもう一度やってみよう。<br>
-ただし、下記の理由から1111の怒涛の更新ラッシュ中は数日待ってからgit pullしたほうが安全。
-</div></div><div id="content_block_45" class="wiki-section-3"><div class="title-3"><h5 id="content_1_10_5"> 9-1. 本体を少し前のバージョンにロールバックする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_45-body" class="wiki-section-body-3">
-上の内容と少し矛盾するようだがautomatic1111/webuiはアップデートの頻度が尋常じゃなく早く、次々新機能が追加されるがそれと引き換えに結構不安定な一面も持つ。<br>
-特に大きな機能が追加された直後は不安定で普通に動かないことが多いため、スレとかで不具合らしき書き込みが多い場合は、数日程度はちょっと前のバージョンを使うほうが安定することもある<br>
+ただし、下記の理由からリリースを待ってからgit pullしたほうが安全。
+</div></div><div id="content_block_43" class="wiki-section-3"><div class="title-3"><h5 id="content_1_10_4"> 9-1. 本体を少し前のバージョンにロールバックする <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10_4" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_43-body" class="wiki-section-body-3">
+上の内容と少し矛盾するようだがComfyUIとforge(neo)はアップデートの頻度が尋常じゃなく早く、次々新機能が追加されるがそれと引き換えにやや不安定な一面も持つ。<br>
+特に大きな機能が追加された直後は不安定で普通に動かないことがあるため、スレとかで不具合らしき書き込みが多い場合は、数日程度はちょっと前のバージョンを使うほうが安定することもある<br>
 少しgitの知識が必要になる。コマンドラインがわからん場合はSourcetreeやGitHub Desktopとかvisualstudio codeのgit拡張機能(Git Graph等)を使って操作するとわかりやすいかもしれない。<br>
 細かい内容は各種キーワードでググろう。
-</div></div><div id="content_block_47" class="wiki-section-3"><div class="title-3"><h5 id="content_1_10_6"> 9-2. Extensionを一時的に無効化(退避)する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+</div></div><div id="content_block_45" class="wiki-section-3"><div class="title-3"><h5 id="content_1_10_5"> 9-2. Extension/Custom Nodesを一時的に無効化(退避)する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_45-body" class="wiki-section-body-3">
+一部の拡張機能が「本体のアップデートに追従できない」「新しい本体バージョンに対応して古い本体バージョンと互換性がなくなった」「アップデートのたびに再インストールしないとおかしくなりやすい」「ほかのものと相性が悪い」etc…<br>
+と言った感じで悪さをしていることがある。<br>
+一度拡張機能を入れるフォルダの中のフォルダすべてを別のフォルダに移動して退避するなどして拡張機能なしの状態で動作するかを確認する。<br>
+動作する場合よく使うものをちょっとずつもとのフォルダに戻したり再インストールするなどして様子を見よう。
+</div></div><div id="content_block_47" class="wiki-section-3"><div class="title-3"><h5 id="content_1_10_6"> 9-3. なんか必須のファイルが増えてないか確認する(一部バージョンのバグ) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
 <div id="content_block_47-body" class="wiki-section-body-3">
-一部のExtensionが「本体のアップデートに追従できない」「新しい本体バージョンに対応して古い本体バージョンと互換性がなくなった」「アップデートのたびに再インストールしないとおかしくなりやすい」「ほかのExtensionと相性が悪い」etc…<br>
-と言った感じでExtensionが悪さをしていることがある。<del>特にDreamBoothやHypernetwork-MonkeyPatch-Extensionは複雑なためかトラブる頻度が高め</del>(今はもう使ってる人いない？)<br>
-一度「stable-diffusion-webui\extensions」内のフォルダ一式を別のフォルダに移動して退避するなどしてExtensionなしの状態で起動できないかを確認する。<br>
-起動する場合よく使うExtensionをちょっとずつもとのフォルダに戻したり再インストールするなどして様子を見よう。
-</div></div><div id="content_block_49" class="wiki-section-3"><div class="title-3"><h5 id="content_1_10_7"> 9-3. なんか必須のファイルが増えてないか確認する(一部バージョンのバグ) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_49-body" class="wiki-section-body-3">
 少し前の内容と被るが、アップデート直後の初期化設定などで「特定のファイルがないと動かないのに初期設定ファイルに必要な設定が同梱されてない」みたいなことはちょくちょくある。<br>
 クラウドならエラーを調べて足りないものを入れればOK。<br>
 ローカルの場合、大抵は仮想環境(Python)上にインストールする必要があるから「.\venv\Scripts\activate」(Windows) or「source ./venv/bin/activate」(Linux)を忘れずにやって仮想環境に入ってから該当コマンドを入力しよう。
-</div></div><div id="content_block_51" class="wiki-section-3"><div class="title-3"><h5 id="content_1_10_8"> 9-4. Extensionの更新 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10_8" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_51-body" class="wiki-section-body-3">
-1111のWebUIからでは正しく更新できないことがあるので、必要に応じてバックアップを取ってから拡張機能本体のフォルダを削除してから再インストールする。<br>
-</div></div><div id="content_block_53" class="wiki-section-2"><div class="title-2"><h4 id="content_1_11"> 10. 再起動する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_53-body" class="wiki-section-body-2">
-本体を再起動しないと反映されないextensionもある。本体を再起動してみよう。<br>
+</div></div><div id="content_block_49" class="wiki-section-3"><div class="title-3"><h5 id="content_1_10_7"> 9-4. 拡張機能の更新 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_10_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_49-body" class="wiki-section-body-3">
+1111系のWebUIからでは正しく更新できないことがあるので、必要に応じてバックアップを取ってから拡張機能本体のフォルダを削除してから再インストールする。<br>
+</div></div><div id="content_block_51" class="wiki-section-2"><div class="title-2"><h4 id="content_1_11"> 10. 再起動する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_11" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_51-body" class="wiki-section-body-2">
+本体を再起動しないと反映されないextensionやカスタムノードがある。本体を再起動してみよう。<br>
 それでもダメな場合、他のプロセスが悪さしてる可能性もないとは言えない。念のためPC自体も再起動しよう。<br>
 <br>
-具体例<ul id="content_block_54" class="list-1">
+具体例<ul id="content_block_52" class="list-1">
 <li> pip installで権限エラーが出る場合はファイルロックが腐った可能性がある。再起動すればなおる。</li>
 </ul>
-</div></div><div id="content_block_56" class="wiki-section-2"><div class="title-2"><h4 id="content_1_12"> 11. もう一度最初から環境構築する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_56-body" class="wiki-section-body-2">
+</div></div><div id="content_block_54" class="wiki-section-2"><div class="title-2"><h4 id="content_1_12"> 11. もう一度最初から環境構築する <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_12" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_54-body" class="wiki-section-body-2">
 いろいろいじってディレクトリ構造がおかしくなってるかもしれない。もしくは、仮想環境にパッケージをインストールするつもりで実環境のほうをいじってたりして依存関係が狂っているかもしれない。<br>
 今の場所とは別のフォルダでもう一度まっさらな環境でやってみて上手く行くか試してみよう。<br>
 <br>
-具体例<ul id="content_block_57" class="list-1">
+具体例<ul id="content_block_55" class="list-1">
 <li> venvが狂った場合
 <ul class="list-2">
 <li> venvをリネームして作り直す。余計悪化したらリネームを元に戻す。</li>
@@ -278,8 +266,8 @@ git pullなりして最新版にアップデートしてもう一度やってみ
 </ul>
 </li>
 </ul>
-</div></div><div id="content_block_59" class="wiki-section-3"><div class="title-3"><h5 id="content_1_12_9"> 仮想環境ツールの制約 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_12_9" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
-<div id="content_block_59-body" class="wiki-section-body-3">
+</div></div><div id="content_block_57" class="wiki-section-3"><div class="title-3"><h5 id="content_1_12_8"> 仮想環境ツールの制約 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_12_8" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
+<div id="content_block_57-body" class="wiki-section-body-3">
 <br>
 具体例<br>
 condaでしか動かないものをpipで動かそうとすると苦労する。<br>
@@ -291,45 +279,43 @@ Python 3.10とかxformersとか。<br>
 <br>
 こういうのが原因で動かなくなってる時、アンインストール方法がわからないなら、<br>
 OSから入れ直したほうが早いってことにもなりかねない。<br>
-</div></div><div id="content_block_61" class="wiki-section-2"><div class="title-2"><h4 id="content_1_13"> 12. セキュリティソフトの誤作動 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+</div></div><div id="content_block_59" class="wiki-section-2"><div class="title-2"><h4 id="content_1_13"> 12. セキュリティソフトの誤作動 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_13" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_59-body" class="wiki-section-body-2">
+Microsoft DefenderがtorchのPickleTensorファイル(.pt/.ckpt)をマルウェア扱いで勝手に消してエラーで動かなくなる場合がある。ptフォーマットはコード実行の脆弱性があるので擬陽性が出るのは仕方ない。<br>
+急にエラーで動かなくなった後Windows側で脅威を検出しましたとか出たらそれが原因。消されたファイルはWindowsセキュリティで許可してやれば復活する。<br>
+まあこれはSafetensorsが主流になった今、ほぼすべての人には関係ない。<br>
+</div></div><div id="content_block_61" class="wiki-section-2"><div class="title-2"><h4 id="content_1_14"> わりと根気が大事 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
 <div id="content_block_61-body" class="wiki-section-body-2">
-3月20日あたりからWindowsDefenderがtorchのPickleTensorファイル(.pt/.ckpt)をマルウェア扱いで勝手に消してエラーで動かなくなる場合がある。どう考えても誤検出。<br>
-急にエラーで動かなくなった後Windows側で脅威を検出しましたとか出たらそれが原因。消されたファイルはWindowsセキュリティで許可してやれば復活する。<ul id="content_block_62" class="list-1">
-<li>1111のリポジトリ内でセキュリティを発動させないようにする方法</li>
-</ul>
-設定→プライバシーとセキュリティ→ウイルスと脅威の防止→ウイルスと脅威の防止の設定→除外の追加または削除→除外の追加で1111のフォルダを追加する。<br>
-</div></div><div id="content_block_64" class="wiki-section-2"><div class="title-2"><h4 id="content_1_14"> わりと根気が大事 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_1_14" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_64-body" class="wiki-section-body-2">
 エラーに対応していると「こんなクソめんどくせえことマジでみんなやってんのけ？」となるが、大体そんなもんである。<br>
 色んな人がツールとか作ってくれてるので普段気にならないが、中心にあるのは最先端の技術なので、エラー周りのめんどくさい度はかなり高い。ので根気は必要になる。<br>
 とはいえ楽しい画像生成で消耗しても仕方がない。めんどくさくなったら適当に画像作って遊んで、思い出した時にまた対処すれば良いだろう。<br>
 <br>
 <hr size="1" noshade>
-</div></div><div id="content_block_67" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 質問をするときの注意点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_67-body" class="wiki-section-body-1">
+</div></div><div id="content_block_64" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 質問をするときの注意点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_64-body" class="wiki-section-body-1">
 前例のないエラーの情報を共有することは他の人の助けにもなる。どうしても解決できない場合は、質問してみよう。<br>
 ただし、質問するときは、具体的、かつ詳細に質問しよう。<br>
 エラーは環境によって種類も対策も千差万別なので、曖昧で情報がない質問は答えたくても答えようがなく、結果スルーされる。<br>
 例えば、以下のような情報が多いほど答えやすく、少ないほど答えにくい。<br>
-<ul id="content_block_68" class="list-1">
+<ul id="content_block_65" class="list-1">
 <li> 出ているエラーメッセージ（テキストまたはスクショ）<b>※これがないと本当に答えようがない。必須項目</b></li>
 <li> どのページを見ながらやっているか</li>
 <li> 質問するまでに試したこと</li>
 <li> OSやpythonのバージョン</li>
 <li> 本体のバージョン（コミット日時）</li>
 </ul>
-</div></div><div id="content_block_70" class="wiki-section-2"><div class="title-2"><h4 id="content_2_15"> 🙅‍♂️悪い質問の例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_2_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_70-body" class="wiki-section-body-2">
-<blockquote id="content_block_71">
+</div></div><div id="content_block_67" class="wiki-section-2"><div class="title-2"><h4 id="content_2_15"> 🙅‍♂️悪い質問の例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_2_15" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_67-body" class="wiki-section-body-2">
+<blockquote id="content_block_68">
 LoRAの環境構築しようとしたらエラーが出ました。どうすればいいのか教えてください。
 </blockquote>
 <br>
 エラーと言っても何のエラーか分からないから答えようがない。<br>
 そもそもLoRAもDreamBoothのLoRAなのかfinetuneのLoRAなのか、GUIなのかCUIなのかも書かれておらず、<br>
 これを解決に導くためには非常に長いラリーが必要になることが予想され、答える側のやりたい事を削ってまで回答しようと思えない。スルー。<br>
-</div></div><div id="content_block_73" class="wiki-section-2"><div class="title-2"><h4 id="content_2_16"> 🙆‍♂️良い質問の例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_2_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_73-body" class="wiki-section-body-2">
-<blockquote id="content_block_74">
+</div></div><div id="content_block_70" class="wiki-section-2"><div class="title-2"><h4 id="content_2_16"> 🙆‍♂️良い質問の例 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_2_16" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_70-body" class="wiki-section-body-2">
+<blockquote id="content_block_71">
 <a href="https://seesaawiki.jp/nai_ch/d/Dreambooth-LoRA" class="outlink">https://seesaawiki.jp/nai_ch/d/Dreambooth-LoRA</a> <br>
 このページを見ながらLoRAの導入を試しているんですが、accelerate config のあとの質問に答えるところの最後、fp16を選ぼうとして下矢印キーを押したら、以下のエラーが出ました <br>
 （※ここにスクショか、エラーメッセージを張り付けたURLを貼る） <br>
@@ -344,9 +330,10 @@ LoRAの環境構築しようとしたらエラーが出ました。どうすれ�
 なお、良い質問の例のように聞いたとしても、（当たり前だが）必ず答えが返ってくるわけではない。めげずに調査を続けよう。<br>
 <br>
 もし自己解決できた場合は、単に「自己解決しました」と書いてもいいが、「さっきの〇〇の件ですが、××したら解決しました」と、解決理由も書いておくと、後で同じエラーに遭遇した人の助けになるので、できれば解決方法も書き残そう。<br>
-</div></div><div id="content_block_76" class="wiki-section-2"><div class="title-2"><h4 id="content_2_17"> 試せば結果が分かる質問はまず試してから <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_2_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
-<div id="content_block_76-body" class="wiki-section-body-2">
-<ul id="content_block_77" class="list-1">
+</div></div><div id="content_block_73" class="wiki-section-2"><div class="title-2"><h4 id="content_2_17"> 試せば結果が分かる質問はまず試してから <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_2_17" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
+<div id="content_block_73-body" class="wiki-section-body-2">
+<ul id="content_block_74" class="list-1">
+<li> 〜〜は〇〇で使えますか？</li>
 <li> 〜〜をやれば上手く行きますか？</li>
 <li> ○○と××どっちのほうがうまくいきますか？</li>
 </ul>
@@ -358,12 +345,12 @@ LoRAの環境構築しようとしたらエラーが出ました。どうすれ�
 答えを聞くよりも、「自分がこういう条件で試した結果、こうなりました」という報告をするほうがスレ民に喜ばれる。 検証結果なんてナンボあってもいいですからね。<br>
 その報告をもとに、誰かがさらに発展した調査をしてくれるかもしれない。<br>
 これでニキも最先端リサーチャーの一員や。<br>
-</div></div><div id="content_block_79" class="wiki-section-1"><div class="title-1"><h3 id="content_3">エラー解決のメモ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
-<div id="content_block_79-body" class="wiki-section-body-1">
+</div></div><div id="content_block_76" class="wiki-section-1"><div class="title-1"><h3 id="content_3">エラー解決のメモ <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5018373&amp;part=content_3" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+<div id="content_block_76-body" class="wiki-section-body-1">
 としあきdiffusion Wiki &gt; エラー解決メモ <a href="https://wikiwiki.jp/sd_toshiaki/%E3%82%A8%E3%83%A9%E3%83%BC%E8%A7%A3%E6%B1%BA%E3%83%A1%E3%83%A2" class="outlink">https://wikiwiki.jp/sd_toshiaki/%E3%82%A8%E3%83%A9...</a><br>
 今んところリンクだけ<br>
 <br>
-<blockquote id="content_block_80">
+<blockquote id="content_block_77">
 
 </blockquote>
 </div></div>
