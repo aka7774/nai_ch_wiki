@@ -1,60 +1,8 @@
 {
-  "checked_at": "2026-10-29T06:04:53.267791+09:00",
-  "coverage_gap": true,
+  "checked_at": "2026-10-30T06:04:54.164884+09:00",
+  "coverage_gap": false,
   "full_at": "2026-10-29T06:04:53.267791+09:00",
-  "missing_urls": [
-    "https://seesaawiki.jp/nai_ch/d/%5BR18%B1%D3%BE%A7%C1%B4%CA%B8_%A5%CC%A1%BC%A5%C9%A1%A6%CF%AA%BD%D0",
-    "https://seesaawiki.jp/nai_ch/d/%A4%A2",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%A2%B9%D4",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%AB%B9%D4",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%B5%B9%D4",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%BD%A4%CE%C2%BE",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%BF%B9%D4",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%CA%B9%D4",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%CF%B9%D4",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%DE%B9%D4",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%E4%B9%D4",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%E9%B9%D4",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A4%EF%A4%F2%A4%F3%A4%BD%A4%CE%C2%BE",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A5%A2%A5%A4%A5%C9%A5%EB%A5%DE%A5%B9%A5%BF%A1%BC%B7%CF",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A5%A2%A5%CB%A5%E1%B7%CF",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A5%AC%A5%F3%A5%C0%A5%E0%A1%CA%A5%A2%A5%CA%A5%B6%A1%BC%B7%CF%A1%CB",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A5%AC%A5%F3%A5%C0%A5%E0%A1%CA%B1%A7%C3%E8%C0%A4%B5%AA%B7%CF%A1%CB",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A5%B2%A1%BC%A5%E0%B7%CF",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A5%BD%A5%B7%A5%E3%A5%B2%B7%CF",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A5%C6%A5%A4%A5%EB%A5%BA%A5%B7%A5%EA%A1%BC%A5%BA",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A5%DD%A5%B1%A5%E2%A5%F3%A5%B7%A5%EA%A1%BC%A5%BA",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%A5%E9%A5%D6%A5%E9%A5%A4%A5%D6%B7%CF",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%B4%CF%C1%A5%B5%BC%BF%CD%B2%BD%B7%CF",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_%C5%EC%CA%FDProject",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_TYPE-MOON",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_Tips",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_VTuber",
-    "https://seesaawiki.jp/nai_ch/d/%C8%C7%B8%A2%A5%AD%A5%E3%A5%E9%BA%C6%B8%BD_Vocaloid",
-    "https://seesaawiki.jp/nai_ch/d/%C9%FE%BE%FE_%C0%A9%C9%FE",
-    "https://seesaawiki.jp/nai_ch/d/%CC%A4%C8%AF%B8%AB%A4%CE%A5%D7%A5%ED%A5%F3%A5%D7%A5%C8_%A5%C6%A5%F3%A5%D7%A5%EC%A1%BC%A5%C8",
-    "https://seesaawiki.jp/nai_ch/d/%CC%A4%C8%AF%B8%AB%A4%CE%A5%D7%A5%ED%A5%F3%A5%D7%A5%C8_%B9%F8%A5%B8%A5%E3%A5%B1%A5%C3%A5%C8",
-    "https://seesaawiki.jp/nai_ch/d/%CC%A4%C8%AF%B8%AB%A4%CE%A5%D7%A5%ED%A5%F3%A5%D7%A5%C8_%C8%A2%B2%BD",
-    "https://seesaawiki.jp/nai_ch/d/1111/WSL2",
-    "https://seesaawiki.jp/nai_ch/d/ChatRWKV",
-    "https://seesaawiki.jp/nai_ch/d/Extensions/URL",
-    "https://seesaawiki.jp/nai_ch/d/Models~~",
-    "https://seesaawiki.jp/nai_ch/d/R18%B1%D3%BE%A7%C1%B4%CA%B8_%B1%DC%CD%F7%C3%ED%B0%D5",
-    "https://seesaawiki.jp/nai_ch/d/R18%B1%D3%BE%A7%C1%B4%CA%B8_%B5%A1%B3%A3%B4%AF%A1%A6%B0%DB%BC%EF%B4%AF%A1%A6%A5%D5%A5%A7%A5%C1",
-    "https://seesaawiki.jp/nai_ch/d/R18%B1%D3%BE%A7%C1%B4%CA%B8_%C1%B0%B5%BA%A1%A6%CB%DC%C8%D6%A1%A6%C9%B4%B9%E7",
-    "https://seesaawiki.jp/nai_ch/d/R18%B1%D3%BE%A7%C1%B4%CA%B8_%C3%CB%A4%CE%CC%BC%A1%A6%A5%B7%A5%E7%A5%BF%A1%A6%A4%D5%A4%BF%A4%CA%A4%EA",
-    "https://seesaawiki.jp/nai_ch/d/Textual/Inversion",
-    "https://seesaawiki.jp/nai_ch/d/VITS",
-    "https://seesaawiki.jp/nai_ch/d/Wiki/EditingResources",
-    "https://seesaawiki.jp/nai_ch/d/X_Y%20Plot%A4%CB%A4%C4%A4%A4%A4%C6",
-    "https://seesaawiki.jp/nai_ch/d/helloasuka/xl",
-    "https://seesaawiki.jp/nai_ch/d/illustrious/xl/01tips",
-    "https://seesaawiki.jp/nai_ch/d/kohya/sd-scripts/intro",
-    "https://seesaawiki.jp/nai_ch/d/kohya/train/network/simple",
-    "https://seesaawiki.jp/nai_ch/d/local/WSL2",
-    "https://seesaawiki.jp/nai_ch/d/lora/train/command/line.py",
-    "https://seesaawiki.jp/nai_ch/d/vbnvn"
-  ],
+  "missing_urls": [],
   "pages": {
     "https://seesaawiki.jp/nai_ch/": {
       "date": "",
@@ -66,6 +14,10 @@
     },
     "https://seesaawiki.jp/nai_ch/d/%5BR18%B1%D3%BE%A7%C1%B4%CA%B8/%A5%CC%A1%BC%A5%C9%A1%A6%CF%AA%BD%D0": {
       "date": "",
+      "file": "[R18\u8a60\u5531\u5168\u6587_\u30cc\u30fc\u30c9\u30fb\u9732\u51fa.html"
+    },
+    "https://seesaawiki.jp/nai_ch/d/%5bR18%b1%d3%be%a7%c1%b4%ca%b8/%a5%cc%a1%bc%a5%c9%a1%a6%cf%aa%bd%d0": {
+      "date": "2026-10-28T18:55:32+09:00",
       "file": "[R18\u8a60\u5531\u5168\u6587_\u30cc\u30fc\u30c9\u30fb\u9732\u51fa.html"
     },
     "https://seesaawiki.jp/nai_ch/d/%A4%AA%A4%B9%A4%B9%A4%E1%A5%C4%A1%BC%A5%EB%A1%A6%A5%EA%A5%F3%A5%AF%BD%B8": {
@@ -757,8 +709,20 @@
       "file": "\u8ad6\u6587\u7d39\u4ecb.html"
     },
     "https://seesaawiki.jp/nai_ch/d/%a5%a2%a1%bc%a5%c6%a5%a3%a5%b9%a5%c8": {
-      "date": "2026-10-26T13:08:13+09:00",
+      "date": "2026-10-28T15:38:20+09:00",
       "file": "\u30a2\u30fc\u30c6\u30a3\u30b9\u30c8.html"
+    },
+    "https://seesaawiki.jp/nai_ch/d/%a5%a8%a5%e9%a1%bc%a4%ac%bd%d0%a4%c6%ba%a4%a4%c3%a4%bf%a4%c8%a4%ad%a4%cf%a1%a9": {
+      "date": "2026-10-28T13:41:35+09:00",
+      "file": "\u30a8\u30e9\u30fc\u304c\u51fa\u3066\u56f0\u3063\u305f\u3068\u304d\u306f\uff1f.html"
+    },
+    "https://seesaawiki.jp/nai_ch/d/%b1%ba%c5%e7%c2%c0%cf%ba%a4%ce%a4%bf%a4%e1%a4%cb": {
+      "date": "2026-10-28T20:25:38+09:00",
+      "file": "\u6d66\u5cf6\u592a\u90ce\u306e\u305f\u3081\u306b.html"
+    },
+    "https://seesaawiki.jp/nai_ch/d/%c2%ce%b0%cc%a1%a6%b9%d4%c6%b0%a1%a6%a5%b7%a5%c1%a5%e5": {
+      "date": "2026-10-29T21:27:39+09:00",
+      "file": "\u4f53\u4f4d\u30fb\u884c\u52d5\u30fb\u30b7\u30c1\u30e5.html"
     },
     "https://seesaawiki.jp/nai_ch/d/%c8%c7%b8%a2%a5%ad%a5%e3%a5%e9%ba%c6%b8%bd/%a4%b5%b9%d4": {
       "date": "2026-10-24T00:44:19+09:00",
