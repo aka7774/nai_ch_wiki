@@ -32,7 +32,6 @@ OpenMOSS Teamが開発する、Text-to-ImageのMMDiTモデル。多様なスタ�
 </ul>
 </li>
 <li> 文字の描写が優れている。</li>
-<li> ComfyUIとForge neoが対応している。</li>
 <li> 最大400万画素まで対応</li>
 </ul>
 </div></div><div id="content_block_15" class="wiki-section-3"><div class="title-3"><h5 id="content_4_0_3"> 拡散モデル <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_4_0_3" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
@@ -46,7 +45,7 @@ Text Encoderは、Qwen3.5-9Bでローカルのt2iモデルのTEとしてはか�
 </div></div><div id="content_block_19" class="wiki-section-3"><div class="title-3"><h5 id="content_4_0_5"> VAE <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_4_0_5" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
 <div id="content_block_19-body" class="wiki-section-body-3">
 16チャネルのFLUX.2 VAEを使用する。Qwen Image VAEより良いらしい。<br>
-</div></div><div id="content_block_21" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 欠点 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
+</div></div><div id="content_block_21" class="wiki-section-1"><div class="title-1"><h3 id="content_5"> 短所 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_5" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_21-body" class="wiki-section-body-1">
 <ul id="content_block_22" class="list-1">
 <li> 計算が遅い。SDXLの二倍の時間がかかるAnimaの2.5倍の時間がかかる。
@@ -60,6 +59,11 @@ Text Encoderは、Qwen3.5-9Bでローカルのt2iモデルのTEとしてはか�
 <li> 版権キャラ対応と言っても知っているキャラはAnimaより少ない。
 <ul class="list-2">
 <li> アニメ特化FTモデルに期待</li>
+</ul>
+</li>
+<li> LoRA含むFTのコストが高い？
+<ul class="list-2">
+<li> 収束が遅い可能性あり</li>
 </ul>
 </li>
 </ul>
@@ -106,8 +110,8 @@ ComfyUIのテンプレートには、TEのqwen3.5_9bを流用したプロンプ�
 </div></div><div id="content_block_35" class="wiki-section-2"><div class="title-2"><h4 id="content_8_1"> Base <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_8_1" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
 <div id="content_block_35-body" class="wiki-section-body-2">
 <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base" class="outlink">https://huggingface.co/OpenMOSS-Team/MOSS-Image-Ba...</a><br>
-基本のモデル。多様性が高い分不安定。<br>
-特にイラストで不安定。<br>
+基本のモデル。多様性が高い分不安定。特にイラストで不安定。<br>
+その代わりに、FTによる美化がされていないリアルで自然な実写スタイルが魅力的。<br>
 AIらしさが嫌か、多様な表現を求めるならこちらの方が良い。<br>
 </div></div><div id="content_block_37" class="wiki-section-2"><div class="title-2"><h4 id="content_8_2"> SFT <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_8_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
 <div id="content_block_37-body" class="wiki-section-body-2">
@@ -118,7 +122,7 @@ AIらしさが嫌か、多様な表現を求めるならこちらの方が良い
 <div id="content_block_39-body" class="wiki-section-body-1">
 プロンプトは自然言語(多言語)とJson形式とタグが使える。位置指定や文字描写などの具体的な命令もOK。Json形式ならバウンディングボックス(bbox)で正確な位置を指定できる。<br>
 なお、Danbooruタグは公式が使えると説明しているわけではなく、効かないものも多いため過信は禁物。<br>
-タグのみでは品質が低下する。自然言語の補助としてタグを使うことをおすすめする。<br>
+タグのみでは品質が低下する。自然言語の補助としてタグを使うことをおすすめする。短すぎるプロンプトでも品質が低下する。<br>
 <br>
 英文が苦手なら翻訳機で「これは~が~しているイラストです。~と~が背景にあります。このイラストは~な雰囲気です。」のような文章を英語にすればいい。チャットボットに考えてもらうのもいい。<br>
 あるいは日本語で入力する。英語ほどではないが他の言語でもしっかりプロンプトに従ってくれる。<br>
@@ -130,7 +134,7 @@ AIらしさが嫌か、多様な表現を求めるならこちらの方が良い
 <div id="content_block_43-body" class="wiki-section-body-1">
 ComfyUIのModelSamplingAuraFlowのshiftのこと。<br>
 低いほど高周波成分が強くなってディティールが増えるが不安定になる。高いほど安定するが、絵が平坦になる。<br>
-初期値は5。解像度に合わせて高くするといいかも。<br>
+MOSS-Imageの初期値は5。解像度に合わせて高くするといいかも。※ノードの初期値"1.73"はAuraFlowの値。<br>
 ステップ数が多いほどこの値の影響が小さくなる。ノイズスケジューラにLinear Quadraticを選択しても影響が小さくなる。<br>
 </div></div><div id="content_block_45" class="wiki-section-1"><div class="title-1"><h3 id="content_11"> SkipLayerGuidance <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_11" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_45-body" class="wiki-section-body-1">
@@ -146,7 +150,7 @@ CFGの計算を不要にし高速化しつつ8ステップで収束させる蒸�
 </div></div><div id="content_block_51" class="wiki-section-3"><div class="title-3"><h5 id="content_12_4_7"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_12_4_7" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
 <div id="content_block_51-body" class="wiki-section-body-3">
 一般的な蒸留モデルと同様にCFG1、EulerなどのODEソルバーで使用する。<br>
-ネガティブプロンプトは使えない。出力の多様性を著しく低下させ、ややぼやけた画像になる。<br>
+ネガティブプロンプトは使えない。出力の多様性を著しく低下させ、ぼやけた画像になる。<br>
 さらに文字描画の精度が大幅に低下する。<br>
 </div></div><div id="content_block_53" class="wiki-section-1"><div class="title-1"><h3 id="content_13"> 学習 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_13" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_53-body" class="wiki-section-body-1">
