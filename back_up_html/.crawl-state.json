@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-08T06:04:54.898371+09:00",
+  "checked_at": "2026-11-09T06:04:55.607380+09:00",
   "coverage_gap": false,
   "full_at": "2026-11-01T06:04:51.389308+09:00",
   "missing_urls": [],
@@ -709,7 +709,7 @@
       "file": "\u8ad6\u6587\u7d39\u4ecb.html"
     },
     "https://seesaawiki.jp/nai_ch/d/%a5%a2%a1%bc%a5%c6%a5%a3%a5%b9%a5%c8": {
-      "date": "2026-11-05T21:07:31+09:00",
+      "date": "2026-11-08T17:39:53+09:00",
       "file": "\u30a2\u30fc\u30c6\u30a3\u30b9\u30c8.html"
     },
     "https://seesaawiki.jp/nai_ch/d/%a5%a8%a5%e9%a1%bc%a4%ac%bd%d0%a4%c6%ba%a4%a4%c3%a4%bf%a4%c8%a4%ad%a4%cf%a1%a9": {
@@ -727,6 +727,10 @@
     "https://seesaawiki.jp/nai_ch/d/%b1%ba%c5%e7%c2%c0%cf%ba%a4%ce%a4%bf%a4%e1%a4%cb": {
       "date": "2026-11-05T18:18:45+09:00",
       "file": "\u6d66\u5cf6\u592a\u90ce\u306e\u305f\u3081\u306b.html"
+    },
+    "https://seesaawiki.jp/nai_ch/d/%b4%e9%28%cc%dc%a1%a6%b8%fd%a1%a6%c9%bd%be%f0%29": {
+      "date": "2026-11-08T23:32:51+09:00",
+      "file": "\u9854(\u76ee\u30fb\u53e3\u30fb\u8868\u60c5).html"
     },
     "https://seesaawiki.jp/nai_ch/d/%c2%ce%b0%cc%a1%a6%b9%d4%c6%b0%a1%a6%a5%b7%a5%c1%a5%e5": {
       "date": "2026-10-29T21:27:39+09:00",
@@ -929,7 +933,7 @@
       "file": "R18\u8a60\u5531\u5168\u6587_\u7537\u306e\u5a18\u30fb\u30b7\u30e7\u30bf\u30fb\u3075\u305f\u306a\u308a.html"
     },
     "https://seesaawiki.jp/nai_ch/d/R18%b1%d3%be%a7%c1%b4%ca%b8": {
-      "date": "2026-11-06T23:58:08+09:00",
+      "date": "2026-11-08T18:01:22+09:00",
       "file": "R18\u8a60\u5531\u5168\u6587.html"
     },
     "https://seesaawiki.jp/nai_ch/d/R18%b1%d3%be%a7%c1%b4%ca%b8/%b5%a1%b3%a3%b4%af%a1%a6%b0%db%bc%ef%b4%af%a1%a6%a5%d5%a5%a7%a5%c1": {
