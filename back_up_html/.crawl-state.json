@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-09T06:04:55.607380+09:00",
+  "checked_at": "2026-11-10T06:04:56.002464+09:00",
   "coverage_gap": false,
   "full_at": "2026-11-01T06:04:51.389308+09:00",
   "missing_urls": [],
@@ -755,6 +755,10 @@
     "https://seesaawiki.jp/nai_ch/d/%c8%c7%b8%a2%a5%ad%a5%e3%a5%e9%ba%c6%b8%bd/%a4%cf%b9%d4": {
       "date": "2026-10-31T13:31:18+09:00",
       "file": "\u7248\u6a29\u30ad\u30e3\u30e9\u518d\u73fe_\u306f\u884c.html"
+    },
+    "https://seesaawiki.jp/nai_ch/d/%c8%c7%b8%a2%a5%ad%a5%e3%a5%e9%ba%c6%b8%bd/%a4%e4%b9%d4": {
+      "date": "2026-11-10T01:45:24+09:00",
+      "file": "\u7248\u6a29\u30ad\u30e3\u30e9\u518d\u73fe_\u3084\u884c.html"
     },
     "https://seesaawiki.jp/nai_ch/d/%c8%c7%b8%a2%a5%ad%a5%e3%a5%e9%ba%c6%b8%bd/TYPE%2dMOON": {
       "date": "2026-10-31T03:03:33+09:00",
