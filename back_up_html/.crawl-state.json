@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-10T06:04:56.002464+09:00",
+  "checked_at": "2026-11-11T06:04:53.688337+09:00",
   "coverage_gap": false,
   "full_at": "2026-11-01T06:04:51.389308+09:00",
   "missing_urls": [],
@@ -707,6 +707,10 @@
     "https://seesaawiki.jp/nai_ch/d/%CF%C0%CA%B8%BE%D2%B2%F0": {
       "date": "",
       "file": "\u8ad6\u6587\u7d39\u4ecb.html"
+    },
+    "https://seesaawiki.jp/nai_ch/d/%a4%aa%a4%b9%a4%b9%a4%e1%a5%c4%a1%bc%a5%eb%a1%a6%a5%ea%a5%f3%a5%af%bd%b8": {
+      "date": "2026-11-10T11:35:23+09:00",
+      "file": "\u304a\u3059\u3059\u3081\u30c4\u30fc\u30eb\u30fb\u30ea\u30f3\u30af\u96c6.html"
     },
     "https://seesaawiki.jp/nai_ch/d/%a5%a2%a1%bc%a5%c6%a5%a3%a5%b9%a5%c8": {
       "date": "2026-11-08T17:39:53+09:00",
