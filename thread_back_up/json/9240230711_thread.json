@@ -1,8 +1,8 @@
 {
-  "total_count": 5,
+  "total_count": 11,
   "thread": [
-    1795035831,
-    5,
+    1795122237,
+    11,
     "fate",
     "liveuranus/9240230711",
     "",
@@ -32,7 +32,7 @@
       " 「monakey」システムをデザインしたJaneStyleの開発者が、すべての専用ブラウザへのAPIへのアクセスをオフにし、権限なしにJaneStyleをサードパーティのサイトに移動させたことにより、一部のユーザーが5chにアクセスできなくなってしまいました。そのサイトは5chとは一切関連がありません。これが、一部のユーザーが本日5chにアクセスできなかった理由です。 <br>  <br> 5chはあらゆる開発者からAPIへのアクセス権を奪ったわけではありません。まだ理由は明らかでありませんが、JaneStyleの開発者が独断で行動を起こし、5chのユーザーベースの一部を5ch.netから引き離すことを決定しました。これがダウンタイム、混乱、推測を引き起こしました。今日、私たちはこれをAPIの独占を終わらせ、意志のあるすべての開発者にAPIへのアクセスを再度提供する機会に変えるつもりです。 <br> 専用ブラウザは再び繁栄することができます。 ",
       0,
       1,
-      4
+      10
     ],
     [
       3,
@@ -44,7 +44,7 @@
       " DATファイルへのアクセスが再び解放されました。 <br>  <br> DATファイルへのアクセス方法は以下の通りです。 <br> ・稼働中のスレッド <br> /板名/dat/スレッドキー.dat <br> 例： https://agree.5ch.io/operate/dat/1608930977.dat <br>  <br> ・DAT落ちした現役サーバに収容されているスレッド <br> /板名/oyster/スレッドキー上位4桁の数字/スレッドキー.dat <br> 例： https://agree.5ch.io/operate/oyster/1684/1684064837.dat <br>  <br> ・過去ログサーバに収容されているスレッド <br> /板名/oyster/スレッドキー上位4桁の数字/スレッドキー.dat <br> 例： https://natto.5ch.io/food/oyster/1021/1021787092.dat <br> 例： https://mamono.5ch.io/newsplus/oyster/1237/1237017133.dat <br>  <br> ※ 過去ログサーバについては上述URLでは読めないスレッドが一部にあります。 <br> 現在、新しい過去ログサーバを構築しておりますので稼働しだいすべての過去ログが閲覧できるようになります。 ",
       0,
       2,
-      4
+      10
     ],
     [
       4,
@@ -56,7 +56,7 @@
       " If you are experiencing downtime or have trouble posting, that is because a DDoS attack is underway. Our team is working on mitigating the issue. <br> もしダウンタイムを経験していたり、投稿に問題があれば、それはDDoS攻撃が行われているためです。私たちのチームは問題の緩和に取り組んでいます。 <br> 大変ご不便をお掛けしておりますが今後ともよろしくお願いいたします。 ",
       0,
       3,
-      4
+      10
     ],
     [
       5,
@@ -68,7 +68,79 @@
       " 【どんぐりシステム】についてのお知らせ <br>  <br> どんぐりシステムは、荒らし対策として開発されたユーザー参加型のシステムです <br> ユーザーは書き込むことでどんぐりを取得し経験値を取得できるようになります <br> 経験値は時間経過で貯まり自然とレベルを上げていきます <br> レベルが上がるとより快適に書き込みができるようになります <br> また、どんぐり大砲と呼ばれる機能を使い、荒らしを攻撃してレベルを下げることもできます <br> システムについて詳しくは下記のWebページをご覧ください <br>  <br> ■どんぐりシステム <br> https://donguri.5ch.io <br> ■どんぐりシステム、よくある質問（FAQ）ページ <br> https://donguri.5ch.io/faq <br> ■FAQページ内容 <br> 別途記載 ",
       0,
       4,
-      4
+      10
+    ],
+    [
+      6,
+      "５ちゃんねる ★",
+      "",
+      "2024/12/21(土) 17:00:00.00",
+      "LokiTech",
+      "",
+      " 諸般の事情により停止していたメロンショップがリニューアルオープンしました。 <br> https://melon.5ch.io/ <br> 名前欄の色づけに加えてやBEアイコンの購入、BEポイントへの変換、ポイントが必要なVIPQ2のコマンドが再び利用できるようになりました。 <br> メロンショップで、より快適なお買い物体験をお楽しみいただけることを願っています。今後ともどうぞよろしくお願いいたします。",
+      0,
+      5,
+      10
+    ],
+    [
+      7,
+      "５ちゃんねる ★",
+      "",
+      "2025/03/24(月) 00:00:00.00",
+      "LokiTech",
+      "",
+      " 専ブラ*開発者様へのお願い <br>  <br> 投稿時の処理が改修されていますので、下記の要項をご確認ください。 <br>  <br> 1. Cookie の取り扱い <br> 　yuki=akari は撤廃されました。 <br> 　代わりに MonaTicket=_文字列_ が適用されています。 <br> 　現在、一部の専ブラで Cookie の処理が適切に行われていないケースが見られますので、再度ご確認をお願いいたします。 <br>  <br> 2. 書き込み確認処理の徹底 <br> 　書き込み確認の仕組みが厳格化されました。 <br> 　以前のように承諾ボタンを押さなくても Cookie が発行される仕様は廃止されました。 <br> 　新たに Cookie を取得する際は、書き込み確認のページを改変せずに正しく表示し、その処理を厳密に行ってください。 <br> 　詳細については書き込み確認の HTML ソースをご確認ください。 <br>  <br> 3. MonaKey は廃止されました <br> 　X-MonaKey, X-PostSig, X-APIKey, X-PostNonce のリクエストヘッダは不要です。 <br> 　X-Ronin-Sid は引き続き利用可能ですが、将来的に廃止される可能性があります。 <br> 　現時点では、以前の Cookie に sid を挿入する方法を推奨します。 <br>  <br> 備考:   <br> 　専ブラ*は専用ブラウザ（Dedicated Browser）の略称です。 <br>  <br> なお、一般ブラウザ（Chrome や Firefox など Mozilla/5.0 を名乗るブラウザ群）では、すでにこれらの処理が適用済みです。",
+      0,
+      6,
+      10
+    ],
+    [
+      8,
+      "５ちゃんねる ★",
+      "",
+      "2025/10/13(月) 03:00:00.00",
+      "LokiTech",
+      "",
+      " 荒らし対策として開発されたユーザー参加型の「どんぐりシステム」ですが、近年では大規模な荒らし行為も沈静化しており、 <br> 一方で悪質なハンターによる無差別な大砲機能の乱用が見受けられるようになりました。 <br> これらの状況を踏まえ、新たに「どんぐりゲート」を設けることになりました。 <br>  <br> 「どんぐりゲート」のデフォルト設定は「false」となり、以後、書き込み制限などの機能はサスペンド状態となります。 <br> 大砲（キャノン）機能自体は有効のままですが、その効果は該当する書き込み者に「臭」マークを付けるのみとなり、「書き込み禁止」などの規制は行われません。 <br>  <br> ただし、引き続き全機能を有効化したい場合は、当該板の SETTING.TXT に以下の1行を追加してください。 <br> BBS_ACORN_GATE=force <br>  <br> また、以下の設定を記述した場合は、その板においてどんぐり機能のすべてが「常に無効」となります。 <br> BBS_ACORN_GATE=false <br>  <br> 今後、再び大規模な荒らし行為が発生したと判断された場合には、「どんぐりゲート」の設定が「true」となり、 <br> どんぐり機能が有効なすべての板でその機能が再開されます。 <br>  <br> 今後とも、より快適で安心して利用できる環境の維持にご協力をお願いいたします。 <br>  <br> -- English -- <br> The user-participation-based \"Acorn System\" was originally developed as an anti-troll measure, but in recent years, large-scale trolling has subsided. <br> On the other hand, there have been increasing cases of malicious hunters misusing the cannon feature indiscriminately. <br> In light of these circumstances, we have decided to introduce a new feature called the \"Acorn Gate\". <br>  <br> By default, the \"Acorn Gate\" setting is set to \"false\", meaning that posting restrictions and similar functions will be suspended. <br> The cannon feature itself remains active; however, its effect will now be limited to marking the targeted post with a \"臭\" icon, without imposing any posting bans or other penalties. <br>  <br> If you wish to keep all functions enabled, please add the following line to the board’s SETTING.TXT file: <br> BBS_ACORN_GATE=force <br>  <br> Adding the following line will instead permanently disable all acorn-related functions on that board: <br> BBS_ACORN_GATE=false <br>  <br> If large-scale trolling resumes in the future, the \"Acorn Gate\" setting will be switched to \"true\", <br> and the Acorn System will automatically be reactivated across all boards where it is available. <br>  <br> We sincerely appreciate your continued cooperation in maintaining a safe and comfortable environment for all users.",
+      0,
+      7,
+      10
+    ],
+    [
+      9,
+      "５ちゃんねる ★",
+      "",
+      "2026/03/06(金) 11:00:00.00",
+      "LokiTech",
+      "",
+      " 【緊急】諸般の事情により当掲示板のドメイン名を 5ch.net から 5ch.io に変更することとなりました。 <br> ブラウザのブックマークや専用ブラウザのURLの変更をお願いします。<br> 突然のお知らせで大変ご不便をお掛けしますが、今後ともどうぞよろしくお願いいたします。",
+      0,
+      8,
+      10
+    ],
+    [
+      10,
+      "５ちゃんねる ★",
+      "",
+      "2026/03/07(土) 16:00:00.00",
+      "LokiTech",
+      "",
+      " 【注意喚起】昨日のドメイン変更により「5ch.net」は「5ch.io」へ移行しました。 <br> 5ちゃんねるの正式な移行先ドメイン名は「5ch.io」です。 <br> 現在 「5ch.one」の存在を確認しておりますが、こちらはおそらくフィッシングを目的とした偽のクローンサイトですので、くれぐれもアクセスなさらないよう注意喚起いたします。 <br> なおスマートフォン等では URL が表示されないことがありますのでアクセスの際には5ちゃんねるの URL ドメイン部が「5ch.io」となっていることを必ず確認してください。",
+      0,
+      9,
+      10
+    ],
+    [
+      11,
+      "５ちゃんねる ★",
+      "",
+      "2026/10/20(火) 09:00:00.00",
+      "LokiTech",
+      "",
+      " UPLIFT Councilへようこそ！あなたの声で5ちゃんねるの未来を！ <br> UPLIFT会員の皆さまが、アンケートや投票を通じて5ちゃんねるの今後に参加できる「UPLIFT Council」がスタートしました！ <br> 第1回のテーマは「Councilに参加しやすくなるために、何が必要ですか？」 <br> 回答は簡単！締め切りの10月31日までは何度でも変更できます。 <br> まずは皆さまの声をお聞かせください。あなたの参加がCouncilの第一歩になります！ <br>  <br> UPLIFT Councilの詳細はこちらから→ https://council.5ch.io/council/guide ",
+      0,
+      10,
+      10
     ]
   ]
 }

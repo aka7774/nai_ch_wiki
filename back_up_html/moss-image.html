@@ -61,11 +61,12 @@ Text Encoderは、Qwen3.5-9Bでローカルのt2iモデルのTEとしてはか�
 <li> アニメ特化FTモデルに期待</li>
 </ul>
 </li>
-<li> LoRA含むFTのコストが高い？
+<li> LoRA含むFTのコストが高いかも
 <ul class="list-2">
-<li> 収束が遅い可能性あり</li>
+<li> 収束(学習)が遅い可能性あり</li>
 </ul>
 </li>
+<li> 特定の文字を間違える(例えば「実」が「執」に似た漢字になる)</li>
 </ul>
 </div></div><div id="content_block_24" class="wiki-section-1"><div class="title-1"><h3 id="content_6"> 使用方法(ComfyUI) <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_6" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_24-body" class="wiki-section-body-1">
@@ -74,7 +75,7 @@ Comfy-OrgのHugging Faceリポジトリから次のファイルをDLして配置
 <ul id="content_block_25" class="list-1">
 <li> ComfyUI/models/diffusion_modelsにmoss_image_〇〇_int8_convrot.safetensors<br>〇〇はbase, sftのいずれか。baseは基本、sftは出力の品質向上と安定性向上を図ったもの。</li>
 <li> ComfyUI/models/text_encodersにqwen3.5_9b_int8_convrot.safetensors</li>
-<li> ComfyUI/models/vaeにflux2-vae.safetensorsまたはflux2-vae_small.safetensors<br>smallの方が速いらしい</li>
+<li> ComfyUI/models/vaeにflux2-vae.safetensorsまたはflux2-vae_small.safetensors<br>smallの方は品質そのままで速いらしい</li>
 </ul>
 </div></div><div id="content_block_27" class="wiki-section-3"><div class="title-3"><h5 id="content_6_0_6"> ComfyUIのテンプレートの注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5396363&amp;part=content_6_0_6" rel="nofollow" class="title-3-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h5></div>
 <div id="content_block_27-body" class="wiki-section-body-3">

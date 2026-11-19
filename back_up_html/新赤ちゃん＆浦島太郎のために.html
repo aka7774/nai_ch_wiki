@@ -2,10 +2,12 @@
 <div id="content_block_1" class="wiki-section-1"><div class="title-1"><h3 id="content_1"> 注意 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5137646&amp;part=content_1" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_1-body" class="wiki-section-body-1">
 <span style="color:#ff0000;"><b>2026年7月26日時点でこの項目以外は最後の更新から二年弱経過したためここの情報も古くなっていることに注意。</b></span> <br>
-2026年になってローカルの画像生成AIに大きな動きがあり、ついにSDXLが主流の座から退いた。2026年7月時点でイラストはAnima、実写はKrea 2が主流。<br>
+2026年になってローカルの画像生成AIに大きな動きがあり、ついにSDXLが主流の座から退いた。2026年11月時点でイラストはAnima、実写はMOSS-Imageが主流。<br>
+ちなみに、Stable Diffusionは3.0と3.5で爆死してから更新なし。<br>
+1111 webuiも2024年10月以降更新なし。いまはComfyUIとForge Neoが主流。<br>
 </div></div><div id="content_block_3" class="wiki-section-1"><div class="title-1"><h3 id="content_2"> 序 <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5137646&amp;part=content_2" rel="nofollow" class="title-1-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h3></div>
 <div id="content_block_3-body" class="wiki-section-body-1">
-生成AI界の流れが速すぎてSDXLのビッグウェーブに元々のWikiの情報が古くなってしもうたんや ※そんなSDXL(2023年公開)ですらもう古い<br>
+生成AI界の流れが速すぎてSDXLのビッグウェーブに元々のWikiの情報が古くなってしもうたんや ※そんなSDXL(2023年)とSD3(2024年)ですらもう古い<br>
 <br>
 なんで<span style="color:#0075c8;">2024年4月時点</span>での流れと簡単な導入方法説明するで<br>
 <br>
@@ -74,11 +76,16 @@ VRAMが少なめの環境（特に8GB以下や使い方によっては12GB環境
 （筆者注）Forge版とA1111版と試すと確かに生成速度は変わらないぐらいA1111版も速くなっているのですがVRAM使用量についてはやはりForge版の方がかなり少ないです。アップスケールの限界もForge版が高いですし、環境に寄りますが、生成しながら動画やゲームする余裕がForge版ではあるのですがA1111版だと生成にリソースがっつり持って行かれて他の作業が厳しいです。個人的には現行のForge版で新規拡張機能などに対応するだけで良いので軽いアップデートを続けて欲しいというのが本音<br>
 </div></div><div id="content_block_14" class="wiki-section-2"><div class="title-2"><h4 id="content_5_2"> SD3について <a title="部分編集" href="https://seesaawiki.jp/nai_ch/e/edit?id=5137646&amp;part=content_5_2" rel="nofollow" class="title-2-part-edit part-edit"><img src="https://static.seesaawiki.jp/img/usr_second/common/icon_pen.gif"></a></h4></div>
 <div id="content_block_14-body" class="wiki-section-body-2">
-StablityAI社からついにSDXLの次のバージョンであるSD3が予定通り公開されました。しかし、以下の問題から流行することはありませんでした。<ul id="content_block_15" class="list-1">
+StablityAI社からついにSDXLの次のバージョンであるSD3が予定通り公開されました。しかし、以下の問題から流行することはありませんでした。<br>
+そしてその改良版のSD3.5も流行せず、Stable Diffusionの開発は途絶えた。オープンウェイトAIの先駆けとして感謝。<ul id="content_block_15" class="list-1">
 <li> 人体の崩壊</li>
-<li> Fine-Tuningが困難</li>
+<li> Fine-Tuningが困難
+<ul class="list-2">
+<li> Animagine-XLの後継のAnimaestroはSD3.5で開発していたがFT失敗して開発中止</li>
+</ul>
+</li>
 <li> 競合他社からより良いモデルが多数登場</li>
-<li> 設計が古い。パラメータ効率も高くないらしい</li>
+<li> 設計が古い。パラメータ効率も低い</li>
 </ul>
 <br>
 <div id="content_block_16">
@@ -96,6 +103,7 @@ StablityAI社からついにSDXLの次のバージョンであるSD3が予定通
 <br>
 SDXLの時のようにAnimagineやponyなどのサードからのモデルが供給されるとまた変わってくるはずなのですが、StablityAI社とpony作者側とのライセンス等の話し合いは難航している模様。<br>
 pony側は当初PonyDiffusion V7をSD3モデルとして作成し公開する予定でしたがどうもSDXL用のV6.9としてとりあえず一旦公開するとかしないとか・・・<br>
+なお、Pony Diffusion V7がAuraFlowベースでリリースされたが、品質がV6と変わらず全く流行しなかった模様。<br>
 StabilityAI社内部関係者の発言やPonyDiffusion側の発言など憶測も飛び交っているようなので気になる方はご自分で検索して確認してご自分で判断してください。<br>
 さらに、Civitaiは不明確なライセンスを理由に、LoRAを含むすべてのSD3モデルの公開を一時的に停止している。CivitaiはすでにStabilityAIに問い合わせているが、はっきりとした返答がなくライセンスは変わらず不明確なためまだ公開停止中。StabilityAIがライセンスを変更するか明確になるまでは公開停止措置は解除されない。<br>
 <br>
